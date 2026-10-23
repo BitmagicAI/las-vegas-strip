@@ -11,11 +11,24 @@ import type {EngineLike} from 'types/game.js';
  */
 export function configureSkylineDepth(engine:EngineLike):void {
     if(!(engine.renderer instanceof WebGPURenderer) || engine.renderer.reversedDepthBuffer)return;
-    if(!engine.recreateRenderer)throw new Error('Skyline depth requires the renderer lifecycle hook');
+    if(!engine.recreateRenderer){
+        // Engine 3.1337 keeps one renderer per page (recreateRenderer is gone) and starts its init() at once. r185
+        // reads the flag only when it builds pipelines, depth textures and render passes (WebGPUPipelineUtils,
+        // WebGPUTextureUtils, WebGPUUtils), for the clear depth and camera._reversedDepth: never inside init(). So
+        // the live renderer takes it in place, as long as it has not drawn or compiled anything yet.
+        const renderer=engine.renderer,info=renderer.info.render;
+        if(info.frame>0||info.calls>0)throw new Error('Skyline depth must be configured before the first frame');
+        enableReversedDepth(renderer);
+        return;
+    }
     engine.recreateRenderer(engine.renderer.samples>0,'webgpu');
     const renderer=engine.renderer;
     if(!(renderer instanceof WebGPURenderer) || renderer.initialized)
         throw new Error('Skyline depth must be configured before renderer initialization');
+    enableReversedDepth(renderer);
+}
+
+function enableReversedDepth(renderer:WebGPURenderer):void {
     // These are real, writable own properties in r185, although Three marks
     // constructor options readonly in its public types. Keep the workaround
     // here (never on a live renderer), until Bitmagic exposes creation options.
@@ -26,7 +39,7 @@ export function configureSkylineDepth(engine:EngineLike):void {
     if(!parameters || typeof parameters!=='object')throw new Error('Unsupported Three backend parameters');
     Object.assign(parameters,{reversedDepthBuffer:true});
     configureReversedDepthSorting(renderer);
-    console.info('[SkylineDepth] Reversed floating-point depth enabled before GPU initialization');
+    console.info(`[SkylineDepth] Reversed floating-point depth enabled before the ${renderer.initialized?'first frame':'GPU initialization'}`);
 }
 
 /** r185 reverses the entire render list for reversed depth, including explicit

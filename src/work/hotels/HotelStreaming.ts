@@ -2,10 +2,10 @@ import type {StreamingWork} from '../StreamingWork.js';
 import type { GroundSurfaceIndex } from '../GroundSurfaceIndex.js';
 import * as THREE from 'three';
 import {mapPoint} from '../geographic/Coordinates.js';
-import {Door,DEFAULT_DOOR_OPTIONS} from 'engine/Door.js';
-import type {DoorOptions} from 'engine/Door.js';
+import {Door,DEFAULT_DOOR_OPTIONS} from 'engine/gameplay/doors/Door.js';
+import type {DoorOptions} from 'engine/gameplay/doors/Door.js';
 import type {EngineLike} from 'types/game.js';
-import type {PlayerController} from 'engine/PlayerController.js';
+import type {PlayerController} from 'engine/player/PlayerController.js';
 import type {GameHUD} from '../GameHUD.js';
 import type {StreamedInteriorView} from '../BuildingVisibility.js';
 import recipes from './towers.json';
@@ -23,8 +23,9 @@ const KICK_SECONDS=.34,CLOSE_SECONDS=.6,KICK_ANGLE=1.62;
 /** 0→1 with a ~10% overshoot that settles back: a leaf thrown open that bounces off its stop. */
 const easeOutBack=(x:number):number=>{const c1=1.5,c3=c1+1,y=x-1;return 1+c3*y*y*y+c1*y*y;};
 class GuestDoor extends Door {
-    /** The Door's own mesh (invisible on room doors; it carries the Blender skin). */
-    leaf:THREE.Object3D|null=null;
+    /** The Blender skin's mesh (the Door's own box is invisible on room doors). Not `leaf`: engine 3.1337's Door keeps
+     * its kinematic physics leaf in a private field of that name, which a subclass field would overwrite. */
+    skin:THREE.Object3D|null=null;
     readonly kickable:boolean;
     private restPos=new THREE.Vector3();private hinge=new THREE.Vector3();private rotation:number;private halfWidth:number;
     /** While kicked, the skin hangs on this hinge pivot instead of the leaf, so the Door's slide (which still moves the
@@ -40,12 +41,12 @@ class GuestDoor extends Door {
     }
     override open():void{
         if(!this.ready())return;super.open();
-        if(this.pendingKick&&this.leaf?.parent){
+        if(this.pendingKick&&this.skin?.parent){
             this.pendingKick=false;this.swingPhase=1;this.swingT=0;
             if(!this.pivot){
                 const pivot=this.pivot=new THREE.Group();pivot.name='Kicked door hinge';pivot.position.copy(this.hinge);pivot.rotation.y=this.rotation;
-                this.leaf.parent.add(pivot);pivot.updateMatrixWorld(true);this.leaf.updateMatrixWorld(true);
-                for(const c of [...this.leaf.children])pivot.attach(c);
+                this.skin.parent.add(pivot);pivot.updateMatrixWorld(true);this.skin.updateMatrixWorld(true);
+                for(const c of [...this.skin.children])pivot.attach(c);
             }
             this.onSwing(this);
         }
@@ -57,14 +58,14 @@ class GuestDoor extends Door {
     override getInteractStartDisplayName():string{return `${this.isOpen()?'close':'open'} ${this.label}`;}
     /** Kicked from `from`: the leaf swings away from the kicker. An unloaded room loads first, then bursts open. */
     kick(from:{x:number;z:number}):boolean{
-        if(!this.kickable||!this.leaf||this.isOpen()||this.pendingKick)return false;
+        if(!this.kickable||!this.skin||this.isOpen()||this.pendingKick)return false;
         const nx=Math.sin(this.rotation),nz=Math.cos(this.rotation);
         this.swingSign=(from.x-this.restPos.x)*nx+(from.z-this.restPos.z)*nz>=0?1:-1;
         this.pendingKick=true;this.open();return true;
     }
     /** Pose the swing for this frame. True once it no longer needs updates. */
     stepSwing(dt:number):boolean{
-        const leaf=this.leaf,pivot=this.pivot;if(!leaf||!pivot||this.swingPhase===0)return true;
+        const leaf=this.skin,pivot=this.pivot;if(!leaf||!pivot||this.swingPhase===0)return true;
         this.swingT+=dt;
         if(this.swingPhase===1){const x=Math.min(1,this.swingT/KICK_SECONDS);this.angle=KICK_ANGLE*easeOutBack(x);if(x>=1)this.swingPhase=2;}
         else if(this.swingPhase===3){const x=Math.min(1,this.swingT/CLOSE_SECONDS),e=x*x*(3-2*x);this.angle=this.closeFrom*(1-e);if(x>=1){this.swingPhase=0;this.angle=0;}}
@@ -75,7 +76,7 @@ class GuestDoor extends Door {
         for(const c of [...pivot.children])leaf.attach(c);
         pivot.removeFromParent();this.pivot=null;return true;
     }
-    override dispose():void{super.dispose();this.pivot?.removeFromParent();this.pivot=null;this.leaf=null;}
+    override dispose():void{super.dispose();this.pivot?.removeFromParent();this.pivot=null;this.skin=null;}
 }
 interface DoorHandle {door:GuestDoor;visuals:THREE.Object3D[];point:THREE.Vector3;closingUntil:number;
     /** Room doors: where to stand in the corridor to kick it (1.2 m out, floor level). */
@@ -230,7 +231,7 @@ export class HotelStreaming {
         const before=new Set(this.engine.scene!.children);
         const door=new GuestDoor(this.engine,{...DEFAULT_DOOR_OPTIONS,position:point,rotation,width:width*widthScale,height,thickness:.13,slideDistance:(width+.08)*widthScale,slideDurationMs:550,onOpen,onClose:()=>{handle.closingUntil=this.now+.6;}},label,ready,d=>this.swinging.add(d));
         const visuals=this.engine.scene!.children.filter(o=>!before.has(o));
-        door.leaf=visuals.find(o=>o instanceof THREE.Mesh)??null;
+        door.skin=visuals.find(o=>o instanceof THREE.Mesh)??null;
         for(const o of visuals){o.userData.perfOwner='Guest · doors and signs';o.userData.perfKind='interior';}
         if(t.set!=='veer' && (label.startsWith('room ')||label.startsWith('apartment '))){
             // Door owns this mesh, its interaction target and the one collider.

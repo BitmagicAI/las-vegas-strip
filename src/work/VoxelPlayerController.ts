@@ -6,10 +6,10 @@
 // pnpm run check does NOT type-check templates — drift lands silently.
 // See ../../../../templates/README.md for the contract.
 import * as THREE from 'three';
-import { PlayerController, type CameraController } from 'engine/PlayerController.js';
+import { PlayerController, type CameraController } from 'engine/player/PlayerController.js';
 import type { EngineLike, CameraControllerLike } from 'types/game.js';
 import type { WorldGenerator } from './WorldGenerator.js';
-import { TerrainTypeRegistry } from 'engine/TerrainTypes.js';
+import { TerrainTypeRegistry } from 'engine/terrain/types/TerrainTypes.js';
 import type { GameConstants } from 'engine/Constants.js';
 import type RAPIER from '@dimforge/rapier3d-compat';
 import type { PhysicsWorld } from 'engine/physics/PhysicsWorld.js';

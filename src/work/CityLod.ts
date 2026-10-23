@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {isGeometryReleaseSuspended} from 'engine/GeometryCpuRelease.js';
+import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
 import {batchStaticMeshes,coarseFromBatch,coarseCityMaterial,concatCompact,disposeCityMaterial,facadeFromBatch,retainCityMaterial} from './CityBatches.js';
 import {releaseAfterUpload} from './CpuGeometryRelease.js';
 import {bindCityLighting} from './CityLighting.js';

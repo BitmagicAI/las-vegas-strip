@@ -9,7 +9,7 @@ import { applyPbrDetail, loadPbrDetail } from './PbrDetail.js';
 gltfSceneHooks.push(scene => { fixLoadedMaterials(scene); RealisticWater.adopt(scene); });
 gltfUrlHooks.push(applyPbrDetail);
 if (typeof location !== 'undefined' && ['localhost', '127.0.0.1'].includes(location.hostname)) (window as unknown as { __afterlightWater?: unknown }).__afterlightWater = RealisticWater;
-import { CollisionGroup } from 'engine/CollisionLayers.js';
+import { CollisionGroup } from 'engine/physics/CollisionLayers.js';
 import {CityDetailRanges,cityEntranceDetails} from './CityDetailRanges.js';
 import {CityLod} from './CityLod.js';
 import {PerformancePanel} from './PerformancePanel.js';
@@ -22,6 +22,7 @@ import {mapPoint,mapYaw,reviewDistrict} from './geographic/Coordinates.js';
 import {StreamingWork} from './StreamingWork.js';
 import {BackgroundActivity} from './BackgroundActivity.js';
 import {configureSkylineDepth} from './SkylineDepth.js';
+import {configureLightCaps} from './LightCaps.js';
 import {extendSkylineCamera,matchHazeToSky} from './StripAtmosphere.js';
 import {CameraObstruction} from './CameraObstruction.js';
 import { GroundSurfaceIndex } from './GroundSurfaceIndex.js';
@@ -36,7 +37,7 @@ const INTERIOR_KEY_INTENSITY = 4;
 import { DoorKick } from './DoorKick.js';
 import { GAME_LAYERS, type GameLayer, type CityContext } from './GameLayers.js';
 import { MeshLevel, DEFAULT_MESH_LEVEL_OPTIONS } from 'engine/meshlevel/MeshLevel.js';
-import { DEFAULT_FALL_RESCUE_OPTIONS } from 'engine/FallRescue.js';
+import { DEFAULT_FALL_RESCUE_OPTIONS } from 'engine/player/life/FallRescue.js';
 import levelJson from './vegas.mesh-level.json';
 import { ParisLift } from './ParisLift.js';
 // AI editor note: This file is overridden by EVERY community template under
@@ -49,25 +50,25 @@ import { ParisLift } from './ParisLift.js';
 import * as THREE from 'three';
 import {HotelStreaming} from './hotels/HotelStreaming.js';
 import type { WorldProfileData, EngineLike, GameData } from 'types/game.js';
-import { PlayerController } from 'engine/PlayerController.js';
+import { PlayerController } from 'engine/player/PlayerController.js';
 import { VoxelPlayerController } from './VoxelPlayerController.js';
-import { ThirdPersonCamera } from 'engine/ThirdPersonCamera.js';
-import { CameraManager } from 'engine/CameraManager.js';
+import { ThirdPersonCamera } from 'engine/camera/ThirdPersonCamera.js';
+import { CameraManager } from 'engine/camera/CameraManager.js';
 import { WorldGenerator } from './WorldGenerator.js';
-import { SkyboxLoader } from 'engine/loaders/SkyboxLoader.js';
-import { SkyboxMaterialHelper } from 'engine/loaders/SkyboxMaterialHelper.js';
-import { PlayerLoader } from 'engine/loaders/PlayerLoader.js';
+import { SkyboxLoader } from 'engine/sky/SkyboxLoader.js';
+import { SkyboxMaterialHelper } from 'engine/sky/SkyboxMaterialHelper.js';
+import { PlayerLoader } from 'engine/player/PlayerLoader.js';
 import { AmbientLighting } from 'engine/lighting/AmbientLighting.js';
 // DebugController is only available in development - handled dynamically
 import { GameHUD } from './GameHUD.js';
 import { bitmagicCharacterFactory, applyBitmagicModifications, updateBitmagicEyeBlink } from './BitmagicPlayerCharacter.js';
-import { genreRegistry, type GenreGameInterface } from 'engine/GenreRegistry.js';
+import type { GenreGameInterface } from 'engine/boot/GenreRegistry.js';
 import { DEFAULT_PHYSICS } from './PhysicsConfig.js';
 import { CONSTANTS } from './Constants.js';
-import { VehicleManager } from 'engine/VehicleManager.js';
-import { Spawner } from 'engine/Spawner.js';
-import { VehicleSpawner } from 'engine/VehicleSpawner.js';
-import { mergeCharacterConfig } from 'engine/CharacterConfig.js';
+import { VehicleManager } from 'engine/vehicle/VehicleManager.js';
+import { Spawner } from 'engine/world/spawning/Spawner.js';
+import { VehicleSpawner } from 'engine/vehicle/spawning/VehicleSpawner.js';
+import { mergeCharacterConfig } from 'engine/character/CharacterConfig.js';
 import { setCityAtlasUploader } from './CityAtlas.js';
 import { sweepUploadedGeometry } from './CpuGeometryRelease.js';
 import { glbUrl } from './OptimizedGlb.js';
@@ -143,6 +144,7 @@ export class VoxelGame implements GenreGameInterface {
 
     constructor(engine: EngineLike, worldProfileData: WorldProfileData, gameData?: GameData) {
         configureSkylineDepth(engine);
+        configureLightCaps(engine);
         this.engine = engine;
         this.worldProfileData = worldProfileData;
         this.gameData = gameData || null;
@@ -204,8 +206,9 @@ export class VoxelGame implements GenreGameInterface {
         })??null;
         try {
             // EXPERIMENT (local only): ?lighting=engine<cap> | clustered installs another renderer.lighting before
-            // any lit material or shadow node exists, for measuring the engine repo's new EngineLighting.
-            {const mode=['localhost','127.0.0.1'].includes(location.hostname)?(new URLSearchParams(location.search).get('lighting')??(stormDrivingEnabled()?'engine64':null)):null;
+            // any lit material or shadow node exists. (Engine 3.1337 batches lights itself, LightCaps.ts sizes it; storm
+            // takes no longer default to this experiment's older copy.)
+            {const mode=['localhost','127.0.0.1'].includes(location.hostname)?(new URLSearchParams(location.search).get('lighting')??null):null;
                 if(mode&&(mode.startsWith('engine')||mode==='clustered')){const R=this.engine.renderer as unknown as {init?:()=>Promise<unknown>;lighting:unknown;_renderLists?:{lighting:unknown;dispose:()=>void}};await R.init?.();
                     const instance=mode==='clustered'?new (await import('three/addons/lighting/ClusteredLighting.js')).ClusteredLighting(1024,32,24,64)
                         :await import('./experiments/engine-lighting/EngineLighting.js').then(m=>new m.EngineLighting({...m.DEFAULT_ENGINE_LIGHTING_OPTIONS,maxPointLights:Number(mode.slice(6))||64}));
@@ -307,7 +310,7 @@ export class VoxelGame implements GenreGameInterface {
 
             // Initialize DebugController if available (development only) - before setupPlayerController
             try {
-                const { DebugController } = await import('engine/DebugController.js');
+                const { DebugController } = await import('engine/devtools/DebugController.js');
                 this.debugController = new DebugController(this.engine);
             } catch (error) {
                 // DebugController not available - this is fine for production builds
@@ -611,12 +614,12 @@ export class VoxelGame implements GenreGameInterface {
                     coasterRiding:()=>!!this.bigAppleCoaster?.riding,
                     rayDistance:(ox,oy,oz,dx,dy,dz,max)=>{const r=this.engine.physicsWorld?.raycast(new THREE.Vector3(ox,oy,oz),new THREE.Vector3(dx,dy,dz),max,CollisionGroup.TERRAIN|CollisionGroup.ENVIRONMENT);return r?.hasHit?r.hitDistance:max;},
                     // Motion-blur sub-frames: the engine's frame timer and physics step are private, so they are reached
-                    // by name (engine 3.1223: GameEngine.frameTimer / forceFixedDeltaTime, PhysicsWorld.FIXED_TIMESTEP).
+                    // by name (engine 3.1337: GameEngine.frameLoop.timer / forceFixedDeltaTime, PhysicsWorld.FIXED_TIMESTEP).
                     // The recorder pins forceFixedDeltaTime (1/60) and BackgroundActivity restores it after every frame, so
                     // while sub-frames run the flag reads false (writes are kept for the restore).
                     stepping:(n)=>{
-                        const e=this.engine as unknown as Record<string,unknown>&{frameTimer:Record<string,unknown>&{_ambienceTime:number};physicsWorld?:Record<string,unknown>};
-                        const timer=e.frameTimer,physics=e.physicsWorld;
+                        const e=this.engine as unknown as Record<string,unknown>&{frameLoop:{timer:Record<string,unknown>&{_ambienceTime:number}};physicsWorld?:Record<string,unknown>};
+                        const timer=e.frameLoop.timer,physics=e.physicsWorld;
                         if(n>1){
                             const step=1/(60*n);
                             if(timer.subframeStep!==step){
@@ -709,7 +712,8 @@ export class VoxelGame implements GenreGameInterface {
     private filmAo=false;
     private filmAmbientOcclusion(on:boolean):void{
         if(on===this.filmAo)return;this.filmAo=on;
-        (this.engine as unknown as {applyAoConfig(c:{enabled:boolean;intensity?:number;radius?:number;scale?:number}):void}).applyAoConfig(on?{enabled:true,intensity:1,radius:.8,scale:2}:{enabled:false});
+        // (engine 3.1337: the AO config lives on the engine's private post-FX owner, engine/core/PostFxPipeline.ts)
+        (this.engine as unknown as {postFx:{applyAoConfig(c:{enabled:boolean;intensity?:number;radius?:number;scale?:number}):void}}).postFx.applyAoConfig(on?{enabled:true,intensity:1,radius:.8,scale:2}:{enabled:false});
     }
 
     private toggleView(): void {
@@ -1197,5 +1201,3 @@ export class VoxelGame implements GenreGameInterface {
     }
 }
 
-// Register the VoxelGame with the genre registry
-genreRegistry.registerGenre('Voxel', VoxelGame);

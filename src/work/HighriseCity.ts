@@ -3,7 +3,7 @@ import {glbUrl} from './OptimizedGlb.js';
 import {CityLod} from './CityLod.js';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-import {PhysicsBodyFactory} from 'engine/physics/PhysicsBodyFactory.js';
+import {PhysicsBodyFactory} from 'engine/physics/world3d/PhysicsBodyFactory.js';
 import {planCollider} from 'engine/meshlevel/MeshLevelColliders.js';
 import type {EngineLike} from 'types/game.js';
 import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';

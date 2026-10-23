@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import type {Node} from 'three/webgpu';
 import {abs,cameraPosition,cameraViewMatrix,faceDirection,float,int,length,materialColor,materialRoughness,max,mix,normalWorldGeometry,normalize,positionWorld,select,sign,smoothstep,texture,uniformArray,vec2,vec3,vec4} from 'three/tsl';
-import {activeDeviceQualityTier} from 'engine/DeviceQuality.js';
+import {activeDeviceQualityTier} from 'engine/quality/DeviceQuality.js';
 import {PBR_PARAMS,PBR_SETS,detailSetFor} from './PbrDetailSets.js';
 
 /**

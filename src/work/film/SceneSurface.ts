@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {MeshStandardNodeMaterial,type Node} from 'three/webgpu';
 import {uniform,mix,float,textureLoad,ivec2,int,vertexStage,vec3,positionWorld,normalWorld,sin,smoothstep,vec2,normalView,normalize} from 'three/tsl';
-import {createWetSurfaceMaterial,type WetSurfaceHandle} from 'engine/weather/WetSurfaceMaterial.js';
+import {createWetSurfaceMaterial,type WetSurfaceHandle} from 'engine/world/weather/WetSurfaceMaterial.js';
 
 export const sceneWetness=uniform(0);
 export const sceneNeon=uniform(1);

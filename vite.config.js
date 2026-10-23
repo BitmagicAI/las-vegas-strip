@@ -15,8 +15,10 @@ export default defineConfig({
       'debug/': '/dist/engine/debug/',
       'editor/': '/dist/engine/editor/',
       'core/': '/dist/engine/core/',
+      'baseline/': '/dist/engine/baseline/',
       'genres/': '/dist/engine/genres/',
-      'work/': '/dist/src/work/'
+      'work/': '/dist/src/work/',
+      'bitmagic/': '/dist/engine/bitmagic/'
     }
   },
   server: {

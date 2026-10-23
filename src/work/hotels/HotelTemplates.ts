@@ -7,7 +7,7 @@ import {interiorLightsNode,lightInterior} from '../InteriorLighting.js';
 import {interiorKey} from '../InteriorKeyLight.js';
 import {colliderVertices} from './HotelGeometry.js';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-import {PhysicsBodyFactory} from 'engine/physics/PhysicsBodyFactory.js';
+import {PhysicsBodyFactory} from 'engine/physics/world3d/PhysicsBodyFactory.js';
 import {planCollider} from 'engine/meshlevel/MeshLevelColliders.js';
 import {applyMaterialConventions} from 'engine/meshlevel/MeshLevel.js';
 import type {MeshLevelData,MeshLevelCollider} from 'engine/meshlevel/MeshLevelSchema.js';

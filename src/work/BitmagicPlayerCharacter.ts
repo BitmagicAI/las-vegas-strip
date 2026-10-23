@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import type { IBlockCharacterFactory } from 'engine/IBlockCharacterFactory.js';
-import { scaleCharacterToHeight, getSkeletonHeight } from 'engine/CharacterConfig.js';
+import type { IBlockCharacterFactory } from 'engine/block-character/IBlockCharacterFactory.js';
+import { scaleCharacterToHeight, getSkeletonHeight } from 'engine/character/CharacterConfig.js';
 
 /**
  * Complete Bitmagic character system

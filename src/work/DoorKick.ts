@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import type {PlayerController} from 'engine/PlayerController.js';
+import type {PlayerController} from 'engine/player/PlayerController.js';
 import type {HotelStreaming,KickableDoor} from './hotels/HotelStreaming.js';
 
 /** Camera keyframes of a first-person front kick: [time s, forward m, pitch rad]. Wind-up, strike, follow-through, recover. */

@@ -11,7 +11,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | Task | Size | Priority | Items | Title |
 |---|---|---|---|---|
 | `rel-county-terms` | S | P1 | 2 | Confirm the terms for the Clark County GISMO pavement data |
-| `rel-engine-current` | M | P1 | 5 | Move to the currently published engine (3.1309) |
+| `rel-engine-current` | M | P1 | 3 | Move to the currently published engine (done: 3.1337) |
 | `rel-split-game-layer` | L | P1 | 3 | Finish separating the zombie game from the city |
 | `rel-texture-provenance` | M | P1 | 3 | Record where every packed texture came from |
 

@@ -24,14 +24,14 @@
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { SeededRandom } from 'engine/SeededRandom.js';
-import { TerrainTypeRegistry } from 'engine/TerrainTypes.js';
-import type { TerrainHeightProvider } from 'engine/TerrainTypeProvider.js';
-import { VoxelObject } from 'engine/VoxelObject.js';
+import { TerrainTypeRegistry } from 'engine/terrain/types/TerrainTypes.js';
+import type { TerrainHeightProvider } from 'engine/terrain/types/TerrainTypeProvider.js';
+import { VoxelObject } from 'engine/voxel/object/VoxelObject.js';
 import { BlockType, type BlockTypeId, getVoxelTextureAtlas } from 'engine/VoxelTextureAtlas.js';
-import { getRapier } from 'engine/physics/RapierPhysics.js';
-import { CollisionGroup, CollisionMask, makeCollisionGroups } from 'engine/CollisionLayers.js';
+import { getRapier } from 'engine/physics/rapier/RapierPhysics.js';
+import { CollisionGroup, CollisionMask, makeCollisionGroups } from 'engine/physics/CollisionLayers.js';
 import type { PhysicsWorld } from 'engine/physics/PhysicsWorld.js';
-import { enableStructuralCollapse } from 'engine/VoxelStructuralCollapse.js';
+import { enableStructuralCollapse } from 'engine/voxel/object/VoxelStructuralCollapse.js';
 import type RAPIER from '@dimforge/rapier3d-compat';
 
 function getBlockIdByName(name: string): BlockTypeId {
@@ -47,7 +47,7 @@ import type {
     EnvironmentObjectSystem,
     EnvironmentObjectData,
     EnvironmentInstance
-} from 'engine/EnvironmentObjectSystem.js';
+} from 'engine/world/env-objects/EnvironmentObjectSystem.js';
 
 // ============================================================================
 // CONFIGURATION INTERFACES

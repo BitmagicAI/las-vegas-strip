@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {isGeometryReleaseSuspended} from 'engine/GeometryCpuRelease.js';
+import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
 import {filmDetail} from './FilmDetail.js';
 
 interface DetailCell {bounds:THREE.Box3;wrappers:THREE.Group[];visible:boolean}

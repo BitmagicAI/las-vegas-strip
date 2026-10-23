@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import type {MeshLevelCollider} from 'engine/meshlevel/MeshLevelSchema.js';
 import {worldPoint,type Point,type Tower} from './HotelLayout.js';
-export function colliderVertices(c:MeshLevelCollider):number[]{
-    if(c.shape!=='box')return c.vertices;
+export function colliderVertices(c:MeshLevelCollider):ArrayLike<number>{
+    if(c.shape!=='box')return 'vertices' in c?c.vertices:[];   // (a heightfield has none; hotels never use one)
     const v:number[]=[],cos=Math.cos(c.yaw),sin=Math.sin(c.yaw);
     for(const x of [-c.size[0]/2,c.size[0]/2])for(const y of [-c.size[1]/2,c.size[1]/2])for(const z of [-c.size[2]/2,c.size[2]/2])
         v.push(c.position[0]+cos*x+sin*z,c.position[1]+y,c.position[2]-sin*x+cos*z);

@@ -2,7 +2,7 @@ import {stormDrivingEnabled} from './film/SceneSurface.js';
 import * as THREE from 'three';
 import {MeshPhysicalNodeMaterial,NodeMaterial,RenderTarget,type LightsNode,type Renderer} from 'three/webgpu';
 import {Fn,cameraPosition,cameraViewMatrix,cos,dot,float,fwidth,length,max,mix,normalize,positionWorld,pow,reflect,reflector,sin,smoothstep,texture,uniform,vec2,vec3,vec4} from 'three/tsl';
-import {activeDeviceQualityTier} from 'engine/DeviceQuality.js';
+import {activeDeviceQualityTier} from 'engine/quality/DeviceQuality.js';
 import {interiorLightsNode} from './InteriorLighting.js';
 import {clipWaterReflection} from './WaterReflectionClip.js';
 

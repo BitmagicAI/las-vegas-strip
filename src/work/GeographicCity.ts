@@ -8,7 +8,7 @@ import {SiteLights} from './SiteLights.js';
 import * as THREE from 'three';
 import {WebGPURenderer} from 'three/webgpu';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-import {PhysicsBodyFactory} from 'engine/physics/PhysicsBodyFactory.js';
+import {PhysicsBodyFactory} from 'engine/physics/world3d/PhysicsBodyFactory.js';
 import {planCollider} from 'engine/meshlevel/MeshLevelColliders.js';
 import type {EngineLike} from 'types/game.js';
 import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';

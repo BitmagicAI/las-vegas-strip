@@ -1,6 +1,6 @@
 import {foliageSettings} from './FoliageSettings.js';
 import * as THREE from 'three';
-import {isGeometryReleaseSuspended} from 'engine/GeometryCpuRelease.js';
+import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
 import {filmDetail} from './FilmDetail.js';
 /** Authored tree LODs: one selection per 40m grove, never per tree or leaf. */
 export class GroveLod {

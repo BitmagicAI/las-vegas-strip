@@ -6,7 +6,7 @@
 // changing exports or method signatures.
 import * as THREE from 'three';
 import { SeededRandom } from 'engine/SeededRandom.js';
-import { getObjectIdService } from 'engine/ObjectIdService.js';
+import { getObjectIdService } from 'engine/world/ObjectIdService.js';
 import type { Asset, WorldProfileData, EngineLike, GameData, TerrainFrictionProvider } from 'types/game.js';
 import {
     TerrainTypeRegistry,
@@ -18,27 +18,27 @@ import {
     createDirtTerrainType,
     createStoneTerrainType,
     createWaterTerrainType
-} from 'engine/TerrainTypes.js';
-import { VoxelTerrainTypeProvider } from 'engine/VoxelTerrainTypeProvider.js';
-import { VoxelFoliageSystem } from 'engine/VoxelFoliageSystem.js';
-import { EnvironmentObjectSystem, serializeEnvironmentObject } from 'engine/EnvironmentObjectSystem.js';
-import { VoxelTerrainSystem, type VoxelTerrainConfig } from 'engine/VoxelTerrainSystem.js';
-import { VxlChunkedTerrainSystem, DEFAULT_VXL_CHUNKED_TERRAIN_CONFIG } from 'engine/VxlChunkedTerrainSystem.js';
-import { VxlSceneTerrainSystem, DEFAULT_VXL_SCENE_TERRAIN_CONFIG } from 'engine/VxlSceneTerrainSystem.js';
-import { isVxlWorld } from 'engine/VxlWorldFormat.js';
+} from 'engine/terrain/types/TerrainTypes.js';
+import { VoxelTerrainTypeProvider } from 'engine/terrain/types/VoxelTerrainTypeProvider.js';
+import { VoxelFoliageSystem } from 'engine/world/foliage/VoxelFoliageSystem.js';
+import { EnvironmentObjectSystem, serializeEnvironmentObject } from 'engine/world/env-objects/EnvironmentObjectSystem.js';
+import { VoxelTerrainSystem, type VoxelTerrainConfig } from 'engine/terrain/voxel/VoxelTerrainSystem.js';
+import { VxlChunkedTerrainSystem, DEFAULT_VXL_CHUNKED_TERRAIN_CONFIG } from 'engine/terrain/baked/VxlChunkedTerrainSystem.js';
+import { VxlSceneTerrainSystem, DEFAULT_VXL_SCENE_TERRAIN_CONFIG } from 'engine/terrain/baked/VxlSceneTerrainSystem.js';
+import { isVxlWorld } from 'engine/voxel/formats/legacy/VxlWorldFormat.js';
 import { isVxlScene } from 'engine/vxlscene/VxlSceneFormat.js';
-import { fetchVwldBuffer } from 'engine/levels/fetchVwld.js';
-import { fetchNavSidecar } from 'engine/levels/fetchNavSidecar.js';
-import { resolveLevelVwldAsset, shouldApplyBootNav } from 'engine/levels/LevelManager.js';
-import { resolveLevels } from 'engine/levels/levelResolve.js';
-import { getActiveLevelIdOrNull } from 'engine/levels/levelManagerRegistry.js';
+import { fetchVwldBuffer } from 'engine/world/levels/fetchVwld.js';
+import { fetchNavSidecar } from 'engine/world/levels/fetchNavSidecar.js';
+import { resolveLevelVwldAsset, shouldApplyBootNav } from 'engine/world/levels/LevelManager.js';
+import { resolveLevels } from 'engine/world/levels/levelResolve.js';
+import { getActiveLevelIdOrNull } from 'engine/world/levels/levelManagerRegistry.js';
 import { VoxelNavMesh, setGlobalNavMesh } from 'engine/VoxelNavMesh.js';
 import { registerVoxelTreeType, registerVoxelRockType, createPendingVoxelObjectPhysics } from './EnvironmentObjects.js';
-import { VoxelFluidSystem, FluidRenderMode } from 'engine/VoxelFluidSystem.js';
-import { pinEnvironmentObjectsToAuthoredPositions } from 'engine/water/OpenWaterWorld.js';
-import { repairTerrainWalkability } from 'engine/TerrainWalkability.js';
-import { stepHeightForWorld } from 'engine/WalkingAndJumpingMovement.js';
-import { createPhysicsSpawnFinder } from 'engine/bakedSpawnResolver.js';
+import { VoxelFluidSystem, FluidRenderMode } from 'engine/voxel/fluids/VoxelFluidSystem.js';
+import { pinEnvironmentObjectsToAuthoredPositions } from 'engine/world/water/OpenWaterWorld.js';
+import { repairTerrainWalkability } from 'engine/terrain/voxel/TerrainWalkability.js';
+import { stepHeightForWorld } from 'engine/player/movement/WalkingAndJumpingMovement.js';
+import { createPhysicsSpawnFinder } from 'engine/world/spawning/bakedSpawnResolver.js';
 import { buildDefaultHotspotRegistry, type HotspotContext, type HotspotAsset, type InjectedEnvironmentObject } from 'engine/hotspots/index.js';
 import {
     getVoxelTextureAtlas,
@@ -54,8 +54,8 @@ import {
     createLeavesBlockType,
     createWaterBlockType
 } from 'engine/VoxelTextureAtlas.js';
-import { MaterialId } from 'engine/MaterialRegistry.js';
-import { queryPhysicsFor } from 'engine/physics/PlaneLockedPhysics.js';
+import { MaterialId } from 'engine/physics/MaterialRegistry.js';
+import { queryPhysicsFor } from 'engine/physics/plane/PlaneLockedPhysics.js';
 
 /**
  * Terrain type IDs created by this template.

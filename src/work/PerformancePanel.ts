@@ -1,8 +1,8 @@
-import {GameState,getGameStateManager} from 'engine/GameStateManager.js';
+import {GameState,getGameStateManager} from 'engine/core/GameStateManager.js';
 import {foliageSettings} from './FoliageSettings.js';
 import {shadowSettings,SHADOW_DISTANCE_MIN,SHADOW_DISTANCE_MAX} from './ShadowSettings.js';
 import {cityLodStats} from './CityLod.js';
-import {getActiveBackend} from 'engine/RendererType.js';
+import {getActiveBackend} from 'engine/render/backend/RendererType.js';
 import {getActiveQualityController} from 'engine/quality/QualityController.js';
 import type {EngineLike} from 'types/game.js';
 import {SceneMetrics} from './SceneMetrics.js';

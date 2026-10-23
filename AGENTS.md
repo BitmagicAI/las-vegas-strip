@@ -112,10 +112,9 @@ memory against one ~8 GB limit; above it, every few MB allocated forced a full c
 - Why point lights are so expensive here: three r185's default WebGPU lighting compiles every visible light
   into every lit shader as its own block of code (the jeep's shader: 1,402 lines with 8 lights, 3,712 with
   the scene's 43), and parked pool lights cost as much as lit ones. The engine's new batched lighting
-  (`EngineLighting`, uncommitted in Aitopia5 on 2026-10-08, not in engine 3.1223) loops over a uniform
-  array instead: with every material on the full list, 8-12 fps → 60 fps, identical picture. After a
-  `bitmagic upgrade` that ships it, keep the game-side lists (they still halve GPU time) and re-run
-  `tools/probe-lighting-modes.sh`. Never swap `renderer.lighting` after the first frame: on r185 it
+  (`EngineLighting`, shipped in engine 3.1337, the default renderer lighting since 2026-10-24) loops over a
+  uniform array instead: with every material on the full list, 8-12 fps → 60 fps, identical picture. Keep the
+  game-side lists (they still halve GPU time); `src/work/LightCaps.ts` sizes its caps before the first frame. Never swap `renderer.lighting` after the first frame: on r185 it
   renders wrong pictures; the local `?lighting=engine<cap>|clustered` switch in `Game.ts` installs at boot.
   Record: `docs/project-records/lighting-analysis-2026-10-08/`.
 - Sun shadow reach is a player setting (`ShadowSettings.ts`, B panel "Sun shadows", 32–192 m, default 32): wider than

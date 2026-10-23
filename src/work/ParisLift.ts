@@ -1,6 +1,6 @@
 import manifest from './paris-lift.json';
 import type { Object3D } from 'three';
-import type { PlayerController } from 'engine/PlayerController.js';
+import type { PlayerController } from 'engine/player/PlayerController.js';
 import type { GameHUD } from './GameHUD.js';
 
 /** Two-way elevator with a short enclosed-cabin transition. No input repeats while held. */

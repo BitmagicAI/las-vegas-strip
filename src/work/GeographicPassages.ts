@@ -1,8 +1,8 @@
 import {makeDoorTrim} from './DoorTrim.js';
 import * as THREE from 'three';
-import {InteractableComponent} from 'engine/InteractableComponent.js';
-import {Door,DEFAULT_DOOR_OPTIONS} from 'engine/Door.js';
-import {PhysicsBodyFactory} from 'engine/physics/PhysicsBodyFactory.js';
+import {InteractableComponent} from 'engine/interaction/InteractableComponent.js';
+import {Door,DEFAULT_DOOR_OPTIONS} from 'engine/gameplay/doors/Door.js';
+import {PhysicsBodyFactory} from 'engine/physics/world3d/PhysicsBodyFactory.js';
 import {planCollider} from 'engine/meshlevel/MeshLevelColliders.js';
 import type {EngineLike} from 'types/game.js';
 import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';

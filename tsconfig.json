@@ -29,11 +29,17 @@
       "core/*": [
         "engine/core/*"
       ],
+      "baseline/*": [
+        "engine/baseline/*"
+      ],
       "genres/*": [
         "engine/genres/*"
       ],
       "work/*": [
         "src/work/*"
+      ],
+      "bitmagic/*": [
+        "engine/bitmagic/*"
       ]
     },
     "moduleResolution": "bundler",
@@ -55,8 +61,7 @@
     ],
     "typeRoots": [
       "engine/types",
-      "node_modules/@types",
-      "node_modules/ammojs-typed/ammo/ambient"
+      "node_modules/@types"
     ]
   },
   "include": [
@@ -68,9 +73,11 @@
     "dist",
     "engine/**/*.test.ts",
     "engine/**/__tests__/**/*",
+    "engine/**/__mocks__/**/*",
     "src/**/*.test.ts",
     "src/**/__tests__/**/*",
     "engine/bundle/**/*",
-    "engine/agent-docs/**/*"
+    "engine/agent-docs/**/*",
+    "engine/agent-playbooks/**/*"
   ]
 }

@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {CollisionGroup} from 'engine/CollisionLayers.js';
+import {CollisionGroup} from 'engine/physics/CollisionLayers.js';
 import type {PhysicsWorld} from 'engine/physics/PhysicsWorld.js';
 
 /** The stock camera accepts only fixed bodies; doors are kinematic. Run a

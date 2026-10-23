@@ -4,12 +4,22 @@ import SSRNode from 'three/addons/tsl/display/SSRNode.js';
 import {stormDrivingEnabled} from './SceneSurface.js';
 import * as THREE from 'three';
 import type {GameEngine} from 'engine/GameEngine.js';
-import {RainHeightField} from 'engine/weather/RainHeightField.js';
-import {RainVFXGpu,DEFAULT_RAIN_VFX_GPU_OPTIONS,type ComputeCapableRenderer} from 'engine/weather/RainVFXGpu.js';
-import {RainVFXWebGl,DEFAULT_RAIN_VFX_WEBGL_OPTIONS} from 'engine/weather/RainVFXWebGl.js';
-import {isWebGpuActive} from 'engine/RendererType.js';
+import type {ResolvedBloomConfig} from 'engine/core/PostFxPipeline.js';
+import type {WeatherConfig} from 'types/game.js';
+import {RainHeightField} from 'engine/world/weather/RainHeightField.js';
+import {RainVFXGpu,DEFAULT_RAIN_VFX_GPU_OPTIONS,type ComputeCapableRenderer} from 'engine/world/weather/RainVFXGpu.js';
+import {RainVFXWebGl,DEFAULT_RAIN_VFX_WEBGL_OPTIONS} from 'engine/world/weather/RainVFXWebGl.js';
+import {isWebGpuActive} from 'engine/render/backend/RendererType.js';
 import {sceneWetness,sceneNeon,updateSceneSurface} from './SceneSurface.js';
 import {weatherFor,type ScenePreset,type RouteKey} from './ScenePreset.js';
+
+/** Engine internals the film borrows by name. Engine 3.1337 moved them out of GameEngine into its private post-FX owner
+ * (engine/core/PostFxPipeline.ts) and weather owner (engine/world/weather/WeatherEngineBridge.ts). */
+interface Internals {
+    postFx:{bloomConfig:ResolvedBloomConfig|null;setBloom(config:ResolvedBloomConfig|null):void;bloomPipeline:{outputNode?:import('three/webgpu').Node}|null};
+    weather:{getConfig():WeatherConfig|null;system:{dispose():void}|null};
+}
+const internals=(engine:GameEngine)=>engine as unknown as Internals;
 
 const sleep=(ms:number)=>new Promise<void>(resolve=>setTimeout(resolve,ms));
 function stormSky(daylight:ScenePreset['daylight']):THREE.CanvasTexture {
@@ -39,9 +49,9 @@ export class SceneAtmosphere {
     private gl:RainVFXWebGl|null=null;
     private center=new THREE.Vector3();
     private preset:ScenePreset|null=null;
-    private priorWeather:GameEngine['currentWeatherConfig']=null;
+    private priorWeather:WeatherConfig|null=null;
     private flash=0;
-    private priorBloom:GameEngine['bloomConfig']=null;
+    private priorBloom:ResolvedBloomConfig|null=null;
     readonly floods:THREE.SpotLight[]=[];
     readonly lamps:THREE.PointLight[]=[];
     private bolts:THREE.LineSegments|null=null;
@@ -55,7 +65,7 @@ export class SceneAtmosphere {
     async apply(preset:ScenePreset,route:readonly RouteKey[]):Promise<void>{
         this.restore();const scene=this.engine.scene!,renderer=this.engine.renderer!;
         this.original={background:scene.background,environment:scene.environment,fog:scene.fog,fogNode:scene.fogNode,environmentIntensity:scene.environmentIntensity,backgroundIntensity:scene.backgroundIntensity,exposure:renderer.toneMappingExposure};
-        this.preset=preset;this.priorBloom=this.engine['bloomConfig'];this.engine['setupBloom']({enabled:true,strength:.34,radius:.42,threshold:1.05});this.priorWeather=this.engine['currentWeatherConfig'];
+        this.preset=preset;const fx=internals(this.engine).postFx;this.priorBloom=fx.bloomConfig;fx.setBloom({enabled:true,strength:.34,radius:.42,threshold:1.05});this.priorWeather=internals(this.engine).weather.getConfig();
         scene.traverse(o=>{if(o instanceof THREE.Light&&!this.lamps.includes(o as THREE.PointLight)&&!this.floods.includes(o as THREE.SpotLight))this.lights.set(o,{color:o.color.clone(),intensity:o.intensity});if(/skybox/i.test(o.name)){this.skies.set(o,o.visible);if(preset.daylight!=='original')o.visible=false;}});
         for(const [light,state] of this.lights)this.lightStates.push({light,...state});
         if(preset.daylight!=='original'){
@@ -68,8 +78,8 @@ export class SceneAtmosphere {
             // with the same engine rain components below, using this mesh level's heights and exact recording time.
             this.engine.applyWeatherConfig(weatherFor(preset));
             // Gameplay keeps puddle reflections, with a half-resolution ray-march. Capture remains full resolution.
-            if(stormDrivingEnabled()){const visited=new Set<import('three/webgpu').Node>();const visit=(node:import('three/webgpu').Node)=>{if(visited.has(node))return;visited.add(node);if(node instanceof SSRNode)node.resolutionScale=.5;for(const child of node.getChildren())visit(child);};const output=this.engine['bloomPipeline']?.outputNode;if(output)visit(output);}
-            this.engine['weatherSystem']?.dispose();this.engine['weatherSystem']=null;
+            if(stormDrivingEnabled()){const visited=new Set<import('three/webgpu').Node>();const visit=(node:import('three/webgpu').Node)=>{if(visited.has(node))return;visited.add(node);if(node instanceof SSRNode)node.resolutionScale=.5;for(const child of node.getChildren())visit(child);};const output=internals(this.engine).postFx.bloomPipeline?.outputNode;if(output)visit(output);}
+            const weather=internals(this.engine).weather;weather.system?.dispose();weather.system=null;
             this.field=new RainHeightField();let x0=Infinity,x1=-Infinity,z0=Infinity,z1=-Infinity;
             for(const p of route){x0=Math.min(x0,p.x);x1=Math.max(x1,p.x);z0=Math.min(z0,p.z);z1=Math.max(z1,p.z);}
             this.field.start({minX:x0-65,maxX:x1+65,minY:-3,maxY:200,minZ:z0-65,maxZ:z1+65});
@@ -108,6 +118,6 @@ export class SceneAtmosphere {
         this.bolts?.removeFromParent();this.bolts=null;this.boltGeo?.dispose();this.boltGeo=null;this.boltMat?.dispose();this.boltMat=null;
         if(this.original){const s=this.engine.scene!,o=this.original;this.engine.applyWeatherConfig(this.priorWeather);s.background=o.background;s.environment=o.environment;s.fog=o.fog;s.fogNode=o.fogNode;s.environmentIntensity=o.environmentIntensity;s.backgroundIntensity=o.backgroundIntensity;this.engine.renderer!.toneMappingExposure=o.exposure;}
         for(const [l,s] of this.lights){l.color.copy(s.color);l.intensity=s.intensity;}this.lights.clear();this.lightStates.length=0;for(const [o,v] of this.skies)o.visible=v;this.skies.clear();
-        for(const l of this.lamps)l.intensity=0;for(const l of this.floods)l.intensity=0;if(this.original)this.engine['setupBloom'](this.priorBloom);this.sky?.dispose();this.sky=null;this.preset=null;this.original=null;sceneWetness.value=0;sceneNeon.value=1;
+        for(const l of this.lamps)l.intensity=0;for(const l of this.floods)l.intensity=0;if(this.original)internals(this.engine).postFx.setBloom(this.priorBloom);this.sky?.dispose();this.sky=null;this.preset=null;this.original=null;sceneWetness.value=0;sceneNeon.value=1;
     }
 }

@@ -1,7 +1,7 @@
 import type * as THREE from 'three';
 import type {EngineLike} from 'types/game.js';
-import type {PlayerController} from 'engine/PlayerController.js';
-import type {VehicleManager} from 'engine/VehicleManager.js';
+import type {PlayerController} from 'engine/player/PlayerController.js';
+import type {VehicleManager} from 'engine/vehicle/VehicleManager.js';
 import type {GameHUD} from './GameHUD.js';
 import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';
 import type {NearbyLights} from './NearbyLights.js';

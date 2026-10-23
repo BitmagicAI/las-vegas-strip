@@ -4,6 +4,9 @@ import { viteSingleFile } from 'vite-plugin-singlefile';
 // The engine's physics-mode rule, straight from the vendored engine source (see the Rapier
 // flavor block below for why the bundle must use the engine's own rule and nothing else).
 import { effectivePhysicsMode, rapierFlavorForPhysicsMode } from './engine/engine/physics/PhysicsModeRule.ts';
+// Deletes the engine's own log.debug/log.info calls, and their message strings, from the bundle
+// (engine/engine/runtime/stripDevLogs.ts). Only modules that make the engine's logger are touched.
+import { stripDevLogsPlugin } from './engine/engine/runtime/stripDevLogs.ts';
 
 // Aliases mirror vite.config.js's, deliberately NOT wrapped in path.resolve(): every target here
 // already starts with '/', which Vite resolves as project-root-relative in both serve and build
@@ -39,13 +42,13 @@ function resolveRapierFlavor() {
     throw new Error('Cannot decide which physics engine to bundle: src/work/game.json is unreadable (' + err.message + ').');
   }
   const mode = game.physicsMode === '2d' || game.physicsMode === '3d' || game.physicsMode === 'none' ? game.physicsMode : undefined;
-  return rapierFlavorForPhysicsMode(effectivePhysicsMode(typeof game.gameGenre === 'string' ? game.gameGenre : '', mode, game.physics2d === true));
+  return rapierFlavorForPhysicsMode(effectivePhysicsMode('', mode, game.physics2d === true));
 }
 const rapierFlavor = resolveRapierFlavor();
 const droppedRapier = RAPIER_PACKAGES[rapierFlavor === '2d' ? '3d' : '2d'];
 // 'pre' is load-bearing: without it Vite's own resolver wins and the "dropped" package is
 // INLINED from node_modules — WASM and all, ~2 MB heavier — with no error and no greppable
-// package-name string. Same trap the creator-handler stub above documents.
+// package-name string.
 const stubRapierPlugin = () => ({
   name: 'stub-rapier-flavor',
   enforce: 'pre',
@@ -54,29 +57,6 @@ const stubRapierPlugin = () => ({
   },
   load(id) {
     return id === '\0rapier-flavor-stub' ? 'export default null;' : null;
-  }
-});
-
-// Published games never run in creator mode, so the creator<->game command surface (and its
-// editor-only dependencies) is dead weight. 'pre' runs before Vite's alias plugin resolves the
-// 'engine/' prefix, which is what lets this stub win.
-const stubCreatorHandlerPlugin = () => ({
-  name: 'stub-creator-handler',
-  enforce: 'pre',
-  resolveId(id) {
-    if (id === 'engine/template/CreatorMessageHandler.js' ||
-        id.endsWith('/engine/template/CreatorMessageHandler.js')) {
-      return '\0creator-handler-stub';
-    }
-    return null;
-  },
-  load(id) {
-    if (id === '\0creator-handler-stub') {
-      return 'export function registerCreatorMessageListener() {}\n' +
-             'export function notifyPhysicsReady() {}\n' +
-             'export function flushPendingToolMessages() {}\n';
-    }
-    return null;
   }
 });
 
@@ -108,6 +88,24 @@ function stripEditingOnlyWorldFieldsPlugin() {
   };
 }
 
+// A licence obligation, not decoration — see engine/LICENSE.md. This bundle contains compiled
+// engine code and the third-party libraries it uses, whose licences require their
+// notices to travel with any copy. Removing this banner puts your published game out of compliance.
+// It is added after Vite's own esbuild pass over the chunk, which drops legal comments, so Rollup's
+// `output.banner` would not survive; viteSingleFile then inlines the chunk into the page.
+function licenceBannerPlugin() {
+  const banner = "/*!\n * Made with Bitmagic - https://bitmagic.ai\n *\n * This bundle includes the Bitmagic engine.\n * Required Notice: Copyright Bitmagic Oy (https://bitmagic.ai)\n * Licensed under the PolyForm Shield License 1.0.0\n * <https://polyformproject.org/licenses/shield/1.0.0>, with an additional permission\n * granting the right to build, modify, sell and distribute games. Full terms:\n * https://bitmagic.ai/terms-of-service\n *\n * Third-party software included in this bundle:\n *   three.js - MIT - Copyright (c) 2010-2026 three.js authors\n *   meshoptimizer decoder (via three.js) - MIT - Copyright (c) 2016-2026 Arseny Kapoulkine\n *   @dimforge/rapier2d-compat, @dimforge/rapier3d-compat - Apache License 2.0\n *   @msgpack/msgpack - ISC - Copyright 2019 The MessagePack Community\n *   fflate - MIT - Copyright (c) 2023 Arjun Barrett\n *   i18next, i18next-browser-languagedetector - MIT - Copyright (c) 2025 i18next\n * Full licence texts: THIRD-PARTY-NOTICES.md in the Bitmagic engine distribution.\n */";
+  return {
+    name: 'bitmagic-licence-banner',
+    enforce: 'post',
+    generateBundle(_options, bundle) {
+      for (const chunk of Object.values(bundle)) {
+        if (chunk.type === 'chunk') chunk.code = banner + '\n' + chunk.code;
+      }
+    },
+  };
+}
+
 export default defineConfig({
   // The engine serves world.json/game.json two different ways, and this flag is how it chooses.
   // `utils/worldDataLoader.ts` reads `typeof __BUNDLED__ !== 'undefined' && __BUNDLED__`: true
@@ -121,6 +119,10 @@ export default defineConfig({
   // That makes a missing define invisible until a published game is opened in a browser.
   //
   // Deliberately NOT set in the dev config — live-edit serving must take the fetch path.
+  //
+  // The same define keeps the editor, the debug tools and the Creator bridge out of the bundle:
+  // it makes the engine's isPublishedBuild a constant, so engine/devtools/DevtoolsHost.ts returns
+  // before its one dynamic import of them and Rollup drops that import with the dead branch.
   define: { __BUNDLED__: true },
   resolve: {
     alias: {
@@ -130,8 +132,10 @@ export default defineConfig({
       'debug/': '/dist/engine/debug/',
       'editor/': '/dist/engine/editor/',
       'core/': '/dist/engine/core/',
+      'baseline/': '/dist/engine/baseline/',
       'genres/': '/dist/engine/genres/',
-      'work/': '/dist/src/work/'
+      'work/': '/dist/src/work/',
+      'bitmagic/': '/dist/engine/bitmagic/'
     }
   },
   build: {
@@ -148,13 +152,14 @@ export default defineConfig({
       // build; strip the map and every publish of this bundle is refused.
       output: {
         inlineDynamicImports: true,
-        // A licence obligation, not decoration — see engine/LICENSE.md. This bundle contains
-        // compiled engine code and the third-party libraries it uses, whose licences
-        // require their notices to travel with any copy. Removing this banner puts your published
-        // game out of compliance.
-        banner: "/*!\n * Made with Bitmagic — https://bitmagic.ai\n *\n * This bundle includes the Bitmagic engine.\n * Required Notice: Copyright Bitmagic Oy (https://bitmagic.ai)\n * Licensed under the PolyForm Shield License 1.0.0\n * <https://polyformproject.org/licenses/shield/1.0.0>, with an additional permission\n * granting the right to build, modify, sell and distribute games. Full terms:\n * https://bitmagic.ai/terms-of-service\n *\n * Third-party software included in this bundle:\n *   three.js — MIT — Copyright (c) 2010-2026 three.js authors\n *   @dimforge/rapier2d-compat, @dimforge/rapier3d-compat — Apache License 2.0\n *   @msgpack/msgpack — ISC — Copyright 2019 The MessagePack Community\n *   fflate — MIT — Copyright (c) 2023 Arjun Barrett\n *   i18next, i18next-browser-languagedetector — MIT — Copyright (c) 2025 i18next\n *   JSZip — MIT (elected) — Copyright (c) 2009-2016 Stuart Knightley and contributors\n * Full licence texts: THIRD-PARTY-NOTICES.md in the Bitmagic engine distribution.\n */",
       },
     },
   },
-  plugins: [stubCreatorHandlerPlugin(), stripEditingOnlyWorldFieldsPlugin(), stubRapierPlugin(), viteSingleFile()],
+  plugins: [
+    stripEditingOnlyWorldFieldsPlugin(),
+    stripDevLogsPlugin(),
+    stubRapierPlugin(),
+    licenceBannerPlugin(),
+    viteSingleFile(),
+  ],
 });

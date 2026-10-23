@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshStandardNodeMaterial,type Node} from 'three/webgpu';
 import {float,lights,reference} from 'three/tsl';
-import {isGeometryReleaseSuspended} from 'engine/GeometryCpuRelease.js';
+import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
 
 /** Garden foliage keeps its own standard materials but is lit only by the sun
  * (with its shadow), the sky and the ambient term. Thousands of overlapping blades

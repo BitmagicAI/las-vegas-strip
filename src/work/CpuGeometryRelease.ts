@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import {isGeometryReleaseSuspended} from 'engine/GeometryCpuRelease.js';
+import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
 
 /** CPU copies of geometry this game builds itself (city batches, coarse LODs,
  * shadow batches) are dropped once the GPU holds them.

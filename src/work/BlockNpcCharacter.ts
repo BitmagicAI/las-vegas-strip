@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import type { IBlockCharacterFactory } from 'engine/IBlockCharacterFactory.js';
+import type { IBlockCharacterFactory } from 'engine/block-character/IBlockCharacterFactory.js';
 import { bitmagicCharacterFactory } from './BitmagicPlayerCharacter.js';
 
 /**
