@@ -5,9 +5,9 @@
 This is an open repository. If you were asked to "pick up a task", do it this way:
 
 1. **Engine and assets:** if `engine/` is missing, run `bitmagic upgrade` (it needs your human's Bitmagic Pro login;
-   the engine is a dependency, never committed). Then `node tools/release/fetch-assets.mjs --verify`, and without
-   `--verify` if files are missing: `build/` is ignored by git and the game cannot load without the runtime set
-   (`runtime-assets/`, Git LFS; the tool copies it into `build/`, and again after every `git pull`).
+   the engine is a dependency, never committed). `pnpm install` copies the runtime set (`runtime-assets/`, Git LFS) into
+   `build/` and adds git hooks that refresh it after every pull; `node tools/release/fetch-assets.mjs --verify` checks
+   it. `build/` is ignored by git and the game cannot load without the runtime set.
 2. **Find a task:** `node tools/tasks/pick.mjs`, which lists open, unclaimed tasks. Prefer S or M. Skip anything marked
    maintainers only.
 3. **Read it:** `node tools/tasks/pick.mjs show <task-id>`.
@@ -314,6 +314,14 @@ things you would do next, in order. Let them choose. Do not publish unless they 
 The full contract — what counts as a core verb, what the engine already ships so you never build it,
 the `mechanics-plan.md` skeleton, and the loop after slice 1 — is in
 `.agents/skills/planning-a-game/SKILL.md`.
+
+## Preserve the visual direction
+
+Build the requested look first; no default 60 FPS gate. Keep efficient code, then profile.
+**Ask before sacrificing visuals for FPS**, even when asked to optimize; an FPS target alone
+does not approve visual cuts. Report poor FPS/stutter and test limits even when verify passes.
+Phone emulation is not a phone benchmark. For profiling and changes that preserve the look,
+read `engine/agent-docs/performance-best-practices.md`.
 
 ## Finding an engine API
 

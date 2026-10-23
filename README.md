@@ -44,7 +44,7 @@ git clone https://github.com/BitmagicAI/las-vegas-strip.git
 ```
 
 ```bash
-cd las-vegas-strip && bitmagic upgrade && pnpm install && node tools/release/fetch-assets.mjs
+cd las-vegas-strip && bitmagic upgrade && pnpm install
 ```
 
 ```bash
@@ -53,7 +53,8 @@ bitmagic dev
 
 `bitmagic upgrade` always installs the currently published engine, and this repository follows it. If the typecheck
 (`bitmagic check`) fails right after a new engine release, that is a task on the board, not your setup. The clone
-downloads about 1.1 GiB of models and data through Git LFS ([docs/ASSETS.md](docs/ASSETS.md)).
+downloads about 1.1 GiB of models and data through Git LFS. `pnpm install` copies them into `build/`, where the game
+reads them, and adds git hooks that refresh `build/` after every `git pull` ([docs/ASSETS.md](docs/ASSETS.md)).
 
 Open the URL `bitmagic dev` prints and click Play:
 

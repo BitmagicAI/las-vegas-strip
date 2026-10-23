@@ -19,15 +19,14 @@ npm i -g @bitmagic/cli
 bitmagic login
 ```
 
-Then, with [Git LFS](https://git-lfs.com) installed (models, images and archives are LFS files), clone (about 1.1 GiB, most of it the runtime set in LFS), install the engine and the packages, and copy the
-runtime set into `build/`:
+Then, with [Git LFS](https://git-lfs.com) installed (models, images and archives are LFS files), clone (about 1.1 GiB, most of it the runtime set in LFS), then install the engine and the packages. `pnpm install`
+also copies the runtime set into `build/` and adds git hooks that keep it current after every pull:
 
 ```bash
 git lfs install
 git clone https://github.com/BitmagicAI/las-vegas-strip.git && cd las-vegas-strip
 bitmagic upgrade
 pnpm install
-node tools/release/fetch-assets.mjs
 bitmagic dev
 ```
 
@@ -99,8 +98,8 @@ For geometry changes, also do the following:
 
 - Regenerate through the builder scripts. Never hand-edit an exported GLB.
 - Re-optimize (`AGENTS.md`, "Runtime GLBs") and bump the folder's `version.json` revision.
-- Run `python3 tools/release/asset-pack.py stage`, and commit `runtime-assets/` with `tools/release/asset-pack.json`
-  ([docs/ASSETS.md](docs/ASSETS.md), "Updating the runtime set").
+- Commit `runtime-assets/` with `tools/release/asset-pack.json`. The optimizer's install step stages them; after any
+  other runtime change run `pnpm assets` ([docs/ASSETS.md](docs/ASSETS.md), "Updating the runtime set").
 - Attach before and after captures from the same cameras.
 
 Then walk it in the game: go in, come back out, and drive past it.

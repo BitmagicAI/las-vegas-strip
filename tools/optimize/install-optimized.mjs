@@ -17,6 +17,7 @@
  * that size and time, so a regenerated source always wins. --remove deletes matching installs.
  * Originals stay in place: Blender and the resort pipelines read and patch them byte by byte.
  */
+import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -52,3 +53,5 @@ manifest.generated=new Date().toISOString();
 if(!dry){fs.mkdirSync(OUT,{recursive:true});fs.writeFileSync(MANIFEST,JSON.stringify(manifest,null,1));}
 const MB=n=>(n/1048576).toFixed(1);
 console.log(remove?`removed ${removed}`:`installed ${installed} [${variant}] (${MB(before)} -> ${MB(after)} MB), skipped ${skipped}${dry?' (dry run)':''}; manifest has ${Object.keys(manifest.files).length} entries`);
+// The repository's runtime set (runtime-assets/, Git LFS) follows every install, ready to commit (docs/ASSETS.md).
+if(!dry&&(installed||removed)){const r=spawnSync('python3',['tools/release/asset-pack.py','stage'],{cwd:ROOT,stdio:'inherit'});if(r.status!==0)console.warn('runtime-assets/ not staged: run `pnpm assets`');}

@@ -48,6 +48,22 @@ def load_json(path):
         return json.load(f)
 
 
+def optimized_files():
+    """The optimizer's manifest entries; {} in a clone, whose build/ came from runtime-assets/ and has none."""
+    p = ROOT / 'build/optimized/manifest.json'
+    return load_json('build/optimized/manifest.json')['files'] if p.exists() else {}
+
+
+def runtime_glbs():
+    """Every runtime GLB under build/: the optimizer's list in a full checkout (it walks the loaders); in a clone, the
+    committed list's GLBs, so a contributor's `stage` keeps the set it was given."""
+    files = optimized_files()
+    if files:
+        return [p for p in files if p.startswith('build/')]
+    old = json.loads(OUT_LIST.read_text()) if OUT_LIST.exists() else {'files': []}
+    return [f['path'] for f in old['files'] if f['path'].endswith('.glb')]
+
+
 def runtime_files():
     """(path, reason) for every runtime file the loaders ask for, GLBs included."""
     want = {}
@@ -57,9 +73,8 @@ def runtime_files():
 
     # GLBs: every runtime GLB the optimizer enumerated (tools/optimize/optimize-runtime-glbs.mjs walks the same loaders)
     # (public/ GLBs such as foliage/tree-0.glb are committed and load as their originals in a clone)
-    for path in load_json('build/optimized/manifest.json')['files']:
-        if path.startswith('build/'):
-            add(path, 'runtime GLB (build/optimized/manifest.json)')
+    for path in runtime_glbs():
+        add(path, 'runtime GLB (build/optimized/manifest.json, or the committed list in a clone)')
     # world.json assets served from build/ (doors in worldProfileData.doors)
     for a in load_json('src/work/world.json').get('assets', []):
         url = (a.get('url') or '').split('?')[0]
@@ -106,7 +121,7 @@ def runtime_files():
     # HotelTemplates.ts: /build/hotels/<module>.glb and /build/hotels/<module>.mesh-level.json
     # (only real modules: the optimizer's list already applies HotelLayout's set and part names, so staged-vegas.glb,
     # which no module name can request, stays out)
-    for path in load_json('build/optimized/manifest.json')['files']:
+    for path in runtime_glbs():
         if path.startswith('build/hotels/') and path.endswith('.glb'):
             add(path[:-4] + '.mesh-level.json', 'HotelTemplates module levels')
     add('build/vehicles/afterlight-jeep.glb', 'SanctuaryJeep')
@@ -135,7 +150,7 @@ def sha256(path):
 
 
 def listing():
-    manifest = load_json('build/optimized/manifest.json')['files']
+    manifest = optimized_files()
     want = runtime_files()
     files, missing = [], []
     for path in sorted(want):
@@ -185,8 +200,12 @@ def build(files, doc):
     print('Upload it (a GitHub release asset, max 2 GiB) and put its URL in tools/release/asset-pack.json pack.url.')
 
 
-def stage(files):
+def stage(files, force=False):
     """Mirror the runtime set into runtime-assets/: copy what is new or changed, delete what left the set."""
+    tracked = [p for p in RUNTIME.rglob('*') if p.is_file()] if RUNTIME.exists() else []
+    if tracked and len(files) < 0.9 * len(tracked) and not force:
+        sys.exit(f'stage: the listing has {len(files)} files but runtime-assets/ has {len(tracked)}; refusing to delete that '
+                 'many (is build/ incomplete? run `node tools/release/fetch-assets.mjs`). --force overrides.')
     keep, copied, same = set(), 0, 0
     for f in files:
         assert f['path'].startswith('build/'), f['path']
@@ -227,7 +246,7 @@ def main():
     if cmd == 'build':
         build(files, doc)
     if cmd == 'stage':
-        stage(files)
+        stage(files, '--force' in sys.argv)
 
 
 if __name__ == '__main__':

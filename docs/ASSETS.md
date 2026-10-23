@@ -15,14 +15,17 @@ The runtime set (every model, texture and data file the game loads) is in the re
 
 ```bash
 git lfs install                                  # once per machine, before cloning
-node tools/release/fetch-assets.mjs              # copy runtime-assets/ into build/ (again after every git pull)
+pnpm install                                     # copies runtime-assets/ into build/ and adds the git hooks
 node tools/release/fetch-assets.mjs --verify     # is build/ complete and current?
 node tools/release/fetch-assets.mjs --pack       # or: download the release snapshot instead of using LFS
 ```
 
-The game reads `build/`, which git ignores, so builders can write intermediates there freely. `fetch-assets.mjs` copies
-only the files that differ from `tools/release/asset-pack.json` (sizes and SHA-256 digests); on APFS and btrfs the copies
-are clones and take no extra space. If `runtime-assets/` holds LFS pointer files instead of data, it says so: run
+The game reads `build/`, which git ignores, so builders can write intermediates there freely. `pnpm install` runs
+`fetch-assets.mjs --auto`, which copies only the files that differ from `tools/release/asset-pack.json` (SHA-256
+digests); on APFS and btrfs the copies are clones and take no extra space. It also appends itself to the clone's
+`post-merge` and `post-checkout` git hooks (next to Git LFS's own lines), so `build/` follows every `git pull` and
+branch switch. A file you rebuilt in `build/` and have not staged yet is kept, never overwritten
+(`build/.runtime-sync.json` remembers what was copied). If `runtime-assets/` holds LFS pointer files instead of data, it says so: run
 `git lfs pull`. It refuses to copy into a full working checkout (one with `build/optimized/manifest.json`), because the
 runtime set stores optimized GLBs at the original paths and would overwrite the originals the Blender pipelines patch.
 
@@ -30,9 +33,11 @@ runtime set stores optimized GLBs at the original paths and would overwrite the 
 
 1. Change the geometry through its builder (never hand-edit an exported GLB); the result lands in `build/`.
 2. Re-optimize (`AGENTS.md`, "Runtime GLBs") and bump the folder's `version.json` revision.
-3. `python3 tools/release/asset-pack.py stage` lists the set again and mirrors it into `runtime-assets/`: new and
-   changed files are copied, files that left the set are deleted.
-4. `git add -A runtime-assets tools/release/asset-pack.json`, commit, and open the pull request.
+3. The optimizer's install step (`tools/optimize/install-optimized.mjs`) then runs
+   `python3 tools/release/asset-pack.py stage` for you; after any other runtime change (collision, routes, venue lists)
+   run `pnpm assets`. It lists the set again and mirrors it into `runtime-assets/`: new and changed files are copied,
+   files that left the set are deleted (it refuses to delete more than a tenth of the set without `--force`).
+4. `git add -A runtime-assets tools/release/asset-pack.json`, commit, and open the pull request from your fork.
 
 Every LFS version is kept, so stage after real changes only; re-optimizing an unchanged GLB writes identical bytes and
 adds nothing.
@@ -66,7 +71,7 @@ python3 tools/release/asset-pack.py build   # list, then .bitmagic/release/las-v
 After a new loader or a new runtime folder, add a rule there. Then confirm that a fresh clone plays with nothing
 missing:
 
-1. Clone into a clean folder, run `fetch-assets.mjs`, and start `bitmagic dev` there.
+1. Clone into a clean folder, run `pnpm install`, and start `bitmagic dev` there.
 2. Run `node tools/release/smoke-clone.mjs --shots`. It visits:
    - hotel rooms in four towers;
    - three venues;

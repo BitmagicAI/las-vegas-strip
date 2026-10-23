@@ -152,8 +152,7 @@ The zombie-era `GAME-DESIGN.md` and `mechanics-plan.md` went to `docs/history/`.
    upload it and set `pack.url` in `tools/release/asset-pack.json`.
 5. Test a clean clone on a second machine or folder:
    - `bitmagic login` (Pro) and `bitmagic upgrade`;
-   - `pnpm install`;
-   - `node tools/release/fetch-assets.mjs`;
+   - `pnpm install` (it copies the runtime set into `build/`);
    - `bitmagic check`;
    - `bitmagic dev`;
    - `node tools/release/smoke-clone.mjs --shots`. It covers four hotel rooms, three venues, the Sphere and the

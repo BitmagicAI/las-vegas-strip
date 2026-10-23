@@ -11,7 +11,9 @@
   "scripts": {
     "build": "tsc",
     "check": "tsc --noEmit",
-    "dev": "vite"
+    "dev": "vite",
+    "postinstall": "node tools/release/fetch-assets.mjs --auto",
+    "assets": "python3 tools/release/asset-pack.py stage"
   },
   "dependencies": {
     "@dimforge/rapier2d-compat": "^0.20.0",

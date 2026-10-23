@@ -1,11 +1,13 @@
 // Sets up build/ so a fresh clone runs (docs/ASSETS.md).
 //
 //   node tools/release/fetch-assets.mjs                 # copy runtime-assets/ (the Git LFS copy in the clone) into build/
+//   node tools/release/fetch-assets.mjs --auto          # the same, quietly, never failing; `pnpm install` and the git
+//                                                       # hooks it adds (post-merge, post-checkout) run this
 //   node tools/release/fetch-assets.mjs --pack          # or download the pack named in tools/release/asset-pack.json
 //   node tools/release/fetch-assets.mjs --from <file>   # or unpack a pack already on disk
 //   node tools/release/fetch-assets.mjs --verify        # only check build/ against the list
 //
-// runtime-assets/ holds the same files as the pack (tools/release/asset-pack.py stage). Re-run after `git pull`.
+// runtime-assets/ holds the same files as the pack (tools/release/asset-pack.py stage).
 // The pack's sha256 is checked before unpacking, and every unpacked file against tools/release/asset-pack.json.
 // Files already present with the right hash are left alone, so re-running after a new pack only rewrites what changed.
 // Needs `tar` on PATH (macOS, Linux and Windows 10+ ship one).
@@ -60,9 +62,12 @@ async function download(url, dest) {
 }
 
 // Copies the clone's runtime-assets/ (Git LFS) into build/, file by file: build/ stays an ignored working folder that
-// builders may write into, and the tracked copy only changes through `asset-pack.py stage`. Files that already match
-// are skipped, so re-running after `git pull` copies only what changed; on APFS/btrfs the copies are clones (no extra
-// space). Returns false when the clone has no runtime-assets/.
+// builders may write into, and the tracked copy only changes through `asset-pack.py stage`. Only what differs from the
+// list is copied, so re-running after `git pull` is quick; on APFS/btrfs the copies are clones (no extra space).
+// build/.runtime-sync.json remembers what was copied, so a file the contributor rebuilt since (and has not staged yet)
+// is kept, never overwritten. Returns false when the checkout has no runtime-assets/.
+const AUTO = args.includes('--auto');
+const say = (msg) => console.log(AUTO ? `[assets] ${msg}` : msg);
 async function sync() {
   const runtime = path.join(ROOT, 'runtime-assets');
   if (!fs.existsSync(runtime)) return false;
@@ -71,24 +76,53 @@ async function sync() {
   if (probe && fs.existsSync(probe) && fs.readFileSync(probe).subarray(0, 40).toString().startsWith('version https://git-lfs')) {
     console.error('runtime-assets/ holds Git LFS pointers, not the files: install Git LFS, then run\n' +
       '  git lfs install && git lfs pull\nand run this again.');
+    if (AUTO) return true;
     process.exit(2);
   }
-  const pending = await verify(false);
-  if (!pending.length) { console.log(`build/ already has all ${list.files.length} runtime files (${list.revision}).`); return true; }
-  let copied = 0;
-  for (const [, rel] of pending) {
-    const src = path.join(runtime, rel.slice('build/'.length)), dst = path.join(ROOT, rel);
-    if (!fs.existsSync(src)) continue;
+  const stateFile = path.join(ROOT, 'build/.runtime-sync.json');
+  let state = {};
+  try { state = JSON.parse(fs.readFileSync(stateFile, 'utf8')); } catch { /* first run */ }
+  let copied = 0, current = 0;
+  const kept = [], missing = [];
+  for (const f of list.files) {
+    const src = path.join(runtime, f.path.slice('build/'.length)), dst = path.join(ROOT, f.path);
+    if (!fs.existsSync(src)) { missing.push(f.path); continue; }
+    if (fs.existsSync(dst)) {
+      const digest = await hashFile(dst);
+      if (digest === f.sha256) { state[f.path] = f.sha256; current++; continue; }
+      // changed here since the last copy: the contributor's own build, not a stale copy
+      if (state[f.path] && state[f.path] !== digest) { kept.push(f.path); continue; }
+    }
     fs.mkdirSync(path.dirname(dst), { recursive: true });
     fs.rmSync(dst, { force: true });
     fs.copyFileSync(src, dst, fs.constants.COPYFILE_FICLONE);
+    state[f.path] = f.sha256;
     copied++;
   }
-  console.log(`copied ${copied} of ${list.files.length} runtime files from runtime-assets/ into build/`);
-  const bad = await verify(true);
-  if (bad.length) { console.error('Some files do not match the list: run `git lfs pull`, or check `git status` for local edits.'); process.exit(1); }
-  console.log('Ready: run `bitmagic dev`.');
+  fs.mkdirSync(path.dirname(stateFile), { recursive: true });
+  fs.writeFileSync(stateFile, JSON.stringify(state));
+  if (copied || kept.length || missing.length || !AUTO) say(`build/: ${copied} copied from runtime-assets/, ${current} already current` +
+    (kept.length ? `, ${kept.length} kept (your rebuilds: ${kept.slice(0, 3).join(', ')}${kept.length > 3 ? ', ...' : ''}; \`pnpm assets\` stages them)` : '') +
+    (missing.length ? `, ${missing.length} missing from runtime-assets/ (run \`git lfs pull\`)` : ''));
+  if (!AUTO) console.log(missing.length ? 'Some runtime files are missing.' : 'Ready: run `bitmagic dev`.');
+  if (missing.length && !AUTO) process.exit(1);
   return true;
+}
+
+// After `git pull` or a checkout, refresh build/ by itself: post-merge and post-checkout hooks that run this tool with
+// --auto. Appended to any existing hook (Git LFS installs its own there), never replacing it.
+function installHooks() {
+  const res = spawnSync('git', ['rev-parse', '--git-path', 'hooks'], { cwd: ROOT, encoding: 'utf8' });
+  if (res.status !== 0) return;
+  const dir = path.resolve(ROOT, res.stdout.trim()), line = 'node tools/release/fetch-assets.mjs --auto || true';
+  fs.mkdirSync(dir, { recursive: true });
+  for (const name of ['post-merge', 'post-checkout']) {
+    const file = path.join(dir, name);
+    const text = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : '#!/bin/sh\n';
+    if (text.includes('fetch-assets.mjs')) continue;
+    fs.writeFileSync(file, text.replace(/\n*$/, '\n') + '# runtime assets: copy what `git pull` changed into build/ (tools/release/fetch-assets.mjs)\n' + line + '\n');
+    fs.chmodSync(file, 0o755);
+  }
 }
 
 async function main() {
@@ -97,11 +131,13 @@ async function main() {
   // their optimized copies in build/optimized/. runtime-assets/ and the pack store optimized bytes at the original
   // paths, so copying them there would replace sources with meshopt copies the pipelines cannot read.
   if (fs.existsSync(path.join(ROOT, 'build/optimized/manifest.json')) && !args.includes('--force')) {
+    if (AUTO) return; // a full working checkout: build/ is the maintainer's own
     console.error('build/optimized/manifest.json exists: this is a full working checkout, and copying would overwrite\n' +
       'its original GLBs with optimized copies. Use --verify to compare, or --force if you really mean it.');
     process.exit(2);
   }
-  if (!args.includes('--pack') && !arg('--from') && await sync()) return;
+  if (!args.includes('--pack') && !arg('--from') && await sync()) { if (AUTO) installHooks(); return; }
+  if (AUTO) { say('no runtime-assets/ here: run `node tools/release/fetch-assets.mjs --pack` to download the runtime files'); return; }
   const pending = await verify(false);
   if (!pending.length) { console.log(`build/ already has all ${list.files.length} runtime files (pack ${list.revision}).`); return; }
   console.log(`${pending.length} of ${list.files.length} runtime files missing or out of date.`);
