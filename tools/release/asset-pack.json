@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-10-22",
+ "revision": "2026-10-23",
  "pack": {
-  "name": "vegas-afterlight-assets-2026-10-22.tar.gz",
-  "url": "",
-  "bytes": 515667078,
-  "sha256": "488d91888b92e3f46bd5c3f20e27e3e3a9d50655e8362bae716158bdca642b10"
+  "name": "las-vegas-strip-assets-2026-10-23.tar.gz",
+  "url": "https://github.com/BitmagicAI/las-vegas-strip/releases/download/assets-2026-10-23/las-vegas-strip-assets-2026-10-23.tar.gz",
+  "bytes": 538775889,
+  "sha256": "ae2f4105259ddeaca919d1df93a5292507805f194c8ee8d77afbbe6a06ab834d"
  },
- "count": 1337,
- "bytes": 1119622432,
+ "count": 1345,
+ "bytes": 1167999029,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -6335,6 +6335,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/grandCanal-exterior-collision.json",
+   "bytes": 695,
+   "sha256": "40c3c1f6c335567921cd33aa0c4c697bf6821f0ee42e5f7d5b2aace7e2d1b129",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/grandCanal-exterior.glb",
+   "bytes": 2184,
+   "sha256": "8d43fc186044b198b343aecaaad12dcc60ba15b45d8331f5ea650503cdcff913",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/grandCanal-interior-collision.json",
+   "bytes": 147742,
+   "sha256": "27783a5c97d68c704f9c2408c4851a95e5d0e4b74ef3bac92c4b3ae768c37fbd",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/grandCanal-interior.glb",
+   "bytes": 21910436,
+   "sha256": "c3415f208f7cdb6908bd65cb39a172dd6aaa45943542c4a94a8f067c0c9153de",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/grandChateauExterior-exterior-collision.json",
    "bytes": 16459,
    "sha256": "907916582d80457c3dd73f6deef8544850e158d960cacafc6e7356e2e13397b7",
@@ -7788,26 +7812,50 @@
   },
   {
    "path": "build/strip-landmarks/venetian-exterior-collision.json",
-   "bytes": 2851900,
-   "sha256": "5f08cfd1d7e7d57e89f355abc2c465b323991061b0f8f7783503dba5b3bb4e3b",
+   "bytes": 2852308,
+   "sha256": "5649b614f0ec71590fbe1fb5c2ab647bf1cf5b676071a23fd95085daf0f6293f",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/venetian-exterior.glb",
-   "bytes": 28437564,
-   "sha256": "be68baee2de3d2f21b820d1546c1875dc4057ae31dca5990b132f6d683064f23",
+   "bytes": 28437620,
+   "sha256": "e625fc068261d3d12366a95cd5d05be6c7551b893a47f6dc0f759016ee09e361",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/venetian-interior-collision.json",
-   "bytes": 736446,
-   "sha256": "47b5eb31a832a29117c60e40273e0a4162ccbe30358aa81cae01c7b7e00eea99",
+   "bytes": 91447,
+   "sha256": "d1017cb6821760408e9ade63b67db55ed84e8f3566b9321b7e19554e241c7094",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/venetian-interior.glb",
-   "bytes": 9148384,
-   "sha256": "61f4a2a59504d1b70415a407a9e859817f829cb834ca41112c7ddcda20e86c13",
+   "bytes": 13442936,
+   "sha256": "523933390d22a82c039b5d763ff3ab8db515420ff35086af9ed3abc91a02967b",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/venetianCasino-exterior-collision.json",
+   "bytes": 671,
+   "sha256": "f3188d61e2a8645e894a6cb8e5f7c834d03abad0b02f35a1180f50882f922697",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/venetianCasino-exterior.glb",
+   "bytes": 2188,
+   "sha256": "6e4badddb6816014e6b0224c3ecda6120f1775e627a9562d3b257690814b8fe7",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/venetianCasino-interior-collision.json",
+   "bytes": 144027,
+   "sha256": "e544c088efce56f36011cd9416d6f3cfe1bb9a1052060d93ba1498a3f2f57a96",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/venetianCasino-interior.glb",
+   "bytes": 22500028,
+   "sha256": "52f178bf88cd1486cd924ccf2760a703e2dfa5e6e29806586b35a293f998298a",
    "kind": "optimized"
   },
   {
@@ -7836,14 +7884,14 @@
   },
   {
    "path": "build/strip-landmarks/venues.json",
-   "bytes": 1430662,
-   "sha256": "8b2cc6ed3abd1977326ab1c577553e96b5e7908f33500362d1be2eeed1f64736",
+   "bytes": 1449271,
+   "sha256": "b910d6ea83769e4d810b3692368ce3b6753aa4a4ca1f32ed513c778b3646d0e0",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/version.json",
    "bytes": 32,
-   "sha256": "abd84078064de05e2f40f2b44f1245b784d7302ab376fe5eccb0667882b60800",
+   "sha256": "14c2aa9f35edbabff313490c91155f2d6a0209f14329d0a874964ce9e0fd37cd",
    "kind": "original"
   },
   {
