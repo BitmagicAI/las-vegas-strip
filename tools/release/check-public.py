@@ -25,7 +25,8 @@ REQUIRED = ['README.md', 'LICENSE', 'LICENSE-CONTENT.md', 'LICENSE-DATA.md', 'NO
 FONT_OK = re.compile(r'^(engine/|node_modules/)')
 # Images that are ours (renders of the game, proofs, brand marks) may ship; photos and plans of real places may not.
 MEDIA = re.compile(r'\.(png|jpe?g|webp|gif|heic|pdf|mp4|mov)$', re.I)
-MEDIA_OK = re.compile(r'^(engine/|public/|src/work/|tools/film/brand/|\.agents/skills/|\.claude/skills/)')
+# runtime-assets/ is the game's own runtime set (the asset pack's files: PBR strips from CC0 scans, the Sphere's videos).
+MEDIA_OK = re.compile(r'^(engine/|public/|src/work/|tools/film/brand/|runtime-assets/|\.agents/skills/|\.claude/skills/)')
 SECRETS = [
     ('private key', re.compile(r'-----BEGIN [A-Z ]*PRIVATE KEY-----')),
     ('AWS key', re.compile(r'\bAKIA[0-9A-Z]{16}\b')),
@@ -48,6 +49,12 @@ def tracked():
     return [p for p in out.decode().split('\0') if p]
 
 
+def lfs(rel):
+    """Whether .gitattributes sends the file through Git LFS (GitHub's 100 MB limit is for plain git objects)."""
+    out = subprocess.run(['git', 'check-attr', 'filter', '--', rel], cwd=ROOT, capture_output=True, text=True).stdout
+    return out.strip().endswith(': lfs')
+
+
 def main():
     fix = '--fix-paths' in sys.argv
     files = tracked()
@@ -62,8 +69,8 @@ def main():
             continue
         size = p.stat().st_size
         total += size
-        if size > MAX_BYTES:
-            fails.append(f'{rel}: {size / 1048576:.1f} MB (over 50 MB: move it to the asset pack)')
+        if size > MAX_BYTES and not lfs(rel):
+            fails.append(f'{rel}: {size / 1048576:.1f} MB (over 50 MB: track it with Git LFS, e.g. in runtime-assets/)')
         if re.search(r'\.(ttf|otf|woff2?)$', rel, re.I) and not FONT_OK.match(rel):
             fails.append(f'{rel}: font outside the allow-list (check its licence, then ignore it or list it in NOTICE.md)')
         if MEDIA.search(rel) and not MEDIA_OK.match(rel):

@@ -52,8 +52,8 @@ bitmagic dev
 ```
 
 `bitmagic upgrade` always installs the currently published engine, and this repository follows it. If the typecheck
-(`bitmagic check`) fails right after a new engine release, that is a task on the board, not your setup. The asset fetch
-is about 490 MiB ([docs/ASSETS.md](docs/ASSETS.md)).
+(`bitmagic check`) fails right after a new engine release, that is a task on the board, not your setup. The clone
+downloads about 1.1 GiB of models and data through Git LFS ([docs/ASSETS.md](docs/ASSETS.md)).
 
 Open the URL `bitmagic dev` prints and click Play:
 
@@ -61,8 +61,6 @@ Open the URL `bitmagic dev` prints and click Play:
 - **Drive:** E gets in and out of the jeep.
 - **Doors and views:** F kicks a hotel-room door open, V switches the view.
 - **Panel:** B shows statistics and settings.
-
-The asset fetch is about 490 MiB ([docs/ASSETS.md](docs/ASSETS.md)).
 
 ## Use it for your own game
 
@@ -79,7 +77,7 @@ The project is a Bitmagic game, so it works as a starting point:
    way, in its own repository.
 4. **Publish** with `bitmagic publish`, or build it with `bitmagic build` and host it yourself.
 
-Using another engine? The GLBs in the asset pack are standard glTF 2.0 with meshopt compression. The collision, route
+Using another engine? The GLBs in `runtime-assets/` are standard glTF 2.0 with meshopt compression. The collision, route
 and venue data are plain JSON. We support the Bitmagic path only; other engines are up to you.
 
 **Credit the city** where your credits go:
@@ -110,8 +108,8 @@ The history is in `docs/project-records/`.
 
 ## Licence
 
-These licences cover the Vegas project only: the city, its code, data and documentation in this repository and its asset
-pack.
+These licences cover the Vegas project only: the city, its code, data and documentation in this repository, including its
+runtime assets.
 
 | Part | Licence |
 |---|---|

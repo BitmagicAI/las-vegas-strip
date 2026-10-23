@@ -106,7 +106,7 @@ const thirdFilter = (extra = '') => (REFS === 'soft' ? 'blur(1.2px) saturate(.85
 
 // ------------------------------------------------------------------ persistent HUD pieces
 const kicker = el('kicker', '', 72, 56);
-const brand = el('brand', 'BITMAGIC · VEGAS: AFTERLIGHT', 0, 0); brand.style.left = 'auto'; brand.style.top = 'auto';
+const brand = el('brand', 'BITMAGIC · LAS VEGAS STRIP', 0, 0); brand.style.left = 'auto'; brand.style.top = 'auto';
 const dimAll = el('fill', '', 0, 0); dimAll.style.background = 'rgba(10,12,17,.62)';
 const vignette = el('fill', '', 0, 0); vignette.style.background = 'radial-gradient(ellipse at 50% 55%, rgba(0,0,0,0) 55%, rgba(0,0,0,.45) 100%)';
 const shade = el('fill', '', 0, 0); shade.style.background = 'linear-gradient(90deg, rgba(10,12,17,.86) 0%, rgba(10,12,17,.55) 36%, rgba(10,12,17,0) 62%)';
@@ -341,8 +341,14 @@ const agentStats = [['26', 'DAYS'], ['20,474', 'TOOL CALLS'], [(M.tokens.value /
 const numRows = el('', '', 0, 0);
 const endCard = el('', `<img src="${ROOT}tools/film/brand/bitmagic-logo-white.png" style="height:120px;display:block;margin:0 auto 28px">
   <div style="font:500 36px 'Avenir Next',Avenir,sans-serif;color:${C.txt};text-align:center">Las Vegas · behind the scenes</div>
-  <div class="mono" style="font:600 22px 'CF Mono',Menlo,monospace;letter-spacing:.2em;color:${C.muted};text-align:center;margin-top:18px">VEGAS: AFTERLIGHT</div>`, 0, 0);
-endCard.style.left = '0'; endCard.style.width = W + 'px'; endCard.style.top = '380px';
+  <div class="mono" style="font:600 22px 'CF Mono',Menlo,monospace;letter-spacing:.2em;color:${C.muted};text-align:center;margin-top:18px">LAS VEGAS STRIP</div>`, 0, 0);
+endCard.style.left = '0'; endCard.style.width = W + 'px'; endCard.style.top = '340px';
+// the open-source announcement under the title (the owner, 2026-10-23): the organisation's address, which resolves before
+// the repository goes public
+const ossCard = el('', `<div style="width:120px;height:2px;background:${C.acc};margin:0 auto 26px;opacity:.8"></div>
+  <div class="mono" style="font:600 22px 'CF Mono',Menlo,monospace;letter-spacing:.24em;color:${C.acc};text-align:center">OPEN SOURCE · COMING SOON</div>
+  <div style="font:600 40px 'Avenir Next',Avenir,sans-serif;color:${C.txt};text-align:center;margin-top:14px">github.com/BitmagicAI</div>`, 0, 0);
+ossCard.style.left = '0'; ossCard.style.width = W + 'px'; ossCard.style.top = '640px';
 
 // agent activity chart (SVG inside the chart panel)
 const days = []; { const d0 = new Date('2026-09-27T12:00:00'); for (let i = 0; i < 26; i++) { const d = new Date(d0.getTime() + i * 86400000); days.push(d.toISOString().slice(0, 10)); } }
@@ -726,6 +732,7 @@ async function render(t) {
     engineTags.forEach((e, i) => { const a = [T.browser, T.smooth, T.streams][i]; show(e, o * win(t, a - .1, T.card + .2, .3, .4), (1 - out3(t, a - .1, a + .3)) * -30); });
     const c = sm(t, T.card, T.card + 1.0);
     show(dimAll, o * c); show(endCard, c, 0, (1 - c) * 20);
+    const oc = sm(t, T.card + 1.1, T.card + 1.9); show(ossCard, oc, 0, (1 - oc) * 16);
     if (t < T.card) kick = 'THE GAME ITSELF · IN THE BROWSER';
   }
 

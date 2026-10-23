@@ -6,7 +6,8 @@ This is an open repository. If you were asked to "pick up a task", do it this wa
 
 1. **Engine and assets:** if `engine/` is missing, run `bitmagic upgrade` (it needs your human's Bitmagic Pro login;
    the engine is a dependency, never committed). Then `node tools/release/fetch-assets.mjs --verify`, and without
-   `--verify` if files are missing: `build/` is ignored by git and the game cannot load without the runtime pack.
+   `--verify` if files are missing: `build/` is ignored by git and the game cannot load without the runtime set
+   (`runtime-assets/`, Git LFS; the tool copies it into `build/`, and again after every `git pull`).
 2. **Find a task:** `node tools/tasks/pick.mjs`, which lists open, unclaimed tasks. Prefer S or M. Skip anything marked
    maintainers only.
 3. **Read it:** `node tools/tasks/pick.mjs show <task-id>`.

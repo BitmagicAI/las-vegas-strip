@@ -19,8 +19,8 @@ npm i -g @bitmagic/cli
 bitmagic login
 ```
 
-Then, with [Git LFS](https://git-lfs.com) installed (models, images and archives are LFS files), clone, install the engine and the packages, and fetch the runtime assets (about 490 MiB to download, 1.1 GiB
-unpacked):
+Then, with [Git LFS](https://git-lfs.com) installed (models, images and archives are LFS files), clone (about 1.1 GiB, most of it the runtime set in LFS), install the engine and the packages, and copy the
+runtime set into `build/`:
 
 ```bash
 git lfs install
@@ -34,7 +34,7 @@ bitmagic dev
 Open the URL `bitmagic dev` prints and click Play. `bitmagic upgrade` rewrites `tsconfig.json`, `vite*.config.js` and
 `index.html` to the current platform versions; if that shows as a change in git, commit it on its own. For geometry
 work you also need Blender 4.2+ and Python 3.12 (`uv python install 3.12`). Some builders read source files that are
-not in the runtime pack yet; see [docs/ASSETS.md](docs/ASSETS.md) and the `tool-source-pack` task.
+not in the repository yet; see [docs/ASSETS.md](docs/ASSETS.md) and the `tool-source-pack` task.
 
 ## 2. Pick a task and claim it
 
@@ -99,13 +99,14 @@ For geometry changes, also do the following:
 
 - Regenerate through the builder scripts. Never hand-edit an exported GLB.
 - Re-optimize (`AGENTS.md`, "Runtime GLBs") and bump the folder's `version.json` revision.
-- Re-run `python3 tools/release/asset-pack.py list` so the asset list matches.
+- Run `python3 tools/release/asset-pack.py stage`, and commit `runtime-assets/` with `tools/release/asset-pack.json`
+  ([docs/ASSETS.md](docs/ASSETS.md), "Updating the runtime set").
 - Attach before and after captures from the same cameras.
 
 Then walk it in the game: go in, come back out, and drive past it.
 
-The pull-request template carries the checklist. A maintainer reviews it, merges it, and publishes a new asset pack
-when GLBs changed. The pack is a release asset, so contributors cannot update it themselves.
+The pull-request template carries the checklist. A maintainer reviews it and merges it. Changed models travel in
+the pull request itself, as Git LFS files.
 
 ## 6. Licence of your contribution
 

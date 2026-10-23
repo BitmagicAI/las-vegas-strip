@@ -1,6 +1,8 @@
 # Binary files go through Git LFS. Code, records and JSON data stay in plain git (they diff and merge).
-# The runtime asset pack (~1 GiB of GLBs and textures from build/) is a GitHub Release download, not LFS:
-# see docs/ASSETS.md and tools/release/fetch-assets.mjs.
+
+# The runtime set (every model, texture and data file the city loads, ~1.1 GiB) is all LFS, JSON included: it is
+# generated output, mirrored from build/ by `python3 tools/release/asset-pack.py stage` (docs/ASSETS.md).
+runtime-assets/** filter=lfs diff=lfs merge=lfs -text
 
 # models
 *.glb filter=lfs diff=lfs merge=lfs -text

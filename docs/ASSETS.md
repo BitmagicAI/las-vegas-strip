@@ -1,33 +1,49 @@
-# Assets: what is in git, what comes in the pack, what stays local
+# Assets: what is in git, and what stays local
 
-The city's runtime data is too big for git. Three tiers keep a clone small and runnable:
+The runtime set (every model, texture and data file the game loads) is in the repository, stored with Git LFS
+(decided 2026-10-23, so that anyone can update models through an ordinary pull request).
 
 | Tier | Size | Where | What |
 |---|---|---|---|
-| **Repository** | ~180 MB | git | Code, tools, block records, `src/work/` (world, characters, animations), `public/` (foliage), the vendored engine |
-| **Runtime pack** | 492 MiB download, 1.07 GiB unpacked, 1,337 files | release asset → `build/` | Every file the game loads from `build/`: optimized GLBs, collision, routes, venue lists, PBR strips, Sphere media |
+| **Code and records** | ~70 MB | git | Code, tools, block records, `src/work/` (world, characters, animations), `public/` (foliage) |
+| **Runtime set** | 1,345 files, 1.1 GiB | Git LFS, `runtime-assets/` → copied into `build/` | Every file the game loads from `build/`: optimized GLBs, collision, routes, venue lists, PBR strips, Sphere media |
+| **Release snapshot** | ~515 MiB download | GitHub release asset (optional) | The same runtime set as one `.tar.gz`, for a download without git |
 | **Source files** | ~10 GiB | maintainers' machines (pack planned: `tool-source-pack`) | Original (unoptimized) GLBs, Blender scenes, OSM extracts, intermediates the builders read |
 | **Never published** | – | local only | Third-party reference photos, plans and screenshots; review renders; film recordings; probe output |
 
-## Getting the runtime pack
+## Getting the runtime set
 
 ```bash
-node tools/release/fetch-assets.mjs            # download, check sha256, unpack into build/, verify every file
-node tools/release/fetch-assets.mjs --verify   # is build/ complete and current?
-node tools/release/fetch-assets.mjs --from las-vegas-strip-assets-2026-10-22.tar.gz   # a pack you already have
+git lfs install                                  # once per machine, before cloning
+node tools/release/fetch-assets.mjs              # copy runtime-assets/ into build/ (again after every git pull)
+node tools/release/fetch-assets.mjs --verify     # is build/ complete and current?
+node tools/release/fetch-assets.mjs --pack       # or: download the release snapshot instead of using LFS
 ```
 
-The list of files, with sizes and SHA-256 digests, is committed in `tools/release/asset-pack.json`. Its `pack.url` names
-the download. The fetcher leaves files that already match alone, so after a new pack only changed files are rewritten.
-It refuses to unpack into a full working checkout (one with `build/optimized/manifest.json`), because the pack stores
-optimized GLBs at the original paths and would overwrite the originals the Blender pipelines patch.
+The game reads `build/`, which git ignores, so builders can write intermediates there freely. `fetch-assets.mjs` copies
+only the files that differ from `tools/release/asset-pack.json` (sizes and SHA-256 digests); on APFS and btrfs the copies
+are clones and take no extra space. If `runtime-assets/` holds LFS pointer files instead of data, it says so: run
+`git lfs pull`. It refuses to copy into a full working checkout (one with `build/optimized/manifest.json`), because the
+runtime set stores optimized GLBs at the original paths and would overwrite the originals the Blender pipelines patch.
 
-## How the pack is made (maintainers)
+## Updating the runtime set
+
+1. Change the geometry through its builder (never hand-edit an exported GLB); the result lands in `build/`.
+2. Re-optimize (`AGENTS.md`, "Runtime GLBs") and bump the folder's `version.json` revision.
+3. `python3 tools/release/asset-pack.py stage` lists the set again and mirrors it into `runtime-assets/`: new and
+   changed files are copied, files that left the set are deleted.
+4. `git add -A runtime-assets tools/release/asset-pack.json`, commit, and open the pull request.
+
+Every LFS version is kept, so stage after real changes only; re-optimizing an unchanged GLB writes identical bytes and
+adds nothing.
+
+## How the runtime set is chosen
 
 ```bash
 python3 tools/release/asset-pack.py list    # refresh tools/release/asset-pack.json from build/
 python3 tools/release/asset-pack.py check   # anything a loader asks for that build/ lacks
-python3 tools/release/asset-pack.py build   # .bitmagic/release/las-vegas-strip-assets-<date>.tar.gz
+python3 tools/release/asset-pack.py stage   # list, then mirror into runtime-assets/
+python3 tools/release/asset-pack.py build   # list, then .bitmagic/release/las-vegas-strip-assets-<date>.tar.gz
 ```
 
 `asset-pack.py` lists the runtime set by the same rules the loaders use, and names the loader beside each rule:
@@ -50,7 +66,7 @@ python3 tools/release/asset-pack.py build   # .bitmagic/release/las-vegas-strip-
 After a new loader or a new runtime folder, add a rule there. Then confirm that a fresh clone plays with nothing
 missing:
 
-1. Fetch the pack into a clean checkout and start `bitmagic dev` there.
+1. Clone into a clean folder, run `fetch-assets.mjs`, and start `bitmagic dev` there.
 2. Run `node tools/release/smoke-clone.mjs --shots`. It visits:
    - hotel rooms in four towers;
    - three venues;
@@ -58,16 +74,13 @@ missing:
 
    It fails on any 404, and on any data file the dev server answers with its HTML fallback.
 
-It passed on 2026-10-22 with no failed requests and no page errors.
+It passed on 2026-10-22 (from the pack) with no failed requests and no page errors.
 
-Publishing a new pack:
+Publishing a release snapshot (optional):
 
 1. Run `build`.
 2. Upload the `.tar.gz` as a GitHub release asset (limit 2 GiB per file).
-3. Put its URL in `tools/release/asset-pack.json` `pack.url`.
-4. Commit that file.
-
-The pack's file name carries the revision date, and its sha256 is checked before unpacking.
+3. Put its URL in `tools/release/asset-pack.json` `pack.url`, and commit that file.
 
 ## How optimized the shipped assets are
 
@@ -93,16 +106,17 @@ Not optimized yet:
 - **Collision and route data:** 203 MiB of plain-text JSON (`city-colliders.json` is 118 MiB). It is gzipped in the
   pack, but the game downloads and parses the text.
 
-## Why GLBs are not in git
+## Why Git LFS
 
-- Git keeps every version forever, and the city's GLBs change almost every day. A year of history would be hundreds of
-  gigabytes.
-- GitHub refuses files over 100 MB. `city-colliders.json` alone is 118 MiB.
-- Git LFS would work, but every contributor pays its bandwidth quota, and forks inherit nothing.
+- Models change often, and contributors need to send those changes in pull requests. A release asset could only be
+  replaced by a maintainer.
+- GitHub refuses plain git files over 100 MB (`city-colliders.json` is 118 MiB). LFS allows 2 GiB per file.
+- The cost is the owner's: LFS storage keeps every version of every changed file, and each clone downloads the
+  1.1 GiB set from the organisation's LFS bandwidth. The repository's GitHub plan is sized for that.
 
 ## What the game does and does not need
 
 The game streams. Every hotel room, corridor and venue is reachable, but nothing is loaded or drawn until the player or
-the film camera is close (`HotelStreaming`, `StripLandmarks`, `GeographicPassages`, `SphereVenue`). The pack therefore
+the film camera is close (`HotelStreaming`, `StripLandmarks`, `GeographicPassages`, `SphereVenue`). The runtime set therefore
 contains everything, and the browser fetches only what is near. A cold start loads the city, the high-rises, the
 landmark exteriors and the PBR strips. Interiors arrive as you approach them.

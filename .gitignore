@@ -13,8 +13,8 @@ node_modules/
 .bitmagic/
 .vite-cache/
 
-# Built runtime assets and pipeline intermediates (about 29 GB). The runtime subset ships as the
-# asset pack: `node tools/release/fetch-assets.mjs` (docs/ASSETS.md).
+# Built runtime assets and pipeline intermediates (about 29 GB). The runtime subset is tracked in runtime-assets/
+# (Git LFS); a clone copies it here with `node tools/release/fetch-assets.mjs` (docs/ASSETS.md).
 build/
 
 # Local machine state, caches and logs

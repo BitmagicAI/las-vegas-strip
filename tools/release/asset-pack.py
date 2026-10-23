@@ -7,6 +7,7 @@ exactly that set, by the same rules the runtime code uses (the loaders named bes
   python3 tools/release/asset-pack.py list     # write tools/release/asset-pack.json (path, bytes, sha256 per file)
   python3 tools/release/asset-pack.py build    # list, then write .bitmagic/release/las-vegas-strip-assets-<rev>.tar.gz
   python3 tools/release/asset-pack.py check    # what a loader rule names but build/ lacks (exit 1 if any)
+  python3 tools/release/asset-pack.py stage    # list, then mirror the set into runtime-assets/ (tracked with Git LFS)
 
 Each runtime GLB ships as its meshopt-optimized copy (build/optimized/, installed by tools/optimize) stored at the
 ORIGINAL path: glbUrl() (src/work/OptimizedGlb.ts) returns the original URL when there is no optimized manifest, which a
@@ -21,6 +22,7 @@ import hashlib
 import io
 import json
 import os
+import shutil
 import sys
 import tarfile
 import time
@@ -30,6 +32,11 @@ ROOT = Path(__file__).resolve().parents[2]
 BUILD = ROOT / 'build'
 OUT_LIST = ROOT / 'tools/release/asset-pack.json'
 OUT_DIR = ROOT / '.bitmagic/release'
+# The runtime set in the repository (2026-10-23, the owner: "upload the files as LFS ... otherwise it will be very
+# difficult to update the project"). The same bytes as the pack, at the same paths minus the leading build/. A clone
+# copies it into its ignored build/ (tools/release/fetch-assets.mjs); every checkout builds into build/ and refreshes
+# this mirror with `stage`, then commits it.
+RUNTIME = ROOT / 'runtime-assets'
 
 
 def rel(p):
@@ -178,6 +185,30 @@ def build(files, doc):
     print('Upload it (a GitHub release asset, max 2 GiB) and put its URL in tools/release/asset-pack.json pack.url.')
 
 
+def stage(files):
+    """Mirror the runtime set into runtime-assets/: copy what is new or changed, delete what left the set."""
+    keep, copied, same = set(), 0, 0
+    for f in files:
+        assert f['path'].startswith('build/'), f['path']
+        dest = RUNTIME / f['path'][len('build/'):]
+        keep.add(dest)
+        if dest.exists() and dest.stat().st_size == f['bytes'] and sha256(dest) == f['sha256']:
+            same += 1
+            continue
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(ROOT / f['from'], dest)
+        copied += 1
+    removed = 0
+    for p in sorted(RUNTIME.rglob('*'), reverse=True):
+        if p.is_file() and p not in keep:
+            p.unlink()
+            removed += 1
+        elif p.is_dir() and not any(p.iterdir()):
+            p.rmdir()
+    print(f'runtime-assets/: {copied} copied, {same} unchanged, {removed} removed. Commit it: '
+          'git add -A runtime-assets tools/release/asset-pack.json')
+
+
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'list'
     files, missing = listing()
@@ -195,6 +226,8 @@ def main():
         print(f'  {k}: {b / 1048576:.1f} MiB')
     if cmd == 'build':
         build(files, doc)
+    if cmd == 'stage':
+        stage(files)
 
 
 if __name__ == '__main__':

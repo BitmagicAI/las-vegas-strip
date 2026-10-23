@@ -1,9 +1,11 @@
-// Fetches the runtime asset pack into build/ so a fresh clone runs (docs/ASSETS.md).
+// Sets up build/ so a fresh clone runs (docs/ASSETS.md).
 //
-//   node tools/release/fetch-assets.mjs                 # download the pack named in tools/release/asset-pack.json
-//   node tools/release/fetch-assets.mjs --from <file>   # use a pack already on disk
+//   node tools/release/fetch-assets.mjs                 # copy runtime-assets/ (the Git LFS copy in the clone) into build/
+//   node tools/release/fetch-assets.mjs --pack          # or download the pack named in tools/release/asset-pack.json
+//   node tools/release/fetch-assets.mjs --from <file>   # or unpack a pack already on disk
 //   node tools/release/fetch-assets.mjs --verify        # only check build/ against the list
 //
+// runtime-assets/ holds the same files as the pack (tools/release/asset-pack.py stage). Re-run after `git pull`.
 // The pack's sha256 is checked before unpacking, and every unpacked file against tools/release/asset-pack.json.
 // Files already present with the right hash are left alone, so re-running after a new pack only rewrites what changed.
 // Needs `tar` on PATH (macOS, Linux and Windows 10+ ship one).
@@ -57,16 +59,49 @@ async function download(url, dest) {
   process.stdout.write(`\r  ${MiB(got)} done${' '.repeat(20)}\n`);
 }
 
+// Copies the clone's runtime-assets/ (Git LFS) into build/, file by file: build/ stays an ignored working folder that
+// builders may write into, and the tracked copy only changes through `asset-pack.py stage`. Files that already match
+// are skipped, so re-running after `git pull` copies only what changed; on APFS/btrfs the copies are clones (no extra
+// space). Returns false when the clone has no runtime-assets/.
+async function sync() {
+  const runtime = path.join(ROOT, 'runtime-assets');
+  if (!fs.existsSync(runtime)) return false;
+  const glb = list.files.find((f) => f.path.endsWith('.glb'));
+  const probe = glb && path.join(runtime, glb.path.slice('build/'.length));
+  if (probe && fs.existsSync(probe) && fs.readFileSync(probe).subarray(0, 40).toString().startsWith('version https://git-lfs')) {
+    console.error('runtime-assets/ holds Git LFS pointers, not the files: install Git LFS, then run\n' +
+      '  git lfs install && git lfs pull\nand run this again.');
+    process.exit(2);
+  }
+  const pending = await verify(false);
+  if (!pending.length) { console.log(`build/ already has all ${list.files.length} runtime files (${list.revision}).`); return true; }
+  let copied = 0;
+  for (const [, rel] of pending) {
+    const src = path.join(runtime, rel.slice('build/'.length)), dst = path.join(ROOT, rel);
+    if (!fs.existsSync(src)) continue;
+    fs.mkdirSync(path.dirname(dst), { recursive: true });
+    fs.rmSync(dst, { force: true });
+    fs.copyFileSync(src, dst, fs.constants.COPYFILE_FICLONE);
+    copied++;
+  }
+  console.log(`copied ${copied} of ${list.files.length} runtime files from runtime-assets/ into build/`);
+  const bad = await verify(true);
+  if (bad.length) { console.error('Some files do not match the list: run `git lfs pull`, or check `git status` for local edits.'); process.exit(1); }
+  console.log('Ready: run `bitmagic dev`.');
+  return true;
+}
+
 async function main() {
   if (args.includes('--verify')) process.exit((await verify(true)).length ? 1 : 0);
   // A full working checkout keeps the ORIGINAL GLBs in build/ (the Blender pipelines patch them byte by byte) and
-  // their optimized copies in build/optimized/. The pack stores optimized bytes at the original paths, so unpacking it
-  // there would replace sources with meshopt copies the pipelines cannot read.
+  // their optimized copies in build/optimized/. runtime-assets/ and the pack store optimized bytes at the original
+  // paths, so copying them there would replace sources with meshopt copies the pipelines cannot read.
   if (fs.existsSync(path.join(ROOT, 'build/optimized/manifest.json')) && !args.includes('--force')) {
-    console.error('build/optimized/manifest.json exists: this is a full working checkout, and unpacking would overwrite\n' +
+    console.error('build/optimized/manifest.json exists: this is a full working checkout, and copying would overwrite\n' +
       'its original GLBs with optimized copies. Use --verify to compare, or --force if you really mean it.');
     process.exit(2);
   }
+  if (!args.includes('--pack') && !arg('--from') && await sync()) return;
   const pending = await verify(false);
   if (!pending.length) { console.log(`build/ already has all ${list.files.length} runtime files (pack ${list.revision}).`); return; }
   console.log(`${pending.length} of ${list.files.length} runtime files missing or out of date.`);
