@@ -1,0 +1,107 @@
+{
+  "linkedByExplicitId": [
+    [
+      "way/396439303",
+      "tools/resort-blocks/sky-west-garage.json"
+    ],
+    [
+      "way/1459325605",
+      "tools/resort-blocks/wyndham-desert-blue.json"
+    ],
+    [
+      "way/156624462",
+      "tools/resort-blocks/wells-fargo-tower.json"
+    ],
+    [
+      "way/345534561",
+      "tools/resort-blocks/casino-royale-retail.json"
+    ],
+    [
+      "way/115673549",
+      "tools/resort-blocks/horseshoe-versailles.json"
+    ],
+    [
+      "way/1424222077",
+      "tools/resort-blocks/paris.json"
+    ],
+    [
+      "way/1424222078",
+      "tools/resort-blocks/paris.json"
+    ],
+    [
+      "way/472669747",
+      "tools/resort-blocks/paris.json"
+    ],
+    [
+      "way/114722037",
+      "tools/resort-blocks/paris.json"
+    ],
+    [
+      "way/1424222079",
+      "tools/resort-blocks/paris.json"
+    ],
+    [
+      "way/1436542141",
+      "tools/resort-blocks/paris.json"
+    ],
+    [
+      "way/114697074",
+      "tools/resort-blocks/paris.json"
+    ],
+    [
+      "way/364846544",
+      "tools/resort-blocks/paris.json"
+    ],
+    [
+      "way/374989480",
+      "tools/resort-blocks/bellagio.json"
+    ],
+    [
+      "way/762169780",
+      "tools/resort-blocks/caesars-forum.json"
+    ],
+    [
+      "way/111367849",
+      "tools/resort-blocks/venetian-employee-garage.json"
+    ]
+  ],
+  "unresolved": [],
+  "resolvedByExistingBlockRecord": [
+    {
+      "id": "way/111367819",
+      "record": "tools/resort-blocks/venetian-expo.json"
+    },
+    {
+      "id": "way/364846548",
+      "record": "tools/resort-blocks/nirvana-hotel.json"
+    },
+    {
+      "id": "way/457939126",
+      "record": "tools/resort-blocks/south-strip-shell-grocery.json"
+    },
+    {
+      "id": "way/457939125",
+      "record": "tools/resort-blocks/south-strip-shell-grocery.json"
+    },
+    {
+      "id": "way/1219935118",
+      "record": "tools/resort-blocks/diamond-inn.json"
+    },
+    {
+      "id": "way/457939120",
+      "record": "tools/resort-blocks/diamond-inn.json"
+    },
+    {
+      "id": "way/457939123",
+      "record": "tools/resort-blocks/diamond-inn.json"
+    },
+    {
+      "id": "relation/6138883",
+      "record": "tools/resort-blocks/little-church-west.json"
+    },
+    {
+      "id": "way/276437576",
+      "record": "tools/resort-blocks/maverick-terminal.json"
+    }
+  ]
+}

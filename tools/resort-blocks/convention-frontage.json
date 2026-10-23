@@ -1,0 +1,91 @@
+{
+  "id": "convention-frontage",
+  "status": "refinement-deferred",
+  "scope": "Royal Resort, Strip Liquor, Tacos El Pastor and neighboring low-rise frontage",
+  "mappedIds": [
+    "way/320330805",
+    "way/1419057375",
+    "way/276427198",
+    "way/331347691"
+  ],
+  "references": [
+    {
+      "url": "https://usmenuguide.com/wp-content/uploads/2020/03/tacoselpastorlasvegas2.jpg",
+      "inspected": true,
+      "notes": "White horizontal facade, red signage, glass lower storefront, shallow canopy, colorful patio chairs, black rail, palms. Mapped name El Gordo stale; storefront El Pastor3049."
+    },
+    {
+      "url": "https://img.directhotels.com/us/las-vegas/royal-resort/1.jpg",
+      "inspected": true,
+      "notes": "Image MIRRORED: use balcony/canopy details only, Earth for orientation. White recessed balcony grid, blue narrow vertical railings, glass doors, cream canopy with two blue bands; sign tower."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13213,-115.16350,645a,260d,35y,0h,0t,0r",
+      "inspected": true,
+      "imageryDate": "2022-11-09\u20132024-03-05"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13213,-115.16350,645a,250d,35y,180h,58t,0r",
+      "inspected": true,
+      "imageryDate": "2022-11-09\u20132024-03-05"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13212,-115.16446,645a,90d,35y,90h,62t,0r",
+      "inspected": true,
+      "imageryDate": "2022-11-09\u20132024-03-05"
+    },
+    {
+      "url": "https://lasvegasthenandnow.com/wp-content/uploads/2021/07/Tacos-El-Gordo-Las-Vegas-Exterior-scaled.jpg",
+      "inspected": true,
+      "notes": "Corner3041 sign, red metal pitched fascia, cream sign band, red tile piers, full storefront glazing; confirms mapped address wrong but corner name right."
+    },
+    {
+      "url": "https://www.reviewjournal.com/business/hotel-near-las-vegas-strip-is-demolished-3887239/",
+      "date": "2026-09-16",
+      "notes": "Discovered after installation: Royal Resort demolished September2026. Current asset represents Earth2022\u201324 era, like retained Mirage, not present-day2026. Era consistency must be resolved before completion."
+    }
+  ],
+  "remaining": [
+    "Precise elevations, sign artwork, landscaping and parking-lot integration",
+    "Dry pool basin is simplified",
+    "Closed public interiors and doors; full approach driving test pending",
+    "Whole-block performance measurement",
+    "Royal Resort era conflict: September2026 demolition reported; installed2022\u201324 historical architecture is not current."
+  ],
+  "mappingCorrection": "276427198 is cornerElGordo3041; ElPastor3049 belongs to white331347691 southernrow. Initial record assumption corrected after Earth+ground comparison.",
+  "baselineViews": [
+    "build/city-exteriors/convention-frontage-before/royal-front.png",
+    "build/city-exteriors/convention-frontage-before/royal-entry.png",
+    "build/city-exteriors/convention-frontage-before/royal-back.png",
+    "build/city-exteriors/convention-frontage-before/tacos.png",
+    "build/city-exteriors/convention-frontage-before/liquor.png",
+    "build/city-exteriors/convention-frontage-before/shops.png",
+    "build/city-exteriors/convention-frontage-before/shops-strip.png"
+  ],
+  "baselineFindings": "All seven views inspected; all four footprints plain untextured extrusion walls/roofs.",
+  "dimensions": "Royal25.4m based on mapped8levels; canopyunderside4.2m, restaurant5.8m+roof7.1, retail6.5m are image estimates. Mainfootprints mapped, frontlandscape inferred. No surveyed facade elevations.",
+  "geometry": {
+    "triangles": 148910,
+    "batches": 50,
+    "optimizedMiB": 3.74
+  },
+  "tests": "154 roof/forecourt supports +38 vehicle canopy clearance checks PASS;1517 citycollider cells valid;typecheckPASS; full CLI0.1.83 verify PASS, playing56fps startup3011bodies (not site benchmark).",
+  "viewsReviewed": [
+    "build/city-exteriors/convention-frontage-after/royal-front.png",
+    "build/city-exteriors/convention-frontage-after/royal-entry.png",
+    "build/city-exteriors/convention-frontage-after/royal-back.png",
+    "build/city-exteriors/convention-frontage-after/tacos.png",
+    "build/city-exteriors/convention-frontage-after/liquor.png",
+    "build/city-exteriors/convention-frontage-after/shops.png",
+    "build/city-exteriors/convention-frontage-after/shops-strip.png",
+    "build/city-exteriors/convention-frontage-final/royal-entry.png",
+    "build/city-exteriors/convention-frontage-final/liquor.png",
+    "build/city-exteriors/convention-frontage-final/shops-strip.png"
+  ],
+  "reviewFindings": "Seven installed afterviews inspected: Royal balcony cells/white divisions/blue rails and canopy replace plain wall. Restaurant redroof/tiled piers and white retail rows replace extrusions. Ground under canopy lacked pavement, repeatedtenantlabels and unclearentrydoors corrected afterreview. Dry pool basin remains a simplified shape. Detailed sign artwork remains unfinished; precise tenants/proportions still require refinement. Final three views inspected: canopy pavement continuous, double doors and handles readable, eastern shop corrected to KIMCHI. West shop label repeated on two facade portions remains a sign refinement.",
+  "fingerprints": {
+    "build/optimized/build/strip-landmarks/conventionFrontage-exterior.glb": "e23db21decf971581f771b55af50ec9398e5808f6b4f08ecb76f91ed8c974b0f",
+    "tools/strip-landmarks/convention_frontage.py": "592960c87e9ff493a68dcd21976b710938af94f4742d437bb15b4330ffb92407",
+    "src/work/PbrDetailSets.ts": "a50e98b815286c10da8dc1e5cb9fb264f8a5055788d9d690f904e2e4b4c9afed"
+  }
+}

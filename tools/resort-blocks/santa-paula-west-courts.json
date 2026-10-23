@@ -1,0 +1,145 @@
+{
+  "id": "santa-paula-west-courts",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725793",
+    "way/1236725792",
+    "way/1236725794",
+    "way/1236725778",
+    "way/1236725782",
+    "way/1236725776",
+    "way/1236725775"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14929,-115.15135&zoom=20&basemap=satellite",
+      "review": "Seven low-rise buildings between Weldon frontage and SantaPaula Drive. North long tan hipped roof, red middle hip, gray southern roofs and paved courts"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14945,-115.15075&heading=270&pitch=2",
+      "imageDate": "January2026",
+      "review": "Single-storey pale duplex facade, low tan hip, chainlink/gravel yard, palms and broad windows"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14885,-115.15075&heading=270&pitch=2",
+      "imageDate": "January2026",
+      "review": "1902 area: low tan/pink courtyard buildings, broad concrete parking, trees and chainlink. Rear doors partly obscured"
+    }
+  ],
+  "remaining": [
+    "Exact entrances, unit count and roof pitch inferred; no interior layout claimed",
+    "Northern gravel garden simplified to paved forecourt; chainlink fences and dense planting still missing",
+    "Gray roof needs more surface variation and reduced sheen; parking and household detail sparse",
+    "No interiors, neutral daylight review or full driving benchmark"
+  ],
+  "triangles": 9359,
+  "batches": 22,
+  "optimizedMiB": 12.06,
+  "metricScope": "Authored triangles exclude three CC0 tree instances",
+  "tests": [
+    "1159 roof support samples PASS after placeholder removal",
+    "68 approach legs in both directions PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/santa-paula-west-courts-final/santa-west-north.png",
+    "build/city-exteriors/santa-paula-west-courts-final/santa-west-south.png",
+    "build/city-exteriors/santa-paula-west-courts-final/santa-west-court.png",
+    "build/city-exteriors/santa-paula-west-courts-final/santa-west-roof.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "santa-west-north",
+        "eye": [
+          1980,
+          3,
+          -3732
+        ],
+        "target": [
+          1955,
+          1.6,
+          -3732
+        ],
+        "p": [
+          1977,
+          2,
+          -3732
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.599999964237213
+      },
+      {
+        "name": "santa-west-south",
+        "eye": [
+          1978,
+          3,
+          -3657
+        ],
+        "target": [
+          1925,
+          1.7,
+          -3657
+        ],
+        "p": [
+          1975,
+          2,
+          -3657
+        ],
+        "p50": 16.5,
+        "p95": 18.69999998807907
+      },
+      {
+        "name": "santa-west-court",
+        "eye": [
+          1917,
+          3,
+          -3610
+        ],
+        "target": [
+          1917,
+          1.7,
+          -3634
+        ],
+        "p": [
+          1917,
+          2,
+          -3614
+        ],
+        "p50": 16.899999976158142,
+        "p95": 18.30000001192093
+      },
+      {
+        "name": "santa-west-roof",
+        "eye": [
+          2010,
+          55,
+          -3625
+        ],
+        "target": [
+          1941,
+          2,
+          -3680
+        ],
+        "p": [
+          1975,
+          2,
+          -3660
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.80000001192093
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 94,
+    "colliderTrianglesRemoved": 94,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in SantaPaulaWestCourts mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/santaPaulaWestCourts-exterior.glb": "ce34bf953daa74e8aad6cc1129ee28c49af854db3d55dfe92cbe5d781950110d",
+      "build/strip-landmarks/santaPaulaWestCourts-exterior-collision.json": "ce125d4381793c929c532607553afdcec01022450aca1019ca6256ea615f910d"
+    }
+  }
+}

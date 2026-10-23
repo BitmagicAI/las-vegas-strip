@@ -1,0 +1,21 @@
+{
+  "mappedId": "way/364846551",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.091405,-115.171385&zoom=21&basemap=satellite",
+      "review": "Small detached rectangular flat white roof with several vents/HVAC, parking around;6mappedmeters not independently confirmed."
+    }
+  ],
+  "rejectedReferences": [
+    "Street View east viewpoint snapped to February2020Motel8Plus courtyard, not this building; cannot establish this facade.",
+    "2026-10-21: west-side API Street View request36.091405,-115.17230 snapped to Jason Yeaman October2016 boulevard photo; UI says no Street View imagery for this location. Not evidence of detached facade."
+  ],
+  "remaining": [
+    "Find accurate ground reference or label facade design as uncertain."
+  ],
+  "implementationAssumptions": [
+    "6m building height from inventory is unconfirmed. Roof placement based on aerial.",
+    "Wall finish, service door and louver openings inferred; no false tenant branding.",
+    "Local missing pavement filled only within119..166x2718..2765 parcel envelope; existing city surfaces preserved."
+  ]
+}

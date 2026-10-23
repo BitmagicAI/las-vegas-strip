@@ -1,0 +1,5 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import R from '@dimforge/rapier3d-compat';await R.init();
+const w=new R.World({x:0,y:-9.81,z:0});const c=JSON.parse(fs.readFileSync('build/strip-landmarks/circusExterior-exterior-collision.json'));w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));w.step();
+const failures=[];let routeSamples=0;
+for(const q of JSON.parse(fs.readFileSync('build/city-exteriors/circus-frontage-routes.json'))){routeSamples++;let hit=w.castRay(new R.Ray({x:q[0],y:q[1]+.04,z:q[2]},{x:0,y:-1,z:0}),.08,true);if(!hit)failures.push({type:'support',q});hit=w.castRay(new R.Ray({x:q[0],y:q[1]+.15,z:q[2]},{x:0,y:1,z:0}),1.8,true);if(hit)failures.push({type:'headroom',q,hit:hit.timeOfImpact});}
+const report={routeSamples,failures,scope:'Motel stair and landing support/headroom; does not validate room interiors or wheelchair access.'};fs.writeFileSync('build/city-exteriors/circus-frontage-route-test.json',JSON.stringify(report,null,2));console.log(report);w.free();assert.equal(failures.length,0);

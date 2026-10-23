@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "id": "forum-shops",
+  "name": "The Forum Shops at Caesars",
+  "updated": "2026-10-13",
+  "stage": "atrium-exterior-installed-and-inspected",
+  "statusNote": "Missing mapped shopping mall exterior restored. Map micro-outlines at Strip entrance replaced with photo-fitted concave facade. Heights, detail and interiors remain incomplete.",
+  "nextAction": "Review the restored footprint with creator, then refine sculptural ornament, landscaping, surveyed heights and real public interior routes.",
+  "sources": [
+    {
+      "id": "creator-aerial",
+      "title": "Creator Caesars Google Earth reference",
+      "image": "docs/project-records/north-strip-corrections-2026-10-09/caesars-reference.png",
+      "kind": "visual-reference",
+      "accessed": "2026-10-09",
+      "note": "Source for current exterior correction; no third-party pixels used as game textures."
+    },
+    {
+      "id": "osm",
+      "title": "Mapped Forum Shops footprint way/34068416",
+      "url": "https://www.openstreetmap.org/way/34068416",
+      "note": "60014.95 m\u00b2 footprint, game X/Z bounds -518.436,-419.853,12.104,-229.763.",
+      "kind": "visual-reference",
+      "accessed": "2026-10-09"
+    },
+    {
+      "id": "simon-plan",
+      "title": "Official Simon Terrace Level leasing plan, June 2021",
+      "url": "https://devbusiness.simon-ops.com/assets/mall/224/LEASING_PLAN/1145_FORUM%20SHOPS%20AT%20CAESARS_CurrentWebLeasePlan-T.pdf",
+      "note": "Illustrative plan, not a survey. Archived PDF supports footprint and upper eastern level.",
+      "kind": "visual-reference",
+      "accessed": "2026-10-09"
+    },
+    {
+      "id": "street-photo",
+      "title": "Forum Shops entrance photograph, date unknown",
+      "url": "https://cdn.wallpapersafari.com/77/13/tN0arf.jpg",
+      "note": "Reference only; not a licensed texture or game asset.",
+      "kind": "visual-reference",
+      "accessed": "2026-10-09"
+    },
+    {
+      "id": "earth-front-2026-10-13",
+      "url": "https://earth.google.com/web/@36.11914,-115.17338,640a,240d,35y,270h,55t,0r",
+      "provider": "Google Earth",
+      "accessed": "2026-10-13",
+      "kind": "visual-reference",
+      "note": "Directly inspected east oblique: concave entrance, cross-shaped raised atrium roof, blue glass dome, lower side fountain pavilions. Image capture date not exposed in screenshot; not assumed current."
+    },
+    {
+      "id": "earth-roof-2026-10-13",
+      "url": "https://earth.google.com/web/@36.11914,-115.17338,640a,210d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "accessed": "2026-10-13",
+      "kind": "visual-reference",
+      "note": "Directly inspected top-down: cross-shaped upper roof with west rounded apse and central circular skylight. Approximate proportions derived from scale bar, not a survey."
+    },
+    {
+      "id": "kga-architect",
+      "url": "https://kga.design/forum-shops-at-caesars-palace-phase-iii.html",
+      "provider": "KGA Architecture, architect of record",
+      "accessed": "2026-10-13",
+      "kind": "primary",
+      "note": "Text describes three-level atrium and120-foot dome; ambiguous dome dimension is not treated as a diameter. Linked exterior photo visually inspected for deep cornices, relief panels and layered archivolts."
+    },
+    {
+      "id": "kga-photo",
+      "url": "https://kga.design/assets/components/phpthumbof/cache/201_2_forum_shops_at_caesars_palace_phase_iii.24ad92a10e1c625c6ea83a8fb2b08c15.jpg",
+      "provider": "KGA Architecture",
+      "accessed": "2026-10-13",
+      "kind": "visual-reference",
+      "note": "Directly inspected photograph; no pixels copied into game textures."
+    },
+    {
+      "id": "lochsa-engineer",
+      "url": "https://www.lochsa.com/projects/caesars-forum-shops",
+      "provider": "Lochsa Engineering, structural engineer",
+      "accessed": "2026-10-13",
+      "kind": "primary",
+      "note": "130ft wide by100ft high grand entrance, three levels, steel/stud/plaster facade; facade undulates up to6ft. Supports height order and projecting detail. Not a dimensioned as-built plan."
+    }
+  ],
+  "levels": [
+    {
+      "id": "ground",
+      "label": "Street exterior",
+      "elevationM": 0.24,
+      "sources": [
+        "osm"
+      ],
+      "features": "Street exterior"
+    },
+    {
+      "id": "roof",
+      "label": "Stepped service roofs",
+      "elevationM": 12.8,
+      "sources": [
+        "creator-aerial",
+        "simon-plan"
+      ],
+      "features": "Estimated stepped roofs at 12.8, 16.8, 24.4 and 32 m. Unsurveyed, ground datum retained."
+    }
+  ],
+  "components": [
+    {
+      "id": "mall",
+      "name": "Mapped shopping complex",
+      "levels": [
+        "ground",
+        "roof"
+      ],
+      "sources": [
+        "osm",
+        "simon-plan"
+      ],
+      "status": "implemented",
+      "category": "exterior",
+      "priority": "high",
+      "scope": "Mapped shopping complex; current pass preserves prior interiors and roads.",
+      "evidence": [
+        "docs/project-records/north-strip-corrections-2026-10-09/forum-after.png"
+      ]
+    },
+    {
+      "id": "entrance",
+      "name": "Roman Strip frontage",
+      "levels": [
+        "ground",
+        "roof"
+      ],
+      "sources": [
+        "street-photo"
+      ],
+      "status": "implemented",
+      "category": "exterior",
+      "priority": "high",
+      "scope": "Roman Strip frontage; current pass preserves prior interiors and roads.",
+      "evidence": [
+        "docs/project-records/north-strip-corrections-2026-10-09/forum-after.png"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "street",
+      "name": "Preserved Strip sidewalk",
+      "fromLevel": "ground",
+      "toLevel": "ground",
+      "components": [
+        "entrance"
+      ],
+      "sources": [
+        "osm"
+      ],
+      "status": "preserved",
+      "detail": "Exterior correction; interior routes remain as explicitly recorded."
+    },
+    {
+      "id": "mall-interior",
+      "name": "Mall access and upper floors",
+      "fromLevel": "ground",
+      "toLevel": "roof",
+      "components": [
+        "mall"
+      ],
+      "sources": [
+        "simon-plan"
+      ],
+      "status": "not-implemented",
+      "note": "Exterior-only correction; no invented indoor route.",
+      "detail": "Exterior correction; interior routes remain as explicitly recorded."
+    }
+  ],
+  "views": [
+    {
+      "id": "strip",
+      "label": "Strip entrance",
+      "referenceSources": [
+        "street-photo"
+      ],
+      "status": "inspected",
+      "name": "Strip entrance",
+      "target": "Strip entrance",
+      "purpose": "Strip entrance comparison against cited reference",
+      "gameCapture": "docs/project-records/north-strip-corrections-2026-10-09/forum-street-after.png",
+      "camera": {
+        "eye": [
+          66,
+          3,
+          -343
+        ],
+        "yaw": 1.479,
+        "pitch": -0.165,
+        "viewport": [
+          1280,
+          720
+        ],
+        "lighting": "game sunset"
+      }
+    },
+    {
+      "id": "aerial",
+      "label": "Whole footprint",
+      "referenceSources": [
+        "creator-aerial",
+        "osm"
+      ],
+      "status": "inspected",
+      "name": "Whole footprint",
+      "target": "Whole footprint",
+      "purpose": "Whole footprint comparison against cited reference",
+      "gameCapture": "docs/project-records/north-strip-corrections-2026-10-09/forum-after.png",
+      "camera": {
+        "eye": [
+          174,
+          168,
+          -110
+        ],
+        "yaw": 1.018,
+        "pitch": 0.327,
+        "viewport": [
+          1280,
+          720
+        ],
+        "lighting": "game sunset"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "dimension-registration",
+      "title": "No surveyed facade heights or exact bay schedule; photo fitting remains approximate",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "No surveyed facade heights or exact bay schedule; photo fitting remains approximate. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    },
+    {
+      "id": "street-detail",
+      "title": "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    },
+    {
+      "id": "interiors",
+      "title": "Shopping mall interiors and public upper-floor routes not implemented",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Shopping mall interiors and public upper-floor routes not implemented"
+    }
+  ],
+  "gates": [
+    {
+      "id": "survey",
+      "status": "pending",
+      "evidence": [],
+      "name": "Whole-site survey"
+    },
+    {
+      "id": "massing",
+      "status": "pending",
+      "evidence": [],
+      "name": "Massing and elevations"
+    },
+    {
+      "id": "levels",
+      "status": "pending",
+      "evidence": [],
+      "name": "All public levels and connections"
+    },
+    {
+      "id": "facades",
+      "status": "pending",
+      "evidence": [],
+      "name": "All facades and street detail"
+    },
+    {
+      "id": "integration",
+      "status": "pending",
+      "evidence": [],
+      "name": "Geometry ownership and streaming"
+    },
+    {
+      "id": "runtime",
+      "status": "pending",
+      "evidence": [],
+      "name": "Route and performance verification"
+    },
+    {
+      "id": "visual",
+      "status": "pending",
+      "evidence": [],
+      "name": "Matched-view visual acceptance"
+    }
+  ],
+  "performance": {
+    "baseline": "docs/project-records/north-strip-corrections-2026-10-09/performance-before.json",
+    "after": "docs/project-records/north-strip-corrections-2026-10-09/performance-after.json"
+  },
+  "finalBuild": null,
+  "facadePass": null,
+  "northStripCorrection": {
+    "date": "2026-10-09",
+    "record": "docs/project-records/north-strip-corrections-2026-10-09.md",
+    "fingerprint": "docs/project-records/north-strip-corrections-2026-10-09/build-fingerprint.json",
+    "scope": "Targeted exterior corrections; all remaining whole-site gates retained."
+  },
+  "atriumPass": {
+    "status": "installed-reviewed-refinement-pending",
+    "scope": "Replace rectangular raised roof with cross/apse plan, add ribbed glazed dome, strengthen entry cornices and relief fields, remove inappropriate bitumen roof texture.",
+    "estimatedDimensions": {
+      "roofTopM": 32,
+      "skylightCenterXZ": [
+        -36,
+        -351
+      ],
+      "skylightRadiusM": 7.5,
+      "skylightBaseM": 32.55,
+      "skylightRiseM": 4.05
+    },
+    "audit": "build/city-exteriors/forum-shops-audit.json",
+    "newTrianglesAudited": 29501,
+    "baseline": "build/city-exteriors/forum-before",
+    "baselineLimit": "Only aerial view valid; front and west cameras landed in adjacent geometry and must not be counted as architectural/performance comparison.",
+    "remaining": [
+      "Trevi/Triton fountain facade and sculptural detail",
+      "Exact facade bay dimensions and tenant details",
+      "Mall public interiors/circulation remain explicitly outside this exterior-only pass",
+      "Complete site planting and current signage"
+    ],
+    "review": {
+      "views": "build/city-exteriors/forum-reviewed",
+      "inspected": [
+        "front",
+        "roof",
+        "west"
+      ],
+      "frameMs": {
+        "front": [
+          16.7,
+          17.8
+        ],
+        "roof": [
+          16.6,
+          17.8
+        ],
+        "west": [
+          22.1,
+          22.9
+        ]
+      },
+      "assessment": "Raised roof now cross/rounded apse with blue ribbed skylight; front cornice and oval relief frames visible. Western service walls have modeled panel bays, roof equipment and parapets. Remaining sculptural/tenant/garden details not complete; west view misses60fps."
+    },
+    "installed": {
+      "triangles": 86903,
+      "batches": 39,
+      "optimizedMB": 1.9
+    },
+    "validation": {
+      "geometry": "29501 new roof/skylight triangles finite/nondegenerate/nonduplicate",
+      "typecheck": "passed",
+      "cliVerify": "FAILED180s: menu,noPlay detected,30fps; dedicated probe selected character thenPlay and completed all three installed views. Not a full CLI pass."
+    }
+  }
+}

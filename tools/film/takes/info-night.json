@@ -1,0 +1,66 @@
+{
+ "name": "info-night",
+ "subframes": 1,
+ "seconds": 10.0,
+ "maxSeconds": 16.0,
+ "start": {
+  "at": [
+   300,
+   0.5,
+   900
+  ],
+  "dir": [
+   0,
+   -1
+  ],
+  "view": "first",
+  "warm": 8
+ },
+ "steps": [
+  {
+   "wait": 10.0
+  }
+ ],
+ "camera": [
+  {
+   "from": 0,
+   "to": 10.0,
+   "focus": "camera",
+   "keys": [
+    {
+     "t": 0,
+     "pos": [
+      330,
+      300,
+      1300
+     ],
+     "look": [
+      -120,
+      40,
+      330
+     ],
+     "roll": 0,
+     "fov": 45
+    },
+    {
+     "t": 10.0,
+     "pos": [
+      200,
+      215,
+      930
+     ],
+     "look": [
+      -150,
+      40,
+      290
+     ],
+     "roll": 0,
+     "fov": 45
+    }
+   ]
+  }
+ ],
+ "look": {
+  "preset": "neon"
+ }
+}

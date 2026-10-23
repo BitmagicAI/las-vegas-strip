@@ -1,0 +1,393 @@
+{
+ "about": "Hand-written tasks that the block records and the building inventory do not describe. Edit this file by hand; tools/tasks/build-board.py merges it into tasks/index.json. Fields as in tasks/README.md.",
+ "tasks": [
+  {
+   "id": "rel-split-game-layer",
+   "title": "Finish separating the zombie game from the city",
+   "area": "release",
+   "size": "L",
+   "priority": "P1",
+   "summary": "Done on 2026-10-22. The city runs with no game layer (src/work/GameLayers.ts). The zombie game \"Vegas: Afterlight\" moved to its own project (GitFork/vegas-afterlight-game): the sanctuary and supply caches, the cast and its animations, the storm-chase film scenes, its tests, tools and design documents. It registers its layer in GAME_LAYERS. Left: the naming and the repository wiring.",
+   "items": [
+    "Give the city its own game id once its name is chosen (bitmagic init --name <name> in an empty folder; copy the id into bitmagic.json and src/work/game.json). The game keeps ZWLJZE4P1VA6",
+    "Rename the city's Afterlight-named files and keys to the chosen name: AfterlightShadows.ts, the localStorage 'afterlight:film' key, window.__afterlightProbe and __afterlightFilm (tools/film and tools/probe-*.mjs use them)",
+    "After the city's first commit, make the game project a git repository whose 'city' remote is the city, and merge city updates from there"
+   ],
+   "files": {
+    "reads": [
+     "docs/OPEN-SOURCE.md"
+    ],
+    "writes": [
+     "src/work/"
+    ]
+   },
+   "acceptance": [
+    "Both projects boot and pass node tools/release/smoke-clone.mjs",
+    "The game's only change to city files is its GAME_LAYERS line"
+   ],
+   "owner": "maintainer"
+  },
+  {
+   "id": "rel-texture-provenance",
+   "title": "Record where every packed texture came from",
+   "area": "release",
+   "size": "M",
+   "priority": "P1",
+   "summary": "Most textures are drawn by our own scripts (tools/make-public-resort-textures.py, tools/make-arrival-materials.py, tools/strip-landmarks/luxor_obelisk_texture.py) or are CC0 scans from Poly Haven. A few have no recorded source. The release needs a source for each one, or a replacement.",
+   "items": [
+    "build/strip-landmarks/textures/venetian-ceiling-fresco.png (packed into the Venetian interior by tools/strip-landmarks/export.py): no generator script and no recorded source. Find its origin, or replace it with an original or public-domain painting and record the source.",
+    "List every image packed into the runtime GLBs (tools/release/asset-pack.json) together with the script that drew it. Write the list to docs/ASSETS.md.",
+    "Check that no image in a .blend or GLB is a photo of a real property (the reference photos are for comparison only)."
+   ],
+   "files": {
+    "reads": [
+     "tools/strip-landmarks/export.py",
+     "tools/level/",
+     "tools/release/asset-pack.json"
+    ],
+    "writes": [
+     "docs/ASSETS.md",
+     "NOTICE.md"
+    ]
+   },
+   "acceptance": [
+    "docs/ASSETS.md lists each packed texture with its generator script or its licence and source URL",
+    "Anything with an unknown origin has been replaced, and the GLB re-exported and re-optimized"
+   ]
+  },
+  {
+   "id": "rel-county-terms",
+   "title": "Confirm the terms for the Clark County GISMO pavement data",
+   "area": "release",
+   "size": "S",
+   "priority": "P1",
+   "summary": "tools/geographic-strip/fetch_county.py reads the Clark County GISMO Pavement map service. The road and median surfaces derive from it. No licence was found; the data is published as a public record.",
+   "items": [
+    "Find Clark County's terms of use for GISMO map services",
+    "Record the attribution and terms in NOTICE.md and LICENSE-DATA.md"
+   ],
+   "files": {
+    "reads": [
+     "tools/geographic-strip/fetch_county.py"
+    ],
+    "writes": [
+     "NOTICE.md",
+     "LICENSE-DATA.md"
+    ]
+   },
+   "acceptance": [
+    "NOTICE.md cites the terms with a URL and an access date"
+   ],
+   "owner": "maintainer"
+  },
+  {
+   "id": "rel-engine-current",
+   "title": "Move to the currently published engine (3.1309)",
+   "area": "release",
+   "size": "M",
+   "priority": "P1",
+   "summary": "A clone gets its engine from `bitmagic upgrade`, which only installs the currently published engine (3.1309 on 2026-10-22). The project was built on 3.1223. In a clean clone on 3.1309, `bitmagic check` reports 11 errors. Nine are in the storm-film scene code (src/work/film/SceneAtmosphere.ts), which leaves the city with the zombie layer. Two are in city code.",
+   "items": [
+    "src/work/hotels/HotelGeometry.ts:5: `vertices` read on a collider union that now includes heightfields; narrow by type",
+    "src/work/hotels/HotelStreaming.ts:27: GuestDoor.leaf may be null, but Door.leaf is now a KinematicDoorLeaf",
+    "Game.ts is still the old whole `class VoxelGame`: run `bitmagic upgrade --migrate-game` or follow engine/agent-docs/migrating-game-to-voxelgamebase.md",
+    "Diff .bitmagic/AGENTS.md.latest against AGENTS.md (one new template section: Preserve the visual direction)",
+    "Re-measure what the engine change can move: tools/probe-streaming.mjs, tools/probe-interiors.mjs, tools/probe-lighting-modes.sh (the engine's batched lighting may have landed), then node tools/release/smoke-clone.mjs"
+   ],
+   "files": {
+    "reads": [
+     "engine/agent-docs/migrating-game-to-voxelgamebase.md",
+     "AGENTS.md"
+    ],
+    "writes": [
+     "src/work/",
+     "bitmagic.json",
+     "tsconfig.json",
+     "vite.config.js",
+     "index.html"
+    ]
+   },
+   "acceptance": [
+    "bitmagic check passes on the published engine",
+    "Frame time and stalls no worse at the probe views",
+    "smoke-clone.mjs passes"
+   ],
+   "owner": "maintainer"
+  },
+  {
+   "id": "tool-source-pack",
+   "title": "Publish a source pack so contributors can rebuild GLBs",
+   "area": "tooling",
+   "size": "L",
+   "priority": "P1",
+   "summary": "The runtime pack (tools/release/asset-pack.py) is enough to play and to edit code. Most builders also read files in build/: original GLBs, .blend scenes, OSM extracts and collision data. These add up to about 10 GiB. Without them, a contributor can only rebuild what a builder makes from scratch.",
+   "items": [
+    "List what each builder reads from build/ (tools/strip-landmarks/build.py, export.py, tools/resort-blocks/build_*.py, tools/geographic-strip/*, tools/highrises/*, tools/level/*)",
+    "Add a `source` mode to tools/release/asset-pack.py that packs those files (no .blend1, logs, renders, before/after evidence), split into parts under 2 GiB",
+    "Make fetch-assets.mjs --source fetch and verify it",
+    "Document in docs/ASSETS.md which tasks need it"
+   ],
+   "files": {
+    "reads": [
+     "tools/"
+    ],
+    "writes": [
+     "tools/release/asset-pack.py",
+     "tools/release/fetch-assets.mjs",
+     "docs/ASSETS.md"
+    ]
+   },
+   "acceptance": [
+    "In a fresh clone with the runtime and source packs, one strip-landmark venue and one resort block can be rebuilt, exported, optimized and loaded in the game"
+   ],
+   "owner": "maintainer"
+  },
+  {
+   "id": "tool-fix-tests",
+   "title": "Bring the stale logic tests up to date",
+   "area": "tooling",
+   "size": "M",
+   "priority": "P1",
+   "summary": "On 2026-10-22 the city's tests were run in a clean clone with the runtime pack. Three fail, and they failed in the maintainer's checkout too: the code moved on and the tests did not. The game's tests (sanctuary, supply loop, cast, storm) moved to the game project with it.",
+   "items": [
+    "tests/building-visibility.mjs: TypeError reading 'linear' (a stub no longer matches the code)",
+    "tests/shadow-casters.test.mjs: imports a module that no longer exists",
+    "tests/site-lights.test.mjs: flags src/work/NearbyLights.ts. It creates its eight stand-in PointLights once at boot, outside the scene graph (AGENTS.md), so allow that file explicitly; do not weaken the rule for streamed venues"
+   ],
+   "files": {
+    "reads": [
+     "tests/",
+     "AGENTS.md"
+    ],
+    "writes": [
+     "tests/"
+    ]
+   },
+   "acceptance": [
+    "Every tests/*.mjs passes in a clean clone with the runtime pack: for t in tests/*.mjs; do node --import ./tools/ts-register.mjs $t || echo FAIL $t; done",
+    "No test is deleted or weakened without a sentence in the pull request on why"
+   ]
+  },
+  {
+   "id": "tool-ci",
+   "title": "Add continuous integration: typecheck and tests",
+   "area": "tooling",
+   "size": "M",
+   "priority": "P2",
+   "summary": "Pull requests should run the typecheck and the logic tests that do not need the GPU. The engine is not in the repository: CI must install it with `bitmagic upgrade`, which needs a Bitmagic Pro login (a repository secret the maintainers control, never exposed to pull requests from forks). Some tests read build/ assets; mark those, or let CI fetch the runtime pack.",
+   "items": [
+    "Find how the CLI authenticates non-interactively (a token in an environment variable) and store it as a repository secret",
+    "Run each tests/*.test.mjs in a clean clone and list which need build/ assets",
+    "Add .github/workflows/check.yml: bitmagic upgrade, pnpm install, bitmagic check, the tests that need no assets. Run it on pushes to main and on pull_request_target only after a maintainer's label, so forks never see the secret"
+   ],
+   "files": {
+    "reads": [
+     "tests/",
+     "package.json"
+    ],
+    "writes": [
+     ".github/workflows/check.yml",
+     "tests/"
+    ]
+   },
+   "acceptance": [
+    "The workflow passes on main",
+    "A deliberate type error makes it fail"
+   ],
+   "owner": "maintainer"
+  },
+  {
+   "id": "perf-lakefront-draws",
+   "title": "Cut draw calls at the Bellagio lakefront",
+   "area": "performance",
+   "size": "L",
+   "priority": "P2",
+   "summary": "At the lakefront the renderer issues about 1,124 draws for 4.37M triangles (docs/project-records/scene-performance.md). The biggest groups are the bridge concourse static trim (181 draws, 168 small meshes), characters (168), and city and road submissions (about 410).",
+   "items": [
+    "Merge the bridge concourse static trim by material (GeographicPassages)",
+    "Add character visibility and LOD at range",
+    "Batch the city and road submissions further",
+    "Measure before and after with tools/probe-views.mjs and tools/probe-idle.mjs at ?quality=ultra"
+   ],
+   "files": {
+    "reads": [
+     "docs/project-records/scene-performance.md",
+     "src/work/GeographicPassages.ts",
+     "src/work/CityBatches.ts"
+    ],
+    "writes": [
+     "src/work/"
+    ]
+   },
+   "acceptance": [
+    "Same picture (side-by-side captures)",
+    "Fewer draws and lower median and p95 frame time at the lakefront probe view",
+    "No runtime light-set changes and no per-frame JS arrays (AGENTS.md)"
+   ]
+  },
+  {
+   "id": "film-venetian-expo-roof",
+   "title": "Keep the continuous-tour camera out of the Venetian Expo roof",
+   "area": "film",
+   "size": "S",
+   "priority": "P3",
+   "summary": "In tools/film/takes/tour.json, between about 65.5 and 68.4 s, the camera path cuts through the Venetian Expo roof on the way to the Grand Canal Shoppes.",
+   "items": [
+    "Raise or reroute the path through that stretch (tools/film/make-tour.py)",
+    "Check it with tools/film/clearance.py tour"
+   ],
+   "files": {
+    "reads": [
+     "tools/film/make-tour.py"
+    ],
+    "writes": [
+     "tools/film/make-tour.py",
+     "tools/film/takes/tour.json"
+    ]
+   },
+   "acceptance": [
+    "clearance.py reports no exterior triangle within 1 m of the camera between 60 and 72 s",
+    "A real-time preview of that stretch shows no roof clipping"
+   ]
+  },
+  {
+   "id": "perf-ktx2-textures",
+   "title": "GPU-compressed textures (KTX2) for the city",
+   "area": "performance",
+   "size": "L",
+   "priority": "P2",
+   "summary": "Every texture in the runtime GLBs is WebP, JPEG or PNG, so it uploads to the GPU uncompressed (python3 tools/optimize/audit-pack.py). The optimizing-assets skill can write KTX2 (ETC1S or UASTC), which stays compressed in GPU memory. The vendored engine has neither the meshopt decoder nor the KTX2 boot wait (expectGltfLoaderSupport), and the ktx tool is not installed.",
+   "items": [
+    "Follow the skill (CLI assets/optimizing-assets/SKILL.md, sections 3 and 5): install the pinned ktx tool, and add the KTX2 half of the game-side shim next to src/work/GltfDecoders.ts (KTX2Loader plus the WebGPU init wait)",
+    "Start with the biggest texture sets: city atlases, landmark exteriors, hotel modules. UASTC for normal and ORM maps, ETC1S only for distant colour maps",
+    "Measure GPU memory and first-load time before and after (tools/probe-memory.mjs, tools/probe-idle.mjs)",
+    "A/B the same views with ab-compare.mjs, and show the owner the sheet"
+   ],
+   "files": {
+    "reads": [
+     "tools/optimize/optimize-runtime-glbs.mjs",
+     "src/work/GltfDecoders.ts",
+     "src/work/OptimizedGlb.ts"
+    ],
+    "writes": [
+     "tools/optimize/optimize-runtime-glbs.mjs",
+     "src/work/GltfDecoders.ts"
+    ]
+   },
+   "acceptance": [
+    "No KTX2 or WebGPU pipeline errors in the console on a cold load",
+    "GPU memory lower at the probe views, with SSIM at or above the skill's thresholds",
+    "The owner approved the A/B sheet"
+   ],
+   "owner": "maintainer"
+  },
+  {
+   "id": "tool-pack-foliage",
+   "title": "Ship the optimized foliage to clones",
+   "area": "tooling",
+   "size": "S",
+   "priority": "P2",
+   "summary": "public/foliage/tree-0/1/2.glb (34 MiB) are committed originals. Their meshopt copies exist only in a full working checkout (build/optimized/foliage/), because glbUrl() serves a copy only when its manifest entry matches the original's size and modification time, and a git checkout resets modification times. A clone therefore loads the originals.",
+   "items": [
+    "Choose between moving the tree GLBs to build/foliage/ (asset pack, out of git) and letting glbUrl() trust a pack-pinned manifest entry by size and SHA-256",
+    "Update tools/release/asset-pack.py and ResortFoliage.ts accordingly"
+   ],
+   "files": {
+    "reads": [
+     "src/work/OptimizedGlb.ts",
+     "src/work/ResortFoliage.ts",
+     "tools/release/asset-pack.py"
+    ],
+    "writes": [
+     "src/work/OptimizedGlb.ts",
+     "src/work/ResortFoliage.ts",
+     "tools/release/asset-pack.py"
+    ]
+   },
+   "acceptance": [
+    "In a clean clone, the network panel shows the meshopt trees (about 7 MiB rather than 34 MiB)",
+    "node tools/release/smoke-clone.mjs passes"
+   ]
+  },
+  {
+   "id": "perf-characters-webp",
+   "title": "Lighter character downloads",
+   "area": "performance",
+   "size": "M",
+   "priority": "P3",
+   "summary": "The nine b610x characters load from Bitmagic's CDN as originals (5.3 to 6.3 MiB each, mostly PNG textures). glTF-Transform cannot read their required BITMAGIC_sparse_correctives extension, so only a texture-only variant is possible (tools/optimize/character-textures-webp.mjs).",
+   "items": [
+    "Make the texture-only WebP variants",
+    "A/B faces and skin up close",
+    "Register them and point the world.json rows at them (an upload, so the owner's approval is needed)"
+   ],
+   "files": {
+    "reads": [
+     "tools/optimize/character-textures-webp.mjs",
+     "src/work/characters/"
+    ],
+    "writes": [
+     "src/work/world.json"
+    ]
+   },
+   "acceptance": [
+    "Same look up close (A/B sheet approved)",
+    "Smaller download in the network panel"
+   ],
+   "owner": "maintainer"
+  },
+  {
+   "id": "perf-binary-collision",
+   "title": "Binary collision and route data instead of JSON",
+   "area": "performance",
+   "size": "M",
+   "priority": "P2",
+   "summary": "203 MiB of the runtime pack is plain-text JSON: city-colliders.json alone is 118 MiB, and the venue collisions and road network add more. The game downloads and parses all of it as text. Flat Float32Array and Uint32Array buffers would cut both bytes and parse time, and follow the project's no-JS-arrays rule.",
+   "items": [
+    "Write the collision vertex and index arrays as little-endian binary files beside a small JSON header (exporters in tools/geographic-strip/ and tools/strip-landmarks/export.py)",
+    "Read them as typed arrays in GeographicCity, StripLandmarks, HighriseCity and SphereVenue",
+    "Keep reading the JSON while the binary files are missing, for one release"
+   ],
+   "files": {
+    "reads": [
+     "src/work/GeographicCity.ts",
+     "src/work/StripLandmarks.ts"
+    ],
+    "writes": [
+     "src/work/",
+     "tools/geographic-strip/",
+     "tools/strip-landmarks/export.py",
+     "tools/release/asset-pack.py"
+    ]
+   },
+   "acceptance": [
+    "The same collision (walk audits pass)",
+    "Boot and first-entry stall times measured before and after with tools/probe-streaming.mjs"
+   ]
+  },
+  {
+   "id": "perf-index16",
+   "title": "16-bit indices where they fit",
+   "area": "performance",
+   "size": "S",
+   "priority": "P3",
+   "summary": "216 primitives in the runtime GLBs still use uint32 indices although they have fewer than 65,536 vertices: about 1.7 MiB of GPU index memory (python3 tools/optimize/audit-pack.py).",
+   "items": [
+    "Have the optimizer driver narrow those index accessors before encoding (or have the exporters write uint16)",
+    "Re-optimize and re-pack"
+   ],
+   "files": {
+    "reads": [
+     "tools/optimize/optimize-runtime-glbs.mjs"
+    ],
+    "writes": [
+     "tools/optimize/optimize-runtime-glbs.mjs"
+    ]
+   },
+   "acceptance": [
+    "audit-pack.py reports 0 uint32 index accessors that would fit uint16",
+    "Identical rendering"
+   ]
+  }
+ ]
+}

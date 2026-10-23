@@ -1,0 +1,1202 @@
+{
+  "version": 1,
+  "id": "cosmopolitan",
+  "name": "The Cosmopolitan",
+  "stage": "geometry-review",
+  "updated": "2026-10-06",
+  "target": "Latest corroborated permanent architecture; record imagery dates and distinguish uncertain or temporary features.",
+  "statusNote": "Replacement geometry is installed locally: individually fitted towers, podium Levels 1/2/3/4/14, two continuous stair stacks, furnished decks and street entrances. This is a playable reconstruction pass, not full architectural sign-off.",
+  "surveyBoundsXZ": [
+    -430,
+    530,
+    -30,
+    785
+  ],
+  "coordinateSystem": {
+    "units": "metres",
+    "axes": "X east, Y up, Z south",
+    "originLonLat": [
+      -115.173,
+      36.116
+    ]
+  },
+  "baseline": {
+    "geometrySource": "tools/level/cosmopolitan.py",
+    "mappingSource": "tools/geographic-strip/mapping.py",
+    "surveySource": "build/strip-survey/survey.json",
+    "note": "Source recipe inspection, not a fresh runtime mesh measurement. The staged Blender source must be reconciled before replacement."
+  },
+  "sources": [
+    {
+      "id": "earth-user",
+      "title": "Creator\u2019s Google Earth view from the Bellagio side",
+      "url": null,
+      "kind": "user-image",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Shows the two different tower profiles, north-side low-rise buildings, roof decks and Bellagio edge. Camera and imagery date unknown; visual evidence, not survey dimensions.",
+      "image": "tools/resort-blocks/references/cosmopolitan-user-earth.png"
+    },
+    {
+      "id": "osm",
+      "title": "Existing OSM extract",
+      "url": "https://www.openstreetmap.org/copyright",
+      "kind": "geodata",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Extracted 2026-10-03T23:06:06Z. Editable footprints are in build/strip-survey/survey.json. Names, heights and overlapping building parts need reconciliation."
+    },
+    {
+      "id": "architect",
+      "title": "Arquitectonica \u2014 Cosmopolitan",
+      "url": "https://arquitectonica.com/architecture/project/cosmopolitan/",
+      "kind": "architect",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Design intent: folded glass towers above a mixed-use podium and active street frontage. Distinguish design imagery from the built resort."
+    },
+    {
+      "id": "height-boulevard",
+      "title": "Skyscraper Center \u2014 Boulevard Tower",
+      "url": "https://www.skyscrapercenter.com/building/cosmopolitan-casino-beach-club-tower/2178",
+      "kind": "dimensions",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Published architectural height 184 m. Physical storey count is not the hotel floor numbering."
+    },
+    {
+      "id": "height-chelsea",
+      "title": "Skyscraper Center \u2014 Chelsea Tower",
+      "url": "https://www.skyscrapercenter.com/building/wd/2177",
+      "kind": "dimensions",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Published architectural height 184 m; corroborate the roof profile separately."
+    },
+    {
+      "id": "official-maps",
+      "title": "Official resort maps",
+      "url": "https://cosmopolitanlasvegas.mgmresorts.com/en/resort-maps.html",
+      "kind": "official",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Five maps visually inspected: Levels 1, 2, 3, 4 and 14. Diagrammatic, with no usable metric scale. Labels may mix update dates."
+    },
+    {
+      "id": "map-1",
+      "title": "Level 1 \u2014 arrivals and casino",
+      "url": "https://thelibrary.mgmresorts.com/transform/g7a00UmpacT212yo/TCO159464046.jpg",
+      "kind": "official-map",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Strip entrances at the east; hotel registration and motor court at the west. Both tower elevator banks and casino escalators are identified.",
+      "image": "https://thelibrary.mgmresorts.com/transform/g7a00UmpacT212yo/TCO159464046.jpg"
+    },
+    {
+      "id": "map-2",
+      "title": "Level 2 \u2014 bridge connections",
+      "url": "https://thelibrary.mgmresorts.com/transform/YQR6QLNx6u05QyuX/TCO167242948.jpg",
+      "kind": "official-map",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "East/southeast bridges cross Las Vegas Boulevard and Harmon Avenue. West connection is labeled toward Aria, Vdara and Bellagio. Marquee entrance is shown; this does not establish the elevation of its outdoor pool.",
+      "image": "https://thelibrary.mgmresorts.com/transform/YQR6QLNx6u05QyuX/TCO167242948.jpg"
+    },
+    {
+      "id": "map-3",
+      "title": "Level 3 \u2014 dining and pool approach",
+      "url": "https://thelibrary.mgmresorts.com/transform/6IaIZSfX4j33ApYk/TCO159464045.jpg",
+      "kind": "official-map",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Dining frontage around Boulevard Tower and the onward escalator to Boulevard Pool; Chelsea event spaces and connecting circulation.",
+      "image": "https://thelibrary.mgmresorts.com/transform/6IaIZSfX4j33ApYk/TCO159464045.jpg"
+    },
+    {
+      "id": "map-4",
+      "title": "Level 4 \u2014 Boulevard Pool",
+      "url": "https://thelibrary.mgmresorts.com/transform/cEiNe4DdNDW12ETT/TCO159464048.jpg",
+      "kind": "official-map",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Pool and bars at the Strip side, conference floor toward Chelsea. The map omits Overlook Grill, which the official restaurant directions place beside this pool.",
+      "image": "https://thelibrary.mgmresorts.com/transform/cEiNe4DdNDW12ETT/TCO159464048.jpg"
+    },
+    {
+      "id": "map-14",
+      "title": "Level 14 \u2014 Chelsea Pool",
+      "url": "https://thelibrary.mgmresorts.com/transform/s43lEI4Aqtk81MMM/TCO159464049.jpg",
+      "kind": "official-map",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Chelsea Pool, spa and recreation deck. The illustration names a tennis court; current fitness page also describes pickleball courts. Floor label does not establish height above grade.",
+      "image": "https://thelibrary.mgmresorts.com/transform/s43lEI4Aqtk81MMM/TCO159464049.jpg"
+    },
+    {
+      "id": "pool-district",
+      "title": "Pool District and bungalow terraces",
+      "url": "https://cosmopolitanlasvegas.mgmresorts.com/en/amenities/pool-district.html",
+      "kind": "official",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Distinct Boulevard, Chelsea and Marquee pool areas. Bungalows face Marquee and include multiple levels, private terraces and plunge pools."
+    },
+    {
+      "id": "boulevard-pool",
+      "title": "Boulevard Pool photographs",
+      "url": "https://cosmopolitanlasvegas.mgmresorts.com/en/amenities/boulevard-pool.html",
+      "kind": "official",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Reference collection for pool shape, deck tiers, railings, cabanas and the Strip-facing edge. Detailed visual survey remains to be completed."
+    },
+    {
+      "id": "chelsea-pool",
+      "title": "Chelsea Pool photographs",
+      "url": "https://cosmopolitanlasvegas.mgmresorts.com/en/amenities/the-chelsea-pool.html",
+      "kind": "official",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Reference collection for landscaped pool deck, cabanas and poolside furniture. Detailed visual survey remains to be completed."
+    },
+    {
+      "id": "overlook",
+      "title": "Overlook Grill \u2014 official location and directions",
+      "url": "https://cosmopolitanlasvegas.mgmresorts.com/en/restaurants/overlook-grill.html",
+      "kind": "official",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Poolside cafe next to Boulevard Pool. Directions take guests from the casino through Levels 2 and 3 to Level 4; the restaurant is left of the arriving escalator. Photo survey must establish patio boundaries."
+    },
+    {
+      "id": "courts",
+      "title": "Fitness centers and rooftop courts",
+      "url": "https://cosmopolitanlasvegas.mgmresorts.com/en/amenities/fitness-centers.html",
+      "kind": "official",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Chelsea recreation facilities are labeled Level 14. Current description includes tennis and pickleball; reconcile with the older-looking map before detailing."
+    }
+  ],
+  "levels": [
+    {
+      "id": "L1",
+      "label": "Level 1 / street",
+      "elevationM": 0.24,
+      "elevationStatus": "estimated: fitted to podium, bridge datum and photographs; official maps establish floor labels, not surveyed heights",
+      "features": "Street entrances, casino, Chelsea arrival lobby, west motor court and service edges.",
+      "sources": [
+        "map-1"
+      ]
+    },
+    {
+      "id": "L2",
+      "label": "Level 2 / bridges",
+      "elevationM": 5.84,
+      "elevationStatus": "estimated: fitted to podium, bridge datum and photographs; official maps establish floor labels, not surveyed heights",
+      "features": "East and south bridge entrances, western resort connection, shops and public gallery.",
+      "sources": [
+        "map-2"
+      ]
+    },
+    {
+      "id": "L3",
+      "label": "Level 3 / dining",
+      "elevationM": 11.44,
+      "elevationStatus": "estimated: fitted to podium, bridge datum and photographs; official maps establish floor labels, not surveyed heights",
+      "features": "Restaurant frontage, public gallery and access toward Boulevard Pool.",
+      "sources": [
+        "map-3",
+        "overlook"
+      ]
+    },
+    {
+      "id": "L4",
+      "label": "Level 4 / Boulevard Pool",
+      "elevationM": 17.04,
+      "elevationStatus": "estimated: fitted to podium, bridge datum and photographs; official maps establish floor labels, not surveyed heights",
+      "features": "Pool tiers, poolside bars and Overlook Grill dining area.",
+      "sources": [
+        "map-4",
+        "overlook"
+      ]
+    },
+    {
+      "id": "L14",
+      "label": "Level 14 / Chelsea recreation",
+      "elevationM": 22.64,
+      "elevationStatus": "estimated: fitted to podium, bridge datum and photographs; official maps establish floor labels, not surveyed heights",
+      "features": "Chelsea Pool, poolside bars, cabanas and rooftop courts.",
+      "sources": [
+        "map-14",
+        "courts"
+      ]
+    },
+    {
+      "id": "marquee",
+      "label": "Marquee outdoor level / elevation to confirm",
+      "elevationM": 17.04,
+      "elevationStatus": "estimated: fitted to podium, bridge datum and photographs; official maps establish floor labels, not surveyed heights",
+      "features": "Dayclub, outdoor pool and bungalow terraces; do not infer height from entrance floor.",
+      "sources": [
+        "map-2",
+        "pool-district"
+      ]
+    },
+    {
+      "id": "guest",
+      "label": "Guest floors / private balconies",
+      "elevationM": null,
+      "elevationStatus": "existing custom guest templates relocated into independent tower footprints",
+      "features": "Balcony silhouettes remain outside; reachable balconies load with guest rooms.",
+      "sources": [
+        "earth-user",
+        "architect"
+      ],
+      "schedule": "src/work/hotels/towers.json"
+    }
+  ],
+  "components": [
+    {
+      "id": "boulevard-tower",
+      "name": "Boulevard Tower",
+      "category": "tower",
+      "levels": [
+        "guest"
+      ],
+      "scope": "Correct individual plan, placement, tapered crown, balcony depth and glazed/opaque zones; preserve guest-core access.",
+      "sources": [
+        "earth-user",
+        "osm",
+        "height-boulevard"
+      ],
+      "priority": "P0",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "chelsea-tower",
+      "name": "Chelsea Tower",
+      "category": "tower",
+      "levels": [
+        "guest"
+      ],
+      "scope": "Long folded slab with independent footprint; model each bend, end wall, balcony band and roof profile.",
+      "sources": [
+        "earth-user",
+        "osm",
+        "height-chelsea"
+      ],
+      "priority": "P0",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "podium",
+      "name": "Complete podium and setbacks",
+      "category": "podium",
+      "levels": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L14"
+      ],
+      "scope": "Separate occupied levels, all roof heights, exposed soffits and support structure; replace the single solid upper box.",
+      "sources": [
+        "earth-user",
+        "official-maps",
+        "architect"
+      ],
+      "priority": "P0",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "jockey-context",
+      "name": "Jockey Club and northern low-rise context",
+      "category": "context",
+      "levels": [
+        "L1"
+      ],
+      "scope": "Identify both low-rise wings, roofline, materials, alleys and visible service structures; preserve independent ownership. OSM identity still to reconcile.",
+      "sources": [
+        "earth-user",
+        "osm"
+      ],
+      "priority": "P0",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "strip-front",
+      "name": "Las Vegas Boulevard frontage",
+      "category": "frontage",
+      "levels": [
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "scope": "Full run of glazed fronts, doors, signs, overhangs, pool fascia, storefronts and pavement transitions.",
+      "sources": [
+        "earth-user",
+        "map-1",
+        "map-2",
+        "architect"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "harmon-front",
+      "name": "Harmon Avenue frontage",
+      "category": "frontage",
+      "levels": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "scope": "South elevation, driveways, retaining edges, underside of the elevated public frontage and bridge thresholds.",
+      "sources": [
+        "osm",
+        "map-1",
+        "map-2"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "arrival",
+      "name": "Chelsea motor court and arrival",
+      "category": "entrance",
+      "levels": [
+        "L1"
+      ],
+      "scope": "Vehicle approach, covered arrival, glazing, columns, signage, doors and detailed first arrival space.",
+      "sources": [
+        "map-1"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "strip-entries",
+      "name": "Both Strip entrances and first interior views",
+      "category": "entrance",
+      "levels": [
+        "L1"
+      ],
+      "scope": "Recessed, glazed entrances connected to the existing casino and recognizable Chandelier/Boulevard arrival area.",
+      "sources": [
+        "map-1"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "bridge-east",
+      "name": "Las Vegas Boulevard bridge landing",
+      "category": "connection",
+      "levels": [
+        "L2"
+      ],
+      "scope": "Continuous bridge-floor threshold, glazed entrance, supporting structure, railings and route down to street.",
+      "sources": [
+        "map-2"
+      ],
+      "priority": "P0",
+      "status": "partial",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ],
+      "note": "Upper entrance and landing built; external city bridge continuity needs reconciliation."
+    },
+    {
+      "id": "bridge-south",
+      "name": "Harmon bridge landing",
+      "category": "connection",
+      "levels": [
+        "L2"
+      ],
+      "scope": "Preserve the bridge to the southern block; build a real upper-level entrance and onward circulation.",
+      "sources": [
+        "map-2"
+      ],
+      "priority": "P0",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "connection-west",
+      "name": "Western resort connection",
+      "category": "connection",
+      "levels": [
+        "L2"
+      ],
+      "scope": "Confirm actual alignment of the Aria/Vdara/Bellagio connection, then fit the interface and the indoor/outdoor thresholds.",
+      "sources": [
+        "map-2"
+      ],
+      "priority": "P0",
+      "status": "planned",
+      "evidence": []
+    },
+    {
+      "id": "public-circulation",
+      "name": "Public galleries, escalators and lifts",
+      "category": "circulation",
+      "levels": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L14",
+        "marquee"
+      ],
+      "scope": "Continuous documented public routes, landing floors and headroom; bridge arrivals cannot depend on a closed or absent floor.",
+      "sources": [
+        "official-maps",
+        "overlook"
+      ],
+      "priority": "P0",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ],
+      "note": "Two walkable stair stacks connect all mapped public levels. Lift and escalator-specific equipment remain to be modeled."
+    },
+    {
+      "id": "boulevard-deck",
+      "name": "Boulevard Pool and terraces",
+      "category": "deck",
+      "levels": [
+        "L4"
+      ],
+      "scope": "Correct pool perimeter and level changes, coping, cabanas, daybeds, railings, bars, planters and view over the Strip.",
+      "sources": [
+        "map-4",
+        "boulevard-pool"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "overlook-patio",
+      "name": "Overlook Grill and poolside dining",
+      "category": "patio",
+      "levels": [
+        "L4"
+      ],
+      "scope": "Survey inside/outside boundary; recreate dining terrace, tables, shade, lighting and actual access from the Level 4 landing.",
+      "sources": [
+        "overlook",
+        "map-4"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "chelsea-deck",
+      "name": "Chelsea Pool and landscaped deck",
+      "category": "deck",
+      "levels": [
+        "L14"
+      ],
+      "scope": "Separate elevated pool, bars, shade, cabanas, landscaping and guest/public access; reconcile physical elevation.",
+      "sources": [
+        "map-14",
+        "chelsea-pool"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "marquee-deck",
+      "name": "Marquee outdoor club and terraces",
+      "category": "deck",
+      "levels": [
+        "marquee"
+      ],
+      "scope": "Survey deck tiers, pool, stage, cabanas, enclosure and route from the documented entrance.",
+      "sources": [
+        "pool-district",
+        "map-2"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "bungalows",
+      "name": "Bungalow terrace exteriors",
+      "category": "terrace",
+      "levels": [
+        "marquee",
+        "guest"
+      ],
+      "scope": "Visible multi-level residences facing Marquee, screens, railings and private plunge-pool terraces. Load private reachable detail on demand.",
+      "sources": [
+        "pool-district"
+      ],
+      "priority": "P1",
+      "status": "planned",
+      "evidence": []
+    },
+    {
+      "id": "courts-deck",
+      "name": "Rooftop recreation deck",
+      "category": "deck",
+      "levels": [
+        "L14"
+      ],
+      "scope": "Tennis/pickleball layout, fences, lighting poles, deck finishes and an actual access route.",
+      "sources": [
+        "map-14",
+        "courts"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    },
+    {
+      "id": "roof-service",
+      "name": "Mechanical roofs and rear/service elevations",
+      "category": "roof",
+      "levels": [
+        "L4",
+        "L14",
+        "guest"
+      ],
+      "scope": "Complete visible roof surfaces, screens, parapets, plant enclosures and west-facing service walls.",
+      "sources": [
+        "earth-user",
+        "osm"
+      ],
+      "priority": "P1",
+      "status": "partial",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ],
+      "note": "Closed tower roofs and Jockey plant/parapets built; individual service-screen layouts need further reference matching."
+    },
+    {
+      "id": "streetscape",
+      "name": "Whole-block pedestrian edge",
+      "category": "landscape",
+      "levels": [
+        "L1"
+      ],
+      "scope": "Trees, planters, low walls, bollards, seats, signs, drainage/curb transitions and clear driving/walking paths.",
+      "sources": [
+        "earth-user",
+        "osm",
+        "map-1"
+      ],
+      "priority": "P1",
+      "status": "built-review-pending",
+      "evidence": [
+        "tools/resort-blocks/build_cosmopolitan.py",
+        "build/resort-blocks/cosmo/cosmo-exterior.glb"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "street-casino",
+      "fromLevel": "L1",
+      "toLevel": "L1",
+      "components": [
+        "strip-front",
+        "strip-entries"
+      ],
+      "sources": [
+        "map-1"
+      ],
+      "returnRequired": true,
+      "status": "geometry-tested",
+      "evidence": [
+        "build/resort-blocks/cosmo/route-audit.json"
+      ]
+    },
+    {
+      "id": "arrival-casino",
+      "fromLevel": "L1",
+      "toLevel": "L1",
+      "components": [
+        "arrival",
+        "public-circulation",
+        "strip-entries"
+      ],
+      "sources": [
+        "map-1"
+      ],
+      "returnRequired": true,
+      "status": "geometry-tested",
+      "evidence": [
+        "build/resort-blocks/cosmo/route-audit.json"
+      ]
+    },
+    {
+      "id": "east-bridge-street",
+      "fromLevel": "L2",
+      "toLevel": "L1",
+      "components": [
+        "bridge-east",
+        "public-circulation",
+        "strip-entries"
+      ],
+      "sources": [
+        "map-2",
+        "map-1"
+      ],
+      "returnRequired": true,
+      "status": "planned",
+      "evidence": []
+    },
+    {
+      "id": "south-bridge-street",
+      "fromLevel": "L2",
+      "toLevel": "L1",
+      "components": [
+        "bridge-south",
+        "public-circulation",
+        "strip-entries"
+      ],
+      "sources": [
+        "map-2",
+        "map-1"
+      ],
+      "returnRequired": true,
+      "status": "geometry-tested",
+      "evidence": [
+        "build/resort-blocks/cosmo/route-audit.json"
+      ]
+    },
+    {
+      "id": "west-connection-street",
+      "fromLevel": "L2",
+      "toLevel": "L1",
+      "components": [
+        "connection-west",
+        "public-circulation",
+        "arrival"
+      ],
+      "sources": [
+        "map-2",
+        "map-1"
+      ],
+      "returnRequired": true,
+      "status": "planned",
+      "evidence": []
+    },
+    {
+      "id": "casino-overlook",
+      "fromLevel": "L1",
+      "toLevel": "L4",
+      "components": [
+        "strip-entries",
+        "public-circulation",
+        "boulevard-deck",
+        "overlook-patio"
+      ],
+      "sources": [
+        "overlook"
+      ],
+      "returnRequired": true,
+      "status": "geometry-tested",
+      "evidence": [
+        "build/resort-blocks/cosmo/route-audit.json"
+      ]
+    },
+    {
+      "id": "arrival-chelsea-pool",
+      "fromLevel": "L1",
+      "toLevel": "L14",
+      "components": [
+        "arrival",
+        "public-circulation",
+        "chelsea-deck"
+      ],
+      "sources": [
+        "map-1",
+        "map-14"
+      ],
+      "returnRequired": true,
+      "status": "geometry-tested",
+      "evidence": [
+        "build/resort-blocks/cosmo/route-audit.json"
+      ]
+    },
+    {
+      "id": "recreation",
+      "fromLevel": "L14",
+      "toLevel": "L14",
+      "components": [
+        "chelsea-deck",
+        "public-circulation",
+        "courts-deck"
+      ],
+      "sources": [
+        "map-14",
+        "courts"
+      ],
+      "returnRequired": true,
+      "status": "geometry-tested",
+      "evidence": [
+        "build/resort-blocks/cosmo/route-audit.json"
+      ]
+    },
+    {
+      "id": "marquee-access",
+      "fromLevel": "L2",
+      "toLevel": "marquee",
+      "components": [
+        "public-circulation",
+        "marquee-deck"
+      ],
+      "sources": [
+        "map-2",
+        "pool-district"
+      ],
+      "returnRequired": true,
+      "status": "planned",
+      "evidence": []
+    },
+    {
+      "id": "boulevard-guest-balcony",
+      "fromLevel": "guest",
+      "toLevel": "guest",
+      "components": [
+        "boulevard-tower"
+      ],
+      "sources": [
+        "earth-user"
+      ],
+      "returnRequired": true,
+      "status": "planned",
+      "evidence": []
+    },
+    {
+      "id": "chelsea-guest-balcony",
+      "fromLevel": "guest",
+      "toLevel": "guest",
+      "components": [
+        "chelsea-tower"
+      ],
+      "sources": [
+        "earth-user"
+      ],
+      "returnRequired": true,
+      "status": "planned",
+      "evidence": []
+    },
+    {
+      "id": "bungalow-private-terrace",
+      "fromLevel": "guest",
+      "toLevel": "guest",
+      "components": [
+        "bungalows"
+      ],
+      "sources": [
+        "pool-district"
+      ],
+      "returnRequired": true,
+      "status": "planned",
+      "evidence": []
+    }
+  ],
+  "views": [
+    {
+      "id": "plan",
+      "name": "Top-down, north up",
+      "purpose": "Tower plans, bends, podium, neighbors and voids.",
+      "camera": null,
+      "referenceSources": [
+        "osm",
+        "earth-user"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "north-aerial",
+      "name": "Aerial from Bellagio / north",
+      "purpose": "Match the creator\u2019s photograph: Jockey Club, tower proportions and all northern layers.",
+      "camera": null,
+      "referenceSources": [
+        "earth-user"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "south-aerial",
+      "name": "Aerial from CityCenter / south",
+      "purpose": "Chelsea folds, rear decks, mechanical roofs and Harmon frontage.",
+      "camera": null,
+      "referenceSources": [
+        "architect"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "east-street",
+      "name": "Across Las Vegas Boulevard",
+      "purpose": "Complete frontage, storefront rhythm, bridges and Boulevard Pool edge.",
+      "camera": null,
+      "referenceSources": [
+        "map-1",
+        "map-2",
+        "boulevard-pool"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "strip-arrival",
+      "name": "Each Strip entrance: outside and just inside",
+      "purpose": "Door depth, transparency, first interior view and recognizable arrival.",
+      "camera": null,
+      "referenceSources": [
+        "map-1"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "west-arrival",
+      "name": "Motor court: approach and just inside",
+      "purpose": "Covered entrance, vehicular clearance and lobby relationship.",
+      "camera": null,
+      "referenceSources": [
+        "map-1"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "bridge-views",
+      "name": "Every bridge landing in both directions",
+      "purpose": "No sealed walls, floating rails or missing slabs.",
+      "camera": null,
+      "referenceSources": [
+        "map-2"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "boulevard-view",
+      "name": "Boulevard Pool and Overlook at eye level",
+      "purpose": "Pool proportions, deck steps, patio furniture and skyline.",
+      "camera": null,
+      "referenceSources": [
+        "boulevard-pool",
+        "overlook"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "chelsea-view",
+      "name": "Chelsea Pool and recreation deck",
+      "purpose": "Levels, landscaping, shade, pool geometry and circulation.",
+      "camera": null,
+      "referenceSources": [
+        "chelsea-pool",
+        "courts"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "marquee-view",
+      "name": "Marquee deck and bungalow terraces",
+      "purpose": "Public outdoor space and private terraces as separate levels.",
+      "camera": null,
+      "referenceSources": [
+        "pool-district"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    },
+    {
+      "id": "skyline",
+      "name": "Strip drive: northbound and southbound",
+      "purpose": "Whole-site scale, colors, no duplicate shells and stable distant silhouette.",
+      "camera": null,
+      "referenceSources": [
+        "earth-user"
+      ],
+      "gameCapture": null,
+      "status": "planned"
+    }
+  ],
+  "issues": [
+    {
+      "id": "shape",
+      "severity": "blocking",
+      "status": "resolved",
+      "title": "Two rectangular tower recipes distort the actual forms",
+      "detail": "Chelsea needs a bent/folded plan. Fit both towers independently before detailing; the current recipe does not represent the observed site.",
+      "resolution": "New block is authored directly in geographic metres. Boulevard uses way/134795273; folded Chelsea uses way/27897905; way/472669744 is treated as podium. Old owners removed explicitly."
+    },
+    {
+      "id": "stretch",
+      "severity": "blocking",
+      "status": "resolved",
+      "title": "Whole-site nonuniform transform distorts individual buildings",
+      "detail": "Current geographic fit scales X about 1.580 and Z about 1.257. Replace this for new block geometry and migrate linked doors, cores and collision consistently.",
+      "resolution": "New block is authored directly in geographic metres. Boulevard uses way/134795273; folded Chelsea uses way/27897905; way/472669744 is treated as podium. Old owners removed explicitly."
+    },
+    {
+      "id": "source-identities",
+      "severity": "blocking",
+      "status": "resolved",
+      "title": "Mapped names and outlines need reconciliation",
+      "detail": "Three map features carry Cosmopolitan-related labels/heights while the resort has two principal towers. Confirm which plan portions belong to each tower or podium; do not extrude each label to 184 m.",
+      "resolution": "New block is authored directly in geographic metres. Boulevard uses way/134795273; folded Chelsea uses way/27897905; way/472669744 is treated as podium. Old owners removed explicitly."
+    },
+    {
+      "id": "elevations",
+      "severity": "blocking",
+      "status": "open",
+      "title": "Physical elevations and all public outdoor routes are unsurveyed",
+      "detail": "All five mapped levels now have physical geometry. Heights and stair locations are fitted estimates, not surveyed dimensions. External western/eastern links remain open review items."
+    },
+    {
+      "id": "lowrise",
+      "severity": "blocking",
+      "status": "review",
+      "title": "Northern frontage and Jockey Club are reduced to generic boxes",
+      "detail": "Both Jockey Club footprints are retained with window bays, roof plant and parapets; material/roof detail still requires closer comparison."
+    },
+    {
+      "id": "era",
+      "severity": "research",
+      "status": "open",
+      "title": "Official reference sources differ in detail",
+      "detail": "Overlook is located in official directions but omitted from the pool map. Current recreation text adds pickleball to the tennis map. Use corroborated permanent geometry and record dated variants."
+    },
+    {
+      "id": "private-terraces",
+      "severity": "blocking",
+      "status": "open",
+      "title": "Private bungalow terraces and balcony-room fit need final reconstruction",
+      "detail": "Public deck proof does not establish the multi-level private bungalow configuration or every room/balcony connection."
+    },
+    {
+      "id": "visual-fidelity",
+      "severity": "blocking",
+      "status": "open",
+      "title": "Whole-block photo matching is not signed off",
+      "detail": "The installed massing and level proof is complete; facade crown details, shopfront proportions, exact pool tiers and remaining connection endpoints require further matching."
+    }
+  ],
+  "gates": [
+    {
+      "id": "survey",
+      "name": "Whole-block reference and component survey",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "massing",
+      "name": "Individual footprints, heights and silhouette",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "levels",
+      "name": "Exterior levels and playable circulation",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "facades",
+      "name": "Facade materials and complete street detail",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "integration",
+      "name": "Replacement ownership and bounded streaming",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "runtime",
+      "name": "Installed game routes and performance",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "visual",
+      "name": "Matching game/reference visual review",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "finalBuild": {
+    "date": "2026-10-05",
+    "scope": "Installed geometry proof snapshot; full block completion gates remain pending",
+    "files": {
+      "build/resort-blocks/cosmo/cosmo-exterior.glb": "a8f1537d4cf75a742d6b95251218adcab043beb5088fcb2090b74865d14cda04",
+      "build/resort-blocks/cosmo/cosmoL2-exterior.glb": "6ceb51f62ba5bbca4214a5f39bb99bca0287802fb1bb1a676f730be3f031bc7e",
+      "build/resort-blocks/cosmo/cosmoL14-interior.glb": "50c25c495b3ab0303458fac4178be3e5716bc3aa4434dbc9e4c11662d0a7492a",
+      "build/resort-blocks/cosmo/cosmoL4-exterior.glb": "d5a708c6e9eea445f0fa086017c23e5cca063459d1d5f6bcc78910c68a62ce64",
+      "build/resort-blocks/cosmo/cosmoL3-exterior.glb": "687b670c209fe314d9bc9dd2a72f955c0382aa0bf6005c782cdf71c21f190923",
+      "build/resort-blocks/cosmo/cosmoL4-interior.glb": "28a97d7d671d92ae25f4e597a6f7952989f9f42e5fa4bb48c6082e0b5fd8b853",
+      "build/resort-blocks/cosmo/cosmoL3-interior.glb": "6c718fd8d1425246931fd71873dd3b287d779f70fa81dcc015c0f73e5280c291",
+      "build/resort-blocks/cosmo/cosmoL14-exterior.glb": "6c37ba46a7bd05281814c09a53be85fd3afed23848a375844bc1ca88a68cb57d",
+      "build/resort-blocks/cosmo/cosmoL2-interior.glb": "50800b7c9b6c155bc5287bbefefc009528b62160038ceb0514ebee7f994c1909",
+      "build/resort-blocks/cosmo/cosmo-interior.glb": "a5a9b81b38dde3e2d1a8ce0a5485f9e34c0ca27df16639da98abd88f3d52a83b",
+      "build/resort-blocks/cosmo/cosmoL1-interior.glb": "425fa4385d6a2d315e5da4b768241a4c8b9657b12245609ef9a0d2e5ef414de7",
+      "build/resort-blocks/cosmo/cosmoL1-exterior.glb": "400ef10434cdc80f4de746162beb8f5ffea7005a8e2e92416f54285e0185041d",
+      "build/resort-blocks/cosmo/venues.json": "5a470e3ca6b5cc7b362d961f238ffc64f6099fd96768e463e5f27f867b871ecf",
+      "src/work/StripLandmarks.ts": "85845668470d0ccae6978a2cde9f19df393e20fd5bd839c2420fe14685b3a10f",
+      "src/work/GeographicCity.ts": "30a131f71721ffb9df0b0c243517592feb8716dbd0d1539858b0b942d228c970",
+      "src/work/ResortBlockReview.ts": "a4f2c4293f6491c66bedc55c6597dd108c080b63c35ba91a6abfd4cf816281ad",
+      "src/work/Game.ts": "8981286ed7b676a3b7e3469784ab8d17b1c09518acaf6366873c80e09796996e",
+      "src/work/hotels/towers.json": "9ed820a5a463ad36d161d3b9a8384ea2ec386f0582443a642587a0d7ae3e1c62",
+      "build/geographic-strip/city.glb": "89f72ffe277ea48d08448fc14666f5293f40b8211f610157d17c83a2d273b74c",
+      "build/geographic-strip/detailed.glb": "d54da7e2308da2af4812504767cc0ef648df3ef21e78bd2ad8ef6660e02905c8"
+    }
+  },
+  "performance": {
+    "baseline": null,
+    "after": "build/resort-blocks/cosmo/performance.json"
+  },
+  "nextAction": "Inspect the installed geometry proof; finish architectural matching and the unresolved east/west and private terrace connections before advancing to Bellagio.",
+  "implementationEvidence": [
+    "build/resort-blocks/cosmo/geometry-report.json",
+    "build/resort-blocks/cosmo/route-audit.json",
+    "build/resort-blocks/cosmo/walkthrough.json",
+    "build/resort-blocks/cosmo/proof.html"
+  ],
+  "arrivalCorrection20261006": {
+    "references": "tools/resort-blocks/references/2026-10-06-cosmo-bellagio",
+    "proof": "build/resort-blocks/bellagio/arrival-proof.html",
+    "status": "Implemented; visual refinement remains open",
+    "changes": [
+      "Tower enclosure connects 17.04 to 22.64 m",
+      "Opaque reflective podium glazing and mullion grid; portal openings preserved"
+    ],
+    "limitations": [
+      "Dimensions photo-fitted, not surveyed",
+      "Cosmopolitan folded/faceted lower facade still needs refinement",
+      "Bellagio sign ornament and banner artwork simplified; no Google image textures",
+      "Full manual driving loop not performed; collision envelope sampled automatically"
+    ]
+  },
+  "cityInventoryAudit": {
+    "date": "2026-10-13",
+    "status": "installed-reviewed-refinement-pending",
+    "scope": "Existing podium ownership audit; compare folded Boulevard facade before any exterior-only changes. Preserve public floors, portals and routes.",
+    "sources": [
+      {
+        "url": "https://earth.google.com/web/@36.1099,-115.1751,750a,450d,35y,285h,60t,0r",
+        "imageDate": "2022-11-09",
+        "inspected": true,
+        "note": "Aerial confirms two hotel towers, podium pool terraces, street bridge and low JockeyClub blocks."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.1097,-115.1737,646a,165d,35y,280h,65t,0r",
+        "imageDate": "2022-11-09",
+        "inspected": true,
+        "note": "Boulevard frontage has stepped-height, projecting curved/folded glazing bays, deep grey upper spandrel and dense palm frontage. Bay pitch/relief/elevations are photo estimates, existing physical floor datums retained."
+      }
+    ],
+    "beforeCaptureDirectory": "build/city-exteriors/cosmo-ownership",
+    "afterCaptureDirectory": "build/city-exteriors/cosmo-frontage",
+    "changes": [
+      "Replaced794front triangles with2062tri folded glazing within preserved collision envelope",
+      "Moved35881outdoor triangles and their collisions from L4/L14 interior assets to exterior assets; retained all positions and remaining interiors"
+    ],
+    "validation": [
+      "616frontage clearance samples pass",
+      "Main exterior collision unchanged",
+      "Four installed screenshots inspected"
+    ],
+    "performance": "docs/project-records/city-exteriors-2026-10-12/cosmo-frontage-performance.json",
+    "remaining": [
+      "Pool deck layout too sparse and not photographically faithful",
+      "West arrival screenshot has foreground obstruction; walkable arrival not visually validated",
+      "North/JockeyClub facade remains generic",
+      "Unexplained slow review frame times; no60fpsclaim",
+      "Existing full-block gates remain open"
+    ],
+    "assetHashes": {
+      "build/resort-blocks/cosmo/cosmo-exterior.glb": "5419cd1027675628f1a5c568f31bc8180a45923afd7588672802608b86b244c4",
+      "build/resort-blocks/cosmo/cosmoL4-exterior.glb": "26ed97b951978724fa32d99c0c51bcdc4a57c499e425f58722acda0eb0249138",
+      "build/resort-blocks/cosmo/cosmoL14-exterior.glb": "556117b0b868a7478c54834cebab27b9693f03721e8d0cc42c55a7655c996b5c",
+      "build/resort-blocks/cosmo/cosmoL4-interior.glb": "4396c13789cee97c687e1e0d50ae539705d5a79695237e45d756e196ced574aa",
+      "build/resort-blocks/cosmo/cosmoL14-interior.glb": "67055c49ad5d74356e95e1a165f56186e284dd18e9a56e51a59a95870e4d164e"
+    },
+    "sourceCompile": "PASS Python3.12 py_compile for all five changed source modules",
+    "verify": "FAILED60s Play detection;13fpsmenu3013bodies. Direct four-view game probe completed. Log:docs/project-records/city-exteriors-2026-10-12/verify-cosmo-frontage.log"
+  },
+  "status": "refinement-deferred",
+  "targetedBoundaryPasses": [
+    {
+      "date": "2026-10-21",
+      "scope": "Mapped lift/bridge doorway or rail only; see pedestrian-lifts.json. No full-resort revalidation.",
+      "asset": "build/resort-blocks/cosmo/cosmo-exterior.glb",
+      "sha256": "aeb08470b801ef06d9d58c208532b0515d5b0640f6099ee75a0a40006d9aa9ea"
+    }
+  ]
+}

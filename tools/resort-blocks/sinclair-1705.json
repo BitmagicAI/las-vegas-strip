@@ -1,0 +1,45 @@
+{
+  "id": "sinclair-1705",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/316303727"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15083,-115.15255&heading=90&pitch=0",
+      "pano": "W9QyMw37SbQzCRWhYaIXxQ",
+      "imageDate": "January2026",
+      "observed": "Sinclair white green canopy in front of gray/white shop with dark awnings and glass frontage; pylon lower panel retains7logo. Four dispensers/two or three islands uncertain. Separate frontage roof not mapped."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1510729,-115.1524304",
+      "pano": "DXsQzQAG3CengkVpi4pMvw",
+      "imageDate": "January2026",
+      "observed": "Closer northern view showsSinclairredletters,greenpumps,gray/whitefrontanddarkmetalawnings; bus shelter onsidewalk retainedseparate."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15095,-115.15215&zoom=20&basemap=satellite",
+      "observed": "Overhead confirms narrow long canopy parallel to shop, three longitudinal pump bays, store roof dark pitched end sections and flat central equipment well. Canopy dimensions fitted approximately24x5.5m; date unspecified."
+    }
+  ],
+  "remaining": [
+    "Canopy fitted from satellite approximately24x5.5m;4.1m clearheight estimated, not surveyed",
+    "Dinosaur sculpture/logo and exact sign lettering unfinished",
+    "No shop interior access; glazing backed by shell",
+    "Roadside bus shelter and mature trees not added",
+    "Property asphalt tie-in has inherited mapped pavement strips; exact grading unverified"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/sinclair-1705-final",
+    "support": "build/city-exteriors/sinclair-1705-collision.json",
+    "walk": "build/city-exteriors/sinclair-1705-walk.json",
+    "ownership": "build/city-exteriors/sinclair-1705-ownership-audit.json",
+    "visualReview": "Three installed views inspected. Narrowed storefront glazing and corrected canopy sign panel, then front/pump views reinspected.287 support samples and6walkinglegsPASS.10oldtri removed.3084 authored triangles15batches/0.32MB. No photoreal completion claim."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/sinclair1705-exterior.glb": "d56996697962869b204b581de46bf30d8b2f86fd3534c63658ccd7c4ce5f588d",
+      "build/strip-landmarks/sinclair1705-exterior-collision.json": "220eb7f4b3a8cbee21cb23b10c8d05d3d0d981161d96705e48911617cfa2382c"
+    }
+  }
+}

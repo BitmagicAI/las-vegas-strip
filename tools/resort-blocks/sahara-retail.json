@@ -1,0 +1,67 @@
+{
+  "id": "sahara-retail",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/160585309",
+    "way/276426488",
+    "way/276426487",
+    "way/276427173",
+    "way/276427175"
+  ],
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1444,-115.1577,670a,400d,35y,270h,55t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Bonanza L-plan and courtyard-parking forecourt, roofs and adjacency."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1444,-115.1578,635a,180d,35y,310h,65t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Pink/red Bonanza frontage, deep canopy on yellow slender posts, long white sign strip, circular sign at inner elbow."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.14425,-115.15615,638a,250d,35y,50h,65t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Walgreens rounded corner, broad upper billboard band, pale ground level and pink vertical corner pier; two-level parking behind."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1446,-115.1551,638a,235d,35y,265h,65t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Paradise Road shops: low brick arcade and raised northern end; McDonalds cream/charcoal horizontal restaurant with yellow arches."
+    }
+  ],
+  "dimensions": "Bonanza4.6m/Walgreens11.8m/garage6.6m/shops5.5m+north9m/McDonalds4.2m: visual estimates; mapped footprints retained.",
+  "remaining": [
+    "Exact advertising graphics and facade lettering styles",
+    "Bonanza sign proportions and curved lettering need finer comparison",
+    "Parking forecourt: existing road-derived long islands differ from reference open parking lot",
+    "Walgreens upper band currently plain dark without advertising creative",
+    "Public onward access; motel neighbors remain separate gray placeholders"
+  ],
+  "geometry": {
+    "triangles": 19385,
+    "batches": 46,
+    "optimizedMiB": 1.44
+  },
+  "tests": "41 roof support samples plus shop floor support PASS; typecheck PASS;1517 city collision cells valid; eight installed views inspected; full WebGPU verify PASS58fps startup3011bodies (not site benchmark)",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/saharaRetail-exterior.glb": "d4c5d9b90e6a29c1f0c94f29c5faaca3e6c3997d97af63c6800059e8d8ff80c7"
+    }
+  },
+  "viewsReviewed": [
+    "build/city-exteriors/sahara-retail-final/bonanza.png",
+    "build/city-exteriors/sahara-retail-final/bonanza-street.png",
+    "build/city-exteriors/sahara-retail-final/walgreens.png",
+    "build/city-exteriors/sahara-retail-final/paradise-retail.png"
+  ],
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-sahara-retail.log",
+  "canopyIntegration20261021": {
+    "change": "Restaurant south glazing enabled beneath new canopy; obsolete small yellow arches removed. Other retail geometry retained.",
+    "evidence": "tools/resort-blocks/mcdonalds-sahara-canopy.json"
+  }
+}

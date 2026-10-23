@@ -1,0 +1,35 @@
+{
+  "status": "research-pending-implementation",
+  "sources": [
+    {
+      "url": "https://blvdlasvegas.com/wp-content/uploads/2026/01/BLVD-Las-Vegas-Merchandise-Plan-January-2026.pdf",
+      "provider": "BLVD/Gindi",
+      "note": "All three pages rendered and visually inspected. Dimensioned retail frontages, rooftop plan and stairs/lifts. Leasing dates are plans, not evidence of tenant completion."
+    },
+    {
+      "url": "https://media.lasvegasweekly.com/img/photos/2026/08/25/26bovthisthat-BestMallBLVD.jpg",
+      "provider": "Las Vegas Weekly",
+      "note": "Built photo inspected. Orange panel parapet, dark frames, glazed Puma corner, projecting overlook, green wire/tree-form rooftop shades. Netflix facade says opening2027, contradicting leasing plan September2026."
+    },
+    {
+      "url": "https://www.bwaltd.com/project-detail/blvd",
+      "provider": "BWA architect",
+      "note": "Three stories,400000sf,two interior retail floors,110000sf roof terrace,700ft frontage. Main image inspected is conceptual rendering; do not copy generic tenants."
+    },
+    {
+      "url": "https://www.jll.com/en-us/client-stories/gindi-capital-and-jll-change-the-face-of-las-vegas-retail",
+      "provider": "JLL leasing",
+      "note": "Elevator/escalator/stair access,11doubleheight stores. Inline one/five images inspected are conceptual renderings, not built photos."
+    }
+  ],
+  "mappedIds": [
+    "way/1424222049",
+    "way/1505714402",
+    "way/1505714403",
+    "way/1424222051",
+    "way/1424222048",
+    "way/1505714401",
+    "way/1424222047"
+  ],
+  "planNotes": "North and south retail wings split by central hub. Public rooftop connects behind hub with stairs/escalators. North wing frontage258ft onL2; south50+184+62ft. StreetsideL1 north-to-south BootBarn,ABC,JD,H&M,available; south Adidas,Lululemon,Abercrombie,SunglassHut,LeVeil,Netflix,Puma. Do not assume planned stores built. Exact elevations estimated until corroborated."
+}

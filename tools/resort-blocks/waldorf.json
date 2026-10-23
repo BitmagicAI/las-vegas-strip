@@ -1,0 +1,76 @@
+{
+  "id": "waldorf",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://www.kpf.com/project/mandarin-oriental-las-vegas",
+      "review": "Architect confirms angular47-storey tower,23rd floor sky lobby,glass shadow boxes and painted aluminum"
+    },
+    {
+      "url": "https://front.global/project/mgm-mandarin-oriental-hotel/",
+      "review": "Facade engineer:40%visionglass20%spandrel40%aluminum; folded perforated garage cladding"
+    },
+    {
+      "url": "https://www.skyscrapercenter.com/building/waldorf-astoria-las-vegas/3099",
+      "review": "164.3m47floors; do not confuse with unbuilt200m proposal"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1062,-115.1743,780a,380d,35y,270h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected tower plan, glazing,sky-lobby band,parking podium and west pool deck"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1061,-115.1744,760a,400d,35y,90h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected tower plan, glazing,sky-lobby band,parking podium and west pool deck"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1061,-115.1744,760a,300d,35y,0h,0t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected tower plan, glazing,sky-lobby band,parking podium and west pool deck"
+    },
+    {
+      "url": "https://front.global/wp-content/uploads/2014/03/MGM_04_500x800.jpg",
+      "review": "Visually inspected angular silhouette and dark inset sky lobby"
+    },
+    {
+      "url": "https://e1.nmcdn.io/assets/kpf2024/wp-content/uploads/imported-files/1597_Hero-2160x1080.webp",
+      "review": "Visually inspected arrival court,glass canopies,steel storefronts and glazed/metal upper bays"
+    }
+  ],
+  "remaining": [
+    "Older lobby cladding and entrance details remain visually unfinished",
+    "Pool deck and garage height27m estimated; terrace landscaping, shade, furnishings and full public routes remain incomplete",
+    "Tower facade proportions based on KPF/Front photos, not a measured panel survey"
+  ],
+  "implementation": {
+    "triangles": 21109,
+    "batches": 31,
+    "heightM": 164.3,
+    "legacyReplacement": {
+      "removedRenderNodes": 5,
+      "removedTowerColliders": 8,
+      "otherNodesAndColliders": "exactly preserved"
+    },
+    "core": "Same guest templates and room count; rigid orientation/translation fit recorded in tools/highrises/waldorf-core-fit.json",
+    "compressedMiB": 0.35
+  },
+  "tests": {
+    "roofSupportSamples": 366,
+    "guestApproachSamples": 24,
+    "failures": 0,
+    "typecheck": "passed",
+    "scope": "New shell collision only; not full routes"
+  },
+  "visualReview": {
+    "views": [
+      "build/city-exteriors/waldorf-after/waldorf-east.png",
+      "build/city-exteriors/waldorf-after/waldorf-west.png",
+      "build/city-exteriors/waldorf-after/waldorf-entry.png",
+      "build/city-exteriors/waldorf-final/waldorf-north-arrival.png",
+      "build/city-exteriors/waldorf-corrected/waldorf-pool-corrected.png"
+    ],
+    "allInspected": true,
+    "corrections": "Removed old tower overlap, duplicate terrace roof, clipped pool and excessive lounger grid; roof no longer receives corrugated-metal detail. North camera was inside garage, not a verified arrival route."
+  }
+}

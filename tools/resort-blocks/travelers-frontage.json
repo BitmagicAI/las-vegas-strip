@@ -1,0 +1,29 @@
+{
+  "id": "travelers-frontage",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1530537,-115.1512024,620a,90y,280.06h,90t/data=!3m7!1e1!3m5!1s9r4gKK6qdAx0o9hbFGDKqw!2e0",
+      "imageDate": "January2026",
+      "observed": "Across-road east frontage inspected. White parapet, sage upper wall, repeated windows with maroon side panels, ground tattoo storefront on south and light fascia center. Temporary scaffold omitted. Nearby purple tower appears separate south building."
+    }
+  ],
+  "remaining": [
+    "Rear courtyard facade not yet inspected",
+    "Upper floor height estimated",
+    "Detailed tenant graphic artwork not reproduced"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/travelers-frontage-final",
+    "support": "build/city-exteriors/travelers-frontage-collision.json",
+    "walk": "build/city-exteriors/travelers-frontage-walk.json",
+    "ownership": "build/city-exteriors/travelers-frontage-ownership-audit.json",
+    "visualReview": "Three installed views inspected. Final front rechecked after replacing excessive ground glazing with covered pale panels. Rear window pattern inferred; no interior access claim. 341 support/headroom samples and six walking legs passed. Retry static 960x540 p95 about17.2ms; not a route performance benchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/travelersFrontage-exterior.glb": "a13992b41eadc4dbb031682019b2f2c2a04deaa9808ac5bba234b200628bd258",
+      "build/strip-landmarks/travelersFrontage-exterior-collision.json": "c0322bcc2e4edfce15313d670e8ec3a550c209103fb1ff4f6f56f197faecb3a7"
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "id": "casino-royale-garage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/313625620"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12042,-115.17076&zoom=20&basemap=satellite",
+      "review": "Visually inspected rectangular roof parking/deck divider, adjacent service alleys; imagery date unavailable"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12010,-115.17065&heading=345&pitch=8",
+      "review": "Google Street View December 2022 south end visually inspected: tan broad piers, open parking bays, metal guards, burgundy Best Western PLUS/Casino Royale sign"
+    }
+  ],
+  "estimates": [
+    "3.2m floor spacing and17.54m pier top inferred from mapped5levels/17mheight; six deck surfaces including roof",
+    "Ramp layout inferred; not visible in exterior reference; north/west elevations inferred"
+  ],
+  "ownership": {
+    "removed": 307,
+    "colliderTrianglesRemoved": 307,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in CasinoRoyaleGarage mapped footprint; all other triangles retained exactly."
+  },
+  "triangles": 58522,
+  "batches": 13,
+  "optimizedMiB": 1.2,
+  "before": "build/city-exteriors/casino-royale-garage-before",
+  "after": "build/city-exteriors/casino-royale-garage-final",
+  "viewsInspected": [
+    "casino-royale-garage-south",
+    "casino-royale-garage-west",
+    "casino-royale-garage-deck",
+    "casino-royale-garage-roof"
+  ],
+  "tests": [
+    "645floor/ramp support and2.58mclearance samples PASS",
+    "40 walkinglegs ground to roof and return PASS"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "casino-royale-garage-south",
+        "eye": [
+          194,
+          19,
+          -438
+        ],
+        "target": [
+          202,
+          9,
+          -491
+        ],
+        "p": [
+          200,
+          2,
+          -455
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.099999964237213
+      },
+      {
+        "name": "casino-royale-garage-west",
+        "eye": [
+          159,
+          24,
+          -489
+        ],
+        "target": [
+          202,
+          9,
+          -491
+        ],
+        "p": [
+          177,
+          2,
+          -489
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.400000035762787
+      },
+      {
+        "name": "casino-royale-garage-deck",
+        "eye": [
+          194,
+          5.4,
+          -485
+        ],
+        "target": [
+          212,
+          4.4,
+          -504
+        ],
+        "p": [
+          194,
+          5,
+          -485
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.80000001192093
+      },
+      {
+        "name": "casino-royale-garage-roof",
+        "eye": [
+          176,
+          39,
+          -454
+        ],
+        "target": [
+          201,
+          16,
+          -492
+        ],
+        "p": [
+          194,
+          18,
+          -485
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18
+      }
+    ],
+    "limitation": "Static views, not vehicle or streaming route performance"
+  },
+  "remaining": [
+    "No survey of internal circulation or exact elevations",
+    "Stair cores, garage signs and lighting not reproduced",
+    "Rail density and sign typography approximate",
+    "No actual vehicle route test; ramp end turns need driving review",
+    "Floor material and piers need calibrated reference comparison; not photorealistic completion"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/casinoRoyaleGarage-exterior.glb": "08f5d285fb434938b59eebd1c2015f053e1cec5cd82d2326ba7a2d66ebf1c5a1",
+      "build/strip-landmarks/casinoRoyaleGarage-exterior-collision.json": "73c5cb1103ed5afe82c7d84566e25da0d8b1efa6f2881886dd22269870577e09"
+    }
+  }
+}

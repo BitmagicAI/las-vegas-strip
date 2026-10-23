@@ -1,0 +1,45 @@
+{
+  "id": "tacos-mexico",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364846568"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/?api=1&query=Tacos+Mexico+1800+Las+Vegas+Boulevard",
+      "author": "Kevin Sealy",
+      "imageDate": "January2026 photo caption",
+      "observed": "Night facade photo inspected: cream stucco, projecting red/cream striped metal canopy, bright red roof-edge strip and TACOS MEXICO letters, paired rectangular framed windows with red perimeter lighting and low trimmed hedge. Google map address1800SLasVegasBlvd."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15002,-115.15350&heading=270&pitch=0",
+      "imageDate": "April2018",
+      "observed": "Drive-through parking pano shows narrow east end: three framed tall rectangular windows, red/white striped projecting hood with red letters above, white piers/red base trim, broad drive lane north and parking south. Older view corroborates structural form in2026photo; no current-condition assertion from2018 alone."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14992,-115.15369&heading=330&pitch=0",
+      "imageDate": "April2018",
+      "observed": "Southern parking-side full facade: long low wall with tall pilasters, continuous red/white striped hood, roof stepped up central section and eastern sign bay; windows concentrated at eastern dining end. Separate red roadside pylon at southwest."
+    }
+  ],
+  "remaining": [
+    "Exact logo crest, window menu graphics and lighting unfinished",
+    "Sign proportions and detailed awning corner folds need further refinement",
+    "Planting and precise parking/curb extent not yet matched",
+    "Approximate3.75mwallheight and4.2mcentralroof not surveyed",
+    "No interior access in exteriorpass"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/tacos-mexico-final",
+    "support": "build/city-exteriors/tacos-mexico-collision.json",
+    "walk": "build/city-exteriors/tacos-mexico-walk.json",
+    "ownership": "build/city-exteriors/tacos-mexico-ownership-audit.json",
+    "visualReview": "Three installed views inspected; wall strip spacing, serif sign lettering and pylon facing revised andfront/side reinspected.281support samples6walkinglegsPASS.2510authoredtri10batches. No photoreal completion claim."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/tacosMexico-exterior.glb": "77d20c3a1fe6a8ca0454fa821fe54c0a0869e51ffab6e041b7fa441a1fa662fd",
+      "build/strip-landmarks/tacosMexico-exterior-collision.json": "1aa4f135b68eed8f1379975fe3e607c679346bb736cf51c992328c41c7bc077a"
+    }
+  }
+}

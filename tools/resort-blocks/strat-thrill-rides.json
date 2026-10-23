@@ -1,0 +1,122 @@
+{
+  "id": "strat-thrill-rides",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/503324066"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14741,-115.15552&zoom=19&basemap=satellite",
+      "review": "Tower roof and ground-level base inspected; elevated structures displaced by oblique aerial parallax."
+    },
+    {
+      "url": "https://tickets.thestrat.com/BundleSelect.asp?BundleID=1&PricingTierID=1",
+      "review": "Official current ticket page lists Big Shot and X-Scream."
+    },
+    {
+      "url": "https://www.vegasvox.com/images/Thrill-Rides-Big-Shot-%26-X-Scream-05.webp",
+      "review": "Image inspected: central red pneumatic cylinder in white lattice; enclosed upper boarding area, circular deck and blue perimeter railing. Image date unknown."
+    },
+    {
+      "url": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/547000/547449-paradise-las-vegas.jpg?h=580&impolicy=fcrop&q=mediumHigh&w=1040",
+      "review": "Photo inspected: green eight-seat X-Scream carriage, twin black track, white pivot support and deck fencing. Date unknown."
+    }
+  ],
+  "remaining": [
+    "Ride placement and machinery dimensions estimated from undated photos; model is static and simplified, not a functioning or photorealistic ride",
+    "Existing tapered upper roof needs surveyed segmentation, glazing and access-door refinement; boarding/interior routes not verified",
+    "Insanity structure current physical status not established, so not modeled in this pass",
+    "Existing long rods/structures around pod visible in wide review require separate ownership investigation",
+    "No moving-route performance benchmark"
+  ],
+  "triangles": 44608,
+  "batches": 62,
+  "optimizedMiB": 1.26,
+  "viewsInspected": [
+    "build/city-exteriors/strat-thrill-rides-final/strat-rides-wide.png",
+    "build/city-exteriors/strat-thrill-rides-final/strat-rides-deck.png",
+    "build/city-exteriors/strat-thrill-rides-final/strat-rides-mast.png"
+  ],
+  "tests": [
+    "72 observation-ring support samples passed",
+    "Eight bidirectional observation-ring walking reports passed",
+    "Three installed views inspected; deck camera corrected to show track and pivot",
+    "73 erroneous ground-level placeholder visual/collider triangles removed"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "strat-rides-wide",
+        "eye": [
+          1505,
+          300,
+          -3435
+        ],
+        "target": [
+          1572,
+          280,
+          -3496
+        ],
+        "p": [
+          1543,
+          269,
+          -3490
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.19999998807907
+      },
+      {
+        "name": "strat-rides-deck",
+        "eye": [
+          1549,
+          271,
+          -3475
+        ],
+        "target": [
+          1546,
+          272,
+          -3486
+        ],
+        "p": [
+          1543,
+          269,
+          -3487
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.19999998807907
+      },
+      {
+        "name": "strat-rides-mast",
+        "eye": [
+          1587,
+          291,
+          -3474
+        ],
+        "target": [
+          1572,
+          287,
+          -3496
+        ],
+        "p": [
+          1572,
+          281.5,
+          -3488
+        ],
+        "p50": 16.899999976158142,
+        "p95": 19.30000001192093
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 73,
+    "colliderTrianglesRemoved": 73,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in stratExterior mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/stratExterior-exterior.glb": "617645e42be9acc47aac222c619116ded3d240b841e3a09fcc86bd84eeca475d",
+      "build/strip-landmarks/stratExterior-exterior-collision.json": "f6bd798413171463d3933035cc3038d5526042e3e67a76c905c14308171f5807"
+    }
+  }
+}

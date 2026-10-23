@@ -1,0 +1,51 @@
+{
+  "id": "bali-hai-clubhouse",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.golfzoo.com/images/ire/ff_vBLISWG4.png",
+      "author": "GolfZoo",
+      "observed": "Lakeside photo visually inspected: green hip roofs, stacked-stone terrace piers, ochre walls, dark frames, central tiered cupola.",
+      "date": null
+    },
+    {
+      "url": "https://www.google.com/maps/@36.083025,-115.175438,100m/data=!3m1!1e3",
+      "observed": "Satellite visually inspected: irregular roof network, northern arrival loop/canopy, southeast exposed service roof, shoreside terraces.",
+      "date": null
+    }
+  ],
+  "dimensions": "Mapped footprint retained. Terrace0.32m,eaves5.1m,roof ridge~12.4m,cupola18.6m are estimated, not surveyed. The cupola height is subject to reference-fit refinement.",
+  "remaining": [
+    "Landscape planting incomplete",
+    "Interior not authored",
+    "Unseen elevation details and exact heights require confirmation",
+    "Current restaurant branding uncertain",
+    "Whole golf-course water/planting not authored; surrounding existing raised mapped paths obstruct low shoreline views",
+    "Roof plan and lattice gable require closer reference matching",
+    "Terrace furniture and detailed planting pending",
+    "No claim of photorealistic completion"
+  ],
+  "implemented": [
+    "Mapped roof network with single continuous surface and dedicated packed shingle maps",
+    "Stone-base terrace columns, framed glazing and tiered cupola",
+    "Mapped arrival canopy and exposed service roof"
+  ],
+  "validation": {
+    "support": "369 samples pass",
+    "walking": "3 entrance legs both directions pass; full terrace route not verified",
+    "visual": "Three installed views inspected; multiple roof/material iterations; final aerial inspected",
+    "typecheck": "passed",
+    "performance": "Static960x540ultra~16.7ms p50; no route benchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/bali-hai-clubhouse-final/bali-aerial.png",
+    "build/city-exteriors/bali-hai-clubhouse-final/bali-arrival.png",
+    "build/city-exteriors/bali-hai-clubhouse-final/bali-terrace.png"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/baliHaiClubhouse-exterior.glb": "c148bf8722cdb90827c64737e43e622b3e56ea779439fdd8b25d644024078960",
+      "build/strip-landmarks/baliHaiClubhouse-exterior-collision.json": "9a4a337d36956b11b6eeb9b5a8ef7cd488c72af701581db56e5b736579a09235"
+    }
+  }
+}

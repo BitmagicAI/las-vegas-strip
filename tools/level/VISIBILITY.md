@@ -1,0 +1,11 @@
+# Building visibility
+
+Local level export uses existing indoor volumes and door records to create exterior, boundary-shell and interior batches. No new per-prop setup or occlusion bake. Re-export with Blender `--background --python tools/level/export_visibility.py` from the project directory. The canonical Blender scene and collision data stay unchanged; the local GLB and `src/work/vegas-visibility.json` are regenerated together. Incremental builders that use vegas.py's fast_export also inherit this batching.
+
+Runtime: `src/work/BuildingVisibility.ts`, called after camera movement. Outside, shells stay on and the nearest open entrance within 20 m enables its interior. Inside, only the current building is enabled. Outdoors remains enabled while any exterior door for that building is opening/open/closing, while the camera is outside, and in a windowed region. Short inter-resort passages allow the adjacent interior at an open door. Unknown door states fail conservatively to open. Physics, animation simulation and independent long-range shadow proxies remain active. NPC visuals, supply markers and pooled interior lights follow the visibility policy.
+
+Guest-room volumes tagged `hotel-room` take precedence over floor volumes; they keep outdoors, that room and corridor interiors visible. The present level has no guest-room volumes yet; this branch has a synthetic policy test. Eiffel observation is already treated as windowed. Broad room boundary shells remain visible to avoid gaps at volume edges.
+
+For a local baseline comparison append `visibility=all` to the game URL. Console `[BuildingVisibility]` messages identify active regions and batch counts. Untagged legacy GLBs fail open, retaining full visibility.
+
+Validation: 14 policy scenarios, TypeScript check, WebGPU boot verification and live Forum upper-walkway review. Export has 342 batches / 3,903,406 triangles; closed outdoor spawn selects 201 batches / 2,099,832 triangles. Closed Caesars interiors retain 58,296 triangles (43 batches). Counts precede view-frustum culling and exclude independent shadow proxies/dynamic actors, so they are not FPS predictions. Assets remain loaded in memory: this is render culling, not streaming.

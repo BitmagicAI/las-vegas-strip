@@ -1,0 +1,107 @@
+{
+  "id": "atomic-golf",
+  "name": "Atomic Golf",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://vertexeng.com/projects/atomic-golf/",
+      "provider": "Vertex construction monitoring",
+      "accessed": "2026-10-19",
+      "observed": "Four stories,99858sf,over100bays; range south/west,parking north; July2024CO."
+    },
+    {
+      "url": "https://vertexeng.com/app/uploads/2024/10/IMG_7673-scaled-1-1024x768.jpeg",
+      "provider": "Vertex",
+      "accessed": "2026-10-19",
+      "observed": "Inspected real entrance photo: white planar frontage, long black LED band, tall glass entrance, trumpet columns, shallow canopy, ball bollards; STRAT on left."
+    },
+    {
+      "url": "https://www.cbrightlighting.com/projects/Atomic_Golf_Facade.html",
+      "provider": "C Bright lighting",
+      "observed": "Inspected terrace photo: white trumpet columns, dark soffit, violet illumination."
+    },
+    {
+      "url": "https://vertexeng.com/app/uploads/2024/10/Atomic-Range-Golf-Range-1.png",
+      "provider": "Vertex construction monitoring",
+      "accessed": "2026-10-19",
+      "observed": "Visually inspected: pale range with colored circular targets, tall perimeter poles and fine netting."
+    },
+    {
+      "url": "https://vertexeng.com/app/uploads/2024/10/Atomic-Range-Golf-Bays-1.png",
+      "provider": "Vertex",
+      "accessed": "2026-10-19",
+      "observed": "Visually inspected covered hitting bays: exposed dark ceiling, structural columns, screens and seating."
+    },
+    {
+      "url": "https://atomicgolf.com/pages/gallery-play",
+      "provider": "Atomic Golf owner",
+      "accessed": "2026-10-19",
+      "observed": "Four floors confirmed. Linked golfer/range photo inspected; does not establish precise floor heights."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14897,-115.15482&zoom=20&basemap=satellite",
+      "provider": "Google Maps satellite",
+      "accessed": "2026-10-21",
+      "observed": "Southern roof joins main clubhouse; curved patterned forecourt and xeriscape beds. Mapped1553042969 is adjoining missing portion, not overlap."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14897,-115.15457&heading=270&pitch=10",
+      "provider": "Google Maps panorama Alex Kelly",
+      "imageDate": "October2025",
+      "accessed": "2026-10-21",
+      "observed": "South/east lower terrace: white flared columns, dark soffit, glass guard and ground glazing, planted forecourt and street fence. Two-level height estimated at9.24m; not measured."
+    }
+  ],
+  "remaining": [
+    "Entrance logo and LED graphics simplified; exact brand graphics, neon/lighting and material finesse remain. Rear/full boundary not matched to measured elevations.",
+    "No complete interior/vertical access/stairs; only exterior structural decks.",
+    "Furniture, ball sculpture, complete netting and fine facade detail pending.",
+    "Range/poles/floor height dimensions estimated, no photo-perfect claim.",
+    "Southern terrace installed from October2025 panorama; exact height not measured. Glass guards render too dark/opaque and terrace lacks furniture and vertical access.",
+    "South forecourt landscape, fence and patterned paving missing; main clubhouse facade/roof height relationship requires further reference correction."
+  ],
+  "dimensions": {
+    "footprint": "way/1213440758 mapped curved outline; existing6m height rejected by four-story primary evidence.",
+    "floorElevationsM": [
+      0.24,
+      4.74,
+      9.24,
+      13.74,
+      18.24
+    ],
+    "heightConfidence": "4.5m floor-to-floor estimate, not measured",
+    "range": "Estimated polygon bounded by mapped Chicago/Philadelphia street paths; poles38m estimated from photo. Exact boundary/net design remains to survey."
+  },
+  "tests": {
+    "collision": "236 support/headroom samples passed; no vertical access verification. build/city-exteriors/atomic-collision.json",
+    "ownership": "121 old building triangles removed,6 utility return triangles generated inside same footprint below3.5m; unrelated meshes exactly identical. build/city-exteriors/atomic-ownership-audit.json",
+    "typecheck": "Passed bitmagic check",
+    "verify": "Failed: settle cap15s, menu, noPlaydetected. Independent probe entered game and captured3views.",
+    "performance": "960x540ultra warm p50~16.6ms,p95~18ms;not route/whole-city benchmark."
+  },
+  "implementation": {
+    "triangles": 35092,
+    "batches": 24,
+    "optimizedMiB": 0.88,
+    "notes": "Four structural levels, open bays, estimated range, entrance canopy/columns, original atom sculptures, bollards, bay furnishings."
+  },
+  "evidence": [
+    "build/city-exteriors/atomic-final/atomic-entry.png",
+    "build/city-exteriors/atomic-final/atomic-bays.png",
+    "build/city-exteriors/atomic-final/atomic-aerial.png"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/atomicGolf-exterior.glb": "8111e82d334f29f9ebd9a0256710211d3c824b11050ce93ab9f24f620879f64d",
+      "build/strip-landmarks/atomicGolf-exterior-collision.json": "a84d3008556f421facc3ab162a152f0e84936e00ba2a72e5dc892727abcbe2e3",
+      "tools/strip-landmarks/atomic_golf.py": "c604392d00a7a7bdac211e3e53ee1e7847725b637f51f9a41109cb72bb4ca3a0"
+    }
+  },
+  "southPass": {
+    "mappedId": "way/1553042969",
+    "implementation": "38829 total triangles,30 batches,.96MiB optimized;22 old triangles removed",
+    "tests": "220 new support/headroom plus236 existing bay checks and6 perimeter walk legs pass",
+    "evidence": "build/city-exteriors/atomic-golf-south-final",
+    "review": "Three installed views inspected. No duplicate old box, terrace joins main clubhouse. Remaining opaque guard material, empty terrace and incomplete forecourt explicitly retained."
+  }
+}

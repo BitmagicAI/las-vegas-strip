@@ -1,0 +1,120 @@
+{
+  "id": "shake-shack-frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/115661794",
+    "way/115661804"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.10300,-115.17342&heading=270&pitch=5",
+      "imageDate": "April2025",
+      "review": "Dark ribbed metal lower front; glazed doors, outdoor counter/stools, broad sloped white metal canopy, raised terrace and access stair/rails."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.10305,-115.17368&zoom=21&basemap=satellite",
+      "review": "Narrow east canopy, terrace between restaurant and promenade, stepped hotel roof retained."
+    }
+  ],
+  "estimates": [
+    "Terrace rise1.15m and canopy5.45-6.05m estimated",
+    "North ramp routing inferred to preserve accessible circulation",
+    "Upper hotel envelope remains previous representation"
+  ],
+  "remaining": [
+    "Upper hotel mass and roof remain prior approximation, not photo-matched tower/restaurant junction",
+    "North return glazing bays inferred using front material vocabulary",
+    "Burger icon, landscaping and adjacent Toms frontage still incomplete",
+    "No interiors, neutral daylight or full driving benchmark"
+  ],
+  "triangles": 45911,
+  "batches": 39,
+  "metricScope": "Entire updated newYorkFrontage asset including retained streetwall/garage/park restaurants",
+  "optimizedMiB": 1.09,
+  "ownership": {
+    "removed": 11,
+    "colliderTrianglesRemoved": 11,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in ShakeShackCanopy mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "185 canopy/terrace support samples PASS",
+    "14 ramp/terrace/stair walking legs PASS with measured height change"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/shake-shack-final/shake-east.png",
+    "build/city-exteriors/shake-shack-final/shake-roof.png",
+    "build/city-exteriors/shake-shack-final/shake-north.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "shake-east",
+        "eye": [
+          -21,
+          4,
+          1445
+        ],
+        "target": [
+          -59,
+          3,
+          1444
+        ],
+        "p": [
+          -43,
+          2,
+          1445
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.799999952316284
+      },
+      {
+        "name": "shake-roof",
+        "eye": [
+          -12,
+          31,
+          1412
+        ],
+        "target": [
+          -61,
+          3,
+          1443
+        ],
+        "p": [
+          -43,
+          2,
+          1445
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "shake-north",
+        "eye": [
+          -70,
+          3,
+          1414
+        ],
+        "target": [
+          -60,
+          2,
+          1434
+        ],
+        "p": [
+          -70,
+          2,
+          1428
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.69999998807907
+      }
+    ],
+    "limitation": "Static views not driving benchmark"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/newYorkFrontage-exterior.glb": "f50fbf063573dc3aad77b6cbfbefd990200263cf722d5b867f54379e653cf32b",
+      "build/strip-landmarks/newYorkFrontage-exterior-collision.json": "982a68c6498096386fc4ce1ea99f895f3e2103a6750426ade0e71aeb287337c0"
+    }
+  }
+}

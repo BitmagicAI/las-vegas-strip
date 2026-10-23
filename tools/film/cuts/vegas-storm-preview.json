@@ -1,0 +1,10 @@
+{
+  "name": "vegas-afterlight-storm-preview",
+  "music": ".bitmagic/film/storm/storm-sound-design.wav",
+  "musicStart": 0,
+  "fadeIn": 0.6,
+  "fadeOut": 1.6,
+  "previewCrf": 18,
+  "clips": [{"take":"storm-hero-rt","in":0,"dur":5.8,"label":"Elara interceptor introduction"}, {"take": "storm-rt", "in": 5.8, "dur": 92.2, "label": "Elara to Bellagio storm chase"}, {"take": "storm-arrival-rt", "in": 0, "dur": 22, "label": "Bellagio entrance arrival"}],
+  "cards": [{"at": 0.7, "dur": 3.2, "style": "caption", "text": "VEGAS: AFTERLIGHT", "sub": "STORM RUN · ELARA TO BELLAGIO", "fade": 0.8}]
+}

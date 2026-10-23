@@ -1,0 +1,5801 @@
+{
+ "generated": "2026-10-22T23:18:40.854Z",
+ "totalBytes": 3174807280,
+ "count": 641,
+ "notLoaded": [
+  "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
+  "build/south-strip/liberty-scan.glb (no loader in src/)",
+  "public/foliage/grass-0.glb, grass-1.glb (loaded, skipped: lawn rebuild in progress)",
+  "every */before/*, *-before/*, uthana/inputs copy"
+ ],
+ "remoteWorldRows": [
+  {
+   "id": "level-vegas",
+   "name": "vegas",
+   "url": "https://bitmagic.ai/worlds/v3/ZWLJZE4P1VA6/1790534811542-vegas.glb",
+   "size": 195734748,
+   "localSource": null
+  }
+ ],
+ "files": [
+  {
+   "rel": "build/geographic-strip/city.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts",
+   "when": "boot (localhost)",
+   "bytes": 347222776,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/detailed.glb",
+   "cls": "level",
+   "loader": "src/work/Game.ts -> engine MeshLevel",
+   "when": "boot (localhost)",
+   "bytes": 356066796,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/linq-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 35519776,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/linq-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 4826592,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/vanderpump-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 8458012,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/vanderpump-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 8788280,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/fashion-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 7680236,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/fashion-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 8187012,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/venetian-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 101904592,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/venetian-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 46493312,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/venetianCasino-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2188,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/venetianCasino-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 70534448,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/grandCanal-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2184,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/grandCanal-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 63028684,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/arena-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3962148,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/arena-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 13609284,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/park-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 10684220,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/park-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 14821320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/palazzo-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 6995736,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/palazzo-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 37084076,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/ti-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 35431568,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/ti-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 8482488,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/harrahs-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 10668824,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/harrahs-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 8741532,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/polo-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 66272872,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/polo-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 2335724,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mgmGrand-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 9212516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/luxorExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3507596,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/hgvExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1020052,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/skyExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 757968,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/allureExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1530644,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/turnberryTowersExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 6991140,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/turnberryPlaceExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 25337656,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/westgateExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1281072,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/springhillExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1156236,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/trumpExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 598092,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mirageExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1331628,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/elaraExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1127948,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/grandChateauExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 767752,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/signatureExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 13000104,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/panoramaExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1162944,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/martinExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1910964,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/rioExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3745224,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/palmsExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1698300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/waldorfExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1294960,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/hgvFlamingoExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1311820,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/virginExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1115248,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/goldCoastExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 8133952,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/palaceStation-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 5275696,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/usBankCenter-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 648412,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/embassyConvention-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1513948,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/allegiantStadium-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 7667584,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/westin-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 764224,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/platinum-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3322316,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wyndhamDesertBlue-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3218908,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/skyGarage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 242088,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wellsFargoTower-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3200596,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/parkTowers-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 9326664,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/residenceInnHughes-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3339236,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/grandDesert-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 18358496,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/oyoExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1804240,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/lvccWest-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 7266636,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/sphereGarage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 341996,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/venetianExpo-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1034604,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/caesarsForum-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1677600,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/venetianEmployeeGarage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 557516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/peppermillRetail-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2355440,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/lvccLegacy-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 6461220,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mgmConference-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1818252,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/casinoRoyale-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1793988,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/northStripMotels-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 10227868,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mandalayParking-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 675628,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/luxorParking-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1687764,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/rioConference-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 435872,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/tiParking-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1056328,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/parkMgmParking-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 862400,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/parisParking-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3549924,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/ariaSite-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 69834300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/ariaParking-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 484216,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/guardianAngel-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 4081876,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/conventionFrontage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 13037460,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/circusExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 11289804,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/saharaExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3231732,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/fontainebleauExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2004716,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/resortsWorldExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1671232,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/caesarsExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 20807020,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/forumShops-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 6028248,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/blvdRetail-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 6510988,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/excaliburFrontage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3390076,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/athleticsStadium-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 6193892,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/linqParking-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 421576,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/flamingoExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 9710128,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mandalayExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 21385688,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/showcase-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 10276788,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/citycenter63-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 6031600,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/planetHollywood-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 25090188,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/pinballHall-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 957536,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/ihopNorth-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 945264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/oasisMotel-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1787652,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/diamondInn-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 5122780,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/littleChurchWest-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 30015872,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/maverickTerminal-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 920236,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/southShell-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 679136,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/akitaPlaza-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 4048416,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/desertOasis-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1980168,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/laughingJackalope-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 440316,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/nirvanaAncillary-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1304408,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/nirvanaHotel-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1064836,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/psychicSessions-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1688424,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/southArco-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2466844,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/southCentralPolice-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2379704,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/fireStation11-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1891684,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/baliHaiClubhouse-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2893408,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/signatureAviation-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 766916,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/terriblesHeadquarters-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2778516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/pristineHangar-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 283824,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/harleyDealership-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1205732,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/bostonPizza-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1076304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/travelersFrontage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 337340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/todMotel-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 515360,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mainStreet1511-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1718004,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/carnitas1601-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 808564,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/bajamar-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 617872,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/luvIt-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 897584,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/oakeyArco-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2170688,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/oakeyShops-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1770832,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/peppermintHippo-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 5993884,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/market1700-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2408396,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/sinclair1705-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 872448,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/chapelFlowers-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 32416472,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/tacosMexico-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 978568,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/dennys1822-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 625304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/main1700-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 29361168,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/curaleaf1736-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2235912,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/whiteCrossAnnex-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3094740,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/oakeyService-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 704388,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/oakeyOffices-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2684188,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/santaPaulaOffice-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3151036,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/courtyard525-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 6651004,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/santaPaulaCourtyard-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2629792,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/stLouisSquareFrontage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2276776,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/alboDinosFrontage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1361148,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/casinoCenterCourtyard-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2499832,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/stLouisOffice515-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1200476,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/atomicGolf-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3286856,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/cityMarketLiquor-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 764304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/carpetsGalore-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2229500,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/rexfordCourtyard1701-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1224028,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/crystalsRoof-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 158056,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/phFrontageCanopies-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 531320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/horseshoeArrival-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 981188,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/casinoRoyaleRetail-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2207512,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/casinoRoyaleGarage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 4552416,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/southCommercial558-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 390136,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/southCommercialAnnex-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 110344,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/havenCourtyards-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2437320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/baliHaiService-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 481704,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/rexfordEllenCourtyard-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2692140,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/casinoCenter1520-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 30572724,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wyoming17Frontage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 432020,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/perceptionMuseum-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1087356,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/festivalGroundsService-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 195392,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/bonitaTerrace-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 32385164,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/carnavalCourt-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1394968,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wynnSouthCanopy-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 936032,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/russellService-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 177564,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/siegelParadise-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 33902860,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/santaPaula1807-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 30476672,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/santaPaulaNorth-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2378740,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/bellagioArcadePiers-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 115344,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/rexfordPlaceWest-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 31344344,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/rexfordPlaceEast-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 31405380,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/housselsWest-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 32465500,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/weldonWest-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 31096424,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/weldonEast-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 31271936,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/santaPaulaWestCourts-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 31002404,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/jackMainWyoming-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 899892,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/casinoCenter1512-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 87580,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/paradiseSmallFrontage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2861140,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 379812,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/saharaRetail-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 4264996,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/stratPoolDeck-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1904384,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/stratExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 4216364,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/circusNorthCanopy-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 80836,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/encoreSuitesCanopy-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 472308,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wynnPlazaCanopy-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 55824,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wynnEncoreExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3086420,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wynnLakefront-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 774440,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wynnMarquee-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1909884,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mirageMarquee-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2150184,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/forumCoolingTowers-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 264828,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/chayoTerraces-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 304464,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/luxorObelisk-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 2572408,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/akitaRearCanopy-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 289332,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/parisRooftopBar-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 573920,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/nynyIrishKiosk-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 1364464,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/newYorkFrontage-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3445360,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/nynyArrival-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 930232,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/bellagioCurvedRoofs-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 219724,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/desertOasisService-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 90900,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/cosmoPedestrianLift-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 169324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/crystalsPedestrianLift-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 165672,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/parkPedestrianLift-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 107496,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/harmonEastLift-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 503912,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/flamingoGarden-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 30023844,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/cvsHorseshoe-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 972096,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/horseshoeExterior-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot (localhost)",
+   "bytes": 3662808,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmo-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 14267672,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmo-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 1864,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL1-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 1860,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL1-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 3987912,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL2-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 1860,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL2-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 3584076,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL3-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 1860,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL3-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 2896180,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL4-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 3192640,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL4-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 1868,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL14-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 4044508,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/cosmo/cosmoL14-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 1868,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioBlock-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 138665600,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioBlock-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 231240,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioLobby-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 231240,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioLobby-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 3601852,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioGarden-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 231244,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioGarden-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 1758048,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioConservatory-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 231256,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioConservatory-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 805944,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioPromenade-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 231248,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/bellagio/bellagioPromenade-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 4294384,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/paris/parisBlock-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 104265984,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/paris/parisBlock-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 231260,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/paris/parisDining-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 231264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/paris/parisDining-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 2152152,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/paris/parisPool-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "boot (localhost)",
+   "bytes": 231260,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/resort-blocks/paris/parisPool-interior.glb",
+   "cls": "level",
+   "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
+   "when": "streamed on approach",
+   "bytes": 231260,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/highrises/exteriors.glb",
+   "cls": "level",
+   "loader": "src/work/HighriseCity.ts",
+   "when": "boot (localhost)",
+   "bytes": 50895684,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/south-strip/coaster.glb",
+   "cls": "level",
+   "loader": "src/work/BigAppleCoaster.ts",
+   "when": "boot (localhost)",
+   "bytes": 15709508,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/south-strip/train.glb",
+   "cls": "code-driven",
+   "loader": "src/work/BigAppleCoaster.ts",
+   "when": "boot (localhost)",
+   "bytes": 59744,
+   "preset": "code-driven",
+   "overrides": []
+  },
+  {
+   "rel": "build/sphere/exterior.glb",
+   "cls": "level",
+   "loader": "src/work/SphereVenue.ts",
+   "when": "boot (localhost)",
+   "bytes": 1847460,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/sphere/interior.glb",
+   "cls": "level",
+   "loader": "src/work/SphereVenue.ts",
+   "when": "streamed on approach",
+   "bytes": 13494232,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/vehicles/afterlight-jeep.glb",
+   "cls": "code-driven",
+   "loader": "src/work/SanctuaryJeep.ts",
+   "when": "boot",
+   "bytes": 3810536,
+   "preset": "code-driven",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/allure-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3401500,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/allure-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150268,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/allure-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/allure-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1488980,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/allure-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34312,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/allure-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/allure-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1684048,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/allure-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192812,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/aria-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 283612,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/aria-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 281860,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/aria-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1660484,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/aria-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/aria-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 634516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/aria-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1729208,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/aria-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 326148,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 113508,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 4708,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-corridor-end.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 171012,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 5624780,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 137812,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 18524616,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 7513376,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-spa-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3663228,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-spa-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-spa-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148532,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-spa-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1387284,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-spa-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34348,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-spa-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484424,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-spa-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1616652,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-spa-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192868,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/bellagio-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 56092,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/caesars-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 286852,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/caesars-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 285096,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/caesars-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1774280,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/caesars-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 90336,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/caesars-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 669912,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/caesars-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1841864,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/caesars-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 329396,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 5384464,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6668488,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148536,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1387688,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484436,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1725956,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/circus-circus-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192876,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/cosmopolitan-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 258752,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/cosmopolitan-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 256984,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/cosmopolitan-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1696816,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/cosmopolitan-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 90376,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/cosmopolitan-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 629168,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/cosmopolitan-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1824188,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/cosmopolitan-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 301320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/elara-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6390976,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/elara-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150260,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/elara-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148508,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/elara-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1391524,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/elara-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/elara-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484336,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/elara-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1781560,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/elara-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192800,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/encore-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6670768,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/encore-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150272,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/encore-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/encore-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1370856,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/encore-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34312,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/encore-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484356,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/encore-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1650664,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/encore-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192816,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/flamingo-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 220644,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/flamingo-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 218884,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/flamingo-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1667604,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/flamingo-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/flamingo-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 583300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/flamingo-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1691572,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/flamingo-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 263196,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/fontainebleau-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6950184,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/fontainebleau-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/fontainebleau-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148536,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/fontainebleau-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1488256,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/fontainebleau-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/fontainebleau-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484436,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/fontainebleau-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1690592,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/fontainebleau-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192876,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/grand-chateau-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6628688,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/grand-chateau-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/grand-chateau-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148536,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/grand-chateau-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1387000,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/grand-chateau-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/grand-chateau-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484436,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/grand-chateau-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1841396,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/grand-chateau-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192876,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3475444,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4891048,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150276,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1357096,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34316,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484364,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1616508,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/harrahs-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192824,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/hgv-boulevard-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 5349256,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/hgv-boulevard-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/hgv-boulevard-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148536,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/hgv-boulevard-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1388116,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/hgv-boulevard-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/hgv-boulevard-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484436,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/hgv-boulevard-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1651508,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/hgv-boulevard-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192876,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 260112,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 258352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1714724,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34328,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-east-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6657644,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-east-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150308,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-east-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148540,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-east-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1386636,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-east-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34360,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-east-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484448,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-east-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1616712,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-east-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192884,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 628172,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3300324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/horseshoe-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 302668,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/linq-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 2016808,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/linq-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 219288,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/linq-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 217536,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/linq-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1681952,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/linq-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/linq-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 576756,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/linq-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1976776,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/linq-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 261824,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4896632,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4896632,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150268,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1392180,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484344,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1708700,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/luxor-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192808,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mandalay-bay-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6338084,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mandalay-bay-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mandalay-bay-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148536,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mandalay-bay-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1370784,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mandalay-bay-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34348,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mandalay-bay-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484428,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mandalay-bay-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1650644,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mandalay-bay-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192872,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/martin-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3537672,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/martin-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150268,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/martin-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/martin-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1401232,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/martin-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34312,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/martin-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/martin-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1684048,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/martin-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192812,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mgm-grand-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6440264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mgm-grand-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150284,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mgm-grand-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148524,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mgm-grand-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1356544,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mgm-grand-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34328,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mgm-grand-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484388,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mgm-grand-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1784844,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mgm-grand-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192840,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mirage-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6492344,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mirage-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150272,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mirage-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mirage-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1357972,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mirage-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34312,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mirage-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484356,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mirage-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1616484,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/mirage-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192816,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/new-york-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4455276,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/new-york-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150280,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/new-york-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/new-york-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1395080,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/new-york-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/new-york-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484376,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/new-york-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 2079880,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/new-york-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192832,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palazzo-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6222056,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palazzo-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150276,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palazzo-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palazzo-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1377732,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palazzo-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 82968,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palazzo-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484364,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palazzo-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1595028,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palazzo-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192824,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palms-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6416460,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palms-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palms-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148512,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palms-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1390412,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palms-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palms-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palms-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1792612,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/palms-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192804,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4498380,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4492784,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150280,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1489308,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484376,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1684104,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/panorama-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192832,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/paris-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 264628,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/paris-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 262876,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/paris-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1778964,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/paris-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 90320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/paris-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 634384,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/paris-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1739656,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/paris-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 307168,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/park-mgm-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6335912,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/park-mgm-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150280,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/park-mgm-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/park-mgm-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1404068,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/park-mgm-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/park-mgm-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484376,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/park-mgm-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1734856,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/park-mgm-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192832,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/planet-hollywood-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 230756,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/planet-hollywood-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 228980,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/planet-hollywood-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1676904,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/planet-hollywood-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 90408,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/planet-hollywood-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 579608,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/planet-hollywood-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1962108,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/planet-hollywood-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 273340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/polo-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4184596,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/polo-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 285408,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/polo-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 283656,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/polo-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1754236,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/polo-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/polo-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 652228,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/polo-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1988588,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/polo-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 327944,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/resorts-world-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 5294092,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/resorts-world-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/resorts-world-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148536,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/resorts-world-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1434756,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/resorts-world-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/resorts-world-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484436,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/resorts-world-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1792844,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/resorts-world-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192876,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 2857088,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6274452,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150260,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148512,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1489064,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34292,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1553352,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/rio-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192792,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sahara-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3439608,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sahara-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150272,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sahara-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sahara-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1405336,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sahara-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34312,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sahara-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484356,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sahara-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1799672,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sahara-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192816,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3897824,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3845188,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-3-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3842268,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150284,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148524,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1390860,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34328,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484388,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1602080,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/signature-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192840,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sky-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 3569756,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sky-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150256,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sky-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148508,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sky-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1394276,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sky-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34292,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sky-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484316,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sky-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1683956,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/sky-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192788,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/springhill-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 2527972,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/springhill-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150288,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/springhill-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148528,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/springhill-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1387232,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/springhill-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34336,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/springhill-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484400,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/springhill-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1553552,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/springhill-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192848,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/strat-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4879924,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/strat-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/strat-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148512,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/strat-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1397952,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/strat-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/strat-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/strat-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1792612,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/strat-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192804,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/treasure-island-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6414824,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/treasure-island-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/treasure-island-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148548,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/treasure-island-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1387460,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/treasure-island-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34364,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/treasure-island-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484464,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/treasure-island-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1631588,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/treasure-island-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192900,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/trump-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4970892,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/trump-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/trump-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148512,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/trump-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1392068,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/trump-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/trump-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/trump-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1665004,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/trump-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192804,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4501408,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4500128,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-3-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4500128,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-4-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4503808,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150316,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148544,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1391640,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34364,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484460,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1684308,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-place-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192896,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 2612184,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 2608104,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148544,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1392240,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34372,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484472,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1684340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/turnberry-towers-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192904,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vanderpump-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 2597448,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vanderpump-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 264100,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vanderpump-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 262340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vanderpump-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1695272,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vanderpump-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34332,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vanderpump-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 645516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vanderpump-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 2349988,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vanderpump-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 306660,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vdara-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 278804,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vdara-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 277052,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vdara-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1621104,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vdara-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vdara-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 606060,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vdara-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1780720,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/vdara-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 321344,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/veer-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 113508,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/veer-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 4708,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/veer-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 119760,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/veer-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 17716,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/veer-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 153076,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/veer-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 56092,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6208600,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-2-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6202612,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150280,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1369328,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34320,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484376,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1595052,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/venetian-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192832,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/w-las-vegas-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 4925248,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/w-las-vegas-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150292,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/w-las-vegas-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148528,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/w-las-vegas-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1406324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/w-las-vegas-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/w-las-vegas-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484408,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/w-las-vegas-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1843012,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/w-las-vegas-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192856,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/waldorf-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 286468,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/waldorf-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 284712,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/waldorf-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1728136,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/waldorf-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34316,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/waldorf-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 676384,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/waldorf-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1904476,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/waldorf-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 329012,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/westgate-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6389300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/westgate-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150280,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/westgate-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148520,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/westgate-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1387260,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/westgate-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/westgate-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484376,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/westgate-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1729664,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/westgate-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192832,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/wynn-1-lobby.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 6650108,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/wynn-cap.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 150264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/wynn-closure.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 148512,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/wynn-corridor.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1370424,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/wynn-door.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 34300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/wynn-entry.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 484332,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/wynn-room.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel visit)",
+   "bytes": 1695220,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/hotels/wynn-stair.glb",
+   "cls": "level",
+   "loader": "src/work/hotels/HotelTemplates.ts",
+   "when": "streamed (hotel shell)",
+   "bytes": 192800,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "public/foliage/tree-0.glb",
+   "cls": "foliage",
+   "loader": "src/work/ResortFoliage.ts",
+   "when": "boot (localhost, Bellagio block)",
+   "bytes": 28284196,
+   "preset": "hero-prop",
+   "overrides": [
+    "--orm=webp-lossless:512"
+   ]
+  },
+  {
+   "rel": "public/foliage/tree-1.glb",
+   "cls": "foliage",
+   "loader": "src/work/ResortFoliage.ts",
+   "when": "boot (localhost, Bellagio block)",
+   "bytes": 7758056,
+   "preset": "hero-prop",
+   "overrides": [
+    "--orm=webp-lossless:512"
+   ]
+  },
+  {
+   "rel": "public/foliage/tree-2.glb",
+   "cls": "foliage",
+   "loader": "src/work/ResortFoliage.ts",
+   "when": "boot (localhost, Bellagio block)",
+   "bytes": 655360,
+   "preset": "hero-prop",
+   "overrides": [
+    "--orm=webp-lossless:512"
+   ]
+  },
+  {
+   "rel": "build/arrival-reconstruction/door-bronze.glb",
+   "cls": "level",
+   "loader": "world.json asset arrival-door-bronze (engine DungeonDoor via worldProfileData.doors)",
+   "when": "boot",
+   "worldRow": "arrival-door-bronze",
+   "bytes": 69576,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/arrival-reconstruction/door-silver.glb",
+   "cls": "level",
+   "loader": "world.json asset arrival-door-silver (engine DungeonDoor via worldProfileData.doors)",
+   "when": "boot",
+   "worldRow": "arrival-door-silver",
+   "bytes": 68424,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/arrival-reconstruction/door-black.glb",
+   "cls": "level",
+   "loader": "world.json asset arrival-door-black (engine DungeonDoor via worldProfileData.doors)",
+   "when": "boot",
+   "worldRow": "arrival-door-black",
+   "bytes": 69568,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/arrival-reconstruction/door-sage.glb",
+   "cls": "level",
+   "loader": "world.json asset arrival-door-sage (engine DungeonDoor via worldProfileData.doors)",
+   "when": "boot",
+   "worldRow": "arrival-door-sage",
+   "bytes": 69544,
+   "preset": "level",
+   "overrides": []
+  }
+ ]
+}

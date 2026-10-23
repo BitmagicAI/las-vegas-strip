@@ -1,0 +1,32 @@
+{
+  "id": "bajamar",
+  "status": "refinement-deferred",
+  "mappedId": "way/364845146",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1518895,-115.1518925,620a,75y,187.49h,90t/data=!3m7!1e1!3m5!1s5c7O0ysPnR-Sax9aK1Nozg!2e0",
+      "imageDate": "August2024",
+      "observed": "North long and west short glazed facades, blue kick panels, curved white awning, teal roof edging, rooftop boxsign and turquoise roadside pylon."
+    }
+  ],
+  "remaining": [
+    "Heightestimated3.7m",
+    "Finefishlogographicmissing",
+    "No interior layout yet",
+    "Forecourt preserves mapped road/ground; parking surfacing is not yet reference matched",
+    "Rear details inferred; sign logo and glazing posters missing"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/bajamar-final",
+    "support": "build/city-exteriors/bajamar-collision.json",
+    "walk": "build/city-exteriors/bajamar-walk.json",
+    "ownership": "build/city-exteriors/bajamar-ownership-audit.json",
+    "visualReview": "Three installed views inspected. Sign turned toward Strip and glazing material corrected; final front and entry inspected again.112support/headroom samples,6walklegs PASS.10oldmappedtriangles removed.1074authoredtri12batches,.26MBoptimized. Static960x540aerialp95 18ms,notroutebenchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/bajamar-exterior.glb": "1b0c8655e123f158515b23896f3e8431a689c8d893870a5c8b2ee539b9122d82",
+      "build/strip-landmarks/bajamar-exterior-collision.json": "bd433c9ed5602b23dd3b072bd38da3c61d44cc06874039061f9a3e7772eddf24"
+    }
+  }
+}

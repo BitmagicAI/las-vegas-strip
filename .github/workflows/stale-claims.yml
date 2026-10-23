@@ -1,0 +1,40 @@
+# Claimed tasks with no activity (comments, commits on the linked pull request) get a reminder after 14 days and are
+# released after 21, so an abandoned claim never blocks a task (tasks/README.md).
+name: stale-claims
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+permissions:
+  issues: write
+  pull-requests: read
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const REMIND_DAYS = 14, RELEASE_DAYS = 21, MARK = '<!-- stale-claim-reminder -->';
+            const { owner, repo } = context.repo;
+            const day = 86400000, now = Date.now();
+            const claimed = await github.paginate(github.rest.issues.listForRepo, { owner, repo, state: 'open', labels: 'claimed', per_page: 100 });
+            for (const issue of claimed) {
+              // the latest sign of life: a comment by a person (the /claim itself counts) or an update to any pull
+              // request that mentions the issue; the bot's own reminders do not count
+              const comments = await github.paginate(github.rest.issues.listComments, { owner, repo, issue_number: issue.number, per_page: 100 });
+              const human = comments.filter((c) => c.user.type !== 'Bot');
+              let active = Math.max(Date.parse(issue.created_at), ...human.map((c) => Date.parse(c.created_at)));
+              const prs = await github.rest.search.issuesAndPullRequests({ q: `repo:${owner}/${repo} is:pr is:open "#${issue.number}" in:body` });
+              for (const pr of prs.data.items) active = Math.max(active, Date.parse(pr.updated_at));
+              const idle = (now - active) / day;
+              const reminded = comments.some((c) => c.body.includes(MARK) && Date.parse(c.created_at) > active);
+              const who = issue.assignees.map((a) => '@' + a.login).join(', ');
+              if (idle >= RELEASE_DAYS) {
+                if (issue.assignees.length) await github.rest.issues.removeAssignees({ owner, repo, issue_number: issue.number, assignees: issue.assignees.map((a) => a.login) });
+                await github.rest.issues.removeLabel({ owner, repo, issue_number: issue.number, name: 'claimed' }).catch(() => {});
+                await github.rest.issues.createComment({ owner, repo, issue_number: issue.number, body: `Released after ${Math.floor(idle)} days without activity. ${who}, comment \`/claim\` again if you are still on it.` });
+              } else if (idle >= REMIND_DAYS && !reminded) {
+                await github.rest.issues.createComment({ owner, repo, issue_number: issue.number, body: `${MARK}\n${who} no activity here for ${Math.floor(idle)} days. Still working on it? Push to your draft pull request or reply here; otherwise \`/unclaim\`. The claim is released automatically after ${RELEASE_DAYS} idle days.` });
+              }
+            }

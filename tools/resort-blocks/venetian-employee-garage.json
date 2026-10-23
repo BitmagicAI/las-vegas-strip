@@ -1,0 +1,48 @@
+{
+  "id": "venetian-employee-garage",
+  "status": "refinement-deferred",
+  "mappedId": "way/111367849",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1197,-115.1672,640a,320d,35y,0h,65t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1197,-115.1672,640a,380d,35y,90h,65t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1197,-115.1672,640a,380d,35y,270h,65t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    }
+  ],
+  "dimensions": "42m estimated from approximately14 deck intervals in Earth views; mapped5m rejected. Footprint retained.",
+  "remaining": [
+    "Exact deck count and height",
+    "Private ramp connections and fine roof details"
+  ],
+  "geometry": {
+    "triangles": 10003,
+    "batches": 7,
+    "optimizedMiB": 0.14
+  },
+  "installedReview": {
+    "views": [
+      "build/city-exteriors/venetian-employee-garage-after/garage-south.png",
+      "build/city-exteriors/venetian-employee-garage-after/garage-west.png",
+      "build/city-exteriors/venetian-employee-garage-after/garage-east.png"
+    ],
+    "inspected": true,
+    "findings": "Stepped ends and south screen read correctly; no obvious duplicate city shell. Deck interiors are brightly lit at sunset compared with dark reference openings. Private ramps and exact elevations remain unverified."
+  },
+  "tests": "240 deck supports pass; typecheck passes; city collision1517cells/24neighborhood passes; full verify running",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/venetianEmployeeGarage-exterior.glb": "c5843c49254b018bfc17e01b1324d0ad9b1653c62ad3cc665cf6f8e54969a9fd"
+    }
+  },
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-venetian-employee-garage.log"
+}

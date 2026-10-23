@@ -1,0 +1,495 @@
+{
+  "id": "mandalay-bay",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.0921,-115.1740,730a,800d,35y,270h,55t,0r",
+      "observed": "Gold Y-plan main tower and W tower with pale vertical piers; green roofed arrival, massive white convention roof with solar arrays. Imagery spans 2022\u20132024."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0883,-115.1768,700a,750d,35y,270h,55t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observed": "Convention roof has broad contiguous solar fields with service aisles, stepped halls and east concave glazed arrival. The Strip-side southeast hall has mostly opaque light walls, not an arcade."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0881,-115.1754,650a,560d,35y,270h,72t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observed": "East parking/arrival, courtyard facade with stacked rectangular windows and pale piers, green-gray entry canopies; tall light southeast hall wall."
+    },
+    {
+      "url": "https://mandalaybay.mgmresorts.com/en/amenities/sustainable-hotels-las-vegas.html",
+      "observed": "Official text describes 26-acre8.3MW array. Not a dimensional roof plan."
+    }
+  ],
+  "components": [
+    {
+      "id": "main-tower",
+      "status": "pending"
+    },
+    {
+      "id": "w-tower",
+      "status": "pending"
+    },
+    {
+      "id": "arrival",
+      "status": "pending"
+    },
+    {
+      "id": "four-seasons",
+      "status": "pending"
+    },
+    {
+      "id": "convention",
+      "status": "pending"
+    },
+    {
+      "id": "arena",
+      "status": "pending"
+    },
+    {
+      "id": "pool-court",
+      "status": "pending"
+    },
+    {
+      "id": "service-frontages",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Tower crown and signage remain approximate; exact measurements unavailable.",
+    "Side/service frontage and garage detailing remain incomplete.",
+    "Convention hall30m survey-derivedheight is retained; stepped roof elevations need survey refinement.",
+    "Closed service/anchor facades do not create new public interiors.",
+    "Fine solar seams removed after installed aliasing review; fields are approximate, not individual panel survey.",
+    "Pool court now has mapped water, palms and furnishings; planting density, detailed pavilion materials and access graph remain incomplete."
+  ],
+  "evidence": [
+    "build/city-exteriors/mandalay-final",
+    "build/city-exteriors/mandalay-collision.json",
+    "build/city-exteriors/mgm-preservation.json",
+    "build/city-exteriors/mandalay-podium-before",
+    "build/city-exteriors/mandalay-podium-after",
+    "build/city-exteriors/mandalay-roof-final",
+    "docs/project-records/city-exteriors-2026-10-12/verify-mandalay-podium.log",
+    "build/city-exteriors/mandalay-pools-first",
+    "build/city-exteriors/mandalay-pool-collision.json",
+    "build/city-exteriors/mandalay-deck-collision.json",
+    "build/city-exteriors/mandalay-cabana-ownership-audit.json",
+    "build/city-exteriors/mandalay-pool-path-cut.json",
+    "build/city-exteriors/mandalay-canopies-2026-10-19"
+  ],
+  "geometry": {
+    "triangles": 18228,
+    "batches": 35,
+    "collisionSamples": 123,
+    "blockedSamples": 0,
+    "compressedMiB": 0.5
+  },
+  "currentPass": "Pool/pavilion pass installed and visually reviewed; outstanding full-site details retained.",
+  "performance": {
+    "viewport": "1280x720",
+    "medianMs": 16.7,
+    "p95RangeMs": [
+      17.3,
+      19.1
+    ],
+    "scope": "Five fixed camera samples,180frames/view; not a driving benchmark."
+  },
+  "tests": [
+    "123 arrival capsule clearance samples PASS",
+    "CLI verify PASS:playing56fps,3011bodies",
+    "Fixed final roof p50 16.6ms,p95 17.9ms; not route performance"
+  ],
+  "remainingPass20261014": {
+    "status": "installed-visually-reviewed",
+    "sources": [
+      {
+        "url": "https://api.openstreetmap.org/api/0.6/map?bbox=-115.1778,36.0890,-115.1739,36.0923",
+        "local": "build/city-exteriors/mandalay-pools-osm.xml",
+        "observed": "14 pool/spa outlines including lazy-river multipolygon; public mapped contours, not survey-certified."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.0907,-115.1758,650a,350d,35y,0h,0t,0r",
+        "imageryDate": "2022-11-09",
+        "observed": "Wave pool crescent, lazy-river island, irregular east/west lagoons, mint roof eaves, pale deck and dense loungers. Visually inspected."
+      },
+      {
+        "url": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/bltd297e03f0042e0b7/mandalay-bay-hotel-property-map-casino.pdf",
+        "observed": "Beach-level labels corroborate pool identities and separate upper Moorea/Wet Deck areas; schematic, not dimensions."
+      }
+    ],
+    "geometry": {
+      "palms": 102,
+      "pools": 14,
+      "waterAreaM2": 6788.2,
+      "deckAreaM2": 12290.0,
+      "loungers": 382,
+      "pavilions": [
+        "way/399554455",
+        "way/364846554",
+        "way/364846552",
+        "way/399554420",
+        "way/118346756",
+        "way/399554453",
+        "way/399554456",
+        "way/399554454",
+        "way/128025409",
+        "way/399554425",
+        "way/399554412",
+        "way/364846555",
+        "way/398972297",
+        "way/364846556",
+        "way/364846557",
+        "way/398972293",
+        "way/399554457"
+      ],
+      "cabanas": [
+        "way/399554413",
+        "way/399554415",
+        "way/399554416",
+        "way/399554417",
+        "way/399554419",
+        "way/399554421",
+        "way/399554422",
+        "way/399554423",
+        "way/399554426",
+        "way/399554427",
+        "way/399554430",
+        "way/399554431",
+        "way/399554433",
+        "way/399554434",
+        "way/399554435",
+        "way/399554436",
+        "way/399554437",
+        "way/399554438",
+        "way/399554439",
+        "way/399554440",
+        "way/399554441",
+        "way/399554442",
+        "way/399554446",
+        "way/399554447",
+        "way/399554448",
+        "way/399554450",
+        "way/399554451",
+        "way/399554452"
+      ],
+      "heightEstimates": "Ground deck0.64m; rooftop pools5.64m. Pool depth0.4m is collision compromise; not survey-certified.",
+      "triangles": 270685,
+      "batches": 240,
+      "optimizedMiB": 6.44
+    },
+    "uncertainty": [
+      "Mapped contours retained; furniture is arranged procedurally along edges, not individual placement survey.",
+      "Ground .64m and upper5.64m decks estimated.",
+      "Pool depth .4m is a collision compromise.",
+      "Full planting and public access graph still need implementation/review."
+    ],
+    "firstVisualReview": {
+      "views": "build/city-exteriors/mandalay-pools-first",
+      "observed": "All5seen. Pool outlines present but obsolete elevated bridge kits crossed entire private court. Cut87138visual56322collisionfaces, nonbridgegroupsidentical. Lazy-river camera blocked by convention wall; relocated. FourSeasons courtyard visible. Follow-up visual review required."
+    },
+    "tests": [
+      "123 arrival clearance samples PASS",
+      "386 pool floor/headroom samples PASS",
+      "1213 deck support/2.1m standing headroom samples PASS after regenerating samples to exclude the two newly authored buildings",
+      "Geometry272340tri255batches0nonfinite values",
+      "Initial city owner removal:19IDs0changesoutsideMandalay, allnonbuildingmeshesidentical",
+      "Cabana owner removal:30IDs0changesoutsideMandalay, allnonbuildingmeshesidentical",
+      "Privatecourtbridgecut87138visual56322collisionfaces; allnonbridgemeshesidentical",
+      "DO_NOT_TRACK=1 bitmagic check PASS; exact creator prompt recorded.",
+      "2026-10-19 local WebGPU verify PASS: playing59fps2960bodies; startup sample, not route benchmark."
+    ],
+    "ownership": [
+      "19mainpodium/smallbuildingowners removed; allnonbuildingidentical0outsideMandalaychanges",
+      "28roofcabanas +2servicepavilions now authored; secondcityrebuildrunning"
+    ],
+    "secondVisualReview": {
+      "views": "build/city-exteriors/mandalay-pools-final",
+      "observed": "All5seen. Interior bridge-kit clutter removed, palms and pools visible. Elevated private perimeter walkways still remain; extending mask from14m to45m around main pool convex envelope. Lazy-river closeup actually showed wave pool edge; camera corrected. No final signoff yet.",
+      "performance": [
+        {
+          "name": "pool-court-aerial",
+          "eye": [
+            -80,
+            180,
+            3020
+          ],
+          "target": [
+            -245,
+            1,
+            2870
+          ],
+          "p": [
+            -150,
+            2,
+            2920
+          ],
+          "p50": 18.59999990463257,
+          "p95": 20.100000143051147
+        },
+        {
+          "name": "pool-court-north",
+          "eye": [
+            -320,
+            60,
+            2710
+          ],
+          "target": [
+            -250,
+            1,
+            2850
+          ],
+          "p": [
+            -310,
+            2,
+            2770
+          ],
+          "p50": 16.699999809265137,
+          "p95": 18.300000190734863
+        },
+        {
+          "name": "wave-pool",
+          "eye": [
+            -210,
+            11,
+            2980
+          ],
+          "target": [
+            -270,
+            1,
+            2920
+          ],
+          "p": [
+            -208,
+            2,
+            2960
+          ],
+          "p50": 20.90000009536743,
+          "p95": 22.100000143051147
+        },
+        {
+          "name": "lazy-river",
+          "eye": [
+            -310,
+            12,
+            2910
+          ],
+          "target": [
+            -315,
+            1,
+            2945
+          ],
+          "p": [
+            -310,
+            2,
+            2910
+          ],
+          "p50": 16.600000143051147,
+          "p95": 18.399999856948853
+        },
+        {
+          "name": "four-seasons",
+          "eye": [
+            -70,
+            25,
+            2760
+          ],
+          "target": [
+            -151,
+            5,
+            2810
+          ],
+          "p": [
+            -65,
+            2,
+            2760
+          ],
+          "p50": 16.699999809265137,
+          "p95": 18.40000009536743
+        }
+      ]
+    },
+    "perimeterCut": {
+      "visualFacesClipped": 43495,
+      "collisionFacesClipped": 27954,
+      "scope": "Only bridge-* material triangles inside Mandalay private pool court convex envelope; other surfaces untouched.",
+      "bounds": [
+        -385.2250933800156,
+        2750.3307695496346,
+        -140.394431059035,
+        2992.612324408115
+      ],
+      "rationale": "Installed second review showed the obsolete raised ring outside the initial14m pool envelope. Earth depicts these private pool perimeter paths at grade; broadened only bridge-kit clipping to45m pool envelope. All roads/nonbridge surfaces retained."
+    },
+    "finalVisualReview": {
+      "date": "2026-10-19",
+      "views": "build/city-exteriors/mandalay-canopies-2026-10-19",
+      "observed": "All eight installed views visually inspected. Five roof-only structures are now open-sided canopies; Four Seasons close view confirms removed enclosure. Obsolete pool bridge paths absent. Pools/lazy river, palms, cabanas and courtyard visible. Landscape is sparse compared to reference and pale furniture/materials remain simplified; not photorealistic signoff.",
+      "tests": "123 arrival,386 pool,1213 deck support/headroom checks pass after canopy correction."
+    },
+    "performance": [
+      {
+        "name": "pool-court-aerial",
+        "eye": [
+          -80,
+          180,
+          3020
+        ],
+        "target": [
+          -245,
+          1,
+          2870
+        ],
+        "p": [
+          -150,
+          2,
+          2920
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.200000017881393
+      },
+      {
+        "name": "pool-court-north",
+        "eye": [
+          -320,
+          60,
+          2710
+        ],
+        "target": [
+          -250,
+          1,
+          2850
+        ],
+        "p": [
+          -310,
+          2,
+          2770
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.400000005960464
+      },
+      {
+        "name": "wave-pool",
+        "eye": [
+          -210,
+          11,
+          2980
+        ],
+        "target": [
+          -270,
+          1,
+          2920
+        ],
+        "p": [
+          -208,
+          2,
+          2960
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.19999998807907
+      },
+      {
+        "name": "lazy-river",
+        "eye": [
+          -300,
+          9,
+          2850
+        ],
+        "target": [
+          -329,
+          1,
+          2878
+        ],
+        "p": [
+          -301,
+          2,
+          2850
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.900000005960464
+      },
+      {
+        "name": "north-arrival",
+        "eye": [
+          30,
+          26,
+          2615
+        ],
+        "target": [
+          -95,
+          4,
+          2635
+        ],
+        "p": [
+          -25,
+          2,
+          2635
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.80000001192093
+      },
+      {
+        "name": "south-lagoon",
+        "eye": [
+          -55,
+          40,
+          3020
+        ],
+        "target": [
+          -155,
+          2,
+          2955
+        ],
+        "p": [
+          -75,
+          2,
+          2990
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.30000001192093
+      },
+      {
+        "name": "pool-cabanas",
+        "eye": [
+          -210,
+          8,
+          2800
+        ],
+        "target": [
+          -249,
+          2,
+          2792
+        ],
+        "p": [
+          -220,
+          2,
+          2800
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.5
+      },
+      {
+        "name": "four-seasons",
+        "eye": [
+          -70,
+          25,
+          2760
+        ],
+        "target": [
+          -151,
+          5,
+          2810
+        ],
+        "p": [
+          -65,
+          2,
+          2760
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18
+      }
+    ]
+  }
+}

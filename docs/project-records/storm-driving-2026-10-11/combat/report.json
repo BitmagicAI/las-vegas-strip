@@ -1,0 +1,286 @@
+{
+  "driving": {
+    "mode": "vehicle",
+    "ammo": {
+      "current": 100,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 0,
+    "audio": 0,
+    "kills": 0,
+    "rags": 0,
+    "ground": 0,
+    "position": {
+      "x": 420.9978332519531,
+      "y": 0.8776483535766602,
+      "z": 879
+    },
+    "locked": true,
+    "canFire": false,
+    "targets": 0
+  },
+  "onFoot": {
+    "mode": "first-person",
+    "ammo": {
+      "current": 100,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 0,
+    "audio": 0,
+    "kills": 0,
+    "rags": 1,
+    "ground": 3,
+    "position": {
+      "x": 421.0392150878906,
+      "y": 0.1549829530715942,
+      "z": 879.0948486328125
+    },
+    "locked": true,
+    "canFire": true,
+    "targets": 59,
+    "bullets": 0
+  },
+  "cover": {
+    "mode": "first-person",
+    "ammo": {
+      "current": 94,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 6,
+    "audio": 6,
+    "kills": 0,
+    "rags": 1,
+    "ground": 3,
+    "position": {
+      "x": 421.0392150878906,
+      "y": 0.1549829530715942,
+      "z": 879.0948486328125
+    },
+    "locked": true,
+    "canFire": true,
+    "targets": 59,
+    "bullets": 0
+  },
+  "fired": {
+    "mode": "first-person",
+    "ammo": {
+      "current": 73,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 27,
+    "audio": 27,
+    "kills": 1,
+    "rags": 2,
+    "ground": 7,
+    "position": {
+      "x": 421.0392150878906,
+      "y": 0.1549829530715942,
+      "z": 879.0948486328125
+    },
+    "locked": true,
+    "canFire": true,
+    "targets": 58,
+    "bullets": 6
+  },
+  "target": {
+    "state": 2,
+    "limbs": 11,
+    "joints": 10,
+    "articulation": 2.987953693654176,
+    "p": [
+      433.90324961979405,
+      -0.5136342143736446,
+      878.4879641929242
+    ]
+  },
+  "third": {
+    "mode": "third-person",
+    "ammo": {
+      "current": 73,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 27,
+    "audio": 27,
+    "kills": 1,
+    "rags": 2,
+    "ground": 7,
+    "position": {
+      "x": 422.3181457519531,
+      "y": 0.15461793422698972,
+      "z": 879.0933837890625
+    },
+    "locked": true,
+    "canFire": true,
+    "equipped": true,
+    "gun": "Weapon_storm_machine_gun",
+    "targets": 58,
+    "bullets": 0
+  },
+  "grip": {
+    "left": {
+      "distance": 0.030374552693405953,
+      "hand": [
+        422.5820564998104,
+        1.151690474400129,
+        879.1165638465808
+      ],
+      "target": [
+        422.5924755279431,
+        1.1283507002720659,
+        879.1329745823274
+      ]
+    },
+    "right": {
+      "distance": 6.138149317654117e-9,
+      "hand": [
+        422.4755017749465,
+        1.0345852194853746,
+        879.2876155079156
+      ],
+      "target": [
+        422.47550177997965,
+        1.0345852220075882,
+        879.2876155103615
+      ]
+    }
+  },
+  "thirdFired": {
+    "mode": "third-person",
+    "ammo": {
+      "current": 64,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 36,
+    "audio": 36,
+    "kills": 1,
+    "rags": 2,
+    "ground": 7,
+    "position": {
+      "x": 422.3181457519531,
+      "y": 0.15461793422698972,
+      "z": 879.0933837890625
+    },
+    "locked": true,
+    "canFire": true,
+    "equipped": true,
+    "gun": "Weapon_storm_machine_gun",
+    "targets": 58,
+    "bullets": 8
+  },
+  "reloaded": {
+    "mode": "third-person",
+    "ammo": {
+      "current": 100,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 36,
+    "audio": 36,
+    "kills": 1,
+    "rags": 2,
+    "ground": 7,
+    "position": {
+      "x": 422.3181457519531,
+      "y": 0.15461793422698972,
+      "z": 879.0933837890625
+    },
+    "locked": true,
+    "canFire": true,
+    "equipped": true,
+    "gun": "Weapon_storm_machine_gun",
+    "targets": 58,
+    "bullets": 0
+  },
+  "reentered": {
+    "mode": "vehicle",
+    "ammo": {
+      "current": 100,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 36,
+    "audio": 36,
+    "kills": 1,
+    "rags": 2,
+    "ground": 7,
+    "position": {
+      "x": 418.4146423339844,
+      "y": 0.877646803855896,
+      "z": 879.0026245117188
+    },
+    "locked": true,
+    "canFire": false,
+    "targets": 0
+  },
+  "exitAgain": {
+    "mode": "first-person",
+    "ammo": {
+      "current": 100,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 36,
+    "audio": 36,
+    "kills": 1,
+    "rags": 2,
+    "ground": 7,
+    "position": {
+      "x": 417.50634765625,
+      "y": 0.1549897480010986,
+      "z": 878.9994506835938
+    },
+    "locked": true,
+    "canFire": true,
+    "targets": 58,
+    "bullets": 0
+  },
+  "sustained": {
+    "shots": 113,
+    "maxBullets": 11,
+    "empty": true,
+    "reloading": true,
+    "meanFps": 60.05051147357897,
+    "p95Ms": 20.299999952316284
+  },
+  "final": {
+    "mode": "first-person",
+    "ammo": {
+      "current": 86,
+      "max": 100,
+      "isReloading": false
+    },
+    "shots": 150,
+    "audio": 150,
+    "kills": 1,
+    "rags": 2,
+    "ground": 7,
+    "position": {
+      "x": 417.50634765625,
+      "y": 0.1549897480010986,
+      "z": 878.9994506835938
+    },
+    "locked": true,
+    "canFire": true,
+    "targets": 58,
+    "bullets": 0
+  },
+  "stress": {
+    "kills": 29,
+    "active": 24,
+    "peak": 24,
+    "limbs": 264
+  },
+  "reset": {
+    "arsenal": null,
+    "attack": null,
+    "liveTargets": 0,
+    "liveLimbs": 0
+  },
+  "errors": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "turnberry-towers",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1410,-115.1530,750a,550d,35y,0h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09 to 2024-03-05",
+      "establishes": "Paired curved white towers, blue glazing, balcony bands, shared rear podium, pools and tennis courts."
+    }
+  ],
+  "remaining": [
+    "Planting, pool furniture, tennis fencing, arrival canopies and detailed entrance finishes remain unimplemented.",
+    "Front facade white piers and exact crown subdivision still need closer matched reference comparison.",
+    "No full public-route traversal; main tower colliders and guest rooms preserved.",
+    "Corrected pool courts inspected inside site; no overlap with Karen Avenue or central arrival drive."
+  ],
+  "geometry": {
+    "triangles": 106889,
+    "batches": 17,
+    "optimizedMiB": 1.74
+  },
+  "estimates": {
+    "towerHeightM": 138,
+    "floorPitchM": 3,
+    "garageHeightM": 18,
+    "leisureCourtCenters": [
+      [
+        1741,
+        -2734
+      ],
+      [
+        1854,
+        -2734
+      ]
+    ],
+    "note": "Mapped tower plans retained. Garage elevation, crowns and leisure footprints inferred from Earth images; not survey dimensions."
+  },
+  "evidence": [
+    "build/city-exteriors/turnberry-before",
+    "build/city-exteriors/turnberry-after",
+    "build/city-exteriors/turnberry-final",
+    "build/city-exteriors/turnberry-courts"
+  ],
+  "tests": {
+    "typecheck": "passed",
+    "threeViews": "All front/rear/aerial views and corrected court view inspected."
+  }
+}

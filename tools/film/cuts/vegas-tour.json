@@ -1,0 +1,315 @@
+{
+ "name": "vegas-afterlight-tour",
+ "music": ".bitmagic/film/music/bed-v1.mp3",
+ "musicStart": 0,
+ "fadeIn": 1.2,
+ "fadeOut": 2.5,
+ "clips": [
+  {
+   "take": "aerial-open",
+   "in": 1.0,
+   "dur": 12.9089,
+   "label": "aerial opener"
+  },
+  {
+   "take": "drive-north",
+   "in": 0.3,
+   "dur": 5.6178,
+   "x": 0.8,
+   "label": "drive-north @0.3"
+  },
+  {
+   "take": "drive-north",
+   "in": 8.0,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "drive-north @8.0"
+  },
+  {
+   "take": "drive-north",
+   "in": 14.5,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drive-north @14.5"
+  },
+  {
+   "take": "drive-north",
+   "in": 31.0,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "drive-north @31.0"
+  },
+  {
+   "take": "drive-north",
+   "in": 56.3,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "drive-north @56.3"
+  },
+  {
+   "take": "drive-south",
+   "in": 15.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drive-south @15.0"
+  },
+  {
+   "take": "drive-south",
+   "in": 49.5,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "drive-south @49.5"
+  },
+  {
+   "take": "caesars-approach",
+   "in": 1.0,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "caesars-approach @1.0"
+  },
+  {
+   "take": "casino-caesars",
+   "in": 1.0,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "casino-caesars @1.0"
+  },
+  {
+   "take": "lobby-venetian",
+   "in": 7.0,
+   "dur": 7.2267,
+   "x": 0,
+   "label": "lobby-venetian @7.0"
+  },
+  {
+   "take": "casino-flamingo",
+   "in": 2.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "casino-flamingo @2.0"
+  },
+  {
+   "take": "lobby-bellagio",
+   "in": 1.0,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "lobby-bellagio @1.0"
+  },
+  {
+   "take": "casino-planet-hollywood",
+   "in": 2.0,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "casino-planet-hollywood @2.0"
+  },
+  {
+   "take": "lobby-palazzo",
+   "in": 1.0,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "lobby-palazzo @1.0"
+  },
+  {
+   "take": "kick-caesars",
+   "in": 3.4,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "kick-caesars @3.4"
+  },
+  {
+   "take": "kick-cosmo",
+   "in": 1.3,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "kick-cosmo @1.3"
+  },
+  {
+   "take": "kick-cosmo",
+   "in": 9.0,
+   "dur": 4.0134,
+   "x": 0.4,
+   "label": "kick-cosmo @9.0"
+  },
+  {
+   "take": "kick-bellagio",
+   "in": 1.6,
+   "dur": 12.0446,
+   "x": 0,
+   "label": "kick-bellagio @1.6"
+  },
+  {
+   "take": "eiffel-deck",
+   "in": 1.0,
+   "dur": 7.8267,
+   "x": 0.6,
+   "label": "eiffel-deck @1.0"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 1.5,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "coaster-ride @1.5"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 70.0,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "coaster-ride @70.0"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 89.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "coaster-ride @89.0"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 112.0,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "coaster-ride @112.0"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 118.5,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "coaster-ride @118.5"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 132.5,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "coaster-ride @132.5"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 144.0,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "coaster-ride @144.0"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 152.5,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "coaster-ride @152.5"
+  },
+  {
+   "take": "aerial-close",
+   "in": 0.5,
+   "dur": 14.441,
+   "x": 1.0,
+   "label": "aerial closer"
+  }
+ ],
+ "cards": [
+  {
+   "at": 1.4,
+   "dur": 8.0,
+   "style": "title",
+   "text": "VEGAS: AFTERLIGHT",
+   "sub": "THE STRIP AT THE LAST SUNSET",
+   "fade": 1.2
+  },
+  {
+   "at": 13.259,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE LAS VEGAS STRIP",
+   "sub": "NORTHBOUND"
+  },
+  {
+   "at": 36.144,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "CITYCENTER",
+   "sub": "SOUTHBOUND"
+  },
+  {
+   "at": 44.575,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "CAESARS PALACE"
+  },
+  {
+   "at": 51.801,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE VENETIAN"
+  },
+  {
+   "at": 59.028,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "FLAMINGO"
+  },
+  {
+   "at": 62.642,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "BELLAGIO"
+  },
+  {
+   "at": 67.459,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "PLANET HOLLYWOOD"
+  },
+  {
+   "at": 69.868,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE PALAZZO"
+  },
+  {
+   "at": 74.686,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "CAESARS PALACE",
+   "sub": "LEVEL 21"
+  },
+  {
+   "at": 79.504,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE COSMOPOLITAN",
+   "sub": "LEVEL 41"
+  },
+  {
+   "at": 87.935,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "BELLAGIO",
+   "sub": "LEVEL 21"
+  },
+  {
+   "at": 99.98,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "EIFFEL TOWER",
+   "sub": "140 M"
+  },
+  {
+   "at": 107.206,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE BIG APPLE COASTER",
+   "sub": "NEW YORK-NEW YORK"
+  },
+  {
+   "at": "end",
+   "dur": 5.5,
+   "style": "end",
+   "text": "VEGAS: AFTERLIGHT",
+   "sub": "THE STRIP IS YOURS",
+   "fade": 1.0,
+   "endPad": 0.6
+  }
+ ]
+}

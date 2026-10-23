@@ -1,0 +1,20 @@
+{
+  "status": "roof-pass-exporting",
+  "source": "https://www.caesars.com/content/dam/las/Property/Maps/harrahs-las-vegas-map.pdf",
+  "local": "harrahs-property-map.pdf",
+  "observed": "Official-hosted PDF rendered and inspected. Footer dated11/25/2019. Useful for west entry, south Carnaval Court connection, east porte-cochere, second-floor garage/monorail connections; outdated tenant labels must not be treated as current. Shows theater/corporate conference uses in podium.",
+  "uncertainties": [
+    "2019map must be crosschecked with current exterior imagery and owner sources.",
+    "Existing mapped podium may already carry detailed facade; inspect installed baseline first."
+  ],
+  "earthViews": [
+    "https://earth.google.com/web/@36.1194,-115.1712,650a,500d,35y,270h,45t,0r",
+    "https://earth.google.com/web/@36.1194,-115.1718,640a,360d,35y,90h,45t,0r"
+  ],
+  "imageryDate": "2022-11-09",
+  "earthObserved": "Pale stepped podium roof, dark rear roof areas, clustered HVAC and perimeter service enclosures. Existing street-facing purple-striped fascia retained. Exact equipment locations and roof elevations uncertain; keep authored roof levels.",
+  "ownerPhoto": "https://s202.q4cdn.com/508919455/files/images/fact-sheets-images/HarrahsLasVegas/Harrah-s-Exterior.jpeg",
+  "ownerPhotoObserved": "Viewed enlarged official photo: Donny billboard in larger left arch, Ramsays Kitchen panel in right arch, dark clerestory, ornate double globes, landscaped street edge. New typography simplified, not exact poster artwork.",
+  "baseline": "build/city-exteriors/nyny-corrected-harrahs-baseline",
+  "baselineLimitations": "Aerial valid. East and north ground cameras occluded by neighboring architecture; revised higher cameras in probe-harrahs-podium.js. West strip partly occluded by Caesars foreground, corrected closer eastward camera."
+}

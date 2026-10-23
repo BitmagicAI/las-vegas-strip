@@ -1,0 +1,116 @@
+{
+ "format": "bitmagic-mesh-level",
+ "version": 1,
+ "units": "meters",
+ "colliders": [
+  {
+   "name": "podium side cladding",
+   "shape": "box",
+   "position": [
+    -3.83,
+    7.2,
+    0.0
+   ],
+   "size": [
+    0.24,
+    14.4,
+    10.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "podium side cladding 1",
+   "shape": "box",
+   "position": [
+    3.83,
+    7.2,
+    0.0
+   ],
+   "size": [
+    0.24,
+    14.4,
+    10.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "podium rear",
+   "shape": "box",
+   "position": [
+    0.0,
+    7.2,
+    5.23
+   ],
+   "size": [
+    7.42,
+    14.4,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "entry pier",
+   "shape": "box",
+   "position": [
+    -2.305,
+    1.325,
+    -5.23
+   ],
+   "size": [
+    2.79,
+    2.65,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "entry pier 4",
+   "shape": "box",
+   "position": [
+    2.305,
+    1.325,
+    -5.23
+   ],
+   "size": [
+    2.79,
+    2.65,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "entry headwall",
+   "shape": "box",
+   "position": [
+    0.0,
+    8.525,
+    -5.23
+   ],
+   "size": [
+    7.42,
+    11.75,
+    0.24
+   ],
+   "yaw": 0.0
+  }
+ ],
+ "volumes": [],
+ "landmarks": [
+  {
+   "name": "spawn",
+   "position": [
+    0.0,
+    0.03,
+    0.0
+   ],
+   "yaw": 0.0,
+   "tags": []
+  }
+ ],
+ "lights": [],
+ "extras": {
+  "links": [],
+  "stairs": [],
+  "doors": []
+ }
+}

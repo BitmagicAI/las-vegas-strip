@@ -1,0 +1,1 @@
+const frame=()=>new Promise(r=>requestAnimationFrame(r)); await probe.hotel('flamingo-north',4,null,'corridor'); for(let i=0;i<180;i++)await frame(); await __shot('flamingo-core-4'); return {hotel:'flamingo-north',floor:4};

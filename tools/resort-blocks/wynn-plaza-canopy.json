@@ -1,0 +1,134 @@
+{
+  "id": "wynn-plaza-canopy",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1419057384"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.127409,-115.166377&zoom=21&basemap=satellite",
+      "review": "Curved narrow canopy between Plaza Shops arrival blocks inspected."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12740,-115.16653&heading=90&pitch=12",
+      "imageDate": "April2025",
+      "review": "Travertine fascia, cream edging, upper curved screen and tapered hanging lanterns inspected."
+    }
+  ],
+  "remaining": [
+    "Surrounding Plaza facade remains generic; real storefront glazing, signage and finer material detail unfinished",
+    "Canopy heights and lantern dimensions estimated from April2025 reference",
+    "Local paving patch and adjoining road edges still visually discontinuous; no road regeneration in this pass",
+    "Static960x540 timing only; not photorealistic or 60fps moving-route acceptance"
+  ],
+  "triangles": 818,
+  "batches": 7,
+  "optimizedMiB": 0.02,
+  "viewsInspected": [
+    "build/city-exteriors/wynn-plaza-canopy-final/wynn-plaza-drive.png",
+    "build/city-exteriors/wynn-plaza-canopy-final/wynn-plaza-under.png",
+    "build/city-exteriors/wynn-plaza-canopy-final/wynn-plaza-roof.png"
+  ],
+  "tests": [
+    "351 roof support samples passed",
+    "Four bidirectional walking reports passed after adding local approach apron",
+    "154 old city triangles and colliders removed",
+    "Three installed canopy views inspected; fourth view audits next lakefront pass"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "wynn-plaza-drive",
+        "eye": [
+          580,
+          3,
+          -1267
+        ],
+        "target": [
+          596,
+          5,
+          -1269
+        ],
+        "p": [
+          582,
+          1,
+          -1267
+        ],
+        "p50": 23.600000023841858,
+        "p95": 31.5
+      },
+      {
+        "name": "wynn-plaza-under",
+        "eye": [
+          595,
+          2,
+          -1265
+        ],
+        "target": [
+          595,
+          4,
+          -1275
+        ],
+        "p": [
+          595,
+          1,
+          -1265
+        ],
+        "p50": 30.099999964237213,
+        "p95": 36
+      },
+      {
+        "name": "wynn-plaza-roof",
+        "eye": [
+          578,
+          18,
+          -1257
+        ],
+        "target": [
+          596,
+          6,
+          -1270
+        ],
+        "p": [
+          582,
+          1,
+          -1267
+        ],
+        "p50": 30.5,
+        "p95": 34.89999997615814
+      },
+      {
+        "name": "wynn-lake-ownership-audit",
+        "eye": [
+          475,
+          48,
+          -1175
+        ],
+        "target": [
+          548,
+          8,
+          -1164
+        ],
+        "p": [
+          520,
+          1,
+          -1195
+        ],
+        "p50": 22.400000035762787,
+        "p95": 25.19999998807907
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 154,
+    "colliderTrianglesRemoved": 154,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in wynnPlazaCanopy mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/wynnPlazaCanopy-exterior.glb": "b69f4956731e3113b97b3d2db4766800ec6d0dc14c27a6fa386658366e80ea1a",
+      "build/strip-landmarks/wynnPlazaCanopy-exterior-collision.json": "a4cd362da42981a4f8c07a0d55398dc763d6547a536f2bf50b1af486e89dd97c"
+    }
+  }
+}

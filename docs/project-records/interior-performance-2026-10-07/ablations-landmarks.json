@@ -1,0 +1,270 @@
+{
+ "viewport": [
+  1505,
+  772
+ ],
+ "dpr": 2,
+ "results": [
+  {
+   "view": "lobby-venetian",
+   "tower": "landmark:venetian",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 230,
+    "y": 0.2,
+    "z": -686
+   },
+   "fps": 51.1,
+   "intervalP50": 16.7,
+   "intervalP90": 33.3,
+   "cpuP50": 4.8,
+   "gpuP50": 83.28,
+   "gpuP90": 91.62,
+   "draws": 118,
+   "triangles": 2499294,
+   "passes": [
+    [
+     "output 3010x1544",
+     32.25,
+     1
+    ],
+    [
+     "screen",
+     25.96,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     14.79,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "outside-hidden": {
+     "fps": 51,
+     "gpuP50": 92.72,
+     "cpuP50": 3.5
+    },
+    "interior-local-lights": {
+     "fps": 60,
+     "gpuP50": 16.13,
+     "cpuP50": 4.1
+    },
+    "interior-unlit": {
+     "fps": 60,
+     "gpuP50": 5.35,
+     "cpuP50": 3.9
+    },
+    "half-res": {
+     "fps": 60,
+     "gpuP50": 17.04,
+     "cpuP50": 4.1
+    }
+   }
+  },
+  {
+   "view": "lobby-palazzo",
+   "tower": "landmark:palazzo",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 311.8,
+    "y": 0.2,
+    "z": -933.5
+   },
+   "fps": 36.7,
+   "intervalP50": 16.7,
+   "intervalP90": 50,
+   "cpuP50": 5.6,
+   "gpuP50": 77.13,
+   "gpuP90": 80.34,
+   "draws": 222,
+   "triangles": 2602205,
+   "passes": [
+    [
+     "output 3010x1544",
+     26.74,
+     1
+    ],
+    [
+     "screen",
+     25.59,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     20.44,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "outside-hidden": {
+     "fps": 38,
+     "gpuP50": 76.7,
+     "cpuP50": 4.2
+    },
+    "interior-local-lights": {
+     "fps": 60,
+     "gpuP50": 14.27,
+     "cpuP50": 4.8
+    },
+    "interior-unlit": {
+     "fps": 60,
+     "gpuP50": 6.47,
+     "cpuP50": 4.7
+    },
+    "half-res": {
+     "fps": 60,
+     "gpuP50": 22.25,
+     "cpuP50": 4.9
+    }
+   }
+  },
+  {
+   "view": "lobby-arena",
+   "tower": "landmark:arena",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": -390.6,
+    "y": 0.2,
+    "z": 1407.3
+   },
+   "fps": 43.1,
+   "intervalP50": 16.7,
+   "intervalP90": 50,
+   "cpuP50": 4.8,
+   "gpuP50": 69.91,
+   "gpuP90": 107.62,
+   "draws": 133,
+   "triangles": 2753443,
+   "passes": [
+    [
+     "output 3010x1544",
+     31.23,
+     1
+    ],
+    [
+     "screen",
+     28.68,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     17.7,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "outside-hidden": {
+     "fps": 44,
+     "gpuP50": 44.74,
+     "cpuP50": 3.6
+    },
+    "interior-local-lights": {
+     "fps": 60,
+     "gpuP50": 13.03,
+     "cpuP50": 4
+    },
+    "interior-unlit": {
+     "fps": 60,
+     "gpuP50": 4.73,
+     "cpuP50": 3.9
+    },
+    "half-res": {
+     "fps": 60,
+     "gpuP50": 26.12,
+     "cpuP50": 3.9
+    }
+   }
+  },
+  {
+   "view": "lobby-linq",
+   "tower": "landmark:linq",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 43.4,
+    "y": 0.2,
+    "z": -250.8
+   },
+   "fps": 45.1,
+   "intervalP50": 16.7,
+   "intervalP90": 49.9,
+   "cpuP50": 6.3,
+   "gpuP50": 68.11,
+   "gpuP90": 69.14,
+   "draws": 404,
+   "triangles": 4222776,
+   "passes": [
+    [
+     "output 3010x1544",
+     23.46,
+     1
+    ],
+    [
+     "screen",
+     22.17,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     16.85,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "outside-hidden": {
+     "fps": 53.5,
+     "gpuP50": 66.41,
+     "cpuP50": 4.8
+    },
+    "interior-local-lights": {
+     "fps": 60,
+     "gpuP50": 12.75,
+     "cpuP50": 5.6
+    },
+    "interior-unlit": {
+     "fps": 60,
+     "gpuP50": 7.48,
+     "cpuP50": 5.6
+    },
+    "half-res": {
+     "fps": 60,
+     "gpuP50": 13.57,
+     "cpuP50": 5.6
+    }
+   }
+  }
+ ],
+ "errors": []
+}

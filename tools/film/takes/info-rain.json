@@ -1,0 +1,78 @@
+{
+ "name": "info-rain",
+ "subframes": 1,
+ "seconds": 10.0,
+ "maxSeconds": 16.0,
+ "start": {
+  "at": [
+   8,
+   0.5,
+   700
+  ],
+  "dir": [
+   0,
+   -1
+  ],
+  "view": "first",
+  "warm": 8
+ },
+ "steps": [
+  {
+   "wait": 10.0
+  }
+ ],
+ "camera": [
+  {
+   "from": 0,
+   "to": 10.0,
+   "focus": "camera",
+   "keys": [
+    {
+     "t": 0,
+     "pos": [
+      8,
+      7,
+      790
+     ],
+     "look": [
+      0,
+      5,
+      520
+     ],
+     "roll": 0,
+     "fov": 55
+    },
+    {
+     "t": 10.0,
+     "pos": [
+      6,
+      7.5,
+      640
+     ],
+     "look": [
+      -12,
+      8,
+      430
+     ],
+     "roll": 0,
+     "fov": 55
+    }
+   ]
+  }
+ ],
+ "look": {
+  "preset": "storm",
+  "overrides": {
+   "weather": "rain",
+   "rain": 0.9,
+   "wetness": 1,
+   "neon": 4
+  },
+  "area": [
+   -140,
+   380,
+   140,
+   900
+  ]
+ }
+}

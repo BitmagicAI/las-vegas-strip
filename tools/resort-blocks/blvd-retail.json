@@ -1,0 +1,105 @@
+{
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://blvdlasvegas.com/wp-content/uploads/2026/01/BLVD-Las-Vegas-Merchandise-Plan-January-2026.pdf",
+      "provider": "BLVD/Gindi",
+      "note": "All three pages rendered and visually inspected. Dimensioned retail frontages, rooftop plan and stairs/lifts. Leasing dates are plans, not evidence of tenant completion."
+    },
+    {
+      "url": "https://media.lasvegasweekly.com/img/photos/2026/08/25/26bovthisthat-BestMallBLVD.jpg",
+      "provider": "Las Vegas Weekly",
+      "note": "Built photo inspected. Orange panel parapet, dark frames, glazed Puma corner, projecting overlook, green wire/tree-form rooftop shades. Netflix facade says opening2027, contradicting leasing plan September2026."
+    },
+    {
+      "url": "https://www.bwaltd.com/project-detail/blvd",
+      "provider": "BWA architect",
+      "note": "Three stories,400000sf,two interior retail floors,110000sf roof terrace,700ft frontage. Main image inspected is conceptual rendering; do not copy generic tenants."
+    },
+    {
+      "url": "https://www.jll.com/en-us/client-stories/gindi-capital-and-jll-change-the-face-of-las-vegas-retail",
+      "provider": "JLL leasing",
+      "note": "Elevator/escalator/stair access,11doubleheight stores. Inline one/five images inspected are conceptual renderings, not built photos."
+    }
+  ],
+  "mappedIds": [
+    "way/1424222049",
+    "way/1505714402",
+    "way/1505714403",
+    "way/1424222051",
+    "way/1424222048",
+    "way/1505714401",
+    "way/1424222047"
+  ],
+  "planNotes": "North and south retail wings split by central hub. Public rooftop connects behind hub with stairs/escalators. North wing frontage258ft onL2; south50+184+62ft. StreetsideL1 north-to-south BootBarn,ABC,JD,H&M,available; south Adidas,Lululemon,Abercrombie,SunglassHut,LeVeil,Netflix,Puma. Do not assume planned stores built. Exact elevations estimated until corroborated.",
+  "id": "blvd-retail",
+  "name": "BLVD retail and rooftop",
+  "remaining": [
+    "Exact elevator and escalator implementation; stairs implemented",
+    "Fine storefront glazing, tenant identity and rooftop furnishings",
+    "Wide-view performance not60fps; warmedBLVDhidden38.2ms versusvisible38.4ms did not isolate building as cause",
+    "Precise heights and setbacks are photo estimates",
+    "Full public route traversal beyond sampled support/headroom tests"
+  ],
+  "implementation": {
+    "deckElevationM": 14,
+    "roofRoomTopM": 18.6,
+    "heightsEstimated": true,
+    "newTriangles": 51228,
+    "batches": 88,
+    "stairRoute": "Central hub two flights and landings,420 support/headroom samples pass",
+    "mappedOwnership": "Seven overlapping source features replaced by one structured owner, central passage remains open",
+    "remaining": [
+      "Exact lift/escalator implementation; authored stairs give a current public route",
+      "Fine storefront and rooftop tenant fidelity",
+      "Day/night street-level visual review",
+      "Mapped setbacks and source dimension discrepancy require later calibration"
+    ]
+  },
+  "reviews": [
+    {
+      "captureDirectory": "build/city-exteriors/blvd-reviewed",
+      "allFiveImagesInspected": true,
+      "performance": "build/city-exteriors/blvd-reviewed/performance.json",
+      "findings": [
+        "Front panels partially hidden by curved base facade",
+        "Opaque glass guards",
+        "Missing private hub paving",
+        "Rooftop view slower than baseline; isolated ablation pending"
+      ]
+    },
+    {
+      "captureDirectory": "build/city-exteriors/blvd-final",
+      "allFiveImagesInspected": true,
+      "performance": "build/city-exteriors/blvd-final/performance.json",
+      "findings": [
+        "Puma and SunglassHut occluded frontage repaired",
+        "Hub ground gap closed",
+        "Guards transparent and shade rings green",
+        "Small missing ground strips between mapped sidewalk and street facade still visible",
+        "Roof27.7ms/29.9ms p50/p95; terrace29/30.6ms; not60fps"
+      ]
+    },
+    {
+      "captureDirectory": "build/city-exteriors/blvd-excalibur-review",
+      "views": [
+        "north",
+        "hub",
+        "terrace"
+      ],
+      "allImagesInspected": true,
+      "findings": [
+        "Private street apron gaps closed",
+        "Painted frames now smooth",
+        "Existing roof store facades remain opaque commercial glazing; full retail interiors excluded"
+      ]
+    }
+  ],
+  "repairs": [
+    "Fit storefront outward extent over complete tenant interval",
+    "Transparent guards",
+    "Painted steel replaces scanned metal on frames",
+    "Green painted shade rings",
+    "Private hub paving closes terrain gap; roads preserved"
+  ]
+}

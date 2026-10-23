@@ -1,0 +1,561 @@
+{
+ "format": "bitmagic-mesh-level",
+ "version": 1,
+ "units": "meters",
+ "colliders": [
+  {
+   "name": "bedroom carpet",
+   "shape": "box",
+   "position": [
+    5.475,
+    -0.09,
+    0.0
+   ],
+   "size": [
+    4.95,
+    0.18,
+    5.85
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "foyer stone",
+   "shape": "box",
+   "position": [
+    1.525,
+    -0.09,
+    1.175
+   ],
+   "size": [
+    2.95,
+    0.18,
+    3.5
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "bathroom stone",
+   "shape": "box",
+   "position": [
+    1.525,
+    -0.09,
+    -1.75
+   ],
+   "size": [
+    2.95,
+    0.18,
+    2.35
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "ceiling",
+   "shape": "box",
+   "position": [
+    4.025,
+    3.5,
+    0.0
+   ],
+   "size": [
+    7.95,
+    0.2,
+    6.0
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "party wall -2.9625",
+   "shape": "box",
+   "position": [
+    4.025,
+    1.75,
+    -2.9625
+   ],
+   "size": [
+    7.95,
+    3.5,
+    0.075
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "party wall 2.9625",
+   "shape": "box",
+   "position": [
+    4.025,
+    1.75,
+    2.9625
+   ],
+   "size": [
+    7.95,
+    3.5,
+    0.075
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "window pier",
+   "shape": "box",
+   "position": [
+    8.0,
+    1.7,
+    -2.64
+   ],
+   "size": [
+    0.18,
+    3.4,
+    0.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "window pier 13",
+   "shape": "box",
+   "position": [
+    8.0,
+    1.7,
+    2.64
+   ],
+   "size": [
+    0.18,
+    3.4,
+    0.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "window sill wall",
+   "shape": "box",
+   "position": [
+    8.0,
+    0.31,
+    0.0
+   ],
+   "size": [
+    0.18,
+    0.62,
+    4.68
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "window header",
+   "shape": "box",
+   "position": [
+    8.0,
+    3.24,
+    0.0
+   ],
+   "size": [
+    0.18,
+    0.32,
+    4.68
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "window glazing",
+   "shape": "box",
+   "position": [
+    8.018,
+    1.85,
+    0.0
+   ],
+   "size": [
+    0.045,
+    2.38,
+    4.66
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "built in closet",
+   "shape": "box",
+   "position": [
+    0.62,
+    1.43,
+    2.48
+   ],
+   "size": [
+    1.12,
+    2.86,
+    0.84
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "bath front pier",
+   "shape": "box",
+   "position": [
+    0.6,
+    1.7,
+    -0.64
+   ],
+   "size": [
+    1.1,
+    3.4,
+    0.14
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "bath front return",
+   "shape": "box",
+   "position": [
+    2.66,
+    1.7,
+    -0.64
+   ],
+   "size": [
+    0.82,
+    3.4,
+    0.14
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "bath doorway lintel",
+   "shape": "box",
+   "position": [
+    1.7,
+    3.02,
+    -0.64
+   ],
+   "size": [
+    1.1,
+    0.76,
+    0.14
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "bath bedroom partition",
+   "shape": "box",
+   "position": [
+    3.02,
+    1.7,
+    -1.83
+   ],
+   "size": [
+    0.14,
+    3.4,
+    2.3
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "shower pan",
+   "shape": "box",
+   "position": [
+    0.57,
+    0.025,
+    -1.79
+   ],
+   "size": [
+    0.97,
+    0.05,
+    2.1
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "shower screen",
+   "shape": "box",
+   "position": [
+    1.09,
+    1.2,
+    -2.16
+   ],
+   "size": [
+    0.016,
+    2.3,
+    1.48
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "vanity cabinet",
+   "shape": "box",
+   "position": [
+    2.08,
+    0.6,
+    -2.6
+   ],
+   "size": [
+    1.65,
+    0.48,
+    0.55
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "toilet proxy",
+   "shape": "box",
+   "position": [
+    2.62,
+    0.28,
+    -1.14
+   ],
+   "size": [
+    0.51,
+    0.56,
+    0.78
+   ],
+   "yaw": 0
+  },
+  {
+   "name": "bed shadow plinth",
+   "shape": "box",
+   "position": [
+    4.95,
+    0.14,
+    -1.55
+   ],
+   "size": [
+    1.87,
+    0.27,
+    2.21
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "bed mattress collision",
+   "shape": "box",
+   "position": [
+    4.95,
+    0.4,
+    -1.55
+   ],
+   "size": [
+    2.02,
+    0.8,
+    2.19
+   ],
+   "yaw": 0
+  },
+  {
+   "name": "foot bench",
+   "shape": "box",
+   "position": [
+    4.95,
+    0.3,
+    0
+   ],
+   "size": [
+    1.38,
+    0.6,
+    0.5
+   ],
+   "yaw": 0
+  },
+  {
+   "name": "nightstand carcass",
+   "shape": "box",
+   "position": [
+    3.51,
+    0.47,
+    -2.49
+   ],
+   "size": [
+    0.69,
+    0.65,
+    0.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "nightstand carcass 418",
+   "shape": "box",
+   "position": [
+    6.39,
+    0.47,
+    -2.49
+   ],
+   "size": [
+    0.69,
+    0.65,
+    0.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "loveseat",
+   "shape": "box",
+   "position": [
+    7.06,
+    0.4,
+    -1.78
+   ],
+   "size": [
+    1.46,
+    0.8,
+    0.94
+   ],
+   "yaw": 0
+  },
+  {
+   "name": "cocktail table",
+   "shape": "box",
+   "position": [
+    6.87,
+    0.29,
+    -0.69
+   ],
+   "size": [
+    0.77,
+    0.58,
+    0.77
+   ],
+   "yaw": 0
+  },
+  {
+   "name": "activity table",
+   "shape": "box",
+   "position": [
+    7.02,
+    0.39,
+    1.73
+   ],
+   "size": [
+    1.0,
+    0.78,
+    1.0
+   ],
+   "yaw": 0
+  },
+  {
+   "name": "ottoman",
+   "shape": "box",
+   "position": [
+    6.1,
+    0.27,
+    1.74
+   ],
+   "size": [
+    0.62,
+    0.54,
+    0.62
+   ],
+   "yaw": 0
+  },
+  {
+   "name": "media cabinet",
+   "shape": "box",
+   "position": [
+    4.95,
+    0.49,
+    2.54
+   ],
+   "size": [
+    2.65,
+    0.91,
+    0.64
+   ],
+   "yaw": 0.0
+  }
+ ],
+ "volumes": [
+  {
+   "name": "Premier King room",
+   "position": [
+    4.0,
+    1.5,
+    0.0
+   ],
+   "size": [
+    7.9,
+    3.0,
+    5.85
+   ],
+   "yaw": 0.0,
+   "tags": [
+    "indoors",
+    "hotel-room"
+   ]
+  }
+ ],
+ "landmarks": [
+  {
+   "name": "spawn",
+   "position": [
+    0.4,
+    0.025,
+    0.0
+   ],
+   "yaw": 0.0,
+   "tags": []
+  }
+ ],
+ "lights": [
+  {
+   "name": "bedroom warm ambient",
+   "type": "point",
+   "position": [
+    5.15,
+    2.95,
+    0.3
+   ],
+   "color": "#fff0d4",
+   "intensity": 17,
+   "distance": 7,
+   "decay": 2.0
+  },
+  {
+   "name": "window daylight",
+   "type": "point",
+   "position": [
+    7.5,
+    2.55,
+    0.1
+   ],
+   "color": "#dae8f5",
+   "intensity": 13,
+   "distance": 6,
+   "decay": 2.0
+  },
+  {
+   "name": "bed sconces",
+   "type": "point",
+   "position": [
+    4.9,
+    1.9,
+    -2.35
+   ],
+   "color": "#ffe4b8",
+   "intensity": 8,
+   "distance": 4,
+   "decay": 2.0
+  },
+  {
+   "name": "bath vanity light",
+   "type": "point",
+   "position": [
+    1.8,
+    2.3,
+    -1.9
+   ],
+   "color": "#fff1dc",
+   "intensity": 14,
+   "distance": 3.8,
+   "decay": 2.0
+  },
+  {
+   "name": "entry downlight",
+   "type": "point",
+   "position": [
+    1.4,
+    2.95,
+    0.6
+   ],
+   "color": "#ffebd2",
+   "intensity": 7,
+   "distance": 3,
+   "decay": 2.0
+  }
+ ],
+ "extras": {
+  "links": [],
+  "stairs": [],
+  "doors": []
+ }
+}

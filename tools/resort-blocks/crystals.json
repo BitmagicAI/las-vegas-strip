@@ -1,0 +1,384 @@
+{
+  "id": "crystals",
+  "name": "The Shops at Crystals",
+  "status": "refinement-deferred",
+  "scope": "Audit existing legacy exterior and refine missing facade detail; preserve interiors, doors and bridge routes.",
+  "sources": [
+    {
+      "url": "https://libeskind.com/work/crystals-at-citycenter/",
+      "provider": "Studio Libeskind",
+      "date": "2009",
+      "note": "Primary architect description: angular stainless steel clad volumes and crystalline skylights; photographs credited Scott Frances/CityCenter/Alexander Garvin. Images not yet visually reviewed."
+    },
+    {
+      "url": "https://www.simon.com/mall/the-shops-at-crystals",
+      "provider": "Simon",
+      "note": "Official property and tenant directory"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1077,-115.1741,660a,260d,35y,275h,65t,0r",
+      "imageDate": "2022-11-09",
+      "inspected": true,
+      "note": "Street elevation: broad folded silver volumes; southGucci,centralFendi,LV; dense palms/terrace."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1077,-115.1744,725a,380d,35y,0h,0t,0r",
+      "imageDate": "2022-11-09",
+      "inspected": true,
+      "note": "Top-down: irregular overlapping large planes, angular slit skylights; current grid of pyramids inaccurate. Earth cached imagery warning; imagery visible."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.10851,-115.17484&zoom=20&basemap=satellite",
+      "accessed": "2026-10-21",
+      "observed": "Large northern/western silver roof polygon at mapped1422113646; existing crystalsRoof controlnet covers only part. Requires actual join audit; not automatically duplicate."
+    },
+    {
+      "url": "https://www.kalzip.com/wp-content/uploads/2023/01/Kalzip-City-Center-Crystals-Las-Vegas_2.jpg",
+      "provider": "Kalzip roof supplier",
+      "accessed": "2026-10-21",
+      "observed": "Inspected elevated east view: broad large north roof plane, diagonal long seams, central folded glass skylight, irregular interlocking metal volumes; photo date unspecified and predates current63 building. Earth oblique failed to load, not inspection evidence."
+    }
+  ],
+  "ownership": [
+    "way/52134608"
+  ],
+  "stage": "Roof correction installed and inspected. Full storefront, landscape and route refinement still outstanding.",
+  "remaining": [
+    "Compare actual installed roof and streetfront with references",
+    "Review existing door/bridge connections",
+    "Retain all interior geometry",
+    "Streetfront brand order/glazing and landscaping remain incorrect",
+    "Dimensions/fold positions estimated from2022Earth; no surveyaccuracyclaim",
+    "North/south facade returns need comparison",
+    "Roof beforecamera was insideotherbuilding; aftercamera moved to[35,95,937]",
+    "Audit mapped roof1422113646 northwestern wing against custom roof and63CityCenter; footprint partially outside current custom roof. No new geometry yet."
+  ],
+  "beforeViews": {
+    "directory": "build/city-exteriors/crystals-ownership",
+    "inspected": [
+      "east",
+      "south",
+      "north"
+    ],
+    "invalid": [
+      "roof:camera insideWaldorf/opaque surface"
+    ],
+    "performance": [
+      {
+        "name": "crystals-east",
+        "eye": [
+          28,
+          30,
+          909
+        ],
+        "target": [
+          -120,
+          18,
+          914
+        ],
+        "p": [
+          -20,
+          2,
+          921
+        ],
+        "p50": 30.799999952316284,
+        "p95": 48.39999985694885
+      },
+      {
+        "name": "crystals-south",
+        "eye": [
+          -14,
+          25,
+          1044
+        ],
+        "target": [
+          -136,
+          15,
+          965
+        ],
+        "p": [
+          -45,
+          2,
+          1017
+        ],
+        "p50": 46.09999990463257,
+        "p95": 73.09999990463257
+      },
+      {
+        "name": "crystals-north",
+        "eye": [
+          -9,
+          25,
+          786
+        ],
+        "target": [
+          -125,
+          16,
+          870
+        ],
+        "p": [
+          -29,
+          2,
+          818
+        ],
+        "p50": 25.40000009536743,
+        "p95": 44.90000009536743
+      },
+      {
+        "name": "crystals-roof",
+        "eye": [
+          -135,
+          110,
+          1060
+        ],
+        "target": [
+          -125,
+          20,
+          915
+        ],
+        "p": [
+          -25,
+          2,
+          918
+        ],
+        "p50": 61.40000009536743,
+        "p95": 81.40000009536743
+      }
+    ]
+  },
+  "initialRoofReview": {
+    "captures": "build/city-exteriors/crystals-roof",
+    "allFourInspected": true,
+    "performance": [
+      {
+        "name": "crystals-east",
+        "eye": [
+          28,
+          30,
+          909
+        ],
+        "target": [
+          -120,
+          18,
+          914
+        ],
+        "p": [
+          -20,
+          2,
+          921
+        ],
+        "p50": 22.100000143051147,
+        "p95": 34.60000014305115
+      },
+      {
+        "name": "crystals-south",
+        "eye": [
+          -14,
+          25,
+          1044
+        ],
+        "target": [
+          -136,
+          15,
+          965
+        ],
+        "p": [
+          -45,
+          2,
+          1017
+        ],
+        "p50": 36.10000014305115,
+        "p95": 51.10000014305115
+      },
+      {
+        "name": "crystals-north",
+        "eye": [
+          -9,
+          25,
+          786
+        ],
+        "target": [
+          -125,
+          16,
+          870
+        ],
+        "p": [
+          -29,
+          2,
+          818
+        ],
+        "p50": 19.799999952316284,
+        "p95": 30.799999952316284
+      },
+      {
+        "name": "crystals-roof",
+        "eye": [
+          35,
+          95,
+          937
+        ],
+        "target": [
+          -125,
+          20,
+          915
+        ],
+        "p": [
+          -25,
+          2,
+          918
+        ],
+        "p50": 24.100000143051147,
+        "p95": 38.09999990463257
+      }
+    ],
+    "findings": [
+      "Old roof fragments remained at east bound because legacy roof edge was x=-40.99 rather than -41.3. Second targeted cut removes178moretriangles.",
+      "Fine tube seams sparkled; replaced with wider spaced planar strips.",
+      "Frontage brands, angular shop windows and landscape remain inaccurate."
+    ]
+  },
+  "finalRoofReview": {
+    "captures": "build/city-exteriors/crystals-roof-final",
+    "allFourInspected": true,
+    "performance": [
+      {
+        "name": "crystals-east",
+        "eye": [
+          28,
+          30,
+          909
+        ],
+        "target": [
+          -120,
+          18,
+          914
+        ],
+        "p": [
+          -20,
+          2,
+          921
+        ],
+        "p50": 24.5,
+        "p95": 27
+      },
+      {
+        "name": "crystals-south",
+        "eye": [
+          -14,
+          25,
+          1044
+        ],
+        "target": [
+          -136,
+          15,
+          965
+        ],
+        "p": [
+          -45,
+          2,
+          1017
+        ],
+        "p50": 43.40000009536743,
+        "p95": 46.89999985694885
+      },
+      {
+        "name": "crystals-north",
+        "eye": [
+          -9,
+          25,
+          786
+        ],
+        "target": [
+          -125,
+          16,
+          870
+        ],
+        "p": [
+          -29,
+          2,
+          818
+        ],
+        "p50": 24.200000047683716,
+        "p95": 27.09999990463257
+      },
+      {
+        "name": "crystals-roof",
+        "eye": [
+          35,
+          95,
+          937
+        ],
+        "target": [
+          -125,
+          20,
+          915
+        ],
+        "p": [
+          -25,
+          2,
+          918
+        ],
+        "p50": 25.5,
+        "p95": 27.700000047683716
+      }
+    ],
+    "triangles": 508,
+    "batches": 4,
+    "removedLegacyTriangles": 7296,
+    "removedRoofColliders": 48,
+    "tests": [
+      "1540 roof rays PASS",
+      "All non-roof collision and other metadata preserved",
+      "npm run check PASS",
+      "Python compilation PASS"
+    ],
+    "remaining": [
+      "Three tiny tan flecks remain on roof; investigate residual legacy geometry",
+      "Exact folded roof topology and slit skylights still approximate",
+      "Incorrect streetfront brand order and shallow glazing",
+      "Plain north return and missing landscape density",
+      "Public bridge/door circulation needs full walking review"
+    ],
+    "performanceCaveat": "Fixed 180-frame samples,1280x720 ultra; not a driving benchmark and not 60fps.",
+    "verify": "FAILED Play detection at60s;18fps menu2965bodies. Direct game capture entered Play and inspected four views.",
+    "verifyLog": "docs/project-records/city-exteriors-2026-10-12/verify-crystals-roof.log"
+  },
+  "finalBuild": {
+    "files": {
+      "build/geographic-strip/detailed.glb": "3f6fd2b016c95334567bd7bd7728fc637f08959f8a2bef1ffb1313a9a7ff2e83",
+      "src/work/geographic/level.json": "b7687673d8aee70f350fbd0f9e6e426f4862894d97a0f456f232e097c487eebf",
+      "build/strip-landmarks/crystalsRoof-exterior.glb": "6b7e4a7cf831cb68811c33045019d81c65c2cc2189b77439285cae28502b2dbe",
+      "build/strip-landmarks/crystalsRoof-exterior-collision.json": "567aa3b7ed308ae56bb6c2719313d55944d4279d0b491cd0399c3c145ff9b818"
+    }
+  },
+  "northwestWingReview": {
+    "date": "2026-10-21",
+    "mappedId": "way/1422113646",
+    "captures": "build/city-exteriors/crystals-northwest-final",
+    "viewsInspected": [
+      "crystals-northwest",
+      "crystals-north-join"
+    ],
+    "triangles": 2310,
+    "batches": 9,
+    "collisionSamples": 959,
+    "collisionFailures": 0,
+    "removedMappedTriangles": 317,
+    "scope": "Sloping northwest exterior roof, soffits, closed facet joins and glazed returns; no interior or road regeneration.",
+    "fixes": [
+      "Split crossing join into two triangles to avoid bow-tie face",
+      "Replaced thin seam tubes with planar strips",
+      "Excluded metal roof from generic PBR surface override using asset-specific material names"
+    ],
+    "remaining": [
+      "Roof plane elevations 19\u201326.7m and facade bay spacing are estimates",
+      "Glazed north/west returns require closer photographic matching",
+      "Existing southern roof folds, blank wall sections and skylights remain approximate",
+      "Public bridge/door walking review and neutral daylight material review remain outstanding"
+    ],
+    "performance": {
+      "caveat": "960x540 static 180-frame samples only, not driving benchmark",
+      "log": "/tmp/crnw-probe2.log"
+    }
+  }
+}

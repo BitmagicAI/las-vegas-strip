@@ -1,0 +1,699 @@
+{
+  "id": "caesars-towers",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1166,-115.1764,650a,520d,35y,0h,0t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Topdown inspected: Palace three red-roof pavilions; curved Julius wing; Nobu rectangular east; south Augustus and Octavius."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1163,-115.1760,650a,650d,35y,270h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "East oblique inspected: seven actual tower forms, white pilasters, flat and red crown differences."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1163,-115.1760,650a,600d,35y,90h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "West oblique inspected: three separated Palace crowns; Augustus/Octavius end vertical glazing; pool court between."
+    },
+    {
+      "url": "https://largetribes.org/wp-content/uploads/2024/11/2024-Caesars-Palace-Property-Map.pdf",
+      "date": "2023-10 printed; hosted 2024",
+      "review": "PDF text inspected; confirms named towers and casino connections. Screenshot unavailable through web tool, not counted as visual evidence."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1161,-115.1779,620a,340d,35y,0h,0t,0r",
+      "accessDate": "2026-10-13",
+      "imageDate": "2022-11-09",
+      "review": "Topdown inspected: Temple circular pool east, rectangular Neptune center, Venus north, Jupiter NW, Bacchus/Fortuna west, Apollo SW; cabana rows and conference roof."
+    },
+    {
+      "url": "https://giecdn.blob.core.windows.net/fileuploads/upload/2025/07/07/caesars%20property%20map%20082924.pdf",
+      "provider": "Caesars branded property map, August2024, hosted by GIE",
+      "local": "build/city-exteriors/references/caesars/property-map-2024.pdf",
+      "review": "Rendered and visually inspected map; corroborates pool identities, relative arrangement and connections to hotel/conference center."
+    },
+    {
+      "url": "https://www.caesars.com/content/dam/empire/clv/things-to-do/pool/garden-of-the-gods-pool-oasis/1920x1080/clv-garden-of-the-gods-temple-pool-overhead-1920x1080.jpg",
+      "provider": "Caesars official photo",
+      "accessDate": "2026-10-13",
+      "review": "Visually inspected: fluted Corinthian columns, patinated ribbed dome, pale entablature, orange cushions, white cabanas, central sculpture and bowl jets. Sculpture, mature planting and jets not yet implemented."
+    },
+    {
+      "url": "https://scenoplus.com/en/projects/detail/the-colosseum/",
+      "provider": "Sc\u00e9no Plus, venue designer",
+      "review": "Official project page establishes 256ft diameter and120ft height; exterior dusk thumbnail visually inspected."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1174,-115.1751,630a,320d,35y,270h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "East aerial: circular theater, three pale facade registers, gold upper band, adjoining roof bodies and OMNIA dome."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1182,-115.1749,640a,230d,35y,0h,0t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Topdown: circle and diagonal service spine with paired rooftop housings. Centre fit to mapped arc, dimension from designer."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1167,-115.1745,640a,300d,35y,0h,0t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Inspected topdown. OMNIA drum/dome, red roof beside main arrival, compound low-rise roof and curved arrival edge. Estimated geographic centers: OMNIA -108,-134; red-roof pavilion -121,-78."
+    },
+    {
+      "url": "https://investor.caesars.com/news-releases/news-release-details/celebrate-grand-opening-omnia-dayclub-skybar-and-caesars-palaces",
+      "review": "2026 new OMNIA Dayclub46,000sqft reported open May2026; not mixed into 2022 reference geometry without contemporary plan/visual fit. Remains an era discrepancy."
+    }
+  ],
+  "baseline": [
+    "build/city-exteriors/caesars-before/caesars-east.png",
+    "build/city-exteriors/caesars-before/caesars-west.png",
+    "build/city-exteriors/caesars-before/caesars-north.png"
+  ],
+  "findings": [
+    "Legacy detailed tower geometry differs materially from actual footprints",
+    "Five outside render nodes combine tower skins; interior/shell nodes must remain untouched",
+    "Existing caesars-palace guest core has linear scale 2.114x3.105 and is not contained in mapped Palace footprint; resolve support and circulation before replacement"
+  ],
+  "remaining": [
+    "Pool architecture installed; mature gardens, sculpture, fountain jets, true three-level elevation schedule and connected public circulation unresolved.",
+    "Legacy Colosseum and lower casino/street frontage still simplified",
+    "Ground stair screenshot is a close closed-door view; full lobby-to-stairs traversal unverified",
+    "Precise facade bay dimensions estimated from Earth; no photorealistic completion claim",
+    "Garage entry/circulation and roof parking markings remain incomplete"
+  ],
+  "implementation": {
+    "towerFootprints": [
+      "134944648",
+      "134949098",
+      "134949101",
+      "134949102",
+      "134949402",
+      "126267789",
+      "1176928048"
+    ],
+    "heightsM": [
+      133,
+      52,
+      45,
+      71,
+      40,
+      107,
+      111
+    ],
+    "triangles": 138300,
+    "batches": 80,
+    "roofPavilionRiseEstimatedM": 3.8,
+    "guestCore": {
+      "origin": [
+        -280,
+        0.075,
+        -82
+      ],
+      "linear": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "floors": 24,
+      "bays": 8,
+      "roomTemplates": "unchanged"
+    },
+    "removedTowerNodes": 5,
+    "removedTowerColliders": 22,
+    "casinoRoofCut": [
+      -285.25,
+      -85.8,
+      -274.75,
+      -78.2
+    ],
+    "tests": {
+      "roofSamples": 154,
+      "entranceSamples": 24,
+      "stairRoofSamples": 9,
+      "failures": 0
+    },
+    "preserved": "All public interior nodes; all non-tower colliders except bounded stair roof aperture; all roads",
+    "optimizedMiB": 2.5,
+    "lowerBuildingIds": [
+      "134949710",
+      "134949713",
+      "134949715"
+    ],
+    "coreEnvelopeTest": "All guest-room footprint corners contained in mapped Palace tower"
+  },
+  "iterations": [
+    {
+      "views": "build/city-exteriors/caesars-after",
+      "review": "All 3 installed views inspected. Corrected Palace arched crown to rectangular upper bays with grouped pilasters; lowered south and Palace hip-roof walls so peaks remain at mapped heights. Added two garages and west conference exterior."
+    }
+  ],
+  "finalViews": [
+    "build/city-exteriors/caesars-final/caesars-east.png",
+    "build/city-exteriors/caesars-final/caesars-west.png",
+    "build/city-exteriors/caesars-final/caesars-north.png",
+    "build/city-exteriors/caesars-final/caesars-core-0.png",
+    "build/city-exteriors/caesars-final/caesars-core-3.png"
+  ],
+  "review": "All five PNGs visually inspected. Crown correction visible; garage bands and conference details installed. Ground stair view faces closed door (not proof of lobby traversal); existing guest corridor renders correctly. Large empty pool court and coarse legacy lower site remain.",
+  "performance": [
+    {
+      "name": "caesars-east",
+      "eye": [
+        100,
+        160,
+        80
+      ],
+      "target": [
+        -280,
+        45,
+        -50
+      ],
+      "p50": 16.59999990463257,
+      "p95": 18.600000143051147
+    },
+    {
+      "name": "caesars-west",
+      "eye": [
+        -620,
+        180,
+        -10
+      ],
+      "target": [
+        -280,
+        45,
+        -45
+      ],
+      "p50": 24.5,
+      "p95": 29.399999856948853
+    },
+    {
+      "name": "caesars-north",
+      "eye": [
+        -300,
+        150,
+        -430
+      ],
+      "target": [
+        -280,
+        40,
+        -20
+      ],
+      "p50": 16.5,
+      "p95": 18.799999952316284
+    }
+  ],
+  "finalBuild": {
+    "build/strip-landmarks/caesarsExterior-exterior.glb": "1151f822a89c71c34b3e03e740da19dba37d83f8ab0751851a638c315860d40c",
+    "src/work/hotels/towers.json": "f89c88289af948603f042e2dd67f8456852a4d3cf25a3824a46804957bed80f6"
+  },
+  "verify": "WebGPU passed, 4.1s settle,59fps at spawn; not a city-wide performance result",
+  "podiumPass": {
+    "stage": "canopy-correction-awaiting-installed-review",
+    "date": "2026-10-13",
+    "target": "Mapped low-rise podium and Garden of the Gods pool court; preserve existing casino interiors and Forum Shops.",
+    "before": "build/city-exteriors/caesars-podium-before",
+    "after": "build/city-exteriors/caesars-podium-final",
+    "deckElevationM": 10.2,
+    "elevationLimitation": "Compatibility datum above existing legacy casino roof8.5m; NOT surveyed pool-court elevation. Existing gallery occupies actual pool court. Original interiors untouched; correct vertical and access integration remains unresolved.",
+    "tests": {
+      "poolAndDeckSupportSamples": 308,
+      "failures": 0,
+      "typecheck": "passed",
+      "roofSamples": 1328,
+      "coveredRoofSamples": 1,
+      "guestEntrySamples": 24,
+      "stairRoofSamples": 9,
+      "interiorNodesPreserved": 601,
+      "removedObsoleteExteriorTriangles": 60
+    },
+    "performance": [
+      {
+        "name": "cp-pool-top",
+        "eye": [
+          -410,
+          180,
+          20
+        ],
+        "target": [
+          -410,
+          0,
+          0
+        ],
+        "p": [
+          -400,
+          2,
+          15
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.90000009536743
+      },
+      {
+        "name": "cp-pool-east",
+        "eye": [
+          -260,
+          48,
+          55
+        ],
+        "target": [
+          -410,
+          6,
+          0
+        ],
+        "p": [
+          -375,
+          2,
+          0
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.699999809265137
+      },
+      {
+        "name": "cp-street",
+        "eye": [
+          70,
+          35,
+          -40
+        ],
+        "target": [
+          -180,
+          12,
+          -60
+        ],
+        "p": [
+          -80,
+          2,
+          -35
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.5
+      },
+      {
+        "name": "cp-service-west",
+        "eye": [
+          -680,
+          55,
+          -60
+        ],
+        "target": [
+          -485,
+          12,
+          -60
+        ],
+        "p": [
+          -610,
+          2,
+          -60
+        ],
+        "p50": 19.899999856948853,
+        "p95": 21.299999952316284
+      },
+      {
+        "name": "cp-temple-close",
+        "eye": [
+          -318,
+          18,
+          -25
+        ],
+        "target": [
+          -349,
+          16,
+          -3
+        ],
+        "p": [
+          -327,
+          10.25,
+          -23
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.59999990463257
+      }
+    ],
+    "review": "Initial review caught obsolete fountain and imported solid canopy obstructing main approach. Removed 1764 old fountain triangles, replaced way/1168129083 with open elevated canopy. Final game review pending.",
+    "verify": "CLI failed Play detection at 15s cap,30fps menu,2965bodies. Direct five-view probe succeeded; failure not waived.",
+    "roofPlan": "build/city-exteriors/caesars-podium-plan.json",
+    "newAccessChecks": "build/city-exteriors/caesars-podium-access-test.json",
+    "geometryTriangles": 201551,
+    "batches": 106,
+    "optimizedMiB": 3.59,
+    "canopy": {
+      "sourceId": "way/1168129083",
+      "roofM": 8.2,
+      "soffitM": 7.65,
+      "dimensionStatus": "Plan mapped; elevations estimated from exterior imagery",
+      "accessSamples": 147,
+      "legacyColliders": 34,
+      "cityCells": 3
+    },
+    "preservation": "build/city-exteriors/caesars-arrival-preservation.json"
+  },
+  "colosseumPass": {
+    "stage": "installed-reviewed",
+    "plan": "build/city-exteriors/caesars-colosseum-plan.json",
+    "removal": "build/city-exteriors/caesars-old-colosseum-removal.json",
+    "tests": "build/city-exteriors/caesars-colosseum-test.json",
+    "removedTriangles": 9084,
+    "removedComponents": 195,
+    "removedColliders": 1,
+    "remaining": [
+      "Theater interior and public connection not added",
+      "Exact arch module and roof mechanical dimensions inferred from photographs",
+      "Current 2026 OMNIA frontage changes not yet researched"
+    ],
+    "views": "build/city-exteriors/caesars-colosseum-after",
+    "performance": [
+      {
+        "name": "cp-street",
+        "eye": [
+          70,
+          35,
+          -40
+        ],
+        "target": [
+          -180,
+          12,
+          -60
+        ],
+        "p": [
+          -80,
+          2,
+          -35
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "cp-colosseum-east",
+        "eye": [
+          -53,
+          56,
+          -191
+        ],
+        "target": [
+          -171,
+          18,
+          -211
+        ],
+        "p": [
+          -115,
+          2,
+          -211
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "cp-colosseum-close",
+        "eye": [
+          -121,
+          3,
+          -197
+        ],
+        "target": [
+          -168,
+          20,
+          -211
+        ],
+        "p": [
+          -120,
+          2,
+          -194
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.799999952316284
+      },
+      {
+        "name": "cp-colosseum-top",
+        "eye": [
+          -170,
+          160,
+          -210
+        ],
+        "target": [
+          -170,
+          0,
+          -211
+        ],
+        "p": [
+          -115,
+          2,
+          -211
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.600000143051147
+      }
+    ],
+    "review": "All four captures inspected: circular footprint, pale blind arches, roof spine and housings visible. Photographic proportions substantially improved over old stretched ellipse. Adjoining podium remains work-in-progress. Ground-level and roof ray checks passed.",
+    "preservation": "build/city-exteriors/caesars-colosseum-preservation.json"
+  },
+  "omnia2026Research": {
+    "status": "confirmed-current-addition-not-yet-modeled",
+    "sources": [
+      {
+        "url": "https://www.bwaltd.com/project-detail/omnia-dayclub",
+        "provider": "BWA architect of record",
+        "observed": "Built photographs inspected; see photographsInspected."
+      },
+      {
+        "url": "https://clark.legistar.com/View.ashx?GUID=1E05DF25-B1E0-4F20-BCA4-397F49786B7C&ID=14205871&M=F",
+        "provider": "Clark County May21 2025 design-review staff report DR-25-0245",
+        "observed": "Proposed3storeys,46210sqft,permanentheight38ft/canopy51ft,78ftbridge with16\u201317ftclearance. Detached building in former east-central parking lot between fountain and Caesars Palace Drive. Plan approval description, not as-built dimensional validation."
+      },
+      {
+        "url": "https://investor.caesars.com/news-releases/news-release-details/celebrate-grand-opening-omnia-dayclub-skybar-and-caesars-palaces",
+        "provider": "Caesars May7 2026",
+        "observed": "Opening announced forMay2026."
+      }
+    ],
+    "remaining": "Find drawing attachment and inspect finished exterior photos before modeling. Keep separate from 2022 nightclub dome retained in podium.",
+    "photographsInspected": {
+      "page": "https://www.bwaltd.com/project-detail/omnia-dayclub",
+      "date": "2026-10-13",
+      "ids": [
+        "f78949_a04482d1912b401e9ab651e6dafc1f1f",
+        "f78949_29d08e3d878a442eb296e91dea99a1ac",
+        "f78949_30595ad218f64bd6837d89b5143e39b7",
+        "f78949_45b17cfcf76f46909b3eea93fcf79087"
+      ],
+      "observed": "Built pool court photographs: two organic pools, long raised plunge pools against east/west cabanas with scalloped jade dome awnings; teak furniture and cream/jade cushions, rounded bar and umbrella platforms. South DJstage has tall organic mural arch; north upper terrace above four bar arches with mural fascia and planting. Entry stair has botanical mural and brass/black railing. No exterior street face/precise footprint established by these photos."
+    },
+    "nextReference": {
+      "officialTour": "https://taogroup.com/venues/omnia-dayclub-las-vegas/360-tour/",
+      "tour": "https://www.vpix.net/764687",
+      "status": "Visually inspected official built tour: Dayclub Entry, Skybar Street Entry, Skybar Dining Mid Street View and Dayclub Mid Pool, both north/south directions. 2026-10-13.",
+      "observed": "Pool court: southern mural arched DJ stage; jade scalloped cabana awnings along east/west; north four-arched bar supports upper Skybar with paired end stairs. Skybar east glass rail overlooks Strip/Caesars Palace Drive, northern marquee. Entry stairs are inside botanical mural-lined hall, not open generic exterior stairs. Precise footprint not yet established."
+    }
+  },
+  "podiumReview": {
+    "status": "refinement-deferred",
+    "installedViews": "build/city-exteriors/caesars-podium-reviewed",
+    "review": "Five installed views inspected. Main canopy is elevated and open, obsolete fountain removed; floating tier fascia fixed. OMNIA sign corrected. Generic/repetitive podium and roof mechanical details remain, forecourt smaller buildings still unfinished.",
+    "tests": {
+      "combinedApproachSamples": 147,
+      "roofSamples": 2287,
+      "coveredRoof": 1,
+      "guestEntry": 24,
+      "stairOpening": 9,
+      "pool": 308,
+      "colosseum": 440,
+      "failures": 0
+    },
+    "verify": "Failed Play/menu detection at15s,30fps menu. Direct five-view probe succeeds.",
+    "geometry": {
+      "triangles": 201465,
+      "batches": 106,
+      "installedMiB": 3.62
+    },
+    "preservation": "build/city-exteriors/caesars-arrival-preservation.json; build/city-exteriors/mgm-preservation.json",
+    "remaining": [
+      "Public circulation/full door walk-through not validated",
+      "Forecourt Hell Kitchen/Absinthe/kiosks still generic",
+      "2026 OMNIA Dayclub missing",
+      "Fine facade and planting details below photographic standard"
+    ]
+  },
+  "frontageResearch": {
+    "date": "2026-10-13",
+    "sources": [
+      {
+        "url": "https://www.csdarchitecture.com/csd-projects/gordon-ramsay-hell%27s-kitchen",
+        "provider": "CSD architects",
+        "observed": "Entrance gallery visually inspected: flat white walls, red-lit reveals, central dark glazed entry, broad raised stairs/black handrails, massive separate HK pitchfork sculpture. 11000sqft renovation stated."
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:HK_Las_Vegas_exterior.jpg",
+        "provider": "David Lambert, July20 2021",
+        "observed": "East glass wall, fluted rectangular white piers, slim black metal balcony rails and wall lanterns; no arches."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.11573,-115.1733,640a,300d,35y,0h,0t,0r",
+        "provider": "Google Earth imagery2022-11-09",
+        "observed": "Topdown footprint/roof equipment/entrance south; Absinthe round red-white tent southwest; garden and smaller buildings need modeling."
+      }
+    ],
+    "uncertainty": "Roof7.4m and floor1.05m photograph estimates, not surveyed. Sculptural HK sign, accessible ramp and landscape not yet modeled."
+  },
+  "absintheResearch": {
+    "status": "source-authored-not-installed",
+    "sources": [
+      {
+        "url": "https://earth.google.com/web/@36.11573,-115.1733,640a,300d,35y,0h,0t,0r",
+        "observed": "November9 2022 overhead: red and ivory radial tent panels, north vestibule, circular mapped footprint."
+      },
+      {
+        "url": "https://spiegelworld.com/wp-content/uploads/2023/08/Shrooms-1-scaled-1-e1695059032141.jpg",
+        "observed": "Visually inspected official photograph: sagged conical canvas top, red/white walls, northern double entrance, seam lights. Temporary illuminated mushrooms not included in permanent geometry."
+      },
+      {
+        "url": "https://spiegelworld.com/wp-content/uploads/2023/06/gfg-no-pants-party.jpg",
+        "observed": "Visually inspected official No Pants garden image: sage green rectangular kiosk/bar, open service hatches, canopy, white branding and dark garden enclosure."
+      },
+      {
+        "url": "https://spiegelworld.com/shows/absinthe/",
+        "observed": "Official accessible entry is step-free from garden, no lifts or escalators. Current site confirms ongoing operation."
+      }
+    ],
+    "uncertainty": "Peak10.1m/eave3.8m estimated. Kiosk mapIDs current; greenfairy kiosk placement exact footprint but individual service-side orientation inferred. Extensive garden planting, electric oak and theatrical entrance detail remain."
+  },
+  "spanishStepsResearch": {
+    "source": "https://media-cdn.tripadvisor.com/media/photo-s/0f/bc/62/3c/bar.jpg",
+    "observed": "Visually inspected: deep-blue fluted columns, open shaded counter, white dentil entablature, solid blue sign pier. This is not a generic solid building or just a flight of stairs. Photo date unknown;2022Earth confirms pavilion at mapped plan. Heights estimated.",
+    "correction": {
+      "name": "Purple Zebra",
+      "evidence": [
+        "https://giecdn.blob.core.windows.net/fileuploads/upload/2025/07/07/caesars%20property%20map%20082924.pdf",
+        "https://s202.q4cdn.com/508919455/files/doc_downloads/factsheets/caesars_palace/2025/05/Caesars-Palace-Fact-Sheet_May-2025.pdf",
+        "https://vegaschanges.com/2017/12/25/caesars-palace/"
+      ],
+      "photo": "https://i0.wp.com/vegaschanges.com/wp-content/uploads/2017/12/DSC01993.jpg?w=640&quality=60&ssl=1",
+      "observed": "Open pavilion, dark classical columns, white curved bar and purple concentric ceiling coves. Photograph capture date unknown; name corroborated by2024map/2025factsheet. Old mapped Spanish Steps name retained only as source ID."
+    }
+  },
+  "frontageReview": {
+    "status": "refinement-deferred",
+    "views": "build/city-exteriors/caesars-frontage-sign-review",
+    "tests": "build/city-exteriors/caesars-frontage-test.json",
+    "review": "Glazed bays, fluted piers, south stairs/entry and simplified monumental HK sign installed. East and entrance final views inspected. 229 authored support/clearance checks pass; surrounding city collision not part of this specific test.",
+    "performance": "Three view p50 about16.7ms p95 up to17.8ms; /tmp/cp-front-sign-probe.log",
+    "verify": "CLI fails Play/menu detection15s31fps; direct probe passes.",
+    "geometry": {
+      "triangles": 206381,
+      "batches": 119,
+      "compressedMB": 3.9
+    },
+    "remaining": [
+      "Refine glass transmission/backing and dining detail",
+      "Planting and accessible ramp",
+      "Sculptural sign/flames fidelity",
+      "Not photo-perfect"
+    ]
+  },
+  "romanPlazaResearch": {
+    "source": "https://earth.google.com/web/@36.11511,-115.17412,640a,170d,35y,0h,50t,0r",
+    "imageryDate": "2022-11-09",
+    "observed": "Long red tiled hip roof with10southern white fluted classical columns, matching rear row, elevated paved platform, central entrance stair and south retaining wall/rail. Mapped42.6x12.7m footprint. Source viewed2026-10-13.",
+    "estimates": {
+      "platformM": 1.8,
+      "eaveM": 8.1,
+      "ridgeM": 10.4
+    },
+    "remaining": "Statues and carved capitals missing; levels estimated from proportions."
+  },
+  "mojitoResearch": {
+    "source": "https://vegaschanges.com/2017/12/25/caesars-palace/",
+    "photo": "https://i0.wp.com/vegaschanges.com/wp-content/uploads/2017/12/DSC01992.jpg?w=640&quality=60&ssl=1",
+    "observed": "White framed compact service kiosk, green Margaritas & Mojitos canopy, purple Zebra lowerpanel, black paired menus; capturedateunknown. Official2024map labelsMojitoHut atthislocation.",
+    "heightEstimateM": 3.1
+  },
+  "gardenReview": {
+    "status": "refinement-deferred",
+    "reviewedDate": "2026-10-13",
+    "views": [
+      "build/city-exteriors/caesars-garden-reviewed",
+      "build/city-exteriors/caesars-kiosks-reviewed",
+      "build/city-exteriors/caesars-garden-cleanup"
+    ],
+    "review": "Inspected installed tent, Purple Zebra, three service kiosk fronts and Roman Plaza colonnade. Removed obsolete stretched pergola/gazebo after its column visibly crossed No Pants kiosk. Final kiosk/colonnade/overview inspected after cleanup. New bar double surface removed; soffits and countertop added.",
+    "tests": "build/city-exteriors/caesars-garden-test.json",
+    "testResult": "309 authored floor, standing clearance and roof checks pass. Does not certify surrounding city or theater interior.",
+    "preservation": "build/city-exteriors/caesars-garden-preservation.json",
+    "preservationResult": "1151 interior/shell nodes and original binary prefix unchanged;107 exterior components/2852 triangles removed within replacement garden area. 8478 road/landscape groups unchanged by building-only rebuild.",
+    "performance": "Final three fixed views p50 16.6\u201316.7ms; p95 17.4\u201318.0ms at1280x720 ultra. Not a city-wide route guarantee.",
+    "geometry": {
+      "triangles": 244197,
+      "batches": 156,
+      "compressedMB": 5.5
+    },
+    "verify": "CLI failed to detect Play or game start;15s cap31fps menu. Direct installed-game three-view probe completed successfully. See docs/project-records/city-exteriors-2026-10-12/verify-caesars-garden.log",
+    "remaining": [
+      "Garden planting, ornamental entrance gate and sculpture absent",
+      "Tent heights and pavilion elevations are photographic estimates",
+      "Service kiosk graphics/equipment and sculptural capitals remain simplified",
+      "Surrounding ground has visibly crude legacy material/landscape detail",
+      "Public route network and occupied theater interior not rebuilt",
+      "Not photorealistic completion"
+    ]
+  },
+  "rotundaResearch": {
+    "id": "way/180831020",
+    "sources": [
+      {
+        "url": "https://earth.google.com/web/@36.117608,-115.173345,640a,210d,35y,0h,0t,0r",
+        "view": "top-down",
+        "provider": "Google Earth",
+        "imageDate": "2022-11-09"
+      },
+      {
+        "url": "https://earth.google.com/web/@36.117608,-115.173345,640a,80d,35y,270h,70t,0r",
+        "view": "street-facing oblique",
+        "provider": "Google Earth",
+        "imageDate": "2022-11-09"
+      },
+      {
+        "url": "https://earth.google.com/web/@36.117608,-115.173345,640a,85d,35y,90h,60t,0r",
+        "view": "rear oblique",
+        "provider": "Google Earth",
+        "imageDate": "2022-11-09"
+      }
+    ],
+    "observed": "Circular white closed drum with flat/lightly convex roof, stepped white cornice, arched dark niches separated by narrow columns, round frieze medallions. East rose-stone fountain facade projects outward with curved white crown. Surrounding lawn and curving walk.",
+    "uncertainties": "Height8.7m and18 niche count estimated from oblique. Sculpture, exact mouldings and current2026 existence not verified by a recent exterior photo. Mapped plan235m2 retained."
+  },
+  "rotundaReview": {
+    "status": "refinement-deferred",
+    "date": "2026-10-13",
+    "views": "build/city-exteriors/caesars-rotunda-reviewed",
+    "review": "Inspected street, rear and aerial installed views. Cylinder now has eighteen arched niche bays, white columns, medallion frieze, cornice and separate east fountain front. Basin stays within roadside island, behind public sidewalk. Fountain art still absent and paired front/background arches need sculptural-profile refinement.",
+    "tests": [
+      "build/city-exteriors/caesars-rotunda-audit.json",
+      "build/city-exteriors/caesars-garden-test.json",
+      "build/city-exteriors/mgm-preservation.json"
+    ],
+    "results": "38865 new triangles: no nonfinite, zero-area or duplicate triangles;water upward-facing. Garden309 regression samples pass.8478 road/landscape groups unchanged.",
+    "verify": "Latest CLI garden verifier failed menu start; repeat full verify at next integration checkpoint. Rotunda direct game review succeeded.",
+    "remaining": [
+      "No fountain sculpture or niche diorama artwork",
+      "Heights and decorative bay count estimated",
+      "Original garden planting absent",
+      "Fine fountain profile differs from reference",
+      "Not photorealistic completion"
+    ]
+  },
+  "cityPassCheckpoint": {
+    "status": "refinement-deferred",
+    "next": "Current OMNIA dayclub exact footprint, garden planting, fountain sculpture and previously listed public-route/facade refinements remain unfinished. Continue city-wide remaining exterior inventory with adjacent Forum Shops.",
+    "rotundaFrameMs": {
+      "p50": [
+        16.7,
+        16.7,
+        16.6
+      ],
+      "p95": [
+        18.3,
+        19,
+        18.1
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+ "name": "vegas-afterlight-continuous",
+ "music": ".bitmagic/film/music/bed-v1.mp3",
+ "musicStart": 17.7269,
+ "fadeIn": 0.8,
+ "fadeOut": 2.0,
+ "logo": {
+  "file": "tools/film/brand/bitmagic-logo-white.png",
+  "corner": "br",
+  "height": 0.05,
+  "margin": 0.022,
+  "opacity": 0.6,
+  "shadow": 0.45
+ },
+ "clips": [
+  {
+   "take": "tour",
+   "in": 0.0,
+   "dur": 122.32,
+   "label": "one continuous camera"
+  }
+ ],
+ "cards": [
+  {
+   "at": 0.5,
+   "dur": 3.2,
+   "style": "title",
+   "text": "VEGAS: AFTERLIGHT",
+   "fade": 0.8
+  },
+  {
+   "at": "end",
+   "dur": 4.2,
+   "style": "end",
+   "text": "VEGAS: AFTERLIGHT",
+   "sub": "THE STRIP IS YOURS",
+   "fade": 0.9,
+   "endPad": 0.4
+  }
+ ]
+}

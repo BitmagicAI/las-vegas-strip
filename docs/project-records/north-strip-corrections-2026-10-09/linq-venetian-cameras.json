@@ -1,0 +1,103 @@
+{
+ "viewport": [
+  1400,
+  900
+ ],
+ "dpr": 1,
+ "results": [
+  {
+   "view": "linq",
+   "tower": "at:65,100,-390,-2.18,.23",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 65,
+    "y": 100,
+    "z": -390
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 7.7,
+   "gpuP50": 16.53,
+   "gpuP90": 18.46,
+   "draws": 363,
+   "triangles": 4471346,
+   "passes": [
+    [
+     "output 1400x900",
+     8.68,
+     1
+    ],
+    [
+     "screen",
+     7.69,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.25,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "venetian",
+   "tower": "at:100,85,-410,-.81,.231",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 100,
+    "y": 85,
+    "z": -410
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 7.4,
+   "gpuP50": 5.34,
+   "gpuP90": 8.05,
+   "draws": 214,
+   "triangles": 6469411,
+   "passes": [
+    [
+     "output 1400x900",
+     2.49,
+     1
+    ],
+    [
+     "Lake mirror 700x450",
+     1.56,
+     0.5
+    ],
+    [
+     "screen",
+     1.24,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.35,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  }
+ ],
+ "errors": []
+}

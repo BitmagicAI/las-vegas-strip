@@ -1,0 +1,63 @@
+{
+ "name": "info-boxmatch",
+ "subframes": 1,
+ "seconds": 12.0,
+ "maxSeconds": 18.0,
+ "start": {
+  "at": [
+   300,
+   0.5,
+   900
+  ],
+  "dir": [
+   0,
+   -1
+  ],
+  "view": "first",
+  "warm": 8
+ },
+ "steps": [
+  {
+   "wait": 12.0
+  }
+ ],
+ "camera": [
+  {
+   "from": 0,
+   "to": 12.0,
+   "focus": "camera",
+   "keys": [
+    {
+     "t": 0,
+     "pos": [
+      420,
+      820,
+      1500
+     ],
+     "look": [
+      -60,
+      0,
+      380
+     ],
+     "roll": 0,
+     "fov": 45
+    },
+    {
+     "t": 12.0,
+     "pos": [
+      330,
+      760,
+      1150
+     ],
+     "look": [
+      -80,
+      0,
+      250
+     ],
+     "roll": 0,
+     "fov": 45
+    }
+   ]
+  }
+ ]
+}

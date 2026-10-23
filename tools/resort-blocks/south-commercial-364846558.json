@@ -1,0 +1,121 @@
+{
+  "id": "south-commercial-364846558",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364846558"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.08528,-115.17359&zoom=20&basemap=satellite",
+      "review": "Visually inspected mapped L-shape, green hip roof over east rectangle, flat west/south service roof, roof equipment, gravel yard, north/south boundary walls"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.08528,-115.17305&heading=270&pitch=5",
+      "review": "Google Street View February2025: east frontage with deep tan masonry piers, broad cream upper panels, dark lower recesses and shallow metal roof. Address4840 is panorama location, not asserted building address"
+    }
+  ],
+  "estimates": [
+    "Wallheight4.6m,eave4.95m,ridge7.2m estimated",
+    "Concealed north entrance,west service doors and internal window divisions inferred",
+    "Mapped lot orientation retained; yard bounds interpreted from satellite"
+  ],
+  "remaining": [
+    "Exact building identity not verified; no invented commercial sign",
+    "Reference trees and xeriscape planting not yet reproduced",
+    "Rear/entry details require closer reference; no playable interior",
+    "Facade masonry colour/roughness and roof-seam spacing not survey-calibrated"
+  ],
+  "triangles": 6088,
+  "batches": 17,
+  "optimizedMiB": 0.13,
+  "ownership": {
+    "removed": 34,
+    "colliderTrianglesRemoved": 34,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in SouthCommercial558 mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "910 roof-support samples PASS",
+    "6 approach walkinglegs PASS",
+    "All geometry finite and nondegenerate"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/south-commercial-364846558-final/south-commercial-east.png",
+    "build/city-exteriors/south-commercial-364846558-final/south-commercial-roof.png",
+    "build/city-exteriors/south-commercial-364846558-final/south-commercial-north.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "south-commercial-east",
+        "eye": [
+          5,
+          8,
+          3426
+        ],
+        "target": [
+          -52,
+          3,
+          3418
+        ],
+        "p": [
+          -5,
+          2,
+          3426
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.899999976158142
+      },
+      {
+        "name": "south-commercial-roof",
+        "eye": [
+          -15,
+          38,
+          3466
+        ],
+        "target": [
+          -52,
+          3,
+          3418
+        ],
+        "p": [
+          -22,
+          2,
+          3447
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.69999998807907
+      },
+      {
+        "name": "south-commercial-north",
+        "eye": [
+          -59,
+          6,
+          3381
+        ],
+        "target": [
+          -54,
+          3,
+          3413
+        ],
+        "p": [
+          -59,
+          2,
+          3385
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.600000023841858
+      }
+    ],
+    "limitation": "Not a vehicle or streaming route benchmark"
+  },
+  "visualCorrections": [
+    "Replaced converging roof seams after installed review; parallel raised strips in near detail remove interference pattern"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/southCommercial558-exterior.glb": "d5dad582dbddeb521a2ddc7f7991542be2486eded7b4a03ed720cb29914440ab",
+      "build/strip-landmarks/southCommercial558-exterior-collision.json": "21fe541645405edd381d56944b079943bbcd3636708c5e1c5d2f0bc096dee8b0"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "rio-conference",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/133755242"
+  ],
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1196,-115.1867,650a,350d,35y,90h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1196,-115.1867,750a,370d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1196,-115.1867,660a,360d,35y,270h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://www.riolasvegas.com/wp-content/uploads/2023/09/RI-23-024375-Sales-Deck-PPTPDFv6-2.pdf",
+      "provider": "Rio Las Vegas",
+      "inspected": "Page1 floor plan visually inspected; ballroom capacities read",
+      "localCopy": "docs/project-records/city-exteriors-2026-10-12/references/rio-sales-deck.pdf"
+    }
+  ],
+  "dimensions": "Official Pavilion clear ceiling9.144m, Amazon6.706m, Brasilia7.315m, Miranda5.486m; exterior roof elevations12.4/10.8/10.2/8.6m are visual estimates, not official heights.",
+  "remaining": [
+    "Patio palms and planting beds, detailed entry lighting housings",
+    "Walkable onward hotel connection not implemented",
+    "Exact roof slopes, mechanical fittings and wall proportions need closer survey"
+  ],
+  "geometry": {
+    "triangles": 7248,
+    "batches": 37,
+    "optimizedMiB": 0.15
+  },
+  "tests": "73 nondegenerate roof triangle samples plus2 raised/patio support samples PASS;1517 city collision cells valid;typecheck PASS;8 installed views inspected;full WebGPU verification PASS56fps startup3011bodies (not site benchmark)",
+  "initialFindings": "Four initial installed views inspected. South rotunda silhouette missing: added8.4m polygon roof before final capture; softened only convention material. Planting and interior connection remain outstanding.",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/rioConference-exterior.glb": "6596aa2d1e99742340dc047ca604f731b9e108e7154838ab821d37298130639b"
+    }
+  },
+  "viewsReviewed": [
+    "build/city-exteriors/rio-conference-after/west.png",
+    "build/city-exteriors/rio-conference-after/east.png",
+    "build/city-exteriors/rio-conference-after/roof.png",
+    "build/city-exteriors/rio-conference-after/patio.png",
+    "build/city-exteriors/rio-conference-final/west.png",
+    "build/city-exteriors/rio-conference-final/east.png",
+    "build/city-exteriors/rio-conference-final/roof.png",
+    "build/city-exteriors/rio-conference-final/patio.png"
+  ],
+  "reviewFindings": "Stepped roof masses and south octagonal rotunda now visible. Tan material softened. Public east door bays and west service shutters installed without reported overlaps. Patio lacks planting; retained surrounding parking road geometry is still coarse.",
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-rio-conference.log"
+}

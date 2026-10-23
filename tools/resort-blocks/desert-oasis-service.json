@@ -1,0 +1,170 @@
+{
+  "id": "desert-oasis-service",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364846551"
+  ],
+  "sources": [
+    "docs/project-records/city-exteriors-2026-10-12/desert-oasis-service-research.json"
+  ],
+  "remaining": [
+    "Height, door and louver arrangements inferred; no verified ground facade reference.",
+    "Large missing ground outside this parcel remains visible in aerial review; this is not a completed neighborhood.",
+    "Existing looping mapped road stubs retained.",
+    "Static review is not a full driving performance test."
+  ],
+  "triangles": 1572,
+  "batches": 11,
+  "optimizedMiB": 0.03,
+  "viewsInspected": [
+    "build/city-exteriors/desert-oasis-service-final/service-west.png",
+    "build/city-exteriors/desert-oasis-service-final/service-aerial.png",
+    "build/city-exteriors/desert-oasis-service-final/service-east.png"
+  ],
+  "tests": {
+    "roofSupport": 165,
+    "bidirectionalWalkingReports": 4,
+    "logs": [
+      "/tmp/dos-support.log",
+      "/tmp/dos-walk.log"
+    ]
+  },
+  "performance": {
+    "static960x540": [
+      {
+        "name": "service-west",
+        "eye": [
+          126,
+          5,
+          2747
+        ],
+        "target": [
+          145,
+          2.5,
+          2738
+        ],
+        "p": [
+          126,
+          1,
+          2747
+        ],
+        "p50": 16.600000023841858,
+        "p95": 20.100000023841858
+      },
+      {
+        "name": "service-aerial",
+        "eye": [
+          164,
+          24,
+          2762
+        ],
+        "target": [
+          145,
+          2,
+          2738
+        ],
+        "p": [
+          156,
+          1,
+          2754
+        ],
+        "p50": 17.900000035762787,
+        "p95": 22.099999964237213
+      },
+      {
+        "name": "service-east",
+        "eye": [
+          164,
+          5,
+          2729
+        ],
+        "target": [
+          145,
+          2.5,
+          2738
+        ],
+        "p": [
+          162,
+          1,
+          2730
+        ],
+        "p50": 17.30000001192093,
+        "p95": 20.80000001192093
+      }
+    ],
+    "baselineStatic960x540": [
+      {
+        "name": "service-west",
+        "eye": [
+          126,
+          5,
+          2747
+        ],
+        "target": [
+          145,
+          2.5,
+          2738
+        ],
+        "p": [
+          126,
+          1,
+          2747
+        ],
+        "p50": 17.69999998807907,
+        "p95": 22.80000001192093
+      },
+      {
+        "name": "service-aerial",
+        "eye": [
+          164,
+          24,
+          2762
+        ],
+        "target": [
+          145,
+          2,
+          2738
+        ],
+        "p": [
+          156,
+          1,
+          2754
+        ],
+        "p50": 23.099999964237213,
+        "p95": 30.400000035762787
+      },
+      {
+        "name": "service-east",
+        "eye": [
+          164,
+          5,
+          2729
+        ],
+        "target": [
+          145,
+          2.5,
+          2738
+        ],
+        "p": [
+          162,
+          1,
+          2730
+        ],
+        "p50": 18,
+        "p95": 23.100000023841858
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 10,
+    "colliderTrianglesRemoved": 10,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in desertOasisService mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/desertOasisService-exterior.glb": "f652a53ed9e88a7a4b096cea5d837c7ed85466f2dcdc8fefd86a9733096a8ef3",
+      "build/strip-landmarks/desertOasisService-exterior-collision.json": "a7cbdfe400a71f1a8d6dc3c5381d8979bf71e2e1ddd2f7739ce0edf1f2b9d3d6"
+    }
+  }
+}

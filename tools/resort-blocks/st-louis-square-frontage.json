@@ -1,0 +1,54 @@
+{
+  "id": "st-louis-square-frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364845137",
+    "way/364845138",
+    "way/364845136"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14862,-115.15370&zoom=20&basemap=satellite",
+      "observed": "Three shops: irregular western wing with red hipped roofs at ends and flat middle, small southern stepped pavilion, flat-roof eastern strip with small red corner roof. White lattice shade frames bridge plaza spaces."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14862,-115.15413&heading=90&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Red standing-seam metal roofs, pale white decorative stucco/pediments, brick lower walls and separate all-red-brick southern storefront. Large gridded security glazing; burgundy striped fabric awnings; trees and plaza railing. Source snapped36.1486643,-115.1542556. No exact tenant lettering yet claimed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14817,-115.15335&heading=330&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Snapped36.1480964,-115.1533961,515EStLouisAve. Southern/parking approach shows white cornices, brick base, large greenish gridded panes, columns under canopy and black boundary fence. CulinaryHealthFund pylon visible; tenant ownership between connected parcels remains uncertain, so do not assign that brand to all three shells."
+    }
+  ],
+  "plannedComponents": [
+    "Three mapped retail shells with distinct roof divisions",
+    "Street pediments, cornices, brick bands and glazed storefronts",
+    "Open shade lattice, plaza paving, accessible entry approaches",
+    "Rear service walls and roof equipment"
+  ],
+  "estimatedElevationsM": {
+    "wall": 4.2,
+    "ridge": 6.2
+  },
+  "remaining": [
+    "Roof and trim dimensions estimated; southern roof subdivision and seams need closer neutral-daylight review",
+    "Street trees, railings and frontage landscaping remain incomplete",
+    "Current tenant lettering and east/service openings not fully verified; no interior access claim",
+    "Facades retain repeated bay simplifications; match ornamental stepped parapets and bay positions more closely in refinement"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/st-louis-square-frontage-final",
+    "support": "build/city-exteriors/st-louis-square-frontage-collision.json",
+    "walk": "build/city-exteriors/st-louis-square-frontage-walk.json",
+    "ownership": "build/city-exteriors/st-louis-square-frontage-ownership-audit.json",
+    "visualReview": "All four first installed views inspected; southern wider arched windows corrected and west/south views rechecked.30806tri16batches.68MiB.187support6walkinglegsPASS,72oldtriangles removed. Static960x540 p95~18ms not driving benchmark. Not photorealistic completion."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/stLouisSquareFrontage-exterior.glb": "80a2002f88e17e5ea771b5c04e7da6b29a665cff59dbea1b4d75552711d113e1",
+      "build/strip-landmarks/stLouisSquareFrontage-exterior-collision.json": "a562399320f19cf44d540e96df43abf6e8161ead4c33d405f8070f2263907c06"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "defaults": {
+    "height": "900",
+    "population": "60"
+  },
+  "before": {
+    "environment": "1c324f9c-39f7-4350-973a-204565ed4c18",
+    "exposure": 0.9,
+    "pixelRatio": 1,
+    "auto": true,
+    "lightCount": 20
+  },
+  "ready": {
+    "canvas": [
+      1280,
+      720
+    ],
+    "saved": {
+      "daylight": "night",
+      "weather": "storm",
+      "rain": 1,
+      "wetness": 1,
+      "neon": 4,
+      "population": 48,
+      "seed": 1010
+    },
+    "height": "720",
+    "dynamic": true,
+    "mass": 1350.010009765625,
+    "manual": true,
+    "siteCount": 81682,
+    "hud": "0 km/h · 0 hits"
+  },
+  "exited": true,
+  "reentered": true,
+  "impacts": {
+    "hits": 1,
+    "voicesPlayed": 1,
+    "articulation": 3.106480760200944,
+    "speed": 39.518969750919965
+  },
+  "recovered": true,
+  "after": {
+    "environment": "1c324f9c-39f7-4350-973a-204565ed4c18",
+    "exposure": 0.9,
+    "pixelRatio": 1,
+    "auto": true,
+    "lightCount": 20,
+    "lit": 0,
+    "active": false,
+    "vehicle": false,
+    "eyes": false,
+    "audio": false,
+    "people": 0,
+    "rags": 0
+  },
+  "errors": []
+}

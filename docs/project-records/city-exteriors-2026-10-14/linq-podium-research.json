@@ -1,0 +1,43 @@
+{
+  "status": "active",
+  "source": "https://www.caesars.com/content/dam/ilv/Property/Maps/ilv-property-map.pdf",
+  "mapDate": "March2025 footer",
+  "observed": "Web tool PDF text read. Labels: District1/2/3elevators, west Strip, southLINQPromenade/HighRoller, eastMonorail/CaesarsForum, rideshareandvalet. DinerRoss/Discoshow upstairs, CarnavalCourt north. Local curl returnedHTML and browserPDFblank; layout pixels not inspected, do not claim visual map review.",
+  "localDownload": "linq-property-map.download-error.html",
+  "earthViews": [
+    {
+      "url": "https://earth.google.com/web/@36.1176,-115.1700,670a,420d,35y,270h,45t,0r",
+      "imageDate": "2022-11-09",
+      "seen": "Three bent blue hotel wings, inset courtyard pool, low white podium roof and pale multi-section Promenade roofs; east parking structure."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1175,-115.1712,670a,330d,35y,0h,20t,0r",
+      "imageDate": "2022-11-09",
+      "seen": "Long north restaurant roof, small offset roof volumes, rooftop service enclosures and mechanical groups, varied frontage along promenade."
+    }
+  ],
+  "uncertainty": "Roof equipment positions, dimensions and low-rise roof level changes estimated from oblique imagery. Map geometry text only. Exact tenant units still unverified.",
+  "architectReference": {
+    "url": "https://klaijubawald.com/projects/the-linq",
+    "inspected": "Hero photo directly viewed. North Promenade continuous upper glazing, thin metal horizontal bands, projecting vertical fins, dark ground-level storefront frames. Original 2014 branding is not treated as current tenancy."
+  },
+  "leasingReference": {
+    "url": "https://acadiarealty.com/wp-content/uploads/TheLinqPromenade.pdf",
+    "status": "Text accessible; local download403. No floorplan pixels inspected."
+  },
+  "baselineFindings": [
+    "Five installed baseline views inspected. Transparent shopglass reveals uncut solid shop walls; roof bands do not match pale reference; upper Promenade windows absent.",
+    "East LINQ self-parking way/115771879 remains gray-box outside original 200m inventory. Add to current block scope, research and reconstruct before advancing.",
+    "Pool/deck and exact tenant layouts remain separate unresolved details."
+  ],
+  "parkingReferences": [
+    {
+      "url": "https://earth.google.com/web/@36.1183,-115.1694,660a,260d,35y,270h,55t,0r",
+      "observed": "2022-11-09; pale covered L-shaped parking roof, open horizontal levels, narrow rectangular columns, small northeast roof headhouse and blue entrance sign."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1183,-115.1694,660a,230d,35y,315h,65t,0r",
+      "observed": "2022-11-09; southern open levels and flat roof, partly occluded by High Roller spokes. Not a source for detailed internal ramps."
+    }
+  ]
+}

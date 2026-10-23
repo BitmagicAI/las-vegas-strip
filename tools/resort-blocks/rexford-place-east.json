@@ -1,0 +1,150 @@
+{
+  "id": "rexford-place-east",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236746614",
+    "way/1236746613",
+    "way/1236746612",
+    "way/1236746611",
+    "way/1236621178",
+    "way/1236621177",
+    "way/1236621179",
+    "way/1236621176",
+    "way/1236621175",
+    "way/1236621174",
+    "way/1236621173"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15231,-115.14998&zoom=19&basemap=satellite",
+      "review": "East Rexford row is separate from eastward HousselsAve houses; white shallow roofs interspersed with brown/gray hips"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15231,-115.15035&heading=90&pitch=2",
+      "imageDate": "February2020",
+      "review": "Single-storey pale houses, recessed porches, white metal fences, narrow concrete drives, mature palms"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15299,-115.14988&heading=90&pitch=2",
+      "imageDate": "March2015",
+      "review": "North white/rose/tan low houses with hipped roofs and broad windows, yards and trees"
+    }
+  ],
+  "remaining": [
+    "Street references date2015/2020; current colors and obscured details uncertain",
+    "Windows, porch and garage details simplified and estimated",
+    "Referenced palms and dense garden planting not reproduced; four broadleaf trees only",
+    "Ground beyond yard patches and side drives remains sparse",
+    "No interiors, neutral daylight or route benchmark"
+  ],
+  "triangles": 15206,
+  "batches": 28,
+  "optimizedMiB": 12.17,
+  "metricScope": "Authored triangles exclude4existingCC0tree instances",
+  "tests": [
+    "1786 roof-support samples PASS",
+    "44 entrance approach legs in both directions PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/rexford-place-east-final/rexford-east-north.png",
+    "build/city-exteriors/rexford-place-east-final/rexford-east-middle.png",
+    "build/city-exteriors/rexford-place-east-final/rexford-east-south.png",
+    "build/city-exteriors/rexford-place-east-final/rexford-east-roof.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "rexford-east-north",
+        "eye": [
+          2080,
+          3,
+          -4113
+        ],
+        "target": [
+          2120,
+          1.8,
+          -4117
+        ],
+        "p": [
+          2092,
+          2,
+          -4115
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "rexford-east-middle",
+        "eye": [
+          2041,
+          3,
+          -4044
+        ],
+        "target": [
+          2080,
+          1.8,
+          -4046
+        ],
+        "p": [
+          2054,
+          2,
+          -4044
+        ],
+        "p50": 16.799999952316284,
+        "p95": 17.80000001192093
+      },
+      {
+        "name": "rexford-east-south",
+        "eye": [
+          2025,
+          3,
+          -3973
+        ],
+        "target": [
+          2062,
+          1.8,
+          -3971
+        ],
+        "p": [
+          2040,
+          2,
+          -3973
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.69999998807907
+      },
+      {
+        "name": "rexford-east-roof",
+        "eye": [
+          2020,
+          65,
+          -3940
+        ],
+        "target": [
+          2090,
+          2,
+          -4040
+        ],
+        "p": [
+          2040,
+          2,
+          -4040
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.69999998807907
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 212,
+    "colliderTrianglesRemoved": 212,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in RexfordPlaceEast mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/rexfordPlaceEast-exterior.glb": "e5d47c1761fb6d767ddddb6e4a142cc7725d6ea3669ee4204ddbeefe57b363db",
+      "build/strip-landmarks/rexfordPlaceEast-exterior-collision.json": "ac4aa3aa3e36c425254842838ec6d9ee81ed45ac778a29ec13d1f87ca389bbf6"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "wynn-south-frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/142899193",
+    "way/886592895"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12594,-115.16724&zoom=20&basemap=satellite",
+      "review": "Satellite inspected: landscaped lake and stepped retail rooftops; ownership and footprint correspondence still to verify"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12571,-115.16645&zoom=21&basemap=satellite",
+      "review": "South porte-cochere satellite: irregular footprint, dark sloped perimeter roof around tan central roof"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12540,-115.16645&heading=0&pitch=10",
+      "imageDate": "January2025",
+      "review": "Wynn South Gate Dr panorama: broad cream elliptical arches, square stone piers with terracotta relief panels, dark hip roof and continuous cornice"
+    }
+  ],
+  "remaining": [
+    "Waterfall-area mapped public building142899193 remains gray placeholder; site ownership unresolved",
+    "Larger retained podium still has approximate facade and roof, sparse landscaping",
+    "Detailed metal seams, relief sculpting and neutral daylight review unfinished",
+    "No vehicle clearance/turning benchmark"
+  ],
+  "estimates": [
+    "Canopy eaves7.1m and crown8.7m estimated from car and arch scale; pier spacing inferred",
+    "Existing larger podium is retained and remains approximate"
+  ],
+  "implementedMappedIds": [
+    "way/886592895"
+  ],
+  "unresolvedMappedIds": [
+    "way/142899193"
+  ],
+  "triangles": 12221,
+  "batches": 7,
+  "tests": [
+    "272 roof support PASS",
+    "8 walking legs PASS with retained Wynn podium collision"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/wynn-south-canopy-final/wynn-canopy-south.png",
+    "build/city-exteriors/wynn-south-canopy-final/wynn-canopy-roof.png",
+    "build/city-exteriors/wynn-south-canopy-final/wynn-canopy-under.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "wynn-canopy-south",
+        "eye": [
+          571,
+          3,
+          -1048
+        ],
+        "target": [
+          589,
+          4,
+          -1080
+        ],
+        "p": [
+          571,
+          2,
+          -1048
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.400000035762787
+      },
+      {
+        "name": "wynn-canopy-roof",
+        "eye": [
+          568,
+          30,
+          -1050
+        ],
+        "target": [
+          587,
+          5,
+          -1080
+        ],
+        "p": [
+          571,
+          2,
+          -1048
+        ],
+        "p50": 16.599999964237213,
+        "p95": 18
+      },
+      {
+        "name": "wynn-canopy-under",
+        "eye": [
+          591,
+          2,
+          -1074
+        ],
+        "target": [
+          579,
+          5,
+          -1086
+        ],
+        "p": [
+          591,
+          2,
+          -1074
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.399999976158142
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 184,
+    "colliderTrianglesRemoved": 184,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in WynnSouthCanopy mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/wynnSouthCanopy-exterior.glb": "94a3d41354b3d71f41c36761dabb7420880957042ae98df1d05d385544b3bdc6",
+      "build/strip-landmarks/wynnSouthCanopy-exterior-collision.json": "c3f1c0eb89329b220932faaaa6864ba810438f468d6436808c81b1b2994d3167"
+    }
+  }
+}

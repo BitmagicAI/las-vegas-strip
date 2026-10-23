@@ -1,0 +1,101 @@
+{
+  "id": "allegiant-stadium",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.0908,-115.1833,670a,700d,35y,245h,60t,0r",
+      "date": "2022-11-09",
+      "review": "Inspected north/east aerial: black shell with sweeping silver bands, dark gray roof annulus, white translucent ribbed central roof; north glass opening and entry terrace."
+    },
+    {
+      "url": "https://www.allegiantstadium.com/plan-your-visit/a-z-guide/",
+      "review": "Official venue describes fixed ETFE roof."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0908,-115.1833,670a,600d,35y,60h,65t,0r",
+      "date": "2022-11-09",
+      "review": "Southwest aerial inspected; ribbed central membrane, roof wordmarks, crossing silver shell ribbons, south service apron and exterior grass tray."
+    }
+  ],
+  "dimensions": "Mapped69m total height; roof annulus62m, central membrane rise7m are estimated from mapped roof-height and imagery. Individual facade-band dimensions estimated.",
+  "remaining": [
+    "Entry terrace/ramp route validation",
+    "Landscape and service apron",
+    "Exact signs/media displays",
+    "Route performance comparison"
+  ],
+  "baseline": [
+    "build/city-exteriors/allegiant-before/stadium-north.png",
+    "build/city-exteriors/allegiant-before/stadium-south.png",
+    "build/city-exteriors/allegiant-before/stadium-entry.png"
+  ],
+  "baselineReview": "All three PNGs inspected: plain reflective drum with distorted roof and no facade bands, doors or signs.",
+  "implementation": {
+    "ids": [
+      "way/691478555",
+      "way/1249542290",
+      "way/1249571723",
+      "way/1249571724",
+      "way/1249571731",
+      "way/1249571734",
+      "way/1249571735",
+      "way/1249571736",
+      "way/1249571737",
+      "way/1249571742",
+      "way/1249571743",
+      "way/1249571744",
+      "way/1249571745",
+      "way/1249878676",
+      "way/1249878677",
+      "way/1252866565",
+      "way/1252866566",
+      "way/1252866567",
+      "way/1252866568",
+      "way/1252866569",
+      "way/1252866570",
+      "way/1252866571",
+      "way/1252866572",
+      "way/1252866573",
+      "way/1252866574",
+      "way/1252866575",
+      "way/1252866576",
+      "way/1252866577",
+      "relation/17195514",
+      "relation/17195515",
+      "relation/17195516",
+      "relation/17195517",
+      "relation/17195518",
+      "relation/17195519",
+      "relation/17242955",
+      "relation/17242956",
+      "relation/17242957",
+      "relation/17242958",
+      "relation/17242959",
+      "relation/17242960"
+    ],
+    "triangles": 89751,
+    "batches": 13,
+    "tests": "5714 flat and sloped roof support samples pass.",
+    "roofBrandingParts": 38
+  },
+  "installedReview": {
+    "iteration1": "All three screenshots inspected. Found source-map67m logo extrusions projecting above replacement roof and lanai glazing crossing coarsely tessellated curved shell. Corrected to flat mapped logo polygons and matched2m shell/glass subdivisions. Final recapture pending.",
+    "final": "Inspected all three final captures. North lanai mullions and crossing ribbons now continuous; flat mapped roof lettering; no visible protruding letter volumes. Entry terrace and service landscape remain incomplete.",
+    "captures": [
+      "build/city-exteriors/allegiant-after/stadium-north.png",
+      "build/city-exteriors/allegiant-after/stadium-south.png",
+      "build/city-exteriors/allegiant-after/stadium-entry.png"
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/allegiant.py": "3118bb191259e1842a6c3151a4088cfa25c31d9fa2862313d54de7afbba8729a",
+      "build/optimized/build/strip-landmarks/allegiantStadium-exterior.glb": "31c0005d897ffd07f76f60c436480a5f1d4c9242e0719c77fb3a5512f3a95960"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed,56fps at spawn,3011bodies; not block route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-allegiant.log"
+  }
+}

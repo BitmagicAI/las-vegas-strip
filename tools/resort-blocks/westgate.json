@@ -1,0 +1,47 @@
+{
+  "id": "westgate",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://www.westgateresorts.com/hotels/nevada/las-vegas/westgate-las-vegas-resort-casino/faq/floor-count/",
+      "establishes": "114m, 30-floor tower."
+    },
+    {
+      "url": "https://webmedia.westgateresorts.com/documents/getDocument?id=2965",
+      "establishes": "Official conference footprint and dimensions; not facade fit evidence."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1360,-115.1520,620a,350d,35y,90h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2024-03-05",
+      "establishes": "Dark vertical window strips, white ribs and roofline trim; tan lower roofs, blue monorail station and elevated pool court. Visually inspected."
+    }
+  ],
+  "remaining": [
+    "Stepped penthouse crown and precise window rhythm still require matched comparison.",
+    "Pool footprint/elevation estimated; deck furniture, planting, entry canopies and signage unfinished.",
+    "Existing guest-core openings retained; full public-route traversal pending."
+  ],
+  "geometry": {
+    "triangles": 20347,
+    "batches": 22,
+    "optimizedMiB": 0.33
+  },
+  "estimates": {
+    "towerHeightM": 114,
+    "lowerPodiumM": 12,
+    "stationM": 8,
+    "garagesM": 17,
+    "windowPitchM": 3.1,
+    "note": "Tower height corroborated by official FAQ; mapped footprints retained. Lower heights and trim photo-estimated."
+  },
+  "evidence": [
+    "build/city-exteriors/westgate-before",
+    "build/city-exteriors/westgate-after",
+    "build/city-exteriors/westgate-final"
+  ],
+  "tests": {
+    "typecheck": "passed",
+    "visual": "All three final installed views inspected. No obvious z-fighting; lower roof and exact crown still too plain."
+  }
+}

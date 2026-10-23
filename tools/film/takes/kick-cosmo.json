@@ -1,0 +1,50 @@
+{
+ "start": {
+  "hotel": [
+   "cosmo-boulevard",
+   40,
+   null,
+   "corridor"
+  ],
+  "door": {},
+  "view": "first",
+  "warm": 3
+ },
+ "steps": [
+  {
+   "approachDoor": {}
+  },
+  {
+   "wait": 0.35
+  },
+  {
+   "kick": true
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "enterRoom": {
+    "distance": 5.6
+   }
+  },
+  {
+   "look": {
+    "pitch": -0.12,
+    "seconds": 1.4
+   }
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "mark": "window"
+  },
+  {
+   "wait": 3.0
+  }
+ ],
+ "maxSeconds": 45,
+ "name": "kick-cosmo",
+ "subframes": 4
+}

@@ -1,0 +1,125 @@
+{
+  "id": "panorama",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1072,-115.1825,720a,440d,35y,270h,55t,0r",
+      "imagery": "2022-11-09",
+      "review": "Visually inspected east elevation, balcony bands, roof parking and asymmetric sky recesses."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1072,-115.1831,690a,370d,35y,90h,50t,0r",
+      "imagery": "2022-11-09",
+      "review": "Visually inspected west pool courts between low apartment wings and towers."
+    }
+  ],
+  "remaining": [
+    "Garden planting, exact curved crown profile and entrance furniture incomplete.",
+    "Recess profiles and garage heights are photo estimates.",
+    "Public entrance route walk and pool enclosure unverified."
+  ],
+  "estimates": {
+    "towerM": 101,
+    "garageM": 12,
+    "recessLowerM": [
+      72,
+      39
+    ],
+    "recessDepthM": 4,
+    "note": "Tower heights mapped; garage elevations, recess dimensions and pool footprints estimated from imagery."
+  },
+  "geometry": {
+    "triangles": 19524,
+    "batches": 54,
+    "optimizedMiB": 0.31,
+    "source": "tools/strip-landmarks/panorama_exterior.py",
+    "glbSha256": "e0f1a4841d79e91f432b93b7c70291a4943fd45f42fe5fe03fc3e7248319ea01"
+  },
+  "components": {
+    "towers": [
+      "way/495545499",
+      "way/495545514"
+    ],
+    "garages": [
+      "way/495545498",
+      "way/495545510"
+    ],
+    "lowWings": [
+      "way/495545500",
+      "way/495545502",
+      "way/495545517",
+      "way/495545518"
+    ],
+    "pools": "Two western courts, approximate outlines",
+    "smallStructures": "Twelve mapped rooftop access huts and gate structures replaced"
+  },
+  "tests": {
+    "support": "55 parking roof samples pass",
+    "typecheck": "passed",
+    "initialVisual": "All3 before and3 initial after views inspected. Internal recess bulkheads and bitumen parking detail found and corrected; final capture pending.",
+    "finalVisual": "All four corrected installed views inspected, including western pools. Internal segment bulkheads removed; parking uses concrete. Crown, recess exact profile, planting and entrance refinements remain.",
+    "frameTimes": [
+      {
+        "name": "panorama-aerial",
+        "eye": [
+          -680,
+          195,
+          1100
+        ],
+        "target": [
+          -853,
+          35,
+          980
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.5
+      },
+      {
+        "name": "panorama-west",
+        "eye": [
+          -950,
+          5,
+          1010
+        ],
+        "target": [
+          -855,
+          48,
+          984
+        ],
+        "p50": 17.5,
+        "p95": 21.09999990463257
+      },
+      {
+        "name": "panorama-podium",
+        "eye": [
+          -745,
+          35,
+          982
+        ],
+        "target": [
+          -840,
+          14,
+          942
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.5
+      },
+      {
+        "name": "panorama-courts",
+        "eye": [
+          -975,
+          75,
+          1000
+        ],
+        "target": [
+          -884,
+          10,
+          980
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.600000143051147
+      }
+    ]
+  },
+  "evidence": "build/city-exteriors/panorama-corrected"
+}

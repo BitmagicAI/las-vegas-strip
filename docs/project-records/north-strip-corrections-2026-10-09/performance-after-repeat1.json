@@ -1,0 +1,147 @@
+{
+ "viewport": [
+  1280,
+  720
+ ],
+ "dpr": 1,
+ "results": [
+  {
+   "view": "linq",
+   "tower": "at:-75,90,-440,-2.1,-.2",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -75,
+    "y": 90,
+    "z": -440
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 7.9,
+   "gpuP50": 4.41,
+   "gpuP90": 4.97,
+   "draws": 441,
+   "triangles": 3995186,
+   "passes": [
+    [
+     "output 1280x720",
+     2.97,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.8,
+     1
+    ],
+    [
+     "screen",
+     0.67,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "ti",
+   "tower": "at:420,130,-790,1.1,-.15",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 420,
+    "y": 130,
+    "z": -790
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 7.2,
+   "gpuP50": 4.52,
+   "gpuP90": 7.83,
+   "draws": 160,
+   "triangles": 6224312,
+   "passes": [
+    [
+     "Lake mirror 640x360",
+     1.94,
+     0.5
+    ],
+    [
+     "output 1280x720",
+     1.89,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.59,
+     1
+    ],
+    [
+     "screen",
+     0.34,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "forum",
+   "tower": "at:180,200,-400,1.4,-.45",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 180,
+    "y": 200,
+    "z": -400
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.4,
+   "gpuP50": 4.14,
+   "gpuP90": 4.48,
+   "draws": 167,
+   "triangles": 4367566,
+   "passes": [
+    [
+     "output 1280x720",
+     2.45,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     1.31,
+     1
+    ],
+    [
+     "screen",
+     0.37,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,123 @@
+{
+  "id": "bali-hai-service",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/133904624"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.08182,-115.17377&zoom=20&basemap=satellite",
+      "review": "Green gabled metal roof, four pairs of rooflights, ridge ventilators, paved storage yard adjacent golf course"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.08182,-115.17300&heading=270&pitch=3",
+      "imageDate": "February2025",
+      "review": "Green corrugated walls and roof, white roller shutter, block boundary walls, containers, trees. Panorama address5200 not asserted building identity"
+    }
+  ],
+  "estimates": [
+    "Eave4.5m ridge6.2m inferred",
+    "Concealed reardoors and service placement inferred"
+  ],
+  "remaining": [
+    "Exact service operator not verified",
+    "Interior and equipment identities not reproduced",
+    "Trees and full yard equipment density missing",
+    "Roller door count/layout partially inferred because yard clutter hides facade",
+    "Exact roof/wall dimensions and colour not survey-calibrated",
+    "Some distant normal-map striping remains; no photorealistic completion claim"
+  ],
+  "triangles": 7290,
+  "batches": 25,
+  "optimizedMiB": 0.17,
+  "ownership": {
+    "removed": 10,
+    "colliderTrianglesRemoved": 10,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in BaliHaiService mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "756 roof-support samples PASS",
+    "10 entrance/yard walkinglegs PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/bali-hai-service-final/bali-service-east.png",
+    "build/city-exteriors/bali-hai-service-final/bali-service-roof.png",
+    "build/city-exteriors/bali-hai-service-final/bali-service-yard.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "bali-service-east",
+        "eye": [
+          -12,
+          7,
+          3797
+        ],
+        "target": [
+          -68,
+          3,
+          3806
+        ],
+        "p": [
+          -14,
+          2,
+          3797
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.399999976158142
+      },
+      {
+        "name": "bali-service-roof",
+        "eye": [
+          -26,
+          43,
+          3839
+        ],
+        "target": [
+          -68,
+          3,
+          3806
+        ],
+        "p": [
+          -29,
+          2,
+          3834
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.399999976158142
+      },
+      {
+        "name": "bali-service-yard",
+        "eye": [
+          -33,
+          3,
+          3787
+        ],
+        "target": [
+          -67,
+          2.8,
+          3807
+        ],
+        "p": [
+          -33,
+          2,
+          3787
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.900000035762787
+      }
+    ],
+    "limitation": "Not a full driving or streaming benchmark"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/baliHaiService-exterior.glb": "dc6e556f10c04379d7bdff5e29a8c6c8f34023cd93613c9cc00c8dda205f9c2c",
+      "build/strip-landmarks/baliHaiService-exterior-collision.json": "7639cd2d1f7bff0f7402c66280c7e19434d3dba80726f145ec5b2524cc26b618"
+    }
+  },
+  "visualCorrections": [
+    "Added missing entrance support apron",
+    "Replaced thin roofrib geometry with original filtered normal map to reduce aliasing"
+  ]
+}

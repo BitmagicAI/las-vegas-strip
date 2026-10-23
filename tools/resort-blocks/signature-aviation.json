@@ -1,0 +1,59 @@
+{
+  "id": "signature-aviation",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Signature+Aviation+Las+Vegas+Strip",
+      "author": "Signature Aviation",
+      "date": "2017-06 photo;2011-12 capture",
+      "observed": "Public exterior inspected: white horizontal cladding,2 window bands, projected canopy, Signature Flight Support signage6005. Historicalbranding notassumedcurrent."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Signature+Aviation+Las+Vegas+Strip",
+      "author": "James Hogg",
+      "date": "2021-12 photo;2021-11 capture",
+      "observed": "Night airside photo inspected: tallblueglass lobby, projectingmetalcladding frame, lowflat mechanicalroof."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.080242,-115.171057,160m/data=!3m1!1e3",
+      "observed": "Satellite inspected: crescent/wedgeplan,westcanopy,publicparkingloop,apronnortheast."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.080381,-115.1716129,664a,75y,20.98h,90t/data=!3m7!1e1!3m5!1sKpTR03tzJMLZZTS4FOhhig!2e0",
+      "date": "2020-03",
+      "observed": "StreetView inspected north of terminal canopy: white horizontal cladding, gravel gardens,apronfence; result was returned by5195addressbutitsactualcoordinatesareSignature,not5195."
+    }
+  ],
+  "dimensions": "Mapped terminal9m/canopy6m tags;windowheightspierwidthestimatedfromphotos.",
+  "remaining": [
+    "Current signage font/logo approximate",
+    "Landscape and parking details incomplete",
+    "No interiors authored;publicdoorclosed",
+    "Full nighttime illumination not verified",
+    "Existing city ground outside the terminal plot remains incomplete",
+    "Service planting and full parking reference fit remain"
+  ],
+  "implemented": [
+    "Mapped terminal with two public window bands and tall airside glazing",
+    "Open canopy using separate mapped roof footprint",
+    "Cladding joints,roofplant,doorframes and bollards",
+    "Local site ground,parking marks and gravel islands"
+  ],
+  "validation": {
+    "support": "408 floor/headroom samples pass",
+    "walking": "3 entrance legs both directions pass",
+    "visual": "Three installed views inspected; front/aerial rechecked after closing site ground gaps",
+    "performance": "Fixed960x540ultra~16.7ms p50/18.1ms p95;not routebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/signature-aviation-final/signature-front.png",
+    "build/city-exteriors/signature-aviation-final/signature-airside.png",
+    "build/city-exteriors/signature-aviation-final/signature-aerial.png"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/signatureAviation-exterior.glb": "53374ebf6c356364200b5a197f4b234c8ebae85c9ab523f0748e5e6f7e21c5e2",
+      "build/strip-landmarks/signatureAviation-exterior-collision.json": "51462e90fede84e8278b21a539bc58703637075e0705f1efc062d8eaaeb20e17"
+    }
+  }
+}

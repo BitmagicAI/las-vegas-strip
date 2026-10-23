@@ -1,0 +1,295 @@
+{
+ "viewport": [
+  1505,
+  772
+ ],
+ "dpr": 2,
+ "results": [
+  {
+   "view": "corridor-caesars",
+   "tower": "caesars-palace",
+   "floor": 3,
+   "room": null,
+   "roomView": "corridor",
+   "placed": {
+    "x": -406,
+    "y": 10.9,
+    "z": -41.8
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.8,
+   "gpuP50": 8.41,
+   "gpuP90": 8.56,
+   "draws": 160,
+   "triangles": 54174,
+   "passes": [
+    [
+     "screen",
+     4.03,
+     1
+    ],
+    [
+     "output 3010x1544",
+     3.91,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.07,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 60,
+     "gpuP50": 11.04,
+     "cpuP50": 3.7,
+     "batched": {
+      "AmbientLight": 1,
+      "HemisphereLight": 1,
+      "DirectionalLight": 0,
+      "PointLight": 32,
+      "SpotLight": 0
+     }
+    }
+   }
+  },
+  {
+   "view": "jeep-west",
+   "tower": "at:-60,0.4,540,3.1416,-0.1",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -60,
+    "y": 0.4,
+    "z": 540
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.5,
+   "gpuP50": 10.32,
+   "gpuP90": 13.39,
+   "draws": 363,
+   "triangles": 10031672,
+   "passes": [
+    [
+     "output 3010x1544",
+     6.25,
+     1
+    ],
+    [
+     "screen",
+     2.99,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     1.28,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 22.7,
+     "gpuP50": 12.62,
+     "cpuP50": 6.4,
+     "batched": {
+      "AmbientLight": 1,
+      "HemisphereLight": 1,
+      "DirectionalLight": 0,
+      "PointLight": 32,
+      "SpotLight": 0
+     }
+    }
+   }
+  },
+  {
+   "view": "garden",
+   "tower": "at:-60,0.4,540,1.5708,0",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -60,
+    "y": 0.4,
+    "z": 540
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.8,
+   "gpuP50": 10.16,
+   "gpuP90": 10.88,
+   "draws": 296,
+   "triangles": 10306673,
+   "passes": [
+    [
+     "output 3010x1544",
+     6.02,
+     1
+    ],
+    [
+     "screen",
+     2.52,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     1.03,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 60,
+     "gpuP50": 17.77,
+     "cpuP50": 6.6,
+     "batched": {
+      "AmbientLight": 1,
+      "HemisphereLight": 1,
+      "DirectionalLight": 0,
+      "PointLight": 32,
+      "SpotLight": 0
+     }
+    }
+   }
+  },
+  {
+   "view": "trees",
+   "tower": "at:-120,0.4,470,0.8,-0.05",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -120,
+    "y": 0.4,
+    "z": 470
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.6,
+   "gpuP50": 11.39,
+   "gpuP90": 12.39,
+   "draws": 272,
+   "triangles": 14719567,
+   "passes": [
+    [
+     "output 3010x1544",
+     6.66,
+     1
+    ],
+    [
+     "screen",
+     2.77,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     1.35,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 60,
+     "gpuP50": 17.76,
+     "cpuP50": 6.3,
+     "batched": {
+      "AmbientLight": 1,
+      "HemisphereLight": 1,
+      "DirectionalLight": 0,
+      "PointLight": 32,
+      "SpotLight": 0
+     }
+    }
+   }
+  },
+  {
+   "view": "strip-n",
+   "tower": "at:0,0.4,300,3.1416,0.05",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 0,
+    "y": 0.4,
+    "z": 300
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.6,
+   "gpuP50": 8.77,
+   "gpuP90": 10.7,
+   "draws": 313,
+   "triangles": 6244281,
+   "passes": [
+    [
+     "output 3010x1544",
+     6.08,
+     1
+    ],
+    [
+     "screen",
+     2.12,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.56,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 60,
+     "gpuP50": 9.03,
+     "cpuP50": 5.5,
+     "batched": {
+      "AmbientLight": 1,
+      "HemisphereLight": 1,
+      "DirectionalLight": 0,
+      "PointLight": 32,
+      "SpotLight": 0
+     }
+    }
+   }
+  }
+ ],
+ "errors": []
+}

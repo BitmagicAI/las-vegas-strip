@@ -1,0 +1,50 @@
+{
+  "id": "peppermill-retail",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1333,-115.1633,620a,160d,35y,90h,78t,0r",
+      "imagery": "2024-03-05",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13285,-115.1637,620a,180d,35y,55h,78t,0r",
+      "imagery": "2022-11-09 to2024-03-05",
+      "inspected": true
+    },
+    {
+      "url": "https://www.peppermilllasvegas.com/about-us",
+      "inspected": "Text; confirms restaurant beside Ross"
+    }
+  ],
+  "dimensions": "Mapped footprints;Peppermill4m eaves9mhip;Ross8mroof/10mfront;otherretail5.6\u20137m roofs estimated. Walgreens corner rounded within footprint.",
+  "remaining": [
+    "Exact storefront tenants and dimensions",
+    "Signs beside driveway, landscaping",
+    "Public interior onward routes",
+    "Parking apron, landscaping and freestanding signs remain unfinished",
+    "Peppermill roof texture and ornate sign typography; tenant-specific fine facade details"
+  ],
+  "geometry": {
+    "triangles": 6430,
+    "batches": 43,
+    "optimizedMiB": 0.61
+  },
+  "tests": "84 upward-facing floor and roof support points pass; typecheck pass",
+  "installedReview": {
+    "views": [
+      "build/city-exteriors/peppermill-retail-final/retail-front.png",
+      "build/city-exteriors/peppermill-retail-final/peppermill-entry.png",
+      "build/city-exteriors/peppermill-retail-final/ross-front.png",
+      "build/city-exteriors/peppermill-retail-final/walgreens-corner.png"
+    ],
+    "inspected": true,
+    "findings": "Five blank shells replaced with stepped commercial frontage, glazing, awnings, detailed roof equipment and Peppermill hip roof. Revised Ross caps and larger lettering visible. No obvious shell overlap. Architectural approximation; grounds still incomplete."
+  },
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/peppermillRetail-exterior.glb": "24fb697972a7f9ec033c1e1af71a33fb1111d0d110f74bc5916c6bb56d09b99e"
+    }
+  },
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-peppermill-retail.log"
+}

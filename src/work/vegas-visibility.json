@@ -1,0 +1,2854 @@
+{
+  "version": 2,
+  "zones": [
+    {
+      "id": "paris-arrival-vestibule",
+      "name": "Paris main entrance vestibule",
+      "building": "paris",
+      "center": [
+        126.8,
+        3.65,
+        430.3
+      ],
+      "size": [
+        8.4,
+        7.3,
+        11.4
+      ],
+      "yaw": 0,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        126.8,
+        3.65,
+        430.3
+      ],
+      "sourceSize": [
+        8.4,
+        7.3,
+        11.4
+      ],
+      "sourceYaw": 0,
+      "geoTransform": {
+        "key": "paris-arrival",
+        "source": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "target": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "osm": [],
+        "linear": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "translation": [
+          0,
+          0
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone8",
+      "name": "paris_lift_ground",
+      "building": "paris",
+      "center": [
+        74.2009559115967,
+        1.5,
+        400.7990440884033
+      ],
+      "size": [
+        1.6916488222698072,
+        3.0,
+        1.6916488222698074
+      ],
+      "yaw": 0.7853981633974483,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        92.64644660940672,
+        1.5,
+        -38.64644660940672
+      ],
+      "sourceSize": [
+        2.0,
+        3.0,
+        2.0
+      ],
+      "sourceYaw": 0.7853981633974483,
+      "geoTransform": {
+        "key": "eiffel",
+        "source": [
+          46.3,
+          -85.7,
+          139.7,
+          7.7
+        ],
+        "target": [
+          35,
+          361,
+          114,
+          440
+        ],
+        "osm": [
+          "way/27831699"
+        ],
+        "linear": [
+          0.8458244111349037,
+          0.0,
+          -0.0,
+          0.8458244111349036
+        ],
+        "translation": [
+          -4.16167023554604,
+          433.48715203426127
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone7",
+      "name": "paris_observation_envelope",
+      "building": "paris",
+      "center": [
+        111.06857142857143,
+        141.9,
+        428.0625
+      ],
+      "size": [
+        14.884033068628899,
+        3.8,
+        14.884033068628897
+      ],
+      "yaw": 0.9615246682610199,
+      "windowed": true,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        93.0,
+        141.9,
+        -39.0
+      ],
+      "sourceSize": [
+        11.8,
+        3.8,
+        11.8
+      ],
+      "sourceYaw": 0.7853981633974483,
+      "geoTransform": {
+        "key": "paris",
+        "source": [
+          41,
+          -138,
+          216,
+          54
+        ],
+        "target": [
+          35,
+          327,
+          291,
+          523
+        ],
+        "osm": [
+          "way/33974140",
+          "way/27831697"
+        ],
+        "linear": [
+          1.4628571428571429,
+          0.0,
+          -0.0,
+          1.0208333333333333
+        ],
+        "translation": [
+          -24.977142857142866,
+          467.875
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone2",
+      "name": "bellagio_staff_lounge",
+      "building": "bellagio",
+      "center": [
+        -360.2307692307693,
+        2.1,
+        272.02631578947364
+      ],
+      "size": [
+        15.692307692307693,
+        4.2,
+        19.789473684210527
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -209.0,
+        2.1,
+        -58.0
+      ],
+      "sourceSize": [
+        12.0,
+        4.2,
+        16.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "bellagio",
+        "source": [
+          -179,
+          -113,
+          -140,
+          77
+        ],
+        "target": [
+          -321,
+          204,
+          -270,
+          439
+        ],
+        "osm": [
+          "way/25723909"
+        ],
+        "linear": [
+          1.3076923076923077,
+          0.0,
+          -0.0,
+          1.236842105263158
+        ],
+        "translation": [
+          -86.92307692307693,
+          343.7631578947368
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone3",
+      "name": "bellagio_stores",
+      "building": "bellagio",
+      "center": [
+        -360.2307692307693,
+        2.1,
+        299.2368421052631
+      ],
+      "size": [
+        15.692307692307693,
+        4.2,
+        19.789473684210527
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -209.0,
+        2.1,
+        -36.0
+      ],
+      "sourceSize": [
+        12.0,
+        4.2,
+        16.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "bellagio",
+        "source": [
+          -179,
+          -113,
+          -140,
+          77
+        ],
+        "target": [
+          -321,
+          204,
+          -270,
+          439
+        ],
+        "osm": [
+          "way/25723909"
+        ],
+        "linear": [
+          1.3076923076923077,
+          0.0,
+          -0.0,
+          1.236842105263158
+        ],
+        "translation": [
+          -86.92307692307693,
+          343.7631578947368
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone4",
+      "name": "bellagio_medical",
+      "building": "bellagio",
+      "center": [
+        -360.2307692307693,
+        2.1,
+        326.4473684210526
+      ],
+      "size": [
+        15.692307692307693,
+        4.2,
+        19.789473684210527
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -209.0,
+        2.1,
+        -14.0
+      ],
+      "sourceSize": [
+        12.0,
+        4.2,
+        16.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "bellagio",
+        "source": [
+          -179,
+          -113,
+          -140,
+          77
+        ],
+        "target": [
+          -321,
+          204,
+          -270,
+          439
+        ],
+        "osm": [
+          "way/25723909"
+        ],
+        "linear": [
+          1.3076923076923077,
+          0.0,
+          -0.0,
+          1.236842105263158
+        ],
+        "translation": [
+          -86.92307692307693,
+          343.7631578947368
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone5",
+      "name": "bellagio_security",
+      "building": "bellagio",
+      "center": [
+        -360.2307692307693,
+        2.1,
+        353.6578947368421
+      ],
+      "size": [
+        15.692307692307693,
+        4.2,
+        19.789473684210527
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -209.0,
+        2.1,
+        8.0
+      ],
+      "sourceSize": [
+        12.0,
+        4.2,
+        16.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "bellagio",
+        "source": [
+          -179,
+          -113,
+          -140,
+          77
+        ],
+        "target": [
+          -321,
+          204,
+          -270,
+          439
+        ],
+        "osm": [
+          "way/25723909"
+        ],
+        "linear": [
+          1.3076923076923077,
+          0.0,
+          -0.0,
+          1.236842105263158
+        ],
+        "translation": [
+          -86.92307692307693,
+          343.7631578947368
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone10",
+      "name": "caesars_room_185",
+      "building": "caesars",
+      "center": [
+        -340.4358068315666,
+        4.0,
+        -105.40362225097033
+      ],
+      "size": [
+        25.371024734982335,
+        8.0,
+        37.25743855109962
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -168.0,
+        4.0,
+        -250.0
+      ],
+      "sourceSize": [
+        12.0,
+        8.0,
+        12.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "caesars",
+        "source": [
+          -213.2,
+          -296.25,
+          -43.4,
+          -180.3
+        ],
+        "target": [
+          -436,
+          -249,
+          -77,
+          111
+        ],
+        "osm": [
+          "way/115672893",
+          "way/34068416"
+        ],
+        "linear": [
+          2.114252061248528,
+          0.0,
+          -0.0,
+          3.104786545924968
+        ],
+        "translation": [
+          14.758539458186135,
+          670.7930142302718
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone11",
+      "name": "caesars_room_205",
+      "building": "caesars",
+      "center": [
+        -340.4358068315666,
+        4.0,
+        -43.307891332470945
+      ],
+      "size": [
+        25.371024734982335,
+        8.0,
+        37.25743855109962
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -168.0,
+        4.0,
+        -230.0
+      ],
+      "sourceSize": [
+        12.0,
+        8.0,
+        12.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "caesars",
+        "source": [
+          -213.2,
+          -296.25,
+          -43.4,
+          -180.3
+        ],
+        "target": [
+          -436,
+          -249,
+          -77,
+          111
+        ],
+        "osm": [
+          "way/115672893",
+          "way/34068416"
+        ],
+        "linear": [
+          2.114252061248528,
+          0.0,
+          -0.0,
+          3.104786545924968
+        ],
+        "translation": [
+          14.758539458186135,
+          670.7930142302718
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone40",
+      "name": "Arrival / crystals / veer-east",
+      "building": "crystals",
+      "center": [
+        -119.5,
+        3.575,
+        957.0000072438096
+      ],
+      "size": [
+        25.892857142857146,
+        7.5,
+        12.083333333333334
+      ],
+      "yaw": -1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -122.0,
+        3.575,
+        453.42520405653335
+      ],
+      "sourceSize": [
+        14.5,
+        7.5,
+        14.5
+      ],
+      "sourceYaw": -1.5707963267948966,
+      "geoTransform": {
+        "key": "veer-east",
+        "source": [
+          -143,
+          439.4252,
+          -107,
+          467.4252
+        ],
+        "target": [
+          -137,
+          932,
+          -107,
+          982
+        ],
+        "osm": [
+          "way/52134834"
+        ],
+        "linear": [
+          0.8333333333333334,
+          0.0,
+          -0.0,
+          1.7857142857142858
+        ],
+        "translation": [
+          -17.83333333333333,
+          147.31214285714282
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone41",
+      "name": "Arrival / crystals / veer-west",
+      "building": "crystals",
+      "center": [
+        -177.5,
+        3.575,
+        955.999992466438
+      ],
+      "size": [
+        26.92857142857143,
+        7.5,
+        12.083333333333334
+      ],
+      "yaw": -1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -186.0,
+        3.575,
+        422.57479594346665
+      ],
+      "sourceSize": [
+        14.5,
+        7.5,
+        14.5
+      ],
+      "sourceYaw": -1.5707963267948966,
+      "geoTransform": {
+        "key": "veer-west",
+        "source": [
+          -207,
+          408.5748,
+          -171,
+          436.5748
+        ],
+        "target": [
+          -195,
+          930,
+          -165,
+          982
+        ],
+        "osm": [
+          "way/52134835"
+        ],
+        "linear": [
+          0.8333333333333334,
+          0.0,
+          -0.0,
+          1.8571428571428572
+        ],
+        "translation": [
+          -22.5,
+          171.21822857142854
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone30",
+      "name": "Arrival / waldorf / waldorf",
+      "building": "waldorf",
+      "center": [
+        -87.03857566765578,
+        2.7750000000000004,
+        1086.5845272206302
+      ],
+      "size": [
+        8.275071633237822,
+        5.9,
+        26.681503461918894
+      ],
+      "yaw": -1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -56.0,
+        2.7750000000000004,
+        576.0
+      ],
+      "sourceSize": [
+        9.5,
+        5.9,
+        32.5
+      ],
+      "sourceYaw": -1.5707963267948966,
+      "geoTransform": {
+        "key": "waldorf",
+        "source": [
+          -140,
+          534,
+          -38.9,
+          621.25
+        ],
+        "target": [
+          -156,
+          1050,
+          -73,
+          1126
+        ],
+        "osm": [
+          "way/52194829"
+        ],
+        "linear": [
+          0.8209693372898121,
+          0.0,
+          -0.0,
+          0.8710601719197708
+        ],
+        "translation": [
+          -41.064292779426296,
+          584.8538681948423
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone39",
+      "name": "Arrival / bellagio / bellagio-gallery",
+      "building": "bellagio",
+      "center": [
+        -275.2307692307693,
+        3.9250000000000003,
+        385.81578947368416
+      ],
+      "size": [
+        17.93421052631579,
+        8.2,
+        34.65384615384615
+      ],
+      "yaw": -1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -144.0,
+        3.9250000000000003,
+        34.0
+      ],
+      "sourceSize": [
+        14.5,
+        8.2,
+        26.5
+      ],
+      "sourceYaw": -1.5707963267948966,
+      "geoTransform": {
+        "key": "bellagio",
+        "source": [
+          -179,
+          -113,
+          -140,
+          77
+        ],
+        "target": [
+          -321,
+          204,
+          -270,
+          439
+        ],
+        "osm": [
+          "way/25723909"
+        ],
+        "linear": [
+          1.3076923076923077,
+          0.0,
+          -0.0,
+          1.236842105263158
+        ],
+        "translation": [
+          -86.92307692307693,
+          343.7631578947368
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone33",
+      "name": "Arrival / paris / paris",
+      "building": "paris",
+      "center": [
+        92.05142857142856,
+        3.875,
+        428.0625
+      ],
+      "size": [
+        25.010416666666664,
+        8.1,
+        24.13714285714286
+      ],
+      "yaw": 1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        80.0,
+        3.875,
+        -39.0
+      ],
+      "sourceSize": [
+        24.5,
+        8.1,
+        16.5
+      ],
+      "sourceYaw": 1.5707963267948966,
+      "geoTransform": {
+        "key": "paris",
+        "source": [
+          41,
+          -138,
+          216,
+          54
+        ],
+        "target": [
+          35,
+          327,
+          291,
+          523
+        ],
+        "osm": [
+          "way/33974140",
+          "way/27831697"
+        ],
+        "linear": [
+          1.4628571428571429,
+          0.0,
+          -0.0,
+          1.0208333333333333
+        ],
+        "translation": [
+          -24.977142857142866,
+          467.875
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone26",
+      "name": "paris Guest gallery",
+      "building": "paris",
+      "center": [
+        187.8685714285714,
+        2.25,
+        429.0833333333333
+      ],
+      "size": [
+        45.348571428571425,
+        4.5,
+        24.5
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": true,
+      "sourceCenter": [
+        145.5,
+        2.25,
+        -38.0
+      ],
+      "sourceSize": [
+        31,
+        4.5,
+        24
+      ],
+      "sourceYaw": 0,
+      "geoTransform": {
+        "key": "paris",
+        "source": [
+          41,
+          -138,
+          216,
+          54
+        ],
+        "target": [
+          35,
+          327,
+          291,
+          523
+        ],
+        "osm": [
+          "way/33974140",
+          "way/27831697"
+        ],
+        "linear": [
+          1.4628571428571429,
+          0.0,
+          -0.0,
+          1.0208333333333333
+        ],
+        "translation": [
+          -24.977142857142866,
+          467.875
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone27",
+      "name": "caesars Guest gallery",
+      "building": "caesars",
+      "center": [
+        -380.6065959952886,
+        2.25,
+        -38.650711513583474
+      ],
+      "size": [
+        76.11307420494701,
+        4.5,
+        71.41009055627427
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": true,
+      "sourceCenter": [
+        -187.0,
+        2.25,
+        -228.5
+      ],
+      "sourceSize": [
+        36,
+        4.5,
+        23
+      ],
+      "sourceYaw": 0,
+      "geoTransform": {
+        "key": "caesars",
+        "source": [
+          -213.2,
+          -296.25,
+          -43.4,
+          -180.3
+        ],
+        "target": [
+          -436,
+          -249,
+          -77,
+          111
+        ],
+        "osm": [
+          "way/115672893",
+          "way/34068416"
+        ],
+        "linear": [
+          2.114252061248528,
+          0.0,
+          -0.0,
+          3.104786545924968
+        ],
+        "translation": [
+          14.758539458186135,
+          670.7930142302718
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone31",
+      "name": "Arrival / vdara / vdara",
+      "building": "vdara",
+      "center": [
+        -430.5969510564322,
+        3.325,
+        724.3970432946146
+      ],
+      "size": [
+        17.106652587117203,
+        7.0,
+        35.24115182312561
+      ],
+      "yaw": -1.5707963267948968,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -299.0,
+        3.325,
+        258.5
+      ],
+      "sourceSize": [
+        22.5,
+        7.0,
+        29.5
+      ],
+      "sourceYaw": 3.141592653589793,
+      "geoTransform": {
+        "key": "vdara",
+        "source": [
+          -356.35,
+          187.01,
+          -261.65,
+          299.18
+        ],
+        "target": [
+          -516,
+          696,
+          -382,
+          768
+        ],
+        "osm": [
+          "relation/20214578"
+        ],
+        "linear": [
+          7.314909114992659e-17,
+          1.1946153160381563,
+          -0.7602956705385424,
+          4.655468296653083e-17
+        ],
+        "translation": [
+          -739.4050102522956,
+          497.0686378035904
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone35",
+      "name": "Arrival / flamingo / flamingo",
+      "building": "flamingo",
+      "center": [
+        67.37931034482759,
+        3.825,
+        -47.0
+      ],
+      "size": [
+        102.5,
+        8.0,
+        55.74137931034483
+      ],
+      "yaw": 1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        105.0,
+        3.825,
+        -237.0
+      ],
+      "sourceSize": [
+        20.5,
+        8.0,
+        30.5
+      ],
+      "sourceYaw": 1.5707963267948966,
+      "geoTransform": {
+        "key": "flamingo",
+        "source": [
+          84,
+          -259,
+          200,
+          -215
+        ],
+        "target": [
+          29,
+          -157,
+          241,
+          63
+        ],
+        "osm": [
+          "way/116761428"
+        ],
+        "linear": [
+          1.8275862068965518,
+          0.0,
+          -0.0,
+          5.0
+        ],
+        "translation": [
+          -124.51724137931035,
+          1138.0
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone38",
+      "name": "Arrival / bellagio / bellagio-south",
+      "building": "bellagio",
+      "center": [
+        -289.61538461538464,
+        3.9250000000000003,
+        263.9868421052631
+      ],
+      "size": [
+        34.65384615384615,
+        8.2,
+        29.065789473684212
+      ],
+      "yaw": 0.0,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -155.0,
+        3.9250000000000003,
+        -64.5
+      ],
+      "sourceSize": [
+        26.5,
+        8.2,
+        23.5
+      ],
+      "sourceYaw": 0,
+      "geoTransform": {
+        "key": "bellagio",
+        "source": [
+          -179,
+          -113,
+          -140,
+          77
+        ],
+        "target": [
+          -321,
+          204,
+          -270,
+          439
+        ],
+        "osm": [
+          "way/25723909"
+        ],
+        "linear": [
+          1.3076923076923077,
+          0.0,
+          -0.0,
+          1.236842105263158
+        ],
+        "translation": [
+          -86.92307692307693,
+          343.7631578947368
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone1",
+      "name": "bellagio_service_envelope",
+      "building": "bellagio",
+      "center": [
+        -344.53846153846155,
+        2.1,
+        322.7368421052631
+      ],
+      "size": [
+        15.692307692307693,
+        4.2,
+        126.15789473684211
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -197.0,
+        2.1,
+        -17.0
+      ],
+      "sourceSize": [
+        12.0,
+        4.2,
+        102.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "bellagio",
+        "source": [
+          -179,
+          -113,
+          -140,
+          77
+        ],
+        "target": [
+          -321,
+          204,
+          -270,
+          439
+        ],
+        "osm": [
+          "way/25723909"
+        ],
+        "linear": [
+          1.3076923076923077,
+          0.0,
+          -0.0,
+          1.236842105263158
+        ],
+        "translation": [
+          -86.92307692307693,
+          343.7631578947368
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone34",
+      "name": "Arrival / caesars / caesars",
+      "building": "caesars",
+      "center": [
+        -208.29505300353358,
+        4.675,
+        -80.5653298835706
+      ],
+      "size": [
+        76.06727037516173,
+        9.7,
+        58.14193168433452
+      ],
+      "yaw": -1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -105.5,
+        4.675,
+        -242.0
+      ],
+      "sourceSize": [
+        24.5,
+        9.7,
+        27.5
+      ],
+      "sourceYaw": -1.5707963267948966,
+      "geoTransform": {
+        "key": "caesars",
+        "source": [
+          -213.2,
+          -296.25,
+          -43.4,
+          -180.3
+        ],
+        "target": [
+          -436,
+          -249,
+          -77,
+          111
+        ],
+        "osm": [
+          "way/115672893",
+          "way/34068416"
+        ],
+        "linear": [
+          2.114252061248528,
+          0.0,
+          -0.0,
+          3.104786545924968
+        ],
+        "translation": [
+          14.758539458186135,
+          670.7930142302718
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone37",
+      "name": "Arrival / planet-hollywood / planet-hollywood",
+      "building": "planet-hollywood",
+      "center": [
+        73.85302593659942,
+        5.075,
+        655.1509289617486
+      ],
+      "size": [
+        52.74863387978144,
+        10.5,
+        35.599783861671476
+      ],
+      "yaw": 1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        79.5,
+        5.075,
+        218.0
+      ],
+      "sourceSize": [
+        24.5,
+        10.5,
+        29.5
+      ],
+      "sourceYaw": 1.5707963267948966,
+      "geoTransform": {
+        "key": "planet-hollywood",
+        "source": [
+          117.74,
+          174.27,
+          173.26,
+          265.77
+        ],
+        "target": [
+          120,
+          561,
+          187,
+          758
+        ],
+        "osm": [
+          "way/134921373",
+          "way/134921371",
+          "way/134921379"
+        ],
+        "linear": [
+          1.2067723342939483,
+          0.0,
+          -0.0,
+          2.153005464480875
+        ],
+        "translation": [
+          -22.08537463976947,
+          185.79573770491794
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone36",
+      "name": "Arrival / horseshoe / horseshoe",
+      "building": "horseshoe",
+      "center": [
+        120.45004329004331,
+        3.825,
+        287.3521303258145
+      ],
+      "size": [
+        24.843358395989974,
+        8.0,
+        71.47186147186147
+      ],
+      "yaw": 1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        110.0,
+        3.825,
+        -131.0
+      ],
+      "sourceSize": [
+        30.5,
+        8.0,
+        32.5
+      ],
+      "sourceYaw": 0,
+      "geoTransform": {
+        "key": "horseshoe",
+        "source": [
+          95.7,
+          -147.12,
+          127.62,
+          -89.37
+        ],
+        "target": [
+          85,
+          273,
+          212,
+          299
+        ],
+        "osm": [
+          "way/27897921"
+        ],
+        "linear": [
+          1.3465813289325877e-16,
+          2.1991341991341993,
+          -0.8145363408521302,
+          4.987596613068794e-17
+        ],
+        "translation": [
+          408.5366233766234,
+          376.95112781954884
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone29",
+      "name": "Arrival / aria / aria",
+      "building": "aria",
+      "center": [
+        -274.15918546091524,
+        5.075,
+        974.1481481481482
+      ],
+      "size": [
+        43.839506172839506,
+        10.5,
+        35.12809283993869
+      ],
+      "yaw": -1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -259.0,
+        5.075,
+        448.0
+      ],
+      "sourceSize": [
+        26.5,
+        10.5,
+        30.5
+      ],
+      "sourceYaw": -1.5707963267948966,
+      "geoTransform": {
+        "key": "aria",
+        "source": [
+          -453.35,
+          338.5,
+          -225,
+          500.5
+        ],
+        "target": [
+          -498,
+          793,
+          -235,
+          1061
+        ],
+        "osm": [
+          "way/52175576",
+          "way/134930088",
+          "way/134930089",
+          "way/134930090",
+          "way/134930091",
+          "way/134930092"
+        ],
+        "linear": [
+          1.1517407488504487,
+          0.0,
+          -0.0,
+          1.654320987654321
+        ],
+        "translation": [
+          24.14166849135097,
+          233.01234567901236
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone24",
+      "name": "CityCenter / Crystals Aria connector envelope",
+      "building": "crystals",
+      "center": [
+        -208.5405280933374,
+        5.075,
+        912.2099860600684
+      ],
+      "size": [
+        56.370893460239486,
+        10.0,
+        14.446838170067165
+      ],
+      "yaw": 0.0,
+      "windowed": true,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -246.0,
+        5.075,
+        396.0
+      ],
+      "sourceSize": [
+        72.0,
+        10.0,
+        12.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "crystals",
+        "source": [
+          -282.35,
+          322.73,
+          -21.79,
+          480.55
+        ],
+        "target": [
+          -237,
+          824,
+          -33,
+          1014
+        ],
+        "osm": [
+          "way/52134608"
+        ],
+        "linear": [
+          0.7829290758366595,
+          0.0,
+          -0.0,
+          1.2039031808389304
+        ],
+        "translation": [
+          -15.93997543751918,
+          435.464326447852
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone28",
+      "name": "Arrival / crystals / crystals",
+      "building": "crystals",
+      "center": [
+        -59.78400368437211,
+        8.075,
+        894.1514383474845
+      ],
+      "size": [
+        31.90343429223166,
+        16.5,
+        37.97206017807799
+      ],
+      "yaw": -1.5707963267948966,
+      "windowed": true,
+      "arrival": true,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -56.0,
+        8.075,
+        381.0
+      ],
+      "sourceSize": [
+        26.5,
+        16.5,
+        48.5
+      ],
+      "sourceYaw": -1.5707963267948966,
+      "geoTransform": {
+        "key": "crystals",
+        "source": [
+          -282.35,
+          322.73,
+          -21.79,
+          480.55
+        ],
+        "target": [
+          -237,
+          824,
+          -33,
+          1014
+        ],
+        "osm": [
+          "way/52134608"
+        ],
+        "linear": [
+          0.7829290758366595,
+          0.0,
+          -0.0,
+          1.2039031808389304
+        ],
+        "translation": [
+          -15.93997543751918,
+          435.464326447852
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone22",
+      "name": "CityCenter / Aria lobby envelope",
+      "building": "aria",
+      "center": [
+        -278.76614845631707,
+        6.075,
+        977.4567901234568
+      ],
+      "size": [
+        43.766148456317055,
+        12.0,
+        86.0246913580247
+      ],
+      "yaw": 0.0,
+      "windowed": true,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -263.0,
+        6.075,
+        450.0
+      ],
+      "sourceSize": [
+        38.0,
+        12.0,
+        52.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "aria",
+        "source": [
+          -453.35,
+          338.5,
+          -225,
+          500.5
+        ],
+        "target": [
+          -498,
+          793,
+          -235,
+          1061
+        ],
+        "osm": [
+          "way/52175576",
+          "way/134930088",
+          "way/134930089",
+          "way/134930090",
+          "way/134930091",
+          "way/134930092"
+        ],
+        "linear": [
+          1.1517407488504487,
+          0.0,
+          -0.0,
+          1.654320987654321
+        ],
+        "translation": [
+          24.14166849135097,
+          233.01234567901236
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone9",
+      "name": "caesars_casino_envelope",
+      "building": "caesars",
+      "center": [
+        -266.4369846878681,
+        4.0,
+        -68.14618369987068
+      ],
+      "size": [
+        173.3686690223793,
+        8.0,
+        117.9818887451488
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -133.0,
+        4.0,
+        -238.0
+      ],
+      "sourceSize": [
+        82.0,
+        8.0,
+        38.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "caesars",
+        "source": [
+          -213.2,
+          -296.25,
+          -43.4,
+          -180.3
+        ],
+        "target": [
+          -436,
+          -249,
+          -77,
+          111
+        ],
+        "osm": [
+          "way/115672893",
+          "way/34068416"
+        ],
+        "linear": [
+          2.114252061248528,
+          0.0,
+          -0.0,
+          3.104786545924968
+        ],
+        "translation": [
+          14.758539458186135,
+          670.7930142302718
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone17",
+      "name": "Interiors / Horseshoe envelope",
+      "building": "horseshoe",
+      "center": [
+        153.43705627705634,
+        6.075,
+        287.3521303258145
+      ],
+      "size": [
+        29.323308270676687,
+        12.0,
+        136.34632034632037
+      ],
+      "yaw": 1.5707963267948966,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        110.0,
+        6.075,
+        -116.0
+      ],
+      "sourceSize": [
+        36.0,
+        12.0,
+        62.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "horseshoe",
+        "source": [
+          95.7,
+          -147.12,
+          127.62,
+          -89.37
+        ],
+        "target": [
+          85,
+          273,
+          212,
+          299
+        ],
+        "osm": [
+          "way/27897921"
+        ],
+        "linear": [
+          1.3465813289325877e-16,
+          2.1991341991341993,
+          -0.8145363408521302,
+          4.987596613068794e-17
+        ],
+        "translation": [
+          408.5366233766234,
+          376.95112781954884
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone19",
+      "name": "Interiors / Forum Shops envelope",
+      "building": "caesars",
+      "center": [
+        -262.208480565371,
+        7.075,
+        -187.68046571798197
+      ],
+      "size": [
+        181.8256772673734,
+        14.0,
+        121.08667529107376
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -131.0,
+        7.075,
+        -276.5
+      ],
+      "sourceSize": [
+        86.0,
+        14.0,
+        39.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "caesars",
+        "source": [
+          -213.2,
+          -296.25,
+          -43.4,
+          -180.3
+        ],
+        "target": [
+          -436,
+          -249,
+          -77,
+          111
+        ],
+        "osm": [
+          "way/115672893",
+          "way/34068416"
+        ],
+        "linear": [
+          2.114252061248528,
+          0.0,
+          -0.0,
+          3.104786545924968
+        ],
+        "translation": [
+          14.758539458186135,
+          670.7930142302718
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone6",
+      "name": "paris_casino_envelope",
+      "building": "paris",
+      "center": [
+        128.62285714285713,
+        4.0,
+        432.1458333333333
+      ],
+      "size": [
+        96.54857142857144,
+        8.0,
+        91.875
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        105.0,
+        4.0,
+        -35.0
+      ],
+      "sourceSize": [
+        66.0,
+        8.0,
+        90.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "paris",
+        "source": [
+          41,
+          -138,
+          216,
+          54
+        ],
+        "target": [
+          35,
+          327,
+          291,
+          523
+        ],
+        "osm": [
+          "way/33974140",
+          "way/27831697"
+        ],
+        "linear": [
+          1.4628571428571429,
+          0.0,
+          -0.0,
+          1.0208333333333333
+        ],
+        "translation": [
+          -24.977142857142866,
+          467.875
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone0",
+      "name": "bellagio_public_envelope",
+      "building": "bellagio",
+      "center": [
+        -297.46153846153845,
+        4.0,
+        322.7368421052631
+      ],
+      "size": [
+        78.46153846153847,
+        8.0,
+        145.94736842105263
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -161.0,
+        4.0,
+        -17.0
+      ],
+      "sourceSize": [
+        60.0,
+        8.0,
+        118.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "bellagio",
+        "source": [
+          -179,
+          -113,
+          -140,
+          77
+        ],
+        "target": [
+          -321,
+          204,
+          -270,
+          439
+        ],
+        "osm": [
+          "way/25723909"
+        ],
+        "linear": [
+          1.3076923076923077,
+          0.0,
+          -0.0,
+          1.236842105263158
+        ],
+        "translation": [
+          -86.92307692307693,
+          343.7631578947368
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone16",
+      "name": "Interiors / Flamingo envelope",
+      "building": "flamingo",
+      "center": [
+        140.48275862068965,
+        6.075,
+        -47.0
+      ],
+      "size": [
+        201.0344827586207,
+        12.0,
+        220.0
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        145.0,
+        6.075,
+        -237.0
+      ],
+      "sourceSize": [
+        110.0,
+        12.0,
+        44.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "flamingo",
+        "source": [
+          84,
+          -259,
+          200,
+          -215
+        ],
+        "target": [
+          29,
+          -157,
+          241,
+          63
+        ],
+        "osm": [
+          "way/116761428"
+        ],
+        "linear": [
+          1.8275862068965518,
+          0.0,
+          -0.0,
+          5.0
+        ],
+        "translation": [
+          -124.51724137931035,
+          1138.0
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone20",
+      "name": "CityCenter / Vdara lobby envelope",
+      "building": "vdara",
+      "center": [
+        -450.90541142908086,
+        7.2,
+        732.0
+      ],
+      "size": [
+        71.46779303062299,
+        14.25,
+        75.26076491040385
+      ],
+      "yaw": 1.5707963267948966,
+      "windowed": true,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -309.0,
+        7.2,
+        241.5
+      ],
+      "sourceSize": [
+        94.0,
+        14.25,
+        63.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "vdara",
+        "source": [
+          -356.35,
+          187.01,
+          -261.65,
+          299.18
+        ],
+        "target": [
+          -516,
+          696,
+          -382,
+          768
+        ],
+        "osm": [
+          "relation/20214578"
+        ],
+        "linear": [
+          7.314909114992659e-17,
+          1.1946153160381563,
+          -0.7602956705385424,
+          4.655468296653083e-17
+        ],
+        "translation": [
+          -739.4050102522956,
+          497.0686378035904
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone25",
+      "name": "CityCenter / Waldorf arrival lobby envelope",
+      "building": "waldorf",
+      "center": [
+        -108.7942631058358,
+        6.075,
+        1088.3266475644698
+      ],
+      "size": [
+        69.78239366963403,
+        12.0,
+        74.91117478510029
+      ],
+      "yaw": 0.0,
+      "windowed": true,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -82.5,
+        6.075,
+        578.0
+      ],
+      "sourceSize": [
+        85.0,
+        12.0,
+        86.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "waldorf",
+        "source": [
+          -140,
+          534,
+          -38.9,
+          621.25
+        ],
+        "target": [
+          -156,
+          1050,
+          -73,
+          1126
+        ],
+        "osm": [
+          "way/52194829"
+        ],
+        "linear": [
+          0.8209693372898121,
+          0.0,
+          -0.0,
+          0.8710601719197708
+        ],
+        "translation": [
+          -41.064292779426296,
+          584.8538681948423
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone18",
+      "name": "Interiors / Planet Hollywood envelope",
+      "building": "planet-hollywood",
+      "center": [
+        136.60518731988472,
+        6.075,
+        666.9924590163935
+      ],
+      "size": [
+        160.5007204610951,
+        12.0,
+        217.45355191256837
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        131.5,
+        6.075,
+        223.5
+      ],
+      "sourceSize": [
+        133.0,
+        12.0,
+        101.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "planet-hollywood",
+        "source": [
+          117.74,
+          174.27,
+          173.26,
+          265.77
+        ],
+        "target": [
+          120,
+          561,
+          187,
+          758
+        ],
+        "osm": [
+          "way/134921373",
+          "way/134921371",
+          "way/134921379"
+        ],
+        "linear": [
+          1.2067723342939483,
+          0.0,
+          -0.0,
+          2.153005464480875
+        ],
+        "translation": [
+          -22.08537463976947,
+          185.79573770491794
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone21",
+      "name": "CityCenter / Aria casino envelope",
+      "building": "aria",
+      "center": [
+        -399.12305671118895,
+        7.075,
+        924.5185185185186
+      ],
+      "size": [
+        196.94766805342672,
+        14.0,
+        234.9135802469136
+      ],
+      "yaw": 0.0,
+      "windowed": false,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -367.5,
+        7.075,
+        418.0
+      ],
+      "sourceSize": [
+        171.0,
+        14.0,
+        142.0
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "aria",
+        "source": [
+          -453.35,
+          338.5,
+          -225,
+          500.5
+        ],
+        "target": [
+          -498,
+          793,
+          -235,
+          1061
+        ],
+        "osm": [
+          "way/52175576",
+          "way/134930088",
+          "way/134930089",
+          "way/134930090",
+          "way/134930091",
+          "way/134930092"
+        ],
+        "linear": [
+          1.1517407488504487,
+          0.0,
+          -0.0,
+          1.654320987654321
+        ],
+        "translation": [
+          24.14166849135097,
+          233.01234567901236
+        ],
+        "heightScale": 1
+      }
+    },
+    {
+      "id": "zone23",
+      "name": "CityCenter / Crystals arcade envelope",
+      "building": "crystals",
+      "center": [
+        -110.67439361375497,
+        17.975,
+        912.8119376504878
+      ],
+      "size": [
+        139.36137549892538,
+        35.8,
+        176.97376758332277
+      ],
+      "yaw": 0.0,
+      "windowed": true,
+      "arrival": false,
+      "room": false,
+      "corridor": false,
+      "sourceCenter": [
+        -121,
+        17.975,
+        396.5
+      ],
+      "sourceSize": [
+        178,
+        35.8,
+        147
+      ],
+      "sourceYaw": 0.0,
+      "geoTransform": {
+        "key": "crystals",
+        "source": [
+          -282.35,
+          322.73,
+          -21.79,
+          480.55
+        ],
+        "target": [
+          -237,
+          824,
+          -33,
+          1014
+        ],
+        "osm": [
+          "way/52134608"
+        ],
+        "linear": [
+          0.7829290758366595,
+          0.0,
+          -0.0,
+          1.2039031808389304
+        ],
+        "translation": [
+          -15.93997543751918,
+          435.464326447852
+        ],
+        "heightScale": 1
+      }
+    }
+  ],
+  "portals": [
+    {
+      "id": "bellagio_south_entrance",
+      "position": [
+        -289.61538461538464,
+        2.25,
+        249.76315789473682
+      ],
+      "buildings": [
+        "bellagio"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone38"
+      ]
+    },
+    {
+      "id": "bellagio_north_gallery_exit",
+      "position": [
+        -258.2307692307693,
+        2.25,
+        385.81578947368416
+      ],
+      "buildings": [
+        "bellagio"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone39"
+      ]
+    },
+    {
+      "id": "bellagio_lobby_service",
+      "position": [
+        -336.69230769230774,
+        1.6,
+        272.02631578947364
+      ],
+      "buildings": [
+        "bellagio"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "bellagio_casino_service",
+      "position": [
+        -336.69230769230774,
+        1.6,
+        358.60526315789474
+      ],
+      "buildings": [
+        "bellagio"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "bellagio_staff_lounge",
+      "position": [
+        -352.38461538461536,
+        1.45,
+        272.02631578947364
+      ],
+      "buildings": [
+        "bellagio"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "bellagio_stores",
+      "position": [
+        -352.38461538461536,
+        1.45,
+        299.2368421052631
+      ],
+      "buildings": [
+        "bellagio"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "bellagio_medical",
+      "position": [
+        -352.38461538461536,
+        1.45,
+        326.4473684210526
+      ],
+      "buildings": [
+        "bellagio"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "bellagio_security",
+      "position": [
+        -352.38461538461536,
+        1.45,
+        353.6578947368421
+      ],
+      "buildings": [
+        "bellagio"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "paris_west_entrance",
+      "position": [
+        80.34857142857142,
+        2.4,
+        428.0625
+      ],
+      "buildings": [
+        "paris"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone33"
+      ]
+    },
+    {
+      "id": "paris_north_exit",
+      "position": [
+        150.56571428571428,
+        2.4,
+        478.0833333333333
+      ],
+      "buildings": [
+        "paris"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "caesars_main",
+      "position": [
+        -179.75265017667846,
+        2.4,
+        -80.5653298835706
+      ],
+      "buildings": [
+        "caesars"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone34"
+      ]
+    },
+    {
+      "id": "caesars_garden",
+      "position": [
+        -215.69493521790343,
+        2.4,
+        -9.155239327296272
+      ],
+      "buildings": [
+        "caesars"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "caesars_service_185",
+      "position": [
+        -327.7502944640754,
+        1.6,
+        -105.40362225097033
+      ],
+      "buildings": [
+        "caesars"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "caesars_service_205",
+      "position": [
+        -327.7502944640754,
+        1.6,
+        -43.307891332470945
+      ],
+      "buildings": [
+        "caesars"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "Interiors / Flamingo west",
+      "position": [
+        39.9655172413793,
+        2.125,
+        -47.0
+      ],
+      "buildings": [
+        "flamingo"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone35"
+      ]
+    },
+    {
+      "id": "Interiors / Flamingo south",
+      "position": [
+        140.48275862068965,
+        2.125,
+        63.0
+      ],
+      "buildings": [
+        "flamingo"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "Interiors / Horseshoe north",
+      "position": [
+        85.26389610389612,
+        2.125,
+        281.6503759398496
+      ],
+      "buildings": [
+        "horseshoe"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone36"
+      ]
+    },
+    {
+      "id": "Interiors / Horseshoe south",
+      "position": [
+        221.6102164502165,
+        2.125,
+        287.3521303258145
+      ],
+      "buildings": [
+        "horseshoe"
+      ],
+      "exterior": true,
+      "adjacent": [
+        "paris"
+      ],
+      "arrivals": []
+    },
+    {
+      "id": "Interiors / Planet Hollywood west",
+      "position": [
+        56.354827089337164,
+        2.125,
+        655.1509289617486
+      ],
+      "buildings": [
+        "planet-hollywood"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone37"
+      ]
+    },
+    {
+      "id": "Interiors / Planet Hollywood south",
+      "position": [
+        187.89301152737752,
+        2.125,
+        775.7192349726777
+      ],
+      "buildings": [
+        "planet-hollywood"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "Interiors / Paris Horseshoe passage",
+      "position": [
+        232.6058874458875,
+        2.125,
+        287.3521303258145
+      ],
+      "buildings": [
+        "paris"
+      ],
+      "exterior": true,
+      "adjacent": [
+        "horseshoe"
+      ],
+      "arrivals": []
+    },
+    {
+      "id": "Interiors / Caesars Forum connection",
+      "position": [
+        -238.95170789163723,
+        2.125,
+        -127.13712807244508
+      ],
+      "buildings": [
+        "caesars"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Vdara lobby east",
+      "position": [
+        -450.3081037710618,
+        2.1750000000000003,
+        696.2661034846885
+      ],
+      "buildings": [
+        "vdara"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Vdara lobby south",
+      "position": [
+        -413.27502897387893,
+        2.1750000000000003,
+        724.3970432946146
+      ],
+      "buildings": [
+        "vdara"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone31"
+      ]
+    },
+    {
+      "id": "CityCenter / Aria casino east 0",
+      "position": [
+        -300.6492226844756,
+        2.1750000000000003,
+        888.1234567901234
+      ],
+      "buildings": [
+        "aria",
+        "crystals"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Aria casino east 1",
+      "position": [
+        -300.6492226844756,
+        2.1750000000000003,
+        974.1481481481482
+      ],
+      "buildings": [
+        "aria"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Aria casino north",
+      "position": [
+        -327.1392599080359,
+        2.1750000000000003,
+        807.0617283950618
+      ],
+      "buildings": [
+        "aria"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Aria casino south",
+      "position": [
+        -342.11188964309173,
+        2.1750000000000003,
+        1041.9753086419753
+      ],
+      "buildings": [
+        "aria"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Aria lobby east",
+      "position": [
+        -256.88307422815853,
+        2.1750000000000003,
+        974.1481481481482
+      ],
+      "buildings": [
+        "aria"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone29"
+      ]
+    },
+    {
+      "id": "CityCenter / Crystals arcade east",
+      "position": [
+        -40.99370586429228,
+        2.1750000000000003,
+        894.1514383474845
+      ],
+      "buildings": [
+        "crystals"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone28"
+      ]
+    },
+    {
+      "id": "CityCenter / Crystals arcade west",
+      "position": [
+        -180.35508136321766,
+        2.1750000000000003,
+        912.2099860600684
+      ],
+      "buildings": [
+        "crystals"
+      ],
+      "exterior": false,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Crystals arcade north",
+      "position": [
+        -87.96945041449186,
+        2.1750000000000003,
+        824.3250538588265
+      ],
+      "buildings": [
+        "crystals"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Crystals arcade south",
+      "position": [
+        -88.75237949032851,
+        2.1750000000000003,
+        1001.2988214421493
+      ],
+      "buildings": [
+        "crystals"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Waldorf arrival lobby east",
+      "position": [
+        -73.90306627101879,
+        2.1750000000000003,
+        1086.5845272206302
+      ],
+      "buildings": [
+        "waldorf"
+      ],
+      "exterior": true,
+      "arrivals": [
+        "zone30"
+      ]
+    },
+    {
+      "id": "CityCenter / Waldorf arrival lobby west",
+      "position": [
+        -143.68545994065283,
+        2.1750000000000003,
+        1086.5845272206302
+      ],
+      "buildings": [
+        "waldorf"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "CityCenter / Waldorf arrival lobby north",
+      "position": [
+        -115.7725024727992,
+        2.1750000000000003,
+        1050.8710601719197
+      ],
+      "buildings": [
+        "waldorf"
+      ],
+      "exterior": true,
+      "arrivals": []
+    },
+    {
+      "id": "Arrival / Veer east residential lobby",
+      "position": [
+        -113.66666666666667,
+        1.775,
+        957.0000072438096
+      ],
+      "buildings": [
+        "crystals"
+      ],
+      "exterior": false,
+      "arrivals": [
+        "zone40"
+      ]
+    },
+    {
+      "id": "Arrival / Veer west residential lobby",
+      "position": [
+        -171.66666666666669,
+        1.775,
+        955.999992466438
+      ],
+      "buildings": [
+        "crystals"
+      ],
+      "exterior": false,
+      "arrivals": [
+        "zone41"
+      ]
+    }
+  ],
+  "exteriorVoids": [
+    {
+      "id": "paris-arrival",
+      "building": "paris",
+      "center": [
+        126.8,
+        482.0
+      ],
+      "radius": 46.25,
+      "minY": 0.1,
+      "maxY": 27
+    }
+  ]
+}

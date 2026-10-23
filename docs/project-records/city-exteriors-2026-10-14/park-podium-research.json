@@ -1,0 +1,28 @@
+{
+  "status": "active",
+  "references": [
+    {
+      "url": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/bltf319b0e3749429a5/park-mgm-property-map.pdf",
+      "observed": "Downloaded and visually inspected page1: Eataly at east, bowed Dolby Live south, pool and conference west/northwest, hotel arrival west. Current owner map labels The Reserve. Schematic not a scale survey."
+    },
+    {
+      "url": "https://parkmgm.mgmresorts.com/en.html",
+      "observed": "Current owner site refers to The Reserve at Park MGM, rather than historic NoMad name."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1041,-115.1757,690a,650d,35y,270h,50t,0r",
+      "imageryDate": "2022-11-09",
+      "observed": "Aerial visually inspected2026-10-14: white bowed Dolby Live roof, gray central casino roof with scattered services, white tower with olive caps. Reference is dated, not current survey."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.10415,-115.1736,635a,140d,35y,0h,0t,0r",
+      "imageryDate": "2022-11-09",
+      "observed": "Topdown plus prior270heading55tilt view show long diagonal metal gable with open southeast projection; earlier game awning was short/square to Strip. Imported small roof part had been rendered as solid3.5m block."
+    }
+  ],
+  "existingEvidence": "tools/resort-blocks/park-mgm.json",
+  "pending": "Reconcile remaining podium inventory against installed views; do not regenerate existing detailed exterior without finding a specific mismatch.",
+  "localMap": "docs/project-records/city-exteriors-2026-10-14/park-mgm-property-map.png",
+  "changes": "Roof finishes plus corrected diagonal Eataly roof over mapped hall/roof part, slender front posts, solid porch floor. Original43nonEatalygroups and collisionprefix retained;36collisiontriadded. Cityonlyremovesroofpartway1437033263,8478roadsandlandscapegroups unchanged.",
+  "uncertainDimensions": "12.5m approximate eaves/16.1m ridge from imagery and mapped12m hall; not measured survey. Fine entrance detailing and exact sign scale remain approximate."
+}

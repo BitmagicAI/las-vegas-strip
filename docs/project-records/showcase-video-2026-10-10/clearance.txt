@@ -1,0 +1,15 @@
+<repo>/tools/film/clearance.py:57: RuntimeWarning: divide by zero encountered in matmul
+  pos = pos @ M[:3, :3].T + M[:3, 3]
+<repo>/tools/film/clearance.py:57: RuntimeWarning: overflow encountered in matmul
+  pos = pos @ M[:3, :3].T + M[:3, 3]
+<repo>/tools/film/clearance.py:57: RuntimeWarning: invalid value encountered in matmul
+  pos = pos @ M[:3, :3].T + M[:3, 3]
+tour camera 0: 375 samples, min clearance 3.0 m at t 9.0 s [14.0, 3.2, 417.6] (city.glb:OSM 0,0 paint:OSM / paint)
+tour camera 1: 333 samples, min clearance 1.7 m at t 11.1 s [12.8, 1.9, 360.9] (city.glb:OSM 0,0 road:OSM / road)
+tour camera 2: 920 samples, min clearance 0.0 m at t 37.5 s [109.4, 7.0, 104.2] (vanderpump-exterior.glb:vanderpump-exterior/vanderpump-podium/roof:Strip / roof)
+   < 0.15 m: t 36.6-36.7 s, nearest 0.0 m at [108.6, 7.0, 107.3] vanderpump-exterior.glb:vanderpump-exterior/vanderpump-podium/roof:Strip / roof
+   < 0.15 m: t 37.4-37.6 s, nearest 0.0 m at [109.4, 7.0, 104.2] vanderpump-exterior.glb:vanderpump-exterior/vanderpump-podium/roof:Strip / roof
+tour camera 3: 317 samples, min clearance 0.0 m at t 43.5 s [93.6, 11.9, 125.3] (vanderpump-exterior.glb:vanderpump-exterior/guest-vanderpump/charcoal:Strip / charcoal)
+   < 0.15 m: t 43.5-43.5 s, nearest 0.0 m at [93.6, 11.9, 125.3] vanderpump-exterior.glb:vanderpump-exterior/guest-vanderpump/charcoal:Strip / charcoal
+   < 0.15 m: t 43.5-43.5 s, nearest 0.1 m at [94.0, 12.2, 126.1] vanderpump-exterior.glb:vanderpump-exterior/guest-vanderpump/blackiron:Strip / blackiron
+tour camera 4: 5387 samples, min clearance 1.1 m at t 85.0 s [221.5, 3.2, -685.3] (venetian-exterior.glb:venetian-exterior/venetian-palace/ivory:Strip / ivory)

@@ -1,0 +1,139 @@
+{
+  "id": "flamingo",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://newsroom.caesars.com/press-releases/press-release-details/2025/Flamingo-Las-Vegas-Unveils-Fabulous-RenovationsAhead-of-Its-80th-Anniversary-2025-fyQWfQJ4FR/default.aspx",
+      "review": "Official source describes 2025 public areas and pool changes. Earth imagery may predate these changes."
+    },
+    {
+      "url": "https://special.library.unlv.edu/skyline/hotel/flamingo",
+      "review": "UNLV archival source identifies six high-rise phases 1976\u20131993; useful construction history, not current facade evidence."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1165,-115.1708,620a,420d,35y,90h,55t,0r",
+      "review": "West oblique visually inspected: rose/dark glazing, white slab edges and end piers, roof mechanical screens, thin tower wings."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1165,-115.1708,680a,460d,35y,270h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "East garden oblique visually inspected. Thin mapped wings confirmed; white service ends with vertical slot. Pool reference predates2025 rebuilding."
+    }
+  ],
+  "remaining": [
+    "Courtyard garden and current GO Pool geometry requires rebuilding from current references",
+    "Marquee fine geometry, scattered low signage/panels and frontage detail still approximate",
+    "Full public route traversal and measured street performance pending"
+  ],
+  "baseline": [
+    "build/city-exteriors/flamingo-before/flamingo-west.png",
+    "build/city-exteriors/flamingo-before/flamingo-east.png",
+    "build/city-exteriors/flamingo-before/flamingo-front.png"
+  ],
+  "baselineReview": "All3 PNGs inspected. Existing thick rectangular hotel is incorrect; canopy retained as separate low frontage.",
+  "implementation": {
+    "ids": [
+      "115766957",
+      "115766962",
+      "115766969"
+    ],
+    "heightM": 83,
+    "wallHeightM": 79.5,
+    "roofScreenTopM": 82.9,
+    "triangles": 72362,
+    "batches": 9,
+    "core": {
+      "origin": [
+        220,
+        0.075,
+        33
+      ],
+      "linear": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "floors": 18,
+      "bays": 12,
+      "templates": "preserved",
+      "identity": "flamingo-north retained; display name changed to South guest wing to match placement"
+    },
+    "legacyRemoval": "9 tower mass colliders,7 wholly obsolete render nodes; retain all tagged tower triangles west ofX46.5 and belowY25 to preserve lotus marquee",
+    "publicRoofAperture": [
+      214.75,
+      29.2,
+      225.25,
+      36.8
+    ],
+    "tests": "82roof+24entry+9stairroof probes PASS; all room/stair envelope corners fit mapped tower"
+  },
+  "installedReview": {
+    "images": [
+      "build/city-exteriors/flamingo-after/flamingo-east.png",
+      "build/city-exteriors/flamingo-after/flamingo-west.png",
+      "build/city-exteriors/flamingo-after/flamingo-core-4.png",
+      "build/city-exteriors/flamingo-after/flamingo-front.png"
+    ],
+    "review": "All four installed PNGs inspected. Thin L tower wings, rose glazing/white slab lines, rooftop screen present. Guest corridor intact. Lotus marquee retained. Courtyard still old schematic pool and sparse landscaping; small stray legacy signage/panels near marquee remain. Not photo-perfect."
+  },
+  "validation": {
+    "typecheck": "passed",
+    "collision": "82 roof /24 entry /9 stair aperture probes passed after collider shape repair",
+    "roomEnvelope": "passed",
+    "bootFix": "Retained old trimesh indices on roof prisms caused boot failure; changed cut pieces to convexHull and validated all source trimesh index bounds. Probe rerun passed."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/flamingoExterior-exterior.glb": "f9e6791faa31f50388b3a5a8c9779b0d790e40daf9d6b88e7037bd0fc68ebc0d",
+      "build/optimized/build/strip-landmarks/flamingoExterior-exterior.glb": "2610f65a2cec01842a30c798025f0732ac9d04752cd6ea608f7f2f9e156c4c25",
+      "src/work/geographic/level.json": "0f56409af3592bf06003d8fb7aa8092112a39db0045954305309f2636ce4d496",
+      "src/work/hotels/towers.json": "6ab024ae0fa27fc7ef8326aab851c4e665d29f7f4dbf48323c7249ec74bda6dd"
+    }
+  },
+  "podiumPass20261014": {
+    "status": "implemented-visually-reviewed",
+    "references": "docs/project-records/city-exteriors-2026-10-14/flamingo-podium-research.json",
+    "baseline": "build/city-exteriors/luxor-final-flamingo-baseline",
+    "implemented": [
+      "Surveyed low podium and23m north restaurant block",
+      "GR Burger glazing, patio and separate petal sign",
+      "Roof equipment and entrance canopy scaled independently",
+      "Open south arrival canopy with oculus instead of mapped solid"
+    ],
+    "validation": {
+      "meshAudit": "103526triangles34batches, zero degenerate triangles;2412unrelatedcolliders preserved;4obsoletecanopypiers removed",
+      "collision": "146 roof/entrance checks pass with city collision after replacement of way115767903",
+      "optimization": "Installed optimized exterior3.16MiB vs9.25MiB raw"
+    },
+    "remaining": [
+      "2025 GO Pool and gardens need reconstruction",
+      "Detailed south/east facade and full public-route certification pending",
+      "Petal sign sculptural depth and lettering, transparent patio guards, restaurant interior depth remain simplified",
+      "No photo-perfect claim"
+    ],
+    "replacementIds": [
+      "way/116761428",
+      "way/310585854",
+      "way/116761035",
+      "way/115767903"
+    ],
+    "sha256": {
+      "build/strip-landmarks/flamingoExterior-exterior.json": "079f77b1a399e47ca3d8c6e4aae3d0d3766e8acc0dcd20a0bbdb4faab7b72090",
+      "build/strip-landmarks/flamingoExterior-exterior.glb": "39a98cf9f143af35f3396586203c96dbc8d92e4eaf4d09ee4490558fad98a47e",
+      "build/strip-landmarks/flamingoExterior-exterior-collision.json": "ebe7cd717fe9d8e779d76913761d8a547372fc10e0e545edd8b861ca20bcd352"
+    },
+    "firstInstalledReview": "All5images inspected. Northrestaurantpatio obscured by low shell; moved9.4m west to actual facade. Oldneon canopy still attached to zone35shell; removed only pink/gold exterior canopy batches plus4matching pier colliders. Southcamera insideCromwell; moved to158,3,89. Repeatviewpending.",
+    "installedReview": {
+      "images": [
+        "build/city-exteriors/flamingo-final-cromwell-baseline/flamingo-front.png",
+        "build/city-exteriors/flamingo-final-cromwell-baseline/flamingo-podium.png",
+        "build/city-exteriors/flamingo-final-cromwell-baseline/flamingo-burger.png",
+        "build/city-exteriors/flamingo-final-cromwell-baseline/flamingo-south-canopy.png",
+        "build/city-exteriors/flamingo-final-cromwell-baseline/flamingo-main-door.png"
+      ],
+      "observations": "All5finalcaptures inspected. Corrected oldcanopy, restaurant nowvisible, reduced roof equipment repetitiveness, glazedpanels readable after lightening. Southcanopy open with oculus and retained entrance. Mainlobby preserved. Still simplified petal art, opaque restaurant glazing and broad blank parapet fields; not photorealistic completion.",
+      "performance": "build/city-exteriors/flamingo-final-cromwell-baseline/performance.json"
+    }
+  }
+}

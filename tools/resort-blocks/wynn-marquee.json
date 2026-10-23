@@ -1,0 +1,121 @@
+{
+  "id": "wynn-marquee",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/111348710"
+  ],
+  "sources": [
+    {
+      "url": "https://www.yesco.com/cmsdocuments/Yescozette_Facts_Final.pdf",
+      "provider": "YESCO manufacturer",
+      "imageDate": "January2005",
+      "review": "Page3 text confirms135ft total and100x50ft concave double-sided LED face. Moving eraser described; static geometry only in current scope."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12644,-115.16844&heading=90&pitch=50",
+      "imageDate": "April2025",
+      "review": "Inspected full sign: bronze panelled pedestal, concave LED body, ribbed lower eraser band and gold script name."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12645,-115.1682&zoom=21&basemap=satellite",
+      "review": "Inspected curved top and mapped placement; Omega POI label is misleading for this footprint."
+    }
+  ],
+  "remaining": [
+    "Wynn script is a local-font approximation, not exact logo outlines.",
+    "LED content is original neutral static art; no moving eraser or advertisement playback.",
+    "Pedestal detailing and panel proportions are estimated; manufacturer total/display dimensions used.",
+    "Surrounding garden/hillside remains unfinished in wynn-lakefront record.",
+    "Static960x540 timings are recorded, not a60fps driving qualification."
+  ],
+  "triangles": 9248,
+  "batches": 7,
+  "optimizedMiB": 0.64,
+  "viewsInspected": [
+    "build/city-exteriors/wynn-marquee-final/wynn-marquee-south.png",
+    "build/city-exteriors/wynn-marquee-final/wynn-marquee-north.png",
+    "build/city-exteriors/wynn-marquee-final/wynn-marquee-aerial.png"
+  ],
+  "tests": [
+    "57 roof support samples passed",
+    "Eight route legs passed around the local base in both directions",
+    "28 erroneous5m shell/collision triangles removed",
+    "Three installed views inspected; corrected face winding, display emission and missing LED UV coordinates through three review iterations"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "wynn-marquee-south",
+        "eye": [
+          419,
+          7,
+          -1124
+        ],
+        "target": [
+          432,
+          24,
+          -1165
+        ],
+        "p": [
+          414,
+          1,
+          -1148
+        ],
+        "p50": 22.900000035762787,
+        "p95": 25.700000047683716
+      },
+      {
+        "name": "wynn-marquee-north",
+        "eye": [
+          421,
+          8,
+          -1200
+        ],
+        "target": [
+          432,
+          24,
+          -1165
+        ],
+        "p": [
+          415,
+          1,
+          -1183
+        ],
+        "p50": 58.799999952316284,
+        "p95": 66.80000001192093
+      },
+      {
+        "name": "wynn-marquee-aerial",
+        "eye": [
+          397,
+          56,
+          -1130
+        ],
+        "target": [
+          433,
+          26,
+          -1164
+        ],
+        "p": [
+          414,
+          1,
+          -1148
+        ],
+        "p50": 23,
+        "p95": 29.69999998807907
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 28,
+    "colliderTrianglesRemoved": 28,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in wynnMarquee mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/wynnMarquee-exterior.glb": "3926074d3fda2739ab5078e1cde8d54c9b442065e92208b7dce5b02d45a3a9fc",
+      "build/strip-landmarks/wynnMarquee-exterior-collision.json": "40a8dc900354d912dcf1d74a6e3e9ea05e133bfbe573f137d4178215e74ed663"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "casino-center-courtyard",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364846572",
+    "way/364846571"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15270,-115.15275&heading=90&pitch=0",
+      "imageDate": "January2026",
+      "observed": "1520SCasinoCenter. Two-storey studio courtyard, open white upper galleries with exterior stair runs, gray/taupe walls, white balcony fronts, solid block street fence and white vehicle gate."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15292,-115.15276&heading=90&pitch=0",
+      "imageDate": "January2026",
+      "observed": "1510SCasinoCenter. Western office end of northern wing, deep gray sloped canopy/mansard, central framed entrance, low planters, solid gray facade; two-floor wing behind. Tenant name uncertain; no private resident information reproduced."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15266,-115.15202&zoom=20&basemap=satellite",
+      "observed": "Separate northbar and southernL-shaped building, white low-pitch roofs, open parking/courtyard and rectangular pool on north side."
+    }
+  ],
+  "estimatedElevationsM": {
+    "upperGallery": 3.0,
+    "roof": 6.0
+  },
+  "remaining": [
+    "Gallery heights and stair positions estimated; source confirms two levels and external circulation, not precise dimensions",
+    "Missing street trees, planters, parking markings, fine blockwall finish and gate hardware",
+    "Pool size and office mansard proportions approximate; neutral daylight/perimeter drive review pending",
+    "No studio interiors or resident information reconstructed"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/casino-center-courtyard-final",
+    "support": "build/city-exteriors/casino-center-courtyard-collision.json",
+    "walk": "build/city-exteriors/casino-center-courtyard-walk.json",
+    "stairs": [
+      "build/city-exteriors/casino-center-courtyard-stairs.json",
+      "build/city-exteriors/casino-center-courtyard-north-stairs.json"
+    ],
+    "ownership": "build/city-exteriors/casino-center-courtyard-ownership-audit.json",
+    "visualReview": "Installed4views reviewed. Fixed courtyard-floating equipment using footprint-interior test, removed office generic windows and enlarged mansard. Final office/inside/aerial rechecked.45225tri24batches.68MiB.126support6groundwalk10stairlegsPASS,35oldtri removed. Static960p95~18.1ms not route benchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/casinoCenterCourtyard-exterior.glb": "ef4f89294e952cf6b188647b91058baa79eff54c4f0b642584ff61d9f2eb2e80",
+      "build/strip-landmarks/casinoCenterCourtyard-exterior-collision.json": "9a0cce458617c0fb7f0a6a3a17614462826a0a699e769931a315ffa03799f32c"
+    }
+  }
+}

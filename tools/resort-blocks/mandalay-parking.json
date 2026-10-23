@@ -1,0 +1,62 @@
+{
+  "id": "mandalay-parking",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/111394032"
+  ],
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.0919,-115.17855,650a,420d,35y,90h,60t,0r",
+      "inspected": true,
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0919,-115.17855,670a,430d,35y,270h,55t,0r",
+      "inspected": true,
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0919,-115.17855,780a,350d,35y,0h,0t,0r",
+      "inspected": true,
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13"
+    }
+  ],
+  "remaining": [
+    "Pedestrian connection into resort not implemented",
+    "Site planting, parking gates, exact billboard creative and precise exterior lighting housings",
+    "Actual traffic direction and deck elevations estimated; vehicle traversal not yet tested"
+  ],
+  "observations": "Open white horizontal concrete bands, central west billboard panel, east/north roof parking, two east-west ramp slots, southwest service annex and perimeter stair heads.",
+  "dimensions": "Mapped footprint250x168m including service annex; roof15.24m, pitch3m and ramp endpoints estimated visually. Exact interior traffic directions not sourced.",
+  "geometry": {
+    "triangles": 11587,
+    "batches": 7,
+    "optimizedMiB": 0.18
+  },
+  "tests": "182 deck support and190 ramp support/headroom samples PASS; typecheck PASS;1517 city collision cells valid; ten installed views inspected; full WebGPU verify PASS57fps startup3011bodies (not site performance benchmark)",
+  "viewsReviewed": [
+    "build/city-exteriors/mandalay-parking-after/west.png",
+    "build/city-exteriors/mandalay-parking-after/north.png",
+    "build/city-exteriors/mandalay-parking-after/roof.png",
+    "build/city-exteriors/mandalay-parking-after/ramp.png",
+    "build/city-exteriors/mandalay-parking-after/inside.png",
+    "build/city-exteriors/mandalay-parking-final/west.png",
+    "build/city-exteriors/mandalay-parking-final/north.png",
+    "build/city-exteriors/mandalay-parking-final/roof.png",
+    "build/city-exteriors/mandalay-parking-final/ramp.png",
+    "build/city-exteriors/mandalay-parking-final/inside.png"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/mandalayParking-exterior.glb": "82aa7ccad2bf6735b2b15bb5e7a329e08aa4b530ec347136bba6981eea428bee"
+    }
+  },
+  "reviewFindings": "Final exterior views show white open bands, perimeter heads and both ramp slots. Interior supports visible; explicit soffits added. Billboards plain; surrounding older resort geometry remains visually coarse. Reference parking occupancy and palms absent.",
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-mandalay-parking.log"
+}

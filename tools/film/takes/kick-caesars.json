@@ -1,0 +1,44 @@
+{
+ "start": {
+  "hotel": [
+   "caesars-palace",
+   20,
+   null,
+   "corridor"
+  ],
+  "door": {},
+  "view": "first",
+  "warm": 3
+ },
+ "steps": [
+  {
+   "approachDoor": {}
+  },
+  {
+   "wait": 0.35
+  },
+  {
+   "kick": true
+  },
+  {
+   "wait": 1.0
+  },
+  {
+   "enterRoom": {
+    "distance": 5.6
+   }
+  },
+  {
+   "look": {
+    "pitch": -0.06,
+    "seconds": 1.4
+   }
+  },
+  {
+   "wait": 0.8
+  }
+ ],
+ "maxSeconds": 45,
+ "name": "kick-caesars",
+ "subframes": 4
+}

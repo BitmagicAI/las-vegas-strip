@@ -1,0 +1,80 @@
+{
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.101591,-115.174685&zoom=21&basemap=satellite",
+      "review": "115661803 is central stepped square arrival pavilion behind broad porte-cochere, not a detached six-storey residential tower. Nested roof setbacks, fluted facades, side columns."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.10105,-115.174427&zoom=21&basemap=satellite",
+      "review": "1385399163 footprint lies on Tropicana bus-stop pavement. Visible diagonal/X pattern; roof classification still uncertain."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.10098,-115.17443&heading=0&pitch=0",
+      "imageDate": "February2025",
+      "review": "Construction barriers along Tropicana and bus stop; no clear installed roof in this image."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.10112,-115.174427&heading=180&pitch=0",
+      "imageDate": "January2025",
+      "review": "Opposite side shows temporary chain-link fence, green bollards and no obvious roof. Do not silently combine construction-era and newer map."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1012,-115.17468&heading=0&pitch=15",
+      "imageDate": "January2025",
+      "review": "Inspected main porte-cochere: broad pale/gold canopy with red horizontal fascia bands, two-line NYNY sign and radiating crown, dark rectangular fluted/decorated piers, painted radial ceiling, landscaped island. Main central rear pavilion partly occluded."
+    },
+    {
+      "url": "https://www.skylinescenes.com/products/new-york-new-york-hotel-amp-casino-v43594",
+      "image": "https://skylinespace.nyc3.cdn.digitaloceanspaces.com/media/images/lasvegas_68_9501_up.jpg",
+      "review": "Image visually inspected. Southern arrival roof shows small stepped central pavilion amid low-rise podium, broad canopy. Date unknown; uses old advertising. Not used as texture."
+    }
+  ],
+  "remaining": [
+    "Current2026 shelter removal/reinstallation status unconfirmed.",
+    "Arrival pavilion refinements retained in tools/resort-blocks/nyny-arrival.json."
+  ],
+  "ownershipAudit": "build/city-exteriors/nyny-arrival-owner-audit.json",
+  "mappedPavilionCurrent": "10 city building-estimated triangles, height20m, not a separately authored highrise plan feature.",
+  "arrivalFit": {
+    "pavilionFootprint": "way/115661803, 9.91 by9.74m mapped bounds",
+    "canopyFootprint": "part of way/115661793 south of z1609.7: about30m wide, stepped down to22m at southern sign face, extends to1642.93",
+    "pavilionHeightM": 20,
+    "pavilionHeightConfidence": "OSM estimated; no survey confirmation",
+    "canopySoffitM": 7.2,
+    "canopyTopM": 8.1,
+    "heightConfidence": "Estimated from January2025 reference, not measured",
+    "scope": "Open automobile canopy, supports and sign; preserve existing main interiors and coaster."
+  },
+  "shelterSearch20261021": {
+    "query": "New York New York Tropicana bus stop shelter 2025",
+    "result": "Image search found skyline/bridge views and unrelated shelters, none adequate to establish this shelter facade. No unrelated image adopted.",
+    "osmTags": {
+      "amenity": "shelter",
+      "bench": "yes",
+      "bin": "no",
+      "building": "yes",
+      "lit": "no",
+      "shelter_type": "public_transport"
+    }
+  },
+  "shelterResolvedHistoricReference": {
+    "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=KDooP8VRL6MUdDFwdC93bQ&heading=0&pitch=0",
+    "imageDate": "2022-12",
+    "inspection": "Thin flat metal roof, dark steel columns and rear frame, three metal benches, advertising end panels. Clearly visible, about11m mapped length and1.6m depth. Estimated roof2.65m, no measured height.",
+    "temporalConflict": "2025-02 same viewpoint shows construction fencing and no shelter. Reconstructing2022 permanent shelter is a historical variant, NOT verified current installation.",
+    "osm": "https://api.openstreetmap.org/api/0.6/way/1385399163.json",
+    "osmDate": "2025-05-10",
+    "osmSource": "Changeset166083176 uses Bing aerial, not an on-ground survey; does not resolve removal/reinstallation."
+  },
+  "shelterInstalledReview": {
+    "date": "2026-10-21",
+    "status": "reviewed-refinement-pending",
+    "evidence": "build/city-exteriors/cvs-east-review2/results.json",
+    "captures": [
+      "build/city-exteriors/cvs-east-review2/shelter-before.png",
+      "build/city-exteriors/cvs-east-review2/shelter-before-aerial.png"
+    ],
+    "finding": "Both installed views inspected: open paved sidewalk, no gray placeholder and no shelter. Preserved existing geometry, consistent with latest available February2025 ground view. No reconstruction of historical2022 shelter.",
+    "remaining": "Current2026 removal/reinstallation status unconfirmed; May2025 OSM aerial-derived footprint does not establish current installation."
+  }
+}

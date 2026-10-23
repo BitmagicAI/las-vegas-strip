@@ -1,0 +1,39 @@
+{
+  "id": "oakey-service-compound",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364845144"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15085,-115.15165&zoom=20&basemap=satellite",
+      "observed": "Cleared west portion of mapped envelope; northern exposed framing, narrow retained metal roof eastern wing, southern weathered flat roof. Satellite acquisition date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15120,-115.15160&heading=180&pitch=0",
+      "imageDate": "August2024",
+      "observed": "505EOakey: closed barred gate, construction yard and low retained masonry, open structure. Latest available north-street imagery in date carousel."
+    }
+  ],
+  "remaining": [
+    "Exact demolition boundary and current construction progress uncertain",
+    "Heights3.6/3.8 and framing4.5m estimated; service doors inferred",
+    "No interior or construction-yard access claim",
+    "Roof membrane weathering, construction debris and temporary equipment not represented; retained wing finish needs closer reference",
+    "Existing mapped yard access road retained; precise former/new yard footprint unresolved",
+    "Roof seam shadows alias at distance in aerial view; material/normal detail refinement remains"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/oakey-service-compound-final",
+    "support": "build/city-exteriors/oakey-service-compound-collision.json",
+    "walk": "build/city-exteriors/oakey-service-compound-walk.json",
+    "ownership": "build/city-exteriors/oakey-service-compound-ownership-audit.json",
+    "visualReview": "North/yard/aerial installed views inspected.7566tri18batches0.24MiBoptimized;26oldvisual/collisiontri removed.152support6walkPASS after bridging missing public pavement seam. Reconstruction of observed partial demolition, not completed site/final architecture."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/oakeyService-exterior.glb": "2ebf03dc97b4e9d167bda2012058d7d52fbd21cce7ba9972f00a4285f20f1a7a",
+      "build/strip-landmarks/oakeyService-exterior-collision.json": "9852dba8e6c435e12076f12321a5009982f12b783e184c6079ee24f9117ac073"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "signature",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1067,-115.1665,750a,500d,35y,0h,60t,0r",
+      "imagery": "2022-11-09",
+      "review": "Visually inspected aerial; three staggered towers, pools west, canopies east."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.107,-115.1665,650a,420d,35y,180h,55t,0r",
+      "imagery": "2022-11-09",
+      "review": "Visually inspected rear elevation; white crown and recessed balcony grids."
+    },
+    {
+      "url": "https://static.mgmresorts.com/content/dam/MGM/signature/hotel/architecture/signature-hotel-property-map.pdf",
+      "review": "Text inspected: three pools, porte-cocheres, lobby links and walkway to MGM. Visual map review pending."
+    }
+  ],
+  "remaining": [
+    "Exact pool footprints remain estimated; south pool is clipped by retained walkway/road masks and needs reference alignment.",
+    "Garden planting and paths incomplete.",
+    "Crown and roof equipment approximate; signage absent.",
+    "Full public route walk and pool gate collision pending."
+  ],
+  "estimates": {
+    "heightM": 145,
+    "note": "Mapped height; facade bay sizes and podium elevations require estimated fit."
+  },
+  "geometry": {
+    "triangles": 186063,
+    "batches": 46,
+    "optimizedMiB": 3.15
+  },
+  "tests": {
+    "canopyClearance": "304 samples pass including correct160m surrounding collision cells",
+    "visual": "All3initial and3courtyard installed views inspected; new balconies, canopies and pool furniture visible.",
+    "frameTimes": [
+      {
+        "name": "signature-aerial",
+        "eye": [
+          780,
+          240,
+          1220
+        ],
+        "target": [
+          575,
+          60,
+          1025
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.09999990463257
+      },
+      {
+        "name": "signature-harmon",
+        "eye": [
+          670,
+          6,
+          865
+        ],
+        "target": [
+          580,
+          60,
+          955
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.600000143051147
+      },
+      {
+        "name": "signature-pools",
+        "eye": [
+          420,
+          100,
+          1100
+        ],
+        "target": [
+          560,
+          20,
+          1020
+        ],
+        "p50": 16.699999809265137,
+        "p95": 18.799999952316284
+      }
+    ]
+  },
+  "evidence": "build/city-exteriors/signature-courts"
+}

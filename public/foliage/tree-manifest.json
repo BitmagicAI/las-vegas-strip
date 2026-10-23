@@ -1,0 +1,23 @@
+{
+  "kind": "tree",
+  "sourceTriangles": 2062487,
+  "lods": [
+    {
+      "level": 0,
+      "triangles": 250000,
+      "materials": 3
+    },
+    {
+      "level": 1,
+      "triangles": 13139,
+      "materials": 3
+    },
+    {
+      "level": 2,
+      "triangles": 6,
+      "materials": 1,
+      "method": "three intersecting alpha silhouette cards"
+    }
+  ],
+  "source": "tools/foliage/sources/tree_small_02/tree_small_02_1k.gltf"
+}

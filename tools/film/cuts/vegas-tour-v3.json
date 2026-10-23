@@ -1,0 +1,361 @@
+{
+ "name": "vegas-afterlight-tour-v3",
+ "music": ".bitmagic/film/music/bed-v1.mp3",
+ "musicStart": 0,
+ "fadeIn": 1.2,
+ "fadeOut": 2.5,
+ "logo": {
+  "file": "tools/film/brand/bitmagic-logo-white.png",
+  "corner": "br",
+  "height": 0.05,
+  "margin": 0.022,
+  "opacity": 0.6,
+  "shadow": 0.45
+ },
+ "clips": [
+  {
+   "take": "fly-strip",
+   "in": 0.3,
+   "dur": 12.9089,
+   "label": "opener"
+  },
+  {
+   "take": "fly-paris",
+   "in": 1.0,
+   "dur": 6.0223,
+   "x": 0,
+   "label": "fly-paris @1.0"
+  },
+  {
+   "take": "drone-north2",
+   "in": 0.5,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drone-north2 @0.5"
+  },
+  {
+   "take": "drone-north2",
+   "in": 17.0,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "drone-north2 @17.0"
+  },
+  {
+   "take": "lake-glide",
+   "in": 0.8,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "lake-glide @0.8"
+  },
+  {
+   "take": "drone-north2",
+   "in": 30.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drone-north2 @30.0"
+  },
+  {
+   "take": "drone-north2",
+   "in": 38.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drone-north2 @38.0"
+  },
+  {
+   "take": "drone-north2",
+   "in": 51.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drone-north2 @51.0"
+  },
+  {
+   "take": "fly-highroller",
+   "in": 1.0,
+   "dur": 10.8401,
+   "x": 0,
+   "label": "fly-highroller @1.0"
+  },
+  {
+   "take": "drone-north2",
+   "in": 107.5,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "drone-north2 @107.5"
+  },
+  {
+   "take": "drone-south2",
+   "in": 0.5,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drone-south2 @0.5"
+  },
+  {
+   "take": "drone-south2",
+   "in": 20.5,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drone-south2 @20.5"
+  },
+  {
+   "take": "fly-sphere",
+   "in": 1.2,
+   "dur": 9.6357,
+   "x": 0,
+   "label": "fly-sphere @1.2"
+  },
+  {
+   "take": "drone-south2",
+   "in": 44.5,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "drone-south2 @44.5"
+  },
+  {
+   "take": "casino-caesars",
+   "in": 1.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "casino-caesars @1.0"
+  },
+  {
+   "take": "lobby-venetian",
+   "in": 1.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "lobby-venetian @1.0"
+  },
+  {
+   "take": "casino-flamingo",
+   "in": 1.5,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "casino-flamingo @1.5"
+  },
+  {
+   "take": "lobby-bellagio",
+   "in": 1.0,
+   "dur": 3.0111,
+   "x": 0,
+   "label": "lobby-bellagio @1.0"
+  },
+  {
+   "take": "casino-planet-hollywood",
+   "in": 1.5,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "casino-planet-hollywood @1.5"
+  },
+  {
+   "take": "crystals-atrium",
+   "in": 1.0,
+   "dur": 3.0111,
+   "x": 0,
+   "label": "crystals-atrium @1.0"
+  },
+  {
+   "take": "kick-caesars",
+   "in": 3.4,
+   "dur": 4.8178,
+   "x": 0,
+   "label": "kick-caesars @3.4"
+  },
+  {
+   "take": "kick-cosmo",
+   "in": 1.3,
+   "dur": 4.2156,
+   "x": 0,
+   "label": "kick-cosmo @1.3"
+  },
+  {
+   "take": "kick-bellagio",
+   "in": 1.6,
+   "dur": 7.2267,
+   "x": 0,
+   "label": "kick-bellagio @1.6"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 1.5,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "coaster-ride @1.5"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 70.0,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "coaster-ride @70.0"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 89.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "coaster-ride @89.0"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 112.0,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "coaster-ride @112.0"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 118.5,
+   "dur": 2.4089,
+   "x": 0,
+   "label": "coaster-ride @118.5"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 132.5,
+   "dur": 3.6134,
+   "x": 0,
+   "label": "coaster-ride @132.5"
+  },
+  {
+   "take": "coaster-ride",
+   "in": 144.0,
+   "dur": 4.2156,
+   "x": 0,
+   "label": "coaster-ride @144.0"
+  },
+  {
+   "take": "fly-paris",
+   "in": 8.0,
+   "dur": 13.2366,
+   "x": 1.0,
+   "label": "closer"
+  }
+ ],
+ "cards": [
+  {
+   "at": 1.4,
+   "dur": 8.0,
+   "style": "title",
+   "text": "VEGAS: AFTERLIGHT",
+   "fade": 1.2
+  },
+  {
+   "at": 13.259,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "PARIS",
+   "sub": "THROUGH THE ARC DE TRIOMPHE"
+  },
+  {
+   "at": 19.281,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE LAS VEGAS STRIP",
+   "sub": "NORTHBOUND"
+  },
+  {
+   "at": 27.712,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "BELLAGIO",
+   "sub": "THE LAKE"
+  },
+  {
+   "at": 43.37,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "HIGH ROLLER",
+   "sub": "THE LINQ"
+  },
+  {
+   "at": 59.028,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "CITYCENTER",
+   "sub": "SOUTHBOUND"
+  },
+  {
+   "at": 66.255,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "SPHERE"
+  },
+  {
+   "at": 79.404,
+   "dur": 2.9,
+   "style": "stat",
+   "text": "38",
+   "sub": "RESORTS",
+   "fade": 0.45
+  },
+  {
+   "at": 83.117,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE VENETIAN"
+  },
+  {
+   "at": 86.731,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "FLAMINGO"
+  },
+  {
+   "at": 89.14,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "BELLAGIO"
+  },
+  {
+   "at": 92.151,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "PLANET HOLLYWOOD"
+  },
+  {
+   "at": 94.56,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "CRYSTALS",
+   "sub": "CITYCENTER"
+  },
+  {
+   "at": 97.471,
+   "dur": 2.9,
+   "style": "stat",
+   "text": "30,892",
+   "sub": "HOTEL ROOMS",
+   "fade": 0.45
+  },
+  {
+   "at": 102.389,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE COSMOPOLITAN",
+   "sub": "LEVEL 41"
+  },
+  {
+   "at": 106.604,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "BELLAGIO",
+   "sub": "LEVEL 21"
+  },
+  {
+   "at": 113.831,
+   "dur": 3.0,
+   "style": "caption",
+   "text": "THE BIG APPLE COASTER",
+   "sub": "NEW YORK-NEW YORK"
+  },
+  {
+   "at": "end",
+   "dur": 5.5,
+   "style": "end",
+   "text": "VEGAS: AFTERLIGHT",
+   "sub": "THE STRIP IS YOURS",
+   "fade": 1.0,
+   "endPad": 0.6
+  }
+ ],
+ "grain": 0.035
+}

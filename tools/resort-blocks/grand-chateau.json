@@ -1,0 +1,106 @@
+{
+  "id": "grand-chateau",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1075,-115.1693,800a,450d,35y,180h,60t,0r",
+      "imagery": "2022-11-09",
+      "establishes": "Branched tower and green roof crown, visually inspected."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1074,-115.1693,650a,300d,35y,0h,45t,0r",
+      "imagery": "2022-11-09",
+      "establishes": "South V court, podium pool, open parking levels and cream/taupe facade with dark windows; visually inspected."
+    }
+  ],
+  "remaining": [
+    "Full crown dormers and rooftop pool fittings not complete.",
+    "Arrival geometry and parking height are photo estimates.",
+    "Landscaping, pool furnishings and public route traversal incomplete.",
+    "True sloped green crown, rooftop equipment and upper pool unfinished.",
+    "Pool terrace lacks detailed furnishings, safety enclosure and verified access.",
+    "Canopy currently faces parking facade; proper entrance must be resolved from ground reference."
+  ],
+  "estimates": {
+    "towerM": 128,
+    "podiumM": 17,
+    "note": "128m mapped parent applied to tower; identical mapped five-level part way/1421481074 establishes17m podium and is removed from background ownership."
+  },
+  "geometry": {
+    "triangles": 12995,
+    "batches": 15,
+    "optimizedMiB": 0.21
+  },
+  "tests": {
+    "roofSupport": "31 podium roof samples pass; public route walk unverified",
+    "visual": "All four corrected installed views inspected. Duplicate background17m podium removed; pool is now visible. Crown still lacks true mansard section, terrace sparse, arrival door connection unresolved.",
+    "typecheck": "passed",
+    "frameTimes": [
+      {
+        "name": "grand-chateau-aerial",
+        "eye": [
+          490,
+          220,
+          1090
+        ],
+        "target": [
+          340,
+          50,
+          955
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18
+      },
+      {
+        "name": "grand-chateau-strip",
+        "eye": [
+          250,
+          8,
+          875
+        ],
+        "target": [
+          340,
+          70,
+          955
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.300000190734863
+      },
+      {
+        "name": "grand-chateau-pool",
+        "eye": [
+          340,
+          65,
+          1055
+        ],
+        "target": [
+          340,
+          16,
+          975
+        ],
+        "p50": 17,
+        "p95": 18.600000143051147
+      },
+      {
+        "name": "grand-chateau-arrival",
+        "eye": [
+          345,
+          3,
+          886
+        ],
+        "target": [
+          345,
+          10,
+          935
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.40000009536743
+      }
+    ]
+  },
+  "evidence": [
+    "build/city-exteriors/grand-chateau-before",
+    "build/city-exteriors/grand-chateau-after",
+    "build/city-exteriors/grand-chateau-corrected"
+  ]
+}

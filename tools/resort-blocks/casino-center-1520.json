@@ -1,0 +1,120 @@
+{
+  "id": "casino-center-1520",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "relation/9575763"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15260,-115.15298&zoom=20&basemap=satellite",
+      "review": "Flat white roof, narrow long palm courtyard, west parking, roof painted1520"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15260,-115.15255&heading=270&pitch=3",
+      "imageDate": "January2026",
+      "review": "White/light gray two-storey facade, narrow high windows on both floors, recessed north entry, Art District Apartments fin sign"
+    }
+  ],
+  "estimates": [
+    "Height and concealed courtyard circulation remain estimated"
+  ],
+  "remaining": [
+    "Concealed courtyard/gallery/stair arrangement inferred; no playable room interiors",
+    "Palm leaves remain stylized; exact materials/sign proportions approximate",
+    "No neutral daylight comparison or full driving benchmark"
+  ],
+  "triangles": 15804,
+  "batches": 26,
+  "optimizedMiB": 12.14,
+  "ownership": {
+    "removed": 24,
+    "colliderTrianglesRemoved": 24,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in CasinoCenter1520 mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "412 roof support samples PASS",
+    "10 ground route legs PASS",
+    "6 stair/gallery legs PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/casino-center-1520-final/casino1520-east.png",
+    "build/city-exteriors/casino-center-1520-final/casino1520-court.png",
+    "build/city-exteriors/casino-center-1520-final/casino1520-roof.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "casino1520-east",
+        "eye": [
+          1827,
+          5,
+          -4075
+        ],
+        "target": [
+          1808,
+          3,
+          -4073
+        ],
+        "p": [
+          1820,
+          2,
+          -4075
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.5
+      },
+      {
+        "name": "casino1520-roof",
+        "eye": [
+          1834,
+          40,
+          -4039
+        ],
+        "target": [
+          1797,
+          3,
+          -4073
+        ],
+        "p": [
+          1817,
+          2,
+          -4054
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.600000023841858
+      },
+      {
+        "name": "casino1520-court",
+        "eye": [
+          1800,
+          2.4,
+          -4082
+        ],
+        "target": [
+          1795,
+          2.8,
+          -4067
+        ],
+        "p": [
+          1800,
+          2,
+          -4082
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.80000001192093
+      }
+    ],
+    "limitation": "Not a driving/streaming benchmark"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/casinoCenter1520-exterior.glb": "aecb2e9dd82e7c82294084f53f42c06c19b09c9dd1c9ba1ca5d386d42be562e9",
+      "build/strip-landmarks/casinoCenter1520-exterior-collision.json": "21650ddadbb220a905bb7e21c48000f85d61f8d79a11c2f4a495665820d1b4a6"
+    }
+  },
+  "visualCorrections": [
+    "Added palms and sign fins after first installed inspection",
+    "tree-1.glb rendered fragmented; switched near LODs to existing CC0 tree-0.glb, verified installed. tree-2 remains distant LOD."
+  ]
+}

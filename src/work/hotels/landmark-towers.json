@@ -1,0 +1,83 @@
+[
+  {
+    "id": "linq-1",
+    "name": "The LINQ",
+    "building": "linq",
+    "origin": [
+      148.3444442234587,
+      0.24,
+      -247.2539492976329
+    ],
+    "yaw": 1.5512443085991103,
+    "linear": [
+      0.019548671063906082,
+      0.9997014003094524,
+      -0.799761120247562,
+      0.0244358388298826
+    ],
+    "floors": 17,
+    "firstGuestFloor": 2,
+    "bays": 2,
+    "kind": "room",
+    "set": "linq",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "guest-linq",
+    "lobbyFront": -17.25,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "vanderpump-1",
+    "name": "The Vanderpump Hotel",
+    "building": "vanderpump",
+    "origin": [
+      107.0393605598782,
+      0.24,
+      105.59244240927077
+    ],
+    "yaw": 1.5288345343279948,
+    "linear": [
+      0.0419364897308966,
+      0.9988103597313488,
+      -0.85897690936896,
+      0.04876336015220535
+    ],
+    "floors": 9,
+    "firstGuestFloor": 2,
+    "bays": 3,
+    "kind": "room",
+    "set": "vanderpump",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "guest-vanderpump",
+    "lobbyFront": -23.25,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "polo-1",
+    "name": "Polo Towers",
+    "building": "polo",
+    "origin": [
+      220,
+      0.24,
+      1054.5
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0,
+      1,
+      -1,
+      0
+    ],
+    "floors": 15,
+    "firstGuestFloor": 2,
+    "bays": 7,
+    "kind": "apartment",
+    "set": "polo",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "guest-polo",
+    "lobbyFront": -47.25,
+    "windowWidth": 19.2
+  }
+]

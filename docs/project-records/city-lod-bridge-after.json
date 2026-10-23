@@ -1,0 +1,1765 @@
+{
+  "lod": {
+    "blocks": 345,
+    "full": 33,
+    "coarse": 237,
+    "culled": 75
+  },
+  "at": "2026-10-06T01:22:47.212Z",
+  "camera": [
+    -68.4391098022461,
+    7.62195906829834,
+    172.10011291503906
+  ],
+  "backend": "webgpu",
+  "quality": {
+    "tier": "high",
+    "source": "pinned",
+    "adapting": false,
+    "downgradesUsed": 0,
+    "lastWindowFps": null,
+    "probeMsPerFrame": null
+  },
+  "drawingBuffer": {
+    "width": 3010,
+    "height": 1656
+  },
+  "renderCounters": {
+    "calls": 265,
+    "triangles": 5145050
+  },
+  "fps": 15.616256523016258,
+  "frameSamples": 240,
+  "frameMs": {
+    "mean": 64.03583333343268,
+    "p50": 60.60000002384186,
+    "p95": 141.69999992847443
+  },
+  "cpuMs": {
+    "gameUpdateP50": 1.2999999523162842,
+    "renderSubmissionP50": 7.400000095367432,
+    "gameUpdateP95": 1.7000000476837158,
+    "renderSubmissionP95": 8.600000023841858
+  },
+  "scene": {
+    "objects": 5538,
+    "meshes": 2989,
+    "enabled": 577,
+    "geometries": 2921,
+    "materials": 929,
+    "lights": 48,
+    "activeLights": 32,
+    "components": [
+      {
+        "name": "Other / doors / actors",
+        "kind": "other",
+        "meshes": 461,
+        "enabled": 142,
+        "drawn": 88,
+        "calls": 111,
+        "triangles": 53537,
+        "smallDrawn": 49,
+        "materials": 167
+      },
+      {
+        "name": "Legacy resort interiors",
+        "kind": "interior",
+        "meshes": 529,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 126
+      },
+      {
+        "name": "Legacy city / resort shells",
+        "kind": "exterior",
+        "meshes": 235,
+        "enabled": 37,
+        "drawn": 15,
+        "calls": 15,
+        "triangles": 745425,
+        "smallDrawn": 2,
+        "materials": 29
+      },
+      {
+        "name": "Characters",
+        "kind": "other",
+        "meshes": 216,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 216
+      },
+      {
+        "name": "Sphere · exterior",
+        "kind": "exterior",
+        "meshes": 15,
+        "enabled": 14,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 15
+      },
+      {
+        "name": "Cosmopolitan complete exterior · exterior",
+        "kind": "exterior",
+        "meshes": 13,
+        "enabled": 8,
+        "drawn": 8,
+        "calls": 13,
+        "triangles": 225724,
+        "smallDrawn": 2,
+        "materials": 6
+      },
+      {
+        "name": "Cosmopolitan · Level 1 · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 2
+      },
+      {
+        "name": "Mapped high-rises",
+        "kind": "exterior",
+        "meshes": 235,
+        "enabled": 6,
+        "drawn": 5,
+        "calls": 5,
+        "triangles": 26078,
+        "smallDrawn": 0,
+        "materials": 3
+      },
+      {
+        "name": "Cosmopolitan · Level 2 · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 2
+      },
+      {
+        "name": "Cosmopolitan · Level 3 · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 2
+      },
+      {
+        "name": "The LINQ + High Roller · exterior",
+        "kind": "exterior",
+        "meshes": 233,
+        "enabled": 231,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 27
+      },
+      {
+        "name": "Cosmopolitan · Level 4 · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 2
+      },
+      {
+        "name": "Cosmopolitan · Level 14 · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 2
+      },
+      {
+        "name": "The Vanderpump Hotel · exterior",
+        "kind": "exterior",
+        "meshes": 7,
+        "enabled": 2,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Fashion Show · exterior",
+        "kind": "exterior",
+        "meshes": 6,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "The Venetian frontage · exterior",
+        "kind": "exterior",
+        "meshes": 6,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "T-Mobile Arena · exterior",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Park MGM · exterior",
+        "kind": "exterior",
+        "meshes": 6,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "The Palazzo · exterior",
+        "kind": "exterior",
+        "meshes": 6,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Treasure Island · exterior",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Harrah’s Las Vegas · exterior",
+        "kind": "exterior",
+        "meshes": 6,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Hilton Vacation Club Polo Towers · exterior",
+        "kind": "exterior",
+        "meshes": 6,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Bellagio · exterior and arrival · exterior",
+        "kind": "exterior",
+        "meshes": 14,
+        "enabled": 10,
+        "drawn": 10,
+        "calls": 18,
+        "triangles": 883950,
+        "smallDrawn": 6,
+        "materials": 6
+      },
+      {
+        "name": "Bellagio · lakefront",
+        "kind": "exterior",
+        "meshes": 3,
+        "enabled": 2,
+        "drawn": 2,
+        "calls": 2,
+        "triangles": 939350,
+        "smallDrawn": 0,
+        "materials": 3
+      },
+      {
+        "name": "Bellagio · Lobby · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 1,
+        "drawn": 1,
+        "calls": 1,
+        "triangles": 0,
+        "smallDrawn": 1,
+        "materials": 2
+      },
+      {
+        "name": "Bellagio · Garden · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 1,
+        "drawn": 1,
+        "calls": 1,
+        "triangles": 0,
+        "smallDrawn": 1,
+        "materials": 2
+      },
+      {
+        "name": "Bellagio · Conservatory · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 1,
+        "drawn": 1,
+        "calls": 1,
+        "triangles": 0,
+        "smallDrawn": 1,
+        "materials": 2
+      },
+      {
+        "name": "Bellagio · Promenade · exterior",
+        "kind": "exterior",
+        "meshes": 2,
+        "enabled": 1,
+        "drawn": 1,
+        "calls": 1,
+        "triangles": 0,
+        "smallDrawn": 1,
+        "materials": 2
+      },
+      {
+        "name": "OSM city / roads",
+        "kind": "exterior",
+        "meshes": 618,
+        "enabled": 17,
+        "drawn": 9,
+        "calls": 41,
+        "triangles": 2083392,
+        "smallDrawn": 0,
+        "materials": 23
+      },
+      {
+        "name": "Jeep charging bay",
+        "kind": "exterior",
+        "meshes": 10,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 8
+      },
+      {
+        "name": "Big Apple Coaster",
+        "kind": "exterior",
+        "meshes": 25,
+        "enabled": 12,
+        "drawn": 12,
+        "calls": 12,
+        "triangles": 156236,
+        "smallDrawn": 2,
+        "materials": 13
+      },
+      {
+        "name": "Public entrance doors",
+        "kind": "exterior",
+        "meshes": 92,
+        "enabled": 28,
+        "drawn": 20,
+        "calls": 20,
+        "triangles": 720,
+        "smallDrawn": 20,
+        "materials": 92
+      },
+      {
+        "name": "Guest · bellagio-stair",
+        "kind": "interior",
+        "meshes": 8,
+        "enabled": 8,
+        "drawn": 3,
+        "calls": 3,
+        "triangles": 708,
+        "smallDrawn": 1,
+        "materials": 4
+      },
+      {
+        "name": "Guest · doors and signs",
+        "kind": "interior",
+        "meshes": 42,
+        "enabled": 9,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 42
+      },
+      {
+        "name": "Guest · veer-stair",
+        "kind": "interior",
+        "meshes": 8,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · paris-stair",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · caesars-stair",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · cosmopolitan-stair",
+        "kind": "interior",
+        "meshes": 8,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · flamingo-stair",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · horseshoe-stair",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 4,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · planet-hollywood-stair",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · aria-stair",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · vdara-stair",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · waldorf-stair",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 4
+      },
+      {
+        "name": "Guest · bellagio-entry",
+        "kind": "exterior",
+        "meshes": 14,
+        "enabled": 14,
+        "drawn": 4,
+        "calls": 4,
+        "triangles": 2892,
+        "smallDrawn": 2,
+        "materials": 7
+      },
+      {
+        "name": "Guest · veer-entry",
+        "kind": "exterior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 2
+      },
+      {
+        "name": "Guest · paris-entry",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · caesars-entry",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · cosmopolitan-entry",
+        "kind": "exterior",
+        "meshes": 10,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · flamingo-entry",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · horseshoe-entry",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 5,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · planet-hollywood-entry",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · aria-entry",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · vdara-entry",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · waldorf-entry",
+        "kind": "exterior",
+        "meshes": 5,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 5
+      },
+      {
+        "name": "Guest · bellagio-closure",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · veer-closure",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · paris-closure",
+        "kind": "interior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · caesars-closure",
+        "kind": "interior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · cosmopolitan-closure",
+        "kind": "interior",
+        "meshes": 4,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · flamingo-closure",
+        "kind": "interior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · horseshoe-closure",
+        "kind": "interior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · planet-hollywood-closure",
+        "kind": "interior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · aria-closure",
+        "kind": "interior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · vdara-closure",
+        "kind": "interior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Guest · waldorf-closure",
+        "kind": "interior",
+        "meshes": 2,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Bellagio · exterior and arrival · interior",
+        "kind": "interior",
+        "meshes": 1,
+        "enabled": 0,
+        "drawn": 0,
+        "calls": 0,
+        "triangles": 0,
+        "smallDrawn": 0,
+        "materials": 1
+      },
+      {
+        "name": "Bridge concourses",
+        "kind": "other",
+        "meshes": 24,
+        "enabled": 24,
+        "drawn": 8,
+        "calls": 9,
+        "triangles": 27038,
+        "smallDrawn": 4,
+        "materials": 24
+      }
+    ]
+  },
+  "submittedMeshes": [
+    {
+      "path": "Skybox",
+      "calls": 1,
+      "triangles": 4680
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / base/street / Full detail / base/street / Full detail / base/street / surface 0",
+      "calls": 31,
+      "triangles": 1733140
+    },
+    {
+      "path": "Mesh #1727",
+      "calls": 1,
+      "triangles": 432
+    },
+    {
+      "path": "Mesh #1728",
+      "calls": 1,
+      "triangles": 432
+    },
+    {
+      "path": "Bridge concourse / Via Bellagio",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Bridge concourse / Via Bellagio",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Bridge concourse / Via Bellagio",
+      "calls": 1,
+      "triangles": 216
+    },
+    {
+      "path": "Bridge concourse / Via Bellagio / Concourse architectural surfaces / Concourse architectural surfaces / surface 1",
+      "calls": 1,
+      "triangles": 2112
+    },
+    {
+      "path": "Bridge concourse / Via Bellagio / Concourse architectural surfaces / Concourse architectural surfaces / surface 0",
+      "calls": 1,
+      "triangles": 23198
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / horseshoe/outside/outside/horseshoe / Full detail / horseshoe/outside/outside/horseshoe / Full detail / horseshoe/outside/outside/horseshoe / surface 0",
+      "calls": 1,
+      "triangles": 6906
+    },
+    {
+      "path": "Small city details / -2,1",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Small city details / -2,1",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / guest-main / Full detail / guest-main / Full detail / guest-main / surface 0",
+      "calls": 1,
+      "triangles": 367972
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / bellagio/shell/zone0/ / Silhouette / bellagio/shell/zone0/",
+      "calls": 1,
+      "triangles": 1828
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / lakefront-village / Full detail / lakefront-village / Full detail / lakefront-village / surface 0",
+      "calls": 1,
+      "triangles": 939093
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / lakefront-village / Full detail / lakefront-village / bellagioBlock-exteriorlakefront-lakelake-water",
+      "calls": 1,
+      "triangles": 257
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / -1,0/street / Full detail / -1,0/street / Full detail / -1,0/street / surface 0",
+      "calls": 1,
+      "triangles": 173263
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / bellagio/shell/zone39/ / Silhouette / bellagio/shell/zone39/",
+      "calls": 1,
+      "triangles": 358
+    },
+    {
+      "path": "WorldGroup / door_bellagio_north_gallery_exit_pivot / door_bellagio_north_gallery_exit / Arrival__leaf-bronze__shell__bronze",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_bellagio_north_gallery_exit_pivot / door_bellagio_north_gallery_exit / Arrival__leaf-bronze__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_bellagio_north_gallery_exit_pivot / door_bellagio_north_gallery_exit / Arrival__leaf-bronze__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "Small city details / -2,2 / Streamed bellagio-stair / Level_trim",
+      "calls": 1,
+      "triangles": 360
+    },
+    {
+      "path": "Small city details / -2,2 / Streamed bellagio-entry / Level_b_walnut",
+      "calls": 1,
+      "triangles": 720
+    },
+    {
+      "path": "Small city details / -2,2 / Streamed bellagio-entry / Level_b_travertine",
+      "calls": 1,
+      "triangles": 2088
+    },
+    {
+      "path": "Small city details / -2,2 / Streamed bellagio-stair / Level_stone",
+      "calls": 1,
+      "triangles": 276
+    },
+    {
+      "path": "Small city details / -2,2 / Streamed bellagio-entry / Level_b_plaster",
+      "calls": 1,
+      "triangles": 72
+    },
+    {
+      "path": "Small city details / -2,2 / Streamed bellagio-stair / Level_wall",
+      "calls": 1,
+      "triangles": 72
+    },
+    {
+      "path": "Small city details / -2,2 / Streamed bellagio-entry / Level_b_darkmarble",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / bellagio/shell/zone0/bellagio / Silhouette / bellagio/shell/zone0/bellagio",
+      "calls": 1,
+      "triangles": 14
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / -1,0/street / Full detail / -1,0/street / Full detail / -1,0/street / surface 1",
+      "calls": 1,
+      "triangles": 9086
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / 0,0/buildings / Full detail / 0,0/buildings / Full detail / 0,0/buildings / surface 0",
+      "calls": 1,
+      "triangles": 9010
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / 0,0/street / Full detail / 0,0/street / Full detail / 0,0/street / surface 1",
+      "calls": 1,
+      "triangles": 10541
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / Full detail / bellagioBlock / surface 0",
+      "calls": 1,
+      "triangles": 513346
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / eiffel/outside/outside/paris / Full detail / eiffel/outside/outside/paris / Full detail / eiffel/outside/outside/paris / surface 0",
+      "calls": 1,
+      "triangles": 114524
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / 0,0/street / Full detail / 0,0/street / Full detail / 0,0/street / surface 0",
+      "calls": 1,
+      "triangles": 107430
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / -1,0/buildings / Full detail / -1,0/buildings / Full detail / -1,0/buildings / surface 0",
+      "calls": 1,
+      "triangles": 3778
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / paris/outside/outside/paris / Full detail / paris/outside/outside/paris / Full detail / paris/outside/outside/paris / surface 0",
+      "calls": 1,
+      "triangles": 282246
+    },
+    {
+      "path": "WorldGroup / door_paris_west_entrance_pivot / door_paris_west_entrance / Arrival__leaf-sage__shell__sage",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_paris_west_entrance_pivot / door_paris_west_entrance / Arrival__leaf-sage__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_paris_west_entrance_pivot / door_paris_west_entrance / Arrival__leaf-sage__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "Bellagio · Lobby / exterior / City block / bellagioLobby / Silhouette / bellagioLobby",
+      "calls": 1,
+      "triangles": 0
+    },
+    {
+      "path": "Bellagio · Garden / exterior / City block / bellagioGarden / Silhouette / bellagioGarden",
+      "calls": 1,
+      "triangles": 0
+    },
+    {
+      "path": "Bellagio · Conservatory / exterior / City block / bellagioConservatory / Silhouette / bellagioConservatory",
+      "calls": 1,
+      "triangles": 0
+    },
+    {
+      "path": "Bellagio · Promenade / exterior / City block / bellagioPromenade / Silhouette / bellagioPromenade",
+      "calls": 1,
+      "triangles": 0
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 60
+    },
+    {
+      "path": "WorldGroup / door_paris_north_exit_pivot / door_paris_north_exit / Arrival__leaf-sage__shell__sage",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_paris_north_exit_pivot / door_paris_north_exit / Arrival__leaf-sage__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_paris_north_exit_pivot / door_paris_north_exit / Arrival__leaf-sage__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / sanctuary/outside/outside/ / Silhouette / sanctuary/outside/outside/",
+      "calls": 1,
+      "triangles": 351
+    },
+    {
+      "path": "Photo-referenced mapped high-rises / City block / bellagio-spa/way/114716301 / Full detail / bellagio-spa/way/114716301 / Full detail / bellagio-spa/way/114716301 / surface 0",
+      "calls": 1,
+      "triangles": 6630
+    },
+    {
+      "path": "Photo-referenced mapped high-rises / City block / bellagio-spa/way/25723910 / Full detail / bellagio-spa/way/25723910 / Full detail / bellagio-spa/way/25723910 / surface 0",
+      "calls": 1,
+      "triangles": 5935
+    },
+    {
+      "path": "Afterlight environment interactions",
+      "calls": 1,
+      "triangles": 640
+    },
+    {
+      "path": "Afterlight environment interactions",
+      "calls": 1,
+      "triangles": 8
+    },
+    {
+      "path": "Cosmopolitan complete exterior / exterior / City block / guest-boulevard / Full detail / guest-boulevard / Full detail / guest-boulevard / surface 0",
+      "calls": 1,
+      "triangles": 1608
+    },
+    {
+      "path": "WorldGroup / door_Interiors / Planet Hollywood west_pivot / door_Interiors / Planet Hollywood west / Arrival__leaf-black__shell__black",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_Interiors / Planet Hollywood west_pivot / door_Interiors / Planet Hollywood west / Arrival__leaf-black__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_Interiors / Planet Hollywood west_pivot / door_Interiors / Planet Hollywood west / Arrival__leaf-black__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / planet-hollywood/outside/outside/planet-hollywood / Full detail / planet-hollywood/outside/outside/planet-hollywood / Full detail / planet-hollywood/outside/outside/planet-hollywood / surface 0",
+      "calls": 1,
+      "triangles": 111360
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / planet-hollywood/outside/outside/planet-hollywood / Full detail / planet-hollywood/outside/outside/planet-hollywood / Full detail / planet-hollywood/outside/outside/planet-hollywood / surface 1",
+      "calls": 1,
+      "triangles": 26040
+    },
+    {
+      "path": "Cosmopolitan complete exterior / exterior / City block / cosmo / Full detail / cosmo / Full detail / cosmo / surface 0",
+      "calls": 1,
+      "triangles": 216052
+    },
+    {
+      "path": "Cosmopolitan complete exterior / exterior / City block / guest-chelsea / Full detail / guest-chelsea / Full detail / guest-chelsea / surface 0",
+      "calls": 1,
+      "triangles": 2584
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Vdara lobby east_pivot / door_CityCenter / Vdara lobby east / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Vdara lobby east_pivot / door_CityCenter / Vdara lobby east / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Vdara lobby south_pivot / door_CityCenter / Vdara lobby south / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Vdara lobby south_pivot / door_CityCenter / Vdara lobby south / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / vdara/outside/outside/vdara / Full detail / vdara/outside/outside/vdara / Full detail / vdara/outside/outside/vdara / surface 0",
+      "calls": 1,
+      "triangles": 78386
+    },
+    {
+      "path": "WorldGroup / door_Interiors / Planet Hollywood south_pivot / door_Interiors / Planet Hollywood south / Arrival__leaf-black__shell__black",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_Interiors / Planet Hollywood south_pivot / door_Interiors / Planet Hollywood south / Arrival__leaf-black__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_Interiors / Planet Hollywood south_pivot / door_Interiors / Planet Hollywood south / Arrival__leaf-black__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino north_pivot / door_CityCenter / Aria casino north / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino north_pivot / door_CityCenter / Aria casino north / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "Photo-referenced mapped high-rises / City block / elara/relation/5342155 / Full detail / elara/relation/5342155 / Full detail / elara/relation/5342155 / surface 0",
+      "calls": 1,
+      "triangles": 5391
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade north_pivot / door_CityCenter / Crystals arcade north / Arrival__leaf-black__shell__black",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade north_pivot / door_CityCenter / Crystals arcade north / Arrival__leaf-black__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade north_pivot / door_CityCenter / Crystals arcade north / Arrival__leaf-black__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "Photo-referenced mapped high-rises / City block / martin/way/495695274 / Silhouette / martin/way/495695274",
+      "calls": 1,
+      "triangles": 250
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino east 0_pivot / door_CityCenter / Aria casino east 0 / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino east 0_pivot / door_CityCenter / Aria casino east 0 / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade east_pivot / door_CityCenter / Crystals arcade east / Arrival__leaf-black__shell__black",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade east_pivot / door_CityCenter / Crystals arcade east / Arrival__leaf-black__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade east_pivot / door_CityCenter / Crystals arcade east / Arrival__leaf-black__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade west_pivot / door_CityCenter / Crystals arcade west / Arrival__leaf-black__shell__black",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade west_pivot / door_CityCenter / Crystals arcade west / Arrival__leaf-black__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade west_pivot / door_CityCenter / Crystals arcade west / Arrival__leaf-black__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / aria/outside/outside/aria / Full detail / aria/outside/outside/aria / Full detail / aria/outside/outside/aria / surface 0",
+      "calls": 1,
+      "triangles": 107716
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / veer-west/outside/outside/veer-west / Silhouette / veer-west/outside/outside/veer-west",
+      "calls": 1,
+      "triangles": 3542
+    },
+    {
+      "path": "WorldGroup / door_Arrival / Veer west residential lobby_pivot / door_Arrival / Veer west residential lobby / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_Arrival / Veer west residential lobby_pivot / door_Arrival / Veer west residential lobby / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "WorldGroup / door_Arrival / Veer east residential lobby_pivot / door_Arrival / Veer east residential lobby / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_Arrival / Veer east residential lobby_pivot / door_Arrival / Veer east residential lobby / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "Photo-referenced mapped high-rises / City block / grand-chateau/way/276427203 / Silhouette / grand-chateau/way/276427203",
+      "calls": 1,
+      "triangles": 7872
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / veer-east/outside/outside/veer-east / Silhouette / veer-east/outside/outside/veer-east",
+      "calls": 1,
+      "triangles": 3654
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / aria/outside/outside/aria / Full detail / aria/outside/outside/aria / Full detail / aria/outside/outside/aria / surface 1",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino east 1_pivot / door_CityCenter / Aria casino east 1 / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino east 1_pivot / door_CityCenter / Aria casino east 1 / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria lobby east_pivot / door_CityCenter / Aria lobby east / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria lobby east_pivot / door_CityCenter / Aria lobby east / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade south_pivot / door_CityCenter / Crystals arcade south / Arrival__leaf-black__shell__black",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade south_pivot / door_CityCenter / Crystals arcade south / Arrival__leaf-black__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade south_pivot / door_CityCenter / Crystals arcade south / Arrival__leaf-black__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino south_pivot / door_CityCenter / Aria casino south / Arrival__leaf-silver__shell__silver",
+      "calls": 1,
+      "triangles": 1008
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino south_pivot / door_CityCenter / Aria casino south / Arrival__leaf-silver__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby north_pivot / door_CityCenter / Waldorf arrival lobby north / Arrival__leaf-bronze__shell__bronze",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby north_pivot / door_CityCenter / Waldorf arrival lobby north / Arrival__leaf-bronze__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby north_pivot / door_CityCenter / Waldorf arrival lobby north / Arrival__leaf-bronze__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby west_pivot / door_CityCenter / Waldorf arrival lobby west / Arrival__leaf-bronze__shell__bronze",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby west_pivot / door_CityCenter / Waldorf arrival lobby west / Arrival__leaf-bronze__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby west_pivot / door_CityCenter / Waldorf arrival lobby west / Arrival__leaf-bronze__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby east_pivot / door_CityCenter / Waldorf arrival lobby east / Arrival__leaf-bronze__shell__bronze",
+      "calls": 1,
+      "triangles": 336
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby east_pivot / door_CityCenter / Waldorf arrival lobby east / Arrival__leaf-bronze__shell__silver",
+      "calls": 1,
+      "triangles": 672
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby east_pivot / door_CityCenter / Waldorf arrival lobby east / Arrival__leaf-bronze__shell__white",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "WorldGroup / MeshLevel / City block / waldorf/outside/outside/waldorf / Silhouette / waldorf/outside/outside/waldorf",
+      "calls": 1,
+      "triangles": 8488
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / BIG_APPLE_COASTER",
+      "calls": 1,
+      "triangles": 3148
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / ENTRANCE____STAIRS",
+      "calls": 1,
+      "triangles": 2436
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / coasterstationconcrete",
+      "calls": 1,
+      "triangles": 24
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / coasterstationpaving",
+      "calls": 1,
+      "triangles": 882
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / coasterstationsteel",
+      "calls": 1,
+      "triangles": 1680
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / coasterstationstationroof",
+      "calls": 1,
+      "triangles": 14
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / BOARD_HERE",
+      "calls": 1,
+      "triangles": 1956
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / THE_BIG_APPLE_COASTER",
+      "calls": 1,
+      "triangles": 3264
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / coasterstationyellow",
+      "calls": 1,
+      "triangles": 260
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / coastertracktrackred",
+      "calls": 1,
+      "triangles": 129024
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / coastersupportspedestal",
+      "calls": 1,
+      "triangles": 2328
+    },
+    {
+      "path": "Big Apple Coaster • OSM mapped route / Scene / coastersupportssupport",
+      "calls": 1,
+      "triangles": 11220
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby east_pivot / door_CityCenter / Waldorf arrival lobby east / Arrival__leaf-bronze__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby west_pivot / door_CityCenter / Waldorf arrival lobby west / Arrival__leaf-bronze__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Waldorf arrival lobby north_pivot / door_CityCenter / Waldorf arrival lobby north / Arrival__leaf-bronze__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino south_pivot / door_CityCenter / Aria casino south / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade south_pivot / door_CityCenter / Crystals arcade south / Arrival__leaf-black__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria lobby east_pivot / door_CityCenter / Aria lobby east / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino east 1_pivot / door_CityCenter / Aria casino east 1 / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_Arrival / Veer east residential lobby_pivot / door_Arrival / Veer east residential lobby / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_Arrival / Veer west residential lobby_pivot / door_Arrival / Veer west residential lobby / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade west_pivot / door_CityCenter / Crystals arcade west / Arrival__leaf-black__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade east_pivot / door_CityCenter / Crystals arcade east / Arrival__leaf-black__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino east 0_pivot / door_CityCenter / Aria casino east 0 / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Crystals arcade north_pivot / door_CityCenter / Crystals arcade north / Arrival__leaf-black__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Aria casino north_pivot / door_CityCenter / Aria casino north / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_Interiors / Planet Hollywood south_pivot / door_Interiors / Planet Hollywood south / Arrival__leaf-black__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Vdara lobby south_pivot / door_CityCenter / Vdara lobby south / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "Cosmopolitan complete exterior / exterior / City block / cosmo / Full detail / cosmo / cosmo-exteriorlevel14-guest-passageglass",
+      "calls": 2,
+      "triangles": 20
+    },
+    {
+      "path": "Cosmopolitan complete exterior / exterior / City block / cosmo / Full detail / cosmo / cosmo-exteriorpublic-stairsglass",
+      "calls": 2,
+      "triangles": 64
+    },
+    {
+      "path": "Cosmopolitan complete exterior / exterior / City block / cosmo / Full detail / cosmo / cosmo-exteriorpodiumglass",
+      "calls": 2,
+      "triangles": 512
+    },
+    {
+      "path": "WorldGroup / door_CityCenter / Vdara lobby east_pivot / door_CityCenter / Vdara lobby east / Arrival__leaf-silver__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "Cosmopolitan complete exterior / exterior / City block / cosmo / Full detail / cosmo / cosmo-exteriordeck-boundariesglass",
+      "calls": 2,
+      "triangles": 216
+    },
+    {
+      "path": "Cosmopolitan complete exterior / exterior / City block / cosmo / Full detail / cosmo / cosmo-exteriorpodiumshopglass",
+      "calls": 2,
+      "triangles": 4668
+    },
+    {
+      "path": "WorldGroup / door_Interiors / Planet Hollywood west_pivot / door_Interiors / Planet Hollywood west / Arrival__leaf-black__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "Afterlight environment interactions",
+      "calls": 1,
+      "triangles": 48
+    },
+    {
+      "path": "Afterlight environment interactions",
+      "calls": 2,
+      "triangles": 18240
+    },
+    {
+      "path": "Afterlight environment interactions",
+      "calls": 1,
+      "triangles": 96
+    },
+    {
+      "path": "Afterlight environment interactions",
+      "calls": 1,
+      "triangles": 256
+    },
+    {
+      "path": "Afterlight environment interactions",
+      "calls": 1,
+      "triangles": 256
+    },
+    {
+      "path": "Afterlight environment interactions",
+      "calls": 1,
+      "triangles": 256
+    },
+    {
+      "path": "WorldGroup / door_paris_north_exit_pivot / door_paris_north_exit / Arrival__leaf-sage__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / bellagioBlock-exteriorconservatory-roofglass",
+      "calls": 2,
+      "triangles": 12
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / Bellagio_Arrival__Mapped_main_arrival__glass_ba_canopy",
+      "calls": 2,
+      "triangles": 1280
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / Bellagio_Arrival__Mapped_main_arrival__glass_ba_canopy001",
+      "calls": 2,
+      "triangles": 1280
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "WorldGroup / door_paris_west_entrance_pivot / door_paris_west_entrance / Arrival__leaf-sage__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / -1,0/street / Full detail / -1,0/street / OSM_-1,0_bridge-glass",
+      "calls": 2,
+      "triangles": 19564
+    },
+    {
+      "path": "WorldGroup / door_bellagio_north_gallery_exit_pivot / door_bellagio_north_gallery_exit / Arrival__leaf-bronze__shell__glass",
+      "calls": 2,
+      "triangles": 96
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / bellagioBlock-exteriorpatio-JASMINEglass",
+      "calls": 2,
+      "triangles": 12
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / bellagioBlock-exteriorpatio-LAGOglass",
+      "calls": 2,
+      "triangles": 12
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / bellagioBlock-exteriorpatio-PRIMEglass",
+      "calls": 2,
+      "triangles": 12
+    },
+    {
+      "path": "Small city details / -2,2",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Small city details / -2,1",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / bellagioBlock-exteriorpatio-CARBONE_RIVIERAglass",
+      "calls": 2,
+      "triangles": 12
+    },
+    {
+      "path": "Small city details / -2,1",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Bellagio · exterior and arrival / exterior / City block / bellagioBlock / Full detail / bellagioBlock / bellagioBlock-exteriorpatio-SPAGOglass",
+      "calls": 2,
+      "triangles": 12
+    },
+    {
+      "path": "Bridge concourse / Via Bellagio / bridge-glass",
+      "calls": 2,
+      "triangles": 1368
+    },
+    {
+      "path": "Bridge concourse / Via Bellagio",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "Bridge concourse / Via Bellagio",
+      "calls": 1,
+      "triangles": 12
+    },
+    {
+      "path": "OpenStreetMap / geographic Strip / City block / 0,0/street / Full detail / 0,0/street / OSM_0,0_bridge-glass",
+      "calls": 2,
+      "triangles": 17580
+    },
+    {
+      "path": "DecalSystem",
+      "calls": 2,
+      "triangles": 4000
+    },
+    {
+      "path": "ShaderKeepAlive / ShaderKeepAlive:hit-debris",
+      "calls": 1,
+      "triangles": 1
+    }
+  ],
+  "physics": {
+    "rigidBodyCount": 3076,
+    "colliderCount": 3085
+  },
+  "streaming": {
+    "publicInteriors": [
+      "bellagioBlock"
+    ],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "cityCells": 34,
+    "loading": false,
+    "legacyInteriorBatches": 0
+  },
+  "sampledAt": 1791249766479,
+  "scanMs": 3,
+  "scope": "Renderer counters at main-scene end; component draws count actual main-camera mesh submissions. Enabled is not occlusion-tested. CPU spans are not GPU timing. Resident interior assets can be hidden. Physics totals cover the entire world."
+}

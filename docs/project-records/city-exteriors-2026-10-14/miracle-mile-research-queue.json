@@ -1,0 +1,32 @@
+{
+  "status": "active facade correction",
+  "sources": [
+    {
+      "url": "https://www.miraclemileshopslv.com/wp-content/uploads/2026/01/MMS-Lease-Plan-Jan-2026.pdf",
+      "kind": "owner lease plan",
+      "date": "2026-01-15",
+      "visuallyInspected": true
+    },
+    {
+      "url": "https://www.sensoryinteractive.net/miracle-mile",
+      "kind": "facade display designer",
+      "visuallyInspected": true
+    },
+    {
+      "url": "https://www.miraclemileshopslv.com/press-room/photo-gallery/",
+      "kind": "owner photography",
+      "visuallyInspected": false
+    }
+  ],
+  "next": "Audit existing authored exteriors for relation/1606512 and PH Live way/115670770 before replacing anything.",
+  "observations": [
+    "Designer2024 photos show paired large north/south LED faces, patterned lightboxes, and circular metal skin. Current model discs incorrectly face worldZ on west-facing walls.",
+    "Owner January15 2026 diagram shows north/south Strip entrances and Harmon entrance plus upper level134ft; this is an owner datum, not134ft above pavement.",
+    "Earth tower view inspected; second attempted street view occluded by Cosmopolitan, not accepted as storefront evidence.",
+    "Current lease plan identifies Blue Martini next to Cabo Wabo; old Urban Outfitters naming is outdated."
+  ],
+  "uncertainties": [
+    "Bay heights and sign dimensions photo-estimated; no measured exterior elevations",
+    "PH shell retained to protect guest interiors"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "showcase",
+  "name": "Showcase Mall and Showcase IV",
+  "status": "refinement-deferred",
+  "scope": "Finish the north PhaseIVbuilding way115649938, preserve existing older Showcase fronts and roads/interiors.",
+  "sources": [
+    {
+      "url": "https://gindicapital.com/property/showcase-iv/",
+      "provider": "Gindi Capital,owner",
+      "note": "Current tenants Target,Burlington,OliveGarden,BrewDog,Chevys; rooftop and thirdfloor BrewDog. Owner photo visually inspected, greenoverlay reducescolorreliability."
+    },
+    {
+      "url": "https://www.nadelarc.com/work/showcase-mall",
+      "provider": "Nadel,architect",
+      "note": "144000sf,fourstory includingbasement,threeabovegradelevels,glazedfront. Firstlinkedbuiltphoto inspected forframing,floorbands,Targetnorthpanel andBurlingtonsouthverticalfin."
+    },
+    {
+      "url": "https://www.lochsa.com/projects/showcase-mall-phase-iv",
+      "provider": "Lochsa,structural/civilengineer",
+      "note": "Burlington signapproximately64ft19.51m tall. Completed2020."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.10468,-115.17210,640a,190d,35y,90h,55t,0r",
+      "provider": "Google Earth",
+      "imageDate": "2022-11-09",
+      "note": "West oblique and top views inspected: terrace canopy, roof bar/service zones, Walgreens north storefront. Later tenant signs follow owner photo."
+    }
+  ],
+  "uncertainDimensions": [
+    "OSM12mfromlevels generic; roofabout22.8mestimatedfromthreelevelphoto andreported75ftrooftopvenue. Storeydivision andterracefixtures estimated.",
+    "Rooftopcanopy2022imagerymaypredatefinishedBrewDog; corroborate currentprimaryphotos."
+  ],
+  "remaining": [
+    "Public vertical access to BrewDog terrace and retail interiors",
+    "Exact Target dog sculpture and promotional graphics",
+    "Rooftop furnishings, planting and facade material fidelity still approximate",
+    "Older Showcase whole-block details and public connections remain incomplete"
+  ],
+  "interiors": "No indoor retail interiors are modified in this exteriorpass.",
+  "installedPass": {
+    "date": "2026-10-14",
+    "triangles": 62024,
+    "batches": 72,
+    "optimizedMB": 2.4,
+    "audit": "build/city-exteriors/showcase-iv-audit.json",
+    "collision": "build/city-exteriors/showcase-iv-collision-test.json",
+    "preservation": "build/city-exteriors/showcase-iv-preservation.json",
+    "visualReview": "All three final installed images inspected; short-edge Walgreens duplicate signs removed and older roofs flattened.",
+    "typecheck": "passed",
+    "captures": "build/city-exteriors/showcase-iv-final",
+    "performance": "build/city-exteriors/showcase-iv-final/performance.json"
+  },
+  "olderFrontagePass": {
+    "baseline": "build/city-exteriors/vanderpump-final-showcase-baseline",
+    "review": "Three installed frontage/roof views plus final sign revision inspected. Closed atrium arch and distinct Hard Rock silhouette now present; formed package sign with crimped edges. Facade graphic/mascot fidelity remains simplified.",
+    "references": [
+      {
+        "url": "https://cafe.hardrock.com/las-vegas/files/5412/9974140_ImageLargeWidth.jpg",
+        "provider": "Hard Rock official website",
+        "imageDate": "unknown",
+        "observed": "Blue guitar-shaped panel with illuminated circular logo, blue rectangular surround with inset black upper glazing, 3 floors. Visually inspected."
+      },
+      {
+        "url": "https://gindicapital.com/success-history/showcase-mall/",
+        "provider": "Gindi Capital owner",
+        "imageDate": "unknown, older tenancy",
+        "observed": "Tall blue glass arched atrium, dark curved rim, glass Coca-Cola tower, tilted yellow M&M sign. Visually inspected. Hero BLVD image excluded."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.10405,-115.17223,640a,180d,35y,90h,65t,0r",
+        "provider": "Google Earth",
+        "imageDate": "2022-11-09",
+        "observed": "Northern mall street and atrium viewed in daylight. Earlier Hard Rock guitar design differs from current official photo; chose current official panel silhouette. Night blue interpreted as lighting, daylight material neutral blue-gray. Reference image not used as texture."
+      }
+    ],
+    "uncertainty": "Frontage heights above mapped eaves and signage dimensions estimated from photographs; contemporary commercial graphics are not copied as textures.",
+    "triangles": 70221,
+    "batches": 83,
+    "optimizedMiB": 3.23,
+    "audit": "build/city-exteriors/showcase-old-geometry-audit.json",
+    "preservation": "build/city-exteriors/showcase-old-preservation.json",
+    "captures": [
+      "build/city-exteriors/showcase-old-final",
+      "build/city-exteriors/showcase-final-wynn-baseline/showcase-street.png"
+    ],
+    "remaining": [
+      "Exact commercial artwork and M&M mascot sculptures are not reproduced.",
+      "Older southern shop fronts still have simplified cladding and tenant detail.",
+      "Public retail interiors and circulation remain outside this exterior pass."
+    ]
+  },
+  "ownershipPass20261019": {
+    "scope": "Three duplicate city shells; establish authored collision before removing generic owners. Preserve all other surfaces.",
+    "ids": [
+      "way/27897909",
+      "way/115649937",
+      "way/92281772"
+    ],
+    "status": "installed-visually-reviewed",
+    "audit": "build/city-exteriors/showcase-ownership-audit.json",
+    "tests": [
+      "1504 roof support checks PASS",
+      "210 terrace floor and15guard checks PASS"
+    ],
+    "captures": "build/city-exteriors/showcase-ownership-2026-10-19",
+    "visual": "All3views inspected; no former generic roof within detailed fronts. Commercial artwork remains simplified.",
+    "verify": "CLI failed menu/start interaction timeout; screenshot shows PLAY. Independent game probe successfully played and captured3views. Not recorded as verify pass."
+  }
+}

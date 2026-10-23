@@ -1,0 +1,39 @@
+{
+  "id": "main-street-1511",
+  "status": "refinement-deferred",
+  "mappedId": "way/689003951",
+  "sources": [
+    {
+      "url": "https://www.clayartsvegas.com/directions-contact",
+      "observed": "Current official Clay Arts address1353Arville, mappedMainStreetname stale."
+    },
+    {
+      "url": "https://www.google.com/maps/search/1511+S+Main+Street+Las+Vegas",
+      "observed": "Wiseguys result. Cyndi Graham October2021 facade photos visually inspected: white painted brick, gray stone strips, silver ribbed canopy, red door, murals. Maps lists closed; need current Street View."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1529424,-115.1540359,622a,75y,90h,90t/data=!3m7!1e1!3m5!1sgUR4hDj-BSPteX2YjZ2IJg!2e0",
+      "imageDate": "January2026",
+      "observed": "Street-facing white painted brick, gray stone strips, ribbed silver canopy, central red door, Wiseguys sign and murals remain. January2023 parking panorama pzdr6UbdJfo6vTNVDOTAmQ shows south rounded canopy and parking layout."
+    }
+  ],
+  "remaining": [
+    "Murals not reproduced; outstanding major visual detail",
+    "Estimated4.65mheight",
+    "No interior modeled",
+    "Rear utility details partly inferred"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/main-street-1511-final",
+    "support": "build/city-exteriors/main-street-1511-collision.json",
+    "walk": "build/city-exteriors/main-street-1511-walk.json",
+    "ownership": "build/city-exteriors/main-street-1511-ownership-audit.json",
+    "visualReview": "Three installed views inspected. Incorrect red-brick PBR replaced by original packed white-painted brick colour/normal maps; side entrance moved toward east end. Final front and side rechecked. Murals remain a major omitted visual component, not complete.340support+6walking legs passed;10oldmappedtriangles removed. Static960x540p95~17.3ms, notroutebenchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/mainStreet1511-exterior.glb": "a988de4981fc29dea94f3b342c2a20d56c89b625e798314f9d01c048e7df4f5d",
+      "build/strip-landmarks/mainStreet1511-exterior-collision.json": "8144736f0caddad568b4e454a151dd2868300c80057c50c2746f83bd793502e7"
+    }
+  }
+}

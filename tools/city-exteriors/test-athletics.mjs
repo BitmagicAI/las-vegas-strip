@@ -1,0 +1,4 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import RAPIER from '@dimforge/rapier3d-compat';
+await RAPIER.init();const w=new RAPIER.World({x:0,y:-9.81,z:0});const c=JSON.parse(fs.readFileSync('build/strip-landmarks/athleticsStadium-exterior-collision.json'));w.createCollider(RAPIER.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));w.step();let count=0;const failed=[];
+for(let x=180;x<=320;x+=20)for(let z=1800;z<=1960;z+=20){const hit=w.castRay(new RAPIER.Ray({x,y:1,z},{x:0,y:-1,z:0}),2,true);count++;if(!hit||Math.abs(1-hit.timeOfImpact-.08)>.01)failed.push({x,z,hit:hit?.timeOfImpact});}
+const result={samples:count,failed,scope:'Construction parcel floor support; no public stadium interiors or seating traversal claimed.'};fs.writeFileSync('build/city-exteriors/athletics-collision-test.json',JSON.stringify(result,null,2));w.free();console.log(result);assert.equal(failed.length,0);

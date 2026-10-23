@@ -1,0 +1,9 @@
+{
+  "checks": 455,
+  "failureCount": 213,
+  "failuresByLabel": {
+    "Stair rail containment": 156,
+    "Terrace rail containment": 57
+  },
+  "note": "Torso-only sweep isolates upper balustrade from low parapet; negative control disables collision infill. Final installed collider restored and passes."
+}

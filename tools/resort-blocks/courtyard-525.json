@@ -1,0 +1,64 @@
+{
+  "id": "courtyard-525",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725773"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14761,-115.15159&heading=0&pitch=0",
+      "imageDate": "February 2026",
+      "observed": "Four storeys; terracotta/white outer bays, recessed balconies, charcoal tiled core, projecting white window surrounds."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14804,-115.15224&heading=90&pitch=0",
+      "imageDate": "February 2022",
+      "observed": "U-shaped four-storey galleries, older golden paint. Use structure only; older construction courtyard superseded by official pool photos."
+    },
+    {
+      "url": "https://www.courtyard525.com/gallery",
+      "observed": "Official undated photos174118742,174118738,174118750 confirm central rectangular pool, black fence, lounges, small leasing office at west, four-storey open galleries and charcoal/mint core. Inner colors ivory, dark rails, red doors; rear balconies blue in this undated set."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14800,-115.15160&zoom=19&basemap=satellite",
+      "observed": "U-plan mapped owner and northwest/southwest setbacks; roof footprint retained."
+    }
+  ],
+  "plannedComponents": [
+    "Four-storey mapped U shell with recessed outer balconies",
+    "Inner open gallery floors, rails and stair routes",
+    "Pool, coping, deck, fence, furnishings and west leasing office",
+    "Street entrances, windows, fascia and roof equipment"
+  ],
+  "estimatedElevationsM": {
+    "ground": 0.15,
+    "storey": 2.85,
+    "roof": 11.65,
+    "parapet": 12.1
+  },
+  "remaining": [
+    "Pool/leasing office dimensions estimated from perspective imagery",
+    "Exact core and stair plan unverified",
+    "Current interior courtyard paint not dated",
+    "Apartment interiors outside exterior pass; no interior access claim",
+    "Core flight arrangement inferred for usable circulation, exact internal stairs not sourced",
+    "Core external gallery treatment differs from official photos; requires further reconciliation",
+    "Landscape detail and pool accessibility equipment incomplete",
+    "Neutral daylight and perimeter driving profile outstanding"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/courtyard-525-final",
+    "support": "build/city-exteriors/courtyard-525-collision.json",
+    "walk": "build/city-exteriors/courtyard-525-walk.json",
+    "stairs": "build/city-exteriors/courtyard-525-stairs.json",
+    "ownership": "build/city-exteriors/courtyard-525-ownership-audit.json",
+    "intermediateReview": "Second installed render inspected. Corrected terracotta roof-tile material misclassification. Four-storey shell, bays, pool, galleries present. Palm angle correlation corrected after asymmetric crowns appeared; third capture pending.393 support samples,10 ground walking legs,26 stair legs ascent/descent pass.46 duplicate old triangles removed.",
+    "visualReview": "Third installed south/west/pool/aerial captures inspected. Palm crowns now distributed around trunk; terracotta wall texture corrected.93348triangles35batches1.63MiB optimized.393support10ground-walk26stair legs pass. Upper-gallery core enclosure remains visually different from official photos; not final signoff."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/courtyard525-exterior.glb": "eab06184576a490cee5ba14bb333ac82219cdde5119996cbcda51df7894bc029",
+      "build/strip-landmarks/courtyard525-exterior-collision.json": "38805c4ae60638f9d1e2fce3c2042acdec24c5903f2812187cdda88745262b2b"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+probe.teleport(390,2,470);const frame=()=>new Promise(r=>requestAnimationFrame(r));const release=engine.registerBeforeRender(()=>{engine.camera.position.set(425,95,520);engine.camera.lookAt(320,13,425);engine.camera.updateMatrixWorld();});for(let i=0;i<180;i++)await frame();await __shot("paris-rear-roof");release();return {review:"membrane material correction"};

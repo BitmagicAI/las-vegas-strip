@@ -1,0 +1,82 @@
+{
+  "id": "virgin-hotels",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1094,-115.1546,660a,410d,35y,0h,0t,0r",
+      "imageDate": "2024-03-05",
+      "evidence": "Topdown and two obliques visually inspected: three towers, pool court, garages."
+    },
+    {
+      "url": "https://virginhotelslv.com/property-map/",
+      "evidence": "Official map visually inspected: north Opal, east Canyon, south Ruby; pool and arrival identities."
+    },
+    {
+      "url": "https://www.skyscrapercenter.com/complex/6361",
+      "evidence": "Opal61m Ruby48m heights."
+    },
+    {
+      "url": "https://enclos.com/project/hard-rock-hotel-casino-paradise-towers/",
+      "evidence": "Original tower facade project: 16/18-storey Paradise expansion, identifies curtain-wall character."
+    },
+    {
+      "url": "https://www.mccarthy.com/projects/virgin-hotels-las-vegas",
+      "evidence": "2021 renovation of three towers and five-acre pool/event grounds."
+    }
+  ],
+  "estimates": [
+    "Canyon40m; casino9m; pool shapes and entry positions estimated from aerial/map."
+  ],
+  "components": [
+    "Canyon curved tower",
+    "Opal north tower",
+    "Ruby south tower",
+    "casino and service roofs",
+    "two parking structures",
+    "pool courtyard",
+    "arrival canopy"
+  ],
+  "tests": {
+    "roofSupport": 151,
+    "failures": 0,
+    "typecheck": "passed"
+  },
+  "discrepancies": [
+    "Court planted landscape still sparse; no photorealistic completion claim",
+    "Estimated pool shapes, tower bays and arrival proportions",
+    "Public circulation not fully tested"
+  ],
+  "completionGates": [
+    {
+      "id": "visual",
+      "status": "pending"
+    },
+    {
+      "id": "routes",
+      "status": "pending"
+    }
+  ],
+  "implementation": {
+    "triangles": 19185,
+    "batches": 33,
+    "compressedMiB": 0.31,
+    "replacementIDs": [
+      "way/133757428",
+      "way/133757429",
+      "way/133758151",
+      "way/133757427",
+      "way/133757908",
+      "way/133757524",
+      "way/133758066",
+      "way/1509415874"
+    ]
+  },
+  "visualEvidence": [
+    "build/city-exteriors/virgin-after/virgin-south.png",
+    "build/city-exteriors/virgin-after/virgin-west.png",
+    "build/city-exteriors/virgin-after/virgin-arrival.png",
+    "build/city-exteriors/virgin-court/virgin-court-final.png",
+    "build/city-exteriors/virgin-pavilions/virgin-court-final.png"
+  ],
+  "visualReview": "All three overview/arrival views and final pavilion view inspected. Tower arrangement/height corrected; courtyard still sparse relative to real site, retained as unfinished."
+}

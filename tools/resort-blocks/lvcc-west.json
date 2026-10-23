@@ -1,0 +1,65 @@
+{
+  "id": "lvcc-west",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.tvsdesign.com/projects/project-detail/las-vegas-convention-center-west-hall-expansion/",
+      "review": "Architect documents three program blocks and ribbon roof."
+    },
+    {
+      "url": "https://www.mka.com/projects/las-vegas-convention-center-expansion-phase-2/",
+      "review": "Engineer documents three stories, 500ft span and150ft cantilever; cover photo visually inspected."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1344,-115.1576,630a,450d,35y,65h,60t,0r",
+      "imageDate": "2024-03-05",
+      "review": "Visually inspected: broad flat exhibition roof, west glazed concave edge, stepped meeting room facade."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1325,-115.1583,635a,330d,35y,5h,65t,0r",
+      "imageDate": null,
+      "review": "Visually inspected: south atrium raised curved roof, recessed full-height glass and sheltered driveway."
+    },
+    {
+      "url": "https://www.mka.com/wp-content/uploads/2023/04/Las-Vegas-CC_Cover-jpg.webp",
+      "review": "Engineer project photo visually inspected: ribbon soffit, deep entrance roof, glass mullions, diagonal west supports. Photo Sam Morris/LVCVA."
+    }
+  ],
+  "remaining": [
+    "Exact roof curvature and mullion proportions",
+    "Public west terrace and furnishings",
+    "Landscape and street-level detailing",
+    "Entrance/approach elevation reconciliation and onward public connections",
+    "Route-level performance measurement"
+  ],
+  "baseline": [
+    "build/city-exteriors/lvcc-west-before/lvcc-west-front.png",
+    "build/city-exteriors/lvcc-west-before/lvcc-west-back.png",
+    "build/city-exteriors/lvcc-west-before/lvcc-west-entry.png"
+  ],
+  "baselineReview": "All3 inspected: entire mapped complex appears as featureless 6m mass.",
+  "dimensions": "Mapped footprint retained. Roof24m base,44m atrium peak estimated against three-story primary-source description and aerials. Roof profile/overhang inferred, not surveyed.",
+  "implementation": {
+    "ids": [
+      "relation/19515850"
+    ],
+    "triangles": 99386,
+    "batches": 12,
+    "tests": "7162 roof triangle-centroid support samples passed.",
+    "ownership": "One mapped outline replaced; roads, interiors and neighboring buildings retained."
+  },
+  "corrections": "First installed review exposed inward-facing canopy/sign and opaque atrium side return; corrected orientation and glazing before final review.",
+  "finalViews": [
+    "build/city-exteriors/lvcc-west-final/lvcc-west-main-entry.png",
+    "build/city-exteriors/lvcc-west-final/lvcc-west-entry.png",
+    "build/city-exteriors/lvcc-west-final/lvcc-west-front.png",
+    "build/city-exteriors/lvcc-west-final/lvcc-west-back.png"
+  ],
+  "finalReview": "All four installed final views inspected. Corrected outward entrance sign/canopy and glass atrium returns. Curved crest and stepped west glazing replace blank six-metre shell. Street-level detail remains sparse; existing raised approach-road geometry obscures low entry and is untouched.",
+  "verification": "Full local WebGPU verify passed,57fps at spawn,3011 bodies; not a site performance measurement.",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/lvccWest-exterior.glb": "d2e77b2cf2a91794b5dc31411c40d36a4bf788c5d154484b1463cadd6856b18c"
+    }
+  }
+}

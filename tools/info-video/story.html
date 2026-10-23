@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8">
+<title>Vegas info story</title>
+<!-- The info video "How AI agents built Las Vegas", one deterministic page: story.render(t) draws story time t.
+     Served from the project root (tools/info-video/serve.sh); captured by capture.mjs; same look as the character-pipeline video. -->
+<style>
+@font-face{font-family:'CF Mono';src:url('fonts/SFNSMono.ttf');font-weight:100 900}
+:root{--bg:#12151d;--panel:#1d2029;--line:#343947;--txt:#f3efe8;--muted:#a0a6b4;--acc:#ff8c3e;--eye:#40e2c8;--red:#ff5462;--grn:#60d68c;--gold:#e8c46a}
+*{box-sizing:border-box}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:var(--bg)}
+#foot,#gl,#over,#hud,#svg{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#foot{overflow:hidden;z-index:0}#gl{z-index:1}#over{z-index:2;overflow:hidden}#svg{z-index:3}#hud{z-index:4}
+#hud{pointer-events:none;font-family:'Avenir Next',Avenir,sans-serif;color:var(--txt)}
+#svg{pointer-events:none}
+.mono{font-family:'CF Mono',Menlo,monospace}
+.abs{position:absolute;will-change:transform,opacity}
+.fill{position:absolute;inset:0}
+.shot{position:absolute;overflow:hidden;background:#0c0e13}
+.shot img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+.frame{border-radius:22px;box-shadow:0 30px 90px rgba(0,0,0,.55);border:2px solid rgba(255,255,255,.08)}
+.kicker{left:72px;top:56px;font:600 24px 'CF Mono',Menlo,monospace;letter-spacing:.2em;color:var(--acc);white-space:nowrap;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.brand{right:72px;bottom:48px;font:600 18px 'CF Mono',Menlo,monospace;letter-spacing:.2em;color:var(--muted);white-space:nowrap;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.big{font:800 96px 'Avenir Next',Avenir,sans-serif;letter-spacing:-.01em;white-space:nowrap;text-shadow:0 4px 30px rgba(0,0,0,.65)}
+.mid{font:800 64px 'Avenir Next',Avenir,sans-serif;letter-spacing:-.01em;white-space:nowrap;text-shadow:0 4px 24px rgba(0,0,0,.65)}
+.cap{font:600 26px 'CF Mono',Menlo,monospace;color:var(--muted);letter-spacing:.14em;white-space:nowrap;text-shadow:0 2px 16px rgba(0,0,0,.7)}
+.small{font:600 18px 'CF Mono',Menlo,monospace;color:var(--muted);letter-spacing:.12em;white-space:nowrap}
+.tag{font:600 24px 'CF Mono',Menlo,monospace;padding:10px 20px;border-radius:10px;white-space:nowrap;letter-spacing:.06em}
+.chip{font:600 26px 'CF Mono',Menlo,monospace;padding:12px 24px;border-radius:30px;border:2px solid #3e4556;background:rgba(18,21,29,.86);white-space:nowrap}
+.check{text-shadow:0 2px 16px rgba(0,0,0,.6);font:600 38px 'Avenir Next',Avenir,sans-serif;display:flex;align-items:center;gap:18px;white-space:nowrap}
+.check i{display:inline-flex;width:46px;height:46px;border-radius:23px;background:var(--grn);color:#0c1a10;font-style:normal;font-weight:800;align-items:center;justify-content:center;font-size:30px;flex:none}
+.check i.no{background:var(--red);color:#1a0c0c}
+.panel{background:rgba(29,32,41,.94);border-radius:26px;border:2px solid #2c3140}
+.stamp{font:800 46px 'CF Mono',Menlo,monospace;color:var(--red);border:6px solid var(--red);border-radius:12px;padding:6px 18px;letter-spacing:.08em;white-space:nowrap;background:rgba(18,8,10,.55)}
+.stamp.ok{color:var(--grn);border-color:var(--grn);background:rgba(8,18,10,.55)}
+.title{font:800 112px 'Avenir Next',Avenir,sans-serif;letter-spacing:-.02em;line-height:1.02}
+.code{font:500 25px/1.5 'CF Mono',Menlo,monospace;color:#d9dce4;white-space:pre}
+.code b{color:var(--acc);font-weight:600}.code u{color:var(--eye);text-decoration:none}.code s{color:#7c8496;text-decoration:none}
+.label{font:700 26px 'Avenir Next',Avenir,sans-serif;white-space:nowrap;padding:8px 16px;border-radius:10px;background:rgba(18,21,29,.86);border:2px solid #3e4556}
+.node{font:700 30px 'CF Mono',Menlo,monospace;letter-spacing:.06em;white-space:nowrap;padding:16px 28px;border-radius:40px;border:3px solid #3e4556;background:rgba(29,32,41,.95);color:var(--txt)}
+.att{font:500 16px 'CF Mono',Menlo,monospace;color:rgba(243,239,232,.75);white-space:nowrap;text-shadow:0 1px 6px #000;letter-spacing:.04em}
+.log{font:500 20px/1.55 'CF Mono',Menlo,monospace;color:#c9ced8;white-space:pre}
+</style>
+<div id="foot"></div>
+<canvas id="gl" width="1920" height="1080"></canvas>
+<div id="over"></div>
+<svg id="svg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="hud"></div>
+<script type="importmap">{"imports":{"three":"../../node_modules/three/build/three.module.js"}}</script>
+<script type="module" src="story.js"></script>
+</html>

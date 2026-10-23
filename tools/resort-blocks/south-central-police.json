@@ -1,0 +1,50 @@
+{
+  "id": "south-central-police",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/4860+South+Las+Vegas+Boulevard",
+      "author": "JayC Viajero",
+      "date": "2022-12",
+      "observed": "Exterior photo inspected: cream gable above ribbed brick base, paired groups of narrow green-framed windows, black department lettering."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.084009,-115.1742763,663a,75y,37.5h,90t/data=!3m7!1e1!3m5!1sjWBDghQ5IeWUKlI2B6QEmw!2e0",
+      "date": "2020-03",
+      "observed": "Street View southwest boundary: brick perimeter wall with pale bands, black gate, cream and red roofs behind."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0845341,-115.1738633,120m/data=!3m1!1e3",
+      "observed": "Satellite inspected: intersecting red pitched roofs and flat service roofs; recessed public entry east, visitor parking east, larger secured parking west."
+    }
+  ],
+  "dimensions": "Mapped1719m2 footprint retained; eaves5.9m/ridges7.1\u20138.1m inferred from photos.",
+  "remaining": [
+    "Roof heights and exact window counts estimated",
+    "Landscape and signage artwork simplified",
+    "No interiors or secured parking circulation authored",
+    "Low-detail vegetation, service elevations and PBR tiling need refinement"
+  ],
+  "implemented": [
+    "Mapped shell and intersecting roofs fitted to angled walls",
+    "Ribbed brick facade, framed window groups and department lettering",
+    "Recessed public entrance canopy and parking approach"
+  ],
+  "validation": {
+    "support": "376 floor/headroom checks passed",
+    "walking": "7 legs in both directions passed",
+    "visual": "Three installed views inspected;front rechecked after gable correction",
+    "performance": "Fixed aerial960x540ultra17ms p50/22.8ms p95;notroutebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/south-central-police-final/police-front.png",
+    "build/city-exteriors/south-central-police-final/police-entry.png",
+    "build/city-exteriors/south-central-police-final/police-aerial.png"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/southCentralPolice-exterior.glb": "4510f028a0031fdc901bb6985cd637621b7effaea694197f2b7e34e9494923e0",
+      "build/strip-landmarks/southCentralPolice-exterior-collision.json": "a6c19922272109ef9c12a8d14bd07799cc4a85ea7662bb2ebe83debf35f83b53"
+    }
+  }
+}

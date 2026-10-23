@@ -1,0 +1,120 @@
+IDLE PROBE full-res viewport 1505x772 @2 canvas 3010x1544 timestamps=true
+foliage-on                 25.5 fps | interval ms p50 16.7 p90 100.0 max 583.3 | cpu ms p50 13.3 p90 90.1 | gpu ms p50 60.3 p90 87.3 max 99.9 | draws 473 tris 9595723
+      gpu 29.99 ms x1 output 3010x1544 msaa4
+      gpu 19.48 ms x1 screen
+      gpu 12.83 ms x1 ShadowMap 4096x4096
+      cpu profile per frame: idle 1.6 gc 20.43
+        self 20.43 ms (garbage collector) :0
+        self 1.93 ms updateMatrixWorld deps/chunk-QVLGVTV6.js:7273
+        self 1.6 ms (idle) :0
+        self 1.17 ms getCurrentTexture :0
+        self 0.91 ms multiplyMatrices deps/chunk-QVLGVTV6.js:5559
+        self 0.81 ms _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+        self 0.74 ms _projectObject deps/chunk-MCS52GJZ.js:30984
+        self 0.48 ms updateByType deps/chunk-MCS52GJZ.js:31744
+        self 0.36 ms writeBuffer :0
+        self 0.31 ms intersectsObject deps/chunk-QVLGVTV6.js:14423
+tree-shadows-off           25.4 fps | interval ms p50 16.7 p90 100.0 max 349.9 | cpu ms p50 12.6 p90 101.5 | gpu ms p50 59.7 p90 86.0 max 94.8 | draws 464 tris 7095723
+      gpu 30.1 ms x1 output 3010x1544 msaa4
+      gpu 19.26 ms x1 screen
+      gpu 12.42 ms x1 ShadowMap 4096x4096
+      cpu profile per frame: idle 1.99 gc 21.33
+        self 21.33 ms (garbage collector) :0
+        self 2.14 ms updateMatrixWorld deps/chunk-QVLGVTV6.js:7273
+        self 1.99 ms (idle) :0
+        self 1.37 ms getCurrentTexture :0
+        self 0.84 ms multiplyMatrices deps/chunk-QVLGVTV6.js:5559
+        self 0.83 ms _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+        self 0.73 ms _projectObject deps/chunk-MCS52GJZ.js:30984
+        self 0.5 ms updateByType deps/chunk-MCS52GJZ.js:31744
+        self 0.43 ms writeBuffer :0
+        self 0.33 ms intersectsObject deps/chunk-QVLGVTV6.js:14423
+no-trees                   25.7 fps | interval ms p50 16.7 p90 83.4 max 499.9 | cpu ms p50 12.9 p90 84.2 | gpu ms p50 61.8 p90 88.5 max 102.8 | draws 464 tris 7095723
+      gpu 30.85 ms x1 output 3010x1544 msaa4
+      gpu 20.28 ms x1 screen
+      gpu 13.48 ms x1 ShadowMap 4096x4096
+      cpu profile per frame: idle 0.43 gc 22.56
+        self 22.56 ms (garbage collector) :0
+        self 2.17 ms updateMatrixWorld deps/chunk-QVLGVTV6.js:7273
+        self 1.06 ms getCurrentTexture :0
+        self 0.92 ms _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+        self 0.82 ms multiplyMatrices deps/chunk-QVLGVTV6.js:5559
+        self 0.75 ms _projectObject deps/chunk-MCS52GJZ.js:30984
+        self 0.56 ms updateByType deps/chunk-MCS52GJZ.js:31744
+        self 0.43 ms (idle) :0
+        self 0.36 ms writeBuffer :0
+        self 0.33 ms intersectsObject deps/chunk-QVLGVTV6.js:14423
+no-grass                   46.1 fps | interval ms p50 16.7 p90 33.3 max 383.4 | cpu ms p50 13.2 p90 14.1 | gpu ms p50 12.5 p90 15.5 max 19.5 | draws 461 tris 8715395
+      gpu 6.74 ms x1 output 3010x1544 msaa4
+      gpu 4.65 ms x1 screen
+      gpu 1.08 ms x1 ShadowMap 4096x4096
+      cpu profile per frame: idle 0.03 gc 7.16
+        self 7.16 ms (garbage collector) :0
+        self 2.18 ms updateMatrixWorld deps/chunk-QVLGVTV6.js:7273
+        self 0.9 ms multiplyMatrices deps/chunk-QVLGVTV6.js:5559
+        self 0.81 ms _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+        self 0.7 ms _projectObject deps/chunk-MCS52GJZ.js:30984
+        self 0.44 ms updateByType deps/chunk-MCS52GJZ.js:31744
+        self 0.39 ms intersectsObject deps/chunk-QVLGVTV6.js:14423
+        self 0.38 ms writeBuffer :0
+        self 0.35 ms getMaterialCacheKey deps/chunk-MCS52GJZ.js:14462
+        self 0.31 ms get deps/chunk-MCS52GJZ.js:14636
+foliage-off                45.4 fps | interval ms p50 16.7 p90 33.3 max 433.4 | cpu ms p50 12.0 p90 13.0 | gpu ms p50 12.6 p90 16.4 max 20.1 | draws 452 tris 6215395
+      gpu 7.05 ms x1 output 3010x1544 msaa4
+      gpu 4.94 ms x1 screen
+      gpu 0.84 ms x1 ShadowMap 4096x4096
+      cpu profile per frame: idle 0.02 gc 7.78
+        self 7.78 ms (garbage collector) :0
+        self 2.15 ms updateMatrixWorld deps/chunk-QVLGVTV6.js:7273
+        self 0.99 ms multiplyMatrices deps/chunk-QVLGVTV6.js:5559
+        self 0.88 ms _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+        self 0.68 ms _projectObject deps/chunk-MCS52GJZ.js:30984
+        self 0.44 ms updateByType deps/chunk-MCS52GJZ.js:31744
+        self 0.4 ms intersectsObject deps/chunk-QVLGVTV6.js:14423
+        self 0.38 ms writeBuffer :0
+        self 0.23 ms updateForRender deps/chunk-MCS52GJZ.js:27660
+        self 0.22 ms get needsGeometryUpdate deps/chunk-MCS52GJZ.js:14525
+foliage-off-half-res       55.1 fps | interval ms p50 16.7 p90 16.7 max 350.0 | cpu ms p50 9.9 p90 10.6 | gpu ms p50 7.2 p90 8.7 max 18.8 | draws 452 tris 6215395
+      gpu 5.12 ms x1 output 3010x1544 msaa4
+      gpu 1.7 ms x1 screen
+      gpu 0.54 ms x1 ShadowMap 4096x4096
+      cpu profile per frame: idle 0.06 gc 7.56
+        self 7.56 ms (garbage collector) :0
+        self 1.55 ms updateMatrixWorld deps/chunk-QVLGVTV6.js:7273
+        self 0.7 ms multiplyMatrices deps/chunk-QVLGVTV6.js:5559
+        self 0.66 ms _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+        self 0.46 ms _projectObject deps/chunk-MCS52GJZ.js:30984
+        self 0.34 ms updateByType deps/chunk-MCS52GJZ.js:31744
+        self 0.31 ms writeBuffer :0
+        self 0.27 ms intersectsObject deps/chunk-QVLGVTV6.js:14423
+        self 0.25 ms updateForRender deps/chunk-MCS52GJZ.js:27660
+        self 0.17 ms get needsGeometryUpdate deps/chunk-MCS52GJZ.js:14525
+foliage-off-frozen-shadow  45.3 fps | interval ms p50 16.7 p90 33.3 max 416.6 | cpu ms p50 9.6 p90 10.6 | gpu ms p50 12.5 p90 16.2 max 19.4 | draws 369 tris 4530204
+      gpu 7.65 ms x1 output 3010x1544 msaa4
+      gpu 5.16 ms x1 screen
+      cpu profile per frame: idle 0.07 gc 10.07
+        self 10.07 ms (garbage collector) :0
+        self 1.16 ms updateMatrixWorld deps/chunk-QVLGVTV6.js:7273
+        self 0.8 ms _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+        self 0.51 ms multiplyMatrices deps/chunk-QVLGVTV6.js:5559
+        self 0.39 ms updateByType deps/chunk-MCS52GJZ.js:31744
+        self 0.33 ms _projectObject deps/chunk-MCS52GJZ.js:30984
+        self 0.29 ms updateForRender deps/chunk-MCS52GJZ.js:27660
+        self 0.26 ms writeBuffer :0
+        self 0.24 ms getCurrentTexture :0
+        self 0.19 ms setVertexBuffer :0
+foliage-off-long           43 fps | interval ms p50 16.7 p90 33.3 max 500.0 | cpu ms p50 13.9 p90 16.6 | gpu ms p50 12.9 p90 16.4 max 23.8 | draws 452 tris 6215395
+      gpu 7.14 ms x1 output 3010x1544 msaa4
+      gpu 4.82 ms x1 screen
+      gpu 1.21 ms x1 ShadowMap 4096x4096
+      cpu profile per frame: idle 0.05 gc 7.63
+        self 7.63 ms (garbage collector) :0
+        self 2.46 ms updateMatrixWorld deps/chunk-QVLGVTV6.js:7273
+        self 1.08 ms _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+        self 1.04 ms multiplyMatrices deps/chunk-QVLGVTV6.js:5559
+        self 0.74 ms _projectObject deps/chunk-MCS52GJZ.js:30984
+        self 0.47 ms writeBuffer :0
+        self 0.46 ms updateByType deps/chunk-MCS52GJZ.js:31744
+        self 0.4 ms updateForRender deps/chunk-MCS52GJZ.js:27660
+        self 0.39 ms intersectsObject deps/chunk-QVLGVTV6.js:14423
+        self 0.24 ms getCurrentTexture :0

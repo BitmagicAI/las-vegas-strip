@@ -1,0 +1,1267 @@
+{
+  "version": 1,
+  "id": "paris",
+  "name": "Paris Las Vegas",
+  "stage": "eiffel-pier-and-silhouette-retry",
+  "updated": "2026-10-06",
+  "statusNote": "Paris remains active. Eiffel and pool geometry rebuilt; full resort acceptance gates remain open.",
+  "nextAction": "Review facade comparison and retain remaining whole-block acceptance items; no automatic advance to the next resort.",
+  "surveyBoundsXZ": [
+    30,
+    327,
+    375,
+    525
+  ],
+  "sources": [
+    {
+      "id": "earth",
+      "title": "Google Earth Paris aerial: west, south and top-down",
+      "url": "https://earth.google.com/web/search/Paris+Las+Vegas/@36.112462,-115.1707075,659.67668017a,667.10360479d,35y,90h,60t,0r/",
+      "image": "build/resort-blocks/paris/google-earth-west-aerial.png",
+      "kind": "visual-reference",
+      "imageDate": "2022-11-09",
+      "note": "Live browser inspection. Imagery date shown by Earth; this is not a current-condition survey. No Earth meshes or image textures imported.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "creator-earth",
+      "title": "Creator Paris Google Earth view",
+      "image": "tools/resort-blocks/references/paris-user-earth.png",
+      "kind": "user-provided-reference",
+      "note": "Original comparison showing low-rise frontage, tower, arrival and street context.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "map",
+      "title": "Caesars official Paris property map",
+      "url": "https://www.caesars.com/content/dam/empire/plv/property/rideshare/paris-las-vegas-map.pdf",
+      "kind": "official-map",
+      "note": "Distinguishes street dining, Beer Park/Ch\u00e9ri on level 2, Pool \u00e0 Paris on level 3. Versailles connection is marked Coming Summer 2024, so treat this as dated layout evidence.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "mon-ami",
+      "title": "Caesars Mon Ami Gabi street photograph",
+      "url": "https://www.caesars.com/paris-las-vegas/restaurants/mon-ami-gabi",
+      "remoteImage": "https://assets.caesars.com/transform/263397df-cdfa-4a06-918a-9b4ce360aed3/plv-monami-gabi-street-view-1920x800?format=webp&quality=60",
+      "image": "build/resort-blocks/paris/reference-mon-ami-gabi.png",
+      "kind": "official-photograph",
+      "note": "Inspected photograph: red awnings/umbrellas, limestone arches, dark green metalwork, ornate pilasters and dining patio. Original geometry/material textures are authored independently.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "beer-park",
+      "title": "Beer Park operator gallery and venue information",
+      "url": "https://www.beerpark.com/private-events",
+      "kind": "operator",
+      "note": "Confirms rooftop setting, communal picnic seating, umbrellas, bar and dining use. Furniture placement in game is an interpretation.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "alexxas",
+      "title": "Alexxa\u2019s official venue",
+      "url": "https://www.alexxaslasvegas.com/",
+      "kind": "operator",
+      "note": "Confirms Strip-front dining use beneath rooftop venue.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "osm",
+      "title": "Local OpenStreetMap building survey",
+      "url": "https://www.openstreetmap.org/copyright",
+      "kind": "geodata",
+      "note": "Existing 2026-10-03 survey. X tower way/27831697, podium way/33974140, separate entrance canopy, Arc piers/span and balloon IDs. Height 112m is OSM-tagged, not independently measured.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "legacy",
+      "title": "Retained local Paris casino, rooms and Eiffel ride",
+      "url": "/docs/project-records/reference-index.json",
+      "kind": "project-record",
+      "note": "Existing custom assets remain. Guest-floor registration and final architectural fit need later acceptance.",
+      "accessed": "2026-10-05"
+    },
+    {
+      "id": "entrance-earth-close",
+      "title": "Creator Google Earth close aerial, Paris arrival",
+      "image": "tools/resort-blocks/references/paris-entrance-earth-2026-10-05.png",
+      "kind": "user-provided-reference",
+      "accessed": "2026-10-05",
+      "note": "Primary visual brief for entrance massing; image acquisition date unknown. No Google mesh or image texture imported."
+    },
+    {
+      "id": "arrival-design",
+      "title": "A Tale of Two Cities \u2014 original contractor/design interviews",
+      "url": "https://www.livedesignonline.com/a-tale-two-cities-0",
+      "kind": "original-design-interview",
+      "accessed": "2026-10-05",
+      "note": "Confirms 60%-scale Arc and Opera/Louvre architectural references; ornament handcrafted. Historical source, not present tenant evidence."
+    },
+    {
+      "id": "walker-arrival-2001",
+      "title": "Paris arrival photograph, Robert A. Walker, 15\u201321 June 2001",
+      "url": "https://www.cs.kent.edu/~walker/photos/01-06-15lasvegas.html",
+      "remoteImage": "https://www.cs.kent.edu/~walker/photos/01-06-15_LasVegas/Images/photo119.jpg",
+      "kind": "photographer-original",
+      "accessed": "2026-10-05",
+      "imageDate": "2001-06",
+      "note": "Inspected in browser. Historical corroboration of attached Parisian facades, blue/slate dormer roofs, narrow window bays, shutters and red awnings behind the canopy. Not a current tenant/signage survey; no source pixels used as game textures."
+    },
+    {
+      "id": "toussaint-entry-2010",
+      "title": "Paris Las Vegas Entry, Dave Toussaint",
+      "url": "https://www.flickr.com/photos/davetoussaint/4851433594",
+      "kind": "photographer-original",
+      "accessed": "2026-10-05",
+      "imageDate": "2010-07-08",
+      "note": "Inspected interior photo shows coffered barrel-vault arrival hall and glazed transom. Saved as reference for future lobby correction; NOT reconstructed in this facade pass."
+    },
+    {
+      "id": "tower-pool-earth",
+      "title": "Creator Google Earth tower/pool comparison",
+      "image": "tools/resort-blocks/references/paris-tower-pool-earth-2026-10-06.png",
+      "kind": "user-provided-reference",
+      "note": "Acquisition date unknown. Used for relative form and pool composition, not a metric survey.",
+      "accessed": "2026-10-06"
+    },
+    {
+      "id": "eiffel-schuff",
+      "title": "Schuff Steel: Eiffel Tower at Paris Las Vegas",
+      "url": "https://www.schuff.com/project/eiffel-tower-at-paris-las-vegas/",
+      "kind": "fabricator",
+      "note": "541 ft overall; half scale; 460 ft observation; three legs inside casino.",
+      "accessed": "2026-10-06"
+    },
+    {
+      "id": "eiffel-caesars",
+      "title": "Caesars Paris fact sheet, April 2025",
+      "url": "https://newsroom.caesars.com/files/doc_downloads/2025/04/Paris-Las-Vegas-Fact-Sheet_April-2025-FINAL.pdf",
+      "kind": "operator",
+      "note": "Corroborates height and half scale.",
+      "accessed": "2026-10-06"
+    },
+    {
+      "id": "eiffel-coatings",
+      "title": "High Performance Coatings Eiffel project photograph",
+      "url": "https://www.highperformancecoatings.org/project-profiles/eiffel-tower-at-paris-las-vegas",
+      "kind": "contractor-photograph",
+      "note": "Visually inspected close-up: bronze-grey steel, diagonal webs, platform ribs and restaurant glazing.",
+      "accessed": "2026-10-06"
+    },
+    {
+      "id": "eiffel-gallery",
+      "title": "Flickr observation-gallery photograph, 2010",
+      "url": "https://www.flickr.com/photos/97585109%40N00/5642014764",
+      "kind": "photographer-original",
+      "imageDate": "2010-09-16",
+      "note": "Visually inspected cage, chamfered deck and supports.",
+      "accessed": "2026-10-06"
+    },
+    {
+      "id": "pool-operator-2021",
+      "title": "Paris Vegas operator pool aerial",
+      "url": "https://x.com/ParisVegas/status/1391850792055971842",
+      "remoteImage": "https://pbs.twimg.com/media/E1DY6loXoAEfGFO.jpg",
+      "kind": "operator-photograph",
+      "imageDate": "2021-05",
+      "note": "Visually inspected inset-corner octagon, radial paving, loungers and perimeter cabanas. Historic arrangement, not current furniture survey.",
+      "accessed": "2026-10-06"
+    }
+  ],
+  "levels": [
+    {
+      "id": "ground",
+      "label": "Street patios, casino / restaurant entrances",
+      "elevationM": 0.24,
+      "sources": [
+        "map",
+        "earth"
+      ],
+      "confidence": "Common game ground datum",
+      "features": "Common game ground datum"
+    },
+    {
+      "id": "rooftop",
+      "label": "Level 2 restaurant terrace",
+      "elevationM": 6.64,
+      "sources": [
+        "map",
+        "beer-park",
+        "earth"
+      ],
+      "confidence": "Estimated physical elevation",
+      "features": "Estimated physical elevation"
+    },
+    {
+      "id": "pool",
+      "label": "Level 3 Pool \u00e0 Paris",
+      "elevationM": 10.74,
+      "sources": [
+        "map",
+        "earth"
+      ],
+      "confidence": "Estimated physical elevation",
+      "features": "Estimated physical elevation"
+    },
+    {
+      "id": "guest",
+      "label": "Retained guest-floor system",
+      "sources": [
+        "legacy",
+        "osm"
+      ],
+      "confidence": "Existing streamed rooms retained; detailed floor registration unfinished",
+      "features": "Existing streamed rooms retained; detailed floor registration unfinished",
+      "elevationM": null
+    },
+    {
+      "id": "observation",
+      "label": "Eiffel observation gallery",
+      "elevationM": 140,
+      "confidence": "confirmed rounded from 460 ft",
+      "sources": [
+        "eiffel-schuff"
+      ],
+      "name": "Eiffel observation gallery",
+      "features": "Chamfered open-air viewing gallery, full safety cage, telescope stands and two-way lift cabin."
+    }
+  ],
+  "components": [
+    {
+      "id": "tower",
+      "label": "X-shaped Bordeaux hotel tower",
+      "levels": [
+        "guest"
+      ],
+      "sources": [
+        "earth",
+        "osm"
+      ],
+      "status": "implemented-first-pass",
+      "notes": "Mapped footprint, window bays, pilasters, slate crown, dormers and finials; subtle real-world setbacks not fully replicated.",
+      "evidence": [
+        "build/resort-blocks/paris/geometry-report.json"
+      ],
+      "name": "X-shaped Bordeaux hotel tower",
+      "scope": "Mapped footprint, window bays, pilasters, slate crown, dormers and finials; subtle real-world setbacks not fully replicated.",
+      "category": "Architecture",
+      "priority": "P1"
+    },
+    {
+      "id": "north",
+      "label": "Mon Ami Gabi street pavilion",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "earth",
+        "creator-earth",
+        "mon-ami"
+      ],
+      "status": "implemented-first-pass",
+      "notes": "Two-storey arcade, balcony rails, stone trim/pediment, red awnings, patio tables and umbrellas.",
+      "evidence": [
+        "build/resort-blocks/paris/geometry-report.json"
+      ],
+      "name": "Mon Ami Gabi street pavilion",
+      "scope": "Two-storey arcade, balcony rails, stone trim/pediment, red awnings, patio tables and umbrellas.",
+      "category": "Architecture",
+      "priority": "P1"
+    },
+    {
+      "id": "south",
+      "label": "Alexxa\u2019s and rooftop restaurant pavilion",
+      "levels": [
+        "ground",
+        "rooftop"
+      ],
+      "sources": [
+        "earth",
+        "alexxas",
+        "beer-park",
+        "map"
+      ],
+      "status": "implemented-first-pass",
+      "notes": "Separate street patio and raised dining deck, tables, bar, lights, planting, dome and roof details.",
+      "evidence": [
+        "build/resort-blocks/paris/geometry-report.json"
+      ],
+      "name": "Alexxa\u2019s and rooftop restaurant pavilion",
+      "scope": "Separate street patio and raised dining deck, tables, bar, lights, planting, dome and roof details.",
+      "category": "Architecture",
+      "priority": "P1"
+    },
+    {
+      "id": "arrival",
+      "label": "Covered arrival and Arc",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "entrance-earth-close",
+        "arrival-design",
+        "map",
+        "osm",
+        "walker-arrival-2001"
+      ],
+      "status": "implemented-reference-correction",
+      "notes": "Curved arrival shell now articulated as adjoining Parisian facades: narrower paired French windows, iron scroll balconies, selected shutters, red awnings, alternate pediments/dormers, stepped slate roofs and chimney pots. Courtyard-facing east pavilion return added. Working doorway, ramp and other architecture retained. Proportions and fine ornament remain fitted interpretations.",
+      "evidence": [
+        "build/resort-blocks/paris/arrival-aerial-review.png",
+        "build/resort-blocks/paris/game-arrival-aerial.jpg",
+        "build/resort-blocks/paris/route-audit.json",
+        "build/resort-blocks/paris/facade-proof.html",
+        "build/resort-blocks/paris/facade-validation.json"
+      ],
+      "name": "Covered arrival and Arc",
+      "scope": "Curved arrival shell now articulated as adjoining Parisian facades: narrower paired French windows, iron scroll balconies, selected shutters, red awnings, alternate pediments/dormers, stepped slate roofs and chimney pots. Courtyard-facing east pavilion return added. Working doorway, ramp and other architecture retained. Proportions and fine ornament remain fitted interpretations.",
+      "category": "Architecture",
+      "priority": "P1"
+    },
+    {
+      "id": "pool",
+      "label": "Octagonal pool and terrace",
+      "levels": [
+        "pool"
+      ],
+      "sources": [
+        "tower-pool-earth",
+        "pool-operator-2021",
+        "map"
+      ],
+      "status": "implemented-reference-correction",
+      "notes": "Inset-corner octagonal basin, modeled coping/basin, radial paving, 159 loungers, nine white cabanas, urns and planted perimeter. Permanent exterior geometry with spatial LOD. Decorative water; no swim mechanics. Furniture locations are fitted estimates.",
+      "evidence": [
+        "build/resort-blocks/paris/tower-pool-proof.html",
+        "build/resort-blocks/paris/tower-pool-validation.json"
+      ],
+      "name": "Octagonal pool and terrace",
+      "scope": "Inset-corner octagonal basin, modeled coping/basin, radial paving, 159 loungers, nine white cabanas, urns and planted perimeter. Permanent exterior geometry with spatial LOD. Decorative water; no swim mechanics. Furniture locations are fitted estimates.",
+      "category": "Architecture",
+      "priority": "P1"
+    },
+    {
+      "id": "balloon",
+      "label": "Paris balloon sign",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "earth",
+        "osm"
+      ],
+      "status": "implemented-first-pass",
+      "notes": "Surveyed position, blue surface, gilt ribs and lettering.",
+      "evidence": [
+        "build/resort-blocks/paris/geometry-report.json"
+      ],
+      "name": "Paris balloon sign",
+      "scope": "Surveyed position, blue surface, gilt ribs and lettering.",
+      "category": "Architecture",
+      "priority": "P1"
+    },
+    {
+      "id": "circulation",
+      "label": "Connected exterior level routes",
+      "levels": [
+        "ground",
+        "rooftop",
+        "pool"
+      ],
+      "sources": [
+        "map",
+        "earth"
+      ],
+      "status": "implemented-first-pass",
+      "notes": "Openings join retained casino. Physical stairs to restaurant deck and pool; exact real access alignment remains estimated.",
+      "evidence": [
+        "build/resort-blocks/paris/geometry-report.json"
+      ],
+      "name": "Connected exterior level routes",
+      "scope": "Openings join retained casino. Physical stairs to restaurant deck and pool; exact real access alignment remains estimated.",
+      "category": "Access",
+      "priority": "P1"
+    },
+    {
+      "id": "retained",
+      "label": "Casino / guest hotel / Eiffel ride",
+      "levels": [
+        "ground",
+        "guest"
+      ],
+      "sources": [
+        "legacy"
+      ],
+      "status": "implemented-first-pass",
+      "notes": "Casino/guest systems and Eiffel lift interaction retained. Eiffel render/collision geometry replaced in the 2026-10-06 correction.",
+      "evidence": [
+        "build/resort-blocks/paris/geometry-report.json"
+      ],
+      "name": "Casino / guest hotel / Eiffel ride",
+      "scope": "Casino/guest systems and Eiffel lift interaction retained. Eiffel render/collision geometry replaced in the 2026-10-06 correction.",
+      "category": "Architecture",
+      "priority": "P1"
+    },
+    {
+      "id": "eiffel",
+      "label": "Eiffel replica and observation gallery",
+      "name": "Eiffel replica and observation gallery",
+      "levels": [
+        "ground",
+        "observation"
+      ],
+      "sources": [
+        "tower-pool-earth",
+        "eiffel-schuff",
+        "eiffel-caesars",
+        "eiffel-coatings",
+        "eiffel-gallery"
+      ],
+      "status": "implemented-reference-correction",
+      "notes": "Rebuilt at 164.9 m with 140 m viewing gallery. Photo-fitted steel profiles, curved legs, great arches, restaurant platform/roof, tapered shaft and compact cage/crown. Original lift landing coordinates retained.",
+      "scope": "Complete visible Eiffel structure and observation access.",
+      "category": "Architecture",
+      "priority": "P1",
+      "evidence": [
+        "build/resort-blocks/paris/tower-pool-proof.html",
+        "build/resort-blocks/paris/tower-pool-validation.json"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "entry",
+      "label": "Alexxa street entrance",
+      "fromLevel": "ground",
+      "toLevel": "ground",
+      "components": [
+        "south",
+        "circulation",
+        "retained"
+      ],
+      "sources": [
+        "map",
+        "earth"
+      ],
+      "status": "live-passage-checked",
+      "evidence": [
+        "build/resort-blocks/paris/route-audit.json",
+        "build/resort-blocks/paris/walkthrough.json",
+        "build/resort-blocks/paris/game-casino-connection.png"
+      ],
+      "note": "Walked from Strip patio x=30 through new automatic door x=47.5 and retained casino doorway x=80.35 to x=83.89; no teleport between those points."
+    },
+    {
+      "id": "rooftop",
+      "label": "Beer Park ascent",
+      "fromLevel": "ground",
+      "toLevel": "rooftop",
+      "components": [
+        "south",
+        "circulation"
+      ],
+      "sources": [
+        "map",
+        "earth"
+      ],
+      "status": "live-ascent-checked",
+      "evidence": [
+        "build/resort-blocks/paris/route-audit.json",
+        "build/resort-blocks/paris/game-rooftop-ascent.png",
+        "build/resort-blocks/paris/game-arrival-stairs.jpg",
+        "build/resort-blocks/paris/entrance-walkthrough.json"
+      ],
+      "note": "Relocated x=68 flight walked from [68,.27,456] to [68.01,6.67,435.37] with normal movement.",
+      "notes": "Ground-to-rooftop flight moved to x=68 to clear the enclosed Opera pavilion. Route audit re-run; current live evidence in entrance-walkthrough.json."
+    },
+    {
+      "id": "pool-ascent",
+      "label": "Pool ascent",
+      "fromLevel": "rooftop",
+      "toLevel": "pool",
+      "components": [
+        "pool",
+        "circulation"
+      ],
+      "sources": [
+        "map",
+        "earth"
+      ],
+      "status": "live-ascent-checked",
+      "evidence": [
+        "build/resort-blocks/paris/route-audit.json",
+        "build/resort-blocks/paris/game-pool-ascent.png",
+        "build/resort-blocks/paris/game-pool-connection.png",
+        "build/resort-blocks/paris/walkthrough.json"
+      ],
+      "note": "Normal walking reached the upper stair landing, then a separate live segment crossed the 26m connector to x96.27/y10.77/z412.70 on the pool deck."
+    },
+    {
+      "id": "pool-circuit",
+      "label": "Pool circuit",
+      "fromLevel": "pool",
+      "toLevel": "pool",
+      "components": [
+        "pool"
+      ],
+      "sources": [
+        "map",
+        "earth"
+      ],
+      "status": "collision-audited",
+      "evidence": [
+        "build/resort-blocks/paris/route-audit.json"
+      ]
+    },
+    {
+      "id": "bistro",
+      "label": "Mon Ami Gabi entrance",
+      "fromLevel": "ground",
+      "toLevel": "ground",
+      "components": [
+        "north"
+      ],
+      "sources": [
+        "map",
+        "earth"
+      ],
+      "status": "collision-audited",
+      "evidence": [
+        "build/resort-blocks/paris/route-audit.json"
+      ]
+    },
+    {
+      "id": "main-arrival",
+      "name": "Main arrival to casino",
+      "status": "live-passage-checked",
+      "levels": [
+        "ground"
+      ],
+      "components": [
+        "arrival"
+      ],
+      "sources": [
+        "map",
+        "entrance-earth-close"
+      ],
+      "evidence": [
+        "build/resort-blocks/paris/entrance-walkthrough.json",
+        "build/resort-blocks/paris/route-audit.json"
+      ],
+      "note": "Actual player traversed casino to motor court; grounded capsule sweep covers inward curb/vestibule route. Real-life alignment remains estimated.",
+      "fromLevel": "ground",
+      "toLevel": "ground",
+      "label": "Main arrival to casino"
+    },
+    {
+      "id": "arc-vault",
+      "name": "Open Arc main vault",
+      "status": "collision-audited",
+      "levels": [
+        "ground"
+      ],
+      "components": [
+        "arrival"
+      ],
+      "sources": [
+        "entrance-earth-close"
+      ],
+      "evidence": [
+        "build/resort-blocks/paris/route-audit.json"
+      ],
+      "fromLevel": "ground",
+      "toLevel": "ground",
+      "label": "Open Arc main vault"
+    }
+  ],
+  "views": [
+    {
+      "id": "entrance",
+      "label": "entrance",
+      "sources": [
+        "earth",
+        "creator-earth",
+        "mon-ami"
+      ],
+      "camera": {
+        "eye": [
+          30,
+          1.94,
+          428
+        ],
+        "target": [
+          59,
+          3.2,
+          428
+        ]
+      },
+      "status": "captured-first-pass",
+      "name": "Entrance",
+      "purpose": "Compare installed geometry and routes with the recorded references.",
+      "gameCapture": "build/resort-blocks/paris/game-street-entry.png",
+      "note": "Actual installed-game capture; detailed matching-angle visual acceptance remains open."
+    },
+    {
+      "id": "aerial",
+      "label": "aerial",
+      "sources": [
+        "earth",
+        "creator-earth",
+        "mon-ami"
+      ],
+      "camera": {
+        "eye": [
+          -135,
+          125,
+          468
+        ],
+        "target": [
+          159,
+          45,
+          391
+        ]
+      },
+      "status": "captured-first-pass",
+      "name": "Aerial",
+      "purpose": "Compare installed geometry and routes with the recorded references.",
+      "gameCapture": "build/resort-blocks/paris/game-aerial.png",
+      "note": "Actual installed-game capture; detailed matching-angle visual acceptance remains open."
+    },
+    {
+      "id": "deck",
+      "label": "deck",
+      "sources": [
+        "earth",
+        "creator-earth",
+        "mon-ami"
+      ],
+      "camera": {
+        "eye": [
+          111,
+          12.44,
+          425
+        ],
+        "target": [
+          137,
+          12.74,
+          388
+        ]
+      },
+      "status": "pending-runtime-review",
+      "name": "Deck",
+      "purpose": "Compare installed geometry and routes with the recorded references."
+    },
+    {
+      "id": "stairs",
+      "label": "stairs",
+      "sources": [
+        "earth",
+        "creator-earth",
+        "mon-ami"
+      ],
+      "camera": {
+        "eye": [
+          68,
+          1.94,
+          456
+        ],
+        "target": [
+          68,
+          8.14,
+          438.5
+        ]
+      },
+      "status": "captured-first-pass",
+      "name": "Stairs",
+      "purpose": "Compare installed geometry and routes with the recorded references.",
+      "gameCapture": "build/resort-blocks/paris/game-rooftop-ascent.png",
+      "note": "Actual installed-game capture; detailed matching-angle visual acceptance remains open."
+    },
+    {
+      "id": "frontage",
+      "label": "frontage",
+      "sources": [
+        "earth",
+        "creator-earth",
+        "mon-ami"
+      ],
+      "camera": {
+        "eye": [
+          20,
+          2,
+          343
+        ],
+        "target": [
+          46,
+          6,
+          367
+        ]
+      },
+      "status": "captured-first-pass",
+      "name": "Frontage",
+      "purpose": "Compare installed geometry and routes with the recorded references.",
+      "gameCapture": "build/resort-blocks/paris/game-street-frontage.png",
+      "note": "Interactive game street comparison captured. The final dome-support-only correction is shown in the neutral exported-mesh render; it does not alter this north facade."
+    },
+    {
+      "id": "arrival",
+      "label": "arrival",
+      "sources": [
+        "earth",
+        "creator-earth",
+        "mon-ami"
+      ],
+      "camera": {
+        "eye": [
+          127,
+          2,
+          457
+        ],
+        "target": [
+          127,
+          8,
+          435
+        ]
+      },
+      "status": "captured-correction",
+      "name": "Arrival",
+      "purpose": "Compare installed geometry and routes with the recorded references.",
+      "gameCapture": "build/resort-blocks/paris/game-arrival-approach.jpg",
+      "note": "Actual game capture beneath canopy; full sculptural fidelity remains open."
+    },
+    {
+      "id": "pool-stairs",
+      "label": "pool-stairs",
+      "sources": [
+        "earth",
+        "creator-earth",
+        "mon-ami"
+      ],
+      "camera": {
+        "eye": [
+          68,
+          8.34,
+          433
+        ],
+        "target": [
+          68,
+          12.14,
+          413
+        ]
+      },
+      "status": "captured-first-pass",
+      "name": "Pool-Stairs",
+      "purpose": "Compare installed geometry and routes with the recorded references.",
+      "gameCapture": "build/resort-blocks/paris/game-pool-ascent.png",
+      "note": "Actual installed-game capture; detailed matching-angle visual acceptance remains open."
+    },
+    {
+      "id": "arrival-aerial",
+      "label": "Corrected main arrival aerial",
+      "name": "Corrected main arrival aerial",
+      "purpose": "Compare the corrected entrance composition and glazed arrival.",
+      "sources": [
+        "entrance-earth-close",
+        "arrival-design"
+      ],
+      "camera": {
+        "eye": [
+          4,
+          130,
+          607
+        ],
+        "target": [
+          113,
+          13,
+          462
+        ]
+      },
+      "status": "captured-correction",
+      "gameCapture": "build/resort-blocks/paris/game-arrival-aerial.jpg"
+    },
+    {
+      "id": "arrival-inside",
+      "label": "View out through main vestibule",
+      "name": "View out through main vestibule",
+      "purpose": "Compare the corrected entrance composition and glazed arrival.",
+      "sources": [
+        "entrance-earth-close",
+        "arrival-design"
+      ],
+      "camera": {
+        "eye": [
+          126.79,
+          1.97,
+          428.38
+        ],
+        "target": [
+          126.8,
+          2.5,
+          454
+        ]
+      },
+      "status": "captured-correction",
+      "gameCapture": "build/resort-blocks/paris/game-arrival-inside.jpg",
+      "note": "Captured after normal walk into the windowed vestibule; closed glass doors keep the city visible."
+    },
+    {
+      "id": "facades",
+      "name": "Parisian arrival facades close view",
+      "label": "Parisian arrival facades close view",
+      "purpose": "Inspect the facade correction at near-detail distance.",
+      "sources": [
+        "entrance-earth-close",
+        "walker-arrival-2001"
+      ],
+      "camera": {
+        "eye": [
+          130,
+          14,
+          465
+        ],
+        "target": [
+          128,
+          14,
+          435
+        ]
+      },
+      "status": "captured-correction",
+      "gameCapture": "build/resort-blocks/paris/game-facades.jpg",
+      "note": "Fixed dev review camera with flight holding elevation; not a physically surveyed reference-camera match."
+    },
+    {
+      "id": "facades-aerial",
+      "name": "Parisian arrival roofline",
+      "label": "Parisian arrival roofline",
+      "purpose": "Inspect the facade correction at near-detail distance.",
+      "sources": [
+        "entrance-earth-close",
+        "walker-arrival-2001"
+      ],
+      "camera": {
+        "eye": [
+          87,
+          49,
+          497
+        ],
+        "target": [
+          137,
+          12,
+          448
+        ]
+      },
+      "status": "captured-correction",
+      "gameCapture": "build/resort-blocks/paris/game-facades-aerial.jpg",
+      "note": "Fixed dev review camera with flight holding elevation; not a physically surveyed reference-camera match."
+    }
+  ],
+  "issues": [
+    {
+      "id": "fit",
+      "title": "Detailed facade proportions, relief sculpture and real-life access alignments need refinement",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Detailed facade proportions, relief sculpture and real-life access alignments need refinement"
+    },
+    {
+      "id": "levels",
+      "title": "Level elevations are fitted estimates, not a metric architectural survey",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Level elevations are fitted estimates, not a metric architectural survey"
+    },
+    {
+      "id": "guest",
+      "title": "Register every existing guest floor/entry against revised tower envelope",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Register every existing guest floor/entry against revised tower envelope"
+    },
+    {
+      "id": "north-connectivity",
+      "title": "Full internal Mon Ami Gabi-to-casino circulation and all other property entrances remain to be mapped",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Full internal Mon Ami Gabi-to-casino circulation and all other property entrances remain to be mapped"
+    },
+    {
+      "id": "east",
+      "title": "East/service elevations and rear podium remain less detailed than Strip-facing public frontage",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "East/service elevations and rear podium remain less detailed than Strip-facing public frontage"
+    },
+    {
+      "id": "roof",
+      "title": "Refine stepped roofline, pavilions and current rooftop venue fit-out from newer imagery",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Refine stepped roofline, pavilions and current rooftop venue fit-out from newer imagery"
+    },
+    {
+      "id": "runtime",
+      "title": "Complete remaining live routes and automated startup verification",
+      "severity": "validation",
+      "status": "open",
+      "detail": "Current WebGPU startup verification passes. Main entrance route crossed live; full pool circuit and north/internal circulation still need acceptance. Earlier failed startup remains in historical first-pass records."
+    },
+    {
+      "id": "arrival-refinement",
+      "title": "Exact Opera/Arc ornament, mature landscaping and surveyed arrival proportions",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Main composition rebuilt. Relief groups, statues, balloon medallions and script are original approximations; transverse Arc passages are not modeled. Door arrangement, elevation, window spacing and street planting need further photo/metric refinement. Vestibule is a playable connector, not a replica of the complete actual hotel lobby."
+    }
+  ],
+  "gates": [
+    {
+      "id": "survey",
+      "status": "partial",
+      "evidence": [
+        "build/resort-blocks/paris/sources.json",
+        "build/resort-blocks/paris/google-earth-west-aerial.png",
+        "build/resort-blocks/paris/google-earth-topdown.png",
+        "build/resort-blocks/paris/reference-mon-ami-gabi.png"
+      ],
+      "note": "Google Earth west/south/top views (imagery 2022-11-09), official property map and restaurant references saved. Exact physical heights remain fitted estimates.",
+      "name": "Survey"
+    },
+    {
+      "id": "massing",
+      "status": "partial",
+      "evidence": [
+        "build/resort-blocks/paris/geometry-report.json",
+        "build/resort-blocks/paris/aerial-review.png",
+        "build/resort-blocks/paris/game-aerial.png",
+        "build/resort-blocks/paris/arrival-aerial-review.png",
+        "build/resort-blocks/paris/entrance-proof.html"
+      ],
+      "note": "Mapped X footprint, podium, Arc, balloon and multi-level frontage installed; crown setbacks and east/service details still need refinement. Entrance correction adds enclosed curved arrival architecture rather than the prior bare canopy.",
+      "name": "Massing"
+    },
+    {
+      "id": "levels",
+      "status": "partial",
+      "evidence": [
+        "build/resort-blocks/paris/route-audit.json",
+        "build/resort-blocks/paris/game-rooftop-ascent.png",
+        "build/resort-blocks/paris/game-pool-ascent.png"
+      ],
+      "note": "Seven authored routes pass 1,795 clearance/support checks, plus a grounded approach sweep. Stair physical alignment and elevations remain estimated.",
+      "name": "Levels"
+    },
+    {
+      "id": "facades",
+      "status": "partial",
+      "evidence": [
+        "build/resort-blocks/paris/frontage-review.png",
+        "build/resort-blocks/paris/patio-review.png",
+        "build/resort-blocks/paris/arrival-aerial-review.png",
+        "build/resort-blocks/paris/entrance-proof.html"
+      ],
+      "note": "Street pavilion material/geometry pass installed; full property facade acceptance remains open. Entrance correction adds enclosed curved arrival architecture rather than the prior bare canopy.",
+      "name": "Facades"
+    },
+    {
+      "id": "integration",
+      "status": "partial",
+      "evidence": [
+        "build/resort-blocks/paris/ownership-report.json",
+        "build/resort-blocks/paris/route-audit.json",
+        "build/resort-blocks/paris/walkthrough.json"
+      ],
+      "note": "Explicitly replaced thirteen map IDs, 21 legacy exterior batches and 61 old colliders, including a misclassified Arc. Retained casino, guest modules and Eiffel ride.",
+      "name": "Integration"
+    },
+    {
+      "id": "runtime",
+      "status": "partial",
+      "evidence": [
+        "build/resort-blocks/paris/arrival-verify.json",
+        "build/resort-blocks/paris/entrance-walkthrough.json"
+      ],
+      "note": "Current typecheck and automated WebGPU startup verification passed; main entrance crossed interactively. Performance profiling remains deferred.",
+      "name": "Runtime"
+    },
+    {
+      "id": "visual",
+      "status": "partial",
+      "evidence": [
+        "build/resort-blocks/paris/game-aerial.png",
+        "build/resort-blocks/paris/aerial-review.png",
+        "build/resort-blocks/paris/frontage-review.png",
+        "build/resort-blocks/paris/google-earth-west-aerial.png",
+        "build/resort-blocks/paris/proof.html",
+        "build/resort-blocks/paris/arrival-aerial-review.png",
+        "build/resort-blocks/paris/entrance-proof.html"
+      ],
+      "note": "Installed-game captures and neutral-light exported-mesh views compared with Google Earth and operator photographs. Full matching-angle acceptance and detailed relief/roofline refinement remain open. Entrance correction adds enclosed curved arrival architecture rather than the prior bare canopy.",
+      "name": "Visual"
+    }
+  ],
+  "performance": {
+    "status": "deferred-by-creator",
+    "note": "No frame-rate target or improvement claimed this turn. Shared material geometry clustered into authored 64m cells; hotel tower is a scale-aware separate group."
+  },
+  "implementation": {
+    "generator": "tools/resort-blocks/build_paris.py",
+    "exporter": "tools/resort-blocks/export_paris.py",
+    "installer": "tools/resort-blocks/install_paris.py",
+    "routeAudit": "tools/resort-blocks/test-paris.mjs",
+    "notes": [
+      "Original procedural materials and geometry; Google Earth imagery is used only as visual evidence.",
+      "Final render review added a supporting eight-column terrace arcade and rim below the dome; route audit passed again afterward.",
+      "Entrance module: tools/resort-blocks/paris_arrival.py. Old unsupported terrace dome removed in favour of enclosed Opera apse/pavilion.",
+      "Selective legacy cut: clip_paris_arrival.py; preserves other resort owners and attributes. Outdoor court excludes old indoor volume; glazed vestibule is windowed.",
+      "1,795 sampled clearances/support checks plus grounded movement regression across the curb; final authoring total 874,627 triangles in 339 source/material/cell batches, not runtime draw calls.",
+      "Parisian facade correction: 966,555 total triangles / 368 authored source-material-cell batches; 1,795 route checks and grounded entrance regression pass. Source batches are merged at runtime. See facade-validation.json for current evidence.",
+      "2026-10-06 Eiffel/pool correction: modules paris_eiffel.py / paris_pool.py. 1,230,156 total authored triangles, 433 material/source/cell batches before runtime merging. 1,971 city route probes and grounded entrance sweep pass. Old Eiffel meshes and collision removed; duplicate hardcoded shadow proxy removed. Pool furniture moved to permanent exterior; visibility-zone metadata retained."
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "build/resort-blocks/paris/parisBlock-exterior.glb": "124ef788b4c3a888ed1d154194ddd69d644ebb9c36d98a24c21669c9e59b883a",
+      "build/resort-blocks/paris/parisBlock-interior.glb": "f26595a0002f3cb6e3aa2b3b9ee60b9e502359dab37f6c02688c5da8571b3ec7",
+      "build/resort-blocks/paris/parisDining-exterior.glb": "27413ea38d2af0a877eecc4c5f858a2787ddbd2a33b555166c9f08a3ed92b9ee",
+      "build/resort-blocks/paris/parisDining-interior.glb": "1b1d659998ef0fc526577d4e9a9a70a4af4af77bfd04c890e67ab7def7258930",
+      "build/resort-blocks/paris/parisPool-exterior.glb": "d446b3ab2e67363adfe2dbe402f09bf28dc4f372687093b35b93319af57193fc",
+      "build/resort-blocks/paris/parisPool-interior.glb": "77bc26b863828d1cc9826274b88cb21632f27c72df35b1f395f32517cab2e557",
+      "build/resort-blocks/paris/venues.json": "63c0615b6f2dd7a3c05f8e81d439208099281c88a03e9f5db919c2c68d33b020",
+      "src/work/ResortBlocks.ts": "382308bc01d12dafe16fb08ab5b4ad92e0073e4da30d4b126e7ff45bad231136",
+      "src/work/StripLandmarks.ts": "20843488014faabef9c61e6375f543023633c2508d79c10b7b2fc7ec473fd4a2",
+      "src/work/ResortBlockReview.ts": "fdf4818ece8d432c55ca0d2d324395a03cb237ba636827acce918844a0775f2c",
+      "build/geographic-strip/detailed.glb": "a3550e88624078a666a4b0e4fddae559dd1aa894fe86493dc77e011acc828b6d",
+      "build/geographic-strip/city.glb": "1f0470288206bd51e55e494202f3109a5f661e6a1f2eedc84de4fe8cf5cbb312",
+      "src/work/geographic/level.json": "71785b4c7c6628bc52017737f66de539b6f7a39104a1ce11e0d5e060d7ca1579",
+      "src/work/BuildingVisibility.ts": "86ef1b7fdee5dea621e40ea675a8c09e0ac976843edc0c6a0f6927fa434a7aee",
+      "src/work/vegas-visibility.json": "41a33a4586996d218edffdd7837df23aebb767c576260cfda0c64ad6fc709ade",
+      "tools/resort-blocks/paris_arrival.py": "1f002cacc90abef2eff906e2fdfd7e0947a96fa3f1cd6ee0ab63b7440c969737",
+      "tools/resort-blocks/clip_paris_arrival.py": "72a968e06bed36341c12298e4e1f1ec6b626bf1996a89ce5c942b720aff95275",
+      "tools/resort-blocks/paris_facades.py": "d1d1934415f82a672181f353d51400ceab45ed29241015972b2764087527f4e2",
+      "tools/resort-blocks/build_paris.py": "69a2bf5f3b5f6b318666feb451498bb01eb0d4cde5d2a8c9b4c2c2a959ceb662",
+      "tools/resort-blocks/export_paris.py": "34d0d1251cfb13244723bc391c60bb30db4c77da2e3a32de8da5aea523ebf056",
+      "src/work/CityAtlas.ts": "d7fc2ffbd2807834a7ff40eea8586a39ca84781369f7c2c4eaf61bd197baf9a3",
+      "tools/resort-blocks/paris_eiffel.py": "7c25fb866fa586398f7e417c41b83083a432ee0adc64020d0fe29074ddb40053",
+      "tools/resort-blocks/paris_pool.py": "27d9bbb467e468214b53c8bc3eca821e4950b2ec918d8166c920992c41f9817e",
+      "tools/resort-blocks/install_paris.py": "3e7bfa5bd931f866a3727a0b2f0105b1c984924438bb8a2e3f2d81f163fad177",
+      "src/work/AfterlightShadows.ts": "09894c1f93c9aa36875082f7233087698a46d43c4d605dcbf421232a55e92a27",
+      "build/resort-blocks/paris/parisBlock-exterior-collision.json": "b62d7baffe73d70ebad0e1a23e0d6a572be731dcdf846c7cd65575f0f7014c43"
+    },
+    "note": "Eiffel shape retry after explicit creator rejection: broad plated piers, reduced splay and smaller arched upper opening. 2,014 city-enabled route probes pass. Visual acceptance and whole-resort checklist stay open."
+  },
+  "facadeCorrection": {
+    "date": "2026-10-05",
+    "prompt": "I believe the house facades around the arc the triumph are supposed to look like paris houses",
+    "approach": "Seven adjoining facade groups within the existing curved footprint; shared static materials and 64m cells, no individual window colliders or lights.",
+    "remaining": [
+      "Exact facade measurements and window counts remain image-fitted estimates.",
+      "Iron motifs, chimney locations, shutters and red awning cadence are interpretations, not surveyed replicas.",
+      "The real coffered arrival hall remains a separate documented refinement.",
+      "Other whole-block deficiencies and completion gates remain open."
+    ],
+    "validation": "build/resort-blocks/paris/facade-validation.json",
+    "comparison": "build/resort-blocks/paris/facade-proof.html",
+    "results": {
+      "triangles": 966555,
+      "authoredSourceMaterialCellBatches": 368,
+      "typecheck": "passed",
+      "webgpuVerify": "passed",
+      "routeChecks": 1795,
+      "groundedApproach": "passed",
+      "atlasGutterPixelChecks": 9216,
+      "liveViews": "near and aerial captured; no console errors in final reviewed tab"
+    }
+  },
+  "towerPoolCorrection": {
+    "date": "2026-10-06",
+    "evidence": "build/resort-blocks/paris/tower-pool-proof.html",
+    "validation": "build/resort-blocks/paris/tower-pool-validation.json",
+    "verification": "build/resort-blocks/paris/tower-pool-verify.json",
+    "confidence": "Height confirmed; intermediate steel sections, pool dimensions, exact planting and furniture photo-fitted.",
+    "runtime": "build/resort-blocks/paris/tower-pool-runtime.json",
+    "creatorReview": "Initial tower shape rejected; this revision corrects pier profiles, arch openings and structural member thickness. Full resort acceptance remains open.",
+    "closeReference": "tools/resort-blocks/references/paris-eiffel-close-reference-2026-10-06.png",
+    "rejectedView": "tools/resort-blocks/references/paris-eiffel-rejected-2026-10-06.png",
+    "currentCloseCamera": {
+      "eye": [
+        12,
+        43,
+        447
+      ],
+      "target": [
+        74.5,
+        31,
+        400.5
+      ],
+      "view": "tower-base",
+      "lighting": "Installed game sunset; neutral export comparison also saved."
+    }
+  },
+  "rearServicePass20261014": {
+    "status": "installed-visually-reviewed-refinement-pending",
+    "sourceRegister": "docs/project-records/city-exteriors-2026-10-14/paris-service-research.json",
+    "scope": "Rear convention podium roof and service wall courses/coping, way/33974140. Existing front, tower, interiors, routes retained.",
+    "geometryAudit": "build/city-exteriors/paris-service-audit.json",
+    "checks": {
+      "routes": 2014,
+      "failures": 0,
+      "approachSweep": true,
+      "collisionByteIdentical": true
+    },
+    "views": "build/city-exteriors/paris-podium-final",
+    "observations": "Four installed views inspected; final membrane material rechecked in game, unwanted ribbing removed. Roof, coping and small plant visible; front remains unchanged. Roof datum and plant placement approximate.",
+    "remaining": [
+      "Exact roof datum versus conference clear height remains unmeasured.",
+      "Service loading doors and roof plant placement only partially constrained; no invented public entrances.",
+      "Full site fine architectural refinement and prior gates remain open."
+    ],
+    "performance": "960x540 ultra p50/p95: south45/49ms, north18.6/21.7ms, rearroof40.9/45.4ms, front31.1/36ms. No60fps claim.",
+    "finalMaterialEvidence": "build/city-exteriors/paris-membrane-final/paris-rear-roof.png"
+  },
+  "frontageOwnershipAudit20261021": {
+    "status": "refinement-deferred",
+    "mappedIds": [
+      "way/364846544",
+      "way/114697074",
+      "way/114722037",
+      "way/1424222077",
+      "way/1424222078",
+      "way/1424222079",
+      "way/1436542141",
+      "way/472669747"
+    ],
+    "owner": "parisBlock-exterior, retained Paris dining modules",
+    "evidence": "build/city-exteriors/paris-frontage-audit",
+    "ownershipAudit": "build/city-exteriors/paris-frontage-owner-audit.json",
+    "viewsInspected": [
+      "paris-balloon",
+      "paris-frontage",
+      "paris-arc-canopy",
+      "paris-roof-and-terrace",
+      "paris-arc-axial"
+    ],
+    "sources": [
+      "Existing October5 source register and creator Earth reference",
+      "https://www.google.com/maps/@?api=1&map_action=map&center=36.1120,-115.1718&zoom=20&basemap=satellite"
+    ],
+    "finding": "All eight mapped building-material shells absent from current city. Existing authored balloon,Arc,pavilion,glazed arrival canopy,Alexxa/BeerPark terrace provide replacement geometry. No new geometry generated in this audit. Arc main opening is open; deep vault obscures through-view at oblique angle.",
+    "tests": [
+      "Eight Arc axial walking legs passed with current city,legacy andParis exterior collision"
+    ],
+    "performance": {
+      "views": [
+        {
+          "name": "paris-balloon",
+          "eye": [
+            -5,
+            32,
+            550
+          ],
+          "target": [
+            42,
+            23,
+            511.5
+          ],
+          "p": [
+            25,
+            2,
+            529
+          ],
+          "p50": 24.100000023841858,
+          "p95": 25.30000001192093
+        },
+        {
+          "name": "paris-frontage",
+          "eye": [
+            -4,
+            19,
+            450
+          ],
+          "target": [
+            70,
+            9,
+            441
+          ],
+          "p": [
+            28,
+            2,
+            450
+          ],
+          "p50": 19.80000001192093,
+          "p95": 21.099999964237213
+        },
+        {
+          "name": "paris-arc-canopy",
+          "eye": [
+            76,
+            24,
+            527
+          ],
+          "target": [
+            137,
+            8,
+            479
+          ],
+          "p": [
+            110,
+            2,
+            516
+          ],
+          "p50": 16.69999998807907,
+          "p95": 18.19999998807907
+        },
+        {
+          "name": "paris-roof-and-terrace",
+          "eye": [
+            70,
+            38,
+            478
+          ],
+          "target": [
+            117,
+            12,
+            443
+          ],
+          "p": [
+            70,
+            2,
+            480
+          ],
+          "p50": 22.80000001192093,
+          "p95": 26.100000023841858
+        }
+      ],
+      "limitation": "Static960x540,not route proof"
+    },
+    "remaining": [
+      "Arc sculpture and inscription are very simplified; transverse passages missing",
+      "Balloon crest/sign animation and fine ornament approximate",
+      "Canopy glass,stone/tile weathering and facade detailing remain below photoreal target",
+      "Trees remain simple,terrace furniture distribution and branding need refinement",
+      "No new terrace/interior route validation in this audit; existing route evidence retained"
+    ]
+  },
+  "arcPierOwnershipAudit20261021": {
+    "mappedIds": [
+      "way/114697072",
+      "way/114697073"
+    ],
+    "owner": "parisBlock-exterior/arrival-arc",
+    "sourceAudit": "build/city-exteriors/paris-small-parts-owner-audit.json",
+    "views": [
+      "build/city-exteriors/akita-rear-canopy-final/paris-arc-piers.png",
+      "build/city-exteriors/akita-rear-canopy-final/paris-arc-axial.png"
+    ],
+    "walkEvidence": "build/city-exteriors/paris-arc-walk-log.txt",
+    "remaining": [
+      "Relief sculptures are simplified figures; not a photorealistic reproduction.",
+      "Plan ownership verified; detailed dimensional survey not available."
+    ],
+    "status": "exterior-pass-reviewed-refinement-pending"
+  },
+  "rooftopPavilionOwnership20261021": {
+    "record": "tools/resort-blocks/paris-rooftop-bar.json",
+    "trim": "build/city-exteriors/paris-rooftop-parent-trim.json",
+    "preserved": "All interiors, existing terrace slab and ground facades; replaced only four picnic sets, two string runs and short rail interval."
+  }
+}

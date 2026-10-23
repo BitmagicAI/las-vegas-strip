@@ -1,0 +1,55 @@
+{
+  "id": "vanderpump",
+  "name": "The Vanderpump Hotel (former Cromwell)",
+  "status": "refinement-deferred",
+  "references": "docs/project-records/city-exteriors-2026-10-14/vanderpump-research.json",
+  "baseline": "build/city-exteriors/flamingo-final-cromwell-baseline",
+  "baselineReview": "All3installedviewsseen: genericopenroof, densebalconieseveryfacade inclwestblankend, blankstreetpodium. Existingentrance and bridges retained.",
+  "scope": [
+    "street-level glazing and cornice",
+    "westend sign panel",
+    "roof pool terrace and raised rear club envelope",
+    "east service canopy and walls"
+  ],
+  "constraints": [
+    "Keep existing public doors, guest modules and collision envelope",
+    "One exterior owner, no duplicate wall overlays",
+    "Preserve roads and neighboring assets"
+  ],
+  "uncertainDimensions": "Existing heights and hotel footprint retained pending calibrated survey; new rooftop elevations estimated from two photographed cabana tiers.",
+  "remaining": [
+    "Full public roof access certification",
+    "Exact sculptural ornament and material fidelity",
+    "No photo-perfect claim",
+    "Sparse roof planting and simplified cabana furniture/curtains.",
+    "Existing pedestrian bridge ramp crosses the main entrance view; full global route clearance not certified.",
+    "Window spacing and club elevations remain estimated; close material and sculptural fidelity incomplete.",
+    "Canopy finishes and lighting remain simple; public roof circulation not yet certified."
+  ],
+  "implementation": {
+    "generator": "tools/strip-landmarks/build_vanderpump_exterior.py",
+    "triangles": 118581,
+    "batches": 34,
+    "optimizedMiB": 2.07,
+    "preservation": "Interior meshes/collision and all venue metadata byte-identical; occupied tower/podium collision retained; old roof rails removed and new floor/guard collision added.",
+    "tests": "101 roof, entrance and canopy probes pass; no degenerate triangles; typecheck passed.",
+    "installedReview": "build/city-exteriors/vanderpump-final-showcase-baseline",
+    "estimates": {
+      "occupiedRoofM": 35.2,
+      "cabanaFloorsM": [
+        35.2,
+        39.0
+      ],
+      "clubRoofM": 43.2
+    },
+    "caveat": "Existing occupied envelope kept to avoid invalidating rooms; detailed west curvature and exact cabana design remain inferred. See reference manifest.",
+    "visualReview": "All six installed views inspected. Blank west sign panel and south balconies match the principal reference arrangement. East canopy is open under a 6.1m soffit. Roof pool and tiered cabanas are present but furniture, planting and details remain simplified.",
+    "performance": "build/city-exteriors/vanderpump-final-showcase-baseline/performance.json"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/vanderpump-exterior.glb": "d0a971153ea1ae3a491618ba72a74fbac6444285bca2a94e7b0331d6d4ab4035",
+      "tools/strip-landmarks/build_vanderpump_exterior.py": "b2158e523347a5d8fa2458a6673311892959c0cb178ed4a9f6de33e6f7a7fd1b"
+    }
+  }
+}

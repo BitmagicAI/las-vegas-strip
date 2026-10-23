@@ -1,0 +1,43 @@
+{
+  "id": "mgm-conference",
+  "status": "active",
+  "mappedIds": [
+    "way/27897924",
+    "way/1425416645",
+    "way/133764577",
+    "way/435754002",
+    "way/401340340"
+  ],
+  "references": [
+    {
+      "url": "https://mgmgrand.mgmresorts.com/content/dam/MGM/mgm-grand/meetings/facilities-guide/mgm-grand-meetings-conference-center-facilities-guide.pdf",
+      "inspected": true,
+      "pages": [
+        2,
+        3
+      ],
+      "observations": "Three public levels, northern Grand/Premier ballrooms, southern Boulevard/Chairman rooms, pool-facing prefunction, separate Marquee Ballroom and courtyard. Local PDF pages visually inspected; plan north points left."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1045,-115.1650,650a,400d,35y,90h,65t,0r",
+      "inspected": true,
+      "observations": "West: curved central dark glazing, peach masonry piers/bands, raised tan main hall roof; white roof southern extension and Marquee hall."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1045,-115.1650,650a,450d,35y,270h,65t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09 to2024-03-05",
+      "observations": "East Koval service elevation largely solid pale masonry, mechanical perimeter outside raised main roof. Pools to west retained with existing owner."
+    }
+  ],
+  "dimensions": "Main peripheral20m/raised26.4m; expansion22m;Marquee15.5m;utility5.5m estimated from three-level plan and Earth elevations. Mapped footprints retained.",
+  "remaining": [
+    "Installed review",
+    "Exact elevations and fine window pattern",
+    "Public onward connections and full pool/landscape context"
+  ],
+  "geometry": {
+    "triangles": 21236,
+    "batches": 8
+  }
+}

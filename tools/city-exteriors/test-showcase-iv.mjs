@@ -1,0 +1,5 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import R from '@dimforge/rapier3d-compat';
+await R.init();const w=new R.World({x:0,y:-9.81,z:0});const c=JSON.parse(fs.readFileSync('build/strip-landmarks/showcase-exterior-collision.json'));w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));w.step();let floors=0,guards=0;const failures=[];
+for(let x=39;x<67;x+=2)for(let z=1244;z<1273;z+=2){const h=w.castRay(new R.Ray({x,y:23.1,z},{x:0,y:-1,z:0}),.5,true);floors++;if(!h||Math.abs(h.timeOfImpact-.24)>.05)failures.push({floor:[x,z],hit:h?.timeOfImpact});}
+for(let z=1244;z<1273;z+=2){guards++;if(!w.castRay(new R.Ray({x:39,y:23.6,z},{x:-1,y:0,z:0}),2,true))failures.push({guard:z});}
+w.free();const result={floorSamples:floors,guardSamples:guards,failures,scope:'Terrace floor continuity and west edge guard collision. Public vertical access is not implemented.'};fs.writeFileSync('build/city-exteriors/showcase-iv-collision-test.json',JSON.stringify(result,null,2));console.log(result);assert.equal(failures.length,0);

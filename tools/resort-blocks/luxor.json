@@ -1,0 +1,92 @@
+{
+  "id": "luxor",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.0954,-115.1756,680a,600d,35y,270h,55t,0r",
+      "observed": "2022-11-09: black pyramid, horizontal bronze/dark glass tower wings, white stepped fins, low-rise wings and canopy"
+    }
+  ],
+  "components": [
+    {
+      "id": "pyramid",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "stepped-towers",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "north-podium",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "arrival",
+      "status": "pending"
+    },
+    {
+      "id": "service-wings",
+      "status": "pending"
+    },
+    {
+      "id": "street-frontage",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Sphinx now has modeled body, paws, facial relief and striped headdress; sculpture still simplified.",
+    "North connector and service wings reconstructed; fine arrival and full public-route verification remain.",
+    "Pool and gardens remain incomplete.",
+    "Side-face distant shadow stippling remains to diagnose separately from resolved front panel aliasing."
+  ],
+  "latestEvidence": "build/city-exteriors/luxor-textured/",
+  "sitePass20261014": {
+    "status": "refinement-deferred",
+    "research": "docs/project-records/city-exteriors-2026-10-14/luxor-podium-research.json",
+    "implementation": {
+      "batches": 47,
+      "triangles": 99788,
+      "collisionTriangles": 3762,
+      "retainedTowerBatches": 8,
+      "replacementGeometry": [
+        "lower north lobby",
+        "raised Excalibur connector",
+        "open courtyard colonnades",
+        "southwest stepped theatre/service wing",
+        "northwest plant and fan banks",
+        "Sphinx sculpture and rear attachment",
+        "Oasis pools, coping, deck, seating, cabanas and columns"
+      ]
+    },
+    "validation": {
+      "siteCollision": "254 samples passed with nearby city collision",
+      "parkingCollision": "397 samples passed",
+      "preservation": "8478 road/landscape groups unchanged",
+      "meshAudit": "finite, zero degenerate triangles; all8towerbatches identical except membrane material",
+      "futureBuilder": "full builder reproduces surgical mesh and collision exactly"
+    },
+    "review": {
+      "first": "Six installed images reviewed; Sphinx anatomy and empty pools rejected and reworked.",
+      "second": "All five refined images inspected. Body/face improved, deck and pool clear, bridge unobstructed, plant exterior visible. Coarse furniture frame texture flagged and renamed painted metal/fabric; final material view pending.",
+      "paths": [
+        "build/city-exteriors/luxor-podium-baseline/",
+        "build/city-exteriors/luxor-site-installed/",
+        "build/city-exteriors/luxor-site-refined/",
+        "build/city-exteriors/luxor-final-flamingo-baseline/"
+      ],
+      "final": "All five final images inspected: two Luxor views confirm painted lounger frame and cushion materials, three Flamingo baselines show pending podium work. Pool chairs remain simplified; no photorealistic completion claim."
+    },
+    "remaining": [
+      "Sphinx is hand-authored geometry, not photogrammetry; facial relief and headdress folds still simplified.",
+      "Pool planting, exact cabana count/placement and decorative relief remain approximate. Pool depth is visual only; no swimming gameplay certified.",
+      "Public route from raised parking bridge down to pool and into casino is not certified; existing interiors retained.",
+      "North bridge deck5.24m and lobby10m roof are visual estimates.",
+      "Fine arrival/tram/obelisk details and pyramid distant shadow artifacts remain."
+    ],
+    "sha256": {
+      "build/strip-landmarks/luxorExterior-exterior.json": "f0880ec0b663f3d13435518bba5f0e5ad3b0aa54476a1feb775ef4e8d199476e",
+      "build/strip-landmarks/luxorExterior-exterior-collision.json": "84cd38926903d9379dc942406399e3dbb22dd91e4239271351c63a7d313c8685",
+      "build/strip-landmarks/luxorExterior-exterior.glb": "7104bd9f17838712e8481aa053ef29c0eede679699a2b4ecd76e01c9f0d66bdb"
+    }
+  }
+}

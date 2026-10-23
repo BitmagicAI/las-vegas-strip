@@ -1,0 +1,35 @@
+{
+  "id": "city-market-liquor",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364845148"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15153,-115.15116&zoom=21&basemap=satellite",
+      "observed": "Square low-rise white flatroof, red U-shaped mansard southfront/returns, two HVAC units, parking south/west/north."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15133,-115.15116&heading=0&pitch=0",
+      "imageDate": "January2022",
+      "observed": "CityMarket&Liquor,515: red metal mansard with white fascia, white masonry sidepiers, southern central glazed double door, obscured blue/white/red window strips, parking wheelstops. Older reference; current branding not confirmed."
+    }
+  ],
+  "remaining": [
+    "Branding and storefront based on January2022 imagery; current appearance uncertain",
+    "Sign typography, advertising, weathering and vending fixtures simplified/omitted",
+    "Rear service openings inferred; heights estimated; neutral daylight review pending; no interior"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/city-market-liquor-final",
+    "review": "Three installed views inspected; intersecting roof corners corrected to mitered slopes and final front/aerial rechecked",
+    "tests": "132support6walkPASS;10oldtri removed",
+    "implementation": "1320tri20batches.29MiBoptimized"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/cityMarketLiquor-exterior.glb": "2295966bce1ace4374e9c408d1d0c487dae3f2d49b7cd1551a3ff21a57d4a0e5",
+      "build/strip-landmarks/cityMarketLiquor-exterior-collision.json": "5784b4dc60aa0e33c1798130e279a04a999d3f180be9d276634625ce56cfaf8f"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bitmagic Game</title>
+    <link id="bm-favicon" rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB1UlEQVQ4jX2TsW/aQBTGfxB7qJBiprYSd8ZEqmjE0IykC0ipVKlT/wOjRGLuyFKJLnSqS5amo+eygLIUJjME1iJFERuWRfZgZnQdwK5jhX7TvXfv+757p/cySimSME3xCWgAb3iMGdANgqWbTGYiAdMUJ0AfKPJ/zICPQbD0Y4Ed2QOMdLUQkjBcEYZhMr0CToJg6WdNU+R3zkaa6Djf6XS+cnt7R7v9BfFM8Pm4za7WBdB2/RbT5MlkCoDneQCcn1/w/u4DF78bUVnNNEXjwDAOfwIvkwKVSoWbmwnz+ZxqtcpgMEDXdY5qR1xd/0i2kzkwjMOrf71uL05P32LbNvl8nvF4TKvVolQq8eLVc4rFIsPhMBJ4rUWOZ2fvGI1GNJtNNE2PX1Mul+l0OuRyOSzLQte1x78sZUFJWVCXl10VwbZttVgs4jh5VkqpiCNlQWUjoc1mE4u6rovv+/T7fQAsy2IPVhrbwUhPHfV6/UnG/f0yGXpZoAvQ6/VYr9f7nGI4jpMMuyilkLLwR8qCqlSOVa/3S4VhqNIIw1A5zrdk/55Sav8oCyGRUsRW0+k06TwD6kGwfEgvk/vUf6QwZrtMD5DYxgimKRpsx7uWIg6Afnqd/wLHH+fn7VRm6gAAAABJRU5ErkJggg==">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #000; touch-action: none; }
+        canvas { display: block; }
+        #game-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <!-- Static import map: must come before any module script. Third-party packages resolve
+         from a CDN at runtime; node_modules exists for tsc, not for the browser. -->
+    <script type="importmap">
+    {
+            "imports": {
+                    "three": "data:text/javascript,export*from'https://esm.sh/three@0.185.1/webgpu';export{UniformsUtils}from'https://esm.sh/three@0.185.1/src/renderers/shaders/UniformsUtils.js';export{ShaderLib}from'https://esm.sh/three@0.185.1/src/renderers/shaders/ShaderLib.js';export{UniformsLib}from'https://esm.sh/three@0.185.1/src/renderers/shaders/UniformsLib.js'",
+                    "three/webgpu": "https://esm.sh/three@0.185.1/webgpu",
+                    "three/tsl": "https://esm.sh/three@0.185.1/tsl",
+                    "three/addons/": "https://esm.sh/*three@0.185.1/addons/",
+                    "three/examples/jsm/": "https://esm.sh/*three@0.185.1/examples/jsm/",
+                    "three/": "https://esm.sh/three@0.185.1/",
+                    "@dimforge/rapier3d-compat": "https://esm.sh/@dimforge/rapier3d-compat@0.20.0",
+                    "@dimforge/rapier2d-compat": "https://esm.sh/@dimforge/rapier2d-compat@0.20.0",
+                    "i18next": "https://esm.sh/i18next@24.2.3",
+                    "i18next-browser-languagedetector": "https://esm.sh/i18next-browser-languagedetector@8.0.4",
+                    "@msgpack/msgpack": "https://esm.sh/@msgpack/msgpack@3.1.3",
+                    "fflate": "https://esm.sh/fflate@0.8.2",
+                    "engine/": "/dist/engine/engine/",
+                    "types/": "/dist/engine/types/",
+                    "bundle/": "/dist/engine/bundle/",
+                    "debug/": "/dist/engine/debug/",
+                    "editor/": "/dist/engine/editor/",
+                    "core/": "/dist/engine/core/",
+                    "genres/": "/dist/engine/genres/",
+                    "work/": "/dist/src/work/"
+            }
+    }
+    </script>
+
+    <script type="module" src="/dist/engine/engine/GameTemplate.js"></script>
+</body>
+</html>

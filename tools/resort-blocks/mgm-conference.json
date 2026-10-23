@@ -1,0 +1,58 @@
+{
+  "id": "mgm-conference",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/27897924",
+    "way/1425416645",
+    "way/133764577",
+    "way/435754002",
+    "way/401340340"
+  ],
+  "references": [
+    {
+      "url": "https://mgmgrand.mgmresorts.com/content/dam/MGM/mgm-grand/meetings/facilities-guide/mgm-grand-meetings-conference-center-facilities-guide.pdf",
+      "inspected": true,
+      "pages": [
+        2,
+        3
+      ],
+      "observations": "Three public levels, northern Grand/Premier ballrooms, southern Boulevard/Chairman rooms, pool-facing prefunction, separate Marquee Ballroom and courtyard. Local PDF pages visually inspected; plan north points left."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1045,-115.1650,650a,400d,35y,90h,65t,0r",
+      "inspected": true,
+      "observations": "West: curved central dark glazing, peach masonry piers/bands, raised tan main hall roof; white roof southern extension and Marquee hall."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1045,-115.1650,650a,450d,35y,270h,65t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09 to2024-03-05",
+      "observations": "East Koval service elevation largely solid pale masonry, mechanical perimeter outside raised main roof. Pools to west retained with existing owner."
+    }
+  ],
+  "dimensions": "Main peripheral20m/raised26.4m; expansion22m;Marquee15.5m;utility5.5m estimated from three-level plan and Earth elevations. Mapped footprints retained.",
+  "remaining": [
+    "Exact elevations and fine window pattern",
+    "Public onward connections and pool/landscape context: current pool court still visibly empty and needs separate reconstruction",
+    "Fine service docks and roof equipment layout",
+    "Marquee north frontage ornament more complex in reference"
+  ],
+  "geometry": {
+    "triangles": 20782,
+    "batches": 9,
+    "optimizedMiB": 0.46
+  },
+  "viewsReviewed": [
+    "build/city-exteriors/mgm-conference-final/conference-west.png",
+    "build/city-exteriors/mgm-conference-final/conference-east.png",
+    "build/city-exteriors/mgm-conference-final/conference-entry.png",
+    "build/city-exteriors/mgm-conference-final/marquee.png"
+  ],
+  "tests": "107 roof samples plus raised hall and entrance apron support pass; typecheck pass;1517 city collision cells valid; WebGPU verification PASS58fps startup3011bodies (not site benchmark)",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/mgmConference-exterior.glb": "b1a6a841495b4bcc6846dbcd6362e17b2d693344e6b5ec093252c15c5d47f271"
+    }
+  },
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-mgm-conference.log"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "wells-fargo-tower",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1190,-115.1565,660a,230d,35y,40h,65t,0r",
+      "review": "Both opposing aerials visually inspected. Stone window bays, folded full-height central glass, clipped corners, stepped crown and pyramidal metal roof. Image date not displayed."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1190,-115.1565,660a,230d,35y,220h,65t,0r",
+      "review": "Both opposing aerials visually inspected. Stone window bays, folded full-height central glass, clipped corners, stepped crown and pyramidal metal roof. Image date not displayed."
+    },
+    {
+      "url": "https://crescent.com/news/wells-fargo-renews-lease-hughes-center/",
+      "date": "2010-06-16",
+      "review": "Property owner identifies18stories at3800 Howard Hughes. Does not establish current branding or exact height."
+    }
+  ],
+  "dimensions": "Mapped56m facade; roofpeak60m estimated; floor bay and crown dimensions approximated from Earth.",
+  "remaining": [
+    "Public lobby and landscape connections",
+    "Precise crown and facade proportions",
+    "Route performance"
+  ],
+  "baseline": [
+    "build/city-exteriors/wells-before/wells-front.png",
+    "build/city-exteriors/wells-before/wells-back.png",
+    "build/city-exteriors/wells-before/wells-entry.png"
+  ],
+  "baselineReview": "All3 inspected: blank octagonal shell, no crown or glazing.",
+  "implementation": {
+    "ids": [
+      "way/156624462"
+    ],
+    "triangles": 37314,
+    "batches": 10,
+    "tests": "16 ledge and sloped roof support samples pass."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/wells-after/wells-front.png",
+      "build/city-exteriors/wells-after/wells-back.png",
+      "build/city-exteriors/wells-after/wells-entry.png"
+    ],
+    "review": "All3 inspected: folded glass center strips and stone bays replace blank walls; roof silhouette and ground glazing present. Crown is still simplified relative to reference, signage too small at skyline distance; planting, podium approach and public entrance routes missing."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/wells_fargo.py": "e71d6006a28e94542b69be20e0c31cc654757fbcafbb10186d24db9d3b5e2000",
+      "build/optimized/build/strip-landmarks/wellsFargoTower-exterior.glb": "20c482bdc0308751398ea4e9d604976cd443df988b5a2cf4d83ee3c43b26365b"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed58fps spawn3011bodies; not route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-wells.log"
+  }
+}

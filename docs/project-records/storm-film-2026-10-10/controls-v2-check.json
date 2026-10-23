@@ -1,0 +1,81 @@
+{
+  "before": {
+    "environment": "12e1ee53-20b8-4f90-86dd-5fb2760ac611",
+    "exposure": 0.9
+  },
+  "playing": {
+    "state": {
+      "active": true,
+      "time": 1.8664999999999998,
+      "pose": {
+        "x": 409.389404296875,
+        "y": 0.22611788511276243,
+        "z": 879.0355834960938,
+        "fx": -0.9999847546630024,
+        "fy": 0.014439911254499616,
+        "fz": 0.005521815061591078,
+        "speed": 18.228579930200503
+      },
+      "physics": {
+        "dynamic": true,
+        "roll": 0.000030275841192218252,
+        "pitch": -0.014440378799105355,
+        "sprungRoll": 0.0006655795760691766,
+        "sprungPitch": -0.07650721700441773,
+        "contacts": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "laneError": 0.3584928816440514,
+        "progress": 11.25230310009511,
+        "targetSpeed": 32,
+        "slip": 0.0003935061840645735,
+        "controls": {
+          "forward": false,
+          "backward": false,
+          "left": false,
+          "right": false,
+          "brake": false,
+          "steer": 0.0015816192156833347,
+          "throttle": 1,
+          "brakeAmount": 0
+        }
+      },
+      "impacts": 0,
+      "impactTimes": [],
+      "ragdolls": 0,
+      "peakRagdolls": 0,
+      "preset": {
+        "daylight": "day",
+        "weather": "clear",
+        "rain": 0,
+        "wetness": 0,
+        "neon": 4,
+        "population": 0,
+        "seed": 1010
+      }
+    },
+    "mass": 1350,
+    "saved": {
+      "daylight": "day",
+      "weather": "clear",
+      "rain": 0,
+      "wetness": 0,
+      "neon": 4,
+      "population": 0,
+      "seed": 1010
+    }
+  },
+  "after": {
+    "environment": "12e1ee53-20b8-4f90-86dd-5fb2760ac611",
+    "exposure": 0.9,
+    "active": false,
+    "car": false,
+    "frontage": false,
+    "vehicle": false,
+    "people": 0
+  },
+  "errors": 0
+}

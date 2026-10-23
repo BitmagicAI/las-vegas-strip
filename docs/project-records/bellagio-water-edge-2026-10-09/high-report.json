@@ -1,0 +1,37 @@
+{
+ "results": [
+  {
+   "mode": "game",
+   "moving": false,
+   "frames": 150,
+   "reflections": 0,
+   "seconds": 2.499899999856936,
+   "medianMs": 16.600000143051147,
+   "p95Ms": 17.59999990463257,
+   "maxMs": 18.199999809265137
+  },
+  {
+   "mode": "editor",
+   "moving": false,
+   "frames": 150,
+   "reflections": 0,
+   "seconds": 2.4999999999999893,
+   "medianMs": 16.699999809265137,
+   "p95Ms": 17.5,
+   "maxMs": 18.299999952316284
+  },
+  {
+   "mode": "editor",
+   "moving": true,
+   "frames": 150,
+   "reflections": 0,
+   "seconds": 2.500099999904762,
+   "medianMs": 16.700000047683716,
+   "p95Ms": 17.5,
+   "maxMs": 18.299999952316284
+  }
+ ],
+ "waterMaterials": 22,
+ "mirrorSurfaces": 0,
+ "installedWaterTime": 42.068133333286
+}

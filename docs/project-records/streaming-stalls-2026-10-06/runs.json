@@ -1,0 +1,859 @@
+[
+ {
+  "run": "baseline-2laps",
+  "what": "Before any change, 960x540, two passes",
+  "source": "build/probe/streaming/baseline-2laps/report.json",
+  "url": "http://localhost:3090/?probe",
+  "speed": 20,
+  "laps": 2,
+  "route": {
+   "points": 43,
+   "metres": 1480,
+   "fromZ": -240,
+   "toZ": 1240,
+   "reverse": false
+  },
+  "driveSeconds": 174,
+  "frames": 9150,
+  "meanFrameMs": 19,
+  "maxGapMs": 8416,
+  "gapsOver100": 14,
+  "gapsOver250": 11,
+  "gapsOver500": 7,
+  "gapsOver1000": 6,
+  "stalledSecondsOver250": 19.9,
+  "uncoveredLongGaps": 6,
+  "coveredLongGaps": 7,
+  "bootJobs": 8,
+  "driveJobs": 19,
+  "driveJobsHeldMs": 12426,
+  "perLap": [
+   {
+    "lap": 0,
+    "over100": 7,
+    "over250": 5,
+    "over500": 2,
+    "over1000": 2,
+    "stalledSecondsOver250": 4.2,
+    "maxGap": 1683
+   },
+   {
+    "lap": 1,
+    "over100": 7,
+    "over250": 6,
+    "over500": 5,
+    "over1000": 4,
+    "stalledSecondsOver250": 15.7,
+    "maxGap": 8416
+   }
+  ],
+  "jobsDuringDrive": {
+   "total": 19,
+   "background": 0,
+   "held": 19,
+   "heldMsTotal": 12426
+  },
+  "gapsOver250ms": [
+   {
+    "lap": 0,
+    "gapMs": 483,
+    "z": -212,
+    "loadingJob": null,
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 1683,
+    "z": 74,
+    "loadingJob": "landmark:vanderpump",
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 333,
+    "z": 142,
+    "loadingJob": null,
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 1283,
+    "z": 332,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 433,
+    "z": 332,
+    "loadingJob": null,
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 3583,
+    "z": 445,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 8416,
+    "z": 445,
+    "loadingJob": null,
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 583,
+    "z": 443,
+    "loadingJob": null,
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 1333,
+    "z": 133,
+    "loadingJob": "landmark:vanderpump",
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 300,
+    "z": 63,
+    "loadingJob": null,
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 1500,
+    "z": -223,
+    "loadingJob": "landmark:linq",
+    "shaderBuilds": null,
+    "shaderBuildMs": null,
+    "lightSetChangedNearby": false
+   }
+  ]
+ },
+ {
+  "run": "baseline-640-2laps",
+  "what": "Before any change, 640x360, two passes (light-set tracking on)",
+  "source": "build/probe/streaming/lights2-2laps/report.json",
+  "url": "http://localhost:3090/?probe",
+  "speed": 20,
+  "laps": 2,
+  "route": {
+   "points": 43,
+   "metres": 1480,
+   "fromZ": -240,
+   "toZ": 1240,
+   "reverse": false
+  },
+  "driveSeconds": 169,
+  "frames": 9214,
+  "meanFrameMs": 18.3,
+  "maxGapMs": 2917,
+  "gapsOver100": 19,
+  "gapsOver250": 12,
+  "gapsOver500": 6,
+  "gapsOver1000": 6,
+  "stalledSecondsOver250": 12.5,
+  "uncoveredLongGaps": 6,
+  "coveredLongGaps": 9,
+  "bootJobs": 10,
+  "driveJobs": 36,
+  "driveJobsHeldMs": 14054,
+  "perLap": [
+   {
+    "lap": 0,
+    "over100": 9,
+    "over250": 5,
+    "over500": 2,
+    "over1000": 2,
+    "stalledSecondsOver250": 4.1,
+    "maxGap": 1600
+   },
+   {
+    "lap": 1,
+    "over100": 10,
+    "over250": 7,
+    "over500": 4,
+    "over1000": 4,
+    "stalledSecondsOver250": 8.4,
+    "maxGap": 2917
+   }
+  ],
+  "jobsDuringDrive": {
+   "total": 36,
+   "background": 0,
+   "held": 36,
+   "heldMsTotal": 14054
+  },
+  "machine": {
+   "loadavgMin": 7.7,
+   "loadavgMax": 9.12,
+   "cpus": 18,
+   "heartbeatStallsOver40ms": 0,
+   "heartbeatWorstMs": 0
+  },
+  "visibleLightSetChanges": 10,
+  "gapsOver250ms": [
+   {
+    "lap": 0,
+    "gapMs": 467,
+    "z": -212,
+    "loadingJob": null,
+    "shaderBuilds": 21,
+    "shaderBuildMs": 277,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 0,
+    "gapMs": 1600,
+    "z": 68,
+    "loadingJob": "landmark:vanderpump",
+    "shaderBuilds": 45,
+    "shaderBuildMs": 1005,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 0,
+    "gapMs": 317,
+    "z": 141,
+    "loadingJob": null,
+    "shaderBuilds": 15,
+    "shaderBuildMs": 231,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 0,
+    "gapMs": 1300,
+    "z": 329,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 54,
+    "shaderBuildMs": 1109,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 0,
+    "gapMs": 383,
+    "z": 329,
+    "loadingJob": null,
+    "shaderBuilds": 26,
+    "shaderBuildMs": 281,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 1,
+    "gapMs": 2917,
+    "z": 449,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 86,
+    "shaderBuildMs": 1902,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 1,
+    "gapMs": 317,
+    "z": 449,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 1,
+    "shaderBuildMs": 6,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 1,
+    "gapMs": 1667,
+    "z": 448,
+    "loadingJob": null,
+    "shaderBuilds": 59,
+    "shaderBuildMs": 1082,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 1,
+    "gapMs": 300,
+    "z": 446,
+    "loadingJob": null,
+    "shaderBuilds": 0,
+    "shaderBuildMs": 0,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 1367,
+    "z": 133,
+    "loadingJob": "landmark:vanderpump",
+    "shaderBuilds": 44,
+    "shaderBuildMs": 988,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 1,
+    "gapMs": 333,
+    "z": 63,
+    "loadingJob": null,
+    "shaderBuilds": 15,
+    "shaderBuildMs": 244,
+    "lightSetChangedNearby": true
+   },
+   {
+    "lap": 1,
+    "gapMs": 1533,
+    "z": -218,
+    "loadingJob": "landmark:linq",
+    "shaderBuilds": 43,
+    "shaderBuildMs": 1054,
+    "lightSetChangedNearby": true
+   }
+  ]
+ },
+ {
+  "run": "baseline-loaded-2laps",
+  "what": "Before any change, 960x540, machine busy (load average 16 to 22)",
+  "source": "build/probe/streaming/control-2laps/report.json",
+  "url": "http://localhost:3090/?probe",
+  "speed": 20,
+  "laps": 2,
+  "route": {
+   "points": 43,
+   "metres": 1480,
+   "fromZ": -240,
+   "toZ": 1240,
+   "reverse": false
+  },
+  "driveSeconds": 184,
+  "frames": 8335,
+  "meanFrameMs": 22,
+  "maxGapMs": 5117,
+  "gapsOver100": 42,
+  "gapsOver250": 15,
+  "gapsOver500": 10,
+  "gapsOver1000": 6,
+  "stalledSecondsOver250": 22,
+  "uncoveredLongGaps": 10,
+  "coveredLongGaps": 14,
+  "bootJobs": 10,
+  "driveJobs": 36,
+  "driveJobsHeldMs": 25250,
+  "perLap": [
+   {
+    "lap": 0,
+    "over100": 20,
+    "over250": 7,
+    "over500": 4,
+    "over1000": 2,
+    "stalledSecondsOver250": 7,
+    "maxGap": 2500
+   },
+   {
+    "lap": 1,
+    "over100": 22,
+    "over250": 8,
+    "over500": 6,
+    "over1000": 4,
+    "stalledSecondsOver250": 15,
+    "maxGap": 5117
+   }
+  ],
+  "jobsDuringDrive": {
+   "total": 36,
+   "background": 0,
+   "held": 36,
+   "heldMsTotal": 25250
+  },
+  "machine": {
+   "loadavgMin": 15.92,
+   "loadavgMax": 21.95,
+   "cpus": 18,
+   "heartbeatStallsOver40ms": 1,
+   "heartbeatWorstMs": 52
+  },
+  "visibleLightSetChanges": null,
+  "gapsOver250ms": [
+   {
+    "lap": 0,
+    "gapMs": 800,
+    "z": -211,
+    "loadingJob": null,
+    "shaderBuilds": 21,
+    "shaderBuildMs": 539,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 2500,
+    "z": 73,
+    "loadingJob": "landmark:vanderpump",
+    "shaderBuilds": 44,
+    "shaderBuildMs": 1653,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 283,
+    "z": 139,
+    "loadingJob": "concourse:bellagio-via",
+    "shaderBuilds": 2,
+    "shaderBuildMs": 18,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 450,
+    "z": 141,
+    "loadingJob": null,
+    "shaderBuilds": 15,
+    "shaderBuildMs": 318,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 1967,
+    "z": 332,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 53,
+    "shaderBuildMs": 1673,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 700,
+    "z": 333,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 26,
+    "shaderBuildMs": 556,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 0,
+    "gapMs": 300,
+    "z": 423,
+    "loadingJob": null,
+    "shaderBuilds": 1,
+    "shaderBuildMs": 44,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 5117,
+    "z": 444,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 85,
+    "shaderBuildMs": 3455,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 417,
+    "z": 444,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 2,
+    "shaderBuildMs": 9,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 2883,
+    "z": 444,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 59,
+    "shaderBuildMs": 1940,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 683,
+    "z": 442,
+    "loadingJob": null,
+    "shaderBuilds": 0,
+    "shaderBuildMs": 0,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 350,
+    "z": 274,
+    "loadingJob": "concourse:bellagio-via",
+    "shaderBuilds": 2,
+    "shaderBuildMs": 21,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 2417,
+    "z": 134,
+    "loadingJob": "landmark:vanderpump",
+    "shaderBuilds": 44,
+    "shaderBuildMs": 1819,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 550,
+    "z": 63,
+    "loadingJob": null,
+    "shaderBuilds": 15,
+    "shaderBuildMs": 384,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 2617,
+    "z": -223,
+    "loadingJob": "landmark:linq",
+    "shaderBuilds": 42,
+    "shaderBuildMs": 1946,
+    "lightSetChangedNearby": false
+   }
+  ]
+ },
+ {
+  "run": "fix1-lights-2laps",
+  "what": "Shared constant light pool only, 640x360 (this run still had three extra pools)",
+  "source": "build/probe/streaming/fix1-2laps/report.json",
+  "url": "http://localhost:3090/?probe",
+  "speed": 20,
+  "laps": 2,
+  "route": {
+   "points": 43,
+   "metres": 1480,
+   "fromZ": -240,
+   "toZ": 1240,
+   "reverse": false
+  },
+  "driveSeconds": 164,
+  "frames": 7424,
+  "meanFrameMs": 22.1,
+  "maxGapMs": 567,
+  "gapsOver100": 36,
+  "gapsOver250": 6,
+  "gapsOver500": 1,
+  "gapsOver1000": 0,
+  "stalledSecondsOver250": 2.2,
+  "uncoveredLongGaps": 11,
+  "coveredLongGaps": 15,
+  "bootJobs": 10,
+  "driveJobs": 36,
+  "driveJobsHeldMs": 11465,
+  "perLap": [
+   {
+    "lap": 0,
+    "over100": 9,
+    "over250": 1,
+    "over500": 0,
+    "over1000": 0,
+    "stalledSecondsOver250": 0.3,
+    "maxGap": 267
+   },
+   {
+    "lap": 1,
+    "over100": 27,
+    "over250": 5,
+    "over500": 1,
+    "over1000": 0,
+    "stalledSecondsOver250": 2,
+    "maxGap": 567
+   }
+  ],
+  "jobsDuringDrive": {
+   "total": 36,
+   "background": 0,
+   "held": 36,
+   "heldMsTotal": 11465
+  },
+  "machine": {
+   "loadavgMin": 8.03,
+   "loadavgMax": 15.02,
+   "cpus": 18,
+   "heartbeatStallsOver40ms": 0,
+   "heartbeatWorstMs": 0
+  },
+  "visibleLightSetChanges": 0,
+  "gapsOver250ms": [
+   {
+    "lap": 0,
+    "gapMs": 267,
+    "z": 140,
+    "loadingJob": "concourse:bellagio-via",
+    "shaderBuilds": 2,
+    "shaderBuildMs": 11,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 267,
+    "z": 448,
+    "loadingJob": "landmark:parisBlock",
+    "shaderBuilds": 1,
+    "shaderBuildMs": 91,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 567,
+    "z": 279,
+    "loadingJob": "concourse:bellagio-via",
+    "shaderBuilds": 2,
+    "shaderBuildMs": 23,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 383,
+    "z": 132,
+    "loadingJob": "landmark:vanderpump",
+    "shaderBuilds": 0,
+    "shaderBuildMs": 0,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 467,
+    "z": 132,
+    "loadingJob": "landmark:vanderpump",
+    "shaderBuilds": 3,
+    "shaderBuildMs": 285,
+    "lightSetChangedNearby": false
+   },
+   {
+    "lap": 1,
+    "gapMs": 283,
+    "z": -220,
+    "loadingJob": "landmark:linq",
+    "shaderBuilds": 0,
+    "shaderBuildMs": 0,
+    "lightSetChangedNearby": false
+   }
+  ]
+ },
+ {
+  "run": "fix2-lights-gate-2laps",
+  "what": "Constant lights + passing gate, 640x360",
+  "source": "build/probe/streaming/fix2-2laps/report.json",
+  "url": "http://localhost:3090/?probe",
+  "speed": 20,
+  "laps": 2,
+  "route": {
+   "points": 43,
+   "metres": 1480,
+   "fromZ": -240,
+   "toZ": 1240,
+   "reverse": false
+  },
+  "driveSeconds": 154,
+  "frames": 9057,
+  "meanFrameMs": 17,
+  "maxGapMs": 383,
+  "gapsOver100": 1,
+  "gapsOver250": 1,
+  "gapsOver500": 0,
+  "gapsOver1000": 0,
+  "stalledSecondsOver250": 0.4,
+  "uncoveredLongGaps": 0,
+  "coveredLongGaps": 1,
+  "bootJobs": 10,
+  "driveJobs": 29,
+  "driveJobsHeldMs": 4156,
+  "perLap": [
+   {
+    "lap": 0,
+    "over100": 0,
+    "over250": 0,
+    "over500": 0,
+    "over1000": 0,
+    "stalledSecondsOver250": 0,
+    "maxGap": 0
+   },
+   {
+    "lap": 1,
+    "over100": 1,
+    "over250": 1,
+    "over500": 0,
+    "over1000": 0,
+    "stalledSecondsOver250": 0.4,
+    "maxGap": 383
+   }
+  ],
+  "jobsDuringDrive": {
+   "total": 29,
+   "background": 0,
+   "held": 29,
+   "heldMsTotal": 4156
+  },
+  "machine": {
+   "loadavgMin": 7.25,
+   "loadavgMax": 9.71,
+   "cpus": 18,
+   "heartbeatStallsOver40ms": 0,
+   "heartbeatWorstMs": 0
+  },
+  "visibleLightSetChanges": 0,
+  "gapsOver250ms": [
+   {
+    "lap": 1,
+    "gapMs": 383,
+    "z": -238,
+    "loadingJob": "landmark:linq",
+    "shaderBuilds": 4,
+    "shaderBuildMs": 155,
+    "lightSetChangedNearby": false
+   }
+  ]
+ },
+ {
+  "run": "fix3-all-2laps",
+  "what": "Constant lights + passing gate + background collision jobs, 640x360",
+  "source": "build/probe/streaming/fix3-2laps/report.json",
+  "url": "http://localhost:3090/?probe",
+  "speed": 20,
+  "laps": 2,
+  "route": {
+   "points": 43,
+   "metres": 1480,
+   "fromZ": -240,
+   "toZ": 1240,
+   "reverse": false
+  },
+  "driveSeconds": 151,
+  "frames": 8728,
+  "meanFrameMs": 17.3,
+  "maxGapMs": 400,
+  "gapsOver100": 1,
+  "gapsOver250": 1,
+  "gapsOver500": 0,
+  "gapsOver1000": 0,
+  "stalledSecondsOver250": 0.4,
+  "uncoveredLongGaps": 0,
+  "coveredLongGaps": 1,
+  "bootJobs": 10,
+  "driveJobs": 29,
+  "driveJobsHeldMs": 728,
+  "perLap": [
+   {
+    "lap": 0,
+    "over100": 0,
+    "over250": 0,
+    "over500": 0,
+    "over1000": 0,
+    "stalledSecondsOver250": 0,
+    "maxGap": 67
+   },
+   {
+    "lap": 1,
+    "over100": 1,
+    "over250": 1,
+    "over500": 0,
+    "over1000": 0,
+    "stalledSecondsOver250": 0.4,
+    "maxGap": 400
+   }
+  ],
+  "jobsDuringDrive": {
+   "total": 29,
+   "background": 28,
+   "held": 1,
+   "heldMsTotal": 728
+  },
+  "machine": {
+   "loadavgMin": 9.48,
+   "loadavgMax": 12.93,
+   "cpus": 18,
+   "heartbeatStallsOver40ms": 0,
+   "heartbeatWorstMs": 0
+  },
+  "visibleLightSetChanges": 0,
+  "gapsOver250ms": [
+   {
+    "lap": 1,
+    "gapMs": 400,
+    "z": -238,
+    "loadingJob": "landmark:linq",
+    "shaderBuilds": 4,
+    "shaderBuildMs": 152,
+    "lightSetChangedNearby": false
+   }
+  ]
+ },
+ {
+  "run": "fix3-jeep-1lap",
+  "what": "Same code, the real jeep driven by key presses at about 20 m/s, 640x360",
+  "source": "build/probe/streaming/jeep-1lap/report.json",
+  "url": "http://localhost:3090/?probe",
+  "speed": 20,
+  "laps": 1,
+  "jeepMode": true,
+  "driveError": null,
+  "jeepSpeed": {
+   "max": 21.1,
+   "mean": 20
+  },
+  "route": {
+   "points": 43,
+   "metres": 1480,
+   "fromZ": -240,
+   "toZ": 1240,
+   "reverse": false
+  },
+  "driveSeconds": 76,
+  "frames": 5027,
+  "meanFrameMs": 16.8,
+  "maxGapMs": 83,
+  "gapsOver100": 0,
+  "gapsOver250": 0,
+  "gapsOver500": 0,
+  "gapsOver1000": 0,
+  "stalledSecondsOver250": 0,
+  "uncoveredLongGaps": 0,
+  "coveredLongGaps": 0,
+  "bootJobs": 10,
+  "driveJobs": 15,
+  "driveJobsHeldMs": 0,
+  "perLap": [
+   {
+    "lap": 0,
+    "over100": 0,
+    "over250": 0,
+    "over500": 0,
+    "over1000": 0,
+    "stalledSecondsOver250": 0,
+    "maxGap": 83
+   }
+  ],
+  "jobsDuringDrive": {
+   "total": 15,
+   "background": 15,
+   "held": 0,
+   "heldMsTotal": 0
+  },
+  "machine": {
+   "loadavgMin": 9.72,
+   "loadavgMax": 10.81,
+   "cpus": 18,
+   "heartbeatStallsOver40ms": 0,
+   "heartbeatWorstMs": 0
+  },
+  "visibleLightSetChanges": 0,
+  "gapsOver250ms": []
+ }
+]

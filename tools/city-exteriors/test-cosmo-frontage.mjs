@@ -1,0 +1,7 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import R from '@dimforge/rapier3d-compat';
+const root='build/resort-blocks/cosmo/',before='.bitmagic/city-exterior-backups/cosmo-frontage-2026-10-13/';const read=p=>JSON.parse(fs.readFileSync(p));
+for(const key of ['cosmoL4','cosmoL14']){assert.deepEqual(read(root+key+'-exterior-collision.json'),read(before+key+'-interior-collision.json'),'Outdoor collision must retain exact positions and topology');assert.equal(read(root+key+'-interior-collision.json').indices.length,0);}
+assert.deepEqual(read(root+'cosmo-exterior-collision.json'),read(before+'cosmo-exterior-collision.json'));
+await R.init();const world=new R.World({x:0,y:-9.81,z:0});for(const m of read(root+'cosmo-exterior.json').meshes.filter(m=>m.source==='boulevard-folded-facade'))world.createCollider(R.ColliderDesc.trimesh(new Float32Array(m.vertices.flat()),new Uint32Array(m.faces.flat())));world.step();
+let samples=0;const blocked=[];for(const [z,y,w,h] of [[703,.24,9,4.5],[639,.24,7,4.5],[719,5.84,8,4.6]])for(let dx=-w/2+.4;dx<=w/2-.4;dx+=.4)for(let dy=.15;dy<h-.1;dy+=.4){samples++;const hit=world.castRay(new R.Ray({x:-32,y:y+dy,z:z+dx},{x:-1,y:0,z:0}),8,true);if(hit)blocked.push({z:z+dx,y:y+dy});}
+world.free();const report={samples,blocked,mainCollisionUnchanged:true,outdoorCollisionTransferredExactly:true};fs.writeFileSync('build/city-exteriors/cosmo-frontage-test.json',JSON.stringify(report,null,2));console.log(report);assert.equal(blocked.length,0);

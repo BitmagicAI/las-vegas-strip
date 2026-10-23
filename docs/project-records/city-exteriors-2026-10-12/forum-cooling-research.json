@@ -1,0 +1,11 @@
+{
+  "mappedIds": [
+    "way/1380575885"
+  ],
+  "identification": "Twin fan cooling equipment in northern Forum Shops roof well, not Mirage building",
+  "source": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11971,-115.17479&zoom=21&basemap=satellite",
+  "observed": "Two square fan cells aligned north/south with large six-blade fans; grey metal housings, connecting pipework, perimeter service platform. Exact building:part footprint is a hole in parent way/34068416.",
+  "elevationM": 16.8,
+  "uncertainty": "Inherited parent model roof datum, not survey measurement; equipment height estimated3m.",
+  "elevationReview": "First game pass revealed unsupported north/west platform edges. Footprint shares only south/east edges with parent. Aerial shows plant on dark service platform adjacent to mall roof. Added north/west support walls only. Platform16.8m remains model-derived estimate, not surveyed."
+}

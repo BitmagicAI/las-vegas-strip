@@ -1,0 +1,116 @@
+{
+ "format": "bitmagic-mesh-level",
+ "version": 1,
+ "units": "meters",
+ "colliders": [
+  {
+   "name": "0200 podium shaft cladding",
+   "shape": "box",
+   "position": [
+    -3.83,
+    10.8,
+    0.0
+   ],
+   "size": [
+    0.24,
+    21.6,
+    10.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0201 podium shaft cladding",
+   "shape": "box",
+   "position": [
+    3.83,
+    10.8,
+    0.0
+   ],
+   "size": [
+    0.24,
+    21.6,
+    10.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0202 podium shaft rear",
+   "shape": "box",
+   "position": [
+    0.0,
+    10.8,
+    5.23
+   ],
+   "size": [
+    7.42,
+    21.6,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0203 podium entry pier",
+   "shape": "box",
+   "position": [
+    -2.305,
+    1.325,
+    -5.23
+   ],
+   "size": [
+    2.79,
+    2.65,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0204 podium entry pier",
+   "shape": "box",
+   "position": [
+    2.305,
+    1.325,
+    -5.23
+   ],
+   "size": [
+    2.79,
+    2.65,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0205 podium entry headwall",
+   "shape": "box",
+   "position": [
+    0.0,
+    12.125,
+    -5.23
+   ],
+   "size": [
+    7.42,
+    18.950000000000003,
+    0.24
+   ],
+   "yaw": 0.0
+  }
+ ],
+ "volumes": [],
+ "landmarks": [
+  {
+   "name": "spawn",
+   "position": [
+    0.0,
+    0.025,
+    -6.0
+   ],
+   "yaw": 0.0,
+   "tags": []
+  }
+ ],
+ "lights": [],
+ "extras": {
+  "links": [],
+  "stairs": [],
+  "doors": []
+ }
+}

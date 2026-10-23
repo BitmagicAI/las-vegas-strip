@@ -1,0 +1,76 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "es2020",
+    "lib": [
+      "es2020",
+      "dom",
+      "dom.iterable"
+    ],
+    "rootDir": ".",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "engine/*": [
+        "engine/engine/*"
+      ],
+      "types/*": [
+        "engine/types/*"
+      ],
+      "bundle/*": [
+        "engine/bundle/*"
+      ],
+      "debug/*": [
+        "engine/debug/*"
+      ],
+      "editor/*": [
+        "engine/editor/*"
+      ],
+      "core/*": [
+        "engine/core/*"
+      ],
+      "genres/*": [
+        "engine/genres/*"
+      ],
+      "work/*": [
+        "src/work/*"
+      ]
+    },
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": false,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "types": [
+      "@webgpu/types"
+    ],
+    "typeRoots": [
+      "engine/types",
+      "node_modules/@types",
+      "node_modules/ammojs-typed/ammo/ambient"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "engine/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "engine/**/*.test.ts",
+    "engine/**/__tests__/**/*",
+    "src/**/*.test.ts",
+    "src/**/__tests__/**/*",
+    "engine/bundle/**/*",
+    "engine/agent-docs/**/*"
+  ]
+}

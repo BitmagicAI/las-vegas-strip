@@ -1,0 +1,47 @@
+{
+  "id": "elara",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1087,-115.1685,850a,500d,35y,0h,60t,0r",
+      "imagery": "2022-11-09",
+      "establishes": "Dark blue curved glass slab, fine horizontal bands, narrow red side accent and roof service blocks; visually inspected."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1087,-115.1685,650a,320d,35y,0h,0t,0r",
+      "imagery": "2022-11-09",
+      "establishes": "Overhead: thin tower, separate low curved white canopy, pool southwest and vehicle court southeast; visually inspected."
+    }
+  ],
+  "remaining": [
+    "Exact glass color and reflected surroundings need daylight comparison.",
+    "Pool landscaping, sign pylon and canopy details incomplete.",
+    "Full sidewalk/interior circulation remains unverified."
+  ],
+  "notes": [
+    "Mapped relation/5342155 includes south-east low canopy in the 183m footprint. Must separate canopy from tower before detailing.",
+    "Preserve existing guest core and Planet Hollywood/Miracle Mile ownership.",
+    "Elara baseline probe in flight."
+  ],
+  "geometry": {
+    "triangles": 10319,
+    "batches": 16,
+    "optimizedMiB": 0.34
+  },
+  "estimates": {
+    "towerM": 183,
+    "canopyM": 8.5,
+    "note": "Mapped height retained. Tower/canopy split at z814 and pool outline inferred from overhead photo, not survey-accurate."
+  },
+  "tests": {
+    "typecheck": "passed",
+    "collision": "36 approach clearance samples pass against new exterior and retained highrise collision",
+    "visual": "All three initial and final installed views inspected. Oversized east canopy tower removed; pool appears in southwest terrace. Sign readability, facade shading, furnishings and planting still incomplete.",
+    "webgpu": "Passed after Mirage+Elara; 4.1s settle, 55 host fps at spawn, 3034 bodies. Not whole-city performance proof."
+  },
+  "evidence": [
+    "build/city-exteriors/elara-before",
+    "build/city-exteriors/elara-after",
+    "build/city-exteriors/elara-final"
+  ]
+}

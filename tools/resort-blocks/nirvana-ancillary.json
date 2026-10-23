@@ -1,0 +1,57 @@
+{
+  "id": "nirvana-ancillary",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Nirvana+Hotel+Las+Vegas",
+      "author": "Nirvana Hotel",
+      "date": "2025-09",
+      "observed": "Owner photo: two-story cream rear wing, dark steel balcony with thin vertical balusters, exterior straight stair, projecting white AC units, white doors and flower boxes."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0914118,-115.1722989,100m/data=!3m1!1e3",
+      "observed": "Satellite: existing main L-wing and two detached southern buildings; small circular garden west of rear block. Motel8 map pin is same historical property, not a separate hotel to duplicate."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Nirvana+Hotel+Las+Vegas",
+      "date": "2023-06",
+      "author": "Nirvana Hotel",
+      "observed": "Night courtyard photo facing west toward Mandalay: main single-story wing on north edge of parking. Corrected earlier north-facing room orientation to south."
+    }
+  ],
+  "dimensions": "Mapped footprint preserved. Rear eave6.3m and balcony3.25m, room bays3.9m estimated from photograph. Stair position within northern apron inferred, not surveyed.",
+  "remaining": [
+    "Height and exact stair position estimated",
+    "Garden planting and detailed surface weathering incomplete",
+    "No room interiors authored",
+    "Smaller southern wing height and exact balcony arrangement inferred",
+    "Roof material striping and offsite ground voids remain"
+  ],
+  "implemented": [
+    "Two southern wings with doors, glazing, AC units, galleries and exterior stair",
+    "Open entry awning replaces mapped roof block",
+    "Courtyard pavement, parking and small circular garden",
+    "Main Nirvana guest doors corrected to south-facing courtyard"
+  ],
+  "validation": {
+    "support": "214 support and headroom checks passed",
+    "walking": "6 legs in both directions passed including stair ascent/descent",
+    "visual": "Three installed views inspected: south courtyard, balcony and aerial",
+    "performance": "Fixed aerial960x540 ultra16.7ms p50/18.3ms p95;notroutebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/nirvana-ancillary-final/nirvana-south.png",
+    "build/city-exteriors/nirvana-ancillary-final/nirvana-balcony.png",
+    "build/city-exteriors/nirvana-ancillary-final/nirvana-site.png",
+    "build/city-exteriors/nirvana-ancillary-collision.json",
+    "build/city-exteriors/nirvana-ancillary-walk.json",
+    "build/city-exteriors/nirvana-ancillary-ownership-audit.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/nirvanaAncillary-exterior.glb": "b87c7758ce0de064faaccd5285070f119596c76838f20bc43cab2940cf8182d5",
+      "build/strip-landmarks/nirvanaHotel-exterior.glb": "f5a7ab01535c8c2c5a412c6b71305a9c0607f5cc4cc532a86c18501b8af58b0c"
+    }
+  },
+  "correction": "North pavement trimmed at2677.5 to share boundary with PsychicSessions. Main facades unchanged."
+}

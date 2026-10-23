@@ -1,0 +1,93 @@
+{
+  "id": "athletics-stadium",
+  "name": "Athletics stadium construction site",
+  "status": "refinement-deferred",
+  "scope": "Current October 2026 visible construction exterior on mapped former Tropicana site; no speculative completed roof or interior gameplay.",
+  "mappedIds": [
+    "way/1468590525"
+  ],
+  "research": "docs/project-records/city-exteriors-2026-10-14/athletics-stadium-research.json",
+  "components": [
+    {
+      "id": "site-boundary",
+      "status": "pending"
+    },
+    {
+      "id": "concrete-bowl",
+      "status": "pending"
+    },
+    {
+      "id": "exposed-steel-frame",
+      "status": "pending"
+    },
+    {
+      "id": "three-roof-arches",
+      "status": "pending"
+    },
+    {
+      "id": "temporary-shoring",
+      "status": "pending"
+    },
+    {
+      "id": "street-edge",
+      "status": "pending"
+    }
+  ],
+  "uncertainties": [
+    "Exact field datum and structural elevations",
+    "Construction-stage perimeter and access arrangement",
+    "Mapped footprint may represent final roof rather than current bowl"
+  ],
+  "gates": [],
+  "geometryPlan": {
+    "center": [
+      250.45,
+      0,
+      1875.52
+    ],
+    "orientation": "Bowl open toward northwest Strip; local +Z southeast",
+    "heightsM": {
+      "lowerBowl": [
+        1.2,
+        13.8
+      ],
+      "middleBowl": [
+        18,
+        27
+      ],
+      "upperBowl": [
+        31,
+        41
+      ],
+      "arches": [
+        71,
+        88.4,
+        79
+      ]
+    },
+    "estimates": "Only 88.4m maximum and approximately 213m second-arch span are source reported. Tier elevations, member sections, spacing, and rectangle parcel limits are photographic estimates.",
+    "ground": "Bare-soil parcel estimate x48..435,z1705..2120, subtracts current road/sidewalk masks",
+    "collision": "Ground and perimeter hoarding only; no per-member collider proliferation",
+    "sources": "Dated photographs and current owner construction camera, no downloaded texture reuse"
+  },
+  "baseline": "build/city-exteriors/athletics-before",
+  "tests": {
+    "geometry": "98,869 finite, nondegenerate, nonduplicate triangles; one collinear GIS clipping triangle removed",
+    "groundSupport": "72/72 Rapier ray samples",
+    "preservation": "8478 nonbuilding mesh groups identical to preserved baseline",
+    "runtimeReview": "All three installed screenshots inspected, 1280x720 ultra; p50 16.7/16.7/17.0ms, p95 17.4/17.6/19.6ms. Fixed views only."
+  },
+  "installedAsset": "build/strip-landmarks/athleticsStadium-exterior.glb",
+  "reviewEvidence": "build/city-exteriors/athletics-after",
+  "remaining": [
+    "Exact structural positions and concrete section remain photographic estimates",
+    "Construction cranes, equipment, service access and ground wear missing",
+    "Current construction layout is provisional, not completed 2028 stadium",
+    "Full perimeter walk and cold streaming benchmark not performed"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/athleticsStadium-exterior.glb": "f985d46a7856167bae8480c98af22d62d501175b1ac042a397f58f7567426a74"
+    }
+  }
+}

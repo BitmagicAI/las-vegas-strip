@@ -1,0 +1,106 @@
+{
+  "id": "luxor-obelisk",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/399368723"
+  ],
+  "sources": [
+    "docs/project-records/city-exteriors-2026-10-12/luxor-obelisk-research.json"
+  ],
+  "remaining": [
+    "Sculpted figures remain visibly simplified and rounded; require detailed anatomical relief refinement.",
+    "Incised glyphs are original decorative approximations, not historical transcription.",
+    "Published 140ft height used; exact base clearance and proportions are estimated.",
+    "Surrounding Luxor landscape, sphinx detail and raised walkways remain broader resort discrepancies.",
+    "Static 960x540 capture is not a 60fps driving benchmark."
+  ],
+  "triangles": 6940,
+  "batches": 7,
+  "optimizedMiB": 0.9,
+  "viewsInspected": [
+    "luxor-obelisk-north",
+    "luxor-obelisk-east",
+    "luxor-obelisk-base"
+  ],
+  "tests": [
+    "81 floor support samples passed",
+    "4 bidirectional walk reports passed through base and western path",
+    "8 old building triangles and corresponding colliders removed; other city geometry retained"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "luxor-obelisk-north",
+        "eye": [
+          -11,
+          20,
+          2248
+        ],
+        "target": [
+          -28.48,
+          22,
+          2283.84
+        ],
+        "p": [
+          -23,
+          1,
+          2274
+        ],
+        "p50": 20.600000023841858,
+        "p95": 25.200000047683716
+      },
+      {
+        "name": "luxor-obelisk-east",
+        "eye": [
+          11,
+          28,
+          2289
+        ],
+        "target": [
+          -28.48,
+          23,
+          2283.84
+        ],
+        "p": [
+          -18,
+          1,
+          2284
+        ],
+        "p50": 17.69999998807907,
+        "p95": 22.799999952316284
+      },
+      {
+        "name": "luxor-obelisk-base",
+        "eye": [
+          -25,
+          2,
+          2269
+        ],
+        "target": [
+          -28.48,
+          2.2,
+          2285
+        ],
+        "p": [
+          -28.48,
+          1,
+          2277
+        ],
+        "p50": 24.900000035762787,
+        "p95": 29.399999976158142
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 8,
+    "colliderTrianglesRemoved": 8,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in luxorObelisk mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/luxorObelisk-exterior.glb": "dd96b8649e3aa6fb385a2f235d77b034c0ea9234bfd380d5d35fd2569882b014",
+      "build/strip-landmarks/luxorObelisk-exterior-collision.json": "2c41751264041668f2480193464e5db87add2790916a97a642ec912de7a10a24"
+    }
+  }
+}

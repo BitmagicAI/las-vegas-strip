@@ -1,0 +1,6 @@
+// Controller settings match engine/engine/physics/PhysicsWorld.ts.
+// Match PhysicsBodyFactory: FIX_INTERNAL_EDGES (144) for trimeshes.
+import fs from 'node:fs';import R from '@dimforge/rapier3d-compat';
+const read=p=>JSON.parse(fs.readFileSync(p));await R.init();const world=new R.World({x:0,y:-9.81,z:0});
+const owners=new Map();for(const [ci,c]of [...read('build/geographic-strip/city-colliders.json'),...read('src/work/geographic/level.json').colliders,read('build/strip-landmarks/havenCourtyards-exterior-collision.json')].entries())if(c.vertices?.length&&c.indices?.length){const hit=world.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices),144));owners.set(hit.handle,c.name??`collision ${ci}`);}
+world.step();const points=read('build/city-exteriors/haven-courtyards-samples.json'),failures=[];for(const[x,y,z]of points){const h=world.castRay(new R.Ray({x,y,z},{x:0,y:-1,z:0}),1.5,true);if(!h)failures.push({x,z});}world.free();const report={samples:points.length,failures,passed:!failures.length};fs.writeFileSync('build/city-exteriors/haven-courtyards-support.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));if(failures.length)process.exitCode=1;

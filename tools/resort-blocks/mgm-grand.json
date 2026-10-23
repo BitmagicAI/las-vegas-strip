@@ -1,0 +1,100 @@
+{
+  "id": "mgm-grand",
+  "name": "MGM Grand",
+  "status": "in-progress",
+  "scope": "All exterior structures; preserve guest interiors, vehicle and roads.",
+  "references": [
+    "https://newsroom.mgmresorts.com/media-gallery?cat=2986#gallery_gallery_0:19944",
+    "https://mgmgrand.mgmresorts.com/content/dam/MGM/mgm-grand/property-maps/mgm-grand-property-map.pdf",
+    "build/highrises/references/MGM-Grand-0.jpg",
+    "build/highrises/references/MGM-Grand-1.jpg",
+    "build/highrises/references/MGM-Grand-2.jpg",
+    "https://earth.google.com/web/@36.10255,-115.16918,680a,900d,35y,0h,45t,0r",
+    "https://theshowcasemall.com/site-map",
+    "https://www.wwglass.com/project/showcase-mall-world-coca-cola/"
+  ],
+  "components": [
+    {
+      "id": "tower-spandrels",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "strip-casino-frontage",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "lion-court",
+      "status": "pending"
+    },
+    {
+      "id": "south-arrival",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "mansion",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "theatre",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "arena",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "garage",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "roof-plant",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "pool-gardens",
+      "status": "pending"
+    },
+    {
+      "id": "showcase-frontage",
+      "status": "implemented-review-pending"
+    }
+  ],
+  "uncertainties": [
+    "Decorative elevations estimated from photographs; Google Earth 2022\u20132024 imagery establishes the building arrangement.",
+    "MGM lion sculpture, exact Hakkasan entrance composition and pool garden detail remain unfinished.",
+    "Showcase bottle height references conflict (mall tenant text says 50 ft; other sources 100 ft). 30.48 m currently modeled, subject to matched-view review.",
+    "Retained mapped guest tower dimensions; not a surveyed architectural replica."
+  ],
+  "completionGates": [],
+  "evidence": [
+    "build/city-exteriors/mgm-final/mgm-aerial.png",
+    "build/city-exteriors/mgm-final/mgm-strip.png",
+    "build/city-exteriors/mgm-final/mgm-arrival.png",
+    "build/city-exteriors/mgm-preservation.json",
+    "build/city-exteriors/mgm-collision.json"
+  ],
+  "ownershipReview20261013": {
+    "scope": "Read-only installed review of mainpodium,theatre,Mansion/atrium,arrival; no geometry changed.",
+    "evidence": "build/city-exteriors/mgm-ownership",
+    "frameMs": {
+      "p50": [
+        16.7,
+        16.6,
+        16.7,
+        16.6
+      ],
+      "p95": [
+        17.6,
+        17.8,
+        17.8,
+        17.6
+      ]
+    },
+    "remaining": [
+      "Roof bitumen detail looks corrugated",
+      "Mansion garden lacks planting",
+      "Lion court and precise entrance compositions remain incomplete",
+      "Bright green lower tower strip at Mansion needs material/ownership investigation"
+    ]
+  }
+}

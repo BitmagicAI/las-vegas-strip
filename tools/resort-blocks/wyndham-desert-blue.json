@@ -1,0 +1,62 @@
+{
+  "id": "wyndham-desert-blue",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1223,-115.1837,650a,330d,35y,30h,65t,0r",
+      "review": "Front aerial inspected: concave tower facade, white window grid, blue-glass upper bands, pink lower floors, raised entrance canopy, southwest landscaped pools. Image date not shown."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1223,-115.1837,650a,300d,35y,210h,65t,0r",
+      "review": "Rear convex facade inspected: five pink lower bands, white middle grid, blue-glass crown, roof service screens."
+    },
+    {
+      "url": "https://clubwyndham.wyndhamdestinations.com/us/en/resorts/wyndham-hotels-resorts/united-states-of-america/nevada/las-vegas/margaritaville-vacation-club-by-wyndham-desert-blue",
+      "review": "Official page reports2024 exterior repainting; Earth image date unknown so exact current palette uncertain."
+    }
+  ],
+  "dimensions": "Mapped53m tower and4m minimum canopy elevation retained. Floor bands and2.4m rooftop screen estimated from reference.",
+  "remaining": [
+    "Pool garden and landscaping",
+    "Full entrance route",
+    "Exact facade colors after2024 repaint",
+    "Route performance"
+  ],
+  "baseline": [
+    "build/city-exteriors/wyndham-before/wyndham-front.png",
+    "build/city-exteriors/wyndham-before/wyndham-back.png",
+    "build/city-exteriors/wyndham-before/wyndham-entry.png"
+  ],
+  "baselineReview": "All3 inspected: blank curved tower and filled canopy.",
+  "implementation": {
+    "ids": [
+      "way/568622622",
+      "way/1459325605",
+      "way/1459325606",
+      "way/1459325607",
+      "way/1459325608"
+    ],
+    "triangles": 48815,
+    "batches": 10,
+    "tests": "67 roof support and3 canopy headroom samples pass. No public route assertion."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/wyndham-after/wyndham-front.png",
+      "build/city-exteriors/wyndham-after/wyndham-back.png",
+      "build/city-exteriors/wyndham-after/wyndham-entry.png"
+    ],
+    "review": "All3 inspected: curved white bay grid, blue-glass crown, pink lower bands, open arrival canopy. Ground level still lacks an entrance opening/interior route, grounds lack pool/garden and furnishings. Reference palette uncertain after2024 repaint."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/wyndham_desert_blue.py": "3a75f316896659ca1a61350c0724a8e3a12a68e22f7f072a30a9a2ec3544296f",
+      "build/optimized/build/strip-landmarks/wyndhamDesertBlue-exterior.glb": "9e1e818a3d83324333e74022f28d1aacda633f2963a78d5416d52d33ad632023"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed56fps at spawn3011bodies; not block route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-wyndham.log"
+  }
+}

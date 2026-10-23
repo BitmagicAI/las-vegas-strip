@@ -1,0 +1,33 @@
+{
+  "id": "pristine-hangar",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.08245,-115.17067,174m/data=!3m1!1e3",
+      "observed": "Satellite visually inspected. White flat/slight-slope roof, perimeter vent units, east full-span door/apron, west parking and south service access. Image capture date unknown."
+    },
+    {
+      "url": "https://www.clarkcountynv.gov/assets/documents/business/doing_business_with_clark_county/new-businesses-jan-2024.pdf",
+      "observed": "Search excerpt confirms Pristine Flight business at 5195 Las Vegas Blvd S; does not prove architecture."
+    }
+  ],
+  "remaining": [
+    "Street View redirected south near Signature; rejected as facade reference",
+    "Official website inaccessible via web tool",
+    "Detailed door and facade configuration estimated",
+    "Interior not included"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/pristine-hangar-final",
+    "support": "build/city-exteriors/pristine-hangar-collision.json",
+    "walk": "build/city-exteriors/pristine-hangar-walk.json",
+    "ownership": "build/city-exteriors/pristine-hangar-ownership-audit.json",
+    "visualReview": "Installed east, west and aerial inspected. Distinct full-span eastern door, roof plant and panel walls installed. Facade fit remains uncertain, not a completed fidelity gate. Ground outside site is absent in existing map."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/pristineHangar-exterior.glb": "4ba1ef7c61d6e0aaed1d2efc408e7339f7e15d3709577811eab02d58f6e12956",
+      "build/strip-landmarks/pristineHangar-exterior-collision.json": "9eaf3ecfc17564f01ef3dc96999357f88f2cdd8091177fd1a6bc7d42fa7928fd"
+    }
+  }
+}

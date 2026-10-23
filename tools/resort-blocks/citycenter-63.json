@@ -1,0 +1,87 @@
+{
+  "id": "citycenter-63",
+  "name": "63 CityCenter / ARTE Museum",
+  "status": "refinement-deferred",
+  "scope": "Full exterior, curved corner, terraces and street front; preserve adjacent Crystals and existing bridges.",
+  "sources": [
+    {
+      "url": "https://www.63citycenter.com/",
+      "provider": "Owner",
+      "observed": "Four stories240000sf,250ftStripfrontage;3pedestrian bridges; directCosmo/ARIAconnections. Two current owner photos visually inspected: silver stepped curvedcorner, large curvedLED atop OceanPrime, terrace below, ovalMuseumofIllusions frontage,blackglazing, metalpanelbands. Photo dateunknown."
+    },
+    {
+      "url": "https://ocean-prime.com/locations-menus/las-vegas/",
+      "provider": "Tenant",
+      "observed": "4thfloor,14000sfrestaurant,2500sfterrace; secondlevelrearentry pastbridge."
+    },
+    {
+      "url": "https://a92d4576-7d9a-4fcd-bfba-da2004b4a3c0.filesusr.com/ugd/f92106_b604b9baf80d459f8ae79130e26b57ce.pdf",
+      "provider": "63 CityCenter / Colliers leasing brochure",
+      "accessed": "2026-10-19",
+      "local": "docs/project-records/city-exteriors-2026-10-19/references/citycenter63-leasing.pdf",
+      "observed": "Pages 7, 8, 12 inspected. Exploded levels and bridge-level tenant plan. Plans explicitly schematic, not to scale; page 8 is illustrative rendering."
+    }
+  ],
+  "uncertainties": [
+    "Vertical elevations and curve radii require plan/photo fitting; not survey-certified.",
+    "Do not copy commercial ad imagery; use typography and original graphic treatments."
+  ],
+  "components": [
+    "curvedcorner",
+    "museumwing",
+    "retailfrontage",
+    "upperterraces",
+    "roofservice",
+    "pedestrianconnections"
+  ],
+  "remaining": [
+    "Reconcile old Crystals north interior layout with mapped site before its outdoor bridge entrance can be verified. Preserve existing interior improvements.",
+    "Provide actual vertical access to Ocean Prime terrace; current exterior deck has collision but no verified public lift/stair route.",
+    "Refine billboard imagery (original typography currently used), restaurant layout, terrace fixtures and tenant door details.",
+    "Confirm estimated elevations, terrace setbacks and material appearance in neutral daylight.",
+    "Street pavilion is modeled; its visitor interior and roof dining access are not implemented.",
+    "Billboard graphics and corner treatment remain simplified; not photorealistic.",
+    "Reapply join-citycenter63-bridges.py if a full geographic regeneration restores original bridge rails."
+  ],
+  "stage": "Sixth exterior pass installed; four final installed views visually inspected. Incomplete circulation and fidelity retained.",
+  "estimatedElevationsM": {
+    "ground": 0.24,
+    "bridgeLevel": 6.035,
+    "thirdLevel": 12.45,
+    "restaurantTerrace": 18.65,
+    "restaurantRoof": 23.5,
+    "billboardTop": 31.1
+  },
+  "elevationEvidence": "Bridge level from installed surveyed bridge mesh; all other elevations fitted from owner photos and four-story schedule, not survey-certified.",
+  "evidence": [
+    "build/city-exteriors/citycenter63-before/",
+    "build/city-exteriors/citycenter63-first/",
+    "build/city-exteriors/citycenter63-second/",
+    "build/city-exteriors/citycenter63-route-results.json",
+    "build/city-exteriors/citycenter63-preservation.json",
+    "build/city-exteriors/citycenter63-final-pass/",
+    "build/city-exteriors/citycenter63-ownership-audit.json",
+    "build/city-exteriors/citycenter63-walk.json"
+  ],
+  "collisionReview": {
+    "samples": 661,
+    "failures": 4,
+    "evidence": "build/city-exteriors/citycenter63-route-results.json",
+    "issue": "All floor support samples pass. Four clearance failures at preserved Crystals guard/showcase. Actual bidirectional walk fails on legacy shop walls."
+  },
+  "tests": {
+    "ownership": "build/city-exteriors/citycenter63-ownership-audit.json",
+    "interiorPreservation": "build/city-exteriors/citycenter63-preservation.json",
+    "grid": "661 samples: floor support passed after transition; 4 known clearance samples at preserved Crystals furniture/guard.",
+    "walking": "build/city-exteriors/citycenter63-walk.json \u2014 failed: old Crystals shop walls occupy part of projected outdoor route. Do not claim public connection verified.",
+    "verify": "docs/project-records/city-exteriors-2026-10-19/verify-citycenter63.log \u2014 passed WebGPU playing43fps2960bodies at default spawn, not a route benchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/citycenter63-exterior.glb": "68825012d88bc85d40bde3552db09970652e78cec7018bd14b48076e380c66d1",
+      "build/strip-landmarks/crystalsRoof-exterior.glb": "92d48003f309be9f82955b2b0c8b9490dbedc83456d8df116df9191c2c8a656f",
+      "build/geographic-strip/city.glb": "cbdf7df74f56e51c0b94ce6e7468c22b3e667090c2228b4f9118c5f86c5e0283",
+      "build/geographic-strip/detailed.glb": "2fbffcc24c30a4b70e8c9bbce3aef0a6e9fd142c911212a748430d5325db70e6"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "circus-north-canopy",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1431436415"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.137205,-115.162897&zoom=21&basemap=satellite",
+      "review": "Mapped narrow canopy on Circus Circus Drive inspected against adjacent casino footprint."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.13726,-115.16288&heading=200&pitch=8",
+      "imageDate": "January2025",
+      "review": "White chamfered supports, pale fascia with pink lower trim, unlit bulb row and exposed metal underside inspected. Upper casino facade remains a separate refinement."
+    }
+  ],
+  "remaining": [
+    "Parent casino facade still has generic glazing and lacks the photographed upper pink/white gallery; requires coordinated podium refinement",
+    "Canopy height estimated; precise column section, soffit utility details, landscaping and weathering unfinished",
+    "No interiors, neutral-daylight review or moving-route benchmark"
+  ],
+  "triangles": 1206,
+  "batches": 7,
+  "optimizedMiB": 0.03,
+  "viewsInspected": [
+    "build/city-exteriors/circus-north-canopy-final/circus-canopy-street.png",
+    "build/city-exteriors/circus-north-canopy-final/circus-canopy-under.png",
+    "build/city-exteriors/circus-north-canopy-final/circus-canopy-roof.png"
+  ],
+  "tests": [
+    "199 roof samples passed",
+    "Four bidirectional under-canopy walking reports passed",
+    "Three installed views inspected",
+    "City ownership audit found zero existing triangles inside roof footprint; no city geometry removed"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "circus-canopy-street",
+        "eye": [
+          914,
+          3,
+          -2372
+        ],
+        "target": [
+          909,
+          3.7,
+          -2360
+        ],
+        "p": [
+          913,
+          1,
+          -2370
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "circus-canopy-under",
+        "eye": [
+          904,
+          2,
+          -2362
+        ],
+        "target": [
+          913,
+          4,
+          -2358
+        ],
+        "p": [
+          904,
+          1,
+          -2362
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.69999998807907
+      },
+      {
+        "name": "circus-canopy-roof",
+        "eye": [
+          905,
+          16,
+          -2373
+        ],
+        "target": [
+          909,
+          5,
+          -2360
+        ],
+        "p": [
+          905,
+          1,
+          -2370
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.599999964237213
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 0,
+    "colliderTrianglesRemoved": 0,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in circusNorthCanopy mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/circusNorthCanopy-exterior.glb": "14ff942df551c2fabad20eee74e62431a39f6e249e6c1df55e340f8f774b9ac8",
+      "build/strip-landmarks/circusNorthCanopy-exterior-collision.json": "2b577f6bf72e9f5431d719ac320d72609849cad22eaec669ae10299654f8a5e5"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "park-mgm-parking",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/133879585"
+  ],
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1045,-115.1787,650a,330d,35y,90h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1045,-115.1787,780a,340d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1045,-115.1787,665a,330d,35y,270h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://static.mgmresorts.com/content/dam/MGM/park-mgm/property-map/park-mgm-property-map.pdf",
+      "establishes": "Official map labels guest garage connection at casino level; download pending.",
+      "inspected": "Page2 level1 map visually inspected; confirms garage escalators beside lobby",
+      "localCopy": "docs/project-records/city-exteriors-2026-10-12/references/park-mgm-property-map.pdf"
+    }
+  ],
+  "dimensions": "Mapped194x136m footprint; estimated10parking levels on3m pitch,roof27.24m. OSM30m could include parapet/plant; roof plant southwest~6m above roof. Exact levels not documented by official map.",
+  "remaining": [
+    "Exact garage floor elevations and interior stair/lift routes need surveyed plans",
+    "Retained hotel-side bridge landing and indoor continuation not audited",
+    "Reference bridge canopy/enclosure not yet modeled",
+    "Landscaping, entrance gates and public wayfinding details",
+    "Local driving benchmark"
+  ],
+  "geometry": {
+    "triangles": 14565,
+    "batches": 7,
+    "optimizedMiB": 0.22
+  },
+  "tests": "188 deck support and569 ramp/bridge approach and retained bridge headroom samples PASS (with existing543422872bridge colliders); typecheck PASS;1517citycollisioncells valid;11 installed views inspected;full WebGPUverifyPASS58fpsstartup3011bodies (not site benchmark)",
+  "bridge": {
+    "retainedOwner": "geographic-strip543422872",
+    "existingDeck": 6.035,
+    "landing": "Garagelevel3 6.24m to existing bridge6.035m via16.3m sloping approach;2.4m headroom tested."
+  },
+  "initialFindings": "Five installed views inspected. Open bridge landing continuous; roof ramp aligns observed slot. Parking bands incorrectly crossed solid southwest plant facade; removed those bands/columns in follow-up. Surrounding Aria podium remains a plain major mass, queued for refinement.",
+  "viewsReviewed": [
+    "build/city-exteriors/park-mgm-parking-after/west.png",
+    "build/city-exteriors/park-mgm-parking-after/bridge.png",
+    "build/city-exteriors/park-mgm-parking-after/east.png",
+    "build/city-exteriors/park-mgm-parking-after/roof.png",
+    "build/city-exteriors/park-mgm-parking-after/ramp.png",
+    "build/city-exteriors/park-mgm-parking-final/west.png",
+    "build/city-exteriors/park-mgm-parking-final/bridge.png",
+    "build/city-exteriors/park-mgm-parking-final/east.png",
+    "build/city-exteriors/park-mgm-parking-final/roof.png",
+    "build/city-exteriors/park-mgm-parking-final/ramp.png",
+    "build/city-exteriors/park-mgm-parking-plant/west.png"
+  ],
+  "reviewFindings": "Eleven installed captures inspected. Corrected southwest plant facade is now solid without protruding slab ends. Bridge approach visibly continuous, roof ramp opening and six cooling units installed. Exact plant louvers, signage, landscaping, stair/lift interiors and hotel landing need further refinement.",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/parkMgmParking-exterior.glb": "28ef38ba6f1d4a43f040331de1ecd6eb8bbfb022075f95a74f877df73790e45f"
+    }
+  },
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-park-mgm-parking.log",
+  "pbrFollowup": "Shared skg-deck/slab now mapped to existing concrete PBR sets in Paris pass, mapping checker and installed Paris screenshots reviewed."
+}

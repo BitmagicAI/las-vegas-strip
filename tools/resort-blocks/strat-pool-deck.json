@@ -1,0 +1,138 @@
+{
+  "id": "strat-pool-deck",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/89469749"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14693,-115.15755&zoom=20&basemap=satellite",
+      "review": "Pool outline, three yellow shade structures, cabanas, round daybeds, lounge arrangement, north pavilion and garage edge inspected."
+    },
+    {
+      "url": "https://thestrat.com/restaurants/Swim-Social",
+      "review": "Official source confirms Level 8 pool, cabanas, daybeds, chaise lounges and pool bar."
+    },
+    {
+      "url": "https://thestrat.com/userfiles/media/images/1019/large_STR28324-WEBSWIMArchitecturalImagesAug2023-09.jpg",
+      "imageDate": "August 2023",
+      "review": "Official photo inspected: white frames and pale upholstery, blue octagonal umbrellas, circular white daybeds, yellow/white striped cabanas and blue pool-edge tile."
+    }
+  ],
+  "remaining": [
+    "Absolute deck height 26.25m, pavilion dimensions and aerial registration estimated; official source confirms Level 8 but not surveyed elevation",
+    "Furniture and fabric detailing remain simplified; water requires moving-camera and neutral-daylight review",
+    "Hotel-to-pool indoor circulation and upper WET24 pool remain unimplemented",
+    "No moving-route performance benchmark or photorealistic completion claim"
+  ],
+  "triangles": 23048,
+  "batches": 18,
+  "optimizedMiB": 0.53,
+  "viewsInspected": [
+    "build/city-exteriors/strat-pool-deck-final/strat-pool-deck.png",
+    "build/city-exteriors/strat-pool-deck-final/strat-pool-east.png",
+    "build/city-exteriors/strat-pool-deck-final/strat-pool-pavilion.png",
+    "build/city-exteriors/strat-pool-deck-final/strat-pool-aerial.png"
+  ],
+  "tests": [
+    "593 support samples passed with parent STRAT colliders after placeholder removal",
+    "Six bidirectional deck route reports passed",
+    "Four installed views inspected; corrected facade/parapet horizontal-offset bug and repeated checks"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "strat-pool-deck",
+        "eye": [
+          1380,
+          28,
+          -3424
+        ],
+        "target": [
+          1420,
+          27,
+          -3427
+        ],
+        "p": [
+          1380,
+          27,
+          -3424
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.899999976158142
+      },
+      {
+        "name": "strat-pool-east",
+        "eye": [
+          1457,
+          29,
+          -3417
+        ],
+        "target": [
+          1413,
+          27,
+          -3427
+        ],
+        "p": [
+          1454,
+          27,
+          -3417
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.80000001192093
+      },
+      {
+        "name": "strat-pool-pavilion",
+        "eye": [
+          1394,
+          28,
+          -3436
+        ],
+        "target": [
+          1392,
+          28,
+          -3444
+        ],
+        "p": [
+          1394,
+          27,
+          -3436
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.5
+      },
+      {
+        "name": "strat-pool-aerial",
+        "eye": [
+          1373,
+          71,
+          -3383
+        ],
+        "target": [
+          1404,
+          26,
+          -3430
+        ],
+        "p": [
+          1380,
+          27,
+          -3420
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.899999976158142
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 2,
+    "colliderTrianglesRemoved": 2,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in stratPoolDeck mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/stratPoolDeck-exterior.glb": "fa977b1e0bfe11a487a4e1e4b65c3392b7487e70c9aff9fd66c63db753fcbdbc",
+      "build/strip-landmarks/stratPoolDeck-exterior-collision.json": "ce5f8e0e9aed88636e3733b2be7206e74cfa17cef91a5f3a710ae3d2cd1f1e0b"
+    }
+  }
+}

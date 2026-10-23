@@ -1,0 +1,107 @@
+{
+  "id": "fashion-show",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://www.fslv.com/en/map/",
+      "establishes": "Official mall directory; text retrieval does not expose floorplan. Visual map research pending."
+    },
+    {
+      "url": "https://www.fslv.com/en/map/#/",
+      "inspected": true,
+      "establishes": "L1/L2plan:westDillards,northNordstrom andMacysMen,southDicks/Macys/Neiman, eastPlaza. Map uppernorthformerSaks blank; do not assume operatingbrand."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1273,-115.1718,900a,650d,35y,0h,35t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "establishes": "Separate roofheights/anchorwings,whiteequipmentroofs,elongatedovalPVarrayoverwestmall"
+    },
+    {
+      "url": "https://cloudfront-us-east-1.images.arcpublishing.com/brookfieldproperties/MYPLU7JZ5RCEPGQCMYGDH3NA7E.jpg",
+      "inspected": true,
+      "establishes": "Curvedglassretailwall,twoexternallevels,slopingglazing,mullions,stair/escalator,largesilverCloudcolumnswithscreenwraps andtrusstop"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1281,-115.1719,650a,550d,35y,225h,60t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "establishes": "Northanchor roofs stepped;Nordstrom beige taller precast facade and ovalporte,MacysMen white lowerwing,dark horizontal entry bands; rooftopPVgroups."
+    }
+  ],
+  "components": [
+    {
+      "id": "main-mall",
+      "status": "pending"
+    },
+    {
+      "id": "east-retail",
+      "status": "pending"
+    },
+    {
+      "id": "cloud",
+      "status": "pending"
+    },
+    {
+      "id": "north-anchors",
+      "status": "pending"
+    },
+    {
+      "id": "south-anchors",
+      "status": "pending"
+    },
+    {
+      "id": "west-service",
+      "status": "pending"
+    },
+    {
+      "id": "public-entrances",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Anchor heights12.5\u201323m and facade measurements are photographic estimates.",
+    "Curved/raked restaurant facade, landscaping and exact brand graphics require refinement.",
+    "Upper plaza has stairs and guards but no new restaurant interior connections; existing galleria preserved.",
+    "North Macys Men rounded entrance and precise rooftop equipment placements remain approximate.",
+    "Fixed-camera measurements do not establish driving/streaming performance."
+  ],
+  "evidence": [
+    "build/city-exteriors/fashion-show-before",
+    "build/city-exteriors/fashion-show-after",
+    "build/city-exteriors/fashion-show-final",
+    "build/city-exteriors/fashion-access",
+    "build/city-exteriors/fashion-roof-test.json"
+  ],
+  "baselineReview": "All six installed baseline views inspected: blank outer facades, uniform16.5mroof, oversized tiled PBRroof, tinyCloudsupports and minimalentryframe. Galleria interior exists and must remain.",
+  "estimates": "Roofheights,glasssetbacks andCloudsupportdiameters photographic estimates pending authored dimensions.",
+  "geometry": {
+    "triangles": 74862,
+    "batches": 91,
+    "compressedMiB": 2.35
+  },
+  "tests": [
+    "Typecheck PASS",
+    "2956 roof support samples PASS",
+    "183 stair/plaza support and headroom samples PASS",
+    "CLI verify FAILED: no Play detected at 60s cap, menu 30fps. Direct game probe entered play and reviewed three views successfully."
+  ],
+  "currentPass": "Installed exterior pass reviewed; architectural refinement and complete circulation/perimeter performance gates remain open.",
+  "performance": {
+    "viewport": "1280x720",
+    "framesPerView": 180,
+    "upperPlaza": {
+      "p50": 16.7,
+      "p95": 17.4
+    },
+    "northEntry": {
+      "p50": 16.6,
+      "p95": 17.5
+    },
+    "groundEntry": {
+      "p50": 16.7,
+      "p95": 17.3
+    },
+    "scope": "Fixed camera samples, not driving"
+  }
+}

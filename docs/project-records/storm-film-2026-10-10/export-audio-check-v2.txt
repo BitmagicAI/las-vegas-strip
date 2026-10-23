@@ -1,0 +1,38 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '<repo>-movies/vegas-afterlight-storm-v2-preview.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Duration: 00:00:44.98, start: 0.000000, bitrate: 25419 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709/bt709/iec61966-2-1, progressive), 1920x1080, 25246 kb/s, 60 fps, 60 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc62.28.102 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 160 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+[Parsed_volumedetect_0 @ 0x84ac0c600] n_samples: 0
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf62.12.102
+  Stream #0:0(und): Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.102 pcm_s16le
+      handler_name    : SoundHandler
+[Parsed_volumedetect_0 @ 0x84ac0ca80] n_samples: 4319232
+[Parsed_volumedetect_0 @ 0x84ac0ca80] mean_volume: -16.7 dB
+[Parsed_volumedetect_0 @ 0x84ac0ca80] max_volume: -3.3 dB
+[Parsed_volumedetect_0 @ 0x84ac0ca80] histogram_3db: 10
+[Parsed_volumedetect_0 @ 0x84ac0ca80] histogram_4db: 111
+[Parsed_volumedetect_0 @ 0x84ac0ca80] histogram_5db: 662
+[Parsed_volumedetect_0 @ 0x84ac0ca80] histogram_6db: 3021
+[Parsed_volumedetect_0 @ 0x84ac0ca80] histogram_7db: 9157
+[out#0/null @ 0x84ac0c300] video:0KiB audio:8436KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:44.99 bitrate=N/A speed=1.79e+03x elapsed=0:00:00.02    

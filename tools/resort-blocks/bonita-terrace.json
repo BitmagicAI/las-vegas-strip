@@ -1,0 +1,121 @@
+{
+  "id": "bonita-terrace",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/969288411",
+    "way/969288410"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14535,-115.15455&zoom=20&basemap=satellite",
+      "review": "Parallel flat-roof wings, perimeter roof strips, central pool and spa, white shade pavilion, planted front garden, outer parking rows."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14512,-115.15420&heading=285&pitch=3",
+      "imageDate": "February2026",
+      "review": "2140 wall numeral visible; two storeys, tan stucco court walls, blank white end panels, red doors, tan metal upper galleries, shallow shingle roof perimeter, fenced front garden."
+    }
+  ],
+  "estimates": [
+    "Wall6.18m, gallery3.18m, roof7.05m estimated",
+    "West stair locations concealed and inferred for usable circulation",
+    "Foliage uses summer CC0 tree asset; source street photo has leafless front tree"
+  ],
+  "remaining": [
+    "Front garden lacks dense low planting; summer tree asset differs from leafless February photo",
+    "West stair locations inferred, not surveyed; galleries and room bays approximate",
+    "Pool geometry installed using existing water material path; animation not separately verified",
+    "No interiors, neutral daylight or full driving benchmark"
+  ],
+  "triangles": 27066,
+  "batches": 30,
+  "optimizedMiB": 12.36,
+  "metricScope": "Authored geometry plus two instances of existing CC0 Poly Haven tree asset in exported GLB; triangle count excludes tree source geometry",
+  "ownership": {
+    "removed": 20,
+    "colliderTrianglesRemoved": 20,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in BonitaTerrace mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "588 roof support samples PASS",
+    "22 ground walking legs PASS",
+    "12 stair walking legs PASS with height checks"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/bonita-terrace-final/bonita-east.png",
+    "build/city-exteriors/bonita-terrace-final/bonita-roof.png",
+    "build/city-exteriors/bonita-terrace-final/bonita-court.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "bonita-east",
+        "eye": [
+          1695.1403543212932,
+          5,
+          -3235.2322890780556
+        ],
+        "target": [
+          1674.8176020520878,
+          3,
+          -3246.0019566775923
+        ],
+        "p": [
+          1680.1191896005762,
+          2,
+          -3243.1924781733655
+        ],
+        "p50": 16.599999964237213,
+        "p95": 17.599999964237213
+      },
+      {
+        "name": "bonita-roof",
+        "eye": [
+          1676.3654104890297,
+          39,
+          -3216.8883122983234
+        ],
+        "target": [
+          1655.3784477076304,
+          2,
+          -3256.303377859758
+        ],
+        "p": [
+          1668.4130291662973,
+          2,
+          -3221.102530054664
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.80000001192093
+      },
+      {
+        "name": "bonita-court",
+        "eye": [
+          1677.468395826332,
+          2.3,
+          -3244.597217425479
+        ],
+        "target": [
+          1651.8440560086383,
+          2,
+          -3258.1763635292423
+        ],
+        "p": [
+          1677.468395826332,
+          2,
+          -3244.597217425479
+        ],
+        "p50": 17.5,
+        "p95": 23.399999976158142
+      }
+    ],
+    "limitation": "Static views not driving benchmark"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/bonitaTerrace-exterior.glb": "26bce0566845b64e58baddc72677fb5661bbd1b32ed6bc0cfb381ac79e5b7f7e",
+      "build/strip-landmarks/bonitaTerrace-exterior-collision.json": "c69b9ba5234d71b67b196979ec97ad8ef00e90dc813d1fd4fa1f23143b23e94d"
+    }
+  }
+}

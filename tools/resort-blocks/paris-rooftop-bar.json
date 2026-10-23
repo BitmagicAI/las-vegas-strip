@@ -1,0 +1,106 @@
+{
+  "id": "paris-rooftop-bar",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1424222076"
+  ],
+  "sources": [
+    "docs/project-records/city-exteriors-2026-10-12/paris-small-parts-research.json"
+  ],
+  "remaining": [
+    "Exact use of mapped small roof remains uncertain; no speculative venue branding.",
+    "Mapped plan, roof height and6.64m retained terrace datum are not surveyed.",
+    "Pale panels/dark counter/brass shelves follow Ch\u00e9ri photos, but larger Beer Park/Ch\u00e9ri terrace layout and vegetation remain approximate.",
+    "Static ultra960x540 frametimes45\u201347ms median; this is not a60fps driving validation."
+  ],
+  "triangles": 8350,
+  "batches": 16,
+  "optimizedMiB": 0.16,
+  "viewsInspected": [
+    "build/city-exteriors/paris-rooftop-bar-review2/cheri-west.png",
+    "build/city-exteriors/paris-rooftop-bar-review2/cheri-roof.png",
+    "build/city-exteriors/paris-rooftop-bar-review2/cheri-counter.png"
+  ],
+  "tests": [
+    "48 support samples passed",
+    "4 bidirectional walking routes passed against retained Paris and city collision",
+    "Three installed views inspected after whole-furniture removal and rail clipping"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "cheri-west",
+        "eye": [
+          33,
+          9,
+          421
+        ],
+        "target": [
+          45,
+          8,
+          421
+        ],
+        "p": [
+          38,
+          7.6,
+          421
+        ],
+        "p50": 46.799999952316284,
+        "p95": 57.80000001192093
+      },
+      {
+        "name": "cheri-roof",
+        "eye": [
+          30,
+          23,
+          435
+        ],
+        "target": [
+          44,
+          9,
+          421
+        ],
+        "p": [
+          38,
+          7.6,
+          427
+        ],
+        "p50": 47.19999998807907,
+        "p95": 52.09999996423721
+      },
+      {
+        "name": "cheri-counter",
+        "eye": [
+          40,
+          8.2,
+          421
+        ],
+        "target": [
+          46,
+          8.5,
+          421
+        ],
+        "p": [
+          40,
+          7.6,
+          421
+        ],
+        "p50": 45.299999952316284,
+        "p95": 53.59999996423721
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 0,
+    "colliderTrianglesRemoved": 0,
+    "added": 0,
+    "scope": "Read-only city ownership audit confirmed no remaining mapped box; parent upper terrace furniture and rail trim separately recorded."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/parisRooftopBar-exterior.glb": "7f1eb7e18919783dce19c55d31858e1f703be627b0d9264549bace1a907e2e99",
+      "build/strip-landmarks/parisRooftopBar-exterior-collision.json": "bebef27edfed93a2243609f86bb8120ce89d50bf7a46960c5df857bd483a594d"
+    }
+  },
+  "parentOwnershipTrim": "build/city-exteriors/paris-rooftop-parent-trim.json"
+}

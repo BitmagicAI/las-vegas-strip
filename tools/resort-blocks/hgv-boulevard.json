@@ -1,0 +1,67 @@
+{
+  "id": "hgv-boulevard",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1398,-115.1605,650a,450d,35y,270h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "Two unequal hotel wings, ribbed crowns, pale rose facades, central pavilion."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1398,-115.1605,900a,450d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "Rear L-shaped and freeform pool courts; photographed dimensions estimated."
+    },
+    {
+      "url": "https://www.skyscrapercenter.com/complex/3317",
+      "provider": "CTBUH",
+      "establishes": "90m shorter wing; taller mapped wing 123m retained."
+    }
+  ],
+  "components": [
+    {
+      "id": "hotel-wings",
+      "status": "pending"
+    },
+    {
+      "id": "podium",
+      "status": "pending"
+    },
+    {
+      "id": "pool-court",
+      "status": "pending"
+    },
+    {
+      "id": "frontage",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Planting, arrival court landscaping, precise signage and portico are unfinished.",
+    "Pool placement is photographic estimate, not survey-certified; collision access traversal still unverified.",
+    "Existing guest core preserved with 24 floors to fit 90m wing; no tall-wing interior authored.",
+    "Final front aerial and pool court inspected. Court remains visually sparse; planting and precise fitted outlines unfinished."
+  ],
+  "geometry": {
+    "triangles": 16152,
+    "batches": 15,
+    "optimizedMiB": 0.3
+  },
+  "estimates": {
+    "tallWingM": 123,
+    "shortWingM": 90,
+    "pavilionM": 14,
+    "garageM": 24,
+    "note": "Pavilion, garage, pools and bay spacing fitted approximately from photographs."
+  },
+  "tests": {
+    "typecheck": "passed",
+    "heightRegression": "build/city-exteriors/hgv-height-test.json"
+  },
+  "evidence": [
+    "build/city-exteriors/hgv-after",
+    "build/city-exteriors/hgv-final"
+  ]
+}

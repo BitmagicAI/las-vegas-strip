@@ -1,0 +1,47 @@
+{
+  "id": "white-cross-annex",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/316303725"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15070,-115.15404&heading=90&pitch=0",
+      "imageDate": "January2026",
+      "observed": "MainStreet frontage of western WhiteCross block: broad terracotta mansard canopy over boarded dark brown storefronts, white piers/caps and large central FOR SALE panel. Parking and temporary fencing in front; older tall front legacy retail signs remain on east Strip side."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15073,-115.15307&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "East market frontage already separately owned by market1700; do not duplicate. Annex attaches west at mappedshared boundary."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15030,-115.15356&zoom=20&basemap=satellite",
+      "observed": "Roof visible north of Curaleaf: metal/flat main roof and western tile canopy; southern parking wall blankwhite. Additional exact north elevation still needed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15116,-115.15343&heading=180&pitch=0",
+      "imageDate": "August2024",
+      "observed": "North facing WhiteCrossMarket sign on cream fascia; recessed dark boarded storefronts with white piers, terracotta pitched mansard and projecting vertical frame fins. Temporary closed-site fence. East adjoining bluefrontage already modeled."
+    }
+  ],
+  "remaining": [
+    "Exact sign artwork, tile weathering and boarded storefront material need closer matching",
+    "North sign source August2024 and west closed frontage January2026; current north branding uncertain",
+    "Height5.9m and canopy dimensions estimated; roof equipment arrangement inferred",
+    "No interior access claim; closed storefronts and temporary fenced boundary represented"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/white-cross-annex-final",
+    "support": "build/city-exteriors/white-cross-annex-collision.json",
+    "walk": "build/city-exteriors/white-cross-annex-walk.json",
+    "ownership": "build/city-exteriors/white-cross-annex-ownership-audit.json",
+    "visualReview": "Installed west/north/aerial images inspected. Tiled canopies join blue market frontage without a visible duplicate shell.33641authoredtri20batches;0.90MiBoptimized.923support6walkPASS.11oldvisual/collisiontri removed. Static960x540p50~16.6ms,p95~18.5ms, not route performance evidence."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/whiteCrossAnnex-exterior.glb": "c9d134249b5eb70033411c73f8f7f9d3857deda58b010a150090be2d799335a1",
+      "build/strip-landmarks/whiteCrossAnnex-exterior-collision.json": "915cbbc04987b8c68ff8655936d548c89197ebc7522fca78f0274cbb8d4f4a18"
+    }
+  }
+}

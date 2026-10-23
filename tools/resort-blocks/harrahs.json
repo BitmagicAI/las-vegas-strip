@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "id": "harrahs",
+  "name": "Harrah\u2019s Las Vegas",
+  "updated": "2026-10-09",
+  "stage": "facade-pass-installed-and-inspected",
+  "statusNote": "Targeted exterior facade revision authorized after Venetian canal-detail pass. Existing interiors and public circulation retained. Photo-fit dimensions are estimates; full resort completion is not claimed.",
+  "nextAction": "Refine surveyed bay dimensions, exact tenant/sign typography, roof/services and landscape detail; match all sides and public levels before whole-resort acceptance.",
+  "sources": [
+    {
+      "id": "creator-aerial",
+      "title": "Creator Google Earth aerial",
+      "kind": "visual-reference",
+      "image": "docs/project-records/venetian-gondola-frontages-2026-10-09/creator-harrahs-linq-reference.png",
+      "accessed": "2026-10-09",
+      "note": "Establishes adjacency, volume and facade proportions; exact date unknown."
+    },
+    {
+      "id": "official",
+      "title": "Harrah\u2019s Las Vegas official exterior gallery",
+      "kind": "visual-reference",
+      "url": "https://newsroom.caesars.com/Property-Fact-Sheets/Harrahs-Las-Vegas/",
+      "accessed": "2026-10-09",
+      "note": "Viewed official photographs. No photo licensed as a game texture."
+    }
+  ],
+  "levels": [
+    {
+      "id": "ground",
+      "name": "Existing public arrival datum",
+      "elevationM": 0.24,
+      "sources": [
+        "creator-aerial"
+      ],
+      "label": "Existing public arrival datum",
+      "features": "Existing public arrival datum. Existing datum/schedule retained; not a new measured survey."
+    },
+    {
+      "id": "guest",
+      "name": "Mapped hotel floors",
+      "schedule": "build/highrises/plan.json",
+      "sources": [
+        "creator-aerial"
+      ],
+      "label": "Mapped hotel floors",
+      "features": "Mapped hotel floors. Existing datum/schedule retained; not a new measured survey.",
+      "elevationM": null
+    },
+    {
+      "id": "roof",
+      "name": "Variable mapped roof elevations",
+      "elevationM": 109,
+      "sources": [
+        "creator-aerial"
+      ],
+      "label": "Variable mapped roof elevations",
+      "features": "Variable mapped roof elevations. Existing datum/schedule retained; not a new measured survey."
+    }
+  ],
+  "components": [
+    {
+      "id": "valley-tower",
+      "name": "valley tower",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-facade-aerial-offline.png"
+      ],
+      "category": "tower",
+      "priority": "high",
+      "scope": "Valley tower geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "mountain-tower",
+      "name": "mountain tower",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-facade-aerial-offline.png"
+      ],
+      "category": "tower",
+      "priority": "high",
+      "scope": "Mountain tower geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "strip-canopy",
+      "name": "strip canopy",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "Strip canopy geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "street-shops",
+      "name": "street shops",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "Street shops geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "roof-services",
+      "name": "roof services",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "Roof services geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "arrival-circulation",
+      "name": "arrival circulation",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "preserved",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "Arrival circulation geometry, materials, surveyed placement and public interfaces."
+    }
+  ],
+  "routes": [
+    {
+      "id": "existing-arrival",
+      "name": "Existing casino arrival and guest connections",
+      "fromLevel": "ground",
+      "toLevel": "guest",
+      "components": [
+        "valley-tower"
+      ],
+      "sources": [
+        "creator-aerial"
+      ],
+      "status": "preserved",
+      "evidence": []
+    }
+  ],
+  "views": [
+    {
+      "id": "strip",
+      "name": "strip",
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "reviewed",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-strip-offline.png"
+      ],
+      "gameCapture": "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-installed.png",
+      "purpose": "Compare mapped silhouette and facade pattern from strip; dimensions remain photo-fit estimates.",
+      "camera": {
+        "eye": [
+          -18,
+          3,
+          -422
+        ],
+        "target": [
+          65,
+          11,
+          -390
+        ]
+      }
+    },
+    {
+      "id": "facade-aerial",
+      "name": "facade-aerial",
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "reviewed",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/harrahs-facade-aerial-offline.png"
+      ],
+      "gameCapture": null,
+      "purpose": "Compare mapped silhouette and facade pattern from facade-aerial; dimensions remain photo-fit estimates.",
+      "camera": {
+        "eye": [
+          -190,
+          135,
+          -560
+        ],
+        "target": [
+          155,
+          35,
+          -384
+        ]
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "dimension-registration",
+      "title": "No surveyed facade heights or exact bay schedule; photo fitting remains approximate",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "No surveyed facade heights or exact bay schedule; photo fitting remains approximate. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    },
+    {
+      "id": "street-detail",
+      "title": "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    },
+    {
+      "id": "interiors",
+      "title": "Retained existing interiors are not map-faithful reconstructions",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Retained existing interiors are not map-faithful reconstructions. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    }
+  ],
+  "gates": [
+    {
+      "id": "survey",
+      "status": "pending",
+      "evidence": [],
+      "name": "Whole-site survey"
+    },
+    {
+      "id": "massing",
+      "status": "pending",
+      "evidence": [],
+      "name": "Massing and elevations"
+    },
+    {
+      "id": "levels",
+      "status": "pending",
+      "evidence": [],
+      "name": "All public levels and connections"
+    },
+    {
+      "id": "facades",
+      "status": "pending",
+      "evidence": [],
+      "name": "All facades and street detail"
+    },
+    {
+      "id": "integration",
+      "status": "pending",
+      "evidence": [],
+      "name": "Geometry ownership and streaming"
+    },
+    {
+      "id": "runtime",
+      "status": "pending",
+      "evidence": [],
+      "name": "Route and performance verification"
+    },
+    {
+      "id": "visual",
+      "status": "pending",
+      "evidence": [],
+      "name": "Matched-view visual acceptance"
+    }
+  ],
+  "performance": {
+    "baseline": null,
+    "after": "docs/project-records/venetian-gondola-frontages-2026-10-09/performance.json",
+    "note": "Three-second warmed stationary views at 1280\u00d7720 DPR1 Ultra, no before baseline and no full driving/streaming route."
+  },
+  "finalBuild": null,
+  "facadePass": {
+    "date": "2026-10-09",
+    "report": "docs/project-records/venetian-gondola-frontages-2026-10-09.md",
+    "asset": {
+      "groups": 41,
+      "triangles": 121964,
+      "rawMiB": 10.06,
+      "installedMiB": 2.86,
+      "source": "build/strip-landmarks/harrahs-exterior.glb",
+      "installed": "build/optimized/build/strip-landmarks/harrahs-exterior.glb",
+      "sha256": "291ac5a5743ca4776af8c0155e0c471451ddc481dad4f5f20659a2a7b889c10f",
+      "sourceSha256": "6513af650d9660c1102a5d6b4f2464fb08f3e3bb4f4ba50a4e100a8c1c7d4c70"
+    },
+    "scope": "Targeted exterior geometry and street skin; existing collision and interiors retained. Does not pass whole-resort gates."
+  },
+  "latestTargetedVerification": {
+    "date": "2026-10-09",
+    "status": "passed",
+    "scope": "Local WebGPU startup + typed build + targeted canal routes + three stationary views; does not constitute whole-resort completion",
+    "evidence": [
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/verification.txt",
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/routes.txt",
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/water.txt",
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/reflection.txt",
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/performance.json"
+    ],
+    "sourceHashes": "docs/project-records/venetian-gondola-frontages-2026-10-09/source-hashes.json"
+  },
+  "roofPass20261014": {
+    "status": "refinement-deferred",
+    "research": "docs/project-records/city-exteriors-2026-10-14/harrahs-podium-research.json",
+    "audit": "build/city-exteriors/harrahs-roof-audit.json",
+    "installedViews": [
+      "build/city-exteriors/harrahs-membrane-final/harrahs-front.png",
+      "build/city-exteriors/harrahs-membrane-final/harrahs-roof.png",
+      "build/city-exteriors/harrahs-membrane-final/harrahs-upper-roof.png"
+    ],
+    "visuallyInspected": true,
+    "changes": [
+      "Pale membrane roof replaces stippled concrete treatment on 57 existing roof triangles.",
+      "1592 added triangles: upper roof equipment, parapet and DONNY / RAMSAYS KITCHEN lettering."
+    ],
+    "preservation": "All 41 prior groups retained; collision byte identical. Interiors and roads unchanged.",
+    "remaining": [
+      "Fine crest ornament and exact poster artwork",
+      "Exact plant arrangement, roof dimensions and rear service facade survey",
+      "Whole site circulation and performance gate remain pending"
+    ],
+    "performance": [
+      {
+        "name": "harrahs-front",
+        "eye": [
+          15,
+          24,
+          -420
+        ],
+        "target": [
+          75,
+          13,
+          -390
+        ],
+        "p": [
+          44,
+          2,
+          -398
+        ],
+        "p50": 17,
+        "p95": 31.40000009536743
+      },
+      {
+        "name": "harrahs-roof",
+        "eye": [
+          70,
+          95,
+          -440
+        ],
+        "target": [
+          155,
+          12,
+          -385
+        ],
+        "p": [
+          55,
+          2,
+          -410
+        ],
+        "p50": 17.200000047683716,
+        "p95": 30.299999952316284
+      },
+      {
+        "name": "harrahs-upper-roof",
+        "eye": [
+          30,
+          40,
+          -410
+        ],
+        "target": [
+          65,
+          19,
+          -385
+        ],
+        "p": [
+          44,
+          2,
+          -398
+        ],
+        "p50": 18,
+        "p95": 30.899999856948853
+      }
+    ]
+  }
+}

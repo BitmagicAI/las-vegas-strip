@@ -1,0 +1,124 @@
+{
+  "id": "casino-royale-retail",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/345534561"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12008,-115.17164&zoom=20&basemap=satellite",
+      "provider": "Google Maps satellite",
+      "review": "Visually inspected narrow restaurant roof between Casino Royale and Harrahs, rooftop equipment, west entrance/arch; capture date unavailable"
+    },
+    {
+      "url": "https://fotospot.com/attractions/nevada/metro-mcdonalds",
+      "image": "https://ghosty-production.s3.amazonaws.com/fotospot_spots/021898b04190828f18311f40bd21ce94/medium.jpg",
+      "review": "Daytime photograph visually inspected: gold ribbon arch, projecting red McDonalds sign, upper entrance, adjacent stairs/escalator and lower circular Chipotle signs. Image date unknown."
+    }
+  ],
+  "estimates": [
+    "Overall roof8.9m and upperdeck4.48m inferred from two-storey mapping and photograph",
+    "Arch position,23.4m span and curved controls estimated; not survey-fit",
+    "Back/side service treatment inferred from aerial roof; no rear street photo"
+  ],
+  "remaining": [
+    "No restaurant interior or working doors",
+    "Escalator represented by fixed walkable stair, no moving steps",
+    "Exact signage/logo letterforms and curved upper fascia remain approximate",
+    "Harrahs existing north wall blocks attempted route atz\u2248\u2212449.3; not rebuilt here",
+    "Generic nearby resort facade remains a separate refinement",
+    "Gold arch and labels remain simplified and need calibrated photo comparison",
+    "No nearby caf\u00e9 furnishings/landscaping; service elevation inferred"
+  ],
+  "ownership": "22 mapped9m building triangles and matching collision removed; new exterior owns footprint and small west arrival plaza. Roads and surrounding resort assets retained.",
+  "triangles": 17241,
+  "batches": 17,
+  "optimizedMiB": 0.7,
+  "viewsInspected": [
+    "casino-royale-retail-front",
+    "casino-royale-retail-north",
+    "casino-royale-retail-street"
+  ],
+  "before": "build/city-exteriors/casino-royale-retail-before",
+  "after": "build/city-exteriors/casino-royale-retail-final",
+  "tests": [
+    "168 roof/deck support samples PASS (interior sample points avoid exact vertical boundary)",
+    "6 plaza walking legs PASS",
+    "8 stair walking legs up/down PASS; upper floor y4.48m"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "casino-royale-retail-front",
+        "eye": [
+          75,
+          9,
+          -462
+        ],
+        "target": [
+          103,
+          6,
+          -453
+        ],
+        "p": [
+          84,
+          2,
+          -460
+        ],
+        "p50": 16.299999952316284,
+        "p95": 27.5
+      },
+      {
+        "name": "casino-royale-retail-north",
+        "eye": [
+          139,
+          17,
+          -485
+        ],
+        "target": [
+          119,
+          4,
+          -452
+        ],
+        "p": [
+          123,
+          2,
+          -470
+        ],
+        "p50": 20.69999998807907,
+        "p95": 21.80000001192093
+      },
+      {
+        "name": "casino-royale-retail-street",
+        "eye": [
+          78,
+          2,
+          -456
+        ],
+        "target": [
+          101,
+          6,
+          -452
+        ],
+        "p": [
+          80,
+          2,
+          -456
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.80000001192093
+      }
+    ],
+    "limitation": "Not route or interior performance proof"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/casinoRoyaleRetail-exterior.glb": "713a4e590545376a51888d683942bd6f767690e4a6f8d5d8fefd3f6f4429ca27",
+      "build/strip-landmarks/casinoRoyaleRetail-exterior-collision.json": "2c1be98969089c078531fc02cecd23591b897b125d9dec2644cfaa62395ddb14"
+    }
+  },
+  "visualCorrections": [
+    "Moved arch foot clear of Casino Royale mapped footprint after installed review",
+    "Lowered circular signs below fascia after installed review"
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "conditions": "Ultra, headless Chrome WebGPU/Metal, gameplay LOD, roaming crowd, no recorder, natural timestep. Dimensions recorded per pass.",
+  "results": [
+    {
+      "pass": 1,
+      "setup": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "pixelRatio": 1,
+        "backend": "WebGPUBackend",
+        "fixedDelta": false,
+        "population": 60,
+        "rendererInfo": {}
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "film": {
+        "name": "storm",
+        "frame": 2568,
+        "t": 45,
+        "dt": 0.017100000143051148,
+        "subframes": 1,
+        "step": 1,
+        "steps": 1,
+        "done": true,
+        "warnings": []
+      },
+      "impacts": 32,
+      "peakRagdolls": 12,
+      "all": {
+        "frames": 2855,
+        "wallSeconds": 49.78209999990463,
+        "averageFps": 57.34993099940479,
+        "frameMs": {
+          "median": 16.5,
+          "p95": 28.5,
+          "p99": 35.700000047683716,
+          "max": 93.79999995231628
+        },
+        "framesOver50ms": 6,
+        "framesOver100ms": 0,
+        "peakRagdolls": 12
+      },
+      "afterInitial3s": {
+        "frames": 2693,
+        "wallSeconds": 46.881799999952314,
+        "averageFps": 57.44233369884985,
+        "frameMs": {
+          "median": 16.5,
+          "p95": 27.600000143051147,
+          "p99": 35.5,
+          "max": 93.79999995231628
+        },
+        "framesOver50ms": 5,
+        "framesOver100ms": 0,
+        "peakRagdolls": 12
+      },
+      "bySceneTime": [
+        {
+          "name": "Harmon",
+          "from": 3,
+          "to": 12,
+          "frames": 527,
+          "wallSeconds": 9.1635,
+          "averageFps": 57.51077645004638,
+          "frameMs": {
+            "median": 16.5,
+            "p95": 19.5,
+            "p99": 35.5,
+            "max": 93.79999995231628
+          },
+          "framesOver50ms": 2,
+          "framesOver100ms": 0,
+          "peakRagdolls": 12
+        },
+        {
+          "name": "Strip",
+          "from": 12,
+          "to": 24,
+          "frames": 683,
+          "wallSeconds": 12.005900000095368,
+          "averageFps": 56.88869639048923,
+          "frameMs": {
+            "median": 16.5,
+            "p95": 30.200000047683716,
+            "p99": 36.5,
+            "max": 47.299999952316284
+          },
+          "framesOver50ms": 0,
+          "framesOver100ms": 0,
+          "peakRagdolls": 10
+        },
+        {
+          "name": "Bellagio turn",
+          "from": 24,
+          "to": 29,
+          "frames": 274,
+          "wallSeconds": 4.997399999856949,
+          "averageFps": 54.8285108271988,
+          "frameMs": {
+            "median": 16.300000190734863,
+            "p95": 30.59999990463257,
+            "p99": 49.10000014305115,
+            "max": 74.59999990463257
+          },
+          "framesOver50ms": 2,
+          "framesOver100ms": 0,
+          "peakRagdolls": 6
+        },
+        {
+          "name": "Arrival",
+          "from": 29,
+          "to": 39,
+          "frames": 566,
+          "wallSeconds": 10.002900000095368,
+          "averageFps": 56.58359075814052,
+          "frameMs": {
+            "median": 16.40000009536743,
+            "p95": 29.5,
+            "p99": 38.39999985694885,
+            "max": 61.09999990463257
+          },
+          "framesOver50ms": 1,
+          "framesOver100ms": 0,
+          "peakRagdolls": 5
+        },
+        {
+          "name": "Stopped",
+          "from": 39,
+          "to": 45,
+          "frames": 360,
+          "wallSeconds": 5.997,
+          "averageFps": 60.03001500750375,
+          "frameMs": {
+            "median": 16.5,
+            "p95": 18.5,
+            "p99": 19.5,
+            "max": 20.40000009536743
+          },
+          "framesOver50ms": 0,
+          "framesOver100ms": 0,
+          "peakRagdolls": 4
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "setup": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "pixelRatio": 1,
+        "backend": "WebGPUBackend",
+        "fixedDelta": false,
+        "population": 60,
+        "rendererInfo": {}
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "film": {
+        "name": "storm",
+        "frame": 2587,
+        "t": 45,
+        "dt": 0.016700000047683714,
+        "subframes": 1,
+        "step": 1,
+        "steps": 1,
+        "done": true,
+        "warnings": []
+      },
+      "impacts": 32,
+      "peakRagdolls": 13,
+      "all": {
+        "frames": 2858,
+        "wallSeconds": 49.74520000004768,
+        "averageFps": 57.452779363582025,
+        "frameMs": {
+          "median": 16.5,
+          "p95": 24.700000047683716,
+          "p99": 34.89999985694885,
+          "max": 263.7000000476837
+        },
+        "framesOver50ms": 9,
+        "framesOver100ms": 3,
+        "peakRagdolls": 13
+      },
+      "afterInitial3s": {
+        "frames": 2701,
+        "wallSeconds": 46.84739999985695,
+        "averageFps": 57.655280762822436,
+        "frameMs": {
+          "median": 16.5,
+          "p95": 23.700000047683716,
+          "p99": 34.700000047683716,
+          "max": 263.7000000476837
+        },
+        "framesOver50ms": 7,
+        "framesOver100ms": 2,
+        "peakRagdolls": 13
+      },
+      "bySceneTime": [
+        {
+          "name": "Harmon",
+          "from": 3,
+          "to": 12,
+          "frames": 526,
+          "wallSeconds": 9.401099999904632,
+          "averageFps": 55.9508993634081,
+          "frameMs": {
+            "median": 16.5,
+            "p95": 19.800000190734863,
+            "p99": 34.700000047683716,
+            "max": 263.7000000476837
+          },
+          "framesOver50ms": 3,
+          "framesOver100ms": 2,
+          "peakRagdolls": 13
+        },
+        {
+          "name": "Strip",
+          "from": 12,
+          "to": 24,
+          "frames": 691,
+          "wallSeconds": 11.985700000047684,
+          "averageFps": 57.65203534188666,
+          "frameMs": {
+            "median": 16.5,
+            "p95": 20.799999952316284,
+            "p99": 37.200000047683716,
+            "max": 51.39999985694885
+          },
+          "framesOver50ms": 2,
+          "framesOver100ms": 0,
+          "peakRagdolls": 11
+        },
+        {
+          "name": "Bellagio turn",
+          "from": 24,
+          "to": 29,
+          "frames": 279,
+          "wallSeconds": 4.995899999856949,
+          "averageFps": 55.84579355231065,
+          "frameMs": {
+            "median": 16.399999856948853,
+            "p95": 29,
+            "p99": 40.799999952316284,
+            "max": 68.29999995231628
+          },
+          "framesOver50ms": 2,
+          "framesOver100ms": 0,
+          "peakRagdolls": 6
+        },
+        {
+          "name": "Arrival",
+          "from": 29,
+          "to": 39,
+          "frames": 577,
+          "wallSeconds": 10.003900000095367,
+          "averageFps": 57.677505772198785,
+          "frameMs": {
+            "median": 16.5,
+            "p95": 26.700000047683716,
+            "p99": 34.09999990463257,
+            "max": 41.90000009536743
+          },
+          "framesOver50ms": 0,
+          "framesOver100ms": 0,
+          "peakRagdolls": 4
+        },
+        {
+          "name": "Stopped",
+          "from": 39,
+          "to": 45,
+          "frames": 361,
+          "wallSeconds": 6.013700000047684,
+          "averageFps": 60.02959908161989,
+          "frameMs": {
+            "median": 16.600000143051147,
+            "p95": 18.09999990463257,
+            "p99": 18.5,
+            "max": 19.700000047683716
+          },
+          "framesOver50ms": 0,
+          "framesOver100ms": 0,
+          "peakRagdolls": 4
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

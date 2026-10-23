@@ -1,0 +1,49 @@
+{
+  "id": "desert-oasis",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://abandonedonline.net/an-evening-walk-on-the-edge-of-the-las-vegas-strip/",
+      "author": "Sherman Cahal",
+      "date": "2025-05-23",
+      "observed": "Photograph110484 inspected: cream tiled front,three perforated red screens,red pylon,flat two-story long wing,small windows and satellite dishes."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0914118,-115.1722989,100m/data=!3m1!1e3",
+      "observed": "Satellite inspected: courtyard main building, south detached bar, small pool in notch. Main footprint way364846547 despite commercial3961tag; property ownership inferred from contiguous photo/satellite layout."
+    }
+  ],
+  "remaining": [
+    "No interior rooms authored",
+    "Planting,satellite dishes,weathering and discarded signage detail missing",
+    "Southwing facade window arrangement inferred",
+    "Exact courtyard stairs and pool dimensions remain approximate",
+    "Street sign lettering and screen aperture pattern approximate"
+  ],
+  "implemented": [
+    "Courtyard block and detached southern wing with windows,doors and roof equipment",
+    "Perforated red entrance screens and squared tiled frontage",
+    "Open entrance passage,upper walkway and stairs,courtyard pool and canopy",
+    "Pylon,parking and continuous floor support"
+  ],
+  "validation": {
+    "support": "136 support/headroom checks passed",
+    "walking": "9legs in both directions passed;reverse begins on upperwalkway",
+    "visual": "Three installed views inspected;finalfront inspected after door/endwall/material correction",
+    "performance": "960x540 ultra fixed aerial16.7ms p50/18.3ms p95;notfullroutebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/desert-oasis-final/desert-front.png",
+    "build/city-exteriors/desert-oasis-final/desert-court.png",
+    "build/city-exteriors/desert-oasis-final/desert-aerial.png",
+    "build/city-exteriors/desert-oasis-collision.json",
+    "build/city-exteriors/desert-oasis-walk.json",
+    "build/city-exteriors/desert-oasis-ownership-audit.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/desertOasis-exterior.glb": "410c53e29d08892a9d8811af7c8b3e327be80877f21a3d291b7d1c4cccd07458",
+      "build/strip-landmarks/desertOasis-exterior-collision.json": "134f3c3c1e7bd7b9bc69e646ea77b79614fe47dd46e11d5316541e32dab2a073"
+    }
+  }
+}

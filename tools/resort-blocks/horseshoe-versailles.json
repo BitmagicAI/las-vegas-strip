@@ -1,0 +1,234 @@
+{
+  "id": "horseshoe-versailles",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://anningjohnson.com/project/jubilee-tower-remodel/",
+      "review": "Contractor confirms September 2024 completion, mansard panels, west-facing balconies and connecting skybridge. As-built bridge photo visually inspected; room and lobby photographs also inspected."
+    },
+    {
+      "url": "https://newsroom.caesars.com/press-releases/press-release-details/2024/Celebrating-25-Remarkable-Years-Paris-Las-Vegas-Offers-Guests-More-Reasons-to-Love-the-Iconic-Resort-Including-the-Newly-Redesigned-Versailles-Tower-with-Balcony-Rooms-and-Strip-Views/default.aspx",
+      "review": "Official2024 source: former Jubilee now Versailles,38 balcony rooms. Preserve separate resort identity; older Earth images can be obsolete."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1135,-115.1695,650a,460d,35y,90h,55t,0r",
+      "review": "Visually inspected: thin T-shaped east resort tower, broad tan end shafts, narrow vertical piers and horizontal glass grids; broad low casino roof."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1135,-115.1695,650a,460d,35y,270h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Opposite aerial visually inspected; long north slab and south stem. Predates Versailles renovation."
+    },
+    {
+      "url": "https://www.bwaltd.com/project-detail/versailles-tower-remodel",
+      "review": "Architect image visually inspected. It is a proposal with Ballys-era surroundings, not as-built verification. Simple blue mansard perimeter corroborated by contractor completion text."
+    },
+    {
+      "url": "https://anningjohnson.com/wp-content/uploads/2025/04/anning-johnson-las-vegas-jubilee-tower-3-1024x683.jpg",
+      "review": "As-built bridge photo inspected: cream arched underside, broad rectangular glazing, piers and cornices. Bridge remains to be implemented."
+    },
+    {
+      "url": "https://www.rymanhp.com/property/ole-red-las-vegas/",
+      "review": "Operator: four stories, 27,000 square feet, 4,500 square foot rooftop. Floor heights remain estimated."
+    },
+    {
+      "url": "https://www.visitlasvegas.com/listing/ole-red/37836/",
+      "review": "Tourism promotional exterior image visually inspected; appears rendered. Brick, glazing, projecting balcony decks and black rooftop frame."
+    },
+    {
+      "url": "https://www.elationlighting.com/blogs/news/ole-red-las-vegas-radiates-country-with-elation-lighting",
+      "review": "Lighting manufacturer built-night photograph visually inspected: brick, three balcony bands, dark frames, red edge lighting and Ole Red sign."
+    }
+  ],
+  "remaining": [
+    "Versailles west-facing balconies and Paris skybridge not implemented",
+    "Verify all exterior public entrance routes against reference maps",
+    "Grand Bazaar tenant-specific facades and exact awning layouts need further corroboration",
+    "Ole Red rooftop furnishings and real vertical access missing",
+    "Casino service and arrival facade proportions require closer ground references",
+    "Whole block traversal and route performance not yet measured",
+    "Ole Red sign partly obscured by existing bridge; correct sign placement from built reference."
+  ],
+  "baseline": [
+    "build/city-exteriors/horseshoe-before/horseshoe-west.png",
+    "build/city-exteriors/horseshoe-before/horseshoe-east.png",
+    "build/city-exteriors/horseshoe-before/horseshoe-front.png"
+  ],
+  "baselineReview": "All three images inspected; old Versailles flat crown and broad blank podium; Bazaar retail still unadorned.",
+  "implementation": {
+    "triangles": 48316,
+    "batches": 39,
+    "ids": [
+      "way/27897921",
+      "way/27897922",
+      "way/116867081"
+    ],
+    "towerHeightM": 80,
+    "podiumHeightM": 15,
+    "guestCoreOrigin": [
+      120,
+      0.075,
+      286
+    ],
+    "guestCoreLinear": [
+      0,
+      1,
+      -1,
+      0
+    ],
+    "guestSchedule": "20 floors,2 bays,firstGuest4; original horseshoe rooms retained",
+    "tests": "370 roof,24 guest approach,9 roof aperture samples pass after balcony wall join correction; room/stair envelope test passed in tower pass."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/horseshoe-after/horseshoe-west.png",
+      "build/city-exteriors/horseshoe-after/horseshoe-east.png",
+      "build/city-exteriors/horseshoe-after/horseshoe-front.png",
+      "build/city-exteriors/horseshoe-after/ole-red.png",
+      "build/city-exteriors/horseshoe-after/bazaar.png",
+      "build/city-exteriors/horseshoe-after/horseshoe-core.png"
+    ],
+    "review": "All six PNGs inspected. Mansard faces visible and joined; mapped tower silhouettes preserved. Ole Red balconies and brick facade visible, sign partly obscured by existing pedestrian bridge. Bazaar glass and awnings installed, but tenant specificity, deck furniture and facade proportions remain unfinished. Preserved guest corridor intact. No claim of photorealism or whole block completion."
+  },
+  "verification": "Local full WebGPU verification passed, 57fps at spawn,3011 bodies. Not a block-route performance measurement.",
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/horseshoe_exterior.py": "5246aa2c523a7bee2fae855b8d5839110a824241682a1750948a4f07983dd8b8",
+      "tools/strip-landmarks/horseshoe_frontage.py": "2d4ddef15ea4d48fd0b873f187afb463f8e16bda750b3330a0d1a469727e6450",
+      "build/strip-landmarks/horseshoeExterior-exterior.glb": "dcd9bf6b2c0793cdc8ad0cf4e550554b7922f3fd9452ca87012281858bab11c5",
+      "build/strip-landmarks/horseshoeArrival-exterior.glb": "5dcd247e6292c035a91154287d60578125af16a5a80e3f3fa99a7fd577af62c2",
+      "build/strip-landmarks/horseshoeArrival-exterior-collision.json": "ffdd1ef31ff94ff56e7c942af0f4de1693fc0dcc6f8116c7ad30f870446d142b"
+    }
+  },
+  "arrivalCanopy20261021": {
+    "stage": "refinement-deferred",
+    "mappedIds": [
+      "way/115673549"
+    ],
+    "sources": [
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11413,-115.17083&zoom=20&basemap=satellite",
+        "provider": "Google Maps satellite",
+        "establishes": "Broad side roofs, inset wells and central raised glazed roof"
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.11418,-115.17125&heading=90&pitch=8",
+        "provider": "Google Street View",
+        "imageDate": "December2022",
+        "establishes": "Open canopy,paired round metal columns,deep front fascia with diagonal metal braces; landscaping/stairs and approach cover still differ"
+      }
+    ],
+    "ownership": "258 mapped utility triangles and matching collision removed. Existing roads, sidewalks and detailed resort retained. Missing ground visually filled only inside mapped canopy; continuous hidden ground foundation at0.13m repairs collider seams. Existing approach deck retained at6.035m.",
+    "triangles": 14131,
+    "batches": 9,
+    "optimizedMiB": 0.3,
+    "before": "build/city-exteriors/horseshoe-arrival-before",
+    "after": "build/city-exteriors/horseshoe-arrival-final",
+    "viewsInspected": [
+      "horseshoe-arrival-west",
+      "horseshoe-arrival-under",
+      "horseshoe-arrival-bridge"
+    ],
+    "tests": [
+      "681 roof/ground samples PASS",
+      "8 upper approach and6 lower walking legs PASS",
+      "npm run check PASS"
+    ],
+    "estimatedDimensions": "Soffit8.65m, side roof9.27m, front fascia10.55m, barrel roof12.1m; columns and roofwell sizes inferred from photographs.",
+    "remaining": [
+      "Glazing opaque approximations; no photorealism claim",
+      "Approach covered tube and sculptural rings outside mapped roof remain unbuilt",
+      "Existing approach bridge datum retained, not independently surveyed",
+      "Casino doors/interior connection unimplemented; final route ends before opaque parent facade",
+      "Ground landscaping, curved steps, accessible ramp and planting still absent",
+      "No route performance validation; static960x540 only"
+    ],
+    "performance": [
+      {
+        "name": "horseshoe-arrival-west",
+        "eye": [
+          130,
+          23,
+          220
+        ],
+        "target": [
+          195,
+          6,
+          208
+        ],
+        "p": [
+          155,
+          2,
+          210
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.400000035762787
+      },
+      {
+        "name": "horseshoe-arrival-under",
+        "eye": [
+          176,
+          2.2,
+          198
+        ],
+        "target": [
+          213,
+          4,
+          198
+        ],
+        "p": [
+          176,
+          2,
+          198
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.5
+      },
+      {
+        "name": "horseshoe-arrival-bridge",
+        "eye": [
+          156,
+          8,
+          207
+        ],
+        "target": [
+          209,
+          8,
+          208
+        ],
+        "p": [
+          160,
+          7,
+          207
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.30000001192093
+      }
+    ]
+  },
+  "frontageRefinement20261021": {
+    "status": "refinement-deferred",
+    "reference": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BO9-qojhxfSBa1YIItci5Q&heading=0&pitch=10",
+    "imageDate": "2025-04",
+    "observed": "Cream horizontal facade bands, two low rectangular window tiers, tower glass above; new bridge with thick cream piers partly obscures view; planted strip and low wall below. No Horseshoe emblems on visible south frontage.",
+    "baseline": "build/city-exteriors/cvs-east-final3",
+    "remaining": [
+      "Exact bay widths/elevations not surveyed",
+      "Planted strip and boundary wall remain absent",
+      "Paris connecting bridge and west balconies still incomplete",
+      "Legacy white arbor and apocalypse clutter remain; do not mislabel as reference-matched architecture",
+      "Material and inset depth need refinement"
+    ],
+    "reviewedDate": "2026-10-22",
+    "installedReview": "build/city-exteriors/versailles-south-final/results.json",
+    "preservation": "build/city-exteriors/versailles-south-preservation.json",
+    "collisionTest": "build/city-exteriors/horseshoe-collision-test.json",
+    "finding": "All three installed views inspected. Two rectangular tiers and cream bands replace oversized legacy blue panels; gold Horseshoe signs/emblems removed. CVS side passage unchanged. Exterior remains simplified and not photorealistic.",
+    "finalBuild": {
+      "tools/strip-landmarks/horseshoe_exterior.py": "56163fcd110328ae901f3ce4e0f77605777b53f9a0314d849d8b756c4da7edf5",
+      "build/strip-landmarks/horseshoeExterior-exterior.glb": "384b6d5bf0ed00c11c79911207ccd415d82a52783816440289fd1d6cb8102262",
+      "build/geographic-strip/detailed.glb": "4c7b7cc733d0ef0b9fd52b2f4ff667397653a6019e0973b88d1e3d68188ae7b9"
+    },
+    "performance": "Same960x540 ultra static viewpoints only; results recorded, no city-driving60fps certification."
+  }
+}

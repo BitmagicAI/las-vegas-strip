@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-14",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1245,-115.1693,640a,230d,35y,100h,65t,0r",
+      "provider": "Google Earth",
+      "imageDate": "2022-11-09",
+      "visuallyInspected": true,
+      "observations": "Rectangular shop glazing and black awnings, medallions and pilasters; north green lantern and central gray dome. Southern arrival is a mapped rectangular canopy with octagonal glazed roof, not the previously modeled oval on the west retail frontage."
+    },
+    {
+      "url": "https://www.venetianlasvegas.com/media/press-kit/photos.html",
+      "provider": "The Venetian Resort",
+      "imageDate": null,
+      "visuallyInspected": true,
+      "observations": "Official aerial corroborates roof pavilions, low frontage massing and densely planted pool deck; image depicts older Mirage era so does not establish current tenants."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Exterior_of_the_Palazzo_Building_in_Las_Vegas.jpg",
+      "provider": "Lchung9779 / Wikimedia Commons",
+      "imageDate": "2025-12-29",
+      "visuallyInspected": true,
+      "observations": "Northwest tower and corner pavilion, lower facade mostly obscured by trees."
+    }
+  ],
+  "registration": "Mapped way/180584269 boundary; pavilion positions fitted to corners, dimensions estimated. Existing public entrance retained, not a claim of exact arrival layout.",
+  "assetReuse": "Visual reference only; no photograph copied into game textures.",
+  "canopy": {
+    "mappedId": "way/180584267",
+    "estimatedElevationsM": {
+      "soffit": 9.2,
+      "roof": 10.1,
+      "glazedPeak": 12.5,
+      "driveApron": 0.08
+    },
+    "collision": "121 combined floor/headroom probes pass; original collider prefix retained; 134 new triangles. Existing public entrance is retained at its former location, full circulation reconciliation remains."
+  }
+}

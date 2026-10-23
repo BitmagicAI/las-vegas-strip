@@ -1,0 +1,60 @@
+{
+  "id": "sky",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://www.lochsa.com/projects/sky-las-vegas",
+      "provider": "Lochsa Engineering",
+      "establishes": "45-storey 500ft tower; blue glass and white EIFS bands."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1388,-115.1613,690a,450d,35y,270h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "Narrow glazed tower, low podium, projecting balcony ends, crown frames; visually inspected."
+    }
+  ],
+  "components": [
+    {
+      "id": "tower",
+      "status": "pending"
+    },
+    {
+      "id": "podium",
+      "status": "pending"
+    },
+    {
+      "id": "balconies",
+      "status": "pending"
+    },
+    {
+      "id": "street-frontage",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Precise curved corners and penthouse roof forms still differ from reference.",
+    "Pool terrace, entrance fittings and landscaping are not finished.",
+    "Corrected aerial and both street views inspected. Main mass improved; curved corner/penthouse and full-site detail remain.",
+    "Public routes and balcony access not traversed."
+  ],
+  "geometry": {
+    "triangles": 11713,
+    "batches": 9,
+    "optimizedMiB": 0.2
+  },
+  "estimates": {
+    "towerM": 152.4,
+    "podiumM": 16,
+    "floorPitchM": 3.15,
+    "note": "Mapped tower footprint retained; podium and projecting details photo-estimated."
+  },
+  "evidence": [
+    "build/city-exteriors/sky-after",
+    "build/city-exteriors/sky-final"
+  ],
+  "tests": {
+    "typecheck": "passed before material mapping update",
+    "materialMapping": "scanned stucco mapping verified"
+  }
+}

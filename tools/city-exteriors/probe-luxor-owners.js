@@ -1,0 +1,1 @@
+const found=[];engine.scene.traverse(o=>{if(!o.isMesh)return;const d=o.userData;const s=o.name+' '+d.property+' '+d.source;if(/luxor|27858544/i.test(s))found.push({name:o.name,parent:o.parent?.name,visible:o.visible,property:d.property,source:d.source});});return found;

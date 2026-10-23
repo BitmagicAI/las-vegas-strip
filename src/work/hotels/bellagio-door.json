@@ -1,0 +1,25 @@
+{
+ "format": "bitmagic-mesh-level",
+ "version": 1,
+ "units": "meters",
+ "colliders": [],
+ "volumes": [],
+ "landmarks": [
+  {
+   "name": "spawn",
+   "position": [
+    0.0,
+    0.025,
+    0.0
+   ],
+   "yaw": 0.0,
+   "tags": []
+  }
+ ],
+ "lights": [],
+ "extras": {
+  "links": [],
+  "stairs": [],
+  "doors": []
+ }
+}

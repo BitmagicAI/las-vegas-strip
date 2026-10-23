@@ -1,0 +1,226 @@
+{
+ "views": [
+  {
+   "view": "cromwell-street",
+   "mode": "natural",
+   "owners": [
+    "City block / guest-vanderpump",
+    "City block / vanderpump"
+   ],
+   "render": {
+    "calls": 1521,
+    "frameCalls": 3,
+    "drawCalls": 421,
+    "triangles": 6621399,
+    "points": 100,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "cromwell-street",
+   "mode": "natural",
+   "median": 16.600000143051147,
+   "p95": 18.899999856948853,
+   "render": {
+    "calls": 2151,
+    "frameCalls": 3,
+    "drawCalls": 421,
+    "triangles": 6621399,
+    "points": 100,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "venetian",
+   "mode": "full",
+   "owners": [
+    "City block / tower/way/30618090",
+    "City block / tower/way/30424125",
+    "City block / venetian",
+    "City block / tower/way/111322067",
+    "City block / palazzo"
+   ],
+   "render": {
+    "calls": 2568,
+    "frameCalls": 4,
+    "drawCalls": 1410,
+    "triangles": 14915032,
+    "points": 200,
+    "lines": 1792,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "venetian",
+   "mode": "coarse",
+   "owners": [
+    "City block / tower/way/30618090",
+    "City block / tower/way/30424125",
+    "City block / venetian",
+    "City block / tower/way/111322067",
+    "City block / palazzo"
+   ],
+   "render": {
+    "calls": 2868,
+    "frameCalls": 3,
+    "drawCalls": 719,
+    "triangles": 6973437,
+    "points": 100,
+    "lines": 896,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "venetian",
+   "mode": "natural",
+   "median": 18.799999952316284,
+   "p95": 19.90000009536743,
+   "render": {
+    "calls": 3704,
+    "frameCalls": 4,
+    "drawCalls": 1410,
+    "triangles": 14919610,
+    "points": 200,
+    "lines": 1792,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "bellagio",
+   "mode": "full",
+   "owners": [
+    "City block / bellagio/shell/zone0/",
+    "City block / bellagio/shell/zone0/bellagio",
+    "City block / bellagio/shell/zone1/",
+    "City block / bellagio/shell/zone2/",
+    "City block / bellagio/shell/zone3/",
+    "City block / bellagio/shell/zone4/",
+    "City block / bellagio/shell/zone5/",
+    "City block / bellagio/shell/zone38/",
+    "City block / bellagio/shell/zone39/",
+    "City block / bellagioBlock",
+    "City block / guest-main",
+    "City block / lakefront-village",
+    "City block / tower/way/114716301",
+    "City block / bellagioLobby",
+    "City block / bellagioGarden",
+    "City block / bellagioConservatory",
+    "City block / bellagioPromenade"
+   ],
+   "render": {
+    "calls": 4112,
+    "frameCalls": 4,
+    "drawCalls": 542,
+    "triangles": 12975162,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "bellagio",
+   "mode": "coarse",
+   "owners": [
+    "City block / bellagio/shell/zone0/",
+    "City block / bellagio/shell/zone0/bellagio",
+    "City block / bellagio/shell/zone1/",
+    "City block / bellagio/shell/zone2/",
+    "City block / bellagio/shell/zone3/",
+    "City block / bellagio/shell/zone4/",
+    "City block / bellagio/shell/zone5/",
+    "City block / bellagio/shell/zone38/",
+    "City block / bellagio/shell/zone39/",
+    "City block / bellagioBlock",
+    "City block / guest-main",
+    "City block / lakefront-village",
+    "City block / tower/way/114716301",
+    "City block / bellagioLobby",
+    "City block / bellagioGarden",
+    "City block / bellagioConservatory",
+    "City block / bellagioPromenade"
+   ],
+   "render": {
+    "calls": 4409,
+    "frameCalls": 3,
+    "drawCalls": 289,
+    "triangles": 6275624,
+    "points": 100,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "bellagio",
+   "mode": "natural",
+   "median": 16.799999952316284,
+   "p95": 18,
+   "render": {
+    "calls": 5244,
+    "frameCalls": 4,
+    "drawCalls": 542,
+    "triangles": 12925914,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "harrahs",
+   "mode": "full",
+   "owners": [
+    "City block / harrahs",
+    "City block / tower/way/111367828",
+    "City block / tower/way/128632721"
+   ],
+   "render": {
+    "calls": 5656,
+    "frameCalls": 4,
+    "drawCalls": 960,
+    "triangles": 11327773,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "harrahs",
+   "mode": "coarse",
+   "owners": [
+    "City block / harrahs",
+    "City block / tower/way/111367828",
+    "City block / tower/way/128632721"
+   ],
+   "render": {
+    "calls": 6076,
+    "frameCalls": 4,
+    "drawCalls": 960,
+    "triangles": 11040667,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "view": "harrahs",
+   "mode": "natural",
+   "median": 16.59999990463257,
+   "p95": 18.299999952316284,
+   "render": {
+    "calls": 6916,
+    "frameCalls": 4,
+    "drawCalls": 960,
+    "triangles": 11239515,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  }
+ ],
+ "memory": {
+  "used": 2226402568,
+  "total": 2578696128,
+  "limit": 4395630592
+ }
+}

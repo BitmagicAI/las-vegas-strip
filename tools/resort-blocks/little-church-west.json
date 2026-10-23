@@ -1,0 +1,59 @@
+{
+  "id": "little-church-west",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://littlechurchofthewest.com/wp-content/uploads/2023/11/WEB-New-Chapel-Wide-View.jpg",
+      "provider": "Chapel owner",
+      "date": "Upload November2023;capture unknown",
+      "observed": "Inspected dark cedar vertical siding,steep gable,left offset belfry and spire,triple lancet over double entrance,mature trees,lawn and ornate roadside sign"
+    },
+    {
+      "url": "https://npgallery.nps.gov/GetAsset/732e36ea-99ac-4c15-8634-0292d61ce5a4",
+      "provider": "National Park Service 1992 nomination",
+      "observed": "Historic building42x19ft,10windows48x30in,frontdoor48x80in,triple frontwindow5x6ft. OLD3960address and oldgrounds; do not use for current placement."
+    },
+    {
+      "url": "https://littlechurchofthewest.com/",
+      "provider": "Current chapel owner",
+      "observed": "Current4617SouthLasVegasBlvd address"
+    }
+  ],
+  "dimensions": "Historic chapel12.8x5.79m; current mapped small rotated footprint used for placement. Wall3.3m,roof5.8m,spire9.45m estimated from photographs. Larger mapped L is separate office.",
+  "remaining": [
+    "Office facade remains generic and needs better photographic reference",
+    "Lawn lacks turf detail and hedges; garden less dense than owner photo",
+    "Sign shape and lettering require refinement; front camera crops sign",
+    "Nearby off-site parcels show missing ground, not addressed by this property pass",
+    "No interior access created",
+    "Full driving performance not benchmarked; distant tree billboard transition not visually checked"
+  ],
+  "implemented": [
+    "Cedar chapel,steep shingle gable,offset open belfry and spire,lancet glazing,double entrance",
+    "Separate L-shaped support building,roof details",
+    "Paved garden routes,lawn,parking and roadside signs",
+    "Existing CC0 textured trees with shared geometry and three GroveLod levels; high detail retained through240m"
+  ],
+  "validation": {
+    "support": "368/368 passed build/city-exteriors/little-church-collision.json",
+    "walking": "5legs in both directions passed build/city-exteriors/little-church-walk.json",
+    "typecheck": "passed docs/project-records/city-exteriors-2026-10-20/check-little-church.log",
+    "cliVerify": "FAILED: menu never started; independent gameplay probe starts and captures",
+    "visual": "Front,office,aerial final installed images inspected; not photorealistic completion",
+    "performance": "960x540 ultra fixed aerial p50 16.5ms p95 18.2ms; limited view only"
+  },
+  "evidence": [
+    "build/city-exteriors/little-church-final/church-front.png",
+    "build/city-exteriors/little-church-final/church-office.png",
+    "build/city-exteriors/little-church-final/church-aerial.png",
+    "build/city-exteriors/little-church-ownership-audit.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/littleChurchWest-exterior.glb": "19b81eb9bd62572b452a38f4fa2115c4b9d4066666d956e111cf852d00a03cdf",
+      "build/strip-landmarks/littleChurchWest-exterior-collision.json": "a1078275948506e3d7e23fe7801861e101d1db1ce89da8b2f2b41d2780843ee2",
+      "src/work/GroveLod.ts": "b5cd1cdd5a5d19e7a9a9b314d032294f315f46cea86d48745a4efcb65cd3c8d2",
+      "src/work/StripLandmarks.ts": "48e494279b7c6cd496db9ab05d5ead984d01168c4b652d9db7677cdbe4b930b8"
+    }
+  }
+}

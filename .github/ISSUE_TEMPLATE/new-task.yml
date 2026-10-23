@@ -1,0 +1,28 @@
+name: Propose a task
+description: Something missing or wrong in the city that is not on the board yet (tasks/BOARD.md)
+labels: [proposal]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Building, resort or street, and in-game coordinates if you have them (B panel shows them)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is missing or wrong
+      description: Compared with which public source? Link it (a map, an official resort map, a public photo page). Do not upload third-party photos.
+    validations:
+      required: true
+  - type: textarea
+    id: capture
+    attributes:
+      label: Game capture
+      description: A screenshot from the game (the dev view has a Screenshot button)
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [exteriors, interiors, performance, tooling, film, other]

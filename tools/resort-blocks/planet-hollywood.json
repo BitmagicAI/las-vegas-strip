@@ -1,0 +1,250 @@
+{
+  "id": "planet-hollywood",
+  "name": "Planet Hollywood / Miracle Mile",
+  "status": "refinement-deferred",
+  "scope": "Exterior reconstruction. Preserve all existing playable interiors.",
+  "record": "docs/project-records/city-exteriors-2026-10-12/README.md",
+  "components": [
+    {
+      "id": "strip-frontage",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "hotel-towers",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "pool-decks",
+      "status": "implemented-review-pending"
+    },
+    {
+      "id": "harmon-frontage",
+      "status": "implemented-review-pending"
+    },
+    {
+      "id": "mall-roofs",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "theatre",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "garage",
+      "status": "installed-reviewed"
+    },
+    {
+      "id": "service-elevations",
+      "status": "installed-reviewed"
+    }
+  ],
+  "uncertainties": [
+    "Photo-estimated frontage heights and bay spacing",
+    "Existing tower height/guest datum differs from OSM tag; do not silently relocate guest interiors."
+  ],
+  "completionGates": [],
+  "evidence": [
+    "build/city-exteriors/planet-final",
+    "build/city-exteriors/planet-harmon",
+    "build/city-exteriors/planet-combined-collision.json"
+  ],
+  "discrepancies": [
+    "Physical tower envelope retained at ~100m rather than uncorroborated 122m tag; guest cores preserved.",
+    "Terrace furniture, tenancy spacing and floor heights estimated from reference photos.",
+    "No full public-route walkthrough on pool deck or Harmon interior; existing interiors untouched.",
+    "Harmon billboard uses original neutral artwork, not commercial photo advertisements."
+  ],
+  "miracleMileRefresh20261014": {
+    "status": "installed-reviewed-refinement-pending",
+    "sources": "docs/project-records/city-exteriors-2026-10-14/miracle-mile-research-queue.json",
+    "builder": "tools/strip-landmarks/build_miracle_mile_refresh.py",
+    "audit": "build/city-exteriors/miracle-mile-audit.json",
+    "changes": [
+      "Facade-local discs replace misoriented world-space spheres",
+      "Larger entrance displays and patterned lightboxes based on2024designer photographs",
+      "Removed outdated Sephora/M upper sign tower",
+      "Blue Martini label per2026owner plan and red Cabo Wabo parasols"
+    ],
+    "preservation": "73othergeometrygroups unchanged;collision byte-identical;nointeriors or roads modified",
+    "tests": "Terrace3samples,sidewalk241,entry30andcombinedcityentry132pass",
+    "remaining": [
+      "Display/artwork simplified original graphics",
+      "Exact facade proportions and tenant bay positions remain estimates",
+      "Current Harmon tenant ordering differs from older generator labels; needs corrected registration",
+      "Full-site public routes and tower physical survey remain open"
+    ],
+    "evidence": "build/city-exteriors/miracle-mile-final",
+    "performance": [
+      {
+        "name": "mms-north",
+        "eye": [
+          -5,
+          7,
+          563
+        ],
+        "target": [
+          50,
+          12,
+          580
+        ],
+        "p": [
+          25,
+          2,
+          565
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.299999952316284
+      },
+      {
+        "name": "mms-center",
+        "eye": [
+          -10,
+          6,
+          654
+        ],
+        "target": [
+          50,
+          11,
+          655
+        ],
+        "p": [
+          25,
+          2,
+          655
+        ],
+        "p50": 17.40000009536743,
+        "p95": 20.40000009536743
+      },
+      {
+        "name": "mms-south",
+        "eye": [
+          -7,
+          8,
+          738
+        ],
+        "target": [
+          52,
+          13,
+          718
+        ],
+        "p": [
+          25,
+          2,
+          735
+        ],
+        "p50": 16.699999809265137,
+        "p95": 18.299999952316284
+      },
+      {
+        "name": "mms-roof",
+        "eye": [
+          440,
+          150,
+          520
+        ],
+        "target": [
+          280,
+          22,
+          680
+        ],
+        "p": [
+          395,
+          2,
+          560
+        ],
+        "p50": 36.200000047683716,
+        "p95": 39.799999952316284
+      },
+      {
+        "name": "mms-harmon",
+        "eye": [
+          200,
+          8,
+          895
+        ],
+        "target": [
+          200,
+          9,
+          850
+        ],
+        "p": [
+          200,
+          2,
+          875
+        ],
+        "p50": 35.5,
+        "p95": 43.799999952316284
+      }
+    ],
+    "triangles": 324079,
+    "batches": 132,
+    "optimizedMiB": 7.04,
+    "visualReview": "Five final images inspected. Silver discs correctly outward facing and smooth; patterned lightboxes/displays visible; revised aerial shows mapped mall mechanical roof and theatre. Harmon elevations retained and generic; labels need registration against owner plan."
+  },
+  "frontageCanopies20261021": {
+    "stage": "refinement-deferred",
+    "mappedIds": [
+      "way/1436534385",
+      "way/1436534369"
+    ],
+    "sources": [
+      {
+        "url": "https://www.sensoryinteractive.net/miracle-mile",
+        "provider": "Sensory Interactive, photography Patrick Gray/Kabik Photo Group",
+        "date": "2024 project completion",
+        "establishes": "North/south entrance renovations; northphoto silver canopy and steppedpylon besideSephora"
+      },
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11067,-115.17248&zoom=21&basemap=satellite",
+        "provider": "GoogleMaps satellite",
+        "date": "capture date unavailable",
+        "establishes": "North curvedcanopy footprint/roof; existing aerialplan"
+      }
+    ],
+    "referenceImages": [
+      "https://images.squarespace-cdn.com/content/v1/6218f222bcccc322b8ea8f97/f164b5fd-9f0a-4f4b-87f0-90507eaba28f/MMS%2BNorth%2BExterior%2B2_Patrick%2BGray%2C%2BKabik%2BPhoto%2BGroup.jpg",
+      "https://images.squarespace-cdn.com/content/v1/6218f222bcccc322b8ea8f97/6d69b50f-cec0-46c1-a61b-01685c904a2a/MMS%2BSouth%2BEntrance_Patrick%2BGray%2C%2BKabik%2BPhoto%2BGroup.jpg"
+    ],
+    "before": "build/city-exteriors/ph-frontage-roofs-before",
+    "uncertainties": [
+      "Canopy soffit6.85/roof7.65andpylon9.2m estimated",
+      "South smallcanopy not clearlyvisiblein2024photo; mappedoutlinebut supportdetails inferred",
+      "Existing mallfacade/entrances stillapproximate; no fullblockcompletion claim"
+    ],
+    "ownership": "159 mapped3.5mroofparttriangles/collidersremoved; existingmall/road/interiorsunchanged. Newgroundonlywithinformerroofpartoutlines.",
+    "after": "build/city-exteriors/ph-frontage-roofs-final",
+    "viewsInspected": [
+      "ph-north-roof",
+      "ph-south-roof",
+      "ph-north-under-canopy",
+      "ph-south-under-canopy"
+    ],
+    "triangles": 7512,
+    "batches": 6,
+    "optimizedMiB": 0.16,
+    "tests": [
+      "517 floor/headroom samples PASS",
+      "8 walking legs north/south both directions with city,legacy andPH collision PASS"
+    ],
+    "remaining": [
+      "Pylon profile and soffit joints remain approximate",
+      "Existing surrounding sidewalk gaps visible outside replacement outlines; no full sidewalk reconstruction",
+      "Existing mall storefront/glazing and facade materials need further reference matching",
+      "No new public interior or door connection claimed"
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/phFrontageCanopies-exterior.glb": "e76f82a6f1e846b15d6e81e37008b105b751da73d5103d31ebd48b980ddddd40",
+      "build/strip-landmarks/phFrontageCanopies-exterior-collision.json": "b938b76a1436addd027af16531fc60094514e3e791c533e6bd7cfea5dab48890"
+    }
+  },
+  "targetedBoundaryPasses": [
+    {
+      "date": "2026-10-21",
+      "scope": "Mapped lift/bridge doorway or rail only; see pedestrian-lifts.json. No full-resort revalidation.",
+      "asset": "build/strip-landmarks/planetHollywood-exterior.glb",
+      "sha256": "d21f7edc4ffbc9662fc2d32b7a8691340e78d3519e65a04936e1b241bdbfc36e"
+    }
+  ]
+}

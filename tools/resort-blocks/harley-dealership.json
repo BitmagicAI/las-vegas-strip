@@ -1,0 +1,53 @@
+{
+  "id": "harley-dealership",
+  "name": "Las Vegas Harley-Davidson",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.martinharris.com/portfolio/las-vegas-harley-davidson/",
+      "provider": "General contractor",
+      "accessed": "2026-10-19",
+      "observed": "50000sf; Moser Architecture Studio; central entrance and plaza; steel/concrete finishes."
+    },
+    {
+      "url": "https://www.martinharris.com/wp-content/uploads/2023/04/Ext-3.jpg",
+      "provider": "Martin-Harris Construction",
+      "accessed": "2026-10-19",
+      "imageDate": "Unknown; uploaded April 2023",
+      "observed": "Visually inspected. Silver panel north wing, warm horizontal stripe south showroom, glazed projecting entrance canopy and forecourt."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.08245,-115.17067,174m/data=!3m1!1e3",
+      "observed": "Satellite inspected: contiguous southern dealership wing. Mapped Recharge Zone incorporated under dealership geometry ownership; business name not treated as a separate building style."
+    }
+  ],
+  "remaining": [
+    "Fine branding, roadside pylon, palms and forecourt planting remain unfinished.",
+    "Main door is visual facade only; no visitor interior created or claimed.",
+    "Ground slab covers this lot; adjacent mapped area still lacks continuous terrain.",
+    "Material variation and close-range fidelity need refinement; not photorealistic.",
+    "Southern service-door spacing and unseen rear facade are inferred; refine against dedicated photos."
+  ],
+  "uncertainties": [
+    "Mapped ten-metre main shell; entrance height12m and facade panel spacing are photographic estimates.",
+    "No licensed logo/advertising textures; authored text used.",
+    "Site extends beyond continuous existing ground; forecourt holes visible in before screenshot."
+  ],
+  "stage": "Southern mapped wing now included in union footprint; service bays, panel cladding and roof added, 49 old visual/collision triangles replaced. Three installed views inspected; roof and line aliasing corrected on second pass.",
+  "evidence": [
+    "build/city-exteriors/harley-before/",
+    "build/city-exteriors/harley-final/",
+    "build/city-exteriors/harley-collision.json",
+    "build/city-exteriors/harley-service-final/"
+  ],
+  "tests": {
+    "support": "527 forecourt floor samples passed with city collision.",
+    "verify": "WebGPU verification passed,60fps default spawn,2960bodies; not route benchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/harleyDealership-exterior.glb": "1cdf43c82680b8a317079feab7513e9c0be719dd53e56bea148730f4d60f3c31",
+      "build/strip-landmarks/harleyDealership-exterior-collision.json": "6e3850b49dc8cfcffb66a98516e4ea6de3a107ef36377064ccd95d0f7f6ce5a2"
+    }
+  }
+}

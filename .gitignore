@@ -1,0 +1,65 @@
+# Las Vegas Strip — what stays out of the public repository (audit: docs/OPEN-SOURCE.md).
+
+# The Bitmagic engine and the skills the CLI ships are not part of this repository: they are a dependency that
+# `bitmagic upgrade` installs (Bitmagic Pro login needed; README.md). To commit a skill of our own, add
+# `!.agents/skills/<name>/` and `!.claude/skills/<name>/` below these lines.
+engine/
+.agents/skills/
+.claude/skills/
+
+# Bitmagic CLI defaults
+dist/
+node_modules/
+.bitmagic/
+.vite-cache/
+
+# Built runtime assets and pipeline intermediates (about 29 GB). The runtime subset ships as the
+# asset pack: `node tools/release/fetch-assets.mjs` (docs/ASSETS.md).
+build/
+
+# Local machine state, caches and logs
+.DS_Store
+**/.venv/
+__pycache__/
+*.pyc
+*.log
+tools/film/log/
+.claude/settings.local.json
+.env
+.env.*
+*.pem
+*.key
+.npmrc
+
+# Dated journals quote private conversations with the owner: they stay local. Third-party research media:
+# viewed for reference, never redistributed. The source URLs stay in
+# the committed JSON/Markdown records; the images, PDFs and screenshots do not.
+docs/project-records/journal-*.md
+docs/project-records/archive/
+docs/project-records/user-references/
+docs/project-records/index-history/
+docs/project-records/**/*.png
+docs/project-records/**/*.jpg
+docs/project-records/**/*.jpeg
+docs/project-records/**/*.webp
+docs/project-records/**/*.gif
+docs/project-records/**/*.pdf
+docs/project-records/**/*.mp4
+docs/project-records/**/*.mov
+docs/project-records/**/*.glb
+docs/project-records/**/*.blend
+**/references/**/*.png
+**/references/**/*.jpg
+**/references/**/*.jpeg
+**/references/**/*.webp
+**/references/**/*.gif
+**/references/**/*.pdf
+**/references/**/*.heic
+tools/resort-blocks/references/**/*.png
+tools/resort-blocks/references/**/*.pdf
+
+# Not ours to redistribute, or rebuilt locally
+tools/info-video/fonts/
+tools/uthana/adapter/
+tools/optimize/bm-tools/
+tools/foliage/sources/

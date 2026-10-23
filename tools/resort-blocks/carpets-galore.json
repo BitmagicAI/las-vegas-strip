@@ -1,0 +1,41 @@
+{
+  "id": "carpets-galore",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/689003955"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15189,-115.15364&zoom=20&basemap=satellite",
+      "observed": "L-shaped roof, southern west projection, long east strip with shallow pitched roof and rear service alley; west forecourt, southern parking."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15191,-115.15410&heading=90&pitch=0",
+      "imageDate": "January2026",
+      "observed": "1601SMain, white storefront L-plan, blue CARPETS GALORE letters, dark lower framed windows and entrances, broad paved forecourt. Roof equipment visible."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15215,-115.15364&heading=180&pitch=0",
+      "imageDate": "January2026",
+      "observed": "78EWyoming northfacade: white vertical metal warehouse skin, dark brickbase, large rollup door and adjacent service door; large blue letter sign. East narrow section blue masonry, high horizontal window, lower glazed opening/door, shallow white gable roof. Phone numbers not reproduced."
+    }
+  ],
+  "remaining": [
+    "Sign typography/window advertising and facade weathering simplified",
+    "Neutral daylight review required to validate pale blue paint under sunset lighting",
+    "Rear and south elevations inferred; exact roof heights and HVAC locations estimated",
+    "Forecourt planting and sign fixtures incomplete; no store interior"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/carpets-galore-final",
+    "review": "Three installed views inspected. Fixed extraneous roof strip from concave north-facing return, changed blue wall from raw brick to painted finish, enlarged lettering; final north/aerial rechecked.",
+    "tests": "739support6walkPASS,22oldtri removed",
+    "implementation": "2579tri16batches.84MiBoptimized"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/carpetsGalore-exterior.glb": "f5ba4eef59195c2c9c04939e494b55c9e308f5b7ac04535f79d8e7e8c899329d",
+      "build/strip-landmarks/carpetsGalore-exterior-collision.json": "72179efa60ec8ec2144205347eede2e03c8b8b04336db88441129138f1d25e17"
+    }
+  }
+}

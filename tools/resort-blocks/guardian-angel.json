@@ -1,0 +1,87 @@
+{
+  "id": "guardian-angel",
+  "status": "refinement-deferred",
+  "scope": "Mapped cathedral whole exterior, spire, entrance and immediate landscape; preserve neighboring roads/buildings",
+  "mappedIds": [
+    "way/564120640",
+    "way/1177746897",
+    "way/331347841",
+    "way/688540494"
+  ],
+  "references": [
+    {
+      "url": "https://www.paulrwilliamsproject.org/gallery-posts/guardian-angel-cathedral-las-vegas-nv/",
+      "provider": "Paul Revere Williams Project",
+      "inspected": "Side exterior photos and interior A-frame reference"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Guardian_Angel_Cathedral_-_Las_Vegas_06.jpg",
+      "provider": "Wikimedia Commons",
+      "inspected": "Front mosaic, diamond patterned base, recessed dark double doors, open-legged concrete spire"
+    },
+    {
+      "url": "https://gaclv.org/history",
+      "provider": "Cathedral official history",
+      "establishes": "1963 shrine,1995 renovation; artwork Piczek sisters"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13055,-115.16349,645a,150d,35y,90h,55t,0r",
+      "provider": "Google Earth",
+      "imageryDate": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13055,-115.16349,645a,155d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imageryDate": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13029,-115.16255,645a,155d,35y,90h,60t,0r",
+      "provider": "Google Earth",
+      "imageryDate": "2022-11-09",
+      "inspected": true,
+      "establishes": "Office stepped plan, glazed west/south bays, roof lattice, HVAC and north carport"
+    }
+  ],
+  "remaining": [
+    "Authentic Piczek mural and stained glass detail; current geometric artwork is a stand-in",
+    "Closed exterior doors only; interiors/public access not implemented",
+    "Precise surveyed elevations and facade proportions",
+    "Landscape fidelity and office/cathedral sidewalk integration",
+    "Full-site driving performance benchmark",
+    "Standard CLI verify startup detection gate failed; direct gameplay probe succeeds"
+  ],
+  "baselineViews": [
+    "build/city-exteriors/guardian-angel-before/north.png",
+    "build/city-exteriors/guardian-angel-before/south.png",
+    "build/city-exteriors/guardian-angel-before/entry.png",
+    "build/city-exteriors/guardian-angel-before/plan.png",
+    "build/city-exteriors/guardian-angel-before/front.png"
+  ],
+  "baselineFindings": "Five installed views inspected: flat5m cathedral extrusion, separate generic10m spire extrusion; both replaced. Nearby office retained for separate pass.",
+  "dimensions": "Mapped nave west831/east878; six sidebays6.9m,halfwidth12.6m;23mridge and31.5mspire estimates from photographs. No surveyed elevation available.",
+  "geometry": {
+    "triangles": 52298,
+    "batches": 33,
+    "optimizedMiB": 1.17
+  },
+  "tests": "331 roof/paving support +48 entry floor/headroom PASS; typecheck PASS; six installed gameplay views inspected. Full CLI0.1.83 verify FAILED: visible PLAY button not detected, menu state at 60s settle cap; screenshot confirms button. No completion claim.",
+  "sourceNotes": "GoogleEarth2022-11-09 plan and west oblique inspected. Mapped placeholder erroneously5m tall. Source imagery used for geometric observation only, no image copied into game textures. Exterior front photo from Wikimedia viewed; no asset derivative made.",
+  "geometryOwner": "guardianAngel owns all four mapped IDs; no duplicate city extrusions",
+  "viewsReviewed": [
+    "build/city-exteriors/guardian-angel-reviewed/front.png",
+    "build/city-exteriors/guardian-angel-reviewed/side.png",
+    "build/city-exteriors/guardian-angel-reviewed/entry.png",
+    "build/city-exteriors/guardian-angel-reviewed/office-west.png",
+    "build/city-exteriors/guardian-angel-reviewed/office-roof.png",
+    "build/city-exteriors/guardian-angel-reviewed/carport.png"
+  ],
+  "firstReviewFindings": "5views inspected; A-frame and six sidebays established. Narrowmapped annex strip incorrectly obscured rightentrance: removed. Roof/mosaic PBR classified as wrong base material: now excluded from unrelated detail sets. Office/carport extension added after these views; review pending.",
+  "reviewFindings": "All six installed views inspected. Entrance clear; mural depth separation fixed. Flat roof PBR misclassification removed. Office west entrance/glazing and roof lattice visible. Carport open and paved. Simplified mural is not a faithful artwork reproduction. Landscape still sparse and old sidewalk segmentation visible.",
+  "fingerprints": {
+    "build/optimized/build/strip-landmarks/guardianAngel-exterior.glb": "9ad265e8e1dc9c472d5ee9b5105b0f652044496b38da6dbe4097de7c05487e89",
+    "tools/strip-landmarks/guardian_angel.py": "152cfbcc2ec746cac4a458febbd1f0efdd86a5b4ce1ed0f0cdaa69bfd14ecb7a",
+    "src/work/PbrDetailSets.ts": "ac7194e8dfa3c3030fc91b2deae57c1f246b7b87fa028ec385893b4be7420f49"
+  }
+}

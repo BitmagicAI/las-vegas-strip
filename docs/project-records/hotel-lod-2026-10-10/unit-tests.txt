@@ -1,0 +1,7 @@
+PASS: batch material factors, transformed bounds, exact grounding, hidden parents, scale-aware distance, hysteresis, clustering and disposal
+PASS: exact shadow triangle batching and moving door trim
+PASS: cross-block shader sharing and reference-counted disposal
+PASS: unsupported physical materials and inactive vertex colors preserve appearance
+PASS: small-detail cell culling preserves tower visibility, transforms, animated leaves and gameplay hiding
+PASS: asynchronously loaded doors register once after fitting, and dispose removes subscription
+PASS: hotel material/normal/UV continuity, retained transparent surfaces, geometry reduction, footprint ranges, stationary zoom and shared atlas lifetime

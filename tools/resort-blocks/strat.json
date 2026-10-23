@@ -1,0 +1,274 @@
+{
+  "id": "strat",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1475,-115.1568,790a,650d,35y,270h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "Hotel bands, pale podium, garage and roof layout; inspected."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1473,-115.1568,760a,1050d,35y,230h,70t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09 to 2024-03-05",
+      "establishes": "Viewed complete tripod/pod silhouette and base enclosure."
+    },
+    {
+      "url": "https://cppwind.com/wp-content/uploads/2019/08/StratosphereTower.pdf",
+      "provider": "CPP and Wright Engineers",
+      "establishes": "Observation264m; lattice mast280\u2013350m; open upper arm gaps."
+    },
+    {
+      "url": "https://wrightengineers.com/project/stratosphere-tower-hotel-and-casino/",
+      "provider": "Wright Engineers",
+      "establishes": "13-story pod,350m totalheight."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.14735,-115.1560,690a,290d,35y,270h,70t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "inspected": true,
+      "establishes": "Observed roof equipment and relative podium/tower heights."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.14685,-115.1563,620a,235d,35y,320h,65t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "inspected": true,
+      "establishes": "Observed taller buff podium, twin entrance wings, curved marquee and motor court."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1470,-115.1565,690a,290d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "inspected": true,
+      "establishes": "Top-down confirms curved plan and wing positions."
+    }
+  ],
+  "components": [
+    {
+      "id": "hotel",
+      "status": "pending"
+    },
+    {
+      "id": "podium",
+      "status": "pending"
+    },
+    {
+      "id": "garage",
+      "status": "pending"
+    },
+    {
+      "id": "frontage",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Observation tower replaced with tripod, glazed pod and lattice mast; exact pod proportions, ride structures and accessible observation interior remain unfinished.",
+    "Rooftop pools, landscaping, precise entrance and tenant frontage remain unfinished.",
+    "All four installed views inspected; lower frontage remains repetitive and lacks reference-specific signs/canopies.",
+    "No new collision; full public route traversal unverified."
+  ],
+  "geometry": {
+    "triangles": 7893,
+    "batches": 43,
+    "optimizedMiB": 0.64
+  },
+  "evidence": [
+    "build/city-exteriors/strat-after"
+  ],
+  "estimates": {
+    "hotelHeightM": 74,
+    "windowPitchM": 3,
+    "note": "Mapped height retained; facade dimensions photo-estimated."
+  },
+  "observationPass": {
+    "trianglesTotal": 29349,
+    "batchesTotal": 49,
+    "estimates": "Pod236\u2013280m, observation264m, top350m. Shaft cross-sections, deck diameter and pane spacing estimated from aerial references. No ride functionality or interior changes.",
+    "evidence": [
+      "build/city-exteriors/strat-observation-after/strat-tower.png",
+      "build/city-exteriors/strat-observation-after/strat-pod.png",
+      "build/city-exteriors/strat-observation-after/strat-base.png"
+    ],
+    "review": "All three inspected. Old cylinder removed; open lower/upper arm gaps and separate pod bands visible. Mast and base are estimates; rides and precise cladding need refinement.",
+    "tests": "324 deck/roof support rays pass. Typecheck and full WebGPU verify pass;57fps spawn,3011 bodies.",
+    "sha256": "0486ab08364b30010ad6a07585605eafce0756750e5e7db4f47c5a534eac4bd5"
+  },
+  "podiumAudit": {
+    "stage": "Installed and all five final views visually inspected; refinement remains.",
+    "source": "https://thestrat.com/userfiles/kcfinder/files/StratPropertyMap.pdf",
+    "sourceDate": "July2026",
+    "establishes": "Official property map distinguishes two Boulevard exits,hotel valet,garage escalator and pool access; downloaded text reviewed, image review pending.",
+    "beforeViews": "build/city-exteriors/strat-podium-before",
+    "beforeAllFourInspected": true,
+    "beforePerformance": [
+      {
+        "name": "strat-podium-east",
+        "eye": [
+          1790,
+          30,
+          -3520
+        ],
+        "target": [
+          1515,
+          8,
+          -3545
+        ],
+        "p": [
+          1677,
+          2,
+          -3515
+        ],
+        "p50": 18.299999952316284,
+        "p95": 21.200000047683716
+      },
+      {
+        "name": "strat-podium-north",
+        "eye": [
+          1600,
+          45,
+          -3753
+        ],
+        "target": [
+          1530,
+          12,
+          -3560
+        ],
+        "p": [
+          1585,
+          2,
+          -3680
+        ],
+        "p50": 29.899999856948853,
+        "p95": 36.10000014305115
+      },
+      {
+        "name": "strat-garage-west",
+        "eye": [
+          1260,
+          42,
+          -3550
+        ],
+        "target": [
+          1450,
+          14,
+          -3520
+        ],
+        "p": [
+          1330,
+          2,
+          -3515
+        ],
+        "p50": 16.799999952316284,
+        "p95": 19.700000047683716
+      },
+      {
+        "name": "strat-podium-south",
+        "eye": [
+          1520,
+          35,
+          -3310
+        ],
+        "target": [
+          1490,
+          10,
+          -3500
+        ],
+        "p": [
+          1475,
+          2,
+          -3375
+        ],
+        "p50": 16.5,
+        "p95": 19.5
+      }
+    ],
+    "changes": [
+      "Main casino facade height6m\u219218m; original tower geometry preserved",
+      "Buff panelled upper wall, projecting cornices and lower glazing",
+      "Twin sloping entrance wings,8.15m clear canopy and concave marquee",
+      "Garage roof mechanical grid removed",
+      "Flat roof material removes artificial corrugated appearance"
+    ],
+    "estimates": {
+      "casinoRoofM": 18,
+      "canopyUndersideM": 8.15,
+      "canopyTopM": 8.65,
+      "marqueeTopM": 16.4,
+      "uncertainty": "Visual estimates from2022Earth; no as-built measured heights available."
+    },
+    "remaining": [
+      "Main entrance still requires real interior connection",
+      "Pools and gardens not implemented",
+      "Garage remains facade-only without driveable decks",
+      "Gateway arches and detailed artwork absent"
+    ],
+    "tests": [
+      "202 new roof support samples PASS",
+      "56 canopy standing/vehicle headroom samples PASS",
+      "324 unchanged observation roof samples PASS",
+      "npm run check PASS",
+      "Python compile PASS",
+      "Local bitmagic verify PASS:52fps spawn,2965bodies; not full-site performance proof"
+    ],
+    "initialAfterViews": "build/city-exteriors/strat-podium-after",
+    "initialAfterAllFiveInspected": true,
+    "initialFindings": [
+      "Canopy frame normal faced inward across concave footprint chord; corrected explicit south-east normal",
+      "Duplicate upper-wall backing layer removed",
+      "Added garage roof parking stripes; stall arrangement estimated"
+    ],
+    "secondAfterViews": "build/city-exteriors/strat-podium-final",
+    "secondAfterAllFiveInspected": true,
+    "secondFindings": [
+      "Canopy orientation fixed, but mapped footprint fingers still extruded as tall pylons. Corrected by excluding only those two upper-volume footprints."
+    ],
+    "finalViews": "build/city-exteriors/strat-podium-reviewed",
+    "finalAllFiveInspected": true,
+    "geometry": {
+      "triangles": 37784,
+      "batches": 54,
+      "optimizedMiB": 1.13
+    },
+    "finalPerformanceMs": {
+      "east": [
+        16.9,
+        19.6
+      ],
+      "north": [
+        17.4,
+        19.8
+      ],
+      "westGarage": [
+        16.9,
+        19.5
+      ],
+      "south": [
+        16.7,
+        19.8
+      ],
+      "arrivalClose": [
+        16.9,
+        19.4
+      ]
+    },
+    "performanceMethod": "Fixed-camera180frames,1280x720ultra; not driving-route or guaranteed60fps.",
+    "review": "Correct outward canopy, visible sloping shoulders and concave marquee; generic tenant fronts, absent rooftop pools/gardens/gateway sculpture, facade-only garage and unverified public interior connection remain. Small distant upper-panel joint moire persists."
+  },
+  "poolIntegration20261021": {
+    "change": "Raised mapped pool platform to estimated26m at Level8; removed parent roof and equipment there, pool deck owns surface and basin. Other components retained.",
+    "evidence": "tools/resort-blocks/strat-pool-deck.json"
+  },
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/stratExterior-exterior.glb": "e698e5bdad13b4507149959c71a6d5eeb1935d01b1c5f1b7dc733605a9c9bd77",
+      "build/strip-landmarks/stratExterior-exterior-collision.json": "f6bd798413171463d3933035cc3038d5526042e3e67a76c905c14308171f5807"
+    }
+  },
+  "rideIntegration20261021": {
+    "change": "Added static Big Shot and X-Scream assemblies; removed false ground-level ride footprint.",
+    "evidence": "tools/resort-blocks/strat-thrill-rides.json"
+  }
+}

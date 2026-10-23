@@ -1,0 +1,8 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import R from '@dimforge/rapier3d-compat';await R.init();
+const w=new R.World({x:0,y:-9.81,z:0});const c=JSON.parse(fs.readFileSync('build/strip-landmarks/luxorParking-exterior-collision.json'));w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));w.step();const failures=[];let deckSamples=0,routeSamples=0;
+const model=JSON.parse(fs.readFileSync('build/strip-landmarks/luxorParking-exterior.json'));
+for(const g of model.meshes){if(!['skg-deck','tile'].includes(g.material))continue;for(const f of g.faces){const a=g.vertices[f[0]],b=g.vertices[f[1]],d=g.vertices[f[2]];if(Math.abs((b[0]-a[0])*(d[2]-a[2])-(b[2]-a[2])*(d[0]-a[0]))<1e-8)continue;const x=(a[0]+b[0]+d[0])/3,y=(a[1]+b[1]+d[1])/3,z=(a[2]+b[2]+d[2])/3;deckSamples++;const hit=w.castRay(new R.Ray({x,y:y+.03,z},{x:0,y:-1,z:0}),.06,true);if(!hit||Math.abs(hit.timeOfImpact-.03)>.015)failures.push({type:'support',x,y,z});}}
+function route(x,y,z){routeSamples++;const floor=w.castRay(new R.Ray({x,y:y+.1,z},{x:0,y:-1,z:0}),.2,true);if(!floor||Math.abs(floor.timeOfImpact-.1)>.02)failures.push({type:'routeFloor',x,y,z});const head=w.castRay(new R.Ray({x,y:y+.2,z},{x:0,y:1,z:0}),2.4,true);if(head)failures.push({type:'headroom',x,y,z});}
+for(let z=2321;z<2395;z+=1)route(-548,.24+(2395.2-z)/(2395.2-2320.6)*4,z);
+for(let x=-464;x<-341;x+=.5)route(x,4.24,2287);
+const report={deckSamples,routeSamples,failures,scope:'Deck support, central vehicle ramp and raised pedestrian axis; pyramid indoor continuation not asserted.'};fs.writeFileSync('build/city-exteriors/luxorParking-collision-test.json',JSON.stringify(report,null,2));console.log(report);w.free();assert.equal(failures.length,0);

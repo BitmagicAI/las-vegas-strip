@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-21",
+  "total": 631,
+  "statuses": {
+    "exterior-pass-reviewed-refinement-pending": 324,
+    "exterior-pass-reviewed": 27,
+    "reviewed-refinement-deferred": 16,
+    "existing-exterior-audited-refinement-pending": 48,
+    "refinement-deferred": 87,
+    "obsolete-footprint-removed": 1,
+    "implemented-visually-reviewed": 54,
+    "reviewed-refinement-pending": 74
+  },
+  "unreviewedIds": [],
+  "warning": "First-review coverage is not architectural completion. All refinement and dimensional uncertainty in individual block records remains open."
+}

@@ -1,0 +1,74 @@
+{
+  "id": "park-mgm",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1041,-115.1757,690a,650d,35y,270h,50t,0r",
+      "observed": "2022-11-09 imagery: pale punched-window tower, green caps, curved theatre roof and street pavilion"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/laspm-park-mgm-las-vegas-a-tribute-portfolio-resort/photos/",
+      "observed": "Photo29 Eataly entrance, steel gable with two sign bands, curved glazed Dolby Live frontage"
+    }
+  ],
+  "components": [
+    {
+      "id": "tower",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "podium",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "theatre-frontage",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "eataly-frontage",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "roof-plant",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "cvs-strip",
+      "status": "installed-reviewed"
+    }
+  ],
+  "remaining": [
+    "Gardens/pools and exact facade dimensions",
+    "Northern playable public door retained; southern Eataly pavilion exterior only",
+    "Small retail/service details remain approximate",
+    "Rear arrival court and pool landscaping remain simplified.",
+    "Canopy eave/ridge and sign dimensions are photo estimates; exact ornamental storefront treatment remains approximate."
+  ],
+  "tests": {
+    "entrySamples": 80,
+    "failures": 0,
+    "collision": "unchanged",
+    "views": "build/city-exteriors/park-final"
+  },
+  "latestEvidence": "build/city-exteriors/luxor-after/park-roof-final.png",
+  "podiumAudit20261014": {
+    "status": "installed-visually-reviewed-refinement-pending",
+    "research": "docs/project-records/city-exteriors-2026-10-14/park-podium-research.json",
+    "changed": "Roof finishes, diagonal Eataly roof covering complete mapped hall and open projection. Generic roofpart solid replaced with open canopy plus solid porch floor.",
+    "geometryAudit": "build/city-exteriors/park-eataly-audit.json",
+    "routeChecks": 108,
+    "failures": 0,
+    "views": "build/city-exteriors/park-eataly-final",
+    "cityPreservation": "8478nonbuildinggroups unchanged",
+    "geometry": {
+      "totalTriangles": 131610,
+      "eatalyTriangles": 1719,
+      "netTrianglesAdded": 483,
+      "retainedGroups": 43,
+      "addedCollisionTriangles": 36
+    },
+    "performance": "build/city-exteriors/park-eataly-final/performance.json",
+    "viewNotes": "Six final views plus canopy-close and Dolby-restored inspected. Original north street view rejected because camera was inside adjacent building; replaced elevated rear view exposes simplified arrival court, retained on refinement list.",
+    "finalCloseViews": "build/city-exteriors/park-close-nyny-baseline"
+  }
+}

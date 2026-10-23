@@ -1,0 +1,117 @@
+{
+  "id": "festival-grounds-service",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/568597552"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14333,-115.16000&zoom=20&basemap=satellite",
+      "review": "Stepped white flat roof, two central mechanical units, smaller vents, red base trim, narrow green south recess. 235 appears map label, not painted roof number; no numeral authored."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14365,-115.16000&heading=180&pitch=3",
+      "imageDate": "February2026",
+      "review": "Festival grounds perimeter fence hides lower facade; low tan roofline visible behind it."
+    }
+  ],
+  "estimates": [
+    "Wall height4.15m estimated",
+    "Service door and vent positions inferred, no verified building function beyond grounds auxiliary",
+    "South green recess interpreted as shallow canopy; uncertain"
+  ],
+  "remaining": [
+    "Wider festival ground asphalt, perimeter fence, landscaping and permanent event structures remain unauthored",
+    "Hidden wall access layout and south canopy inferred; precise function unverified",
+    "No interiors, neutral daylight or full driving benchmark"
+  ],
+  "triangles": 2874,
+  "batches": 15,
+  "optimizedMiB": 0.07,
+  "ownership": {
+    "removed": 46,
+    "colliderTrianglesRemoved": 46,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in FestivalGroundsService mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "462 roof support samples PASS",
+    "10 ground walking legs PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/festival-grounds-service-final/festival-north.png",
+    "build/city-exteriors/festival-grounds-service-final/festival-roof.png",
+    "build/city-exteriors/festival-grounds-service-final/festival-south.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "festival-north",
+        "eye": [
+          1166,
+          5,
+          -3062
+        ],
+        "target": [
+          1168,
+          2,
+          -3037
+        ],
+        "p": [
+          1168,
+          2,
+          -3046
+        ],
+        "p50": 16.799999952316284,
+        "p95": 18
+      },
+      {
+        "name": "festival-roof",
+        "eye": [
+          1203,
+          33,
+          -3011
+        ],
+        "target": [
+          1168,
+          2,
+          -3036
+        ],
+        "p": [
+          1196,
+          2,
+          -3036
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18
+      },
+      {
+        "name": "festival-south",
+        "eye": [
+          1170,
+          3,
+          -3013
+        ],
+        "target": [
+          1168,
+          2,
+          -3034
+        ],
+        "p": [
+          1170,
+          2,
+          -3025
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18
+      }
+    ],
+    "limitation": "Static views not driving benchmark"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/festivalGroundsService-exterior.glb": "01da2f665dad004deb12500df968c54cce0e70dcbd7cd94c366888335dd1a166",
+      "build/strip-landmarks/festivalGroundsService-exterior-collision.json": "b1b74b3979e31454c1abf2a8989d73d9c8483de8bbce57feb290741edfae5b04"
+    }
+  }
+}

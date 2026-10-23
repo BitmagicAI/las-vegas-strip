@@ -1,0 +1,41 @@
+{
+  "id": "st-louis-office-515",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364845139"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14815,-115.15315&heading=0&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Snapped36.1481186,-115.1531043. Rear of515: red brick, ornate white cornice/shallow arch bands, raised white doors and short steps/blackmetal guards, electrical service cabinets, dark roof edging."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14822,-115.15317&zoom=21&basemap=satellite",
+      "observed": "Near-square footprint rotated withStLouisAve, white flat central roof, dark peripheral mansard, small redhip entry tower on west side, four rooftop HVAC units, xeriscape southborder and parkingwest/north."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14823,-115.15348&heading=60&pitch=0",
+      "imageDate": "February2022",
+      "observed": "Building C515 street entry: white arcaded porch, brick back walls, small two-arched-window entry tower with redhip roof, darkmansard. CulinaryHealthFund pylon and545CulinaryPharmacy across parking visible. Older front source; current tenant identity not claimed."
+    }
+  ],
+  "remaining": [
+    "Front imagery older than rear; current branding uncertain",
+    "Elevations, canopy depth and accessibility ramp positions are estimates",
+    "Street landscaping, parking paving/markings and fine ornamental cornice profiles remain incomplete",
+    "Neutral daylight and full perimeter drive review pending; no interiors reconstructed"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/st-louis-office-515-final",
+    "visualReview": "Installed front, rear and aerial views inspected. Brick walls, arcade, red entrance roof and central flat roof visible. Forecourt paving remains incomplete; not photorealistic completion.",
+    "tests": "32 support and 6 walk legs passed; 10 old building triangles removed.",
+    "implementation": "11890 triangles,20 batches,.38MiB optimized. Static960x540 p95~18.2ms, not route benchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/stLouisOffice515-exterior.glb": "415487bfd7ba288ddc81f1129b36bb56c137c32a742882a0267bbba88f99434e",
+      "build/strip-landmarks/stLouisOffice515-exterior-collision.json": "eed45af0b109252cdbf186322ac9ad4e487af2c47a3765a09096f44e90aecc0a"
+    }
+  }
+}

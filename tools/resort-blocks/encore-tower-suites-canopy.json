@@ -1,0 +1,114 @@
+{
+  "id": "encore-tower-suites-canopy",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/182524943"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.129837,-115.165016&zoom=21&basemap=satellite",
+      "review": "Mapped structure alongside Encore tower; rooftop parallax obscures ground canopy in overhead image."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12978,-115.16495&heading=330&pitch=5",
+      "imageDate": "January2025",
+      "review": "White columns, black-and-white striped concave hip fabric canopy and valance, glazed entry and landscaped traffic island inspected."
+    }
+  ],
+  "remaining": [
+    "Canopy height/profile and door dimensions estimated; no interior access or exact entrance survey",
+    "Stripe orientation is globally projected rather than sewn radial gores; fabric thickness/seams and finer furnishings remain simplified",
+    "Parent tower ground-level facade and landscaped arrival court still differ substantially from reference",
+    "Static960x540 measurements only; no moving-route60fps or photorealistic claim"
+  ],
+  "triangles": 3699,
+  "batches": 5,
+  "optimizedMiB": 0.17,
+  "viewsInspected": [
+    "build/city-exteriors/encore-tower-suites-canopy-final/encore-canopy-entry.png",
+    "build/city-exteriors/encore-tower-suites-canopy-final/encore-canopy-under.png",
+    "build/city-exteriors/encore-tower-suites-canopy-final/encore-canopy-roof.png"
+  ],
+  "tests": [
+    "226 curved-roof support samples passed",
+    "Four bidirectional under-canopy walking reports passed",
+    "44 old ground-level building triangles and colliders removed",
+    "Three installed views inspected twice; added entrance surround/closed doors and continued stripes across crown"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "encore-canopy-entry",
+        "eye": [
+          732,
+          3,
+          -1530
+        ],
+        "target": [
+          718,
+          4,
+          -1540
+        ],
+        "p": [
+          730,
+          1,
+          -1530
+        ],
+        "p50": 21.5,
+        "p95": 25.19999998807907
+      },
+      {
+        "name": "encore-canopy-under",
+        "eye": [
+          719,
+          2,
+          -1538
+        ],
+        "target": [
+          716,
+          4,
+          -1545
+        ],
+        "p": [
+          719,
+          1,
+          -1538
+        ],
+        "p50": 23.5,
+        "p95": 26.200000047683716
+      },
+      {
+        "name": "encore-canopy-roof",
+        "eye": [
+          736,
+          18,
+          -1527
+        ],
+        "target": [
+          718,
+          5,
+          -1540
+        ],
+        "p": [
+          730,
+          1,
+          -1530
+        ],
+        "p50": 20.899999976158142,
+        "p95": 24.5
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 44,
+    "colliderTrianglesRemoved": 44,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in encoreSuitesCanopy mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/encoreSuitesCanopy-exterior.glb": "7cc1f48c250b6d2703b75e71708a1e64ff20f36f1850a4b8df2170c92c524c70",
+      "build/strip-landmarks/encoreSuitesCanopy-exterior-collision.json": "7a64c8c4f8f1db85b4b1c9e5fd2f4e4f1ff7ebe958ad0c52df7ff071939e07d5"
+    }
+  }
+}

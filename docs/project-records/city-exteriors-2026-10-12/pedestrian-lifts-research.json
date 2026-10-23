@@ -1,0 +1,86 @@
+{
+  "status": "research-only",
+  "mappedIds": [
+    "way/1421481095",
+    "way/1421481096",
+    "way/1421481101",
+    "way/1421481079"
+  ],
+  "existingLift": "build/geographic-strip/access/way-1421481095.json",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.109334,-115.173594&zoom=21&basemap=satellite",
+      "observed": "Compact square pale-roofed shaft beside Cosmopolitan/Harmon bridge with adjacent stair/escalator approaches. Aerial inspected."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.10924,-115.17363&heading=20&pitch=10",
+      "observed": "November2015 Angelia Olivas upper bridge photosphere; does not establish present lift facade, not sufficient modeling evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.10842,-115.17331&heading=250&pitch=8",
+      "panoId": "udXWxfymBjrMrG3U1ZSERQ",
+      "imageDate": "April2025",
+      "mappedId": "way/1421481096",
+      "observed": "Ground photo visibly shows Crystals attached lift: large satin-metal panel grid, projecting pale ELEVATOR sign and flush inset service door. Adjacent storefront photography is reference only, not a game texture. Upper termination not visible.",
+      "upperView": "Same panorama pitch35 inspected: square flat termination, metal cladding continues above bridge deck, narrow upper vent; pale bridge fascia with glazed balustrade."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4ABbWfE1KjvvttkPWIk06g&heading=170&pitch=0",
+      "imageDate": "April2025",
+      "mappedId": "way/1421481101",
+      "observed": "Upper landing: satin-metal panel-grid shaft, stainless two-leaf lift door, projecting ELEVATOR sign, flat roof roughly4m above bridge. Adjacent glass railing and escalator. Map height5m cannot represent full shaft from ground. Need actual deck datum before authoring."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=636EwsXKXNWPXztiBAE50g&heading=240&pitch=10",
+      "imageDate": "April2025",
+      "mappedId": "way/1421481095",
+      "observed": "Upper Cosmopolitan landing: flat silver panel-grid shaft, glass double doors with metallic surround, fine headband; immediately joins glass bridge and casino facade."
+    },
+    {
+      "url": "https://www.kunr.org/2024-02-14/a-new-ordinance-aims-to-keep-people-from-loitering-on-pedestrian-bridges-but-enforcement-is-unclear",
+      "image": "https://npr.brightspotcdn.com/dims4/default/9e21d17/2147483647/strip/true/crop/4032x2483%2B0%2B270/resize/880x542%21/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe8%2F19%2Fb40ad5ac40978b82cbd764f47bd0%2Fimg-3924.jpg",
+      "mappedId": "way/1421481079",
+      "observed": "Visually inspected photograph: Park MGM recognizable behind compact dark-stucco upper lift shaft, shallow cantilevered metal canopy, stainless doors, glazed landing and glass enclosure beside escalator. Assignment inferred from visible Park MGM building, not independently surveyed."
+    },
+    {
+      "url": "https://www.harmoncorner.com/leasing",
+      "image": "https://static.wixstatic.com/media/f92106_bdedbb1673394746af4772f4525dc314~mv2.png/v1/fill/w_980%2Ch_871%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Leasing%20Floor%20Plan-02_V2.png",
+      "accessed": "2026-10-21",
+      "observed": "Owner second-floor leasing plan visually inspected: public Atrium between west and south bridges. OSM297110935 supplies corridor centerline; exact width and ceiling height estimated. Site describes current renovations, tenant plan may change."
+    }
+  ],
+  "installedBaseline": "build/city-exteriors/service-lift-baseline",
+  "findings": [
+    "1095: existing runtime lift, generic large concourse obscures exact compact shaft; must retain functional lift and entrance.",
+    "1096: city box already removed; Crystals facade in place but actual shaft and lift access absent.",
+    "1101: 5m plain city box; bridge continuation missing at upper floor.",
+    "1079: existing bridge landing and mall facade; shaft not visible in baseline, ownership correction needed."
+  ],
+  "deckDatumM": 6.035,
+  "rejectedReferences": [
+    "Park MGM coordinate Street View snapped to unrelated Neil Tantay September2017 Bellagio photo; not accepted."
+  ],
+  "mappedConnections": {
+    "eastCrossing": 297110936,
+    "westLanding": 179790277,
+    "atriumCorridor": 297110935,
+    "centralStair": 297111279,
+    "escalators": [
+      1436820364,
+      1436820365
+    ]
+  },
+  "eastLiftProgress": {
+    "asset": "harmonEastLift",
+    "geometryTriangles": 6539,
+    "batches": 11,
+    "supportSamples": 426,
+    "walkReports": 14,
+    "stage": "Installed visual review and actual door/lift interaction pending",
+    "knownApproximation": [
+      "Upper lift roof10.08m estimated; deck6.035 matches current city.",
+      "Escalator treads static; functional walkable sloping collision, no moving stair animation.",
+      "Atrium corridor follows real mapped route; neutral wall/floor finish and6m width approximate, tenant interiors not remodeled."
+    ]
+  }
+}

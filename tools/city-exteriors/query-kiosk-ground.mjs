@@ -1,0 +1,2 @@
+import fs from 'node:fs';import R from '@dimforge/rapier3d-compat';
+await R.init();let w=new R.World({x:0,y:-9.8,z:0});for(let c of JSON.parse(fs.readFileSync('build/geographic-strip/city-colliders.json'))){if(c.indices.length)w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices),144));}w.step();for(let [x,z]of[[-43,1558],[-48,1563],[-52,1557],[-48,1553]]){let h=w.castRay(new R.Ray({x,y:1.5,z},{x:0,y:-1,z:0}),3,true);console.log({x,z,y:h?1.5-h.timeOfImpact:null});}w.free();

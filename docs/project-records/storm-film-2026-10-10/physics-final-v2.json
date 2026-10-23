@@ -1,0 +1,19 @@
+{
+  "samples": 2701,
+  "duration": 45.02360153198242,
+  "maximumSpeedKmh": 125.00371856689453,
+  "peakChassisRollDegrees": 1.4860418031204412,
+  "peakSprungRollDegrees": 7.051957728400248,
+  "peakSprungPitchDegrees": 5.037380199213471,
+  "fractionWithAtLeastTwoContacts": 0.9955572010366531,
+  "maxLaneErrorM": 3.7425832748413086,
+  "arrivalErrorM": 2.1470624507875273,
+  "bellagioSlide": {
+    "time": 24.290266036987305,
+    "speedKmh": 77.78541412353516,
+    "slipDegrees": 30.728570283402146
+  },
+  "impacts": 77,
+  "peakRagdolls": 20,
+  "dynamic": true
+}

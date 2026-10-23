@@ -1,0 +1,122 @@
+{
+  "id": "perception-museum",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364843228"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.13825,-115.16150&zoom=20&basemap=satellite",
+      "review": "Angled rectangular roof with recessed central mechanical court; wide east gravel plaza with palms and bollards; west parking"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.13821,-115.16105&heading=270&pitch=4",
+      "imageDate": "January2025",
+      "review": "Black/white angular optical facade, yellow branding field, black slanted cap bollards with paired white bands; gravel palms and low shrubs"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/now-open-las-vegas-first-permanent-digital-art-museum-perception-301567891.html",
+      "provider": "PERCEPTION Las Vegas press release",
+      "published": "2022-06-14",
+      "review": "Identifies museum at2780S LasVegasBlvd; not proof current operations"
+    }
+  ],
+  "estimates": [
+    "Height and hidden access details estimated"
+  ],
+  "remaining": [
+    "Palms stylized; concealed entrance/service details estimated",
+    "No interiors; current operating status unverified",
+    "Unchanged dark city surface outside authored forecourt; wider site treatment remains",
+    "No neutral daylight or full driving benchmark"
+  ],
+  "triangles": 10484,
+  "batches": 19,
+  "ownership": {
+    "removed": 10,
+    "colliderTrianglesRemoved": 10,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in PerceptionMuseum mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "395 roof support samples PASS",
+    "12 ground walking legs PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/perception-museum-final/perception-east.png",
+    "build/city-exteriors/perception-museum-final/perception-roof.png",
+    "build/city-exteriors/perception-museum-final/perception-plaza.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "perception-east",
+        "eye": [
+          1069,
+          5,
+          -2463
+        ],
+        "target": [
+          1037,
+          3,
+          -2472
+        ],
+        "p": [
+          1060,
+          2,
+          -2463
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.899999976158142
+      },
+      {
+        "name": "perception-roof",
+        "eye": [
+          1080,
+          42,
+          -2440
+        ],
+        "target": [
+          1033,
+          3,
+          -2473
+        ],
+        "p": [
+          1060,
+          2,
+          -2465
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.80000001192093
+      },
+      {
+        "name": "perception-plaza",
+        "eye": [
+          1037,
+          2.2,
+          -2441
+        ],
+        "target": [
+          1041,
+          3,
+          -2470
+        ],
+        "p": [
+          1037,
+          2,
+          -2441
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.100000023841858
+      }
+    ],
+    "limitation": "Static views, not full route benchmark"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/perceptionMuseum-exterior.glb": "ad5eec17631aea39986476748d1d2f3ab8c8ca2a291c6e991122a27234eb418e",
+      "build/strip-landmarks/perceptionMuseum-exterior-collision.json": "345ae4b3c2d906ec863c604336e92bf1cf6b9c2f7557454e6fb92d93f32b79dc"
+    }
+  },
+  "materialIsolation": "Renamed museum materials from shared pm prefix to perception prefix; existing Park MGM palette retained."
+}

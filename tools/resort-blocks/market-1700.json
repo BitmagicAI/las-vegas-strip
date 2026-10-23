@@ -1,0 +1,40 @@
+{
+  "id": "market-1700",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/316303724"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15080,-115.15283&heading=270&pitch=0",
+      "pano": "HVuHbSUGNp9h92Q_FZlkxw",
+      "imageDate": "January2026",
+      "observed": "Closed blue boarded shop, white peeling corrugated fascia with MARKET and LIQUOR signs; FOR SALE panel. Raised front platform, black handrail, temporary mesh fence and yellow edge steps atnorth."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15085,-115.15265&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Fullfrontage viewed acrossstreet: roofsignWHITE CROSS MARKET, green upper panel, flatroof,bluecoping. OldmappedNativeAmericanJewelry label is stale."
+    }
+  ],
+  "remaining": [
+    "Height4.5mestimated",
+    "Fine sign font and logo missing",
+    "Rear service treatment inferred",
+    "Closed property has no interior access",
+    "Weathering is an original procedural approximation; exact damage pattern and panel distortion remain unmatched."
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/market-1700-final",
+    "support": "build/city-exteriors/market-1700-collision.json",
+    "walk": "build/city-exteriors/market-1700-walk.json",
+    "ownership": "build/city-exteriors/market-1700-ownership-audit.json",
+    "visualReview": "Three installed views inspected. Missing UVs fixed and overly large regular chips reduced after close-up review. 50 support samples and six walking legs passed. 26 old triangles removed. 6787 authored triangles/17 batches/0.55 MB optimized. No photoreal completion claim."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/market1700-exterior.glb": "177238e9427922e65869fedc7710db74ebeaff03ec289ff48a5605ad019dbff5",
+      "build/strip-landmarks/market1700-exterior-collision.json": "0d4a4dc0ce9b002f1dcd334d8c7f922928f6c091c55c4d371820a32c5bb195e5"
+    }
+  }
+}

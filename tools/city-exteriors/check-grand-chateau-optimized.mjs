@@ -1,0 +1,5 @@
+import {NodeIO} from '../optimize/bm-tools/gltf/node_modules/@gltf-transform/core/dist/index.js';
+import {ALL_EXTENSIONS} from '../optimize/bm-tools/gltf/node_modules/@gltf-transform/extensions/dist/index.js';
+import {MeshoptDecoder} from '../optimize/bm-tools/gltf/node_modules/meshoptimizer/index.js';
+await MeshoptDecoder.ready;const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.decoder':MeshoptDecoder});const d=await io.read('build/optimized/build/strip-landmarks/grandChateauExterior-exterior.glb');
+for(const m of d.getRoot().listMeshes())for(const p of m.listPrimitives()){const V=p.getAttribute('POSITION').getArray(),I=p.getIndices().getArray();for(let k=0;k<I.length;k+=3){const a=Array.from(V.slice(I[k]*3,I[k]*3+3)),b=Array.from(V.slice(I[k+1]*3,I[k+1]*3+3)),c=Array.from(V.slice(I[k+2]*3,I[k+2]*3+3));const x=340,z=980,den=(b[2]-c[2])*(a[0]-c[0])+(c[0]-b[0])*(a[2]-c[2]);if(Math.abs(den)<1e-8)continue;const u=((b[2]-c[2])*(x-c[0])+(c[0]-b[0])*(z-c[2]))/den,v=((c[2]-a[2])*(x-c[0])+(a[0]-c[0])*(z-c[2]))/den;if(u>=0&&v>=0&&u+v<=1)console.log(m.getName(),p.getMaterial().getName(),u*a[1]+v*b[1]+(1-u-v)*c[1]);}}

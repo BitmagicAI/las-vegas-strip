@@ -1,0 +1,63 @@
+{
+  "id": "paris-parking",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/33974142"
+  ],
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1122,-115.1683,650a,290d,35y,270h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1122,-115.1683,740a,290d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1122,-115.1683,655a,300d,35y,150h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://www.caesars.com/content/dam/empire/plv/property/rideshare/paris-las-vegas-map.pdf",
+      "inspected": "Page1 visually read; garage escalator/lifts beside Champagne ballroom and FedEx business center",
+      "localCopy": "docs/project-records/city-exteriors-2026-10-12/references/paris-parking-map.pdf"
+    }
+  ],
+  "dimensions": "Mapped93x180m footprint,9OSMlevels; ground6.2m and upper3m pitch estimated;roof27.24m plusparapet/cores approx29m. Exactrampelevations and stairdimensions not surveyed.",
+  "remaining": [
+    "Exact ramp/floor elevations inferred rather than surveyed",
+    "Hotel garage escalator/lift indoor continuation not modeled",
+    "Ground stair access and forecourt/apron detailing",
+    "Local vehicle traversal and site performance benchmark"
+  ],
+  "geometry": {
+    "triangles": 47815,
+    "batches": 10,
+    "optimizedMiB": 0.94
+  },
+  "tests": "165 deck support and450 ramp support/headroom samples PASS; typecheck PASS;1517 city collision cells valid. Installed review pending. Full local WebGPU verify PASS55fpsstartup3011bodies, not site benchmark.",
+  "rampAssumptions": "Upper20m slot pitch3m; ground floor requires40m northern extension rising6m. This clearance-correct layout is inferred, not verified construction plans. Initial opposing ground switchback collided with upper ramp and was replaced.",
+  "viewsReviewed": [
+    "build/city-exteriors/paris-parking-after/northwest.png",
+    "build/city-exteriors/paris-parking-after/east.png",
+    "build/city-exteriors/paris-parking-after/entry.png",
+    "build/city-exteriors/paris-parking-after/roof.png",
+    "build/city-exteriors/paris-parking-after/ramp.png"
+  ],
+  "reviewFindings": "Five installed views visually inspected. Rounded openings show real floors behind them; ground arch entry is open and roof ramp is present. Pale blue panels appear muted under sunset. Door/approach details, lower exterior stair connections and indoor garage lift/escalator route remain unverified.",
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-paris-parking.log",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/parisParking-exterior.glb": "6bafa4ad0f3e879aa19d0627730fc6248fbd452586df10933169ce782647661a"
+    }
+  }
+}

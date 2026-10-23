@@ -1,0 +1,41 @@
+{
+  "id": "trump",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1296,-115.1726,850a,650d,35y,70h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "Gold narrow stepped tower, white crown, low podium, southern long pool deck and entry roof; visually inspected."
+    },
+    {
+      "url": "https://www.trump.com/residential-real-estate-portfolio/trump-international-las-vegas-nevada",
+      "establishes": "Official 64-storey gold glass tower and outdoor pool deck."
+    }
+  ],
+  "remaining": [
+    "Pool furnishings, deck enclosure and landscaping unfinished.",
+    "Exact entry facade details and crown signage proportions approximate.",
+    "Existing guest route retained but full city route traversal not performed."
+  ],
+  "geometry": {
+    "triangles": 8102,
+    "batches": 15,
+    "optimizedMiB": 0.18
+  },
+  "estimates": {
+    "towerM": 195,
+    "podiumM": 16,
+    "pool": "51m by 11m, estimated",
+    "crownBandM": 5
+  },
+  "evidence": [
+    "build/city-exteriors/trump-before",
+    "build/city-exteriors/trump-after"
+  ],
+  "tests": {
+    "typecheck": "passed",
+    "arrivalClearance": "45 samples pass with new and retained highrise collision",
+    "visual": "All three installed views inspected; silhouette now narrow, no duplicate tall podium. Glass reflection/roughness still needs daylight refinement."
+  }
+}

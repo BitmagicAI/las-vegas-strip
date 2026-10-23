@@ -1,0 +1,5 @@
+LOD baseline installed in 1 module response(s)
+page errors:
+[ServiceWorkerCacheBuster] Failed to register service worker: TypeError: Cannot read properties of undefined (reading 'addEventListener')
+    at registerCacheBusterServiceWorker (http://localhost:3090/dist/engine/core/utils/ServiceWorkerCacheBuster.js:24:26)
+    at async initializeAutoCacheBusting (http://localhost:3090/dist/engine/core/utils/AutoCacheBuster.js:24:13)

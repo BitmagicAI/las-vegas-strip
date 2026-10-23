@@ -1,0 +1,293 @@
+{
+  "id": "resorts-world",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://enclos.com/project/resorts-world-las-vegas/",
+      "provider": "Curtainwall contractor Enclos",
+      "accessDate": "2026-10-12",
+      "observed": "Built night photograph reviewed: bronze glass wings with red side/central metal infill, broad west LED and slim east-end LED, low-rise gold frontage."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1322,-115.1657,650a,380d,35y,270h,65t,0r",
+      "accessDate": "2026-10-12",
+      "imageryDate": "2022-11-09 to 2024-03-05",
+      "observed": "Two aerial scales inspected. Cream east podium with unequal vertical fins, bronze round southern pavilion, small ground storefronts, landscaped east forecourt, pool court below curved towers, rear garage."
+    },
+    {
+      "url": "https://www.rwlasvegas.com/wp-content/uploads/2026/06/resorts_world_las_vegas_level_5_pool_deck_map.jpg",
+      "provider": "Resorts World official June 2026 map",
+      "observed": "Curved main pool, circular cabana pool, Bimini, Sunkissed and Athena pools traced schematically and fitted to tower anchors."
+    },
+    {
+      "url": "https://girouxglass.com/project/resorts_world/",
+      "provider": "Giroux Glass, glazing contractor",
+      "accessDate": "2026-10-13",
+      "observed": "Text establishes southeast entry 18 steel-loaded I mullions, each52ft(15.85m); southern Zouk wrap display64ft(19.51m) tall. 28x28ft skylights elsewhere. Photo review pending; do not assume drawing locations."
+    },
+    {
+      "url": "https://www.rwlasvegas.com/wp-content/uploads/2023/04/RW-Main-Entrance-Exterior-Sunrise.jpg",
+      "provider": "Resorts World official press gallery",
+      "accessDate": "2026-10-13",
+      "observed": "Visually inspected official sunrise photo: broad flat bronze canopy, pale rectangular columns, curved glazed pavilion and heavy landscaped islands; main arrival distinct from Strip retail frontage."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13325,-115.1651,650a,270d,35y,270h,68t,0r",
+      "accessDate": "2026-10-13",
+      "imageryDate": "2022-11-09",
+      "observed": "Close aerial reviewed. Rounded bronze corner with red base portal, red rectangular central entrance, slanted vertical upper fins, red storefront awnings, triangular stepped grass/paving and pale oval forecourt."
+    }
+  ],
+  "components": [
+    {
+      "id": "tower",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "podium",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "arrival",
+      "status": "partial"
+    },
+    {
+      "id": "pool-deck",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "street-frontage",
+      "status": "partial"
+    }
+  ],
+  "remaining": [
+    "Landscaping, pool furniture and full terrace access remain unfinished.",
+    "Rounded southern pavilion and individual restaurant details need closer fit; current facade is simplified.",
+    "Main LED has original abstract art, not copied advertising; slim east display UV composition needs refinement.",
+    "Main arrival bronze canopy and planted islands remain unimplemented; Strip retail entrance is a separate structure.",
+    "No trees in new forecourt lawn bands; planting, individual storefront detail and public connections remain incomplete."
+  ],
+  "estimatedDimensions": {
+    "podiumTopM": 20,
+    "theatreTopM": 24,
+    "method": "Photo-derived estimates; tower205.4m retained from mapped height."
+  },
+  "geometry": {
+    "triangles": 13354,
+    "batches": 46
+  },
+  "tests": {
+    "roofSupportSamples": 591,
+    "failures": 0,
+    "typecheck": "passed"
+  },
+  "evidence": [
+    "build/city-exteriors/resorts-world-before",
+    "build/city-exteriors/resorts-world-after",
+    "build/city-exteriors/resorts-world-final"
+  ],
+  "podiumPass": {
+    "stage": "installed-visually-reviewed-refinement-deferred",
+    "date": "2026-10-13",
+    "before": "build/city-exteriors/resorts-world-podium-before",
+    "after": "build/city-exteriors/resorts-world-podium-final",
+    "changes": [
+      "Corrected mapped bronze corner glazing and southern blue Zouk facade zone, replacing displaced flat pavilion.",
+      "Red retail portal, mullioned glazing, red awnings, projecting upper fins.",
+      "36m approach stair aligned to mapped pedestrian path; continuous ramp and handrails. Interior connection remains unimplemented.",
+      "Pale roof membrane removes generic corrugated appearance.",
+      "Clipped lawn bands and oval paved forecourt; service-side planter removed to preserve driveway clearance."
+    ],
+    "tests": {
+      "roofSupportSamples": 591,
+      "stairSupportAndHeadroomSamples": 135,
+      "failures": 0,
+      "typecheck": "passed",
+      "minimumServiceCenterlineSeparationM": 6.96954,
+      "verify": "Failed to detect Play at 15s settle cap; menu 30fps/2965 bodies. Direct installed game probe succeeded in four views."
+    },
+    "estimatedDimensions": {
+      "entryRiseM": 3.3,
+      "entryFrameHeightM": 20,
+      "entryWidthM": 12.9,
+      "stairRunM": 36,
+      "method": "Visually fitted to 2022 Earth imagery; not surveyed dimensions."
+    },
+    "performance": {
+      "before": [
+        {
+          "name": "rw-street-south",
+          "eye": [
+            780,
+            28,
+            -1780
+          ],
+          "target": [
+            663,
+            12,
+            -1840
+          ],
+          "p": [
+            723,
+            2,
+            -1810
+          ],
+          "p50": 16.700000047683716,
+          "p95": 17.399999856948853
+        },
+        {
+          "name": "rw-street-main",
+          "eye": [
+            815,
+            30,
+            -1935
+          ],
+          "target": [
+            698,
+            12,
+            -1910
+          ],
+          "p": [
+            768,
+            2,
+            -1920
+          ],
+          "p50": 16.700000047683716,
+          "p95": 17.799999952316284
+        },
+        {
+          "name": "rw-arrival-east",
+          "eye": [
+            857,
+            23,
+            -2130
+          ],
+          "target": [
+            730,
+            10,
+            -2075
+          ],
+          "p": [
+            794,
+            2,
+            -2090
+          ],
+          "p50": 16.700000047683716,
+          "p95": 18.699999809265137
+        },
+        {
+          "name": "rw-podium-roof",
+          "eye": [
+            790,
+            125,
+            -1760
+          ],
+          "target": [
+            580,
+            20,
+            -1980
+          ],
+          "p": [
+            733,
+            2,
+            -1860
+          ],
+          "p50": 16.5,
+          "p95": 18.899999856948853
+        }
+      ],
+      "after": [
+        {
+          "name": "rw-street-south",
+          "eye": [
+            780,
+            28,
+            -1780
+          ],
+          "target": [
+            663,
+            12,
+            -1840
+          ],
+          "p": [
+            723,
+            2,
+            -1810
+          ],
+          "p50": 16.600000143051147,
+          "p95": 17.299999952316284
+        },
+        {
+          "name": "rw-street-main",
+          "eye": [
+            815,
+            30,
+            -1935
+          ],
+          "target": [
+            698,
+            12,
+            -1910
+          ],
+          "p": [
+            768,
+            2,
+            -1920
+          ],
+          "p50": 16.699999809265137,
+          "p95": 17.40000009536743
+        },
+        {
+          "name": "rw-arrival-east",
+          "eye": [
+            857,
+            23,
+            -2130
+          ],
+          "target": [
+            730,
+            10,
+            -2075
+          ],
+          "p": [
+            794,
+            2,
+            -2090
+          ],
+          "p50": 16.700000047683716,
+          "p95": 17.700000047683716
+        },
+        {
+          "name": "rw-podium-roof",
+          "eye": [
+            790,
+            125,
+            -1760
+          ],
+          "target": [
+            580,
+            20,
+            -1980
+          ],
+          "p": [
+            733,
+            2,
+            -1860
+          ],
+          "p50": 16.700000047683716,
+          "p95": 17.40000009536743
+        }
+      ],
+      "method": "1280x720 ultra; 180 frames per fixed camera, not a driving or streaming guarantee."
+    }
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/resortsWorldExterior-exterior.blend1": "4bbfd2d088ae35815e0a3a3620ebddc21232508d33cacc9407f631ba9b09542b",
+      "build/strip-landmarks/resortsWorldExterior-exterior-collision.json": "ce9958456ce956a0d04426d87c4894b09b02973f98fa3b0c2fcb7019d7f168e4",
+      "build/strip-landmarks/resortsWorldExterior-exterior.glb": "33a8f174c260cd0b29a8a89e160c86b952f49a953c6bdb3624def5a49cf41b3c",
+      "build/strip-landmarks/resortsWorldExterior-exterior.json": "64c8c44bcbdd0e7f35e5be821c9cf7aef5968d4a53a00f19f26e3cc0dbbc5431",
+      "build/strip-landmarks/resortsWorldExterior-exterior.blend": "6167ca07f92a06692bef32ff5e7cf1187fa13feb301cd3f837f905aa68ce6b43"
+    }
+  }
+}

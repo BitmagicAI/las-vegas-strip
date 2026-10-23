@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-21",
+  "features": [
+    {
+      "ids": [
+        "way/180766593",
+        "way/851629120"
+      ],
+      "identified": "Mirage roadside marquee and small adjoining shelter",
+      "source": "https://www.google.com/maps/@?api=1&map_action=map&center=36.119836,-115.173&zoom=21&basemap=satellite",
+      "observed": "Broad white marquee cap, pair of white piers, dark display and cream vertical trim, little pale roof shelter to south. Aerial inspected, street view/height and current scene ownership pending. Retain historic Mirage baseline rather than infer new Hard Rock construction.",
+      "sources": [
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=tkNtWex4AgWSseKbxXlfMQ&heading=270&pitch=50",
+          "date": "February2023",
+          "review": "Side-on white structural pylon with projecting cap; shelter has white/bronze fascia and square columns. Construction visible in2025 so historical view selected."
+        },
+        {
+          "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12020,-115.17270&heading=210&pitch=25",
+          "date": "February2016",
+          "author": "Julian Hoffbauer",
+          "review": "Nighttime north face: two tall white legs, two stacked feature panels, projecting cap with THE MIRAGE and CASINO & RESORT."
+        },
+        {
+          "url": "https://special.library.unlv.edu/ark%3A/62930/d1j38kr18",
+          "review": "UNLV Neon Survey corroborates double-post pylon, inset metallic strips and stacked display cabinets. No reliable height stated."
+        },
+        {
+          "url": "https://neonmuseum.org/news/the-magic-behind-the-signs-2/",
+          "review": "Corroborates placement south of lagoon/north of Forum Shops;184ft dimension in article belongs to FRONTIER, not Mirage."
+        }
+      ],
+      "estimates": {
+        "heightM": 60,
+        "uncertaintyM": 8,
+        "basis": "Approximation from mapped25m cap width, broad-face photo proportions and side-view elevation; no survey height verified.",
+        "shelterRoofM": 3.3
+      }
+    }
+  ]
+}

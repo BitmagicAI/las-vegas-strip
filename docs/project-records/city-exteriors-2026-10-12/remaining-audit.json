@@ -1,0 +1,4525 @@
+{
+  "warning": "Ownership classification is not visual completion. Existing detailed owners still require review.",
+  "pending": 470,
+  "pendingLarge": 42,
+  "owners": {
+    "strat": 1,
+    "mapped-background": 337,
+    "treasure-island": 1,
+    "palazzo": 1,
+    "venetian": 3,
+    "legacy-or-landmark": 123,
+    "harrahs": 2,
+    "bellagio-spa": 2
+  },
+  "pendingMappedLarge": [
+    {
+      "id": "way/396439303",
+      "name": "Unnamed building",
+      "large": true,
+      "heightM": 47.0,
+      "heightSource": "levels",
+      "areaM2": 3320.9,
+      "stripDistanceM": 169.0,
+      "bounds": [
+        951.766,
+        -2799.129,
+        1019.463,
+        -2735.22
+      ],
+      "center": [
+        988.750832165956,
+        -2764.9490664870264
+      ],
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "building": "yes",
+        "building:levels": "15",
+        "parking": "multi-storey"
+      },
+      "owner": "mapped-background",
+      "status": "needs-visual-audit"
+    },
+    {
+      "id": "way/1459325605",
+      "name": "yes",
+      "large": true,
+      "heightM": 53.0,
+      "heightSource": "levels",
+      "areaM2": 2254.6,
+      "stripDistanceM": 988.0,
+      "bounds": [
+        -1005.381,
+        -724.3,
+        -919.195,
+        -666.726
+      ],
+      "center": [
+        -963.7883297469655,
+        -699.8645139243939
+      ],
+      "tags": {
+        "building:levels": "17",
+        "building:part": "yes",
+        "roof:shape": "flat"
+      },
+      "owner": "mapped-background",
+      "status": "needs-visual-audit"
+    },
+    {
+      "id": "way/156624462",
+      "name": "Wells Fargo Tower",
+      "large": true,
+      "heightM": 56.0,
+      "heightSource": "levels",
+      "areaM2": 1486.2,
+      "stripDistanceM": 1321.5,
+      "bounds": [
+        1456.336,
+        -356.4,
+        1505.364,
+        -307.553
+      ],
+      "center": [
+        1480.6307887387893,
+        -332.08621934675483
+      ],
+      "tags": {
+        "addr:city": "Las Vegas",
+        "addr:housenumber": "3800",
+        "addr:postcode": "89169",
+        "addr:state": "NV",
+        "addr:street": "Howard Hughes Parkway",
+        "building": "yes",
+        "building:levels": "18",
+        "man_made": "tower",
+        "name": "Wells Fargo Tower"
+      },
+      "owner": "mapped-background",
+      "status": "needs-visual-audit"
+    },
+    {
+      "id": "way/182464631",
+      "name": "Unnamed building",
+      "large": true,
+      "heightM": 62.0,
+      "heightSource": "levels",
+      "areaM2": 1154.1,
+      "stripDistanceM": 1213.6,
+      "bounds": [
+        1238.003,
+        -70.053,
+        1294.603,
+        -37.86
+      ],
+      "center": [
+        1270.227932034145,
+        -54.843609199931
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "20"
+      },
+      "owner": "mapped-background",
+      "status": "needs-visual-audit"
+    },
+    {
+      "id": "way/182464616",
+      "name": "Unnamed building",
+      "large": true,
+      "heightM": 62.0,
+      "heightSource": "levels",
+      "areaM2": 1107.2,
+      "stripDistanceM": 1185.5,
+      "bounds": [
+        1213.903,
+        -24.346,
+        1250.341,
+        23.5
+      ],
+      "center": [
+        1229.2268658165344,
+        0.8822213485792987
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "20"
+      },
+      "owner": "mapped-background",
+      "status": "needs-visual-audit"
+    },
+    {
+      "id": "way/205497576",
+      "name": "Residence Inn Las Vegas Hughes Center",
+      "large": true,
+      "heightM": 36.0,
+      "heightSource": "levels",
+      "areaM2": 1755.4,
+      "stripDistanceM": 1471.0,
+      "bounds": [
+        1502.19,
+        -16.898,
+        1572.755,
+        53.266
+      ],
+      "center": [
+        1540.478625375451,
+        22.46290771922004
+      ],
+      "tags": {
+        "addr:city": "Las Vegas",
+        "addr:housenumber": "370",
+        "addr:postcode": "89169",
+        "addr:state": "NV",
+        "addr:street": "Hughes Center Drive",
+        "branch": "Las Vegas Hughes Center",
+        "brand": "Residence Inn",
+        "brand:wikidata": "Q7315394",
+        "building": "yes",
+        "building:levels": "11",
+        "name": "Residence Inn Las Vegas Hughes Center",
+        "official_name": "Residence Inn by Marriott",
+        "phone": "+1 702-650-0040",
+        "ref": "LASHH",
+        "tourism": "hotel",
+        "website": "https://www.marriott.com/lashh"
+      },
+      "owner": "mapped-background",
+      "status": "needs-visual-audit"
+    },
+    {
+      "id": "way/1226448921",
+      "name": "Unnamed building",
+      "large": true,
+      "heightM": 44.0,
+      "heightSource": "levels",
+      "areaM2": 1845.0,
+      "stripDistanceM": 834.0,
+      "bounds": [
+        851.84,
+        1035.438,
+        949.302,
+        1056.99
+      ],
+      "center": [
+        900.8818854550378,
+        1046.3570488847095
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "14",
+        "roof:shape": "flat"
+      },
+      "owner": "mapped-background",
+      "status": "needs-visual-audit"
+    },
+    {
+      "id": "way/118376296",
+      "name": "yes",
+      "large": true,
+      "heightM": 59.0,
+      "heightSource": "levels",
+      "areaM2": 1211.0,
+      "stripDistanceM": 438.4,
+      "bounds": [
+        452.835,
+        1825.539,
+        473.095,
+        1891.819
+      ],
+      "center": [
+        463.07877304272455,
+        1860.8813317688775
+      ],
+      "tags": {
+        "building:levels": "19",
+        "building:part": "yes"
+      },
+      "owner": "mapped-background",
+      "status": "needs-visual-audit"
+    }
+  ],
+  "pendingStripSmall": [
+    {
+      "id": "way/364846574",
+      "name": "Travelers Bed & Breakfast Hostel",
+      "center": [
+        1919.100740578763,
+        -4135.940205745266
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746614",
+      "name": "Unnamed building",
+      "center": [
+        2124.1375166052944,
+        -4129.045109975496
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1363694313",
+      "name": "Boston Pizza",
+      "center": [
+        1982.5576640273378,
+        -4125.8789375703855
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/689003951",
+      "name": "CLAY ARTS VEGAS",
+      "center": [
+        1735.5882500535395,
+        -4120.979313383846
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621163",
+      "name": "Unnamed building",
+      "center": [
+        2052.518363141375,
+        -4120.952428804691
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746618",
+      "name": "Unnamed building",
+      "center": [
+        2158.5893376666177,
+        -4113.739958536856
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846571",
+      "name": "Unnamed building",
+      "center": [
+        1858.6680000000003,
+        -4112.8375
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746613",
+      "name": "Unnamed building",
+      "center": [
+        2114.406021534128,
+        -4111.678158079033
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846570",
+      "name": "Tod Motor Motel",
+      "center": [
+        1902.4516839365351,
+        -4108.21248305196
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621164",
+      "name": "Unnamed building",
+      "center": [
+        2043.3833552321948,
+        -4103.741053238531
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1235856400",
+      "name": "Unnamed building",
+      "center": [
+        1779.0917439031502,
+        -4100.375449298415
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746617",
+      "name": "Unnamed building",
+      "center": [
+        2142.608224291146,
+        -4099.930502373433
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1235856401",
+      "name": "Unnamed building",
+      "center": [
+        1797.832756674003,
+        -4099.162068505483
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746612",
+      "name": "Unnamed building",
+      "center": [
+        2107.9124603748282,
+        -4096.575155877376
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621165",
+      "name": "Unnamed building",
+      "center": [
+        2035.8220692087737,
+        -4089.076616013838
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1020191190",
+      "name": "Unnamed building",
+      "center": [
+        1902.5992043644317,
+        -4082.012602953487
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746611",
+      "name": "Unnamed building",
+      "center": [
+        2098.745245975051,
+        -4081.2730829000516
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746616",
+      "name": "Unnamed building",
+      "center": [
+        2136.916487145146,
+        -4080.484011728894
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846572",
+      "name": "Unnamed building",
+      "center": [
+        1862.384277056128,
+        -4074.2776304202243
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/9575763",
+      "name": "Unnamed building",
+      "center": [
+        1797.2060391725747,
+        -4072.6155635861796
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621166",
+      "name": "Unnamed building",
+      "center": [
+        2026.3107038356754,
+        -4071.750728022233
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621178",
+      "name": "Unnamed building",
+      "center": [
+        2089.668806098406,
+        -4065.666454000104
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846573",
+      "name": "Unnamed building",
+      "center": [
+        1891.0020932197917,
+        -4063.933269104829
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746598",
+      "name": "Unnamed building",
+      "center": [
+        2126.162567603316,
+        -4060.1423990156545
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621180",
+      "name": "Unnamed building",
+      "center": [
+        2019.3806426764038,
+        -4056.4410880200776
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/689003962",
+      "name": "Unnamed building",
+      "center": [
+        1739.0139424371991,
+        -4050.594618984675
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621177",
+      "name": "Unnamed building",
+      "center": [
+        2080.9295313873226,
+        -4048.3081760590862
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746597",
+      "name": "Unnamed building",
+      "center": [
+        2114.7927544042354,
+        -4045.859254059647
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/689003952",
+      "name": "Unnamed building",
+      "center": [
+        1786.510738641193,
+        -4041.18145908153
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621167",
+      "name": "Unnamed building",
+      "center": [
+        2011.242637696914,
+        -4036.755207478353
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621179",
+      "name": "Unnamed building",
+      "center": [
+        2071.45787456674,
+        -4034.6720921509295
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845150",
+      "name": "Topless Cabarat",
+      "center": [
+        1952.6062238692946,
+        -4029.163766794784
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746596",
+      "name": "Unnamed building",
+      "center": [
+        2107.579837924546,
+        -4027.1286856206452
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621168",
+      "name": "Unnamed building",
+      "center": [
+        2006.671358739622,
+        -4021.071911900733
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621176",
+      "name": "Unnamed building",
+      "center": [
+        2065.942720301375,
+        -4013.616885214437
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746599",
+      "name": "Unnamed building",
+      "center": [
+        2099.2357630300203,
+        -4002.9671637402084
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621169",
+      "name": "Unnamed building",
+      "center": [
+        2002.9425658908406,
+        -3999.293971981778
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621175",
+      "name": "Unnamed building",
+      "center": [
+        2062.3853999080848,
+        -3997.5686544032224
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/689003955",
+      "name": "Unnamed building",
+      "center": [
+        1741.461001921249,
+        -3995.2904429896394
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845147",
+      "name": "Carnitas y Tortas Ahogadas Guadalajara #2",
+      "center": [
+        1925.4477585024424,
+        -3990.893180955874
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621170",
+      "name": "Unnamed building",
+      "center": [
+        2001.6498150103023,
+        -3983.2517084791957
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746595",
+      "name": "Unnamed building",
+      "center": [
+        2095.3803385969754,
+        -3979.3818974385426
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845146",
+      "name": "Bajamar",
+      "center": [
+        1904.9942898184877,
+        -3978.109350587181
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621174",
+      "name": "Unnamed building",
+      "center": [
+        2062.030301779745,
+        -3976.7985594787388
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/316303731",
+      "name": "Viva Las Arepas",
+      "center": [
+        1834.9459722600407,
+        -3972.613286396722
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621172",
+      "name": "Unnamed building",
+      "center": [
+        2000.5747925184353,
+        -3963.7355946494645
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621173",
+      "name": "Unnamed building",
+      "center": [
+        2059.6935498032835,
+        -3960.4433128852115
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236746594",
+      "name": "Unnamed building",
+      "center": [
+        2096.543722342472,
+        -3959.8240877963904
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845148",
+      "name": "Unnamed building",
+      "center": [
+        1967.3364901152709,
+        -3955.3016717224627
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/316303729",
+      "name": "Arco",
+      "center": [
+        1891.775946364917,
+        -3954.1482385279264
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/316303728",
+      "name": "ampm",
+      "center": [
+        1914.8115291479928,
+        -3953.38559193542
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845149",
+      "name": "Luv-It Frozen Custard",
+      "center": [
+        1929.6919628837238,
+        -3951.062742782135
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236621171",
+      "name": "Unnamed building",
+      "center": [
+        2000.265495752215,
+        -3945.5776635037178
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/316303730",
+      "name": "Unnamed building",
+      "center": [
+        1897.255759424241,
+        -3936.4240820940654
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725804",
+      "name": "Unnamed building",
+      "center": [
+        2011.415199022816,
+        -3896.7660379142876
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725799",
+      "name": "Unnamed building",
+      "center": [
+        1947.6011751027097,
+        -3896.683252367244
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725809",
+      "name": "Unnamed building",
+      "center": [
+        2066.5920579412946,
+        -3894.128241902399
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725798",
+      "name": "Unnamed building",
+      "center": [
+        1967.84346769546,
+        -3893.714600738661
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/725949470",
+      "name": "Cash America Pawn",
+      "center": [
+        1662.9302523407953,
+        -3890.2893735725056
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725800",
+      "name": "Unnamed building",
+      "center": [
+        1977.2005,
+        -3889.1635000000006
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/316303727",
+      "name": "7-Eleven",
+      "center": [
+        1879.8033617722729,
+        -3884.2430545354487
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725803",
+      "name": "Unnamed building",
+      "center": [
+        2011.7446171257018,
+        -3879.3847852313447
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845144",
+      "name": "Unnamed building",
+      "center": [
+        1919.5663586509318,
+        -3876.8076499122326
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725797",
+      "name": "Unnamed building",
+      "center": [
+        1956.2879999999998,
+        -3874.1239999999993
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/316303724",
+      "name": "Native American Jewelry",
+      "center": [
+        1790.0063264333392,
+        -3871.7746837438463
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/316303725",
+      "name": "Unnamed building",
+      "center": [
+        1754.8601856507642,
+        -3863.4343529554126
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845143",
+      "name": "Unnamed building",
+      "center": [
+        1838.4371157385294,
+        -3857.943136114739
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725806",
+      "name": "Unnamed building",
+      "center": [
+        2010.984958366499,
+        -3854.784597615732
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/316303726",
+      "name": "Chapel of the Flowers",
+      "center": [
+        1894.9137580960937,
+        -3845.123315689845
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725808",
+      "name": "Unnamed building",
+      "center": [
+        2063.8433697343257,
+        -3842.682690513253
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725802",
+      "name": "Unnamed building",
+      "center": [
+        2007.8773507430803,
+        -3837.7645912814264
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725789",
+      "name": "Unnamed building",
+      "center": [
+        1954.4236567207909,
+        -3829.43219204377
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845145",
+      "name": "Unnamed building",
+      "center": [
+        1894.6442711392733,
+        -3822.341559837349
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846569",
+      "name": "Unnamed building",
+      "center": [
+        1748.7205086602971,
+        -3818.073804665344
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725805",
+      "name": "Unnamed building",
+      "center": [
+        2007.8555827010646,
+        -3813.624794127736
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725788",
+      "name": "Unnamed building",
+      "center": [
+        1961.5381808704888,
+        -3806.744841413658
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725787",
+      "name": "Unnamed building",
+      "center": [
+        1930.2995946775325,
+        -3801.26795497189
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725801",
+      "name": "Unnamed building",
+      "center": [
+        2007.6861191131343,
+        -3797.034292037115
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846568",
+      "name": "Tacos Mexico",
+      "center": [
+        1732.2126385983759,
+        -3787.3084878480527
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845142",
+      "name": "Oasis Motel;Sweethearts Wedding Chapel & Bridal Boutique",
+      "center": [
+        1832.4071220329363,
+        -3779.1208336030304
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725786",
+      "name": "Unnamed building",
+      "center": [
+        1911.492977566223,
+        -3777.1171324152738
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725810",
+      "name": "Unnamed building",
+      "center": [
+        2006.7682612949175,
+        -3761.7640277606947
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725796",
+      "name": "Unnamed building",
+      "center": [
+        1957.316912543711,
+        -3757.961358060502
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725790",
+      "name": "Unnamed building",
+      "center": [
+        1902.4791142438944,
+        -3753.924984496424
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725970",
+      "name": "Denny's",
+      "center": [
+        1715.6442469632188,
+        -3751.366560749716
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725812",
+      "name": "Unnamed building",
+      "center": [
+        2008.0713507915852,
+        -3743.3414520960814
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725795",
+      "name": "Unnamed building",
+      "center": [
+        1942.2500918425094,
+        -3742.5683282004425
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1265036423",
+      "name": "Rummel Motel",
+      "center": [
+        1790.7442722516607,
+        -3740.4201075688343
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725785",
+      "name": "Unnamed building",
+      "center": [
+        1889.647375700335,
+        -3733.9208808206445
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725793",
+      "name": "Unnamed building",
+      "center": [
+        1958.3046683642738,
+        -3732.735049352314
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725791",
+      "name": "Unnamed building",
+      "center": [
+        1933.2562327088706,
+        -3719.94322414058
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1213440758",
+      "name": "Atomic Golf",
+      "center": [
+        1626.4581599574387,
+        -3710.6240092781213
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725784",
+      "name": "Unnamed building",
+      "center": [
+        1879.5325545081535,
+        -3710.336439258028
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725792",
+      "name": "Unnamed building",
+      "center": [
+        1952.6865765787115,
+        -3703.45212605598
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725781",
+      "name": "Unnamed building",
+      "center": [
+        1920.1917504120818,
+        -3698.690504415131
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725783",
+      "name": "Unnamed building",
+      "center": [
+        1866.9863320917375,
+        -3689.378630856149
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725794",
+      "name": "Unnamed building",
+      "center": [
+        1945.696668105192,
+        -3681.0012507478455
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725780",
+      "name": "Unnamed building",
+      "center": [
+        1909.416543824905,
+        -3677.0120046172065
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1553042969",
+      "name": "Unnamed building",
+      "center": [
+        1633.1581200905098,
+        -3670.362997688835
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845140",
+      "name": "IHOP",
+      "center": [
+        1806.0507467877733,
+        -3668.1342141798514
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725778",
+      "name": "Unnamed building",
+      "center": [
+        1930.1480452769617,
+        -3661.601295967805
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725779",
+      "name": "Unnamed building",
+      "center": [
+        1897.1782372061941,
+        -3655.2178774145973
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725782",
+      "name": "Unnamed building",
+      "center": [
+        1950.4472594572762,
+        -3637.8078349544116
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845137",
+      "name": "Unnamed building",
+      "center": [
+        1732.9996642125689,
+        -3631.718165317262
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725774",
+      "name": "Unnamed building",
+      "center": [
+        1886.407711186464,
+        -3629.958431504714
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725776",
+      "name": "Unnamed building",
+      "center": [
+        1926.1582732109703,
+        -3628.2860184173887
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725775",
+      "name": "Unnamed building",
+      "center": [
+        1905.9134512149044,
+        -3627.2068180664423
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845136",
+      "name": "Unnamed building",
+      "center": [
+        1751.9754262211686,
+        -3625.6841765036115
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845138",
+      "name": "Unnamed building",
+      "center": [
+        1735.9845711182961,
+        -3602.7368770433504
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845139",
+      "name": "Unnamed building",
+      "center": [
+        1778.401629777235,
+        -3587.0217135086527
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/89469762",
+      "name": "Unnamed building",
+      "center": [
+        1414.3336773947522,
+        -3561.617238490963
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1236725773",
+      "name": "Unnamed building",
+      "center": [
+        1919.6801975334256,
+        -3558.3198528576736
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/284940187",
+      "name": "Carl's Jr.",
+      "center": [
+        1712.3841799005622,
+        -3552.622461213668
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/135456188",
+      "name": "The Strat",
+      "center": [
+        1507.8021801311386,
+        -3522.496548594287
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276427182",
+      "name": "Unnamed building",
+      "center": [
+        1679.7540747485994,
+        -3520.7385214740393
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846561",
+      "name": "Unnamed building",
+      "center": [
+        1779.5864815075906,
+        -3514.987319086044
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/503324066",
+      "name": "The Strat Thrill Rides",
+      "center": [
+        1570.151340260395,
+        -3496.1257558855673
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846562",
+      "name": "Unnamed building",
+      "center": [
+        1792.689,
+        -3495.521
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846563",
+      "name": "Unnamed building",
+      "center": [
+        1784.3855345790164,
+        -3475.5724523540216
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846564",
+      "name": "Unnamed building",
+      "center": [
+        1781.0973432072435,
+        -3454.3662548979337
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/89469749",
+      "name": "Unnamed building",
+      "center": [
+        1390.0631147944196,
+        -3443.4409918484394
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846565",
+      "name": "Unnamed building",
+      "center": [
+        1765.5983608222787,
+        -3438.206680690489
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/89469753",
+      "name": "yes",
+      "center": [
+        1405.9387423840146,
+        -3423.1341890024123
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/89469712",
+      "name": "Unnamed building",
+      "center": [
+        1363.2747273702848,
+        -3400.117373248149
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/89469757",
+      "name": "Unnamed building",
+      "center": [
+        1439.3014000529968,
+        -3396.020921716723
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/10307602",
+      "name": "Unnamed building",
+      "center": [
+        1355.1802196461952,
+        -3362.5398587268787
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/986507542",
+      "name": "Unnamed building",
+      "center": [
+        1787.8778168571735,
+        -3352.2099385480633
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/6138874",
+      "name": "Aztec Inn",
+      "center": [
+        1487.5918434187151,
+        -3348.304731126841
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/986507541",
+      "name": "Unnamed building",
+      "center": [
+        1780.449535334177,
+        -3338.6174671158747
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845135",
+      "name": "Unnamed building",
+      "center": [
+        1436.6433390573225,
+        -3308.54565040934
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/986507532",
+      "name": "Unnamed building",
+      "center": [
+        1753.5902112826377,
+        -3287.566763957791
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364840693",
+      "name": "Holiday Motel",
+      "center": [
+        1586.7797257859092,
+        -3283.6539926712676
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/969288411",
+      "name": "Unnamed building",
+      "center": [
+        1660.5146859795095,
+        -3265.413440701684
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364840692",
+      "name": "Circle K",
+      "center": [
+        1454.9491959611519,
+        -3255.2974533473453
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/969288410",
+      "name": "Unnamed building",
+      "center": [
+        1650.9872004943234,
+        -3247.3224900340556
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276427161",
+      "name": "Unnamed building",
+      "center": [
+        1421.7207320432672,
+        -3246.641598813646
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845132",
+      "name": "Unnamed building",
+      "center": [
+        1638.4825847867683,
+        -3222.8863706739844
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/969288406",
+      "name": "Unnamed building",
+      "center": [
+        1720.5692861497023,
+        -3222.679350047946
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364845133",
+      "name": "7-Eleven",
+      "center": [
+        1656.261,
+        -3213.1144999999997
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/6138875",
+      "name": "Fun City Motel",
+      "center": [
+        1560.6945683725748,
+        -3211.7579679560704
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/969288402",
+      "name": "Unnamed building",
+      "center": [
+        1713.1087998932878,
+        -3209.16111786063
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276426491",
+      "name": "Unnamed building",
+      "center": [
+        1495.5504418021465,
+        -3203.5859421383016
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364840690",
+      "name": "El Mirador Motel Las Vegas",
+      "center": [
+        1422.5746556567717,
+        -3202.1943679480264
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/969288399",
+      "name": "Unnamed building",
+      "center": [
+        1702.2418547943375,
+        -3190.1737738498723
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/969288398",
+      "name": "Unnamed building",
+      "center": [
+        1695.7466753400636,
+        -3177.870590906637
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276427173",
+      "name": "Subway",
+      "center": [
+        1594.5119061466235,
+        -3175.5756084991003
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/969288397",
+      "name": "Unnamed building",
+      "center": [
+        1685.2063148544794,
+        -3159.055537443606
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/160585309",
+      "name": "Bonanza Gift Shop",
+      "center": [
+        1360.9692643822416,
+        -3155.763847114177
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276426487",
+      "name": "Unnamed building",
+      "center": [
+        1524.3546081129537,
+        -3145.44851559687
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276426488",
+      "name": "Walgreens",
+      "center": [
+        1475.2103928028125,
+        -3131.562428649915
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276427175",
+      "name": "McDonald's",
+      "center": [
+        1617.389793196576,
+        -3128.954937900546
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1414999331",
+      "name": "Unnamed building",
+      "center": [
+        1611.9327193762688,
+        -3113.6284556177284
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/568597552",
+      "name": "Unnamed building",
+      "center": [
+        1168.810419311463,
+        -3036.8841064744365
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/135453935",
+      "name": "Sahara Las Vegas Hotel & Casino",
+      "center": [
+        1494.2336788751413,
+        -2930.589513291797
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/395428060",
+      "name": "Unnamed building",
+      "center": [
+        1598.908482112531,
+        -2930.3705918787427
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/543642782",
+      "name": "Unnamed building",
+      "center": [
+        1492.7565504043064,
+        -2831.2569709153054
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364843228",
+      "name": "Unnamed building",
+      "center": [
+        1032.9924170397364,
+        -2472.4827070749698
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/135332959",
+      "name": "Circus Circus Las Vegas",
+      "center": [
+        697.2718797063167,
+        -2416.669139725176
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364843230",
+      "name": "Travelodge Las Vegas",
+      "center": [
+        929.0385606704848,
+        -2401.882021424997
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/134068317",
+      "name": "Fontainebleau Resort & Casino",
+      "center": [
+        1241.766605611857,
+        -2389.0814492207255
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1431436415",
+      "name": "Unnamed building",
+      "center": [
+        908.744130749252,
+        -2360.4542001613613
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/135448025",
+      "name": "retail",
+      "center": [
+        851.4737501737168,
+        -2329.3672233504026
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/180250495",
+      "name": "Tix4Tonight - Slots A Fun",
+      "center": [
+        888.0312587544859,
+        -2226.2949579249585
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/180250447",
+      "name": "McDonald's",
+      "center": [
+        868.7326756532995,
+        -2182.1505334465683
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/972129019",
+      "name": "Resorts World Las Vegas",
+      "center": [
+        600.2711449575244,
+        -2004.2931233765132
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/160585815",
+      "name": "Peppermill",
+      "center": [
+        891.169,
+        -1964.867
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/160585816",
+      "name": "Ross",
+      "center": [
+        869.5504390894487,
+        -1923.082211168951
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/160585820",
+      "name": "7-Eleven",
+      "center": [
+        830.6755591523342,
+        -1902.7418184004641
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1381561598",
+      "name": "Denny's",
+      "center": [
+        825.4622195942856,
+        -1883.9772160568464
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/160585814",
+      "name": "Walgreens",
+      "center": [
+        835.815099112616,
+        -1862.2888803646522
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276427198",
+      "name": "Tacos El Gordo",
+      "center": [
+        767.0987825586412,
+        -1793.5464894907327
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1419057375",
+      "name": "Strip Liquor",
+      "center": [
+        835.533689940289,
+        -1783.698752207069
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/320330805",
+      "name": "Royal Resort",
+      "center": [
+        928.2972884255605,
+        -1774.475783611568
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/331347691",
+      "name": "Unnamed building",
+      "center": [
+        791.2966049882742,
+        -1726.978026257958
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1177746897",
+      "name": "Unnamed building",
+      "center": [
+        819.2832248825623,
+        -1630.9870135108888
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/564120640",
+      "name": "Guardian Angel Cathedral",
+      "center": [
+        855.8959308737221,
+        -1617.0962610265651
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/182524943",
+      "name": "Unnamed building",
+      "center": [
+        718.1487271219545,
+        -1540.2542830462885
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/156626862",
+      "name": "Unnamed building",
+      "center": [
+        617.8126408729072,
+        -1496.1036115981578
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/886592897",
+      "name": "Unnamed building",
+      "center": [
+        779.741922544889,
+        -1495.4939802937783
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/142899198",
+      "name": "yes",
+      "center": [
+        752.2988512311074,
+        -1388.0405682971477
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/111322079",
+      "name": "Awakening Theater",
+      "center": [
+        726.4457971250721,
+        -1278.911048917383
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1421449927",
+      "name": "retail",
+      "center": [
+        358.11959379447916,
+        -1271.7010892674245
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/1419057384",
+      "name": "Unnamed building",
+      "center": [
+        595.7749834682813,
+        -1270.0285156264438
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/180584255",
+      "name": "Fashion Show Mall",
+      "center": [
+        122.38350019599135,
+        -1262.0872977983774
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/886592894",
+      "name": "Unnamed building",
+      "center": [
+        562.028350965556,
+        -1231.0104464873873
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/19447588",
+      "name": "roof",
+      "center": [
+        369.6696009304423,
+        -1222.1607030982007
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/142899192",
+      "name": "Unnamed building",
+      "center": [
+        546.4998527051914,
+        -1173.6765078363692
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/111348710",
+      "name": "Unnamed building",
+      "center": [
+        432.3871993810688,
+        -1164.5604820842796
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/142899188",
+      "name": "Unnamed building",
+      "center": [
+        550.0140953360608,
+        -1136.5982240859535
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/142899193",
+      "name": "Unnamed building",
+      "center": [
+        517.5488060457087,
+        -1106.3908092101153
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/886592895",
+      "name": "Unnamed building",
+      "center": [
+        589.2709130472425,
+        -1080.5931793311577
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/543638190",
+      "name": "Unnamed building",
+      "center": [
+        265.9841969612081,
+        -1007.559544941544
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/180771078",
+      "name": "Unnamed building",
+      "center": [
+        230.901318187962,
+        -998.3792977150099
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/180771079",
+      "name": "Sirens' Cove Shop",
+      "center": [
+        212.09018407367986,
+        -985.1282866542153
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/543638206",
+      "name": "Unnamed building",
+      "center": [
+        244.2903771800863,
+        -973.8664329628484
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/33959894",
+      "name": "Treasure Island Hotel and Casino",
+      "center": [
+        121.06970639395509,
+        -973.1525622476963
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/543638185",
+      "name": "Unnamed building",
+      "center": [
+        212.41977961609598,
+        -931.4235519543221
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/180584269",
+      "name": "The Palazzo",
+      "center": [
+        426.4326698379201,
+        -902.9317485690517
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/180584267",
+      "name": "Unnamed building",
+      "center": [
+        321.18964258462825,
+        -887.4573546902361
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/543638212",
+      "name": "Starbucks",
+      "center": [
+        189.32765237782908,
+        -855.2617503469958
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/33992535",
+      "name": "Treasure Island Self Parking",
+      "center": [
+        76.49011132929671,
+        -789.2233081751816
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/7770314",
+      "name": "The Venetian Las Vegas",
+      "center": [
+        334.6501359981891,
+        -641.4162084178568
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/111367819",
+      "name": "Venetian Expo",
+      "center": [
+        594.8659675254156,
+        -632.2922526752415
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/43875964",
+      "name": "The Campanile",
+      "center": [
+        149.5028580781795,
+        -613.3630487981707
+      ],
+      "owner": "venetian",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/543728945",
+      "name": "Unnamed building",
+      "center": [
+        170.26194518745282,
+        -609.8556246078359
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/33996627",
+      "name": "Unnamed building",
+      "center": [
+        151.33668111396423,
+        -585.5444157989455
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/115776190",
+      "name": "Unnamed building",
+      "center": [
+        227.01254096684724,
+        -574.948220047674
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/209373381",
+      "name": "yes",
+      "center": [
+        110.98477082096744,
+        -553.9168328122505
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/181282568",
+      "name": "Best Western Plus Casino Royale-Center Strip",
+      "center": [
+        120.34194559137879,
+        -509.084934031309
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/313625620",
+      "name": "Unnamed building",
+      "center": [
+        201.78292862440964,
+        -491.7642497284686
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/345534561",
+      "name": "Unnamed building",
+      "center": [
+        121.64998925522622,
+        -453.11591678348043
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/180766593",
+      "name": "Unnamed building",
+      "center": [
+        -0.2519999999999689,
+        -427.01050000000004
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/851629120",
+      "name": "Unnamed building",
+      "center": [
+        5.755347971135218,
+        -421.46675421829775
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1380575885",
+      "name": "yes",
+      "center": [
+        -160.7317979730541,
+        -413.00999204245414
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/128622185",
+      "name": "Harrah's Showroom",
+      "center": [
+        163.89806891412343,
+        -381.62811828683664
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/128632722",
+      "name": "Unnamed building",
+      "center": [
+        171.32407756629476,
+        -368.506691134137
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/442763644",
+      "name": "Unnamed building",
+      "center": [
+        156.20674812055063,
+        -349.33928805479707
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/34068416",
+      "name": "The Forum Shops at Caesars",
+      "center": [
+        -261.8743720091181,
+        -344.515043170637
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/402543932",
+      "name": "Unnamed building",
+      "center": [
+        100.51571536836333,
+        -303.6662549883924
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115771295",
+      "name": "The LINQ Hotel + Experience",
+      "center": [
+        155.6410545851615,
+        -256.0021497790497
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/402543936",
+      "name": "Unnamed building",
+      "center": [
+        176.58262903642904,
+        -194.95866322764255
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/402543937",
+      "name": "Chayo",
+      "center": [
+        124.34267443664058,
+        -180.99566009435472
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/180831020",
+      "name": "Unnamed building",
+      "center": [
+        -31.01986345116255,
+        -178.9915603837493
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/402543935",
+      "name": "Unnamed building",
+      "center": [
+        263.58521928784256,
+        -146.91451624287973
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/115767972",
+      "name": "Unnamed building",
+      "center": [
+        193.2086635968831,
+        -102.2125809419686
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115767971",
+      "name": "Unnamed building",
+      "center": [
+        193.20360575784673,
+        -102.21123058737597
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115767964",
+      "name": "Unnamed building",
+      "center": [
+        146.3853757283384,
+        -101.91380473925591
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115767967",
+      "name": "Unnamed building",
+      "center": [
+        146.6794685947076,
+        -101.55074986628341
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115767970",
+      "name": "Unnamed building",
+      "center": [
+        169.99120233068865,
+        -95.46044450026403
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115767969",
+      "name": "Unnamed building",
+      "center": [
+        169.98484760543488,
+        -95.45828949754414
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/116761035",
+      "name": "Unnamed building",
+      "center": [
+        57.22303681180958,
+        -86.4095865311908
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/402543931",
+      "name": "Unnamed building",
+      "center": [
+        207.33280233275505,
+        -79.09655793604034
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115672893",
+      "name": "Caesars Palace",
+      "center": [
+        -294.25279299605853,
+        -62.466757911748175
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/116761280",
+      "name": "yes",
+      "center": [
+        65.601543670534,
+        -52.978041358336256
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/310585854",
+      "name": "Unnamed building",
+      "center": [
+        158.0192955480656,
+        -46.55570486922018
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/116761428",
+      "name": "Flamingo Las Vegas",
+      "center": [
+        83.29334738672314,
+        -39.50504754592424
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/402543939",
+      "name": "Unnamed building",
+      "center": [
+        178.999,
+        -18.557000000000006
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1168129083",
+      "name": "Unnamed building",
+      "center": [
+        -133.89481380285224,
+        -17.112433555524724
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/402543938",
+      "name": "Unnamed building",
+      "center": [
+        180.19403316594654,
+        -3.467520056950507
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/34000287",
+      "name": "Gordon Ramsay's Hell\u2019s Kitchen",
+      "center": [
+        -26.540352510530337,
+        30.34261349836104
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1340330691",
+      "name": "No Pants",
+      "center": [
+        -98.67233243236795,
+        43.23498302341835
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1340330690",
+      "name": "Green Fairy Garden",
+      "center": [
+        -77.62028025921055,
+        50.94953133081361
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115767903",
+      "name": "Unnamed building",
+      "center": [
+        157.7173071980218,
+        72.08198782464429
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846541",
+      "name": "Absinthe",
+      "center": [
+        -89.40735106731658,
+        77.34128139220628
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846540",
+      "name": "Spanish Steps",
+      "center": [
+        -51.68609397821411,
+        80.56477276000172
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846543",
+      "name": "Mojito Hut at Caesars Palace",
+      "center": [
+        -56.01969454757634,
+        96.83444341232398
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/61239326",
+      "name": "The Vanderpump Las Vegas Hotel & Casino - A Caesars Rewards Destination",
+      "center": [
+        115.01503930774265,
+        103.85149156588575
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/115672897",
+      "name": "Unnamed building",
+      "center": [
+        -101.38942382855411,
+        105.166338011554
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114714409",
+      "name": "roof",
+      "center": [
+        -68.17651424031023,
+        206.48872022683906
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115673549",
+      "name": "Unnamed building",
+      "center": [
+        195.0165703876634,
+        207.81924989993064
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114714408",
+      "name": "Unnamed building",
+      "center": [
+        -187.67206706429818,
+        212.74875922725826
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114716303",
+      "name": "roof",
+      "center": [
+        -186.92766207941338,
+        214.15587935987693
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114714410",
+      "name": "roof",
+      "center": [
+        -140.21968059824937,
+        216.68891151489868
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114714411",
+      "name": "roof",
+      "center": [
+        -103.68625946062772,
+        216.9208565030839
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114714407",
+      "name": "roof",
+      "center": [
+        -122.94083045237484,
+        218.2272793185621
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114714412",
+      "name": "roof",
+      "center": [
+        -175.70785963727096,
+        236.45620759127843
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114719023",
+      "name": "Unnamed building",
+      "center": [
+        -202.66225128124609,
+        260.40699673864145
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114719022",
+      "name": "Unnamed building",
+      "center": [
+        -200.73594897835406,
+        294.8414663939038
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/543422869",
+      "name": "Unnamed building",
+      "center": [
+        87.80309740531364,
+        294.87504037452436
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/1599958",
+      "name": "Bellagio",
+      "center": [
+        -378.9127700729537,
+        384.1598258092543
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/33974140",
+      "name": "Paris Las Vegas",
+      "center": [
+        225.71988570537994,
+        411.2618048826587
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222076",
+      "name": "Unnamed building",
+      "center": [
+        44.365753920388705,
+        421.1965928195743
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222077",
+      "name": "Alexxas",
+      "center": [
+        42.32294801265496,
+        430.1414609488338
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222078",
+      "name": "Hexx",
+      "center": [
+        42.33095654829629,
+        435.8209507914525
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/472669747",
+      "name": "Unnamed building",
+      "center": [
+        42.342,
+        442.851
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114722037",
+      "name": "Unnamed building",
+      "center": [
+        71.53927917130855,
+        443.1751710476975
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114716306",
+      "name": "Unnamed building",
+      "center": [
+        -206.009766232643,
+        444.65131472593987
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222079",
+      "name": "Beer Park",
+      "center": [
+        42.35325207274704,
+        450.29336147546655
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1436542141",
+      "name": "roof",
+      "center": [
+        131.45922717914172,
+        456.30576850900155
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114697072",
+      "name": "Unnamed building",
+      "center": [
+        127.25049999999999,
+        480.4605
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114697074",
+      "name": "Arc de Triomphe",
+      "center": [
+        127.26743975797768,
+        490.7273271523428
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114697073",
+      "name": "Unnamed building",
+      "center": [
+        127.282,
+        501.0045
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846544",
+      "name": "Paris Balloon",
+      "center": [
+        41.96223185568868,
+        511.59998811845827
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/25718288",
+      "name": "Bellagio Self Parking Garage",
+      "center": [
+        -283.7695614333388,
+        526.3991347968421
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/823658733",
+      "name": "Unnamed building",
+      "center": [
+        -166.97918063413132,
+        543.1979750939252
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/823658732",
+      "name": "Unnamed building",
+      "center": [
+        -137.38896084354863,
+        563.7858425397699
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/374989480",
+      "name": "Unnamed building",
+      "center": [
+        -105.15303561581733,
+        570.9977284400788
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/823658731",
+      "name": "Unnamed building",
+      "center": [
+        -106.53476199261561,
+        583.7445761329141
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1436534385",
+      "name": "roof",
+      "center": [
+        47.105349184902735,
+        591.7560313039434
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/699020451",
+      "name": "Unnamed building",
+      "center": [
+        -181.65722405252365,
+        634.9097827156791
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/699020452",
+      "name": "Unnamed building",
+      "center": [
+        -285.2676322360937,
+        660.2532294688846
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1212809711",
+      "name": "Unnamed building",
+      "center": [
+        -201.55006226388437,
+        676.1834513250343
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/1606512",
+      "name": "Miracle Mile Shops",
+      "center": [
+        210.35205040029444,
+        677.0228620935428
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115670770",
+      "name": "PH Live",
+      "center": [
+        256.8386856927014,
+        682.6515395253994
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1436534369",
+      "name": "roof",
+      "center": [
+        39.97079878410299,
+        695.987366077569
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1421481095",
+      "name": "Unnamed building",
+      "center": [
+        -53.380178864669666,
+        742.1893961784666
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1422113647",
+      "name": "Unnamed building",
+      "center": [
+        -138.99637370379554,
+        801.3916339456872
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1255028419",
+      "name": "Harmon Corner",
+      "center": [
+        78.98202180311272,
+        802.9141281922672
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1421481100",
+      "name": "Arte Museum Las Vegas",
+      "center": [
+        -86.68766282998848,
+        814.9253055882017
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1422113646",
+      "name": "Unnamed building",
+      "center": [
+        -165.67176895303737,
+        833.6236645798319
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1421481096",
+      "name": "Unnamed building",
+      "center": [
+        -39.11373836874042,
+        847.2804472407922
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1421481101",
+      "name": "Unnamed building",
+      "center": [
+        66.98194745893771,
+        896.4384510753603
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/52134608",
+      "name": "The Shops at Crystals",
+      "center": [
+        -119.10169297377273,
+        910.6236883231243
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222049",
+      "name": "yes",
+      "center": [
+        78.55593760103375,
+        1047.4083058848105
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1505714402",
+      "name": "yes",
+      "center": [
+        74.01890048809426,
+        1049.6073240864644
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1505714403",
+      "name": "yes",
+      "center": [
+        82.2526487369071,
+        1093.6719700338044
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222051",
+      "name": "Unnamed building",
+      "center": [
+        74.22333162675716,
+        1108.2688952822548
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222048",
+      "name": "retail",
+      "center": [
+        92.6856452165566,
+        1138.7428648620921
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1505714401",
+      "name": "yes",
+      "center": [
+        60.3512614496816,
+        1144.418942613261
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/133885466",
+      "name": "CVS Pharmacy",
+      "center": [
+        -52.62059914711811,
+        1150.9712516880609
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222047",
+      "name": "Fatburger",
+      "center": [
+        85.80587326790766,
+        1179.7432116578032
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/95224290",
+      "name": "Walgreens",
+      "center": [
+        69.6473382356788,
+        1222.2393808611137
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115649938",
+      "name": "Unnamed building",
+      "center": [
+        79.45337699766677,
+        1259.6401693049675
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115080290",
+      "name": "Park MGM",
+      "center": [
+        -187.27579485204302,
+        1265.2997214292566
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/1421481079",
+      "name": "Unnamed building",
+      "center": [
+        -30.17396405608967,
+        1291.8213161544757
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115664840",
+      "name": "Eataly",
+      "center": [
+        -71.01147325606709,
+        1301.05701933011
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115649937",
+      "name": "Unnamed building",
+      "center": [
+        69.41890605016722,
+        1304.966607762323
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1437033263",
+      "name": "roof",
+      "center": [
+        -54.17606676682374,
+        1317.7587484663825
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/6022477",
+      "name": "The Mansion at MGM Grand",
+      "center": [
+        165.80370729001027,
+        1418.3685676010814
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/567194734",
+      "name": "Unnamed building",
+      "center": [
+        -191.39769578055785,
+        1428.4228789213357
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115665216",
+      "name": "K\u00c0 - Cirque du Soleil",
+      "center": [
+        250.02440044034927,
+        1431.9266605329055
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/27897909",
+      "name": "Showcase",
+      "center": [
+        59.61611977705957,
+        1436.8228181002057
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115661794",
+      "name": "Shake Shack",
+      "center": [
+        -61.568,
+        1443.1405
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115661804",
+      "name": "Unnamed building",
+      "center": [
+        -48.94525511443247,
+        1446.3860711590023
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115095165",
+      "name": "yes",
+      "center": [
+        165.76649999999998,
+        1453.9885
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/116770006",
+      "name": "Hotel MGM Grand Las Vegas",
+      "center": [
+        277.5337152931028,
+        1504.2976077303892
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115661793",
+      "name": "New York New York Hotel and Casino",
+      "center": [
+        -129.9176277094238,
+        1533.8190014114116
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399323162",
+      "name": "Unnamed building",
+      "center": [
+        -47.5383816439478,
+        1557.9376890718286
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/115661803",
+      "name": "yes",
+      "center": [
+        -151.59799999999998,
+        1603.9859999999999
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1385399163",
+      "name": "Unnamed building",
+      "center": [
+        -128.3365753595646,
+        1664.2738284548
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352463",
+      "name": "Unnamed building",
+      "center": [
+        -52.49915616408013,
+        1723.009361046038
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352465",
+      "name": "Unnamed building",
+      "center": [
+        -60.465005602758445,
+        1729.962143714058
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352466",
+      "name": "Unnamed building",
+      "center": [
+        -52.28547139297442,
+        1730.1858479304587
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352462",
+      "name": "Unnamed building",
+      "center": [
+        -45.12526702898612,
+        1730.4906290347305
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352464",
+      "name": "Unnamed building",
+      "center": [
+        -51.8415047681142,
+        1738.1313577324177
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352471",
+      "name": "Unnamed building",
+      "center": [
+        -80.15528364430719,
+        1753.7278641837897
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352460",
+      "name": "Unnamed building",
+      "center": [
+        -85.20596289892563,
+        1757.3396331446093
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352469",
+      "name": "Unnamed building",
+      "center": [
+        -75.3733965499101,
+        1758.445006338055
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352461",
+      "name": "Unnamed building",
+      "center": [
+        -79.20356802617943,
+        1763.6771668579743
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114977805",
+      "name": "Unnamed building",
+      "center": [
+        -46.77810958325738,
+        1765.5968833730628
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352457",
+      "name": "Unnamed building",
+      "center": [
+        -96.22364244331834,
+        1768.3601475720616
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/567108272",
+      "name": "Unnamed building",
+      "center": [
+        -66.79128796804842,
+        1769.8298067934222
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/399352467",
+      "name": "Unnamed building",
+      "center": [
+        -99.93671691499566,
+        1773.677543656016
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352452",
+      "name": "Unnamed building",
+      "center": [
+        -90.20543457097618,
+        1774.7830649888065
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352470",
+      "name": "Unnamed building",
+      "center": [
+        -95.0854371438709,
+        1778.3302903387992
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352458",
+      "name": "Unnamed building",
+      "center": [
+        -106.53164204301412,
+        1779.7148304236352
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352456",
+      "name": "Unnamed building",
+      "center": [
+        -101.15119396740978,
+        1785.0814336067053
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352453",
+      "name": "Unnamed building",
+      "center": [
+        -112.99989657200994,
+        1786.338723381144
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857401",
+      "name": "yes",
+      "center": [
+        -135.21631853465885,
+        1790.3426826042758
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352454",
+      "name": "Unnamed building",
+      "center": [
+        -107.53625917364556,
+        1791.7037322306012
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114977810",
+      "name": "Excalibur North",
+      "center": [
+        -46.56395800752422,
+        1791.9514562792615
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352459",
+      "name": "Unnamed building",
+      "center": [
+        -119.2664616845547,
+        1792.818690548787
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399352455",
+      "name": "Unnamed building",
+      "center": [
+        -113.85045917461602,
+        1797.9730123172578
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857398",
+      "name": "yes",
+      "center": [
+        -110.67186084756803,
+        1814.0859424575356
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857379",
+      "name": "yes",
+      "center": [
+        -161.99755532258234,
+        1817.3886645457426
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857399",
+      "name": "yes",
+      "center": [
+        -175.0059561636427,
+        1828.3324919982772
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857381",
+      "name": "yes",
+      "center": [
+        -206.63696135591508,
+        1838.2670820309258
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857385",
+      "name": "yes",
+      "center": [
+        -206.7865595523182,
+        1838.3544667529343
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857388",
+      "name": "yes",
+      "center": [
+        -137.1962678025402,
+        1841.5082450112266
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857408",
+      "name": "yes",
+      "center": [
+        -163.38766666666666,
+        1843.3971677668653
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857392",
+      "name": "yes",
+      "center": [
+        -148.41692828719542,
+        1854.8889925230524
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857396",
+      "name": "yes",
+      "center": [
+        -206.99850038307298,
+        1865.7456372304064
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857387",
+      "name": "yes",
+      "center": [
+        -167.02887334172692,
+        1867.1354802756505
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857406",
+      "name": "yes",
+      "center": [
+        -190.82149945872382,
+        1867.3455288173025
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857376",
+      "name": "yes",
+      "center": [
+        -190.88845327249692,
+        1867.3842596646493
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857395",
+      "name": "yes",
+      "center": [
+        -165.8257142780378,
+        1867.5884323286164
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114870395",
+      "name": "yes",
+      "center": [
+        -179.25991491010555,
+        1874.2391400142149
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1468590525",
+      "name": "New Las Vegas Stadium",
+      "center": [
+        250.45550705084594,
+        1875.5193482930856
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857405",
+      "name": "yes",
+      "center": [
+        -158.4709326388847,
+        1886.4983870204971
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/114857393",
+      "name": "yes",
+      "center": [
+        -157.35802664250886,
+        1887.2575605106726
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/8086330",
+      "name": "Excalibur Hotel & Casino",
+      "center": [
+        -221.1310891909584,
+        1903.3023346184746
+      ],
+      "owner": "legacy-or-landmark",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/567108265",
+      "name": "Excalibur Hotel",
+      "center": [
+        -114.86855263919254,
+        1963.5313053598202
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/402587341",
+      "name": "Arco",
+      "center": [
+        57.234,
+        2104.4395
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/402587340",
+      "name": "ampm",
+      "center": [
+        90.54151693172662,
+        2112.5596441099788
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/136516670",
+      "name": "yes",
+      "center": [
+        -142.16491222503672,
+        2137.239090028767
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/136516673",
+      "name": "yes",
+      "center": [
+        -133.08637329818225,
+        2137.246141738259
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/136516663",
+      "name": "yes",
+      "center": [
+        -151.24928086681481,
+        2137.2564547866923
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/136516674",
+      "name": "yes",
+      "center": [
+        -160.29983489823886,
+        2137.2666080170147
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/136516665",
+      "name": "yes",
+      "center": [
+        -208.50746484493473,
+        2137.5949976442625
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/136520122",
+      "name": "Unnamed building",
+      "center": [
+        -260.52472016423985,
+        2147.73656615557
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399368723",
+      "name": "Unnamed building",
+      "center": [
+        -28.4755,
+        2283.836
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/118344869",
+      "name": "Unnamed building",
+      "center": [
+        -111.76108320846552,
+        2284.350977256575
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/118344867",
+      "name": "Unnamed building",
+      "center": [
+        -116.13025475180538,
+        2284.968190253044
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/118344870",
+      "name": "Unnamed building",
+      "center": [
+        -159.67149089512327,
+        2285.481630012721
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399554455",
+      "name": "Unnamed building",
+      "center": [
+        -156.33227722448655,
+        2531.265498412967
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846554",
+      "name": "Unnamed building",
+      "center": [
+        -49.692722633781344,
+        2547.3728920665594
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/116660358",
+      "name": "Mandalay Bay",
+      "center": [
+        -250.41309143571965,
+        2634.0439879722344
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846553",
+      "name": "Unnamed building",
+      "center": [
+        -100.95290403549846,
+        2654.1806713069714
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": true
+    },
+    {
+      "id": "way/457939130",
+      "name": "Unnamed building",
+      "center": [
+        81.25281655615895,
+        2658.5868985618617
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846552",
+      "name": "Unnamed building",
+      "center": [
+        -34.384766681018114,
+        2683.314435394442
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846548",
+      "name": "Nirvana Hotel",
+      "center": [
+        76.06277714931896,
+        2691.6028242066327
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222039",
+      "name": "Unnamed building",
+      "center": [
+        67.35996668556648,
+        2706.674928383871
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846549",
+      "name": "Motel 8 Las Vegas",
+      "center": [
+        90.6912525781825,
+        2722.1290728204613
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846550",
+      "name": "Unnamed building",
+      "center": [
+        111.68147431482505,
+        2722.649217375631
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846547",
+      "name": "Unnamed building",
+      "center": [
+        88.4086125641633,
+        2735.9035615829603
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846551",
+      "name": "Unnamed building",
+      "center": [
+        145.236,
+        2737.8195
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1414161011",
+      "name": "Unnamed building",
+      "center": [
+        190.39007380268058,
+        2739.9583752320186
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1424222041",
+      "name": "Unnamed building",
+      "center": [
+        90.9476277667989,
+        2746.3110575707387
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846546",
+      "name": "Desert Oasis",
+      "center": [
+        74.4742909093791,
+        2754.898877110621
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/457939128",
+      "name": "Laughing Jackalope Motel Bar and Grill",
+      "center": [
+        49.153280755005156,
+        2777.4208124387756
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1414161010",
+      "name": "Unnamed building",
+      "center": [
+        191.48023877605655,
+        2792.0178964816623
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399554420",
+      "name": "Unnamed building",
+      "center": [
+        -189.91629022315942,
+        2792.0840713566677
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/118346756",
+      "name": "Unnamed building",
+      "center": [
+        -98.83114793518311,
+        2792.9944386852794
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399554453",
+      "name": "Unnamed building",
+      "center": [
+        -188.07699999999997,
+        2803.8709999999996
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/502624676",
+      "name": "Four Seasons Hotel Las Vegas",
+      "center": [
+        -135.95988993234104,
+        2810.741076091736
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399554456",
+      "name": "Unnamed building",
+      "center": [
+        -203.29749142288338,
+        2813.1551677044395
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399554454",
+      "name": "Unnamed building",
+      "center": [
+        -200.93485129017978,
+        2844.7194662311513
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/457939127",
+      "name": "Unnamed building",
+      "center": [
+        130.8324818635969,
+        2866.680131745342
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/180250509",
+      "name": "Unnamed building",
+      "center": [
+        76.78243668013708,
+        2869.1715769327593
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/128025409",
+      "name": "Mandalay Beach Club",
+      "center": [
+        -198.39479119980322,
+        2906.222772471079
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399554425",
+      "name": "Unnamed building",
+      "center": [
+        -198.77850000000004,
+        2935.4504999999995
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/399554412",
+      "name": "Unnamed building",
+      "center": [
+        -210.36142576384213,
+        2942.3725468457674
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/457939126",
+      "name": "Green Valley Grocery",
+      "center": [
+        117.05643781977939,
+        2947.054984770159
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846555",
+      "name": "Unnamed building",
+      "center": [
+        -128.92898666566236,
+        2947.8691539335055
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/457939125",
+      "name": "Shell",
+      "center": [
+        79.38090033698725,
+        2948.4151091141493
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/398972297",
+      "name": "Unnamed building",
+      "center": [
+        -198.8185277867776,
+        2949.5724401408993
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846556",
+      "name": "Unnamed building",
+      "center": [
+        -122.06236808891389,
+        2972.725754495837
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846557",
+      "name": "Unnamed building",
+      "center": [
+        -141.30025573995323,
+        2990.36101945989
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/116660354",
+      "name": "Mandalay Bay Convention Center",
+      "center": [
+        -344.4779851197932,
+        3075.583912109869
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1219935118",
+      "name": "Unnamed building",
+      "center": [
+        66.61566989799562,
+        3156.6683912149215
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/457939120",
+      "name": "Diamond Inn Motel",
+      "center": [
+        100.98970855494514,
+        3176.558498094554
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/457939123",
+      "name": "Unnamed building",
+      "center": [
+        74.37641336896554,
+        3177.9082841247055
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "relation/6138883",
+      "name": "Little Church of the West Wedding Chapel",
+      "center": [
+        102.98152658818934,
+        3326.463642478736
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1378308607",
+      "name": "Unnamed building",
+      "center": [
+        -144.166,
+        3357.7075
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846559",
+      "name": "Unnamed building",
+      "center": [
+        -98.83824746936214,
+        3416.8733265881096
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846558",
+      "name": "Unnamed building",
+      "center": [
+        -53.046199298589315,
+        3420.220750684011
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1038023891",
+      "name": "Pinball Hall of Fame",
+      "center": [
+        196.3642265676559,
+        3472.3634344366233
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/364846560",
+      "name": "Las Vegas Metropolitan Police Southern Command",
+      "center": [
+        -78.11739041398182,
+        3505.250183945791
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/1125260694",
+      "name": "Unnamed building",
+      "center": [
+        -78.55017953073605,
+        3640.3895778747014
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/674358786",
+      "name": "Las Vegas Harley-Davidson",
+      "center": [
+        128.19393467398223,
+        3649.3242626042183
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/133903810",
+      "name": "Unnamed building",
+      "center": [
+        -219.19983164527997,
+        3670.6308194810704
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/816094564",
+      "name": "Recharge Zone",
+      "center": [
+        131.5508474718703,
+        3690.2851960892167
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/457939132",
+      "name": "Unnamed building",
+      "center": [
+        89.1772567098191,
+        3734.5396741098757
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/457939133",
+      "name": "Unnamed building",
+      "center": [
+        209.88900000000004,
+        3738.743
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/133904624",
+      "name": "Unnamed building",
+      "center": [
+        -69.66634356105578,
+        3804.6383627557284
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276437574",
+      "name": "Signature Aviation LAS",
+      "center": [
+        174.70434662207205,
+        3980.1756169174528
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276437575",
+      "name": "Unnamed building",
+      "center": [
+        155.0817938953938,
+        3980.7441401010346
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    },
+    {
+      "id": "way/276437576",
+      "name": "Maverick Helicopters",
+      "center": [
+        121.40105684576557,
+        4141.2799600854
+      ],
+      "owner": "mapped-background",
+      "hasLandmarkReplacement": false
+    }
+  ]
+}

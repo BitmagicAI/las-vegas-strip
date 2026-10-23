@@ -1,0 +1,156 @@
+MEMORY infra
+V8 heap used 696 MB (total 737); ArrayBuffer backing stores 4038 MB; embedder 9 MB; performance.memory used 4733 MB
+Scene geometry typed arrays: 3020 MB over 6630 objects; large constructed arrays alive 0 MB (0 MB not referenced by the scene)
+WebAssembly memories: [{"MB":40,"site":"WebAssembly.instantiate (<anonymous>:18:83) <- async /.vite-cache/deps/@dimforge_rapier3d-compat.js:3003:18 <- async uA (/.vite-cache/deps/@dimforge_rapier3d-compat.js:2982:40)"}]
+Texture images held on the CPU (estimated RGBA): 386 MB in 154 images {"ImageBitmap":{"n":119,"MB":376,"largest":"2048x2048"},"HTMLVideoElement":{"n":1,"MB":0,"largest":"0x0"},"HTMLCanvasElement":{"n":34,"MB":10,"largest":"512x512"}}
+     102 MB 18 images  WorldGroup
+      75 MB 19 images  Bellagio · trees and lawn
+      48 MB 3 images  Guest · bellagio-entry
+      12 MB 4 images  HeadlessPlayer
+      12 MB 4 images  Vegas character b6102
+      12 MB 4 images  Vegas character b6103
+      12 MB 4 images  Vegas character b6104
+      12 MB 4 images  Vegas character b6105
+      12 MB 4 images  Vegas character b6106
+      12 MB 4 images  Vegas character b6107
+      12 MB 4 images  Vegas character b6108
+      12 MB 4 images  Vegas character b6109
+       7 MB 28 images  Guest · doors and signs
+       4 MB 4 images  The LINQ + High Roller · exterior
+       3 MB 5 images  Sphere · exterior
+
+Chrome memory-infra, game renderer (MB):
+    4407  partition_alloc
+    4407  partition_alloc/partitions
+    4396  partition_alloc/allocated_objects
+    4384  partition_alloc/allocated_objects/<unspecified>
+    4096  partition_alloc/partitions/array_buffer
+    1578  canvas
+     743  v8
+     740  v8/main
+     724  v8/main/heap
+     640  malloc
+     640  malloc/partitions
+     639  malloc/partitions/allocator
+     609  malloc/allocated_objects
+     571  malloc/allocated_objects/<unspecified>
+     484  shared_memory
+     468  gpu
+     442  gpu/mapped_memory
+     374  gpu/mapped_memory/manager_0x4
+     312  partition_alloc/partitions/buffer
+     128  canvas/ResourceProvider_0x1240B0CBC00
+     128  canvas/ResourceProvider_0x1240B0CBC00/CanvasResource_0x124011D0C00
+     128  canvas/ResourceProvider_0x1240B0CE600
+     128  canvas/ResourceProvider_0x1240B0CE600/CanvasResource_0x124011DD800
+     128  canvas/ResourceProvider_0x124625D0800
+     128  canvas/ResourceProvider_0x124625D0800/CanvasResource_0x124011D1C80
+     128  canvas/ResourceProvider_0x124625D1400
+     128  canvas/ResourceProvider_0x124625D1400/CanvasResource_0x12401E12580
+      66  gpu/mapped_memory/manager_0x5
+      66  shared_memory/39E9600432FBF7181CCDFB8321038E62
+      64  canvas/ResourceProvider_0x1240006F200
+      64  canvas/ResourceProvider_0x1240006F200/CanvasResource_0x12401E1B700
+      64  canvas/ResourceProvider_0x124625D0000
+      64  canvas/ResourceProvider_0x124625D0000/CanvasResource_0x12401E1F600
+      64  canvas/ResourceProvider_0x124625D1000
+      64  canvas/ResourceProvider_0x124625D1000/CanvasResource_0x124011DA500
+      38  shared_memory/B6F8BBC0FC475A02777119903DAEBC16
+      32  canvas/ResourceProvider_0x124625D0600
+      32  canvas/ResourceProvider_0x124625D0600/CanvasResource_0x124011DB100
+      32  canvas/ResourceProvider_0x124625D0C00
+      32  canvas/ResourceProvider_0x124625D0C00/CanvasResource_0x124011D0A80
+      30  shared_memory/3D0749CAA269E06F06A78DD1894A75D1
+      30  shared_memory/563B5AE0ABC91C0EE4C3890492637565
+      30  shared_memory/68C1E5AFDF20F9CF9472715866AF8264
+      30  shared_memory/CE80760E05B67112D4D1D389756F9B7E
+      24  gpu/transfer_buffer_memory
+
+Chrome memory-infra, other process with most GPU memory (MB):
+    7066  gpu
+    4921  gpu/angle
+    2088  malloc
+    2088  malloc/partitions
+    2083  malloc/allocated_objects
+    1662  iosurface
+    1656  gpu/shared_images
+     480  shared_memory
+     477  gpu/transfer_memory
+     237  ioaccelerator
+      66  shared_memory/39E9600432FBF7181CCDFB8321038E62
+      38  shared_memory/B6F8BBC0FC475A02777119903DAEBC16
+      30  shared_memory/3D0749CAA269E06F06A78DD1894A75D1
+      30  shared_memory/563B5AE0ABC91C0EE4C3890492637565
+      30  shared_memory/68C1E5AFDF20F9CF9472715866AF8264
+      30  shared_memory/CE80760E05B67112D4D1D389756F9B7E
+      20  shared_memory/5250BEBC4045133E5621DC251CA5FEB0
+      20  shared_memory/7D70B13B8583B9F173AA741A308AEB09
+      20  shared_memory/A4DEC238D13BE90BAD691BB51944D559
+      16  shared_memory/2DDF61876F307EF7548B5400732753D0
+
+Scene geometry by owner (MB, buffers):
+    1113  3295  OpenStreetMap / geographic Strip
+     322  420  Paris · mapped resort exterior · exterior
+     276  3785  WorldGroup
+     240  57  Bellagio · exterior and arrival · exterior
+     221  19  Bellagio · lakefront
+     203  35  Hilton Vacation Club Polo Towers · exterior
+     153  1190  Photo-referenced mapped high-rises
+     116  24  The Venetian frontage · exterior
+      66  535  Bellagio · trees and lawn
+      57  25  The Palazzo · exterior
+      48  38  The Vanderpump Hotel · exterior
+      42  61  Cosmopolitan complete exterior · exterior
+      41  664  The LINQ + High Roller · exterior
+      41  22  Treasure Island · exterior
+      15  55  Big Apple Coaster • OSM mapped route
+       9  22  T-Mobile Arena · exterior
+       8  25  Park MGM · exterior
+       7  24  Harrah’s Las Vegas · exterior
+       3  150  Vegas character b6107
+       3  35  Body
+       3  150  Vegas character b6106
+       3  149  Vegas character b6109
+       3  150  Vegas character b6103
+       3  25  Fashion Show · exterior
+       3  149  Vegas character b6105
+
+By kind:
+     537  attribute:position
+     430  attribute:normal
+     350  attribute:batchAtlas
+     348  attribute:color
+     347  attribute:batchEmission
+     288  index
+     251  attribute:uv
+     231  attribute:batchPbr
+     175  attribute:batchWrap
+      44  instanceMatrix
+       5  attribute:skinIndex
+       5  attribute:skinWeight
+
+Large constructed arrays alive, by site (MB, count):
+
+Standing still for 2 s: 0 typed arrays/s, 0 MB/s
+
+V8 heap allocation (sampled) 45.3 MB/s:
+    5.87 MB/s  next :0 <- contains work/BuildingVisibility.js:3 <- (anonymous) work/BuildingVisibility.js:106 <- find :0
+    5.29 MB/s  (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- forEachRigidBody deps/@dimforge_rapier3d-compat.js:4985 <- quarantineSanitizePass physics/PhysicsWorld.js:410
+    3.74 MB/s  contains work/BuildingVisibility.js:3 <- (anonymous) work/BuildingVisibility.js:106 <- find :0 <- pointVisible work/BuildingVisibility.js:103
+    1.61 MB/s  activityRouteClear characters/VegasCast.js:67 <- (anonymous) characters/NpcActivities.js:31 <- filter :0 <- step characters/NpcActivities.js:12
+    1.54 MB/s  (anonymous) work/SkylineDepth.js:39 <- sort :0 <- sort deps/chunk-MCS52GJZ.js:16097 <- _renderScene deps/chunk-MCS52GJZ.js:29959
+    1.38 MB/s  intersectsObject deps/chunk-QVLGVTV6.js:14423 <- _projectObject deps/chunk-MCS52GJZ.js:30984 <- _projectObject deps/chunk-MCS52GJZ.js:30984 <- _projectObject deps/chunk-MCS52GJZ.js:30984
+    1.32 MB/s  getDynamicCacheKey deps/chunk-MCS52GJZ.js:14568 <- get deps/chunk-MCS52GJZ.js:14636 <- _renderObjectDirect deps/chunk-MCS52GJZ.js:31334 <- renderObject deps/chunk-MCS52GJZ.js:31243
+    1.28 MB/s  update work/StripLandmarks.js:226 <- update work/ResortBlocks.js:11 <- update work/GeographicCity.js:99 <- updateInteriorVisibility work/Game.js:505
+    1.13 MB/s  add :0 <- addUniformUpdateRange deps/chunk-MCS52GJZ.js:31619 <- updateByType deps/chunk-MCS52GJZ.js:31744 <- update deps/chunk-MCS52GJZ.js:31721
+     1.1 MB/s  updateValue deps/chunk-MCS52GJZ.js:7363 <- update deps/chunk-MCS52GJZ.js:7356 <- updateForRender deps/chunk-MCS52GJZ.js:27660 <- _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+    1.05 MB/s  updateByType deps/chunk-MCS52GJZ.js:31744 <- update deps/chunk-MCS52GJZ.js:31721 <- _update deps/chunk-MCS52GJZ.js:15845 <- _renderObjectDirect deps/chunk-MCS52GJZ.js:31334
+    1.02 MB/s  translation deps/@dimforge_rapier3d-compat.js:3173 <- (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- forEachRigidBody deps/@dimforge_rapier3d-compat.js:4985
+    0.86 MB/s  linvel deps/@dimforge_rapier3d-compat.js:3211 <- (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- forEachRigidBody deps/@dimforge_rapier3d-compat.js:4985
+    0.72 MB/s  _update deps/chunk-MCS52GJZ.js:15845 <- _renderObjectDirect deps/chunk-MCS52GJZ.js:31334 <- renderObject deps/chunk-MCS52GJZ.js:31243 <- _renderObjects deps/chunk-MCS52GJZ.js:31112
+    0.68 MB/s  __wbg_call_35dba3c747ad7521 deps/@dimforge_rapier3d-compat.js:2928 <- castRayAndGetNormal deps/@dimforge_rapier3d-compat.js:24 <- castRayAndGetNormal deps/@dimforge_rapier3d-compat.js:4036 <- raycast physics/PhysicsWorld.js:1559
+    0.61 MB/s  _prepareResult physics/PhysicsWorld.js:1518 <- raycast physics/PhysicsWorld.js:1559 <- activityRouteClear characters/VegasCast.js:67 <- (anonymous) characters/NpcActivities.js:31
+    0.59 MB/s  next :0 <- contains work/BuildingVisibility.js:3 <- (anonymous) work/BuildingVisibility.js:13 <- find :0
+    0.56 MB/s  register :0 <- castRayAndGetNormal deps/@dimforge_rapier3d-compat.js:4036 <- raycast physics/PhysicsWorld.js:1559 <- activityRouteClear characters/VegasCast.js:67
+    0.48 MB/s  contains work/BuildingVisibility.js:3 <- (anonymous) work/BuildingVisibility.js:13 <- find :0 <- visibilityState work/BuildingVisibility.js:12
+    0.48 MB/s  raycast physics/PhysicsWorld.js:1559 <- activityRouteClear characters/VegasCast.js:67 <- (anonymous) characters/NpcActivities.js:31 <- filter :0

@@ -1,0 +1,121 @@
+{
+  "id": "rexford-ellen-courtyard",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725808",
+    "way/1236725807"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15052,-115.15004&zoom=20&basemap=satellite",
+      "review": "Two facing U-shaped buildings and narrow central garden/pool, gray flat mechanical roofs, west parking"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15049,-115.14952&heading=270&pitch=4",
+      "imageDate": "January2026",
+      "review": "Street facade: cream upper band, white walls, rust-colored fascia, narrow windows, large decorative perforated screen. Panorama545Ellen address is across the street, not the modeled property"
+    }
+  ],
+  "estimates": [
+    "Roof6.5m andupperfloor3.18m",
+    "Courtyard stairs and roomdoor arrangement obscured; inferred",
+    "Pool dimensions inferred from satellite"
+  ],
+  "remaining": [
+    "No interiors or verified property name",
+    "Trees, materials and exact courtyard circulation need further reference",
+    "Street view partly occluded by neighboring house",
+    "Sparse tree LOD and empty planting beds remain approximate",
+    "Neutral daylight comparison and full driving benchmark not yet performed"
+  ],
+  "triangles": 29052,
+  "batches": 25,
+  "optimizedMiB": 1.32,
+  "ownership": {
+    "removed": 71,
+    "colliderTrianglesRemoved": 71,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in RexfordEllenCourtyard mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "736 roof support samples PASS",
+    "14 ground walking legs PASS",
+    "12 stair/gallery legs PASS in both directions"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/rexford-ellen-courtyard-final/rexford-ellen-east.png",
+    "build/city-exteriors/rexford-ellen-courtyard-final/rexford-ellen-roof.png",
+    "build/city-exteriors/rexford-ellen-courtyard-final/rexford-ellen-court.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "rexford-ellen-east",
+        "eye": [
+          2110,
+          5,
+          -3839
+        ],
+        "target": [
+          2070,
+          3,
+          -3840
+        ],
+        "p": [
+          2098,
+          2,
+          -3839
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.900000035762787
+      },
+      {
+        "name": "rexford-ellen-roof",
+        "eye": [
+          2101,
+          53,
+          -3787
+        ],
+        "target": [
+          2064,
+          3,
+          -3822
+        ],
+        "p": [
+          2094,
+          2,
+          -3810
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.80000001192093
+      },
+      {
+        "name": "rexford-ellen-court",
+        "eye": [
+          2063,
+          3,
+          -3822
+        ],
+        "target": [
+          2064,
+          2.6,
+          -3848
+        ],
+        "p": [
+          2063,
+          2,
+          -3822
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.600000023841858
+      }
+    ],
+    "limitation": "Not a driving/streaming benchmark"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/rexfordEllenCourtyard-exterior.glb": "12d0e85177255f1ef2eec763abcb3cc7a9f410c9025750961a61ab060fce5b1d",
+      "build/strip-landmarks/rexfordEllenCourtyard-exterior-collision.json": "51bf98e01a6b1e798d85e259ed00d4fb95e0c5ed1d3522415276969a875cc006"
+    }
+  }
+}

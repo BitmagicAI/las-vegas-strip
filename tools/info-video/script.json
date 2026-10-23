@@ -1,0 +1,102 @@
+{
+ "voice": "narrator",
+ "note": "tts = what the voice reads (numbers spelled for speech); text = the same line as written. One file per line: .bitmagic/info-video/audio/lines/NN.mp3. Every number comes from tools/info-video/metrics.json (sources there).",
+ "lines": [
+  {
+   "id": "01",
+   "scene": "intro",
+   "text": "This is Las Vegas, built by AI agents. In under four weeks, they mapped, modelled and checked the Strip, one building at a time.",
+   "tts": "This is Las Vegas, built by AI agents. In under four weeks, they mapped, modelled, and checked the Strip, one building at a time."
+  },
+  {
+   "id": "02",
+   "scene": "osm",
+   "text": "It starts with open map data. From OpenStreetMap, the agents pulled every building outline and every street along eight kilometres of the Strip: almost 6,800 outlines and nearly 20,000 road segments.",
+   "tts": "It starts with open map data. From OpenStreetMap, the agents pulled every building outline and every street along eight kilometres of the Strip. Almost six thousand eight hundred outlines, and nearly twenty thousand road segments."
+  },
+  {
+   "id": "03",
+   "scene": "boxes",
+   "text": "Most buildings have no height on the map, so the agents estimate one from the building's type and its floors, and raise every outline into a box. Landmarks get their published heights: the Bellagio, 156 metres. The Eiffel Tower, 165.",
+   "tts": "Most buildings have no height on the map, so the agents estimate one from the building's type and its floors, and raise every outline into a box. Landmarks get their published heights. The Bellagio: a hundred and fifty-six metres. The Eiffel Tower: a hundred and sixty-five."
+  },
+  {
+   "id": "04",
+   "scene": "county",
+   "text": "Clark County's public map data adds the pavement, the sidewalks and the medians. And Google's photorealistic 3D tiles, viewed through Cesium, are a visual check: looked at, never copied.",
+   "tts": "Clark County's public map data adds the pavement, the sidewalks, and the medians. And Google's photorealistic 3D tiles, viewed through Cesium, are a visual check. Looked at, never copied."
+  },
+  {
+   "id": "05",
+   "scene": "earth",
+   "text": "Next, the agents study each building in Google Earth: its outline, its colours, how its roofs step down. More than two hundred views, each logged with its location and imagery date.",
+   "tts": "Next, the agents study each building in Google Earth. Its outline, its colours, how its roofs step down. More than two hundred views, each logged with its location and imagery date."
+  },
+  {
+   "id": "06",
+   "scene": "photos",
+   "text": "Public photos show what the air can't: entrances, facades, signs. No photo is ever pasted onto a building. The agent writes a Blender script that builds it, wall by wall, window by window, in real metres.",
+   "tts": "Public photos show what the air can't. Entrances, facades, signs. No photo is ever pasted onto a building. The agent writes a Blender script that builds it, wall by wall, window by window, in real metres."
+  },
+  {
+   "id": "07",
+   "scene": "bellagio",
+   "text": "Then it compares. When the Bellagio didn't look right next to Google Earth, an agent counted the window rows in every segment, rebuilt the white crown, the arched windows and the copper roofs, and checked again.",
+   "tts": "Then it compares. When the Bellagio didn't look right next to Google Earth, an agent counted the window rows in every segment, rebuilt the white crown, the arched windows and the copper roofs, and checked again."
+  },
+  {
+   "id": "08",
+   "scene": "plans",
+   "text": "Inside, the layout comes from public floor plans and property maps: where the casino meets the shops, where the lobby opens onto the pool. Plans give the layout, not the heights, so the agents fit each interior to its building and walk it to make sure it connects.",
+   "tts": "Inside, the layout comes from public floor plans and property maps. Where the casino meets the shops. Where the lobby opens onto the pool. Plans give the layout, not the heights, so the agents fit each interior to its building, and walk it to make sure it connects."
+  },
+  {
+   "id": "09",
+   "scene": "rooms",
+   "text": "Corridors and rooms come from public photos of each resort: the carpet pattern, the headboard, the colour of the chairs. Forty-nine room designs, one for each property.",
+   "tts": "Corridors and rooms come from public photos of each resort. The carpet pattern. The headboard. The colour of the chairs. Forty-nine room designs, one for each property."
+  },
+  {
+   "id": "10",
+   "scene": "towers",
+   "text": "And you can walk into any of them. 64 towers, more than 2,100 floors, 30,692 hotel rooms and 5,806 apartments, every one behind a door that opens.",
+   "tts": "And you can walk into any of them. Sixty-four towers. More than two thousand one hundred floors. Thirty thousand, six hundred and ninety-two hotel rooms, and five thousand, eight hundred and six apartments. Every one behind a door that opens."
+  },
+  {
+   "id": "11",
+   "scene": "loop",
+   "text": "This is the loop. An agent surveys a block, builds it, renders it and compares it with the references. Then come the audits: can you walk through every door, does anything float, does any surface flicker. Whatever fails goes back to the start.",
+   "tts": "This is the loop. An agent surveys a block, builds it, renders it, and compares it with the references. Then come the audits. Can you walk through every door? Does anything float? Does any surface flicker? Whatever fails goes back to the start."
+  },
+  {
+   "id": "12",
+   "scene": "detail",
+   "text": "Every pass adds detail. Overnight, the Venetian went from half a million triangles to a million. The Eiffel Tower was rejected, measured again, and rebuilt leg by leg.",
+   "tts": "Every pass adds detail. Overnight, the Venetian went from half a million triangles to a million. The Eiffel Tower was rejected, measured again, and rebuilt, leg by leg."
+  },
+  {
+   "id": "13",
+   "scene": "agents",
+   "text": "Two agents, Codex and Claude, shared the work over twenty-six days: more than twenty thousand tool calls and over two hundred hours of agent work, all on one Mac.",
+   "tts": "Two agents, Codex and Claude, shared the work over twenty-six days. More than twenty thousand tool calls, and over two hundred hours of agent work, all on one Mac."
+  },
+  {
+   "id": "14",
+   "scene": "numbers",
+   "text": "Today the city has 6,162 buildings, and 604 of them have been replaced by detailed models. Almost a hundred million triangles, 6,786 materials. With every hotel floor built out, close to a billion.",
+   "tts": "Today the city has six thousand, one hundred and sixty-two buildings, and six hundred and four of them have been replaced by detailed models. Almost a hundred million triangles. Six thousand, seven hundred and eighty-six materials. With every hotel floor built out: close to a billion."
+  },
+  {
+   "id": "14b",
+   "scene": "weather",
+   "text": "And because the city is data, not footage, it can be any hour and any weather: neon at night, rain on the Boulevard.",
+   "tts": "And because the city is data, not footage, it can be any hour and any weather: neon at night, rain on the Boulevard."
+  },
+  {
+   "id": "15",
+   "scene": "end",
+   "text": "Every shot you've seen is the game itself, running in a web browser. For all that detail, the Bitmagic engine runs the whole city smoothly: it streams each building and room in only as you get close. That's what happens behind the scenes when AI agents build a city.",
+   "tts": "Every shot you've seen is the game itself, running in a web browser. For all that detail, the Bitmagic engine runs the whole city smoothly: it streams each building and room in only as you get close. That's what happens behind the scenes when AI agents build a city."
+  }
+ ]
+}

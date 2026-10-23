@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bitmagic check:*)",
+      "Bash(bitmagic dev:*)",
+      "Bash(bitmagic reload:*)",
+      "Bash(bitmagic verify:*)",
+      "Bash(bitmagic build:*)",
+      "Bash(bitmagic whoami:*)",
+      "Bash(bitmagic usage:*)",
+      "Bash(bitmagic generate:*)",
+      "Bash(bitmagic character:*)",
+      "Bash(bitmagic cover:*)",
+      "Bash(bitmagic forge:*)",
+      "Bash(bitmagic tools:*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bitmagic reload"
+          }
+        ]
+      }
+    ]
+  }
+}

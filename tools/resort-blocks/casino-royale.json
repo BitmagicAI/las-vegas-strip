@@ -1,0 +1,62 @@
+{
+  "id": "casino-royale",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/181282568",
+    "way/209373381"
+  ],
+  "references": [
+    {
+      "url": "https://www.casinoroyalehotel.com/photo-gallery/",
+      "inspected": true,
+      "observations": "Operator hero photograph: varied Victorian-like fronts, steep slate roofs, blue/gold Casino Royale vertical sign, burgundy/gold south roof and active storefronts. Exact date unknown; page accessed2026-10-13."
+    },
+    {
+      "url": "https://www.casinoroyalehotel.com/wp-content/uploads/2024/11/14431796.jpg",
+      "inspected": true,
+      "observations": "Street photograph from south looking north; slate gables, blue/gold vertical sign, copper bulb roof and awnings. Image date unknown."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1206,-115.1717,640a,230d,35y,90h,65t,0r",
+      "inspected": true,
+      "observations": "Frontage has individually varied gables and turrets; white trim and colored wall infill. Walgreens/Dennys north already Venetian-owned."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1206,-115.1717,640a,220d,35y,0h,15t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Shallow themed frontage; rear hotel wings around kidney pool, flat white mechanical roofs."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1205,-115.1711,690a,400d,35y,270h,45t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Rear hotel massing and courtyard visible between neighboring resorts."
+    }
+  ],
+  "dimensions": "Mapped181282568 retained; nested209373381 replaced. Rear8.8m/front10.2\u201312.4m/central sign roof24.5m are visual estimates, not surveyed.",
+  "remaining": [
+    "Exact individual gable profiles and ornate facade trim",
+    "Public entrances and onward connections",
+    "Rear courtyard landscape and furnishings",
+    "Adjacent rear/south structures still pending their own passes"
+  ],
+  "geometry": {
+    "triangles": 22711,
+    "batches": 16,
+    "optimizedMiB": 0.53
+  },
+  "viewsReviewed": [
+    "build/city-exteriors/casino-royale-final/frontage.png",
+    "build/city-exteriors/casino-royale-final/street.png",
+    "build/city-exteriors/casino-royale-final/north-boundary.png",
+    "build/city-exteriors/casino-royale-final/courtyard.png"
+  ],
+  "tests": "102 nondegenerate flat roof samples and courtyard support PASS; typecheck PASS;1517 city collision cells valid; full WebGPU verification PASS57fps startup3011bodies (not site benchmark)",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/casinoRoyale-exterior.glb": "ceb9fde88a901fa28156cb082b8d708aafad31254b17a2bfe013e8766bb4c0f2"
+    }
+  },
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-casino-royale.log"
+}

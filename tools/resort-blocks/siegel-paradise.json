@@ -1,0 +1,159 @@
+{
+  "id": "siegel-paradise",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364846561",
+    "way/364846562",
+    "way/364846563",
+    "way/364846564",
+    "way/364846565"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14722,-115.15320&zoom=20&basemap=satellite",
+      "review": "Five separate motel wings, central pool, west parking row"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14722,-115.15262&heading=270&pitch=4",
+      "imageDate": "January2026",
+      "review": "Three floors; yellow lower two storeys, charcoal upper band, white casement windows, exposed steel stairs/galleries in recessed bays, perimeter metal fence"
+    }
+  ],
+  "remaining": [
+    "Stair bay dimensions and concealed door locations inferred",
+    "Roadside fence, dense planting and western parking layout remain unfinished",
+    "Window counts and facade proportions approximate; no interiors",
+    "Neutral daylight and full driving benchmark not performed"
+  ],
+  "triangles": 66923,
+  "batches": 21,
+  "optimizedMiB": 12.97,
+  "metricScope": "Authored geometry triangles exclude two existing CC0 tree assets",
+  "tests": [
+    "735 roof support samples PASS",
+    "80 stair legs PASS across all five wings, both directions, with height checks"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/siegel-paradise-final/siegel-east.png",
+    "build/city-exteriors/siegel-paradise-final/siegel-roof.png",
+    "build/city-exteriors/siegel-paradise-final/siegel-court.png",
+    "build/city-exteriors/siegel-paradise-final/siegel-stairs.png",
+    "build/city-exteriors/siegel-paradise-final/siegel-pool.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "siegel-east",
+        "eye": [
+          1832,
+          4,
+          -3457
+        ],
+        "target": [
+          1784,
+          5,
+          -3475
+        ],
+        "p": [
+          1806,
+          2,
+          -3470
+        ],
+        "p50": 16.69999998807907,
+        "p95": 19.100000023841858
+      },
+      {
+        "name": "siegel-roof",
+        "eye": [
+          1820,
+          65,
+          -3411
+        ],
+        "target": [
+          1778,
+          3,
+          -3476
+        ],
+        "p": [
+          1806,
+          2,
+          -3470
+        ],
+        "p50": 16.600000023841858,
+        "p95": 19.19999998807907
+      },
+      {
+        "name": "siegel-court",
+        "eye": [
+          1765,
+          2.2,
+          -3447
+        ],
+        "target": [
+          1782,
+          4,
+          -3459
+        ],
+        "p": [
+          1765,
+          2,
+          -3447
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.69999998807907
+      },
+      {
+        "name": "siegel-stairs",
+        "eye": [
+          1804,
+          4,
+          -3466
+        ],
+        "target": [
+          1795,
+          4,
+          -3471
+        ],
+        "p": [
+          1798,
+          2,
+          -3470
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.900000035762787
+      },
+      {
+        "name": "siegel-pool",
+        "eye": [
+          1755,
+          3,
+          -3464
+        ],
+        "target": [
+          1763,
+          1,
+          -3458
+        ],
+        "p": [
+          1755,
+          2,
+          -3464
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.100000023841858
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 50,
+    "colliderTrianglesRemoved": 50,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in SiegelParadise mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/siegelParadise-exterior.glb": "37e5f1f5986fda9cf9f00334ca5d133cdf8177ffb62671d0dea43de11f39155f",
+      "build/strip-landmarks/siegelParadise-exterior-collision.json": "0e208876d3f984a02f54fdc1fbcddba0abd6f5f45fd0a28839ab0fceff2320a1"
+    }
+  }
+}

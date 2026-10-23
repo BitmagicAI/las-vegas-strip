@@ -1,0 +1,30 @@
+{
+  "venetian": {
+    "groups": 181,
+    "triangles": 1326468,
+    "rawMiB": 97.18253326416016,
+    "optimizedMiB": 27.120174407958984,
+    "sourceMatches": true
+  },
+  "linq": {
+    "groups": 199,
+    "triangles": 377333,
+    "rawMiB": 32.70994567871094,
+    "optimizedMiB": 11.110557556152344,
+    "sourceMatches": true
+  },
+  "ti": {
+    "groups": 39,
+    "triangles": 306301,
+    "rawMiB": 23.10702896118164,
+    "optimizedMiB": 6.377750396728516,
+    "sourceMatches": true
+  },
+  "forumShops": {
+    "groups": 36,
+    "triangles": 54066,
+    "rawMiB": 3.535907745361328,
+    "optimizedMiB": 1.186859130859375,
+    "sourceMatches": true
+  }
+}

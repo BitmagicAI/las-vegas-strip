@@ -1,0 +1,98 @@
+{
+ "viewport": [
+  1280,
+  720
+ ],
+ "dpr": 1,
+ "results": [
+  {
+   "view": "forum-street",
+   "tower": "at:42,3,-363,1.816,-.20",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 42,
+    "y": 3,
+    "z": -363
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.2,
+   "gpuP50": 2.85,
+   "gpuP90": 3.32,
+   "draws": 107,
+   "triangles": 3269604,
+   "passes": [
+    [
+     "output 1280x720",
+     1.63,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.73,
+     1
+    ],
+    [
+     "screen",
+     0.54,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "forum-entrance",
+   "tower": "at:55,12,-308,1.05,0",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 55,
+    "y": 12,
+    "z": -308
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.1,
+   "gpuP50": 3.23,
+   "gpuP90": 3.84,
+   "draws": 88,
+   "triangles": 2610285,
+   "passes": [
+    [
+     "output 1280x720",
+     1.57,
+     1
+    ],
+    [
+     "screen",
+     0.87,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.84,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  }
+ ],
+ "errors": []
+}

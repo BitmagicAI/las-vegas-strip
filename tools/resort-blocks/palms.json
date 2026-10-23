@@ -1,0 +1,175 @@
+{
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1145,-115.1958,860a,600d,35y,180h,55t,0r",
+      "imageDate": "2024-03-05",
+      "review": "Visually inspected three separate towers: white punched-window Ivory with arched crown; curved dark Fantasy; slim dark Palms Place at west; low white podium and parking roof."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1145,-115.1958,820a,540d,35y,0h,0t,0r",
+      "imageDate": "2024-03-05",
+      "review": "Top-down inspected footprint relationships, east pools and west garage. Tower footprints estimated from imagery inside existing mapped resort boundary."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1139,-115.1954,840a,600d,35y,0h,55t,0r",
+      "imageDate": "2024-03-05",
+      "review": "Opposite aerial inspected Fantasy white center spine, curved curtain wall, south parking and low service facades."
+    },
+    {
+      "url": "https://www.skyscrapercenter.com/building/palms-fantasy-tower/10647",
+      "review": "CVU height139.6m/40floors."
+    },
+    {
+      "url": "https://www.skyscrapercenter.com/building/id/3452",
+      "review": "CVU height157.8m/50floors."
+    },
+    {
+      "url": "https://www.palms.com/entertainment/palms-pool",
+      "review": "Official description: east of casino, two-storey cabanas; furnishings remain pending"
+    },
+    {
+      "url": "https://www.palms.com/entertainment/palms-place-pool",
+      "review": "Official Place pool on sixth floor, not implemented"
+    }
+  ],
+  "uncertainties": [
+    "Mapped parent relation7655651 incorrectly gives whole resort78m; split into low podium and separate tower estimates.",
+    "Ivory height129m approximate pending primary confirmation; tower plans, podium and garage heights are estimates.",
+    "Existing21-floor guest core must be relocated into actual Ivory footprint without changing room templates."
+  ],
+  "id": "palms",
+  "status": "refinement-deferred",
+  "remaining": [
+    "Exact tower plan calibration and Ivory height remain estimates",
+    "Pool courtyard is visibly sparse: cabanas, planting, furniture, enclosure and Palms Place sixth-floor pool missing",
+    "Arrival signage is not readable in installed views; canopy and entry route need reference refinement",
+    "Full public circulation and fine facade detail not verified",
+    "No photorealistic-completion claim"
+  ],
+  "implemented": [
+    "Three separately fitted towers replacing one78m full-site extrusion",
+    "Ivory punched windows and barrel crown, Fantasy curved glazing and white spine, Palms Place vertical ribs",
+    "14m lower casino,19m garages with open facades and roof markings",
+    "Relocated existing21-floor14-bay guest core into Ivory; all4 plan corners fit; room templates unchanged",
+    "Opened pool courtyard around mapped basins, retained water and basin depth"
+  ],
+  "evidence": {
+    "before": "build/city-exteriors/palms-before",
+    "after": "build/city-exteriors/palms-final",
+    "review": "All3baseline,3initial and4corrected installed views visually inspected",
+    "collision": "336roof support and453guest approach samples pass; retained core corners inside Ivory",
+    "typecheck": "passed",
+    "geometry": "27544triangles/28batches/0.4MiB compressed"
+  },
+  "performance": {
+    "before": [
+      {
+        "name": "palms-north",
+        "eye": [
+          -1700,
+          240,
+          -130
+        ],
+        "target": [
+          -2050,
+          50,
+          180
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.899999856948853
+      },
+      {
+        "name": "palms-south",
+        "eye": [
+          -1980,
+          210,
+          540
+        ],
+        "target": [
+          -2050,
+          50,
+          175
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.799999952316284
+      },
+      {
+        "name": "palms-entry",
+        "eye": [
+          -1750,
+          7,
+          155
+        ],
+        "target": [
+          -1860,
+          28,
+          150
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.700000047683716
+      }
+    ],
+    "after": [
+      {
+        "name": "palms-court",
+        "eye": [
+          -1745,
+          70,
+          180
+        ],
+        "target": [
+          -1830,
+          2,
+          161
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.59999990463257
+      },
+      {
+        "name": "palms-north",
+        "eye": [
+          -1700,
+          240,
+          -130
+        ],
+        "target": [
+          -2050,
+          50,
+          180
+        ],
+        "p50": 16.59999990463257,
+        "p95": 17.600000143051147
+      },
+      {
+        "name": "palms-south",
+        "eye": [
+          -1980,
+          210,
+          540
+        ],
+        "target": [
+          -2050,
+          50,
+          175
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.5
+      },
+      {
+        "name": "palms-entry",
+        "eye": [
+          -1750,
+          7,
+          155
+        ],
+        "target": [
+          -1860,
+          28,
+          150
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.600000143051147
+      }
+    ]
+  }
+}

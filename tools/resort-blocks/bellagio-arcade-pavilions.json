@@ -1,0 +1,90 @@
+{
+  "id": "bellagio-arcade-pavilions",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/823658733",
+    "way/823658732",
+    "way/823658731"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11110,-115.17450&zoom=20&basemap=satellite",
+      "review": "Three square hip-roof pavilions along covered arcade, tree-lined roads below. Dimensions and elevations inferred from mapped footprint and existing walkway datum."
+    }
+  ],
+  "remaining": [
+    "Pavilion elevations and pier placement estimated",
+    "Retained walkway inner parapets still run through pavilion sides; center route is clear",
+    "Roof ornament and exact tile/seam proportions need refinement",
+    "Static views are about51fps, not60fps; full driving benchmark and neutral daylight not performed"
+  ],
+  "triangles": 1968,
+  "batches": 5,
+  "optimizedMiB": 0.04,
+  "metricScope": "Complete bellagioArcadePiers asset including original piers",
+  "tests": [
+    "294 pavilion-floor support samples PASS",
+    "8 full walkway route legs in both directions PASS",
+    "45 road clearance samples under walkway PASS at4.4m"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/bellagio-pavilions-final/bellagio-bridge-south.png",
+    "build/city-exteriors/bellagio-pavilions-final/bellagio-bridge-north.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "bellagio-bridge-south",
+        "eye": [
+          -150,
+          40,
+          625
+        ],
+        "target": [
+          -115,
+          6,
+          560
+        ],
+        "p": [
+          -120,
+          2,
+          600
+        ],
+        "p50": 23.900000035762787,
+        "p95": 25.399999976158142
+      },
+      {
+        "name": "bellagio-bridge-north",
+        "eye": [
+          -190,
+          40,
+          490
+        ],
+        "target": [
+          -115,
+          6,
+          560
+        ],
+        "p": [
+          -160,
+          2,
+          530
+        ],
+        "p50": 19.599999964237213,
+        "p95": 20.600000023841858
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 30,
+    "colliderTrianglesRemoved": 30,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in BellagioArcadePavilions mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/bellagioArcadePiers-exterior.glb": "acdeb6df9e40325464a0169eef1547f8f8fbc7886c2e35aae5b1c8ccaad9d772",
+      "build/strip-landmarks/bellagioArcadePiers-exterior-collision.json": "219c5038e0d5214285770bc493709f5eb3339b938b68e78420069f1148d8e659"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+const frame=()=>new Promise(r=>requestAnimationFrame(r));probe.teleport(1548,2,-3260);const release=engine.registerBeforeRender(()=>{engine.camera.position.set(1562,20,-3250);engine.camera.lookAt(1553,.4,-3263);engine.camera.updateMatrixWorld();});for(let i=0;i<150;i++)await frame();await __shot('pool-close');release();return 'Pool detail';

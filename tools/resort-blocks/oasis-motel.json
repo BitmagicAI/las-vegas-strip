@@ -1,0 +1,51 @@
+{
+  "id": "oasis-motel",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://sweetheartschapel.com/",
+      "provider": "Chapel owner",
+      "observed": "1735address,outdoor garden",
+      "accessed": "2026-10-19"
+    },
+    {
+      "url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/898245131.jpg?k=c2893a9f3bc01521d0bddc4ea6b95758678b21ecc98276a37559d849dd657137&o=",
+      "provider": "Booking property photo",
+      "imageDate": "unknown",
+      "observed": "White shallow drive arch,gray columns,ochre chapel upper facade,low motel rooms;visually inspected.",
+      "accessed": "2026-10-19"
+    },
+    {
+      "url": "https://www.google.com/maps/search/1735+S+Las+Vegas+Blvd",
+      "provider": "Google Maps satellite",
+      "imageDate": "unknown",
+      "observed": "U courtyard and narrow rear wings confirmed;2026copyright does not date imagery.",
+      "accessed": "2026-10-19"
+    }
+  ],
+  "dimensions": "Mapped1499m2 footprint,approximately32x93m U plan. Heights3.8m motel,6.6m chapel,arch3.9\u20134.7m clear are photo-estimates.",
+  "remaining": [
+    "Three final installed views inspected; chapel setback corrected. Vegetation, typography and facade surface detail remain simplified.",
+    "Motel rooms and chapel interior not implemented",
+    "Brand typography and foliage simplified;photo material fidelity not established"
+  ],
+  "tests": {
+    "ground": "325 floor/headroom samples passed",
+    "walking": "7legs both directions Rapier capsule test passed with city collision",
+    "ownership": "68old mapped triangles removed from visual and collision;all unrelated triangles retained exactly",
+    "typecheck": "passed",
+    "CLIverify": "FAILED at menu: no Play/start detected at15s cap. Independent installed capture probe played successfully. docs/project-records/city-exteriors-2026-10-19/verify-oasis.log"
+  },
+  "evidence": [
+    "build/city-exteriors/oasis-final/oasis-front.png",
+    "build/city-exteriors/oasis-final/oasis-courtyard.png",
+    "build/city-exteriors/oasis-final/oasis-aerial.png"
+  ],
+  "performance": "960x540ultra fixed views ~16.7ms p50,~17.8ms p95;no city-route benchmark.",
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/oasisMotel-exterior.glb": "76261e8c4b4e867f80bff777bbb5280d42604ce0afc8d2571f921977389f8e25",
+      "build/strip-landmarks/oasisMotel-exterior-collision.json": "c303ebfe5680bfcca3ef63e4a7d455adf3d864c55dac305b9e31b23d6c435d73"
+    }
+  }
+}

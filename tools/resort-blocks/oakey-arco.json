@@ -1,0 +1,42 @@
+{
+  "id": "oakey-arco",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/316303728",
+    "way/316303729",
+    "way/316303730"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1515,-115.15212&heading=90&pitch=0",
+      "pano": "UpiRMe7rNHfonFiLs602Vg",
+      "imageDate": "August2024",
+      "observed": "White and blue canopy, two islands/four pumps, white brick columns, tan ampm shop with hipped roof and glazed front. Mapped southern roof way/316303730 absent in August 2024 Street View: open forecourt replaces it."
+    },
+    {
+      "url": "https://www.google.com/maps/search/ARCO+Oakey+Las+Vegas+Boulevard",
+      "observed": "1619SBlvdmatchingresult;TL C January2026canopyphoto has11ftclearance. WadeMarshallOctober2025signphoto twincreamcolumnsblackbases, ARCOandampm andpriceboard."
+    }
+  ],
+  "remaining": [
+    "Storeheightandroofpitchestimated",
+    "Rearutilitydetailsunseen",
+    "No interiororfunctional refueling",
+    "Local apron still meets older mapped paving strips; precise property paving cleanup outstanding",
+    "Sign typography simplified and no variable prices",
+    "No refueling or interior implementation"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/oakey-arco-final",
+    "support": "build/city-exteriors/oakey-arco-collision.json",
+    "walk": "build/city-exteriors/oakey-arco-walk.json",
+    "ownership": "build/city-exteriors/oakey-arco-ownership-audit.json",
+    "visualReview": "Three installed views inspected. Store sign clipping corrected and final store/aerial views reinspected. Obsolete southern roof removed after Street View confirmation. 541 support/headroom samples and six walking legs pass with city collision. 70 mapped triangles removed. 3499 authored triangles/17 batches; optimized GLB 0.47 MB. Static 960x540 probe is not a route-performance claim."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/oakeyArco-exterior.glb": "ba70140e3f3ee7bac2eb0ca9a7a22bc504caef3e031a8de0f48d02e05ab684a3",
+      "build/strip-landmarks/oakeyArco-exterior-collision.json": "0bbfda0e52a277a04e5f9745d1493325e4ecf7e215964f485da6b099598cfdfc"
+    }
+  }
+}

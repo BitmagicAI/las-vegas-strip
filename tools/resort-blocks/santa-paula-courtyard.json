@@ -1,0 +1,58 @@
+{
+  "id": "santa-paula-courtyard",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725789",
+    "way/1236725788",
+    "way/1236725787"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15049,-115.15093&heading=270&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Northern beige low hip-roof wing, white barred windows, block-and-iron street boundary and shared paved courtyard."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15024,-115.15095&heading=270&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Stepped middle building: pale stucco, separate shallow gray roofs, dark gates, lawn and conifer trees; dark covered parking structure behind."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15020,-115.15135&zoom=20&basemap=satellite",
+      "observed": "Three separate footprints: long northern rectangle, stepped eastern wing, angled southern house with rear projection. Concrete parking faces Weldon Place; paved northern rear pad."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14999,-115.15140&heading=350&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Angled southern house: light gray gabled roof, white veranda rail, divided windows, paved parking and several tall fan palms. Residents/vehicles not reconstruction subjects."
+    }
+  ],
+  "remaining": [
+    "Heights/side openings estimated; rear elevations partly inferred",
+    "Parking apron does not yet reach the curved Weldon sidewalk exactly; refine boundary from survey",
+    "Conifers, lawn foliage, carport and fine fence texture remain incomplete",
+    "Roof junctions and weathering need closer neutral-daylight review; no interior access claim"
+  ],
+  "plannedComponents": [
+    "Three mapped low buildings with separate hip roofs and setbacks",
+    "Windows, doors, white veranda and street fences",
+    "Shared north courtyard and south parking apron, roof services"
+  ],
+  "estimatedElevationsM": {
+    "eave": 2.8,
+    "ridge": 4.1
+  },
+  "evidence": {
+    "views": "build/city-exteriors/santa-paula-courtyard-final",
+    "support": "build/city-exteriors/santa-paula-courtyard-collision.json",
+    "walk": "build/city-exteriors/santa-paula-courtyard-walk.json",
+    "ownership": "build/city-exteriors/santa-paula-courtyard-ownership-audit.json",
+    "visualReview": "Installed north/east/south/aerial inspected. Three roofed structures with windows, doors, veranda, fences and approach paving.17728triangles27batches.57MiB optimized.88support6walkinglegsPASS, including street-side entry gap.51oldtriangles removed. Landscaping and boundary match remain incomplete."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/santaPaulaCourtyard-exterior.glb": "bded93ea4739dce3fa0b62487b2d1fad18f941566d9837a90df0efaff4a348b7",
+      "build/strip-landmarks/santaPaulaCourtyard-exterior-collision.json": "7d475d776aec5224fbe42c32abab226e346ea2a58175aa56a358b0ca0072c1bf"
+    }
+  }
+}

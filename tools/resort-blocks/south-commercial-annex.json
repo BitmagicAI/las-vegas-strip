@@ -1,0 +1,49 @@
+{
+  "id": "south-commercial-annex",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364846559"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.08530,-115.17410&zoom=21&basemap=satellite",
+      "review": "Satellite visually inspected: narrow flat white roof, three rooftop units, west awning, yellow access hatching and east alley"
+    }
+  ],
+  "estimates": [
+    "Wallheight3.8m and all concealed elevation openings inferred; no ground-level wall reference"
+  ],
+  "remaining": [
+    "Unverified building identity, inferred doors/windows and materials",
+    "Neighbor558 thin roof seams still alias at some aerial angles",
+    "Retained terrain and road surroundings remain uneven; no interior"
+  ],
+  "triangles": 1580,
+  "batches": 19,
+  "optimizedMiB": 0.05,
+  "ownership": {
+    "removed": 10,
+    "colliderTrianglesRemoved": 10,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in SouthCommercialAnnex mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "825 roof-support samples PASS",
+    "12 perimeter walking legs PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/south-commercial-annex-final/south-annex-west.png",
+    "build/city-exteriors/south-commercial-annex-final/south-annex-roof.png",
+    "build/city-exteriors/south-commercial-annex-final/south-annex-east.png"
+  ],
+  "performance": {
+    "limitation": "Static960x540 screenshots only; not vehicle/streaming proof"
+  },
+  "visualCorrections": [],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/southCommercialAnnex-exterior.glb": "b9c564e09f3cebeb9331523a1f90bb5ff73cca99cea329a2ec38a9e10be7722e",
+      "build/strip-landmarks/southCommercialAnnex-exterior-collision.json": "a7459afbf5e22c675766aaa580b4cbd95be0f65921d7df0756ba4d4e7b0aca54"
+    }
+  }
+}

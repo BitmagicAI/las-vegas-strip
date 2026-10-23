@@ -1,0 +1,521 @@
+{
+ "cromwell": {
+  "bounds": [
+   {
+    "name": "City block / guest-vanderpump",
+    "min": [
+     29.253339767456055,
+     0,
+     76.20500183105469
+    ],
+    "max": [
+     135.7949981689453,
+     41.89595031738281,
+     128.7949981689453
+    ]
+   },
+   {
+    "name": "City block / vanderpump",
+    "min": [
+     27.121919631958008,
+     -0.03999999910593033,
+     71.04399871826172
+    ],
+    "max": [
+     209.00799560546875,
+     7,
+     128.41799926757812
+    ]
+   }
+  ],
+  "views": [
+   {
+    "mode": "natural",
+    "state": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ],
+    "render": {
+     "calls": 1612,
+     "frameCalls": 4,
+     "drawCalls": 1058,
+     "triangles": 14782953,
+     "points": 200,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "mode": "full",
+    "state": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ],
+    "render": {
+     "calls": 2016,
+     "frameCalls": 4,
+     "drawCalls": 1058,
+     "triangles": 14782953,
+     "points": 200,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "mode": "coarse",
+    "state": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": false,
+      "low": true,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": false,
+      "low": true,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ],
+    "render": {
+     "calls": 2428,
+     "frameCalls": 4,
+     "drawCalls": 1056,
+     "triangles": 14372471,
+     "points": 200,
+     "lines": 0,
+     "timestamp": 0
+    }
+   }
+  ],
+  "distances": [
+   {
+    "eye": [
+     -100,
+     38,
+     140
+    ],
+    "states": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ]
+   },
+   {
+    "eye": [
+     -150,
+     38,
+     140
+    ],
+    "states": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ]
+   },
+   {
+    "eye": [
+     -250,
+     38,
+     140
+    ],
+    "states": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ]
+   },
+   {
+    "eye": [
+     -450,
+     38,
+     140
+    ],
+    "states": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ]
+   },
+   {
+    "eye": [
+     -650,
+     38,
+     140
+    ],
+    "states": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ]
+   },
+   {
+    "eye": [
+     -850,
+     38,
+     140
+    ],
+    "states": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": false,
+      "low": true,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": true,
+      "low": false,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ]
+   },
+   {
+    "eye": [
+     -1100,
+     38,
+     140
+    ],
+    "states": [
+     {
+      "name": "City block / guest-vanderpump",
+      "high": false,
+      "low": true,
+      "highTriangles": 235018,
+      "lowTriangles": 31927
+     },
+     {
+      "name": "City block / vanderpump",
+      "high": false,
+      "low": true,
+      "highTriangles": 2732,
+      "lowTriangles": 582
+     }
+    ]
+   }
+  ],
+  "performanceSample": {
+   "median": 16.700000047683716,
+   "p95": 18.40000009536743,
+   "max": 29.09999990463257,
+   "render": {
+    "calls": 4143,
+    "frameCalls": 4,
+    "drawCalls": 1050,
+    "triangles": 14604229,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  }
+ },
+ "comparisons": {
+  "views": [
+   {
+    "view": "cromwell-street",
+    "mode": "natural",
+    "owners": [
+     "City block / guest-vanderpump",
+     "City block / vanderpump"
+    ],
+    "render": {
+     "calls": 4440,
+     "frameCalls": 3,
+     "drawCalls": 416,
+     "triangles": 6590590,
+     "points": 100,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "cromwell-street",
+    "mode": "natural",
+    "median": 16.700000047683716,
+    "p95": 18.399999856948853,
+    "render": {
+     "calls": 5070,
+     "frameCalls": 3,
+     "drawCalls": 416,
+     "triangles": 6590590,
+     "points": 100,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "venetian",
+    "mode": "full",
+    "owners": [
+     "City block / tower/way/30618090",
+     "City block / tower/way/30424125",
+     "City block / venetian",
+     "City block / tower/way/111322067",
+     "City block / palazzo"
+    ],
+    "render": {
+     "calls": 5483,
+     "frameCalls": 4,
+     "drawCalls": 1406,
+     "triangles": 15038972,
+     "points": 200,
+     "lines": 1792,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "venetian",
+    "mode": "coarse",
+    "owners": [
+     "City block / tower/way/30618090",
+     "City block / tower/way/30424125",
+     "City block / venetian",
+     "City block / tower/way/111322067",
+     "City block / palazzo"
+    ],
+    "render": {
+     "calls": 5777,
+     "frameCalls": 3,
+     "drawCalls": 717,
+     "triangles": 7037448,
+     "points": 100,
+     "lines": 896,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "venetian",
+    "mode": "natural",
+    "median": 18.90000009536743,
+    "p95": 19.899999856948853,
+    "render": {
+     "calls": 6608,
+     "frameCalls": 4,
+     "drawCalls": 1406,
+     "triangles": 15043550,
+     "points": 200,
+     "lines": 1792,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "bellagio",
+    "mode": "full",
+    "owners": [
+     "City block / bellagio/shell/zone0/",
+     "City block / bellagio/shell/zone0/bellagio",
+     "City block / bellagio/shell/zone1/",
+     "City block / bellagio/shell/zone2/",
+     "City block / bellagio/shell/zone3/",
+     "City block / bellagio/shell/zone4/",
+     "City block / bellagio/shell/zone5/",
+     "City block / bellagio/shell/zone38/",
+     "City block / bellagio/shell/zone39/",
+     "City block / bellagioBlock",
+     "City block / guest-main",
+     "City block / lakefront-village",
+     "City block / tower/way/114716301",
+     "City block / bellagioLobby",
+     "City block / bellagioGarden",
+     "City block / bellagioConservatory",
+     "City block / bellagioPromenade"
+    ],
+    "render": {
+     "calls": 7000,
+     "frameCalls": 4,
+     "drawCalls": 542,
+     "triangles": 12975898,
+     "points": 200,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "bellagio",
+    "mode": "coarse",
+    "owners": [
+     "City block / bellagio/shell/zone0/",
+     "City block / bellagio/shell/zone0/bellagio",
+     "City block / bellagio/shell/zone1/",
+     "City block / bellagio/shell/zone2/",
+     "City block / bellagio/shell/zone3/",
+     "City block / bellagio/shell/zone4/",
+     "City block / bellagio/shell/zone5/",
+     "City block / bellagio/shell/zone38/",
+     "City block / bellagio/shell/zone39/",
+     "City block / bellagioBlock",
+     "City block / guest-main",
+     "City block / lakefront-village",
+     "City block / tower/way/114716301",
+     "City block / bellagioLobby",
+     "City block / bellagioGarden",
+     "City block / bellagioConservatory",
+     "City block / bellagioPromenade"
+    ],
+    "render": {
+     "calls": 7291,
+     "frameCalls": 3,
+     "drawCalls": 289,
+     "triangles": 6315146,
+     "points": 100,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "bellagio",
+    "mode": "natural",
+    "median": 16.699999809265137,
+    "p95": 18,
+    "render": {
+     "calls": 8121,
+     "frameCalls": 4,
+     "drawCalls": 542,
+     "triangles": 12926704,
+     "points": 200,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "harrahs",
+    "mode": "full",
+    "owners": [
+     "City block / harrahs",
+     "City block / tower/way/111367828",
+     "City block / tower/way/128632721"
+    ],
+    "render": {
+     "calls": 8525,
+     "frameCalls": 4,
+     "drawCalls": 958,
+     "triangles": 11332019,
+     "points": 200,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "harrahs",
+    "mode": "coarse",
+    "owners": [
+     "City block / harrahs",
+     "City block / tower/way/111367828",
+     "City block / tower/way/128632721"
+    ],
+    "render": {
+     "calls": 8921,
+     "frameCalls": 4,
+     "drawCalls": 958,
+     "triangles": 11049495,
+     "points": 200,
+     "lines": 0,
+     "timestamp": 0
+    }
+   },
+   {
+    "view": "harrahs",
+    "mode": "natural",
+    "median": 16.5,
+    "p95": 18.59999990463257,
+    "render": {
+     "calls": 9761,
+     "frameCalls": 4,
+     "drawCalls": 958,
+     "triangles": 11332019,
+     "points": 200,
+     "lines": 0,
+     "timestamp": 0
+    }
+   }
+  ],
+  "memory": {
+   "used": 2308467336,
+   "total": 2568352072,
+   "limit": 4395630592
+  }
+ }
+}

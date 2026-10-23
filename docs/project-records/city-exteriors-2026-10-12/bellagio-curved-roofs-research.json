@@ -1,0 +1,32 @@
+{
+  "mappedIds": [
+    "way/114719022",
+    "way/114719023"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11350,-115.17522&zoom=21&basemap=satellite",
+      "observed": "Southern concave terracotta hip roof with pale eaves, hip seams and vents; surrounding flat podium roof and terracotta village remain separate. Le Cirque label is insufficient evidence of ownership."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11366,-115.17525&zoom=21&basemap=satellite",
+      "observed": "Visually inspected northern rectangular hip roof, short ridge and dark framed rooflight on western slope."
+    }
+  ],
+  "geometryEvidence": {
+    "heightsM": [
+      17,
+      17
+    ],
+    "heightConfidence": "OSM estimate from building:levels5; not measured",
+    "parentRoofM": 12.4,
+    "assumption": "Model upper roof volume above existing podium, retain interior and lower facade.",
+    "eaveM": 13.2,
+    "ridgeM": 17,
+    "concaveArc": "Estimated circle center (-215.4,294.85), radius11.2m; not surveyed."
+  },
+  "remaining": [
+    "Oblique confirmation of eave and ridge elevations, vent dimensions and rooflight placement.",
+    "Current pass retains underlying podium and interiors; does not claim whole Bellagio reconstruction complete."
+  ]
+}

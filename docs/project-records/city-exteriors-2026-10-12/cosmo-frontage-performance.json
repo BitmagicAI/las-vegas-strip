@@ -1,0 +1,31 @@
+{
+  "viewport": [
+    1280,
+    720
+  ],
+  "framesPerView": 180,
+  "method": "Fixed camera, real installed ultra game; not a driving benchmark",
+  "views": [
+    {
+      "name": "east",
+      "p50": 54.5,
+      "p95": 80.3
+    },
+    {
+      "name": "north",
+      "p50": 46.2,
+      "p95": 65.6
+    },
+    {
+      "name": "west",
+      "p50": 81.1,
+      "p95": 106.9
+    },
+    {
+      "name": "decks",
+      "p50": 38.4,
+      "p95": 65.1
+    }
+  ],
+  "limitations": "Before west/decks camera did not adequately show target; after cameras corrected. North/east slower than before; unexplained regression remains open."
+}

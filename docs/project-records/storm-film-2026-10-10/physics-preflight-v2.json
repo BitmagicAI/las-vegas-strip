@@ -1,0 +1,25 @@
+{
+  "run": "probe-physics-v5",
+  "reachedEntrance": true,
+  "duration": 45,
+  "maximumSpeedKmh": 124.97,
+  "sampledPeakChassisRollDegrees": 1.49,
+  "sampledPeakSprungRollDegrees": 7.05,
+  "sampledPeakSprungPitchDegrees": 4.53,
+  "sampledMinimumWheelContacts": 2,
+  "sampledMaximumLaneErrorM": 3.57,
+  "bellagioSlide": {
+    "time": 23.8,
+    "speedKmh": 88.5,
+    "slipDegrees": 21.2
+  },
+  "impacts": 77,
+  "peakRagdolls": 20,
+  "preloadErrors": "8 stale ShadowDepthTexture GPU validation errors, plus favicon 404. Not final capture. Addressed afterward by allocating final film shadow map before first render.",
+  "failedIterations": [
+    "Initial arbitrary lean replaced with dynamic chassis and four ray-cast suspension/tyre contacts.",
+    "Excessive rear grip loss on first intersection caused oversteer; limited drift assist to Bellagio.",
+    "Crowd sampled by time stacked actors at stationary intro; placement now sampled by route distance.",
+    "New ragdolls overlapping chassis produced solver launch/flip; transfer impact momentum to chassis and allow 0.22 s for initial limb overlap to clear before normal vehicle contact resumes."
+  ]
+}

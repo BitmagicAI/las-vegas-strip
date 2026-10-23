@@ -1,0 +1,65 @@
+{
+  "id": "harmon-tower",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1066,-115.1630,650a,280d,35y,40h,65t,0r",
+      "review": "Both aerials visually inspected: three cream/gray towers, small windows, terra-cotta hip roof pavilions, central garden/pools. Date not displayed."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1071,-115.1618,650a,340d,35y,220h,65t,0r",
+      "review": "Both aerials visually inspected: three cream/gray towers, small windows, terra-cotta hip roof pavilions, central garden/pools. Date not displayed."
+    },
+    {
+      "url": "https://www.mjdeanconstruction.com/project/wyndham-grand-desert-resort/",
+      "review": "Primary constructor describes one12-story and two15-story towers. Physical heights estimated, mapped6m adjoining towers incorrect."
+    },
+    {
+      "url": "https://clubwyndham.wyndhamdestinations.com/us/en/resorts/wyndham-hotels-resorts/united-states-of-america/nevada/las-vegas/club-wyndham-grand-desert",
+      "review": "Official operator confirms three towers and courtyard."
+    }
+  ],
+  "identity": "Wyndham Grand Desert: mapped west tower and both adjoining L-shaped towers in relation/6138879",
+  "remaining": [
+    "Courtyard landscape, third pool and furniture",
+    "Ground public entrances and onward connections",
+    "Exact tower height assignment and roof cap fit",
+    "Route performance"
+  ],
+  "dimensions": "West mapped44m retained. Adjoining north/south tower bodies46m/37m and roofcaps+4m estimated using constructor floor counts and imagery; individual tower assignment not survey confirmed.",
+  "baseline": [
+    "build/city-exteriors/grand-desert-before/grand-desert-front.png",
+    "build/city-exteriors/grand-desert-before/grand-desert-back.png",
+    "build/city-exteriors/grand-desert-before/grand-desert-entry.png"
+  ],
+  "baselineReview": "All3 inspected: west44m blank slab, adjoining U-shaped pair only6m high, no courtyard content.",
+  "implementation": {
+    "ids": [
+      "way/1226448921",
+      "relation/6138879"
+    ],
+    "triangles": 275002,
+    "batches": 14,
+    "tests": "92 tower/crown roof support samples passed."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/grand-desert-after/grand-desert-front.png",
+      "build/city-exteriors/grand-desert-after/grand-desert-back.png",
+      "build/city-exteriors/grand-desert-after/grand-desert-entry.png",
+      "build/city-exteriors/grand-desert-after/grand-desert-courtyard.png"
+    ],
+    "review": "All4 inspected: corrected eastern tower heights, windows and roof caps visible; no old6m roof overlays. Courtyard remains sparse with only two approximate pools/decks; third pool, planting, furniture, public lobby and exact roof/crown refinement outstanding."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/grand_desert.py": "633c9da4115f674a4ca89c80bc661290e76d925cac61295c402be56296406edd",
+      "build/optimized/build/strip-landmarks/grandDesert-exterior.glb": "d1616ed770cca78ffc472072989ee74c4af737baabafc10fd15aad5583fab8ff"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed57fps spawn3011bodies; not route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-grand-desert.log"
+  }
+}

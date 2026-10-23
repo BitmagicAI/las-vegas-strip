@@ -1,0 +1,4 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import R from '@dimforge/rapier3d-compat';
+await R.init();const w=new R.World({x:0,y:-9.81,z:0});const c=JSON.parse(fs.readFileSync('build/strip-landmarks/wynnEncoreExterior-exterior-collision.json'));w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));w.step();const pts=JSON.parse(fs.readFileSync('build/city-exteriors/wynn-theater-roof-points.json')), failures=[];
+for(const [x,y,z] of pts){const hit=w.castRay(new R.Ray({x,y:y+.3,z},{x:0,y:-1,z:0}),.6,true);if(!hit||Math.abs(hit.timeOfImpact-.3)>.015)failures.push({x,y,z,hit:hit?.timeOfImpact});}
+w.free();const report={samples:pts.length,failures,scope:'Raised theater roof surface only, not public access certification.'};fs.writeFileSync('build/city-exteriors/wynn-theater-roof-test.json',JSON.stringify(report,null,2));console.log(report);assert.equal(failures.length,0);

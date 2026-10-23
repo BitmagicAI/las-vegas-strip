@@ -1,0 +1,4529 @@
+{
+ "date": "2026-10-07",
+ "machine": "Mac17,7 M5 Max, 128 GB, macOS 26.5, Chrome 153 headless WebGPU (Metal)",
+ "position": "spawn (-60, 0.4, 540), no input",
+ "runs": {
+  "full-res": {
+   "viewport": [
+    1505,
+    772
+   ],
+   "dpr": 2,
+   "canvas": [
+    3010,
+    1544
+   ],
+   "timestamps": true,
+   "results": [
+    {
+     "scenario": "foliage-on",
+     "fps": 25.5,
+     "frameIntervalMs": {
+      "mean": 39.22,
+      "p50": 16.69999999999709,
+      "p90": 100,
+      "p99": 149.90000000000873,
+      "max": 583.3000000000029,
+      "n": 218
+     },
+     "cpuMs": {
+      "mean": 24.37,
+      "p50": 13.3,
+      "p90": 90.1,
+      "p99": 123.9,
+      "max": 124.9,
+      "n": 218
+     },
+     "gpuMs": {
+      "mean": 62.3,
+      "p50": 60.33,
+      "p90": 87.27,
+      "p99": 92.82,
+      "max": 99.93,
+      "n": 211
+     },
+     "drawCalls": {
+      "mean": 462.15,
+      "p50": 473,
+      "p90": 473,
+      "p99": 473,
+      "max": 473,
+      "n": 218
+     },
+     "triangles": {
+      "mean": 9375637.61,
+      "p50": 9595723,
+      "p90": 9595723,
+      "p99": 9595723,
+      "max": 9595723,
+      "n": 218
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 29.99,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 19.48,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 12.83,
+       "passesPerFrame": 1
+      }
+     ],
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    },
+    {
+     "scenario": "tree-shadows-off",
+     "fps": 25.4,
+     "frameIntervalMs": {
+      "mean": 39.36,
+      "p50": 16.70000000001164,
+      "p90": 100,
+      "p99": 150,
+      "max": 349.90000000000873,
+      "n": 213
+     },
+     "cpuMs": {
+      "mean": 24.72,
+      "p50": 12.6,
+      "p90": 101.5,
+      "p99": 126.4,
+      "max": 126.8,
+      "n": 213
+     },
+     "gpuMs": {
+      "mean": 61.78,
+      "p50": 59.67,
+      "p90": 85.98,
+      "p99": 93.73,
+      "max": 94.8,
+      "n": 215
+     },
+     "drawCalls": {
+      "mean": 461.82,
+      "p50": 464,
+      "p90": 464,
+      "p99": 464,
+      "max": 464,
+      "n": 213
+     },
+     "triangles": {
+      "mean": 7062409.75,
+      "p50": 7095723,
+      "p90": 7095723,
+      "p99": 7095723,
+      "max": 7095723,
+      "n": 213
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 30.1,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 19.26,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 12.42,
+       "passesPerFrame": 1
+      }
+     ],
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    },
+    {
+     "scenario": "no-trees",
+     "fps": 25.7,
+     "frameIntervalMs": {
+      "mean": 38.91,
+      "p50": 16.70000000001164,
+      "p90": 83.39999999999418,
+      "p99": 150,
+      "max": 499.90000000000873,
+      "n": 215
+     },
+     "cpuMs": {
+      "mean": 23.33,
+      "p50": 12.9,
+      "p90": 84.2,
+      "p99": 128.6,
+      "max": 130.8,
+      "n": 215
+     },
+     "gpuMs": {
+      "mean": 64.61,
+      "p50": 61.82,
+      "p90": 88.45,
+      "p99": 100.55,
+      "max": 102.81,
+      "n": 210
+     },
+     "drawCalls": {
+      "mean": 457.53,
+      "p50": 464,
+      "p90": 464,
+      "p99": 464,
+      "max": 464,
+      "n": 215
+     },
+     "triangles": {
+      "mean": 6996712.91,
+      "p50": 7095723,
+      "p90": 7095723,
+      "p99": 7095723,
+      "max": 7095723,
+      "n": 215
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 30.85,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 20.28,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 13.48,
+       "passesPerFrame": 1
+      }
+     ],
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    },
+    {
+     "scenario": "no-grass",
+     "fps": 46.1,
+     "frameIntervalMs": {
+      "mean": 21.7,
+      "p50": 16.699999999982538,
+      "p90": 33.30000000000291,
+      "p99": 116.70000000001164,
+      "max": 383.40000000000873,
+      "n": 387
+     },
+     "cpuMs": {
+      "mean": 15.4,
+      "p50": 13.2,
+      "p90": 14.1,
+      "p99": 109.9,
+      "max": 121.8,
+      "n": 387
+     },
+     "gpuMs": {
+      "mean": 12.47,
+      "p50": 12.5,
+      "p90": 15.52,
+      "p99": 17.43,
+      "max": 19.48,
+      "n": 390
+     },
+     "drawCalls": {
+      "mean": 461,
+      "p50": 461,
+      "p90": 461,
+      "p99": 461,
+      "max": 461,
+      "n": 387
+     },
+     "triangles": {
+      "mean": 8715395,
+      "p50": 8715395,
+      "p90": 8715395,
+      "p99": 8715395,
+      "max": 8715395,
+      "n": 387
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 6.74,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 4.65,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 1.08,
+       "passesPerFrame": 1
+      }
+     ],
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    },
+    {
+     "scenario": "foliage-off",
+     "fps": 45.4,
+     "frameIntervalMs": {
+      "mean": 22.02,
+      "p50": 16.699999999982538,
+      "p90": 33.30000000001746,
+      "p99": 133.30000000001746,
+      "max": 433.3999999999942,
+      "n": 389
+     },
+     "cpuMs": {
+      "mean": 14.3,
+      "p50": 12,
+      "p90": 13,
+      "p99": 101,
+      "max": 121,
+      "n": 389
+     },
+     "gpuMs": {
+      "mean": 12.83,
+      "p50": 12.59,
+      "p90": 16.45,
+      "p99": 18.67,
+      "max": 20.07,
+      "n": 389
+     },
+     "drawCalls": {
+      "mean": 450.84,
+      "p50": 452,
+      "p90": 452,
+      "p99": 452,
+      "max": 452,
+      "n": 389
+     },
+     "triangles": {
+      "mean": 6199417.12,
+      "p50": 6215395,
+      "p90": 6215395,
+      "p99": 6215395,
+      "max": 6215395,
+      "n": 389
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 7.05,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 4.94,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 0.84,
+       "passesPerFrame": 1
+      }
+     ],
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    },
+    {
+     "scenario": "foliage-off-half-res",
+     "fps": 55.1,
+     "frameIntervalMs": {
+      "mean": 18.15,
+      "p50": 16.699999999982538,
+      "p90": 16.70000000001164,
+      "p99": 33.39999999999418,
+      "max": 350,
+      "n": 459
+     },
+     "cpuMs": {
+      "mean": 8.78,
+      "p50": 9.9,
+      "p90": 10.6,
+      "p99": 11.1,
+      "max": 29.9,
+      "n": 459
+     },
+     "gpuMs": {
+      "mean": 7.36,
+      "p50": 7.17,
+      "p90": 8.73,
+      "p99": 12.28,
+      "max": 18.82,
+      "n": 419
+     },
+     "drawCalls": {
+      "mean": 412.61,
+      "p50": 452,
+      "p90": 452,
+      "p99": 452,
+      "max": 452,
+      "n": 459
+     },
+     "triangles": {
+      "mean": 5673748.38,
+      "p50": 6215395,
+      "p90": 6215395,
+      "p99": 6215395,
+      "max": 6215395,
+      "n": 459
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 5.12,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 1.7,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 0.54,
+       "passesPerFrame": 1
+      }
+     ],
+     "applied": {
+      "pixelRatio": 1,
+      "canvas": [
+       1505,
+       772
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    },
+    {
+     "scenario": "foliage-off-frozen-shadow",
+     "fps": 45.3,
+     "frameIntervalMs": {
+      "mean": 22.09,
+      "p50": 16.699999999982538,
+      "p90": 33.29999999998836,
+      "p99": 133.40000000002328,
+      "max": 416.6000000000058,
+      "n": 381
+     },
+     "cpuMs": {
+      "mean": 12.48,
+      "p50": 9.6,
+      "p90": 10.6,
+      "p99": 115.8,
+      "max": 138.7,
+      "n": 381
+     },
+     "gpuMs": {
+      "mean": 12.81,
+      "p50": 12.53,
+      "p90": 16.17,
+      "p99": 18.6,
+      "max": 19.4,
+      "n": 379
+     },
+     "drawCalls": {
+      "mean": 366.09,
+      "p50": 369,
+      "p90": 369,
+      "p99": 369,
+      "max": 369,
+      "n": 381
+     },
+     "triangles": {
+      "mean": 4494533.1,
+      "p50": 4530204,
+      "p90": 4530204,
+      "p99": 4530204,
+      "max": 4530204,
+      "n": 381
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 7.65,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 5.16,
+       "passesPerFrame": 1
+      }
+     ],
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    },
+    {
+     "scenario": "foliage-off-long",
+     "fps": 43,
+     "frameIntervalMs": {
+      "mean": 23.24,
+      "p50": 16.699999999982538,
+      "p90": 33.30000000001746,
+      "p99": 150,
+      "max": 500,
+      "n": 1057
+     },
+     "cpuMs": {
+      "mean": 18.72,
+      "p50": 13.9,
+      "p90": 16.6,
+      "p99": 147.2,
+      "max": 202.8,
+      "n": 1057
+     },
+     "gpuMs": {
+      "mean": 13.17,
+      "p50": 12.89,
+      "p90": 16.36,
+      "p99": 20.28,
+      "max": 23.82,
+      "n": 1037
+     },
+     "drawCalls": {
+      "mean": 442.16,
+      "p50": 452,
+      "p90": 452,
+      "p99": 452,
+      "max": 452,
+      "n": 1057
+     },
+     "triangles": {
+      "mean": 6080149.89,
+      "p50": 6215395,
+      "p90": 6215395,
+      "p99": 6215395,
+      "max": 6215395,
+      "n": 1057
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 7.14,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 4.82,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 1.21,
+       "passesPerFrame": 1
+      }
+     ],
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    }
+   ]
+  },
+  "grass": {
+   "viewport": [
+    1505,
+    772
+   ],
+   "dpr": 2,
+   "canvas": [
+    3010,
+    1544
+   ],
+   "timestamps": false,
+   "results": [
+    {
+     "scenario": "foliage-on",
+     "fps": 26.8,
+     "frameIntervalMs": {
+      "mean": 37.26,
+      "p50": 33.30000000000291,
+      "p90": 100,
+      "p99": 150,
+      "max": 150.10000000000582,
+      "n": 212
+     },
+     "cpuMs": {
+      "mean": 25.37,
+      "p50": 13.5,
+      "p90": 103.9,
+      "p99": 124.9,
+      "max": 127.1,
+      "n": 212
+     },
+     "gpuMs": null,
+     "drawCalls": {
+      "mean": 473,
+      "p50": 473,
+      "p90": 473,
+      "p99": 473,
+      "max": 473,
+      "n": 212
+     },
+     "triangles": {
+      "mean": 9595723,
+      "p50": 9595723,
+      "p90": 9595723,
+      "p99": 9595723,
+      "max": 9595723,
+      "n": 212
+     },
+     "gpuPasses": [],
+     "heapMB": {
+      "before": 4745,
+      "after": 4741,
+      "total": 4853
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      },
+      "released": null
+     }
+    },
+    {
+     "scenario": "grass-near-hidden",
+     "fps": 39.7,
+     "frameIntervalMs": {
+      "mean": 25.18,
+      "p50": 16.69999999999709,
+      "p90": 50,
+      "p99": 100,
+      "max": 133.3000000000029,
+      "n": 321
+     },
+     "cpuMs": {
+      "mean": 18.15,
+      "p50": 13.4,
+      "p90": 14.8,
+      "p99": 99,
+      "max": 109.4,
+      "n": 321
+     },
+     "gpuMs": null,
+     "drawCalls": {
+      "mean": 467,
+      "p50": 467,
+      "p90": 467,
+      "p99": 467,
+      "max": 467,
+      "n": 321
+     },
+     "triangles": {
+      "mean": 8774923,
+      "p50": 8774923,
+      "p90": 8774923,
+      "p99": 8774923,
+      "max": 8774923,
+      "n": 321
+     },
+     "gpuPasses": [],
+     "heapMB": {
+      "before": 4744,
+      "after": 4742,
+      "total": 4855
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      },
+      "released": null
+     }
+    },
+    {
+     "scenario": "grass-far-hidden",
+     "fps": 31.5,
+     "frameIntervalMs": {
+      "mean": 31.7,
+      "p50": 16.69999999999709,
+      "p90": 83.30000000000291,
+      "p99": 133.3000000000029,
+      "max": 150,
+      "n": 255
+     },
+     "cpuMs": {
+      "mean": 22.87,
+      "p50": 13.5,
+      "p90": 78.5,
+      "p99": 116.5,
+      "max": 126.4,
+      "n": 255
+     },
+     "gpuMs": null,
+     "drawCalls": {
+      "mean": 467,
+      "p50": 467,
+      "p90": 467,
+      "p99": 467,
+      "max": 467,
+      "n": 255
+     },
+     "triangles": {
+      "mean": 9536195,
+      "p50": 9536195,
+      "p90": 9536195,
+      "p99": 9536195,
+      "max": 9536195,
+      "n": 255
+     },
+     "gpuPasses": [],
+     "heapMB": {
+      "before": 4744,
+      "after": 4751,
+      "total": 4857
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      },
+      "released": null
+     }
+    },
+    {
+     "scenario": "grass-unlit",
+     "fps": 39.7,
+     "frameIntervalMs": {
+      "mean": 25.16,
+      "p50": 16.69999999999709,
+      "p90": 66.60000000000582,
+      "p99": 83.39999999999418,
+      "max": 83.40000000002328,
+      "n": 318
+     },
+     "cpuMs": {
+      "mean": 18.14,
+      "p50": 12.2,
+      "p90": 81,
+      "p99": 88.2,
+      "max": 91.2,
+      "n": 318
+     },
+     "gpuMs": null,
+     "drawCalls": {
+      "mean": 473,
+      "p50": 473,
+      "p90": 473,
+      "p99": 473,
+      "max": 473,
+      "n": 318
+     },
+     "triangles": {
+      "mean": 9595723,
+      "p50": 9595723,
+      "p90": 9595723,
+      "p99": 9595723,
+      "max": 9595723,
+      "n": 318
+     },
+     "gpuPasses": [],
+     "heapMB": {
+      "before": 4751,
+      "after": 4743,
+      "total": 4857
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      },
+      "released": null
+     }
+    },
+    {
+     "scenario": "no-grass",
+     "fps": 41.7,
+     "frameIntervalMs": {
+      "mean": 24,
+      "p50": 16.699999999982538,
+      "p90": 33.39999999999418,
+      "p99": 83.39999999999418,
+      "max": 133.40000000002328,
+      "n": 334
+     },
+     "cpuMs": {
+      "mean": 17.02,
+      "p50": 12.1,
+      "p90": 13.4,
+      "p99": 90.7,
+      "max": 110.4,
+      "n": 334
+     },
+     "gpuMs": null,
+     "drawCalls": {
+      "mean": 461,
+      "p50": 461,
+      "p90": 461,
+      "p99": 461,
+      "max": 461,
+      "n": 334
+     },
+     "triangles": {
+      "mean": 8715395,
+      "p50": 8715395,
+      "p90": 8715395,
+      "p99": 8715395,
+      "max": 8715395,
+      "n": 334
+     },
+     "gpuPasses": [],
+     "heapMB": {
+      "before": 4747,
+      "after": 4753,
+      "total": 4858
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      },
+      "released": null
+     }
+    }
+   ]
+  },
+  "trace-off": {
+   "viewport": [
+    1505,
+    772
+   ],
+   "dpr": 2,
+   "canvas": [
+    3010,
+    1544
+   ],
+   "timestamps": true,
+   "results": [
+    {
+     "scenario": "foliage-off",
+     "fps": 45,
+     "frameIntervalMs": {
+      "mean": 22.21,
+      "p50": 16.69999999999709,
+      "p90": 33.30000000000291,
+      "p99": 116.70000000001164,
+      "max": 150,
+      "n": 706
+     },
+     "cpuMs": {
+      "mean": 16.21,
+      "p50": 12.7,
+      "p90": 13.6,
+      "p99": 122.6,
+      "max": 138.7,
+      "n": 706
+     },
+     "gpuMs": {
+      "mean": 12.22,
+      "p50": 12.07,
+      "p90": 15.08,
+      "p99": 17.15,
+      "max": 20.31,
+      "n": 705
+     },
+     "drawCalls": {
+      "mean": 450.72,
+      "p50": 452,
+      "p90": 452,
+      "p99": 452,
+      "max": 452,
+      "n": 706
+     },
+     "triangles": {
+      "mean": 6197787.65,
+      "p50": 6215395,
+      "p90": 6215395,
+      "p99": 6215395,
+      "max": 6215395,
+      "n": 706
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 6.87,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 4.66,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 0.7,
+       "passesPerFrame": 1
+      }
+     ],
+     "heapMB": {
+      "before": 4741,
+      "after": 4745,
+      "total": 4858
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 0,
+       "Trees LOD1": 0,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 0,
+       "Lawn LOD1": 0
+      }
+     }
+    },
+    {
+     "scenario": "foliage-on",
+     "fps": 23,
+     "frameIntervalMs": {
+      "mean": 43.39,
+      "p50": 33.29999999998836,
+      "p90": 116.70000000001164,
+      "p99": 166.6999999999971,
+      "max": 183.40000000000873,
+      "n": 381
+     },
+     "cpuMs": {
+      "mean": 30.14,
+      "p50": 15.8,
+      "p90": 120.6,
+      "p99": 159.3,
+      "max": 179.2,
+      "n": 381
+     },
+     "gpuMs": {
+      "mean": 69.02,
+      "p50": 66.16,
+      "p90": 94.09,
+      "p99": 111.11,
+      "max": 119.3,
+      "n": 378
+     },
+     "drawCalls": {
+      "mean": 470.52,
+      "p50": 473,
+      "p90": 473,
+      "p99": 473,
+      "max": 473,
+      "n": 381
+     },
+     "triangles": {
+      "mean": 9545351.75,
+      "p50": 9595723,
+      "p90": 9595723,
+      "p99": 9595723,
+      "max": 9595723,
+      "n": 381
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 33.02,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 21.37,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 14.62,
+       "passesPerFrame": 1
+      }
+     ],
+     "heapMB": {
+      "before": 4745,
+      "after": 4752,
+      "total": 4858
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": true,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      }
+     }
+    }
+   ]
+  },
+  "release": {
+   "viewport": [
+    1505,
+    772
+   ],
+   "dpr": 2,
+   "canvas": [
+    3010,
+    1544
+   ],
+   "timestamps": true,
+   "results": [
+    {
+     "scenario": "foliage-off",
+     "fps": 41.4,
+     "frameIntervalMs": {
+      "mean": 24.17,
+      "p50": 16.69999999999709,
+      "p90": 33.39999999999418,
+      "p99": 116.69999999999709,
+      "max": 133.40000000000873,
+      "n": 640
+     },
+     "cpuMs": {
+      "mean": 16.31,
+      "p50": 10.8,
+      "p90": 12.1,
+      "p99": 106.2,
+      "max": 114.6,
+      "n": 640
+     },
+     "gpuMs": {
+      "mean": 11.7,
+      "p50": 11.78,
+      "p90": 13.79,
+      "p99": 17.69,
+      "max": 18.75,
+      "n": 628
+     },
+     "drawCalls": {
+      "mean": 443.52,
+      "p50": 452,
+      "p90": 452,
+      "p99": 452,
+      "max": 452,
+      "n": 640
+     },
+     "triangles": {
+      "mean": 6098856.34,
+      "p50": 6215395,
+      "p90": 6215395,
+      "p99": 6215395,
+      "max": 6215395,
+      "n": 640
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 6.54,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 4.53,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 0.63,
+       "passesPerFrame": 1
+      }
+     ],
+     "heapMB": {
+      "before": 4741,
+      "after": 4745,
+      "total": 4857
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 0,
+       "Trees LOD1": 0,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 0,
+       "Lawn LOD1": 0
+      },
+      "released": null
+     }
+    },
+    {
+     "scenario": "release-cpu-geometry",
+     "fps": 44.3,
+     "frameIntervalMs": {
+      "mean": 22.55,
+      "p50": 16.69999999999709,
+      "p90": 33.30000000000291,
+      "p99": 116.69999999999709,
+      "max": 149.90000000000873,
+      "n": 669
+     },
+     "cpuMs": {
+      "mean": 15.25,
+      "p50": 11.1,
+      "p90": 12.7,
+      "p99": 111.1,
+      "max": 131.8,
+      "n": 669
+     },
+     "gpuMs": {
+      "mean": 11.9,
+      "p50": 11.9,
+      "p90": 14.26,
+      "p99": 17.74,
+      "max": 21.37,
+      "n": 663
+     },
+     "drawCalls": {
+      "mean": 446.59,
+      "p50": 452,
+      "p90": 452,
+      "p99": 452,
+      "max": 452,
+      "n": 669
+     },
+     "triangles": {
+      "mean": 6141070.4,
+      "p50": 6215395,
+      "p90": 6215395,
+      "p99": 6215395,
+      "max": 6215395,
+      "n": 669
+     },
+     "gpuPasses": [
+      {
+       "pass": "output 3010x1544 msaa4",
+       "perFrameMs": 6.63,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "screen",
+       "perFrameMs": 4.59,
+       "passesPerFrame": 1
+      },
+      {
+       "pass": "ShadowMap 4096x4096",
+       "perFrameMs": 0.69,
+       "passesPerFrame": 1
+      }
+     ],
+     "heapMB": {
+      "before": 3319,
+      "after": 3317,
+      "total": 3386
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      },
+      "released": {
+       "MB": 1447,
+       "attributes": 7761
+      }
+     }
+    }
+   ]
+  },
+  "no-ts": {
+   "viewport": [
+    1505,
+    772
+   ],
+   "dpr": 2,
+   "canvas": [
+    3010,
+    1544
+   ],
+   "timestamps": false,
+   "results": [
+    {
+     "scenario": "foliage-off",
+     "fps": 43.8,
+     "frameIntervalMs": {
+      "mean": 22.85,
+      "p50": 16.69999999999709,
+      "p90": 33.30000000000291,
+      "p99": 133.3000000000029,
+      "max": 133.5,
+      "n": 690
+     },
+     "cpuMs": {
+      "mean": 16.76,
+      "p50": 13.3,
+      "p90": 14.4,
+      "p99": 128.4,
+      "max": 133.9,
+      "n": 690
+     },
+     "gpuMs": null,
+     "drawCalls": {
+      "mean": 452,
+      "p50": 452,
+      "p90": 452,
+      "p99": 452,
+      "max": 452,
+      "n": 690
+     },
+     "triangles": {
+      "mean": 6215395,
+      "p50": 6215395,
+      "p90": 6215395,
+      "p99": 6215395,
+      "max": 6215395,
+      "n": 690
+     },
+     "gpuPasses": [],
+     "heapMB": {
+      "before": 4745,
+      "after": 4746,
+      "total": 4856
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 0,
+       "Trees LOD1": 0,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 0,
+       "Lawn LOD1": 0
+      },
+      "released": null
+     }
+    },
+    {
+     "scenario": "foliage-off-videos-paused",
+     "fps": 48.3,
+     "frameIntervalMs": {
+      "mean": 20.7,
+      "p50": 16.69999999999709,
+      "p90": 33.29999999998836,
+      "p99": 133.3000000000029,
+      "max": 183.39999999999418,
+      "n": 776
+     },
+     "cpuMs": {
+      "mean": 15.2,
+      "p50": 13.1,
+      "p90": 14.4,
+      "p99": 132.4,
+      "max": 162.2,
+      "n": 776
+     },
+     "gpuMs": null,
+     "drawCalls": {
+      "mean": 452,
+      "p50": 452,
+      "p90": 452,
+      "p99": 452,
+      "max": 452,
+      "n": 776
+     },
+     "triangles": {
+      "mean": 6215395,
+      "p50": 6215395,
+      "p90": 6215395,
+      "p99": 6215395,
+      "max": 6215395,
+      "n": 776
+     },
+     "gpuPasses": [],
+     "heapMB": {
+      "before": 4745,
+      "after": 4743,
+      "total": 4855
+     },
+     "applied": {
+      "pixelRatio": 2,
+      "canvas": [
+       3010,
+       1544
+      ],
+      "plantingVisible": false,
+      "visibleGroups": {
+       "Trees LOD0": 5,
+       "Trees LOD1": 4,
+       "Trees LOD2": 0,
+       "Lawn LOD0": 8,
+       "Lawn LOD1": 22
+      },
+      "released": null
+     }
+    }
+   ]
+  }
+ },
+ "gc": {
+  "trace-off/foliage-off": {
+   "seconds": 10.1,
+   "markCompacts": 70,
+   "scavenges": 0,
+   "reasons": [
+    [
+     "finalize incremental marking via task",
+     48
+    ],
+    [
+     "external memory pressure",
+     22
+    ]
+   ],
+   "pauseMsTotal": 2982,
+   "pauseMsMean": 42.6,
+   "pauseMsMax": 97.1,
+   "globalConsumedMB": 9573,
+   "globalLimitMB": 9597,
+   "oldGenMB": 697
+  },
+  "trace-off/foliage-on": {
+   "seconds": 10.2,
+   "markCompacts": 56,
+   "scavenges": 4,
+   "reasons": [
+    [
+     "external memory pressure",
+     31
+    ],
+    [
+     "finalize incremental marking via task",
+     24
+    ],
+    [
+     "finalize incremental marking via stack guard",
+     1
+    ]
+   ],
+   "pauseMsTotal": 3924,
+   "pauseMsMean": 70.1,
+   "pauseMsMax": 123.0,
+   "globalConsumedMB": 9645,
+   "globalLimitMB": 8192,
+   "oldGenMB": 698
+  },
+  "release/foliage-off": {
+   "seconds": 10.1,
+   "markCompacts": 86,
+   "scavenges": 0,
+   "reasons": [
+    [
+     "finalize incremental marking via task",
+     50
+    ],
+    [
+     "external memory pressure",
+     36
+    ]
+   ],
+   "pauseMsTotal": 3725,
+   "pauseMsMean": 43.3,
+   "pauseMsMax": 83.6,
+   "globalConsumedMB": 9592,
+   "globalLimitMB": 9598,
+   "oldGenMB": 698
+  },
+  "release/release-cpu-geometry": {
+   "seconds": 10.1,
+   "markCompacts": 68,
+   "scavenges": 21,
+   "reasons": [
+    [
+     "finalize incremental marking via task",
+     37
+    ],
+    [
+     "external memory pressure",
+     30
+    ],
+    [
+     "allocation failure",
+     1
+    ]
+   ],
+   "pauseMsTotal": 3276,
+   "pauseMsMean": 48.2,
+   "pauseMsMax": 86.9,
+   "globalConsumedMB": 8206,
+   "globalLimitMB": 8192,
+   "oldGenMB": 699
+  },
+  "no-ts/foliage-off": {
+   "seconds": 10.1,
+   "markCompacts": 60,
+   "scavenges": 0,
+   "reasons": [
+    [
+     "finalize incremental marking via task",
+     45
+    ],
+    [
+     "external memory pressure",
+     15
+    ]
+   ],
+   "pauseMsTotal": 2910,
+   "pauseMsMean": 48.5,
+   "pauseMsMax": 110.6,
+   "globalConsumedMB": 9574,
+   "globalLimitMB": 9580,
+   "oldGenMB": 698
+  },
+  "no-ts/foliage-off-videos-paused": {
+   "seconds": 10.1,
+   "markCompacts": 58,
+   "scavenges": 0,
+   "reasons": [
+    [
+     "finalize incremental marking via task",
+     49
+    ],
+    [
+     "external memory pressure",
+     9
+    ]
+   ],
+   "pauseMsTotal": 2450,
+   "pauseMsMean": 42.2,
+   "pauseMsMax": 125.4,
+   "globalConsumedMB": 9629,
+   "globalLimitMB": 9635,
+   "oldGenMB": 699
+  }
+ },
+ "memory": {
+  "heapUsage": {
+   "usedMB": 696,
+   "totalMB": 737,
+   "embedderUsedMB": 9,
+   "backingStorageMB": 4038
+  },
+  "chromeRendererTop": [
+   [
+    "partition_alloc",
+    4407
+   ],
+   [
+    "partition_alloc/partitions",
+    4407
+   ],
+   [
+    "partition_alloc/allocated_objects",
+    4396
+   ],
+   [
+    "partition_alloc/allocated_objects/<unspecified>",
+    4384
+   ],
+   [
+    "partition_alloc/partitions/array_buffer",
+    4096
+   ],
+   [
+    "canvas",
+    1578
+   ],
+   [
+    "v8",
+    743
+   ],
+   [
+    "v8/main",
+    740
+   ],
+   [
+    "v8/main/heap",
+    724
+   ],
+   [
+    "malloc",
+    640
+   ],
+   [
+    "malloc/partitions",
+    640
+   ],
+   [
+    "malloc/partitions/allocator",
+    639
+   ],
+   [
+    "malloc/allocated_objects",
+    609
+   ],
+   [
+    "malloc/allocated_objects/<unspecified>",
+    571
+   ],
+   [
+    "shared_memory",
+    484
+   ],
+   [
+    "gpu",
+    468
+   ],
+   [
+    "gpu/mapped_memory",
+    442
+   ],
+   [
+    "gpu/mapped_memory/manager_0x4",
+    374
+   ],
+   [
+    "partition_alloc/partitions/buffer",
+    312
+   ],
+   [
+    "canvas/ResourceProvider_0x1240B0CBC00",
+    128
+   ]
+  ],
+  "gpuProcessTop": [
+   [
+    "gpu",
+    7066
+   ],
+   [
+    "gpu/angle",
+    4921
+   ],
+   [
+    "malloc",
+    2088
+   ],
+   [
+    "malloc/partitions",
+    2088
+   ],
+   [
+    "malloc/allocated_objects",
+    2083
+   ],
+   [
+    "iosurface",
+    1662
+   ],
+   [
+    "gpu/shared_images",
+    1656
+   ],
+   [
+    "shared_memory",
+    480
+   ]
+  ],
+  "sceneGeometryMB": 3020,
+  "sceneGeometryByOwner": [
+   [
+    "OpenStreetMap / geographic Strip",
+    1113,
+    3295
+   ],
+   [
+    "Paris \u00b7 mapped resort exterior \u00b7 exterior",
+    322,
+    420
+   ],
+   [
+    "WorldGroup",
+    276,
+    3785
+   ],
+   [
+    "Bellagio \u00b7 exterior and arrival \u00b7 exterior",
+    240,
+    57
+   ],
+   [
+    "Bellagio \u00b7 lakefront",
+    221,
+    19
+   ],
+   [
+    "Hilton Vacation Club Polo Towers \u00b7 exterior",
+    203,
+    35
+   ],
+   [
+    "Photo-referenced mapped high-rises",
+    153,
+    1190
+   ],
+   [
+    "The Venetian frontage \u00b7 exterior",
+    116,
+    24
+   ],
+   [
+    "Bellagio \u00b7 trees and lawn",
+    66,
+    535
+   ],
+   [
+    "The Palazzo \u00b7 exterior",
+    57,
+    25
+   ],
+   [
+    "The Vanderpump Hotel \u00b7 exterior",
+    48,
+    38
+   ],
+   [
+    "Cosmopolitan complete exterior \u00b7 exterior",
+    42,
+    61
+   ],
+   [
+    "The LINQ + High Roller \u00b7 exterior",
+    41,
+    664
+   ],
+   [
+    "Treasure Island \u00b7 exterior",
+    41,
+    22
+   ],
+   [
+    "Big Apple Coaster \u2022 OSM mapped route",
+    15,
+    55
+   ]
+  ],
+  "sceneGeometryByKind": [
+   [
+    "attribute:position",
+    537
+   ],
+   [
+    "attribute:normal",
+    430
+   ],
+   [
+    "attribute:batchAtlas",
+    350
+   ],
+   [
+    "attribute:color",
+    348
+   ],
+   [
+    "attribute:batchEmission",
+    347
+   ],
+   [
+    "index",
+    288
+   ],
+   [
+    "attribute:uv",
+    251
+   ],
+   [
+    "attribute:batchPbr",
+    231
+   ],
+   [
+    "attribute:batchWrap",
+    175
+   ],
+   [
+    "instanceMatrix",
+    44
+   ],
+   [
+    "attribute:skinIndex",
+    5
+   ],
+   [
+    "attribute:skinWeight",
+    5
+   ],
+   [
+    "attribute:uv1",
+    4
+   ],
+   [
+    "attribute:_sparseCorrectives",
+    4
+   ],
+   [
+    "attribute:tangent",
+    1
+   ],
+   [
+    "attribute:_lid_wall_root",
+    0
+   ],
+   [
+    "attribute:_lid_wall_weight",
+    0
+   ],
+   [
+    "instanceColor",
+    0
+   ],
+   [
+    "attribute:size",
+    0
+   ]
+  ],
+  "textureImages": {
+   "distinct": 154,
+   "MB": 386,
+   "byKind": {
+    "ImageBitmap": {
+     "n": 119,
+     "MB": 376,
+     "largest": "2048x2048"
+    },
+    "HTMLVideoElement": {
+     "n": 1,
+     "MB": 0,
+     "largest": "0x0"
+    },
+    "HTMLCanvasElement": {
+     "n": 34,
+     "MB": 10,
+     "largest": "512x512"
+    }
+   },
+   "byOwner": [
+    [
+     "WorldGroup",
+     102,
+     18
+    ],
+    [
+     "Bellagio \u00b7 trees and lawn",
+     75,
+     19
+    ],
+    [
+     "Guest \u00b7 bellagio-entry",
+     48,
+     3
+    ],
+    [
+     "HeadlessPlayer",
+     12,
+     4
+    ],
+    [
+     "Vegas character b6102",
+     12,
+     4
+    ],
+    [
+     "Vegas character b6103",
+     12,
+     4
+    ],
+    [
+     "Vegas character b6104",
+     12,
+     4
+    ],
+    [
+     "Vegas character b6105",
+     12,
+     4
+    ],
+    [
+     "Vegas character b6106",
+     12,
+     4
+    ],
+    [
+     "Vegas character b6107",
+     12,
+     4
+    ],
+    [
+     "Vegas character b6108",
+     12,
+     4
+    ],
+    [
+     "Vegas character b6109",
+     12,
+     4
+    ],
+    [
+     "Guest \u00b7 doors and signs",
+     7,
+     28
+    ],
+    [
+     "The LINQ + High Roller \u00b7 exterior",
+     4,
+     4
+    ],
+    [
+     "Sphere \u00b7 exterior",
+     3,
+     5
+    ]
+   ]
+  },
+  "wasm": [
+   {
+    "MB": 40,
+    "site": "WebAssembly.instantiate (<anonymous>:18:83) <- async /.vite-cache/deps/@dimforge_rapier3d-compat.js:3003:18 <- async uA (/.vite-cache/deps/@dimforge_rapier3d-compat.js:2982:40)"
+   }
+  ],
+  "idleAllocation": {
+   "sampledMBPerSecond": 47.1,
+   "bySite": [
+    [
+     5.31,
+     "next :0 <- contains work/BuildingVisibility.js:3 <- (anonymous) work/BuildingVisibility.js:106 <- find :0"
+    ],
+    [
+     4.37,
+     "(anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- forEachRigidBody deps/@dimforge_rapier3d-compat.js:4985 <- quarantineSanitizePass physics/PhysicsWorld.js:410"
+    ],
+    [
+     4.1,
+     "(anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- quarantineSanitizePass physics/PhysicsWorld.js:410 <- runSubstep physics/PhysicsWorld.js:291"
+    ],
+    [
+     3.41,
+     "contains work/BuildingVisibility.js:3 <- (anonymous) work/BuildingVisibility.js:106 <- find :0 <- pointVisible work/BuildingVisibility.js:103"
+    ],
+    [
+     1.45,
+     "intersectsObject deps/chunk-QVLGVTV6.js:14423 <- _projectObject deps/chunk-MCS52GJZ.js:30984 <- _projectObject deps/chunk-MCS52GJZ.js:30984 <- _projectObject deps/chunk-MCS52GJZ.js:30984"
+    ],
+    [
+     1.45,
+     "(anonymous) work/SkylineDepth.js:39 <- sort :0 <- sort deps/chunk-MCS52GJZ.js:16097 <- _renderScene deps/chunk-MCS52GJZ.js:29959"
+    ],
+    [
+     1.42,
+     "activityRouteClear characters/VegasCast.js:67 <- (anonymous) characters/NpcActivities.js:31 <- filter :0 <- step characters/NpcActivities.js:12"
+    ],
+    [
+     1.08,
+     "update work/StripLandmarks.js:226 <- update work/ResortBlocks.js:11 <- update work/GeographicCity.js:99 <- updateInteriorVisibility work/Game.js:505"
+    ],
+    [
+     1.05,
+     "add :0 <- addUniformUpdateRange deps/chunk-MCS52GJZ.js:31619 <- updateByType deps/chunk-MCS52GJZ.js:31744 <- update deps/chunk-MCS52GJZ.js:31721"
+    ],
+    [
+     1,
+     "getDynamicCacheKey deps/chunk-MCS52GJZ.js:14568 <- get deps/chunk-MCS52GJZ.js:14636 <- _renderObjectDirect deps/chunk-MCS52GJZ.js:31334 <- renderObject deps/chunk-MCS52GJZ.js:31243"
+    ],
+    [
+     0.99,
+     "updateValue deps/chunk-MCS52GJZ.js:7363 <- update deps/chunk-MCS52GJZ.js:7356 <- updateForRender deps/chunk-MCS52GJZ.js:27660 <- _renderObjectDirect deps/chunk-MCS52GJZ.js:31334"
+    ],
+    [
+     0.87,
+     "updateByType deps/chunk-MCS52GJZ.js:31744 <- update deps/chunk-MCS52GJZ.js:31721 <- _update deps/chunk-MCS52GJZ.js:15845 <- _renderObjectDirect deps/chunk-MCS52GJZ.js:31334"
+    ],
+    [
+     0.7,
+     "_update deps/chunk-MCS52GJZ.js:15845 <- _renderObjectDirect deps/chunk-MCS52GJZ.js:31334 <- renderObject deps/chunk-MCS52GJZ.js:31243 <- _renderObjects deps/chunk-MCS52GJZ.js:31112"
+    ],
+    [
+     0.52,
+     "raycast physics/PhysicsWorld.js:1559 <- activityRouteClear characters/VegasCast.js:67 <- (anonymous) characters/NpcActivities.js:31 <- filter :0"
+    ],
+    [
+     0.52,
+     "contains work/BuildingVisibility.js:3 <- (anonymous) work/BuildingVisibility.js:13 <- find :0 <- visibilityState work/BuildingVisibility.js:12"
+    ],
+    [
+     0.49,
+     "next :0 <- contains work/BuildingVisibility.js:3 <- (anonymous) work/BuildingVisibility.js:13 <- find :0"
+    ],
+    [
+     0.48,
+     "translation deps/@dimforge_rapier3d-compat.js:3173 <- (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- forEachRigidBody deps/@dimforge_rapier3d-compat.js:4985"
+    ],
+    [
+     0.48,
+     "rotation deps/@dimforge_rapier3d-compat.js:3176 <- (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- quarantineSanitizePass physics/PhysicsWorld.js:410"
+    ],
+    [
+     0.45,
+     "__wbg_call_35dba3c747ad7521 deps/@dimforge_rapier3d-compat.js:2928 <- castRayAndGetNormal deps/@dimforge_rapier3d-compat.js:24 <- castRayAndGetNormal deps/@dimforge_rapier3d-compat.js:4036 <- raycast physics/PhysicsWorld.js:1559"
+    ],
+    [
+     0.43,
+     "next :0 <- localPoint hotels/HotelLayout.js:8 <- (anonymous) hotels/HotelStreaming.js:422 <- map :0"
+    ],
+    [
+     0.42,
+     "_projectObject deps/chunk-MCS52GJZ.js:30984 <- _projectObject deps/chunk-MCS52GJZ.js:30984 <- _projectObject deps/chunk-MCS52GJZ.js:30984 <- _projectObject deps/chunk-MCS52GJZ.js:30984"
+    ],
+    [
+     0.41,
+     "linvel deps/@dimforge_rapier3d-compat.js:3211 <- (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- forEachRigidBody deps/@dimforge_rapier3d-compat.js:4985"
+    ],
+    [
+     0.39,
+     "(anonymous) work/StripLandmarks.js:235 <- map :0 <- update work/StripLandmarks.js:226 <- update work/ResortBlocks.js:11"
+    ],
+    [
+     0.39,
+     "activityRouteClear characters/VegasCast.js:67 <- (anonymous) characters/VegasCast.js:43 <- (anonymous) characters/NpcActivities.js:31 <- filter :0"
+    ],
+    [
+     0.38,
+     "rotation deps/@dimforge_rapier3d-compat.js:3176 <- (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- forEachRigidBody deps/@dimforge_rapier3d-compat.js:4985"
+    ],
+    [
+     0.38,
+     "addUniformUpdateRange deps/chunk-MCS52GJZ.js:31619 <- updateByType deps/chunk-MCS52GJZ.js:31744 <- update deps/chunk-MCS52GJZ.js:31721 <- _update deps/chunk-MCS52GJZ.js:15845"
+    ],
+    [
+     0.38,
+     "_prepareResult physics/PhysicsWorld.js:1518 <- raycast physics/PhysicsWorld.js:1559 <- activityRouteClear characters/VegasCast.js:67 <- (anonymous) characters/NpcActivities.js:31"
+    ],
+    [
+     0.35,
+     "register :0 <- castRayAndGetNormal deps/@dimforge_rapier3d-compat.js:4036 <- raycast physics/PhysicsWorld.js:1559 <- activityRouteClear characters/VegasCast.js:67"
+    ],
+    [
+     0.35,
+     "translation deps/@dimforge_rapier3d-compat.js:3173 <- (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- quarantineSanitizePass physics/PhysicsWorld.js:410"
+    ],
+    [
+     0.34,
+     "angvel deps/@dimforge_rapier3d-compat.js:3218 <- (anonymous) physics/PhysicsWorld.js:460 <- forEach deps/@dimforge_rapier3d-compat.js:3475 <- forEachRigidBody deps/@dimforge_rapier3d-compat.js:4985"
+    ]
+   ]
+  }
+ },
+ "foliageWarmupTrace": [
+  [
+   "boot log",
+   394,
+   [
+    [
+     16174,
+     "Trees -3,14 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Trees -2,14 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Trees -1,14 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Trees -3,13 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Trees -4,14 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Trees -4,12 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Trees -5,13 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Trees -5,10 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Trees -5,11 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -8,44 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -8,45 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -7,44 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -7,47 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -7,45 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -7,42 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -6,42 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -6,44 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -6,45 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -6,47 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -6,43 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -5,42 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -5,44 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -5,45 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -5,47 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -4,42 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -4,44 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -4,45 LOD1",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -4,47 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -3,44 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     16174,
+     "Lawn -3,45 LOD0",
+     true,
+     "at reapplyWarmupOverrides (/dist/engine/engine/GameEngineWarmup.js:442:27) <- at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:509:17)"
+    ],
+    [
+     69637,
+     "Trees -3,14 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -3,14 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -2,14 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -2,14 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -1,14 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -1,14 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -3,13 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -3,13 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -4,14 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -4,14 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -4,12 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -4,12 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -5,13 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -5,13 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -5,10 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -5,10 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -5,11 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Trees -5,11 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,34 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,34 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,35 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,35 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,36 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,36 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,37 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,37 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,38 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,38 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,33 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -19,33 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,33 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,33 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,34 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,34 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,38 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,38 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,36 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,36 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,37 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,37 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,35 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -18,35 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,33 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,33 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,35 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,35 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,34 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,34 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,33 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,33 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -17,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,36 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,36 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,37 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,37 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,38 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,38 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,35 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,35 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,34 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -16,34 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,34 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,34 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,35 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,35 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,36 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,36 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,37 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,37 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,38 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,38 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69637,
+     "Lawn -15,33 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -15,33 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,33 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,33 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,34 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,34 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,35 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,35 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,36 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,36 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,37 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,37 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,38 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,38 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -14,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,33 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,33 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,34 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,34 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,35 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,35 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,38 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,38 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,36 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,36 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -13,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,35 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,35 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,36 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,36 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,38 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,38 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,37 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,37 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -12,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,37 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,37 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,38 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,38 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -11,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,39 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,39 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -10,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,40 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,40 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,41 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,41 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,46 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,46 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -9,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -8,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -7,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,43 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -6,43 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -5,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,47 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,47 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,48 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,48 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,49 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -4,49 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -3,42 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -3,42 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -3,44 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -3,44 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -3,45 LOD0",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ],
+    [
+     69638,
+     "Lawn -3,45 LOD1",
+     false,
+     "at warmUpSceneNow (/dist/engine/engine/GameEngineWarmup.js:544:27)"
+    ]
+   ]
+  ],
+  [
+   "idle 2 s at spawn",
+   {
+    "Trees LOD0": 0,
+    "Trees LOD1": 0,
+    "Trees LOD2": 0,
+    "Lawn LOD0": 0,
+    "Lawn LOD1": 0
+   },
+   0
+  ],
+  [
+   "teleported 700 m east",
+   {
+    "Trees LOD0": 0,
+    "Trees LOD1": 0,
+    "Trees LOD2": 0,
+    "Lawn LOD0": 0,
+    "Lawn LOD1": 0
+   },
+   0,
+   {
+    "x": 639.9996948242188,
+    "y": 0.15496948242187497,
+    "z": 540
+   }
+  ],
+  [
+   "back at spawn",
+   {
+    "Trees LOD0": 5,
+    "Trees LOD1": 4,
+    "Trees LOD2": 0,
+    "Lawn LOD0": 8,
+    "Lawn LOD1": 13
+   },
+   30,
+   {
+    "x": -60.00029754638672,
+    "y": 0.5198000955581665,
+    "z": 540
+   }
+  ],
+  [
+   "after toggling foliage off and on",
+   {
+    "Trees LOD0": 5,
+    "Trees LOD1": 4,
+    "Trees LOD2": 0,
+    "Lawn LOD0": 8,
+    "Lawn LOD1": 22
+   },
+   39
+  ]
+ ]
+}

@@ -1,0 +1,59 @@
+{
+  "ok": false,
+  "failures": [
+    "The game never started — no Play button appeared and no game start was detected."
+  ],
+  "warnings": [],
+  "fingerprint": "9c0dd9ddd999c3d11232053ed0ac11d03763c7e5eab2ea0701e13e1c57ef80e6",
+  "at": "2026-10-06T00:18:07.083Z",
+  "renderer": {
+    "requested": "webgpu",
+    "rendererType": "webgpu",
+    "backend": "webgpu"
+  },
+  "settle": {
+    "durationMs": 15008,
+    "reason": "timeout"
+  },
+  "snapshot": {
+    "gameState": "menu",
+    "hasStarted": false,
+    "elapsedTimeSeconds": 0,
+    "player": {
+      "x": -60,
+      "y": 0.1899999666213989,
+      "z": 540,
+      "isFalling": false
+    },
+    "physics": {
+      "rigidBodyCount": 3047,
+      "colliderCount": 3056
+    },
+    "scene": {
+      "objects": 5362,
+      "meshes": 2964,
+      "lights": 44
+    },
+    "npcCount": 0,
+    "fps": 30,
+    "fpsSource": "engine"
+  },
+  "events": {
+    "totalByType": {
+      "state": 1
+    },
+    "earlyByType": {
+      "state": 1
+    },
+    "matchEndAtSeconds": null,
+    "lastEvents": [
+      {
+        "frame": 0,
+        "type": "state",
+        "intensity": 0
+      }
+    ]
+  },
+  "platform": "desktop",
+  "mobileParity": null
+}

@@ -1,0 +1,293 @@
+{
+ "bounds": [
+  {
+   "name": "City block / guest-vanderpump",
+   "min": [
+    29.253339767456055,
+    0,
+    76.20500183105469
+   ],
+   "max": [
+    135.7949981689453,
+    41.89595031738281,
+    128.7949981689453
+   ]
+  },
+  {
+   "name": "City block / vanderpump",
+   "min": [
+    27.121919631958008,
+    -0.03999999910593033,
+    71.04399871826172
+   ],
+   "max": [
+    209.00799560546875,
+    7,
+    128.41799926757812
+   ]
+  }
+ ],
+ "views": [
+  {
+   "mode": "natural",
+   "state": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ],
+   "render": {
+    "calls": 1600,
+    "frameCalls": 4,
+    "drawCalls": 1058,
+    "triangles": 14767171,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "mode": "full",
+   "state": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ],
+   "render": {
+    "calls": 2020,
+    "frameCalls": 4,
+    "drawCalls": 1058,
+    "triangles": 14767171,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  },
+  {
+   "mode": "coarse",
+   "state": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ],
+   "render": {
+    "calls": 2436,
+    "frameCalls": 4,
+    "drawCalls": 1056,
+    "triangles": 14355039,
+    "points": 200,
+    "lines": 0,
+    "timestamp": 0
+   }
+  }
+ ],
+ "distances": [
+  {
+   "eye": [
+    -100,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ]
+  },
+  {
+   "eye": [
+    -150,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ]
+  },
+  {
+   "eye": [
+    -250,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ]
+  },
+  {
+   "eye": [
+    -450,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ]
+  },
+  {
+   "eye": [
+    -650,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ]
+  },
+  {
+   "eye": [
+    -850,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ]
+  },
+  {
+   "eye": [
+    -1100,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 235018,
+     "lowTriangles": 31102
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 2732,
+     "lowTriangles": 582
+    }
+   ]
+  }
+ ],
+ "performanceSample": {
+  "median": 16.5,
+  "p95": 18,
+  "max": 20.799999952316284,
+  "render": {
+   "calls": 4160,
+   "frameCalls": 4,
+   "drawCalls": 1050,
+   "triangles": 14586917,
+   "points": 200,
+   "lines": 0,
+   "timestamp": 0
+  }
+ }
+}

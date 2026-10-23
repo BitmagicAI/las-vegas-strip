@@ -1,0 +1,41 @@
+{
+  "id": "luv-it",
+  "status": "refinement-deferred",
+  "mappedId": "way/364845149",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1511924,-115.1515015,620a,90y,90t/data=!3m7!1e1!3m5!1skaHRiazWLfPpkCKo6T_taA!2e0",
+      "imageDate": "August2024",
+      "observed": "South frontage, blue siding, white canopy columns and signs. Servicewindoweast."
+    },
+    {
+      "url": "https://www.roadarch.com/22/6/luv.jpg",
+      "observed": "South front close-up:3shallowarches,centralpedimentdoor505,2barredwindows,largeLuvItandFrozenCustardsignswithcone between."
+    },
+    {
+      "url": "https://www.visitlasvegas.com/listing/luv-it-frozen-custard/35775/",
+      "observed": "Servicewindow and menu reference, identified via image search."
+    }
+  ],
+  "remaining": [
+    "Heightestimated;rearunseen",
+    "Originalsignfontandfinegraphicsnotreproduced",
+    "No interior modeled",
+    "Exact retro lettering and detailed menu graphics remain approximations",
+    "Window is exterior backing, no service NPC or interior",
+    "Surrounding forecourt beyond local apron remains mapped ground"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/luv-it-final",
+    "support": "build/city-exteriors/luv-it-collision.json",
+    "walk": "build/city-exteriors/luv-it-walk.json",
+    "ownership": "build/city-exteriors/luv-it-ownership-audit.json",
+    "visualReview": "Three installed views inspected; serif lettering reworked, tessellation reduced, finalfrontinspected.82support samplesPASS;6walkinglegsPASS afteraddingmissinglocalapron androutingaround canopycolumn.10oldmappedtriangles removed.1819authoredtri11batches plusfontmesh,.27MBoptimized. TypecheckPASS. Static960x540timingsinprobe log; notroute60fpsclaim."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/luvIt-exterior.glb": "35fd5ead2227af2d952f88bb3e5c7a91bf6d2f9646ee4c272211864f84be1dc4",
+      "build/strip-landmarks/luvIt-exterior-collision.json": "09481938c334c0c5e7b84e372175efe2d6b1c47a3ba1c2c199aa6df01a6bf2f7"
+    }
+  }
+}

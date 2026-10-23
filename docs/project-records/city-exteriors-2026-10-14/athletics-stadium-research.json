@@ -1,0 +1,55 @@
+{
+  "status": "research only, not modeled; dated imagery still needs visual inspection",
+  "mappedId": "way/1468590525",
+  "date": "2026-10-14",
+  "era": "Construction site, not the completed 2028 proposal",
+  "sources": [
+    {
+      "url": "https://www.reviewjournal.com/?p=3896712",
+      "date": "2026-10-07",
+      "note": "Third roof arch milestone; inspect dated photos."
+    },
+    {
+      "url": "https://www.mlb.com/athletics/video/third-roof-truss-takes-shape",
+      "date": "2026-10-09",
+      "note": "Official construction update; video not inspected."
+    },
+    {
+      "url": "https://www.mlb.com/athletics/las-vegas-ballpark/construction-cam",
+      "note": "Official construction camera, text checked; embedded image not inspected."
+    },
+    {
+      "url": "https://www.fox5vegas.com/2026/06/12/steel-rises-athletics-las-vegas-stadium-site-construction-progresses/",
+      "date": "2026-06-12",
+      "note": "Earlier bowl structure milestone; not latest state."
+    }
+  ],
+  "visuallyInspected": [
+    {
+      "url": "https://vegassportstoday.com/wp-content/uploads/2026/10/aegseg-1024x682.png",
+      "date": "2026-10-08",
+      "author": "Eric Nguyen / Vegas Sports Today",
+      "observed": "Three white lattice roof arches over open concrete bowl, tall green temporary shoring towers, cranes, unfinished dirt field and no roof skin."
+    },
+    {
+      "url": "https://vegassportstoday.com/wp-content/uploads/2026/10/FX_03794-1024x683.jpg",
+      "date": "2026-10-08",
+      "observed": "Concourse underside, exposed steel levels, green braced support towers."
+    },
+    {
+      "url": "https://www.thorntontomasetti.com/sites/default/files/styles/paragraph_slideshow/public/2026-08/vegas-ballpark-homepage.webp?itok=ueIkA3cm",
+      "date": "2026-08-24",
+      "observed": "Earlier two-arch stage, concrete seating treads, steel framing, no completed enclosure."
+    },
+    {
+      "url": "https://www.mlb.com/athletics/las-vegas-ballpark/construction-cam",
+      "date": "2026-10-14 12:33 PM shown on View 1 (H)",
+      "observed": "Elevated current view across entire open bowl: partial lower enclosure, steel floor rings, concrete seating tiers, three arch ribs and green shoring. Strip and Luxor behind identify northeast viewpoint.",
+      "limits": "Construction estimate, no surveyed member dimensions; do not reproduce future advertising render beneath camera as current building."
+    }
+  ],
+  "engineeringSource": {
+    "url": "https://www.thorntontomasetti.com/news/las-vegas-ballpark-roof-structure-reaches-major-milestone",
+    "dimensions": "Second arch spans approximately 700ft (213m); planned maximum roof elevation 290ft (88.4m) above field. Other dimensions inferred pending site plan."
+  }
+}

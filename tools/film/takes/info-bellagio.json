@@ -1,0 +1,63 @@
+{
+ "name": "info-bellagio",
+ "subframes": 1,
+ "seconds": 9.0,
+ "maxSeconds": 15.0,
+ "start": {
+  "at": [
+   -60,
+   0.5,
+   300
+  ],
+  "dir": [
+   0,
+   -1
+  ],
+  "view": "first",
+  "warm": 8
+ },
+ "steps": [
+  {
+   "wait": 9.0
+  }
+ ],
+ "camera": [
+  {
+   "from": 0,
+   "to": 9.0,
+   "focus": "camera",
+   "keys": [
+    {
+     "t": 0,
+     "pos": [
+      90,
+      300,
+      365
+     ],
+     "look": [
+      -330,
+      60,
+      348
+     ],
+     "roll": 0,
+     "fov": 37
+    },
+    {
+     "t": 9.0,
+     "pos": [
+      -40,
+      250,
+      345
+     ],
+     "look": [
+      -330,
+      62,
+      348
+     ],
+     "roll": 0,
+     "fov": 37
+    }
+   ]
+  }
+ ]
+}

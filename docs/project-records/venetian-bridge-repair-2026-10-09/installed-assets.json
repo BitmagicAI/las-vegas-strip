@@ -1,0 +1,47 @@
+{
+  "files": {
+    "tools/strip-landmarks/venetian_rialto.py": "96d24e01bba36940f1e65f3b29006388e158e76f6974c023b00906cf1241331c",
+    "tools/strip-landmarks/build.py": "0b6b02998260c64d2950f193b2a7c57aa1e5b8e9d59f893797d1f2afbaef4f65",
+    "tools/strip-landmarks/build_venetian_exterior.py": "c83ef8e2f3f047d6c409499338b17d3973afe830fa61f01ef1f16708c0af37c6",
+    "tools/strip-landmarks/venetian_plaza.py": "aee4d1c4ff622cf59022b40e99bcd41551ddd1d9b7fbbf959fd9ce1b02f3701a",
+    "tools/strip-landmarks/venetian_palace.py": "f15f975b408a35b5d1eb612abdca27c829f9c033cb465e43a512dc609f67423f",
+    "tools/strip-landmarks/venetian_frontage.py": "88c45657520dd8b87b57f1d2af10a4a2627929240b7c3739e5955a764d2aa57b",
+    "tools/strip-landmarks/export.py": "687b966cddc0f01dba476074f008d341fd3d1a027aae27db4871a305439301c9",
+    "tools/strip-landmarks/remove_old_rialto.py": "f89eaa2651f37e48ae61ae2bd9947ef5898136a158e9cf9de01bf317e1d8918a",
+    "tools/strip-landmarks/test-venetian-rialto.mjs": "2f809e26891da4a09bf9b29a1f7084cf417d1f56c8137cfa00c2a84d583c36a5",
+    "tools/strip-landmarks/test-venetian-overlaps.py": "cb9e599b54fa8256bc1f234f249fbae3e3e105d86f45eb3616fbcb6374eaa39b",
+    "tools/strip-landmarks/review_venetian_bridge.py": "9f66359840879c0cf7c48e5f42478af0ac1911bd94e4e45d3658f1b34ad70739",
+    "tools/geographic-strip/prepare.py": "f00a5d2b48e5d99b932a8e29c2a870f4f1ab8e91b34727c382eb0f191157a168",
+    "build/geographic-strip/city.glb": "b0c11ac59295fc6a0bb221829acd2ba2a9d0b4fc97d43797a8d69584c8938263",
+    "build/geographic-strip/city-colliders.json": "756c5ba3f8d70bfba3d1ebb86e17076defbd7500a81dfd6d0b39d64efb8ad45c",
+    "build/geographic-strip/city-version.json": "d6c8a51386fcb29b0317aa63206bc8b046d01d1860be4d2e8c057da34edae892",
+    "build/strip-landmarks/venetian-exterior.glb": "13a81d26e999e2faf5f2fc917c8e6c124abb0b961c7e56f291d2b42dc351f47b",
+    "build/strip-landmarks/venetian-exterior-collision.json": "e1bf4c251be39c5e0c7594aaa5a7f4810b7c2d73422085e785b4da1cba7f0242",
+    "build/strip-landmarks/venues.json": "63ab332b3e543a4d91c7f6637a10b3ef6ac800a3bfa951e48aee94118df95af7",
+    "build/strip-landmarks/version.json": "03c6004b85cbe30c82f79700d5d125b927dafc61fca3c6c0e43e9a8d45a7f4b4",
+    "build/optimized/build/geographic-strip/city.glb": "ba7c97d3a33eb6236b5c2543331f9d389b0212a245e006bdaa17ba7f6eab04b9",
+    "build/optimized/build/strip-landmarks/venetian-exterior.glb": "74e16dbb525d9ece746e04a94909b9d705ba7c87624858c10a4b1607a4642b37"
+  },
+  "optimizedAssets": {
+    "build/geographic-strip/city.glb": {
+      "size": 362711160,
+      "modified": 1791587843695.8904,
+      "optimized": "build/optimized/build/geographic-strip/city.glb",
+      "sourceSha256": "b0c11ac59295fc6a0bb221829acd2ba2a9d0b4fc97d43797a8d69584c8938263",
+      "bytes": 113048772,
+      "preset": "level",
+      "overrides": [],
+      "variant": "level"
+    },
+    "build/strip-landmarks/venetian-exterior.glb": {
+      "size": 98259412,
+      "modified": 1791589209203.2256,
+      "optimized": "build/optimized/build/strip-landmarks/venetian-exterior.glb",
+      "sourceSha256": "13a81d26e999e2faf5f2fc917c8e6c124abb0b961c7e56f291d2b42dc351f47b",
+      "bytes": 27140676,
+      "preset": "level",
+      "overrides": [],
+      "variant": "webp-textures"
+    }
+  }
+}

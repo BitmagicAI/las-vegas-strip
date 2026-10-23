@@ -1,0 +1,45 @@
+{
+ "start": {
+  "at": [
+   -98.68,
+   12.65,
+   1482.07
+  ],
+  "dir": [
+   -0.603,
+   -0.798
+  ],
+  "pitch": -0.05,
+  "view": "first",
+  "warm": 4
+ },
+ "maxSeconds": 260,
+ "steps": [
+  {
+   "wait": 1.0
+  },
+  {
+   "key": "KeyR"
+  },
+  {
+   "until": {
+    "what": "coaster-start",
+    "max": 5
+   }
+  },
+  {
+   "mark": "board"
+  },
+  {
+   "until": {
+    "what": "coaster-done",
+    "max": 260
+   }
+  },
+  {
+   "mark": "end"
+  }
+ ],
+ "name": "coaster-ride",
+ "subframes": 4
+}

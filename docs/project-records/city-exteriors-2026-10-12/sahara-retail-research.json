@@ -1,0 +1,36 @@
+{
+  "status": "installed-review-pending",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1444,-115.1577,670a,400d,35y,270h,55t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Bonanza L-plan and courtyard-parking forecourt, roofs and adjacency."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1444,-115.1578,635a,180d,35y,310h,65t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Pink/red Bonanza frontage, deep canopy on yellow slender posts, long white sign strip, circular sign at inner elbow."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.14425,-115.15615,638a,250d,35y,50h,65t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Walgreens rounded corner, broad upper billboard band, pale ground level and pink vertical corner pier; two-level parking behind."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1446,-115.1551,638a,235d,35y,265h,65t,0r",
+      "inspected": true,
+      "imagery": "2022-11-09",
+      "observations": "Paradise Road shops: low brick arcade and raised northern end; McDonalds cream/charcoal horizontal restaurant with yellow arches."
+    }
+  ],
+  "dimensions": "Bonanza4.6m/Walgreens11.8m/garage6.6m/shops5.5m+north9m/McDonalds4.2m: visual estimates; mapped footprints retained.",
+  "uncertainty": "Current advertising creative and exact tenant storefront allocation unconfirmed. Existing roads/parking surfaces retained.",
+  "comparisons": [
+    "Four initial and four final installed views inspected. Initial Bonanza round sign faced away; yaw corrected, lettering now readable. Walgreens sign added to shorter south edge.",
+    "Mapped L-shaped Bonanza, rounded Walgreens, garage slots and Paradise arcade implemented. Fine sign typography remains approximate; empty advertising band needs original finished graphic treatment.",
+    "Existing parking surfaces form long raised islands rather than photographed open parking forecourts; not altered in this building-only pass."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+ "viewport": [
+  1280,
+  720
+ ],
+ "dpr": 1,
+ "results": [
+  {
+   "view": "ti",
+   "tower": "at:335,142,-845,1.123,.297",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 335,
+    "y": 142,
+    "z": -845
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.2,
+   "gpuP50": 5.64,
+   "gpuP90": 9.01,
+   "draws": 140,
+   "triangles": 6196755,
+   "passes": [
+    [
+     "output 1280x720",
+     2.78,
+     1
+    ],
+    [
+     "Lake mirror 640x360",
+     1.87,
+     0.5
+    ],
+    [
+     "screen",
+     1.25,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.42,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  }
+ ],
+ "errors": []
+}

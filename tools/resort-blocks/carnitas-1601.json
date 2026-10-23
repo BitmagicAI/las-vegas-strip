@@ -1,0 +1,32 @@
+{
+  "id": "carnitas-1601",
+  "status": "refinement-deferred",
+  "mappedId": "way/364845147",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1519693,-115.1518408,620a,75y,152.37h,90t/data=!3m7!1e1!3m5!1sJ8TEioEg-J7-UZ1qMwYcfA!2e0",
+      "imageDate": "August2024",
+      "observed": "White fascia with red restaurant name, red lower stucco, west patio now enclosed by tall thin white metal bars. Adjacent Bajamar blue diner seen separately."
+    }
+  ],
+  "remaining": [
+    "Facade height not surveyed",
+    "Rear elevation not inspected",
+    "Fine restaurant graphics, sign font and weathering omitted",
+    "Opaque exterior glazing; no interior access",
+    "Forecourt uses existing mapped datum, not surveyed paving"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/carnitas-1601-final",
+    "support": "build/city-exteriors/carnitas-1601-collision.json",
+    "walk": "build/city-exteriors/carnitas-1601-walk.json",
+    "ownership": "build/city-exteriors/carnitas-1601-ownership-audit.json",
+    "visualReview": "Three installed views inspected; final front and patio rechecked after red fascia trim and plain painted metal fix. 256support/headroom and6walkinglegs passed.22oldtriangles removed.2006authoredtri11batches. Static960x540p95~17.1ms final aerial, notroutebenchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/carnitas1601-exterior.glb": "b5257562b4122c80d89e1097236dc0698b71bbe9a2f4f92b02a45c856526616e",
+      "build/strip-landmarks/carnitas1601-exterior-collision.json": "407035bad4ff46521fa736045782961555187c6951e803dbc9e32eae871689d6"
+    }
+  }
+}

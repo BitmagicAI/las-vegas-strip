@@ -1,0 +1,149 @@
+{
+  "id": "haven-courtyards",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1414161011",
+    "way/1414161010"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.09114,-115.17088&zoom=20&basemap=satellite",
+      "review": "Two facing U-shaped buildings; flat gray roofs with individual mechanical units, planted courts with curved paths, shared parking aisle"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09105,-115.17035&heading=270&pitch=4",
+      "imageDate": "December2022",
+      "review": "East elevation visually inspected: cream stucco, rust window recess strips, two floors, white window frames and raised end piers"
+    }
+  ],
+  "estimates": [
+    "Roof6.3m, floor3.15m inferred from two visible storeys",
+    "Courtyard doorway and stair positions obscured; explicit reconstruction estimates"
+  ],
+  "remaining": [
+    "No verified building identity",
+    "No residential interiors; exact courtyard planting and wall details unverified",
+    "Palms and planted beds still approximate and visibly simplified",
+    "Gallery/stair positions inferred, not surveyed",
+    "Terrain beyond this local lot remains unfinished",
+    "Neutral-daylight and vehicle route verification outstanding"
+  ],
+  "triangles": 34626,
+  "batches": 27,
+  "optimizedMiB": 0.84,
+  "ownership": {
+    "removed": 134,
+    "colliderTrianglesRemoved": 134,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in HavenCourtyards mapped footprint; all other triangles retained exactly."
+  },
+  "tests": [
+    "543roof support PASS",
+    "14groundwalkinglegs PASS",
+    "12stair/gallery legs including ascent/descent PASS",
+    "Finite geometry PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/haven-courtyards-final/haven-east.png",
+    "build/city-exteriors/haven-courtyards-final/haven-courts.png",
+    "build/city-exteriors/haven-courtyards-final/haven-south-court.png",
+    "build/city-exteriors/haven-courtyards-final/haven-north-court.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "haven-east",
+        "eye": [
+          253,
+          9,
+          2784
+        ],
+        "target": [
+          191,
+          3,
+          2788
+        ],
+        "p": [
+          230,
+          2,
+          2770
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.19999998807907
+      },
+      {
+        "name": "haven-courts",
+        "eye": [
+          221,
+          37,
+          2766
+        ],
+        "target": [
+          191,
+          2,
+          2765
+        ],
+        "p": [
+          222,
+          2,
+          2765
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.600000023841858
+      },
+      {
+        "name": "haven-south-court",
+        "eye": [
+          192,
+          3,
+          2771
+        ],
+        "target": [
+          191,
+          2.6,
+          2795
+        ],
+        "p": [
+          192,
+          2,
+          2771
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.5
+      },
+      {
+        "name": "haven-north-court",
+        "eye": [
+          191,
+          3,
+          2760
+        ],
+        "target": [
+          191,
+          2.6,
+          2736
+        ],
+        "p": [
+          191,
+          2,
+          2760
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.80000001192093
+      }
+    ],
+    "limitation": "Static views only, not streaming or vehicle route benchmark"
+  },
+  "visualCorrections": [
+    "Landing guard interrupted at connections",
+    "South stair moved clear of mapped wall",
+    "Landing overlap above top stair removed",
+    "East vacant lot given referenced gravel ground"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/havenCourtyards-exterior.glb": "a66a4c903fc9645208bed897fc858ae43a08a3e5988cd69e782ba2b276d886c0",
+      "build/strip-landmarks/havenCourtyards-exterior-collision.json": "a7c7ad0399b8cc5c5917a0ad85946bf6dc33869dac4f5186b96c19b5e296dc37"
+    }
+  }
+}

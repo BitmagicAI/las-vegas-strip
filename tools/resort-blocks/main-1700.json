@@ -1,0 +1,53 @@
+{
+  "id": "main-1700",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/725949470"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/SuperPawn/@36.1509337,-115.1545242",
+      "observed": "Maps lists SuperPawn1700SMainStreet as permanently closed. MappedCashAmericaPawn name stale."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15093,-115.15430&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "White/gray blank east wall with tall southern box and lower northern wing, charcoal coping/fascia,1700numerals, turquoise low concrete planters, trimmed trees, concrete approach and metalrailedramp at south."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15078,-115.15430&heading=300&pitch=0",
+      "imageDate": "January2026",
+      "observed": "East street facade: tall blank southern entrance mass, lower northern wing, turquoise planters and ramp railings; old business signs removed; For Sale roadside board."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15093,-115.15452&zoom=20&basemap=satellite",
+      "observed": "L plan with broad northern roof, narrower southern wing, western and southern parking, multiple rooftop units."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15062,-115.15449&heading=320&pitch=0",
+      "imageDate": "February2023",
+      "observed": "Older south parking view confirms turquoise base, tall southern volume with dark fascia, entrance ramp at southeast. Obsolete SuperPawn lettering deliberately omitted following2026reference."
+    }
+  ],
+  "remaining": [
+    "Weathered paint and fascia scars, fine roof/service details and exact sign graphics remain approximate",
+    "Existing CC0 trees stand in for tightly pruned reference trees; species/form not exact",
+    "Roof heights4.7m/6.9m inferred, not surveyed",
+    "Parking extent and cracked asphalt need closer matching",
+    "Closed exterior only; no interior access claim"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/main-1700-final",
+    "support": "build/city-exteriors/main-1700-collision.json",
+    "walk": "build/city-exteriors/main-1700-walk.json",
+    "ramp": "build/city-exteriors/main-1700-ramp-walk.json",
+    "ownership": "build/city-exteriors/main-1700-ownership-audit.json",
+    "visualReview": "Three installed views reviewed; repeated after fixing polygon-difference sliver that incorrectly extended tall facade along lower wing.659support samples,6approachlegs,6ramplegsPASS.3611authoredtri19batches plus3existingCC0trees/LODs.11.83MiBoptimized.34oldvisual/collisiontri removed. Planter moved out of ramp following failed controller test."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/main1700-exterior.glb": "122061b9f6b7c5b22c71e637600def5b5cdcbe15f5419502b66a2767c9e1ab77",
+      "build/strip-landmarks/main1700-exterior-collision.json": "4cfb81c2cc6dc4762fd43ba43715b6a8a2e473a9c99c1a45a56f609fd7708e3e"
+    }
+  }
+}

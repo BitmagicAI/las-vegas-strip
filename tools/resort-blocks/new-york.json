@@ -1,0 +1,98 @@
+{
+  "id": "new-york",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1027,-115.1740,640a,520d,35y,270h,65t,0r",
+      "observed": "2022-11-09: varied pale streetwall, stepped Art Deco east corner, low-rise storefronts in front of coaster, garage west."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1022,-115.1734,630a,240d,35y,270h,72t,0r",
+      "date": "2026-10-12",
+      "imageryDate": "2022-11-09",
+      "observed": "Mostly pale, varied-width miniature facades, projecting cornices and tall ribbed northeast corner; preserved footprint row is still only approximate."
+    }
+  ],
+  "components": [
+    {
+      "id": "streetwall",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "north-restaurants",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "garage",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "service-facades",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Exact varied streetwall widths and northeastern Art Deco corner remain approximate.",
+    "Landscaping, signage and fine replica architecture require refinement.",
+    "South arrival canopy, rear pool, north restaurant roof heights and exact tenant divisions remain approximate.",
+    "Static checks cover336obstacle samples and3roof support points;274ground samples absent from loaded subset, not a complete walkability claim."
+  ],
+  "geometry": {
+    "triangles": 30855,
+    "batches": 22,
+    "newCollisionTriangles": 0
+  },
+  "evidence": [
+    "build/city-exteriors/nyny-before",
+    "build/city-exteriors/nyny-after",
+    "build/city-exteriors/nyny-final",
+    "build/city-exteriors/nyny-perf-repeat"
+  ],
+  "performance": {
+    "baseline": "docs/project-records/city-exteriors-2026-10-12/nyny-before-performance.json",
+    "after": "docs/project-records/city-exteriors-2026-10-12/nyny-after-performance.json",
+    "note": "Initial after p95 elevated24ms while Earth renderer active; isolated repeat17.4\u201318.4ms. p50 stable16.7ms."
+  },
+  "restaurantPass20261014": {
+    "status": "implemented-visually-reviewed",
+    "footprint": "way/567194734",
+    "evidence": "build/city-exteriors/nyny-restaurants-final",
+    "geometry": {
+      "retainedGroups": 22,
+      "restaurantTriangles": 9709,
+      "totalTriangles": 40564,
+      "addedCollisionTriangles": 49,
+      "originalCollisionPrefixPreserved": true
+    },
+    "collision": {
+      "samples": 336,
+      "roofSamples": 3,
+      "failures": [],
+      "unverifiedFloorSamples": 274,
+      "scope": "Static obstacle clearance on existing north casino entry and park promenade; three roof support samples. Ground absent from this test subset at reported points, so complete walkability is not asserted."
+    },
+    "references": "docs/project-records/city-exteriors-2026-10-14/nyny-podium-research.json",
+    "performance": "build/city-exteriors/nyny-restaurants-final/performance.json",
+    "correction": "Lathe height/radius order fixed after close-view review; corrected close/roof screenshots confirm ground rings removed.",
+    "correctedEvidence": "build/city-exteriors/nyny-corrected-harrahs-baseline"
+  },
+  "kioskIntegration20261021": {
+    "source": "tools/resort-blocks/nyny-irish-kiosk.json",
+    "removed": "Two synthetic frontage bays at z1555/1567; mapped podium skin cut around kiosk terrace",
+    "remaining": "Surrounding facades, terrace elevation and paving need refinement.",
+    "fingerprints": {
+      "build/highrises/exteriors.glb": "ede41d4825b0a61bc90a02d51405617fa2363004438123dd3f42bb3fa11a3df0",
+      "build/strip-landmarks/newYorkFrontage-exterior.glb": "3e6b123d1840099abd613a7386499e57a109f6feb52ea519f1ff19e8ec98c5fb"
+    }
+  },
+  "arrivalPass20261021": {
+    "record": "tools/resort-blocks/nyny-arrival.json",
+    "evidence": "build/city-exteriors/nyny-arrival-review2",
+    "scope": "Mapped pavilion plus open canopy; preserved towers, coaster, main interiors.",
+    "remaining": "Sign typography, landscaped island, backdrop facade, paving and support density still approximate."
+  },
+  "currentFingerprints": {
+    "build/highrises/exteriors.glb": "7ab1c58beeff2de235f1f1f15c44942f4505f3b9c554b8aaf84e352b1943b3be",
+    "build/strip-landmarks/newYorkFrontage-exterior.glb": "769a3db86f99a6499bc6ea8f646064aa411407233fafafb5c6455b8d72cfe9e3"
+  }
+}

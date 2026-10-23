@@ -1,0 +1,29 @@
+{
+  "mappedIds": [
+    "way/457939127"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.090248,-115.171545&zoom=21&basemap=satellite",
+      "review": "Aerial visually inspected: long pale ribbed roof behind Akita Plaza, narrower appendage at north, parking on both sides."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.090248,-115.171545&heading=90&pitch=0",
+      "date": "December 2022",
+      "review": "Street View turned from west toward east: exposed timber post/beam frame, knee braces, corrugated shallow-pitch roof, pale cargo container at north end."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.090248,-115.171545&zoom=20&basemap=satellite",
+      "review": "Wider aerial inspected: parking ends at straight eastern fence with construction yard beyond. Apron trimmed to estimated x167 eastern edge and z2908 southern lot edge; original roads/pavement excluded."
+    }
+  ],
+  "uncertainty": [
+    "3.15\u20133.39m roof height estimated against vehicles.",
+    "Support spacing and container length estimated.",
+    "Current container and parked vehicles may differ from 2022 image."
+  ],
+  "remaining": [
+    "Outside the canopy, original city surface coverage is incomplete; local flat parking apron fills missing regions. It preserves city surfaces via geometric subtraction.",
+    "No cadastral parcel outline available; apron extent inferred from aerial parking context."
+  ]
+}

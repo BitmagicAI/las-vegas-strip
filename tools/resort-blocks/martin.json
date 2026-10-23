@@ -1,0 +1,107 @@
+{
+  "id": "martin",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1085,-115.1823,720a,330d,35y,300h,55t,0r",
+      "imagery": "2022-11-09",
+      "review": "Visually inspected stepped balcony rings and parking podium, white roof."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1085,-115.1825,760a,430d,35y,90h,55t,0r",
+      "imagery": "2022-11-09",
+      "review": "Visually inspected west pool/lower building arrangement."
+    }
+  ],
+  "remaining": [
+    "Detailed planting, canopy and entry-sign alignment remain incomplete.",
+    "Pool layout, lower heights and balcony dimensions are estimated; full public walking routes not verified.",
+    "Reference-level architectural realism remains unfinished."
+  ],
+  "estimates": {
+    "towerM": 157,
+    "garageM": 13.3,
+    "lowerLobbyM": 4.4,
+    "note": "Tower height mapped; lower heights, balcony projection and pool outline photo estimates."
+  },
+  "geometry": {
+    "triangles": 32173,
+    "batches": 25,
+    "optimizedMiB": 0.52,
+    "source": "tools/strip-landmarks/martin_exterior.py",
+    "glbSha256": "41d08b9f48866b6df52e634d0da16971c46b675d3fb25df67a26052025c5a9aa"
+  },
+  "tests": {
+    "roofSupport": 29,
+    "guestApproach": 306,
+    "typecheck": "passed",
+    "visual": "All4 installed views plus corrected pool view inspected. Enclosure and basin depth added after first review.",
+    "frameTimes": [
+      {
+        "name": "martin-aerial",
+        "eye": [
+          -715,
+          205,
+          930
+        ],
+        "target": [
+          -828,
+          52,
+          838
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.200000047683716
+      },
+      {
+        "name": "martin-west",
+        "eye": [
+          -940,
+          8,
+          805
+        ],
+        "target": [
+          -837,
+          58,
+          838
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.600000143051147
+      },
+      {
+        "name": "martin-podium",
+        "eye": [
+          -735,
+          28,
+          877
+        ],
+        "target": [
+          -817,
+          10,
+          838
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.700000047683716
+      },
+      {
+        "name": "martin-pool",
+        "eye": [
+          -950,
+          40,
+          875
+        ],
+        "target": [
+          -898,
+          4,
+          831
+        ],
+        "p50": 16.59999990463257,
+        "p95": 17.5
+      }
+    ],
+    "scope": "New exterior collider only; full public/city route unverified."
+  },
+  "evidence": [
+    "build/city-exteriors/martin-after",
+    "build/city-exteriors/martin-pool-final"
+  ]
+}

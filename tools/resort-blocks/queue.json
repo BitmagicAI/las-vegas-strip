@@ -1,0 +1,1178 @@
+{
+  "version": 1,
+  "policy": "One active block at a time. Creator-approved deferrals retain all unfinished requirements; complete still requires every gate. Local only.",
+  "blocks": [
+    {
+      "id": "cosmopolitan",
+      "name": "The Cosmopolitan",
+      "status": "refinement-deferred",
+      "record": "cosmopolitan.json",
+      "deferral": {
+        "date": "2026-10-05",
+        "reason": "Creator requested advancing to Bellagio, with a separate polishing/refinement pass later."
+      }
+    },
+    {
+      "id": "bellagio",
+      "name": "Bellagio",
+      "status": "refinement-deferred",
+      "record": "bellagio.json",
+      "deferral": {
+        "date": "2026-10-05",
+        "reason": "Creator requested continuing down the block list; remaining Bellagio refinements stay in bellagio.json."
+      }
+    },
+    {
+      "id": "paris",
+      "name": "Paris Las Vegas",
+      "status": "refinement-deferred",
+      "record": "paris.json",
+      "deferral": {
+        "date": "2026-10-09",
+        "reason": "Creator requests overnight work on remaining resorts, explicitly identifying Venetian. Preserve all unfinished Paris issues and gates."
+      }
+    },
+    {
+      "id": "venetian",
+      "name": "Venetian / Palazzo",
+      "status": "refinement-deferred",
+      "record": "venetian.json",
+      "deferral": {
+        "date": "2026-10-09",
+        "reason": "Targeted lower facade duplicates cut; remaining full-site issues retained. Creator requests LINQ and TI/Caesars corrections in same pass."
+      }
+    },
+    {
+      "id": "harrahs",
+      "name": "Harrah\u2019s Las Vegas",
+      "status": "refinement-deferred",
+      "record": "harrahs.json",
+      "deferral": {
+        "date": "2026-10-09",
+        "reason": "Facade pass installed and inspected; creator explicitly requests LINQ next. Retain full-site and fine-detail discrepancies."
+      }
+    },
+    {
+      "id": "linq",
+      "name": "The LINQ",
+      "status": "refinement-deferred",
+      "record": "linq.json",
+      "deferral": {
+        "date": "2026-10-09",
+        "reason": "Revised blue projecting facade inspected in the installed game; continuing creator-requested TI/Caesars pass. Full-site gates remain pending."
+      }
+    },
+    {
+      "id": "ti",
+      "name": "Treasure Island",
+      "status": "refinement-deferred",
+      "record": "ti.json",
+      "deferral": {
+        "date": "2026-10-09",
+        "reason": "Tower facade installed and inspected; creator requests missing Caesars mall in same pass. Full TI site refinement remains open."
+      }
+    },
+    {
+      "id": "forum-shops",
+      "name": "The Forum Shops at Caesars",
+      "status": "refinement-deferred",
+      "record": "forum-shops.json",
+      "deferral": {
+        "date": "2026-10-12",
+        "reason": "Creator requests all remaining large and smaller Strip exteriors. Existing exterior pass installed; preserve unresolved Forum full-site gates."
+      }
+    },
+    {
+      "id": "planet-hollywood",
+      "name": "Planet Hollywood",
+      "status": "refinement-deferred",
+      "record": "planet-hollywood.json",
+      "deferral": {
+        "date": "2026-10-12",
+        "reason": "Installed full exterior pass reviewed; city-wide instruction advances remaining unadorned buildings. Physical height and circulation refinements remain recorded."
+      }
+    },
+    {
+      "id": "mgm-grand",
+      "name": "MGM Grand",
+      "status": "refinement-deferred",
+      "record": "mgm-grand.json",
+      "deferral": {
+        "date": "2026-10-12",
+        "reason": "Continue creator-requested city-wide remaining exteriors; detailed sculpture and garden refinements retained, not complete."
+      }
+    },
+    {
+      "id": "park-mgm",
+      "name": "Park MGM",
+      "status": "refinement-deferred",
+      "record": "park-mgm.json",
+      "deferral": {
+        "date": "2026-10-12",
+        "reason": "Installed reviewed exterior pass; remaining gardens and fidelity refinements retained while advancing city-wide remaining shells."
+      }
+    },
+    {
+      "id": "luxor",
+      "name": "Luxor",
+      "status": "refinement-deferred",
+      "record": "luxor.json",
+      "deferral": {
+        "date": "2026-10-12",
+        "reason": "City-wide exterior pass continues; all outstanding Luxor sculptural and arrival requirements retained."
+      }
+    },
+    {
+      "id": "mandalay-bay",
+      "name": "Mandalay Bay / W",
+      "status": "refinement-deferred",
+      "record": "mandalay-bay.json",
+      "deferral": {
+        "date": "2026-10-12",
+        "reason": "Continue city-wide exterior pass, retaining pool and full-site refinements."
+      }
+    },
+    {
+      "id": "new-york",
+      "name": "New York\u2013New York",
+      "status": "refinement-deferred",
+      "record": "new-york.json",
+      "deferral": {
+        "date": "2026-10-12",
+        "reason": "Continue city-wide remaining exteriors; exact miniature streetwall and full-site refinements remain recorded."
+      }
+    },
+    {
+      "id": "excalibur",
+      "name": "Excalibur",
+      "status": "refinement-deferred",
+      "record": "excalibur.json",
+      "deferral": {
+        "date": "2026-10-12",
+        "reason": "Continue city-wide exteriors; exact station/turret and landscape refinements retained."
+      }
+    },
+    {
+      "id": "fontainebleau",
+      "name": "Fontainebleau",
+      "status": "refinement-deferred",
+      "record": "fontainebleau.json"
+    },
+    {
+      "id": "resorts-world",
+      "name": "Resorts World",
+      "status": "refinement-deferred",
+      "record": "resorts-world.json"
+    },
+    {
+      "id": "circus-circus",
+      "name": "Circus Circus",
+      "status": "refinement-deferred",
+      "record": "circus-circus.json"
+    },
+    {
+      "id": "sahara",
+      "name": "SAHARA",
+      "status": "refinement-deferred",
+      "record": "sahara.json"
+    },
+    {
+      "id": "strat",
+      "name": "The STRAT",
+      "status": "refinement-deferred",
+      "record": "strat.json"
+    },
+    {
+      "id": "hgv-boulevard",
+      "name": "Hilton Grand Vacations Boulevard",
+      "status": "refinement-deferred",
+      "record": "hgv-boulevard.json"
+    },
+    {
+      "id": "sky",
+      "name": "Sky Las Vegas",
+      "status": "refinement-deferred",
+      "record": "sky.json"
+    },
+    {
+      "id": "allure",
+      "name": "Allure Las Vegas",
+      "status": "refinement-deferred",
+      "record": "allure.json"
+    },
+    {
+      "id": "turnberry-towers",
+      "name": "Turnberry Towers",
+      "status": "refinement-deferred",
+      "record": "turnberry-towers.json"
+    },
+    {
+      "id": "turnberry-place",
+      "name": "Turnberry Place",
+      "status": "refinement-deferred",
+      "record": "turnberry-place.json"
+    },
+    {
+      "id": "westgate",
+      "name": "Westgate",
+      "status": "refinement-deferred",
+      "record": "westgate.json"
+    },
+    {
+      "id": "springhill",
+      "name": "SpringHill Suites",
+      "status": "refinement-deferred",
+      "record": "springhill.json"
+    },
+    {
+      "id": "trump",
+      "name": "Trump International",
+      "status": "refinement-deferred",
+      "record": "trump.json"
+    },
+    {
+      "id": "wynn-encore",
+      "name": "Wynn and Encore",
+      "status": "refinement-deferred",
+      "record": "wynn-encore.json"
+    },
+    {
+      "id": "mirage",
+      "name": "Mirage-era exterior",
+      "status": "refinement-deferred",
+      "record": "mirage.json"
+    },
+    {
+      "id": "elara",
+      "name": "Elara",
+      "status": "refinement-deferred",
+      "record": "elara.json"
+    },
+    {
+      "id": "grand-chateau",
+      "name": "Marriott Grand Chateau",
+      "status": "refinement-deferred",
+      "record": "grand-chateau.json"
+    },
+    {
+      "id": "signature",
+      "name": "The Signature at MGM Grand",
+      "status": "refinement-deferred",
+      "record": "signature.json"
+    },
+    {
+      "id": "panorama",
+      "name": "Panorama Towers",
+      "status": "refinement-deferred",
+      "record": "panorama.json"
+    },
+    {
+      "id": "martin",
+      "name": "The Martin",
+      "status": "refinement-deferred",
+      "record": "martin.json"
+    },
+    {
+      "id": "rio",
+      "name": "Rio",
+      "status": "refinement-deferred",
+      "record": "rio.json"
+    },
+    {
+      "id": "palms",
+      "name": "Palms",
+      "status": "refinement-deferred",
+      "record": "palms.json"
+    },
+    {
+      "id": "waldorf",
+      "name": "Waldorf Astoria",
+      "status": "refinement-deferred",
+      "record": "waldorf.json"
+    },
+    {
+      "id": "hgv-flamingo",
+      "name": "Hilton Grand Vacations Flamingo",
+      "status": "refinement-deferred",
+      "record": "hgv-flamingo.json"
+    },
+    {
+      "id": "virgin-hotels",
+      "name": "Virgin Hotels Las Vegas",
+      "status": "refinement-deferred",
+      "record": "virgin-hotels.json"
+    },
+    {
+      "id": "gold-coast",
+      "name": "Gold Coast",
+      "status": "refinement-deferred",
+      "record": "gold-coast.json"
+    },
+    {
+      "id": "caesars-towers",
+      "name": "Caesars remaining towers",
+      "status": "refinement-deferred",
+      "record": "caesars-towers.json"
+    },
+    {
+      "id": "flamingo",
+      "name": "Flamingo Las Vegas",
+      "status": "refinement-deferred",
+      "record": "flamingo.json"
+    },
+    {
+      "id": "horseshoe-versailles",
+      "name": "Horseshoe and Versailles tower block",
+      "status": "refinement-deferred",
+      "record": "horseshoe-versailles.json"
+    },
+    {
+      "id": "palace-station",
+      "name": "Palace Station",
+      "status": "refinement-deferred",
+      "record": "palace-station.json"
+    },
+    {
+      "id": "us-bank-center",
+      "name": "US Bank Center,2300 West Sahara",
+      "status": "refinement-deferred",
+      "record": "us-bank-center.json"
+    },
+    {
+      "id": "embassy-convention",
+      "name": "Embassy Suites Convention Center",
+      "status": "refinement-deferred",
+      "record": "embassy-convention.json"
+    },
+    {
+      "id": "allegiant-stadium",
+      "name": "Allegiant Stadium",
+      "status": "refinement-deferred",
+      "record": "allegiant-stadium.json"
+    },
+    {
+      "id": "westin",
+      "name": "The Westin Las Vegas",
+      "status": "refinement-deferred",
+      "record": "westin.json"
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum Hotel",
+      "status": "refinement-deferred",
+      "record": "platinum.json"
+    },
+    {
+      "id": "wyndham-desert-blue",
+      "name": "Wyndham Desert Blue",
+      "status": "refinement-deferred",
+      "record": "wyndham-desert-blue.json"
+    },
+    {
+      "id": "sky-west-garage",
+      "name": "Sky west parking structure",
+      "status": "refinement-deferred",
+      "record": "sky-west-garage.json"
+    },
+    {
+      "id": "wells-fargo-tower",
+      "name": "Wells Fargo Tower",
+      "status": "refinement-deferred",
+      "record": "wells-fargo-tower.json"
+    },
+    {
+      "id": "park-towers",
+      "name": "Park Towers at Hughes Center",
+      "status": "refinement-deferred",
+      "record": "park-towers.json"
+    },
+    {
+      "id": "residence-inn-hughes",
+      "name": "Residence Inn Hughes Center",
+      "status": "refinement-deferred",
+      "record": "residence-inn-hughes.json"
+    },
+    {
+      "id": "harmon-tower",
+      "name": "Wyndham Grand Desert",
+      "status": "refinement-deferred",
+      "record": "harmon-tower.json"
+    },
+    {
+      "id": "oyo",
+      "name": "OYO Hotel and Casino",
+      "status": "refinement-deferred",
+      "record": "oyo.json"
+    },
+    {
+      "id": "lvcc-west",
+      "name": "Las Vegas Convention Center West Hall",
+      "status": "refinement-deferred",
+      "record": "lvcc-west.json"
+    },
+    {
+      "id": "sphere-garage",
+      "name": "Wynn employee garage beside Sphere",
+      "status": "refinement-deferred",
+      "record": "sphere-garage.json"
+    },
+    {
+      "id": "venetian-expo",
+      "name": "Venetian Expo",
+      "status": "refinement-deferred",
+      "record": "venetian-expo.json"
+    },
+    {
+      "id": "caesars-forum",
+      "name": "Caesars Forum convention center",
+      "status": "refinement-deferred",
+      "record": "caesars-forum.json"
+    },
+    {
+      "id": "venetian-employee-garage",
+      "name": "Venetian employee garage",
+      "status": "refinement-deferred",
+      "record": "venetian-employee-garage.json"
+    },
+    {
+      "id": "peppermill-retail",
+      "name": "Peppermill and neighboring Strip retail",
+      "status": "refinement-deferred",
+      "record": "peppermill-retail.json"
+    },
+    {
+      "id": "lvcc-legacy",
+      "name": "LVCC North Central and South halls",
+      "status": "refinement-deferred",
+      "record": "lvcc-legacy.json"
+    },
+    {
+      "id": "mgm-conference",
+      "name": "MGM Grand Conference Center",
+      "status": "refinement-deferred",
+      "record": "mgm-conference.json"
+    },
+    {
+      "id": "casino-royale",
+      "name": "Casino Royale Strip frontage",
+      "status": "refinement-deferred",
+      "record": "casino-royale.json"
+    },
+    {
+      "id": "sahara-retail",
+      "name": "Bonanza and Sahara Strip retail",
+      "status": "refinement-deferred",
+      "record": "sahara-retail.json"
+    },
+    {
+      "id": "north-strip-motels",
+      "name": "North Strip motels and convenience stores",
+      "status": "refinement-deferred",
+      "record": "north-strip-motels.json"
+    },
+    {
+      "id": "mandalay-parking",
+      "name": "Mandalay Bay self parking",
+      "status": "refinement-deferred",
+      "record": "mandalay-parking.json"
+    },
+    {
+      "id": "luxor-parking",
+      "name": "Luxor west parking garage",
+      "status": "refinement-deferred",
+      "record": "luxor-parking.json"
+    },
+    {
+      "id": "rio-conference",
+      "name": "Rio Pavilion Conference Center",
+      "status": "refinement-deferred",
+      "record": "rio-conference.json"
+    },
+    {
+      "id": "ti-parking",
+      "name": "Treasure Island parking structures",
+      "status": "refinement-deferred",
+      "record": "ti-parking.json"
+    },
+    {
+      "id": "park-mgm-parking",
+      "name": "Park MGM self parking",
+      "status": "refinement-deferred",
+      "record": "park-mgm-parking.json"
+    },
+    {
+      "id": "paris-parking",
+      "name": "Paris self parking",
+      "status": "refinement-deferred",
+      "record": "paris-parking.json"
+    },
+    {
+      "id": "aria",
+      "name": "ARIA whole exterior and podium",
+      "status": "refinement-deferred",
+      "record": "aria.json"
+    },
+    {
+      "id": "guardian-angel",
+      "name": "Guardian Angel Cathedral",
+      "status": "refinement-deferred",
+      "record": "guardian-angel.json"
+    },
+    {
+      "id": "convention-frontage",
+      "name": "Convention Center Drive and Strip frontage",
+      "status": "refinement-deferred",
+      "record": "convention-frontage.json"
+    },
+    {
+      "id": "fashion-show",
+      "name": "Fashion Show Mall",
+      "status": "refinement-deferred",
+      "record": "fashion-show.json"
+    },
+    {
+      "id": "crystals",
+      "name": "The Shops at Crystals",
+      "status": "refinement-deferred",
+      "record": "crystals.json"
+    },
+    {
+      "id": "showcase",
+      "name": "Showcase Mall and Showcase IV",
+      "status": "refinement-deferred",
+      "record": "showcase.json"
+    },
+    {
+      "id": "blvd-retail",
+      "name": "BLVD retail and rooftop",
+      "status": "refinement-deferred",
+      "record": "blvd-retail.json"
+    },
+    {
+      "id": "athletics-stadium",
+      "name": "Athletics stadium construction site",
+      "status": "refinement-deferred",
+      "record": "athletics-stadium.json"
+    },
+    {
+      "id": "vanderpump",
+      "name": "The Vanderpump Hotel, former Cromwell",
+      "status": "refinement-deferred",
+      "record": "vanderpump.json"
+    },
+    {
+      "id": "citycenter-63",
+      "name": "63 CityCenter / ARTE Museum",
+      "status": "refinement-deferred",
+      "record": "citycenter-63.json"
+    },
+    {
+      "id": "harmon-corner",
+      "name": "Harmon Corner",
+      "status": "refinement-deferred",
+      "record": "harmon-corner.json"
+    },
+    {
+      "id": "harley-dealership",
+      "name": "Las Vegas Harley-Davidson",
+      "status": "refinement-deferred",
+      "record": "harley-dealership.json"
+    },
+    {
+      "id": "pinball-hall",
+      "name": "Pinball Hall of Fame",
+      "status": "refinement-deferred",
+      "record": "pinball-hall.json"
+    },
+    {
+      "id": "atomic-golf",
+      "name": "Atomic Golf",
+      "status": "refinement-deferred",
+      "record": "atomic-golf.json"
+    },
+    {
+      "id": "ihop-north",
+      "name": "IHOP1809SouthLasVegasBoulevard",
+      "status": "refinement-deferred",
+      "record": "ihop-north.json"
+    },
+    {
+      "id": "oasis-motel",
+      "name": "Oasis Motel and Sweethearts Chapel",
+      "status": "refinement-deferred",
+      "record": "oasis-motel.json"
+    },
+    {
+      "id": "diamond-inn",
+      "name": "Diamond Inn Motel",
+      "status": "refinement-deferred",
+      "record": "diamond-inn.json"
+    },
+    {
+      "id": "nirvana-hotel",
+      "name": "Nirvana Hotel",
+      "status": "refinement-deferred",
+      "record": "nirvana-hotel.json"
+    },
+    {
+      "id": "little-church-west",
+      "name": "Little Church of the West",
+      "status": "refinement-deferred",
+      "record": "little-church-west.json"
+    },
+    {
+      "id": "maverick-terminal",
+      "name": "Maverick Las Vegas Terminal",
+      "status": "refinement-deferred",
+      "record": "maverick-terminal.json"
+    },
+    {
+      "id": "south-strip-shell-grocery",
+      "name": "South Strip Shell / Green Valley Grocery",
+      "status": "refinement-deferred",
+      "record": "south-strip-shell-grocery.json"
+    },
+    {
+      "id": "akita-plaza",
+      "name": "Akita Plaza retail frontage",
+      "status": "refinement-deferred",
+      "record": "akita-plaza.json"
+    },
+    {
+      "id": "desert-oasis",
+      "name": "Desert Oasis apartments",
+      "status": "refinement-deferred",
+      "record": "desert-oasis.json"
+    },
+    {
+      "id": "laughing-jackalope",
+      "name": "Former Laughing Jackalope",
+      "status": "refinement-deferred",
+      "record": "laughing-jackalope.json"
+    },
+    {
+      "id": "nirvana-ancillary",
+      "name": "Nirvana / former Motel 8 ancillary buildings",
+      "status": "refinement-deferred",
+      "record": "nirvana-ancillary.json"
+    },
+    {
+      "id": "psychic-sessions",
+      "name": "Psychic Sessions south Strip",
+      "status": "refinement-deferred",
+      "record": "psychic-sessions.json"
+    },
+    {
+      "id": "south-arco",
+      "name": "ARCO and ampm3873Strip",
+      "status": "refinement-deferred",
+      "record": "south-arco.json"
+    },
+    {
+      "id": "south-central-police",
+      "name": "South Central police station",
+      "status": "refinement-deferred",
+      "record": "south-central-police.json"
+    },
+    {
+      "id": "fire-station-11",
+      "name": "Clark County Fire Station11",
+      "status": "refinement-deferred",
+      "record": "fire-station-11.json"
+    },
+    {
+      "id": "bali-hai-clubhouse",
+      "name": "Bali Hai Clubhouse",
+      "status": "refinement-deferred",
+      "record": "bali-hai-clubhouse.json"
+    },
+    {
+      "id": "signature-aviation",
+      "name": "Signature Aviation LAS",
+      "status": "refinement-deferred",
+      "record": "signature-aviation.json"
+    },
+    {
+      "id": "terribles-headquarters",
+      "name": "Terrible Herbst Headquarters",
+      "status": "refinement-deferred",
+      "record": "terribles-headquarters.json"
+    },
+    {
+      "id": "pristine-hangar",
+      "name": "Pristine Flight hangar",
+      "status": "refinement-deferred",
+      "record": "pristine-hangar.json"
+    },
+    {
+      "id": "boston-pizza",
+      "name": "Boston Pizza Vegas",
+      "status": "refinement-deferred",
+      "record": "boston-pizza.json"
+    },
+    {
+      "id": "travelers-frontage",
+      "name": "Travelers frontage",
+      "status": "refinement-deferred",
+      "record": "travelers-frontage.json"
+    },
+    {
+      "id": "tod-motel",
+      "name": "Tod Motor Motel",
+      "status": "refinement-deferred",
+      "record": "tod-motel.json"
+    },
+    {
+      "id": "main-street-1511",
+      "name": "1511 South Main Street",
+      "status": "refinement-deferred",
+      "record": "main-street-1511.json"
+    },
+    {
+      "id": "carnitas-1601",
+      "name": "Carnitas y Tortas Ahogadas Guadalajara 2",
+      "status": "refinement-deferred",
+      "record": "carnitas-1601.json"
+    },
+    {
+      "id": "bajamar",
+      "name": "Bajamar 1615",
+      "status": "refinement-deferred",
+      "record": "bajamar.json"
+    },
+    {
+      "id": "luv-it",
+      "name": "Luv-It Frozen Custard",
+      "status": "refinement-deferred",
+      "record": "luv-it.json"
+    },
+    {
+      "id": "oakey-arco",
+      "name": "ARCO and ampm at Oakey",
+      "status": "refinement-deferred",
+      "record": "oakey-arco.json"
+    },
+    {
+      "id": "oakey-shops",
+      "status": "refinement-deferred",
+      "record": "oakey-shops.json"
+    },
+    {
+      "id": "peppermint-hippo",
+      "name": "Peppermint Hippo 1531",
+      "status": "refinement-deferred",
+      "record": "peppermint-hippo.json"
+    },
+    {
+      "id": "market-1700",
+      "name": "1700 Boulevard former market",
+      "status": "refinement-deferred",
+      "record": "market-1700.json"
+    },
+    {
+      "id": "sinclair-1705",
+      "name": "Sinclair 1705",
+      "status": "refinement-deferred",
+      "record": "sinclair-1705.json"
+    },
+    {
+      "id": "chapel-flowers",
+      "name": "Chapel of the Flowers",
+      "status": "refinement-deferred",
+      "record": "chapel-flowers.json"
+    },
+    {
+      "id": "tacos-mexico",
+      "name": "Tacos Mexico1800",
+      "status": "refinement-deferred",
+      "record": "tacos-mexico.json"
+    },
+    {
+      "id": "dennys-1822",
+      "name": "Dennys1822",
+      "status": "refinement-deferred",
+      "record": "dennys-1822.json"
+    },
+    {
+      "id": "main-1700",
+      "name": "Former SuperPawn1700Main",
+      "status": "refinement-deferred",
+      "record": "main-1700.json"
+    },
+    {
+      "id": "curaleaf-1736",
+      "name": "Curaleaf1736 frontage",
+      "status": "refinement-deferred",
+      "record": "curaleaf-1736.json"
+    },
+    {
+      "id": "white-cross-annex",
+      "name": "WhiteCross westernretailwing",
+      "status": "refinement-deferred",
+      "record": "white-cross-annex.json"
+    },
+    {
+      "id": "oakey-service-compound",
+      "status": "refinement-deferred",
+      "record": "oakey-service-compound.json"
+    },
+    {
+      "id": "oakey-offices",
+      "status": "refinement-deferred",
+      "record": "oakey-offices.json"
+    },
+    {
+      "id": "santa-paula-office",
+      "status": "refinement-deferred",
+      "record": "santa-paula-office.json"
+    },
+    {
+      "id": "courtyard-525",
+      "name": "Courtyard 525 Apartments",
+      "status": "refinement-deferred",
+      "record": "courtyard-525.json"
+    },
+    {
+      "id": "santa-paula-courtyard",
+      "name": "Santa Paula courtyard buildings",
+      "status": "refinement-deferred",
+      "record": "santa-paula-courtyard.json"
+    },
+    {
+      "id": "st-louis-square-frontage",
+      "name": "St Louis Square Strip frontage",
+      "status": "refinement-deferred",
+      "record": "st-louis-square-frontage.json"
+    },
+    {
+      "id": "albo-dinos-frontage",
+      "status": "refinement-deferred",
+      "record": "albo-dinos-frontage.json"
+    },
+    {
+      "id": "casino-center-courtyard",
+      "status": "refinement-deferred",
+      "record": "casino-center-courtyard.json"
+    },
+    {
+      "id": "st-louis-office-515",
+      "status": "refinement-deferred",
+      "record": "st-louis-office-515.json"
+    },
+    {
+      "id": "city-market-liquor",
+      "status": "refinement-deferred",
+      "record": "city-market-liquor.json"
+    },
+    {
+      "id": "carpets-galore",
+      "status": "refinement-deferred",
+      "record": "carpets-galore.json"
+    },
+    {
+      "id": "rexford-courtyard-1701",
+      "status": "refinement-deferred",
+      "record": "rexford-courtyard-1701.json"
+    },
+    {
+      "id": "cvs-horseshoe",
+      "status": "refinement-deferred",
+      "record": "cvs-horseshoe.json"
+    },
+    {
+      "id": "casino-royale-retail",
+      "name": "Casino Royale restaurant frontage",
+      "status": "refinement-deferred",
+      "record": "casino-royale-retail.json"
+    },
+    {
+      "id": "casino-royale-garage",
+      "name": "Casino Royale parking structure",
+      "status": "refinement-deferred",
+      "record": "casino-royale-garage.json"
+    },
+    {
+      "id": "flamingo-garden-audit",
+      "status": "refinement-deferred",
+      "record": "flamingo-garden-audit.json"
+    },
+    {
+      "id": "south-commercial-364846558",
+      "status": "refinement-deferred",
+      "record": "south-commercial-364846558.json"
+    },
+    {
+      "id": "south-commercial-annex",
+      "status": "refinement-deferred",
+      "record": "south-commercial-annex.json"
+    },
+    {
+      "id": "haven-courtyards",
+      "name": "Haven courtyard buildings",
+      "status": "refinement-deferred",
+      "record": "haven-courtyards.json"
+    },
+    {
+      "id": "bali-hai-service",
+      "name": "Bali Hai service yard",
+      "status": "refinement-deferred",
+      "record": "bali-hai-service.json"
+    },
+    {
+      "id": "rexford-ellen-courtyard",
+      "name": "Rexford and Ellen courtyard apartments",
+      "status": "refinement-deferred",
+      "record": "rexford-ellen-courtyard.json"
+    },
+    {
+      "id": "casino-center-1520",
+      "status": "refinement-deferred",
+      "record": "casino-center-1520.json"
+    },
+    {
+      "id": "wyoming-17-frontage",
+      "status": "refinement-deferred",
+      "record": "wyoming-17-frontage.json"
+    },
+    {
+      "id": "perception-museum",
+      "status": "refinement-deferred",
+      "record": "perception-museum.json"
+    },
+    {
+      "id": "festival-grounds-service",
+      "name": "Festival grounds building235",
+      "status": "refinement-deferred",
+      "record": "festival-grounds-service.json"
+    },
+    {
+      "id": "shake-shack-frontage",
+      "name": "Shake Shack Strip facade and canopy",
+      "status": "refinement-deferred",
+      "record": "shake-shack-frontage.json"
+    },
+    {
+      "id": "bonita-terrace",
+      "name": "Bonita Terrace apartments",
+      "status": "refinement-deferred",
+      "record": "bonita-terrace.json"
+    },
+    {
+      "id": "carnaval-court",
+      "name": "Carnaval Court outdoor pavilion",
+      "status": "refinement-deferred",
+      "record": "carnaval-court.json"
+    },
+    {
+      "id": "wynn-south-frontage",
+      "name": "Wynn south frontage audit",
+      "status": "refinement-deferred",
+      "record": "wynn-south-frontage.json"
+    },
+    {
+      "id": "russell-service",
+      "name": "Russell Road service building",
+      "status": "refinement-deferred",
+      "record": "russell-service.json"
+    },
+    {
+      "id": "siegel-paradise",
+      "name": "Siegel Suites Paradise",
+      "status": "refinement-deferred",
+      "record": "siegel-paradise.json"
+    },
+    {
+      "id": "santa-paula-1807-1811",
+      "name": "Santa Paula1807/1811 apartments",
+      "status": "refinement-deferred",
+      "record": "santa-paula-1807-1811.json"
+    },
+    {
+      "id": "santa-paula-north-row",
+      "name": "Santa Paula north apartment row",
+      "status": "refinement-deferred",
+      "record": "santa-paula-north-row.json"
+    },
+    {
+      "id": "bellagio-arcade-pavilions",
+      "name": "Bellagio covered walkway pavilions",
+      "status": "refinement-deferred",
+      "record": "bellagio-arcade-pavilions.json"
+    },
+    {
+      "id": "rexford-place-west",
+      "name": "Rexford Place west houses",
+      "status": "refinement-deferred",
+      "record": "rexford-place-west.json"
+    },
+    {
+      "id": "rexford-place-east",
+      "name": "Rexford Place east houses",
+      "status": "refinement-deferred",
+      "record": "rexford-place-east.json"
+    },
+    {
+      "id": "houssels-west",
+      "name": "Houssels Avenue west homes",
+      "status": "refinement-deferred",
+      "record": "houssels-west.json"
+    },
+    {
+      "id": "weldon-west",
+      "name": "Weldon Place west homes",
+      "status": "refinement-deferred",
+      "record": "weldon-west.json"
+    },
+    {
+      "id": "weldon-east",
+      "name": "Weldon Place east homes",
+      "status": "refinement-deferred",
+      "record": "weldon-east.json"
+    },
+    {
+      "id": "santa-paula-west-courts",
+      "name": "Santa Paula west courtyard homes",
+      "status": "refinement-deferred",
+      "record": "santa-paula-west-courts.json"
+    },
+    {
+      "id": "jack-main-wyoming",
+      "name": "Jack in the Box Main and Wyoming",
+      "status": "refinement-deferred",
+      "record": "jack-main-wyoming.json"
+    },
+    {
+      "id": "casino-center-1512",
+      "name": "Casino Center 1512 cottage and rear building",
+      "status": "refinement-deferred",
+      "record": "casino-center-1512.json"
+    },
+    {
+      "id": "paradise-road-small-frontage",
+      "name": "Paradise Road small commercial frontage",
+      "status": "refinement-deferred",
+      "record": "paradise-road-small-frontage.json"
+    },
+    {
+      "id": "mcdonalds-sahara-canopy",
+      "name": "McDonalds Sahara corner canopy",
+      "status": "refinement-deferred",
+      "record": "mcdonalds-sahara-canopy.json"
+    },
+    {
+      "id": "strat-pool-deck",
+      "name": "STRAT level-eight pool deck and pavilion",
+      "status": "refinement-deferred",
+      "record": "strat-pool-deck.json"
+    },
+    {
+      "id": "strat-thrill-rides",
+      "name": "STRAT rooftop thrill ride structures",
+      "status": "refinement-deferred",
+      "record": "strat-thrill-rides.json"
+    },
+    {
+      "id": "circus-north-canopy",
+      "name": "Circus Circus north roadside canopy",
+      "status": "refinement-deferred",
+      "record": "circus-north-canopy.json"
+    },
+    {
+      "id": "encore-tower-suites-canopy",
+      "name": "Encore Tower Suites striped arrival canopy",
+      "status": "refinement-deferred",
+      "record": "encore-tower-suites-canopy.json"
+    },
+    {
+      "id": "wynn-plaza-canopy",
+      "name": "Wynn Plaza curved motor court canopy",
+      "status": "refinement-deferred",
+      "record": "wynn-plaza-canopy.json"
+    },
+    {
+      "id": "wynn-lakefront",
+      "name": "Wynn Lake of Dreams lakefront and terraces",
+      "status": "refinement-deferred",
+      "record": "wynn-lakefront.json"
+    },
+    {
+      "id": "wynn-marquee",
+      "name": "Wynn curved roadside marquee",
+      "status": "refinement-deferred",
+      "record": "wynn-marquee.json"
+    },
+    {
+      "id": "mirage-marquee",
+      "name": "Mirage historic marquee and sidewalk shelter",
+      "status": "refinement-deferred",
+      "record": "mirage-marquee.json"
+    },
+    {
+      "id": "forum-cooling-towers",
+      "name": "Forum Shops twin cooling towers",
+      "status": "refinement-deferred",
+      "record": "forum-cooling-towers.json"
+    },
+    {
+      "id": "chayo-terraces",
+      "name": "Chayo lower patio and upper terrace",
+      "status": "refinement-deferred",
+      "record": "chayo-terraces.json"
+    },
+    {
+      "id": "luxor-obelisk",
+      "name": "Luxor obelisk",
+      "status": "refinement-deferred",
+      "record": "luxor-obelisk.json"
+    },
+    {
+      "id": "akita-rear-canopy",
+      "name": "Akita rear parking canopy",
+      "status": "refinement-deferred",
+      "record": "akita-rear-canopy.json"
+    },
+    {
+      "id": "paris-rooftop-bar",
+      "name": "Paris mapped rooftop pavilion",
+      "status": "refinement-deferred",
+      "record": "paris-rooftop-bar.json"
+    },
+    {
+      "id": "nyny-irish-kiosk",
+      "name": "Nine Fine Irishmen outdoor kiosk",
+      "status": "refinement-deferred",
+      "record": "nyny-irish-kiosk.json"
+    },
+    {
+      "id": "nyny-arrival",
+      "name": "New York\u2013New York arrival pavilion and canopy",
+      "status": "refinement-deferred",
+      "record": "nyny-arrival.json"
+    },
+    {
+      "id": "bellagio-curved-roofs",
+      "name": "Bellagio curved lakefront roof volumes",
+      "status": "refinement-deferred",
+      "record": "bellagio-curved-roofs.json"
+    },
+    {
+      "id": "desert-oasis-service",
+      "name": "Desert Oasis detached service building",
+      "status": "refinement-deferred",
+      "record": "desert-oasis-service.json"
+    },
+    {
+      "id": "pedestrian-lifts",
+      "name": "Harmon and Park MGM pedestrian lifts",
+      "status": "refinement-deferred",
+      "record": "pedestrian-lifts.json"
+    },
+    {
+      "id": "cvs-horseshoe-east",
+      "name": "CVS east service apron",
+      "status": "refinement-deferred",
+      "record": "cvs-horseshoe-east.json"
+    }
+  ],
+  "active": "horseshoe-versailles"
+}

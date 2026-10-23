@@ -1,0 +1,44 @@
+{
+  "id": "harmon-corner",
+  "name": "Harmon Corner",
+  "status": "refinement-deferred",
+  "stage": "Installed second exterior pass; three screenshots inspected. Still generic compared with owner photograph; public bridge/atrium connection unresolved.",
+  "sources": [
+    {
+      "url": "https://www.harmoncorner.com/",
+      "accessed": "2026-10-19",
+      "provider": "Owner",
+      "observed": "June 2026 owner photo visually inspected: curved upper LED, silver horizontal bands, green glazing, restaurant terrace, open bridge approach. Three-story retail with Atrium bridge floor."
+    },
+    {
+      "url": "https://static.wixstatic.com/media/f92106_2a6038f622b6449984a84b76d263fa68~mv2.jpeg",
+      "provider": "Owner exterior photo",
+      "imageDate": "June 2026",
+      "accessed": "2026-10-19",
+      "usage": "Visual research only; no ad photograph copied into game."
+    }
+  ],
+  "remaining": [
+    "Rebuild open second-floor bridge approach and atrium connection using owner plan; current glazing closes the approach.",
+    "Refine silver projecting retail pavilion massing, corner curvature and accurate tenant frontage sizes.",
+    "Verify restaurant terrace access and route back to street; floors/guards alone do not establish access.",
+    "Replace plain purple billboard graphic with original appropriately scaled display design; no copyrighted ad imagery copied.",
+    "Neutral daylight material review remains outstanding."
+  ],
+  "evidence": [
+    "build/city-exteriors/harmon-corner-before/",
+    "build/city-exteriors/harmon-corner-after/",
+    "build/city-exteriors/harmon-preservation.json",
+    "build/city-exteriors/harmon-terrace-results.json"
+  ],
+  "tests": {
+    "terrace": "306 floor support and head clearance samples passed with city collision present.",
+    "preservation": "All unrelated Planet Hollywood meshes and labels identical (order-independent compare).",
+    "verify": "Passed WebGPU playing,60fps default spawn,2960bodies; not route benchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/planetHollywood-exterior.glb": "34dfe6a919f9c3a66c55587d0793dfcedd18446b6558b583a0f592a1399015cf"
+    }
+  }
+}

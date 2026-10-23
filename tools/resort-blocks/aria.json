@@ -1,0 +1,166 @@
+{
+  "id": "aria",
+  "status": "refinement-deferred",
+  "scope": "Whole existing exterior, omitted podium, pool court, convention frontage and entrance connections; preserve interiors",
+  "references": [
+    {
+      "url": "https://www.archdaily.com/910977/aria-resort-and-casino-pelli-clarke-pelli-architects",
+      "provider": "Architect-provided project description",
+      "establishes": "Two curved tower arcs, glass entry canopy, convention center glazing and landscaped pool adjacency"
+    },
+    {
+      "url": "https://www.fieldoperations.net/project/aria-resort",
+      "provider": "Landscape architect",
+      "establishes": "Pool deck, convention roof garden, porte cochere, nightclub patio and streetscape"
+    },
+    {
+      "url": "https://aria.mgmresorts.com/content/dam/MGM/aria/property-maps/aria-property-map.pdf",
+      "provider": "MGM",
+      "status": "Pages 1\u20134 visually inspected; casino, promenade pools and north valet maps",
+      "localCopy": "docs/project-records/city-exteriors-2026-10-12/references/aria-property-map.pdf"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1071,-115.178,760a,470d,35y,90h,60t,0r",
+      "provider": "Google Earth",
+      "imageryDate": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.107,-115.1782,900a,650d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imageryDate": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1065,-115.1793,710a,330d,35y,90h,60t,0r",
+      "provider": "Google Earth",
+      "imageryDate": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.10685,-115.17865,800a,345d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imageryDate": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    }
+  ],
+  "remaining": [
+    "Public promenade/casino pool access and onward interior routes are not implemented by this exterior pass",
+    "Actual tower sawtooth glazing and podium courtyard geometry remain approximate",
+    "Exact measured elevations unavailable: deck14.7m,spa25.4m,convention33m inferred",
+    "Pool shapes, vegetation species and furnishing placement need further reference matching",
+    "Full perimeter driving and public-route performance benchmark not yet recorded",
+    "North garage stair/lift cores and precise road apron alignment still need route verification",
+    "Pool pavilion doors/counter and close-up planting need refinement; photorealism not established",
+    "Latest CLI verification gate pending: auto-start failed at visiblePLAY menu twice; installed gameplay access probes passed."
+  ],
+  "mapReview": "Official map pages2 casino,3 promenade/pools,4 north valet visually inspected. Four pool areas, spa, convention west/east wings and interior escalators established. Not a surveyed elevation drawing.",
+  "dimensions": "Pool deck14.7m,spa roof25.4m,convention roof33m estimated from aerial relative proportions. Pool positions from top-down screenshot registration; not surveyed. Preserve original tower and casino interiors.",
+  "baselineViews": [
+    "build/city-exteriors/aria-before/east-entry.png",
+    "build/city-exteriors/aria-before/west.png",
+    "build/city-exteriors/aria-before/convention.png",
+    "build/city-exteriors/aria-before/pool-plan.png"
+  ],
+  "baselineFindings": "All four installed baseline captures inspected: spa low blank curved block; missing pools/convention center; eastern lobby/canopy exists but remains approximate.",
+  "geometryOwner": "ariaSite replaces spa463856739 and omitted west/south podium; ariaParking replaces52175579. Existing ARIA tower/casino preserved.",
+  "geometry": {
+    "triangles": 844236,
+    "batches": 42,
+    "optimizedMiB": 17.85,
+    "nearDetail": "Batched palm leaflets and shrub leaves; no per-frame geometry or lights"
+  },
+  "tests": "1150 deck/roof support samples,192 stair/entry/egress floor/headroom samples and3 exterior exit rays PASS;245 garage deck and528 garage ramp/headroom samples PASS;1517 city collision cells valid; water classifier12casesPASS.",
+  "viewsReviewed": [
+    "build/city-exteriors/aria-reviewed/east-entry.png",
+    "build/city-exteriors/aria-reviewed/west.png",
+    "build/city-exteriors/aria-reviewed/pool-walk.png",
+    "build/city-exteriors/aria-reviewed/convention.png",
+    "build/city-exteriors/aria-reviewed/stairs.png",
+    "build/city-exteriors/aria-reviewed/concourse.png",
+    "build/city-exteriors/aria-reviewed/pool-plan.png",
+    "build/city-exteriors/aria-access/roof-opening.png",
+    "build/city-exteriors/aria-access/garage-west.png",
+    "build/city-exteriors/aria-access/egress-outside.png",
+    "build/city-exteriors/aria-access/egress-inside.png"
+  ],
+  "reviewFindings": "All seven installed captures visually inspected. Corrected raised convention undercroft to enclosed copper-panel building. Added planting beds/cabanas and clear paths. Trim no longer uses tread plate; water shader binding verified. Pool pavilion and tower/facade detailing still approximate. Pool camera partly occluded by palm trunk; no claim of photo-perfect result. Latest4access views reviewed: exit open from both directions, roof opening guards present. Ramp concrete visually merges with deck at some aerial angles; no claim of completed garage circulation.",
+  "performance": {
+    "after": "build/city-exteriors/aria-reviewed-report.json",
+    "scope": "Fixed pool camera Ultra1280x720",
+    "medianMs": 16.7,
+    "p95Ms": 18.9,
+    "baseline": null
+  },
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/ariaSite-exterior.glb": "69ebe0ab73fedede0ddcbd181ab6411fe0e81c8a935acf740c552712f7bfb295",
+      "src/work/RealisticWater.ts": "a3d1aab2ff550e63fda7eb32c8074cf9207de48ff1702cd4bdf63ed357e5350d",
+      "src/work/PbrDetailSets.ts": "c2080cfab6deae26cd9a36000057344c0dc41a1d21442728f3ae38d9f04e2d29",
+      "build/optimized/build/strip-landmarks/ariaParking-exterior.glb": "f56ea09d68ac968458edf10fe102950e447f024434dae84c6d88e02cdf14f900",
+      "build/optimized/build/geographic-strip/city.glb": "e03d9a2c1d366d022bd2421553f8f0f7f52736ee239be3df070de30cc4cd3370"
+    }
+  },
+  "verification": "Latest two CLI verification runs stopped at menu after60s; screenshot shows PLAY but automation did not activate it. Reported29/30fps at menu. Installed gameplay probes succeeded; prior CLIverify passed58fps before geometry-only access correction. Latestfullverifygate remains pending.",
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-aria-access-retry.log",
+  "garage": {
+    "mappedIds": [
+      "way/52175579"
+    ],
+    "geometry": {
+      "triangles": 8823,
+      "batches": 8,
+      "optimizedMiB": 0.13
+    },
+    "status": "installed-and-visually-reviewed",
+    "levelScheduleM": [
+      0.24,
+      3.6399999999999997,
+      7.04,
+      10.44,
+      13.84,
+      17.24,
+      20.639999999999997,
+      24.04,
+      27.439999999999998
+    ],
+    "uncertainty": "OSM names this self-parking, but official map locates public self-parking to south; northern structure operational designation uncertain.9levels mapped,3.4m pitch and ramp direction estimated from2022aerial. Lift/stair core circulation incomplete.",
+    "tests": "245deck and528ramp/headroom samplesPASS",
+    "sources": [
+      {
+        "url": "https://earth.google.com/web/@36.10938,-115.17927,700a,330d,35y,90h,60t,0r",
+        "provider": "Google Earth",
+        "imageryDate": "2022-11-09",
+        "inspected": true
+      },
+      {
+        "url": "https://earth.google.com/web/@36.10938,-115.17927,780a,330d,35y,0h,0t,0r",
+        "provider": "Google Earth",
+        "imageryDate": "2022-11-09",
+        "inspected": true
+      },
+      {
+        "url": "https://earth.google.com/web/@36.10938,-115.17927,705a,315d,35y,180h,65t,0r",
+        "provider": "Google Earth",
+        "imageryDate": "2022-11-09",
+        "inspected": true
+      },
+      {
+        "url": "https://vdara.mgmresorts.com/en/amenities/transportation.html",
+        "provider": "MGM",
+        "establishes": "Vdara self-parking available atARIA, does not identify northgarage by name"
+      }
+    ],
+    "viewsReviewed": [
+      "build/city-exteriors/aria-parking-after/west.png",
+      "build/city-exteriors/aria-parking-after/south.png",
+      "build/city-exteriors/aria-parking-after/roof.png",
+      "build/city-exteriors/aria-parking-after/ramp.png",
+      "build/city-exteriors/aria-parking-after/ground.png"
+    ]
+  }
+}

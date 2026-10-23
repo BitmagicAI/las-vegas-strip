@@ -1,0 +1,56 @@
+{
+ "format": "bitmagic-mesh-level",
+ "version": 1,
+ "units": "meters",
+ "colliders": [
+  {
+   "name": "corridor terminal wall",
+   "shape": "box",
+   "position": [
+    0.0,
+    1.7,
+    -0.12
+   ],
+   "size": [
+    3.8,
+    3.4,
+    0.2
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "console stone top",
+   "shape": "box",
+   "position": [
+    0.0,
+    0.88,
+    0.32
+   ],
+   "size": [
+    1.32,
+    0.045,
+    0.42
+   ],
+   "yaw": 0.0
+  }
+ ],
+ "volumes": [],
+ "landmarks": [
+  {
+   "name": "spawn",
+   "position": [
+    0.0,
+    0.025,
+    0.0
+   ],
+   "yaw": 0.0,
+   "tags": []
+  }
+ ],
+ "lights": [],
+ "extras": {
+  "links": [],
+  "stairs": [],
+  "doors": []
+ }
+}

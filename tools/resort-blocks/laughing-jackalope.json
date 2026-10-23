@@ -1,0 +1,48 @@
+{
+  "id": "laughing-jackalope",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://abandonedonline.net/an-evening-walk-on-the-edge-of-the-las-vegas-strip/",
+      "author": "Sherman Cahal",
+      "date": "2025-05-23",
+      "observed": "Photos110479 and110481 inspected: tall weathered sign,pale stucco arcade,square piers with horizontal grooves,empty former bar."
+    },
+    {
+      "url": "https://www.google.com/maps/search/3969+South+Las+Vegas+Boulevard",
+      "observed": "StreetView3967SBlvd,February2026 inspected: tallpylonabsent,boardednorthfront,centralraisedpierandhipcanopy,shallowfrontdoorpediment,openarcadesouth. This supersedes May2025 sign."
+    }
+  ],
+  "remaining": [
+    "Facade wear, graffiti, posters and exact materials remain approximate",
+    "Side and rear details and landscaping incomplete",
+    "No interiors authored; unrelated roadside fixture retained pending source audit",
+    "Offsite ground voids remain outside this footprint"
+  ],
+  "dimensions": "Mapped19.2x24m footprint;roof5.7m,raisedpier6.9m,arcadeheight3.57m allphotoestimates.",
+  "implemented": [
+    "Boarded west frontage, raised central pier with hip cap, shallow doorway pediment and blank marquees",
+    "Open southern arcade with thick arched piers, continuous floor and roof",
+    "Mapped footprint replacement with matching collision removal"
+  ],
+  "validation": {
+    "support": "85 floor/headroom checks passed",
+    "walking": "7 legs in both directions passed",
+    "visual": "Front, arcade and aerial installed views inspected; arcade rechecked after adding arch thickness",
+    "performance": "Fixed aerial 960x540 ultra 16.7ms p50 / 18.3ms p95; not a route benchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/laughing-jackalope-final/jack-front.png",
+    "build/city-exteriors/laughing-jackalope-final/jack-arcade.png",
+    "build/city-exteriors/laughing-jackalope-final/jack-aerial.png",
+    "build/city-exteriors/laughing-jackalope-collision.json",
+    "build/city-exteriors/laughing-jackalope-walk.json",
+    "build/city-exteriors/laughing-jackalope-ownership-audit.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/laughingJackalope-exterior.glb": "d8deae00607e30e60769109fb3d63594a7f421c7e9c77b4261d4ce043c43e18b",
+      "build/strip-landmarks/laughingJackalope-exterior-collision.json": "715c24c4a1bc62233ab684b035449c87208c622fe9e77e2d753d3d1703718c36"
+    }
+  }
+}

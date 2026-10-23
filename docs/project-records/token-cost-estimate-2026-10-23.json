@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-23",
+  "scope": "Main Vegas development conversation, cumulative local usage counters; not all independent sessions or third-party generation services.",
+  "firstUsage": "2026-09-27T00:26:47.597Z",
+  "lastUsage": "2026-10-23T08:27:23.579Z",
+  "model": "gpt-6-astra",
+  "usage": {
+    "input_tokens": 3463812589,
+    "cached_input_tokens": 3413751168,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 6500238,
+    "reasoning_output_tokens": 1761183,
+    "total_tokens": 3470312827
+  },
+  "uncachedInputTokens": 50061421,
+  "reasoningIncludedInOutput": true,
+  "counterResetsObserved": 0,
+  "maxRequestInput": 252428,
+  "standardUsd": 4239.377278,
+  "standardUsdWithAllUncachedInputAt30mWriteRate": 4364.5308305,
+  "fastUsd": 8478.754556,
+  "noCachingStandardUsd": 34963.13779,
+  "ratesPerMillionUsd": {
+    "input": 10,
+    "cachedInput": 1,
+    "output": 50,
+    "30minuteCacheWrite": 12.5
+  },
+  "pricingSource": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "limitations": [
+    "Current public pricing, not an actual invoice or historical billed total.",
+    "Service tier unspecified in local turn contexts.",
+    "Same cache hit rate assumed; API cache behavior and write accounting may differ.",
+    "Excludes separately billed image/model generation, hosted tools and unrecorded independent sessions.",
+    "Includes troubleshooting, performance, filming and this cost audit, not only mesh generation."
+  ]
+}

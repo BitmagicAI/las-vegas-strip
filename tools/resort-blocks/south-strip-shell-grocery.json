@@ -1,0 +1,54 @@
+{
+  "id": "south-strip-shell-grocery",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.yellowpages.com/las-vegas-nv/mip/shell-469680387",
+      "observed": "Address4207S LasVegasBlvd consistent with mappedstore/fuelcanopy tags; facade photograph still pending"
+    },
+    {
+      "url": "https://find.shell.com/us/fuel/10006335-4207-las-vegas-blvd-s/en_US",
+      "observed": "Official site linked by station Maps listing; not yet opened"
+    },
+    {
+      "url": "https://www.google.com/maps/search/Shell+4207+Las+Vegas+Boulevard+South",
+      "observed": "Photo3 accchronicles April2023 inspected: pale yellow canopy/redlowertrim,white rectangularcolumns,pumpislands,flat tanstore withcream bands and rounded/canted glazedfront corner,red MINI MART WINE SLOTS lettering,black storefront frames. Owner genericlogo photoApril2025 notusedasplacement evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.089519,-115.1721178,100m/data=!3m1!1e3",
+      "observed": "Satellite inspected: store east,canopy centeredwest,Strip entrancewest andFourSeasons entrance north,thin plantingnorthboundary. Approximate sitefloor bounded41..129,2927..2962."
+    }
+  ],
+  "remaining": [
+    "Northern planting,pylon and advertisements absent",
+    "Canopy emblem and lettering approximate",
+    "Pump wear,asphalt patching and storefront interiors require refinement",
+    "Off-site terrain gaps still visible"
+  ],
+  "dimensions": "Mappedstore18.9x19.4m cantednorthwestcorner;canopy13x16.6m. Canopy underside4.5m/store4.5m photo-estimates,not measured.",
+  "implemented": [
+    "Open fuel canopy with raised emblem,red/yellow fascia,columns,pump islands,dispensers and hoses",
+    "Mapped canted storefront,glazing and tan banded walls,roof services",
+    "Raised continuous forecourt resolves overlap with existing pavement"
+  ],
+  "validation": {
+    "support": "112 support/headroom checks passed",
+    "walking": "6legs both directions passed after pavement elevation fix",
+    "visual": "3installedviews inspected;store rechecked after glazing/label fixes",
+    "performance": "960x540 ultra fixed aerial16.7ms p50/18.8ms p95;not fullroutebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/south-shell-final/shell-front.png",
+    "build/city-exteriors/south-shell-final/shell-store.png",
+    "build/city-exteriors/south-shell-final/shell-aerial.png",
+    "build/city-exteriors/south-shell-collision.json",
+    "build/city-exteriors/south-shell-walk.json",
+    "build/city-exteriors/south-shell-ownership-audit.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/southShell-exterior.glb": "d404c8572fa5f58ce644bfc415000665d64889ba37796808d82ca1ae3592a9b8",
+      "build/strip-landmarks/southShell-exterior-collision.json": "01066b384d2517896981411b824cbbb1e602b8d250683d891ff03ee817e5b021"
+    }
+  }
+}

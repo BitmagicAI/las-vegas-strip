@@ -1,0 +1,147 @@
+{
+ "name": "vegas-afterlight-45s-rt",
+ "music": ".bitmagic/film/music/bed-v1.mp3",
+ "musicStart": 17.7269,
+ "fadeIn": 0.8,
+ "fadeOut": 2.0,
+ "logo": {
+  "file": "tools/film/brand/bitmagic-logo-white.png",
+  "corner": "br",
+  "height": 0.05,
+  "margin": 0.022,
+  "opacity": 0.6,
+  "shadow": 0.45
+ },
+ "clips": [
+  {
+   "take": "fly-paris-rt",
+   "in": 1.0,
+   "dur": 3.0113,
+   "label": "fly-paris @1.0"
+  },
+  {
+   "take": "drive45b-rt",
+   "in": 3.5,
+   "dur": 2.409,
+   "label": "drive45b @3.5"
+  },
+  {
+   "take": "drive45b-rt",
+   "in": 12.0,
+   "dur": 2.409,
+   "label": "drive45b @12.0"
+  },
+  {
+   "take": "lake-glide-rt",
+   "in": 1.0,
+   "dur": 1.8068,
+   "label": "lake-glide @1.0"
+  },
+  {
+   "take": "drive45b-rt",
+   "in": 19.0,
+   "dur": 1.8068,
+   "label": "drive45b @19.0"
+  },
+  {
+   "take": "fly-highroller-rt",
+   "in": 2.0,
+   "dur": 2.409,
+   "label": "fly-highroller @2.0"
+  },
+  {
+   "take": "fly-sphere-rt",
+   "in": 3.0,
+   "dur": 2.409,
+   "label": "fly-sphere @3.0"
+  },
+  {
+   "take": "hotel-run-rt",
+   "in": 0.4,
+   "dur": 3.4,
+   "label": "hotel-run @0.4"
+  },
+  {
+   "take": "hotel-run-rt",
+   "in": 3.8,
+   "dur": 2.2,
+   "label": "hotel-run @3.8 x2",
+   "speed": 2
+  },
+  {
+   "take": "hotel-run-rt",
+   "in": 8.2,
+   "dur": 1.6,
+   "label": "hotel-run @8.2 x1.5",
+   "speed": 1.5
+  },
+  {
+   "take": "hotel-run-rt",
+   "in": 10.6,
+   "dur": 5.4,
+   "label": "hotel-run @10.6 x1.5",
+   "speed": 1.5
+  },
+  {
+   "take": "hotel-run-rt",
+   "in": 18.7,
+   "dur": 3.07,
+   "label": "hotel-run @18.7 x1.5",
+   "speed": 1.5
+  },
+  {
+   "take": "hotel-run-rt",
+   "in": 23.305,
+   "dur": 2.3977,
+   "label": "hotel-run @23.305"
+  },
+  {
+   "take": "lobby-venetian-rt",
+   "in": 1.5,
+   "dur": 1.8068,
+   "label": "lobby-venetian @1.5"
+  },
+  {
+   "take": "coaster-ride-rt",
+   "in": 70.0,
+   "dur": 1.8068,
+   "label": "coaster-ride @70.0"
+  },
+  {
+   "take": "coaster-ride-rt",
+   "in": 89.0,
+   "dur": 1.8068,
+   "label": "coaster-ride @89.0"
+  },
+  {
+   "take": "coaster-ride-rt",
+   "in": 112.0,
+   "dur": 1.8068,
+   "label": "coaster-ride @112.0"
+  },
+  {
+   "take": "fly-paris-rt",
+   "in": 14.0,
+   "dur": 3.4442,
+   "label": "up around the Eiffel Tower"
+  }
+ ],
+ "cards": [
+  {
+   "at": 0.5,
+   "dur": 3.2,
+   "style": "title",
+   "text": "VEGAS: AFTERLIGHT",
+   "fade": 0.8
+  },
+  {
+   "at": "end",
+   "dur": 4.2,
+   "style": "end",
+   "text": "VEGAS: AFTERLIGHT",
+   "sub": "THE STRIP IS YOURS",
+   "fade": 0.9,
+   "endPad": 0.4
+  }
+ ]
+}

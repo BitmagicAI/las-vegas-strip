@@ -1,0 +1,57 @@
+{
+  "id": "westin",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1153,-115.1658,630a,280d,35y,340h,65t,0r",
+      "review": "Front aerial inspected: pale room window grid, dark upper four floors, central dark spine and slit glazing, southwest roof pool, curved arrival podium, separate east garage. Image date not displayed."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1153,-115.1658,630a,280d,35y,160h,65t,0r",
+      "review": "Rear aerial inspected: dark central spine, rear service podium and east open garage."
+    }
+  ],
+  "dimensions": "Mapped tower50m retained. Podium7.5m,garage12.4m,upper dark section37.1m estimated from reference; not surveyed elevations.",
+  "remaining": [
+    "Public entrance circulation",
+    "Pool access and landscape",
+    "Exact signage and facade bay dimensions",
+    "Route performance"
+  ],
+  "baseline": [
+    "build/city-exteriors/westin-before/westin-front.png",
+    "build/city-exteriors/westin-before/westin-back.png",
+    "build/city-exteriors/westin-before/westin-entry.png"
+  ],
+  "baselineReview": "All three inspected: blank tower, podium and garage with no window bays or material articulation.",
+  "implementation": {
+    "ids": [
+      "way/135020970",
+      "way/543423252",
+      "way/135020971"
+    ],
+    "triangles": 12212,
+    "batches": 12,
+    "tests": "243 roof/garage slab support samples pass. Sampling 3cm above each slab avoids intentionally raised guard-rail underside; no entrance/garage ramp traversal assertion."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/westin-after/westin-front.png",
+      "build/city-exteriors/westin-after/westin-back.png",
+      "build/city-exteriors/westin-after/westin-entry.png"
+    ],
+    "review": "All3 final captures inspected. Corrected coplanar podium overlays, duplicate segment-end core stripe and sign facing. Roof/pool and garage present. Public arrival/circulation and landscape remain incomplete."
+  },
+  "preservation": "8478 road/landscape groups unchanged byte-for-byte in building-only rebuild.",
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/westin.py": "3c1aaad0e03fb5bfa6dcfb1d83f64e8926b15034550b1f96b04bbc5fee57c665",
+      "build/optimized/build/strip-landmarks/westin-exterior.glb": "c2472d9e0babccccc95e4660c146f62193cbc2b7a0adbc1fa84d8521a8bd0e66"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed58fps at spawn,3011bodies; not block-route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-westin.log"
+  }
+}

@@ -1,0 +1,500 @@
+{
+ "viewport": [
+  1505,
+  772
+ ],
+ "dpr": 2,
+ "results": [
+  {
+   "view": "stair-bellagio",
+   "tower": "bellagio-north",
+   "floor": 3,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -304,
+    "y": 10.9,
+    "z": 257.9
+   },
+   "fps": 48.7,
+   "intervalP50": 16.7,
+   "intervalP90": 33.3,
+   "cpuP50": 4.4,
+   "gpuP50": 44.89,
+   "gpuP90": 45.72,
+   "draws": 230,
+   "triangles": 2613596,
+   "passes": [
+    [
+     "output 3010x1544",
+     23.19,
+     1
+    ],
+    [
+     "screen",
+     21.44,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.14,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "city-hidden": {
+     "fps": 50.9,
+     "gpuP50": 43.19,
+     "cpuP50": 3.7
+    },
+    "no-city-point-lights": {
+     "fps": 60,
+     "gpuP50": 14.7,
+     "cpuP50": 4.3
+    },
+    "hotel-unlit": {
+     "fps": 60,
+     "gpuP50": 14.21,
+     "cpuP50": 4.1
+    },
+    "shadows-frozen": {
+     "fps": 48.7,
+     "gpuP50": 43.54,
+     "cpuP50": 3.4
+    },
+    "half-res": {
+     "fps": 60,
+     "gpuP50": 16.02,
+     "cpuP50": 4.1
+    }
+   }
+  },
+  {
+   "view": "corridor-bellagio",
+   "tower": "bellagio-north",
+   "floor": 3,
+   "room": null,
+   "roomView": "corridor",
+   "placed": {
+    "x": -304,
+    "y": 10.9,
+    "z": 260.3
+   },
+   "fps": 21.6,
+   "intervalP50": 33.3,
+   "intervalP90": 100,
+   "cpuP50": 4.9,
+   "gpuP50": 97.58,
+   "gpuP90": 101.1,
+   "draws": 227,
+   "triangles": 2613572,
+   "passes": [
+    [
+     "output 3010x1544",
+     49.51,
+     1
+    ],
+    [
+     "screen",
+     47.5,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.17,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "city-hidden": {
+     "fps": 23.6,
+     "gpuP50": 97.48,
+     "cpuP50": 3.8
+    },
+    "no-city-point-lights": {
+     "fps": 60,
+     "gpuP50": 16.53,
+     "cpuP50": 4.2
+    },
+    "hotel-unlit": {
+     "fps": 60,
+     "gpuP50": 16.51,
+     "cpuP50": 4.1
+    },
+    "shadows-frozen": {
+     "fps": 19.6,
+     "gpuP50": 193,
+     "cpuP50": 3.8
+    },
+    "half-res": {
+     "fps": 58.5,
+     "gpuP50": 33.47,
+     "cpuP50": 5.6
+    }
+   }
+  },
+  {
+   "view": "room-bellagio",
+   "tower": "bellagio-north",
+   "floor": 3,
+   "room": 0,
+   "roomView": "bedroom",
+   "placed": {
+    "x": -310.9,
+    "y": 10.9,
+    "z": 262.5
+   },
+   "fps": 19.5,
+   "intervalP50": 50,
+   "intervalP90": 100,
+   "cpuP50": 6,
+   "gpuP50": 153.58,
+   "gpuP90": 156,
+   "draws": 303,
+   "triangles": 2853151,
+   "passes": [
+    [
+     "output 3010x1544",
+     51.93,
+     1
+    ],
+    [
+     "screen",
+     51.12,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     39.79,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "city-hidden": {
+     "fps": 20.2,
+     "gpuP50": 161.31,
+     "cpuP50": 5.1
+    },
+    "no-city-point-lights": {
+     "fps": 60,
+     "gpuP50": 7.12,
+     "cpuP50": 4.7
+    },
+    "hotel-unlit": {
+     "fps": 60,
+     "gpuP50": 6.03,
+     "cpuP50": 4.7
+    },
+    "shadows-frozen": {
+     "fps": 20.2,
+     "gpuP50": 161.88,
+     "cpuP50": 4.2
+    },
+    "half-res": {
+     "fps": 59.5,
+     "gpuP50": 51.51,
+     "cpuP50": 6.8
+    }
+   }
+  },
+  {
+   "view": "bath-bellagio",
+   "tower": "bellagio-north",
+   "floor": 3,
+   "room": 0,
+   "roomView": "bathroom",
+   "placed": {
+    "x": -308.6,
+    "y": 10.9,
+    "z": 264.4
+   },
+   "fps": 14.7,
+   "intervalP50": 66.7,
+   "intervalP90": 133.3,
+   "cpuP50": 8.2,
+   "gpuP50": 196.13,
+   "gpuP90": 198.59,
+   "draws": 613,
+   "triangles": 5169176,
+   "passes": [
+    [
+     "output 3010x1544",
+     66.9,
+     1
+    ],
+    [
+     "screen",
+     64.79,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     51.47,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "city-hidden": {
+     "fps": 14.5,
+     "gpuP50": 197.8,
+     "cpuP50": 5.3
+    },
+    "no-city-point-lights": {
+     "fps": 60,
+     "gpuP50": 10.2,
+     "cpuP50": 6.5
+    },
+    "hotel-unlit": {
+     "fps": 60,
+     "gpuP50": 8.46,
+     "cpuP50": 6.4
+    },
+    "shadows-frozen": {
+     "fps": 14.3,
+     "gpuP50": 135.65,
+     "cpuP50": 5.8
+    },
+    "half-res": {
+     "fps": 44.5,
+     "gpuP50": 60.6,
+     "cpuP50": 8.8
+    }
+   }
+  },
+  {
+   "view": "corridor-caesars",
+   "tower": "caesars-palace",
+   "floor": 3,
+   "room": null,
+   "roomView": "corridor",
+   "placed": {
+    "x": -406,
+    "y": 10.9,
+    "z": -41.8
+   },
+   "fps": 22.7,
+   "intervalP50": 33.4,
+   "intervalP90": 83.3,
+   "cpuP50": 4.9,
+   "gpuP50": 85.99,
+   "gpuP90": 94.34,
+   "draws": 160,
+   "triangles": 54174,
+   "passes": [
+    [
+     "screen",
+     43.61,
+     1
+    ],
+    [
+     "output 3010x1544",
+     43.61,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.17,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "city-hidden": {
+     "fps": 22.9,
+     "gpuP50": 87.87,
+     "cpuP50": 4.7
+    },
+    "no-city-point-lights": {
+     "fps": 60,
+     "gpuP50": 13.18,
+     "cpuP50": 3.4
+    },
+    "hotel-unlit": {
+     "fps": 60,
+     "gpuP50": 10.18,
+     "cpuP50": 3.5
+    },
+    "shadows-frozen": {
+     "fps": 22.8,
+     "gpuP50": 177.09,
+     "cpuP50": 3
+    },
+    "half-res": {
+     "fps": 60,
+     "gpuP50": 19.1,
+     "cpuP50": 3.6
+    }
+   }
+  },
+  {
+   "view": "room-cosmo",
+   "tower": "cosmo-boulevard",
+   "floor": 3,
+   "room": 0,
+   "roomView": null,
+   "placed": {
+    "x": -111.9,
+    "y": 33.5,
+    "z": 649.5
+   },
+   "fps": 21.2,
+   "intervalP50": 50,
+   "intervalP90": 100,
+   "cpuP50": 7.9,
+   "gpuP50": 87.22,
+   "gpuP90": 90.3,
+   "draws": 373,
+   "triangles": 4962699,
+   "passes": [
+    [
+     "output 3010x1544",
+     40.81,
+     1
+    ],
+    [
+     "screen",
+     33.92,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     1.24,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "city-hidden": {
+     "fps": 26.2,
+     "gpuP50": 133.24,
+     "cpuP50": 4.8
+    },
+    "no-city-point-lights": {
+     "fps": 60,
+     "gpuP50": 9.6,
+     "cpuP50": 5.9
+    },
+    "hotel-unlit": {
+     "fps": 60,
+     "gpuP50": 7.79,
+     "cpuP50": 5.9
+    },
+    "shadows-frozen": {
+     "fps": 21.4,
+     "gpuP50": 87.03,
+     "cpuP50": 5.2
+    },
+    "half-res": {
+     "fps": 60,
+     "gpuP50": 23.48,
+     "cpuP50": 7.1
+    }
+   }
+  },
+  {
+   "view": "lobby-wynn",
+   "tower": "wynn-1",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 674,
+    "y": 0.3,
+    "z": -1229.7
+   },
+   "fps": 20.2,
+   "intervalP50": 50,
+   "intervalP90": 100,
+   "cpuP50": 3.8,
+   "gpuP50": 111.15,
+   "gpuP90": 114.58,
+   "draws": 41,
+   "triangles": 751359,
+   "passes": [
+    [
+     "output 3010x1544",
+     55.79,
+     1
+    ],
+    [
+     "screen",
+     55.76,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.18,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "city-hidden": {
+     "fps": 21.5,
+     "gpuP50": 109.81,
+     "cpuP50": 3.5
+    },
+    "no-city-point-lights": {
+     "fps": 60,
+     "gpuP50": 8.19,
+     "cpuP50": 3.2
+    },
+    "hotel-unlit": {
+     "fps": 60,
+     "gpuP50": 2.3,
+     "cpuP50": 3
+    },
+    "shadows-frozen": {
+     "fps": 20.4,
+     "gpuP50": 195.14,
+     "cpuP50": 2.7
+    },
+    "half-res": {
+     "fps": 60,
+     "gpuP50": 36.28,
+     "cpuP50": 3.9
+    }
+   }
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,32 @@
+{
+  "venetian": {
+    "groups": 181,
+    "triangles": 1327102,
+    "rawMiB": 97.21,
+    "installedMiB": 27.12,
+    "source": "build/strip-landmarks/venetian-exterior.glb",
+    "installed": "build/optimized/build/strip-landmarks/venetian-exterior.glb",
+    "sha256": "005ca9f283d3f982c8e5b59e35c057da0144992c1160ca51b19db2e64d638d34",
+    "sourceSha256": "9fcb68ba932cc63b601213270da3bf4145884eaae3a9791b5cb5c50ccfae8106"
+  },
+  "harrahs": {
+    "groups": 41,
+    "triangles": 121964,
+    "rawMiB": 10.06,
+    "installedMiB": 2.86,
+    "source": "build/strip-landmarks/harrahs-exterior.glb",
+    "installed": "build/optimized/build/strip-landmarks/harrahs-exterior.glb",
+    "sha256": "291ac5a5743ca4776af8c0155e0c471451ddc481dad4f5f20659a2a7b889c10f",
+    "sourceSha256": "6513af650d9660c1102a5d6b4f2464fb08f3e3bb4f4ba50a4e100a8c1c7d4c70"
+  },
+  "linq": {
+    "groups": 197,
+    "triangles": 298279,
+    "rawMiB": 28.82,
+    "installedMiB": 9.94,
+    "source": "build/strip-landmarks/linq-exterior.glb",
+    "installed": "build/optimized/build/strip-landmarks/linq-exterior.glb",
+    "sha256": "67ea577267547649db6d549757464fc6421008a1ab6d1145abfe042e8e065c70",
+    "sourceSha256": "529e7670968e50149827853a0c8dd4345e548ed74ad9855674fb3796f7de5b6f"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "turnberry-place",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://www.turnberryplace.com/",
+      "establishes": "Four towers with large outdoor terraces and central Stirling Club."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1375,-115.1562,650a,330d,35y,270h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09 to 2024-03-05",
+      "establishes": "Four straight diagonal tower slabs, rounded corner terraces, pale blue curved crowns and red tiled central clubhouse; visually inspected."
+    }
+  ],
+  "remaining": [
+    "Pool, planting, arrival canopies and detailed clubhouse portals unfinished.",
+    "Exact facade subdivisions and roof crown shape require further matched-angle refinement.",
+    "Public circulation and terrace access not traversed; existing guest cores unchanged."
+  ],
+  "geometry": {
+    "triangles": 344219,
+    "batches": 22,
+    "optimizedMiB": 6.21
+  },
+  "estimates": {
+    "bodyHeightM": 145,
+    "crownRiseM": 3.2,
+    "terracePitchM": 3.55,
+    "clubhouseWallM": 8,
+    "note": "Mapped plans retained; facade pitch, crown and clubhouse elevations photo-estimated."
+  },
+  "evidence": [
+    "build/city-exteriors/place-before",
+    "build/city-exteriors/place-after",
+    "build/city-exteriors/place-final"
+  ],
+  "tests": {
+    "typecheck": "passed",
+    "visual": "All three final installed views inspected. Solid sections improved; exact crown, club massing and gardens remain approximate."
+  }
+}

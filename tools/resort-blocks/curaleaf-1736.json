@@ -1,0 +1,47 @@
+{
+  "id": "curaleaf-1736",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364846569"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15030,-115.15325&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "1736 address visible after zoom. Curaleaf sign tower clad gray panels; east glazing covered with reddish boards, stone-faced piers, gray base, projecting horizontal roof slats, desert gravel/yucca landscaping. Do not infer closure solely from boarded windows."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15030,-115.15356&zoom=20&basemap=satellite",
+      "observed": "Long rectangular main building east-west; parking north/south, small separate western service enclosure and paths; eastern curved driveway and gravel planting."
+    },
+    {
+      "url": "https://ccb.nv.gov/list-of-licensees/",
+      "observed": "Nevada Cannabis Compliance Board search result identifies CURALEAF at1736SLasVegasBlvd; corroborates sign identity, not architectural dimensions."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15015,-115.15345&heading=300&pitch=0",
+      "imageDate": "April2018",
+      "observed": "Older unremodeled facade; do not use as current exterior. Shows adjacency to TacosMexico and parking."
+    }
+  ],
+  "remaining": [
+    "Tower logo and panel cladding remain an approximation, not exact vector artwork",
+    "North/rear entrance arrangement and dimensions partly inferred from mapped recesses; no interior access claim",
+    "Desert planting quantity/species, hedge and palms not fully matched",
+    "Stone pier material and plywood weathering need closer matching",
+    "Wall4.25m/tower9.3m estimated; side/rear current detailed references incomplete"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/curaleaf-1736-final",
+    "support": "build/city-exteriors/curaleaf-1736-collision.json",
+    "walk": "build/city-exteriors/curaleaf-1736-walk.json",
+    "ownership": "build/city-exteriors/curaleaf-1736-ownership-audit.json",
+    "visualReview": "Three installed views reviewed, front/north repeated after replacing conspicuous spot pattern with subtle coherent plywood weathering and reducing tower panel contrast/oversize emblem.836support samples6walklegsPASS.8863authoredtri27batches.0.57MiBoptimized.40oldvisual/collisiontri removed. npmruncheckPASS. Static960x540p50~16.7ms; not a route performance claim."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/curaleaf1736-exterior.glb": "d61139974ca35a4a56deebfddbee59ecfe9b16aaee06044c2dfd6680a0677e74",
+      "build/strip-landmarks/curaleaf1736-exterior-collision.json": "ca677b140258eb50b46390da0207de18a15943935262dff0ec621501a130411b"
+    }
+  }
+}

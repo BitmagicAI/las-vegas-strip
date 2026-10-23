@@ -1,0 +1,6 @@
+storm-hero-rt: 6.0 s, turn rate median 3 / p95 6 / max 764 deg/s, ang.acc p95 2 deg/s2, speed median 0.3 m/s, steepest down 3 deg
+    TURN 6.0-6.0 s (max 764 deg/s)
+    JERK 5.9-6.0 s (max 7578 deg/s2)
+storm-arrival-rt: 22.0 s, turn rate median 4 / p95 11 / max 1296 deg/s, ang.acc p95 3 deg/s2, speed median 1.2 m/s, steepest down 17 deg
+    TURN 21.9-22.0 s (max 1296 deg/s)
+    JERK 21.9-21.9 s (max 12936 deg/s2)

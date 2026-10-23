@@ -1,0 +1,547 @@
+{
+  "id": "pedestrian-lifts",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1421481095",
+    "way/1421481096",
+    "way/1421481101",
+    "way/1421481079"
+  ],
+  "sources": [
+    "docs/project-records/city-exteriors-2026-10-12/pedestrian-lifts-research.json"
+  ],
+  "remaining": [
+    "Roof heights and cladding details estimated from references; not survey-accurate or photorealistic sign-off.",
+    "Harmon Atrium corridor finishes are approximate; escalator treads are static, collision uses walkable ramps.",
+    "Existing street paving retains narrow material/height seams near the east Harmon lift.",
+    "Crystals approach retains coarse neighboring wall finishes.",
+    "Static ultra 960x540 performance is not a 60fps driving/streaming result; full surrounding resort refinements remain."
+  ],
+  "stage": "Four installed lift structures, missing Harmon connections, actual up/down interactions and both door leaves reviewed.",
+  "eastLiftResearch": "docs/project-records/city-exteriors-2026-10-12/pedestrian-lifts-research.json",
+  "eastHarmonPass": {
+    "status": "refinement-deferred",
+    "mappedId": "way/1421481101",
+    "views": [
+      {
+        "name": "lift-east",
+        "eye": [
+          79,
+          8,
+          909.4
+        ],
+        "target": [
+          67,
+          4,
+          896.4
+        ],
+        "p": [
+          76,
+          1,
+          904.4
+        ],
+        "p50": 52.90000003576279,
+        "p95": 57.69999998807907
+      },
+      {
+        "name": "lift-landing",
+        "eye": [
+          65,
+          8,
+          886
+        ],
+        "target": [
+          67,
+          7.5,
+          896.4
+        ],
+        "p": [
+          66,
+          7,
+          890
+        ],
+        "p50": 25.80000001192093,
+        "p95": 29.399999976158142
+      },
+      {
+        "name": "bridge-aerial",
+        "eye": [
+          109,
+          37,
+          910
+        ],
+        "target": [
+          65,
+          5,
+          865
+        ],
+        "p": [
+          68,
+          7,
+          878
+        ],
+        "p50": 46.19999998807907,
+        "p95": 54.69999998807907
+      },
+      {
+        "name": "bridge-north-entry",
+        "eye": [
+          71,
+          8,
+          850
+        ],
+        "target": [
+          75,
+          7.7,
+          831
+        ],
+        "p": [
+          74,
+          7,
+          840
+        ],
+        "p50": 62.69999998807907,
+        "p95": 69.30000001192093
+      },
+      {
+        "name": "atrium-corridor",
+        "eye": [
+          75.5,
+          7.7,
+          828
+        ],
+        "target": [
+          76,
+          7.5,
+          809
+        ],
+        "p": [
+          75,
+          7,
+          827
+        ],
+        "p50": 63.39999997615814,
+        "p95": 71
+      },
+      {
+        "name": "west-landing",
+        "eye": [
+          24,
+          10,
+          790
+        ],
+        "target": [
+          41,
+          7.8,
+          781
+        ],
+        "p": [
+          35,
+          7,
+          779
+        ],
+        "p50": 30.80000001192093,
+        "p95": 36
+      },
+      {
+        "interaction": {
+          "upper": {
+            "x": 66.98200225830078,
+            "y": 6.024999885559082,
+            "z": 896.4400024414062
+          },
+          "lower": {
+            "x": 66.98200225830078,
+            "y": 0.16999998569488523,
+            "z": 896.4400024414062
+          },
+          "doors": 4,
+          "open": true,
+          "closed": true
+        }
+      }
+    ],
+    "evidence": "build/city-exteriors/harmon-east-lift-review",
+    "tests": [
+      "426 floor/roof support samples passed",
+      "14 bidirectional route reports passed including surrounding Planet Hollywood and city collision",
+      "Actual registered lift up/down actions passed: 5.855 m elevation difference",
+      "4 real Door instances opened and closed",
+      "Typecheck passed"
+    ],
+    "remaining": [
+      "Static escalator treads; not animated",
+      "Corridor follows mapped route and official Atrium plan but finishes approximate",
+      "West landing adjacent ground gaps visible",
+      "Closed/open door states tested; not yet physical traversal against dynamic closed doors",
+      "No full-driving 60 fps claim"
+    ],
+    "files": {
+      "build/strip-landmarks/harmonEastLift-exterior.glb": "cc698bc9d9d13c0bc2996b6ea4993415260a0c7c3184a3a5b05ea37a13626baa",
+      "build/strip-landmarks/harmonEastLift-exterior-collision.json": "e033f44db020a185354674c7f03d882a69aa0ab7c36e76891f086de2e4bffbfb",
+      "build/geographic-strip/access/harmon-bridge-atrium.json": "8a13a3e7ad72d147ebe2ddd35beb924a50d79dd375a2acf5f4e3da13af179de6",
+      "build/geographic-strip/access/way-1421481101.json": "d88128c2b55d0874bd364a71e77c2f00622dc9e00963674cfbe210491973bcaa"
+    }
+  },
+  "viewsInspected": [
+    "build/city-exteriors/pedestrian-lifts-review2/east-ground-door.png",
+    "build/city-exteriors/pedestrian-lifts-review2/west-landing-ground.png",
+    "build/city-exteriors/pedestrian-lifts-review2/cosmo-street.png",
+    "build/city-exteriors/pedestrian-lifts-review2/cosmo-upper.png",
+    "build/city-exteriors/pedestrian-lifts-review2/crystals-street.png",
+    "build/city-exteriors/pedestrian-lifts-review2/crystals-upper.png",
+    "build/city-exteriors/pedestrian-lifts-review2/park-street.png",
+    "build/city-exteriors/pedestrian-lifts-review2/park-upper.png",
+    "build/city-exteriors/harmon-lift-final-ground/east-ground-door.png",
+    "build/city-exteriors/harmon-lift-final-ground/west-landing-ground.png"
+  ],
+  "tests": {
+    "otherThreeSupport": 162,
+    "otherThreeBidirectionalRoutes": 12,
+    "harmonSupport": 435,
+    "harmonBidirectionalRoutes": 16,
+    "actualLiftAndDoors": [
+      {
+        "key": "cosmoPedestrianLift",
+        "upper": {
+          "x": -53.38018035888672,
+          "y": 6.024999885559082,
+          "z": 742.1893920898438
+        },
+        "lower": {
+          "x": -53.38018035888672,
+          "y": 0.16999998569488523,
+          "z": 742.1893920898438
+        },
+        "doors": 4,
+        "open": true,
+        "closed": true,
+        "blocked": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "openBlocked": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "key": "crystalsPedestrianLift",
+        "upper": {
+          "x": -39.113739013671875,
+          "y": 6.024999885559082,
+          "z": 847.2804565429688
+        },
+        "lower": {
+          "x": -39.113739013671875,
+          "y": 0.16999998569488523,
+          "z": 847.2804565429688
+        },
+        "doors": 4,
+        "open": true,
+        "closed": true,
+        "blocked": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "openBlocked": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "key": "parkPedestrianLift",
+        "upper": {
+          "x": -30.17396354675293,
+          "y": 6.024999885559082,
+          "z": 1291.8212890625
+        },
+        "lower": {
+          "x": -30.17396354675293,
+          "y": 0.16999998569488523,
+          "z": 1291.8212890625
+        },
+        "doors": 4,
+        "open": true,
+        "closed": true,
+        "blocked": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "openBlocked": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "key": "harmonEastLift",
+        "upper": {
+          "x": 66.98200225830078,
+          "y": 6.024999885559082,
+          "z": 896.4400024414062
+        },
+        "lower": {
+          "x": 66.98200225830078,
+          "y": 0.16999998569488523,
+          "z": 896.4400024414062
+        },
+        "doors": 4,
+        "open": true,
+        "closed": true,
+        "blocked": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "openBlocked": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    ],
+    "typecheck": "npm run check passed /tmp/pl-check.log",
+    "correctedHarness": "2026-10-21: include convexHull legacy colliders as well as trimeshes; all12 other-lift and16 Harmon bidirectional cases pass again. /tmp/pl-walk-full.log and /tmp/hel-walk-full.log"
+  },
+  "performance": {
+    "static960x540": [
+      {
+        "name": "east-ground-door",
+        "eye": [
+          66,
+          2,
+          890
+        ],
+        "target": [
+          68,
+          1.3,
+          894.5
+        ],
+        "p": [
+          66,
+          1,
+          890
+        ],
+        "p50": 22.299999952316284,
+        "p95": 27.19999998807907
+      },
+      {
+        "name": "west-landing-ground",
+        "eye": [
+          24,
+          10,
+          790
+        ],
+        "target": [
+          41,
+          7.8,
+          781
+        ],
+        "p": [
+          35,
+          7,
+          779
+        ],
+        "p50": 32.59999996423721,
+        "p95": 36.69999998807907
+      },
+      {
+        "name": "cosmo-street",
+        "eye": [
+          -41.4,
+          8,
+          755.2
+        ],
+        "target": [
+          -53.4,
+          4,
+          742.2
+        ],
+        "p": [
+          -44.4,
+          1,
+          750.2
+        ],
+        "p50": 41.39999997615814,
+        "p95": 48.19999998807907
+      },
+      {
+        "name": "cosmo-upper",
+        "eye": [
+          -46,
+          7.8,
+          741.5
+        ],
+        "target": [
+          -53.4,
+          7.4,
+          742.2
+        ],
+        "p": [
+          -48,
+          7,
+          741.8
+        ],
+        "p50": 23.19999998807907,
+        "p95": 26
+      },
+      {
+        "name": "crystals-street",
+        "eye": [
+          -27.1,
+          8,
+          860.3
+        ],
+        "target": [
+          -39.1,
+          4,
+          847.3
+        ],
+        "p": [
+          -30.1,
+          1,
+          855.3
+        ],
+        "p50": 43.10000002384186,
+        "p95": 49
+      },
+      {
+        "name": "crystals-upper",
+        "eye": [
+          -49,
+          7.8,
+          845.7
+        ],
+        "target": [
+          -39.1,
+          7.4,
+          847.3
+        ],
+        "p": [
+          -46.8,
+          7,
+          846
+        ],
+        "p50": 22.099999964237213,
+        "p95": 26.69999998807907
+      },
+      {
+        "name": "park-street",
+        "eye": [
+          -18.2,
+          8,
+          1304.8
+        ],
+        "target": [
+          -30.2,
+          4,
+          1291.8
+        ],
+        "p": [
+          -21.2,
+          1,
+          1299.8
+        ],
+        "p50": 42.89999997615814,
+        "p95": 47.09999996423721
+      },
+      {
+        "name": "park-upper",
+        "eye": [
+          -30,
+          7.8,
+          1300
+        ],
+        "target": [
+          -30.2,
+          7.5,
+          1291.8
+        ],
+        "p": [
+          -30,
+          7,
+          1298
+        ],
+        "p50": 71.30000001192093,
+        "p95": 79
+      }
+    ],
+    "finalGround": [
+      {
+        "name": "east-ground-door",
+        "eye": [
+          73,
+          2.4,
+          891
+        ],
+        "target": [
+          67.7,
+          1.4,
+          894.5
+        ],
+        "p": [
+          73,
+          1,
+          891
+        ],
+        "p50": 26.099999964237213,
+        "p95": 28.600000023841858
+      },
+      {
+        "name": "west-landing-ground",
+        "eye": [
+          24,
+          10,
+          790
+        ],
+        "target": [
+          41,
+          7.8,
+          781
+        ],
+        "p": [
+          35,
+          7,
+          779
+        ],
+        "p50": 32.60000002384186,
+        "p95": 36.799999952316284
+      }
+    ],
+    "baseline": "East Harmon first-pass views stored in eastHarmonPass; no matching pre-change baseline for other three."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/harmonEastLift-exterior.glb": "cf090e0eec454acc97143641b771cf1a0f891c4218fea9156dcfe3332ace0227",
+      "build/strip-landmarks/harmonEastLift-exterior-collision.json": "820dca78d166e5d57d45c6cb617b4d110f388dd1e47c233fcc487626d785889a",
+      "build/strip-landmarks/cosmoPedestrianLift-exterior.glb": "635680b899a89700cb50b675c86e51213c37ba63a5e01473c1ca7f7b91fe5e1f",
+      "build/strip-landmarks/cosmoPedestrianLift-exterior-collision.json": "b88eac6bf7b3a3df906c769293bc451150f57e3528c3e6616dfffb7765ccbd7a",
+      "build/strip-landmarks/crystalsPedestrianLift-exterior.glb": "d865bb604fdcbf41110361414e40f4ef9f6546de60b69142967db2705ea5fd8c",
+      "build/strip-landmarks/crystalsPedestrianLift-exterior-collision.json": "788ad0267c350c52baec49a5f9b26114067e04508df35a2800ac7ec17c3eca89",
+      "build/strip-landmarks/parkPedestrianLift-exterior.glb": "774226440a48d0e9948dc2b15b920eeab68f244d88b9b8b1d7f6ef2c8a2f2a38",
+      "build/strip-landmarks/parkPedestrianLift-exterior-collision.json": "f5a09a876ebf5d075b18ccb3463d72fb9319b52bac92e17add909f395a2aa5e2",
+      "src/work/GeographicPassages.ts": "e2a850dd3d9d007379044d99c801dd36c4c73bce2a230be16c185206de44376d",
+      "src/work/GeographicPassageGeometry.ts": "2f977f702e9f07316dcf7d6b0a523d67d103ea25aa68b0e380d49031901bc402"
+    }
+  },
+  "ownershipReports": [
+    "build/city-exteriors/harmon-east-lift-ownership-audit.json",
+    "build/city-exteriors/harmon-bridge-portals-cut.json",
+    "build/city-exteriors/crystals-lift-portal-cut.json",
+    "build/city-exteriors/cosmo-lift-rail-cut.json"
+  ]
+}

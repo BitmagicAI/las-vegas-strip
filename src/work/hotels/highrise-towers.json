@@ -1,0 +1,1301 @@
+[
+  {
+    "id": "bellagio-spa-1",
+    "name": "Bellagio Spa Tower",
+    "building": "bellagio-spa",
+    "origin": [
+      -391.8089818158913,
+      0.24,
+      568.5445006309549
+    ],
+    "yaw": -0.003203673205103446,
+    "linear": [
+      0.9999948682433867,
+      -0.0032036677249445192,
+      0.0032036677249445192,
+      0.9999948682433866
+    ],
+    "floors": 33,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "room",
+    "set": "bellagio-spa",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/114716301",
+    "lobbyFront": -45.391913114419864,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "mirage-1",
+    "name": "The Mirage",
+    "building": "mirage",
+    "origin": [
+      -296.924,
+      0.24,
+      -585.3149999999999
+    ],
+    "yaw": -1.5707963267948966,
+    "linear": [
+      1.2246467991473532e-16,
+      -1.0,
+      1.0,
+      1.2246467991473532e-16
+    ],
+    "floors": 28,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "mirage",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/27727143",
+    "lobbyFront": -248.14869607454665,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "treasure-island-1",
+    "name": "Treasure Island",
+    "building": "treasure-island",
+    "origin": [
+      107.93727471614518,
+      0.24,
+      -967.346202016213
+    ],
+    "yaw": 1.5507951534728384,
+    "linear": [
+      0.019998080055295242,
+      0.9997120138237345,
+      -0.8330933448531121,
+      0.02399769606635429
+    ],
+    "floors": 31,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "treasure-island",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/27727145",
+    "lobbyFront": -104.998499911726,
+    "windowWidth": 19.2,
+    "publicArrival": "ti",
+    "publicConnection": {
+      "side": 1,
+      "at": -59.25,
+      "width": 4.4
+    }
+  },
+  {
+    "id": "park-mgm-1",
+    "name": "Park MGM",
+    "building": "park-mgm",
+    "origin": [
+      -234.40320531586548,
+      0.24,
+      1330.0503321863864
+    ],
+    "yaw": 0.523598775598299,
+    "linear": [
+      0.8660254037844386,
+      0.5000000000000001,
+      -0.5000000000000001,
+      0.8660254037844386
+    ],
+    "floors": 30,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "park-mgm",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/27831695",
+    "lobbyFront": -121.65489071327809,
+    "windowWidth": 19.2,
+    "publicArrival": "park",
+    "publicConnection": {
+      "side": 1,
+      "at": -59.25,
+      "width": 4.4
+    }
+  },
+  {
+    "id": "luxor-1",
+    "name": "Luxor \u00b7 Tower 1",
+    "building": "luxor",
+    "origin": [
+      -320.4374719312743,
+      0.24,
+      2181.4635971193416
+    ],
+    "yaw": 0.005755572734541952,
+    "linear": [
+      0.8333237480389076,
+      0.004796308405200662,
+      -0.003996923671000552,
+      0.9999884976466891
+    ],
+    "floors": 22,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "luxor",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/136520124",
+    "lobbyFront": -89.38732833945254,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "luxor-2",
+    "name": "Luxor \u00b7 Tower 2",
+    "building": "luxor",
+    "origin": [
+      -182.47147193127432,
+      0.24,
+      2180.5845971193417
+    ],
+    "yaw": 0.005755572734541952,
+    "linear": [
+      0.8333237480389076,
+      0.004796308405200662,
+      -0.003996923671000552,
+      0.9999884976466891
+    ],
+    "floors": 22,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "luxor",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/136516669",
+    "lobbyFront": -89.38732833945254,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "mandalay-bay-1",
+    "name": "Mandalay Bay",
+    "building": "mandalay-bay",
+    "origin": [
+      -154.80108286813353,
+      0.24,
+      2689.085719005109
+    ],
+    "yaw": 2.0259153262127736,
+    "linear": [
+      -0.4219965794707592,
+      0.8623011058543124,
+      -0.7185842548785937,
+      -0.506395895364911
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "mandalay-bay",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/27858550",
+    "lobbyFront": -144.96449256571657,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "horseshoe-east-1",
+    "name": "Horseshoe East Tower",
+    "building": "horseshoe-east",
+    "origin": [
+      379.023,
+      0.24,
+      197.133
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -1.0,
+      0.0
+    ],
+    "floors": 22,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "horseshoe-east",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/27897922",
+    "lobbyFront": -125.35592483733257,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "encore-1",
+    "name": "Encore",
+    "building": "encore",
+    "origin": [
+      781.8932822393024,
+      0.24,
+      -1459.3246384628058
+    ],
+    "yaw": 0.9197963267948965,
+    "linear": [
+      0.6059821868087304,
+      0.795478214202318,
+      -0.795478214202318,
+      0.6059821868087304
+    ],
+    "floors": 53,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "encore",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/27910891",
+    "lobbyFront": -149.4583482631066,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "wynn-1",
+    "name": "Wynn",
+    "building": "wynn",
+    "origin": [
+      688.1856735785739,
+      0.24,
+      -1143.5877908655384
+    ],
+    "yaw": 0.19579165817001024,
+    "linear": [
+      0.8221794557104433,
+      0.16306488694706261,
+      -0.13588740578921885,
+      0.9866153468525318
+    ],
+    "floors": 51,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "wynn",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/205501268",
+    "lobbyFront": -228.68839251288566,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "rio-1",
+    "name": "Rio \u00b7 Tower 1",
+    "building": "rio",
+    "origin": [
+      -1206.042,
+      0.24,
+      -22.564
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -0.8333333333333334,
+      0.0
+    ],
+    "floors": 36,
+    "firstGuestFloor": 2,
+    "bays": 4,
+    "kind": "room",
+    "set": "rio",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134938477",
+    "lobbyFront": -57.2717162341321,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "rio-2",
+    "name": "Rio \u00b7 Tower 2",
+    "building": "rio",
+    "origin": [
+      -1357.0320250600398,
+      0.24,
+      -160.51943475171475
+    ],
+    "yaw": 0.7853981633974484,
+    "linear": [
+      0.7071067811865475,
+      0.7071067811865476,
+      -0.7071067811865476,
+      0.7071067811865475
+    ],
+    "floors": 20,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "rio",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/27998220",
+    "lobbyFront": -123.97492695941816,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "palazzo-1",
+    "name": "The Palazzo",
+    "building": "palazzo",
+    "origin": [
+      478.5,
+      0.24,
+      -869.53
+    ],
+    "yaw": 6.123233995736766e-17,
+    "linear": [
+      1.0,
+      6.123233995736766e-17,
+      -6.123233995736766e-17,
+      1.0
+    ],
+    "floors": 54,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "palazzo",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/30424125",
+    "lobbyFront": -112.75518644037277,
+    "windowWidth": 19.2,
+    "publicArrival": "palazzo",
+    "publicConnection": {
+      "side": -1,
+      "at": -59.25,
+      "width": 4.4
+    }
+  },
+  {
+    "id": "venetian-1",
+    "name": "The Venetian \u00b7 Tower 1",
+    "building": "venetian",
+    "origin": [
+      382.538,
+      0.24,
+      -618.39
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -1.0,
+      0.0
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "venetian",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/30618090",
+    "lobbyFront": -131.85423473867763,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "venetian-2",
+    "name": "The Venetian \u00b7 Tower 2",
+    "building": "venetian",
+    "origin": [
+      376.746,
+      0.24,
+      -492.704
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -1.0,
+      0.0
+    ],
+    "floors": 27,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "venetian",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/111322067",
+    "lobbyFront": -128.76033067605803,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "westgate-1",
+    "name": "Westgate",
+    "building": "westgate",
+    "origin": [
+      2046.575,
+      0.24,
+      -2236.7419999999997
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -1.0,
+      0.0
+    ],
+    "floors": 31,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "westgate",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/85402000",
+    "lobbyFront": -173.35543619791088,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "signature-1",
+    "name": "The Signature at MGM Grand \u00b7 Tower 1",
+    "building": "signature",
+    "origin": [
+      592.2511831822989,
+      0.24,
+      1005.2396444947078
+    ],
+    "yaw": 2.365796326794897,
+    "linear": [
+      -0.7138636049350369,
+      0.7002847660410396,
+      -0.7002847660410396,
+      -0.7138636049350369
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "room",
+    "set": "signature",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/95223232",
+    "lobbyFront": -87.62477959226081,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "signature-2",
+    "name": "The Signature at MGM Grand \u00b7 Tower 2",
+    "building": "signature",
+    "origin": [
+      594.9526042071964,
+      0.24,
+      929.1564497740991
+    ],
+    "yaw": 2.3517963267948967,
+    "linear": [
+      -0.7039899809802566,
+      0.7102099032535508,
+      -0.7102099032535508,
+      -0.7039899809802566
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "room",
+    "set": "signature",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/95223231",
+    "lobbyFront": -53.396995688656226,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "signature-3",
+    "name": "The Signature at MGM Grand \u00b7 Tower 3",
+    "building": "signature",
+    "origin": [
+      574.3693424207183,
+      0.24,
+      1089.6643758786936
+    ],
+    "yaw": 2.3557963267948967,
+    "linear": [
+      -0.706825181105366,
+      0.7073882691671998,
+      -0.7073882691671998,
+      -0.706825181105366
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "room",
+    "set": "signature",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/95223224",
+    "lobbyFront": -49.390560095966094,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "trump-1",
+    "name": "Trump International",
+    "building": "trump",
+    "origin": [
+      62.783,
+      0.24,
+      -1516.009
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -1.0,
+      0.0
+    ],
+    "floors": 54,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "trump",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/111380664",
+    "lobbyFront": -73.3340161745196,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "mgm-grand-1",
+    "name": "MGM Grand",
+    "building": "mgm-grand",
+    "origin": [
+      279.844,
+      0.24,
+      1511.858
+    ],
+    "yaw": -1.5707963267948966,
+    "linear": [
+      1.2246467991473532e-16,
+      -1.0,
+      1.0,
+      1.2246467991473532e-16
+    ],
+    "floors": 24,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "mgm-grand",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/115093734",
+    "lobbyFront": -169.35963508658472,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "new-york-1",
+    "name": "New York New York",
+    "building": "new-york",
+    "origin": [
+      -167.8136609406726,
+      0.24,
+      1533.2613413660058
+    ],
+    "yaw": 2.217622444116095,
+    "linear": [
+      -0.5340129337085907,
+      0.7071067811865474,
+      -0.5340129337085905,
+      -0.7071067811865477
+    ],
+    "floors": 23,
+    "firstGuestFloor": 2,
+    "bays": 8,
+    "kind": "room",
+    "set": "new-york",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/115661796",
+    "lobbyFront": -101.06517077214936,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "w-las-vegas-1",
+    "name": "W Las Vegas",
+    "building": "w-las-vegas",
+    "origin": [
+      -421.0684670804618,
+      0.24,
+      2582.296232178011
+    ],
+    "yaw": -0.021843346338815333,
+    "linear": [
+      0.8331952647635219,
+      -0.01820266785194852,
+      0.015168889876623768,
+      0.9998343177162262
+    ],
+    "floors": 41,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "w-las-vegas",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/118347176",
+    "lobbyFront": -73.29437575757416,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "harrahs-1",
+    "name": "Harrah\u2019s \u00b7 Tower 1",
+    "building": "harrahs",
+    "origin": [
+      164.06352715368953,
+      0.24,
+      -394.17118202791175
+    ],
+    "yaw": -0.021454483920888466,
+    "linear": [
+      0.7551091921206,
+      -0.016202964144304655,
+      0.012236613546480079,
+      0.999868723359691
+    ],
+    "floors": 19,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "room",
+    "set": "harrahs",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/128632721",
+    "lobbyFront": -49.39982744523871,
+    "windowWidth": 19.2,
+    "publicArrival": "harrahs",
+    "publicConnection": {
+      "side": -1,
+      "at": -11.25,
+      "width": 4.4
+    }
+  },
+  {
+    "id": "harrahs-2",
+    "name": "Harrah\u2019s \u00b7 Tower 2",
+    "building": "harrahs",
+    "origin": [
+      229.39078252757778,
+      0.24,
+      -378.63351128011584
+    ],
+    "yaw": -0.8760580505981934,
+    "linear": [
+      0.5892556509887896,
+      -0.7071067811865475,
+      0.5892556509887896,
+      0.7071067811865476
+    ],
+    "floors": 30,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "harrahs",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/111367828",
+    "lobbyFront": -78.02131671664269,
+    "windowWidth": 19.2,
+    "publicArrival": "harrahs",
+    "publicConnection": {
+      "side": -1,
+      "at": -35.25,
+      "width": 4.4
+    }
+  },
+  {
+    "id": "sky-1",
+    "name": "Sky Las Vegas",
+    "building": "sky",
+    "origin": [
+      1074.377021619333,
+      0.24,
+      -2509.376273689757
+    ],
+    "yaw": 0.26879632679489657,
+    "linear": [
+      0.9640912556020487,
+      0.265571178541018,
+      -0.265571178541018,
+      0.9640912556020487
+    ],
+    "floors": 42,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "apartment",
+    "set": "sky",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134068316",
+    "lobbyFront": -49.351031655204935,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "fontainebleau-1",
+    "name": "Fontainebleau",
+    "building": "fontainebleau",
+    "origin": [
+      1302.4010766004246,
+      0.24,
+      -2462.8487333479247
+    ],
+    "yaw": 2.0192304195474358,
+    "linear": [
+      -0.4166666666666671,
+      0.8660254037844384,
+      -0.721687836487032,
+      -0.5000000000000004
+    ],
+    "floors": 62,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "fontainebleau",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134068318",
+    "lobbyFront": -279.2068274458693,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "turnberry-place-1",
+    "name": "Turnberry Place \u00b7 Tower 1",
+    "building": "turnberry-place",
+    "origin": [
+      1474.6672221768713,
+      0.24,
+      -2465.9293695197143
+    ],
+    "yaw": 0.7837963267948966,
+    "linear": [
+      0.7082385430506252,
+      0.7059732049713556,
+      -0.7059732049713556,
+      0.7082385430506252
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 8,
+    "kind": "apartment",
+    "set": "turnberry-place",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134677425",
+    "lobbyFront": -57.39949161161946,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "turnberry-place-2",
+    "name": "Turnberry Place \u00b7 Tower 2",
+    "building": "turnberry-place",
+    "origin": [
+      1588.4880101700987,
+      0.24,
+      -2291.824578997962
+    ],
+    "yaw": 0.7837963267948966,
+    "linear": [
+      0.7082385430506252,
+      0.7059732049713556,
+      -0.7059732049713556,
+      0.7082385430506252
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 8,
+    "kind": "apartment",
+    "set": "turnberry-place",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134677429",
+    "lobbyFront": -57.398715906386414,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "turnberry-place-3",
+    "name": "Turnberry Place \u00b7 Tower 3",
+    "building": "turnberry-place",
+    "origin": [
+      1476.0890101700986,
+      0.24,
+      -2294.351578997962
+    ],
+    "yaw": 0.7837963267948966,
+    "linear": [
+      0.7082385430506252,
+      0.7059732049713556,
+      -0.7059732049713556,
+      0.7082385430506252
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 8,
+    "kind": "apartment",
+    "set": "turnberry-place",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134677416",
+    "lobbyFront": -57.398714601947475,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "turnberry-place-4",
+    "name": "Turnberry Place \u00b7 Tower 4",
+    "building": "turnberry-place",
+    "origin": [
+      1591.3300101700986,
+      0.24,
+      -2460.9855789979624
+    ],
+    "yaw": 0.7837963267948966,
+    "linear": [
+      0.7082385430506252,
+      0.7059732049713556,
+      -0.7059732049713556,
+      0.7082385430506252
+    ],
+    "floors": 40,
+    "firstGuestFloor": 2,
+    "bays": 8,
+    "kind": "apartment",
+    "set": "turnberry-place",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134677417",
+    "lobbyFront": -57.39955275416194,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "turnberry-towers-1",
+    "name": "Turnberry Towers \u00b7 Tower 1",
+    "building": "turnberry-towers",
+    "origin": [
+      1710.6562634273637,
+      0.24,
+      -2788.614271247462
+    ],
+    "yaw": -2.2176224441160945,
+    "linear": [
+      -0.5340129337085906,
+      -0.7071067811865477,
+      0.5340129337085907,
+      -0.7071067811865475
+    ],
+    "floors": 38,
+    "firstGuestFloor": 2,
+    "bays": 3,
+    "kind": "apartment",
+    "set": "turnberry-towers",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134918082",
+    "lobbyFront": -50.30429084175533,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "turnberry-towers-2",
+    "name": "Turnberry Towers \u00b7 Tower 2",
+    "building": "turnberry-towers",
+    "origin": [
+      1855.7202617259727,
+      0.24,
+      -2772.3583870213615
+    ],
+    "yaw": -1.0201803817615767,
+    "linear": [
+      0.4763906163777745,
+      -0.7759398647231929,
+      0.5859962520044947,
+      0.6308068851347083
+    ],
+    "floors": 38,
+    "firstGuestFloor": 2,
+    "bays": 3,
+    "kind": "apartment",
+    "set": "turnberry-towers",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134679980",
+    "lobbyFront": -45.700882423251315,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "allure-1",
+    "name": "Allure",
+    "building": "allure",
+    "origin": [
+      1264.310240749945,
+      0.24,
+      -3121.5471297933846
+    ],
+    "yaw": 1.3089969389957472,
+    "linear": [
+      0.25881904510252074,
+      0.9659258262890683,
+      -0.9659258262890684,
+      0.25881904510252074
+    ],
+    "floors": 39,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "apartment",
+    "set": "allure",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/134935559",
+    "lobbyFront": -47.79355683815685,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "circus-circus-1",
+    "name": "Circus Circus \u00b7 Tower 1",
+    "building": "circus-circus",
+    "origin": [
+      669.8273763612685,
+      0.24,
+      -2386.4838187910964
+    ],
+    "yaw": -0.5531412564326149,
+    "linear": [
+      0.7409996296594115,
+      -0.45751956279075734,
+      0.38126630232563113,
+      0.8891995555912937
+    ],
+    "floors": 25,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "circus-circus",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/135332955",
+    "lobbyFront": -168.2185927780643,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "circus-circus-2",
+    "name": "Circus Circus \u00b7 Tower 2",
+    "building": "circus-circus",
+    "origin": [
+      697.698472734432,
+      0.24,
+      -2518.8810616241385
+    ],
+    "yaw": -1.971757286316417,
+    "linear": [
+      -0.37784549746598695,
+      -0.8912997269517928,
+      0.7427497724598274,
+      -0.4534145969591843
+    ],
+    "floors": 24,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "circus-circus",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/135332957",
+    "lobbyFront": -96.54024004672411,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "strat-1",
+    "name": "The STRAT",
+    "building": "strat",
+    "origin": [
+      1485.1538068835487,
+      0.24,
+      -3549.083886849008
+    ],
+    "yaw": 2.0192304195474358,
+    "linear": [
+      -0.4166666666666671,
+      0.8660254037844384,
+      -0.721687836487032,
+      -0.5000000000000004
+    ],
+    "floors": 20,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "strat",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/543641711",
+    "lobbyFront": -84.77009309804279,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "sahara-1",
+    "name": "SAHARA",
+    "building": "sahara",
+    "origin": [
+      1520.2003396730413,
+      0.24,
+      -2922.581517819501
+    ],
+    "yaw": -0.06907764273165279,
+    "linear": [
+      0.7541795112654527,
+      -0.052179965322997575,
+      0.039406744644972125,
+      0.9986376976756339
+    ],
+    "floors": 20,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "room",
+    "set": "sahara",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/276426484",
+    "lobbyFront": -49.5499867819842,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "grand-chateau-1",
+    "name": "Marriott\u2019s Grand Chateau",
+    "building": "grand-chateau",
+    "origin": [
+      370.12341219148306,
+      0.24,
+      982.7097109987927
+    ],
+    "yaw": 0.7853981633974484,
+    "linear": [
+      0.7071067811865475,
+      0.7071067811865476,
+      -0.7071067811865476,
+      0.7071067811865475
+    ],
+    "floors": 32,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "grand-chateau",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/358923855",
+    "lobbyFront": -104.17632433721371,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "resorts-world-1",
+    "name": "Resorts World",
+    "building": "resorts-world",
+    "origin": [
+      687.4572093334626,
+      0.24,
+      -2026.345875656385
+    ],
+    "yaw": 0.8760580505981934,
+    "linear": [
+      0.5892556509887896,
+      0.7071067811865476,
+      -0.5892556509887896,
+      0.7071067811865475
+    ],
+    "floors": 56,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "resorts-world",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/316303708",
+    "lobbyFront": -188.783136146431,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "panorama-1",
+    "name": "Panorama Towers \u00b7 Tower 1",
+    "building": "panorama",
+    "origin": [
+      -860.0066410928894,
+      0.24,
+      1055.7707181134278
+    ],
+    "yaw": -0.1701429998084538,
+    "linear": [
+      0.8249217372570165,
+      -0.14172488651343854,
+      0.11810407209453212,
+      0.9899060847084197
+    ],
+    "floors": 27,
+    "firstGuestFloor": 2,
+    "bays": 8,
+    "kind": "apartment",
+    "set": "panorama",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/495545514",
+    "lobbyFront": -64.89443662027641,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "panorama-2",
+    "name": "Panorama Towers \u00b7 Tower 2",
+    "building": "panorama",
+    "origin": [
+      -857.97,
+      0.24,
+      959.676
+    ],
+    "yaw": 6.123233995736766e-17,
+    "linear": [
+      1.0,
+      6.123233995736766e-17,
+      -6.123233995736766e-17,
+      1.0
+    ],
+    "floors": 27,
+    "firstGuestFloor": 2,
+    "bays": 8,
+    "kind": "apartment",
+    "set": "panorama",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/495545499",
+    "lobbyFront": -61.34217041027648,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "martin-1",
+    "name": "The Martin",
+    "building": "martin",
+    "origin": [
+      -817.131,
+      0.24,
+      840.61
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -1.0,
+      0.0
+    ],
+    "floors": 43,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "apartment",
+    "set": "martin",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/495695274",
+    "lobbyFront": -47.79769858749819,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "springhill-1",
+    "name": "SpringHill Suites",
+    "building": "springhill",
+    "origin": [
+      1565.554,
+      0.24,
+      -2136.662
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -0.7552083333333334,
+      0.0
+    ],
+    "floors": 20,
+    "firstGuestFloor": 2,
+    "bays": 3,
+    "kind": "room",
+    "set": "springhill",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "way/543640999",
+    "lobbyFront": -27.027261156463737,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "elara-1",
+    "name": "Elara",
+    "building": "elara",
+    "origin": [
+      439.06,
+      0.24,
+      793.9789999999999
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0.0,
+      1.0,
+      -1.0,
+      0.0
+    ],
+    "floors": 50,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "elara",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "relation/5342155",
+    "lobbyFront": -228.1341548940449,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "hgv-boulevard-1",
+    "name": "Hilton Grand Vacations Boulevard",
+    "building": "hgv-boulevard",
+    "origin": [
+      1086.887745168841,
+      0.24,
+      -2589.7253526807676
+    ],
+    "yaw": 0.3110983932670389,
+    "linear": [
+      0.8049381885742236,
+      0.25881904510252074,
+      -0.21568253758543396,
+      0.9659258262890683
+    ],
+    "floors": 24,
+    "firstGuestFloor": 2,
+    "bays": 10,
+    "kind": "room",
+    "set": "hgv-boulevard",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "relation/6138877",
+    "lobbyFront": -73.66609698934849,
+    "windowWidth": 19.2
+  },
+  {
+    "id": "palms-1",
+    "name": "Palms",
+    "building": "palms",
+    "origin": [
+      -1824,
+      0.24,
+      120
+    ],
+    "yaw": 1.5707963267948966,
+    "linear": [
+      0,
+      1,
+      -1,
+      0
+    ],
+    "floors": 21,
+    "firstGuestFloor": 2,
+    "bays": 14,
+    "kind": "room",
+    "set": "palms",
+    "roomDepth": 7.6,
+    "lazy": true,
+    "source": "relation/7655651",
+    "lobbyFront": -102.38999049180347,
+    "windowWidth": 19.2
+  }
+]

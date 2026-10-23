@@ -1,0 +1,49 @@
+{
+  "id": "cvs-horseshoe-east",
+  "status": "refinement-deferred",
+  "parentRecord": "cvs-horseshoe.json",
+  "scope": "Remaining eastern portion of way/543422869: replace false five-metre parking shell with a ground-level service apron; preserve the tower and roads.",
+  "source": "Google Maps aerial at36.11335,-115.17202, inspected2026-10-21; image date unknown, construction at tower.",
+  "estimatedDimensions": {
+    "apronM": 0.18,
+    "rearServiceDoor": "Inferred service detailing; not photographed exact openings."
+  },
+  "beforeViews": "build/city-exteriors/flamingo-cvs-review",
+  "remaining": [
+    "Exact service door positions and apron datum unmeasured.",
+    "Existing white arbor and generic clutter at parent hotel service gap require reference-led parent cleanup.",
+    "Exact facade, shop rear service detailing and apron finish remain approximate."
+  ],
+  "iterationReview": {
+    "captures": "build/city-exteriors/cvs-east-final",
+    "finding": "All3views inspected: original shell cut left10 sloped triangle fragments from earlier x68 clipping. Corrected to range-aware0..5m matching; secondreview pending.",
+    "approachTest": "Outside approach at118,315 revealed pre-existing missing pavement collision. Local pavement fill prepared, preserves existing visual/physical surfaces independently."
+  },
+  "installedReview": {
+    "date": "2026-10-21",
+    "captures": "build/city-exteriors/cvs-east-final3",
+    "results": "build/city-exteriors/cvs-east-final3/results.json",
+    "finding": "All three installed views inspected. Raised shell and triangular remnants removed; service gap and sidewalk approach open. Parent facade branding, white arbor and legacy props remain separate refinement issues.",
+    "tests": {
+      "walking": "build/city-exteriors/cvs-east-apron-stair-test.json",
+      "walkingCases": 10,
+      "passed": true,
+      "support": "build/city-exteriors/cvs-east-apron-support.json",
+      "supportSamples": 449
+    },
+    "performanceLimit": "Static960x540 ultra views only; not a driving or whole-city60fps claim."
+  },
+  "cutTotals": {
+    "visualTriangles": 236,
+    "collisionTriangles": 236,
+    "method": "Two current-data targeted cuts:226 then10 intermediate-height fragments. No old snapshot restored."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/cvsHorseshoe-exterior.glb": "9b6458995a9c14de7e5e96bfebf5cffab0bb7840a99007d92de3e6e5212821d1",
+      "tools/strip-landmarks/cvs_horseshoe.py": "40b30bc1c497e93a1fffbfcf06ae0b5734604c6e34af79ce38161f15160cd25c",
+      "tools/city-exteriors/replace-cvs-east-apron.py": "f4932a1a67e5eecd9349fb72752d4920a6b4d11deb57affc26a1526effdab403"
+    }
+  },
+  "followup": "2026-10-22 Versailles south decorative facade revised and incorrect gold emblems removed; see horseshoe-versailles.json#frontageRefinement20261021. Legacy arbor still outstanding."
+}

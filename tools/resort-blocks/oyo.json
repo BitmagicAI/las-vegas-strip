@@ -1,0 +1,77 @@
+{
+  "id": "oyo",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.oyolasvegas.com/assets/images/gallery1.jpg",
+      "review": "Official night front visually reviewed; red illumination not baked into facade.",
+      "accessDate": "2026-10-13",
+      "imageDate": null
+    },
+    {
+      "url": "https://www.oyolasvegas.com/assets/images/gal48.jpg",
+      "review": "Official driveway visually reviewed; tall rectangular OYO pylon, covered entrance edge.",
+      "accessDate": "2026-10-13",
+      "imageDate": null
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0994,-115.1678,650a,250d,35y,220h,65t,0r",
+      "review": "Front aerial visually reviewed: low casino, short east-west tower, open west garage, grey-blue mansard roofs and palm end murals.",
+      "accessDate": "2026-10-13",
+      "imageDate": null
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0994,-115.1678,650a,250d,35y,40h,65t,0r",
+      "review": "Rear aerial visually reviewed: taller north-south tower, east pool court, narrow window groups and white piers.",
+      "accessDate": "2026-10-13",
+      "imageDate": null
+    }
+  ],
+  "remaining": [
+    "Exact mansard and facade group proportions, mural fidelity",
+    "Public casino entrance onward route",
+    "Pool landscaping and pylon signage",
+    "Measured route performance"
+  ],
+  "baseline": [
+    "build/city-exteriors/oyo-before/oyo-front.png",
+    "build/city-exteriors/oyo-before/oyo-back.png",
+    "build/city-exteriors/oyo-before/oyo-entry.png"
+  ],
+  "baselineReview": "All three inspected: entirely blank towers, casino and garage.",
+  "dimensions": "Mapped body heights 6/32/59/20/5m retained; crown profile, pool and frontage bay sizes estimated from images.",
+  "implementation": {
+    "ids": [
+      "way/118361200",
+      "way/118376294",
+      "way/118376296",
+      "way/27858541",
+      "way/118354226",
+      "way/118353929"
+    ],
+    "triangles": 12587,
+    "batches": 11,
+    "tests": "2762 roof/deck interior support samples passed. Initial all-triangle test sampled caps buried in parapets; replaced with explicit interior grid.",
+    "ownership": "BuildingSurfaces clips parent/tower intersections; mapped replacement IDs removed from city only."
+  },
+  "corrections": "First installed review: removed duplicate parking floor roof faces; replaced old solid canopy way/118353929 with mapped canopy roof/posts; closed mansard corners with continuous offset rings; curved palm mural leaves.",
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/oyo-final/oyo-front.png",
+      "build/city-exteriors/oyo-final/oyo-back.png",
+      "build/city-exteriors/oyo-final/oyo-entry.png"
+    ],
+    "review": "All three installed views inspected. Old solid arrival box is gone, leaving roof/posts; towers and garage have distinct facades. No duplicate garage roof emitted after correction. Mansard/mural fidelity still approximate, pool court sparse, no pylon or public onward lobby connection."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/oyo.py": "4938e874b0d2125b5b25d5654cd7fd6fec7b22e3ed89031bf88e36d7a32aa66f",
+      "build/optimized/build/strip-landmarks/oyoExterior-exterior.glb": "995c5aef1ea2b8a309a527fd997b0cc95af9bede471dc7bc812ba8ab386716a8"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed59fps spawn3011bodies; not route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-oyo.log"
+  }
+}

@@ -1,0 +1,318 @@
+[
+  {
+    "id": "bellagio-north",
+    "name": "Bellagio \u00b7 Arrival guest wing",
+    "building": "bellagio",
+    "origin": [
+      -304.0,
+      0.075,
+      253.4736842105263
+    ],
+    "yaw": 3.141592653589793,
+    "floors": 23,
+    "firstGuestFloor": 3,
+    "bays": 8,
+    "kind": "room",
+    "set": "bellagio",
+    "linear": [
+      -1.3076923076923077,
+      1.6014611988850004e-16,
+      -1.5146947252612002e-16,
+      -1.236842105263158
+    ]
+  },
+  {
+    "id": "bellagio-south",
+    "name": "Bellagio \u00b7 Gallery guest wing",
+    "building": "bellagio",
+    "origin": [
+      -304.0,
+      0.075,
+      392.0
+    ],
+    "yaw": 0.0,
+    "floors": 23,
+    "firstGuestFloor": 3,
+    "bays": 8,
+    "kind": "room",
+    "set": "bellagio",
+    "linear": [
+      1.3076923076923077,
+      0.0,
+      -0.0,
+      1.236842105263158
+    ]
+  },
+  {
+    "id": "veer-east",
+    "name": "Veer \u00b7 East residences",
+    "building": "veer",
+    "origin": [
+      -131.16666666666669,
+      0.075,
+      957.0000072438096
+    ],
+    "yaw": -1.5707963267948966,
+    "floors": 40,
+    "firstGuestFloor": 6,
+    "bays": 4,
+    "kind": "apartment",
+    "lean": [
+      0.087488663525924,
+      0
+    ],
+    "set": "veer",
+    "linear": [
+      5.102694996447305e-17,
+      -0.8333333333333334,
+      1.7857142857142858,
+      1.0934346420958511e-16
+    ]
+  },
+  {
+    "id": "veer-west",
+    "name": "Veer \u00b7 West residences",
+    "building": "veer",
+    "origin": [
+      -189.16666666666669,
+      0.075,
+      955.999992466438
+    ],
+    "yaw": -1.5707963267948966,
+    "floors": 40,
+    "firstGuestFloor": 6,
+    "bays": 4,
+    "kind": "apartment",
+    "lean": [
+      -0.087488663525924,
+      0
+    ],
+    "set": "veer",
+    "linear": [
+      5.102694996447305e-17,
+      -0.8333333333333334,
+      1.8571428571428572,
+      1.1371720277796851e-16
+    ]
+  },
+  {
+    "id": "paris-bordeaux",
+    "name": "Paris \u00b7 Bordeaux guest wing",
+    "building": "paris",
+    "origin": [
+      195.9142857142857,
+      0.075,
+      433.1666666666667
+    ],
+    "yaw": -0.6911935275387736,
+    "floors": 26,
+    "firstGuestFloor": 3,
+    "bays": 5,
+    "kind": "room",
+    "set": "paris",
+    "roomDepth": 6.1,
+    "linear": [
+      1.2668714478218075,
+      -0.7314285714285713,
+      0.5104166666666665,
+      0.8840675996966144
+    ]
+  },
+  {
+    "id": "caesars-palace",
+    "name": "Caesars Palace \u00b7 Palace guest wing",
+    "building": "caesars",
+    "origin": [
+      -280,
+      0.075,
+      -82
+    ],
+    "yaw": 1.5707963267948966,
+    "floors": 24,
+    "firstGuestFloor": 3,
+    "bays": 8,
+    "kind": "room",
+    "set": "caesars",
+    "roomDepth": 7.8,
+    "linear": [
+      0,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "id": "cosmo-boulevard",
+    "name": "Cosmopolitan \u00b7 Boulevard guest wing",
+    "building": "cosmopolitan",
+    "origin": [
+      -120,
+      22.64,
+      647
+    ],
+    "yaw": -1.5707963267948966,
+    "floors": 44,
+    "firstGuestFloor": 2,
+    "bays": 6,
+    "kind": "room",
+    "set": "cosmopolitan",
+    "roomDepth": 8.1,
+    "source": "guest-boulevard"
+  },
+  {
+    "id": "cosmo-chelsea",
+    "name": "Cosmopolitan \u00b7 Chelsea guest wing",
+    "building": "cosmopolitan",
+    "origin": [
+      -322,
+      22.64,
+      668
+    ],
+    "yaw": -1.5707963267948966,
+    "floors": 44,
+    "firstGuestFloor": 2,
+    "bays": 7,
+    "kind": "room",
+    "set": "cosmopolitan",
+    "roomDepth": 8.1,
+    "source": "guest-chelsea"
+  },
+  {
+    "id": "flamingo-north",
+    "name": "Flamingo \u00b7 South guest wing",
+    "building": "flamingo",
+    "origin": [
+      220,
+      0.075,
+      33
+    ],
+    "yaw": 1.5707963267948966,
+    "floors": 18,
+    "firstGuestFloor": 4,
+    "bays": 12,
+    "kind": "room",
+    "set": "flamingo",
+    "roomDepth": 5.1,
+    "linear": [
+      0,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "id": "horseshoe-resort",
+    "name": "Versailles \u00b7 Preserved guest wing",
+    "building": "horseshoe",
+    "origin": [
+      120,
+      0.075,
+      286
+    ],
+    "yaw": 1.5707963267948966,
+    "floors": 20,
+    "firstGuestFloor": 4,
+    "bays": 2,
+    "kind": "room",
+    "set": "horseshoe",
+    "roomDepth": 6.5,
+    "linear": [
+      0,
+      1,
+      -1,
+      0
+    ]
+  },
+  {
+    "id": "planet-hollywood-south",
+    "name": "Planet Hollywood \u00b7 South guest wing",
+    "building": "planet-hollywood",
+    "origin": [
+      169.79142651296831,
+      0.075,
+      734.8121311475411
+    ],
+    "yaw": 0.13631452420123039,
+    "floors": 27,
+    "firstGuestFloor": 4,
+    "bays": 7,
+    "kind": "room",
+    "set": "planet-hollywood",
+    "roomDepth": 6.1,
+    "linear": [
+      1.17218379530054,
+      0.28685295336127553,
+      -0.5117750536190768,
+      2.0912959677142062
+    ]
+  },
+  {
+    "id": "aria-south",
+    "name": "ARIA \u00b7 South guest wing",
+    "building": "aria",
+    "origin": [
+      -382.4228158528574,
+      0.075,
+      998.9629629629629
+    ],
+    "yaw": 0.1402011351130405,
+    "floors": 50,
+    "firstGuestFloor": 4,
+    "bays": 12,
+    "kind": "room",
+    "set": "aria",
+    "roomDepth": 8.1,
+    "linear": [
+      1.1287826142861683,
+      0.22881556382352133,
+      -0.3286628435375087,
+      1.6213447090213133
+    ]
+  },
+  {
+    "id": "vdara-residences",
+    "name": "Vdara \u00b7 Studio suites",
+    "building": "vdara",
+    "origin": [
+      -443.1404118748328,
+      0.075,
+      741.1235480464625
+    ],
+    "yaw": 1.5707963267948966,
+    "floors": 46,
+    "firstGuestFloor": 4,
+    "bays": 5,
+    "kind": "room",
+    "set": "vdara",
+    "roomDepth": 7.2,
+    "linear": [
+      7.314909114992659e-17,
+      1.1946153160381563,
+      -0.7602956705385424,
+      4.655468296653083e-17
+    ]
+  },
+  {
+    "id": "waldorf-residences",
+    "name": "Waldorf Astoria \u00b7 Guest residences",
+    "building": "waldorf",
+    "origin": [
+      -118.9290141229508,
+      0.075,
+      1106.6128259593575
+    ],
+    "yaw": 0.4886921905584123,
+    "floors": 45,
+    "firstGuestFloor": 4,
+    "bays": 9,
+    "kind": "room",
+    "set": "waldorf",
+    "roomDepth": 8.1,
+    "linear": [
+      0.7248729001710281,
+      0.4089379801917215,
+      -0.3854217577767452,
+      0.7691004820318448
+    ]
+  }
+]

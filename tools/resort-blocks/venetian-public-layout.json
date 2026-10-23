@@ -1,0 +1,391 @@
+{
+  "version": 1,
+  "scope": "Semantic source-backed adjacency only; intermediate corridors omitted. Not a runtime route graph.",
+  "sources": {
+    "official-resort-map": "https://www.venetianlasvegas.com/content/dam/venetian/resort/map.pdf",
+    "official-meeting-floorplans": "https://www.venetianlasvegas.com/content/dam/vlv/meetings/downloadable-pdfs/M_FloorPlans.pdf",
+    "official-pool-map": "https://www.venetianlasvegas.com/content/dam/vlvweb/poolsandspas/pool-map.pdf",
+    "venetian-luxury-king-official": "https://www.venetianlasvegas.com/hotel/the-venetian/luxury-king-suite.html",
+    "palazzo-luxury-king-official": "https://www.venetianlasvegas.com/hotel/the-palazzo/luxury-king-suite.html"
+  },
+  "nodes": [
+    {
+      "id": "venetian-arrivals",
+      "floorLabel": "resort-1",
+      "name": "Venetian arrivals / front desk / Armillary Sphere",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "venetian-casino",
+      "floorLabel": "resort-1",
+      "name": "Venetian casino",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "restaurant-row",
+      "floorLabel": "resort-1",
+      "name": "Restaurant Row",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "waterfall-ground",
+      "floorLabel": "resort-1",
+      "name": "Waterfall Atrium ground",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "palazzo-casino",
+      "floorLabel": "resort-1",
+      "name": "Palazzo casino",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "palazzo-arrivals",
+      "floorLabel": "resort-1",
+      "name": "Palazzo front desk / arrivals",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "clocktower-entry",
+      "floorLabel": "resort-1",
+      "name": "Clock Tower entrance",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "canal-entry",
+      "floorLabel": "resort-1",
+      "name": "Canal-front casino entrance",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "waterfall-entry",
+      "floorLabel": "resort-1",
+      "name": "Waterfall Atrium street entrance",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "sands-entry",
+      "floorLabel": "resort-1",
+      "name": "Sands Avenue bridge entrance",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "convention-ground",
+      "floorLabel": "resort-1",
+      "name": "Convention / ground transportation",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "rialto",
+      "floorLabel": "resort-2",
+      "name": "Rialto bridge",
+      "source": "official-resort-map",
+      "page": 2,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "scenic-overlook",
+      "floorLabel": "resort-2",
+      "name": "Scenic Overlook / frontage retail",
+      "source": "official-resort-map",
+      "page": 2,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "canal-streets",
+      "floorLabel": "resort-2",
+      "name": "Grand Canal branching shopping streets",
+      "source": "official-resort-map",
+      "page": 2,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "st-marks",
+      "floorLabel": "resort-2",
+      "name": "St Mark\u2019s Square",
+      "source": "official-resort-map",
+      "page": 2,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "waterfall-upper",
+      "floorLabel": "resort-2",
+      "name": "Waterfall Atrium upper",
+      "source": "official-resort-map",
+      "page": 2,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "palazzo-shoppes",
+      "floorLabel": "resort-2",
+      "name": "Palazzo shopping / Wishing Tree",
+      "source": "official-resort-map",
+      "page": 2,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "palazzo-upper-core",
+      "floorLabel": "resort-2",
+      "name": "Palazzo upper guest lift core",
+      "source": "official-resort-map",
+      "page": 2,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "palazzo-lower",
+      "floorLabel": "Palazzo-lower",
+      "name": "Palazzo lower porte-cochere",
+      "source": "official-resort-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "convention-shoppes-link",
+      "floorLabel": "convention-3",
+      "name": "Convention west foyer to Grand Canal Shoppes",
+      "source": "official-meeting-floorplans",
+      "page": 11,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "venetian-pools",
+      "floorLabel": "Venetian-North-4",
+      "name": "Venetian main pool deck",
+      "source": "official-pool-map",
+      "page": 1,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "palazzo-pools",
+      "floorLabel": "Palazzo-3",
+      "name": "Palazzo pool deck",
+      "source": "official-pool-map",
+      "page": 3,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    },
+    {
+      "id": "south-pool-garden",
+      "floorLabel": "Venetian-South-10",
+      "name": "South Tower Pool Garden",
+      "source": "official-pool-map",
+      "page": 2,
+      "physicalElevationM": null,
+      "worldAnchor": null,
+      "status": "reference-topology-not-built"
+    }
+  ],
+  "connections": [
+    {
+      "a": "venetian-arrivals",
+      "b": "venetian-casino",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "canal-entry",
+      "b": "venetian-casino",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "clocktower-entry",
+      "b": "venetian-casino",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "venetian-casino",
+      "b": "restaurant-row",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "restaurant-row",
+      "b": "waterfall-ground",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "waterfall-ground",
+      "b": "palazzo-casino",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "waterfall-entry",
+      "b": "waterfall-ground",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "palazzo-casino",
+      "b": "palazzo-arrivals",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "sands-entry",
+      "b": "palazzo-arrivals",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "restaurant-row",
+      "b": "convention-ground",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "rialto",
+      "b": "scenic-overlook",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "scenic-overlook",
+      "b": "canal-streets",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "canal-streets",
+      "b": "st-marks",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "canal-streets",
+      "b": "waterfall-upper",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "waterfall-upper",
+      "b": "palazzo-shoppes",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "palazzo-shoppes",
+      "b": "palazzo-upper-core",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "canal-streets",
+      "b": "convention-shoppes-link",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    },
+    {
+      "a": "venetian-pools",
+      "b": "palazzo-pools",
+      "kind": "public-connected-route",
+      "status": "requires-registration-and-traversal"
+    }
+  ],
+  "verticalConnections": "Lift/escalator endpoint pairing and physical heights require survey; no invented global floor increment.",
+  "existingGameAnchors": {
+    "rialtoPortal": [
+      225.85,
+      6.24,
+      -644
+    ],
+    "eastShoppesTerrace": [
+      438.6,
+      7.24,
+      -734
+    ]
+  },
+  "evidenceReport": "docs/project-records/venetian-floorplans-2026-10-09.md",
+  "guestSuiteReferences": [
+    {
+      "id": "venetian-luxury-king-official",
+      "hotel": "venetian",
+      "kind": "individual-suite-plan",
+      "publishedAreaSqFt": 650,
+      "publishedBathroomAreaSqFt": 130,
+      "source": "https://www.venetianlasvegas.com/hotel/the-venetian/luxury-king-suite.html",
+      "image": "docs/project-records/venetian-exterior-2026-10-09/venetian-luxury-king-floorplan.png",
+      "status": "visually-reviewed-template-not-rebuilt",
+      "limitations": "No overall linear dimensions or whole guest-floor corridor/core plan; variant accessibility and lounge level require separate checking."
+    },
+    {
+      "id": "palazzo-luxury-king-official",
+      "hotel": "palazzo",
+      "kind": "individual-suite-plan",
+      "publishedAreaSqFt": 720,
+      "publishedBathroomAreaSqFt": 130,
+      "source": "https://www.venetianlasvegas.com/hotel/the-palazzo/luxury-king-suite.html",
+      "image": "docs/project-records/venetian-exterior-2026-10-09/palazzo-luxury-king-floorplan.png",
+      "status": "visually-reviewed-template-not-rebuilt",
+      "limitations": "No overall linear dimensions or whole guest-floor corridor/core plan; variant accessibility and lounge level require separate checking."
+    }
+  ]
+}

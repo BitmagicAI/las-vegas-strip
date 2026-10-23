@@ -1,0 +1,155 @@
+{
+  "id": "rexford-place-west",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236621163",
+    "way/1236621164",
+    "way/1236621165",
+    "way/1236621166",
+    "way/1236621167",
+    "way/1236621168",
+    "way/1236621169",
+    "way/1236621170",
+    "way/1236621171",
+    "way/1236621172",
+    "way/1236621180"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15231,-115.14998&zoom=20&basemap=satellite",
+      "review": "Rexford Place west houses; mostly single-storey hip roofs, fenced front gardens and narrow driveways. Adjacent Houssels Ave homes separate."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15231,-115.15035&heading=270&pitch=2",
+      "imageDate": "February2020",
+      "review": "1514 area: single-storey cream and tan houses, broad windows, gravel yards, block fences and palms"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15299,-115.14988&heading=245&pitch=2",
+      "imageDate": "March2015",
+      "review": "North end: white plaster, shallow hip roof, gravel and driveway, small palms"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15157,-115.15030&heading=270&pitch=2",
+      "imageDate": "February2020",
+      "review": "South end: cream/white houses, thin metal awnings and chainlink/block fences; one neighboring home blurred and not used as facade evidence"
+    }
+  ],
+  "remaining": [
+    "2015/2020 street references may not reflect current finishes; exact windows and doors inferred",
+    "Palm-heavy landscape not reproduced; four broadleaf trees only",
+    "Full property yards and driveways still need coverage to sidewalk; ground outside authored patches remains cracked dirt",
+    "Roof proportions approximate, private rear features not modeled",
+    "No interiors, neutral daylight review or full driving benchmark"
+  ],
+  "triangles": 14382,
+  "batches": 27,
+  "optimizedMiB": 12.16,
+  "metricScope": "Authored triangles exclude4existingCC0tree instances",
+  "tests": [
+    "1653 roof-support samples PASS",
+    "44 entrance approach legs in both directions PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/rexford-place-west-final2/rexford-west-north.png",
+    "build/city-exteriors/rexford-place-west-final2/rexford-west-middle.png",
+    "build/city-exteriors/rexford-place-west-final2/rexford-west-south.png",
+    "build/city-exteriors/rexford-place-west-final2/rexford-west-roof.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "rexford-west-north",
+        "eye": [
+          2088,
+          3,
+          -4110
+        ],
+        "target": [
+          2048,
+          1.8,
+          -4115
+        ],
+        "p": [
+          2070,
+          2,
+          -4110
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.899999976158142
+      },
+      {
+        "name": "rexford-west-middle",
+        "eye": [
+          2045,
+          3,
+          -4033
+        ],
+        "target": [
+          2010,
+          1.8,
+          -4037
+        ],
+        "p": [
+          2029,
+          2,
+          -4035
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "rexford-west-south",
+        "eye": [
+          2036,
+          3,
+          -3964
+        ],
+        "target": [
+          2000,
+          1.8,
+          -3960
+        ],
+        "p": [
+          2017,
+          2,
+          -3964
+        ],
+        "p50": 16.5,
+        "p95": 19.100000023841858
+      },
+      {
+        "name": "rexford-west-roof",
+        "eye": [
+          2100,
+          80,
+          -3940
+        ],
+        "target": [
+          2020,
+          2,
+          -4034
+        ],
+        "p": [
+          2040,
+          2,
+          -4040
+        ],
+        "p50": 16.599999964237213,
+        "p95": 18.899999976158142
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 200,
+    "colliderTrianglesRemoved": 200,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in RexfordPlaceWest mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/rexfordPlaceWest-exterior.glb": "a0d69ce1eeda57ad2b00ac34e22ff26f596607c11d255904aa3db42579d72965",
+      "build/strip-landmarks/rexfordPlaceWest-exterior-collision.json": "fbea5d4fb15fe0cd18a0eb6d5b9d3ae7aeb5cb27086fba307b0abd804a4e437b"
+    }
+  }
+}

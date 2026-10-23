@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1123,-115.1702,640a,430d,35y,0h,0t,0r",
+      "view": "Top down",
+      "imageryDate": "2022-11-09",
+      "visuallyInspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1123,-115.1693,640a,420d,35y,270h,45t,0r",
+      "view": "East oblique",
+      "imageryDate": "2022-11-09",
+      "visuallyInspected": true
+    },
+    {
+      "url": "https://assets.caesars.com/m/1fbb575399575a44/original/Paris-Las-Vegas-Meeting-Facilities-Map-and-Capacities.pdf",
+      "date": "2024-04-25 PDF metadata",
+      "local": "paris-meeting-plan.pdf",
+      "visuallyInspected": "page2 map; capacity text read"
+    }
+  ],
+  "observations": [
+    "Plain gray membrane conference roof east of Xtower; small plant units along edges; garage to east is a separate previous pass.",
+    "Owner plan places loading dock on opposite side ofballroom fromfoyer; do notinvent glazed storefronts onblank servicewalls."
+  ],
+  "uncertainties": [
+    "Original10.65mroof datum retained; published30\u201334ftceilings constrain room dimensions but do notsurvey physical roofelevation.",
+    "Seam,plant,andparapet locations photograph-estimated.",
+    "Baseline east andnorthcameras occluded, notvalid visualevidence; finalcameras corrected."
+  ]
+}

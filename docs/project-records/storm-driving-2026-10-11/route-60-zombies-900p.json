@@ -1,0 +1,152 @@
+{
+  "conditions": "Ultra, headless Chrome WebGPU/Metal, gameplay LOD, roaming crowd, no recorder, natural timestep. Dimensions recorded per pass.",
+  "results": [
+    {
+      "pass": 1,
+      "setup": {
+        "canvas": [
+          1920,
+          1080
+        ],
+        "pixelRatio": 1,
+        "backend": "WebGPUBackend",
+        "fixedDelta": false,
+        "population": 60,
+        "rendererInfo": {}
+      },
+      "canvas": [
+        1600,
+        900
+      ],
+      "film": {
+        "name": "storm",
+        "frame": 2620,
+        "t": 45,
+        "dt": 0.016200000047683717,
+        "subframes": 1,
+        "step": 1,
+        "steps": 1,
+        "done": true,
+        "warnings": []
+      },
+      "impacts": 31,
+      "peakRagdolls": 14,
+      "all": {
+        "frames": 2908,
+        "wallSeconds": 49.80390000009537,
+        "averageFps": 58.389001664416476,
+        "frameMs": {
+          "median": 16.59999990463257,
+          "p95": 21.40000009536743,
+          "p99": 34.5,
+          "max": 97.70000004768372
+        },
+        "framesOver50ms": 4,
+        "framesOver100ms": 0,
+        "peakRagdolls": 14
+      },
+      "afterInitial3s": {
+        "frames": 2745,
+        "wallSeconds": 46.8965,
+        "averageFps": 58.533152793918525,
+        "frameMs": {
+          "median": 16.59999990463257,
+          "p95": 20.700000047683716,
+          "p99": 33.60000014305115,
+          "max": 97.70000004768372
+        },
+        "framesOver50ms": 3,
+        "framesOver100ms": 0,
+        "peakRagdolls": 14
+      },
+      "bySceneTime": [
+        {
+          "name": "Harmon",
+          "from": 3,
+          "to": 12,
+          "frames": 535,
+          "wallSeconds": 9.199399999856949,
+          "averageFps": 58.15596669438434,
+          "frameMs": {
+            "median": 16.700000047683716,
+            "p95": 19,
+            "p99": 33.5,
+            "max": 97.70000004768372
+          },
+          "framesOver50ms": 2,
+          "framesOver100ms": 0,
+          "peakRagdolls": 14
+        },
+        {
+          "name": "Strip",
+          "from": 12,
+          "to": 24,
+          "frames": 694,
+          "wallSeconds": 12.001800000190736,
+          "averageFps": 57.82465963346922,
+          "frameMs": {
+            "median": 16.59999990463257,
+            "p95": 23.200000047683716,
+            "p99": 34.5,
+            "max": 37.40000009536743
+          },
+          "framesOver50ms": 0,
+          "framesOver100ms": 0,
+          "peakRagdolls": 12
+        },
+        {
+          "name": "Bellagio turn",
+          "from": 24,
+          "to": 29,
+          "frames": 288,
+          "wallSeconds": 4.997099999904632,
+          "averageFps": 57.633427388984884,
+          "frameMs": {
+            "median": 16.399999856948853,
+            "p95": 25.300000190734863,
+            "p99": 44.700000047683716,
+            "max": 54.799999952316284
+          },
+          "framesOver50ms": 1,
+          "framesOver100ms": 0,
+          "peakRagdolls": 6
+        },
+        {
+          "name": "Arrival",
+          "from": 29,
+          "to": 39,
+          "frames": 586,
+          "wallSeconds": 10.002400000095367,
+          "averageFps": 58.58593937399152,
+          "frameMs": {
+            "median": 16.40000009536743,
+            "p95": 22,
+            "p99": 40.40000009536743,
+            "max": 49.09999990463257
+          },
+          "framesOver50ms": 0,
+          "framesOver100ms": 0,
+          "peakRagdolls": 3
+        },
+        {
+          "name": "Stopped",
+          "from": 39,
+          "to": 45,
+          "frames": 360,
+          "wallSeconds": 5.997299999952316,
+          "averageFps": 60.027012155947226,
+          "frameMs": {
+            "median": 16.59999990463257,
+            "p95": 18.90000009536743,
+            "p99": 19.299999952316284,
+            "max": 19.5
+          },
+          "framesOver50ms": 0,
+          "framesOver100ms": 0,
+          "peakRagdolls": 3
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

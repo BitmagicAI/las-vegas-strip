@@ -1,0 +1,138 @@
+{
+ "projectStart": {
+  "value": "2026-09-27",
+  "source": "bitmagic.json birth time; .bitmagic/cover.json 2026-09-27T00:29Z"
+ },
+ "days": {
+  "value": 26,
+  "source": "2026-09-27 to 2026-10-22 inclusive"
+ },
+ "osmOutlines": {
+  "value": 6766,
+  "source": "build/strip-survey/survey.json summary.renderedBuildingFeatures (6,794 raw records)"
+ },
+ "osmRoadSegments": {
+  "value": 19854,
+  "source": "build/strip-survey/survey.json summary.roadSegments"
+ },
+ "extentKm": {
+  "value": 8.2,
+  "source": "build/strip-survey/research.json osmPreview.scope; bbox 36.079..36.153 N, -115.193..-115.147 E"
+ },
+ "heightsUnknown": {
+  "value": 6066,
+  "source": "survey summary.heightSource.unknown (215 explicit, 485 from levels)"
+ },
+ "bellagioHeightM": {
+  "value": 155.8,
+  "source": "journal-2026-10-05.md:59; tools/resort-blocks/build_bellagio.py"
+ },
+ "eiffelHeightM": {
+  "value": 164.9,
+  "source": "journal-2026-10-06.md:16"
+ },
+ "countyPavementPolygons": {
+  "value": 759,
+  "source": "build/geographic-strip/county/source.json (GISMO Pavement layer 2)"
+ },
+ "countySidewalkCurbLines": {
+  "value": 1850,
+  "source": "GISMO layer 1 (3,521 concrete records)"
+ },
+ "googleEarthViews": {
+  "value": 213,
+  "source": "unique earth.google.com URLs in project records (research count, 2026-10-22)"
+ },
+ "pythonScripts": {
+  "value": 887,
+  "source": "tools/**/*.py excluding .venv (52,266 lines)"
+ },
+ "roomDesigns": {
+  "value": 49,
+  "source": "build/hotels/*-room.glb"
+ },
+ "towers": {
+  "value": 64,
+  "source": "src/work/hotels/{towers,highrise-towers,landmark-towers}.json"
+ },
+ "floors": {
+  "value": 2130,
+  "source": "sum of tower floors"
+ },
+ "hotelRooms": {
+  "value": 30692,
+  "source": "sum over kind=room towers of (floors - firstGuestFloor) x bays x 2 (HotelStreaming.makeFloor)"
+ },
+ "apartments": {
+  "value": 5806,
+  "source": "same, kind=apartment"
+ },
+ "venetianTriangles": {
+  "value": [
+   527496,
+   999101,
+   1327102
+  ],
+  "source": "journal-2026-10-09.md:14-311"
+ },
+ "toolCalls": {
+  "value": 20474,
+  "source": "build/info-video/agent-effort.json: Codex 17,500 (calls naming the project) + Claude 2,974"
+ },
+ "agentHours": {
+  "value": 212.6,
+  "source": "agent-effort.json: Codex 187.0 + Claude 25.6 active hours (5-minute buckets)"
+ },
+ "buildings": {
+  "value": 6162,
+  "source": "build/geographic-strip/report.json buildings"
+ },
+ "replacedByDetailed": {
+  "value": 604,
+  "source": "build/geographic-strip/report.json replacedBuildings"
+ },
+ "triangles": {
+  "value": 96575245,
+  "source": "build/info-video/glb-stats.json drawn triangles over 646 runtime GLBs"
+ },
+ "materials": {
+  "value": 6786,
+  "source": "glb-stats.json"
+ },
+ "textures": {
+  "value": 1231,
+  "source": "glb-stats.json images"
+ },
+ "fullyBuiltTriangles": {
+  "value": 968849021,
+  "source": "96,575,245 + 872,273,776 (every guest floor: rooms, doors, corridors instanced per bay)"
+ },
+ "streetsKmStripRoute": {
+  "value": 8.33,
+  "source": "build/geographic-strip/report.json stripRouteMeters"
+ },
+ "auditRouteChecks": {
+  "value": 9889,
+  "source": "test-routes.mjs (research report)"
+ },
+ "beforeAfterSets": {
+  "value": 86,
+  "source": "build/city-exteriors/*-before folders"
+ },
+ "recordsFiles": {
+  "value": 4078,
+  "source": "docs/project-records file count"
+ },
+ "browserFps": {
+  "value": 60,
+  "source": "docs/project-records/interior-performance-2026-10-07/README.md (19 interior views at the 60 fps vsync cap; one casino frontage 56-60) and idle-performance-2026-10-07/README.md (spawn and garden at 60 fps after the fixes); headless Chrome, WebGPU, the owner's M5 Max"
+ },
+ "tokens": {
+  "value": 5218969884,
+  "source": "Codex (GPT-6 Astra) 3.470 billion, its own report 2026-10-23 (Sep 27 - Oct 23) + Claude 1.749 billion, build/info-video/claude-tokens.json (tools/info-video/claude_tokens.py); shown combined, not itemized, at the owner's word"
+ },
+ "apiCostUsd": {
+  "value": 4907,
+  "source": "standard API prices incl. cache writes: Codex ~$4,365 (its report; $4,239 without cache writes) + Claude $542 (Opus 5.5 $4/$20, Sonnet 5.5 $2/$10 per M, cache reads $0.20, writes 1.25x/2x); excludes generation services"
+ }
+}

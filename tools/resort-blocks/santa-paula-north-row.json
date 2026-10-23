@@ -1,0 +1,148 @@
+{
+  "id": "santa-paula-north-row",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725804",
+    "way/1236725803",
+    "way/1236725806",
+    "way/1236725802",
+    "way/1236725805",
+    "way/1236725801"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15096,-115.15102&heading=90&pitch=3",
+      "imageDate": "December2022",
+      "review": "North olive gable building, blue upper/white lower hip building, gray hip building; west frontage fences and side galleries"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15059,-115.15102&heading=90&pitch=3",
+      "imageDate": "December2022",
+      "review": "Middle gray upper cladding, white picket fence, palms; adjacent cream/gray gable"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15020,-115.15102&heading=90&pitch=3",
+      "imageDate": "January2026",
+      "review": "South charcoal gable with four west windows and purple/white hip building with circular painted accents"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15059,-115.15065&zoom=20&basemap=satellite",
+      "review": "Six distinct mapped footprints and roof silhouettes; addresses approximate association except1707 board and1711 map label"
+    }
+  ],
+  "remaining": [
+    "Roof and window proportions approximate; rooftop equipment simplified",
+    "All south-side gallery/stair layouts inferred where street references obscure access",
+    "Yards lack referenced trees and shrubs; fence representations approximate",
+    "No interior implementation, neutral daylight review or route performance benchmark"
+  ],
+  "triangles": 30149,
+  "batches": 33,
+  "optimizedMiB": 0.65,
+  "tests": [
+    "835 roof-support samples PASS",
+    "24 stair legs across six buildings in both directions PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/santa-paula-north-final/santa-north-west.png",
+    "build/city-exteriors/santa-paula-north-final/santa-north-south.png",
+    "build/city-exteriors/santa-paula-north-final/santa-north-roof.png",
+    "build/city-exteriors/santa-paula-north-final/santa-north-gallery.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "santa-north-west",
+        "eye": [
+          1975,
+          4,
+          -3886
+        ],
+        "target": [
+          2007,
+          3,
+          -3880
+        ],
+        "p": [
+          1991,
+          2,
+          -3880
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.399999976158142
+      },
+      {
+        "name": "santa-north-south",
+        "eye": [
+          1968,
+          4,
+          -3817
+        ],
+        "target": [
+          2011,
+          3,
+          -3815
+        ],
+        "p": [
+          1991,
+          2,
+          -3815
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.400000035762787
+      },
+      {
+        "name": "santa-north-roof",
+        "eye": [
+          1966,
+          75,
+          -3796
+        ],
+        "target": [
+          2011,
+          3,
+          -3850
+        ],
+        "p": [
+          1991,
+          2,
+          -3850
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.5
+      },
+      {
+        "name": "santa-north-gallery",
+        "eye": [
+          2003,
+          2,
+          -3888
+        ],
+        "target": [
+          2014,
+          4,
+          -3886
+        ],
+        "p": [
+          2004,
+          2,
+          -3888
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.30000001192093
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 102,
+    "colliderTrianglesRemoved": 102,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in SantaPaulaNorth mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/santaPaulaNorth-exterior.glb": "57cca565f38e4476281a81bfd0fff3e1a8700f85ec79516875b8c114f428553c",
+      "build/strip-landmarks/santaPaulaNorth-exterior-collision.json": "2502635cd662df3b093deaacec52f28e1e3b37698ba1cd19b5b8236aefc85a6d"
+    }
+  }
+}

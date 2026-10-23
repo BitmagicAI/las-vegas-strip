@@ -1,0 +1,2434 @@
+[
+  {
+    "id": "way/116660354",
+    "name": "Mandalay Bay Convention Center",
+    "area": 131927,
+    "bounds": [
+      -564.578,
+      2776.03,
+      -42.634,
+      3246.778
+    ],
+    "height": 30.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mandalay_bay.py"
+    ]
+  },
+  {
+    "id": "way/33957359",
+    "name": "Hard Rock Las Vegas",
+    "area": 111202,
+    "bounds": [
+      -532.348,
+      -849.969,
+      -20.908,
+      -429.37
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mirage_exterior.py"
+    ]
+  },
+  {
+    "id": "relation/1599958",
+    "name": "Bellagio",
+    "area": 109283,
+    "bounds": [
+      -611.367,
+      173.258,
+      -30.602,
+      653.278
+    ],
+    "height": 12.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/resort-blocks/test-arrival-trees.py",
+      "tools/resort-blocks/bellagio_garage.py",
+      "tools/resort-blocks/build_bellagio.py",
+      "tools/resort-blocks/preview_bellagio_towers.py"
+    ]
+  },
+  {
+    "id": "way/115672893",
+    "name": "Caesars Palace",
+    "area": 95126,
+    "bounds": [
+      -580.36,
+      -248.877,
+      -76.636,
+      109.783
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/geographic-strip/mapping.py"
+    ]
+  },
+  {
+    "id": "way/52175576",
+    "name": "Aria Resort & Casino",
+    "area": 93059,
+    "bounds": [
+      -611.466,
+      789.879,
+      -225.725,
+      1209.932
+    ],
+    "height": 20.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/geographic-strip/mapping.py"
+    ]
+  },
+  {
+    "id": "way/116660358",
+    "name": "Mandalay Bay",
+    "area": 82088,
+    "bounds": [
+      -401.658,
+      2376.226,
+      -53.138,
+      2890.711
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mandalay_bay.py"
+    ]
+  },
+  {
+    "id": "way/134068317",
+    "name": "Fontainebleau Resort & Casino",
+    "area": 78400,
+    "bounds": [
+      1023.267,
+      -2539.721,
+      1398.153,
+      -2266.053
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/fontainebleau.py"
+    ]
+  },
+  {
+    "id": "way/116770006",
+    "name": "Hotel MGM Grand Las Vegas",
+    "area": 77783,
+    "bounds": [
+      43.219,
+      1305.811,
+      523.373,
+      1652.516
+    ],
+    "height": 9.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mgm_grand.py"
+    ]
+  },
+  {
+    "id": "relation/1606512",
+    "name": "Miracle Mile Shops",
+    "area": 75981,
+    "bounds": [
+      36.016,
+      535.525,
+      399.877,
+      859.041
+    ],
+    "height": 20.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/planet_hollywood.py"
+    ]
+  },
+  {
+    "id": "way/972129019",
+    "name": "Resorts World Las Vegas",
+    "area": 69555,
+    "bounds": [
+      401.478,
+      -2174.738,
+      780.069,
+      -1763.445
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/resorts_world.py"
+    ]
+  },
+  {
+    "id": "way/135291730",
+    "name": "Encore",
+    "area": 62064,
+    "bounds": [
+      577.419,
+      -1568.391,
+      957.351,
+      -1172.706
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/wynn_encore.py"
+    ]
+  },
+  {
+    "id": "way/34068416",
+    "name": "The Forum Shops at Caesars",
+    "area": 60015,
+    "bounds": [
+      -518.436,
+      -419.853,
+      12.104,
+      -229.763
+    ],
+    "height": 12.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/forum_shops.py",
+      "tools/strip-landmarks/build_forum_shops.py"
+    ]
+  },
+  {
+    "id": "way/111322055",
+    "name": "Unnamed building",
+    "area": 57576,
+    "bounds": [
+      418.87,
+      -1397.505,
+      796.553,
+      -968.869
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/wynn_encore.py"
+    ]
+  },
+  {
+    "id": "way/1468590525",
+    "name": "New Las Vegas Stadium",
+    "area": 57364,
+    "bounds": [
+      107.103,
+      1735.282,
+      388.474,
+      2009.985
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/135332959",
+    "name": "Circus Circus Las Vegas",
+    "area": 52948,
+    "bounds": [
+      503.068,
+      -2551.676,
+      924.509,
+      -2274.836
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/circus_circus.py"
+    ]
+  },
+  {
+    "id": "way/33974140",
+    "name": "Paris Las Vegas",
+    "area": 51448,
+    "bounds": [
+      44.055,
+      327.023,
+      374.311,
+      513.795
+    ],
+    "height": 18.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/resort-blocks/build_paris.py"
+    ]
+  },
+  {
+    "id": "way/111394032",
+    "name": "Mandalay Bay Self Parking",
+    "area": 37293,
+    "bounds": [
+      -622.167,
+      2601.258,
+      -371.406,
+      2769.596
+    ],
+    "height": 15.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mandalay_parking.py"
+    ]
+  },
+  {
+    "id": "way/111413431",
+    "name": "Unnamed building",
+    "area": 37130,
+    "bounds": [
+      622.715,
+      -1319.247,
+      888.997,
+      -789.389
+    ],
+    "height": 5.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/wynn_encore.py"
+    ]
+  },
+  {
+    "id": "way/135456188",
+    "name": "The Strat",
+    "area": 36439,
+    "bounds": [
+      1342.012,
+      -3666.118,
+      1664.417,
+      -3391.07
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/strat_frontage.py"
+    ]
+  },
+  {
+    "id": "way/73540518",
+    "name": "MGM Grand Self Parking",
+    "area": 36309,
+    "bounds": [
+      506.764,
+      1468.66,
+      791.957,
+      1604.815
+    ],
+    "height": 15.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mgm_grand.py"
+    ]
+  },
+  {
+    "id": "way/1212809711",
+    "name": "Unnamed building",
+    "area": 35635,
+    "bounds": [
+      -364.689,
+      614.239,
+      -36.42,
+      736.757
+    ],
+    "height": 5.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/resort-blocks/build_cosmopolitan.py"
+    ]
+  },
+  {
+    "id": "relation/8086330",
+    "name": "Excalibur Hotel & Casino",
+    "area": 33970,
+    "bounds": [
+      -348.898,
+      1783.906,
+      -104.711,
+      2031.102
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/excalibur_frontage.py"
+    ]
+  },
+  {
+    "id": "way/27858544",
+    "name": "Luxor Las Vegas",
+    "area": 33448,
+    "bounds": [
+      -344.554,
+      2193.695,
+      -159.809,
+      2376.872
+    ],
+    "height": 111.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/luxor_facades.py"
+    ]
+  },
+  {
+    "id": "way/115661793",
+    "name": "New York New York Hotel and Casino",
+    "area": 30881,
+    "bounds": [
+      -247.244,
+      1427.906,
+      -39.145,
+      1654.798
+    ],
+    "height": 9.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/new_york_frontage.py"
+    ]
+  },
+  {
+    "id": "way/133755242",
+    "name": "Rio Pavilion Conference Center",
+    "area": 28648,
+    "bounds": [
+      -1315.259,
+      -530.782,
+      -1140.073,
+      -304.236
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/722990701",
+    "name": "Shrine of the Most Holy Redeemer",
+    "area": 27713,
+    "bounds": [
+      236.948,
+      2097.326,
+      413.51,
+      2291.445
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/29710490",
+    "name": "Luxor Self Parking",
+    "area": 27357,
+    "bounds": [
+      -631.321,
+      2191.703,
+      -464.103,
+      2395.451
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/27751002",
+    "name": "Fayle Reservoir",
+    "area": 27036,
+    "bounds": [
+      -1199.406,
+      1913.604,
+      -992.341,
+      2046.865
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/133879585",
+    "name": "Park MGM Self Parking",
+    "area": 26429,
+    "bounds": [
+      -611.286,
+      1209.453,
+      -416.523,
+      1345.908
+    ],
+    "height": 30.0,
+    "status": "exterior-pass-reviewed-refinement-pending",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/park_mgm_parking.py"
+    ]
+  },
+  {
+    "id": "way/543641007",
+    "name": "Unnamed building",
+    "area": 24941,
+    "bounds": [
+      1291.644,
+      -2528.344,
+      1398.153,
+      -2269.693
+    ],
+    "height": 35.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/fontainebleau.py"
+    ]
+  },
+  {
+    "id": "way/976405284",
+    "name": "Sphere",
+    "area": 23944,
+    "bounds": [
+      895.643,
+      -671.156,
+      1070.443,
+      -496.273
+    ],
+    "height": 112.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/build_sphere.py"
+    ]
+  },
+  {
+    "id": "way/543638201",
+    "name": "Unnamed building",
+    "area": 22460,
+    "bounds": [
+      126.32,
+      -1976.466,
+      301.551,
+      -1761.041
+    ],
+    "height": 23.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1085922690",
+    "name": "Unnamed building",
+    "area": 22067,
+    "bounds": [
+      797.533,
+      -931.154,
+      1003.726,
+      -738.85
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/111367820",
+    "name": "Treasure Island Self Parking",
+    "area": 21076,
+    "bounds": [
+      -408.114,
+      -1038.488,
+      -241.111,
+      -866.5
+    ],
+    "height": 5.0,
+    "status": "exterior-pass-reviewed-refinement-pending",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/ti_parking.py"
+    ],
+    "reviewEvidence": "tools/resort-blocks/ti-parking.json"
+  },
+  {
+    "id": "way/52134608",
+    "name": "The Shops at Crystals",
+    "area": 20588,
+    "bounds": [
+      -237.083,
+      823.642,
+      -32.895,
+      1013.865
+    ],
+    "height": 30.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/geographic-strip/mapping.py"
+    ]
+  },
+  {
+    "id": "way/52175579",
+    "name": "Aria and Vdara Self Parking",
+    "area": 19864,
+    "bounds": [
+      -612.05,
+      639.274,
+      -516.035,
+      849.446
+    ],
+    "height": 29.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/403004627",
+    "name": "Treasure Island Self Parking",
+    "area": 17576,
+    "bounds": [
+      -161.562,
+      -1035.939,
+      -29.37,
+      -887.072
+    ],
+    "height": 5.0,
+    "status": "exterior-pass-reviewed-refinement-pending",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/ti_parking.py"
+    ],
+    "reviewEvidence": "tools/resort-blocks/ti-parking.json"
+  },
+  {
+    "id": "way/135448016",
+    "name": "The Adventuredome",
+    "area": 17431,
+    "bounds": [
+      515.064,
+      -2535.134,
+      673.731,
+      -2349.108
+    ],
+    "height": 5.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/circus_circus.py"
+    ]
+  },
+  {
+    "id": "way/136520122",
+    "name": "Unnamed building",
+    "area": 16699,
+    "bounds": [
+      -388.42,
+      2091.315,
+      -119.549,
+      2194.619
+    ],
+    "height": 20.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/33974142",
+    "name": "Paris Self Parking",
+    "area": 16422,
+    "bounds": [
+      372.935,
+      329.149,
+      465.739,
+      509.242
+    ],
+    "height": 29.0,
+    "status": "exterior-pass-reviewed-refinement-pending",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/182464622",
+    "name": "Unnamed building",
+    "area": 16262,
+    "bounds": [
+      1221.861,
+      -647.378,
+      1281.213,
+      -252.595
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/502624676",
+    "name": "Four Seasons Hotel Las Vegas",
+    "area": 15304,
+    "bounds": [
+      -210.887,
+      2715.383,
+      -53.138,
+      2893.405
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mandalay_bay.py"
+    ]
+  },
+  {
+    "id": "way/89469762",
+    "name": "Unnamed building",
+    "area": 15133,
+    "bounds": [
+      1343.64,
+      -3630.552,
+      1553.025,
+      -3442.433
+    ],
+    "height": 26.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/strat_frontage.py"
+    ]
+  },
+  {
+    "id": "way/115647489",
+    "name": "Excalibur Self Parking",
+    "area": 14936,
+    "bounds": [
+      -535.549,
+      1886.253,
+      -436.36,
+      2038.449
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/116761428",
+    "name": "Flamingo Las Vegas",
+    "area": 14904,
+    "bounds": [
+      28.974,
+      -156.604,
+      241.471,
+      62.639
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/29709970",
+    "name": "New York New York Self Parking",
+    "area": 14545,
+    "bounds": [
+      -361.577,
+      1460.823,
+      -283.485,
+      1652.927
+    ],
+    "height": 26.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/new_york_frontage.py"
+    ]
+  },
+  {
+    "id": "way/1238384484",
+    "name": "T-Mobile Arena Parking",
+    "area": 14537,
+    "bounds": [
+      -615.692,
+      1850.219,
+      -532.537,
+      2049.236
+    ],
+    "height": 25.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1126368751",
+    "name": "Unnamed building",
+    "area": 14139,
+    "bounds": [
+      -1749.605,
+      -1875.6,
+      -1582.089,
+      -1695.641
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/115670777",
+    "name": "Miracle Mile Shops and Planet Hollywood Self Parking",
+    "area": 13594,
+    "bounds": [
+      399.248,
+      570.535,
+      471.89,
+      759.522
+    ],
+    "height": 30.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/planet_hollywood.py"
+    ]
+  },
+  {
+    "id": "way/532308966",
+    "name": "Unnamed building",
+    "area": 13474,
+    "bounds": [
+      -1766.017,
+      1504.661,
+      -1623.806,
+      1643.877
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/25718288",
+    "name": "Bellagio Self Parking Garage",
+    "area": 12963,
+    "bounds": [
+      -374.356,
+      489.205,
+      -192.29,
+      563.555
+    ],
+    "height": 10.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/resort-blocks/bellagio_garage.py",
+      "tools/resort-blocks/build_bellagio.py"
+    ]
+  },
+  {
+    "id": "way/27897908",
+    "name": "MGM Grand Garden Arena",
+    "area": 12181,
+    "bounds": [
+      349.698,
+      1185.207,
+      447.259,
+      1310.253
+    ],
+    "height": 20.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/33992535",
+    "name": "Treasure Island Self Parking",
+    "area": 12164,
+    "bounds": [
+      7.743,
+      -836.377,
+      159.026,
+      -739.896
+    ],
+    "height": 12.0,
+    "status": "exterior-pass-reviewed-refinement-pending",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/ti_parking.py"
+    ],
+    "reviewEvidence": "tools/resort-blocks/ti-parking.json"
+  },
+  {
+    "id": "way/1424222051",
+    "name": "Unnamed building",
+    "area": 11995,
+    "bounds": [
+      34.541,
+      1012.54,
+      126.437,
+      1199.601
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/128266659",
+    "name": "Encore Self Parking",
+    "area": 11895,
+    "bounds": [
+      819.727,
+      -1479.481,
+      957.351,
+      -1318.969
+    ],
+    "height": 5.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/wynn_encore.py"
+    ]
+  },
+  {
+    "id": "way/27858551",
+    "name": "Michelob Ultra Arena",
+    "area": 11726,
+    "bounds": [
+      -607.662,
+      2774.304,
+      -469.004,
+      2878.433
+    ],
+    "height": 18.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mandalay_bay.py"
+    ]
+  },
+  {
+    "id": "way/493102199",
+    "name": "Unnamed building",
+    "area": 11400,
+    "bounds": [
+      -1784.038,
+      607.804,
+      -1545.768,
+      661.806
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/118369025",
+    "name": "Unnamed building",
+    "area": 11294,
+    "bounds": [
+      867.658,
+      1816.834,
+      918.772,
+      2061.258
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/495721244",
+    "name": "Unnamed building",
+    "area": 11283,
+    "bounds": [
+      -1095.532,
+      355.989,
+      -1037.053,
+      600.613
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/543642782",
+    "name": "Unnamed building",
+    "area": 11252,
+    "bounds": [
+      1384.449,
+      -2866.254,
+      1620.398,
+      -2800.431
+    ],
+    "height": 26.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/sahara.py"
+    ]
+  },
+  {
+    "id": "way/133879824",
+    "name": "MGM Grand Self Parking",
+    "area": 11108,
+    "bounds": [
+      326.659,
+      1069.647,
+      473.356,
+      1146.068
+    ],
+    "height": 17.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1198427833",
+    "name": "Grand Prix Plaza",
+    "area": 11108,
+    "bounds": [
+      867.739,
+      547.948,
+      1112.627,
+      811.352
+    ],
+    "height": 19.5,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/464700849",
+    "name": "Unnamed building",
+    "area": 10885,
+    "bounds": [
+      -314.555,
+      -1714.12,
+      -174.251,
+      -1551.738
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/893881007",
+    "name": "Area15",
+    "area": 10871,
+    "bounds": [
+      -821.391,
+      -1886.787,
+      -715.817,
+      -1755.909
+    ],
+    "height": 8.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/114718023",
+    "name": "yes",
+    "area": 10792,
+    "bounds": [
+      -565.225,
+      368.078,
+      -472.475,
+      543.562
+    ],
+    "height": 17.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/111322083",
+    "name": "Unnamed building",
+    "area": 10559,
+    "bounds": [
+      543.328,
+      -1395.301,
+      701.473,
+      -1282.657
+    ],
+    "height": 5.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/wynn_encore.py"
+    ]
+  },
+  {
+    "id": "way/225705133",
+    "name": "Unnamed building",
+    "area": 10357,
+    "bounds": [
+      -1205.728,
+      2105.129,
+      -1138.625,
+      2262.446
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/33957718",
+    "name": "Mirage Self Parking",
+    "area": 10254,
+    "bounds": [
+      -104.063,
+      -862.949,
+      -27.931,
+      -719.903
+    ],
+    "height": 3.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mirage_exterior.py"
+    ]
+  },
+  {
+    "id": "way/972129020",
+    "name": "Unnamed building",
+    "area": 10170,
+    "bounds": [
+      418.087,
+      -2269.693,
+      547.717,
+      -2117.508
+    ],
+    "height": 23.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/resorts_world.py"
+    ]
+  },
+  {
+    "id": "way/135332960",
+    "name": "Unnamed building",
+    "area": 10129,
+    "bounds": [
+      436.001,
+      -2379.966,
+      652.112,
+      -2256.691
+    ],
+    "height": 15.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/circus_circus.py"
+    ]
+  },
+  {
+    "id": "way/464697796",
+    "name": "Unnamed building",
+    "area": 10095,
+    "bounds": [
+      -213.873,
+      -2338.411,
+      -77.436,
+      -2177.832
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/310585854",
+    "name": "Unnamed building",
+    "area": 9989,
+    "bounds": [
+      99.072,
+      -151.239,
+      269.106,
+      70.009
+    ],
+    "height": 8.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/133897094",
+    "name": "Bluegreen Vacations Club 36, an Ascend Collection Resort",
+    "area": 9983,
+    "bounds": [
+      1435.023,
+      1408.726,
+      1590.39,
+      1558.896
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/135459231",
+    "name": "Caesars Palace Self Parking",
+    "area": 9889,
+    "bounds": [
+      -610.369,
+      -413.552,
+      -532.15,
+      -278.777
+    ],
+    "height": 23.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/276426476",
+    "name": "Unnamed building",
+    "area": 9774,
+    "bounds": [
+      -1586.505,
+      -3356.817,
+      -1369.683,
+      -3299.087
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/289108388",
+    "name": "Unnamed building",
+    "area": 9407,
+    "bounds": [
+      -1615.093,
+      679.928,
+      -1550.759,
+      834.284
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/289108392",
+    "name": "Unnamed building",
+    "area": 9373,
+    "bounds": [
+      -1717.735,
+      679.639,
+      -1653.788,
+      834.373
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/463885983",
+    "name": "Unnamed building",
+    "area": 9235,
+    "bounds": [
+      593.255,
+      2447.559,
+      794.97,
+      2503.809
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/464700855",
+    "name": "REEF Dispensary",
+    "area": 9208,
+    "bounds": [
+      -421.72,
+      -1462.081,
+      -288.305,
+      -1272.571
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/25723909",
+    "name": "Bellagio Las Vegas",
+    "area": 9152,
+    "bounds": [
+      -429.319,
+      203.503,
+      -268.027,
+      439.445
+    ],
+    "height": 120.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/resort-blocks/build_bellagio.py",
+      "tools/resort-blocks/preview_bellagio_towers.py"
+    ]
+  },
+  {
+    "id": "way/615119815",
+    "name": "Unnamed building",
+    "area": 9052,
+    "bounds": [
+      -1095.928,
+      -1927.708,
+      -995.561,
+      -1795.773
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/250458387",
+    "name": "AC Pro",
+    "area": 8906,
+    "bounds": [
+      6.421,
+      -2435.325,
+      186.661,
+      -2291.322
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/111322067",
+    "name": "Venezia Tower",
+    "area": 8873,
+    "bounds": [
+      247.496,
+      -558.022,
+      383.376,
+      -459.104
+    ],
+    "height": 99.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/test-venetian-overlaps.py",
+      "tools/strip-landmarks/venetian_towers.py",
+      "tools/strip-landmarks/venetian_pools.py"
+    ]
+  },
+  {
+    "id": "way/115093734",
+    "name": "yes",
+    "area": 8787,
+    "bounds": [
+      269.33,
+      1390.258,
+      449.094,
+      1631.844
+    ],
+    "height": 89.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mgm_grand.py"
+    ]
+  },
+  {
+    "id": "way/180584270",
+    "name": "Fashion Show Mall Self Parking",
+    "area": 8787,
+    "bounds": [
+      -248.512,
+      -1244.685,
+      -84.351,
+      -1166.617
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/276427203",
+    "name": "Marriott's Grand Chateau",
+    "area": 8779,
+    "bounds": [
+      289.924,
+      905.762,
+      389.706,
+      1002.655
+    ],
+    "height": 128.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/grand_chateau.py"
+    ]
+  },
+  {
+    "id": "way/30618090",
+    "name": "Venetian Tower",
+    "area": 8647,
+    "bounds": [
+      253.288,
+      -688.133,
+      436.558,
+      -540.79
+    ],
+    "height": 145.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/test-venetian-overlaps.py",
+      "tools/strip-landmarks/venetian_towers.py",
+      "tools/strip-landmarks/venetian_pools.py"
+    ]
+  },
+  {
+    "id": "way/115095164",
+    "name": "yes",
+    "area": 8568,
+    "bounds": [
+      48.174,
+      1536.71,
+      159.845,
+      1646.17
+    ],
+    "height": 14.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/978063210",
+    "name": "Green Leaf Lotus",
+    "area": 8549,
+    "bounds": [
+      -1517.558,
+      -1353.656,
+      -1369.143,
+      -1202.707
+    ],
+    "height": 4.5,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/495721237",
+    "name": "Unnamed building",
+    "area": 8487,
+    "bounds": [
+      -1019.769,
+      610.409,
+      -954.644,
+      746.62
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "relation/1631815",
+    "name": "Desert Rose Resort",
+    "area": 8371,
+    "bounds": [
+      444.355,
+      1922.966,
+      542.771,
+      2069.396
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/134687304",
+    "name": "Unnamed building",
+    "area": 8283,
+    "bounds": [
+      1711.35,
+      -2102.09,
+      1789.865,
+      -1995.814
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/948545269",
+    "name": "Unnamed building",
+    "area": 8136,
+    "bounds": [
+      1272.301,
+      -1911.255,
+      1416.615,
+      -1833.855
+    ],
+    "height": 3.5,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "relation/17368544",
+    "name": "Unnamed building",
+    "area": 8123,
+    "bounds": [
+      -1740.459,
+      154.756,
+      -1580.201,
+      247.374
+    ],
+    "height": 14.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/531156752",
+    "name": "Sands Aviation",
+    "area": 8097,
+    "bounds": [
+      467.637,
+      2880.114,
+      531.88,
+      3018.45
+    ],
+    "height": 17.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/172589681",
+    "name": "Unnamed building",
+    "area": 8076,
+    "bounds": [
+      -1692.519,
+      2509.286,
+      -1638.986,
+      2680.841
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/111380666",
+    "name": "Trump International Hotel Las Vegas",
+    "area": 7934,
+    "bounds": [
+      -11.915,
+      -1555.723,
+      74.918,
+      -1449.636
+    ],
+    "height": 195.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/trump_exterior.py"
+    ]
+  },
+  {
+    "id": "way/397861154",
+    "name": "Tuscany Suites & Casino",
+    "area": 7791,
+    "bounds": [
+      1068.392,
+      266.866,
+      1223.759,
+      366.642
+    ],
+    "height": 12.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1469966053",
+    "name": "Unnamed building",
+    "area": 7771,
+    "bounds": [
+      -678.497,
+      -2241.585,
+      -567.249,
+      -2104.005
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/115771879",
+    "name": "The LINQ Self Parking",
+    "area": 7741,
+    "bounds": [
+      264.304,
+      -311.26,
+      379.356,
+      -214.902
+    ],
+    "height": 20.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/111367853",
+    "name": "Harrah's Self Parking",
+    "area": 7740,
+    "bounds": [
+      296.398,
+      -426.142,
+      379.005,
+      -330.385
+    ],
+    "height": 23.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/115670770",
+    "name": "PH Live",
+    "area": 7579,
+    "bounds": [
+      198.18,
+      631.493,
+      319.258,
+      732.081
+    ],
+    "height": 20.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/planet_hollywood.py"
+    ]
+  },
+  {
+    "id": "way/464695951",
+    "name": "Unnamed building",
+    "area": 7563,
+    "bounds": [
+      192.776,
+      -2704.351,
+      350.3,
+      -2589.837
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1248707140",
+    "name": "Unnamed building",
+    "area": 7491,
+    "bounds": [
+      -1227.194,
+      3125.974,
+      -1147.851,
+      3221.809
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1058371859",
+    "name": "Unnamed building",
+    "area": 7374,
+    "bounds": [
+      -1208.516,
+      -2246.706,
+      -1155.306,
+      -2088.81
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/30424125",
+    "name": "Palazzo Tower",
+    "area": 7096,
+    "bounds": [
+      396.9,
+      -974.78,
+      533.382,
+      -818.51
+    ],
+    "height": 196.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/palazzo_pools.py",
+      "tools/strip-landmarks/palazzo_tower.py"
+    ]
+  },
+  {
+    "id": "way/27727143",
+    "name": "construction",
+    "area": 7082,
+    "bounds": [
+      -313.673,
+      -666.915,
+      -119.674,
+      -498.199
+    ],
+    "height": 102.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mirage_exterior.py"
+    ]
+  },
+  {
+    "id": "way/134679595",
+    "name": "Unnamed building",
+    "area": 6872,
+    "bounds": [
+      1711.395,
+      -2865.074,
+      1872.481,
+      -2804.817
+    ],
+    "height": 5.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/turnberry_towers.py"
+    ]
+  },
+  {
+    "id": "way/1236483139",
+    "name": "Unnamed building",
+    "area": 6853,
+    "bounds": [
+      -1754.461,
+      -2079.804,
+      -1586.82,
+      -1990.47
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/907577005",
+    "name": "Unnamed building",
+    "area": 6715,
+    "bounds": [
+      -1333.406,
+      -3360.201,
+      -1184.694,
+      -3281.532
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/182464625",
+    "name": "Unnamed building",
+    "area": 6711,
+    "bounds": [
+      1535.489,
+      -425.051,
+      1591.847,
+      -304.058
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/972129022",
+    "name": "Resorts World Theatre",
+    "area": 6667,
+    "bounds": [
+      363.7,
+      -2121.493,
+      472.394,
+      -2010.786
+    ],
+    "height": 6.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/resorts_world.py"
+    ]
+  },
+  {
+    "id": "way/276437559",
+    "name": "Spearmint Rhino Gentlemen's Club Las Vegas",
+    "area": 6628,
+    "bounds": [
+      -489.921,
+      -1521.726,
+      -376.451,
+      -1327.463
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/27998220",
+    "name": "Rio Ipanema Tower",
+    "area": 6602,
+    "bounds": [
+      -1447.28,
+      -252.517,
+      -1272.067,
+      -78.759
+    ],
+    "height": 74.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/rio_exterior.py"
+    ]
+  },
+  {
+    "id": "way/1459800767",
+    "name": "Unnamed building",
+    "area": 6587,
+    "bounds": [
+      839.834,
+      -3584.833,
+      944.77,
+      -3472.367
+    ],
+    "height": 20.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "relation/17582275",
+    "name": "Elysian at Hughes Center",
+    "area": 6507,
+    "bounds": [
+      1494.834,
+      -566.316,
+      1598.573,
+      -431.875
+    ],
+    "height": 22.5,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1416370744",
+    "name": "Unnamed building",
+    "area": 6452,
+    "bounds": [
+      -1208.399,
+      -1500.42,
+      -1159.083,
+      -1327.541
+    ],
+    "height": 13.5,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/182464630",
+    "name": "Unnamed building",
+    "area": 6359,
+    "bounds": [
+      1395.105,
+      -50.138,
+      1523.853,
+      66.792
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/182464621",
+    "name": "Unnamed building",
+    "area": 6312,
+    "bounds": [
+      -68.29,
+      -1675.392,
+      73.164,
+      -1560.644
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/114723872",
+    "name": "yes",
+    "area": 6227,
+    "bounds": [
+      406.819,
+      238.936,
+      509.965,
+      305.338
+    ],
+    "height": 17.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/464700838",
+    "name": "Unnamed building",
+    "area": 6205,
+    "bounds": [
+      70.853,
+      -2146.084,
+      172.318,
+      -2017.454
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/27858550",
+    "name": "Mandalay Bay Resort & Casino",
+    "area": 6160,
+    "bounds": [
+      -255.689,
+      2588.969,
+      -70.646,
+      2751.25
+    ],
+    "height": 146.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/mandalay_bay.py"
+    ]
+  },
+  {
+    "id": "way/543641711",
+    "name": "Unnamed building",
+    "area": 6132,
+    "bounds": [
+      1415.329,
+      -3629.594,
+      1595.309,
+      -3441.642
+    ],
+    "height": 74.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/strat_frontage.py"
+    ]
+  },
+  {
+    "id": "relation/5342155",
+    "name": "Elara, a Hilton Grand Vacations Club",
+    "area": 6087,
+    "bounds": [
+      297.81,
+      779.615,
+      472.142,
+      843.579
+    ],
+    "height": 183.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/elara_exterior.py"
+    ]
+  },
+  {
+    "id": "way/1460504907",
+    "name": "yes",
+    "area": 6067,
+    "bounds": [
+      1222.877,
+      -647.378,
+      1260.916,
+      -479.932
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/115768211",
+    "name": "Flamingo Self Parking",
+    "area": 6033,
+    "bounds": [
+      258.117,
+      32.917,
+      390.534,
+      92.25
+    ],
+    "height": 29.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/463885980",
+    "name": "Newport Private Jet",
+    "area": 6033,
+    "bounds": [
+      620.953,
+      2325.798,
+      830.842,
+      2374.155
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/791667903",
+    "name": "Unnamed building",
+    "area": 6021,
+    "bounds": [
+      -1327.327,
+      -1791.977,
+      -1146.556,
+      -1749.03
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/27897909",
+    "name": "Showcase",
+    "area": 5976,
+    "bounds": [
+      39.379,
+      1354.792,
+      78.182,
+      1516.761
+    ],
+    "height": 18.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/showcase.py"
+    ]
+  },
+  {
+    "id": "way/33962963",
+    "name": "Mardi Gras Hotel & Casino",
+    "area": 5958,
+    "bounds": [
+      1657.7,
+      -1083.194,
+      1799.2,
+      -1023.226
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/225705134",
+    "name": "Unnamed building",
+    "area": 5933,
+    "bounds": [
+      -1115.559,
+      2136.588,
+      -955.138,
+      2175.394
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1281885797",
+    "name": "Unnamed building",
+    "area": 5908,
+    "bounds": [
+      1388.531,
+      -495.249,
+      1478.935,
+      -395.618
+    ],
+    "height": 23.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/111367834",
+    "name": "\"O\" Theatre",
+    "area": 5902,
+    "bounds": [
+      -429.922,
+      209.359,
+      -336.128,
+      277.208
+    ],
+    "height": 18.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/27831697",
+    "name": "Le Boulevard At Paris",
+    "area": 5895,
+    "bounds": [
+      164.935,
+      331.009,
+      289.897,
+      456.722
+    ],
+    "height": 112.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/resort-blocks/build_paris.py"
+    ]
+  },
+  {
+    "id": "way/225705135",
+    "name": "Unnamed building",
+    "area": 5882,
+    "bounds": [
+      -1115.532,
+      2216.928,
+      -957.171,
+      2255.266
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/135332958",
+    "name": "Unnamed building",
+    "area": 5849,
+    "bounds": [
+      745.16,
+      -2587.521,
+      847.91,
+      -2526.507
+    ],
+    "height": 20.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/circus_circus.py"
+    ]
+  },
+  {
+    "id": "way/225705132",
+    "name": "Unnamed building",
+    "area": 5832,
+    "bounds": [
+      -1288.56,
+      2105.129,
+      -1250.817,
+      2264.539
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/27831695",
+    "name": "Park MGM",
+    "area": 5816,
+    "bounds": [
+      -373.591,
+      1172.127,
+      -219.34,
+      1340.788
+    ],
+    "height": 110.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/park_mgm.py"
+    ]
+  },
+  {
+    "id": "way/472669744",
+    "name": "The Cosmopolitan Boulevard Tower",
+    "area": 5770,
+    "bounds": [
+      -202.758,
+      673.639,
+      -91.599,
+      732.493
+    ],
+    "height": 184.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/resort-blocks/build_cosmopolitan.py"
+    ]
+  },
+  {
+    "id": "way/1198830594",
+    "name": "Unnamed building",
+    "area": 5742,
+    "bounds": [
+      1076.396,
+      -4003.628,
+      1179.658,
+      -3887.388
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/504849652",
+    "name": "Alexis Park Resort Hotel",
+    "area": 5736,
+    "bounds": [
+      1432.766,
+      915.881,
+      1540.462,
+      985.189
+    ],
+    "height": 9.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/707357769",
+    "name": "Unnamed building",
+    "area": 5706,
+    "bounds": [
+      -1742.51,
+      -1024.406,
+      -1567.557,
+      -987.482
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/615119818",
+    "name": "Unnamed building",
+    "area": 5616,
+    "bounds": [
+      -1096.944,
+      -1766.262,
+      -939.59,
+      -1721.701
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/95223729",
+    "name": "Unnamed building",
+    "area": 5609,
+    "bounds": [
+      261.273,
+      1022.881,
+      315.058,
+      1143.44
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/316303708",
+    "name": "Resorts World Las Vegas",
+    "area": 5526,
+    "bounds": [
+      488.887,
+      -2139.75,
+      712.705,
+      -2007.124
+    ],
+    "height": 205.4,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/resorts_world.py"
+    ]
+  },
+  {
+    "id": "way/495721235",
+    "name": "Unnamed building",
+    "area": 5511,
+    "bounds": [
+      -1020.2,
+      481.969,
+      -964.5,
+      581.433
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/134068318",
+    "name": "Unnamed building",
+    "area": 5500,
+    "bounds": [
+      1158.337,
+      -2512.626,
+      1314.153,
+      -2409.176
+    ],
+    "height": 224.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/fontainebleau.py"
+    ]
+  },
+  {
+    "id": "way/89469753",
+    "name": "yes",
+    "area": 5491,
+    "bounds": [
+      1342.426,
+      -3460.567,
+      1473.314,
+      -3397.46
+    ],
+    "height": 5.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/strat_frontage.py"
+    ]
+  },
+  {
+    "id": "way/399368722",
+    "name": "Unnamed building",
+    "area": 5431,
+    "bounds": [
+      -540.765,
+      2185.302,
+      -458.392,
+      2263.203
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/464695959",
+    "name": "Unnamed building",
+    "area": 5416,
+    "bounds": [
+      -55.656,
+      -2299.17,
+      38.902,
+      -2190.823
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1460504906",
+    "name": "yes",
+    "area": 5404,
+    "bounds": [
+      1223.723,
+      -480.01,
+      1261.959,
+      -333.524
+    ],
+    "height": 8.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/205501268",
+    "name": "Wynn Las Vegas",
+    "area": 5384,
+    "bounds": [
+      628.039,
+      -1300.234,
+      697.265,
+      -1071.116
+    ],
+    "height": 187.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/wynn_encore.py"
+    ]
+  },
+  {
+    "id": "way/543423255",
+    "name": "The Cromwell Self Parking",
+    "area": 5307,
+    "bounds": [
+      240.149,
+      89.011,
+      379.886,
+      131.958
+    ],
+    "height": 8.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1459841261",
+    "name": "Unnamed building",
+    "area": 5261,
+    "bounds": [
+      -1016.9,
+      773.86,
+      -942.27,
+      852.206
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/464697815",
+    "name": "Unnamed building",
+    "area": 5228,
+    "bounds": [
+      -425.308,
+      -1986.986,
+      -332.513,
+      -1880.843
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1459800768",
+    "name": "Unnamed building",
+    "area": 5197,
+    "bounds": [
+      894.645,
+      -3657.046,
+      988.258,
+      -3552.506
+    ],
+    "height": 11.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/114718022",
+    "name": "yes",
+    "area": 5190,
+    "bounds": [
+      -528.436,
+      551.399,
+      -454.058,
+      631.605
+    ],
+    "height": 17.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/118362767",
+    "name": "Motel 6 Las Vegas - Tropicana",
+    "area": 5188,
+    "bounds": [
+      729.764,
+      1736.873,
+      797.371,
+      1913.359
+    ],
+    "height": 6.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/116761035",
+    "name": "Unnamed building",
+    "area": 5169,
+    "bounds": [
+      28.974,
+      -151.784,
+      77.868,
+      -18.702
+    ],
+    "height": 23.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/1236483243",
+    "name": "Unnamed building",
+    "area": 5163,
+    "bounds": [
+      -1737.213,
+      -1682.16,
+      -1581.181,
+      -1605.338
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "way/27727145",
+    "name": "yes",
+    "area": 5089,
+    "bounds": [
+      6.718,
+      -1031.264,
+      158.496,
+      -902.556
+    ],
+    "height": 112.0,
+    "status": "existing-generator-needs-installed-audit",
+    "candidateOwnerFiles": [
+      "tools/strip-landmarks/ti_facades.py"
+    ]
+  },
+  {
+    "id": "way/1236483134",
+    "name": "Unnamed building",
+    "area": 5073,
+    "bounds": [
+      -1397.677,
+      -2810.116,
+      -1235.143,
+      -2684.881
+    ],
+    "height": 5.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  },
+  {
+    "id": "relation/19376341",
+    "name": "yes",
+    "area": 5015,
+    "bounds": [
+      984.967,
+      562.854,
+      1112.627,
+      726.593
+    ],
+    "height": 11.0,
+    "status": "no-owner-found-needs-reference-audit",
+    "candidateOwnerFiles": []
+  }
+]

@@ -1,0 +1,160 @@
+{
+  "id": "wynn-encore",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1269,-115.1651,800a,650d,35y,90h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "Curved bronze towers, pale horizontal bands, tan stepped low roofs and south shopping skylights; visually inspected."
+    },
+    {
+      "url": "https://cdn.wynnresorts.com/image/upload/v1745932898/visitwynn_pdfs_files/PropertyMap.pdf",
+      "provider": "Wynn official resort map",
+      "local": "build/city-exteriors/wynn-property-map.pdf",
+      "establishes": "Visually inspected map: separate casinos, garages, Encore island pool, Wynn linked pools, shopping and Lake of Dreams."
+    }
+  ],
+  "geometry": {
+    "triangles": 44784,
+    "batches": 81,
+    "optimizedMiB": 0.9
+  },
+  "estimates": {
+    "towerHeightsM": [
+      187,
+      192
+    ],
+    "podiumM": 14,
+    "garagesM": [
+      20,
+      22
+    ],
+    "note": "Mapped tower plans retained. Lower heights, window pitch, pool positions and skylights estimated from Earth/map; not survey-accurate."
+  },
+  "tests": {
+    "typecheck": "passed",
+    "visual": "Three initial and three revised installed views inspected. Low roofs remain too sparse versus reference.",
+    "roofSupport": "755 samples pass allowing 4cm higher coping around pools."
+  },
+  "evidence": [
+    "build/city-exteriors/wynn-before",
+    "build/city-exteriors/wynn-after",
+    "build/city-exteriors/wynn-final",
+    "build/city-exteriors/wynn-pavilions-final",
+    "build/city-exteriors/wynn-clean-final",
+    "build/city-exteriors/encore-canopy-final",
+    ".bitmagic/verify/screenshot.png",
+    "docs/project-records/city-exteriors-2026-10-14/verify-wynn-menu-timeout.log"
+  ],
+  "remaining": [
+    "Lake of Dreams mountain, landscaping and pools not fully represented.",
+    "Pool furniture, cabanas, arrival details and detailed storefront identities unfinished.",
+    "Tower signature signs and exact bronze daylight calibration unfinished.",
+    "Public route traversal and exact roof sections remain unverified.",
+    "Beach Club furniture, planting, sculpted facade details and exact pool contours remain unfinished.",
+    "Full public approach and interior-to-deck route traversal is not certified by the targeted structural ray tests."
+  ],
+  "remainingPass20261014": {
+    "scope": [
+      "way/111322079 theater roof",
+      "way/156626862 Encore Beach Club facade",
+      "way/135291730 podium ownership cut at Encore Beach Club courtyard",
+      "way/886592894 open west arrival canopy",
+      "way/142899198 raised round pavilion and central oculus",
+      "way/886592897 open north Encore porte-cochere"
+    ],
+    "baseline": "build/city-exteriors/showcase-final-wynn-baseline",
+    "baselineReview": "Theater roof and north frontage inspected; service/south views inside podium and invalid for review. Replace cameras.",
+    "references": [
+      {
+        "url": "https://earth.google.com/web/@36.1275,-115.1649,670a,400d,35y,0h,0t,0r",
+        "imageDate": "2022-11-09",
+        "observed": "Nadir visually inspected: rectangular brown theater roof with narrow perimeter service ring and raised rectangular center, sparse equipment."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.12945,-115.16615,650a,230d,35y,90h,65t,0r",
+        "imageDate": "2022-11-09",
+        "observed": "West aerial visually inspected: Encore Beach Club curved pale two-tier facade, red awning/curtain bays, framed central sign, open courtyard pools and rear glazed sloping roof. Existing model lacks open courtyard details."
+      },
+      {
+        "url": "https://cdn.wynnresorts.com/image/upload/v1745932898/visitwynn_pdfs_files/PropertyMap.pdf",
+        "local": "build/city-exteriors/wynn-official-map.pdf",
+        "observed": "Rendered and visually inspected. Confirms Encore Beach Club against Strip, separate from interior hotel pool courts. Theater footprint unlabeled on this current edition; retain mapped identifier without inventing current show branding."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.12945,-115.16615,650a,230d,35y,0h,0t,0r",
+        "imageDate": "2022-11-09",
+        "observed": "Nadir visually inspected: curved two-tier street cabanas, long pool court with three connected lobes, broad sloping rear glazed roof; red loungers and pale umbrellas."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.1288,-115.1646,670a,350d,35y,0h,0t,0r",
+        "imageDate": "2022-11-09",
+        "observed": "Visually inspected overhead: round dark pavilion roof with small central oculus between Encore pool courts; flat pale roof beside tower."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.12706,-115.16674,650a,200d,35y,90h,60t,0r",
+        "imageDate": "2022-11-09",
+        "observed": "Visually inspected west arrival: shallow irregular gray canopy with octagonal trim over driveway, not a closed retail block."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.12943,-115.16433,650a,210d,35y,180h,60t,0r",
+        "imageDate": "2022-11-09",
+        "observed": "Exact northern footprint inspected: open Encore porte-cochere with stepped pale flat roof and central round decorative panel. Corrects earlier mistaken enclosed-pavilion identification."
+      }
+    ],
+    "uncertainties": [
+      "Existing mapped heights preserved; new roof step and window bay heights estimated.",
+      "No theater interior changes; roof reconstruction only.",
+      "Pool courtyard and full cabana circulation require separate physical level verification.",
+      "Court envelope derives from mapped cabana hull; pool inset 4.2m, deck .28m, pool bed -1.25m, rear glazed slope 14.4\u201319.2m are estimates. Pool lobes and furniture require refinement.",
+      "Canopy soffit7.2m, top8m, three perimeter supports are fitted estimates from imagery.",
+      "Round pavilion top18m, north Encore canopy soffit7.6m and top9.35m are reference-guided estimates, not survey measurements.",
+      "Beach Club940m2 pool follows estimated centerline; precise3-lobe geometry, furniture, planting and rear decorative facade remain incomplete."
+    ],
+    "ownershipFix": "Coarse podium135291730 incorrectly included open court and obscured cabana156626862. Cut club convex envelope from podium before generating visible faces and collision. Add separate pool bed and deck; installed visual review pending. Installed review exposed a second owner: generic city building135291730 at6m was still present. Added all14 authored IDs to replacement list, removed12 remaining city footprints via building-only rebuild. Audit proves all nonbuilding surfaces and every other building index row unchanged; triangle changes confined to Wynn bounds.",
+    "tests": {
+      "roof": "839 PASS",
+      "theater": "111 PASS",
+      "court": "732 PASS",
+      "preservation": "All non-target meshes and labels identical to backup; changed sources 111322079,156626862,135291730.",
+      "geometry": "44784 triangles81batches",
+      "cityIsolation": "build/city-exteriors/wynn-city-ownership-audit.json",
+      "optimizedMiB": 0.9,
+      "canopy": "40 PASS",
+      "northCanopy": "148 clearances PASS",
+      "obsoletePoolBridge": "Zero remaining bridge triangle centroids inside court; all non-bridge groups unchanged."
+    },
+    "obsoleteBridgeRemoval": {
+      "script": "tools/city-exteriors/cut-encore-pool-paths.py",
+      "report": "build/city-exteriors/encore-pool-path-cut.json",
+      "bounds": [
+        578.857,
+        -1552.161,
+        666.707,
+        -1429.883
+      ],
+      "reason": "Generic mapped walkway kit crossed private pool at elevated height absent from Earth reference. Clip only bridge-* faces inside club envelope and exact corresponding collision triangles. Public street bridges outside remain unchanged.",
+      "preservation": "All non-bridge mesh groups exactly identical to pre-cut backup."
+    },
+    "visualReview": {
+      "status": "reviewed-with-discrepancies",
+      "captures": [
+        "build/city-exteriors/wynn-pavilions-final",
+        "build/city-exteriors/wynn-clean-final",
+        "build/city-exteriors/encore-canopy-final"
+      ],
+      "observations": "All images seen. Earlier north-pavilion shots invalid/occluded, superseded by exact north canopy camera. Open drive-through canopies, exposed round pavilion, theater roof, continuous two-tier cabanas, pool and rear glazing visible. Private obsolete elevated walkway removed. Street bridges preserved. Not photorealistic completion."
+    },
+    "verification": "Running local verify70615 with DO_NOT_TRACK=1; no upload/judge."
+  },
+  "verification": "CLI verification failed at start interaction: no Play detected within budget; final screenshot visibly shows PLAY after GPU warmup. Independent installed-game probes completed and all final images were reviewed. General CLI start gate remains failed, not waived as passed.",
+  "lakefrontIntegration": {
+    "date": "2026-10-21",
+    "change": "Selected lake-facing podium walls rebuilt as ochre/cream two-level dining elevations. Installed views inspected twice; full-site limitations retained in wynn-lakefront.json.",
+    "files": {
+      "build/strip-landmarks/wynnEncoreExterior-exterior.glb": "22dc415479426ffdfb1b5df28d3170991491b58161edf23b7454ebc9308950b7",
+      "build/strip-landmarks/wynnEncoreExterior-exterior-collision.json": "e555dc1998de69a4f6b617755e1086505fbec177f357a2846deabab902d4aee1"
+    }
+  }
+}

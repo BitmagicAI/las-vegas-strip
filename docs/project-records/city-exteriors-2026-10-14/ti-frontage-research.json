@@ -1,0 +1,24 @@
+{
+  "accessed": "2026-10-14",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1244,-115.1706,640a,380d,35y,280h,45t,0r",
+      "provider": "Google Earth",
+      "imageDate": "2022-11-09",
+      "viewed": true,
+      "observations": "East cove frontage: irregular pale stone fantasy village, coral restaurant with white cornice, northern three-storey retail volume with curved dark sign face, two actual ship outlines, long low Gilleys strip frontage, rounded southwest Starbucks kiosk."
+    },
+    {
+      "url": "https://cdn.craft.cloud/e5c2b9ea-b8f1-4463-86d9-face683786c7/assets/Property-Map-Brochure_Nov2025.pdf",
+      "provider": "Treasure Island",
+      "imageDate": "2025-11",
+      "viewed": true,
+      "observations": "CVS first floor of north retail building, upper two floors retail/entertainment TBA; old Senor Frogs area new restaurant coming soon; Gilleys remains south cove, Starbucks southern tip. Do not retain old tenant name."
+    }
+  ],
+  "uncertainties": [
+    "Facade elevations and bay dimensions estimated from aerial/photo; not survey-grade",
+    "2022 Earth terrain and newer tenant plan differ in date",
+    "Mapped ship footprints are not occupied buildings; replace gray prisms with actual hull/mast geometry"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "Body": {
+    "min": [
+      -1.2400000095367432,
+      -2.3400001525878906,
+      -0.1950002908706665
+    ],
+    "max": [
+      1.2400000095367432,
+      2.3919999599456787,
+      2.3007655143737793
+    ],
+    "size": [
+      2.4800000190734863,
+      4.732000112533569,
+      2.495765805244446
+    ]
+  },
+  "Wheel": {
+    "min": [
+      -0.475857138633728,
+      -0.475857138633728,
+      -0.24199999868869781
+    ],
+    "max": [
+      0.475857138633728,
+      0.475857138633728,
+      0.24199999868869781
+    ],
+    "size": [
+      0.951714277267456,
+      0.951714277267456,
+      0.48399999737739563
+    ]
+  },
+  "date": "2026-10-06",
+  "axes": "Blender X width, Y length, Z vertical",
+  "settledChassisAboveFloorM": 0.755,
+  "derived": {
+    "widthMirrorsM": 2.48,
+    "widthFendersM": 2.32,
+    "lengthM": 4.732,
+    "roofHeightM": 2.2825,
+    "cargoHeightM": 2.7175,
+    "antennaHeightM": 3.0558,
+    "tyreDiameterM": 0.9517,
+    "bodyColliderWidthM": 2.12
+  },
+  "reference": "https://www.jeep.com/2025/wrangler/faq.html",
+  "referenceDimensionsM": {
+    "fourDoorLength": 4.785,
+    "bodyWidth": 1.877,
+    "hardtopHeight": 1.86944
+  },
+  "conclusion": "Length normal; width and height exaggerated. Correct proportions and suspension together; uniform scaling would make length too short. No geometry changed."
+}

@@ -1,0 +1,69 @@
+{
+  "id": "residence-inn-hughes",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.marriott.com/en-us/hotels/lashh-residence-inn-las-vegas-hughes-center/photos/",
+      "review": "Official gallery found; exterior images not yet inspected."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1158,-115.1559,660a,230d,35y,40h,65t,0r",
+      "imageDate": null,
+      "review": "Opposing aerial visually inspected: U-plan, cream facade, square windows, blank service core, blue metal central roof and arrival canopy. Image date not displayed."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1158,-115.1559,660a,230d,35y,220h,65t,0r",
+      "imageDate": null,
+      "review": "Opposing aerial visually inspected: U-plan, cream facade, square windows, blank service core, blue metal central roof and arrival canopy. Image date not displayed."
+    }
+  ],
+  "remaining": [
+    "Full public entrance and pool/landscape connections",
+    "Exact bay proportions and site fixtures",
+    "Route performance"
+  ],
+  "dimensions": "Mapped 36m/11levels retained. Floor spacing, canopy5m and roofpeak39m estimated from imagery.",
+  "baseline": [
+    "build/city-exteriors/residence-inn-before/residence-inn-front.png",
+    "build/city-exteriors/residence-inn-before/residence-inn-back.png",
+    "build/city-exteriors/residence-inn-before/residence-inn-entry.png"
+  ],
+  "baselineReview": "All three inspected: blank U-shaped hotel shell with no windows, canopy or roof detail.",
+  "implementation": {
+    "ids": [
+      "way/205497576",
+      "way/1460748280"
+    ],
+    "triangles": 44836,
+    "batches": 9,
+    "tests": "30 roof support samples and3 canopy headroom samples passed."
+  },
+  "firstInstalledReview": {
+    "captures": [
+      "build/city-exteriors/residence-inn-after/residence-inn-front.png",
+      "build/city-exteriors/residence-inn-after/residence-inn-back.png",
+      "build/city-exteriors/residence-inn-after/residence-inn-entry.png"
+    ],
+    "review": "All3 inspected. Facades and blue roof present, but original3.5m canopy proxy remains beneath authored canopy; fixed ownership and placement against footprint before final review."
+  },
+  "preservation": "8,478 road and landscape groups unchanged, no additions; tools/city-exteriors/check-preservation.py passed after final building rebuild.",
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/residence-inn-final/residence-inn-front.png",
+      "build/city-exteriors/residence-inn-final/residence-inn-back.png",
+      "build/city-exteriors/residence-inn-final/residence-inn-entry.png"
+    ],
+    "review": "All3 final views inspected. Duplicate canopy proxy gone, canopy relocated to mapped footprint, windows and cream service strips present on both sides. Ground lobby openings, landscape and fine facade proportion refinement still outstanding."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/residence_inn_hughes.py": "df93f83765b2e6a4b4ba4d0f5ef337a9f8f0d011a0df87a39ae605cd23043948",
+      "build/optimized/build/strip-landmarks/residenceInnHughes-exterior.glb": "9d7253336355b8921fa73184c369b2076c324aa1056cade4110f84055e1d833a"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed; spawn sample only, see log",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-residence-inn.log"
+  }
+}

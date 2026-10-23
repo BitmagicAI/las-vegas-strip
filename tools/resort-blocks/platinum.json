@@ -1,0 +1,56 @@
+{
+  "id": "platinum",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1138,-115.1629,630a,240d,35y,145h,65t,0r",
+      "imageDate": "2024-03-05",
+      "review": "Inspected northwest view; white balcony stacks, blue-gray service mass, raised garage pool terrace, small arrival canopy."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1138,-115.1629,650a,320d,35y,320h,60t,0r",
+      "review": "Inspected southeast view; broad central glazing, blue-gray center strip, white outer wings, low parking podium and rooftop service walls; image date not shown."
+    }
+  ],
+  "dimensions": "Mapped50m tower retained;52.5m roof screen,12.4m parking podium and6m lobby are reference estimates.",
+  "remaining": [
+    "Public entrance and garage circulation",
+    "Pool access and landscaping",
+    "Exact balcony spacing and roof crown",
+    "Route performance"
+  ],
+  "baseline": [
+    "build/city-exteriors/platinum-before/platinum-front.png",
+    "build/city-exteriors/platinum-before/platinum-back.png",
+    "build/city-exteriors/platinum-before/platinum-entry.png"
+  ],
+  "baselineReview": "All3 screenshots inspected; blank tower and low-rise wings, no balcony, glazing or garage articulation.",
+  "implementation": {
+    "ids": [
+      "way/135298867",
+      "way/543423254"
+    ],
+    "triangles": 43458,
+    "batches": 13,
+    "tests": "217 roof/pool/balcony support samples pass; no circulation assertion."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/platinum-after/platinum-front.png",
+      "build/city-exteriors/platinum-after/platinum-back.png",
+      "build/city-exteriors/platinum-after/platinum-entry.png"
+    ],
+    "review": "All three installed captures inspected. Physical balconies and rails, central blue-gray glazing, rooftop service screen, garage bands and pool terrace replace blank shells. Bay spacing/solid ratio and crown remain approximate, public routes unverified."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/platinum.py": "4244d670da9883ab4dd39a5c603d2ecd61ccba0c369a5d41229a30ccfc3e1627",
+      "build/optimized/build/strip-landmarks/platinum-exterior.glb": "ab85b9dc2aa2e38c26002628f995d62bb0ddd88190141eab02b3ccae62243490"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed57fps at spawn,3011bodies; not block-route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-platinum.log"
+  }
+}

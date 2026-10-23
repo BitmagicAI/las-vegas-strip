@@ -1,0 +1,127 @@
+{
+  "id": "mirage-marquee",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/180766593",
+    "way/851629120"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=tkNtWex4AgWSseKbxXlfMQ&heading=270&pitch=50",
+      "date": "February2023",
+      "review": "Side-on white structural pylon with projecting cap; shelter has white/bronze fascia and square columns. Construction visible in2025 so historical view selected."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12020,-115.17270&heading=210&pitch=25",
+      "date": "February2016",
+      "author": "Julian Hoffbauer",
+      "review": "Nighttime north face: two tall white legs, two stacked feature panels, projecting cap with THE MIRAGE and CASINO & RESORT."
+    },
+    {
+      "url": "https://special.library.unlv.edu/ark%3A/62930/d1j38kr18",
+      "review": "UNLV Neon Survey corroborates double-post pylon, inset metallic strips and stacked display cabinets. No reliable height stated."
+    },
+    {
+      "url": "https://neonmuseum.org/news/the-magic-behind-the-signs-2/",
+      "review": "Corroborates placement south of lagoon/north of Forum Shops;184ft dimension in article belongs to FRONTIER, not Mirage."
+    }
+  ],
+  "remaining": [
+    "Neighboring Forum cornice intersects or occludes the west sign pier; relationship still needs correction.",
+    "Height60m is a visual estimate with about8m uncertainty, not surveyed.",
+    "Display artwork is original neutral branding, not a reproduction of historical show advertisements.",
+    "Typography, decorative panels and shelter branding remain approximations.",
+    "Adjacent landscaping and earlier Mirage/Forum exteriors remain simplified; no broader photorealistic claim.",
+    "Static960x540 timings do not qualify60fps drive performance."
+  ],
+  "triangles": 1912,
+  "batches": 10,
+  "optimizedMiB": 0.86,
+  "viewsInspected": [
+    "build/city-exteriors/mirage-marquee-final/mirage-sign-south.png",
+    "build/city-exteriors/mirage-marquee-final/mirage-sign-north.png",
+    "build/city-exteriors/mirage-marquee-final/mirage-sign-base.png"
+  ],
+  "tests": [
+    "209 roof support samples passed",
+    "Four bidirectional shelter walking reports passed",
+    "20 old shell/collision triangles removed at mapped5m/3m heights",
+    "Three installed views inspected"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "mirage-sign-south",
+        "eye": [
+          30,
+          12,
+          -365
+        ],
+        "target": [
+          0,
+          30,
+          -427
+        ],
+        "p": [
+          20,
+          1,
+          -402
+        ],
+        "p50": 23.5,
+        "p95": 27.5
+      },
+      {
+        "name": "mirage-sign-north",
+        "eye": [
+          23,
+          12,
+          -492
+        ],
+        "target": [
+          0,
+          30,
+          -427
+        ],
+        "p": [
+          18,
+          1,
+          -454
+        ],
+        "p50": 49.5,
+        "p95": 69.60000002384186
+      },
+      {
+        "name": "mirage-sign-base",
+        "eye": [
+          27,
+          5,
+          -415
+        ],
+        "target": [
+          4,
+          3,
+          -423
+        ],
+        "p": [
+          20,
+          1,
+          -418
+        ],
+        "p50": 16.600000023841858,
+        "p95": 19.099999964237213
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 20,
+    "colliderTrianglesRemoved": 20,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in mirageMarquee mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/mirageMarquee-exterior.glb": "0c6d5b2aa0c7eb2c2d1d586b4facb5e33d5f520d7f879f1155964629338bbf6b",
+      "build/strip-landmarks/mirageMarquee-exterior-collision.json": "912c4921891eefc93d34e931594be4ed9fde94fa82bac7ac2bc188b39bf7c911"
+    }
+  }
+}

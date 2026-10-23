@@ -1,0 +1,62 @@
+{
+  "id": "venetian-expo",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1220,-115.1660,650a,650d,35y,180h,60t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1217,-115.1662,650a,530d,35y,270h,65t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://www.venetianlasvegas.com/meetings/planning/spaces/expo-halls/expo-map-floor-plan.html",
+      "inspected": "Level 1 and 2 map images viewed; Hall G13ft5in, upper halls32ft5in clear ceiling"
+    }
+  ],
+  "dimensions": "Mapped plan retained; outer roof18m estimated from two hall levels and Earth. Hotel-side meeting wing22m estimated. Not survey-confirmed.",
+  "remaining": [
+    "Entrances and accessible onward routes",
+    "Exact height fit and roof equipment placement",
+    "Adjacent Sphere bridge connection",
+    "Neutral-light close surface review"
+  ],
+  "geometry": {
+    "triangles": 15971,
+    "batches": 11
+  },
+  "tests": {
+    "roofSupportSamples": 28,
+    "failures": 0,
+    "roadLandscapeGroupsPreserved": 8478
+  },
+  "verification": "Typecheck passed. Final full local WebGPU verification55fps at spawn3011bodies. Final neighborhood probe no errors. No claim of street-route60fps.",
+  "collisionFix": {
+    "cause": "Building replacement left empty city collision cell3,-4; Rapier refused null raw trimesh",
+    "change": "Filter cells with no indices during building-only regeneration. Removed current empty cell and updated collision revision.",
+    "test": "test-expo-city-collision.mjs:1517 nonempty cells,24 Expo neighborhood colliders constructed successfully"
+  },
+  "installedReview": {
+    "views": [
+      "build/city-exteriors/venetian-expo-checked/expo-north.png",
+      "build/city-exteriors/venetian-expo-checked/expo-east.png",
+      "build/city-exteriors/venetian-expo-checked/expo-entry.png"
+    ],
+    "inspected": true,
+    "findings": [
+      "Curved glazed Sands frontage and loading facade replace old6m mass",
+      "Corrected fascia lettering visible",
+      "No page errors in final neighborhood probe",
+      "Meeting wing height and roof equipment remain photo-estimated",
+      "Existing Sphere bridge still meets an opaque interior boundary; onward route not implemented"
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/venetianExpo-exterior.glb": "fdb6b6432b31eabd21a7d95aba35dffa22356d1fdf5bea87bb39113f093cad05"
+    }
+  }
+}

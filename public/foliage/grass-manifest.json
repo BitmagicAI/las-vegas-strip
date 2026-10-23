@@ -1,0 +1,16 @@
+{
+  "kind": "mown-grass",
+  "source": "tools/foliage/build_lawn_blades.py",
+  "lods": [
+    {
+      "level": 0,
+      "triangles": 72,
+      "blades": 24
+    },
+    {
+      "level": 1,
+      "triangles": 8,
+      "blades": 8
+    }
+  ]
+}

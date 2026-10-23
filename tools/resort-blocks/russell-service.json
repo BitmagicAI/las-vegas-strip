@@ -1,0 +1,115 @@
+{
+  "id": "russell-service",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1378308607"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.08584,-115.17460&zoom=21&basemap=satellite",
+      "review": "Rectangular white membrane roof with six equipment/vent groups; paved service yard east, narrower west aisle"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.08620,-115.17465&heading=180&pitch=3",
+      "imageDate": "February2025",
+      "review": "Blank tan north end wall with brown parapet cap; yard walls and billboard adjacent"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.08578,-115.17560&heading=90&pitch=3",
+      "imageDate": "October2024",
+      "review": "West side concealed by trees and parking fence; no detailed facade evidence"
+    }
+  ],
+  "remaining": [
+    "Side and rear service doors/vents inferred because concealed in street photos",
+    "Full yard planting, fence and billboard not implemented",
+    "No interior, neutral daylight or driving benchmark"
+  ],
+  "triangles": 2438,
+  "batches": 17,
+  "tests": [
+    "358 roof support samples PASS",
+    "8 perimeter walking legs PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/russell-service-final/russell-north.png",
+    "build/city-exteriors/russell-service-final/russell-roof.png",
+    "build/city-exteriors/russell-service-final/russell-east.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "russell-north",
+        "eye": [
+          -144,
+          3,
+          3317
+        ],
+        "target": [
+          -144,
+          3,
+          3350
+        ],
+        "p": [
+          -144,
+          2,
+          3338
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.30000001192093
+      },
+      {
+        "name": "russell-roof",
+        "eye": [
+          -119,
+          36,
+          3328
+        ],
+        "target": [
+          -144,
+          3,
+          3358
+        ],
+        "p": [
+          -133,
+          2,
+          3342
+        ],
+        "p50": 16.599999964237213,
+        "p95": 18
+      },
+      {
+        "name": "russell-east",
+        "eye": [
+          -116,
+          3,
+          3373
+        ],
+        "target": [
+          -142,
+          2,
+          3358
+        ],
+        "p": [
+          -134,
+          2,
+          3370
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.899999976158142
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 10,
+    "colliderTrianglesRemoved": 10,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in RussellService mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/russellService-exterior.glb": "53f497e7ec0099530a84928189b1f004a719249fcf215912dbd21229f1a3c4d0",
+      "build/strip-landmarks/russellService-exterior-collision.json": "f5101514c8d2cc8d9e5b9308d6a3502ac46e550078572d695e58da78c6772f2b"
+    }
+  }
+}

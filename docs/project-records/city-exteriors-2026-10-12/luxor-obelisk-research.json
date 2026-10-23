@@ -1,0 +1,40 @@
+{
+  "mappedIds": [
+    "way/399368723"
+  ],
+  "sources": [
+    {
+      "url": "https://special.library.unlv.edu/ark:/62930/d1pr7n21j",
+      "date": "2002/2017",
+      "review": "Primary survey describes four-sided obelisk with vertical Luxor lettering, carved patterns, statuary and pedestrian tunnel below; separate northern pylon sign must not be confused with it."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0E6OHRMLPqD1AuzfXTOKDQ&heading=270&pitch=60",
+      "date": "2024-10",
+      "review": "East face visually inspected. Pale tapered shaft, stepped plinth, dense shallow carved glyphs; no Luxor word on this face. Base above sidewalk appears solid; tunnel elevation unresolved."
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_modern_obelisks",
+      "review": "Secondary source search result lists Luxor Hotel obelisk140ft/43m. Needs height corroboration; mappedheight62 and roofheight70 conflict."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09568,-115.17308&heading=205&pitch=15",
+      "date": "2024-10",
+      "review": "North face inspected: vertical blue/gold lettering and repeated five relief figures on pedestal; apex outside frame."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.09548,-115.17332&zoom=21&basemap=satellite",
+      "review": "Aerial inspected: north/south pedestrian axis through base; road east and parking west."
+    },
+    {
+      "url": "https://www.flickr.com/photos/allard1/8655734890",
+      "review": "Secondary photographer caption corroborates 140ft/43m; not a primary measured survey."
+    }
+  ],
+  "status": "Modeled; installed visual verification pending",
+  "remaining": [
+    "42.672m overall height follows published 140ft, not survey.",
+    "Pedestrian tunnel floor and 2.68m clearance are inferred; no measured section.",
+    "Original glyph patterns and base figures approximate ornament; not a transcription or scan."
+  ]
+}

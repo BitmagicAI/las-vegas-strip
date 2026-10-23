@@ -1,0 +1,26 @@
+{
+  "name": "vegas-afterlight-storm-v4-preview",
+  "music": ".bitmagic/film/storm/storm-v4-sound-design.wav",
+  "musicStart": 0,
+  "fadeIn": 0.4,
+  "fadeOut": 1.0,
+  "previewCrf": 18,
+  "clips": [
+    {
+      "take": "storm-v4c-rt",
+      "in": 0,
+      "dur": 44.983333333333334,
+      "label": "Physical interceptor \u2014 Elara to Bellagio"
+    }
+  ],
+  "cards": [
+    {
+      "at": 0.7,
+      "dur": 2.4,
+      "style": "caption",
+      "text": "VEGAS: AFTERLIGHT",
+      "sub": "STORM RUN \u00b7 ELARA TO BELLAGIO",
+      "fade": 0.5
+    }
+  ]
+}

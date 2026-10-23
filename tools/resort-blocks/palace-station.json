@@ -1,0 +1,66 @@
+{
+  "id": "palace-station",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://travelnevada.com/resorts-casinos/palace-station-hotel-casino/",
+      "review": "State tourism confirms21-story tower; mapped65m is plausible, not independently measured."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1426,-115.1756,650a,600d,35y,250h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected eastern aerial: single narrow tower, light vertical piers and dark grid, low casino roof, south parking garage and pool."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1426,-115.1756,650a,380d,35y,70h,65t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected western aerial: three raised capped roof features, regular windows, approximately seven-level south garage, lower west garage and arrival canopy."
+    }
+  ],
+  "remaining": [
+    "Arrival canopy and real entrance apertures",
+    "Pool deck, landscaping and garage ramps",
+    "Closer facade reference matching and material review",
+    "Full route and performance measurements"
+  ],
+  "baseline": [
+    "build/city-exteriors/palace-station-before/palace-east.png",
+    "build/city-exteriors/palace-station-before/palace-west.png",
+    "build/city-exteriors/palace-station-before/palace-arrival.png"
+  ],
+  "baselineReview": "All three PNGs visually inspected: entirely blank tower/casino walls, garages compressed to mapped3\u20135m.",
+  "implementation": {
+    "triangles": 73587,
+    "batches": 20,
+    "ids": [
+      "way/543645430",
+      "way/276425915",
+      "way/146612127",
+      "relation/19559597"
+    ],
+    "heightsM": {
+      "towerMain": 60,
+      "towerRoofPeak": 66,
+      "casino": 11,
+      "southGarage": 21,
+      "westGarage": 9
+    },
+    "heightUncertainty": "Tower mapped65m and state tourism21stories. Other heights estimated from aerial level counts, not surveyed.",
+    "tests": "509 upward collision samples pass. Entrance and garage ramp routes not yet verified."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/palace-station-after/palace-east.png",
+      "build/city-exteriors/palace-station-after/palace-west.png",
+      "build/city-exteriors/palace-station-after/palace-arrival.png"
+    ],
+    "review": "All three inspected. Tower windows and capped bays replace blank shell. Garage heights and side openings present. Casino has trim/glazing but generic frontage, no proper arrival canopy. Pool deck still absent. No photorealism or full site completion claim."
+  },
+  "verification": "Typecheck and local full WebGPU verify passed;58fps at spawn,3011bodies. No block route timing claim.",
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/palace_station.py": "e880d8d3cc0e3dcb7e588632e07b5b45b3d95602ecc8651fdc1a7faa498b1830",
+      "build/optimized/build/strip-landmarks/palaceStation-exterior.glb": "195458aecc46decf9300fe7a606c81c90042794f625af2dc3b1141f20e446623"
+    }
+  }
+}

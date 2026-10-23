@@ -1,0 +1,98 @@
+[
+ {
+  "name": "planet-aerial",
+  "eye": [
+   -190,
+   200,
+   830
+  ],
+  "target": [
+   205,
+   38,
+   657
+  ],
+  "p50": 17.799999952316284,
+  "p95": 19.5,
+  "render": {
+   "calls": 2200,
+   "frameCalls": 4,
+   "drawCalls": 1204,
+   "triangles": 16566357,
+   "points": 200,
+   "lines": 1792,
+   "timestamp": 0
+  }
+ },
+ {
+  "name": "planet-north",
+  "eye": [
+   9,
+   7,
+   565
+  ],
+  "target": [
+   65,
+   10,
+   553
+  ],
+  "p50": 16.700000047683716,
+  "p95": 17.5,
+  "render": {
+   "calls": 2944,
+   "frameCalls": 3,
+   "drawCalls": 342,
+   "triangles": 6091617,
+   "points": 100,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "name": "planet-center",
+  "eye": [
+   -3,
+   5,
+   650
+  ],
+  "target": [
+   60,
+   15,
+   650
+  ],
+  "p50": 16.799999952316284,
+  "p95": 18.799999952316284,
+  "render": {
+   "calls": 3691,
+   "frameCalls": 3,
+   "drawCalls": 286,
+   "triangles": 4021081,
+   "points": 100,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "name": "planet-south",
+  "eye": [
+   0,
+   5,
+   740
+  ],
+  "target": [
+   65,
+   10,
+   710
+  ],
+  "p50": 16.700000047683716,
+  "p95": 17.799999952316284,
+  "render": {
+   "calls": 4441,
+   "frameCalls": 3,
+   "drawCalls": 560,
+   "triangles": 6493233,
+   "points": 100,
+   "lines": 0,
+   "timestamp": 0
+  }
+ }
+]

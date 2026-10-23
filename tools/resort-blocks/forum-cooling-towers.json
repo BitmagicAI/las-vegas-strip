@@ -1,0 +1,110 @@
+{
+  "id": "forum-cooling-towers",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1380575885"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11971,-115.17479&zoom=21&basemap=satellite",
+      "review": "Two square fan cells aligned north/south with large six-blade fans; grey metal housings, connecting pipework, perimeter service platform. Exact building:part footprint is a hole in parent way/34068416."
+    }
+  ],
+  "remaining": [
+    "Platform16.8m follows the estimated adjacent mall roof, not surveyed elevation.",
+    "North/west supporting service facades are inferred; aerial establishes equipment and exposed boundaries but not all ground-level facade details.",
+    "Pipe routes and fan casing detail approximated; fans static.",
+    "Existing Forum Shops surrounding roofs/facades remain simplified; no photorealistic completion claim.",
+    "Static960x540 captures do not establish60fps driving; wide skyline view notably slower than closer views."
+  ],
+  "triangles": 4277,
+  "batches": 9,
+  "optimizedMiB": 0.08,
+  "viewsInspected": [
+    "build/city-exteriors/forum-cooling-towers-final/forum-cooling-wide.png",
+    "build/city-exteriors/forum-cooling-towers-final/forum-cooling-deck.png",
+    "build/city-exteriors/forum-cooling-towers-final/forum-cooling-top.png"
+  ],
+  "tests": [
+    "270 roof support samples passed with surrounding city and Forum Shops collision",
+    "Two bidirectional service lane reports passed",
+    "187 false five metre building triangles and matching collider triangles removed",
+    "Three installed views inspected after correcting unsupported platform"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "forum-cooling-wide",
+        "eye": [
+          -117,
+          48,
+          -454
+        ],
+        "target": [
+          -160,
+          19,
+          -413
+        ],
+        "p": [
+          -147,
+          18,
+          -401
+        ],
+        "p50": 40.59999996423721,
+        "p95": 44.89999997615814
+      },
+      {
+        "name": "forum-cooling-deck",
+        "eye": [
+          -149,
+          23,
+          -398
+        ],
+        "target": [
+          -161,
+          19,
+          -412
+        ],
+        "p": [
+          -149,
+          18,
+          -402
+        ],
+        "p50": 16.900000035762787,
+        "p95": 21.099999964237213
+      },
+      {
+        "name": "forum-cooling-top",
+        "eye": [
+          -161,
+          51,
+          -414
+        ],
+        "target": [
+          -160.7,
+          16,
+          -413
+        ],
+        "p": [
+          -149,
+          18,
+          -402
+        ],
+        "p50": 17.099999964237213,
+        "p95": 20.80000001192093
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 187,
+    "colliderTrianglesRemoved": 187,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in forumCoolingTowers mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/forumCoolingTowers-exterior.glb": "ac8a83a5cad608fd58fc7ad8a6519dd15556eb831089f89565ec2e6f6b9ec248",
+      "build/strip-landmarks/forumCoolingTowers-exterior-collision.json": "6d59d46828c768f844dc9c95504a2dd61d39a47f046957bfd002dace151ca562"
+    }
+  }
+}

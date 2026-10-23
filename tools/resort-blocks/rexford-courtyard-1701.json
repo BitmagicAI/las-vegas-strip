@@ -1,0 +1,42 @@
+{
+  "id": "rexford-courtyard-1701",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725809"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15098,-115.15005&zoom=20&basemap=satellite",
+      "observed": "Long rectangular two-wing ring with central open rectangular pool court; white roof, rounded northeast corner, alley parking west and small service annex south."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15098,-115.14958&heading=270&pitch=0",
+      "imageDate": "January2022",
+      "observed": "Two stories, pale blue/white stucco, wide and narrow horizontal louvered windows, tall perforated masonry strips, flat overhanging roof, dry garden frontage."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15124,-115.14961&heading=240&pitch=0",
+      "imageDate": "January2021",
+      "observed": "1701RexfordDr northeast curved corner and roof overhang, pale mint lower/upper balcony bands, recessed glazed entry, textured curved white corner wall. Older imagery; current finish not established."
+    }
+  ],
+  "remaining": [
+    "Current exterior condition needs newer imagery than2021/22",
+    "Gallery elevations3m/roof6.12m and courtyard stair/passage arrangement estimated; not measured plans",
+    "Landscaping, textured curved corner entry, precise screen/window layout and rear service annex missing",
+    "Doors opaque exterior units; no private unit interiors",
+    "Performance route benchmark pending; latest static960x540p95~29.9ms with simultaneous browser research, not isolated"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/rexford-courtyard-1701-final",
+    "review": "Four installed views inspected; closed facade seam, removed screen/window intersections and added landing guard; final street/court rechecked",
+    "tests": "639support6groundwalk6stairlegsPASS including upper/lower height assertions;10oldtri removed",
+    "implementation": "16164tri17batches.29MiBwebpoptimized"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/rexfordCourtyard1701-exterior.glb": "ecb37809838c49a8730c8d48ab955a7888902559082cebecb9f00d8f7fbf4b24",
+      "build/strip-landmarks/rexfordCourtyard1701-exterior-collision.json": "0c4860fc0235c9a11b77a8e7bd82a1ba008e8f1a054e9254934b204a81ea5f37"
+    }
+  }
+}

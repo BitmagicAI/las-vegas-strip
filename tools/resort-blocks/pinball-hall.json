@@ -1,0 +1,54 @@
+{
+  "id": "pinball-hall",
+  "name": "Pinball Hall of Fame",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://pinballmuseum.org/news.php",
+      "provider": "Museum",
+      "observed": "New2021building4925LasVegasBlvd,25000sf."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pinball_Hall_of_Fame_front.jpg",
+      "provider": "Fugugames own photograph",
+      "imageDate": "2021-07-02",
+      "accessed": "2026-10-19",
+      "observed": "Visually inspected: enormous red condensed PINBALL lettering on white upper west frontage; low gray entry below; simple warehouse behind."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pinball_Hall_of_Fame_sign_and_building.jpg",
+      "provider": "TalkTuahLunchly own photograph",
+      "imageDate": "2026-06-22",
+      "accessed": "2026-10-19"
+    }
+  ],
+  "remaining": [
+    "Pylon curved profile/branding remains simplified; no photo-perfect claim.",
+    "Landscaping and neighboring unowned site-ground gaps remain.",
+    "Public interior and entrance traversal not implemented or verified.",
+    "Warehouse6m mapped height and groundstory3.15m estimated; signage12.2m from planning search snippet not surveyed."
+  ],
+  "implementation": {
+    "asset": "build/strip-landmarks/pinballHall-exterior.glb",
+    "triangles": 5059,
+    "batches": 15,
+    "retained": "Mapped city warehouse collision; exterior skin offset and subgrade below city paving. No interiors changed."
+  },
+  "evidence": [
+    "build/city-exteriors/pinball-final/pinball-front.png",
+    "build/city-exteriors/pinball-final/pinball-aerial.png",
+    "build/city-exteriors/pinball-sign-final/pinball-sign-north.png",
+    "build/city-exteriors/pinball-sign-final/pinball-sign-south.png"
+  ],
+  "tests": {
+    "floorSupport": "567 samples passed: build/city-exteriors/pinball-collision.json",
+    "verify": "CLI timed out at menu; separate game probes entered game and captured views. Do not claim CLI verification passed.",
+    "warmFrames": "960x540 ultra sign probes p50~16.6ms p95~17.6ms; not full city driving benchmark"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/pinballHall-exterior.glb": "ddabd7a2438ca8d4bdbbb6eaf147297b4384fdc40f3a1dad7bf191280a498170",
+      "tools/strip-landmarks/pinball_hall.py": "6231aaff5f8939bd7a9011f8f82c5167273af54d9dc72903623e05e7b27b90ac"
+    }
+  }
+}

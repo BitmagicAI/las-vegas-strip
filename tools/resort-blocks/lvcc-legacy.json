@@ -1,0 +1,47 @@
+{
+  "id": "lvcc-legacy",
+  "status": "refinement-deferred",
+  "mappedId": "way/27925846",
+  "references": [
+    {
+      "url": "https://www.vegasmeansbusiness.com/meeting-facilities/convention-and-conference-facilities/las-vegas-convention-center/renovation/",
+      "inspected": true,
+      "observations": "Official project imagery: glazed central arrival with large white ribbon roof and thin mullions. Project rendering/photograph distinction uncertain."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1314,-115.1510,680a,830d,35y,90h,55t,0r",
+      "imagery": "2024-03-05",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1314,-115.1510,680a,880d,35y,270h,55t,0r",
+      "imagery": "2024-03-05",
+      "inspected": true
+    }
+  ],
+  "dimensions": "North14m, Central16m and South24m roof elevations estimated; central arrival crest27m estimated. Mapped footprint retained. Older imagery establishes hall footprint/service roof but not renovated front.",
+  "remaining": [
+    "Exact surveyed heights and renovation fit",
+    "Full entrance lobby and public connections",
+    "Arrival plaza and landscape details; current mapped circulation looks overly raised",
+    "Service facades and roof equipment remain approximate"
+  ],
+  "geometry": {
+    "triangles": 96862,
+    "batches": 11,
+    "optimizedMiB": 1.56
+  },
+  "tests": "8812 roof/floor samples PASS; typecheck PASS;1517 city collision cells valid; local WebGPU verify PASS at57fps startup3011bodies (not site benchmark)",
+  "viewsReviewed": [
+    "build/city-exteriors/lvcc-legacy-checked/lvcc-west.png",
+    "build/city-exteriors/lvcc-legacy-checked/lvcc-service.png",
+    "build/city-exteriors/lvcc-legacy-checked/lvcc-entry.png",
+    "build/city-exteriors/lvcc-legacy-checked/lvcc-south.png"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/lvccLegacy-exterior.glb": "c14f6b043351763dbaf9914637fe16959cfd46e91b3f39c911399a74b07fcca1"
+    }
+  },
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-lvcc-legacy.log"
+}

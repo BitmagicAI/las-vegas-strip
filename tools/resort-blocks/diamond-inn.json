@@ -1,0 +1,51 @@
+{
+  "id": "diamond-inn",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.jpking.com/blog/auction-determines-the-fate-of-vegas-historic-pink-elephant/",
+      "provider": "Auction agent",
+      "date": "2024-03-07",
+      "observed": "1.36acre,237ft frontage,existing motel and pink elephant"
+    },
+    {
+      "url": "https://images1.loopnet.com/i2/3cXfNywqToq4opyLAab_aeergK57fHM3n7jnJn1xzuI/116/4605-S-Las-Vegas-Blvd-Las-Vegas-NV-Building-Photo-2-LargeHighDefinition.jpg",
+      "provider": "Sale listing photo",
+      "date": "unknown",
+      "observed": "Inspected U-shaped white low motel/blue fascia,pool,pylons,central trees,closed-site fence"
+    },
+    {
+      "url": "https://www.google.com/maps/search/4605+S+Las+Vegas+Blvd",
+      "provider": "Google Maps satellite",
+      "date": "unknown",
+      "observed": "Inspected mapped U plan and kidney pool at street edge;permanently closed business label.2026copyright is not capture date"
+    }
+  ],
+  "dimensions": "Mapped way4579391201908.6m2;one-storey roof3.65m estimated from photo,previous6m fallback removed. Pool and pylons estimated fromsatellite/photo.",
+  "remaining": [
+    "Elephant anatomy and surface detail remain simplified; not photorealistic",
+    "Sparse palm fronds and primitive shrubs need replacement/refinement",
+    "Room interiors and closed-site perimeter fence not included",
+    "Neighboring parcels show missing ground in aerial review; not repaired by this property pass"
+  ],
+  "tests": {
+    "support": "172 floor/headroom samples passed, including pavilion and porch",
+    "walking": "6 legs both directions passed with city and level colliders after raising apron from -.12 to .02 and dividing long triangles into 4m patches; test subsequently aligned with actual engine 0.08m skin and 0.01m normal nudge (older stricter harness had false flat-ground stalls on Nirvana).",
+    "ownership": "140 mapped shell visual/collision triangles removed within three footprints; unrelated triangles retained exactly",
+    "typecheck": "passed docs/project-records/city-exteriors-2026-10-19/check-diamond.log",
+    "runtime": "Installed game capture probe played successfully; CLI verify not rerun this pass (previous properties failed menu detection)"
+  },
+  "evidence": [
+    "build/city-exteriors/diamond-final/diamond-front.png",
+    "build/city-exteriors/diamond-final/diamond-courtyard.png",
+    "build/city-exteriors/diamond-final/diamond-elephant.png",
+    "build/city-exteriors/diamond-final/diamond-aerial.png"
+  ],
+  "performance": "960x540ultra fixed aerial p50 16.6ms p95 17.3ms; not route benchmark",
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/diamondInn-exterior.glb": "a08999e2498e21c835583e0333bd5e8895223e5db97585f37c9f7087a5978ff4",
+      "build/strip-landmarks/diamondInn-exterior-collision.json": "e8e61dba3462b1260c9e674134328701fc5f8d1128d8536b645671c9a0d02ee1"
+    }
+  }
+}

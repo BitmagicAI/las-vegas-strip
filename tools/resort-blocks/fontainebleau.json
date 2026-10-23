@@ -1,0 +1,341 @@
+{
+  "id": "fontainebleau",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://www.bwaltd.com/project-detail/fontainebleau-las-vegas",
+      "accessDate": "2026-10-12",
+      "provider": "Bergman Walls & Associates, architect of record",
+      "observed": "2023 completed resort; podium/retail/event/pool facilities listed; photo visual review pending."
+    },
+    {
+      "url": "https://www.fontainebleaulasvegas.com/uploads/2025/08/Lookbook_08152025.pdf",
+      "provider": "Fontainebleau Las Vegas",
+      "observed": "Page 2 inspected: curved white canopy with fan-shaped metal fins; page 5 Waterbleau event terrace."
+    },
+    {
+      "url": "https://www.fontainebleaulasvegas.com/uploads/2026/07/Level3_071026.png",
+      "accessDate": "2026-10-12",
+      "observed": "Official July 2026 Level 3 plan visually inspected: angular connected Oasis pool, La Mer, Legacy and pool casino; schematic plan fitted to surveyed podium."
+    },
+    {
+      "url": "https://www.fontainebleaulasvegas.com/uploads/2024/02/Level1_071026.jpg",
+      "accessDate": "2026-10-12",
+      "observed": "Official Level 1 plan: front drive north of tower, west retail entrance and south entrance on east edge."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1375,-115.1594,780a,850d,35y,80h,55t,0r",
+      "imageryDate": "2022-11-09",
+      "observed": "Curved blue tower, white midheight band, pale garage; unfinished pool deck not used as final reference."
+    },
+    {
+      "url": "https://www.khsswest.com/wp-content/uploads/2024/05/AWCIConstructionDimensionsApril.pdf",
+      "provider": "AWCI / KHS&S contractor",
+      "accessDate": "2026-10-13",
+      "observed": "Local PDF pages 7\u20139 visually inspected. Flared white columns and radial pool canopy. Text reports a 100ft by 30ft wall with 22 circular openings, but image shows many smaller circles: features not conflated or placed without location evidence.",
+      "localEvidence": "build/city-exteriors/fontainebleau-reference/awci-april-2024.pdf"
+    }
+  ],
+  "components": [
+    {
+      "id": "tower",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "podium-and-arrival",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "pool-deck",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "service-facades",
+      "status": "implemented-visually-reviewed"
+    }
+  ],
+  "remaining": [
+    "Upper-deck access, landscaping and complete cabana/furniture layout remain unfinished.",
+    "Podium height and schematic plan fit require further measured comparison; low-rise terrace volumes remain simplified.",
+    "Tower glass reads too flat in sunset front views; material refinement and brand signage remain.",
+    "North canopy lacks photographed central water wall, entrance glazing, bowtie logo and flared supporting column integration. Lower band and canopy dimensions remain estimated.",
+    "Large roof service volumes and garden layouts are still sparse; public podium facades remain generic at close range."
+  ],
+  "estimatedDimensions": {
+    "poolDeckM": 16,
+    "canopyClearanceM": 5.3,
+    "canopyWidthM": 64,
+    "towerBeltElevationM": 112,
+    "method": "Visual estimates, not measured. Pool outline schematic fitted to surveyed podium, not a centimetre-accurate plan.",
+    "canopyCrownM": 13.8,
+    "canopyLowerBandWidthM": 30
+  },
+  "geometry": {
+    "triangles": 26858,
+    "batches": 29
+  },
+  "evidence": [
+    "build/city-exteriors/fontainebleau-before",
+    "build/city-exteriors/fontainebleau-after",
+    "build/city-exteriors/fontainebleau-final",
+    "build/city-exteriors/fontainebleau-collision-test.json"
+  ],
+  "tests": {
+    "roofSupportSamples": 129,
+    "failures": 0,
+    "typecheck": "passed"
+  },
+  "podiumPass": {
+    "date": "2026-10-13",
+    "stage": "reviewed-pass-refinement-deferred",
+    "baseline": "build/city-exteriors/fontainebleau-podium-before",
+    "changes": [
+      "Replaced triangular north-canopy fins with 77 curved metal ribs, closed upper roof/soffit and lower branding band.",
+      "Dedicated pale flat roof replaces generic corrugated-looking bitumen across this resort."
+    ],
+    "tests": {
+      "roofSamples": 96,
+      "clearanceSamples": 147,
+      "terraceSupportSamples": 129,
+      "failures": 0,
+      "typecheck": "passed"
+    },
+    "scope": "No tower geometry, roads, interiors or lights regenerated. Canopy dimensional fit remains estimated; public interior route not verified.",
+    "after": "build/city-exteriors/fontainebleau-podium-after",
+    "beforePerformance": [
+      {
+        "name": "fontainebleau-podium-west",
+        "eye": [
+          940,
+          25,
+          -2440
+        ],
+        "target": [
+          1120,
+          10,
+          -2440
+        ],
+        "p": [
+          1030,
+          2,
+          -2440
+        ],
+        "p50": 16.59999990463257,
+        "p95": 18.700000047683716
+      },
+      {
+        "name": "fontainebleau-podium-north",
+        "eye": [
+          1140,
+          18,
+          -2640
+        ],
+        "target": [
+          1220,
+          10,
+          -2515
+        ],
+        "p": [
+          1150,
+          2,
+          -2570
+        ],
+        "p50": 16.699999809265137,
+        "p95": 19
+      },
+      {
+        "name": "fontainebleau-podium-south",
+        "eye": [
+          1170,
+          30,
+          -2150
+        ],
+        "target": [
+          1220,
+          14,
+          -2290
+        ],
+        "p": [
+          1140,
+          2,
+          -2250
+        ],
+        "p50": 16.59999990463257,
+        "p95": 18.700000047683716
+      },
+      {
+        "name": "fontainebleau-deck",
+        "eye": [
+          1220,
+          100,
+          -2130
+        ],
+        "target": [
+          1200,
+          20,
+          -2380
+        ],
+        "p": [
+          1240,
+          18,
+          -2370
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.799999952316284
+      },
+      {
+        "name": "fontainebleau-garage-east",
+        "eye": [
+          1470,
+          35,
+          -2420
+        ],
+        "target": [
+          1340,
+          15,
+          -2400
+        ],
+        "p": [
+          1420,
+          2,
+          -2400
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.200000047683716
+      }
+    ],
+    "afterPerformance": [
+      {
+        "name": "fontainebleau-arrival-close",
+        "eye": [
+          1220,
+          5,
+          -2576
+        ],
+        "target": [
+          1220,
+          8,
+          -2547
+        ],
+        "p": [
+          1220,
+          2,
+          -2565
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.09999990463257
+      },
+      {
+        "name": "fontainebleau-podium-west",
+        "eye": [
+          940,
+          25,
+          -2440
+        ],
+        "target": [
+          1120,
+          10,
+          -2440
+        ],
+        "p": [
+          1030,
+          2,
+          -2440
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.200000047683716
+      },
+      {
+        "name": "fontainebleau-podium-north",
+        "eye": [
+          1140,
+          18,
+          -2640
+        ],
+        "target": [
+          1220,
+          10,
+          -2515
+        ],
+        "p": [
+          1150,
+          2,
+          -2570
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.600000143051147
+      },
+      {
+        "name": "fontainebleau-podium-south",
+        "eye": [
+          1170,
+          30,
+          -2150
+        ],
+        "target": [
+          1220,
+          14,
+          -2290
+        ],
+        "p": [
+          1140,
+          2,
+          -2250
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.5
+      },
+      {
+        "name": "fontainebleau-deck",
+        "eye": [
+          1220,
+          100,
+          -2130
+        ],
+        "target": [
+          1200,
+          20,
+          -2380
+        ],
+        "p": [
+          1240,
+          18,
+          -2370
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "fontainebleau-garage-east",
+        "eye": [
+          1470,
+          35,
+          -2420
+        ],
+        "target": [
+          1340,
+          15,
+          -2400
+        ],
+        "p": [
+          1420,
+          2,
+          -2400
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.299999952316284
+      }
+    ],
+    "performanceMethod": "Fixed 180 frames per view, 1280x720 ultra, not a whole-route guarantee.",
+    "visualReview": "All five baseline and six installed views inspected. Curved rib shape is substantially closer; ordinary repeated facade behind the arrival, absent water wall and landscaping remain visible mismatches. Roof material no longer corrugated.",
+    "verify": "FAILED Play detection; see local log. Six direct installed captures succeeded.",
+    "verifyLog": "docs/project-records/city-exteriors-2026-10-12/verify-fontainebleau-podium.log"
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/fontainebleauExterior-exterior.glb": "4bedd0a45e5891b8128850ef22c961727977777844ab88b4129e7caf7de87b3c",
+      "build/strip-landmarks/fontainebleauExterior-exterior-collision.json": "0b8c83ad5343140afbd95762ab754ce6ffd918392e5924bed014baba27cdc2bd",
+      "tools/strip-landmarks/fontainebleau_arrival.py": "f33e82e05ff898937be60e17e12505c85cbd11c9b55388a1480ee2ddafffe99c"
+    }
+  }
+}

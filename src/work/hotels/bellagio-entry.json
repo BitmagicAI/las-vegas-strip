@@ -1,0 +1,173 @@
+{
+ "format": "bitmagic-mesh-level",
+ "version": 1,
+ "units": "meters",
+ "colliders": [
+  {
+   "name": "0001 podium shaft cladding",
+   "shape": "box",
+   "position": [
+    -3.83,
+    5.4,
+    0.0
+   ],
+   "size": [
+    0.24,
+    10.8,
+    10.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0002 podium shaft cladding",
+   "shape": "box",
+   "position": [
+    3.83,
+    5.4,
+    0.0
+   ],
+   "size": [
+    0.24,
+    10.8,
+    10.65
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0003 podium shaft rear",
+   "shape": "box",
+   "position": [
+    0.0,
+    5.4,
+    5.23
+   ],
+   "size": [
+    7.42,
+    10.8,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0004 podium entry pier",
+   "shape": "box",
+   "position": [
+    -2.305,
+    1.325,
+    -5.23
+   ],
+   "size": [
+    2.79,
+    2.65,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0005 podium entry pier",
+   "shape": "box",
+   "position": [
+    2.305,
+    1.325,
+    -5.23
+   ],
+   "size": [
+    2.79,
+    2.65,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "0006 podium entry headwall",
+   "shape": "box",
+   "position": [
+    0.0,
+    6.7250000000000005,
+    -5.23
+   ],
+   "size": [
+    7.42,
+    8.15,
+    0.24
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "guest core foundation",
+   "shape": "box",
+   "position": [
+    0.0,
+    -0.137,
+    0.0
+   ],
+   "size": [
+    7.9,
+    0.25,
+    10.7
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "guest vestibule marble",
+   "shape": "box",
+   "position": [
+    0.0,
+    -0.062,
+    -7.2
+   ],
+   "size": [
+    11.0,
+    0.16,
+    3.7
+   ],
+   "yaw": 0.0
+  }
+ ],
+ "volumes": [],
+ "landmarks": [
+  {
+   "name": "spawn",
+   "position": [
+    0.0,
+    0.025,
+    -6.0
+   ],
+   "yaw": 0.0,
+   "tags": []
+  }
+ ],
+ "lights": [
+  {
+   "name": "0034 guest portal sconce",
+   "type": "point",
+   "position": [
+    -2.3,
+    3.12,
+    -5.95
+   ],
+   "color": "#ffdda8",
+   "intensity": 16,
+   "distance": 9,
+   "decay": 2.0
+  },
+  {
+   "name": "0049 guest portal sconce",
+   "type": "point",
+   "position": [
+    2.3,
+    3.12,
+    -5.95
+   ],
+   "color": "#ffdda8",
+   "intensity": 16,
+   "distance": 9,
+   "decay": 2.0
+  }
+ ],
+ "extras": {
+  "links": [],
+  "stairs": [],
+  "doors": []
+ }
+}

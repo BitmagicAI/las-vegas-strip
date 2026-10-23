@@ -1,0 +1,73 @@
+{
+ "name": "test-room",
+ "subframes": 1,
+ "seconds": 6.0,
+ "maxSeconds": 14.0,
+ "start": {
+  "at": [
+   92.9,
+   7.5,
+   106.4
+  ],
+  "dir": [
+   0,
+   1
+  ],
+  "view": "first",
+  "warm": 6,
+  "hotelPin": [
+   "vanderpump-1",
+   2,
+   1,
+   -1
+  ],
+  "venues": [
+   "vanderpump"
+  ]
+ },
+ "steps": [
+  {
+   "wait": 6.0
+  }
+ ],
+ "camera": [
+  {
+   "from": 0,
+   "to": 6.0,
+   "focus": "camera",
+   "doors": true,
+   "keys": [
+    {
+     "t": 0.0,
+     "pos": [
+      92.9,
+      9.0,
+      106.2
+     ],
+     "look": [
+      92.7,
+      8.1,
+      112.3
+     ],
+     "roll": 0,
+     "fov": 60
+    },
+    {
+     "t": 6.0,
+     "pos": [
+      92.85,
+      8.9,
+      107.6
+     ],
+     "look": [
+      92.4,
+      8.0,
+      113.0
+     ],
+     "roll": 0,
+     "fov": 60
+    }
+   ]
+  }
+ ]
+}

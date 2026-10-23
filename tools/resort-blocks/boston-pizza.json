@@ -1,0 +1,33 @@
+{
+  "id": "boston-pizza",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1530537,-115.1512024,620a,90y,90h,90t/data=!3m7!1e1!3m5!1s9r4gKK6qdAx0o9hbFGDKqw!2e0",
+      "imageDate": "January 2026",
+      "observed": "Street View visually inspected. Low north storefront with red fascia lettering, red glazed door, dark advertising panels and black pedestrian rail. Southwest wing taller gray stucco with red door and two small windows. Rooftop ducts and floodlights. No indoor tour."
+    },
+    {
+      "url": "https://bostonpizzavegas.com/location/",
+      "observed": "Official address1507SBlvd, north of Stratosphere."
+    }
+  ],
+  "remaining": [
+    "Facade height estimated",
+    "Current advertising omitted or abstracted",
+    "Rear facade not seen"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/boston-pizza-final",
+    "support": "build/city-exteriors/boston-pizza-collision.json",
+    "walk": "build/city-exteriors/boston-pizza-walk.json",
+    "ownership": "build/city-exteriors/boston-pizza-ownership-audit.json",
+    "visualReview": "All three installed views inspected; reversed fascia text order corrected and final front rechecked. Ground windows/doors and stepped frontage match broad layout. Detailed painted graphics and rough stucco need refinement."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/bostonPizza-exterior.glb": "a1848c78906be1b73bca44ed3de2002e4ecb8cb2176f488a0145d469b579343a",
+      "build/strip-landmarks/bostonPizza-exterior-collision.json": "697dc658bb6dabf0197f17bccb460e9ced574ca4d1f2fed282b94ed6158fabb0"
+    }
+  }
+}

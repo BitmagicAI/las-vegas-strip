@@ -1,0 +1,344 @@
+{
+  "version": 1,
+  "id": "ti",
+  "name": "Treasure Island",
+  "updated": "2026-10-14",
+  "stage": "mapped-frontage-and-cove",
+  "statusNote": "Mapped frontage and cove pass installed and inspected; full-site refinements remain open.",
+  "nextAction": "Refine full arrival facade, landscaping and measured bay proportions in later full-site pass.",
+  "sources": [
+    {
+      "id": "ctbuh",
+      "title": "CTBUH Treasure Island exterior photograph",
+      "url": "https://www.skyscrapercenter.com/building/treasure-island-hotel-casino/14139",
+      "kind": "visual-reference",
+      "accessed": "2026-10-09",
+      "note": "Viewed tower brick, white bay frames and arched crown; photo date unknown."
+    }
+  ],
+  "levels": [
+    {
+      "id": "ground",
+      "name": "Existing public arrival datum",
+      "elevationM": 0.24,
+      "sources": [
+        "ctbuh"
+      ],
+      "label": "Existing public arrival datum",
+      "features": "Existing public arrival datum. Existing datum/schedule retained; not a new measured survey."
+    },
+    {
+      "id": "guest",
+      "name": "Mapped hotel floors",
+      "schedule": "build/highrises/plan.json",
+      "sources": [
+        "ctbuh"
+      ],
+      "label": "Mapped hotel floors",
+      "features": "Mapped hotel floors. Existing datum/schedule retained; not a new measured survey.",
+      "elevationM": null
+    },
+    {
+      "id": "roof",
+      "name": "Variable mapped roof elevations",
+      "elevationM": 112,
+      "sources": [
+        "ctbuh"
+      ],
+      "label": "Variable mapped roof elevations",
+      "features": "Variable mapped roof elevations. Existing datum/schedule retained; not a new measured survey."
+    }
+  ],
+  "components": [
+    {
+      "id": "tower",
+      "name": "Mapped three-wing tower",
+      "levels": [
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "ctbuh"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/north-strip-corrections-2026-10-09/ti-daylight.png"
+      ],
+      "category": "exterior",
+      "priority": "high",
+      "scope": "Mapped three-wing tower; current pass preserves prior interiors and roads."
+    },
+    {
+      "id": "arrival",
+      "name": "Existing podium, arrival and ship",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "ctbuh"
+      ],
+      "status": "preserved",
+      "category": "exterior",
+      "priority": "high",
+      "scope": "Existing podium, arrival and ship; current pass preserves prior interiors and roads."
+    }
+  ],
+  "routes": [
+    {
+      "id": "existing-arrival",
+      "name": "Existing casino arrival and guest connections",
+      "fromLevel": "ground",
+      "toLevel": "guest",
+      "components": [
+        "arrival",
+        "tower"
+      ],
+      "sources": [
+        "ctbuh"
+      ],
+      "status": "preserved",
+      "evidence": [],
+      "detail": "Exterior correction; interior routes remain as explicitly recorded."
+    }
+  ],
+  "views": [
+    {
+      "id": "strip",
+      "name": "Street facade",
+      "referenceSources": [
+        "ctbuh"
+      ],
+      "status": "inspected",
+      "target": "strip",
+      "purpose": "Street facade comparison against cited reference"
+    },
+    {
+      "id": "aerial",
+      "name": "Tower envelope",
+      "referenceSources": [
+        "ctbuh"
+      ],
+      "status": "inspected",
+      "camera": {
+        "eye": [
+          335,
+          142,
+          -845
+        ],
+        "yaw": 1.123,
+        "pitch": 0.297
+      },
+      "gameCapture": "docs/project-records/north-strip-corrections-2026-10-09/ti-after.png",
+      "target": "aerial",
+      "purpose": "Tower envelope comparison against cited reference"
+    }
+  ],
+  "issues": [
+    {
+      "id": "dimension-registration",
+      "title": "No surveyed facade heights or exact bay schedule; photo fitting remains approximate",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "No surveyed facade heights or exact bay schedule; photo fitting remains approximate. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    },
+    {
+      "id": "street-detail",
+      "title": "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    },
+    {
+      "id": "interiors",
+      "title": "Retained existing interiors are not map-faithful reconstructions",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Retained existing interiors are not map-faithful reconstructions. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    }
+  ],
+  "gates": [
+    {
+      "id": "survey",
+      "status": "pending",
+      "evidence": [],
+      "name": "Whole-site survey"
+    },
+    {
+      "id": "massing",
+      "status": "pending",
+      "evidence": [],
+      "name": "Massing and elevations"
+    },
+    {
+      "id": "levels",
+      "status": "pending",
+      "evidence": [],
+      "name": "All public levels and connections"
+    },
+    {
+      "id": "facades",
+      "status": "pending",
+      "evidence": [],
+      "name": "All facades and street detail"
+    },
+    {
+      "id": "integration",
+      "status": "pending",
+      "evidence": [],
+      "name": "Geometry ownership and streaming"
+    },
+    {
+      "id": "runtime",
+      "status": "pending",
+      "evidence": [],
+      "name": "Route and performance verification"
+    },
+    {
+      "id": "visual",
+      "status": "pending",
+      "evidence": [],
+      "name": "Matched-view visual acceptance"
+    }
+  ],
+  "performance": {
+    "baseline": "docs/project-records/north-strip-corrections-2026-10-09/performance-before.json",
+    "after": "docs/project-records/north-strip-corrections-2026-10-09/performance-after.json"
+  },
+  "finalBuild": null,
+  "facadePass": null,
+  "northStripCorrection": {
+    "date": "2026-10-09",
+    "record": "docs/project-records/north-strip-corrections-2026-10-09.md",
+    "fingerprint": "docs/project-records/north-strip-corrections-2026-10-09/build-fingerprint.json",
+    "scope": "Targeted exterior corrections; all remaining whole-site gates retained."
+  },
+  "status": "refinement-deferred",
+  "frontagePass20261014": {
+    "status": "installed-reviewed-refinement-pending",
+    "sources": "docs/project-records/city-exteriors-2026-10-14/ti-frontage-research.json",
+    "builder": "tools/strip-landmarks/build_ti_frontage.py",
+    "changes": [
+      "Six mapped small footprints replaced, including two misclassified ships",
+      "North-side inferred old ship removed",
+      "New cove water, pale stone village, coral former restaurant, northern retail, rounded coffee kiosk",
+      "Roof mechanical units retained outside tower footprint"
+    ],
+    "uncertainties": [
+      "Estimated elevations and basin edges",
+      "Main podium generic arches still need stronger facade character",
+      "Precise forecourt landscapes and access elevations unresolved",
+      "Cove cliff, planting and stone ornament remain simplified",
+      "North retail tenant details approximate; no invented current restaurant branding",
+      "No new full public-route walkthrough",
+      "Roof p50 rose from31 to38.1ms in this run; not a60fps or whole-site completion claim"
+    ],
+    "evidence": "build/city-exteriors/ti-final",
+    "geometryAudit": "build/city-exteriors/ti-geometry-audit.json",
+    "preservation": "build/city-exteriors/ti-preservation.json",
+    "triangles": 417341,
+    "batches": 82,
+    "performance": [
+      {
+        "name": "ti-retail",
+        "eye": [
+          315,
+          10,
+          -1045
+        ],
+        "target": [
+          260,
+          9,
+          -1015
+        ],
+        "p": [
+          305,
+          2,
+          -1040
+        ],
+        "p50": 27.799999952316284,
+        "p95": 30.299999952316284
+      },
+      {
+        "name": "ti-front",
+        "eye": [
+          310,
+          55,
+          -935
+        ],
+        "target": [
+          150,
+          12,
+          -955
+        ],
+        "p": [
+          255,
+          2,
+          -940
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.40000009536743
+      },
+      {
+        "name": "ti-north",
+        "eye": [
+          290,
+          7,
+          -1035
+        ],
+        "target": [
+          225,
+          9,
+          -995
+        ],
+        "p": [
+          276,
+          2,
+          -1020
+        ],
+        "p50": 28.200000047683716,
+        "p95": 31.299999952316284
+      },
+      {
+        "name": "ti-south",
+        "eye": [
+          220,
+          5,
+          -830
+        ],
+        "target": [
+          170,
+          10,
+          -920
+        ],
+        "p": [
+          210,
+          2,
+          -855
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.800000190734863
+      },
+      {
+        "name": "ti-roof",
+        "eye": [
+          215,
+          130,
+          -1100
+        ],
+        "target": [
+          100,
+          12,
+          -950
+        ],
+        "p": [
+          150,
+          2,
+          -960
+        ],
+        "p50": 38.10000014305115,
+        "p95": 42.59999990463257
+      }
+    ],
+    "visualReview": "All five installed views inspected. Flat dark sign material, visible rooftop equipment and Gilleys white fascia verified. North close view only for timing; wider retail view used for facade review."
+  }
+}

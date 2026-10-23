@@ -1,0 +1,64 @@
+{
+  "id": "gold-coast",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1171,-115.1926,700a,360d,35y,0h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected long white slab with punched windows and terracotta roof edge; low casino south and multilevel garage east."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1171,-115.1926,700a,330d,35y,0h,0t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Topdown inspected west pool and covered south arrival."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1165,-115.1926,620a,260d,35y,0h,72t,0r",
+      "imageDate": "2024-03-05",
+      "review": "South street facade inspected: repeated arches, terracotta roofs, raised pediment entry bays."
+    },
+    {
+      "url": "https://goldcoast.boydgaming.com/",
+      "review": "Official property identity and hotel/casino amenities."
+    }
+  ],
+  "implementation": {
+    "triangles": 103894,
+    "batches": 31,
+    "replacementIDs": [
+      "way/27523549",
+      "way/135296658",
+      "way/27523550",
+      "way/27523551"
+    ],
+    "compressedMiB": 2.24
+  },
+  "estimates": [
+    "Mapped hotel35m retained; casino9m garage15m canopy5.3m estimated",
+    "Pool shape and precise bay dimensions estimated"
+  ],
+  "tests": {
+    "roofSamples": 43,
+    "failures": 0,
+    "typecheck": "passed"
+  },
+  "baseline": [
+    "build/city-exteriors/gold-coast-before/gold-coast-south.png",
+    "build/city-exteriors/gold-coast-before/gold-coast-front.png"
+  ],
+  "remaining": [
+    "Fine facade proportions, arcade depth and pool planting remain approximate",
+    "Fine entry sculpture/signs and landscaping unfinished",
+    "Public circulation not verified"
+  ],
+  "corrections": [
+    "Visual review found upper glazing inside the wall: moved forward beyond the wall plane.",
+    "South entrance pediments faced north: rotated south.",
+    "Original street camera was above motor-court roof: moved to unobstructed east side."
+  ],
+  "visualEvidence": [
+    "build/city-exteriors/gold-coast-corrected/gold-coast-south.png",
+    "build/city-exteriors/gold-coast-corrected/gold-coast-front.png"
+  ],
+  "visualReview": "Both corrected installed views inspected; window intersections and backwards entry bays resolved."
+}

@@ -1,0 +1,47 @@
+{
+  "id": "terribles-headquarters",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.08245,-115.172,174m/data=!3m1!1e3",
+      "observed": "Satellite inspected: T-planoffice with central southprojection;eastparkingandPristineFlighthangar."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0825198,-115.1725797,664a,75y,90h,90t/data=!3m7!1e1!3m5!1sL71y5TdzcqEofJkeIVeNew!2e0",
+      "date": "2026-02",
+      "observed": "West roadsidewhitewall withredTerribleHerbstsign,palms,largegravel xeriscape."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Terribles+Headquarters+5195+Las+Vegas",
+      "date": "2022-03",
+      "observed": "Full south entrance photo inspected: Jett Gaming, captured March 2022. Flat dark canopy with exposed beams, two tall stone piers, full-height glazing, lower white wings, stacked-stone landscape walls, palms and cactus. Exact heights estimated."
+    }
+  ],
+  "remaining": [
+    "Palm and cactus forms remain approximate; dense low xeriscape planting absent",
+    "Stacked stone represented by generic stone plus courses, lacks rubble variation",
+    "Unseen north/east windows inferred",
+    "Exact heights and sign artwork unverified",
+    "Parking bay layout and landscaped islands need detailed fitting",
+    "No interiors in this exterior pass"
+  ],
+  "estimatedDimensions": {
+    "mainEaveM": 6.8,
+    "canopyTopM": 9.075,
+    "canopyClearanceM": 8.195
+  },
+  "evidence": {
+    "screenshots": "build/city-exteriors/terribles-headquarters-final",
+    "support": "build/city-exteriors/terribles-headquarters-collision.json",
+    "walk": "build/city-exteriors/terribles-headquarters-walk.json",
+    "ownership": "build/city-exteriors/terribles-headquarters-ownership-audit.json",
+    "typecheck": "passed",
+    "visualReview": "Front, west and aerial installed views inspected; second pass corrected roof color, duplicate short-wall sign and site ground holes. Added palms, cacti and stone courses. Not photorealistic completion."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/terriblesHeadquarters-exterior.glb": "3403fb7629bd0e216a21a659a1e384718ee5e74e40c891e44e6019b248dc7d9a",
+      "build/strip-landmarks/terriblesHeadquarters-exterior-collision.json": "e691dffa711c92c43e8aa043370f1f2489d8ea7681702d7817084fb2aa1bc2f5"
+    }
+  }
+}

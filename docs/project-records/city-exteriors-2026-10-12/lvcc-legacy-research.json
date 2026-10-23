@@ -1,0 +1,27 @@
+{
+  "status": "installed-and-visually-reviewed-refinement-pending",
+  "sources": [
+    {
+      "url": "https://www.vegasmeansbusiness.com/meeting-facilities/convention-and-conference-facilities/las-vegas-convention-center/renovation/",
+      "inspected": true,
+      "observations": "Official project imagery: glazed central arrival with large white ribbon roof and thin mullions. Project rendering/photograph distinction uncertain."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1314,-115.1510,680a,830d,35y,90h,55t,0r",
+      "imagery": "2024-03-05",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1314,-115.1510,680a,880d,35y,270h,55t,0r",
+      "imagery": "2024-03-05",
+      "inspected": true
+    }
+  ],
+  "remaining": [
+    "Exact surveyed heights and renovation fit",
+    "Full entrance lobby and public connections",
+    "Arrival plaza and landscape details; current mapped circulation looks overly raised",
+    "Service facades and roof equipment remain approximate"
+  ],
+  "comparison": "Installed west, service, entry, south captures inspected. Added continuous curved canopy ribbon; removed overlapping roof under canopy after collision audit caught six conflicts. Original 6m gray hall replaced with distinct hall tiers and glazed western arrival. Ground approach and fine hall details still incomplete."
+}

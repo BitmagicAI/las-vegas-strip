@@ -1,0 +1,51 @@
+{
+  "id": "santa-paula-office",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725797"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15068,-115.15091&heading=300&pitch=0",
+      "imageDate": "December 2022",
+      "observed": "Zoomed south/east view: long low pale gray sided office, gray shallow hipped roof, white fascia with exposed rafter tails, tan masonry base, three white divided-light window groups and a side opening. Two large mature fan palms flank south face. Older imagery; no current business branding claimed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15085,-115.15165&zoom=20&basemap=satellite",
+      "observed": "Rectangular east-west building roof behind the Oakey offices. Map label Outdoor Advertising Las Vegas; use for identity only, not assumed wall signage."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15049,-115.15093&heading=270&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Current shared street boundary is low pale block masonry with square pillars and iron upper railings; updated from older all-iron treatment. Main office to north still visible with light roof/white facade; southern neighbor is a separate beige hip-roof wing."
+    }
+  ],
+  "remaining": [
+    "Exact rear fenestration, weathering and occupancy unverified; heights estimated",
+    "Fan palm crown silhouettes still visibly pinched at mid-height; replace/refine before final quality approval",
+    "Irregular surrounding planting not fully matched; no interior access claim",
+    "Neutral daylight material and perimeter driving review outstanding"
+  ],
+  "plannedComponents": [
+    "Mapped low office shell and shallow gray roof",
+    "White fascia and exposed rafter tails",
+    "Divided-light windows and tan base",
+    "Parking approach, fence and planted corners"
+  ],
+  "estimatedElevationsM": {
+    "wall": 2.8,
+    "roofRidge": 4.0
+  },
+  "evidence": {
+    "views": "build/city-exteriors/santa-paula-office-final",
+    "support": "build/city-exteriors/santa-paula-office-collision.json",
+    "walk": "build/city-exteriors/santa-paula-office-walk.json",
+    "visualReview": "Third installed south/east/aerial images inspected. Office siding, roof, windows, boundary and ground installed; palm mid-crown gap remains. 23328 triangles,19 batches,.68MiB.504 support samples and6 walk legs pass. Static960x540 p50~16.7ms p95~18.2ms not route performance."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/santaPaulaOffice-exterior.glb": "6c333341f29c879ea0445567e74c8dc2bdd73ecc5225af0e1784b3f423ce4423",
+      "build/strip-landmarks/santaPaulaOffice-exterior-collision.json": "6bf0f201ac6534a408c2078b70440aec01e0eafc1297e0752d67172c0eabde08"
+    }
+  }
+}

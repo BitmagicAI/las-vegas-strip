@@ -1,0 +1,149 @@
+{
+  "id": "weldon-west",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725786",
+    "way/1236725790",
+    "way/1236725785",
+    "way/1236725784",
+    "way/1236725783"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14929,-115.15175&zoom=19&basemap=satellite",
+      "review": "Five west-side homes follow the Weldon curve; varied hip roof colors and rear yards"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14986,-115.15154&heading=270&pitch=2",
+      "imageDate": "January2026",
+      "review": "1806 north frontage: white single-storey, low gray roofs, wide concrete forecourt, dark fascia, barred broad windows"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14951,-115.15173&heading=270&pitch=2",
+      "imageDate": "January2026",
+      "review": "1814 middle: tan hipped roof, white walls, lawn, green privacy fence and concrete side driveway"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14918,-115.15197&heading=270&pitch=2",
+      "imageDate": "January2026",
+      "review": "Southern white houses: pale roofs and reddish eaves, barred windows, broad drives, iron fences, palms"
+    }
+  ],
+  "remaining": [
+    "Exact door and window positions, roof pitch and mechanical dimensions are estimates",
+    "Chainlink fencing represented by coarser metal bars; lawns need richer ground texture and planting",
+    "Side and rear drives/yards need further detail; no parked vehicles or household clutter",
+    "No interiors, neutral daylight review or full driving benchmark"
+  ],
+  "triangles": 10400,
+  "batches": 26,
+  "optimizedMiB": 12.08,
+  "metricScope": "Authored triangles exclude two existing CC0 tree instances",
+  "tests": [
+    "633 roof support samples PASS after placeholder removal",
+    "20 entrance approach legs in both directions PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/weldon-west-final/weldon-west-north.png",
+    "build/city-exteriors/weldon-west-final/weldon-west-middle.png",
+    "build/city-exteriors/weldon-west-final/weldon-west-south.png",
+    "build/city-exteriors/weldon-west-final/weldon-west-roof.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "weldon-west-north",
+        "eye": [
+          1940,
+          3,
+          -3765
+        ],
+        "target": [
+          1907,
+          1.7,
+          -3765
+        ],
+        "p": [
+          1935,
+          2,
+          -3765
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.899999976158142
+      },
+      {
+        "name": "weldon-west-middle",
+        "eye": [
+          1908,
+          3,
+          -3720
+        ],
+        "target": [
+          1878,
+          1.7,
+          -3720
+        ],
+        "p": [
+          1908,
+          2,
+          -3720
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.900000035762787
+      },
+      {
+        "name": "weldon-west-south",
+        "eye": [
+          1894,
+          3,
+          -3695
+        ],
+        "target": [
+          1866,
+          1.7,
+          -3695
+        ],
+        "p": [
+          1890,
+          2,
+          -3695
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.69999998807907
+      },
+      {
+        "name": "weldon-west-roof",
+        "eye": [
+          1950,
+          48,
+          -3660
+        ],
+        "target": [
+          1890,
+          2,
+          -3730
+        ],
+        "p": [
+          1908,
+          2,
+          -3720
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 80,
+    "colliderTrianglesRemoved": 80,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in WeldonWest mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/weldonWest-exterior.glb": "22ad9a113714342bca93af8910472718c11ff3506ca36aeee0b25abeffc18c80",
+      "build/strip-landmarks/weldonWest-exterior-collision.json": "320cf98a953d192207f9ece2d608be79a9366cfa9d350c90e4063930c7cb270b"
+    }
+  },
+  "sidewalkApproachReview": "Full approach from sidewalk-side gate to door and back passed; logs /tmp/weldon_west-approach.log."
+}

@@ -1,0 +1,21 @@
+{
+  "about": "Paris Las Vegas: the Eiffel Tower lift (ParisLift.ts). Split out of the zombie game's vegas-missions.json on 2026-10-22.",
+  "paris": {
+    "liftGround": [
+      74.2009559115967,
+      0.25,
+      400.7990440884033
+    ],
+    "liftTop": [
+      74.2009559115967,
+      140.25,
+      400.7990440884033
+    ],
+    "towerCenter": [
+      74.5,
+      0,
+      400.5
+    ],
+    "towerYaw": 0.7853981633974483
+  }
+}

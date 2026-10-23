@@ -1,0 +1,42 @@
+{
+  "id": "oakey-shops",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/316303731"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15144,-115.15235&heading=270&pitch=0",
+      "pano": "01736HXf76IOqfy_ogYNCQ",
+      "imageDate": "January 2026",
+      "observed": "South to north: Viva Las Arepas with black canopy and fenced patio, Art of Flavors glass shop, XO Smoke, tattoo shop with ribbed dark parapet, north cannabis shop with white projecting fascia and taller dark end fin. Raised shared south walkway with black handrails descends to northern parking forecourt."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1515102,-115.1523647",
+      "pano": "-rVnTB0BqgSl6uYv1PQM6A",
+      "imageDate": "January 2026",
+      "observed": "Full south and north frontage observed by rotating panorama. Fine logo text on tattoo shop uncertain."
+    }
+  ],
+  "remaining": [
+    "Roof height, bay positions and rear facade not surveyed; initial height estimates 3.9m and 5.2m end fin",
+    "Interiors out of this exterior pass",
+    "Precise logos and window graphics not reproduced",
+    "Storefront sign sizes and graphics remain approximations",
+    "Exact pavement/parking geometry still differs from the Street View reference",
+    "Mapped projecting north footprint retained, but its fit needs further survey"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/oakey-shops-final",
+    "support": "build/city-exteriors/oakey-shops-collision.json",
+    "walk": "build/city-exteriors/oakey-shops-walk.json",
+    "ownership": "build/city-exteriors/oakey-shops-ownership-audit.json",
+    "visualReview": "Three installed views inspected. Open sidewalk joint fixed with mitered surface and railing connection; northern return glazing added. Final south/north views reinspected.77 support/headroom samples and6 walking legs pass.31 mapped triangles removed.8848 authored triangles15batches,.62MB optimized."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/oakeyShops-exterior.glb": "44f42dc4cb5522776c1a95a4c61e3a2a5899e497fdbee372ef1468b27cbb4cef",
+      "build/strip-landmarks/oakeyShops-exterior-collision.json": "9614cba1ec87c4b99f7780f28eb35483645ec76a7a82917f25204e95c526164f"
+    }
+  }
+}

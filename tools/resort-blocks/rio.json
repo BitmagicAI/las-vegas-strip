@@ -1,0 +1,136 @@
+{
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1172,-115.188,800a,620d,35y,180h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected curved Masquerade tower with stepped rooftop, Y-shaped Ipanema, tan casino roof and garage roofs."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1175,-115.188,820a,690d,35y,0h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected opposite Y tower frontage, tan podium and irregular pool complex."
+    },
+    {
+      "url": "https://www.riolasvegas.com/wp-content/uploads/2023/08/DJI_0032-scaled-1.jpg",
+      "imageDate": "2023 official article",
+      "review": "Visually inspected copper-red glazing fields and blue glazing beside white end core; curved boundary crosses facade grid."
+    },
+    {
+      "url": "https://www.skyscrapercenter.com/building/rio-ipanema-tower/13953",
+      "review": "Official CVU database confirms73.9m/20floors."
+    },
+    {
+      "url": "https://www.skyscrapercenter.com/building/rio-masquerade-tower/10654",
+      "review": "Official CVU database confirms128.9m/42floors; conflicts with mapped140m rooftop part."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.11755,-115.1865,700a,300d,35y,0h,0t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected four curved basins. Approximate plan registration; west basin shifted8m east/7m north to avoid mapped podium after review."
+    }
+  ],
+  "uncertainties": [
+    "Mapped Masquerade parts130/140m conflict with128.9m architectural height. Do not silently combine. Preserve guest interior clearance while fitting roof tiers.",
+    "Garage heights, podium heights, pool edge and arrival canopy dimensions require photo estimates."
+  ],
+  "id": "rio",
+  "status": "refinement-deferred",
+  "remaining": [
+    "Dense garden planting, landscape islands, pool enclosure and authentic furnishings unfinished.",
+    "Photo-exact facade curve and colors, crown signage and arrival canopies remain incomplete.",
+    "Detailed public walking routes and guest-top-floor boundary require traversal; roof/approach tests are not whole-site acceptance."
+  ],
+  "estimates": {
+    "IpanemaM": 74,
+    "MasqueradeBaseM": 123,
+    "upperStepsM": [
+      126,
+      130,
+      131
+    ],
+    "garageM": 14,
+    "casinoM": 13,
+    "note": "CVU128.9m versus131m fitted crown: existing36guestfloors at3.6m need129.6m clearance. Exact lower heights photo estimates."
+  },
+  "baselineEvidence": "build/city-exteriors/rio-before",
+  "tests": {
+    "roofSupport": 228,
+    "guestApproach": 807,
+    "typecheck": "passed",
+    "scope": "New lower collider only, full city traversal unverified.",
+    "visual": "All3 before,3 initial after,4 courtyard and corrected pool installed views inspected. Lounger density reduced and clipped basin repositioned.",
+    "frameTimes": [
+      {
+        "name": "rio-aerial",
+        "eye": [
+          -910,
+          270,
+          175
+        ],
+        "target": [
+          -1310,
+          30,
+          -160
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.5
+      },
+      {
+        "name": "rio-flamingo",
+        "eye": [
+          -1295,
+          5,
+          90
+        ],
+        "target": [
+          -1260,
+          48,
+          -55
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.5
+      },
+      {
+        "name": "rio-pools",
+        "eye": [
+          -1080,
+          100,
+          -260
+        ],
+        "target": [
+          -1220,
+          4,
+          -172
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.5
+      },
+      {
+        "name": "rio-north",
+        "eye": [
+          -1360,
+          115,
+          -460
+        ],
+        "target": [
+          -1300,
+          30,
+          -180
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.699999809265137
+      }
+    ]
+  },
+  "geometry": {
+    "triangles": 63938,
+    "batches": 99,
+    "optimizedMiB": 1.08,
+    "source": "tools/strip-landmarks/rio_exterior.py",
+    "glbSha256": "580ca44c55f5f43bece41b8288adac69968b8b86c22dfddfa9dc437745df2ebf"
+  },
+  "evidence": [
+    "build/city-exteriors/rio-courts",
+    "build/city-exteriors/rio-pools-final"
+  ]
+}

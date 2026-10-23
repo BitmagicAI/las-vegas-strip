@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "id": "linq",
+  "name": "The LINQ",
+  "updated": "2026-10-09",
+  "stage": "facade-pass-installed-and-inspected",
+  "statusNote": "Targeted exterior facade revision authorized after Venetian canal-detail pass. Existing interiors and public circulation retained. Photo-fit dimensions are estimates; full resort completion is not claimed.",
+  "nextAction": "Refine surveyed bay dimensions, exact tenant/sign typography, roof/services and landscape detail; match all sides and public levels before whole-resort acceptance.",
+  "sources": [
+    {
+      "id": "creator-aerial",
+      "title": "Creator Google Earth aerial",
+      "kind": "visual-reference",
+      "image": "docs/project-records/venetian-gondola-frontages-2026-10-09/creator-harrahs-linq-reference.png",
+      "accessed": "2026-10-09",
+      "note": "Establishes adjacency, volume and facade proportions; exact date unknown."
+    },
+    {
+      "id": "official",
+      "title": "The LINQ official exterior gallery",
+      "kind": "visual-reference",
+      "url": "https://newsroom.caesars.com/Property-Fact-Sheets/The-LINQ-Hotel--Experience/",
+      "accessed": "2026-10-09",
+      "note": "Viewed official photographs. No photo licensed as a game texture."
+    }
+  ],
+  "levels": [
+    {
+      "id": "ground",
+      "name": "Existing public arrival datum",
+      "elevationM": 0.24,
+      "sources": [
+        "creator-aerial"
+      ],
+      "label": "Existing public arrival datum",
+      "features": "Existing public arrival datum. Existing datum/schedule retained; not a new measured survey."
+    },
+    {
+      "id": "guest",
+      "name": "Mapped hotel floors",
+      "schedule": "build/highrises/plan.json",
+      "sources": [
+        "creator-aerial"
+      ],
+      "label": "Mapped hotel floors",
+      "features": "Mapped hotel floors. Existing datum/schedule retained; not a new measured survey.",
+      "elevationM": null
+    },
+    {
+      "id": "roof",
+      "name": "Variable mapped roof elevations",
+      "elevationM": 63,
+      "sources": [
+        "creator-aerial"
+      ],
+      "label": "Variable mapped roof elevations",
+      "features": "Variable mapped roof elevations. Existing datum/schedule retained; not a new measured survey."
+    }
+  ],
+  "components": [
+    {
+      "id": "guest-tower",
+      "name": "guest tower",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-facade-aerial-offline.png"
+      ],
+      "category": "tower",
+      "priority": "high",
+      "scope": "Guest tower geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "strip-facade",
+      "name": "strip facade",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "Strip facade geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "street-shops",
+      "name": "street shops",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "Street shops geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "vortex",
+      "name": "vortex",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "implemented",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "Vortex geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "promenade",
+      "name": "promenade",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "preserved",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "Promenade geometry, materials, surveyed placement and public interfaces."
+    },
+    {
+      "id": "high-roller",
+      "name": "high roller",
+      "levels": [
+        "ground",
+        "guest",
+        "roof"
+      ],
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "preserved",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-facade-aerial-offline.png"
+      ],
+      "category": "frontage",
+      "priority": "high",
+      "scope": "High roller geometry, materials, surveyed placement and public interfaces."
+    }
+  ],
+  "routes": [
+    {
+      "id": "existing-arrival",
+      "name": "Existing casino arrival and guest connections",
+      "fromLevel": "ground",
+      "toLevel": "guest",
+      "components": [
+        "guest-tower"
+      ],
+      "sources": [
+        "creator-aerial"
+      ],
+      "status": "preserved",
+      "evidence": []
+    }
+  ],
+  "views": [
+    {
+      "id": "strip",
+      "name": "strip",
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "reviewed",
+      "purpose": "Compare mapped silhouette and facade pattern from strip; dimensions remain photo-fit estimates.",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-strip-offline.png"
+      ],
+      "gameCapture": "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-installed.png",
+      "camera": {
+        "eye": [
+          -16,
+          2,
+          -274
+        ],
+        "target": [
+          40,
+          17,
+          -251
+        ]
+      }
+    },
+    {
+      "id": "facade-aerial",
+      "name": "facade-aerial",
+      "sources": [
+        "official",
+        "creator-aerial"
+      ],
+      "status": "reviewed",
+      "purpose": "Compare mapped silhouette and facade pattern from facade-aerial; dimensions remain photo-fit estimates.",
+      "evidence": [
+        "docs/project-records/venetian-gondola-frontages-2026-10-09/linq-facade-aerial-offline.png"
+      ],
+      "gameCapture": null,
+      "camera": {
+        "eye": [
+          -142,
+          108,
+          -420
+        ],
+        "target": [
+          154,
+          29,
+          -260
+        ]
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "dimension-registration",
+      "title": "No surveyed facade heights or exact bay schedule; photo fitting remains approximate",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "No surveyed facade heights or exact bay schedule; photo fitting remains approximate. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    },
+    {
+      "id": "street-detail",
+      "title": "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    },
+    {
+      "id": "interiors",
+      "title": "Retained existing interiors are not map-faithful reconstructions",
+      "severity": "blocking",
+      "status": "open",
+      "detail": "Retained existing interiors are not map-faithful reconstructions. Retained as an explicit refinement requirement; this pass is not whole-resort completion."
+    }
+  ],
+  "gates": [
+    {
+      "id": "survey",
+      "status": "pending",
+      "evidence": [],
+      "name": "Whole-site survey"
+    },
+    {
+      "id": "massing",
+      "status": "pending",
+      "evidence": [],
+      "name": "Massing and elevations"
+    },
+    {
+      "id": "levels",
+      "status": "pending",
+      "evidence": [],
+      "name": "All public levels and connections"
+    },
+    {
+      "id": "facades",
+      "status": "pending",
+      "evidence": [],
+      "name": "All facades and street detail"
+    },
+    {
+      "id": "integration",
+      "status": "pending",
+      "evidence": [],
+      "name": "Geometry ownership and streaming"
+    },
+    {
+      "id": "runtime",
+      "status": "pending",
+      "evidence": [],
+      "name": "Route and performance verification"
+    },
+    {
+      "id": "visual",
+      "status": "pending",
+      "evidence": [],
+      "name": "Matched-view visual acceptance"
+    }
+  ],
+  "performance": {
+    "baseline": null,
+    "after": "docs/project-records/north-strip-corrections-2026-10-09/performance-after.json",
+    "note": "Three-second warmed stationary views at 1280\u00d7720 DPR1 Ultra, no before baseline and no full driving/streaming route."
+  },
+  "finalBuild": null,
+  "facadePass": {
+    "date": "2026-10-09",
+    "report": "docs/project-records/venetian-gondola-frontages-2026-10-09.md",
+    "asset": {
+      "groups": 197,
+      "triangles": 298279,
+      "rawMiB": 28.82,
+      "installedMiB": 9.94,
+      "source": "build/strip-landmarks/linq-exterior.glb",
+      "installed": "build/optimized/build/strip-landmarks/linq-exterior.glb",
+      "sha256": "67ea577267547649db6d549757464fc6421008a1ab6d1145abfe042e8e065c70",
+      "sourceSha256": "529e7670968e50149827853a0c8dd4345e548ed74ad9855674fb3796f7de5b6f"
+    },
+    "scope": "Targeted exterior geometry and street skin; existing collision and interiors retained. Does not pass whole-resort gates."
+  },
+  "latestTargetedVerification": {
+    "date": "2026-10-09",
+    "status": "passed",
+    "scope": "Local WebGPU startup + typed build + targeted canal routes + three stationary views; does not constitute whole-resort completion",
+    "evidence": [
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/verification.txt",
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/routes.txt",
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/water.txt",
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/reflection.txt",
+      "docs/project-records/venetian-gondola-frontages-2026-10-09/performance.json"
+    ],
+    "sourceHashes": "docs/project-records/venetian-gondola-frontages-2026-10-09/source-hashes.json"
+  },
+  "northStripCorrection": {
+    "date": "2026-10-09",
+    "record": "docs/project-records/north-strip-corrections-2026-10-09.md",
+    "fingerprint": "docs/project-records/north-strip-corrections-2026-10-09/build-fingerprint.json",
+    "scope": "Targeted exterior corrections; all remaining whole-site gates retained."
+  },
+  "podiumPass20261014": {
+    "status": "refinement-deferred",
+    "baseline": "build/city-exteriors/linq-podium-baseline",
+    "after": "build/city-exteriors/linq-podium-final",
+    "visuallyInspected": "All five podium baseline/final views, eight garage final views, and three corrected/ablation views inspected. Entrance sign corrected beyond column face; open levels and internal ramp clearance visible.",
+    "audit": "build/city-exteriors/linq-podium-audit.json",
+    "research": "docs/project-records/city-exteriors-2026-10-14/linq-podium-research.json",
+    "remaining": [
+      "Exact individual tenant facades and roof offsets remain approximate",
+      "Pool deck and public terrace circulation pending",
+      "Parking internal ramp placement estimated; whole-resort circulation and exact tenant plans not fully verified."
+    ],
+    "garageEvidence": "build/city-exteriors/linq-parking-final",
+    "correctedSign": "build/city-exteriors/linq-ab/linq-entry-corrected.png",
+    "garageCollisionChecks": 809,
+    "addedGarageTriangles": 3776,
+    "podiumAddedTriangles": 22972,
+    "performanceAblation": "build/city-exteriors/linq-ab/performance.json",
+    "performanceCaveat": "Source-based ablation matched 8 podium-detail meshes, not batched garage. About 5% promenade difference; no clear rear-view difference. Original asset comparison still running. Render counters in first ablation are shared object references and not per-sample snapshots.",
+    "performanceOriginalAB": "build/city-exteriors/linq-original-ab/performance.json",
+    "performanceFinding": "Same-session original/revised comparison: promenade original20.6ms, revised18.7/16.6ms; rear original28.1ms, revised23.3/26ms. Static batching resolved measured regression. No whole-city60fps claim. All4images visually inspected. Rim quaternion and cabin position changed,2rimmeshes/5cabinmeshes retained.",
+    "performanceFinal": "build/city-exteriors/linq-batched/performance.json",
+    "fingerprints": {
+      "build/strip-landmarks/linq-exterior.glb": "a1dc8f6f86e349bdfe0abbb264726ab0d74fce015fff93eec8635afed4fc63f7",
+      "build/strip-landmarks/linqParking-exterior.glb": "a4b00db0ce346c74ae43e897bd32b8a68841b6647eadea637967ec0afe25c491",
+      "src/work/StripLandmarks.ts": "209ebae1c3fed8cbdfaa1feab88146b014dd0ef24e9defacd2ea22de45146291"
+    }
+  }
+}

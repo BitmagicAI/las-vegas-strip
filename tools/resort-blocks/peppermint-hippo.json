@@ -1,0 +1,46 @@
+{
+  "id": "peppermint-hippo",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364845150"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15220,-115.15172&heading=90&pitch=0",
+      "pano": "_AjxjMrNhjM0t9HtedfplA",
+      "imageDate": "January 2026",
+      "observed": "Black/red west frontage, white piers, arched upper windows, ornamental roof rail. Southwest corner two-level porch and crest with PH emblem."
+    },
+    {
+      "url": "https://www.thepepperminthippo.com/",
+      "observed": "Official name and1531address corroborate currenttenant; oldmappedlabelToplessCabarat."
+    },
+    {
+      "url": "https://images1.loopnet.com/i2/sobovnwn9G-PVPWN4ugfA3hT3-FOmXEPDCFTnfvIsVE/110/1531-S-Las-Vegas-Blvd-Las-Vegas-NV-Building-Photo-3-Large.jpg",
+      "observed": "Aerial shows main two-storey mass and open northern drive-through canopy, white rear wings, parking edges. Photo date unknown."
+    }
+  ],
+  "remaining": [
+    "Estimated8.35mparapet/4.23mcanopyclearance; notsurveyed",
+    "RearpartlyoccludedfromRexfordStreetViewFeb2020",
+    "PHcresthippofigurativeartnotreproduced",
+    "No interior access in exteriorpass",
+    "Exact ornament and sculpted hippo crest remain simplified",
+    "Roof equipment placement and rear door schedule inferred",
+    "Detailed night lighting not added; runtime light set preserved",
+    "Palm crowns are modeled approximations; exact short fan-palm form outstanding"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/peppermint-hippo-final",
+    "support": "build/city-exteriors/peppermint-hippo-collision.json",
+    "walk": "build/city-exteriors/peppermint-hippo-walk.json",
+    "ownership": "build/city-exteriors/peppermint-hippo-ownership-audit.json",
+    "visualReview": "Three installed views inspected; front/canopy reinspected after correcting black side facade extent, window facing/stand-off, and palm crowns.314support samples and6walkinglegsPASS.47oldmappedtrianglesremoved.66141authoredtri14batches,1.57MBoptimized. No photoreal completion claim."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/peppermintHippo-exterior.glb": "7c96d7603982605fd2b23ceb772353acee443c75eb313326fbfc4f80c91214f8",
+      "build/strip-landmarks/peppermintHippo-exterior-collision.json": "16fb7c10863d20f383969ff17c8fa2ba08b92c8e10bb3b0dd21ec22c90b6b362"
+    }
+  }
+}

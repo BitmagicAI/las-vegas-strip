@@ -1,0 +1,66 @@
+{
+  "id": "us-bank-center",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.showcase.com/2300-w-sahara-ave-las-vegas-nv-89102/27850699/",
+      "review": "Property listing identifies12-story US Bank Center at NW Sahara/Rancho; photograph inspection pending."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.145,-115.1737,650a,260d,35y,300h,65t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected: chamfered footprint, pink stone horizontal bands, dark ribbon glazing, low corner wing and parking structure."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.145,-115.1737,650a,240d,35y,120h,65t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Opposite view inspected: rear terraces step at mapped5/8floors; roof mechanical enclosure; covered drive-through to north. Dimensions remain mapped/estimated."
+    }
+  ],
+  "remaining": [
+    "Ground landscaping and water features",
+    "Exact signage, entrance and garage route checks",
+    "Performance route comparison",
+    "Corner reveals show thin seams; refine trims"
+  ],
+  "baseline": [
+    "build/city-exteriors/us-bank-before/bank-front.png",
+    "build/city-exteriors/us-bank-before/bank-back.png",
+    "build/city-exteriors/us-bank-before/bank-street.png"
+  ],
+  "baselineReview": "All three inspected. Blank overlapping stepped volumes, visible moire on street-facing tower, no glazing.",
+  "implementation": {
+    "triangles": 3847,
+    "batches": 8,
+    "ids": [
+      "way/1459305985",
+      "way/1459305986",
+      "way/1459305987",
+      "way/1459305988",
+      "way/802738240",
+      "way/276426324",
+      "way/802738239"
+    ],
+    "heights": "Mapped38/26/17/8m stepped parts; parking9m estimated; roof core3m estimated.",
+    "tests": "104 horizontal support samples pass."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/us-bank-after/bank-front.png",
+      "build/city-exteriors/us-bank-after/bank-back.png",
+      "build/city-exteriors/us-bank-after/bank-street.png"
+    ],
+    "review": "All three PNGs inspected: continuous ribbon glass and pink stone now cover mapped stepped mass. Rear terraces are visible, previous broad moire absent in these views. Corner trim and site landscaping remain missing; this is not full-site or photoreal completion."
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed, 59 fps at spawn, 3011 bodies; not a block performance measurement",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-us-bank.log"
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/us_bank.py": "04e0248e74ebda17de9d9af30c1482f1cd698885dd0d44e972248d894843413b",
+      "build/optimized/build/strip-landmarks/usBankCenter-exterior.glb": "c636409aa7f3469b0ac0a962fe269acf673414ea7d2a08a688711d1372c3ed6f"
+    }
+  }
+}

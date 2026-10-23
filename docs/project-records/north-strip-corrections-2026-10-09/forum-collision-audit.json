@@ -1,0 +1,30 @@
+{
+  "roofHeights": [
+    {
+      "x": -450,
+      "z": -330,
+      "expected": 12.8,
+      "actual": 12.799999237060547
+    },
+    {
+      "x": -280,
+      "z": -340,
+      "expected": 16.8,
+      "actual": 16.800003051757812
+    },
+    {
+      "x": -60,
+      "z": -400,
+      "expected": 24.4,
+      "actual": 24.400001525878906
+    },
+    {
+      "x": -40,
+      "z": -350,
+      "expected": 32,
+      "actual": 32
+    }
+  ],
+  "sidewalkSamplesClear": 217,
+  "collisionTriangles": 994
+}

@@ -1,0 +1,61 @@
+{
+  "id": "park-towers",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1163,-115.1591,660a,260d,35y,40h,65t,0r",
+      "imageDate": "2024-03-05",
+      "review": "Both opposing aerial views inspected. Two different tower footprints, curved green-glass bays, stacked balconies, pale stone service bands, blue-gray roof caps and central plant screens. Shared pool and tennis landscape visible; not yet modeled."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1163,-115.1591,660a,260d,35y,220h,65t,0r",
+      "imageDate": null,
+      "review": "Both opposing aerial views inspected. Two different tower footprints, curved green-glass bays, stacked balconies, pale stone service bands, blue-gray roof caps and central plant screens. Shared pool and tennis landscape visible; not yet modeled."
+    },
+    {
+      "url": "https://parktowers.com/The%20Building.html",
+      "review": "Official site identifies two20story towers above shared base,84residences."
+    }
+  ],
+  "dimensions": "Mapped62m shell retained; roof caps64.5m and plant screens65.5m estimated. Exact facade bay spacing uncertain.",
+  "remaining": [
+    "Shared base, arrival court and pool/tennis landscape",
+    "Full public connections",
+    "Facade and crown precision",
+    "Route performance"
+  ],
+  "baseline": [
+    "build/city-exteriors/park-towers-before/park-towers-front.png",
+    "build/city-exteriors/park-towers-before/park-towers-back.png",
+    "build/city-exteriors/park-towers-before/park-towers-entry.png"
+  ],
+  "baselineReview": "All three inspected: two blank 62m nonrectangular mapped towers with rounded ends and bare surroundings.",
+  "implementation": {
+    "ids": [
+      "way/182464616",
+      "way/182464631"
+    ],
+    "triangles": 135306,
+    "batches": 8,
+    "tests": "86 tower roof surface support samples passed; balconies and public routes not asserted."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/park-towers-after/park-towers-front.png",
+      "build/city-exteriors/park-towers-after/park-towers-back.png",
+      "build/city-exteriors/park-towers-after/park-towers-entry.png"
+    ],
+    "review": "All three inspected. Green curved bays, recessed balconies, white service strips and roof caps visible without obvious tower overlap. Caps are simplified round forms, shared base/arrival/pool landscape remains incomplete; balcony spacing estimated."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/park_towers.py": "c6bb929174ad4a2fb9796fee9c75430d15639e949b0f42f3729a9d558de71d94",
+      "build/optimized/build/strip-landmarks/parkTowers-exterior.glb": "3462ef67eef38c2b82b0f8c0047cda728a47a293d96f404c63089c93bad19136"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed; see log for spawn sample, not route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-park-towers.log"
+  }
+}

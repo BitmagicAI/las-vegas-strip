@@ -1,0 +1,45 @@
+{
+  "id": "south-arco",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/ARCO+Las+Vegas+Boulevard+Tropicana",
+      "date": "2024-01",
+      "author": "Hs Y.",
+      "observed": "3873SBlvd photo inspected: shallow hip-roof canopy with blue/white fascia,cream columns,white pumps,tall pylon and lower price cabinet. Storefront thumbnail shows orange fascia,gray slats,ampm panel and glass entrance."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0970809,-115.1723648,100m/data=!3m1!1e3",
+      "observed": "Satellite inspected: canopy west,store east with canted NWcorner,RenoAvenue north,open paved forecourt."
+    }
+  ],
+  "dimensions": "Mapped canopy16.3x17.6m,storeoutline preserved. Canopy soffit4.6m,cap5.88m,store4.1m,pylon11m photoestimates.",
+  "remaining": [
+    "Exact branding graphics,advertisements and surface wear incomplete",
+    "Landscaping and side/rear service detail incomplete",
+    "No interior authored",
+    "Roof material striping and offsite ground voids remain"
+  ],
+  "validation": {
+    "support": "229 floor/headroom checks passed",
+    "walking": "7 legs both directions passed",
+    "visual": "Three installed views inspected after correcting bollard taper and isolating Sahara palette",
+    "performance": "Fixed aerial960x540ultra16.7ms p50/17.4ms p95;notroutebenchmark"
+  },
+  "implemented": [
+    "Hip canopy, columns, pumps and bollards",
+    "ampm storefront and slatted fascia",
+    "Sign pylon and paved forecourt"
+  ],
+  "evidence": [
+    "build/city-exteriors/south-arco-final/arco-front.png",
+    "build/city-exteriors/south-arco-final/arco-store.png",
+    "build/city-exteriors/south-arco-final/arco-aerial.png"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/southArco-exterior.glb": "7439dc284d2af282d4f899d64c39fd7f3191640e8a77f159e0f217e14d8621d1",
+      "build/strip-landmarks/southArco-exterior-collision.json": "82c23531b81138a13d9796268f3ff00f392468fb8108772d5293f765a8158f2a"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+ "viewport": [
+  1280,
+  720
+ ],
+ "dpr": 1,
+ "results": [
+  {
+   "view": "canal",
+   "tower": "at:185,0.5,-728,-1.71,0.05",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 185,
+    "y": 0.5,
+    "z": -728
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 7.3,
+   "gpuP50": 7.76,
+   "gpuP90": 9.76,
+   "draws": 175,
+   "triangles": 5548512,
+   "passes": [
+    [
+     "output 1280x720",
+     3.29,
+     1
+    ],
+    [
+     "screen",
+     2.1,
+     1
+    ],
+    [
+     "Lake mirror 640x360",
+     1.83,
+     0.5
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.22,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "harrahs",
+   "tower": "at:16,0.3,-395,-1.73,-0.18",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 16,
+    "y": 0.3,
+    "z": -395
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.3,
+   "gpuP50": 6.1,
+   "gpuP90": 7.83,
+   "draws": 335,
+   "triangles": 3773411,
+   "passes": [
+    [
+     "output 1280x720",
+     3.96,
+     1
+    ],
+    [
+     "screen",
+     1.96,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.32,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "linq",
+   "tower": "at:15,0.3,-275,-2.336,-0.4",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 15,
+    "y": 0.3,
+    "z": -275
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 7.6,
+   "gpuP50": 15.64,
+   "gpuP90": 16.75,
+   "draws": 485,
+   "triangles": 4568409,
+   "passes": [
+    [
+     "output 1280x720",
+     8.17,
+     1
+    ],
+    [
+     "screen",
+     7.17,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.26,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  }
+ ],
+ "errors": []
+}

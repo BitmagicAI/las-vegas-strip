@@ -1,0 +1,53 @@
+{
+  "waterY": 0.31,
+  "boatLength": 9.2,
+  "boatWidth": 2.3,
+  "airHeight": 2.6,
+  "testedEnvelope": {
+    "length": 10.4,
+    "width": 2.7,
+    "aboveWater": 2.9
+  },
+  "indoorConnected": false,
+  "routes": [
+    {
+      "name": "main-plaza-crossing",
+      "points": [
+        [
+          195,
+          -714
+        ],
+        [
+          195,
+          -677
+        ]
+      ]
+    },
+    {
+      "name": "north-channel",
+      "points": [
+        [
+          229,
+          -725.45
+        ],
+        [
+          239.5,
+          -725.45
+        ]
+      ]
+    },
+    {
+      "name": "south-channel",
+      "points": [
+        [
+          215,
+          -654.2
+        ],
+        [
+          236.5,
+          -654.2
+        ]
+      ]
+    }
+  ]
+}

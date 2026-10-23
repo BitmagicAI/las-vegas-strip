@@ -1,0 +1,1000 @@
+{
+  "version": 1,
+  "id": "bellagio",
+  "name": "Bellagio",
+  "stage": "lakefront-reconstruction-installed",
+  "updated": "2026-10-08",
+  "statusNote": "Mapped north lakefront reconstruction installed with water, distinct village pavilions, vaulted arcade, domes, shoreline planting and promenade. Exact architectural fit and full resort acceptance remain open.",
+  "nextAction": "Compare all north village elevations and shop-specific detail; refine bridge-facing architecture and public gallery, then continue the remaining Bellagio facade/lobby/terrace work recorded below.",
+  "surveyBoundsXZ": [
+    -620,
+    165,
+    -25,
+    660
+  ],
+  "sources": [
+    {
+      "id": "map",
+      "title": "Bellagio official property map",
+      "url": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/bltbd15a01ff2cf05de/bellagio-meetings-property-map.pdf",
+      "kind": "official-map",
+      "image": "tools/resort-blocks/references/bellagio/property-map.png",
+      "note": "Public circulation, restaurant order, north Via Bellagio, lobby and five-pool courtyard. Map contains no metric elevation survey. Current label Carbone Riviera differs from older Picasso imagery.",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap existing footprint extract",
+      "url": "https://www.openstreetmap.org/copyright",
+      "kind": "geodata",
+      "note": "Extract 2026-10-03. Main tower way/25723909, podium relation/1599958; coordinates retained in geographic metres. Heights need corroboration.",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "arrival",
+      "title": "Bellagio porte cochere photograph",
+      "url": "https://blog.atmtxphoto.com/2023/11/17/bellagio-porte-cochere/",
+      "kind": "photograph",
+      "note": "2023 photograph: glazed barrel vault, bronze framework, lanterns and broad covered arrival.",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "bronze",
+      "title": "Boden Alexander Bellagio metalwork",
+      "url": "https://bodenalexander.com/casestudies_metal1/metal1.html",
+      "kind": "fabricator",
+      "note": "Fabricator describes bronze overlaid steel columns at main entrance.",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "pools",
+      "title": "Bellagio courtyard photograph",
+      "url": "https://wizardofvegas.com/hotels/bellagio/",
+      "kind": "photograph",
+      "note": "Five-pool arrangement, blue mosaic patterns, cream loungers, pergolas, hedges and Mediterranean colonnades. Photo date unknown; pool shapes are fitted estimates.",
+      "remoteImage": "https://wizardofvegas.com/hotels/bellagio/l31.jpg",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "pool-official",
+      "title": "Bellagio Pool Courtyards",
+      "url": "https://bellagio.mgmresorts.com/en/amenities/pool-courtyards.html",
+      "kind": "official",
+      "note": "Confirms courtyard pool use and Mediterranean garden character.",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "lago",
+      "title": "LAGO official dining page",
+      "url": "https://bellagio.mgmresorts.com/en/restaurants/lago.html",
+      "kind": "official",
+      "note": "Lakeside al fresco dining; restaurant use and views, not dimensions.",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "lago-photo",
+      "title": "LAGO patio photograph",
+      "url": "https://cravingchicago.com/2016/07/25/lago-las-vegas/",
+      "kind": "photograph",
+      "note": "Historical 2016 terrace, glass balustrade, mosaic floor and dining furniture. Recheck current fit-out during refinement.",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "legacy",
+      "title": "Existing local Bellagio reference register",
+      "url": "/docs/project-records/reference-index.json",
+      "kind": "project-record",
+      "note": "Earlier lobby, rooms, corridor and entrance research preserved in project archive. Existing custom guest assets retained.",
+      "accessed": "2026-10-05",
+      "imageDate": null
+    },
+    {
+      "id": "height",
+      "title": "Council on Vertical Urbanism: Bellagio",
+      "url": "https://www.skyscrapercenter.com/las-vegas/bellagio-resort--casino/3696/",
+      "kind": "dimensions",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Published architectural height 155.8m and 36 floors; supersedes conflicting 120m OSM tower tag. Wing roof height remains a fitted estimate."
+    },
+    {
+      "id": "architect",
+      "title": "JERDE: Bellagio",
+      "url": "https://www.jerde.com/projects/7501/bellagio",
+      "kind": "architect",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Original architect identifies lakefront village, arcade, porte cochere and conservatory as an integrated design."
+    },
+    {
+      "id": "pool-2024",
+      "title": "MGM: 2024 pool courtyard renovation",
+      "url": "https://newsroom.mgmresorts.com/2024-03-21-Bellagio-Introduces-New-Outdoor-Dining-Destination-And-Refreshed-Luxury-Pool-Experience?asPDF=1",
+      "kind": "official",
+      "accessed": "2026-10-05",
+      "imageDate": "2024-03-21",
+      "note": "Five pools, four whirlpools and refreshed private cabanas. Earlier pool photographs predate this refresh; contemporary detailing remains a refinement task."
+    },
+    {
+      "id": "jerde-frontage",
+      "title": "Bellagio lakefront village \u2014 JERDE project architect",
+      "url": "https://www.jerde.com/projects/7501/bellagio",
+      "kind": "architect",
+      "image": "tools/resort-blocks/references/bellagio/jerde-lakefront.png",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Lakefront pavilion proportions, balustrades, rocky planted bank and ribbed glass rotunda. Historical storefront names are not assumed current."
+    },
+    {
+      "id": "jerde-rotunda",
+      "title": "JERDE Bellagio rotunda plan and section",
+      "url": "https://www.jerde.com/thumbs/2400x0/files/wonly/dome-diagram-edit_68737.png",
+      "kind": "architect-drawing",
+      "image": "tools/resort-blocks/references/bellagio/jerde-dome-section.png",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Stepped projecting massing, hipped roofs and central ribbed dome. Diagram is visual research; not an imported game texture."
+    },
+    {
+      "id": "lake-osm",
+      "title": "OSM Fountains of Bellagio water outline",
+      "url": "https://www.openstreetmap.org/way/22971030",
+      "kind": "geodata",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Downloaded bounded XML via public OSM API; 260 shoreline points in same R=6378137 projection as city. CC BY-SA/ODbL attribution already displayed in game."
+    },
+    {
+      "id": "creator-lakefront",
+      "title": "Creator Google Earth aerial, north Bellagio lakefront",
+      "kind": "user-provided-reference",
+      "image": "docs/project-records/user-references/bellagio-lakefront-google-earth.png",
+      "accessed": "2026-10-05",
+      "imageDate": null,
+      "note": "Visual relationship of projecting shops, tiled roofs, glass arcade, rotundas, dark curved bay, rock shoreline and planting. Capture date does not establish the date of underlying imagery."
+    },
+    {
+      "id": "garage-garage-overview.png",
+      "title": "Bellagio garage overview",
+      "kind": "creator-google-earth",
+      "image": "tools/resort-blocks/references/2026-10-06-bellagio-garage/garage-overview.png",
+      "accessed": "2026-10-06",
+      "imageDate": null,
+      "note": "Creator supplied reference; geometry proportions inferred, no survey dimensions or texture extraction."
+    },
+    {
+      "id": "garage-garage-ramp-reference.png",
+      "title": "Bellagio sloping access road and portals",
+      "kind": "creator-google-earth",
+      "image": "tools/resort-blocks/references/2026-10-06-bellagio-garage/garage-ramp-reference.png",
+      "accessed": "2026-10-06",
+      "imageDate": null,
+      "note": "Creator supplied reference; geometry proportions inferred, no survey dimensions or texture extraction."
+    },
+    {
+      "id": "garage-sign-stair-reference.png",
+      "title": "Bellagio sign orientation and pedestrian entrance",
+      "kind": "creator-google-earth",
+      "image": "tools/resort-blocks/references/2026-10-06-bellagio-garage/sign-stair-reference.png",
+      "accessed": "2026-10-06",
+      "imageDate": null,
+      "note": "Creator supplied reference; geometry proportions inferred, no survey dimensions or texture extraction."
+    },
+    {
+      "id": "owner-google-earth-2026-10-08",
+      "title": "Owner's Google Earth view of the main tower and Spa Tower",
+      "kind": "owner-reference",
+      "image": "docs/project-records/bellagio-remodel-2026-10-08/owner-reference-google-earth.webp",
+      "note": "Three segments per tower (owner): cream lower with a square row under two tall rows, white band, eight square rows, white crown with different (arched) windows. Visual reference only; nothing traced or textured from it."
+    }
+  ],
+  "levels": [
+    {
+      "id": "ground",
+      "label": "Casino / lobby / lakefront promenade",
+      "elevationM": 0.24,
+      "features": "Common prototype datum; on-grade casino, main arrival and dining access.",
+      "sources": [
+        "map",
+        "osm"
+      ]
+    },
+    {
+      "id": "bridge",
+      "label": "Via Bellagio bridge gallery",
+      "elevationM": 6.085,
+      "features": "Existing bridge endpoint datum retained, with interior stairs down to north arrival.",
+      "sources": [
+        "map",
+        "osm"
+      ]
+    },
+    {
+      "id": "pool",
+      "label": "Pool courtyard",
+      "elevationM": 0.24,
+      "features": "Ground datum retained; exact pool-versus-promenade elevation remains an explicit approximation.",
+      "sources": [
+        "map",
+        "pools"
+      ]
+    },
+    {
+      "id": "guest",
+      "label": "Guest tower floors",
+      "elevationM": null,
+      "features": "Existing hotel-specific sparse corridor and room templates. Core locations must be reconciled with replacement shell.",
+      "sources": [
+        "map",
+        "legacy"
+      ]
+    }
+  ],
+  "components": [
+    {
+      "id": "tower",
+      "name": "Main three-wing tower",
+      "category": "skyline",
+      "priority": "required",
+      "levels": [
+        "guest"
+      ],
+      "sources": [
+        "height",
+        "osm",
+        "owner-google-earth-2026-10-08"
+      ],
+      "scope": "Mapped three-wing plan in the owner-described three segments: cream lower (square + two tall rows), white band, eight square rows, white belt, white crown (two paired square rows, paired round-arched windows, attic frieze, cornice); lower pyramid-roofed end pavilions; patina hip roofs; rotunda with BELLAGIO drum, open arcade, ribbed dome, 155.8 m tip. Generator tools/resort-blocks/bellagio_towers.py.",
+      "status": "remodelled-2026-10-08-awaiting-owner-review",
+      "evidence": [
+        "docs/project-records/bellagio-remodel-2026-10-08/game-after-reference.webp",
+        "docs/project-records/bellagio-remodel-2026-10-08/game-after-lake.webp",
+        "docs/project-records/bellagio-remodel-2026-10-08/game-after-strip.webp",
+        "docs/project-records/bellagio-remodel-2026-10-08/game-after-rotunda.webp",
+        "build/resort-blocks/bellagio/geometry-report.json"
+      ]
+    },
+    {
+      "id": "podium",
+      "name": "Complete mapped podium",
+      "category": "envelope",
+      "priority": "required",
+      "levels": [
+        "ground",
+        "bridge"
+      ],
+      "sources": [
+        "map",
+        "osm"
+      ],
+      "scope": "Irregular site outline, roof/parapets, service wings and open pool courtyard.",
+      "status": "implemented-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/geometry-report.json",
+        "build/resort-blocks/bellagio/ownership-report.json"
+      ]
+    },
+    {
+      "id": "arrival",
+      "name": "Main covered arrival",
+      "category": "entrance",
+      "priority": "required",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "map",
+        "arrival",
+        "bronze"
+      ],
+      "scope": "Bronze and glass vaulted porte cochere and connected lobby.",
+      "status": "implemented-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/geometry-report.json",
+        "build/resort-blocks/bellagio/ownership-report.json"
+      ]
+    },
+    {
+      "id": "lakefront",
+      "name": "Restaurant terraces",
+      "category": "outdoors",
+      "priority": "required",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "map",
+        "lago",
+        "lago-photo"
+      ],
+      "scope": "Lake-facing dining thresholds, furnished patios, balustrades, shade structures.",
+      "status": "implemented-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/geometry-report.json",
+        "build/resort-blocks/bellagio/ownership-report.json"
+      ]
+    },
+    {
+      "id": "pools",
+      "name": "Five-pool garden courtyard",
+      "category": "outdoors",
+      "priority": "required",
+      "levels": [
+        "pool"
+      ],
+      "sources": [
+        "map",
+        "pools",
+        "pool-official"
+      ],
+      "scope": "Pools, coping, loungers, pergolas, planting and clear public paths.",
+      "status": "implemented-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/geometry-report.json",
+        "build/resort-blocks/bellagio/ownership-report.json"
+      ]
+    },
+    {
+      "id": "via",
+      "name": "North Via Bellagio connections",
+      "category": "circulation",
+      "priority": "required",
+      "levels": [
+        "ground",
+        "bridge"
+      ],
+      "sources": [
+        "map",
+        "osm"
+      ],
+      "scope": "Retain working bridge galleries, stairs and street exits, connect to new casino.",
+      "status": "implemented-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/geometry-report.json",
+        "build/resort-blocks/bellagio/ownership-report.json"
+      ]
+    },
+    {
+      "id": "lobby",
+      "name": "Lobby, conservatory and casino",
+      "category": "interior",
+      "priority": "required",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "map",
+        "legacy"
+      ],
+      "scope": "Preserve distinctive materials, glazed conservatory and arrival focal points; stream by area.",
+      "status": "implemented-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/geometry-report.json",
+        "build/resort-blocks/bellagio/ownership-report.json"
+      ]
+    },
+    {
+      "id": "guest",
+      "name": "Guest cores",
+      "category": "circulation",
+      "priority": "required",
+      "levels": [
+        "ground",
+        "guest"
+      ],
+      "sources": [
+        "legacy",
+        "osm"
+      ],
+      "scope": "Retain custom room/hall sets and accessible core connections.",
+      "status": "retained",
+      "evidence": [
+        "build/resort-blocks/bellagio/geometry-report.json",
+        "build/resort-blocks/bellagio/ownership-report.json"
+      ]
+    },
+    {
+      "id": "service",
+      "name": "South/west service wings",
+      "category": "envelope",
+      "priority": "required",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "osm",
+        "map"
+      ],
+      "scope": "Account for parking/theatre/conference masses and covered south walkway without erasing neighboring geometry.",
+      "status": "retained",
+      "evidence": [
+        "build/resort-blocks/bellagio/geometry-report.json",
+        "build/resort-blocks/bellagio/ownership-report.json"
+      ]
+    },
+    {
+      "id": "north-village",
+      "name": "North waterfront village and Via Bellagio roofs",
+      "category": "envelope",
+      "priority": "required",
+      "levels": [
+        "ground",
+        "bridge"
+      ],
+      "sources": [
+        "creator-lakefront",
+        "jerde-frontage",
+        "jerde-rotunda",
+        "osm"
+      ],
+      "scope": "Five fitted pavilion masses, four rotundas, campanile, barrel-vault arcade, turned-stone balconies, arched mullions, tiled hipped roofs, dark curved shop bay.",
+      "status": "implemented-refinement-open",
+      "evidence": [
+        "build/resort-blocks/bellagio/lakefront-report.json",
+        "build/resort-blocks/bellagio/game-lakefront.png"
+      ]
+    },
+    {
+      "id": "lake",
+      "name": "Mapped lake and Strip promenade",
+      "category": "outdoors",
+      "priority": "required",
+      "levels": [
+        "ground"
+      ],
+      "sources": [
+        "lake-osm",
+        "creator-lakefront"
+      ],
+      "scope": "Water and bank/bed, clipped ground, scalloped balustraded promenade, planted rock pockets, trees, benches and interpreted fountain hardware.",
+      "status": "implemented-refinement-open",
+      "evidence": [
+        "build/resort-blocks/bellagio/lake-city-cut.json",
+        "build/resort-blocks/bellagio/game-lake-shore.png"
+      ]
+    },
+    {
+      "id": "spa-tower",
+      "name": "Spa Tower",
+      "category": "skyline",
+      "priority": "required",
+      "levels": [
+        "guest"
+      ],
+      "sources": [
+        "osm",
+        "owner-google-earth-2026-10-08"
+      ],
+      "scope": "Same scheme as the main tower on way/25723910 (raised centre way/114716301): three square rows low, eight in the middle, arched crown row, taller arched centre crown, pyramid-roofed ends. Visuals in the Bellagio block (source tower/way/114716301); collision stays with the high-rise pass.",
+      "status": "remodelled-2026-10-08-awaiting-owner-review",
+      "evidence": [
+        "docs/project-records/bellagio-remodel-2026-10-08/game-after-spa.webp"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "arrival-to-lobby",
+      "fromLevel": "ground",
+      "toLevel": "ground",
+      "components": [
+        "arrival",
+        "lobby"
+      ],
+      "sources": [
+        "map"
+      ],
+      "status": "clearance-tested",
+      "evidence": [
+        "build/resort-blocks/bellagio/route-audit.json"
+      ],
+      "note": "Sampled path clearance only; this is not a complete round-trip gameplay acceptance test."
+    },
+    {
+      "id": "casino-to-terraces",
+      "fromLevel": "ground",
+      "toLevel": "ground",
+      "components": [
+        "lobby",
+        "lakefront"
+      ],
+      "sources": [
+        "map"
+      ],
+      "status": "clearance-tested",
+      "evidence": [
+        "build/resort-blocks/bellagio/route-audit.json"
+      ],
+      "note": "Sampled path clearance only; this is not a complete round-trip gameplay acceptance test."
+    },
+    {
+      "id": "lobby-to-pool",
+      "fromLevel": "ground",
+      "toLevel": "pool",
+      "components": [
+        "lobby",
+        "pools"
+      ],
+      "sources": [
+        "map"
+      ],
+      "status": "clearance-tested",
+      "evidence": [
+        "build/resort-blocks/bellagio/route-audit.json"
+      ],
+      "note": "Sampled path clearance only; this is not a complete round-trip gameplay acceptance test."
+    },
+    {
+      "id": "bridge-to-casino",
+      "fromLevel": "bridge",
+      "toLevel": "ground",
+      "components": [
+        "via",
+        "lobby"
+      ],
+      "sources": [
+        "map"
+      ],
+      "status": "clearance-tested",
+      "evidence": [
+        "build/resort-blocks/bellagio/route-audit.json"
+      ],
+      "note": "Sampled path clearance only; this is not a complete round-trip gameplay acceptance test."
+    },
+    {
+      "id": "lobby-to-guest",
+      "fromLevel": "ground",
+      "toLevel": "guest",
+      "components": [
+        "lobby",
+        "guest"
+      ],
+      "sources": [
+        "map"
+      ],
+      "status": "retained-not-rewalked",
+      "evidence": [
+        "build/resort-blocks/bellagio/route-audit.json"
+      ],
+      "note": "Sampled path clearance only; this is not a complete round-trip gameplay acceptance test."
+    }
+  ],
+  "views": [
+    {
+      "id": "aerial",
+      "name": "Whole block",
+      "purpose": "Check silhouette, footprint and courtyard.",
+      "sources": [
+        "osm",
+        "map"
+      ],
+      "status": "reviewed-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/aerial-review.png"
+      ]
+    },
+    {
+      "id": "arrival",
+      "name": "Main arrival",
+      "purpose": "Compare canopy and inside view.",
+      "sources": [
+        "arrival"
+      ],
+      "status": "reviewed-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/arrival-review.png"
+      ]
+    },
+    {
+      "id": "patio",
+      "name": "Lakefront dining",
+      "purpose": "Check thresholds, furniture and lake views.",
+      "sources": [
+        "lago-photo"
+      ],
+      "status": "reviewed-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/patio-review.png"
+      ]
+    },
+    {
+      "id": "pools",
+      "name": "Pool courtyard",
+      "purpose": "Compare five-pool composition and planting.",
+      "sources": [
+        "pools"
+      ],
+      "status": "reviewed-first-pass",
+      "evidence": [
+        "build/resort-blocks/bellagio/courtyard-review.png"
+      ]
+    },
+    {
+      "id": "via",
+      "name": "North bridge",
+      "purpose": "Check retained connections.",
+      "sources": [
+        "map"
+      ],
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "north-lakefront",
+      "name": "North lakefront comparison",
+      "purpose": "Compare separate village masses, glazing, roof silhouette and shoreline to the supplied aerial.",
+      "sources": [
+        "creator-lakefront",
+        "jerde-frontage"
+      ],
+      "status": "reviewed-refinement-open",
+      "camera": {
+        "eye": [
+          -3,
+          47,
+          283
+        ],
+        "target": [
+          -102,
+          8,
+          222
+        ]
+      },
+      "gameCapture": "build/resort-blocks/bellagio/game-lakefront.png",
+      "evidence": [
+        "build/resort-blocks/bellagio/lakefront-review.png"
+      ]
+    },
+    {
+      "id": "lake-shore",
+      "name": "Walk-level view across the lake",
+      "purpose": "Check facade materials, balconies, trees and promenade.",
+      "sources": [
+        "creator-lakefront",
+        "jerde-frontage"
+      ],
+      "status": "reviewed-refinement-open",
+      "camera": {
+        "eye": [
+          -18,
+          1.94,
+          274
+        ],
+        "target": [
+          -101,
+          12,
+          222
+        ]
+      },
+      "gameCapture": "build/resort-blocks/bellagio/game-lake-shore.png",
+      "evidence": [
+        "build/resort-blocks/bellagio/lake-shore-review.png"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "metric-elevations",
+      "title": "Physical podium elevations are estimates",
+      "detail": "Official maps establish topology, not metric heights. Preserve existing bridge datum; do not claim surveyed patio/pool heights.",
+      "severity": "refinement",
+      "status": "open"
+    },
+    {
+      "id": "final-fidelity",
+      "title": "Full exterior fidelity requires comparison and refinement",
+      "detail": "First geometry pass is not architectural sign-off. Compare all sides, each patio, south routes and service wings.",
+      "severity": "blocking",
+      "status": "open"
+    },
+    {
+      "id": "legacy-interior-plan",
+      "title": "Legacy interior is retained at prototype coordinates",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Mapped exterior now wraps the retained custom casino and service suite. Its full official-plan registration and guest-floor schedule need a separate follow-up, preserving gameplay objectives."
+    },
+    {
+      "id": "mapped-lobby-detail",
+      "title": "Mapped lobby and conservatory need a dedicated detail pass",
+      "detail": "Current connectors use simplified glass flowers, broad marble surfaces and sparse furnishing. Preserve the earlier custom casino; refine the new arrival lobby composition, ceiling relief, floor patterns, wall materials, planting and lighting against matched photos.",
+      "severity": "refinement",
+      "status": "open"
+    },
+    {
+      "id": "pool-fitout",
+      "title": "Pool garden and patio detail remains approximate",
+      "detail": "Five pools and circulation exist; current fitted shapes, generic dining furniture, simplified trees and pergolas do not reproduce the complete 2024 cabana/whirlpool fit-out. Restaurant interiors and remaining named terraces need individual reconstruction.",
+      "severity": "refinement",
+      "status": "open"
+    },
+    {
+      "id": "complete-runtime-pass",
+      "title": "Full route and performance acceptance is pending",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "3,993 combined static Bellagio route samples and 3,861 map-wide access samples pass. Door/bridge descent checked separately in-game. Complete cold-load, baseline/after memory and every guest/core return walk remain outstanding."
+    },
+    {
+      "id": "north-village-exact-fit",
+      "title": "North village remains a fitted reconstruction",
+      "detail": "Refine exact pavilion outlines and roof heights, sculpted stone ornament, shop signs/awnings, bridge-facing wall/window layout and contemporary landscape density. Current repeated bays and fitted heights are not photographic or metric architectural sign-off.",
+      "severity": "refinement",
+      "status": "open"
+    },
+    {
+      "id": "lake-show",
+      "title": "Fountain show and engineering layout are not implemented",
+      "detail": "Current muted header/ring geometry suggests submerged hardware. It is not a measured nozzle layout. Water level, depth and material response are visual estimates; no synchronized fountain animation.",
+      "severity": "refinement",
+      "status": "open"
+    }
+  ],
+  "gates": [
+    {
+      "id": "survey",
+      "name": "Survey",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "massing",
+      "name": "Massing",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "levels",
+      "name": "Levels",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "facades",
+      "name": "Facades",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "integration",
+      "name": "Integration",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "runtime",
+      "name": "Runtime",
+      "status": "pending",
+      "evidence": []
+    },
+    {
+      "id": "visual",
+      "name": "Visual",
+      "status": "pending",
+      "evidence": []
+    }
+  ],
+  "implementationEvidence": {
+    "geometry": "build/resort-blocks/bellagio/geometry-report.json",
+    "ownership": "build/resort-blocks/bellagio/ownership-report.json",
+    "routes": "build/resort-blocks/bellagio/route-audit.json",
+    "runtime": "build/resort-blocks/bellagio/runtime-review.json",
+    "proof": "build/resort-blocks/bellagio/proof.html",
+    "lakefront": "build/resort-blocks/bellagio/lakefront-validation.json",
+    "lakefrontProof": "docs/project-records/bellagio-lakefront-review.html"
+  },
+  "installedSnapshot": {
+    "files": {
+      "src/work/ResortBlocks.ts": "eabc094ee5db3efba56d344fdbcff079f9987a6615541a75ede3b73b2f1643b5",
+      "src/work/StripLandmarks.ts": "4ec2abee9b81551c10f56da5cf4b020f47998da9cb09e16fcd88e72d7d019840",
+      "src/work/GeographicCity.ts": "96d638d29fe0dc63cafefa53c63432c47edd86a14a9a8b0bf2acc31b6bba67ed",
+      "src/work/ResortBlockReview.ts": "893b76b6bdd9b4bca62ef9fac653a0d807770c1b214029c6d4203af288190778",
+      "src/work/geographic/level.json": "da49203c647be1e6f51ae6d5f83b475b7ecdd84ac71ad1dfda7789063d7a33eb",
+      "build/geographic-strip/city.glb": "1427b6e8c18f1840228e0e759f951d6bd1653caea41f2ca080c91762adc14d52",
+      "build/geographic-strip/detailed.glb": "000495f1c77cb577e61ba77442911f619b50310da3fb5fbba7bf3834059a0570",
+      "build/resort-blocks/bellagio/bellagioPromenade-exterior.glb": "d77ebc30f1a057f1e7b3831a1e4b27faf1b6bb93fdc3d441a49e8ab0253d9708",
+      "build/resort-blocks/bellagio/bellagioLobby-exterior.glb": "1c221328d6d4032a1c5a742b1649c19a43d7f37b8b31d4105013bbb0f40004ac",
+      "build/resort-blocks/bellagio/bellagioGarden-exterior.glb": "8014aa04e68aa2cb309cc12afcc87489b2803989f66330fa0093ce56d727b1f7",
+      "build/resort-blocks/bellagio/bellagioConservatory-exterior.glb": "745d2f4acba4f511e7ebb0fd18d1873a868c8e2499133c452a73424e9e51010d",
+      "build/resort-blocks/bellagio/bellagioBlock-exterior.glb": "dc922128812375e19f08e1c54a5dc819e994f5c281bccc36979a2c857163e3d6",
+      "build/resort-blocks/bellagio/bellagioBlock-interior.glb": "cbe8c43cfbe3e253301168db34d794e5ac28eac226450114588d4c646ee7ab81",
+      "build/resort-blocks/bellagio/bellagioGarden-interior.glb": "79c15b627dbc8a7981b5acbce2e3604a45651f0fee794ce209d6f2504d50683d",
+      "build/resort-blocks/bellagio/bellagioConservatory-interior.glb": "89c9a4913a6d5b36a29db7f59c8b66c20cfb859a0ab7248f2e9a1fa09caba9b5",
+      "build/resort-blocks/bellagio/bellagioLobby-interior.glb": "48347ebe02b107b49bb0c8ee2a7bd811bcf635505a5423ea8f8fa3eaadea74d3",
+      "build/resort-blocks/bellagio/bellagioPromenade-interior.glb": "ef7db949676d395cfe6ddd870ac786ff2d02878642e0b1ce303c893f1c2d3c89"
+    },
+    "note": "First-pass installed artifact hashes, not full completion sign-off."
+  },
+  "lakefrontInstalledSnapshot": {
+    "files": {
+      "src/work/ResortBlockReview.ts": "76eeb3fc51825f68693fb4f678520098e7a77199e54a65c72340272195d8026e",
+      "src/work/StripLandmarks.ts": "841f4a454253a9bb4721d13d2cf6320255b497287e82ec506f5a2fda9e3832b0",
+      "src/work/geographic/anchors.json": "dd864cb9c5687df99a71b5b78eab63e3c7cee87ca131c70609a1dd270f13a0cf",
+      "src/work/geographic/level.json": "3cf65edac95efa06377fcd7a3a7e85d35d6ea94d03ff6dc959e5fbd95b76f159",
+      "build/geographic-strip/city.glb": "a9fc88fd482f3febb14f487eec31765a01233af67f5acd699a456c934d1216e6",
+      "build/geographic-strip/detailed.glb": "e9fc7ad7d1bc6c174e5cdaa6da42c8d0779141493197486688279c60d5b5b5bb",
+      "build/resort-blocks/bellagio/bellagioBlock-exterior.glb": "816cf72a9ab08e125b86cdd8fb76527d5f960366af24183de02bf9c44e489fd4",
+      "build/resort-blocks/bellagio/venues.json": "cf18029d40a9c9385ce5dd0befbb8cbb6cc36ab8329f6b5f6b486aa31a557ad5",
+      "build/geographic-strip/access/bellagio-via.json": "f71aeeabf12559aae2dd0ba8aa4ae1db33e17f44549f54309f012a2c7b842dcb"
+    },
+    "note": "Local follow-up geometry snapshot; the earlier installedSnapshot remains historical. Full-resort gates are still open."
+  },
+  "arrivalCorrection20261006": {
+    "references": "tools/resort-blocks/references/2026-10-06-cosmo-bellagio",
+    "proof": "build/resort-blocks/bellagio/arrival-proof.html",
+    "status": "Implemented; visual refinement remains open",
+    "changes": [
+      "South sign tower and covered pedestrian arcade",
+      "Clipped obsolete arrival-region city road/barrier geometry",
+      "Joined asphalt surfaces, fitted ramp toe, bridge underside and retaining walls",
+      "Landscape islands and road-safe canopy supports",
+      "Relocated one obstructing sanctuary projector 11m north/south along Z"
+    ],
+    "limitations": [
+      "Dimensions photo-fitted, not surveyed",
+      "Cosmopolitan folded/faceted lower facade still needs refinement",
+      "Bellagio sign ornament and banner artwork simplified; no Google image textures",
+      "Full manual driving loop not performed; collision envelope sampled automatically"
+    ]
+  },
+  "garageCorrection": {
+    "date": "2026-10-06",
+    "implemented": [
+      "Mapped garage replaced: three covered floors plus rooftop, internal ramps and seven entrance routes",
+      "Graded side road reaches separate floors, old solid collision removed",
+      "Sign rotated 90 degrees, hollow base with internal stair and upper return gallery",
+      "38 detailed broadleaf trees with three LODs in ten spatial batches and 4m crown clearance"
+    ],
+    "evidence": "build/resort-blocks/bellagio/garage-proof.html",
+    "limitations": [
+      "Floor heights and ramp sections fitted to mapped three-level garage, not surveyed.",
+      "Generic authored parking layout and stair plan; exact stall count and internal architecture unverified.",
+      "Tree upgrade scoped to Bellagio south arrival: 38 trees; existing trees elsewhere retain earlier models."
+    ]
+  },
+  "waterEdgeRepair20261009": {
+    "record": "docs/project-records/bellagio-water-edge-2026-10-09/README.md",
+    "status": "Targeted repair installed; full-resort refinement remains open",
+    "changes": [
+      "Water uses the render ambience clock in gameplay and editor",
+      "Planar reflections refresh every visible frame with reduced distortion, MSAA and mipmaps",
+      "Lake-bank/promenade/garden shared render faces have explicit ownership",
+      "Closed the roadside cut faces at x=-22 and added support to the retained narrow verge",
+      "Fountain hardware lowered beneath the water"
+    ],
+    "preserved": [
+      "255 exterior groups unchanged",
+      "30 protected files unchanged including interiors, city and routes",
+      "Original authoring collision retained as an exact prefix"
+    ],
+    "validation": {
+      "geometryOwnershipRemainingM2": 0,
+      "floorSamples": 1240,
+      "capRays": 31,
+      "mirrorRefresh": "150/150 for gameplay, editor still, editor turn",
+      "resolution": [
+        2450,
+        1550
+      ],
+      "bitmagicVerify": "passed, no failures/warnings (90s startup allowance)"
+    },
+    "limitations": [
+      "19 pre-existing route-audit failures at the sign stairs; identical before and after",
+      "Performance samples are warm local views, not a full-city streaming drive",
+      "Water remains a real-time approximation; no physical refraction or fountain show"
+    ]
+  },
+  "cityInventoryAudit": {
+    "date": "2026-10-13",
+    "status": "installed-reviewed-refinement-pending",
+    "scope": "Reviewed existing lakefront village, arrival canopy, parking decks and main podium; revised flat-roof finish and added decorative upper-service details without regenerating roads or interiors.",
+    "captureDirectory": "build/city-exteriors/bellagio-ownership",
+    "findings": [
+      "North village, arrival and garage already authored; preserve them.",
+      "Flat podium roof uses a distracting repetitive finish; replace with matte tan membrane after Earth comparison.",
+      "Mapped upper service blocks need coping, joints and equipment; retain their physical shell.",
+      "West view18.9ms median/21.5ms p95 at1280x720; no city-wide60fps claim."
+    ],
+    "reference": {
+      "url": "https://earth.google.com/web/@36.1126,-115.1783,720a,600d,35y,90h,55t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true,
+      "establishes": "Tan flat podium membranes, stepped service enclosures, parapets and small mechanical units; physical dimensions approximate."
+    },
+    "finalCaptureDirectory": "build/city-exteriors/bellagio-roof-final",
+    "shadowComparison": "build/city-exteriors/bellagio-shadow-bias",
+    "geometry": {
+      "addedTriangles": 10808,
+      "addedMaterialBatches": 4,
+      "upperServiceStructures": 8,
+      "optimizedBytes": 48808304
+    },
+    "performance": {
+      "viewport": "1280x720",
+      "framesPerView": 180,
+      "northMedianP95Ms": [
+        16.6,
+        18.0
+      ],
+      "westMedianP95Ms": [
+        20.0,
+        21.7
+      ],
+      "roofMedianP95Ms": [
+        17.8,
+        19.3
+      ],
+      "note": "Fixed views, not driving. West baseline18.9/21.5ms. Above60fps budget; whole-city60fps not established."
+    },
+    "validation": {
+      "typecheck": "PASS npm run check after shadow correction; Python source compilation also PASS",
+      "roofOverlap": "356top triangles,6391.800396m2 total equals union; no overlap within north roof mesh.",
+      "shadowDiagnostic": "Disabling received shadows removes roof pattern. .02/.04/.08m normal bias compared; smallest .02m removes visible acne and preserves cast shadows. Earlier diagnostic browser crashed after screenshots; successful subsequent bias comparison completed.",
+      "cliVerify": "FAILED:60s menu/Play detection,16fps menu3011bodies; direct gameplay probes completed. See verify-bellagio-service.log. No blind retry."
+    },
+    "remaining": [
+      "Public circulation and detailed frontage fit remain open in original record.",
+      "Pool court requires fuller reference-matched landscaping and amenities.",
+      "West aerial view remains above16.7ms frame budget.",
+      "Do not treat geometry ownership reconciliation as photorealistic/full-site completion."
+    ],
+    "sourceSha256": "baa89fe0cd987eb18f93b61fd849e3e7c7c7d62bb8537b820af6945d9c069b21"
+  },
+  "mappedArcade20261021": {
+    "stage": "refinement-deferred",
+    "mappedIds": [
+      "way/374989480"
+    ],
+    "sources": [
+      {
+        "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11087,-115.17417&zoom=20&basemap=satellite",
+        "provider": "Google Maps satellite",
+        "accessDate": "2026-10-21",
+        "establishes": "Terracotta covered pedestrian arcade between garage and Bellagio sign; road corridors below. Pier placement not visible."
+      }
+    ],
+    "ownership": "Removed 220 obsolete mapped 0\u20135m solid bridge visual/collision triangles. Retained authored south-covered-arcade and roads; added nine small support piers outside road corridors.",
+    "estimatedDimensions": "Existing deck 6.8m / soffit6.3m retained. Pier positions,1.05m shafts and4.3m caps estimated.",
+    "before": "build/city-exteriors/bellagio-mapped-bridge-before",
+    "after": "build/city-exteriors/bellagio-mapped-bridge-final",
+    "viewsInspected": [
+      "bellagio-bridge-south",
+      "bellagio-bridge-north"
+    ],
+    "triangles": 540,
+    "batches": 3,
+    "optimizedMiB": 0.01,
+    "tests": [
+      "8 elevated pedestrian walking legs PASS",
+      "45 lower-road vertical clearance samples PASS (4.4m above road+0.3m)"
+    ],
+    "performance": {
+      "viewport": "960x540",
+      "southP50Ms": 26.1,
+      "southP95Ms": 28.7,
+      "northP50Ms": 21.4,
+      "northP95Ms": 22.6,
+      "limitation": "Static views only; not 60fps route validation"
+    },
+    "remaining": [
+      "Existing blank utility/abutment boxes beneath arcade remain visible and need separate ownership/reference audit",
+      "Roof pavilion profile and arcade facade proportions remain approximate",
+      "Lower-road headroom samples are not a vehicle driving test",
+      "Existing foliage/road and water rendering issues visible; not changed in this pass"
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/bellagioArcadePiers-exterior.glb": "7d649dee3ecceefd59bc7e3842219af3981269c1f63442ab74bc6a6a7458f98d",
+      "build/strip-landmarks/bellagioArcadePiers-exterior-collision.json": "cd2d436d2f90e9f1370ade52af88e8cf331e905d38682a245fecf05f9070f5d9"
+    }
+  }
+}

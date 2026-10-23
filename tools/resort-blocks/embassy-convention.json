@@ -1,0 +1,62 @@
+{
+  "id": "embassy-convention",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.124,-115.1538,620a,360d,35y,270h,60t,0r",
+      "review": "Rear inspected: tall capsule atrium, stepped wings and rooftop equipment. Image date not shown."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.124,-115.1538,620a,260d,35y,90h,65t,0r",
+      "review": "Front inspected: rounded glass entrance rotunda, blue-gray stepped cores, pink-beige wings and balcony stacks."
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/lascces-embassy-suites-convention-center-las-vegas/gallery/",
+      "review": "Official exterior photograph inspected; confirms bronze glazing grids, salmon balconies, gray stepped shoulders, beige window bays and Embassy Suites sign. Photo date unknown."
+    }
+  ],
+  "dimensions": "Mapped 36m tower height; component elevations estimated from relative floor bands. No survey precision claim.",
+  "remaining": [
+    "Public arrival/entrance openings and route validation",
+    "Side terrace and landscaping",
+    "Exact bay spacing and measured elevations",
+    "Block route performance comparison"
+  ],
+  "baseline": [
+    "build/city-exteriors/embassy-before/embassy-front.png",
+    "build/city-exteriors/embassy-before/embassy-back.png",
+    "build/city-exteriors/embassy-before/embassy-arrival.png"
+  ],
+  "baselineReview": "All three inspected; no glazing or balconies, blank uniform shell. Covered arrival is an unglazed short block.",
+  "implementation": {
+    "ids": [
+      "way/331337786",
+      "way/1426502732"
+    ],
+    "triangles": 15643,
+    "batches": 10,
+    "tests": "255 roof/balcony support samples pass after removing balconies intersecting adjacent stepped roof volumes. Initial correction exposed 12 buried slab samples, fixed in generator."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/embassy-after/embassy-front.png",
+      "build/city-exteriors/embassy-after/embassy-back.png",
+      "build/city-exteriors/embassy-after/embassy-arrival.png"
+    ],
+    "review": "All three final PNGs inspected. Rounded atrium and entrance glazing present; outer front bays restored to beige with balcony stacks. No obvious coplanar flicker in these stills. Landscape, entrance opening, door route and exact facade bay survey remain unfinished. Not photoreal completion."
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": [
+      "Settled in 4.1s \u00b7 59 fps (engine; host machine) \u00b7 playing \u00b7 player at (-60, 0, 540) \u00b7 3011 bodies",
+      "Verification passed. Artifacts in .bitmagic/verify"
+    ],
+    "note": "Startup check only; not block route performance."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/embassy_convention.py": "1cd2858440fee9d284d3f2beb5bf9aa2d44802dd0e3f5f444aa7fb016bd3c1f1",
+      "build/optimized/build/strip-landmarks/embassyConvention-exterior.glb": "701266c5e10262c8e0c6ccb2b5c219069274abd3d07971a006137276a7249bfd"
+    }
+  }
+}

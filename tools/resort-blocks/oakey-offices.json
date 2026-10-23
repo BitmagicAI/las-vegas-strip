@@ -1,0 +1,51 @@
+{
+  "id": "oakey-offices",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725799",
+    "way/1236725798",
+    "way/1236725800"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1512539,-115.1512999,75y,180h,90t/data=!3m7!1e1!3m5!1svO3ezhOc7X__1EE4_OwzGA!2e0!7i16384!8i8192",
+      "imageDate": "August2024",
+      "observed": "White walls, low brown/red hip roofs, small barred windows, paved north parking, black service fences and plumbing banners. Map labels west SinCityREHeatingCooling and east PlumbCrazySolutions."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15101,-115.15091&heading=270&pitch=0",
+      "imageDate": "December2022",
+      "observed": "528 visible at side doorway; side barred windows, narrow open post-supported carport. Older tan paint replaced with newer north-view white. Latest available side-view date."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15085,-115.15165&zoom=20&basemap=satellite",
+      "observed": "Distinct west horizontal roof/east longitudinal roof and small carport footprint; southern fenced yards."
+    }
+  ],
+  "remaining": [
+    "Heights/eave dimensions estimated; rear facades partly inferred",
+    "Signs and banners approximate; shrubs not yet matched",
+    "No interior access claim",
+    "Exact wall signs, roof weathering and boundary layout remain approximate",
+    "Roof hip rectangles approximate slight mapped skew/notches; materials require neutral daylight review"
+  ],
+  "researchNext": {
+    "id": "way/1236725797",
+    "source": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15068,-115.15091&heading=300&pitch=0",
+    "imageDate": "December2022",
+    "observed": "Long low white building behind530/528yard, shallow gray hipped roof, many vertical windows on south face, dark base; several mature fan palms and willow-like trees. Earlier satellite labelOutdoorAdvertisingLasVegas. Separate mapped owner not yet rebuilt."
+  },
+  "evidence": {
+    "views": "build/city-exteriors/oakey-offices-final",
+    "support": "build/city-exteriors/oakey-offices-collision.json",
+    "walk": "build/city-exteriors/oakey-offices-walk.json",
+    "ownership": "build/city-exteriors/oakey-offices-ownership-audit.json",
+    "visualReview": "Installed north/east/aerial inspected; north repeated after feather-banner silhouette and readable vertical lettering correction. 9296 authored triangles,23 batches,0.60 MiB optimized.396 support samples and6 walking legs pass.36 old visual/collision triangles removed. Typecheck passed. Static960x540 p50~16.8ms/p95~18.6ms is not driving-route performance evidence."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/oakeyOffices-exterior.glb": "3da370af1750a2d8ff859aae1a30208f9c75cbc8d3b863ab07f7adfe7b9e930d",
+      "build/strip-landmarks/oakeyOffices-exterior-collision.json": "ebfb16671369046de58a92eda516326f409882e4bdb20ca0f38e868ca0240df6"
+    }
+  }
+}

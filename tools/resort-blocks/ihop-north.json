@@ -1,0 +1,60 @@
+{
+  "id": "ihop-north",
+  "name": "IHOP1809SouthLasVegasBoulevard",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://restaurants.ihop.com/en-us/nv/las-vegas/breakfast-1809-s-las-vegas-blvd-3684",
+      "provider": "IHOP owner",
+      "accessed": "2026-10-19",
+      "observed": "Current location confirmed."
+    },
+    {
+      "url": "https://cityoflasvegas.smugmug.com/Downtown/IHOP-on-Las-Vegas-Blvd",
+      "provider": "City of Las Vegas",
+      "imageDate": "2020-10-14",
+      "accessed": "2026-10-19",
+      "observed": "City photo inspected: blue cylindrical entry tower with two silver rings, tall curved glazing below; silver corrugated one-storey mass, red window recesses, IHOP pylon with arrow."
+    },
+    {
+      "url": "https://www.google.com/maps/place/1809+S+Las+Vegas+Blvd,+Las+Vegas,+NV+89104,+USA/@36.1495999,-115.1529729,200m/data=!3m1!1e3",
+      "provider": "Google Maps satellite / Airbus,Maxar,Vexcel imagery",
+      "accessed": "2026-10-19",
+      "observed": "Visually inspected current standalone small restaurant north of long L footprint. Map label Culinary Health Fund on old footprint. Imagery date unknown;2026copyright does not date image."
+    }
+  ],
+  "remaining": [
+    "Pylon arrow/signfont and exact material/weathering incomplete.",
+    "Satellite location checked, exact elevations and facade dimensions estimated.",
+    "Health-fund facades need dedicated reference photos; neutral pass only.",
+    "Public interior and entry navigation not implemented."
+  ],
+  "dimensions": {
+    "newRestaurant": "Mapped way/1265036423 now identified as currentIHOP despite stale RummelMotel tag;605.62m2 footprint,20.59x29.4m,frontframe1777.5765,-3746.975,yawatan2(18.424,9.181). Heights5.4/10.2m remain photo-estimated.",
+    "oldFootprint": "way/364845140 retained separately; mappedIHOPtag conflicts with current satellite. Neutral skin only; health-fund exact branding/details still unverified."
+  },
+  "ownership": {
+    "restaurant": "way/1265036423 replaced by structural restaurant and frontage apron;10old city triangles removed.",
+    "neighbor": "way/364845140 retained city collision, facade skin offset. Satellite label Culinary Health Fund;tag saysIHOP.",
+    "preservation": "Targeted post-rebuild restoration kept every unrelated city triangle exact, including neighboring Oasis roof retessellated by generic rebuild."
+  },
+  "tests": {
+    "approach": "28floor/headroom samples passed after apron correction. No interior access claim.",
+    "ownership": "10removed,0added,0outside scope; unrelated meshes exactly identical. build/city-exteriors/ihop-ownership-audit.json",
+    "typecheck": "passed",
+    "visual": "All three final installed captures inspected; sign clear of cylinder, side windows exposed, ground apron present. Simplified branding/landscaping remain."
+  },
+  "evidence": [
+    "build/city-exteriors/ihop-final/ihop-front.png",
+    "build/city-exteriors/ihop-final/ihop-drive.png",
+    "build/city-exteriors/ihop-final/ihop-aerial.png"
+  ],
+  "performance": "960x540 ultra fixed views p50 ~16.7ms,p95~17.9ms; not whole-city driving benchmark.",
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/ihopNorth-exterior.glb": "5ea1055841536b53461254417af8b0e57bfcb584d98b9999b67a37739cd43e8f",
+      "build/strip-landmarks/ihopNorth-exterior-collision.json": "664b5a8d0788c1e3267fedf71f882e3951a3e27016d3de9ccbdb0d299a30e363",
+      "build/geographic-strip/city.glb": "5965205f5d4bcfc2a77d6a1e4473ce1aeffe46ef4fde1028e71d5c364c8e3568"
+    }
+  }
+}

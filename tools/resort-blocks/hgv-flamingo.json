@@ -1,0 +1,65 @@
+{
+  "id": "hgv-flamingo",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://www.hiltongrandvacations.com/en/resorts-and-destinations/las-vegas/flamingo-a-hilton-grand-vacations-club",
+      "review": "Official property: private courtyard, outdoor pool, gardens; distinct from the main Flamingo GO Pool."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1167,-115.1690,760a,310d,35y,90h,55t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected main white/burgundy stepped slab, dark vertical glazing bays, low courtyard wings and private pool; top-down preserves mapped plan."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1167,-115.1690,680a,240d,35y,0h,0t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected main white/burgundy stepped slab, dark vertical glazing bays, low courtyard wings and private pool; top-down preserves mapped plan."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1167,-115.1690,680a,280d,35y,90h,65t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Visually inspected main white/burgundy stepped slab, dark vertical glazing bays, low courtyard wings and private pool; top-down preserves mapped plan."
+    }
+  ],
+  "remaining": [
+    "Detailed garden planting, pool enclosures/shade, and public circulation unfinished",
+    "Facade bay/step dimensions visually estimated; side-wing elevations retained from map",
+    "Ground-floor doors are geometric apertures, not new working public interiors"
+  ],
+  "implementation": {
+    "triangles": 21936,
+    "batches": 18,
+    "compressedMiB": 0.33,
+    "replacementIDs": [
+      "way/115768623",
+      "way/115768620",
+      "way/115769438",
+      "way/115768621",
+      "way/115768622",
+      "way/115768624"
+    ],
+    "towerHeightsM": [
+      40,
+      47,
+      51,
+      47,
+      40
+    ],
+    "courtyard": "Private north pool only; main Flamingo GO Pool untouched"
+  },
+  "visualReview": {
+    "views": [
+      "build/city-exteriors/hgv-flamingo-after/hgv-flamingo-west.png",
+      "build/city-exteriors/hgv-flamingo-after/hgv-flamingo-east.png",
+      "build/city-exteriors/hgv-flamingo-after/hgv-flamingo-court.png"
+    ],
+    "allInspected": true,
+    "baseline": "build/city-exteriors/waldorf-corrected/hgv-flamingo-before-west.png"
+  },
+  "tests": {
+    "roofSupport": 69,
+    "failures": 0,
+    "typecheck": "passed"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "id": "bellagio-curved-roofs",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/114719022",
+    "way/114719023"
+  ],
+  "sources": [
+    "docs/project-records/city-exteriors-2026-10-12/bellagio-curved-roofs-research.json"
+  ],
+  "remaining": [
+    "Heights and concave arc estimated from map and aerial, not surveyed",
+    "Original tile maps and cornices remain a visual approximation; broad adjacent podium roof and dome need later refinement",
+    "Not whole-resort photoreal completion"
+  ],
+  "triangles": 2475,
+  "batches": 10,
+  "optimizedMiB": 0.1,
+  "viewsInspected": [
+    "build/city-exteriors/bellagio-curved-roofs-review2/bellagio-roofs-aerial.png",
+    "build/city-exteriors/bellagio-curved-roofs-review2/bellagio-roofs-north.png",
+    "build/city-exteriors/bellagio-curved-roofs-review2/bellagio-roofs-south.png"
+  ],
+  "tests": [
+    "1117 roof-support samples passed",
+    "4 bidirectional terrace-route reports passed with retained Bellagio runtime collision"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "bellagio-roofs-aerial",
+        "eye": [
+          -172,
+          40,
+          327
+        ],
+        "target": [
+          -201,
+          15,
+          282
+        ],
+        "p": [
+          -175,
+          1,
+          315
+        ],
+        "p50": 35.39999997615814,
+        "p95": 39
+      },
+      {
+        "name": "bellagio-roofs-north",
+        "eye": [
+          -183,
+          24,
+          246
+        ],
+        "target": [
+          -202,
+          15,
+          263
+        ],
+        "p": [
+          -174,
+          1,
+          251
+        ],
+        "p50": 41.80000001192093,
+        "p95": 57.19999998807907
+      },
+      {
+        "name": "bellagio-roofs-south",
+        "eye": [
+          -175,
+          20,
+          307
+        ],
+        "target": [
+          -201,
+          15,
+          294
+        ],
+        "p": [
+          -171,
+          1,
+          307
+        ],
+        "p50": 32.90000003576279,
+        "p95": 37.59999996423721
+      }
+    ],
+    "baselineStatic960x540": [
+      {
+        "name": "bellagio-roofs-aerial",
+        "eye": [
+          -172,
+          40,
+          327
+        ],
+        "target": [
+          -201,
+          15,
+          282
+        ],
+        "p": [
+          -175,
+          1,
+          315
+        ],
+        "p50": 35,
+        "p95": 39.09999996423721
+      },
+      {
+        "name": "bellagio-roofs-north",
+        "eye": [
+          -183,
+          24,
+          246
+        ],
+        "target": [
+          -202,
+          15,
+          263
+        ],
+        "p": [
+          -174,
+          1,
+          251
+        ],
+        "p50": 37.10000002384186,
+        "p95": 41.19999998807907
+      },
+      {
+        "name": "bellagio-roofs-south",
+        "eye": [
+          -175,
+          20,
+          307
+        ],
+        "target": [
+          -201,
+          15,
+          294
+        ],
+        "p": [
+          -171,
+          1,
+          307
+        ],
+        "p50": 32,
+        "p95": 35.90000003576279
+      }
+    ],
+    "scope": "Static sunset views, ultra960x540; not a 60fps driving benchmark."
+  },
+  "ownership": {
+    "removed": 41,
+    "colliderTrianglesRemoved": 41,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in bellagioCurvedRoofs mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/bellagioCurvedRoofs-exterior.glb": "3531e07933af6968afbb064b55b2be8473f551c0d60f359903d26c319e61aaed",
+      "build/strip-landmarks/bellagioCurvedRoofs-exterior-collision.json": "52ae4d2e1c69dbc6d40aa786b096241d9eb2b9ce2f53b460309c71aa4d025df4"
+    }
+  }
+}

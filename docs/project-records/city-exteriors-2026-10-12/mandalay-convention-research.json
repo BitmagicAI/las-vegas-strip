@@ -1,0 +1,17 @@
+{
+  "status": "preliminary-research-only",
+  "mappedId": "way/116660354",
+  "sources": [
+    {
+      "url": "https://mandalaybay.mgmresorts.com/en/meetings-groups/meeting-convention-facilities.html",
+      "observations": "Operator describes three South Convention Center levels; Bayside halls at1, Shoreline and ballroom at2, South Seas at3. Text inspected; maps not yet viewed."
+    },
+    {
+      "url": "https://mandalaybay.mgmresorts.com/content/dam/MGM/mandalay-bay/meetings/documents/mandalay-bay-meetings-capacities-and-dimensions-new-version-two.pdf",
+      "date": "Current retrieved PDF cover V3.26, map pages V9.25",
+      "inspected": "Text read; screenshots not successfully surfaced"
+    }
+  ],
+  "remaining": "Earth survey, map inspection, height schedule and ownership audit",
+  "ownership": "Already has authored convention facade and solar roof in tools/strip-landmarks/mandalay_bay.py, key mandalayExterior. Do not add overlapping new owner. Requires refinement audit, not blank-shell replacement."
+}

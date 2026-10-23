@@ -1,0 +1,73 @@
+{
+  "status": "active",
+  "map": {
+    "url": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/blt5733301aa5cc771e/luxor-hotel-property-map.pdf",
+    "local": "luxor-property-map.pdf",
+    "visuallyInspectedPages": [
+      1,
+      2
+    ],
+    "observed": "Main entrance through Sphinx east of pyramid; north Galleria and Egyptian Ballroom with east/west tower access; north entrance and Excalibur connection, west Oasis pool and elevated link to parking. Atrium separate upper level connects Mandalay Place. Map is schematic, not dimensional."
+  },
+  "scope": "Next review low-rise north podium, main arrival and service wing shells; do not alter existing tower/guest/interior geometry.",
+  "additionalOfficialSources": [
+    {
+      "url": "https://luxor.mgmresorts.com/en/amenities/pool.html",
+      "status": "Official hero photograph visually inspected: Egyptian flared column capitals, broad pool basin with straight-edged islands, blue seating, taupe cabanas."
+    },
+    {
+      "url": "https://newsroom.mgmresorts.com/media-gallery?cat=3024",
+      "status": "Exterior photo gallery located, not yet visually inspected."
+    }
+  ],
+  "poolEraConflict": {
+    "olderVenueGuide": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/blt4e0cecbadf74d963/mgm-resorts-unique-venue-guide-luxor-pool.pdf",
+    "text": "Older guide describes four pool sections; current official amenity page describes two pools. Do not silently copy 2022 Earth pool plan as current. Guide screenshot tool failed cache miss; text only.",
+    "resolution": "Use current two-pool naming. Outline estimated from dated Earth aligned to surveyed central pavilion; current official schematic map supports same broad arrangement. No claim of current survey or swimming-depth simulation."
+  },
+  "earthViews": [
+    {
+      "url": "https://earth.google.com/web/@36.0954,-115.1756,680a,600d,35y,270h,55t,0r",
+      "date": "2022-11-09",
+      "observed": "Pyramid east face and Sphinx arrival: long low forecourt statue, white flat roofs, two stepped bronze wings, west parking and pools."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0967,-115.1755,650a,360d,35y,180h,50t,0r",
+      "date": "2022-11-09",
+      "observed": "North two towers with pale flat roofs, open tall rectangular colonnades in side courts, low central north lobby roof and covered bridge to Excalibur, small raised roof lights behind lobby. The central low roof is not the same height as tower base portions of mapped podium."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0947,-115.1774,650a,450d,35y,270h,35t,0r",
+      "date": "2022-11-09",
+      "observed": "Southwest service block has two stepped roof heights and roof equipment; Mandalay Place foreground belongs to a different owner."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.09545,-115.1743,650a,200d,35y,285h,65t,0r",
+      "date": "2022-11-09",
+      "observed": "Sphinx cream body, long paws, blue/gold nemes, crown and small face. Tram structure crosses arrival."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.09735,-115.17585,650a,200d,35y,150h,55t,0r",
+      "date": "2022-11-09",
+      "observed": "Enclosed elevated connector crosses north service road and meets low central lobby. Side courts have tall open colonnades."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.09545,-115.17745,650a,300d,35y,0h,0t,0r",
+      "date": "2022-11-09",
+      "observed": "Topdown pool enclosure: northern stepped rectangular basin, larger irregular pool wrapping central octagonal pavilion and under elevated parking walkway, round lobe northeast, northwestern service plant with fan banks."
+    }
+  ],
+  "estimatedDimensions": {
+    "serviceRoofHeightsM": [
+      22,
+      26,
+      6
+    ],
+    "northLobbyRoofM": 10,
+    "connectorDeckM": 5.24,
+    "connectorRoofM": 9.8,
+    "sphinxCrownM": 35.6,
+    "note": "Visual estimates against mapped footprints, not measured survey.",
+    "poolDeckM": 0.64
+  }
+}

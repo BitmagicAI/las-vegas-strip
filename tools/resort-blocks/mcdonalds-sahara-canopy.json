@@ -1,0 +1,113 @@
+{
+  "id": "mcdonalds-sahara-canopy",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1414999331"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14397,-115.15508&zoom=21&basemap=satellite",
+      "review": "Broad projecting canopy around restaurant, central square roof opening, large yellow side arches and curved drive/landscape."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14370,-115.15498&heading=335&pitch=4",
+      "imageDate": "February 2026",
+      "review": "Deep pale fascia, sloping edge, angled white slim supports, two large yellow arches at lateral edges."
+    }
+  ],
+  "remaining": [
+    "Canopy profile and height visually estimated; lattice inside large arches and exact signage incomplete",
+    "Landscaping, detached roadside sign and detailed restaurant doors remain unfinished",
+    "Angled support tube colliders need a later dedicated pass; floor/roof and broad fascia are collidable",
+    "No interiors or moving-route benchmark"
+  ],
+  "triangles": 1741,
+  "batches": 12,
+  "optimizedMiB": 0.14,
+  "viewsInspected": [
+    "build/city-exteriors/mcdonalds-sahara-canopy-final/mcd-corner.png",
+    "build/city-exteriors/mcdonalds-sahara-canopy-final/mcd-under.png",
+    "build/city-exteriors/mcdonalds-sahara-canopy-final/mcd-roof.png"
+  ],
+  "tests": [
+    "239 roof support samples passed after old placeholder removal",
+    "Six bidirectional under-canopy routes passed",
+    "Three installed views inspected; second pass corrected neighboring restaurant glazing and removed obsolete small arches"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "mcd-corner",
+        "eye": [
+          1637,
+          3,
+          -3086
+        ],
+        "target": [
+          1612,
+          3.5,
+          -3113
+        ],
+        "p": [
+          1625,
+          2,
+          -3100
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.200000047683716
+      },
+      {
+        "name": "mcd-under",
+        "eye": [
+          1613,
+          2,
+          -3104
+        ],
+        "target": [
+          1613,
+          2.5,
+          -3119
+        ],
+        "p": [
+          1613,
+          2,
+          -3104
+        ],
+        "p50": 16.599999964237213,
+        "p95": 18.399999976158142
+      },
+      {
+        "name": "mcd-roof",
+        "eye": [
+          1588,
+          25,
+          -3090
+        ],
+        "target": [
+          1612,
+          3,
+          -3116
+        ],
+        "p": [
+          1601,
+          2,
+          -3111
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.400000035762787
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 16,
+    "colliderTrianglesRemoved": 16,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in mcdonaldsSaharaCanopy mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior.glb": "b8dd3caeb72a9d979eecc62fd574e3b5f60819c9f8046bf44a25f823dfa3c9f8",
+      "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior-collision.json": "7142b79268e664c3c1c7ad2167e32b05821ae8931714facd2454c3f569a0e06f"
+    }
+  }
+}

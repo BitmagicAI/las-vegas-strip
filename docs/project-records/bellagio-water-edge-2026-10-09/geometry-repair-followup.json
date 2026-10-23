@@ -1,0 +1,26 @@
+{
+  "hardwareLoweredM": 0,
+  "ownership": {
+    "garden_over_walk_m2": 0.0,
+    "garden_over_bank_m2": 0.0,
+    "walk_over_bank_m2": 0.0,
+    "rail_caps_m2": 0.0,
+    "rail_over_walk_m2": 0.8779988128498056,
+    "garden_over_roadside_caps_m2": 29.619976151955992
+  },
+  "changedExistingGroups": [
+    {
+      "source": "lakefront-strip-promenade",
+      "material": "lake-paving"
+    },
+    {
+      "source": "lakefront-roadside-closures",
+      "material": "lake-paving"
+    },
+    {
+      "source": "lakefront-roadside-closures",
+      "material": "charcoal"
+    }
+  ],
+  "unchangedExistingGroups": 258
+}

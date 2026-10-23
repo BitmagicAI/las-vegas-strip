@@ -1,0 +1,350 @@
+{
+  "id": "sahara",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://cdn.saharalasvegas.com/wp-content/uploads/2026/05/20260513-SAHARA-Property-Map.pdf",
+      "provider": "SAHARA",
+      "date": "2026-05-13",
+      "establishes": "Three towers, pools, garages, entrances and monorail walkway."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1422,-115.1565,760a,650d,35y,90h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "Three tower silhouettes, pale/bronze elevations, curved arrival canopy, courtyard and garages."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1423,-115.1562,900a,500d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "Top-down roof plans, used to estimate missing Marra/Blanca footprints."
+    },
+    {
+      "url": "https://skyscraperpage.com/b32047/las-vegas/sahara-las-vegas-blanca-tower",
+      "provider": "SkyscraperPage",
+      "establishes": "14 floors; physical height remains estimated."
+    }
+  ],
+  "components": [
+    {
+      "id": "towers",
+      "status": "pending"
+    },
+    {
+      "id": "podium",
+      "status": "pending"
+    },
+    {
+      "id": "garages",
+      "status": "pending"
+    },
+    {
+      "id": "pools",
+      "status": "pending"
+    },
+    {
+      "id": "frontage",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Four standing-capsule contacts remain on retained approach slopes/edges; no new canopy obstruction. Full route traversal unverified.",
+    "Exact retail tenant frontage, landscaping, pylon, sculpture and secondary rooftop pools are unfinished.",
+    "New Marra/Blanca exteriors have no newly authored interiors; existing Alexandria guest modules preserved.",
+    "All four installed views inspected. Canopy outline, front door articulation and precise tower bay widths still need closer fit.",
+    "Current arrival pylon and canopy dimensions remain approximate except supplier-specified column cover sizes.",
+    "2026-10-13 west arrival arc has two retained city road-edge contacts; central basin is intentionally solid.",
+    "Four display columns, roof oculus and complete entrance/landscape design missing."
+  ],
+  "estimates": {
+    "marraHeightM": 85,
+    "blancaHeightM": 44,
+    "canopyEdgeM": 8.3,
+    "canopyRiseM": 2.3,
+    "poolCourtM": 0.28,
+    "note": "Photographic fitting; Alexandria retains mapped74m. Exact survey and current branding fidelity unresolved."
+  },
+  "geometry": {
+    "triangles": 16275,
+    "batches": 44,
+    "optimizedMiB": 0.5
+  },
+  "evidence": [
+    "build/city-exteriors/sahara-after",
+    "build/city-exteriors/sahara-clearance.json"
+  ],
+  "tests": {
+    "typecheck": "passed",
+    "nonBuildingPreservation": "8478 groups unchanged",
+    "canopyClearance": "85 samples, zero new obstructions; four existing road edge contacts"
+  },
+  "podiumAudit": {
+    "stage": "Installed and all five views inspected; refinement deferred",
+    "references": [
+      {
+        "url": "https://mozdesigns.com/moz-projects/sahara-las-vegas/",
+        "establishes": "Supplier gives ten tapered24ftcolumns,3ft10in to6ftdiameter;four24inchdiameter34ftchampagnecolumns;four additional displaycolumns."
+      },
+      {
+        "url": "https://mozdesigns.com/wp-content/uploads/2022/11/J3501_N86_cropped_1600x900.jpg",
+        "inspected": true,
+        "establishes": "Finished canopy diamond wood ribs,taperedcolumns,champagnecentralfourcolumns,waterfeature and suspendedtubes."
+      },
+      {
+        "url": "https://anningjohnson.com/project/sahara-porte-corche/",
+        "establishes": "CompletedAugust2022,fauxwoodEIFSbeams; construction photo visually inspected."
+      },
+      {
+        "url": "https://earth.google.com/web/@36.1420,-115.1577,650a,230d,35y,90h,65t,0r",
+        "imagery": "2022-11-09",
+        "inspected": true,
+        "establishes": "Shallowovalroof,pylon,garagebands and podiumroofs."
+      }
+    ],
+    "uncertainty": "Plan,canopyroofprofile and pylonheight estimated; columncoverdimensions sourced. Fouradditionaldisplaycolumns and roofoculus not yet fitted.",
+    "beforeViews": "build/city-exteriors/sahara-podium-before",
+    "allFourBeforeViewsInspected": true,
+    "beforeFindings": [
+      "False ring of walls below canopy remains from incomplete mapped-podium carve.",
+      "Garage roof has synthetic corrugated shading; garage bands too uniform.",
+      "Flat, repetitive podium frontage; empty planting areas and sparse courtyard."
+    ],
+    "changes": [
+      "Carve entire obsolete canopy enclosure, preserving surrounding buildings.",
+      "Closed soffit and roof, diamond ribs, tapered columns at supplier dimensions; plan estimated.",
+      "Central solid basin and four champagne columns; suspended architectural tubes.",
+      "Separate Boulevard pylon, photographically estimated.",
+      "Matte flat roof material and solid garage end panel."
+    ],
+    "tests": {
+      "roofSupportSamples": 4096,
+      "driveClearanceSamples": 195,
+      "basinCollider": true,
+      "failures": 0,
+      "typecheck": "PASS",
+      "pythonCompile": "PASS",
+      "cliVerify": "FAILED Play detection at60scap,30fpsmenu2965bodies. Both direct probes entered game and captured views; do not treat menu result as performance proof."
+    },
+    "initialAfterViews": "build/city-exteriors/sahara-podium-after",
+    "initialAllFiveInspected": true,
+    "initialReview": "Canopy enclosure removed and patterned soffit visible. Sign mistakenly placed on roadway; moved east to1360,-2937. Generic podium frontage, missing landscaping and roofoculus remain.",
+    "geometry": {
+      "triangles": 38174,
+      "batches": 53,
+      "optimizedMiB": 1.02
+    },
+    "pylonPlacement": "20.096m from nearest mapped Boulevard carriageway centerline after correction, versus7.874m before. Road outline clearance requires visual confirmation; footprintheightestimated.",
+    "finalViews": "build/city-exteriors/sahara-podium-final",
+    "allFiveFinalViewsInspected": true,
+    "finalReview": "Pylon visibly off roadway beside canopy; closed upper/lower surfaces and wood ribs visible; curved ground enclosure removed. Thin ceiling ribs not a precise Moroccan-star reproduction. Missing landscaping, patterned entrance screens, glazing connection, roof oculus, secondary pools and driveable garage remain.",
+    "afterPerformance": [
+      {
+        "name": "sahara-canopy-under",
+        "eye": [
+          1347,
+          3,
+          -2906
+        ],
+        "target": [
+          1385,
+          6,
+          -2904
+        ],
+        "p": [
+          1350,
+          2,
+          -2906
+        ],
+        "p50": 16.59999990463257,
+        "p95": 18.59999990463257
+      },
+      {
+        "name": "sahara-podium-aerial",
+        "eye": [
+          1230,
+          100,
+          -2800
+        ],
+        "target": [
+          1450,
+          13,
+          -2910
+        ],
+        "p": [
+          1325,
+          2,
+          -2890
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.299999952316284
+      },
+      {
+        "name": "sahara-podium-strip",
+        "eye": [
+          1280,
+          14,
+          -3000
+        ],
+        "target": [
+          1405,
+          8,
+          -2970
+        ],
+        "p": [
+          1320,
+          2,
+          -3000
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18
+      },
+      {
+        "name": "sahara-podium-arrival",
+        "eye": [
+          1315,
+          7,
+          -2855
+        ],
+        "target": [
+          1370,
+          6,
+          -2904
+        ],
+        "p": [
+          1330,
+          2,
+          -2865
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "sahara-garage-south",
+        "eye": [
+          1510,
+          36,
+          -2740
+        ],
+        "target": [
+          1500,
+          13,
+          -2840
+        ],
+        "p": [
+          1530,
+          2,
+          -2780
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.600000143051147
+      }
+    ],
+    "beforePerformance": [
+      {
+        "name": "sahara-podium-aerial",
+        "eye": [
+          1230,
+          100,
+          -2800
+        ],
+        "target": [
+          1450,
+          13,
+          -2910
+        ],
+        "p": [
+          1325,
+          2,
+          -2890
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.5
+      },
+      {
+        "name": "sahara-podium-strip",
+        "eye": [
+          1280,
+          14,
+          -3000
+        ],
+        "target": [
+          1405,
+          8,
+          -2970
+        ],
+        "p": [
+          1320,
+          2,
+          -3000
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.399999856948853
+      },
+      {
+        "name": "sahara-podium-arrival",
+        "eye": [
+          1315,
+          7,
+          -2855
+        ],
+        "target": [
+          1370,
+          6,
+          -2904
+        ],
+        "p": [
+          1330,
+          2,
+          -2865
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.299999952316284
+      },
+      {
+        "name": "sahara-garage-south",
+        "eye": [
+          1510,
+          36,
+          -2740
+        ],
+        "target": [
+          1500,
+          13,
+          -2840
+        ],
+        "p": [
+          1530,
+          2,
+          -2780
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.299999952316284
+      }
+    ],
+    "performanceMethod": "Fixed180frames per view,1280x720ultra; limited camera sample only.",
+    "routeTest": {
+      "samples": 107,
+      "centralFeature": true,
+      "existingApproachObstructions": [
+        {
+          "x": 1366.5190181768257,
+          "z": -2887.601195107558
+        },
+        {
+          "x": 1366.0350348991715,
+          "z": -2887.741183267299
+        }
+      ],
+      "newExteriorObstructions": [],
+      "limitation": "Retained road-edge/slope contacts are reported, not waived as a full route pass. New west circulation arc avoids the physical central basin; full public circulation remains unverified."
+    }
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/saharaExterior-exterior.glb": "5aa2fad9e03d121c228b3a9f6881074e21128193029a236e7ba1e57c4a37583b",
+      "build/strip-landmarks/saharaExterior-exterior-collision.json": "c1655b26954e674cad71c9f429177c8d62e831018fd24b03c77c4c7d71e0b786",
+      "tools/strip-landmarks/sahara_arrival.py": "2df94cc3abe5e933099e584c427f5887546433634c35e7ada507f2575f890faa"
+    }
+  }
+}

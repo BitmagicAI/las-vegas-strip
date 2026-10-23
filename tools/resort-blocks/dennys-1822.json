@@ -1,0 +1,47 @@
+{
+  "id": "dennys-1822",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725970"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/Denny%27s+Restaurant/data=!4m7!3m6!1s0x80c8c3887136721b:0xfee259c4ff97c94a!8m2!3d36.1493837!4d-115.1539655!16s%2Fg%2F1tgf81j_",
+      "author": "Yu Ki",
+      "imageDate": "June2026 photo caption",
+      "observed": "Cream architectural frame with diagonal scored panels; concave/butterfly red fascia dipping centrally; gold/red Dennys pentagonal sign above; central glazing and AMERICAS DINER sign, black framed vestibule right and tall red louver screen above."
+    },
+    {
+      "url": "https://locations.dennys.com/NV/LAS-VEGAS/200002",
+      "observed": "Official location link surfaced in Maps listing1822LasVegasBlvdS; not yet opened."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14938,-115.15397&zoom=20&basemap=satellite",
+      "observed": "Overhead after panning north: rectangle east-west, main entrance/swept roof facade south; northern service roof flat. Maps label Banda Burrito onbuilding/Dennys inparking can denote same operation; do not replace physical signage based on label."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14969,-115.15365&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "East facade gray/cream panels, black base/red horizontalband, red entry screen toward southern side, mature courtyard trees/stone planter border. South entrance matches2026photo."
+    }
+  ],
+  "remaining": [
+    "Exact signage lettering, logo shape and facade panel joints need refinement",
+    "Mature courtyard trees and stone planter borders missing",
+    "Parking extent, heights and roof equipment are estimates; no interior access in this exterior pass",
+    "Glazing and wall material response need closer matching to reference"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/dennys-1822-final",
+    "support": "build/city-exteriors/dennys-1822-collision.json",
+    "walk": "build/city-exteriors/dennys-1822-walk.json",
+    "ownership": "build/city-exteriors/dennys-1822-ownership-audit.json",
+    "visualReview": "Front, east and aerial installed captures inspected. Curved southern facade and eastern red screen present. 348 support samples and 6 walk legs PASS. 2422 authored triangles,16 batches. Static 960x540 p50 16.7ms p95 17.7\u201317.8ms; not driving-route performance evidence."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/dennys1822-exterior.glb": "2a92631a329137de8fba6bc41a464b2622f4ab04bc650a0981dde5c2c8ab8271",
+      "build/strip-landmarks/dennys1822-exterior-collision.json": "3bd4cbd3c96e17939049374fe1442a89ee880a1836a4ab1d2650f190e1e94abc"
+    }
+  }
+}

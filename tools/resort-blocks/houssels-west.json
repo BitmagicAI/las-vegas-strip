@@ -1,0 +1,148 @@
+{
+  "id": "houssels-west",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236746618",
+    "way/1236746617",
+    "way/1236746616",
+    "way/1236746598",
+    "way/1236746597",
+    "way/1236746596",
+    "way/1236746599",
+    "way/1236746595",
+    "way/1236746594"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15231,-115.14998&zoom=19&basemap=satellite",
+      "review": "Nine mapped west Houssels homes; hips and gables with solar panels on northern-middle roofs"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15240,-115.14908&heading=270&pitch=2",
+      "imageDate": "December2021",
+      "review": "1516 area: clerestory windows, dark/red eaves, garage gables, solar panels and palms"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15164,-115.14945&heading=270&pitch=2",
+      "imageDate": "January2021",
+      "review": "1616 area: white single-storey, front gable screened porch and palms; broad concrete driveways"
+    }
+  ],
+  "remaining": [
+    "2021 street references may not reflect current finishes; exact doors, windows and garage arrangements inferred",
+    "Roof and solar placement approximate; gable porch screen represented by framing only",
+    "Yards and drives reach mapped sidewalk exclusion, but side/rear gardens and lush planting remain incomplete",
+    "No interiors, neutral daylight review or full driving benchmark"
+  ],
+  "triangles": 28134,
+  "batches": 34,
+  "optimizedMiB": 12.5,
+  "metricScope": "Authored triangles exclude two existing CC0 tree instances",
+  "tests": [
+    "1629 roof-support samples PASS after placeholder removal",
+    "36 entrance approach legs in both directions PASS"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/houssels-west-final5/houssels-north.png",
+    "build/city-exteriors/houssels-west-final5/houssels-south.png",
+    "build/city-exteriors/houssels-west-final5/houssels-roof.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "houssels-north",
+        "eye": [
+          2181,
+          3,
+          -4104
+        ],
+        "target": [
+          2149,
+          1.8,
+          -4104
+        ],
+        "p": [
+          2170,
+          2,
+          -4105
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.600000023841858
+      },
+      {
+        "name": "houssels-middle",
+        "eye": [
+          2157,
+          3,
+          -4055
+        ],
+        "target": [
+          2120,
+          1.8,
+          -4055
+        ],
+        "p": [
+          2140,
+          2,
+          -4055
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.100000023841858
+      },
+      {
+        "name": "houssels-south",
+        "eye": [
+          2123,
+          3,
+          -3963
+        ],
+        "target": [
+          2095,
+          1.8,
+          -3963
+        ],
+        "p": [
+          2112,
+          2,
+          -3964
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.200000047683716
+      },
+      {
+        "name": "houssels-roof",
+        "eye": [
+          2185,
+          65,
+          -3940
+        ],
+        "target": [
+          2120,
+          2,
+          -4040
+        ],
+        "p": [
+          2140,
+          2,
+          -4040
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.600000023841858
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 192,
+    "colliderTrianglesRemoved": 192,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in HousselsWest mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/housselsWest-exterior.glb": "87da43d1f4d77c6e64d3fe7cacf660a651c0696ce879b39e347187f511ad3c20",
+      "build/strip-landmarks/housselsWest-exterior-collision.json": "f6b83857a4ba492e8ad60c02c9e08560ac2740490cf14360474da20641df9fa5"
+    }
+  },
+  "yardCorrection": "Removed disconnected patches beyond the road; only yard pieces attached to their own house remain.",
+  "sidewalkApproachReview": "Full approach from sidewalk-side gate to door and back passed; logs /tmp/houssels_west-approach.log."
+}

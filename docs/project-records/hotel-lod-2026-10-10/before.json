@@ -1,0 +1,233 @@
+{
+ "bounds": [
+  {
+   "name": "City block / guest-vanderpump",
+   "min": [
+    29.253339767456055,
+    0,
+    76.20500183105469
+   ],
+   "max": [
+    135.7949981689453,
+    41.89595031738281,
+    128.7949981689453
+   ]
+  },
+  {
+   "name": "City block / vanderpump",
+   "min": [
+    27.121919631958008,
+    -0.03999999910593033,
+    71.04399871826172
+   ],
+   "max": [
+    209.00799560546875,
+    7,
+    128.41799926757812
+   ]
+  }
+ ],
+ "views": [
+  {
+   "mode": "natural",
+   "state": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 235022,
+     "lowTriangles": 14470
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 2768,
+     "lowTriangles": 479
+    }
+   ],
+   "render": {
+    "calls": 2851,
+    "frameCalls": 3,
+    "drawCalls": 596,
+    "triangles": 6024423,
+    "points": 100,
+    "lines": 896,
+    "timestamp": 0
+   }
+  },
+  {
+   "mode": "full",
+   "state": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235022,
+     "lowTriangles": 14470
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2768,
+     "lowTriangles": 479
+    }
+   ],
+   "render": {
+    "calls": 2851,
+    "frameCalls": 3,
+    "drawCalls": 596,
+    "triangles": 6024423,
+    "points": 100,
+    "lines": 896,
+    "timestamp": 0
+   }
+  },
+  {
+   "mode": "coarse",
+   "state": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 235022,
+     "lowTriangles": 14470
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 2768,
+     "lowTriangles": 479
+    }
+   ],
+   "render": {
+    "calls": 2851,
+    "frameCalls": 3,
+    "drawCalls": 596,
+    "triangles": 6024423,
+    "points": 100,
+    "lines": 896,
+    "timestamp": 0
+   }
+  }
+ ],
+ "distances": [
+  {
+   "eye": [
+    -100,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235022,
+     "lowTriangles": 14470
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2768,
+     "lowTriangles": 479
+    }
+   ]
+  },
+  {
+   "eye": [
+    -150,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 235022,
+     "lowTriangles": 14470
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": true,
+     "low": false,
+     "highTriangles": 2768,
+     "lowTriangles": 479
+    }
+   ]
+  },
+  {
+   "eye": [
+    -250,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 235022,
+     "lowTriangles": 14470
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 2768,
+     "lowTriangles": 479
+    }
+   ]
+  },
+  {
+   "eye": [
+    -450,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 235022,
+     "lowTriangles": 14470
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 2768,
+     "lowTriangles": 479
+    }
+   ]
+  },
+  {
+   "eye": [
+    -650,
+    38,
+    140
+   ],
+   "states": [
+    {
+     "name": "City block / guest-vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 235022,
+     "lowTriangles": 14470
+    },
+    {
+     "name": "City block / vanderpump",
+     "high": false,
+     "low": true,
+     "highTriangles": 2768,
+     "lowTriangles": 479
+    }
+   ]
+  }
+ ]
+}

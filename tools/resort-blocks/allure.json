@@ -1,0 +1,53 @@
+{
+  "id": "allure",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1441,-115.1590,680a,300d,35y,220h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "establishes": "White solid ends, glazed curved central tower, balcony bands, red adjacent lower buildings; visually inspected."
+    }
+  ],
+  "components": [
+    {
+      "id": "tower",
+      "status": "pending"
+    },
+    {
+      "id": "podium",
+      "status": "pending"
+    },
+    {
+      "id": "frontage",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Exact crown and balcony fit still approximate.",
+    "Podium leisure deck, pool, landscaping and arrival details unfinished.",
+    "No full public-route traversal."
+  ],
+  "geometry": {
+    "triangles": 24298,
+    "batches": 16,
+    "optimizedMiB": 0.4
+  },
+  "estimates": {
+    "towerM": 142,
+    "lowerBuildingsM": [
+      20,
+      14
+    ],
+    "floorPitchM": 3.35,
+    "note": "Mapped footprint retained; facade spacing and roof details photo-estimated."
+  },
+  "evidence": [
+    "build/city-exteriors/allure-final"
+  ],
+  "tests": {
+    "typecheck": "passed",
+    "installedViews": "All three final views inspected; no obvious z-fighting.",
+    "materialFix": "Exclude glass balcony guard allure-rail from generic metal scanned detail."
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "waterY": 0.31,
+  "clearEnvelopeM": {
+    "length": 10.4,
+    "width": 2.7,
+    "aboveWater": 2.9
+  },
+  "samples": 251,
+  "failedSamples": 211,
+  "failures": [
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -706.5
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -706.2
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -705.9
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -705.6
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -705.3
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -705
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -704.7
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -704.4
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -704.1
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -703.8
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -703.5
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -703.2
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -702.9
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -702.6
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -702.3
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -702
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -701.7
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -701.4
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -701.1
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -700.8
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -700.5
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -700.1999999999999
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -699.9
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    },
+    {
+      "route": "main-plaza-crossing",
+      "position": {
+        "x": 195,
+        "y": 1.81,
+        "z": -699.6
+      },
+      "blockers": [
+        "exterior collision",
+        "venetian-canal-plaza/ivory",
+        "venetian-canal-plaza/plaza-paving-dark"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+name: Bug
+description: The game crashes, stalls, renders wrongly, or a tool fails
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you saw. Include the console output if there is an error.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where in the city
+      description: Place and coordinates, or the tool and command line
+  - type: input
+    id: setup
+    attributes:
+      label: Setup
+      description: OS, browser and version, GPU; `bitmagic --version`; asset pack revision (`node tools/release/fetch-assets.mjs --verify`)
+    validations:
+      required: true

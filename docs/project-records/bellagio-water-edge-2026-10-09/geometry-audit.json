@@ -1,0 +1,41 @@
+{
+  "remainingCoplanarArea": {
+    "garden_over_walk_m2": 0.0,
+    "garden_over_bank_m2": 0.0,
+    "walk_over_bank_m2": 0.0,
+    "rail_caps_m2": 0.0,
+    "rail_over_walk_m2": 0.0,
+    "garden_over_roadside_caps_m2": 0.0
+  },
+  "hardwareTopY": -1.6,
+  "repeatedSupportTriangles": 0,
+  "unchangedExistingGroups": 255,
+  "changedExistingGroups": [
+    [
+      "bellagioBlock-exterior",
+      "lakefront-lake",
+      "lake-rock",
+      0
+    ],
+    [
+      "bellagioBlock-exterior",
+      "lakefront-fountain-array",
+      "lake-underwater",
+      0
+    ],
+    [
+      "bellagioBlock-exterior",
+      "lakefront-strip-promenade",
+      "lake-paving",
+      0
+    ],
+    [
+      "bellagioBlock-exterior",
+      "lakefront-strip-promenade",
+      "lake-cream",
+      0
+    ]
+  ],
+  "originalColliderPrefixPreserved": true,
+  "protectedFilesUnchanged": 30
+}

@@ -1,0 +1,203 @@
+[
+ {
+  "view": "cromwell-street",
+  "mode": "natural",
+  "owners": [
+   "City block / guest-vanderpump",
+   "City block / vanderpump"
+  ],
+  "render": {
+   "calls": 1501,
+   "frameCalls": 3,
+   "drawCalls": 421,
+   "triangles": 6829433,
+   "points": 100,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "cromwell-street",
+  "mode": "natural",
+  "median": 16.59999990463257,
+  "p95": 19.59999990463257,
+  "render": {
+   "calls": 2131,
+   "frameCalls": 3,
+   "drawCalls": 421,
+   "triangles": 6829433,
+   "points": 100,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "venetian",
+  "mode": "full",
+  "owners": [
+   "City block / venetian",
+   "City block / palazzo"
+  ],
+  "render": {
+   "calls": 2641,
+   "frameCalls": 5,
+   "drawCalls": 2131,
+   "triangles": 26305525,
+   "points": 300,
+   "lines": 2688,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "venetian",
+  "mode": "coarse",
+  "owners": [
+   "City block / venetian",
+   "City block / palazzo"
+  ],
+  "render": {
+   "calls": 3156,
+   "frameCalls": 5,
+   "drawCalls": 2131,
+   "triangles": 22517305,
+   "points": 300,
+   "lines": 2688,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "venetian",
+  "mode": "natural",
+  "median": 28.300000190734863,
+  "p95": 30.09999990463257,
+  "render": {
+   "calls": 4206,
+   "frameCalls": 5,
+   "drawCalls": 2131,
+   "triangles": 26310103,
+   "points": 300,
+   "lines": 2688,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "bellagio",
+  "mode": "full",
+  "owners": [
+   "City block / bellagio/shell/zone0/",
+   "City block / bellagio/shell/zone0/bellagio",
+   "City block / bellagio/shell/zone1/",
+   "City block / bellagio/shell/zone2/",
+   "City block / bellagio/shell/zone3/",
+   "City block / bellagio/shell/zone4/",
+   "City block / bellagio/shell/zone5/",
+   "City block / bellagio/shell/zone38/",
+   "City block / bellagio/shell/zone39/",
+   "City block / bellagioBlock",
+   "City block / bellagioLobby",
+   "City block / bellagioGarden",
+   "City block / bellagioConservatory",
+   "City block / bellagioPromenade"
+  ],
+  "render": {
+   "calls": 4614,
+   "frameCalls": 4,
+   "drawCalls": 542,
+   "triangles": 12999242,
+   "points": 200,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "bellagio",
+  "mode": "coarse",
+  "owners": [
+   "City block / bellagio/shell/zone0/",
+   "City block / bellagio/shell/zone0/bellagio",
+   "City block / bellagio/shell/zone1/",
+   "City block / bellagio/shell/zone2/",
+   "City block / bellagio/shell/zone3/",
+   "City block / bellagio/shell/zone4/",
+   "City block / bellagio/shell/zone5/",
+   "City block / bellagio/shell/zone38/",
+   "City block / bellagio/shell/zone39/",
+   "City block / bellagioBlock",
+   "City block / bellagioLobby",
+   "City block / bellagioGarden",
+   "City block / bellagioConservatory",
+   "City block / bellagioPromenade"
+  ],
+  "render": {
+   "calls": 5018,
+   "frameCalls": 4,
+   "drawCalls": 542,
+   "triangles": 12083280,
+   "points": 200,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "bellagio",
+  "mode": "natural",
+  "median": 16.700000047683716,
+  "p95": 18,
+  "render": {
+   "calls": 5858,
+   "frameCalls": 4,
+   "drawCalls": 542,
+   "triangles": 12949994,
+   "points": 200,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "harrahs",
+  "mode": "full",
+  "owners": [
+   "City block / harrahs"
+  ],
+  "render": {
+   "calls": 6278,
+   "frameCalls": 4,
+   "drawCalls": 964,
+   "triangles": 12725091,
+   "points": 200,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "harrahs",
+  "mode": "coarse",
+  "owners": [
+   "City block / harrahs"
+  ],
+  "render": {
+   "calls": 6698,
+   "frameCalls": 4,
+   "drawCalls": 964,
+   "triangles": 12559279,
+   "points": 200,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "view": "harrahs",
+  "mode": "natural",
+  "median": 16.59999990463257,
+  "p95": 17.799999952316284,
+  "render": {
+   "calls": 7538,
+   "frameCalls": 4,
+   "drawCalls": 964,
+   "triangles": 12725091,
+   "points": 200,
+   "lines": 0,
+   "timestamp": 0
+  }
+ }
+]

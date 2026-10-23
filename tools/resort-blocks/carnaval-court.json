@@ -1,0 +1,113 @@
+{
+  "id": "carnaval-court",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/402543932"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11873,-115.17189&zoom=21&basemap=satellite",
+      "review": "Twelve-sided radial canopy with small central crown and orb; adjacent east service roof separate."
+    },
+    {
+      "url": "https://www.caesars.com/content/scaffold_pages/generic/harrahs/las/en/carnaval_court/_jcr_content/cards/card/featuredImage.stdimg.hd.xl.jpg/1597789548910.jpg",
+      "provider": "Caesars Entertainment",
+      "review": "Official photo: rainbow fascia, silver tapered columns, exposed trusses, circular counter, stools, railings and open western entrance. Photo date not stated; old LINQ facade in background not used."
+    },
+    {
+      "url": "https://www.caesars.com/harrahs-las-vegas/things-to-do/nightlife-carnaval-court",
+      "review": "Official venue identification; open-air bar"
+    }
+  ],
+  "estimates": [
+    "Canopy5.6m outer/8m crown, counter1.24m, furniture placement estimated from photo",
+    "Column count and backstage equipment simplified"
+  ],
+  "remaining": [
+    "Column stone/marble, bar fittings and signage remain approximate; not photorealistic",
+    "Adjacent east service roof and surrounding blank frontage are separate unresolved owners",
+    "No neutral daylight or driving benchmark; static 960x540 only"
+  ],
+  "triangles": 17269,
+  "batches": 17,
+  "optimizedMiB": 0.44,
+  "tests": [
+    "144 roof support samples PASS",
+    "16 walking legs PASS; south opening shifted clear of support column and ground apron added"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/carnaval-court-final/carnaval-west.png",
+    "build/city-exteriors/carnaval-court-final/carnaval-roof.png",
+    "build/city-exteriors/carnaval-court-final/carnaval-under.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "carnaval-west",
+        "eye": [
+          72,
+          3,
+          -303
+        ],
+        "target": [
+          101,
+          3,
+          -303
+        ],
+        "p": [
+          80,
+          2,
+          -303
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.900000035762787
+      },
+      {
+        "name": "carnaval-roof",
+        "eye": [
+          72,
+          32,
+          -278
+        ],
+        "target": [
+          101,
+          3,
+          -303
+        ],
+        "p": [
+          80,
+          2,
+          -303
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.19999998807907
+      },
+      {
+        "name": "carnaval-under",
+        "eye": [
+          91,
+          2.1,
+          -304
+        ],
+        "target": [
+          104,
+          2,
+          -304
+        ],
+        "p": [
+          91,
+          2,
+          -304
+        ],
+        "p50": 16.69999998807907,
+        "p95": 19.19999998807907
+      }
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/carnavalCourt-exterior.glb": "4e13d572368a5129cb0775bee6df4169a97aa5ff2fac03d3a2721987fdf6507e",
+      "build/strip-landmarks/carnavalCourt-exterior-collision.json": "f19f3178d4e5f93484a196d67d71adbf74edafd1032a255eec2b450d275a0f6a"
+    }
+  }
+}

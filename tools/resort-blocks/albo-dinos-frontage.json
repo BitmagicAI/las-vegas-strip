@@ -1,0 +1,43 @@
+{
+  "id": "albo-dinos-frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1020191190",
+    "way/364846573"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15265,-115.15155&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Albo Pizza small dark brick restaurant with steep dark standing-seam storefront canopy, white windows and roof restaurant letters; Tod sign belongs to neighboring block."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15266,-115.15202&zoom=20&basemap=satellite",
+      "observed": "Albo white flat roof with services and dark street-side sloped canopy. Dino irregular southern footprint has orange/red street canopy. Rear motel buildings separate and not part of this pass."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15242,-115.15170&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Dinos dark red standing-seam shed canopy, dark brick base and black screened frontage, black fenced patio with tables, tall cream two-post red Dinos pylon. Upper roof services visible. Street facade mostly opaque; east covered patio must remain open."
+    }
+  ],
+  "remaining": [
+    "Exact roof pitch/awning profile, weathering and sign artwork remain approximations",
+    "Dinos double-stage canopy profile simplified to single slope; rear/services inferred",
+    "Patio furniture lacks fine detail; tenant interiors not included",
+    "Neutral daylight and drive-through performance review pending"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/albo-dinos-frontage-final",
+    "support": "build/city-exteriors/albo-dinos-frontage-collision.json",
+    "walk": "build/city-exteriors/albo-dinos-frontage-walk.json",
+    "ownership": "build/city-exteriors/albo-dinos-frontage-ownership-audit.json",
+    "visualReview": "Installed4views inspected. Corrected initially overlapping canopy fans to continuous roof and removed duplicate patio floor; final street/patio/aerial rechecked.3979tri17batches.52MiB,635support10walkPASS including patio entrance;53oldtriangles removed. Static960x540 p95~18ms,not driving performance."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/alboDinosFrontage-exterior.glb": "df68c4cb4b513af6a4998c15c99d6e07de7151131860de520d720df46ffa1e64",
+      "build/strip-landmarks/alboDinosFrontage-exterior-collision.json": "9d762e9b66301b8cae303087966750bf7b03de4abe2c64c370940fa3a2938340"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "springhill",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://www.marriott.com/en-us/hotels/laspr-springhill-suites-las-vegas-convention-center/photos/",
+      "establishes": "Official exterior and entrance photo gallery."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1352,-115.1556,620a,250d,35y,0h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2024-03-05",
+      "establishes": "White tower, separated punched window columns, south garage open levels, west roof pool and service enclosure; visually inspected."
+    }
+  ],
+  "remaining": [
+    "Exact arrival facade/signage and canopy require further fit.",
+    "Pool deck furnishings and route traversal unfinished; tower proportions use mapped data."
+  ],
+  "geometry": {
+    "triangles": 17494,
+    "batches": 15,
+    "optimizedMiB": 0.27
+  },
+  "estimates": {
+    "towerHeightM": 74,
+    "podiumHeightM": 19,
+    "windowPitchM": 3.08,
+    "pool": "8m by 5m roof pool, estimated from Earth"
+  },
+  "evidence": [
+    "build/city-exteriors/springhill-before",
+    "build/city-exteriors/springhill-after",
+    "build/city-exteriors/springhill-final"
+  ],
+  "tests": {
+    "typecheck": "passed",
+    "visual": "All three final installed views inspected; roof enclosure visible in aerial. No obvious overlapping surfaces.",
+    "collision": "Roof enclosure has simple collision. Existing highrise collision contains no all-74m roof triangles; no cut required."
+  }
+}

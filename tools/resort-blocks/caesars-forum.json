@@ -1,0 +1,69 @@
+{
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://s202.q4cdn.com/508919455/files/doc_downloads/factsheets/caesars_forum/CAESARS-FORUM-fact-sheet-2022-UPDATED.pdf",
+      "source": "Caesars 2022 factsheet",
+      "observations": "Single-level conference building; large glazed prefunction frontage; outdoor plaza and links to Harrahs/LINQ. Text read, figures not inspected."
+    },
+    {
+      "url": "https://kga.design/caesars-forum-convention-center.html",
+      "source": "Architect project page",
+      "inspected": false
+    }
+  ],
+  "mappedId": "way/762169780",
+  "remaining": [
+    "Public entrance onward circulation and hotel bridge route",
+    "Exact dimensions and banner artwork",
+    "Plaza furnishings and landscape fidelity"
+  ],
+  "id": "caesars-forum",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1188,-115.1662,640a,480d,35y,90h,60t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1188,-115.1662,640a,500d,35y,0h,65t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.11815,-115.1659,620a,220d,35y,0h,80t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    }
+  ],
+  "dimensions": "Mapped footprint retained; main hall roof16m, east wing14m, entrance bays18m estimated from Earth imagery; no surveyed elevation available.",
+  "geometry": {
+    "triangles": 10765,
+    "batches": 11
+  },
+  "tests": "73 roof/apron support samples pass;8478 road/landscape groups unchanged",
+  "baseline": [
+    "build/city-exteriors/caesars-forum-before/forum-south.png",
+    "build/city-exteriors/caesars-forum-before/forum-west.png",
+    "build/city-exteriors/caesars-forum-before/forum-entry.png"
+  ],
+  "installedReview": {
+    "views": [
+      "build/city-exteriors/caesars-forum-final/forum-south.png",
+      "build/city-exteriors/caesars-forum-final/forum-west.png",
+      "build/city-exteriors/caesars-forum-final/forum-entry.png"
+    ],
+    "inspected": true,
+    "findings": "Continuous entrance apron now present. Old blank shell removed, glazing, fins, roof setbacks and service detail visible. No obvious overlapping shells. Plaza furniture, landscaping, exact dimensions and bridge onward route remain."
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed;58fps at spawn;3011 bodies, not site performance proof",
+    "collision": "73 roof/apron samples; Expo regression1517 cells/24 nearby colliders;8478 unchanged road/landscape groups"
+  },
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/caesarsForum-exterior.glb": "5e356af57a66f681c7b3e8064b3491918263bda48c1aefde2fdcb172a25e2dba"
+    }
+  }
+}

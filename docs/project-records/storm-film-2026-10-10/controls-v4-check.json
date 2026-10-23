@@ -1,0 +1,128 @@
+{
+  "before": {
+    "environment": "473bde75-907b-4730-a7e7-f85e766eac23",
+    "exposure": 0.9,
+    "filmLightCount": 20
+  },
+  "playing": {
+    "state": {
+      "active": true,
+      "time": 2.533333333333329,
+      "pose": {
+        "x": 396.08843994140625,
+        "y": 0.2108516454696655,
+        "z": 879.1234741210938,
+        "fx": -0.9999912981553388,
+        "fy": 0.006614721925633574,
+        "fz": 0.004171763847612746,
+        "speed": 23.61980397174148
+      },
+      "physics": {
+        "dynamic": true,
+        "roll": 0.00312289076401242,
+        "pitch": -0.00838604386560183,
+        "sprungRoll": -0.006420547449439805,
+        "sprungPitch": -0.03367105330792004,
+        "contacts": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "laneError": 0.6099440611753746,
+        "progress": 24.302159750393344,
+        "targetSpeed": 32,
+        "slip": 0.012007445917074533,
+        "controls": {
+          "forward": false,
+          "backward": false,
+          "left": false,
+          "right": false,
+          "brake": false,
+          "steer": 0.010032805424718043,
+          "throttle": 1,
+          "brakeAmount": 0
+        }
+      },
+      "groundHits": 0,
+      "groundTimes": [],
+      "groundSpeeds": [],
+      "ragArticulation": 3.1371439188225083,
+      "impacts": 3,
+      "impactTimes": [
+        2.083333333333331,
+        2.4333333333333296,
+        2.499999999999996
+      ],
+      "ragdolls": 3,
+      "peakRagdolls": 3,
+      "preset": {
+        "daylight": "day",
+        "weather": "clear",
+        "rain": 0,
+        "wetness": 0,
+        "neon": 4,
+        "population": 72,
+        "seed": 1010
+      }
+    },
+    "mass": 1350.010009765625,
+    "saved": {
+      "daylight": "day",
+      "weather": "clear",
+      "rain": 0,
+      "wetness": 0,
+      "neon": 4,
+      "population": 72,
+      "seed": 1010
+    },
+    "ragBodies": [
+      2.9707942522e-313,
+      2.97079425216e-313,
+      2.9707942583e-313,
+      2.97079425834e-313,
+      2.9707942584e-313,
+      2.97079425844e-313,
+      2.9707942585e-313,
+      2.97079425854e-313,
+      2.9707942586e-313,
+      2.97079425863e-313,
+      2.9707942587e-313,
+      2.97079425315e-313,
+      2.9707942529e-313,
+      2.97079425266e-313,
+      2.9707942526e-313,
+      2.97079425256e-313,
+      2.9707942525e-313,
+      2.97079425246e-313,
+      2.9707942524e-313,
+      2.97079425236e-313,
+      2.9707942523e-313,
+      2.97079425226e-313,
+      2.97079425873e-313,
+      2.9707942588e-313,
+      2.97079425883e-313,
+      2.9707942589e-313,
+      2.97079425893e-313,
+      2.970794259e-313,
+      2.97079425903e-313,
+      2.9707942591e-313,
+      2.97079425913e-313,
+      2.9707942592e-313,
+      2.97079425923e-313
+    ]
+  },
+  "after": {
+    "environment": "473bde75-907b-4730-a7e7-f85e766eac23",
+    "exposure": 0.9,
+    "filmLightCount": 20,
+    "litFilmLights": 0,
+    "active": false,
+    "car": false,
+    "frontage": false,
+    "vehicle": false,
+    "people": 0,
+    "remainingRagBodies": 0
+  },
+  "errors": 0
+}

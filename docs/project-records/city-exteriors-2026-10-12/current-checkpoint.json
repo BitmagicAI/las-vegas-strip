@@ -1,0 +1,13 @@
+{
+  "active": "horseshoe-versailles",
+  "taskComplete": false,
+  "date": "2026-10-22",
+  "stage": "First-review coverage631/631. Last CVS/NYNY shelter entries reviewed; Versailles south facade followup installed and visually inspected3views.370roof/24guest checksPASS. All explicit unfinished refinements remain; taskComplete=false.",
+  "pausedByUser": false,
+  "pauseReason": "User requested stop on 2026-10-14 due to low weekly quota; resume only when user asks.",
+  "resumed": "2026-10-19",
+  "currentOperation": {
+    "status": "checkpointed-after-reviewed-pass",
+    "next": "Continue reference-led Versailles planted street edge and Paris bridge/balconies. Current installed geometry and interior preservation evidence in horseshoe-versailles.json#frontageRefinement20261021. No background task running."
+  }
+}

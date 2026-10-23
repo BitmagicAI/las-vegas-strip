@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-05",
+  "issue": "Nine THREE.Object3D.add undefined errors on local load",
+  "before": {
+    "priorVerifyObject3DAddErrors": 9,
+    "priorVerifyLogSha256": "e7bbe3735e249b97f9ae22c9e3223b711f2b1a026e4232d3c660a143f0f293fc"
+  },
+  "cause": "Empty shadow-proxy arrays passed through Object3D.add(...proxies), equivalent to add(undefined).",
+  "affectedSections": [
+    "cosmoL1",
+    "cosmoL2",
+    "cosmoL3",
+    "cosmoL4",
+    "cosmoL14",
+    "bellagioLobby",
+    "bellagioGarden",
+    "bellagioConservatory",
+    "bellagioPromenade"
+  ],
+  "change": "Attach each real shadow proxy individually; an empty collection performs no add. Same fix in geographic and high-rise loaders.",
+  "lighting": {
+    "source": "src/work/geographic/level.json",
+    "pointSourceDefinitions": 241,
+    "realPooledPointLights": 25,
+    "spotlights": 1,
+    "shadowCastingSpots": 1,
+    "engineWarningThreshold": 8,
+    "status": "Expected schema warning, retained. Source definitions are not simultaneously allocated real lights. Counts refer to the base MeshLevel, not separate streamed systems."
+  },
+  "validation": {
+    "typecheck": "passed",
+    "runtime": "passed",
+    "verifyAt": "2026-10-05T21:58:01.627Z",
+    "renderer": {
+      "requested": "webgpu",
+      "rendererType": "webgpu",
+      "backend": "webgpu"
+    },
+    "Object3DAddErrors": 0,
+    "totalConsoleErrors": 0,
+    "consoleSha256": "0c611c6904c08f3da91d945e4f3c36d67c44f4e5f24e948f876024661a96b5a3",
+    "lightWarningRetained": true,
+    "snapshot": {
+      "gameState": "playing",
+      "hasStarted": true,
+      "elapsedTimeSeconds": 4.5929999999999955,
+      "player": {
+        "x": -51,
+        "y": 0.10998371124267575,
+        "z": 290,
+        "isFalling": false
+      },
+      "physics": {
+        "rigidBodyCount": 3071,
+        "colliderCount": 3080
+      },
+      "scene": {
+        "objects": 7240,
+        "meshes": 5446,
+        "lights": 44
+      },
+      "npcCount": 0,
+      "fps": 59,
+      "fpsSource": "engine"
+    },
+    "scope": "Fresh startup including all landmark exteriors and both resort blocks; not a complete interior walkthrough. FPS is a single startup sample, not a controlled speedup measurement.",
+    "otherWarnings": "Existing GTM analytics warning and one browser external-image texture-copy warning also appeared; no console errors."
+  },
+  "followupTo": "tools/resort-blocks/bellagio.json installedSnapshot (historical hashes retained)",
+  "patchedFiles": {
+    "src/work/StripLandmarks.ts": "98913b7e37c173eda578e7c992b655ef578300ac50e96ca99566671df2f2d383",
+    "src/work/GeographicCity.ts": "3ddf5c535ce841b927b13ad138f5a567e8738c53700ba8ef859a8f805518700d",
+    "src/work/HighriseCity.ts": "e9ca16a83b8baf5f099bb90d3b6ee7ef4f1884bccba7b4fa587b1c5379b9f7ec"
+  }
+}

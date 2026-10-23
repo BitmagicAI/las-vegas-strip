@@ -1,0 +1,197 @@
+{
+  "checks": 4178,
+  "failures": [
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -60,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -59.705882352941174,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -59.411764705882355,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -59.11764705882353,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -58.8235294117647,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -58.529411764705884,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -58.23529411764706,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -57.94117647058823,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -57.64705882352941,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -57.35294117647059,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -57.05882352941177,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -56.76470588235294,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -56.470588235294116,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -56.1764705882353,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -55.88235294117647,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -55.588235294117645,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -55.294117647058826,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -55,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    },
+    {
+      "route": "Sign interior stairs to arcade",
+      "p": [
+        -55,
+        0.135,
+        584.5
+      ],
+      "blocker": "bellagioBlock/exterior",
+      "floor": true
+    }
+  ],
+  "city": true,
+  "note": "New geometry, retained static interior, Via Bellagio and optional city collision. Door state and streaming require in-game verification."
+}

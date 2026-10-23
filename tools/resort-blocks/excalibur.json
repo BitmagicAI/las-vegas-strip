@@ -1,0 +1,168 @@
+{
+  "id": "excalibur",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.0995,-115.1748,650a,450d,35y,270h,60t,0r",
+      "accessDate": "2026-10-12",
+      "imageryDate": "2022-11-09",
+      "observed": "White castle podium, horizontal bands and grouped arched openings, cylindrical corner towers. Existing large hotel wings retained."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1001,-115.1735,635a,180d,35y,270h,65t,0r",
+      "observed": "Existing elevated pedestrian connection; partial tower occlusion. Original broad aerial used for podium form."
+    }
+  ],
+  "components": [
+    {
+      "id": "podium",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "north-street-buildings",
+      "status": "implemented-visually-reviewed"
+    },
+    {
+      "id": "service-facades",
+      "status": "implemented-visually-reviewed"
+    }
+  ],
+  "remaining": [
+    "Full landscaping and exact turret detailing remain incomplete.",
+    "Station heights retained from mapped data; detailed station platform/circulation not rebuilt.",
+    "Entry sign appears reversed on approach; repair required",
+    "Mapped29m part way/114870395 was skipped by castle generator; verify actual footprint before marking reviewed",
+    "South-side lower elevation remains blank in reviewed view; needs further facade/site reference"
+  ],
+  "geometry": {
+    "triangles": 39622,
+    "batches": 15,
+    "collisionTriangles": 0
+  },
+  "tests": {
+    "bridgeSupportSamples": 114,
+    "bridgeFailures": 0,
+    "unchangedNonbuildingMeshGroups": 8478
+  },
+  "evidence": [
+    "build/city-exteriors/excalibur-before",
+    "build/city-exteriors/excalibur-after",
+    "build/city-exteriors/excalibur-bridge-test.json",
+    "build/city-exteriors/excalibur-final"
+  ],
+  "ownershipReview20261014": {
+    "ids": [
+      "relation/8086330",
+      "way/114857376",
+      "way/114857379",
+      "way/114857381",
+      "way/114857385",
+      "way/114857387",
+      "way/114857388",
+      "way/114857392",
+      "way/114857393",
+      "way/114857395",
+      "way/114857396",
+      "way/114857398",
+      "way/114857399",
+      "way/114857401",
+      "way/114857405",
+      "way/114857406",
+      "way/114857408",
+      "way/114977805",
+      "way/114977810",
+      "way/399352452",
+      "way/399352453",
+      "way/399352454",
+      "way/399352455",
+      "way/399352456",
+      "way/399352457",
+      "way/399352458",
+      "way/399352459",
+      "way/399352460",
+      "way/399352461",
+      "way/399352462",
+      "way/399352463",
+      "way/399352464",
+      "way/399352465",
+      "way/399352466",
+      "way/399352467",
+      "way/399352469",
+      "way/399352470",
+      "way/399352471",
+      "way/567108265"
+    ],
+    "scope": "Existing explicit source replacements and three lower facade IDs; no new geometry in ownership review",
+    "evidence": "build/city-exteriors/blvd-excalibur-review",
+    "viewsInspected": [
+      "excalibur-aerial",
+      "excalibur-entry",
+      "excalibur-east",
+      "excalibur-south"
+    ],
+    "source": "tools/south-strip/build_architecture.py + tools/strip-landmarks/excalibur_frontage.py",
+    "remainingIds": [
+      "way/114870395",
+      "way/567108272"
+    ]
+  },
+  "hallCorrection20261014": {
+    "status": "installed-visually-reviewed",
+    "source": "Google Earth 3D imagery dated 2022-11-09, viewed 2026-10-14",
+    "urls": [
+      "https://earth.google.com/web/@36.0991,-115.17495,660a,230d,35y,270h,60t,0r",
+      "https://earth.google.com/web/@36.09916,-115.17499,660a,190d,35y,0h,0t,0r",
+      "https://earth.google.com/web/@36.09916,-115.17499,660a,240d,35y,225h,65t,0r"
+    ],
+    "observed": "Connecting white curtain walls, crenellated flat gray roofs, stepped halls and colored turrets. The old generator omitted way/114870395 due to its area>1500 turret filter.",
+    "dimensions": "Mapped footprint and 29m height; roof 27.6m and parapet 29m are estimates, not surveyed. Lower 8m left clear to preserve arrival circulation.",
+    "changes": [
+      "8140 added triangles; 47762 total,19 batches",
+      "Two existing labels rotated 90 degrees; all GLB binary geometry preserved",
+      "114 existing bridge support samples pass"
+    ],
+    "remaining": [
+      "Exact stepped hall elevations, turret openings and roof profiles remain approximate",
+      "Tower room bays, front red pyramidal turret and gardens need closer architectural refinement",
+      "Whole site circulation has not been walked; bridge support samples do not establish full capsule movement"
+    ],
+    "evidence": "build/city-exteriors/excalibur-hall-final",
+    "performance": [
+      {
+        "name": "excalibur-aerial",
+        "p50": 16.600000143051147,
+        "p95": 17.800000190734863
+      },
+      {
+        "name": "excalibur-entry",
+        "p50": 16.600000143051147,
+        "p95": 17.59999990463257
+      },
+      {
+        "name": "excalibur-east",
+        "p50": 16.699999809265137,
+        "p95": 17.40000009536743
+      },
+      {
+        "name": "excalibur-south",
+        "p50": 16.700000047683716,
+        "p95": 17.600000143051147
+      },
+      {
+        "name": "castle-hall",
+        "p50": 16.59999990463257,
+        "p95": 18.100000143051147
+      }
+    ],
+    "checks": {
+      "typecheck": "passed",
+      "bridgeSupport": "114/114",
+      "newGeometry": "8140 finite/nonzero/nonduplicate triangles",
+      "visual": "Five installed views inspected after blue paint and red tower-roof corrections"
+    },
+    "files": {
+      "build/strip-landmarks/excaliburFrontage-exterior.glb": "d053c23ef5fded204ac0b3b69b49c7b5c56c8694002ee478af55d207dd2109fd",
+      "build/highrises/exteriors.glb": "ee3841c1d58712f96a598da2bb909e114cba8a0300498b9a3a5d334cddbfc97c"
+    }
+  }
+}

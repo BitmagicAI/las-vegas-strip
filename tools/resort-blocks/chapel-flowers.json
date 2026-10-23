@@ -1,0 +1,49 @@
+{
+  "id": "chapel-flowers",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/364845143",
+    "way/316303726",
+    "way/364845145"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/Chapel+of+the+Flowers/@36.1506329,-115.1525847,17z",
+      "imageDate": "November2022",
+      "author": "Chapel of the Flowers",
+      "observed": "Galleryfirstphoto inspected: white steep-gabled chapel at left, darkgraytile roof; ornatecreamfence,glazedgazebo,maturepinetrees,brickdrive,secondgable with squarebelfryandsteeple atbackright."
+    },
+    {
+      "url": "https://www.littlechapel.com/about/location-tour-and-videos",
+      "observed": "Official venue list includesVictorian,Magnolia,LaCapella,GlassGardens,Gazebo andphotolocationsCrystalCanopy/ReflectionFalls. Moreplanresearchneeded."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15052,-115.15212&zoom=20&basemap=satellite",
+      "observed": "Overhead inspected: small pitched-roof chapel at northwest/Strip edge; landscaped garden behind; broad brick motor court; long flat-roof rear wing with a central small gable/steeple, larger flat industrial roof immediately north and east, separate southern roadside canopy. Need assign mapped owners before replacing."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15055,-115.15276&heading=80&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Street view shows street chapel with cream stucco, gray/brown tile gable roof parallel to Strip, square louvered belfry and tall white octagonal spire, rounded windows along street face, iron garden fence and mature pine trees. Back court has small glass-front gabled chapel/entry. Broad brick motor court; southern fabric canopy and long ornamental fence."
+    }
+  ],
+  "remaining": [
+    "Heights, window schedule and rear equipment placement are estimates",
+    "Existing CC0 tree_small_02 represents garden mass but not the reference mature pine species",
+    "Fine ornament, flower beds, detailed gazebo, photo-garden features and interior access remain unfinished",
+    "Paving and garden boundaries fitted approximately; no survey claim"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/chapel-flowers-final",
+    "support": "build/city-exteriors/chapel-flowers-collision.json",
+    "walk": "build/city-exteriors/chapel-flowers-walk.json",
+    "ownership": "build/city-exteriors/chapel-flowers-ownership-audit.json",
+    "visualReview": "Three installed views reviewed; rear entrance orientation/position/glass stand-off and street fence corrected, all3views reinspected.731 support samples6walkinglegsPASS.52oldtri removed.38264 authoredtri15batches plus3existingCC0treeswithLOD;12.68MBoptimized. Suspected courtyard pavement overlay investigated: city triangles at1860,-3825 areverge.018andground-.02 belownewpavers.18; patch is cast shadow. No photoreal completion claim."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/chapelFlowers-exterior.glb": "329fb57daa6d95ef4e2e8d42c68c32994483a27cbb2b9668a62b966922af46b9",
+      "build/strip-landmarks/chapelFlowers-exterior-collision.json": "a79182ffe4fd0060a1469ddeeecc099bab092ef17f83a34b252d12851b31d587"
+    }
+  }
+}

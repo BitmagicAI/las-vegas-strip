@@ -1,0 +1,55 @@
+{
+  "id": "maverick-terminal",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://lasvegasthenandnow.com/wp-content/uploads/2023/04/Maverick-Helicopter-Building-1024x768.jpg",
+      "observed": "Inspected: beige panelized flat parapet,silver canopy,red raised Maverick lettering and helicopter silhouette,clipped hedges,palms. April2023 upload."
+    },
+    {
+      "url": "https://www.maverickhelicopter.com/contact-us",
+      "observed": "Owner confirms6075 S Las Vegas Blvd"
+    },
+    {
+      "url": "https://www.maverickhelicopter.com/media-downloads/2016-Maverick-Helicopters-Las-Vegas-Terminal-Highlight-Sheet.pdf",
+      "status": "404;search index mentions floorplan but document NOT visually inspected"
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0787062,-115.1720479,180m/data=!3m1!1e3",
+      "observed": "Satellite inspected: mapped80x19m rectangular roof is east-side hangar/service wing; main visitor terminal is separate dark-roof volume to west with front canopy and north driveway. Do not decorate hangar as terminal. Southern apron,west landscape strip andnorth access road."
+    }
+  ],
+  "remaining": [
+    "West terminal outline traced approximately from satellite; no measured drawing",
+    "Landscaping planters lack planted hedges/palms",
+    "Sign relief and typeface not exact; front wall has excessive unarticulated area",
+    "Airport apron surroundings and offsite ground remain incomplete",
+    "No interior created; official floorplan link404"
+  ],
+  "dimensions": "Mapped east wing111.437..131.365,4101.099..4181.461. Unmapped visitor terminal west footprint must be traced using satellite scale; height from front photograph is uncertain.",
+  "implemented": [
+    "Separate west visitor terminal and mapped east service wing",
+    "Panel joints,parapets,glazed entrance,silver canopy,raised lettering and helicopter sign relief",
+    "North/east glazing,service doors,roof equipment,forecourt and gradual roadside driveway transition"
+  ],
+  "validation": {
+    "support": "184 support/headroom checks passed",
+    "walk": "5legs each direction pass after local apron smooths existing curb",
+    "visual": "Final front,north views inspected; aerial inspected before local ramp/sign alignment fixes",
+    "performance": "fixed960x540 aerial16.6ms p50/18ms p95; notfullroutebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/maverick-final/maverick-front.png",
+    "build/city-exteriors/maverick-final/maverick-north.png",
+    "build/city-exteriors/maverick-final/maverick-aerial.png",
+    "build/city-exteriors/maverick-collision.json",
+    "build/city-exteriors/maverick-walk.json",
+    "build/city-exteriors/maverick-ownership-audit.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/maverickTerminal-exterior.glb": "39423e79a5f4a3226377418b5811c4caa714e9f875dabee7b977dd66122c24ad",
+      "build/strip-landmarks/maverickTerminal-exterior-collision.json": "a2ab44f3dbb75e3498e96eaa7bbd5f45578198448b78dd904dce7136d70778c1"
+    }
+  }
+}

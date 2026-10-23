@@ -1,0 +1,19 @@
+{
+  "status": "implementation-in-progress",
+  "source": "https://static.mgmresorts.com/content/dam/MGM/new-york-new-york/hotel/property-map/new-york-new-york-property-map.pdf",
+  "observed": "Downloaded owner PDF visually inspected. Current drawing has Main/Casino Floor, SecondFloor, Mezzanine; rear pool, west garage bridges, south main entrance/valet, north Park restaurants. Render differs from cached search text: theatre now labeled New York-New York Theater, so do not rely on cached MadApple label.",
+  "existingRecord": "tools/resort-blocks/new-york.json",
+  "target": "way/115661793 podium. Existing streetwall and tower geometry retained; investigate service facades only after installed audit.",
+  "localMap": "docs/project-records/city-exteriors-2026-10-14/nyny-property-map.png",
+  "observedEarth": {
+    "url": "https://earth.google.com/web/@36.10315,-115.17495,650a,240d,35y,180h,45t,0r",
+    "imageryDate": "2022-11-09",
+    "observed": "North Park restaurant row has brick/metal/glass facades, white stepped flat roof and Beerhaus fascia, rooftop mechanical clusters. Mapped way567194734 building=roof was incorrectly a plain3.5m solid box. Replacing with5.4m estimated restaurant shell; footprint preserved. Public park promenade remains outside footprint."
+  },
+  "uncertainties": [
+    "Roof/eave heights estimated from imagery, not surveyed.",
+    "Restaurant bay widths and rear service-door locations approximate; no new public interior.",
+    "South arrival canopy, rear pool and exact northern tenant divisions still need refinement."
+  ],
+  "currentOwnerMap": "https://assets.contentstack.io/v3/assets/bltc6ce635bc4868eb2/bltd0a6589c249e87b2/new-york-new-york-property-map.pdf"
+}

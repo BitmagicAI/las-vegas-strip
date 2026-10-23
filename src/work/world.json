@@ -1,0 +1,769 @@
+{
+  "worldProfileData": {
+    "characterPoseVersion": 2,
+    "author": "Generated",
+    "playerSpawnPosition": {
+      "x": -60,
+      "y": 0.25,
+      "z": 540
+    },
+    "skyboxUrl": "https://forged-assets.bitmagic.ai/images/ad37ea97-82e4-4c33-b330-229bdce9e9c8/image.webp",
+    "fogConfig": {
+      "enabled": true,
+      "color": "#aeb9c4",
+      "near": 800,
+      "far": 20000
+    },
+    "worldSeed": 42,
+    "voxelBlockSize": 1,
+    "characterConfig": {
+      "height": 1.82,
+      "walkSpeed": 2,
+      "runSpeed": 5,
+      "fastRunSpeed": 8
+    },
+    "markers": [],
+    "terrain": {
+      "shape": "none",
+      "groundBlockType": "grass"
+    },
+    "disableFoliage": true,
+    "groundWorldSizeX": 4900,
+    "groundWorldSizeZ": 8700,
+    "customBlockTypes": [],
+    "hud": {
+      "startScreen": {
+        "imageUrl": "https://forged-assets.bitmagic.ai/images/e5c92038-a9e1-46b3-bbbb-9bb7be08a7e5/image.webp"
+      },
+      "theme": {
+        "name": "Simulator",
+        "font": {
+          "key": "ibm-plex-sans",
+          "case": "normal",
+          "weightBody": 400,
+          "weightHeading": 700,
+          "trackingLabel": 0.8,
+          "outlineWidth": 1
+        },
+        "colors": {
+          "primary": "#72dcf0",
+          "danger": "#C8453F",
+          "warning": "#D8A32E",
+          "success": "#4E9E57",
+          "background": "#0b141c",
+          "surface": "#14222d",
+          "text": "#f2f4f5",
+          "textMuted": "#c6d1d5",
+          "outline": "#080d13"
+        },
+        "shape": {
+          "radiusPill": 4,
+          "radiusCard": 4,
+          "glow": "none",
+          "imageRendering": "auto",
+          "borderWidth": 1,
+          "bevel": 0.35
+        }
+      }
+    },
+    "lightingConfig": {
+      "sunElevationDeg": 18,
+      "sunAzimuthDeg": 155,
+      "sunColor": "#ffc590",
+      "sunIntensity": 0.8,
+      "environmentIntensity": 0.34,
+      "skyboxIntensity": 0.78,
+      "ambientFloor": 0.2,
+      "ambientColor": "#b7c8dd"
+    },
+    "renderConfig": {
+      "colorGrading": {
+        "enabled": true,
+        "saturation": 1.03,
+        "contrast": 1.1,
+        "temperature": 0.035
+      },
+      "vignette": {
+        "enabled": true,
+        "intensity": 0.22,
+        "radius": 0.8
+      },
+      "toneMapping": "aces",
+      "exposure": 0.9
+    },
+    "doors": [
+      {
+        "id": "bellagio_south_entrance",
+        "position": {
+          "x": -289.61538461538464,
+          "y": 2.25,
+          "z": 249.76315789473682
+        },
+        "rotationY": 0,
+        "width": 7.846153846153847,
+        "height": 4.5,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 7,
+        "color": "#695039",
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "bellagio_north_gallery_exit",
+        "position": {
+          "x": -258.2307692307693,
+          "y": 2.25,
+          "z": 385.81578947368416
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 6.184210526315789,
+        "height": 4.5,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 7,
+        "color": "#695039",
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "bellagio_lobby_service",
+        "position": {
+          "x": -336.69230769230774,
+          "y": 1.6,
+          "z": 272.02631578947364
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 4.205263157894737,
+        "height": 3.2,
+        "thickness": 0.18,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 3.5,
+        "color": "#695039"
+      },
+      {
+        "id": "bellagio_casino_service",
+        "position": {
+          "x": -336.69230769230774,
+          "y": 1.6,
+          "z": 358.60526315789474
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 4.205263157894737,
+        "height": 3.2,
+        "thickness": 0.18,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 3.5,
+        "color": "#695039"
+      },
+      {
+        "id": "bellagio_staff_lounge",
+        "position": {
+          "x": -352.38461538461536,
+          "y": 1.45,
+          "z": 272.02631578947364
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 2.7210526315789476,
+        "height": 2.9,
+        "thickness": 0.14,
+        "kind": "plain",
+        "animation": "hinge",
+        "autoOpenRadius": 3.2,
+        "color": "#695039"
+      },
+      {
+        "id": "bellagio_stores",
+        "position": {
+          "x": -352.38461538461536,
+          "y": 1.45,
+          "z": 299.2368421052631
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 2.7210526315789476,
+        "height": 2.9,
+        "thickness": 0.14,
+        "kind": "plain",
+        "animation": "hinge",
+        "autoOpenRadius": 3.2,
+        "color": "#695039"
+      },
+      {
+        "id": "bellagio_medical",
+        "position": {
+          "x": -352.38461538461536,
+          "y": 1.45,
+          "z": 326.4473684210526
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 2.7210526315789476,
+        "height": 2.9,
+        "thickness": 0.14,
+        "kind": "plain",
+        "animation": "hinge",
+        "autoOpenRadius": 3.2,
+        "color": "#695039"
+      },
+      {
+        "id": "bellagio_security",
+        "position": {
+          "x": -352.38461538461536,
+          "y": 1.45,
+          "z": 353.6578947368421
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 2.7210526315789476,
+        "height": 2.9,
+        "thickness": 0.14,
+        "kind": "plain",
+        "animation": "hinge",
+        "autoOpenRadius": 3.2,
+        "color": "#695039"
+      },
+      {
+        "id": "paris_west_entrance",
+        "position": {
+          "x": 80.34857142857142,
+          "y": 2.4,
+          "z": 428.0625
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 6.125,
+        "height": 4.8,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 7,
+        "assetId": "arrival-door-sage"
+      },
+      {
+        "id": "paris_north_exit",
+        "position": {
+          "x": 150.56571428571428,
+          "y": 2.4,
+          "z": 478.0833333333333
+        },
+        "rotationY": 0,
+        "width": 7.314285714285714,
+        "height": 4.8,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-sage"
+      },
+      {
+        "id": "caesars_main",
+        "position": {
+          "x": -179.75265017667846,
+          "y": 2.4,
+          "z": -80.5653298835706
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 18.62871927554981,
+        "height": 4.8,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 7,
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "caesars_garden",
+        "position": {
+          "x": -215.69493521790343,
+          "y": 2.4,
+          "z": -9.155239327296272
+        },
+        "rotationY": 0,
+        "width": 8.457008244994112,
+        "height": 4.8,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "caesars_service_185",
+        "position": {
+          "x": -327.7502944640754,
+          "y": 1.6,
+          "z": -105.40362225097033
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 9.314359637774904,
+        "height": 3.2,
+        "thickness": 0.1,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 4
+      },
+      {
+        "id": "caesars_service_205",
+        "position": {
+          "x": -327.7502944640754,
+          "y": 1.6,
+          "z": -43.307891332470945
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 9.314359637774904,
+        "height": 3.2,
+        "thickness": 0.1,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 4
+      },
+      {
+        "id": "Interiors / Flamingo west",
+        "position": {
+          "x": 39.9655172413793,
+          "y": 2.125,
+          "z": -47
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 25,
+        "height": 4.1,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "Interiors / Flamingo south",
+        "position": {
+          "x": 140.48275862068965,
+          "y": 2.125,
+          "z": 63
+        },
+        "rotationY": 0,
+        "width": 9.13793103448276,
+        "height": 4.1,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "Interiors / Horseshoe north",
+        "position": {
+          "x": 85.26389610389612,
+          "y": 2.125,
+          "z": 281.6503759398496
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 4.072681704260651,
+        "height": 4.1,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "Interiors / Horseshoe south",
+        "position": {
+          "x": 221.6102164502165,
+          "y": 2.125,
+          "z": 287.3521303258145
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 4.072681704260651,
+        "height": 4.1,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "Interiors / Planet Hollywood west",
+        "position": {
+          "x": 56.354827089337164,
+          "y": 2.125,
+          "z": 655.1509289617486
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 10.765027322404375,
+        "height": 4.1,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-black"
+      },
+      {
+        "id": "Interiors / Planet Hollywood south",
+        "position": {
+          "x": 187.89301152737752,
+          "y": 2.125,
+          "z": 775.7192349726777
+        },
+        "rotationY": 0,
+        "width": 6.033861671469741,
+        "height": 4.1,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-black"
+      },
+      {
+        "id": "Interiors / Paris Horseshoe passage",
+        "position": {
+          "x": 232.6058874458875,
+          "y": 2.125,
+          "z": 287.3521303258145
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 4.072681704260651,
+        "height": 4.1,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-sage"
+      },
+      {
+        "id": "Interiors / Caesars Forum connection",
+        "position": {
+          "x": -238.95170789163723,
+          "y": 2.125,
+          "z": -127.13712807244508
+        },
+        "rotationY": 0,
+        "width": 12.685512367491167,
+        "height": 4.1,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "CityCenter / Vdara lobby east",
+        "position": {
+          "x": -450.3081037710618,
+          "y": 2.1750000000000003,
+          "z": 696.2661034846885
+        },
+        "rotationY": 3.141592653589793,
+        "width": 5.9730765801907815,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "CityCenter / Vdara lobby south",
+        "position": {
+          "x": -413.27502897387893,
+          "y": 2.1750000000000003,
+          "z": 724.3970432946146
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 3.801478352692712,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "CityCenter / Aria casino east 0",
+        "position": {
+          "x": -300.6492226844756,
+          "y": 2.1750000000000003,
+          "z": 888.1234567901234
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 8.271604938271604,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "CityCenter / Aria casino east 1",
+        "position": {
+          "x": -300.6492226844756,
+          "y": 2.1750000000000003,
+          "z": 974.1481481481482
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 8.271604938271604,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "CityCenter / Aria casino north",
+        "position": {
+          "x": -327.1392599080359,
+          "y": 2.1750000000000003,
+          "z": 807.0617283950618
+        },
+        "rotationY": 0,
+        "width": 5.7587037442522435,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "CityCenter / Aria casino south",
+        "position": {
+          "x": -342.11188964309173,
+          "y": 2.1750000000000003,
+          "z": 1041.9753086419753
+        },
+        "rotationY": 0,
+        "width": 5.7587037442522435,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "CityCenter / Aria lobby east",
+        "position": {
+          "x": -256.88307422815853,
+          "y": 2.1750000000000003,
+          "z": 974.1481481481482
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 8.271604938271604,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "CityCenter / Crystals arcade east",
+        "position": {
+          "x": -40.99370586429228,
+          "y": 2.1750000000000003,
+          "z": 894.1514383474845
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 6.019515904194652,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-black"
+      },
+      {
+        "id": "CityCenter / Crystals arcade west",
+        "position": {
+          "x": -180.35508136321766,
+          "y": 2.1750000000000003,
+          "z": 912.2099860600684
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 6.019515904194652,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-black"
+      },
+      {
+        "id": "CityCenter / Crystals arcade north",
+        "position": {
+          "x": -87.96945041449186,
+          "y": 2.1750000000000003,
+          "z": 824.3250538588265
+        },
+        "rotationY": 0,
+        "width": 3.9146453791832974,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-black"
+      },
+      {
+        "id": "CityCenter / Crystals arcade south",
+        "position": {
+          "x": -88.75237949032851,
+          "y": 2.1750000000000003,
+          "z": 1001.2988214421493
+        },
+        "rotationY": 0,
+        "width": 3.9146453791832974,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-black"
+      },
+      {
+        "id": "CityCenter / Waldorf arrival lobby east",
+        "position": {
+          "x": -73.90306627101879,
+          "y": 2.1750000000000003,
+          "z": 1086.5845272206302
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 4.355300859598854,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "CityCenter / Waldorf arrival lobby west",
+        "position": {
+          "x": -143.68545994065283,
+          "y": 2.1750000000000003,
+          "z": 1086.5845272206302
+        },
+        "rotationY": 1.5707963267948966,
+        "width": 4.355300859598854,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "CityCenter / Waldorf arrival lobby north",
+        "position": {
+          "x": -115.7725024727992,
+          "y": 2.1750000000000003,
+          "z": 1050.8710601719197
+        },
+        "rotationY": 0,
+        "width": 4.1048466864490605,
+        "height": 4.2,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 6,
+        "assetId": "arrival-door-bronze"
+      },
+      {
+        "id": "Arrival / Veer east residential lobby",
+        "position": {
+          "x": -113.66666666666667,
+          "y": 1.775,
+          "z": 957.0000072438096
+        },
+        "rotationY": -1.5707963267948966,
+        "width": 8.928571428571429,
+        "height": 3.4,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 5,
+        "assetId": "arrival-door-silver"
+      },
+      {
+        "id": "Arrival / Veer west residential lobby",
+        "position": {
+          "x": -171.66666666666669,
+          "y": 1.775,
+          "z": 955.999992466438
+        },
+        "rotationY": -1.5707963267948966,
+        "width": 9.285714285714286,
+        "height": 3.4,
+        "thickness": 0.22,
+        "kind": "plain",
+        "animation": "slide",
+        "autoOpenRadius": 5,
+        "assetId": "arrival-door-silver"
+      }
+    ],
+    "playerSpawnRotation": 1.5707963267948966,
+    "cameraMode": "first-person",
+    "vegetationRenderDistance": 560
+  },
+  "assets": [
+    {
+      "id": "img-cover_art-1790468977872",
+      "name": "cover_art",
+      "url": "https://forged-assets.bitmagic.ai/images/e5c92038-a9e1-46b3-bbbb-9bb7be08a7e5/image.webp",
+      "screenshotUrl": "https://forged-assets.bitmagic.ai/images/e5c92038-a9e1-46b3-bbbb-9bb7be08a7e5/image.webp",
+      "type": "image",
+      "source": "generated",
+      "prompt": "Low-poly art: flat-shaded polygon meshes with clean facets and hard edges, simple colour blocking, no visible cubes, no voxels.\nA low-poly game scene based on this game design:\n# Vegas: Afterlight\nA desktop-first zombie survival game in a ruined central Las Vegas Strip. First delivery is a walkable Blender environment and mission/horde staging layout; Hero (WebHuman) characters will be supplied by the creator.\n\n## Art direction\nRealistic architectural proportions and grounded material treatment, aspirational AAA / UE5 cinematic fidelity. NOT a cartoon or voxel world. The Bitmagic `low-poly` switch enables mesh rendering; it does not describe the requested aesthetic. Weathered cream limestone, bronze lattice, soot, distressed asphalt, dusty glass, abandoned neon and desert sunset haze. Warm sunset outlines the Bellagio massing, Paris Eiffel landmark, Caesars frontage and Flamingo signage. Wet patches and cyan sanctuary energy contrast with amber skies. This is a compressed, recognizable adaptation of the central Strip, not a surveyed replica of resort interiors. Prioritize visuals; defer FPS gates and mobile optimization.\n\n## First environment\nAn approximately 440 x 600 metre district. X east, Z north. Sanctuary on the former Bellagio forecourt, west of the boulevard. Boulevard runs north/south. Flamingo Road crosses the northern portion. Paris lies east/southeast, Caesars northwest, Flamingo northeast. Buildings form an enclosing skyline and playable alleys lead to recessed supply depots.\n\n## Survival loop\nLeave the shield to collect food, medicine, weapons and ammunition. Return to bank supplies. A transparent energy hemisphere conceals player sigh\n\nDepict the world and atmosphere as a single illustrated scene. Low-poly art with flat-shaded facets and hard edges on every object, no cubes, no voxels, rendered as a highly polished 3D scene with the craft of a Pixar-quality animated film, cinematic lighting that fits the scene, soft ambient occlusion, rich detail and expressive composition. Wordless illustration, no text, no title, no words, no letters, no logos, no UI.",
+      "size": 180550
+    },
+    {
+      "id": "level-vegas",
+      "name": "vegas",
+      "url": "https://bitmagic.ai/worlds/v3/ZWLJZE4P1VA6/1790534811542-vegas.glb",
+      "type": "glb",
+      "size": 195734748,
+      "production": {
+        "method": "uploaded",
+        "at": "2026-09-27T18:46:57.184Z",
+        "sourceUrl": "https://bitmagic.ai/worlds/v3/ZWLJZE4P1VA6/1790534811542-vegas.glb",
+        "sourceName": "vegas.glb"
+      },
+      "sourceGlbUrl": "https://bitmagic.ai/worlds/v3/ZWLJZE4P1VA6/1790534811542-vegas.glb",
+      "targetHeight": 165.5
+    },
+    {
+      "id": "arrival-door-bronze",
+      "name": "arrival-door-bronze",
+      "type": "glb",
+      "url": "/build/arrival-reconstruction/door-bronze.glb?v=83de34c63f69",
+      "size": 69576,
+      "targetHeight": 4.2
+    },
+    {
+      "id": "arrival-door-silver",
+      "name": "arrival-door-silver",
+      "type": "glb",
+      "url": "/build/arrival-reconstruction/door-silver.glb?v=7bf7f6b88ee4",
+      "size": 68424,
+      "targetHeight": 4.2
+    },
+    {
+      "id": "arrival-door-black",
+      "name": "arrival-door-black",
+      "type": "glb",
+      "url": "/build/arrival-reconstruction/door-black.glb?v=97938f60b48d",
+      "size": 69568,
+      "targetHeight": 4.2
+    },
+    {
+      "id": "arrival-door-sage",
+      "name": "arrival-door-sage",
+      "type": "glb",
+      "url": "/build/arrival-reconstruction/door-sage.glb?v=378490c15534",
+      "size": 69544,
+      "targetHeight": 4.2
+    }
+  ],
+  "environmentObjects": [],
+  "gameId": "ZWLJZE4P1VA6"
+}

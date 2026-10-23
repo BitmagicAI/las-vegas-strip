@@ -1,0 +1,56 @@
+{
+  "id": "sky-west-garage",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1409,-115.1621,660a,260d,35y,50h,65t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Both opposing elevations inspected; fifteen-deck parking tower west of Sky, pale concrete rails, pink-beige end panels, one-level stepped roof and raised stair core."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1409,-115.1621,660a,260d,35y,230h,65t,0r",
+      "imageDate": "2022-11-09",
+      "review": "Both opposing elevations inspected; fifteen-deck parking tower west of Sky, pale concrete rails, pink-beige end panels, one-level stepped roof and raised stair core."
+    }
+  ],
+  "dimensions": "47m/15levels from mapped source;50m stair core estimated. Internal ramps not modeled.",
+  "remaining": [
+    "Internal ramp circulation",
+    "Ground access and facade proportions",
+    "Route performance",
+    "Solid-panel return seams and roof ramp"
+  ],
+  "baseline": [
+    "build/city-exteriors/sky-garage-before/garage-front.png",
+    "build/city-exteriors/sky-garage-before/garage-back.png",
+    "build/city-exteriors/sky-garage-before/garage-entry.png"
+  ],
+  "baselineReview": "All3 inspected. Front and street show blank47m shell. Original rear view obstructed by neighboring towers; revised camera for after review.",
+  "implementation": {
+    "ids": [
+      "way/396439303"
+    ],
+    "triangles": 4359,
+    "batches": 5,
+    "tests": "207 deck surface support checks pass. Internal column top caps not counted as walkable deck surfaces."
+  },
+  "installedReview": {
+    "captures": [
+      "build/city-exteriors/sky-garage-after/garage-front.png",
+      "build/city-exteriors/sky-garage-after/garage-back.png",
+      "build/city-exteriors/sky-garage-after/garage-entry.png"
+    ],
+    "review": "All3 final views inspected. Stepped decks and parapets, solid end panels and stairhead replace blank shell. Front columns clipped out of solid panels and concrete detail reduced. Small edge seam at panel returns, absence of central roof ramp and circulation remain. No claim of complete garage."
+  },
+  "finalBuild": {
+    "files": {
+      "tools/strip-landmarks/sky_garage.py": "959b23998585cf5b53a9af73c90510142d71881462a2a83f49a8ae9aac6c89bf",
+      "build/optimized/build/strip-landmarks/skyGarage-exterior.glb": "7aa956f6ffe6fdba5a0ef09235fa78b98ede5b45df262890c4bb21456827bb18"
+    }
+  },
+  "verification": {
+    "typecheck": "passed",
+    "localWebGPU": "passed56fps spawn3011bodies; not route performance",
+    "log": "docs/project-records/city-exteriors-2026-10-12/verify-sky-garage.log"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "id": "wynn-lakefront",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/142899192",
+    "way/142899188",
+    "way/142899193"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12630,-115.1673&zoom=20&basemap=satellite",
+      "review": "Lakefront restaurants, west waterfall and southern basin; exact mapped-feature ownership under review."
+    },
+    {
+      "url": "https://assets.simpleviewcms.com/simpleview/image/upload/c_fill%2Ch_600%2Cq_75%2Cw_900/v1/clients/lasvegas/SW_Steakhouse_00a0d6db-642e-46ba-9317-508f878ca85a.jpg",
+      "review": "SW two-storey ochre facade, cream columns, draped pergola and upper striped awnings inspected; date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12593,-115.16725&zoom=21&basemap=satellite",
+      "review": "Southern feature142899193 is open water with stepped rock cascades; not an enclosed building. Inspected October21."
+    },
+    {
+      "url": "https://storage.googleapis.com/wlv-menus.appspot.com/images/Nzb2Gduj5aLM9.png",
+      "review": "North restaurant image inspected: two levels, cream columns, clear balustrades, upper red umbrellas and striped awnings. Image date unknown."
+    }
+  ],
+  "remaining": [
+    "Upper balcony interior connections not reconstructed; checks establish local movement only",
+    "Surrounding dense hillside forest, stepped landscape and waterfall animation not implemented; current waterfall screen is static massing",
+    "Parent wide roof/skylights and central Bar Parasol facade remain generic and differ from source",
+    "Dimensions/elevations and shoreline trace approximate; no surveyed accuracy or photorealistic completion",
+    "Water shader is existing runtime pool-water treatment; no new planar reflection or water physics",
+    "Exact furnishings, column ornament and storefront detail remain simplified",
+    "Northern shoreline coping still forms a narrow projection; requires better registered shoreline and landscape refinement."
+  ],
+  "separateUnresolved": [
+    "way/111348710: western service structure hidden by tree canopy; identification pending"
+  ],
+  "estimatedDimensions": {
+    "waterY": 0.42,
+    "terraceY": 0.7,
+    "pergolaY": 4.9,
+    "parentRoofY": 14,
+    "waterfallHeight": 13.7,
+    "note": "Waterfall based on official45ft description; other vertical levels estimated from photos and existing parent. Main lake shoreline manually traced from aerial, not surveyed."
+  },
+  "triangles": 13302,
+  "batches": 11,
+  "optimizedMiB": 0.2,
+  "viewsInspected": [
+    "build/city-exteriors/wynn-lakefront-final/wynn-lake-wide.png",
+    "build/city-exteriors/wynn-lakefront-final/wynn-sw-terrace.png",
+    "build/city-exteriors/wynn-lakefront-final/wynn-north-terrace.png",
+    "build/city-exteriors/wynn-lakefront-final/wynn-south-basin.png"
+  ],
+  "tests": [
+    "1010 support checks passed including lower terraces, upper balconies and basin beds",
+    "Eight bidirectional walking reports passed on local upper/lower terrace routes; no claim of interior access",
+    "123 erroneous6m shell triangles removed;ground/woodland triangles clipped only inside water masks (exact counts in ownership report)",
+    "Four installed views inspected through three iterations; corrected opaque guard glazing and dry gap at terrace water edge"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "wynn-lake-wide",
+        "eye": [
+          485,
+          32,
+          -1180
+        ],
+        "target": [
+          542,
+          7,
+          -1150
+        ],
+        "p": [
+          541,
+          1,
+          -1142
+        ],
+        "p50": 16.899999976158142,
+        "p95": 20.100000023841858
+      },
+      {
+        "name": "wynn-sw-terrace",
+        "eye": [
+          529,
+          4,
+          -1138
+        ],
+        "target": [
+          551,
+          6,
+          -1134
+        ],
+        "p": [
+          544,
+          1,
+          -1130
+        ],
+        "p50": 16.599999964237213,
+        "p95": 19.19999998807907
+      },
+      {
+        "name": "wynn-north-terrace",
+        "eye": [
+          526,
+          4,
+          -1175
+        ],
+        "target": [
+          548,
+          6,
+          -1175
+        ],
+        "p": [
+          544,
+          1,
+          -1174
+        ],
+        "p50": 17.80000001192093,
+        "p95": 24.399999976158142
+      },
+      {
+        "name": "wynn-south-basin",
+        "eye": [
+          500,
+          16,
+          -1100
+        ],
+        "target": [
+          522,
+          2,
+          -1108
+        ],
+        "p": [
+          535,
+          1,
+          -1106
+        ],
+        "p50": 16.69999998807907,
+        "p95": 21.299999952316284
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 123,
+    "colliderTrianglesRemoved": 123,
+    "groundClipped": 39,
+    "groundColliderClipped": 38,
+    "groundReplacementTriangles": 330,
+    "scope": "Only three mapped6m shells and ground/woodland inside registered lake masks; roads and all other geometry retained."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/wynnLakefront-exterior.glb": "772ffed942e6f478d3518db43afd7d8cf6c50fec81ade204a122754a7079a531",
+      "build/strip-landmarks/wynnLakefront-exterior-collision.json": "7e1cf4401f8a33a83511df1e212bb8de5f140859cc957d288cc7bfe7cd6e5a14"
+    }
+  }
+}

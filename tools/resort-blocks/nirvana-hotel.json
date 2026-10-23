@@ -1,0 +1,56 @@
+{
+  "id": "nirvana-hotel",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Nirvana+Hotel+Las+Vegas",
+      "provider": "Google Maps satellite and hotel owner photo",
+      "imageDate": "Owner photo June 2023; satellite unknown",
+      "observed": "One-storey white masonry, dark eaves, white doors and dark green glazing, under-window AC, asphalt parking. Satellite confirms narrow east wing and front office."
+    },
+    {
+      "url": "https://images.lacarmina.com/230519-nirvana-hotel-las-vegas-boutique-bed-breakfast-indie-hotels-3.jpg",
+      "provider": "La Carmina travel photography",
+      "imageDate": "2023 inferred from filename",
+      "observed": "White block wall, black fascia, string bulbs, white rooftop sign black serif NIRVANA HOTEL with pink lotus."
+    }
+  ],
+  "dimensions": "Mapped way/3648465481133m2 footprint. Roof3.5m estimate from one-storey photos. Adjacent Motel8 separate footprint not assumed same ownership.",
+  "components": [
+    "Front office and sign",
+    "East guest wing exterior",
+    "Parking and walkways",
+    "Landscape containers and string-light fixtures",
+    "Roof equipment"
+  ],
+  "routes": [
+    "Street to office",
+    "Courtyard along guest wing and return"
+  ],
+  "remaining": [
+    "Exact front retail glazing and lettering require better matched reference; lotus simplified",
+    "Mature landscaping and facade aging not reproduced",
+    "Room interiors outside exterior scope",
+    "Neighboring mapped parcels still show missing ground outside authored site"
+  ],
+  "tests": {
+    "support": "385 floor/headroom samples passed",
+    "walking": "4legs both directions passed with engine controller settings .08skin .01nudge, city+level collision",
+    "ownership": "46mapped triangles removed in visual/collision;unrelated unchanged",
+    "typecheck": "passed;docs/project-records/city-exteriors-2026-10-20/check-nirvana.log",
+    "runtime": "3 installed views reviewed; CLIverify not rerun following repeated menu detector failures on previous passes"
+  },
+  "evidence": [
+    "build/city-exteriors/nirvana-final/nirvana-front.png",
+    "build/city-exteriors/nirvana-final/nirvana-courtyard.png",
+    "build/city-exteriors/nirvana-final/nirvana-aerial.png"
+  ],
+  "performance": "960x540ultra fixed aerial p50 16.7ms p95 17.4ms;not full route benchmark",
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/nirvanaHotel-exterior.glb": "ae8d9c4c59b8ee5761fb0a25129b169b49c138f0021d29558bdc86f3fcce2495",
+      "build/strip-landmarks/nirvanaHotel-exterior-collision.json": "731afb51cd9b566faa863fc56dae6ed09ab8c7bf20c158ce52186fb414f0097d"
+    }
+  },
+  "correction20261020": "Main rooms corrected to face southern courtyard from June2023 owner photo; current evidence and hashes in nirvana-ancillary.json."
+}

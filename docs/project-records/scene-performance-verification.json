@@ -1,0 +1,64 @@
+{
+  "ok": true,
+  "failures": [],
+  "warnings": [
+    "Low frame rate observed: 24 fps (engine; host machine) across the final settle polls. This is advisory, not a visual-quality or publish gate. Report it to the creator; profile before optimizing and ask before reducing visual quality. A short host run, including mobile emulation, does not establish real-device gameplay performance."
+  ],
+  "fingerprint": "511adf54201f4901beb116fe841accb52aa64012cfe7c416fa8cc1c56fea7044",
+  "at": "2026-10-05T23:14:04.475Z",
+  "renderer": {
+    "requested": "webgpu",
+    "rendererType": "webgpu",
+    "backend": "webgpu"
+  },
+  "settle": {
+    "durationMs": 4205,
+    "reason": "stable"
+  },
+  "snapshot": {
+    "gameState": "playing",
+    "hasStarted": true,
+    "elapsedTimeSeconds": 5.143400000095371,
+    "player": {
+      "x": -60,
+      "y": 0.10990765571594235,
+      "z": 540,
+      "isFalling": false
+    },
+    "physics": {
+      "rigidBodyCount": 3047,
+      "colliderCount": 3056
+    },
+    "scene": {
+      "objects": 7122,
+      "meshes": 5329,
+      "lights": 44
+    },
+    "npcCount": 0,
+    "fps": 24,
+    "fpsSource": "engine"
+  },
+  "events": {
+    "totalByType": {
+      "state": 2
+    },
+    "earlyByType": {
+      "state": 2
+    },
+    "matchEndAtSeconds": null,
+    "lastEvents": [
+      {
+        "frame": 0,
+        "type": "state",
+        "intensity": 0
+      },
+      {
+        "frame": 0,
+        "type": "state",
+        "intensity": 0
+      }
+    ]
+  },
+  "platform": "desktop",
+  "mobileParity": null
+}

@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "failures": [],
+  "warnings": [],
+  "fingerprint": "f5f0add36f270958639feca382c6e64bbeefa31ebdf218fe4a3d840d7d335f39",
+  "at": "2026-10-10T02:35:11.031Z",
+  "renderer": {
+    "requested": "webgpu",
+    "rendererType": "webgpu",
+    "backend": "webgpu"
+  },
+  "settle": {
+    "durationMs": 4065,
+    "reason": "stable"
+  },
+  "snapshot": {
+    "gameState": "playing",
+    "hasStarted": true,
+    "elapsedTimeSeconds": 4.39789999985695,
+    "player": {
+      "x": -60,
+      "y": 0.41500010967254636,
+      "z": 540,
+      "isFalling": false
+    },
+    "physics": {
+      "rigidBodyCount": 3034,
+      "colliderCount": 3043
+    },
+    "scene": {
+      "objects": 6701,
+      "meshes": 3556,
+      "lights": 48
+    },
+    "npcCount": 0,
+    "fps": 59,
+    "fpsSource": "engine"
+  },
+  "events": {
+    "totalByType": {
+      "state": 2
+    },
+    "earlyByType": {
+      "state": 2
+    },
+    "matchEndAtSeconds": null,
+    "lastEvents": [
+      {
+        "frame": 0,
+        "type": "state",
+        "intensity": 0
+      },
+      {
+        "frame": 0,
+        "type": "state",
+        "intensity": 0
+      }
+    ]
+  },
+  "platform": "desktop",
+  "mobileParity": null
+}

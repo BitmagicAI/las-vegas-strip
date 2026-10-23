@@ -1,0 +1,78 @@
+{
+  "id": "luxor-parking",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/29710490",
+    "way/118344866",
+    "way/118344868",
+    "way/118344871"
+  ],
+  "references": [
+    {
+      "url": "https://static.mgmresorts.com/content/dam/MGM/luxor/casino/luxor-hotel-property-map.pdf",
+      "provider": "MGM Resorts",
+      "inspected": "Page2 map visually inspected",
+      "observations": "Main level map labels West Parking Garage and stairs/ramp up to self park",
+      "localCopy": "docs/project-records/city-exteriors-2026-10-12/references/luxor-property-map.pdf"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.09535,-115.17905,650a,350d,35y,90h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.09535,-115.17905,720a,320d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.09545,-115.1774,620a,170d,35y,180h,65t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.09535,-115.1780,650a,300d,35y,270h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    }
+  ],
+  "remaining": [
+    "Onward connection inside pyramid ends at opaque existing shell",
+    "Missing pool courtyard, cabanas, landscaping and adjacent service buildings",
+    "Exact deck elevations, parking circulation and vehicle traversal still need survey validation"
+  ],
+  "dimensions": "Mapped parking and pavilion footprints; garage upperdeck4.24m estimated, central vehicleramp75m run/4m rise; public walkway4.24m width5.6m, canopy7.84m, centralroof8.1m. All elevations estimated.",
+  "geometry": {
+    "triangles": 24995,
+    "batches": 11,
+    "optimizedMiB": 0.38
+  },
+  "tests": "77 deck support plus 320 ramp/walkway support/headroom samples PASS;1517 city collision cells valid; ten installed views inspected; full WebGPU verify PASS57fps startup3011bodies (not local performance benchmark)",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/luxorParking-exterior.glb": "5fe3b539bf18458ebfd13f59815989f3b3f88d4eabfe17c5640c615ffe854b05"
+    }
+  },
+  "viewsReviewed": [
+    "build/city-exteriors/luxor-parking-after/west.png",
+    "build/city-exteriors/luxor-parking-after/roof.png",
+    "build/city-exteriors/luxor-parking-after/ramp.png",
+    "build/city-exteriors/luxor-parking-after/approach.png",
+    "build/city-exteriors/luxor-parking-after/walkway.png",
+    "build/city-exteriors/luxor-parking-final/west.png",
+    "build/city-exteriors/luxor-parking-final/roof.png",
+    "build/city-exteriors/luxor-parking-final/ramp.png",
+    "build/city-exteriors/luxor-parking-final/approach.png",
+    "build/city-exteriors/luxor-parking-final/walkway.png"
+  ],
+  "reviewFindings": "Continuous canopy revised after first captures showed bay gaps. Final roof, ramp and covered walkway visually reviewed; adjacent pool yard entirely absent and pavilion lower rooms plain. Not whole-site complete.",
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-luxor-parking.log"
+}

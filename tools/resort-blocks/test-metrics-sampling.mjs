@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import * as T from 'three';import {SceneMetrics} from '../../src/work/SceneMetrics.ts';
+const scene=new T.Scene(),camera=new T.PerspectiveCamera();const mesh=new T.Mesh(new T.BoxGeometry(),new T.MeshBasicMaterial());scene.add(mesh);
+const before=mesh.onBeforeRender,after=mesh.onAfterRender;
+const engine={scene,camera,renderer:{info:{render:{drawCalls:1,triangles:12}}}};
+const m=new SceneMetrics(engine,()=>{});const frame=()=>{scene.onBeforeRender(engine.renderer,scene,camera);scene.onAfterRender(engine.renderer,scene,camera);};
+frame();const first=m.inventory;assert.ok(first);
+for(let i=0;i<1000;i++)frame();assert.equal(m.inventory,first,'Normal frames must not rebuild scene inventory');
+assert.equal(mesh.onBeforeRender,before);assert.equal(mesh.onAfterRender,after);
+m.requestAudit();frame();assert.notEqual(m.inventory,first,'Explicit refresh must update breakdown');m.dispose();
+console.log('1000 frames without an unsolicited scene audit; explicit refresh and hook cleanup passed.');

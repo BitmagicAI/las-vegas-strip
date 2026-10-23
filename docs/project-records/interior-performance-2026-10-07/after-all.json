@@ -1,0 +1,846 @@
+{
+ "viewport": [
+  1505,
+  772
+ ],
+ "dpr": 2,
+ "results": [
+  {
+   "view": "stair-bellagio",
+   "tower": "bellagio-north",
+   "floor": 3,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -304,
+    "y": 10.9,
+    "z": 257.9
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 4.2,
+   "gpuP50": 16.68,
+   "gpuP90": 18.17,
+   "draws": 230,
+   "triangles": 2613596,
+   "passes": [
+    [
+     "output 3010x1544",
+     8.95,
+     1
+    ],
+    [
+     "screen",
+     7.61,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.02,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "corridor-bellagio",
+   "tower": "bellagio-north",
+   "floor": 3,
+   "room": null,
+   "roomView": "corridor",
+   "placed": {
+    "x": -304,
+    "y": 10.9,
+    "z": 260.3
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 4.2,
+   "gpuP50": 6.85,
+   "gpuP90": 12.28,
+   "draws": 227,
+   "triangles": 2613572,
+   "passes": [
+    [
+     "output 3010x1544",
+     5.29,
+     1
+    ],
+    [
+     "screen",
+     2.63,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.05,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "room-bellagio",
+   "tower": "bellagio-north",
+   "floor": 3,
+   "room": 0,
+   "roomView": "bedroom",
+   "placed": {
+    "x": -310.9,
+    "y": 10.9,
+    "z": 262.5
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5,
+   "gpuP50": 9.65,
+   "gpuP90": 13.94,
+   "draws": 303,
+   "triangles": 2853151,
+   "passes": [
+    [
+     "output 3010x1544",
+     4.76,
+     1
+    ],
+    [
+     "screen",
+     3.56,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.82,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "bath-bellagio",
+   "tower": "bellagio-north",
+   "floor": 3,
+   "room": 0,
+   "roomView": "bathroom",
+   "placed": {
+    "x": -308.6,
+    "y": 10.9,
+    "z": 264.4
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.7,
+   "gpuP50": 10.19,
+   "gpuP90": 10.56,
+   "draws": 613,
+   "triangles": 5169176,
+   "passes": [
+    [
+     "output 3010x1544",
+     6,
+     1
+    ],
+    [
+     "screen",
+     3.5,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.57,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "stair-caesars",
+   "tower": "caesars-palace",
+   "floor": 3,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -406,
+    "y": 10.9,
+    "z": -35.9
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.9,
+   "gpuP50": 13.9,
+   "gpuP90": 14.54,
+   "draws": 168,
+   "triangles": 55268,
+   "passes": [
+    [
+     "screen",
+     6.93,
+     1
+    ],
+    [
+     "output 3010x1544",
+     6.85,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.04,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "corridor-caesars",
+   "tower": "caesars-palace",
+   "floor": 3,
+   "room": null,
+   "roomView": "corridor",
+   "placed": {
+    "x": -406,
+    "y": 10.9,
+    "z": -41.8
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.7,
+   "gpuP50": 8.41,
+   "gpuP90": 8.8,
+   "draws": 160,
+   "triangles": 54174,
+   "passes": [
+    [
+     "screen",
+     4.24,
+     1
+    ],
+    [
+     "output 3010x1544",
+     4.16,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.07,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "room-caesars",
+   "tower": "caesars-palace",
+   "floor": 3,
+   "room": 0,
+   "roomView": null,
+   "placed": {
+    "x": -400.8,
+    "y": 10.9,
+    "z": -49.8
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.8,
+   "gpuP50": 10.11,
+   "gpuP90": 10.92,
+   "draws": 582,
+   "triangles": 4774175,
+   "passes": [
+    [
+     "output 3010x1544",
+     5.86,
+     1
+    ],
+    [
+     "screen",
+     3.67,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.67,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "stair-cosmo",
+   "tower": "cosmo-boulevard",
+   "floor": 3,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -116.4,
+    "y": 33.5,
+    "z": 647
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.7,
+   "gpuP50": 18.48,
+   "gpuP90": 19.09,
+   "draws": 135,
+   "triangles": 826499,
+   "passes": [
+    [
+     "output 3010x1544",
+     9.4,
+     1
+    ],
+    [
+     "screen",
+     9.07,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.03,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "corridor-cosmo",
+   "tower": "cosmo-boulevard",
+   "floor": 3,
+   "room": null,
+   "roomView": "corridor",
+   "placed": {
+    "x": -114.5,
+    "y": 33.5,
+    "z": 647
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.7,
+   "gpuP50": 9.66,
+   "gpuP90": 9.8,
+   "draws": 131,
+   "triangles": 826015,
+   "passes": [
+    [
+     "output 3010x1544",
+     5.17,
+     1
+    ],
+    [
+     "screen",
+     4.4,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.08,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "room-cosmo",
+   "tower": "cosmo-boulevard",
+   "floor": 3,
+   "room": 0,
+   "roomView": null,
+   "placed": {
+    "x": -111.9,
+    "y": 33.5,
+    "z": 649.5
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.2,
+   "gpuP50": 9.56,
+   "gpuP90": 9.99,
+   "draws": 373,
+   "triangles": 4962699,
+   "passes": [
+    [
+     "output 3010x1544",
+     4.76,
+     1
+    ],
+    [
+     "screen",
+     2.6,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     1.53,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "stair-ground-bellagio",
+   "tower": "bellagio-north",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -304,
+    "y": 0.1,
+    "z": 257.9
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.7,
+   "gpuP50": 30.31,
+   "gpuP90": 30.85,
+   "draws": 72,
+   "triangles": 2252658,
+   "passes": [
+    [
+     "output 3010x1544",
+     15.66,
+     1
+    ],
+    [
+     "screen",
+     14.55,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.05,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "lobby-wynn",
+   "tower": "wynn-1",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 674,
+    "y": 0.3,
+    "z": -1229.7
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.2,
+   "gpuP50": 10.32,
+   "gpuP90": 10.64,
+   "draws": 41,
+   "triangles": 751359,
+   "passes": [
+    [
+     "output 3010x1544",
+     5.13,
+     1
+    ],
+    [
+     "screen",
+     5.09,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.1,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "entrance-wynn",
+   "tower": "wynn-1",
+   "floor": 0,
+   "room": null,
+   "roomView": "entrance",
+   "placed": {
+    "x": 649.9,
+    "y": 0.3,
+    "z": -1375.1
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.3,
+   "gpuP50": 11.42,
+   "gpuP90": 12.39,
+   "draws": 457,
+   "triangles": 4132455,
+   "passes": [
+    [
+     "output 3010x1544",
+     6.15,
+     1
+    ],
+    [
+     "screen",
+     4.93,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.36,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "lobby-venetian",
+   "tower": "landmark:venetian",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 230,
+    "y": 0.2,
+    "z": -686
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 4.3,
+   "gpuP50": 5.3,
+   "gpuP90": 10.3,
+   "draws": 131,
+   "triangles": 2583672,
+   "passes": [
+    [
+     "output 3010x1544",
+     3.55,
+     1
+    ],
+    [
+     "screen",
+     2.16,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.53,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "lobby-palazzo",
+   "tower": "landmark:palazzo",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 311.8,
+    "y": 0.2,
+    "z": -933.5
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 4.9,
+   "gpuP50": 6.5,
+   "gpuP90": 12.2,
+   "draws": 220,
+   "triangles": 2564606,
+   "passes": [
+    [
+     "output 3010x1544",
+     5.01,
+     1
+    ],
+    [
+     "screen",
+     2.42,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.36,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "lobby-park",
+   "tower": "landmark:park",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": -72.6,
+    "y": 0.2,
+    "z": 1230.6
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.2,
+   "gpuP50": 7.95,
+   "gpuP90": 8.2,
+   "draws": 38,
+   "triangles": 264128,
+   "passes": [
+    [
+     "output 3010x1544",
+     4.1,
+     1
+    ],
+    [
+     "screen",
+     3.79,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.08,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "lobby-arena",
+   "tower": "landmark:arena",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": -390.6,
+    "y": 0.2,
+    "z": 1407.3
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 4,
+   "gpuP50": 14.89,
+   "gpuP90": 18.77,
+   "draws": 133,
+   "triangles": 2753443,
+   "passes": [
+    [
+     "output 3010x1544",
+     7.94,
+     1
+    ],
+    [
+     "screen",
+     7.33,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.27,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "lobby-linq",
+   "tower": "landmark:linq",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 43.4,
+    "y": 0.2,
+    "z": -250.8
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.6,
+   "gpuP50": 5.97,
+   "gpuP90": 11.35,
+   "draws": 404,
+   "triangles": 4222776,
+   "passes": [
+    [
+     "output 3010x1544",
+     3.92,
+     1
+    ],
+    [
+     "screen",
+     2.21,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.83,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  },
+  {
+   "view": "lobby-ti",
+   "tower": "landmark:ti",
+   "floor": 0,
+   "room": null,
+   "roomView": "lobby",
+   "placed": {
+    "x": 94.7,
+    "y": 0.2,
+    "z": -1038.6
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.8,
+   "gpuP50": 6.2,
+   "gpuP90": 11.9,
+   "draws": 482,
+   "triangles": 4695664,
+   "passes": [
+    [
+     "output 3010x1544",
+     4.97,
+     1
+    ],
+    [
+     "screen",
+     2.14,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.41,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {}
+  }
+ ],
+ "errors": []
+}

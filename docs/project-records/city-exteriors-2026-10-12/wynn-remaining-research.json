@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-21",
+  "status": "research-only",
+  "mappedIds": [
+    "way/142899192",
+    "way/142899188",
+    "way/142899193",
+    "way/111348710"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.126543,-115.166923&zoom=21&basemap=satellite",
+      "observed": "Lakefront restaurant facade, curved terrace projections and water adjacent to Parasol/Aft deck; aerial inspected."
+    },
+    {
+      "url": "https://www.wynnlasvegas.com/entertainment/lake-of-dreams",
+      "searchEvidence": "Official search result describes 45-foot waterfall and three-acre lake; page/image inspection pending."
+    },
+    {
+      "url": "https://cdn.wynnresorts.com/image/upload/v1587100221/Wynn%20Las%20Vegas/Dining/Dining%20Teaser%20Cards/390_SW_Steakhouse_Patio_Barbara_Kraft.jpg",
+      "status": "reference found, not yet visually inspected"
+    }
+  ],
+  "remaining": [
+    "Map each small feature to its actual architectural/landscape role before replacement",
+    "Inspect parent podium and existing water ownership; do not cover lake with building boxes",
+    "Need current restaurant facade references and walkway elevation survey"
+  ],
+  "westFeatureCorrection": {
+    "id": "way/111348710",
+    "identification": "Wynn curved marquee sign, not a service building or Omega pavilion. Map POI label was misleading; April2025 street view confirms Wynn sign at coordinate.",
+    "sources": [
+      "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12644,-115.16844&heading=90&pitch=8",
+      "https://www.yesco.com/cmsdocuments/Yescozette_Facts_Final.pdf"
+    ],
+    "publishedDimensions": "Direct official YESCO PDF page3 text verified:135ft total,100x50ft concave double-faced LED. January2005 publication; current April2025 StreetView confirms broad form. Roof/support profile and moving band dimensions still estimated."
+  }
+}

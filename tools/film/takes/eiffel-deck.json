@@ -1,0 +1,47 @@
+{
+ "start": {
+  "landmark": [
+   "parisBlock",
+   "observation"
+  ],
+  "view": "first",
+  "warm": 5
+ },
+ "steps": [
+  {
+   "walk": {
+    "path": [
+     [
+      69.13,
+      404.26
+     ],
+     [
+      67.16,
+      404.61
+     ],
+     [
+      65.2,
+      404.97
+     ],
+     [
+      63.23,
+      405.32
+     ],
+     [
+      61.26,
+      405.68
+     ]
+    ],
+    "run": false,
+    "sway": [
+     0.45,
+     14
+    ],
+    "pitch": -0.12
+   }
+  }
+ ],
+ "maxSeconds": 50,
+ "name": "eiffel-deck",
+ "subframes": 4
+}

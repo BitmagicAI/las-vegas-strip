@@ -1,0 +1,55 @@
+{
+  "id": "psychic-sessions",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Psychic+Sessions+Las+Vegas+Boulevard",
+      "date": "2021-02",
+      "author": "Psychic Sessions",
+      "observed": "Owner sign photograph inspected: white main board with eye artwork, red text, flanking star and crescent panels and lower white projecting marquee."
+    },
+    {
+      "url": "https://psychicsessionsoflasvegas.com/pictures.html",
+      "observed": "Owner page inspected; neon palmistry and tarot signs and purple eye artwork. Interior-only photos provide no facade dimensions."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.092,-115.1725893,654a,75y,104.12h,90t/data=!3m7!1e1!3m5!1s66ESki4T-GgtmoKtY81jmQ!2e0",
+      "date": "2022-12",
+      "author": "GoogleStreetView",
+      "observed": "White stucco, blank upper parapet, cornice dentils, two entry doors and flanking storefront windows, south half rooftop sign and projecting marquee. Only date available at selected panorama."
+    }
+  ],
+  "remaining": [
+    "Weathered paint and poster/sign graphics approximate",
+    "Unseen side/rear service details inferred",
+    "No interior authored",
+    "Sign artwork is a simplified geometric reconstruction",
+    "Offsite ground voids remain"
+  ],
+  "dimensions": "Mapped20x16m footprint;roof6.1m,marquee3.34m heights photoestimated.",
+  "implemented": [
+    "Mapped storefront with two doors, windows, cornice and parapet",
+    "Eye/star/crescent sign geometry and projecting marquee",
+    "Forecourt and side/rear service facades"
+  ],
+  "validation": {
+    "support": "155 floor/headroom checks passed",
+    "walking": "6 legs in both directions passed",
+    "visual": "Three installed views inspected;front rechecked after correcting boarded panel and window lettering sides",
+    "performance": "Fixed aerial960x540ultra16.6ms p50/19.3ms p95;notroutebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/psychic-sessions-final/psychic-front.png",
+    "build/city-exteriors/psychic-sessions-final/psychic-sign.png",
+    "build/city-exteriors/psychic-sessions-final/psychic-aerial.png",
+    "build/city-exteriors/psychic-sessions-collision.json",
+    "build/city-exteriors/psychic-sessions-walk.json",
+    "build/city-exteriors/psychic-sessions-ownership-audit.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/psychicSessions-exterior.glb": "5b9d6b5d179505038d0c7e2183fe9ee8e2295ad632335116469e5fb99a88bb95",
+      "build/strip-landmarks/psychicSessions-exterior-collision.json": "f1ed00956479013d6ade3bd9d690a00a067bb34fdddc3e081f96ff45a16825df"
+    }
+  }
+}

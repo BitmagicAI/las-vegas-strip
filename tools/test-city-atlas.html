@@ -1,0 +1,27 @@
+<!doctype html><meta charset="utf-8"><title>City atlas gutter regression</title>
+<style>body{background:#18202b;color:white;font:18px system-ui}canvas{width:512px;image-rendering:pixelated}</style>
+<h1>City atlas gutter regression</h1><pre id="result">Running…</pre>
+<script type="module">
+import * as THREE from 'three';
+import {makeCityAtlas} from '/src/work/CityAtlas.ts';
+try {
+ const source=document.createElement('canvas');source.width=source.height=32;
+ const ctx=source.getContext('2d');ctx.fillStyle='#234567';ctx.fillRect(0,0,32,32);
+ const map=new THREE.CanvasTexture(source);map.wrapS=map.wrapT=THREE.RepeatWrapping;
+ const atlas=makeCityAtlas([map,null]),canvas=atlas.texture.image,rect=atlas.rects.get(map);
+ document.body.append(canvas);const pixels=canvas.getContext('2d');
+ const [x,y,w,h]=rect.map((v,i)=>Math.round(v*(i%2?canvas.height:canvas.width)));
+ let checks=0;
+ // Inspect edges AND diagonals up to the full 32px gutter; these texels feed
+ // the lower mip levels and prevent white specks at repeat boundaries.
+ for(let yy=y-32;yy<y+h+32;yy++)for(let xx=x-32;xx<x+w+32;xx++){
+  const [r,g,b,a]=pixels.getImageData(xx,yy,1,1).data;
+  if(r!==35||g!==69||b!==103||a!==255)throw Error(`Contaminated gutter at ${xx},${yy}: ${r},${g},${b},${a}`);
+  checks++;
+ }
+ const blank=atlas.rects.get(null),[r,g,b]=pixels.getImageData(Math.round(blank[0]*canvas.width),Math.round(blank[1]*canvas.height),1,1).data;
+ if(r!==255||g!==255||b!==255)throw Error('Untextured material tile must remain white');
+ document.getElementById('result').textContent=JSON.stringify({passed:true,checks,whiteTile:true},null,2);
+ atlas.texture.dispose();map.dispose();
+} catch(e){document.getElementById('result').textContent='FAIL: '+e.stack;throw e;}
+</script>

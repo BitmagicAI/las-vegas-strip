@@ -1,0 +1,45 @@
+# Claiming a task (tasks/README.md): comment `/claim` on a task issue to be assigned, `/unclaim` to let it go.
+# GitHub lets anyone who has commented on an issue be assigned to it, so contributors need no write access.
+name: claim
+on:
+  issue_comment:
+    types: [created]
+permissions:
+  issues: write
+jobs:
+  claim:
+    if: >-
+      !github.event.issue.pull_request &&
+      contains(github.event.issue.labels.*.name, 'task') &&
+      (startsWith(github.event.comment.body, '/claim') || startsWith(github.event.comment.body, '/unclaim'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const MAX_CLAIMS = 2;
+            const { owner, repo } = context.repo;
+            const issue = context.payload.issue, who = context.payload.comment.user.login;
+            const say = (body) => github.rest.issues.createComment({ owner, repo, issue_number: issue.number, body });
+            const holders = issue.assignees.map((a) => a.login);
+            if (context.payload.comment.body.startsWith('/unclaim')) {
+              const perm = (await github.rest.repos.getCollaboratorPermissionLevel({ owner, repo, username: who })).data.permission;
+              if (!holders.includes(who) && !['admin', 'maintain', 'write'].includes(perm)) return say(`@${who} only the person working on this (or a maintainer) can release it.`);
+              if (holders.length) await github.rest.issues.removeAssignees({ owner, repo, issue_number: issue.number, assignees: holders });
+              await github.rest.issues.removeLabel({ owner, repo, issue_number: issue.number, name: 'claimed' }).catch(() => {});
+              return say('Released: this task is open for anyone again.');
+            }
+            if (issue.labels.some((l) => l.name === 'maintainers')) return say(`@${who} this one is for maintainers (it needs accounts or decisions outside the repository).`);
+            if (holders.length && !holders.includes(who)) return say(`@${who} this task is already being worked on by @${holders.join(', @')}. \`node tools/tasks/pick.mjs\` lists open ones.`);
+            if (holders.includes(who)) return;
+            const mine = await github.paginate(github.rest.issues.listForRepo, { owner, repo, state: 'open', labels: 'task', assignee: who, per_page: 100 });
+            if (mine.length >= MAX_CLAIMS) return say(`@${who} you already hold ${mine.length} tasks (${mine.map((i) => '#' + i.number).join(', ')}). Finish or \`/unclaim\` one first.`);
+            await github.rest.issues.addAssignees({ owner, repo, issue_number: issue.number, assignees: [who] });
+            await github.rest.issues.addLabels({ owner, repo, issue_number: issue.number, labels: ['claimed'] });
+            const id = (/^\[([a-z0-9-]+)\]/.exec(issue.title) || [])[1] || 'this-task';
+            return say([
+              `@${who} it's yours. Next steps:`,
+              `1. \`git switch -c task/${id}\` and read the brief: \`node tools/tasks/pick.mjs show ${id}\``,
+              `2. Open a **draft** pull request early with \`Closes #${issue.number}\` in its description; push at least every few days.`,
+              `3. A claim with no activity for 14 days gets a reminder, and is released after 21.`,
+            ].join('\n'));

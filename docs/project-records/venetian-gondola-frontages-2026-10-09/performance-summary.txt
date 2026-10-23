@@ -1,0 +1,13 @@
+canal                     60 fps  cpu 7.3  gpu 7.76/9.76  draws 175  tris 5548512  lights {"AmbientLight":1,"HemisphereLight":1,"PointLight":43,"DirectionalLight (shadow)":1}
+      gpu   3.29 ms x1 output 1280x720
+      gpu    2.1 ms x1 screen
+      gpu   1.83 ms x0.5 Lake mirror 640x360
+      gpu   0.22 ms x1 ShadowMap 4096x4096
+harrahs                   60 fps  cpu 6.3  gpu 6.1/7.83  draws 335  tris 3773411  lights {"AmbientLight":1,"HemisphereLight":1,"PointLight":43,"DirectionalLight (shadow)":1}
+      gpu   3.96 ms x1 output 1280x720
+      gpu   1.96 ms x1 screen
+      gpu   0.32 ms x1 ShadowMap 4096x4096
+linq                      60 fps  cpu 7.6  gpu 15.64/16.75  draws 485  tris 4568409  lights {"AmbientLight":1,"HemisphereLight":1,"PointLight":43,"DirectionalLight (shadow)":1}
+      gpu   8.17 ms x1 output 1280x720
+      gpu   7.17 ms x1 screen
+      gpu   0.26 ms x1 ShadowMap 4096x4096

@@ -1,0 +1,70 @@
+{
+  "recordedAt": "2026-10-10T01:30:54.252434-07:00",
+  "sourceResolution": [
+    2880,
+    1620
+  ],
+  "outputResolution": [
+    1920,
+    1080
+  ],
+  "fps": 60,
+  "duration": 122.32,
+  "quality": "ultra",
+  "foliageDistanceScale": 2,
+  "shadowSetting": 192,
+  "filmFullDetail": true,
+  "subframes": 1,
+  "files": [
+    {
+      "path": "tools/film/takes/tour.json",
+      "sha256": "773e536ac1ba3c61111e4873f9150d267f10259c7df925f7051b9c82ccb7b624",
+      "bytes": 420202
+    },
+    {
+      "path": "tools/film/cuts/vegas-continuous-20261010-final.json",
+      "sha256": "271945ccdf573e28b0718bf3119f59306f01d7cee76f3f9cb53d757b95b0f682",
+      "bytes": 795
+    },
+    {
+      "path": "tools/film/record.mjs",
+      "sha256": "1fe82be4973b4fe82236bea23cfa38fbf4048441bd6ebfca3bbca91ec03b4bda",
+      "bytes": 16817
+    },
+    {
+      "path": "tools/film/build.py",
+      "sha256": "4f2829ece6002546735b239a7b7a5d0da83e4bad3f8959f542f0fcf373a244e6",
+      "bytes": 14705
+    },
+    {
+      "path": "src/work/film/Film.ts",
+      "sha256": "95e17659f00e52e163941e22a211e548645763f0c74f50f8f4f723a0cf0e5c30",
+      "bytes": 34909
+    },
+    {
+      "path": "src/work/CityLod.ts",
+      "sha256": "52fbbf8d394d7b1c59345ed8d204fdff31f4002d0eb7f34468eecaccc019c720",
+      "bytes": 11357
+    },
+    {
+      "path": "src/work/CityBatches.ts",
+      "sha256": "ee505fbb854e0227fb73ae4c3658d09356d816aec5cc8112ecbcb4ede0324d58",
+      "bytes": 23046
+    },
+    {
+      "path": "src/work/RealisticWater.ts",
+      "sha256": "5c10aa7f3fbcc4c4a841edb9a3b064ec302549787b8935becafb4ebeaeabbcae",
+      "bytes": 18356
+    },
+    {
+      "path": ".bitmagic/film/music/bed-v1.mp3",
+      "sha256": "ee3a9df6a9a041856c824cdaf548c438ce606502017040d688b6f291b7e926b1",
+      "bytes": 2400802
+    },
+    {
+      "path": "tools/film/brand/bitmagic-logo-white.png",
+      "sha256": "a5c22cccc98818fc221700093c63027ef719a2b9b22ba580eecd88803c6117ec",
+      "bytes": 12860
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "fire-station-11",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Clark+County+Fire+Station+11+Las+Vegas",
+      "author": "Philipp Asum",
+      "date": "2022-09",
+      "observed": "Exterior photo seen: tall red 11 marker, gray-beige stucco, thin entrance canopy, palms and gravel landscaping."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0831945,-115.1729281,663a,75y,265h,90t/data=!3m7!1e1!3m5!1s4sySApTONTCvEwdaemwdMg!2e0",
+      "date": "2025-02",
+      "observed": "Street View inspected: three closed east-facing apparatus bays, large curved driveway, gravel front yard and bollards."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0833133,-115.1738479,100m/data=!3m1!1e3",
+      "observed": "Satellite seen: central curved roof, southern flat apparatus wing, northern public parking and west service yard."
+    }
+  ],
+  "dimensions": "Mapped1005m2 footprint retained; office5.2m,curvedroof6.8m,bayroof6m,redmarker11.95m estimated.",
+  "remaining": [
+    "Detailed landscaping and flag fabric pending",
+    "Exact bay dimensions and roof heights estimated",
+    "Unseen rear service details inferred",
+    "No interiors or fire vehicles authored",
+    "Fine roof ribs alias at distant view; landscape not complete"
+  ],
+  "implemented": [
+    "Mapped exterior with three east apparatus doors",
+    "Curved ribbed roof, red11marker and entrance canopy",
+    "Vehicle apron, gravel forecourt and bollards"
+  ],
+  "validation": {
+    "support": "201 floor/headroom checks passed",
+    "walking": "7 legs both directions passed",
+    "visual": "Three installed views inspected;roof material rechecked in aerial",
+    "performance": "Fixed aerial960x540ultra16.7ms p50/18ms p95;notroutebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/fire-station-11-final/fire-front.png",
+    "build/city-exteriors/fire-station-11-final/fire-entry.png",
+    "build/city-exteriors/fire-station-11-final/fire-aerial.png"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/fireStation11-exterior.glb": "2f1ab9d987c3c106297a159ba09757221991c2a081c87fd68c50b328b3cc3d76",
+      "build/strip-landmarks/fireStation11-exterior-collision.json": "be96778409e46739efc02063cdc1b871bb69e33643808c7cdb4156017191787f"
+    }
+  }
+}

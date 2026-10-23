@@ -1,0 +1,16 @@
+{
+  "removedRenderNodes": [
+    "VIS_outside_outside_rx_bronze_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_chalk_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_concrete_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_dark_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_gold_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_nightglass_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_pink_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_screen_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_steel_planet-hollywood_planet-hollywood",
+    "VIS_outside_outside_rx_warmneon_planet-hollywood_planet-hollywood"
+  ],
+  "retained": "Every interior and shell node, collider, road and landscape. Existing tower collision and guest datum retained.",
+  "backup": "build/city-exteriors/before/detailed.glb"
+}

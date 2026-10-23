@@ -1,0 +1,29 @@
+{
+  "mappedIds": [
+    "way/402543937"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.117626,-115.171618&zoom=21&basemap=satellite",
+      "review": "Inspected polygonal upper patio with tables, reddish lower pergola to south/east; adjoining restaurant lies within way402543936."
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5c77155f8dfc8c8d53625304/1741320552024-9M28Z21VR6R9OTA77A2M/Chayo%2BRooftop%2BPatio%2B2.jpg",
+      "provider": "Chayo official private-events photos",
+      "review": "Inspected pale tiled upper patio, white horizontal rail, black metal chairs with tan slats, pale tables, black posts with orange bands and greenish sloped canopy glazing."
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5c77155f8dfc8c8d53625304/1741320540560-ULXUNNNC8XES3DFKM3GT/Chayo%2BEntrance.jpg",
+      "provider": "Chayo official private-events photos",
+      "review": "Inspected lower timber pergola with red fabric, black perimeter bars, planting and open central access."
+    }
+  ],
+  "estimates": {
+    "upperDeckM": 4.7,
+    "lowerPergolaM": 3.5
+  },
+  "remaining": [
+    "Actual indoor stair connection cannot be verified by exterior photos. Retain as unresolved; no invented public stair.",
+    "Parent promenade shops remain simplified."
+  ]
+}

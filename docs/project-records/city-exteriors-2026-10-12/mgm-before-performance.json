@@ -1,0 +1,98 @@
+[
+ {
+  "name": "mgm-aerial",
+  "eye": [
+   -90,
+   190,
+   1800
+  ],
+  "target": [
+   285,
+   30,
+   1480
+  ],
+  "p50": 16.600000143051147,
+  "p95": 17.90000009536743,
+  "render": {
+   "calls": 1782,
+   "frameCalls": 3,
+   "drawCalls": 562,
+   "triangles": 4913696,
+   "points": 100,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "name": "mgm-strip",
+  "eye": [
+   20,
+   6,
+   1580
+  ],
+  "target": [
+   130,
+   14,
+   1580
+  ],
+  "p50": 16.59999990463257,
+  "p95": 17.799999952316284,
+  "render": {
+   "calls": 2529,
+   "frameCalls": 3,
+   "drawCalls": 91,
+   "triangles": 1120036,
+   "points": 100,
+   "lines": 0,
+   "timestamp": 0
+  }
+ },
+ {
+  "name": "mgm-arrival",
+  "eye": [
+   430,
+   7,
+   1680
+  ],
+  "target": [
+   425,
+   8,
+   1590
+  ],
+  "p50": 16.700000047683716,
+  "p95": 17.5,
+  "render": {
+   "calls": 3276,
+   "frameCalls": 3,
+   "drawCalls": 711,
+   "triangles": 6053134,
+   "points": 100,
+   "lines": 896,
+   "timestamp": 0
+  }
+ },
+ {
+  "name": "mgm-north",
+  "eye": [
+   65,
+   6,
+   1390
+  ],
+  "target": [
+   178,
+   12,
+   1385
+  ],
+  "p50": 16.699999809265137,
+  "p95": 18.200000047683716,
+  "render": {
+   "calls": 4026,
+   "frameCalls": 3,
+   "drawCalls": 80,
+   "triangles": 1203738,
+   "points": 100,
+   "lines": 0,
+   "timestamp": 0
+  }
+ }
+]

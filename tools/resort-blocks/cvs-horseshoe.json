@@ -1,0 +1,69 @@
+{
+  "id": "cvs-horseshoe",
+  "name": "CVS Horseshoe Strip frontage",
+  "status": "refinement-deferred",
+  "scope": "Western storefront of mapped543422869 only; eastern mapped podium remains to audit",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11335,-115.17202&zoom=19&basemap=satellite",
+      "provider": "Google Maps satellite",
+      "accessed": "2026-10-21",
+      "establishes": "CVS west of Versailles tower; service roof and west screen footprint. Capture date unavailable."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.11331,-115.17278&heading=90&pitch=8",
+      "provider": "STEP BY STEP3D / Google Maps",
+      "imageDate": "2022-09",
+      "establishes": "Horizontal silver screen, large whiteCVS letters, red angledreturns, darkglazing and whitefascia"
+    }
+  ],
+  "uncertainties": [
+    "8.2mheight and68measterncutworldX estimated from satellite/photo",
+    "2022branding may havechanged",
+    "No interiorgenerated",
+    "Mapped parkingstructure easternextent requires separateaudit"
+  ],
+  "beforeViews": "build/city-exteriors/horseshoe-drive-before",
+  "installedReview": {
+    "captures": "build/city-exteriors/cvs-horseshoe-final",
+    "viewsInspected": [
+      "horseshoe-drive",
+      "horseshoe-drive-east",
+      "cvs-street"
+    ],
+    "triangles": 2128,
+    "batches": 11,
+    "optimizedMiB": 0.36,
+    "tests": [
+      "468 roofsupport PASS",
+      "6 sidewalklegs bothdirections PASS",
+      "npm run check PASS"
+    ],
+    "ownership": "164 mapped visual/collision triangles clipped atx68; easternpartsretained",
+    "remaining": [
+      "Exactscreenperforation,logoaspectandfasciabranding need refinement",
+      "Roof/serviceheights and rearfa\u00e7ade inferred",
+      "No interior or entrance routing claim",
+      "Pre-existing groundgap at38,314 confirmed bothbackup/currentcollisions; notchanged",
+      "Easternpartof543422869 remains needs-visual-audit"
+    ],
+    "performance": {
+      "log": "build/city-exteriors/cvs-horseshoe-performance.json",
+      "caveat": "Static960x540 samples,notroutebenchmark"
+    }
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/cvsHorseshoe-exterior.glb": "0ff7132b301e1697e7f4d6a363aa7443e090bf10e0887e1e28e9121a87abe973",
+      "build/strip-landmarks/cvsHorseshoe-exterior-collision.json": "c2f808415bdc36e902a8e42e30bbb7653678bc41ef7708a70054ac8c6076c37e"
+    }
+  },
+  "eastAudit20261021": {
+    "aerial": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11335,-115.17202&zoom=20&basemap=satellite",
+    "observation": "Visually inspected satellite: CVS occupies separate western roof. Gap/service access between shop and taller Versailles structure. Mapped eastern footprint is narrow apron/podium strips bordering tower, not a second CVS shop. Date unknown; tower has construction in imagery.",
+    "photo": "https://lasvegasthenandnow.com/wp-content/uploads/2024/07/Versailles-Tower-at-Paris-1200x900.jpg",
+    "photoObservation": "Visually inspected south tower photo during renovation. Lower podium mostly occluded by Paris architecture; cannot establish lower frontage details.",
+    "rejectedStreetView": "36.11318,-115.1719 resolved to unrelated Lony Brown May2016 indoor performance room, not accepted as exterior reference.",
+    "next": "Inspect installed east apron and service gap before replacement; keep uncertain heights and loading openings explicit."
+  }
+}

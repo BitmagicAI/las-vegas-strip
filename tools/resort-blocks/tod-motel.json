@@ -1,0 +1,35 @@
+{
+  "id": "tod-motel",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.152889,-115.1514618,620a,90y,270h,90t/data=!3m7!1e1!3m5!1sNrXqYGACvFUsQrkj59r3Dw!2e0",
+      "imageDate": "January 2026",
+      "observed": "Street View visually inspected: boarded three-storey dark blue-gray street wing, thin sloping entry canopy on piers, old TOD MOTOR MOTEL sign with V supports. Low courtyard wing visible, exact height uncertain."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.15319,-115.15168,112m/data=!3m1!1e3",
+      "observed": "Satellite U footprint and courtyard inspected."
+    }
+  ],
+  "remaining": [
+    "Rear-wing height estimated3.65m; front10.1m estimated",
+    "Rear elevation rhythm inferred; no operating/interior claim",
+    "Weathering and sign artwork need refinement",
+    "Palm trees, facade weathering and finer sign shape not yet reproduced",
+    "Paving partly meets retained mapped sidewalk; no whole-lot surface survey"
+  ],
+  "evidence": {
+    "views": "build/city-exteriors/tod-motel-final",
+    "support": "build/city-exteriors/tod-motel-collision.json",
+    "walk": "build/city-exteriors/tod-motel-walk.json",
+    "ownership": "build/city-exteriors/tod-motel-ownership-audit.json",
+    "visualReview": "All three installed views inspected, canopy edge closure and two-sided sign corrected; courtyard and aerial rechecked. 434 support/headroom samples, six walking legs passed. 130 original building visual/collision triangles replaced. Static960x540 p95~17.3ms, not route benchmark."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/todMotel-exterior.glb": "33270d6fcaa50abb10bed9819cb0cc0d863b7bc8ee99db8e4f908ad501bf2b0f",
+      "build/strip-landmarks/todMotel-exterior-collision.json": "0438eede390c39d40fe84a38ba857cc8a890e27fba0258406ff22dbdc2a42266"
+    }
+  }
+}

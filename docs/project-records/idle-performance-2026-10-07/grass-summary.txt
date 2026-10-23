@@ -1,0 +1,11 @@
+IDLE PROBE grass viewport 1505x772 @2 canvas 3010x1544 timestamps=false
+foliage-on                 26.8 fps | interval ms p50 33.3 p90 100.0 max 150.1 | cpu ms p50 13.5 p90 103.9 | gpu ms p50 undefined p90 undefined max undefined | draws 473 tris 9595723
+      JS heap 4745 -> 4741 MB (total 4853 MB)
+grass-near-hidden          39.7 fps | interval ms p50 16.7 p90 50.0 max 133.3 | cpu ms p50 13.4 p90 14.8 | gpu ms p50 undefined p90 undefined max undefined | draws 467 tris 8774923
+      JS heap 4744 -> 4742 MB (total 4855 MB)
+grass-far-hidden           31.5 fps | interval ms p50 16.7 p90 83.3 max 150.0 | cpu ms p50 13.5 p90 78.5 | gpu ms p50 undefined p90 undefined max undefined | draws 467 tris 9536195
+      JS heap 4744 -> 4751 MB (total 4857 MB)
+grass-unlit                39.7 fps | interval ms p50 16.7 p90 66.6 max 83.4 | cpu ms p50 12.2 p90 81.0 | gpu ms p50 undefined p90 undefined max undefined | draws 473 tris 9595723
+      JS heap 4751 -> 4743 MB (total 4857 MB)
+no-grass                   41.7 fps | interval ms p50 16.7 p90 33.4 max 133.4 | cpu ms p50 12.1 p90 13.4 | gpu ms p50 undefined p90 undefined max undefined | draws 461 tris 8715395
+      JS heap 4747 -> 4753 MB (total 4858 MB)

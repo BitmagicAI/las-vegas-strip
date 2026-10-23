@@ -1,0 +1,4 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import R from '@dimforge/rapier3d-compat';
+await R.init();const w=new R.World({x:0,y:-9.81,z:0});const c=JSON.parse(fs.readFileSync('build/strip-landmarks/wynnEncoreExterior-exterior-collision.json'));w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));w.step();const failures=[];let samples=0;
+for(let x=554;x<=568;x+=2)for(let z=-1234;z<=-1226;z+=2){samples++;const hit=w.castRay(new R.Ray({x,y:1,z},{x:0,y:1,z:0}),10,true);if(!hit||Math.abs(hit.timeOfImpact-6.2)>.02)failures.push({x,z,clearance:hit?.timeOfImpact});}
+const report={samples,failures,scope:'Clear 6.2m above a 1m-high point within the west canopy driveway; not a full arrival route certification.'};w.free();fs.writeFileSync('build/city-exteriors/wynn-canopy-test.json',JSON.stringify(report,null,2));console.log(report);assert.equal(failures.length,0);

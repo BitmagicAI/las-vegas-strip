@@ -1,0 +1,260 @@
+{
+ "viewport": [
+  1505,
+  772
+ ],
+ "dpr": 2,
+ "results": [
+  {
+   "view": "corridor-caesars",
+   "tower": "caesars-palace",
+   "floor": 3,
+   "room": null,
+   "roomView": "corridor",
+   "placed": {
+    "x": -406,
+    "y": 10.9,
+    "z": -41.8
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 3.6,
+   "gpuP50": 8.94,
+   "gpuP90": 9.12,
+   "draws": 160,
+   "triangles": 54174,
+   "passes": [
+    [
+     "screen",
+     4.51,
+     1
+    ],
+    [
+     "output 3010x1544",
+     4.35,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.07,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 41.1,
+     "gpuP50": 55.58,
+     "cpuP50": 3.5
+    }
+   }
+  },
+  {
+   "view": "jeep-west",
+   "tower": "at:-60,0.4,540,3.1416,-0.1",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -60,
+    "y": 0.4,
+    "z": 540
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.3,
+   "gpuP50": 8.98,
+   "gpuP90": 11.08,
+   "draws": 363,
+   "triangles": 10031672,
+   "passes": [
+    [
+     "output 3010x1544",
+     4.88,
+     1
+    ],
+    [
+     "screen",
+     2.99,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.88,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 11.6,
+     "gpuP50": 192.31,
+     "cpuP50": 8.2
+    }
+   }
+  },
+  {
+   "view": "garden",
+   "tower": "at:-60,0.4,540,1.5708,0",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -60,
+    "y": 0.4,
+    "z": 540
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.9,
+   "gpuP50": 14.75,
+   "gpuP90": 16.71,
+   "draws": 296,
+   "triangles": 10306673,
+   "passes": [
+    [
+     "output 3010x1544",
+     8.16,
+     1
+    ],
+    [
+     "screen",
+     4.74,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.73,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 8.2,
+     "gpuP50": 245.65,
+     "cpuP50": 8.3
+    }
+   }
+  },
+  {
+   "view": "trees",
+   "tower": "at:-120,0.4,470,0.8,-0.05",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": -120,
+    "y": 0.4,
+    "z": 470
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 6.1,
+   "gpuP50": 26.7,
+   "gpuP90": 28.08,
+   "draws": 272,
+   "triangles": 14719567,
+   "passes": [
+    [
+     "output 3010x1544",
+     13.6,
+     1
+    ],
+    [
+     "screen",
+     8.55,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     1.53,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 11.6,
+     "gpuP50": 174.99,
+     "cpuP50": 7.1
+    }
+   }
+  },
+  {
+   "view": "strip-n",
+   "tower": "at:0,0.4,300,3.1416,0.05",
+   "floor": 0,
+   "room": null,
+   "roomView": null,
+   "placed": {
+    "x": 0,
+    "y": 0.4,
+    "z": 300
+   },
+   "fps": 60,
+   "intervalP50": 16.7,
+   "intervalP90": 16.7,
+   "cpuP50": 5.7,
+   "gpuP50": 10.01,
+   "gpuP90": 10.35,
+   "draws": 313,
+   "triangles": 6244281,
+   "passes": [
+    [
+     "output 3010x1544",
+     6.55,
+     1
+    ],
+    [
+     "screen",
+     2.62,
+     1
+    ],
+    [
+     "ShadowMap 4096x4096",
+     0.59,
+     1
+    ]
+   ],
+   "lights": {
+    "AmbientLight": 1,
+    "HemisphereLight": 1,
+    "PointLight": 43,
+    "DirectionalLight (shadow)": 1
+   },
+   "ablations": {
+    "interior-full-lights+movers-full-lights+foliage-full-lights": {
+     "fps": 60,
+     "gpuP50": 9.49,
+     "cpuP50": 6
+    }
+   }
+  }
+ ],
+ "errors": []
+}

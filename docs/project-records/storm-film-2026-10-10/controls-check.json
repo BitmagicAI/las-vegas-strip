@@ -1,0 +1,51 @@
+{
+  "before": {
+    "environment": "9c06afb5-e98d-498f-bcb7-8aab6d4da010",
+    "exposure": 0.9
+  },
+  "playing": {
+    "state": {
+      "active": true,
+      "time": 1.6667999999523175,
+      "pose": {
+        "x": 421.05556888888407,
+        "y": 0.165,
+        "z": 879,
+        "fx": 1,
+        "fy": 0,
+        "fz": 6.123233995736766e-17,
+        "speed": 0.09999999871999732
+      },
+      "impacts": 0,
+      "impactTimes": [],
+      "ragdolls": 0,
+      "peakRagdolls": 0,
+      "preset": {
+        "daylight": "day",
+        "weather": "clear",
+        "rain": 0,
+        "wetness": 0,
+        "neon": 4,
+        "population": 0,
+        "seed": 1010
+      }
+    },
+    "saved": {
+      "daylight": "day",
+      "weather": "clear",
+      "rain": 0,
+      "wetness": 0,
+      "neon": 4,
+      "population": 0,
+      "seed": 1010
+    }
+  },
+  "after": {
+    "environment": "9c06afb5-e98d-498f-bcb7-8aab6d4da010",
+    "exposure": 0.9,
+    "active": false,
+    "car": false,
+    "people": 0
+  },
+  "errors": 0
+}

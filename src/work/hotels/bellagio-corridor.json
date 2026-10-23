@@ -1,0 +1,253 @@
+{
+ "format": "bitmagic-mesh-level",
+ "version": 1,
+ "units": "meters",
+ "colliders": [
+  {
+   "name": "continuous ripple carpet floor",
+   "shape": "box",
+   "position": [
+    0.0,
+    -0.09,
+    0.0
+   ],
+   "size": [
+    3.8,
+    0.18,
+    6.0
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "corridor structural ceiling",
+   "shape": "box",
+   "position": [
+    0.0,
+    3.5,
+    0.0
+   ],
+   "size": [
+    3.8,
+    0.2,
+    6.0
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "projecting wallpaper pier",
+   "shape": "box",
+   "position": [
+    -1.7,
+    1.7,
+    -2.0
+   ],
+   "size": [
+    0.5,
+    3.4,
+    2.0
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "projecting wallpaper pier 5",
+   "shape": "box",
+   "position": [
+    -1.7,
+    1.7,
+    2.0
+   ],
+   "size": [
+    0.5,
+    3.4,
+    2.0
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "recessed door jamb wall",
+   "shape": "box",
+   "position": [
+    -1.85,
+    1.7,
+    -0.825
+   ],
+   "size": [
+    0.2,
+    3.4,
+    0.35
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "recessed door jamb wall 9",
+   "shape": "box",
+   "position": [
+    -1.85,
+    1.7,
+    0.825
+   ],
+   "size": [
+    0.2,
+    3.4,
+    0.35
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "recessed door header",
+   "shape": "box",
+   "position": [
+    -1.85,
+    3.025,
+    0.0
+   ],
+   "size": [
+    0.2,
+    0.75,
+    1.3
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "projecting wallpaper pier 29",
+   "shape": "box",
+   "position": [
+    1.7,
+    1.7,
+    -2.0
+   ],
+   "size": [
+    0.5,
+    3.4,
+    2.0
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "projecting wallpaper pier 32",
+   "shape": "box",
+   "position": [
+    1.7,
+    1.7,
+    2.0
+   ],
+   "size": [
+    0.5,
+    3.4,
+    2.0
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "recessed door jamb wall 35",
+   "shape": "box",
+   "position": [
+    1.85,
+    1.7,
+    -0.825
+   ],
+   "size": [
+    0.2,
+    3.4,
+    0.35
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "recessed door jamb wall 36",
+   "shape": "box",
+   "position": [
+    1.85,
+    1.7,
+    0.825
+   ],
+   "size": [
+    0.2,
+    3.4,
+    0.35
+   ],
+   "yaw": 0.0
+  },
+  {
+   "name": "recessed door header 37",
+   "shape": "box",
+   "position": [
+    1.85,
+    3.025,
+    0.0
+   ],
+   "size": [
+    0.2,
+    0.75,
+    1.3
+   ],
+   "yaw": 0.0
+  }
+ ],
+ "volumes": [
+  {
+   "name": "guest corridor",
+   "position": [
+    0.0,
+    1.5,
+    0.0
+   ],
+   "size": [
+    2.8,
+    3.0,
+    5.6
+   ],
+   "yaw": 0.0,
+   "tags": [
+    "indoors",
+    "corridor",
+    "unroofed"
+   ]
+  }
+ ],
+ "landmarks": [
+  {
+   "name": "spawn",
+   "position": [
+    0.0,
+    0.025,
+    0.0
+   ],
+   "yaw": 0.0,
+   "tags": []
+  }
+ ],
+ "lights": [
+  {
+   "name": "warm ceiling pool -1.5",
+   "type": "point",
+   "position": [
+    0.0,
+    2.86,
+    -1.5
+   ],
+   "color": "#ffebce",
+   "intensity": 10,
+   "distance": 6,
+   "decay": 2.0
+  },
+  {
+   "name": "warm ceiling pool 1.5",
+   "type": "point",
+   "position": [
+    0.0,
+    2.86,
+    1.5
+   ],
+   "color": "#ffebce",
+   "intensity": 10,
+   "distance": 6,
+   "decay": 2.0
+  }
+ ],
+ "extras": {
+  "links": [],
+  "stairs": [],
+  "doors": []
+ }
+}

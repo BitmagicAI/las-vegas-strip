@@ -1,0 +1,114 @@
+{
+  "id": "circus-circus",
+  "status": "refinement-deferred",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1364,-115.1628,700a,450d,35y,270h,55t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09\u20132024-03-05",
+      "establishes": "Mapped oval striped casino roof with elongated ridge, front canopy, pale/pink tower elevations, pink Adventuredome, blue-trimmed neighboring motel."
+    },
+    {
+      "url": "https://www.circuscircus.com/",
+      "provider": "Circus Circus",
+      "establishes": "Current resort identity and pink Adventuredome."
+    },
+    {
+      "url": "https://ucarecdn.com/330c007e-5bf3-4285-b34e-b0c3a061ada9/",
+      "inspected": true,
+      "notes": "Slots entrancegroundphoto: darkframedglass,layered cream fascia,lit signbands; graphicart not copied"
+    },
+    {
+      "url": "https://y.cdrst.com/foto/hotel-sf/14c60/granderesp/travelodge-by-wyndham-las-vegas-general-128e1e39.jpg",
+      "inspected": true,
+      "notes": "Courtphoto: bluefence, lawn,courtlandscape. Does not establish roomfacade"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13743,-115.1630,645a,170d,35y,270h,65t,0r",
+      "inspected": true,
+      "notes": "Earth2022-11-09:two-storeyUplanmotel,whiteouterwallswithsmallwindows,blueinnergalleries,pool"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.13595,-115.1630,645a,160d,35y,270h,65t,0r",
+      "inspected": true,
+      "notes": "Earth2022\u201324:McDonaldsyellowpitchedfronteasternroof/flatservices,glazedwalls;Slotswhite/goldlayeredcornice andcanopy"
+    }
+  ],
+  "components": [
+    {
+      "id": "towers",
+      "status": "pending"
+    },
+    {
+      "id": "casino",
+      "status": "pending"
+    },
+    {
+      "id": "adventuredome",
+      "status": "pending"
+    },
+    {
+      "id": "garages",
+      "status": "pending"
+    },
+    {
+      "id": "roadside-buildings",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Exact arrival sculpture/signage and landscaping; no new prop assets installed.",
+    "Public deck/interior circulation unchanged; added canopy is exterior geometry only.",
+    "Tower fine facade and dome glazing fidelity remain approximate.",
+    "Motel court planting,furniture,fence and pool geometry approximate; precise elevations and tenantgraphicart unfinished",
+    "Gallerydoor interiors unchanged; exteriorstairraychecks not full character walkthrough",
+    "Drive-through and full-site route performance not yet established. Earlier Play detection failures retained; final CLI verify passed."
+  ],
+  "estimates": {
+    "tentRidgeM": 20,
+    "domeRiseM": 34,
+    "canopyM": 5.8,
+    "windowSpacingM": [
+      3.25,
+      2.8
+    ],
+    "note": "Photographic estimates, not survey measurements; tower heights and plans retained."
+  },
+  "evidence": [
+    "build/city-exteriors/circus-circus-after",
+    "build/city-exteriors/circus-circus-final",
+    "build/city-exteriors/circus-frontage-before",
+    "build/city-exteriors/circus-frontage-after",
+    "build/city-exteriors/circus-frontage-reviewed",
+    "build/city-exteriors/circus-entry-reviewed",
+    "docs/project-records/city-exteriors-2026-10-12/verify-circus-entry-reviewed.log"
+  ],
+  "review": "Five baseline and five after views inspected. Four final frontage views and corrected outside casino view reviewed. Last installed entrance image inspected: removed decorative arch posts crossing the doors. Existing ground layout remains approximate.",
+  "geometry": {
+    "triangles": 126861,
+    "batches": 61,
+    "compressedMiB": 3.4,
+    "collision": "Existing city cores retained; new gallery floors, stairs, rails and canopy boundaries are simple static triangle collision."
+  },
+  "performance": {
+    "medianMs": "16.6\u201316.7",
+    "p95Ms": "17.6\u201317.9",
+    "limitation": "Fixed cameras only; original west view invalid.",
+    "finalEntrance": {
+      "p50Ms": 16.6,
+      "p95Ms": 18.4,
+      "viewport": "1280x720",
+      "quality": "ultra",
+      "scope": "180 stationary frames; not driving performance"
+    }
+  },
+  "currentPass": "Final installed entrance reviewed; 432 route checks and typecheck PASS; CLI verify PASS55fps playing3011 bodies (startup only).",
+  "frontageBaseline": "Five installed views inspected: one giant window row on two-storey motel, generic strips on Slots and McDonalds, incorrect PBR striped flatroof.",
+  "frontageTests": "432 stair+galleryfloor/headroom rays PASS; typecheckPASS. Fixedviewpre-final4validviews p50 16.6\u201316.7ms p95 17.4\u201317.5ms at1280x720Ultra; no driving claim.",
+  "fingerprints": {
+    "build/optimized/build/strip-landmarks/circusExterior-exterior.glb": "340b294fecd42252726b0da0f94d5819cc6aa1f5a00f4c6834ed00c5c9e5aff1",
+    "tools/strip-landmarks/circus_circus.py": "58fdfc5213e3e59c0e6aa780171d7f9d68a946b1154399d90722b02e398639e7",
+    "tools/strip-landmarks/circus_frontage.py": "eae4003624b4acae07d7e808075e7f759fe20d77102a7bf052946994f8dc488d",
+    "src/work/PbrDetailSets.ts": "6d32ef81443f914f5051979892e96df2c55e2d56dfac4e1cecea537ec4aa23d7"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "akita-plaza",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Sayulitas+Las+Vegas+Boulevard",
+      "observed": "Listing3999S LasVegasBlvd,AkitaPlaza. GoogleStreetView6FourSeasonsDr February2025 inspected: McDonalds southendburgundy upperwall withgrayribs,creamfrontglazedbays,continuousstripfrontnorth,tenantpylonMcDonalds/PandaExpress/LiquorOutlet/Sayulitas/JFBakery. RestaurantinteriorphotoAug2026seenbutnotusedexterior."
+    },
+    {
+      "url": "https://images1.cityfeet.com/i2/mG0HV6Qi5IWQdleLOo-L5P9YKfg5P4rVm4tc9J6lTGI/110/3999-s-las-vegas-blvd-las-vegas-photo-4-of-6.jpg",
+      "observed": "Inspected broker front photo: northern Panda Express hip roof, central Clubwear gable, cream square piers and glazed storefronts. Undated/older tenants conflict with Feb2025 Street View; permanent architecture used, tenant boundaries estimated."
+    }
+  ],
+  "remaining": [
+    "Planting and northern billboard absent",
+    "Tenant boundary and lettering proportions remain estimated; brand graphics approximate",
+    "Storefront interiors not authored",
+    "Surrounding off-site terrain gaps remain",
+    "Facade weathering and smaller street furniture need refinement"
+  ],
+  "dimensions": {
+    "footprint": "way/180250509 mapped T-plan",
+    "heightEstimateM": 5.45,
+    "roofPeakEstimateM": 8.32,
+    "tenantBoundaries": "Estimated; mixed-date references, not measured."
+  },
+  "implemented": [
+    "Mapped T-plan retail block, articulated storefronts, north hip roof, central gable, southern drive-through",
+    "Pylon, rooftop equipment, parking and walkway",
+    "Removed25 duplicate mapped building and matching collision triangles"
+  ],
+  "validation": {
+    "support": "116 floor/headroom checks passed",
+    "walking": "6legs each direction passed using engine controller settings",
+    "visual": "Three installed views inspected; south/front rechecked after roof/fascia correction",
+    "performance": "960x540 ultra fixed aerial16.7ms p50/18.7ms p95, not fullroutebenchmark"
+  },
+  "evidence": [
+    "build/city-exteriors/akita-plaza-final/akita-front.png",
+    "build/city-exteriors/akita-plaza-final/akita-south.png",
+    "build/city-exteriors/akita-plaza-final/akita-aerial.png",
+    "build/city-exteriors/akita-plaza-collision.json",
+    "build/city-exteriors/akita-plaza-walk.json",
+    "build/city-exteriors/akita-plaza-ownership-audit.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/akitaPlaza-exterior.glb": "ac2bc5b494dbc0bcc237dabee5a5d8621d428fefc28cbd6c2e7a7cce2160d58a",
+      "build/strip-landmarks/akitaPlaza-exterior-collision.json": "aceed3f8d7725b79c73b6feb55e7f69e3d1b4d8450c0ca6025e0dff486c8e0e6"
+    }
+  }
+}

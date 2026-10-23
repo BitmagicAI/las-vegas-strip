@@ -1,0 +1,30 @@
+{
+ "lighting": "EngineLighting",
+ "mesh": "",
+ "materialsSwitched": 343,
+ "fixed": {
+  "fps": 60.3,
+  "pipelinesPerSec": 0,
+  "shader": {
+   "chars": 59775,
+   "lines": 1402,
+   "loops": 0,
+   "uniformBuffers": 2
+  }
+ },
+ "unfixed1": {
+  "fps": 60,
+  "pipelinesPerSec": 0
+ },
+ "unfixed2": {
+  "fps": 60,
+  "pipelinesPerSec": 0,
+  "shader": {
+   "chars": 40493,
+   "lines": 1031,
+   "loops": 4,
+   "uniformBuffers": 3
+  }
+ },
+ "pipelinesTotal": 73
+}

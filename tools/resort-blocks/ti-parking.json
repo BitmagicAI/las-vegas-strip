@@ -1,0 +1,89 @@
+{
+  "id": "ti-parking",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/111367820",
+    "way/403004627",
+    "way/33992535"
+  ],
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1243,-115.17625,650a,350d,35y,90h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1246,-115.1741,635a,240d,35y,200h,65t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1244,-115.1741,735a,270d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1231,-115.17205,640a,270d,35y,70h,60t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1231,-115.17205,720a,230d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "imagery": "2022-11-09",
+      "accessed": "2026-10-13",
+      "inspected": true
+    },
+    {
+      "url": "https://treasureisland.com/amenities/guest-services",
+      "establishes": "Seven guest parking levels; clearance 8ft1in to level2,6ft10in above"
+    },
+    {
+      "url": "https://cdn.craft.cloud/e5c2b9ea-b8f1-4463-86d9-face683786c7/assets/Property-Map-Brochure_Nov2025.pdf",
+      "establishes": "Guest bridge/escalator connection on casino northwest"
+    }
+  ],
+  "dimensions": "Guest roof17.94m, western roof3.64m and southern roof9.24m estimated from aerial tiers; not surveyed elevations. Southern garage retained in Mirage2022 era; OSM TI name uncertain.",
+  "remaining": [
+    "Exact western hairpin topology",
+    "Southern pedestrian bridge height/landing",
+    "Enclosed guest bridge glazing and hotel landing (existing bridge currently open-air)",
+    "Stair/lift circulation",
+    "Landscape and signage detail",
+    "Local driving benchmark and vehicle traversal"
+  ],
+  "geometry": {
+    "triangles": 14458,
+    "batches": 17,
+    "optimizedMiB": 0.34
+  },
+  "tests": "238 deck support and340 ramp/landing/headroom samples PASS;1517 city cells valid;typecheck PASS;full WebGPU verification PASS57fps startup3011bodies (not local driving benchmark)",
+  "bridge": {
+    "retainedOwner": "geographic-strip 543638175",
+    "deckElevationM": 6.035,
+    "landing": "Garage level3 6.34m to existing6.035m deck via6.4m slope",
+    "remaining": "Hotel indoor landing not audited"
+  },
+  "viewsReviewed": [
+    "build/city-exteriors/ti-parking-after/guest-north.png",
+    "build/city-exteriors/ti-parking-after/western.png",
+    "build/city-exteriors/ti-parking-after/southern.png",
+    "build/city-exteriors/ti-parking-after/guest-bridge.png",
+    "build/city-exteriors/ti-parking-after/guest-ramp.png",
+    "build/city-exteriors/ti-parking-after/guest-roof.png"
+  ],
+  "reviewFindings": "All six installed captures inspected. Three distinct heights, ramp cuts, roof plant and retained bridge visible. Open parking interiors are overbright under current environment; no claim of photographic lighting. Existing bridge is open-air unlike enclosed reference, and hotel interior landing remains unaudited. Exact western hairpin ramp topology and southern bridge deck fit need further work.",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/tiParking-exterior.glb": "8a4d922685d03df9d631ce73e4cd47c1d5d4af9cdc1005739adff57836e30b91"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "views": [
+    {
+      "name": "strat",
+      "capture": "build/city-exteriors/existing-large-audit/strat.png",
+      "inspected": true,
+      "review": "Observation tower simplified shaft and pod; hotel has facades."
+    },
+    {
+      "name": "treasure-island",
+      "capture": "build/city-exteriors/existing-large-audit/treasure-island.png",
+      "inspected": true,
+      "review": "Hotel and parking facades present; low-rise/yard sparse."
+    },
+    {
+      "name": "venetian-palazzo",
+      "capture": "build/city-exteriors/existing-large-audit/venetian-palazzo.png",
+      "inspected": true,
+      "review": "Tower and lagoon facades present; broad roof and pool details incomplete."
+    },
+    {
+      "name": "sphere",
+      "capture": "build/city-exteriors/existing-large-audit/sphere.png",
+      "inspected": true,
+      "review": "Sphere surface present; adjoining long building blank."
+    },
+    {
+      "name": "harrahs-linq",
+      "capture": "build/city-exteriors/existing-large-audit/harrahs-linq.png",
+      "inspected": true,
+      "review": "Tower facades present; podium/frontage not fully covered in this view."
+    },
+    {
+      "name": "bellagio",
+      "capture": "build/city-exteriors/existing-large-audit/bellagio.png",
+      "inspected": true,
+      "review": "Tower and waterfront facades present; roof equipment and landscape incomplete."
+    },
+    {
+      "name": "paris",
+      "capture": "build/city-exteriors/existing-large-audit/paris.png",
+      "inspected": true,
+      "review": "Tower/retail facades present; rear parking needs separate review."
+    },
+    {
+      "name": "planet-hollywood",
+      "capture": "build/city-exteriors/existing-large-audit/planet-hollywood.png",
+      "inspected": true,
+      "review": "Tower/Strip facade present; east-side broad blank service shell."
+    },
+    {
+      "name": "cosmopolitan",
+      "capture": "build/city-exteriors/existing-large-audit/cosmopolitan.png",
+      "inspected": true,
+      "review": "Tower/podium facades present; finer roof/deck detail remains."
+    },
+    {
+      "name": "aria-crystals-veer",
+      "capture": "build/city-exteriors/existing-large-audit/aria-crystals-veer.png",
+      "inspected": true,
+      "review": "Major facades present; some lower blank blocks and Crystals street glazing remain."
+    },
+    {
+      "name": "excalibur",
+      "capture": "build/city-exteriors/existing-large-audit/excalibur.png",
+      "inspected": true,
+      "review": "Towers/turrets present; surrounding frontage landscape sparse."
+    }
+  ],
+  "completion": false
+}

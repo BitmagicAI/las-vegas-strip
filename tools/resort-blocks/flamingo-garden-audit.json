@@ -1,0 +1,102 @@
+{
+  "id": "flamingo-garden-audit",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/115767967",
+    "way/115767969",
+    "way/115767971",
+    "way/116761280",
+    "way/115767964",
+    "way/115767970",
+    "way/115767972",
+    "way/402543931",
+    "way/402543939",
+    "way/402543938"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11686,-115.17111&zoom=20&basemap=satellite",
+      "review": "Three round roofs and smaller circular caps, garden to south visually inspected"
+    },
+    {
+      "url": "https://www.onthebeach.ie/hotels/usa/nevada/las-vegas/flamingo-las-vegas",
+      "image": "https://bynder.onthebeach.co.uk/cdn-cgi/image/width%3D1400%2Cquality%3D80%2Cfit%3Dcover%2Cformat%3Dauto/m/7f8c7838af069d7f/original/FLAMINGO-LAS-VEGAS-General-view-2.jpg",
+      "review": "Visually inspected white cylindrical fascia above fullheight dark glass, fine metal mullions, upper drum cap, rocky pond and dense palms. Date unknown"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11648,-115.17227&zoom=20&basemap=satellite",
+      "review": "West rooftop above mapped building-part116761280 visually inspected. White flat service roof and mechanical equipment; cannot infer nine storeys from this aerial."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=bpivPZI2TNh2qWRv57V36Q&heading=90&pitch=10",
+      "imageDate": "April2025",
+      "review": "Street frontage visually inspected: Gordon Ramsay Burger taller glazed front; scalloped cream cornices, pink ribbons and neon sign structures; terrace, columns and entrance. Does not independently establish west roof metre heights."
+    },
+    {
+      "url": "https://www.getawayk.com/places/north-america/usa/nevada/las-vegas/maps/flamingo",
+      "review": "Displayed map visually inspected 2026-10-21. Shows three restaurant rotundas north of garden, open garden and south/east paths. Older Margaritaville tenant names establish stale branding; do not use claimed2026 date as image date. Circulation evidence only."
+    }
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/flamingo-garden-audit/flamingo-rotundas.png",
+    "build/city-exteriors/flamingo-garden-audit/flamingo-garden-street.png",
+    "build/city-exteriors/flamingo-garden-audit/flamingo-west-pavilion.png"
+  ],
+  "finding": "Current retained interior extends under the mapped rotundas and actual garden. Existing generated podium plus retained interior ceiling covers the site; simply adding rotundas would hide more of the error. West pavilion also not resolved.",
+  "geometryChanged": true,
+  "remaining": [
+    "Garden proportions follow mapped footprints, but facade material/detail, pond landscaping, dense palm planting, and gallery lighting are visibly below photoreal target.",
+    "Pond edges are aerial-guided estimates; actual wildlife enclosure layout and planting species need refinement.",
+    "GO Pool2025complex remains outside this pass.",
+    "Garden restaurant/chapel fittings and real interior fit-out not established.",
+    "Trees useexistingCC0deciduousasset; reference palms species still need appropriate assets.",
+    "Retained upper-gallery access uses new14m flight; stair/endpoints are functional accommodations, not verified architectural circulation."
+  ],
+  "planAudit20261021": {
+    "file": "build/city-exteriors/flamingo-plan-audit.png",
+    "finding": "Mapped podium polygons already leave outdoor garden open; retained zone16 interior envelope is the erroneous overlap. Three rotundas join the northern mapped podium edge. Their OSM level-derived heights require visual interpretation, not extra floors.",
+    "groundReference": "White deep cylindrical fascia, full-height dark glazing, fine vertical metal mullions and smaller drum; pond rocks and dense palms. Date of ground photo unknown.",
+    "next": "Construct exact garden subtraction mask from mapped exterior boundaries before any interior edits; preserve main west and south entrance routes.",
+    "heightCaution": "Outer rotundas8/11/8 and caps11/14/11 are importer estimates from building:levels tags2/3/2 and3/4/3, not surveyed metre heights. West part29m is from levels9, also not measured."
+  },
+  "stage": "Installed exterior and corrected stair entry reviewed; geometric pass implemented, visual refinement remains.",
+  "estimatedDimensions": {
+    "rotundaRoofM": 8,
+    "rotundaCapM": 10.1,
+    "chapelRidgeM": 6.9,
+    "gazeboRidgeM": 5.8,
+    "southPavilionRidgeM": 4.4,
+    "westPartRoofM": 23.09,
+    "gardenDatumM": 0.4,
+    "notes": "Mapped plans retained. Heights estimated from reference forms and existing podium datum; not surveyed. West OSM levels9 is NOT used as29m independent building."
+  },
+  "installedReview": {
+    "captures": "build/city-exteriors/flamingo-garden-final",
+    "viewsInspected": [
+      "rotundas-aerial",
+      "rotundas-ground",
+      "chapel-and-paths",
+      "garden-south",
+      "west-roof",
+      "gallery-stair"
+    ],
+    "finding": "Five exterior views show installed mapped cylindrical glazed rotundas, caps, chapel and pavilion roofs, open garden/path/pond layout, and contained west roof equipment. Gallery view obstructed by wall: replacement foot/top captures pending. Garden planting sparse and wrong species; facade material, detailing and terrain landscaping remain simplified. Not photoreal completion.",
+    "tests": [
+      "512 support samples PASS",
+      "22 bidirectional route cases PASS with city, legacy convex/trimesh, parent and garden collision"
+    ],
+    "triangles": 17259,
+    "batches": 50,
+    "galleryFinal": "build/city-exteriors/flamingo-gallery-final",
+    "galleryFinding": "Both foot and top captures inspected. Lower facade obstruction removed; stair guards and open threshold visible. Interior stair is very dark; interior lighting/material refinement still required. Approach route now begins outside at z7 and passes in both directions."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/flamingoGarden-exterior.glb": "1aa8672f2811b6237e62cbe43e36146e897be3ff55b60222e28b070bcc39cfb6",
+      "build/strip-landmarks/flamingoGarden-exterior-collision.json": "b39e8b7d998bf9ed6a2528d557e3ee5a6e876b57b1bcc56460edfeeac7e79a3c",
+      "build/strip-landmarks/flamingoExterior-exterior.glb": "4f2df8d77f6cfc0f58ebd70d02ac47571af78f094aa83022b0deb2f127b3b928",
+      "build/geographic-strip/detailed.glb": "45f0ef0c7cd9d2a448ce014b290eb8a573e4c67df9f8c30dff5128ee5e8e57be",
+      "build/geographic-strip/city.glb": "ccb6936cc1db8f6016be0d000db068db7f4662f67c566d7a4ce4ee2e0d5a6fcd"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "time": "2026-10-09T15:55:00Z",
+  "files": [
+    {
+      "file": "tools/strip-landmarks/venetian_palace.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/build.py",
+      "match": true
+    },
+    {
+      "file": "build/strip-landmarks/venetian-exterior.glb",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/venetian_towers.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/export.py",
+      "match": true
+    },
+    {
+      "file": "src/work/HighriseCity.ts",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/venetian_frontage.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/venetian_rialto.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/venetian_pools.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/venetian_pool_garden.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/palazzo_tower.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/venezia_courtyard.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/palazzo_pools.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/palazzo_retail.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/palazzo_steps.py",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/test-palazzo-steps.mjs",
+      "match": true
+    },
+    {
+      "file": "tools/strip-landmarks/palazzo_dining.py",
+      "match": true
+    },
+    {
+      "file": "build/strip-landmarks/venetian-exterior-collision.json",
+      "match": true
+    },
+    {
+      "file": "build/strip-landmarks/version.json",
+      "match": true
+    }
+  ],
+  "mismatches": 0,
+  "note": "Content matches recorded final build. Does not prove historical unrelated-file preservation without a baseline."
+}

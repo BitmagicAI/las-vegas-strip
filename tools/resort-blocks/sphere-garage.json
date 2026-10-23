@@ -1,0 +1,42 @@
+{
+  "id": "sphere-garage",
+  "status": "refinement-deferred",
+  "remaining": [
+    "Exact ramp arrangement and stair-core access",
+    "Fine facade fit and service court detail"
+  ],
+  "baseline": "build/city-exteriors/existing-large-audit/sphere.png",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1210,-115.1634,650a,400d,35y,90h,60t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1210,-115.1634,650a,400d,35y,270h,60t,0r",
+      "imagery": "2022-11-09",
+      "inspected": true
+    }
+  ],
+  "geometry": {
+    "triangles": 5964,
+    "batches": 11
+  },
+  "dimensions": "Mapped garage height25m; seven deck intervals estimated from photograph. Attached service building13.5m estimated from relative elevation; mapped5m was inconsistent with reference.",
+  "tests": "218 roof/deck/ramp support samples pass",
+  "installedReview": {
+    "views": [
+      "build/city-exteriors/sphere-garage-final/garage-west.png",
+      "build/city-exteriors/sphere-garage-final/garage-south.png",
+      "build/city-exteriors/sphere-garage-final/garage-deck.png"
+    ],
+    "inspected": true,
+    "findings": "Open decks, ramps, projecting warm stair cores and lower service facade visible. Old blocks removed. Exact ramp/stair access and fine fit remain approximate."
+  },
+  "verification": "Full local WebGPU verification passed; 59 fps at spawn, 3011 bodies. Not a block-route performance claim.",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/sphereGarage-exterior.glb": "c2affb011c922a1ab2da6c76ac608f7a145b014fda4da0dcea218047f29d172b"
+    }
+  }
+}

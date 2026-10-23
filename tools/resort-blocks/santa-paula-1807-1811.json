@@ -1,0 +1,114 @@
+{
+  "id": "santa-paula-1807-1811",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1236725810",
+    "way/1236725812"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14971,-115.15068&zoom=21&basemap=satellite",
+      "review": "North rectangular flat-roof building with six mechanical units; south L-shaped shallow hip roof around planted court"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14971,-115.15102&heading=90&pitch=3",
+      "imageDate": "January2026",
+      "review": "1807 address board visible: two floors, pale gray stucco, exposed west stair and north gallery.1811 beside it has a white stair, garden tree and two-floor windows; central gravel gap"
+    }
+  ],
+  "remaining": [
+    "Side/rear door locations and stair dimensions inferred",
+    "Facade proportions approximate; chainlink fence coarse and courtyard planting sparse",
+    "Exterior only; interiors not implemented",
+    "Neutral daylight and full driving benchmark not performed"
+  ],
+  "triangles": 17173,
+  "batches": 23,
+  "optimizedMiB": 12.09,
+  "metricScope": "Authored triangles exclude existing CC0 tree asset",
+  "tests": [
+    "619 roof-support samples PASS",
+    "16 stair legs PASS in both directions with height checks"
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/santa-paula-1807-final/santa1807-west.png",
+    "build/city-exteriors/santa-paula-1807-final/santa1807-roof.png",
+    "build/city-exteriors/santa-paula-1807-final/santa1807-court.png"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "santa1807-west",
+        "eye": [
+          1967,
+          3,
+          -3753
+        ],
+        "target": [
+          1999,
+          3,
+          -3753
+        ],
+        "p": [
+          1984,
+          2,
+          -3753
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.80000001192093
+      },
+      {
+        "name": "santa1807-roof",
+        "eye": [
+          1971,
+          39,
+          -3723
+        ],
+        "target": [
+          2007,
+          3,
+          -3750
+        ],
+        "p": [
+          1984,
+          2,
+          -3753
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.600000023841858
+      },
+      {
+        "name": "santa1807-court",
+        "eye": [
+          1994,
+          2.2,
+          -3736
+        ],
+        "target": [
+          2012,
+          3,
+          -3740
+        ],
+        "p": [
+          1994,
+          2,
+          -3736
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.599999964237213
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 26,
+    "colliderTrianglesRemoved": 26,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in SantaPaula1807 mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/santaPaula1807-exterior.glb": "03f3ecd9715ddef5c5cc20f805d978cb3d4528449af3cf01b43b3d166e445733",
+      "build/strip-landmarks/santaPaula1807-exterior-collision.json": "f6b565e996290bbf3462d3e20674cdf2b89cd70963bfae8be60ca389610a1a3c"
+    }
+  }
+}
