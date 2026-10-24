@@ -33,7 +33,7 @@
     "customBlockTypes": [],
     "hud": {
       "startScreen": {
-        "imageUrl": "https://forged-assets.bitmagic.ai/images/e5c92038-a9e1-46b3-bbbb-9bb7be08a7e5/image.webp"
+        "imageUrl": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863773936-city_cover.webp"
       },
       "theme": {
         "name": "Simulator",
@@ -762,6 +762,20 @@
       "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792862977289-e12884ca4f0b-door-sage.glb",
       "size": 69544,
       "targetHeight": 4.2
+    },
+    {
+      "id": "asset_1792863773837_t2v4fn",
+      "name": "city_cover",
+      "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863773936-city_cover.webp",
+      "type": "image",
+      "size": 263812,
+      "production": {
+        "method": "uploaded",
+        "at": "2026-10-24T17:42:54.298Z",
+        "sourceUrl": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863773936-city_cover.webp",
+        "sourceName": "city_cover.webp"
+      },
+      "screenshotUrl": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863773936-city_cover.webp"
     }
   ],
   "environmentObjects": [],
