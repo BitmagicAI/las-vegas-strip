@@ -49,7 +49,8 @@ try {
   });
   page.on('requestfailed', (r) => { const f = r.failure()?.errorText || ''; if (!/ERR_ABORTED/.test(f)) failed.push(`FAILED ${new URL(r.url()).pathname} ${f}`); });
   await page.goto(`http://localhost:${port}/?probe`, { waitUntil: 'domcontentloaded', timeout: 60000 });
-  const deadline = Date.now() + 240000;
+  // (SMOKE_START_MS: a game whose start screen waits on CDN downloads, e.g. the zombie game's cast on a slow line)
+  const deadline = Date.now() + Number(process.env.SMOKE_START_MS || 240000);
   while (Date.now() < deadline && !logs.some((s) => s.includes('🎮 Starting game...'))) {
     const choice = page.locator('.start-screen-selection__option').first();
     const play = page.locator('#play-button, .hud-play-button').first();

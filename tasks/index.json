@@ -10,7 +10,7 @@
    "priority": "P1",
    "summary": "Done on 2026-10-22. The city runs with no game layer (src/work/GameLayers.ts). The zombie game \"Vegas: Afterlight\" moved to its own project (GitFork/vegas-afterlight-game): the sanctuary and supply caches, the cast and its animations, the storm-chase film scenes, its tests, tools and design documents. It registers its layer in GAME_LAYERS. Left: the naming and the repository wiring.",
    "items": [
-    "Give the city its own game id once its name is chosen (bitmagic init --name <name> in an empty folder; copy the id into bitmagic.json and src/work/game.json). The game keeps ZWLJZE4P1VA6",
+    "Done on 2026-10-24: the city has its own game id PVEF9G6NJIJ6 (\"Las Vegas Strip\", made through the CLI's game API); the game keeps ZWLJZE4P1VA6.",
     "Rename the city's Afterlight-named files and keys to the chosen name: AfterlightShadows.ts, the localStorage 'afterlight:film' key, window.__afterlightProbe and __afterlightFilm (tools/film and tools/probe-*.mjs use them)",
     "After the city's first commit, make the game project a git repository whose 'city' remote is the city, and merge city updates from there"
    ],
