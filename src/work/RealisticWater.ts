@@ -104,7 +104,18 @@ function lakeMaterial(mesh:THREE.Mesh,name:string,kind:WaterKind='lake'):NodeMat
     const texel=uniform(new THREE.Vector2(1/1920,1/1080)),taps:{value:THREE.Texture}[]=[];
     let blurred=mirror.rgb.mul(.2);
     for(let i=0;i<8;i++){const a=i*Math.PI/4+.39,tap=texture(mirror.value,uvMirror.add(vec2(Math.cos(a)*3,Math.sin(a)*3).mul(texel)));taps.push(tap as unknown as {value:THREE.Texture});blurred=blurred.add(tap.rgb.mul(.1));}
-    RealisticWater.mirrors.push({base:mirror.reflector as unknown as MirrorBase,plane:mirror.target,material:m,camera:new THREE.PerspectiveCamera(),target:null,taps,texel,kind});
+    const record:Mirror={base:mirror.reflector as unknown as MirrorBase,plane:mirror.target,material:m,camera:new THREE.PerspectiveCamera(),target:null,taps,texel,kind};
+    // Replace three's own reflector render now, before any frame draws the lake: three's renders the whole scene again
+    // (twice, nested, with two mirrors) and built ~300 extra shaders in the start-up warm frame (2026-10-24).
+    // Only the view camera gets a mirror (another camera, such as the sun's shadow camera, would swap the texture).
+    record.base.updateBefore=(frame:unknown)=>{
+        const f=frame as {renderer:Renderer;scene:THREE.Scene;camera:THREE.Camera};
+        // screenUV samples an image from this exact camera pose. Reusing the previous
+        // image on alternate frames makes it jump whenever the camera turns or moves.
+        if(f.camera===RealisticWater.camera)renderMirror(record,f);
+        return undefined;
+    };
+    RealisticWater.mirrors.push(record);
     const deep=new THREE.Color(BODY[kind][0]),shallow=new THREE.Color(BODY[kind][1]);
     m.colorNode=Fn(()=>{
         const cosT=max(dot(eye,n),0);
@@ -184,7 +195,6 @@ export class RealisticWater {
     /** Lake mirrors, rendered by renderMirror for the view camera only. */
     static mirrors:Mirror[]=[];
     static sunShadow():THREE.DirectionalLightShadow|null{return RealisticWater.sun?.shadow??null;}
-    private static patched=new WeakSet<object>();
     private static sun:THREE.DirectionalLight|null=null;
     /** The main view camera (the only one the lake mirrors for). */
     static camera:THREE.Camera|null=null;
@@ -238,15 +248,6 @@ export class RealisticWater {
         for(const mirror of RealisticWater.mirrors){
             // static level parents are not re-walked by the scene's matrix update: keep the plane's world matrix current
             mirror.plane.updateWorldMatrix(true,false);
-            if(RealisticWater.patched.has(mirror.base))continue;RealisticWater.patched.add(mirror.base);
-            // only the view camera gets a mirror (another camera, such as the sun's shadow camera, would swap the texture)
-            mirror.base.updateBefore=(frame:unknown)=>{
-                const f=frame as {renderer:Renderer;scene:THREE.Scene;camera:THREE.Camera};
-                // screenUV samples an image from this exact camera pose. Reusing the previous
-                // image on alternate frames makes it jump whenever the camera turns or moves.
-                if(f.camera===RealisticWater.camera)renderMirror(mirror,f);
-                return undefined;
-            };
         }
         // pools reflect the actual sky at full strength (the scene's environment light is kept dim on purpose)
         if(scene?.environment)for(const m of RealisticWater.materials)if(!m.envMap){m.envMap=scene.environment;m.envMapIntensity=1.35;m.needsUpdate=true;}

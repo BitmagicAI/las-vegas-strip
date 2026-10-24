@@ -16,7 +16,7 @@ const opt=(name,fallback)=>{const i=argv.indexOf('--'+name);return i<0?fallback:
 const name=String(opt('name','views')),set=String(opt('set','all')),dpr=Number(opt('dpr',2)),sample=Number(opt('sample',3));
 const [vw,vh]=String(opt('viewport','1505x772')).split('x').map(Number);
 const port=JSON.parse(fs.readFileSync('.bitmagic/dev.json','utf8')).gamePort;
-const out=path.join('build/probe/views',name);fs.mkdirSync(out,{recursive:true});
+const out=path.join(process.env.PROBE_OUT??'build/probe/views',name);fs.mkdirSync(out,{recursive:true});
 
 // [name, set, x, y, z, yaw, pitch]. Positions are game metres; yaw/pitch radians for the first-person camera.
 const VIEWS=[
@@ -72,8 +72,8 @@ try {
       // What each part of the view costs: frame rate with one part hidden at a time.
       const extra={
         // Trees drawn unlit (lower bound of their shading cost), and trees without shadow casting.
-        'trees-unlit':"()=>{let B=null;const S=window.__afterlightProbe.engine().scene;S.traverse(o=>{for(const m of [o.material].flat())if(m?.isMeshBasicMaterial&&!B)B=m.constructor;});const saved=[];S.traverse(o=>{if(o.isInstancedMesh&&o.parent?.name?.startsWith('Trees')){saved.push([o,o.material]);o.material=[o.material].flat().map(m=>new B({map:m.map,alphaTest:m.alphaTest,side:m.side,alphaToCoverage:m.alphaToCoverage}));if(o.material.length===1)o.material=o.material[0];}});return ()=>saved.forEach(([o,m])=>o.material=m);}",
-        'tree-shadows-off':"()=>{const S=window.__afterlightProbe.engine().scene,saved=[];S.traverse(o=>{if(o.isInstancedMesh&&o.castShadow&&o.parent?.name?.startsWith('Trees')){saved.push(o);o.castShadow=false;}});return ()=>saved.forEach(o=>o.castShadow=true);}",
+        'trees-unlit':"()=>{let B=null;const S=window.__afterlightProbe.engine().scene;S.traverse(o=>{for(const m of [o.material].flat())if(m?.isMeshBasicMaterial&&!B)B=m.constructor;});const saved=[];S.traverse(o=>{if((o.isInstancedMesh||o.geometry?.isInstancedBufferGeometry)&&o.parent?.name?.startsWith('Trees')){saved.push([o,o.material]);o.material=[o.material].flat().map(m=>new B({map:m.map,alphaTest:m.alphaTest,side:m.side,alphaToCoverage:m.alphaToCoverage}));if(o.material.length===1)o.material=o.material[0];}});return ()=>saved.forEach(([o,m])=>o.material=m);}",
+        'tree-shadows-off':"()=>{const S=window.__afterlightProbe.engine().scene,saved=[];S.traverse(o=>{if((o.isInstancedMesh||o.geometry?.isInstancedBufferGeometry)&&o.castShadow&&o.parent?.name?.startsWith('Trees')){saved.push(o);o.castShadow=false;}});return ()=>saved.forEach(o=>o.castShadow=true);}",
       };
       for(const [label,code] of Object.entries(extra)){
         await page.evaluate(code=>{window.__undoPart=new Function('return ('+code+')()')();},code);
@@ -81,7 +81,7 @@ try {
         fps[label]=await page.evaluate(ms=>new Promise(r=>{let n=0;const t0=performance.now();const f=()=>{n++;if(performance.now()-t0<ms)requestAnimationFrame(f);else r(+(n*1000/(performance.now()-t0)).toFixed(1));};requestAnimationFrame(f);}),sample*1000);
         await page.evaluate(()=>{window.__undoPart?.();window.__undoPart=null;});await settle();
       }
-      const parts={'no-grass':"o=>o.isInstancedMesh&&o.parent?.name?.startsWith('Lawn')",'no-trees':"o=>o.isInstancedMesh&&o.parent?.name?.startsWith('Trees')",'no-jeep':"o=>/jeep|Jeep|charging bay/.test(o.name)"};
+      const parts={'no-grass':"o=>(o.isInstancedMesh||o.geometry?.isInstancedBufferGeometry)&&o.parent?.name?.startsWith('Lawn')",'no-trees':"o=>(o.isInstancedMesh||o.geometry?.isInstancedBufferGeometry)&&o.parent?.name?.startsWith('Trees')",'no-jeep':"o=>/jeep|Jeep|charging bay/.test(o.name)"};
       for(const [label,test] of Object.entries(parts)){
         const n=await page.evaluate(test=>{const f=new Function('return '+test)(),S=window.__afterlightProbe.engine().scene,hidden=[];S.traverse(o=>{if(o.visible&&f(o))hidden.push(o);});for(const o of hidden)o.visible=false;window.__hiddenParts=hidden;return hidden.length;},test);
         await page.waitForTimeout(800);

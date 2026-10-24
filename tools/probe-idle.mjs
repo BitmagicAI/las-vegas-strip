@@ -127,8 +127,8 @@ try {
     // Where the managed foliage is relative to the player, and how much of it is switched on.
     const planting=E.scene.getObjectByName('Bellagio botanical planting');let foliageInfo=null;
     if(planting){planting.updateMatrixWorld(true);const box=new planting.position.constructor();const groups={};let min=[1e9,1e9,1e9],max=[-1e9,-1e9,-1e9];
-      planting.children.forEach(g=>{const k=g.name.replace(/ -?\d+,-?\d+ /,' ');const e=groups[k]||(groups[k]={groups:0,visible:0,instances:0,tris:0});e.groups++;if(g.visible){e.visible++;g.traverse(m=>{if(m.isInstancedMesh){const t=(m.geometry.index?m.geometry.index.count:m.geometry.attributes.position.count)/3;e.instances+=m.count;e.tris+=t*m.count;}});}
-        g.traverse(m=>{if(m.isInstancedMesh){m.computeBoundingBox();const b=m.boundingBox.clone().applyMatrix4(m.matrixWorld);min=min.map((v,i)=>Math.min(v,b.min.getComponent(i)));max=max.map((v,i)=>Math.max(v,b.max.getComponent(i)));}});});
+      planting.children.forEach(g=>{const k=g.name.replace(/ -?\d+,-?\d+ /,' ');const e=groups[k]||(groups[k]={groups:0,visible:0,instances:0,tris:0});e.groups++;if(g.visible){e.visible++;g.traverse(m=>{if(m.isInstancedMesh||m.geometry?.isInstancedBufferGeometry){const t=(m.geometry.index?m.geometry.index.count:m.geometry.attributes.position.count)/3,n=m.isInstancedMesh?m.count:m.geometry.instanceCount;e.instances+=n;e.tris+=t*n;}});}
+        g.traverse(m=>{if(m.isInstancedMesh||m.geometry?.isInstancedBufferGeometry){if(m.isInstancedMesh)m.computeBoundingBox();const b=(m.isInstancedMesh?m.boundingBox:m.geometry.boundingBox).clone().applyMatrix4(m.matrixWorld);min=min.map((v,i)=>Math.min(v,b.min.getComponent(i)));max=max.map((v,i)=>Math.max(v,b.max.getComponent(i)));}});});
       box.set(0,0,0);foliageInfo={rootVisible:planting.visible,parentChainVisible:(()=>{let o=planting;while(o){if(!o.visible)return false;o=o.parent;}return true;})(),worldMin:min.map(Math.round),worldMax:max.map(Math.round),groups,settings:JSON.parse(localStorage.getItem('afterlight:foliage:v1')||'null')};}
     const cam=E.camera;
     // Which cameras the scene's onBeforeRender hooks see, in order (foliage/grove LOD selection reads args[2]).
@@ -180,12 +180,12 @@ try {
   const apply=async(code,undo)=>page.evaluate(({code,undo})=>{
     const pr=window.__afterlightProbe,R=pr.renderer(),E=pr.engine(),S=E.scene;
     const planting=S.getObjectByName('Bellagio botanical planting');
-    const each=(prefix,fn)=>{if(!planting)throw Error('no foliage root');planting.traverse(o=>{if(o.isInstancedMesh&&o.parent?.name?.startsWith(prefix))fn(o);});};
+    const each=(prefix,fn)=>{if(!planting)throw Error('no foliage root');planting.traverse(o=>{if((o.isInstancedMesh||o.geometry?.isInstancedBufferGeometry)&&o.parent?.name?.startsWith(prefix))fn(o);});};
     const foliage=on=>{const box=document.getElementById('foliage-enabled');if(box.checked!==on)box.click();};
     let sun=null;S.traverse(o=>{if(o.isDirectionalLight&&o.name==='Afterlight focused sun')sun=o;});
     const freezeShadow=()=>{for(const k of ['needsUpdate','autoUpdate'])Object.defineProperty(sun.shadow,k,{configurable:true,get:()=>false,set(){}});};
     if(undo){
-      if(planting)planting.traverse(o=>{if(o.isInstancedMesh){o.visible=true;o.castShadow=!!o.parent?.name?.startsWith('Trees');}});
+      if(planting)planting.traverse(o=>{if(o.isInstancedMesh||o.geometry?.isInstancedBufferGeometry){o.visible=true;o.castShadow=!!o.parent?.name?.startsWith('Trees');}});
       foliage(true);
       if(window.__grassMats){for(const [m,mat] of window.__grassMats)m.material=mat;window.__grassMats=null;}
       if(window.__basePixelRatio)R.setPixelRatio(window.__basePixelRatio);

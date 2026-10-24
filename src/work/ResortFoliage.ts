@@ -6,6 +6,7 @@ import {MeshStandardNodeMaterial,type Node} from 'three/webgpu';
 import {float,lights,reference} from 'three/tsl';
 import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
 import {runtimeUrl} from './RuntimeAssets.js';
+import {sharedInstancedMesh} from './SharedInstancing.js';
 
 /** Garden foliage keeps its own standard materials but is lit only by the sun
  * (with its shadow), the sky and the ambient term. Thousands of overlapping blades
@@ -25,7 +26,8 @@ function sunLitFoliageMaterial(source:THREE.MeshStandardMaterial):MeshStandardNo
 }
 interface Placement {trees:{position:[number,number,number];seed:number}[];grass:number[][]}
 interface Cell {levels:THREE.Group[];box:THREE.Box3;level:number;limits:number[]}
-/** Shared textured botanical assets, instanced per spatial cell and LOD. */
+/** Shared textured botanical assets, instanced per spatial cell and LOD. The cells share one shader build per material
+ * (SharedInstancing.ts; as InstancedMeshes they cost 10 s of node builds at start-up). */
 export class ResortFoliage {
     private cells:Cell[]=[];
     private unsubscribe:(()=>void)|null=null;
@@ -67,10 +69,10 @@ export class ResortFoliage {
                 const selected=positions;
                 asset.updateMatrixWorld(true);
                 asset.traverse(o=>{if(!(o instanceof THREE.Mesh)||!selected.length)return;
-                    const mesh=new THREE.InstancedMesh(o.geometry,o.material,selected.length);
-                    mesh.castShadow=trees;mesh.receiveShadow=true;
-                    selected.forEach((p,i)=>{object.position.set(p[0]!,p[1]!,p[2]!);object.rotation.set(0,p[3]!,0);object.scale.setScalar(p[4]!);object.updateMatrix();matrix.multiplyMatrices(object.matrix,o.matrixWorld);mesh.setMatrixAt(i,matrix);});
-                    mesh.instanceMatrix.needsUpdate=true;mesh.computeBoundingBox();mesh.computeBoundingSphere();group.add(mesh);
+                    const matrices=new Float32Array(selected.length*16);
+                    selected.forEach((p,i)=>{object.position.set(p[0]!,p[1]!,p[2]!);object.rotation.set(0,p[3]!,0);object.scale.setScalar(p[4]!);object.updateMatrix();matrix.multiplyMatrices(object.matrix,o.matrixWorld).toArray(matrices,i*16);});
+                    const mesh=sharedInstancedMesh(o.geometry,o.material,matrices,selected.length);
+                    mesh.castShadow=trees;mesh.receiveShadow=true;group.add(mesh);
                 });group.visible=lod===0;this.root.add(group);return group;
             });
             this.cells.push({levels,box:new THREE.Box3().setFromObject(levels[0]!),level:0,limits});
@@ -98,7 +100,7 @@ export class ResortFoliage {
     dispose():void {
         this.unsubscribe?.();this.unsubscribe=null;
         if(this.scene.onBeforeRender===this.hook&&this.previous)this.scene.onBeforeRender=this.previous;
-        this.root.traverse(o=>{if(o instanceof THREE.InstancedMesh)o.dispose();});this.root.removeFromParent();
+        this.root.traverse(o=>{if(o instanceof THREE.Mesh)o.geometry.dispose();});this.root.removeFromParent();
         const textures=new Set<THREE.Texture>(),materials=new Set<THREE.Material>();
         for(const asset of this.assets)asset.traverse(o=>{if(o instanceof THREE.Mesh){o.geometry.dispose();for(const m of Array.isArray(o.material)?o.material:[o.material])materials.add(m);}});
         for(const m of materials){for(const value of Object.values(m))if(value instanceof THREE.Texture)textures.add(value);m.dispose();}for(const t of textures)t.dispose();this.assets=[];this.cells=[];

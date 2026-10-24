@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import type {Node} from 'three/webgpu';
-import {abs,cameraPosition,cameraViewMatrix,faceDirection,float,int,length,materialColor,materialRoughness,max,mix,normalWorldGeometry,normalize,positionWorld,select,sign,smoothstep,texture,uniformArray,vec2,vec3,vec4} from 'three/tsl';
+import {abs,cameraPosition,cameraViewMatrix,faceDirection,float,int,length,materialColor,materialReference,materialRoughness,max,mix,normalWorldGeometry,normalize,positionWorld,select,sign,smoothstep,texture,uniformArray,vec2,vec3,vec4} from 'three/tsl';
 import {activeDeviceQualityTier} from 'engine/quality/DeviceQuality.js';
 import {PBR_PARAMS,PBR_SETS,detailSetFor} from './PbrDetailSets.js';
 import {runtimeUrl} from './RuntimeAssets.js';
@@ -105,8 +105,8 @@ const done=new WeakSet<THREE.Material>();
 
 /** Give the opaque standard materials of a just-loaded exterior asset their scanned detail (by material name). The
  * material stays a plain MeshStandardMaterial for all game code; the node inputs only reach the WebGPU renderer, and one
- * shader serves every material on the same scan (`customProgramCacheKey`), since colour, maps and roughness come from
- * the material's own properties. */
+ * shader serves every material (`customProgramCacheKey`): the scan, colour, maps and roughness all come from the
+ * material's own properties. */
 export function applyPbrDetail(root:THREE.Object3D,url:string):void{
     if(!arrays||SKIP_URL.test(url))return;
     root.traverse(o=>{
@@ -115,12 +115,15 @@ export function applyPbrDetail(root:THREE.Object3D,url:string):void{
             if(done.has(m))continue;done.add(m);
             if(!(m instanceof THREE.MeshStandardMaterial)||(m as {isNodeMaterial?:boolean}).isNodeMaterial||m.transparent||m.alphaTest>0||m.opacity<1)continue;
             const set=detailSetFor(m.name);if(set<0)continue;
-            const d=detailNodes(int(set) as unknown as Node<'int'>,materialColor.rgb as unknown as Node<'vec3'>,materialRoughness as unknown as Node<'float'>);
+            // The set is read from the material at draw time, not compiled in: one shader for all 15 scans (2026-10-24;
+            // `int(set)` made a shader per set). A leading underscore keeps the property out of three's cache key.
+            (m as unknown as {_pbrDetailSet:number})._pbrDetailSet=set;
+            const d=detailNodes(materialReference('_pbrDetailSet','int') as unknown as Node<'int'>,materialColor.rgb as unknown as Node<'vec3'>,materialRoughness as unknown as Node<'float'>);
             const target=m as unknown as Record<string,unknown>;
             target.colorNode=vec4(d.color,(materialColor as unknown as Node<'vec4'>).a);target.roughnessNode=d.roughness;
             if(!m.normalMap&&!m.bumpMap)target.normalNode=d.normal;
             if(!m.aoMap)target.aoNode=d.ao;
-            const key='pbr-detail:'+set+(m.normalMap||m.bumpMap?':own-normal':'')+(m.aoMap?':own-ao':'');
+            const key='pbr-detail'+(m.normalMap||m.bumpMap?':own-normal':'')+(m.aoMap?':own-ao':'');
             m.customProgramCacheKey=()=>key;
             m.userData.pbrDetail=PBR_SETS[set];m.needsUpdate=true;
         }

@@ -6,6 +6,7 @@ import {makeCityAtlas,type Atlas} from './CityAtlas.js';
 import {bindCityLighting} from './CityLighting.js';
 import {releaseAfterUpload} from './CpuGeometryRelease.js';
 import {detailNodes,pbrDetailEnabled} from './PbrDetail.js';
+import {drawnTexture} from './ShaderSharing.js';
 import {detailSetFor} from './PbrDetailSets.js';
 
 /* Vertex layout of every city batch (32 bytes a vertex, 40 when glossy; was 88):
@@ -71,14 +72,24 @@ function surfaceMaterial(source:THREE.MeshStandardMaterial,atlas:Atlas|null,deta
     const material=new MeshStandardNodeMaterial();material.copy(source);material.color.setHex(0xffffff);material.vertexColors=false;
     material.map=null;material.normalMap=null;material.bumpMap=null;material.userData={};material.normalNode=null;material.aoNode=null;
     material.roughnessNode=surface.x;material.metalnessNode=surface.y;material.emissiveNode=emission.rgb;
+    // the table supplies these; uniform values keep three's cache key the same across the family
+    material.roughness=1;material.metalness=0;material.emissive.setHex(0);material.emissiveIntensity=1;
     let color:Node<'vec3'>=linearColor;
     if(atlas){const mode=surface.zw,source=uv();const wrapped=source.clamp(0,1).mul(vec2(1).sub(mode)).add(source.fract().mul(mode));
-        color=texture(atlas.texture,atlasRect.xy.add(wrapped.mul(atlasRect.zw))).grad(dFdx(source).mul(atlasRect.zw),dFdy(source).mul(atlasRect.zw)).rgb.mul(linearColor) as unknown as Node<'vec3'>;atlases.set(material,atlas.texture);}
+        // the atlas is read from the drawn material, so every atlas shares one shader (ShaderSharing.drawnTexture)
+        (material as unknown as {atlasMap:THREE.Texture}).atlasMap=atlas.texture;
+        color=drawnTexture('atlasMap',atlas.texture).sample(atlasRect.xy.add(wrapped.mul(atlasRect.zw))).grad(dFdx(source).mul(atlasRect.zw),dFdy(source).mul(atlasRect.zw)).rgb.mul(linearColor) as unknown as Node<'vec3'>;atlases.set(material,atlas.texture);}
     material.colorNode=color;
     // scanned surface detail (PbrDetail), per table row; the coarse LOD is beyond its fade distance
-    if(detail&&pbrDetailEnabled()){const d=detailNodes(detailSet as unknown as Node<'int'>,color,surface.x as unknown as Node<'float'>);
+    const withDetail=detail&&pbrDetailEnabled();
+    if(withDetail){const d=detailNodes(detailSet as unknown as Node<'int'>,color,surface.x as unknown as Node<'float'>);
         material.colorNode=d.color;material.roughnessNode=d.roughness;material.normalNode=d.normal;material.aoNode=d.ao;}
-    if(cinematicSurfaceEnabled())applySceneSurface(material,detailSet.equal(0).select(1,0) as unknown as Node<'float'>,row);
+    const cinematic=cinematicSurfaceEnabled();
+    if(cinematic)applySceneSurface(material,detailSet.equal(0).select(1,0) as unknown as Node<'float'>,row);
+    // Everything else in the graph is shared (the surface table, vertex attributes, PbrDetail's arrays): one node build
+    // per variant instead of one per material (109 atlases, ~400 builds at start-up on 2026-10-24).
+    const key=`city-surface${atlas?':atlas':''}${withDetail?':detail':''}${cinematic?':scene':''}`;
+    material.customProgramCacheKey=()=>key;
     return material;
 }
 /** Reuse the shader/material across blocks, not just within a block. Thousands

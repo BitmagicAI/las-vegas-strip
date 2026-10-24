@@ -23,7 +23,8 @@ import {StreamingWork} from './StreamingWork.js';
 import {BackgroundActivity} from './BackgroundActivity.js';
 import {configureSkylineDepth} from './SkylineDepth.js';
 import {configureLightCaps} from './LightCaps.js';
-import {configureShaderSharing} from './ShaderSharing.js';
+import {compileForScenePass,configureShaderSharing} from './ShaderSharing.js';
+import {installShaderAudit} from './ShaderAudit.js';
 import {extendSkylineCamera,matchHazeToSky} from './StripAtmosphere.js';
 import {CameraObstruction} from './CameraObstruction.js';
 import { GroundSurfaceIndex } from './GroundSurfaceIndex.js';
@@ -146,6 +147,10 @@ export class VoxelGame implements GenreGameInterface {
         configureSkylineDepth(engine);
         configureLightCaps(engine);
         configureShaderSharing(engine);
+        compileForScenePass(engine);
+        installShaderAudit(engine);
+        // the view camera, before the first update: the start-up warm frame then renders (and builds) the lake mirrors too
+        if (engine.camera) RealisticWater.camera = engine.camera;
         this.engine = engine;
         this.worldProfileData = worldProfileData;
         this.gameData = gameData || null;
