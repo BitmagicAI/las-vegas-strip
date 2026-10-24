@@ -74,8 +74,10 @@ async function sync() {
   const glb = list.files.find((f) => f.path.endsWith('.glb'));
   const probe = glb && path.join(runtime, glb.path.slice('build/'.length));
   if (probe && fs.existsSync(probe) && fs.readFileSync(probe).subarray(0, 40).toString().startsWith('version https://git-lfs')) {
-    console.error('runtime-assets/ holds Git LFS pointers, not the files: install Git LFS, then run\n' +
-      '  git lfs install && git lfs pull\nand run this again.');
+    // (a ZIP download from GitHub carries pointers too: the repository leaves LFS objects out of its archives)
+    console.error('runtime-assets/ holds Git LFS pointers, not the files. In a git clone, install Git LFS, then run\n' +
+      '  git lfs install && git lfs pull\nand run this again. From a ZIP download, run\n' +
+      '  node tools/release/fetch-assets.mjs --pack\nto download the same files as one release archive.');
     if (AUTO) return true;
     process.exit(2);
   }
