@@ -38,7 +38,6 @@ import { DoorKick } from './DoorKick.js';
 import { GAME_LAYERS, type GameLayer, type CityContext } from './GameLayers.js';
 import { MeshLevel, DEFAULT_MESH_LEVEL_OPTIONS } from 'engine/meshlevel/MeshLevel.js';
 import { DEFAULT_FALL_RESCUE_OPTIONS } from 'engine/player/life/FallRescue.js';
-import levelJson from './vegas.mesh-level.json';
 import { ParisLift } from './ParisLift.js';
 // AI editor note: This file is overridden by EVERY community template under
 // /templates/<slug>/source/Game.ts — it's the one file all 6 templates
@@ -343,18 +342,19 @@ export class VoxelGame implements GenreGameInterface {
                 // Restore its existing velocity and input state after the first render.
                 if(body?.isValid())body.setEnabled(busy?false:bodyEnabled);
             },undefined,()=>this.refreshStreamingView());
-            // Local development level: user requested no asset uploads or publishing.
-            // Keep the local GLB authoritative during prototype development.
+            // The geographic city everywhere (2026-10-24): its runtime files stream from build/ on the dev server and
+            // from the Bitmagic CDN in a published game (RuntimeAssets.ts). Before the CDN copy existed, published builds
+            // fell back to the September level (`level-vegas`, vegas.mesh-level.json). The review and film switches
+            // below stay local-only.
             const localLevelPreview = ['localhost', '127.0.0.1'].includes(location.hostname);
-            this.meshLevel = new MeshLevel(this.engine, { glb: localLevelPreview
-                ? { url: new URL(await glbUrl(`/build/geographic-strip/detailed.glb?v=${geographicVersion.revision}`), location.origin).href }
-                : { assetId: 'level-vegas' }, level: { data: localLevelPreview?geographicLevel:levelJson } }, {
+            this.meshLevel = new MeshLevel(this.engine, { glb: { url: new URL(await glbUrl(`/build/geographic-strip/detailed.glb?v=${geographicVersion.revision}`), location.origin).href },
+                level: { data: geographicLevel } }, {
                 ...DEFAULT_MESH_LEVEL_OPTIONS,
                 lighting: { ...DEFAULT_MESH_LEVEL_OPTIONS.lighting, mode: 'exterior', spotShadowMapSize: 2048, pointLightPoolSize: 25 },
                 shadows: 'dynamic'
             });
             const loadedLevel = await this.meshLevel.load();
-            if(localLevelPreview){this.geographicCity=new GeographicCity(this.engine,this.groundSurfaces,this.streamingWork!);await this.geographicCity.load();}
+            this.geographicCity=new GeographicCity(this.engine,this.groundSurfaces,this.streamingWork!);await this.geographicCity.load();
             // Grazing sunset light needs a small outward bias on the detailed facade.
             this.engine.scene?.traverse(object => {
                 if (object instanceof THREE.DirectionalLight) {
