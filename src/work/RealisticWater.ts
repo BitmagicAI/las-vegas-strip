@@ -1,6 +1,6 @@
 import {stormDrivingEnabled} from './film/SceneSurface.js';
 import * as THREE from 'three';
-import {MeshPhysicalNodeMaterial,NodeMaterial,RenderTarget,type LightsNode,type Renderer} from 'three/webgpu';
+import {MeshPhysicalNodeMaterial,NodeMaterial,RenderTarget,type LightsNode,type Node,type Renderer} from 'three/webgpu';
 import {Fn,cameraPosition,cameraViewMatrix,cos,dot,float,fwidth,length,max,mix,normalize,positionWorld,pow,reflect,reflector,sin,smoothstep,texture,uniform,vec2,vec3,vec4} from 'three/tsl';
 import {activeDeviceQualityTier} from 'engine/quality/DeviceQuality.js';
 import {interiorLightsNode} from './InteriorLighting.js';
@@ -71,16 +71,22 @@ const LAKE_REFLECTION_SCALE=.5;
 /** `?water=nomirror` keeps the lake on the plain water material (A/B and cost checks). */
 const MIRROR_ALLOWED=typeof location==='undefined'||new URLSearchParams(location.search).get('water')!=='nomirror';
 
+/** One set of surface nodes per kind of water, shared by every pool of that kind: one shader build, not one per pool. */
+const waterNodes=new Map<WaterKind,{normal:Node<'vec3'>;color:Node<'vec3'>}>();
 function waterMaterial(kind:WaterKind,name:string):MeshPhysicalNodeMaterial{
     const m=new MeshPhysicalNodeMaterial();
     m.name=`${name} (realistic water)`;m.userData.realisticWater=kind;
     m.roughness=kind==='lake'?.035:.025;m.metalness=0;m.ior=1.333;m.specularIntensity=1;
-    const deep=new THREE.Color(BODY[kind][0]),shallow=new THREE.Color(BODY[kind][1]);
-    const n=waveNormal(kind);
-    m.normalNode=cameraViewMatrix.mul(vec4(n,0)).xyz.normalize();
-    // looking down into the water shows more of its body; at grazing angles it is all reflection
-    const view=normalize(cameraPosition.sub(positionWorld));
-    m.colorNode=mix(vec3(deep.r,deep.g,deep.b),vec3(shallow.r,shallow.g,shallow.b),smoothstep(.15,.85,view.y));
+    let nodes=waterNodes.get(kind);
+    if(!nodes){
+        const deep=new THREE.Color(BODY[kind][0]),shallow=new THREE.Color(BODY[kind][1]);
+        // looking down into the water shows more of its body; at grazing angles it is all reflection
+        const view=normalize(cameraPosition.sub(positionWorld));
+        nodes={normal:cameraViewMatrix.mul(vec4(waveNormal(kind),0)).xyz.normalize() as unknown as Node<'vec3'>,
+            color:mix(vec3(deep.r,deep.g,deep.b),vec3(shallow.r,shallow.g,shallow.b),smoothstep(.15,.85,view.y)) as unknown as Node<'vec3'>};
+        waterNodes.set(kind,nodes);
+    }
+    m.normalNode=nodes.normal;m.colorNode=nodes.color;
     return m;
 }
 

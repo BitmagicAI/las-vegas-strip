@@ -41,7 +41,7 @@ export function installShaderAudit(engine:EngineLike):void {
     };
     const totals={builds:0,buildMs:0,programs:0,programMs:0,pipelines:0,pipelineMs:0};
     // main-thread freezes over 200 ms, and the engine's warm-up compile calls, by time since navigation
-    const freezes:string[]=[],compiles:string[]=[],timeline:Record<number,number>={},stacks:Record<number,string>={};
+    const freezes:string[]=[],compiles:string[]=[],timeline:Record<number,number>={},stacks:Record<number,string>={},recent:string[]=[];
     try{new PerformanceObserver(list=>{for(const e of list.getEntries())if(e.duration>200)freezes.push(`${Math.round(e.startTime)}+${Math.round(e.duration)}`);}).observe({type:'longtask',buffered:true});}catch{/* no long-task timing */}
     const timedRenderer=engine.renderer as unknown as {compileAsync:(...a:unknown[])=>Promise<unknown>};
     const compile=timedRenderer.compileAsync.bind(timedRenderer);
@@ -57,6 +57,7 @@ export function installShaderAudit(engine:EngineLike):void {
             const second=Math.floor(t/1000);timeline[second]=(timeline[second]??0)+dt;
             const o=r.object,m=r.material;
             const kind=`${m.type}${o.isInstancedMesh||(o.count??1)>1?' instanced':''} @${owner(o)}`;
+            recent.push(`${Math.round(t)} ctx${(ro as {context:{id:number}}).context.id} ${m.type}:${m.name} ${o.name} @${owner(o)} ${dt.toFixed(1)}ms`);
             let c=builds.get(kind);if(!c)builds.set(kind,c={count:0,ms:0});
             c.count++;c.ms+=dt;
             const ctx=(ro as {context:{id:number}}).context.id;if(!stacks[ctx])stacks[ctx]=(new Error().stack??'').split('\n').slice(2,22).map(l=>l.trim().replace(/https?:\/\/[^/]+/,'')).join('\n');
@@ -82,7 +83,7 @@ export function installShaderAudit(engine:EngineLike):void {
         totals,
         builds:[...builds.entries()].map(([kind,c])=>({kind,...c})).sort((a,b)=>b.ms-a.ms),
         programs:[...programs.values()].sort((a,b)=>b.count-a.count),
-        keys,freezes,compiles,timeline,stacks,
+        keys,freezes,compiles,timeline,stacks,recent,
         contexts:Object.entries((engine.renderer as unknown as {_renderContexts:{_renderContexts:Record<string,{id:number}>}})._renderContexts._renderContexts).map(([k,v])=>`${v.id} ${k}`),
     });
     console.info('[ShaderAudit] recording node builds, programs and pipelines');

@@ -3,9 +3,10 @@ import {glbUrl} from './OptimizedGlb.js';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshStandardNodeMaterial,type Node} from 'three/webgpu';
-import {float,lights,reference} from 'three/tsl';
+import {lights,reference} from 'three/tsl';
 import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
 import {runtimeUrl} from './RuntimeAssets.js';
+import {keyWithoutShadowNodes,sharedAlphaCutoff} from './ShaderSharing.js';
 import {sharedInstancedMesh} from './SharedInstancing.js';
 
 /** Garden foliage keeps its own standard materials but is lit only by the sun
@@ -21,7 +22,8 @@ function sunLitFoliageMaterial(source:THREE.MeshStandardMaterial):MeshStandardNo
     // its setter bumps that material's version whenever the value switches between 0 and
     // non-zero: alternating leaves and trunks made every shadow caster rebuild its pipeline
     // key each frame (~90 a frame, ~45 MB/s of garbage). Same cut-off, same coverage edges.
-    if(source.alphaTest>0){material.alphaTest=0;material.alphaTestNode=float(source.alphaTest);material.maskShadowNode=(reference('map','texture',material) as unknown as Node<'vec4'>).a.greaterThan(source.alphaTest);}
+    if(source.alphaTest>0){material.alphaTest=0;material.alphaTestNode=sharedAlphaCutoff(source.alphaTest) as unknown as Node<'float'>;material.maskShadowNode=(reference('map','texture',material) as unknown as Node<'vec4'>).a.greaterThan(source.alphaTest);}
+    keyWithoutShadowNodes(material);
     return material;
 }
 interface Placement {trees:{position:[number,number,number];seed:number}[];grass:number[][]}

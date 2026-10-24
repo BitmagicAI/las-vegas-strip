@@ -30,6 +30,9 @@ const VIEWS=[
   ['bellagio-facade','city',-60,0.4,540,-1.5708,0.15],
   ['paris','city',0,0.4,180,1.5708,0.1],
   ['skyline-high','city',-60,60,540,0.6,-0.1],
+  ['venetian-casino','interior',340,0.4,-706,0,0],
+  ['venetian-casino-back','interior',340,0.4,-706,3.1416,0.1],
+  ['grand-canal','interior',322,7.4,-760,0,0],
 ];
 // --query "hotel=…" captures one view the game positions itself (review URLs), named by --shot.
 const extraQuery=opt('query',null),shot=String(opt('shot','query'));

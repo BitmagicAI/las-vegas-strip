@@ -1,6 +1,8 @@
+import type * as THREE from 'three';
 import type {Camera,Object3D,Scene,Texture} from 'three';
 import {FloatType} from 'three';
-import {NodeUpdateType,TextureNode,WebGPURenderer,type MRTNode,type Node,type NodeFrame,type PassNode,type RenderTarget} from 'three/webgpu';
+import {float} from 'three/tsl';
+import {NodeMaterial,NodeUpdateType,TextureNode,WebGPURenderer,type MRTNode,type Node,type NodeFrame,type PassNode,type RenderTarget} from 'three/webgpu';
 import type {EngineLike} from 'types/game.js';
 
 /** Fewer shaders (2026-10-24, the owner: "Ideally we would have a very small number of shaders ... If the only
@@ -93,4 +95,30 @@ class DrawnTextureNode extends TextureNode {
 }
 export function drawnTexture(property:string,placeholder:Texture):TextureNode{
     const node=new DrawnTextureNode(placeholder);node.property=property;return node;
+}
+
+/** Inputs read only by the shadow pass, which renders with three's shadow material and keys its own shader. */
+const SHADOW_ONLY=new Set(['maskShadowNode','castShadowNode','castShadowPositionNode']);
+/** Key a node material's shader by the node inputs its own passes read. three's default hashes every node input, and a
+ * node's key is its object id, so a per-material shadow mask (an interior's ceiling cut, a cut-out's `map` reference)
+ * gave each material its own build of an identical shader. Keeps a key the material already chose. */
+export function keyWithoutShadowNodes(material:THREE.Material):void{
+    const m=material as unknown as {isNodeMaterial?:boolean;customProgramCacheKey:()=>string};
+    if(!m.isNodeMaterial||m.customProgramCacheKey!==NodeMaterial.prototype.customProgramCacheKey)return;
+    m.customProgramCacheKey=function(this:Record<string,unknown>&{type:string}){
+        let key=this.type;
+        for(const property of Object.getOwnPropertyNames(this)){
+            if(property.startsWith('_')||SHADOW_ONLY.has(property))continue;
+            const node=this[property] as {isNode?:boolean;getCacheKey():number}|null;
+            if(node?.isNode)key+=`|${property}:${node.getCacheKey()}`;
+        }
+        return key;
+    };
+}
+
+const cutoffs=new Map<number,Node>();
+/** One alpha cut-off node per value, shared by every material that uses it (a node per material is a build each). */
+export function sharedAlphaCutoff(value:number):Node{
+    let node=cutoffs.get(value);if(!node){node=float(value) as unknown as Node;cutoffs.set(value,node);}
+    return node;
 }

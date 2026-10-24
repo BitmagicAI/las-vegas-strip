@@ -1,7 +1,8 @@
 import * as THREE from 'three';
 import {MeshPhysicalNodeMaterial,MeshStandardNodeMaterial,type LightsNode,type Node} from 'three/webgpu';
-import {float,lights,positionWorld,reference} from 'three/tsl';
+import {lights,positionWorld,reference} from 'three/tsl';
 import {interiorKey,INTERIOR_CASTERS,KEY_CUT_Y} from './InteriorKeyLight.js';
+import {keyWithoutShadowNodes,sharedAlphaCutoff} from './ShaderSharing.js';
 
 /** Interiors (hotel stairs, corridors, rooms and lobbies; landmark, resort and Sphere interiors) are lit
  * by a fixed list: sun, sky, ambient and their own local pool (the hotel's eight lights or the four shared
@@ -21,10 +22,12 @@ export function interiorLightsNode(scene:THREE.Scene,local:readonly THREE.Light[
 }
 
 type ShadowMasked={maskShadowNode:Node<'bool'>|null};
-/** Nothing above the key light's cut (head height + a metre) casts: ceilings, coffers, chandeliers (InteriorKeyLight). */
+const below=positionWorld.y.lessThan(KEY_CUT_Y) as unknown as Node<'bool'>;
+/** Nothing above the key light's cut (head height + a metre) casts: ceilings, coffers, chandeliers (InteriorKeyLight).
+ * Shadow-pass only, so it stays out of the material's shader key: every interior material of a kind shares one build. */
 function cutShadow(m:ShadowMasked):void{
-    const below=positionWorld.y.lessThan(KEY_CUT_Y) as unknown as Node<'bool'>;
     m.maskShadowNode=m.maskShadowNode?(m.maskShadowNode as unknown as {and(n:Node<'bool'>):Node<'bool'>}).and(below):below;
+    keyWithoutShadowNodes(m as unknown as THREE.Material);
 }
 
 /** A node-material copy of a standard/physical material that uses `node` for its lights. */
@@ -38,10 +41,10 @@ function interiorMaterial(source:THREE.Material,node:LightsNode,interior:boolean
     // three r185's node copy drops alphaTest; use nodes so the shared shadow material's alphaTest
     // never toggles between casters (that re-keys every shadow caster's pipeline each frame).
     if(source.alphaTest>0){
-        if(source.map){material.alphaTest=0;material.alphaTestNode=float(source.alphaTest);material.maskShadowNode=(reference('map','texture',material) as unknown as Node<'vec4'>).a.greaterThan(source.alphaTest);}
+        if(source.map){material.alphaTest=0;material.alphaTestNode=sharedAlphaCutoff(source.alphaTest) as unknown as Node<'float'>;material.maskShadowNode=(reference('map','texture',material) as unknown as Node<'vec4'>).a.greaterThan(source.alphaTest);}
         else material.alphaTest=source.alphaTest;
     }
-    if(interior)cutShadow(material as unknown as ShadowMasked);
+    if(interior)cutShadow(material as unknown as ShadowMasked);else keyWithoutShadowNodes(material);
     return material;
 }
 
