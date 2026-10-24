@@ -23,6 +23,7 @@ import {StreamingWork} from './StreamingWork.js';
 import {BackgroundActivity} from './BackgroundActivity.js';
 import {configureSkylineDepth} from './SkylineDepth.js';
 import {configureLightCaps} from './LightCaps.js';
+import {configureShaderSharing} from './ShaderSharing.js';
 import {extendSkylineCamera,matchHazeToSky} from './StripAtmosphere.js';
 import {CameraObstruction} from './CameraObstruction.js';
 import { GroundSurfaceIndex } from './GroundSurfaceIndex.js';
@@ -144,6 +145,7 @@ export class VoxelGame implements GenreGameInterface {
     constructor(engine: EngineLike, worldProfileData: WorldProfileData, gameData?: GameData) {
         configureSkylineDepth(engine);
         configureLightCaps(engine);
+        configureShaderSharing(engine);
         this.engine = engine;
         this.worldProfileData = worldProfileData;
         this.gameData = gameData || null;
