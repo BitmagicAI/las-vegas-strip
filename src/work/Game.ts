@@ -377,7 +377,7 @@ export class VoxelGame implements GenreGameInterface {
             if(this.meshLevel.getExtras().streamedHotels){
                 this.hotelStreaming=new HotelStreaming(this.engine,this.playerController!,this.hud,this.groundSurfaces,this.streamingWork,(yaw,pitch=0)=>{
                     this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(yaw);
-                    this.cameraManager!.getFirstPersonCamera().setVerticalAngle(pitch);
+                    this.cameraManager!.getFirstPersonCamera().setViewPitch(pitch);
                 });
                 await this.hotelStreaming.load();
                 this.doorKick=new DoorKick(this.playerController!,this.hotelStreaming);
@@ -392,7 +392,8 @@ export class VoxelGame implements GenreGameInterface {
             if (this.cameraManager?.getMode() === 'first-person') {
                 const camera = this.cameraManager.getFirstPersonCamera();
                 camera.setHorizontalAngle(-1.29);
-                camera.setVerticalAngle(-0.40);
+                // (setViewPitch, not setVerticalAngle: engine 3.1337 made that the inverse of getVerticalAngle, PI/2 = level)
+                camera.setViewPitch(-0.40);
             }
             // Local review bookmarks keep remote architecture/door checks repeatable.
             if (['localhost', '127.0.0.1'].includes(location.hostname)) {
@@ -475,7 +476,7 @@ export class VoxelGame implements GenreGameInterface {
                         : shot === 'forum-escalators' ? Math.PI
                         : shot === 'forum' ? .8 : Math.PI / 2;
                     this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(mapYaw(reviewYaw,reviewDistrict(shot!)));
-                    this.cameraManager!.getFirstPersonCamera().setVerticalAngle(shot === 'bellagio-arrival-vault' ? -.30 : shot === 'aria-ceiling' || shot === 'crystals-soffit' ? -.20 : shot?.endsWith('-exterior') ? -.29 : shot === 'caesars' || shot === 'cosmopolitan' ? -.22 : 0);
+                    this.cameraManager!.getFirstPersonCamera().setViewPitch(shot === 'bellagio-arrival-vault' ? -.30 : shot === 'aria-ceiling' || shot === 'crystals-soffit' ? -.20 : shot?.endsWith('-exterior') ? -.29 : shot === 'caesars' || shot === 'cosmopolitan' ? -.22 : 0);
                 }
                     return !!position;
                 };
@@ -491,28 +492,28 @@ export class VoxelGame implements GenreGameInterface {
                     street:[-23,.22,222,Math.PI/2]
                 };
                 const p=view?views[view]:undefined;
-                if(p){this.playerController!.teleportTo(p[0],p[1],p[2]);this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(p[3]);this.cameraManager!.getFirstPersonCamera().setVerticalAngle(0);}
+                if(p){this.playerController!.teleportTo(p[0],p[1],p[2]);this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(p[3]);this.cameraManager!.getFirstPersonCamera().setViewPitch(0);}
             }
             if(localLevelPreview){
                 const view=new URLSearchParams(location.search).get('sphereReview');
                 const point=view?this.geographicCity?.sphere.review(view):null;
-                if(point){this.playerController!.teleportTo(point.position.x,point.position.y,point.position.z);this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(point.yaw);this.cameraManager!.getFirstPersonCamera().setVerticalAngle(point.pitch);}
+                if(point){this.playerController!.teleportTo(point.position.x,point.position.y,point.position.z);this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(point.yaw);this.cameraManager!.getFirstPersonCamera().setViewPitch(point.pitch);}
             }
             if(localLevelPreview){
                 const q=new URLSearchParams(location.search),key=q.get('landmark');
                 const point=key?(this.geographicCity?.resortBlocks.review(key,q.get('view')??'entrance')??this.geographicCity?.landmarks.review(key,q.get('view')??'entrance')):null;
-                if(point){this.playerController!.teleportTo(point.position.x,point.position.y,point.position.z);this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(point.yaw);this.cameraManager!.getFirstPersonCamera().setVerticalAngle(point.pitch);}
+                if(point){this.playerController!.teleportTo(point.position.x,point.position.y,point.position.z);this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(point.yaw);this.cameraManager!.getFirstPersonCamera().setViewPitch(point.pitch);}
             }
             if(localLevelPreview && this.hotelStreaming){
                 const q=new URLSearchParams(location.search),id=q.get('hotel');
                 if(id){const p=await this.hotelStreaming.reviewPosition(id,Number(q.get('floor')??0),q.has('room')?Number(q.get('room')):null,q.get('roomView'));
                     if(p){this.playerController!.teleportTo(p.x,p.y,p.z);
                         this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(p.yaw+(q.has('hotelLobby')?Math.PI:0));
-                        this.cameraManager!.getFirstPersonCamera().setVerticalAngle(q.has('hotelLobby')?-.15:0);}}
+                        this.cameraManager!.getFirstPersonCamera().setViewPitch(q.has('hotelLobby')?-.15:0);}}
             }
             if(localLevelPreview && new URLSearchParams(location.search).has('resortReview') && this.geographicCity){
                 const visit=(key:string,view:string)=>{const p=this.geographicCity!.resortBlocks.review(key,view);if(!p)return;
-                    this.streamingWork!.enqueue('resort-review',key,()=>{this.playerController!.teleportTo(p.position.x,p.position.y,p.position.z);if(this.cameraManager!.getMode()!=='first-person')this.toggleView();this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(p.yaw);this.cameraManager!.getFirstPersonCamera().setVerticalAngle(p.pitch);});};
+                    this.streamingWork!.enqueue('resort-review',key,()=>{this.playerController!.teleportTo(p.position.x,p.position.y,p.position.z);if(this.cameraManager!.getMode()!=='first-person')this.toggleView();this.cameraManager!.getFirstPersonCamera().setHorizontalAngle(p.yaw);this.cameraManager!.getFirstPersonCamera().setViewPitch(p.pitch);});};
                 this.resortReview=new ResortBlockReview(this.engine,this.geographicCity.resortBlocks,visit,()=>this.player!.position,()=>!!this.streamingWork?.busy,()=>this.sanctuaryJeep?.placeForGarageReview());
                 visit(new URLSearchParams(location.search).get('landmark')??'cosmo','entrance');
             }
@@ -552,7 +553,7 @@ export class VoxelGame implements GenreGameInterface {
                 jeep:()=>{const v=this.playerController?.getActiveVehicle();if(!v)return null;const p=v.getPosition(),f=v.getForwardDirection();return {x:p.x,y:p.y,z:p.z,fx:f.x,fy:f.y,fz:f.z,speed:v.getSpeed() as number};},
                 engine:()=>this.engine,
                 // Fixed first-person views for repeatable A/B captures (yaw/pitch in radians).
-                look:(yaw:number,pitch:number)=>{if(this.cameraManager!.getMode()!=='first-person')this.toggleView();const c=this.cameraManager!.getFirstPersonCamera();c.setHorizontalAngle(yaw);c.setVerticalAngle(pitch);},
+                look:(yaw:number,pitch:number)=>{if(this.cameraManager!.getMode()!=='first-person')this.toggleView();const c=this.cameraManager!.getFirstPersonCamera();c.setHorizontalAngle(yaw);c.setViewPitch(pitch);},
                 /** A fixed light list for material experiments (TSL `lights`). */
                 lightsNode:(list:THREE.Light[])=>lightsNode(list),
                 inspect:(name:string)=>this.placeInspect?.(name)??false,
@@ -560,9 +561,9 @@ export class VoxelGame implements GenreGameInterface {
                 kickDoors:()=>this.hotelStreaming?.kickableDoors()??[],
                 kick:()=>{if(this.engine.camera&&this.player)this.doorKick?.kick(this.engine.camera,this.player.position);},
                 // Same placement as the ?landmark= review URL (views: entrance, lobby, skyline, ...).
-                landmark:(key:string,view:string)=>{const point=this.geographicCity?.resortBlocks.review(key,view)??this.geographicCity?.landmarks.review(key,view);if(!point)return null;this.playerController!.teleportTo(point.position.x,point.position.y,point.position.z);if(this.cameraManager!.getMode()!=='first-person')this.toggleView();const c=this.cameraManager!.getFirstPersonCamera();c.setHorizontalAngle(point.yaw);c.setVerticalAngle(point.pitch);return {x:point.position.x,y:point.position.y,z:point.position.z};},
+                landmark:(key:string,view:string)=>{const point=this.geographicCity?.resortBlocks.review(key,view)??this.geographicCity?.landmarks.review(key,view);if(!point)return null;this.playerController!.teleportTo(point.position.x,point.position.y,point.position.z);if(this.cameraManager!.getMode()!=='first-person')this.toggleView();const c=this.cameraManager!.getFirstPersonCamera();c.setHorizontalAngle(point.yaw);c.setViewPitch(point.pitch);return {x:point.position.x,y:point.position.y,z:point.position.z};},
                 // Same placement as the ?hotel= review URL, without a reload (stair: room and view null).
-                hotel:async(id:string,floor:number,room:number|null,roomView:string|null)=>{const p=await this.hotelStreaming?.reviewPosition(id,floor,room,roomView);if(!p)return null;this.playerController!.teleportTo(p.x,p.y,p.z);if(this.cameraManager!.getMode()!=='first-person')this.toggleView();const c=this.cameraManager!.getFirstPersonCamera();c.setHorizontalAngle(p.yaw);c.setVerticalAngle(0);return p;},
+                hotel:async(id:string,floor:number,room:number|null,roomView:string|null)=>{const p=await this.hotelStreaming?.reviewPosition(id,floor,room,roomView);if(!p)return null;this.playerController!.teleportTo(p.x,p.y,p.z);if(this.cameraManager!.getMode()!=='first-person')this.toggleView();const c=this.cameraManager!.getFirstPersonCamera();c.setHorizontalAngle(p.yaw);c.setViewPitch(0);return p;},
                 resident:()=>({landmarks:this.geographicCity?.landmarks.stats.residentInteriors??[],resorts:this.geographicCity?.resortBlocks.stats.residentInteriors??[],guest:this.hotelStreaming?.stats??null,interiorBatches:this.buildingVisibility?.stats.enabledInteriorBatches??0}),
             };
             if(filming){
@@ -580,7 +581,7 @@ export class VoxelGame implements GenreGameInterface {
                     position:()=>({x:this.player!.position.x,y:this.player!.position.y,z:this.player!.position.z}),
                     streamingBusy:()=>!!this.streamingWork?.busy,
                     // film pitch is positive up; the first-person camera's vertical angle is positive down
-                    look:(yaw,pitch)=>{const c=this.cameraManager!.getFirstPersonCamera();c.setHorizontalAngle(yaw);c.setVerticalAngle(-pitch);},
+                    look:(yaw,pitch)=>{const c=this.cameraManager!.getFirstPersonCamera();c.setHorizontalAngle(yaw);c.setViewPitch(-pitch);},
                     view:mode=>{if((this.cameraManager?.getMode()==='first-person')!==(mode==='first'))this.toggleView();},
                     firstPerson:()=>this.cameraManager?.getMode()==='first-person',
                     jeep:()=>this.filmScenario?.jeepPose?.()??(probe.jeep as ()=>{x:number;y:number;z:number;fx:number;fy:number;fz:number;speed:number}|null)(),
