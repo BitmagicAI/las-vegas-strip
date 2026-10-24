@@ -386,6 +386,94 @@
     "audit-pack.py reports 0 uint32 index accessors that would fit uint16",
     "Identical rendering"
    ]
+  },
+  {
+   "id": "life-traffic",
+   "title": "Traffic on the Strip and the streets around it",
+   "area": "life",
+   "size": "L",
+   "priority": "P2",
+   "summary": "The streets are empty. Cars driving the real road network would make the city feel alive (mrdoob/slop-newyork, MIT, shows how much traffic adds). runtime-assets/geographic-strip/road-network.json has 19,343 OpenStreetMap roads with their nodes, one-way flags and road classes.",
+   "items": [
+    "Lanes and turns from road-network.json; signal cycles at the Strip's main intersections",
+    "A few car models, instanced (one draw per model); headlights and brake lights are emissive, never lights",
+    "Cars stop for the player and the jeep and never drive through buildings",
+    "Positions, speeds and lanes in typed arrays; deterministic from a seed so film takes repeat (tools/film/)",
+    "Nothing near interiors or far away; a density setting in the B panel"
+   ],
+   "files": {
+    "reads": [
+     "AGENTS.md",
+     "runtime-assets/geographic-strip/road-network.json",
+     "src/work/GeographicCity.ts",
+     "src/work/DrivingSpeedAssist.ts"
+    ],
+    "writes": [
+     "src/work/"
+    ]
+   },
+   "acceptance": [
+    "60 fps held at spawn and on the Strip with traffic on (tools/probe-idle.mjs, tools/probe-views.mjs)",
+    "No runtime light-set changes and no per-frame JS arrays or allocation (AGENTS.md)",
+    "node tools/release/smoke-clone.mjs passes"
+   ]
+  },
+  {
+   "id": "life-pedestrians",
+   "title": "People on the sidewalks, bridges and casino floors",
+   "area": "life",
+   "size": "L",
+   "priority": "P2",
+   "summary": "Nobody walks the Strip. Crowds on the sidewalks, the pedestrian bridges and the casino floors would give it its scale and life.",
+   "items": [
+    "Routes along the sidewalks (Clark County pavement data in the city) and the bridge concourses (GeographicPassages)",
+    "Animated people, instanced, with a far level of detail; crossings that wait for life-traffic's signals",
+    "Inside venues, light them through lightInterior() (InteriorLighting.ts) like everything else indoors",
+    "A density setting in the B panel"
+   ],
+   "files": {
+    "reads": [
+     "AGENTS.md",
+     "src/work/GeographicPassages.ts",
+     "src/work/InteriorLighting.ts"
+    ],
+    "writes": [
+     "src/work/"
+    ]
+   },
+   "acceptance": [
+    "60 fps held on the Strip and in the Venetian casino with crowds on",
+    "No runtime light-set changes and no per-frame JS arrays or allocation (AGENTS.md)",
+    "Nobody walks through walls, cars or the player"
+   ]
+  },
+  {
+   "id": "life-sound",
+   "title": "City sound: the Strip, the casinos, the jeep",
+   "area": "life",
+   "size": "M",
+   "priority": "P2",
+   "summary": "The city is silent. A soundscape that follows where you are would add as much as the visuals: street hum and traffic outdoors, slot machines and crowds in the casinos, quiet hotel corridors, footsteps by surface, the jeep's engine.",
+   "items": [
+    "Zones from the city's own interior and venue state (outdoors, casino, lobby, corridor, room)",
+    "Spatial sources through the engine's audio system; sounds from `bitmagic generate sound` or synthesized in code",
+    "Original or generated audio only: no recorded music and no brand sounds (the Bellagio fountains play real songs)",
+    "A volume setting and mute in the B panel"
+   ],
+   "files": {
+    "reads": [
+     "AGENTS.md",
+     "engine/agent-docs/"
+    ],
+    "writes": [
+     "src/work/"
+    ]
+   },
+   "acceptance": [
+    "Sound changes with the zone without gaps or pops",
+    "No runtime light-set changes and no per-frame JS arrays or allocation (AGENTS.md)",
+    "No measurable frame-time cost at spawn (tools/probe-idle.mjs)"
+   ]
   }
  ]
 }

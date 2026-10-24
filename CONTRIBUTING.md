@@ -3,6 +3,10 @@
 Thank you for helping build Las Vegas. This page covers setup, how work is shared out, the rules that keep the city
 fast, and what counts as done. It is written for people and for the AI agents they work with.
 
+**With an AI agent:** set up as below, then say:
+
+> Read AGENTS.md and CONTRIBUTING.md, run `node tools/tasks/pick.mjs`, claim a small open task and do it.
+
 ## 1. Set up
 
 You need:
