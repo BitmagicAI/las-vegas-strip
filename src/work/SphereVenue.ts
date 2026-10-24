@@ -13,6 +13,7 @@ import type {StreamingWork} from './StreamingWork.js';
 import {SphereVideo} from './SphereVideo.js';
 import {finishSphereMaterials,addSphereSigns,addSphereSeats,disposeSphereRoot} from './SphereVisuals.js';
 import type {SphereMeta} from './SphereVisuals.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
 interface Collision {vertices:number[];indices:number[]}
 interface Media {exterior:string;exteriorPoster:string;interior:string;interiorPoster:string}
@@ -48,12 +49,12 @@ export class SphereVenue {
     private stopOnPause=(state:GameState)=>{if(state!==GameState.PLAYING){this.exosphere?.setActive(false);this.immersive?.setActive(false);}};
     constructor(private engine:EngineLike,private surfaces:GroundSurfaceIndex,private loading:StreamingWork,private siteLights:SiteLights){getGameStateManager().addListener(this.stopOnPause);}
     async load():Promise<void>{
-        const [meta,version,media]=await Promise.all([fetch(BASE+'sphere.json').then(r=>r.json()),fetch(BASE+'version.json').then(r=>r.json()),fetch(BASE+'media.json').then(r=>r.json())]);
+        const [meta,version,media]=await Promise.all([fetch(runtimeUrl(BASE+'sphere.json')).then(r=>r.json()),fetch(runtimeUrl(BASE+'version.json')).then(r=>r.json()),fetch(runtimeUrl(BASE+'media.json')).then(r=>r.json())]);
         if(this.disposed)return;this.meta=meta as SphereMeta;this.media=media as Media;this.revision=version.revision;this.center.set(...this.meta.center);this.sphere.set(this.center.clone().add(new THREE.Vector3(0,48,0)),95);
-        const [gltf,collision]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(BASE+'exterior.glb?v='+this.revision)),fetch(BASE+'exterior-collision.json?v='+this.revision).then(r=>r.json())]);
+        const [gltf,collision]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(BASE+'exterior.glb?v='+this.revision)),fetch(runtimeUrl(BASE+'exterior-collision.json?v='+this.revision)).then(r=>r.json())]);
         if(this.disposed){disposeSphereRoot(gltf.scene);return;}
         this.exterior=gltf.scene;this.exterior.position.copy(this.center);this.exterior.name='Sphere / permanent exterior';this.exterior.userData.perfOwner='Sphere · exterior';this.exterior.userData.perfKind='exterior';finishSphereMaterials(this.exterior);addSphereSigns(this.exterior,this.meta,'exterior');this.engine.scene!.add(this.exterior);
-        this.exosphere=new SphereVideo(BASE+this.media.exterior,BASE+this.media.exteriorPoster);this.exosphere.material.side=THREE.FrontSide;this.applyScreen(this.exterior,'shell',this.exosphere.material);
+        this.exosphere=new SphereVideo(runtimeUrl(BASE+this.media.exterior),runtimeUrl(BASE+this.media.exteriorPoster));this.exosphere.material.side=THREE.FrontSide;this.applyScreen(this.exterior,'shell',this.exosphere.material);
         this.exteriorCollision=collision as Collision;
         this.releaseExterior=this.surfaces.register(this.exterior);
         const radius=this.meta.radius,cy=this.meta.height-radius;
@@ -114,10 +115,10 @@ export class SphereVenue {
     }
     private async loadInterior():Promise<void>{
         if(!this.meta || !this.media)return;
-        const [gltf,collision]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(BASE+'interior.glb?v='+this.revision)),fetch(BASE+'interior-collision.json?v='+this.revision).then(r=>r.json())]);
+        const [gltf,collision]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(BASE+'interior.glb?v='+this.revision)),fetch(runtimeUrl(BASE+'interior-collision.json?v='+this.revision)).then(r=>r.json())]);
         if(this.disposed){disposeSphereRoot(gltf.scene);return;}
         this.interior=gltf.scene;this.interior.position.copy(this.center);this.interior.name='Sphere / streamed atrium and four-tier auditorium';this.interior.userData.perfOwner='Sphere · interior';this.interior.userData.perfKind='interior';finishSphereMaterials(this.interior);addSphereSigns(this.interior,this.meta,'interior');this.engine.scene!.add(this.interior);
-        this.immersive=new SphereVideo(BASE+this.media.interior,BASE+this.media.interiorPoster);this.applyScreen(this.interior,'screen',this.immersive.material);
+        this.immersive=new SphereVideo(runtimeUrl(BASE+this.media.interior),runtimeUrl(BASE+this.media.interiorPoster));this.applyScreen(this.interior,'screen',this.immersive.material);
         this.releaseInterior=this.surfaces.register(this.interior);addSphereSeats(this.interior,this.meta);
         // Lit by sun, sky, ambient and the four shared venue lights only (see InteriorLighting).
         lightInterior(this.interior,interiorLightsNode(this.engine.scene!,this.siteLights.pointLights));

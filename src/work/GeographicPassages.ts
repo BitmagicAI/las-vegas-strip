@@ -11,6 +11,7 @@ import {createPassageGeometry} from './GeographicPassageGeometry.js';
 import type {PassageData,PassageEntry} from './GeographicPassageGeometry.js';
 import {interiorLightsNode,lightInterior} from './InteriorLighting.js';
 import type {LightsNode} from 'three/webgpu';
+import {runtimeUrl} from './RuntimeAssets.js';
 interface Resident {data:PassageData;root:THREE.Group;doors:Door[];lights:THREE.Vector3[];dispose:()=>void;lastNear:number}
 export class GeographicPassages {
     private entries:PassageEntry[]=[];
@@ -31,7 +32,7 @@ export class GeographicPassages {
     constructor(private engine:EngineLike,private surfaces:GroundSurfaceIndex,private loading:StreamingWork){}
     async load(revision:string):Promise<void>{
         this.revision=revision;
-        const response=await fetch(`/build/geographic-strip/access/manifest.json?v=${revision}`);
+        const response=await fetch(runtimeUrl(`/build/geographic-strip/access/manifest.json?v=${revision}`));
         if(!response.ok)throw new Error('Bridge concourse manifest unavailable');
         this.entries=await response.json() as PassageEntry[];
         // Closed entrance silhouettes remain visible from afar. Interior
@@ -80,7 +81,7 @@ export class GeographicPassages {
         this.lightPool.forEach((l,i)=>{const p=lights[i];l.intensity=p && p.distanceTo(player)<22?22:0;if(p)l.position.copy(p);});
     }
     private async instantiate(entry:PassageEntry):Promise<void>{
-        const response=await fetch(`/build/geographic-strip/access/${entry.id}.json?v=${this.revision}`);if(!response.ok)throw new Error(`Bridge concourse unavailable: ${entry.name}`);
+        const response=await fetch(runtimeUrl(`/build/geographic-strip/access/${entry.id}.json?v=${this.revision}`));if(!response.ok)throw new Error(`Bridge concourse unavailable: ${entry.name}`);
         const data=await response.json() as PassageData;if(this.disposed)return;
         const art=createPassageGeometry(data),world=this.engine.physicsWorld!;art.root.userData.perfOwner='Bridge concourses';art.root.userData.perfKind='other';this.engine.scene!.add(art.root);
         const release=this.surfaces.register(art.root);

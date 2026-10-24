@@ -16,6 +16,7 @@ import {GeographicPassages} from './GeographicPassages.js';
 import {afterPaint,nextFrame,type StreamingWork} from './StreamingWork.js';
 import {applyStreetMaterials} from './GeographicStreetMaterials.js';
 import {CityLod} from './CityLod.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 interface CollisionCell {id:string;center:[number,number];vertices:number[];indices:number[]}
 /** Background silhouettes stay available across the skyline. Only collision
  * near the player is instantiated, with a larger eviction radius to avoid churn. */
@@ -38,9 +39,9 @@ export class GeographicCity {
     readonly resortBlocks:ResortBlocks;
     constructor(private engine:EngineLike,private surfaces:GroundSurfaceIndex,private loading:StreamingWork){this.siteLights=new SiteLights(engine.scene!);this.passages=new GeographicPassages(engine,surfaces,loading);this.sphere=new SphereVenue(engine,surfaces,loading,this.siteLights);this.highrises=new HighriseCity(engine,surfaces,loading);this.landmarks=new StripLandmarks(engine,surfaces,loading,this.siteLights);this.resortBlocks=new ResortBlocks(engine,surfaces,loading,this.siteLights);}
     async load():Promise<void>{
-        const version=await fetch('/build/geographic-strip/city-version.json').then(r=>r.json()) as {revision:string};
+        const version=await fetch(runtimeUrl('/build/geographic-strip/city-version.json')).then(r=>r.json()) as {revision:string};
         await Promise.all([this.passages.load(version.revision),this.sphere.load(),this.highrises.load(),this.landmarks.load(),this.resortBlocks.load()]);
-        const [gltf,response]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(`/build/geographic-strip/city.glb?v=${version.revision}`)),fetch(`/build/geographic-strip/city-colliders.json?v=${version.revision}`)]);
+        const [gltf,response]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(`/build/geographic-strip/city.glb?v=${version.revision}`)),fetch(runtimeUrl(`/build/geographic-strip/city-colliders.json?v=${version.revision}`))]);
         if(!response.ok)throw new Error('Mapped city collision data unavailable');
         this.cells=await response.json() as CollisionCell[];
         for(const cell of this.cells)this.byCell.set(cell.id,cell);

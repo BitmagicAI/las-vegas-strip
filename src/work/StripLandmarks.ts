@@ -19,6 +19,7 @@ import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';
 import type {StreamingWork} from './StreamingWork.js';
 import {disposeSphereRoot} from './SphereVisuals.js';
 import type {SiteLights,LightSite} from './SiteLights.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
 type XYZ=[number,number,number];
 interface Collision {vertices:number[];indices:number[]}
@@ -83,7 +84,7 @@ export class StripLandmarks {
         for(const v of this.venues)this.groves.push(new GroveLod(v.exterior));
         console.info(`[StripLandmarks] ${this.venues.length} exteriors ready; public interiors and guest hotels remain streamed.`);
     }
-    private async json<T>(file:string):Promise<T>{const r=await fetch(this.base+file+(this.revision?'?v='+this.revision:''));if(!r.ok)throw new Error('Landmark asset unavailable: '+file);return r.json() as Promise<T>;}
+    private async json<T>(file:string):Promise<T>{const r=await fetch(runtimeUrl(this.base+file+(this.revision?'?v='+this.revision:'')));if(!r.ok)throw new Error('Landmark asset unavailable: '+file);return r.json() as Promise<T>;}
     private finish(root:THREE.Group,inside:boolean):void{
         root.traverse(o=>{if(!(o instanceof THREE.Mesh))return;o.castShadow=false;o.receiveShadow=true;
             // glTF splits multi-material tree meshes into children; extras remain on their parent.

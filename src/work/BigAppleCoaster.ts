@@ -9,6 +9,7 @@ import type {PlayerController} from 'engine/player/PlayerController.js';
 import type {GameHUD} from './GameHUD.js';
 import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';
 import {CoasterTrack,CoasterRun,type CoasterRoute} from './CoasterTrack.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
 /** Local, deterministic track ride. Updates share the game's pause/background lifecycle. */
 export class BigAppleCoaster {
@@ -29,11 +30,11 @@ export class BigAppleCoaster {
   hud.createActionRow('coaster-return',{anchor:'bottom-center',controls:[{id:'return',label:'Return to platform · R',onSelect:()=>{this.requested=true;}}]});hud.setActionRowVisible('coaster-return',false);
  }
  async load():Promise<void>{
-  const v=await fetch('/build/south-strip/version.json').then(r=>r.json()) as {revision:string};const suffix='?v='+v.revision;
+  const v=await fetch(runtimeUrl('/build/south-strip/version.json')).then(r=>r.json()) as {revision:string};const suffix='?v='+v.revision;
   const [environment,train,route,collision]=await Promise.all([
    new GLTFLoader().loadAsync(await glbUrl('/build/south-strip/coaster.glb'+suffix)),new GLTFLoader().loadAsync(await glbUrl('/build/south-strip/train.glb'+suffix)),
-   fetch('/build/south-strip/route.json'+suffix).then(r=>r.json()) as Promise<CoasterRoute>,
-   fetch('/build/south-strip/coaster-collision.json'+suffix).then(r=>r.json()) as Promise<{vertices:number[];indices:number[]}>
+   fetch(runtimeUrl('/build/south-strip/route.json'+suffix)).then(r=>r.json()) as Promise<CoasterRoute>,
+   fetch(runtimeUrl('/build/south-strip/coaster-collision.json'+suffix)).then(r=>r.json()) as Promise<{vertices:number[];indices:number[]}>
   ]);
   this.track=new CoasterTrack(route);this.collision=collision;this.root.name='Big Apple Coaster • OSM mapped route';this.root.add(environment.scene);
   for(let i=0;i<3;i++){const car=train.scene.clone(true);car.name='NYC taxi car '+(i+1);this.cars.push(car);this.root.add(car);}

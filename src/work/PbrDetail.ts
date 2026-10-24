@@ -3,6 +3,7 @@ import type {Node} from 'three/webgpu';
 import {abs,cameraPosition,cameraViewMatrix,faceDirection,float,int,length,materialColor,materialRoughness,max,mix,normalWorldGeometry,normalize,positionWorld,select,sign,smoothstep,texture,uniformArray,vec2,vec3,vec4} from 'three/tsl';
 import {activeDeviceQualityTier} from 'engine/quality/DeviceQuality.js';
 import {PBR_PARAMS,PBR_SETS,detailSetFor} from './PbrDetailSets.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 
 /**
  * Photoreal surface detail from scanned CC0 materials (Poly Haven; downloaded to build/pbr/, packed by
@@ -49,12 +50,12 @@ export async function loadPbrDetail(upload:(t:THREE.Texture)=>void):Promise<void
     if(tier!=='high'&&tier!=='ultra')return;
     if(new URLSearchParams(location.search).get('pbr')==='off')return;
     try{
-        const info=await (await fetch('/build/pbr/strips/sets.json')).json() as {size:number;sets:string[];meanLinear:number[][]};
+        const info=await (await fetch(runtimeUrl('/build/pbr/strips/sets.json'))).json() as {size:number;sets:string[];meanLinear:number[][]};
         if(info.sets.join()!==PBR_SETS.join())throw new Error('build/pbr/strips is out of date: run python3 tools/pbr/pack-strips.py');
         const [albedo,normal,arm]=await Promise.all([
-            loadStrip('/build/pbr/strips/albedo.webp',info.size,THREE.SRGBColorSpace,upload),
-            loadStrip('/build/pbr/strips/normal.webp',info.size,THREE.NoColorSpace,upload),
-            loadStrip('/build/pbr/strips/arm.webp',info.size,THREE.NoColorSpace,upload)]);
+            loadStrip(runtimeUrl('/build/pbr/strips/albedo.webp'),info.size,THREE.SRGBColorSpace,upload),
+            loadStrip(runtimeUrl('/build/pbr/strips/normal.webp'),info.size,THREE.NoColorSpace,upload),
+            loadStrip(runtimeUrl('/build/pbr/strips/arm.webp'),info.size,THREE.NoColorSpace,upload)]);
         info.meanLinear.forEach((m,i)=>(MEAN.array[i] as THREE.Vector4).set(m[0]!,m[1]!,m[2]!,0));
         arrays={albedo,normal,arm};
         console.info(`[PbrDetail] ${PBR_SETS.length} scanned materials at ${info.size}px`);

@@ -1,3 +1,4 @@
+import {runtimeOnCdn,runtimeUrl} from './RuntimeAssets.js';
 /** Where a runtime GLB is loaded from: its optimized copy when one is current.
  *
  * tools/optimize/install-optimized.mjs writes meshopt-compressed copies (float positions, 8-bit
@@ -10,7 +11,7 @@
  * Content-Length and Last-Modified). A pipeline that regenerates a source therefore gets its
  * new geometry immediately, from the original, with a console note to re-run the optimizer;
  * a stale copy can never hide an edit. `?glb=original` loads every original (for A/B). Local
- * development only: elsewhere the URL is returned unchanged.
+ * development only: a published game (or `?assets=cdn`) gets the runtime set's CDN URL (RuntimeAssets.ts).
  */
 interface Entry {size:number;modified:number;optimized:string}
 let manifest:Promise<Record<string,Entry>>|null=null;
@@ -23,6 +24,7 @@ function load():Promise<Record<string,Entry>> {
 }
 
 export async function glbUrl(url:string):Promise<string> {
+    if(runtimeOnCdn)return runtimeUrl(url);
     if(!local||originals)return url;
     const parsed=new URL(url,location.origin),key=parsed.pathname.replace(/^\//,''),entry=(await load())[key];
     if(!entry)return url;

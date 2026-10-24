@@ -14,6 +14,7 @@ import type {MeshLevelData,MeshLevelCollider} from 'engine/meshlevel/MeshLevelSc
 import type {EngineLike} from 'types/game.js';
 import type {HotelSet} from './HotelLayout.js';
 import recipes from './towers.json';
+import {runtimeUrl} from '../RuntimeAssets.js';
 export type ModuleName=`${HotelSet}-${'stair'|'corridor'|'room'|'cap'|'entry'|'closure'|'door'|'corridor-end'}`|`${string}-lobby`;
 const REVISION='door-panels-6';
 const CORE=['stair','cap','entry','closure'] as const;
@@ -47,7 +48,7 @@ export class HotelTemplates {
             const url=`/build/hotels/${name}`;
             const [gltf,response]=await Promise.all([
                 new GLTFLoader().loadAsync(await glbUrl(`${url}.glb?v=${REVISION}`)),
-                fetch(`${url}.mesh-level.json?v=${REVISION}`)
+                fetch(runtimeUrl(`${url}.mesh-level.json?v=${REVISION}`))
             ]);
             if(!response.ok){this.releaseResources([gltf.scene]);throw new Error(`Cannot load hotel metadata ${name}: ${response.status}`);}
             const meta=await response.json() as MeshLevelData;

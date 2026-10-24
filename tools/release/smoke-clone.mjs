@@ -42,13 +42,15 @@ try {
   page.on('pageerror', (e) => pageErrors.push(String(e).slice(0, 300)));
   page.on('response', (r) => {
     const p = new URL(r.url()).pathname;
+    // SMOKE_CDN=1 (?assets=cdn): every runtime file must come from the CDN, as in a published game
+    if (process.env.SMOKE_CDN && new URL(r.url()).port === String(port) && /^\/(build|foliage)\//.test(p)) failed.push(`LOCAL (not CDN) ${p}`);
     if (r.status() >= 400) failed.push(`${r.status()} ${p}`);
     // the dev server answers a missing file with index.html (200), so a data file served as HTML is missing too
     else if (/\.(json|glb|webp|mp4|jpg|png|bin|wasm)$/i.test(p) && /text\/html/.test(r.headers()['content-type'] || '')
       && p !== '/build/optimized/manifest.json') failed.push(`MISSING (served index.html) ${p}`); // (a clone has no optimizer manifest, by design)
   });
   page.on('requestfailed', (r) => { const f = r.failure()?.errorText || ''; if (!/ERR_ABORTED/.test(f)) failed.push(`FAILED ${new URL(r.url()).pathname} ${f}`); });
-  await page.goto(`http://localhost:${port}/?probe`, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  await page.goto(`http://localhost:${port}/?probe${process.env.SMOKE_CDN ? '&assets=cdn' : ''}`, { waitUntil: 'domcontentloaded', timeout: 60000 });
   // (SMOKE_START_MS: a game whose start screen waits on CDN downloads, e.g. the zombie game's cast on a slow line)
   const deadline = Date.now() + Number(process.env.SMOKE_START_MS || 240000);
   while (Date.now() < deadline && !logs.some((s) => s.includes('🎮 Starting game...'))) {

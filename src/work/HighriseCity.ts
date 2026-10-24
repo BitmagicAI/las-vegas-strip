@@ -8,6 +8,7 @@ import {planCollider} from 'engine/meshlevel/MeshLevelColliders.js';
 import type {EngineLike} from 'types/game.js';
 import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';
 import type {StreamingWork} from './StreamingWork.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 interface Collision{vertices:number[];indices:number[]}
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
 interface Property{key:string;box:THREE.Box3;nodes:THREE.Mesh[];body:Body|null;pending:boolean;lastNear:number}
@@ -25,7 +26,7 @@ export class HighriseCity{
  private release:(()=>void)|null=null;
  constructor(private engine:EngineLike,private surfaces:GroundSurfaceIndex,private loading:StreamingWork){}
  async load():Promise<void>{
-  const v=await fetch('/build/highrises/version.json').then(r=>r.json()) as {revision:string};this.revision=v.revision;
+  const v=await fetch(runtimeUrl('/build/highrises/version.json')).then(r=>r.json()) as {revision:string};this.revision=v.revision;
   const gltf=await new GLTFLoader().loadAsync(await glbUrl('/build/highrises/exteriors.glb?v='+v.revision));
   if(this.disposed){this.destroy(gltf.scene);return;}
   this.root=gltf.scene;this.root.name='Photo-referenced mapped high-rises';this.engine.scene!.add(this.root);this.root.updateMatrixWorld(true);
@@ -52,7 +53,7 @@ export class HighriseCity{
    const distance=p.box.distanceToPoint(player);
    if(distance<100){p.lastNear=now;if(!p.body&&!p.pending){p.pending=true;
     this.loading.enqueue('highrise-collision:'+p.key,p.key+' exterior',async()=>{
-     try{const r=await fetch(`/build/highrises/${p.key}-collision.json?v=${this.revision}`);if(!r.ok)throw new Error('High-rise collision unavailable');const data=await r.json() as Collision;if(this.disposed)return;
+     try{const r=await fetch(runtimeUrl(`/build/highrises/${p.key}-collision.json?v=${this.revision}`));if(!r.ok)throw new Error('High-rise collision unavailable');const data=await r.json() as Collision;if(this.disposed)return;
       if(data.indices.length){const plan=planCollider({name:p.key,shape:'trimesh',...data},'terrain');p.body=PhysicsBodyFactory.createStaticBody(this.engine.physicsWorld!,plan.position,{shape:plan.shape,friction:.8,collisionGroup:plan.collisionGroup,collisionMask:plan.collisionMask},plan.quaternion).rigidBody;}
      }finally{p.pending=false;}
     },{background:distance>=30});

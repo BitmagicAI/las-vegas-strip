@@ -5,6 +5,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshStandardNodeMaterial,type Node} from 'three/webgpu';
 import {float,lights,reference} from 'three/tsl';
 import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 
 /** Garden foliage keeps its own standard materials but is lit only by the sun
  * (with its shadow), the sky and the ambient term. Thousands of overlapping blades
@@ -38,7 +39,7 @@ export class ResortFoliage {
     constructor(private scene:THREE.Scene,private owner:THREE.Group){}
     async load():Promise<void>{
         const loader=new GLTFLoader();
-        const response=await fetch('/foliage/bellagio-placements.json');if(!response.ok)throw Error('Foliage placements unavailable');
+        const response=await fetch(runtimeUrl('/foliage/bellagio-placements.json'));if(!response.ok)throw Error('Foliage placements unavailable');
         const placements=await response.json() as Placement;
         for(const file of ['tree-0','tree-1','tree-2','grass-0','grass-1'])this.assets.push((await loader.loadAsync(await glbUrl(`/foliage/${file}.glb`))).scene);
         for(const asset of this.assets)asset.traverse(o=>{if(o instanceof THREE.Mesh)for(const material of Array.isArray(o.material)?o.material:[o.material]){material.side=THREE.DoubleSide;if(material.transparent){material.transparent=false;material.alphaTest=.12;material.alphaToCoverage=true;material.depthWrite=true;}}});

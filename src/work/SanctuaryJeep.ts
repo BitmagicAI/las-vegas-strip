@@ -16,6 +16,7 @@ import type { VehicleManager } from 'engine/vehicle/VehicleManager.js';
 import type { PlayerController } from 'engine/player/PlayerController.js';
 import { PhysicsBodyFactory } from 'engine/physics/world3d/PhysicsBodyFactory.js';
 import type { GameHUD } from './GameHUD.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 
 const BAY = new THREE.Vector3(...mapPoint([-40,.51,2],'sanctuary'));
 // Aim above the low chase point: keep the jeep in the lower part of the view
@@ -85,8 +86,8 @@ export class SanctuaryJeep {
         private capsule: { height: number; radius: number }, private restoreWalkingCamera: () => void) {}
 
     async load(): Promise<void> {
-        const network = await fetch('/build/geographic-strip/road-network.json').then(r => { if(!r.ok) throw new Error('Road speed map unavailable'); return r.json(); });
-        const arrival = await fetch('/build/resort-blocks/bellagio/south-arrival-report.json').then(r => { if(!r.ok) throw new Error('Arrival speed map unavailable'); return r.json(); });
+        const network = await fetch(runtimeUrl('/build/geographic-strip/road-network.json')).then(r => { if(!r.ok) throw new Error('Road speed map unavailable'); return r.json(); });
+        const arrival = await fetch(runtimeUrl('/build/resort-blocks/bellagio/south-arrival-report.json')).then(r => { if(!r.ok) throw new Error('Arrival speed map unavailable'); return r.json(); });
         const replacements = new Map<number, DriveRoad>(arrival.roads.map((r: DriveRoad) => [r.id, {...r, highway: 'service'}]));
         this.speedAssist = new DrivingSpeedAssist(network.roads.map((r: DriveRoad) => replacements.get(r.id) ?? r));
         const loader = createGltfLoader();

@@ -38,9 +38,27 @@ runtime set stores optimized GLBs at the original paths and would overwrite the 
    run `pnpm assets`. It lists the set again and mirrors it into `runtime-assets/`: new and changed files are copied,
    files that left the set are deleted (it refuses to delete more than a tenth of the set without `--force`).
 4. `git add -A runtime-assets tools/release/asset-pack.json`, commit, and open the pull request from your fork.
+   A maintainer uploads the change to the CDN (`node tools/release/cdn-upload.mjs`) before the next publish.
 
 Every LFS version is kept, so stage after real changes only; re-optimizing an unchanged GLB writes identical bytes and
 adds nothing.
+
+## The published game: the CDN copy
+
+A published Bitmagic game is one file in object storage, with nothing beside it to fetch. So the runtime set also
+lives on the Bitmagic CDN, where forged assets live (uploaded 2026-10-24 under this game's id, `worlds/v3/<gameId>/`).
+`src/work/RuntimeAssets.ts` picks the source: `/build/...` and `/foliage/...` on the dev server, the CDN copy in a
+published game. `src/work/runtime-cdn.json` maps each request path to its CDN URL.
+
+```bash
+node tools/release/cdn-upload.mjs --dry-run   # what is new or changed since the last upload
+node tools/release/cdn-upload.mjs             # upload it and update src/work/runtime-cdn.json (maintainers)
+SMOKE_CDN=1 node tools/release/smoke-clone.mjs   # the game loading everything from the CDN (?assets=cdn)
+```
+
+Uploads cannot be deleted. Each file is named by its content hash, so a changed file is uploaded once more under a new
+name and an unchanged one is never sent twice. The CDN stores JSON and models brotli-compressed: the 1.1 GiB set takes
+much less space and bandwidth than its size on disk.
 
 ## How the runtime set is chosen
 

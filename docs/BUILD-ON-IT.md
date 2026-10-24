@@ -13,6 +13,11 @@ The project is a Bitmagic game, so it works as a starting point:
    way, in its own repository.
 4. **Publish** with `bitmagic publish`, or build it with `bitmagic build` and host it yourself.
 
+**The runtime files online.** A published game loads the city from the Bitmagic CDN (`src/work/runtime-cdn.json`,
+[ASSETS.md](ASSETS.md)). Those URLs are public: your copy can keep using them as they are. To host your own copy, for
+example after changing models, run `node tools/release/cdn-upload.mjs` with your own game id in `bitmagic.json`; it
+uploads to your game and rewrites the map.
+
 Using another engine? The GLBs in `runtime-assets/` are standard glTF 2.0 with meshopt compression. The collision, route
 and venue data are plain JSON. We support the Bitmagic path only; other engines are up to you.
 
