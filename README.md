@@ -4,6 +4,8 @@ The real Las Vegas Strip, rebuilt building by building for the browser. Walk it,
 buildings, the resorts modelled from public references, and hotel rooms, casinos and shops you can enter. Built by AI
 agents on the [Bitmagic](https://bitmagic.ai) engine.
 
+**[Try it live](https://bitmagic.ai/games/PVEF9G6NJIJ6/)** in current Chrome (WebGPU).
+
 ## Make it your own
 
 Fork it, remix it, build on it: a game, a film, a tour, an experiment. Add your game as a layer and the city stays

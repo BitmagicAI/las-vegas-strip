@@ -147,7 +147,8 @@ The zombie-era `GAME-DESIGN.md` and `mechanics-plan.md` went to `docs/history/`.
 1. Settle the decisions above, and update NOTICE.md and the licence files (the repository URL is in).
 2. `python3 tools/release/check-public.py --fix-paths`, then `python3 tools/release/check-public.py`. It must exit 0.
 3. `python3 tools/resort-blocks/review.py` and `python3 tools/tasks/build-board.py`.
-4. `python3 tools/release/asset-pack.py stage` and commit `runtime-assets/`. Optionally `build` a release snapshot,
+4. `python3 tools/release/asset-pack.py stage` and commit `runtime-assets/`, then `node tools/release/cdn-upload.mjs`
+   for the published game (published privately, unlisted, on 2026-10-24: https://bitmagic.ai/games/PVEF9G6NJIJ6/). Optionally `build` a release snapshot,
    upload it and set `pack.url` in `tools/release/asset-pack.json`.
 5. Test a clean clone on a second machine or folder:
    - `bitmagic login` (Pro) and `bitmagic upgrade`;
