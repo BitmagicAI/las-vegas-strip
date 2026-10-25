@@ -107,10 +107,12 @@ function lakeMaterial(mesh:THREE.Mesh,name:string,kind:WaterKind='lake'):NodeMat
     const uvMirror=mirror.uvNode!.add(distortion);mirror.uvNode=uvMirror;
     // micro-ripples make the lake a slightly rough mirror: a soft 9-tap disc (3 px) instead of a razor-sharp image, so a
     // reflected tower's window grid wobbles as soft stripes rather than hard zebra bands
-    const texel=uniform(new THREE.Vector2(1/1920,1/1080)),taps:{value:THREE.Texture}[]=[];
-    let blurred=mirror.rgb.mul(.2);
-    for(let i=0;i<8;i++){const a=i*Math.PI/4+.39,tap=texture(mirror.value,uvMirror.add(vec2(Math.cos(a)*3,Math.sin(a)*3).mul(texel)));taps.push(tap as unknown as {value:THREE.Texture});blurred=blurred.add(tap.rgb.mul(.1));}
-    const record:Mirror={base:mirror.reflector as unknown as MirrorBase,plane:mirror.target,material:m,camera:new THREE.PerspectiveCamera(),target:null,taps,texel,kind};
+    // Every sample reads the mirror's mip chain with a bias that holds the image at its 1080p sharpness on any display
+    // (renderMirror sets it): a 2x display's mirror has twice the rows, and its window grids crawled when the camera turned.
+    const texel=uniform(new THREE.Vector2(1/1920,1/1080)),lod=uniform(0),taps:{value:THREE.Texture}[]=[];
+    let blurred=(mirror.bias(lod) as unknown as Node<'vec4'>).rgb.mul(.2);
+    for(let i=0;i<8;i++){const a=i*Math.PI/4+.39,tap=texture(mirror.value,uvMirror.add(vec2(Math.cos(a)*3,Math.sin(a)*3).mul(texel))).bias(lod);taps.push(tap as unknown as {value:THREE.Texture});blurred=blurred.add(tap.rgb.mul(.1));}
+    const record:Mirror={base:mirror.reflector as unknown as MirrorBase,plane:mirror.target,material:m,camera:new THREE.PerspectiveCamera(),target:null,taps,texel,lod,kind};
     // Replace three's own reflector render now, before any frame draws the lake: three's renders the whole scene again
     // (twice, nested, with two mirrors) and built ~300 extra shaders in the start-up warm frame (2026-10-24).
     // Only the view camera gets a mirror (another camera, such as the sun's shadow camera, would swap the texture).
@@ -137,7 +139,9 @@ function lakeMaterial(mesh:THREE.Mesh,name:string,kind:WaterKind='lake'):NodeMat
 interface MirrorBase {updateBefore:(frame:unknown)=>unknown;textureNode:{value:THREE.Texture}}
 interface Mirror {kind:WaterKind;base:MirrorBase;plane:THREE.Object3D;material:THREE.Material;camera:THREE.PerspectiveCamera;target:RenderTarget|null;
     /** the blur's extra samples of the mirror image, and the size of one of its texels */
-    taps:{value:THREE.Texture}[];texel:{value:THREE.Vector2}}
+    taps:{value:THREE.Texture}[];texel:{value:THREE.Vector2};
+    /** mip bias of every sample: log2 of the mirror's rows over the tuned rows */
+    lod:{value:number}}
 /** Meshes lying wholly below a mirrored water surface (the lake bed): seen by the view camera, skipped by the mirror. */
 export const BELOW_WATER_LAYER=3;
 const _p=new THREE.Vector3(),_n=new THREE.Vector3(),_c=new THREE.Vector3(),_look=new THREE.Vector3(),_t=new THREE.Vector3(),_m=new THREE.Matrix4(),_size=new THREE.Vector2();
@@ -193,7 +197,12 @@ function renderMirror(mirror:Mirror,frame:{renderer:Renderer;scene:THREE.Scene;c
     }
     mirror.base.textureNode.value=mirror.target.texture;
     for(const tap of mirror.taps)tap.value=mirror.target.texture;
-    mirror.texel.value.set(1/w,1/h);
+    // The blur's reach is fixed on screen, as tuned at 1080p (2026-10-25): in mirror texels it halved its reach on a 2x
+    // display, where the reflected window grids turned back into fine stripes that crawled whenever the camera turned
+    // (the owner: "flickering really bad"). 3 texels of a 540-row mirror in play, of a 1080-row one while filming.
+    const rows=RealisticWater.everyFrame?1080:540;
+    mirror.texel.value.set(h/(rows*w),1/rows);
+    mirror.lod.value=Math.max(0,Math.log2(h/rows));
     RealisticWater.reflectionFrames++;
 }
 
