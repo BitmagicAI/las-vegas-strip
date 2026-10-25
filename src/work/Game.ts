@@ -26,6 +26,7 @@ import {configureLightCaps} from './LightCaps.js';
 import {compileForScenePass,configureShaderSharing} from './ShaderSharing.js';
 import {installShaderAudit} from './ShaderAudit.js';
 import {canonicalMaterialsOnFirstDraw} from './CanonicalMaterials.js';
+import {installStallReport} from './StallReport.js';
 import {extendSkylineCamera,matchHazeToSky} from './StripAtmosphere.js';
 import {CameraObstruction} from './CameraObstruction.js';
 import { GroundSurfaceIndex } from './GroundSurfaceIndex.js';
@@ -150,6 +151,7 @@ export class VoxelGame implements GenreGameInterface {
         configureShaderSharing(engine);
         compileForScenePass(engine);
         canonicalMaterialsOnFirstDraw(engine);
+        installStallReport(engine,()=>this.streamingWork?.busy??false);
         installShaderAudit(engine);
         // the view camera, before the first update: the start-up warm frame then renders (and builds) the lake mirrors too
         if (engine.camera) RealisticWater.camera = engine.camera;
