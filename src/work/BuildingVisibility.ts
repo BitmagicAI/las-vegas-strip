@@ -107,7 +107,16 @@ export class BuildingVisibility {
             if(streamed?.hideTower && b.node.userData.visibilityTower===streamed.hideTower)b.node.visible=false;
             if(b.node.visible){visible++;if(prepared && b.kind==='interior')this.loading?.revealUntilReady(b.node);}
         }
-        for(const light of lights) light.visible=this.pointVisible(light.position);
+        // Never change the set of lights (AGENTS.md; 2026-10-25): toggling `visible` on these level spots re-keyed every lit
+        // shader in view whenever the player's zone changed (a shadow-casting spot is compiled into the shader), and the
+        // engine's start-up warm-up, which reveals hidden objects, compiled for a light set the first frame then dropped.
+        // They stay visible; out of sight they go dark and their shadow map stops updating.
+        for(const light of lights){
+            const base=(light.userData.levelIntensity??=light.intensity) as number,on=this.pointVisible(light.position);
+            light.visible=true;light.intensity=on?base:0;
+            const shadow=(light as THREE.Light&{shadow?:THREE.LightShadow}).shadow;
+            if(light.castShadow&&shadow&&shadow.autoUpdate!==on){shadow.autoUpdate=on;if(on)shadow.needsUpdate=true;}
+        }
         const key=`${streamed?`guest:${streamed.building}:${streamed.showGround}`:zone?.name??'outdoors'}|${outside}|${[...buildings].join(',')}`;
         if(key!==this.signature) {this.signature=key;console.info(`[BuildingVisibility] ${key}: ${visible}/${this.batches.length} batches visible`);}
     }

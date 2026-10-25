@@ -34,14 +34,17 @@ export function installShaderAudit(engine:EngineLike):void {
         const o=ro.object as {receiveShadow?:boolean;geometry?:{attributes:Record<string,{itemSize:number;normalized?:boolean;data?:{stride:number}}>;index:unknown}};
         if(o.geometry)parts['@geometry']=Object.keys(o.geometry.attributes).sort().map(n=>{const a=o.geometry!.attributes[n]!;return n+(a.data?'/'+a.data.stride:'')+'/'+a.itemSize+(a.normalized?'n':'');}).join(' ');
         parts['@context']=String(ro.context.id);parts['@receiveShadow']=String(o.receiveShadow);
-        parts['@lights']=String((ro.lightsNode as {id?:number}|undefined)?.id);
+        const own=(m as {lightsNode?:{id?:number;getLights?:()=>THREE.Light[]}}).lightsNode;
+        const ln=own??ro.lightsNode as {id?:number;getLights?:()=>THREE.Light[]}|undefined;parts['@lights']=(own?'own ':'scene ')+String(ln?.id);
+        if(ln?.id!==undefined&&!lightLists[ln.id]){const all=ln.getLights?.()??[];const types:Record<string,number>={};for(const l of all)types[l.type]=(types[l.type]??0)+1;
+            lightLists[ln.id]=`${all.length} lights ${JSON.stringify(types)} shadows: ${all.filter(l=>l.castShadow).map(l=>`${l.type}:${l.name||'?'}`).join(', ')}`;}
         parts['@dynamic']=String((ro as unknown as {getDynamicCacheKey:()=>number}).getDynamicCacheKey());
         parts['@clipping']=String(ro.clippingContextCacheKey);
         return parts;
     };
     const totals={builds:0,buildMs:0,programs:0,programMs:0,pipelines:0,pipelineMs:0};
     // main-thread freezes over 200 ms, and the engine's warm-up compile calls, by time since navigation
-    const freezes:string[]=[],compiles:string[]=[],timeline:Record<number,number>={},stacks:Record<number,string>={},recent:string[]=[];
+    const freezes:string[]=[],compiles:string[]=[],timeline:Record<number,number>={},stacks:Record<number,string>={},recent:string[]=[],lightLists:Record<number,string>={};
     try{new PerformanceObserver(list=>{for(const e of list.getEntries())if(e.duration>200)freezes.push(`${Math.round(e.startTime)}+${Math.round(e.duration)}`);}).observe({type:'longtask',buffered:true});}catch{/* no long-task timing */}
     const timedRenderer=engine.renderer as unknown as {compileAsync:(...a:unknown[])=>Promise<unknown>};
     const compile=timedRenderer.compileAsync.bind(timedRenderer);
@@ -74,6 +77,28 @@ export function installShaderAudit(engine:EngineLike):void {
         }
         return state;
     };
+    // every render object, for checking what its bindings hold (atlasCheck)
+    const renderObjects=new Set<{object:THREE.Object3D;material:THREE.Material&{atlasMap?:THREE.Texture};context:{id:number};_bindings?:{bindings:{isSampledTexture?:boolean;texture?:THREE.Texture}[]}[]|null}>();
+    const objects=(engine.renderer as unknown as {_objects:{get:(...a:unknown[])=>unknown}})._objects;
+    const objectsGet=objects.get.bind(objects);
+    // the textures each GPU bind group was made with (three rebuilds a bind group only when a texture's generation changes)
+    const utils=(engine.renderer as unknown as {backend:{bindingUtils?:{createBindGroup:(g:{bindings:{isSampledTexture?:boolean;texture?:THREE.Texture}[]},l:unknown)=>unknown}}}).backend.bindingUtils;
+    const made=new WeakMap<object,THREE.Texture[]>();
+    if(utils){const create=utils.createBindGroup.bind(utils);utils.createBindGroup=(g,l)=>{made.set(g,g.bindings.filter(b=>b.isSampledTexture&&b.texture).map(b=>b.texture!));return create(g,l);};}
+    objects.get=(...a:unknown[])=>{const ro=objectsGet(...a) as never;renderObjects.add(ro);return ro;};
+    const atlasCheck=()=>{
+        let total=0,wrong=0;const examples:string[]=[],atlases=new Set<THREE.Texture>();
+        for(const ro of renderObjects)if(ro.material?.atlasMap)atlases.add(ro.material.atlasMap);
+        for(const ro of renderObjects){
+            const want=ro.material?.atlasMap;if(!want||!ro._bindings)continue;
+            for(const g of ro._bindings)for(const b of g.bindings){
+                if(!b.isSampledTexture||!b.texture||!atlases.has(b.texture))continue;
+                total++;const gpu=made.get(g)?.find(t=>atlases.has(t));
+                if(b.texture!==want||gpu!==want){wrong++;if(examples.length<10)examples.push(`${ro.object.name} ctx${ro.context.id}: binding #${b.texture.id} gpu #${gpu?.id} want #${want.id}`);}
+            }
+        }
+        return {total,wrong,examples,atlases:atlases.size};
+    };
     const backend=renderer.backend;
     const createProgram=backend.createProgram.bind(backend);
     backend.createProgram=p=>{const t=performance.now();createProgram(p);totals.programs++;totals.programMs+=performance.now()-t;};
@@ -83,7 +108,8 @@ export function installShaderAudit(engine:EngineLike):void {
         totals,
         builds:[...builds.entries()].map(([kind,c])=>({kind,...c})).sort((a,b)=>b.ms-a.ms),
         programs:[...programs.values()].sort((a,b)=>b.count-a.count),
-        keys,freezes,compiles,timeline,stacks,recent,
+        keys,freezes,compiles,timeline,stacks,recent,lightLists,atlas:atlasCheck(),
+        lightsNow:(()=>{const out:string[]=[];engine.scene?.traverse(o=>{const l=o as THREE.Light;if(l.isLight&&l.castShadow)out.push(`${l.type}:${l.name||'?'} visible=${l.visible} intensity=${l.intensity.toFixed(2)}`);});return out;})(),
         contexts:Object.entries((engine.renderer as unknown as {_renderContexts:{_renderContexts:Record<string,{id:number}>}})._renderContexts._renderContexts).map(([k,v])=>`${v.id} ${k}`),
     });
     console.info('[ShaderAudit] recording node builds, programs and pipelines');

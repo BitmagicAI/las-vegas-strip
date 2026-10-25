@@ -17,6 +17,7 @@ export class AfterlightShadows {
     private source: THREE.DirectionalLight;
     private sourceIntensity: number;
     private sourceVisible: boolean;
+    private sourceLayers = 1;
     private small: { mesh: THREE.Mesh; bounds: THREE.Box3 }[] = [];
     private material = new THREE.MeshBasicMaterial({ side: THREE.DoubleSide });
     private direction = new THREE.Vector3();
@@ -38,6 +39,9 @@ export class AfterlightShadows {
         // sun that rendered during loading destroys its WebGPU depth texture,
         // while already-compiled exterior materials can still reference it.
         source.visible = false;
+        // and out of every light list even when something reveals it: the engine's start-up warm-up shows hidden objects,
+        // which compiled every lit shader with this sun's shadow for the first frame of play to rebuild (2026-10-25)
+        this.sourceLayers = source.layers.mask; source.layers.disableAll();
         this.sun.name = 'Afterlight focused sun'; this.sun.castShadow = true;
         // Film mode needs its final allocation before any material binds the shadow texture.
         // Resizing after bloom/reflection contexts exist leaves their cached GPU bindings stale.
@@ -148,7 +152,7 @@ export class AfterlightShadows {
     }
     dispose(): void {
         this.unsubscribe();
-        this.source.intensity=this.sourceIntensity; this.source.visible=this.sourceVisible;
+        this.source.intensity=this.sourceIntensity; this.source.visible=this.sourceVisible; this.source.layers.mask=this.sourceLayers;
         this.proxies.traverse(o=>{if(o instanceof THREE.Mesh)o.geometry.dispose();}); this.material.dispose();
         this.proxies.removeFromParent();this.sun.removeFromParent();this.sun.target.removeFromParent();this.sun.shadow.dispose();
     }

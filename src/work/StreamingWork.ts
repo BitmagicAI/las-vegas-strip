@@ -32,10 +32,16 @@ export class StreamingWork {
     private disposed=false;
     private active:{label:string;at:number}|null=null;
     private unculled=new Set<Object3D>();
+    /** Roots revealed by the running held job, pre-compiled before its first frames. */
+    private revealed:Object3D[]=[];
     private heldSince=0;
     /** Timings of finished jobs, oldest first (capped). */
     readonly history:StreamingJobTiming[]=[];
-    constructor(private progress:StreamingProgress,private hold:(busy:boolean)=>void,private paint=afterPaint,private settle:()=>void=()=>{}){}
+    /** `precompile` builds the shaders and pipelines of a held job's revealed roots off the frame (Game: the renderer's
+     * compileAsync), so its first frames draw them instead of building them one by one (2026-10-25: a teleport to the
+     * Venetian streamed three interiors and stalled ~4 s on 41 pipelines). */
+    constructor(private progress:StreamingProgress,private hold:(busy:boolean)=>void,private paint=afterPaint,private settle:()=>void=()=>{},
+        private precompile:(roots:readonly Object3D[])=>Promise<void>=()=>Promise.resolve()){}
     /** True while the game is held for a job (the loading panel is up). Background work does not count. */
     get busy():boolean{return this.holding;}
     /** Correlation only: overlap does not prove the loading job caused a hitch. Background jobs count too. */
@@ -65,6 +71,7 @@ export class StreamingWork {
     revealUntilReady(root:Object3D):void {
         if(!this.holding)return;
         root.traverse(node=>{if(node.frustumCulled){this.unculled.add(node);node.frustumCulled=false;}});
+        this.revealed.push(root);
     }
     private restoreCulling():void {for(const node of this.unculled)node.frustumCulled=true;this.unculled.clear();}
     private record(key:string,job:Job,started:number,prepareMs:number,revealStart:number,end:number):void {
@@ -96,6 +103,7 @@ export class StreamingWork {
                 await job.prepare();if(this.disposed)return;
                 const prepareMs=performance.now()-prepareStart;
                 this.settle();
+                if(this.revealed.length){await this.precompile(this.revealed.splice(0));if(this.disposed)return;}
                 this.progress.show(`Loading… ${job.label}`,1,2);
                 // The normal renderer uploads/compiles only this visible scene.
                 // Do not warm every hidden resort or un-cull the whole city.

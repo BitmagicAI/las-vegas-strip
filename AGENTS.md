@@ -79,7 +79,29 @@ fails if a streamed venue creates a light. Measure stalls with `tools/probe-stre
 (`--jeep` drives the real vehicle) before and after; the method and numbers are in
 `docs/project-records/streaming-stalls-2026-10-06/`. Streaming for a passing vehicle
 (`PassingDetector`) and background streaming jobs (`StreamingWork`, `background: true`) exist so
-a drive past a building costs nothing.
+a drive past a building costs nothing. The level's spot lights (`BuildingVisibility`) stay visible and go dark (intensity 0,
+shadow map paused) out of sight; the engine's replaced sun has its layers cleared, so even the engine's start-up warm-up,
+which reveals hidden objects, compiles for the light set the game plays with.
+
+## Keep the shader count small
+
+The owner (2026-10-24): "a very small number of shaders ... if the only difference is vertex buffer and textures, we
+should not have any recompiling." Each distinct three.js cache key costs a node build (~12 ms of main thread for a lit
+material) and usually a GPU pipeline; start-up went from 2,646 builds (21.5 s) to ~340 (1 s). The rules:
+- Instanced drawing goes through `sharedInstancedMesh` (`SharedInstancing.ts`), never `InstancedMesh`: three keys every
+  InstancedMesh by its uuid. Every instanced mesh also reads matrices from vertex attributes (`ShaderSharing.ts`).
+- A node material's default key hashes its node inputs by object id. A family of materials shares its node objects and
+  reads per-material values with `materialReference` or `drawnTexture` (a texture taken from the drawn material), with
+  one `customProgramCacheKey` per variant (city surfaces, PbrDetail); shadow-only inputs stay out of the key
+  (`keyWithoutShadowNodes`); constants come from shared nodes (`sharedAlphaCutoff`, one set of water nodes per kind).
+- Plain materials get a white colour map and a flat normal map when first drawn (`CanonicalMaterials.ts`), so texture
+  slots do not split them; code reading a slot later checks `isDefaultTexture`.
+- The engine's warm-up compiles against the scene pass's own render context, with pipelines in parallel
+  (`compileForScenePass`), and streaming jobs pre-compile what they reveal (`StreamingWork` `precompile`). The lake
+  mirrors' pass is not pre-compiled (see the note in `ShaderSharing.ts`).
+- Measure: `node tools/probe-shaders.mjs` (`?shaderAudit`: builds, programs, contexts, light lists, freezes; `TELEPORT=`)
+  and `node tools/probe-stalls.mjs` (turns and teleports on a fresh profile). A/B switches on localhost:
+  `?canonical=off`, `?precompile=serial|plain`.
 
 ## Runtime memory and per-frame work
 

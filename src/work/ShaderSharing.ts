@@ -29,14 +29,45 @@ type Contexts={_renderContexts:Record<string,{id:number}>;get:(target:RenderTarg
  * every pre-compiled shader was a throwaway (the engine's WarmupController calls it a known limit) and the warm frame
  * then built the real ones in one blocking burst, 1,122 node builds and ~11 s of main thread with half of them unused.
  * Here each pre-compile renders into a small throwaway target with the scene pass's attachments and MRT, at the depth the
- * pass renders at (the engine's own suggestion), so it builds exactly what the frame draws with, off the frame. */
+ * pass renders at (the engine's own suggestion), so it builds exactly what the frame draws with, off the frame.
+ * three's compileAsync then waits for each object's pipeline before starting the next object's (2026-10-25: ~190
+ * pipelines one after another, 16 s), so their promises are collected instead and awaited together at the end of the
+ * call: the GPU process compiles them side by side, and the engine still holds its render loop until all are ready. */
 export function compileForScenePass(engine:EngineLike):void {
     const renderer=engine.renderer;
     if(!(renderer instanceof WebGPURenderer))return;
     const contexts=(renderer as unknown as {_renderContexts?:Contexts})._renderContexts;
     if(!contexts?.get||!contexts._renderContexts)throw new Error('Unsupported three renderer: no render contexts to compile against');
     type Compile=(scene:Object3D,camera:Camera,target?:Scene|null)=>Promise<unknown>;
-    const compileAsync=renderer.compileAsync.bind(renderer) as Compile;
+    type ForRender=(renderObject:unknown,promises?:Promise<unknown>[]|null)=>unknown;
+    const pipelines=(renderer as unknown as {_pipelines?:{getForRender:ForRender}})._pipelines;
+    if(!pipelines?.getForRender)throw new Error('Unsupported three renderer: no pipeline cache to compile into');
+    const original=renderer.compileAsync.bind(renderer) as Compile,forRender=pipelines.getForRender;
+    // `?precompile=serial|plain` on localhost: three's own waiting, or no redirect at all (A/B)
+    const mode=typeof location!=='undefined'&&['localhost','127.0.0.1'].includes(location.hostname)?new URLSearchParams(location.search).get('precompile'):null;
+    if(mode==='plain')return;
+    const compileAsync:Compile=(scene,camera,target)=>{
+        if(mode==='serial')return original(scene,camera,target);
+        const pending:Promise<unknown>[]=[];
+        pipelines.getForRender=function(this:unknown,renderObject,promises=null){
+            if(!promises)return forRender.call(this,renderObject,promises);
+            const mine:Promise<unknown>[]=[],pipeline=forRender.call(this,renderObject,mine);
+            for(const p of mine)pending.push(p);
+            return pipeline;
+        };
+        return original(scene,camera,target).then(()=>Promise.all(pending)).finally(()=>{pipelines.getForRender=forRender;});
+    };
+    /** Compile into `into` with `mrt`, as if rendered at call depth `depth`. compileAsync picks its render context
+     * synchronously, before its first await, so everything is restored right after the call. */
+    const compileInto=(into:RenderTarget,mrt:MRTNode|null,depth:number,scene:Object3D,camera:Camera,target?:Scene|null)=>{
+        const previousTarget=renderer.getRenderTarget(),previousMrt=renderer.getMRT(),get=contexts.get;
+        renderer.setRenderTarget(into);renderer.setMRT(mrt);
+        contexts.get=(rt,m,d=0)=>get.call(contexts,rt,m,rt===into&&m===mrt?depth:d);
+        let compiling:Promise<unknown>;
+        try{compiling=compileAsync(scene,camera,target);}
+        finally{contexts.get=get;renderer.setRenderTarget(previousTarget);renderer.setMRT(previousMrt);}
+        return compiling.finally(()=>into.dispose());
+    };
     (renderer as unknown as {compileAsync:Compile}).compileAsync=(scene,camera,target)=>{
         const pass=scenePass(engine),mrt=pass?.getMRT()??null;
         if(!pass||!mrt)return compileAsync(scene,camera,target);
@@ -50,16 +81,14 @@ export function compileForScenePass(engine:EngineLike):void {
         throwaway.samples=samples;
         throwaway.texture.type=renderer.getOutputBufferType();
         if(renderer.reversedDepthBuffer&&throwaway.depthTexture)throwaway.depthTexture.type=FloatType;
-        const previousTarget=renderer.getRenderTarget(),previousMrt=renderer.getMRT(),get=contexts.get;
-        renderer.setRenderTarget(throwaway);renderer.setMRT(mrt);
-        contexts.get=(rt,m,d=0)=>get.call(contexts,rt,m,rt===throwaway&&m===mrt?depth:d);
-        // compileAsync picks its render context synchronously, before its first await: restore right after
-        let compiling:Promise<unknown>;
-        try{compiling=compileAsync(scene,camera,target);}
-        finally{contexts.get=get;renderer.setRenderTarget(previousTarget);renderer.setMRT(previousMrt);}
-        return compiling.finally(()=>throwaway.dispose());
+        return compileInto(throwaway,mrt,depth,scene,camera,target);
     };
 }
+
+// Not pre-compiled: the lake mirrors' own pass (renderMirror: a half-float 4-sample target at call depth 2, ~90 builds,
+// 0.9 s of the warm frame). Compiling it the same way (a 16 px throwaway target, depth forced to 2) made door frames from
+// somewhere below the street show through the road at the Paris view (2026-10-25, found with ?precompile=serial|scene;
+// not traced further).
 
 /** The post chain's scene pass: the pass node that renders the engine's scene with an MRT. */
 function scenePass(engine:EngineLike):PassNode|null {

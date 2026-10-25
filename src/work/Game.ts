@@ -25,6 +25,7 @@ import {configureSkylineDepth} from './SkylineDepth.js';
 import {configureLightCaps} from './LightCaps.js';
 import {compileForScenePass,configureShaderSharing} from './ShaderSharing.js';
 import {installShaderAudit} from './ShaderAudit.js';
+import {canonicalMaterialsOnFirstDraw} from './CanonicalMaterials.js';
 import {extendSkylineCamera,matchHazeToSky} from './StripAtmosphere.js';
 import {CameraObstruction} from './CameraObstruction.js';
 import { GroundSurfaceIndex } from './GroundSurfaceIndex.js';
@@ -148,6 +149,7 @@ export class VoxelGame implements GenreGameInterface {
         configureLightCaps(engine);
         configureShaderSharing(engine);
         compileForScenePass(engine);
+        canonicalMaterialsOnFirstDraw(engine);
         installShaderAudit(engine);
         // the view camera, before the first update: the start-up warm frame then renders (and builds) the lake mirrors too
         if (engine.camera) RealisticWater.camera = engine.camera;
@@ -348,7 +350,11 @@ export class VoxelGame implements GenreGameInterface {
                 // Hold the capsule exactly in place, including on stair slopes.
                 // Restore its existing velocity and input state after the first render.
                 if(body?.isValid())body.setEnabled(busy?false:bodyEnabled);
-            },undefined,()=>this.refreshStreamingView());
+            },undefined,()=>this.refreshStreamingView(),async roots=>{
+                const renderer=this.engine.renderer as unknown as {compileAsync?:(root:THREE.Object3D,camera:THREE.Camera,scene:THREE.Scene)=>Promise<unknown>},camera=this.engine.camera,scene=this.engine.scene;
+                if(!renderer.compileAsync||!camera||!scene)return;
+                for(const root of roots)await renderer.compileAsync(root,camera,scene);
+            });
             // The geographic city everywhere (2026-10-24): its runtime files stream from build/ on the dev server and
             // from the Bitmagic CDN in a published game (RuntimeAssets.ts). Before the CDN copy existed, published builds
             // fell back to the September level (`level-vegas`, vegas.mesh-level.json). The review and film switches
