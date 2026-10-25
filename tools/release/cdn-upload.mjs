@@ -39,8 +39,19 @@ map.gameId = gameId;
 
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 // (path as the game requests it, without the leading slash) -> file on disk
+// public/ GLBs (the garden planting) upload their optimized copy (build/optimized/, tools/optimize/foliage-trees.mjs)
+// while it was made from the file now on disk, as src/work/OptimizedGlb.ts serves it on the dev server.
+const optimized = fs.existsSync(path.join(ROOT, 'build/optimized/manifest.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'build/optimized/manifest.json'), 'utf8')).files : {};
+const publicFile = (p) => {
+  const source = path.join(ROOT, 'public', p), entry = optimized[p];
+  if (!entry) return source;
+  const stat = fs.statSync(source);
+  if (stat.size === entry.size && Math.floor(stat.mtimeMs / 1000) === Math.floor(entry.modified / 1000) && fs.existsSync(path.join(ROOT, entry.optimized))) return path.join(ROOT, entry.optimized);
+  console.warn(`${p}: its optimized copy is out of date; uploading the original (re-run node tools/optimize/foliage-trees.mjs)`);
+  return source;
+};
 const wanted = [...list.files.map((f) => [f.path, path.join(ROOT, 'runtime-assets', f.path.slice('build/'.length))]),
-  ...PUBLIC.map((p) => [p, path.join(ROOT, 'public', p)])];
+  ...PUBLIC.map((p) => [p, publicFile(p)])];
 
 const todo = [];
 for (const [key, file] of wanted) {

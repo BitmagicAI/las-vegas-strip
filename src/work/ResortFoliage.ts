@@ -46,9 +46,17 @@ export class ResortFoliage {
         const response=await fetch(runtimeUrl('/foliage/bellagio-placements.json'));if(!response.ok)throw Error('Foliage placements unavailable');
         const placements=await response.json() as Placement;
         for(const file of ['tree-0','tree-1','tree-2','grass-0','grass-1'])this.assets.push((await loader.loadAsync(await glbUrl(`/foliage/${file}.glb`))).scene);
+        // The middle tree LOD's runtime copy has no textures of its own (tools/optimize/foliage-trees.mjs): its meshes take
+        // tree-0's materials, which are the same Poly Haven maps.
+        const near=new Map<string,THREE.Material>();
+        this.assets[0]!.traverse(o=>{if(o instanceof THREE.Mesh)for(const m of Array.isArray(o.material)?o.material:[o.material])near.set(m.name,m);});
+        this.assets[1]!.traverse(o=>{if(!(o instanceof THREE.Mesh))return;
+            const pick=(m:THREE.Material)=>{const n=near.get(m.name);if(!n||n===m)return m;m.dispose();return n;};
+            o.material=Array.isArray(o.material)?o.material.map(pick):pick(o.material);});
         for(const asset of this.assets)asset.traverse(o=>{if(o instanceof THREE.Mesh)for(const material of Array.isArray(o.material)?o.material:[o.material]){material.side=THREE.DoubleSide;if(material.transparent){material.transparent=false;material.alphaTest=.12;material.alphaToCoverage=true;material.depthWrite=true;}}});
         for(const asset of this.assets.slice(3))asset.traverse(o=>{if(o instanceof THREE.Mesh)for(const m of Array.isArray(o.material)?o.material:[o.material])if(m instanceof THREE.MeshStandardMaterial){m.roughnessMap=null;m.roughness=1;m.metalness=0;m.envMapIntensity=0;m.normalScale.set(.35,.35);m.emissive.setHex(0x526b2b);m.emissiveIntensity=.25;m.emissiveMap=m.map;}});
-        for(const asset of this.assets)asset.traverse(o=>{if(!(o instanceof THREE.Mesh))return;const swap=(m:THREE.Material)=>{if(!(m instanceof THREE.MeshStandardMaterial)||m instanceof MeshStandardNodeMaterial)return m;const lit=sunLitFoliageMaterial(m);m.dispose();this.sunLit.push(lit);return lit;};o.material=Array.isArray(o.material)?o.material.map(swap):swap(o.material);});
+        const converted=new Map<THREE.Material,THREE.Material>();
+        for(const asset of this.assets)asset.traverse(o=>{if(!(o instanceof THREE.Mesh))return;const swap=(m:THREE.Material)=>{if(!(m instanceof THREE.MeshStandardMaterial)||m instanceof MeshStandardNodeMaterial)return m;let lit=converted.get(m);if(!lit){const l=sunLitFoliageMaterial(m);m.dispose();this.sunLit.push(l);converted.set(m,l);lit=l;}return lit;};o.material=Array.isArray(o.material)?o.material.map(swap):swap(o.material);});
         this.root.name='Bellagio botanical planting';this.root.userData.perfOwner='Bellagio · trees and lawn';this.root.userData.perfKind='exterior';this.owner.add(this.root);
         this.populate(placements.trees.map(t=>[...t.position,t.seed%6283/1000,.88+(t.seed%23)/100]),this.assets.slice(0,3),40,[85,220,650],true);
         this.populate(placements.grass,this.assets.slice(3),12,[14,36],false);
