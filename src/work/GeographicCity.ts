@@ -17,7 +17,7 @@ import {afterPaint,nextFrame,type StreamingWork} from './StreamingWork.js';
 import {applyStreetMaterials} from './GeographicStreetMaterials.js';
 import {CityLod} from './CityLod.js';
 import {runtimeUrl} from './RuntimeAssets.js';
-import {prefetch} from './Prefetch.js';
+import {loadGltf,prefetch,takePrefetched} from './Prefetch.js';
 interface CollisionCell {id:string;center:[number,number];vertices:number[];indices:number[]}
 /** Background silhouettes stay available across the skyline. Only collision
  * near the player is instantiated, with a larger eviction radius to avoid churn. */
@@ -45,9 +45,11 @@ export class GeographicCity {
         // the city's 74 MB come down while the landmarks above are parsed (Prefetch.ts)
         prefetch([await glbUrl(`/build/geographic-strip/city.glb?v=${version.revision}`),runtimeUrl(`/build/geographic-strip/city-colliders.json?v=${version.revision}`)]);
         await parts;
-        const [gltf,response]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(`/build/geographic-strip/city.glb?v=${version.revision}`)),fetch(runtimeUrl(`/build/geographic-strip/city-colliders.json?v=${version.revision}`))]);
-        if(!response.ok)throw new Error('Mapped city collision data unavailable');
-        this.cells=await response.json() as CollisionCell[];
+        const collidersUrl=runtimeUrl(`/build/geographic-strip/city-colliders.json?v=${version.revision}`),prefetched=takePrefetched(collidersUrl);
+        const [gltf,colliders]=await Promise.all([loadGltf(new GLTFLoader(),await glbUrl(`/build/geographic-strip/city.glb?v=${version.revision}`)),
+            prefetched?.then(b=>b?new TextDecoder().decode(b):null)??null]);
+        if(colliders!==null)this.cells=JSON.parse(colliders) as CollisionCell[];
+        else{const response=await fetch(collidersUrl);if(!response.ok)throw new Error('Mapped city collision data unavailable');this.cells=await response.json() as CollisionCell[];}
         for(const cell of this.cells)this.byCell.set(cell.id,cell);
         this.root=gltf.scene;this.root.name='OpenStreetMap / geographic Strip';
         this.releases.push(applyStreetMaterials(this.root,this.engine.renderer instanceof WebGPURenderer && this.engine.renderer.reversedDepthBuffer));

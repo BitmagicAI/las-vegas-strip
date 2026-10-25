@@ -20,7 +20,7 @@ import type {StreamingWork} from './StreamingWork.js';
 import {disposeSphereRoot} from './SphereVisuals.js';
 import type {SiteLights,LightSite} from './SiteLights.js';
 import {runtimeUrl} from './RuntimeAssets.js';
-import {prefetch} from './Prefetch.js';
+import {loadGltf,prefetch} from './Prefetch.js';
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
 type XYZ=[number,number,number];
 interface Collision {vertices:number[];indices:number[]}
@@ -58,7 +58,7 @@ export class StripLandmarks {
         prefetch(await Promise.all(meta.map(m=>glbUrl(this.base+m.key+'-exterior.glb?v='+this.revision))));
         // Limit concurrent parsing so startup doesn't briefly double every asset's memory.
         for(const m of meta){
-            const gltf=await new GLTFLoader().loadAsync(await glbUrl(this.base+m.key+'-exterior.glb?v='+this.revision));
+            const gltf=await loadGltf(new GLTFLoader(),await glbUrl(this.base+m.key+'-exterior.glb?v='+this.revision));
             if(this.disposed){disposeSphereRoot(gltf.scene);return;}
             const exterior=gltf.scene;exterior.name=m.name+' / exterior';exterior.userData.perfOwner=m.name+' · exterior';exterior.userData.perfKind='exterior';this.finish(exterior,false);if(m.key==='bellagioBlock')applyLawnMaterial(exterior);this.engine.scene!.add(exterior);
             const details:THREE.Object3D[]=[];const proxies:THREE.Mesh[]=[];
