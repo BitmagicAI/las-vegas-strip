@@ -20,6 +20,7 @@ import type {StreamingWork} from './StreamingWork.js';
 import {disposeSphereRoot} from './SphereVisuals.js';
 import type {SiteLights,LightSite} from './SiteLights.js';
 import {runtimeUrl} from './RuntimeAssets.js';
+import {prefetch} from './Prefetch.js';
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
 type XYZ=[number,number,number];
 interface Collision {vertices:number[];indices:number[]}
@@ -53,6 +54,8 @@ export class StripLandmarks {
     setPassing(passing:boolean):void {this.passing=passing;}
     async load():Promise<void>{
         const [meta,version]=await Promise.all([this.json<Meta[]>('venues.json'),this.json<{revision:string}>('version.json')]);this.revision=version.revision;
+        // every exterior downloads ahead of the serial parse below (Prefetch.ts)
+        prefetch(await Promise.all(meta.map(m=>glbUrl(this.base+m.key+'-exterior.glb?v='+this.revision))));
         // Limit concurrent parsing so startup doesn't briefly double every asset's memory.
         for(const m of meta){
             const gltf=await new GLTFLoader().loadAsync(await glbUrl(this.base+m.key+'-exterior.glb?v='+this.revision));
