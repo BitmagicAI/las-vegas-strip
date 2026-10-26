@@ -2,7 +2,7 @@
   "id": "hofbrauhaus",
   "name": "Hofbr\u00e4uhaus Las Vegas",
   "status": "active",
-  "statusNote": "New expansion beyond the earlier corridor survey. Research and baseline stage; no replacement geometry installed.",
+  "statusNote": "Claimed exterior study with original geometry and three offline Blender review views. Not installed; entrances, yard, interior and runtime acceptance remain pending.",
   "claim": {
     "issue": 232,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/232",
@@ -21,21 +21,39 @@
       "provider": "Hofbr\u00e4uhaus Las Vegas",
       "accessDate": "2026-10-26",
       "observed": "Painted hall ceiling, communal benches; enclosed garden with sky ceiling, fountain and six chestnut trees."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CQ05o60v3mkQj9JXARmGlA&heading=80&pitch=8",
+      "provider": "Google Street View",
+      "accessDate": "2026-10-26",
+      "observed": "February 2026 Paradise Road panorama: west window tiers, roof dormers, shaped gables and northwest projecting bay. Visual reference only; no imagery or mesh extraction."
     }
   ],
   "dimensions": {
     "footprint": "way/111339182",
     "mappedAreaM2": 1857.54,
     "mappedHeightM": 6,
-    "heightStatus": "Unknown-source commercial default; must verify."
+    "heightStatus": "Unknown-source commercial default; must verify.",
+    "estimatedStudyHeightsM": {
+      "eaves": 11.65,
+      "ridge": 16.1
+    },
+    "studyHeightStatus": "Image-based estimates, not surveyed dimensions; require further corroboration."
   },
   "remaining": [
-    "Survey current exterior views, entrances, roof heights and installed ownership; retain uncertain dimensions explicitly.",
-    "Replace mapped shell with reference-led exterior and yard geometry.",
-    "Build streamed beer hall and indoor garden with walkable public circulation; document inferred layout.",
-    "Verify installed matching views, collision/routes, frame time and asset packaging."
+    "Refine north gable, roof intersections, fa\u00e7ade ornament and exact entry locations against references; current study is not photorealistic.",
+    "Add reference-supported yard, public entrances and collision; replace only the owned mapped shell.",
+    "Corroborate public hall/garden arrangement; build streamed walkable interiors with inferred areas explicitly documented.",
+    "Install optimized assets, inspect matching in-game views, walk entrances, measure performance and verify packaging."
   ],
-  "implemented": [],
-  "validation": {},
+  "implemented": [
+    "Original staged exterior builder on mapped footprint with window tiers, shaped gables, projecting northwest bay and pitched dormers.",
+    "Separate repeatable GLB exporter with original clay-tile textures and local-axis metre-scale UVs. No runtime asset registration yet."
+  ],
+  "validation": {
+    "stagedExport": "Blender 5.2.1 GLB export passed",
+    "geometry": "48,536 triangles in 10 geometry groups before exported text",
+    "visualReview": "Three offline daylight views rendered; northwest view inspected after roof revisions. This is not installed-game acceptance."
+  },
   "evidence": []
 }

@@ -11918,12 +11918,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "New expansion beyond the earlier corridor survey. Research and baseline stage; no replacement geometry installed.",
+   "summary": "Claimed exterior study with original geometry and three offline Blender review views. Not installed; entrances, yard, interior and runtime acceptance remain pending.",
    "items": [
-    "Survey current exterior views, entrances, roof heights and installed ownership; retain uncertain dimensions explicitly.",
-    "Replace mapped shell with reference-led exterior and yard geometry.",
-    "Build streamed beer hall and indoor garden with walkable public circulation; document inferred layout.",
-    "Verify installed matching views, collision/routes, frame time and asset packaging."
+    "Refine north gable, roof intersections, façade ornament and exact entry locations against references; current study is not photorealistic.",
+    "Add reference-supported yard, public entrances and collision; replace only the owned mapped shell.",
+    "Corroborate public hall/garden arrangement; build streamed walkable interiors with inferred areas explicitly documented.",
+    "Install optimized assets, inspect matching in-game views, walk entrances, measure performance and verify packaging."
    ],
    "record": "tools/resort-blocks/hofbrauhaus.json",
    "buildings": [],
@@ -11935,7 +11935,12 @@
     "writes": [
      "tools/resort-blocks/hofbrauhaus.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_hofbrauhaus.py",
+     "tools/strip-landmarks/build_hofbrauhaus.py",
+     "tools/strip-landmarks/hofbrauhaus.py",
+     "tools/strip-landmarks/review_hofbrauhaus.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
