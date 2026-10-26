@@ -50,13 +50,14 @@ pool.offer('x',[site(0,0,55)]);pool.apply({x:5,y:0,z:0});assert.equal(pool.pool.
 // 5. Disposal removes the lights.
 pool.dispose();assert.equal(lightIds(scene).length,0);
 
-// 6. Regression guard: nothing but the three constant pools may create a point light, and the two streamed
-//    venues must not touch lights at all (they borrow SiteLights).
-const allowed=new Set(['SiteLights.ts','GeographicPassages.ts','HotelStreaming.ts']);
+// 6. Regression guard: nothing but the constant pools may create a point light (NearbyLights' eight stand-ins are made
+//    once at boot and stay out of the scene graph; the film look's lamps are made once when filming starts, before any
+//    take compiles), and the two streamed venues must not touch lights at all (they borrow SiteLights).
+const allowed=new Set(['SiteLights.ts','GeographicPassages.ts','HotelStreaming.ts','NearbyLights.ts','SceneAtmosphere.ts']);
 const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
 for(const file of walk('src/work').filter(f=>f.endsWith('.ts'))){
  const text=fs.readFileSync(file,'utf8'),name=path.basename(file);
- if(/new (THREE\.)?PointLight\(/.test(text))assert.ok(allowed.has(name)||/characters\/CharacterReview/.test(file),`${file} creates a PointLight: use SiteLights or an intensity-driven pool created at boot`);
+ if(/new (THREE\.)?PointLight\(/.test(text))assert.ok(allowed.has(name),`${file} creates a PointLight: use SiteLights or an intensity-driven pool created at boot`);
 }
 // Exactly one pool for the whole city: every extra pool is four more lights evaluated by every lit fragment forever.
 const pools=walk('src/work').filter(f=>f.endsWith('.ts')).filter(f=>/new SiteLights\(/.test(fs.readFileSync(f,'utf8')));

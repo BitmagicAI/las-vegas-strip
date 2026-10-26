@@ -115,32 +115,6 @@
    "owner": "maintainer"
   },
   {
-   "id": "tool-fix-tests",
-   "title": "Bring the stale logic tests up to date",
-   "area": "tooling",
-   "size": "M",
-   "priority": "P1",
-   "summary": "On 2026-10-22 the city's tests were run in a clean clone with the runtime pack. Three fail, and they failed in the maintainer's checkout too: the code moved on and the tests did not. The game's tests (sanctuary, supply loop, cast, storm) moved to the game project with it.",
-   "items": [
-    "tests/building-visibility.mjs: TypeError reading 'linear' (a stub no longer matches the code)",
-    "tests/shadow-casters.test.mjs: imports a module that no longer exists",
-    "tests/site-lights.test.mjs: flags src/work/NearbyLights.ts. It creates its eight stand-in PointLights once at boot, outside the scene graph (AGENTS.md), so allow that file explicitly; do not weaken the rule for streamed venues"
-   ],
-   "files": {
-    "reads": [
-     "tests/",
-     "AGENTS.md"
-    ],
-    "writes": [
-     "tests/"
-    ]
-   },
-   "acceptance": [
-    "Every tests/*.mjs passes in a clean clone with the runtime pack: for t in tests/*.mjs; do node --import ./tools/ts-register.mjs $t || echo FAIL $t; done",
-    "No test is deleted or weakened without a sentence in the pull request on why"
-   ]
-  },
-  {
    "id": "tool-ci",
    "title": "Add continuous integration: typecheck and tests",
    "area": "tooling",
@@ -447,6 +421,31 @@
     "Sound changes with the zone without gaps or pops",
     "No runtime light-set changes and no per-frame JS arrays or allocation (AGENTS.md)",
     "No measurable frame-time cost at spawn (tools/probe-idle.mjs)"
+   ]
+  },
+  {
+   "id": "perf-paris-horseshoe-passage",
+   "title": "Put the Paris side of the Horseshoe passage on the geographic map",
+   "area": "performance",
+   "size": "S",
+   "priority": "P2",
+   "summary": "src/work/vegas-visibility.json still places the 'Interiors / Paris Horseshoe passage' door where the September level had Paris beside the Horseshoe. Both passage doors were mapped with the Horseshoe's transform, while the Paris zones moved about 140 m away, so the Paris-side door is never within reach of a Paris zone and never draws the Horseshoe from inside Paris. The Horseshoe-side door works.",
+   "items": [
+    "Find the passage on the geographic map (or decide there is none) and move or drop the Paris-side portal",
+    "Extend tests/building-visibility.mjs section 6 with the Paris side once it is reachable"
+   ],
+   "files": {
+    "reads": [
+     "src/work/vegas-visibility.json",
+     "src/work/BuildingVisibility.ts"
+    ],
+    "writes": [
+     "src/work/vegas-visibility.json",
+     "tests/building-visibility.mjs"
+    ]
+   },
+   "acceptance": [
+    "node tests/building-visibility.mjs passes with both passage doors checked"
    ]
   }
  ]

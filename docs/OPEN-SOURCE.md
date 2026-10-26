@@ -133,7 +133,7 @@ The zombie-era `GAME-DESIGN.md` and `mechanics-plan.md` went to `docs/history/`.
 - the jeep, doors, the lift, the coaster and the Sphere.
 
 **Verified:**
-- **City:** `bitmagic check` passes. 9 of 12 tests pass; the 3 failures predate the split (`tool-fix-tests`). The
+- **City:** `bitmagic check` passes, and all 15 logic tests pass (brought up to date on 2026-10-26). The
   smoke test passes: four hotel rooms, three venues, the Sphere and the coaster, with no failed requests and no errors.
   A rain take records correctly through `FilmLook`.
 - **Game project:** `bitmagic check` and the smoke test pass. Its layer loads the nine characters and the sanctuary.
