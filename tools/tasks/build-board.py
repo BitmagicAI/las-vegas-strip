@@ -288,7 +288,8 @@ def write_status(tasks, inventory, stats):
     lines += ['', '## Missing or unfinished', '',
               f'- **Exterior refinement:** {len(ext)} tasks with {open_items} recorded gaps. No block has passed all seven completion gates; every one is `refinement-deferred` with its gaps listed.',
               f'- **Public interiors:** {len(COMPRESSED)} casino resorts have a compressed, photo-informed lobby and casino that is not laid out to a plan ({", ".join(HOTEL_SETS[s] for s in COMPRESSED)}). {len(INTERIORS) - len(COMPRESSED)} more have no authored public interior on record, only the generic hotel lobby, corridors and rooms ({", ".join(HOTEL_SETS[s] for s in INTERIORS if s not in COMPRESSED)}).',
-              '- **Release blockers:** see the `release` tasks on the board (moving the zombie game out, the current engine, texture provenance, county data terms).',
+              ('- **Release tasks:** ' + '; '.join(t['title'] for t in tasks if t['area'] == 'release') + ' (the `release` tasks on the board).'
+               if any(t['area'] == 'release' for t in tasks) else None),
               '- **Rebuilding geometry from a clone** needs a source pack that does not exist yet (`tool-source-pack`).',
               '']
     (ROOT / 'STATUS.md').write_text('\n'.join(l for l in lines if l is not None))

@@ -5,7 +5,7 @@ The runtime set (every model, texture and data file the game loads) is in the re
 
 | Tier | Size | Where | What |
 |---|---|---|---|
-| **Code and records** | ~70 MB | git | Code, tools, block records, `src/work/` (world, characters, animations), `public/` (foliage) |
+| **Code and records** | ~80 MB | git | Code, tools, block records, `src/work/` (world, levels, hotel templates), `public/` (foliage) |
 | **Runtime set** | 1,345 files, 1.1 GiB | Git LFS, `runtime-assets/` → copied into `build/` | Every file the game loads from `build/`: optimized GLBs, collision, routes, venue lists, PBR strips, Sphere media |
 | **Release snapshot** | ~515 MiB download | GitHub release asset (optional) | The same runtime set as one `.tar.gz`, for a download without git |
 | **Source files** | ~10 GiB | maintainers' machines (pack planned: `tool-source-pack`) | Original (unoptimized) GLBs, Blender scenes, OSM extracts, intermediates the builders read |
@@ -57,7 +57,7 @@ SMOKE_CDN=1 node tools/release/smoke-clone.mjs   # the game loading everything f
 ```
 
 Uploads cannot be deleted. Each file is named by its content hash, so a changed file is uploaded once more under a new
-name and an unchanged one is never sent twice. The CDN stores JSON and models brotli-compressed: the 1.1 GiB set takes
+name and an unchanged one is never sent twice. The CDN stores data files and models brotli-compressed: the 1.1 GiB set takes
 much less space and bandwidth than its size on disk.
 
 ## How the runtime set is chosen
@@ -75,16 +75,20 @@ python3 tools/release/asset-pack.py build   # list, then .bitmagic/release/las-v
   copy at the original path. In a clone there is no optimized manifest, so `glbUrl()` (`src/work/OptimizedGlb.ts`)
   returns the original URL and the compressed bytes load from there. A GLB whose source changed after it was optimized
   ships as the current original.
-- **Landmark and resort venues:** `venues.json` and `version.json` in `build/strip-landmarks/` and
-  `build/resort-blocks/{cosmo,bellagio,paris}/`. Each venue contributes its exterior GLB and exterior collision, plus,
-  unless it is `exteriorOnly`, its interior GLB and interior collision.
-- **City:** `city-version.json`, `city-colliders.json`, `road-network.json` and the bridge concourses listed in
-  `access/manifest.json`.
-- **High-rises:** `version.json`, `exteriors.glb` and every `*-collision.json`.
-- **Hotel modules:** every hotel module GLB the optimizer lists (HotelLayout's set and part names) with its `<module>.mesh-level.json`.
-- **Coaster:** `version.json`, `route.json`, `coaster-collision.json`, `coaster.glb` and `train.glb`.
-- **Sphere:** `sphere.json`, `version.json`, `media.json`, the GLBs and collision, and the media `media.json` names.
-- **Other:** the PBR strips, the jeep, the Bellagio south-arrival roads, and the `world.json` assets served from `build/`.
+Data files ship as the packed `.bin` that `tools/optimize/pack-data.mjs` writes beside each JSON; the game never parses
+JSON at runtime.
+
+- **Landmark and resort venues:** `venues.bin` in `build/strip-landmarks/` and `build/resort-blocks/{cosmo,bellagio,paris}/`.
+  Each venue contributes its exterior GLB and exterior collision, plus, unless it is `exteriorOnly`, its interior GLB
+  and interior collision.
+- **City:** `city.glb`, `detailed.glb`, `city-colliders.bin`, `speed-map.bin` (the road network and the Bellagio
+  arrival roads, baked) and the bridge concourses listed in `access/manifest.bin`.
+- **City bake:** `build/baked/city-lod.bin`, the distant LODs (`tools/bake/bake-city.mjs`).
+- **High-rises:** `exteriors.glb` and every `*-collision.bin`.
+- **Hotel modules:** every hotel module GLB the optimizer lists (HotelLayout's set and part names) with its `<module>.mesh-level.bin`.
+- **Coaster:** `route.bin`, `coaster-collision.bin`, `coaster.glb` and `train.glb`.
+- **Sphere:** `sphere.bin`, `media.bin`, the GLBs and collision, and the media `media.bin` names.
+- **Other:** the PBR strips (`sets.bin` and three WebP layers), the jeep, and the `world.json` assets served from `build/`.
 
 After a new loader or a new runtime folder, add a rule there. Then confirm that a fresh clone plays with nothing
 missing:
@@ -122,18 +126,14 @@ Not optimized yet:
 
 - **No KTX2.** Textures upload uncompressed to the GPU. Adding KTX2 needs the `ktx` tool, plus a game-side KTX2 wait,
   because the vendored engine has neither the meshopt decoder nor `expectGltfLoaderSupport`.
-- **`public/foliage/tree-*.glb` (34 MiB).** Optimized copies exist only in a full working checkout, so a clone loads
+- **`public/foliage/tree-*.glb` (35 MiB).** Optimized copies exist only in a full working checkout, so a clone loads
   the originals.
-- **The nine characters (about 54 MiB).** They load from Bitmagic's CDN as originals; the encoder cannot read their
-  required `BITMAGIC_sparse_correctives` extension.
-- **Collision and route data:** 203 MiB of plain-text JSON (`city-colliders.json` is 118 MiB). It is gzipped in the
-  pack, but the game downloads and parses the text.
 
 ## Why Git LFS
 
 - Models change often, and contributors need to send those changes in pull requests. A release asset could only be
   replaced by a maintainer.
-- GitHub refuses plain git files over 100 MB (`city-colliders.json` is 118 MiB). LFS allows 2 GiB per file.
+- GitHub refuses plain git files over 100 MB. LFS allows 2 GiB per file.
 - The cost is the owner's: LFS storage keeps every version of every changed file, and each clone downloads the
   1.1 GiB set from the organisation's LFS bandwidth. The repository's GitHub plan is sized for that.
 
