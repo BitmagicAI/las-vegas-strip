@@ -28,8 +28,11 @@ applies to the OpenStreetMap-derived part.
 
 **Other public map data:**
 
-- Road and median surfaces also use the **Clark County GISMO** Pavement map service (Clark County, Nevada,
-  https://maps.clarkcountynv.gov/), credited as "Pavement data: Clark County GISMO". Its terms are being confirmed
-  (task `rel-county-terms`).
+- Road, sidewalk and median surfaces are also derived from the **Clark County GISMO** Pavement map service (Clark
+  County, Nevada, https://maps.clarkcountynv.gov/), credited as "Pavement data: Clark County GISMO". The county's data
+  itself is not in this repository: `tools/geographic-strip/fetch_county.py` downloads it at build time. Only the
+  derived surfaces are in the runtime models (merged and simplified pavement, sidewalks widened from the county's
+  sidewalk lines, medians closed from its curb lines, combined with OpenStreetMap), where they are part of the street
+  data this file covers. NOTICE.md describes the derivation.
 - Land cover (parks, water, parking) is also OpenStreetMap data, fetched through the Overpass API
   (https://overpass-api.de). The ground is a flat datum: no elevation model is used.

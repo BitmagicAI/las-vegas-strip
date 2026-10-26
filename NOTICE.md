@@ -35,8 +35,13 @@ to the agent skills the CLI installs into `.agents/skills/` and `.claude/skills/
 - **OpenStreetMap:** © OpenStreetMap contributors, ODbL 1.0. https://www.openstreetmap.org/copyright. Covers building
   footprints, heights, names, roads, paths and land cover, fetched through the Overpass API.
 - **Clark County GISMO:** Pavement MapServer, Clark County, Nevada.
-  https://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/Pavement/MapServer. Covers road, sidewalk and median
-  surfaces. Terms being confirmed (task `rel-county-terms`).
+  https://maps.clarkcountynv.gov/arcgis/rest/services/GISMO/Pavement/MapServer. Credited as "Pavement data: Clark
+  County GISMO". This repository and its runtime assets contain none of the county's data:
+  `tools/geographic-strip/fetch_county.py` downloads the pavement and concrete layers at build time into the ignored
+  `build/` folder, and rebuilding the streets downloads them again from the county. The road, sidewalk and median
+  surfaces in the runtime models are derived from those layers: the pavement areas merged and simplified, sidewalks
+  widened from the county's sidewalk lines and cut against the road, medians closed from its curb lines, all combined
+  with OpenStreetMap streets and our own modelling. No county records, identifiers or attributes are included.
 - **Poly Haven:** CC0. The 15 scanned surface sets packed into `build/pbr/strips/` by `tools/pbr/pack-strips.py`:
   clean_asphalt, concrete_pavement, concrete_floor_02, white_stucco, concrete_wall_008, sandstone_blocks_08, marble_01,
   brick_wall_02, metal_plate, aerial_grass_rock, gravel_floor_02, clay_roof_tiles_02, bitumen, dry_ground_01 and

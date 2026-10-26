@@ -60,7 +60,9 @@ in `docs/project-records/` still mention home-folder paths (about 35 files, harm
 
 **Map and imagery provenance.**
 
-- Geometry comes from OpenStreetMap (Overpass API; ODbL) and the Clark County GISMO Pavement service.
+- Geometry comes from OpenStreetMap (Overpass API; ODbL) and the Clark County GISMO Pavement service. The county's
+  layers are downloaded at build time and never shipped: only the road, sidewalk and median surfaces derived from them
+  are (decided 2026-10-26; NOTICE.md).
 - Cesium and Google Earth were used for viewing and coverage checks only. No Google 3D Tiles geometry or imagery is in
   any output.
 - Textures are drawn by the project's scripts or are CC0 Poly Haven scans.

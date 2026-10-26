@@ -56,31 +56,6 @@
    ]
   },
   {
-   "id": "rel-county-terms",
-   "title": "Confirm the terms for the Clark County GISMO pavement data",
-   "area": "release",
-   "size": "S",
-   "priority": "P1",
-   "summary": "tools/geographic-strip/fetch_county.py reads the Clark County GISMO Pavement map service. The road and median surfaces derive from it. No licence was found; the data is published as a public record.",
-   "items": [
-    "Find Clark County's terms of use for GISMO map services",
-    "Record the attribution and terms in NOTICE.md and LICENSE-DATA.md"
-   ],
-   "files": {
-    "reads": [
-     "tools/geographic-strip/fetch_county.py"
-    ],
-    "writes": [
-     "NOTICE.md",
-     "LICENSE-DATA.md"
-    ]
-   },
-   "acceptance": [
-    "NOTICE.md cites the terms with a URL and an access date"
-   ],
-   "owner": "maintainer"
-  },
-  {
    "id": "rel-engine-current",
    "title": "Move to the currently published engine (done: 3.1337)",
    "area": "release",
