@@ -9,8 +9,8 @@
 // The bytes are runtime-assets/ (the optimized copies, exactly what a clone runs) plus public/foliage/. Each file goes
 // up through the CLI's own signed-upload lane (`bitmagic assets add` uses it) under worlds/v3/<this game's id>/, named
 // <sha256 prefix>-<file name>: uploads are immutable and cannot be deleted, so a changed file gets a new name and an
-// unchanged one is never sent twice. The map is saved after every file, so a dropped connection resumes. JSON is
-// stored compressed (the server binds gzip or brotli). src/work/RuntimeAssets.ts reads the map.
+// unchanged one is never sent twice. The map is saved after every file, so a dropped connection resumes. JSON and the
+// packed .bin data (tools/optimize/pack-data.mjs) are stored compressed (the server binds gzip or brotli). src/work/RuntimeAssets.ts reads the map.
 import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -21,8 +21,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const MAP = path.join(ROOT, 'src/work/runtime-cdn.json');
 const dry = process.argv.includes('--dry-run');
 const li = process.argv.indexOf('--limit'), limit = li > 0 ? Number(process.argv[li + 1]) : Infinity;
-const TYPES = { glb: 'model/gltf-binary', json: 'application/json', webp: 'image/webp', jpg: 'image/jpeg', png: 'image/png', mp4: 'video/mp4' };
-const PUBLIC = ['foliage/tree-0.glb', 'foliage/tree-1.glb', 'foliage/tree-2.glb', 'foliage/grass-0.glb', 'foliage/grass-1.glb', 'foliage/bellagio-placements.json'];
+const TYPES = { glb: 'model/gltf-binary', json: 'application/json', bin: 'application/octet-stream', webp: 'image/webp', jpg: 'image/jpeg', png: 'image/png', mp4: 'video/mp4' };
+const PUBLIC = ['foliage/tree-0.glb', 'foliage/tree-1.glb', 'foliage/tree-2.glb', 'foliage/grass-0.glb', 'foliage/grass-1.glb', 'foliage/bellagio-placements.bin'];
 
 // (the CLI's own modules: its login, its environment and its signed-upload lane)
 const cli = (file) => import(pathToFileURL(path.join(cliRoot, 'dist', file)).href);
@@ -53,6 +53,12 @@ const publicFile = (p) => {
 const wanted = [...list.files.map((f) => [f.path, path.join(ROOT, 'runtime-assets', f.path.slice('build/'.length))]),
   ...PUBLIC.map((p) => [p, publicFile(p)])];
 
+const save = () => fs.writeFileSync(MAP, JSON.stringify({ about: map.about, gameId: map.gameId, files: Object.fromEntries(Object.entries(map.files).sort()) }, null, 1) + '\n');
+// files the game no longer loads leave the map (each published game keeps the map it was built with)
+const keys = new Set(wanted.map(([key]) => key));
+const stale = Object.keys(map.files).filter((key) => !keys.has(key));
+for (const key of stale) delete map.files[key];
+if (stale.length) console.log(`${stale.length} files the game no longer loads left the map`);
 const todo = [];
 for (const [key, file] of wanted) {
   const bytes = fs.readFileSync(file);
@@ -64,11 +70,11 @@ if (todo.length > limit) todo.length = limit;
 const total = todo.reduce((s, t) => s + t.size, 0);
 console.log(`${wanted.length} runtime files; ${todo.length} to upload (${(total / 1048576).toFixed(1)} MiB) to worlds/v3/${gameId}/`);
 if (dry) { for (const t of todo.slice(0, 20)) console.log('  ' + t.key); process.exit(0); }
+if (!todo.length) { save(); console.log(`nothing to upload; map: ${path.relative(ROOT, MAP)} (${Object.keys(map.files).length} files)`); process.exit(0); }
 
 const environment = selectEnvironmentForCommand({ explicit: undefined, cwd: ROOT }).environment;
 const deps = { fetch: globalThis.fetch };
 let token = await getAccessToken(environment, resolveAuth0ClientId(environment), { ...deps, sleep: (ms) => new Promise((r) => setTimeout(r, ms)) });
-const save = () => fs.writeFileSync(MAP, JSON.stringify({ about: map.about, gameId: map.gameId, files: Object.fromEntries(Object.entries(map.files).sort()) }, null, 1) + '\n');
 
 let done = 0, sent = 0, failed = 0;
 const t0 = Date.now();

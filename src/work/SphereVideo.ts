@@ -21,7 +21,9 @@ export class SphereVideo {
     private onError=()=>{this.failed=true;this.video.pause();this.material.map=this.poster;this.material.needsUpdate=true;console.warn('[Sphere] Video unavailable; keeping poster',this.video.src);};
     constructor(url:string,posterUrl:string){
         this.poster=new THREE.TextureLoader().load(posterUrl);this.poster.colorSpace=THREE.SRGBColorSpace;this.poster.flipY=false;
-        this.video=document.createElement('video');this.video.muted=true;this.video.defaultMuted=true;this.video.playsInline=true;this.video.loop=true;this.video.preload='metadata';this.video.src=url;
+        this.video=document.createElement('video');this.video.muted=true;this.video.defaultMuted=true;this.video.playsInline=true;this.video.loop=true;this.video.preload='metadata';
+        // CDN videos are another origin: without CORS mode the frames taint and every texture upload fails
+        this.video.crossOrigin='anonymous';this.video.src=url;
         this.video.setAttribute('playsinline','');this.video.setAttribute('aria-hidden','true');this.video.dataset.sphereDisplay=url.includes('exosphere')?'exterior':'interior';this.video.style.display='none';document.body.append(this.video);
         this.texture=new THREE.VideoTexture(this.video);this.texture.colorSpace=THREE.SRGBColorSpace;this.texture.flipY=false;this.texture.minFilter=THREE.LinearFilter;this.texture.magFilter=THREE.LinearFilter;
         this.material=new THREE.MeshBasicMaterial({map:this.poster,toneMapped:false,side:THREE.DoubleSide});

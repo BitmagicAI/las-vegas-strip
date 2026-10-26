@@ -178,7 +178,10 @@ function renderMirror(mirror:Mirror,frame:{renderer:Renderer;scene:THREE.Scene;c
     const scale=RealisticWater.everyFrame?1:LAKE_REFLECTION_SCALE;
     const w=Math.max(1,Math.round(_size.x*scale)),h=Math.max(1,Math.round(_size.y*scale));
     if(!mirror.target){
-        mirror.target=new RenderTarget(w,h,{type:THREE.HalfFloatType,samples:4});
+        // the scene pass's depth format (32-bit float with the reversed depth buffer): with three's default 24-bit buffer
+        // every material the mirror draws needed a second set of GPU pipelines (77 of 185 at the sanctuary, 2026-10-25)
+        const depth=new THREE.DepthTexture(w,h);depth.type=renderer.reversedDepthBuffer?THREE.FloatType:THREE.UnsignedIntType;
+        mirror.target=new RenderTarget(w,h,{type:THREE.HalfFloatType,samples:4,depthTexture:depth});
         mirror.target.texture.name='Lake mirror';
         mirror.target.texture.generateMipmaps=true;
         mirror.target.texture.minFilter=THREE.LinearMipmapLinearFilter;

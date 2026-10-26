@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
+import {bakeCapture} from './CityBake.js';
 
 /** CPU copies of geometry this game builds itself (city batches, coarse LODs,
  * shadow batches) are dropped once the GPU holds them.
@@ -23,6 +24,7 @@ let lastSweep=0;
 let released=0;
 
 export function releaseAfterUpload(geometry:THREE.BufferGeometry):void {
+    if(bakeCapture)return;   // the city bake reads every built array after the load (CityBake.ts)
     if(geometry.boundingBox===null)geometry.computeBoundingBox();
     if(geometry.boundingSphere===null)geometry.computeBoundingSphere();
     pending.add(geometry);

@@ -11,7 +11,7 @@ import {createPassageGeometry} from './GeographicPassageGeometry.js';
 import type {PassageData,PassageEntry} from './GeographicPassageGeometry.js';
 import {interiorLightsNode,lightInterior} from './InteriorLighting.js';
 import type {LightsNode} from 'three/webgpu';
-import {runtimeUrl} from './RuntimeAssets.js';
+import {loadRecords} from './PackedRecords.js';
 interface Resident {data:PassageData;root:THREE.Group;doors:Door[];lights:THREE.Vector3[];dispose:()=>void;lastNear:number}
 export class GeographicPassages {
     private entries:PassageEntry[]=[];
@@ -22,7 +22,6 @@ export class GeographicPassages {
     private disposed=false;
     private player=new THREE.Vector3();
     private nextCheck=0;
-    private revision='';
     private interiorLights:LightsNode|null=null;
     private proxyRoot=new THREE.Group();
     private proxies:{id:string;index:number;door:THREE.Matrix4;frame:THREE.Matrix4;hidden?:boolean}[]=[];
@@ -30,11 +29,8 @@ export class GeographicPassages {
     private proxyFrames:THREE.InstancedMesh|null=null;
     private hiddenProxy=new THREE.Matrix4().makeScale(0,0,0);
     constructor(private engine:EngineLike,private surfaces:GroundSurfaceIndex,private loading:StreamingWork){}
-    async load(revision:string):Promise<void>{
-        this.revision=revision;
-        const response=await fetch(runtimeUrl(`/build/geographic-strip/access/manifest.json?v=${revision}`));
-        if(!response.ok)throw new Error('Bridge concourse manifest unavailable');
-        this.entries=await response.json() as PassageEntry[];
+    async load():Promise<void>{
+        this.entries=await loadRecords<PassageEntry[]>('/build/geographic-strip/access/manifest.bin');
         // Closed entrance silhouettes remain visible from afar. Interior
         // residency changes never expose an empty hole in the building shell.
         const count=this.entries.reduce((n,e)=>n+e.portals.length,0);
@@ -43,7 +39,7 @@ export class GeographicPassages {
         this.proxyDoors.frustumCulled=this.proxyFrames.frustumCulled=false;
         this.proxyRoot.add(this.proxyFrames,this.proxyDoors);this.engine.scene!.add(this.proxyRoot);
         let index=0;for(const e of this.entries)for(const p of e.portals){
-            const q=new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),Math.atan2(...p.direction));
+            const q=new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),Math.atan2(p.direction[0],p.direction[1]));
             const width=p.width??4.14,height=p.height??3.1;
             const door=new THREE.Matrix4().compose(new THREE.Vector3(p.p[0],p.y+height/2,p.p[1]),q,new THREE.Vector3(width/4.14,height/3.1,1));
             const frame=new THREE.Matrix4().compose(new THREE.Vector3(p.p[0],p.y+(height+.55)/2,p.p[1]),q,new THREE.Vector3((width+.66)/4.8,(height+.55)/3.65,1));
@@ -81,11 +77,10 @@ export class GeographicPassages {
         this.lightPool.forEach((l,i)=>{const p=lights[i];l.intensity=p && p.distanceTo(player)<22?22:0;if(p)l.position.copy(p);});
     }
     private async instantiate(entry:PassageEntry):Promise<void>{
-        const response=await fetch(runtimeUrl(`/build/geographic-strip/access/${entry.id}.json?v=${this.revision}`));if(!response.ok)throw new Error(`Bridge concourse unavailable: ${entry.name}`);
-        const data=await response.json() as PassageData;if(this.disposed)return;
+        const data=await loadRecords<PassageData>(`/build/geographic-strip/access/${entry.id}.bin`);if(this.disposed)return;
         const art=createPassageGeometry(data),world=this.engine.physicsWorld!;art.root.userData.perfOwner='Bridge concourses';art.root.userData.perfKind='other';this.engine.scene!.add(art.root);
         const release=this.surfaces.register(art.root);
-        const plan=data.collision.indices.length?planCollider({name:entry.name,shape:'trimesh',vertices:data.collision.vertices,indices:data.collision.indices},'terrain'):null;
+        const plan=data.collision.indices.length?planCollider({name:entry.name,shape:'trimesh',vertices:data.collision.vertices,indices:data.collision.indices instanceof Uint32Array?data.collision.indices:Uint32Array.from(data.collision.indices)},'terrain'):null;
         const body=plan?PhysicsBodyFactory.createStaticBody(world,plan.position,{shape:plan.shape,friction:.85,collisionGroup:plan.collisionGroup,collisionMask:plan.collisionMask},plan.quaternion).rigidBody:null;
         const doors:Door[]=[];const skins:THREE.Object3D[]=[];const interactions:InteractableComponent[]=[];
         if(data.lift){
@@ -117,7 +112,7 @@ export class GeographicPassages {
         }
         if(data.interior)lightInterior(art.root,this.interiorLights??=interiorLightsNode(this.engine.scene!,this.lightPool));
         this.loading.revealUntilReady(art.root);
-        this.resident.set(entry.id,{data,root:art.root,doors,lights:data.lights.map(p=>new THREE.Vector3(p[0],p[1],p[2])),lastNear:performance.now(),dispose:()=>{
+        this.resident.set(entry.id,{data,root:art.root,doors,lights:Array.from({length:data.lights.length/3},(_,i)=>new THREE.Vector3().fromArray(data.lights,i*3)),lastNear:performance.now(),dispose:()=>{
             release();for(const i of interactions)i.dispose();for(const door of doors)door.dispose();for(const o of skins)if(o instanceof THREE.Mesh){o.geometry.dispose();(o.material as THREE.Material).dispose();}
             if(body?.isValid())world.removeRigidBody(body);art.dispose();
         }});

@@ -1,17 +1,24 @@
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {batchStaticMeshes,disposeCityMaterial} from './CityBatches.js';
 import * as THREE from 'three';
-export interface PassagePortal {p:[number,number];direction:[number,number];y:number;label:string;width?:number;height?:number;metal?:boolean}
-export interface PassageEntry {id:string;name:string;bounds:[number,number,number,number];height:number;portals:PassagePortal[]}
+/** The concourse records (access/*.bin, PackedRecords.ts): points are typed arrays, lists of points flat. */
+type V2=Float32Array&readonly [number,number];
+type Indices=Uint8Array|Uint16Array|Uint32Array;
+export interface PassagePortal {p:V2;direction:V2;y:number;label:string;width?:number;height?:number;metal?:boolean}
+export interface PassageEntry {id:string;name:string;bounds:Float32Array&readonly [number,number,number,number];height:number;portals:PassagePortal[]}
 export interface PassageData extends PassageEntry {
-    lift?:[number,number]|null;
-    liftButton?:[number,number];
+    lift?:V2|null;
+    liftButton?:V2;
     interior?:boolean;
-    meshes:{material:string;vertices:number[][];faces:number[][];uv?:number[]}[];
-    collision:{vertices:number[];indices:number[]};
-    lights:number[][];
-    signs:{text:string;position:[number,number,number];yaw:number;width:number;height:number}[];
+    /** x, y, z per vertex; three indices per face */
+    meshes:{material:string;vertices:Float32Array;faces:Indices;uv?:Float32Array}[];
+    collision:{vertices:Float32Array;indices:Indices};
+    /** x, y, z per light */
+    lights:Float32Array;
+    signs:{text:string;position:Float32Array&readonly [number,number,number];yaw:number;width:number;height:number}[];
 }
+/** WebGPU index buffers are 16 or 32 bits; the record file narrows small meshes' indices to 8. */
+export const indexArray=(i:Indices):Uint16Array|Uint32Array=>i instanceof Uint8Array?Uint16Array.from(i):i;
 const palette:Record<string,number>={'access-stone':0xc7ae85,'access-marble':0xdfd1b9,'access-plaster':0xe3d4bc,'access-bronze':0x665133,'access-carpet':0xffffff,'access-shop':0x293138,'access-vault':0x345453,'access-glazing':0xa6cbd1,'access-tread':0x626870,'access-light':0xffe6b3,'bridge-metal':0x41464b,'bridge-glass':0x95bfc7};
 function texture(kind:string):THREE.CanvasTexture {
     const c=document.createElement('canvas');c.width=c.height=512;const g=c.getContext('2d')!;
@@ -36,15 +43,16 @@ export function createPassageGeometry(data:PassageData):{root:THREE.Group;dispos
     const textures:THREE.Texture[]=[];
     const shared=new Map<string,THREE.MeshStandardMaterial>();
     for(const part of data.meshes){
-        const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(part.vertices.flat(),3));geo.setIndex(part.faces.flat());geo.computeVertexNormals();geo.computeBoundingSphere();
+        const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(part.vertices,3));geo.setIndex(new THREE.BufferAttribute(indexArray(part.faces),1));geo.computeVertexNormals();geo.computeBoundingSphere();
         const mat=shared.get(part.material)??new THREE.MeshStandardMaterial({color:palette[part.material]??0xbfb5a0,roughness:.65,side:THREE.DoubleSide});
         if(['access-bronze','access-vault','bridge-metal','access-tread'].includes(part.material)){mat.metalness=.6;mat.roughness=.36;}
         if(part.material==='access-light'){mat.emissive.setHex(0xffda99);mat.emissiveIntensity=1.2;}
         if(part.material==='bridge-glass'){mat.transparent=true;mat.opacity=.26;mat.depthWrite=false;}
         if(part.material==='access-glazing'){mat.emissive.setHex(0x648384);mat.emissiveIntensity=.18;mat.roughness=.24;mat.metalness=.25;}
         if(['access-carpet','access-marble','access-stone'].includes(part.material)){
-            const uv=part.uv??part.vertices.flatMap(p=>[p[0]!/(part.material==='access-carpet'?4:2),p[2]!/(part.material==='access-carpet'?4:2)]);
-            geo.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));if(!mat.map){mat.map=texture(part.material);textures.push(mat.map);}mat.roughness=part.material==='access-carpet'?.95:.32;
+            let uv=part.uv;
+            if(!uv){const v=part.vertices,scale=part.material==='access-carpet'?4:2;uv=new Float32Array(v.length/3*2);for(let i=0,j=0;i<v.length;i+=3,j+=2){uv[j]=v[i]!/scale;uv[j+1]=v[i+2]!/scale;}}
+            geo.setAttribute('uv',new THREE.BufferAttribute(uv,2));if(!mat.map){mat.map=texture(part.material);textures.push(mat.map);}mat.roughness=part.material==='access-carpet'?.95:.32;
         }
         shared.set(part.material,mat);
         const mesh=new THREE.Mesh(geo,mat);mesh.name=part.material;mesh.castShadow=!['access-light','bridge-glass','access-glazing'].includes(part.material);mesh.receiveShadow=true;root.add(mesh);
@@ -64,7 +72,7 @@ export function createPassageGeometry(data:PassageData):{root:THREE.Group;dispos
         for(const sign of data.signs)for(const side of [0,1]){
             const geo=new THREE.PlaneGeometry(sign.width,sign.height),uv=geo.getAttribute('uv'),i=labels.indexOf(sign.text),x=i%cols*1024,y=Math.floor(i/cols)*128;
             for(let v=0;v<uv.count;v++)uv.setXY(v,(x+2+uv.getX(v)*1020)/atlas.width,1-(y+2+(1-uv.getY(v))*124)/atlas.height);
-            const o=new THREE.Object3D();o.position.set(...sign.position);o.rotation.y=sign.yaw+side*Math.PI;o.translateZ(.19);o.updateMatrix();geo.applyMatrix4(o.matrix);parts.push(geo);
+            const o=new THREE.Object3D();o.position.fromArray(sign.position);o.rotation.y=sign.yaw+side*Math.PI;o.translateZ(.19);o.updateMatrix();geo.applyMatrix4(o.matrix);parts.push(geo);
         }
         const merged=mergeGeometries(parts,false)!;parts.forEach(g=>g.dispose());root.add(new THREE.Mesh(merged,new THREE.MeshBasicMaterial({map:t,toneMapped:false})));
     }

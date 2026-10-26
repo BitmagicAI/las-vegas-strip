@@ -11,24 +11,24 @@ import type {SiteLights,LightSite} from './SiteLights.js';
 import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';
 import type {StreamingWork} from './StreamingWork.js';
 import {SphereVideo} from './SphereVideo.js';
-import {finishSphereMaterials,addSphereSigns,addSphereSeats,disposeSphereRoot} from './SphereVisuals.js';
+import {finishSphereMaterials,addSphereSigns,addSphereSeats,disposeSphereRoot,SEAT_STRIDE} from './SphereVisuals.js';
 import type {SphereMeta} from './SphereVisuals.js';
 import {runtimeUrl} from './RuntimeAssets.js';
+import {type CollisionPack,loadCollisionPack} from './CollisionPack.js';
+import {loadRecords} from './PackedRecords.js';
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
-interface Collision {vertices:number[];indices:number[]}
 interface Media {exterior:string;exteriorPoster:string;interior:string;interiorPoster:string}
 const BASE='/build/sphere/';
 export class SphereVenue {
     private meta:SphereMeta|null=null;
     private media:Media|null=null;
-    private revision='';
     private exterior:THREE.Group|null=null;
     private interior:THREE.Group|null=null;
     private exosphere:SphereVideo|null=null;
     private immersive:SphereVideo|null=null;
     private body:Body|null=null;
     private exteriorBody:Body|null=null;
-    private exteriorCollision:Collision|null=null;
+    private exteriorCollision:CollisionPack|null=null;
     private doors:Door[]=[];
     private doorMeshes:THREE.Mesh[]=[];
     private approachedPortals=new Set<number>();
@@ -49,13 +49,13 @@ export class SphereVenue {
     private stopOnPause=(state:GameState)=>{if(state!==GameState.PLAYING){this.exosphere?.setActive(false);this.immersive?.setActive(false);}};
     constructor(private engine:EngineLike,private surfaces:GroundSurfaceIndex,private loading:StreamingWork,private siteLights:SiteLights){getGameStateManager().addListener(this.stopOnPause);}
     async load():Promise<void>{
-        const [meta,version,media]=await Promise.all([fetch(runtimeUrl(BASE+'sphere.json')).then(r=>r.json()),fetch(runtimeUrl(BASE+'version.json')).then(r=>r.json()),fetch(runtimeUrl(BASE+'media.json')).then(r=>r.json())]);
-        if(this.disposed)return;this.meta=meta as SphereMeta;this.media=media as Media;this.revision=version.revision;this.center.set(...this.meta.center);this.sphere.set(this.center.clone().add(new THREE.Vector3(0,48,0)),95);
-        const [gltf,collision]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(BASE+'exterior.glb?v='+this.revision)),fetch(runtimeUrl(BASE+'exterior-collision.json?v='+this.revision)).then(r=>r.json())]);
+        const [meta,media]=await Promise.all([loadRecords<SphereMeta>(BASE+'sphere.bin'),loadRecords<Media>(BASE+'media.bin')]);
+        if(this.disposed)return;this.meta=meta;this.media=media;this.center.fromArray(this.meta.center);this.sphere.set(this.center.clone().add(new THREE.Vector3(0,48,0)),95);
+        const [gltf,collision]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(BASE+'exterior.glb')),loadCollisionPack(BASE+'exterior-collision.bin')]);
         if(this.disposed){disposeSphereRoot(gltf.scene);return;}
         this.exterior=gltf.scene;this.exterior.position.copy(this.center);this.exterior.name='Sphere / permanent exterior';this.exterior.userData.perfOwner='Sphere · exterior';this.exterior.userData.perfKind='exterior';finishSphereMaterials(this.exterior);addSphereSigns(this.exterior,this.meta,'exterior');this.engine.scene!.add(this.exterior);
         this.exosphere=new SphereVideo(runtimeUrl(BASE+this.media.exterior),runtimeUrl(BASE+this.media.exteriorPoster));this.exosphere.material.side=THREE.FrontSide;this.applyScreen(this.exterior,'shell',this.exosphere.material);
-        this.exteriorCollision=collision as Collision;
+        this.exteriorCollision=collision;
         this.releaseExterior=this.surfaces.register(this.exterior);
         const radius=this.meta.radius,cy=this.meta.height-radius;
         const shadow=new THREE.Mesh(new THREE.SphereGeometry(radius,32,20,0,Math.PI*2,0,Math.acos(-cy/radius)),new THREE.MeshBasicMaterial());
@@ -65,8 +65,8 @@ export class SphereVenue {
     private applyScreen(root:THREE.Group,part:string,material:THREE.Material):void {
         root.traverse(o=>{if(o instanceof THREE.Mesh && o.userData.spherePart===part){const old=o.material;if(!Array.isArray(old)){if(old instanceof THREE.MeshStandardMaterial){old.map?.dispose();old.emissiveMap?.dispose();}old.dispose();}o.material=material;o.receiveShadow=false;}});
     }
-    private makeBody(data:Collision):Body {
-        const p=planCollider({name:'Sphere',shape:'trimesh',vertices:data.vertices,indices:data.indices},'terrain');p.position.copy(this.center);
+    private makeBody(pack:CollisionPack):Body {
+        const p=planCollider(pack.trimesh(0,'Sphere'),'terrain');p.position.copy(this.center);
         return PhysicsBodyFactory.createStaticBody(this.engine.physicsWorld!,p.position,{shape:p.shape,friction:.8,collisionGroup:p.collisionGroup,collisionMask:p.collisionMask},p.quaternion).rigidBody;
     }
     /** Opaque inner zone; keep outdoors around all entrances and glass vestibules. */
@@ -115,14 +115,14 @@ export class SphereVenue {
     }
     private async loadInterior():Promise<void>{
         if(!this.meta || !this.media)return;
-        const [gltf,collision]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(BASE+'interior.glb?v='+this.revision)),fetch(runtimeUrl(BASE+'interior-collision.json?v='+this.revision)).then(r=>r.json())]);
+        const [gltf,collision]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(BASE+'interior.glb')),loadCollisionPack(BASE+'interior-collision.bin')]);
         if(this.disposed){disposeSphereRoot(gltf.scene);return;}
         this.interior=gltf.scene;this.interior.position.copy(this.center);this.interior.name='Sphere / streamed atrium and four-tier auditorium';this.interior.userData.perfOwner='Sphere · interior';this.interior.userData.perfKind='interior';finishSphereMaterials(this.interior);addSphereSigns(this.interior,this.meta,'interior');this.engine.scene!.add(this.interior);
         this.immersive=new SphereVideo(runtimeUrl(BASE+this.media.interior),runtimeUrl(BASE+this.media.interiorPoster));this.applyScreen(this.interior,'screen',this.immersive.material);
         this.releaseInterior=this.surfaces.register(this.interior);addSphereSeats(this.interior,this.meta);
         // Lit by sun, sky, ambient and the four shared venue lights only (see InteriorLighting).
         lightInterior(this.interior,interiorLightsNode(this.engine.scene!,this.siteLights.pointLights));
-        this.body=this.makeBody(collision as Collision);
+        this.body=this.makeBody(collision);
         for(const portal of this.meta.portals){
             const [dx,dz]=portal.direction,yaw=Math.atan2(dx,dz),pair:Door[]=[];
             for(const side of [-1,1]){
@@ -138,7 +138,7 @@ export class SphereVenue {
         }
         this.sites=[[0,20,-52,0x70dfff],[0,38,20,0x577bff],[-43,15,-43,0x97ddff],[43,15,-43,0x97ddff]].map(([x,y,z,color],i)=>({x:this.center.x+x!,y:y!,z:this.center.z+z!,color:color!,intensity:i<2?1600:650,distance:65}));
         this.loading.revealUntilReady(this.interior);
-        console.info(`[Sphere] Interior ready: ${this.meta.seats.length} instanced seats; one static interior collider; ${this.meta.portals.length} working entrances`);
+        console.info(`[Sphere] Interior ready: ${this.meta.seats.length/SEAT_STRIDE} instanced seats; one static interior collider; ${this.meta.portals.length} working entrances`);
     }
     review(name:string):{position:THREE.Vector3;yaw:number;pitch:number}|null {
         const v=this.meta?.views[name];if(!v)return null;const d=new THREE.Vector3(...v.target).sub(new THREE.Vector3(...v.p));
@@ -152,7 +152,7 @@ export class SphereVenue {
         if(this.interior)disposeSphereRoot(this.interior);this.interior=null;this.immersive?.dispose();this.immersive=null;
         this.sites=[];this.siteLights.offer('sphere',[]);
     }
-    get stats(){return {interior:!!this.interior,seatInstances:this.interior?this.meta?.seats.length??0:0,physicsBodies:(this.body?1:0)+(this.exteriorBody?1:0)+this.doors.length};}
+    get stats(){return {interior:!!this.interior,seatInstances:this.interior?(this.meta?.seats.length??0)/SEAT_STRIDE:0,physicsBodies:(this.body?1:0)+(this.exteriorBody?1:0)+this.doors.length};}
     private restoreEnvironment():void {if(this.outdoorEnvironmentIntensity!==null){if(this.engine.scene)this.engine.scene.environmentIntensity=this.outdoorEnvironmentIntensity;this.outdoorEnvironmentIntensity=null;}}
     dispose():void {this.disposed=true;this.restoreEnvironment();getGameStateManager().removeListener(this.stopOnPause);this.unloadInterior();this.releaseExterior?.();if(this.exteriorBody?.isValid())this.engine.physicsWorld!.removeRigidBody(this.exteriorBody);if(this.exterior)disposeSphereRoot(this.exterior);this.exosphere?.dispose();}
 }

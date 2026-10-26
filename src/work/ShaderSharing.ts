@@ -151,3 +151,15 @@ export function sharedAlphaCutoff(value:number):Node{
     let node=cutoffs.get(value);if(!node){node=float(value) as unknown as Node;cutoffs.set(value,node);}
     return node;
 }
+
+/** Compile a root that is not shown yet (city geometry loading behind play), off the frame: every object in it, hidden
+ * levels of detail and objects behind the camera included, so it draws without building anything when it appears.
+ * The flags are changed only for compileAsync's synchronous part, so nothing is drawn early. */
+export function compileSubtree(engine:EngineLike,root:Object3D):Promise<unknown>{
+    const renderer=engine.renderer as unknown as {compileAsync?:(root:Object3D,camera:Camera,scene:Scene)=>Promise<unknown>},camera=engine.camera,scene=engine.scene;
+    if(!renderer.compileAsync||!camera||!scene)return Promise.resolve();
+    const saved:{o:Object3D;visible:boolean;culled:boolean}[]=[];
+    root.traverse(o=>{saved.push({o,visible:o.visible,culled:o.frustumCulled});o.visible=true;o.frustumCulled=false;});
+    try{return renderer.compileAsync(root,camera,scene);}
+    finally{for(const s of saved){s.o.visible=s.visible;s.o.frustumCulled=s.culled;}}
+}

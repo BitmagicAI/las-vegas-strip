@@ -11,7 +11,7 @@ export class ResortBlocks {
         this.blocks=['cosmo','bellagio','paris'].map(id=>new StripLandmarks(engine,surfaces,loading,lights,`/build/resort-blocks/${id}/`));
     }
     setPassing(passing:boolean){for(const b of this.blocks)b.setPassing(passing);}
-    async load(){for(const block of this.blocks)await block.load();}
+    async load(sliced=false,focus?:()=>THREE.Vector3){for(const block of this.blocks)await block.load(sliced,focus);}
     update(player:THREE.Vector3,outside:boolean,hideSource?:string){for(const b of this.blocks)b.update(player,outside,hideSource);}
     getView(player:THREE.Vector3,camera:THREE.Vector3){for(const b of this.blocks){const v=b.getView(player,camera);if(v)return v;}return null;}
     review(key:string,view='entrance'){for(const b of this.blocks){const v=b.review(key,view);if(v)return v;}return null;}

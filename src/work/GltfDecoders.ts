@@ -32,6 +32,9 @@
 import { GLTFLoader as AddonsGLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { GLTFLoader as ExamplesGLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+// Decode in worker threads (2026-10-25): decoding ran on the main thread inside each parse, up to ~1.5 s for one
+// landmark, which stalls the game once the city loads behind play. Blob workers; nothing else changes.
+try { MeshoptDecoder.useWorkers(Math.max(1, Math.min(4, (navigator.hardwareConcurrency || 4) - 1))); } catch { /* the main-thread decoder stays */ }
 
 type Parse = AddonsGLTFLoader['parse'];
 

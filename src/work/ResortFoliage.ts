@@ -5,9 +5,10 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshStandardNodeMaterial,type Node} from 'three/webgpu';
 import {lights,reference} from 'three/tsl';
 import {isGeometryReleaseSuspended} from 'engine/resources/GeometryCpuRelease.js';
-import {runtimeUrl} from './RuntimeAssets.js';
 import {keyWithoutShadowNodes,sharedAlphaCutoff} from './ShaderSharing.js';
 import {sharedInstancedMesh} from './SharedInstancing.js';
+import {runSliced,runSync} from './FrameBudget.js';
+import {loadPlants,type PlantList} from './Plants.js';
 
 /** Garden foliage keeps its own standard materials but is lit only by the sun
  * (with its shadow), the sky and the ambient term. Thousands of overlapping blades
@@ -26,7 +27,6 @@ function sunLitFoliageMaterial(source:THREE.MeshStandardMaterial):MeshStandardNo
     keyWithoutShadowNodes(material);
     return material;
 }
-interface Placement {trees:{position:[number,number,number];seed:number}[];grass:number[][]}
 interface Cell {levels:THREE.Group[];box:THREE.Box3;level:number;limits:number[]}
 /** Shared textured botanical assets, instanced per spatial cell and LOD. The cells share one shader build per material
  * (SharedInstancing.ts; as InstancedMeshes they cost 10 s of node builds at start-up). */
@@ -41,10 +41,12 @@ export class ResortFoliage {
     private previous:THREE.Scene['onBeforeRender']|null=null;
     private hook:THREE.Scene['onBeforeRender']|null=null;
     constructor(private scene:THREE.Scene,private owner:THREE.Group){}
-    async load():Promise<void>{
+    /** Sliced (the city loading behind play): built within the shared frame budget and left hidden; the caller
+     * compiles `group` and calls `show()`. */
+    async load(sliced=false):Promise<void>{
         const loader=new GLTFLoader();
-        const response=await fetch(runtimeUrl('/foliage/bellagio-placements.json'));if(!response.ok)throw Error('Foliage placements unavailable');
-        const placements=await response.json() as Placement;
+        // 363,425 lawn tufts, 8 bytes each (Plants.ts), decoded in the meshopt workers while the plants download
+        const placing=loadPlants('/foliage/bellagio-placements.bin');placing.catch(()=>{});
         for(const file of ['tree-0','tree-1','tree-2','grass-0','grass-1'])this.assets.push((await loader.loadAsync(await glbUrl(`/foliage/${file}.glb`))).scene);
         // The middle tree LOD's runtime copy has no textures of its own (tools/optimize/foliage-trees.mjs): its meshes take
         // tree-0's materials, which are the same Poly Haven maps.
@@ -57,9 +59,17 @@ export class ResortFoliage {
         for(const asset of this.assets.slice(3))asset.traverse(o=>{if(o instanceof THREE.Mesh)for(const m of Array.isArray(o.material)?o.material:[o.material])if(m instanceof THREE.MeshStandardMaterial){m.roughnessMap=null;m.roughness=1;m.metalness=0;m.envMapIntensity=0;m.normalScale.set(.35,.35);m.emissive.setHex(0x526b2b);m.emissiveIntensity=.25;m.emissiveMap=m.map;}});
         const converted=new Map<THREE.Material,THREE.Material>();
         for(const asset of this.assets)asset.traverse(o=>{if(!(o instanceof THREE.Mesh))return;const swap=(m:THREE.Material)=>{if(!(m instanceof THREE.MeshStandardMaterial)||m instanceof MeshStandardNodeMaterial)return m;let lit=converted.get(m);if(!lit){const l=sunLitFoliageMaterial(m);m.dispose();this.sunLit.push(l);converted.set(m,l);lit=l;}return lit;};o.material=Array.isArray(o.material)?o.material.map(swap):swap(o.material);});
-        this.root.name='Bellagio botanical planting';this.root.userData.perfOwner='Bellagio · trees and lawn';this.root.userData.perfKind='exterior';this.owner.add(this.root);
-        this.populate(placements.trees.map(t=>[...t.position,t.seed%6283/1000,.88+(t.seed%23)/100]),this.assets.slice(0,3),40,[85,220,650],true);
-        this.populate(placements.grass,this.assets.slice(3),12,[14,36],false);
+        const placements=await placing;
+        this.root.name='Bellagio botanical planting';this.root.userData.perfOwner='Bellagio · trees and lawn';this.root.userData.perfKind='exterior';
+        if(sliced)this.root.visible=false;this.owner.add(this.root);
+        const trees=this.populate(placements.trees,this.assets.slice(0,3),40,[85,220,650],true),grass=this.populate(placements.grass,this.assets.slice(3),12,[14,36],false);
+        if(sliced){await runSliced(trees);await runSliced(grass);if(!this.lightsBound)this.bindFoliageLights();}
+        else{runSync(trees);runSync(grass);this.show();}
+    }
+    get group():THREE.Group{return this.root;}
+    /** Puts the planting in and starts choosing its levels (load calls it unless sliced). */
+    show():void{
+        if(this.hook)return;this.root.visible=true;
         // Remove the old polygon crowns only after the replacement loaded.
         const old:THREE.Mesh[]=[];this.owner.traverse(o=>{if(o instanceof THREE.Mesh&&String(o.userData.source).startsWith('arrival-tree/'))old.push(o);});
         for(const mesh of old){mesh.removeFromParent();mesh.geometry.dispose();}
@@ -68,23 +78,38 @@ export class ResortFoliage {
         this.scene.onBeforeRender=this.hook;
         this.unsubscribe=foliageSettings.subscribe(()=>{this.cells.forEach(c=>c.level=-1);this.select(this.point);this.last=0;});
     }
-    private populate(positions:number[][],assets:THREE.Group[],size:number,limits:number[],trees:boolean):void {
-        const groups=new Map<string,number[][]>();
-        for(const p of positions){const key=`${Math.floor(p[0]!/size)},${Math.floor(p[2]!/size)}`;const list=groups.get(key)??[];list.push(p);groups.set(key,list);}
-        const object=new THREE.Object3D(),matrix=new THREE.Matrix4();
-        for(const [key,positions] of groups){
-            const levels=assets.map((asset,lod)=>{
-                const group=new THREE.Group();group.name=`${trees?'Trees':'Lawn'} ${key} LOD${lod}`;
+    /** Instances per `size` m cell and LOD. Steps (FrameBudget.ts): yields every 16k plants while sorting and every ~8k
+     * instances while building. */
+    private *populate(placed:PlantList,assets:THREE.Group[],size:number,limits:number[],trees:boolean):Generator<void,void> {
+        // cells in order of first appearance, plants in placement order within each (a stable counting sort)
+        const n=placed.count,cellOf=new Uint32Array(n),index=new Map<number,number>();
+        for(let i=0;i<n;i++){
+            if((i&16383)===16383)yield;
+            const key=(Math.floor(placed.x(i)/size)+32768)*65536+Math.floor(placed.z(i)/size)+32768;
+            let c=index.get(key);if(c===undefined){c=index.size;index.set(key,c);}cellOf[i]=c;
+        }
+        const keyOf=new Float64Array(index.size);for(const [key,c] of index)keyOf[c]=key;
+        const cells=index.size,start=new Uint32Array(cells+1),order=new Uint32Array(n);
+        for(let i=0;i<n;i++)start[cellOf[i]!+1]!++;
+        for(let c=0;c<cells;c++)start[c+1]!+=start[c]!;
+        const fill=start.slice(0,cells);
+        for(let i=0;i<n;i++)order[fill[cellOf[i]!]!++]=i;
+        const meshes=assets.map(asset=>{asset.updateMatrixWorld(true);const list:THREE.Mesh[]=[];asset.traverse(o=>{if(o instanceof THREE.Mesh)list.push(o);});return list;});
+        const object=new THREE.Object3D(),matrix=new THREE.Matrix4();let work=0;
+        for(let c=0;c<cells;c++){
+            const from=start[c]!,count=start[c+1]!-from,levels:THREE.Group[]=[];
+            for(let lod=0;lod<assets.length;lod++){
+                const group=new THREE.Group();group.name=`${trees?'Trees':'Lawn'} ${Math.floor(keyOf[c]!/65536)-32768},${keyOf[c]!%65536-32768} LOD${lod}`;
                 // Keep ground coverage across LODs; reduce blade geometry instead of tuft density.
-                const selected=positions;
-                asset.updateMatrixWorld(true);
-                asset.traverse(o=>{if(!(o instanceof THREE.Mesh)||!selected.length)return;
-                    const matrices=new Float32Array(selected.length*16);
-                    selected.forEach((p,i)=>{object.position.set(p[0]!,p[1]!,p[2]!);object.rotation.set(0,p[3]!,0);object.scale.setScalar(p[4]!);object.updateMatrix();matrix.multiplyMatrices(object.matrix,o.matrixWorld).toArray(matrices,i*16);});
-                    const mesh=sharedInstancedMesh(o.geometry,o.material,matrices,selected.length);
+                for(const o of meshes[lod]!){
+                    const matrices=new Float32Array(count*16);
+                    for(let k=0;k<count;k++){const p=order[from+k]!;object.position.set(placed.x(p),placed.y(p),placed.z(p));object.rotation.set(0,placed.yaw(p),0);object.scale.setScalar(placed.scale(p));object.updateMatrix();matrix.multiplyMatrices(object.matrix,o.matrixWorld).toArray(matrices,k*16);}
+                    const mesh=sharedInstancedMesh(o.geometry,o.material,matrices,count);
                     mesh.castShadow=trees;mesh.receiveShadow=true;group.add(mesh);
-                });group.visible=lod===0;this.root.add(group);return group;
-            });
+                    if((work+=count)>=8192){work=0;yield;}
+                }
+                group.visible=lod===0;this.root.add(group);levels.push(group);
+            }
             this.cells.push({levels,box:new THREE.Box3().setFromObject(levels[0]!),level:0,limits});
         }
     }

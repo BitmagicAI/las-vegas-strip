@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {runSliced,runSync} from './FrameBudget.js';
 
 const CELL=4;
 const MAX_CELLS_PER_TRIANGLE=64;
@@ -29,6 +30,7 @@ function transform(source:ArrayLike<number>,o:number,e:ArrayLike<number>,out:THR
     out.x=(e[0]!*x+e[4]!*y+e[8]!*z+e[12]!)*w;out.y=(e[1]!*x+e[5]!*y+e[9]!*z+e[13]!)*w;out.z=(e[2]!*x+e[6]!*y+e[10]!*z+e[14]!)*w;
 }
 const SPAN=32768,TRIANGLE_BITS=2**24;
+const none=()=>{};
 let counts=new Uint32Array(1<<16);
 /** The CSR table of `n` (cell key, triangle) pairs: cells in key order, each cell's triangles in insertion order. A
  * comparator sort over millions of pairs was a second or more per city block. Cells are numbered within the mesh's own
@@ -78,21 +80,29 @@ function sortCells(k:Float64Array,refs:Uint32Array,n:number,triangleCount:number
  * renderer may release those after upload. Registered roots must be static;
  * unregister before moving/evicting. */
 export class GroundSurfaceIndex {
+    /** Built only when something will ask for heights (2026-10-26): the city itself never does; game layers and the film
+     * tools do. Without them, registering costs nothing (it was ~2.7 s of the load and ~330 MB for 6.4 M triangles). */
+    constructor(readonly enabled=true){}
     private surfaces=new Set<Surface>();
     private a=new THREE.Vector3();
     private b=new THREE.Vector3();
     private c=new THREE.Vector3();
     private point=new THREE.Vector3();
     private ray=new THREE.Ray(new THREE.Vector3(),new THREE.Vector3(0,-1,0));
-    register(root:THREE.Object3D):()=>void {
+    register(root:THREE.Object3D):()=>void {return this.enabled?runSync(this.registerSteps(root)):none;}
+    /** register, spread over frames within the shared loading budget (FrameBudget.ts). */
+    registerSliced(root:THREE.Object3D):Promise<()=>void>{return this.enabled?runSliced(this.registerSteps(root)):Promise.resolve(none);}
+    /** register as steps: yields between meshes and every 8192 triangles. */
+    *registerSteps(root:THREE.Object3D):Generator<void,()=>void>{
         root.updateWorldMatrix(true,true);
         const owned:Surface[]=[];
         const a=new THREE.Vector3(),b=new THREE.Vector3(),c=new THREE.Vector3(),ab=new THREE.Vector3(),ac=new THREE.Vector3();
         const triangles=new Floats(),keys=new Doubles(),refs=new Uints(),broad=new Uints();
-        root.traverse(object=>{
-            if(!(object instanceof THREE.Mesh) || object instanceof THREE.SkinnedMesh || !object.layers.isEnabled(0))return;
+        const meshes:THREE.Mesh[]=[];root.traverse(o=>{if(o instanceof THREE.Mesh)meshes.push(o);});
+        for(const object of meshes){
+            if(object instanceof THREE.SkinnedMesh || !object.layers.isEnabled(0))continue;
             const g=object.geometry,positions=g.getAttribute('position'),index=g.index;
-            if(!positions||!(('isInterleavedBufferAttribute' in positions&&positions.isInterleavedBufferAttribute)?positions.data.array.length:positions.array.length))return;
+            if(!positions||!(('isInterleavedBufferAttribute' in positions&&positions.isInterleavedBufferAttribute)?positions.data.array.length:positions.array.length))continue;
             const count=index?.count??positions.count;
             const interleaved='isInterleavedBufferAttribute' in positions&&positions.isInterleavedBufferAttribute;
             const source=interleaved?positions.data.array:positions.array,ia=index?.array;
@@ -104,9 +114,11 @@ export class GroundSurfaceIndex {
             const groups=Array.isArray(object.material)?g.groups:[{start:0,count,materialIndex:0}];
             for(const group of groups){
                 const material=materials[group.materialIndex??0];
-                if(!material || material.transparent || !material.visible || material.side===THREE.BackSide)continue;
+                // cut-outs (leaves, grilles) are not ground: one garden tree's 243k leaf cards cost 3 s here (2026-10-25)
+                if(!material || material.transparent || !material.visible || material.side===THREE.BackSide || material.alphaTest>0)continue;
                 const start=Math.max(group.start,g.drawRange.start),end=Math.min(count,group.start+group.count,g.drawRange.start+g.drawRange.count);
                 for(let i=start;i+2<end;i+=3){
+                    if(i%24576===24573)yield;
                     // the same arithmetic as fromBufferAttribute + applyMatrix4, without the per-vertex calls (2026-10-24:
                     // registering the city spent ~10 s of the load in them); quantized positions take three's accessors
                     if(direct){
@@ -130,15 +142,17 @@ export class GroundSurfaceIndex {
                     for(let x=x0;x<=x1;x++)for(let y=y0;y<=y1;y++)for(let z=z0;z<=z1;z++){keys.push(cellKey(x,y,z));refs.push(t);}
                 }
             }
-            if(!triangles.length)return;
+            if(!triangles.length)continue;
             // Sort (key, triangle) pairs by key, then compress into a CSR table.
             const n=keys.length,{cellKeys,cellStart,cellTriangles}=sortCells(keys.array,refs.array,n,triangles.length/9);
             const surface:Surface={mesh:object,triangles:triangles.array.slice(0,triangles.length),cellKeys,cellStart,cellTriangles,broad:broad.array.slice(0,broad.length),bounds};
             this.surfaces.add(surface);owned.push(surface);
-        });
+            yield;
+        }
         return ()=>{for(const surface of owned)this.surfaces.delete(surface);owned.length=0;};
     }
     height(x:number,z:number,top:number,bottom:number):number|undefined {
+        if(!this.enabled)throw new Error('GroundSurfaceIndex: heights were asked for, but the index was not enabled (Game.ts groundIndexNeeded)');
         let best=-Infinity;
         this.ray.origin.set(x,top,z);
         const cx=Math.floor(x/CELL),cz=Math.floor(z/CELL);

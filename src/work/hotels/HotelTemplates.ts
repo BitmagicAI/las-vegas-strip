@@ -14,7 +14,7 @@ import type {MeshLevelData,MeshLevelCollider} from 'engine/meshlevel/MeshLevelSc
 import type {EngineLike} from 'types/game.js';
 import type {HotelSet} from './HotelLayout.js';
 import recipes from './towers.json';
-import {runtimeUrl} from '../RuntimeAssets.js';
+import {loadRecords} from '../PackedRecords.js';
 export type ModuleName=`${HotelSet}-${'stair'|'corridor'|'room'|'cap'|'entry'|'closure'|'door'|'corridor-end'}`|`${string}-lobby`;
 const REVISION='door-panels-6';
 const CORE=['stair','cap','entry','closure'] as const;
@@ -46,12 +46,9 @@ export class HotelTemplates {
         const existing=this.pending.get(name);if(existing)return existing;
         const request=(async()=>{
             const url=`/build/hotels/${name}`;
-            const [gltf,response]=await Promise.all([
-                new GLTFLoader().loadAsync(await glbUrl(`${url}.glb?v=${REVISION}`)),
-                fetch(runtimeUrl(`${url}.mesh-level.json?v=${REVISION}`))
-            ]);
-            if(!response.ok){this.releaseResources([gltf.scene]);throw new Error(`Cannot load hotel metadata ${name}: ${response.status}`);}
-            const meta=await response.json() as MeshLevelData;
+            const gltf=await new GLTFLoader().loadAsync(await glbUrl(`${url}.glb?v=${REVISION}`));
+            // the module's level as a record file (PackedRecords.ts): its number lists are typed arrays
+            const meta=await loadRecords<MeshLevelData>(`${url}.mesh-level.bin`).catch(error=>{this.releaseResources([gltf.scene]);throw error;});
             if(this.disposed){this.releaseResources([gltf.scene]);return;}
             applyMaterialConventions(gltf.scene);this.lightModule(name,gltf.scene);this.bases.set(name,gltf.scene);this.metadata.set(name,meta);
         })();
@@ -105,9 +102,9 @@ export class HotelTemplates {
         const releaseGround=staticGround?this.groundSurfaces.register(root):()=>{};
         const meta=this.metadata.get(name)!,world=this.engine.physicsWorld!;
         const bodies=meta.colliders.map(c=>{
-            const vertices=colliderVertices(c),out:number[]=[],p=new THREE.Vector3();
-            for(let i=0;i<vertices.length;i+=3){p.set(vertices[i]!,vertices[i+1]!,vertices[i+2]!).applyMatrix4(matrix);out.push(p.x,p.y,p.z);}
-            const record:MeshLevelCollider=c.shape==='trimesh'?{name:c.name,shape:'trimesh',vertices:out,indices:c.indices}:{name:c.name,shape:'convexHull',vertices:out};
+            const vertices=colliderVertices(c),out=new Float32Array(vertices.length),p=new THREE.Vector3();
+            for(let i=0;i<vertices.length;i+=3){p.set(vertices[i]!,vertices[i+1]!,vertices[i+2]!).applyMatrix4(matrix);out[i]=p.x;out[i+1]=p.y;out[i+2]=p.z;}
+            const record:MeshLevelCollider=c.shape==='trimesh'?{name:c.name,shape:'trimesh',vertices:out,indices:c.indices instanceof Uint32Array?c.indices:Uint32Array.from(c.indices)}:{name:c.name,shape:'convexHull',vertices:out as unknown as number[]};   // (typed: planCollider copies hull points into a Float32Array)
             const plan=planCollider(record,'terrain');
             return PhysicsBodyFactory.createStaticBody(world,plan.position,{shape:plan.shape,friction:.85,collisionGroup:plan.collisionGroup,collisionMask:plan.collisionMask},plan.quaternion).rigidBody;
         });

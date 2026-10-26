@@ -5,7 +5,10 @@ import {interiorLightsNode,lightInterior} from './InteriorLighting.js';
 import type {LightsNode} from 'three/webgpu';
 import {ResortFoliage} from './ResortFoliage.js';
 import {makeDoorTrim} from './DoorTrim.js';
-import {batchCityShadows} from './CityShadows.js';
+import {unmergedCasterShadows,unmergedCasterShadowsSteps} from './CityShadows.js';
+import {runSliced} from './FrameBudget.js';
+import {type CollisionPack,loadCollisionPack} from './CollisionPack.js';
+import {loadRecords} from './PackedRecords.js';
 import {GroveLod} from './GroveLod.js';
 import {CityLod} from './CityLod.js';
 import * as THREE from 'three';
@@ -21,12 +24,14 @@ import {disposeSphereRoot} from './SphereVisuals.js';
 import type {SiteLights,LightSite} from './SiteLights.js';
 import {runtimeUrl} from './RuntimeAssets.js';
 import {loadGltf,prefetch} from './Prefetch.js';
+import {appear} from './Appear.js';
+import {compileSubtree} from './ShaderSharing.js';
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
-type XYZ=[number,number,number];
-interface Collision {vertices:number[];indices:number[]}
+/** a point, as the record file gives it (PackedRecords.ts: a typed array of three) */
+type XYZ=Float32Array&readonly [number,number,number];
 interface Zone {origin:XYZ;yaw:number;width:number;depth:number;height:number}
 interface Portal {p:XYZ;yaw:number;width:number;height:number;name:string}
-interface Meta {exteriorOnly?:boolean;hotelSources?:string[];structural?:boolean;exteriorCollision?:string;outside?:boolean;levelY?:number;preloadDistance?:number;key:string;name:string;building?:string;bounds:[number,number,number,number];portals:Portal[];accessPoints?:XYZ[];zones:Zone[];lights:{p:XYZ;color:number;power:number;range:number}[];views:Record<string,{eye:XYZ;target:XYZ}>;seats?:[number,number,number,number][];wheel?:{center:XYZ;radius:number;yaw:number;cabins:number}}
+interface Meta {exteriorOnly?:boolean;hotelSources?:string[];structural?:boolean;exteriorCollision?:string;outside?:boolean;levelY?:number;preloadDistance?:number;key:string;name:string;building?:string;bounds:Float32Array&readonly [number,number,number,number];portals:Portal[];/** x, y, z per point */accessPoints?:Float32Array;zones:Zone[];lights:{p:XYZ;color:number;power:number;range:number}[];views:Record<string,{eye:XYZ;target:XYZ}>;/** x, y, z, yaw per seat */seats?:Float32Array;wheel?:{center:XYZ;radius:number;yaw:number;cabins:number}}
 interface Resident {/** top of the venue's podium meshes (-Infinity without one) */podiumTop:number;meta:Meta;exterior:THREE.Group;interior:THREE.Group|null;body:Body|null;exteriorBody:Body|null;exteriorLoaded:boolean;doors:Door[];leaves:THREE.Mesh[];sites:LightSite[];releaseExterior:()=>void;releaseInterior:(()=>void)|null;pending:boolean;lastNear:number;retryAfter:number;nearPortals:Set<number>;details:THREE.Object3D[]}
 class ArrivalDoor extends Door {
     constructor(engine:EngineLike,options:ConstructorParameters<typeof Door>[1],private ready:()=>boolean){super(engine,options);}
@@ -40,7 +45,6 @@ export class StripLandmarks {
     private lods=new Map<Resident,CityLod>();
     private groves:GroveLod[]=[];
     private foliage:ResortFoliage[]=[];
-    private revision='';
     private disposed=false;
     private nextCheck=0;
     private passing=false;
@@ -52,27 +56,31 @@ export class StripLandmarks {
     constructor(private engine:EngineLike,private surfaces:GroundSurfaceIndex,private loading:StreamingWork,private lights:SiteLights,private base=BASE){}
     /** While passing at speed, interiors are not streamed in; collision for the exterior still is. */
     setPassing(passing:boolean):void {this.passing=passing;}
-    async load():Promise<void>{
-        const [meta,version]=await Promise.all([this.json<Meta[]>('venues.json'),this.json<{revision:string}>('version.json')]);this.revision=version.revision;
+    /** `sliced` (the city loading behind play, 2026-10-25): exteriors load nearest `focus` first, each built over
+     * several frames within the shared loading budget (FrameBudget.ts), compiled off the frame and only then shown,
+     * dropping in from the sky (Appear.ts). Without it everything is built at once, as before. */
+    async load(sliced=false,focus?:()=>THREE.Vector3):Promise<void>{
+        const all=await loadRecords<Meta[]>(this.base+'venues.bin');
+        let meta=all;
+        if(focus){const f=focus(),d=(m:Meta)=>Math.hypot((m.bounds[0]+m.bounds[2])/2-f.x,(m.bounds[1]+m.bounds[3])/2-f.z);meta=[...all].sort((a,b)=>d(a)-d(b));}
         // every exterior downloads ahead of the serial parse below (Prefetch.ts)
-        prefetch(await Promise.all(meta.map(m=>glbUrl(this.base+m.key+'-exterior.glb?v='+this.revision))));
+        prefetch(await Promise.all(meta.map(m=>glbUrl(this.base+m.key+'-exterior.glb'))));
         // Limit concurrent parsing so startup doesn't briefly double every asset's memory.
         for(const m of meta){
-            const gltf=await loadGltf(new GLTFLoader(),await glbUrl(this.base+m.key+'-exterior.glb?v='+this.revision));
+            const gltf=await loadGltf(new GLTFLoader(),await glbUrl(this.base+m.key+'-exterior.glb'));
             if(this.disposed){disposeSphereRoot(gltf.scene);return;}
-            const exterior=gltf.scene;exterior.name=m.name+' / exterior';exterior.userData.perfOwner=m.name+' · exterior';exterior.userData.perfKind='exterior';this.finish(exterior,false);if(m.key==='bellagioBlock')applyLawnMaterial(exterior);this.engine.scene!.add(exterior);
-            const details:THREE.Object3D[]=[];const proxies:THREE.Mesh[]=[];
-            exterior.traverse(o=>{if(o.userData.detail)details.push(o);if(o instanceof THREE.Mesh && !o.userData.detail && /podium|mall-shell|arena-shell|campanile|guest-|tower\/|lakefront-(pavilions|rotundas|village-shell)/.test(String(o.userData.source))){const p=new THREE.Mesh(o.geometry,new THREE.MeshBasicMaterial({side:THREE.DoubleSide}));p.matrix.copy(o.matrix);p.matrixAutoUpdate=false;p.layers.set(30);p.castShadow=true;proxies.push(p);}});
-            // Interior-only anchors have no shadow proxies. Three's add() with
-            // an empty spread still attempts to add undefined.
-            for(const proxy of proxies)exterior.add(proxy);batchCityShadows(exterior);
+            const exterior=gltf.scene;exterior.name=m.name+' / exterior';exterior.userData.perfOwner=m.name+' · exterior';exterior.userData.perfKind='exterior';this.finish(exterior,false);if(m.key==='bellagioBlock')applyLawnMaterial(exterior);if(sliced)exterior.visible=false;this.engine.scene!.add(exterior);
+            // Podiums, shells, guest and mapped towers cast the sun's shadow: from their city batches (CityLod) or as
+            // proxies when no batch takes them (unmergedCasterShadows, after the LOD below).
+            const details:THREE.Object3D[]=[];
+            exterior.traverse(o=>{if(o.userData.detail)details.push(o);if(o instanceof THREE.Mesh && !o.userData.detail && /podium|mall-shell|arena-shell|campanile|guest-|tower\/|lakefront-(pavilions|rotundas|village-shell)/.test(String(o.userData.source)))o.userData.cityCaster=true;});
             let podiumTop=-Infinity;const box=new THREE.Box3();
             exterior.traverse(o=>{if(o instanceof THREE.Mesh&&/podium/.test(String(o.userData.source))){box.setFromObject(o);podiumTop=Math.max(podiumTop,box.max.y);}});
-            const v:Resident={podiumTop,meta:m,exterior,interior:null,body:null,exteriorBody:null,exteriorLoaded:false,doors:[],leaves:[],sites:m.lights.map(l=>({x:l.p[0],y:l.p[1],z:l.p[2],color:l.color,intensity:l.power,distance:l.range})),releaseExterior:this.surfaces.register(exterior),releaseInterior:null,pending:false,lastNear:0,retryAfter:0,nearPortals:new Set(),details};this.venues.push(v);this.createDoors(v);
-            if(m.key==='bellagioBlock'){v.exteriorBody=this.body(await this.json<Collision>(m.exteriorCollision??m.key+'-exterior-collision.json'),m.name);v.exteriorLoaded=true;}
+            const v:Resident={podiumTop,meta:m,exterior,interior:null,body:null,exteriorBody:null,exteriorLoaded:false,doors:[],leaves:[],sites:m.lights.map(l=>({x:l.p[0],y:l.p[1],z:l.p[2],color:l.color,intensity:l.power,distance:l.range})),releaseExterior:sliced?await this.surfaces.registerSliced(exterior):this.surfaces.register(exterior),releaseInterior:null,pending:false,lastNear:0,retryAfter:0,nearPortals:new Set(),details};if(!sliced)this.venues.push(v);this.createDoors(v);
+            if(m.key==='bellagioBlock'){v.exteriorBody=this.body(await this.collision(m.exteriorCollision??m.key+'-exterior-collision.json'),m.name);v.exteriorLoaded=true;}
             if(m.wheel)this.setupWheel(v);
             // The High Roller moves independently; its stationary resort still batches like other buildings.
-            this.lods.set(v,new CityLod(exterior,{facade:true,key:o=>{
+            const lod=new CityLod(exterior,{facade:true,sliced,prepare:root=>compileSubtree(this.engine,root),key:o=>{
                 const source=String(o.userData.source??'');
                 if(m.wheel&&source.startsWith('wheel-'))return null;
                 if(source.startsWith('arrival-tree/'))return null;
@@ -81,13 +89,20 @@ export class StripLandmarks {
                 if(typeof o.userData.spatialCell==='string')return m.key+':'+o.userData.spatialCell;
                 if(source.startsWith('lakefront-'))return 'lakefront-village';
                 return m.key;
-            }}));
+            }});
+            this.lods.set(v,lod);
+            if(!sliced)unmergedCasterShadows(exterior);
+            if(sliced){
+                await lod.ready;if(this.disposed)return;
+                await runSliced(unmergedCasterShadowsSteps(exterior));
+                await compileSubtree(this.engine,exterior);
+                exterior.visible=true;this.venues.push(v);appear(exterior);
+            }
         }
-        for(const v of this.venues)if(v.meta.key==='bellagioBlock'){const foliage=new ResortFoliage(this.engine.scene!,v.exterior);try{await foliage.load();this.foliage.push(foliage);}catch(error){foliage.dispose();console.warn('[ResortFoliage] Keeping existing planting because assets could not load',error);}}
+        for(const v of this.venues)if(v.meta.key==='bellagioBlock'){const foliage=new ResortFoliage(this.engine.scene!,v.exterior);try{await foliage.load(sliced);if(this.disposed){foliage.dispose();return;}if(sliced){await compileSubtree(this.engine,foliage.group);foliage.show();appear(foliage.group);}this.foliage.push(foliage);}catch(error){foliage.dispose();console.warn('[ResortFoliage] Keeping existing planting because assets could not load',error);}}
         for(const v of this.venues)this.groves.push(new GroveLod(v.exterior));
         console.info(`[StripLandmarks] ${this.venues.length} exteriors ready; public interiors and guest hotels remain streamed.`);
     }
-    private async json<T>(file:string):Promise<T>{const r=await fetch(runtimeUrl(this.base+file+(this.revision?'?v='+this.revision:'')));if(!r.ok)throw new Error('Landmark asset unavailable: '+file);return r.json() as Promise<T>;}
     private finish(root:THREE.Group,inside:boolean):void{
         root.traverse(o=>{if(!(o instanceof THREE.Mesh))return;o.castShadow=false;o.receiveShadow=true;
             // glTF splits multi-material tree meshes into children; extras remain on their parent.
@@ -110,12 +125,14 @@ export class StripLandmarks {
             }
         }
     }
-    private body(data:Collision,name:string):Body|null {
-        if(!data.indices.length)return null;const p=planCollider({name,shape:'trimesh',...data},'terrain');return PhysicsBodyFactory.createStaticBody(this.engine.physicsWorld!,p.position,{shape:p.shape,friction:.85,collisionGroup:p.collisionGroup,collisionMask:p.collisionMask},p.quaternion).rigidBody;
+    /** A venue's collision mesh (named by its JSON source; the game loads the packed .bin, CollisionPack.ts). */
+    private collision(file:string):Promise<CollisionPack>{return loadCollisionPack(this.base+file.replace(/\.json$/,'.bin'));}
+    private body(pack:CollisionPack,name:string):Body|null {
+        if(!pack.triangleCount(0))return null;const p=planCollider(pack.trimesh(0,name),'terrain');return PhysicsBodyFactory.createStaticBody(this.engine.physicsWorld!,p.position,{shape:p.shape,friction:.85,collisionGroup:p.collisionGroup,collisionMask:p.collisionMask},p.quaternion).rigidBody;
     }
     private async loadInterior(v:Resident):Promise<void>{
         if(v.meta.exteriorOnly)return;
-        const [gltf,data]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(this.base+v.meta.key+'-interior.glb?v='+this.revision)),this.json<Collision>(v.meta.key+'-interior-collision.json')]);
+        const [gltf,data]=await Promise.all([new GLTFLoader().loadAsync(await glbUrl(this.base+v.meta.key+'-interior.glb')),this.collision(v.meta.key+'-interior-collision.json')]);
         if(this.disposed){disposeSphereRoot(gltf.scene);return;}
         const root=gltf.scene;root.name=v.meta.name+' / streamed public interior';root.userData.perfOwner=v.meta.name+' · interior';root.userData.perfKind='interior';this.finish(root,true);
         // Lit by sun, sky, ambient and the four shared venue lights only (see InteriorLighting).
@@ -126,11 +143,11 @@ export class StripLandmarks {
         // the scene rebuilds every lit shader in view.
         this.loading.revealUntilReady(root);
     }
-    private addSeats(root:THREE.Group,seats:[number,number,number,number][]):void {
+    private addSeats(root:THREE.Group,seats:Float32Array):void {
         const mat=new THREE.MeshStandardMaterial({color:0x323638,roughness:.75,emissive:0x080a0b}),steel=new THREE.MeshStandardMaterial({color:0x424341,roughness:.45,metalness:.5});
-        const parts:[XYZ,XYZ,THREE.Material][]=[[[0,0,0],[.48,.12,.46],mat],[[0,.32,-.19],[.49,.66,.12],mat],[[0,-.21,0],[.1,.36,.24],steel],[[.27,.18,0],[.07,.06,.44],steel]];
+        const parts:[[number,number,number],[number,number,number],THREE.Material][]=[[[0,0,0],[.48,.12,.46],mat],[[0,.32,-.19],[.49,.66,.12],mat],[[0,-.21,0],[.1,.36,.24],steel],[[.27,.18,0],[.07,.06,.44],steel]];
         const object=new THREE.Object3D(),offset=new THREE.Vector3();
-        for(const [local,size,material] of parts){const mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(...size),material,seats.length);mesh.name='Arena shared seat part';seats.forEach(([x,y,z,yaw],i)=>{object.rotation.set(0,yaw,0);offset.set(...local).applyEuler(object.rotation);object.position.set(x,y,z).add(offset);object.updateMatrix();mesh.setMatrixAt(i,object.matrix);});mesh.instanceMatrix.needsUpdate=true;mesh.computeBoundingSphere();root.add(mesh);}
+        for(const [local,size,material] of parts){const count=seats.length/4,mesh=new THREE.InstancedMesh(new THREE.BoxGeometry(...size),material,count);mesh.name='Arena shared seat part';for(let i=0;i<count;i++){object.rotation.set(0,seats[i*4+3]!,0);offset.set(...local).applyEuler(object.rotation);object.position.set(seats[i*4]!,seats[i*4+1]!,seats[i*4+2]!).add(offset);object.updateMatrix();mesh.setMatrixAt(i,object.matrix);}mesh.instanceMatrix.needsUpdate=true;mesh.computeBoundingSphere();root.add(mesh);}
     }
     private inZone(point:THREE.Vector3,z:Zone,margin=0):boolean {const dx=point.x-z.origin[0],dz=point.z-z.origin[2],c=Math.cos(z.yaw),s=Math.sin(z.yaw),x=c*dx-s*dz,t=s*dx+c*dz;return Math.abs(x)<z.width/2+margin && t>-margin && t<z.depth+margin && point.y>z.origin[1]-.6 && point.y<z.origin[1]+z.height+.4;}
     getView(player:THREE.Vector3,camera:THREE.Vector3):{building:string;outside:boolean;showGround:boolean}|null{
@@ -146,7 +163,7 @@ export class StripLandmarks {
         this.pinned=new Set(keys??[]);
         for(const v of this.venues){
             if(!this.pinned.has(v.meta.key))continue;
-            if(!v.exteriorLoaded){const c=await this.json<Collision>(v.meta.exteriorCollision??v.meta.key+'-exterior-collision.json');if(this.disposed)return;v.exteriorBody=this.body(c,v.meta.name);v.exteriorLoaded=true;}
+            if(!v.exteriorLoaded){const c=await this.collision(v.meta.exteriorCollision??v.meta.key+'-exterior-collision.json');if(this.disposed)return;v.exteriorBody=this.body(c,v.meta.name);v.exteriorLoaded=true;}
             if(!v.interior&&!v.pending){v.pending=true;try{await this.loadInterior(v);}finally{v.pending=false;}}
             v.lastNear=performance.now();
         }
@@ -171,7 +188,7 @@ export class StripLandmarks {
             const m=v.meta,bounds=m.bounds,d=Math.hypot(Math.max(bounds[0]-player.x,0,player.x-bounds[2]),Math.max(bounds[1]-player.z,0,player.z-bounds[3]));
             let portalDistance=Infinity,inside=false;
             for(const p of m.portals)portalDistance=Math.min(portalDistance,Math.hypot(player.x-p.p[0],player.y-p.p[1],player.z-p.p[2]));
-            if(m.accessPoints)for(const p of m.accessPoints)portalDistance=Math.min(portalDistance,Math.hypot(player.x-p[0],player.y-p[1],player.z-p[2]));
+            const access=m.accessPoints;if(access)for(let i=0;i<access.length;i+=3)portalDistance=Math.min(portalDistance,Math.hypot(player.x-access[i]!,player.y-access[i+1]!,player.z-access[i+2]!));
             for(const z of m.zones)if(this.inZone(player,z)){inside=true;break;}
             const verticalNear=m.levelY===undefined||Math.abs(player.y-m.levelY)<7;
             const publicVisible=inside||verticalNear&&portalDistance<42;
@@ -190,7 +207,7 @@ export class StripLandmarks {
             if(check&&!v.pending&&now>v.retryAfter){
                 const exteriorNeeded=d<90&&!v.exteriorLoaded,interiorNeeded=!m.exteriorOnly&&(inside||!this.passing&&portalDistance<(m.preloadDistance??38))&&!v.interior&&(m.levelY!==undefined?verticalNear:player.y<40);
                 if(exteriorNeeded||interiorNeeded){v.pending=true;this.loading.enqueue('landmark:'+m.key,m.name,async()=>{try{
-                    if(exteriorNeeded){const c=await this.json<Collision>(m.exteriorCollision??m.key+'-exterior-collision.json');if(!this.disposed){v.exteriorBody=this.body(c,m.name);v.exteriorLoaded=true;}}
+                    if(exteriorNeeded){const c=await this.collision(m.exteriorCollision??m.key+'-exterior-collision.json');if(!this.disposed){v.exteriorBody=this.body(c,m.name);v.exteriorLoaded=true;}}
                     if(interiorNeeded&&!this.disposed)await this.loadInterior(v);
                 }catch(e){v.retryAfter=performance.now()+10000;console.error('[StripLandmarks]',m.key,e);}finally{v.pending=false;}},{background:!interiorNeeded&&d>=30});}
                 else if(!inside&&(portalDistance>135||m.levelY!==undefined&&Math.abs(player.y-m.levelY)>12)&&now-v.lastNear>20000){this.unload(v);if(m.key!=='bellagioBlock'&&d>150&&v.exteriorBody?.isValid()){this.engine.physicsWorld!.removeRigidBody(v.exteriorBody);v.exteriorBody=null;v.exteriorLoaded=false;}}
@@ -204,11 +221,11 @@ export class StripLandmarks {
             this.wheelAngle=filmDetail.full?0:this.wheelAngle+dt*Math.PI*2/1800;const w=this.venues.find(v=>v.meta.wheel)?.meta.wheel;if(w){this.rim.quaternion.setFromAxisAngle(this.wheelAxis.set(Math.sin(w.yaw),0,Math.cos(w.yaw)),this.wheelAngle);for(const {root,start} of this.cabins)root.position.copy(start).applyQuaternion(this.rim.quaternion).sub(start);}}this.lastWheelTime=now;
     }
     private setupWheel(v:Resident):void{
-        const w=v.meta.wheel!,c=new THREE.Vector3(...w.center),rim=new THREE.Group();rim.name='High Roller rotating rim';rim.position.copy(c);v.exterior.add(rim);this.rim=rim;
+        const w=v.meta.wheel!,c=new THREE.Vector3().fromArray(w.center),rim=new THREE.Group();rim.name='High Roller rotating rim';rim.position.copy(c);v.exterior.add(rim);this.rim=rim;
         const nodes=[...v.exterior.children];for(const o of nodes){if(o.userData.source==='wheel-rim'){o.position.sub(c);rim.add(o);}}
         for(let i=0;i<w.cabins;i++){const root=new THREE.Group(),a=i*Math.PI*2/w.cabins,start=new THREE.Vector3(w.radius*Math.cos(a)*Math.cos(w.yaw),w.radius*Math.sin(a),-w.radius*Math.cos(a)*Math.sin(w.yaw));root.name='High Roller upright cabin '+i;v.exterior.add(root);for(const o of nodes)if(o.userData.source==='wheel-cabin-'+i)root.add(o);this.cabins.push({root,start});}
     }
-    review(key:string,view='entrance'):{position:THREE.Vector3;yaw:number;pitch:number}|null {const p=key==='bellagioBlock'&&view==='foliage'?{eye:[-87,2.21,584],target:[-92,3.5,576]}:this.venues.find(v=>v.meta.key===key)?.meta.views[view];if(!p)return null;const eye=new THREE.Vector3(...p.eye),d=new THREE.Vector3(...p.target).sub(eye);return {position:eye.add(new THREE.Vector3(0,-1.7,0)),yaw:Math.atan2(-d.x,-d.z),pitch:-Math.atan2(d.y,Math.hypot(d.x,d.z))};}
+    review(key:string,view='entrance'):{position:THREE.Vector3;yaw:number;pitch:number}|null {const p=key==='bellagioBlock'&&view==='foliage'?{eye:Float32Array.of(-87,2.21,584),target:Float32Array.of(-92,3.5,576)}:this.venues.find(v=>v.meta.key===key)?.meta.views[view];if(!p)return null;const eye=new THREE.Vector3().fromArray(p.eye),d=new THREE.Vector3().fromArray(p.target).sub(eye);return {position:eye.add(new THREE.Vector3(0,-1.7,0)),yaw:Math.atan2(-d.x,-d.z),pitch:-Math.atan2(d.y,Math.hypot(d.x,d.z))};}
     private unload(v:Resident):void{v.doors.forEach(d=>d.close());v.nearPortals.clear();v.releaseInterior?.();v.releaseInterior=null;if(v.body?.isValid())this.engine.physicsWorld!.removeRigidBody(v.body);v.body=null;if(v.interior)disposeSphereRoot(v.interior);v.interior=null;this.lights.offer('landmark:'+this.base+v.meta.key,[]);}
     get stats(){return {residentInteriors:this.venues.filter(v=>v.interior).map(v=>v.meta.key),physicsBodies:this.venues.reduce((n,v)=>n+Number(!!v.body)+Number(!!v.exteriorBody)+v.doors.length,0)};}
     dispose():void{this.disposed=true;for(const g of this.groves.reverse())g.dispose();this.groves=[];for(const f of this.foliage.reverse())f.dispose();this.foliage=[];for(const lod of this.lods.values())lod.dispose();this.lods.clear();for(const v of this.venues){this.unload(v);v.doors.forEach(d=>d.dispose());v.leaves.forEach(l=>l.children.forEach(c=>disposeSphereRoot(c)));v.releaseExterior();if(v.exteriorBody?.isValid())this.engine.physicsWorld!.removeRigidBody(v.exteriorBody);disposeSphereRoot(v.exterior);}this.venues=[];this.cabins=[];this.rim=null;}

@@ -64,6 +64,11 @@ def runtime_glbs():
     return [f['path'] for f in old['files'] if f['path'].endswith('.glb')]
 
 
+def packed(path):
+    """The .bin the game loads in place of a data JSON (tools/optimize/pack-data.mjs)."""
+    return path[:-len('.json')] + '.bin'
+
+
 def runtime_files():
     """(path, reason) for every runtime file the loaders ask for, GLBs included."""
     want = {}
@@ -81,50 +86,51 @@ def runtime_files():
         if url.startswith('/build/'):
             add(url[1:], f'world.json asset {a.get("id")}')
     g = 'build/geographic-strip/'
-    # GeographicCity.ts, Game.ts, SanctuaryJeep.ts, film/SceneCrowd.ts, GeographicPassages.ts
-    for f in ['city-version.json', 'city-colliders.json', 'road-network.json', 'access/manifest.json', 'city.glb', 'detailed.glb']:
+    # GeographicCity.ts, Game.ts, SanctuaryJeep.ts (speed-map.bin: the road network and the Bellagio arrival roads,
+    # baked), GeographicPassages.ts
+    for f in ['city-colliders.bin', 'speed-map.bin', 'access/manifest.bin', 'city.glb', 'detailed.glb']:
         add(g + f, 'GeographicCity / Game / SanctuaryJeep')
     access = load_json(g + 'access/manifest.json')
     for e in access.get('entries', access) if isinstance(access, dict) else access:
-        add(f'{g}access/{e["id"]}.json', 'GeographicPassages bridge concourse')
-    # HighriseCity.ts: version.json, exteriors.glb, <key>-collision.json
-    add('build/highrises/version.json', 'HighriseCity')
+        add(f'{g}access/{e["id"]}.bin', 'GeographicPassages bridge concourse')
+    # HighriseCity.ts: exteriors.glb, <key>-collision.bin
     add('build/highrises/exteriors.glb', 'HighriseCity')
     for p in sorted((BUILD / 'highrises').glob('*-collision.json')):
-        add(rel(p), 'HighriseCity collision')
+        add(packed(rel(p)), 'HighriseCity collision')
     # StripLandmarks.ts (also ResortBlocks.ts for cosmo, bellagio, paris): venues.json, version.json, per venue
     # <key>-exterior.glb + its collision, and unless exteriorOnly <key>-interior.glb + <key>-interior-collision.json
     for base in ['build/strip-landmarks/', 'build/resort-blocks/cosmo/', 'build/resort-blocks/bellagio/', 'build/resort-blocks/paris/']:
-        add(base + 'venues.json', 'StripLandmarks')
-        add(base + 'version.json', 'StripLandmarks')
+        add(base + 'venues.bin', 'StripLandmarks')
         for m in load_json(base + 'venues.json'):
             k = m['key']
             add(f'{base}{k}-exterior.glb', 'StripLandmarks exterior')
-            add(base + (m.get('exteriorCollision') or f'{k}-exterior-collision.json'), 'StripLandmarks exterior collision')
+            add(packed(base + (m.get('exteriorCollision') or f'{k}-exterior-collision.json')), 'StripLandmarks exterior collision')
             if not m.get('exteriorOnly'):
-                for f in [f'{k}-interior.glb', f'{k}-interior-collision.json']:
-                    if (ROOT / base / f).exists():
-                        add(base + f, 'StripLandmarks interior (streamed)')
-    add('build/resort-blocks/bellagio/south-arrival-report.json', 'SanctuaryJeep / SceneCrowd arrival roads')
+                if (ROOT / base / f'{k}-interior.glb').exists():
+                    add(f'{base}{k}-interior.glb', 'StripLandmarks interior (streamed)')
+                if (ROOT / base / f'{k}-interior-collision.json').exists():
+                    add(packed(f'{base}{k}-interior-collision.json'), 'StripLandmarks interior (streamed)')
     # BigAppleCoaster.ts
-    for f in ['version.json', 'route.json', 'coaster-collision.json', 'coaster.glb', 'train.glb']:
+    for f in ['route.bin', 'coaster-collision.bin', 'coaster.glb', 'train.glb']:
         add('build/south-strip/' + f, 'BigAppleCoaster')
     # PbrDetail.ts
-    for f in ['sets.json', 'albedo.webp', 'normal.webp', 'arm.webp']:
+    for f in ['sets.bin', 'albedo.webp', 'normal.webp', 'arm.webp']:
         add('build/pbr/strips/' + f, 'PbrDetail')
-    # SphereVenue.ts: sphere.json, version.json, media.json and the media it names
-    for f in ['sphere.json', 'version.json', 'media.json', 'exterior.glb', 'interior.glb', 'exterior-collision.json', 'interior-collision.json']:
+    # SphereVenue.ts: sphere.bin, media.bin and the media it names
+    for f in ['sphere.bin', 'media.bin', 'exterior.glb', 'interior.glb', 'exterior-collision.bin', 'interior-collision.bin']:
         add('build/sphere/' + f, 'SphereVenue')
     media = load_json('build/sphere/media.json')
     for k in ['exterior', 'exteriorPoster', 'interior', 'interiorPoster']:
         add('build/sphere/' + media[k], 'SphereVenue media')
-    # HotelTemplates.ts: /build/hotels/<module>.glb and /build/hotels/<module>.mesh-level.json
+    # HotelTemplates.ts: /build/hotels/<module>.glb and /build/hotels/<module>.mesh-level.bin
     # (only real modules: the optimizer's list already applies HotelLayout's set and part names, so staged-vegas.glb,
     # which no module name can request, stays out)
     for path in runtime_glbs():
         if path.startswith('build/hotels/') and path.endswith('.glb'):
-            add(path[:-4] + '.mesh-level.json', 'HotelTemplates module levels')
+            add(path[:-4] + '.mesh-level.bin', 'HotelTemplates module levels')
     add('build/vehicles/afterlight-jeep.glb', 'SanctuaryJeep')
+    # CityBakeLoad.ts: the city's baked distant LODs (tools/bake/bake-city.mjs)
+    add('build/baked/city-lod.bin', 'CityBakeLoad baked LODs')
     return want
 
 
@@ -153,10 +159,19 @@ def listing():
     manifest = optimized_files()
     want = runtime_files()
     files, missing = [], []
+    # the city bake must be made from the geometry being shipped
+    import subprocess
+    if subprocess.run(['node', 'tools/bake/bake-city.mjs', 'check'], cwd=ROOT, capture_output=True).returncode != 0:
+        missing.append(('build/baked/city-lod.bin', 'stale or missing city bake (node tools/bake/bake-city.mjs)'))
+        want.pop('build/baked/city-lod.bin', None)
     for path in sorted(want):
         src, kind = source_for(path, manifest)
         if not src.exists():
-            missing.append((path, want[path]))
+            missing.append((path, want[path] + ' (node tools/optimize/pack-data.mjs)' if path.endswith('.bin') else want[path]))
+            continue
+        json_source = (ROOT / 'build/geographic-strip/road-network.json') if path.endswith('/speed-map.bin') else src.with_suffix('.json')
+        if path.endswith('.bin') and json_source.exists() and json_source.stat().st_mtime > src.stat().st_mtime:
+            missing.append((path, want[path] + ' is older than its JSON (node tools/optimize/pack-data.mjs)'))
             continue
         files.append({'path': path, 'bytes': src.stat().st_size, 'sha256': sha256(src), 'from': rel(src), 'kind': kind})
     return files, missing

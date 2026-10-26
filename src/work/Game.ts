@@ -17,16 +17,17 @@ import {ResortBlockReview} from './ResortBlockReview.js';
 import {BigAppleCoaster} from './BigAppleCoaster.js';
 import {GeographicCity} from './GeographicCity.js';
 import geographicLevel from './geographic/level.json';
-import geographicVersion from './geographic/version.json';
 import {mapPoint,mapYaw,reviewDistrict} from './geographic/Coordinates.js';
 import {StreamingWork} from './StreamingWork.js';
 import {BackgroundActivity} from './BackgroundActivity.js';
 import {configureSkylineDepth} from './SkylineDepth.js';
 import {configureLightCaps} from './LightCaps.js';
-import {compileForScenePass,configureShaderSharing} from './ShaderSharing.js';
+import {compileForScenePass,compileSubtree,configureShaderSharing} from './ShaderSharing.js';
 import {installShaderAudit} from './ShaderAudit.js';
 import {canonicalMaterialsOnFirstDraw} from './CanonicalMaterials.js';
 import {installStallReport} from './StallReport.js';
+import {frameBudget} from './FrameBudget.js';
+import {appearPlaying,updateAppear} from './Appear.js';
 import {extendSkylineCamera,matchHazeToSky} from './StripAtmosphere.js';
 import {CameraObstruction} from './CameraObstruction.js';
 import { GroundSurfaceIndex } from './GroundSurfaceIndex.js';
@@ -40,6 +41,18 @@ import { interiorKey } from './InteriorKeyLight.js';
 const INTERIOR_KEY_INTENSITY = 4;
 import { DoorKick } from './DoorKick.js';
 import { GAME_LAYERS, type GameLayer, type CityContext } from './GameLayers.js';
+import { loadCityLodBake } from './CityBakeLoad.js';
+import { bakeUse, setCityNearDetail } from './CityLod.js';
+/** Local filming (tools/film), as the boot sequence detects it later (localStorage 'afterlight:film', ?film=1). */
+function filmingAtBoot():boolean{
+    if(typeof location==='undefined'||!['localhost','127.0.0.1'].includes(location.hostname))return false;
+    try{return new URLSearchParams(location.search).get('film')==='1'||localStorage.getItem('afterlight:film')==='1'||stormDrivingEnabled();}catch{return false;}
+}
+/** The ground-height index serves game layers and the local film tools only (GroundSurfaceIndex.ts); `?ground` forces it. */
+function groundIndexNeeded():boolean{
+    if(GAME_LAYERS.length||filmingAtBoot())return true;
+    return typeof location!=='undefined'&&['localhost','127.0.0.1'].includes(location.hostname)&&new URLSearchParams(location.search).has('ground');
+}
 import { MeshLevel, DEFAULT_MESH_LEVEL_OPTIONS } from 'engine/meshlevel/MeshLevel.js';
 import { DEFAULT_FALL_RESCUE_OPTIONS } from 'engine/player/life/FallRescue.js';
 import { ParisLift } from './ParisLift.js';
@@ -92,7 +105,7 @@ export class VoxelGame implements GenreGameInterface {
     private visibleTest=(p:THREE.Vector3):boolean=>this.buildingVisibility?.pointVisible(p)??true;
     private streamingWork:StreamingWork|null=null;
     private cameraObstruction=new CameraObstruction();
-    private groundSurfaces=new GroundSurfaceIndex();
+    private groundSurfaces=new GroundSurfaceIndex(groundIndexNeeded());
     private nearbyLights:NearbyLights|null=null;
     /** Driving past a building: its interior is not streamed (see PassingDetector). */
     private passingDetector=new PassingDetector();
@@ -213,6 +226,9 @@ export class VoxelGame implements GenreGameInterface {
         this.releaseWaterFrame=this.engine.registerBeforeRender?.(()=>{
             RealisticWater.everyFrame=!!this.film&&!stormDrivingEnabled()||!!(this.engine as unknown as {isRecordingFrames?:()=>boolean}).isRecordingFrames?.();
             RealisticWater.update(this.engine.getAmbienceTime?.()??0,this.engine.scene??null,this.engine.camera??null);
+            // loading work behind play takes a few milliseconds a frame, and new city geometry drops in, once the player is in
+            const playing=(this.engine as unknown as {isGameplayRunning?:()=>boolean}).isGameplayRunning?.()??true;
+            frameBudget.playing(playing);appearPlaying(playing);updateAppear(performance.now());
         })??null;
         try {
             // EXPERIMENT (local only): ?lighting=engine<cap> | clustered installs another renderer.lighting before
@@ -362,14 +378,26 @@ export class VoxelGame implements GenreGameInterface {
             // fell back to the September level (`level-vegas`, vegas.mesh-level.json). The review and film switches
             // below stay local-only.
             const localLevelPreview = ['localhost', '127.0.0.1'].includes(location.hostname);
-            this.meshLevel = new MeshLevel(this.engine, { glb: { url: new URL(await glbUrl(`/build/geographic-strip/detailed.glb?v=${geographicVersion.revision}`), location.origin).href },
+            // the baked distant LODs, before any city block is built (CityBakeLoad.ts); full detail is filled per block as
+            // it is approached (CityLod), except while filming, when every take needs it everywhere at once
+            await loadCityLodBake();
+            setCityNearDetail(filmingAtBoot()?'eager':'lazy');
+            this.meshLevel = new MeshLevel(this.engine, { glb: { url: new URL(await glbUrl('/build/geographic-strip/detailed.glb'), location.origin).href },
                 level: { data: geographicLevel } }, {
                 ...DEFAULT_MESH_LEVEL_OPTIONS,
                 lighting: { ...DEFAULT_MESH_LEVEL_OPTIONS.lighting, mode: 'exterior', spotShadowMapSize: 2048, pointLightPoolSize: 25 },
                 shadows: 'dynamic'
             });
             const loadedLevel = await this.meshLevel.load();
-            this.geographicCity=new GeographicCity(this.engine,this.groundSurfaces,this.streamingWork!);await this.geographicCity.load();
+            // The city loads behind play (2026-10-25, the owner: "load only the minimal assets, then already drop the player
+            // in"): the published game starts once the street level, the sky, the player and the jeep are in, and the
+            // landmarks, high-rises and skyline arrive nearest first within a few milliseconds a frame (FrameBudget.ts),
+            // dropping in (Appear.ts). Local reviews, probes and filming load everything first (?background tries it).
+            const backgroundCity=!localLevelPreview||new URLSearchParams(location.search).has('background');
+            const spawnPoint=new THREE.Vector3(...this.meshLevel.landmark('spawn').position);
+            this.geographicCity=new GeographicCity(this.engine,this.groundSurfaces,this.streamingWork!);
+            const cityLoad=this.geographicCity.load(backgroundCity,()=>this.player?.position??spawnPoint);
+            if(!backgroundCity)await cityLoad;
             // Grazing sunset light needs a small outward bias on the detailed facade.
             this.engine.scene?.traverse(object => {
                 if (object instanceof THREE.DirectionalLight) {
@@ -387,7 +415,7 @@ export class VoxelGame implements GenreGameInterface {
             this.legacyLod=new CityLod(this.meshLevel.getRoot(),{key:m=>{
                 const d=m.userData;if(!['shell','outside'].includes(d.visibilityKind))return null;
                 return [d.geographicOwner,d.visibilityKind,d.visibilityZone,d.visibilityTower??''].join('/');
-            },copyVisibility:true,facade:true});
+            },copyVisibility:true,facade:true,prepare:root=>compileSubtree(this.engine,root)});
             this.buildingVisibility = new BuildingVisibility(this.meshLevel.getRoot(),this.streamingWork);
             if(this.meshLevel.getExtras().streamedHotels){
                 this.hotelStreaming=new HotelStreaming(this.engine,this.playerController!,this.hud,this.groundSurfaces,this.streamingWork,(yaw,pitch=0)=>{
@@ -549,11 +577,18 @@ export class VoxelGame implements GenreGameInterface {
                 sprinting:()=>!!this.playerController?.keys.sprint,grounded:()=>!!this.playerController?.isGrounded,
                 verticalVelocity:()=>this.playerLoader.getPlayerBody()?.linvel().y??0};
             for(const make of GAME_LAYERS){const layer=await make();await layer.load(city);this.layers.push(layer);}
-            this.bigAppleCoaster = new BigAppleCoaster(this.engine,this.playerController!,this.player!,this.hud,this.groundSurfaces,()=>this.restoreWalkingCamera());
-            await this.bigAppleCoaster.load();
-            if(localLevelPreview){const mode=new URLSearchParams(location.search).get('coasterReview');const point=mode?this.bigAppleCoaster.reviewPosition(mode):null;if(point)this.playerController!.teleportTo(point.x,point.y,point.z);}
-            this.detailRanges=new CityDetailRanges(this.engine.scene!,cityEntranceDetails(this.engine.scene!));
-            this.detailRanges.watchDoorParent(this.engine.getWorldGroup());
+            // What needs the whole city in place: the coaster rides over it, the entrance details are found in it.
+            const afterCity=async()=>{
+                const coaster=new BigAppleCoaster(this.engine,this.playerController!,this.player!,this.hud,this.groundSurfaces,()=>this.restoreWalkingCamera());
+                await coaster.load();this.bigAppleCoaster=coaster;
+                if(localLevelPreview){const mode=new URLSearchParams(location.search).get('coasterReview');const point=mode?coaster.reviewPosition(mode):null;if(point)this.playerController!.teleportTo(point.x,point.y,point.z);}
+                this.detailRanges=new CityDetailRanges(this.engine.scene!,cityEntranceDetails(this.engine.scene!));
+                this.detailRanges.watchDoorParent(this.engine.getWorldGroup());
+            };
+            if(backgroundCity){const started=performance.now();
+                void cityLoad.then(afterCity).then(()=>console.info(`[City] loaded behind play in ${((performance.now()-started)/1000).toFixed(1)} s; LODs: ${bakeUse.baked} baked, ${bakeUse.clustered} clustered`),
+                    error=>console.error('[City] background load failed',error));}
+            else{await afterCity();console.info(`[City] LODs: ${bakeUse.baked} baked, ${bakeUse.clustered} clustered`);}
             // Local review probe (?probe): lets tools/probe-streaming.mjs move the player along a route and read what the streaming queue did. Never on a published page.
             // Local filming (tools/film): localStorage 'afterlight:film' = '1' turns on the probe and the film director.
             let filming=false;try{filming=localLevelPreview&&(stormDrivingEnabled()||localStorage.getItem('afterlight:film')==='1'||new URLSearchParams(location.search).get('film')==='1');}catch{/* no storage */}

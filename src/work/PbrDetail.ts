@@ -4,6 +4,7 @@ import {abs,cameraPosition,cameraViewMatrix,faceDirection,float,int,length,mater
 import {activeDeviceQualityTier} from 'engine/quality/DeviceQuality.js';
 import {PBR_PARAMS,PBR_SETS,detailSetFor} from './PbrDetailSets.js';
 import {runtimeUrl} from './RuntimeAssets.js';
+import {loadRecords} from './PackedRecords.js';
 
 /**
  * Photoreal surface detail from scanned CC0 materials (Poly Haven; downloaded to build/pbr/, packed by
@@ -50,13 +51,14 @@ export async function loadPbrDetail(upload:(t:THREE.Texture)=>void):Promise<void
     if(tier!=='high'&&tier!=='ultra')return;
     if(new URLSearchParams(location.search).get('pbr')==='off')return;
     try{
-        const info=await (await fetch(runtimeUrl('/build/pbr/strips/sets.json'))).json() as {size:number;sets:string[];meanLinear:number[][]};
+        // meanLinear: r, g, b per set (sets.bin, PackedRecords.ts)
+        const info=await loadRecords<{size:number;sets:string[];meanLinear:Float32Array}>('/build/pbr/strips/sets.bin');
         if(info.sets.join()!==PBR_SETS.join())throw new Error('build/pbr/strips is out of date: run python3 tools/pbr/pack-strips.py');
         const [albedo,normal,arm]=await Promise.all([
             loadStrip(runtimeUrl('/build/pbr/strips/albedo.webp'),info.size,THREE.SRGBColorSpace,upload),
             loadStrip(runtimeUrl('/build/pbr/strips/normal.webp'),info.size,THREE.NoColorSpace,upload),
             loadStrip(runtimeUrl('/build/pbr/strips/arm.webp'),info.size,THREE.NoColorSpace,upload)]);
-        info.meanLinear.forEach((m,i)=>(MEAN.array[i] as THREE.Vector4).set(m[0]!,m[1]!,m[2]!,0));
+        for(let i=0;i<PBR_SETS.length;i++)(MEAN.array[i] as THREE.Vector4).set(info.meanLinear[i*3]!,info.meanLinear[i*3+1]!,info.meanLinear[i*3+2]!,0);
         arrays={albedo,normal,arm};
         console.info(`[PbrDetail] ${PBR_SETS.length} scanned materials at ${info.size}px`);
     }catch(error){console.warn('[PbrDetail] scanned materials unavailable; surfaces stay as authored',error);}

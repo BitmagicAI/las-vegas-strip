@@ -7,8 +7,9 @@ import ts from 'typescript';
 import * as THREE from 'three';
 
 fs.mkdirSync('build',{recursive:true});
-const source=fs.readFileSync('src/work/GroundSurfaceIndex.ts','utf8');
-fs.writeFileSync('build/ground-surface-index-test-module.mjs',ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
+const transpile=(from,to)=>fs.writeFileSync(to,ts.transpileModule(fs.readFileSync(from,'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
+transpile('src/work/FrameBudget.ts','build/FrameBudget.js');
+transpile('src/work/GroundSurfaceIndex.ts','build/ground-surface-index-test-module.mjs');
 const {GroundSurfaceIndex}=await import('../build/ground-surface-index-test-module.mjs?'+Date.now());
 
 // The straightforward version (as of 2026-10-23), per mesh: walkable triangles, then a comparator-sorted CSR table.
@@ -69,4 +70,8 @@ for(const s of surfaces){
 // Height queries agree too (a sample of points).
 const ref=new GroundSurfaceIndex();ref.register(root);
 for(let i=0;i<200;i++){const x=rand()*300-100,z=rand()*300-100;assert.equal(index.height(x,z,200,-50),ref.height(x,z,200,-50));}
-console.log('ground surface index: tables identical to the straightforward version');
+// The sliced run (frame by frame in the game) builds the same tables.
+const sliced=new GroundSurfaceIndex();await sliced.registerSliced(root);
+const a=[...index.surfaces],b=[...sliced.surfaces];assert.equal(b.length,a.length);
+for(let i=0;i<a.length;i++)for(const field of ['triangles','cellKeys','cellStart','cellTriangles','broad'])assert.deepEqual(Array.from(b[i][field]),Array.from(a[i][field]),`sliced ${field}`);
+console.log('ground surface index: tables identical to the straightforward version, sliced or not');

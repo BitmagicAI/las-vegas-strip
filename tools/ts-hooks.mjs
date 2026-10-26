@@ -1,12 +1,14 @@
 // Node loader hooks for running game modules in tests: transpiles project TypeScript with the project's
 // `typescript`, maps `.js` specifiers to their `.ts` sources, and resolves the tsconfig aliases
-// (`engine/…`, `types/…`). Usage: node --import ./tools/ts-register.mjs <test.mjs>
+// (`engine/…`, `types/…`, and the engine's own `bundle/…`, `core/…` and the rest, which engine modules import).
+// Usage: node --import ./tools/ts-register.mjs <test.mjs>
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import ts from 'typescript';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const aliases={'engine/':path.join(root,'engine/engine/'),'types/':path.join(root,'engine/types/')};
+for(const dir of ['bundle','debug','editor','core','baseline','genres','bitmagic'])aliases[dir+'/']=path.join(root,'engine',dir)+'/';
 export async function resolve(specifier,context,next){
   for(const [prefix,dir] of Object.entries(aliases))if(specifier.startsWith(prefix)){specifier=pathToFileURL(path.join(dir,specifier.slice(prefix.length))).href;break;}
   if(/^(file:|\.|\/)/.test(specifier)&&specifier.endsWith('.js')){

@@ -9,13 +9,14 @@ import type {PlayerController} from 'engine/player/PlayerController.js';
 import type {GameHUD} from './GameHUD.js';
 import type {GroundSurfaceIndex} from './GroundSurfaceIndex.js';
 import {CoasterTrack,CoasterRun,type CoasterRoute} from './CoasterTrack.js';
-import {runtimeUrl} from './RuntimeAssets.js';
+import {type CollisionPack,loadCollisionPack} from './CollisionPack.js';
+import {loadRecords} from './PackedRecords.js';
 type Body=ReturnType<typeof PhysicsBodyFactory.createStaticBody>['rigidBody'];
 /** Local, deterministic track ride. Updates share the game's pause/background lifecycle. */
 export class BigAppleCoaster {
  private root=new THREE.Group();private cars:THREE.Object3D[]=[];private track:CoasterTrack|null=null;
  private run:CoasterRun|null=null;private held=false;private requested=false;private release:(()=>void)|null=null;
- private body:Body|null=null;private collision:{vertices:number[];indices:number[]}|null=null;
+ private body:Body|null=null;private collision:CollisionPack|null=null;
  private savedFov=60;private savedUp=new THREE.Vector3(0,1,0);private savedVisible=true;private savedSuppression=false;
  private p=new THREE.Vector3();private q=new THREE.Quaternion();private target=new THREE.Vector3();private up=new THREE.Vector3();
  private details:THREE.Object3D[]=[];
@@ -30,11 +31,10 @@ export class BigAppleCoaster {
   hud.createActionRow('coaster-return',{anchor:'bottom-center',controls:[{id:'return',label:'Return to platform · R',onSelect:()=>{this.requested=true;}}]});hud.setActionRowVisible('coaster-return',false);
  }
  async load():Promise<void>{
-  const v=await fetch(runtimeUrl('/build/south-strip/version.json')).then(r=>r.json()) as {revision:string};const suffix='?v='+v.revision;
   const [environment,train,route,collision]=await Promise.all([
-   new GLTFLoader().loadAsync(await glbUrl('/build/south-strip/coaster.glb'+suffix)),new GLTFLoader().loadAsync(await glbUrl('/build/south-strip/train.glb'+suffix)),
-   fetch(runtimeUrl('/build/south-strip/route.json'+suffix)).then(r=>r.json()) as Promise<CoasterRoute>,
-   fetch(runtimeUrl('/build/south-strip/coaster-collision.json'+suffix)).then(r=>r.json()) as Promise<{vertices:number[];indices:number[]}>
+   new GLTFLoader().loadAsync(await glbUrl('/build/south-strip/coaster.glb')),new GLTFLoader().loadAsync(await glbUrl('/build/south-strip/train.glb')),
+   loadRecords<CoasterRoute>('/build/south-strip/route.bin'),
+   loadCollisionPack('/build/south-strip/coaster-collision.bin')
   ]);
   this.track=new CoasterTrack(route);this.collision=collision;this.root.name='Big Apple Coaster • OSM mapped route';this.root.add(environment.scene);
   for(let i=0;i<3;i++){const car=train.scene.clone(true);car.name='NYC taxi car '+(i+1);this.cars.push(car);this.root.add(car);}
@@ -84,7 +84,7 @@ export class BigAppleCoaster {
   const pressed=!!this.controller.keys.coasterRide;const fresh=this.requested||(pressed&&!this.held);this.requested=false;this.held=pressed;
   // One local station/ramp mesh collider, resident only while close to the attraction.
   const near=Math.hypot(this.player.position.x+100,this.player.position.z-1485)<190;
-  if(near&&!this.body&&this.collision){const plan=planCollider({name:'Big Apple Coaster station',shape:'trimesh',...this.collision},'terrain');this.body=PhysicsBodyFactory.createStaticBody(this.engine.physicsWorld!,plan.position,{shape:plan.shape,friction:.8,collisionGroup:plan.collisionGroup,collisionMask:plan.collisionMask},plan.quaternion).rigidBody;}
+  if(near&&!this.body&&this.collision){const plan=planCollider(this.collision.trimesh(0,'Big Apple Coaster station'),'terrain');this.body=PhysicsBodyFactory.createStaticBody(this.engine.physicsWorld!,plan.position,{shape:plan.shape,friction:.8,collisionGroup:plan.collisionGroup,collisionMask:plan.collisionMask},plan.quaternion).rigidBody;}
   if(!near&&!this.run&&this.body){if(this.body.isValid())this.engine.physicsWorld!.removeRigidBody(this.body);this.body=null;}
   if(this.filmRun&&!this.run){this.filmRun.advance(dt);this.placeTrain(this.filmRun.distance);}
   if(this.run){

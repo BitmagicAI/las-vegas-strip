@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import {glbUrl} from './OptimizedGlb.js';
-import {DrivingSpeedAssist, assistedAcceleration, type DriveRoad} from './DrivingSpeedAssist.js';
+import {DrivingSpeedAssist, assistedAcceleration} from './DrivingSpeedAssist.js';
+import {loadSpeedMap} from './SpeedMapFile.js';
 import {mapPoint} from './geographic/Coordinates.js';
 import { CollisionGroup } from 'engine/physics/CollisionLayers.js';
 import { vehicleExitCandidates } from './VehicleExit.js';
@@ -16,7 +17,6 @@ import type { VehicleManager } from 'engine/vehicle/VehicleManager.js';
 import type { PlayerController } from 'engine/player/PlayerController.js';
 import { PhysicsBodyFactory } from 'engine/physics/world3d/PhysicsBodyFactory.js';
 import type { GameHUD } from './GameHUD.js';
-import {runtimeUrl} from './RuntimeAssets.js';
 
 const BAY = new THREE.Vector3(...mapPoint([-40,.51,2],'sanctuary'));
 // Aim above the low chase point: keep the jeep in the lower part of the view
@@ -67,7 +67,7 @@ export class SanctuaryJeep {
     }
     private readonly wheelMeshes: THREE.Mesh[] = [];
     private readonly autoRight = new VehicleAutoRightSystem(DEFAULT_VEHICLE_AUTO_RIGHT_OPTIONS);
-    private speedAssist = new DrivingSpeedAssist([]);
+    private speedAssist: DrivingSpeedAssist | null = null;
     private assistTimer = 0;
     private speedTarget = 10;
     private pendingTarget = 10;
@@ -86,10 +86,8 @@ export class SanctuaryJeep {
         private capsule: { height: number; radius: number }, private restoreWalkingCamera: () => void) {}
 
     async load(): Promise<void> {
-        const network = await fetch(runtimeUrl('/build/geographic-strip/road-network.json')).then(r => { if(!r.ok) throw new Error('Road speed map unavailable'); return r.json(); });
-        const arrival = await fetch(runtimeUrl('/build/resort-blocks/bellagio/south-arrival-report.json')).then(r => { if(!r.ok) throw new Error('Arrival speed map unavailable'); return r.json(); });
-        const replacements = new Map<number, DriveRoad>(arrival.roads.map((r: DriveRoad) => [r.id, {...r, highway: 'service'}]));
-        this.speedAssist = new DrivingSpeedAssist(network.roads.map((r: DriveRoad) => replacements.get(r.id) ?? r));
+        // the road network with the Bellagio's south arrival roads, baked (DrivingSpeedAssist.ts, SpeedMapFile.ts)
+        this.speedAssist = new DrivingSpeedAssist(await loadSpeedMap('/build/geographic-strip/speed-map.bin'));
         const loader = createGltfLoader();
         const gltf = await loader.loadAsync(await glbUrl('/build/vehicles/afterlight-jeep.glb?v=4'));
         const part = (name: string) => {
@@ -227,7 +225,7 @@ export class SanctuaryJeep {
         this.assistTimer -= dt;
         if (this.assistTimer <= 0) {
             this.assistTimer = .1;
-            const desired = this.speedAssist.targetAt(position.x, position.y, position.z);
+            const desired = this.speedAssist?.targetAt(position.x, position.y, position.z) ?? 10;
             if(desired !== this.pendingTarget){this.pendingTarget=desired;this.pendingTime=0;}
             else this.pendingTime += .1;
             // Short release hysteresis avoids full throttle bursts at junction seams.

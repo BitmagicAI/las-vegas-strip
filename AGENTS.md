@@ -112,11 +112,11 @@ memory against one ~8 GB limit; above it, every few MB allocated forced a full c
 (30-125 ms, 6-8 a second standing still). The record is
 `docs/project-records/idle-performance-2026-10-07/`.
 
-- City batches (`CityBatches.ts`) use a compact layout (float position, 8-bit normal or float when
-  glossy, float uv, 8-bit sRGB colour, a row into `citySurfaceTable`). Their CPU copies, coarse LODs
-  and shadow batches are released after GPU upload (`CpuGeometryRelease.ts`): never read their
-  arrays after the first draw. `GroundSurfaceIndex` keeps its own copy of walkable triangles.
-  snorm16 normals render blotches on three r185 WebGPU; do not use them.
+- City batches (`CityBatches.ts`) use a compact layout (float position, snorm16 x 4 normal whose w is the
+  row into `citySurfaceTable`, float uv, 8-bit sRGB colour: 32 bytes). Their CPU copies and LODs are
+  released after GPU upload (`CpuGeometryRelease.ts`): never read their arrays after the first draw.
+  `GroundSurfaceIndex` keeps its own copy of walkable triangles. A 3-component snorm16 normal renders
+  blotches on three r185 WebGPU (three pads it itself); always give 16-bit normals 4 components.
 - City atlases upload when built and drop their canvases (`CityAtlas.ts`).
 - Alpha cut-outs on node materials use `alphaTestNode` + `maskShadowNode`, not `alphaTest`: the
   shadow pass copies `alphaTest` onto one shared material whose version bumps on every 0/non-zero
@@ -220,6 +220,22 @@ memory against one ~8 GB limit; above it, every few MB allocated forced a full c
 - Hotel room windows are unlit tinted glass (`MaterialFixes.ts`; lit glass hazed the view and mirrored the ceiling lamp).
   Inside a venue's own guest tower below its podium roof (`podiumTop - 0.3`), the podium is hidden too (its roof would slice
   the floors in view). The Cromwell's podium is 7.0 m, under its level-3 floor (7.44), since 2026-10-08.
+- The city bake (2026-10-26): `node tools/bake/bake-city.mjs` runs after any city geometry changes (after `tools/optimize`
+  and `tools/optimize/pack-data.mjs`; it needs `bitmagic dev` running and re-bakes only when an input changed;
+  `check` exits 1 when stale, and `asset-pack.py` refuses a stale bake). It runs the game once in headless Chrome with
+  `?bake=capture`, simplifies every city batch offline and writes `build/baked/city-lod.bin` (~5 MB with brotli): each
+  block's distant LOD as a subset of its own near-level vertices plus an index list (facades: the browser's old
+  clustering, keeping real vertices so atlas UVs stay aligned; city blocks: meshoptimizer with colour edges kept and hard
+  edges restored). The client (`CityLod`, `CityBakeLoad.ts`) loads each block as that LOD alone, built straight from its
+  source meshes, and fills the block's full-detail batches only when the camera comes within its near range (nearest
+  first, in the frame budget); blocks left far behind for 20 s drop them again (sources stay in memory to refill). A batch
+  whose counts or sampled positions differ from the bake is built as before. Sun-shadow casters are index lists over the
+  batches' own GPU positions (`casterShadowMesh`); loaders mark casters with `userData.cityCaster`, and only meshes no
+  batch takes get proxies (`unmergedCasterShadows`). Batch vertices are 32 bytes: float position, snorm16 x 4 normal with
+  the surface-table row in w, float UV, sRGB colour (`CityBatches.ts`). Local switches: `?bake=off` (build everything in
+  the browser), `?lodLevel=0|1` (every block at one level); `tools/bake/compare-lods.mjs` shoots both against all-near
+  ground truth. Filming builds everything eagerly. The ground-height index (`GroundSurfaceIndex`) is built only for game
+  layers, the film tools or `?ground`.
 - Runtime GLBs load through `glbUrl()` (`OptimizedGlb.ts`): meshopt-compressed copies in
   `build/optimized/` made with the optimizing-assets skill. Originals stay in place (the resort
   pipelines patch them byte by byte). After regenerating a GLB, re-run
