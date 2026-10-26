@@ -343,11 +343,10 @@ const endCard = el('', `<img src="${ROOT}tools/film/brand/bitmagic-logo-white.pn
   <div style="font:500 36px 'Avenir Next',Avenir,sans-serif;color:${C.txt};text-align:center">Las Vegas · behind the scenes</div>
   <div class="mono" style="font:600 22px 'CF Mono',Menlo,monospace;letter-spacing:.2em;color:${C.muted};text-align:center;margin-top:18px">LAS VEGAS STRIP</div>`, 0, 0);
 endCard.style.left = '0'; endCard.style.width = W + 'px'; endCard.style.top = '340px';
-// the open-source announcement under the title (the owner, 2026-10-23): the organisation's address, which resolves before
-// the repository goes public
+// the open-source announcement under the title (the owner, 2026-10-23; the repository went public on 2026-10-26)
 const ossCard = el('', `<div style="width:120px;height:2px;background:${C.acc};margin:0 auto 26px;opacity:.8"></div>
-  <div class="mono" style="font:600 22px 'CF Mono',Menlo,monospace;letter-spacing:.24em;color:${C.acc};text-align:center">OPEN SOURCE · COMING SOON</div>
-  <div style="font:600 40px 'Avenir Next',Avenir,sans-serif;color:${C.txt};text-align:center;margin-top:14px">github.com/BitmagicAI</div>`, 0, 0);
+  <div class="mono" style="font:600 22px 'CF Mono',Menlo,monospace;letter-spacing:.24em;color:${C.acc};text-align:center">OPEN SOURCE · AVAILABLE NOW</div>
+  <div style="font:600 40px 'Avenir Next',Avenir,sans-serif;color:${C.txt};text-align:center;margin-top:14px">github.com/BitmagicAI/las-vegas-strip</div>`, 0, 0);
 ossCard.style.left = '0'; ossCard.style.width = W + 'px'; ossCard.style.top = '640px';
 
 // agent activity chart (SVG inside the chart panel)
