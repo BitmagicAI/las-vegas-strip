@@ -133,6 +133,11 @@ The zombie-era `GAME-DESIGN.md` and `mechanics-plan.md` went to `docs/history/`.
 - the jeep, doors, the lift, the coaster and the Sphere.
 
 **Verified:**
+- **Clean clone (2026-10-26):** cloned from GitHub with Git LFS (1,348 files), then `bitmagic upgrade` (engine 3.1342),
+  `pnpm install` (1,337 runtime files copied into `build/`), `bitmagic check` and every test (`pack-data` skips: it needs
+  the JSON sources). `asset-pack.py check` passes and a no-op `stage` leaves the tree clean. The smoke test passes all
+  nine stops with no failed requests, page errors or console errors. The download snapshot (`fetch-assets.mjs --pack`)
+  matches its recorded hash; anonymous downloads need the repository to be public.
 - **City:** `bitmagic check` passes, and all 15 logic tests pass (brought up to date on 2026-10-26). The
   smoke test passes: four hotel rooms, three venues, the Sphere and the coaster, with no failed requests and no errors.
   A rain take records correctly through `FilmLook`.
