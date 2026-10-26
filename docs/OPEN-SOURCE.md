@@ -94,8 +94,8 @@ in `docs/project-records/` still mention home-folder paths (about 35 files, harm
    Those lines were paraphrased on 2026-10-22, labelled "summary". The originals stay in the local journals.
 6. **The map carries a minimal set of game-specific material.** That governs the split below and the `world.json`
    cleanup.
-7. **Repository:** `BitmagicAI/las-vegas-strip` on GitHub (https://github.com/BitmagicAI/las-vegas-strip), created by the owner on 2026-10-23, private
-   until the release checklist passes. The city is called "Las Vegas Strip"; "Vegas: Afterlight" stays the zombie
+7. **Repository:** `BitmagicAI/las-vegas-strip` on GitHub (https://github.com/BitmagicAI/las-vegas-strip), created by the owner on 2026-10-23, public
+   since 2026-10-26, when the release checklist passed. The city is called "Las Vegas Strip"; "Vegas: Afterlight" stays the zombie
    game's name.
 8. **Source pack (open):** whether to publish the roughly 10 GiB of build sources. These are the original GLBs,
    Blender scenes and survey data the builders read. Without them, contributors can change code, records and anything
@@ -137,7 +137,7 @@ The zombie-era `GAME-DESIGN.md` and `mechanics-plan.md` went to `docs/history/`.
   `pnpm install` (1,337 runtime files copied into `build/`), `bitmagic check` and every test (`pack-data` skips: it needs
   the JSON sources). `asset-pack.py check` passes and a no-op `stage` leaves the tree clean. The smoke test passes all
   nine stops with no failed requests, page errors or console errors. The download snapshot (`fetch-assets.mjs --pack`)
-  matches its recorded hash; anonymous downloads need the repository to be public.
+  matches its recorded hash; an anonymous download into an empty folder unpacks all 1,337 files.
 - **City:** `bitmagic check` passes, and all 15 logic tests pass (brought up to date on 2026-10-26). The
   smoke test passes: four hotel rooms, three venues, the Sphere and the coaster, with no failed requests and no errors.
   A rain take records correctly through `FilmLook`.
