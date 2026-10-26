@@ -63,15 +63,15 @@
   },
   {
    "id": "rel-engine-current",
-   "title": "Move to the currently published engine (done: 3.1337)",
+   "title": "Follow the published engine (3.1342 since 2026-10-26)",
    "area": "release",
    "size": "M",
    "priority": "P1",
-   "summary": "Done on 2026-10-24: engine 3.1337 (`bitmagic upgrade`, CLI 0.1.86). The codemod moved the engine imports; the fixes: the film atmosphere reaches the new post-FX and weather owners, the film AO and sub-frame stepping use the moved engine members, GuestDoor keeps its skin in `skin` (the engine Door now has a private `leaf`), collider vertices are `ArrayLike<number>`, reversed depth is set on the live renderer (`recreateRenderer` is gone, SkylineDepth.ts), and the batched lighting gets room for every city light (LightCaps.ts). Checked: smoke-clone (9 stops, no errors), daylight, casino and room frames match 3.1223, 60 fps at spawn. Left: the items below.",
+   "summary": "`bitmagic upgrade` installs only the currently published engine, so the repository follows it. 3.1342 on 2026-10-26: no source changes (the publish configs gained the platform's Rapier \"both\" flavour); five probe views are pixel-identical to 3.1337 and all tests pass. 3.1337 on 2026-10-24 (`bitmagic upgrade`, CLI 0.1.86). The codemod moved the engine imports; the fixes: the film atmosphere reaches the new post-FX and weather owners, the film AO and sub-frame stepping use the moved engine members, GuestDoor keeps its skin in `skin` (the engine Door now has a private `leaf`), collider vertices are `ArrayLike<number>`, reversed depth is set on the live renderer (`recreateRenderer` is gone, SkylineDepth.ts), and the batched lighting gets room for every city light (LightCaps.ts). Checked: smoke-clone (9 stops, no errors), daylight, casino and room frames match 3.1223, 60 fps at spawn. Left: the items below.",
    "items": [
     "Game.ts is still the old whole `class VoxelGame` (deprecation warnings only): run `bitmagic upgrade --migrate-game` or follow engine/agent-docs/migrating-game-to-voxelgamebase.md",
     "Night film looks: the engine LightManager now ranks and cross-fades street lamps (budget 32) where 3.1223 lit the nearest from a pool, so a fast night take lights different lamps; raise `lightingConfig.dynamicLights` only with the owner (it costs GPU)",
-    "Re-measure on 3.1337: tools/probe-streaming.mjs, tools/probe-interiors.mjs, tools/probe-lighting-modes.sh"
+    "Re-measure on the current engine: tools/probe-streaming.mjs, tools/probe-interiors.mjs, tools/probe-lighting-modes.sh"
    ],
    "files": {
     "reads": [

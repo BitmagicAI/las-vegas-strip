@@ -17,8 +17,8 @@ city itself provides, and in what order it grows. Open work, item by item, is on
 
 ## Next, in order
 
-1. The current engine. The repository follows the published engine (3.1337 since 2026-10-24, task `rel-engine-current`).
-2. Release blockers: texture provenance, Clark County terms (`release` tasks).
+1. The current engine. The repository follows the published engine (3.1342 since 2026-10-26, task `rel-engine-current`).
+2. Release tasks: texture provenance (`release` tasks on the board).
 3. Public interiors built to the resort maps, starting with the casino resorts that have none (`int-*` tasks).
 4. Exterior refinement, block by block, in queue order (`ext-*` tasks).
 5. Performance: GPU-compressed textures, binary collision data, draw calls at the lakefront (`perf-*` tasks).

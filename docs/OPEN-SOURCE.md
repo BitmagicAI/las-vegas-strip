@@ -78,7 +78,7 @@ in `docs/project-records/` still mention home-folder paths (about 35 files, harm
 1. **The engine is not included.** It is a dependency: `bitmagic upgrade` installs it, which needs a Bitmagic Pro
    subscription. `.gitignore` excludes `engine/` and the CLI's skills, and README.md, CONTRIBUTING.md and AGENTS.md
    say how to install them. `upgrade` only installs the currently published engine, so this repository must follow
-   it (task `rel-engine-current`, done on 2026-10-24: engine 3.1337).
+   it (task `rel-engine-current`; engine 3.1342 since 2026-10-26).
 2. **GitHub** hosts the repository. The runtime set is in Git LFS: on 2026-10-23 the owner moved it there from a
    release asset so that models can change in pull requests, and upgrades the GitHub plan for the LFS traffic.
 3. **The licences apply to the Vegas project only.** They cover the code (MIT), the original content (CC BY 4.0) and

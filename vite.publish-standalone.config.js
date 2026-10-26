@@ -22,16 +22,16 @@ import { stripDevLogsPlugin } from './engine/engine/runtime/stripDevLogs.ts';
 // embeds its full WASM — the unused one is dead megabytes). The flavor is the game's EFFECTIVE
 // physics mode: src/work/game.json run through the engine's own rule, the same function the engine
 // applies at boot, so the bundle can never disagree with the world the game runs. bitmagic
-// build/publish/ios resolve it ahead of time into BUNDLE_RAPIER_FLAVOR, which wins when set. There
-// is no dual-flavor build: a game.json this config cannot read fails the build. The stub is safe:
-// the engine has no module-scope value usage of either Rapier import, and only ever init()s the
-// flavor it boots.
+// build/publish/ios resolve it ahead of time into BUNDLE_RAPIER_FLAVOR, which wins when set; a
+// game.json this config cannot read fails the build. The stub is safe: the engine has no
+// module-scope value usage of either Rapier import, and only ever init()s the flavor it boots.
+// 'both' (set by the CLI for a Unity port, whose runtime runs both worlds itself) stubs neither.
 const RAPIER_PACKAGES = { '2d': '@dimforge/rapier2d-compat', '3d': '@dimforge/rapier3d-compat' };
 function resolveRapierFlavor() {
   const fromEnv = process.env.BUNDLE_RAPIER_FLAVOR || '';
   if (fromEnv) {
-    if (fromEnv !== '2d' && fromEnv !== '3d') {
-      throw new Error("BUNDLE_RAPIER_FLAVOR must be '2d' or '3d' when set (got '" + fromEnv + "')");
+    if (fromEnv !== '2d' && fromEnv !== '3d' && fromEnv !== 'both') {
+      throw new Error("BUNDLE_RAPIER_FLAVOR must be '2d', '3d' or 'both' when set (got '" + fromEnv + "')");
     }
     return fromEnv;
   }
@@ -45,7 +45,7 @@ function resolveRapierFlavor() {
   return rapierFlavorForPhysicsMode(effectivePhysicsMode('', mode, game.physics2d === true));
 }
 const rapierFlavor = resolveRapierFlavor();
-const droppedRapier = RAPIER_PACKAGES[rapierFlavor === '2d' ? '3d' : '2d'];
+const droppedRapier = rapierFlavor === 'both' ? null : RAPIER_PACKAGES[rapierFlavor === '2d' ? '3d' : '2d'];
 // 'pre' is load-bearing: without it Vite's own resolver wins and the "dropped" package is
 // INLINED from node_modules — WASM and all, ~2 MB heavier — with no error and no greppable
 // package-name string.
@@ -53,7 +53,7 @@ const stubRapierPlugin = () => ({
   name: 'stub-rapier-flavor',
   enforce: 'pre',
   resolveId(id) {
-    return id === droppedRapier ? '\0rapier-flavor-stub' : null;
+    return droppedRapier !== null && id === droppedRapier ? '\0rapier-flavor-stub' : null;
   },
   load(id) {
     return id === '\0rapier-flavor-stub' ? 'export default null;' : null;
