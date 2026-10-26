@@ -143,6 +143,10 @@ memory against one ~8 GB limit; above it, every few MB allocated forced a full c
   game-side lists (they still halve GPU time); `src/work/LightCaps.ts` sizes its caps before the first frame.
   Never swap `renderer.lighting` after the first frame: on r185 it renders wrong pictures; the local
   `?lighting=engine<cap>|clustered` switch in `Game.ts` installs at boot.
+  City surfaces take their point lights from screen clusters (`CityLighting.ts`, three's `ClusteredLightsNode`), whose
+  buffers are rebuilt when the drawing buffer changes size; a compiled shader keeps the old ones, so the bound materials
+  carry the cluster grid in their program key and a resize (the recorder, a window, a phone turned) rebuilds them
+  (`tests/city-lighting-resize.test.mjs`). Without it, night takes lost every lamp pool once recording started.
   Record: `docs/project-records/lighting-analysis-2026-10-08/`.
 - Sun shadow reach is a player setting (`ShadowSettings.ts`, B panel "Sun shadows", 32–192 m, default 32): wider than
   ±48 m switches the focused sun to an 8192 map. Hotel room doors can be kicked open (F / KICK, `DoorKick.ts`): the skin
