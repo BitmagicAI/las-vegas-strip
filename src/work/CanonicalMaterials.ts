@@ -19,6 +19,9 @@ function texture(data:Uint8Array|Uint16Array,type:THREE.TextureDataType,colorSpa
     const t=new THREE.DataTexture(data,1,1,THREE.RGBAFormat,type);
     t.colorSpace=colorSpace;t.wrapS=t.wrapT=THREE.RepeatWrapping;t.magFilter=THREE.LinearFilter;t.minFilter=THREE.LinearMipmapLinearFilter;
     t.name=name;t.needsUpdate=true;
+    // Shared by every plain material for the whole session: an unloading venue that disposes its materials' maps must not
+    // destroy them (WebGPU then rejects every draw that still samples them: "Destroyed texture ... used in a submit").
+    t.dispose=()=>{};
     return t;
 }
 const half=THREE.DataUtils.toHalfFloat;
