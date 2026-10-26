@@ -58,7 +58,7 @@ for field in ['colliders','landmarks','volumes','lights']:
   if 'size' in record:
    record['size'][0]*=specs[key][2][0];record['size'][2]*=specs[key][2][1]
   record['name']=record['name'].replace('South Strip skyline','Planet Hollywood resort')
-p.write_text(json.dumps(data,indent=2));Path('src/work/vegas.mesh-level.json').write_text(p.read_text())
+p.write_text(json.dumps(data,indent=2))
 scene['east_strip_geography_v1']=True
 bpy.context.view_layer.update();bpy.ops.wm.save_as_mainfile(filepath=os.path.abspath('build/level/vegas.blend'))
 source=ast.parse(Path('tools/level/vegas.py').read_text());fn=next(n for n in source.body if isinstance(n,ast.FunctionDef) and n.name=='fast_export');exec(compile(ast.Module(body=[fn],type_ignores=[]),'vegas.py','exec'));fast_export('build/level/vegas.glb')

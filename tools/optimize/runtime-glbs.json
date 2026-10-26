@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-22T23:18:40.854Z",
- "totalBytes": 3174807280,
- "count": 641,
+ "generated": "2026-10-26T17:01:04.798Z",
+ "totalBytes": 3174530168,
+ "count": 637,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -10,10 +10,31 @@
  ],
  "remoteWorldRows": [
   {
-   "id": "level-vegas",
-   "name": "vegas",
-   "url": "https://bitmagic.ai/worlds/v3/ZWLJZE4P1VA6/1790534811542-vegas.glb",
-   "size": 195734748,
+   "id": "arrival-door-bronze",
+   "name": "arrival-door-bronze",
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792862977280-22b92e03171a-door-bronze.glb",
+   "size": 69576,
+   "localSource": null
+  },
+  {
+   "id": "arrival-door-silver",
+   "name": "arrival-door-silver",
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863018473-419959061f5d-door-silver.glb",
+   "size": 68424,
+   "localSource": null
+  },
+  {
+   "id": "arrival-door-black",
+   "name": "arrival-door-black",
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792862977264-79dd5e6dabd5-door-black.glb",
+   "size": 69568,
+   "localSource": null
+  },
+  {
+   "id": "arrival-door-sage",
+   "name": "arrival-door-sage",
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792862977289-e12884ca4f0b-door-sage.glb",
+   "size": 69544,
    "localSource": null
   }
  ],
@@ -22,7 +43,7 @@
    "rel": "build/geographic-strip/city.glb",
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 347222776,
    "preset": "level",
    "overrides": []
@@ -31,7 +52,7 @@
    "rel": "build/geographic-strip/detailed.glb",
    "cls": "level",
    "loader": "src/work/Game.ts -> engine MeshLevel",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 356066796,
    "preset": "level",
    "overrides": []
@@ -40,7 +61,7 @@
    "rel": "build/strip-landmarks/linq-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 35519776,
    "preset": "level",
    "overrides": []
@@ -58,7 +79,7 @@
    "rel": "build/strip-landmarks/vanderpump-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 8458012,
    "preset": "level",
    "overrides": []
@@ -76,7 +97,7 @@
    "rel": "build/strip-landmarks/fashion-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 7680236,
    "preset": "level",
    "overrides": []
@@ -94,7 +115,7 @@
    "rel": "build/strip-landmarks/venetian-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 101904592,
    "preset": "level",
    "overrides": []
@@ -112,7 +133,7 @@
    "rel": "build/strip-landmarks/venetianCasino-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2188,
    "preset": "level",
    "overrides": []
@@ -130,7 +151,7 @@
    "rel": "build/strip-landmarks/grandCanal-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2184,
    "preset": "level",
    "overrides": []
@@ -148,7 +169,7 @@
    "rel": "build/strip-landmarks/arena-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3962148,
    "preset": "level",
    "overrides": []
@@ -166,7 +187,7 @@
    "rel": "build/strip-landmarks/park-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 10684220,
    "preset": "level",
    "overrides": []
@@ -184,7 +205,7 @@
    "rel": "build/strip-landmarks/palazzo-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 6995736,
    "preset": "level",
    "overrides": []
@@ -202,7 +223,7 @@
    "rel": "build/strip-landmarks/ti-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 35431568,
    "preset": "level",
    "overrides": []
@@ -220,7 +241,7 @@
    "rel": "build/strip-landmarks/harrahs-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 10668824,
    "preset": "level",
    "overrides": []
@@ -238,7 +259,7 @@
    "rel": "build/strip-landmarks/polo-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 66272872,
    "preset": "level",
    "overrides": []
@@ -256,7 +277,7 @@
    "rel": "build/strip-landmarks/mgmGrand-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 9212516,
    "preset": "level",
    "overrides": []
@@ -265,7 +286,7 @@
    "rel": "build/strip-landmarks/luxorExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3507596,
    "preset": "level",
    "overrides": []
@@ -274,7 +295,7 @@
    "rel": "build/strip-landmarks/hgvExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1020052,
    "preset": "level",
    "overrides": []
@@ -283,7 +304,7 @@
    "rel": "build/strip-landmarks/skyExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 757968,
    "preset": "level",
    "overrides": []
@@ -292,7 +313,7 @@
    "rel": "build/strip-landmarks/allureExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1530644,
    "preset": "level",
    "overrides": []
@@ -301,7 +322,7 @@
    "rel": "build/strip-landmarks/turnberryTowersExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 6991140,
    "preset": "level",
    "overrides": []
@@ -310,7 +331,7 @@
    "rel": "build/strip-landmarks/turnberryPlaceExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 25337656,
    "preset": "level",
    "overrides": []
@@ -319,7 +340,7 @@
    "rel": "build/strip-landmarks/westgateExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1281072,
    "preset": "level",
    "overrides": []
@@ -328,7 +349,7 @@
    "rel": "build/strip-landmarks/springhillExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1156236,
    "preset": "level",
    "overrides": []
@@ -337,7 +358,7 @@
    "rel": "build/strip-landmarks/trumpExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 598092,
    "preset": "level",
    "overrides": []
@@ -346,7 +367,7 @@
    "rel": "build/strip-landmarks/mirageExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1331628,
    "preset": "level",
    "overrides": []
@@ -355,7 +376,7 @@
    "rel": "build/strip-landmarks/elaraExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1127948,
    "preset": "level",
    "overrides": []
@@ -364,7 +385,7 @@
    "rel": "build/strip-landmarks/grandChateauExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 767752,
    "preset": "level",
    "overrides": []
@@ -373,7 +394,7 @@
    "rel": "build/strip-landmarks/signatureExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 13000104,
    "preset": "level",
    "overrides": []
@@ -382,7 +403,7 @@
    "rel": "build/strip-landmarks/panoramaExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1162944,
    "preset": "level",
    "overrides": []
@@ -391,7 +412,7 @@
    "rel": "build/strip-landmarks/martinExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1910964,
    "preset": "level",
    "overrides": []
@@ -400,7 +421,7 @@
    "rel": "build/strip-landmarks/rioExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3745224,
    "preset": "level",
    "overrides": []
@@ -409,7 +430,7 @@
    "rel": "build/strip-landmarks/palmsExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1698300,
    "preset": "level",
    "overrides": []
@@ -418,7 +439,7 @@
    "rel": "build/strip-landmarks/waldorfExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1294960,
    "preset": "level",
    "overrides": []
@@ -427,7 +448,7 @@
    "rel": "build/strip-landmarks/hgvFlamingoExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1311820,
    "preset": "level",
    "overrides": []
@@ -436,7 +457,7 @@
    "rel": "build/strip-landmarks/virginExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1115248,
    "preset": "level",
    "overrides": []
@@ -445,7 +466,7 @@
    "rel": "build/strip-landmarks/goldCoastExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 8133952,
    "preset": "level",
    "overrides": []
@@ -454,7 +475,7 @@
    "rel": "build/strip-landmarks/palaceStation-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 5275696,
    "preset": "level",
    "overrides": []
@@ -463,7 +484,7 @@
    "rel": "build/strip-landmarks/usBankCenter-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 648412,
    "preset": "level",
    "overrides": []
@@ -472,7 +493,7 @@
    "rel": "build/strip-landmarks/embassyConvention-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1513948,
    "preset": "level",
    "overrides": []
@@ -481,7 +502,7 @@
    "rel": "build/strip-landmarks/allegiantStadium-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 7667584,
    "preset": "level",
    "overrides": []
@@ -490,7 +511,7 @@
    "rel": "build/strip-landmarks/westin-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 764224,
    "preset": "level",
    "overrides": []
@@ -499,7 +520,7 @@
    "rel": "build/strip-landmarks/platinum-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3322316,
    "preset": "level",
    "overrides": []
@@ -508,7 +529,7 @@
    "rel": "build/strip-landmarks/wyndhamDesertBlue-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3218908,
    "preset": "level",
    "overrides": []
@@ -517,7 +538,7 @@
    "rel": "build/strip-landmarks/skyGarage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 242088,
    "preset": "level",
    "overrides": []
@@ -526,7 +547,7 @@
    "rel": "build/strip-landmarks/wellsFargoTower-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3200596,
    "preset": "level",
    "overrides": []
@@ -535,7 +556,7 @@
    "rel": "build/strip-landmarks/parkTowers-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 9326664,
    "preset": "level",
    "overrides": []
@@ -544,7 +565,7 @@
    "rel": "build/strip-landmarks/residenceInnHughes-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3339236,
    "preset": "level",
    "overrides": []
@@ -553,7 +574,7 @@
    "rel": "build/strip-landmarks/grandDesert-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 18358496,
    "preset": "level",
    "overrides": []
@@ -562,7 +583,7 @@
    "rel": "build/strip-landmarks/oyoExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1804240,
    "preset": "level",
    "overrides": []
@@ -571,7 +592,7 @@
    "rel": "build/strip-landmarks/lvccWest-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 7266636,
    "preset": "level",
    "overrides": []
@@ -580,7 +601,7 @@
    "rel": "build/strip-landmarks/sphereGarage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 341996,
    "preset": "level",
    "overrides": []
@@ -589,7 +610,7 @@
    "rel": "build/strip-landmarks/venetianExpo-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1034604,
    "preset": "level",
    "overrides": []
@@ -598,7 +619,7 @@
    "rel": "build/strip-landmarks/caesarsForum-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1677600,
    "preset": "level",
    "overrides": []
@@ -607,7 +628,7 @@
    "rel": "build/strip-landmarks/venetianEmployeeGarage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 557516,
    "preset": "level",
    "overrides": []
@@ -616,7 +637,7 @@
    "rel": "build/strip-landmarks/peppermillRetail-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2355440,
    "preset": "level",
    "overrides": []
@@ -625,7 +646,7 @@
    "rel": "build/strip-landmarks/lvccLegacy-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 6461220,
    "preset": "level",
    "overrides": []
@@ -634,7 +655,7 @@
    "rel": "build/strip-landmarks/mgmConference-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1818252,
    "preset": "level",
    "overrides": []
@@ -643,7 +664,7 @@
    "rel": "build/strip-landmarks/casinoRoyale-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1793988,
    "preset": "level",
    "overrides": []
@@ -652,7 +673,7 @@
    "rel": "build/strip-landmarks/northStripMotels-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 10227868,
    "preset": "level",
    "overrides": []
@@ -661,7 +682,7 @@
    "rel": "build/strip-landmarks/mandalayParking-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 675628,
    "preset": "level",
    "overrides": []
@@ -670,7 +691,7 @@
    "rel": "build/strip-landmarks/luxorParking-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1687764,
    "preset": "level",
    "overrides": []
@@ -679,7 +700,7 @@
    "rel": "build/strip-landmarks/rioConference-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 435872,
    "preset": "level",
    "overrides": []
@@ -688,7 +709,7 @@
    "rel": "build/strip-landmarks/tiParking-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1056328,
    "preset": "level",
    "overrides": []
@@ -697,7 +718,7 @@
    "rel": "build/strip-landmarks/parkMgmParking-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 862400,
    "preset": "level",
    "overrides": []
@@ -706,7 +727,7 @@
    "rel": "build/strip-landmarks/parisParking-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3549924,
    "preset": "level",
    "overrides": []
@@ -715,7 +736,7 @@
    "rel": "build/strip-landmarks/ariaSite-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 69834300,
    "preset": "level",
    "overrides": []
@@ -724,7 +745,7 @@
    "rel": "build/strip-landmarks/ariaParking-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 484216,
    "preset": "level",
    "overrides": []
@@ -733,7 +754,7 @@
    "rel": "build/strip-landmarks/guardianAngel-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 4081876,
    "preset": "level",
    "overrides": []
@@ -742,7 +763,7 @@
    "rel": "build/strip-landmarks/conventionFrontage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 13037460,
    "preset": "level",
    "overrides": []
@@ -751,7 +772,7 @@
    "rel": "build/strip-landmarks/circusExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 11289804,
    "preset": "level",
    "overrides": []
@@ -760,7 +781,7 @@
    "rel": "build/strip-landmarks/saharaExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3231732,
    "preset": "level",
    "overrides": []
@@ -769,7 +790,7 @@
    "rel": "build/strip-landmarks/fontainebleauExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2004716,
    "preset": "level",
    "overrides": []
@@ -778,7 +799,7 @@
    "rel": "build/strip-landmarks/resortsWorldExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1671232,
    "preset": "level",
    "overrides": []
@@ -787,7 +808,7 @@
    "rel": "build/strip-landmarks/caesarsExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 20807020,
    "preset": "level",
    "overrides": []
@@ -796,7 +817,7 @@
    "rel": "build/strip-landmarks/forumShops-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 6028248,
    "preset": "level",
    "overrides": []
@@ -805,7 +826,7 @@
    "rel": "build/strip-landmarks/blvdRetail-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 6510988,
    "preset": "level",
    "overrides": []
@@ -814,7 +835,7 @@
    "rel": "build/strip-landmarks/excaliburFrontage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3390076,
    "preset": "level",
    "overrides": []
@@ -823,7 +844,7 @@
    "rel": "build/strip-landmarks/athleticsStadium-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 6193892,
    "preset": "level",
    "overrides": []
@@ -832,7 +853,7 @@
    "rel": "build/strip-landmarks/linqParking-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 421576,
    "preset": "level",
    "overrides": []
@@ -841,7 +862,7 @@
    "rel": "build/strip-landmarks/flamingoExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 9710128,
    "preset": "level",
    "overrides": []
@@ -850,7 +871,7 @@
    "rel": "build/strip-landmarks/mandalayExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 21385688,
    "preset": "level",
    "overrides": []
@@ -859,7 +880,7 @@
    "rel": "build/strip-landmarks/showcase-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 10276788,
    "preset": "level",
    "overrides": []
@@ -868,7 +889,7 @@
    "rel": "build/strip-landmarks/citycenter63-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 6031600,
    "preset": "level",
    "overrides": []
@@ -877,7 +898,7 @@
    "rel": "build/strip-landmarks/planetHollywood-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 25090188,
    "preset": "level",
    "overrides": []
@@ -886,7 +907,7 @@
    "rel": "build/strip-landmarks/pinballHall-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 957536,
    "preset": "level",
    "overrides": []
@@ -895,7 +916,7 @@
    "rel": "build/strip-landmarks/ihopNorth-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 945264,
    "preset": "level",
    "overrides": []
@@ -904,7 +925,7 @@
    "rel": "build/strip-landmarks/oasisMotel-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1787652,
    "preset": "level",
    "overrides": []
@@ -913,7 +934,7 @@
    "rel": "build/strip-landmarks/diamondInn-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 5122780,
    "preset": "level",
    "overrides": []
@@ -922,7 +943,7 @@
    "rel": "build/strip-landmarks/littleChurchWest-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 30015872,
    "preset": "level",
    "overrides": []
@@ -931,7 +952,7 @@
    "rel": "build/strip-landmarks/maverickTerminal-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 920236,
    "preset": "level",
    "overrides": []
@@ -940,7 +961,7 @@
    "rel": "build/strip-landmarks/southShell-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 679136,
    "preset": "level",
    "overrides": []
@@ -949,7 +970,7 @@
    "rel": "build/strip-landmarks/akitaPlaza-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 4048416,
    "preset": "level",
    "overrides": []
@@ -958,7 +979,7 @@
    "rel": "build/strip-landmarks/desertOasis-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1980168,
    "preset": "level",
    "overrides": []
@@ -967,7 +988,7 @@
    "rel": "build/strip-landmarks/laughingJackalope-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 440316,
    "preset": "level",
    "overrides": []
@@ -976,7 +997,7 @@
    "rel": "build/strip-landmarks/nirvanaAncillary-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1304408,
    "preset": "level",
    "overrides": []
@@ -985,7 +1006,7 @@
    "rel": "build/strip-landmarks/nirvanaHotel-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1064836,
    "preset": "level",
    "overrides": []
@@ -994,7 +1015,7 @@
    "rel": "build/strip-landmarks/psychicSessions-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1688424,
    "preset": "level",
    "overrides": []
@@ -1003,7 +1024,7 @@
    "rel": "build/strip-landmarks/southArco-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2466844,
    "preset": "level",
    "overrides": []
@@ -1012,7 +1033,7 @@
    "rel": "build/strip-landmarks/southCentralPolice-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2379704,
    "preset": "level",
    "overrides": []
@@ -1021,7 +1042,7 @@
    "rel": "build/strip-landmarks/fireStation11-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1891684,
    "preset": "level",
    "overrides": []
@@ -1030,7 +1051,7 @@
    "rel": "build/strip-landmarks/baliHaiClubhouse-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2893408,
    "preset": "level",
    "overrides": []
@@ -1039,7 +1060,7 @@
    "rel": "build/strip-landmarks/signatureAviation-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 766916,
    "preset": "level",
    "overrides": []
@@ -1048,7 +1069,7 @@
    "rel": "build/strip-landmarks/terriblesHeadquarters-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2778516,
    "preset": "level",
    "overrides": []
@@ -1057,7 +1078,7 @@
    "rel": "build/strip-landmarks/pristineHangar-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 283824,
    "preset": "level",
    "overrides": []
@@ -1066,7 +1087,7 @@
    "rel": "build/strip-landmarks/harleyDealership-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1205732,
    "preset": "level",
    "overrides": []
@@ -1075,7 +1096,7 @@
    "rel": "build/strip-landmarks/bostonPizza-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1076304,
    "preset": "level",
    "overrides": []
@@ -1084,7 +1105,7 @@
    "rel": "build/strip-landmarks/travelersFrontage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 337340,
    "preset": "level",
    "overrides": []
@@ -1093,7 +1114,7 @@
    "rel": "build/strip-landmarks/todMotel-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 515360,
    "preset": "level",
    "overrides": []
@@ -1102,7 +1123,7 @@
    "rel": "build/strip-landmarks/mainStreet1511-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1718004,
    "preset": "level",
    "overrides": []
@@ -1111,7 +1132,7 @@
    "rel": "build/strip-landmarks/carnitas1601-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 808564,
    "preset": "level",
    "overrides": []
@@ -1120,7 +1141,7 @@
    "rel": "build/strip-landmarks/bajamar-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 617872,
    "preset": "level",
    "overrides": []
@@ -1129,7 +1150,7 @@
    "rel": "build/strip-landmarks/luvIt-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 897584,
    "preset": "level",
    "overrides": []
@@ -1138,7 +1159,7 @@
    "rel": "build/strip-landmarks/oakeyArco-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2170688,
    "preset": "level",
    "overrides": []
@@ -1147,7 +1168,7 @@
    "rel": "build/strip-landmarks/oakeyShops-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1770832,
    "preset": "level",
    "overrides": []
@@ -1156,7 +1177,7 @@
    "rel": "build/strip-landmarks/peppermintHippo-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 5993884,
    "preset": "level",
    "overrides": []
@@ -1165,7 +1186,7 @@
    "rel": "build/strip-landmarks/market1700-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2408396,
    "preset": "level",
    "overrides": []
@@ -1174,7 +1195,7 @@
    "rel": "build/strip-landmarks/sinclair1705-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 872448,
    "preset": "level",
    "overrides": []
@@ -1183,7 +1204,7 @@
    "rel": "build/strip-landmarks/chapelFlowers-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 32416472,
    "preset": "level",
    "overrides": []
@@ -1192,7 +1213,7 @@
    "rel": "build/strip-landmarks/tacosMexico-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 978568,
    "preset": "level",
    "overrides": []
@@ -1201,7 +1222,7 @@
    "rel": "build/strip-landmarks/dennys1822-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 625304,
    "preset": "level",
    "overrides": []
@@ -1210,7 +1231,7 @@
    "rel": "build/strip-landmarks/main1700-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 29361168,
    "preset": "level",
    "overrides": []
@@ -1219,7 +1240,7 @@
    "rel": "build/strip-landmarks/curaleaf1736-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2235912,
    "preset": "level",
    "overrides": []
@@ -1228,7 +1249,7 @@
    "rel": "build/strip-landmarks/whiteCrossAnnex-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3094740,
    "preset": "level",
    "overrides": []
@@ -1237,7 +1258,7 @@
    "rel": "build/strip-landmarks/oakeyService-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 704388,
    "preset": "level",
    "overrides": []
@@ -1246,7 +1267,7 @@
    "rel": "build/strip-landmarks/oakeyOffices-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2684188,
    "preset": "level",
    "overrides": []
@@ -1255,7 +1276,7 @@
    "rel": "build/strip-landmarks/santaPaulaOffice-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3151036,
    "preset": "level",
    "overrides": []
@@ -1264,7 +1285,7 @@
    "rel": "build/strip-landmarks/courtyard525-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 6651004,
    "preset": "level",
    "overrides": []
@@ -1273,7 +1294,7 @@
    "rel": "build/strip-landmarks/santaPaulaCourtyard-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2629792,
    "preset": "level",
    "overrides": []
@@ -1282,7 +1303,7 @@
    "rel": "build/strip-landmarks/stLouisSquareFrontage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2276776,
    "preset": "level",
    "overrides": []
@@ -1291,7 +1312,7 @@
    "rel": "build/strip-landmarks/alboDinosFrontage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1361148,
    "preset": "level",
    "overrides": []
@@ -1300,7 +1321,7 @@
    "rel": "build/strip-landmarks/casinoCenterCourtyard-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2499832,
    "preset": "level",
    "overrides": []
@@ -1309,7 +1330,7 @@
    "rel": "build/strip-landmarks/stLouisOffice515-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1200476,
    "preset": "level",
    "overrides": []
@@ -1318,7 +1339,7 @@
    "rel": "build/strip-landmarks/atomicGolf-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3286856,
    "preset": "level",
    "overrides": []
@@ -1327,7 +1348,7 @@
    "rel": "build/strip-landmarks/cityMarketLiquor-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 764304,
    "preset": "level",
    "overrides": []
@@ -1336,7 +1357,7 @@
    "rel": "build/strip-landmarks/carpetsGalore-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2229500,
    "preset": "level",
    "overrides": []
@@ -1345,7 +1366,7 @@
    "rel": "build/strip-landmarks/rexfordCourtyard1701-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1224028,
    "preset": "level",
    "overrides": []
@@ -1354,7 +1375,7 @@
    "rel": "build/strip-landmarks/crystalsRoof-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 158056,
    "preset": "level",
    "overrides": []
@@ -1363,7 +1384,7 @@
    "rel": "build/strip-landmarks/phFrontageCanopies-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 531320,
    "preset": "level",
    "overrides": []
@@ -1372,7 +1393,7 @@
    "rel": "build/strip-landmarks/horseshoeArrival-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 981188,
    "preset": "level",
    "overrides": []
@@ -1381,7 +1402,7 @@
    "rel": "build/strip-landmarks/casinoRoyaleRetail-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2207512,
    "preset": "level",
    "overrides": []
@@ -1390,7 +1411,7 @@
    "rel": "build/strip-landmarks/casinoRoyaleGarage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 4552416,
    "preset": "level",
    "overrides": []
@@ -1399,7 +1420,7 @@
    "rel": "build/strip-landmarks/southCommercial558-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 390136,
    "preset": "level",
    "overrides": []
@@ -1408,7 +1429,7 @@
    "rel": "build/strip-landmarks/southCommercialAnnex-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 110344,
    "preset": "level",
    "overrides": []
@@ -1417,7 +1438,7 @@
    "rel": "build/strip-landmarks/havenCourtyards-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2437320,
    "preset": "level",
    "overrides": []
@@ -1426,7 +1447,7 @@
    "rel": "build/strip-landmarks/baliHaiService-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 481704,
    "preset": "level",
    "overrides": []
@@ -1435,7 +1456,7 @@
    "rel": "build/strip-landmarks/rexfordEllenCourtyard-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2692140,
    "preset": "level",
    "overrides": []
@@ -1444,7 +1465,7 @@
    "rel": "build/strip-landmarks/casinoCenter1520-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 30572724,
    "preset": "level",
    "overrides": []
@@ -1453,7 +1474,7 @@
    "rel": "build/strip-landmarks/wyoming17Frontage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 432020,
    "preset": "level",
    "overrides": []
@@ -1462,7 +1483,7 @@
    "rel": "build/strip-landmarks/perceptionMuseum-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1087356,
    "preset": "level",
    "overrides": []
@@ -1471,7 +1492,7 @@
    "rel": "build/strip-landmarks/festivalGroundsService-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 195392,
    "preset": "level",
    "overrides": []
@@ -1480,7 +1501,7 @@
    "rel": "build/strip-landmarks/bonitaTerrace-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 32385164,
    "preset": "level",
    "overrides": []
@@ -1489,7 +1510,7 @@
    "rel": "build/strip-landmarks/carnavalCourt-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1394968,
    "preset": "level",
    "overrides": []
@@ -1498,7 +1519,7 @@
    "rel": "build/strip-landmarks/wynnSouthCanopy-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 936032,
    "preset": "level",
    "overrides": []
@@ -1507,7 +1528,7 @@
    "rel": "build/strip-landmarks/russellService-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 177564,
    "preset": "level",
    "overrides": []
@@ -1516,7 +1537,7 @@
    "rel": "build/strip-landmarks/siegelParadise-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 33902860,
    "preset": "level",
    "overrides": []
@@ -1525,7 +1546,7 @@
    "rel": "build/strip-landmarks/santaPaula1807-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 30476672,
    "preset": "level",
    "overrides": []
@@ -1534,7 +1555,7 @@
    "rel": "build/strip-landmarks/santaPaulaNorth-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2378740,
    "preset": "level",
    "overrides": []
@@ -1543,7 +1564,7 @@
    "rel": "build/strip-landmarks/bellagioArcadePiers-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 115344,
    "preset": "level",
    "overrides": []
@@ -1552,7 +1573,7 @@
    "rel": "build/strip-landmarks/rexfordPlaceWest-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 31344344,
    "preset": "level",
    "overrides": []
@@ -1561,7 +1582,7 @@
    "rel": "build/strip-landmarks/rexfordPlaceEast-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 31405380,
    "preset": "level",
    "overrides": []
@@ -1570,7 +1591,7 @@
    "rel": "build/strip-landmarks/housselsWest-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 32465500,
    "preset": "level",
    "overrides": []
@@ -1579,7 +1600,7 @@
    "rel": "build/strip-landmarks/weldonWest-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 31096424,
    "preset": "level",
    "overrides": []
@@ -1588,7 +1609,7 @@
    "rel": "build/strip-landmarks/weldonEast-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 31271936,
    "preset": "level",
    "overrides": []
@@ -1597,7 +1618,7 @@
    "rel": "build/strip-landmarks/santaPaulaWestCourts-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 31002404,
    "preset": "level",
    "overrides": []
@@ -1606,7 +1627,7 @@
    "rel": "build/strip-landmarks/jackMainWyoming-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 899892,
    "preset": "level",
    "overrides": []
@@ -1615,7 +1636,7 @@
    "rel": "build/strip-landmarks/casinoCenter1512-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 87580,
    "preset": "level",
    "overrides": []
@@ -1624,7 +1645,7 @@
    "rel": "build/strip-landmarks/paradiseSmallFrontage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2861140,
    "preset": "level",
    "overrides": []
@@ -1633,7 +1654,7 @@
    "rel": "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 379812,
    "preset": "level",
    "overrides": []
@@ -1642,7 +1663,7 @@
    "rel": "build/strip-landmarks/saharaRetail-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 4264996,
    "preset": "level",
    "overrides": []
@@ -1651,7 +1672,7 @@
    "rel": "build/strip-landmarks/stratPoolDeck-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1904384,
    "preset": "level",
    "overrides": []
@@ -1660,7 +1681,7 @@
    "rel": "build/strip-landmarks/stratExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 4216364,
    "preset": "level",
    "overrides": []
@@ -1669,7 +1690,7 @@
    "rel": "build/strip-landmarks/circusNorthCanopy-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 80836,
    "preset": "level",
    "overrides": []
@@ -1678,7 +1699,7 @@
    "rel": "build/strip-landmarks/encoreSuitesCanopy-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 472308,
    "preset": "level",
    "overrides": []
@@ -1687,7 +1708,7 @@
    "rel": "build/strip-landmarks/wynnPlazaCanopy-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 55824,
    "preset": "level",
    "overrides": []
@@ -1696,7 +1717,7 @@
    "rel": "build/strip-landmarks/wynnEncoreExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3086420,
    "preset": "level",
    "overrides": []
@@ -1705,7 +1726,7 @@
    "rel": "build/strip-landmarks/wynnLakefront-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 774440,
    "preset": "level",
    "overrides": []
@@ -1714,7 +1735,7 @@
    "rel": "build/strip-landmarks/wynnMarquee-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1909884,
    "preset": "level",
    "overrides": []
@@ -1723,7 +1744,7 @@
    "rel": "build/strip-landmarks/mirageMarquee-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2150184,
    "preset": "level",
    "overrides": []
@@ -1732,7 +1753,7 @@
    "rel": "build/strip-landmarks/forumCoolingTowers-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 264828,
    "preset": "level",
    "overrides": []
@@ -1741,7 +1762,7 @@
    "rel": "build/strip-landmarks/chayoTerraces-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 304464,
    "preset": "level",
    "overrides": []
@@ -1750,7 +1771,7 @@
    "rel": "build/strip-landmarks/luxorObelisk-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 2572408,
    "preset": "level",
    "overrides": []
@@ -1759,7 +1780,7 @@
    "rel": "build/strip-landmarks/akitaRearCanopy-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 289332,
    "preset": "level",
    "overrides": []
@@ -1768,7 +1789,7 @@
    "rel": "build/strip-landmarks/parisRooftopBar-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 573920,
    "preset": "level",
    "overrides": []
@@ -1777,7 +1798,7 @@
    "rel": "build/strip-landmarks/nynyIrishKiosk-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1364464,
    "preset": "level",
    "overrides": []
@@ -1786,7 +1807,7 @@
    "rel": "build/strip-landmarks/newYorkFrontage-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3445360,
    "preset": "level",
    "overrides": []
@@ -1795,7 +1816,7 @@
    "rel": "build/strip-landmarks/nynyArrival-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 930232,
    "preset": "level",
    "overrides": []
@@ -1804,7 +1825,7 @@
    "rel": "build/strip-landmarks/bellagioCurvedRoofs-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 219724,
    "preset": "level",
    "overrides": []
@@ -1813,7 +1834,7 @@
    "rel": "build/strip-landmarks/desertOasisService-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 90900,
    "preset": "level",
    "overrides": []
@@ -1822,7 +1843,7 @@
    "rel": "build/strip-landmarks/cosmoPedestrianLift-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 169324,
    "preset": "level",
    "overrides": []
@@ -1831,7 +1852,7 @@
    "rel": "build/strip-landmarks/crystalsPedestrianLift-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 165672,
    "preset": "level",
    "overrides": []
@@ -1840,7 +1861,7 @@
    "rel": "build/strip-landmarks/parkPedestrianLift-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 107496,
    "preset": "level",
    "overrides": []
@@ -1849,7 +1870,7 @@
    "rel": "build/strip-landmarks/harmonEastLift-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 503912,
    "preset": "level",
    "overrides": []
@@ -1858,7 +1879,7 @@
    "rel": "build/strip-landmarks/flamingoGarden-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 30023844,
    "preset": "level",
    "overrides": []
@@ -1867,7 +1888,7 @@
    "rel": "build/strip-landmarks/cvsHorseshoe-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 972096,
    "preset": "level",
    "overrides": []
@@ -1876,7 +1897,7 @@
    "rel": "build/strip-landmarks/horseshoeExterior-exterior.glb",
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3662808,
    "preset": "level",
    "overrides": []
@@ -1885,7 +1906,7 @@
    "rel": "build/resort-blocks/cosmo/cosmo-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 14267672,
    "preset": "level",
    "overrides": []
@@ -1903,7 +1924,7 @@
    "rel": "build/resort-blocks/cosmo/cosmoL1-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1860,
    "preset": "level",
    "overrides": []
@@ -1921,7 +1942,7 @@
    "rel": "build/resort-blocks/cosmo/cosmoL2-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1860,
    "preset": "level",
    "overrides": []
@@ -1939,7 +1960,7 @@
    "rel": "build/resort-blocks/cosmo/cosmoL3-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1860,
    "preset": "level",
    "overrides": []
@@ -1957,7 +1978,7 @@
    "rel": "build/resort-blocks/cosmo/cosmoL4-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 3192640,
    "preset": "level",
    "overrides": []
@@ -1975,7 +1996,7 @@
    "rel": "build/resort-blocks/cosmo/cosmoL14-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 4044508,
    "preset": "level",
    "overrides": []
@@ -1993,7 +2014,7 @@
    "rel": "build/resort-blocks/bellagio/bellagioBlock-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 138665600,
    "preset": "level",
    "overrides": []
@@ -2011,7 +2032,7 @@
    "rel": "build/resort-blocks/bellagio/bellagioLobby-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 231240,
    "preset": "level",
    "overrides": []
@@ -2029,7 +2050,7 @@
    "rel": "build/resort-blocks/bellagio/bellagioGarden-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 231244,
    "preset": "level",
    "overrides": []
@@ -2047,7 +2068,7 @@
    "rel": "build/resort-blocks/bellagio/bellagioConservatory-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 231256,
    "preset": "level",
    "overrides": []
@@ -2065,7 +2086,7 @@
    "rel": "build/resort-blocks/bellagio/bellagioPromenade-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 231248,
    "preset": "level",
    "overrides": []
@@ -2083,7 +2104,7 @@
    "rel": "build/resort-blocks/paris/parisBlock-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 104265984,
    "preset": "level",
    "overrides": []
@@ -2101,7 +2122,7 @@
    "rel": "build/resort-blocks/paris/parisDining-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 231264,
    "preset": "level",
    "overrides": []
@@ -2119,7 +2140,7 @@
    "rel": "build/resort-blocks/paris/parisPool-exterior.glb",
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 231260,
    "preset": "level",
    "overrides": []
@@ -2137,7 +2158,7 @@
    "rel": "build/highrises/exteriors.glb",
    "cls": "level",
    "loader": "src/work/HighriseCity.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 50895684,
    "preset": "level",
    "overrides": []
@@ -2146,7 +2167,7 @@
    "rel": "build/south-strip/coaster.glb",
    "cls": "level",
    "loader": "src/work/BigAppleCoaster.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 15709508,
    "preset": "level",
    "overrides": []
@@ -2155,7 +2176,7 @@
    "rel": "build/south-strip/train.glb",
    "cls": "code-driven",
    "loader": "src/work/BigAppleCoaster.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 59744,
    "preset": "code-driven",
    "overrides": []
@@ -2164,7 +2185,7 @@
    "rel": "build/sphere/exterior.glb",
    "cls": "level",
    "loader": "src/work/SphereVenue.ts",
-   "when": "boot (localhost)",
+   "when": "boot",
    "bytes": 1847460,
    "preset": "level",
    "overrides": []
@@ -5756,46 +5777,6 @@
    "overrides": [
     "--orm=webp-lossless:512"
    ]
-  },
-  {
-   "rel": "build/arrival-reconstruction/door-bronze.glb",
-   "cls": "level",
-   "loader": "world.json asset arrival-door-bronze (engine DungeonDoor via worldProfileData.doors)",
-   "when": "boot",
-   "worldRow": "arrival-door-bronze",
-   "bytes": 69576,
-   "preset": "level",
-   "overrides": []
-  },
-  {
-   "rel": "build/arrival-reconstruction/door-silver.glb",
-   "cls": "level",
-   "loader": "world.json asset arrival-door-silver (engine DungeonDoor via worldProfileData.doors)",
-   "when": "boot",
-   "worldRow": "arrival-door-silver",
-   "bytes": 68424,
-   "preset": "level",
-   "overrides": []
-  },
-  {
-   "rel": "build/arrival-reconstruction/door-black.glb",
-   "cls": "level",
-   "loader": "world.json asset arrival-door-black (engine DungeonDoor via worldProfileData.doors)",
-   "when": "boot",
-   "worldRow": "arrival-door-black",
-   "bytes": 69568,
-   "preset": "level",
-   "overrides": []
-  },
-  {
-   "rel": "build/arrival-reconstruction/door-sage.glb",
-   "cls": "level",
-   "loader": "world.json asset arrival-door-sage (engine DungeonDoor via worldProfileData.doors)",
-   "when": "boot",
-   "worldRow": "arrival-door-sage",
-   "bytes": 69544,
-   "preset": "level",
-   "overrides": []
   }
  ]
 }

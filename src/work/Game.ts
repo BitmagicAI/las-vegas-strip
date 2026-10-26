@@ -374,9 +374,8 @@ export class VoxelGame implements GenreGameInterface {
                 for(const root of roots)await renderer.compileAsync(root,camera,scene);
             });
             // The geographic city everywhere (2026-10-24): its runtime files stream from build/ on the dev server and
-            // from the Bitmagic CDN in a published game (RuntimeAssets.ts). Before the CDN copy existed, published builds
-            // fell back to the September level (`level-vegas`, vegas.mesh-level.json). The review and film switches
-            // below stay local-only.
+            // from the Bitmagic CDN in a published game (RuntimeAssets.ts). The review and film switches below stay
+            // local-only.
             const localLevelPreview = ['localhost', '127.0.0.1'].includes(location.hostname);
             // the baked distant LODs, before any city block is built (CityBakeLoad.ts); full detail is filled per block as
             // it is approached (CityLod), except while filming, when every take needs it everywhere at once

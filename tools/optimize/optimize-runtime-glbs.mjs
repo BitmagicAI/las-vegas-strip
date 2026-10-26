@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
  * optimize-runtime-glbs.mjs: reproducible driver for the optimizing-assets skill on the GLBs that
- * Vegas: Afterlight loads at runtime. It never touches a source file, world.json or src/: every
+ * the Las Vegas Strip loads at runtime. It never touches a source file, world.json or src/: every
  * candidate goes to .bitmagic/optimize/<path relative to the project, minus .glb>/out.glb, next to
  * source.sha256 and the encoder's --json report (report.json). Nothing is swapped into the game.
  *
@@ -57,22 +57,22 @@ const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8
 function resolveList() {
   const list = [];
   const add = (rel, cls, loader, when, extra = {}) => { if (!exists(rel)) { list.push({ rel, cls, loader, when, missing: true }); return; } list.push({ rel, cls, loader, when, ...extra }); };
-  // GeographicCity (localhost only: Game.ts builds it when location is localhost/127.0.0.1)
-  add('build/geographic-strip/city.glb', 'level', 'src/work/GeographicCity.ts', 'boot (localhost)');
-  // MeshLevel: local file on localhost, the registered level-vegas row (remote) elsewhere
-  add('build/geographic-strip/detailed.glb', 'level', 'src/work/Game.ts -> engine MeshLevel', 'boot (localhost)');
+  // GeographicCity
+  add('build/geographic-strip/city.glb', 'level', 'src/work/GeographicCity.ts', 'boot');
+  // MeshLevel (Game.ts)
+  add('build/geographic-strip/detailed.glb', 'level', 'src/work/Game.ts -> engine MeshLevel', 'boot');
   // StripLandmarks: base + key + -exterior.glb (boot) / -interior.glb (streamed on approach)
   for (const base of ['build/strip-landmarks/', 'build/resort-blocks/cosmo/', 'build/resort-blocks/bellagio/', 'build/resort-blocks/paris/']) {
     const loader = base.includes('resort-blocks') ? 'src/work/ResortBlocks.ts -> StripLandmarks' : 'src/work/StripLandmarks.ts';
     for (const m of readJson(base + 'venues.json')) {
-      add(`${base}${m.key}-exterior.glb`, 'level', loader, 'boot (localhost)');
+      add(`${base}${m.key}-exterior.glb`, 'level', loader, 'boot');
       if(!m.exteriorOnly)add(`${base}${m.key}-interior.glb`, 'level', loader, 'streamed on approach');
     }
   }
-  add('build/highrises/exteriors.glb', 'level', 'src/work/HighriseCity.ts', 'boot (localhost)');
-  add('build/south-strip/coaster.glb', 'level', 'src/work/BigAppleCoaster.ts', 'boot (localhost)');
-  add('build/south-strip/train.glb', 'code-driven', 'src/work/BigAppleCoaster.ts', 'boot (localhost)');
-  add('build/sphere/exterior.glb', 'level', 'src/work/SphereVenue.ts', 'boot (localhost)');
+  add('build/highrises/exteriors.glb', 'level', 'src/work/HighriseCity.ts', 'boot');
+  add('build/south-strip/coaster.glb', 'level', 'src/work/BigAppleCoaster.ts', 'boot');
+  add('build/south-strip/train.glb', 'code-driven', 'src/work/BigAppleCoaster.ts', 'boot');
+  add('build/sphere/exterior.glb', 'level', 'src/work/SphereVenue.ts', 'boot');
   add('build/sphere/interior.glb', 'level', 'src/work/SphereVenue.ts', 'streamed on approach');
   add('build/vehicles/afterlight-jeep.glb', 'code-driven', 'src/work/SanctuaryJeep.ts', 'boot');
   // HotelTemplates: /build/hotels/<HotelSet>-<part>.glb and <anything>-lobby.glb

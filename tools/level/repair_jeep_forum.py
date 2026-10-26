@@ -61,7 +61,6 @@ for name,a,b in surfaces:
  data['colliders']=[c for c in data['colliders'] if c['name']!=name];data['colliders'].append(record)
  report['ground'].append(record)
 Path('build/level/vegas.mesh-level.json').write_text(json.dumps(data,indent=2))
-Path('src/work/vegas.mesh-level.json').write_text(json.dumps(data,indent=2))
 bpy.ops.wm.save_as_mainfile(filepath=os.path.abspath('build/level/vegas.blend'))
 Path('build/repairs/forum-ground-report.json').write_text(json.dumps(report,indent=2))
 print('FORUM / GROUND REPAIRS PASS',json.dumps(report),flush=True)
