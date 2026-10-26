@@ -4,9 +4,10 @@
     python3 tools/film/build.py tools/film/cuts/<cut>.json [--preview] [--out <path.mp4>]
 
 The cut file:
-  {"name": "...", "music": "tools/film/music/bed.mp3" | null, "musicStart": 0, "musicGain": 0,
-   "fadeIn": 1.0, "fadeOut": 2.5,
+  {"name": "...", "music": "tools/film/music/bed.mp3" | null, "musicStart": 0, "musicAt": 0, "musicGain": 0,   # musicAt: output s
+   "fadeIn": 1.0, "fadeOut": 2.5,   # fadeIn 0: no fade from black, frame 0 is a picture (players and sites use it as the thumbnail)
    "clips": [{"take": "drive-north", "in": 12.5, "dur": 4.0, "x": 0.6, "speed": 1, "label": "..."}],   # in/dur seconds (dur = output); x = crossfade INTO this clip; speed: playback (unblended sub-frame takes)
+            # {"still": {"take": "storm-final", "frame": 1152}, "dur": 0.9}: one recorded frame held (a cover picture)
    "logo": {"file": "tools/film/brand/bitmagic-logo-white.png", "corner": "br", "height": 0.05, "margin": 0.022, "opacity": 0.6, "shadow": 0.45},
    "cards": [{"at": 1.5, "dur": 4.0, "style": "title"|"caption"|"stat"|"end", "text": "...", "sub": "..."}],   # at = output seconds; "end" = last N s
    "grain": 0.035}   # optional film grain over the footage
@@ -155,6 +156,17 @@ def main():
     # ── footage: each clip is an image2 input trimmed to its frames
     t = 0.0; timeline = []
     for i, c in enumerate(clips):
+        if 'still' in c:
+            pattern, first, count = frames_of(c['still']['take'])
+            frame = c['still']['frame']
+            if frame >= count: sys.exit(f"clip {i}: {c['still']['take']} has no frame {frame}")
+            n = int(round(c['dur'] * FPS))
+            inputs += ['-loop', '1', '-framerate', str(FPS), '-t', f"{c['dur']:.4f}", '-i', pattern % (first + frame)]
+            filters.append(f'[{i}:v]setpts=N/({FPS}*TB),trim=end_frame={n},setpts=PTS-STARTPTS,scale={W}:{H}:flags=lanczos,format=gbrp,fps={FPS},settb=1/{FPS}[c{i}]')
+            x = c.get('x', 0) if i else 0
+            start = t - x
+            timeline.append((start, c)); t = start + c['dur']
+            continue
         pattern, first, count = frames_of(c['take'])
         # a take recorded with unblended sub-frames has more frames a second (subframes.json `fps`); a clip's `speed`
         # plays it faster by taking every k-th real frame (1.5x of a 120 fps take = every 3rd), never blending
@@ -208,7 +220,8 @@ def main():
         filters.append(f'[{cur}][lg]overlay=0:0:eof_action=pass[wm]')
         cur = 'wm'; k += 1
     # fades from / to black over everything (footage, cards and the watermark)
-    filters.append(f'[{cur}]fade=t=in:st=0:d={fi},fade=t=out:st={total - fo:.4f}:d={fo}[faded]')
+    fade_in = f'fade=t=in:st=0:d={fi},' if fi > 0 else ''
+    filters.append(f'[{cur}]{fade_in}fade=t=out:st={total - fo:.4f}:d={fo}[faded]')
     cur = 'faded'
     # BT.709 limited range for 4:2:0
     # (setparams: the grain's format round trip drops the frames' colour tags, and ffmpeg then writes no primaries/transfer)
@@ -219,7 +232,10 @@ def main():
     if cut.get('music'):
         music = os.path.join(ROOT, cut['music'])
         inputs += ['-ss', str(cut.get('musicStart', 0)), '-i', music]
-        a = f"[{k}:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d={min(fi, .5)},afade=t=out:st={total - fo - .5:.3f}:d={fo + .5},volume={cut.get('musicGain', 0)}dB"
+        at = cut.get('musicAt', 0)
+        delay = f'adelay={round(at * 1000)}:all=1,' if at > 0 else ''
+        fade_in = f'afade=t=in:st=0:d={min(fi, .5)},' if fi > 0 else ''
+        a = f"[{k}:a]atrim=0:{total - at:.3f},asetpts=PTS-STARTPTS,{delay}{fade_in}afade=t=out:st={total - fo - .5:.3f}:d={fo + .5},volume={cut.get('musicGain', 0)}dB"
         # loudness: measure, then normalise once to -14 LUFS / -1 dBTP
         if not preview:
             meas = subprocess.run(['ffmpeg', '-hide_banner', '-nostats', '-ss', str(cut.get('musicStart', 0)), '-i', music, '-filter_complex',
@@ -239,7 +255,8 @@ def main():
            '-movflags', '+faststart', '-t', f'{total:.3f}', out]
     print(f'{name}: {len(clips)} clips, {total:.2f} s → {out}')
     run(cmd)
-    json.dump({'clips': [{'at': round(s, 3), 'take': c['take'], 'in': c['in'], 'dur': c['dur'], 'label': c.get('label', '')} for s, c in timeline], 'total': total},
+    json.dump({'clips': [{'at': round(s, 3), 'take': c['take'] if 'take' in c else c['still']['take'], 'in': c.get('in', c.get('still', {}).get('frame', 0) / FPS),
+                          'dur': c['dur'], 'label': c.get('label', '')} for s, c in timeline], 'total': total},
               open(out.replace('.mp4', '.timeline.json'), 'w'), indent=1)
     print('done', out)
 
