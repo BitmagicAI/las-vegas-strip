@@ -377,7 +377,7 @@ spec['routes']=[dict(points=[F.p(0,0,-5),F.p(0,0,5),F.p(0,0,55)]),dict(points=[F
 # blue-green canal, mooring poles, bridge and a fresco-inspired entrance gallery.
 enter('venetian');p=footprint('relation/7770314');F=entry_on(p,(223,-689));portal=F.portal(w=6,h=5.5,name='Venetian Grand Colonnade');spec=venue('venetian','The Venetian frontage',p,F,37,65,12,portal)
 Q=Frame(B,225.85,-644,math.pi/2,y=6.24);upperPortal=Q.portal(w=4.6,h=3.3,name='Rialto / Grand Canal gallery');spec['portals'].append(upperPortal)
-# Grand Canal Shoppes east entrance (2026-10-08, the owner: "fly through the shoppes to the casino ... and through the lobby"):
+# Grand Canal Shoppes east entrance (2026-10-08: the owner wanted a flight through the Shoppes to the casino and through the lobby):
 # an upper-level door from a terrace on the east face, toward the Sphere. S: local z west along the street, x across it.
 S=Frame(B,438.6,-734,-math.pi/2,y=7.24);eastPortal=S.portal(w=7,h=5,name='Grand Canal Shoppes east terrace');spec['portals'].append(eastPortal)
 galleryMask=unary_union([F.poly([(-18.4,.3),(18.4,.3),(18.4,65),(-18.4,65)]),box(225.85,-648,251,-640),box(244.8,-672,249.2,-644)])
@@ -483,9 +483,9 @@ for side in [-1,1]:
  for z in [42,54]:
   q=F.p(side*18.25,0,z);J=Frame(B,q[0],q[2],F.yaw+side*math.pi/2);shop(J,0,0,'VENETIAN BOUTIQUE',9,True)
 
-# ── The Grand Canal Shoppes and the casino (2026-10-08, the owner: "The Venetian indoors with the canals is really beautiful
-#    and we should make sure to model it so that we can fly through the shoppes to the casino (let's fill it with casino
-#    machines) and through the lobby"). Behind the lobby in the podium, south of the hotel tower's base (x 359-437,
+# ── The Grand Canal Shoppes and the casino (2026-10-08: the owner asked for the canal
+#    interiors to be modelled so the camera can fly through the Shoppes to a casino filled with slot machines and
+#    through the lobby). Behind the lobby in the podium, south of the hotel tower's base (x 359-437,
 #    z -688..-620): an upper-level street with a canal under a painted sky (S: from the east terrace door westward, x
 #    across, y from the walkway at 7.24 m), ending at an open well down into the casino (C: from the lobby's back wall
 #    eastward, x across), whose 16 m arch opens into the lobby. Interpretations of the real interiors, not surveys.

@@ -1,8 +1,7 @@
 import type * as THREE from 'three';
 
-/** City geometry that arrives after the player is in drops in from the sky instead of popping in (2026-10-25, the
- * owner: "To solve the content popping issue, I would just animate the appearing of new geometry with some effect ...
- * falling from the sky, etc."). A transform animation only: no shader changes, so nothing compiles for it. Before
+/** City geometry that arrives after the player is in drops in from the sky instead of popping in (2026-10-25: the
+ * owner suggested animating new geometry in, for example falling from the sky, instead of popping). A transform animation only: no shader changes, so nothing compiles for it. Before
  * play (under the loading screen) roots simply appear. Up to SLOTS roots fall at once; a busier moment shows the rest
  * in place. Nothing is allocated per frame. */
 const SLOTS=48,DROP=70,DURATION_MS=950;

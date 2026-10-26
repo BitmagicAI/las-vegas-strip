@@ -389,8 +389,8 @@ export class VoxelGame implements GenreGameInterface {
                 shadows: 'dynamic'
             });
             const loadedLevel = await this.meshLevel.load();
-            // The city loads behind play (2026-10-25, the owner: "load only the minimal assets, then already drop the player
-            // in"): the published game starts once the street level, the sky, the player and the jeep are in, and the
+            // The city loads behind play (2026-10-25: the owner wanted the player in after a minimal
+            // load): the published game starts once the street level, the sky, the player and the jeep are in, and the
             // landmarks, high-rises and skyline arrive nearest first within a few milliseconds a frame (FrameBudget.ts),
             // dropping in (Appear.ts). Local reviews, probes and filming load everything first (?background tries it).
             const backgroundCity=!localLevelPreview||new URLSearchParams(location.search).has('background');
@@ -636,8 +636,8 @@ export class VoxelGame implements GenreGameInterface {
                     firstPerson:()=>this.cameraManager?.getMode()==='first-person',
                     jeep:()=>this.filmScenario?.jeepPose?.()??(probe.jeep as ()=>{x:number;y:number;z:number;fx:number;fy:number;fz:number;speed:number}|null)(),
                     // Analog throttle and brake for the film's drives: the player path only passes RT/A as booleans, and a
-                    // speed held by pulsing full power rocked the chassis about twice a second (the owner: "as if there was a
-                    // flat tire"). The vehicle takes analog values (VehicleControls.throttle / brakeAmount); they are merged
+                    // speed held by pulsing full power rocked the chassis about twice a second (it felt like a
+                    // flat tire to the owner). The vehicle takes analog values (VehicleControls.throttle / brakeAmount); they are merged
                     // into the controls the player path hands it, into one reused object.
                     hotelPin:(id,floor,bay,side)=>this.hotelStreaming?.filmPin(id,floor,bay,side)??Promise.resolve(false),
                     hotelDoors:(camera,forward,speed)=>{this.hotelStreaming?.filmDoors(camera,forward,speed);this.geographicCity?.landmarks.filmDoors(camera,forward,speed);},

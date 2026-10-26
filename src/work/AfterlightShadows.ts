@@ -119,8 +119,8 @@ export class AfterlightShadows {
     private add(geometry: THREE.BufferGeometry): THREE.Mesh {
         const mesh = new THREE.Mesh(geometry,this.material); mesh.castShadow = true; mesh.layers.set(30); this.proxies.add(mesh); return mesh;
     }
-    /** Local filming: a receiver region wider than the settings allow (the owner, 2026-10-08: "shadows clip out too close to
-     * the camera for the video (fine for runtime gameplay)"), on the largest map the device has; Game centres it ahead of
+    /** Local filming: a receiver region wider than the settings allow (2026-10-08: for the
+     * video the owner found the shadows ending too close to the camera; fine for gameplay), on the largest map the device has; Game centres it ahead of
      * the film camera. null returns to the settings' distance. */
     private filmDistance:number|null=null;
     film(distance:number|null):void{

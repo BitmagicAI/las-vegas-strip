@@ -1,6 +1,6 @@
 """The Venetian casino and Restaurant Row, Level 1, rebuilt to the resort map at full detail (2026-10-23).
 
-The owner on the previous interiors: "What happened? This looks exactly like before, very low detail, blocky." This
+The previous interiors looked low in detail and blocky to the owner. This
 module is the streamed sub-venue 'venetianCasino' (build: build_venetian_interior.py casino). World metres, X east,
 Y up, Z south; floor L1 = 0.24; the ceiling stays under 6.04 (the Shoppes' canal bed above sits at 6.3) except the
 escalators, which rise to Level 2 (7.24).

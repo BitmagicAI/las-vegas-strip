@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import type {EngineLike} from 'types/game.js';
 
-/** One shader for every ordinary surface, whichever texture slots its asset filled (2026-10-25, the owner: "If the only
- * difference is vertex buffer and textures, we should not have any recompiling").
+/** One shader for every ordinary surface, whichever texture slots its asset filled (2026-10-25: the owner's
+ * rule that surfaces differing only in vertex buffers and textures must not compile again).
  *
  * three keys a material's shader by which texture slots are set, so an untextured, a colour-mapped and a normal-mapped
  * standard material are three shaders (108 plain materials in view at spawn fell into seven such combinations). Here a

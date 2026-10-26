@@ -85,8 +85,8 @@ which reveals hidden objects, compiles for the light set the game plays with.
 
 ## Keep the shader count small
 
-The owner (2026-10-24): "a very small number of shaders ... if the only difference is vertex buffer and textures, we
-should not have any recompiling." Each distinct three.js cache key costs a node build (~12 ms of main thread for a lit
+The owner (2026-10-24) asked for very few shaders: when only the vertex buffers and textures differ, nothing should
+compile again. Each distinct three.js cache key costs a node build (~12 ms of main thread for a lit
 material) and usually a GPU pipeline; start-up went from 2,646 builds (21.5 s) to ~340 (1 s). The rules:
 - Instanced drawing goes through `sharedInstancedMesh` (`SharedInstancing.ts`), never `InstancedMesh`: three keys every
   InstancedMesh by its uuid. Every instanced mesh also reads matrices from vertex attributes (`ShaderSharing.ts`).

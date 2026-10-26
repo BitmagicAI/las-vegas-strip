@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 import {uniform} from 'three/tsl';
 
-/** Interiors' overhead key light (2026-10-23, the owner on the info video: "When there are no shadows, we are missing
- * a lot of depth ... furniture indoor seem floating."). Inside, the sun is off and the borrowed point lights cast no
+/** Interiors' overhead key light (2026-10-23: on the info video the owner found
+ * interiors flat without shadows, the furniture seeming to float). Inside, the sun is off and the borrowed point lights cast no
  * shadows, so nothing grounds a bed, a chair or a slot bank. This directional light shines almost straight down and
  * casts a tight shadow map around the camera from the interior geometry only. It leans (64 degrees, toward the sun's
  * bearing) because a shadow straight down hides under its own object (layer INTERIOR_CASTERS, which

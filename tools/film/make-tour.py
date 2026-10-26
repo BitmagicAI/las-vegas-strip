@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """The continuous camera: one take, one camera, no cuts (tools/film/takes/tour.json).
 
-2026-10-08, the owner on the 45-second preview 2: "My ambition would be a continuous camera. The first camera going through
-the arc should speed up and merge into the path that follows the car, and each of these sequences should be connected by a
-fast camera run to the next area"; the route: "Let's do everything, but order them spatially".
+2026-10-08, after the 45-second preview 2: the owner wanted one continuous camera, the opening run through the arc
+speeding up into the path that follows the car, and fast camera runs linking each area to the next; the route covers
+everything, ordered spatially.
 
   Paris: through the Arc de Triomphe, speeding up, round onto the Boulevard behind the jeep
   the jeep: catch it and ride beside it (the camera looks at the jeep itself), then peel off left
@@ -119,7 +119,7 @@ def camera_path(points, ramp_in=0.0, ramp_out=1.0, look_ease=0.3, calm=None, cal
     return keys, point_t
 
 def add_bank(keys, gain=0.35, max_deg=15.0, ease=0.3):
-    """Bank into turns (the owner: "slightly tilt the camera when turning"): roll from the path's curvature and speed, like a
+    """Bank into turns (the owner asked for a slight tilt in turns): roll from the path's curvature and speed, like a
     drone or a plane (bank = atan(gain * v * turn rate / g)), capped and eased. Right turns roll right (negative)."""
     n = len(keys)
     hd, sp = [], []
@@ -286,7 +286,7 @@ def sphere_look(deg):
     a = math.radians(deg - 55); return [SPHERE[0] + 40 * math.cos(a), 44, SPHERE[2] + 40 * math.sin(a)]
 legs['sphere'] = [((620, 118, -330), 120, None), ((770, 88, -430), 115, None), ((880, 64, -490), 92, None)]
 legs['sphere'] += [(sphere_at(d, y), 80, sphere_look(d)) for d, y in [(125, 54), (88, 50), (50, 48), (12, 50), (-26, 54), (-60, 56)]]
-# the Venetian (2026-10-08, the owner: "fly through the shoppes to the casino ... and through the lobby"): west to the
+# the Venetian (2026-10-08: the owner wanted a flight through the Shoppes to the casino and through the lobby): west to the
 # terrace door on its east face, along the Grand Canal Shoppes over the water (rising over its two bridges), over the
 # balustrade and down the well into the casino, along its main aisle between the slot banks, through the lobby's arch and
 # down the fresco hall, out through the colonnade (under the bridge deck, between its pier and the columns) to the Strip

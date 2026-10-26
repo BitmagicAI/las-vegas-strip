@@ -5,8 +5,8 @@ import {float} from 'three/tsl';
 import {NodeMaterial,NodeUpdateType,TextureNode,WebGPURenderer,type MRTNode,type Node,type NodeFrame,type PassNode,type RenderTarget} from 'three/webgpu';
 import type {EngineLike} from 'types/game.js';
 
-/** Fewer shaders (2026-10-24, the owner: "Ideally we would have a very small number of shaders ... If the only
- * difference is vertex buffer and textures, we should not have any recompiling").
+/** Fewer shaders (2026-10-24: the owner asked for very few shaders,
+ * and no new compile when only vertex buffers and textures differ).
  *
  * three r185 gives every InstancedMesh with up to ~1,000 instances its own uniform buffer for the matrices, named after
  * the buffer node's id (`NodeBuffer_850160`), so each instanced mesh compiles its own vertex shader and pipeline even

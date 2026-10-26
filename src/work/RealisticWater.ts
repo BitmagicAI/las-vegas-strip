@@ -202,7 +202,7 @@ function renderMirror(mirror:Mirror,frame:{renderer:Renderer;scene:THREE.Scene;c
     for(const tap of mirror.taps)tap.value=mirror.target.texture;
     // The blur's reach is fixed on screen, as tuned at 1080p (2026-10-25): in mirror texels it halved its reach on a 2x
     // display, where the reflected window grids turned back into fine stripes that crawled whenever the camera turned
-    // (the owner: "flickering really bad"). 3 texels of a 540-row mirror in play, of a 1080-row one while filming.
+    // (the flicker the owner reported). 3 texels of a 540-row mirror in play, of a 1080-row one while filming.
     const rows=RealisticWater.everyFrame?1080:540;
     mirror.texel.value.set(h/(rows*w),1/rows);
     mirror.lod.value=Math.max(0,Math.log2(h/rows));

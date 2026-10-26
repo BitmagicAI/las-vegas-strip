@@ -2,8 +2,8 @@ import * as THREE from 'three';
 import type {NodeBuilder,NodeMaterial} from 'three/webgpu';
 import {Fn,attribute,mat4,normalLocal,positionLocal,transformNormal,vec4} from 'three/tsl';
 
-/** Instanced drawing that shares one shader build between meshes (2026-10-24, the owner: "If the only difference is
- * vertex buffer and textures, we should not have any recompiling").
+/** Instanced drawing that shares one shader build between meshes (2026-10-24: no new
+ * compile when only vertex buffers and textures differ, the owner's rule).
  *
  * three r185 adds every InstancedMesh's uuid to its node cache key (its matrices are bound through the node graph), so
  * each InstancedMesh pays a whole node build, ~7 ms of main thread with this game's lights, even when its material and

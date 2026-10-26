@@ -165,7 +165,7 @@ def _cr(p0, p1, p2, p3, u):
     return L(B1, B2, t1, t2)
 
 def add_bank(keys, gain=0.35, max_deg=15.0, ease=0.3):
-    """Bank into turns (the owner: "slightly tilt the camera when turning"): roll from the path's own curvature and speed,
+    """Bank into turns (the owner asked for a slight tilt in turns): roll from the path's own curvature and speed,
     like a drone or a plane (a = v * turn rate; bank = atan(gain * a / g)), capped, eased over `ease` s. Right turns roll
     right (negative, see Film's CameraKey.roll)."""
     n = len(keys)
@@ -334,7 +334,7 @@ walk_take('lobby-bellagio', [-230.0, 0.18, 445.0], (-1, 0), back=4, forward=26, 
 walk_take('crystals-atrium', [-86.4, 0.09, 906.19], (-0.721, 0.693), back=4, forward=22, pitch=0.1, run=True)
 
 
-# ══ the 45-second clip (2026-10-08, the owner on v3: "check the flight paths ... BEFORE spending hours rendering", the camera
+# ══ the 45-second clip (2026-10-08: on v3 the owner asked to check the flight paths before hours of rendering; the camera
 #    hunted left and right and turned suddenly, the jeep bumped twice a second, the 4-frame blend looked blurry). One drive,
 #    filmed as five simple moves (one drone segment each = a cut; two keys per segment, so nothing wanders), previewed in
 #    real time and checked with camera-check.py before the final render. No sub-frames.
@@ -360,8 +360,8 @@ write('drive45b', {'start': seat(nB), 'subframes': 1, 'maxSeconds': 40,
     ]})
 
 
-# ══ camera runs (2026-10-08, the owner: "a cool spline-based camera run from outside through the hotel entrance, through
-#    the lobby, up the stairs, along a corridor, entering a room ... and flying to the window to look out"). Points carry their
+# ══ camera runs (2026-10-08: the owner asked for spline camera runs from outside through the hotel entrance
+#    and lobby, up the stairs, along a corridor into a room and to its window). Points carry their
 #    own speed; the camera looks along the path (lookahead grows with speed) unless a point names a target; the view is
 #    eased over 0.15 s so turns lead smoothly. Interiors stream around the camera (focus) and doors open ahead of it.
 TOWERS = {t['id']: t for f in ('towers', 'highrise-towers', 'landmark-towers') for t in json.load(open(os.path.join(ROOT, f'src/work/hotels/{f}.json')))}
@@ -448,8 +448,8 @@ def storey(y0, v):
             (W(1.9, e + 1.6, 1.8), v, None), (W(1.9, e + 3.25, -2.0), v, None)]
 # The south rooms: the Eiffel Tower and Paris across Flamingo Road (the north ones face the Flamingo's facade 20-30 m off).
 EIFFEL_VIEW = [74.5, 68, 400.5]
-# Height and line vary with the space (the owner: "start higher in an area, swoop down to the floor level and then up again
-# ... combined by also making a curve, and tilting"): dive from the street under the bridge stair, rise and S-curve over the
+# Height and line vary with the space (the owner asked for runs that start high, swoop to the
+# floor and up again, curving and tilting): dive from the street under the bridge stair, rise and S-curve over the
 # casino floor, swoop down to the lobby door, up across the lobby and down again to the stair door.
 run = [(W(0, 12.0, -114), 13, None), (W(0, 6.0, -98), 12, None), (W(0, 1.7, -86), 10.5, None), (W(0, 1.45, -78), 10, None),
        (W(0, 1.5, -71.5), 10, None),                                           # under the bridge stair, through the portal

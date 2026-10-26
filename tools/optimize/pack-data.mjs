@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 /*
- * pack-data.mjs: the runtime data files as compact binary (2026-10-25, the owner: "I hope we never do any JSON parsing in
- * runtime ... any use of JS arrays should be prohibited" and "The format should be designed to be optimal to begin with,
- * i.e. not including redundant data, and using optimal data formats (i.e. 16-bit integers where 32 is too much, 8-16
- * bits values instead of 32-bit floats if the end result is about the same").
+ * pack-data.mjs: the runtime data files as compact binary (2026-10-25: the owner ruled out JSON
+ * parsing and JS arrays at runtime, and asked for formats that are optimal from the start: no redundant data, 16-bit
+ * integers where 32 bits are too many, 8-16-bit values instead of 32-bit floats where the result is about the same).
  *
  * The pipelines keep writing JSON into build/ (and public/foliage/); this writes a .bin beside each file the game loads,
  * and the game reads only the .bin (src/work/CollisionPack.ts, src/work/Plants.ts). Formats, all little-endian:

@@ -37,7 +37,9 @@ SECRETS = [
     ('assigned secret', re.compile(r'''(?i)\b(api[_-]?key|secret|password|passwd|token)\b\s*[:=]\s*['"][A-Za-z0-9_\-/+=]{20,}['"]''')),
 ]
 # Word-for-word quotes of private conversations (the journals are ignored; reports must paraphrase)
-VERBATIM = re.compile(r'(?i)(\(verbatim\)|\(exact words\)|owner\'s words|creator\'s words)\s*:?\s*["“]')
+VERBATIM = re.compile(r'(?i)(\(verbatim\)|\(exact words\)|owner\'s words|creator\'s words)\s*:?\s*["“]'
+                      # "(2026-10-25, the owner: "…")" and "the owner on the video: '…'" in code comments and docs
+                      r'|\bthe (owner|creator)\b[^"“\'\n]{0,70}:\s*["“\'][A-Za-z]')
 HOME = re.compile(r'/(?:Users|home)/([A-Za-z0-9._-]+)')
 EMAIL = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b')
 EMAIL_OK = re.compile(r'(noreply|no-reply|example\.(com|org)|users\.noreply\.github\.com|@bitmagic\.ai$|\.(png|jpe?g|webp|glb|js|mjs)$|@[0-9])', re.I)

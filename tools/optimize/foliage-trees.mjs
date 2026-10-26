@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
- * foliage-trees.mjs: the garden planting's runtime copies (2026-10-25, the owner: "all models should be compressed, and a
- * 7.4MB tree model sounds like it could also be optimized otherwise too").
+ * foliage-trees.mjs: the garden planting's runtime copies (2026-10-25: the owner asked for every model
+ * to be compressed, and for the 7.4 MB tree to be optimized further).
  *
  * The three tree LODs (public/foliage/tree-0/1/2.glb, Poly Haven tree_small_02) each carried the same nine 1k maps
  * (6.3 MB), and the published game downloaded the uncompressed originals (cdn-upload took public/foliage). Here:

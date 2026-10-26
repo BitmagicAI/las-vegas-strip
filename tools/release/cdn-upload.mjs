@@ -1,6 +1,6 @@
 // Uploads the runtime set to the Bitmagic CDN, where forged assets live, so a published game (one file in object
-// storage, no same-origin siblings) can stream the city (2026-10-24, the owner: "don't we already have CDN-hosted
-// files, for example when the asset forger creates them? I think we should do the same for this sample project").
+// storage, no same-origin siblings) can stream the city (2026-10-24: the owner
+// asked to host these files on the CDN, as the asset forger does).
 //
 //   node tools/release/cdn-upload.mjs            # upload what is new or changed, then write src/work/runtime-cdn.json
 //   node tools/release/cdn-upload.mjs --dry-run  # list what would go up

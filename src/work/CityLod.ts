@@ -13,7 +13,7 @@ export const bakeUse={baked:0,clustered:0};
 /** `?lodLevel=0|1` on localhost: every block at that level (comparing LODs). */
 const forcedLevel=typeof location!=='undefined'&&['localhost','127.0.0.1'].includes(location.hostname)?Number(new URLSearchParams(location.search).get('lodLevel')??-1):-1;
 const originalsSet=(list:{mesh:THREE.Mesh}[])=>new Set(list.map(o=>o.mesh));
-/** Near detail on approach (2026-10-26, the owner: "Yes please do 1-4 now"): a block with a baked LOD loads as that LOD
+/** Near detail on approach (2026-10-26): a block with a baked LOD loads as that LOD
  * alone, straight from its sources, and fills its full-detail batches only when the camera comes within its near range
  * (nearest first, within the frame budget); a block left far behind for EVICT_MS drops them again. Off while filming
  * (every take needs everything at once) and for blocks without a valid bake. */

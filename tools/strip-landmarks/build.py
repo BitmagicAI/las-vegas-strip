@@ -362,7 +362,7 @@ spec['routes']=[dict(points=[F.p(0,0,-5),F.p(0,0,5),F.p(0,0,55)]),dict(points=[F
 # blue-green canal, mooring poles, bridge and a fresco-inspired entrance gallery.
 enter('venetian');p=footprint('relation/7770314');F=entry_on(p,(223,-689));portal=F.portal(w=6,h=5.5,name='Venetian Grand Colonnade');spec=venue('venetian','The Venetian frontage',p,F,37,65,12,portal)
 Q=Frame(B,225.85,-644,math.pi/2,y=6.24);upperPortal=Q.portal(w=4.6,h=3.3,name='Rialto / Grand Canal gallery');spec['portals'].append(upperPortal)
-# Grand Canal Shoppes east entrance (2026-10-08, the owner: "fly through the shoppes to the casino ... and through the lobby"):
+# Grand Canal Shoppes east entrance (2026-10-08: the owner wanted a flight through the Shoppes to the casino and through the lobby):
 # an upper-level door from a terrace on the east face, toward the Sphere. S: local z west along the street, x across it.
 S=Frame(B,438.6,-734,-math.pi/2,y=7.24);eastPortal=S.portal(w=7,h=5,name='Grand Canal Shoppes east terrace');spec['portals'].append(eastPortal)
 galleryMask=unary_union([F.poly([(-18.4,.3),(18.4,.3),(18.4,65),(-18.4,65)]),box(225.85,-648,251,-640),box(244.8,-672,249.2,-644)])
@@ -433,8 +433,8 @@ from palazzo_retail import frontage as palazzo_retail
 spec['views']['palazzo-retail']=palazzo_retail(B)
 spec['views']['palazzo-tower']=dict(eye=[230,3,-1080],target=[465,108,-895])
 enter('venetian','interior');B.source='venetian-interiors'
-# ── The Venetian's public interiors (2026-10-23; the owner on the previous ones: "What happened? This looks exactly like
-#    before, very low detail, blocky." They chose a rebuild to the official resort map at full detail). Three streamed
+# ── The Venetian's public interiors (2026-10-23; the owner found the previous ones low
+#    in detail and blocky, and chose a rebuild to the official resort map at full detail). Three streamed
 #    venues: the lobby (this venue's interior: Great Hall, Scenic Overlook, Rialto landing, arrivals, colonnade, rotunda,
 #    front desk), the casino ('venetianCasino') and the Grand Canal Shoppes on Level 2 ('grandCanal'). Layout:
 #    venetian_interior_plan.py; kit: venetian_kit.py; materials: venetian_materials.py. Build them alone (and faster) with

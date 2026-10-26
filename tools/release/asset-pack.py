@@ -32,8 +32,8 @@ ROOT = Path(__file__).resolve().parents[2]
 BUILD = ROOT / 'build'
 OUT_LIST = ROOT / 'tools/release/asset-pack.json'
 OUT_DIR = ROOT / '.bitmagic/release'
-# The runtime set in the repository (2026-10-23, the owner: "upload the files as LFS ... otherwise it will be very
-# difficult to update the project"). The same bytes as the pack, at the same paths minus the leading build/. A clone
+# The runtime set in the repository (2026-10-23: the owner chose Git LFS so the
+# project stays easy to update). The same bytes as the pack, at the same paths minus the leading build/. A clone
 # copies it into its ignored build/ (tools/release/fetch-assets.mjs); every checkout builds into build/ and refreshes
 # this mirror with `stage`, then commits it.
 RUNTIME = ROOT / 'runtime-assets'

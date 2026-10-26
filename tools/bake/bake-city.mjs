@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /*
- * bake-city.mjs: the city bake (2026-10-26, the owner: "add a build step so that when any new geometry is updated, we bake
- * the city so that it's only done once and not in the client at every load", then: "store a pre-processed but not fully
- * baked data that is a tiny fraction"). The client keeps merging the source GLBs into near batches; what the bake stores
+ * bake-city.mjs: the city bake (2026-10-26: the owner asked for a build step that bakes
+ * the city once whenever its geometry changes, and then for stored data that is pre-processed but not fully baked, a
+ * tiny fraction of the full size). The client keeps merging the source GLBs into near batches; what the bake stores
  * is the expensive, small part: each block's distant LOD as a compact vertex subset and index list (src/work/CityBakeLoad.ts).
  *
  * Step 1, capture: the game runs once in headless Chrome on the dev server with `?bake=capture` (src/work/CityBake.ts):

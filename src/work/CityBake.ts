@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
-/** The city bake (2026-10-26, the owner: "add a build step so that when any new geometry is updated, we bake the city so
- * that it's only done once and not in the client at every load").
+/** The city bake (2026-10-26: the owner asked for a build step that
+ * bakes the city once whenever its geometry changes, instead of in every visitor's browser).
  *
  * The city's static geometry used to be assembled in every visitor's browser: source meshes merged into batches, texture
  * atlases drawn, facade and silhouette LODs and per-cell shadow casters built (15-20 s of main thread). tools/bake/

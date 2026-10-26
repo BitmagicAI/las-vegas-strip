@@ -1,7 +1,7 @@
 """Claude's token usage on the Vegas project and its cost at standard Anthropic API prices, from the local Claude Code
-transcripts (~/.claude/projects, subagents and workflow agents included). For the info video's agent scene (2026-10-23,
-the owner: "You should analyze the token usage in Claude side, and then the video could have the combined token usage
-without itemizing, and total estimated cost with API pricing").
+transcripts (~/.claude/projects, subagents and workflow agents included). For the info video's agent scene (2026-10-23:
+the owner asked for Claude's token usage, shown in the video combined with Codex's without itemising, and the total
+estimated cost at API prices).
 
 What counts: every API response of the main Vegas conversation (and its subagents), plus responses in other sessions
 that ran with their working directory inside the project, or whose tool calls name it in sessions that otherwise worked

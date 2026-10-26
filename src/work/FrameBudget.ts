@@ -1,5 +1,5 @@
-/** Main-thread time for loading work, shared by everything that builds the city (2026-10-25, the owner: "load only
- * the minimal assets, then already drop the player in ... this assumes that we don't have constant stalling").
+/** Main-thread time for loading work, shared by everything that builds the city (2026-10-25: the owner
+ * wanted the player dropped in after a minimal load, with no stalls while the rest arrives).
  *
  * Long loops (merging meshes into city batches, the ground index, LOD building) call `await frameBudget.slice()` every
  * few thousand items: it returns at once while the current frame's share is left, and otherwise waits for the next
