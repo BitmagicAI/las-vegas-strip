@@ -6,9 +6,9 @@ import ts from 'typescript';
 // The module uses requestAnimationFrame; give it a deterministic one that the test steps by hand.
 let frames=[];globalThis.requestAnimationFrame=cb=>{frames.push(cb);return frames.length;};
 const stepFrame=async()=>{const run=frames;frames=[];for(const cb of run)cb(performance.now());for(let i=0;i<5;i++)await Promise.resolve();};
-fs.mkdirSync('build',{recursive:true});
-fs.writeFileSync('build/streaming-work-test-module.mjs',ts.transpileModule(fs.readFileSync('src/work/StreamingWork.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
-const {StreamingWork}=await import('../build/streaming-work-test-module.mjs?'+Date.now());
+fs.mkdirSync('.bitmagic/player-tests',{recursive:true});
+fs.writeFileSync('.bitmagic/player-tests/streaming-work-test-module.mjs',ts.transpileModule(fs.readFileSync('src/work/StreamingWork.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
+const {StreamingWork}=await import('../.bitmagic/player-tests/streaming-work-test-module.mjs?'+Date.now());
 console.info=()=>{};
 const make=()=>{const events=[];const work=new StreamingWork({show:(l,n)=>events.push('show:'+n),hide:()=>events.push('hide'),failed:e=>events.push('failed')},b=>events.push('hold:'+b),undefined,()=>events.push('settle'));return {work,events};};
 

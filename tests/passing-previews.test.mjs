@@ -4,9 +4,9 @@ import fs from 'node:fs';
 import ts from 'typescript';
 const manifest=JSON.parse(fs.readFileSync('src/work/vegas-visibility.json','utf8'));
 const source=fs.readFileSync('src/work/BuildingVisibility.ts','utf8').replace("import manifest from './vegas-visibility.json';",`const manifest=${JSON.stringify(manifest)};`);
-fs.mkdirSync('build',{recursive:true});
-fs.writeFileSync('build/passing-previews-test-module.mjs',ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
-const {visibilityState,BuildingVisibility}=await import('../build/passing-previews-test-module.mjs?'+Date.now());
+fs.mkdirSync('.bitmagic/player-tests',{recursive:true});
+fs.writeFileSync('.bitmagic/player-tests/passing-previews-test-module.mjs',ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
+const {visibilityState,BuildingVisibility}=await import('../.bitmagic/player-tests/passing-previews-test-module.mjs?'+Date.now());
 const closed=()=> 'closed';
 // Every exterior entrance that has an arrival suite: standing 12 m in front of it, outdoors.
 const entrances=manifest.portals.filter(p=>p.exterior&&p.arrivals.length>0);

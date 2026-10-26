@@ -7,10 +7,10 @@ import path from 'node:path';
 import ts from 'typescript';
 import * as THREE from 'three';
 
-fs.mkdirSync('build',{recursive:true});
+fs.mkdirSync('.bitmagic/player-tests',{recursive:true});
 const source=fs.readFileSync('src/work/SiteLights.ts','utf8');
-fs.writeFileSync('build/site-lights-test-module.mjs',ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
-const {SiteLights}=await import('../build/site-lights-test-module.mjs?'+Date.now());
+fs.writeFileSync('.bitmagic/player-tests/site-lights-test-module.mjs',ts.transpileModule(source,{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
+const {SiteLights}=await import('../.bitmagic/player-tests/site-lights-test-module.mjs?'+Date.now());
 
 const site=(x,z,intensity=100,color=0xffffff,distance=18)=>({x,y:2,z,color,intensity,distance});
 const lightIds=scene=>{const ids=[];scene.traverseVisible(o=>{if(o.isLight)ids.push(o.id);});return ids.sort((a,b)=>a-b);};

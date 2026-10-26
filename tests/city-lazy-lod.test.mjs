@@ -4,13 +4,11 @@
 // exactly the casting parts' triangles; a block left far behind drops its near level and can fill it again.
 // Run: node --import ./tools/ts-register.mjs tests/city-lazy-lod.test.mjs
 import assert from 'node:assert/strict';
-import path from 'node:path';
-import { pathToFileURL } from 'node:url';
 import * as THREE from 'three';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { CityLod, setCityNearDetail } from '../src/work/CityLod.ts';
 import { LodBake, useCityLodBake, sampleHash } from '../src/work/CityBakeLoad.ts';
-const { MeshoptEncoder } = await import(pathToFileURL(path.resolve('tools/optimize/bm-tools/gltf/node_modules/meshoptimizer/meshopt_encoder.js')).href);
+import { MeshoptEncoder } from 'meshoptimizer';
 await MeshoptDecoder.ready; await MeshoptEncoder.ready;
 
 /** A small city block: two boxes (one casting), a quantized plane (Int16 positions, Int8 normals, as meshopt GLBs). */

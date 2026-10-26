@@ -8,14 +8,20 @@ import fs from 'node:fs';
 import ts from 'typescript';
 import { encodeCollision } from '../tools/optimize/pack-data.mjs';
 
-fs.mkdirSync('build', { recursive: true });
-fs.writeFileSync('build/runtime-assets-test-stub.mjs', 'export const runtimeUrl=(u)=>u;export const runtimeOnCdn=false;\n');
+// The JSON sources exist only in a full working checkout; a clone has the packed .bin files alone.
+if (!fs.existsSync('build/geographic-strip/city-colliders.json')) {
+  console.log('pack-data: skipped (it compares the .bin files with the JSON sources in build/, which only a full working checkout has)');
+  process.exit(0);
+}
+// generated modules go to .bitmagic/, never build/ (the publish fingerprint covers build/)
+fs.mkdirSync('.bitmagic/player-tests', { recursive: true });
+fs.writeFileSync('.bitmagic/player-tests/runtime-assets-test-stub.mjs', 'export const runtimeUrl=(u)=>u;export const runtimeOnCdn=false;\n');
 const transpile = (from, to) => fs.writeFileSync(to, ts.transpileModule(fs.readFileSync(from, 'utf8'), { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ES2022 } }).outputText
   .replace("'./RuntimeAssets.js'", "'./runtime-assets-test-stub.mjs'"));
-transpile('src/work/CollisionPack.ts', 'build/collision-pack-test-module.mjs');
-transpile('src/work/Plants.ts', 'build/plants-test-module.mjs');
-const { CollisionPack } = await import('../build/collision-pack-test-module.mjs?' + Date.now());
-const { PlantList } = await import('../build/plants-test-module.mjs?' + Date.now());
+transpile('src/work/CollisionPack.ts', '.bitmagic/player-tests/collision-pack-test-module.mjs');
+transpile('src/work/Plants.ts', '.bitmagic/player-tests/plants-test-module.mjs');
+const { CollisionPack } = await import('../.bitmagic/player-tests/collision-pack-test-module.mjs?' + Date.now());
+const { PlantList } = await import('../.bitmagic/player-tests/plants-test-module.mjs?' + Date.now());
 void PlantList;
 
 const bin = (f) => { const b = fs.readFileSync(f); return b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength); };
@@ -98,7 +104,7 @@ console.log(`collision packs match their JSON: ${meshes} meshes, ${dropped} coll
 // the Bellagio planting
 {
   const json = JSON.parse(fs.readFileSync('public/foliage/bellagio-placements.json', 'utf8'));
-  const { loadPlants } = await import('../build/plants-test-module.mjs?' + Date.now());
+  const { loadPlants } = await import('../.bitmagic/player-tests/plants-test-module.mjs?' + Date.now());
   const buffer = bin('public/foliage/bellagio-placements.bin');
   globalThis.fetch = async () => ({ ok: true, arrayBuffer: async () => buffer });
   const { trees, grass } = await loadPlants('x');
@@ -119,8 +125,8 @@ console.log(`collision packs match their JSON: ${meshes} meshes, ${dropped} coll
 
 // the jeep's speed map: the baked map gives the targets the JSON-built assist (as of 2026-10-24) gave
 {
-  transpile('src/work/SpeedMapFile.ts', 'build/speed-map-file-test-module.mjs');
-  const { loadSpeedMap } = await import('../build/speed-map-file-test-module.mjs?' + Date.now());
+  transpile('src/work/SpeedMapFile.ts', '.bitmagic/player-tests/speed-map-file-test-module.mjs');
+  const { loadSpeedMap } = await import('../.bitmagic/player-tests/speed-map-file-test-module.mjs?' + Date.now());
   const { DrivingSpeedAssist, roadSpeedTarget } = await import('../src/work/DrivingSpeedAssist.ts');
   const buffer = bin('build/geographic-strip/speed-map.bin');
   globalThis.fetch = async () => ({ ok: true, arrayBuffer: async () => buffer });
@@ -162,8 +168,8 @@ console.log(`collision packs match their JSON: ${meshes} meshes, ${dropped} coll
 
 // metadata records: every record file decodes to its JSON, numbers within their grid (1 mm, 1e-4) or f32 rounding
 {
-  transpile('src/work/PackedRecords.ts', 'build/packed-records-test-module.mjs');
-  const { decodeRecords } = await import('../build/packed-records-test-module.mjs?' + Date.now());
+  transpile('src/work/PackedRecords.ts', '.bitmagic/player-tests/packed-records-test-module.mjs');
+  const { decodeRecords } = await import('../.bitmagic/player-tests/packed-records-test-module.mjs?' + Date.now());
   const PREC = { p: 1e-3, position: 1e-3, points: 1e-3, center: 1e-3, eye: 1e-3, target: 1e-3, origin: 1e-3, bounds: 1e-3, accessPoints: 1e-3, seats: 1e-3, lights: 1e-3, vertices: 1e-3, size: 1e-3, s: 1e-3, station: 1e-3, exit: 1e-3, entrance: 1e-3, access: 1e-3, lift: 1e-3, liftButton: 1e-3, right: 1e-4, up: 1e-4, direction: 1e-4, uv: 1e-4 };
   const close = (a, b, key, where) => { const tol = (PREC[key] ?? 0) / 2 + Math.abs(a) * 1.2e-7 + 1e-9; assert.ok(Math.abs(a - b) <= tol, `${where}: ${a} -> ${b}`); };
   const isNum = (x) => typeof x === 'number', numList = (x) => Array.isArray(x) && x.length > 0 && x.every(isNum);

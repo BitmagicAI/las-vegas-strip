@@ -55,13 +55,8 @@ def optimized_files():
 
 
 def runtime_glbs():
-    """Every runtime GLB under build/: the optimizer's list in a full checkout (it walks the loaders); in a clone, the
-    committed list's GLBs, so a contributor's `stage` keeps the set it was given."""
-    files = optimized_files()
-    if files:
-        return [p for p in files if p.startswith('build/')]
-    old = json.loads(OUT_LIST.read_text()) if OUT_LIST.exists() else {'files': []}
-    return [f['path'] for f in old['files'] if f['path'].endswith('.glb')]
+    """Every runtime GLB under build/, as the optimizer lists them (it walks the loaders)."""
+    return [p for p in optimized_files() if p.startswith('build/')]
 
 
 def packed(path):
@@ -70,7 +65,12 @@ def packed(path):
 
 
 def runtime_files():
-    """(path, reason) for every runtime file the loaders ask for, GLBs included."""
+    """(path, reason) for every runtime file the loaders ask for, GLBs included. A clone has the runtime set but not the
+    optimizer's manifest or the JSON sources these rules read, so it keeps the committed list: a contributor's `stage`
+    mirrors the files it was given."""
+    if not optimized_files():
+        old = json.loads(OUT_LIST.read_text()) if OUT_LIST.exists() else {'files': []}
+        return {f['path']: 'the committed list (a clone)' for f in old['files']}
     want = {}
 
     def add(path, why):
@@ -79,7 +79,7 @@ def runtime_files():
     # GLBs: every runtime GLB the optimizer enumerated (tools/optimize/optimize-runtime-glbs.mjs walks the same loaders)
     # (public/ GLBs such as foliage/tree-0.glb are committed and load as their originals in a clone)
     for path in runtime_glbs():
-        add(path, 'runtime GLB (build/optimized/manifest.json, or the committed list in a clone)')
+        add(path, 'runtime GLB (build/optimized/manifest.json)')
     # world.json assets served from build/ (doors in worldProfileData.doors)
     for a in load_json('src/work/world.json').get('assets', []):
         url = (a.get('url') or '').split('?')[0]
@@ -159,9 +159,10 @@ def listing():
     manifest = optimized_files()
     want = runtime_files()
     files, missing = [], []
-    # the city bake must be made from the geometry being shipped
+    # the city bake must be made from the geometry being shipped. Only a full checkout can tell: a clone's build/ holds
+    # the optimized copies at the original paths, so its inputs never hash as the bake's did; it keeps the committed bake
     import subprocess
-    if subprocess.run(['node', 'tools/bake/bake-city.mjs', 'check'], cwd=ROOT, capture_output=True).returncode != 0:
+    if manifest and subprocess.run(['node', 'tools/bake/bake-city.mjs', 'check'], cwd=ROOT, capture_output=True).returncode != 0:
         missing.append(('build/baked/city-lod.bin', 'stale or missing city bake (node tools/bake/bake-city.mjs)'))
         want.pop('build/baked/city-lod.bin', None)
     for path in sorted(want):
@@ -179,13 +180,23 @@ def listing():
 
 def write_list(files):
     old = json.loads(OUT_LIST.read_text()) if OUT_LIST.exists() else {}
-    revision = time.strftime('%Y-%m-%d')
+    # Unchanged bytes keep their recorded kind: a clone has no optimizer manifest, so it would call every optimized
+    # copy "original" although the bytes are the same.
+    before = {f['path']: f for f in old.get('files', [])}
+    for f in files:
+        if before.get(f['path'], {}).get('sha256') == f['sha256']:
+            f['kind'] = before[f['path']]['kind']
+    # The revision (and the snapshot it names) moves only when the set changes; a changed set has no snapshot until
+    # `build` makes one and its upload is recorded in pack.url.
+    unchanged = [(f['path'], f['sha256']) for f in files] == [(f['path'], f['sha256']) for f in old.get('files', [])]
+    revision = old['revision'] if unchanged and old.get('revision') else time.strftime('%Y-%m-%d')
+    keep = unchanged and old.get('pack', {}).get('name') == f'las-vegas-strip-assets-{revision}.tar.gz'
     doc = {
         'about': 'Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; '
                  'fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.',
         'revision': revision,
-        'pack': {'name': f'las-vegas-strip-assets-{revision}.tar.gz', 'url': old.get('pack', {}).get('url', ''),
-                 'bytes': old.get('pack', {}).get('bytes', 0), 'sha256': old.get('pack', {}).get('sha256', '')},
+        'pack': {'name': f'las-vegas-strip-assets-{revision}.tar.gz', 'url': old['pack']['url'] if keep else '',
+                 'bytes': old['pack']['bytes'] if keep else 0, 'sha256': old['pack']['sha256'] if keep else ''},
         'count': len(files),
         'bytes': sum(f['bytes'] for f in files),
         'files': [{k: f[k] for k in ('path', 'bytes', 'sha256', 'kind')} for f in files],

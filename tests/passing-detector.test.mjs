@@ -2,9 +2,9 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import ts from 'typescript';
-fs.mkdirSync('build',{recursive:true});
-fs.writeFileSync('build/passing-detector-test-module.mjs',ts.transpileModule(fs.readFileSync('src/work/PassingDetector.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
-const {PassingDetector}=await import('../build/passing-detector-test-module.mjs?'+Date.now());
+fs.mkdirSync('.bitmagic/player-tests',{recursive:true});
+fs.writeFileSync('.bitmagic/player-tests/passing-detector-test-module.mjs',ts.transpileModule(fs.readFileSync('src/work/PassingDetector.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
+const {PassingDetector}=await import('../.bitmagic/player-tests/passing-detector-test-module.mjs?'+Date.now());
 
 /** Move at `speed` m/s along +z for `seconds` at 60 fps from (x0,z0,t0); returns the final state. */
 function run(det,{z0=0,t0=0,speed,seconds,driving}){let z=z0,t=t0,passing=det.passing;for(let i=0;i<Math.round(seconds*60);i++){t+=1000/60;z+=speed/60;passing=det.update(0,z,t,driving);}return {z,t,passing};}

@@ -6,11 +6,11 @@ import fs from 'node:fs';
 import ts from 'typescript';
 import * as THREE from 'three';
 
-fs.mkdirSync('build',{recursive:true});
+fs.mkdirSync('.bitmagic/player-tests',{recursive:true});
 const transpile=(from,to)=>fs.writeFileSync(to,ts.transpileModule(fs.readFileSync(from,'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText);
-transpile('src/work/FrameBudget.ts','build/FrameBudget.js');
-transpile('src/work/GroundSurfaceIndex.ts','build/ground-surface-index-test-module.mjs');
-const {GroundSurfaceIndex}=await import('../build/ground-surface-index-test-module.mjs?'+Date.now());
+transpile('src/work/FrameBudget.ts','.bitmagic/player-tests/FrameBudget.js');
+transpile('src/work/GroundSurfaceIndex.ts','.bitmagic/player-tests/ground-surface-index-test-module.mjs');
+const {GroundSurfaceIndex}=await import('../.bitmagic/player-tests/ground-surface-index-test-module.mjs?'+Date.now());
 
 // The straightforward version (as of 2026-10-23), per mesh: walkable triangles, then a comparator-sorted CSR table.
 const CELL=4,MAX=64,cellKey=(x,y,z)=>((x+16384)*32768+(y+16384))*32768+(z+16384);
