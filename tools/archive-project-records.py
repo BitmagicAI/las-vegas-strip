@@ -1,4 +1,7 @@
-"""Preserve local research and review evidence in a Git-visible project archive.
+"""Preserve local research and review evidence in the project's local archive.
+
+docs/project-records/archive/ and its index (archive/reference-index.json) are ignored by git: research media and
+the owner's material stay on the maintainer's machine.
 
 No network, credentials, session transcripts, game binaries or source mutations.
 Original paths and hashes make the copies traceable. Existing archived files are
@@ -34,7 +37,7 @@ def selected(p):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     entries=[]
-    old_index=OUT/'reference-index.json'
+    old_index=OUT/'archive'/'reference-index.json'
     if old_index.exists():
         old_digest=hashlib.sha256(old_index.read_bytes()).hexdigest()[:12]
         history=OUT/'index-history';history.mkdir(exist_ok=True)
@@ -54,7 +57,8 @@ def main():
     registers=[str(p.relative_to(ROOT)) for p in sorted((ROOT/'tools').rglob('*'))
                if p.is_file() and p.suffix in EXT|{'.py'}
                and ('reference' in p.name.lower() or 'resort-blocks' in p.parts)]
-    (OUT/'reference-index.json').write_text(json.dumps(dict(
+    (OUT/'archive').mkdir(exist_ok=True)
+    (OUT/'archive'/'reference-index.json').write_text(json.dumps(dict(
         version=1,sourceRegisters=registers,files=entries),indent=2)+'\n')
     print(f'Archived {len(entries)} reference/evidence files ({sum(v["bytes"] for v in entries)/1e6:.1f} MB).')
 

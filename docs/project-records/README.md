@@ -13,10 +13,6 @@ the ignored `build/` directory so Git can include it.
 - [Idle frame rate](idle-performance-2026-10-07/README.md): foliage at 5 fps and 20-40 fps standing still (full GCs on a ~9.6 GB process): causes, the fixes (60 fps, no full GCs, 1.4 GB), rejected approaches, optimized GLBs, probe tools.
 - [Streaming stalls](streaming-stalls-2026-10-06/README.md): the long pauses when driving near buildings: cause, measurements, fix, probe tools, what remains.
 - [Open work](open-work.md): remaining implementation and refinement work.
-- [Reference index](reference-index.json): original paths, durable archive paths,
-  sizes and SHA-256 hashes, plus links to source registers.
-- [User reference images](user-references/index.json): all 29 supplied attachments preserved.
-- `archive/`: preserved research manifests, reference media and review evidence.
 - [Resort queue](../../tools/resort-blocks/queue.json) and per-resort JSON files:
   authoritative component, level, route, source and verification inventories.
 - [Production workflow](../../tools/resort-blocks/README.md).

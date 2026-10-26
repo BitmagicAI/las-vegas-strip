@@ -113,8 +113,6 @@ integration evidence. The oversized U-shaped bridge enclosure has been removed,
 and its eastern descent now runs to the Strip-side lower landing, with a clear
 lower exit. Existing upper gallery doors remain interactive.
 
-Runtime footage, exported-mesh renders, warm frame samples and final CLI results
-are preserved under `docs/project-records/archive/build/resort-blocks/bellagio/`.
 Cold-load and memory acceptance are still open. Offline neutral-daylight renders
 are labeled separately from actual game captures.
 

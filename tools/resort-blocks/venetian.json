@@ -224,6 +224,15 @@
       "kind": "official-resort-page",
       "title": "Official gondola ride locations",
       "accessed": "2026-10-09"
+    },
+    {
+      "id": "commons-interior-photos",
+      "title": "Wikimedia Commons photographs of the Venetian's interiors",
+      "url": "https://commons.wikimedia.org/wiki/Category:The_Grand_Canal_Shoppes",
+      "kind": "photo-reference",
+      "accessed": "2026-10-23",
+      "imageDate": null,
+      "note": "Openly licensed photographs (Category:The Grand Canal Shoppes and the lobby and Great Hall photographs listed in the interiors record), viewed for reference only; none redistributed."
     }
   ],
   "levels": [
@@ -288,6 +297,24 @@
       "features": "Estimated raised central deck, sloped to inherited .24m street and entrance datum; support and clearance checked, not surveyed elevation.",
       "sources": [
         "reference-palace-plaza-close"
+      ]
+    },
+    {
+      "id": "casino",
+      "label": "Level 1 casino and Restaurant Row",
+      "elevationM": null,
+      "features": "Streamed venue venetianCasino, laid out from the official resort map inside the podium.",
+      "sources": [
+        "official-resort-map"
+      ]
+    },
+    {
+      "id": "shoppes",
+      "label": "Level 2 Grand Canal Shoppes",
+      "elevationM": null,
+      "features": "Streamed venue grandCanal; the canal follows the official map, registered to the world.",
+      "sources": [
+        "official-resort-map"
       ]
     }
   ],
@@ -436,7 +463,7 @@
         "official-resort-map",
         "commons-interior-photos"
       ],
-      "scope": "Rebuilt 2026-10-23 to the official resort map at full detail (the owner: 'What happened? This looks exactly like before, very low detail, blocky.'). Three streamed venues: the lobby (venetian interior: Great Hall with oval fresco and tumbling-block floor, Scenic Overlook, Rialto gallery and landing, arrivals, vaulted colonnade, rotunda with the Armillary Sphere, front desk), venetianCasino (coffered gilt casino, 506 slots, table pits, cage, bar, high-limit salon, escalators to St Mark's, Restaurant Row) and grandCanal (Level 2: canal to a loop round an island, six bridges, St Mark's Square arcades, archway house, terrace passage). Route walks pass; in-game captures and the interior performance probe pending. Not built: the Waterfall Atrium (inside the Palazzo's footprint).",
+      "scope": "Rebuilt 2026-10-23 to the official resort map at full detail (the earlier interior had looked low in detail and blocky to the owner). Three streamed venues: the lobby (venetian interior: Great Hall with oval fresco and tumbling-block floor, Scenic Overlook, Rialto gallery and landing, arrivals, vaulted colonnade, rotunda with the Armillary Sphere, front desk), venetianCasino (coffered gilt casino, 506 slots, table pits, cage, bar, high-limit salon, escalators to St Mark's, Restaurant Row) and grandCanal (Level 2: canal to a loop round an island, six bridges, St Mark's Square arcades, archway house, terrace passage). Route walks pass; in-game captures and the interior performance probe pending. Not built: the Waterfall Atrium (inside the Palazzo's footprint).",
       "record": "docs/project-records/venetian-interiors-2026-10-23/README.md"
     }
   ],
