@@ -707,16 +707,6 @@
   },
   "assets": [
     {
-      "id": "img-cover_art-1790468977872",
-      "name": "cover_art",
-      "url": "https://forged-assets.bitmagic.ai/images/e5c92038-a9e1-46b3-bbbb-9bb7be08a7e5/image.webp",
-      "screenshotUrl": "https://forged-assets.bitmagic.ai/images/e5c92038-a9e1-46b3-bbbb-9bb7be08a7e5/image.webp",
-      "type": "image",
-      "source": "generated",
-      "prompt": "Low-poly art: flat-shaded polygon meshes with clean facets and hard edges, simple colour blocking, no visible cubes, no voxels.\nA low-poly game scene based on this game design:\n# Vegas: Afterlight\nA desktop-first zombie survival game in a ruined central Las Vegas Strip. First delivery is a walkable Blender environment and mission/horde staging layout; Hero (WebHuman) characters will be supplied by the creator.\n\n## Art direction\nRealistic architectural proportions and grounded material treatment, aspirational AAA / UE5 cinematic fidelity. NOT a cartoon or voxel world. The Bitmagic `low-poly` switch enables mesh rendering; it does not describe the requested aesthetic. Weathered cream limestone, bronze lattice, soot, distressed asphalt, dusty glass, abandoned neon and desert sunset haze. Warm sunset outlines the Bellagio massing, Paris Eiffel landmark, Caesars frontage and Flamingo signage. Wet patches and cyan sanctuary energy contrast with amber skies. This is a compressed, recognizable adaptation of the central Strip, not a surveyed replica of resort interiors. Prioritize visuals; defer FPS gates and mobile optimization.\n\n## First environment\nAn approximately 440 x 600 metre district. X east, Z north. Sanctuary on the former Bellagio forecourt, west of the boulevard. Boulevard runs north/south. Flamingo Road crosses the northern portion. Paris lies east/southeast, Caesars northwest, Flamingo northeast. Buildings form an enclosing skyline and playable alleys lead to recessed supply depots.\n\n## Survival loop\nLeave the shield to collect food, medicine, weapons and ammunition. Return to bank supplies. A transparent energy hemisphere conceals player sigh\n\nDepict the world and atmosphere as a single illustrated scene. Low-poly art with flat-shaded facets and hard edges on every object, no cubes, no voxels, rendered as a highly polished 3D scene with the craft of a Pixar-quality animated film, cinematic lighting that fits the scene, soft ambient occlusion, rich detail and expressive composition. Wordless illustration, no text, no title, no words, no letters, no logos, no UI.",
-      "size": 180550
-    },
-    {
       "id": "level-vegas",
       "name": "vegas",
       "url": "https://bitmagic.ai/worlds/v3/ZWLJZE4P1VA6/1790534811542-vegas.glb",

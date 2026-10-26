@@ -3,7 +3,7 @@ import bpy,json,math,hashlib,sys
 import numpy as np
 from pathlib import Path
 OUT=Path('build/strip-landmarks');materials={}
-colors={'white':'e8e7de','ivory':'e4dac7','stone':'bfb5a3','sandstone':'bbaa90','marble':'e2ded3','plaster':'ddd9d0','panel':'877467','roof':'8b8580','silver':'afb8bd','steel':'52616a','brass':'b99a56','bronze':'94704c','gold':'cfb060','blackiron':'242a2a','charcoal':'22292b','blue':'17619c','blue2':'4a91af','blue3':'9cbbc9','red':'bb3c44','warm':'fff2d2','screen':'1595ac','glass':'adc4cb','shopglass':'b0cbd0','cabinglass':'8faebc','darkglass':'293e47','water':'398f90','velvet':'777066','walnut':'614a39','grout':'b2afa6','foliage':'395942','bark':'77614a','vortex0':'937797','vortex1':'75638f','vortex2':'6989ab','ledblue':'356daa','cloudskin':'ddd9cc','pinkstone':'bb9d93','brick':'9a6650','bricklight':'b07c60','copper':'719588','copperpanel':'9e624d','copper2':'a7755c','copper3':'92593e','concrete':'8e8c89','magenta':'db146e','ice':'d6e6e6','fresco':'adb9c1','tile':'d5cec1','letter':'f5eedc','carpet':'31343f','floralcarpet':'43373b','skyglass':'c9d8df'}
+colors={'white':'e8e7de','ivory':'e4dac7','stone':'bfb5a3','sandstone':'bbaa90','marble':'e2ded3','plaster':'ddd9d0','panel':'877467','roof':'8b8580','silver':'afb8bd','steel':'52616a','brass':'b99a56','bronze':'94704c','gold':'cfb060','blackiron':'242a2a','charcoal':'22292b','blue':'17619c','blue2':'4a91af','blue3':'9cbbc9','red':'bb3c44','warm':'fff2d2','screen':'1595ac','glass':'adc4cb','shopglass':'b0cbd0','cabinglass':'8faebc','darkglass':'293e47','water':'398f90','velvet':'777066','walnut':'614a39','grout':'b2afa6','foliage':'395942','bark':'77614a','vortex0':'937797','vortex1':'75638f','vortex2':'6989ab','ledblue':'356daa','cloudskin':'ddd9cc','pinkstone':'bb9d93','brick':'9a6650','bricklight':'b07c60','copper':'719588','copperpanel':'9e624d','copper2':'a7755c','copper3':'92593e','concrete':'8e8c89','magenta':'db146e','ice':'d6e6e6','tile':'d5cec1','letter':'f5eedc','carpet':'31343f','floralcarpet':'43373b','skyglass':'c9d8df'}
 colors.update({'cv-service-asphalt':'424345','cv-concrete-paint':'b7b1a4'})
 colors.update({'fg-path':'b4a28c','fg-soil-paint':'475d36','fg-floor':'b5aa96','fg-pond_water':'457b76','fg-basin-paint':'33473e','fg-stone':'8f8b77','fg-roof-paint':'c7c5b8','fg-white-stucco':'d9d7c7','fg-coping-paint':'b9bcae','fg-glass':'344648','fg-frame-paint':'77756b','fg-tan-stucco':'b4a389','fg-green-roof-paint':'405b4c','fg-wood-paint':'574e3d','fg-equipment-paint':'b4b7ac','fg-dark-paint':'343c38'})
 colors.update({'pl-dark-stucco':'535856'})
@@ -86,7 +86,7 @@ colors.update({'as-yellow':'dfbb53','as-orange':'d79743','as-black':'111923','as
 colors.update({'fl-stucco':'c6c4bc','fl-panel-joint':'aaa89e','fl-shop-glass':'687f87','fl-shop-frame':'242b2d','fl-membrane-paint':'c8c9c5','fl-service-paint':'a6aaa5','fl-petal-pink':'cd578c','fl-petal-cream':'e6ddcb','fl-petal-gold':'c3ae76','fl-patio-paving':'b8aea0','fl-table-wood':'85614c','fl-chair-fabric':'b96e53','fl-sign-dark':'41344a','luxor-membrane-paint':'cacbc5','luxor-service-paint':'a8aaa6','luxor-shadow':'655f54','luxor-sculpt-stone':'d8ceaf','luxor-sculpt-blue':'91b6bd','luxor-sculpt-gold':'c5b57d','luxor-sculpt-shadow':'897e66'})
 # The Venetian's public interiors (2026-10-23): every 'vi-*' material, its textures and UVs (venetian_materials.py)
 sys.path.insert(0,'tools/strip-landmarks');import venetian_materials as VM;colors.update(VM.COLORS)
-patterns={'marble','stone','sandstone','brick','bricklight','copperpanel','copper2','copper3','walnut','velvet','panel','tile','fresco','roof','carpet','floralcarpet','botanical','nautical','parkcarpet','palazzocarpet','ticarpet','harrahscarpet','amethyst','shipwood','rootwood'}
+patterns={'marble','stone','sandstone','brick','bricklight','copperpanel','copper2','copper3','walnut','velvet','panel','tile','roof','carpet','floralcarpet','botanical','nautical','parkcarpet','palazzocarpet','ticarpet','harrahscarpet','amethyst','shipwood','rootwood'}
 colors.update({'blvd-painted-metal':'40494b','blvd-green-paint':'648b32','blvd-copper':'b65d32','forum-flat-roof':'c3c3bd','forum-skylight':'355571','forum-limestone':'d6caba','forum-plinth':'b9ab95','forum-panel':'c5b7a2','forum-roof':'c3c3bd','forum-roof-trim':'a9aaa5','forum-service':'b0b5b2','forum-shadow':'4b4c46','forum-glass':'344c54','forum-bronze':'807664','forum-relief':'b7a384','forum-joint':'a79983'})
 colors.update({'stadium-concrete':'b6b3aa','stadium-steel':'6a7070','stadium-arch-paint':'deded6','stadium-shoring-paint':'367368','stadium-hoarding':'435b55','stadium-soil':'a6957c'})
 colors.update({'wy-red-fabric':'8f2636','wy-theater-roof-paint':'8c7f68','wy-theater-center-paint':'b9ac90','wy-theater-wall-paint':'9d9075','wy-equipment-paint':'a9aaa1'})
@@ -410,9 +410,7 @@ def material(k):
   tex=m.node_tree.nodes.new('ShaderNodeTexImage');tex.image=im
   m.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color']);m.node_tree.links.new(tex.outputs['Color'],bs.inputs['Emission Color'])
   bs.inputs['Emission Strength'].default_value=.9;bs.inputs['Roughness'].default_value=1
- if k=='fresco':
-  im=bpy.data.images.load(str((OUT/'textures/venetian-ceiling-fresco.png').resolve()));im.pack();tex=m.node_tree.nodes.new('ShaderNodeTexImage');tex.image=im;tex.extension='EXTEND';m.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color']);bs.inputs['Roughness'].default_value=.86
- if k in patterns and k!='fresco':
+ if k in patterns:
   n=512;v,u=np.mgrid[0:n,0:n]/n;rng=np.random.default_rng(13);noise=rng.random((n,n))-.5;variation=.035*noise
   if k in ['marble','stone','tile','sandstone']:
    wave=np.sin(u*17+np.sin(v*9)*1.8+np.sin(u*5+v*3)*3+np.sin(v*40)*.12);variation-=np.exp(-abs(wave)*20)*(.13 if k=='marble' else .025)
@@ -435,7 +433,6 @@ def material(k):
   if k in ['botanical','nautical']:
    variation=.13*np.sin(u*17+np.sin(v*12))*np.cos(v*23)+.09*np.sin(v*8+u*6)
   if k in ['rootwood','shipwood']:variation+=.012*np.sin(u*60+np.sin(v*18))
-  if k=='fresco':variation=.15*np.sin(u*7)*np.cos(v*12)+.1*np.sin(u*19+v*7);rgb=np.array([.71,.73,.66])
   pix=np.ones((n,n,4),dtype=np.float32);pix[:,:,:3]=np.clip(rgb+variation[:,:,None],0,1)
   im=bpy.data.images.new('Original '+k,width=n,height=n);im.pixels.foreach_set(pix.flatten());im.pack();tex=m.node_tree.nodes.new('ShaderNodeTexImage');tex.image=im;m.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
  materials[k]=m;return m
@@ -456,8 +453,6 @@ def add(name):
   if g['material'].startswith('vi-'):VM.uvs(me,g['material'])
   if g['material'] in patterns or g['material'] in ['bcr-tile-paint','bcr-curved-tile-paint','lob-glyph-paint','mm-display-paint','wm-led-paint','ccourt-fascia-paint','ccourt-column-color-paint','bhs-roof-metal-paint','sky','ph-led-cylinder','luxor-pyramid','rw-led','bhc-roof-paint','oo-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint','ms-white-brick-paint','mk-peeling-white-paint','cu-board0','cu-board1','cu-board2']:
    uv=me.uv_layers.new(name='Metres')
-   if g['material']=='fresco':
-    zone=next(v for v in json.loads((OUT/'venues.json').read_text()) if v['key']=='venetian')['zones'][0];ox,_,oz=zone['origin'];co,si=math.cos(zone['yaw']),math.sin(zone['yaw'])
    for poly in me.polygons:
     axis=max(range(3),key=lambda i:abs(poly.normal[i]))
     for li in poly.loop_indices:
@@ -481,8 +476,6 @@ def add(name):
       uu=math.cos(-.0244)*(p.x+.252)-math.sin(-.0244)*(-p.y+427.01);uv.data[li].uv=(uu/22+.5,p.z/60)
      elif g['material']=='wm-led-paint':
       uu=math.cos(-.14)*(p.x-432.387)-math.sin(-.14)*(-p.y+1164.56);uv.data[li].uv=(uu/15.24+.5,(p.z-10.668)/30.48)
-     elif g['material']=='fresco':
-      dx,dz=p.x-ox,-p.y-oz;xx,zz=co*dx-si*dz,si*dx+co*dz;panel=round((zz-5)/9);uv.data[li].uv=(xx/17+.5,(zz-5-panel*9)/7.5+.5)
      else:uv.data[li].uv=(p.y/2,p.z/2) if axis==0 else (p.x/2,p.z/2) if axis==1 else (p.x/2,p.y/2)
  for t in data['labels']:
   cu=bpy.data.curves.new(t['text'],'FONT');cu.body=t['text'];cu.align_x='CENTER';cu.size=t['size'];cu.extrude=.008;cu.bevel_depth=.002;cu.bevel_resolution=1;cu.materials.append(material(t['material']));o=bpy.data.objects.new(t['text'],cu);bpy.context.collection.objects.link(o);x,y,z=t['position'];o.location=(x,-z,y);o.rotation_euler=(math.pi/2,0,-t['yaw']+math.pi);o['property']=name.split('-')[0];o['source']=t['source'];o['detail']=t.get('detail',1)

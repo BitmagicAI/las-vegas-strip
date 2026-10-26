@@ -22,7 +22,7 @@ def mat(n,c,metal=0,rough=.5,glow=0,texture=None):
  return n
 for n,c,metal,rough,glow in [
  ('ivory',(.76,.70,.58),0,.55,0),('white',(.88,.87,.80),0,.42,0),('champagne',(.70,.56,.32),.65,.3,0),('gold',(.65,.42,.13),.72,.30,0),('black',(.025,.03,.034),.1,.27,0),('darkwood',(.095,.046,.025),0,.4,0),('walnut',(.26,.12,.055),0,.43,0),('warmwood',(.47,.27,.13),0,.4,0),('silver',(.56,.63,.64),.78,.26,0),('glass',(.16,.29,.34),.48,.22,0),('greeniron',(.07,.19,.16),.52,.38,0),('sageglass',(.40,.57,.51),.32,.28,0),('plum',(.16,.025,.13),.05,.45,0),('red',(.44,.025,.045),.05,.4,0),('blue',(.025,.045,.13),.05,.5,0),('pink',(.9,.035,.30),.1,.3,.65),('violet',(.35,.045,.7),.1,.3,.6),('cyan',(.025,.40,.75),.08,.35,.55),('warm',(.95,.80,.49),.05,.3,1.4),('crystal',(.84,.86,.96),.35,.22,.42),('leaf',(.065,.20,.085),0,.85,0),('lime',(.43,.53,.12),0,.65,0),('rose',(.70,.13,.31),0,.6,0)]:mat(n,c,metal,rough,glow)
-for prop in ['bellagio','paris','caesars','cosmopolitan','flamingo','horseshoe','planet-hollywood','aria']:mat(prop+'carpet',(1,1,1),rough=.95,texture=prop+'-carpet.png')
+for prop in ['bellagio','paris','caesars','flamingo','horseshoe','planet-hollywood','aria']:mat(prop+'carpet',(1,1,1),rough=.95,texture=prop+'-carpet.png')
 mat('sky',(1,1,1),rough=1,texture='paris-sky.png')
 def material(n):return n if n.startswith('pr_') else 'pr_'+n
 def tr(p,o=(0,0,0),a=0):
@@ -156,7 +156,7 @@ for o in list(bpy.context.scene.objects):
  if n.startswith('citycenter / waldorf / interior /') and any(n.endswith('/ '+k) for k in ['wood','marble','black']):kill=True
  if kill:removed.append(o.name);bpy.data.objects.remove(o,do_unlink=True);continue
  if not info:continue
- key=next((k for k in ['bellagio','paris','caesars','cosmopolitan','flamingo','horseshoe','planet hollywood','aria'] if k in n),None)
+ key=next((k for k in ['bellagio','paris','caesars','flamingo','horseshoe','planet hollywood','aria'] if k in n),None)
  if key and ('carpet' in n or any(m and ('carpet' in m.name) for m in o.data.materials)):
   target='pr_'+key.replace(' ','-')+'carpet';old={i for i,m in enumerate(o.data.materials) if m and ('carpet' in n or 'carpet' in m.name)}
   recolor(o,lambda f: f.material_index in old and all((o.matrix_world@o.data.vertices[i].co).z<.22 for i in f.vertices),target);uv_world(o)

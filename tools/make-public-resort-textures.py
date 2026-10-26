@@ -7,7 +7,6 @@ palettes={
  'bellagio':('#251714',['#af884c','#6e4930','#b7a272']),
  'paris':('#233344',['#8f8974','#a38351','#56788c']),
  'caesars':('#322624',['#bbaa82','#746b5b','#897453']),
- 'cosmopolitan':('#201b2b',['#695775','#a59387','#494357']),
  'flamingo':('#3a253d',['#ba5487','#977499','#5b475f','#ba9a64']),
  'horseshoe':('#322923',['#ae9470','#d2be96','#6d5041']),
  'planet-hollywood':('#262536',['#756675','#a15c62','#bd9169','#505573']),
@@ -16,7 +15,7 @@ palettes={
 for key,(bg,colors) in palettes.items():
  if '--sky-only' in sys.argv:continue
  im=Image.new('RGB',(1024,1024),bg);d=ImageDraw.Draw(im);rng=random.Random(key)
- if key in ['horseshoe','aria','cosmopolitan','caesars']:
+ if key in ['horseshoe','aria','caesars']:
   for i in range(26):
    x=rng.randrange(1024);y=rng.randrange(1024);rx=rng.randrange(55,210);ry=rng.randrange(45,175)
    for dx in [-1024,0,1024]:

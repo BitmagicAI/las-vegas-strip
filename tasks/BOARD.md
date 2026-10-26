@@ -12,7 +12,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 |---|---|---|---|---|
 | `rel-engine-current` | M | P1 | 3 | Move to the currently published engine (done: 3.1337) |
 | `rel-split-game-layer` | L | P1 | 3 | Finish separating the zombie game from the city |
-| `rel-texture-provenance` | M | P1 | 3 | Record where every packed texture came from |
+| `rel-texture-provenance` | M | P1 | 2 | Record where every packed texture came from |
 
 ## Tooling
 

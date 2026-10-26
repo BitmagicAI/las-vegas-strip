@@ -68,8 +68,6 @@ in `docs/project-records/` still mention home-folder paths (about 35 files, harm
 - Textures are drawn by the project's scripts, are CC0 Poly Haven scans, or are originals generated from text prompts
   alone (the Venetian interiors' frescoes, skies, carpet, panels, shop windows and slot screens; prompts in
   `docs/project-records/venetian-interiors-2026-10-23/generated-images.md`).
-- `venetian-ceiling-fresco.png`, the earlier Venetian ceiling with no recorded prompt, has shipped in no model since the
-  2026-10-23 rebuild; `export.py` still names it (task `rel-texture-provenance`).
 - The gomeasure3d Statue of Liberty scan (CC BY 4.0) ships adapted (decimated) as New York-New York's statue, credited in NOTICE.md and on screen.
 
 **Brands.** Signage text names real casinos and tenants. NOTICE.md carries a non-affiliation and trademark notice.
