@@ -93,6 +93,16 @@ const casterTriangles = eagerCasters.reduce((t, c) => t + c.geometry.index.count
 // box a (segments 3 x 2 x 3: 2 x (6 + 9 + 6) quads, 84 triangles) and the 8 x 8 plane (128) cast; box b does not
 assert.equal(casterTriangles, 84 + 128, 'casting parts only');
 lazyLod.select(camera, 1300); assert.equal(lazyHigh.visible, true); assert.equal(lazyLow.visible, false);
+// Every mesh a city surface shader draws reads its surface row through `surfaceRow`, the normal's own buffer: three r185
+// identifies attribute nodes by name, so the row read from 'normal' as vec4 got the lighting's vec3 padded with w = 1,
+// and every surface drew the table's empty last row (published that way on 2026-10-26)
+let rowMeshes = 0;
+for (const root of [eager.s, lazy.s]) root.traverse((o) => {
+  if (!o.isMesh || !String(o.material.customProgramCacheKey?.() ?? '').startsWith('city-surface')) return;
+  rowMeshes++; const row = o.geometry.getAttribute('surfaceRow');
+  assert.ok(row && row === o.geometry.getAttribute('normal'), `${o.name}: surfaceRow is the normal buffer`);
+});
+assert.ok(rowMeshes >= 3, `city surface meshes checked: ${rowMeshes}`);
 
 // 5. Far away for long enough: the near level is dropped, and filled again on return.
 camera.position.set(0, 2, 3000); camera.updateMatrixWorld(true);

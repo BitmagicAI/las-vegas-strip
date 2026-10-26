@@ -1,8 +1,8 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-10-25",
+ "revision": "2026-10-26",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-10-25.tar.gz",
+  "name": "las-vegas-strip-assets-2026-10-26.tar.gz",
   "url": "https://github.com/BitmagicAI/las-vegas-strip/releases/download/assets-2026-10-23/las-vegas-strip-assets-2026-10-23.tar.gz",
   "bytes": 538775889,
   "sha256": "ae2f4105259ddeaca919d1df93a5292507805f194c8ee8d77afbbe6a06ab834d"

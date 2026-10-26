@@ -58,7 +58,9 @@ try {
   }
   if(!logs.some(s=>s.includes('🎮 Starting game...')))throw Error('Game did not start');
   await page.waitForFunction(()=>!!window.__afterlightProbe,null,{timeout:120000});
-  const idle=async(n=6)=>{let quiet=0;const end=Date.now()+90000;while(quiet<n&&Date.now()<end){quiet=(await page.evaluate(()=>window.__afterlightProbe.streaming().busy))?0:quiet+1;await page.waitForTimeout(400);}};
+  // quiet = nothing streaming and every block in range has its full detail (CityLod fills it on approach since 2026-10-26)
+  const busy=()=>page.evaluate(async()=>{if(window.__afterlightProbe.streaming().busy)return true;const lod=await import('/dist/src/work/CityLod.js').catch(()=>null),s=lod?.cityLodStats?.(window.__afterlightProbe.engine().scene);return !!s&&s.lazy>0&&s.nearFilled<s.full;});
+  const idle=async(n=6)=>{let quiet=0;const end=Date.now()+90000;while(quiet<n&&Date.now()<end){quiet=(await busy())?0:quiet+1;await page.waitForTimeout(400);}};
   const settle=async()=>{const end=Date.now()+30000;let last=-1,stable=0;while(Date.now()<end&&stable<4){const n=await page.evaluate(()=>{const R=window.__afterlightProbe.renderer();return (R._pipelines?.caches?.size??0)+(R.info.memory.programs??0);});stable=n===last?stable+1:0;last=n;await page.waitForTimeout(500);}};
   await idle(8);
   const results=[];

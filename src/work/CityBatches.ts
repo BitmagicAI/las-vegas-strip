@@ -18,7 +18,12 @@ import {bakeCapture} from './CityBake.js';
  *   normal    snorm16 ×4   xyz the normal, w the vertex's row of the surface table below (w × 32767, 2026-10-26: the
  *                          row was a float attribute of its own). Four components on purpose: three pads a 3-component
  *                          16-bit attribute itself, which rendered camouflage blotches (the Paris balloon, r185 WebGPU);
- *                          16 bits keep glossy reflections as exact as the float normals did
+ *                          16 bits keep glossy reflections as exact as the float normals did. The shader reads the
+ *                          row through `surfaceRow`, a second name for the same buffer (one GPU buffer, two shader
+ *                          inputs; setNormalRows): three r185 identifies an attribute node by its name, so asking for
+ *                          'normal' as vec4 after the lighting had asked for vec3 returned vec4(normal.xyz, 1.0), and
+ *                          every vertex read row 32767, the table's empty last row (no roughness, metalness, emission,
+ *                          detail or atlas: glossy dark windows; published 2026-10-26, fixed the same day)
  *   uv        float32 ×2   source UVs; tiling repeats need float range (silhouette LODs have none)
  *   color     unorm8  ×4   sRGB-encoded material × vertex colour, decoded per vertex
  * Roughness, metalness, emission, atlas rectangle and wrap modes used to be four
@@ -41,8 +46,12 @@ function surfaceRow(m:THREE.MeshStandardMaterial,map:THREE.Texture|null,rect:rea
 }
 export function citySurfaceRows():number {return tableRows.size;}
 
-const ROW_SCALE=32767;
-const row=int(round(attribute<'vec4'>('normal','vec4').w.mul(ROW_SCALE)));
+const ROW_SCALE=32767,ROW_ATTRIBUTE='surfaceRow';
+const row=int(round(attribute<'vec4'>(ROW_ATTRIBUTE,'vec4').w.mul(ROW_SCALE)));
+/** A batch geometry's normals with the surface row in w, under both names the shaders read (see the layout above). */
+function setNormalRows(geometry:THREE.BufferGeometry,normals:Int16Array):void {
+    const attribute=new THREE.BufferAttribute(normals,4,true);geometry.setAttribute('normal',attribute);geometry.setAttribute(ROW_ATTRIBUTE,attribute);
+}
 const surface=vertexStage(textureLoad(citySurfaceTable,ivec2(0,row),int(0)));
 const emission=vertexStage(textureLoad(citySurfaceTable,ivec2(1,row),int(0)));
 const atlasRect=vertexStage(textureLoad(citySurfaceTable,ivec2(2,row),int(0)));
@@ -239,7 +248,7 @@ export function* fillBatchSteps(plan:BatchPlan):Generator<void,THREE.BufferGeome
         yield;
     }
     const geometry=new THREE.BufferGeometry();
-    geometry.setAttribute('position',new THREE.BufferAttribute(positions,3));geometry.setAttribute('normal',new THREE.BufferAttribute(normals,4,true));
+    geometry.setAttribute('position',new THREE.BufferAttribute(positions,3));setNormalRows(geometry,normals);
     geometry.setAttribute('uv',new THREE.BufferAttribute(uvs,2));geometry.setAttribute('color',new THREE.BufferAttribute(colors,4,true));
     geometry.setIndex(new THREE.BufferAttribute(index,1));geometry.computeBoundingBox();geometry.computeBoundingSphere();
     lowColors.set(geometry,{starts:plan.starts,tint:plan.tint});
@@ -315,7 +324,7 @@ export function subsetFromPlan(plan:BatchPlan,subset:Uint32Array,index:Uint16Arr
         parts[s]=k;
     }
     const g=new THREE.BufferGeometry();
-    g.setAttribute('position',new THREE.BufferAttribute(positions,3));g.setAttribute('normal',new THREE.BufferAttribute(normals,4,true));
+    g.setAttribute('position',new THREE.BufferAttribute(positions,3));setNormalRows(g,normals);
     if(uvs)g.setAttribute('uv',new THREE.BufferAttribute(uvs,2));
     g.setAttribute('color',new THREE.BufferAttribute(colors,4,true));
     g.setIndex(new THREE.BufferAttribute(index,1));g.computeBoundingBox();g.computeBoundingSphere();
@@ -367,7 +376,7 @@ export function* coarseFromBatchSteps(batch:THREE.BufferGeometry,spacing:number|
     g.setIndex(new THREE.BufferAttribute(clusters>65535?out.slice(0,t):Uint16Array.from(out.subarray(0,t)),1));
     g.computeVertexNormals();const fn=g.getAttribute('normal').array as Float32Array,normals=new Int16Array(clusters*4);
     for(let i=0;i<clusters;i++){normals[i*4]=Math.round(fn[i*3]!*ROW_SCALE);normals[i*4+1]=Math.round(fn[i*3+1]!*ROW_SCALE);normals[i*4+2]=Math.round(fn[i*3+2]!*ROW_SCALE);normals[i*4+3]=cr[i]!;}
-    g.setAttribute('normal',new THREE.BufferAttribute(normals,4,true));
+    setNormalRows(g,normals);
     const colors=new Uint8Array(clusters*4);for(let i=0;i<clusters;i++){colors[i*4]=toSrgb8(cc[i*3]!);colors[i*4+1]=toSrgb8(cc[i*3+1]!);colors[i*4+2]=toSrgb8(cc[i*3+2]!);colors[i*4+3]=255;}
     g.setAttribute('color',new THREE.BufferAttribute(colors,4,true));
     g.computeBoundingBox();g.computeBoundingSphere();return g;
@@ -409,7 +418,7 @@ export function bakedLodFromBatch(batch:THREE.BufferGeometry,baked:BakedLod|unde
         colors[i*4+3]=255;
     }
     const g=new THREE.BufferGeometry();
-    g.setAttribute('position',new THREE.BufferAttribute(positions,3));g.setAttribute('normal',new THREE.BufferAttribute(normals,4,true));
+    g.setAttribute('position',new THREE.BufferAttribute(positions,3));setNormalRows(g,normals);
     if(!silhouette){const U=batch.getAttribute('uv').array as Float32Array,uv=new Float32Array(count*2);for(let i=0;i<count;i++){uv[i*2]=U[subset[i]!*2]!;uv[i*2+1]=U[subset[i]!*2+1]!;}g.setAttribute('uv',new THREE.BufferAttribute(uv,2));}
     g.setAttribute('color',new THREE.BufferAttribute(colors,4,true));
     g.setIndex(new THREE.BufferAttribute(index,1));g.computeBoundingBox();g.computeBoundingSphere();
@@ -460,7 +469,7 @@ export function* facadeFromBatchSteps(batch:THREE.BufferGeometry,spacing:number|
     const indices=new Uint32Array(I.length);let count=0;
     for(let i=0;i<I.length;i+=3){const a=remap[I[i]!]!,b=remap[I[i+1]!]!,c=remap[I[i+2]!]!;if(a===b||b===c||a===c)continue;indices[count++]=a;indices[count++]=b;indices[count++]=c;}
     const g=new THREE.BufferGeometry();
-    g.setAttribute('position',new THREE.BufferAttribute(positions,3));g.setAttribute('normal',new THREE.BufferAttribute(normals,4,true));
+    g.setAttribute('position',new THREE.BufferAttribute(positions,3));setNormalRows(g,normals);
     g.setAttribute('uv',new THREE.BufferAttribute(uv,2));g.setAttribute('color',new THREE.BufferAttribute(tint,4,true));
     g.setIndex(new THREE.BufferAttribute(clusters>65535?indices.slice(0,count):Uint16Array.from(indices.subarray(0,count)),1));
     g.computeBoundingBox();g.computeBoundingSphere();return g;
@@ -471,10 +480,12 @@ export function concatCompact(parts:THREE.BufferGeometry[]):THREE.BufferGeometry
     const out=new THREE.BufferGeometry(),first=parts[0]!;let vertices=0,indices=0;
     for(const p of parts){vertices+=p.getAttribute('position').count;indices+=p.index!.count;}
     for(const name of Object.keys(first.attributes)){
+        if(name===ROW_ATTRIBUTE)continue;
         const a=first.getAttribute(name) as THREE.BufferAttribute,array=new (a.array.constructor as new(n:number)=>THREE.TypedArray)(vertices*a.itemSize);let o=0;
         for(const p of parts){const src=(p.getAttribute(name) as THREE.BufferAttribute).array;array.set(src,o);o+=src.length;}
         out.setAttribute(name,new THREE.BufferAttribute(array,a.itemSize,a.normalized));
     }
+    if(first.getAttribute(ROW_ATTRIBUTE))out.setAttribute(ROW_ATTRIBUTE,out.getAttribute('normal'));
     const index=vertices>65535?new Uint32Array(indices):new Uint16Array(indices);let o=0,base=0;
     for(const p of parts){const src=p.index!.array;for(let i=0;i<src.length;i++)index[o++]=src[i]!+base;base+=p.getAttribute('position').count;}
     out.setIndex(new THREE.BufferAttribute(index,1));out.computeBoundingBox();out.computeBoundingSphere();return out;

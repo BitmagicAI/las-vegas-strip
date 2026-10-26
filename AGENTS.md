@@ -117,6 +117,10 @@ memory against one ~8 GB limit; above it, every few MB allocated forced a full c
   released after GPU upload (`CpuGeometryRelease.ts`): never read their arrays after the first draw.
   `GroundSurfaceIndex` keeps its own copy of walkable triangles. A 3-component snorm16 normal renders
   blotches on three r185 WebGPU (three pads it itself); always give 16-bit normals 4 components.
+  The shader reads that w through `surfaceRow`, a second name for the same buffer (`setNormalRows`): three r185
+  identifies an attribute node by its name alone, so asking for `normal` as vec4 after the lighting asked for vec3
+  compiles to `vec4(normal.xyz, 1.0)`. Every surface then read the table's empty last row (glossy dark windows, no
+  roughness/emission/detail/atlas; published privately that way on 2026-10-26). Never read one attribute at two types.
 - City atlases upload when built and drop their canvases (`CityAtlas.ts`).
 - Alpha cut-outs on node materials use `alphaTestNode` + `maskShadowNode`, not `alphaTest`: the
   shadow pass copies `alphaTest` onto one shared material whose version bumps on every 0/non-zero
@@ -221,7 +225,9 @@ memory against one ~8 GB limit; above it, every few MB allocated forced a full c
   Inside a venue's own guest tower below its podium roof (`podiumTop - 0.3`), the podium is hidden too (its roof would slice
   the floors in view). The Cromwell's podium is 7.0 m, under its level-3 floor (7.44), since 2026-10-08.
 - The city bake (2026-10-26): `node tools/bake/bake-city.mjs` runs after any city geometry changes (after `tools/optimize`
-  and `tools/optimize/pack-data.mjs`; it needs `bitmagic dev` running and re-bakes only when an input changed;
+  and `tools/optimize/pack-data.mjs`; it needs `bitmagic dev` running and re-bakes only when an input changed (exterior
+  GLBs and their optimized copies with their manifest entries, records, placements, the code listed in `INPUT_CODE`; not
+  the foliage models, which are instanced and never batched);
   `check` exits 1 when stale, and `asset-pack.py` refuses a stale bake). It runs the game once in headless Chrome with
   `?bake=capture`, simplifies every city batch offline and writes `build/baked/city-lod.bin` (~5 MB with brotli): each
   block's distant LOD as a subset of its own near-level vertices plus an index list (facades: the browser's old

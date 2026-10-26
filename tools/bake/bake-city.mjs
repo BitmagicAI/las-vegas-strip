@@ -270,13 +270,17 @@ function facadeLod(b, spacing) {
 }
 /** One 1080p pixel (70-degree vertical field of view) at the distance the block's LOD can appear from (CityLod.lodLevel). */
 const lodError = (block) => 0.88 * block.near * (2 * Math.tan((35 * Math.PI) / 180)) / 1080;
-const INPUT_DIRS = ['build/geographic-strip', 'build/strip-landmarks', 'build/resort-blocks', 'build/highrises', 'build/sphere', 'build/south-strip', 'public/foliage'];
+const INPUT_DIRS = ['build/geographic-strip', 'build/strip-landmarks', 'build/resort-blocks', 'build/highrises', 'build/sphere', 'build/south-strip'];
 const INPUT_CODE = ['src/work/CityBatches.ts', 'src/work/CityLod.ts', 'src/work/CityBake.ts', 'src/work/CityBakeLoad.ts', 'src/work/AttributeReader.ts', 'src/work/CityAtlas.ts',
   'src/work/MaterialFixes.ts', 'src/work/StripLandmarks.ts', 'src/work/ResortBlocks.ts', 'src/work/HighriseCity.ts', 'src/work/GeographicCity.ts',
-  'src/work/GeographicStreetMaterials.ts', 'src/work/PbrDetailSets.ts', 'src/work/Game.ts', 'tools/bake/bake-city.mjs', 'build/optimized/manifest.json'];
+  'src/work/GeographicStreetMaterials.ts', 'src/work/PbrDetailSets.ts', 'src/work/Game.ts', 'tools/bake/bake-city.mjs',
+  // the planting replaces the GLBs' old tree crowns, so where it goes counts; the tree models do not (instanced, never batched)
+  'public/foliage/bellagio-placements.bin'];
+const MANIFEST_FILE = path.join(ROOT, 'build/optimized/manifest.json');
 const INPUTS_FILE = path.join(ROOT, 'build/baked/city-lod.inputs.json');
 /** One SHA-256 over every input of the bake: exterior GLBs (not interiors, which CityLod never sees) and their optimized
- * copies, the record files (not collision), and the code above. */
+ * copies, the record files (not collision), the code above, and the optimized-manifest entries for those folders (which
+ * copy loads; entries for anything else, such as the foliage, are not inputs). */
 export function inputsHash() {
   const files = [];
   const walk = (dir) => {
@@ -293,7 +297,10 @@ export function inputsHash() {
   files.sort();
   const hash = crypto.createHash('sha256');
   for (const f of files) { hash.update(f + '\0'); hash.update(fs.readFileSync(path.join(ROOT, f))); }
-  return { hash: hash.digest('hex'), files: files.length };
+  const manifest = fs.existsSync(MANIFEST_FILE) ? JSON.parse(fs.readFileSync(MANIFEST_FILE, 'utf8')).files ?? {} : {};
+  const entries = Object.keys(manifest).filter((key) => INPUT_DIRS.some((dir) => key.startsWith(dir + '/'))).sort().map((key) => [key, manifest[key]]);
+  hash.update('manifest\0'); hash.update(JSON.stringify(entries));
+  return { hash: hash.digest('hex'), files: files.length + entries.length };
 }
 /** Whether build/baked/city-lod.bin was made from the current inputs. */
 export function bakeFresh() {
