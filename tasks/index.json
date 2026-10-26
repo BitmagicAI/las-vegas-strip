@@ -37,9 +37,9 @@
    "area": "release",
    "size": "M",
    "priority": "P1",
-   "summary": "Most textures are drawn by our own scripts (tools/make-public-resort-textures.py, tools/make-arrival-materials.py, tools/strip-landmarks/luxor_obelisk_texture.py) or are CC0 scans from Poly Haven. A few have no recorded source. The release needs a source for each one, or a replacement.",
+   "summary": "Most textures are drawn by our own scripts (tools/make-public-resort-textures.py, tools/make-arrival-materials.py, tools/strip-landmarks/luxor_obelisk_texture.py), are generated originals with recorded prompts (the Venetian interiors: docs/project-records/venetian-interiors-2026-10-23/generated-images.md) or are CC0 scans from Poly Haven. The release needs a recorded source for every packed image, or a replacement.",
    "items": [
-    "build/strip-landmarks/textures/venetian-ceiling-fresco.png (packed into the Venetian interior by tools/strip-landmarks/export.py): no generator script and no recorded source. Find its origin, or replace it with an original or public-domain painting and record the source.",
+    "Retire tools/strip-landmarks/export.py's 'fresco' material: it still loads build/strip-landmarks/textures/venetian-ceiling-fresco.png (made 2026-10-04 with an image generator, prompt not recorded). No shipped model has used it since the Venetian interiors were rebuilt on 2026-10-23 with the generated vi-fresco-* images; point the branch at those or delete it before any source pack is published.",
     "List every image packed into the runtime GLBs (tools/release/asset-pack.json) together with the script that drew it. Write the list to docs/ASSETS.md.",
     "Check that no image in a .blend or GLB is a photo of a real property (the reference photos are for comparison only)."
    ],

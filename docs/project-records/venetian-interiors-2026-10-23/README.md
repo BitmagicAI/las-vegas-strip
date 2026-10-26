@@ -67,14 +67,16 @@ outdoor canal only.
 
 ## Generated images (originals for this project)
 
-Made with `bitmagic generate image`. The prompts and source URLs are in `build/venetian-interiors/generated/*.json`.
-The asset rows the command adds to `world.json` were removed.
+Made with `bitmagic generate image --no-reference` (text prompts only, no image input). Every prompt, size and stored
+file is in [generated-images.md](generated-images.md); the results are kept in `build/venetian-interiors/generated/`
+(ignored). The asset rows the command adds to `world.json` were removed.
 
 - painted skies: `vi-sky-day`, `vi-sky-dusk`;
 - frescoes: `vi-fresco-a`, `vi-fresco-b`, `vi-fresco-oval`;
 - the casino carpet: `vi-carpet`;
 - shop-window interiors: `vi-shop-fashion`, `vi-shop-glass-art`, `vi-shop-masks`, `vi-shop-sweets`;
-- ceiling panels: `vi-ornament-red`, `vi-ornament-green`.
+- ceiling panels: `vi-ornament-red`, `vi-ornament-green`;
+- slot-machine screens: `vi-slot-a`, `vi-slot-b`.
 
 ## Checks
 
