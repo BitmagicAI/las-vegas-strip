@@ -1172,6 +1172,12 @@
       "name": "CVS east service apron",
       "status": "refinement-deferred",
       "record": "cvs-horseshoe-east.json"
+    },
+    {
+      "id": "hofbrauhaus",
+      "name": "Hofbr\u00e4uhaus Las Vegas",
+      "status": "active",
+      "record": "hofbrauhaus.json"
     }
   ],
   "active": "horseshoe-versailles"

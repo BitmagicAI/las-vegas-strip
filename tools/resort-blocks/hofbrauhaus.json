@@ -1,0 +1,41 @@
+{
+  "id": "hofbrauhaus",
+  "name": "Hofbr\u00e4uhaus Las Vegas",
+  "status": "active",
+  "statusNote": "New expansion beyond the earlier corridor survey. Research and baseline stage; no replacement geometry installed.",
+  "claim": {
+    "issue": 232,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/232",
+    "assignee": "janiverse",
+    "date": "2026-10-26"
+  },
+  "sources": [
+    {
+      "url": "https://www.hofbrauhauslasvegas.com/the-experience/",
+      "provider": "Hofbr\u00e4uhaus Las Vegas",
+      "accessDate": "2026-10-26",
+      "observed": "Official exterior, beer hall and indoor garden photographs and descriptions."
+    },
+    {
+      "url": "https://www.hofbrauhauslasvegas.com/about/",
+      "provider": "Hofbr\u00e4uhaus Las Vegas",
+      "accessDate": "2026-10-26",
+      "observed": "Painted hall ceiling, communal benches; enclosed garden with sky ceiling, fountain and six chestnut trees."
+    }
+  ],
+  "dimensions": {
+    "footprint": "way/111339182",
+    "mappedAreaM2": 1857.54,
+    "mappedHeightM": 6,
+    "heightStatus": "Unknown-source commercial default; must verify."
+  },
+  "remaining": [
+    "Survey current exterior views, entrances, roof heights and installed ownership; retain uncertain dimensions explicitly.",
+    "Replace mapped shell with reference-led exterior and yard geometry.",
+    "Build streamed beer hall and indoor garden with walkable public circulation; document inferred layout.",
+    "Verify installed matching views, collision/routes, frame time and asset packaging."
+  ],
+  "implemented": [],
+  "validation": {},
+  "evidence": []
+}
