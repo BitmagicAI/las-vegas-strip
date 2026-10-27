@@ -103,5 +103,6 @@
     "build/city-exteriors/doubleDown-ownership-audit.json",
     "build/city-exteriors/double-down-west/results.json",
     "build/city-exteriors/double-down-paper-refined/results.json"
-  ]
+  ],
+  "buildNotes": "Generate original paper atlases with python3 tools/strip-landmarks/double_down_paper.py (Pillow>=10.1), then run export_double_down.py through vi_blender.sh. Packed maps use original procedural marks and bundled Pillow default-font rendering."
 }

@@ -11995,11 +11995,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Corroborate current east/north facades and tenant identity.",
-    "Author original full exterior and targeted replacement.",
-    "Inspect installed matched daylight views, route clearance and performance; regenerate current bake/package."
+    "Refine sign size/lettering and current Society frontage against closer2026references; logo artwork deliberately not copied.",
+    "Corroborate south/service wall openings, detailed canopy proportions and rooftop equipment; current service side is an explicitly approximate masonry shell.",
+    "No public interior claimed: closed storefronts until verified layout references exist.",
+    "Landscaping and parking-apron furnishings need reference-supported detail; current scope preserves existing city roads."
    ],
    "record": "tools/resort-blocks/grove-university.json",
    "buildings": [],
@@ -12011,7 +12012,9 @@
     "writes": [
      "tools/resort-blocks/grove-university.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/grove_university.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

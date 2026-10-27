@@ -220,7 +220,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-cvs-horseshoe` | S | P3 | 0 | Refine the exterior of CVS Horseshoe Strip frontage |
 | `ext-hofbrauhaus` | M | P3 | 3 | Refine the exterior of Hofbräuhaus Las Vegas |
 | `ext-double-down-saloon` | M | P3 | 3 | Refine the exterior of Double Down Saloon |
-| `ext-grove-university` | M | P3 | 3 | Refine the exterior of The Grove / Society retail frontage |
+| `ext-grove-university` | M | P3 | 4 | Refine the exterior of The Grove / Society retail frontage |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

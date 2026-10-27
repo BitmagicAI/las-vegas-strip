@@ -27,15 +27,44 @@
       "imageDate": "2026-02",
       "accessDate": "2026-10-26",
       "observed": "North context confirms adjoining strip; distant new Society sign. Need closer current view before choosing signage."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=pbIJukhP4OMAnfKaV9pfjQ&heading=270&pitch=0",
+      "imageDate": "2026-02",
+      "accessDate": "2026-10-26",
+      "observed": "East elevation visually inspected and zoomed: dark gray masonry, horizontal wood slat sign tower toward south, low wood canopy and glazing. Original text lettering used, no copied leaf logo."
     }
   ],
   "uncertainDimensions": [
-    "Footprint from mapped building; height and tenant subdivision not measured.",
-    "No verified public floorplan; exterior first."
+    "Mapped envelope36.1x14.4m. Height4.6m, sign7.7m and canopy3.15m estimated from photos, not surveyed.",
+    "North storefront geometry supported by2023view; Society branding supported only by2026distant view and official address. Exact sign size/layout uncertain.",
+    "No verified public floorplan; exterior only, closed storefronts."
   ],
   "remaining": [
-    "Corroborate current east/north facades and tenant identity.",
-    "Author original full exterior and targeted replacement.",
-    "Inspect installed matched daylight views, route clearance and performance; regenerate current bake/package."
-  ]
+    "Refine sign size/lettering and current Society frontage against closer2026references; logo artwork deliberately not copied.",
+    "Corroborate south/service wall openings, detailed canopy proportions and rooftop equipment; current service side is an explicitly approximate masonry shell.",
+    "No public interior claimed: closed storefronts until verified layout references exist.",
+    "Landscaping and parking-apron furnishings need reference-supported detail; current scope preserves existing city roads."
+  ],
+  "implemented": [
+    "Original mapped exterior installed with north storefront frames, glazing, green curved fascia, east horizontal-timber entrance tower and canopy, masonry service elevations and roof equipment.",
+    "Targeted nine old shell faces and nine matching collision triangles replaced; adjacent geometry retained."
+  ],
+  "evidence": [
+    "build/city-exteriors/grove-before/results.json",
+    "build/city-exteriors/grove-after/results.json",
+    "build/city-exteriors/grove-walk/results.json",
+    "build/strip-landmarks/groveUniversity-route-audit.json",
+    "build/city-exteriors/groveUniversity-ownership-audit.json",
+    "build/city-exteriors/grove-final-east/grove-east.png"
+  ],
+  "validation": {
+    "scopedRoutes": "89 support and clearance checks passed after correcting east apron orientation.",
+    "runtimeWalk": "Four actual north/east outward-and-return walking segments passed.",
+    "installedViews": "North/east/south installed daylight views visually inspected, including final east masonry finish.",
+    "performanceScope": "Matched960x540ultra180frames/view, same fixed cameras. Before north16.6/18.3,east16.6/18.7,south16.7/18.6ms; after north16.7/18.9,east16.5/18.3,south16.7/18.5ms. Local samples, not a city-wideFPS guarantee.",
+    "checks": "Typecheck and block/public checks passed; one pre-existing public-check inventory email warning.",
+    "packaging": "Fresh city bake662batches24.4Mnear/7.05MLOD,17.41MBbinary;1347runtimeassets present,0missing."
+  },
+  "statusNote": "Installed first exterior pass validated; current active refinement retains sign/service/landscape discrepancies. No interior or photorealistic completion claim."
 }
