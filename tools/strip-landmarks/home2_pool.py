@@ -20,14 +20,20 @@ def add_pool(B,F):
  def fence(a,b):
   L=math.dist(a,b);G=Frame(B,*F.p(*[a[0],0,a[1]])[::2],F.yaw-math.atan2(b[1]-a[1],b[0]-a[0]),y=0)
   # Visual pickets have actual gaps; a separate thin solid controls collision.
-  for y in [.40,1.72]:G.box('h2-metal',(L/2,y,0),(L,.055,.055))
-  for u in np.arange(0,L+.01,.16):G.box('h2-metal',(float(u),1.06,0),(.025,1.37,.025))
+  for y in [.40,1.78]:G.box('h2-charcoal-paint',(L/2,y,0),(L,.085,.09))
+  for u in np.arange(.06,L,.19):G.box('h2-charcoal-paint',(float(u),1.08,0),(.09,1.40,.055))
   for u in np.linspace(0,L,max(2,math.ceil(L/2.5)+1)):G.box('h2-charcoal-paint',(float(u),1.03,0),(.075,1.57,.075))
  # Fence collision is exported separately from the visible pickets.
  for a,b in [((1,-.5),(1,-14)),((1,-14),(21,-14)),((21,-14),(21,-4)),((21,-2),(21,-.5))]:
   fence(a,b)
   line=LineString([F.p(a[0],0,a[1])[::2],F.p(b[0],0,b[1])[::2]])
   B.shell(line.buffer(.035,cap_style=2),.24,1.75,'h2-fence-collision',roof=False,solid=True)
+ # North shared-drive frontage: stone end piers and continuous high beam visible
+ # in March2020 Street View. Dimensions estimated from the adjacent storey.
+ for z in [-.5,-14]:
+  F.box('h2-stone',(1,1.64,z),(.55,2.8,.55),True)
+  F.box('h2-counter',(1,3.08,z),(.63,.08,.63))
+ F.box('h2-charcoal-paint',(1,2.98,-7.25),(.19,.22,13.55))
  # Blue-tile waterfall and paired planters on the far edge, as in official photo.
  F.box('h2-pool-tile',(11.1,.90,-11.24),(2.5,1.32,.46),True)
  F.box('h2-counter',(11.1,1.59,-11.24),(2.65,.11,.58))
@@ -52,6 +58,10 @@ def add_pool(B,F):
  for z in [-10.6,-13.2]:F.box('h2-charcoal-paint',(3.9,2.9,z),(3.9,.18,.15))
  for x in np.arange(2,5.9,.30):F.box('h2-charcoal-paint',(float(x),3.03,-11.9),(.095,.16,3.0))
  for x,z in [(3.7,-12),(18.9,-11.8),(18.9,-7)]:
+  # Folded canvas umbrella: articulated narrow profile, within table collision.
+  F.tube('h2-metal',(x,.24,z),(x,2.85,z),.024,8)
+  F.lathe('h2-red-canvas',x,z,[(1.55,.04),(1.75,.16),(2.10,.10),(2.35,.19),(2.63,.11),(2.77,.025)],12)
+  F.lathe('h2-charcoal-paint',x,z,[(2.08,.105),(2.13,.105)],12)
   F.box('h2-furniture-collision',(x,.62,z),(.80,.76,.80),True)
   F.lathe('h2-counter',x,z,[(.24,.30),(.28,.30),(.29,.045),(.95,.045),(1,.42)],20)
   for dx in [-.75,.75]:
