@@ -1,0 +1,31 @@
+{
+  "id": "standard-tropicana",
+  "name": "Standard / Chevron 3201 W Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/431497409",
+    "way/431497411"
+  ],
+  "claim": {
+    "issue": 274,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/274",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/Chevron/@36.1002799,-115.1834479,694m/data=!3m2!1e3!4b1!4m6!3m5!1s0x80c8c5d4acc31b85:0x22c2b0b81222fd!8m2!3d36.1002799!4d-115.1834479!16s%2Fg%2F1v2yz44r",
+      "observed": "Address3201 verified. December2022 JayCViajero photoCIHM0ogKEICAgID-h_ScxQE inspected: broad blue canopy, white supports, Standard lettering, pump islands and tall two-post pylon. June2019 ErikJohansen photoCIHM0ogKEICAgIDEso_WzQE inspected: tanstucco store, brownbase, glazing, small tilehip over eastentrance, redTerribles signs and address3201. Dated branding, current exact finishes unverified.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped store and canopy define plan; heights and facade divisions inferred from dated photography.",
+    "Interior layout unverified. Current brand graphics may differ from dated photographs."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Reference-supported exterior/canopy, targeted replacement, optimized assets/current bake, scoped and actual walking checks, installed visual review and matching performance pending."
+  ],
+  "evidence": []
+}
