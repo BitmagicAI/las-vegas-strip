@@ -16,7 +16,7 @@
   "sources": [
     {
       "url": "https://www.hilton.com/en/hotels/lasinhx-hampton-tropicana/gallery/",
-      "observed": "Official images1,12,5 visually inspected: cream/terracotta exterior, green hip crowns, brick base, covered arrival; lobby with wood reception counters, ring chandelier, lounge; breakfast space with magenta wall, mustard seating and buffet. Image7 inspected: irregular pool, rock waterfall, timber lounge chairs with blue cushions and substantial palms/planting. These landscape details are not yet fully modelled.",
+      "observed": "Official images1,12,5 visually inspected: cream/terracotta exterior, green hip crowns, brick base, covered arrival; lobby with wood reception counters, ring chandelier, lounge; breakfast space with magenta wall, mustard seating and buffet. Image7 inspected: irregular pool, rock waterfall, timber lounge chairs with blue cushions and substantial palms/planting. These landscape details are not yet fully modelled. Image6 additionally inspected on 2026-10-27: rock feature is at the side of basin, courtyard framed by palms/shrubs, green-roofed rear entrance and firepit seating; present placement remains approximate.",
       "accessDate": "2026-10-27"
     },
     {
@@ -30,20 +30,21 @@
     "Lobby and breakfast furnishings supported by photos; precise plan relationships inferred until verified.",
     "Six storeys inferred from official facade photo; modeled roof height19.4m and crown21m are estimates.",
     "Public lobby22x16m and adjoining breakfast furnishings approximate photo relationships; no surveyed plan.",
-    "Pool outline and depth approximate; missing rock waterfall and dense landscaping remain explicit refinement work."
+    "Pool outline, depth and landscape placement approximate; new image6 clarifies side rock feature and rear entrance. Exact plan not surveyed."
   ],
   "implemented": [
     "Original six-storey exterior fitted to mapped angled wings; framed glazing, spandrels, brick base, cornices, raised sign pavilions and green hipped arrival canopy.",
     "Public lobby/reception and breakfast furnishings based on official photographs, with original wood/floor/textile maps and circulation kept clear.",
     "Courtyard pool and deck with lounge seating; animated pool material integrated using existing water system.",
-    "Only152 owned shell and matching collision faces removed; retained geometry exact-equal."
+    "Only152 owned shell and matching collision faces removed; retained geometry exact-equal.",
+    "Refinement: rounded seat cushions, splayed timber chair legs, reduced periodic wood/floor grain; asymmetrical pool basin, original rock feature, eight fan palms and planted boundary beds."
   ],
   "remaining": [
     "Accurate facade bay widths, crown profiles, sign typography and surface weathering need closer reference matching.",
-    "Pool outline is approximate; rock waterfall, mature palms, dense landscaping and detailed outdoor furniture remain unfinished.",
+    "Courtyard remains approximate: flowing waterfall effect, naturalistic sandstone and mature foliage, striped cushions, detailed outdoor furniture, firepit and rear entrance canopy are unfinished. Rock feature now placed beside the basin; palm collision proxies removed from visible export.",
     "Interior is a simplified photo-supported interpretation. Exact room boundaries, breakfast arches, displays, ornaments and seating profiles remain unverified or incomplete. Private hotel rooms remain closed.",
     "Not photorealistically complete; keep active for courtyard and facade/interior refinement.",
-    "Wood/floor grain is too repetitive at close range; reduce regularity and refine furniture profiles in next quality pass."
+    "Wood/floor grain improved and soft seating rounded; remaining furniture, cabinetry, textile pattern and ornament detail still simplified."
   ],
   "evidence": [
     "build/city-exteriors/hampton-tropicana-first",
@@ -52,21 +53,26 @@
     "build/city-exteriors/hampton-tropicana-ownership-audit.json",
     "build/strip-landmarks/hampton-tropicana-route-audit.json",
     "build/city-exteriors/hampton-tropicana-packaged",
-    "build/city-exteriors/hampton-tropicana-interior-final"
+    "build/city-exteriors/hampton-tropicana-interior-final",
+    "build/city-exteriors/hampton-tropicana-interior-refined",
+    "build/city-exteriors/hampton-tropicana-pool-corrected",
+    "build/city-exteriors/hampton-tropicana-exterior-corrected",
+    "build/city-exteriors/hampton-tropicana-walk-corrected/results.json"
   ],
   "verification": {
-    "sourceTriangles": 47136,
-    "scopedChecks": 219,
-    "actualWalkingSegments": 18,
-    "visualReview": "Three initial exterior and interior views inspected. Separate solid arrival canopy removed and rebuilt to its footprint; final packaged arrival and courtyard inspected. Final lobby/reception views inspected; original textures installed but visibly repetitive and furniture remains simplified.",
+    "sourceTriangles": 97216,
+    "scopedChecks": 480,
+    "actualWalkingSegments": 30,
+    "visualReview": "Installed refined lobby/reception, corrected courtyard pool and arrival screenshots inspected. Grain reduced; rounded cushions and splayed chair legs added. Side rock feature replaced end pile; palm collision proxies excluded from visual export. Courtyard foliage/rock detail still visibly simplified; facade lacks exact cornice, crown and signage detail.",
     "assetsPresent": 1403,
     "assetsMissing": 0,
     "bakeBatches": 682
   },
   "performance": {
     "baseline": "build/city-exteriors/hampton-tropicana-baseline/results.json",
-    "after": "build/city-exteriors/hampton-tropicana-packaged/results.json",
-    "conditions": "960x540 ultra neutral daylight,3views180frames. Baseline16.6\u201316.7msmedian17.9\u201318.1msp95; final exterior16.7\u201316.8msmedian17.8\u201318.9msp95.",
-    "interior": "Final3views16.6\u201316.7msmedian17.6\u201318.3msp95, same960x540ultra conditions."
+    "after": "build/city-exteriors/hampton-tropicana-exterior-corrected/results.json",
+    "conditions": "960x540 ultra neutral daylight,3views180frames. Baseline16.6\u201316.7msmedian17.9\u201318.1msp95; refined exterior16.6msmedian18.6\u201319.1msp95.",
+    "interior": "Refined3views16.7msmedian18.0\u201318.2msp95, same960x540ultra conditions.",
+    "pool": "New two close pool views16.6\u201316.7msmedian19.2\u201321.4msp95. No matching pre-landscape close-pool baseline; not a locked60fps claim."
   }
 }

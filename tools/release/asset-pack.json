@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1403,
- "bytes": 1071227651,
+ "bytes": 1073335137,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18728503,
-   "sha256": "69999dd89e4cc72f2ea32bae3e495d2a5c4921ec5f39f44c5672163d3729313e",
+   "bytes": 18756557,
+   "sha256": "804ae042e8eb5961a8750fdcd9dd06907c8d8832667935cb614ed42e383d7ece",
    "kind": "original"
   },
   {
@@ -6510,14 +6510,14 @@
   },
   {
    "path": "build/strip-landmarks/hampton-tropicana-exterior-collision.bin",
-   "bytes": 3304,
-   "sha256": "d8c1931e2a3d9193916c90322ffd3f96e9fd4c1356a24568f16cbceed5382665",
+   "bytes": 4780,
+   "sha256": "dbd8cddd42385ed139ddccdb17b2cc2af6d849ddfce58d28189e1417242e21d0",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/hampton-tropicana-exterior.glb",
-   "bytes": 2764344,
-   "sha256": "ec11eb271c5b5676ea9ee9cbd729d8960a142aa62ff3042c7cbc9b7630e39fec",
+   "bytes": 4793452,
+   "sha256": "9e84e66b17eb3baeba539d640aea8d5b3ceb6d65213c418e0b3a9d19f88435e9",
    "kind": "optimized"
   },
   {
@@ -6528,8 +6528,8 @@
   },
   {
    "path": "build/strip-landmarks/hampton-tropicana-interior.glb",
-   "bytes": 1615556,
-   "sha256": "69141fe6e6b878be058bc3beee635917747efb88998ba45461db5d1c8bceea62",
+   "bytes": 1664296,
+   "sha256": "87368a7e62a47b6da9492597880c46e8df8e54d8ef56a642b40864582dbbefe4",
    "kind": "optimized"
   },
   {
@@ -8238,8 +8238,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 346558,
-   "sha256": "5953a44fb2d29ee26b9a746320a94c6a94b7c662eaa7799a152fe410d04d8602",
+   "bytes": 346666,
+   "sha256": "1d7e5e6052f9c89f9ac861cca9633802ed59b24a27562dee0e0ce4b8f3ecf0aa",
    "kind": "original"
   },
   {

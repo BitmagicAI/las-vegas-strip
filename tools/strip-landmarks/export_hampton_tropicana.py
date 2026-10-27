@@ -1,10 +1,11 @@
 """Redistributable original stone/stucco maps; research photographs are not textures."""
-import bpy,sys
+import bpy,sys,math
 from pathlib import Path
 import numpy as np
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
 E.colors.update({'ht-stucco':'c6bfa8','ht-cream':'e3dcc6','ht-brick':'745645','ht-roof':'9b9990','ht-stucco-rose':'a2765f','ht-green':'3d584c','ht-recess':'272e2c','ht-glass':'536a72','ht-spandrel':'464f4b','ht-metal':'55534a','ht-sill':'d6ccad','ht-joint':'9e9786','ht-red':'b83439','ht-paving':'b7b3a6','ht-stone':'b8ab90','ht-floor':'aaa599','ht-interior':'d7d3c4','ht-ceiling':'d8d4c8','ht-wood':'755038','ht-carpet':'7b6855','ht-upholstery':'a8a69c','ht-blue':'3c505b','ht-screen':'202b2d','ht-magenta':'733449','ht-mustard':'a89a48','ht-light':'e8debc','hampton_pool':'296e79','ht-pool-tile':'8ab3af'})
+E.colors.update({'ht-rock':'9f927a','ht-soil':'514839','ht-shrub':'405436','c525-bark':'766650','c525-collision':'766650','c525-palm-stem':'63734c','c525-palm-leaf':'3e6139','c525-palm-light':'587845'})
 for part in ['exterior','interior']:
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('hampton-tropicana-'+part)
  rng=np.random.default_rng(256);size=512
@@ -30,13 +31,18 @@ for part in ['exterior','interior']:
      shade[y+1:min(y+rowheight-1,size),lo:hi]=rng.uniform(.87,1.08);x+=w
   if key in ['ht-wood','ht-floor']:
    yy,xx=np.mgrid[0:size,0:size]
-   grain=np.sin(xx*.45+np.sin(yy*.019)*1.3+np.sin(xx*.041)*2.0)
-   shade=.92+grain*.06+(rng.random((size,size))-.5)*.05
+   # Periodic anisotropic noise gives wood fibres without a regular sine-wave stripe.
+   fy=np.fft.fftfreq(size)[:,None];fx=np.fft.fftfreq(size)[None,:]
+   field=np.fft.ifft2(np.fft.fft2(rng.normal(size=(size,size)))*np.exp(-((fx/.13)**2+(fy/.008)**2))).real
+   field/=max(field.std(),.001)
+   shade=1+np.clip(field,-2.5,2.5)*.022
    if key=='ht-floor':
+    # Eight long boards per two-metre tile, with staggered joints and restrained tones.
     for row in range(8):
-     lo=row*64;hi=lo+64;shade[:,lo:hi]*=rng.uniform(.90,1.08);shade[:,lo:lo+2]*=.65
-     for z in [((row%3)*170)%512]:shade[z:z+2,lo:hi]*=.72
-   h=shade*.10
+     lo=row*64;hi=lo+64;shade[:,lo:hi]*=rng.uniform(.97,1.03)
+     shade[:,lo:lo+1]*=.88
+     z=int(rng.integers(0,size));shade[z:z+1,lo:hi]*=.88
+   h=(shade-1)*.025
   if key in ['ht-carpet','ht-upholstery']:
    yy,xx=np.mgrid[0:size,0:size]
    weave=((xx%4)<2)*.035+((yy%4)<2)*.035
@@ -44,7 +50,7 @@ for part in ['exterior','interior']:
    if key=='ht-upholstery':shade*=.91+.09*np.sin((xx+yy*.32)*.25)**2
    h=weave*.2
   h+=rng.random((size,size))*.025
-  noise=(rng.random((size,size))-.5)*.065
+  noise=(rng.random((size,size))-.5)*(.012 if key in ['ht-wood','ht-floor'] else .035)
   rgba=np.ones((size,size,4),np.float32);rgba[:,:,:3]=np.clip((shade+noise)[:,:,None]*c,0,1)
   im=bpy.data.images.new('Original '+key,width=size,height=size);im.pixels.foreach_set(rgba.flatten());im.pack()
   t=m.node_tree.nodes.new('ShaderNodeTexImage');t.image=im;m.node_tree.links.new(t.outputs['Color'],bs.inputs['Base Color'])
@@ -57,6 +63,24 @@ for part in ['exterior','interior']:
    fp=Path('/System/Library/Fonts/Supplemental/Arial Bold.ttf')
    if fp.exists():o.data.font=bpy.data.fonts.load(str(fp),check_existing=True)
   if o.type!='MESH':continue
+  if o.get('surface')=='c525-collision':
+   bpy.data.objects.remove(o,do_unlink=True);continue
+  if o.get('surface')=='ht-rock':
+   bpy.context.view_layer.objects.active=o
+   bevel=o.modifiers.new('Broken sandstone edges','BEVEL');bevel.width=.18;bevel.segments=2;bevel.limit_method='ANGLE'
+   bpy.ops.object.modifier_apply(modifier=bevel.name)
+   # Broad broken stone planes with small irregularity; seeded by position for reproducibility.
+   for v in o.data.vertices:
+    q=v.co;v.co.x+=.075*math.sin(q.y*7.1+q.z*4.7);v.co.y+=.065*math.sin(q.x*5.3-q.z*6.1);v.co.z+=.065*math.sin(q.x*6.7+q.y*3.9)
+   o.data.update()
+  # Only soft seating gets rounded edges; architecture and collision remain untouched.
+  if o.get('surface') in ['ht-upholstery','ht-mustard']:
+   bpy.context.view_layer.objects.active=o
+   bevel=o.modifiers.new('Cushion edge radius','BEVEL');bevel.width=.045;bevel.segments=4;bevel.limit_method='ANGLE'
+   bpy.ops.object.modifier_apply(modifier=bevel.name)
+   for polygon in o.data.polygons:polygon.use_smooth=True
+   normal=o.modifiers.new('Weighted cushion normals','WEIGHTED_NORMAL');normal.keep_sharp=True
+   bpy.ops.object.modifier_apply(modifier=normal.name)
   uv=o.data.uv_layers.new(name='Metre finish')
   for p in o.data.polygons:
    axis=max(range(3),key=lambda i:abs(p.normal[i]))
