@@ -38,18 +38,68 @@
       "imageDate": "2026-02",
       "accessDate": "2026-10-26",
       "observed": "North wall at662E NaplesDrive: blank gray painted masonry, red/cream Double Down sign near top, four palms and low planting bed; shallow curved roof/fascia edge. No north doorway. Older entrance photograph not yet correlated to a side; do not use it as the north facade."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=7ZNTjuz-V5HXwvOHvyr4dQ&heading=180&pitch=0",
+      "imageDate": "2026-02",
+      "accessDate": "2026-10-26",
+      "observed": "View from east along Naples confirms shingled porch and raised walkway on east face. This correlates older porch photo; north remains blind."
+    },
+    {
+      "url": "https://www.theinfatuation.com/las-vegas/reviews/double-down-saloon-vegas",
+      "imageURL": "https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_3840,ar_4:3,g_center,f_webp/images/IMG_0485_wnccaz",
+      "provider": "Ryan Slattery / The Infatuation",
+      "imageDate": "2026-07-01 article",
+      "observed": "Verified Las Vegas bar image visually inspected: densely paper-covered ceiling/walls, strings of colored bulbs, bottle shelves, refrigerator and bar-top machines. No reference pixels incorporated."
     }
   ],
   "uncertainDimensions": [
-    "Mapped rectangular footprint approximately12.9\u00d716.7m; runtime6m height is an unknown-source default.",
-    "West entry placement requires close view; north wall verified blank. Older porch/photo orientation unconfirmed; do not combine it with north facade."
+    "Mapped footprint12.9\u00d716.7m; eaves4.65m and room ceiling3.18m are image-based estimates, not measured.",
+    "East porch orientation confirmed; exact door position, public furniture arrangement and internal circulation inferred. No verified floorplan."
   ],
   "remaining": [
-    "Corroborate current Las Vegas exterior and entrance orientation.",
-    "Create owned exterior, entry and reference-supported public bar.",
-    "Remove only owned shell, install optimized runtime assets and collision.",
-    "Inspect installed views, walk public routes, profile and verify release packaging."
+    "Refine signs, original collage artwork, porch proportions, palm bark and furniture density; current installed pass is not photorealistic.",
+    "Exact interior layout, secondary doors and envelope heights are inferred and need stronger measured references.",
+    "Add closer reference-supported exterior detail and improve original interior collage/material fidelity before claiming this building fully complete."
   ],
   "ownership": "No matching ID or Double Down generator found in existing blocks/builders; runtime building index still contains the mapped default. Existing Paradise Road task185 has distinct IDs well north of this site.",
-  "statusNote": "Claim234 verified; current west/north street references under review before original exterior and public interior build. Older porch photograph orientation remains unresolved."
+  "statusNote": "First exterior/public bar pass installed and visually inspected;59 scoped samples and8 actual walking segments passed. Current city bake and1345 packaged runtime assets verified. Active refinement remains; not photorealistic completion.",
+  "implemented": [
+    "Original mapped shell, west green curved fascia/brick arches, north sign and four palms, east shingled porch and walkable threshold.",
+    "Separate streamed public bar study with stools, bottles, shelves, refrigerator, stage corner and original paper-collage materials; fixed pooled lights."
+  ],
+  "validation": {
+    "scopedRoutes": "59 support/clearance checks passed with current city collision before palms (outside route).",
+    "ownership": "Only11 old shell triangles and their matching collision faces removed.",
+    "offlineReview": "North/east/bar renders inspected; corrected north sign orientation and oversaturated collage. Further installed review pending.",
+    "runtimeWalk": "All eight actual outbound/return porch-bar segments passed.",
+    "installedViews": "Installed east entrance, north facade/palms, west fascia/arches and public bar inspected. Corrected wrong-facing sign, failed palm export and excessive light intensity.",
+    "performance": [
+      {
+        "view": "east",
+        "p50ms": 16.7,
+        "p95ms": 18.2
+      },
+      {
+        "view": "north",
+        "p50ms": 16.6,
+        "p95ms": 18.9
+      },
+      {
+        "view": "bar",
+        "p50ms": 16.7,
+        "p95ms": 17.9
+      }
+    ],
+    "performanceScope": "960x540 ultra,180 frames/view; no matched pre-replacement baseline, no city-wide FPS guarantee.",
+    "checks": "Typecheck and public/review checks pass; public checker retains one existing inventory email warning.",
+    "packaging": "1345 present,0missing; current city bake661batches24.4M near/7.04M LOD triangles."
+  },
+  "evidence": [
+    "build/city-exteriors/double-down-final/results.json",
+    "build/city-exteriors/double-down-walk/results.json",
+    "build/strip-landmarks/doubleDown-route-audit.json",
+    "build/city-exteriors/doubleDown-ownership-audit.json",
+    "build/city-exteriors/double-down-west/results.json"
+  ]
 }
