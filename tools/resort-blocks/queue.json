@@ -1194,9 +1194,15 @@
     {
       "id": "quadz",
       "name": "QUADZ and west retail frontage",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "quadz.json"
+    },
+    {
+      "id": "paradise-smoke-shop",
+      "name": "Paradise small retail frontage",
+      "status": "active",
+      "record": "paradise-smoke-shop.json"
     }
   ],
-  "active": "quadz"
+  "active": "paradise-smoke-shop"
 }

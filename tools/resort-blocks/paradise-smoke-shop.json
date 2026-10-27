@@ -1,0 +1,31 @@
+{
+  "id": "paradise-smoke-shop",
+  "name": "Paradise small retail frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/1127963483"
+  ],
+  "claim": {
+    "issue": 240,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/240",
+    "assignee": "janiverse",
+    "date": "2026-10-26"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=AFzLX12f3zzcnqkxOVTaEg&heading=150&pitch=0",
+      "imageDate": "2023-02",
+      "accessDate": "2026-10-26",
+      "observed": "Visually inspected pale vertical panels, dark lower wall, continuous green fascia, white SMOKE SHOP sign and gold letters over storefront glass. Advertising-covered glazing and narrow metal frames. Original abstract display graphics only; no copied product imagery."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped10.61x14.26m envelope. Height4.6m estimated to match adjoining fascia; unmeasured.",
+    "Current tenancy/signage and rear service openings not corroborated. No public interior layout evidence."
+  ],
+  "remaining": [
+    "Build and inspect storefront, mapped envelope and roof/service treatment.",
+    "Targeted old shell/collision removal; public approach checks and installed view/performance.",
+    "Optimize and verify runtime assets and fresh city bake."
+  ]
+}
