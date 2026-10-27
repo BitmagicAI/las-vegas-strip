@@ -1,0 +1,35 @@
+{
+  "id": "former-starbucks-tropicana",
+  "name": "Former Starbucks 3575 W Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/431504495"
+  ],
+  "claim": {
+    "issue": 268,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/268",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.colliers.com/en/properties/3575-w-tropicana-ave/usa-3575-w-tropicana-ave-las-vegas-nv-89103-usa/usa1168133",
+      "observed": "Primary broker identifies former Starbucks drive-through for lease; avoid representing an operating current cafe.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1005971,-115.1875088,3a,75y,50.03h,90t/data=!3m4!1e1!3m2!1seuOHphmViCu0yb_Flzm1uQ!2e0",
+      "observed": "December2022 StreetView inspected: white stucco, grey plinth, shallow dark grey sloped canopy, black framed west-facing glass entrance address3575, side glazing separated by white piers, parapet coping, north patio railing. Southern service wall largely blank with sconces.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint407.72m2,11.575m wide35.224m deep; height5m estimated. Facade divisions/canopy sizes inferred from StreetView.",
+    "Current tenancy and interior not established; interior remains closed."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Exterior and frontage construction, target-only collision replacement, installed review, scoped/actual walking and matching performance pending."
+  ],
+  "evidence": []
+}
