@@ -1,0 +1,42 @@
+{
+  "id": "stadium-garage",
+  "name": "Home2 adjacent Stadium District parking garage",
+  "status": "active",
+  "mappedIds": [
+    "way/790044912"
+  ],
+  "claim": {
+    "issue": 282,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/282",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0992,-115.1817&heading=330&pitch=0",
+      "accessDate": "2026-10-27",
+      "imageDate": "March 2020",
+      "observed": "South arrival photograph shows open parking decks, pale horizontal parapet bands, tall striped vertical screen/stair volume beside Home2 patio. Exact level schedule to survey."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0996,-115.1819,87m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial inspected: large separate angled garage east/northeast of Home2, roof parking markings, stepped south corner. Map image date unavailable."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint must be checked against current source geometry.",
+    "Deck heights, exact number of levels and internal ramp arrangement require corroboration; do not infer traversable hidden ramps from one facade."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Survey all visible elevations and deck schedule.",
+    "Original exterior geometry and scoped collision replacement.",
+    "Accessible entry route and supported parking circulation.",
+    "Optimized install, current city bake, actual daylight visual review and performance."
+  ],
+  "evidence": [],
+  "nextPass": {
+    "priority": "Survey mapped footprint and garage elevations, then replace only way/790044912; preserve neighboring hotels and shared drives."
+  }
+}

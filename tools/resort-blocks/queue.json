@@ -1352,9 +1352,19 @@
     {
       "id": "home2-stadium",
       "name": "Home2 Suites Las Vegas Stadium District",
+      "status": "refinement-deferred",
+      "record": "home2-stadium.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Installed exterior/public rooms/pool/patios visually reviewed,70walkingsegments passed. Retain exact layout, landscaping, materials and performance limitations while advancing user-requested city-wide reconstruction."
+      }
+    },
+    {
+      "id": "stadium-garage",
+      "name": "Home2 adjacent Stadium District parking garage",
       "status": "active",
-      "record": "home2-stadium.json"
+      "record": "stadium-garage.json"
     }
   ],
-  "active": "home2-stadium"
+  "active": "stadium-garage"
 }

@@ -1,7 +1,7 @@
 {
   "id": "home2-stadium",
   "name": "Home2 Suites by Hilton Las Vegas Stadium District",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/790044913"
   ],
@@ -156,7 +156,7 @@
     "loungeNote": "Lounge/patio/grills/path medians16.8/30.2/20.5/16.9ms,p9520.6/55.3/47.9/24.8ms at960x540ultra. Same patio cameras as prior pass; shared-machine load and variance remain, no blanket60fps claim."
   },
   "nextPass": {
-    "priority": "Finish current Home2 site before claiming another building",
+    "priority": "Refinement deferred while advancing city-wide; retain all documented visual/site/performance discrepancies.",
     "poolStudy": "Pool and grill patio installed; remaining flowing wall, depth refinement, broader landscaping and separate firepit seating. Retain performance variance.",
     "publicStudy": "Official public plan is not available; retain inferred layout label. Improve room finishes and lighting after geometry.",
     "patioStudy": "Lounge now represented within covered patio based on gallery9 visible striped seating and gallery8 firepit detail. Exact layout/count inferred; retain discrepancy. Next consolidate arrival planting, finer patio enclosure/finishes and facade/interior discrepancies before another rebuild."
