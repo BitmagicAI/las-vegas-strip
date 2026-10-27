@@ -14,6 +14,11 @@ def build(B):
  corners=[A-normal*3,D-normal*3,D+normal*3,A+normal*3]
  ramp=F.poly(corners);well=F.poly([(43,-38.3),(68.9,-28.6),(66,-21)])
  opening=ramp.union(well)
+ # Two switchback stair bays visible at the hotel-facing ends. Flight dimensions
+ # and hidden lower repetition are inferred; keep them inside the mapped envelope.
+ stairs=[('North',23.0,-23.0),('South',72.8,-16.0)]
+ stairholes=unary_union([F.poly([(x,z),(x+2.8,z),(x+2.8,z+4.1),(x,z+4.1)]) for _,x,z in stairs])
+ opening=opening.union(stairholes)
  # Open decks with real cutouts, so ramps are not buried under horizontal slabs.
  for y in levels:
   deck=p.difference(opening) if y>.2 else p
@@ -68,11 +73,44 @@ def build(B):
  F.box('sg-white',(76.8,.55,-20),(.45,1.1,.45),True)
  F.box('sg-red',(76.8,2.5,-20),(.08,3.1,.08))
  F.box('sg-yellow',(77.2,2.85,-26),(.12,.17,6.2))
+ # Concrete switchback flights with independent smooth collision ramps and steel rails.
+ stairroutes=[]
+ for name,x,z in stairs:
+  # Protect the deck edges around each stairwell, leaving the approach landing open.
+  for y in levels[1:]:
+   for xx in [x-.04,x+2.84]:
+    B.face('sg-gray',[F.p(xx,y,z),F.p(xx,y,z+4.1),F.p(xx,y+.95,z+4.1),F.p(xx,y+.95,z)],True)
+   F.box('sg-concrete',(x+1.4,y+.48,z+4.15),(2.96,.96,.15),True)
+  if name=='North':
+   # Aerial shows a small roof headhouse; the open entry and heights are inferred.
+   for xx in [x-.12,x+2.92]:F.box('sg-white',(xx,11.2,z+1.6),(.2,2.72,5.2),True)
+   F.box('sg-white',(x+1.4,11.2,z+4.2),(3.2,2.72,.2),True)
+   F.box('sg-white',(x+1.4,12.66,z+1.6),(3.35,.2,5.45))
+  for level,(lo,hi) in enumerate(zip(levels,levels[1:])):
+   mid=(lo+hi)/2
+   # Lower/upper landing is outside the cutout, midpoint landing spans both flights.
+   F.box('sg-concrete',(x+1.4,mid-.1,z+3.5),(2.8,.2,1.3),True)
+   for side,start,end,y0,y1 in [(0,z,z+2.9,lo,mid),(1,z+2.9,z,mid,hi)]:
+    cx=x+.68+side*1.44
+    B.upface('sg-concrete',[F.p(cx-.64,y0,start),F.p(cx+.64,y0,start),F.p(cx+.64,y1,end),F.p(cx-.64,y1,end)],True)
+    # Tread geometry sits above the smooth collision plane by at most one riser.
+    for i in range(9):
+     zz=start+(end-start)*(i+.5)/9;yy=y0+(y1-y0)*(i+1)/9
+     F.box('sg-concrete',(cx,yy-.09,zz),(1.28,.18,abs(end-start)/9))
+    for rx in [cx-.64,cx+.64]:
+     F.tube('sg-gray',(rx,y0+1,start),(rx,y1+1,end),.027,8)
+     F.tube('sg-gray',(rx,y0+.55,start),(rx,y1+.55,end),.018,6)
+     for i in range(7):
+      t=i/6;zz=start+(end-start)*t;yy=y0+(y1-y0)*t
+      F.tube('sg-gray',(rx,yy,zz),(rx,yy+1,zz),.018,6)
+   F.box('sg-concrete',(x+1.4,mid+.5,z+4.05),(2.8,1,.12),True)
+   stairroutes.append(dict(name=f'{name} stair {level+1} to {level+2}',points=[F.p(x+.68,lo,z-.8),F.p(x+.68,lo,z),F.p(x+.68,mid,z+2.9),F.p(x+.68,mid,z+3.45),F.p(x+2.12,mid,z+3.45),F.p(x+2.12,mid,z+2.9),F.p(x+2.12,hi,z),F.p(x+2.12,hi,z-.8)]))
  # Ground routes remain separate from the inferred upper-level ramp traversal.
  routes=[dict(name='Garage entry and ground aisle',points=[F.p(x,.12,z) for x,z in [(81,-25),(74,-25),(65,-25),(54,-25),(40,-25),(30,-25)]]),dict(name='Ground cross aisle',points=[F.p(x,.12,z) for x,z in [(54,-25),(54,-19),(62,-19),(70,-19)]])]
  for level in range(3):
   lo,hi=levels[level:level+2]
   routes.append(dict(name=f'Inferred ramp level {level+1} to {level+2}',points=[F.p(73,lo,-30.4),F.p(70,lo,-31.5),F.p(56.5,(lo+hi)/2,-36.5),F.p(43,hi,-41.5),F.p(39.5,hi,-42.8)]))
+ routes.extend(stairroutes)
  xmin,zmin,xmax,zmax=p.bounds
  return dict(key=KEY,name='Stadium District parking garage',center=[p.centroid.x,0,p.centroid.y],bounds=[xmin,zmin,xmax,zmax],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=routes,hotelSources=[])
 if __name__=='__main__':

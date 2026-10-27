@@ -43,20 +43,23 @@
   "uncertainDimensions": [
     "Mapped footprint confirmed way/790044912 (232 original shell faces); untagged imported 5m height is not a measured height.",
     "Adopted ground .12m, upper deck 3.36/6.60/9.84m, parapet 1.56m: estimates from Street View, not surveyed.",
-    "Roof ramp endpoints adopted in Home2 local frame (43,-41.5) to (70,-31.5), width6m, grade~11.25%, guided by aerial. Repeated lower ramps are inferred, not verified as-built internal plans."
+    "Roof ramp endpoints adopted in Home2 local frame (43,-41.5) to (70,-31.5), width6m, grade~11.25%, guided by aerial. Repeated lower ramps are inferred, not verified as-built internal plans.",
+    "North stair bay local(23,-23), south(72.8,-16), width2.8m, each flight run2.9m/rise1.62m. Roof shelter and repeated lower flight layout are inferred from visible exterior/aerial, not surveyed plans."
   ],
   "implemented": [
-    "Installed original 3090-triangle four-level open-deck garage on mapped way/790044912: columns, concrete parapets, striped screen, parking markings and ground entrance hardware.",
+    "Installed original 9282-triangle four-level open-deck garage on mapped way/790044912: columns, concrete parapets, striped screen, parking markings and ground entrance hardware.",
     "Northeast straight ramp and triangular roof well based on aerial, with three repeated collision ramp ascents. Repeated lower layout explicitly inferred; heights estimated.",
     "Only232ownedplaceholder visual and collision faces removed; all9560mesh groups retain vertices/metadata, roads and neighboring hotels preserved.",
-    "632scopedchecks and40actualwalkingsegments over5out-and-backroutes pass, including each upper ramp."
+    "632scopedchecks and40actualwalkingsegments over5out-and-backroutes pass, including each upper ramp.",
+    "Installed north/south switchback stair bays with real deck openings, midpoint landings, metal rails and a north roof shelter. Flight dimensions and hidden repetitions explicitly inferred. All84newwalkingsegments pass with landing-height audit.",
+    "Actual jeep continuous entrance-to-roof drive passed in61.7seconds through both interlevel turns, without teleporting between floors. Earlier8isolatedclearanceruns also pass."
   ],
   "remaining": [
-    "Reconstruct north and south stair enclosures and reference-supported stair flights; current upper access is by ramps only.",
     "Corroborate inferred repeated lower ramp layout, estimated elevations, bay spacing and marking layout.",
     "Improve flat interior shading and uniform deck finish; add panel seams, utility/service details.",
-    "Drive a real vehicle through entry and all ramps to verify vehicle clearance and turning room; walking is verified, driving is not.",
-    "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved."
+    "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved.",
+    "Corroborate estimated stair bay/flight dimensions and north roof shelter details; inspect edge protection beyond centreline traversal.",
+    "Garage deck/soffit/gray material names do not select scanned concrete detail. Use uniquely scoped descriptive material names in a subsequent finish pass; do not change global PBR rules."
   ],
   "evidence": [
     {
@@ -126,10 +129,64 @@
       "segments": 40,
       "routes": 5,
       "scopedChecks": 632
+    },
+    {
+      "type": "stairs-actual-walking",
+      "path": "build/city-exteriors/stadium-garage-stairs-walk/results.json",
+      "passed": true,
+      "segments": 84,
+      "routes": 6,
+      "scopedChecks": 908,
+      "heightAudit": "All recorded waypoint heights within0.4m of expected floor; zero failures."
+    },
+    {
+      "type": "individual-vehicle-clearance",
+      "path": "build/city-exteriors/stadium-garage-drive-centered/results.json",
+      "passed": true,
+      "runs": 8,
+      "note": "Previous installed ramp revision, before stair additions. Real jeep keyboard inputs; route starts teleported. Does not establish interlevel turns."
+    },
+    {
+      "type": "stairs-installed-views",
+      "path": "build/city-exteriors/stadium-garage-stairs-installed",
+      "note": "All6views inspected; architectural openings present. Flat/bright interior shading retained as discrepancy. Same960x540ultra daylight method. Variable shared machine load; no controlled improvement claim.",
+      "frameTimesMs": {
+        "arrival": {
+          "median": 32.3,
+          "p95": 46
+        },
+        "roof": {
+          "median": 16.6,
+          "p95": 20.4
+        },
+        "ramp-bottom": {
+          "median": 27.2,
+          "p95": 37.7
+        },
+        "ramp-top": {
+          "median": 17.1,
+          "p95": 23.4
+        },
+        "south-stairs": {
+          "median": 17.1,
+          "p95": 21.5
+        },
+        "north-stairs": {
+          "median": 18.2,
+          "p95": 22.9
+        }
+      }
+    },
+    {
+      "type": "continuous-vehicle-route",
+      "path": "build/city-exteriors/stadium-garage-drive-continuous/results.json",
+      "passed": true,
+      "elapsedSeconds": 61.7,
+      "note": "Actual keyboard-driven jeep. Single initial placement; allthreeascents and bothinterlevelturns continuously driven. Final chassisheight10.397m matches roof9.84m."
     }
   ],
   "nextPass": {
-    "priority": "Continue activegarage: survey visible north/south stairs, build enclosures/flights, improve surface depth, testvehicleclearance. Currentinstalledramp revision is verified by40walkingsegments but not finalarchitecturalcompletion.",
-    "checkpoint": "Firstpass5a43618; subsequent ramp revision saved after allchecks. DraftPR283/issue282 remainsactive."
+    "priority": "Garage finish pass: uniquely scoped material names for scanned concrete on deck/soffit/parapets, panel seams and service details; review stair edge protection. Preserve uncertainties, then advance to next unclaimed building with honest residual discrepancies.",
+    "checkpoint": "Installed9282triangles;908scopedchecks;84newstairwalkingsegments withheightaudit;8isolatedvehicleclearanceruns and61.7secondcontinuousentrance-to-roofdrive pass. Sixinstalledviewsinspected. Package1413assets,current685batchbake."
   }
 }

@@ -12901,11 +12901,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Reconstruct north and south stair enclosures and reference-supported stair flights; current upper access is by ramps only.",
     "Corroborate inferred repeated lower ramp layout, estimated elevations, bay spacing and marking layout.",
     "Improve flat interior shading and uniform deck finish; add panel seams, utility/service details.",
-    "Drive a real vehicle through entry and all ramps to verify vehicle clearance and turning room; walking is verified, driving is not.",
-    "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved."
+    "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved.",
+    "Corroborate estimated stair bay/flight dimensions and north roof shelter details; inspect edge protection beyond centreline traversal.",
+    "Garage deck/soffit/gray material names do not select scanned concrete detail. Use uniquely scoped descriptive material names in a subsequent finish pass; do not change global PBR rules."
    ],
    "record": "tools/resort-blocks/stadium-garage.json",
    "buildings": [],
