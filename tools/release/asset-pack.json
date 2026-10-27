@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1387,
- "bytes": 1060342218,
+ "count": 1391,
+ "bytes": 1062543694,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18622354,
-   "sha256": "b9c0881937098d40111d59120cca27f0634f558f495930dbc5f10e81c63e2154",
+   "bytes": 18633618,
+   "sha256": "1a8c04013e46809f437966a170c45c86d0fe3e327b7d326562952bbd23c391a6",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13065012,
-   "sha256": "30b7108f61546713c5248621da337f9a9e4e52b3d82dae9194e159bd4cb46542",
+   "bytes": 13065228,
+   "sha256": "370f61307cb960bf26c23f1840e169f0949603d105f9f306d2035a80e0d0a605",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109761892,
-   "sha256": "6c3f9ca0854c1560659be11d42f1cbd6b3ebaa6cc639432989c500452e39c328",
+   "bytes": 109761492,
+   "sha256": "fcbda1cb4e0a44e014e27e0f921637a65a54bab26b6fd50c38dc5b4f45976c46",
    "kind": "optimized"
   },
   {
@@ -5825,6 +5825,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/canes-tropicana-exterior-collision.bin",
+   "bytes": 412,
+   "sha256": "37eb539338f58b415510895d52a741dd9da2cea85684430f662650a05438c783",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/canes-tropicana-exterior.glb",
+   "bytes": 1114972,
+   "sha256": "636eeeb1925fe5ec7327d246e3e822176e4f6f1a6481bb3090a50a811a45bc9c",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/canes-tropicana-interior-collision.bin",
+   "bytes": 1200,
+   "sha256": "348f77a496b12e45461690802a89c182fa016e5bc39e748c43149ec383099648",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/canes-tropicana-interior.glb",
+   "bytes": 1073156,
+   "sha256": "70a35a6c35ce60608ebe1554f9d106355b5808c59c15064db4a3fa33174d04c2",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/carnavalCourt-exterior-collision.bin",
    "bytes": 5876,
    "sha256": "311ca92765af53e8a65b3e9410ca80e1958e0fcb560a3f83ed402f3fb2da7255",
@@ -8142,8 +8166,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 344138,
-   "sha256": "2da7b75d5c4172f33abbe7341715d555970e7af9fdac3946280c90236c92a6d7",
+   "bytes": 344794,
+   "sha256": "55d17d8bcfbdb31a88cb12c9fa3a8534add1aabf839bebb9c1325ada1a193f40",
    "kind": "original"
   },
   {

@@ -12574,14 +12574,13 @@
    "id": "ext-canes-tropicana",
    "title": "Refine the exterior of Raising Canes West Tropicana",
    "area": "exteriors",
-   "size": "M",
+   "size": "S",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
    "items": [
-    "Reconcile facade references and model exterior on mapped footprint.",
-    "Reference-supported public dining layout if sufficient evidence, with private spaces closed.",
-    "Installed visual inspection, walking, support/collision checks, matching performance and optimized packaged assets with current bake."
+    "Exact sign typography, stone finish, facade divisions and full landscaping/drive-through furnishings remain approximate.",
+    "Public room layout inferred rather than surveyed; private kitchen, authentic mural/art and menu graphics not reproduced."
    ],
    "record": "tools/resort-blocks/canes-tropicana.json",
    "buildings": [],
@@ -12593,7 +12592,12 @@
     "writes": [
      "tools/resort-blocks/canes-tropicana.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_canes_tropicana.py",
+     "tools/strip-landmarks/test-canes-tropicana.mjs",
+     "tools/city-exteriors/install-canes-tropicana.py",
+     "tools/strip-landmarks/canes_tropicana.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
