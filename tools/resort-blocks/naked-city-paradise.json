@@ -27,17 +27,41 @@
       "url": "https://nakedcitylv.com/paradise",
       "accessDate": "2026-10-27",
       "observed": "Official location reference from preceding pass confirms4608Paradise."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=j8MNSLVsVLyEhNOYkRnkyg&heading=0&pitch=0",
+      "imageDate": "2023-02",
+      "accessDate": "2026-10-27",
+      "observed": "South return besideOfficeBar visually inspected: upper windows and lower shop glazing."
     }
   ],
   "uncertainDimensions": [
     "Mapped irregular174m2 footprint;6.6m shared building height estimated. Window and awning sizes inferred from street photographs."
   ],
-  "implemented": [],
-  "remaining": [
-    "Build and inspect original exterior and approach.",
-    "Corroborate public room and rear/service layout before adding an interior.",
-    "Fine facade proportions and finishes require reference comparison."
+  "implemented": [
+    "Original irregular exterior with raised lettering, upper windows, closed entrance glazing, curved fabric canopy, sloping side awnings, lattice, timber patio screen, planter barrels and string-light fixtures.",
+    "South return glazing/windows follow the adjoining Office Bar street reference; no shared-tenant overlap.",
+    "Only12ownedvisual and12matchingcollisiontriangles replaced; optimized exterior0.63MiB."
   ],
-  "validation": {},
-  "evidence": []
+  "remaining": [
+    "Exact height, sign scale, rear/service openings and fine weathering remain estimates requiring closer reference comparison.",
+    "Public room and rear/private layout remain unbuilt pending corroboration; closed exterior doors are intentional.",
+    "Roadside shared pylon and richer planting remain for a follow-up; this pass is not photorealistic completion."
+  ],
+  "validation": {
+    "scopedRoutes": "12support and capsule checks passed with current city collision.",
+    "runtimeWalk": "4actual west approach/return segments passed.",
+    "installedViews": "West/south default-sunset and temporary neutral-light views visually inspected; added missing south-return glazing after review.",
+    "performance": "960x540ultra180frames/view. Matching default-sunset baseline west16.7/18.9,south16.6/18.8ms median/p95; first installed west16.7/18.4,south16.6/18.9. Final neutral-light review16.6\u201316.7median/18.7\u201319.2p95, separately reported because lighting differs.",
+    "packaging": "667batches,24.6Mnear\u21927.12MLODtriangles,17.53MBbinary;1361runtimeassets present,0missing,bakefresh.",
+    "checks": "Typecheck, Python syntax and record/public checks passed; one pre-existing inventory email warning."
+  },
+  "evidence": [
+    "build/city-exteriors/naked-city-before/results.json",
+    "build/city-exteriors/naked-city-after/results.json",
+    "build/city-exteriors/naked-city-final/results.json",
+    "build/city-exteriors/naked-city-walk/results.json",
+    "build/strip-landmarks/nakedCity-route-audit.json",
+    "build/city-exteriors/nakedCity-ownership-audit.json"
+  ]
 }
