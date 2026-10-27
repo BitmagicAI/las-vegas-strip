@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1413,
- "bytes": 1081021642,
+ "bytes": 1081045273,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18853340,
-   "sha256": "0ff601f5d7f67316ccf9713a85c4eeda560ed44b6a5f4986f4d9dd4a3e6846c0",
+   "bytes": 18853407,
+   "sha256": "a012739a5464b875573188ace25319d7a51ad62480adb298edd42c8bb9204a8a",
    "kind": "original"
   },
   {
@@ -7974,14 +7974,14 @@
   },
   {
    "path": "build/strip-landmarks/stadium-garage-exterior-collision.bin",
-   "bytes": 5536,
-   "sha256": "2c63128d190fbb6182d48577fa7bb76e9ff78b3ddbebd86561bee3b1bf55b409",
+   "bytes": 6064,
+   "sha256": "2645b80ee9fd402d5acb29f5be271657ff37350f40750f6cc662d22b6953f72e",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/stadium-garage-exterior.glb",
-   "bytes": 273408,
-   "sha256": "7bcc45f815f1252f8814af269131f71213833f36751e593c3ab7a778fd1b9de1",
+   "bytes": 296444,
+   "sha256": "4098d7a0b6965b948fa15e29532ab7b98700e6be55d06f4bfc64b3b70f88bf08",
    "kind": "optimized"
   },
   {

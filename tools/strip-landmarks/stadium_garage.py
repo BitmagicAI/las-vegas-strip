@@ -39,7 +39,10 @@ def build(B):
     G.box('sg-ochre' if i%7==2 else 'sg-gray',(float(u)+.29,5.49,outside*.14),(.57,10.96,.045))
     G.box('sg-white',(float(u),5.52,0),(.14,11.04,.48))
   else:
-   for y in levels[1:]:G.box('sg-gray',(L/2,y+.78,0),(L,1.56,.28),True)
+   for y in levels[1:]:
+    G.box('sg-gray',(L/2,y+.78,0),(L,1.56,.28),True)
+    for u in np.arange(6.5,L-.5,6.5):
+     G.box('sg-joint-paint',(float(u),y+.78,outside*.151),(.025,1.5,.012))
    if L>3:
     for u in np.linspace(.25,L-.25,max(2,round(L/7)+1)):
      G.box('sg-concrete',(float(u),5.5,0),(.42,11,.48),True)
@@ -67,6 +70,12 @@ def build(B):
    for x in np.arange(27,75,2.65):
     stripe=F.poly([(x,z),(x+.09,z),(x+.09,z+4.6),(x,z+4.6)]).intersection(p.buffer(-.65))
     B.planar('sg-line',stripe.difference(opening) if y>.2 else stripe,y+.012)
+ # Cabinet panel joints, handles and plinth: generic detail guided by the visible
+ # green service cabinet, with exact hardware arrangement not surveyed.
+ F.box('sg-concrete',(76.7,.08,-10.7),(1.55,.16,1.3),True)
+ for z in [-11.05,-10.7,-10.35]:
+  F.box('sg-joint-paint',(77.36,.96,z),(.018,1.8,.018))
+  F.box('sg-hardware-paint',(77.38,1.05,z+.07),(.04,.12,.06))
  # Ground-level entrance hardware seen in Street View; gate held open for access.
  F.box('sg-green',(76.7,.95,-10.7),(1.3,1.9,1.0),True)
  for z in [-11.8,-9.6]:F.tube('sg-yellow',(77.2,0,z),(77.2,1.1,z),.055,10)
@@ -98,11 +107,17 @@ def build(B):
      zz=start+(end-start)*(i+.5)/9;yy=y0+(y1-y0)*(i+1)/9
      F.box('sg-concrete',(cx,yy-.09,zz),(1.28,.18,abs(end-start)/9))
     for rx in [cx-.64,cx+.64]:
-     F.tube('sg-gray',(rx,y0+1,start),(rx,y1+1,end),.027,8)
-     F.tube('sg-gray',(rx,y0+.55,start),(rx,y1+.55,end),.018,6)
+     # A separate simple collision curtain follows the visible rail. It prevents
+     # side falls without turning the open railing into an opaque rendered wall.
+     rail=[F.p(rx,y0+.03,start),F.p(rx,y1+.03,end),F.p(rx,y1+1,end),F.p(rx,y0+1,start)]
+     col=B.solids[B.property];offset=len(col['vertices'])//3
+     col['vertices'].extend(float(v) for q in rail for v in q)
+     col['indices'].extend(offset+i for i in [0,1,2,0,2,3])
+     F.tube('sg-rail-paint',(rx,y0+1,start),(rx,y1+1,end),.027,8)
+     F.tube('sg-rail-paint',(rx,y0+.55,start),(rx,y1+.55,end),.018,6)
      for i in range(7):
       t=i/6;zz=start+(end-start)*t;yy=y0+(y1-y0)*t
-      F.tube('sg-gray',(rx,yy,zz),(rx,yy+1,zz),.018,6)
+      F.tube('sg-rail-paint',(rx,yy,zz),(rx,yy+1,zz),.018,6)
    F.box('sg-concrete',(x+1.4,mid+.5,z+4.05),(2.8,1,.12),True)
    stairroutes.append(dict(name=f'{name} stair {level+1} to {level+2}',points=[F.p(x+.68,lo,z-.8),F.p(x+.68,lo,z),F.p(x+.68,mid,z+2.9),F.p(x+.68,mid,z+3.45),F.p(x+2.12,mid,z+3.45),F.p(x+2.12,mid,z+2.9),F.p(x+2.12,hi,z),F.p(x+2.12,hi,z-.8)]))
  # Ground routes remain separate from the inferred upper-level ramp traversal.

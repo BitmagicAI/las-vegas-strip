@@ -1,7 +1,7 @@
 {
   "id": "stadium-garage",
   "name": "Home2 adjacent Stadium District parking garage",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/790044912"
   ],
@@ -47,19 +47,21 @@
     "North stair bay local(23,-23), south(72.8,-16), width2.8m, each flight run2.9m/rise1.62m. Roof shelter and repeated lower flight layout are inferred from visible exterior/aerial, not surveyed plans."
   ],
   "implemented": [
-    "Installed original 9282-triangle four-level open-deck garage on mapped way/790044912: columns, concrete parapets, striped screen, parking markings and ground entrance hardware.",
+    "Installed original 9906-triangle four-level open-deck garage on mapped way/790044912: columns, concrete parapets, striped screen, parking markings and ground entrance hardware.",
     "Northeast straight ramp and triangular roof well based on aerial, with three repeated collision ramp ascents. Repeated lower layout explicitly inferred; heights estimated.",
     "Only232ownedplaceholder visual and collision faces removed; all9560mesh groups retain vertices/metadata, roads and neighboring hotels preserved.",
     "632scopedchecks and40actualwalkingsegments over5out-and-backroutes pass, including each upper ramp.",
     "Installed north/south switchback stair bays with real deck openings, midpoint landings, metal rails and a north roof shelter. Flight dimensions and hidden repetitions explicitly inferred. All84newwalkingsegments pass with landing-height audit.",
-    "Actual jeep continuous entrance-to-roof drive passed in61.7seconds through both interlevel turns, without teleporting between floors. Earlier8isolatedclearanceruns also pass."
+    "Actual jeep continuous entrance-to-roof drive passed in61.7seconds through both interlevel turns, without teleporting between floors. Earlier8isolatedclearanceruns also pass.",
+    "Added parapet joints, cabinet panel joints/handles, darker metal rail finish and simple collision curtains behind each stair flight rail. 932 scoped checks pass, including 24 sideways rail rays; all84 stair walking segments pass after collision change.",
+    "Asset-local names now select scanned concrete wall/soffit/parapet detail and concrete_floor_02 on decks; rejected first paver-grid mapping after installed visual review. No shared PBR rules changed."
   ],
   "remaining": [
     "Corroborate inferred repeated lower ramp layout, estimated elevations, bay spacing and marking layout.",
-    "Improve flat interior shading and uniform deck finish; add panel seams, utility/service details.",
+    "Interior illumination remains overly flat/bright; exact service layout and hardware remain approximate.",
     "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved.",
-    "Corroborate estimated stair bay/flight dimensions and north roof shelter details; inspect edge protection beyond centreline traversal.",
-    "Garage deck/soffit/gray material names do not select scanned concrete detail. Use uniquely scoped descriptive material names in a subsequent finish pass; do not change global PBR rules."
+    "Corroborate estimated stair bay/flight dimensions and north roof shelter details; further edge-protection checks beyond sideways rays and centreline traversal remain.",
+    "Concrete floor detail removes the incorrect paver grid but its tonal mottling is too strong at roof scale; tune asset-local material variation in a later refinement pass without changing shared PBR rules."
   ],
   "evidence": [
     {
@@ -183,10 +185,50 @@
       "passed": true,
       "elapsedSeconds": 61.7,
       "note": "Actual keyboard-driven jeep. Single initial placement; allthreeascents and bothinterlevelturns continuously driven. Final chassisheight10.397m matches roof9.84m."
+    },
+    {
+      "type": "finish-stair-walking",
+      "path": "build/city-exteriors/stadium-garage-finish-walk/results.json",
+      "passed": true,
+      "segments": 84,
+      "routes": 6,
+      "scopedChecks": 932
+    },
+    {
+      "type": "final-finish-installed",
+      "path": "build/city-exteriors/stadium-garage-concrete-installed",
+      "viewsInspected": 6,
+      "frameTimesMs": {
+        "arrival": {
+          "median": 64.6,
+          "p95": 93.2
+        },
+        "roof": {
+          "median": 29.1,
+          "p95": 32
+        },
+        "ramp-bottom": {
+          "median": 52.7,
+          "p95": 78.8
+        },
+        "ramp-top": {
+          "median": 32.7,
+          "p95": 36
+        },
+        "south-stairs": {
+          "median": 29.6,
+          "p95": 35.2
+        },
+        "north-stairs": {
+          "median": 30.4,
+          "p95": 34.8
+        }
+      },
+      "note": "Same960x540ultra daylight method. All six views inspected. Concrete floor mottling too strong; interiors overly flat. Variable shared-machine results, several views materially slower than prior pass; performance unresolved, no60fps or regression-free claim."
     }
   ],
   "nextPass": {
-    "priority": "Garage finish pass: uniquely scoped material names for scanned concrete on deck/soffit/parapets, panel seams and service details; review stair edge protection. Preserve uncertainties, then advance to next unclaimed building with honest residual discrepancies.",
-    "checkpoint": "Installed9282triangles;908scopedchecks;84newstairwalkingsegments withheightaudit;8isolatedvehicleclearanceruns and61.7secondcontinuousentrance-to-roofdrive pass. Sixinstalledviewsinspected. Package1413assets,current685batchbake."
+    "priority": "Refine deck tonal variation and interior shading; investigate performance under controlled load. Corroborate dimensions/layout. City-wide work advances to claimed Motel6 task284.",
+    "checkpoint": "Installed9906triangles;932scopedchecks;84actualstairsegments pass; final6daylightviewsinspected;1413assets0missing,current685batchbake. Prior61.7secondcontinuousjeepdrive retained, circulationunchanged."
   }
 }

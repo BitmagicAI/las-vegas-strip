@@ -3,9 +3,14 @@ import bpy,sys
 from pathlib import Path
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
-E.colors.update({'sg-deck':'92958e','sg-soffit':'9da299','sg-concrete':'bbbcb4','sg-gray':'a4a69e','sg-white':'dedfd8','sg-ochre':'98724b','sg-line':'d9d7bc','sg-green':'485b40','sg-yellow':'c9ad50','sg-red':'b63e3b'})
+E.colors.update({'sg-deck':'92958e','sg-soffit':'9da299','sg-concrete':'bbbcb4','sg-gray':'a4a69e','sg-white':'dedfd8','sg-ochre':'98724b','sg-line':'d9d7bc','sg-green':'485b40','sg-yellow':'c9ad50','sg-red':'b63e3b','sg-rail-paint':'626d69','sg-joint-paint':'737972','sg-hardware-paint':'c2c7bd'})
 bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('stadium-garage-exterior')
-for m in E.materials.values():m.node_tree.nodes.get('Principled BSDF').inputs['Roughness'].default_value=.9
+# Asset-local semantic names select existing scanned concrete sets without changing
+# shared PBR rules (the old sg-* prefix is also used by other landmarks).
+finish={'sg-deck':'deck-support-concrete','sg-soffit':'soffit-concrete','sg-concrete':'structure-concrete','sg-gray':'parapet-concrete'}
+for key,m in E.materials.items():
+ m.name='Stadium garage / '+finish.get(key,key.replace('sg-','')+'-paint')
+ m.node_tree.nodes.get('Principled BSDF').inputs['Roughness'].default_value=.9
 for o in bpy.context.scene.objects:
  if o.type!='MESH':continue
  uv=o.data.uv_layers.new(name='Metre finish')

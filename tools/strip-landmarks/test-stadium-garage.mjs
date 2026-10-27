@@ -26,6 +26,14 @@ for(const route of meta.routes)for(let k=1;k<route.points.length;k++){
   if(hit||!floor)failures.push({x,y,z,blocked:!!hit,floor:!!floor});
  }
 }
+// Cast sideways from the middle of every flight toward both visible rails.
+const yaw=-Math.atan2(30.624,25.216),co=Math.cos(yaw),si=Math.sin(yaw);
+for(const [x,z] of [[23,-23],[72.8,-16]])for(let level=0;level<3;level++)for(let side=0;side<2;side++)for(const sign of [-1,1]){
+ const lx=x+.68+side*1.44,lz=z+1.45,y=.12+level*3.24+(side?2.43:.81)+.6;
+ const origin={x:-824.745+co*lx+si*lz,y,z:1779.52-si*lx+co*lz};
+ const hit=world.castRay(new RAPIER.Ray(origin,{x:co*sign,y:0,z:-si*sign}),.8,true);checks++;
+ if(!hit)failures.push({type:'stair-side-rail',x,z,level,side,sign});
+}
 world.free();const result={checks,failures,city:true};
 fs.writeFileSync('build/strip-landmarks/stadium-garage-route-audit.json',JSON.stringify(result,null,2));
 console.log(result);assert.equal(failures.length,0);

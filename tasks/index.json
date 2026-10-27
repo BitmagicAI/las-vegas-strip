@@ -12902,10 +12902,10 @@
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Corroborate inferred repeated lower ramp layout, estimated elevations, bay spacing and marking layout.",
-    "Improve flat interior shading and uniform deck finish; add panel seams, utility/service details.",
+    "Interior illumination remains overly flat/bright; exact service layout and hardware remain approximate.",
     "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved.",
-    "Corroborate estimated stair bay/flight dimensions and north roof shelter details; inspect edge protection beyond centreline traversal.",
-    "Garage deck/soffit/gray material names do not select scanned concrete detail. Use uniquely scoped descriptive material names in a subsequent finish pass; do not change global PBR rules."
+    "Corroborate estimated stair bay/flight dimensions and north roof shelter details; further edge-protection checks beyond sideways rays and centreline traversal remain.",
+    "Concrete floor detail removes the incorrect paver grid but its tonal mottling is too strong at roof scale; tune asset-local material variation in a later refinement pass without changing shared PBR rules."
    ],
    "record": "tools/resort-blocks/stadium-garage.json",
    "buildings": [],
