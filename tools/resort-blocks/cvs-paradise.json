@@ -1,0 +1,48 @@
+{
+  "id": "cvs-paradise",
+  "name": "CVS Paradise Esplanade",
+  "status": "active",
+  "mappedIds": [
+    "way/319208750"
+  ],
+  "claim": {
+    "issue": 256,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/256",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://s4.localdatacdn.com/nv/las-vegas/155338/original/RJIAbpTqe2.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Inspected west facade: stone field, thin stacked-stone plinth, recessed windows and black canopies, thick stucco piers, layered cornices, raised glazed corner tower. Photo date unknown."
+    },
+    {
+      "url": "https://s1.localdatacdn.com/nv/las-vegas/155338/original/khGYnzdC9E.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Oblique west-front photo inspected: low stone base, square projecting CVS plaques, window divisions and parking-facing elevation. Photo date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1085,-115.1510,105m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial inspected: detached southern pad, southwest chamfer entrance, west/south public elevations, east service road and parking on west/south."
+    },
+    {
+      "url": "https://images1.showcase.com/d2/9cxPDV2gM04CRe4l8BUXdGD-j52xyAVQg6vrB7qHFt8/document.pdf",
+      "accessDate": "2026-10-27",
+      "observed": "Colliers2026 site-plan roster lists suite1300 CVS13013sqft."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint1131.8m2; listed lease area1208.9m2 uses different measurement convention. Heights and precise front divisions must be estimated against photos.",
+    "No public interior layout verified yet. Official store URL fetch timed out; no claim that its content was read."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build original west/south facades, southwest entrance tower, rear/service treatment and approach.",
+    "Find public interior references before authoring inferred shop layout.",
+    "Scoped ownership/collision audit, installed daylight and walking review, matching performance, optimized assets and city bake."
+  ],
+  "evidence": [],
+  "validation": {}
+}
