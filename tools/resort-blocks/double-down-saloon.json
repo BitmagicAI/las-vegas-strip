@@ -69,9 +69,9 @@
     "Separate streamed public bar study with stools, bottles, shelves, refrigerator, stage corner and original paper-collage materials; fixed pooled lights."
   ],
   "validation": {
-    "scopedRoutes": "59 support/clearance checks passed with current city collision before palms (outside route).",
+    "scopedRoutes": "59 support/clearance checks passed; current material-only refinement leaves geometry unchanged.",
     "ownership": "Only11 old shell triangles and their matching collision faces removed.",
-    "offlineReview": "North/east/bar renders inspected; corrected north sign orientation and oversaturated collage. Further installed review pending.",
+    "offlineReview": "North/east/bar renders inspected; final installed review supersedes offline study.",
     "runtimeWalk": "All eight actual outbound/return porch-bar segments passed.",
     "installedViews": "Installed east entrance, north facade/palms, west fascia/arches and public bar inspected. Corrected wrong-facing sign, failed palm export and excessive light intensity.",
     "performance": [
@@ -93,13 +93,15 @@
     ],
     "performanceScope": "960x540 ultra,180 frames/view; no matched pre-replacement baseline, no city-wide FPS guarantee.",
     "checks": "Typecheck and public/review checks pass; public checker retains one existing inventory email warning.",
-    "packaging": "1345 present,0missing; current city bake661batches24.4M near/7.04M LOD triangles."
+    "packaging": "1345 present,0missing; current city bake661batches24.4M near/7.04M LOD triangles.",
+    "paperRefinement": "Original rotated layered poster and fictional souvenir-note atlases installed and visually inspected. Matching bar p50/p95 16.7/18.0ms versus prior16.7/17.9ms at960x540ultra."
   },
   "evidence": [
     "build/city-exteriors/double-down-final/results.json",
     "build/city-exteriors/double-down-walk/results.json",
     "build/strip-landmarks/doubleDown-route-audit.json",
     "build/city-exteriors/doubleDown-ownership-audit.json",
-    "build/city-exteriors/double-down-west/results.json"
+    "build/city-exteriors/double-down-west/results.json",
+    "build/city-exteriors/double-down-paper-refined/results.json"
   ]
 }

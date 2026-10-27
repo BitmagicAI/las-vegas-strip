@@ -16,18 +16,13 @@ def finishes():
   if key=='dd-block':
    grout=(((x+(y//64%2)*64)%128)<3)|((y%64)<3);s=np.where(grout,.7,1)+noise*.06
   elif key=='dd-shingle':s=.8+.18*np.sin((x//64+(y//40)*3)*7.1)+noise*.09;s[(y%40)<3]=.45
-  elif key in ['dd-poster','dd-ceiling']:
-   # A repeatable original paper-collage atlas, all marks generated here.
-   s=np.ones((n,n));rgba[:,:,:3]=c
-   for j in range(140):
-    xx=int(rng.integers(0,490));yy=int(rng.integers(0,490));w=int(rng.integers(18,80));h=int(rng.integers(14,65));col=np.array([.65,.60,.49])*rng.uniform(.55,1.2) if j%5 else np.array([.40,.24,.20])
-    rgba[yy:yy+h,xx:xx+w,:3]=col
-    for r in range(4,h-3,6):rgba[yy+r:yy+r+2,xx+3:xx+w-3,:3]=col*.38
-   rgba[:,:,:3]*=(1+noise*.09)[:,:,None]
+  elif key in ['dd-poster','dd-ceiling']:s=np.ones((n,n))
   elif key=='dd-wood':s=.92+np.sin(x*.23+np.sin(y*.018))* .06+noise*.04
   else:s=.85+noise*.09;s[(x%128<2)|(y%128<2)]=.55
   if key not in ['dd-poster','dd-ceiling']:rgba[:,:,:3]=s[:,:,None]*c
-  im=bpy.data.images.new('Original saloon '+key,width=n,height=n);im.pixels.foreach_set(rgba.flatten());im.pack()
+  im=bpy.data.images.load(str((E.OUT/('doubleDown-'+('poster' if key=='dd-poster' else 'ceiling')+'-original.png')).resolve())) if key in ['dd-poster','dd-ceiling'] else bpy.data.images.new('Original saloon '+key,width=n,height=n)
+  if key not in ['dd-poster','dd-ceiling']:im.pixels.foreach_set(rgba.flatten())
+  im.pack()
   bs=m.node_tree.nodes.get('Principled BSDF');t=m.node_tree.nodes.new('ShaderNodeTexImage');t.image=im;m.node_tree.links.new(t.outputs['Color'],bs.inputs['Base Color']);bs.inputs['Roughness'].default_value=.86
  for key,m in E.materials.items():
   bs=m.node_tree.nodes.get('Principled BSDF')
@@ -39,7 +34,8 @@ def finishes():
    axis=max(range(3),key=lambda i:abs(p.normal[i]))
    for li in p.loop_indices:
     q=obj.data.vertices[obj.data.loops[li].vertex_index].co;uv.data[li].uv=(q.y,q.z) if axis==0 else (q.x,q.z) if axis==1 else(q.x,q.y)
-  for v in uv.data:v.uv*=.5
+  paper=any(m and m.name in ['dd-poster','dd-ceiling'] for m in obj.data.materials)
+  for v in uv.data:v.uv*=.25 if paper else .5
 
 for part in ['exterior','interior']:
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('doubleDown-'+part);finishes()
