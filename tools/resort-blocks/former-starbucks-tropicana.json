@@ -9,7 +9,8 @@
     "issue": 268,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/268",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/269"
   },
   "sources": [
     {
@@ -27,9 +28,32 @@
     "Mapped footprint407.72m2,11.575m wide35.224m deep; height5m estimated. Facade divisions/canopy sizes inferred from StreetView.",
     "Current tenancy and interior not established; interior remains closed."
   ],
-  "implemented": [],
-  "remaining": [
-    "Exterior and frontage construction, target-only collision replacement, installed review, scoped/actual walking and matching performance pending."
+  "implemented": [
+    "Original mapped exterior with white stucco, grey base, sloped canopy, framed glazed bays, closed double-door entrance with address, patio railing, drive-through window, coping and roof equipment.",
+    "Only43ownedvisual43collisionfaces removed; retainedgeometryexactequal."
   ],
-  "evidence": []
+  "remaining": [
+    "Current tenancy/interior unknown; interior stays closed.",
+    "Exact facade divisions, landscape and surrounding parking furnishings remain approximate; not photorealistic."
+  ],
+  "evidence": [
+    "build/city-exteriors/former-starbucks-tropicana-final",
+    "build/city-exteriors/former-starbucks-tropicana-walk/results.json",
+    "build/strip-landmarks/former-starbucks-tropicana-route-audit.json",
+    "build/city-exteriors/former-starbucks-tropicana-packaged"
+  ],
+  "verification": {
+    "sourceTriangles": 4194,
+    "scopedChecks": 144,
+    "actualWalkingSegments": 10,
+    "visualReview": "Three first installed views inspected; corrected smooth grey plinth, final west view inspected. Final packaged northwest view inspected.",
+    "assetsPresent": 1393,
+    "assetsMissing": 0,
+    "bakeBatches": 678
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/former-starbucks-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/former-starbucks-tropicana-packaged/results.json",
+    "conditions": "960x540ultra neutraldaylight3cameras180frames. Baseline16.6\u201317.0msmedian17.8\u201321.5msp95; finalpackaged16.4\u201316.6msmedian18.8\u201319.6msp95."
+  }
 }

@@ -12615,9 +12615,10 @@
    "size": "S",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
    "items": [
-    "Exterior and frontage construction, target-only collision replacement, installed review, scoped/actual walking and matching performance pending."
+    "Current tenancy/interior unknown; interior stays closed.",
+    "Exact facade divisions, landscape and surrounding parking furnishings remain approximate; not photorealistic."
    ],
    "record": "tools/resort-blocks/former-starbucks-tropicana.json",
    "buildings": [],
@@ -12629,7 +12630,12 @@
     "writes": [
      "tools/resort-blocks/former-starbucks-tropicana.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_former_starbucks_tropicana.py",
+     "tools/city-exteriors/install-former-starbucks-tropicana.py",
+     "tools/strip-landmarks/test-former-starbucks-tropicana.mjs",
+     "tools/strip-landmarks/former_starbucks_tropicana.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
