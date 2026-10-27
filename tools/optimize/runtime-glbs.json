@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-27T11:36:17.700Z",
- "totalBytes": 3339136516,
+ "generated": "2026-10-27T11:49:57.791Z",
+ "totalBytes": 3341294848,
  "count": 658,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
@@ -2078,7 +2078,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3964960,
+   "bytes": 6123292,
    "preset": "level",
    "overrides": []
   },

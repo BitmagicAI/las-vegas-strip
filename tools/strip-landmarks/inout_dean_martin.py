@@ -1,5 +1,6 @@
 """Original Dean Martin In-N-Out restaurant exterior. Dimensions are photo estimates."""
 from common import *
+from inout_site import site
 KEY='inout-dean-martin';IDS=['way/257307259']
 def build(B):
  p=footprint(IDS[0]);B.property=KEY+'-exterior';B.source='podium/'+KEY;B.detail=0
@@ -70,6 +71,7 @@ def build(B):
  for x,z in [(-839,1630),(-830,1630),(-820,1630)]:B.box('ino-equipment',(x,5.60,z),(2.1,.9,1.7))
  G=Frame(B,-813.70,1633,-math.pi/2,y=0)
  G.box('ino-metal',(0,1.75,-.1),(2.4,1.5,.12));G.box('ino-glass',(0,1.75,-.18),(2.24,1.35,.04));G.box('ino-trim',(0,1.04,-.40),(2.5,.1,.7))
+ site(B)
  # Photo-supported public dining finishes; dimensions and counter position inferred.
  B.planar('ino-floor',p,.12,True)
  B.property=KEY+'-interior';B.source='public/'+KEY
@@ -111,6 +113,6 @@ def build(B):
  F=Frame(B,-836,1634,0,y=0);F.light(0,3.5,0,color=0xffefd8,power=22,range=14)
  routes=[dict(name='South patio clear aisle',points=[[-843,.12,1641],[-838,.12,1641],[-834,.12,1641],[-830.8,.12,1641]]),dict(name='West entrance sidewalk',points=[[-847,.12,1627],[-847,.12,1633],[-847,.12,1642]])]
  routes.append(dict(name='Public dining entry and cross aisle',points=[[-847,.12,1633],[-843,.12,1633],[-839,.12,1635.8],[-829,.12,1635.8],[-829,.12,1642]]))
- return dict(key=KEY,name='In-N-Out Dean Martin',center=[-830,0,1633],bounds=list(p.buffer(5).bounds),structural=True,exteriorOnly=False,portals=doors,zones=[dict(origin=[-836.05,.12,1626.9],yaw=0,width=17.8,depth=13.2,height=4)],lights=B.lights,routes=routes,hotelSources=[])
+ return dict(key=KEY,name='In-N-Out Dean Martin',center=[-830,0,1633],bounds=[-850,1618,-786,1670],structural=True,exteriorOnly=False,portals=doors,zones=[dict(origin=[-836.05,.12,1626.9],yaw=0,width=17.8,depth=13.2,height=4)],lights=B.lights,routes=routes,hotelSources=[])
 if __name__=='__main__':
  B=Meshes();meta=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(meta,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

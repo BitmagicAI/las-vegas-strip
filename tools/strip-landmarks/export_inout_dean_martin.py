@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
-E.colors.update({'ino-stucco':'deddd1','ino-trim':'cccbbf','ino-roof':'a5a69e','ino-roof-tile':'916451','ino-red-tile':'b3292f','ino-red':'cc292d','ino-white':'eee9da','ino-glass':'536569','ino-metal':'a0aaa6','ino-yellow':'e8bf30','ino-paving':'b5b1a1','ino-table':'b6ae92','ino-equipment':'a4a69c','ino-floor':'858580','ino-ceiling':'dddcd4','ino-chair':'941e27','ino-table-top':'e5e1d9','ino-lamp':'a1a3a0','ino-menu':'e6dfc7','ino-panel':'9a9991'})
+E.colors.update({'ino-stucco':'deddd1','ino-trim':'cccbbf','ino-roof':'a5a69e','ino-roof-tile':'916451','ino-red-tile':'b3292f','ino-red':'cc292d','ino-white':'eee9da','ino-glass':'536569','ino-metal':'a0aaa6','ino-yellow':'e8bf30','ino-paving':'b5b1a1','ino-table':'b6ae92','ino-equipment':'a4a69c','ino-floor':'858580','ino-ceiling':'dddcd4','ino-chair':'941e27','ino-table-top':'e5e1d9','ino-lamp':'a1a3a0','ino-menu':'e6dfc7','ino-panel':'9a9991','ino-sign-red':'87262b','ino-sign-white':'dfd9b9','ino-concrete':'aca898','ino-joint':'817d70','ino-fence':'252a28'})
 for part in ['exterior','interior']:
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('inout-dean-martin-'+part)
  rng=np.random.default_rng(256);size=512

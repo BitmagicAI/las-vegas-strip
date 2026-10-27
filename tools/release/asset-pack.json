@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1379,
- "bytes": 1054672778,
+ "bytes": 1055619959,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18540010,
-   "sha256": "c6c2ea2c797b536adccc638cf169212a8f5ed5427ae81091209de9e629ddf7e0",
+   "bytes": 18567763,
+   "sha256": "468a0c7dcac0b049c4aca2234ee1143bfc6d9072748b2deb96ba9b9ccc7bd7d2",
    "kind": "original"
   },
   {
@@ -6630,14 +6630,14 @@
   },
   {
    "path": "build/strip-landmarks/inout-dean-martin-exterior-collision.bin",
-   "bytes": 1652,
-   "sha256": "fc61641699e034fe87890b925cb97c378a4ba4ba3d89b6c6b9570e2598dab62e",
+   "bytes": 1844,
+   "sha256": "02637c3ed46bac4dd74f9411f09c30500c570a5fcba781f040dcb32d312d67ce",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/inout-dean-martin-exterior.glb",
-   "bytes": 1970524,
-   "sha256": "25bfbf650afc70912ac107e1c9f227e791c4161af90722bdeedaf8f175bdf270",
+   "bytes": 2889784,
+   "sha256": "aadc2ffb71fa24e3c5ae974ecdb183fc9e190002a1885e40c02aef49ffa5ae58",
    "kind": "optimized"
   },
   {
@@ -8094,8 +8094,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 342830,
-   "sha256": "74eda6dab635cae9fa1d8492747073ac5ffe5deb3fdb4bc3979a3ecb040f2c06",
+   "bytes": 342806,
+   "sha256": "dcaeb4e5a139c4c59ba8a3f9af7319da3be83c4e610c828c650031954b309cdd",
    "kind": "original"
   },
   {

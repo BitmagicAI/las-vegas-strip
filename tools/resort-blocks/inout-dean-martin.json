@@ -46,19 +46,26 @@
       "url": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/9AZC7KTPm4.jpg",
       "accessDate": "2026-10-27",
       "observed": "Location-specific Restaurantji gallery photo 13 inspected full-size: white square tables, red round spindle-back chairs, grey square floor tiles with dark grout, metal cone pendant lamps, white walls and low grey wainscot. Outdoor umbrellas visible through windows. Photo date unknown; does not establish complete floor plan."
+    },
+    {
+      "url": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/YeP2OJBAk8.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Gallery15 full-size pylon photograph inspected: tall white ringed shaft, thick red rectangular sign cabinet, yellow dimensional arrow cap. Highway overpass behind it corroborates eastern site position."
     }
   ],
   "uncertainDimensions": [
     "393.01m2 mapped footprint. Heights, exact awning divisions and patio dimensions require photographic estimates.",
-    "Public room dimensions and ordering-counter placement inferred; photograph supports finish/furniture only. Kitchen and staff spaces remain closed."
+    "Public room dimensions and ordering-counter placement inferred; photograph supports finish/furniture only. Kitchen and staff spaces remain closed.",
+    "Sign positions estimated from aerial against mapped footprint: tall pylon(-790.5,1623.5), southern sign(-837,1667.5). Heights, orientation and short fence extent are estimates, not surveyed."
   ],
   "implemented": [
     "Original mapped restaurant shell with two raised tiled entrance bays, red awnings, transparent mullioned glazing, continuous stepped cornice and red tile band, patio and five concrete picnic-table/umbrella groups.",
-    "Reference-supported public dining study: white square tables, red spindle-back chairs, grey tile floor and wainscot, pendant shades, inferred public ordering counter; two automatic entrances. No kitchen or private-room access."
+    "Reference-supported public dining study: white square tables, red spindle-back chairs, grey tile floor and wainscot, pendant shades, inferred public ordering counter; two automatic entrances. No kitchen or private-room access.",
+    "Original tall ringed pylon, smaller southern arrow sign, and short masonry/metal boundary segment installed and inspected in neutral daylight. Arrow direction and undersized lettering corrected after first review."
   ],
   "remaining": [
     "Public dining layout and counter placement are inferred, not measured; kitchen/staff rooms intentionally inaccessible. Fine furniture, menu and finish fidelity remain unfinished.",
-    "Locate and implement both roadside sign types and full site boundary/landscape details without disturbing road or company store.",
+    "Exact surveyed sign placement/height, full site boundary and landscape details remain unfinished. Existing elevated Tropicana road retained; southern reference camera raised above it.",
     "Exact rear service/drive-through treatment and roof equipment layout remain estimated.",
     "Photo-perfect material, glass/frame finish and furniture fidelity are not achieved; no completion claim."
   ],
@@ -67,6 +74,11 @@
       "path": "build/city-exteriors/inout-dean-martin-final",
       "observed": "Five installed neutral-daylight views inspected. Corrected opaque glazing and chair backs. Final trim restoration inspected in patio, west and dining captures at build/city-exteriors/inout-dean-martin-trim.",
       "reference": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/9AZC7KTPm4.jpg"
+    },
+    {
+      "path": "build/city-exteriors/inout-dean-martin-signs-corrected",
+      "observed": "Both installed daylight views inspected. Ringed pylon, right-pointing arrow and enlarged lettering supported; southern boundary reviewed from elevated camera above retained road. Exact lettering and site placement remain approximate.",
+      "reference": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/YeP2OJBAk8.jpg"
     }
   ],
   "validation": {
@@ -87,10 +99,10 @@
       "resolution": "960x540 ultra",
       "frames": 180,
       "baseline": "build/city-exteriors/inout-dean-martin-before/results.json",
-      "final": "build/city-exteriors/inout-dean-martin-packaged/results.json",
-      "p50Ms": "16.5\u201316.6",
-      "p95Ms": "18.8\u201319.5",
-      "note": "Final packaged fresh-bake run: three matching exterior views plus two room views. Baseline exterior p50 16.6\u201316.8, p95 18.2\u201318.7."
+      "final": "build/city-exteriors/inout-dean-martin-site-final/results.json",
+      "p50Ms": "16.6\u201316.7",
+      "p95Ms": "18.6\u201319.1",
+      "note": "Final sign-pass fresh-bake run, matching five cameras; baseline exterior16.6\u201316.8/18.2\u201318.7ms. Packaged patio capture inspected."
     },
     "package": {
       "assetsPresent": 1379,
@@ -98,6 +110,17 @@
       "bakeCurrent": true,
       "batches": 673,
       "bakeMB": 17.68
+    },
+    "signViews": {
+      "p50Ms": [
+        16.7,
+        16.6
+      ],
+      "p95Ms": [
+        17.9,
+        18.2
+      ],
+      "note": "960x540 ultra, 180 frames; new views, not a matched baseline comparison."
     }
   }
 }
