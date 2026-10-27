@@ -12501,9 +12501,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Build original mapped exterior, supported frontage and drive-through details; preserve roads and neighboring gas station.",
-    "Find location-specific public interior references before opening dining space.",
-    "Inspect installed daylight views, test routes, measure matching performance, optimize/package and refresh bake."
+    "Photographic fidelity refinements: irregular stone rather than current rectangular procedural blocks, exact glazing divisions, service windows and roof equipment positions.",
+    "Site drive-through order boards, small directional signs, shrubs and full frontage connections remain.",
+    "Public interior remains closed; motorcycle display photo does not establish reliable room layout."
    ],
    "record": "tools/resort-blocks/mcdonalds-tropicana.json",
    "buildings": [],
@@ -12515,7 +12515,12 @@
     "writes": [
      "tools/resort-blocks/mcdonalds-tropicana.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_mcdonalds_tropicana.py",
+     "tools/city-exteriors/install-mcdonalds-tropicana.py",
+     "tools/strip-landmarks/test-mcdonalds-tropicana.mjs",
+     "tools/strip-landmarks/mcdonalds_tropicana.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

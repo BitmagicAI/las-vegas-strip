@@ -9,7 +9,8 @@
     "issue": 262,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/262",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/263"
   },
   "sources": [
     {
@@ -26,16 +27,54 @@
       "url": "https://cdn9.localdatacdn.com/nv/las-vegas/1674575/original/M0Ar9VbXOz.jpg",
       "accessDate": "2026-10-27",
       "observed": "Close facade inspected: rough irregular stone plinth, mullioned windows, projecting canopy with underside panels, white corner pier and silver/yellow fascia."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.10053,-115.18635,125m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial inspected: restaurant south of Tropicana, west parking, neighboring gas station east, drive-through loop south. Neighboring station excluded."
+    },
+    {
+      "url": "https://cdn4.localdatacdn.com/nv/las-vegas/1674575/original/fVQ7XFiPTn.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Full-size entrance photo inspected: address 3451, white surround, metal-framed door and transom, yellow canopy, rough stone window base."
+    },
+    {
+      "url": "https://cdn9.localdatacdn.com/nv/las-vegas/1674575/original/qoX21KaAS0.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Interior photo inspected: glass-cased 1947 Harley Davidson display, tiled ceiling, metal pendant lights; insufficient room-layout evidence, interior not authored."
     }
   ],
   "uncertainDimensions": [
-    "Mapped footprint~474m2; heights, bay divisions and exact service/interior layout not surveyed."
+    "Mapped footprint~474m2; heights, bay divisions and exact service/interior layout not surveyed.",
+    "North/front and west/customer-face orientation inferred from aerial plus oblique photograph. Entrance, service windows, canopy depths, roof-equipment positions and heights approximate."
   ],
-  "implemented": [],
+  "implemented": [
+    "Mapped exterior shell and parapet, curved yellow crown, silver ribbed fascia, framed glazing and metal canopies, white entrance/corner surrounds with original lettered signage, stone base, roof equipment and supported frontage.",
+    "Targeted removal of85owned visual and85collision triangles; exact retained geometry equality confirmed."
+  ],
   "remaining": [
-    "Build original mapped exterior, supported frontage and drive-through details; preserve roads and neighboring gas station.",
-    "Find location-specific public interior references before opening dining space.",
-    "Inspect installed daylight views, test routes, measure matching performance, optimize/package and refresh bake."
+    "Photographic fidelity refinements: irregular stone rather than current rectangular procedural blocks, exact glazing divisions, service windows and roof equipment positions.",
+    "Site drive-through order boards, small directional signs, shrubs and full frontage connections remain.",
+    "Public interior remains closed; motorcycle display photo does not establish reliable room layout."
   ],
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/mcdonalds-tropicana-packaged",
+    "build/city-exteriors/mcdonalds-tropicana-walk/results.json",
+    "build/strip-landmarks/mcdonalds-tropicana-route-audit.json"
+  ],
+  "performance": {
+    "baseline": "build/city-exteriors/mcdonalds-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/mcdonalds-tropicana-packaged/results.json",
+    "conditions": "960x540 ultra, neutral daylight, same3cameras,180frames; final16.7msmedian18.4\u201319.1msp95; baseline16.6\u201316.7/18.1\u201319.2ms"
+  },
+  "verification": {
+    "sourceTriangles": 5118,
+    "optimizedMB": 1.18,
+    "scopedChecks": 144,
+    "actualWalkingSegments": 8,
+    "assetsPresent": 1383,
+    "assetsMissing": 0,
+    "bakeBatches": 675,
+    "visualReview": "Three installed first views; corrected north/west and final packaged north inspected."
+  }
 }
