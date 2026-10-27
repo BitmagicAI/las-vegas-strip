@@ -1,0 +1,41 @@
+{
+  "id": "mcdonalds-tropicana",
+  "name": "McDonald\u2019s West Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/190828100"
+  ],
+  "claim": {
+    "issue": 262,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/262",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.mcdonalds.com/us/en-us/location/5240.html",
+      "accessDate": "2026-10-27",
+      "observed": "Official location confirms3451W Tropicana; same location URL as mapped footprint with older3457address."
+    },
+    {
+      "url": "https://cdn7.localdatacdn.com/nv/las-vegas/1674575/original/1lyq12ykGI.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Full-size oblique exterior inspected, photo datedNov20,2022: yellow curved roof ribbon, yellow flat canopies, silver fascia, corner arches sign, glazed dining frontage, stone plinth, drive-through markers."
+    },
+    {
+      "url": "https://cdn9.localdatacdn.com/nv/las-vegas/1674575/original/M0Ar9VbXOz.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Close facade inspected: rough irregular stone plinth, mullioned windows, projecting canopy with underside panels, white corner pier and silver/yellow fascia."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint~474m2; heights, bay divisions and exact service/interior layout not surveyed."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build original mapped exterior, supported frontage and drive-through details; preserve roads and neighboring gas station.",
+    "Find location-specific public interior references before opening dining space.",
+    "Inspect installed daylight views, test routes, measure matching performance, optimize/package and refresh bake."
+  ],
+  "evidence": []
+}

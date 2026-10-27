@@ -1264,9 +1264,15 @@
     {
       "id": "inout-company-store",
       "name": "In-N-Out Company Store",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "inout-company-store.json"
+    },
+    {
+      "id": "mcdonalds-tropicana",
+      "name": "McDonald\u2019s West Tropicana",
+      "status": "active",
+      "record": "mcdonalds-tropicana.json"
     }
   ],
-  "active": "inout-company-store"
+  "active": "mcdonalds-tropicana"
 }
