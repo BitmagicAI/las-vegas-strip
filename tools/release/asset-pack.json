@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1355,
- "bytes": 1035114425,
+ "count": 1359,
+ "bytes": 1035741487,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18356471,
-   "sha256": "f021633bb8c54ca0d4aac359190c0971183ce65e5da58ccba299b88d4f0bb7c3",
+   "bytes": 18366181,
+   "sha256": "0915130d12bff5d5c754615a9917330d560db1dd7a4260e0ac43b6edb661f57d",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13066820,
-   "sha256": "6efe96edc75a0d6f73de0d8c907f137bd153b160bf1bd743003d17dce81796aa",
+   "bytes": 13067020,
+   "sha256": "b7f149b716dd498f019609deebe78e680dfaf8010ea82fe44491e72cf2063411",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109767256,
-   "sha256": "a0e86257ac37ed8c4b46520476b0ad05b323600164145bcff5ecd16810dd6629",
+   "bytes": 109767024,
+   "sha256": "cc574dfd7da609ea76793eaa856181b14dfb276c91b243220b3cdf77227eb51b",
    "kind": "optimized"
   },
   {
@@ -6977,6 +6977,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/officeBar-exterior-collision.bin",
+   "bytes": 472,
+   "sha256": "7a273657afaabca6542261a18caf00e7438d10876b70567250bfc65546d8bc4e",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/officeBar-exterior.glb",
+   "bytes": 332184,
+   "sha256": "2a401c8d38e2c8f6d2e19dc70f670ab1b2fff58fb0013b2eb2fc6e4831dabea2",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/officeBar-interior-collision.bin",
+   "bytes": 348,
+   "sha256": "b4179eedb13c8f5f2f3b97000ea3ec10bb8a0b7e4c9087153295ca13bd02b77b",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/officeBar-interior.glb",
+   "bytes": 283728,
+   "sha256": "ba8ebdd70df4cb57de20388e164c7780499c8b4edc4b1ffdb3b983597f344f37",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/oyoExterior-exterior-collision.bin",
    "bytes": 10420,
    "sha256": "f6d88cab81617ff0b0b5931944278addc078ecd2e4e05e33b5e85a157f5e34ec",
@@ -7950,8 +7974,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 338784,
-   "sha256": "199e027846341c268350b6cb409ca32108697a3b64b74f28216f31b9e7a02908",
+   "bytes": 339436,
+   "sha256": "a70ef8a27128fed1d6ef33602647581b3e2be14f983de734656d77af9fb2bb99",
    "kind": "original"
   },
   {

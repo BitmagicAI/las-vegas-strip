@@ -224,7 +224,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-quadz` | M | P3 | 4 | Refine the exterior of QUADZ and west retail frontage |
 | `ext-paradise-smoke-shop` | M | P3 | 4 | Refine the exterior of Paradise small retail frontage |
 | `ext-bonfire` | M | P3 | 3 | Refine the exterior of Bonfire Naples |
-| `ext-office-bar` | M | P3 | 3 | Refine the exterior of Office Bar I |
+| `ext-office-bar` | M | P3 | 4 | Refine the exterior of Office Bar I |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

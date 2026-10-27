@@ -28,10 +28,31 @@
     "Mapped14.2x18.5m footprint; height6.6m estimated, not surveyed.",
     "Public room arrangement inferred from photographs; upper floor/private back rooms excluded."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original two-storey mapped exterior with six upper windows, groundfloor glazing, raised lettering, gooseneck fixtures, bollards, apron and roof details.",
+    "Streamed public bar: two pool tables, return gaming bar, stools, bottle shelves, original abstract video graphics, tiled dark ceiling and three pooled lights.",
+    "11 owned old visual and collision triangles replaced; neighboring tenancy and roads retained."
+  ],
   "remaining": [
-    "Build original exterior and reference-supported public room.",
-    "Verify installed daylight/interior views and actual entry/return routes.",
-    "Measure matching performance, optimize assets and package current city bake."
+    "Corroborate exact public floorplan and furniture placement; current arrangement is inferred from photographs.",
+    "Refine facade height, window proportions, actual lettering dimensions and service/rear elevations.",
+    "Add finer public-room furniture/finish details without reproducing copyrighted murals or broadcast imagery.",
+    "Upper floor and private rooms are excluded pending reliable layout evidence; not photorealistic completion."
+  ],
+  "validation": {
+    "scopedRoutes": "52 floor/support and capsule-clearance checks passed.",
+    "runtimeWalk": "8 actual entry, bar circulation and return segments passed; officeBar interior residency confirmed.",
+    "installedViews": "South/east exterior and public room inspected. Corrected reversed sidelight lettering and overly striped/light floor finish; final frontage and room reviewed.",
+    "performance": "960x540ultra180frames/view. Before south16.6/18.6 east16.7/18.1 msmedian/p95. Final south16.6/18.7 east16.8/18.1; interior16.7/18.5. Local samples only.",
+    "checks": "Python syntax and record/public checks passed; one pre-existing inventory email warning. Typecheck passed during preceding Bonfire pass; no TypeScript changed.",
+    "packaging": "Current city bake666batches24.6Mnear/7.11MLOD17.52MBbinary.1359runtimeassets present,0missing."
+  },
+  "evidence": [
+    "build/city-exteriors/office-bar-before/results.json",
+    "build/city-exteriors/office-bar-final/results.json",
+    "build/city-exteriors/office-bar-final-interior/results.json",
+    "build/city-exteriors/office-bar-walk/results.json",
+    "build/strip-landmarks/officeBar-route-audit.json",
+    "build/city-exteriors/officeBar-ownership-audit.json"
   ]
 }

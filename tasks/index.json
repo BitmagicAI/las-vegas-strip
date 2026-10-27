@@ -12148,11 +12148,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Build original exterior and reference-supported public room.",
-    "Verify installed daylight/interior views and actual entry/return routes.",
-    "Measure matching performance, optimize assets and package current city bake."
+    "Corroborate exact public floorplan and furniture placement; current arrangement is inferred from photographs.",
+    "Refine facade height, window proportions, actual lettering dimensions and service/rear elevations.",
+    "Add finer public-room furniture/finish details without reproducing copyrighted murals or broadcast imagery.",
+    "Upper floor and private rooms are excluded pending reliable layout evidence; not photorealistic completion."
    ],
    "record": "tools/resort-blocks/office-bar.json",
    "buildings": [],
@@ -12164,7 +12165,9 @@
     "writes": [
      "tools/resort-blocks/office-bar.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/office_bar.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
