@@ -51,7 +51,8 @@ def build(B):
  F.box('ts-white-stucco',(28.7,18.6,10),(4.7,3.0,20.6))
  F.text('TOWNEPLACE SUITES',(42,18.4,20.18),.85,'ts-charcoal-paint',back=True)
  F.text('MARRIOTT',(42,17.96,20.18),.32,'ts-red-paint',back=True)
- F.text('TownePlace Suites',(24,18.4,-.79),.85,'ts-charcoal-paint')
+ F.text('TownePlace Suites',(37,18.25,-.79),.72,'ts-charcoal-paint')
+ F.text('MARRIOTT',(37,17.94,-.79),.25,'ts-red-paint')
  # South arrival canopy and pergola; independently supported, no solid placeholder.
  F.box('ts-frame-paint',(31.3,3.65,24.6),(13.8,.35,5.5))
  for x in [25.0,37.6]:F.box('ts-frame-paint',(x,1.9,26.5),(.24,3.6,.24),True)

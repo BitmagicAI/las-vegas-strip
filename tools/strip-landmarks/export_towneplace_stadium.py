@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
-E.colors.update({'ts-chair-frame-paint':'35332e','ts-white-stucco':'d4d2c8','ts-ochre-paint':'907039','ts-charcoal-paint':'444240','ts-wood':'9a7954','ts-roof':'999991','ts-roof-metal':'464f58','ts-frame-paint':'c7c9bd','ts-metal':'424b50','ts-panel-seam':'77756c','ts-glass':'687f79','ts-sill-paint':'bbbdb3','ts-letter':'efeee1','ts-stone':'aaa491','ts-paving':'aaa596','ts-floor':'b29a79','ts-interior':'d4cbb6','ts-ceiling':'dedbd0','ts-counter':'d5d1c4','ts-red-paint':'a7472c','ts-screen':'1b2226','ts-market-paint':'6e8146','ts-blue':'366b7a','ts-seat':'454037','ts-red-fabric':'9b4c3d'})
+E.colors.update({'ts-chair-frame-paint':'35332e','ts-white-stucco':'d4d2c8','ts-ochre-paint':'907039','ts-charcoal-paint':'444240','ts-wood':'9a7954','ts-roof':'999991','ts-roof-metal':'464f58','ts-frame-paint':'c7c9bd','ts-metal':'424b50','ts-panel-seam':'4c4b47','ts-glass':'687f79','ts-sill-paint':'bbbdb3','ts-letter':'efeee1','ts-stone':'aaa491','ts-paving':'aaa596','ts-floor':'b29a79','ts-interior':'d4cbb6','ts-ceiling':'dedbd0','ts-counter':'d5d1c4','ts-red-paint':'a7472c','ts-screen':'1b2226','ts-market-paint':'6e8146','ts-blue':'366b7a','ts-seat':'454037','ts-red-fabric':'9b4c3d'})
 for part in ([sys.argv[sys.argv.index('--part')+1]] if '--part' in sys.argv else ['exterior','interior']):
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('towneplace-stadium-'+part)
  rng=np.random.default_rng(278);n=512;yy,xx=np.mgrid[:n,:n]

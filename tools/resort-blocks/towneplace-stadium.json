@@ -33,10 +33,11 @@
     "Original stepped five-storey facade on mapped footprint, distinct arrival/street cladding, framed windows, roof crowns, arrival canopy and pergola.",
     "Inferred public lobby with reception, accessible counter, market refrigerator, dining seating, TV column and breakfast counter; existing streamed interior lighting.",
     "Targeted169 placeholder visual and corresponding collision triangles removed.",
-    "Installed inspection corrected open crown undersides and removed incorrect timber cladding from the north street elevation."
+    "Installed inspection corrected open crown undersides and removed incorrect timber cladding from the north street elevation.",
+    "2026-10-27 follow-up: fitted north lettering within roof backing and subdued bright cladding seams; installed arrival/street/west views inspected."
   ],
   "remaining": [
-    "Facade proportions, roof slope/eave profiles, sign typography/placement and window/cladding detail remain approximate. Street lettering placement needs refinement.",
+    "Facade/roof profiles and window layout remain approximate. Official street image7441 re-inspected: dark central projecting strip, white horizontal band under lettering and shallow sloped metal caps differ from model. Lettering fit and cladding seam contrast corrected in this pass, verified in installed street view. Full facade fidelity remains unfinished.",
     "Public lobby and breakfast area remain sparse versus reference: ceiling details, market displays, lounge seating, trim and furniture profiles need refinement. Exact plan is inferred.",
     "Pool and landscape parcel scope remains unverified and unbuilt; identify ownership and claim additional mapped structures before editing neighbors.",
     "Guest rooms/private circulation not implemented.",
@@ -49,7 +50,10 @@
     "build/city-exteriors/towneplace-stadium-installed",
     "build/city-exteriors/towneplace-stadium-walk/results.json",
     "build/city-exteriors/towneplace-stadium-public-corrected",
-    "build/city-exteriors/towneplace-stadium-exterior-corrected"
+    "build/city-exteriors/towneplace-stadium-exterior-corrected",
+    "build/city-exteriors/towneplace-stadium-profile-repeat",
+    "build/city-exteriors/towneplace-stadium-sign-refined",
+    "build/city-exteriors/towneplace-stadium-profile-snapshots"
   ],
   "verification": {
     "sourceTriangles": 31212,
@@ -65,6 +69,9 @@
     "baseline": "build/city-exteriors/towneplace-stadium-baseline/results.json",
     "after": "build/city-exteriors/towneplace-stadium-exterior-corrected/results.json",
     "conditions": "960x540 ultra neutral daylight,3 matching exterior views180frames. Baseline medians17.2/16.6/16.7ms,p9525.2/18.1/18.5. Final18.2/16.7/16.7,p9537.6/17.6/17.8. Arrival slowdown/variance unresolved.",
-    "public": "build/city-exteriors/towneplace-stadium-public-corrected/results.json: entry18.4/25.1, lobby16.7/17.4,reception16.7/17.6,breakfast19.4/33.9ms median/p95. No pre-build matching interior baseline."
+    "public": "build/city-exteriors/towneplace-stadium-public-corrected/results.json: entry18.4/25.1, lobby16.7/17.4,reception16.7/17.6,breakfast19.4/33.9ms median/p95. No pre-build matching interior baseline.",
+    "repeat": "build/city-exteriors/towneplace-stadium-profile-repeat/results.json: 3 passes x 600 frames/view after300 settle frames. Arrival median17.0/16.7/16.9ms,p9523.6/18.2/21.4; breakfast16.7/16.8/17.9,p9518.1/22.3/30.0. Pipeline count142 unchanged in all6 samples. Streaming busy false at sample boundaries; history snapshots in first probe alias the same array, so unchanged history is not conclusive. Probe corrected to clone snapshots for subsequent runs. Cause not established; no steady60fps claim.",
+    "latestExterior": "build/city-exteriors/towneplace-stadium-sign-refined/results.json: arrival17.1/32.2,street16.7/26.1,west16.5/27.1ms median/p95. Same960x540ultra daylight; no locked60fps claim.",
+    "snapshotRepeat": "build/city-exteriors/towneplace-stadium-profile-snapshots/results.json: cloned streaming snapshots,3x600frames/view. Arrivalmedian18.6/16.7/18.2,p9520.9/18.7/25.6; breakfast17.3/16.9/18.8,p9528.0/22.2/23.9. Pipelines139unchanged; streamingbusyfalse and historyidentical before/after eachsample. Occasional slowframes persist without trackedloading or newpipelinecreation during samples; CPU/GPU cause unproven."
   }
 }
