@@ -1,0 +1,35 @@
+{
+  "id": "hampton-tropicana",
+  "name": "Hampton Inn Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/431504492"
+  ],
+  "claim": {
+    "issue": 276,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/276",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.hilton.com/en/hotels/lasinhx-hampton-tropicana/gallery/",
+      "observed": "Official images1,12,5 visually inspected: cream/terracotta exterior, green hip crowns, brick base, covered arrival; lobby with wood reception counters, ring chandelier, lounge; breakfast space with magenta wall, mustard seating and buffet.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/place/Hampton+Inn+Tropicana/@36.0996524,-115.1834629,401m/data=!3m1!1e3!4m9!3m8!1s0x80c8c5d4a67b25db:0x1a38e43716025f28!5m2!4m1!1i2!8m2!3d36.0996676!4d-115.1833771!16s%2Fg%2F1tghpw6k",
+      "observed": "Satellite inspected: rotated parallel wings around southwest-facing pool courtyard; northeast arrival facing Dean Martin. Source dates vary.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint2852m2 anchors plan; heights, facade divisions and public interior dimensions need further validation.",
+    "Lobby and breakfast furnishings supported by photos; precise plan relationships inferred until verified."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Exterior and reference-supported public interior implementation, targeted replacement, collision/walking checks, installed visual review, matching performance and final packaging pending."
+  ],
+  "evidence": []
+}
