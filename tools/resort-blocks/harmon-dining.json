@@ -1,0 +1,40 @@
+{
+  "id": "harmon-dining",
+  "name": "Harmon Square dining frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/1183057878",
+    "way/1382446130",
+    "way/504926567"
+  ],
+  "claim": {
+    "issue": 254,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/254",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://images1.loopnet.com/i2/eyuSmbgOFvd1Ev_2HpQvnRGDNXS1MnikI_ugdlIR4bQ/112/image.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Broker front photo visually inspected. Dunkin cup-shaped tower, red storefront panels, Subway lower fascia, Roberto tall angular tan frontage, drive-through opening. Photograph date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1071,-115.1523,140m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial visually inspected. North-facing storefronts; cup near northeast corner. Drive-through gap between eastern pad and western attached retail. Mapped tenant labels/partitions require reconciliation."
+    }
+  ],
+  "uncertainDimensions": [
+    "Do not assume mapped Roberto label correctly identifies tenant boundary. Mapped area total exceeds listed 5377 sqft. No replacement until pad boundary reconciled.",
+    "Parapet heights, cup dimensions and interior plan not surveyed."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Resolve tenant footprint ownership against leasing plan and aerial.",
+    "Original exteriors, drive-through clearance, public entrance treatment and reference-supported interiors.",
+    "Installed daylight views, scoped routes, walking and performance checks, optimized assets and current bake."
+  ],
+  "evidence": [],
+  "validation": {}
+}
