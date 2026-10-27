@@ -1,0 +1,41 @@
+{
+  "id": "grove-university",
+  "name": "The Grove / Society retail frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/1382446129"
+  ],
+  "claim": {
+    "issue": 236,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/236",
+    "assignee": "janiverse",
+    "date": "2026-10-26"
+  },
+  "sources": [
+    {
+      "url": "https://www.thegrovenv.com/lasvegas/",
+      "observed": "Official Las Vegas address4647UniversityCenterDrive; Society entrance4640ParadiseRoad. Separate entrance orientations must be reconciled."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9dfepgVDeZL5OwCepiUOfA&heading=125&pitch=0",
+      "imageDate": "2023-02",
+      "accessDate": "2026-10-26",
+      "observed": "Visually inspected continuous green curved fascia, long white signage, pale masonry above dark lower wall, metal-framed dark storefront windows and doors, parking frontage. Adjoins DoubleDown northward."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=7ZNTjuz-V5HXwvOHvyr4dQ&heading=190&pitch=0",
+      "imageDate": "2026-02",
+      "accessDate": "2026-10-26",
+      "observed": "North context confirms adjoining strip; distant new Society sign. Need closer current view before choosing signage."
+    }
+  ],
+  "uncertainDimensions": [
+    "Footprint from mapped building; height and tenant subdivision not measured.",
+    "No verified public floorplan; exterior first."
+  ],
+  "remaining": [
+    "Corroborate current east/north facades and tenant identity.",
+    "Author original full exterior and targeted replacement.",
+    "Inspect installed matched daylight views, route clearance and performance; regenerate current bake/package."
+  ]
+}
