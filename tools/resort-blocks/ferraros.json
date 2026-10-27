@@ -1,0 +1,40 @@
+{
+  "id": "ferraros",
+  "name": "Ferraro\u2019s Ristorante",
+  "status": "active",
+  "mappedIds": [
+    "way/1421206068"
+  ],
+  "claim": {
+    "issue": 252,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/252",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.ferraroslasvegas.com/gallery/venue/",
+      "accessDate": "2026-10-27",
+      "observed": "Official exterior front and angled photos inspected; stepped entrance tower, stone piers, striped awnings, curved patio. Public bar photo inspected: dark wood bar, framed bottle cabinets, light plank flooring, white arched walls, wine display and high tables."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1092,-115.152,105m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial inspected: southeast-facing frontage into parking, west wraparound patio toward Paradise."
+    },
+    {
+      "url": "https://res.cloudinary.com/jll-global-cmg/image/upload/v1743116421/Prod/DealX/Doc/58702a66-e121-457d-aeb2-a1c079078b62/Paradise_Esplanade_Flyer_.pdf",
+      "accessDate": "2026-10-27",
+      "observed": "Page5 visually inspected. Ferraro occupiesA100andA200,8887sqft. Main mapped footprint676m2 likelyA100; A200extends into adjoining long retail building. Tenant boundary needs explicit ownership before annex edits."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped main footprint676m2. Entrance and roof heights inferred from photographs; no surveyed vertical dimensions.",
+    "A200 annex boundary and public-room plan require reconciliation; do not modify neighboringway/319208749 without scoped ownership."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build mapped main exterior and patio; reconcile A200 annex and public room layout; inspect installed views, routes and performance; package optimized assets/current bake."
+  ],
+  "evidence": []
+}
