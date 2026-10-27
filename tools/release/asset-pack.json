@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1367,
- "bytes": 1040289385,
+ "count": 1369,
+ "bytes": 1041470538,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18410155,
-   "sha256": "c37632890f2d82fa57fe4458bae068a7cab493d2adce9fe2cd8a712271411858",
+   "bytes": 18424174,
+   "sha256": "0ea813440582b526e42de91234a76da6c1bbb52039f8a2ee79211e9e2c5be094",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13066968,
-   "sha256": "350f48a135ff36a4b7a925e893911741209b6a547b889edd695e72df9ffae9e2",
+   "bytes": 13066268,
+   "sha256": "c1b7084c6e97dffef3d301e6becef61a358315e73a20b0e60214b8d6cf12a66c",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109766236,
-   "sha256": "5d9dd6e2b6b944751f2aec98285167cda1b9759e507b244e4f5827b6895d3fe3",
+   "bytes": 109765684,
+   "sha256": "9a6e237d02add29bc906b6f747d698718c2748466069f570e069cb7a3bd5af1b",
    "kind": "optimized"
   },
   {
@@ -6233,6 +6233,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/ferraros-exterior-collision.bin",
+   "bytes": 700,
+   "sha256": "a1b822ce74615759abfb357aa238b6ea0765f8ef75bc5ed974f4ed81a04e443c",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/ferraros-exterior.glb",
+   "bytes": 1167360,
+   "sha256": "4a5f6103d862af3616867a6d240d5c3c7570395239a739bcefc1721de7eeb0ea",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/festivalGroundsService-exterior-collision.bin",
    "bytes": 608,
    "sha256": "d191d00ca22972e28fb5e18ded39d0728056d090b18195e91628550c2804fcdd",
@@ -8022,8 +8034,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 340620,
-   "sha256": "3a7a4d0f2e0a675feeb2796d858111f01cf118c6e95d72f1147d24bae5ed7730",
+   "bytes": 340946,
+   "sha256": "ce720bd394a55293d70e4a535c19d78287637da17665c1edadda3696ecc65792",
    "kind": "original"
   },
   {

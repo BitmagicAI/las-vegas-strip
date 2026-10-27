@@ -26,15 +26,56 @@
       "url": "https://res.cloudinary.com/jll-global-cmg/image/upload/v1743116421/Prod/DealX/Doc/58702a66-e121-457d-aeb2-a1c079078b62/Paradise_Esplanade_Flyer_.pdf",
       "accessDate": "2026-10-27",
       "observed": "Page5 visually inspected. Ferraro occupiesA100andA200,8887sqft. Main mapped footprint676m2 likelyA100; A200extends into adjoining long retail building. Tenant boundary needs explicit ownership before annex edits."
+    },
+    {
+      "url": "https://www.ferraroslasvegas.com/wp-content/uploads/2026/01/4480-Paradise-Rd-Ste-300-Web-Quality-002-02-Exterior-Front.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Straight-on frontage inspected: stepped entry, stone piers, awning bays and curved west patio."
+    },
+    {
+      "url": "https://www.ferraroslasvegas.com/wp-content/uploads/2026/01/4480-Paradise-Rd-Ste-300-Web-Quality-005-05-Exterior-Front.webp",
+      "accessDate": "2026-10-27",
+      "observed": "Oblique exterior inspected: pergola, piers, desert landscaping and west patio."
+    },
+    {
+      "url": "https://www.ferraroslasvegas.com/wp-content/uploads/2026/01/4480-Paradise-Rd-Ste-300-Web-Quality-013-13-Commercial-Space.webp",
+      "accessDate": "2026-10-27",
+      "observed": "Public bar image inspected: tall dark shelving, high tables, light plank floor. Dimensions and orientation inferred."
+    },
+    {
+      "url": "https://www.ferraroslasvegas.com/wp-content/uploads/2026/01/4480-Paradise-Rd-Ste-300-Web-Quality-024-24-Commercial-Space.webp",
+      "accessDate": "2026-10-27",
+      "observed": "Terrace inspected: circular fire table, orange lounge cushions, curved wall, pergola brackets and dining tables."
     }
   ],
   "uncertainDimensions": [
     "Mapped main footprint676m2. Entrance and roof heights inferred from photographs; no surveyed vertical dimensions.",
     "A200 annex boundary and public-room plan require reconciliation; do not modify neighboringway/319208749 without scoped ownership."
   ],
-  "implemented": [],
-  "remaining": [
-    "Build mapped main exterior and patio; reconcile A200 annex and public room layout; inspect installed views, routes and performance; package optimized assets/current bake."
+  "implemented": [
+    "Original mapped main exterior15464triangles: stepped entry portal/tower, stone piers, striped awnings and curved patio facade.",
+    "Furnished public terrace with pergola, low planting wall, round fire-table geometry and orange seating. Doors remain closed pending public-room/annex plan reconciliation.",
+    "Targeted replacement removed38owned visual and38matching collision triangles; adjacent retail building and roads retained."
   ],
-  "evidence": []
+  "remaining": [
+    "A200 annex occupies part of neighboringway/319208749; establish exact tenancy boundary and scoped ownership before editing.",
+    "Public dining/bar layout and entrance connection need plan reconciliation. Main doors intentionally closed; no interior completion claim.",
+    "Rear/service elevation is still a simple shell pending reference. Detailed landscaping, patio shade canopy, signature script lettering and material finish require refinement; not photorealistic completion."
+  ],
+  "evidence": [
+    "build/city-exteriors/ferraros-before/results.json",
+    "build/city-exteriors/ferraros-after/results.json",
+    "build/city-exteriors/ferraros-walk/results.json",
+    "build/strip-landmarks/ferraros-route-audit.json",
+    "build/city-exteriors/ferraros-ownership-audit.json",
+    "build/city-exteriors/ferraros-final/results.json"
+  ],
+  "validation": {
+    "scopedRoutes": "30support/capsule checks pass with current surrounding city collision.",
+    "runtimeWalk": "8actual approach/patio/return walking segments pass.",
+    "installedViews": "Neutral front/patio/rear images inspected; signature lettering remains approximate, rear elevation needs reference.",
+    "checks": "Typecheck, record and public checks pass; one pre-existing inventory email warning.",
+    "performance": "Independent idle-build sample, 960x540 ultra, 180 frames/view: front 16.6/18.2, patio 16.6/18.7, rear 16.6/18.7 ms median/p95; near the 16.7\u201316.8/18.0\u201318.5 baseline. Earlier noisy sample retained in evidence.",
+    "packaging": "1369 runtime assets present, 0 missing; fresh 670-batch city bake, 17.57 MB."
+  }
 }
