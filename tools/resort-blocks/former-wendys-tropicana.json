@@ -1,0 +1,40 @@
+{
+  "id": "former-wendys-tropicana",
+  "name": "Former Wendys 3333 W Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/431504497"
+  ],
+  "claim": {
+    "issue": 270,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/270",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1002777,-115.1849935,3a,75y,300h,90t/data=!3m4!1e1!3m2!1s5p_d-1NjXWikJ9SEboApzQ!2e0",
+      "observed": "December2022 site panorama inspected: reddish brick service wing, grey panel parapet, dark drive-through canopy; north part of east-facing facade has convex crown, red panels, pale stacked-stone end piers and full-height glazing.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/place/Wendy%27s/@36.1004119,-115.1851313,694m/data=!3m2!1e3!4b1!4m6!3m5!1s0x80c8c42b303d305f:0xe25398b802026c7d!8m2!3d36.1004119!4d-115.1851313!16s%2Fg%2F1tg9nds6",
+      "observed": "Listing permanentlyclosed. April2025 AndreiMarin photoCIHM0ogKEICAgMCIi6LVvQE confirms curved dark coping/redpanelgrid/palepiers and glazing, sideentry, brickbase. Historicalbranding, current tenancy not asserted.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://locations.wendys.com/united-states/nv/las-vegas",
+      "observed": "Current official LasVegas directory lists17sites;3333WTropicana absent. Supports avoiding operating-tenancy assertion.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint254.29m2,approximately11.07x23.17m; heights and baydivisions inferred from photographs.",
+    "Interior and current tenancy unverified; keep interior closed."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Reference-supported exterior, targeted replacement, optimized assets/current bake, scoped/actual walking and matching performance pending."
+  ],
+  "evidence": []
+}
