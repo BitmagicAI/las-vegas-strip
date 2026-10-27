@@ -12,7 +12,9 @@ def interior(B,meta):
  p=footprint(ID).buffer(-.16)
  # Inward wall faces, retained inside opaque exterior glazing.
  B.shell(p,.18,10.7,'hb-cream',openings=meta['portals'],roof=False,solid=False)
- B.planar('hb-floor',p,.19)
+ garden_floor=p.intersection(F.poly([(-1,-1),(29,-1),(29,40),(-1,40)]))
+ B.planar('hb-cobble',garden_floor,.19)
+ B.planar('hb-floor',p.difference(garden_floor),.19)
  # Southern indoor garden; northern vaulted beer hall. Connection is an
  # interpretation, not a claim of surveyed public circulation.
  for lo,hi in [(.2,4.4),(10,27.5)]:F.box('hb-cream',(29,4.1,(lo+hi)/2),(.24,7.8,hi-lo),True)
@@ -50,11 +52,20 @@ def interior(B,meta):
   for du in [-length*.35,length*.35]:
    F.box('hb-iron',(u+du,.56,v),(.10,.76,.65))
    F.box('hb-iron',(u+du,.22,v),(.14,.08,.95))
-  # One coarse seating collider per bench, no chair-leg bodies.
+  # Garden uses individual folding slat chairs; hall retains long backed benches.
   for side in [-1,1]:
-   F.box(mat,(u,.57,v+side*.9),(length,.10,.36),True)
-   F.box(mat,(u,1.03,v+side*1.08),(length,.42,.07))
-   for du in [-length*.35,length*.35]:F.box('hb-iron',(u+du,.37,v+side*.9),(.09,.4,.3))
+   if garden:
+    for du in [-1,0,1]:
+     for k in range(5):F.box(mat,(u+du,.65,v+side*.88+(k-2)*.085),(.48,.045,.075))
+     for y in [.95,1.08,1.21]:F.box(mat,(u+du,y,v+side*1.13),(.49,.10,.04))
+     for dx in [-.22,.22]:
+      F.tube('hb-iron',(u+du+dx,.2,v+side*.67),(u+du+dx,1.28,v+side*1.14),.018,6)
+      F.tube('hb-iron',(u+du+dx,.2,v+side*1.15),(u+du+dx,.68,v+side*.68),.018,6)
+     F.box('hb-iron',(u+du,.61,v+side*.9),(.43,.06,.43),True)
+   else:
+    F.box(mat,(u,.57,v+side*.9),(length,.10,.36),True)
+    F.box(mat,(u,1.03,v+side*1.08),(length,.42,.07))
+    for du in [-length*.35,length*.35]:F.box('hb-iron',(u+du,.37,v+side*.9),(.09,.4,.3))
   for du in [-1,1]:
    F.lathe('hb-cream',u+du,v,[(1.01,.05),(1.22,.045)],8)
  for u in [34.5,41.5,48.5,55.5]:
@@ -65,7 +76,7 @@ def interior(B,meta):
  for y in [1,1.9,2.8,3.7]:F.box('hb-oak',(44,y,31),(19,.10,.48))
  for u in np.arange(35,54,.45):
   F.lathe('hb-bottle',u,31,[(2,.055),(2.25,.055),(2.32,.026),(2.42,.026)],8)
- # Indoor garden sky ceiling, fountain and original chestnut-like leaf clusters.
+ # Indoor garden: painted sky ceiling, fountain, festoons and imported trees.
  B.planar('hb-sky',F.poly([(1,1),(28,1),(28,25),(1,25)]),7.6)
  for u in [6,13,23]:
   for v in [11.5,17]:
@@ -74,6 +85,24 @@ def interior(B,meta):
  F.lathe('hb-stone',14,20,[(.2,1.6),(.45,1.6),(.6,1.4)],32)
  F.lathe('hb-stone',14,20,[(.45,.34),(2.6,.25),(2.8,.65),(2.95,.2)],20)
  B.planar('hb_pool',Point(F.p(14,0,20)[::2]).buffer(1.35),.52)
+ # Wall piers and arched inset panels match the enclosed garden's architectural rhythm.
+ for u in [3,9,15,21,27]:
+  F.box('hb-stone',(u,3.5,25.8),(.3,6.6,.25))
+  F.box('hb-stone',(u,6.8,25.8),(.65,.22,.42))
+ for u in [6,12,18,24]:
+  F.arch(u,25.7,4.6,5.9,'hb-stone',.11,.7)
+  F.box('hb-bay',(u,2.85,25.83),(3.85,3.6,.06))
+  for dx in [-1.25,0,1.25]:F.box('hb-stone',(u+dx,2.85,25.75),(.07,3.6,.06))
+  F.box('hb-stone',(u,3.7,25.75),(3.85,.07,.06))
+ # Decorative bulbs share existing materials and the fixed venue light pool.
+ for v in [8.5,18]:
+  cord=[(u,5.9-.55*math.sin((u-2)/25*math.pi),v) for u in np.linspace(2,27,33)]
+  F.path('hb-iron',cord,.012,6)
+  for u in np.arange(2,27,1.25):
+   y=5.9-.55*math.sin((u-2)/25*math.pi)
+   F.tube('hb-iron',(u,y,v),(u,y-.12,v),.012,6)
+   F.lathe('hb-lamp',u,v,[(y-.24,.02),(y-.21,.055),(y-.15,.04),(y-.12,.02)],8)
+
  # Suspended iron lanterns, not point lights per fixture.
  for u in [8,20,34,43,53]:
   for v in [7,17]:

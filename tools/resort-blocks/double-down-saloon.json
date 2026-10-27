@@ -1,7 +1,7 @@
 {
   "id": "double-down-saloon",
   "name": "Double Down Saloon",
-  "status": "queued",
+  "status": "active",
   "mappedIds": [
     "way/966155068"
   ],
@@ -24,11 +24,25 @@
       "url": "https://www.tripadvisor.com/Attraction_Review-g45963-d553422-Reviews-Double_Down_Saloon-Las_Vegas_Nevada.html",
       "imageURL": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/37/36/6c/the-front-of-the-bar.jpg?h=1000&s=1&w=1000",
       "observed": "Entrance image visually inspected: pale painted block wall, dark shingle canopy on two posts, central recessed door, raised porch and stairs/handrails, red-framed signs. Image date unverified; corroborate current Street View."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9dfepgVDeZL5OwCepiUOfA&heading=80&pitch=0",
+      "provider": "Google Street View",
+      "imageDate": "2023-02",
+      "accessDate": "2026-10-26",
+      "observed": "West parking frontage: pale masonry, dark brick piers/pointed arch strips, green curved fascia and white Double Down sign at north end; continuous adjoining retail strip southward."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.10576,-115.15035&heading=180&pitch=0",
+      "provider": "Google Street View",
+      "imageDate": "2026-02",
+      "accessDate": "2026-10-26",
+      "observed": "North wall at662E NaplesDrive: blank gray painted masonry, red/cream Double Down sign near top, four palms and low planting bed; shallow curved roof/fascia edge. No north doorway. Older entrance photograph not yet correlated to a side; do not use it as the north facade."
     }
   ],
   "uncertainDimensions": [
     "Mapped rectangular footprint approximately12.9\u00d716.7m; runtime6m height is an unknown-source default.",
-    "Entry orientation and current facade need Street View corroboration. Public interior layout unverified."
+    "West entry placement requires close view; north wall verified blank. Older porch/photo orientation unconfirmed; do not combine it with north facade."
   ],
   "remaining": [
     "Corroborate current Las Vegas exterior and entrance orientation.",

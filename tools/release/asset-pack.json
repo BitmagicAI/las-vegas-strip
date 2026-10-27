@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1341,
- "bytes": 1028235216,
+ "bytes": 1028529596,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -6445,19 +6445,19 @@
   {
    "path": "build/strip-landmarks/hofbrauhaus-exterior.glb",
    "bytes": 21411208,
-   "sha256": "681bc2b0ad26191f6dbdef6fe3e02127a3dcd734009c41966c415b43ab62a165",
+   "sha256": "8ed09d0c18cfea1e58d768a98d54e23092b707890b95e2ff3a8a28d278486fe7",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/hofbrauhaus-interior-collision.bin",
-   "bytes": 2016,
-   "sha256": "47a576d2b54d3b3a227745da0855a2ed1074bac1989e893a7784ddb0289222dd",
+   "bytes": 2728,
+   "sha256": "c5f44d6ae317c42cfd82e740f5ca02423072c2bbeab854cb54d5de2f70f235e3",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/hofbrauhaus-interior.glb",
-   "bytes": 12758576,
-   "sha256": "3c850c5f8d634d0ac2977e7723d5302b455eda9d59e26473ddffd7c7263aa414",
+   "bytes": 13052244,
+   "sha256": "5242d135172d3d8dde2fdba2d1034b329d8b09207a231206c88e91c902990b20",
    "kind": "optimized"
   },
   {

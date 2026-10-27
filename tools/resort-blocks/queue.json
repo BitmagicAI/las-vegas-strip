@@ -1176,15 +1176,15 @@
     {
       "id": "hofbrauhaus",
       "name": "Hofbr\u00e4uhaus Las Vegas",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "hofbrauhaus.json"
     },
     {
       "id": "double-down-saloon",
       "name": "Double Down Saloon",
-      "status": "queued",
+      "status": "active",
       "record": "double-down-saloon.json"
     }
   ],
-  "active": "hofbrauhaus"
+  "active": "double-down-saloon"
 }
