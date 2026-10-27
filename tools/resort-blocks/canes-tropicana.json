@@ -1,0 +1,42 @@
+{
+  "id": "canes-tropicana",
+  "name": "Raising Canes West Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/1126368782"
+  ],
+  "claim": {
+    "issue": 266,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/266",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://locations.raisingcanes.com/nv/las-vegas/3535-west-tropicana-ave",
+      "observed": "Official address 3535 West Tropicana, C0439 and drive-through.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1007298,-115.1869875,3a,75y,123.63h,93.52t/data=!3m4!1e1!3m2!1s2K6gaKwuhLP0Y8eUxOyaQA!2e0",
+      "observed": "December 2022 site-specific Street View inspected: beige/grey stucco, rough stone plinth, raised entrance with cap, silver-framed door/window, dark sloping ribbed metal awning, shrubs and drive-through to west. Brand listing lead photo is different and must not drive geometry.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/place/Raising+Cane%27s+Chicken+Fingers/@36.1005389,-115.1868296,174m/data=!3m1!1e3",
+      "observed": "Aerial confirms narrow north-south building east of bank and west of McDonalds. Photo CIABIhDs24rdcrdBufP9yNP2jZDT by Alejandro Esqueda April 2026 shows red entrance panel, stone veneer and silver double doors; reconcile with older site view. Photo CIABIhDmW1zemmgkMOY_1Aw3S9mx by Mirza Daniyal Ahmad November 2025 shows black booths, brown tables, rough brick walls and white pendants; layout only partial. Lead brand photo CIHM0ogKEICAgIC1staMWA December 2023 differs materially from site panorama.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint approximately 281 square metres; heights and facade divisions require estimation.",
+    "Partial public dining photographs do not establish kitchen/private layout."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Reconcile facade references and model exterior on mapped footprint.",
+    "Reference-supported public dining layout if sufficient evidence, with private spaces closed.",
+    "Installed visual inspection, walking, support/collision checks, matching performance and optimized packaged assets with current bake."
+  ],
+  "evidence": []
+}

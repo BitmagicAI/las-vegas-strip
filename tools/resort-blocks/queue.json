@@ -1276,8 +1276,14 @@
     {
       "id": "terribles-tropicana",
       "name": "Terrible Herbst / Chevron West Tropicana",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "terribles-tropicana.json"
+    },
+    {
+      "id": "canes-tropicana",
+      "name": "Raising Canes West Tropicana",
+      "status": "active",
+      "record": "canes-tropicana.json"
     }
   ],
   "active": "terribles-tropicana"
