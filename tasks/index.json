@@ -12809,11 +12809,13 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Build exterior and photo-supported public rooms.",
-    "Verify installed visuals, collision, walking, matching performance and packaging.",
-    "Resolve pool/landscape scope before adding off-footprint structures."
+    "Facade proportions, roof slope/eave profiles, sign typography/placement and window/cladding detail remain approximate. Street lettering placement needs refinement.",
+    "Public lobby and breakfast area remain sparse versus reference: ceiling details, market displays, lounge seating, trim and furniture profiles need refinement. Exact plan is inferred.",
+    "Pool and landscape parcel scope remains unverified and unbuilt; identify ownership and claim additional mapped structures before editing neighbors.",
+    "Guest rooms/private circulation not implemented.",
+    "Performance variance unresolved: final arrival18.2msmedian37.6p95 and breakfast19.4/33.9; street/west/lobby/reception about16.7median. Profile before claiming locked60fps."
    ],
    "record": "tools/resort-blocks/towneplace-stadium.json",
    "buildings": [],
@@ -12825,7 +12827,12 @@
     "writes": [
      "tools/resort-blocks/towneplace-stadium.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_towneplace_stadium.py",
+     "tools/strip-landmarks/test-towneplace-stadium.mjs",
+     "tools/city-exteriors/install-towneplace-stadium.py",
+     "tools/strip-landmarks/towneplace_stadium.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

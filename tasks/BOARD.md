@@ -241,7 +241,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-jack-tropicana` | S | P3 | 2 | Refine the exterior of Jack in the Box 3235 W Tropicana |
 | `ext-standard-tropicana` | S | P3 | 2 | Refine the exterior of Standard / Chevron 3201 W Tropicana |
 | `ext-hampton-tropicana` | L | P3 | 6 | Refine the exterior of Hampton Inn Tropicana |
-| `ext-towneplace-stadium` | M | P3 | 3 | Refine the exterior of TownePlace Suites Las Vegas Stadium District |
+| `ext-towneplace-stadium` | M | P3 | 5 | Refine the exterior of TownePlace Suites Las Vegas Stadium District |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

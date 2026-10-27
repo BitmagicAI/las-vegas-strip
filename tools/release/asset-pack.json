@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1403,
- "bytes": 1073903511,
+ "count": 1407,
+ "bytes": 1075981607,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18745175,
-   "sha256": "9de36c3ae81fdb6466ee40d9c2889019dda1bdf37ad3354d791cb39a7c8fb079",
+   "bytes": 18778441,
+   "sha256": "5334a3f95ac9d17079f0f9c2ea5a3dcaf2754ba7864bdb831c039bca1190679f",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13064184,
-   "sha256": "1fe8d541fe5b61c6ce1e835666fc532615bdff02703936be033df55641feac55",
+   "bytes": 13064000,
+   "sha256": "1a979d47075938a63dc935f52a54084a9f197d307215eaab735e2dbe2506eb13",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109758320,
-   "sha256": "e10b52eaf45315ece613211ffc4451ea112f1407101e43b7a9727ac3f1ea726a",
+   "bytes": 109756320,
+   "sha256": "5effc778d5771fe1a5d605b6fa57b2401dc549dd4664870c7267c6555f0b88eb",
    "kind": "optimized"
   },
   {
@@ -8081,6 +8081,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/towneplace-stadium-exterior-collision.bin",
+   "bytes": 864,
+   "sha256": "b84ef0233410360345986ce1a61269a748d3b5369aebc89bbdb811fa96c5a233",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/towneplace-stadium-exterior.glb",
+   "bytes": 1546896,
+   "sha256": "213c2b1c951cdf7ab568bf44409c09a5d75b6da5ef342ee399cbdbb3f6a7bcfa",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/towneplace-stadium-interior-collision.bin",
+   "bytes": 740,
+   "sha256": "cb2449f1477fb2918ef994e99aa5f75019c02898fe8fadff4b9fd250d1ae11c3",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/towneplace-stadium-interior.glb",
+   "bytes": 497884,
+   "sha256": "263f53b1720e4d501d3dd19dfdd8ad34e1ef3c6a661e3a2101bdfce0cc7f840a",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/travelersFrontage-exterior-collision.bin",
    "bytes": 264,
    "sha256": "5c148771275ab88f595793385a522c6363fcf9f3741db9b8d0563087fd12e60f",
@@ -8238,8 +8262,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 346678,
-   "sha256": "0aef59b997def76203a852e5833e4df0bb7091a1d9534a3be926923295def6e7",
+   "bytes": 347308,
+   "sha256": "6ee6c1bc01cf2a78e9e60a6defcad9a5b2dd8bb7e2576fce0cda597bdeac3e6e",
    "kind": "original"
   },
   {
