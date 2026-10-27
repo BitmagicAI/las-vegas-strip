@@ -4,8 +4,7 @@
   "status": "active",
   "mappedIds": [
     "way/1183057878",
-    "way/1382446130",
-    "way/504926567"
+    "way/1382446130"
   ],
   "claim": {
     "issue": 254,
@@ -23,18 +22,44 @@
       "url": "https://www.google.com/maps/@36.1071,-115.1523,140m/data=!3m1!1e3",
       "accessDate": "2026-10-27",
       "observed": "Aerial visually inspected. North-facing storefronts; cup near northeast corner. Drive-through gap between eastern pad and western attached retail. Mapped tenant labels/partitions require reconciliation."
+    },
+    {
+      "url": "https://images1.showcase.com/d2/yGmLRtiENsRE1x5APTzaEZVRwLs7uP7JcK7SEYxSrkE/document.pdf",
+      "accessDate": "2026-10-27",
+      "observed": "Indexed site-plan text identifies eastern pad suites110 Dunkin2000sqft,120 Subway1376sqft,130 Roberto2001sqft; western pad Mint/Liquor World. PDF image retrieval failed; aerial and exterior photo inspected separately."
     }
   ],
   "uncertainDimensions": [
-    "Do not assume mapped Roberto label correctly identifies tenant boundary. Mapped area total exceeds listed 5377 sqft. No replacement until pad boundary reconciled.",
+    "Mapped Roberto label appears misplaced on western Mint/Liquor pad. Retain way/504926567 entirely. Rebuild only two eastern polygons as the three photographed suites; their internal divisions remain estimates. Lease area vs mapped outer area differs.",
     "Parapet heights, cup dimensions and interior plan not surveyed."
   ],
-  "implemented": [],
-  "remaining": [
-    "Resolve tenant footprint ownership against leasing plan and aerial.",
-    "Original exteriors, drive-through clearance, public entrance treatment and reference-supported interiors.",
-    "Installed daylight views, scoped routes, walking and performance checks, optimized assets and current bake."
+  "implemented": [
+    "Original three-tenant eastern pad exterior: cup landmark with shaped lid, red siding, stepped/diagonal front panels, glazed doors and mullions, bold text approximations, service window and roof plant. 4460 source triangles before font triangulation.",
+    "Drive-through entrance frame preserves the existing mapped open gap and road. Only 16 owned visual triangles and 16 matching collision triangles removed from the two eastern polygons; western way/504926567 retained."
   ],
-  "evidence": [],
-  "validation": {}
+  "remaining": [
+    "Public interiors not yet built; obtain specific interior references before inferring room layouts. Current glazed shopfronts are backed by solid shells.",
+    "Fine architectural finish, branded sign artwork, storefront display graphics, side/rear facade details, landscaping and exterior furniture still need refinement. Not photorealistic completion.",
+    "Mapped footprint versus listed lease area differs; internal tenant widths and all heights estimated from exterior photo, not surveyed."
+  ],
+  "evidence": [
+    "build/city-exteriors/harmon-dining-before/results.json",
+    "build/city-exteriors/harmon-dining-first/results.json",
+    "build/city-exteriors/harmon-dining-ownership-audit.json",
+    "build/strip-landmarks/harmon-dining-route-audit.json",
+    "build/city-exteriors/harmon-dining-final/results.json",
+    "build/city-exteriors/harmon-dining-walk/results.json"
+  ],
+  "validation": {
+    "scopedRoutes": "161 support/capsule checks passed with current city collision, repeated after roof and service-window corrections.",
+    "baseline": "960x540 ultra180frames/view: front16.7/18.7,east16.6/18.6,drive16.6/19.5 ms median/p95.",
+    "installedFirstReview": "Three installed neutral images inspected; fixed floating rear trim, inward service window, thin lettering and overlapping roof plane.",
+    "runtimeWalk": "12 actual walking segments passed, sidewalk and drive-through in both directions.",
+    "performance": "Independent final960x540ultra180frames: front16.6/18.8,east16.6/18.3,drive16.7/18.7ms median/p95, near baseline.",
+    "installedFinalReview": "All three corrected installed images inspected. Roof trim now supported; service window faces outward; signage bold. Plain side finishes, storefront interiors, sign fidelity and detailed finishes remain open.",
+    "packaging": "1373 assets present,0missing; fresh671batch17.61MBbake."
+  },
+  "retainedMappedIds": [
+    "way/504926567"
+  ]
 }
