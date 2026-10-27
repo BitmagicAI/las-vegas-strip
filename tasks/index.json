@@ -12811,7 +12811,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Facade/roof profiles and window layout remain approximate. Official street image7441 re-inspected: dark central projecting strip, white horizontal band under lettering and shallow sloped metal caps differ from model. Lettering fit and cladding seam contrast corrected in this pass, verified in installed street view. Full facade fidelity remains unfinished.",
+    "Street central projection, horizontal band and crown backing revised from official7441; upper glazing now has original curtain detail. Roof silhouette, bay proportions and exact typography remain approximate. Pool photo8532 confirms west end should have ochre/white panels; current west elevation still needs correction. Fine horizontal seam aliasing remains at middle distance.",
     "Public lobby and breakfast area remain sparse versus reference: ceiling details, market displays, lounge seating, trim and furniture profiles need refinement. Exact plan is inferred.",
     "Pool and landscape parcel scope remains unverified and unbuilt; identify ownership and claim additional mapped structures before editing neighbors.",
     "Guest rooms/private circulation not implemented.",
@@ -12831,6 +12831,7 @@
      "tools/strip-landmarks/export_towneplace_stadium.py",
      "tools/strip-landmarks/test-towneplace-stadium.mjs",
      "tools/city-exteriors/install-towneplace-stadium.py",
+     "tools/strip-landmarks/review_towneplace.py",
      "tools/strip-landmarks/towneplace_stadium.py"
     ]
    },

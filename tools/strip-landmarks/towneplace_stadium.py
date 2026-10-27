@@ -17,11 +17,15 @@ def build(B):
   south=mz>1747
   mat='ts-ochre-paint' if south else 'ts-white-stucco'
   if 5<mx<15 or 20<mx<29 or 34<mx<50 or 55<mx<64:mat='ts-charcoal-paint'
-  if 24<mx<30:mat='ts-wood' if south else 'ts-charcoal-paint'
+  if 24<mx<30 and south:mat='ts-wood'
+  north_front=not south and abs(a[0]-b[0])>L*.9
+  central_strip=north_front and 28<mx<33.5
+  if central_strip:mat='ts-charcoal-paint'
   # Original stepped footprint provides facade projections rather than coplanar skins.
   G.box(mat,(L/2,10.65,sgn*.04),(L,14.0,.06))
   G.box('ts-stone',(L/2,1.75,sgn*.05),(L,3.4,.08)) if min(math.dist(G.p(L/2,0,0)[::2],doors[0]['p'][::2]),L)>4 else None
-  G.box('ts-white-stucco',(L/2,17.8,0),(L+.08,.38,.46))
+  G.box('ts-white-stucco',(L/2,17.8,0),(L+.08,.22,.34))
+  if north_front and not central_strip:G.box('ts-white-stucco',(L/2,16.35,sgn*.13),(L,.65,.22))
   G.box('ts-sill-paint',(L/2,3.6,sgn*.10),(L,.14,.24))
   if L<2.7:continue
   bays=max(1,round(L/4.4));pitch=L/bays
@@ -33,11 +37,13 @@ def build(B):
     G.box('ts-glass',(u,y,sgn*.21),(w,1.78,.05))
     G.box('ts-frame-paint',(u-.28,y,sgn*.25),(.045,1.8,.045))
     G.box('ts-sill-paint',(u,y-.99,sgn*.22),(w+.22,.09,.25))
-    if mat=='ts-charcoal-paint':
+    if mat=='ts-charcoal-paint' and not central_strip:
      for du in np.arange(-pitch/2+.25,pitch/2,.25):G.box('ts-panel-seam',(u+float(du),y,sgn*.082),(.012,3.0,.016))
    q=G.p(u,0,0)
    if math.dist(q[::2],doors[0]['p'][::2])>3:
     G.box('ts-frame-paint',(u,1.8,sgn*.14),(w+.14,2.2,.14));G.box('ts-glass',(u,1.8,sgn*.24),(w,2.06,.045))
+  if central_strip:
+   for yy in np.arange(3.8,17.6,.24):G.box('ts-panel-seam',(L/2,float(yy),sgn*.085),(L,.013,.018))
   for yy in [6.8,9.85,12.9,15.95]:G.box('ts-panel-seam',(L/2,yy,sgn*.085),(L,.018,.018))
  # Three shallow sloping crowns with projecting metal fascias, estimated from both official views.
  for x,w,base in [(10,18,18.1),(37,28,18.65),(62,19,18.35)]:
@@ -45,14 +51,17 @@ def build(B):
   pts=[F.p(x-w/2,base,z0),F.p(x+w/2,base+.85,z0),F.p(x+w/2,base+.85,z1),F.p(x-w/2,base,z1)]
   B.face('ts-roof-metal',pts)
   # Enclose the shallow roof crown; the overhang is not an open floating plane.
-  for a,b in zip(pts,pts[1:]+pts[:1]):B.face('ts-white-stucco',[a,b,(b[0],17.78,b[2]),(a[0],17.78,a[2])])
+  for a,b in zip(pts,pts[1:]+pts[:1]):
+   # Recess the fascia below a thin metal edge; north-facing backing is charcoal.
+   B.face('ts-charcoal-paint' if a[2]==pts[0][2] and b[2]==pts[0][2] else 'ts-white-stucco',[a,b,(b[0],17.78,b[2]),(a[0],17.78,a[2])])
   B.face('ts-white-stucco',[(q[0],17.78,q[2]) for q in pts])
-  for a,b in zip(pts,pts[1:]+pts[:1]):B.face('ts-frame-paint',[a,b,(b[0],b[1]-.22,b[2]),(a[0],a[1]-.22,a[2])])
- F.box('ts-white-stucco',(28.7,18.6,10),(4.7,3.0,20.6))
+  for a,b in zip(pts,pts[1:]+pts[:1]):B.face('ts-frame-paint',[a,b,(b[0],b[1]-.10,b[2]),(a[0],a[1]-.10,a[2])])
+ F.box('ts-charcoal-paint',(30.78,18.25,-.88),(5.1,1.05,.18))
+ F.box('ts-white-stucco',(30.78,19.43,-.88),(5.1,1.3,.18))
  F.text('TOWNEPLACE SUITES',(42,18.4,20.18),.85,'ts-charcoal-paint',back=True)
  F.text('MARRIOTT',(42,17.96,20.18),.32,'ts-red-paint',back=True)
- F.text('TownePlace Suites',(37,18.25,-.79),.72,'ts-charcoal-paint')
- F.text('MARRIOTT',(37,17.94,-.79),.25,'ts-red-paint')
+ F.text('TownePlace Suites',(41,18.35,-.79),.85,'ts-letter')
+ F.text('MARRIOTT',(44,17.94,-.79),.3,'ts-red-paint')
  # South arrival canopy and pergola; independently supported, no solid placeholder.
  F.box('ts-frame-paint',(31.3,3.65,24.6),(13.8,.35,5.5))
  for x in [25.0,37.6]:F.box('ts-frame-paint',(x,1.9,26.5),(.24,3.6,.24),True)
