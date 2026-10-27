@@ -31,18 +31,73 @@
       "url": "https://cdn9.localdatacdn.com/nv/las-vegas/155734/original/r7zEQlpcEc.jpg",
       "accessDate": "2026-10-27",
       "observed": "Location-specific patio/long elevation inspected: multiple red awnings, pale concrete picnic tables, red/white umbrellas, two raised tiled masses and ringed pylon sign. Photo date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.10128,-115.18225,130m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial inspected: east/west elongated restaurant, separate company store to north, south patio/parking, drive-through loop east. Neighboring building excluded."
+    },
+    {
+      "url": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/e0PEjdYZY7.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Smaller roadside arrow sign above short masonry wall/black fence inspected; differs from ringed tall pole visible in other photographs. Exact positions not yet established."
+    },
+    {
+      "url": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/9AZC7KTPm4.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Location-specific Restaurantji gallery photo 13 inspected full-size: white square tables, red round spindle-back chairs, grey square floor tiles with dark grout, metal cone pendant lamps, white walls and low grey wainscot. Outdoor umbrellas visible through windows. Photo date unknown; does not establish complete floor plan."
     }
   ],
   "uncertainDimensions": [
     "393.01m2 mapped footprint. Heights, exact awning divisions and patio dimensions require photographic estimates.",
-    "No location-specific interior layout verified yet. Nearby company-store shell is excluded."
+    "Public room dimensions and ordering-counter placement inferred; photograph supports finish/furniture only. Kitchen and staff spaces remain closed."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original mapped restaurant shell with two raised tiled entrance bays, red awnings, transparent mullioned glazing, continuous stepped cornice and red tile band, patio and five concrete picnic-table/umbrella groups.",
+    "Reference-supported public dining study: white square tables, red spindle-back chairs, grey tile floor and wainscot, pendant shades, inferred public ordering counter; two automatic entrances. No kitchen or private-room access."
+  ],
   "remaining": [
-    "Build mapped restaurant exterior, patio and signage, preserving neighboring company store and roads.",
-    "Research public dining room; label inferred layout and preserve staff-only boundaries.",
-    "Installed daylight/walking/performance checks and optimized packaged city bake."
+    "Public dining layout and counter placement are inferred, not measured; kitchen/staff rooms intentionally inaccessible. Fine furniture, menu and finish fidelity remain unfinished.",
+    "Locate and implement both roadside sign types and full site boundary/landscape details without disturbing road or company store.",
+    "Exact rear service/drive-through treatment and roof equipment layout remain estimated.",
+    "Photo-perfect material, glass/frame finish and furniture fidelity are not achieved; no completion claim."
   ],
-  "evidence": [],
-  "validation": {}
+  "evidence": [
+    {
+      "path": "build/city-exteriors/inout-dean-martin-final",
+      "observed": "Five installed neutral-daylight views inspected. Corrected opaque glazing and chair backs. Final trim restoration inspected in patio, west and dining captures at build/city-exteriors/inout-dean-martin-trim.",
+      "reference": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/9AZC7KTPm4.jpg"
+    }
+  ],
+  "validation": {
+    "scoped": {
+      "checks": 187,
+      "failures": 0
+    },
+    "walking": {
+      "segments": 18,
+      "passed": true,
+      "routes": [
+        "South patio clear aisle",
+        "West entrance sidewalk",
+        "Public dining entry and cross aisle"
+      ]
+    },
+    "performance": {
+      "resolution": "960x540 ultra",
+      "frames": 180,
+      "baseline": "build/city-exteriors/inout-dean-martin-before/results.json",
+      "final": "build/city-exteriors/inout-dean-martin-packaged/results.json",
+      "p50Ms": "16.5\u201316.6",
+      "p95Ms": "18.8\u201319.5",
+      "note": "Final packaged fresh-bake run: three matching exterior views plus two room views. Baseline exterior p50 16.6\u201316.8, p95 18.2\u201318.7."
+    },
+    "package": {
+      "assetsPresent": 1379,
+      "assetsMissing": 0,
+      "bakeCurrent": true,
+      "batches": 673,
+      "bakeMB": 17.68
+    }
+  }
 }
