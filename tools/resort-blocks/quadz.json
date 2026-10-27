@@ -1,0 +1,31 @@
+{
+  "id": "quadz",
+  "name": "QUADZ and west retail frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/1382446128"
+  ],
+  "claim": {
+    "issue": 238,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/238",
+    "assignee": "janiverse",
+    "date": "2026-10-26"
+  },
+  "sources": [
+    {
+      "url": "https://www.quadz.bar/lasvegas/",
+      "observed": "Search index confirms4640ParadiseRoad. Direct official page has certificate failure; not bypassed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=MWwgRMDwDlYEl-im_axlbg&heading=155&pitch=0",
+      "imageDate": "2023-02",
+      "observed": "Parking frontage under continuous green fascia; west neighboring Get Booked storefront must distinguish tenancy from mapped shell."
+    }
+  ],
+  "remaining": [
+    "Reconcile tenancy boundaries and dates; model entire mapped shell with reference-supported frontages.",
+    "Install original exterior with targeted collisions; inspect actual daylight views and walking routes.",
+    "Research public interior; do not imply verified floorplan from isolated photographs.",
+    "Validate optimized assets, matching performance and fresh city bake."
+  ]
+}
