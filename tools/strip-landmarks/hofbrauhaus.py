@@ -1,6 +1,6 @@
 """Hofbrauhaus surveyed-envelope study. Dimensions estimated from February 2026 Street View.
 
-Exterior only in this pass. Public interior installation waits for layout corroboration.
+Public rooms are separately streamed; their connecting layout is an explicit interpretation.
 No Google imagery or geometry is embedded; all geometry is original on the OSM footprint.
 """
 from common import *
@@ -50,7 +50,13 @@ def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/hofbrauhaus';B.detail=0
  p=footprint(ID);F=Frame(B,1922.741,969.671,YAW,y=0)
  # Envelope remains solid in the staged exterior study; public openings are installed with interior later.
- B.shell(p,.15,11.65,'hb-plaster',roof=False)
+ entry=dict(p=F.p(19,.18,0),yaw=YAW,width=2.5,height=3.1,name='Restaurant entrance',venue=KEY)
+ B.portals.append(entry)
+ B.shell(p,.15,11.65,'hb-plaster',roof=False,openings=[entry])
+ # Solid public threshold, with the same datum inside and outside.
+ B.planar('hb-stone',p,.18,True)
+ apron=F.poly([(1,-1.9),(60,-1.9),(60,0),(1,0)])
+ B.planar('hb-stone',apron,.18,True)
  pts=list(p.exterior.coords)
  for a,b in zip(pts,pts[1:]):
   G,L,nx,nz=facade_frame(B,a,b,p,.05);G.y=0
@@ -61,7 +67,8 @@ def exterior(B):
    # the southern half retains two smaller tiers above the entry arcade.
    for u in [34,41,48]:window(G,u,.7,4.0,5.6,True)
    for u in [4,9,14,19,24,57]:
-    window(G,u,.35,2.65,3.65,True)
+    if u!=19:window(G,u,.35,2.65,3.65,True)
+    else:G.arch(u,-.08,2.8,3.8,'hb-stone',.12,.18)
     window(G,u,5.1,1.35,1.75,False,True)
    for u in [3,6,11,14,18,34,36.4,41,43.4,48,50.4,55,57.4]:
     window(G,u,7.9,1.15,2.25,True,True)
@@ -89,29 +96,34 @@ def exterior(B):
     if front and abs(u-30)<3:continue
     G.box('hb-plaster',(u,12.5,1),(2.05,1.35,1.9))
     window(G,u,12.0,1.5,.9)
-    # Pitched dormer roof and triangular cheek: no floating flat slab.
-    B.face('hb-plaster',[G.p(u-1.025,13.175,.05),G.p(u+1.025,13.175,.05),G.p(u,13.82,.05)])
-    for side in [-1,1]:
-     B.upface('hb-roof',[G.p(u,13.86,-.15),G.p(u+side*1.25,13.15,-.15),G.p(u+side*1.25,13.15,2.15),G.p(u,13.86,2.15)])
+    G.box('hb-stone',(u,13.26,.85),(2.35,.16,2.4))
  # Clipped pitched roof retains every OSM setback. Ridge/slope heights are estimates.
  local=[]
  for x,z in list(p.exterior.coords)[:-1]:
   dx,dz=x-F.x,z-F.z;local.append((F.co*dx-F.si*dz,F.si*dx+F.co*dz))
  lp=Polygon(local)
- def roofheight(v):return max(11.65,16.1-abs(v-12.4)*.36)
- # Split at both slope breaks as well as the ridge; triangulating across
- # the rear flat transition created an artificial diagonal roof slope.
- breaks=[-1,12.4,12.4+(16.1-11.65)/.36,40]
- for lo,hi in zip(breaks,breaks[1:]):
-  section=lp.intersection(box(-2,lo,65,hi))
-  for tri in triangles(section):B.upface('hb-roof',[F.p(u,roofheight(v),v) for u,v in list(tri.exterior.coords)[:-1]])
- for a,b in zip(local,local[1:]+local[:1]):
-  cuts=[a,b]
-  for boundary in breaks[1:-1]:
-   if (a[1]-boundary)*(b[1]-boundary)<0:
-    t=(boundary-a[1])/(b[1]-a[1]);cuts.append((a[0]+t*(b[0]-a[0]),boundary))
-  cuts.sort(key=lambda q:(q[0]-a[0])**2+(q[1]-a[1])**2)
-  for aa,bb in zip(cuts,cuts[1:]):B.face('hb-plaster',[F.p(aa[0],11.65,aa[1]),F.p(bb[0],11.65,bb[1]),F.p(bb[0],roofheight(bb[1]),bb[1]),F.p(aa[0],roofheight(aa[1]),aa[1])])
+ # Convex lower envelope of four roof planes: roof-end hips, not blank
+ # triangular walls. Clip each plane's region before triangulation.
+ planes=[(0,.36,11.65),(0,-.36,20.564),(.65,0,11.65),(-.65,0,51.55)]
+ def clip_half(poly,a,b,c):
+  coords=list(poly.exterior.coords)[:-1];result=[]
+  for q,r in zip(coords,coords[1:]+coords[:1]):
+   fq=a*q[0]+b*q[1]+c;fr=a*r[0]+b*r[1]+c
+   if fq<=1e-8:result.append(q)
+   if (fq<0)!=(fr<0):
+    t=fq/(fq-fr);result.append((q[0]+t*(r[0]-q[0]),q[1]+t*(r[1]-q[1])))
+  return Polygon(result) if len(result)>2 else Polygon()
+ for a,b,c in planes:
+  region=lp
+  for aa,bb,cc in planes:
+   if region.is_empty:break
+   region=clip_half(region,a-aa,b-bb,c-cc)
+  if region.is_empty:continue
+  for tri in triangles(region):B.upface('hb-roof',[F.p(u,max(11.65,a*u+b*v+c),v) for u,v in list(tri.exterior.coords)[:-1]])
+ # Street-side waist-high terrace rail, interrupted at the entrance.
+ for lo,hi in [(1,17.4),(20.6,59)]:
+  for y in [.3,1.25]:F.tube('hb-frame',(lo,y,-1.6),(hi,y,-1.6),.035,8)
+  for u in np.arange(lo,hi,.25):F.tube('hb-frame',(u,.18,-1.6),(u,1.25,-1.6),.015,6)
  # Northwest corner projecting two-storey polygonal bay.
  cx,cz=F.p(60.5,0,.35)[::2]
  Q=Frame(B,cx,cz,YAW,y=0)
@@ -125,4 +137,4 @@ def exterior(B):
    if L<3:window(G,L/2,y+.35,max(.4,L-.3),1.9)
  roof=Q.poly([(-1.7,-.3),(-1.4,-1.6),(0,-2.2),(1.4,-1.6),(1.7,-.3)])
  for aa,bb in zip(list(roof.exterior.coords),list(roof.exterior.coords)[1:]):B.face('hb-copper',[(aa[0],9.9,aa[1]),(bb[0],9.9,bb[1]),Q.p(0,11.1,-.65)])
- return dict(key=KEY,name='Hofbrauhaus Las Vegas',center=[1933,0,940],bounds=list(p.bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
+ return dict(key=KEY,name='Hofbrauhaus Las Vegas',center=[1933,0,940],bounds=list(p.bounds),structural=True,exteriorOnly=False,portals=[entry],zones=[dict(origin=F.p(30,.18,0),yaw=YAW,width=60,depth=36,height=11)],lights=[],routes=[],hotelSources=[],views={})

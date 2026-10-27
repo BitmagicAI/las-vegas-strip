@@ -1,0 +1,40 @@
+{
+  "id": "double-down-saloon",
+  "name": "Double Down Saloon",
+  "status": "queued",
+  "mappedIds": [
+    "way/966155068"
+  ],
+  "claim": {
+    "issue": 234,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/234",
+    "assignee": "janiverse",
+    "date": "2026-10-26"
+  },
+  "sources": [
+    {
+      "url": "https://doubledownsaloon.com/",
+      "observed": "Official Las Vegas address, public bar features and live music."
+    },
+    {
+      "url": "https://doubledownsaloon.com/photos/",
+      "observed": "Gallery mixes Las Vegas and NYC; do not assign imagery without corroboration."
+    },
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g45963-d553422-Reviews-Double_Down_Saloon-Las_Vegas_Nevada.html",
+      "imageURL": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/37/36/6c/the-front-of-the-bar.jpg?h=1000&s=1&w=1000",
+      "observed": "Entrance image visually inspected: pale painted block wall, dark shingle canopy on two posts, central recessed door, raised porch and stairs/handrails, red-framed signs. Image date unverified; corroborate current Street View."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped rectangular footprint approximately12.9\u00d716.7m; runtime6m height is an unknown-source default.",
+    "Entry orientation and current facade need Street View corroboration. Public interior layout unverified."
+  ],
+  "remaining": [
+    "Corroborate current Las Vegas exterior and entrance orientation.",
+    "Create owned exterior, entry and reference-supported public bar.",
+    "Remove only owned shell, install optimized runtime assets and collision.",
+    "Inspect installed views, walk public routes, profile and verify release packaging."
+  ],
+  "ownership": "No matching ID or Double Down generator found in existing blocks/builders; runtime building index still contains the mapped default. Existing Paradise Road task185 has distinct IDs well north of this site."
+}

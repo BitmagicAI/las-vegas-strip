@@ -1178,7 +1178,13 @@
       "name": "Hofbr\u00e4uhaus Las Vegas",
       "status": "active",
       "record": "hofbrauhaus.json"
+    },
+    {
+      "id": "double-down-saloon",
+      "name": "Double Down Saloon",
+      "status": "queued",
+      "record": "double-down-saloon.json"
     }
   ],
-  "active": "horseshoe-versailles"
+  "active": "hofbrauhaus"
 }
