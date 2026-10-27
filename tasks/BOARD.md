@@ -238,7 +238,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-canes-tropicana` | S | P3 | 2 | Refine the exterior of Raising Canes West Tropicana |
 | `ext-former-starbucks-tropicana` | S | P3 | 2 | Refine the exterior of Former Starbucks 3575 W Tropicana |
 | `ext-former-wendys-tropicana` | S | P3 | 2 | Refine the exterior of Former Wendys 3333 W Tropicana |
-| `ext-jack-tropicana` | S | P3 | 1 | Refine the exterior of Jack in the Box 3235 W Tropicana |
+| `ext-jack-tropicana` | S | P3 | 2 | Refine the exterior of Jack in the Box 3235 W Tropicana |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

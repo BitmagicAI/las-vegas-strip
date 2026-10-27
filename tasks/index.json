@@ -12691,9 +12691,10 @@
    "size": "S",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
    "items": [
-    "Build reference-supported exterior, targeted collision replacement, optimized assets/current bake, scoped and actual routes, installed visual review and matching performance."
+    "Exact logo typography, facade weathering, rear service arrangement and parking landscaping remain approximate.",
+    "Public interior is unverified and remains closed; model is not photorealistically complete."
    ],
    "record": "tools/resort-blocks/jack-tropicana.json",
    "buildings": [],
@@ -12705,7 +12706,12 @@
     "writes": [
      "tools/resort-blocks/jack-tropicana.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_jack_tropicana.py",
+     "tools/city-exteriors/install-jack-tropicana.py",
+     "tools/strip-landmarks/test-jack-tropicana.mjs",
+     "tools/strip-landmarks/jack_tropicana.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

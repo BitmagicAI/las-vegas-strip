@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1395,
- "bytes": 1064336124,
+ "count": 1397,
+ "bytes": 1065631387,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18638664,
-   "sha256": "854686129bfda5077989e15a92ce40ba0196e9efc5e2e3d2f3619e358021dde2",
+   "bytes": 18654445,
+   "sha256": "e78b787c0e823ebeba8edfb1c1c350e2f155995d854e9fa75c322ff7dafe75e8",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13065124,
-   "sha256": "cf8ead05221da5f7d4c4f35d33ffd589f749b5db0a4bae6100c916279ce5708d",
+   "bytes": 13064912,
+   "sha256": "3120ef9f951ebee867776edd862fcac9e79aa4cf4ea5f4243beeb75e233816e8",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109760824,
-   "sha256": "c34ce498f91c5c268e1a0ca42fda459942a1a6158934263d1ff89f2aa16d2952",
+   "bytes": 109760576,
+   "sha256": "98c0e96bd71a12725aae1957f743591bd1203f03cb5cc876de386409e4395dc6",
    "kind": "optimized"
   },
   {
@@ -6713,6 +6713,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/jack-tropicana-exterior-collision.bin",
+   "bytes": 256,
+   "sha256": "d94e2424c6428f099f985d55b3279f184e659f4161c2e772fd7ca345ec471a88",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/jack-tropicana-exterior.glb",
+   "bytes": 1279392,
+   "sha256": "b0865bf325def72e69a4aa3eaba307b0a3a1a13b7a1e466c94dbc89bfd04a1c4",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/jackMainWyoming-exterior-collision.bin",
    "bytes": 1080,
    "sha256": "ae90bfd15530b2e8665957e374e63bc690aadf62159bbaff6e75d5e3b40871ac",
@@ -8190,8 +8202,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 345402,
-   "sha256": "afb568d3c247a01c66db4d8e6be363a427e5812a383f79986b8c3da1059bede5",
+   "bytes": 345696,
+   "sha256": "3a3cb8a92fc752eaa0718242011fccd470edd533499baa39dd92e5c6f1bfaff2",
    "kind": "original"
   },
   {
