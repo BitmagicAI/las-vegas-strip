@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1369,
- "bytes": 1041470538,
+ "count": 1371,
+ "bytes": 1043057715,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18424174,
-   "sha256": "0ea813440582b526e42de91234a76da6c1bbb52039f8a2ee79211e9e2c5be094",
+   "bytes": 18424181,
+   "sha256": "c646a38838d2698b65c283da957fe550f9d42aab1a98824926b5ca7d4b925f0f",
    "kind": "original"
   },
   {
@@ -6234,14 +6234,26 @@
   },
   {
    "path": "build/strip-landmarks/ferraros-exterior-collision.bin",
-   "bytes": 700,
-   "sha256": "a1b822ce74615759abfb357aa238b6ea0765f8ef75bc5ed974f4ed81a04e443c",
+   "bytes": 768,
+   "sha256": "a5ab0c92f130b2988ae7bfa2923eb957424ab3702c3afbbe0515c543997b7ac8",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/ferraros-exterior.glb",
-   "bytes": 1167360,
-   "sha256": "4a5f6103d862af3616867a6d240d5c3c7570395239a739bcefc1721de7eeb0ea",
+   "bytes": 1167208,
+   "sha256": "3223cc99be9c58d37f39d16b701dc0520801c7259201581a61b7c336e355d49a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/ferraros-interior-collision.bin",
+   "bytes": 1080,
+   "sha256": "cdc7765b743f11f4b04893c0625581c83fc54c3dd7643cde35f47063a05e3bfc",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/ferraros-interior.glb",
+   "bytes": 1585660,
+   "sha256": "fe5384c773068e11f8dcd29c4610ed75ec611b91f1f1d7bf78d9987c6ee1b173",
    "kind": "optimized"
   },
   {
@@ -8034,8 +8046,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 340946,
-   "sha256": "ce720bd394a55293d70e4a535c19d78287637da17665c1edadda3696ecc65792",
+   "bytes": 341460,
+   "sha256": "33dd89a8fe4ff3877b7f8e064755648a4fdbcd6b516d414024df00920a76ce45",
    "kind": "original"
   },
   {

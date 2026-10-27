@@ -5,7 +5,8 @@ KEY='ferraros';ID='way/1421206068';YAW=-2.8031839330908013
 def build(B):
  p=footprint(ID);F=Frame(B,1914.764,762.171,YAW,y=0)
  B.property=KEY+'-exterior';B.source='podium/ferraros';B.detail=0
- B.shell(p,.04,6.35,'fr-stucco',roof=False);B.planar('fr-roof',p,6.35)
+ entry=dict(p=F.p(16.95,.16,0),yaw=YAW,width=2.25,height=2.8,name='Ferraro public entrance',venue=KEY)
+ B.shell(p,.04,6.35,'fr-stucco',openings=[entry],roof=False);B.planar('fr-roof',p,6.35)
  rng=random.Random(252)
  def stone(u,v,w,h):
   F.box('fr-mortar',(u,h/2,v),(w,h,.34))
@@ -45,9 +46,9 @@ def build(B):
   for j in range(9):F.box('fr-stone'+str((row+j)%3),(14.84+j*.52,6.67+row*.16,-.95),(.50,.14,.045));cornice(14.55,19.35,7.35,-.9)
  F.box('fr-limestone',(16.95,8.35,.5),(4.4,1.7,2.8));cornice(14.65,19.25,9.22,-.95)
  for u in [15.65,16.95,18.25]:F.box('fr-inset',(u,8.60,-.92),(.38,.38,.05))
- F.box('fr-glass',(16.95,1.45,-.065),(2.25,2.8,.08))
- for u in [15.79,16.95,18.11]:F.box('fr-metal',(u,1.45,-.12),(.065,2.9,.08))
- for u in [16.78,17.12]:F.tube('fr-metal',(u,.9,-.19),(u,1.4,-.19),.02,10)
+ # Door geometry supplied by the shared portal system.
+ for u in [15.79,18.11]:F.box('fr-metal',(u,1.45,-.12),(.065,2.9,.08))
+
  F.text("Ferraro’s",(16.95,5.35,-1.63),.76,'fr-letter');F.text('RISTORANTE',(16.95,4.65,-1.63),.30,'fr-letter')
  for u in [14.3,19.6]:
   B.sphere('fr-metal',F.p(u,3.2,-1.65),.18,16,10)
@@ -99,6 +100,11 @@ def build(B):
   F.box('fr-equipment',(u,6.8,v),(1.7,.8,1.4));F.box('fr-metal',(u,7.21,v),(1.5,.02,1.2))
  routes=[dict(name='Front entrance approach',points=[F.p(16.95,.16,-4),F.p(16.95,.16,-2),F.p(16.95,.16,-.9)]),dict(name='Patio public access',points=[F.p(25.2,.16,-2),F.p(25.2,.16,.8),F.p(26.2,.16,1.8)])]
  F.box('fr-paving',(16.95,.08,-3.1),(2.2,.16,2.2),True);F.box('fr-paving',(25.2,.08,-1.1),(2.8,.16,2.2),True)
- return dict(key=KEY,name='Ferraro’s Ristorante',center=F.p(19,0,10),bounds=list(p.buffer(3).bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=routes,hotelSources=[])
+ # Keep the permanent support slab below the room finish to avoid coplanar faces.
+ B.planar('fr-floorbase',p,.10,True)
+ from ferraros_interior import build_public
+ build_public(B,F,entry)
+ routes.append(dict(name='Entrance bar and dining circulation',points=[F.p(16.95,.16,-3),F.p(16.95,.16,2),F.p(14.5,.16,6),F.p(14.5,.16,12),F.p(14.5,.16,16),F.p(10.5,.16,16)]))
+ return dict(key=KEY,name='Ferraro’s Ristorante',center=F.p(19,0,10),bounds=list(p.buffer(3).bounds),structural=True,exteriorOnly=False,portals=[entry],zones=[dict(origin=F.p(10.95,.16,.12),yaw=YAW,width=21.5,depth=20.08,height=4.1)],lights=B.lights,routes=routes,hotelSources=[])
 if __name__=='__main__':
  B=Meshes();meta=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(meta,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

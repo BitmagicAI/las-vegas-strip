@@ -5,7 +5,7 @@ import RAPIER from '@dimforge/rapier3d-compat';
 const read=p=>JSON.parse(fs.readFileSync(p));
 assert(!read('build/geographic-strip/building-index.json').some(b=>b.id==='way/1421206068'));
 await RAPIER.init();const world=new RAPIER.World({x:0,y:-9.81,z:0});
-for(const c of [...read('build/geographic-strip/city-colliders.json'),read('build/strip-landmarks/ferraros-exterior-collision.json')]){
+for(const c of [...read('build/geographic-strip/city-colliders.json'),read('build/strip-landmarks/ferraros-exterior-collision.json'),read('build/strip-landmarks/ferraros-interior-collision.json')]){
  const body=world.createRigidBody(RAPIER.RigidBodyDesc.fixed());
  world.createCollider(RAPIER.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)),body);
 }

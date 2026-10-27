@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T09:36:50.097Z",
- "totalBytes": 3307786504,
- "count": 653,
+ "generated": "2026-10-27T09:55:31.424Z",
+ "totalBytes": 3313366256,
+ "count": 654,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -2042,7 +2042,16 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 4601440,
+   "bytes": 4596372,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/ferraros-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 5584820,
    "preset": "level",
    "overrides": []
   },

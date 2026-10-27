@@ -228,7 +228,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-naked-city-paradise` | M | P3 | 3 | Refine the exterior of Naked City Pizza Paradise |
 | `ext-piranha` | M | P3 | 3 | Refine the exterior of Piranha Nightclub |
 | `ext-gipsy` | M | P3 | 3 | Refine the exterior of Gipsy Nightclub |
-| `ext-ferraros` | S | P3 | 1 | Refine the exterior of Ferraro’s Ristorante |
+| `ext-ferraros` | M | P3 | 3 | Refine the exterior of Ferraro’s Ristorante |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

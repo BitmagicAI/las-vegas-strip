@@ -12296,12 +12296,14 @@
    "id": "ext-ferraros",
    "title": "Refine the exterior of Ferraro’s Ristorante",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Build mapped main exterior and patio; reconcile A200 annex and public room layout; inspect installed views, routes and performance; package optimized assets/current bake."
+    "A200 annex occupies part of neighboringway/319208749; establish exact tenancy boundary and scoped ownership before editing.",
+    "Public-room layout is inferred from photographs, not a surveyed floor plan. A200 and private/service rooms remain unmodeled. Further fine furnishings, architectural detail, exact materials and mirror reflections remain; no photorealistic completion claim.",
+    "Rear/service elevation is still a simple shell pending reference. Detailed landscaping, patio shade canopy, signature script lettering and material finish require refinement; not photorealistic completion."
    ],
    "record": "tools/resort-blocks/ferraros.json",
    "buildings": [],
@@ -12313,7 +12315,13 @@
     "writes": [
      "tools/resort-blocks/ferraros.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_ferraros.py",
+     "tools/strip-landmarks/test-ferraros.mjs",
+     "tools/city-exteriors/install-ferraros.py",
+     "tools/strip-landmarks/ferraros.py",
+     "tools/strip-landmarks/ferraros_interior.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
