@@ -12852,14 +12852,16 @@
    "size": "L",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 8 known gaps are recorded.",
    "items": [
     "Seven final installed views inspected: north sign masking corrected; furnishings remain simplified, floor texture visibly streaked, glazing opaque. Further material refinement required.",
     "Planting, arrival landscaping and finer facade/material refinement remain pending.",
     "Glass remains opaque and public layout inferred; guest rooms are not built.",
     "Public rooms remain sparse and stylized; cabinetry/appliance dimensions and branded details are approximate.",
-    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Patio grills/firepit and broader site planting remain to survey and build.",
-    "North enclosure broad slats/piers/beam and folded umbrellas authored; planting, finer canvas/chair detail and full patio enclosure still incomplete. Reference dates differ; dimensions remain estimated. Installed gate close-up confirms canvas remains angular."
+    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Grill patio authored; separate firepit and broader site planting remain to survey and build.",
+    "North enclosure broad slats/piers/beam and folded umbrellas authored; planting, finer canvas/chair detail and full patio enclosure still incomplete. Reference dates differ; dimensions remain estimated. Installed gate close-up confirms canvas remains angular.",
+    "Grill material no longer receives incorrect diamond plate, but installed alloy reads too matte/dark. Grills, chairs and planting still need finer material/shape work; this is not photorealistic completion.",
+    "Patio frame-time variance is unresolved: final captures range from16.7to49.7ms median by view/run; profile isolated before claiming60fps."
    ],
    "record": "tools/resort-blocks/home2-stadium.json",
    "buildings": [],
@@ -12875,9 +12877,9 @@
      "tools/strip-landmarks/export_home2_stadium.py",
      "tools/strip-landmarks/test-home2-stadium.mjs",
      "tools/city-exteriors/install-home2-stadium.py",
+     "tools/strip-landmarks/home2_patio.py",
      "tools/strip-landmarks/home2_pool.py",
-     "tools/strip-landmarks/review_home2_stadium.py",
-     "tools/strip-landmarks/home2_stadium.py"
+     "tools/strip-landmarks/review_home2_stadium.py"
     ]
    },
    "acceptance": [

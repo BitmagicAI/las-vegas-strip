@@ -5,13 +5,14 @@ import numpy as np
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
 E.colors.update({'h2-white-stucco': 'dadbd4', 'h2-ochre-paint': 'a17b4e', 'h2-charcoal-paint': '555653', 'h2-gray-paint': '676966', 'h2-lime-paint': 'a7bd4e', 'h2-aqua-paint': 'a7c7c5', 'h2-roof': 'b9bbb4', 'h2-roof-metal': '7d9293', 'h2-frame-paint': 'c3d0cb', 'h2-metal': '707b7c', 'h2-panel-joint': '777972', 'h2-glass': '4f888c', 'h2-transom-glass': '314c50', 'h2-sill-paint': 'c3c8bc', 'h2-letter': 'f1eee4', 'h2-stone': 'aaa9a2', 'h2-paving': 'aaa99e', 'h2-floor': 'aca69a', 'h2-interior': 'd3cec2', 'h2-ceiling': 'e0ded5', 'h2-counter': 'd6d4c8', 'h2-screen': '20292d', 'h2-wood': 'aa8c60', 'h2-seat-fabric': '79756a', 'h2-green-fabric': '7e924e', 'h2-yellow-fabric': 'b5a14a', 'h2-blue-fabric': '527e87', 'h2-gold': 'b29b58', 'h2-soffit': 'bbb39e', 'h2-vent': '535a57'})
-E.colors.update({'h2-red-canvas':'9e3033','h2-chair-wood':'bda270','h2-pool-tile':'466e87','h2_pool':'529baf','h2-grout':'a8bfc2','h2-lift-blue':'4773a4','h2-soil':'484035','h2-leaf':'6d8249'})
+E.colors.update({'h2-brushed-alloy':'b6bdbb','h2-red-canvas':'9e3033','h2-chair-wood':'bda270','h2-pool-tile':'466e87','h2_pool':'529baf','h2-grout':'a8bfc2','h2-lift-blue':'4773a4','h2-soil':'484035','h2-leaf':'6d8249'})
 for part in ([sys.argv[sys.argv.index('--part')+1]] if '--part' in sys.argv else ['exterior','interior']):
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('home2-stadium-'+part)
  rng=np.random.default_rng(278);n=512;yy,xx=np.mgrid[:n,:n]
  for key,m in E.materials.items():
   bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.86;m.use_backface_culling=False
-  if key in ['h2-metal','h2-roof-metal']:bs.inputs['Metallic'].default_value=.5;bs.inputs['Roughness'].default_value=.44
+  if key in ['h2-metal','h2-roof-metal','h2-brushed-alloy']:bs.inputs['Metallic'].default_value=.5;bs.inputs['Roughness'].default_value=.44
+  if key=='h2-brushed-alloy':bs.inputs['Metallic'].default_value=.85;bs.inputs['Roughness'].default_value=.32
   if key=='h2-glass':bs.inputs['Metallic'].default_value=.03;bs.inputs['Roughness'].default_value=.36
   if key not in ['h2-wood','h2-floor','h2-stone','h2-seat-fabric']:continue
   c=np.array([int(E.colors[key][i:i+2],16)/255 for i in [0,2,4]])
@@ -33,7 +34,7 @@ for part in ([sys.argv[sys.argv.index('--part')+1]] if '--part' in sys.argv else
  for o in bpy.context.scene.objects:
   if o.type=='FONT':o.data.font=bpy.data.fonts.load('/System/Library/Fonts/Supplemental/Arial.ttf',check_existing=True)
   if o.type!='MESH':continue
-  if o.get('surface') in ['h2-green-fabric','h2-seat-fabric','h2-chair-wood']:
+  if o.get('surface') in ['h2-green-fabric','h2-seat-fabric','h2-chair-wood'] or (part=='exterior' and o.get('surface')=='h2-yellow-fabric'):
    bpy.context.view_layer.objects.active=o;b=o.modifiers.new('Soft seat edges','BEVEL');b.width=.025;b.segments=3;b.limit_method='ANGLE';bpy.ops.object.modifier_apply(modifier=b.name)
   uv=o.data.uv_layers.new(name='Metre finish')
   for p in o.data.polygons:

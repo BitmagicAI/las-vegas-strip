@@ -38,7 +38,7 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PFfvba5h-vGdDv-GX4yOgw&heading=164&pitch=0",
       "accessDate": "2026-10-27",
       "imageDate": "March 2020",
-      "observed": "Pool terrace along northeast facade by shared north arrival drive; dark vertical fence, stone piers, pergola and red umbrellas. Still to implement after bounded site survey."
+      "observed": "Pool terrace along northeast facade by shared north arrival drive; dark vertical fence, stone piers, pergola and red umbrellas. Pool enclosure implemented and reviewed; broader planting remains."
     },
     {
       "url": "https://www.hilton.com/im/en/LASTAHT/9786307/lastaht-pool-1-v2.jpg",
@@ -58,35 +58,44 @@
     {
       "url": "https://www.hilton.com/im/en/LASTAHT/9786289/lastaht-patio-1-final.jpg",
       "accessDate": "2026-10-27",
-      "observed": "Official gallery9 inspected: twin stainless grills in stone counter, yellow chairs and square tables, tall stone piers/dark vertical slat screen, pool gate and planting path beyond. Not yet built."
+      "observed": "Official gallery9 inspected: twin stainless grills in stone counter, yellow chairs and square tables, tall stone piers/dark vertical slat screen, pool gate and planting path beyond. Grill patio now authored; fixtures and dimensions remain approximate."
     },
     {
       "url": "https://www.hilton.com/im/en/LASTAHT/9786295/lastaht-patio-2-v2.jpg",
       "accessDate": "2026-10-27",
       "observed": "Official gallery8 inspected: circular firepit table, dark wicker high-backed seating with orange/green striped cushions, planted edge and bollard lamps. Location relative to footprint still requires survey; not built."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0996,-115.1819,87m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "South patio shade centre map-picked36.099493,-115.181693 ->local72.14,3.68. Compared with March2020 arrival StreetView and official gallery9 grill/pool-path view. Footprint boundaries estimated, not surveyed."
     }
   ],
   "uncertainDimensions": [
     "Mapped footprint sets perimeter; generic6m height is not reliable. Five storeys visible, exact floor heights pending.",
     "Public room plan inferred from photographs, not a verified floorplan.",
-    "Pool/patio position and bounded site scope must be established before site edits.",
+    "Pool and grill terrace placement are map-informed estimates; separate firepit location remains unresolved.",
     "Upper floors estimated3.08m from5storey photos;roof17.55m,crown19.43m. Not surveyed height.",
     "Public room at southeast entrance:21.46mx16m envelope clipped to stepped footprint; inferred arrangement, not verified floorplan.",
-    "Pool court estimate: local x1..21,z-14..-.5; pool centre(11.1,-7), nominal13.2x8.3m curved basin. Ground photo informs fixtures, satellite informs bounds. Shallow visual basin in current flat datum; not a surveyed/swimmable depth. Garage begins x22.2 and is not edited."
+    "Pool court estimate: local x1..21,z-14..-.5; pool centre(11.1,-7), nominal13.2x8.3m curved basin. Ground photo informs fixtures, satellite informs bounds. Shallow visual basin in current flat datum; not a surveyed/swimmable depth. Garage begins x22.2 and is not edited.",
+    "Grill terrace localx68.4..76,z-1.8..5.5,55.48m\u00b2, estimated from map-pickedshadecentre and photos. Existing entrance landing and pool approach subtracted to avoid coplanar floors. Screen/piers/grill/furniture dimensions inferred. No overlap with mapped hotel/garage/TownePlace."
   ],
   "implemented": [
     "Original stepped-footprint five-storey exterior, south entrance canopy and opening, framed transom glazing, end sign volumes, roof services.",
     "Inferred public reception, market, banquette lounge, business desks and breakfast room; cabinetry, appliances and furniture refined against official photographs.",
     "Bounded northeast pool court with curved basin, coping, blue-tile wall, planters, accessibility lift, rails, fence with open gate, pergola and seating; three installed views inspected.",
-    "North pool frontage refined from March2020 Street View: broad dark slats, stone end piers/high connecting beam, three folded red canvas umbrellas. Original geometry; dimensions estimated. Three installed daylight views inspected; slats/piers/beam present and gate clear."
+    "North pool frontage refined from March2020 Street View: broad dark slats, stone end piers/high connecting beam, three folded red canvas umbrellas. Original geometry; dimensions estimated. Three installed daylight views inspected; slats/piers/beam present and gate clear.",
+    "Original twin curved-hood grills with handles/control knobs/access doors, stone counter, slatted shade roof/screen, square tables/yellow chairs and a small planted pocket. Two connecting routes added; all three installed daylight views inspected; walking connections verified."
   ],
   "remaining": [
     "Seven final installed views inspected: north sign masking corrected; furnishings remain simplified, floor texture visibly streaked, glazing opaque. Further material refinement required.",
     "Planting, arrival landscaping and finer facade/material refinement remain pending.",
     "Glass remains opaque and public layout inferred; guest rooms are not built.",
     "Public rooms remain sparse and stylized; cabinetry/appliance dimensions and branded details are approximate.",
-    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Patio grills/firepit and broader site planting remain to survey and build.",
-    "North enclosure broad slats/piers/beam and folded umbrellas authored; planting, finer canvas/chair detail and full patio enclosure still incomplete. Reference dates differ; dimensions remain estimated. Installed gate close-up confirms canvas remains angular."
+    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Grill patio authored; separate firepit and broader site planting remain to survey and build.",
+    "North enclosure broad slats/piers/beam and folded umbrellas authored; planting, finer canvas/chair detail and full patio enclosure still incomplete. Reference dates differ; dimensions remain estimated. Installed gate close-up confirms canvas remains angular.",
+    "Grill material no longer receives incorrect diamond plate, but installed alloy reads too matte/dark. Grills, chairs and planting still need finer material/shape work; this is not photorealistic completion.",
+    "Patio frame-time variance is unresolved: final captures range from16.7to49.7ms median by view/run; profile isolated before claiming60fps."
   ],
   "evidence": [
     "build/city-exteriors/home2-stadium-baseline/home2-west.png",
@@ -105,7 +114,13 @@
     "build/city-exteriors/home2-pool-walk/results.json",
     "build/city-exteriors/home2-pool-final-walk/results.json",
     "build/city-exteriors/home2-screen-installed/",
-    "build/city-exteriors/home2-screen-walk/results.json"
+    "build/city-exteriors/home2-screen-walk/results.json",
+    "build/city-exteriors/home2-patio-scope.json",
+    "build/city-exteriors/home2-patio-installed/",
+    "build/city-exteriors/home2-patio-pool-repeat/",
+    "build/city-exteriors/home2-patio-walk/results.json",
+    "build/city-exteriors/home2-patio-final/",
+    "build/city-exteriors/home2-patio-final-repeat/"
   ],
   "performance": {
     "baseline": "build/city-exteriors/home2-stadium-baseline/results.json",
@@ -119,26 +134,32 @@
     "poolNote": "Quiet repeat: overhead16.7median18.6p95,deck18.5median29.3p95,gate16.9median21.4p95ms. Deck is about54fps median and not meeting60fps target; variance remains. Visuals unchanged after subsequent furniture-collision/route correction. No clean pre-pool baseline exists.",
     "poolRepeat": "build/city-exteriors/home2-pool-performance-repeat/results.json",
     "diagnostic": "build/city-exteriors/home2-pool-cost/results.json",
-    "diagnosticNote": "Initial reversible-ablation run: baseline16.7median18.2p95, restored16.8/17.6ms. Earlier54fps slowdown not reproduced. Shadow freeze trial emitted destroyed-shadow-texture GPU warnings; diagnostic is not clean validation or evidence of a fix. Shadow ablation removed from retained probe; normal final installed review pending.",
+    "diagnosticNote": "Initial reversible-ablation run: baseline16.7median18.2p95, restored16.8/17.6ms. Earlier54fps slowdown not reproduced. Shadow freeze trial emitted destroyed-shadow-texture GPU warnings; diagnostic is not clean validation or evidence of a fix. Shadow ablation removed from retained probe; subsequent normal installed review is recorded separately.",
     "screenAfter": "build/city-exteriors/home2-screen-installed/results.json",
-    "screenNote": "Normal final installed capture: overview16.7/18.9, deck16.6/18.8, gate16.7/19.0ms median/p95. Earlier54fps deck slowdown not reproduced; no attribution or blanket60fps guarantee. No graphics errors in normal final capture log."
+    "screenNote": "Normal final installed capture: overview16.7/18.9, deck16.6/18.8, gate16.7/19.0ms median/p95. Earlier54fps deck slowdown not reproduced; no attribution or blanket60fps guarantee. No graphics errors in normal final capture log.",
+    "patioInitial": "build/city-exteriors/home2-patio-installed/results.json",
+    "patioInitialNote": "Initial installed patio/grills/path medians19.2/18.1/18.2ms,p9529.6/23.0/27.1ms at960x540ultra daylight. New views have no matched pre-patio baseline. Pool repeat16.6/16.7/16.7median17.4/17.3/17.3p95. Grill material classification correction pending final installed review.",
+    "patioFinal": "build/city-exteriors/home2-patio-final/results.json",
+    "patioFinalNote": "Final alloy-only correction: patio/grills/path median26.2/22.1/16.7ms, p9540.9/50.7/17.2ms. Same settings as initial patio; substantial variance, no60fps claim. No graphics-error log. Repeat recorded separately.",
+    "patioRepeat": "build/city-exteriors/home2-patio-final-repeat/results.json",
+    "patioRepeatNote": "Repeat median49.7/43.6/19.5ms,p9567.1/58.4/28.2ms (~20/23/51fps). A repository validation scan overlapped part of this run, so it is not an isolated benchmark. Large variance remains unresolved; do not infer a material regression or a60fps pass. A post-run process snapshot showed two unrelated Python jobs at86\u201394%CPU and another at34%; shared-machine load is a possible confound, not proven cause. Those jobs were left untouched."
   },
   "nextPass": {
     "priority": "Finish current Home2 site before claiming another building",
-    "poolStudy": "Pool court first pass installed; remaining flowing wall, exact depth, landscaping and patio grills/firepit. Keep these distinct from completed route verification.",
+    "poolStudy": "Pool and grill patio installed; remaining flowing wall, depth refinement, broader landscaping and separate firepit seating. Retain performance variance.",
     "publicStudy": "Official public plan is not available; retain inferred layout label. Improve room finishes and lighting after geometry.",
-    "patioStudy": "Use gallery8/9 URLs: twin grills, stone counter and slat screen; yellow chairs/square tables; round firepit and striped wicker seating. Establish bounded placement from map/StreetView first. Preserve pool routes and shared driveway. South arrival StreetView reinspection shows a secondary shade structure right of entrance, between hotel and garage; compare this with gallery9 looking north toward pool before bounded placement."
+    "patioStudy": "Grill patio placed beside south arrival using map centre72.14,3.68 and photos; sevenroutes walked. Separate firepit placement still requires stronger evidence before authoring; preserve shared garage/driveway. Batch remaining site/material refinements before the next city rebuild."
   },
   "validation": {
-    "scopedChecks": 568,
-    "actualWalkingSegments": 50,
-    "actualWalkingRoutes": 5,
+    "scopedChecks": 669,
+    "actualWalkingSegments": 70,
+    "actualWalkingRoutes": 7,
     "walkPassed": true,
     "runtimeAssetsPresent": 1411,
     "missingAssets": 0,
     "cityBakeBatches": 684,
-    "sourceTriangles": 41310,
+    "sourceTriangles": 44256,
     "installedViewsInspected": 3,
-    "walkNote": "All50segments/5routes repeated after stone piers/slat screen revision; all pass."
+    "walkNote": "All70segments/7routes passed with grill patio collision. Subsequent alloy-only material rename preserves geometry/collision."
   }
 }
