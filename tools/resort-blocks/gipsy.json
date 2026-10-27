@@ -16,14 +16,72 @@
       "url": "https://www.flickr.com/photos/breslinbuilders/albums/72177720313934451/",
       "accessDate": "2026-10-27",
       "observed": "Contractor completed-2023 album. Original street facade and courtyard photos inspected; room layout study ongoing."
+    },
+    {
+      "url": "https://www.flickr.com/photos/breslinbuilders/53454175741/in/album-72177720313934451",
+      "accessDate": "2026-10-27",
+      "imageDate": "2023",
+      "observed": "South street facade: five tall canopy bays and arched end windows, tan panel finish, gold sign and parapet railing."
+    },
+    {
+      "url": "https://www.flickr.com/photos/breslinbuilders/53454490264/in/album-72177720313934451",
+      "accessDate": "2026-10-27",
+      "imageDate": "2023",
+      "observed": "East courtyard: rollup entrance, lowered central cornice, tall side piers, sign, planted terrace and outdoor tables."
+    },
+    {
+      "url": "https://www.flickr.com/photos/breslinbuilders/53454490224/in/album-72177720313934451",
+      "accessDate": "2026-10-27",
+      "imageDate": "2023",
+      "observed": "Public room: long bar, red rounded chair backs, lattice columns with purple leaf capitals, circular truss and seating."
+    },
+    {
+      "url": "https://www.flickr.com/photos/breslinbuilders/53454175761/in/album-72177720313934451",
+      "accessDate": "2026-10-27",
+      "imageDate": "2023",
+      "observed": "Reverse bar angle shows courtyard glazing to one side; room connection corroborated but partition distances inferred."
+    },
+    {
+      "url": "https://www.flickr.com/photos/breslinbuilders/53453248812/in/album-72177720313934451",
+      "accessDate": "2026-10-27",
+      "imageDate": "2023",
+      "observed": "Bar apron lattice, footrail, bottle shelf, pendants and mottled wall finish."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1058,-115.152,105m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Current aerial visually inspected: main rectangle north of Naples, east garden courtyard toward Paradise. Mapped shell fits main extent; small southern notches replaced with photographed continuous facade. Imagery acquisition date unspecified."
     }
   ],
   "uncertainDimensions": [
-    "Mapped footprint may predate 2023 reconstruction; compare current aerial. Heights and room partition positions not surveyed."
+    "Main body25.1x18.1m from mapped/aerial extent. Cornice7.4m, east piers8.1m, courtyard18.2m deep are estimates from doors and facade ratios, not surveyed.",
+    "Public room partition at15.7m and north bar positions inferred from paired photos; no measured plan. Private/support spaces omitted, not asserted."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original mapped main body with photographed five-bay Naples facade, projecting sign cornice, arched end windows, east courtyard entrance and stepped parapets.",
+    "Walkable furnished courtyard, fine original shrub/tree/palm geometry, and public bar room with red oval-back stools, bar lattice, bottle shelves, decorative columns, pendants and circular truss.",
+    "Targeted replacement removed only34owned visual and matching collision triangles. Final source59792triangles."
+  ],
   "remaining": [
-    "Reconcile current footprint; build original exterior and reference-supported public spaces; inspect installed views, routes and matching performance; package fresh city bake."
+    "Exact facade dimensions, signature lettering, stone/panel finish, window reflections and rear/service details need refinement; this is not photorealistic completion.",
+    "Public-room dimensions, back-of-house partitions and exact seating layout are inferred from photographs; no surveyed floor plan. Private rooms are not represented.",
+    "Courtyard tree density/species, mature planting and detailed permanent fixtures remain approximate."
   ],
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/gipsy-before/results.json",
+    "build/city-exteriors/gipsy-after/results.json",
+    "build/city-exteriors/gipsy-final/results.json",
+    "build/city-exteriors/gipsy-walk/results.json",
+    "build/strip-landmarks/gipsy-route-audit.json",
+    "build/city-exteriors/gipsy-ownership-audit.json",
+    "build/city-exteriors/gipsy-verified/results.json"
+  ],
+  "validation": {
+    "scopedRoutes": "145 support/capsule checks passed with current city collision.",
+    "runtimeWalk": "12 actual walking segments passed: courtyard, public room, south entrance and return; Gipsy interior resident.",
+    "installedViews": "Installed neutral south/courtyard/bar/wide room images inspected. Corrections: landing gaps, cornice depth, end-window height, finer foliage and bar apron. Remaining fine-detail and layout approximations retained.",
+    "performance": "960x540ultra180frames/view. Baseline south16.8/19.0,courtyard16.7/18.6,interior-location16.7/18.1ms median/p95. Independent post-bake final south16.4/19.2,courtyard16.9/19.4,interior16.5/18.6,wide16.7/18.6ms. Near60fps at this sampled resolution, not a full-resolution guarantee.",
+    "checks": "Typecheck, records and public checks passed; one pre-existing inventory email warning.",
+    "packaging": "1367 runtime assets present,0missing; fresh669batch city bake24.7Mnear to7.14MLODtriangles,17.56MBbinary."
+  }
 }
