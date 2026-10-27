@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1373,
- "bytes": 1045039121,
+ "count": 1375,
+ "bytes": 1051081679,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18469503,
-   "sha256": "3a6357b495fef2da586eb4533612fd52bc183663d925c01d7b33ac34ae62a99f",
+   "bytes": 18523215,
+   "sha256": "40239cd95633a4cef851f719b2f6d583ad304b87781fd92f0307642cf4b379c7",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13066536,
-   "sha256": "f02377648cf3ff24d844f08052fb26b92c0460d8cb27a67e2e1a82dea091c9be",
+   "bytes": 13066604,
+   "sha256": "a13a2f0c2031d2990e19a128b77769f40e0d286ea8517ebc175326dd8337621f",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109765428,
-   "sha256": "d6748efd74d90a0e175bfc20c419f09fd3ee28199913cba6256c75ad2c0c2678",
+   "bytes": 109765092,
+   "sha256": "77231efa49a4259cee7432adece57ca214ba93e9d5d5dc82440a1987f4c791b5",
    "kind": "optimized"
   },
   {
@@ -6077,6 +6077,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/cvs-paradise-exterior-collision.bin",
+   "bytes": 764,
+   "sha256": "dcf2bcbd4be5fca9d3faf8149a90029a1a933b9b764672fca4488e5aa7c5ff29",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/cvs-paradise-exterior.glb",
+   "bytes": 5988068,
+   "sha256": "b405320b3f679fb8493686fb3dffffcc6332e5d8f4edccc09203af1a4144f81e",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/cvsHorseshoe-exterior-collision.bin",
    "bytes": 416,
    "sha256": "ed30e4a1e5f8ec39752ca01f549928944f4d1e443239032725b14c26f61555d9",
@@ -8058,8 +8070,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 341808,
-   "sha256": "a9e24501d7dab7707b9fe9fb6615cb84b16555a883a04ff5eb6f4161a3b7fdee",
+   "bytes": 342090,
+   "sha256": "bc1a530c0f6e91a911811bae7e7bcaa4a88677beac46b35fe79c4e5580f6a455",
    "kind": "original"
   },
   {
