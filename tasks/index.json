@@ -12899,12 +12899,13 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Corrected close daylight views pending final inspection; wide deck camera inside elevated road is invalid review evidence.",
-    "Survey and construct real ramp/stair connections for upper decks; their access is currently incomplete.",
-    "Refine facade panel seams, utility details, deck services, parking marking layout and dimensions against further references.",
-    "Reconstruct observed northeast roof ramp/triangular well and north/south stair enclosures; current flat roof is not reference-correct."
+    "Reconstruct north and south stair enclosures and reference-supported stair flights; current upper access is by ramps only.",
+    "Corroborate inferred repeated lower ramp layout, estimated elevations, bay spacing and marking layout.",
+    "Improve flat interior shading and uniform deck finish; add panel seams, utility/service details.",
+    "Drive a real vehicle through entry and all ramps to verify vehicle clearance and turning room; walking is verified, driving is not.",
+    "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved."
    ],
    "record": "tools/resort-blocks/stadium-garage.json",
    "buildings": [],

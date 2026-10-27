@@ -43,18 +43,20 @@
   "uncertainDimensions": [
     "Mapped footprint confirmed way/790044912 (232 original shell faces); untagged imported 5m height is not a measured height.",
     "Adopted ground .12m, upper deck 3.36/6.60/9.84m, parapet 1.56m: estimates from Street View, not surveyed.",
-    "Internal ramp and exact stair arrangement remain unverified. Upper decks are not claimed as accessible."
+    "Roof ramp endpoints adopted in Home2 local frame (43,-41.5) to (70,-31.5), width6m, grade~11.25%, guided by aerial. Repeated lower ramps are inferred, not verified as-built internal plans."
   ],
   "implemented": [
-    "Installed original 3135-triangle open-deck garage on exact mapped irregular footprint: four parking surfaces, structural columns and concrete parapets, striped hotel-facing screen, clipped parking markings and entrance hardware.",
-    "Removed only 232 claimed placeholder visual faces and matching collision faces; preserved roads and surrounding hotel geometry.",
-    "Ground entrance and two ground aisles traversed in actual game: all 16 out-and-back segments passed."
+    "Installed original 3090-triangle four-level open-deck garage on mapped way/790044912: columns, concrete parapets, striped screen, parking markings and ground entrance hardware.",
+    "Northeast straight ramp and triangular roof well based on aerial, with three repeated collision ramp ascents. Repeated lower layout explicitly inferred; heights estimated.",
+    "Only232ownedplaceholder visual and collision faces removed; all9560mesh groups retain vertices/metadata, roads and neighboring hotels preserved.",
+    "632scopedchecks and40actualwalkingsegments over5out-and-backroutes pass, including each upper ramp."
   ],
   "remaining": [
-    "Flat lighting and uniform deck finish remain visibly simplified in the inspected installed views.",
-    "Survey and construct real ramp/stair connections for upper decks; their access is currently incomplete.",
-    "Refine facade panel seams, utility details, deck services, parking marking layout and dimensions against further references.",
-    "Reconstruct observed northeast roof ramp/triangular well and north/south stair enclosures; current flat roof is not reference-correct."
+    "Reconstruct north and south stair enclosures and reference-supported stair flights; current upper access is by ramps only.",
+    "Corroborate inferred repeated lower ramp layout, estimated elevations, bay spacing and marking layout.",
+    "Improve flat interior shading and uniform deck finish; add panel seams, utility/service details.",
+    "Drive a real vehicle through entry and all ramps to verify vehicle clearance and turning room; walking is verified, driving is not.",
+    "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved."
   ],
   "evidence": [
     {
@@ -99,9 +101,35 @@
       "type": "installed-close-views",
       "path": "build/city-exteriors/stadium-garage-close",
       "note": "Near deck bays and ground aisle inspected; no elevated-road obstruction. Materials/lighting visibly flat."
+    },
+    {
+      "type": "ramp-installed-views",
+      "path": "build/city-exteriors/stadium-garage-ramps-installed",
+      "note": "All four daylight arrival/roof/ramp-bottom/ramp-top views inspected. Actual opening/slopes visible; overly flat interior lighting/finish remains.",
+      "medianMs": {
+        "arrival": 58,
+        "roof": 19,
+        "rampBottom": 43.5,
+        "rampTop": 17.9
+      },
+      "p95Ms": {
+        "arrival": 67.8,
+        "roof": 31.3,
+        "rampBottom": 50.4,
+        "rampTop": 36.1
+      }
+    },
+    {
+      "type": "ramp-actual-walking",
+      "path": "build/city-exteriors/stadium-garage-ramps-walk/results.json",
+      "passed": true,
+      "segments": 40,
+      "routes": 5,
+      "scopedChecks": 632
     }
   ],
   "nextPass": {
-    "priority": "Reconstruct observed northeast roof ramp/triangular well and north/south stair enclosures. Keep record active. Four-level source supported by as-built builder account; lower ramp repetitions must be labeled inferred."
+    "priority": "Continue activegarage: survey visible north/south stairs, build enclosures/flights, improve surface depth, testvehicleclearance. Currentinstalledramp revision is verified by40walkingsegments but not finalarchitecturalcompletion.",
+    "checkpoint": "Firstpass5a43618; subsequent ramp revision saved after allchecks. DraftPR283/issue282 remainsactive."
   }
 }
