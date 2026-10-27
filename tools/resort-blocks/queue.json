@@ -1218,8 +1218,18 @@
     {
       "id": "naked-city-paradise",
       "name": "Naked City Pizza Paradise",
+      "status": "refinement-deferred",
+      "record": "naked-city-paradise.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Verified installed exterior pass; retain all recorded refinements while continuing user-requested city-wide reconstruction."
+      }
+    },
+    {
+      "id": "piranha",
+      "name": "Piranha Nightclub",
       "status": "active",
-      "record": "naked-city-paradise.json"
+      "record": "piranha.json"
     }
   ],
   "active": "naked-city-paradise"

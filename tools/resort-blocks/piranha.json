@@ -1,0 +1,50 @@
+{
+  "id": "piranha",
+  "name": "Piranha Nightclub",
+  "status": "active",
+  "mappedIds": [
+    "way/1017043834"
+  ],
+  "claim": {
+    "issue": 248,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/248",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://piranhavegas.com/",
+      "accessDate": "2026-10-27",
+      "observed": "Official site confirms4633Paradise and multiple public dance rooms; no dimensioned floor plan."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=75_kdTNvL0MUhtGuWNx_FQ&heading=270&pitch=0",
+      "imageDate": "2025-02",
+      "accessDate": "2026-10-27",
+      "observed": "Visually inspected east frontage: tan stone, long red tile roof edge, shallow red entrance canopy with posts, shuttered small window, fenced patio with metal hipped shade structures, purple roadside barriers."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Piranha+Nightclub+4633+Paradise+Las+Vegas",
+      "imageDate": "2026-03",
+      "accessDate": "2026-10-27",
+      "observed": "Les Roberts visitor photo visually inspected; stone wall and fish sign corroborated."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CIHM0ogKEICAgIDqi9rMygE&heading=180&pitch=0",
+      "imageDate": "2014-11",
+      "accessDate": "2026-10-27",
+      "observed": "Older Edison Ronda panorama: north stone wall, two shuttered windows, tile eave and sign. Historic context only; current survival requires corroboration."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped785m2 irregular footprint; roof subdivisions and enclosed/patio ownership need overhead review. Height not surveyed."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Complete roof and patio footprint comparison before modeling.",
+    "Original exterior, source export, optimized asset and targeted collision replacement.",
+    "Actual installed neutral-light exterior review, scoped routes, walking checks, matching performance, fresh city bake and package.",
+    "Public interior layout unresolved; do not fabricate a complete interior."
+  ],
+  "evidence": []
+}
