@@ -40,9 +40,27 @@
     "No surveyed floorplan."
   ],
   "remaining": [
-    "Build original exterior and approach.",
-    "Corroborate entrance clearance and public room layout before interior.",
-    "Install and inspect matching daylight views, routes and performance; package current city bake."
+    "Refine measured height, lettering proportions, actual equipment placement and rear service openings against closer references.",
+    "Public pool room reference exists, but its relationship to entrance and full layout remain unverified; no interior built yet.",
+    "Fine weathering, art and material fidelity remain; not photorealistic completion."
   ],
-  "implemented": []
+  "implemented": [
+    "Original mapped exterior, raised serif lettering, rough non-metallic finishes, west canopy/glazing, side steps and handrails, service conduits and roof equipment.",
+    "Continuous concrete west apron supports approach to the closed entrance; 25 owned visual and collision triangles replaced."
+  ],
+  "validation": {
+    "scopedRoutes": "33 support/clearance checks passed after adding reference-supported west apron.",
+    "runtimeWalk": "Two actual approach/return segments passed.",
+    "installedViews": "South/west/east daylight views inspected. Corrected dark finish and plain lettering; final south inspected.",
+    "performance": "960x540 ultra,180frames/view. Before south16.6/18.0 west16.8/18.5 east16.7/18.0 ms median/p95. Extra normal maps caused east p95~29.8 on two runs; removed them. Final south16.6/17.6 west16.7/19.1 east16.6/18.6. Samples only, not a citywide guarantee.",
+    "checks": "Typecheck, records and public checks passed; one pre-existing inventory email warning.",
+    "packaging": "Fresh city bake665batches24.6Mnear/7.11MLODtriangles17.51MBbinary;1355runtimeassets present,0missing."
+  },
+  "evidence": [
+    "build/city-exteriors/bonfire-before/results.json",
+    "build/city-exteriors/bonfire-final-rough/results.json",
+    "build/city-exteriors/bonfire-walk/results.json",
+    "build/strip-landmarks/bonfire-route-audit.json",
+    "build/city-exteriors/bonfire-ownership-audit.json"
+  ]
 }

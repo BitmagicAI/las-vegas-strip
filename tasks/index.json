@@ -12111,9 +12111,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Build original exterior and approach.",
-    "Corroborate entrance clearance and public room layout before interior.",
-    "Install and inspect matching daylight views, routes and performance; package current city bake."
+    "Refine measured height, lettering proportions, actual equipment placement and rear service openings against closer references.",
+    "Public pool room reference exists, but its relationship to entrance and full layout remain unverified; no interior built yet.",
+    "Fine weathering, art and material fidelity remain; not photorealistic completion."
    ],
    "record": "tools/resort-blocks/bonfire.json",
    "buildings": [],
@@ -12125,7 +12125,12 @@
     "writes": [
      "tools/resort-blocks/bonfire.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_bonfire.py",
+     "tools/city-exteriors/install-bonfire.py",
+     "tools/strip-landmarks/bonfire.py",
+     "tools/strip-landmarks/test-bonfire.mjs"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
