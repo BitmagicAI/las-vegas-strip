@@ -58,12 +58,12 @@
     {
       "url": "https://www.hilton.com/im/en/LASTAHT/9786289/lastaht-patio-1-final.jpg",
       "accessDate": "2026-10-27",
-      "observed": "Official gallery9 inspected: twin stainless grills in stone counter, yellow chairs and square tables, tall stone piers/dark vertical slat screen, pool gate and planting path beyond. Grill patio now authored; fixtures and dimensions remain approximate."
+      "observed": "Official gallery9 inspected: twin stainless grills in stone counter, yellow chairs and square tables, tall stone piers/dark vertical slat screen, pool gate and planting path beyond. Grill patio now authored; fixtures and dimensions remain approximate. Reinspection shows striped lounge seating at the left edge beside dining furniture, supporting a shared covered-patio lounge rather than a separate guessed yard."
     },
     {
       "url": "https://www.hilton.com/im/en/LASTAHT/9786295/lastaht-patio-2-v2.jpg",
       "accessDate": "2026-10-27",
-      "observed": "Official gallery8 inspected: circular firepit table, dark wicker high-backed seating with orange/green striped cushions, planted edge and bollard lamps. Location relative to footprint still requires survey; not built."
+      "observed": "Official gallery8 inspected: circular firepit, dark high-backed woven seating and orange/green striped cushions. Combined with gallery9 edge seating supports same patio; exact furniture layout remains inferred."
     },
     {
       "url": "https://www.google.com/maps/@36.0996,-115.1819,87m/data=!3m1!1e3",
@@ -78,7 +78,8 @@
     "Upper floors estimated3.08m from5storey photos;roof17.55m,crown19.43m. Not surveyed height.",
     "Public room at southeast entrance:21.46mx16m envelope clipped to stepped footprint; inferred arrangement, not verified floorplan.",
     "Pool court estimate: local x1..21,z-14..-.5; pool centre(11.1,-7), nominal13.2x8.3m curved basin. Ground photo informs fixtures, satellite informs bounds. Shallow visual basin in current flat datum; not a surveyed/swimmable depth. Garage begins x22.2 and is not edited.",
-    "Grill terrace localx68.4..76,z-1.8..5.5,55.48m\u00b2, estimated from map-pickedshadecentre and photos. Existing entrance landing and pool approach subtracted to avoid coplanar floors. Screen/piers/grill/furniture dimensions inferred. No overlap with mapped hotel/garage/TownePlace."
+    "Grill terrace localx68.4..76,z-1.8..5.5,55.48m\u00b2, estimated from map-pickedshadecentre and photos. Existing entrance landing and pool approach subtracted to avoid coplanar floors. Screen/piers/grill/furniture dimensions inferred. No overlap with mapped hotel/garage/TownePlace.",
+    "Firepit lounge replaces one dining cluster within the existing patio: centre local69.95,1.35,1.44m table diameter, three seats. Relative seating layout and count are an approximation, not a map-measured location; photo shows a larger seating arrangement."
   ],
   "implemented": [
     "Original stepped-footprint five-storey exterior, south entrance canopy and opening, framed transom glazing, end sign volumes, roof services.",
@@ -86,17 +87,19 @@
     "Bounded northeast pool court with curved basin, coping, blue-tile wall, planters, accessibility lift, rails, fence with open gate, pergola and seating; three installed views inspected.",
     "North pool frontage refined from March2020 Street View: broad dark slats, stone end piers/high connecting beam, three folded red canvas umbrellas. Original geometry; dimensions estimated. Three installed daylight views inspected; slats/piers/beam present and gate clear.",
     "Original twin curved-hood grills with handles/control knobs/access doors, stone counter, slatted shade roof/screen, square tables/yellow chairs and a small planted pocket. Two connecting routes added; all three installed daylight views inspected; walking connections verified.",
-    "Exterior stacked-stone material revised with original irregular courses, recessed joints and face relief; gray patio tabletops and round hood temperature gauges added from official grill photograph. Source and three installed daylight views inspected."
+    "Exterior stacked-stone material revised with original irregular courses, recessed joints and face relief; gray patio tabletops and round hood temperature gauges added from official grill photograph. Source and three installed daylight views inspected.",
+    "Original unlit circular stone firepit, lava-rock bed, three woven high-back seats with original striped cushion textures, within existing covered patio. Source and four installed daylight views inspected;671scoped checks pass. All70actual walking segments/7routes pass."
   ],
   "remaining": [
     "Seven final installed views inspected: north sign masking corrected; furnishings remain simplified, floor texture visibly streaked, glazing opaque. Further material refinement required.",
     "Planting, arrival landscaping and finer facade/material refinement remain pending.",
     "Glass remains opaque and public layout inferred; guest rooms are not built.",
     "Public rooms remain sparse and stylized; cabinetry/appliance dimensions and branded details are approximate.",
-    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Grill patio authored; separate firepit and broader site planting remain to survey and build.",
+    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Grill patio and inferred firepit lounge authored; broader site planting remains. Exact lounge layout/count needs refinement.",
     "North enclosure broad slats/piers/beam and folded umbrellas authored; planting, finer canvas/chair detail and full patio enclosure still incomplete. Reference dates differ; dimensions remain estimated. Installed gate close-up confirms canvas remains angular.",
     "Grill material no longer receives incorrect diamond plate, but installed alloy reads too matte/dark. Grills, chairs and planting still need finer material/shape work; this is not photorealistic completion.",
-    "Patio frame-time variance is unresolved: final captures range from16.7to49.7ms median by view/run; profile isolated before claiming60fps."
+    "Patio frame-time variance is unresolved: final captures range from16.7to49.7ms median by view/run; profile isolated before claiming60fps.",
+    "Lounge geometry/layout is approximate, striped cushions too saturated and firepit finish too streaked in installed views. Firepit is deliberately unlit; no flame simulation."
   ],
   "evidence": [
     "build/city-exteriors/home2-stadium-baseline/home2-west.png",
@@ -122,7 +125,9 @@
     "build/city-exteriors/home2-patio-walk/results.json",
     "build/city-exteriors/home2-patio-final/",
     "build/city-exteriors/home2-patio-final-repeat/",
-    "build/city-exteriors/home2-finishes-installed/"
+    "build/city-exteriors/home2-finishes-installed/",
+    "build/city-exteriors/home2-lounge-installed/",
+    "build/city-exteriors/home2-lounge-walk/results.json"
   ],
   "performance": {
     "baseline": "build/city-exteriors/home2-stadium-baseline/results.json",
@@ -146,24 +151,26 @@
     "patioRepeat": "build/city-exteriors/home2-patio-final-repeat/results.json",
     "patioRepeatNote": "Repeat median49.7/43.6/19.5ms,p9567.1/58.4/28.2ms (~20/23/51fps). A repository validation scan overlapped part of this run, so it is not an isolated benchmark. Large variance remains unresolved; do not infer a material regression or a60fps pass. A post-run process snapshot showed two unrelated Python jobs at86\u201394%CPU and another at34%; shared-machine load is a possible confound, not proven cause. Those jobs were left untouched.",
     "finishAfter": "build/city-exteriors/home2-finishes-installed/results.json",
-    "finishNote": "Matching patio/grills/path cameras:40.5/34.0/26.2ms median,67.3/60.9/33.8ms p95 at960x540ultra. Shared-machine background jobs remain active; no isolated benchmark or60fps claim. No errors in capture log."
+    "finishNote": "Matching patio/grills/path cameras:40.5/34.0/26.2ms median,67.3/60.9/33.8ms p95 at960x540ultra. Shared-machine background jobs remain active; no isolated benchmark or60fps claim. No errors in capture log.",
+    "loungeAfter": "build/city-exteriors/home2-lounge-installed/results.json",
+    "loungeNote": "Lounge/patio/grills/path medians16.8/30.2/20.5/16.9ms,p9520.6/55.3/47.9/24.8ms at960x540ultra. Same patio cameras as prior pass; shared-machine load and variance remain, no blanket60fps claim."
   },
   "nextPass": {
     "priority": "Finish current Home2 site before claiming another building",
     "poolStudy": "Pool and grill patio installed; remaining flowing wall, depth refinement, broader landscaping and separate firepit seating. Retain performance variance.",
     "publicStudy": "Official public plan is not available; retain inferred layout label. Improve room finishes and lighting after geometry.",
-    "patioStudy": "Grill patio placed beside south arrival using map centre72.14,3.68 and photos; sevenroutes walked. Separate firepit placement still requires stronger evidence before authoring; preserve shared garage/driveway. Batch remaining site/material refinements before the next city rebuild. Maximum aerial zoom still leaves the firepit obscured by the canopy/landscaping; gallery photo establishes furnishings but not its exact position. Do not assign a measured location from that view."
+    "patioStudy": "Lounge now represented within covered patio based on gallery9 visible striped seating and gallery8 firepit detail. Exact layout/count inferred; retain discrepancy. Next consolidate arrival planting, finer patio enclosure/finishes and facade/interior discrepancies before another rebuild."
   },
   "validation": {
-    "scopedChecks": 669,
+    "scopedChecks": 671,
     "actualWalkingSegments": 70,
     "actualWalkingRoutes": 7,
     "walkPassed": true,
     "runtimeAssetsPresent": 1411,
     "missingAssets": 0,
     "cityBakeBatches": 684,
-    "sourceTriangles": 44648,
-    "installedViewsInspected": 3,
-    "walkNote": "Prior70segments/7routes passed. This finish-only pass preserves collision/route data byte-for-byte;669scoped checks rerun and pass. Decorative hood gauges have no collision."
+    "sourceTriangles": 45852,
+    "installedViewsInspected": 4,
+    "walkNote": "All70segments/7routes pass after installing the firepit lounge and furniture collision."
   }
 }

@@ -42,7 +42,7 @@ def add_patio(B,F):
   F.box('h2-brushed-alloy',(x,.70,-.792),(.65,.61,.012))
   F.path('h2-brushed-alloy',[(x+.22,.81,-.78),(x+.22,.81,-.73),(x+.22,.95,-.73),(x+.22,.95,-.78)],.015,8)
  # Square tables and yellow moulded chairs; broad collision proxies, no leg colliders.
- for x,z in [(69.45,1.5),(73.8,2.6)]:
+ for x,z in [(73.8,2.6)]:
   F.box('h2-patio-table',(x,1.00,z),(.92,.08,.92))
   F.lathe('h2-metal',x,z,[(.24,.28),(.28,.28),(.29,.045),(.96,.045)],16)
   F.box('h2-patio-proxy',(x,.64,z),(.94,.80,.94),True)
@@ -53,6 +53,26 @@ def add_patio(B,F):
    for u in [-.18,.18]:
     for v in [-.18,.18]:G.tube('h2-yellow-fabric',(u*1.12,.24,v*1.12),(u,.65,v),.018,8)
    G.box('h2-patio-proxy',(0,.72,.03),(.48,.96,.53),True)
+ # Compact photo-informed lounge in the covered patio. Arrangement is inferred,
+ # not a measured placement; keep the existing entrance/pool route clear.
+ x,z=69.95,1.35
+ F.lathe('h2-firepit-stone',x,z,[(.24,.48),(.32,.55),(.78,.55),(.83,.72),(.91,.72),(.91,.34),(.80,.34)],48)
+ F.lathe('h2-charcoal-paint',x,z,[(.79,.33),(.81,.33)],32)
+ F.box('h2-patio-proxy',(x,.55,z),(1.42,.62,1.42),True)
+ for angle in [math.pi/2,0,3*math.pi/2]:
+  cx=x+math.sin(angle)*1.12;cz=z+math.cos(angle)*1.12
+  G=Frame(B,*F.p(cx,0,cz)[::2],F.yaw+angle,y=0)
+  G.box('h2-woven',(0,.49,0),(.78,.5,.68))
+  G.box('h2-woven',(0,1.17,.29),(.78,1.18,.10))
+  G.box('h2-stripe-fabric',(0,.78,-.02),(.69,.16,.59))
+  G.box('h2-stripe-fabric',(0,1.04,.20),(.69,.40,.13))
+  for u in [-.37,.37]:G.box('h2-woven',(u,.86,0),(.10,.15,.70))
+  G.box('h2-patio-proxy',(0,.87,0),(.84,1.26,.74),True)
+ # Original unlit lava-stone bed: no new runtime light or static fake flame.
+ rng=random.Random(281)
+ for i in range(36):
+  a=rng.random()*math.tau;r=math.sqrt(rng.random())*.29
+  F.lathe('h2-lava',x+math.cos(a)*r,z+math.sin(a)*r,[(.81,.025),(.84,.035),(.86,.012)],6)
  # Low planted pocket beside patio, bounded above the garage edge.
  garden=F.poly([(70.3,-5.0),(75.5,-5.0),(75.5,-2.0),(70.3,-2.0)])
  B.planar('h2-soil',garden,.07)

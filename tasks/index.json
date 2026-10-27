@@ -12852,16 +12852,17 @@
    "size": "L",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 8 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 9 known gaps are recorded.",
    "items": [
     "Seven final installed views inspected: north sign masking corrected; furnishings remain simplified, floor texture visibly streaked, glazing opaque. Further material refinement required.",
     "Planting, arrival landscaping and finer facade/material refinement remain pending.",
     "Glass remains opaque and public layout inferred; guest rooms are not built.",
     "Public rooms remain sparse and stylized; cabinetry/appliance dimensions and branded details are approximate.",
-    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Grill patio authored; separate firepit and broader site planting remain to survey and build.",
+    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Grill patio and inferred firepit lounge authored; broader site planting remains. Exact lounge layout/count needs refinement.",
     "North enclosure broad slats/piers/beam and folded umbrellas authored; planting, finer canvas/chair detail and full patio enclosure still incomplete. Reference dates differ; dimensions remain estimated. Installed gate close-up confirms canvas remains angular.",
     "Grill material no longer receives incorrect diamond plate, but installed alloy reads too matte/dark. Grills, chairs and planting still need finer material/shape work; this is not photorealistic completion.",
-    "Patio frame-time variance is unresolved: final captures range from16.7to49.7ms median by view/run; profile isolated before claiming60fps."
+    "Patio frame-time variance is unresolved: final captures range from16.7to49.7ms median by view/run; profile isolated before claiming60fps.",
+    "Lounge geometry/layout is approximate, striped cushions too saturated and firepit finish too streaked in installed views. Firepit is deliberately unlit; no flame simulation."
    ],
    "record": "tools/resort-blocks/home2-stadium.json",
    "buildings": [],
