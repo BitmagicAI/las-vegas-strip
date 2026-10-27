@@ -1,0 +1,43 @@
+{
+  "id": "inout-company-store",
+  "name": "In-N-Out Company Store",
+  "status": "active",
+  "mappedIds": [
+    "way/432534216",
+    "way/432534217"
+  ],
+  "claim": {
+    "issue": 260,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/260",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://shop.in-n-out.com/pages/retail-locations",
+      "accessDate": "2026-10-27",
+      "observed": "Official retail location4838DeanMartinDr; separate from restaurant4888."
+    },
+    {
+      "url": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/MH46OGs7ts.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Full-size location photograph inspected: cream flat parapet, round sign, three red fascia ribs, shaded silver mullioned glazing, adjacent white service door, concrete picnic table. Photo date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.10128,-115.18225,130m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Separate oblique store footprint north of restaurant, west/front canopy and roof equipment. Used as visual reference only."
+    }
+  ],
+  "uncertainDimensions": [
+    "Main mapped footprint1094.94m2; canopy75.87m2. Photo does not establish full interior or exact glazing divisions. Heights and fascia dimensions estimated."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build exterior and canopy with original geometry; preserve adjacent restaurant and roads.",
+    "Find public interior references before authoring any accessible room.",
+    "Install, inspect daylight frontage and rear, scope collision replacement, walk public frontage and measure matching performance.",
+    "Optimize/package assets, refresh bake and preserve every discrepancy."
+  ],
+  "evidence": []
+}
