@@ -12072,11 +12072,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Build and inspect storefront, mapped envelope and roof/service treatment.",
-    "Targeted old shell/collision removal; public approach checks and installed view/performance.",
-    "Optimize and verify runtime assets and fresh city bake."
+    "Current branding/date and exact signage proportions need newer close reference.",
+    "Service facade and rooftop equipment are approximate; corroborate openings and equipment positions.",
+    "No interior built: shop remains closed until public room references are available.",
+    "Further finish/weathering and individual window graphics refinement needed; not photorealistic completion."
    ],
    "record": "tools/resort-blocks/paradise-smoke-shop.json",
    "buildings": [],
@@ -12088,7 +12089,9 @@
     "writes": [
      "tools/resort-blocks/paradise-smoke-shop.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/paradise_shop.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

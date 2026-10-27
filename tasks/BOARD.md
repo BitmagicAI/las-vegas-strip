@@ -222,7 +222,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-double-down-saloon` | M | P3 | 3 | Refine the exterior of Double Down Saloon |
 | `ext-grove-university` | M | P3 | 4 | Refine the exterior of The Grove / Society retail frontage |
 | `ext-quadz` | M | P3 | 4 | Refine the exterior of QUADZ and west retail frontage |
-| `ext-paradise-smoke-shop` | M | P3 | 3 | Refine the exterior of Paradise small retail frontage |
+| `ext-paradise-smoke-shop` | M | P3 | 4 | Refine the exterior of Paradise small retail frontage |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors
