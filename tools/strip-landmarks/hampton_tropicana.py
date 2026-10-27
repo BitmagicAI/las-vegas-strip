@@ -98,7 +98,22 @@ def build(B):
    B.face('ht-blue',[F.p(x-.34,.61,z+.50),F.p(x+.34,.61,z+.50),F.p(x+.34,1.1,z+.95),F.p(x-.34,1.1,z+.95)])
  for z in [38,68]:
   for x in [21,35]:F.lathe('ht-stone',x,z,[(.25,.60),(.9,.48)],16)
- # Rock feature at the head of the basin. Original irregular boulders, no photo textures.
+ # Courtyard canopy observed in official image6. Rear circulation is not surveyed:
+ # the glazed doors remain closed, rather than promising an invented connection.
+ F.box('ht-cream',(28,3.35,37.6),(17.4,.28,4.5))
+ hip(F,28,37.6,17.8,4.9,3.51,1.25)
+ F.box('ht-stucco-rose',(28,4.7,37.6),(4.1,2.3,3.3))
+ F.box('ht-cream',(28,5.88,37.6),(4.5,.17,3.7))
+ hip(F,28,37.6,4.7,3.9,5.98,.92)
+ F.box('ht-glass',(28,4.6,39.28),(.6,.7,.04))
+ for x in [20.2,23.3,26.4,29.6,32.7,35.8]:
+  F.box('ht-brick',(x,1.65,39.8),(.56,2.8,.56),True)
+  F.box('ht-cream',(x,3.1,39.8),(.76,.22,.76))
+ F.box('ht-cream',(28,1.65,35.78),(3.5,2.8,.22))
+ F.box('ht-glass',(28,1.65,35.92),(3.2,2.55,.05))
+ for x in [26.4,28,29.6]:F.box('ht-metal',(x,1.65,35.97),(.07,2.6,.06))
+ for x in [27.85,28.15]:F.box('ht-metal',(x,1.5,36.02),(.04,.45,.07))
+ # Layered side rock feature; original geometry, no photograph textures.
  rng=random.Random(276)
  for row,yy,count in [(0,.80,4),(1,1.70,4),(2,2.55,3)]:
   for i in range(count):
@@ -112,11 +127,22 @@ def build(B):
   F.box('ht-soil',(x,.37,54.5),(1.05,.24,28),True)
   for j,z in enumerate([40.7,48,56,64.5]):
    h=7.5+(j%3)*1.1;palm(B,F,x,z,h)
-   for yy in np.arange(.3,h,.18):F.lathe('c525-bark',x,z,[(float(yy),.23),(float(yy)+.06,.26),(float(yy)+.12,.22)],12)
   for z in np.arange(41,68,.7):
-   for j in range(3):
-    px=x+rng.uniform(-.35,.35);pz=float(z)+rng.uniform(-.25,.25)
-    B.sphere('ht-shrub',F.p(px,.8+rng.random()*.25,pz),.40,8,5,scale=(1,.9,1))
+   # Sparse woody stems with overlapping folded lanceolate leaves. Four triangles
+   # per leaf preserve a silhouette without alpha overdraw or spherical hedge blobs.
+   for j in range(5):
+    a=rng.random()*math.tau;px=x+rng.uniform(-.25,.25);pz=float(z)+rng.uniform(-.20,.20)
+    top=.95+rng.random()*.35;dx=math.cos(a)*.25;dz=math.sin(a)*.25
+    F.tube('c525-bark',(px,.48,pz),(px+dx,top,pz+dz),.009,5)
+    for k in range(10):
+     t=.2+k*.08;angle=a+k*2.4;length=rng.uniform(.13,.23);width=length*.28
+     base=np.array([px+dx*t,.48+(top-.48)*t,pz+dz*t])
+     direction=np.array([math.cos(angle),.35,math.sin(angle)])*length
+     side=np.array([-math.sin(angle),0,math.cos(angle)])*width
+     middle=base+direction*.5;ridge=middle+np.array([0,.025,0]);tip=base+direction
+     mat='ht-shrub' if (j+k)%3 else 'ht-shrub-light'
+     for points in [(base,middle-side,ridge),(base,ridge,middle+side),(ridge,middle-side,tip),(ridge,tip,middle+side)]:
+      B.face(mat,[F.p(*v) for v in points])
  # Photo-supported public lobby; private hotel circulation remains closed.
  room=F.poly([(17,.12),(39,.12),(39,16),(17,16)])
  B.planar('ht-floor',room,.32,True)
@@ -155,7 +181,7 @@ def build(B):
  for x in [31.6,33.7]:F.box('ht-metal',(x,1.9,13.5),(.65,.78,.5));F.box('ht-screen',(x,2.0,13.23),(.5,.32,.04))
  for x,z in [(23,6),(32,9)]:F.light(x,3.6,z,power=24,range=15)
  routes=[dict(name='Arrival and public lobby',points=[F.p(x,.32,z) for x,z in [(28,-18),(28,1.5),(30,3),(30,9),(30,14.5),(28,14.5)]]),dict(name='Lounge access',points=[F.p(x,.32,z) for x,z in [(28,3),(23,2.0),(18.2,2),(18.2,9.7),(27,9.7)]])]
- routes.append(dict(name='Courtyard pool circuit',points=[F.p(x,.25,z) for x,z in [(22,38.5),(34.6,38.5),(34.6,53),(33.5,54),(33.5,64),(22,64),(22,38.5)]]))
+ routes.append(dict(name='Courtyard pool circuit',points=[F.p(x,.25,z) for x,z in [(22,38.5),(34.0,38.5),(34.0,43),(34.6,44),(34.6,53),(33.5,54),(33.5,64),(22,64),(22,38.5)]]))
  return dict(key=KEY,name='Hampton Inn Tropicana',center=[-944,0,1825],bounds=[-997,1773,-887,1864],structural=True,exteriorOnly=False,portals=doors,zones=[dict(origin=F.p(28,.32,.12),yaw=F.yaw,width=22,depth=15.88,height=3.68)],lights=B.lights,routes=routes,hotelSources=[])
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

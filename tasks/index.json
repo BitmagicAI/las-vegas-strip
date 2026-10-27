@@ -12764,16 +12764,17 @@
    "id": "ext-hampton-tropicana",
    "title": "Refine the exterior of Hampton Inn Tropicana",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
     "Accurate facade bay widths, crown profiles, sign typography and surface weathering need closer reference matching.",
-    "Courtyard remains approximate: flowing waterfall effect, naturalistic sandstone and mature foliage, striped cushions, detailed outdoor furniture, firepit and rear entrance canopy are unfinished. Rock feature now placed beside the basin; palm collision proxies removed from visible export.",
+    "Courtyard remains approximate: flowing waterfall effect, mature foliage, striped cushions, detailed outdoor furniture and firepit remain unfinished. Rear porch is now modeled, but its closed doors do not connect to an invented interior corridor. Stone and planting need closer reference matching.",
     "Interior is a simplified photo-supported interpretation. Exact room boundaries, breakfast arches, displays, ornaments and seating profiles remain unverified or incomplete. Private hotel rooms remain closed.",
-    "Not photorealistically complete; keep active for courtyard and facade/interior refinement.",
-    "Wood/floor grain improved and soft seating rounded; remaining furniture, cabinetry, textile pattern and ornament detail still simplified."
+    "Not photorealistically complete; refinements deferred while continuing the requested city-wide work.",
+    "Wood/floor grain improved and soft seating rounded; remaining furniture, cabinetry, textile pattern and ornament detail still simplified.",
+    "Pool-facing performance regressed: repeat18.9ms median30.2ms p95 versus previous16.6–16.7/19.2–21.4 close-pool results. Reverse view16.6/19.2. Cause not isolated; profile foliage/material/canopy costs in next optimization pass, no locked60fps claim."
    ],
    "record": "tools/resort-blocks/hampton-tropicana.json",
    "buildings": [],

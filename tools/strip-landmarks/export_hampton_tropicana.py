@@ -5,7 +5,7 @@ import numpy as np
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
 E.colors.update({'ht-stucco':'c6bfa8','ht-cream':'e3dcc6','ht-brick':'745645','ht-roof':'9b9990','ht-stucco-rose':'a2765f','ht-green':'3d584c','ht-recess':'272e2c','ht-glass':'536a72','ht-spandrel':'464f4b','ht-metal':'55534a','ht-sill':'d6ccad','ht-joint':'9e9786','ht-red':'b83439','ht-paving':'b7b3a6','ht-stone':'b8ab90','ht-floor':'aaa599','ht-interior':'d7d3c4','ht-ceiling':'d8d4c8','ht-wood':'755038','ht-carpet':'7b6855','ht-upholstery':'a8a69c','ht-blue':'3c505b','ht-screen':'202b2d','ht-magenta':'733449','ht-mustard':'a89a48','ht-light':'e8debc','hampton_pool':'296e79','ht-pool-tile':'8ab3af'})
-E.colors.update({'ht-rock':'9f927a','ht-soil':'514839','ht-shrub':'405436','c525-bark':'766650','c525-collision':'766650','c525-palm-stem':'63734c','c525-palm-leaf':'3e6139','c525-palm-light':'587845'})
+E.colors.update({'ht-rock':'9f927a','ht-soil':'514839','ht-shrub':'405436','ht-shrub-light':'5c713e','c525-bark':'766650','c525-collision':'766650','c525-palm-stem':'63734c','c525-palm-leaf':'3e6139','c525-palm-light':'587845'})
 for part in ['exterior','interior']:
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('hampton-tropicana-'+part)
  rng=np.random.default_rng(256);size=512
@@ -15,7 +15,7 @@ for part in ['exterior','interior']:
   if key=='ht-glass':bs.inputs['Roughness'].default_value=.22;bs.inputs['Metallic'].default_value=.05;bs.inputs['Alpha'].default_value=1.0;m.surface_render_method='DITHERED'
   m.use_backface_culling=False
   if key=='ht-light':bs.inputs['Emission Color'].default_value=(.95,.92,.8,1);bs.inputs['Emission Strength'].default_value=.35
-  if key not in ['ht-stone','ht-brick','ht-wood','ht-floor','ht-carpet','ht-upholstery']:continue
+  if key not in ['ht-stone','ht-brick','ht-wood','ht-floor','ht-carpet','ht-upholstery','ht-rock','c525-bark','ht-soil']:continue
   c=np.array([int(E.colors[key][i:i+2],16)/255 for i in [0,2,4]])
   h=np.full((size,size),.2);shade=np.ones((size,size))
   if key in ['ht-stone','ht-brick']:
@@ -43,6 +43,19 @@ for part in ['exterior','interior']:
      shade[:,lo:lo+1]*=.88
      z=int(rng.integers(0,size));shade[z:z+1,lo:hi]*=.88
    h=(shade-1)*.025
+  if key in ['ht-rock','c525-bark','ht-soil']:
+   yy,xx=np.mgrid[0:size,0:size];field=np.zeros((size,size))
+   fy=np.fft.fftfreq(size)[:,None];fx=np.fft.fftfreq(size)[None,:]
+   for frequency,weight in [(.012,.6),(.045,.25),(.15,.15)]:
+    spectrum=np.exp(-((fx/frequency)**2+(fy/(frequency*(.18 if key=='c525-bark' else 1)))**2))
+    octave=np.fft.ifft2(np.fft.fft2(rng.normal(size=(size,size)))*spectrum).real
+    field+=octave/max(octave.std(),.001)*weight
+   shade=1+np.clip(field,-2,2)*(.13 if key=='c525-bark' else .065)
+   h=field*(.22 if key=='c525-bark' else .12)
+   if key=='ht-rock':
+    # Restrained sediment seams; no regular brick joints on natural stone.
+    seams=np.maximum(0,np.cos(yy*math.tau/64+field*.8)-.90)
+    shade-=seams*.3;h-=seams*.25
   if key in ['ht-carpet','ht-upholstery']:
    yy,xx=np.mgrid[0:size,0:size]
    weave=((xx%4)<2)*.035+((yy%4)<2)*.035
