@@ -17,27 +17,91 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0992,-115.1817&heading=330&pitch=0",
       "accessDate": "2026-10-27",
       "imageDate": "March 2020",
-      "observed": "South arrival photograph shows open parking decks, pale horizontal parapet bands, tall striped vertical screen/stair volume beside Home2 patio. Exact level schedule to survey."
+      "observed": "Close March 2020 arrival Street View inspected: ground vehicle opening plus three raised parapet bands (four parking levels including roof), open deck slots, tall striped screen with ochre accents, concrete columns, green utility cabinet, yellow bollards and clearance bar; stairs visible behind corner opening."
     },
     {
       "url": "https://www.google.com/maps/@36.0996,-115.1819,87m/data=!3m1!1e3",
       "accessDate": "2026-10-27",
       "observed": "Aerial inspected: large separate angled garage east/northeast of Home2, roof parking markings, stepped south corner. Map image date unavailable."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0998178,-115.1817713,87m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Full roof aerial inspected: triangular open well beside a straight ramp along the angled northeast boundary, north stair enclosure and stepped south stair corner. Current first-pass flat roof does not yet reproduce these."
+    },
+    {
+      "url": "https://www.martinharris.com/portfolio/golden-palms-hilton-home2-suites-and-marriot-towneplace-suites/",
+      "accessDate": "2026-10-27",
+      "observed": "Builder describes completed garage as four-story precast, 170 parking spaces. Supports four parking levels seen in close Street View."
+    },
+    {
+      "url": "https://design-cell.com/marriott-towneplace-suites-and-hilton-home2-suites-las-vegas-breaks-ground/",
+      "accessDate": "2026-10-27",
+      "observed": "Architect groundbreaking announcement describes planned three-story 160-space garage. Conflicts with builder completed-project account; use visible as-built four-level geometry, retain this design-stage distinction."
     }
   ],
   "uncertainDimensions": [
-    "Mapped footprint must be checked against current source geometry.",
-    "Deck heights, exact number of levels and internal ramp arrangement require corroboration; do not infer traversable hidden ramps from one facade."
+    "Mapped footprint confirmed way/790044912 (232 original shell faces); untagged imported 5m height is not a measured height.",
+    "Adopted ground .12m, upper deck 3.36/6.60/9.84m, parapet 1.56m: estimates from Street View, not surveyed.",
+    "Internal ramp and exact stair arrangement remain unverified. Upper decks are not claimed as accessible."
   ],
-  "implemented": [],
+  "implemented": [
+    "Installed original 3135-triangle open-deck garage on exact mapped irregular footprint: four parking surfaces, structural columns and concrete parapets, striped hotel-facing screen, clipped parking markings and entrance hardware.",
+    "Removed only 232 claimed placeholder visual faces and matching collision faces; preserved roads and surrounding hotel geometry.",
+    "Ground entrance and two ground aisles traversed in actual game: all 16 out-and-back segments passed."
+  ],
   "remaining": [
-    "Survey all visible elevations and deck schedule.",
-    "Original exterior geometry and scoped collision replacement.",
-    "Accessible entry route and supported parking circulation.",
-    "Optimized install, current city bake, actual daylight visual review and performance."
+    "Flat lighting and uniform deck finish remain visibly simplified in the inspected installed views.",
+    "Survey and construct real ramp/stair connections for upper decks; their access is currently incomplete.",
+    "Refine facade panel seams, utility details, deck services, parking marking layout and dimensions against further references.",
+    "Reconstruct observed northeast roof ramp/triangular well and north/south stair enclosures; current flat roof is not reference-correct."
   ],
-  "evidence": [],
+  "evidence": [
+    {
+      "type": "scoped-route-check",
+      "path": "build/strip-landmarks/stadium-garage-route-audit.json",
+      "checks": 254,
+      "failures": 0,
+      "note": "Includes actual district foundation boxes from current geographic level, plus current city and target garage collision."
+    },
+    {
+      "type": "preservation-audit",
+      "path": "build/city-exteriors/stadium-garage-preservation-audit.json",
+      "note": "9560 mesh groups retain exact vertices and metadata. Only 232 claimed shell faces removed; no roads regenerated."
+    },
+    {
+      "type": "installed-views",
+      "path": "build/city-exteriors/stadium-garage-installed",
+      "note": "Arrival, roof and entry visually inspected. Wide decks view invalid: camera inside existing elevated road. Flat lighting and absent roof ramp retained as discrepancies."
+    },
+    {
+      "type": "actual-walking",
+      "path": "build/city-exteriors/stadium-garage-walk/results.json",
+      "passed": true,
+      "segments": 16,
+      "routes": 2
+    },
+    {
+      "type": "performance",
+      "baseline": "build/city-exteriors/stadium-garage-baseline/results.json",
+      "after": "build/city-exteriors/stadium-garage-installed/results.json",
+      "note": "960x540 ultra daylight, 300 settling frames then180 measured. Arrival baseline50.1/58.6ms ->53.7/80.9, roof24.8/39.6 ->26.2/34.5. Wide deck view invalid and entry baseline was placeholder wall; no60fps or controlled regression claim."
+    },
+    {
+      "type": "package",
+      "assets": 1413,
+      "missing": 0,
+      "cityBatches": 685,
+      "typecheck": "passed",
+      "publicCheck": "0 failures; one existing inventory email warning"
+    },
+    {
+      "type": "installed-close-views",
+      "path": "build/city-exteriors/stadium-garage-close",
+      "note": "Near deck bays and ground aisle inspected; no elevated-road obstruction. Materials/lighting visibly flat."
+    }
+  ],
   "nextPass": {
-    "priority": "Survey mapped footprint and garage elevations, then replace only way/790044912; preserve neighboring hotels and shared drives."
+    "priority": "Reconstruct observed northeast roof ramp/triangular well and north/south stair enclosures. Keep record active. Four-level source supported by as-built builder account; lower ramp repetitions must be labeled inferred."
   }
 }

@@ -12901,10 +12901,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Survey all visible elevations and deck schedule.",
-    "Original exterior geometry and scoped collision replacement.",
-    "Accessible entry route and supported parking circulation.",
-    "Optimized install, current city bake, actual daylight visual review and performance."
+    "Corrected close daylight views pending final inspection; wide deck camera inside elevated road is invalid review evidence.",
+    "Survey and construct real ramp/stair connections for upper decks; their access is currently incomplete.",
+    "Refine facade panel seams, utility details, deck services, parking marking layout and dimensions against further references.",
+    "Reconstruct observed northeast roof ramp/triangular well and north/south stair enclosures; current flat roof is not reference-correct."
    ],
    "record": "tools/resort-blocks/stadium-garage.json",
    "buildings": [],
@@ -12916,7 +12916,13 @@
     "writes": [
      "tools/resort-blocks/stadium-garage.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_stadium_garage.py",
+     "tools/city-exteriors/install-stadium-garage.py",
+     "tools/strip-landmarks/test-stadium-garage.mjs",
+     "tools/strip-landmarks/review_stadium_garage.py",
+     "tools/strip-landmarks/stadium_garage.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

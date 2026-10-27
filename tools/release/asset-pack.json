@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1411,
- "bytes": 1080738089,
+ "count": 1413,
+ "bytes": 1080860290,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18847373,
-   "sha256": "545f4d1a7bb49454b198c71efa91bfe8792a3ff5520f5a8f150f9c5e0334f82b",
+   "bytes": 18851136,
+   "sha256": "93770b8b40be85f214c4130ab1bbaa3c7296c069806756d3d80c15c120286dcf",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13063720,
-   "sha256": "a6fa7f6bb6dbcde15788be64b116f2ccde63007565b8f614b66d9117fa9a555c",
+   "bytes": 13063636,
+   "sha256": "042803665a89eb31c34978881410e84bc873d368ce5a785b07bb1582c79cfc5f",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109755876,
-   "sha256": "e6665be7bb96527e3ed0d82f35fd527ed8f9e48109d187d8cbb5bec7694afd3d",
+   "bytes": 109753236,
+   "sha256": "3af73c83d9a3aeeaae0e4fbd16113a7127f1b0d594b47974617ca219ea19c711",
    "kind": "optimized"
   },
   {
@@ -7973,6 +7973,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/stadium-garage-exterior-collision.bin",
+   "bytes": 3728,
+   "sha256": "11fbc26216e6a3b9fc3967bc4fbea7fad450a294c48af36082eb2a636c2adff7",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/stadium-garage-exterior.glb",
+   "bytes": 117060,
+   "sha256": "eb4fdf4f81d527b1556e7966693f678e099eff8266d70e6acf70948f02809497",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/standard-tropicana-exterior-collision.bin",
    "bytes": 1376,
    "sha256": "757bfc7ea8380f76006a2948452e041c9f6ee42bb4dc72ca1d0078c9aad994c6",
@@ -8286,8 +8298,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 348762,
-   "sha256": "453bb65e229b21697c78a4cdab02f467d5028b9f4b28b7ada34adca0ca9a116f",
+   "bytes": 349136,
+   "sha256": "75c00518b431b5a1903033c3395642c79803dab618e0892425582db0b1c4d184",
    "kind": "original"
   },
   {
