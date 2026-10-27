@@ -1252,9 +1252,15 @@
     {
       "id": "cvs-paradise",
       "name": "CVS Paradise Esplanade",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "cvs-paradise.json"
+    },
+    {
+      "id": "inout-dean-martin",
+      "name": "In-N-Out Burger Dean Martin Drive",
+      "status": "active",
+      "record": "inout-dean-martin.json"
     }
   ],
-  "active": "cvs-paradise"
+  "active": "inout-dean-martin"
 }

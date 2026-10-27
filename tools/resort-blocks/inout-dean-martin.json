@@ -1,0 +1,48 @@
+{
+  "id": "inout-dean-martin",
+  "name": "In-N-Out Burger Dean Martin Drive",
+  "status": "active",
+  "mappedIds": [
+    "way/257307259"
+  ],
+  "claim": {
+    "issue": 258,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/258",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://locations.in-n-out.com/86",
+      "accessDate": "2026-10-27",
+      "observed": "Official address and drive-through/dine-in service; separate company store identified."
+    },
+    {
+      "url": "https://www.in-n-out.com/ino-images/default-source/location-store-images/86.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Official low-resolution exterior inspected: white stucco, stepped entrance masses, terracotta caps, red awnings and patio."
+    },
+    {
+      "url": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/cCvrx81fNr.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Location-specific entrance photo inspected in Restaurantji gallery: raised tiled entry bay, paired doors/transom, red awnings, low red tile band."
+    },
+    {
+      "url": "https://cdn9.localdatacdn.com/nv/las-vegas/155734/original/r7zEQlpcEc.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Location-specific patio/long elevation inspected: multiple red awnings, pale concrete picnic tables, red/white umbrellas, two raised tiled masses and ringed pylon sign. Photo date unknown."
+    }
+  ],
+  "uncertainDimensions": [
+    "393.01m2 mapped footprint. Heights, exact awning divisions and patio dimensions require photographic estimates.",
+    "No location-specific interior layout verified yet. Nearby company-store shell is excluded."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build mapped restaurant exterior, patio and signage, preserving neighboring company store and roads.",
+    "Research public dining room; label inferred layout and preserve staff-only boundaries.",
+    "Installed daylight/walking/performance checks and optimized packaged city bake."
+  ],
+  "evidence": [],
+  "validation": {}
+}
