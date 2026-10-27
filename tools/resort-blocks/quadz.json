@@ -20,12 +20,49 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=MWwgRMDwDlYEl-im_axlbg&heading=155&pitch=0",
       "imageDate": "2023-02",
       "observed": "Parking frontage under continuous green fascia; west neighboring Get Booked storefront must distinguish tenancy from mapped shell."
+    },
+    {
+      "url": "https://thegaypassport.com/venue/quadz-video-bar/",
+      "accessDate": "2026-10-26",
+      "pageUpdated": "2025-01-23",
+      "observed": "Visually inspected first two photographs labeled Las Vegas: dark ceiling, long gaming bar, track lights, video screens, stools and tables. Photograph capture dates unknown; room placement not proven."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=MWwgRMDwDlYEl-im_axlbg&heading=240&pitch=0",
+      "imageDate": "2023-02",
+      "observed": "West Get Booked tenancy has glazed bays and double entrance below same green fascia. Adjacent tenancy included as exterior only."
     }
   ],
   "remaining": [
-    "Reconcile tenancy boundaries and dates; model entire mapped shell with reference-supported frontages.",
-    "Install original exterior with targeted collisions; inspect actual daylight views and walking routes.",
-    "Research public interior; do not imply verified floorplan from isolated photographs.",
-    "Validate optimized assets, matching performance and fresh city bake."
+    "Verify current storefront branding and exact letter proportions against closer recent photographs; 2023 facade used.",
+    "Corroborate west/south service openings and rooftop equipment positions; these remain approximate.",
+    "Public layout inferred, not surveyed: refine room/bar/pool placement when floorplan evidence exists.",
+    "Improve interior props, floor finish and display detail; not a photorealistic completion claim."
+  ],
+  "uncertainDimensions": [
+    "Footprint31.1m north edge,14-16mdepth from mapped polygon. Fascia4.55m and public ceiling3.15m are photo estimates, not measured.",
+    "Public room footprint18.7x12.55m and bar/table placement inferred from photographed features; no surveyed floor plan.",
+    "2023frontage used; current branding and rear/service changes not yet corroborated."
+  ],
+  "implemented": [
+    "Mapped exterior with green fascia, pale vertical front panels, QUADZ entry, separate west Get Booked storefront, roof equipment and apron.",
+    "Public bar with video counter, stools, bottle shelves, three pool tables and pooled lighting; exact layout inferred.",
+    "Only eight old owned city triangles and matching collision triangles replaced."
+  ],
+  "validation": {
+    "scopedRoutes": "57 support/clearance checks passed against surrounding city collision.",
+    "runtimeWalk": "Eight actual entrance-to-bar-and-return segments passed.",
+    "installedViews": "Final north/west/south exterior and public bar views inspected after correcting front siding and wall material.",
+    "performance": "960x540ultra180frames/view. Before north16.6/18.6,west16.7/19.2,south16.8/18.9ms; final north16.6/18.7,west16.7/18.9,south16.7/18.9; interior16.6/18.6median/p95. Not city-wide guarantee.",
+    "checks": "Typecheck, record validation and public check passed; one pre-existing email warning.",
+    "packaging": "Fresh city bake663batches,24.4Mnear/7.07MLODtriangles,17.44MBbinary. Asset-pack stage/check passed."
+  },
+  "evidence": [
+    "build/city-exteriors/quadz-before/results.json",
+    "build/city-exteriors/quadz-final/results.json",
+    "build/city-exteriors/quadz-final-interior/quadz-bar.png",
+    "build/city-exteriors/quadz-walk/results.json",
+    "build/strip-landmarks/quadz-route-audit.json",
+    "build/city-exteriors/quadz-ownership-audit.json"
   ]
 }

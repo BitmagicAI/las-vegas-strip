@@ -12034,10 +12034,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Reconcile tenancy boundaries and dates; model entire mapped shell with reference-supported frontages.",
-    "Install original exterior with targeted collisions; inspect actual daylight views and walking routes.",
-    "Research public interior; do not imply verified floorplan from isolated photographs.",
-    "Validate optimized assets, matching performance and fresh city bake."
+    "Verify current storefront branding and exact letter proportions against closer recent photographs; 2023 facade used.",
+    "Corroborate west/south service openings and rooftop equipment positions; these remain approximate.",
+    "Public layout inferred, not surveyed: refine room/bar/pool placement when floorplan evidence exists.",
+    "Improve interior props, floor finish and display detail; not a photorealistic completion claim."
    ],
    "record": "tools/resort-blocks/quadz.json",
    "buildings": [],
@@ -12049,7 +12049,12 @@
     "writes": [
      "tools/resort-blocks/quadz.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_quadz.py",
+     "tools/strip-landmarks/test-quadz.mjs",
+     "tools/city-exteriors/install-quadz.py",
+     "tools/strip-landmarks/quadz.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
