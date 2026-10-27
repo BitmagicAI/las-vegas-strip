@@ -1,0 +1,35 @@
+{
+  "id": "jack-tropicana",
+  "name": "Jack in the Box 3235 W Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/431497410"
+  ],
+  "claim": {
+    "issue": 272,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/272",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://locations.jackinthebox.com/us/nv/las-vegas/3235-w-tropicana-ave",
+      "observed": "Official location confirms3235address and operating restaurant.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1004768,-115.1842301,3a,75y,180h,90t/data=!3m4!1e1!3m2!1sc0qpErjFiiv2gzstk4IuKw!2e0",
+      "observed": "December2022 StreetView north facade inspected: greybrick piers, timber-look window surrounds, aluminium glazing, projecting greyfascia, northwest red diagonal-ribbed crown. RileyJan2022 sitephoto CIHM0ogKEICAgICm96lL confirms3235address and westreturn entrance.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mappedfootprint268.27m2; heights, bay widths and concealed service elevations inferred.",
+    "Public interior not established beyond visible chairs through glazing; no invented private rooms."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build reference-supported exterior, targeted collision replacement, optimized assets/current bake, scoped and actual routes, installed visual review and matching performance."
+  ],
+  "evidence": []
+}
