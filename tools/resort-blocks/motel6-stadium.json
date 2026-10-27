@@ -1,0 +1,51 @@
+{
+  "id": "motel6-stadium",
+  "name": "Motel 6 Las Vegas I-15 Stadium",
+  "status": "active",
+  "mappedIds": [
+    "way/1036271486"
+  ],
+  "claim": {
+    "issue": 284,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/284",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.motel6.com/property/motel-las-vegas-nv-nevada-us-307033/",
+      "accessDate": "2026-10-27",
+      "observed": "Official name/address5085DeanMartinDrive; lobby/laundry photos inspected. Tiled lobby with dark central band, street windows, glass entry, coffee cabinet, two chairs/table, TV and brochurestand. Laundry has washers/dryers/vending. Genericmarketing images excluded."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CpA7fanQEm10yMN4OavNrg&heading=268&pitch=0",
+      "accessDate": "2026-10-27",
+      "imageDate": "December2022",
+      "observed": "Two levels, offwhite stucco, blue doors, broad dark windows and below-windowAC, upper white rail galleries, shallow gray shingle fascia. Blue welcome/lobbyfront at northeastend of eastwing, palmrockplanter."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0977523,-115.181986,347m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "H-shaped motel, pool in eastern courtyard, parking perimeter. West/southrectangles are separate properties, excluded."
+    }
+  ],
+  "uncertainDimensions": [
+    "Imported height6m has unknown source; estimate from two visiblelevels, not surveyed.",
+    "Mapped western wing narrow (~6.7m); check gallery/shell interpretation.",
+    "Lobby entrance established at northeast of eastwing; hidden lobby/laundry connection and exactplan remain inferred.",
+    "Surveyname ParkInn differs from currentofficialMotel6; officialbodytext inconsistently says5001 whileheading/address andStreetView say5085."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Author exterior from mappedHfootprint with real upper galleries/stairs, door/window/ACbays andshinglefascia.",
+    "Create poolcourt and arrivaldetails whilepreservingroads/neighborproperties.",
+    "Build reference-supported lobby and laundry once their plan and connections are laid out explicitly.",
+    "Targeted ownership/collision replacement, optimizedGLBs/packeddata/currentbake.",
+    "Installed daylight exterior/interior comparisons, walkingroutes and matchedperformance."
+  ],
+  "evidence": [],
+  "nextPass": {
+    "priority": "Create draftPR, capture baseline; author mapped exterior and photo-supportedpublicplan. No geometryedited yet.",
+    "checkpoint": "Claim284assignedjaniverse; referencesinspected; garagefinish7ceceaesaved. Mappedbounds[-843.405,1987.776,-781.472,2066.301],area1831.99m2."
+  }
+}

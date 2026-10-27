@@ -1368,7 +1368,13 @@
         "date": "2026-10-27",
         "reason": "Installed access and finish pass verified; remaining visual/reference/performance discrepancies retained while advancing city-wide per creator request."
       }
+    },
+    {
+      "id": "motel6-stadium",
+      "name": "Motel 6 Las Vegas I-15 Stadium",
+      "status": "active",
+      "record": "motel6-stadium.json"
     }
   ],
-  "active": "stadium-garage"
+  "active": "motel6-stadium"
 }
