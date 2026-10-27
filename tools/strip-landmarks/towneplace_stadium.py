@@ -113,6 +113,8 @@ def build(B):
  # Beverage counter and breakfast alcove visible beside dining in official lobby image.
  F.box('ts-wood',(41.8,.76,7.8),(3.5,1.04,1.0),True);F.box('ts-counter',(41.8,1.32,7.8),(3.65,.09,1.1))
  for x in [40.8,42.6]:F.box('ts-frame-paint',(x,1.85,7.8),(.7,1.0,.65));F.box('ts-screen',(x,1.95,8.14),(.55,.6,.04))
+ from towneplace_public import add_public_details
+ add_public_details(B,F)
  for x in [27,37]:F.light(x,3.15,13,power=23,range=14)
  routes=[dict(name='Public arrival to reception',points=[F.p(x,.24,z) for x,z in [(31.27,27),(31.27,20),(31.27,14),(27,12),(23.5,12)]]),dict(name='Dining circulation',points=[F.p(x,.24,z) for x,z in [(31.27,16),(34.5,16),(35.4,13),(39.1,13),(42.7,13),(42.7,16.8)]])]
  routes.append(pool_route)
