@@ -1,0 +1,43 @@
+{
+  "id": "naked-city-paradise",
+  "name": "Naked City Pizza Paradise",
+  "status": "active",
+  "mappedIds": [
+    "way/1042462823"
+  ],
+  "claim": {
+    "issue": 246,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/246",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=oqYE14ve9-2m_QRdSDpbiw&heading=56&pitch=0",
+      "imageDate": "2023-02",
+      "accessDate": "2026-10-27",
+      "observed": "West frontage visually inspected: textured two-storey wall, upper rectangular windows, red raised lettering, central round-ended red canopy with 4608, aged sloping side awnings, glazed entry, timber patio screen and lattice, barrel planters and apron."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Naked+City+Pizza+4608+Paradise+Las+Vegas",
+      "accessDate": "2026-10-27",
+      "observed": "Paul Votaw July2024 public entrance photo corroborates awning, glazing and string lights."
+    },
+    {
+      "url": "https://nakedcitylv.com/paradise",
+      "accessDate": "2026-10-27",
+      "observed": "Official location reference from preceding pass confirms4608Paradise."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped irregular174m2 footprint;6.6m shared building height estimated. Window and awning sizes inferred from street photographs."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build and inspect original exterior and approach.",
+    "Corroborate public room and rear/service layout before adding an interior.",
+    "Fine facade proportions and finishes require reference comparison."
+  ],
+  "validation": {},
+  "evidence": []
+}
