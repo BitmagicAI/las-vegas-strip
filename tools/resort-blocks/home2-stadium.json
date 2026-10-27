@@ -9,7 +9,8 @@
     "issue": 280,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/280",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/281"
   },
   "sources": [
     {
@@ -26,17 +27,73 @@
       "url": "https://www.hilton.com/im/en/LASTAHT/9786164/lastaht-lobby-3-v2.jpg",
       "accessDate": "2026-10-27",
       "observed": "Official lobby inspected in full gallery modal; photos linked only."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0992,-115.1817&heading=330&pitch=0",
+      "accessDate": "2026-10-27",
+      "imageDate": "March 2020",
+      "observed": "South court visually inspected: entrance on southeast end, ochre canopy, stone piers, gray sign tower/lime returns and aqua crown; separate garage northeast. January2025 Dean Martin panorama confirms long street facade, tall transom windows, stone end bases and charcoal ground cladding."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=PFfvba5h-vGdDv-GX4yOgw&heading=164&pitch=0",
+      "accessDate": "2026-10-27",
+      "imageDate": "March 2020",
+      "observed": "Pool terrace along northeast facade by shared north arrival drive; dark vertical fence, stone piers, pergola and red umbrellas. Still to implement after bounded site survey."
+    },
+    {
+      "url": "https://www.hilton.com/im/en/LASTAHT/9786307/lastaht-pool-1-v2.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Full official photo inspected: curved pool, blue-tile waterfall wall with flanking planting pots, blue accessibility lift, stainless rails, dark fence/pergola, yellow chairs. TownePlace visible behind confirms north courtyard position."
+    },
+    {
+      "url": "https://www.hilton.com/im/en/LASTAHT/9786133/lastaht-inspired-table-1-v2.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Breakfast photo inspected: blond wood tables/chairs, lower drawer cabinetry, plate cubbies, microwaves, cereal dispensers and waffle irons. These elements are represented with original simplified geometry; exact dimensions remain inferred."
     }
   ],
   "uncertainDimensions": [
     "Mapped footprint sets perimeter; generic6m height is not reliable. Five storeys visible, exact floor heights pending.",
     "Public room plan inferred from photographs, not a verified floorplan.",
-    "Pool/patio position and bounded site scope must be established before site edits."
+    "Pool/patio position and bounded site scope must be established before site edits.",
+    "Upper floors estimated3.08m from5storey photos;roof17.55m,crown19.43m. Not surveyed height.",
+    "Public room at southeast entrance:21.46mx16m envelope clipped to stepped footprint; inferred arrangement, not verified floorplan."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original stepped-footprint five-storey exterior, south entrance canopy and opening, framed transom glazing, end sign volumes, roof services.",
+    "Inferred public reception, market, banquette lounge, business desks and breakfast room; cabinetry, appliances and furniture refined against official photographs."
+  ],
   "remaining": [
-    "Capture baseline and map exterior orientation.",
-    "Build original exterior/site and public rooms, optimize/install and run scoped/actual routes and visual/performance checks."
+    "Seven final installed views inspected: north sign masking corrected; furnishings remain simplified, floor texture visibly streaked, glazing opaque. Further material refinement required.",
+    "Pool terrace, planting, arrival landscaping and finer facade/material refinement remain pending.",
+    "Glass remains opaque and public layout inferred; guest rooms are not built.",
+    "Public rooms remain sparse and stylized; cabinetry/appliance dimensions and branded details are approximate.",
+    "Add pool terrace from official pool9786307 and StreetView: bounded northeast courtyard, curved basin, tile waterfall wall, pergola/fence, lift, seating and reachable gate. Do not alter separate garage or shared arrival road."
   ],
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/home2-stadium-baseline/home2-west.png",
+    "build/city-exteriors/home2-stadium-baseline/home2-north.png",
+    "build/city-exteriors/home2-stadium-baseline/home2-east.png",
+    "build/city-exteriors/home2-source-review/",
+    "build/city-exteriors/home2-installed-exterior/",
+    "build/city-exteriors/home2-installed-public/",
+    "build/city-exteriors/home2-installed-walk/results.json",
+    "build/strip-landmarks/home2-stadium-route-audit.json",
+    "build/city-exteriors/home2-stadium-ownership-audit.json",
+    "build/city-exteriors/home2-refined-exterior/",
+    "build/city-exteriors/home2-refined-public/"
+  ],
+  "performance": {
+    "baseline": "build/city-exteriors/home2-stadium-baseline/results.json",
+    "settings": "960x540 ultra, neutral daylight, 300 settle frames +180 measured; west/north/east 16.6ms median,17.9/18.1/18.1ms p95",
+    "initialInstalled": "build/city-exteriors/home2-installed-exterior/results.json",
+    "initialPublic": "build/city-exteriors/home2-installed-public/results.json",
+    "after": "build/city-exteriors/home2-refined-exterior/results.json",
+    "publicAfter": "build/city-exteriors/home2-refined-public/results.json",
+    "comparison": "Final exterior west/north/east median 16.9/16.6/16.7ms; p95 24.5/17.9/17.8ms. Baseline medians16.6ms,p95 17.9/18.1/18.1ms. West p95 regressed; no blanket60fps claim. Public median16.6\u201316.7,p95 17.3\u201318.1ms; no comparable interior baseline."
+  },
+  "nextPass": {
+    "priority": "Finish current Home2 site before claiming another building",
+    "poolStudy": "Frame origin(-824.745,1779.52),yaw=-atan2(30.624,25.216). Pool lies toward northwest on negative-local-z facade. Establish exact bounded deck against satellite before writing geometry.",
+    "publicStudy": "Official public plan is not available; retain inferred layout label. Improve room finishes and lighting after geometry."
+  }
 }

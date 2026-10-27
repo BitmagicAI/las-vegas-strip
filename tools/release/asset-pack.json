@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1407,
- "bytes": 1076721072,
+ "count": 1411,
+ "bytes": 1079783180,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18790492,
-   "sha256": "1c44d1f5751355bd174f2ec721560328fe0300f3af45814f3014ecb70797079c",
+   "bytes": 18844234,
+   "sha256": "d75cf4375a58baec48989e374db40d9f9d0cb5d06b236b0c0594b3e1cc182ba9",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13064000,
-   "sha256": "1a979d47075938a63dc935f52a54084a9f197d307215eaab735e2dbe2506eb13",
+   "bytes": 13063720,
+   "sha256": "a6fa7f6bb6dbcde15788be64b116f2ccde63007565b8f614b66d9117fa9a555c",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109756320,
-   "sha256": "5effc778d5771fe1a5d605b6fa57b2401dc549dd4664870c7267c6555f0b88eb",
+   "bytes": 109755876,
+   "sha256": "e6665be7bb96527e3ed0d82f35fd527ed8f9e48109d187d8cbb5bec7694afd3d",
    "kind": "optimized"
   },
   {
@@ -6653,6 +6653,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/home2-stadium-exterior-collision.bin",
+   "bytes": 460,
+   "sha256": "71aa0e47e3f55e9c26bc3dae7064a525101d059ce9117e45a3f0b56397ad30a6",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/home2-stadium-exterior.glb",
+   "bytes": 1956700,
+   "sha256": "f4dd1a4e7714ef3fa0fbea201f6ef387bc7340035962a573888438eb607e5918",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/home2-stadium-interior-collision.bin",
+   "bytes": 1180,
+   "sha256": "3cedd3adae90e16fc2d486e31fa6b6ca184367e3a91ffee532a797922bcbbdcb",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/home2-stadium-interior.glb",
+   "bytes": 1049972,
+   "sha256": "c7ba0b8ac231009d765c5e7b51b7532a6d53c6ea3d85a5b56bc5a8ebe2e2ec39",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/horseshoeArrival-exterior-collision.bin",
    "bytes": 4640,
    "sha256": "bc3655fed53466481261f872477ed2b3fe899bc88b6c470f9685fca3c09c611e",
@@ -8262,8 +8286,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 347534,
-   "sha256": "6c9e588adc942a90902d4c4769c35ee56b940aef790ad9574e02fcd239f8c83f",
+   "bytes": 348312,
+   "sha256": "61500e015f61ed7429fd7ece1bf15e1353e142d5a61f41d6fb3eedc1c2a7e635",
    "kind": "original"
   },
   {
