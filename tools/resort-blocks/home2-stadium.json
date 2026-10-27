@@ -1,0 +1,42 @@
+{
+  "id": "home2-stadium",
+  "name": "Home2 Suites by Hilton Las Vegas Stadium District",
+  "status": "active",
+  "mappedIds": [
+    "way/790044913"
+  ],
+  "claim": {
+    "issue": 280,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/280",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.hilton.com/en/hotels/lastaht-home2-suites-las-vegas-stadium-district/gallery/",
+      "accessDate": "2026-10-27",
+      "observed": "Official exterior image visually inspected: five floors, white horizontal window bands and perimeter frame, ochre panels/turquoise glazing, gray sign/stair volume with lime edge, stone ground floor. Lobby photo: long upholstered banquette, mixed green/yellow chairs, gold polygonal pendant fixtures, desks with computers, snack shop."
+    },
+    {
+      "url": "https://www.hilton.com/im/en/LASTAHT/9786101/lastaht-exterior-day-final.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Official exterior shown in hotel page carousel."
+    },
+    {
+      "url": "https://www.hilton.com/im/en/LASTAHT/9786164/lastaht-lobby-3-v2.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Official lobby inspected in full gallery modal; photos linked only."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint sets perimeter; generic6m height is not reliable. Five storeys visible, exact floor heights pending.",
+    "Public room plan inferred from photographs, not a verified floorplan.",
+    "Pool/patio position and bounded site scope must be established before site edits."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Capture baseline and map exterior orientation.",
+    "Build original exterior/site and public rooms, optimize/install and run scoped/actual routes and visual/performance checks."
+  ],
+  "evidence": []
+}
