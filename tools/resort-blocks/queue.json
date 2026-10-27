@@ -1270,9 +1270,15 @@
     {
       "id": "mcdonalds-tropicana",
       "name": "McDonald\u2019s West Tropicana",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "mcdonalds-tropicana.json"
+    },
+    {
+      "id": "terribles-tropicana",
+      "name": "Terrible Herbst / Chevron West Tropicana",
+      "status": "active",
+      "record": "terribles-tropicana.json"
     }
   ],
-  "active": "mcdonalds-tropicana"
+  "active": "terribles-tropicana"
 }

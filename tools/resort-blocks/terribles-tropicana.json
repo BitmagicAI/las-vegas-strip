@@ -1,0 +1,38 @@
+{
+  "id": "terribles-tropicana",
+  "name": "Terrible Herbst / Chevron West Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/1126368783",
+    "way/1126368784",
+    "way/1126368785"
+  ],
+  "claim": {
+    "issue": 264,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/264",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/Terrible+Herbst+Convenience+Store/@36.10053,-115.18635,174m/data=!3m1!1e3!4m6!3m5!1s0x80c8c42b281796d3:0x123ebd47cacd6682!8m2!3d36.1003828!4d-115.186054!16s%2Fg%2F1tr9nptj",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial, February2026AkimRamirez exterior/cooler/canopy photographs, September2026IRAMVARGAS snackcounter and May2024Bo entry photographs visually inspected. Peach store walls and brown plinth, redletteredfascia withbluewhiteborders, glass entry. Fuel canopy has blue fascia, red tiled roof and raised arched pavilion. Cooler bank, tiledfloor, fluorescentceiling, stockedracks andLcounter visible."
+    },
+    {
+      "url": "https://tax.nv.gov/wp-content/uploads/2025/02/Retail-2.12.25.pdf",
+      "accessDate": "2026-10-27",
+      "observed": "Official state listing corroborates Terrible Herbst133at3415W Tropicana."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped store267m2, canopies151m2and162m2. Heights/baydivision/pump spacing approximate.",
+    "Public retail fixture arrangement inferred from partial photographs; no surveyed plan or private room layout."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build original store/canopy exteriors and reference-supported public shop interior.",
+    "Inspect installed daylight exterior/interior, walk routes, scopedcollision/support checks, matchingperformance, optimize/package andcurrentbake."
+  ],
+  "evidence": []
+}
