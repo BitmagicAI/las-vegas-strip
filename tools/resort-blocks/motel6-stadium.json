@@ -44,9 +44,34 @@
     "Targeted ownership/collision replacement, optimizedGLBs/packeddata/currentbake.",
     "Installed daylight exterior/interior comparisons, walkingroutes and matchedperformance."
   ],
-  "evidence": [],
+  "evidence": [
+    {
+      "type": "baseline-installed",
+      "path": "build/city-exteriors/motel6-stadium-baseline",
+      "viewsInspected": 4,
+      "frameTimesMs": {
+        "arrival": {
+          "median": 16.5,
+          "p95": 20.2
+        },
+        "roof": {
+          "median": 16.5,
+          "p95": 19.8
+        },
+        "courtyard": {
+          "median": 23.7,
+          "p95": 33.3
+        },
+        "south": {
+          "median": 17.6,
+          "p95": 25.4
+        }
+      },
+      "note": "960x540ultra neutral daylight,300settle/180measure. Undetailed whiteHshell confirmed. Existing courtyarddrive/sidewalk must be respected or explicitly scoped if reference conflict requires targeted correction."
+    }
+  ],
   "nextPass": {
-    "priority": "Capture and inspect baseline, then author mapped exterior and photo-supported public plan. DraftPR285 is open; no geometry edited yet.",
+    "priority": "Author mapped exterior and reference-supported lobby/laundry; all4baselineviews inspected, draftPR285 open. No geometry edited yet.",
     "checkpoint": "Claim284assignedjaniverse; referencesinspected; garagefinish7ceceaesaved. Mappedbounds[-843.405,1987.776,-781.472,2066.301],area1831.99m2."
   }
 }
