@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1407,
- "bytes": 1076095206,
+ "bytes": 1076537068,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18786760,
-   "sha256": "8db246f95eaaa8c4c38b99bcb6531f820d9c683313e9f9b370ce83e9e25299b1",
+   "bytes": 18790492,
+   "sha256": "1c44d1f5751355bd174f2ec721560328fe0300f3af45814f3014ecb70797079c",
    "kind": "original"
   },
   {
@@ -8082,14 +8082,14 @@
   },
   {
    "path": "build/strip-landmarks/towneplace-stadium-exterior-collision.bin",
-   "bytes": 864,
-   "sha256": "b84ef0233410360345986ce1a61269a748d3b5369aebc89bbdb811fa96c5a233",
+   "bytes": 8548,
+   "sha256": "0f5e33d6d5b3bc7f5db2db1736f333934e5af60981e932389ae779868f66c4ab",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/towneplace-stadium-exterior.glb",
-   "bytes": 1652176,
-   "sha256": "7da33a88ac8df6b047396b680b444e3508148c66424cfc438e8deb75c45cb6b9",
+   "bytes": 2082492,
+   "sha256": "fd04791ba09019dc037e99243ae11a547781f15e27de44f8601fa845bff5b485",
    "kind": "optimized"
   },
   {
@@ -8262,8 +8262,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 347308,
-   "sha256": "6ee6c1bc01cf2a78e9e60a6defcad9a5b2dd8bb7e2576fce0cda597bdeac3e6e",
+   "bytes": 347438,
+   "sha256": "ee8cc0c2ffb9fbe213ef1ab544f8dd91895946dc83958d85fe0869a98dab7cae",
    "kind": "original"
   },
   {

@@ -32,8 +32,8 @@
   "uncertainDimensions": [
     "Mapped footprint fixes perimeter. Five floors visible; height estimated pending surveyed elevation. Source6m height is a generic fallback, not used as reference.",
     "Public lobby/breakfast layout inferred from official photos, not a verified floorplan.",
-    "Outdoor pool parcel ownership and exact bounds unverified; do not alter neighboring parcels.",
-    "West pool photo8532 confirms hotel-site context but exact basin/deck boundary still needs map alignment; local survey intersection of x[-890,-850],z[1725,1770] contains only owned way/431504486, no separate mapped pool structure. No neighboring geometry edited."
+    "West pool photo8532 and satellite establish alignment west of hotel; local survey x[-890,-850],z[1725,1770] contains only owned way/431504486, no separate mapped pool structure. No neighboring geometry edited.",
+    "Pool/terrace approximately x[-875,-854],z[1736,1763], approach extends south to1765.2. Satellite building width anchors scaling; basin is an inferred rounded outline, not surveyed. Issue278 expanded to bounded west hotel terrace before edits."
   ],
   "implemented": [
     "Original stepped five-storey facade on mapped footprint, distinct arrival/street cladding, framed windows, roof crowns, arrival canopy and pergola.",
@@ -41,12 +41,13 @@
     "Targeted169 placeholder visual and corresponding collision triangles removed.",
     "Installed inspection corrected open crown undersides and removed incorrect timber cladding from the north street elevation.",
     "2026-10-27 follow-up: fitted north lettering within roof backing and subdued bright cladding seams; installed arrival/street/west views inspected.",
-    "Street facade central projection changed to horizontally jointed charcoal, horizontal white band restored, crown fascia thinned and dark backing added. Original procedural curtain glazing added. Source review completed; installed street/arrival/west views inspected."
+    "Street facade central projection changed to horizontally jointed charcoal, horizontal white band restored, crown fascia thinned and dark backing added. Original procedural curtain glazing added. Source review completed; installed street/arrival/west views inspected.",
+    "West-end ochre/white facade, original curved pool basin and coping, entry treads/handrails, display pool lift, gray loungers/umbrellas, stone wall, feather-frond palms and colliding open-gate safety enclosure. Continuous paved route to hotel arrival. Source and all three installed daylight views reviewed. All 34 actual walking segments passed, including pool gate and return path."
   ],
   "remaining": [
-    "Street central projection, horizontal band and crown backing revised from official7441; upper glazing now has original curtain detail. Roof silhouette, bay proportions and exact typography remain approximate. Pool photo8532 confirms west end should have ochre/white panels; current west elevation still needs correction. Fine horizontal seam aliasing remains at middle distance.",
+    "Street central projection, horizontal band and crown backing revised from official7441; upper glazing now has original curtain detail. Roof silhouette, bay proportions and exact typography remain approximate. Pool photo8532 confirms west end should have ochre/white panels; west ochre/white cladding now corrected. Fine horizontal seam aliasing remains at middle distance.",
     "Public lobby and breakfast area remain sparse versus reference: ceiling details, market displays, lounge seating, trim and furniture profiles need refinement. Exact plan is inferred.",
-    "Pool and landscape parcel scope remains unverified and unbuilt; identify ownership and claim additional mapped structures before editing neighbors.",
+    "Pool and terrace built from official photo8532 and satellite alignment; dimensions estimated. Basin depth/swimming not implemented (existing ground below water preserved); pool lift is fixed display geometry. Planting, fuller palm crowns, furniture and waterline tile details need refinement. Installed walking/visual verification passed. Water looks excessively glossy at low angles; the shared water shader was not changed in this building pass.",
     "Guest rooms/private circulation not implemented.",
     "Performance variance unresolved: final arrival18.2msmedian37.6p95 and breakfast19.4/33.9; street/west/lobby/reception about16.7median. Profile before claiming locked60fps."
   ],
@@ -62,17 +63,20 @@
     "build/city-exteriors/towneplace-stadium-sign-refined",
     "build/city-exteriors/towneplace-stadium-profile-snapshots",
     "build/city-exteriors/towneplace-facade-study/street.png",
-    "build/city-exteriors/towneplace-stadium-facade-bands"
+    "build/city-exteriors/towneplace-stadium-facade-bands",
+    "build/city-exteriors/towneplace-pool-study/pool.png",
+    "build/city-exteriors/towneplace-pool-installed",
+    "build/city-exteriors/towneplace-pool-walk/results.json"
   ],
   "verification": {
-    "sourceTriangles": 32016,
-    "scopedChecks": 142,
-    "actualWalkingSegments": 18,
+    "sourceTriangles": 47565,
+    "scopedChecks": 399,
+    "actualWalkingSegments": 34,
     "retainedGeometryExact": true,
     "assetsPresent": 1407,
     "assetsMissing": 0,
     "bakeBatches": 683,
-    "visualReview": "Actual installed arrival, street, west, close entrance, lobby, reception and breakfast views inspected. Roof gaps closed, street timber corrected, sign contrast improved, accessible counter capped and wood grain toned down. Rooms remain sparsely furnished and facade/site still approximate. Follow-up street facade bands, charcoal central projection, thinner fascia and original curtain glazing inspected in source render and all3installed exterior views. Fine horizontal seam aliasing and approximate roof profiles remain; west end incorrect white cladding confirmed against officialpoolphoto."
+    "visualReview": "Actual installed arrival, street, west, close entrance, lobby, reception and breakfast views inspected. Roof gaps closed, street timber corrected, sign contrast improved, accessible counter capped and wood grain toned down. Rooms remain sparsely furnished and facade/site still approximate. Follow-up street facade bands, charcoal central projection, thinner fascia and original curtain glazing inspected in source render and all3installed exterior views. Fine horizontal seam aliasing and approximate roof profiles remain; west end incorrect white cladding confirmed against officialpoolphoto. West cladding corrected; installed pool, overview and matching west views inspected. No visible paving overlap; safety gate accessible. Palm crowns sparse and pool water excessively glossy, recorded for refinement."
   },
   "performance": {
     "baseline": "build/city-exteriors/towneplace-stadium-baseline/results.json",
@@ -81,6 +85,7 @@
     "public": "build/city-exteriors/towneplace-stadium-public-corrected/results.json: entry18.4/25.1, lobby16.7/17.4,reception16.7/17.6,breakfast19.4/33.9ms median/p95. No pre-build matching interior baseline.",
     "repeat": "build/city-exteriors/towneplace-stadium-profile-repeat/results.json: 3 passes x 600 frames/view after300 settle frames. Arrival median17.0/16.7/16.9ms,p9523.6/18.2/21.4; breakfast16.7/16.8/17.9,p9518.1/22.3/30.0. Pipeline count142 unchanged in all6 samples. Streaming busy false at sample boundaries; history snapshots in first probe alias the same array, so unchanged history is not conclusive. Probe corrected to clone snapshots for subsequent runs. Cause not established; no steady60fps claim.",
     "latestExterior": "build/city-exteriors/towneplace-stadium-facade-bands/results.json: same960x540ultra neutraldaylight,180frames/view. Arrival16.7/18.7,street16.6/18.4,west16.6/19.0ms median/p95. This run faster than priorvariablecaptures; not proof that underlyingvariance resolved.",
-    "snapshotRepeat": "build/city-exteriors/towneplace-stadium-profile-snapshots/results.json: cloned streaming snapshots,3x600frames/view. Arrivalmedian18.6/16.7/18.2,p9520.9/18.7/25.6; breakfast17.3/16.9/18.8,p9528.0/22.2/23.9. Pipelines139unchanged; streamingbusyfalse and historyidentical before/after eachsample. Occasional slowframes persist without trackedloading or newpipelinecreation during samples; CPU/GPU cause unproven."
+    "snapshotRepeat": "build/city-exteriors/towneplace-stadium-profile-snapshots/results.json: cloned streaming snapshots,3x600frames/view. Arrivalmedian18.6/16.7/18.2,p9520.9/18.7/25.6; breakfast17.3/16.9/18.8,p9528.0/22.2/23.9. Pipelines139unchanged; streamingbusyfalse and historyidentical before/after eachsample. Occasional slowframes persist without trackedloading or newpipelinecreation during samples; CPU/GPU cause unproven.",
+    "pool": "960x540 ultra neutral daylight, 180 frames/view after 300 settle frames: pool18.1/23.0,overview19.1/24.4,matching west16.7/18.4ms median/p95. New pool angles have no matching pre-build baseline; prior west16.6/19.0. No locked60fps claim."
   }
 }

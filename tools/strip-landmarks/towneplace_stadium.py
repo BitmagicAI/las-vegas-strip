@@ -15,14 +15,17 @@ def build(B):
   q=G.p(L/2,0,-.12);sgn=-1 if not p.covers(Point(q[0],q[2])) else 1
   mx=(a[0]+b[0])/2+853;mz=(a[1]+b[1])/2
   south=mz>1747
+  west_end=max(a[0],b[0])<-852
   mat='ts-ochre-paint' if south else 'ts-white-stucco'
   if 5<mx<15 or 20<mx<29 or 34<mx<50 or 55<mx<64:mat='ts-charcoal-paint'
   if 24<mx<30 and south:mat='ts-wood'
   north_front=not south and abs(a[0]-b[0])>L*.9
   central_strip=north_front and 28<mx<33.5
   if central_strip:mat='ts-charcoal-paint'
+  if west_end:mat='ts-ochre-paint'
   # Original stepped footprint provides facade projections rather than coplanar skins.
   G.box(mat,(L/2,10.65,sgn*.04),(L,14.0,.06))
+  if west_end:G.box('ts-white-stucco',(L*5/6,10.65,sgn*.085),(L/3,14.0,.03))
   G.box('ts-stone',(L/2,1.75,sgn*.05),(L,3.4,.08)) if min(math.dist(G.p(L/2,0,0)[::2],doors[0]['p'][::2]),L)>4 else None
   G.box('ts-white-stucco',(L/2,17.8,0),(L+.08,.22,.34))
   if north_front and not central_strip:G.box('ts-white-stucco',(L/2,16.35,sgn*.13),(L,.65,.22))
@@ -75,6 +78,8 @@ def build(B):
  F.box('ts-paving',(31.3,.12,24.6),(12,.24,6),True)
  for x in [29.68,32.86]:F.box('ts-frame-paint',(x,1.7,22.3),(.08,2.95,.18))
  F.box('ts-frame-paint',(31.27,3.2,22.3),(3.26,.10,.18))
+ from towneplace_pool import build_pool
+ pool_route=build_pool(B,F)
  # Public room is inset into the surveyed perimeter with a supported vestibule.
  room=F.poly([(20,7),(44,7),(44,18),(32.85,18),(32.85,22.3),(29.7,22.3),(29.7,18),(20,18)])
  B.planar('ts-floor',room,.24,True)
@@ -110,6 +115,7 @@ def build(B):
  for x in [40.8,42.6]:F.box('ts-frame-paint',(x,1.85,7.8),(.7,1.0,.65));F.box('ts-screen',(x,1.95,8.14),(.55,.6,.04))
  for x in [27,37]:F.light(x,3.15,13,power=23,range=14)
  routes=[dict(name='Public arrival to reception',points=[F.p(x,.24,z) for x,z in [(31.27,27),(31.27,20),(31.27,14),(27,12),(23.5,12)]]),dict(name='Dining circulation',points=[F.p(x,.24,z) for x,z in [(31.27,16),(34.5,16),(35.4,13),(39.1,13),(42.7,13),(42.7,16.8)]])]
- return dict(key=KEY,name='TownePlace Suites Stadium District',center=[-818.6,0,1747.1],bounds=[-855,1733,-778,1765],structural=True,exteriorOnly=False,portals=doors,zones=[dict(origin=F.p(20,.24,7),yaw=0,width=24,depth=15.3,height=3.24)],lights=B.lights,routes=routes,hotelSources=[])
+ routes.append(pool_route)
+ return dict(key=KEY,name='TownePlace Suites Stadium District',center=[-818.6,0,1747.1],bounds=[-876,1733,-778,1766],structural=True,exteriorOnly=False,portals=doors,zones=[dict(origin=F.p(20,.24,7),yaw=0,width=24,depth=15.3,height=3.24)],lights=B.lights,routes=routes,hotelSources=[])
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')
