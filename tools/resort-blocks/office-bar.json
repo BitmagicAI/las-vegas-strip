@@ -1,0 +1,37 @@
+{
+  "id": "office-bar",
+  "name": "Office Bar I",
+  "status": "active",
+  "mappedIds": [
+    "way/1042462824"
+  ],
+  "claim": {
+    "issue": 244,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/244",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=v2Wq5D290h23BawoHeEeig&heading=0&pitch=0",
+      "imageDate": "2022-12",
+      "accessDate": "2026-10-27",
+      "observed": "South frontage visually inspected: pale textured two-storey wall, upper rectangular windows, central glazed entrance, raised white OFFICE BAR lettering, large groundfloor window bays, black goosenecks, bollards and apron."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Office+Bar+I+4608+Paradise+Las+Vegas",
+      "accessDate": "2026-10-27",
+      "observed": "Listing and photos visually inspected. Meighan Ramos March2022 public room: two green pool tables, dark tiled ceiling, woodlook floor, return gaming bar, stools and pendants. Michael Uzmann June2024 entrance corroborates lettering/glazing/lamps. No copied artwork."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped14.2x18.5m footprint; height6.6m estimated, not surveyed.",
+    "Public room arrangement inferred from photographs; upper floor/private back rooms excluded."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build original exterior and reference-supported public room.",
+    "Verify installed daylight/interior views and actual entry/return routes.",
+    "Measure matching performance, optimize assets and package current city bake."
+  ]
+}
