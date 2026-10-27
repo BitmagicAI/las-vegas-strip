@@ -34,17 +34,39 @@
       "imageDate": "2014-11",
       "accessDate": "2026-10-27",
       "observed": "Older Edison Ronda panorama: north stone wall, two shuttered windows, tile eave and sign. Historic context only; current survival requires corroboration."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.10553,-115.15169,105m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Overhead visually inspected: irregular flat roof, narrow red east-edge tiled skirt, separate east patio with two shade structures, northwestern notch. Imagery date unspecified."
     }
   ],
   "uncertainDimensions": [
-    "Mapped785m2 irregular footprint; roof subdivisions and enclosed/patio ownership need overhead review. Height not surveyed."
+    "Mapped785m2 irregular footprint. Wall4.35m and tile ridge4.74m estimated from canopy and doors, not surveyed. Patio10.8m deep and15.6m long estimated from aerial/road view. Rear/service openings remain unresolved."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original mapped irregular shell and shallow stone courses, red tiled roof skirts, shuttered windows, entrance canopy and closed doors, original fish-sign silhouette, enclosed patio and two hipped shade structures.",
+    "Targeted replacement removed16owned visual and16matching collision triangles; roads/neighbors retained."
+  ],
   "remaining": [
-    "Complete roof and patio footprint comparison before modeling.",
-    "Original exterior, source export, optimized asset and targeted collision replacement.",
-    "Actual installed neutral-light exterior review, scoped routes, walking checks, matching performance, fresh city bake and package.",
-    "Public interior layout unresolved; do not fabricate a complete interior."
+    "Exact height, stone finish, sign scale and rear/service openings need closer corroboration and refinement; not photorealistic completion.",
+    "Public interior floor plan unresolved; exterior doors intentionally closed.",
+    "Roadside branded temporary barriers, billboard structure, patio furnishings and planting remain unimplemented pending permanent-scope references."
   ],
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/piranha-before/results.json",
+    "build/city-exteriors/piranha-after/results.json",
+    "build/city-exteriors/piranha-walk/results.json",
+    "build/strip-landmarks/piranha-route-audit.json",
+    "build/city-exteriors/piranha-ownership-audit.json",
+    "build/city-exteriors/piranha-final/results.json"
+  ],
+  "validation": {
+    "scopedRoutes": "18support/capsule checks passed with surrounding city collision.",
+    "runtimeWalk": "4actual entrance approach/return walking segments passed.",
+    "installedViews": "East/north/patio installed neutral-light views inspected. Missing canopy end panel corrected and photographed bollards added; final east view inspected.",
+    "performance": "960x540ultra,180frames/view. Neutral baseline east16.9/17.7,north16.7/18.8,patio16.7/18.5ms median/p95. First installed16.6-16.7median,18.4-28.5p95; final revision sample pending. Final neutral revision east16.6/17.9,north16.6/18.7,patio16.7/18.6ms; first east spike did not reproduce.",
+    "checks": "Typecheck, Python syntax and record/public checks passed; one pre-existing public inventory email warning.",
+    "packaging": "Optimized exterior1.40MiB,21855source triangles;1363runtimeassets present,0missing; fresh668batch city bake24.7Mnear to7.13MLODtriangles,17.55MBbinary."
+  }
 }

@@ -12221,12 +12221,11 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Complete roof and patio footprint comparison before modeling.",
-    "Original exterior, source export, optimized asset and targeted collision replacement.",
-    "Actual installed neutral-light exterior review, scoped routes, walking checks, matching performance, fresh city bake and package.",
-    "Public interior layout unresolved; do not fabricate a complete interior."
+    "Exact height, stone finish, sign scale and rear/service openings need closer corroboration and refinement; not photorealistic completion.",
+    "Public interior floor plan unresolved; exterior doors intentionally closed.",
+    "Roadside branded temporary barriers, billboard structure, patio furnishings and planting remain unimplemented pending permanent-scope references."
    ],
    "record": "tools/resort-blocks/piranha.json",
    "buildings": [],
@@ -12238,7 +12237,12 @@
     "writes": [
      "tools/resort-blocks/piranha.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_piranha.py",
+     "tools/city-exteriors/install-piranha.py",
+     "tools/strip-landmarks/test-piranha.mjs",
+     "tools/strip-landmarks/piranha.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
