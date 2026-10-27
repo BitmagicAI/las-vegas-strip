@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1371,
- "bytes": 1043057715,
+ "bytes": 1043341446,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18424181,
-   "sha256": "c646a38838d2698b65c283da957fe550f9d42aab1a98824926b5ca7d4b925f0f",
+   "bytes": 18424924,
+   "sha256": "e5a1e6b1294867eb1f7ceea30b49c2abfad30bc8c18803c1cbaa60636e013d89",
    "kind": "original"
   },
   {
@@ -6240,8 +6240,8 @@
   },
   {
    "path": "build/strip-landmarks/ferraros-exterior.glb",
-   "bytes": 1167208,
-   "sha256": "3223cc99be9c58d37f39d16b701dc0520801c7259201581a61b7c336e355d49a",
+   "bytes": 1450196,
+   "sha256": "eba63d6568b1d31cb4c4f5711e6c5018f36b6d1df0cc521475c16266439bc35c",
    "kind": "optimized"
   },
   {

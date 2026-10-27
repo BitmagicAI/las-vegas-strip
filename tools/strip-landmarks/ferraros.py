@@ -80,6 +80,31 @@ def build(B):
    yy=rng.uniform(.85,2);v=-.25+rng.uniform(-.12,.12);a=rng.uniform(0,math.tau)
    F.tube('fr-leaf',(u,.9,v),(u+.1,yy,v),.008,5)
    B.face('fr-leaf',[F.p(u,yy,v),F.p(u+.18*math.cos(a),yy+.1,v+.18*math.sin(a)),F.p(u+.08*math.cos(a)-.06*math.sin(a),yy+.06,v+.08*math.sin(a)+.06*math.cos(a))])
+ # Photographed fan-shaped striped shade, supported through the fire table.
+ # Span and height estimated from official terrace image 024; no survey available.
+ # One cloth surface; the exporter makes fabric double-sided without duplicate faces.
+ def shade(a,t):
+  return F.p(29.6+6.0*t*math.cos(a),4.85-1.15*t-.12*math.sin(math.pi*t),3.4+2.85*t*math.sin(a))
+ F.tube('fr-metal',(29.6,.93,3.4),(29.6,4.9,3.4),.065,12)
+ for j in range(96):
+  a=math.pi+j*math.pi/96;b=math.pi+(j+1)*math.pi/96
+  mat='fr-fabric' if j%8 in (0,1,2,3,4) else 'fr-stripe'
+  for k in range(6):
+   t=.08+.92*k/6;tt=.08+.92*(k+1)/6
+   q=[shade(a,t),shade(b,t),shade(b,tt),shade(a,tt)]
+   B.face(mat,q)
+ for j in range(13):
+  a=math.pi+j*math.pi/12
+  B.path('fr-metal',[shade(a,.08+.92*k/12) for k in range(13)],.022,6)
+ for t in [.08,.55,1]:B.path('fr-metal',[shade(math.pi+j*math.pi/48,t) for j in range(49)],.025,6)
+ # Freestanding patio heaters, outside the clear entrance and walking paths.
+ for u,v in [(33.3,1.65),(36.8,6.5)]:
+  F.lathe('fr-equipment',u,v,[(.16,.28),(.23,.32),(.85,.25),(.92,.13)],20)
+  F.lathe('fr-equipment',u,v,[(.92,.055),(2.12,.055),(2.14,.14),(2.38,.14)],16)
+  F.lathe('fr-equipment',u,v,[(2.38,.52),(2.43,.52),(2.53,.12)],28)
+  for j in range(12):
+   a=j*math.tau/12
+   F.tube('fr-metal',(u+.145*math.cos(a),2.15,v+.145*math.sin(a)),(u+.145*math.cos(a),2.37,v+.145*math.sin(a)),.009,5)
  # Photographed central round fire table, with surrounding orange lounge chairs.
  F.lathe('fr-metal',29.6,3.4,[(.16,1.05),(.82,1.05)],32)
  F.lathe('fr-counter',29.6,3.4,[(.82,1.15),(.92,1.15)],48);F.lathe('fr-charcoal',29.6,3.4,[(.92,.90),(.93,.90)],40)

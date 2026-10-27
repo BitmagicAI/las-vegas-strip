@@ -11,6 +11,7 @@ for part in ['exterior','interior']:
  y,x=np.mgrid[:512,:512];rng=np.random.default_rng(248)
  for key,m in E.materials.items():
   bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.87
+  if key in ('fr-fabric','fr-stripe'):m.use_backface_culling=False
   if key=='fr-glass':bs.inputs['Roughness'].default_value=.26;bs.inputs['Metallic'].default_value=.25
   if key=='fr-lamp':bs.inputs['Emission Color'].default_value=bs.inputs['Base Color'].default_value;bs.inputs['Emission Strength'].default_value=.08
   if not key.startswith('fr-stone') and key not in ['fr-stucco','fr-paving','fr-patio','fr-limestone','fr-woodfloor','fr-carpet','fr-walnut','fr-table']:continue

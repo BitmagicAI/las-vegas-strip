@@ -1,44 +1,47 @@
 {
-  "status": "planning-only-not-installed",
+  "status": "superseded-estimate-not-for-installation",
   "ownerIssue": 252,
   "mappedId": "way/319208749",
-  "scope": "A200 portion only",
-  "reference": "https://res.cloudinary.com/jll-global-cmg/image/upload/v1743116421/Prod/DealX/Doc/58702a66-e121-457d-aeb2-a1c079078b62/Paradise_Esplanade_Flyer_.pdf",
-  "basis": "Area reconciliation only. Lease area and mapped outer footprint need not use the same measurement convention. This polygon is an estimate and must not be presented as a surveyed boundary.",
+  "scope": "A200 private office exterior only",
+  "reference": "https://images1.showcase.com/d2/9cxPDV2gM04CRe4l8BUXdGD-j52xyAVQg6vrB7qHFt8/document.pdf",
+  "basis": "Colliers page 8 identifies office, not public dining. Previous total-lease-minus-main-mapped-area polygon is invalid as a tenancy boundary. Retained only as history; do not use for clipping.",
   "mainMappedAreaM2": 675.7947949999982,
   "listedTotalAreaM2": 825.62931648,
-  "candidateAreaM2": 149.83452148015508,
-  "candidateNegativeLocalUExtent": 5.659828538516194,
-  "candidatePolygonXZ": [
-    [
-      1915.052,
-      763.251
-    ],
-    [
-      1920.9133066401962,
-      762.594857329894
-    ],
-    [
-      1912.2531416149677,
-      737.9884449385462
-    ],
-    [
-      1906.455,
-      740.097
-    ],
-    [
-      1914.764,
-      762.171
-    ],
-    [
-      1915.052,
-      763.251
-    ]
-  ],
   "requiredBeforeInstallation": [
     "Compare facade division and roof seam to close reference; retain discrepancy if exact boundary unavailable.",
     "Clip only intersecting old triangles and matching collision, never delete full neighboring building.",
     "Preserve all other tenancies and use an ownership audit with retained geometry hashes.",
-    "Reconcile room connection and publicly visible annex facade before final review."
-  ]
+    "Establish office frontage and boundary; do not create an inferred public dining connection."
+  ],
+  "supersededAreaSubtractionEstimate": {
+    "candidateAreaM2": 149.83452148015508,
+    "candidateNegativeLocalUExtent": 5.659828538516194,
+    "candidatePolygonXZ": [
+      [
+        1915.052,
+        763.251
+      ],
+      [
+        1920.9133066401962,
+        762.594857329894
+      ],
+      [
+        1912.2531416149677,
+        737.9884449385462
+      ],
+      [
+        1906.455,
+        740.097
+      ],
+      [
+        1914.764,
+        762.171
+      ],
+      [
+        1915.052,
+        763.251
+      ]
+    ]
+  },
+  "listedOfficeAreaM2": 128.85651648
 }

@@ -12,9 +12,9 @@
     "date": "2026-10-27",
     "partialMappedScope": {
       "id": "way/319208749",
-      "tenant": "A200 only",
-      "status": "Claim scope recorded; polygon reconciliation pending, no geometry replaced",
-      "basis": "Landlord A100+A200=8887 sqft (~825.6 m\u00b2), main mapped footprint675.8 m\u00b2, difference~149.8 m\u00b2. Diagram is not a survey."
+      "tenant": "A200 office only",
+      "status": "Claimed partial office exterior; unmodified pending boundary evidence. No public dining connection.",
+      "basis": "Colliers lists office 1387 sqft (~128.86 m2). Lease area cannot be subtracted from mapped outer area to establish a surveyed boundary."
     }
   },
   "sources": [
@@ -77,22 +77,28 @@
       "url": "https://www.ferraroslasvegas.com/wp-content/uploads/2026/01/4480-Paradise-Rd-Ste-300-Web-Quality-009-09-Commercial-Space.webp",
       "accessDate": "2026-10-27",
       "observed": "Dining room with wide arched divisions, window blinds and wine cabinets beyond. Visually inspected."
+    },
+    {
+      "url": "https://images1.showcase.com/d2/9cxPDV2gM04CRe4l8BUXdGD-j52xyAVQg6vrB7qHFt8/document.pdf",
+      "accessDate": "2026-10-27",
+      "observed": "Colliers 2026 leasing brochure page 8 identifies Suite 100 as restaurant, approximately 7500 sqft, and Suite 200 as Ferraro office, approximately 1387 sqft. Supersedes earlier inference that A200 was dining."
     }
   ],
   "uncertainDimensions": [
     "Mapped main footprint676m2. Entrance and roof heights inferred from photographs; no surveyed vertical dimensions.",
-    "A200 annex boundary and public-room plan require reconciliation; do not modify neighboringway/319208749 without scoped ownership."
+    "A200 office boundary remains uncertain. Public dining stays inside the main footprint; no evidence supports a public connection to the office."
   ],
   "implemented": [
     "Original mapped main exterior15464triangles: stepped entry portal/tower, stone piers, striped awnings and curved patio facade.",
     "Furnished public terrace with pergola, low planting wall, round fire-table geometry and orange seating. Main public entrance now connects to the inferred bar/dining room; annex remains separate.",
     "Targeted replacement removed38owned visual and38matching collision triangles; adjacent retail building and roads retained.",
-    "Original public bar/dining study inside main footprint: L-shaped bar with bottle cabinets, curved-back chairs, dressed tables, wine banquette, arched room divisions and ceiling ring fixtures. 62525 total exterior/interior triangles; 2.6 MB optimized. Floor finish separated from supporting slab."
+    "Original public bar/dining study inside main footprint: L-shaped bar with bottle cabinets, curved-back chairs, dressed tables, wine banquette, arched room divisions and ceiling ring fixtures. 62525 total exterior/interior triangles; 2.6 MB optimized. Floor finish separated from supporting slab.",
+    "Reference-supported striped fan canopy, central mast and two patio heaters; estimated dimensions. 70761 combined source triangles, optimized exterior/interior 2.9 MB."
   ],
   "remaining": [
-    "A200 annex occupies part of neighboringway/319208749; establish exact tenancy boundary and scoped ownership before editing.",
-    "Public-room layout is inferred from photographs, not a surveyed floor plan. A200 and private/service rooms remain unmodeled. Further fine furnishings, architectural detail, exact materials and mirror reflections remain; no photorealistic completion claim.",
-    "Rear/service elevation is still a simple shell pending reference. Detailed landscaping, patio shade canopy, signature script lettering and material finish require refinement; not photorealistic completion."
+    "A200 office exterior occupies part of way/319208749; exact tenancy boundary remains unverified. No public interior extension is planned there.",
+    "Public-room layout is inferred from photographs, not a surveyed floor plan. Private office A200 and service rooms remain unmodeled. Further fine furnishings, architectural detail, exact materials and mirror reflections remain; no photorealistic completion claim.",
+    "Rear/service elevation is still a simple shell pending reference. Detailed landscaping, canopy proportions and hedge density, signature script lettering and material finish require refinement; not photorealistic completion."
   ],
   "evidence": [
     "build/city-exteriors/ferraros-before/results.json",
@@ -103,14 +109,16 @@
     "build/city-exteriors/ferraros-final/results.json",
     "build/city-exteriors/ferraros-public-final/results.json",
     "build/city-exteriors/ferraros-public-final-walk/results.json",
-    "tools/city-exteriors/ferraros-a200-plan.json"
+    "tools/city-exteriors/ferraros-a200-plan.json",
+    "build/city-exteriors/ferraros-shade-review/results.json",
+    "build/city-exteriors/ferraros-shade-walk/results.json"
   ],
   "validation": {
     "scopedRoutes": "116 support/capsule checks pass including interior and current city collision.",
     "runtimeWalk": "18 actual entrance/patio/bar/dining/return segments pass, including repeat after furnishing revision; ferraros resident.",
-    "installedViews": "Front/patio/rear and three neutral public entry/bar/dining images inspected. Corrected reversed bottle cabinets and exaggerated wood grain. Fine finish and precise room plan remain approximate.",
+    "installedViews": "Front/patio/rear and three neutral public entry/bar/dining images inspected. Corrected reversed bottle cabinets and exaggerated wood grain. Fine finish and precise room plan remain approximate. Shade pass: all three exterior views inspected; fabric/heaters visible without altering public floor routes. Rear remains plain, hedge sparse and shade proportions estimated.",
     "checks": "Typecheck, record and public checks pass; one pre-existing inventory email warning.",
-    "performance": "Independent idle-build sample, 960x540 ultra, 180 frames/view: front 16.6/18.2, patio 16.6/18.7, rear 16.6/18.7 ms median/p95; near the 16.7\u201316.8/18.0\u201318.5 baseline. Earlier noisy sample retained in evidence.",
+    "performance": "After shade refinement, independent 960x540 ultra 180-frame samples: front16.6/17.7,patio16.6/18.4,rear16.5/18.6 ms median/p95. Prior exterior16.6/18.2,16.6/18.7,16.6/18.7.",
     "packaging": "1371 runtime assets present,0 missing; fresh670-batch city bake17.57MB after floor separation.",
     "interiorPerformance": "960x540 ultra, 180 frames/view: entry16.6/18.8,bar16.6/19.0,dining16.7/18.8ms median/p95. Exterior baseline16.7\u201316.8/18.0\u201318.5; indoor locations had no pre-existing room."
   }
