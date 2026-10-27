@@ -31,7 +31,7 @@
     {
       "url": "https://cache.marriott.com/content/dam/marriott-renditions/LASTW/lastw-market-8528-hor-clsc.jpg",
       "accessDate": "2026-10-27",
-      "observed": "Official market gallery modal visually inspected: integrated pale wood cabinet, upper open snack shelves, glazed upper center cabinet, twin lower refrigerator/freezer doors and full-height stainless drink refrigerator at right with five stocked shelves and vented plinth. Current single small market cabinet is undersized; replacement remains next public-room step."
+      "observed": "Official market gallery modal visually inspected: integrated pale wood cabinet, upper open snack shelves, glazed upper center cabinet, twin lower refrigerator/freezer doors and full-height stainless drink refrigerator at right with five stocked shelves and vented plinth. Integrated cabinet replaced from reference; exact dimensions and placement remain inferred."
     }
   ],
   "uncertainDimensions": [
@@ -48,11 +48,12 @@
     "2026-10-27 follow-up: fitted north lettering within roof backing and subdued bright cladding seams; installed arrival/street/west views inspected.",
     "Street facade central projection changed to horizontally jointed charcoal, horizontal white band restored, crown fascia thinned and dark backing added. Original procedural curtain glazing added. Source review completed; installed street/arrival/west views inspected.",
     "West-end ochre/white facade, original curved pool basin and coping, entry treads/handrails, display pool lift, gray loungers/umbrellas, stone wall, feather-frond palms and colliding open-gate safety enclosure. Continuous paved route to hotel arrival. Source and all three installed daylight views reviewed. All 34 actual walking segments passed, including pool gate and return path.",
-    "Public-room refinement: shallow ceiling coffers, vents/recessed fixture geometry, base trim, blue lounge seating and coffee table, blue bench legs, timber column cap, business workstation/keyboard/chair and breakfast cabinet/cups. Official lobby8513 re-inspected; source lounge/workstation views reviewed. All six installed daylight public-room views inspected; all 34 actual walking segments rechecked successfully."
+    "Public-room refinement: shallow ceiling coffers, vents/recessed fixture geometry, base trim, blue lounge seating and coffee table, blue bench legs, timber column cap, business workstation/keyboard/chair and breakfast cabinet/cups. Official lobby8513 re-inspected; source lounge/workstation views reviewed. All six installed daylight public-room views inspected; all 34 actual walking segments rechecked successfully.",
+    "Replaced undersized market with integrated wood snack shelves, twin lower chilled cabinets and full-height beverage refrigerator with stocked original generic packages, bottle profiles, door frames/handles and vented plinth; official market8528 reference. Source close-up and seven installed public views inspected."
   ],
   "remaining": [
     "Street central projection, horizontal band and crown backing revised from official7441; upper glazing now has original curtain detail. Roof silhouette, bay proportions and exact typography remain approximate. Pool photo8532 confirms west end should have ochre/white panels; west ochre/white cladding now corrected. Fine horizontal seam aliasing remains at middle distance.",
-    "Public lobby/breakfast layout remains inferred, not a verified plan. Ceiling, workstation, lounge seating and trim refined; upholstery profiles, patterned rugs, wall art, detailed market goods and closer proportions remain approximate. Installed visual verification passed; room scale, furniture shapes and finish detail still fall short of the reference.",
+    "Public lobby/breakfast layout remains inferred, not a verified plan. Ceiling, workstation, lounge seating and trim refined; upholstery profiles, patterned rugs, wall art, detailed market goods and closer proportions remain approximate. Installed visual verification passed; room scale, furniture shapes and finish detail still fall short of the reference. Market proportions are estimated; transparent panes, package shapes and finer appliance detail remain approximate.",
     "Pool and terrace built from official photo8532 and satellite alignment; dimensions estimated. Basin depth/swimming not implemented (existing ground below water preserved); pool lift is fixed display geometry. Planting, fuller palm crowns, furniture and waterline tile details need refinement. Installed walking/visual verification passed. Water looks excessively glossy at low angles; the shared water shader was not changed in this building pass.",
     "Guest rooms/private circulation not implemented.",
     "Performance variance unresolved: final arrival18.2msmedian37.6p95 and breakfast19.4/33.9; street/west/lobby/reception about16.7median. Profile before claiming locked60fps."
@@ -76,17 +77,20 @@
     "build/city-exteriors/towneplace-public-study/lounge.png",
     "build/city-exteriors/towneplace-public-study/workstation.png",
     "build/city-exteriors/towneplace-public-details",
-    "build/city-exteriors/towneplace-public-walk/results.json"
+    "build/city-exteriors/towneplace-public-walk/results.json",
+    "build/city-exteriors/towneplace-market-study/market.png",
+    "build/city-exteriors/towneplace-market-installed",
+    "build/city-exteriors/towneplace-market-walk/results.json"
   ],
   "verification": {
-    "sourceTriangles": 49509,
-    "scopedChecks": 399,
-    "actualWalkingSegments": 34,
+    "sourceTriangles": 54169,
+    "scopedChecks": 433,
+    "actualWalkingSegments": 40,
     "retainedGeometryExact": true,
     "assetsPresent": 1407,
     "assetsMissing": 0,
     "bakeBatches": 683,
-    "visualReview": "Actual installed arrival, street, west, close entrance, lobby, reception and breakfast views inspected. Roof gaps closed, street timber corrected, sign contrast improved, accessible counter capped and wood grain toned down. Rooms remain sparsely furnished and facade/site still approximate. Follow-up street facade bands, charcoal central projection, thinner fascia and original curtain glazing inspected in source render and all3installed exterior views. Fine horizontal seam aliasing and approximate roof profiles remain; west end incorrect white cladding confirmed against officialpoolphoto. West cladding corrected; installed pool, overview and matching west views inspected. No visible paving overlap; safety gate accessible. Palm crowns sparse and pool water excessively glossy, recorded for refinement. Six installed public-detail views inspected: ceiling/vent geometry, base trim, blue lounge seats, workstation and breakfast details visible; no observed overlaps. Still sparse and stylized relative to official photo; no photorealism claim."
+    "visualReview": "Actual installed arrival, street, west, close entrance, lobby, reception and breakfast views inspected. Roof gaps closed, street timber corrected, sign contrast improved, accessible counter capped and wood grain toned down. Rooms remain sparsely furnished and facade/site still approximate. Follow-up street facade bands, charcoal central projection, thinner fascia and original curtain glazing inspected in source render and all3installed exterior views. Fine horizontal seam aliasing and approximate roof profiles remain; west end incorrect white cladding confirmed against officialpoolphoto. West cladding corrected; installed pool, overview and matching west views inspected. No visible paving overlap; safety gate accessible. Palm crowns sparse and pool water excessively glossy, recorded for refinement. Six installed public-detail views inspected: ceiling/vent geometry, base trim, blue lounge seats, workstation and breakfast details visible; no observed overlaps. Still sparse and stylized relative to official photo; no photorealism claim. Market8528 cabinet replacement and all seven installed public views inspected; all40 actual walking segments including market access passed. Cabinet panes and detailed package artwork remain absent."
   },
   "performance": {
     "baseline": "build/city-exteriors/towneplace-stadium-baseline/results.json",
@@ -97,6 +101,7 @@
     "latestExterior": "build/city-exteriors/towneplace-stadium-facade-bands/results.json: same960x540ultra neutraldaylight,180frames/view. Arrival16.7/18.7,street16.6/18.4,west16.6/19.0ms median/p95. This run faster than priorvariablecaptures; not proof that underlyingvariance resolved.",
     "snapshotRepeat": "build/city-exteriors/towneplace-stadium-profile-snapshots/results.json: cloned streaming snapshots,3x600frames/view. Arrivalmedian18.6/16.7/18.2,p9520.9/18.7/25.6; breakfast17.3/16.9/18.8,p9528.0/22.2/23.9. Pipelines139unchanged; streamingbusyfalse and historyidentical before/after eachsample. Occasional slowframes persist without trackedloading or newpipelinecreation during samples; CPU/GPU cause unproven.",
     "pool": "960x540 ultra neutral daylight, 180 frames/view after 300 settle frames: pool18.1/23.0,overview19.1/24.4,matching west16.7/18.4ms median/p95. New pool angles have no matching pre-build baseline; prior west16.6/19.0. No locked60fps claim.",
-    "latestPublic": "Six installed daylight views, 960x540 ultra,180frames each: lounge16.6/19.8,workstation16.6/18.6,entry16.7/19.0,lobby16.5/18.9,reception16.6/18.8,breakfast16.6/19.5ms median/p95. Prior matched breakfast19.4/33.9 but earlier repeat variance remains unresolved; not proof of a systematic improvement."
+    "latestPublic": "Six installed daylight views, 960x540 ultra,180frames each: lounge16.6/19.8,workstation16.6/18.6,entry16.7/19.0,lobby16.5/18.9,reception16.6/18.8,breakfast16.6/19.5ms median/p95. Prior matched breakfast19.4/33.9 but earlier repeat variance remains unresolved; not proof of a systematic improvement.",
+    "market": "Seven installed public views,960x540ultra,180frames each: market16.6/18.3,lounge16.5/18.8,workstation16.6/18.5,entry16.8/18.6,lobby16.6/19.0,reception16.7/18.8,breakfast16.7/19.6ms median/p95. Six matching angles remain near prior public-detail run; no new market baseline. Older variance remains unproven."
   }
 }

@@ -93,12 +93,8 @@ def build(B):
  for x in [22.4,24.3]:F.box('ts-screen',(x,1.65,9.9),(.60,.38,.05))
  F.box('ts-wood',(23.3,1.84,7.1),(6.0,3.2,.1))
  for x,t in [(21.8,'Stay'),(23.3,'Work'),(24.8,'Play')]:F.box('ts-red-paint',(x,2.5,7.2),(.9,.65,.06));F.text(t,(x,2.5,7.25),.19,'ts-letter',back=True)
- # Market shelves and glazed refrigerator next to reception.
- F.box('ts-frame-paint',(20.55,1.35,9.0),(.8,2.2,1.1),True)
- for yy in [.5,.95,1.4,1.85]:
-  F.box('ts-counter',(20.65,yy,9.0),(.7,.06,.95))
-  for z in [8.7,9,9.3]:F.box('ts-market-paint',(20.8,yy+.16,z),(.22,.26,.15))
- F.box('ts-glass',(21.01,1.35,9.0),(.025,2.05,.96))
+ from towneplace_market import build_market
+ build_market(B,F)
  # TV column separates dining from arrival; preserve clear route to reception.
  F.box('ts-wood',(33.4,1.85,10),(1.4,3.22,.75),True);F.box('ts-screen',(33.4,2.1,10.4),(1.15,.70,.035))
  F.box('ts-blue',(33.4,.65,11.0),(2.0,.18,.65),True)
@@ -117,6 +113,7 @@ def build(B):
  add_public_details(B,F)
  for x in [27,37]:F.light(x,3.15,13,power=23,range=14)
  routes=[dict(name='Public arrival to reception',points=[F.p(x,.24,z) for x,z in [(31.27,27),(31.27,20),(31.27,14),(27,12),(23.5,12)]]),dict(name='Dining circulation',points=[F.p(x,.24,z) for x,z in [(31.27,16),(34.5,16),(35.4,13),(39.1,13),(42.7,13),(42.7,16.8)]])]
+ routes.append(dict(name="Public market approach",points=[F.p(x,.24,z) for x,z in [(27,12),(27,8.2),(23,8.2),(22,8.2)]]))
  routes.append(pool_route)
  return dict(key=KEY,name='TownePlace Suites Stadium District',center=[-818.6,0,1747.1],bounds=[-876,1733,-778,1766],structural=True,exteriorOnly=False,portals=doors,zones=[dict(origin=F.p(20,.24,7),yaw=0,width=24,depth=15.3,height=3.24)],lights=B.lights,routes=routes,hotelSources=[])
 if __name__=='__main__':
