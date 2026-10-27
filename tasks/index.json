@@ -12849,16 +12849,17 @@
    "id": "ext-home2-stadium",
    "title": "Refine the exterior of Home2 Suites Las Vegas Stadium District",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
     "Seven final installed views inspected: north sign masking corrected; furnishings remain simplified, floor texture visibly streaked, glazing opaque. Further material refinement required.",
-    "Pool terrace, planting, arrival landscaping and finer facade/material refinement remain pending.",
+    "Planting, arrival landscaping and finer facade/material refinement remain pending.",
     "Glass remains opaque and public layout inferred; guest rooms are not built.",
     "Public rooms remain sparse and stylized; cabinetry/appliance dimensions and branded details are approximate.",
-    "Add pool terrace from official pool9786307 and StreetView: bounded northeast courtyard, curved basin, tile waterfall wall, pergola/fence, lift, seating and reachable gate. Do not alter separate garage or shared arrival road."
+    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Patio grills/firepit and broader site planting remain to survey and build.",
+    "March2020 north StreetView reinspection shows broad dark fence slats, tall stone piers and a continuous top beam, plus folded red umbrellas and dense low planting. Current thin-picket fence/pergola/seating is simplified; refine these against that view."
    ],
    "record": "tools/resort-blocks/home2-stadium.json",
    "buildings": [],
@@ -12874,6 +12875,7 @@
      "tools/strip-landmarks/export_home2_stadium.py",
      "tools/strip-landmarks/test-home2-stadium.mjs",
      "tools/city-exteriors/install-home2-stadium.py",
+     "tools/strip-landmarks/home2_pool.py",
      "tools/strip-landmarks/review_home2_stadium.py",
      "tools/strip-landmarks/home2_stadium.py"
     ]

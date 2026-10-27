@@ -20,6 +20,13 @@ for(const route of meta.routes)for(let k=1;k<route.points.length;k++){
   if(hit||!floor)failures.push({x,y,z,blocked:!!hit,floor:!!floor});
  }
 }
+// Perimeter must block walking while the intentionally open east gate remains clear.
+const yaw=-Math.atan2(30.624,25.216),co=Math.cos(yaw),si=Math.sin(yaw);
+for(const [lx,lz,blocked] of [[1,-5,true],[10,-14,true],[21,-8,true],[21,-3,false],[19.65,-7,true],[18.9,-11.8,true]]){
+ const x=-824.745+co*lx+si*lz,z=1779.52-si*lx+co*lz;checks++;
+ const hit=world.intersectionWithShape({x,y:1.34,z},{x:0,y:0,z:0,w:1},new RAPIER.Capsule(.65,.29));
+ if(!!hit!==blocked)failures.push({x,z,expectedBlocked:blocked,blocked:!!hit});
+}
 world.free();const result={checks,failures,city:true};
 fs.writeFileSync('build/strip-landmarks/home2-stadium-route-audit.json',JSON.stringify(result,null,2));
 console.log(result);assert.equal(failures.length,0);

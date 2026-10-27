@@ -49,6 +49,21 @@
       "url": "https://www.hilton.com/im/en/LASTAHT/9786133/lastaht-inspired-table-1-v2.jpg",
       "accessDate": "2026-10-27",
       "observed": "Breakfast photo inspected: blond wood tables/chairs, lower drawer cabinetry, plate cubbies, microwaves, cereal dispensers and waffle irons. These elements are represented with original simplified geometry; exact dimensions remain inferred."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1002508,-115.1815068,87m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "North courtyard satellite inspected. Pool centre map-picked approximately36.099977,-115.182033, converting to local(11.11,-6.96). Pool is between Home2 and separate garage, south of shared drive. Imagery date not shown; source copyright2026 is not capture date."
+    },
+    {
+      "url": "https://www.hilton.com/im/en/LASTAHT/9786289/lastaht-patio-1-final.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Official gallery9 inspected: twin stainless grills in stone counter, yellow chairs and square tables, tall stone piers/dark vertical slat screen, pool gate and planting path beyond. Not yet built."
+    },
+    {
+      "url": "https://www.hilton.com/im/en/LASTAHT/9786295/lastaht-patio-2-v2.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Official gallery8 inspected: circular firepit table, dark wicker high-backed seating with orange/green striped cushions, planted edge and bollard lamps. Location relative to footprint still requires survey; not built."
     }
   ],
   "uncertainDimensions": [
@@ -56,18 +71,21 @@
     "Public room plan inferred from photographs, not a verified floorplan.",
     "Pool/patio position and bounded site scope must be established before site edits.",
     "Upper floors estimated3.08m from5storey photos;roof17.55m,crown19.43m. Not surveyed height.",
-    "Public room at southeast entrance:21.46mx16m envelope clipped to stepped footprint; inferred arrangement, not verified floorplan."
+    "Public room at southeast entrance:21.46mx16m envelope clipped to stepped footprint; inferred arrangement, not verified floorplan.",
+    "Pool court estimate: local x1..21,z-14..-.5; pool centre(11.1,-7), nominal13.2x8.3m curved basin. Ground photo informs fixtures, satellite informs bounds. Shallow visual basin in current flat datum; not a surveyed/swimmable depth. Garage begins x22.2 and is not edited."
   ],
   "implemented": [
     "Original stepped-footprint five-storey exterior, south entrance canopy and opening, framed transom glazing, end sign volumes, roof services.",
-    "Inferred public reception, market, banquette lounge, business desks and breakfast room; cabinetry, appliances and furniture refined against official photographs."
+    "Inferred public reception, market, banquette lounge, business desks and breakfast room; cabinetry, appliances and furniture refined against official photographs.",
+    "Bounded northeast pool court with curved basin, coping, blue-tile wall, planters, accessibility lift, rails, fence with open gate, pergola and seating; three installed views inspected."
   ],
   "remaining": [
     "Seven final installed views inspected: north sign masking corrected; furnishings remain simplified, floor texture visibly streaked, glazing opaque. Further material refinement required.",
-    "Pool terrace, planting, arrival landscaping and finer facade/material refinement remain pending.",
+    "Planting, arrival landscaping and finer facade/material refinement remain pending.",
     "Glass remains opaque and public layout inferred; guest rooms are not built.",
     "Public rooms remain sparse and stylized; cabinetry/appliance dimensions and branded details are approximate.",
-    "Add pool terrace from official pool9786307 and StreetView: bounded northeast courtyard, curved basin, tile waterfall wall, pergola/fence, lift, seating and reachable gate. Do not alter separate garage or shared arrival road."
+    "Pool wall has no flowing waterfall yet; basin depth, furniture, fence and terrace dimensions remain approximate. Patio grills/firepit and broader site planting remain to survey and build.",
+    "March2020 north StreetView reinspection shows broad dark fence slats, tall stone piers and a continuous top beam, plus folded red umbrellas and dense low planting. Current thin-picket fence/pergola/seating is simplified; refine these against that view."
   ],
   "evidence": [
     "build/city-exteriors/home2-stadium-baseline/home2-west.png",
@@ -80,7 +98,11 @@
     "build/strip-landmarks/home2-stadium-route-audit.json",
     "build/city-exteriors/home2-stadium-ownership-audit.json",
     "build/city-exteriors/home2-refined-exterior/",
-    "build/city-exteriors/home2-refined-public/"
+    "build/city-exteriors/home2-refined-public/",
+    "build/city-exteriors/home2-pool-installed/",
+    "build/city-exteriors/home2-pool-scope.json",
+    "build/city-exteriors/home2-pool-walk/results.json",
+    "build/city-exteriors/home2-pool-final-walk/results.json"
   ],
   "performance": {
     "baseline": "build/city-exteriors/home2-stadium-baseline/results.json",
@@ -89,11 +111,27 @@
     "initialPublic": "build/city-exteriors/home2-installed-public/results.json",
     "after": "build/city-exteriors/home2-refined-exterior/results.json",
     "publicAfter": "build/city-exteriors/home2-refined-public/results.json",
-    "comparison": "Final exterior west/north/east median 16.9/16.6/16.7ms; p95 24.5/17.9/17.8ms. Baseline medians16.6ms,p95 17.9/18.1/18.1ms. West p95 regressed; no blanket60fps claim. Public median16.6\u201316.7,p95 17.3\u201318.1ms; no comparable interior baseline."
+    "comparison": "Final exterior west/north/east median 16.9/16.6/16.7ms; p95 24.5/17.9/17.8ms. Baseline medians16.6ms,p95 17.9/18.1/18.1ms. West p95 regressed; no blanket60fps claim. Public median16.6\u201316.7,p95 17.3\u201318.1ms; no comparable interior baseline.",
+    "poolAfter": "build/city-exteriors/home2-pool-installed/results.json",
+    "poolNote": "Quiet repeat: overhead16.7median18.6p95,deck18.5median29.3p95,gate16.9median21.4p95ms. Deck is about54fps median and not meeting60fps target; variance remains. Visuals unchanged after subsequent furniture-collision/route correction. No clean pre-pool baseline exists.",
+    "poolRepeat": "build/city-exteriors/home2-pool-performance-repeat/results.json"
   },
   "nextPass": {
     "priority": "Finish current Home2 site before claiming another building",
-    "poolStudy": "Frame origin(-824.745,1779.52),yaw=-atan2(30.624,25.216). Pool lies toward northwest on negative-local-z facade. Establish exact bounded deck against satellite before writing geometry.",
-    "publicStudy": "Official public plan is not available; retain inferred layout label. Improve room finishes and lighting after geometry."
+    "poolStudy": "Pool court first pass installed; remaining flowing wall, exact depth, landscaping and patio grills/firepit. Keep these distinct from completed route verification.",
+    "publicStudy": "Official public plan is not available; retain inferred layout label. Improve room finishes and lighting after geometry.",
+    "patioStudy": "Use gallery8/9 URLs: twin grills, stone counter and slat screen; yellow chairs/square tables; round firepit and striped wicker seating. Establish bounded placement from map/StreetView first. Preserve pool routes and shared driveway."
+  },
+  "validation": {
+    "scopedChecks": 568,
+    "actualWalkingSegments": 50,
+    "actualWalkingRoutes": 5,
+    "walkPassed": true,
+    "runtimeAssetsPresent": 1411,
+    "missingAssets": 0,
+    "cityBakeBatches": 684,
+    "sourceTriangles": 41298,
+    "installedViewsInspected": 3,
+    "walkNote": "Final50segments/5routes repeated after furniture collision; all pass."
   }
 }

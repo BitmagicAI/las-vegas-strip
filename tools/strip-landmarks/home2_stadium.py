@@ -81,6 +81,8 @@ def build(B):
  for x in [12,24,38,51]:
   F.box('h2-metal',(x,18.0,10),(2.1,.9,1.6));F.box('h2-vent',(x,18.47,10),(1.8,.06,1.35))
   for z in np.arange(9.4,10.65,.16):F.box('h2-roof-metal',(x,18.51,float(z)),(1.8,.025,.045))
+ from home2_pool import add_pool
+ pool_routes=add_pool(B,F)
  room=F.poly([(46,3),(67.46,3),(67.46,13.25),(61.31,13.25),(61.31,19),(46,19)])
  B.planar('h2-floor',room,.24,True)
  B.property=KEY+'-interior';B.source='public/'+KEY
@@ -131,6 +133,7 @@ def build(B):
  add_details(B,F)
  for x,z in [(51,10),(59,9),(54,16)]:F.light(x,3.05,z,power=22,range=12)
  routes=[dict(name='Arrival to reception',points=[F.p(x,.24,z) for x,z in [(70.5,7.8),(65,7.8),(60,7.8),(57,7.8)]]),dict(name='Public lounge and breakfast',points=[F.p(x,.24,z) for x,z in [(57,7.8),(52,7.8),(52,11),(52,16),(59.5,16),(59.5,10),(57,10)]]),dict(name='Business desk approach',points=[F.p(x,.24,z) for x,z in [(57,7.8),(53,7.8),(53,5.8),(49,5.8)]])]
- return dict(key=KEY,name='Home2 Suites Stadium District',center=[-813.7,0,1812.1],bounds=[-842,1779,-779,1845],structural=True,exteriorOnly=False,portals=doors,zones=[dict(origin=F.p(46,.24,3),yaw=YAW,width=21.46,depth=16,height=3.13)],lights=B.lights,routes=routes,hotelSources=[])
+ routes.extend(pool_routes)
+ return dict(key=KEY,name='Home2 Suites Stadium District',center=[-813.7,0,1812.1],bounds=[-842,1769,-779,1845],structural=True,exteriorOnly=False,portals=doors,zones=[dict(origin=F.p(46,.24,3),yaw=YAW,width=21.46,depth=16,height=3.13)],lights=B.lights,routes=routes,hotelSources=[])
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

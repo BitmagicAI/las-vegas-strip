@@ -5,7 +5,7 @@ import numpy as np
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
 E.colors.update({'h2-white-stucco': 'dadbd4', 'h2-ochre-paint': 'a17b4e', 'h2-charcoal-paint': '555653', 'h2-gray-paint': '676966', 'h2-lime-paint': 'a7bd4e', 'h2-aqua-paint': 'a7c7c5', 'h2-roof': 'b9bbb4', 'h2-roof-metal': '7d9293', 'h2-frame-paint': 'c3d0cb', 'h2-metal': '707b7c', 'h2-panel-joint': '777972', 'h2-glass': '4f888c', 'h2-transom-glass': '314c50', 'h2-sill-paint': 'c3c8bc', 'h2-letter': 'f1eee4', 'h2-stone': 'aaa9a2', 'h2-paving': 'aaa99e', 'h2-floor': 'aca69a', 'h2-interior': 'd3cec2', 'h2-ceiling': 'e0ded5', 'h2-counter': 'd6d4c8', 'h2-screen': '20292d', 'h2-wood': 'aa8c60', 'h2-seat-fabric': '79756a', 'h2-green-fabric': '7e924e', 'h2-yellow-fabric': 'b5a14a', 'h2-blue-fabric': '527e87', 'h2-gold': 'b29b58', 'h2-soffit': 'bbb39e', 'h2-vent': '535a57'})
-E.colors.update({'h2-chair-wood':'bda270'})
+E.colors.update({'h2-chair-wood':'bda270','h2-pool-tile':'466e87','h2_pool':'529baf','h2-grout':'a8bfc2','h2-lift-blue':'4773a4','h2-soil':'484035','h2-leaf':'6d8249'})
 for part in ([sys.argv[sys.argv.index('--part')+1]] if '--part' in sys.argv else ['exterior','interior']):
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('home2-stadium-'+part)
  rng=np.random.default_rng(278);n=512;yy,xx=np.mgrid[:n,:n]
