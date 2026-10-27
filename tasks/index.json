@@ -12729,9 +12729,10 @@
    "size": "S",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
    "items": [
-    "Reference-supported exterior/canopy, targeted replacement, optimized assets/current bake, scoped and actual walking checks, installed visual review and matching performance pending."
+    "Exact typography, current branding, surface texture and weathering, concealed service elevations and landscaping remain approximate.",
+    "Shop interior unverified and remains closed; not photorealistically complete."
    ],
    "record": "tools/resort-blocks/standard-tropicana.json",
    "buildings": [],
@@ -12743,7 +12744,12 @@
     "writes": [
      "tools/resort-blocks/standard-tropicana.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_standard_tropicana.py",
+     "tools/city-exteriors/install-standard-tropicana.py",
+     "tools/strip-landmarks/test-standard-tropicana.mjs",
+     "tools/strip-landmarks/standard_tropicana.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
