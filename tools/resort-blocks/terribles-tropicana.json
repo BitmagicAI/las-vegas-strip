@@ -11,13 +11,20 @@
     "issue": 264,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/264",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/265"
   },
   "sources": [
     {
       "url": "https://www.google.com/maps/place/Terrible+Herbst+Convenience+Store/@36.10053,-115.18635,174m/data=!3m1!1e3!4m6!3m5!1s0x80c8c42b281796d3:0x123ebd47cacd6682!8m2!3d36.1003828!4d-115.186054!16s%2Fg%2F1tr9nptj",
       "accessDate": "2026-10-27",
-      "observed": "Aerial, February2026AkimRamirez exterior/cooler/canopy photographs, September2026IRAMVARGAS snackcounter and May2024Bo entry photographs visually inspected. Peach store walls and brown plinth, redletteredfascia withbluewhiteborders, glass entry. Fuel canopy has blue fascia, red tiled roof and raised arched pavilion. Cooler bank, tiledfloor, fluorescentceiling, stockedracks andLcounter visible."
+      "observed": "Aerial, February2026AkimRamirez exterior/cooler/canopy photographs, September2026IRAMVARGAS snackcounter and May2024Bo entry photographs visually inspected. Peach store walls and brown plinth, redletteredfascia withbluewhiteborders, glass entry. Fuel canopy has blue fascia, red tiled roof and raised arched pavilion. Cooler bank, tiledfloor, fluorescentceiling, stockedracks andLcounter visible.",
+      "photoIds": [
+        "CIABIhBm_m4CuHY4q0LG3_tVAht_ (February2026store exterior)",
+        "CIABIhAq7DpBiIr2JSq2vl5mj9io (February2026cooler aisle)",
+        "CIABIhBzEKcL0v5Ayv3tyMnBeetI (September2026snack counter)",
+        "CIHM0ogKEICAgIDT687I0gE (May2024entry)"
+      ]
     },
     {
       "url": "https://tax.nv.gov/wp-content/uploads/2025/02/Retail-2.12.25.pdf",
@@ -27,12 +34,37 @@
   ],
   "uncertainDimensions": [
     "Mapped store267m2, canopies151m2and162m2. Heights/baydivision/pump spacing approximate.",
-    "Public retail fixture arrangement inferred from partial photographs; no surveyed plan or private room layout."
+    "Public retail fixture arrangement inferred from partial photographs; no surveyed plan or private room layout.",
+    "Coolers placed east, Lcounter southwest, low racks central, checkout north: inferred public arrangement, not a measured plan. Private rear remains inaccessible."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original store exterior with peach walls, brown plinth, red fascia, framed north entry, ice cabinet and roof equipment; two mapped fuel canopies with tiled roofs, arched pavilion, pumps, hoses, islands and protective posts.",
+    "Reference-supported public shop with cooler bank, shaped bottles/cans, stocked racks, tiled floor, ceiling lighting, coffee urns, pastry case and roller grill. Fixture arrangement remains inferred.",
+    "Removed only 98 owned visual and 98 matching collision faces; retained geometry equality verified. Added supported slabs inside the two canopy footprints after walking exposed missing baseline support."
+  ],
   "remaining": [
-    "Build original store/canopy exteriors and reference-supported public shop interior.",
-    "Inspect installed daylight exterior/interior, walk routes, scopedcollision/support checks, matchingperformance, optimize/package andcurrentbake."
+    "Exact bay divisions, dimensions, pump branding and fine facade/material fidelity remain approximate; not photorealistic.",
+    "Public fixture arrangement inferred from partial photos; precise stock, advertisements and private rear rooms are not reconstructed.",
+    "Full surrounding site paving and landscaping refinement remains outside this three-footprint pass."
   ],
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/terribles-tropicana-final",
+    "build/city-exteriors/terribles-tropicana-walk-final/results.json",
+    "build/strip-landmarks/terribles-tropicana-route-audit.json",
+    "build/city-exteriors/terribles-tropicana-packaged"
+  ],
+  "verification": {
+    "sourceTriangles": 33848,
+    "scopedChecks": 270,
+    "actualWalkingSegments": 26,
+    "visualReview": "Final store, canopies, cooler aisle and snack counter installed daylight screenshots inspected. Initial crude stock/appliance shapes corrected before final review.",
+    "assetsPresent": 1387,
+    "assetsMissing": 0,
+    "bakeBatches": 676
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/terribles-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/terribles-tropicana-packaged/results.json",
+    "conditions": "960x540 ultra, neutral daylight, same four cameras, 180 frames. Packaged final 16.6\u201316.7 ms median,18.7\u201318.8 ms p95; baseline16.6\u201316.7/18.5\u201318.8ms. Interior baseline was closed placeholder, not equivalent content."
+  }
 }

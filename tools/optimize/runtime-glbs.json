@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T12:39:08.584Z",
- "totalBytes": 3346696216,
- "count": 660,
+ "generated": "2026-10-27T13:03:05.682Z",
+ "totalBytes": 3352562816,
+ "count": 662,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 347200844,
+   "bytes": 347195360,
    "preset": "level",
    "overrides": []
   },
@@ -2106,6 +2106,24 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
    "bytes": 2784160,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/terribles-tropicana-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 2965468,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/terribles-tropicana-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 2906616,
    "preset": "level",
    "overrides": []
   },

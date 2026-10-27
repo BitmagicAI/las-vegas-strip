@@ -12535,13 +12535,14 @@
    "id": "ext-terribles-tropicana",
    "title": "Refine the exterior of Terrible Herbst / Chevron West Tropicana",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Build original store/canopy exteriors and reference-supported public shop interior.",
-    "Inspect installed daylight exterior/interior, walk routes, scopedcollision/support checks, matchingperformance, optimize/package andcurrentbake."
+    "Exact bay divisions, dimensions, pump branding and fine facade/material fidelity remain approximate; not photorealistic.",
+    "Public fixture arrangement inferred from partial photos; precise stock, advertisements and private rear rooms are not reconstructed.",
+    "Full surrounding site paving and landscaping refinement remains outside this three-footprint pass."
    ],
    "record": "tools/resort-blocks/terribles-tropicana.json",
    "buildings": [],
@@ -12553,7 +12554,12 @@
     "writes": [
      "tools/resort-blocks/terribles-tropicana.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_terribles_tropicana.py",
+     "tools/strip-landmarks/test-terribles-tropicana.mjs",
+     "tools/city-exteriors/install-terribles-tropicana.py",
+     "tools/strip-landmarks/terribles_tropicana.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
