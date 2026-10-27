@@ -1338,7 +1338,13 @@
         "date": "2026-10-27",
         "reason": "Installed exterior/public rooms/courtyard inspected and routes checked. Retain recorded visual and performance discrepancies while continuing user-requested city-wide reconstruction."
       }
+    },
+    {
+      "id": "towneplace-stadium",
+      "name": "TownePlace Suites Las Vegas Stadium District",
+      "status": "active",
+      "record": "towneplace-stadium.json"
     }
   ],
-  "active": null
+  "active": "towneplace-stadium"
 }

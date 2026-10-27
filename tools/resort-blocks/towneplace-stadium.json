@@ -1,0 +1,39 @@
+{
+  "id": "towneplace-stadium",
+  "name": "TownePlace Suites Las Vegas Stadium District",
+  "status": "active",
+  "mappedIds": [
+    "way/431504486"
+  ],
+  "claim": {
+    "issue": 278,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/278",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.marriott.com/en-us/hotels/lastw-towneplace-suites-las-vegas-stadium-district/photos/",
+      "observed": "Official exterior8519 and7441 fullsize images inspected: five storeys, arrival elevation ochre/white/charcoal with horizontal timber stair strip and steel canopy/pergola; street elevation white/charcoal vertical cladding, shallow sloped overhanging roof caps. Lobby8513 and reception8521 show pale wood floor, curved lower accessible reception, wood TV column, red dining chairs and market.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/search/?api=1&query=36.1000720,-115.1819420&hl=en&gl=US",
+      "observed": "Satellite inspected: long east-west hotel south of Tropicana, arrival on south side, pool at west end. Home2 is separate southeast neighbor.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint fixes perimeter. Five floors visible; height estimated pending surveyed elevation. Source6m height is a generic fallback, not used as reference.",
+    "Public lobby/breakfast layout inferred from official photos, not a verified floorplan.",
+    "Outdoor pool parcel ownership and exact bounds unverified; do not alter neighboring parcels."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build exterior and photo-supported public rooms.",
+    "Verify installed visuals, collision, walking, matching performance and packaging.",
+    "Resolve pool/landscape scope before adding off-footprint structures."
+  ],
+  "evidence": [],
+  "verification": {}
+}
