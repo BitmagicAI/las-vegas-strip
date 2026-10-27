@@ -1,0 +1,48 @@
+{
+  "id": "bonfire",
+  "name": "Bonfire Naples",
+  "status": "active",
+  "mappedIds": [
+    "way/1017043832"
+  ],
+  "claim": {
+    "issue": 242,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/242",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=7ZNTjuz-V5HXwvOHvyr4dQ&heading=300&pitch=0",
+      "imageDate": "2026-02",
+      "accessDate": "2026-10-27",
+      "observed": "Visually inspected beige textured south wall, brown parapet band, east elevated door with steps and black rails, utility pipes and service yard."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uafRb5HT_1cwLgvH7vRMiQ&heading=40&pitch=0",
+      "imageDate": "2026-02",
+      "accessDate": "2026-10-27",
+      "observed": "Southwest view: largely blank textured wall, red/gold lettered signs on both faces, recessed west entrance with dark canopy, narrow paved apron."
+    },
+    {
+      "url": "https://www.thebonfirelv.com/",
+      "accessDate": "2026-10-27",
+      "observed": "Official public room photo shows three pool tables, dark exposed ceiling, large square tiles and cone pendants. Exact room layout not established."
+    },
+    {
+      "url": "https://www.thebonfirelv.com/copy-of-home-1",
+      "accessDate": "2026-10-27",
+      "observed": "Official address610EastNaples and public bar/music/pool uses."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint only; height, door and equipment placement estimated from references.",
+    "No surveyed floorplan."
+  ],
+  "remaining": [
+    "Build original exterior and approach.",
+    "Corroborate entrance clearance and public room layout before interior.",
+    "Install and inspect matching daylight views, routes and performance; package current city bake."
+  ],
+  "implemented": []
+}
