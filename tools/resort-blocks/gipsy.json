@@ -1,0 +1,29 @@
+{
+  "id": "gipsy",
+  "name": "Gipsy Nightclub",
+  "status": "active",
+  "mappedIds": [
+    "way/1017043833"
+  ],
+  "claim": {
+    "issue": 250,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/250",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.flickr.com/photos/breslinbuilders/albums/72177720313934451/",
+      "accessDate": "2026-10-27",
+      "observed": "Contractor completed-2023 album. Original street facade and courtyard photos inspected; room layout study ongoing."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint may predate 2023 reconstruction; compare current aerial. Heights and room partition positions not surveyed."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Reconcile current footprint; build original exterior and reference-supported public spaces; inspect installed views, routes and matching performance; package fresh city bake."
+  ],
+  "evidence": []
+}
