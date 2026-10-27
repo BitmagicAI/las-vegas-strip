@@ -12653,9 +12653,10 @@
    "size": "S",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
    "items": [
-    "Reference-supported exterior, targeted replacement, optimized assets/current bake, scoped/actual walking and matching performance pending."
+    "Exact facade subdivisions, rear elevations, surrounding landscape and parking furniture remain approximate; not photorealistic.",
+    "Current tenancy and interior unknown; interior stays closed."
    ],
    "record": "tools/resort-blocks/former-wendys-tropicana.json",
    "buildings": [],
@@ -12667,7 +12668,12 @@
     "writes": [
      "tools/resort-blocks/former-wendys-tropicana.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_former_wendys_tropicana.py",
+     "tools/city-exteriors/install-former-wendys-tropicana.py",
+     "tools/strip-landmarks/test-former-wendys-tropicana.mjs",
+     "tools/strip-landmarks/former_wendys_tropicana.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

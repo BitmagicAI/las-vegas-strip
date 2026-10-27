@@ -33,9 +33,33 @@
     "Mapped footprint254.29m2,approximately11.07x23.17m; heights and baydivisions inferred from photographs.",
     "Interior and current tenancy unverified; keep interior closed."
   ],
-  "implemented": [],
-  "remaining": [
-    "Reference-supported exterior, targeted replacement, optimized assets/current bake, scoped/actual walking and matching performance pending."
+  "implemented": [
+    "Original mapped brick shell, curved red-panel entrance crown, pale stone piers, full-height glazing and closed entrance, drive-through bays and dark canopy, parapet coping, roof equipment and frontage aprons.",
+    "Only16ownedvisual16collisionfaces removed; all retained city properties and vertices exact-equal."
   ],
-  "evidence": []
+  "remaining": [
+    "Exact facade subdivisions, rear elevations, surrounding landscape and parking furniture remain approximate; not photorealistic.",
+    "Current tenancy and interior unknown; interior stays closed."
+  ],
+  "evidence": [
+    "build/city-exteriors/former-wendys-tropicana-first",
+    "build/city-exteriors/former-wendys-tropicana-packaged",
+    "build/city-exteriors/former-wendys-tropicana-walk/results.json",
+    "build/city-exteriors/former-wendys-tropicana-ownership-audit.json",
+    "build/strip-landmarks/former-wendys-tropicana-route-audit.json"
+  ],
+  "verification": {
+    "sourceTriangles": 2936,
+    "scopedChecks": 104,
+    "actualWalkingSegments": 10,
+    "visualReview": "All three first installed daylight views inspected; final packaged northeast view inspected.",
+    "assetsPresent": 1395,
+    "assetsMissing": 0,
+    "bakeBatches": 679
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/former-wendys-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/former-wendys-tropicana-packaged/results.json",
+    "conditions": "960x540 ultra neutral daylight,3cameras180frames. Baseline16.6\u201316.8msmedian17.8\u201318.0msp95; final16.6\u201316.7msmedian18.0msp95."
+  }
 }
