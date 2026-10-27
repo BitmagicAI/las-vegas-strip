@@ -30,6 +30,10 @@ def add_patio(B,F):
   for xx in [x-.55,x+.55]:B.face('h2-brushed-alloy',[F.p(xx,y,z) for z,y in pts])
   for (z,y),(zz,yy) in zip(pts,pts[1:]+pts[:1]):B.face('h2-brushed-alloy',[F.p(x-.55,y,z),F.p(x+.55,y,z),F.p(x+.55,yy,zz),F.p(x-.55,yy,zz)])
   F.path('h2-brushed-alloy',[(x-.40,1.55,-.84),(x-.40,1.55,-.71),(x+.40,1.55,-.71),(x+.40,1.55,-.84)],.022,10)
+  # Hood temperature dial from the official photograph, no copied branding.
+  F.tube('h2-brushed-alloy',(x,1.77,-.86),(x,1.77,-.82),.062,24)
+  F.tube('h2-letter',(x,1.77,-.819),(x,1.77,-.815),.049,24)
+  F.box('h2-charcoal-paint',(x,1.785,-.811),(.006,.035,.005))
   for dx in [-.34,0,.34]:
    F.tube('h2-charcoal-paint',(x+dx,1.27,-.81),(x+dx,1.27,-.76),.052,16)
    F.box('h2-letter',(x+dx,1.295,-.754),(.009,.035,.009))
@@ -39,7 +43,7 @@ def add_patio(B,F):
   F.path('h2-brushed-alloy',[(x+.22,.81,-.78),(x+.22,.81,-.73),(x+.22,.95,-.73),(x+.22,.95,-.78)],.015,8)
  # Square tables and yellow moulded chairs; broad collision proxies, no leg colliders.
  for x,z in [(69.45,1.5),(73.8,2.6)]:
-  F.box('h2-chair-wood',(x,1.00,z),(.92,.08,.92))
+  F.box('h2-patio-table',(x,1.00,z),(.92,.08,.92))
   F.lathe('h2-metal',x,z,[(.24,.28),(.28,.28),(.29,.045),(.96,.045)],16)
   F.box('h2-patio-proxy',(x,.64,z),(.94,.80,.94),True)
   for dx,dz,yaw in [(-.86,0,-math.pi/2),(.86,0,math.pi/2),(0,.86,0)]:

@@ -85,7 +85,8 @@
     "Inferred public reception, market, banquette lounge, business desks and breakfast room; cabinetry, appliances and furniture refined against official photographs.",
     "Bounded northeast pool court with curved basin, coping, blue-tile wall, planters, accessibility lift, rails, fence with open gate, pergola and seating; three installed views inspected.",
     "North pool frontage refined from March2020 Street View: broad dark slats, stone end piers/high connecting beam, three folded red canvas umbrellas. Original geometry; dimensions estimated. Three installed daylight views inspected; slats/piers/beam present and gate clear.",
-    "Original twin curved-hood grills with handles/control knobs/access doors, stone counter, slatted shade roof/screen, square tables/yellow chairs and a small planted pocket. Two connecting routes added; all three installed daylight views inspected; walking connections verified."
+    "Original twin curved-hood grills with handles/control knobs/access doors, stone counter, slatted shade roof/screen, square tables/yellow chairs and a small planted pocket. Two connecting routes added; all three installed daylight views inspected; walking connections verified.",
+    "Exterior stacked-stone material revised with original irregular courses, recessed joints and face relief; gray patio tabletops and round hood temperature gauges added from official grill photograph. Source and three installed daylight views inspected."
   ],
   "remaining": [
     "Seven final installed views inspected: north sign masking corrected; furnishings remain simplified, floor texture visibly streaked, glazing opaque. Further material refinement required.",
@@ -120,7 +121,8 @@
     "build/city-exteriors/home2-patio-pool-repeat/",
     "build/city-exteriors/home2-patio-walk/results.json",
     "build/city-exteriors/home2-patio-final/",
-    "build/city-exteriors/home2-patio-final-repeat/"
+    "build/city-exteriors/home2-patio-final-repeat/",
+    "build/city-exteriors/home2-finishes-installed/"
   ],
   "performance": {
     "baseline": "build/city-exteriors/home2-stadium-baseline/results.json",
@@ -142,13 +144,15 @@
     "patioFinal": "build/city-exteriors/home2-patio-final/results.json",
     "patioFinalNote": "Final alloy-only correction: patio/grills/path median26.2/22.1/16.7ms, p9540.9/50.7/17.2ms. Same settings as initial patio; substantial variance, no60fps claim. No graphics-error log. Repeat recorded separately.",
     "patioRepeat": "build/city-exteriors/home2-patio-final-repeat/results.json",
-    "patioRepeatNote": "Repeat median49.7/43.6/19.5ms,p9567.1/58.4/28.2ms (~20/23/51fps). A repository validation scan overlapped part of this run, so it is not an isolated benchmark. Large variance remains unresolved; do not infer a material regression or a60fps pass. A post-run process snapshot showed two unrelated Python jobs at86\u201394%CPU and another at34%; shared-machine load is a possible confound, not proven cause. Those jobs were left untouched."
+    "patioRepeatNote": "Repeat median49.7/43.6/19.5ms,p9567.1/58.4/28.2ms (~20/23/51fps). A repository validation scan overlapped part of this run, so it is not an isolated benchmark. Large variance remains unresolved; do not infer a material regression or a60fps pass. A post-run process snapshot showed two unrelated Python jobs at86\u201394%CPU and another at34%; shared-machine load is a possible confound, not proven cause. Those jobs were left untouched.",
+    "finishAfter": "build/city-exteriors/home2-finishes-installed/results.json",
+    "finishNote": "Matching patio/grills/path cameras:40.5/34.0/26.2ms median,67.3/60.9/33.8ms p95 at960x540ultra. Shared-machine background jobs remain active; no isolated benchmark or60fps claim. No errors in capture log."
   },
   "nextPass": {
     "priority": "Finish current Home2 site before claiming another building",
     "poolStudy": "Pool and grill patio installed; remaining flowing wall, depth refinement, broader landscaping and separate firepit seating. Retain performance variance.",
     "publicStudy": "Official public plan is not available; retain inferred layout label. Improve room finishes and lighting after geometry.",
-    "patioStudy": "Grill patio placed beside south arrival using map centre72.14,3.68 and photos; sevenroutes walked. Separate firepit placement still requires stronger evidence before authoring; preserve shared garage/driveway. Batch remaining site/material refinements before the next city rebuild."
+    "patioStudy": "Grill patio placed beside south arrival using map centre72.14,3.68 and photos; sevenroutes walked. Separate firepit placement still requires stronger evidence before authoring; preserve shared garage/driveway. Batch remaining site/material refinements before the next city rebuild. Maximum aerial zoom still leaves the firepit obscured by the canopy/landscaping; gallery photo establishes furnishings but not its exact position. Do not assign a measured location from that view."
   },
   "validation": {
     "scopedChecks": 669,
@@ -158,8 +162,8 @@
     "runtimeAssetsPresent": 1411,
     "missingAssets": 0,
     "cityBakeBatches": 684,
-    "sourceTriangles": 44256,
+    "sourceTriangles": 44648,
     "installedViewsInspected": 3,
-    "walkNote": "All70segments/7routes passed with grill patio collision. Subsequent alloy-only material rename preserves geometry/collision."
+    "walkNote": "Prior70segments/7routes passed. This finish-only pass preserves collision/route data byte-for-byte;669scoped checks rerun and pass. Decorative hood gauges have no collision."
   }
 }

@@ -1,5 +1,5 @@
 """Local source review; installed captures are separate evidence."""
-import bpy,math
+import bpy,math,os
 from pathlib import Path
 from mathutils import Vector
 out=Path('build/city-exteriors/home2-source-review');out.mkdir(parents=True,exist_ok=True)
@@ -18,4 +18,5 @@ for q in [(51,3.05,10),(59,3.05,9),(54,3.05,16)]:
 bpy.ops.object.camera_add();cam=bpy.context.object;s.camera=cam;cam.data.lens=28
 s.render.resolution_x=960;s.render.resolution_y=640;s.render.resolution_percentage=100;s.view_settings.view_transform='AgX'
 for name,eye,target in [('patio',(80,6,10),(72,1.5,1)),('grills',(73,1.95,4.5),(73,1.35,-1)),('pool',(12,13,-25),(11,.5,-7)),('pool-deck',(19,1.95,-3),(9,1,-9)),('street',(30,13,68),(32,8,12)),('entrance',(98,7,24),(60,6,10)),('pool-side',(12,9,-40),(28,7,7)),('lobby',(64,1.95,8),(50,1.3,12)),('breakfast',(52,1.95,10),(56,1.2,17))]:
+ if os.environ.get('HOME2_REVIEW_SHOTS') and name not in os.environ['HOME2_REVIEW_SHOTS'].split(','):continue
  cam.location=pt(eye);cam.rotation_euler=(Vector(pt(target))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=22 if name in ['lobby','breakfast'] else 28;s.render.filepath=str((out/(name+'.png')).resolve());bpy.ops.render.render(write_still=True)
