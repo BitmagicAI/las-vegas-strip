@@ -1,0 +1,44 @@
+{
+  "id": "mortons-flamingo",
+  "name": "Mortons The Steakhouse Flamingo",
+  "status": "active",
+  "mappedIds": [
+    "way/390004030"
+  ],
+  "claim": {
+    "issue": 350,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/350",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.mortons.com/location/mortons-the-steakhouse-las-vegas-nv/",
+      "observed": "Official address400EFlamingo and linked virtual tour."
+    },
+    {
+      "url": "https://www.mortons.com/las-vegas-nv-private-dining/",
+      "observed": "Published private room dimensions A24ftx28ft8in,B23ftx28ft8in,C/D15ft6inx17ft7in; positions not established."
+    },
+    {
+      "url": "https://images.getbento.com/accounts/7b15e97e66eb489eecd5b14dac4cd652/media/images/54716Exterior_2.jpg",
+      "observed": "Official exterior visually inspected: cream stepped parapet, raised central lettering, curved laminated wood canopy on four cream round columns, black glass entry, side awnings/shutters, stone base and hedges. Undated."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped6mheight estimated;1118.02m2 footprint. No established full public plan."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Inspect aerial and official virtual tour; record supported public connections",
+    "Capture matching installed baseline and performance",
+    "Original exterior/site and reference-supported interiors",
+    "Scoped collision replacement and preservation audit",
+    "Installed daylight visual and actual walking checks; matching performance",
+    "Optimized packed assets/current bake; draftPR and records"
+  ],
+  "nextPass": {
+    "priority": "Inspect reference tour and baseline before geometry",
+    "checkpoint": "Claim350 assigned janiverse; no geometry edited. Lawrys public pass8d460c8 verified;PR349ready."
+  }
+}
