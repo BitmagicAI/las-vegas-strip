@@ -4,13 +4,16 @@
   "status": "active",
   "mappedIds": [
     "way/33962963",
-    "way/33963206"
+    "way/33963206",
+    "way/1421907606",
+    "way/1421907607"
   ],
   "claim": {
     "issue": 338,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/338",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/339"
   },
   "sources": [
     {
@@ -24,18 +27,96 @@
     {
       "url": "https://www.google.com/maps?ll=36.125493,-115.15446&z=18&t=k&cid=11806191755765158134",
       "observed": "Aerial inspected: two parallel wings, west connector, separate courtyard building, pool toward eastern half; image capture date unspecified."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/wp-content/uploads/2023/10/Mardi-Gras-Hotel-Casino_TAG_-18-1-scaled-1.jpg",
+      "observed": "Official pool image inspected: blue tile, terracotta coping, scalloped outline, cream deck, blue loungers and steel handrails."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/wp-content/uploads/2023/10/Mardi-Gras-Hotel-Casino_TAG_-94-scaled-e1699540846886.jpg",
+      "observed": "Official exterior corridor detail inspected: rough stucco arch and iron balustrade."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/casino/",
+      "observed": "Official site-6 and site-4 images inspected; machine closeups only, no reliable room layout. Interior remains deferred."
     }
   ],
   "uncertainDimensions": [
     "Heights, room pitch, roof profile, pool dimensions and service details estimated from photographs; OSM ground outlines authoritative only for mapped plan.",
     "Public interior layout not established; no invented interior in this pass."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original three-storey guest-wing exterior with recessed room bays, exterior floor decks, iron rails, arches, continuous roof, entrance canopy, courtyard pavilion and pool/spa."
+  ],
   "remaining": [
-    "Build entire mapped exterior and courtyard, verify installed views, public routes and performance."
+    "Public interior remains unsupported by layout references.",
+    "Upper-floor stairs/access not yet reconstructed or walked; roof standing seams, sign typography, stone bases, courtyard greenery/fencing and surface detail still need refinement.",
+    "Pool dimensions and room rhythm inferred; courtyard pavilion east end remains plain. No photorealistic completion claim.",
+    "Current visual pass remains simplified: flat material treatment and large plain courtyard pavilion end walls. Pool animates at a fixed camera, but reference caustics, tile definition and furnishings remain more detailed."
   ],
   "nextPass": {
-    "priority": "Build mapped three-storey wings and courtyard",
-    "checkpoint": "Claim338 confirmed before editing."
+    "priority": "Finish upper-floor circulation and reference-supported site detail before advancing",
+    "checkpoint": "Installed front/roof/courtyard and fixed-camera pool comparison inspected; sixteen revised walking segments pass. Claim338 retained and block active. Next research and implement upper-floor circulation."
+  },
+  "verification": {
+    "sourceTriangles": 271403,
+    "routeSamples": 295,
+    "actualWalkingSegments": 16,
+    "installedViews": [
+      "build/city-exteriors/mardi-gras-installed"
+    ],
+    "walkingEvidence": "build/city-exteriors/mardi-gras-walk/results.json",
+    "preservation": "build/city-exteriors/mardi-gras-preservation.json",
+    "bakeBatches": 713,
+    "packagedAssets": 1487,
+    "typecheck": "passed",
+    "publicCheck": "passed; existing inventory email warning",
+    "poolComparison": {
+      "images": [
+        "build/city-exteriors/mardi-gras-pool/pool-t0.png",
+        "build/city-exteriors/mardi-gras-pool/pool-t3.png"
+      ],
+      "fixedCamera": true,
+      "frameInterval": 180,
+      "observed": "Ripple highlights visibly change at a fixed camera; animation confirmed, photorealism not established."
+    }
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/mardi-gras-baseline/results.json",
+    "after": "build/city-exteriors/mardi-gras-installed/results.json",
+    "baselineMedianP95Ms": [
+      [
+        16.7,
+        19.2
+      ],
+      [
+        16.8,
+        18.6
+      ],
+      [
+        16.5,
+        18.9
+      ]
+    ],
+    "afterMedianP95Ms": [
+      [
+        16.5,
+        18.9
+      ],
+      [
+        16.6,
+        18.7
+      ],
+      [
+        16.7,
+        17.5
+      ]
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin": "50949f7021d9d7a7a998d270dd3be404bfb27c535b0f1c8b989315842f594bc0",
+      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb": "22e7a0f02d20646f3c29663c6191065ff7b3a1fd7cebaf430084158b14e34bda"
+    }
   }
 }
