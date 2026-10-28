@@ -1,7 +1,7 @@
 {
   "id": "hollywood-cars-museum",
   "name": "Hollywood Cars Museum warehouse",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/225705142"
   ],
@@ -36,14 +36,15 @@
     "OSM museumname is onwrong neighboringway225705143; do not remove that building."
   ],
   "implemented": [
-    "Uninstalled original source draft: mapped warehouse, corrugation, shallow roof, south entrance/signage and approach ramp. Source review found and corrected a roof-ridge closure error."
+    "Original 13,758-triangle exterior: mapped warehouse, ribbed metal siding, shallow gable roof, west masonry bay, south signage/glazing, west approach ramp, hedge beds and roof equipment. Dimensions and hidden service positions inferred.",
+    "South frontage now follows the angled mapped wall; misplaced bounding-edge facade and west-ramp obstruction corrected."
   ],
   "remaining": [
-    "Refine source against closer southfrontage references before installation; generic lettering, sparse service doors and hedge masses are not final. Inspect dark south-eave seam/normals; corrected source renders reviewed.",
-    "Build reference-supported exterior, entrances and approach.",
-    "Replace only owned placeholder/collision and preserve adjacent warehouses/roads.",
-    "Source review and scopedchecks, optimize/install/bake, actualwalk/daylightviews and matchingperformance.",
-    "Reference-supported publicinterior may follow once layout and original exhibit assets exist; no placeholder cars presented as completion."
+    "Generic signage, simplified hedges and missing mature tree/novelty display car need refinement.",
+    "Service-door positions and hidden elevations remain unverified; side walls are sparse and corrugation aliases at distance.",
+    "Existing generic courtyard paving/drive layout differs from reference; no unrelated road regeneration performed.",
+    "Museum entrance is closed and exterior-only. Exhibit layout and original display assets are unresolved.",
+    "Performance below60fps and variable; no controlled regression-free claim."
   ],
   "evidence": [
     {
@@ -72,10 +73,107 @@
       "viewsInspected": 2,
       "triangles": 13630,
       "note": "Roof split at ridge; entrance/ramp/signs visible. South eave still reads as dark seam; inspect normals/closure before installation. Sparse draft, not final exterior."
+    },
+    {
+      "type": "source-and-preservation",
+      "path": "build/city-exteriors/hollywood-cars-museum-preservation.json",
+      "note": "Source entrance and roof re-inspected. 66 scoped checks pass with current city collision. Only 10 owned placeholder/collision triangles removed; all 9560 groups retain vertices/metadata and other faces in original order."
+    },
+    {
+      "type": "installed-first-pass",
+      "path": "build/city-exteriors/hollywood-cars-museum-installed",
+      "viewsInspected": 5,
+      "walk": "build/city-exteriors/hollywood-cars-museum-walk/results.json",
+      "note": "16 actual walking segments pass. Five installed daylight views inspected; close views found roof seams extending beyond angled front edge. Corrected source clips seam lengths to footprint; corrected installed verification pending.",
+      "performance": [
+        {
+          "name": "south-entry",
+          "eye": [
+            -855,
+            3,
+            2142
+          ],
+          "target": [
+            -866,
+            3,
+            2119
+          ],
+          "p50": 40,
+          "p95": 52
+        },
+        {
+          "name": "east-side",
+          "eye": [
+            -840,
+            9,
+            2100
+          ],
+          "target": [
+            -865,
+            3,
+            2075
+          ],
+          "p50": 31.100000023841858,
+          "p95": 38.800000071525574
+        },
+        {
+          "name": "roof",
+          "eye": [
+            -826,
+            62,
+            2140
+          ],
+          "target": [
+            -866,
+            3,
+            2070
+          ],
+          "p50": 24.899999976158142,
+          "p95": 31.299999952316284
+        }
+      ]
+    },
+    {
+      "type": "final-installed-close",
+      "path": "build/city-exteriors/hollywood-cars-museum-final-close",
+      "viewsInspected": 2,
+      "note": "Roof-seam projections gone. Collision unchanged from16segmentwalk.1419assets0missing;687batchbakecurrent.",
+      "performance": [
+        {
+          "name": "ramp",
+          "eye": [
+            -883,
+            2.2,
+            2125
+          ],
+          "target": [
+            -873,
+            1.5,
+            2121
+          ],
+          "p50": 56.59999990463257,
+          "p95": 63.89999997615814
+        },
+        {
+          "name": "entry",
+          "eye": [
+            -870,
+            2,
+            2127
+          ],
+          "target": [
+            -872.7,
+            1.6,
+            2120.8
+          ],
+          "p50": 34.200000047683716,
+          "p95": 43.60000002384186
+        }
+      ]
     }
   ],
   "nextPass": {
-    "priority": "Refine south facade/service details and inspect dark eave seam, then scopedcollision/preservation and install pipeline.",
-    "checkpoint": "Motel6 installed checkpoint e820d9a. Museum claim286/PR287, baseline3viewsinspected. Source13630triangles exported; notinstalled and no citydataremoved. Source render log /tmp/museum-source-render.log. Draft intentionally not markedcomplete. Latesttwo sourceviewsinspected; allownedprocessescomplete."
+    "priority": "Retain detailing/interior/performance discrepancies for later refinement. Continue next claimed building288.",
+    "checkpoint": "Finalmuseum closeviews inspected afterseamcorrection; allpipelines complete.66scopedchecks/16walkingsegments passed. Sources and runtime installed; no fullmuseum/photorealcompletion claim."
   }
 }

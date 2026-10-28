@@ -12988,11 +12988,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Refine source against closer southfrontage references before installation; generic lettering, sparse service doors and hedge masses are not final. Inspect dark south-eave seam/normals; corrected source renders reviewed.",
-    "Build reference-supported exterior, entrances and approach.",
-    "Replace only owned placeholder/collision and preserve adjacent warehouses/roads.",
-    "Source review and scopedchecks, optimize/install/bake, actualwalk/daylightviews and matchingperformance.",
-    "Reference-supported publicinterior may follow once layout and original exhibit assets exist; no placeholder cars presented as completion."
+    "Generic signage, simplified hedges and missing mature tree/novelty display car need refinement.",
+    "Service-door positions and hidden elevations remain unverified; side walls are sparse and corrugation aliases at distance.",
+    "Existing generic courtyard paving/drive layout differs from reference; no unrelated road regeneration performed.",
+    "Museum entrance is closed and exterior-only. Exhibit layout and original display assets are unresolved.",
+    "Performance below60fps and variable; no controlled regression-free claim."
    ],
    "record": "tools/resort-blocks/hollywood-cars-museum.json",
    "buildings": [],
@@ -13006,6 +13006,9 @@
     ],
     "builders": [
      "tools/strip-landmarks/export_hollywood_cars_museum.py",
+     "tools/city-exteriors/install-hollywood-cars-museum.py",
+     "tools/strip-landmarks/test-hollywood-cars-museum.mjs",
+     "tools/city-exteriors/check-hollywood-cars-museum-preservation.py",
      "tools/strip-landmarks/hollywood_cars_museum.py",
      "tools/strip-landmarks/review_hollywood_cars_museum.py"
     ]

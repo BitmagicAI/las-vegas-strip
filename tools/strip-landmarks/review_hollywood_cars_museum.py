@@ -13,6 +13,6 @@ for q in [(-786,2.8,2003),(-793,2.8,2004)]:
  bpy.ops.object.light_add(type='AREA',location=pt(q));bpy.context.object.data.energy=100;bpy.context.object.data.size=3
 bpy.ops.object.camera_add();cam=bpy.context.object;s.camera=cam;cam.data.lens=28
 s.render.resolution_x=960;s.render.resolution_y=640;s.render.resolution_percentage=100;s.view_settings.view_transform='AgX'
-for name,eye,target in [('entrance',(-851,5,2140),(-867,3,2120)),('roof',(-827,55,2150),(-866,3,2075))]:
+for name,eye,target in [('entrance',(-851,5,2140),(-867,3,2120)),('roof',(-827,55,2150),(-866,3,2075)),('ramp',(-883,2.2,2125),(-873,1.5,2121))]:
  if os.environ.get('HOME2_REVIEW_SHOTS') and name not in os.environ['HOME2_REVIEW_SHOTS'].split(','):continue
  cam.location=pt(eye);cam.rotation_euler=(Vector(pt(target))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=22 if name in ['lobby','breakfast'] else 28;s.render.filepath=str((out/(name+'.png')).resolve());bpy.ops.render.render(write_still=True)

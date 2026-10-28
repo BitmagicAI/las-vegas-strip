@@ -1382,8 +1382,12 @@
     {
       "id": "hollywood-cars-museum",
       "name": "Hollywood Cars Museum warehouse",
-      "status": "active",
-      "record": "hollywood-cars-museum.json"
+      "status": "refinement-deferred",
+      "record": "hollywood-cars-museum.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Installed exterior/approach verified; retain unfinished service detail, planting, interior and performance work. Continue city-wide reconstruction."
+      }
     }
   ],
   "active": "hollywood-cars-museum"

@@ -15,7 +15,10 @@ def build(B):
    B.upface('hcm-roof-paint',[(x,6.35-.65*min(1,abs(x-mid)/((hi-lo)/2)),z) for x,z in list(tri.exterior.coords)[:-1]])
  for x in np.arange(lo+.2,hi,.6):
   yy=6.35-.65*min(1,abs(x-mid)/((hi-lo)/2))+.012
-  F.box('hcm-trim-paint',(float(x),yy,(zn+zs)/2),(.018,.025,zs-zn-.15))
+  seam=p.buffer(-.04).intersection(LineString([(float(x),zn-1),(float(x),zs+1)]))
+  if not seam.is_empty:
+   _,z0,_,z1=seam.bounds
+   F.box('hcm-trim-paint',(float(x),yy,(z0+z1)/2),(.018,.025,z1-z0))
  coords=list(p.exterior.coords)
  for a,b in zip(coords,coords[1:]):
   height=lambda x:6.35-.65*min(1,abs(x-mid)/((hi-lo)/2))
@@ -34,11 +37,15 @@ def build(B):
     G.tube('hcm-trim-paint',(float(u),.3,out*.13),(float(u),5.65,out*.13),.055,8)
  # South end is the museum arrival, with raised glazed entrance and ramp.
  # Keep signs original typography, not copied photographs or advertising art.
- S=Frame(B,mid,zs,0,y=0)
- S.box('hcm-stone',(0,2.8,.08),(hi-lo-.3,5.5,.15))
- S.box('hcm-sign-paint',(3.8,3.5,.19),(10.8,2.35,.10))
- S.text('MUSEUM',(3.8,3.83,.26),.83,'hcm-letter',back=True)
- S.text('HOLLYWOOD CARS',(3.8,2.96,.26),.38,'hcm-letter',back=True)
+ south=max(zip(coords,coords[1:]),key=lambda ab:(ab[0][1]+ab[1][1])/2)
+ a,b=sorted(south);sx,sz=(a[0]+b[0])/2,(a[1]+b[1])/2
+ S=Frame(B,sx,sz,math.atan2(-(b[1]-a[1]),b[0]-a[0]),y=0)
+ # The west rental-office bay is masonry; museum frontage retains metal ribs.
+ S.box('hcm-stone',(-10.2,2.86,.08),(5.5,5.68,.15))
+ S.box('hcm-sign-paint',(3.8,3.0,.19),(6.8,2.0,.05))
+ S.text('MUSEUM',(3.8,3.40,.26),.77,'hcm-letter',back=True)
+ S.text('NOW OPEN',(3.8,2.74,.26),.47,'hcm-letter',back=True)
+ S.text('HOLLYWOOD CARS',(3.8,2.27,.26),.23,'hcm-letter',back=True)
  S.box('hcm-frame-paint',(-6,1.65,.20),(2.65,2.65,.19))
  for dx in [-.64,.64]:
   S.box('hcm-glass',(-6+dx,1.65,.32),(1.20,2.47,.035))
@@ -48,23 +55,30 @@ def build(B):
  S.text('ENTRANCE',(-6,3.35,.35),.38,'hcm-letter',back=True)
  # Closed exterior-only first pass. Do not pretend this is a playable gallery.
  S.box('hcm-concrete',(-6,.16,1.1),(4.2,.32,2.0),True)
- for side in [-1,1]:S.rail((-6+side*2.0,.2),(-6+side*2.0,2.0),y=1.40)
- # Wheelchair ramp from east to entrance landing, entirely on this site's court.
- pts=[S.p(-3.9,.32,.45),S.p(4.1,.04,.45),S.p(4.1,.04,1.85),S.p(-3.9,.32,1.85)]
+ S.rail((-4.0,.2),(-4.0,2.0),y=1.40)
+ S.rail((-8.0,2.0),(-4.0,2.0),y=1.40)
+ # Wheelchair ramp from west to entrance landing, entirely on this site's court.
+ pts=[S.p(-8.0,.32,.45),S.p(-13.0,.04,.45),S.p(-13.0,.04,1.85),S.p(-8.0,.32,1.85)]
  B.upface('hcm-concrete',pts,True)
  for z in [.45,1.85]:
-  S.tube('hcm-metal',(-3.9,1.40,z),(4.1,1.12,z),.035,8)
+  B.face('hcm-concrete',[S.p(-13,.01,z),S.p(-8,.01,z),S.p(-8,.32,z),S.p(-13,.04,z)])
+ for z in [.45,1.85]:
+  S.tube('hcm-metal',(-8.0,1.40,z),(-13.0,1.12,z),.035,8)
   for t in np.linspace(0,1,6):
-   x=-3.9+8*t;y=.32-.28*t;S.tube('hcm-metal',(x,y,z),(x,y+1.08,z),.026,8)
+   x=-8.0-5*t;y=.32-.28*t;S.tube('hcm-metal',(x,y,z),(x,y+1.08,z),.026,8)
+ # Small wall-mounted fixture housings visible in the approach reference.
+ for x in [-11,-3,5,11]:
+  S.box('hcm-metal',(x,5.1,.17),(.30,.18,.18))
+  S.box('hcm-sign-paint',(x,5.07,.27),(.22,.09,.025))
  # Narrow planting beds beneath the signs, with clipped hedge masses.
- for x in [mid+6.3,mid+9.3,mid+11.7]:
-  F.box('hcm-concrete',(x,.08,zs+.42),(1.95,.16,.75),True)
-  F.box('hcm-soil',(x,.17,zs+.42),(1.80,.04,.60))
-  for dx in [-.55,0,.55]:B.sphere('hcm-hedge',(x+dx,.57,zs+.42),.45,10,6,scale=(1,.85,.75))
+ for x in [6.3,9.3,11.7]:
+  S.box('hcm-concrete',(x,.08,.42),(1.95,.16,.75),True)
+  S.box('hcm-soil',(x,.17,.42),(1.80,.04,.60))
+  for dx in [-.55,0,.55]:B.sphere('hcm-hedge',S.p(x+dx,.57,.42),.45,10,6,scale=(1,.85,.75))
  # Roof equipment is an inferred, restrained service layer.
  for z in [zn+22,zn+57,zn+83]:
   F.box('hcm-metal-paint',(mid+4,6.26,z),(2.0,.6,1.3))
   for j in range(8):F.box('hcm-vent',(mid+4,6.57,z-.53+j*.15),(1.80,.02,.05))
- return dict(key=KEY,name='Hollywood Cars Museum',center=[p.centroid.x,0,p.centroid.y],bounds=[lo-2,zn-2,hi+2,zs+4],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[])
+ return dict(key=KEY,name='Hollywood Cars Museum',center=[p.centroid.x,0,p.centroid.y],bounds=[lo-2,zn-2,hi+2,zs+4],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[dict(name='Arrival ramp and return',points=[list(S.p(x,y,z)) for x,y,z in [(-14,0,1.15),(-13,.04,1.15),(-10.5,.18,1.15),(-8,.32,1.15),(-6,.32,1.15),(-8,.32,1.15),(-10.5,.18,1.15),(-13,.04,1.15),(-14,0,1.15)]])],hotelSources=[])
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

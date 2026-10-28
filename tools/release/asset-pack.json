@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1417,
- "bytes": 1083440229,
+ "count": 1419,
+ "bytes": 1084063993,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18892737,
-   "sha256": "d868102d0bccf7293e375c35c700b3a7ab32b302057b0a9385f0d789398b3656",
+   "bytes": 18907045,
+   "sha256": "118fc09faf5ddaa65f9675eff0e76be10eafc8945d204c2ece2e024f376f238f",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13063028,
-   "sha256": "6d5a37710c79778da5ac60ec34a6a7fcd43d9a8d024a9d85cfd1508dd9b3a154",
+   "bytes": 13062596,
+   "sha256": "af7d5ed3d0c7e1f91d750e041117055c47457556781343287a5e44c9fc242dc0",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109750920,
-   "sha256": "f09d438225f9e52ff48e6824fb9c53e0d44ec9ab9b44559c2d9ccb8f6fbbb998",
+   "bytes": 109750788,
+   "sha256": "eda080f69a855840d0adab002030de3587d0d157d3b220800757a760d19b94cc",
    "kind": "optimized"
   },
   {
@@ -6653,6 +6653,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/hollywood-cars-museum-exterior-collision.bin",
+   "bytes": 340,
+   "sha256": "dc0ceeb1b5181131168e6522d66cf5cd3238040994aaf667facc731feef11bf3",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/hollywood-cars-museum-exterior.glb",
+   "bytes": 609388,
+   "sha256": "5be20427a9b0a2ad7249b1c6d02a602f215445202595d50bd91f366b44733e7f",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/home2-stadium-exterior-collision.bin",
    "bytes": 4812,
    "sha256": "ca973840fd8045fd4b255eb9ccdbef5c61b932cde486409a8b533a7b9bde950c",
@@ -8322,8 +8334,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 351154,
-   "sha256": "030fb881d99cedd08ff1b4593bb3e6a70a3f6d621534aeda1404bac37f84864c",
+   "bytes": 351446,
+   "sha256": "e65b6e6b799357d5276dc83c0cb08b3c35969081d5298de59a616c6c22081fb9",
    "kind": "original"
   },
   {
