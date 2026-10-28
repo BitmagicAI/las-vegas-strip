@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1413,
- "bytes": 1081045273,
+ "count": 1417,
+ "bytes": 1082779947,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18853407,
-   "sha256": "a012739a5464b875573188ace25319d7a51ad62480adb298edd42c8bb9204a8a",
+   "bytes": 18882451,
+   "sha256": "5f3a356dd63abb37ee32cb44c2c8037fe4c2c58498886a8cf93940de12aeb243",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13063636,
-   "sha256": "042803665a89eb31c34978881410e84bc873d368ce5a785b07bb1582c79cfc5f",
+   "bytes": 13063028,
+   "sha256": "6d5a37710c79778da5ac60ec34a6a7fcd43d9a8d024a9d85cfd1508dd9b3a154",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109753236,
-   "sha256": "3af73c83d9a3aeeaae0e4fbd16113a7127f1b0d594b47974617ca219ea19c711",
+   "bytes": 109750920,
+   "sha256": "f09d438225f9e52ff48e6824fb9c53e0d44ec9ab9b44559c2d9ccb8f6fbbb998",
    "kind": "optimized"
   },
   {
@@ -7073,6 +7073,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/motel6-stadium-exterior-collision.bin",
+   "bytes": 4432,
+   "sha256": "4f23e06ebf36639c5fd78a1c2e9c1788f0cca364ab60cfb119f5f903591521f1",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/motel6-stadium-exterior.glb",
+   "bytes": 1626304,
+   "sha256": "2c5af5dfc6617b187bc2d0f961e6acb5d75ef6be6af2282d0db3ed0b79715972",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/motel6-stadium-interior-collision.bin",
+   "bytes": 536,
+   "sha256": "9dae04ba3c3cb602b8668f06a29205443cd078869faadcfc8683078bf6318c24",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/motel6-stadium-interior.glb",
+   "bytes": 76456,
+   "sha256": "090f6baadad6c03d53184d1609fb36954847a97f82d0c4e7d7640e7294cf20e4",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/nakedCity-exterior-collision.bin",
    "bytes": 720,
    "sha256": "a4dae7f787ae9b7529722e48841b4334e745d164b9c8de2b775ad15fb3e739e6",
@@ -8298,8 +8322,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 350128,
-   "sha256": "57c56257c72f6ba950f38b61486ac6aea86fea500bbaa19bc5f7fb0f83e9ca99",
+   "bytes": 350954,
+   "sha256": "f836aa5b1b88db0d4bea4f7bdb8dc570d4aa4114e4df39215f1e107ea5ec09d5",
    "kind": "original"
   },
   {

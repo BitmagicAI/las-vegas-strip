@@ -12943,11 +12943,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Author exterior from mappedHfootprint with real upper galleries/stairs, door/window/ACbays andshinglefascia.",
-    "Create poolcourt and arrivaldetails whilepreservingroads/neighborproperties.",
-    "Build reference-supported lobby and laundry once their plan and connections are laid out explicitly.",
-    "Targeted ownership/collision replacement, optimizedGLBs/packeddata/currentbake.",
-    "Installed daylight exterior/interior comparisons, walkingroutes and matchedperformance."
+    "Finish pool courtyard, arrival planting and furniture; verify end-gallery connections and additional stairs from references.",
+    "Pool draft needs source review, integration, packed collision and installed walking; keep current public routes verified.",
+    "Refine plain end walls, lobby glazing and sparse interior furnishings; current source is not photorealistic.",
+    "Reference dimensions, stair placement and hidden interior plan remain estimates.",
+    "Installed review found mottled metal detail on window/door frames and bitumen banding on flat roof; rename only motel finish materials to preserve authored painted/membrane appearance."
    ],
    "record": "tools/resort-blocks/motel6-stadium.json",
    "buildings": [],
@@ -12959,7 +12959,14 @@
     "writes": [
      "tools/resort-blocks/motel6-stadium.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_motel6_stadium.py",
+     "tools/strip-landmarks/test-motel6-stadium.mjs",
+     "tools/city-exteriors/install-motel6-stadium.py",
+     "tools/strip-landmarks/motel6_pool.py",
+     "tools/strip-landmarks/review_motel6_stadium.py",
+     "tools/strip-landmarks/motel6_stadium.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
