@@ -9,7 +9,8 @@
     "issue": 346,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/346",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/347"
   },
   "sources": [
     {
@@ -38,6 +39,57 @@
   ],
   "nextPass": {
     "priority": "Corroborate frontage, capture baseline, then author exterior and public dining space",
-    "checkpoint": "Claim346 confirmed janiverse; NuLeaf fbae70a installed pass saved/pushed. Start by corroborating current frontage and capturing baseline, then author exterior and reference-supported public dining area. No Buca geometry edited yet."
+    "checkpoint": "Claim346 confirmed janiverse; draftPR347 attached, branch task/ext-buca-flamingo. Three actual baseline views inspected, medians16.6\u201316.7ms/p9517.9\u201321.6ms. No Buca geometry edited. Corroborate current exterior, then author mapped rotated shell, southwest entrance/approach, signs, striped awnings, roof and reference-supported public dining space; mark inferred layout."
+  },
+  "verification": {
+    "baseline": "build/city-exteriors/buca-flamingo-baseline/results.json",
+    "baselinePerformance": [
+      {
+        "name": "front",
+        "eye": [
+          1882,
+          2,
+          143
+        ],
+        "target": [
+          1900,
+          3,
+          125
+        ],
+        "p50": 16.700000047683716,
+        "p95": 21.59999990463257
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1872,
+          32,
+          151
+        ],
+        "target": [
+          1900,
+          1,
+          117
+        ],
+        "p50": 16.699999928474426,
+        "p95": 19.299999952316284
+      },
+      {
+        "name": "east",
+        "eye": [
+          1935,
+          2,
+          137
+        ],
+        "target": [
+          1913,
+          3,
+          116
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.899999976158142
+      }
+    ],
+    "baselineVisualReview": "All three installed baseline views inspected: plain mapped box, no current facade or public interior detail."
   }
 }
