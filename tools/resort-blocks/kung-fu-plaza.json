@@ -9,7 +9,8 @@
     "issue": 306,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/306",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/307"
   },
   "sources": [
     {
@@ -34,17 +35,58 @@
     "Interior photo establishes furnishings/materials only; public dining/bar connection interpreted. Hidden kitchen/service and neighboring cafe interior excluded."
   ],
   "implemented": [
-    "Exterior, aerial and public dining references visually inspected; claim306 confirmed."
+    "Exterior, aerial and public dining references visually inspected; claim306 confirmed.",
+    "Three matching baseline daylight views visually inspected; median/p95ms16.7/20.7,16.6/21.8,16.6/29.4.",
+    "Original31658-triangle exterior/public dining source built; facade alignment corrected to mapped angle after source inspection.58 source clearance checks pass.",
+    "Entrance, roof, dining and bar source renders reviewed. Not installed yet."
   ],
   "remaining": [
-    "Matching daylight baseline.",
-    "Original mapped exterior and public dining/bar interior with source review.",
-    "Targeted collision replacement, scoped route checks, optimized GLBs and current city bake.",
-    "Actual installed exterior/interior views, walking and matching performance."
+    "Continue source fidelity review: roof ridge/hip silhouette, sign panels, interior window reveals, booth visibility, wall decor and carpet/material detail.",
+    "Targeted collision replacement and surrounding-city route checks.",
+    "Optimized GLBs, packed data/current city bake; installed daylight exterior/interior views, walking and matching performance."
   ],
   "nextPass": {
     "priority": "Reference-supported restaurant exterior and public dining room.",
-    "checkpoint": "Claim confirmed; research complete. Baseline and original model pending."
+    "checkpoint": "Source study built and checked, not installed. Improve remaining source discrepancies before targeted installation. Existing live city remains verified east-courtyard pass."
   },
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/kung-fu-plaza-baseline/results.json",
+    "build/city-exteriors/kung-fu-plaza-source-review/entrance.png",
+    "build/city-exteriors/kung-fu-plaza-source-review/roof.png",
+    "build/city-exteriors/kung-fu-plaza-source-review/dining.png",
+    "build/city-exteriors/kung-fu-plaza-source-review/bar.png",
+    "build/strip-landmarks/kung-fu-plaza-route-audit.json",
+    "build/city-exteriors/kung-fu-plaza-source-review/booths.png"
+  ],
+  "publicInteriorPlan": {
+    "status": "inferred from public photograph; verify source and installed views",
+    "floorDatumM": 0.16,
+    "rooms": [
+      {
+        "name": "public dining",
+        "estimatedSizeM": [
+          11,
+          20
+        ],
+        "ceilingM": 3.4
+      },
+      {
+        "name": "bar alcove",
+        "estimatedSizeM": [
+          5,
+          3.5
+        ],
+        "ceilingM": 3.4
+      }
+    ],
+    "connections": [
+      "East street entrance through recessed twin-door opening to central dining aisle",
+      "Dining aisle to bar alcove; return through entrance"
+    ],
+    "excluded": [
+      "Hidden kitchen and service rooms",
+      "North neighboring cafe interior"
+    ],
+    "clearances": "Keep central aisle at least1.5m and door opening at least1.6m; test table/booth approach and return."
+  }
 }
