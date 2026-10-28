@@ -1468,9 +1468,15 @@
     {
       "id": "wahoos-flamingo",
       "name": "Wahoo\u2019s Fish Taco \u2014 Flamingo",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "wahoos-flamingo.json"
+    },
+    {
+      "id": "twain-laundry",
+      "name": "24 Hour Laundry Center \u2014 Twain",
+      "status": "active",
+      "record": "twain-laundry.json"
     }
   ],
-  "active": "wahoos-flamingo"
+  "active": "twain-laundry"
 }

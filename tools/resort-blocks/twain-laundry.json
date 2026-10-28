@@ -1,0 +1,69 @@
+{
+  "id": "twain-laundry",
+  "name": "24 Hour Laundry Center \u2014 Twain",
+  "status": "active",
+  "mappedIds": [
+    "way/390003970"
+  ],
+  "claim": {
+    "issue": 310,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/310",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://24hourlaundrycenter.com/",
+      "observed": "Official525ETwain address and self-service laundry services."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ji101ae6vWg3MV3O1u0kcQ&heading=270&pitch=0",
+      "observed": "December2022 eastfront:bluefascia,palecornice,red24HRSLAUNDROMATletters,fullheightmullionglazing,northcornerentry.Southendadjoinsotherretail.LatestdateatthispanoDec2022."
+    },
+    {
+      "url": "https://www.google.com/maps/place/24+Hour+Laundry+Center/@36.121053,-115.151472,18z/",
+      "observed": "OwnerJune2025photoCIABIhA-xN-r0UbTmbDNUMzODNKI(captureSep2024):stackedsilverdryers,blackrims,bluewalls,smallbrowntiles,redchairs.JaneSep2026photoCIABIhBA1tbZp1yOXk5ZImvauAmC:bluefoldingtables,blackhairpinlegs,tubularrails,wirecarts,whitegridceilingwithfluorescentpanels."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.121053,-115.151472,173m/data=!3m1!1e3",
+      "observed": "Aerial inspected:longnorth-southflatwhite roof onwestedgeofparking,small southwestnotch,multipleroofvents,parkingeast,ETwainnorth. Rooftopplantpositions approximate."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint roughly16x50m with small southwest notch. North laundry/south tenant division and room layout inferred; must verify source before installation.",
+    "StreetreferenceDec2022,interiorSep2026; newer permanent exterior appearance unverified."
+  ],
+  "implemented": [
+    "Claim310confirmed, officialaddress,streetandpublicinteriorreferencesvisuallyinspected."
+  ],
+  "remaining": [
+    "Baseline and original exterior/public room source; source and installed review, scoped routes, optimized assets/bake and actual walking/performance.",
+    "Hidden service rooms and neighboring tenant interior excluded."
+  ],
+  "nextPass": {
+    "priority": "Exterior and reference-supported public laundry room.",
+    "checkpoint": "Research/claim only; no geometry edits."
+  },
+  "publicInteriorPlan": {
+    "status": "inferred from public photographs",
+    "rooms": [
+      {
+        "name": "public washing/drying and folding area",
+        "estimatedSizeM": [
+          14,
+          24
+        ],
+        "ceilingM": 3.2
+      }
+    ],
+    "connections": [
+      "East entrance to central aisle",
+      "Aisle to dryer wall and folding tables; return"
+    ],
+    "excluded": [
+      "Private service rooms",
+      "Southern neighboring tenant interior"
+    ],
+    "clearances": "Maintain1.5m centralaisles and1.6m entrance; verify actual walking."
+  }
+}
