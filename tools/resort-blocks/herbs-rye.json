@@ -1,0 +1,41 @@
+{
+  "id": "herbs-rye",
+  "name": "Herbs & Rye",
+  "status": "active",
+  "mappedIds": [
+    "way/764345678"
+  ],
+  "claim": {
+    "issue": 318,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/318",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.herbsandrye.com/",
+      "observed": "Official address 3713 W Sahara; hero photo shows dark wooden bottle backbar and metal bar top."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2YLtuBEhEGaJxvwj7qoXkw&heading=180&pitch=0",
+      "observed": "January 2023 north frontage visually inspected: dusty red stucco, tan vertical piers/base, flat parapet, raised red lettering, left reader board, broad black shed awning and dark door at right, red tiled apron."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Herbs+and+Rye/@36.1440401,-115.1917877,18z/",
+      "observed": "Photo CIHM0ogKEICAgIDyvfefQw, Brian Mannasmith, posted August 2018/capture April 2013, visually inspected. Red damask wallpaper, dark wood wainscot, plank floor, mixed wooden chairs and tables, chandelier and sconces, brick accents. Old photo does not establish current layout."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint about 21x25 m. Heights, door width, public room extent and bar placement inferred; kitchen/private rooms excluded. Interior reference is old."
+  ],
+  "implemented": [
+    "Research and claim only. No geometry edits yet."
+  ],
+  "remaining": [
+    "Original exterior and public dining/bar source; source review; targeted install, optimization, bake, installed views/walking/performance."
+  ],
+  "nextPass": {
+    "priority": "Original exterior and reference-supported public dining/bar.",
+    "checkpoint": "Claim 318 confirmed. North frontage and attributed interior photo inspected. Baseline and source work next; live city is Mt. Everest 702 batches/1457 assets."
+  }
+}
