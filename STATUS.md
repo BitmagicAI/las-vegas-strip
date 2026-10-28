@@ -27,7 +27,7 @@ and the runtime asset list. Open work is in [tasks/BOARD.md](tasks/BOARD.md).
 
 ## Missing or unfinished
 
-- **Exterior refinement:** 220 tasks with 951 recorded gaps. No block has passed all seven completion gates; every one is `refinement-deferred` with its gaps listed.
+- **Exterior refinement:** 220 tasks with 952 recorded gaps. No block has passed all seven completion gates; every one is `refinement-deferred` with its gaps listed.
 - **Public interiors:** 5 casino resorts have a compressed, photo-informed lobby and casino that is not laid out to a plan (Caesars Palace, Flamingo, Horseshoe (Versailles tower), Planet Hollywood, ARIA). 15 more have no authored public interior on record, only the generic hotel lobby, corridors and rooms (Circus Circus, Encore, Wynn, Fontainebleau, Luxor, Mandalay Bay, MGM Grand, The Mirage, New York-New York, Palms, Resorts World, Rio, SAHARA, The STRAT, Westgate).
 - **Release tasks:** Finish separating the zombie game from the city; Record where every packed texture came from; Follow the published engine (3.1342 since 2026-10-26) (the `release` tasks on the board).
 - **Rebuilding geometry from a clone** needs a source pack that does not exist yet (`tool-source-pack`).

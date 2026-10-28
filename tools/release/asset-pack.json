@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1417,
- "bytes": 1082779947,
+ "bytes": 1082889813,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18882451,
-   "sha256": "5f3a356dd63abb37ee32cb44c2c8037fe4c2c58498886a8cf93940de12aeb243",
+   "bytes": 18883063,
+   "sha256": "4d6310dc179ea689ed0256a3a17241ed4f0b7b476db258e1f01f53e7bb29fce4",
    "kind": "original"
   },
   {
@@ -7074,14 +7074,14 @@
   },
   {
    "path": "build/strip-landmarks/motel6-stadium-exterior-collision.bin",
-   "bytes": 4432,
-   "sha256": "4f23e06ebf36639c5fd78a1c2e9c1788f0cca364ab60cfb119f5f903591521f1",
+   "bytes": 5764,
+   "sha256": "6c49e376ef33d2bb224268d825c140aa21578c2d56cfec6698d2c48f8e8bedb9",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/motel6-stadium-exterior.glb",
-   "bytes": 1626304,
-   "sha256": "2c5af5dfc6617b187bc2d0f961e6acb5d75ef6be6af2282d0db3ed0b79715972",
+   "bytes": 1734088,
+   "sha256": "927f239951d4bdf81bdb2fe875b6854956c3df8148e4f091e8772a4609a6e1ca",
    "kind": "optimized"
   },
   {
@@ -7092,8 +7092,8 @@
   },
   {
    "path": "build/strip-landmarks/motel6-stadium-interior.glb",
-   "bytes": 76456,
-   "sha256": "090f6baadad6c03d53184d1609fb36954847a97f82d0c4e7d7640e7294cf20e4",
+   "bytes": 76480,
+   "sha256": "e22bb991acba2d811cd6c3c1b82b8ebb71bf3aea4773f75c0d3b2a3e131409ac",
    "kind": "optimized"
   },
   {
@@ -8322,8 +8322,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 350954,
-   "sha256": "f836aa5b1b88db0d4bea4f7bdb8dc570d4aa4114e4df39215f1e107ea5ec09d5",
+   "bytes": 351068,
+   "sha256": "68fca33017aa284a12a1fa4befedc248ed3987c0408fe3010b67e0f0c8379658",
    "kind": "original"
   },
   {

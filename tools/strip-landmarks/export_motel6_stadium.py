@@ -4,12 +4,13 @@ import numpy as np
 from pathlib import Path
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
-E.colors.update({'m6-grout':'958e7d','m6-dark-tile':'777064','m6-mat':'303a3b','m6-light-trim':'e4e0c6','m6-white-stucco':'d2d0c5','m6-roof':'a8aaa4','m6-shingle':'74796c','m6-white-paint':'d7ddd6','m6-frame':'a6ada5','m6-blue-paint':'3162a1','m6-metal':'8e9692','m6-number':'cecab6','m6-glass':'263c3e','m6-ac':'b8b9ae','m6-vent':'535b59','m6-deck-concrete':'a1a298','m6-letter':'f1f0e9','m6-lobby-tile':'c4bca9','m6-interior':'d4cfc1','m6-ceiling':'d8d6ca','m6-coffee-wood':'494541','m6-counter':'b8b3a6','m6-screen':'252b2d','m6-chair':'414b49','m6-appliance':'d8d9d2','m6-control':'747d7c','m6-vending':'34465a','stone':'b4b7ad','steel':'cbd3cd'})
+E.colors.update({'m6-grout':'958e7d','m6-dark-tile':'777064','m6-mat':'303a3b','m6-light-trim':'e4e0c6','m6-white-stucco':'d2d0c5','m6-membrane-paint':'a8aaa4','m6-shingle':'74796c','m6-white-paint':'d7ddd6','m6-frame-paint':'d7ddd6','m6-blue-paint':'3162a1','m6-metal-paint':'8e9692','m6-number':'cecab6','m6-glass':'263c3e','m6-ac':'b8b9ae','m6-vent':'535b59','m6-deck-concrete':'a1a298','m6-letter':'f1f0e9','m6-lobby-tile':'c4bca9','m6-interior':'d4cfc1','m6-ceiling':'d8d6ca','m6-coffee-wood':'494541','m6-counter':'b8b3a6','m6-screen':'252b2d','m6-chair':'414b49','m6-appliance':'d8d9d2','m6-control':'747d7c','m6-vending':'34465a','stone':'b4b7ad','steel':'cbd3cd'})
+E.colors.update({'m6-pool-tile':'61969e','m6_pool':'4c8e9c'})
 for part in ['exterior','interior']:
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('motel6-stadium-'+part)
  for key,m in E.materials.items():
   m.node_tree.nodes.get('Principled BSDF').inputs['Roughness'].default_value=.86
-  if key in ['m6-metal','m6-frame']:m.node_tree.nodes.get('Principled BSDF').inputs['Metallic'].default_value=.5
+  if key in ['m6-metal-paint']:m.node_tree.nodes.get('Principled BSDF').inputs['Metallic'].default_value=.5
  # Original small-scale shingle colour variation; no reference photograph used.
  if 'm6-shingle' in E.materials:
   m=E.materials['m6-shingle'];bs=m.node_tree.nodes.get('Principled BSDF');rng=np.random.default_rng(284);n=256

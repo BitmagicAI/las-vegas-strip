@@ -39,14 +39,17 @@
   "implemented": [
     "Source model: mapped two-storey H footprint, blue room doors, windows/AC units, upper galleries and east stair, mitred shingle roof fascia.",
     "Reference-supported lobby/laundry furnishings with explicitly inferred connecting plan; exterior and interior GLBs exported.",
-    "Targeted replacement removes 190 owned city triangles and collision triangles; surrounding city routes pass."
+    "Targeted replacement removes 190 owned city triangles and collision triangles; surrounding city routes pass.",
+    "Northern courtyard pool with animated water, coping, fenced deck, gate, handrails and simple loungers; aerial-estimated dimensions.",
+    "Motel-local painted frame/metal and membrane material names preserve authored finishes without global material changes."
   ],
   "remaining": [
-    "Finish pool courtyard, arrival planting and furniture; verify end-gallery connections and additional stairs from references.",
-    "Pool draft needs source review, integration, packed collision and installed walking; keep current public routes verified.",
-    "Refine plain end walls, lobby glazing and sparse interior furnishings; current source is not photorealistic.",
-    "Reference dimensions, stair placement and hidden interior plan remain estimates.",
-    "Installed review found mottled metal detail on window/door frames and bitumen banding on flat roof; rename only motel finish materials to preserve authored painted/membrane appearance."
+    "Arrival palm/rock planter, landscaping, services and street-level detailing remain missing.",
+    "Verify additional stairs and end-gallery connections from references; only east stair and its gallery route tested.",
+    "Plain end walls, sparse lobby/laundry furnishings and opaque lobby glazing need refinement; no photorealistic completion claim.",
+    "Pool furniture placement, pool dimensions, stair dimensions and hidden interior plan remain inferred; add furniture collision where appropriate.",
+    "Existing generic courtyard drive does not match aerial parking layout; any future correction must be targeted and preserve public roads.",
+    "Performance remains below60fps; final gallery median59.3ms, most other sampledviews31\u201334ms. Shared-machine measurements, no regression-freeclaim."
   ],
   "evidence": [
     {
@@ -119,10 +122,47 @@
       "missingAssets": 0,
       "cityBatches": 686,
       "note": "Shared machine, walking probe overlapped some exterior measurement; descriptive samples only, no controlled regression or60fpsclaim. Lobby/laundry sparse and flat. Gallery60.2/64.7ms."
+    },
+    {
+      "type": "installed-pool-and-material-revision",
+      "path": "build/city-exteriors/motel6-stadium-pool-installed",
+      "viewsInspected": 5,
+      "walking": "build/city-exteriors/motel6-stadium-pool-walk/results.json",
+      "segmentsPassed": 36,
+      "routesPassed": 5,
+      "scopedChecks": 315,
+      "failures": 0,
+      "triangles": 67758,
+      "packageAssets": 1417,
+      "missingAssets": 0,
+      "cityBatches": 686,
+      "frameTimesMs": {
+        "pool": {
+          "median": 34.2,
+          "p95": 37.6
+        },
+        "arrival": {
+          "median": 32.5,
+          "p95": 35.6
+        },
+        "lobby": {
+          "median": 31.4,
+          "p95": 34.9
+        },
+        "laundry": {
+          "median": 32.2,
+          "p95": 35.1
+        },
+        "gallery": {
+          "median": 59.3,
+          "p95": 71.5
+        }
+      },
+      "note": "Pool and corrected white frames visibly confirmed. Public interiors remain sparse. Checks sequential; shared-machine load uncontrolled."
     }
   ],
   "nextPass": {
-    "priority": "Continue immediately with pool draft and motel-local material corrections.",
-    "checkpoint": "203scopedchecks and26actualwalkingsegments pass;8installedviews inspected;1417assets0missing/686batchcurrent. Pool draft112checks pass but not installed."
+    "priority": "Finish arrival planting/services and verify remaining gallery/stair connections, then continue to next unclaimed building with retained refinements.",
+    "checkpoint": "67758triangles installed;315scopedchecks/36actualwalkingsegments pass,5finalviewsinspected,1417assets0missing/686batchcurrent. No running model pipeline. Initialinstalledcheckpoint40f98a7; poolrevision follows."
   }
 }
