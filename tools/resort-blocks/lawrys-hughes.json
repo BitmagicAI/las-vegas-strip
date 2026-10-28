@@ -9,7 +9,8 @@
     "issue": 348,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/348",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/349"
   },
   "sources": [
     {
@@ -31,21 +32,180 @@
     {
       "url": "https://lawrys.merchantview360.com/#46300165p&0.41h&90.42t",
       "observed": "Bar panorama inspected: woodpanel walls/coffer ceiling and plankfloor, long oval communal table, rear straightbar with tallstools, mirrored bottleshelves, red leftbench/tealrightbench and smallroundtables. Exactroomplacement unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Lawrys+4043+Howard+Hughes+Las+Vegas",
+      "observed": "Satellite aerial visually inspected at20ftscale: east porte-cochere projects to drive; elongated north-south central roof with curved ends, flatwest service roof/equipment, teal perimeter hippedroofs, curved eastern entrancevolume, north/south parking and southeast accessible bays. Roof/elevations require fitting, not surveyed."
+    },
+    {
+      "url": "https://lawrys.merchantview360.com/#46300156p&271.14h&90t",
+      "observed": "Followed entrance arrow into public lounge, then forward toward host: wood panel walls, red patterned carpet, elliptical stepped ceiling recess, red sofas and pale blue chairs near entrance, teal lounge seats farther in, stone fireplace left, bar opening right, central host desk framed by four wood columns with luminous capitals. Relative sequence confirmed; dimensions and full room coordinates remain estimated."
     }
   ],
   "uncertainDimensions": [
     "Mapped6mheight estimated; no surveyed canopy or room dimensions.",
     "Tour establishes appearance and some connections, not full floorplan."
   ],
-  "implemented": [],
+  "implemented": [
+    "Initial original exterior installed: open four-pier porte-cochere, grid hip canopy, curved silver entrance fascia, red plinth/sign pier, teal perimeter roofs, curved-end raised central roof and service equipment.",
+    "Scoped146-face placeholder/collision replacement; current city bake and optimized asset package refreshed."
+  ],
   "remaining": [
     "Aerial and exterior footprint fit",
     "Original exterior/site geometry",
     "Public entrance/dining layout using reference-supported connections",
-    "Scoped replacement, collision, installedviews, performance and packaging"
+    "Scoped replacement, collision, installedviews, performance and packaging",
+    "Refine entry: actual curved silver fascia is narrower than initial full-width glass bay; cream wall returns and steel vestibule remain inaccurate.",
+    "Add reference-supported public lounge and rooms; currently exterior only, entrance is not accessible.",
+    "Refine canopy transmission/structure and roof finishes",
+    "Side-wall detail, site landscaping and entry apron",
+    "Performance regression unresolved; shared-machine render load present during measurement"
   ],
   "nextPass": {
-    "priority": "Capture baseline and map entrance/tour connections before authoring",
-    "checkpoint": "Claim348 confirmedjaniverse; no buildingedits yet. Scope waits for Buca verified commit and stackedbranch/draftPR."
+    "priority": "Refine entrance and implement reference-supported public lounge before closing this building task",
+    "checkpoint": "All3installedexteriorviewsinspected;120staticcanopyclearancespass. Fouractualcanopywalkingsegmentspass. Current718batchbake/1505assetsstaged. Full public interior not yet authored. Keepclaim348/draft349active."
+  },
+  "baseline": {
+    "directory": "build/city-exteriors/lawrys-hughes-baseline-clean",
+    "visualReview": "All three images inspected: untextured solid shell and filled canopy projection. No existing detail.",
+    "timingsMs": [
+      {
+        "name": "front",
+        "eye": [
+          1230,
+          2,
+          104
+        ],
+        "target": [
+          1201,
+          3,
+          99
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.200000047683716
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1240,
+          40,
+          130
+        ],
+        "target": [
+          1181,
+          1,
+          95
+        ],
+        "p50": 16.5,
+        "p95": 29.200000047683716
+      },
+      {
+        "name": "south",
+        "eye": [
+          1185,
+          2,
+          132
+        ],
+        "target": [
+          1180,
+          3,
+          111
+        ],
+        "p50": 16.699999928474426,
+        "p95": 26.5
+      }
+    ]
+  },
+  "interiorPlan": {
+    "evidence": "Entrance panorama followed forward into lounge then host stand. Bar visible on right when looking inward (north side in fitted frame).",
+    "proposedPublicRooms": [
+      "Entrance vestibule",
+      "Seated lounge with host desk",
+      "North-side bar",
+      "Main dining room, connection to verify before implementation"
+    ],
+    "inferredDimensions": "Vestibule about 4x3m; lounge about 6x12m, ceiling about3.3m. Estimates only from furniture scale; not measured.",
+    "fidelityLimits": [
+      "No kitchen/service circulation plan",
+      "No surveyed private room positions",
+      "Do not replicate photographic artwork"
+    ]
+  },
+  "verification": {
+    "sourceTriangles": 9039,
+    "optimizedExteriorMiB": 0.77,
+    "ownership": "146 owned faces and matching collision triangles removed;9560 surrounding groups retain vertices/metadata/face order",
+    "canopy": "120 current-city clearance samples pass; 3m-tall test envelope starts0.5m above world to clear raised existing ground",
+    "installedViews": {
+      "directory": "build/city-exteriors/lawrys-hughes-first-exterior",
+      "inspected": [
+        "front",
+        "roof",
+        "south"
+      ],
+      "findings": [
+        "Canopy now visibly open",
+        "Roof massing present but provisional",
+        "Entrance glass bay too wide versus official tour",
+        "Canopy too opaque and grid/ribs need refinement",
+        "Side walls and site landscaping still sparse",
+        "Roof finish and joints need closer review"
+      ]
+    },
+    "performanceCaveat": "Other-session Blender render jobs running; final timings must note shared-machine load.",
+    "timingsMs": [
+      {
+        "name": "front",
+        "eye": [
+          1230,
+          2,
+          104
+        ],
+        "target": [
+          1201,
+          3,
+          99
+        ],
+        "p50": 31.800000071525574,
+        "p95": 42.799999952316284
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1240,
+          40,
+          130
+        ],
+        "target": [
+          1181,
+          1,
+          95
+        ],
+        "p50": 22.5,
+        "p95": 32.90000009536743
+      },
+      {
+        "name": "south",
+        "eye": [
+          1185,
+          2,
+          132
+        ],
+        "target": [
+          1180,
+          3,
+          111
+        ],
+        "p50": 17.100000023841858,
+        "p95": 28.200000047683716
+      }
+    ],
+    "package": "718 city batches;1505 packaged assets;current bake verified",
+    "walking": {
+      "directory": "build/city-exteriors/lawrys-hughes-first-walk",
+      "passed": true,
+      "segments": 4,
+      "scope": "Real player walks both directions under canopy; no public interior yet."
+    }
   }
 }

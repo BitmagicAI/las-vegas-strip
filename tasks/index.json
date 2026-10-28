@@ -14308,15 +14308,20 @@
    "id": "ext-lawrys-hughes",
    "title": "Refine the exterior of Lawrys The Prime Rib Howard Hughes",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 9 known gaps are recorded.",
    "items": [
     "Aerial and exterior footprint fit",
     "Original exterior/site geometry",
     "Public entrance/dining layout using reference-supported connections",
-    "Scoped replacement, collision, installedviews, performance and packaging"
+    "Scoped replacement, collision, installedviews, performance and packaging",
+    "Refine entry: actual curved silver fascia is narrower than initial full-width glass bay; cream wall returns and steel vestibule remain inaccurate.",
+    "Add reference-supported public lounge and rooms; currently exterior only, entrance is not accessible.",
+    "Refine canopy transmission/structure and roof finishes",
+    "Side-wall detail, site landscaping and entry apron",
+    "Performance regression unresolved; shared-machine render load present during measurement"
    ],
    "record": "tools/resort-blocks/lawrys-hughes.json",
    "buildings": [],
@@ -14328,7 +14333,13 @@
     "writes": [
      "tools/resort-blocks/lawrys-hughes.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/city-exteriors/install-lawrys-hughes.py",
+     "tools/strip-landmarks/export_lawrys_hughes.py",
+     "tools/city-exteriors/check-lawrys-hughes-preservation.py",
+     "tools/strip-landmarks/lawrys_hughes.py",
+     "tools/strip-landmarks/test-lawrys-hughes.mjs"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

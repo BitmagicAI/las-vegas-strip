@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1503,
- "bytes": 1126712475,
+ "count": 1505,
+ "bytes": 1127527575,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19593619,
-   "sha256": "3e7680025ffa0fb8c27caa24bfe95dc08657ef6c0d72355be47570b5db0b3d7b",
+   "bytes": 19602965,
+   "sha256": "e086c7f4bfb1169858ae84795af3b511a90992c061db397a0d40a47c0259fc66",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13058472,
-   "sha256": "e78e28c904e94f4c4a1695fd981e655d0705feffa54f0df0b55a62000578411a",
+   "bytes": 13059184,
+   "sha256": "d8a5d06ca86f0344c9f7f05b69391c14115e9933cf7822f1865fe43c38542306",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109739364,
-   "sha256": "49396b0ad969a94c1399435ee8b4372817d2dc2e402cbc04d558de434de32eee",
+   "bytes": 109737392,
+   "sha256": "8e50d7f072dd0914cb1e518bdd56ad428bb83fcf476cb03f4883e808b9653d9a",
    "kind": "optimized"
   },
   {
@@ -7097,6 +7097,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/lawrys-hughes-exterior-collision.bin",
+   "bytes": 572,
+   "sha256": "ae8239d42d8b15ac2265f2e4cd90a2f451ac814de78b580c13810e3ab027e60c",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/lawrys-hughes-exterior.glb",
+   "bytes": 806292,
+   "sha256": "f679c44230ce258bde1199d4f7e5dcd72ec4f6ceb298f6c02ade098520aafa34",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/linq-exterior-collision.bin",
    "bytes": 3136,
    "sha256": "9e9655007391d36589de349c04219b79a79634b5aab30ed2b633ee3d318eb5d2",
@@ -8826,8 +8838,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 366658,
-   "sha256": "2908ff2e0aae1b6dcee697ead0164510754ce582f41868ac210b6cfe63c5b2d2",
+   "bytes": 366808,
+   "sha256": "98bf8b87212c94314dc59a268084bf7758c61bc0785c1bc575f0f01d1eded1be",
    "kind": "original"
   },
   {
