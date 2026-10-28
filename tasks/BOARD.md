@@ -260,7 +260,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-twain-laundry` | M | P3 | 3 | Refine the exterior of 24 Hour Laundry Center — Twain |
 | `ext-favorita-market` | S | P3 | 2 | Refine the exterior of La Favorita Market — Twain |
 | `ext-marianas-sahara` | S | P3 | 2 | Refine the exterior of Mariana’s Supermarkets — Sahara |
-| `ext-mt-everest-sahara` | S | P3 | 1 | Refine the exterior of Mt. Everest India's Cuisine — Sahara |
+| `ext-mt-everest-sahara` | M | P3 | 3 | Refine the exterior of Mt. Everest India's Cuisine — Sahara |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

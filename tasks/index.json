@@ -2507,7 +2507,7 @@
      "tools/city-exteriors/test-sahara.mjs",
      "tools/highrises/interiors.py",
      "tools/strip-landmarks/export_marianas_sahara.py",
-     "tools/city-exteriors/install-marianas-sahara.py"
+     "tools/strip-landmarks/export_mt_everest_sahara.py"
     ]
    },
    "acceptance": [
@@ -13601,12 +13601,14 @@
    "id": "ext-mt-everest-sahara",
    "title": "Refine the exterior of Mt. Everest India's Cuisine — Sahara",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Original exterior/public dining, source views, scoped collision replacement, optimized assets, bake, installed inspection/walking/performance pending."
+    "Exact sign lettering/proportions, roof hips/tile seams, opaque glazing, repetitive brick and inferred services remain simplified.",
+    "Public room layout and dimensions are inferred; hidden service/kitchen rooms remain closed. Carpet reads as broad streaks, glassware is opaque, buffet steel/food and furniture upholstery need finer material/geometry work.",
+    "Not consistently 60 fps. Exterior front median 21.8 ms; interior medians 16.8–24.4 ms, p95 up to 48.2 ms. Not photorealistic completion."
    ],
    "record": "tools/resort-blocks/mt-everest-sahara.json",
    "buildings": [],
@@ -13618,7 +13620,14 @@
     "writes": [
      "tools/resort-blocks/mt-everest-sahara.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_mt_everest_sahara.py",
+     "tools/strip-landmarks/review_mt_everest_sahara_interior.py",
+     "tools/strip-landmarks/test-mt-everest-sahara.mjs",
+     "tools/city-exteriors/install-mt-everest-sahara.py",
+     "tools/city-exteriors/check-mt-everest-sahara-preservation.py",
+     "tools/strip-landmarks/review_mt_everest_sahara.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

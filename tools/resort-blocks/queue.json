@@ -1500,8 +1500,12 @@
     {
       "id": "mt-everest-sahara",
       "name": "Mt. Everest India's Cuisine \u2014 Sahara",
-      "status": "active",
-      "record": "mt-everest-sahara.json"
+      "status": "refinement-deferred",
+      "record": "mt-everest-sahara.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Installed first pass inspected and walked; fidelity and performance refinements retained while advancing city coverage."
+      }
     }
   ],
   "active": "mt-everest-sahara"
