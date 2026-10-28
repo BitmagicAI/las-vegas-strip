@@ -14263,10 +14263,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Current exterior corroboration and site footprint fit",
-    "Exterior, signs, roof and public approach geometry",
-    "Reference-supported public dining room and entry circulation; document inferred layout",
-    "Scoped replacement, collision/walk checks, installed views and performance, optimized packaging"
+    "Current exterior corroboration and exact sign ornament, planting, site parking and rear service detail",
+    "Opaque backed glazing; sparse inferred dining layout, repeated abstract art, missing booths and overbright fixtures; no complete-floorplan claim",
+    "Estimated height, room placement, roof equipment dimensions; no hidden service layout evidence",
+    "Performance tails exceed16.7ms; final exterior16.7–17.8ms median/p9525.3–31.2ms, interior16.7–17.4/p9524.9–35.1ms; no steady60fps claim"
    ],
    "record": "tools/resort-blocks/buca-flamingo.json",
    "buildings": [],
@@ -14276,9 +14276,24 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
+     "runtime-assets/baked/city-lod.bin",
+     "runtime-assets/geographic-strip/city-colliders.bin",
+     "runtime-assets/geographic-strip/city.glb",
+     "runtime-assets/strip-landmarks/buca-flamingo-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/buca-flamingo-exterior.glb",
+     "runtime-assets/strip-landmarks/buca-flamingo-interior-collision.bin",
+     "runtime-assets/strip-landmarks/buca-flamingo-interior.glb",
+     "runtime-assets/strip-landmarks/venues.bin",
      "tools/resort-blocks/buca-flamingo.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/bake/bake-city.mjs",
+     "tools/geographic-strip/export_detailed.py",
+     "tools/strip-landmarks/test-buca-flamingo.mjs",
+     "tools/city-exteriors/install-buca-flamingo.py",
+     "tools/optimize/optimize-runtime-glbs.mjs",
+     "tools/city-exteriors/replace-city-market-liquor.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

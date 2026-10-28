@@ -30,16 +30,19 @@
     "Mapped height 6 m estimated. Bay heights, canopy elevation and parapets require photo fitting.",
     "Interior room placement and concealed service plan unknown. Use original abstract decorations, no copied photographic art."
   ],
-  "implemented": [],
+  "implemented": [
+    "Initial original geometry: mapped maroon shell, southwest entrance and porch, stone pier, striped awnings, retro sign, roof equipment and frontage planting.",
+    "Reference-character public dining room: barrel vault, rust walls, dark wood wainscot, checkcloth tables/chairs, original abstract framed art and chandeliers. Room placement inferred; no concealed service plan claim."
+  ],
   "remaining": [
-    "Current exterior corroboration and site footprint fit",
-    "Exterior, signs, roof and public approach geometry",
-    "Reference-supported public dining room and entry circulation; document inferred layout",
-    "Scoped replacement, collision/walk checks, installed views and performance, optimized packaging"
+    "Current exterior corroboration and exact sign ornament, planting, site parking and rear service detail",
+    "Opaque backed glazing; sparse inferred dining layout, repeated abstract art, missing booths and overbright fixtures; no complete-floorplan claim",
+    "Estimated height, room placement, roof equipment dimensions; no hidden service layout evidence",
+    "Performance tails exceed16.7ms; final exterior16.7\u201317.8ms median/p9525.3\u201331.2ms, interior16.7\u201317.4/p9524.9\u201335.1ms; no steady60fps claim"
   ],
   "nextPass": {
-    "priority": "Corroborate frontage, capture baseline, then author exterior and public dining space",
-    "checkpoint": "Claim346 confirmed janiverse; draftPR347 attached, branch task/ext-buca-flamingo. Three actual baseline views inspected, medians16.6\u201316.7ms/p9517.9\u201321.6ms. No Buca geometry edited. Corroborate current exterior, then author mapped rotated shell, southwest entrance/approach, signs, striped awnings, roof and reference-supported public dining space; mark inferred layout."
+    "priority": "Refine documented Buca facade and public-room discrepancies; then advance city coverage",
+    "checkpoint": "Final three exterior and three interior captures available and inspected;119static current-city samples and12revised actualwalking segments passed. Current717batch bake/1503assets packaged. Save scoped checkpoint commit and draft347 update; keep architectural limitations visible. Lawrys is researched but unclaimed."
   },
   "verification": {
     "baseline": "build/city-exteriors/buca-flamingo-baseline/results.json",
@@ -90,6 +93,131 @@
         "p95": 17.899999976158142
       }
     ],
-    "baselineVisualReview": "All three installed baseline views inspected: plain mapped box, no current facade or public interior detail."
+    "baselineVisualReview": "All three installed baseline views inspected: plain mapped box, no current facade or public interior detail.",
+    "firstInstalledExterior": "build/city-exteriors/buca-flamingo-installed/results.json",
+    "firstInstalledInterior": "build/city-exteriors/buca-flamingo-interior/results.json",
+    "initialWalking": "build/city-exteriors/buca-flamingo-walk/results.json",
+    "scopedPreservation": "9560 surrounding groups preserved; only 10 owned shell visual/collision faces removed.",
+    "refinedWalking": "build/city-exteriors/buca-flamingo-refined-walk/results.json",
+    "refinedInterior": "build/city-exteriors/buca-flamingo-refined-interior/results.json",
+    "staticRoutes": {
+      "samples": 119,
+      "currentCity": true,
+      "passed": true
+    },
+    "refinedVisualReview": "All three refined installed interior views inspected: table legs and capped plates visible, wavy ceiling texture removed. Abstract collage remains repetitive, decoration sparse and fixtures overbright; not photorealistic.",
+    "finalExterior": "build/city-exteriors/buca-flamingo-final-exterior/results.json",
+    "finalInterior": "build/city-exteriors/buca-flamingo-final-interior/results.json",
+    "packaging": {
+      "batches": 717,
+      "assets": 1503,
+      "sourceTriangles": 9544
+    },
+    "afterExterior": [
+      {
+        "name": "front",
+        "eye": [
+          1882,
+          2,
+          143
+        ],
+        "target": [
+          1900,
+          3,
+          125
+        ],
+        "p50": 16.799999952316284,
+        "p95": 29
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1872,
+          32,
+          151
+        ],
+        "target": [
+          1900,
+          1,
+          117
+        ],
+        "p50": 16.700000047683716,
+        "p95": 25.300000071525574
+      },
+      {
+        "name": "east",
+        "eye": [
+          1935,
+          2,
+          137
+        ],
+        "target": [
+          1913,
+          3,
+          116
+        ],
+        "p50": 17.799999952316284,
+        "p95": 31.200000047683716
+      }
+    ],
+    "afterInterior": [
+      {
+        "name": "entry",
+        "eye": [
+          1893.7675848014387,
+          1.8,
+          129.89869300550876
+        ],
+        "target": [
+          1892.5994847618774,
+          1.8,
+          122.99684236255965
+        ],
+        "p50": 17.399999976158142,
+        "p95": 35.10000002384186
+      },
+      {
+        "name": "dining",
+        "eye": [
+          1892.951351975108,
+          1.8,
+          119.08325200787853
+        ],
+        "target": [
+          1905.58407881872,
+          2,
+          121.81349238093868
+        ],
+        "p50": 16.700000047683716,
+        "p95": 31.899999976158142
+      },
+      {
+        "name": "tables",
+        "eye": [
+          1901.7917856577697,
+          1.8,
+          117.38421336721555
+        ],
+        "target": [
+          1907.556036145277,
+          2,
+          121.47974951249262
+        ],
+        "p50": 16.699999928474426,
+        "p95": 24.90000009536743
+      }
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/baked/city-lod.bin": "43f13e727ff3988321be269addd6c75570acaaead78d02f28f91aeaacfee69c0",
+      "runtime-assets/geographic-strip/city.glb": "49396b0ad969a94c1399435ee8b4372817d2dc2e402cbc04d558de434de32eee",
+      "runtime-assets/geographic-strip/city-colliders.bin": "e78e28c904e94f4c4a1695fd981e655d0705feffa54f0df0b55a62000578411a",
+      "runtime-assets/strip-landmarks/venues.bin": "29ab2c5c1836ef90a59ed0955bf3f5a8a9b28a087861a87b20fbce3954fdb277",
+      "runtime-assets/strip-landmarks/buca-flamingo-exterior-collision.bin": "7e78a1a9c899a79aa9ffc13fb0e567db21a39aa37cf1cd924cc35a66ac105883",
+      "runtime-assets/strip-landmarks/buca-flamingo-interior.glb": "a18ebe4e258b698e34ea7d75cec0b574b1dba3a36ba458b513fb696c0ff01f60",
+      "runtime-assets/strip-landmarks/buca-flamingo-exterior.glb": "f78c0ba496efc9bc0b3a6648f7f06a358db3517df4bc340f678d2db77196ce10",
+      "runtime-assets/strip-landmarks/buca-flamingo-interior-collision.bin": "3ecedb38222023bbd07fb47901267e612073bffc2cd385524622a60e8bd7f428"
+    }
   }
 }
