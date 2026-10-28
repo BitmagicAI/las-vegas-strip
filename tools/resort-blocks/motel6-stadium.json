@@ -22,7 +22,7 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CpA7fanQEm10yMN4OavNrg&heading=268&pitch=0",
       "accessDate": "2026-10-27",
       "imageDate": "December2022",
-      "observed": "Two levels, offwhite stucco, blue doors, broad dark windows and below-windowAC, upper white rail galleries, shallow gray shingle fascia. Blue welcome/lobbyfront at northeastend of eastwing, palmrockplanter."
+      "observed": "Two levels, offwhite stucco, blue doors, broad dark windows and below-windowAC, upper white rail galleries, shallow gray shingle fascia. Blue welcome/lobbyfront at northeastend of eastwing, palmrockplanter. Revisited: raised rounded stone planter north of entry has four visible palms of varied heights and pale gravel; planter dimensions inferred. South-facing view confirms long continuous street gallery but does not resolve hidden stairs."
     },
     {
       "url": "https://www.google.com/maps/@36.0977523,-115.181986,347m/data=!3m1!1e3",
@@ -34,22 +34,25 @@
     "Imported height6m has unknown source; estimate from two visiblelevels, not surveyed.",
     "Mapped western wing narrow (~6.7m); check gallery/shell interpretation.",
     "Lobby entrance established at northeast of eastwing; hidden lobby/laundry connection and exactplan remain inferred.",
-    "Surveyname ParkInn differs from currentofficialMotel6; officialbodytext inconsistently says5001 whileheading/address andStreetView say5085."
+    "Surveyname ParkInn differs from currentofficialMotel6; officialbodytext inconsistently says5001 whileheading/address andStreetView say5085.",
+    "Arrival planter outline and four palm positions/heights are inferred from December2022 Street View; no surveyed planting plan."
   ],
   "implemented": [
     "Source model: mapped two-storey H footprint, blue room doors, windows/AC units, upper galleries and east stair, mitred shingle roof fascia.",
     "Reference-supported lobby/laundry furnishings with explicitly inferred connecting plan; exterior and interior GLBs exported.",
     "Targeted replacement removes 190 owned city triangles and collision triangles; surrounding city routes pass.",
     "Northern courtyard pool with animated water, coping, fenced deck, gate, handrails and simple loungers; aerial-estimated dimensions.",
-    "Motel-local painted frame/metal and membrane material names preserve authored finishes without global material changes."
+    "Motel-local painted frame/metal and membrane material names preserve authored finishes without global material changes.",
+    "Raised rounded arrival planter with stone courses, gravel, rocks and four original fan palms, based on December2022 Street View; public bypass walked."
   ],
   "remaining": [
-    "Arrival palm/rock planter, landscaping, services and street-level detailing remain missing.",
+    "Arrival parking/curb layout, services and further street-level detailing remain incomplete; existing generic drive geometry conflicts with real parking layout.",
     "Verify additional stairs and end-gallery connections from references; only east stair and its gallery route tested.",
     "Plain end walls, sparse lobby/laundry furnishings and opaque lobby glazing need refinement; no photorealistic completion claim.",
     "Pool furniture placement, pool dimensions, stair dimensions and hidden interior plan remain inferred; add furniture collision where appropriate.",
     "Existing generic courtyard drive does not match aerial parking layout; any future correction must be targeted and preserve public roads.",
-    "Performance remains below60fps; final gallery median59.3ms, most other sampledviews31\u201334ms. Shared-machine measurements, no regression-freeclaim."
+    "Performance remains below60fps: latest matched-view medians19.6\u201330.1ms, p95up to49.3ms. Shared-machine measurements, no controlled improvement claim.",
+    "Palms and sparse public-room furnishings remain visibly stylized; further material and foliage refinement needed."
   ],
   "evidence": [
     {
@@ -159,10 +162,48 @@
         }
       },
       "note": "Pool and corrected white frames visibly confirmed. Public interiors remain sparse. Checks sequential; shared-machine load uncontrolled."
+    },
+    {
+      "type": "installed-arrival-planter",
+      "path": "build/city-exteriors/motel6-stadium-arrival-installed",
+      "viewsInspected": 7,
+      "walking": "build/city-exteriors/motel6-stadium-arrival-walk/results.json",
+      "routesPassed": 6,
+      "segmentsPassed": 40,
+      "scopedChecks": 345,
+      "failures": 0,
+      "triangles": 82612,
+      "packageAssets": 1417,
+      "missingAssets": 0,
+      "cityBatches": 686,
+      "frameTimesMs": {
+        "pool": {
+          "median": 19.6,
+          "p95": 36.4
+        },
+        "arrival": {
+          "median": 27.3,
+          "p95": 31.4
+        },
+        "lobby": {
+          "median": 27.6,
+          "p95": 32.7
+        },
+        "laundry": {
+          "median": 26.5,
+          "p95": 32
+        },
+        "gallery": {
+          "median": 30.1,
+          "p95": 49.3
+        }
+      },
+      "note": "Installed planter visible and approach clear. Stylized palms, generic courtyard-drive mismatch and sparse rooms retained as discrepancies; not a photorealistic completion.",
+      "closeViews": "build/city-exteriors/motel6-stadium-arrival-close"
     }
   ],
   "nextPass": {
-    "priority": "Finish arrival planting/services and verify remaining gallery/stair connections, then continue to next unclaimed building with retained refinements.",
-    "checkpoint": "67758triangles installed;315scopedchecks/36actualwalkingsegments pass,5finalviewsinspected,1417assets0missing/686batchcurrent. No running model pipeline. Initialinstalledcheckpoint40f98a7; poolrevision follows."
+    "priority": "Reference-verify hidden/end gallery connections and refine sparse public rooms, landscaping and parking fit.",
+    "checkpoint": "Arrival planter installed;345scopedchecks and40walkingsegments/6routes pass. 7installedviewsinspected;1417assets0missing,686batchcurrent. Advancing to claimed museum building with close arrival review complete; refinements retained."
   }
 }

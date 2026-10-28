@@ -107,6 +107,8 @@ def build(B):
  routes=[dict(name='Lobby arrival',points=[[-777,y,2002.3],[-782.4,y,2002.3],[-786,y,2002.3]]),dict(name='Lobby coffee and seating',points=[[-786,y,2002.3],[-786,y,2007.3],[-784.2,y,2007.3]]),dict(name='Laundry passage',points=[[-786,y,2002.3],[-789,y,2003],[-792,y,2003],[-793.5,y,2007.7]]),dict(name='East gallery stairs',points=[[-777.4,y,2025.2],[-777.4,y,2025.6],[-777.4,1.69,2028.8],[-777.4,upper,2032],[-777.4,upper,2032.65],[-780.1,upper,2032.65],[-780.1,upper,2015]])]
  from motel6_pool import add_pool
  routes.extend(add_pool(B,F))
- return dict(key=KEY,name='Motel 6 I-15 Stadium',center=[p.centroid.x,0,p.centroid.y],bounds=[-846,1985,-775,2069],structural=True,exteriorOnly=False,portals=[entry],zones=[dict(origin=[-797,y,1999.15],yaw=0,width=15.5,depth=11.35,height=2.83)],lights=B.lights,routes=routes,hotelSources=[])
+ from motel6_arrival import add_arrival
+ routes.extend(add_arrival(B,F))
+ return dict(key=KEY,name='Motel 6 I-15 Stadium',center=[p.centroid.x,0,p.centroid.y],bounds=[-846,1985,-768,2069],structural=True,exteriorOnly=False,portals=[entry],zones=[dict(origin=[-797,y,1999.15],yaw=0,width=15.5,depth=11.35,height=2.83)],lights=B.lights,routes=routes,hotelSources=[])
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

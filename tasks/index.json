@@ -12941,14 +12941,15 @@
    "size": "L",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 7 known gaps are recorded.",
    "items": [
-    "Arrival palm/rock planter, landscaping, services and street-level detailing remain missing.",
+    "Arrival parking/curb layout, services and further street-level detailing remain incomplete; existing generic drive geometry conflicts with real parking layout.",
     "Verify additional stairs and end-gallery connections from references; only east stair and its gallery route tested.",
     "Plain end walls, sparse lobby/laundry furnishings and opaque lobby glazing need refinement; no photorealistic completion claim.",
     "Pool furniture placement, pool dimensions, stair dimensions and hidden interior plan remain inferred; add furniture collision where appropriate.",
     "Existing generic courtyard drive does not match aerial parking layout; any future correction must be targeted and preserve public roads.",
-    "Performance remains below60fps; final gallery median59.3ms, most other sampledviews31–34ms. Shared-machine measurements, no regression-freeclaim."
+    "Performance remains below60fps: latest matched-view medians19.6–30.1ms, p95up to49.3ms. Shared-machine measurements, no controlled improvement claim.",
+    "Palms and sparse public-room furnishings remain visibly stylized; further material and foliage refinement needed."
    ],
    "record": "tools/resort-blocks/motel6-stadium.json",
    "buildings": [],
@@ -12964,9 +12965,9 @@
      "tools/strip-landmarks/export_motel6_stadium.py",
      "tools/strip-landmarks/test-motel6-stadium.mjs",
      "tools/city-exteriors/install-motel6-stadium.py",
+     "tools/strip-landmarks/motel6_arrival.py",
      "tools/strip-landmarks/motel6_pool.py",
-     "tools/strip-landmarks/review_motel6_stadium.py",
-     "tools/strip-landmarks/motel6_stadium.py"
+     "tools/strip-landmarks/review_motel6_stadium.py"
     ]
    },
    "acceptance": [

@@ -6,6 +6,7 @@ sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
 E.colors.update({'m6-grout':'958e7d','m6-dark-tile':'777064','m6-mat':'303a3b','m6-light-trim':'e4e0c6','m6-white-stucco':'d2d0c5','m6-membrane-paint':'a8aaa4','m6-shingle':'74796c','m6-white-paint':'d7ddd6','m6-frame-paint':'d7ddd6','m6-blue-paint':'3162a1','m6-metal-paint':'8e9692','m6-number':'cecab6','m6-glass':'263c3e','m6-ac':'b8b9ae','m6-vent':'535b59','m6-deck-concrete':'a1a298','m6-letter':'f1f0e9','m6-lobby-tile':'c4bca9','m6-interior':'d4cfc1','m6-ceiling':'d8d6ca','m6-coffee-wood':'494541','m6-counter':'b8b3a6','m6-screen':'252b2d','m6-chair':'414b49','m6-appliance':'d8d9d2','m6-control':'747d7c','m6-vending':'34465a','stone':'b4b7ad','steel':'cbd3cd'})
 E.colors.update({'m6-pool-tile':'61969e','m6_pool':'4c8e9c'})
+E.colors.update({'m6-planter-stone':'9d8e78','m6-stone-joint':'625c50','m6-gravel':'b1a08a','m6-gravel-rock':'a79985','c525-bark':'80705a','c525-collision':'80705a','c525-palm-stem':'706a38','c525-palm-leaf':'4c6335','c525-palm-light':'6d783c'})
 for part in ['exterior','interior']:
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('motel6-stadium-'+part)
  for key,m in E.materials.items():
