@@ -266,7 +266,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-chick-fil-a-flamingo` | M | P3 | 3 | Refine the exterior of Chick-fil-A — Flamingo & Valley View |
 | `ext-tacos-mexico-sahara` | M | P3 | 3 | Refine the exterior of Tacos Mexico #2 — Sahara |
 | `ext-tmobile-sahara` | M | P3 | 3 | Refine the exterior of T-Mobile Sahara & Valley View |
-| `ext-carls-jr-sahara` | S | P3 | 1 | Refine the exterior of Carl’s Jr. Sahara |
+| `ext-carls-jr-sahara` | M | P3 | 3 | Refine the exterior of Carl’s Jr. Sahara |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

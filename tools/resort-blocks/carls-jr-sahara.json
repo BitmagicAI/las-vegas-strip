@@ -1,7 +1,7 @@
 {
   "id": "carls-jr-sahara",
   "name": "Carl\u2019s Jr. Sahara",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/926281500"
   ],
@@ -9,7 +9,8 @@
     "issue": 328,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/328",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/329"
   },
   "sources": [
     {
@@ -28,12 +29,56 @@
   "uncertainDimensions": [
     "Mapped15x24m irregular footprint. Heights and hidden roof/services estimated. No interior without location-specific reference. GenericownerJun2019photoexcluded because it depicts different facade."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original10839triangle exterior source, red tile mansard, cream roof center, south windows, setback doorway, east gable entrance, drive-through window, low sign and hedges. Source front/roof visually inspected.",
+    "46ownedfaces replaced,9560groups preserved,eightcurrentcityclearance samples pass.",
+    "Three installed daylight views and walking return inspected. Four actual walking segments pass. Current708batch bake;1473 packagedassets0missing;typecheck/publicchecks pass. Optimizedexterior 0.58 MiB."
+  ],
   "remaining": [
-    "Original source,scopedreplacement,optimizedbake,installedvisual/walking/performancechecks."
+    "Original simplified lettering lacks exact script/star identity; glass is opaque, foliage regular and roof tiles repetitive.",
+    "Exact mansard depths, rear/service elevations and equipment positions estimated. Interior remains closed without verified current room references.",
+    "Existing roads/parking preserved and differ from photographed site. Entrance approach includes roughly14cm grade change; route passes."
   ],
   "nextPass": {
-    "checkpoint": "Claim328 confirmed; references inspected. No geometry edits yet.",
-    "priority": "Original exterior including south windows and east gable."
-  }
+    "priority": "Continue unclaimed city buildings; verify current FLEX references before modeling.",
+    "checkpoint": "Installed exterior firstpassverified; retain all fidelity discrepancies. No photorealisticcompletionclaim."
+  },
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.6,
+        18.9
+      ],
+      [
+        16.7,
+        18.8
+      ],
+      [
+        16.7,
+        18.8
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.7,
+        18.7
+      ],
+      [
+        16.7,
+        18.1
+      ],
+      [
+        16.7,
+        18.8
+      ]
+    ],
+    "note": "960x540 ultra neutraldaylight matching cameras;sharedmachine,notlocked60fpsguarantee"
+  },
+  "evidence": [
+    "build/city-exteriors/carls-jr-sahara-source-review",
+    "build/city-exteriors/carls-jr-sahara-installed",
+    "build/city-exteriors/carls-jr-sahara-baseline/results.json",
+    "build/city-exteriors/carls-jr-sahara-walk/results.json",
+    "build/city-exteriors/carls-jr-sahara-preservation.json"
+  ]
 }

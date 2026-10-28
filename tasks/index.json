@@ -2506,8 +2506,8 @@
      "tools/city-exteriors/test-sahara-arrival.mjs",
      "tools/city-exteriors/test-sahara.mjs",
      "tools/highrises/interiors.py",
-     "tools/strip-landmarks/export_marianas_sahara.py",
-     "tools/strip-landmarks/export_mt_everest_sahara.py"
+     "tools/strip-landmarks/export_carls_jr_sahara.py",
+     "tools/strip-landmarks/export_marianas_sahara.py"
     ]
    },
    "acceptance": [
@@ -13847,12 +13847,14 @@
    "id": "ext-carls-jr-sahara",
    "title": "Refine the exterior of Carl’s Jr. Sahara",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Original source,scopedreplacement,optimizedbake,installedvisual/walking/performancechecks."
+    "Original simplified lettering lacks exact script/star identity; glass is opaque, foliage regular and roof tiles repetitive.",
+    "Exact mansard depths, rear/service elevations and equipment positions estimated. Interior remains closed without verified current room references.",
+    "Existing roads/parking preserved and differ from photographed site. Entrance approach includes roughly14cm grade change; route passes."
    ],
    "record": "tools/resort-blocks/carls-jr-sahara.json",
    "buildings": [],
@@ -13864,7 +13866,14 @@
     "writes": [
      "tools/resort-blocks/carls-jr-sahara.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_carls_jr_sahara.py",
+     "tools/city-exteriors/install-carls-jr-sahara.py",
+     "tools/strip-landmarks/review_carls_jr_sahara.py",
+     "tools/strip-landmarks/test-carls-jr-sahara.mjs",
+     "tools/city-exteriors/check-carls-jr-sahara-preservation.py",
+     "tools/strip-landmarks/carls_jr_sahara.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
