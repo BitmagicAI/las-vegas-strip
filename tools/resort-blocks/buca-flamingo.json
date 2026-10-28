@@ -1,0 +1,43 @@
+{
+  "id": "buca-flamingo",
+  "name": "Buca di Beppo Flamingo",
+  "status": "active",
+  "mappedIds": [
+    "way/390004031"
+  ],
+  "claim": {
+    "issue": 346,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/346",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://dineatbuca.com/locations/las-vegas-paradise/",
+      "observed": "Official address 412 E Flamingo confirmed."
+    },
+    {
+      "url": "https://www.vegasmeansbusiness.com/listing/buca-di-beppo/31078/",
+      "observed": "Undated LVCVA exterior photo visually inspected: maroon walls, stone entrance pier, flat projecting canopy, striped green-white awnings, retro vertical red sign, gravel planting and rails. Needs current facade corroboration."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Buca+di+Beppo+412+East+Flamingo+Las+Vegas",
+      "observed": "Aerial inspected: rectangular rotated footprint, roof equipment concentrated west; south frontage landscaping and southwest entry projection, parking east/west. Street View control opened owner photograph December 2025, CIABIhBTHnWatR8PMFr4VcXQVJGO, not panorama. Public dining character: vaulted decorated ceiling, rust walls, darkwood wainscot, checkcloth tables, loose chairs and booths, chandeliers. Photo establishes character, not full plan."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped height 6 m estimated. Bay heights, canopy elevation and parapets require photo fitting.",
+    "Interior room placement and concealed service plan unknown. Use original abstract decorations, no copied photographic art."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Current exterior corroboration and site footprint fit",
+    "Exterior, signs, roof and public approach geometry",
+    "Reference-supported public dining room and entry circulation; document inferred layout",
+    "Scoped replacement, collision/walk checks, installed views and performance, optimized packaging"
+  ],
+  "nextPass": {
+    "priority": "Corroborate frontage, capture baseline, then author exterior and public dining space",
+    "checkpoint": "Claim346 confirmed janiverse; NuLeaf fbae70a installed pass saved/pushed. Start by corroborating current frontage and capturing baseline, then author exterior and reference-supported public dining area. No Buca geometry edited yet."
+  }
+}
