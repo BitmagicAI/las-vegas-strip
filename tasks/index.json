@@ -13888,12 +13888,15 @@
    "id": "ext-flex-twain",
    "title": "Refine the exterior of FLEX Cocktail Lounge Twain",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Original exterior/publicinterior,scopedcollisionreplacement,furnitureenvelopeaudit,optimizedGLBs/currentbake,actualinstalleddaylight/interior/walking/performancevalidation."
+    "Exact surveyed heights, interior arrangement and roof services remain inferred.",
+    "Plain materials, simplified sign identity, regular planting, roof texture repetition, simplified upholstery/bottles/mirror balls and overly bright ceiling pools require refinement.",
+    "Stage approach is walked; stage ascent and behind-bar service aisle are not part of the verified route. Private spaces are closed.",
+    "This is an installed first pass, not photorealistic completion."
    ],
    "record": "tools/resort-blocks/flex-twain.json",
    "buildings": [],
@@ -13903,9 +13906,20 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
+     "runtime-assets/strip-landmarks/flex-twain-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/flex-twain-exterior.glb",
+     "runtime-assets/strip-landmarks/flex-twain-interior-collision.bin",
+     "runtime-assets/strip-landmarks/flex-twain-interior.glb",
      "tools/resort-blocks/flex-twain.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-flex-twain.mjs",
+     "tools/strip-landmarks/export_flex_twain.py",
+     "tools/city-exteriors/install-flex-twain.py",
+     "tools/strip-landmarks/review_flex_twain.py",
+     "tools/city-exteriors/check-flex-twain-furniture.py",
+     "tools/city-exteriors/check-flex-twain-preservation.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

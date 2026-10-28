@@ -1,7 +1,7 @@
 {
   "id": "flex-twain",
   "name": "FLEX Cocktail Lounge Twain",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/390003972"
   ],
@@ -9,7 +9,8 @@
     "issue": 330,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/330",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/331"
   },
   "sources": [
     {
@@ -34,14 +35,96 @@
     }
   ],
   "uncertainDimensions": [
-    "Mapped11.6x19mfootprint atx1883\u20131895,z536\u2013555. Heights,roomplacement,hiddenservices inferred;nofloorplan. Privateareasclosed. Officialinteriorphoto datesnotestablished."
+    "Mapped 11.6 \u00d7 19 m footprint at x1883\u20131895, z\u2212555 to \u2212536. Heights, room arrangement and roof equipment are inferred; no floor plan found. Private rear area is closed. Official interior photo dates are unknown."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original mapped shell and east public doorway, north/east fascia, shallow canopies, RGB trim, planting and pylon.",
+    "Separately streamed public bar with 15 original machine panels, stainless shelving, tables, curved upholstered seats, fireplace and stepped stage.",
+    "Scoped replacement: ten original shell/collision faces removed; 9,560 city groups retain vertices, metadata and retained face order."
+  ],
   "remaining": [
-    "Original exterior/publicinterior,scopedcollisionreplacement,furnitureenvelopeaudit,optimizedGLBs/currentbake,actualinstalleddaylight/interior/walking/performancevalidation."
+    "Exact surveyed heights, interior arrangement and roof services remain inferred.",
+    "Plain materials, simplified sign identity, regular planting, roof texture repetition, simplified upholstery/bottles/mirror balls and overly bright ceiling pools require refinement.",
+    "Stage approach is walked; stage ascent and behind-bar service aisle are not part of the verified route. Private spaces are closed.",
+    "This is an installed first pass, not photorealistic completion."
   ],
   "nextPass": {
-    "priority": "Build original compact publicbar, seating and stage within mapped shell.",
-    "checkpoint": "Claim330 confirmedjaniverse;officialphotos+currentStreetView inspected. No geometry edits yet. PreviousCarl\u2019sJr verified8849a0d,708batches1473assets. Reference tabs61/62/63 markedhandoff."
+    "priority": "Reference fidelity refinement retained; advance to next claimed building.",
+    "checkpoint": "Installed exterior, interior and walking return visually inspected. Optimized exterior0.25MiB/interior0.29MiB, 709-batch bake current."
+  },
+  "verification": {
+    "sourceTriangles": 13162,
+    "furnitureVerticesInsideShell": 9624,
+    "routeSamples": 61,
+    "actualWalkingSegments": 10,
+    "installedViews": [
+      "build/city-exteriors/flex-twain-installed",
+      "build/city-exteriors/flex-twain-interior",
+      "build/city-exteriors/flex-twain-walk"
+    ],
+    "preservation": "build/city-exteriors/flex-twain-preservation.json",
+    "bakeBatches": 709,
+    "packagedAssets": 1477,
+    "missingAssets": 0,
+    "typecheck": "passed",
+    "publicCheck": "passed; existing inventory email warning"
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/flex-twain-baseline/results.json",
+    "after": "build/city-exteriors/flex-twain-installed/results.json",
+    "baselineMedianP95Ms": [
+      [
+        16.6,
+        18.5
+      ],
+      [
+        16.7,
+        18.2
+      ],
+      [
+        16.6,
+        18.8
+      ]
+    ],
+    "afterMedianP95Ms": [
+      [
+        16.5,
+        18.6
+      ],
+      [
+        16.6,
+        18.6
+      ],
+      [
+        16.7,
+        18.5
+      ]
+    ],
+    "interiorMedianP95Ms": [
+      [
+        16.8,
+        17.8
+      ],
+      [
+        16.6,
+        17.7
+      ],
+      [
+        16.7,
+        17.6
+      ],
+      [
+        16.7,
+        17.6
+      ]
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/flex-twain-exterior-collision.bin": "8860acf85b82ee439690d69e57371690b870d4610d8b23427641e8cd11c63d99",
+      "runtime-assets/strip-landmarks/flex-twain-interior-collision.bin": "b3bd0c7f56cefa02657eca2c55f03f01ffa9bf374b40258e172ba41cc3640346",
+      "runtime-assets/strip-landmarks/flex-twain-exterior.glb": "a10fbd12fe5ebc7a4e8cbc989b075d33923ecac6915f6d3fd0e7f910e653d1c4",
+      "runtime-assets/strip-landmarks/flex-twain-interior.glb": "884933c6e60ffea10388b38210419951a9883cd862232d160f7f6bb236ec9b84"
+    }
   }
 }
