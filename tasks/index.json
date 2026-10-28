@@ -14441,7 +14441,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
     "Facade sidewalls/roof transitions and landscaping remain simplified; glazing backed and screen motif approximate.",
-    "Identify existing stone block outside ownedfootprint beside canopy before any replacement; do not remove unclaimed geometry.",
+    "Arrival canopy height, fin proportions, ramp handedness and site paving remain visually estimated; refine against additional dated photographs.",
     "Public room placement inferred; private rooms and service spaces not modeled.",
     "Interior is visibly sparse against tour: furniture shapes/weave, partitions, bar arch composition, fixtures, ceiling transitions and material/light fidelity need refinement.",
     "Original abstract artwork substitutes for copyrighted wall photographs; repeated art/produce remains stylized.",
@@ -14459,8 +14459,8 @@
     ],
     "builders": [
      "tools/strip-landmarks/test-fogo-public.mjs",
-     "tools/city-exteriors/install-fogo-hughes.py",
      "tools/strip-landmarks/export_fogo_hughes.py",
+     "tools/city-exteriors/install-fogo-hughes.py",
      "tools/city-exteriors/check-fogo-hughes-preservation.py",
      "tools/strip-landmarks/fogo_hughes.py"
     ]

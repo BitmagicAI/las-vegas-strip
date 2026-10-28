@@ -51,3 +51,10 @@ for part in ['exterior','interior']:
     p=obj.data.vertices[obj.data.loops[li].vertex_index].co;uv.data[li].uv=(p.y/2,p.z/2) if axis==0 else (p.x/2,p.z/2) if axis==1 else (p.x/2,p.y/2)
  bpy.ops.wm.save_as_mainfile(filepath=str((E.OUT/('fogo-hughes-'+part+'.blend')).resolve()))
  bpy.ops.export_scene.gltf(filepath=str((E.OUT/('fogo-hughes-'+part+'.glb')).resolve()),export_format='GLB',export_yup=True,export_extras=True,export_lights=False,export_cameras=False)
+
+import hashlib
+h=hashlib.sha256()
+for f in sorted(E.OUT.glob("*.glb")):h.update(f.read_bytes())
+for f in sorted(E.OUT.glob("*-collision.json")):h.update(f.read_bytes())
+h.update((E.OUT/"venues.json").read_bytes())
+(E.OUT/"version.json").write_text(__import__("json").dumps({"revision":h.hexdigest()[:16]}))

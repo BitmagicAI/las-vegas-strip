@@ -2,9 +2,9 @@
 Official tour governs visible architecture; no reference imagery embedded.
 """
 from common import *
-KEY='fogo-hughes';IDS=['way/511850832']
+KEY='fogo-hughes';IDS=['way/511850832','way/1460748967']
 def build(B):
- p=footprint(IDS[0]);F=Frame(B,1487,106,0,y=0);D=Frame(B,1496.344,123.509,.698,y=0)
+ p=footprint(IDS[0]);F=Frame(B,1487,106,0,y=0);D=Frame(B,1502.927,120.815,.957,y=0)
  B.property=KEY+'-exterior';B.source='retail/'+KEY;B.detail=0
  door=dict(p=D.p(0,.8,0),yaw=D.yaw,width=2.5,height=3,name='Fogo public entrance',venue=KEY)
  B.shell(p,.02,7.3,'fg-stucco',roof=False,openings=[door]);B.planar('fg-membrane',p,7.3)
@@ -28,17 +28,27 @@ def build(B):
  D.box('fg-vein',(-4.8,5.6,.1),(2.3,11.2,2),True)
  for i,c in enumerate('FOGO DE CHAO'):
   if c!=' ':D.text(c,(-4.8,10.6-i*.58,1.13),.53,'fg-letter',back=True)
- D.box('fg-dark',(0,4.8,4.8),(10,.5,10))
- D.box('fg-dark',(4.6,2.35,9.3),(.65,4.7,1.5),True)
- for u in [-2.4,2.4]:
+ canopy=footprint(IDS[1])
+ B.shell(canopy,4.55,5.05,'fg-dark',solid=False,roof=False)
+ B.planar('fg-membrane',canopy,5.05)
+ B.planar('fg-dark',canopy,4.55)
+ # The mapped roof is an open porte-cochere, never a solid ground-level block.
+ end=Frame(B,1512.1,128.4,D.yaw,y=0)
+ end.box('fg-dark',(0,2.275,0),(2.8,4.55,.55),True)
+ for u in [-1,1]:
   for v in [2,5,8]:D.lathe('fg-lamp',u,v,[(4.53,.10),(4.57,.10)],12)
- landing=D.poly([(-4,-.5),(3,-.5),(3.5,3.1),(-4,3.1)])
+ landing=D.poly([(-4,-.5),(2.7,-.5),(2.7,3.1),(-4,3.1)])
  B.planar('fg-paving',landing,.8,True)
  st=D.p(0,0,6);Frame(B,st[0],st[2],D.yaw+math.pi,y=0).stairs(0,0,3.4,.8,3,y=0)
  # Side ramp, clear collision route and side guarding.
  B.upface('fg-paving',[D.p(-4,.8,2),D.p(-2,.8,2),D.p(-2,.14,10),D.p(-4,.14,10)],True)
- for u in [-4.1,4.1]:
-  D.rail((u,.3),(u,9.8),y=1.75)
+ def sloped_guard(u,v0,v1,y0,y1):
+  D.tube('fg-dark',(u,y0+1.05,v0),(u,y1+1.05,v1),.035,8)
+  for t in np.linspace(0,1,5):
+   v=v0+(v1-v0)*t;y=y0+(y1-y0)*t
+   D.tube('fg-dark',(u,y,v),(u,y+1.05,v),.028,8)
+ sloped_guard(-4.1,2,10,.8,.14)
+ sloped_guard(1.85,3,6,.8,0)
  for u in [-1.32,1.32]:D.box('fg-trim',(u,2.35,0),(.11,3.1,.2))
  D.box('fg-trim',(0,3.9,0),(2.75,.13,.2))
  # Side windows and rear servicing, all aligned to actual perimeter segments.

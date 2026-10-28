@@ -3,9 +3,9 @@ import json,sys,shutil,hashlib
 from pathlib import Path
 sys.path.insert(0,'tools/strip-landmarks')
 from common import footprint,Point,unary_union
-out=Path('build/geographic-strip');land=Path('build/strip-landmarks');idents=['way/511850832']
+out=Path('build/geographic-strip');land=Path('build/strip-landmarks');idents=['way/511850832','way/1460748967']
 area=unary_union([footprint(i) for i in idents]).buffer(.005);xmin,zmin,xmax,zmax=area.bounds
-bak=Path('.bitmagic/city-exterior-backups/fogo-hughes');bak.mkdir(parents=True,exist_ok=True)
+bak=Path('.bitmagic/city-exterior-backups/fogo-arrival');bak.mkdir(parents=True,exist_ok=True)
 names=['city-meshes.json','city-colliders.json','building-index.json']
 for name in names:
  if not (bak/name).exists():shutil.copy2(out/name,bak/name)
