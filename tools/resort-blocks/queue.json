@@ -1486,7 +1486,13 @@
         "date": "2026-10-28",
         "reason": "Installed first pass verified; fidelity/performance refinements retained while continuing city-wide coverage."
       }
+    },
+    {
+      "id": "marianas-sahara",
+      "name": "Mariana\u2019s Supermarkets \u2014 Sahara",
+      "status": "active",
+      "record": "marianas-sahara.json"
     }
   ],
-  "active": "favorita-market"
+  "active": "marianas-sahara"
 }

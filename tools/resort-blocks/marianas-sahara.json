@@ -1,0 +1,42 @@
+{
+  "id": "marianas-sahara",
+  "name": "Mariana\u2019s Supermarkets \u2014 Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/764088498"
+  ],
+  "claim": {
+    "issue": 314,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/314",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.marianasmarkets.com/location",
+      "observed": "Official store2 address3631WSahara."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=1q2QTWPS1qJ-7l26D2gB7g&heading=180&pitch=0",
+      "observed": "Jan2025 parking-front panorama visually inspected. Deep twin round arches on each projecting bay flanking recessed center door. Cream rusticated stucco, keystones, layered brown cornices, green CARNICERIA/PANADERIA panels, red/green supermarket sign, tiled central eave, lanterns, yellow entry bollards."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1436185,-115.1898423,173m/data=!3m1!1e3",
+      "observed": "Aerial mapped steppedfront,flatgrayroof,roofplant,northparking. TYNov2024photoCIHM0ogKEICAgIC3r6nEhQE confirms facade finishes."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mappedfootprint60x55m authoritative; heights, arch radii, wall thickness, hidden services estimated. No verified site-specific public interior layout."
+  ],
+  "implemented": [
+    "Claim314confirmed; Jan2025frontage and aerial visually inspected."
+  ],
+  "remaining": [
+    "Original exterior, source review, scoped replacement, runtime optimization, installed views/walking/performance pending.",
+    "Sign artwork/weathering/hiddenservices unverified; public interior excluded until sufficient evidence."
+  ],
+  "nextPass": {
+    "priority": "Build complete mapped exterior with real recessed arches and entrance.",
+    "checkpoint": "Claimed; draftPR scope setup before geometry edits."
+  }
+}
