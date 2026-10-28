@@ -1,0 +1,42 @@
+{
+  "id": "speedee-mart-paradise",
+  "name": "Speedee Mart Paradise Road",
+  "status": "active",
+  "mappedIds": [
+    "way/1017290168"
+  ],
+  "claim": {
+    "issue": 340,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/340",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.speedeemart.net/locations",
+      "observed": "Official3670ParadiseRoad location."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6j1ERUQtwPe19dGRINi1NA&heading=90&pitch=0",
+      "observed": "Feb2026 StreetView inspected: white stucco, brown plinth, curved frontage piers, red/yellow strips, dark glazing, signage, ice cabinet and exposed conduits."
+    },
+    {
+      "url": "https://www.google.com/maps?cid=17908571312947514126",
+      "observed": "May2019 TrapSpeed1320 storefront photo and Jan2023 LasVegas public shop photographs inspected: white tiled floor, checkoutleft, rear black coolers, pale aisle shelving. Interior photos older; hidden layout unproven."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped irregular footprint; heights, jambs and shelving layout photo-fitted. Fuel canopy is outside claimed building scope. Do not invent hidden rooms."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build original exterior and reference-supported public shop interior.",
+    "Scope collision replacement, optimize/package and inspect installed views/walks/performance.",
+    "Record any deviations from dated reference and retain dimensions inferred from images."
+  ],
+  "nextPass": {
+    "priority": "Build claimed storefront/public shop",
+    "checkpoint": "Issue340 assignedjaniverse; latestFeb2026panorama inspected. No geometry edited yet. DraftPR setup precedes source edits."
+  },
+  "verification": {}
+}

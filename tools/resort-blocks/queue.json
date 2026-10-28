@@ -1570,8 +1570,18 @@
     {
       "id": "mardi-gras",
       "name": "Mardi Gras Hotel & Casino",
+      "status": "refinement-deferred",
+      "record": "mardi-gras.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified exterior/public meeting pass saved; creator requests sustained whole-city expansion. Architectural and performance uncertainties retained."
+      }
+    },
+    {
+      "id": "speedee-mart-paradise",
+      "name": "Speedee Mart Paradise Road",
       "status": "active",
-      "record": "mardi-gras.json"
+      "record": "speedee-mart-paradise.json"
     }
   ],
   "active": "mardi-gras"
