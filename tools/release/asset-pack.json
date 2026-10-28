@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1443,
- "bytes": 1092421932,
+ "count": 1447,
+ "bytes": 1100954247,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19214280,
-   "sha256": "f082f99d44d34567c6dd2c2f9cb4527c0e58e00a1f661ea8aa59e333b6b410d6",
+   "bytes": 19229641,
+   "sha256": "06f8b834d4ba33a844d1c6895df0868392ac65e656698661a9caa45a0a0a0b44",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13062204,
-   "sha256": "43022dd6bb3171d2a471117a56e5d0688d06f46824d1eaea004d09b626152239",
+   "bytes": 13061616,
+   "sha256": "551f6cbb835788de24c9f0ce7fc3bbcd1020155e17aa08a41b17b72e9772ab67",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109748736,
-   "sha256": "c440612ced8e1f953c28708f5598a37b2dc60e147ac5e70ea884a67569123b5b",
+   "bytes": 109747848,
+   "sha256": "efc1554853410d3b6e3b2e2c5ab93df171f6f8299fb7d5d707c05ca50556dc4b",
    "kind": "optimized"
   },
   {
@@ -8357,6 +8357,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/twain-laundry-exterior-collision.bin",
+   "bytes": 416,
+   "sha256": "89b7af35b12f8c279ea42e4574f36915cb27f9f5fb55da3a2d45e31f8d666314",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/twain-laundry-exterior.glb",
+   "bytes": 314124,
+   "sha256": "fbbe84ea1e52ef883e318d94b8a9954126a31d735bf1bb0fa0ec08ca3965f1d9",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/twain-laundry-interior-collision.bin",
+   "bytes": 4540,
+   "sha256": "11ac65710e69bddb38503fdbd148fcd8a7791adebef4632b760675548005c49e",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/twain-laundry-interior.glb",
+   "bytes": 8198388,
+   "sha256": "5de4d7760d6234ce2ad5c93abebf3d49d6f69b91b82e07b3d7d4027128137104",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/usBankCenter-exterior-collision.bin",
    "bytes": 2632,
    "sha256": "307c60bb24013537e99a36a96f7d402df528395454a182b37fcfd60ab7497761",
@@ -8466,8 +8490,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 355082,
-   "sha256": "3d37f702f82f394dfbccd935afb5704dc26f3159ff2bfefbb93149f4d19bdd51",
+   "bytes": 356044,
+   "sha256": "a56ce2d4e45d1dc0b269994dbb360a23d8acb1cf231f36e0291bd0f9927442dc",
    "kind": "original"
   },
   {

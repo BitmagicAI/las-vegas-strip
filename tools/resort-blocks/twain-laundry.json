@@ -1,7 +1,7 @@
 {
   "id": "twain-laundry",
   "name": "24 Hour Laundry Center \u2014 Twain",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/390003970"
   ],
@@ -9,7 +9,8 @@
     "issue": 310,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/310",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/311"
   },
   "sources": [
     {
@@ -34,15 +35,20 @@
     "StreetreferenceDec2022,interiorSep2026; newer permanent exterior appearance unverified."
   ],
   "implemented": [
-    "Claim310confirmed, officialaddress,streetandpublicinteriorreferencesvisuallyinspected."
+    "Claim310confirmed, officialaddress,streetandpublicinteriorreferencesvisuallyinspected.",
+    "Baseline three views visually inspected;median/p95ms27.9/37.7,17.7/28.3,16.6/20.9.",
+    "Original238750triangle exterior/public room source;94 route samples pass. Source review led to smaller floor tiles and removal of wheel-like drum spokes.",
+    "Targeted73face replacement;9560meshgroups retain vertices/metadata/retained face order.94currentcitysamples and8actual walking segments pass.",
+    "Three installed daylight exterior views,four interior views andwalkreturn visually inspected. Optimizedexterior0.30MiB/interior7.82MiB;699batchbakecurrent,1447assets0missing. Typecheckandpubliccheckpass(existingwarningonly)."
   ],
   "remaining": [
-    "Baseline and original exterior/public room source; source and installed review, scoped routes, optimized assets/bake and actual walking/performance.",
-    "Hidden service rooms and neighboring tenant interior excluded."
+    "Exact public room arrangement and tenant partition are inferred; private service spaces and neighboring tenant interiors excluded.",
+    "Glazing opaque, sign artwork/graphics simplified, service elevations and roof plant approximate; finishes and repeated machine details need refinement.",
+    "Performance below60fps in close views. Initial frontage36.8ms median versus27.9baseline;repeat35.7;within-run ablation28ms with room vs26.1without, indicating variable shared-machine timing and about1.9ms room cost. Interior21.3\u201335.1ms median; p95 up to50.3ms. Optimization remains."
   ],
   "nextPass": {
     "priority": "Exterior and reference-supported public laundry room.",
-    "checkpoint": "Research/claim only; no geometry edits."
+    "checkpoint": "Installed/walked/visually reviewed pass; fidelity and performance refinements retained. Advance to claimed LaFavorita312."
   },
   "publicInteriorPlan": {
     "status": "inferred from public photographs",
@@ -51,9 +57,9 @@
         "name": "public washing/drying and folding area",
         "estimatedSizeM": [
           14,
-          24
+          34
         ],
-        "ceilingM": 3.2
+        "ceilingM": 3.55
       }
     ],
     "connections": [
@@ -65,5 +71,80 @@
       "Southern neighboring tenant interior"
     ],
     "clearances": "Maintain1.5m centralaisles and1.6m entrance; verify actual walking."
+  },
+  "evidence": [
+    "build/city-exteriors/twain-laundry-source-review/exterior.png",
+    "build/city-exteriors/twain-laundry-source-review/roof.png",
+    "build/city-exteriors/twain-laundry-source-review/entrance.png",
+    "build/city-exteriors/twain-laundry-source-review/washers.png",
+    "build/city-exteriors/twain-laundry-source-review/folding.png",
+    "build/city-exteriors/twain-laundry-source-review/dryers.png",
+    "build/city-exteriors/twain-laundry-baseline/results.json",
+    "build/city-exteriors/twain-laundry-installed/results.json",
+    "build/city-exteriors/twain-laundry-interior-installed/results.json",
+    "build/city-exteriors/twain-laundry-walk/results.json",
+    "build/city-exteriors/twain-laundry-performance-repeat/results.json",
+    "build/city-exteriors/twain-laundry-performance-ablation/results.json",
+    "build/strip-landmarks/twain-laundry-route-audit.json",
+    "build/city-exteriors/twain-laundry-preservation.json"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        27.9,
+        37.7
+      ],
+      [
+        17.7,
+        28.3
+      ],
+      [
+        16.6,
+        20.9
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        36.8,
+        43.1
+      ],
+      [
+        18.1,
+        27
+      ],
+      [
+        16.5,
+        21.9
+      ]
+    ],
+    "interiorMedianP95Ms": [
+      [
+        35.1,
+        50.3
+      ],
+      [
+        25.7,
+        33.7
+      ],
+      [
+        21.3,
+        27.2
+      ],
+      [
+        28.9,
+        37.8
+      ]
+    ],
+    "ablationMedianP95Ms": {
+      "roomVisible": [
+        28,
+        50
+      ],
+      "roomHidden": [
+        26.1,
+        46.2
+      ]
+    },
+    "note": "960x540 ultra, shared machine; no stable60fps claim."
   }
 }
