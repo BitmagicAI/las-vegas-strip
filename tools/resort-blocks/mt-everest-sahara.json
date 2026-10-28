@@ -1,0 +1,45 @@
+{
+  "id": "mt-everest-sahara",
+  "name": "Mt. Everest India's Cuisine \u2014 Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/764147974"
+  ],
+  "sources": [
+    {
+      "url": "https://mteverestcuisine.com/",
+      "observed": "Official3641WSahara address; public buffet service."
+    },
+    {
+      "url": "https://static.spotapps.co/spots/f3/d4cf52cf934ac7ba03f4cc37febb64/full",
+      "observed": "Official dining photograph inspected: redvinyl perimeterbooths, darkwoodtables/ladderbackchairs, darkcarpet, orangewalls/woodwainscot, blackblinds, gridceiling/fans/downlights/hangingbulbs. Undated; roomlayoutinferred."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=10xe0a6iqZOrv-9Lj6FfQA&heading=180&pitch=0",
+      "observed": "Jan2023northfront inspected: redbrick, darkmullions, door3641, terracottahippeave, mountainwindowadvertising. Do not reproduce referencepixels."
+    },
+    {
+      "url": "https://static.spotapps.co/spots/9f/e4524563ab44e5af4aceb3bbe2b4b2/full",
+      "observed": "Officialstainlessbuffetpancloseup inspected;notwholecounterplacementevidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mappedoutline13x23m; heights, doorposition and publicroomdepth estimated. Hiddenkitchen/privatepreparation excluded. Exactphotodatesandpubliclayoutunverified."
+  ],
+  "implemented": [
+    "Research only; nogeometrychangesyet."
+  ],
+  "remaining": [
+    "Original exterior/public dining, source views, scoped collision replacement, optimized assets, bake, installed inspection/walking/performance pending."
+  ],
+  "nextPass": {
+    "priority": "Originalexterior andsupportedpublicdining",
+    "checkpoint": "Claim316confirmed. Official dining and Jan2023frontage inspected. Resume baseline andoriginalexterior/publicdining source. Current verified livecity includesMarianas701batches1453assets."
+  },
+  "claim": {
+    "issue": 316,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/316",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  }
+}

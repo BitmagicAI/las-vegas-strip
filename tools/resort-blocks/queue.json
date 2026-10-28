@@ -1496,7 +1496,13 @@
         "date": "2026-10-28",
         "reason": "Installed firstpassverified; fidelity/performance refinements retained while advancing citycoverage."
       }
+    },
+    {
+      "id": "mt-everest-sahara",
+      "name": "Mt. Everest India's Cuisine \u2014 Sahara",
+      "status": "active",
+      "record": "mt-everest-sahara.json"
     }
   ],
-  "active": "marianas-sahara"
+  "active": "mt-everest-sahara"
 }
