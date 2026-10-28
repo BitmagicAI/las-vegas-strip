@@ -1,0 +1,35 @@
+{
+  "id": "dean-martin-southwest",
+  "name": "5115 south-west courtyard frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/225705139"
+  ],
+  "claim": {
+    "issue": 300,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/300",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=wRr0JJg10fXdBXPzDQdcmQ&heading=270&pitch=0",
+      "observed": "December2022, camera36.0963045,-115.182884 heading270: pale ribbed mansard, tan vertical panels, slim square posts, narrow glazed tenant doors/windows, wall and ground AC, broad light blockwork end marked4. Lower frontage obscured by parked cars."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped bounds[-923.394,2178.578,-900.571,2240.205]. Heights, exact bays and hidden services estimated.",
+    "No verified public interior plan."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Baseline and original source with source inspection.",
+    "Targeted install/preservation/routes, optimized GLB/packed data/current bake.",
+    "Installed daylight views, actual walking and matching performance."
+  ],
+  "nextPass": {
+    "priority": "Build mapped east-facing frontage and broad north masonry end.",
+    "checkpoint": "Claim300 confirmed janiverse; no southwest geometry edited. Last verified runtime a1cd930;693batches1431assets."
+  },
+  "evidence": []
+}
