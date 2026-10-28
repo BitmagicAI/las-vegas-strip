@@ -14070,15 +14070,16 @@
    "size": "L",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 7 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 8 known gaps are recorded.",
    "items": [
-    "Meeting plan now supports pavilion partition/door layout; interior not built. Ceiling elevations and finishes need photo corroboration. Lobby/casino room layout remains schematic.",
+    "Meeting interior installed with official-plan partitions and exits. Ceiling3.18m, exact jamb widths and furniture arrangement inferred; chair shapes, shutter detailing, east-facing window treatment and carpet motif remain approximate. Boardroom, lobby/casino and hidden service layout not established.",
     "Middle-floor access still unlocated; exposed stair to upper terrace and corridor built and walked. Sign typography, shingle relief, stone bases and surface detail still need refinement.",
     "Pool dimensions and room rhythm inferred; pavilion materials and furnishing detail remain simplified. No photorealistic completion claim.",
     "Water animates at a fixed camera; reference caustics, tile definition, planting and pavilion finish remain more detailed than this installed pass.",
     "Reconcile stair riser count and pavilion/terrace elevation against clearer photographs before architectural acceptance: current6.26m elevation and12.4m stair run remain photo-fitted estimates, not confirmed by the schematic maps. Terrace perimeter wall gap closed; underside and structural detail still simplified.",
     "Garden lawn and foliage shading/leaf silhouettes remain simplified versus reference. Furniture placement and tree species are estimates.",
-    "Service-building footprint and garden/spa positions now follow closer aerial anchors, but wall height, exact dimensions and presumed utility function remain inferred. Door/window detail hidden by planting is not invented. Garden path curves and planting silhouettes still simplified."
+    "Service-building footprint and garden/spa positions now follow closer aerial anchors, but wall height, exact dimensions and presumed utility function remain inferred. Door/window detail hidden by planting is not invented. Garden path curves and planting silhouettes still simplified.",
+    "Repeat matching performance on an idle machine: this pass has concurrent unrelated render jobs and slow courtyard/stair samples. Keep current measurements rather than replacing them with earlier faster results."
    ],
    "record": "tools/resort-blocks/mardi-gras.json",
    "buildings": [],
@@ -14090,13 +14091,15 @@
     "writes": [
      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin",
      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb",
+     "runtime-assets/strip-landmarks/mardi-gras-interior-collision.bin",
+     "runtime-assets/strip-landmarks/mardi-gras-interior.glb",
      "tools/resort-blocks/mardi-gras.json"
     ],
     "builders": [
      "tools/strip-landmarks/export_mardi_gras.py",
+     "tools/strip-landmarks/test-mardi-gras.mjs",
      "tools/city-exteriors/install-mardi-gras.py",
      "tools/strip-landmarks/review_mardi_gras.py",
-     "tools/strip-landmarks/test-mardi-gras.mjs",
      "tools/city-exteriors/check-mardi-gras-preservation.py",
      "tools/strip-landmarks/mardi_gras.py"
     ]

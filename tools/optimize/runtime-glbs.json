@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-28T16:52:15.688Z",
- "totalBytes": 3532513736,
- "count": 712,
+ "generated": "2026-10-28T17:30:00.804Z",
+ "totalBytes": 3534218544,
+ "count": 713,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -2573,7 +2573,16 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 25160784,
+   "bytes": 25150332,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/mardi-gras-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 1715260,
    "preset": "level",
    "overrides": []
   },

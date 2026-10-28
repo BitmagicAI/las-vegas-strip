@@ -1,6 +1,7 @@
 """Original mapped Mardi Gras exterior. Heights/room rhythm inferred; reference links in block record."""
 from common import *
 from mardi_gras_garden import build_garden
+from mardi_gras_interior import entries,build_interior
 KEY='mardi-gras';IDS=['way/33962963','way/33963206','way/1421907606','way/1421907607']
 def rail(F,w,y,v=0):
  for h in [.13,1.03]:F.box('mg-iron',(0,y+h,v),(w,.045,.055))
@@ -143,10 +144,13 @@ def build(B):
  for u in [-7,7]:
   W.box('mg-stone',(u,.35,3),(2.4,.7,3),True);W.box('mg-soil',(u,.72,3),(2.2,.06,2.8));W.bench(u,6,'mg-wood')
  # Separate low courtyard pavilion on its mapped outline.
- B.shell(q,.03,6.26,'mg-stucco',roof=False);B.planar('mg-deck',q.difference(box(1724.9,-1050.05,1728.3,-1048.35)),6.26,True)
+ portals=entries()
+ B.shell(q,.03,6.26,'mg-stucco',roof=False,openings=portals);B.planar('mg-deck',q,.16,True)
+ B.planar('mg-deck',q.difference(box(1724.9,-1050.05,1728.3,-1048.35)),6.26,True)
  for z,yaw in [(-1048.12,0),(-1059.7,math.pi)]:
   C=Frame(B,1709.85,z,yaw,y=0)
-  for u in [-12,-8,-4,0,4,8,12]:glazing(C,u,.6,.09,2.7,2)
+  for u in [-12,-8,-4,0,4,8,12]:
+   if not any(abs(1709.85+u-o['p'][0])<2.2 and abs(z-o['p'][2])<.5 for o in portals):glazing(C,u,.6,.09,2.7,2)
  P=Frame(B,1725.72,-1054,math.pi/2,y=0)
  for u in [-3.6,0,3.6]:glazing(P,u,.25,.08,3.1,2.45)
  # Exposed two-flight stair and upper terrace: visible in two independent pool views.
@@ -204,6 +208,7 @@ def build(B):
  routes.append(build_garden(B))
  routes.append(dict(name='Pool gate approach',points=[(1763,.12,-1059.3),(1760,.12,-1059.3),(1758,.12,-1059.3)]))
  routes.append(dict(name='Pavilion exposed stair and upper terrace',points=[(1730,.16,-1063.0),(1727.3,.16,-1063.0),(1727.3,.16,-1062.4),(1727.3,3.21,-1056.9),(1727.3,3.21,-1055.5),(1727.3,6.26,-1050),(1727.3,6.26,-1049.2),(1724.95,6.26,-1049.2),(1724.95,6.26,-1044.8)]))
- return dict(key=KEY,name='Mardi Gras Hotel & Casino',center=[1727,0,-1054],bounds=[1645,-1085,1802,-1021],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],hotelSources=[],routes=routes)
+ meta=dict(key=KEY,name='Mardi Gras Hotel & Casino',center=[1727,0,-1054],bounds=[1645,-1085,1802,-1021],structural=True,exteriorOnly=False,portals=portals,zones=[dict(origin=[1709.84,.16,-1059.73],yaw=0,width=31.7,depth=11.64,height=3.2)],lights=[],hotelSources=[],routes=routes)
+ return build_interior(B,meta,q)
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

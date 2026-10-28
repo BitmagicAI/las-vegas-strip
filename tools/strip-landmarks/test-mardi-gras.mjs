@@ -6,7 +6,7 @@ const read=p=>JSON.parse(fs.readFileSync(p));
 const installed=process.argv.includes('--city');
 if(installed)assert(!read('build/geographic-strip/building-index.json').some(b=>['way/33962963','way/33963206','way/1421907606','way/1421907607'].includes(b.id)));
 await RAPIER.init();const world=new RAPIER.World({x:0,y:-9.81,z:0});
-for(const c of [...(installed?read('build/geographic-strip/city-colliders.json'):[]),read('build/strip-landmarks/mardi-gras-exterior-collision.json')]){
+for(const c of [...(installed?read('build/geographic-strip/city-colliders.json'):[]),read('build/strip-landmarks/mardi-gras-exterior-collision.json'),read('build/strip-landmarks/mardi-gras-interior-collision.json')]){
  const body=world.createRigidBody(RAPIER.RigidBodyDesc.fixed());
  world.createCollider(RAPIER.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)),body);
 }

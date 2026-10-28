@@ -114,32 +114,35 @@
     "Original white tubular/sloped blue pool loungers, black picket enclosure with collision-only guards and open approaches; pavilion wall now meets terrace top without an open edge gap.",
     "Original oval courtyard garden with clipped hedge openings, paved public path, lawn, white seating/turquoise parasols and two branched leaf-mesh trees, fitted to aerial and garden photograph.",
     "Raised standing seams/rolled edge on west bronze roof; taller swept sign face above canopy with side returns and pale letters. Long guest-wing roof uses a separate non-metal finish supported by garden photograph; shingle microdetail remains pending.",
-    "Coordinated spa/service/garden refit: southern spa, original brown L-shaped utility shell with roof trim/vent, garden moved west with north\u2013south path, shorter pool enclosure and revised gate/furniture exclusions."
+    "Coordinated spa/service/garden refit: southern spa, original brown L-shaped utility shell with roof trim/vent, garden moved west with north\u2013south path, shorter pool enclosure and revised gate/furniture exclusions.",
+    "Public New Orleans and divided Baton Rouge meeting rooms from official 103x38ft plan, west double entry and three side exits, walkable partition doorways, ceiling/trim/shutters, original woven carpet/table fabrics and sparse event seating. Separate optimized streamed interior with fixed shared lighting."
   ],
   "remaining": [
-    "Meeting plan now supports pavilion partition/door layout; interior not built. Ceiling elevations and finishes need photo corroboration. Lobby/casino room layout remains schematic.",
+    "Meeting interior installed with official-plan partitions and exits. Ceiling3.18m, exact jamb widths and furniture arrangement inferred; chair shapes, shutter detailing, east-facing window treatment and carpet motif remain approximate. Boardroom, lobby/casino and hidden service layout not established.",
     "Middle-floor access still unlocated; exposed stair to upper terrace and corridor built and walked. Sign typography, shingle relief, stone bases and surface detail still need refinement.",
     "Pool dimensions and room rhythm inferred; pavilion materials and furnishing detail remain simplified. No photorealistic completion claim.",
     "Water animates at a fixed camera; reference caustics, tile definition, planting and pavilion finish remain more detailed than this installed pass.",
     "Reconcile stair riser count and pavilion/terrace elevation against clearer photographs before architectural acceptance: current6.26m elevation and12.4m stair run remain photo-fitted estimates, not confirmed by the schematic maps. Terrace perimeter wall gap closed; underside and structural detail still simplified.",
     "Garden lawn and foliage shading/leaf silhouettes remain simplified versus reference. Furniture placement and tree species are estimates.",
-    "Service-building footprint and garden/spa positions now follow closer aerial anchors, but wall height, exact dimensions and presumed utility function remain inferred. Door/window detail hidden by planting is not invented. Garden path curves and planting silhouettes still simplified."
+    "Service-building footprint and garden/spa positions now follow closer aerial anchors, but wall height, exact dimensions and presumed utility function remain inferred. Door/window detail hidden by planting is not invented. Garden path curves and planting silhouettes still simplified.",
+    "Repeat matching performance on an idle machine: this pass has concurrent unrelated render jobs and slow courtyard/stair samples. Keep current measurements rather than replacing them with earlier faster results."
   ],
   "nextPass": {
-    "priority": "Complete supported public meeting interior and reconcile upper access/elevation; retain remaining material refinement",
-    "checkpoint": "Courtyard refit and final ladder correction installed/visually inspected:332975triangles,466staticclearances/44actualwalkingsegments pass,713batches/1487assets. Current service/spa/garden positions follow closer aerial anchors. Next build supported public meeting interior with explicitly estimated ceiling; reconcile terrace/access separately. Claim338 active."
+    "priority": "Advance to claimed Speedee Mart after saving verified meeting-room pass; retain architectural refinement.",
+    "checkpoint": "Meeting pass installed and inspected:344033source triangles,588clearances,64walkingsegments,713batches/1489assets. Final capped-table/trim/shutter rooms inspected. Performance limited by concurrent render jobs; preserve slow samples. Save PR339, then move to claimed Speedee Mart issue340."
   },
   "verification": {
-    "sourceTriangles": 332975,
-    "routeSamples": 466,
-    "actualWalkingSegments": 44,
+    "sourceTriangles": 344033,
+    "routeSamples": 588,
+    "actualWalkingSegments": 64,
     "installedViews": [
-      "build/city-exteriors/mardi-gras-installed"
+      "build/city-exteriors/mardi-gras-installed",
+      "build/city-exteriors/mardi-gras-interior"
     ],
     "walkingEvidence": "build/city-exteriors/mardi-gras-walk/results.json",
     "preservation": "build/city-exteriors/mardi-gras-preservation.json",
     "bakeBatches": 713,
-    "packagedAssets": 1487,
+    "packagedAssets": 1489,
     "typecheck": "passed",
     "publicCheck": "passed; existing inventory email warning",
     "poolComparison": {
@@ -161,7 +164,8 @@
     "gardenViews": "build/city-exteriors/mardi-gras-site-garden",
     "gardenReview": "Final corrected courtyard ground/elevated garden views inspected. North\u2013south openings and seating leave clear central path; lawn and leaf silhouettes remain simple.",
     "roofViews": "build/city-exteriors/mardi-gras-roof",
-    "roofReview": "Installed front, oblique sign close-up and courtyard roof close-up inspected. Curved sign side returns and seams visible; lettering weight, end transitions and shingle relief remain simplified."
+    "roofReview": "Installed front, oblique sign close-up and courtyard roof close-up inspected. Curved sign side returns and seams visible; lettering weight, end transitions and shingle relief remain simplified.",
+    "optimizedInteriorMiB": 1.147
   },
   "performance": {
     "baseline": "build/city-exteriors/mardi-gras-baseline/results.json",
@@ -241,16 +245,62 @@
         16.7,
         17.4
       ]
-    ]
+    ],
+    "meetingPassPreCap": {
+      "exterior": "build/city-exteriors/mardi-gras-installed/pre-cap-reference-renderers-open-results.json",
+      "interior": "build/city-exteriors/mardi-gras-interior/pre-cap-results.json",
+      "note": "Retained slower sample while Google panorama renderer was open. Final repeat after closing references required; competing GPU work is only a hypothesis."
+    },
+    "meetingExteriorMedianP95Ms": [
+      [
+        16.8,
+        22.2
+      ],
+      [
+        16.9,
+        30.1
+      ],
+      [
+        27.3,
+        46.1
+      ],
+      [
+        22.5,
+        43.5
+      ]
+    ],
+    "meetingInteriorMedianP95Ms": [
+      [
+        16.8,
+        27.5
+      ],
+      [
+        16.7,
+        18.5
+      ],
+      [
+        16.6,
+        18.8
+      ],
+      [
+        16.7,
+        18.2
+      ]
+    ],
+    "meetingPerformanceLimitation": "Final matching exterior medians16.8/16.9/27.3/22.5ms, p9522.2/30.1/46.1/43.5; interior medians16.6\u201316.8,p9518.2\u201327.5. Two concurrent unrelated Blender render processes and a busy software GPU renderer observed. No stable60fps or causal regression conclusion; paired diagnostic retained separately.",
+    "pairedInteriorDiagnostic": "build/city-exteriors/mardi-gras-interior-cost/results.json",
+    "pairedInteriorDiagnosticNote": "Visible/hidden/visible medians21.6/30.2/24.2ms,p9545.3/46.5/42.4 under concurrent rendering; hiding interior did not recover baseline. Inconclusive noisy comparison, not evidence of guaranteed performance."
   },
   "finalBuild": {
     "files": {
-      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin": "e2b541b7e1a34352fee496203a504b300f820daca712c0e21e70296d1e4cd3f6",
-      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb": "13f00111b73354f061fbfcecbbfd3b4536889c4525031876c0cd4180aaa63149"
+      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb": "1eacc77d76b8278af2360068dc272d7458d33567d7a41d802d8d467bad42ee46",
+      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin": "31f37851b22b641782bf0be3d1f927799dac0026e92afa9ec3f4589cee618105",
+      "runtime-assets/strip-landmarks/mardi-gras-interior.glb": "4945459cf373e1c4cab38653d8d0821aa36c278c7bb31cb0d6037a4204dab420",
+      "runtime-assets/strip-landmarks/mardi-gras-interior-collision.bin": "823811f1e1f67d34ee00e7fe3df61163880cec2ef8e77fb027dce60c1d9ba4e8"
     }
   },
   "meetingInteriorPlan": {
-    "status": "reference-supported plan; not implemented",
+    "status": "installed and visually inspected; all64walkingsegments passed",
     "dimensionsM": {
       "combined": [
         31.3944,
@@ -272,7 +322,8 @@
     "mapping": "Baton Rouge overlooks pool per official plan; map its end toward east courtyard. North/South labels determine the transverse split. Fit shell thickness within surveyed footprint rather than stretch source dimensions.",
     "doors": "Official plan shows west double entry, two side exits in Baton Rouge near the divider, and a New Orleans side exit; exact jamb widths remain inferred. East pool-facing glazing is not an exit symbol.",
     "finishes": "Official dual-set photo supports beige walls/white chair rail, plantation shutters, folding divider tracks, recessed rectangular ceiling lights and brown/gold carpet; loose furniture is an event configuration.",
-    "remaining": "Confirm ceiling/terrace elevation and portal orientations against installed shell before cutting collision. Keep boardroom and buffet location unassigned; no fabricated connection.",
-    "implementationNotes": "Official plan re-inspected during courtyard pass: west main double entry, New Orleans/Baton Rouge partition after58ft from west end, longitudinal Baton Rouge N/S divider. Side exits near west end of Baton Rouge and one south New Orleans exit. Use local mapped shell with explicit thickness and keep boardroom unlocated. Ceiling height can only be photo-fitted and must be labeled estimated; no need to invent casino/private rooms. Preserve independently unresolved terrace elevation."
+    "remaining": "Ceiling/terrace heights remain estimates; event furniture is approximate. Chair profiles, east-facing window treatment, shutter detail and closer carpet match remain for refinement. Boardroom location unknown.",
+    "implementationNotes": "Official plan re-inspected during courtyard pass: west main double entry, New Orleans/Baton Rouge partition after58ft from west end, longitudinal Baton Rouge N/S divider. Side exits near west end of Baton Rouge and one south New Orleans exit. Use local mapped shell with explicit thickness and keep boardroom unlocated. Ceiling height can only be photo-fitted and must be labeled estimated; no need to invent casino/private rooms. Preserve independently unresolved terrace elevation.",
+    "ceilingEstimateM": 3.18
   }
 }
