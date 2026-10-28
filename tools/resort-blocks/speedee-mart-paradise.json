@@ -1,7 +1,7 @@
 {
   "id": "speedee-mart-paradise",
   "name": "Speedee Mart Paradise Road",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/1017290168"
   ],
@@ -43,8 +43,8 @@
     "No photorealistic completion claim; idle-machine performance repeat is needed because concurrent rendering jobs affected samples."
   ],
   "nextPass": {
-    "priority": "Save verified installed pass, then advance to another unclaimed under-developed building",
-    "checkpoint": "Final installed exterior and public interior views inspected; 42 clearance samples and 10 actual walking segments pass. 714-batch bake / 1493 assets current. Save pass then move to next claim; keep all recorded fidelity gaps."
+    "priority": "Glazing, roof material and retail fixture refinement",
+    "checkpoint": "b0dc40e installed pass saved and pushed; PR341 ready, claim340 released. All fidelity/performance limits retained; advancing sustained city work to 7-Eleven Paradise."
   },
   "verification": {
     "sourceTriangles": 11330,

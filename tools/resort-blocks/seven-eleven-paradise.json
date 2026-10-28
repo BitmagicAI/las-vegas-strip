@@ -1,0 +1,39 @@
+{
+  "id": "seven-eleven-paradise",
+  "name": "7-Eleven Paradise Road",
+  "status": "active",
+  "mappedIds": [
+    "way/390004000",
+    "way/1423935197"
+  ],
+  "claim": {
+    "issue": 342,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/342",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.7-eleven.com/locations/nv/las-vegas/3716-south-paradise-rd-29658",
+      "observed": "Official location corroborated with Maps address."
+    },
+    {
+      "url": "https://www.google.com/maps/search/7-Eleven+3716+Paradise+Road+Las+Vegas",
+      "observed": "January 2026 Nils Hunerfurst exterior and June 2023 MarkRobert Murphy Sr photo: continuous white fascia with orange/green/red bands, black canopy columns, fuel pumps, high storefront glazing. February 2025 Barbara Hellein public counter: speckled countertop, dark louvered cabinets, wire racks, white ceiling grid, high perimeter glass. Exact layout not established."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped shop and adjoining canopy retained; height, column spacing and public fixture layout require photo fitting."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Reconcile mapped roof and shop geometry against overhead and facade references.",
+    "Build original exterior, pumps and supported public interior details; no invented hidden rooms.",
+    "Scoped collision replacement, optimization, current bake, installed visual/walk/performance and package checks."
+  ],
+  "nextPass": {
+    "priority": "Model shop and adjoining canopy after draft PR setup",
+    "checkpoint": "Issue342 claim confirmed janiverse. Reference photographs inspected; no geometry edits yet."
+  },
+  "verification": {}
+}
