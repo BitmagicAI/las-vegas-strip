@@ -1,0 +1,41 @@
+{
+  "id": "fedex-hughes",
+  "name": "FedEx Office Hughes Center",
+  "status": "active",
+  "mappedIds": [
+    "way/159969363"
+  ],
+  "claim": {
+    "issue": 359,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/359",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://local.fedex.com/en-us/nv/las-vegas/office-0741",
+      "observed": "Official395Hughesaddress and printing, shipping, selfservice and supplies."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.115987,-115.1548337,20z/data=!3m1!1e3",
+      "observed": "Aerial personallyinspected: longrectangularflat roof betweenHughesandParadise,northwestcurvedentry, westrowroofequipment, north/southparking."
+    },
+    {
+      "url": "https://www.google.com/maps/search/FedEx+Office+395+Hughes+Center+Drive+Las+Vegas",
+      "observed": "Exterior JaeLee Jun2026 CIABIhDi0U2sAPlrRBTCMLxMBuo9: tallcurvedbrown squaretilewall,crown,blackcablecanopy,blackframedglazing,palesides,redcurb. Interior AlounSiharath Oct2020 CIHM0ogKEICAgIDCj47jjgE: pale counters/printingworktables, darkcarpet,purplerearwall,whitedroppedgridceiling,merchandiseracks. Both personallyinspected; owner stock photos excluded."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mappedrectangle lacks observed northwestcurve; fit original curved entry within footprint. Heights and all publicroomcoordinates inferred.",
+    "Interiorreference is2020; currentlayoutunverified. Private/service rooms absent."
+  ],
+  "remaining": [
+    "Author exterior and supported public room",
+    "Targeted install, preservationaudit/currentbake",
+    "Inspect installed exterior/interior andwalk; measure performance"
+  ],
+  "nextPass": {
+    "priority": "Baseline then original model",
+    "checkpoint": "Issue359claimrequested; no geometry edits yet."
+  }
+}

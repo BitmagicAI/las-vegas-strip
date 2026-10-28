@@ -1634,7 +1634,13 @@
       "name": "Starbucks 340 E Flamingo",
       "status": "refinement-deferred",
       "record": "starbucks-flamingo.json"
+    },
+    {
+      "id": "fedex-hughes",
+      "name": "FedEx Office Hughes Center",
+      "status": "active",
+      "record": "fedex-hughes.json"
     }
   ],
-  "active": "fogo-hughes"
+  "active": "fedex-hughes"
 }
