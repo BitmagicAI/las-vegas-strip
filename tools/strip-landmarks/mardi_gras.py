@@ -6,6 +6,34 @@ def rail(F,w,y,v=0):
  for u in np.arange(-w/2,w/2+.01,.22):F.box('mg-iron',(float(u),y+.57,v),(.026,1.03,.026))
  for u in np.arange(-w/2+.55,w/2,1.1):
   F.path('mg-iron',[(u,y+.3,v),(u+.12,y+.55,v),(u,y+.8,v),(u-.12,y+.55,v),(u,y+.3,v)],.018,5)
+def pool_fence(B,a,b):
+ # Plain black pool enclosure in official gallery; openings stay physically open.
+ dx,dz=b[0]-a[0],b[1]-a[1];length=math.hypot(dx,dz)
+ F=Frame(B,(a[0]+b[0])/2,(a[1]+b[1])/2,math.atan2(-dz,dx),y=.12)
+ for h in [.18,1.22]:F.box('mg-iron',(0,h,0),(length,.045,.045))
+ for u in np.linspace(-length/2,length/2,max(2,math.ceil(length/.13)+1)):
+  F.box('mg-iron',(float(u),.69,0),(.018,1.18,.018))
+ for u in np.linspace(-length/2,length/2,max(2,math.ceil(length/2.4)+1)):
+  F.box('mg-iron',(float(u),.67,0),(.065,1.34,.065))
+
+ # Collision-only guard plane, without an opaque sheet between visible pickets.
+ c=B.solids[B.property];n=len(c['vertices'])//3
+ for p in [F.p(-length/2,0,0),F.p(length/2,0,0),F.p(length/2,1.26,0),F.p(-length/2,1.26,0)]:c['vertices'].extend(p)
+ c['indices'].extend([n,n+1,n+2,n,n+2,n+3])
+
+def lounger(F):
+ # Original continuous white frame and sloped blue sling; no photo textures.
+ for side in [-1,1]:
+  x=side*.32
+  F.path('mg-chair-frame',[(x,.16,-.67),(x,.44,-.46),(x,.41,.65),(x,.16,.85)],.035,8)
+  F.path('mg-chair-frame',[(x,.41,-.45),(x,.88,-.94)],.033,8)
+  F.path('mg-chair-frame',[(x,.44,-.35),(x,.64,-.28),(x,.64,.26),(x,.42,.4)],.025,8)
+ for z,y in [(-.8,.2),(.7,.22),(-.45,.42),(.64,.42),(-.94,.88)]:
+  F.tube('mg-chair-frame',(-.32,y,z),(.32,y,z),.026,8)
+ for y0,z0,y1,z1 in [(.44,-.45,.42,.65),(.44,-.45,.87,-.94)]:
+  F.b.upface('mg-blue',[F.p(-.285,y0,z0),F.p(.285,y0,z0),F.p(.285,y1,z1),F.p(-.285,y1,z1)])
+  for side in [-1,1]:F.tube('mg-chair-frame',(side*.29,y0,z0),(side*.29,y1,z1),.012,6)
+
 def glazing(F,u,y,v,w,h):
  F.box('mg-glass',(u,y+h/2,v),(w,h,.055))
  for x in [u-w/2,u,u+w/2]:F.box('mg-frame',(x,y+h/2,v+.035),(.055,h+.08,.08))
@@ -71,7 +99,7 @@ def build(B):
  for u in [-7,7]:
   W.box('mg-stone',(u,.35,3),(2.4,.7,3),True);W.box('mg-soil',(u,.72,3),(2.2,.06,2.8));W.bench(u,6,'mg-wood')
  # Separate low courtyard pavilion on its mapped outline.
- B.shell(q,.03,6.1,'mg-stucco',roof=False);B.planar('mg-deck',q.difference(box(1724.9,-1050.05,1728.3,-1048.35)),6.26,True)
+ B.shell(q,.03,6.26,'mg-stucco',roof=False);B.planar('mg-deck',q.difference(box(1724.9,-1050.05,1728.3,-1048.35)),6.26,True)
  for z,yaw in [(-1048.12,0),(-1059.7,math.pi)]:
   C=Frame(B,1709.85,z,yaw,y=0)
   for u in [-12,-8,-4,0,4,8,12]:glazing(C,u,.6,.09,2.7,2)
@@ -119,10 +147,13 @@ def build(B):
    for u in [-.35,.35]:F.path('mg-frame',[(u,.15,0),(u,.85,0),(u,.95,.3),(u,.8,.65),(u,-.3,.65)],.035,8)
  for x in np.arange(1730,1769,3.1):
   for z in [-1047.95,-1061.3]:
-   F=Frame(B,float(x),z,0,y=0);F.box('mg-frame',(0,.32,0),(.65,.09,1.65));F.box('mg-blue',(0,.39,0),(.59,.07,1.55));F.box('mg-blue',(0,.64,-.64),(.59,.55,.09))
+   F=Frame(B,float(x),z,math.pi if z>-1054 else 0,y=.12);lounger(F)
+ # Enclosure follows the photo-supported deck edge. Gate width/position estimated.
+ for a,b in [((1729,-1062.5),(1770,-1062.5)),((1729,-1046.3),(1770,-1046.3)),((1770,-1062.5),(1770,-1055.2)),((1770,-1053.2),(1770,-1048.5))]:pool_fence(B,a,b)
  # Ground-level continuous route along the eastern opening and both inner corridors.
  routes=[dict(name='West entrance approach',points=[W.p(2,.12,v) for v in [12,8,3,2]]+[W.p(0,.12,2)]),dict(name='Courtyard east and pool approach',points=[(1802,.12,-1048),(1797,.12,-1048),(1773,.12,-1048),(1773,.12,-1047),(1730,.12,-1047)])]
- routes.append(dict(name='Pavilion exposed stair and upper terrace',points=[(1730,.16,-1062.4),(1727.3,.16,-1062.4),(1727.3,3.21,-1056.9),(1727.3,3.21,-1055.5),(1727.3,6.26,-1050),(1727.3,6.26,-1049.2),(1724.95,6.26,-1049.2),(1724.95,6.26,-1044.8)]))
+ routes.append(dict(name='Pool gate approach',points=[(1773,.12,-1054.2),(1770,.12,-1054.2),(1768,.12,-1054.2)]))
+ routes.append(dict(name='Pavilion exposed stair and upper terrace',points=[(1730,.16,-1063.0),(1727.3,.16,-1063.0),(1727.3,.16,-1062.4),(1727.3,3.21,-1056.9),(1727.3,3.21,-1055.5),(1727.3,6.26,-1050),(1727.3,6.26,-1049.2),(1724.95,6.26,-1049.2),(1724.95,6.26,-1044.8)]))
  return dict(key=KEY,name='Mardi Gras Hotel & Casino',center=[1727,0,-1054],bounds=[1645,-1085,1802,-1021],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],hotelSources=[],routes=routes)
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')
