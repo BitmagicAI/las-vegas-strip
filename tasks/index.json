@@ -8108,11 +8108,12 @@
      "tools/resort-blocks/tacos-mexico.json"
     ],
     "builders": [
+     "tools/strip-landmarks/export_tacos_mexico_sahara.py",
+     "tools/strip-landmarks/test-tacos-mexico-sahara.mjs",
+     "tools/city-exteriors/install-tacos-mexico-sahara.py",
      "tools/city-exteriors/test-tacos-mexico.mjs",
-     "tools/city-exteriors/replace-tacos-mexico.py",
-     "tools/city-exteriors/walk-tacos-mexico.mjs",
-     "tools/strip-landmarks/tacos_mexico.py",
-     "tools/strip-landmarks/build_tacos_mexico.py"
+     "tools/strip-landmarks/review_tacos_mexico_sahara.py",
+     "tools/city-exteriors/check-tacos-mexico-sahara-furniture.py"
     ]
    },
    "acceptance": [
@@ -13764,12 +13765,14 @@
    "id": "ext-tacos-mexico-sahara",
    "title": "Refine the exterior of Tacos Mexico #2 — Sahara",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Build reference-supported exterior and public dining room, source review, scoped replacement, optimized GLBs/current bake, installed exterior/interior views, walking/performance and package checks."
+    "Exact roof depths, stone relief, signage, pylon panels, opaque glazing, side/rear services and roof material repetition need refinement.",
+    "Public room footprint and layout inferred from photographs; menu panels are original simplified graphics, booth upholstery and metal embossing simplified. Kitchen/private areas closed.",
+    "Roads and parking retained; existing site paving differs from photographs. Bright ceiling pools and front-view p95 frame-time variation remain."
    ],
    "record": "tools/resort-blocks/tacos-mexico-sahara.json",
    "buildings": [],
@@ -13781,7 +13784,14 @@
     "writes": [
      "tools/resort-blocks/tacos-mexico-sahara.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_tacos_mexico_sahara.py",
+     "tools/strip-landmarks/test-tacos-mexico-sahara.mjs",
+     "tools/city-exteriors/install-tacos-mexico-sahara.py",
+     "tools/strip-landmarks/review_tacos_mexico_sahara.py",
+     "tools/city-exteriors/check-tacos-mexico-sahara-furniture.py",
+     "tools/city-exteriors/check-tacos-mexico-sahara-preservation.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

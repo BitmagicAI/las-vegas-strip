@@ -264,7 +264,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-herbs-rye` | M | P3 | 3 | Refine the exterior of Herbs & Rye |
 | `ext-dennys-flamingo` | S | P3 | 2 | Refine the exterior of Denny's — West Flamingo |
 | `ext-chick-fil-a-flamingo` | M | P3 | 3 | Refine the exterior of Chick-fil-A — Flamingo & Valley View |
-| `ext-tacos-mexico-sahara` | S | P3 | 1 | Refine the exterior of Tacos Mexico #2 — Sahara |
+| `ext-tacos-mexico-sahara` | M | P3 | 3 | Refine the exterior of Tacos Mexico #2 — Sahara |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors
