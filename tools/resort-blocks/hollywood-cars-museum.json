@@ -1,0 +1,49 @@
+{
+  "id": "hollywood-cars-museum",
+  "name": "Hollywood Cars Museum warehouse",
+  "status": "active",
+  "mappedIds": [
+    "way/225705142"
+  ],
+  "claim": {
+    "issue": 286,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/286",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://hollywoodcarsmuseum.com/contact-hollywood-cars-museum/",
+      "observed": "Official address5115DeanMartinDrive#905."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6OE_i_aM_-7TQu6pvH3C1w&heading=300&pitch=0",
+      "observed": "December2022 south approach identifies museum south end of north-southwarehouse. Tan verticalmetal siding, mixedblockend, ramp, glazedentry, hedge andbanner."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0969671,-115.1825704,347m/data=!3m1!1e3",
+      "observed": "Aerial confirms museum location west of motel southneighbor; surveynameway225705143 is misleading."
+    },
+    {
+      "url": "https://www.vegas.com/attractions/on-the-strip/hollywood-cars-museum/",
+      "observed": "Exterior photo: tan verticalmetal siding, glazeddoubleentry, broadbanners, clippedhedges. No reference media copied into assets."
+    }
+  ],
+  "uncertainDimensions": [
+    "Height, sidingpitch, doorway/rampdimensions inferred from photos, notsurveyed.",
+    "Exact exhibit plan and tenant subdivision unresolved; no full publicinterior claim.",
+    "OSM museumname is onwrong neighboringway225705143; do not remove that building."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build reference-supported exterior, entrances and approach.",
+    "Replace only owned placeholder/collision and preserve adjacent warehouses/roads.",
+    "Source review and scopedchecks, optimize/install/bake, actualwalk/daylightviews and matchingperformance.",
+    "Reference-supported publicinterior may follow once layout and original exhibit assets exist; no placeholder cars presented as completion."
+  ],
+  "evidence": [],
+  "nextPass": {
+    "priority": "Baseline actual warehouse, then build southentrance and original corrugated facade.",
+    "checkpoint": "Claim286 verified; source references inspected. No model replacement yet."
+  }
+}

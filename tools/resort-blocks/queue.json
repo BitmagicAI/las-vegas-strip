@@ -1372,9 +1372,19 @@
     {
       "id": "motel6-stadium",
       "name": "Motel 6 Las Vegas I-15 Stadium",
+      "status": "refinement-deferred",
+      "record": "motel6-stadium.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Installed three passes and inspected public routes; retain parking/finish/hidden-connection discrepancies while advancing city-wide as requested."
+      }
+    },
+    {
+      "id": "hollywood-cars-museum",
+      "name": "Hollywood Cars Museum warehouse",
       "status": "active",
-      "record": "motel6-stadium.json"
+      "record": "hollywood-cars-museum.json"
     }
   ],
-  "active": "motel6-stadium"
+  "active": "hollywood-cars-museum"
 }
