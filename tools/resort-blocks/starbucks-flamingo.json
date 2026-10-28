@@ -1,0 +1,41 @@
+{
+  "id": "starbucks-flamingo",
+  "name": "Starbucks 340 E Flamingo",
+  "status": "active",
+  "mappedIds": [
+    "way/308291919"
+  ],
+  "claim": {
+    "issue": 356,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/356",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.starbucks.com/store-locator/store/1006438/",
+      "observed": "Official store link corroborated by Maps and directory."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Starbucks+340+East+Flamingo+Road+Las+Vegas",
+      "observed": "Photo CIHM0ogKEICAgIDxrszkqgE,TJCho,Jun2023 actually inspected: tall curtainwall, thin pale mullions, broad charcoal fascia, projecting white letters, dark stone panel, pale sidewall and railed patio."
+    },
+    {
+      "url": "https://images1.showcase.com/d2/CVDpwhZGeY3jAGnTGCFvso5TyL5V75Pj_qcl0B8o9cc/document.pdf",
+      "observed": "Siteplan lists340Starbucks2100sqft; not measured interior layout."
+    }
+  ],
+  "implemented": [],
+  "uncertainDimensions": [
+    "Roof height/public room layout not established."
+  ],
+  "remaining": [
+    "Inspect aerial, additional exterior and public interior references",
+    "Build original scoped exterior and supported public room",
+    "Install optimized assets and current bake, inspect actual views/walk routes and measure performance"
+  ],
+  "nextPass": {
+    "priority": "Reference review then baseline and original geometry",
+    "checkpoint": "Claim356confirmed; no geometry edits yet. Fogo3f2ade2pushed/PR355ready/claim354released."
+  }
+}
