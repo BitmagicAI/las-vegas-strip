@@ -14212,12 +14212,13 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Reconcile footprint and facade orientation with aerial reference.",
-    "Author facade, entrance, signage, planters and roof/service details from supported references.",
-    "Targeted installation and preservation audit; scoped approach checks and installed visual/performance comparisons.",
-    "Optimize, pack and refresh city bake; retain all fidelity discrepancies."
+    "Exact fascia height, bay proportions, pylon placement/lettering and planter/umbrella dimensions are photo estimates.",
+    "Existing city paving retained: real frontage asphalt parking, striping and precise curb/entry grades remain to reconcile in a targeted site pass.",
+    "Rear facade and roof equipment arrangement inferred; need additional reference coverage.",
+    "Closed entrance/exterior-only scope: public interior layout not reconstructed.",
+    "Fine signage graphics, masonry relief, fixtures and planting remain simplified; no photorealistic completion claim."
    ],
    "record": "tools/resort-blocks/nuleaf-twain.json",
    "buildings": [],
@@ -14227,9 +14228,22 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
+     "runtime-assets/baked/city-lod.bin",
+     "runtime-assets/geographic-strip/city-colliders.bin",
+     "runtime-assets/geographic-strip/city.glb",
+     "runtime-assets/strip-landmarks/nuleaf-twain-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/nuleaf-twain-exterior.glb",
+     "runtime-assets/strip-landmarks/venues.bin",
      "tools/resort-blocks/nuleaf-twain.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/bake/bake-city.mjs",
+     "tools/geographic-strip/export_detailed.py",
+     "tools/city-exteriors/install-nuleaf-twain.py",
+     "tools/optimize/optimize-runtime-glbs.mjs",
+     "tools/city-exteriors/replace-city-market-liquor.py",
+     "tools/strip-landmarks/test-nuleaf-twain.mjs"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

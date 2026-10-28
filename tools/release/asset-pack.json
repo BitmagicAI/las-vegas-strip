@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1497,
- "bytes": 1124903410,
+ "count": 1499,
+ "bytes": 1125391971,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19546300,
-   "sha256": "50f37ae2f4f81afa791c0d6edeaaa442616e7a8e72749e2d99851fb13771f929",
+   "bytes": 19561429,
+   "sha256": "9c3c9e7c3860266ad08e1d3d447ca54e8b4e5b98d8a494b991693df9c044eb97",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13059124,
-   "sha256": "9afeb9a778f39af45204f380fb40d8969b98b75f6659a10c890f14e07949cf21",
+   "bytes": 13059344,
+   "sha256": "2fb4120f71018488e52d1b023f6d8cca61a3beff3af06907ea3e06fb23c14e3c",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109739876,
-   "sha256": "d1a5972b90d663f43e1657855a8bd581141a3742bf20cb035473fb4b8f713d64",
+   "bytes": 109739524,
+   "sha256": "f7df969d3f8f380006376609acde795f6e14dd03e298ea32875a3254ae3ab88c",
    "kind": "optimized"
   },
   {
@@ -7505,6 +7505,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/nuleaf-twain-exterior-collision.bin",
+   "bytes": 376,
+   "sha256": "24e892d6df04dddca32cf73737089429a9483e3c936e3025c74cfacebb7a47fa",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/nuleaf-twain-exterior.glb",
+   "bytes": 472944,
+   "sha256": "4f53245e8cd702bbf92f69c0588a7b640ac7a62339cf3c831ec25dd9acece736",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/nynyArrival-exterior-collision.bin",
    "bytes": 1100,
    "sha256": "91b022712526f2b0ae5775ad4ff989d339b86d98b02ed57fd53babcf5be143a8",
@@ -8790,8 +8802,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 365844,
-   "sha256": "d2844a00a279d0327c7548ea87cd7cbf66f6573813f93fa09ba68aeb6fab904e",
+   "bytes": 366088,
+   "sha256": "ec525f59bae08910e3b957fc1539a80322ab6d5ec41084594a95f835f63e8454",
    "kind": "original"
   },
   {

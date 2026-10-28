@@ -274,7 +274,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-mardi-gras` | L | P3 | 8 | Refine the exterior of Mardi Gras Hotel & Casino |
 | `ext-speedee-mart-paradise` | M | P3 | 5 | Refine the exterior of Speedee Mart Paradise Road |
 | `ext-seven-eleven-paradise` | M | P3 | 5 | Refine the exterior of 7-Eleven Paradise Road |
-| `ext-nuleaf-twain` | M | P3 | 4 | Refine the exterior of NuLeaf Twain Avenue |
+| `ext-nuleaf-twain` | M | P3 | 5 | Refine the exterior of NuLeaf Twain Avenue |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors
