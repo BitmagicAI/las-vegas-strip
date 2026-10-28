@@ -1,0 +1,39 @@
+{
+  "id": "dean-martin-5115",
+  "name": "5115 Dean Martin east-front commercial building",
+  "status": "active",
+  "mappedIds": [
+    "way/225705143"
+  ],
+  "claim": {
+    "issue": 290,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/290",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://clark.legistar.com/View.ashx?GUID=42151E43-5115-4374-8F11-3D25A37026B3&ID=13751316&M=F",
+      "observed": "5115 complex contains nine industrial/office buildings. Report describes west-side Building 4, not a verified plan for this east-front shell."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GxSBHnSyOvfqRy94BOpHwQ&heading=189.82&pitch=0",
+      "observed": "December 2022 commercial court: masonry end walls, ribbed pale mansards, glazed tenant fronts. Exact correspondence to owned building still needs frontage inspection."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mixed museum/shooting-center OSM name is unreliable. Exact tenant names and frontage dimensions unverified."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Verify road-facing reference and original mapped outline.",
+    "Author exterior after draft PR; preserve neighboring museum/Shooting Center and roads.",
+    "Targeted collision replacement, scoped checks, installed views, actual walking and matching performance.",
+    "Package optimized GLBs, packed data and current bake."
+  ],
+  "nextPass": {
+    "priority": "Identify exact east-front architecture from Street View; establish baseline before modeling.",
+    "checkpoint": "Claim 290 verified janiverse. No geometry edited or installed for this block. Shooting Center installed pass is commit 66804d0."
+  },
+  "evidence": []
+}
