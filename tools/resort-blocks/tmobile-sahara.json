@@ -1,0 +1,39 @@
+{
+  "id": "tmobile-sahara",
+  "name": "T-Mobile Sahara & Valley View",
+  "status": "active",
+  "mappedIds": [
+    "way/926281499"
+  ],
+  "claim": {
+    "issue": 326,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/326",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.t-mobile.com/stores/bd/t-mobile-las-vegas-nv-89102-1slo",
+      "observed": "Official page says temporarily closed; do not infer accessible interior."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=57AP-yeQ2C0zH1WOwQMqCg&heading=0&pitch=0",
+      "observed": "Feb2025 south frontage inspected. Address3862; left tan arch bay with tiled hipped cap; cream stucco/right flat cornice; opaque white window graphics, magenta signs, gravel/shrubs. East side seen in nearby6toXwoL2mXFsk_gcXh5ZKw panorama heading315."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1448,-115.1921,180m/data=!3m1!1e3",
+      "observed": "Satellite zoom inspected: long white flat center roof, terracotta hip caps southwest and northeast, small mechanical units, west parking aisle and east narrow landscape strip. Capture date not established."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped19.5x32.5m shell; height/roof/services estimated. Interior remains closed."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Original facade geometry/materials, source review, scoped install, optimized/current bake and installed walking/visual/performance checks."
+  ],
+  "nextPass": {
+    "priority": "Original south arch bay, opaque glazing and cream side elevations.",
+    "checkpoint": "Claim326 confirmed. No geometry edits yet. Reference tab57 and56 marked for handoff."
+  }
+}
