@@ -1,7 +1,7 @@
 {
   "id": "shooting-center",
   "name": "5155 Dean Martin \u2014 Shooting Center / J&S Diesel",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/1126368790"
   ],
@@ -15,39 +15,39 @@
   "sources": [
     {
       "url": "https://lasvegasshootingcenter.com/contact-us/",
-      "observed": "Official address5155DeanMartinDrSuite1."
+      "observed": "Official address: 5155 Dean Martin Drive, Suite 1."
     },
     {
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Bby3Uz4krcUkCcQ2Z-Q8lA&heading=264&pitch=0",
-      "observed": "February2025eastfrontage:tanmasonry,steppedparapet/signband,terracottatiledcanopy,glazing,tenantbays andlowrange wing. Temporaryconstructionequipment excluded."
+      "observed": "February 2025 east frontage: tan masonry, raised parapet and sign band, terracotta canopy with dark upper windows, glazing, tenant bays and low range wing. Temporary construction equipment excluded."
     },
     {
       "url": "https://www.google.com/maps/@36.0959994,-115.182747,261m/data=!3m1!1e3",
-      "observed": "Aerial locates irregularstreetfrontbuilding southof225705143. Surveyname ismisleading; ownedway1126368790."
+      "observed": "Aerial locates the irregular street-front building south of way/225705143. Survey name is misleading; owned building is way/1126368790."
     },
     {
       "url": "https://lasvegasshootingcenter.com/media/",
-      "observed": "Officialgallery available; fullpublicinteriorlayout notyetverified."
+      "observed": "Official gallery available; full public interior layout not verified."
     }
   ],
   "uncertainDimensions": [
-    "Heights, exactbaywidths, canopydepth andtenantpartition inferred, notsurveyed.",
-    "Publicinteriorplan andrangeconnections unverified; no inventedlayout orfunctionalshootinggame."
+    "Heights, exact bay widths, canopy depth and tenant partitions are inferred, not surveyed.",
+    "Public interior plan and range connections are unverified; no invented layout or functional shooting game."
   ],
   "implemented": [
-    "Uninstalled original6368triangle source draft: mapped irregularshell, eastparapet/signband, tiledcanopy, glazing/doors, masonrycourses androofequipment."
+    "Original 33,210-triangle exterior: mapped irregular masonry shell, raised east sign band, profiled terracotta canopy tiles, upper dark windows, tenant signs/address, closed storefront doors and glazing, entry apron and inferred roof equipment.",
+    "Replaced only 28 owned placeholder and matching collision faces; all 9,560 city mesh groups retain vertices, metadata and retained face order.",
+    "Three public approach routes pass 127 collision/floor samples with current city collision. Canopy posts moved clear of door approaches after first check found six blocked samples."
   ],
   "remaining": [
-    "Verify mappedoutline/height andsourcebaseline.",
-    "Build originalreference-supportedexterior, entrance andpublicapproach.",
-    "Targetedplaceholder/collisionreplacement withpreservationaudit.",
-    "Source/daylightinstalledreview, routechecks/actualwalk andmatchingperformance.",
-    "OptimizedGLBs/packeddata/currentcitybake andassetpackage.",
-    "Publiclobby onlywhenreference-supported;retainunknowninteriorlayout."
+    "Exact bay spacing, canopy dimensions, tenant graphics and hidden service details remain inferred.",
+    "Site planting, mature palms, service doors and detailed roof equipment need a later reference-backed pass.",
+    "Public interior remains closed: no verified tenant plan.",
+    "Shared-machine performance is descriptive, not a guaranteed 60 fps claim."
   ],
   "nextPass": {
-    "priority": "Refine actualfrontage against February2025reference, addapproachroutes andscopedchecks, theninstall/verify.",
-    "checkpoint": "Source6368triangles exported and2rendersinspected;3baselineviewsinspected. No cityplaceholderremoved/no newruntimeassets. Museum1204aec remainslatestinstalledpass. Claim288assignedjaniverse,draft289attached. Allownedprocessesdone."
+    "priority": "Refine frontage and site details after broader city coverage; keep interiors closed until plans support them.",
+    "checkpoint": "Installed and inspected three daylight views; all six actual walking segments pass. 127 scoped collision samples pass. Optimized building ~1 MB, current 688-batch city bake, 1421 runtime files and zero missing. Preserve other city changes."
   },
   "evidence": [
     {
@@ -107,6 +107,80 @@
       "path": "build/city-exteriors/shooting-center-source-review",
       "viewsInspected": 2,
       "note": "Sparse firstdraft. Roofandcanopy fitmappedoutline; facadebayrhythm, signplacements, blockjointpattern, canopyprofile/serviceentrances needcloserreferencepass beforeinstallation."
+    },
+    {
+      "type": "refined-source-and-collision",
+      "path": "build/city-exteriors/shooting-center-source-review",
+      "viewsInspected": 2,
+      "triangles": 33210,
+      "routeChecks": 127,
+      "routeFailures": 0,
+      "preservation": "build/city-exteriors/shooting-center-preservation.json"
+    },
+    {
+      "type": "installed-daylight",
+      "path": "build/city-exteriors/shooting-center-installed",
+      "viewsInspected": 3,
+      "performance": [
+        {
+          "name": "east-front",
+          "eye": [
+            -749,
+            3,
+            2240
+          ],
+          "target": [
+            -785,
+            3,
+            2232
+          ],
+          "p50": 16.600000023841858,
+          "p95": 21.90000009536743
+        },
+        {
+          "name": "southeast",
+          "eye": [
+            -757,
+            6,
+            2282
+          ],
+          "target": [
+            -794,
+            3,
+            2240
+          ],
+          "p50": 16.899999976158142,
+          "p95": 26.700000047683716
+        },
+        {
+          "name": "roof",
+          "eye": [
+            -738,
+            65,
+            2280
+          ],
+          "target": [
+            -794,
+            3,
+            2233
+          ],
+          "p50": 16.700000047683716,
+          "p95": 23.299999952316284
+        }
+      ]
+    },
+    {
+      "type": "actual-walking",
+      "path": "build/city-exteriors/shooting-center-walk/results.json",
+      "segments": 6,
+      "passed": true,
+      "note": "Initial 14-second limit was too short for the 30-metre frontage; 30-second limit completed both directions without geometry changes."
+    },
+    {
+      "type": "runtime-package",
+      "files": 1421,
+      "missing": 0,
+      "bakeBatches": 688
     }
   ]
 }
