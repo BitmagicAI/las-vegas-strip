@@ -1,0 +1,40 @@
+{
+  "id": "dean-martin-courtyard",
+  "name": "5115 central west courtyard frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/225705138"
+  ],
+  "claim": {
+    "issue": 294,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/294",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GxSBHnSyOvfqRy94BOpHwQ&heading=270&pitch=0",
+      "observed": "December2022 courtyard: continuous pale ribbed mansard, thin posts, mixed vertical panels and glazed tenant entries, masonry ends. Panorama36.0968372,-115.1828011 faces west."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0969,-115.1832,300m/data=!3m1!1e3",
+      "observed": "Aerialalignment of long north-south building west of museum/northentrance. PrimeTimeAutoRepair listing belongs to adjacent north block; do not reuse its misplaced museum photos."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint[-923.394,2090.023,-899.663,2170.363]. Heights/precisetenantpartitions unverified.",
+    "No confirmed publicinterior plan."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Matchingbaseline, sourcegeometry/renderinspection.",
+    "Targetedreplacement/preservation/scopedroutes.",
+    "OptimizedGLB/packeddata/currentbake.",
+    "Installeddaylightviews/walking/performance."
+  ],
+  "nextPass": {
+    "priority": "Baseline and original exterior using mapped east edge and mixedpanel frontage.",
+    "checkpoint": "Claim294 confirmedjaniverse. Lastverifiedruntime8f17b59. DraftPRrequired beforegeometryedits."
+  },
+  "evidence": []
+}
