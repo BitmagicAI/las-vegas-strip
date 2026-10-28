@@ -8,12 +8,17 @@ def build(B):
  B.property=KEY+'-exterior';B.source='retail/'+KEY;B.detail=0
  door=dict(p=F.p(3,.15,0),yaw=-math.pi/2,width=1.8,height=2.45,name='Shop entrance',venue=KEY)
  B.upface('se-concrete',[F.p(2.12,.168,-.8),F.p(3.88,.168,-.8),F.p(3.88,.34,.8),F.p(2.12,.34,.8)],True)
- B.shell(p,0,5.35,'se-stucco',openings=[door],roof=False);B.planar('se-membrane-paint',p,5.35)
+ windows=[]
+ for u in [-7.2,-5.4,-3.6,-1.8,0,1.47,4.8,6.6,8.0]:
+  w=1.1 if u==1.47 else 1.65 if u<7.8 else 1.05
+  for base,top in [(.35,3.65),(3.775,4.625)]:
+   windows.append(dict(p=F.p(u,base+.15,0),yaw=-math.pi/2,width=w,height=top-base-.25))
+ B.shell(p,0,5.35,'se-stucco',openings=[door,*windows],roof=False);B.planar('se-membrane-paint',p,5.35)
  # Shop's high dark metal storefront behind the west canopy; transom above main lights.
  for u in [-7.2,-5.4,-3.6,-1.8,0,1.47,4.8,6.6,8.0]:
   width=1.1 if u==1.47 else 1.65 if u<7.8 else 1.05
-  F.box('se-glass',(u,2.0,.025),(width,3.3,.04))
-  F.box('se-glass',(u,4.2,.025),(width,.85,.04))
+  F.box('se-glass',(u,2.0,.025),(width,3.3,.04),True)
+  F.box('se-glass',(u,4.2,.025),(width,.85,.04),True)
   F.box('se-steel-paint',(u-width/2,2.4,.07),(.06,4.6,.1))
  for y in [3.65,4.7]:F.box('se-steel-paint',(0,y,.07),(17.9,.08,.1))
  for lo,hi in [(-8.95,2.1),(3.9,8.95)]:F.box('se-steel-paint',((lo+hi)/2,.35,.07),(hi-lo,.08,.1))
@@ -25,6 +30,13 @@ def build(B):
  for a,b in zip(list(c.exterior.coords),list(c.exterior.coords)[1:]):
   if LineString([a,b]).distance(p.boundary)<.02 and p.buffer(.03).covers(LineString([a,b])):continue
   dx,dz=b[0]-a[0],b[1]-a[1];w=math.hypot(dx,dz);R=Frame(B,(a[0]+b[0])/2,(a[1]+b[1])/2,math.atan2(-dz,dx),y=0)
+  # Jan2026 photograph shows rounded segmented coping above the fascia.
+  # Radius/seam spacing are estimates; retain the concealed flat membrane.
+  profile=[(-.38*math.cos(t),6.015+.30*math.sin(t)) for t in np.linspace(0,math.pi,13)]
+  for (v0,y0),(v1,y1) in zip(profile,profile[1:]):
+   B.upface('se-white',[R.p(-w/2,y0,v0),R.p(w/2,y0,v0),R.p(w/2,y1,v1),R.p(-w/2,y1,v1)])
+  for u in np.linspace(-w/2+.06,w/2-.06,max(2,math.ceil(w/1.5)+1)):
+   R.path('se-metal-paint',[(float(u),y+.012,v) for v,y in profile],.012,6)
   # Thin outward belts wrap each edge; no duplicated coplanar panels.
   for y,h,m in [(5.79,.16,'se-orange'),(5.47,.34,'se-green'),(5.12,.17,'se-red')]:R.box(m,(0,y,0),(w,h,.055))
  # Slender black columns, beams and lit soffit panels: fixed materials, no runtime lights.
@@ -48,10 +60,15 @@ def build(B):
   B.box('se-metal-paint',(x,5.6,z),(1.1,.5,1.1));B.box('se-soffit',(x,5.87,z),(1.2,.04,1.2))
  # Public room: counter details supported by the Feb2025 photo; arrangement inferred.
  B.property=KEY+'-interior';B.source='public/'+KEY
- B.planar('se-floor',p.buffer(-.15),.15,True);B.shell(p.buffer(-.16),.15,4.75,'se-cream',openings=[door],roof=False,solid=False)
+ B.planar('se-floor',p.buffer(-.15),.15,True);B.shell(p.buffer(-.16),.15,4.75,'se-cream',openings=[door,*windows],roof=False,solid=False)
  inside=p.buffer(-.16)
  for tri in triangles(inside):
   pts=[(x,4.65,z) for x,z in list(tri.exterior.coords)[:-1]];a=np.array(pts);B.face('se-ceiling',pts if np.cross(a[1]-a[0],a[2]-a[0])[1]<0 else list(reversed(pts)))
+ # Exposed T-grid: reference establishes a tiled ceiling, spacing is estimated.
+ for x in np.arange(1660.0,1677.5,.6):
+  B.box('se-white',(float(x),4.625,-636.84),(.022,.035,17.5))
+ for z in np.arange(-645.5,-628.0,1.2):
+  B.box('se-white',(1668.7,4.625,float(z)),(17.5,.035,.022))
  R=Frame(B,1665,-640,0,y=.15)
  R.box('se-cabinet',(0,.58,0),(5,1.16,1.1),True);R.box('se-counter',(0,1.19,0),(5.12,.08,1.2))
  for u in np.arange(-2.2,2.4,.62):
@@ -62,8 +79,13 @@ def build(B):
  for y in [1.35,1.7,2.05]:
   R.box('se-steel-paint',(0,y,-.25),(4.8,.045,.48))
   for u in np.arange(-2.4,2.5,.12):R.tube('se-steel-paint',(float(u),y,-.48),(float(u),y,.02),.009,6)
-  for u in np.arange(-2.1,2.2,.42):
-   R.box('se-stock',(float(u),y+.12,-.22),(.24,.2,.25))
+  for j,u in enumerate(np.arange(-2.1,2.2,.42)):
+   u=float(u);m=['se-pack-red','se-pack-blue','se-pack-gold','se-pack-green'][(j+int(y*10))%4]
+   # Original generic snack bags, not copied product labels.
+   R.box(m,(u,y+.14,-.22),(.24,.26,.16))
+   R.box('se-white',(u,y+.15,-.132),(.17,.08,.008))
+   R.box('se-metal-paint',(u,y+.272,-.22),(.23,.012,.16))
+   for dy,w in [(0,.12),(.025,.08)]:R.box('se-steel-paint',(u,y+.14+dy,-.125),(w,.008,.004))
  for u in [-1.6,-.7,.2,1.1]:
   for y in [1.26,1.34,1.42]:R.lathe('se-white',u,.3,[(y,.08),(y+.18,.11)],16)
  for x,z in [(1673,-634),(1673,-639)]:B.box('se-cabinet',(x,1.1,z),(1.0,1.9,3.0),True)

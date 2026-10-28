@@ -3,13 +3,16 @@ from pathlib import Path
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
 E.colors.update({'se-stucco':'adafa8','se-white':'d0d0c5','se-membrane-paint':'979b96','se-soffit':'454a48','se-orange':'c6552c','se-red':'a72d37','se-green':'266354','se-steel-paint':'222b2b','se-glass':'33484a','se-letter':'dbd8c3','se-metal-paint':'858b85','se-screen':'28383a','se-rubber':'232525','se-yellow':'cba743','se-concrete':'9d9c91','se-cream':'bbb8a7','se-floor':'9e9e90','se-ceiling':'c9c7b9','se-cabinet':'4c514e','se-counter':'a29e8f','se-stock':'a88c5b','se-light':'d1d0bd'})
+E.colors.update({'se-pack-red':'a73e37','se-pack-blue':'365c89','se-pack-gold':'b59a4b','se-pack-green':'496c45'})
 for part in ['exterior','interior']:
  bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add('seven-eleven-paradise-'+part)
  for obj in bpy.context.scene.objects:
   if obj.type=='MESH':obj.data.validate(verbose=True)
  for key,m in E.materials.items():
   bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.82
-  if key=='se-glass':bs.inputs['Roughness'].default_value=.24
+  if key=='se-glass':
+   bs.inputs['Roughness'].default_value=.18;bs.inputs['Alpha'].default_value=.22
+   m.surface_render_method='BLENDED';m.use_backface_culling=True
   if key=='se-metal-paint':bs.inputs['Metallic'].default_value=.45
   if key=='se-light':bs.inputs['Emission Color'].default_value=(.9,.86,.7,1);bs.inputs['Emission Strength'].default_value=.4
   if key not in ['se-floor','se-stucco','se-cream','se-counter']:continue

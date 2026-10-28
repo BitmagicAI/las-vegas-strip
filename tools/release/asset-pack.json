@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1497,
- "bytes": 1124549696,
+ "bytes": 1124903410,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19546238,
-   "sha256": "32a366e6113468f72da338f12d34fa06a6d15672fcb1b99c274b8c91139ad1ca",
+   "bytes": 19546300,
+   "sha256": "50f37ae2f4f81afa791c0d6edeaaa442616e7a8e72749e2d99851fb13771f929",
    "kind": "original"
   },
   {
@@ -8154,14 +8154,14 @@
   },
   {
    "path": "build/strip-landmarks/seven-eleven-paradise-exterior-collision.bin",
-   "bytes": 940,
-   "sha256": "c03f0428fae044fb610b7f246ab5672ef15d25e8241cb3fe0c93abc94b357fd6",
+   "bytes": 1968,
+   "sha256": "68b97e0ee3e3f5b6a9ce0a31b5638da5d8b29f35ef1387f27c8854b04100a44c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/seven-eleven-paradise-exterior.glb",
-   "bytes": 195556,
-   "sha256": "357b01857ca1cc3625af8c3ee9bf0554505cbf93488a9e2bc3e3a0408c98b09c",
+   "bytes": 516188,
+   "sha256": "5e933cf75b31af5dd3a3391b935c46b056a881ff57b19a887720adcdff3bae5b",
    "kind": "optimized"
   },
   {
@@ -8172,8 +8172,8 @@
   },
   {
    "path": "build/strip-landmarks/seven-eleven-paradise-interior.glb",
-   "bytes": 320756,
-   "sha256": "840689e8ae01dd49326c9fe8014f798e3ef0fbc479578df1482d1427c9f76a5d",
+   "bytes": 352748,
+   "sha256": "cbf85b3334e3082e75186990883362fd28a1c0d818175bdf589034af784d6349",
    "kind": "optimized"
   },
   {

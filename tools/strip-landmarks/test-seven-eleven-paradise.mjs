@@ -27,6 +27,13 @@ for(const route of meta.routes)for(let k=1;k<route.points.length;k++){
   if(hit||!floor)failures.push({x,y,z,blocked:!!hit,floor:!!floor});
  }
 }
-world.free();const result={checks,failures,city:installed};
+// Cut-through visual windows must still stop the player; the doorway remains open.
+let windowChecks=0;
+for(const u of [-7.2,-5.4,-3.6,-1.8,0,1.47,4.8,6.6,8.0]){
+ windowChecks++;
+ const hit=world.intersectionWithShape({x:1659.761,y:2,z:-636.842+u},{x:0,y:0,z:0,w:1},new RAPIER.Capsule(.65,.29));
+ assert(hit,`Missing collision behind storefront pane ${u}`);
+}
+world.free();const result={checks,windowChecks,failures,city:installed};
 fs.writeFileSync('build/strip-landmarks/seven-eleven-paradise-route-audit.json',JSON.stringify(result,null,2));
 console.log(result);assert.equal(failures.length,0);

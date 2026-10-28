@@ -14168,11 +14168,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Canopy roof is currently flat; reference shows shallow curved roof segments and seam grid that need a measured follow-up.",
-    "Glazing remains opaque and backed by walls; recessed transparent openings and realistic interior/exterior continuity remain.",
+    "Exact roof coping dimensions, corner mitres and concealed roof/service layout remain estimated; photographed rounded edge is now modeled.",
     "Public interior is a limited counter/arrival pass, not a complete store plan. Full aisles, chillers, checkout placement and hidden service rooms require further reference evidence.",
-    "Merchandise, pump fittings, signage graphic proportions and ceiling grid remain simplified; no photorealistic completion claim.",
-    "Forecourt paving/curbs retained from city source; reconcile exact island grading and add reference-supported pylon, bins and other site detail in later scoped pass."
+    "Merchandise, pump fittings, signage graphic proportions remain simplified; no photorealistic completion claim.",
+    "Forecourt paving/curbs retained from city source; reconcile exact island grading and add reference-supported pylon, bins and other site detail in later scoped pass.",
+    "Glazing now translucent, but reflection/tint and complete interior fitout still need fidelity review."
    ],
    "record": "tools/resort-blocks/seven-eleven-paradise.json",
    "buildings": [],
@@ -14182,6 +14182,10 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
+     "runtime-assets/strip-landmarks/seven-eleven-paradise-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/seven-eleven-paradise-exterior.glb",
+     "runtime-assets/strip-landmarks/seven-eleven-paradise-interior-collision.bin",
+     "runtime-assets/strip-landmarks/seven-eleven-paradise-interior.glb",
      "tools/resort-blocks/seven-eleven-paradise.json"
     ],
     "builders": [
