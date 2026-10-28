@@ -24,6 +24,10 @@
     {
       "url": "https://www.google.com/maps/search/Buca+di+Beppo+412+East+Flamingo+Las+Vegas",
       "observed": "Aerial inspected: rectangular rotated footprint, roof equipment concentrated west; south frontage landscaping and southwest entry projection, parking east/west. Street View control opened owner photograph December 2025, CIABIhBTHnWatR8PMFr4VcXQVJGO, not panorama. Public dining character: vaulted decorated ceiling, rust walls, darkwood wainscot, checkcloth tables, loose chairs and booths, chandeliers. Photo establishes character, not full plan."
+    },
+    {
+      "url": "https://dineatbuca.com/wp-content/uploads/2024/11/las-vegas-paradise.jpg",
+      "observed": "Official Paradise page image visually inspected. Solid green awnings, broader pale stone entrance pier and stone lower facade, raised red Buca lettering, gravel planting and hedges. Upload path2024/11 does not establish capture date. Supersedes striped awnings in undated tourism image for this pass."
     }
   ],
   "uncertainDimensions": [
@@ -32,17 +36,18 @@
   ],
   "implemented": [
     "Initial original geometry: mapped maroon shell, southwest entrance and porch, stone pier, striped awnings, retro sign, roof equipment and frontage planting.",
-    "Reference-character public dining room: barrel vault, rust walls, dark wood wainscot, checkcloth tables/chairs, original abstract framed art and chandeliers. Room placement inferred; no concealed service plan claim."
+    "Reference-character public dining room: barrel vault, rust walls, dark wood wainscot, checkcloth tables/chairs, original abstract framed art and chandeliers. Room placement inferred; no concealed service plan claim.",
+    "Refinement: four front window openings through both wall skins, transparent physical glazing/reveals, east-wall booths and reduced fixed-pool lighting; official-photo solid green awnings, broader stone entrance panel and stone base."
   ],
   "remaining": [
-    "Current exterior corroboration and exact sign ornament, planting, site parking and rear service detail",
-    "Opaque backed glazing; sparse inferred dining layout, repeated abstract art, missing booths and overbright fixtures; no complete-floorplan claim",
-    "Estimated height, room placement, roof equipment dimensions; no hidden service layout evidence",
-    "Performance tails exceed16.7ms; final exterior16.7\u201317.8ms median/p9525.3\u201331.2ms, interior16.7\u201317.4/p9524.9\u201335.1ms; no steady60fps claim"
+    "Exact sign ornament/letterforms, gravel planting/site parking and rear service detail remain simplified",
+    "West glazing remains backed; inferred public dining layout, repetitive abstract art and fixture appearance need refinement; no complete-floorplan claim",
+    "Estimated height, room placement and roof equipment dimensions; hidden service layout unknown",
+    "Frame-time tails remain above16.7ms; retain all baseline/after measurements and no steady60fps claim"
   ],
   "nextPass": {
-    "priority": "Refine documented Buca facade and public-room discrepancies; then advance city coverage",
-    "checkpoint": "Final three exterior and three interior captures available and inspected;119static current-city samples and12revised actualwalking segments passed. Current717batch bake/1503assets packaged. Save scoped checkpoint commit and draft347 update; keep architectural limitations visible. Lawrys is researched but unclaimed."
+    "priority": "Retain recorded fidelity refinements; proceed to claimed Lawrys building",
+    "checkpoint": "9932triangles,123static and12walking checks passed;6finalviews inspected,current717batch/1503asset package. Exterior16.6\u201316.7median/p9517.9\u201318.5ms;interior16.5\u201316.7/p9525.3\u201327.7. Ready for scoped review, not full architectural completion."
   },
   "verification": {
     "baseline": "build/city-exteriors/buca-flamingo-baseline/results.json",
@@ -101,7 +106,7 @@
     "refinedWalking": "build/city-exteriors/buca-flamingo-refined-walk/results.json",
     "refinedInterior": "build/city-exteriors/buca-flamingo-refined-interior/results.json",
     "staticRoutes": {
-      "samples": 119,
+      "samples": 123,
       "currentCity": true,
       "passed": true
     },
@@ -111,7 +116,7 @@
     "packaging": {
       "batches": 717,
       "assets": 1503,
-      "sourceTriangles": 9544
+      "sourceTriangles": 9932
     },
     "afterExterior": [
       {
@@ -206,18 +211,116 @@
         "p50": 16.699999928474426,
         "p95": 24.90000009536743
       }
-    ]
+    ],
+    "glazingWalking": "build/city-exteriors/buca-flamingo-glazing-walk/results.json",
+    "officialExterior": "build/city-exteriors/buca-flamingo-official-exterior/results.json",
+    "officialInterior": "build/city-exteriors/buca-flamingo-official-interior/results.json",
+    "officialExteriorPerformance": [
+      {
+        "name": "front",
+        "eye": [
+          1882,
+          2,
+          143
+        ],
+        "target": [
+          1900,
+          3,
+          125
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.100000023841858
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1872,
+          32,
+          151
+        ],
+        "target": [
+          1900,
+          1,
+          117
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.5
+      },
+      {
+        "name": "east",
+        "eye": [
+          1935,
+          2,
+          137
+        ],
+        "target": [
+          1913,
+          3,
+          116
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.899999976158142
+      }
+    ],
+    "officialInteriorPerformance": [
+      {
+        "name": "entry",
+        "eye": [
+          1893.7675848014387,
+          1.8,
+          129.89869300550876
+        ],
+        "target": [
+          1892.5994847618774,
+          1.8,
+          122.99684236255965
+        ],
+        "p50": 16.700000047683716,
+        "p95": 27.700000047683716
+      },
+      {
+        "name": "dining",
+        "eye": [
+          1892.951351975108,
+          1.8,
+          119.08325200787853
+        ],
+        "target": [
+          1905.58407881872,
+          2,
+          121.81349238093868
+        ],
+        "p50": 16.5,
+        "p95": 25.299999952316284
+      },
+      {
+        "name": "tables",
+        "eye": [
+          1901.7917856577697,
+          1.8,
+          117.38421336721555
+        ],
+        "target": [
+          1907.556036145277,
+          2,
+          121.47974951249262
+        ],
+        "p50": 16.600000023841858,
+        "p95": 25.5
+      }
+    ],
+    "officialVisualReview": "All six final installed views inspected. Green awnings, wider stone pier/base, open front glazing and booths visible; route remains clear. Stone pier reveal inside, simplified signs/roof/site and repetitive decor remain refinement items."
   },
   "finalBuild": {
     "files": {
-      "runtime-assets/baked/city-lod.bin": "43f13e727ff3988321be269addd6c75570acaaead78d02f28f91aeaacfee69c0",
+      "runtime-assets/baked/city-lod.bin": "3e7680025ffa0fb8c27caa24bfe95dc08657ef6c0d72355be47570b5db0b3d7b",
       "runtime-assets/geographic-strip/city.glb": "49396b0ad969a94c1399435ee8b4372817d2dc2e402cbc04d558de434de32eee",
       "runtime-assets/geographic-strip/city-colliders.bin": "e78e28c904e94f4c4a1695fd981e655d0705feffa54f0df0b55a62000578411a",
-      "runtime-assets/strip-landmarks/venues.bin": "29ab2c5c1836ef90a59ed0955bf3f5a8a9b28a087861a87b20fbce3954fdb277",
-      "runtime-assets/strip-landmarks/buca-flamingo-exterior-collision.bin": "7e78a1a9c899a79aa9ffc13fb0e567db21a39aa37cf1cd924cc35a66ac105883",
-      "runtime-assets/strip-landmarks/buca-flamingo-interior.glb": "a18ebe4e258b698e34ea7d75cec0b574b1dba3a36ba458b513fb696c0ff01f60",
-      "runtime-assets/strip-landmarks/buca-flamingo-exterior.glb": "f78c0ba496efc9bc0b3a6648f7f06a358db3517df4bc340f678d2db77196ce10",
-      "runtime-assets/strip-landmarks/buca-flamingo-interior-collision.bin": "3ecedb38222023bbd07fb47901267e612073bffc2cd385524622a60e8bd7f428"
+      "runtime-assets/strip-landmarks/venues.bin": "2908ff2e0aae1b6dcee697ead0164510754ce582f41868ac210b6cfe63c5b2d2",
+      "runtime-assets/strip-landmarks/buca-flamingo-exterior-collision.bin": "caf845399341b3cb0b6af7a31df7e03cdcd797ae327e2910ebc09b1eff9e292b",
+      "runtime-assets/strip-landmarks/buca-flamingo-interior.glb": "541abb2208721938e4d313955c63439212d8c3e4e4f73c4e6138cf9a2a5c31be",
+      "runtime-assets/strip-landmarks/buca-flamingo-exterior.glb": "662d1fb691b591234895bfd5d55fe6cba1dfa8d81f97027fc86f857b57488511",
+      "runtime-assets/strip-landmarks/buca-flamingo-interior-collision.bin": "987cdd1df73f7a5114033854dd35483e5f151c09c1d5fd9dd033505530a3f49e"
     }
   }
 }

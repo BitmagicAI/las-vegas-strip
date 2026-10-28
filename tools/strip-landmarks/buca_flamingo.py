@@ -7,13 +7,14 @@ def build(B):
  p=footprint(ID);F=Frame(B,1903.4605,127.244,YAW,y=0);w=30.75
  B.property=KEY+'-exterior';B.source='retail/'+KEY;B.detail=0
  door=dict(p=F.p(-10,.20,0),yaw=YAW,width=2.3,height=2.7,name='Public dining entrance',venue=KEY)
- B.shell(p,.02,5.4,'bf-stucco',roof=False,openings=[door]);B.planar('bf-roof-paint',p.buffer(-.15),5.18)
+ windows=[dict(p=F.p(u,1.025,0),yaw=YAW,width=2.65,height=1.8) for u in [-3,2,7,12]]
+ B.shell(p,.02,5.4,'bf-stucco',roof=False,openings=[door,*windows]);B.planar('bf-roof-paint',p.buffer(-.15),5.18)
  B.planar('bf-floor',p,.20,True)
  for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
   R=Frame(B,(a[0]+b[0])/2,(a[1]+b[1])/2,math.atan2(a[1]-b[1],b[0]-a[0]),y=0)
   R.box('bf-coping',(0,5.43,0),(math.dist(a,b)+.08,.12,.28))
  # Southwest entrance tower and projected porch, fitted to tourism photograph.
- F.box('bf-stone',(-7.2,3.15,-.12),(2.1,6.3,.45))
+ F.box('bf-stone',(-6.5,3.15,-.12),(4.0,6.3,.45))
  F.box('bf-stucco',(-10.5,3.15,1.25),(7.1,.36,2.6))
  for u in [-13.6,-8.2]:
   for v in [1.9,2.2]:F.tube('bf-cream',(u,.2,v),(u,3,v),.065,12)
@@ -23,19 +24,25 @@ def build(B):
  # Local entry apron, connects existing grade to the public floor; no road regeneration.
  B.upface('bf-concrete',[F.p(-13.8,.20,0),F.p(-7.5,.20,0),F.p(-7.5,.03,4),F.p(-13.8,.03,4)],True)
  # Glazed windows and green/cream striped fabric awnings.
- def awning(R,u,width):
-  R.box('bf-glass',(u,1.9,.08),(width,2.05,.06))
+ def awning(R,u,width,transparent=False):
+  R.box('bf-glass' if transparent else 'bf-back-glass',(u,1.9,.02),(width,2.05,.045),True)
+  if transparent:
+   for x in [u-width/2,u+width/2]:R.box('bf-cream',(x,1.9,-.09),(.065,2.14,.30))
+   for yy in [.85,2.95]:R.box('bf-cream',(u,yy,-.09),(width,.065,.30))
   for x in [u-width/2,u,u+width/2]:R.box('bf-door-paint',(x,1.9,.13),(.055,2.14,.08))
   for yy in [.85,2.95]:R.box('bf-door-paint',(u,yy,.13),(width,.06,.08))
   n=round(width/.2)
   for i in range(n):
-   a=u-width/2+i*width/n;b=a+width/n;mat='bf-green' if i%2 else 'bf-cream'
+   a=u-width/2+i*width/n;b=a+width/n;mat='bf-green'
    B.upface(mat,[R.p(a,3.28,.03),R.p(b,3.28,.03),R.p(b,2.65,1.05),R.p(a,2.65,1.05)])
    B.face(mat,[R.p(a,2.65,1.05),R.p(b,2.65,1.05),R.p(b,2.42,1.05),R.p(a,2.42,1.05)])
- for u in [-3,2,7,12]:awning(F,u,2.65)
+ for u in [-3,2,7,12]:awning(F,u,2.65,True)
  W=Frame(B,1886.46,118.923,YAW-math.pi/2,y=0)
  for u in [-6,0,6]:awning(W,u,2.5)
- F.text('Buca di Beppo',(3,4.0,.20),1.05,'bf-sign-red',back=True)
+ F.text('BUCA',(-6.5,4.6,.20),.9,'bf-sign-red',back=True)
+ F.text('di BEPPO',(-6.5,3.65,.20),.48,'bf-cream',back=True)
+ # Pale stone base below window sills, interrupted at the public door.
+ for a,b in [(-15.2,-11.25),(-8.75,15.2)]:F.box('bf-stone',((a+b)/2,.38,-.025),(b-a,.72,.20))
  W.text('Buca di Beppo',(0,4.0,.20),.9,'bf-sign-red',back=True)
  # Retro freestanding sign: original simplified lettering and curved side blade.
  S=Frame(B,*[F.p(-13.7,0,3.4)[i] for i in [0,2]],YAW,y=0)
@@ -53,7 +60,7 @@ def build(B):
  # Public dining zone only; the full service/kitchen layout is not known.
  B.property=KEY+'-interior';B.source='public/'+KEY
  room=F.poly([(-14.8,-.18),(14.8,-.18),(14.8,-12),(-14.8,-12)])
- B.shell(room,.2,3.75,'bf-rust',roof=False,openings=[door],solid=True);B.shell(room.buffer(-.03),.2,1.25,'bf-wood',roof=False,openings=[door],solid=False)
+ B.shell(room,.2,3.75,'bf-rust',roof=False,openings=[door,*windows],solid=True);B.shell(room.buffer(-.03),.2,1.25,'bf-wood',roof=False,openings=[door,*windows],solid=False)
  B.planar('bf-carpet',room,.211)
  # Barrel vault in the main room, as seen in owner photo; fitted elevation, not surveyed.
  for i in range(32):
@@ -79,13 +86,19 @@ def build(B):
   F.box('bf-menu',(u+.5,1.38,v),(.19,.3,.04))
  for u in [-5,0,5,10]:
   for v in [-3.1,-7.3]:table(u,v)
+ # Reference-supported booth type; placement is inferred, outside the circulation route.
+ for v in [-3.1,-7.3]:
+  F.box('bf-wood',(13.85,.50,v),(.9,.6,2.8),True)
+  F.box('bf-upholstery',(13.75,.83,v),(.95,.18,2.65))
+  F.box('bf-upholstery',(14.23,1.25,v),(.20,1.0,2.65))
+  for z in [v-1.35,v+1.35]:F.box('bf-wood',(13.8,.9,z),(1.1,1.0,.12),True)
  # Host counter to the side of the entry, keeping a generous central route.
  F.box('bf-wood',(-13.5,.75,-2.6),(1.1,1.1,1.9),True);F.box('bf-gold',(-13.5,1.33,-2.6),(1.2,.08,2))
  for u in [-9,0,9]:
   F.tube('bf-gold',(u,4.6,-6),(u,3.4,-6),.025,10)
   for a in np.linspace(0,math.tau,8,endpoint=False):
    x=u+.55*math.cos(a);z=-6+.55*math.sin(a);F.tube('bf-gold',(u,3.4,-6),(x,3.5,z),.025,8);F.lathe('bf-lamp',x,z,[(3.45,.1),(3.68,.18),(3.75,.08)],12)
- lights=[dict(p=F.p(u,3.3,-6),color=0xffd6a0,power=32,range=14) for u in [-9,0,9]]
+ lights=[dict(p=F.p(u,3.3,-6),color=0xffd6a0,power=12,range=11) for u in [-9,0,9]]
  route=[F.p(-10,.20,v) for v in [3,1,-1,-5,-10]]+[F.p(0,.20,-10),F.p(10,.20,-10)]
  return dict(key=KEY,name='Buca di Beppo Flamingo',center=[p.centroid.x,0,p.centroid.y],bounds=list(p.bounds),structural=True,exteriorOnly=False,portals=[door],zones=[dict(origin=F.p(0,.2,0),yaw=YAW+math.pi,width=30,depth=12.2,height=4.6)],lights=lights,hotelSources=[],routes=[dict(name='Entrance and public dining circulation',points=route)])
 if __name__=='__main__':

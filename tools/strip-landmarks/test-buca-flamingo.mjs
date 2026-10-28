@@ -27,6 +27,13 @@ for(const route of meta.routes)for(let k=1;k<route.points.length;k++){
   if(hit||!floor)failures.push({x,y,z,blocked:!!hit,floor:!!floor});
  }
 }
+// Four glazed openings must remain physical barriers despite the wall cutouts.
+const yaw=Math.atan2(5.132,30.323),co=Math.cos(yaw),si=Math.sin(yaw);
+for(const u of [-3,2,7,12]){
+ const x=1903.4605+co*u+si*.02,z=127.244-si*u+co*.02;
+ const pane=world.intersectionWithShape({x,y:1.9,z},{x:0,y:0,z:0,w:1},new RAPIER.Ball(.08));
+ checks++;if(!pane)failures.push({u,missingWindowCollision:true});
+}
 world.free();const result={checks,failures,city:installed};
 fs.writeFileSync('build/strip-landmarks/buca-flamingo-route-audit.json',JSON.stringify(result,null,2));
 console.log(result);assert.equal(failures.length,0);

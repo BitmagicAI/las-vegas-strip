@@ -14263,10 +14263,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Current exterior corroboration and exact sign ornament, planting, site parking and rear service detail",
-    "Opaque backed glazing; sparse inferred dining layout, repeated abstract art, missing booths and overbright fixtures; no complete-floorplan claim",
-    "Estimated height, room placement, roof equipment dimensions; no hidden service layout evidence",
-    "Performance tails exceed16.7ms; final exterior16.7–17.8ms median/p9525.3–31.2ms, interior16.7–17.4/p9524.9–35.1ms; no steady60fps claim"
+    "Exact sign ornament/letterforms, gravel planting/site parking and rear service detail remain simplified",
+    "West glazing remains backed; inferred public dining layout, repetitive abstract art and fixture appearance need refinement; no complete-floorplan claim",
+    "Estimated height, room placement and roof equipment dimensions; hidden service layout unknown",
+    "Frame-time tails remain above16.7ms; retain all baseline/after measurements and no steady60fps claim"
    ],
    "record": "tools/resort-blocks/buca-flamingo.json",
    "buildings": [],
