@@ -1,7 +1,7 @@
 {
   "id": "dean-martin-east",
   "name": "5115 east courtyard / NV Autopro frontage",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/225705141"
   ],
@@ -31,18 +31,59 @@
     "No verified interior plan; current tenant occupancy unverified."
   ],
   "implemented": [
-    "Three unobstructed baseline daylight views visually inspected before reconstruction."
+    "Three unobstructed baseline daylight views visually inspected before reconstruction.",
+    "Original19,504-triangle source: mapped west-facing long ribbed mansard, tan panels, narrow glazed door/window groups and transoms, referenced NV Autopro plaques, inferred rear services/roof plant. Entrance and roof source views inspected.",
+    "Targeted10-face shell/collision replacement; all9560meshgroups preserve vertices/metadata/retained face order.270 scoped route checks pass.",
+    "Three installed daylight views and walk-return visually inspected; four actual walking segments pass. Outward sign orientation confirmed.",
+    "Optimized0.86MiB GLB; current696-batch city bake,1437 runtime assets and0missing. Typecheck and records pass."
   ],
   "remaining": [
-    "Baseline and original source reconstruction with source inspection.",
-    "Targeted install, collision/preservation checks, optimized runtime package.",
-    "Installed daylight views, actual walking and matching performance."
+    "Exact bay divisions, sign graphics, glass and weathering remain simplified.",
+    "Hidden rear services and roof plant inferred; interior closed without verified plan.",
+    "Canopy/roof aliasing and generic courtyard paving/landscaping remain; wider courtyard performance below60fps."
   ],
   "nextPass": {
-    "priority": "Reconstruct west-facing courtyard frontage.",
-    "checkpoint": "Baseline inspected: median/p95ms23.3/29.5,37.9/50.2,18.1/23.9. Southwest view already below60fps. Resume original west-facing facade source; no new east-building geometry yet."
+    "priority": "Later fidelity refinement; continue city expansion.",
+    "checkpoint": "Installed pass verified; not photorealistic completion."
   },
   "evidence": [
-    "build/city-exteriors/dean-martin-east-baseline/results.json"
-  ]
+    "build/city-exteriors/dean-martin-east-baseline/results.json",
+    "build/city-exteriors/dean-martin-east-source-review/entrance.png",
+    "build/city-exteriors/dean-martin-east-source-review/roof.png",
+    "build/city-exteriors/dean-martin-east-preservation.json",
+    "build/strip-landmarks/dean-martin-east-route-audit.json",
+    "build/city-exteriors/dean-martin-east-installed/results.json",
+    "build/city-exteriors/dean-martin-east-walk/results.json"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        23.3,
+        29.5
+      ],
+      [
+        37.9,
+        50.2
+      ],
+      [
+        18.1,
+        23.9
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        22.1,
+        33.4
+      ],
+      [
+        32.4,
+        40.5
+      ],
+      [
+        16.7,
+        22.3
+      ]
+    ],
+    "note": "Matching960x540ultra views, shared machine; not stable60fps guarantee."
+  }
 }
