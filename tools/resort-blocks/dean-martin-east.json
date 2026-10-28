@@ -1,0 +1,43 @@
+{
+  "id": "dean-martin-east",
+  "name": "5115 east courtyard / NV Autopro frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/225705141"
+  ],
+  "claim": {
+    "issue": 304,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/304",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=wRr0JJg10fXdBXPzDQdcmQ&heading=90&pitch=0",
+      "observed": "December2022,36.0963045,-115.182884: pale ribbed mansard, tan vertical panels, narrow glazed entries/transoms, slim posts, NV Autopro Services signs at205/206."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vJB0k2r9pDVw4-IlHT-KnQ&heading=90&pitch=0",
+      "observed": "December2022,36.0964433,-115.1828857: suites201/202/203 and opaque panels alternating with narrow glazed entry groups."
+    },
+    {
+      "url": "https://www.bbb.org/us/nv/las-vegas/profile/auto-repair/nv-autopro-services-1086-90086552",
+      "observed": "Secondary identity/address corroboration for Suite205; not interior evidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped bounds[-879.123,2150.737,-852.199,2240.205]. Heights, exact tenant partitions and hidden servicing estimated.",
+    "No verified interior plan; current tenant occupancy unverified."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Baseline and original source reconstruction with source inspection.",
+    "Targeted install, collision/preservation checks, optimized runtime package.",
+    "Installed daylight views, actual walking and matching performance."
+  ],
+  "nextPass": {
+    "priority": "Reconstruct west-facing courtyard frontage.",
+    "checkpoint": "Claim304 confirmed; reference views inspected. Baseline pending."
+  },
+  "evidence": []
+}
