@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1487,
- "bytes": 1122092631,
+ "bytes": 1121978777,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19525875,
-   "sha256": "669a79940c4ab40bc3d99195286be62a4dd23471e1f81db19531830fcf61b2fb",
+   "bytes": 19525813,
+   "sha256": "38b5b7af7ca59d09b7f9be177515aac083488b0be0d8958d77b9f174287620c4",
    "kind": "original"
   },
   {
@@ -7242,14 +7242,14 @@
   },
   {
    "path": "build/strip-landmarks/mardi-gras-exterior-collision.bin",
-   "bytes": 27508,
-   "sha256": "53c90142f5c4afd636604950e016b103edf3417c6394df1542df4befb61dba13",
+   "bytes": 27716,
+   "sha256": "e2b541b7e1a34352fee496203a504b300f820daca712c0e21e70296d1e4cd3f6",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/mardi-gras-exterior.glb",
-   "bytes": 6756604,
-   "sha256": "63cdba1cbb4c3640b29ebb94e2dbe21c7b64560948933ebe4323331255fa9555",
+   "bytes": 6642596,
+   "sha256": "13f00111b73354f061fbfcecbbfd3b4536889c4525031876c0cd4180aaa63149",
    "kind": "optimized"
   },
   {
@@ -8730,8 +8730,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 363862,
-   "sha256": "f5e5830b74981801780f408abf3f6a1bac1b80b44cd26d861eafcdd15227856e",
+   "bytes": 363870,
+   "sha256": "a3c3a4645ae0d6b885930c917e0dfae1999143690ad91833b3ad54832ed31d4a",
    "kind": "original"
   },
   {

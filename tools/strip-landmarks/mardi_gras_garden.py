@@ -18,10 +18,10 @@ def shade_tree(B,x,z,seed):
   leaves(B,tip,(1.25,1.0,1.25),520,seed+i,'mg-leaf')
 
 def build_garden(B):
- center=(1778,-1054.3)
+ center=(1768,-1054.3)
  patio=scale(Point(*center).buffer(1,resolution=48),4.2,3.2,origin=center)
- site=box(1771.7,-1061.6,1785.5,-1047.6)
- access=LineString([(1770,-1054.3),(1786,-1054.3)]).buffer(.95)
+ site=box(1760.5,-1062.8,1785.5,-1047.0)
+ access=LineString([(1768,-1064),(1768,-1045)]).buffer(.95)
  path=patio.union(access).intersection(site)
  B.planar('mg-garden-paving',path,.15,True)
  B.planar('mg-lawn',site.difference(path.buffer(.15)),.09)
@@ -33,23 +33,24 @@ def build_garden(B):
  # Leaf silhouette instead of perfectly rectangular hedge edges.
  for i in range(68):
   a=i*math.tau/68;x=center[0]+4.45*math.cos(a);z=center[1]+3.45*math.sin(a)
-  if abs(z-center[1])>1.12:leaves(B,(x,.83,z),(.28,.25,.28),45,770+i,'mg-leaf')
- for x,z,seed in [(1773.6,-1059.3,180),(1783.3,-1049.7,260)]:
+  if abs(x-center[0])>1.12:leaves(B,(x,.83,z),(.28,.25,.28),45,770+i,'mg-leaf')
+ for x,z,seed in [(1761.8,-1059.1,180),(1778.3,-1057.5,260)]:
   basin=Point(x,z).buffer(.95,resolution=24)
   B.planar('mg-gravel',basin,.13);shade_tree(B,x,z,seed)
- # Two seating groups keep the east-west walk clear. Loose furniture positions inferred.
- for z in [-1056.1,-1052.5]:
-  F=Frame(B,1778,z,0,y=.15)
+ # Two seating groups keep the north-south walk clear. Loose furniture positions inferred.
+ for x0 in [1765.7,1770.3]:
+  z=-1054.3
+  F=Frame(B,x0,z,0,y=.15)
   F.lathe('mg-chair-frame',0,0,[(0,.3),(.05,.3),(.07,.045),(.70,.045),(.71,.65),(.76,.65)],32)
   F.tube('mg-iron',(0,.76,0),(0,2.55,0),.025,8)
   for i in range(24):
    a=i*math.tau/24;b=(i+1)*math.tau/24
    B.face('mg-shade' if i%2 else 'mg-shade-light',[F.p(0,2.58,0),F.p(1.25*math.cos(a),2.15,1.25*math.sin(a)),F.p(1.25*math.cos(b),2.15,1.25*math.sin(b))])
   for side in [-1,1]:
-   C=Frame(B,1778+side*1.05,z,side*math.pi/2,y=.15)
+   C=Frame(B,x0,z+side*1.05,0 if side<0 else math.pi,y=.15)
    C.box('mg-chair-frame',(0,.43,0),(.48,.06,.45))
    for x in [-.2,.2]:
     C.path('mg-chair-frame',[(x,.03,.18),(x,.43,.18),(x,.9,.26)],.025,8)
     C.path('mg-chair-frame',[(x,.03,-.18),(x,.43,-.18),(x,.43,.18)],.025,8)
    for x in [-.16,-.08,0,.08,.16]:C.box('mg-chair-frame',(x,.7,.25),(.035,.36,.045))
- return dict(name='Garden seating approach',points=[(1771,.15,-1054.3),(1774,.15,-1054.3),(1778,.15,-1054.3),(1783,.15,-1054.3)])
+ return dict(name='Garden seating approach',points=[(1768,.15,-1063),(1768,.15,-1058),(1768,.15,-1054.3),(1768,.15,-1050),(1768,.15,-1047)])

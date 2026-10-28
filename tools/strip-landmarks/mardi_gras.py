@@ -179,25 +179,30 @@ def build(B):
  E=Frame(B,1785.98,-1055,-math.pi/2,y=0)
  for u in [-3,0,3]:glazing(E,u,.55,.08,2.3,2)
  # Pool deck is an original plan fitted to the aerial, with estimated dimensions.
- pool=box(1732,-1058.3,1750,-1050.1).union(Point(1741,-1054.2).buffer(5.4,resolution=32)).buffer(.35).buffer(-.35)
- spa=Point(1762,-1054.2).buffer(2.2,resolution=32)
- deck=box(1728,-1061.8,1770,-1047.6).difference(pool.union(spa))
+ pool=box(1732,-1058.3,1748,-1050.1).union(Point(1740,-1054.2).buffer(5.4,resolution=32)).buffer(.35).buffer(-.35)
+ spa=Point(1750.4,-1048.9).buffer(1.35,resolution=32)
+ service=box(1754.5,-1056,1758.5,-1050).union(box(1752,-1056,1754.5,-1052.3))
+ B.shell(service,.12,2.75,'mg-service',roof=False);B.planar('mg-roof',service.buffer(.13,join_style=2),2.85)
+ B.shell(service.buffer(.13,join_style=2),2.75,2.85,'mg-seam',roof=False,solid=False)
+ B.box('mg-frame',(1755.5,3.02,-1053.1),(.28,.34,.28))
+ deck=box(1728,-1061.8,1760,-1047.3).difference(pool.union(spa).union(service))
  B.planar('mg-deck',deck,.12,True)
  for basin in [pool,spa]:
   B.planar('mg-coping',basin.buffer(.3).difference(basin),.18,True);B.shell(basin,-1.2,.14,'mg-tile',roof=False);B.planar('mg_pool',basin,.04);B.planar('mg-tile',basin,-1.15)
- for x in [1733,1748]:
+ for x in [1733,1746.5]:
   for zz in [-1049.5,-1058.9]:
-   F=Frame(B,x,zz,0,y=0)
+   F=Frame(B,x,zz,math.pi if zz>-1054 else 0,y=0)
    for u in [-.35,.35]:F.path('mg-frame',[(u,.15,0),(u,.85,0),(u,.95,.3),(u,.8,.65),(u,-.3,.65)],.035,8)
- for x in np.arange(1730,1769,3.1):
+ for x in np.arange(1730,1759,3.1):
   for z in [-1047.95,-1061.3]:
+   if spa.buffer(1.1).contains(Point(x,z)) or service.buffer(1.1).contains(Point(x,z)):continue
    F=Frame(B,float(x),z,math.pi if z>-1054 else 0,y=.12);lounger(F)
  # Enclosure follows the photo-supported deck edge. Gate width/position estimated.
- for a,b in [((1729,-1062.5),(1770,-1062.5)),((1729,-1046.3),(1770,-1046.3)),((1770,-1062.5),(1770,-1055.2)),((1770,-1053.2),(1770,-1048.5))]:pool_fence(B,a,b)
+ for a,b in [((1729,-1062.5),(1760,-1062.5)),((1729,-1046.3),(1760,-1046.3)),((1760,-1062.5),(1760,-1060.3)),((1760,-1058.3),(1760,-1048.5))]:pool_fence(B,a,b)
  # Ground-level continuous route along the eastern opening and both inner corridors.
  routes=[dict(name='West entrance approach',points=[W.p(2,.12,v) for v in [12,8,3,2]]+[W.p(0,.12,2)]),dict(name='Courtyard east and pool approach',points=[(1802,.12,-1048),(1797,.12,-1048),(1773,.12,-1048),(1773,.12,-1047),(1730,.12,-1047)])]
  routes.append(build_garden(B))
- routes.append(dict(name='Pool gate approach',points=[(1773,.12,-1054.2),(1770,.12,-1054.2),(1768,.12,-1054.2)]))
+ routes.append(dict(name='Pool gate approach',points=[(1763,.12,-1059.3),(1760,.12,-1059.3),(1758,.12,-1059.3)]))
  routes.append(dict(name='Pavilion exposed stair and upper terrace',points=[(1730,.16,-1063.0),(1727.3,.16,-1063.0),(1727.3,.16,-1062.4),(1727.3,3.21,-1056.9),(1727.3,3.21,-1055.5),(1727.3,6.26,-1050),(1727.3,6.26,-1049.2),(1724.95,6.26,-1049.2),(1724.95,6.26,-1044.8)]))
  return dict(key=KEY,name='Mardi Gras Hotel & Casino',center=[1727,0,-1054],bounds=[1645,-1085,1802,-1021],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],hotelSources=[],routes=routes)
 if __name__=='__main__':
