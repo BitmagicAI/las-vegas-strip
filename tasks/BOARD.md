@@ -277,7 +277,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-nuleaf-twain` | M | P3 | 5 | Refine the exterior of NuLeaf Twain Avenue |
 | `ext-buca-flamingo` | M | P3 | 4 | Refine the exterior of Buca di Beppo Flamingo |
 | `ext-lawrys-hughes` | L | P3 | 6 | Refine the exterior of Lawrys The Prime Rib Howard Hughes |
-| `ext-mortons-flamingo` | L | P3 | 6 | Refine the exterior of Mortons The Steakhouse Flamingo |
+| `ext-mortons-flamingo` | M | P3 | 4 | Refine the exterior of Mortons The Steakhouse Flamingo |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

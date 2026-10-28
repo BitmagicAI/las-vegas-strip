@@ -14352,17 +14352,15 @@
    "id": "ext-mortons-flamingo",
    "title": "Refine the exterior of Mortons The Steakhouse Flamingo",
    "area": "exteriors",
-   "size": "L",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Inspect aerial and official virtual tour; record supported public connections",
-    "Capture matching installed baseline and performance",
-    "Original exterior/site and reference-supported interiors",
-    "Scoped collision replacement and preservation audit",
-    "Installed daylight visual and actual walking checks; matching performance",
-    "Optimized packed assets/current bake; draftPR and records"
+    "Refine side elevations, landscaping, roof fit and material fidelity; roof stripes still visible in installed result",
+    "Historical2014tour and inferred public layout; no surveyed private/service plan",
+    "Furniture/material detailing and lighting remain simplified",
+    "Final exteriorp9518.5–18.7ms vsbaseline18–18.2ms; do notclaim locked60fps"
    ],
    "record": "tools/resort-blocks/mortons-flamingo.json",
    "buildings": [],
@@ -14374,7 +14372,13 @@
     "writes": [
      "tools/resort-blocks/mortons-flamingo.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-mortons-public.mjs",
+     "tools/city-exteriors/install-mortons-flamingo.py",
+     "tools/strip-landmarks/export_mortons_flamingo.py",
+     "tools/city-exteriors/check-mortons-flamingo-preservation.py",
+     "tools/strip-landmarks/mortons_flamingo.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

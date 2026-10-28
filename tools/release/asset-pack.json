@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1507,
- "bytes": 1128477515,
+ "count": 1511,
+ "bytes": 1129739018,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19602529,
-   "sha256": "b1b102050cee1ff2fac3ac6f2ef90a2ccff41db221b3a0fd4b5534d3912f5387",
+   "bytes": 19613818,
+   "sha256": "c48dcdc32698dfef52b0f0f20f131b255284ef9964de6dd6543c2475fcce4ddb",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13059184,
-   "sha256": "d8a5d06ca86f0344c9f7f05b69391c14115e9933cf7822f1865fe43c38542306",
+   "bytes": 13058796,
+   "sha256": "aa94a849824fe6b78ffcc2a1f7c9dc98d21aabfb02d62221e3a502a6fa8a36ad",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109737392,
-   "sha256": "8e50d7f072dd0914cb1e518bdd56ad428bb83fcf476cb03f4883e808b9653d9a",
+   "bytes": 109737180,
+   "sha256": "96cbff790e7cc0f9ca13af68cf10ed444c97b3e56688275daa0fcaa1f30dd301",
    "kind": "optimized"
   },
   {
@@ -7445,6 +7445,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/mortons-flamingo-exterior-collision.bin",
+   "bytes": 848,
+   "sha256": "76c009f66c779b195c6c9e9affc6bae3146c0a894504709ee9c2abdc892ac145",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mortons-flamingo-exterior.glb",
+   "bytes": 738252,
+   "sha256": "73c4057dbe9dc9efd822e1e01a7ff6e633e41877a34f7055c57bb6e7364e19a1",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/mortons-flamingo-interior-collision.bin",
+   "bytes": 4832,
+   "sha256": "4bb28d364df57202541ff8b4ce9e6d684602c5e4e84989e94b4292d9019314b6",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mortons-flamingo-interior.glb",
+   "bytes": 506224,
+   "sha256": "07c6619be47a5324ed0c3ae61fb855576452b3838a706a12b36681a462a89119",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/motel6-stadium-exterior-collision.bin",
    "bytes": 6580,
    "sha256": "380f8b3c40f7af379f245799b6710d627811ad9314fc58be7ded42753c3deded",
@@ -8850,8 +8874,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 367516,
-   "sha256": "db97be2886c2e1d7e97d38e5301dbf780c0638be20a7597e56f7645865313c07",
+   "bytes": 368174,
+   "sha256": "da0a73caf2fea73e879dce4169760f9cd16f8cd8fcbe255c8bea3444ac387aee",
    "kind": "original"
   },
   {

@@ -9,7 +9,8 @@
     "issue": 350,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/350",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/351"
   },
   "sources": [
     {
@@ -23,22 +24,327 @@
     {
       "url": "https://images.getbento.com/accounts/7b15e97e66eb489eecd5b14dac4cd652/media/images/54716Exterior_2.jpg",
       "observed": "Official exterior visually inspected: cream stepped parapet, raised central lettering, curved laminated wood canopy on four cream round columns, black glass entry, side awnings/shutters, stone base and hedges. Undated."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1147967,-115.1533656,0a,82.2y,100h,90t/data=!3m4!1e1!3m2!1sAF1QipNhbz8YmUx5aY9mtdvse26ZDtLh9qr9aA7DV20d!2e10",
+      "observed": "Official linked Brian Mannasmith panorama; Google image capture May2014, contributor Aug2018. Entry looking east: dark plank floor, curved black host counter right, glass wine cabinets, bar/high tables left, mirrored columns and layered rectangular shade. Followed East twice to CIHM0ogKEICAgID4pqC4Sg: main dining central carpet aisle, whitecloth tables, brown tallchairs, right booths/mirrors, dark pilasters, layered roundshades. Historical source; no current exact plan."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Mortons+400+E+Flamingo+Las+Vegas",
+      "observed": "Aerial inspected at20ftscale: west entrance/canopy, irregular flatroof withraised sections/equipment, parking west/east/north, Flamingo south with landscapededge. No surveyedheight."
     }
   ],
   "uncertainDimensions": [
-    "Mapped6mheight estimated;1118.02m2 footprint. No established full public plan."
+    "Mapped6mheight estimated;1118.02m2 footprint. No established full public plan.",
+    "Canopy7x6.8m,height3.9\u20134.75m; publicroom17x32m,height3.55m fitted from furniture scale and mapped shell. Private-room published dimensions do not establish these public-space dimensions."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original17974triangle draft: stepped cream parapets, curved wood canopy/four columns, glazed entry, planting boxes, roof equipment; fitted public host/bar/main dining with wine cabinets, chairs/tables and ceiling shades.",
+    "Scoped16placeholder/collisionfaces removed;9560groups verified otherwise unchanged."
+  ],
   "remaining": [
-    "Inspect aerial and official virtual tour; record supported public connections",
-    "Capture matching installed baseline and performance",
-    "Original exterior/site and reference-supported interiors",
-    "Scoped collision replacement and preservation audit",
-    "Installed daylight visual and actual walking checks; matching performance",
-    "Optimized packed assets/current bake; draftPR and records"
+    "Refine side elevations, landscaping, roof fit and material fidelity; roof stripes still visible in installed result",
+    "Historical2014tour and inferred public layout; no surveyed private/service plan",
+    "Furniture/material detailing and lighting remain simplified",
+    "Final exteriorp9518.5\u201318.7ms vsbaseline18\u201318.2ms; do notclaim locked60fps"
   ],
   "nextPass": {
-    "priority": "Inspect reference tour and baseline before geometry",
-    "checkpoint": "Claim350 assigned janiverse; no geometry edited. Lawrys public pass8d460c8 verified;PR349ready."
+    "priority": "Scoped installed pass verified; retain fidelity gaps and select next unclaimed city building",
+    "checkpoint": "All6refined views inspected;16realwalkingsegments/141staticcurrentcitysamples pass.20392source triangles,.70/.48MiBext/int;719batchesfresh and1511assets. Ready for scoped review, not photoreal completion."
+  },
+  "baseline": {
+    "directory": "build/city-exteriors/mortons-flamingo-baseline",
+    "visualReview": "All3frames inspected: plain opaque solid placeholder; no entrance/roof/site detail.",
+    "timingsMs": [
+      {
+        "name": "front",
+        "eye": [
+          1736,
+          2,
+          132
+        ],
+        "target": [
+          1759,
+          3,
+          131
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1819,
+          40,
+          175
+        ],
+        "target": [
+          1780,
+          1,
+          127
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.199999928474426
+      },
+      {
+        "name": "south",
+        "eye": [
+          1778,
+          2,
+          164
+        ],
+        "target": [
+          1779,
+          3,
+          139
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18
+      }
+    ]
+  },
+  "verification": {
+    "sourceTriangles": 20392,
+    "optimizedExteriorMiB": 0.7,
+    "optimizedInteriorMiB": 0.48,
+    "staticPublicRouteSamples": 141,
+    "staticCurrentCityPassed": true,
+    "preservation": "build/city-exteriors/mortons-flamingo-preservation.json",
+    "typecheck": "passed",
+    "publicCheck": "0failures,1existingemailwarning",
+    "initialInstalledViews": {
+      "exterior": "build/city-exteriors/mortons-flamingo-installed",
+      "interior": "build/city-exteriors/mortons-flamingo-public",
+      "inspected": [
+        "front",
+        "roof",
+        "south",
+        "entry",
+        "bar",
+        "dining"
+      ],
+      "findings": [
+        "Canopy/entry readable but roof too flat and striped",
+        "Wine cabinets appear as opaque walls; furniture sparse",
+        "Side facade/landscape still sparse"
+      ]
+    },
+    "initialWalking": {
+      "passed": true,
+      "segments": 16,
+      "directory": "build/city-exteriors/mortons-flamingo-walk"
+    },
+    "initialExteriorTimings": [
+      {
+        "name": "front",
+        "eye": [
+          1736,
+          2,
+          132
+        ],
+        "target": [
+          1759,
+          3,
+          131
+        ],
+        "p50": 16.600000023841858,
+        "p95": 26.5
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1819,
+          40,
+          175
+        ],
+        "target": [
+          1780,
+          1,
+          127
+        ],
+        "p50": 16.399999976158142,
+        "p95": 29.399999976158142
+      },
+      {
+        "name": "south",
+        "eye": [
+          1778,
+          2,
+          164
+        ],
+        "target": [
+          1779,
+          3,
+          139
+        ],
+        "p50": 16.799999952316284,
+        "p95": 30.5
+      }
+    ],
+    "initialInteriorTimings": [
+      {
+        "name": "entry",
+        "eye": [
+          1757.9058263334996,
+          1.8,
+          130.90779017041
+        ],
+        "target": [
+          1768.8417366650046,
+          1.8,
+          129.72209829589994
+        ],
+        "p50": 16.700000047683716,
+        "p95": 22.300000071525574
+      },
+      {
+        "name": "bar",
+        "eye": [
+          1761.5591504882716,
+          1.8,
+          127.49410848926858
+        ],
+        "target": [
+          1766.0988581391339,
+          2,
+          122.97846297121669
+        ],
+        "p50": 16.600000023841858,
+        "p95": 23.59999990463257
+      },
+      {
+        "name": "dining",
+        "eye": [
+          1771.0995594240308,
+          1.8,
+          131.99195212133108
+        ],
+        "target": [
+          1783.7543416625117,
+          2,
+          128.10524573974982
+        ],
+        "p50": 16.699999928474426,
+        "p95": 19.5
+      }
+    ],
+    "walking": {
+      "passed": true,
+      "segments": 16,
+      "directory": "build/city-exteriors/mortons-flamingo-walk-refined"
+    },
+    "installedViews": {
+      "inspected": [
+        "front",
+        "roof",
+        "south",
+        "entry",
+        "bar",
+        "dining"
+      ],
+      "exterior": "build/city-exteriors/mortons-flamingo-refined",
+      "interior": "build/city-exteriors/mortons-flamingo-public-refined",
+      "findings": [
+        "Open cabinet shelves and rounded host desk visible",
+        "Tables now have hanging cloth sides and chair legs; booths added",
+        "Roof stripes remain visible despite exporter normal removal; runtime material needs later review",
+        "Sidewalls,landscape,furniture and lighting remain simplified"
+      ]
+    },
+    "package": "719batches,1511assets,1077.4MiB;fresh bake verified",
+    "exteriorTimingsMs": [
+      {
+        "name": "front",
+        "eye": [
+          1736,
+          2,
+          132
+        ],
+        "target": [
+          1759,
+          3,
+          131
+        ],
+        "p50": 16.5,
+        "p95": 18.600000023841858
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1819,
+          40,
+          175
+        ],
+        "target": [
+          1780,
+          1,
+          127
+        ],
+        "p50": 17.09999990463257,
+        "p95": 18.699999928474426
+      },
+      {
+        "name": "south",
+        "eye": [
+          1778,
+          2,
+          164
+        ],
+        "target": [
+          1779,
+          3,
+          139
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.5
+      }
+    ],
+    "interiorTimingsMs": [
+      {
+        "name": "entry",
+        "eye": [
+          1757.9058263334996,
+          1.8,
+          130.90779017041
+        ],
+        "target": [
+          1768.8417366650046,
+          1.8,
+          129.72209829589994
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.699999928474426
+      },
+      {
+        "name": "bar",
+        "eye": [
+          1761.5591504882716,
+          1.8,
+          127.49410848926858
+        ],
+        "target": [
+          1766.0988581391339,
+          2,
+          122.97846297121669
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.59999990463257
+      },
+      {
+        "name": "dining",
+        "eye": [
+          1771.0995594240308,
+          1.8,
+          131.99195212133108
+        ],
+        "target": [
+          1783.7543416625117,
+          2,
+          128.10524573974982
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.40000009536743
+      }
+    ]
   }
 }
