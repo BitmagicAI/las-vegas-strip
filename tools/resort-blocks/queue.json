@@ -1542,7 +1542,13 @@
       "name": "Carl\u2019s Jr. Sahara",
       "status": "refinement-deferred",
       "record": "carls-jr-sahara.json"
+    },
+    {
+      "id": "flex-twain",
+      "name": "FLEX Cocktail Lounge Twain",
+      "status": "active",
+      "record": "flex-twain.json"
     }
   ],
-  "active": "carls-jr-sahara"
+  "active": "flex-twain"
 }

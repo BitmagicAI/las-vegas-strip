@@ -1,0 +1,47 @@
+{
+  "id": "flex-twain",
+  "name": "FLEX Cocktail Lounge Twain",
+  "status": "active",
+  "mappedIds": [
+    "way/390003972"
+  ],
+  "claim": {
+    "issue": 330,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/330",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://flexlasvegas.com/about",
+      "observed": "Official current address501ETwain;15bartopmachines. Exterior photo has staleCharlestonbanner;currentStreetView confirms matchingfacade."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=SrgiSGv6w1L_5luy1F_z2g&heading=159&pitch=0",
+      "observed": "Feb2026 inspected:grayparapet,two-sidedFLEXletters,coveredfrontplanting,eastentry,roadsidepylon."
+    },
+    {
+      "url": "https://flexlasvegas.com/photos/interior.webp",
+      "observed": "Baraisle,stainlessstations,bottles,blackpendants,mirrors,LEDceilingbands."
+    },
+    {
+      "url": "https://flexlasvegas.com/photos/interior6.webp",
+      "observed": "Roundtables,quiltedblackarmchairs,stackedstonefireplace,neonsign."
+    },
+    {
+      "url": "https://flexlasvegas.com/photos/interior7.webp",
+      "observed": "Steppedstage,largeLEDwall,discoball,grayrectangulartiles,DJrail."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped11.6x19mfootprint atx1883\u20131895,z536\u2013555. Heights,roomplacement,hiddenservices inferred;nofloorplan. Privateareasclosed. Officialinteriorphoto datesnotestablished."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Original exterior/publicinterior,scopedcollisionreplacement,furnitureenvelopeaudit,optimizedGLBs/currentbake,actualinstalleddaylight/interior/walking/performancevalidation."
+  ],
+  "nextPass": {
+    "priority": "Build original compact publicbar, seating and stage within mapped shell.",
+    "checkpoint": "Claim330 confirmedjaniverse;officialphotos+currentStreetView inspected. No geometry edits yet. PreviousCarl\u2019sJr verified8849a0d,708batches1473assets. Reference tabs61/62/63 markedhandoff."
+  }
+}
