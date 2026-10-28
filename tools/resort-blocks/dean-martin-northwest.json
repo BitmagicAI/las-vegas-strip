@@ -9,7 +9,8 @@
     "issue": 296,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/296",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/297"
   },
   "sources": [
     {
@@ -29,8 +30,10 @@
     "Installedviews/walking/performance."
   ],
   "nextPass": {
-    "priority": "Createearlydraft, capturebaseline, thenoriginalsource usingmappedfrontage.",
-    "checkpoint": "Claim296confirmedjaniverse. Lastverifiedruntime08191a5,691batches1427assets. No newgeometryedited."
+    "priority": "Build original exterior using mapped eastfrontage, referencegrilles andbenches; sourceinspect beforeinstall.",
+    "checkpoint": "Claim296confirmedjaniverse; draft297created/attached. Threebaselineviews inspected; median/p95ms16.7/19.9,17/27.3,17.2/26.9. No northwestgeometryedited. Lastverifiedruntime08191a5;691batches1427assets. Allownedprocessesfinished."
   },
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/dean-martin-northwest-baseline/results.json"
+  ]
 }
