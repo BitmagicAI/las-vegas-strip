@@ -1404,8 +1404,12 @@
     {
       "id": "dean-martin-north",
       "name": "5115 north entrance / Benz Tek frontage",
-      "status": "active",
-      "record": "dean-martin-north.json"
+      "status": "refinement-deferred",
+      "record": "dean-martin-north.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Installed exterior pass verified; retain exact bay/sign/planting/interior discrepancies and continue city expansion."
+      }
     }
   ],
   "active": "hollywood-cars-museum"

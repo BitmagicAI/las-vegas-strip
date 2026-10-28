@@ -1,7 +1,7 @@
 {
   "id": "dean-martin-north",
   "name": "5115 north entrance / Benz Tek frontage",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/225705144"
   ],
@@ -23,24 +23,34 @@
     },
     {
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dxW3kaN5_DQspl-a3T8OdA&heading=270&pitch=0",
-      "observed": "February2025 view: north entrance pale mansard, Benz Tek/tattoo signs, masonry street end and courtyard glazing. Closer inspection required."
+      "observed": "February2025 closer heading316: pale masonry north street end with yellow museum banner, taller Benz Tek mansard and dark glazing on south street end, lower ribbed courtyard mansard and tattoo sign."
     }
   ],
   "uncertainDimensions": [
-    "Heights and tenant bay divisions unverified; survey name may be old."
+    "Heights5.45m/6.65m estimated from photographs; tenant bay divisions and hidden roof plant inferred.",
+    "No confirmed interior plan; no public interior added."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original mapped exterior source:17203 triangles; stepped mansards with raised corner return, masonry joints, courtyard glazing, original tenant lettering, closed interior.",
+    "Removed16ownedplaceholder and matchingcollisionfaces; preservationaudit9560groups unchanged vertices/metadata/retainedfaceorder.",
+    "OptimizedGLB0.84MiB, packedcollision/venues, current690batchcitybake,1425runtimeassets/0missing."
+  ],
   "remaining": [
-    "Closer reference and baseline.",
-    "Original exterior geometry and source review.",
-    "Targeted installation, preservation audit and scoped checks.",
-    "Optimized assets, packed data and current city bake.",
-    "Installed views, actual walk and matching performance.",
-    "Interior only with adequate reference evidence."
+    "Exacttenantbaydivisions, originalsignartfidelity, landscaping, hiddenservicewalls/roofplant.",
+    "Interiorplan unverified; remainclosed.",
+    "Canopy ribs alias at distance; courtyard paving remains generic existing city surface."
   ],
   "nextPass": {
-    "priority": "Inspect closer frontage and capture baseline, then model after draft PR.",
-    "checkpoint": "Claim292 confirmed janiverse. Latest verified runtime6e4d198;689-batch bake;1423 assets. No north geometry edited."
+    "priority": "Later reference fidelity and material refinement.",
+    "checkpoint": "Three matching installed daylight views and walk-return inspected. Four actual walking segments and213scopedchecks passed;690batchbake current,1425assets0missing. Matchingmedian/p95ms16.8/22.2,18.7/28.6,17.3/25.8. Notphotorealistic or stable60fps claim."
   },
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/dean-martin-north-source-review/entrance.png",
+    "build/city-exteriors/dean-martin-north-source-review/roof.png",
+    "build/city-exteriors/dean-martin-north-baseline/results.json",
+    "build/city-exteriors/dean-martin-north-preservation.json",
+    "build/strip-landmarks/dean-martin-north-route-audit.json",
+    "build/city-exteriors/dean-martin-north-installed/results.json",
+    "build/city-exteriors/dean-martin-north-walk/results.json"
+  ]
 }

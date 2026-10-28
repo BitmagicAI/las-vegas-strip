@@ -3406,11 +3406,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/export_dean_martin_5115.py",
+     "tools/strip-landmarks/export_dean_martin_north.py",
      "tools/strip-landmarks/export_inout_dean_martin.py",
      "tools/strip-landmarks/martin_exterior.py",
      "tools/strip-landmarks/test-inout-dean-martin.mjs",
-     "tools/city-exteriors/install-dean-martin-5115.py",
-     "tools/city-exteriors/install-inout-dean-martin.py"
+     "tools/city-exteriors/install-dean-martin-5115.py"
     ]
    },
    "acceptance": [
@@ -13109,17 +13109,14 @@
    "id": "ext-dean-martin-north",
    "title": "Refine the exterior of 5115 north entrance / Benz Tek frontage",
    "area": "exteriors",
-   "size": "L",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Closer reference and baseline.",
-    "Original exterior geometry and source review.",
-    "Targeted installation, preservation audit and scoped checks.",
-    "Optimized assets, packed data and current city bake.",
-    "Installed views, actual walk and matching performance.",
-    "Interior only with adequate reference evidence."
+    "Exacttenantbaydivisions, originalsignartfidelity, landscaping, hiddenservicewalls/roofplant.",
+    "Interiorplan unverified; remainclosed.",
+    "Canopy ribs alias at distance; courtyard paving remains generic existing city surface."
    ],
    "record": "tools/resort-blocks/dean-martin-north.json",
    "buildings": [],
@@ -13131,7 +13128,14 @@
     "writes": [
      "tools/resort-blocks/dean-martin-north.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_dean_martin_north.py",
+     "tools/city-exteriors/install-dean-martin-north.py",
+     "tools/strip-landmarks/test-dean-martin-north.mjs",
+     "tools/city-exteriors/check-dean-martin-north-preservation.py",
+     "tools/strip-landmarks/review_dean_martin_north.py",
+     "tools/strip-landmarks/dean_martin_north.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
