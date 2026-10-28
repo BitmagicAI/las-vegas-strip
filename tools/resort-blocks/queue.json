@@ -1536,7 +1536,13 @@
       "name": "T-Mobile Sahara & Valley View",
       "status": "refinement-deferred",
       "record": "tmobile-sahara.json"
+    },
+    {
+      "id": "carls-jr-sahara",
+      "name": "Carl\u2019s Jr. Sahara",
+      "status": "active",
+      "record": "carls-jr-sahara.json"
     }
   ],
-  "active": "tmobile-sahara"
+  "active": "carls-jr-sahara"
 }

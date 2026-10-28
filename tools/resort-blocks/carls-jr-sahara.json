@@ -1,0 +1,39 @@
+{
+  "id": "carls-jr-sahara",
+  "name": "Carl\u2019s Jr. Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/926281500"
+  ],
+  "claim": {
+    "issue": 328,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/328",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://locations.carlsjr.com/nv/las-vegas/3866-w-sahara",
+      "observed": "Official address3866."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0bKRtmh5rt8lzhQE-tJIfw&heading=0&pitch=0",
+      "observed": "Feb2025south: tanstucco,redcanopy,frontwindows,leftentry,monumentsign."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=X_h4b1R_dH78JRY6zpG-Bg&heading=325&pitch=0",
+      "observed": "Feb2025southeast: redtiledhipped/mansardroof,creamflatuppercenter,eastgableentrytowerwithredcanopy,sidewindows/paleclosedservicewing."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped15x24m irregular footprint. Heights and hidden roof/services estimated. No interior without location-specific reference. GenericownerJun2019photoexcluded because it depicts different facade."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Original source,scopedreplacement,optimizedbake,installedvisual/walking/performancechecks."
+  ],
+  "nextPass": {
+    "checkpoint": "Claim328 confirmed; references inspected. No geometry edits yet.",
+    "priority": "Original exterior including south windows and east gable."
+  }
+}
