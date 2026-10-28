@@ -9,7 +9,8 @@
     "issue": 286,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/286",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/287"
   },
   "sources": [
     {
@@ -34,16 +35,47 @@
     "Exact exhibit plan and tenant subdivision unresolved; no full publicinterior claim.",
     "OSM museumname is onwrong neighboringway225705143; do not remove that building."
   ],
-  "implemented": [],
+  "implemented": [
+    "Uninstalled original source draft: mapped warehouse, corrugation, shallow roof, south entrance/signage and approach ramp. Source review found and corrected a roof-ridge closure error."
+  ],
   "remaining": [
+    "Refine source against closer southfrontage references before installation; generic lettering, sparse service doors and hedge masses are not final. Inspect dark south-eave seam/normals; corrected source renders reviewed.",
     "Build reference-supported exterior, entrances and approach.",
     "Replace only owned placeholder/collision and preserve adjacent warehouses/roads.",
     "Source review and scopedchecks, optimize/install/bake, actualwalk/daylightviews and matchingperformance.",
     "Reference-supported publicinterior may follow once layout and original exhibit assets exist; no placeholder cars presented as completion."
   ],
-  "evidence": [],
+  "evidence": [
+    {
+      "type": "installed-baseline",
+      "path": "build/city-exteriors/hollywood-cars-museum-baseline",
+      "viewsInspected": 3,
+      "frameTimesMs": {
+        "south-entry": {
+          "median": 39.6,
+          "p95": 43.3
+        },
+        "east-side": {
+          "median": 31.9,
+          "p95": 36
+        },
+        "roof": {
+          "median": 32.5,
+          "p95": 37.1
+        }
+      },
+      "note": "960x540ultra neutraldaylight300settle180measure. Current building is undetailed whitewarehouse. Sharedmachine, descriptiveonly."
+    },
+    {
+      "type": "source-draft",
+      "path": "build/city-exteriors/museum-source-review",
+      "viewsInspected": 2,
+      "triangles": 13630,
+      "note": "Roof split at ridge; entrance/ramp/signs visible. South eave still reads as dark seam; inspect normals/closure before installation. Sparse draft, not final exterior."
+    }
+  ],
   "nextPass": {
-    "priority": "Baseline actual warehouse, then build southentrance and original corrugated facade.",
-    "checkpoint": "Claim286 verified; source references inspected. No model replacement yet."
+    "priority": "Refine south facade/service details and inspect dark eave seam, then scopedcollision/preservation and install pipeline.",
+    "checkpoint": "Motel6 installed checkpoint e820d9a. Museum claim286/PR287, baseline3viewsinspected. Source13630triangles exported; notinstalled and no citydataremoved. Source render log /tmp/museum-source-render.log. Draft intentionally not markedcomplete. Latesttwo sourceviewsinspected; allownedprocessescomplete."
   }
 }

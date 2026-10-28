@@ -245,7 +245,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-home2-stadium` | L | P3 | 9 | Refine the exterior of Home2 Suites Las Vegas Stadium District |
 | `ext-stadium-garage` | M | P3 | 5 | Refine the exterior of Home2 adjacent Stadium District parking garage |
 | `ext-motel6-stadium` | L | P3 | 7 | Refine the exterior of Motel 6 Las Vegas I-15 Stadium |
-| `ext-hollywood-cars-museum` | M | P3 | 4 | Refine the exterior of Hollywood Cars Museum warehouse |
+| `ext-hollywood-cars-museum` | M | P3 | 5 | Refine the exterior of Hollywood Cars Museum warehouse |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors
