@@ -1,0 +1,38 @@
+{
+  "id": "favorita-market",
+  "name": "La Favorita Market \u2014 Twain",
+  "status": "active",
+  "mappedIds": [
+    "way/390003968"
+  ],
+  "claim": {
+    "issue": 312,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/312",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/La+Favorita+Market/@36.1205547,-115.1508181,18z/",
+      "observed": "Owner May2023 photo CIHM0ogKEICAgICx0diYKw: blue fascia, cream cornice, black mullion glass, red/green market name, liquor and produce signage. Joseph ruri June2026 photo CIABIhDi0NreK7i6Nof9KrfwcV1N: checker floor, metal stocked shelves and fluorescent ceiling."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=gIM0wgsN8JgeISaCpiK7vQ&heading=180&pitch=0",
+      "observed": "March2018 north frontage proportions, continuous shallow cornice and glazing. Beige paint/signs superseded by May2023 owner photograph."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint approximately64x27m including other retail frontage; market tenant extent and public room layout inferred. Heights, hidden services, newer signage unverified."
+  ],
+  "implemented": [
+    "Claim312 confirmed; exterior/public aisle photographs visually inspected."
+  ],
+  "remaining": [
+    "Baseline, source model, targeted installation, optimized bake, installed visual review, actual walking/performance.",
+    "Private service rooms and unsupported neighboring tenant interiors excluded."
+  ],
+  "nextPass": {
+    "priority": "Mapped exterior and reference-supported public market aisles.",
+    "checkpoint": "Claim confirmed; research only. No new building geometry yet."
+  }
+}

@@ -1476,7 +1476,13 @@
       "name": "24 Hour Laundry Center \u2014 Twain",
       "status": "refinement-deferred",
       "record": "twain-laundry.json"
+    },
+    {
+      "id": "favorita-market",
+      "name": "La Favorita Market \u2014 Twain",
+      "status": "active",
+      "record": "favorita-market.json"
     }
   ],
-  "active": "twain-laundry"
+  "active": "favorita-market"
 }
