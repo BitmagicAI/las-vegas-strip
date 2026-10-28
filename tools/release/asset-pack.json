@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1511,
- "bytes": 1129739018,
+ "count": 1515,
+ "bytes": 1131207714,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19613818,
-   "sha256": "c48dcdc32698dfef52b0f0f20f131b255284ef9964de6dd6543c2475fcce4ddb",
+   "bytes": 19619118,
+   "sha256": "0b8d922b189a9dcffbc85b945706468fce5833ef0b2b7ef58dfe2da9cb51e27e",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13058796,
-   "sha256": "aa94a849824fe6b78ffcc2a1f7c9dc98d21aabfb02d62221e3a502a6fa8a36ad",
+   "bytes": 13058116,
+   "sha256": "46f9974fd2261c0fe5bec23cdb1627543b9783c9ee7cea0bef6d6ace8b37b1a4",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109737180,
-   "sha256": "96cbff790e7cc0f9ca13af68cf10ed444c97b3e56688275daa0fcaa1f30dd301",
+   "bytes": 109735812,
+   "sha256": "e44aab7da31cb260a342ec9c9c3579b0a88df0ad3dbcd1813a787071497c0627",
    "kind": "optimized"
   },
   {
@@ -6497,6 +6497,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/firefly-hughes-exterior-collision.bin",
+   "bytes": 936,
+   "sha256": "74e519fd6b523774985440aa9e4bef692904f1bf2204412279024d32702bb0f2",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/firefly-hughes-exterior.glb",
+   "bytes": 708296,
+   "sha256": "e2e5fc4e7fa421e8984bd47d4dfbe5eb07ab8c9514f92159a1c9b2da2563aa80",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/firefly-hughes-interior-collision.bin",
+   "bytes": 2396,
+   "sha256": "3b78df4973799ed6daa46ebe7d12565e395d3fb9fd56f61f2423b7bf781c7c48",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/firefly-hughes-interior.glb",
+   "bytes": 752920,
+   "sha256": "684b907cedd41457406ea87914d846a2ba21e7b73faa8965685ee1644c83b4a8",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/flamingoExterior-exterior-collision.bin",
    "bytes": 6260,
    "sha256": "9f1f93e22d620777f72654c61f6bde857ce6e3947d3b6a8d2eff111afdefdb82",
@@ -8874,8 +8898,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 368174,
-   "sha256": "da0a73caf2fea73e879dce4169760f9cd16f8cd8fcbe255c8bea3444ac387aee",
+   "bytes": 369070,
+   "sha256": "ea9192dbd637222a7ac4b8226a2755eb69d4479249460817b83382a9cbdb034b",
    "kind": "original"
   },
   {
