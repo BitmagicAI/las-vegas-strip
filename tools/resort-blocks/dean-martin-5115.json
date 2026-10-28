@@ -9,7 +9,8 @@
     "issue": 290,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/290",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/291"
   },
   "sources": [
     {
@@ -19,6 +20,10 @@
     {
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GxSBHnSyOvfqRy94BOpHwQ&heading=189.82&pitch=0",
       "observed": "December 2022 commercial court: masonry end walls, ribbed pale mansards, glazed tenant fronts. Exact correspondence to owned building still needs frontage inspection."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dxW3kaN5_DQspl-a3T8OdA&heading=270&pitch=0",
+      "observed": "February 2025 road view: south entrance building has blank split-face stone east end, museum direction banners and a large HERE panel on pale ribbed mansard, 5115 address near corner; glazed shopfront turns into the court. North entrance building is separate and must not be replaced."
     }
   ],
   "uncertainDimensions": [
@@ -33,7 +38,60 @@
   ],
   "nextPass": {
     "priority": "Identify exact east-front architecture from Street View; establish baseline before modeling.",
-    "checkpoint": "Claim 290 verified janiverse. No geometry edited or installed for this block. Shooting Center installed pass is commit 66804d0."
+    "checkpoint": "Claim 290 verified, draft PR291 attached and branch task/ext-dean-martin-5115 pushed. February2025 east-front panorama inspected and identified south entrance building. Next: capture matching in-game baseline, model blank stone end/mansard and courtyard glazing on mapped footprint. No new geometry installed; latest verified runtime is Shooting Center 66804d0. Three matching baseline views inspected: generic blank shell confirmed; baseline results saved. No running processes."
   },
-  "evidence": []
+  "evidence": [
+    {
+      "type": "baseline",
+      "path": "build/city-exteriors/dean-martin-5115-baseline",
+      "viewsInspected": 3,
+      "performance": [
+        {
+          "name": "east-front",
+          "eye": [
+            -744,
+            3,
+            2152
+          ],
+          "target": [
+            -783,
+            3,
+            2160
+          ],
+          "p50": 16.600000023841858,
+          "p95": 19
+        },
+        {
+          "name": "southeast",
+          "eye": [
+            -750,
+            6,
+            2192
+          ],
+          "target": [
+            -799,
+            3,
+            2165
+          ],
+          "p50": 16.800000071525574,
+          "p95": 24
+        },
+        {
+          "name": "roof",
+          "eye": [
+            -747,
+            65,
+            2205
+          ],
+          "target": [
+            -803,
+            3,
+            2160
+          ],
+          "p50": 16.699999928474426,
+          "p95": 23.59999990463257
+        }
+      ]
+    }
+  ]
 }
