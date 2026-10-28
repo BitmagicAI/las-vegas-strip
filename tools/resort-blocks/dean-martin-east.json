@@ -9,7 +9,8 @@
     "issue": 304,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/304",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/305"
   },
   "sources": [
     {
@@ -29,7 +30,9 @@
     "Mapped bounds[-879.123,2150.737,-852.199,2240.205]. Heights, exact tenant partitions and hidden servicing estimated.",
     "No verified interior plan; current tenant occupancy unverified."
   ],
-  "implemented": [],
+  "implemented": [
+    "Three unobstructed baseline daylight views visually inspected before reconstruction."
+  ],
   "remaining": [
     "Baseline and original source reconstruction with source inspection.",
     "Targeted install, collision/preservation checks, optimized runtime package.",
@@ -37,7 +40,9 @@
   ],
   "nextPass": {
     "priority": "Reconstruct west-facing courtyard frontage.",
-    "checkpoint": "Claim304 confirmed; reference views inspected. Baseline pending."
+    "checkpoint": "Baseline inspected: median/p95ms23.3/29.5,37.9/50.2,18.1/23.9. Southwest view already below60fps. Resume original west-facing facade source; no new east-building geometry yet."
   },
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/dean-martin-east-baseline/results.json"
+  ]
 }
