@@ -1480,8 +1480,12 @@
     {
       "id": "favorita-market",
       "name": "La Favorita Market \u2014 Twain",
-      "status": "active",
-      "record": "favorita-market.json"
+      "status": "refinement-deferred",
+      "record": "favorita-market.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Installed first pass verified; fidelity/performance refinements retained while continuing city-wide coverage."
+      }
     }
   ],
   "active": "favorita-market"

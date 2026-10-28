@@ -13526,8 +13526,8 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
    "items": [
-    "Baseline, source model, targeted installation, optimized bake, installed visual review, actual walking/performance.",
-    "Private service rooms and unsupported neighboring tenant interiors excluded."
+    "Sign lettering is small/plain; facade glass opaque, roof and service walls simplified. Product packages, cooler glazing and meat display contents remain visibly stylized. Exact tenant divisions and public room arrangement inferred; private spaces excluded.",
+    "Exterior median frame time21.6/37.4/18.9ms vs17.2/29.9/16.4baseline; further optimization required. Interior16.6–17.3ms median,21.1–29.9ms p95. No stable60fps or photorealistic completion claim."
    ],
    "record": "tools/resort-blocks/favorita-market.json",
    "buildings": [],
@@ -13539,7 +13539,14 @@
     "writes": [
      "tools/resort-blocks/favorita-market.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_favorita_market.py",
+     "tools/strip-landmarks/review_favorita_market_interior.py",
+     "tools/strip-landmarks/test-favorita-market.mjs",
+     "tools/city-exteriors/install-favorita-market.py",
+     "tools/city-exteriors/check-favorita-market-preservation.py",
+     "tools/strip-landmarks/review_favorita_market.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
