@@ -1586,9 +1586,15 @@
     {
       "id": "seven-eleven-paradise",
       "name": "7-Eleven Paradise Road",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "seven-eleven-paradise.json"
+    },
+    {
+      "id": "nuleaf-twain",
+      "name": "NuLeaf Twain Avenue",
+      "status": "active",
+      "record": "nuleaf-twain.json"
     }
   ],
-  "active": "seven-eleven-paradise"
+  "active": "nuleaf-twain"
 }

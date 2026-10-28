@@ -1,0 +1,39 @@
+{
+  "id": "nuleaf-twain",
+  "name": "NuLeaf Twain Avenue",
+  "status": "active",
+  "mappedIds": [
+    "way/331347657"
+  ],
+  "claim": {
+    "issue": 344,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/344",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://nuleafnv.com/dispensaries/las-vegas/",
+      "observed": "Official address430E Twain confirmed."
+    },
+    {
+      "url": "https://leafly-public.imgix.net/dispensary/photos/qlVfFEC8TSiVRYBtTp6T_PSX_20190511_144545.jpg",
+      "observed": "Facade inspected: charcoal fascia, white masonry piers, recessed dark/brown horizontal panels, high windows, narrow entrance, raised430 andNuLeaf/cross, graypylon andtallplanters. Filename suggests2019; capturedate notverified."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped height6m estimated; roofline, bay spacing and trim dimensions require photo fitting.",
+    "Concealed rear/roof layout unknown; public interior excluded from this initial exterior scope."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Reconcile footprint and facade orientation with aerial reference.",
+    "Author facade, entrance, signage, planters and roof/service details from supported references.",
+    "Targeted installation and preservation audit; scoped approach checks and installed visual/performance comparisons.",
+    "Optimize, pack and refresh city bake; retain all fidelity discrepancies."
+  ],
+  "nextPass": {
+    "priority": "Reference orientation and original exterior authoring",
+    "checkpoint": "Claim344 confirmed; no geometry edits yet. Previous7-Eleven pass1f22e4f pushed, PR343ready andclaim342released."
+  }
+}
