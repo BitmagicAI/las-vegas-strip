@@ -14166,11 +14166,13 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Reconcile mapped roof and shop geometry against overhead and facade references.",
-    "Build original exterior, pumps and supported public interior details; no invented hidden rooms.",
-    "Scoped collision replacement, optimization, current bake, installed visual/walk/performance and package checks."
+    "Canopy roof is currently flat; reference shows shallow curved roof segments and seam grid that need a measured follow-up.",
+    "Glazing remains opaque and backed by walls; recessed transparent openings and realistic interior/exterior continuity remain.",
+    "Public interior is a limited counter/arrival pass, not a complete store plan. Full aisles, chillers, checkout placement and hidden service rooms require further reference evidence.",
+    "Merchandise, pump fittings, signage graphic proportions and ceiling grid remain simplified; no photorealistic completion claim.",
+    "Forecourt paving/curbs retained from city source; reconcile exact island grading and add reference-supported pylon, bins and other site detail in later scoped pass."
    ],
    "record": "tools/resort-blocks/seven-eleven-paradise.json",
    "buildings": [],
@@ -14182,7 +14184,13 @@
     "writes": [
      "tools/resort-blocks/seven-eleven-paradise.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-seven-eleven-paradise.mjs",
+     "tools/city-exteriors/install-seven-eleven-paradise.py",
+     "tools/strip-landmarks/export_seven_eleven_paradise.py",
+     "tools/city-exteriors/check-seven-eleven-paradise-preservation.py",
+     "tools/strip-landmarks/seven_eleven_paradise.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

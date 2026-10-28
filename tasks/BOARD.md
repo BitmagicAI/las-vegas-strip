@@ -273,7 +273,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-mcdonalds-paradise` | M | P3 | 4 | Refine the exterior of McDonalds Paradise Road |
 | `ext-mardi-gras` | L | P3 | 8 | Refine the exterior of Mardi Gras Hotel & Casino |
 | `ext-speedee-mart-paradise` | M | P3 | 5 | Refine the exterior of Speedee Mart Paradise Road |
-| `ext-seven-eleven-paradise` | M | P3 | 3 | Refine the exterior of 7-Eleven Paradise Road |
+| `ext-seven-eleven-paradise` | M | P3 | 5 | Refine the exterior of 7-Eleven Paradise Road |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors
