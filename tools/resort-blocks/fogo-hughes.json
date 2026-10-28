@@ -1,9 +1,10 @@
 {
   "id": "fogo-hughes",
   "name": "Fogo de Chao Hughes Center",
-  "status": "refinement-deferred",
+  "status": "active",
   "mappedIds": [
-    "way/511850832"
+    "way/511850832",
+    "way/1460748967"
   ],
   "claim": {
     "issue": 354,
@@ -24,6 +25,10 @@
     {
       "url": "https://Fogo-De-Chao.vr-360-tour.com/e/ri8Blzxs6bs/e",
       "observed": "Visually inspected Street View, Front Entrance, Lobby, Host Stand, Grill Room 1 and Main Dining. Tour shows newer pale three-bay facade, tall veined sign wall and dark broad canopy, superseding older stone/angular hero. Lobby has ring chandeliers, pale wood host, curved slatted bar canopy; main dining has wood slat ceiling, pale cloth tables, dark woven chairs and central market island. Tour date unknown; no measured floorplan."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1150399,-115.1569789,20z/data=!3m1!1e3",
+      "observed": "Aerial inspected2026-10-28: narrow canopy projects southeast from east diagonal building edge, corresponding to roof1460748967. Roof bands reflect older facade; official tour governs current material design."
     }
   ],
   "uncertainDimensions": [
@@ -39,15 +44,15 @@
   ],
   "remaining": [
     "Facade sidewalls/roof transitions and landscaping remain simplified; glazing backed and screen motif approximate.",
-    "Identify existing stone block outside ownedfootprint beside canopy before any replacement; do not remove unclaimed geometry.",
+    "Correct west-displaced entrance and replace mapped roof1460748967 placeholder with an open arrival canopy aligned to the southeast edge.",
     "Public room placement inferred; private rooms and service spaces not modeled.",
     "Interior is visibly sparse against tour: furniture shapes/weave, partitions, bar arch composition, fixtures, ceiling transitions and material/light fidelity need refinement.",
     "Original abstract artwork substitutes for copyrighted wall photographs; repeated art/produce remains stylized.",
     "Sign letters/fin dimensions estimated; no photorealistic completion claim."
   ],
   "nextPass": {
-    "priority": "Refine recorded facade and interior fidelity gaps after broader city pass",
-    "checkpoint": "Verified scoped pass with explicit fidelity deferral; ready to continue next unclaimed building."
+    "priority": "Reconcile southeast canopy, doorway, landing and public entry routes",
+    "checkpoint": "Issue354 reclaimed; aerial corroborates diagonal southeast canopy. Draft follow-up before geometry edits."
   },
   "evidence": {
     "exterior": "build/city-exteriors/fogo-hughes-refined",

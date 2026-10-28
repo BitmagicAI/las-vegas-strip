@@ -1622,7 +1622,7 @@
     {
       "id": "fogo-hughes",
       "name": "Fogo de Chao Hughes Center",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "fogo-hughes.json",
       "deferral": {
         "date": "2026-10-28",
@@ -1636,5 +1636,5 @@
       "record": "starbucks-flamingo.json"
     }
   ],
-  "active": "starbucks-flamingo"
+  "active": "fogo-hughes"
 }
