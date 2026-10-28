@@ -1548,7 +1548,13 @@
       "name": "FLEX Cocktail Lounge Twain",
       "status": "refinement-deferred",
       "record": "flex-twain.json"
+    },
+    {
+      "id": "fun-hog-ranch",
+      "name": "Fun Hog Ranch",
+      "status": "active",
+      "record": "fun-hog-ranch.json"
     }
   ],
-  "active": "flex-twain"
+  "active": "fun-hog-ranch"
 }

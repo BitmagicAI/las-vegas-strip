@@ -1,0 +1,39 @@
+{
+  "id": "fun-hog-ranch",
+  "name": "Fun Hog Ranch",
+  "status": "active",
+  "mappedIds": [
+    "way/390003973"
+  ],
+  "claim": {
+    "issue": 332,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/332",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://funhogranchlv.com/about-us",
+      "observed": "Official exposed timber and booths description; linked location on Twain."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=SrgiSGv6w1L_5luy1F_z2g&heading=210&pitch=0",
+      "observed": "February 2026, inspected zoomed: olive vertical board siding, north doorway, white trim and corner posts, shallow east canopy, raised sign."
+    },
+    {
+      "url": "https://whereis.gay/fun-hog-ranch",
+      "observed": "Gallery1/2 facade sign and gooseneck lights;5/6 low-resolution bar: timber walls/ceiling, TVs, bar equipment and pendant lighting. Dates unknown; architectural reference only, no copied pixels."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped 9.3 \u00d7 26.1 m shell: x1860\u20131869,z\u2212551 to \u2212525. Height, rear services and public room arrangement inferred; no floorplan."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Original exterior/public room; scoped replacement, current city bake and installed exterior/interior/walking/performance checks."
+  ],
+  "nextPass": {
+    "priority": "Build public timber bar within mapped shell.",
+    "checkpoint": "Claim332 confirmed. References inspected; no model edits. Previous verified FLEX08b7de1,709batches1477assets."
+  }
+}
