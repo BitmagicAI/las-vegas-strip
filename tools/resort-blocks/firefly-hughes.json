@@ -1,0 +1,46 @@
+{
+  "id": "firefly-hughes",
+  "name": "Firefly Hughes Center",
+  "status": "active",
+  "mappedIds": [
+    "way/511850831",
+    "way/511850830"
+  ],
+  "claim": {
+    "issue": 352,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/352",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.fireflylv.com/locations/flamingo",
+      "observed": "Official current address335HughesCenterDr."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1150399,-115.1569789,20z/data=!3m1!1e3",
+      "observed": "Aerial inspected: west freestanding hipped porte cochere connected by trellis; northwest rounded patio; main shell has west/south tiled hipped roof bands and east flat equipment roof. Separate Fogo east and Starbucks southwest excluded."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Firefly+335+Hughes+Center+Dr+Las+Vegas",
+      "observed": "Official Mar2023 interior photo CIHM0ogKEICAgIDhv8jdfg: sage paneling, green banquettes along windows, round tables, bar with stools, brass chandeliers, broad passage to further dining. Rejected old exterior photo uploadedOct2026 but capturedOct2021, visibly3824Paradise address."
+    },
+    {
+      "url": "https://images1.showcase.com/d2/oAgjwbJ2cSUT59M5_8syxteIOs9F6WSX3_jcnnaLcUg/document.pdf",
+      "observed": "LogicCRE retail brochure page3 lists335Firefly approx8000sqft; siteplan, not public interior plan."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped6m main height and3.5m canopy height estimated; no surveyed public floorplan."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Research current ground facade and public room fit",
+    "Build original exterior/public interiors and scoped collision",
+    "Install optimized assets, inspect actual daylight exterior/interior, walk routes and measure baseline/after performance"
+  ],
+  "nextPass": {
+    "priority": "Current location facade research then original geometry",
+    "checkpoint": "Issue352 claimed; mapped main/canopy identified, no geometry edits yet."
+  }
+}
