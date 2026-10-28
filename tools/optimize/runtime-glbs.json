@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-28T22:20:19.186Z",
- "totalBytes": 3550828356,
- "count": 726,
+ "generated": "2026-10-28T22:51:23.730Z",
+ "totalBytes": 3555895776,
+ "count": 728,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 347085620,
+   "bytes": 347080596,
    "preset": "level",
    "overrides": []
   },
@@ -2700,6 +2700,24 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "streamed on approach",
    "bytes": 1601432,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/fogo-hughes-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 1535944,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/fogo-hughes-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 3536500,
    "preset": "level",
    "overrides": []
   },

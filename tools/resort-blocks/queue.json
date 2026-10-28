@@ -1622,8 +1622,12 @@
     {
       "id": "fogo-hughes",
       "name": "Fogo de Chao Hughes Center",
-      "status": "active",
-      "record": "fogo-hughes.json"
+      "status": "refinement-deferred",
+      "record": "fogo-hughes.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Installed scoped exterior/public-room pass verified; explicit fidelity gaps retained for later refinement while city expansion proceeds."
+      }
     }
   ],
   "active": "fogo-hughes"

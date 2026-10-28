@@ -1,7 +1,7 @@
 {
   "id": "fogo-hughes",
   "name": "Fogo de Chao Hughes Center",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/511850832"
   ],
@@ -9,7 +9,8 @@
     "issue": 354,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/354",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/355"
   },
   "sources": [
     {
@@ -22,20 +23,37 @@
     },
     {
       "url": "https://Fogo-De-Chao.vr-360-tour.com/e/ri8Blzxs6bs/e",
-      "observed": "Official linked tour; detailed scene inspection pending."
+      "observed": "Visually inspected Street View, Front Entrance, Lobby, Host Stand, Grill Room 1 and Main Dining. Tour shows newer pale three-bay facade, tall veined sign wall and dark broad canopy, superseding older stone/angular hero. Lobby has ring chandeliers, pale wood host, curved slatted bar canopy; main dining has wood slat ceiling, pale cloth tables, dark woven chairs and central market island. Tour date unknown; no measured floorplan."
     }
   ],
   "uncertainDimensions": [
-    "Mapped6mheight estimated; public layout pending tour review."
+    "Mapped6mheight is estimated; authored7.3m shell,9.4mfront and12.4mfin are visual estimates.",
+    "Room placement, ceiling heights, ramp handedness and furniture counts fitted to mapped footprint, not a measured floor plan.",
+    "Tour date unknown; tour design supersedes conflicting older official hero, not evidence of current construction date."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original 44268-triangle facade/canopy/ramp/palm/sign/equipment exterior and host/bar/market/dining interior. Optimized exterior0.87MiB, interior1.43MiB.",
+    "Only93ownedplaceholder/collisionfaces removed;9560groups preserve metadata/vertices/remainingfaceorder.",
+    "227currentcity static route samples and24actual out-and-back walkingsegments pass.",
+    "All6finalinstalled daylightviews personallyinspected; thirdbayocclusion/brickfin/blankart corrected. Fresh721batch bake and1519asset package."
+  ],
   "remaining": [
-    "Inspect exterior/roof/public room references",
-    "Build original scoped exterior and public interior",
-    "Install optimized assets/current city bake, verify routes, views and performance"
+    "Facade sidewalls/roof transitions and landscaping remain simplified; glazing backed and screen motif approximate.",
+    "Identify existing stone block outside ownedfootprint beside canopy before any replacement; do not remove unclaimed geometry.",
+    "Public room placement inferred; private rooms and service spaces not modeled.",
+    "Interior is visibly sparse against tour: furniture shapes/weave, partitions, bar arch composition, fixtures, ceiling transitions and material/light fidelity need refinement.",
+    "Original abstract artwork substitutes for copyrighted wall photographs; repeated art/produce remains stylized.",
+    "Sign letters/fin dimensions estimated; no photorealistic completion claim."
   ],
   "nextPass": {
-    "priority": "Research official tour then model",
-    "checkpoint": "Issue354claimed, no geometry edits; Fireflypassf0dd134pushed/PR353ready/claim352released."
+    "priority": "Refine recorded facade and interior fidelity gaps after broader city pass",
+    "checkpoint": "Verified scoped pass with explicit fidelity deferral; ready to continue next unclaimed building."
+  },
+  "evidence": {
+    "exterior": "build/city-exteriors/fogo-hughes-refined",
+    "interior": "build/city-exteriors/fogo-hughes-public-refined",
+    "walking": "build/city-exteriors/fogo-hughes-walk-initial/results.json",
+    "preservation": "build/city-exteriors/fogo-hughes-preservation.json",
+    "performance": "960x540ultra: exterior median16.6\u201316.7ms,p9518.1\u201318.2;interior median16.6\u201316.7ms,p9518.4\u201318.8. Baseline median16.7,p9517.5\u201317.8. Not locked60fps."
   }
 }
