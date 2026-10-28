@@ -9,7 +9,8 @@
     "issue": 340,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/340",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/341"
   },
   "sources": [
     {
@@ -26,17 +27,191 @@
     }
   ],
   "uncertainDimensions": [
-    "Mapped irregular footprint; heights, jambs and shelving layout photo-fitted. Fuel canopy is outside claimed building scope. Do not invent hidden rooms."
+    "Mapped footprint retained. Wall height 4.6 m, curved pier height 5.5 m and ceiling 3.25 m are photo estimates. Door width 1.8 m is an authoring clearance, not a surveyed measurement.",
+    "January 2023 shop photograph establishes general fixtures, not current exact arrangement. February 2026 Street View controls exterior; May 2019 storefront image supplements lettering."
   ],
-  "implemented": [],
+  "implemented": [
+    "Mapped irregular shell with white stucco, brown plinth, angled storefront, raised signs, red/yellow fascia, curved parapet piers, west wall service detail and roof equipment.",
+    "Public shop entrance, tiled floor, checkout, two stocked aisles, rear coolers and ceiling fixtures; original geometry and procedural finish maps.",
+    "Fixed shared venue lights and streaming zone; targeted replacement of 16 owned shell/collision faces, optimized exterior/interior GLBs and packed collisions."
+  ],
   "remaining": [
-    "Build original exterior and reference-supported public shop interior.",
-    "Scope collision replacement, optimize/package and inspect installed views/walks/performance.",
-    "Record any deviations from dated reference and retain dimensions inferred from images."
+    "Storefront glazing is opaque and backed by walls; a later pass should provide actual recessed transparent openings and exterior/interior continuity.",
+    "Public layout, 3.25 m ceiling and shelving positions are photo-fitted, not a measured floor plan. Hidden service rooms and video-poker room layout remain unassigned.",
+    "Merchandise, checkout, vending cabinets and fixture detail remain simplified. Roof surface has conspicuous repeated shading at aerial distance; inspect and refine material classification.",
+    "Fuel canopy and forecourt furnishing are outside this building claim and need a separate mapped ownership/reference pass.",
+    "No photorealistic completion claim; idle-machine performance repeat is needed because concurrent rendering jobs affected samples."
   ],
   "nextPass": {
-    "priority": "Build claimed storefront/public shop",
-    "checkpoint": "Issue340 assignedjaniverse; latestFeb2026panorama inspected. No geometry edited yet. DraftPR setup precedes source edits."
+    "priority": "Save verified installed pass, then advance to another unclaimed under-developed building",
+    "checkpoint": "Final installed exterior and public interior views inspected; 42 clearance samples and 10 actual walking segments pass. 714-batch bake / 1493 assets current. Save pass then move to next claim; keep all recorded fidelity gaps."
   },
-  "verification": {}
+  "verification": {
+    "sourceTriangles": 11330,
+    "staticClearanceSamples": 42,
+    "actualWalkSegments": 10,
+    "walkPassed": true,
+    "walk": "build/city-exteriors/speedee-mart-paradise-walk/results.json",
+    "preservation": "build/city-exteriors/speedee-mart-paradise-preservation.json",
+    "preservedGroups": 9560,
+    "removedOwnedFaces": 16,
+    "views": "build/city-exteriors/speedee-mart-paradise-final",
+    "interiorViews": "build/city-exteriors/speedee-mart-paradise-interior-final",
+    "baseline": "build/city-exteriors/speedee-mart-paradise-baseline/results.json",
+    "initialInterior": "build/city-exteriors/speedee-mart-paradise-interior-installed/results.json",
+    "cityBakeBatches": 714,
+    "typecheck": "passed",
+    "performance": {
+      "baseline": [
+        {
+          "name": "front",
+          "eye": [
+            1644,
+            3,
+            -848
+          ],
+          "target": [
+            1653,
+            2.5,
+            -833
+          ],
+          "p50": 16.800000071525574,
+          "p95": 23.09999990463257
+        },
+        {
+          "name": "roof",
+          "eye": [
+            1630,
+            38,
+            -851
+          ],
+          "target": [
+            1652,
+            1,
+            -826
+          ],
+          "p50": 16.600000023841858,
+          "p95": 24.700000047683716
+        },
+        {
+          "name": "west",
+          "eye": [
+            1627,
+            3,
+            -825
+          ],
+          "target": [
+            1643,
+            2.7,
+            -827
+          ],
+          "p50": 16.700000047683716,
+          "p95": 21.59999990463257
+        }
+      ],
+      "exterior": [
+        {
+          "name": "front",
+          "eye": [
+            1644,
+            3,
+            -848
+          ],
+          "target": [
+            1653,
+            2.5,
+            -833
+          ],
+          "p50": 16.699999928474426,
+          "p95": 17.899999976158142
+        },
+        {
+          "name": "roof",
+          "eye": [
+            1630,
+            38,
+            -851
+          ],
+          "target": [
+            1652,
+            1,
+            -826
+          ],
+          "p50": 16.600000023841858,
+          "p95": 26.100000023841858
+        },
+        {
+          "name": "west",
+          "eye": [
+            1627,
+            3,
+            -825
+          ],
+          "target": [
+            1643,
+            2.7,
+            -827
+          ],
+          "p50": 16.5,
+          "p95": 25.700000047683716
+        }
+      ],
+      "interior": [
+        {
+          "name": "entry",
+          "eye": [
+            1652.6619018805964,
+            1.85,
+            -835.7988789124064
+          ],
+          "target": [
+            1652.0011160775127,
+            1.7,
+            -831.2367125276235
+          ],
+          "p50": 18.100000023841858,
+          "p95": 36.200000047683716
+        },
+        {
+          "name": "shop",
+          "eye": [
+            1652.58789286201,
+            1.85,
+            -831.6558700220987
+          ],
+          "target": [
+            1652.0980296475634,
+            1.8,
+            -825.8524198387051
+          ],
+          "p50": 18.100000023841858,
+          "p95": 33.39999997615814
+        },
+        {
+          "name": "checkout",
+          "eye": [
+            1652.58789286201,
+            1.85,
+            -831.6558700220987
+          ],
+          "target": [
+            1657.7787954885057,
+            1.5,
+            -830.1149190422689
+          ],
+          "p50": 18,
+          "p95": 25
+        }
+      ]
+    },
+    "packagedAssets": 1493
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/speedee-mart-paradise-exterior.glb": "842cda561f5fb30b488f48a9b7a58eeb8aa8a89aa194867d8ab835402cd5a640",
+      "runtime-assets/strip-landmarks/speedee-mart-paradise-exterior-collision.bin": "b5febaeb1e62478e37089bc0d1326ab14f4cb9af63c94a475331e6f3dee8ebb5",
+      "runtime-assets/strip-landmarks/speedee-mart-paradise-interior.glb": "a4a1370009999c1cd33f383f5822de08e45f8cad29ab1fbe15f8bcc65c34d9e5",
+      "runtime-assets/strip-landmarks/speedee-mart-paradise-interior-collision.bin": "e90e1ef77c140b17fbaa8344c2a136b952c22b9a1cd00c69a28566fbf64aa70c"
+    }
+  }
 }

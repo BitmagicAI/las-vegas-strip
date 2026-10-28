@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1489,
- "bytes": 1123183769,
+ "count": 1493,
+ "bytes": 1124029193,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19525815,
-   "sha256": "14de55a60d53e53b43e00331f25a06bddfaa9118e30e817a50a028b164a28581",
+   "bytes": 19540943,
+   "sha256": "d1f59b29adf1492331737db44506300c58b607757b6191a26756e50e0fa6151a",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13059588,
-   "sha256": "04b7f80d6b0662cca483b31d4045317721f87c649e6443380194e073dbe8226c",
+   "bytes": 13059812,
+   "sha256": "2f5102fccaddf9e3cd84c065a2bd13e332c93310b3942f40c2ecd83fd36f75ab",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109742192,
-   "sha256": "eb4f8d0fa9e96244fc7be4771d3f7ec442b32359c892096ea565f55ca9e5e0b6",
+   "bytes": 109741972,
+   "sha256": "d898357264992080eb391a43a7ccb8c06cbc723020a0e31d807e88b1c990de68",
    "kind": "optimized"
   },
   {
@@ -8309,6 +8309,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/speedee-mart-paradise-exterior-collision.bin",
+   "bytes": 348,
+   "sha256": "b5febaeb1e62478e37089bc0d1326ab14f4cb9af63c94a475331e6f3dee8ebb5",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/speedee-mart-paradise-exterior.glb",
+   "bytes": 411324,
+   "sha256": "842cda561f5fb30b488f48a9b7a58eeb8aa8a89aa194867d8ab835402cd5a640",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/speedee-mart-paradise-interior-collision.bin",
+   "bytes": 284,
+   "sha256": "e90e1ef77c140b17fbaa8344c2a136b952c22b9a1cd00c69a28566fbf64aa70c",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/speedee-mart-paradise-interior.glb",
+   "bytes": 417828,
+   "sha256": "a4a1370009999c1cd33f383f5822de08e45f8cad29ab1fbe15f8bcc65c34d9e5",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/sphereGarage-exterior-collision.bin",
    "bytes": 12748,
    "sha256": "73df76065816e4d2834810fc289f135c3867a1a9d7960be9badc09f980a3b717",
@@ -8742,8 +8766,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 364816,
-   "sha256": "ec37fe73d1ecfe9b2a14175da7d44996e66e6b3189d315a8f91d96d225a3cd05",
+   "bytes": 365324,
+   "sha256": "b44571a9a8bbf3a7126a77bccd9346c714db6269486d4646377bfc1fa105aaf2",
    "kind": "original"
   },
   {

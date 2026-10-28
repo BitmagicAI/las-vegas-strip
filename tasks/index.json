@@ -14136,7 +14136,13 @@
     "writes": [
      "tools/resort-blocks/speedee-mart-paradise.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-speedee-mart-paradise.mjs",
+     "tools/city-exteriors/install-speedee-mart-paradise.py",
+     "tools/strip-landmarks/export_speedee_mart_paradise.py",
+     "tools/city-exteriors/check-speedee-mart-paradise-preservation.py",
+     "tools/strip-landmarks/speedee_mart_paradise.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
