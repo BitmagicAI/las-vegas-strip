@@ -1,7 +1,7 @@
 {
   "id": "herbs-rye",
   "name": "Herbs & Rye",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/764345678"
   ],
@@ -9,7 +9,8 @@
     "issue": 318,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/318",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/319"
   },
   "sources": [
     {
@@ -29,13 +30,89 @@
     "Mapped footprint about 21x25 m. Heights, door width, public room extent and bar placement inferred; kitchen/private rooms excluded. Interior reference is old."
   ],
   "implemented": [
-    "Research and claim only. No geometry edits yet."
+    "Original 33,440-triangle exterior and public dining/bar; optimized exterior 0.30 MiB and interior 0.96 MiB.",
+    "70 scoped current-city clearance samples and 10 actual walking segments pass; 19 owned shell faces replaced and all 9,560 groups preserve vertices, metadata and retained face order.",
+    "Three current installed daylight exterior views and four interior views visually inspected; doorway trim obstruction and pale wall streaks corrected. 703-batch current city bake; 1,461 packaged assets, zero missing."
   ],
   "remaining": [
-    "Original exterior and public dining/bar source; source review; targeted install, optimization, bake, installed views/walking/performance."
+    "Sign proportions and typography, plain side walls, inferred roof/services and weathering remain simplified.",
+    "Opaque glassware, repeating wallpaper, regular furniture arrangement, faceted seating and overlarge floor joints need visual refinement. Exact room plan is inferred from old public photographs.",
+    "Installer can select stale WebP candidate after source becomes texture-free. This exterior explicitly uses verified current level candidate. Future rebuilds must preserve that choice or fix source-hash validation."
   ],
   "nextPass": {
-    "priority": "Original exterior and reference-supported public dining/bar.",
-    "checkpoint": "Claim 318 confirmed. North frontage and attributed interior photo inspected. Baseline and source work next; live city is Mt. Everest 702 batches/1457 assets."
+    "priority": "Continue city coverage with claimed Denny's West Flamingo; retain Herbs & Rye visual refinement backlog.",
+    "checkpoint": "Installed current exterior/interior inspected and walking verified. No claim of photorealistic completion."
+  },
+  "evidence": [
+    "build/city-exteriors/herbs-rye-baseline/results.json",
+    "build/city-exteriors/herbs-rye-baseline/herbs-rye-northeast.png",
+    "build/city-exteriors/herbs-rye-baseline/herbs-rye-north-front.png",
+    "build/city-exteriors/herbs-rye-baseline/herbs-rye-roof.png",
+    "build/city-exteriors/herbs-rye-current/results.json",
+    "build/city-exteriors/herbs-rye-current/herbs-rye-northeast.png",
+    "build/city-exteriors/herbs-rye-current/herbs-rye-north-front.png",
+    "build/city-exteriors/herbs-rye-current/herbs-rye-roof.png",
+    "build/city-exteriors/herbs-rye-interior-current/herbs-rye-dining.png",
+    "build/city-exteriors/herbs-rye-interior-current/results.json",
+    "build/city-exteriors/herbs-rye-interior-current/herbs-rye-bar.png",
+    "build/city-exteriors/herbs-rye-interior-current/herbs-rye-entrance.png",
+    "build/city-exteriors/herbs-rye-interior-current/herbs-rye-rear.png",
+    "build/city-exteriors/herbs-rye-walk/results.json",
+    "build/city-exteriors/herbs-rye-walk/walk-return-0.png",
+    "build/city-exteriors/herbs-rye-source-review/exterior.png",
+    "build/city-exteriors/herbs-rye-source-review/dining.png",
+    "build/city-exteriors/herbs-rye-source-review/entrance.png",
+    "build/city-exteriors/herbs-rye-source-review/roof.png",
+    "build/city-exteriors/herbs-rye-source-review/rear.png",
+    "build/city-exteriors/herbs-rye-source-review/bar.png"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.7,
+        23.6
+      ],
+      [
+        16.6,
+        18.2
+      ],
+      [
+        16.7,
+        18.7
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.6,
+        18.7
+      ],
+      [
+        16.7,
+        18.5
+      ],
+      [
+        16.7,
+        18.9
+      ]
+    ],
+    "interiorMedianP95Ms": [
+      [
+        16.7,
+        17.6
+      ],
+      [
+        16.6,
+        18.2
+      ],
+      [
+        16.7,
+        17.4
+      ],
+      [
+        16.6,
+        17.9
+      ]
+    ],
+    "note": "960x540 ultra, matching fixed daylight exterior views, shared machine."
   }
 }
