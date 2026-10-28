@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-28T20:48:07.062Z",
- "totalBytes": 3543138920,
- "count": 721,
+ "generated": "2026-10-28T21:12:49.885Z",
+ "totalBytes": 3545262100,
+ "count": 722,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -2654,7 +2654,16 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1488508,
+   "bytes": 1412408,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/lawrys-hughes-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 2199280,
    "preset": "level",
    "overrides": []
   },

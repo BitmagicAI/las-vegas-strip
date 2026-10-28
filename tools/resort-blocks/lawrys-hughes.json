@@ -40,30 +40,34 @@
     {
       "url": "https://lawrys.merchantview360.com/#46300156p&271.14h&90t",
       "observed": "Followed entrance arrow into public lounge, then forward toward host: wood panel walls, red patterned carpet, elliptical stepped ceiling recess, red sofas and pale blue chairs near entrance, teal lounge seats farther in, stone fireplace left, bar opening right, central host desk framed by four wood columns with luminous capitals. Relative sequence confirmed; dimensions and full room coordinates remain estimated."
+    },
+    {
+      "url": "https://lawrys.merchantview360.com/#46300197p&271.14h&90t",
+      "observed": "Followed entrance through lounge to host desk, then right-hand arrow beside host: paired wood columns frame opening into main dining room, wine/display cabinet ahead, radial ceiling and rear teal banquette/artwall visible. Passage established; exact room dimensions remain fitted."
     }
   ],
   "uncertainDimensions": [
     "Mapped6mheight estimated; no surveyed canopy or room dimensions.",
-    "Tour establishes appearance and some connections, not full floorplan."
+    "Tour establishes appearance and some connections, not full floorplan.",
+    "Public lounge6x16m, bar10x8m, dining24x16m fitted to footprint and tour sequence; not surveyed. Main/private dining boundaries remain uncertain."
   ],
   "implemented": [
     "Initial original exterior installed: open four-pier porte-cochere, grid hip canopy, curved silver entrance fascia, red plinth/sign pier, teal perimeter roofs, curved-end raised central roof and service equipment.",
-    "Scoped146-face placeholder/collision replacement; current city bake and optimized asset package refreshed."
+    "Scoped146-face placeholder/collision replacement; current city bake and optimized asset package refreshed.",
+    "Accessible vestibule, lounge/fireplace/host desk, north bar and connected main dining room with radial ceiling, tables, banquette and display cabinet; original materials/artwork.",
+    "Narrowed silver entry fascia and cream wall returns; opened shell portal; refined canopy transmission; fixed joined-room collision seam and removed hidden roof beneath dining ceiling."
   ],
   "remaining": [
-    "Aerial and exterior footprint fit",
-    "Original exterior/site geometry",
-    "Public entrance/dining layout using reference-supported connections",
-    "Scoped replacement, collision, installedviews, performance and packaging",
-    "Refine entry: actual curved silver fascia is narrower than initial full-width glass bay; cream wall returns and steel vestibule remain inaccurate.",
-    "Add reference-supported public lounge and rooms; currently exterior only, entrance is not accessible.",
-    "Refine canopy transmission/structure and roof finishes",
-    "Side-wall detail, site landscaping and entry apron",
-    "Performance regression unresolved; shared-machine render load present during measurement"
+    "Side-wall detailing and more complete landscaping/site furniture",
+    "Canopy structure, roof finishes and precise surveyed elevations",
+    "Furniture remains simplified; flat tablecloths and abstract artwork require refinement",
+    "Interior lighting appears brighter/warmer than references",
+    "Room sizes and placements are fitted to mapped footprint and tour sequence, not surveyed; private/service rooms not modeled",
+    "Performance below steady 60fps; shared-machine render load observed but does not explain away regression"
   ],
   "nextPass": {
-    "priority": "Refine entrance and implement reference-supported public lounge before closing this building task",
-    "checkpoint": "All3installedexteriorviewsinspected;120staticcanopyclearancespass. Fouractualcanopywalkingsegmentspass. Current718batchbake/1505assetsstaged. Full public interior not yet authored. Keepclaim348/draft349active."
+    "priority": "Later fidelity/performance refinement; continue city expansion",
+    "checkpoint": "Seven final installed views inspected; all22 actual walking segments,141 static public-route and120 canopy samples pass. Current bake/package verified. Scoped pass implemented, not architectural completion."
   },
   "baseline": {
     "directory": "build/city-exteriors/lawrys-hughes-baseline-clean",
@@ -122,9 +126,9 @@
       "Entrance vestibule",
       "Seated lounge with host desk",
       "North-side bar",
-      "Main dining room, connection to verify before implementation"
+      "Main dining room reached around host desk"
     ],
-    "inferredDimensions": "Vestibule about 4x3m; lounge about 6x12m, ceiling about3.3m. Estimates only from furniture scale; not measured.",
+    "inferredDimensions": "Public lounge6x16m, north bar10x8m, main dining24x16m fitted estimates; no surveyed plan.",
     "fidelityLimits": [
       "No kitchen/service circulation plan",
       "No surveyed private room positions",
@@ -132,24 +136,26 @@
     ]
   },
   "verification": {
-    "sourceTriangles": 9039,
-    "optimizedExteriorMiB": 0.77,
+    "sourceTriangles": 30664,
+    "optimizedExteriorMiB": 0.74,
     "ownership": "146 owned faces and matching collision triangles removed;9560 surrounding groups retain vertices/metadata/face order",
     "canopy": "120 current-city clearance samples pass; 3m-tall test envelope starts0.5m above world to clear raised existing ground",
     "installedViews": {
-      "directory": "build/city-exteriors/lawrys-hughes-first-exterior",
+      "directory": "build/city-exteriors/lawrys-hughes-refined-exterior",
+      "interiorDirectory": "build/city-exteriors/lawrys-hughes-public-dining",
       "inspected": [
         "front",
         "roof",
-        "south"
+        "south",
+        "entry",
+        "lounge",
+        "bar",
+        "dining"
       ],
       "findings": [
-        "Canopy now visibly open",
-        "Roof massing present but provisional",
-        "Entrance glass bay too wide versus official tour",
-        "Canopy too opaque and grid/ribs need refinement",
-        "Side walls and site landscaping still sparse",
-        "Roof finish and joints need closer review"
+        "Open canopy and entrance visible; connected public rooms accessible",
+        "Bar shell intrusion corrected; quieter wood grain",
+        "Side facade/site still sparse; furniture simplified; interior lighting too bright/warm"
       ]
     },
     "performanceCaveat": "Other-session Blender render jobs running; final timings must note shared-machine load.",
@@ -166,8 +172,8 @@
           3,
           99
         ],
-        "p50": 31.800000071525574,
-        "p95": 42.799999952316284
+        "p50": 21.899999976158142,
+        "p95": 37.39999997615814
       },
       {
         "name": "roof",
@@ -181,8 +187,8 @@
           1,
           95
         ],
-        "p50": 22.5,
-        "p95": 32.90000009536743
+        "p50": 18.799999952316284,
+        "p95": 31.399999976158142
       },
       {
         "name": "south",
@@ -196,16 +202,80 @@
           3,
           111
         ],
-        "p50": 17.100000023841858,
-        "p95": 28.200000047683716
+        "p50": 19.799999952316284,
+        "p95": 36.699999928474426
       }
     ],
-    "package": "718 city batches;1505 packaged assets;current bake verified",
+    "package": "718 city batches;1507 packaged assets;1076.2MiB;current bake verified",
     "walking": {
-      "directory": "build/city-exteriors/lawrys-hughes-first-walk",
+      "directory": "build/city-exteriors/lawrys-hughes-dining-walk",
       "passed": true,
-      "segments": 4,
-      "scope": "Real player walks both directions under canopy; no public interior yet."
-    }
+      "segments": 22,
+      "scope": "Entrance/lounge/bar and host/dining, out and back with actual player"
+    },
+    "optimizedInteriorMiB": 0.93,
+    "publicStaticSamples": 141,
+    "interiorTimingsMs": [
+      {
+        "name": "entry",
+        "eye": [
+          1203.5483184714678,
+          1.8,
+          97.74203251319746
+        ],
+        "target": [
+          1192.566815285322,
+          1.8,
+          98.37967486802535
+        ],
+        "p50": 27.5,
+        "p95": 47.39999997615814
+      },
+      {
+        "name": "lounge",
+        "eye": [
+          1196.560089171193,
+          1.8,
+          98.1478049208152
+        ],
+        "target": [
+          1189.5718598709186,
+          2,
+          98.55357732843295
+        ],
+        "p50": 24.600000023841858,
+        "p95": 48.09999990463257
+      },
+      {
+        "name": "bar",
+        "eye": [
+          1195.4181391023017,
+          1.8,
+          94.00703807877274
+        ],
+        "target": [
+          1192.9274914019618,
+          2,
+          87.34020419507705
+        ],
+        "p50": 17.59999990463257,
+        "p95": 34
+      },
+      {
+        "name": "dining",
+        "eye": [
+          1186.4261889908287,
+          1.8,
+          96.13185176302429
+        ],
+        "target": [
+          1178.5903566847728,
+          2.7,
+          99.19121968326084
+        ],
+        "p50": 25,
+        "p95": 44.40000009536743
+      }
+    ]
   }
 }

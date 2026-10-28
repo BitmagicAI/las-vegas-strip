@@ -10,8 +10,8 @@ def build(B):
  # The mapped eastern projection is a roof over a driveway, not solid walls.
  main=Polygon([(1152.77,74.473),(1150.612,111.208),(1202.23,114.214),(1202.86,102.525),(1202.23,93.063),(1202.59,86.273),(1197.734,86.05),(1197.977,81.174),(1198.183,77.144)])
  B.property=KEY+'-exterior';B.source='retail/'+KEY;B.detail=0
- B.shell(main,.02,5.1,'lh-stucco',roof=False)
- B.planar('lh-roof',main,5.1)
+ door=dict(p=F.p(0,.24,1.95),yaw=YAW,width=2.6,height=2.7,name='Public lounge entrance',venue=KEY)
+ B.shell(main,.02,5.1,'lh-stucco',roof=False,openings=[door])
  # Wall base and paired horizontal Art Deco trim follow the actual footprint.
  for a,b in zip(list(main.exterior.coords),list(main.exterior.coords)[1:]):
   R=Frame(B,(a[0]+b[0])/2,(a[1]+b[1])/2,math.atan2(a[1]-b[1],b[0]-a[0]),y=0)
@@ -33,21 +33,23 @@ def build(B):
  outline=[]
  for a in np.linspace(-math.pi/2,math.pi/2,25):outline.append((half+radius*math.cos(a),center+radius*math.sin(a)))
  for a in np.linspace(math.pi/2,3*math.pi/2,25):outline.append((-half+radius*math.cos(a),center+radius*math.sin(a)))
- roof=F.poly(outline);B.shell(roof,5.12,6.15,'lh-metal',roof=False,solid=False);B.planar('lh-metal',roof,6.15)
+ roof=F.poly(outline);B.planar('lh-roof',main.difference(roof),5.1);B.shell(roof,5.12,6.15,'lh-metal',roof=False,solid=False);B.planar('lh-metal',roof,6.15)
  for a,b in zip(outline,outline[1:]+outline[:1]):F.tube('lh-cream',(a[0],6.18,a[1]),(b[0],6.18,b[1]),.095,8)
  for u in np.arange(-14,15,1):
   cut=roof.intersection(F.poly([(u-.025,-35),(u+.025,-35),(u+.025,-3),(u-.025,-3)]))
   if not cut.is_empty:B.planar('lh-seam',cut,6.165)
- # East entry bay: curved silver fascia, glazed frontage and paired doors.
+ # Cream wall returns and a narrower silver fascia, with an open central portal.
+ for u in [-3.5,3.5]:F.box('lh-stucco',(u,2.15,.7),(2.0,4.25,1.4),True)
+ for u in [-1.85,1.85]:
+  F.box('lh-clear-glass',(u,1.65,1.95),(1.05,2.7,.035),True)
+  for x in [u-.52,u+.52]:F.box('lh-metal',(x,1.65,2.0),(.065,2.8,.08))
  for i in range(24):
   a=-math.pi/2+i*math.pi/24;b=a+math.pi/24
-  x1=4.4*math.sin(a);x2=4.4*math.sin(b);z1=.45+1.5*math.cos(a);z2=.45+1.5*math.cos(b)
-  B.face('lh-glass',[F.p(x1,.85,z1),F.p(x2,.85,z2),F.p(x2,3.1,z2),F.p(x1,3.1,z1)])
-  for yy in [3.2,3.38,3.56,3.74,3.92]:F.tube('lh-metal',(x1,yy,z1+.06),(x2,yy,z2+.06),.07,8)
-  if i%3==0:F.box('lh-metal',(x1,1.97,z1+.05),(.075,2.3,.08))
- for u in [-1.3,0,1.3]:F.box('lh-metal',(u,1.65,2.04),(.075,2.9,.08))
- for u in [-.15,.15]:F.tube('lh-metal',(u,1.1,2.12),(u,1.8,2.12),.025,10)
- F.box('lh-metal',(0,3.12,2.04),(2.7,.12,.1))
+  x1=2.65*math.sin(a);x2=2.65*math.sin(b);z1=1.45+.7*math.cos(a);z2=1.45+.7*math.cos(b)
+  for yy in [3.15,3.30,3.45,3.60]:F.tube('lh-metal',(x1,yy,z1),(x2,yy,z2),.07,8)
+ F.box('lh-metal',(0,2.99,2.0),(4.95,.12,.12))
+ # Private apron joins retained grade without replacing municipal road surfaces.
+ B.upface('lh-concrete',[F.p(-2.7,.24,1.9),F.p(2.7,.24,1.9),F.p(2.7,.16,6),F.p(-2.7,.16,6)],True)
  # Open porte-cochere: four cream ribbed piers, steel ribs, translucent-looking roof.
  for u in [-4.35,4.35]:
   for v in [3.1,15.2]:
@@ -91,6 +93,9 @@ def build(B):
   F.box('lh-equipment',(u,5.65,v),(2.6,1.1,2.1))
   for k in range(7):F.box('lh-frame',(u,5.25+k*.11,v+1.06),(2.3,.035,.03))
   F.lathe('lh-frame',u,v,[(6.22,.65),(6.27,.65)],24)
- return dict(key=KEY,name="Lawry's The Prime Rib",center=[p.centroid.x,0,p.centroid.y],bounds=list(p.bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],hotelSources=[],routes=[])
+ from lawrys_public import build_public
+ public=build_public(B,F,door)
+ return dict(key=KEY,name="Lawry's The Prime Rib",center=[p.centroid.x,0,p.centroid.y],bounds=list(p.bounds),structural=True,hotelSources=[],**public)
+
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

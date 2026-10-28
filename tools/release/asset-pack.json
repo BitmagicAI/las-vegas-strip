@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1505,
- "bytes": 1127527575,
+ "count": 1507,
+ "bytes": 1128477515,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19602965,
-   "sha256": "e086c7f4bfb1169858ae84795af3b511a90992c061db397a0d40a47c0259fc66",
+   "bytes": 19602529,
+   "sha256": "b1b102050cee1ff2fac3ac6f2ef90a2ccff41db221b3a0fd4b5534d3912f5387",
    "kind": "original"
   },
   {
@@ -7098,14 +7098,26 @@
   },
   {
    "path": "build/strip-landmarks/lawrys-hughes-exterior-collision.bin",
-   "bytes": 572,
-   "sha256": "ae8239d42d8b15ac2265f2e4cd90a2f451ac814de78b580c13810e3ab027e60c",
+   "bytes": 800,
+   "sha256": "695e2c8a37fcdaa2042389c3e483de3c8a4fa5544eb3d578eb3762cffb1a074f",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/lawrys-hughes-exterior.glb",
-   "bytes": 806292,
-   "sha256": "f679c44230ce258bde1199d4f7e5dcd72ec4f6ceb298f6c02ade098520aafa34",
+   "bytes": 776804,
+   "sha256": "8580a9cc275020c78d76c17b0882a493d546061b55074787ccd6d665d794afb9",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/lawrys-hughes-interior-collision.bin",
+   "bytes": 4324,
+   "sha256": "2e9dabfb0bf634ca6a7c45fe810e140ec842e434609e0767952f6e9944244a3a",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/lawrys-hughes-interior.glb",
+   "bytes": 974604,
+   "sha256": "a5575bee77417559722a6216439e7da5f20539befd9cb158e54b62a3f3b99232",
    "kind": "optimized"
   },
   {
@@ -8838,8 +8850,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 366808,
-   "sha256": "98bf8b87212c94314dc59a268084bf7758c61bc0785c1bc575f0f01d1eded1be",
+   "bytes": 367516,
+   "sha256": "db97be2886c2e1d7e97d38e5301dbf780c0638be20a7597e56f7645865313c07",
    "kind": "original"
   },
   {
