@@ -1,0 +1,41 @@
+{
+  "id": "mardi-gras",
+  "name": "Mardi Gras Hotel & Casino",
+  "status": "active",
+  "mappedIds": [
+    "way/33962963",
+    "way/33963206"
+  ],
+  "claim": {
+    "issue": 338,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/338",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://mardigraslasvegas.com/",
+      "observed": "Official front and pool gallery inspected; ochre stucco, bronze mansard, iron rails, cream decks, blue pool tile and terracotta coping."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=oYRdHIEdMhB6dSQxqfGqdQ&heading=81.57&pitch=0",
+      "observed": "November 2021 front panorama: three storeys, exterior corridors, arched openings, deep canopy, slender columns and stone bases."
+    },
+    {
+      "url": "https://www.google.com/maps?ll=36.125493,-115.15446&z=18&t=k&cid=11806191755765158134",
+      "observed": "Aerial inspected: two parallel wings, west connector, separate courtyard building, pool toward eastern half; image capture date unspecified."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, room pitch, roof profile, pool dimensions and service details estimated from photographs; OSM ground outlines authoritative only for mapped plan.",
+    "Public interior layout not established; no invented interior in this pass."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build entire mapped exterior and courtyard, verify installed views, public routes and performance."
+  ],
+  "nextPass": {
+    "priority": "Build mapped three-storey wings and courtyard",
+    "checkpoint": "Claim338 confirmed before editing."
+  }
+}
