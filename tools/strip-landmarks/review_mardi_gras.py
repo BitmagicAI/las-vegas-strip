@@ -13,6 +13,6 @@ for part in ['exterior']:
    bpy.ops.object.light_add(type='AREA',location=pt((x,2.95,-3194.5)));bpy.context.object.data.energy=130;bpy.context.object.data.size=3
  bpy.ops.object.camera_add();cam=bpy.context.object;s.camera=cam;cam.data.lens=24
  s.render.resolution_x=960;s.render.resolution_y=640;s.render.resolution_percentage=100;s.view_settings.view_transform='AgX'
- views=[('exterior',[1620,12,-1054],[1660,5,-1054]),('roof',[1640,100,-990],[1727,3,-1054]),('courtyard',[1787,9,-1054],[1735,2,-1054])] if part=='exterior' else [(k,v['eye'],v['target']) for k,v in json.load(open('build/strip-landmarks/mardi-gras-metadata.json'))['views'].items() if k in ['booths','counter']]
+ views=[('exterior',[1620,12,-1054],[1660,5,-1054]),('roof',[1640,100,-990],[1727,3,-1054]),('courtyard',[1787,9,-1054],[1735,2,-1054]),('stair',[1741,7,-1053],[1726,3,-1055])] if part=='exterior' else [(k,v['eye'],v['target']) for k,v in json.load(open('build/strip-landmarks/mardi-gras-metadata.json'))['views'].items() if k in ['booths','counter']]
  for name,eye,target in views:
   cam.location=pt(eye);cam.rotation_euler=(Vector(pt(target))-cam.location).to_track_quat('-Z','Y').to_euler();s.render.filepath=str((out/(name+'.png')).resolve());bpy.ops.render.render(write_still=True)

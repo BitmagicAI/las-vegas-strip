@@ -39,29 +39,62 @@
     {
       "url": "https://mardigraslasvegas.com/casino/",
       "observed": "Official site-6 and site-4 images inspected; machine closeups only, no reliable room layout. Interior remains deferred."
+    },
+    {
+      "url": "https://www.mapquest.com/us/nevada/mardi-gras-hotel-casino-270839320",
+      "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-o/0d/45/fc/58/pool-deck-area-evening.jpg",
+      "observed": "Evening courtyard photograph inspected: exposed straight stair with intermediate landing beside taller pavilion, upper terrace rails and connections toward guest corridors. Capture date unknown; historic Wynn skyline."
+    },
+    {
+      "url": "https://www.doetsreizen.nl/accommodaties/mardi-gras-hotel-en-casino/",
+      "imageUrl": "https://assets.doetsreizen.nl/media/thumbnails/ef/e1/efe1dcc9d1835316e2de9e7e429b9fc3/PoolGoundLevel1.jpg",
+      "observed": "Daylight photograph independently shows exposed stair beside pavilion and upper terrace; image date unknown, older furnishings. Used for permanent circulation only."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/welcome/",
+      "observed": "Official first/second/third floor PDFs all downloaded from linked legacy host and visually inspected. Schematic guest room numbering, west reception/casino/restaurant, central New Orleans Pavilion and Baton Rouge North/South, second-floor guest laundry. No stair symbols or dimensioned circulation; repeated central diagram on all floors cannot establish pavilion elevations.",
+      "files": [
+        "build/city-exteriors/mardi-gras-references/mardi-first-floor.pdf",
+        "build/city-exteriors/mardi-gras-references/mardi-second-floor.pdf",
+        "build/city-exteriors/mardi-gras-references/mardi-third-floor.pdf"
+      ],
+      "links": [
+        "https://dk9.650.myftpupload.com/wp-content/uploads/2023/10/1st-Floorplan.pdf",
+        "https://dk9.650.myftpupload.com/wp-content/uploads/2023/10/2nd-Floorplan.pdf",
+        "https://dk9.650.myftpupload.com/wp-content/uploads/2023/10/3rd-Floorplan.pdf"
+      ]
+    },
+    {
+      "url": "https://mardigraslasvegas.com/events/",
+      "plan": "https://mardigraslasvegas.com/wp-content/uploads/2023/11/mardi-gras-las-vegas-catering-floorplan.pdf",
+      "observed": "Dimensioned meeting plan visually inspected. Combined New Orleans Pavilion103x38ft; west New Orleans58x38ft; east Baton Rouge45x38ft split into North/South45x19ft. Door swings/side exits shown. Strong plan evidence for future interior; no heights or stairs.",
+      "localEvidence": "build/city-exteriors/mardi-gras-references/mardi-meeting-plan.pdf"
     }
   ],
   "uncertainDimensions": [
     "Heights, room pitch, roof profile, pool dimensions and service details estimated from photographs; OSM ground outlines authoritative only for mapped plan.",
-    "Public interior layout not established; no invented interior in this pass."
+    "Public interior layout not established; no invented interior in this pass.",
+    "Pavilion terrace fitted to top exterior corridor elevation6.26m; stair run12.4m including1.4m landing and1.8m width inferred from two oblique photos, not surveyed. Intermediate guest floor access still unresolved."
   ],
   "implemented": [
-    "Original three-storey guest-wing exterior with recessed room bays, exterior floor decks, iron rails, arches, continuous roof, entrance canopy, courtyard pavilion and pool/spa."
+    "Original three-storey guest-wing exterior with recessed room bays, exterior floor decks, iron rails, arches, continuous roof, entrance canopy, courtyard pavilion and pool/spa.",
+    "Photo-supported two-flight exposed stair, intermediate and upper landings, upper terrace and corridor rail openings, taller central pavilion and east glazing."
   ],
   "remaining": [
-    "Public interior remains unsupported by layout references.",
-    "Upper-floor stairs/access not yet reconstructed or walked; roof standing seams, sign typography, stone bases, courtyard greenery/fencing and surface detail still need refinement.",
-    "Pool dimensions and room rhythm inferred; courtyard pavilion east end remains plain. No photorealistic completion claim.",
-    "Current visual pass remains simplified: flat material treatment and large plain courtyard pavilion end walls. Pool animates at a fixed camera, but reference caustics, tile definition and furnishings remain more detailed."
+    "Meeting plan now supports pavilion partition/door layout; interior not built. Ceiling elevations and finishes need photo corroboration. Lobby/casino room layout remains schematic.",
+    "Middle-floor access still unlocated; exposed stair to upper terrace and corridor now built and walked. Roof standing seams, sign typography, stone bases, courtyard greenery/fencing and surface detail need refinement.",
+    "Pool dimensions and room rhythm inferred; pavilion materials and furnishing detail remain simplified. No photorealistic completion claim.",
+    "Water animates at a fixed camera; reference caustics, tile definition, lounger construction, planting and pavilion finish remain more detailed than this installed pass.",
+    "Reconcile stair riser count and pavilion/terrace elevation against clearer photographs before architectural acceptance: current6.26m elevation and12.4m stair run remain photo-fitted estimates, not confirmed by the schematic maps. Terrace soffit/edge thickness also needs refinement."
   ],
   "nextPass": {
     "priority": "Finish upper-floor circulation and reference-supported site detail before advancing",
-    "checkpoint": "Installed front/roof/courtyard and fixed-camera pool comparison inspected; sixteen revised walking segments pass. Claim338 retained and block active. Next research and implement upper-floor circulation."
+    "checkpoint": "Installed and reviewed stair/terrace pass; final coplanar landing correction baked and inspected.385clearances/30walkingsegments pass. Next reconcile terrace/stair elevation and middle-floor access; official dimensioned meeting plan supports later pavilion interior. Claim338 active."
   },
   "verification": {
-    "sourceTriangles": 271403,
-    "routeSamples": 295,
-    "actualWalkingSegments": 16,
+    "sourceTriangles": 284099,
+    "routeSamples": 385,
+    "actualWalkingSegments": 30,
     "installedViews": [
       "build/city-exteriors/mardi-gras-installed"
     ],
@@ -79,7 +112,12 @@
       "fixedCamera": true,
       "frameInterval": 180,
       "observed": "Ripple highlights visibly change at a fixed camera; animation confirmed, photorealism not established."
-    }
+    },
+    "optimizedExteriorMiB": 5.4,
+    "supplementalStairWalk": "build/city-exteriors/mardi-gras-stair-walk/results.json",
+    "visualLimitations": "Walk arrival faces a room wall; route success is physical movement evidence. A dedicated landing lookback is used for architectural inspection.",
+    "landingView": "build/city-exteriors/mardi-gras-landing/upper-landing-lookback.png",
+    "surfaceCorrection": "Removed coplanar terrace/landing overlap; final385clearances and installed lookback inspected. Prior30walkingsegments use identical walkable union."
   },
   "performance": {
     "baseline": "build/city-exteriors/mardi-gras-baseline/results.json",
@@ -100,23 +138,28 @@
     ],
     "afterMedianP95Ms": [
       [
-        16.5,
-        18.9
+        16.6,
+        19.3
       ],
       [
         16.6,
         18.7
       ],
       [
-        16.7,
-        17.5
+        16.6,
+        18.3
+      ],
+      [
+        16.5,
+        19.2
       ]
-    ]
+    ],
+    "notes": "First three positions match baseline; fourth is a supplemental stair view, not an A/B comparison."
   },
   "finalBuild": {
     "files": {
-      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin": "50949f7021d9d7a7a998d270dd3be404bfb27c535b0f1c8b989315842f594bc0",
-      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb": "22e7a0f02d20646f3c29663c6191065ff7b3a1fd7cebaf430084158b14e34bda"
+      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin": "251e2426d50db32deb1cd0fb517a2732c7f9b6a92cc4b26d4fadeeb51b132bec",
+      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb": "98b39e0d2127ee701f01adb01b67dc8ea4bec2e88323eb9cc9bd3c14a01fbe37"
     }
   }
 }

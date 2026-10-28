@@ -11,6 +11,10 @@ def glazing(F,u,y,v,w,h):
  for x in [u-w/2,u,u+w/2]:F.box('mg-frame',(x,y+h/2,v+.035),(.055,h+.08,.08))
  for yy in [y,y+h]:F.box('mg-frame',(u,yy,v+.035),(w,.055,.08))
 def edge(F,w):
+ # Open the top corridor guard only where the pavilion bridge meets it.
+ bridgeCuts=[]
+ if abs(F.co)>.99 and -1065<F.z<-1044:
+  ends=sorted([(1723.7-F.x)/F.co,(1726.2-F.x)/F.co]);bridgeCuts=ends
  for floor in range(3):
   y=.16+floor*3.05
   n=max(1,round(w/4.8));pitch=w/n
@@ -18,9 +22,15 @@ def edge(F,w):
    u=-w/2+(j+.5)*pitch
    glazing(F,u+.45,y+.55,-1.96,min(2.35,pitch*.48),1.65)
    F.box('mg-door',(u-pitch*.32,y+1.06,-1.94),(.85,2.12,.06));F.box('mg-brass',(u-pitch*.32+.3,y+1.03,-1.88),(.035,.17,.05))
-   F.box('mg-stucco',(u-pitch/2,y+1.5,-.02),(.23,3.0,.25),True)
+   if not (floor==2 and bridgeCuts and bridgeCuts[0]-.2<u-pitch/2<bridgeCuts[1]+.2):F.box('mg-stucco',(u-pitch/2,y+1.5,-.02),(.23,3.0,.25),True)
    if floor==2:F.arch(u,0,pitch-.25,y+2.9,'mg-stucco',.15,base=y+2.1)
-  if floor:rail(F,w,y)
+  if floor:
+   if floor==2 and bridgeCuts:
+    lo,hi=bridgeCuts
+    for a,b in [(-w/2,min(w/2,lo)),(max(-w/2,hi),w/2)]:
+     if b>a:
+      c=F.p((a+b)/2,0,0);rail(Frame(F.b,c[0],c[2],F.yaw,y=F.y),b-a,y)
+   else:rail(F,w,y)
   F.box('mg-trim',(0,y-.08,-.85),(w,.17,2.25),True)
 
 def build(B):
@@ -61,10 +71,37 @@ def build(B):
  for u in [-7,7]:
   W.box('mg-stone',(u,.35,3),(2.4,.7,3),True);W.box('mg-soil',(u,.72,3),(2.2,.06,2.8));W.bench(u,6,'mg-wood')
  # Separate low courtyard pavilion on its mapped outline.
- B.shell(q,.03,3.3,'mg-stucco',roof=False);B.planar('mg-roof',q,3.35)
+ B.shell(q,.03,6.1,'mg-stucco',roof=False);B.planar('mg-deck',q.difference(box(1724.9,-1050.05,1728.3,-1048.35)),6.26,True)
  for z,yaw in [(-1048.12,0),(-1059.7,math.pi)]:
   C=Frame(B,1709.85,z,yaw,y=0)
   for u in [-12,-8,-4,0,4,8,12]:glazing(C,u,.6,.09,2.7,2)
+ P=Frame(B,1725.72,-1054,math.pi/2,y=0)
+ for u in [-3.6,0,3.6]:glazing(P,u,.25,.08,3.1,2.45)
+ # Exposed two-flight stair and upper terrace: visible in two independent pool views.
+ # Placement/rise are fitted estimates; this does not invent an indoor stair core.
+ T=Frame(B,1727.3,-1062.4,0,y=.16)
+ T.stairs(0,0,1.8,3.05,5.5)
+ T.box('mg-deck',(0,3.05-.10,6.2),(1.8,.2,1.4),True)
+ T.stairs(0,6.9,1.8,3.05,5.5,y=3.05)
+ for side in [-1,1]:
+  for lo,hi,y0,y1 in [(0,5.5,0,3.05),(6.9,12.4,3.05,6.1)]:T.tube('mg-iron',(side*.87,y0-.08,lo),(side*.87,y1-.08,hi),.085,4)
+  T.tube('mg-iron',(side*.82,4.1,5.5),(side*.82,4.1,6.9),.045)
+  for zz in [5.5,6.9]:T.box('mg-iron',(side*.82,1.525,zz),(.12,3.05,.12),True)
+ # Terrace connectors land on the top exterior corridors, through matching rail gaps.
+ for z0,z1 in [(-1064.0,-1059.7),(-1048.1,-1045.5)]:
+  B.box('mg-deck',(1724.95,6.16,(z0+z1)/2),(2.5,.2,z1-z0),True)
+  for x in [1723.7,1726.2]:
+   G=Frame(B,x,(z0+z1)/2,math.pi/2,y=0);rail(G,z1-z0,6.26)
+ B.box('mg-deck',(1726.6,6.16,-1049.2),(3.4,.2,1.7),True)
+ for x,y,z in [(1728.2,0,-1048.35),(1728.2,0,-1050.05)]:
+  B.box('mg-iron',(x,3.08,z),(.12,6.16,.12),True)
+ rail(Frame(B,1726.95,-1048.35,0,y=0),2.5,6.26)
+ rail(Frame(B,1728.2,-1049.2,math.pi/2,y=0),1.7,6.26)
+ # Pavilion terrace perimeter rails stop at the stair and corridor connectors.
+ for z in [-1059.73,-1048.1]:
+  rail(Frame(B,1709.0,z,0,y=0),29.4,6.26)
+ rail(Frame(B,1694,-1053.9,math.pi/2,y=0),11.5,6.26)
+ rail(Frame(B,1725.67,-1055.4,math.pi/2,y=0),8.5,6.26)
  # Eastern pavilion is retained as a building, with a route passing its north side.
  east=footprint(IDS[3]);B.shell(east,.03,3.3,'mg-stucco',roof=False);B.planar('mg-roof',east,3.4)
  E=Frame(B,1785.98,-1055,-math.pi/2,y=0)
@@ -85,6 +122,7 @@ def build(B):
    F=Frame(B,float(x),z,0,y=0);F.box('mg-frame',(0,.32,0),(.65,.09,1.65));F.box('mg-blue',(0,.39,0),(.59,.07,1.55));F.box('mg-blue',(0,.64,-.64),(.59,.55,.09))
  # Ground-level continuous route along the eastern opening and both inner corridors.
  routes=[dict(name='West entrance approach',points=[W.p(2,.12,v) for v in [12,8,3,2]]+[W.p(0,.12,2)]),dict(name='Courtyard east and pool approach',points=[(1802,.12,-1048),(1797,.12,-1048),(1773,.12,-1048),(1773,.12,-1047),(1730,.12,-1047)])]
+ routes.append(dict(name='Pavilion exposed stair and upper terrace',points=[(1730,.16,-1062.4),(1727.3,.16,-1062.4),(1727.3,3.21,-1056.9),(1727.3,3.21,-1055.5),(1727.3,6.26,-1050),(1727.3,6.26,-1049.2),(1724.95,6.26,-1049.2),(1724.95,6.26,-1044.8)]))
  return dict(key=KEY,name='Mardi Gras Hotel & Casino',center=[1727,0,-1054],bounds=[1645,-1085,1802,-1021],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],hotelSources=[],routes=routes)
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')
