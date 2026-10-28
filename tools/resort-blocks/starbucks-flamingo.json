@@ -1,7 +1,7 @@
 {
   "id": "starbucks-flamingo",
   "name": "Starbucks 340 E Flamingo",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/308291919"
   ],
@@ -9,7 +9,8 @@
     "issue": 356,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/356",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/357"
   },
   "sources": [
     {
@@ -23,19 +24,38 @@
     {
       "url": "https://images1.showcase.com/d2/CVDpwhZGeY3jAGnTGCFvso5TyL5V75Pj_qcl0B8o9cc/document.pdf",
       "observed": "Siteplan lists340Starbucks2100sqft; not measured interior layout."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Starbucks+340+East+Flamingo+Road+Las+Vegas",
+      "observed": "Michael Sitompul Mar2026 photos actually inspected: CIABIhDERLMmiYtdDOctLztvFbQ5 shows entrance glazing/round wood tables/light bent wood chairs/gray floor; CIABIhDTZc9YFlXnCjDlee8n68_N shows small vertical white tiles, wood-framed menu boards and gray ceiling/white tracklights; Glass pastry and beverage display cooler photograph shows pale top/glass upper case and dark lower open shelves. Exact counter placement not established."
     }
   ],
-  "implemented": [],
+  "implemented": [
+    "Original 6026-triangle glazed storefront, fascia, signage, roof equipment and patio; fitted public cafe with tile backsplash, menus, espresso equipment, display case, tables and chairs.",
+    "43 owned placeholder/collision faces replaced; 9560 city groups and unrelated geometry preserved.",
+    "122 current-city static route samples and18 final actual walking segments passed.",
+    "Three exterior and three refined interior installed daylight views inspected. Chair-back supports and rear machine worktop corrected. Fresh722batch bake;1523packaged assets."
+  ],
   "uncertainDimensions": [
-    "Roof height/public room layout not established."
+    "Mapped6mheight estimated; room dimensions, counter position, patio extent and furniture counts inferred.",
+    "Wordmark and original COFFEE disk approximate signage without copying siren artwork."
   ],
   "remaining": [
-    "Inspect aerial, additional exterior and public interior references",
-    "Build original scoped exterior and supported public room",
-    "Install optimized assets and current bake, inspect actual views/walk routes and measure performance"
+    "Exact public floor plan, height, patio extent and furniture counts unverified; private/service rooms absent.",
+    "Facade and interior glazing look too pale; material contrast, glass reflections and daylight balance need refinement.",
+    "Menu graphics, espresso equipment, pastry display, chair shapes and furniture detail remain simplified.",
+    "Existing forecourt pavement differs from reference; landscaping, rear/service and roof detail need more evidence.",
+    "Signage uses an original COFFEE disk; siren artwork not copied. Photorealistic fidelity not achieved."
   ],
   "nextPass": {
-    "priority": "Reference review then baseline and original geometry",
-    "checkpoint": "Claim356confirmed; no geometry edits yet. Fogo3f2ade2pushed/PR355ready/claim354released."
+    "priority": "Refine recorded material, furniture and site fidelity",
+    "checkpoint": "Verified scoped pass; Fogo arrival correction next, issue354 reclaimed."
+  },
+  "evidence": {
+    "exterior": "build/city-exteriors/starbucks-flamingo-initial",
+    "interior": "build/city-exteriors/starbucks-flamingo-public-refined",
+    "walking": "build/city-exteriors/starbucks-flamingo-walk-refined/results.json",
+    "preservation": "build/city-exteriors/starbucks-flamingo-preservation.json",
+    "performance": "960x540 ultra baseline exterior median16.6\u201316.8ms/p9517.6\u201319ms; installed exterior16.7ms/p9517.8\u201318.1ms. Initial interior16.7\u201319.1ms/p9518.4\u201325.3ms; refined measurements pending. Refined interior median16.6\u201316.7ms,p9517.5\u201317.8ms. Not locked60fps."
   }
 }
