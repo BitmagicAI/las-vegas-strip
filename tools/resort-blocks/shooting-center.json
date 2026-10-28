@@ -1,0 +1,49 @@
+{
+  "id": "shooting-center",
+  "name": "5155 Dean Martin \u2014 Shooting Center / J&S Diesel",
+  "status": "active",
+  "mappedIds": [
+    "way/1126368790"
+  ],
+  "claim": {
+    "issue": 288,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/288",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://lasvegasshootingcenter.com/contact-us/",
+      "observed": "Official address5155DeanMartinDrSuite1."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Bby3Uz4krcUkCcQ2Z-Q8lA&heading=264&pitch=0",
+      "observed": "February2025eastfrontage:tanmasonry,steppedparapet/signband,terracottatiledcanopy,glazing,tenantbays andlowrange wing. Temporaryconstructionequipment excluded."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0959994,-115.182747,261m/data=!3m1!1e3",
+      "observed": "Aerial locates irregularstreetfrontbuilding southof225705143. Surveyname ismisleading; ownedway1126368790."
+    },
+    {
+      "url": "https://lasvegasshootingcenter.com/media/",
+      "observed": "Officialgallery available; fullpublicinteriorlayout notyetverified."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, exactbaywidths, canopydepth andtenantpartition inferred, notsurveyed.",
+    "Publicinteriorplan andrangeconnections unverified; no inventedlayout orfunctionalshootinggame."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Verify mappedoutline/height andsourcebaseline.",
+    "Build originalreference-supportedexterior, entrance andpublicapproach.",
+    "Targetedplaceholder/collisionreplacement withpreservationaudit.",
+    "Source/daylightinstalledreview, routechecks/actualwalk andmatchingperformance.",
+    "OptimizedGLBs/packeddata/currentcitybake andassetpackage.",
+    "Publiclobby onlywhenreference-supported;retainunknowninteriorlayout."
+  ],
+  "nextPass": {
+    "priority": "Create draftPR, capturebaseline, thenauthor actualsourcegeometry.",
+    "checkpoint": "Claim288verifiedjaniverse. No geometryeditsyet. Museum1204aec installedandverified, draft287updated. GoogleMaps reference tab35 retained."
+  }
+}
