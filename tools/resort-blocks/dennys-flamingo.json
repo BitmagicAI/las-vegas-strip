@@ -1,7 +1,7 @@
 {
   "id": "dennys-flamingo",
   "name": "Denny's \u2014 West Flamingo",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/1264703197"
   ],
@@ -9,7 +9,8 @@
     "issue": 320,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/320",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/321"
   },
   "sources": [
     {
@@ -25,13 +26,61 @@
     "Mapped footprint24x18m; heights, hidden sides/services estimated. Roof disk sign blurred; original letter treatment only. Interior unsupported and closed."
   ],
   "implemented": [
-    "Reference research only; no geometry edits."
+    "Original 3,837-triangle exterior source with butterfly frontage, red slatted tower, glazing/blinds, stone plinth, entrance, canopy, roof and estimated service fittings. Corrected source entrance/sign orientation; source exterior and roof inspected.",
+    "Targeted22face replacement with9560groups preserving vertices,metadata andretainedorder;11currentcityroute samples and4actualwalkingsegments pass.",
+    "Three installed daylight views and walking return visually inspected; optimized0.26MiB GLB,704batchcurrentbake,1463assets0missing;typecheck/publicchecks pass."
   ],
   "remaining": [
-    "Original complete exterior, source review, scoped install, optimized asset/current bake, installed views/walking/performance."
+    "Sign silhouette/typography, glazing/blind aliasing, plain side walls, inferred roof services and weathering need refinement.",
+    "Mapped frontage and existing generated roads/paving differ from photographed parking layout; roads preserved as required. Interior closed without reliable evidence."
   ],
   "nextPass": {
-    "priority": "Original exterior based on verified south frontage.",
-    "checkpoint": "Claim320 confirmed janiverse. Begin baseline and original exterior based on verified December2022 south frontage. Interior closed pending reliable evidence."
+    "priority": "Continue city coverage with claimed Chick-fil-A Flamingo322.",
+    "checkpoint": "Installed first pass inspected and walked. Fidelity refinements retained; no photorealistic completion claim."
+  },
+  "evidence": [
+    "build/city-exteriors/dennys-flamingo-source-review/exterior.png",
+    "build/city-exteriors/dennys-flamingo-source-review/roof.png",
+    "build/city-exteriors/dennys-flamingo-baseline/dennys-flamingo-roof.png",
+    "build/city-exteriors/dennys-flamingo-baseline/results.json",
+    "build/city-exteriors/dennys-flamingo-baseline/dennys-flamingo-southeast.png",
+    "build/city-exteriors/dennys-flamingo-baseline/dennys-flamingo-south-front.png",
+    "build/city-exteriors/dennys-flamingo-installed/dennys-flamingo-roof.png",
+    "build/city-exteriors/dennys-flamingo-installed/results.json",
+    "build/city-exteriors/dennys-flamingo-installed/dennys-flamingo-southeast.png",
+    "build/city-exteriors/dennys-flamingo-installed/dennys-flamingo-south-front.png",
+    "build/city-exteriors/dennys-flamingo-walk/results.json",
+    "build/city-exteriors/dennys-flamingo-walk/walk-return-0.png"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.8,
+        18.9
+      ],
+      [
+        16.6,
+        18.7
+      ],
+      [
+        16.7,
+        18
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.6,
+        19.2
+      ],
+      [
+        16.7,
+        19.2
+      ],
+      [
+        16.7,
+        18.4
+      ]
+    ],
+    "note": "960x540 ultra neutral daylight; matching cameras,sharedmachine"
   }
 }
