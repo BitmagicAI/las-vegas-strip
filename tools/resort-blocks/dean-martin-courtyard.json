@@ -9,7 +9,8 @@
     "issue": 294,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/294",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/295"
   },
   "sources": [
     {
@@ -34,7 +35,9 @@
   ],
   "nextPass": {
     "priority": "Baseline and original exterior using mapped east edge and mixedpanel frontage.",
-    "checkpoint": "Claim294 confirmedjaniverse. Lastverifiedruntime8f17b59. DraftPRrequired beforegeometryedits."
+    "checkpoint": "Claim294 verifiedjaniverse; draft295 attached. Three baselineviews captured and inspected; median/p95ms16.6/21,18.4/24.3,17.8/26. Mappedcorners(-923.394,2090.023),(-922.477,2169.906),(-899.663,2170.363),(-901.03,2090.023). Resume originalmodel/sourceinspection. No courtyardgeometrychanged. Lastverifiedruntime8f17b59; allprocessesfinished. Eastbaselinecamera corrected frominside neighboringmuseum to courtyardx=-890; replacementviewinspected."
   },
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/dean-martin-courtyard-baseline/results.json"
+  ]
 }
