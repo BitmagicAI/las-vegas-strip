@@ -39,6 +39,32 @@ def glazing(F,u,y,v,w,h):
  F.box('mg-glass',(u,y+h/2,v),(w,h,.055))
  for x in [u-w/2,u,u+w/2]:F.box('mg-frame',(x,y+h/2,v+.035),(.055,h+.08,.08))
  for yy in [y,y+h]:F.box('mg-frame',(u,yy,v+.035),(w,.055,.08))
+def roof_seams(B,p):
+ # Raised standing seams visible in the official front photograph. Pitch and
+ # rib section are fitted estimates. Follow the existing faceted roof exactly
+ # and stop where a neighbouring edge becomes the closest roof boundary.
+ coords=list(p.exterior.coords)
+ for a,b in zip(coords,coords[1:]):
+  dx,dz=b[0]-a[0],b[1]-a[1];length=math.hypot(dx,dz)
+  if length<.2:continue
+  nx,nz=-dz/length,dx/length
+  mx,mz=(a[0]+b[0])/2,(a[1]+b[1])/2
+  if not p.contains(Point(mx+nx*.1,mz+nz*.1)):nx,nz=-nx,-nz
+  for along in np.linspace(.12,length-.12,max(2,round(length/.62))):
+   x,z=a[0]+dx*along/length,a[1]+dz*along/length;pts=[]
+   if x>1663:continue # Garden reference shows shingles on long guest wings.
+   for k in range(13):
+    d=-.3+4.3*k/12;xx,zz=x+nx*d,z+nz*d
+    actual=p.boundary.distance(Point(xx,zz))*(1 if p.covers(Point(xx,zz)) else -1)
+    if abs(actual-d)>.035:break
+    pts.append((xx,9.2+2.3*math.sqrt(k/12)+.022,zz))
+   for s,t in zip(pts,pts[1:]):
+    # Two narrow slopes per rib; no hidden cylindrical tessellation.
+    for side in [-1,1]:
+     ox,oz=side*dx/length*.018,side*dz/length*.018
+     B.upface('mg-seam',[(s[0]+ox,s[1]-.012,s[2]+oz),(t[0]+ox,t[1]-.012,t[2]+oz),(t[0],t[1]+.025,t[2]),(s[0],s[1]+.025,s[2])])
+  # A continuous rolled lower edge gives the roof a readable thickness.
+  if max(a[0],b[0])<1663:B.tube('mg-seam',(a[0]-nx*.3,9.2,a[1]-nz*.3),(b[0]-nx*.3,9.2,b[1]-nz*.3),.045,8)
 def edge(F,w):
  # Open the top corridor guard only where the pavilion bridge meets it.
  bridgeCuts=[]
@@ -70,12 +96,15 @@ def build(B):
  for k in range(12):
   d0=-.3+4.3*k/12;d1=-.3+4.3*(k+1)/12
   ring=p.buffer(-d0,join_style=2).difference(p.buffer(-d1,join_style=2))
-  for poly in parts(ring):
-   for tri in triangles(poly):
-    pts=[]
-    for x,z in list(tri.exterior.coords)[:-1]:
-     dist=p.boundary.distance(Point(x,z))*(1 if p.covers(Point(x,z)) else -1);t=max(0,min(1,(dist+.3)/4.3));pts.append((x,9.2+2.3*math.sqrt(t),z))
-    B.upface('mg-copper',pts)
+  front=box(1600,-1200,1663,-900)
+  for mat,region in [('mg-copper',ring.intersection(front)),('mg-roof',ring.difference(front))]:
+   for poly in parts(region):
+    for tri in triangles(poly):
+     pts=[]
+     for x,z in list(tri.exterior.coords)[:-1]:
+      dist=p.boundary.distance(Point(x,z))*(1 if p.covers(Point(x,z)) else -1);t=max(0,min(1,(dist+.3)/4.3));pts.append((x,9.2+2.3*math.sqrt(t),z))
+     B.upface(mat,pts)
+ roof_seams(B,p)
  for y in [.16,3.21,6.26]:B.planar('mg-deck',p.difference(room),y,True)
  coords=list(p.exterior.coords)
  for a,b in zip(coords,coords[1:]):
@@ -94,7 +123,21 @@ def build(B):
  for u in [-7,-3.5,3.5,7]:
   W.tube('mg-iron',(u,3.4,5),(u,4,5),.025,8);W.box('mg-lantern',(u,3.22,5),(.26,.38,.26));W.box('mg-iron',(u,3.44,5),(.32,.07,.32))
  rail(Frame(B,*W.p(0,0,4.9)[::2],-math.pi/2,y=0),15.6,5.16)
- W.box('mg-copper',(0,10.1,.35),(20,2.4,.25));W.text('MARDI GRAS HOTEL',(0,10.1,.5),1.13,'mg-trim',back=True)
+ # Official close-up: the central sign face is a tall swept mansard rising
+ # from the canopy, not a rectangular billboard perched on the guest roof.
+ # Height/run and lettering remain photo-fitted, not surveyed dimensions.
+ profile=[(5.22+6.25*(1-math.sqrt(1-t)),4.85-4.5*t) for t in np.linspace(0,1,25)]
+ for (y0,v0),(y1,v1) in zip(profile,profile[1:]):
+  B.face('mg-copper',[W.p(-10,y0,v0),W.p(10,y0,v0),W.p(10,y1,v1),W.p(-10,y1,v1)])
+ for u in np.arange(-9.92,10,.62):
+  for (y0,v0),(y1,v1) in zip(profile,profile[1:]):
+   B.face('mg-seam',[W.p(u-.018,y0,v0+.012),W.p(u+.018,y0,v0+.012),W.p(u+.018,y1,v1+.012),W.p(u-.018,y1,v1+.012)])
+ for u in [-10,10]:
+  for (y0,v0),(y1,v1) in zip(profile,profile[1:]):
+   B.face('mg-copper',[W.p(u,y0,v0),W.p(u,y1,v1),W.p(u,y1,.25),W.p(u,y0,.25)])
+ for yy,vv in [profile[0],profile[-1]]:W.box('mg-seam',(0,yy,vv),(20,.065,.065))
+ # Mount on the near-vertical upper portion, clear of the curved sheet.
+ W.text('MARDI GRAS HOTEL',(0,10.15,.68),1.35,'mg-trim',back=True)
  W.box('mg-deck',(0,.02,6),(5,.2,13),True)
  glazing(W,0,.16,.18,2.6,2.7)
  for u in [-7,7]:
