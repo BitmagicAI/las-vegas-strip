@@ -1,0 +1,35 @@
+{
+  "id": "dean-martin-south-crossbar",
+  "name": "5115 southern courtyard crossbar",
+  "status": "active",
+  "mappedIds": [
+    "way/225705140"
+  ],
+  "claim": {
+    "issue": 302,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/302",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vaHpEwuK5aA_L5d7KS7_ew&heading=180&pitch=0",
+      "observed": "December 2022, camera 36.0960326,-115.1828732 heading 180: pale ribbed mansard, tan vertical siding, glazed tenant entrances, slim posts and broad masonry pier. Dated Complete Alignment sign. Parked vehicles obscure some frontage."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped corners (-922.027,2257.548),(-922.027,2271.252),(-854.933,2271.252),(-854.933,2258.005). Heights and tenant partitions estimated.",
+    "Current tenant occupancy and interior plan unverified."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Baseline, original source reconstruction and source inspection.",
+    "Targeted install, collision/preservation checks and optimized runtime package.",
+    "Actual installed daylight views, walking and matching performance."
+  ],
+  "nextPass": {
+    "priority": "Reconstruct north-facing courtyard frontage.",
+    "checkpoint": "Claim confirmed; source reference inspected. Baseline pending."
+  },
+  "evidence": []
+}
