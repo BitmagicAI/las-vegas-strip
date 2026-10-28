@@ -1,0 +1,51 @@
+{
+  "id": "lawrys-hughes",
+  "name": "Lawrys The Prime Rib Howard Hughes",
+  "status": "active",
+  "mappedIds": [
+    "way/896655229"
+  ],
+  "claim": {
+    "issue": 348,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/348",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.lawrysonline.com/lawrys-the-prime-rib-las-vegas/",
+      "observed": "Official4043HowardHughes address and ArtDeco character."
+    },
+    {
+      "url": "https://www.lawrysonline.com/lawrys-the-prime-rib-las-vegas/private-events/",
+      "observed": "Official room names/capacities and linked room tour. Capacities are not dimensions."
+    },
+    {
+      "url": "https://lawrys.merchantview360.com/#46300158p&271.14h&90t",
+      "observed": "Entrance panorama inspected: cream ribbed square piers, yellow-green glazed pyramidal canopy, silver horizontal entrance fascia/glazed doors, redpanel signpier, teal metalroofedges, pots and patterneddrive."
+    },
+    {
+      "url": "https://lawrys.merchantview360.com/#46300208p&274.11h&88.38t",
+      "observed": "Main dining panorama inspected: radial faceted ceiling recess with central bowl fixture, layered coffers, red booths, tall red chairs, white tablecloths, woodpanel walls, teal scalloped rearbanquettes and artwall. Original art only; full room placement not established."
+    },
+    {
+      "url": "https://lawrys.merchantview360.com/#46300165p&0.41h&90.42t",
+      "observed": "Bar panorama inspected: woodpanel walls/coffer ceiling and plankfloor, long oval communal table, rear straightbar with tallstools, mirrored bottleshelves, red leftbench/tealrightbench and smallroundtables. Exactroomplacement unknown."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped6mheight estimated; no surveyed canopy or room dimensions.",
+    "Tour establishes appearance and some connections, not full floorplan."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Aerial and exterior footprint fit",
+    "Original exterior/site geometry",
+    "Public entrance/dining layout using reference-supported connections",
+    "Scoped replacement, collision, installedviews, performance and packaging"
+  ],
+  "nextPass": {
+    "priority": "Capture baseline and map entrance/tour connections before authoring",
+    "checkpoint": "Claim348 confirmedjaniverse; no buildingedits yet. Scope waits for Buca verified commit and stackedbranch/draftPR."
+  }
+}

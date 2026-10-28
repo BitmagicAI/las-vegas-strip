@@ -1598,9 +1598,15 @@
     {
       "id": "buca-flamingo",
       "name": "Buca di Beppo Flamingo",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "buca-flamingo.json"
+    },
+    {
+      "id": "lawrys-hughes",
+      "name": "Lawrys The Prime Rib Howard Hughes",
+      "status": "active",
+      "record": "lawrys-hughes.json"
     }
   ],
-  "active": "buca-flamingo"
+  "active": "lawrys-hughes"
 }
