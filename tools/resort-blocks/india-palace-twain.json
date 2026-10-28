@@ -1,0 +1,39 @@
+{
+  "id": "india-palace-twain",
+  "name": "India Palace Twain",
+  "status": "active",
+  "mappedIds": [
+    "way/390003971"
+  ],
+  "claim": {
+    "issue": 334,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/334",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://visitindiapalacelv.com/story",
+      "observed": "Official facade photograph visually inspected: red tall right parapet, dark stacked stone portal, cream rod-suspended canopies, recessed entry and glazed right bay. Date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/place/India+Palace/@36.1212463,-115.151622,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgMDwmK2YvwE!2e10!3e12",
+      "observed": "Divij B, March2025 facade photograph, visually inspected. Matches official facade."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=SrgiSGv6w1L_5luy1F_z2g&heading=130&pitch=0",
+      "observed": "February2026 streetscape confirms building frontage and nearby FLEX."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped15.42x17.74m shell; facade heights, depths, roof/service details inferred. Public interior not evidenced yet, remains deferred."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Original exterior, scoped city replacement and installed daylight/walking/performance review."
+  ],
+  "nextPass": {
+    "priority": "Original exterior and recessed entrance",
+    "checkpoint": "Claim334 confirmed; no geometry yet."
+  }
+}

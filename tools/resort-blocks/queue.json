@@ -1554,7 +1554,13 @@
       "name": "Fun Hog Ranch",
       "status": "refinement-deferred",
       "record": "fun-hog-ranch.json"
+    },
+    {
+      "id": "india-palace-twain",
+      "name": "India Palace Twain",
+      "status": "active",
+      "record": "india-palace-twain.json"
     }
   ],
-  "active": "fun-hog-ranch"
+  "active": "india-palace-twain"
 }
