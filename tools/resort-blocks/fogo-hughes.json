@@ -1,0 +1,41 @@
+{
+  "id": "fogo-hughes",
+  "name": "Fogo de Chao Hughes Center",
+  "status": "active",
+  "mappedIds": [
+    "way/511850832"
+  ],
+  "claim": {
+    "issue": 354,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/354",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://fogodechao.com/location/las-vegas-hughes-center/",
+      "observed": "Official360EFlamingoRoad address and exteriorhero; stonewalls/angular entrance canopy."
+    },
+    {
+      "url": "https://fogodechao.com/group-dining/las-vegas/",
+      "observed": "Links room virtual tour scenes."
+    },
+    {
+      "url": "https://Fogo-De-Chao.vr-360-tour.com/e/ri8Blzxs6bs/e",
+      "observed": "Official linked tour; detailed scene inspection pending."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped6mheight estimated; public layout pending tour review."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Inspect exterior/roof/public room references",
+    "Build original scoped exterior and public interior",
+    "Install optimized assets/current city bake, verify routes, views and performance"
+  ],
+  "nextPass": {
+    "priority": "Research official tour then model",
+    "checkpoint": "Issue354claimed, no geometry edits; Fireflypassf0dd134pushed/PR353ready/claim352released."
+  }
+}

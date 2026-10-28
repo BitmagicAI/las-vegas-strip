@@ -1616,9 +1616,15 @@
     {
       "id": "firefly-hughes",
       "name": "Firefly Hughes Center",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "firefly-hughes.json"
+    },
+    {
+      "id": "fogo-hughes",
+      "name": "Fogo de Chao Hughes Center",
+      "status": "active",
+      "record": "fogo-hughes.json"
     }
   ],
-  "active": "firefly-hughes"
+  "active": "fogo-hughes"
 }
