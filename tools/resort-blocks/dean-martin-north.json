@@ -1,0 +1,45 @@
+{
+  "id": "dean-martin-north",
+  "name": "5115 north entrance / Benz Tek frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/225705144"
+  ],
+  "claim": {
+    "issue": 292,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/292",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://benztekproformance.com/",
+      "observed": "Official address5115 Dean Martin Suite901."
+    },
+    {
+      "url": "https://www.tripinktattoo.vegas/",
+      "observed": "Official address5115 Dean Martin."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dxW3kaN5_DQspl-a3T8OdA&heading=270&pitch=0",
+      "observed": "February2025 view: north entrance pale mansard, Benz Tek/tattoo signs, masonry street end and courtyard glazing. Closer inspection required."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights and tenant bay divisions unverified; survey name may be old."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Closer reference and baseline.",
+    "Original exterior geometry and source review.",
+    "Targeted installation, preservation audit and scoped checks.",
+    "Optimized assets, packed data and current city bake.",
+    "Installed views, actual walk and matching performance.",
+    "Interior only with adequate reference evidence."
+  ],
+  "nextPass": {
+    "priority": "Inspect closer frontage and capture baseline, then model after draft PR.",
+    "checkpoint": "Claim292 confirmed janiverse. Latest verified runtime6e4d198;689-batch bake;1423 assets. No north geometry edited."
+  },
+  "evidence": []
+}
