@@ -250,7 +250,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-dean-martin-5115` | M | P3 | 3 | Refine the exterior of 5115 Dean Martin east-front commercial building |
 | `ext-dean-martin-north` | M | P3 | 3 | Refine the exterior of 5115 north entrance / Benz Tek frontage |
 | `ext-dean-martin-courtyard` | M | P3 | 3 | Refine the exterior of 5115 central west courtyard frontage |
-| `ext-dean-martin-northwest` | M | P3 | 4 | Refine the exterior of 5115 north west courtyard frontage |
+| `ext-dean-martin-northwest` | M | P3 | 3 | Refine the exterior of 5115 north west courtyard frontage |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

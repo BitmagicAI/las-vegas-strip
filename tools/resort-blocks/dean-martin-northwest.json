@@ -1,7 +1,7 @@
 {
   "id": "dean-martin-northwest",
   "name": "5115 north west courtyard frontage",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/225705137"
   ],
@@ -20,20 +20,32 @@
   ],
   "uncertainDimensions": [
     "Mappedcorners[-924.303,2020.182],[-923.394,2081.352],[-900.571,2081.352],[-901.03,2021.094]. Heights/exacttenantdivisions estimated.",
-    "No verified publicinterior plan; ignoremisplacedmuseumphotos inautoservice listings."
+    "No verified publicinterior plan; ignoremisplacedmuseumphotos inautoservice listings.",
+    "Roof height 4.65 m, canopy underside 3.17 m and tenant bay spacing estimated. Rear service openings and roof plant inferred."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original mapped exterior, 15,164 triangles; ribbed pale mansard and siding, mixed glazed entrances, security bars, small benches and wall AC.",
+    "Source entrance and roof renders inspected; 10 owned shell/collision faces replaced. All 9,560 groups preserve vertices, metadata and retained face order.",
+    "176 scoped route samples pass; optimized GLB 0.38 MiB.",
+    "Three matching installed daylight views and actual walking return inspected; four movement segments along 52 m frontage passed.",
+    "692-batch bake current; 1429 runtime assets, none missing. Typecheck and record checks pass; public check has only existing contact-email warning."
+  ],
   "remaining": [
-    "Baseline andoriginalsource/renderreview.",
-    "Targetedreplacement/preservation/scopedroutes.",
-    "OptimizedGLB/packeddata/currentbake.",
-    "Installedviews/walking/performance."
+    "Exact tenant bay divisions/sign art and weathered surface detail; doors and glazing simplified.",
+    "Rear service and roof plant inferred; no verified interior plan.",
+    "Fine canopy/security-bar aliasing and roof surface repetition; existing surrounding paving is generic."
   ],
   "nextPass": {
-    "priority": "Build original exterior using mapped eastfrontage, referencegrilles andbenches; sourceinspect beforeinstall.",
-    "checkpoint": "Claim296confirmedjaniverse; draft297created/attached. Threebaselineviews inspected; median/p95ms16.7/19.9,17/27.3,17.2/26.9. No northwestgeometryedited. Lastverifiedruntime08191a5;691batches1427assets. Allownedprocessesfinished."
+    "priority": "Later reference-fidelity and material refinement; continue city expansion.",
+    "checkpoint": "Installed pass verified. Median/p95 ms 16.7/21.2,17.6/25.7,17/26 against baseline16.7/19.9,17/27.3,17.2/26.9. Shared machine measurements, not guaranteed60fps or photorealistic completion."
   },
   "evidence": [
-    "build/city-exteriors/dean-martin-northwest-baseline/results.json"
+    "build/city-exteriors/dean-martin-northwest-baseline/results.json",
+    "build/city-exteriors/dean-martin-northwest-source-review/entrance.png",
+    "build/city-exteriors/dean-martin-northwest-source-review/roof.png",
+    "build/city-exteriors/dean-martin-northwest-preservation.json",
+    "build/strip-landmarks/dean-martin-northwest-route-audit.json",
+    "build/city-exteriors/dean-martin-northwest-installed/results.json",
+    "build/city-exteriors/dean-martin-northwest-walk/results.json"
   ]
 }
