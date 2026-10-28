@@ -1,0 +1,37 @@
+{
+  "id": "chick-fil-a-flamingo",
+  "name": "Chick-fil-A \u2014 Flamingo & Valley View",
+  "status": "active",
+  "mappedIds": [
+    "way/1264703200"
+  ],
+  "claim": {
+    "issue": 322,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/322",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.chick-fil-a.com/locations/nv/flamingo-valley-view",
+      "observed": "Official address3841WFlamingo; Nevada location listing verified."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Chick-fil-A/@36.11512,-115.19113,18z/",
+      "observed": "PhotoCIABIhAhAZHxPsE4dicJip1qTYym,\u3082\u308a\u308a\u3093,Aug2025 visually inspected: tan brick panels, cream upper fascia, dark roof cap, central glass entrance3841, black shallow canopies, dark mullions, red square brand sign, side covered glazing, gravel and low shrubs."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint about12x32m. Heights, hidden services and exact landscape extent estimated. Public interior unsupported and closed."
+  ],
+  "implemented": [
+    "Reference research only."
+  ],
+  "remaining": [
+    "Original exterior, source review, scoped installation, optimized GLB/current bake, installed daylight/walking/performance."
+  ],
+  "nextPass": {
+    "priority": "Original exterior from verified Aug2025 frontage.",
+    "checkpoint": "Claim322 confirmedjaniverse. Denny installedpass7e3fa6d verified/pushed. Begin baseline and original exterior fromAug2025photo; no interior evidence. Reference tab54."
+  }
+}
