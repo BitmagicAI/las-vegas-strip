@@ -1,0 +1,35 @@
+{
+  "id": "tacos-mexico-sahara",
+  "name": "Tacos Mexico #2 \u2014 Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/907577008"
+  ],
+  "claim": {
+    "issue": 324,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/324",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6toXwoL2mXFsk_gcXh5ZKw&heading=0&pitch=0",
+      "observed": "Feb2025 south facade inspected at36.144509,-115.1916598. Folded W-profile light gray roof with red fascia, central peaked glazed entry, cream stone piers with red patches, side windows, red posts, red paved apron and pylon east. Supersedes inconsistent historical2014 listing photo; do not model historical fascia."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Tacos+Mexico/@36.1447029,-115.1916704,18z/",
+      "observed": "Vegas G Nov2025 photo CIABIhC8Fn8HKmv4RzPg-zk_8cEp (captureOct2025): red/cream checkerfloor, red booths, pale laminate tables, cream square tiled wainscot/red border, white upper walls and glass entry. Laura Daley Jul2024 photo CIHM0ogKEICAgIDbgPasKw: stainless diamond-faced ordering counter, red/white menu panels, serving opening and red upper band. Photos visually inspected; no pixels copied."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint about19x13m; roof heights/folds, exact room arrangement and hidden services estimated. Private kitchen remains closed."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Build reference-supported exterior and public dining room, source review, scoped replacement, optimized GLBs/current bake, installed exterior/interior views, walking/performance and package checks."
+  ],
+  "nextPass": {
+    "priority": "Original folded roof, stone/red entrance and small diner interior.",
+    "checkpoint": "Claim324 confirmed; reference research complete for initial geometry. No model edits yet. New Feb2025 StreetView supersedes old gallery exterior."
+  }
+}

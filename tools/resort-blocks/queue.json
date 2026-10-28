@@ -1524,7 +1524,13 @@
       "name": "Chick-fil-A \u2014 Flamingo & Valley View",
       "status": "refinement-deferred",
       "record": "chick-fil-a-flamingo.json"
+    },
+    {
+      "id": "tacos-mexico-sahara",
+      "name": "Tacos Mexico #2 \u2014 Sahara",
+      "status": "active",
+      "record": "tacos-mexico-sahara.json"
     }
   ],
-  "active": "chick-fil-a-flamingo"
+  "active": "tacos-mexico-sahara"
 }
