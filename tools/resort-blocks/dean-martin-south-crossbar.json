@@ -1,7 +1,7 @@
 {
   "id": "dean-martin-south-crossbar",
   "name": "5115 southern courtyard crossbar",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/225705140"
   ],
@@ -9,27 +9,77 @@
     "issue": 302,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/302",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/303"
   },
   "sources": [
     {
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vaHpEwuK5aA_L5d7KS7_ew&heading=180&pitch=0",
       "observed": "December 2022, camera 36.0960326,-115.1828732 heading 180: pale ribbed mansard, tan vertical siding, glazed tenant entrances, slim posts and broad masonry pier. Dated Complete Alignment sign. Parked vehicles obscure some frontage."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=QlK4M2aX6SbDAzjnMzv4xA&heading=180&pitch=0",
+      "observed": "Closer December 2022 view at 36.0959397,-115.1828704 confirms central masonry pier number3 and Complete Alignment plaque; inspected before modeling."
     }
   ],
   "uncertainDimensions": [
     "Mapped corners (-922.027,2257.548),(-922.027,2271.252),(-854.933,2271.252),(-854.933,2258.005). Heights and tenant partitions estimated.",
     "Current tenant occupancy and interior plan unverified."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original 18,546-triangle source: mapped north-facing shell, pale ribbed mansard, tan siding, glazed tenant bays and central masonry pier. Entrance and roof source views inspected; sign placement corrected.",
+    "Targeted removal of 10 owned shell/collision faces; all 9560 mesh groups preserve vertices, metadata and retained face order.",
+    "196 scoped clearance samples plus projecting-pier approach test and four actual walking segments pass. Three installed daylight views and walk-return inspected.",
+    "Corrected sign orientation visually verified in final installed close-up. Optimized GLB, packed data and current 695-batch bake;1435 runtime files, none missing. Typecheck and record validation pass."
+  ],
   "remaining": [
-    "Baseline, original source reconstruction and source inspection.",
-    "Targeted install, collision/preservation checks and optimized runtime package.",
-    "Actual installed daylight views, walking and matching performance."
+    "Exact bay divisions/sign graphics, weathering and glass remain simplified.",
+    "Hidden servicing and roof plant inferred; interior closed without verified plan.",
+    "Canopy aliasing, repeated roof detail and generic courtyard paving/landscaping remain."
   ],
   "nextPass": {
-    "priority": "Reconstruct north-facing courtyard frontage.",
-    "checkpoint": "Claim confirmed; source reference inspected. Baseline pending."
+    "priority": "Later fidelity refinement; continue city expansion.",
+    "checkpoint": "Installed pass verified, not photorealistic completion."
   },
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/dean-martin-south-crossbar-baseline/results.json",
+    "build/city-exteriors/dean-martin-south-crossbar-source-review/entrance.png",
+    "build/city-exteriors/dean-martin-south-crossbar-source-review/roof.png",
+    "build/city-exteriors/dean-martin-south-crossbar-preservation.json",
+    "build/strip-landmarks/dean-martin-south-crossbar-route-audit.json",
+    "build/city-exteriors/dean-martin-south-crossbar-installed/results.json",
+    "build/city-exteriors/dean-martin-south-crossbar-walk/results.json",
+    "build/city-exteriors/dean-martin-south-crossbar-final/dean-martin-south-crossbar-north-front.png"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        20.1,
+        28.3
+      ],
+      [
+        16.7,
+        20.7
+      ],
+      [
+        16.7,
+        21.3
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        17.4,
+        26
+      ],
+      [
+        16.7,
+        26.4
+      ],
+      [
+        16.8,
+        21.9
+      ]
+    ],
+    "note": "Matching 960x540 ultra views; shared machine; not a stable60fps guarantee."
+  }
 }

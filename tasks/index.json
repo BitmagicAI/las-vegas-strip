@@ -3410,7 +3410,7 @@
      "tools/strip-landmarks/export_dean_martin_crossbar.py",
      "tools/strip-landmarks/export_dean_martin_north.py",
      "tools/strip-landmarks/export_dean_martin_northwest.py",
-     "tools/strip-landmarks/export_dean_martin_southwest.py"
+     "tools/strip-landmarks/export_dean_martin_south_crossbar.py"
     ]
    },
    "acceptance": [
@@ -13321,9 +13321,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Baseline, original source reconstruction and source inspection.",
-    "Targeted install, collision/preservation checks and optimized runtime package.",
-    "Actual installed daylight views, walking and matching performance."
+    "Exact bay divisions/sign graphics, weathering and glass remain simplified.",
+    "Hidden servicing and roof plant inferred; interior closed without verified plan.",
+    "Canopy aliasing, repeated roof detail and generic courtyard paving/landscaping remain."
    ],
    "record": "tools/resort-blocks/dean-martin-south-crossbar.json",
    "buildings": [],
@@ -13335,7 +13335,14 @@
     "writes": [
      "tools/resort-blocks/dean-martin-south-crossbar.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_dean_martin_south_crossbar.py",
+     "tools/city-exteriors/install-dean-martin-south-crossbar.py",
+     "tools/strip-landmarks/test-dean-martin-south-crossbar.mjs",
+     "tools/city-exteriors/check-dean-martin-south-crossbar-preservation.py",
+     "tools/strip-landmarks/review_dean_martin_south_crossbar.py",
+     "tools/strip-landmarks/dean_martin_south_crossbar.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

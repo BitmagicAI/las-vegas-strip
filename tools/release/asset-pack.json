@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1433,
- "bytes": 1088655534,
+ "count": 1435,
+ "bytes": 1089168435,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19089358,
-   "sha256": "e0128a47942d0318362081821d328647fc7bc91e50405db7346ec0b0164cbfd4",
+   "bytes": 19111487,
+   "sha256": "8ae412f30c123f70d254da9243febb0175777fcf8561d3b3564f1ec53a8dffe2",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13061788,
-   "sha256": "7900cc07d907d445a4619c3421de837eda29b3b132c067e9334656777f5cfd83",
+   "bytes": 13062156,
+   "sha256": "4de93ddd2c20f595365210da24cd286cdc237c5c32980da65c9e1a456ce6c0b7",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109749336,
-   "sha256": "5478bb5e5472884b06707ef3b3940385463ce19e6fb0d5cc7ccaba5a1da2d08d",
+   "bytes": 109749124,
+   "sha256": "5e1ab0af61e24435b62132d31e9745c9f7062fee94510a1ceb35afeb82986153",
    "kind": "optimized"
   },
   {
@@ -6185,6 +6185,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/dean-martin-south-crossbar-exterior-collision.bin",
+   "bytes": 252,
+   "sha256": "810d08a5e316ac44d03bd24da15a31e5a8daefaf6f15713d319590a0cf439d11",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/dean-martin-south-crossbar-exterior.glb",
+   "bytes": 490116,
+   "sha256": "91eeceee48ab4193672d80e127c723a0d3cc9627d799ca2b752ba10df9ca1739",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/dean-martin-southwest-exterior-collision.bin",
    "bytes": 240,
    "sha256": "915d827867b2f284f1bf91e787400ec32851d9aa2697cb4d281ccfbb661790d6",
@@ -8418,8 +8430,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 353370,
-   "sha256": "7c9b798f98b248e401a2b77fc6d12040a7bfbe04ce453da7a97f8535db40549d",
+   "bytes": 353618,
+   "sha256": "9ed361735ffa30a46825458096c9208859fd26ac1d61b6722baef342e51e66d1",
    "kind": "original"
   },
   {
