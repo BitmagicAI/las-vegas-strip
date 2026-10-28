@@ -1,0 +1,36 @@
+{
+  "id": "dean-martin-northwest",
+  "name": "5115 north west courtyard frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/225705137"
+  ],
+  "claim": {
+    "issue": 296,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/296",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=o9ioNKRPHLGIBZOJ0BAHDg&heading=270&pitch=0",
+      "observed": "December2022 at36.0975533,-115.1828938: pale ribbedmansard/panels, slimposts, glazedentrances, securitygrilles onsomewindows, smallbenches. Datedtenantlabels includeLavichAutoLLC andautobrokers; currentoccupancyunverified."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mappedcorners[-924.303,2020.182],[-923.394,2081.352],[-900.571,2081.352],[-901.03,2021.094]. Heights/exacttenantdivisions estimated.",
+    "No verified publicinterior plan; ignoremisplacedmuseumphotos inautoservice listings."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Baseline andoriginalsource/renderreview.",
+    "Targetedreplacement/preservation/scopedroutes.",
+    "OptimizedGLB/packeddata/currentbake.",
+    "Installedviews/walking/performance."
+  ],
+  "nextPass": {
+    "priority": "Createearlydraft, capturebaseline, thenoriginalsource usingmappedfrontage.",
+    "checkpoint": "Claim296confirmedjaniverse. Lastverifiedruntime08191a5,691batches1427assets. No newgeometryedited."
+  },
+  "evidence": []
+}
