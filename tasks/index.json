@@ -3405,12 +3405,12 @@
      "tools/resort-blocks/martin.json"
     ],
     "builders": [
+     "tools/strip-landmarks/export_dean_martin_5115.py",
      "tools/strip-landmarks/export_inout_dean_martin.py",
      "tools/strip-landmarks/martin_exterior.py",
      "tools/strip-landmarks/test-inout-dean-martin.mjs",
-     "tools/city-exteriors/install-inout-dean-martin.py",
-     "tools/city-exteriors/test-martin.mjs",
-     "tools/highrises/catalog.py"
+     "tools/city-exteriors/install-dean-martin-5115.py",
+     "tools/city-exteriors/install-inout-dean-martin.py"
     ]
    },
    "acceptance": [
@@ -13071,12 +13071,11 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Verify road-facing reference and original mapped outline.",
-    "Author exterior after draft PR; preserve neighboring museum/Shooting Center and roads.",
-    "Targeted collision replacement, scoped checks, installed views, actual walking and matching performance.",
-    "Package optimized GLBs, packed data and current bake."
+    "Exact tenant bay divisions, sign artwork, landscaping and hidden service details remain simplified or inferred.",
+    "Interior is closed pending a reliable tenant plan.",
+    "Shared-machine performance measurements are descriptive; no guaranteed 60 fps or photorealistic completion claim."
    ],
    "record": "tools/resort-blocks/dean-martin-5115.json",
    "buildings": [],
@@ -13088,7 +13087,14 @@
     "writes": [
      "tools/resort-blocks/dean-martin-5115.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_dean_martin_5115.py",
+     "tools/city-exteriors/install-dean-martin-5115.py",
+     "tools/strip-landmarks/test-dean-martin-5115.mjs",
+     "tools/city-exteriors/check-dean-martin-5115-preservation.py",
+     "tools/strip-landmarks/review_dean_martin_5115.py",
+     "tools/strip-landmarks/dean_martin_5115.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

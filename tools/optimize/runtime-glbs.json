@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-28T02:10:30.657Z",
- "totalBytes": 3415370332,
- "count": 679,
+ "generated": "2026-10-28T02:49:56.933Z",
+ "totalBytes": 3417417388,
+ "count": 680,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 347145692,
+   "bytes": 347144324,
    "preset": "level",
    "overrides": []
   },
@@ -2277,6 +2277,15 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
    "bytes": 3380428,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/dean-martin-5115-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 2048424,
    "preset": "level",
    "overrides": []
   },

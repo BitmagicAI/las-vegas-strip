@@ -247,7 +247,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-motel6-stadium` | L | P3 | 7 | Refine the exterior of Motel 6 Las Vegas I-15 Stadium |
 | `ext-hollywood-cars-museum` | M | P3 | 5 | Refine the exterior of Hollywood Cars Museum warehouse |
 | `ext-shooting-center` | M | P3 | 4 | Refine the exterior of 5155 Dean Martin — Shooting Center / J&S Diesel |
-| `ext-dean-martin-5115` | M | P3 | 4 | Refine the exterior of 5115 Dean Martin east-front commercial building |
+| `ext-dean-martin-5115` | M | P3 | 3 | Refine the exterior of 5115 Dean Martin east-front commercial building |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors
