@@ -1,7 +1,7 @@
 {
   "id": "marianas-sahara",
   "name": "Mariana\u2019s Supermarkets \u2014 Sahara",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/764088498"
   ],
@@ -9,7 +9,8 @@
     "issue": 314,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/314",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/315"
   },
   "sources": [
     {
@@ -29,14 +30,62 @@
     "Mappedfootprint60x55m authoritative; heights, arch radii, wall thickness, hidden services estimated. No verified site-specific public interior layout."
   ],
   "implemented": [
-    "Claim314confirmed; Jan2025frontage and aerial visually inspected."
+    "Claim314confirmed; Jan2025frontage and aerial visually inspected.",
+    "Original8255triangle exterior with open extruded twin arches, recessed entry, keystones, layered cornices, tiled canopy and original signs. Source entrance/roof views visually inspected; revised central sign visibility.",
+    "Baseline3views visually inspected24.5/38.6,16.7/22,16.8/21.7ms median/p95.55currentcityclearance checks pass;99ownedvisual/collisionfaces removed;9560groupsretainvertices/metadata/order.",
+    "Installed0.51MiB optimizedexterior; three daylight views andwalkingreturn inspected; six actual walkingsegments pass. Current701batchbake,1453assets0missing; typecheck/publicchecks pass."
   ],
   "remaining": [
-    "Original exterior, source review, scoped replacement, runtime optimization, installed views/walking/performance pending.",
-    "Sign artwork/weathering/hiddenservices unverified; public interior excluded until sufficient evidence."
+    "Exact signage proportions and letterforms, broadside/servicewall finishes, roofplant positions, glazing/transparency and weathering remain simplified or inferred. No verified public interior; remains closed.",
+    "Front median31.2ms vs24.5baseline; wideviews17.1/16.9ms. Sharedmachine variation not isolated; stable60fps not achieved."
   ],
   "nextPass": {
     "priority": "Build complete mapped exterior with real recessed arches and entrance.",
-    "checkpoint": "Claimed; draftPR scope setup before geometry edits."
+    "checkpoint": "Installed first pass visually reviewed and walked. Continue next claimed MtEverest; retain fidelity/performance refinements."
+  },
+  "evidence": [
+    "build/city-exteriors/marianas-sahara-source-review/entrance.png",
+    "build/city-exteriors/marianas-sahara-source-review/roof.png",
+    "build/city-exteriors/marianas-sahara-baseline/marianas-sahara-roof.png",
+    "build/city-exteriors/marianas-sahara-baseline/results.json",
+    "build/city-exteriors/marianas-sahara-baseline/marianas-sahara-north-front.png",
+    "build/city-exteriors/marianas-sahara-baseline/marianas-sahara-northeast.png",
+    "build/city-exteriors/marianas-sahara-installed/marianas-sahara-roof.png",
+    "build/city-exteriors/marianas-sahara-installed/results.json",
+    "build/city-exteriors/marianas-sahara-installed/marianas-sahara-north-front.png",
+    "build/city-exteriors/marianas-sahara-installed/marianas-sahara-northeast.png",
+    "build/city-exteriors/marianas-sahara-walk/results.json",
+    "build/city-exteriors/marianas-sahara-walk/walk-return-0.png"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        24.5,
+        38.6
+      ],
+      [
+        16.7,
+        22
+      ],
+      [
+        16.8,
+        21.7
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        31.2,
+        37.6
+      ],
+      [
+        17.1,
+        29.9
+      ],
+      [
+        16.9,
+        27.2
+      ]
+    ],
+    "note": "960x540ultra neutraldaylight; sharedmachine, no60fpsclaim."
   }
 }

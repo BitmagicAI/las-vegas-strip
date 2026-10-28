@@ -2506,8 +2506,8 @@
      "tools/city-exteriors/test-sahara-arrival.mjs",
      "tools/city-exteriors/test-sahara.mjs",
      "tools/highrises/interiors.py",
-     "tools/city-exteriors/test-sahara-retail.mjs",
-     "tools/strip-landmarks/mcdonalds_sahara_canopy.py"
+     "tools/strip-landmarks/export_marianas_sahara.py",
+     "tools/city-exteriors/install-marianas-sahara.py"
     ]
    },
    "acceptance": [
@@ -13566,8 +13566,8 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
    "items": [
-    "Original exterior, source review, scoped replacement, runtime optimization, installed views/walking/performance pending.",
-    "Sign artwork/weathering/hiddenservices unverified; public interior excluded until sufficient evidence."
+    "Exact signage proportions and letterforms, broadside/servicewall finishes, roofplant positions, glazing/transparency and weathering remain simplified or inferred. No verified public interior; remains closed.",
+    "Front median31.2ms vs24.5baseline; wideviews17.1/16.9ms. Sharedmachine variation not isolated; stable60fps not achieved."
    ],
    "record": "tools/resort-blocks/marianas-sahara.json",
    "buildings": [],
@@ -13579,7 +13579,14 @@
     "writes": [
      "tools/resort-blocks/marianas-sahara.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_marianas_sahara.py",
+     "tools/city-exteriors/install-marianas-sahara.py",
+     "tools/strip-landmarks/test-marianas-sahara.mjs",
+     "tools/city-exteriors/check-marianas-sahara-preservation.py",
+     "tools/strip-landmarks/review_marianas_sahara.py",
+     "tools/strip-landmarks/marianas_sahara.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

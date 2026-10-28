@@ -1490,8 +1490,12 @@
     {
       "id": "marianas-sahara",
       "name": "Mariana\u2019s Supermarkets \u2014 Sahara",
-      "status": "active",
-      "record": "marianas-sahara.json"
+      "status": "refinement-deferred",
+      "record": "marianas-sahara.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Installed firstpassverified; fidelity/performance refinements retained while advancing citycoverage."
+      }
     }
   ],
   "active": "marianas-sahara"
