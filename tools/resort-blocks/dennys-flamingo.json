@@ -1,0 +1,37 @@
+{
+  "id": "dennys-flamingo",
+  "name": "Denny's \u2014 West Flamingo",
+  "status": "active",
+  "mappedIds": [
+    "way/1264703197"
+  ],
+  "claim": {
+    "issue": 320,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/320",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://locations.dennys.com/nv/las-vegas/249346",
+      "observed": "Official address3881 West Flamingo."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=knnCkS0vjVt65CquMfWBqg&heading=0&pitch=0",
+      "observed": "December2022 south frontage visually inspected: white inverted gable, rising red roof edges, tan trim, stone base, dark window mullions and pale blinds, left glass entrance3881, red slatted tower and canopy supports. Listing lead photo incorrectly shows neighboring Wahoo's and is excluded."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint24x18m; heights, hidden sides/services estimated. Roof disk sign blurred; original letter treatment only. Interior unsupported and closed."
+  ],
+  "implemented": [
+    "Reference research only; no geometry edits."
+  ],
+  "remaining": [
+    "Original complete exterior, source review, scoped install, optimized asset/current bake, installed views/walking/performance."
+  ],
+  "nextPass": {
+    "priority": "Original exterior based on verified south frontage.",
+    "checkpoint": "Claim320 confirmed janiverse. Begin baseline and original exterior based on verified December2022 south frontage. Interior closed pending reliable evidence."
+  }
+}
