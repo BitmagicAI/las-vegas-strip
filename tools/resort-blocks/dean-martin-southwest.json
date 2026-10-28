@@ -9,7 +9,8 @@
     "issue": 300,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/300",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/301"
   },
   "sources": [
     {
@@ -29,7 +30,9 @@
   ],
   "nextPass": {
     "priority": "Build mapped east-facing frontage and broad north masonry end.",
-    "checkpoint": "Claim300 confirmed janiverse; no southwest geometry edited. Last verified runtime a1cd930;693batches1431assets."
+    "checkpoint": "Claim300 confirmed janiverse, draft301 attached. Three baseline views inspected; median/p95ms16.6/21.9,20.1/28.5,16.6/21.1. No southwest geometry edited. Resume original source, source review, targeted install/audit, optimized assets/bake, installed walking/views/performance. Last verified runtime a1cd930;693batches1431assets. All owned processes finished."
   },
-  "evidence": []
+  "evidence": [
+    "build/city-exteriors/dean-martin-southwest-baseline/results.json"
+  ]
 }
