@@ -1430,7 +1430,13 @@
         "date": "2026-10-27",
         "reason": "Installed exterior pass verified; retain fidelity and interior discrepancies while continuing city expansion."
       }
+    },
+    {
+      "id": "dean-martin-crossbar",
+      "name": "5115 northern courtyard crossbar",
+      "status": "active",
+      "record": "dean-martin-crossbar.json"
     }
   ],
-  "active": "dean-martin-northwest"
+  "active": "dean-martin-crossbar"
 }

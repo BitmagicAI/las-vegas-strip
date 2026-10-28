@@ -1,0 +1,35 @@
+{
+  "id": "dean-martin-crossbar",
+  "name": "5115 northern courtyard crossbar",
+  "status": "active",
+  "mappedIds": [
+    "way/225705136"
+  ],
+  "claim": {
+    "issue": 298,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/298",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=zPC4JgH5FV3HGOXVzy9qxw&heading=0&pitch=0",
+      "observed": "December 2022, camera36.0978188,-115.1828904 heading0. Long pale ribbed mansard, broad light blockwork pier marked7, mixed glazed entries and opaque panels, thin posts. Trees and parked vehicles partly obscure frontage."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped corners(-926.587,1989.591),(-926.128,2002.37),(-852.658,2001.914),(-853.108,1988.222). Heights and precise bay divisions estimated.",
+    "No verified public interior plan."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Baseline, original exterior source and source inspection.",
+    "Targeted replacement, preservation audit, routes, optimized GLB, packed data/current bake.",
+    "Installed daylight views, actual walking and matching performance."
+  ],
+  "nextPass": {
+    "priority": "Reconstruct long south frontage with broad masonry pier, canopy and tenant windows.",
+    "checkpoint": "Claim298 confirmed janiverse. No crossbar geometry edited; last verified runtime f9918e7 (northwest)."
+  },
+  "evidence": []
+}
