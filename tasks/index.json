@@ -3406,11 +3406,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/export_dean_martin_5115.py",
+     "tools/strip-landmarks/export_dean_martin_courtyard.py",
      "tools/strip-landmarks/export_dean_martin_north.py",
      "tools/strip-landmarks/export_inout_dean_martin.py",
      "tools/strip-landmarks/martin_exterior.py",
-     "tools/strip-landmarks/test-inout-dean-martin.mjs",
-     "tools/city-exteriors/install-dean-martin-5115.py"
+     "tools/strip-landmarks/test-inout-dean-martin.mjs"
     ]
    },
    "acceptance": [
@@ -13153,12 +13153,11 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Matchingbaseline, sourcegeometry/renderinspection.",
-    "Targetedreplacement/preservation/scopedroutes.",
-    "OptimizedGLB/packeddata/currentbake.",
-    "Installeddaylightviews/walking/performance."
+    "Exact tenant bay divisions/sign art and weathered surface detail; current doors/glazing simplified.",
+    "Roofplant/rearservicepositions inferred; interiorclosedwithoutverifiedplan.",
+    "Canopyribaliasing atdistance; surroundingpaving remainsgeneric existingcitysurface."
    ],
    "record": "tools/resort-blocks/dean-martin-courtyard.json",
    "buildings": [],
@@ -13170,7 +13169,14 @@
     "writes": [
      "tools/resort-blocks/dean-martin-courtyard.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_dean_martin_courtyard.py",
+     "tools/city-exteriors/install-dean-martin-courtyard.py",
+     "tools/strip-landmarks/test-dean-martin-courtyard.mjs",
+     "tools/city-exteriors/check-dean-martin-courtyard-preservation.py",
+     "tools/strip-landmarks/review_dean_martin_courtyard.py",
+     "tools/strip-landmarks/dean_martin_courtyard.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

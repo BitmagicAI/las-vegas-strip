@@ -1414,8 +1414,12 @@
     {
       "id": "dean-martin-courtyard",
       "name": "5115 central west courtyard frontage",
-      "status": "active",
-      "record": "dean-martin-courtyard.json"
+      "status": "refinement-deferred",
+      "record": "dean-martin-courtyard.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Installedexteriorpassverified; retainfidelity/interiordiscrepancies andcontinuecityexpansion."
+      }
     }
   ],
   "active": "hollywood-cars-museum"
