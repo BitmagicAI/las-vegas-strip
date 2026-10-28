@@ -1456,9 +1456,15 @@
     {
       "id": "dean-martin-east",
       "name": "5115 east courtyard / NV Autopro frontage",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "dean-martin-east.json"
+    },
+    {
+      "id": "kung-fu-plaza",
+      "name": "Kung Fu Thai & Chinese Restaurant",
+      "status": "active",
+      "record": "kung-fu-plaza.json"
     }
   ],
-  "active": "dean-martin-east"
+  "active": "kung-fu-plaza"
 }

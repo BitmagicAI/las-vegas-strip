@@ -1,0 +1,50 @@
+{
+  "id": "kung-fu-plaza",
+  "name": "Kung Fu Thai & Chinese Restaurant",
+  "status": "active",
+  "mappedIds": [
+    "way/1391666928"
+  ],
+  "claim": {
+    "issue": 306,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/306",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://www.kungfuplaza.com/kungfu-plaza",
+      "observed": "Official address3505 S ValleyView and public dining/bar."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lQp0KLW8ViGOgGdxQRfYVQ&heading=270&pitch=0",
+      "observed": "January2026 east-facing entrance; curved blue tile roof, terracotta fascia and columns, glazing, planters. Taller north corner pavilion occupied by PowerSoul Cafe."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Kung+Fu+Thai+%26+Chinese+Restaurant/@36.126061,-115.1904716,18z/",
+      "observed": "Owner Nov2020 exterior photo CIHM0ogKEICAgIC6jP_EsQE; SarahLockhart Oct2026 dining photo CIABIhA0S1x7lq28sK09Px9LgoPg: burgundy booths/grid ceiling, cream beams, red spindle chairs, pale tables, brown carpet, bar at far end."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.126061,-115.1904716,173m/data=!3m1!1e3",
+      "observed": "Aerial footprint on west side of ValleyView, south of RenateDrive; roof plant and street-facing roof band."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped bounds[-1583.16,-1137.674,-1567.791,-1103.788]. Approx15x34m. Heights, precise roof curvature and tenant partition inferred.",
+    "Interior photo establishes furnishings/materials only; public dining/bar connection interpreted. Hidden kitchen/service and neighboring cafe interior excluded."
+  ],
+  "implemented": [
+    "Exterior, aerial and public dining references visually inspected; claim306 confirmed."
+  ],
+  "remaining": [
+    "Matching daylight baseline.",
+    "Original mapped exterior and public dining/bar interior with source review.",
+    "Targeted collision replacement, scoped route checks, optimized GLBs and current city bake.",
+    "Actual installed exterior/interior views, walking and matching performance."
+  ],
+  "nextPass": {
+    "priority": "Reference-supported restaurant exterior and public dining room.",
+    "checkpoint": "Claim confirmed; research complete. Baseline and original model pending."
+  },
+  "evidence": []
+}
