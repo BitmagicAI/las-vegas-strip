@@ -13048,7 +13048,11 @@
     "writes": [
      "tools/resort-blocks/shooting-center.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_shooting_center.py",
+     "tools/strip-landmarks/review_shooting_center.py",
+     "tools/strip-landmarks/shooting_center.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

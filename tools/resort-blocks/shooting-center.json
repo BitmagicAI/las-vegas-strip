@@ -9,7 +9,8 @@
     "issue": 288,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/288",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/289"
   },
   "sources": [
     {
@@ -33,7 +34,9 @@
     "Heights, exactbaywidths, canopydepth andtenantpartition inferred, notsurveyed.",
     "Publicinteriorplan andrangeconnections unverified; no inventedlayout orfunctionalshootinggame."
   ],
-  "implemented": [],
+  "implemented": [
+    "Uninstalled original6368triangle source draft: mapped irregularshell, eastparapet/signband, tiledcanopy, glazing/doors, masonrycourses androofequipment."
+  ],
   "remaining": [
     "Verify mappedoutline/height andsourcebaseline.",
     "Build originalreference-supportedexterior, entrance andpublicapproach.",
@@ -43,7 +46,67 @@
     "Publiclobby onlywhenreference-supported;retainunknowninteriorlayout."
   ],
   "nextPass": {
-    "priority": "Create draftPR, capturebaseline, thenauthor actualsourcegeometry.",
-    "checkpoint": "Claim288verifiedjaniverse. No geometryeditsyet. Museum1204aec installedandverified, draft287updated. GoogleMaps reference tab35 retained."
-  }
+    "priority": "Refine actualfrontage against February2025reference, addapproachroutes andscopedchecks, theninstall/verify.",
+    "checkpoint": "Source6368triangles exported and2rendersinspected;3baselineviewsinspected. No cityplaceholderremoved/no newruntimeassets. Museum1204aec remainslatestinstalledpass. Claim288assignedjaniverse,draft289attached. Allownedprocessesdone."
+  },
+  "evidence": [
+    {
+      "type": "baseline",
+      "path": "build/city-exteriors/shooting-center-baseline",
+      "viewsInspected": 3,
+      "performance": [
+        {
+          "name": "east-front",
+          "eye": [
+            -749,
+            3,
+            2240
+          ],
+          "target": [
+            -785,
+            3,
+            2232
+          ],
+          "p50": 16.699999928474426,
+          "p95": 19.799999952316284
+        },
+        {
+          "name": "southeast",
+          "eye": [
+            -757,
+            6,
+            2282
+          ],
+          "target": [
+            -794,
+            3,
+            2240
+          ],
+          "p50": 17.100000023841858,
+          "p95": 22.200000047683716
+        },
+        {
+          "name": "roof",
+          "eye": [
+            -738,
+            65,
+            2280
+          ],
+          "target": [
+            -794,
+            3,
+            2233
+          ],
+          "p50": 16.700000047683716,
+          "p95": 28
+        }
+      ]
+    },
+    {
+      "type": "source-review",
+      "path": "build/city-exteriors/shooting-center-source-review",
+      "viewsInspected": 2,
+      "note": "Sparse firstdraft. Roofandcanopy fitmappedoutline; facadebayrhythm, signplacements, blockjointpattern, canopyprofile/serviceentrances needcloserreferencepass beforeinstallation."
+    }
+  ]
 }
