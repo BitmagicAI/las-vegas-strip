@@ -77,34 +77,47 @@
     {
       "url": "https://mardigraslasvegas.com/wp-content/uploads/2024/07/mardi-gras-las-vegas-Buffet-room.jpg",
       "observed": "Official buffet photograph visually inspected: matching patterned carpet, beige walls/shutters, round pale tables, teal upholstered chairs and buffet carts. Exact placement within pavilion versus restaurant not established; do not merge layouts based on finishes alone."
+    },
+    {
+      "url": "https://www.tripadvisor.ca/Hotel_Review-g45963-d76091-Reviews-Mardi_Gras_Hotel_Casino-Las_Vegas_Nevada.html",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/4c/fb/4e/mardi-gras-hotel-casino.jpg?h=-1&s=1&w=1200",
+      "observed": "Garden photo visually inspected 2026-10-28: oval hedge/patio, white tables/chairs, turquoise parasols, lawn, curved paths and two mature broadleaf trees. Capture date unknown. Aerial inspected separately places garden east of pool before eastern pavilion; small service structure between pool/garden still absent from authored pass."
+    },
+    {
+      "url": "https://www.google.com/maps?ll=36.125493,-115.15446&z=19&t=k&cid=11806191755765158134",
+      "observed": "Overhead satellite view visually inspected 2026-10-28 with panel collapsed. Confirms pool then garden then eastern pavilion sequence, oval garden seating island and planted edges. Copyright2026 is not capture date."
     }
   ],
   "uncertainDimensions": [
     "Heights, room pitch, roof profile, pool dimensions and service details estimated from photographs; OSM ground outlines authoritative only for mapped plan.",
-    "Public interior layout not established; no invented interior in this pass.",
+    "Official dimensioned meeting plan supports pavilion partitions; lobby/casino circulation and ceiling elevations remain unconfirmed. No public interior implemented yet.",
     "Pavilion terrace fitted to top exterior corridor elevation6.26m; stair run12.4m including1.4m landing and1.8m width inferred from two oblique photos, not surveyed. Intermediate guest floor access still unresolved.",
-    "Pool enclosure line, 1.26m guard height, two openings and furniture spacing are fitted estimates. Official pool photograph supports black pickets and white-frame blue loungers, not exact measured positions."
+    "Pool enclosure line, 1.26m guard height, two openings and furniture spacing are fitted estimates. Official pool photograph supports black pickets and white-frame blue loungers, not exact measured positions.",
+    "Garden oval4.2x3.2m radii, hedge0.92m, paths1.9m and planting heights fitted within mapped courtyard; tree species, precise spacing and event furnishings not surveyed."
   ],
   "implemented": [
     "Original three-storey guest-wing exterior with recessed room bays, exterior floor decks, iron rails, arches, continuous roof, entrance canopy, courtyard pavilion and pool/spa.",
     "Photo-supported two-flight exposed stair, intermediate and upper landings, upper terrace and corridor rail openings, taller central pavilion and east glazing.",
-    "Original white tubular/sloped blue pool loungers, black picket enclosure with collision-only guards and open approaches; pavilion wall now meets terrace top without an open edge gap."
+    "Original white tubular/sloped blue pool loungers, black picket enclosure with collision-only guards and open approaches; pavilion wall now meets terrace top without an open edge gap.",
+    "Original oval courtyard garden with clipped hedge openings, paved public path, lawn, white seating/turquoise parasols and two branched leaf-mesh trees, fitted to aerial and garden photograph."
   ],
   "remaining": [
     "Meeting plan now supports pavilion partition/door layout; interior not built. Ceiling elevations and finishes need photo corroboration. Lobby/casino room layout remains schematic.",
     "Middle-floor access still unlocated; exposed stair to upper terrace and corridor now built and walked. Roof standing seams, sign typography, stone bases, courtyard greenery and surface detail need refinement.",
     "Pool dimensions and room rhythm inferred; pavilion materials and furnishing detail remain simplified. No photorealistic completion claim.",
     "Water animates at a fixed camera; reference caustics, tile definition, planting and pavilion finish remain more detailed than this installed pass.",
-    "Reconcile stair riser count and pavilion/terrace elevation against clearer photographs before architectural acceptance: current6.26m elevation and12.4m stair run remain photo-fitted estimates, not confirmed by the schematic maps. Terrace perimeter wall gap closed; underside and structural detail still simplified."
+    "Reconcile stair riser count and pavilion/terrace elevation against clearer photographs before architectural acceptance: current6.26m elevation and12.4m stair run remain photo-fitted estimates, not confirmed by the schematic maps. Terrace perimeter wall gap closed; underside and structural detail still simplified.",
+    "Garden service structure between pool and seating area is visible in references but not yet reconstructed; planting species/leaf detail and exact path curves remain approximations.",
+    "Garden lawn and foliage shading/leaf silhouettes remain simplified versus reference. Furniture placement and tree species are estimates."
   ],
   "nextPass": {
     "priority": "Finish upper-floor circulation and reference-supported site detail before advancing",
-    "checkpoint": "Final pool detail pass baked and visually reviewed,407clearances pass; all36actualwalkingsegments pass. New meeting-room finish photos and measured plan support a future public interior. Stair elevation/middle-floor access unresolved; claim338 active."
+    "checkpoint": "Garden installed and visually inspected;451clearances/42actualwalkingsegments pass;6.32MiB exterior/current713batchbake/1487assets. Supplemental stair600frame follow-up16.6/17.7ms; earlier29.2msp95 retained. Claim338 active. Next resolve upper-access/elevation, roof/sign detail and service structure; meeting interior still unbuilt."
   },
   "verification": {
-    "sourceTriangles": 308587,
-    "routeSamples": 407,
-    "actualWalkingSegments": 36,
+    "sourceTriangles": 333108,
+    "routeSamples": 451,
+    "actualWalkingSegments": 42,
     "installedViews": [
       "build/city-exteriors/mardi-gras-installed"
     ],
@@ -123,13 +136,15 @@
       "frameInterval": 180,
       "observed": "Ripple highlights visibly change at a fixed camera; animation confirmed, photorealism not established."
     },
-    "optimizedExteriorMiB": 5.81,
+    "optimizedExteriorMiB": 6.32,
     "supplementalStairWalk": "build/city-exteriors/mardi-gras-stair-walk/results.json",
     "visualLimitations": "Walk arrival faces a room wall; route success is physical movement evidence. A dedicated landing lookback is used for architectural inspection.",
     "landingView": "build/city-exteriors/mardi-gras-landing/upper-landing-lookback.png",
     "surfaceCorrection": "Removed coplanar terrace/landing overlap; final385clearances and installed lookback inspected. Prior30walkingsegments use identical walkable union.",
     "deckViews": "build/city-exteriors/mardi-gras-deck",
-    "deckReview": "Detail/gate images inspected before final south fence shift; final installed stair/roof images inspected after shift. Fence no longer crosses lounger backs. All36actualwalkingsegments pass, including pool gate and revised stair approach."
+    "deckReview": "Detail/gate images inspected before final south fence shift; final installed stair/roof images inspected after shift. Fence no longer crosses lounger backs. All36actualwalkingsegments pass, including pool gate and revised stair approach.",
+    "gardenViews": "build/city-exteriors/mardi-gras-garden",
+    "gardenReview": "Installed ground-level and corrected elevated views visually inspected; first elevated camera was behind corridor guard and replaced. Open hedge/path connections visible; foliage/lawn remain simplified."
   },
   "performance": {
     "baseline": "build/city-exteriors/mardi-gras-baseline/results.json",
@@ -150,28 +165,35 @@
     ],
     "afterMedianP95Ms": [
       [
-        16.7,
-        18.4
-      ],
-      [
-        16.7,
-        18.7
-      ],
-      [
-        16.7,
-        17.8
+        16.6,
+        18
       ],
       [
         16.6,
-        17.8
+        18.6
+      ],
+      [
+        16.7,
+        17.3
+      ],
+      [
+        16.8,
+        29.2
       ]
     ],
-    "notes": "First three positions match baseline; fourth is a supplemental stair view, not an A/B comparison."
+    "notes": "First three positions match baseline; fourth is a supplemental stair view, not an A/B comparison.",
+    "stairFollowup": {
+      "file": "build/city-exteriors/mardi-gras-stair-profile/results.json",
+      "samples": 600,
+      "medianMs": 16.6,
+      "p95Ms": 17.7,
+      "notes": "Same stair camera, isolated after walking and garden probes finished. Earlier180frame stair sample p95=29.2ms retained in afterMedianP95Ms; isolated repeat did not reproduce it. No geometry changes between samples."
+    }
   },
   "finalBuild": {
     "files": {
-      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin": "b753a3787e9627cf82a2c1eda3639a39461b06510f2a79e1945c205d7d742342",
-      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb": "b90e656a6f5cd8a95159564b1df1801d94c9b0e460147b7e750a47484a0dc976"
+      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin": "53c90142f5c4afd636604950e016b103edf3417c6394df1542df4befb61dba13",
+      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb": "0b3cd1f26c9793c2a389df6b107e36ddb5120b20111241e0645358c973555298"
     }
   },
   "meetingInteriorPlan": {

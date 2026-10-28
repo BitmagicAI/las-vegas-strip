@@ -1,5 +1,6 @@
 """Original mapped Mardi Gras exterior. Heights/room rhythm inferred; reference links in block record."""
 from common import *
+from mardi_gras_garden import build_garden
 KEY='mardi-gras';IDS=['way/33962963','way/33963206','way/1421907606','way/1421907607']
 def rail(F,w,y,v=0):
  for h in [.13,1.03]:F.box('mg-iron',(0,y+h,v),(w,.045,.055))
@@ -152,6 +153,7 @@ def build(B):
  for a,b in [((1729,-1062.5),(1770,-1062.5)),((1729,-1046.3),(1770,-1046.3)),((1770,-1062.5),(1770,-1055.2)),((1770,-1053.2),(1770,-1048.5))]:pool_fence(B,a,b)
  # Ground-level continuous route along the eastern opening and both inner corridors.
  routes=[dict(name='West entrance approach',points=[W.p(2,.12,v) for v in [12,8,3,2]]+[W.p(0,.12,2)]),dict(name='Courtyard east and pool approach',points=[(1802,.12,-1048),(1797,.12,-1048),(1773,.12,-1048),(1773,.12,-1047),(1730,.12,-1047)])]
+ routes.append(build_garden(B))
  routes.append(dict(name='Pool gate approach',points=[(1773,.12,-1054.2),(1770,.12,-1054.2),(1768,.12,-1054.2)]))
  routes.append(dict(name='Pavilion exposed stair and upper terrace',points=[(1730,.16,-1063.0),(1727.3,.16,-1063.0),(1727.3,.16,-1062.4),(1727.3,3.21,-1056.9),(1727.3,3.21,-1055.5),(1727.3,6.26,-1050),(1727.3,6.26,-1049.2),(1724.95,6.26,-1049.2),(1724.95,6.26,-1044.8)]))
  return dict(key=KEY,name='Mardi Gras Hotel & Casino',center=[1727,0,-1054],bounds=[1645,-1085,1802,-1021],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],hotelSources=[],routes=routes)

@@ -271,7 +271,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-fun-hog-ranch` | M | P3 | 3 | Refine the exterior of Fun Hog Ranch |
 | `ext-india-palace-twain` | M | P3 | 4 | Refine the exterior of India Palace Twain |
 | `ext-mcdonalds-paradise` | M | P3 | 4 | Refine the exterior of McDonalds Paradise Road |
-| `ext-mardi-gras` | M | P3 | 5 | Refine the exterior of Mardi Gras Hotel & Casino |
+| `ext-mardi-gras` | L | P3 | 7 | Refine the exterior of Mardi Gras Hotel & Casino |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors
