@@ -252,7 +252,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-dean-martin-courtyard` | M | P3 | 3 | Refine the exterior of 5115 central west courtyard frontage |
 | `ext-dean-martin-northwest` | M | P3 | 3 | Refine the exterior of 5115 north west courtyard frontage |
 | `ext-dean-martin-crossbar` | M | P3 | 4 | Refine the exterior of 5115 northern courtyard crossbar |
-| `ext-dean-martin-southwest` | M | P3 | 3 | Refine the exterior of 5115 south-west courtyard frontage |
+| `ext-dean-martin-southwest` | M | P3 | 4 | Refine the exterior of 5115 south-west courtyard frontage |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

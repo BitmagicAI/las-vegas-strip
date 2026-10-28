@@ -3410,7 +3410,7 @@
      "tools/strip-landmarks/export_dean_martin_crossbar.py",
      "tools/strip-landmarks/export_dean_martin_north.py",
      "tools/strip-landmarks/export_dean_martin_northwest.py",
-     "tools/strip-landmarks/export_inout_dean_martin.py"
+     "tools/strip-landmarks/export_dean_martin_southwest.py"
     ]
    },
    "acceptance": [
@@ -13277,11 +13277,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Baseline and original source with source inspection.",
-    "Targeted install/preservation/routes, optimized GLB/packed data/current bake.",
-    "Installed daylight views, actual walking and matching performance."
+    "Exact tenant bay divisions and sign artwork remain uncertain; plaques unlettered.",
+    "Glass, doors and weathering simplified; fine canopy aliasing and roof texture repetition remain.",
+    "Hidden services and roof plant inferred; interiors closed without verified plans.",
+    "Generic courtyard paving and landscaping need a separate reference-supported pass."
    ],
    "record": "tools/resort-blocks/dean-martin-southwest.json",
    "buildings": [],
@@ -13293,7 +13294,14 @@
     "writes": [
      "tools/resort-blocks/dean-martin-southwest.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_dean_martin_southwest.py",
+     "tools/city-exteriors/install-dean-martin-southwest.py",
+     "tools/strip-landmarks/test-dean-martin-southwest.mjs",
+     "tools/city-exteriors/check-dean-martin-southwest-preservation.py",
+     "tools/strip-landmarks/review_dean_martin_southwest.py",
+     "tools/strip-landmarks/dean_martin_southwest.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

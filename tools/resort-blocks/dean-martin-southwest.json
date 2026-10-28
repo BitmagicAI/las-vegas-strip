@@ -1,7 +1,7 @@
 {
   "id": "dean-martin-southwest",
   "name": "5115 south-west courtyard frontage",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/225705139"
   ],
@@ -22,17 +22,56 @@
     "Mapped bounds[-923.394,2178.578,-900.571,2240.205]. Heights, exact bays and hidden services estimated.",
     "No verified public interior plan."
   ],
-  "implemented": [],
+  "implemented": [
+    "Original18,368-triangle exterior: tan ribbed panels, pale mansard, narrow glazed entrances, wall/ground AC, broad north blockwork end marked4. Source entrance/roof inspected.",
+    "10 owned shell/collision faces removed; all9560 mesh groups preserve vertices, metadata and retained face order.179 scoped route samples pass.",
+    "Optimized 0.40 MiB GLB, packed collision and venues, current 694-batch city bake; 1433 runtime assets, none missing.",
+    "Three installed daylight views and walking return visually inspected; four actual walking segments and 179 scoped clearance samples pass. Projecting masonry pier collision checked."
+  ],
   "remaining": [
-    "Baseline and original source with source inspection.",
-    "Targeted install/preservation/routes, optimized GLB/packed data/current bake.",
-    "Installed daylight views, actual walking and matching performance."
+    "Exact tenant bay divisions and sign artwork remain uncertain; plaques unlettered.",
+    "Glass, doors and weathering simplified; fine canopy aliasing and roof texture repetition remain.",
+    "Hidden services and roof plant inferred; interiors closed without verified plans.",
+    "Generic courtyard paving and landscaping need a separate reference-supported pass."
   ],
   "nextPass": {
-    "priority": "Build mapped east-facing frontage and broad north masonry end.",
-    "checkpoint": "Claim300 confirmed janiverse, draft301 attached. Three baseline views inspected; median/p95ms16.6/21.9,20.1/28.5,16.6/21.1. No southwest geometry edited. Resume original source, source review, targeted install/audit, optimized assets/bake, installed walking/views/performance. Last verified runtime a1cd930;693batches1431assets. All owned processes finished."
+    "priority": "Refine documented fidelity gaps after city expansion.",
+    "checkpoint": "Installed pass verified; not photorealistic completion."
   },
   "evidence": [
-    "build/city-exteriors/dean-martin-southwest-baseline/results.json"
-  ]
+    "build/city-exteriors/dean-martin-southwest-baseline/results.json",
+    "build/city-exteriors/dean-martin-southwest-installed/results.json",
+    "build/city-exteriors/dean-martin-southwest-walk/results.json"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.6,
+        21.9
+      ],
+      [
+        20.1,
+        28.5
+      ],
+      [
+        16.6,
+        21.1
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.9,
+        22.3
+      ],
+      [
+        21.4,
+        28.2
+      ],
+      [
+        16.8,
+        21
+      ]
+    ],
+    "note": "Matching 960x540 ultra views on shared machine; no stable 60 fps claim."
+  }
 }
