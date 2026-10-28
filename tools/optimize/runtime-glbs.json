@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-28T06:35:09.702Z",
- "totalBytes": 3435979916,
- "count": 689,
+ "generated": "2026-10-28T07:01:56.741Z",
+ "totalBytes": 3437381132,
+ "count": 690,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 347139776,
+   "bytes": 347139236,
    "preset": "level",
    "overrides": []
   },
@@ -2367,6 +2367,15 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "streamed on approach",
    "bytes": 1349376,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/wahoos-flamingo-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 1401756,
    "preset": "level",
    "overrides": []
   },

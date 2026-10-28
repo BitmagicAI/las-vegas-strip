@@ -1,7 +1,7 @@
 {
   "id": "wahoos-flamingo",
   "name": "Wahoo\u2019s Fish Taco \u2014 Flamingo",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/1264703198"
   ],
@@ -9,7 +9,8 @@
     "issue": 308,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/308",
     "assignee": "janiverse",
-    "date": "2026-10-27"
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/309"
   },
   "sources": [
     {
@@ -25,14 +26,59 @@
     "Mapped footprint15.2x28.7m. Heights/awning slopes, obscured base and roof plant inferred. Post2022 signage changes unverified."
   ],
   "implemented": [
-    "Claim308 confirmed; official address and December2022 Street View inspected."
+    "Claim308 confirmed; official address and December2022 Street View inspected.",
+    "Original5786triangle source; entrance and roof renders visually inspected.83source route samples pass.",
+    "Three baseline views inspected;median/p95ms17/27.3,17.7/24.3,17.3/27.2.",
+    "Targeted10face replacement preserved9560meshgroups;83 current-city samples pass.OptimizedGLBabout0.5MB.698batchbakecurrent,1443runtimeassets0missing.",
+    "Three installed daylight views and walk return visually inspected.Four actual walking segments pass.Typecheck/public check pass(existing email warning only)."
   ],
   "remaining": [
-    "Baseline, original exterior source, source inspection, targeted replacement, optimized GLB/current bake, installed daylight/route/performance inspection.",
-    "Private interior excluded; unrelated roads preserved."
+    "Dated signage replaced with original plain lettering; window graphics, exact stucco weathering and metal sheen simplified.",
+    "West/south service elevations and roof plant inferred; private interior closed. Parking and surrounding roads unchanged.",
+    "Occasional slower frames:p95up to29.7ms at960x540ultra; no stable60fps guarantee."
   ],
   "nextPass": {
     "priority": "Original complete exterior and public entry approach.",
-    "checkpoint": "Claimed, references recorded; no geometry edits yet."
+    "checkpoint": "Installed pass verified; continue claimed Twain laundry310, retain fidelity gaps."
+  },
+  "evidence": [
+    "build/city-exteriors/wahoos-flamingo-source-review/entrance.png",
+    "build/city-exteriors/wahoos-flamingo-source-review/roof.png",
+    "build/city-exteriors/wahoos-flamingo-baseline/results.json",
+    "build/city-exteriors/wahoos-flamingo-installed/results.json",
+    "build/city-exteriors/wahoos-flamingo-walk/results.json",
+    "build/strip-landmarks/wahoos-flamingo-route-audit.json",
+    "build/city-exteriors/wahoos-flamingo-preservation.json"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        17,
+        27.3
+      ],
+      [
+        17.7,
+        24.3
+      ],
+      [
+        17.3,
+        27.2
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.8,
+        27.1
+      ],
+      [
+        16.9,
+        29.7
+      ],
+      [
+        16.8,
+        27.5
+      ]
+    ],
+    "note": "Matching960x540ultra daylight views;shared machine."
   }
 }

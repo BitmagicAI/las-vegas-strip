@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-10-27",
+ "revision": "2026-10-28",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-10-27.tar.gz",
+  "name": "las-vegas-strip-assets-2026-10-28.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
- "count": 1441,
- "bytes": 1091837566,
+ "count": 1443,
+ "bytes": 1092421932,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19187552,
-   "sha256": "e89072e928d225a1073b290324f9c29814c10e82f817dc00b60e34f84d47e983",
+   "bytes": 19214280,
+   "sha256": "f082f99d44d34567c6dd2c2f9cb4527c0e58e00a1f661ea8aa59e333b6b410d6",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13062184,
-   "sha256": "ab08c1c30bc903417824adb22bf589bf9ba0cf4a71e22cf1f3dcd9c97661a1bd",
+   "bytes": 13062204,
+   "sha256": "43022dd6bb3171d2a471117a56e5d0688d06f46824d1eaea004d09b626152239",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109748868,
-   "sha256": "41d3678c9c72e5ac57dc33dcaede2ead29786a0498204d3f8f6c769ad5d1e2fe",
+   "bytes": 109748736,
+   "sha256": "c440612ced8e1f953c28708f5598a37b2dc60e147ac5e70ea884a67569123b5b",
    "kind": "optimized"
   },
   {
@@ -8466,8 +8466,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 354836,
-   "sha256": "66424528619454783a8d85dbac126ae7aeab90c8acf0d654cc67bcae7fa83d1f",
+   "bytes": 355082,
+   "sha256": "3d37f702f82f394dfbccd935afb5704dc26f3159ff2bfefbb93149f4d19bdd51",
    "kind": "original"
   },
   {
@@ -8480,6 +8480,18 @@
    "path": "build/strip-landmarks/virginExterior-exterior.glb",
    "bytes": 328168,
    "sha256": "fcf88dd27d4c9c4179f14285963011a836ad0c72e02d489c1afa2773d48277b5",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/wahoos-flamingo-exterior-collision.bin",
+   "bytes": 292,
+   "sha256": "fcd34e5958219719c61e863fea7c52acfd17bc44ecaa1d50cdb536841a363748",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/wahoos-flamingo-exterior.glb",
+   "bytes": 557212,
+   "sha256": "296493aaad9a2e3a6ece54623c69af580bf2066a16896d21539c06284d47ed59",
    "kind": "optimized"
   },
   {
