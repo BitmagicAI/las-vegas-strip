@@ -1,0 +1,35 @@
+{
+  "id": "mcdonalds-paradise",
+  "name": "McDonalds Paradise Road",
+  "status": "active",
+  "mappedIds": [
+    "way/205499657"
+  ],
+  "claim": {
+    "issue": 336,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/336",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.mcdonalds.com/us/en-us/location/6926.html",
+      "observed": "Official3700SParadise address."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2SsztU7IU8Y3BQ6aE5QDLA&heading=323.6&pitch=0",
+      "observed": "Dec2022parkinglot panorama visually inspected: brownstucco, pale irregularmasonry entrance/westpanels, cream/yellowstriped canopy, aluminumglazing, thinwhitecap, roofbrow andhighpylon. Latest at thisposition; subsequentchangeunknown."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped29.66x13.87m shell; elevations and rear/services inferred. Publicinterior unsupported. Mapsfirstgalleryimage incorrectlydepictsBurgerKing andisexcluded."
+  ],
+  "implemented": [],
+  "remaining": [
+    "Original exterior, scopedreplacement and installedview/walking/performance verification."
+  ],
+  "nextPass": {
+    "priority": "Build exterior fromverifiedpanorama",
+    "checkpoint": "Claim336confirmed;no geometryyet."
+  }
+}
