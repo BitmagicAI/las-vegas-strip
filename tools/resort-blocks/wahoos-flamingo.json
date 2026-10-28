@@ -1,0 +1,38 @@
+{
+  "id": "wahoos-flamingo",
+  "name": "Wahoo\u2019s Fish Taco \u2014 Flamingo",
+  "status": "active",
+  "mappedIds": [
+    "way/1264703198"
+  ],
+  "claim": {
+    "issue": 308,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/308",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://wahooslv.com/location/flamingo-valley-view/",
+      "observed": "Official address3891WFlamingo; gallery depicts other branches, excluded as site-specific evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=niZbZZnXamxynH2Bx92Dkw&heading=270&pitch=0",
+      "observed": "December2022 east front: gray-green stucco,stone base,cream cornice,stepped raised entry parapet,twin blue hipped awnings,central twin doors3891,white vertical accents,red oval/vertical signs."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint15.2x28.7m. Heights/awning slopes, obscured base and roof plant inferred. Post2022 signage changes unverified."
+  ],
+  "implemented": [
+    "Claim308 confirmed; official address and December2022 Street View inspected."
+  ],
+  "remaining": [
+    "Baseline, original exterior source, source inspection, targeted replacement, optimized GLB/current bake, installed daylight/route/performance inspection.",
+    "Private interior excluded; unrelated roads preserved."
+  ],
+  "nextPass": {
+    "priority": "Original complete exterior and public entry approach.",
+    "checkpoint": "Claimed, references recorded; no geometry edits yet."
+  }
+}
