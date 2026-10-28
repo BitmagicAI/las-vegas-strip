@@ -3407,10 +3407,10 @@
     "builders": [
      "tools/strip-landmarks/export_dean_martin_5115.py",
      "tools/strip-landmarks/export_dean_martin_courtyard.py",
+     "tools/strip-landmarks/export_dean_martin_crossbar.py",
      "tools/strip-landmarks/export_dean_martin_north.py",
      "tools/strip-landmarks/export_dean_martin_northwest.py",
-     "tools/strip-landmarks/export_inout_dean_martin.py",
-     "tools/strip-landmarks/martin_exterior.py"
+     "tools/strip-landmarks/export_inout_dean_martin.py"
     ]
    },
    "acceptance": [
@@ -13235,11 +13235,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Baseline, original exterior source and source inspection.",
-    "Targeted replacement, preservation audit, routes, optimized GLB, packed data/current bake.",
-    "Installed daylight views, actual walking and matching performance."
+    "Exact tenant bays, signage and weathered finishes; doors/glass simplified.",
+    "Rear service and roof plant inferred; interior closed without verified plan.",
+    "Fine rib aliasing and roof texture repetition; generic surrounding paving.",
+    "Front review viewpoint below60fps both before and after; no stable60fps guarantee."
    ],
    "record": "tools/resort-blocks/dean-martin-crossbar.json",
    "buildings": [],
@@ -13251,7 +13252,14 @@
     "writes": [
      "tools/resort-blocks/dean-martin-crossbar.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/export_dean_martin_crossbar.py",
+     "tools/city-exteriors/install-dean-martin-crossbar.py",
+     "tools/strip-landmarks/test-dean-martin-crossbar.mjs",
+     "tools/city-exteriors/check-dean-martin-crossbar-preservation.py",
+     "tools/strip-landmarks/review_dean_martin_crossbar.py",
+     "tools/strip-landmarks/dean_martin_crossbar.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
