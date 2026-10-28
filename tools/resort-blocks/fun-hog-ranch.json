@@ -1,7 +1,7 @@
 {
   "id": "fun-hog-ranch",
   "name": "Fun Hog Ranch",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/390003973"
   ],
@@ -9,7 +9,8 @@
     "issue": 332,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/332",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/333"
   },
   "sources": [
     {
@@ -28,12 +29,93 @@
   "uncertainDimensions": [
     "Mapped 9.3 \u00d7 26.1 m shell: x1860\u20131869,z\u2212551 to \u2212525. Height, rear services and public room arrangement inferred; no floorplan."
   ],
-  "implemented": [],
+  "implemented": [
+    "Mapped olive board-and-batten shell, white trim, north entrance, raised sign panel and gooseneck lights, shallow east canopy and roof services.",
+    "Streamed public timber bar, service counter and shelves, stools, booths, pendants and original blank TV panels.",
+    "Ten owned shell/collision faces replaced; 9,560 city groups preserve vertices, metadata and retained face order."
+  ],
   "remaining": [
-    "Original exterior/public room; scoped replacement, current city bake and installed exterior/interior/walking/performance checks."
+    "Interior arrangement and elevations inferred from limited photographs, not a surveyed floorplan. Private rear remains closed.",
+    "Sign typography, repetitive wood grain, plain upholstery and floor, simplified bottle shapes, roof banding and bright ceiling pools need refinement.",
+    "Existing site paving retained; behind-bar service aisle not walked. This is a playable first pass, not photorealistic completion."
   ],
   "nextPass": {
-    "priority": "Build public timber bar within mapped shell.",
-    "checkpoint": "Claim332 confirmed. References inspected; no model edits. Previous verified FLEX08b7de1,709batches1477assets."
+    "priority": "Retain fidelity refinement; advance to next claimed building.",
+    "checkpoint": "Installed three daylight and four interior views plus walking return inspected; ten actual walking segments pass."
+  },
+  "verification": {
+    "sourceTriangles": 21336,
+    "furnitureVerticesInsideShell": 10056,
+    "routeSamples": 80,
+    "actualWalkingSegments": 10,
+    "installedViews": [
+      "build/city-exteriors/fun-hog-ranch-installed",
+      "build/city-exteriors/fun-hog-ranch-interior",
+      "build/city-exteriors/fun-hog-ranch-walk"
+    ],
+    "preservation": "build/city-exteriors/fun-hog-ranch-preservation.json",
+    "bakeBatches": 710,
+    "packagedAssets": 1481,
+    "missingAssets": 0,
+    "typecheck": "passed",
+    "publicCheck": "passed; existing inventory email warning"
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/fun-hog-ranch-baseline/results.json",
+    "after": "build/city-exteriors/fun-hog-ranch-installed/results.json",
+    "baselineMedianP95Ms": [
+      [
+        16.6,
+        18.8
+      ],
+      [
+        16.7,
+        18.2
+      ],
+      [
+        16.4,
+        18.7
+      ]
+    ],
+    "afterMedianP95Ms": [
+      [
+        16.6,
+        18.7
+      ],
+      [
+        16.8,
+        18.5
+      ],
+      [
+        16.7,
+        18.2
+      ]
+    ],
+    "interiorMedianP95Ms": [
+      [
+        16.5,
+        17.8
+      ],
+      [
+        16.8,
+        19.5
+      ],
+      [
+        16.6,
+        18.4
+      ],
+      [
+        16.5,
+        18.5
+      ]
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/fun-hog-ranch-exterior.glb": "0707e4a65487c5d7af576e1ee06206f1f3de07392e2cba041af5ab4310900e18",
+      "runtime-assets/strip-landmarks/fun-hog-ranch-interior-collision.bin": "1c3899aad6163508c3883296309184d9012edeca8e9f2ba82c7ef62477a54bf0",
+      "runtime-assets/strip-landmarks/fun-hog-ranch-interior.glb": "3e8c2c386d18dc25a848286fb955332f10858d951499aaf7c6cf7762cfe959b2",
+      "runtime-assets/strip-landmarks/fun-hog-ranch-exterior-collision.bin": "1fc05fdc4fc7f532bf9d53cbbfb15b99157852e9affdf8f18d88e34bb549436d"
+    }
   }
 }

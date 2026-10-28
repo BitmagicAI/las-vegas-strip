@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1477,
- "bytes": 1113793218,
+ "count": 1481,
+ "bytes": 1114407796,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19409660,
-   "sha256": "e54568aa3fccb86c8b0fc58e3f0b058e47d084a3b413a486b9059345b6f5511f",
+   "bytes": 19416382,
+   "sha256": "2fa62c9089732922f9fb1e29a02790303aad8d01fadeffbcaf54b787c1125995",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13060236,
-   "sha256": "313e4e2763445aacf02352b2dd2fafeaa96c5720f70fa5d24346e8d1ebec87bf",
+   "bytes": 13060344,
+   "sha256": "b6d4337f8e1433fbc602009ddd2fa35c98fc373d2aee6be9acbb30f4f15605d6",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109743952,
-   "sha256": "83cedd5e7b8f6e3c4833e32340ec2acc14275483a802cf42c93e7ceff321ef44",
+   "bytes": 109743904,
+   "sha256": "ee73c21beceea6a96e29653f2c579ab0a4737ce5381c41d839d66e94ac08ebbf",
    "kind": "optimized"
   },
   {
@@ -6581,6 +6581,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/fun-hog-ranch-exterior-collision.bin",
+   "bytes": 260,
+   "sha256": "1fc05fdc4fc7f532bf9d53cbbfb15b99157852e9affdf8f18d88e34bb549436d",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/fun-hog-ranch-exterior.glb",
+   "bytes": 162796,
+   "sha256": "0707e4a65487c5d7af576e1ee06206f1f3de07392e2cba041af5ab4310900e18",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/fun-hog-ranch-interior-collision.bin",
+   "bytes": 1040,
+   "sha256": "1c3899aad6163508c3883296309184d9012edeca8e9f2ba82c7ef62477a54bf0",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/fun-hog-ranch-interior.glb",
+   "bytes": 442764,
+   "sha256": "3e8c2c386d18dc25a848286fb955332f10858d951499aaf7c6cf7762cfe959b2",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/gipsy-exterior-collision.bin",
    "bytes": 568,
    "sha256": "1428f7881d6986784d7934fb296ec03c438a15bd3ebc8ca0920b968e5e781060",
@@ -8670,8 +8694,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 361764,
-   "sha256": "6a68fd189d0d12765e31bb92a07372f3b5d657553b50fa5919d4e2972f833d24",
+   "bytes": 362700,
+   "sha256": "0151cc5b36436786e4fe63ef8cd767c164db6d0cca68fe280f261c78de0cfee5",
    "kind": "original"
   },
   {

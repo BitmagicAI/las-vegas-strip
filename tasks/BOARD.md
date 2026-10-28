@@ -268,7 +268,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-tmobile-sahara` | M | P3 | 3 | Refine the exterior of T-Mobile Sahara & Valley View |
 | `ext-carls-jr-sahara` | M | P3 | 3 | Refine the exterior of Carl’s Jr. Sahara |
 | `ext-flex-twain` | M | P3 | 4 | Refine the exterior of FLEX Cocktail Lounge Twain |
-| `ext-fun-hog-ranch` | S | P3 | 1 | Refine the exterior of Fun Hog Ranch |
+| `ext-fun-hog-ranch` | M | P3 | 3 | Refine the exterior of Fun Hog Ranch |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

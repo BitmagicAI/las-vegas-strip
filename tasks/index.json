@@ -13934,12 +13934,14 @@
    "id": "ext-fun-hog-ranch",
    "title": "Refine the exterior of Fun Hog Ranch",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 1 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Original exterior/public room; scoped replacement, current city bake and installed exterior/interior/walking/performance checks."
+    "Interior arrangement and elevations inferred from limited photographs, not a surveyed floorplan. Private rear remains closed.",
+    "Sign typography, repetitive wood grain, plain upholstery and floor, simplified bottle shapes, roof banding and bright ceiling pools need refinement.",
+    "Existing site paving retained; behind-bar service aisle not walked. This is a playable first pass, not photorealistic completion."
    ],
    "record": "tools/resort-blocks/fun-hog-ranch.json",
    "buildings": [],
@@ -13949,9 +13951,20 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
+     "runtime-assets/strip-landmarks/fun-hog-ranch-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/fun-hog-ranch-exterior.glb",
+     "runtime-assets/strip-landmarks/fun-hog-ranch-interior-collision.bin",
+     "runtime-assets/strip-landmarks/fun-hog-ranch-interior.glb",
      "tools/resort-blocks/fun-hog-ranch.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-fun-hog-ranch.mjs",
+     "tools/strip-landmarks/export_fun_hog_ranch.py",
+     "tools/city-exteriors/install-fun-hog-ranch.py",
+     "tools/strip-landmarks/review_fun_hog_ranch.py",
+     "tools/city-exteriors/check-fun-hog-ranch-furniture.py",
+     "tools/city-exteriors/check-fun-hog-ranch-preservation.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
