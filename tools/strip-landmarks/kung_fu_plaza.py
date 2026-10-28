@@ -38,6 +38,13 @@ def build(B):
     F.tube('kf-tile-rib',(u,yy(v0)+.025,v0),(u,yy(v1)+.025,v1),.045,6)
   F.path('kf-cream',[(u,y+.58*(max(0,abs(u-(u0+u1)/2)-(u1-u0)/2+2)/2)**2,1.32) for u in np.linspace(u0,u1,55)],.09)
  roof(-17,8,4.68);roof(8,17,5.38)
+ # Small raised hip/crest behind the long restaurant eave, visible in January2026.
+ for a,b in [((-8,5.35,-3.7),(-4.5,6.25,-2.8)),((-4.5,6.25,-2.8),(-1,5.35,-3.7))]:
+  F.path('kf-tile-rib',[a,b],.09,10)
+ B.face('kf-terra',[F.p(-8,5.35,-3.7),F.p(-4.5,6.25,-2.8),F.p(-1,5.35,-3.7)])
+ for u0,u1,yy in [(-17,8,4.68),(8,17,5.38)]:
+  for u in [u0,u1]:
+   B.face('kf-tile',[F.p(u,yy+.58,1.32),F.p(u,yy+1.38,-3.8),F.p(u,4.48,-4.4)])
  for u in [8,17]:
   F.path('kf-cream',[(u,5.4,1.3),(u,5.55,1.55),(u,5.9,1.7),(u,6.15,1.62)],.14)
  for u in [-13,5,13]:
@@ -63,6 +70,20 @@ def build(B):
  for u in [-12,-4,4]:
   F.box('kf-cream',(u,3.18,-5.5),(.22,.35,10.7))
   for v in [-2,-9.7]:F.box('kf-cream',(u,1.75,v),(.25,3.2,.25),True)
+
+ # Inward-facing street glazing/reveals align with the exterior window groups.
+ for u in [-15,-9,4]:
+  F.box('kf-frame',(u,1.65,-.12),(3.2,2.4,.10))
+  F.box('kf-glass',(u,1.65,-.19),(3.04,2.22,.035))
+  for dx in [-.5,.5]:F.box('kf-frame',(u+dx,1.65,-.23),(.045,2.3,.04))
+  F.box('kf-cream',(u,.43,-.25),(3.35,.12,.32))
+ # Original geometric wall panels stand in for photographed framed decoration.
+ for u in [-13,-9,-1,4]:
+  F.box('kf-wood',(u,2.1,-10.7),(1.35,1.0,.10))
+  F.box('kf-gold',(u,2.1,-10.62),(1.17,.82,.04))
+  F.box('kf-burgundy',(u,2.1,-10.58),(1.02,.67,.025))
+  F.path('kf-gold',[(u-.35,1.9,-10.55),(u,2.36,-10.55),(u+.35,1.9,-10.55)],.025,8)
+ for u in [-16.4,7.35]:F.box('kf-wood',(u,.3,-5.5),(.08,.2,10.5))
  # Booths along the street-side wall leave the entrance and central aisle open.
  for u in [-14,-10,-6,3.5,6]:
   F.box('kf-wood',(u,.42,-.65),(1.85,.55,.8),True)
@@ -91,6 +112,6 @@ def build(B):
  for u in [-12,-4,4]:F.light(u,3.1,-5,power=65,range=13)
  # Zone points into the building (opposite the exterior frame).
  zone=dict(origin=F.p(-4.5,.16,0),yaw=YAW+math.pi,width=24,depth=10.8,height=3.4)
- return dict(key=KEY,name='Kung Fu Thai & Chinese Restaurant',center=[p.centroid.x,0,p.centroid.y],bounds=[p.bounds[0]-1,p.bounds[1]-1,p.bounds[2]+2.5,p.bounds[3]+1],structural=True,exteriorOnly=False,portals=[entry],zones=[zone],lights=B.lights,routes=[dict(name='Street to dining and bar',points=[F.p(u,.16,v) for u,v in [(-2,2),(-2,-1),(-2,-3.5),(-7,-3.5),(-7,-8.5)]])],hotelSources=[],views={})
+ return dict(key=KEY,name='Kung Fu Thai & Chinese Restaurant',center=[p.centroid.x,0,p.centroid.y],bounds=[p.bounds[0]-1,p.bounds[1]-1,p.bounds[2]+2.5,p.bounds[3]+1],structural=True,exteriorOnly=False,portals=[entry],zones=[zone],lights=B.lights,routes=[dict(name='Street to dining and bar',points=[F.p(u,.16,v) for u,v in [(-2,2),(-2,-1),(-2,-3.5),(-7,-3.5),(-7,-8.5)]])],hotelSources=[],views={name:dict(eye=F.p(*eye),target=F.p(*target)) for name,eye,target in [('entrance',(-2,1.8,3),(-2,1.8,-3)),('dining',(-2,1.8,-3.5),(-8,1.5,-6)),('booths',(-7,1.8,-4),(-9,1.5,-.5)),('bar',(-4,1.8,-6),(-5,1.5,-10))]})
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

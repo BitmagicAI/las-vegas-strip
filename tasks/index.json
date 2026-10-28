@@ -13403,9 +13403,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Continue source fidelity review: roof ridge/hip silhouette, sign panels, interior window reveals, booth visibility, wall decor and carpet/material detail.",
-    "Targeted collision replacement and surrounding-city route checks.",
-    "Optimized GLBs, packed data/current city bake; installed daylight exterior/interior views, walking and matching performance."
+    "Exact roof hip/ridge proportions and edge closure, sign artwork, glazing transparency and landscape fidelity remain simplified.",
+    "Public room dimensions/connections inferred; private service and cafe interior excluded. Original geometric decor substitutes for photographed art; carpet and wood patterns too regular.",
+    "Booth view median36.4/p9548.6ms; not a stable60fps result. Other interior median17.6–21.4ms. Further performance/fidelity work needed."
    ],
    "record": "tools/resort-blocks/kung-fu-plaza.json",
    "buildings": [],
@@ -13420,9 +13420,10 @@
     "builders": [
      "tools/strip-landmarks/export_kung_fu_plaza.py",
      "tools/strip-landmarks/test-kung-fu-plaza.mjs",
+     "tools/city-exteriors/install-kung-fu-plaza.py",
      "tools/strip-landmarks/review_kung_fu_plaza_interior.py",
-     "tools/strip-landmarks/review_kung_fu_plaza.py",
-     "tools/strip-landmarks/kung_fu_plaza.py"
+     "tools/city-exteriors/check-kung-fu-plaza-preservation.py",
+     "tools/strip-landmarks/review_kung_fu_plaza.py"
     ]
    },
    "acceptance": [
