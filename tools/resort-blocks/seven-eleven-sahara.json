@@ -1,0 +1,114 @@
+{
+  "id": "seven-eleven-sahara",
+  "name": "7-Eleven Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1018431818",
+    "way/943068966"
+  ],
+  "claim": {
+    "issue": 407,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/407",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/408"
+  },
+  "sources": [
+    {
+      "url": "https://www.7-eleven.com/locations/nv/las-vegas/2691-w-sahara-13690",
+      "accessed": "2026-10-29",
+      "observed": "Official address confirmation."
+    },
+    {
+      "url": "https://www.google.com/maps/search/7-Eleven+2691+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "provider": "K",
+      "imageDate": "September2026",
+      "photoId": "CIABIhCmqY5BzRG9gEUCD4GuJEx3",
+      "observed": "Personally inspected red/tan masonry, dark gray projecting storefront fascia, striped sign, glazed north entry, red tile base and bins."
+    },
+    {
+      "url": "https://www.google.com/maps/search/7-Eleven+2691+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "provider": "Kay",
+      "imageDate": "October2021",
+      "photoId": "CIHM0ogKEICAgID6u6vWWQ",
+      "observed": "Personally inspected pale square tile, drop ceiling, gray wood wall, refrigerated shelving, snacks, cream beverage counter and hot food glass case."
+    },
+    {
+      "url": "https://www.google.com/maps/search/7-Eleven+2691+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "provider": "Lorenzo Warfel",
+      "imageDate": "October2024",
+      "photoId": "CIHM0ogKEICAgICXouO2DA",
+      "observed": "Personally inspected gray pump portal, rounded white header, black display/keypad, hoses/nozzles and pump number8. Four double pumps inferred, unconfirmed."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1438177,-115.1772308,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected separate north fuel canopy, south flat roof shop with north entrance, western Teddy Drive approach."
+    }
+  ],
+  "uncertainDimensions": [
+    "Height and fixture placement inferred; no measured public floor plan.",
+    "2021 interior may differ today; pump count inferred from numbering."
+  ],
+  "components": [
+    {
+      "id": "store-exterior",
+      "status": "implemented"
+    },
+    {
+      "id": "fuel-canopy",
+      "status": "implemented"
+    },
+    {
+      "id": "public-shop",
+      "status": "implemented"
+    },
+    {
+      "id": "approach",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "Full site paving/parking and landscape, cell-palm tower and service elevations remain incomplete.",
+    "Public interior arrangement and elevations fitted; dated2021 interior may differ today. Four double pump stations inferred from number8, not surveyed.",
+    "Original generic merchandise, simplified branding/dispensers and flat materials need finer fidelity. Not photorealistic completion.",
+    "First interior p95 spikes25\u201333ms were not reproduced in repeat (18\u201319ms); machine workload variability not isolated. No locked60claim."
+  ],
+  "nextPass": {
+    "priority": "Full site and finer finish/fixture fidelity",
+    "checkpoint": "Seven final installed daylight views inspected,84static/22walking checks passed. Interior repeat recorded; packaging verified."
+  },
+  "implemented": [
+    "Original29044-triangle store/fuel canopy/public shop: narrowed glazed frontage, masonry wings, dark fascia, open fuel canopy and numbered pumps/hoses, public shop shelves, open refrigerated bank, beverage fittings and tiled ceiling/floor.",
+    "Targeted26ownedfaces/colliders replaced;9560groups preserved. No runtime source edits."
+  ],
+  "evidence": [
+    "build/city-exteriors/seven-eleven-sahara-baseline/results.json",
+    "build/city-exteriors/seven-eleven-sahara-final/results.json",
+    "build/city-exteriors/seven-eleven-sahara-inside-final/results.json",
+    "build/city-exteriors/seven-eleven-sahara-walk-final/results.json",
+    "build/city-exteriors/seven-eleven-sahara-preservation.json",
+    "build/city-exteriors/seven-eleven-sahara-pump-final/results.json",
+    "build/city-exteriors/seven-eleven-sahara-inside-repeat/results.json"
+  ],
+  "validation": {
+    "static": "84 current-city checks passed",
+    "walking": "22 final actualwalking segments passed including fuel lane",
+    "visual": "Seven final installed daylight views personally inspected including fuel dispenser close view.",
+    "packaging": "747-batch current bake,1603assets; type/Bitmagic/public checks passed (existing email warning only)."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra. Matching front/roof/canopy views; other-session workloads preserved.",
+    "summary": "Baseline median16.7/26.1/16.7,p9518.7/33.9/18.6ms; final16.7each,p9519/17.8/17.5ms. Interior16.8/16.7/17.3,p9532.8/25.3/32.4ms; repeat median16.4/16.6/16.4,p9518.9/18.3/19ms. Variability cause not isolated. No locked60claim."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/seven-eleven-sahara-exterior-collision.bin": "066c8c5c546a3fc20f0bb49bc4d136fc48a2ab7b69b0ecc01c7e9a967df97e79",
+      "runtime-assets/strip-landmarks/seven-eleven-sahara-exterior.glb": "faa4ae2bc6423300a1ad183bf46978c76b842efb76acae8e82411e21c491eaf0",
+      "runtime-assets/strip-landmarks/seven-eleven-sahara-interior-collision.bin": "f10391ed09a6bbadc4ae8f082a511bc1d1b24248370eef911336c96ed73c6348",
+      "runtime-assets/strip-landmarks/seven-eleven-sahara-interior.glb": "649462afd2aa2aca46e30537ddf253a810c3839e81462f18bfddbb2e40b79449"
+    }
+  }
+}
