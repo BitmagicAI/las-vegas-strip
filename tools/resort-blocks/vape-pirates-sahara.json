@@ -1,0 +1,75 @@
+{
+  "id": "vape-pirates-sahara",
+  "name": "Vape Pirates Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/943068961"
+  ],
+  "claim": {
+    "issue": 401,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/401"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Vape+Pirates+3013+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "imageDate": "May2026",
+      "provider": "Doug Jurist",
+      "photoId": "CIABIhDemnt4qySeVnVrGJxQ0gLW",
+      "observed": "Personally inspected gray stucco, tall ribbed gray parapet, outlined dark letters, horizontal barred window banks, central glazed entry, floodlights and concrete parking blocks."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Vape+Pirates+3013+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "imageDate": "August2026",
+      "provider": "Kurt Miguel Lenchico",
+      "photoId": "CIABIhCH3q3mfQPv4B99_eMLHyRl",
+      "observed": "Personally inspected public room with pale square tile, white ceiling/round recessed lights and cassette AC, black wall racks and illuminated glass display counters and islands."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Vape+Pirates+3013+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "imageDate": "October2026",
+      "provider": "Abhi Kalra",
+      "photoId": "CIABIhCxSDq0p_Zuf2SHJaz7zI--",
+      "observed": "Personally inspected black counter bases/glass shelves and corner display arrangement; original generic goods will replace photographed products/labels."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.14402,-115.18243,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected separate flat white-roof building west of MiRanchito, north/east parking, irregular east notch."
+    },
+    {
+      "url": "https://www.bbb.org/us/nv/las-vegas/profile/tobacco-store/vape-pirates-1086-90090668",
+      "accessed": "2026-10-29",
+      "observed": "Address3013WestSahara corroboration."
+    }
+  ],
+  "uncertainDimensions": [
+    "Elevations and shop layout fitted from photos; not a measured plan.",
+    "Side/rear service facade and precise cabinet arrangement remain uncertain."
+  ],
+  "components": [
+    {
+      "id": "storefront-roof",
+      "status": "planned"
+    },
+    {
+      "id": "public-shop",
+      "status": "planned"
+    },
+    {
+      "id": "public-approach",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build and inspect exterior/shop, validate routes/preservation/performance and package.",
+    "Retain fitted layout/fine-fidelity uncertainties and exclude private areas."
+  ],
+  "nextPass": {
+    "priority": "Reference-supported exterior/public shop",
+    "checkpoint": "401claim confirmed, no overlapping claim after398openissue scan;MiRanchito399released."
+  }
+}
