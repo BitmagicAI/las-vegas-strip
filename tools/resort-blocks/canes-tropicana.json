@@ -1,0 +1,67 @@
+{
+  "id": "canes-tropicana",
+  "name": "Raising Canes West Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/1126368782"
+  ],
+  "claim": {
+    "issue": 266,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/266",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/267"
+  },
+  "sources": [
+    {
+      "url": "https://locations.raisingcanes.com/nv/las-vegas/3535-west-tropicana-ave",
+      "observed": "Official address 3535 West Tropicana, C0439 and drive-through.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1007298,-115.1869875,3a,75y,123.63h,93.52t/data=!3m4!1e1!3m2!1s2K6gaKwuhLP0Y8eUxOyaQA!2e0",
+      "observed": "December 2022 site-specific Street View inspected: beige/grey stucco, rough stone plinth, raised entrance with cap, silver-framed door/window, dark sloping ribbed metal awning, shrubs and drive-through to west. Brand listing lead photo is different and must not drive geometry.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/place/Raising+Cane%27s+Chicken+Fingers/@36.1005389,-115.1868296,174m/data=!3m1!1e3",
+      "observed": "Aerial confirms narrow north-south building east of former Starbucks and west of McDonalds. Photo CIABIhDs24rdcrdBufP9yNP2jZDT by Alejandro Esqueda April 2026 shows red entrance panel, stone veneer and silver double doors; reconcile with older site view. Photo CIABIhDmW1zemmgkMOY_1Aw3S9mx by Mirza Daniyal Ahmad November 2025 shows black booths, brown tables, rough brick walls and white pendants; layout only partial. Lead brand photo CIHM0ogKEICAgIC1staMWA December 2023 differs materially from site panorama.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint approximately 281 square metres; heights and facade divisions require estimation.",
+    "Partial public dining photographs do not establish kitchen/private layout.",
+    "Use site-specific 2022 massing and awnings with newer red entry accent only; brand lead photo rejected. Interior is an inferred north dining room, not a surveyed floor plan.",
+    "Dining 12.29m wide by 13.38m deep, floor0.32m, ceiling3.65m; north entrance1.9m wide. Private south kitchen not authored."
+  ],
+  "implemented": [
+    "Original mapped shell with stone base, raised north entrance, metal window awnings and ribs, framed glazing, drive-through window, roof equipment and supported north/west frontage.",
+    "Public dining with black booths, wood tables, pendant shades, brick finish and ordering counter. Arrangement inferred from partial photographs; private southern rooms closed.",
+    "Only 19 owned visual and matching collision triangles replaced; exact retained-geometry audit passed."
+  ],
+  "remaining": [
+    "Exact sign typography, stone finish, facade divisions and full landscaping/drive-through furnishings remain approximate.",
+    "Public room layout inferred rather than surveyed; private kitchen, authentic mural/art and menu graphics not reproduced."
+  ],
+  "evidence": [
+    "build/city-exteriors/canes-tropicana-corrected",
+    "build/city-exteriors/canes-tropicana-walk/results.json",
+    "build/strip-landmarks/canes-tropicana-route-audit.json",
+    "build/city-exteriors/canes-tropicana-packaged"
+  ],
+  "verification": {
+    "sourceTriangles": 5600,
+    "scopedChecks": 204,
+    "actualWalkingSegments": 22,
+    "visualReview": "Four initial installed views inspected; corrected north, dining and counter views inspected after improving brick scale and register geometry. Final packaged north exterior and dining views inspected.",
+    "assetsPresent": 1391,
+    "assetsMissing": 0,
+    "bakeBatches": 677
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/canes-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/canes-tropicana-packaged/results.json",
+    "conditions": "960x540 ultra, neutral daylight, same four cameras,180frames. Baseline16.6\u201316.8ms median17.6\u201318.9ms p95. Packaged16.6\u201316.7ms median17.2\u201317.6ms p95. Earlier west spikes did not recur in final packaged run. Interior baseline was closed placeholder, not equivalent content."
+  }
+}
