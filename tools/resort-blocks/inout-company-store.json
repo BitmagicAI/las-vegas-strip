@@ -1,0 +1,98 @@
+{
+  "id": "inout-company-store",
+  "name": "In-N-Out Company Store",
+  "status": "active",
+  "mappedIds": [
+    "way/432534216",
+    "way/432534217"
+  ],
+  "claim": {
+    "issue": 260,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/260",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://shop.in-n-out.com/pages/retail-locations",
+      "accessDate": "2026-10-27",
+      "observed": "Official retail location4838DeanMartinDr; separate from restaurant4888."
+    },
+    {
+      "url": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/MH46OGs7ts.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Full-size location photograph inspected: cream flat parapet, round sign, three red fascia ribs, shaded silver mullioned glazing, adjacent white service door, concrete picnic table. Photo date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.10128,-115.18225,130m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Separate oblique store footprint north of restaurant, west/front canopy and roof equipment. Used as visual reference only."
+    }
+  ],
+  "uncertainDimensions": [
+    "Main mapped footprint1094.94m2; canopy75.87m2. Photo does not establish full interior or exact glazing divisions. Heights and fascia dimensions estimated.",
+    "Front glazing bay divisions, roof equipment positions and6m height estimated. No public interior or verified entrance route yet."
+  ],
+  "implemented": [
+    "Original mapped cream shell/parapet and separate west canopy, wraparound ribbed red fascia, shaded mullioned glazing, roof equipment and supported pedestrian apron.",
+    "Closed retail entrance framing and photographed white service-door treatment. Original lettered circular sign; no copied logo imagery."
+  ],
+  "remaining": [
+    "Rear/service facade, roof-equipment positions, precise heights and glazing divisions are estimated; need more location-specific reference views.",
+    "Public interior remains inaccessible pending location-specific interior evidence; entrance position and service-door placement are estimates.",
+    "Fine sign/glazing/material fidelity, photographed picnic furniture and full site landscaping remain unfinished. No photorealistic/full completion claim."
+  ],
+  "evidence": [
+    {
+      "path": "build/city-exteriors/inout-company-store-first",
+      "observed": "All three installed neutral daylight views inspected. Identified missing solid circular sign face and service/entrance door treatment; corrected in next pass. Rear still generic and explicitly unfinished.",
+      "reference": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/MH46OGs7ts.jpg"
+    },
+    {
+      "path": "build/city-exteriors/inout-company-store-corrected",
+      "observed": "Corrected south and west installed views inspected: service door and paired glazed entrance framing visible; circular sign now has solid face. Rear unchanged from inspected first view.",
+      "reference": "https://cdn10.localdatacdn.com/nv/las-vegas/155734/original/MH46OGs7ts.jpg"
+    },
+    {
+      "path": "build/city-exteriors/inout-company-store-final",
+      "observed": "Final packaged south capture inspected unchanged; three matching cameras measured after bake."
+    }
+  ],
+  "validation": {
+    "scoped": {
+      "checks": 124,
+      "failures": 0
+    },
+    "walking": {
+      "passed": true,
+      "path": "build/city-exteriors/inout-company-store-walk/results.json",
+      "segments": 8
+    },
+    "performance": {
+      "resolution": "960x540 ultra",
+      "frames": 180,
+      "baseline": "build/city-exteriors/inout-company-store-before/results.json",
+      "first": "build/city-exteriors/inout-company-store-first/results.json",
+      "baselineP50Ms": "16.7",
+      "baselineP95Ms": "19.0\u201319.2",
+      "firstP50Ms": "16.6\u201316.7",
+      "firstP95Ms": "18.5\u201319.1",
+      "corrected": "build/city-exteriors/inout-company-store-corrected/results.json",
+      "note": "Final independent fresh-bake repeat. South p95 remains21.0 versus19.1 baseline (~10%); retain variability, no locked60fps guarantee.",
+      "final": "build/city-exteriors/inout-company-store-final/results.json",
+      "finalP50Ms": "16.7\u201316.8",
+      "finalP95Ms": "18.4\u201321.0"
+    },
+    "ownership": {
+      "removedTriangles": 28,
+      "removedCollisionTriangles": 28,
+      "retainedGeometry": "Exact group properties/vertices equality and retained-face subset checked against pre-edit snapshot; no other geometry changed."
+    },
+    "package": {
+      "assetsPresent": 1381,
+      "assetsMissing": 0,
+      "bakeCurrent": true,
+      "batches": 674
+    }
+  }
+}

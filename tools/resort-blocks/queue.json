@@ -1258,9 +1258,15 @@
     {
       "id": "inout-dean-martin",
       "name": "In-N-Out Burger Dean Martin Drive",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "inout-dean-martin.json"
+    },
+    {
+      "id": "inout-company-store",
+      "name": "In-N-Out Company Store",
+      "status": "active",
+      "record": "inout-company-store.json"
     }
   ],
-  "active": "inout-dean-martin"
+  "active": "inout-company-store"
 }
