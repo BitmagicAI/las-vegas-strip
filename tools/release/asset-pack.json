@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1605,
- "bytes": 1159529329,
+ "count": 1607,
+ "bytes": 1160060648,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20079971,
-   "sha256": "996bac2d1e93402968391ba2ffcf44e7b9d641bd255ea0d6dc534c2c91fd707b",
+   "bytes": 20091718,
+   "sha256": "bd01c03e03d327eae9474bf2808559161dcf046286341a88efcc7489dfebb639",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13049796,
-   "sha256": "1b98da93ab7775e6d2184f8da1e0e257eebb7c6be63eea305c4986bf13202e6a",
+   "bytes": 13049068,
+   "sha256": "6f51207e9dda044df79d52a610aa5b3ba46be3b0041f830be5eee4c5480a81a3",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109702296,
-   "sha256": "f406533f5288697cf5dae182d52945620a5d8f2638d7f3f1d1b3733e89c25997",
+   "bytes": 109700880,
+   "sha256": "78e00cecb3a6e97c23e9fc0512514fb268ff08649d678bce67db3b2f0b7db82e",
    "kind": "optimized"
   },
   {
@@ -8513,6 +8513,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/rancho-2320-exterior-collision.bin",
+   "bytes": 3464,
+   "sha256": "2f932218c743d4829603bf1bd94e6cf6d5b8a3fa771ee37a7d7ce793c80298cb",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/rancho-2320-exterior.glb",
+   "bytes": 517988,
+   "sha256": "ed1940cc2d8834d589e29fc788abd7f90dd2c2743cbd1aac292aa15f357cb8d6",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/residenceInnHughes-exterior-collision.bin",
    "bytes": 632,
    "sha256": "3d729fbe2316f8a31ba6fe8e36e43508b30c0341cc7f2715b2e9dd9257a568c5",
@@ -9426,8 +9438,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 385184,
-   "sha256": "6366569c48917856cbc918eb85efc7a9fd2c10df5bc17a9ee5c2ffde9aef7aa0",
+   "bytes": 385448,
+   "sha256": "7adc6f9957177ff801d17961049208d715f67f1f81088f5417cefb48d1f85686",
    "kind": "original"
   },
   {

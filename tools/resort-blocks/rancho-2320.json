@@ -1,14 +1,15 @@
 {
   "id": "rancho-2320",
   "name": "2320 South Rancho offices",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/384612530"
   ],
   "claim": {
     "issue": 411,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/411"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/411",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/412"
   },
   "sources": [
     {
@@ -35,27 +36,54 @@
   "components": [
     {
       "id": "facades-roof",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "entry-recesses",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "balcony-rails",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "approach-landscape",
-      "status": "planned"
+      "status": "implemented"
     }
   ],
   "remaining": [
-    "Build/install/inspect exterior and approaches, verify routes/performance/package.",
-    "Private interiors and exact site/finish fidelity not established."
+    "Full site paving, parking, palms and upper balcony circulation remain incomplete.",
+    "Unseen elevations and dimensions inferred from imagery, not surveyed.",
+    "Private interiors are unverified and excluded.",
+    "Fine finishes, detailed ramp geometry and facade fidelity need a further pass; not photorealistic completion."
   ],
   "nextPass": {
-    "priority": "Exterior and public approaches",
-    "checkpoint": "411claim confirmed after408openissue/PRscan;409 released after63359a4push."
+    "priority": "Full site, upper circulation and finer finishes",
+    "checkpoint": "Installed and visually inspected; scoped checks and actual walking passed. Packaged current bake."
+  },
+  "implemented": [
+    "Original 13,205-triangle exterior with recessed glazing, paired piers, balcony rails, entrance approach, desert planting and roof equipment.",
+    "Replaced 160 owned faces and matching colliders; preserved 9,560 city groups. No runtime source changes."
+  ],
+  "validation": {
+    "static": "147 current-city checks passed",
+    "walking": "14 actual segments passed, west entry and south perimeter",
+    "visual": "Three final installed daylight views personally inspected; corrected south window/pier overlaps verified.",
+    "packaging": "749-batch current bake, 1607 assets. Type/Bitmagic/public checks passed; existing email warning only."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra, same west/roof/south views",
+    "summary": "Baseline medians16.7/16.7/16.8ms,p9519.2/19.8/18.9; final16.8/16.7/16.6,p9519.2/19.1/18.5ms. No locked60claim."
+  },
+  "evidence": [
+    "build/city-exteriors/rancho-2320-baseline/results.json",
+    "build/city-exteriors/rancho-2320-final/results.json",
+    "build/city-exteriors/rancho-2320-walk-final/results.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/rancho-2320-exterior-collision.bin": "2f932218c743d4829603bf1bd94e6cf6d5b8a3fa771ee37a7d7ce793c80298cb",
+      "runtime-assets/strip-landmarks/rancho-2320-exterior.glb": "ed1940cc2d8834d589e29fc788abd7f90dd2c2743cbd1aac292aa15f357cb8d6"
+    }
   }
 }
