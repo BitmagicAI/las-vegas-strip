@@ -1,7 +1,7 @@
 {
   "id": "double-down-saloon",
   "name": "Double Down Saloon",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/966155068"
   ],
@@ -63,7 +63,7 @@
     "Add closer reference-supported exterior detail and improve original interior collage/material fidelity before claiming this building fully complete."
   ],
   "ownership": "No matching ID or Double Down generator found in existing blocks/builders; runtime building index still contains the mapped default. Existing Paradise Road task185 has distinct IDs well north of this site.",
-  "statusNote": "First exterior/public bar pass installed and visually inspected;59 scoped samples and8 actual walking segments passed. Current city bake and1345 packaged runtime assets verified. Active refinement remains; not photorealistic completion.",
+  "statusNote": "Installed exterior/public bar and original paper-material refinement verified; further fidelity polish deferred while city expansion continues. Not photorealistic completion.",
   "implemented": [
     "Original mapped shell, west green curved fascia/brick arches, north sign and four palms, east shingled porch and walkable threshold.",
     "Separate streamed public bar study with stools, bottles, shelves, refrigerator, stage corner and original paper-collage materials; fixed pooled lights."
@@ -103,5 +103,6 @@
     "build/city-exteriors/doubleDown-ownership-audit.json",
     "build/city-exteriors/double-down-west/results.json",
     "build/city-exteriors/double-down-paper-refined/results.json"
-  ]
+  ],
+  "buildNotes": "Generate original paper atlases with python3 tools/strip-landmarks/double_down_paper.py (Pillow>=10.1), then run export_double_down.py through vi_blender.sh. Packed maps use original procedural marks and bundled Pillow default-font rendering."
 }

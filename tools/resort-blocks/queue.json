@@ -1182,9 +1182,15 @@
     {
       "id": "double-down-saloon",
       "name": "Double Down Saloon",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "double-down-saloon.json"
+    },
+    {
+      "id": "grove-university",
+      "name": "The Grove / Society retail frontage",
+      "status": "active",
+      "record": "grove-university.json"
     }
   ],
-  "active": "double-down-saloon"
+  "active": "grove-university"
 }
