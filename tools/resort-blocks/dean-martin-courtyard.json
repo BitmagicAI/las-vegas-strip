@@ -1,0 +1,56 @@
+{
+  "id": "dean-martin-courtyard",
+  "name": "5115 central west courtyard frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/225705138"
+  ],
+  "claim": {
+    "issue": 294,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/294",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/295"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GxSBHnSyOvfqRy94BOpHwQ&heading=270&pitch=0",
+      "observed": "December2022 courtyard: continuous pale ribbed mansard, thin posts, mixed vertical panels and glazed tenant entries, masonry ends. Panorama36.0968372,-115.1828011 faces west."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0969,-115.1832,300m/data=!3m1!1e3",
+      "observed": "Aerialalignment of long north-south building west of museum/northentrance. PrimeTimeAutoRepair listing belongs to adjacent north block; do not reuse its misplaced museum photos."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint[-923.394,2090.023,-899.663,2170.363]. Heights/precisetenantpartitions unverified.",
+    "No confirmed publicinterior plan.",
+    "Estimated roofheight4.65m, canopyunderside3.17m; repeatedbaypositions approximate the photograph.",
+    "Rearserviceopenings/roofplant are restrainedinferences; no currenttenantidentity claimed."
+  ],
+  "implemented": [
+    "Original mapped exterior:17612triangles; pale ribbed mansard, thinposts, mixedopaque/glazedfrontage, masonryendwalls, estimatedrearservice/roofplant.",
+    "Only10ownedplaceholder/collisionfacesremoved;9560meshgroups retainvertices/metadata/retainedfaceorder.",
+    "242scopedroutechecks pass with currentcitycollision; sourcerenders inspected.",
+    "Optimized0.43MiBGLB, packeddata,691batchcurrentbake,1427runtimeassets0missing.",
+    "Fouractualwalkingsegments passed; threematchingdaylightviews andwalkreturn inspected."
+  ],
+  "remaining": [
+    "Exact tenant bay divisions/sign art and weathered surface detail; current doors/glazing simplified.",
+    "Roofplant/rearservicepositions inferred; interiorclosedwithoutverifiedplan.",
+    "Canopyribaliasing atdistance; surroundingpaving remainsgeneric existingcitysurface."
+  ],
+  "nextPass": {
+    "priority": "Laterreferencefidelity/materialpolish; advancecitywork.",
+    "checkpoint": "Installedpassverified.17612triangles;242scopedchecks and4actualwalksegments pass.691batchbake current;1427assets0missing. Matchingmedian/p95ms16.6/20.6,17.1/26.6,17/22.7 vsbaseline16.6/21,18.4/24.3,17.8/26. Notphotorealistic/stable60fpsclaim."
+  },
+  "evidence": [
+    "build/city-exteriors/dean-martin-courtyard-baseline/results.json",
+    "build/city-exteriors/dean-martin-courtyard-source-review/entrance.png",
+    "build/city-exteriors/dean-martin-courtyard-source-review/roof.png",
+    "build/city-exteriors/dean-martin-courtyard-preservation.json",
+    "build/strip-landmarks/dean-martin-courtyard-route-audit.json",
+    "build/city-exteriors/dean-martin-courtyard-installed/results.json",
+    "build/city-exteriors/dean-martin-courtyard-walk/results.json"
+  ]
+}
