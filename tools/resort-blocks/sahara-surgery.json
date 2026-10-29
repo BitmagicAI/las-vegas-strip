@@ -1,0 +1,62 @@
+{
+  "id": "sahara-surgery",
+  "name": "Sahara Surgery Center",
+  "status": "active",
+  "mappedIds": [
+    "way/1062820474"
+  ],
+  "claim": {
+    "issue": 415,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/415"
+  },
+  "sources": [
+    {
+      "url": "https://saharasurgery.com/",
+      "accessed": "2026-10-29",
+      "observed": "Official site confirms facility."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1460049,-115.1773164,3a,75y,117.14h,90t/data=!3m4!1e1!3m2!1s-E6Rng8gXkzm3FQzgerF8w!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January2023",
+      "observed": "Personally inspected palegray square masonry tall northwest block, narrow low windows, lower long covered entry with round columns, palms and desert beds."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1457105,-115.1765954,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected irregular white flat roof with three HVAC units in row, projecting entries, west parking/east road and gravel beds."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Sahara+Surgery+Center+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected public waitingroom photos Jan2025 CIHM0ogKEICAgID_jKLZPA and Aug2024. Gray/beige/purple metalarmchairs, carpettiles, tables/plants, glazed vestibule, open reception and white tray ceiling with suspended strip lights. No medical/private rooms used."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, window count and bay positions fitted from imagery.",
+    "Public waiting-room footprint, reception and furniture counts inferred; no measured plan."
+  ],
+  "components": [
+    {
+      "id": "exterior",
+      "status": "planned"
+    },
+    {
+      "id": "public-waiting-room",
+      "status": "planned"
+    },
+    {
+      "id": "entrance-approach",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build/install/inspect/routecheck and package.",
+    "Private treatment spaces, neighboring WellTrac and complete parking excluded."
+  ],
+  "nextPass": {
+    "priority": "Exterior and public waiting room",
+    "checkpoint": "415claim confirmed;412openissue/PRscan clear;413released aftera123274push."
+  }
+}
