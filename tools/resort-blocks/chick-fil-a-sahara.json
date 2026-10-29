@@ -1,0 +1,71 @@
+{
+  "id": "chick-fil-a-sahara",
+  "name": "Chick-fil-A Sahara at I-15",
+  "status": "active",
+  "mappedIds": [
+    "way/587100024"
+  ],
+  "claim": {
+    "issue": 409,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/409"
+  },
+  "sources": [
+    {
+      "url": "https://www.chick-fil-a.com/locations/nv/sahara-at-i-15",
+      "accessed": "2026-10-29",
+      "observed": "Official address2480SouthRancho,dine-in/drive-thru; conflicts with mapped indoor_seating=no."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chick-fil-A+2480+S+Rancho+Las+Vegas",
+      "accessed": "2026-10-29",
+      "provider": "Sophia N",
+      "imageDate": "April2022",
+      "photoId": "CIHM0ogKEICAgIC2zfbfKw",
+      "observed": "Personally inspected tan corner tower, gray rear wall/light window wall, high dark sloping roof overhang, black awnings/red patio umbrellas/black railing/desert planting."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chick-fil-A+2480+S+Rancho+Las+Vegas",
+      "accessed": "2026-10-29",
+      "provider": "Tani Masa",
+      "imageDate": "October2026",
+      "photoId": "CIABIhBypg1xd9KptgIueAsti1UO",
+      "observed": "Personally inspected northentry/glazing, largeblackawning, talltanlogopier, slopedribbedsoffit, mobilepickupboard, redumbrellas anddarkmetaltables."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1447325,-115.1726224,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected northpatio/parking, westcurvedtensiledrivecanopy, wraparounddrive, flatroofequipment/northoverhang, Sahara landscaping."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights and facade bay dimensions fitted from photographs, not measured.",
+    "Tensile canopy supports and site elevations inferred. Public interior not pictured; excluded this pass."
+  ],
+  "components": [
+    {
+      "id": "facades-roof",
+      "status": "planned"
+    },
+    {
+      "id": "patio-entrances",
+      "status": "planned"
+    },
+    {
+      "id": "drive-canopy",
+      "status": "planned"
+    },
+    {
+      "id": "landscape-approach",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build/install/inspect exterior and public patio, verify routes/performance/packaging.",
+    "Public interior/fine materials/site details remain separately required."
+  ],
+  "nextPass": {
+    "priority": "Exterior/patio/drive canopy",
+    "checkpoint": "409claimconfirmed after400openissue/PRscan;407released after704df01push."
+  }
+}
