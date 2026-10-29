@@ -1,0 +1,108 @@
+{
+  "id": "chrome-gypsy",
+  "name": "2640 Highland / Chrome Gypsy frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/464694106"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1415274,-115.1701212,3a,100y,109.75h,90t/data=!3m4!1e1!3m2!1sQ8SEukDlySOb3uHBEeKoRw!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January2021",
+      "observed": "Shared charcoal flat fascia, north tattoo bay red raised lettering, recessed glazed bays, square piers, tight parking and north boundary wall. North tattoo door has gold lettering and lower multicolored stripes."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1412429,-115.170251,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "North neighbor of Barry gym: rectangular white flat roof, equipment, east service yard. Mapped way464694106."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chrome+Gypsy+Tattoo+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "2640Highland identity. Photos mainly tattoo closeups: small glimpses of tan flooring/yellow and cyan walls/black seats/framed art, insufficient whole interior. No source artwork to be copied."
+    },
+    {
+      "url": "https://www.bestprosintown.com/nv/las-vegas/chrome-gyspy-tattoo-/",
+      "accessed": "2026-10-29",
+      "observed": "Directory marks closed, conflicting with Maps listing. Current tenancy unverified; reconstruction uses dated facade evidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Facade heights and tenant widths inferred; shared building not entirely tattoo shop.",
+    "Current business identity uncertain; no public interior planned without stronger room references."
+  ],
+  "components": [
+    {
+      "id": "shared-exterior",
+      "status": "verified"
+    },
+    {
+      "id": "glazed-storefronts",
+      "status": "verified"
+    },
+    {
+      "id": "roof-service-details",
+      "status": "verified"
+    },
+    {
+      "id": "public-approaches",
+      "status": "verified"
+    }
+  ],
+  "remaining": [
+    "Current tenancy remains uncertain; facade is based on January 2021 imagery.",
+    "Exact heights, tenant divisions and unseen service elevations remain inferred.",
+    "North wall finish, local parking markings and boundary wall need stronger reference matching.",
+    "Fine weathering and glazing depth remain below photorealistic standard; no interior authored without a supported layout."
+  ],
+  "nextPass": {
+    "priority": "Reference-led refinement",
+    "checkpoint": "Installed first exterior pass verified; current city bake; 125 static and 14 actual walking segments passed. Four final daylight views personally inspected. No supported interior layout yet."
+  },
+  "claim": {
+    "issue": 423,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/423",
+    "pullRequest": 424
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/chrome-gypsy-baseline/results.json",
+    "after": "build/city-exteriors/chrome-gypsy-final/results.json",
+    "settings": "960x540 DPR1 ultra neutral daylight; four matched cameras; 180 warm frame samples each",
+    "missingMetrics": [
+      "GPU/CPU spans",
+      "cold transition stalls",
+      "draw calls"
+    ]
+  },
+  "geometry": {
+    "trianglesBeforeTextTessellation": 2146,
+    "ownedTrianglesRemoved": 10,
+    "retainedGroups": 9560
+  },
+  "evidence": {
+    "preservation": "build/city-exteriors/chrome-gypsy-preservation.json",
+    "staticRoutes": "build/strip-landmarks/chrome-gypsy-route-audit.json",
+    "initialViews": "build/city-exteriors/chrome-gypsy-initial",
+    "correctedPreview": "build/city-exteriors/chrome-gypsy-preview-v2",
+    "finalViews": "build/city-exteriors/chrome-gypsy-final",
+    "walking": "build/city-exteriors/chrome-gypsy-walk-final/results.json"
+  },
+  "checks": {
+    "staticSamples": 125,
+    "walkingSegments": 14,
+    "typecheck": "passed",
+    "bitmagicCheck": "passed",
+    "preservation": "passed",
+    "publicCheck": "passed with pre-existing inventory email warning",
+    "cityBakeBatches": 755,
+    "runtimeAssets": 1627
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/chrome-gypsy-exterior.glb": "924ff7c8eb444dea091be29a0b60970b7f41e780ae096776b7560bef2c2b4c4d",
+      "runtime-assets/strip-landmarks/chrome-gypsy-exterior-collision.bin": "1f6fd4501820dc64e9a0899f13555564f3dabcefe08d4e25806ccff62654983c"
+    }
+  }
+}
