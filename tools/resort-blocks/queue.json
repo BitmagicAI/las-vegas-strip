@@ -1628,7 +1628,13 @@
         "date": "2026-10-28",
         "reason": "Installed scoped exterior/public-room pass verified; explicit fidelity gaps retained for later refinement while city expansion proceeds."
       }
+    },
+    {
+      "id": "starbucks-flamingo",
+      "name": "Starbucks 340 E Flamingo",
+      "status": "refinement-deferred",
+      "record": "starbucks-flamingo.json"
     }
   ],
-  "active": "fogo-hughes"
+  "active": "starbucks-flamingo"
 }
