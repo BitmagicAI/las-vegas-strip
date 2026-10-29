@@ -289,7 +289,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-collective-paradise` | M | P3 | 4 | Refine the exterior of The Collective Paradise retail |
 | `ext-chick-fil-a-paradise` | M | P3 | 3 | Refine the exterior of Chick-fil-A Flamingo and Paradise |
 | `ext-jack-flamingo` | M | P3 | 4 | Refine the exterior of Jack in the Box East Flamingo |
-| `ext-mcdonalds-sahara` | M | P3 | 3 | Refine the exterior of McDonalds West Sahara |
+| `ext-mcdonalds-sahara` | M | P3 | 4 | Refine the exterior of McDonalds West Sahara |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

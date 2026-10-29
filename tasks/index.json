@@ -14847,11 +14847,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Author and inspect exterior/patio",
-    "Verify scoped collision preservation and actual arrival walking",
-    "Record full site/material/interior limitations"
+    "2019 facade photo is dated; precise current finishes and height need newer corroboration",
+    "Fine facade, glazing, furniture and signage fidelity remain simplified",
+    "Full site parking, planting and detached signs not reconstructed",
+    "No interior reference verified; interior intentionally absent"
    ],
    "record": "tools/resort-blocks/mcdonalds-sahara.json",
    "buildings": [],
@@ -14861,14 +14862,17 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
+     "runtime-assets/strip-landmarks/mcdonalds-sahara-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/mcdonalds-sahara-exterior.glb",
      "tools/resort-blocks/mcdonalds-sahara.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-mcdonalds-sahara.py",
+     "tools/strip-landmarks/export_mcdonalds_sahara.py",
      "tools/strip-landmarks/mcdonalds_sahara_canopy.py",
-     "tools/city-exteriors/replace-mcdonalds-sahara-canopy.py",
-     "tools/city-exteriors/stair-mcdonalds-sahara-canopy.mjs",
-     "tools/city-exteriors/test-mcdonalds-sahara-canopy.mjs",
-     "tools/strip-landmarks/build_mcdonalds_sahara_canopy.py"
+     "tools/strip-landmarks/test-mcdonalds-sahara.mjs",
+     "tools/city-exteriors/check-mcdonalds-sahara-preservation.py",
+     "tools/city-exteriors/replace-mcdonalds-sahara-canopy.py"
     ]
    },
    "acceptance": [

@@ -1,7 +1,7 @@
 {
   "id": "mcdonalds-sahara",
   "name": "McDonalds West Sahara",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/276426396"
   ],
@@ -9,7 +9,8 @@
     "issue": 375,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/375",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/376"
   },
   "sources": [
     {
@@ -31,12 +32,130 @@
     "No verified interior reference or measured public plan"
   ],
   "remaining": [
-    "Author and inspect exterior/patio",
-    "Verify scoped collision preservation and actual arrival walking",
-    "Record full site/material/interior limitations"
+    "2019 facade photo is dated; precise current finishes and height need newer corroboration",
+    "Fine facade, glazing, furniture and signage fidelity remain simplified",
+    "Full site parking, planting and detached signs not reconstructed",
+    "No interior reference verified; interior intentionally absent"
   ],
   "nextPass": {
-    "priority": "Exterior and patio",
-    "checkpoint": "Claim375 confirmed. No overlapping mapped building parts. Geometry not authored."
+    "priority": "Current-reference and full-site refinement",
+    "checkpoint": "Installed exterior/patio scoped pass verified; pickup-window door overlap corrected. Retain dated-reference and dimension uncertainty."
+  },
+  "triangles": 5988,
+  "optimizedMiB": 0.27,
+  "viewsInspected": [
+    "build/city-exteriors/mcdonalds-sahara-final/mcd-patio.png",
+    "build/city-exteriors/mcdonalds-sahara-final/mcd-roof.png",
+    "build/city-exteriors/mcdonalds-sahara-final/mcd-drive.png"
+  ],
+  "tests": [
+    "94 current-city static route samples passed",
+    "12 actual walking segments passed including patio approach/return",
+    "16 owned visual/collider triangles removed; all 9560 surrounding groups preserved",
+    "pnpm check, bitmagic check, resort record and public checks passed",
+    "731-batch current city bake; 1549 staged runtime assets"
+  ],
+  "performance": {
+    "baseline": [
+      {
+        "name": "patio",
+        "eye": [
+          -366,
+          2,
+          -3188
+        ],
+        "target": [
+          -383,
+          3,
+          -3199
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -360,
+          33,
+          -3180
+        ],
+        "target": [
+          -385,
+          2,
+          -3205
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.600000023841858
+      },
+      {
+        "name": "drive",
+        "eye": [
+          -403,
+          2,
+          -3217
+        ],
+        "target": [
+          -390,
+          2.7,
+          -3208
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.800000071525574
+      }
+    ],
+    "after": [
+      {
+        "name": "patio",
+        "eye": [
+          -366,
+          2,
+          -3188
+        ],
+        "target": [
+          -383,
+          3,
+          -3199
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.399999976158142
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -360,
+          33,
+          -3180
+        ],
+        "target": [
+          -385,
+          2,
+          -3205
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.200000047683716
+      },
+      {
+        "name": "drive",
+        "eye": [
+          -403,
+          2,
+          -3217
+        ],
+        "target": [
+          -390,
+          2.7,
+          -3208
+        ],
+        "p50": 16.799999952316284,
+        "p95": 17.700000047683716
+      }
+    ],
+    "conditions": "Warm daylight 960x540 DPR1 ultra; static views, not city-wide locked 60fps guarantee"
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/mcdonalds-sahara-exterior.glb": "edc9cabeb74364738151e4723b5ab2842e9ea1028736415647189bf8c6029af6",
+      "runtime-assets/strip-landmarks/mcdonalds-sahara-exterior-collision.bin": "709b15099987c7d487e23cf489569d507734f6ed2de16d38110e53c33a4a0bc4"
+    }
   }
 }
