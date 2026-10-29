@@ -1,0 +1,54 @@
+{
+  "id": "bmo-sahara",
+  "name": "BMO West Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/900523798"
+  ],
+  "claim": {
+    "issue": 391,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/391"
+  },
+  "sources": [
+    {
+      "url": "https://usbranches.bmo.com/nv/las-vegas/bmo267/",
+      "accessed": "2026-10-29",
+      "observed": "Official current branch2980WSahara."
+    },
+    {
+      "url": "https://www.google.com/maps/search/BMO+2980+West+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "imageDate": "August2025",
+      "provider": "e mont (emont)",
+      "observed": "Personally inspected CIABIhAQumejnBYsDbg5U2ZGOerT: tan stucco flat parapet, projecting entry portal, dark glass double doors/sidelights, blue wedge awnings, gray cylindrical sconces,BMO letters/redroundel,2980address. Older BankofWest photos rejected as outdated."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.144703,-115.181686,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected aerial: north-south footprint, chamfered northwest, white flat roof with teal pyramidal feature over southhalf, east/northparking,westRichfield/southSahara."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, detail positions and east entry orientation fitted from photo/aerial; no measured elevations."
+  ],
+  "remaining": [
+    "Build scoped exterior and verify installed daylight views/routes/performance.",
+    "Public interior not evidenced; no interior in this pass.",
+    "Full site and precise rear/side detail/fidelity remain."
+  ],
+  "components": [
+    {
+      "id": "branch",
+      "status": "planned"
+    },
+    {
+      "id": "roof-feature",
+      "status": "planned"
+    }
+  ],
+  "nextPass": {
+    "priority": "Scoped exterior",
+    "checkpoint": "Issue391 claim confirmed, scope only."
+  }
+}

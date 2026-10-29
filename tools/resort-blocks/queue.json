@@ -1754,7 +1754,13 @@
       "name": "Dutch Bros West Sahara",
       "status": "refinement-deferred",
       "record": "dutch-bros-sahara.json"
+    },
+    {
+      "id": "bmo-sahara",
+      "name": "BMO West Sahara",
+      "status": "active",
+      "record": "bmo-sahara.json"
     }
   ],
-  "active": "dutch-bros-sahara"
+  "active": "bmo-sahara"
 }
