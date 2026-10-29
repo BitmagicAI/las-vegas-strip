@@ -1,0 +1,45 @@
+{
+  "id": "hilton-garden-city-center",
+  "name": "Hilton Garden Inn City Center",
+  "status": "active",
+  "mappedIds": [
+    "way/494974483",
+    "way/495532040",
+    "way/495532043"
+  ],
+  "claim": {
+    "issue": 381,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/381"
+  },
+  "sources": [
+    {
+      "url": "https://www.hilton.com/en/hotels/laslggi-hilton-garden-inn-las-vegas-city-center/gallery/",
+      "provider": "Hilton",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Personally inspected exterior image1, pool6, desk10, lounge11. Six-storey gray/ivory tower, low brick glazed lobby/lantern, beige desk/dark wood canopy, relief wall, marble fireplace, gray seating/orange cushions/teal stools, poolhouse and rounded pool."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Hilton+Garden+Inn+4655+Dean+Martin+Las+Vegas",
+      "provider": "Google Maps",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Aerial: southern east-west tower, lobby extends north from west end, poolhouse to west. Garage494978507 separate and retained. No extraction."
+    }
+  ],
+  "uncertainDimensions": [
+    "Six-storey height fitted; mapped13.3m conflicts with photographs",
+    "Public lobby layout fitted; no measured interior plan"
+  ],
+  "remaining": [
+    "Build original exterior, public reception/lounge and pool-side structure",
+    "Inspect installed daylight views and actual walking",
+    "Measure matching baseline/final performance, preserve all other owners, package optimized assets and fresh bake",
+    "Full site, guest/private interiors and fine fidelity remain subject to source support"
+  ],
+  "nextPass": {
+    "priority": "Build scoped exterior/public lobby",
+    "checkpoint": "Claim381confirmedjaniverse. Research complete; no geometry installed yet."
+  }
+}

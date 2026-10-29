@@ -1724,7 +1724,13 @@
       "name": "Homewood Suites City Center",
       "status": "refinement-deferred",
       "record": "homewood-city-center.json"
+    },
+    {
+      "id": "hilton-garden-city-center",
+      "name": "Hilton Garden Inn City Center",
+      "status": "active",
+      "record": "hilton-garden-city-center.json"
     }
   ],
-  "active": "homewood-city-center"
+  "active": "hilton-garden-city-center"
 }
