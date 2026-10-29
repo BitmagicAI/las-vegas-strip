@@ -1856,7 +1856,13 @@
       "name": "2640 Highland / Chrome Gypsy frontage",
       "status": "refinement-deferred",
       "record": "chrome-gypsy.json"
+    },
+    {
+      "id": "airgas-highland",
+      "name": "Airgas Highland retail",
+      "status": "active",
+      "record": "airgas-highland.json"
     }
   ],
-  "active": "chrome-gypsy"
+  "active": "airgas-highland"
 }

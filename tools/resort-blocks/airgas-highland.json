@@ -1,0 +1,63 @@
+{
+  "id": "airgas-highland",
+  "name": "Airgas Highland retail",
+  "status": "active",
+  "mappedIds": [
+    "way/464694104"
+  ],
+  "sources": [
+    {
+      "url": "https://locations.airgas.com/nv/lasvegas/airgas-store-w062.html",
+      "accessed": "2026-10-29",
+      "observed": "Official store address and welding/gas/safety retail identity."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Airgas+2600+Highland+Las+Vegas",
+      "accessed": "2026-10-29",
+      "imageDate": "June 2022 owner photo",
+      "observed": "White grooved masonry, white fascia with blue Airgas and blue stripes, glazed entry and window, yellow bollards. Retail thumbnails show slatwalls and packaged supplies."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1423126,-115.1694362,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected aerial: notched rectangular white roof, north entrance toward Sutter parking, south equipment yard and east slim canopy."
+    }
+  ],
+  "uncertainDimensions": [
+    "Facade heights and precise room dimensions inferred.",
+    "Public retail fixture arrangement supported by photos; whole floor plan not surveyed.",
+    "Do not include separate southern way/464694105 as retail building."
+  ],
+  "components": [
+    {
+      "id": "retail-exterior",
+      "status": "pending"
+    },
+    {
+      "id": "public-sales-room",
+      "status": "pending"
+    },
+    {
+      "id": "roof-service-details",
+      "status": "pending"
+    },
+    {
+      "id": "public-approaches",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Research room overview and build original exterior/public sales interior.",
+    "Inspect installed views, check routes and preservation, profile and package fresh bake.",
+    "Unseen elevations, exact dimensions and nonpublic service yard remain uncertain."
+  ],
+  "nextPass": {
+    "priority": "Retail exterior and public sales interior",
+    "checkpoint": "425 claim confirmed, scoped record before edits."
+  },
+  "claim": {
+    "issue": 425,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/425"
+  }
+}
