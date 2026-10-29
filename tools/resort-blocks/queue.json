@@ -1512,7 +1512,13 @@
       "name": "Herbs & Rye",
       "status": "refinement-deferred",
       "record": "herbs-rye.json"
+    },
+    {
+      "id": "dennys-flamingo",
+      "name": "Denny's \u2014 West Flamingo",
+      "status": "refinement-deferred",
+      "record": "dennys-flamingo.json"
     }
   ],
-  "active": "herbs-rye"
+  "active": "dennys-flamingo"
 }
