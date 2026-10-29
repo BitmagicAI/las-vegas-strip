@@ -1,0 +1,57 @@
+{
+  "id": "sahara-2500",
+  "name": "2500 West Sahara offices",
+  "status": "active",
+  "mappedIds": [
+    "way/1018431817"
+  ],
+  "claim": {
+    "issue": 417,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/417"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1453755,-115.1757531,3a,75y,356.08h,101.99t/data=!3m4!1e1!3m2!1sVIT-B9Bzr30TdHQBf-TiIQ!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "November 2021",
+      "observed": "Personally inspected full/close views: two-storey cream stucco, horizontal lower panel joints, green window crossbars/blinds, stepped parapet, southeast portico with square columns and raised2500address."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1457105,-115.1765954,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Adjacent office visible in inspected aerial: rectangular white flat roof and HVAC, canopy parking excluded."
+    },
+    {
+      "url": "https://www.google.com/maps/search/WellTrac+2500+Paseo+del+Prado+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Map result labels building2500WestSaharaSte100; actual street address rather than search wording used. No interior evidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, recesses and unseen elevations fitted from dated imagery.",
+    "Current tenancy unverified; building identified by address, private interior excluded."
+  ],
+  "components": [
+    {
+      "id": "facades-roof",
+      "status": "planned"
+    },
+    {
+      "id": "corner-portico",
+      "status": "planned"
+    },
+    {
+      "id": "public-approach",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build/install/inspect and verify approaches/performance/package.",
+    "Private interiors and complete parking/landscape excluded."
+  ],
+  "nextPass": {
+    "priority": "Exterior and entry approach",
+    "checkpoint": "417claim confirmed after414openissue/PRscan; only own415explicitly excluded this building.415released after52c7049push."
+  }
+}
