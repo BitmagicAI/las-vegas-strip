@@ -1,0 +1,77 @@
+{
+  "id": "dean-martin-southwest",
+  "name": "5115 south-west courtyard frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/225705139"
+  ],
+  "claim": {
+    "issue": 300,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/300",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/301"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=wRr0JJg10fXdBXPzDQdcmQ&heading=270&pitch=0",
+      "observed": "December2022, camera36.0963045,-115.182884 heading270: pale ribbed mansard, tan vertical panels, slim square posts, narrow glazed tenant doors/windows, wall and ground AC, broad light blockwork end marked4. Lower frontage obscured by parked cars."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped bounds[-923.394,2178.578,-900.571,2240.205]. Heights, exact bays and hidden services estimated.",
+    "No verified public interior plan."
+  ],
+  "implemented": [
+    "Original18,368-triangle exterior: tan ribbed panels, pale mansard, narrow glazed entrances, wall/ground AC, broad north blockwork end marked4. Source entrance/roof inspected.",
+    "10 owned shell/collision faces removed; all9560 mesh groups preserve vertices, metadata and retained face order.179 scoped route samples pass.",
+    "Optimized 0.40 MiB GLB, packed collision and venues, current 694-batch city bake; 1433 runtime assets, none missing.",
+    "Three installed daylight views and walking return visually inspected; four actual walking segments and 179 scoped clearance samples pass. Projecting masonry pier collision checked."
+  ],
+  "remaining": [
+    "Exact tenant bay divisions and sign artwork remain uncertain; plaques unlettered.",
+    "Glass, doors and weathering simplified; fine canopy aliasing and roof texture repetition remain.",
+    "Hidden services and roof plant inferred; interiors closed without verified plans.",
+    "Generic courtyard paving and landscaping need a separate reference-supported pass."
+  ],
+  "nextPass": {
+    "priority": "Refine documented fidelity gaps after city expansion.",
+    "checkpoint": "Installed pass verified; not photorealistic completion."
+  },
+  "evidence": [
+    "build/city-exteriors/dean-martin-southwest-baseline/results.json",
+    "build/city-exteriors/dean-martin-southwest-installed/results.json",
+    "build/city-exteriors/dean-martin-southwest-walk/results.json"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.6,
+        21.9
+      ],
+      [
+        20.1,
+        28.5
+      ],
+      [
+        16.6,
+        21.1
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.9,
+        22.3
+      ],
+      [
+        21.4,
+        28.2
+      ],
+      [
+        16.8,
+        21
+      ]
+    ],
+    "note": "Matching 960x540 ultra views on shared machine; no stable 60 fps claim."
+  }
+}
