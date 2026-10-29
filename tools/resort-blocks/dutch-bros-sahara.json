@@ -1,0 +1,115 @@
+{
+  "id": "dutch-bros-sahara",
+  "name": "Dutch Bros West Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/943068958"
+  ],
+  "claim": {
+    "issue": 389,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/389",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/390"
+  },
+  "sources": [
+    {
+      "url": "https://www.dutchbros.com/locations/nv/las-vegas/3121-w-sahara-ave",
+      "accessed": "2026-10-29",
+      "observed": "Official current address; takeaway only."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1442,-115.1841723&heading=180",
+      "imageDate": "January2023",
+      "accessed": "2026-10-29",
+      "observed": "Panorama SOscnDlSYOVXr1AWFpfuXw personally inspected: north blue corrugated field, tall cream east address pier, west flat gray canopy on stone piers, stone base. Generic owner promotional photo rejected as different site."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1440127,-115.1841723,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected aerial: narrow north-south service bar, hollow northwest canopy projection, west parking, east pickup lane, south/east drive loop."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights and window positions fitted; imagery2023 may predate changes. No measured plan."
+  ],
+  "remaining": [
+    "Full site planting, precise current side/rear references and fine material/sign fidelity remain.",
+    "Heights, service window positions and staff door fitted; dated2023reference uncertainty retained.",
+    "No public interior at takeaway-only site; private kitchen excluded."
+  ],
+  "components": [
+    {
+      "id": "service-bar",
+      "status": "implemented",
+      "description": "Fitted low-rise shell, corrugated blue parapet, address pier, service glazing, roof equipment."
+    },
+    {
+      "id": "canopy",
+      "status": "implemented",
+      "description": "Hollow northwest canopy on stone piers, walk-up pad and south ramp."
+    }
+  ],
+  "nextPass": {
+    "priority": "Full site and precise side/rear references",
+    "checkpoint": "Scoped exterior/open canopy verified; four final-smooth daylight views inspected,99static/14walking passed, optimized asset and738-batch fresh bake packaged."
+  },
+  "implemented": [
+    "Original 3242-triangle service bar/open canopy; about.22MiB optimized exterior.",
+    "Blue corrugated front, cream address pier, stone canopy piers, west walk-up/east pickup glazing, roof services and raised canopy pad with south ramp."
+  ],
+  "evidence": [
+    "build/city-exteriors/dutch-bros-sahara-baseline/results.json",
+    "build/city-exteriors/dutch-bros-sahara-preview/results.json",
+    "build/city-exteriors/dutch-bros-sahara-walk-preview/results.json",
+    "build/strip-landmarks/dutch-bros-sahara-route-audit.json",
+    "build/city-exteriors/dutch-bros-sahara-preservation.json",
+    "build/city-exteriors/dutch-bros-sahara-walk-final/results.json",
+    "build/city-exteriors/dutch-bros-sahara-final-smooth/results.json"
+  ],
+  "levels": [
+    {
+      "id": "public-canopy-pad",
+      "elevationM": 0.28,
+      "basis": "Matches retained city curb; south ramp reaches grade."
+    },
+    {
+      "id": "canopy-soffit",
+      "elevationM": 3.12,
+      "basis": "Fitted from Jan2023 street photograph."
+    },
+    {
+      "id": "main-roof",
+      "elevationM": 4.7,
+      "basis": "Fitted, unmeasured."
+    },
+    {
+      "id": "front-parapet",
+      "elevationM": 5.55,
+      "basis": "Fitted, unmeasured."
+    },
+    {
+      "id": "address-pier",
+      "elevationM": 6.34,
+      "basis": "Fitted, unmeasured."
+    }
+  ],
+  "validation": {
+    "static": "99 current-city capsule and support checks passed.",
+    "walking": "14 actual walking segments passed in final default-bake level. Subsequent material-only correction leaves collision unchanged.",
+    "visual": "Four final-smooth installed daylight views personally inspected. Corrected generic checker-plate mapping on smooth supports/window trim and striped roof finish.",
+    "preservation": "118 owned triangles and matching collision replaced;9560 groups preserved.",
+    "packaging": "1573 runtime assets,738-batch fresh city bake."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/dutch-bros-sahara-baseline/results.json",
+    "preview": "build/city-exteriors/dutch-bros-sahara-preview/results.json",
+    "method": "960x540 DPR1 ultra, matching front/roof/pickup cameras. Additional final walk-up view has no baseline.",
+    "after": "build/city-exteriors/dutch-bros-sahara-final-smooth/results.json",
+    "summary": "Baseline front/roof/pickup median17.6/16.6/16.6ms,p9519.8/18.4/18.7. Final17.7/16.7/16.5ms,p9521.4/19/19. Additional walk-up16.8/p9519.2.960x540DPR1ultra; not a universal60fps claim."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/dutch-bros-sahara-exterior.glb": "cbc1cd4905cdfbe947b672fe36b3bff9a819b40c360063a3fb8fab55caf0e2e6"
+    }
+  }
+}

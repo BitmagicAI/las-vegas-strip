@@ -1748,7 +1748,13 @@
       "name": "Morning News Sahara",
       "status": "refinement-deferred",
       "record": "morning-news.json"
+    },
+    {
+      "id": "dutch-bros-sahara",
+      "name": "Dutch Bros West Sahara",
+      "status": "refinement-deferred",
+      "record": "dutch-bros-sahara.json"
     }
   ],
-  "active": "morning-news"
+  "active": "dutch-bros-sahara"
 }
