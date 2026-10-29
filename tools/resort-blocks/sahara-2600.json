@@ -1,0 +1,62 @@
+{
+  "id": "sahara-2600",
+  "name": "2600 Sahara retail and Bespoke Kitchen",
+  "status": "active",
+  "mappedIds": [
+    "way/1018431835"
+  ],
+  "claim": {
+    "issue": 413,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/413"
+  },
+  "sources": [
+    {
+      "url": "https://bespokealldaycafelv.com/",
+      "accessed": "2026-10-29",
+      "observed": "Official cafe location2600WestSahara#101."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1450381,-115.1772941,3a,75y,324.84h,96.75t/data=!3m4!1e1!3m2!1sADL_lyNSkqh-sOs5AwHPFQ!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "August2024",
+      "observed": "Personally inspected mint cafe portal, white storefronts, gray sloped metal caps, green Adam&Eve portal, taller white/gray bridal facade."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.14514,-115.17666,19z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected full shared strip, roof HVAC array, projecting front bays and north service edge."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Bespoke+Kitchen+2600+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected ownerNov2024photo CIHM0ogKEICAgIDvnaSvjQE and SDSept2026CIABIhCFz-epJbcLMoB6sAWBzF0L: wood tables/light openback chairs, concrete floor, wood planter divider, dark exposed ceiling and ducts, white pendants, metal service counter. Dimensions/layout inferred."
+    }
+  ],
+  "uncertainDimensions": [
+    "Tenant partitions, interior dimensions, unseen elevations fitted from photographs; no measured plan.",
+    "Dated signage and architectural forms represent pictured references, not proof of every current tenancy."
+  ],
+  "components": [
+    {
+      "id": "shared-retail-exterior",
+      "status": "planned"
+    },
+    {
+      "id": "bespoke-public-dining",
+      "status": "planned"
+    },
+    {
+      "id": "entry-routes",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build/install and inspect exterior and public dining room.",
+    "Other tenant/private interiors, complete parking and exact fidelity excluded."
+  ],
+  "nextPass": {
+    "priority": "Bespoke and full shared frontage",
+    "checkpoint": "413claim confirmed after410openissue/PR scan;411released and3cc99d5push confirmed."
+  }
+}

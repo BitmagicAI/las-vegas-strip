@@ -1820,7 +1820,13 @@
       "name": "2320 South Rancho offices",
       "status": "refinement-deferred",
       "record": "rancho-2320.json"
+    },
+    {
+      "id": "sahara-2600",
+      "name": "2600 Sahara retail and Bespoke Kitchen",
+      "status": "active",
+      "record": "sahara-2600.json"
     }
   ],
-  "active": "rancho-2320"
+  "active": "sahara-2600"
 }
