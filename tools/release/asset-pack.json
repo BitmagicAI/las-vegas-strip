@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1485,
- "bytes": 1115230412,
+ "count": 1489,
+ "bytes": 1123183769,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19446744,
-   "sha256": "c88167838c5f5a5128dc4167bb8ab43164b972d8204ce74532dbf9d71fab6579",
+   "bytes": 19525815,
+   "sha256": "14de55a60d53e53b43e00331f25a06bddfaa9118e30e817a50a028b164a28581",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13060072,
-   "sha256": "134ca9dcb19ca8eabdf2a8f589f9bf9f33c294b3e8bcb36903c761b32af23461",
+   "bytes": 13059588,
+   "sha256": "04b7f80d6b0662cca483b31d4045317721f87c649e6443380194e073dbe8226c",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109743384,
-   "sha256": "24a3c56d70cd31ed0c70b4bcf06197a1ee910770c2c57e5281913d4cd87675e1",
+   "bytes": 109742192,
+   "sha256": "eb4f8d0fa9e96244fc7be4771d3f7ec442b32359c892096ea565f55ca9e5e0b6",
    "kind": "optimized"
   },
   {
@@ -7241,6 +7241,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/mardi-gras-exterior-collision.bin",
+   "bytes": 27832,
+   "sha256": "31f37851b22b641782bf0be3d1f927799dac0026e92afa9ec3f4589cee618105",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mardi-gras-exterior.glb",
+   "bytes": 6640028,
+   "sha256": "1eacc77d76b8278af2360068dc272d7458d33567d7a41d802d8d467bad42ee46",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/mardi-gras-interior-collision.bin",
+   "bytes": 3612,
+   "sha256": "823811f1e1f67d34ee00e7fe3df61163880cec2ef8e77fb027dce60c1d9ba4e8",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mardi-gras-interior.glb",
+   "bytes": 1202884,
+   "sha256": "4945459cf373e1c4cab38653d8d0821aa36c278c7bb31cb0d6037a4204dab420",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/marianas-sahara-exterior-collision.bin",
    "bytes": 2408,
    "sha256": "be19e6b828a51efd7f88e43af18e002a5999e058c7f3794c92857d6dcb42fa2d",
@@ -8718,8 +8742,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 363210,
-   "sha256": "90d9fbe652389ba135b4cb35bc4a4552ca5ee34782ddbfe7e5be97813143e50f",
+   "bytes": 364816,
+   "sha256": "ec37fe73d1ecfe9b2a14175da7d44996e66e6b3189d315a8f91d96d225a3cd05",
    "kind": "original"
   },
   {

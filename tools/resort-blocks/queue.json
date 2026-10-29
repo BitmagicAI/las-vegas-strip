@@ -1566,7 +1566,13 @@
       "name": "McDonalds Paradise Road",
       "status": "refinement-deferred",
       "record": "mcdonalds-paradise.json"
+    },
+    {
+      "id": "mardi-gras",
+      "name": "Mardi Gras Hotel & Casino",
+      "status": "active",
+      "record": "mardi-gras.json"
     }
   ],
-  "active": "mcdonalds-paradise"
+  "active": "mardi-gras"
 }

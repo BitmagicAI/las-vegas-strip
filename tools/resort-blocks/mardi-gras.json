@@ -1,0 +1,329 @@
+{
+  "id": "mardi-gras",
+  "name": "Mardi Gras Hotel & Casino",
+  "status": "active",
+  "mappedIds": [
+    "way/33962963",
+    "way/33963206",
+    "way/1421907606",
+    "way/1421907607"
+  ],
+  "claim": {
+    "issue": 338,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/338",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/339"
+  },
+  "sources": [
+    {
+      "url": "https://mardigraslasvegas.com/",
+      "observed": "Official front and pool gallery inspected; ochre stucco, bronze mansard, iron rails, cream decks, blue pool tile and terracotta coping."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=oYRdHIEdMhB6dSQxqfGqdQ&heading=81.57&pitch=0",
+      "observed": "November 2021 front panorama: three storeys, exterior corridors, arched openings, deep canopy, slender columns and stone bases."
+    },
+    {
+      "url": "https://www.google.com/maps?ll=36.125493,-115.15446&z=18&t=k&cid=11806191755765158134",
+      "observed": "Aerial inspected: two parallel wings, west connector, separate courtyard building, pool toward eastern half; image capture date unspecified."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/wp-content/uploads/2023/10/Mardi-Gras-Hotel-Casino_TAG_-18-1-scaled-1.jpg",
+      "observed": "Official pool image inspected: blue tile, terracotta coping, scalloped outline, cream deck, blue loungers and steel handrails."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/wp-content/uploads/2023/10/Mardi-Gras-Hotel-Casino_TAG_-94-scaled-e1699540846886.jpg",
+      "observed": "Official exterior corridor detail inspected: rough stucco arch and iron balustrade."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/casino/",
+      "observed": "Official site-6 and site-4 images inspected; machine closeups only, no reliable room layout. Interior remains deferred."
+    },
+    {
+      "url": "https://www.mapquest.com/us/nevada/mardi-gras-hotel-casino-270839320",
+      "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-o/0d/45/fc/58/pool-deck-area-evening.jpg",
+      "observed": "Evening courtyard photograph inspected: exposed straight stair with intermediate landing beside taller pavilion, upper terrace rails and connections toward guest corridors. Capture date unknown; historic Wynn skyline."
+    },
+    {
+      "url": "https://www.doetsreizen.nl/accommodaties/mardi-gras-hotel-en-casino/",
+      "imageUrl": "https://assets.doetsreizen.nl/media/thumbnails/ef/e1/efe1dcc9d1835316e2de9e7e429b9fc3/PoolGoundLevel1.jpg",
+      "observed": "Daylight photograph independently shows exposed stair beside pavilion and upper terrace; image date unknown, older furnishings. Used for permanent circulation only."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/welcome/",
+      "observed": "Official first/second/third floor PDFs all downloaded from linked legacy host and visually inspected. Schematic guest room numbering, west reception/casino/restaurant, central New Orleans Pavilion and Baton Rouge North/South, second-floor guest laundry. No stair symbols or dimensioned circulation; repeated central diagram on all floors cannot establish pavilion elevations.",
+      "files": [
+        "build/city-exteriors/mardi-gras-references/mardi-first-floor.pdf",
+        "build/city-exteriors/mardi-gras-references/mardi-second-floor.pdf",
+        "build/city-exteriors/mardi-gras-references/mardi-third-floor.pdf"
+      ],
+      "links": [
+        "https://dk9.650.myftpupload.com/wp-content/uploads/2023/10/1st-Floorplan.pdf",
+        "https://dk9.650.myftpupload.com/wp-content/uploads/2023/10/2nd-Floorplan.pdf",
+        "https://dk9.650.myftpupload.com/wp-content/uploads/2023/10/3rd-Floorplan.pdf"
+      ]
+    },
+    {
+      "url": "https://mardigraslasvegas.com/events/",
+      "plan": "https://mardigraslasvegas.com/wp-content/uploads/2023/11/mardi-gras-las-vegas-catering-floorplan.pdf",
+      "observed": "Dimensioned meeting plan visually inspected. Combined New Orleans Pavilion103x38ft; west New Orleans58x38ft; east Baton Rouge45x38ft split into North/South45x19ft. Door swings/side exits shown. Strong plan evidence for future interior; no heights or stairs.",
+      "localEvidence": "build/city-exteriors/mardi-gras-references/mardi-meeting-plan.pdf"
+    },
+    {
+      "url": "https://mardigraslasvegas.com/wp-content/uploads/2024/07/mardi-gras-las-vegas-Meeting-Rooms-dual-set-scaled.jpg",
+      "observed": "Official photograph visually inspected 2026-10-28: beige walls, chair rail, white plantation shutters, folding partition/ceiling tracks, recessed rectangular lights, brown/gold patterned carpet, round green cloth tables and covered chairs. Supports finishes, not surveyed ceiling height or precise room orientation."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/wp-content/uploads/2024/07/mardi-gras-las-vegas-Buffet-room.jpg",
+      "observed": "Official buffet photograph visually inspected: matching patterned carpet, beige walls/shutters, round pale tables, teal upholstered chairs and buffet carts. Exact placement within pavilion versus restaurant not established; do not merge layouts based on finishes alone."
+    },
+    {
+      "url": "https://www.tripadvisor.ca/Hotel_Review-g45963-d76091-Reviews-Mardi_Gras_Hotel_Casino-Las_Vegas_Nevada.html",
+      "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/4c/fb/4e/mardi-gras-hotel-casino.jpg?h=-1&s=1&w=1200",
+      "observed": "Garden photo visually inspected 2026-10-28: oval hedge/patio, white tables/chairs, turquoise parasols, lawn, curved paths and two mature broadleaf trees. Capture date unknown. Aerial inspected separately places garden east of pool before eastern pavilion; small service structure between pool/garden still absent from authored pass."
+    },
+    {
+      "url": "https://www.google.com/maps?ll=36.125493,-115.15446&z=19&t=k&cid=11806191755765158134",
+      "observed": "Overhead satellite view visually inspected 2026-10-28 with panel collapsed. Confirms pool then garden then eastern pavilion sequence, oval garden seating island and planted edges. Copyright2026 is not capture date."
+    },
+    {
+      "url": "https://mardigraslasvegas.com/wp-content/uploads/2023/12/mardi-gras-hotel-las-vegas-front.png",
+      "observed": "Official close-up reinspected2026-10-28: raised narrow standing seams, bronze swept central sign face rising from canopy and pale raised letters. Corrected original floating rectangular sign approximation; exact profile, 0.62m seam pitch and text size remain inferred. Garden photograph separately shows shingled long guest wings; removed metal seam extension from those areas before final install."
+    },
+    {
+      "url": "https://www.google.com/maps?ll=36.125493,-115.15446&z=20&t=k&cid=11806191755765158134",
+      "observed": "2026-10-28 closer aerial, eastward pan: spa is small shadowed basin south/southwest of brown L-shaped service roof, NOT tree circle on north lawn. Used central pavilion/east pavilion surveyed footprints as relative anchors; pool ends before service roof and oval garden lies west of eastern pavilion. Image capture date unspecified."
+    },
+    {
+      "url": "https://www.hotelplanner.com/Hotels/352131/Reservations-Mardi-Gras-Las-Vegas-3500-Paradise-Rd-89169",
+      "observed": "Historical property description calls terrace second-story, but lists old Best Western branding and obsolete room equipment. Does not establish surveyed height; conflicts with ambiguous photographic floor alignment. No new height claimed."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, room pitch, roof profile, pool dimensions and service details estimated from photographs; OSM ground outlines authoritative only for mapped plan.",
+    "Official dimensioned meeting plan supports pavilion partitions; lobby/casino circulation and ceiling elevations remain unconfirmed. No public interior implemented yet.",
+    "Pavilion terrace fitted to top exterior corridor elevation6.26m; stair run12.4m including1.4m landing and1.8m width inferred from two oblique photos, not surveyed. Intermediate guest floor access still unresolved.",
+    "Pool enclosure line, 1.26m guard height, openings and furniture spacing are fitted estimates. Official pool photograph supports black pickets and white-frame blue loungers, not exact measured positions.",
+    "Garden oval4.2x3.2m radii, hedge0.92m, paths1.9m and planting heights fitted within mapped courtyard; tree species, precise spacing and event furnishings not surveyed.",
+    "Courtyard refit from relative aerial anchors: spa center1750.4,-1048.9 radius1.35m; service L-shape spans1752..1758.5,-1056..-1050, wall2.75m. Garden center1768,-1054.3 with north/south path. Fitted estimates, not surveyed plan; service function and height inferred."
+  ],
+  "implemented": [
+    "Original three-storey guest-wing exterior with recessed room bays, exterior floor decks, iron rails, arches, continuous roof, entrance canopy, courtyard pavilion and pool/spa.",
+    "Photo-supported two-flight exposed stair, intermediate and upper landings, upper terrace and corridor rail openings, taller central pavilion and east glazing.",
+    "Original white tubular/sloped blue pool loungers, black picket enclosure with collision-only guards and open approaches; pavilion wall now meets terrace top without an open edge gap.",
+    "Original oval courtyard garden with clipped hedge openings, paved public path, lawn, white seating/turquoise parasols and two branched leaf-mesh trees, fitted to aerial and garden photograph.",
+    "Raised standing seams/rolled edge on west bronze roof; taller swept sign face above canopy with side returns and pale letters. Long guest-wing roof uses a separate non-metal finish supported by garden photograph; shingle microdetail remains pending.",
+    "Coordinated spa/service/garden refit: southern spa, original brown L-shaped utility shell with roof trim/vent, garden moved west with north\u2013south path, shorter pool enclosure and revised gate/furniture exclusions.",
+    "Public New Orleans and divided Baton Rouge meeting rooms from official 103x38ft plan, west double entry and three side exits, walkable partition doorways, ceiling/trim/shutters, original woven carpet/table fabrics and sparse event seating. Separate optimized streamed interior with fixed shared lighting."
+  ],
+  "remaining": [
+    "Meeting interior installed with official-plan partitions and exits. Ceiling3.18m, exact jamb widths and furniture arrangement inferred; chair shapes, shutter detailing, east-facing window treatment and carpet motif remain approximate. Boardroom, lobby/casino and hidden service layout not established.",
+    "Middle-floor access still unlocated; exposed stair to upper terrace and corridor built and walked. Sign typography, shingle relief, stone bases and surface detail still need refinement.",
+    "Pool dimensions and room rhythm inferred; pavilion materials and furnishing detail remain simplified. No photorealistic completion claim.",
+    "Water animates at a fixed camera; reference caustics, tile definition, planting and pavilion finish remain more detailed than this installed pass.",
+    "Reconcile stair riser count and pavilion/terrace elevation against clearer photographs before architectural acceptance: current6.26m elevation and12.4m stair run remain photo-fitted estimates, not confirmed by the schematic maps. Terrace perimeter wall gap closed; underside and structural detail still simplified.",
+    "Garden lawn and foliage shading/leaf silhouettes remain simplified versus reference. Furniture placement and tree species are estimates.",
+    "Service-building footprint and garden/spa positions now follow closer aerial anchors, but wall height, exact dimensions and presumed utility function remain inferred. Door/window detail hidden by planting is not invented. Garden path curves and planting silhouettes still simplified.",
+    "Repeat matching performance on an idle machine: this pass has concurrent unrelated render jobs and slow courtyard/stair samples. Keep current measurements rather than replacing them with earlier faster results."
+  ],
+  "nextPass": {
+    "priority": "Advance to claimed Speedee Mart after saving verified meeting-room pass; retain architectural refinement.",
+    "checkpoint": "Meeting pass installed and inspected:344033source triangles,588clearances,64walkingsegments,713batches/1489assets. Final capped-table/trim/shutter rooms inspected. Performance limited by concurrent render jobs; preserve slow samples. Save PR339, then move to claimed Speedee Mart issue340."
+  },
+  "verification": {
+    "sourceTriangles": 344033,
+    "routeSamples": 588,
+    "actualWalkingSegments": 64,
+    "installedViews": [
+      "build/city-exteriors/mardi-gras-installed",
+      "build/city-exteriors/mardi-gras-interior"
+    ],
+    "walkingEvidence": "build/city-exteriors/mardi-gras-walk/results.json",
+    "preservation": "build/city-exteriors/mardi-gras-preservation.json",
+    "bakeBatches": 713,
+    "packagedAssets": 1489,
+    "typecheck": "passed",
+    "publicCheck": "passed; existing inventory email warning",
+    "poolComparison": {
+      "images": [
+        "build/city-exteriors/mardi-gras-pool/pool-t0.png",
+        "build/city-exteriors/mardi-gras-pool/pool-t3.png"
+      ],
+      "fixedCamera": true,
+      "frameInterval": 180,
+      "observed": "Ripple highlights visibly change at a fixed camera; animation confirmed, photorealism not established."
+    },
+    "optimizedExteriorMiB": 6.33,
+    "supplementalStairWalk": "build/city-exteriors/mardi-gras-stair-walk/results.json",
+    "visualLimitations": "Walk arrival faces a room wall; route success is physical movement evidence. A dedicated landing lookback is used for architectural inspection.",
+    "landingView": "build/city-exteriors/mardi-gras-landing/upper-landing-lookback.png",
+    "surfaceCorrection": "Removed coplanar terrace/landing overlap; final385clearances and installed lookback inspected. Prior30walkingsegments use identical walkable union.",
+    "deckViews": "build/city-exteriors/mardi-gras-site-deck",
+    "deckReview": "Final corrected overhead and gate views inspected after ladder orientation fix. Spa lies beside south walkway, service L roof between pool/garden, ladders face water. Initial cameras hit hotel geometry and were replaced.44actualwalk segments pass; collision hash unchanged by final ladder correction.",
+    "gardenViews": "build/city-exteriors/mardi-gras-site-garden",
+    "gardenReview": "Final corrected courtyard ground/elevated garden views inspected. North\u2013south openings and seating leave clear central path; lawn and leaf silhouettes remain simple.",
+    "roofViews": "build/city-exteriors/mardi-gras-roof",
+    "roofReview": "Installed front, oblique sign close-up and courtyard roof close-up inspected. Curved sign side returns and seams visible; lettering weight, end transitions and shingle relief remain simplified.",
+    "optimizedInteriorMiB": 1.147
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/mardi-gras-baseline/results.json",
+    "after": "build/city-exteriors/mardi-gras-installed/results.json",
+    "baselineMedianP95Ms": [
+      [
+        16.7,
+        19.2
+      ],
+      [
+        16.8,
+        18.6
+      ],
+      [
+        16.5,
+        18.9
+      ]
+    ],
+    "afterMedianP95Ms": [
+      [
+        16.6,
+        19.1
+      ],
+      [
+        16.5,
+        19.4
+      ],
+      [
+        16.8,
+        18.6
+      ],
+      [
+        16.7,
+        17.8
+      ]
+    ],
+    "notes": "First three positions match baseline; fourth is supplemental stair, not A/B. Measurements are after courtyard refit and before final visual-only ladder correction; unchanged collision, route data and triangle count.",
+    "stairFollowup": {
+      "file": "build/city-exteriors/mardi-gras-stair-profile/results.json",
+      "samples": 600,
+      "medianMs": 16.6,
+      "p95Ms": 17.7,
+      "notes": "Same stair camera, isolated after walking and garden probes finished. Earlier180frame stair sample p95=29.2ms retained in gardenPassMedianP95Ms; isolated repeat did not reproduce it. No geometry changes between samples."
+    },
+    "gardenPassMedianP95Ms": [
+      [
+        16.6,
+        18
+      ],
+      [
+        16.6,
+        18.6
+      ],
+      [
+        16.7,
+        17.3
+      ],
+      [
+        16.8,
+        29.2
+      ]
+    ],
+    "roofSignPassMedianP95Ms": [
+      [
+        16.7,
+        17.8
+      ],
+      [
+        16.7,
+        18.4
+      ],
+      [
+        16.6,
+        17.7
+      ],
+      [
+        16.7,
+        17.4
+      ]
+    ],
+    "meetingPassPreCap": {
+      "exterior": "build/city-exteriors/mardi-gras-installed/pre-cap-reference-renderers-open-results.json",
+      "interior": "build/city-exteriors/mardi-gras-interior/pre-cap-results.json",
+      "note": "Retained slower sample while Google panorama renderer was open. Final repeat after closing references required; competing GPU work is only a hypothesis."
+    },
+    "meetingExteriorMedianP95Ms": [
+      [
+        16.8,
+        22.2
+      ],
+      [
+        16.9,
+        30.1
+      ],
+      [
+        27.3,
+        46.1
+      ],
+      [
+        22.5,
+        43.5
+      ]
+    ],
+    "meetingInteriorMedianP95Ms": [
+      [
+        16.8,
+        27.5
+      ],
+      [
+        16.7,
+        18.5
+      ],
+      [
+        16.6,
+        18.8
+      ],
+      [
+        16.7,
+        18.2
+      ]
+    ],
+    "meetingPerformanceLimitation": "Final matching exterior medians16.8/16.9/27.3/22.5ms, p9522.2/30.1/46.1/43.5; interior medians16.6\u201316.8,p9518.2\u201327.5. Two concurrent unrelated Blender render processes and a busy software GPU renderer observed. No stable60fps or causal regression conclusion; paired diagnostic retained separately.",
+    "pairedInteriorDiagnostic": "build/city-exteriors/mardi-gras-interior-cost/results.json",
+    "pairedInteriorDiagnosticNote": "Visible/hidden/visible medians21.6/30.2/24.2ms,p9545.3/46.5/42.4 under concurrent rendering; hiding interior did not recover baseline. Inconclusive noisy comparison, not evidence of guaranteed performance."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/mardi-gras-exterior.glb": "1eacc77d76b8278af2360068dc272d7458d33567d7a41d802d8d467bad42ee46",
+      "runtime-assets/strip-landmarks/mardi-gras-exterior-collision.bin": "31f37851b22b641782bf0be3d1f927799dac0026e92afa9ec3f4589cee618105",
+      "runtime-assets/strip-landmarks/mardi-gras-interior.glb": "4945459cf373e1c4cab38653d8d0821aa36c278c7bb31cb0d6037a4204dab420",
+      "runtime-assets/strip-landmarks/mardi-gras-interior-collision.bin": "823811f1e1f67d34ee00e7fe3df61163880cec2ef8e77fb027dce60c1d9ba4e8"
+    }
+  },
+  "meetingInteriorPlan": {
+    "status": "installed and visually inspected; all64walkingsegments passed",
+    "dimensionsM": {
+      "combined": [
+        31.3944,
+        11.5824
+      ],
+      "newOrleans": [
+        17.6784,
+        11.5824
+      ],
+      "batonRouge": [
+        13.716,
+        11.5824
+      ],
+      "batonRougeHalf": [
+        13.716,
+        5.7912
+      ]
+    },
+    "mapping": "Baton Rouge overlooks pool per official plan; map its end toward east courtyard. North/South labels determine the transverse split. Fit shell thickness within surveyed footprint rather than stretch source dimensions.",
+    "doors": "Official plan shows west double entry, two side exits in Baton Rouge near the divider, and a New Orleans side exit; exact jamb widths remain inferred. East pool-facing glazing is not an exit symbol.",
+    "finishes": "Official dual-set photo supports beige walls/white chair rail, plantation shutters, folding divider tracks, recessed rectangular ceiling lights and brown/gold carpet; loose furniture is an event configuration.",
+    "remaining": "Ceiling/terrace heights remain estimates; event furniture is approximate. Chair profiles, east-facing window treatment, shutter detail and closer carpet match remain for refinement. Boardroom location unknown.",
+    "implementationNotes": "Official plan re-inspected during courtyard pass: west main double entry, New Orleans/Baton Rouge partition after58ft from west end, longitudinal Baton Rouge N/S divider. Side exits near west end of Baton Rouge and one south New Orleans exit. Use local mapped shell with explicit thickness and keep boardroom unlocated. Ceiling height can only be photo-fitted and must be labeled estimated; no need to invent casino/private rooms. Preserve independently unresolved terrace elevation.",
+    "ceilingEstimateM": 3.18
+  }
+}
