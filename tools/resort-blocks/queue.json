@@ -1342,9 +1342,19 @@
     {
       "id": "towneplace-stadium",
       "name": "TownePlace Suites Las Vegas Stadium District",
+      "status": "refinement-deferred",
+      "record": "towneplace-stadium.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Verified installed exterior/site/public rooms and40walkingsegments; retain recorded discrepancies while continuing city-wide work."
+      }
+    },
+    {
+      "id": "home2-stadium",
+      "name": "Home2 Suites Las Vegas Stadium District",
       "status": "active",
-      "record": "towneplace-stadium.json"
+      "record": "home2-stadium.json"
     }
   ],
-  "active": "towneplace-stadium"
+  "active": "home2-stadium"
 }
