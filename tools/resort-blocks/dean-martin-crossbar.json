@@ -1,0 +1,50 @@
+{
+  "id": "dean-martin-crossbar",
+  "name": "5115 northern courtyard crossbar",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/225705136"
+  ],
+  "claim": {
+    "issue": 298,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/298",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/299"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=zPC4JgH5FV3HGOXVzy9qxw&heading=0&pitch=0",
+      "observed": "December 2022, camera36.0978188,-115.1828904 heading0. Long pale ribbed mansard, broad light blockwork pier marked7, mixed glazed entries and opaque panels, thin posts. Trees and parked vehicles partly obscure frontage."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped corners(-926.587,1989.591),(-926.128,2002.37),(-852.658,2001.914),(-853.108,1988.222). Heights and precise bay divisions estimated.",
+    "No verified public interior plan."
+  ],
+  "implemented": [
+    "Original 19,698-triangle source model: mapped south frontage, raised blockwork pier marked7, pale ribbed mansard, mixed glazing/siding, posts, inferred rear servicing/roof plant. Source entrance and roof views inspected.",
+    "10 owned shell/collision faces removed; all 9560 mesh groups retain vertices, metadata and retained face order.",
+    "219 scoped clearance samples and four actual walking segments along65m frontage passed. Three installed daylight views and walk-return inspected.",
+    "Optimized GLB0.49MiB,693-batch current city bake,1431 runtime assets0missing. Typecheck and records pass; public check only existing email warning."
+  ],
+  "remaining": [
+    "Exact tenant bays, signage and weathered finishes; doors/glass simplified.",
+    "Rear service and roof plant inferred; interior closed without verified plan.",
+    "Fine rib aliasing and roof texture repetition; generic surrounding paving.",
+    "Front review viewpoint below60fps both before and after; no stable60fps guarantee."
+  ],
+  "nextPass": {
+    "priority": "Later reference/material refinement; advance city expansion.",
+    "checkpoint": "Installed pass verified. Median/p95ms28.3/42,17.5/28.5,17/26.8 vs baseline37/43.2,18.8/23.3,17.5/25.5. Not photorealistic completion; shared-machine timings."
+  },
+  "evidence": [
+    "build/city-exteriors/dean-martin-crossbar-baseline/results.json",
+    "build/city-exteriors/dean-martin-crossbar-source-review/entrance.png",
+    "build/city-exteriors/dean-martin-crossbar-source-review/roof.png",
+    "build/city-exteriors/dean-martin-crossbar-preservation.json",
+    "build/strip-landmarks/dean-martin-crossbar-route-audit.json",
+    "build/city-exteriors/dean-martin-crossbar-installed/results.json",
+    "build/city-exteriors/dean-martin-crossbar-walk/results.json"
+  ]
+}
