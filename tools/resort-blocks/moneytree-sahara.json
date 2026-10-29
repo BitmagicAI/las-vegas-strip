@@ -1,0 +1,52 @@
+{
+  "id": "moneytree-sahara",
+  "name": "Moneytree West Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/900523799"
+  ],
+  "claim": {
+    "issue": 393,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/393"
+  },
+  "sources": [
+    {
+      "url": "https://locations.moneytreeinc.com/nv/las-vegas/2950-w-sahara-ave",
+      "accessed": "2026-10-29",
+      "observed": "Official address and storefront image: cream walls, blue sloped roof, yellow letters, glazed entrance and ramp."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Moneytree+2950+West+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected LivingLife June2026 CIABIhDuqN3DnlAvKTbMn-QtZ81Y east gable facade; Felix Miranda July2025 CIABIhBdHB907J-i_VWRISx6OIyJ public lobby: cream walls, ceiling grid/lights, dark carpet/pale tiles, blue writing islands/lightwood cabinets/gray legs and front glazing."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1448402,-115.1811118,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected aerial: blue gabled south portion, east-west ridge, flat white service half north, surrounding parking; separate BMO west and InNOut east."
+    }
+  ],
+  "uncertainDimensions": [
+    "All heights and public room plan fitted, not measured.",
+    "Official photo date unknown; older2016 teller close-up not reliable current service layout."
+  ],
+  "components": [
+    {
+      "id": "exterior",
+      "status": "planned"
+    },
+    {
+      "id": "public-lobby",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build scoped exterior/public lobby and verify installed views, walking and performance.",
+    "Private service areas excluded; full site and fine fidelity remain."
+  ],
+  "nextPass": {
+    "priority": "Scoped reconstruction",
+    "checkpoint": "Issue393 claim confirmed; source references reviewed."
+  }
+}
