@@ -1,0 +1,73 @@
+{
+  "id": "hofbrauhaus",
+  "name": "Hofbr\u00e4uhaus Las Vegas",
+  "status": "refinement-deferred",
+  "statusNote": "Installed exterior and public rooms visually reviewed; all eight actual walking segments and packaging checks passed. Remaining architectural polish explicitly deferred while city expansion continues.",
+  "claim": {
+    "issue": 232,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/232",
+    "assignee": "janiverse",
+    "date": "2026-10-26"
+  },
+  "sources": [
+    {
+      "url": "https://www.hofbrauhauslasvegas.com/the-experience/",
+      "provider": "Hofbr\u00e4uhaus Las Vegas",
+      "accessDate": "2026-10-26",
+      "observed": "Official exterior, beer hall and indoor garden photographs and descriptions."
+    },
+    {
+      "url": "https://www.hofbrauhauslasvegas.com/about/",
+      "provider": "Hofbr\u00e4uhaus Las Vegas",
+      "accessDate": "2026-10-26",
+      "observed": "Painted hall ceiling, communal benches; enclosed garden with sky ceiling, fountain and six chestnut trees."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=CQ05o60v3mkQj9JXARmGlA&heading=80&pitch=8",
+      "provider": "Google Street View",
+      "accessDate": "2026-10-26",
+      "observed": "February 2026 Paradise Road panorama: west window tiers, roof dormers, shaped gables and northwest projecting bay. Visual reference only; no imagery or mesh extraction."
+    }
+  ],
+  "dimensions": {
+    "footprint": "way/111339182",
+    "mappedAreaM2": 1857.54,
+    "mappedHeightM": 6,
+    "heightStatus": "Unknown-source commercial default; must verify.",
+    "estimatedStudyHeightsM": {
+      "eaves": 11.65,
+      "ridge": 16.1
+    },
+    "studyHeightStatus": "Image-based estimates, not surveyed dimensions; require further corroboration."
+  },
+  "remaining": [
+    "Refine roof intersections, fa\u00e7ade ornament, interior wall detail and exact inferred room arrangement; this is not photorealistic.",
+    "Improve tree density/species match and interior decoration without increasing shader count; retain measured performance.",
+    "Garden fountain sculpture, exact balcony/decorative artwork and botanical species remain approximations; no surveyed interior floorplan found."
+  ],
+  "implemented": [
+    "Replaced only way/111339182 mapped shell: 49 visual and 49 collision triangles removed; neighboring geometry preserved.",
+    "Original exterior with window tiers, shaped gables, hipped clay roof, shed dormers, projecting bay and street entrance.",
+    "Streamed public hall and enclosed garden with vaulted ceiling, wood tables/benches, bar, fountain and pooled lighting. Public room arrangement is inferred, not a surveyed floorplan.",
+    "Optimized GLBs, compact collision/venue data, runtime asset packaging and rebuilt city LODs.",
+    "Six intact CC0 Poly Haven trees in the public garden; exterior trees use the existing distance selection system.",
+    "Garden refinement: individual folding slat chairs, gray paving, original painted-cloud ceiling, arched wall bays and festoon fixtures using the fixed light pool."
+  ],
+  "validation": {
+    "collision": "152 sampled standing-clearance/support checks passed",
+    "runtimeWalk": "All eight outbound/return street\u2013garden\u2013hall segments passed with actual player movement",
+    "performance": "960x540 ultra with intact trees: median16.5\u201316.7ms; p95entrance19.0/garden18.2/hall18.8ms. Bounded local test, not an all-city FPS guarantee.",
+    "visualReview": "Installed exterior, entrance, hall and garden inspected. Intact source foliage replaces the destructive low-detail version; finishes and architectural ornament remain approximate.",
+    "packaging": "1341 runtime assets present, none missing; public check passed with one pre-existing inventory email warning; resort records valid; bitmagic check passed.",
+    "exteriorPerformance": "Latest optimized960x540 ultra: front16.7/18.1ms, south16.7/17.9ms, aerial16.6/18.0ms (median/p95).",
+    "gardenRefinement": "Installed garden image inspected; 960x540 ultra median16.6ms/p9518.3ms, hall16.6/18.6ms. All eight actual outbound/return walking segments passed after refinement; 1341 runtime assets present, none missing."
+  },
+  "evidence": [
+    "build/city-exteriors/hofbrauhaus-walk/results.json",
+    "build/city-exteriors/hofbrauhaus-interior-final/results.json",
+    "build/strip-landmarks/hofbrauhaus-route-audit.json",
+    "build/city-exteriors/hofbrauhaus-after-final/results.json",
+    "build/city-exteriors/hofbrauhaus-refined-interior/results.json",
+    "build/city-exteriors/hofbrauhaus-refined-walk/results.json"
+  ]
+}

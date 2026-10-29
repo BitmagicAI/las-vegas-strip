@@ -3,12 +3,12 @@
  "revision": "2026-10-26",
  "pack": {
   "name": "las-vegas-strip-assets-2026-10-26.tar.gz",
-  "url": "https://github.com/BitmagicAI/las-vegas-strip/releases/download/assets-2026-10-26/las-vegas-strip-assets-2026-10-26.tar.gz",
-  "bytes": 508434812,
-  "sha256": "45af4dcef17d643a95b4d42425bedc10a8a2f0e5a62bd98ae97b2b58ae19eb9f"
+  "url": "",
+  "bytes": 0,
+  "sha256": ""
  },
- "count": 1337,
- "bytes": 994004052,
+ "count": 1341,
+ "bytes": 1028529596,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18150626,
-   "sha256": "5211148a1a659e298d9d60d5778c1a53af918364d147057b9d22a7ab64ed81a9",
+   "bytes": 18209546,
+   "sha256": "6e778cee7c4b827e5e352451993acb0cdf9af10aa821622117ac19275d03a7a3",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13067632,
-   "sha256": "cc0f368be656d6078a0d71de84a18dd84f8147280864b3aa1c0f83c541e9eead",
+   "bytes": 13067440,
+   "sha256": "d8213eb901845962083932caa9a7dd3e1856d0a4ccf4f7aa108cc17ea20edf6a",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109768556,
-   "sha256": "63685cd4b6ba8bfea564159eb64c97a1513c336eaf3d1ad45ef293aed3543d70",
+   "bytes": 109768032,
+   "sha256": "cd7b765fa3e67ac2b673a402920286884b37b6f5fc40cb39df39f1888914b713",
    "kind": "optimized"
   },
   {
@@ -6437,6 +6437,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/hofbrauhaus-exterior-collision.bin",
+   "bytes": 292,
+   "sha256": "788a43c8f8599b0da5f83067c350a7e6bfd0de118465c95d1e86e34fc6e3ba3d",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/hofbrauhaus-exterior.glb",
+   "bytes": 21411208,
+   "sha256": "8ed09d0c18cfea1e58d768a98d54e23092b707890b95e2ff3a8a28d278486fe7",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/hofbrauhaus-interior-collision.bin",
+   "bytes": 2728,
+   "sha256": "c5f44d6ae317c42cfd82e740f5ca02423072c2bbeab854cb54d5de2f70f235e3",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/hofbrauhaus-interior.glb",
+   "bytes": 13052244,
+   "sha256": "5242d135172d3d8dde2fdba2d1034b329d8b09207a231206c88e91c902990b20",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/horseshoeArrival-exterior-collision.bin",
    "bytes": 4640,
    "sha256": "bc3655fed53466481261f872477ed2b3fe899bc88b6c470f9685fca3c09c611e",
@@ -7842,8 +7866,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 336024,
-   "sha256": "7657ea06fb65bf58b971def9e9bd5ff54360cd9d35483e23e05ba9ed1fe63afb",
+   "bytes": 336892,
+   "sha256": "2316317d0737989f56055d6183d4848bcb3826c960936a2eec805664caf3faee",
    "kind": "original"
   },
   {

@@ -38,7 +38,9 @@ export class FilmLook {
         const floods=this.atmosphere.floods;
         // Warm uplights actually illuminate iron/stone; opaque architecture receives no emissive boost.
         for(let i=2;i<6;i++){const l=floods[i]!,a=(i-2)*Math.PI*.5+Math.PI*.25;l.position.set(74.5+Math.cos(a)*35,5,400.5+Math.sin(a)*35);l.target.position.set(74.5,105,400.5);l.distance=230;l.angle=.34;l.intensity=11000*power;}
-        for(let i=6;i<10;i++){const l=floods[i]!;l.position.set(-170-(i-6)*43,5,390+(i-6)*6);l.target.position.set(-260-(i-6)*32,80,310);l.distance=240;l.angle=.43;l.intensity=14000*power;}
+        // Flood 6 stands in front of the podium: from 5 m its beam struck the podium cornice 13 m away, a blown-out spot over
+        // the south arrival arches (2026-10-26); from 14 m, just over the podium roof, its whole cone reaches the tower.
+        for(let i=6;i<10;i++){const l=floods[i]!;l.position.set(-170-(i-6)*43,i===6?14:5,390+(i-6)*6);l.target.position.set(-260-(i-6)*32,80,310);l.distance=240;l.angle=.43;l.intensity=14000*power;}
         // Paris balloon: light the existing blue/gold surface, not the entire resort material.
         for(let i=10;i<12;i++){const l=floods[i]!,side=i===10?-1:1;l.position.set(42+side*21,12,535);l.target.position.set(42,31,511.5);l.distance=75;l.angle=.53;l.penumbra=.8;l.color.setHex(0xb5d6ff);l.intensity=2500*power;}
     }
