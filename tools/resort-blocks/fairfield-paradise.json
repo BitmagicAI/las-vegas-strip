@@ -1,0 +1,37 @@
+{
+  "id": "fairfield-paradise",
+  "name": "Fairfield Inn Paradise",
+  "status": "active",
+  "mappedIds": [
+    "way/565876914"
+  ],
+  "claim": {
+    "issue": 367,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/367",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.marriott.com/en-us/hotels/lasfi-fairfield-inn-las-vegas-convention-center/photos/",
+      "observed": "Official exterior fi-lasfi-hotel-exterior-28478 and gallery lobby photos personally inspected. Four-storey warmgray walls/dark perimeterbands; curved broad entrancecanopy/stonepier/pairedmetalposts. Lobby whitecolumns/woodfloor/greenchairs/tansofa/lightstonefrontdesk/greenbackwall and wooddivider."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.11969,-115.15420,19z/data=!3m1!1e3",
+      "observed": "Personally inspected aerial: offset east-west hotelwings, westernarrival, southrecess pool and eastparking."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped4storeys/15m estimate; facade and canopy dimensions fitted.",
+    "Lobby arrangement inferred from photographs, not a measured plan."
+  ],
+  "remaining": [
+    "Author and inspect exterior and public lobby",
+    "Check scoped routes, preservation and matching performance",
+    "Pool courtyard, guestrooms and full private/back-of-house interiors outside initial pass"
+  ],
+  "nextPass": {
+    "priority": "Reference-supported exterior and public lobby",
+    "checkpoint": "Claim367confirmed, official imagery and aerial inspected. No geometryyet."
+  }
+}

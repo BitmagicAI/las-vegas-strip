@@ -1666,7 +1666,13 @@
         "date": "2026-10-28",
         "reason": "Verified scoped exterior pass; user requests sustained city-wide expansion. Interior, site and fine facade requirements retained in block record."
       }
+    },
+    {
+      "id": "fairfield-paradise",
+      "name": "Fairfield Inn Paradise",
+      "status": "active",
+      "record": "fairfield-paradise.json"
     }
   ],
-  "active": "delfriscos-paradise"
+  "active": "fairfield-paradise"
 }
