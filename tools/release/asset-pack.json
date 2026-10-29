@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1621,
- "bytes": 1164082569,
+ "count": 1625,
+ "bytes": 1164926410,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20160173,
-   "sha256": "0de01f6f136184787ca945aade49be645fce07f15b5861c4d7084a274ff4bf05",
+   "bytes": 20183770,
+   "sha256": "402545b64dca9f385d47fab87f7df7a3f331c77be5cf2d8c954eeb58bdc8f154",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13049088,
-   "sha256": "725d92b8e6e264ace2572a38313b9543094c3fc7ab5341a27fc29ad7e2577ec2",
+   "bytes": 13048580,
+   "sha256": "6ec1ca6e35564620a825990708f808c55145057d46b4c2fd4c811971a6b2b81f",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109699244,
-   "sha256": "2cf4cc5aa1de17cf68d20545bf8d345848d78e5dcddf0f57d8189560ffc84db0",
+   "bytes": 109699096,
+   "sha256": "ae0588306dacbb763b9f10ae9fc1ce6e021edab9f9a3fdd20e87e5ed3fd7047d",
    "kind": "optimized"
   },
   {
@@ -5729,6 +5729,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/barrys-boxing-exterior-collision.bin",
+   "bytes": 336,
+   "sha256": "049e391a8e22aa8dbbc50cd5125d6731465e0ff702eded796410cfd2db71bf88",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/barrys-boxing-exterior.glb",
+   "bytes": 599928,
+   "sha256": "508d281d1ec5d718b49ae468aa166b5cd64d76db78818b28edbd96454b0e9f97",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/barrys-boxing-interior-collision.bin",
+   "bytes": 840,
+   "sha256": "83155ee090455d346ffa1c0a398871da5da61b9ba9f1e1068631ca6043c5ce4c",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/barrys-boxing-interior.glb",
+   "bytes": 219072,
+   "sha256": "ad8256ffdcb7bdc1632aedf25c79fc6b6b62f35d984e176d35808bab01f1bf33",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/bellagioArcadePiers-exterior-collision.bin",
    "bytes": 3916,
    "sha256": "58885a8bf866ced3566bb03e6bc557239ad53b5e8173890952cba62c21c33412",
@@ -9522,8 +9546,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 387846,
-   "sha256": "91d9ae9b6739584e4af2f34d3aaf7a950382b84fe2cb56b16054bc379f5efc41",
+   "bytes": 388570,
+   "sha256": "45a1e49cc9fe8b4fc328f1bd7a3a4235b30a5692f652fd26d66e31cb4580936d",
    "kind": "original"
   },
   {
