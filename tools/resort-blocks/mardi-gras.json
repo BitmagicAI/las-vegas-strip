@@ -1,7 +1,7 @@
 {
   "id": "mardi-gras",
   "name": "Mardi Gras Hotel & Casino",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/33962963",
     "way/33963206",
@@ -128,7 +128,7 @@
     "Repeat matching performance on an idle machine: this pass has concurrent unrelated render jobs and slow courtyard/stair samples. Keep current measurements rather than replacing them with earlier faster results."
   ],
   "nextPass": {
-    "priority": "Advance to claimed Speedee Mart after saving verified meeting-room pass; retain architectural refinement.",
+    "priority": "Retain recorded fidelity/performance refinement; advance whole-city work to Speedee Mart.",
     "checkpoint": "Meeting pass installed and inspected:344033source triangles,588clearances,64walkingsegments,713batches/1489assets. Final capped-table/trim/shutter rooms inspected. Performance limited by concurrent render jobs; preserve slow samples. Save PR339, then move to claimed Speedee Mart issue340."
   },
   "verification": {
