@@ -1,0 +1,84 @@
+{
+  "id": "carls-jr-sahara",
+  "name": "Carl\u2019s Jr. Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/926281500"
+  ],
+  "claim": {
+    "issue": 328,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/328",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/329"
+  },
+  "sources": [
+    {
+      "url": "https://locations.carlsjr.com/nv/las-vegas/3866-w-sahara",
+      "observed": "Official address3866."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=0bKRtmh5rt8lzhQE-tJIfw&heading=0&pitch=0",
+      "observed": "Feb2025south: tanstucco,redcanopy,frontwindows,leftentry,monumentsign."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=X_h4b1R_dH78JRY6zpG-Bg&heading=325&pitch=0",
+      "observed": "Feb2025southeast: redtiledhipped/mansardroof,creamflatuppercenter,eastgableentrytowerwithredcanopy,sidewindows/paleclosedservicewing."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped15x24m irregular footprint. Heights and hidden roof/services estimated. No interior without location-specific reference. GenericownerJun2019photoexcluded because it depicts different facade."
+  ],
+  "implemented": [
+    "Original10839triangle exterior source, red tile mansard, cream roof center, south windows, setback doorway, east gable entrance, drive-through window, low sign and hedges. Source front/roof visually inspected.",
+    "46ownedfaces replaced,9560groups preserved,eightcurrentcityclearance samples pass.",
+    "Three installed daylight views and walking return inspected. Four actual walking segments pass. Current708batch bake;1473 packagedassets0missing;typecheck/publicchecks pass. Optimizedexterior 0.58 MiB."
+  ],
+  "remaining": [
+    "Original simplified lettering lacks exact script/star identity; glass is opaque, foliage regular and roof tiles repetitive.",
+    "Exact mansard depths, rear/service elevations and equipment positions estimated. Interior remains closed without verified current room references.",
+    "Existing roads/parking preserved and differ from photographed site. Entrance approach includes roughly14cm grade change; route passes."
+  ],
+  "nextPass": {
+    "priority": "Continue unclaimed city buildings; verify current FLEX references before modeling.",
+    "checkpoint": "Installed exterior firstpassverified; retain all fidelity discrepancies. No photorealisticcompletionclaim."
+  },
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.6,
+        18.9
+      ],
+      [
+        16.7,
+        18.8
+      ],
+      [
+        16.7,
+        18.8
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.7,
+        18.7
+      ],
+      [
+        16.7,
+        18.1
+      ],
+      [
+        16.7,
+        18.8
+      ]
+    ],
+    "note": "960x540 ultra neutraldaylight matching cameras;sharedmachine,notlocked60fpsguarantee"
+  },
+  "evidence": [
+    "build/city-exteriors/carls-jr-sahara-source-review",
+    "build/city-exteriors/carls-jr-sahara-installed",
+    "build/city-exteriors/carls-jr-sahara-baseline/results.json",
+    "build/city-exteriors/carls-jr-sahara-walk/results.json",
+    "build/city-exteriors/carls-jr-sahara-preservation.json"
+  ]
+}
