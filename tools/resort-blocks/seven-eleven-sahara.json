@@ -1,0 +1,80 @@
+{
+  "id": "seven-eleven-sahara",
+  "name": "7-Eleven Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/1018431818",
+    "way/943068966"
+  ],
+  "claim": {
+    "issue": 407,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/407"
+  },
+  "sources": [
+    {
+      "url": "https://www.7-eleven.com/locations/nv/las-vegas/2691-w-sahara-13690",
+      "accessed": "2026-10-29",
+      "observed": "Official address confirmation."
+    },
+    {
+      "url": "https://www.google.com/maps/search/7-Eleven+2691+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "provider": "K",
+      "imageDate": "September2026",
+      "photoId": "CIABIhCmqY5BzRG9gEUCD4GuJEx3",
+      "observed": "Personally inspected red/tan masonry, dark gray projecting storefront fascia, striped sign, glazed north entry, red tile base and bins."
+    },
+    {
+      "url": "https://www.google.com/maps/search/7-Eleven+2691+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "provider": "Kay",
+      "imageDate": "October2021",
+      "photoId": "CIHM0ogKEICAgID6u6vWWQ",
+      "observed": "Personally inspected pale square tile, drop ceiling, gray wood wall, refrigerated shelving, snacks, cream beverage counter and hot food glass case."
+    },
+    {
+      "url": "https://www.google.com/maps/search/7-Eleven+2691+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "provider": "Lorenzo Warfel",
+      "imageDate": "October2024",
+      "photoId": "CIHM0ogKEICAgICXouO2DA",
+      "observed": "Personally inspected gray pump portal, rounded white header, black display/keypad, hoses/nozzles and pump number8. Four double pumps inferred, unconfirmed."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1438177,-115.1772308,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected separate north fuel canopy, south flat roof shop with north entrance, western Teddy Drive approach."
+    }
+  ],
+  "uncertainDimensions": [
+    "Height and fixture placement inferred; no measured public floor plan.",
+    "2021 interior may differ today; pump count inferred from numbering."
+  ],
+  "components": [
+    {
+      "id": "store-exterior",
+      "status": "planned"
+    },
+    {
+      "id": "fuel-canopy",
+      "status": "planned"
+    },
+    {
+      "id": "public-shop",
+      "status": "planned"
+    },
+    {
+      "id": "approach",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build, install and visually inspect exterior/public shop; verify walks and performance.",
+    "Full site/service details and current interior changes need further references."
+  ],
+  "nextPass": {
+    "priority": "Store, fuel canopy and public shop",
+    "checkpoint": "407 claim confirmed after400openissue/PRscan;405 released afterf01b89apush."
+  }
+}

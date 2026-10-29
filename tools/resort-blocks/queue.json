@@ -1802,7 +1802,13 @@
       "name": "Bourbon Street Sahara",
       "status": "refinement-deferred",
       "record": "bourbon-street-sahara.json"
+    },
+    {
+      "id": "seven-eleven-sahara",
+      "name": "7-Eleven Sahara",
+      "status": "active",
+      "record": "seven-eleven-sahara.json"
     }
   ],
-  "active": "bourbon-street-sahara"
+  "active": "seven-eleven-sahara"
 }
