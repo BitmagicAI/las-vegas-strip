@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1533,
- "bytes": 1136752214,
+ "count": 1535,
+ "bytes": 1137298615,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19686428,
-   "sha256": "e6bb3a594a23a7a0690e57d616bace52e573e3273a3a457af8a297fae224a4ea",
+   "bytes": 19704171,
+   "sha256": "92c2483d218c6b27c4c079940f53e499f4ab626002af1fd496754ca3a61eddde",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13056668,
-   "sha256": "25e25130e4f697b3df4cc7a7f87bde60a8bd67a56ba4407045a050891123c205",
+   "bytes": 13056452,
+   "sha256": "2ba43d1c5fccd8db9e1e932aaf7314e2d319c531dfee755c74aa9f36aa7bea1d",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109729916,
-   "sha256": "3ba1ff08fb055151945d8eddf36957b9d1b565852845019c8777177487f0a975",
+   "bytes": 109729088,
+   "sha256": "ea78470b12df7ed128a6540da2b8d5154b6d14dfdff59c9e930c82e11cb45ef7",
    "kind": "optimized"
   },
   {
@@ -6269,6 +6269,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/delfriscos-paradise-exterior-collision.bin",
+   "bytes": 832,
+   "sha256": "6a7e3b5b56e6f68bedc0aff38c8f6df343f429d656edb43cf20869a9887d83d8",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/delfriscos-paradise-exterior.glb",
+   "bytes": 528564,
+   "sha256": "babe10a385863ef984dd15a3f3bc7f0c1e1553ff903b4ab492ec66974475c82d",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/dennys-flamingo-exterior-collision.bin",
    "bytes": 308,
    "sha256": "ddca4d690375ba8bb5c9238fcdd812878486dac26067d121599b0f09c020c757",
@@ -9006,8 +9018,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 372532,
-   "sha256": "9f59393fffb7cde46b1a194876989bf10d45ccd95e9f67a02e192b2776a4e5d3",
+   "bytes": 372838,
+   "sha256": "75e182aca8e6f221bf592db17e987cafa0ddc017205fcd8565bb6014e03b4e90",
    "kind": "original"
   },
   {

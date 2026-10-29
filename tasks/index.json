@@ -14644,11 +14644,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Author and inspect installed scoped exterior",
-    "Verify routes, current city preservation and matching performance",
-    "Further interior reference needed"
+    "Public interiors absent; full layout insufficiently evidenced",
+    "Refine shutter spacing, side/service elevations, landscaping, surface detail and sign typography",
+    "All facade heights and roof pitches fitted, not measured",
+    "Entrance doors, drapery, pendant fixtures and planting remain simplified"
    ],
    "record": "tools/resort-blocks/delfriscos-paradise.json",
    "buildings": [],
@@ -14660,7 +14661,13 @@
     "writes": [
      "tools/resort-blocks/delfriscos-paradise.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/city-exteriors/install-delfriscos-paradise.py",
+     "tools/strip-landmarks/export_delfriscos_paradise.py",
+     "tools/strip-landmarks/test-delfriscos-paradise.mjs",
+     "tools/city-exteriors/check-delfriscos-paradise-preservation.py",
+     "tools/strip-landmarks/delfriscos_paradise.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

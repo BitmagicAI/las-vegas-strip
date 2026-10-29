@@ -1,7 +1,7 @@
 {
   "id": "delfriscos-paradise",
   "name": "Del Friscos Paradise",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/205741855"
   ],
@@ -9,7 +9,8 @@
     "issue": 365,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/365",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/366"
   },
   "sources": [
     {
@@ -30,12 +31,29 @@
     "Room layout insufficiently evidenced; do not invent private areas."
   ],
   "remaining": [
-    "Author and inspect installed scoped exterior",
-    "Verify routes, current city preservation and matching performance",
-    "Further interior reference needed"
+    "Public interiors absent; full layout insufficiently evidenced",
+    "Refine shutter spacing, side/service elevations, landscaping, surface detail and sign typography",
+    "All facade heights and roof pitches fitted, not measured",
+    "Entrance doors, drapery, pendant fixtures and planting remain simplified"
   ],
   "nextPass": {
-    "priority": "Original exterior reconstruction",
-    "checkpoint": "Claim365 confirmed; aerial and entrance/dining photo references inspected. No geometry authored yet."
+    "priority": "Reference-supported public rooms and material/site refinement",
+    "checkpoint": "Verified scoped exterior pass. Corrected burieddoor and pyramidalroof; four final installed daylight views inspected.257static/14actualwalksegments pass. Not photorealistic completion."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/delfriscos-paradise-baseline/results.json",
+    "initial": "build/city-exteriors/delfriscos-paradise-initial/results.json",
+    "after": "build/city-exteriors/delfriscos-paradise-refined/results.json"
+  },
+  "validation": {
+    "triangles": 8745,
+    "optimizedMiB": 0.5,
+    "staticChecks": 257,
+    "walkingSegments": 14,
+    "walk": "build/city-exteriors/delfriscos-paradise-walk-refined/results.json",
+    "preservation": "build/city-exteriors/delfriscos-paradise-preservation.json",
+    "views": "Three initial and four corrected installed daylight views personally inspected",
+    "bakeBatches": 726,
+    "packageAssets": 1535
   }
 }

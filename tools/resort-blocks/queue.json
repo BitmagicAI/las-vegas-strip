@@ -1660,8 +1660,12 @@
     {
       "id": "delfriscos-paradise",
       "name": "Del Friscos Paradise",
-      "status": "active",
-      "record": "delfriscos-paradise.json"
+      "status": "refinement-deferred",
+      "record": "delfriscos-paradise.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped exterior pass; user requests sustained city-wide expansion. Interior, site and fine facade requirements retained in block record."
+      }
     }
   ],
   "active": "delfriscos-paradise"
