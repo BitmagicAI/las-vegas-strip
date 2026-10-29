@@ -1506,7 +1506,13 @@
         "date": "2026-10-28",
         "reason": "Installed first pass inspected and walked; fidelity and performance refinements retained while advancing city coverage."
       }
+    },
+    {
+      "id": "herbs-rye",
+      "name": "Herbs & Rye",
+      "status": "refinement-deferred",
+      "record": "herbs-rye.json"
     }
   ],
-  "active": "mt-everest-sahara"
+  "active": "herbs-rye"
 }

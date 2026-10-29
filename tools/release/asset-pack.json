@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1457,
- "bytes": 1109287793,
+ "count": 1461,
+ "bytes": 1110612722,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19316419,
-   "sha256": "489fa24bf67f0658cf406c0224f3fe848643dd870c5ea2bff30e8ae3dc3387a6",
+   "bytes": 19331936,
+   "sha256": "5304f5bb7fe4eb75ed5ec57398f060675add3ec47e54eac2367136969ded830a",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13061884,
-   "sha256": "6ff55159ac06f9fef7b8ff5d9ff303514941c6807b04d786296b2118c100faf7",
+   "bytes": 13061496,
+   "sha256": "8d04c090a5ac3560aec62fcf3f6d7355ebc353bebd9df7de584327a594b0da88",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109746308,
-   "sha256": "d19dd40eeb66fc4690f0636ee0493b8117ff7ca5bd09518527fb3d8fa3f6477d",
+   "bytes": 109746072,
+   "sha256": "7f5c9796dc14783a8fdfa44b505451b09aeea63f0f3fa13d4fe9671855d85454",
    "kind": "optimized"
   },
   {
@@ -6725,6 +6725,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/herbs-rye-exterior-collision.bin",
+   "bytes": 468,
+   "sha256": "1f114d8932a5299ea55e6421b10ce05e16af4ab0871081bd0dc7a5856dbf916f",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/herbs-rye-exterior.glb",
+   "bytes": 315988,
+   "sha256": "ae477c472b453fd1912e57fb77ff2987b173375a7dfa4f5dea7b17a138c328f7",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/herbs-rye-interior-collision.bin",
+   "bytes": 604,
+   "sha256": "afc0759b4307b74a786a4f338c3e54c3d228404b05e11a6be4a8db7a0c0bceac",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/herbs-rye-interior.glb",
+   "bytes": 992080,
+   "sha256": "ef59c13dcbc2d163f790c4411cb18de854aa8d968543e1f1ae82f1f349422f3a",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/hgvExterior-exterior-collision.bin",
    "bytes": 2816,
    "sha256": "b305627337ca4a57ac644905a440f1cdc6cf218af003a08bdf22320eb863da53",
@@ -8550,8 +8574,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 358124,
-   "sha256": "36a2d4b47c008e0fc9298e1c70e4038da5738b691c649d1d6d559edbf755d987",
+   "bytes": 359020,
+   "sha256": "43a2c024f22c082939a2c82b0e5a72f3e5482b21124ee17c3ba110ab3d235bec",
    "kind": "original"
   },
   {
