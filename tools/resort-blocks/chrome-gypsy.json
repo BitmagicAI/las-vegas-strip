@@ -1,0 +1,67 @@
+{
+  "id": "chrome-gypsy",
+  "name": "2640 Highland / Chrome Gypsy frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/464694106"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1415274,-115.1701212,3a,100y,109.75h,90t/data=!3m4!1e1!3m2!1sQ8SEukDlySOb3uHBEeKoRw!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January2021",
+      "observed": "Shared charcoal flat fascia, north tattoo bay red raised lettering, recessed glazed bays, square piers, tight parking and north boundary wall. North tattoo door has gold lettering and lower multicolored stripes."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1412429,-115.170251,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "North neighbor of Barry gym: rectangular white flat roof, equipment, east service yard. Mapped way464694106."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chrome+Gypsy+Tattoo+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "2640Highland identity. Photos mainly tattoo closeups: small glimpses of tan flooring/yellow and cyan walls/black seats/framed art, insufficient whole interior. No source artwork to be copied."
+    },
+    {
+      "url": "https://www.bestprosintown.com/nv/las-vegas/chrome-gyspy-tattoo-/",
+      "accessed": "2026-10-29",
+      "observed": "Directory marks closed, conflicting with Maps listing. Current tenancy unverified; reconstruction uses dated facade evidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Facade heights and tenant widths inferred; shared building not entirely tattoo shop.",
+    "Current business identity uncertain; no public interior planned without stronger room references."
+  ],
+  "components": [
+    {
+      "id": "shared-exterior",
+      "status": "pending"
+    },
+    {
+      "id": "glazed-storefronts",
+      "status": "pending"
+    },
+    {
+      "id": "roof-service-details",
+      "status": "pending"
+    },
+    {
+      "id": "public-approaches",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Implement and inspect original exterior at current footprint.",
+    "Validate approaches and preservation; measure matching performance and fresh bake.",
+    "Current identity, unseen elevations and exact dimensions uncertain."
+  ],
+  "nextPass": {
+    "priority": "Shared industrial storefront exterior",
+    "checkpoint": "423claimconfirmed; research scope committed before implementation."
+  },
+  "claim": {
+    "issue": 423,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/423"
+  }
+}
