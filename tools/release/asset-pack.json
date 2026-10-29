@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1529,
- "bytes": 1136158551,
+ "count": 1533,
+ "bytes": 1136752214,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19665769,
-   "sha256": "a76498efb59b640dce266495e394fce833237ca8d349cba466520ddb3b741fe5",
+   "bytes": 19686428,
+   "sha256": "e6bb3a594a23a7a0690e57d616bace52e573e3273a3a457af8a297fae224a4ea",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13056988,
-   "sha256": "3a62cd4e471fb0f499863f80a0996aa7296d17a79f0544660b27c96938c8a0a3",
+   "bytes": 13056668,
+   "sha256": "25e25130e4f697b3df4cc7a7f87bde60a8bd67a56ba4407045a050891123c205",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109731732,
-   "sha256": "6ab2522718e4d400e002dd504cff133fa80cd6188d7256c1de9d7bf8db7ecab7",
+   "bytes": 109729916,
+   "sha256": "3ba1ff08fb055151945d8eddf36957b9d1b565852845019c8777177487f0a975",
    "kind": "optimized"
   },
   {
@@ -7253,6 +7253,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/lolos-hughes-exterior-collision.bin",
+   "bytes": 1628,
+   "sha256": "91d98dfdc906c914f236e8111cb1fdb5bab8b1c8c2257ce930630a0acf74b29b",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/lolos-hughes-exterior.glb",
+   "bytes": 484312,
+   "sha256": "badbc68bd56e1f53a76e3d8827382f34c089a276ed8ea63e3064b9ae75b1d61d",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/lolos-hughes-interior-collision.bin",
+   "bytes": 588,
+   "sha256": "e94d86116e247ee1b9a5aa6b2f84c65bdf8ed9bb49e23030f05c04d7e083c0ac",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/lolos-hughes-interior.glb",
+   "bytes": 87772,
+   "sha256": "74b93f6b1e73a21e83b7c0c6225ed726c8e4422be7ec22b89a8e072c3b44bf4d",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/luvIt-exterior-collision.bin",
    "bytes": 476,
    "sha256": "2a9241ad26965cf3ba662754ec73d194b703ed629372ac74efb54d8e2ca39b90",
@@ -8982,8 +9006,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 371692,
-   "sha256": "3914f57231ba61a3d3f37165992eb613834fe898ffc59f3d84d79752d59dbdb5",
+   "bytes": 372532,
+   "sha256": "9f59393fffb7cde46b1a194876989bf10d45ccd95e9f67a02e192b2776a4e5d3",
    "kind": "original"
   },
   {

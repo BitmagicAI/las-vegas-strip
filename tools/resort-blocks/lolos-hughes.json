@@ -1,0 +1,69 @@
+{
+  "id": "lolos-hughes",
+  "name": "325 Hughes Center retail / Lo-Los",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1001560963",
+    "way/1423439018"
+  ],
+  "claim": {
+    "issue": 363,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/363",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/364"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Lo-Los+Chicken+Waffles+325+Hughes+Center+Las+Vegas",
+      "observed": "Rea Clair March2026 photo CIABIhAgbvHR5iICwWTJaFfFHzFY personally inspected. Tall silver framed glazing, pale horizontally layered stone, dark projecting portal and wide silver roof overhang. Image capture February2026."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.115055,-115.1585693,20z/data=!3m1!1e3",
+      "observed": "Personally inspected aerial. Continuous north-south retail strip, taller southern restaurant roof, southern covered patio, east parking and west Howard Hughes Parkway."
+    },
+    {
+      "url": "https://loloschickenandwaffles.com/location/las-vegas-nv",
+      "observed": "Official link from Maps, unavailable behind security verification; not used as visual evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Sixt+325+Hughes+Center+Las+Vegas",
+      "observed": "Official business July2026 photo CIABIhC086lkSHO3-0nw-kE8Ji5W personally inspected: taupe stepped frontage, stone pier bases, thin silver canopies, tall glazing, white SIXT sign and orange underline. Official Feb2026 photo CIABIhAvAp6Oyku03aH2LhTCk2zN personally inspected: orange counters with black tops/monitors, dark tiled floor, white grid ceiling and strip lights, orange cube stools, gray waiting chairs, gray car mural. Room dimensions inferred; do not copy photo mural."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights and facade measurements fitted, not measured.",
+    "Mapped named restaurant outline covers only southern projection; contiguous main retail footprint included in scope."
+  ],
+  "remaining": [
+    "Lo-Lo\u2019s dining room not authored; interior references insufficient",
+    "Refine material, sign typography, site landscaping, patio fixtures and side/rear elevations",
+    "Northern end glazing and all room dimensions inferred; verify against closer references",
+    "SIXT furniture, monitors, wall artwork and lighting remain simplified"
+  ],
+  "nextPass": {
+    "priority": "Reference-supported facade, site and room refinement",
+    "checkpoint": "Scoped pass verified. Entrance ramp resolves actual walking obstruction; all 26 walking segments and 375 static samples pass. Six final installed daylight views personally inspected. Simplified materials/furniture and inferred room plan remain; not photorealistic completion."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/lolos-hughes-baseline/results.json",
+    "initial": "build/city-exteriors/lolos-hughes-initial/results.json",
+    "refined": "build/city-exteriors/lolos-hughes-refined/results.json",
+    "interior": "build/city-exteriors/lolos-public-arrival/results.json",
+    "after": "build/city-exteriors/lolos-hughes-arrival/results.json"
+  },
+  "validation": {
+    "triangles": 5239,
+    "optimizedMiB": {
+      "exterior": 0.46,
+      "interior": 0.08
+    },
+    "staticChecks": 375,
+    "walkingSegments": 26,
+    "walk": "build/city-exteriors/lolos-hughes-walk-arrival/results.json",
+    "preservation": "build/city-exteriors/lolos-hughes-preservation.json",
+    "views": "Three final exterior and three final public office daylight views personally inspected",
+    "bakeBatches": 725,
+    "packageAssets": 1533
+  }
+}

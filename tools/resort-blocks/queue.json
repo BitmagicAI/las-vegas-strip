@@ -1646,7 +1646,17 @@
       "name": "365 Hughes Center retail",
       "status": "refinement-deferred",
       "record": "hughes-retail.json"
+    },
+    {
+      "id": "lolos-hughes",
+      "name": "325 Hughes Center retail / Lo-Los",
+      "status": "refinement-deferred",
+      "record": "lolos-hughes.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped exterior and SIXT public office pass. User requests sustained city-wide coverage; remaining fidelity and Lo-Lo dining interior retained in block record."
+      }
     }
   ],
-  "active": "hughes-retail"
+  "active": "lolos-hughes"
 }
