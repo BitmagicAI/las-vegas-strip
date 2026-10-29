@@ -1,0 +1,56 @@
+{
+  "id": "chick-fil-a-paradise",
+  "name": "Chick-fil-A Flamingo and Paradise",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/381396713",
+    "way/1423939476",
+    "way/1423939478"
+  ],
+  "claim": {
+    "issue": 371,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/371",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/372"
+  },
+  "sources": [
+    {
+      "url": "https://www.chick-fil-a.com/press-room/announcing-chick-fil-a-flamingo-and-paradise",
+      "observed": "Official August2022 opening announcement confirms 4165 Paradise."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chick-fil-A+4165+Paradise+Las+Vegas",
+      "observed": "Damian Esquivel June2023 photo CIHM0ogKEICAgIDx-tjYBg personally inspected: stepped white parapets, dark coping, stone base, black glazing and awnings, red brand panels, pylon and desert planting."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.11348,-115.15409,20z/data=!3m1!1e3",
+      "observed": "Personally inspected aerial: north-south main, west attached drive canopy, separate west order canopy, west parking and drive loop."
+    }
+  ],
+  "uncertainDimensions": [
+    "Facade heights and details fitted, not measured",
+    "Interior image results were other branches and rejected; no site-specific interior plan"
+  ],
+  "remaining": [
+    "Public interior absent; site-specific plan and interior evidence needed",
+    "Monument sign and full site planting/paving remain unfinished",
+    "Finer stone, glazing, brand and facade proportions need refinement; dimensions fitted"
+  ],
+  "nextPass": {
+    "priority": "Site and finer facade refinement, reference-supported public interior",
+    "checkpoint": "19748triangles/.60MiB optimized.233staticchecks and14actualwalkingsegments pass.Threefinalinstalleddaylightviews personally inspected.83ownedfaces/collidersremoved,9560groupspreserved.729batchfreshbake/1543assets. Scoped exterior pass only, not photorealistic completion."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/chick-fil-a-paradise-baseline/results.json",
+    "baselineSummary": "960x540 DPR1 ultra warm median16.6\u201318.5ms,p9517.6\u201319.8ms.",
+    "final": "build/city-exteriors/chick-fil-a-paradise-final/results.json",
+    "summary": "960x540 DPR1 ultra warm median16.6\u201318.7ms,p9518.0\u201319.9ms. Baseline16.6\u201318.5/p9517.6\u201319.8. Not locked60."
+  },
+  "verification": {
+    "views": "build/city-exteriors/chick-fil-a-paradise-final",
+    "walking": "build/city-exteriors/chick-fil-a-paradise-walk-final/results.json",
+    "staticChecks": 233,
+    "actualWalkingSegments": 14
+  }
+}

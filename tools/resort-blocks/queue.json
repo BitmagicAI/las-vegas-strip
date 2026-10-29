@@ -1686,7 +1686,17 @@
         "date": "2026-10-28",
         "reason": "Verified scoped shared exterior and patio; continue city-wide expansion with interior, roof and fine fidelity discrepancies retained."
       }
+    },
+    {
+      "id": "chick-fil-a-paradise",
+      "name": "Chick-fil-A Flamingo and Paradise",
+      "status": "refinement-deferred",
+      "record": "chick-fil-a-paradise.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped exterior/open canopies; continue city-wide work with interior, site and fine fidelity remaining."
+      }
     }
   ],
-  "active": "collective-paradise"
+  "active": "chick-fil-a-paradise"
 }
