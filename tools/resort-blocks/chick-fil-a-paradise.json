@@ -1,0 +1,44 @@
+{
+  "id": "chick-fil-a-paradise",
+  "name": "Chick-fil-A Flamingo and Paradise",
+  "status": "active",
+  "mappedIds": [
+    "way/381396713",
+    "way/1423939476",
+    "way/1423939478"
+  ],
+  "claim": {
+    "issue": 371,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/371",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.chick-fil-a.com/press-room/announcing-chick-fil-a-flamingo-and-paradise",
+      "observed": "Official August2022 opening announcement confirms 4165 Paradise."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chick-fil-A+4165+Paradise+Las+Vegas",
+      "observed": "Damian Esquivel June2023 photo CIHM0ogKEICAgIDx-tjYBg personally inspected: stepped white parapets, dark coping, stone base, black glazing and awnings, red brand panels, pylon and desert planting."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.11348,-115.15409,20z/data=!3m1!1e3",
+      "observed": "Personally inspected aerial: north-south main, west attached drive canopy, separate west order canopy, west parking and drive loop."
+    }
+  ],
+  "uncertainDimensions": [
+    "Facade heights and details fitted, not measured",
+    "Interior image results were other branches and rejected; no site-specific interior plan"
+  ],
+  "remaining": [
+    "Author and inspect scoped original exterior and open canopies",
+    "Preserve offsite canopy way/1423939475",
+    "Verify actual walking, scoped collision and matching performance",
+    "Interior requires site-specific reference evidence"
+  ],
+  "nextPass": {
+    "priority": "Exterior and drive-through canopies",
+    "checkpoint": "Claim371 confirmed janiverse. No geometry edits yet."
+  }
+}
