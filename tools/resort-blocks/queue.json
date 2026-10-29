@@ -1862,7 +1862,13 @@
       "name": "Airgas Highland retail",
       "status": "refinement-deferred",
       "record": "airgas-highland.json"
+    },
+    {
+      "id": "red-d-arc-highland",
+      "name": "Red-D-Arc Highland",
+      "status": "active",
+      "record": "red-d-arc-highland.json"
     }
   ],
-  "active": "airgas-highland"
+  "active": "red-d-arc-highland"
 }

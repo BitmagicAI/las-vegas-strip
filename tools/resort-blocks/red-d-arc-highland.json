@@ -1,0 +1,62 @@
+{
+  "id": "red-d-arc-highland",
+  "name": "Red-D-Arc Highland",
+  "status": "active",
+  "mappedIds": [
+    "way/464694105"
+  ],
+  "claim": {
+    "issue": 427,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/427"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1418891,-115.1700049,3a,90y,110h,90t/data=!3m4!1e1!3m2!1snzXNeHGzfaxZlp6fwunYiA!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January 2026",
+      "observed": "Personally inspected: broad projecting cream roof, white grooved block wall, dark windows, central entry/address2620, left-third Red-D-Arc sign. Adjacent Rebel wall/tower excluded."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Red-D-Arc+2620+Highland+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Address2620Highland, location36.1419376,-115.1698202. Listing photos generic offsite projects, not usable local facade references."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1423126,-115.1694362,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected white roof and shared industrial yard south of Airgas."
+    }
+  ],
+  "uncertainDimensions": [
+    "Exact height, canopy projection, window widths and unseen elevations inferred.",
+    "Neighbor Rebel wall/tower and separate Airgas retail excluded. No supported public interior layout."
+  ],
+  "components": [
+    {
+      "id": "full-exterior",
+      "status": "pending"
+    },
+    {
+      "id": "canopy-storefront",
+      "status": "pending"
+    },
+    {
+      "id": "roof-service-detail",
+      "status": "pending"
+    },
+    {
+      "id": "public-approach",
+      "status": "pending"
+    }
+  ],
+  "remaining": [
+    "Implement original exterior from dated reference.",
+    "Inspect installed daylight views; static/live routes; preservation and matching performance.",
+    "Package optimized assets with fresh bake and archive."
+  ],
+  "nextPass": {
+    "priority": "Full exterior and public approach",
+    "checkpoint": "427 claim confirmed; source scope before geometry. Prior Airgas verified/pushed73e1c6f and426ready;425released."
+  }
+}
