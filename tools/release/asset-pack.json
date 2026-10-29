@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1631,
- "bytes": 1166207646,
+ "count": 1633,
+ "bytes": 1166524234,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20219596,
-   "sha256": "ca10353502bdf58f521e90205252db2ad773906788819cc3ae9935d649429e18",
+   "bytes": 20232048,
+   "sha256": "665a3af13eb7dad2b0c5a1e085654695a73e7e6ab8d0c08904c672b8bbbf6384",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13048600,
-   "sha256": "69a07c1e52c51cf65cebc4163edbb2306ce8d04412154e79298b6aea99585998",
+   "bytes": 13048548,
+   "sha256": "cec0cbf3a665adf02b5597bfdedd4ad2e77cb82ba446ee765d63fd3738ad6675",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109698708,
-   "sha256": "9964ee01c87c07f78e6fbbe87ff851e903d6d2ac6289f11ea39e1a296bd8fdaa",
+   "bytes": 109698468,
+   "sha256": "019ae348f414ca83589ac5cfd6ba213d368f48b277420ac6fd40f9ef20ab7d6b",
    "kind": "optimized"
   },
   {
@@ -8609,6 +8609,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/red-d-arc-highland-exterior-collision.bin",
+   "bytes": 740,
+   "sha256": "4f3c5187b732e41686e0e5fc5e34513aa14906bdbd35803af539e6055abdcb6c",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/red-d-arc-highland-exterior.glb",
+   "bytes": 303368,
+   "sha256": "55ec54e486c7abc16c6319c5f66b8aaeb5c6171be7ae06c54bce55175b96b01d",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/residenceInnHughes-exterior-collision.bin",
    "bytes": 632,
    "sha256": "3d729fbe2316f8a31ba6fe8e36e43508b30c0341cc7f2715b2e9dd9257a568c5",
@@ -9582,8 +9594,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 389688,
-   "sha256": "c708e9704549ff5aafce6f1f95e858d181f481900123676e281a6ecc3f9d5052",
+   "bytes": 390008,
+   "sha256": "28937533f4175da7b9585a28484af1cbb32bd27af445f394fcd769f3f323c43d",
    "kind": "original"
   },
   {

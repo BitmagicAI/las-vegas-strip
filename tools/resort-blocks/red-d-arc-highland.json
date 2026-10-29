@@ -1,14 +1,15 @@
 {
   "id": "red-d-arc-highland",
   "name": "Red-D-Arc Highland",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/464694105"
   ],
   "claim": {
     "issue": 427,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/427"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/427",
+    "pullRequest": 428
   },
   "sources": [
     {
@@ -35,28 +36,65 @@
   "components": [
     {
       "id": "full-exterior",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "canopy-storefront",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "roof-service-detail",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "public-approach",
-      "status": "pending"
+      "status": "verified"
     }
   ],
   "remaining": [
-    "Implement original exterior from dated reference.",
-    "Inspect installed daylight views; static/live routes; preservation and matching performance.",
-    "Package optimized assets with fresh bake and archive."
+    "Exact heights, canopy projection and window dimensions remain inferred.",
+    "Side/rear openings and rooftop equipment need corroborating close views.",
+    "Masonry vertical grooves, rough aggregate finish, sign font, fine weathering and glazing depth remain simplified; not photorealistic completion.",
+    "Service-yard equipment, boundary walls and parking markings remain outside this pass; adjacent Rebel structure excluded.",
+    "No public interior is modeled because no local interior layout was established."
   ],
   "nextPass": {
-    "priority": "Full exterior and public approach",
-    "checkpoint": "427 claim confirmed; source scope before geometry. Prior Airgas verified/pushed73e1c6f and426ready;425released."
+    "priority": "Reference-led fine finish and site refinement",
+    "checkpoint": "Three final installed views personally inspected; 133 static samples and 14 actual walking segments passed; current optimized bake packaged."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/red-d-arc-highland-baseline/results.json",
+    "after": "build/city-exteriors/red-d-arc-highland-final/results.json",
+    "settings": "960x540 DPR1 ultra neutral daylight, 180 warm measured frames per view, three matched exterior cameras.",
+    "missingMetrics": [
+      "GPU/CPU spans",
+      "cold transition stalls",
+      "draw calls"
+    ]
+  },
+  "evidence": {
+    "preservation": "build/city-exteriors/red-d-arc-highland-preservation.json",
+    "staticRoutes": "build/strip-landmarks/red-d-arc-highland-route-audit.json",
+    "initialViews": "build/city-exteriors/red-d-arc-highland-initial",
+    "correctedPreview": "build/city-exteriors/red-d-arc-highland-preview-v2",
+    "finalViews": "build/city-exteriors/red-d-arc-highland-final",
+    "walking": "build/city-exteriors/red-d-arc-highland-walk-final/results.json"
+  },
+  "checks": {
+    "staticSamples": 133,
+    "walkingSegments": 14,
+    "preservedGroups": 9560,
+    "removedOwnedFaces": 16,
+    "typecheck": "passed",
+    "bitmagicCheck": "passed",
+    "publicCheck": "passed with existing inventory email warning",
+    "cityBakeBatches": 757,
+    "runtimeAssets": 1633
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/red-d-arc-highland-exterior.glb": "55ec54e486c7abc16c6319c5f66b8aaeb5c6171be7ae06c54bce55175b96b01d",
+      "runtime-assets/strip-landmarks/red-d-arc-highland-exterior-collision.bin": "4f3c5187b732e41686e0e5fc5e34513aa14906bdbd35803af539e6055abdcb6c"
+    }
   }
 }
