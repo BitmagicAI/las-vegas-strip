@@ -1,0 +1,47 @@
+{
+  "id": "morning-news",
+  "name": "Morning News Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/905241567"
+  ],
+  "claim": {
+    "issue": 387,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/387"
+  },
+  "sources": [
+    {
+      "url": "https://www.morningnewslasvegas.com/",
+      "provider": "Morning News official",
+      "accessed": "2026-10-29",
+      "observed": "Current tenant and3154 W Sahara address; replaces legacy mapped Dairy Queen name."
+    },
+    {
+      "url": "https://www.google.com/maps/search/3154+West+Sahara+Las+Vegas",
+      "provider": "Google Maps: Malanie adams / Vanessa Jensen",
+      "accessed": "2026-10-29",
+      "imageDate": "FacadeJanuary2024; diningOctober2026",
+      "observed": "Facade CIHM0ogKEICAgIC1w_TMoQE: cream stucco/dark coping, yellow curved awnings, stone piers, blue sign, black glazing/rail. Dining CIABIhDWXWlQOZY-uKHujtL6BF3F: yellow banquette, pale tables, gray woven chairs/brown frames, herringbone floor, fluted wall and upper wood band, white ceiling/fans. Original art required."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1446811,-115.1841221,20z/data=!3m1!1e3",
+      "provider": "Google Maps aerial",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Chamfered south footprint, flat main roof, western projection, north parking entrance, drive wrapping south. No extraction."
+    }
+  ],
+  "uncertainDimensions": [
+    "Height and room layout fitted, not measured; facade north orientation inferred from parking approach."
+  ],
+  "remaining": [
+    "Build original exterior and supported public dining room.",
+    "Verify installed views/walking/current collision/performance.",
+    "Full site, private kitchen and fine fidelity remain."
+  ],
+  "nextPass": {
+    "priority": "Build scoped exterior/public dining",
+    "checkpoint": "Claim387confirmed; source photos and aerial personally inspected, no matching other claim."
+  }
+}

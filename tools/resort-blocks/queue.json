@@ -1742,7 +1742,13 @@
       "name": "Denny\u2019s West Sahara",
       "status": "refinement-deferred",
       "record": "dennys-sahara.json"
+    },
+    {
+      "id": "morning-news",
+      "name": "Morning News Sahara",
+      "status": "active",
+      "record": "morning-news.json"
     }
   ],
-  "active": "dennys-sahara"
+  "active": "morning-news"
 }
