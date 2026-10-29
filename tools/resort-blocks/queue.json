@@ -1200,9 +1200,15 @@
     {
       "id": "paradise-smoke-shop",
       "name": "Paradise small retail frontage",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "paradise-smoke-shop.json"
+    },
+    {
+      "id": "bonfire",
+      "name": "Bonfire Naples",
+      "status": "active",
+      "record": "bonfire.json"
     }
   ],
-  "active": "paradise-smoke-shop"
+  "active": "bonfire"
 }

@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1353,
- "bytes": 1033549076,
+ "count": 1355,
+ "bytes": 1035114425,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18294718,
-   "sha256": "d1b353d9864940a0b49bc4fb4f7cea1a22aca52ab561d1c2a957fccb31a9e4aa",
+   "bytes": 18356471,
+   "sha256": "f021633bb8c54ca0d4aac359190c0971183ce65e5da58ccba299b88d4f0bb7c3",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13067224,
-   "sha256": "174ca109f17d9831e83e358f097c80e0236b2cfb10f706c8524a2455d1734298",
+   "bytes": 13066820,
+   "sha256": "6efe96edc75a0d6f73de0d8c907f137bd153b160bf1bd743003d17dce81796aa",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109767596,
-   "sha256": "c524fc82d55df4d7cbf90196247bed5696a78ef68e9ebc2e0105fab61369ca53",
+   "bytes": 109767256,
+   "sha256": "a0e86257ac37ed8c4b46520476b0ad05b323600164145bcff5ecd16810dd6629",
    "kind": "optimized"
   },
   {
@@ -5765,6 +5765,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/bonfire-exterior-collision.bin",
+   "bytes": 356,
+   "sha256": "af767719223ab85ea49a6c4454d86c27c2d5e4d371c6e7e1cb5fcc5d19534d39",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/bonfire-exterior.glb",
+   "bytes": 1503872,
+   "sha256": "97f4689d58e806d5253199e974f8ccdc4d5f1b87554a7c0dbe16a32eb6637218",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/bonitaTerrace-exterior-collision.bin",
    "bytes": 4712,
    "sha256": "5956972071330edef9218369eea726480f4f81a28e60e5775b8933dc319c86b1",
@@ -7938,8 +7950,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 338672,
-   "sha256": "6ec5dbdaba7ef26b886cbc6c6345c4d65a9b36bac949a4dc34d10ed119e96d1d",
+   "bytes": 338784,
+   "sha256": "199e027846341c268350b6cb409ca32108697a3b64b74f28216f31b9e7a02908",
    "kind": "original"
   },
   {
