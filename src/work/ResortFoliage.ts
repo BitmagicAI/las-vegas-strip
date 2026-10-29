@@ -1,5 +1,5 @@
 import {foliageSettings} from './FoliageSettings.js';
-import {glbUrl} from './OptimizedGlb.js';
+import {runtimeUrl} from './RuntimeAssets.js';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshStandardNodeMaterial,type Node} from 'three/webgpu';
@@ -47,7 +47,8 @@ export class ResortFoliage {
         const loader=new GLTFLoader();
         // 363,425 lawn tufts, 8 bytes each (Plants.ts), decoded in the meshopt workers while the plants download
         const placing=loadPlants('/foliage/bellagio-placements.bin');placing.catch(()=>{});
-        for(const file of ['tree-0','tree-1','tree-2','grass-0','grass-1'])this.assets.push((await loader.loadAsync(await glbUrl(`/foliage/${file}.glb`))).scene);
+        // public/foliage/ holds the optimized copies (tools/optimize/foliage-trees.mjs; sources in tools/foliage/models/).
+        for(const file of ['tree-0','tree-1','tree-2','grass-0','grass-1'])this.assets.push((await loader.loadAsync(runtimeUrl(`/foliage/${file}.glb`))).scene);
         // The middle tree LOD's runtime copy has no textures of its own (tools/optimize/foliage-trees.mjs): its meshes take
         // tree-0's materials, which are the same Poly Haven maps.
         const near=new Map<string,THREE.Material>();

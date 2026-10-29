@@ -92,6 +92,10 @@ JSON at runtime.
 - **Sphere:** `sphere.bin`, `media.bin`, the GLBs and collision, and the media `media.bin` names.
 - **Other:** the PBR strips (`sets.bin` and three WebP layers), the jeep, and the `world.json` assets served from `build/`.
 
+The garden foliage is not in the set: `public/foliage/` holds the trees' and grass's optimized copies (5.8 MiB, committed;
+`node tools/optimize/foliage-trees.mjs` makes them from the sources in `tools/foliage/models/`, which the Blender
+exporters import). `check-runtime-glbs.py` fails when a source changed after its copy was made.
+
 After a new loader or a new runtime folder, add a rule there. Then confirm that a fresh clone plays with nothing
 missing:
 
@@ -128,8 +132,6 @@ Not optimized yet:
 
 - **No KTX2.** Textures upload uncompressed to the GPU. Adding KTX2 needs the `ktx` tool, plus a game-side KTX2 wait,
   because the vendored engine has neither the meshopt decoder nor `expectGltfLoaderSupport`.
-- **`public/foliage/tree-*.glb` (35 MiB).** Optimized copies exist only in a full working checkout, so a clone loads
-  the originals.
 
 ## Why Git LFS
 

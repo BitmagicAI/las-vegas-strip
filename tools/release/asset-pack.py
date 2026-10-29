@@ -79,7 +79,7 @@ def runtime_files():
         want.setdefault(path, why)
 
     # GLBs: every runtime GLB the optimizer enumerated (tools/optimize/optimize-runtime-glbs.mjs walks the same loaders)
-    # (public/ GLBs such as foliage/tree-0.glb are committed and load as their originals in a clone)
+    # (the garden's public/foliage/*.glb are committed as their optimized copies: tools/optimize/foliage-trees.mjs)
     for path in runtime_glbs():
         add(path, 'runtime GLB (build/optimized/manifest.json)')
     # world.json assets served from build/ (doors in worldProfileData.doors)

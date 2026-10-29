@@ -38,7 +38,7 @@ in `docs/project-records/` still mention home-folder paths (about 35 files, harm
 
 **Size.** The committable set is about 2,980 files and 163 MB (without `engine/` and the CLI skills). No file exceeds 50 MB. The largest are:
 
-- `public/foliage/tree-0.glb` (28 MB);
+- `tools/foliage/models/tree-0.glb` (28 MB, the tree's source; the game loads a 5.3 MB copy from `public/foliage/`);
 - `public/foliage/bellagio-placements.json` (13 MB);
 - `src/work/characters/animations/npc-idles.json` (11 MB);
 - nine character GLBs (about 6 MB each).

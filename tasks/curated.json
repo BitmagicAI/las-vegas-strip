@@ -228,34 +228,6 @@
    "owner": "maintainer"
   },
   {
-   "id": "tool-pack-foliage",
-   "title": "Ship the optimized foliage to clones",
-   "area": "tooling",
-   "size": "S",
-   "priority": "P2",
-   "summary": "public/foliage/tree-0/1/2.glb (34 MiB) are committed originals. Their meshopt copies exist only in a full working checkout (build/optimized/foliage/), because glbUrl() serves a copy only when its manifest entry matches the original's size and modification time, and a git checkout resets modification times. A clone therefore loads the originals.",
-   "items": [
-    "Choose between moving the tree GLBs to build/foliage/ (asset pack, out of git) and letting glbUrl() trust a pack-pinned manifest entry by size and SHA-256",
-    "Update tools/release/asset-pack.py and ResortFoliage.ts accordingly"
-   ],
-   "files": {
-    "reads": [
-     "src/work/OptimizedGlb.ts",
-     "src/work/ResortFoliage.ts",
-     "tools/release/asset-pack.py"
-    ],
-    "writes": [
-     "src/work/OptimizedGlb.ts",
-     "src/work/ResortFoliage.ts",
-     "tools/release/asset-pack.py"
-    ]
-   },
-   "acceptance": [
-    "In a clean clone, the network panel shows the meshopt trees (about 7 MiB rather than 34 MiB)",
-    "node tools/release/smoke-clone.mjs passes"
-   ]
-  },
-  {
    "id": "perf-characters-webp",
    "title": "Lighter character downloads",
    "area": "performance",

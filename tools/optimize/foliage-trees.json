@@ -1,0 +1,71 @@
+{
+ "about": "The garden foliage served from public/foliage/ and the source each copy was made from. Written by tools/optimize/foliage-trees.mjs; read by tools/optimize/check-runtime-glbs.py.",
+ "files": {
+  "public/foliage/tree-0.glb": {
+   "source": "tools/foliage/models/tree-0.glb",
+   "sourceSha256": "f749a638b5fbc800564fb13657eef67f93e4a2c907ca5db499103d64ac82d373",
+   "sha256": "24dba4b57dfdf3f4ea70560e5a209ee6a3bdef2312d9e7417873a6d592335e0b",
+   "bytes": 5553616,
+   "preset": "hero-prop",
+   "overrides": [
+    "--code=none",
+    "--pos-bits=16",
+    "--base=webp:1024:90",
+    "--orm=webp-lossless:512",
+    "--simplify=0.002"
+   ],
+   "variant": "foliage"
+  },
+  "public/foliage/tree-1.glb": {
+   "source": "tools/foliage/models/tree-1.glb",
+   "sourceSha256": "96c2282d22cd564997aca237f609f7268d7976efcd50844c01eafd23f37354ce",
+   "sha256": "cbe4c6915ed965a2128b3b9340086ad68ddba251310c9f2d7976204762fd7253",
+   "bytes": 326328,
+   "preset": "hero-prop",
+   "overrides": [
+    "--code=none",
+    "--pos-bits=16",
+    "--base=webp:1024:90",
+    "--orm=webp-lossless:512"
+   ],
+   "variant": "foliage (textureless; tree-0 materials at load)"
+  },
+  "public/foliage/tree-2.glb": {
+   "source": "tools/foliage/models/tree-2.glb",
+   "sourceSha256": "dfba07523a244af17bf990ac3e007f508e4cf568072d55df4a2f7b6776f74f52",
+   "sha256": "d395458c2bd53f8939ca9398005182483a29c51aa93c9cf8ddaefca8d89c6f22",
+   "bytes": 150272,
+   "preset": "hero-prop",
+   "overrides": [
+    "--code=none",
+    "--pos-bits=16",
+    "--base=webp:1024:90",
+    "--orm=webp-lossless:512"
+   ],
+   "variant": "foliage"
+  },
+  "public/foliage/grass-0.glb": {
+   "source": "tools/foliage/models/grass-0.glb",
+   "sourceSha256": "1c66157b464bb94346d22ce67868c494231af7a7712108bc27607c7eafb2574e",
+   "sha256": "15017e2fe39a2973bc01d2c229db632774fde82c96257481a33800b4c531af08",
+   "bytes": 5236,
+   "preset": "hero-prop",
+   "overrides": [
+    "--code=none",
+    "--pos-bits=16",
+    "--base=webp:1024:90",
+    "--orm=webp-lossless:512"
+   ],
+   "variant": "foliage"
+  },
+  "public/foliage/grass-1.glb": {
+   "source": "tools/foliage/models/grass-1.glb",
+   "sourceSha256": "4150b26798e5f10c64de1937a6147c13b8834c58989c8ba54fd251371a7b44e5",
+   "sha256": "4150b26798e5f10c64de1937a6147c13b8834c58989c8ba54fd251371a7b44e5",
+   "bytes": 2116,
+   "preset": "hero-prop",
+   "overrides": [],
+   "variant": "source (the encoder could not make it smaller)"
+  }
+ }
+}

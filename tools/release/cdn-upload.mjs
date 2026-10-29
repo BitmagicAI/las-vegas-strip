@@ -6,7 +6,8 @@
 //   node tools/release/cdn-upload.mjs --dry-run  # list what would go up
 //   node tools/release/cdn-upload.mjs --limit 5  # only the first few (a test)
 //
-// The bytes are runtime-assets/ (the optimized copies, exactly what a clone runs) plus public/foliage/. Each file goes
+// The bytes are runtime-assets/ (the optimized copies, exactly what a clone runs) plus public/foliage/ (the garden's
+// optimized copies, tools/optimize/foliage-trees.mjs). Each file goes
 // up through the CLI's own signed-upload lane (`bitmagic assets add` uses it) under worlds/v3/<this game's id>/, named
 // <sha256 prefix>-<file name>: uploads are immutable and cannot be deleted, so a changed file gets a new name and an
 // unchanged one is never sent twice. The map is saved after every file, so a dropped connection resumes. JSON and the
@@ -39,19 +40,8 @@ map.gameId = gameId;
 
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 // (path as the game requests it, without the leading slash) -> file on disk
-// public/ GLBs (the garden planting) upload their optimized copy (build/optimized/, tools/optimize/foliage-trees.mjs)
-// while it was made from the file now on disk, as src/work/OptimizedGlb.ts serves it on the dev server.
-const optimized = fs.existsSync(path.join(ROOT, 'build/optimized/manifest.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'build/optimized/manifest.json'), 'utf8')).files : {};
-const publicFile = (p) => {
-  const source = path.join(ROOT, 'public', p), entry = optimized[p];
-  if (!entry) return source;
-  const stat = fs.statSync(source);
-  if (stat.size === entry.size && Math.floor(stat.mtimeMs / 1000) === Math.floor(entry.modified / 1000) && fs.existsSync(path.join(ROOT, entry.optimized))) return path.join(ROOT, entry.optimized);
-  console.warn(`${p}: its optimized copy is out of date; uploading the original (re-run node tools/optimize/foliage-trees.mjs)`);
-  return source;
-};
 const wanted = [...list.files.map((f) => [f.path, path.join(ROOT, 'runtime-assets', f.path.slice('build/'.length))]),
-  ...PUBLIC.map((p) => [p, publicFile(p)])];
+  ...PUBLIC.map((p) => [p, path.join(ROOT, 'public', p)])];
 
 const save = () => fs.writeFileSync(MAP, JSON.stringify({ about: map.about, gameId: map.gameId, files: Object.fromEntries(Object.entries(map.files).sort()) }, null, 1) + '\n');
 // files the game no longer loads leave the map (each published game keeps the map it was built with)
