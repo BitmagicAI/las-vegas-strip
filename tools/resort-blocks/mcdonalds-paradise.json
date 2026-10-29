@@ -1,0 +1,96 @@
+{
+  "id": "mcdonalds-paradise",
+  "name": "McDonalds Paradise Road",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/205499657"
+  ],
+  "claim": {
+    "issue": 336,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/336",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/337"
+  },
+  "sources": [
+    {
+      "url": "https://www.mcdonalds.com/us/en-us/location/6926.html",
+      "observed": "Official3700SParadise address."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2SsztU7IU8Y3BQ6aE5QDLA&heading=323.6&pitch=0",
+      "observed": "Dec2022parkinglot panorama visually inspected: brownstucco, pale irregularmasonry entrance/westpanels, cream/yellowstriped canopy, aluminumglazing, thinwhitecap, roofbrow andhighpylon. Latest at thisposition; subsequentchangeunknown."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped29.66x13.87m shell; elevations and rear/services inferred. Publicinterior unsupported. Mapsfirstgalleryimage incorrectlydepictsBurgerKing andisexcluded."
+  ],
+  "implemented": [
+    "Mapped exterior with brown stucco, pale masonry panels, striped entrance and window canopies, glazing frames, white cap and roof eyebrow, original arches and pylon, service windows and roof equipment.",
+    "Scoped replacement removed 22 owned shell/collision faces; 9560 city groups retain vertices, metadata and retained face order."
+  ],
+  "remaining": [
+    "Interior deferred without reliable public layout evidence.",
+    "December 2022 reference is older; current facade condition and rear/service arrangement remain uncertain.",
+    "Simplified lettering, opaque glazing, plain stucco, repetitive roof treatment and masonry need fidelity refinement. Existing paving retained. Not photorealistic completion.",
+    "Original south-front camera was inside a neighboring building; excluded from visual acceptance. Supplemental close entrance view inspected. Walking return faces away; route result validates movement only."
+  ],
+  "nextPass": {
+    "priority": "Advance to next claimed building; retain fidelity refinement.",
+    "checkpoint": "Installed southwest, roof and supplemental entrance images inspected; four entrance approach walking segments passed."
+  },
+  "verification": {
+    "sourceTriangles": 10860,
+    "routeSamples": 9,
+    "actualWalkingSegments": 4,
+    "installedViews": [
+      "build/city-exteriors/mcdonalds-paradise-installed",
+      "build/city-exteriors/mcdonalds-paradise-entry"
+    ],
+    "preservation": "build/city-exteriors/mcdonalds-paradise-preservation.json",
+    "bakeBatches": 712,
+    "packagedAssets": 1485,
+    "missingAssets": 0,
+    "typecheck": "passed",
+    "publicCheck": "passed; existing inventory email warning"
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/mcdonalds-paradise-baseline/results.json",
+    "after": "build/city-exteriors/mcdonalds-paradise-installed/results.json",
+    "baselineMedianP95Ms": [
+      [
+        16.7,
+        18.5
+      ],
+      [
+        16.7,
+        19.3
+      ],
+      [
+        16.8,
+        18.6
+      ]
+    ],
+    "afterMedianP95Ms": [
+      [
+        16.7,
+        18.9
+      ],
+      [
+        16.6,
+        19.4
+      ],
+      [
+        16.6,
+        19.5
+      ]
+    ],
+    "note": "South-front obstructed and excluded from visual acceptance; matching performance comparison retained. Supplemental entrance 16.7/19.2ms."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/mcdonalds-paradise-exterior-collision.bin": "1529a4f164a133eaed556c7d6eaac36a1d5ef953bdfb2551ffbe0692dba684f8",
+      "runtime-assets/strip-landmarks/mcdonalds-paradise-exterior.glb": "14364128eb814e4ce229c8bb64551bc2d87a1ebf672b192d6f03f6d1defb0944"
+    }
+  }
+}

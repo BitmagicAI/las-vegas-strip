@@ -1560,7 +1560,13 @@
       "name": "India Palace Twain",
       "status": "refinement-deferred",
       "record": "india-palace-twain.json"
+    },
+    {
+      "id": "mcdonalds-paradise",
+      "name": "McDonalds Paradise Road",
+      "status": "refinement-deferred",
+      "record": "mcdonalds-paradise.json"
     }
   ],
-  "active": "india-palace-twain"
+  "active": "mcdonalds-paradise"
 }
