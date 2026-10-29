@@ -1,0 +1,95 @@
+{
+  "id": "sahara-2600",
+  "name": "2600 Sahara retail and Bespoke Kitchen",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1018431835"
+  ],
+  "claim": {
+    "issue": 413,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/413",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/414"
+  },
+  "sources": [
+    {
+      "url": "https://bespokealldaycafelv.com/",
+      "accessed": "2026-10-29",
+      "observed": "Official cafe location2600WestSahara#101."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1450381,-115.1772941,3a,75y,324.84h,96.75t/data=!3m4!1e1!3m2!1sADL_lyNSkqh-sOs5AwHPFQ!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "August2024",
+      "observed": "Personally inspected mint cafe portal, white storefronts, gray sloped metal caps, green Adam&Eve portal, taller white/gray bridal facade."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.14514,-115.17666,19z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected full shared strip, roof HVAC array, projecting front bays and north service edge."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Bespoke+Kitchen+2600+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected ownerNov2024photo CIHM0ogKEICAgIDvnaSvjQE and SDSept2026CIABIhCFz-epJbcLMoB6sAWBzF0L: wood tables/light openback chairs, concrete floor, wood planter divider, dark exposed ceiling and ducts, white pendants, metal service counter. Dimensions/layout inferred."
+    }
+  ],
+  "uncertainDimensions": [
+    "Tenant partitions, interior dimensions, unseen elevations fitted from photographs; no measured plan.",
+    "Dated signage and architectural forms represent pictured references, not proof of every current tenancy."
+  ],
+  "components": [
+    {
+      "id": "shared-retail-exterior",
+      "status": "implemented"
+    },
+    {
+      "id": "bespoke-public-dining",
+      "status": "implemented"
+    },
+    {
+      "id": "entry-routes",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "Other tenant interiors, kitchen/private rooms, complete parking and full landscaping remain excluded.",
+    "Portal widths/heights, unseen service elevations, tenant partition dimensions and interior layout fitted, not measured.",
+    "Fine finish fidelity, storefront-specific display/signage and more exact furniture/planting remain deferred; not photorealistic completion."
+  ],
+  "nextPass": {
+    "priority": "Full site and finer facade/material fidelity",
+    "checkpoint": "Four final installed daylight views personally inspected;101currentcitystatic and16actualwalksegments passed.750batch bake1611assets, type/Bitmagic/public checks passed."
+  },
+  "implemented": [
+    "Original 26,674-triangle shared retail exterior and public cafe interior. Stepped facade follows mapped footprint; portals and standing-seam cap fitted to dated references.",
+    "Public dining includes open-back chairs, wood tables and planter divider, dark exposed ducts, pendant lights and service counter. Interior dimensions and layout inferred.",
+    "Only 34 owned shell/collision faces replaced; 9,560 city groups retained. No runtime code or public road edits."
+  ],
+  "validation": {
+    "static": "101 current-city checks passed",
+    "walking": "16 actual walking segments passed through entry, dining and service approach",
+    "visual": "Four final installed views personally inspected; refined planter vegetation verified",
+    "packaging": "750-batch current bake;1611runtimeassets;type/Bitmagic/public checks passed, existing email warning only"
+  },
+  "evidence": [
+    "build/city-exteriors/sahara-2600-baseline/results.json",
+    "build/city-exteriors/sahara-2600-initial/results.json",
+    "build/city-exteriors/sahara-2600-refined/results.json",
+    "build/city-exteriors/sahara-2600-final/results.json",
+    "build/city-exteriors/sahara-2600-walk-final/results.json",
+    "build/city-exteriors/sahara-2600-preservation.json"
+  ],
+  "performance": {
+    "method": "960x540 DPR1 ultra, matched front/roof/east/dining views",
+    "summary": "Baseline median16.7each,p9519.3/19.6/26.2/26.6ms; final16.7/16.7/16.7/16.8,p9518.1/19.2/19.3/19.2ms. No locked60claim."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/sahara-2600-interior.glb": "71d9c9165a34dc09c299a62bb414b7302d8a06ae8c0e402c937b6819c9142360",
+      "runtime-assets/strip-landmarks/sahara-2600-exterior-collision.bin": "2ddddc86a6f2abff278b41af385d6d92c073c88b8e4f87edc3eb301775a23544",
+      "runtime-assets/strip-landmarks/sahara-2600-exterior.glb": "6a7f0fb46680a57e1dc04fc5acb7450040c1bfff115aca38f6a1ee28691368b7",
+      "runtime-assets/strip-landmarks/sahara-2600-interior-collision.bin": "1415505a4c2cd9c1f8c6b15a58274e92b2d54817e390d93d5573c85aa936fa35"
+    }
+  }
+}
