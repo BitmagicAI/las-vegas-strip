@@ -1,7 +1,7 @@
 {
   "id": "fedex-hughes",
   "name": "FedEx Office Hughes Center",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/159969363"
   ],
@@ -9,7 +9,8 @@
     "issue": 359,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/359",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/360"
   },
   "sources": [
     {
@@ -30,12 +31,32 @@
     "Interiorreference is2020; currentlayoutunverified. Private/service rooms absent."
   ],
   "remaining": [
-    "Author exterior and supported public room",
-    "Targeted install, preservationaudit/currentbake",
-    "Inspect installed exterior/interior andwalk; measure performance"
+    "Side facades, site landscaping, finish variation, copier/furniture detail and glass fidelity remain simplified",
+    "Public room dimensions and arrangement inferred from dated 2020 photograph; private rooms not modeled"
   ],
   "nextPass": {
-    "priority": "Baseline then original model",
-    "checkpoint": "Issue359claimrequested; no geometry edits yet."
+    "priority": "Reference-led material/site refinement",
+    "checkpoint": "Installed, visually inspected and walked. 158 static checks and20 actual walking segments pass. Exterior median16.6\u201316.7/p9518.7\u201319.1ms;interior16.6\u201316.7/p9517.6\u201317.8ms at960x540ultra. Current723batchbake/1527assets."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/fedex-hughes-baseline/results.json",
+    "initialExterior": "build/city-exteriors/fedex-hughes-initial/results.json",
+    "initialInterior": "build/city-exteriors/fedex-hughes-public-initial/results.json",
+    "after": "build/city-exteriors/fedex-hughes-refined/results.json",
+    "interior": "build/city-exteriors/fedex-hughes-public-refined/results.json"
+  },
+  "validation": {
+    "staticChecks": 158,
+    "walkingSegments": 20,
+    "walking": "build/city-exteriors/fedex-hughes-walk-refined/results.json",
+    "preservation": "build/city-exteriors/fedex-hughes-preservation.json",
+    "triangles": 5802,
+    "optimizedMiB": {
+      "exterior": 0.23,
+      "interior": 0.46
+    },
+    "bakeBatches": 723,
+    "visual": "Three initial exterior views plus corrected front and all three corrected interior views personally inspected. Letter burial, reversed signs and copier orientation corrected.",
+    "limits": "Stylized first fidelity pass, not photorealistic completion; exact public layout inferred."
   }
 }
