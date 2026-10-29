@@ -1282,9 +1282,19 @@
     {
       "id": "canes-tropicana",
       "name": "Raising Canes West Tropicana",
+      "status": "refinement-deferred",
+      "record": "canes-tropicana.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Installed pass verified; exact facade and inferred dining layout refinements retained while advancing city-wide."
+      }
+    },
+    {
+      "id": "former-starbucks-tropicana",
+      "name": "Former Starbucks 3575 W Tropicana",
       "status": "active",
-      "record": "canes-tropicana.json"
+      "record": "former-starbucks-tropicana.json"
     }
   ],
-  "active": "canes-tropicana"
+  "active": "former-starbucks-tropicana"
 }
