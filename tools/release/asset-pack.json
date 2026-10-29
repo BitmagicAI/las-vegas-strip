@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1587,
- "bytes": 1151799356,
+ "count": 1591,
+ "bytes": 1152472497,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20029136,
-   "sha256": "e0f97ebf0bd19acf7324f6810a996819b704abae392990dd05037a92b813f2a3",
+   "bytes": 20032765,
+   "sha256": "683c39be810f9cfc1d61a9fadca3c85687213b94394e87e39a57de37e2e7df17",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13050472,
-   "sha256": "008164e9555d4058bfd78eff5f51f3e6a6eeb1db72d23fc33101362c8bf4b807",
+   "bytes": 13050236,
+   "sha256": "7865a8c9b4e2573c5fda7b6cb4546b7cc696a34ba3b7c27044753894bf29e28e",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109704040,
-   "sha256": "203c6535df52a819c0bf9789cc98255cb0bc9ba4f69e826851ad60f0df1ecf4f",
+   "bytes": 109703988,
+   "sha256": "75439bb3465aa2d07e3929778a7f7ef41650a112c52437e7a27e380c0312f27c",
    "kind": "optimized"
   },
   {
@@ -9245,6 +9245,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/vape-pirates-sahara-exterior-collision.bin",
+   "bytes": 1288,
+   "sha256": "7db0dd5c3e1abed163979b6d93cbab12b3cbc0abb56ee92c1d7cfafcd6afe2e9",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/vape-pirates-sahara-exterior.glb",
+   "bytes": 121276,
+   "sha256": "6192a6451bdd31f9b932693d79775aab59d18e7e94ed269b833507fd71dd7804",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/vape-pirates-sahara-interior-collision.bin",
+   "bytes": 780,
+   "sha256": "83154b44ae95d457d5ab34a41e5c49d3a091cf9b17433922e27c803f315c9d19",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/vape-pirates-sahara-interior.glb",
+   "bytes": 545744,
+   "sha256": "cab4c82bd64f81b28a9b3ce519c05d63d381c3ea5e82f7a5e4f5051e08a66340",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/venetian-exterior-collision.bin",
    "bytes": 68272,
    "sha256": "a8ce6a57d82c2e19d794d943b82a8912d0d581f3223f7347e291f7cf4041dc8e",
@@ -9318,8 +9342,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 381978,
-   "sha256": "f6c6664f55c9097cef2de21cdc4eccfc6f27c7f16113b56a4c696727851992df",
+   "bytes": 382690,
+   "sha256": "8ca61075354fe2865e8fcfe2d21d6e45c563a018912d8283fa5a31e5708a43ce",
    "kind": "original"
   },
   {

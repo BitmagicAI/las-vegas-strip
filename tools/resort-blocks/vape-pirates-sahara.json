@@ -1,14 +1,15 @@
 {
   "id": "vape-pirates-sahara",
   "name": "Vape Pirates Sahara",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/943068961"
   ],
   "claim": {
     "issue": 401,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/401"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/401",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/402"
   },
   "sources": [
     {
@@ -53,23 +54,54 @@
   "components": [
     {
       "id": "storefront-roof",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "public-shop",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "public-approach",
-      "status": "planned"
+      "status": "implemented"
     }
   ],
   "remaining": [
-    "Build and inspect exterior/shop, validate routes/preservation/performance and package.",
-    "Retain fitted layout/fine-fidelity uncertainties and exclude private areas."
+    "Full site paving/landscape, measured side/rear facade details and accurate sign typography remain.",
+    "Public room dimensions and cabinet arrangement are inferred; private areas excluded.",
+    "Flat finishes, sparse generic counter merchandise and simplified shelves/fixtures require further fidelity work; not photorealistic completion."
   ],
   "nextPass": {
-    "priority": "Reference-supported exterior/public shop",
-    "checkpoint": "401claim confirmed, no overlapping claim after398openissue scan;MiRanchito399released."
+    "priority": "Full site and finer facade/interior fidelity",
+    "checkpoint": "Installed exterior/public shop verified and packaged; six views,80static/16walking checks passed."
+  },
+  "implemented": [
+    "Original26512-triangle exterior/public shop: ribbed parapet, barred glazed frontage, entry, service equipment, tiled room, black racks and glass display cases.",
+    "Corrected wall-rack orientation, counter side panels, light caps and storefront lettering; original generic packages, no copied product artwork."
+  ],
+  "evidence": [
+    "build/city-exteriors/vape-pirates-sahara-baseline/results.json",
+    "build/city-exteriors/vape-pirates-sahara-final/results.json",
+    "build/city-exteriors/vape-pirates-sahara-inside-final/results.json",
+    "build/city-exteriors/vape-pirates-sahara-walk-final/results.json",
+    "build/city-exteriors/vape-pirates-sahara-preservation.json"
+  ],
+  "validation": {
+    "static": "80 current-city checks passed.",
+    "walking": "16 final default-bake segments passed, including entry and cross aisle.",
+    "visual": "Six final installed daylight views personally inspected; counter glass sides and rack orientations corrected.",
+    "preservation": "16 owned faces/matching colliders replaced;9560 groups preserved.",
+    "packaging": "744-batch current bake,1591assets; type and Bitmagic checks passed."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra, matching front/roof/east cameras. Other-session workloads preserved.",
+    "summary": "Baseline median17.8/16.6/16.6,p9526.4/18.6/18.5ms; final16.7/16.6/16.7,p9518.3/18.6/18.4ms. Interior median16.6/16.6/16.6,p9519.4/18.9/19.1ms. No locked60fps claim."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/vape-pirates-sahara-exterior.glb": "6192a6451bdd31f9b932693d79775aab59d18e7e94ed269b833507fd71dd7804",
+      "runtime-assets/strip-landmarks/vape-pirates-sahara-interior-collision.bin": "83154b44ae95d457d5ab34a41e5c49d3a091cf9b17433922e27c803f315c9d19",
+      "runtime-assets/strip-landmarks/vape-pirates-sahara-interior.glb": "cab4c82bd64f81b28a9b3ce519c05d63d381c3ea5e82f7a5e4f5051e08a66340",
+      "runtime-assets/strip-landmarks/vape-pirates-sahara-exterior-collision.bin": "7db0dd5c3e1abed163979b6d93cbab12b3cbc0abb56ee92c1d7cfafcd6afe2e9"
+    }
   }
 }
