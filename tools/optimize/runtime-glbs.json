@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T10:29:15.919Z",
- "totalBytes": 3604469916,
- "count": 764,
+ "generated": "2026-10-29T10:59:45.219Z",
+ "totalBytes": 3615656756,
+ "count": 766,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 346961660,
+   "bytes": 346959416,
    "preset": "level",
    "overrides": []
   },
@@ -3042,6 +3042,24 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "streamed on approach",
    "bytes": 1657816,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/los-amores-julia-sahara-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 1652224,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/los-amores-julia-sahara-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 9536860,
    "preset": "level",
    "overrides": []
   },
