@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T16:05:23.871Z",
- "totalBytes": 3381696508,
- "count": 670,
+ "generated": "2026-10-27T18:22:11.831Z",
+ "totalBytes": 3390858572,
+ "count": 672,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 347181044,
+   "bytes": 347172276,
    "preset": "level",
    "overrides": []
   },
@@ -2196,6 +2196,24 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "streamed on approach",
    "bytes": 3175864,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/towneplace-stadium-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 6794368,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/towneplace-stadium-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 2376464,
    "preset": "level",
    "overrides": []
   },
