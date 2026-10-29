@@ -1640,7 +1640,13 @@
       "name": "FedEx Office Hughes Center",
       "status": "refinement-deferred",
       "record": "fedex-hughes.json"
+    },
+    {
+      "id": "hughes-retail",
+      "name": "365 Hughes Center retail",
+      "status": "active",
+      "record": "hughes-retail.json"
     }
   ],
-  "active": "fedex-hughes"
+  "active": "hughes-retail"
 }
