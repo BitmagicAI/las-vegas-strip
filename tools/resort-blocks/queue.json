@@ -1808,7 +1808,13 @@
       "name": "7-Eleven Sahara",
       "status": "refinement-deferred",
       "record": "seven-eleven-sahara.json"
+    },
+    {
+      "id": "chick-fil-a-sahara",
+      "name": "Chick-fil-A Sahara at I-15",
+      "status": "refinement-deferred",
+      "record": "chick-fil-a-sahara.json"
     }
   ],
-  "active": "seven-eleven-sahara"
+  "active": "chick-fil-a-sahara"
 }
