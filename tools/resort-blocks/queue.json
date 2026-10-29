@@ -1844,7 +1844,13 @@
       "name": "2800 South Highland / Martinez Boxing",
       "status": "refinement-deferred",
       "record": "martinez-boxing.json"
+    },
+    {
+      "id": "barrys-boxing",
+      "name": "Barry\u2019s Boxing",
+      "status": "in-progress",
+      "record": "barrys-boxing.json"
     }
   ],
-  "active": "martinez-boxing"
+  "active": "barrys-boxing"
 }
