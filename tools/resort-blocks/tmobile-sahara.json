@@ -1,0 +1,85 @@
+{
+  "id": "tmobile-sahara",
+  "name": "T-Mobile Sahara & Valley View",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/926281499"
+  ],
+  "claim": {
+    "issue": 326,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/326",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/327"
+  },
+  "sources": [
+    {
+      "url": "https://www.t-mobile.com/stores/bd/t-mobile-las-vegas-nv-89102-1slo",
+      "observed": "Official page says temporarily closed; do not infer accessible interior."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=57AP-yeQ2C0zH1WOwQMqCg&heading=0&pitch=0",
+      "observed": "Feb2025 south frontage inspected. Address3862; left tan arch bay with tiled hipped cap; cream stucco/right flat cornice; opaque white window graphics, magenta signs, gravel/shrubs. East side seen in nearby6toXwoL2mXFsk_gcXh5ZKw panorama heading315."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1448,-115.1921,180m/data=!3m1!1e3",
+      "observed": "Satellite zoom inspected: long white flat center roof, terracotta hip caps southwest and northeast, small mechanical units, west parking aisle and east narrow landscape strip. Capture date not established."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped19.5x32.5m shell; height/roof/services estimated. Interior remains closed."
+  ],
+  "implemented": [
+    "Original mapped shell, south arched entrance bay, covered glazing, magenta signage, tiled roof caps, east glazing, landscape strip and estimated roof services.",
+    "17,569 triangles, 0.61 MiB optimized exterior. 34 owned faces replaced; 9560 groups preserve vertices, metadata and retained face order. Eight current-city clearance samples and four actual walking segments pass.",
+    "Three installed daylight views and walking return visually inspected. 707-batch current bake; 1471 packaged assets, zero missing. Typecheck and public checks pass (existing inventory email warning only)."
+  ],
+  "remaining": [
+    "Exact arch shoulders, sign typography and stone/stucco texture need refinement.",
+    "Opaque campaign glazing, uniform shrubs, bare tree branches and repetitive roof material remain simplified. West/rear elevations and roof services estimated; public interior closed.",
+    "Existing parking and road layout preserved; does not reproduce all photographed site paving."
+  ],
+  "nextPass": {
+    "priority": "Continue city coverage with claimed Carl\u2019s Jr. Sahara; retain T-Mobile fidelity refinements.",
+    "checkpoint": "Installed exterior pass verified. No photorealistic completion claim."
+  },
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.7,
+        18.1
+      ],
+      [
+        16.7,
+        18.1
+      ],
+      [
+        16.6,
+        18.1
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.8,
+        19.2
+      ],
+      [
+        16.7,
+        19.1
+      ],
+      [
+        16.6,
+        18.9
+      ]
+    ],
+    "note": "960x540 ultra neutral daylight matching cameras. Initial concurrent reference-browsing run p95 25.4\u201326.4 ms; repeated idle-reference run retained. Shared machine, not locked 60 fps claim."
+  },
+  "evidence": [
+    "build/city-exteriors/tmobile-sahara-source-review",
+    "build/city-exteriors/tmobile-sahara-baseline/results.json",
+    "build/city-exteriors/tmobile-sahara-final/results.json",
+    "build/city-exteriors/tmobile-sahara-installed",
+    "build/city-exteriors/tmobile-sahara-walk/results.json",
+    "build/city-exteriors/tmobile-sahara-preservation.json"
+  ]
+}

@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-28T11:18:04.342Z",
- "totalBytes": 3496714724,
- "count": 703,
+ "generated": "2026-10-28T11:35:38.343Z",
+ "totalBytes": 3498532840,
+ "count": 704,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 347123396,
+   "bytes": 347121652,
    "preset": "level",
    "overrides": []
   },
@@ -2493,6 +2493,15 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "streamed on approach",
    "bytes": 1819896,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/tmobile-sahara-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 1819860,
    "preset": "level",
    "overrides": []
   },
