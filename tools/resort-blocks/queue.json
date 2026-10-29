@@ -1656,7 +1656,17 @@
         "date": "2026-10-28",
         "reason": "Verified scoped exterior and SIXT public office pass. User requests sustained city-wide coverage; remaining fidelity and Lo-Lo dining interior retained in block record."
       }
+    },
+    {
+      "id": "delfriscos-paradise",
+      "name": "Del Friscos Paradise",
+      "status": "refinement-deferred",
+      "record": "delfriscos-paradise.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped exterior pass; user requests sustained city-wide expansion. Interior, site and fine facade requirements retained in block record."
+      }
     }
   ],
-  "active": "lolos-hughes"
+  "active": "delfriscos-paradise"
 }
