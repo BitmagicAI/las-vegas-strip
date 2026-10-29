@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1363,
- "bytes": 1037919030,
+ "count": 1367,
+ "bytes": 1040289385,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18399378,
-   "sha256": "cca574a178049983ffd5c63cac3c344e3196863d3392bf434ee6991279b0f9e2",
+   "bytes": 18410155,
+   "sha256": "c37632890f2d82fa57fe4458bae068a7cab493d2adce9fe2cd8a712271411858",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13067188,
-   "sha256": "42df21ff48781eb7f3d365489264042dd44ed23c0f7be67e18e64d6cec467b69",
+   "bytes": 13066968,
+   "sha256": "350f48a135ff36a4b7a925e893911741209b6a547b889edd695e72df9ffae9e2",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109766688,
-   "sha256": "662cc1ebecd9a26528e47df3f0bce343e42e37dd8b44206621f256d0af948752",
+   "bytes": 109766236,
+   "sha256": "5d9dd6e2b6b944751f2aec98285167cda1b9759e507b244e4f5827b6895d3fe3",
    "kind": "optimized"
   },
   {
@@ -6317,6 +6317,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/gipsy-exterior-collision.bin",
+   "bytes": 568,
+   "sha256": "1428f7881d6986784d7934fb296ec03c438a15bd3ebc8ca0920b968e5e781060",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/gipsy-exterior.glb",
+   "bytes": 1137008,
+   "sha256": "9556c2308091a9935229efd584d50baaffd9bfc6f4d671a1fb5c0ff8ec3e9923",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/gipsy-interior-collision.bin",
+   "bytes": 384,
+   "sha256": "3712f59802055fc817f1f175a925d2ad4deba3ca82ffeabdca75a56e678e02d4",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/gipsy-interior.glb",
+   "bytes": 1221504,
+   "sha256": "6ea2005d7e0537f1ba5d139d3db33dad31effd263b0b89c81c013c923617014d",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/goldCoastExterior-exterior-collision.bin",
    "bytes": 4132,
    "sha256": "2c254e112e2bdda59e17ff4a5a42a0dd5bba1ec0d8407e84232183412076c126",
@@ -7998,8 +8022,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 339834,
-   "sha256": "e7322bbc89f140689d50ea624078bf26124e700af02005fef5d6032632b6426e",
+   "bytes": 340620,
+   "sha256": "3a7a4d0f2e0a675feeb2796d858111f01cf118c6e95d72f1147d24bae5ed7730",
    "kind": "original"
   },
   {

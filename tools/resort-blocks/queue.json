@@ -1228,9 +1228,15 @@
     {
       "id": "piranha",
       "name": "Piranha Nightclub",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "piranha.json"
+    },
+    {
+      "id": "gipsy",
+      "name": "Gipsy Nightclub",
+      "status": "active",
+      "record": "gipsy.json"
     }
   ],
-  "active": "naked-city-paradise"
+  "active": "gipsy"
 }
