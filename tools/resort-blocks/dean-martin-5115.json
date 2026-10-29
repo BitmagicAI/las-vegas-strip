@@ -1,0 +1,178 @@
+{
+  "id": "dean-martin-5115",
+  "name": "5115 Dean Martin east-front commercial building",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/225705143"
+  ],
+  "claim": {
+    "issue": 290,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/290",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/291"
+  },
+  "sources": [
+    {
+      "url": "https://clark.legistar.com/View.ashx?GUID=42151E43-5115-4374-8F11-3D25A37026B3&ID=13751316&M=F",
+      "observed": "5115 complex contains nine industrial/office buildings. Report describes west-side Building 4, not a verified plan for this east-front shell."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=GxSBHnSyOvfqRy94BOpHwQ&heading=189.82&pitch=0",
+      "observed": "December 2022 commercial court: masonry end walls, ribbed pale mansards, glazed tenant fronts. Exact correspondence to owned building still needs frontage inspection."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dxW3kaN5_DQspl-a3T8OdA&heading=270&pitch=0",
+      "observed": "February 2025 road view: south entrance building has blank split-face stone east end, museum direction banners and a large HERE panel on pale ribbed mansard, 5115 address near corner; glazed shopfront turns into the court. North entrance building is separate and must not be replaced."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mixed museum/shooting-center OSM name is unreliable. Exact tenant names and frontage dimensions unverified."
+  ],
+  "implemented": [
+    "Original 16,590-triangle exterior with mapped stone shell, north/east pale ribbed mansards, courtyard storefront bays, closed doors, original museum direction lettering, apron and inferred roof plant.",
+    "28 owned placeholder/collision faces replaced; all 9,560 mesh groups retain vertices, metadata and remaining face order.",
+    "219 scoped route samples pass with current city collision."
+  ],
+  "remaining": [
+    "Exact tenant bay divisions, sign artwork, landscaping and hidden service details remain simplified or inferred.",
+    "Interior is closed pending a reliable tenant plan.",
+    "Shared-machine performance measurements are descriptive; no guaranteed 60 fps or photorealistic completion claim."
+  ],
+  "nextPass": {
+    "priority": "Refine tenant/site details after broad city coverage.",
+    "checkpoint": "Final sign view inspected, overlap fixed. Five installed views inspected total; four actual walking segments and 219 collision samples pass. Current 689-batch bake, 1423 assets, zero missing. All processes complete."
+  },
+  "evidence": [
+    {
+      "type": "baseline",
+      "path": "build/city-exteriors/dean-martin-5115-baseline",
+      "viewsInspected": 3,
+      "performance": [
+        {
+          "name": "east-front",
+          "eye": [
+            -744,
+            3,
+            2152
+          ],
+          "target": [
+            -783,
+            3,
+            2160
+          ],
+          "p50": 16.600000023841858,
+          "p95": 19
+        },
+        {
+          "name": "southeast",
+          "eye": [
+            -750,
+            6,
+            2192
+          ],
+          "target": [
+            -799,
+            3,
+            2165
+          ],
+          "p50": 16.800000071525574,
+          "p95": 24
+        },
+        {
+          "name": "roof",
+          "eye": [
+            -747,
+            65,
+            2205
+          ],
+          "target": [
+            -803,
+            3,
+            2160
+          ],
+          "p50": 16.699999928474426,
+          "p95": 23.59999990463257
+        }
+      ]
+    },
+    {
+      "type": "source-review",
+      "path": "build/city-exteriors/dean-martin-5115-source-review",
+      "viewsInspected": 2,
+      "triangles": 16590,
+      "routeChecks": 219,
+      "routeFailures": 0
+    },
+    {
+      "type": "installed-initial",
+      "path": "build/city-exteriors/dean-martin-5115-installed",
+      "viewsInspected": 3,
+      "performance": [
+        {
+          "name": "east-front",
+          "eye": [
+            -744,
+            3,
+            2152
+          ],
+          "target": [
+            -783,
+            3,
+            2160
+          ],
+          "p50": 16.799999952316284,
+          "p95": 22.700000047683716
+        },
+        {
+          "name": "southeast",
+          "eye": [
+            -750,
+            6,
+            2192
+          ],
+          "target": [
+            -799,
+            3,
+            2165
+          ],
+          "p50": 17.799999952316284,
+          "p95": 25.199999928474426
+        },
+        {
+          "name": "roof",
+          "eye": [
+            -747,
+            65,
+            2205
+          ],
+          "target": [
+            -803,
+            3,
+            2160
+          ],
+          "p50": 17.199999928474426,
+          "p95": 28
+        }
+      ],
+      "finding": "HERE lettering overlapped heading; source corrected and final bake pending."
+    },
+    {
+      "type": "courtyard-close",
+      "path": "build/city-exteriors/dean-martin-5115-close",
+      "viewsInspected": 1
+    },
+    {
+      "type": "actual-walking",
+      "path": "build/city-exteriors/dean-martin-5115-walk/results.json",
+      "segments": 4,
+      "passed": true
+    },
+    {
+      "type": "final-sign",
+      "path": "build/city-exteriors/dean-martin-5115-final-sign",
+      "viewsInspected": 1,
+      "note": "Heading and HERE now separated; installed correction verified."
+    }
+  ]
+}
