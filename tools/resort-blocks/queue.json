@@ -1212,9 +1212,15 @@
     {
       "id": "office-bar",
       "name": "Office Bar I",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "office-bar.json"
+    },
+    {
+      "id": "naked-city-paradise",
+      "name": "Naked City Pizza Paradise",
+      "status": "active",
+      "record": "naked-city-paradise.json"
     }
   ],
-  "active": "office-bar"
+  "active": "naked-city-paradise"
 }
