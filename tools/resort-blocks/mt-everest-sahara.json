@@ -1,0 +1,123 @@
+{
+  "id": "mt-everest-sahara",
+  "name": "Mt. Everest India's Cuisine \u2014 Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/764147974"
+  ],
+  "sources": [
+    {
+      "url": "https://mteverestcuisine.com/",
+      "observed": "Official3641WSahara address; public buffet service."
+    },
+    {
+      "url": "https://static.spotapps.co/spots/f3/d4cf52cf934ac7ba03f4cc37febb64/full",
+      "observed": "Official dining photograph inspected: redvinyl perimeterbooths, darkwoodtables/ladderbackchairs, darkcarpet, orangewalls/woodwainscot, blackblinds, gridceiling/fans/downlights/hangingbulbs. Undated; roomlayoutinferred."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=10xe0a6iqZOrv-9Lj6FfQA&heading=180&pitch=0",
+      "observed": "Jan2023northfront inspected: redbrick, darkmullions, door3641, terracottahippeave, mountainwindowadvertising. Do not reproduce referencepixels."
+    },
+    {
+      "url": "https://static.spotapps.co/spots/9f/e4524563ab44e5af4aceb3bbe2b4b2/full",
+      "observed": "Officialstainlessbuffetpancloseup inspected;notwholecounterplacementevidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mappedoutline13x23m; heights, doorposition and publicroomdepth estimated. Hiddenkitchen/privatepreparation excluded. Exactphotodatesandpubliclayoutunverified."
+  ],
+  "implemented": [
+    "Original 65,104-triangle exterior and public dining room; red brick frontage, tiled eaves, original window motifs, blinds, booths, chairs, tableware, fans and buffet trays. Source views inspected and eave gaps corrected.",
+    "Targeted replacement removed 16 owned shell and collision faces; all 9,560 groups retain vertices, metadata and retained face order. 53 current-city clearance samples pass.",
+    "Optimized exterior 1.83 MiB and interior 0.50 MiB; current 702-batch city bake, 1,457 assets present, zero missing. Typecheck and public checks pass (one pre-existing inventory email warning).",
+    "Three installed daylight exterior views, four interior views and walking return inspected. All eight actual walking segments passed."
+  ],
+  "remaining": [
+    "Exact sign lettering/proportions, roof hips/tile seams, opaque glazing, repetitive brick and inferred services remain simplified.",
+    "Public room layout and dimensions are inferred; hidden service/kitchen rooms remain closed. Carpet reads as broad streaks, glassware is opaque, buffet steel/food and furniture upholstery need finer material/geometry work.",
+    "Not consistently 60 fps. Exterior front median 21.8 ms; interior medians 16.8\u201324.4 ms, p95 up to 48.2 ms. Not photorealistic completion."
+  ],
+  "nextPass": {
+    "priority": "Refine material fidelity and performance after city coverage.",
+    "checkpoint": "Installed first pass inspected and walked. Advance to Herbs & Rye claim 318, retaining all listed discrepancies."
+  },
+  "claim": {
+    "issue": 316,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/316",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/317"
+  },
+  "evidence": [
+    "build/city-exteriors/mt-everest-sahara-source-review/booths.png",
+    "build/city-exteriors/mt-everest-sahara-source-review/exterior.png",
+    "build/city-exteriors/mt-everest-sahara-source-review/dining.png",
+    "build/city-exteriors/mt-everest-sahara-source-review/entrance.png",
+    "build/city-exteriors/mt-everest-sahara-source-review/buffet.png",
+    "build/city-exteriors/mt-everest-sahara-source-review/roof.png",
+    "build/city-exteriors/mt-everest-sahara-baseline/mt-everest-sahara-northeast.png",
+    "build/city-exteriors/mt-everest-sahara-baseline/results.json",
+    "build/city-exteriors/mt-everest-sahara-baseline/mt-everest-sahara-roof.png",
+    "build/city-exteriors/mt-everest-sahara-baseline/mt-everest-sahara-north-front.png",
+    "build/city-exteriors/mt-everest-sahara-installed/mt-everest-sahara-northeast.png",
+    "build/city-exteriors/mt-everest-sahara-installed/results.json",
+    "build/city-exteriors/mt-everest-sahara-installed/mt-everest-sahara-roof.png",
+    "build/city-exteriors/mt-everest-sahara-installed/mt-everest-sahara-north-front.png",
+    "build/city-exteriors/mt-everest-sahara-interior-installed/mt-everest-sahara-dining.png",
+    "build/city-exteriors/mt-everest-sahara-interior-installed/results.json",
+    "build/city-exteriors/mt-everest-sahara-interior-installed/mt-everest-sahara-entrance.png",
+    "build/city-exteriors/mt-everest-sahara-interior-installed/mt-everest-sahara-booths.png",
+    "build/city-exteriors/mt-everest-sahara-interior-installed/mt-everest-sahara-buffet.png",
+    "build/city-exteriors/mt-everest-sahara-walk/results.json",
+    "build/city-exteriors/mt-everest-sahara-walk/walk-return-0.png"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        23,
+        46.7
+      ],
+      [
+        16.7,
+        21.8
+      ],
+      [
+        16.7,
+        20.1
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        21.8,
+        37.7
+      ],
+      [
+        16.7,
+        20.8
+      ],
+      [
+        16.6,
+        21.2
+      ]
+    ],
+    "interiorMedianP95Ms": [
+      [
+        24.4,
+        40.2
+      ],
+      [
+        21.5,
+        48.2
+      ],
+      [
+        16.8,
+        25.3
+      ],
+      [
+        20.7,
+        40.7
+      ]
+    ],
+    "note": "960x540 ultra neutral daylight matching exterior cameras; shared machine."
+  }
+}

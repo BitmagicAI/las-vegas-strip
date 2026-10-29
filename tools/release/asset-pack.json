@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1453,
- "bytes": 1106811033,
+ "count": 1457,
+ "bytes": 1109287793,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19283199,
-   "sha256": "93bdcf633e63966a329055587ae6cefc62713f9d0710efd5b98476cadbd4fa70",
+   "bytes": 19316419,
+   "sha256": "489fa24bf67f0658cf406c0224f3fe848643dd870c5ea2bff30e8ae3dc3387a6",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13061808,
-   "sha256": "9e2ff52d3ccc361148af2aaa60ad0597fe3431ca2038bd55e990304d024286ae",
+   "bytes": 13061884,
+   "sha256": "6ff55159ac06f9fef7b8ff5d9ff303514941c6807b04d786296b2118c100faf7",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109746412,
-   "sha256": "cb7cbd034c05641bea13c2f37a83f2bbc81595fb8abd0b4d8541ea41ae7f546c",
+   "bytes": 109746308,
+   "sha256": "d19dd40eeb66fc4690f0636ee0493b8117ff7ca5bd09518527fb3d8fa3f6477d",
    "kind": "optimized"
   },
   {
@@ -7265,6 +7265,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/mt-everest-sahara-exterior-collision.bin",
+   "bytes": 436,
+   "sha256": "efef7fff712a00a740f5ad7e838178b98e1bc9ceb0c7a0a627ed0085b6416b9d",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mt-everest-sahara-exterior.glb",
+   "bytes": 1918672,
+   "sha256": "78731b508570be0c48927ba858a89815ff0a41ef0d771ba6dc6a6313f8731af5",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/mt-everest-sahara-interior-collision.bin",
+   "bytes": 1448,
+   "sha256": "4ed4f930464e6d7c10659b21232274ea47a2131c59205443fbf8cad3784bea28",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mt-everest-sahara-interior.glb",
+   "bytes": 522152,
+   "sha256": "f099c7fc70324db033a0a8942b63f412ff80ddf496ae235e13e5cf7f7929d451",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/nakedCity-exterior-collision.bin",
    "bytes": 720,
    "sha256": "a4dae7f787ae9b7529722e48841b4334e745d164b9c8de2b775ad15fb3e739e6",
@@ -8526,8 +8550,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 357264,
-   "sha256": "94227f98b1e6a9953fe6a22964b9acc4471c4e4d4b2a2693c5c8a45c2db8c7ef",
+   "bytes": 358124,
+   "sha256": "36a2d4b47c008e0fc9298e1c70e4038da5738b691c649d1d6d559edbf755d987",
    "kind": "original"
   },
   {
