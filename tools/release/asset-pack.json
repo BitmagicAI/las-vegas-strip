@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1547,
- "bytes": 1140634769,
+ "count": 1549,
+ "bytes": 1140926180,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19782217,
-   "sha256": "1dcd20aa10c1815d811f891a5f75944ccd52566861077b62dad74e977075491c",
+   "bytes": 19789048,
+   "sha256": "7d94cca1d24051696e37079efcd796f7475e48a7f30a634753eb919b709093e5",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13055340,
-   "sha256": "2c2810afd50de3379d429fa6f83fd64b1c601e9198458b32a3ecd30f1c5f29e7",
+   "bytes": 13055392,
+   "sha256": "b42dbcc2f6fc3b8e775825575896e3f8128a7842096e72c348d7f0503683ef86",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109724276,
-   "sha256": "d1a5150aba8c6a43b790440f82dd084b37b940ba02276d5bce6851c997b868eb",
+   "bytes": 109724080,
+   "sha256": "a53b2e410bfe36c3b9c3453d57aebc6ac108fcd655a46389587919c3367d6512",
    "kind": "optimized"
   },
   {
@@ -7565,6 +7565,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/mcdonalds-sahara-exterior-collision.bin",
+   "bytes": 520,
+   "sha256": "709b15099987c7d487e23cf489569d507734f6ed2de16d38110e53c33a4a0bc4",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mcdonalds-sahara-exterior.glb",
+   "bytes": 283900,
+   "sha256": "edc9cabeb74364738151e4723b5ab2842e9ea1028736415647189bf8c6029af6",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/mcdonalds-tropicana-exterior-collision.bin",
    "bytes": 260,
    "sha256": "1bbc3c8d09ee5d6b1f9621a614797020b9a3c068573d6c7aa0f2291de15f5a27",
@@ -9090,8 +9102,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 375066,
-   "sha256": "599cf2502503344166bb84703fd4611b20aca150401a7be1b1e1b3bc01197719",
+   "bytes": 375370,
+   "sha256": "12a50987ce9dd063343c9f3a6654f606318b226be07a9180024fe5d38f2be987",
    "kind": "original"
   },
   {
