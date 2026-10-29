@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1367,
- "bytes": 1040289385,
+ "count": 1371,
+ "bytes": 1043341446,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18410155,
-   "sha256": "c37632890f2d82fa57fe4458bae068a7cab493d2adce9fe2cd8a712271411858",
+   "bytes": 18424924,
+   "sha256": "e5a1e6b1294867eb1f7ceea30b49c2abfad30bc8c18803c1cbaa60636e013d89",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13066968,
-   "sha256": "350f48a135ff36a4b7a925e893911741209b6a547b889edd695e72df9ffae9e2",
+   "bytes": 13066268,
+   "sha256": "c1b7084c6e97dffef3d301e6becef61a358315e73a20b0e60214b8d6cf12a66c",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109766236,
-   "sha256": "5d9dd6e2b6b944751f2aec98285167cda1b9759e507b244e4f5827b6895d3fe3",
+   "bytes": 109765684,
+   "sha256": "9a6e237d02add29bc906b6f747d698718c2748466069f570e069cb7a3bd5af1b",
    "kind": "optimized"
   },
   {
@@ -6233,6 +6233,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/ferraros-exterior-collision.bin",
+   "bytes": 768,
+   "sha256": "a5ab0c92f130b2988ae7bfa2923eb957424ab3702c3afbbe0515c543997b7ac8",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/ferraros-exterior.glb",
+   "bytes": 1450196,
+   "sha256": "eba63d6568b1d31cb4c4f5711e6c5018f36b6d1df0cc521475c16266439bc35c",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/ferraros-interior-collision.bin",
+   "bytes": 1080,
+   "sha256": "cdc7765b743f11f4b04893c0625581c83fc54c3dd7643cde35f47063a05e3bfc",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/ferraros-interior.glb",
+   "bytes": 1585660,
+   "sha256": "fe5384c773068e11f8dcd29c4610ed75ec611b91f1f1d7bf78d9987c6ee1b173",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/festivalGroundsService-exterior-collision.bin",
    "bytes": 608,
    "sha256": "d191d00ca22972e28fb5e18ded39d0728056d090b18195e91628550c2804fcdd",
@@ -8022,8 +8046,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 340620,
-   "sha256": "3a7a4d0f2e0a675feeb2796d858111f01cf118c6e95d72f1147d24bae5ed7730",
+   "bytes": 341460,
+   "sha256": "33dd89a8fe4ff3877b7f8e064755648a4fdbcd6b516d414024df00920a76ce45",
    "kind": "original"
   },
   {

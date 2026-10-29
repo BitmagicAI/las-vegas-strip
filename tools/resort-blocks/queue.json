@@ -1234,9 +1234,15 @@
     {
       "id": "gipsy",
       "name": "Gipsy Nightclub",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "gipsy.json"
+    },
+    {
+      "id": "ferraros",
+      "name": "Ferraro\u2019s Ristorante",
+      "status": "active",
+      "record": "ferraros.json"
     }
   ],
-  "active": "gipsy"
+  "active": "ferraros"
 }
