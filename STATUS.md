@@ -6,7 +6,7 @@ and the runtime asset list. Open work is in [tasks/BOARD.md](tasks/BOARD.md).
 ## Built
 
 - **Map:** OpenStreetMap footprints, roads and heights for central Las Vegas, plus Clark County pavement surfaces. A box building for every mapped footprint.
-- **Detailed exteriors:** 259 block records in `tools/resort-blocks/` (8 with the full seven-gate survey). All are installed in the game and visually reviewed.
+- **Detailed exteriors:** 260 block records in `tools/resort-blocks/` (8 with the full seven-gate survey). All are installed in the game and visually reviewed.
 - **Mapped buildings reviewed:** 631 buildings in the inventory (every mapped building at least 35 m tall and 500 m², plus every footprint within 200 m of Las Vegas Boulevard).
 - **Hotel guest floors:** 49 hotel sets with a streamed lobby, corridors, stairs and enterable rooms (`build/hotels/`).
 - **Authored public interiors:** 24 streamed venues at the Venetian, Palazzo, LINQ, Vanderpump, Fashion Show, the Arena, Park MGM, Treasure Island, Harrah's, Polo Towers, the Cosmopolitan, Bellagio and Paris. Compressed, photo-informed lobbies and casinos in the city level for Caesars, Flamingo, Horseshoe, Planet Hollywood, ARIA, Vdara, Waldorf Astoria, Veer and Crystals. The Sphere has an interior and video skin, and the Big Apple Coaster is rideable.
@@ -27,7 +27,7 @@ and the runtime asset list. Open work is in [tasks/BOARD.md](tasks/BOARD.md).
 
 ## Missing or unfinished
 
-- **Exterior refinement:** 264 tasks with 1117 recorded gaps. No block has passed all seven completion gates; every one is `refinement-deferred` with its gaps listed.
+- **Exterior refinement:** 265 tasks with 1120 recorded gaps. No block has passed all seven completion gates; every one is `refinement-deferred` with its gaps listed.
 - **Public interiors:** 5 casino resorts have a compressed, photo-informed lobby and casino that is not laid out to a plan (Caesars Palace, Flamingo, Horseshoe (Versailles tower), Planet Hollywood, ARIA). 15 more have no authored public interior on record, only the generic hotel lobby, corridors and rooms (Circus Circus, Encore, Wynn, Fontainebleau, Luxor, Mandalay Bay, MGM Grand, The Mirage, New York-New York, Palms, Resorts World, Rio, SAHARA, The STRAT, Westgate).
 - **Release tasks:** Finish separating the zombie game from the city; Record where every packed texture came from; Follow the published engine (3.1342 since 2026-10-26) (the `release` tasks on the board).
 - **Rebuilding geometry from a clone** needs a source pack that does not exist yet (`tool-source-pack`).

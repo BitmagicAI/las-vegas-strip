@@ -1,0 +1,42 @@
+{
+  "id": "mcdonalds-sahara",
+  "name": "McDonalds West Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/276426396"
+  ],
+  "claim": {
+    "issue": 375,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/375",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.mcdonalds.com/us/en-us/location/24554.html",
+      "observed": "Official branch24554 confirms2650WestSahara."
+    },
+    {
+      "url": "https://www.google.com/maps/search/McDonalds+2650+West+Sahara+Las+Vegas",
+      "observed": "GilbertArguelles April2019 photo CIHM0ogKEICAgIDEgcWcjwE personallyinspected: whitehighparapet,yellowcoping/canvasawning,redfascia/brandpanels,blackglazing,redpatiorail/tablechairs. Olderphoto; precisecurrentfinishesuncertain."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1447888,-115.1772684,20z/data=!3m1!1e3",
+      "observed": "Aerial personallyinspected: squareflat-roofbuilding,yellowsouthawning,eastwalk/patio,north/westdrive-through."
+    }
+  ],
+  "uncertainDimensions": [
+    "All facade dimensions fitted, not measured",
+    "2019 facade details may have changed; aerial corroborates broad roof/awning arrangement",
+    "No verified interior reference or measured public plan"
+  ],
+  "remaining": [
+    "Author and inspect exterior/patio",
+    "Verify scoped collision preservation and actual arrival walking",
+    "Record full site/material/interior limitations"
+  ],
+  "nextPass": {
+    "priority": "Exterior and patio",
+    "checkpoint": "Claim375 confirmed. No overlapping mapped building parts. Geometry not authored."
+  }
+}
