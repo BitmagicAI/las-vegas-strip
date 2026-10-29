@@ -1778,7 +1778,13 @@
       "name": "Sahara Annex shared retail",
       "status": "refinement-deferred",
       "record": "sahara-annex.json"
+    },
+    {
+      "id": "mi-ranchito-sahara",
+      "name": "Mi Ranchito Sahara",
+      "status": "active",
+      "record": "mi-ranchito-sahara.json"
     }
   ],
-  "active": "sahara-annex"
+  "active": "mi-ranchito-sahara"
 }

@@ -1,0 +1,74 @@
+{
+  "id": "mi-ranchito-sahara",
+  "name": "Mi Ranchito Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/943068962"
+  ],
+  "claim": {
+    "issue": 399,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/399"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/Mi+Ranchito+Restaurant+SF+Sahara+Ave/",
+      "accessed": "2026-10-29",
+      "imageDate": "July2024",
+      "photoId": "CIHM0ogKEICAgICbwK2aDg",
+      "provider": "Business owner",
+      "observed": "Personally inspected ochre stucco, blue sloped roof/red eaves, gabled entrance on long facade, stone entry piers, glazed double doors, red patio fence and barrel planters."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Mi+Ranchito+Restaurant+SF+Sahara+Ave/",
+      "accessed": "2026-10-29",
+      "imageDate": "February2026",
+      "photoId": "CIABIhDhyE3eRmcThQySbrx1XKDO",
+      "provider": "Susan Elizabeth Thayer",
+      "observed": "Personally inspected wide dining room: yellow service wall with dark arched openings/menu screens, blue side wall/red door trim, brown square tile, pale ceiling/recessed square lights; colorful high-backed painted chairs/red seats and glazed rectangular tables."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Mi+Ranchito+Restaurant+SF+Sahara+Ave/",
+      "accessed": "2026-10-29",
+      "imageDate": "September2026",
+      "photoId": "CIABIhAN8oUkUikcnWlxVXL5L3yJ",
+      "observed": "Personally inspected green/orange scalloped chair backs/red seats; original abstract motifs will replace copyrighted painted artwork."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.14402,-115.18243,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected blue perimeter roof/white central spine, south service portion, parking and patio. Separate Vape Pirates west excluded."
+    },
+    {
+      "url": "https://www.loopnet.com/Listing/3001-W-Sahara-Ave-Las-Vegas-NV/32124105/",
+      "accessed": "2026-10-29",
+      "observed": "Property listing2870sqft,one story,built1975/renovated2019; not a measured interior plan."
+    }
+  ],
+  "uncertainDimensions": [
+    "Elevations and room layout fitted to mapped footprint and photographs; no measured floor plan.",
+    "Entrance side and exact public/private boundary require final aerial/street reconciliation."
+  ],
+  "components": [
+    {
+      "id": "exterior-roof-entry",
+      "status": "planned"
+    },
+    {
+      "id": "public-dining",
+      "status": "planned"
+    },
+    {
+      "id": "public-approach-patio",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build and inspect scoped original exterior/public dining room; verify routes/performance/package.",
+    "Keep private kitchen excluded; retain unsupported layout and fine-fidelity discrepancies."
+  ],
+  "nextPass": {
+    "priority": "Referenced exterior and dining room",
+    "checkpoint": "399 claim confirmed after396 open issue bodies checked; no overlapping claim or generator found."
+  }
+}
