@@ -26,7 +26,8 @@ FONT_OK = re.compile(r'^(engine/|node_modules/)')
 # Images that are ours (renders of the game, proofs, brand marks) may ship; photos and plans of real places may not.
 MEDIA = re.compile(r'\.(png|jpe?g|webp|gif|heic|pdf|mp4|mov)$', re.I)
 # runtime-assets/ is the game's own runtime set (the asset pack's files: PBR strips from CC0 scans, the Sphere's videos).
-MEDIA_OK = re.compile(r'^(engine/|public/|src/work/|tools/film/brand/|runtime-assets/|\.agents/skills/|\.claude/skills/)')
+# tools/foliage/models/ holds the garden foliage's sources and their proof render (CC0 Poly Haven models, our render).
+MEDIA_OK = re.compile(r'^(engine/|public/|src/work/|tools/film/brand/|tools/foliage/models/|runtime-assets/|\.agents/skills/|\.claude/skills/)')
 SECRETS = [
     ('private key', re.compile(r'-----BEGIN [A-Z ]*PRIVATE KEY-----')),
     ('AWS key', re.compile(r'\bAKIA[0-9A-Z]{16}\b')),

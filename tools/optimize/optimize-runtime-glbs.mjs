@@ -42,12 +42,10 @@ const HEAP_MB = Number(process.env.OPT_HEAP_MB) || 16384;
 
 // ------------------------------------------------------------------------------------ presets
 // One preset per asset class (SKILL.md section 2), with the overrides this game needs.
-const NO_KTX_HERO = ['--orm=webp-lossless:512'];   // hero-prop writes UASTC ORM; no ktx binary, no KTX2 wait
 const NO_KTX_CHARACTER = ['--base=webp:1024:90', '--emissive=webp:1024:90', '--orm=webp-lossless:512'];
 const CLASSES = {
   level: { preset: 'level', overrides: [], why: 'architecture / walkable level: float32 positions, triangle order kept, textures untouched' },
   'code-driven': { preset: 'code-driven', overrides: [], why: 'vehicle: code reads node names/parts; float positions, base maps kept, never KTX2' },
-  foliage: { preset: 'hero-prop', overrides: NO_KTX_HERO, why: 'instanced tree LODs seen up close: no simplification, float positions; ORM as lossless WebP instead of UASTC' },
   character: { preset: 'character', overrides: NO_KTX_CHARACTER, why: 'skinned character: float positions, exact normals, every key; WebP instead of UASTC (no ktx)' },
 };
 
@@ -86,8 +84,8 @@ function resolveList() {
     if (!module) continue;   // e.g. staged-vegas.glb: not a module name HotelTemplates can request
     add(`build/hotels/${f}`, 'level', 'src/work/hotels/HotelTemplates.ts', name.endsWith('-lobby') || ['room', 'corridor', 'door', 'corridor-end'].some((p) => name.endsWith('-' + p)) ? 'streamed (hotel visit)' : 'streamed (hotel shell)');
   }
-  // ResortFoliage: /foliage/<file>.glb from public/ (grass-0/1 skipped: the lawn is being rebuilt)
-  for (const t of ['tree-0', 'tree-1', 'tree-2']) add(`public/foliage/${t}.glb`, 'foliage', 'src/work/ResortFoliage.ts', 'boot (localhost, Bellagio block)');
+  // (ResortFoliage's /foliage/<file>.glb are not listed: public/foliage/ holds their optimized copies, which
+  // tools/optimize/foliage-trees.mjs makes from tools/foliage/models/)
   // Characters (a game built on the city, e.g. vegas-afterlight-game: VegasCast loads world.json row character-b610N by its
   // remote url; the local src/work/characters/b610N/character.glb is that row's source). The city itself has none.
   const world = readJson('src/work/world.json');
@@ -277,7 +275,7 @@ const filtered = list.filter((e) => !flag('only') || e.rel.includes(flag('only')
   const total = rows.reduce((n, r) => n + (r.bytes ?? 0), 0);
   fs.writeFileSync(path.join(ROOT, 'tools/optimize/runtime-glbs.json'), JSON.stringify({
     generated: new Date().toISOString(), totalBytes: total, count: rows.length,
-    notLoaded: ['build/hotels/staged-vegas.glb (no HotelTemplates module name)', 'build/south-strip/liberty-scan.glb (no loader in src/)', 'public/foliage/grass-0.glb, grass-1.glb (loaded, skipped: lawn rebuild in progress)', 'every */before/*, *-before/*, uthana/inputs copy'],
+    notLoaded: ['build/hotels/staged-vegas.glb (no HotelTemplates module name)', 'build/south-strip/liberty-scan.glb (no loader in src/)', 'every */before/*, *-before/*, uthana/inputs copy'],
     remoteWorldRows: remote, files: rows,
   }, null, 1));
   console.log(`${rows.length} runtime GLBs, ${mib(total)}; ${remote.length} remote world.json GLB rows listed (not fetched) -> tools/optimize/runtime-glbs.json`);

@@ -7,7 +7,7 @@ The runtime set (every model, texture and data file the game loads) is in the re
 |---|---|---|---|
 | **Code and records** | ~80 MB | git | Code, tools, block records, `src/work/` (world, levels, hotel templates), `public/` (foliage) |
 | **Runtime set** | 1,345 files, 1.1 GiB | Git LFS, `runtime-assets/` → copied into `build/` | Every file the game loads from `build/`: optimized GLBs, collision, routes, venue lists, PBR strips, Sphere media |
-| **Release snapshot** | ~515 MiB download | GitHub release asset (optional) | The same runtime set as one `.tar.gz`, for a download without git |
+| **Release snapshot** | ~564 MiB download | GitHub release asset (optional) | The same runtime set as one `.tar.gz`, for a download without git |
 | **Source files** | ~10 GiB | maintainers' machines (pack planned: `tool-source-pack`) | Original (unoptimized) GLBs, Blender scenes, OSM extracts, intermediates the builders read |
 | **Never published** | – | local only | Third-party reference photos, plans and screenshots; review renders; film recordings; probe output |
 
@@ -92,6 +92,10 @@ JSON at runtime.
 - **Sphere:** `sphere.bin`, `media.bin`, the GLBs and collision, and the media `media.bin` names.
 - **Other:** the PBR strips (`sets.bin` and three WebP layers), the jeep, and the `world.json` assets served from `build/`.
 
+The garden foliage is not in the set: `public/foliage/` holds the trees' and grass's optimized copies (5.8 MiB, committed;
+`node tools/optimize/foliage-trees.mjs` makes them from the sources in `tools/foliage/models/`, which the Blender
+exporters import). `check-runtime-glbs.py` fails when a source changed after its copy was made.
+
 After a new loader or a new runtime folder, add a rule there. Then confirm that a fresh clone plays with nothing
 missing:
 
@@ -103,7 +107,8 @@ missing:
 
    It fails on any 404, and on any data file the dev server answers with its HTML fallback.
 
-It passed on 2026-10-22 (from the pack) with no failed requests and no page errors.
+It passed on 2026-10-29 (from `runtime-assets/`, and with `SMOKE_CDN=1` from the CDN) with no failed requests and no page
+errors.
 
 Publishing a release snapshot (optional):
 
@@ -128,8 +133,6 @@ Not optimized yet:
 
 - **No KTX2.** Textures upload uncompressed to the GPU. Adding KTX2 needs the `ktx` tool, plus a game-side KTX2 wait,
   because the vendored engine has neither the meshopt decoder nor `expectGltfLoaderSupport`.
-- **`public/foliage/tree-*.glb` (35 MiB).** Optimized copies exist only in a full working checkout, so a clone loads
-  the originals.
 
 ## Why Git LFS
 

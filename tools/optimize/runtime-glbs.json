@@ -1,11 +1,10 @@
 {
  "generated": "2026-10-29T16:19:31.153Z",
- "totalBytes": 3641316924,
- "count": 785,
+ "totalBytes": 3604619312,
+ "count": 782,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
-  "public/foliage/grass-0.glb, grass-1.glb (loaded, skipped: lawn rebuild in progress)",
   "every */before/*, *-before/*, uthana/inputs copy"
  ],
  "remoteWorldRows": [
@@ -7076,39 +7075,6 @@
    "bytes": 192800,
    "preset": "level",
    "overrides": []
-  },
-  {
-   "rel": "public/foliage/tree-0.glb",
-   "cls": "foliage",
-   "loader": "src/work/ResortFoliage.ts",
-   "when": "boot (localhost, Bellagio block)",
-   "bytes": 28284196,
-   "preset": "hero-prop",
-   "overrides": [
-    "--orm=webp-lossless:512"
-   ]
-  },
-  {
-   "rel": "public/foliage/tree-1.glb",
-   "cls": "foliage",
-   "loader": "src/work/ResortFoliage.ts",
-   "when": "boot (localhost, Bellagio block)",
-   "bytes": 7758056,
-   "preset": "hero-prop",
-   "overrides": [
-    "--orm=webp-lossless:512"
-   ]
-  },
-  {
-   "rel": "public/foliage/tree-2.glb",
-   "cls": "foliage",
-   "loader": "src/work/ResortFoliage.ts",
-   "when": "boot (localhost, Bellagio block)",
-   "bytes": 655360,
-   "preset": "hero-prop",
-   "overrides": [
-    "--orm=webp-lossless:512"
-   ]
   }
  ]
 }

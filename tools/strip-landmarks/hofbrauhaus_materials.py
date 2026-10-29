@@ -52,7 +52,7 @@ def trees(interior=False):
  for lod in ([1] if interior else [0,1,2]):
   before=set(bpy.data.objects)
   # The existing tree-1 reduction collapses most leaf/trunk area; use the intact source.
-  bpy.ops.import_scene.gltf(filepath=str(__import__('pathlib').Path('public/foliage/tree-2.glb' if lod==2 else 'public/foliage/tree-0.glb').resolve()))
+  bpy.ops.import_scene.gltf(filepath=str(__import__('pathlib').Path('tools/foliage/models/tree-2.glb' if lod==2 else 'tools/foliage/models/tree-0.glb').resolve()))
   added=set(bpy.data.objects)-before;bpy.context.view_layer.update();proto=[(o.data,o.matrix_world.copy()) for o in added if o.type=='MESH']
   coords=[m@v.co for d,m in proto for v in d.vertices];lo=min(v.z for v in coords);hi=max(v.z for v in coords)
   for o in added:bpy.data.objects.remove(o,do_unlink=True)

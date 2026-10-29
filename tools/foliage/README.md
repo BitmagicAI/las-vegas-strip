@@ -13,8 +13,10 @@ Rebuild from project root:
 3. Same command with `grass tools/foliage/sources/grass_medium_01/grass_medium_01_1k.gltf`.
 4. Blender `--background --python tools/foliage/make_impostor.py`.
 5. Run `tools/foliage/place_lawn.py` with project Shapely/numpy Python environment.
+6. `node tools/optimize/foliage-trees.mjs` writes the optimized copies the game loads to public/foliage/ (5.8 MB for the 35 MB of sources).
 
-Outputs: public/foliage GLBs, asset proofs, manifests and deterministic placement JSON.
+Outputs: the source GLBs, asset proofs and manifests in tools/foliage/models/ (the Blender exporters import these sources), and in
+public/foliage/ the deterministic placement JSON and the optimized copies the game loads.
 Tree LODs: 250,000 / 13,139 / 6 triangles, 85/220/650m cell distances.
 Grass LODs: 833 / 100 triangles; full placement density at medium detail; 18/55m distances.
 37 trees, 177,044 tuft placements. Instances are grouped into 40m tree cells and 10m lawn cells, shared geometry/materials. Distance changes checked every 180ms with hysteresis. Grass stays inside authored lawn polygons inset 0.8m; maximum tuft horizontal radius including scale is below 0.8m. Existing terrain collision is retained. Tree crowns remain within previous 4m clearance radius.

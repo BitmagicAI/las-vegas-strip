@@ -282,6 +282,9 @@ memory against one ~8 GB limit; above it, every few MB allocated forced a full c
   Installed set: `--variant=webp-textures` (lossy WebP colour maps, owner approved 2026-10-07);
   `--variant=level` restores lossless textures. Backups of every original and of the lossless set
   are kept outside the repository on the maintainer's machine (`_backups/vegas-afterlight-2026-10-07-glb-*`).
+  The garden foliage is the exception: `public/foliage/*.glb` are the optimized copies themselves (committed, loaded as
+  they are), made by `node tools/optimize/foliage-trees.mjs` from the sources in `tools/foliage/models/`, which the Blender
+  exporters import. Re-run it after changing a source; `check-runtime-glbs.py` fails until you do.
 - Measure before and after: `tools/probe-idle.mjs` (frame time, GPU passes, GC trace),
   `tools/probe-views.mjs` (fixed views, `--ablate`), `tools/probe-memory.mjs`. Probes pin
   `?quality=ultra`. Run the TypeScript tests with `node --import ./tools/ts-register.mjs <test>`.

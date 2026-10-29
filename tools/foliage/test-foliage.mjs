@@ -25,7 +25,7 @@ const blocked=new FoliageSettingsStore({getItem(){throw Error('blocked')},setIte
 console.log('Foliage visibility, distance, persistence, invalid storage and blocked storage passed.');
 foliage.dispose();assert.equal(owner.children.length,0);
 console.log(`Instancing, 5 LOD transitions, cleanup, ${grass.trees.length} tree placements and ${grass.grass.length} grass placements passed.`);
-const bladeManifest=JSON.parse(fs.readFileSync('public/foliage/grass-manifest.json'));
+const bladeManifest=JSON.parse(fs.readFileSync('tools/foliage/models/grass-manifest.json'));
 assert.equal(bladeManifest.kind,'mown-grass');
 assert(bladeManifest.lods[0].triangles<=72 && bladeManifest.lods[1].triangles<=8,'Lawn must not regress to heavyweight scrub');
 assert(grass.grass.every(p=>p[4]>=.85&&p[4]<=1.05),'No oversized perimeter band');

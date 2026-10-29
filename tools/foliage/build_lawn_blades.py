@@ -28,6 +28,6 @@ for level in range(2):
  for i,v in enumerate(mesh.vertices):
   t=min(1,v.co.z/.32);variation=.85+.3*rng.random();colors.data[i].color=((.075+.13*t)*variation,(.20+.19*t)*variation,(.018+.045*t)*variation,1)
  o=bpy.data.objects.new('Mown grass LOD'+str(level),mesh);bpy.context.collection.objects.link(o);bpy.context.view_layer.objects.active=o;o.select_set(True)
- bpy.ops.export_scene.gltf(filepath=str(Path('public/foliage/grass-'+str(level)+'.glb').resolve()),export_format='GLB',use_selection=True,export_yup=True)
+ bpy.ops.export_scene.gltf(filepath=str(Path('tools/foliage/models/grass-'+str(level)+'.glb').resolve()),export_format='GLB',use_selection=True,export_yup=True)
  report.append(dict(level=level,triangles=len(faces),blades=24 if level==0 else 8));bpy.data.objects.remove(o,do_unlink=True)
-Path('public/foliage/grass-manifest.json').write_text(json.dumps(dict(kind='mown-grass',source='tools/foliage/build_lawn_blades.py',lods=report),indent=2))
+Path('tools/foliage/models/grass-manifest.json').write_text(json.dumps(dict(kind='mown-grass',source='tools/foliage/build_lawn_blades.py',lods=report),indent=2))

@@ -13,7 +13,7 @@ for lod in range(3):
  if lod!=1:
   before=set(bpy.data.objects)
   asset='tree-2.glb' if lod==2 else 'tree-0.glb'
-  bpy.ops.import_scene.gltf(filepath=str((Path('public/foliage')/asset).resolve()))
+  bpy.ops.import_scene.gltf(filepath=str((Path('tools/foliage/models')/asset).resolve()))
   added=set(bpy.data.objects)-before;bpy.context.view_layer.update();proto=[(o.data,o.matrix_world.copy()) for o in added if o.type=='MESH']
   coords=[m@v.co for data,m in proto for v in data.vertices];lo=min(v.z for v in coords);hi=max(v.z for v in coords);print('TREE_HEIGHT',lod,hi-lo)
   for data,m in proto:

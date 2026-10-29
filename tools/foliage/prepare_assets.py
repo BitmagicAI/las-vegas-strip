@@ -3,7 +3,7 @@ import bpy,sys,json,math,random
 from pathlib import Path
 from mathutils import Vector
 args=sys.argv[sys.argv.index('--')+1:];kind,path=args
-out=Path('public/foliage');out.mkdir(exist_ok=True,parents=True)
+out=Path('tools/foliage/models');out.mkdir(exist_ok=True,parents=True)
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
 bpy.ops.import_scene.gltf(filepath=str(Path(path).resolve()))
 meshes=[o for o in bpy.context.scene.objects if o.type=='MESH']

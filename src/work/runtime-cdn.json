@@ -23,9 +23,9 @@
    "bytes": 32448
   },
   "build/baked/city-lod.bin": {
-   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985237359-5211148a1a65-city-lod.bin",
-   "sha256": "5211148a1a659e298d9d60d5778c1a53af918364d147057b9d22a7ab64ed81a9",
-   "bytes": 18150626
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312818275-665a3af13eb7-city-lod.bin",
+   "sha256": "665a3af13eb7dad2b0c5a1e085654695a73e7e6ab8d0c08904c672b8bbbf6384",
+   "bytes": 20232048
   },
   "build/geographic-strip/access/bellagio-via.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985237357-c54019d619bc-bellagio-via.bin",
@@ -108,14 +108,14 @@
    "bytes": 138104
   },
   "build/geographic-strip/city-colliders.bin": {
-   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985240039-cc0f368be656-city-colliders.bin",
-   "sha256": "cc0f368be656d6078a0d71de84a18dd84f8147280864b3aa1c0f83c541e9eead",
-   "bytes": 13067632
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312818276-cec0cbf3a665-city-colliders.bin",
+   "sha256": "cec0cbf3a665adf02b5597bfdedd4ad2e77cb82ba446ee765d63fd3738ad6675",
+   "bytes": 13048548
   },
   "build/geographic-strip/city.glb": {
-   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863019677-63685cd4b6ba-city.glb",
-   "sha256": "63685cd4b6ba8bfea564159eb64c97a1513c336eaf3d1ad45ef293aed3543d70",
-   "bytes": 109768556
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312818259-019ae348f414-city.glb",
+   "sha256": "019ae348f414ca83589ac5cfd6ba213d368f48b277420ac6fd40f9ef20ab7d6b",
+   "bytes": 109698468
   },
   "build/geographic-strip/detailed.glb": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863023125-6e285e56ab33-detailed.glb",
@@ -4627,6 +4627,26 @@
    "sha256": "e567c1e4e9e6069b73fd37489c07ecb0fa93873b03241dec6f13c7159f83846a",
    "bytes": 219716
   },
+  "build/strip-landmarks/airgas-highland-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312818274-9144e8a383b8-airgas-highland-exterior-collision.bin",
+   "sha256": "9144e8a383b815dd1fa0248ee311cfd5be444ef16c55dc25d0da292fc281c0c5",
+   "bytes": 648
+  },
+  "build/strip-landmarks/airgas-highland-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312819486-e81f8556a6a3-airgas-highland-exterior.glb",
+   "sha256": "e81f8556a6a3ca3580bd89a5bb153dc4db82f3798077e6e0b40ca6afeee50a79",
+   "bytes": 436844
+  },
+  "build/strip-landmarks/airgas-highland-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312820269-f6119d0a8edd-airgas-highland-interior-collision.bin",
+   "sha256": "f6119d0a8edd1e9d74d1eb53835aa6ed277b6717cdedc68a21e91410c6311812",
+   "bytes": 1908
+  },
+  "build/strip-landmarks/airgas-highland-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312820281-2534a5abf8a0-airgas-highland-interior.glb",
+   "sha256": "2534a5abf8a03ca5d4101d9dbc855b228160768ff4a3b9f9b4449bdfbcec5c6c",
+   "bytes": 438476
+  },
   "build/strip-landmarks/akitaPlaza-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985273466-00dfbef5c2ad-akitaPlaza-exterior-collision.bin",
    "sha256": "00dfbef5c2ad1a8107d6ab56cb9d343b572e0e8a01c5fe702a197718a692d4aa",
@@ -4767,6 +4787,26 @@
    "sha256": "c0648507aeca4a726cdc6ada3ad171c7828330a071c9c51b1f837a9eab0fe89b",
    "bytes": 175884
   },
+  "build/strip-landmarks/barrys-boxing-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312820287-049e391a8e22-barrys-boxing-exterior-collision.bin",
+   "sha256": "049e391a8e22aa8dbbc50cd5125d6731465e0ff702eded796410cfd2db71bf88",
+   "bytes": 336
+  },
+  "build/strip-landmarks/barrys-boxing-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312820574-508d281d1ec5-barrys-boxing-exterior.glb",
+   "sha256": "508d281d1ec5d718b49ae468aa166b5cd64d76db78818b28edbd96454b0e9f97",
+   "bytes": 599928
+  },
+  "build/strip-landmarks/barrys-boxing-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312820610-83155ee09045-barrys-boxing-interior-collision.bin",
+   "sha256": "83155ee090455d346ffa1c0a398871da5da61b9ba9f1e1068631ca6043c5ce4c",
+   "bytes": 840
+  },
+  "build/strip-landmarks/barrys-boxing-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312820904-ad8256ffdcb7-barrys-boxing-interior.glb",
+   "sha256": "ad8256ffdcb7bdc1632aedf25c79fc6b6b62f35d984e176d35808bab01f1bf33",
+   "bytes": 219072
+  },
   "build/strip-landmarks/bellagioArcadePiers-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985274457-58885a8bf866-bellagioArcadePiers-exterior-collision.bin",
    "sha256": "58885a8bf866ced3566bb03e6bc557239ad53b5e8173890952cba62c21c33412",
@@ -4797,6 +4837,26 @@
    "sha256": "191944bf447d5d554dddd27a667aa37ec1a2cb052bd45b85500b692684d1a321",
    "bytes": 2056124
   },
+  "build/strip-landmarks/bmo-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312821061-64e5b23a1c0f-bmo-sahara-exterior-collision.bin",
+   "sha256": "64e5b23a1c0f4900ee9c75f4a8dfa3dcfcefbbe12f59e042d4b00f04bd476da8",
+   "bytes": 412
+  },
+  "build/strip-landmarks/bmo-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312821402-55c5ffe74937-bmo-sahara-exterior.glb",
+   "sha256": "55c5ffe74937c7ac71589683ca497e1d393db06b2a50f55894ac6bfa4044bdc4",
+   "bytes": 317324
+  },
+  "build/strip-landmarks/bonfire-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312821526-af767719223a-bonfire-exterior-collision.bin",
+   "sha256": "af767719223ab85ea49a6c4454d86c27c2d5e4d371c6e7e1cb5fcc5d19534d39",
+   "bytes": 356
+  },
+  "build/strip-landmarks/bonfire-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312821549-97f4689d58e8-bonfire-exterior.glb",
+   "sha256": "97f4689d58e806d5253199e974f8ccdc4d5f1b87554a7c0dbe16a32eb6637218",
+   "bytes": 1503872
+  },
   "build/strip-landmarks/bonitaTerrace-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985274637-595697207133-bonitaTerrace-exterior-collision.bin",
    "sha256": "5956972071330edef9218369eea726480f4f81a28e60e5775b8933dc319c86b1",
@@ -4817,6 +4877,46 @@
    "sha256": "b639f9366afc879161e4ed6cac525aae2c5e2ee4128349f6b92a8b55494a0e06",
    "bytes": 430096
   },
+  "build/strip-landmarks/bourbon-street-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312821848-e7652ec9dd58-bourbon-street-sahara-exterior-collision.bin",
+   "sha256": "e7652ec9dd583408638f79a1d739fb3dd4edb76a6b2966b7a6e448575e74fae6",
+   "bytes": 504
+  },
+  "build/strip-landmarks/bourbon-street-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312822284-33db51fc1917-bourbon-street-sahara-exterior.glb",
+   "sha256": "33db51fc1917ef92448ee6ac55988124b70b1f5cc962b73d2e9ec165ffe8507a",
+   "bytes": 1042912
+  },
+  "build/strip-landmarks/bourbon-street-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312822287-52d15fd8f414-bourbon-street-sahara-interior-collision.bin",
+   "sha256": "52d15fd8f414e16e33401b4c18838e98cec00cdfe2a06f8aef507c0f2aa21a5d",
+   "bytes": 512
+  },
+  "build/strip-landmarks/bourbon-street-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312822601-5cf530af873f-bourbon-street-sahara-interior.glb",
+   "sha256": "5cf530af873f812a26fcfc4afc1366874b1e8a248731a0e406c5e13525f6c70b",
+   "bytes": 282564
+  },
+  "build/strip-landmarks/buca-flamingo-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312823244-caf845399341-buca-flamingo-exterior-collision.bin",
+   "sha256": "caf845399341b3cb0b6af7a31df7e03cdcd797ae327e2910ebc09b1eff9e292b",
+   "bytes": 800
+  },
+  "build/strip-landmarks/buca-flamingo-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312823298-2c0f0ac67528-buca-flamingo-exterior.glb",
+   "sha256": "2c0f0ac6752855c2d2913dbb0939f628eb58160f27ce0064dde22bfb08e7c60c",
+   "bytes": 689908
+  },
+  "build/strip-landmarks/buca-flamingo-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312823562-987cdd1df73f-buca-flamingo-interior-collision.bin",
+   "sha256": "987cdd1df73f7a5114033854dd35483e5f151c09c1d5fd9dd033505530a3f49e",
+   "bytes": 2176
+  },
+  "build/strip-landmarks/buca-flamingo-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312823698-672d5c4a7423-buca-flamingo-interior.glb",
+   "sha256": "672d5c4a74230760065138fbc0403adac148178cd53fbf8d09a5f0013b371f71",
+   "bytes": 263628
+  },
   "build/strip-landmarks/caesarsExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985274803-6aaaa1a7bfb8-caesarsExterior-exterior-collision.bin",
    "sha256": "6aaaa1a7bfb819641ac9589015dd63df893641b75dd85a9a000b4d24677050c7",
@@ -4836,6 +4936,36 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863119922-5e356af57a66-caesarsForum-exterior.glb",
    "sha256": "5e356af57a66f681c7b3e8064b3491918263bda48c1aefde2fdcb172a25e2dba",
    "bytes": 570496
+  },
+  "build/strip-landmarks/canes-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312823849-37eb539338f5-canes-tropicana-exterior-collision.bin",
+   "sha256": "37eb539338f58b415510895d52a741dd9da2cea85684430f662650a05438c783",
+   "bytes": 412
+  },
+  "build/strip-landmarks/canes-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312824185-636eeeb1925f-canes-tropicana-exterior.glb",
+   "sha256": "636eeeb1925fe5ec7327d246e3e822176e4f6f1a6481bb3090a50a811a45bc9c",
+   "bytes": 1114972
+  },
+  "build/strip-landmarks/canes-tropicana-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312824438-348f77a496b1-canes-tropicana-interior-collision.bin",
+   "sha256": "348f77a496b12e45461690802a89c182fa016e5bc39e748c43149ec383099648",
+   "bytes": 1200
+  },
+  "build/strip-landmarks/canes-tropicana-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312824572-70a35a6c35ce-canes-tropicana-interior.glb",
+   "sha256": "70a35a6c35ce60608ebe1554f9d106355b5808c59c15064db4a3fa33174d04c2",
+   "bytes": 1073156
+  },
+  "build/strip-landmarks/carls-jr-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312824833-e4de08ec836e-carls-jr-sahara-exterior-collision.bin",
+   "sha256": "e4de08ec836e10f980b0c9377e0fb8abbcd9d86c9b71be8729d7e5f51c82a439",
+   "bytes": 492
+  },
+  "build/strip-landmarks/carls-jr-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312825138-4a9b925fd0b8-carls-jr-sahara-exterior.glb",
+   "sha256": "4a9b925fd0b8f7ea54b771ca8b1cc5e662ce93e3edb10486487a61645be342f0",
+   "bytes": 610780
   },
   "build/strip-landmarks/carnavalCourt-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985274907-311ca92765af-carnavalCourt-exterior-collision.bin",
@@ -4947,6 +5077,46 @@
    "sha256": "f4baca055f2fb821f3ae959de8d73ecb2e1a69245671d4f6534c998c6cf8ddbc",
    "bytes": 108900
   },
+  "build/strip-landmarks/chick-fil-a-flamingo-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312825705-cb5a089974c2-chick-fil-a-flamingo-exterior-collision.bin",
+   "sha256": "cb5a089974c2fe6cba71ed62a659da4cf8a78140ad888c5665035bb8f75e2025",
+   "bytes": 632
+  },
+  "build/strip-landmarks/chick-fil-a-flamingo-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312825795-b29c1c636b15-chick-fil-a-flamingo-exterior.glb",
+   "sha256": "b29c1c636b15cf731df9eb11c55bb0c44e51b837062f393812d0b699cb80f3b6",
+   "bytes": 322376
+  },
+  "build/strip-landmarks/chick-fil-a-paradise-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312826012-756d2ec709c1-chick-fil-a-paradise-exterior-collision.bin",
+   "sha256": "756d2ec709c1de512271235a4eb2ea564d6e743aac9e9e8b67d837d665abfd35",
+   "bytes": 1108
+  },
+  "build/strip-landmarks/chick-fil-a-paradise-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312826166-6af428495296-chick-fil-a-paradise-exterior.glb",
+   "sha256": "6af42849529674f9f515d8d1a55cf47413f7ed0838dcdd877f0c0c9ffe19bdab",
+   "bytes": 632980
+  },
+  "build/strip-landmarks/chick-fil-a-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312826313-c521b4f9c184-chick-fil-a-sahara-exterior-collision.bin",
+   "sha256": "c521b4f9c184e9587357641ef91eefe50a54960667eac506f5edcb989248c6ce",
+   "bytes": 884
+  },
+  "build/strip-landmarks/chick-fil-a-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312826669-65e38ad5c9e0-chick-fil-a-sahara-exterior.glb",
+   "sha256": "65e38ad5c9e02cc4def94837e754823fd856a8801e614b55f0ebac2a4a7f290c",
+   "bytes": 652304
+  },
+  "build/strip-landmarks/chrome-gypsy-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312826688-1f6fd4501820-chrome-gypsy-exterior-collision.bin",
+   "sha256": "1f6fd4501820dc64e9a0899f13555564f3dabcefe08d4e25806ccff62654983c",
+   "bytes": 1128
+  },
+  "build/strip-landmarks/chrome-gypsy-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312826992-924ff7c8eb44-chrome-gypsy-exterior.glb",
+   "sha256": "924ff7c8eb444dea091be29a0b60970b7f41e780ae096776b7560bef2c2b4c4d",
+   "bytes": 365656
+  },
   "build/strip-landmarks/circusExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985275633-7bd3518fc00c-circusExterior-exterior-collision.bin",
    "sha256": "7bd3518fc00c60b9884de93ac30249e54b8e97543ddcd170068c8cce48c85c4e",
@@ -4986,6 +5156,16 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863127081-074ddbe54f89-citycenter63-exterior.glb",
    "sha256": "074ddbe54f895e60e3729671abfd77d2f297df36bd22859ca7a786f2181e06fe",
    "bytes": 1989648
+  },
+  "build/strip-landmarks/collective-paradise-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312827299-3141702320b1-collective-paradise-exterior-collision.bin",
+   "sha256": "3141702320b1df8fce08d98dff5653cba9e10f0f530c5f4b01b5ccb7a36e47a6",
+   "bytes": 1216
+  },
+  "build/strip-landmarks/collective-paradise-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312827615-25d961c079f5-collective-paradise-exterior.glb",
+   "sha256": "25d961c079f53cf1b5a2c517c085ddb0651ece96dc58e9f8754f1efbd5b54eff",
+   "bytes": 1058684
   },
   "build/strip-landmarks/conventionFrontage-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985275904-f2df849bd505-conventionFrontage-exterior-collision.bin",
@@ -5047,6 +5227,16 @@
    "sha256": "b22747cf3d479ebbee5c27c7331c818df3228a09aad2ac057ea65956a3599ab5",
    "bytes": 600392
   },
+  "build/strip-landmarks/cvs-paradise-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312827782-dcf2bcbd4be5-cvs-paradise-exterior-collision.bin",
+   "sha256": "dcf2bcbd4be5fca9d3faf8149a90029a1a933b9b764672fca4488e5aa7c5ff29",
+   "bytes": 764
+  },
+  "build/strip-landmarks/cvs-paradise-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312827793-b405320b3f67-cvs-paradise-exterior.glb",
+   "sha256": "b405320b3f679fb8493686fb3dffffcc6332e5d8f4edccc09203af1a4144f81e",
+   "bytes": 5988068
+  },
   "build/strip-landmarks/cvsHorseshoe-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985276305-ed30e4a1e5f8-cvsHorseshoe-exterior-collision.bin",
    "sha256": "ed30e4a1e5f8ec39752ca01f549928944f4d1e443239032725b14c26f61555d9",
@@ -5056,6 +5246,116 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863130130-45bcd8ecc5e5-cvsHorseshoe-exterior.glb",
    "sha256": "45bcd8ecc5e54a44849d848b4bb287716f2bd4c8a46afc656579edcd6cc54996",
    "bytes": 401408
+  },
+  "build/strip-landmarks/dean-martin-5115-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312828085-65fb50da9e6c-dean-martin-5115-exterior-collision.bin",
+   "sha256": "65fb50da9e6c59959ddced124a2a0c1483ac703767faf706ff4a85f53d0156f6",
+   "bytes": 248
+  },
+  "build/strip-landmarks/dean-martin-5115-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312828382-fdf7ce8692f5-dean-martin-5115-exterior.glb",
+   "sha256": "fdf7ce8692f5cdc42868bab50600547669ef7e5e92c810bece3fe87b0fceac13",
+   "bytes": 659564
+  },
+  "build/strip-landmarks/dean-martin-courtyard-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312829193-d44e3e763450-dean-martin-courtyard-exterior-collision.bin",
+   "sha256": "d44e3e763450022243d4a17cfd42809b2d35369513e9249b7a670e1bb89f5d54",
+   "bytes": 204
+  },
+  "build/strip-landmarks/dean-martin-courtyard-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312829224-4f584e1fa2af-dean-martin-courtyard-exterior.glb",
+   "sha256": "4f584e1fa2af4c0f85f716cdb295da348a8d270b029f1674881fa53a7786bdc7",
+   "bytes": 449680
+  },
+  "build/strip-landmarks/dean-martin-crossbar-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312829494-cf8dffb739df-dean-martin-crossbar-exterior-collision.bin",
+   "sha256": "cf8dffb739df121a0a5e3d3be45edeeed6dfa8c49b7988f2f40deed98ab3770a",
+   "bytes": 200
+  },
+  "build/strip-landmarks/dean-martin-crossbar-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312829764-b24a5fa56b6d-dean-martin-crossbar-exterior.glb",
+   "sha256": "b24a5fa56b6d7eeee37ffee384bcc80ff3448b777f5357479da49a161a0164b2",
+   "bytes": 510380
+  },
+  "build/strip-landmarks/dean-martin-east-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312829923-f6d74419317b-dean-martin-east-exterior-collision.bin",
+   "sha256": "f6d74419317b5de82b4523db40e3ecd4960bb5e7e9c225eb6a6e00d7162bb7b6",
+   "bytes": 192
+  },
+  "build/strip-landmarks/dean-martin-east-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312830205-28bc6c86d0c7-dean-martin-east-exterior.glb",
+   "sha256": "28bc6c86d0c761f276cb049f071b8e64a2c6902c4bfeb1910fb08bddc814b669",
+   "bytes": 902768
+  },
+  "build/strip-landmarks/dean-martin-north-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312830562-ec5b01d62d30-dean-martin-north-exterior-collision.bin",
+   "sha256": "ec5b01d62d30092732bbf538a44c494d8a0ea64b0a6dbf31f51d4f218e2b23da",
+   "bytes": 232
+  },
+  "build/strip-landmarks/dean-martin-north-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312830844-1296f01bd9ed-dean-martin-north-exterior.glb",
+   "sha256": "1296f01bd9edfb23a3799d4d9a8fd44304d16d1c5fcb75aaba49b1300b9077c5",
+   "bytes": 883668
+  },
+  "build/strip-landmarks/dean-martin-northwest-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312831084-5228fa45e24f-dean-martin-northwest-exterior-collision.bin",
+   "sha256": "5228fa45e24f8cadddf79c88f6248d5ff0e534b8c0867180785fe07db267781f",
+   "bytes": 200
+  },
+  "build/strip-landmarks/dean-martin-northwest-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312831387-5c09e484c85a-dean-martin-northwest-exterior.glb",
+   "sha256": "5c09e484c85aaee6d7b18f165b37c513f5a9ee5e78dc34c6b05af38c9162b63d",
+   "bytes": 399816
+  },
+  "build/strip-landmarks/dean-martin-south-crossbar-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312832022-810d08a5e316-dean-martin-south-crossbar-exterior-collision.bin",
+   "sha256": "810d08a5e316ac44d03bd24da15a31e5a8daefaf6f15713d319590a0cf439d11",
+   "bytes": 252
+  },
+  "build/strip-landmarks/dean-martin-south-crossbar-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312832097-91eeceee48ab-dean-martin-south-crossbar-exterior.glb",
+   "sha256": "91eeceee48ab4193672d80e127c723a0d3cc9627d799ca2b752ba10df9ca1739",
+   "bytes": 490116
+  },
+  "build/strip-landmarks/dean-martin-southwest-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312832426-915d827867b2-dean-martin-southwest-exterior-collision.bin",
+   "sha256": "915d827867b2f284f1bf91e787400ec32851d9aa2697cb4d281ccfbb661790d6",
+   "bytes": 240
+  },
+  "build/strip-landmarks/dean-martin-southwest-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312832744-c769ee5cf7fb-dean-martin-southwest-exterior.glb",
+   "sha256": "c769ee5cf7fbd1b1d2ee0a4cdc233d225bc4f13dceb146297566db8d2b7015fc",
+   "bytes": 422796
+  },
+  "build/strip-landmarks/delfriscos-paradise-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312832909-6a7e3b5b56e6-delfriscos-paradise-exterior-collision.bin",
+   "sha256": "6a7e3b5b56e6f68bedc0aff38c8f6df343f429d656edb43cf20869a9887d83d8",
+   "bytes": 832
+  },
+  "build/strip-landmarks/delfriscos-paradise-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312833223-babe10a38586-delfriscos-paradise-exterior.glb",
+   "sha256": "babe10a385863ef984dd15a3f3bc7f0c1e1553ff903b4ab492ec66974475c82d",
+   "bytes": 528564
+  },
+  "build/strip-landmarks/dennys-flamingo-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312833408-ddca4d690375-dennys-flamingo-exterior-collision.bin",
+   "sha256": "ddca4d690375ba8bb5c9238fcdd812878486dac26067d121599b0f09c020c757",
+   "bytes": 308
+  },
+  "build/strip-landmarks/dennys-flamingo-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312833689-6c7c2eca5f41-dennys-flamingo-exterior.glb",
+   "sha256": "6c7c2eca5f418f8dad6ed62ed77e0b9535505096ec1c047f34deb304fdb4d2fc",
+   "bytes": 272704
+  },
+  "build/strip-landmarks/dennys-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312833828-c92b0cf19dd9-dennys-sahara-exterior-collision.bin",
+   "sha256": "c92b0cf19dd9d25a21f53c9f7b9045cb2b73c7b0def000bc5019bafdf2725745",
+   "bytes": 332
+  },
+  "build/strip-landmarks/dennys-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312834110-89b2c5e4478a-dennys-sahara-exterior.glb",
+   "sha256": "89b2c5e4478a0cb6be2a16611ef914a597abee5c9d2f50477dfbca5151e0d133",
+   "bytes": 1713000
   },
   "build/strip-landmarks/dennys1822-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985276374-6300eeffc091-dennys1822-exterior-collision.bin",
@@ -5097,6 +5397,36 @@
    "sha256": "f0ab8c3bc608303e72896a77313d1595026b2a1f6e8480d79e52819bf2946119",
    "bytes": 1625016
   },
+  "build/strip-landmarks/doubleDown-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312834206-5dd46fa40fa2-doubleDown-exterior-collision.bin",
+   "sha256": "5dd46fa40fa28fab5f06c2d7900171946e1cb91a911d55f41392e99202ef8a56",
+   "bytes": 480
+  },
+  "build/strip-landmarks/doubleDown-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312834333-1bb685b06903-doubleDown-exterior.glb",
+   "sha256": "1bb685b06903b88b64a565bae385b3eda5aa0e0532d9999d96de11643e5bbfac",
+   "bytes": 764684
+  },
+  "build/strip-landmarks/doubleDown-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312834522-82bf00ca9fd4-doubleDown-interior-collision.bin",
+   "sha256": "82bf00ca9fd46d9e18b4f226f4e4472b7017c6301848b5d1b6014a5285673865",
+   "bytes": 252
+  },
+  "build/strip-landmarks/doubleDown-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312834809-a806d1bb1fbe-doubleDown-interior.glb",
+   "sha256": "a806d1bb1fbe950989ed2083d27874772b96001d2c77f0eec14c02d544a0448e",
+   "bytes": 2313692
+  },
+  "build/strip-landmarks/dutch-bros-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312835754-f1d5bd4554aa-dutch-bros-sahara-exterior-collision.bin",
+   "sha256": "f1d5bd4554aacf6ad67516f779627a5503e6934a5b7e7d0712a8a98196c27fab",
+   "bytes": 544
+  },
+  "build/strip-landmarks/dutch-bros-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312836062-cbc1cd4905cd-dutch-bros-sahara-exterior.glb",
+   "sha256": "cbc1cd4905cdfbe947b672fe36b3bff9a819b40c360063a3fb8fab55caf0e2e6",
+   "bytes": 229364
+  },
   "build/strip-landmarks/elaraExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985276629-07ca5d247ca6-elaraExterior-exterior-collision.bin",
    "sha256": "07ca5d247ca6f452cd6199b0945d50e5673e5df0ba26a51250fe4c04ac48fa6a",
@@ -5137,6 +5467,26 @@
    "sha256": "1ecd140897d6478897df12f979a0ad92e031ad23117f0db241f8549609dfa4d4",
    "bytes": 1024600
   },
+  "build/strip-landmarks/fairfield-paradise-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312836320-8b5371c1bdc4-fairfield-paradise-exterior-collision.bin",
+   "sha256": "8b5371c1bdc4bd949978b746438c063eaecb0dc3cc6d35aa0e22347c925f1a94",
+   "bytes": 1028
+  },
+  "build/strip-landmarks/fairfield-paradise-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312836604-c87294827de3-fairfield-paradise-exterior.glb",
+   "sha256": "c87294827de36a876dc4d0e3af4a1dcb9f2d0d7088e761a6eba138a18efc72fb",
+   "bytes": 1148420
+  },
+  "build/strip-landmarks/fairfield-paradise-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312836603-ea9d39883a5a-fairfield-paradise-interior-collision.bin",
+   "sha256": "ea9d39883a5a309fa9aa458bcf9ca073f8c9f2240f765b8fc950a1683c01fd82",
+   "bytes": 612
+  },
+  "build/strip-landmarks/fairfield-paradise-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312836870-18c6e83f36b0-fairfield-paradise-interior.glb",
+   "sha256": "18c6e83f36b0d0fdb96710fcb4347e683a1420cc63f571df9e049fd04e0dc2bb",
+   "bytes": 114956
+  },
   "build/strip-landmarks/fashion-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985276893-f9fd75740f31-fashion-exterior-collision.bin",
    "sha256": "f9fd75740f319b368f0fe81f148a164eebbda49c8632a761d90d490890c6d82d",
@@ -5156,6 +5506,66 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863132309-0df20ff1473b-fashion-interior.glb",
    "sha256": "0df20ff1473b18b2663d862d2c509cee14b16e8d290c959aee2e02be1ea5d3c1",
    "bytes": 2966972
+  },
+  "build/strip-landmarks/favorita-market-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312837223-d92893a5dd6e-favorita-market-exterior-collision.bin",
+   "sha256": "d92893a5dd6e17c36b8ce1d941df2c29dfbcae18f1542c7afcbb15bd242bcd6a",
+   "bytes": 500
+  },
+  "build/strip-landmarks/favorita-market-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312837531-34f2d4e54fe6-favorita-market-exterior.glb",
+   "sha256": "34f2d4e54fe6a4ea3fd974225b0b22b2f1f050a5646a6da39a4d23ec7202a295",
+   "bytes": 572688
+  },
+  "build/strip-landmarks/favorita-market-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312837967-5e4d1e44e365-favorita-market-interior-collision.bin",
+   "sha256": "5e4d1e44e365bb8c5fa4f765b10ea7cd19032e3accfbec5e3f1d1c3e2bc828cb",
+   "bytes": 2312
+  },
+  "build/strip-landmarks/favorita-market-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312838237-5c815381024a-favorita-market-interior.glb",
+   "sha256": "5c815381024a5bc064bde87616a91ae1ba081f769812f6097a357106e4a5f731",
+   "bytes": 4688716
+  },
+  "build/strip-landmarks/fedex-hughes-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312838326-624750d94cc7-fedex-hughes-exterior-collision.bin",
+   "sha256": "624750d94cc756416cc031a676ea112237ce24141ad05cad495ae5d01f509542",
+   "bytes": 708
+  },
+  "build/strip-landmarks/fedex-hughes-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312838405-12151b378c25-fedex-hughes-exterior.glb",
+   "sha256": "12151b378c25406fa680fce5a9952713ecd33accc208847538f50dd31f197262",
+   "bytes": 169320
+  },
+  "build/strip-landmarks/fedex-hughes-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312838594-0905debbc326-fedex-hughes-interior-collision.bin",
+   "sha256": "0905debbc3268cb9b45be0a02611f7abb8219b63cb0c763792e302da7e27a134",
+   "bytes": 808
+  },
+  "build/strip-landmarks/fedex-hughes-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312838903-4002dd3dd776-fedex-hughes-interior.glb",
+   "sha256": "4002dd3dd776d308a5e1a378dec5b6f26ed21a784ce532e7f4422e92b6b58e0e",
+   "bytes": 353992
+  },
+  "build/strip-landmarks/ferraros-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312839025-a5ab0c92f130-ferraros-exterior-collision.bin",
+   "sha256": "a5ab0c92f130b2988ae7bfa2923eb957424ab3702c3afbbe0515c543997b7ac8",
+   "bytes": 768
+  },
+  "build/strip-landmarks/ferraros-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312839302-eba63d6568b1-ferraros-exterior.glb",
+   "sha256": "eba63d6568b1d31cb4c4f5711e6c5018f36b6d1df0cc521475c16266439bc35c",
+   "bytes": 1450196
+  },
+  "build/strip-landmarks/ferraros-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312839772-cdc7765b743f-ferraros-interior-collision.bin",
+   "sha256": "cdc7765b743f11f4b04893c0625581c83fc54c3dd7643cde35f47063a05e3bfc",
+   "bytes": 1080
+  },
+  "build/strip-landmarks/ferraros-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312840080-fe5384c77306-ferraros-interior.glb",
+   "sha256": "fe5384c773068e11f8dcd29c4610ed75ec611b91f1f1d7bf78d9987c6ee1b173",
+   "bytes": 1585660
   },
   "build/strip-landmarks/festivalGroundsService-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985277079-d191d00ca229-festivalGroundsService-exterior-collision.bin",
@@ -5177,6 +5587,26 @@
    "sha256": "57905c01a7216d418c5f59d2896c982fb8e25182701c0d0e1954f1abbdf1fd81",
    "bytes": 622244
   },
+  "build/strip-landmarks/firefly-hughes-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312841513-74e519fd6b52-firefly-hughes-exterior-collision.bin",
+   "sha256": "74e519fd6b523774985440aa9e4bef692904f1bf2204412279024d32702bb0f2",
+   "bytes": 936
+  },
+  "build/strip-landmarks/firefly-hughes-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312841784-7f40ae631eb9-firefly-hughes-exterior.glb",
+   "sha256": "7f40ae631eb9132ba1a0a469b05ee9770b458f9e7f29e7447f9816a38f38099a",
+   "bytes": 416120
+  },
+  "build/strip-landmarks/firefly-hughes-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312842343-3b78df497379-firefly-hughes-interior-collision.bin",
+   "sha256": "3b78df4973799ed6daa46ebe7d12565e395d3fb9fd56f61f2423b7bf781c7c48",
+   "bytes": 2396
+  },
+  "build/strip-landmarks/firefly-hughes-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312842694-f29a66790415-firefly-hughes-interior.glb",
+   "sha256": "f29a66790415cb0a7d286bdbb32ab4c24ce8273c199b472b63db68ae21c3e1ec",
+   "bytes": 543296
+  },
   "build/strip-landmarks/flamingoExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985277165-9f1f93e22d62-flamingoExterior-exterior-collision.bin",
    "sha256": "9f1f93e22d620777f72654c61f6bde857ce6e3947d3b6a8d2eff111afdefdb82",
@@ -5197,6 +5627,46 @@
    "sha256": "a2003d119847df6c4b0091f775a2532333329838b4ffd7e50b3fda7110b839ed",
    "bytes": 12693392
   },
+  "build/strip-landmarks/flex-twain-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312842837-8860acf85b82-flex-twain-exterior-collision.bin",
+   "sha256": "8860acf85b82ee439690d69e57371690b870d4610d8b23427641e8cd11c63d99",
+   "bytes": 320
+  },
+  "build/strip-landmarks/flex-twain-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312842909-a10fbd12fe5e-flex-twain-exterior.glb",
+   "sha256": "a10fbd12fe5ebc7a4e8cbc989b075d33923ecac6915f6d3fd0e7f910e653d1c4",
+   "bytes": 263116
+  },
+  "build/strip-landmarks/flex-twain-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312843145-b3bd0c7f56ce-flex-twain-interior-collision.bin",
+   "sha256": "b3bd0c7f56cefa02657eca2c55f03f01ffa9bf374b40258e172ba41cc3640346",
+   "bytes": 604
+  },
+  "build/strip-landmarks/flex-twain-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312843399-884933c6e60f-flex-twain-interior.glb",
+   "sha256": "884933c6e60ffea10388b38210419951a9883cd862232d160f7f6bb236ec9b84",
+   "bytes": 307300
+  },
+  "build/strip-landmarks/fogo-hughes-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312843422-cbdd6b5a2a9b-fogo-hughes-exterior-collision.bin",
+   "sha256": "cbdd6b5a2a9b2d14175910f2436e8b0aab3050b2545e95370fe731e35445ad92",
+   "bytes": 604
+  },
+  "build/strip-landmarks/fogo-hughes-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312843625-4db72f21a711-fogo-hughes-exterior.glb",
+   "sha256": "4db72f21a71143ae3e4e86511e6e48bde1873875986877db3dc4cb0f2d178eeb",
+   "bytes": 505944
+  },
+  "build/strip-landmarks/fogo-hughes-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312843785-6e24e19bcd1c-fogo-hughes-interior-collision.bin",
+   "sha256": "6e24e19bcd1c69409f61816f8856c379c7ac2a6a887a711c7e4bb7b369d08791",
+   "bytes": 3012
+  },
+  "build/strip-landmarks/fogo-hughes-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312844025-8f3419164498-fogo-hughes-interior.glb",
+   "sha256": "8f34191644982df931bd973f7661ac9fc21d0102aa584b1c9d3473d5d729ff18",
+   "bytes": 1275412
+  },
   "build/strip-landmarks/fontainebleauExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985277351-5abbfe6bf1ee-fontainebleauExterior-exterior-collision.bin",
    "sha256": "5abbfe6bf1ee7f7494f2446ff77c261b1c496aefa4709a09c7ad1307a6739778",
@@ -5206,6 +5676,26 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863134121-365133747bb8-fontainebleauExterior-exterior.glb",
    "sha256": "365133747bb8cf9e18c97efc4aa76b42c55ef5f7325a1d2c3597cc5b16102997",
    "bytes": 624448
+  },
+  "build/strip-landmarks/former-starbucks-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312844068-c8b7f3709095-former-starbucks-tropicana-exterior-collision.bin",
+   "sha256": "c8b7f37090951e4b786694cfe215968736a386c7a57d27db8ff899e4e13276df",
+   "bytes": 260
+  },
+  "build/strip-landmarks/former-starbucks-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312844351-a00428868adc-former-starbucks-tropicana-exterior.glb",
+   "sha256": "a00428868adcaf22b36ad5c444ec59eef67c56669180109b721082a4cfbf1924",
+   "bytes": 928560
+  },
+  "build/strip-landmarks/former-wendys-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312844369-41d7db4df5fb-former-wendys-tropicana-exterior-collision.bin",
+   "sha256": "41d7db4df5fbb361e66c48af448cee32c1b79ea213bf9c7b862368664dca6b79",
+   "bytes": 340
+  },
+  "build/strip-landmarks/former-wendys-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312844539-ca8bde4e49a0-former-wendys-tropicana-exterior.glb",
+   "sha256": "ca8bde4e49a0cdb5629053431c2e3fda7abbdf0a89bbc3b07d4bcb46bd565363",
+   "bytes": 858388
   },
   "build/strip-landmarks/forumCoolingTowers-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985277427-978ecac05eea-forumCoolingTowers-exterior-collision.bin",
@@ -5226,6 +5716,46 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863134730-1e89e92fed22-forumShops-exterior.glb",
    "sha256": "1e89e92fed22856f4de48f669c03d8c1719dab0b6a2c7274d7a433cd543d1c9d",
    "bytes": 1940640
+  },
+  "build/strip-landmarks/fun-hog-ranch-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312844649-1fc05fdc4fc7-fun-hog-ranch-exterior-collision.bin",
+   "sha256": "1fc05fdc4fc7f532bf9d53cbbfb15b99157852e9affdf8f18d88e34bb549436d",
+   "bytes": 260
+  },
+  "build/strip-landmarks/fun-hog-ranch-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312844930-0707e4a65487-fun-hog-ranch-exterior.glb",
+   "sha256": "0707e4a65487c5d7af576e1ee06206f1f3de07392e2cba041af5ab4310900e18",
+   "bytes": 162796
+  },
+  "build/strip-landmarks/fun-hog-ranch-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312845370-1c3899aad616-fun-hog-ranch-interior-collision.bin",
+   "sha256": "1c3899aad6163508c3883296309184d9012edeca8e9f2ba82c7ef62477a54bf0",
+   "bytes": 1040
+  },
+  "build/strip-landmarks/fun-hog-ranch-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312845475-3e8c2c386d18-fun-hog-ranch-interior.glb",
+   "sha256": "3e8c2c386d18dc25a848286fb955332f10858d951499aaf7c6cf7762cfe959b2",
+   "bytes": 442764
+  },
+  "build/strip-landmarks/gipsy-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312845657-1428f7881d69-gipsy-exterior-collision.bin",
+   "sha256": "1428f7881d6986784d7934fb296ec03c438a15bd3ebc8ca0920b968e5e781060",
+   "bytes": 568
+  },
+  "build/strip-landmarks/gipsy-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312845683-9556c2308091-gipsy-exterior.glb",
+   "sha256": "9556c2308091a9935229efd584d50baaffd9bfc6f4d671a1fb5c0ff8ec3e9923",
+   "bytes": 1137008
+  },
+  "build/strip-landmarks/gipsy-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312845949-3712f5980205-gipsy-interior-collision.bin",
+   "sha256": "3712f59802055fc817f1f175a925d2ad4deba3ca82ffeabdca75a56e678e02d4",
+   "bytes": 384
+  },
+  "build/strip-landmarks/gipsy-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312845960-6ea2005d7e05-gipsy-interior.glb",
+   "sha256": "6ea2005d7e0537f1ba5d139d3db33dad31effd263b0b89c81c013c923617014d",
+   "bytes": 1221504
   },
   "build/strip-landmarks/goldCoastExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985277611-2c254e112e2b-goldCoastExterior-exterior-collision.bin",
@@ -5277,6 +5807,16 @@
    "sha256": "d1616ed770cca78ffc472072989ee74c4af737baabafc10fd15aad5583fab8ff",
    "bytes": 4419632
   },
+  "build/strip-landmarks/groveUniversity-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312846191-8a32a7c7843a-groveUniversity-exterior-collision.bin",
+   "sha256": "8a32a7c7843a9a69709b2509526f983809053cadd4e07ed39ebc616b7ce3f5e1",
+   "bytes": 368
+  },
+  "build/strip-landmarks/groveUniversity-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312846222-85114c809023-groveUniversity-exterior.glb",
+   "sha256": "85114c809023e08db30fa67a354324c7a9b74356974a9bd7286591c21e629cd8",
+   "bytes": 388904
+  },
   "build/strip-landmarks/guardianAngel-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985277942-afb8e07b2177-guardianAngel-exterior-collision.bin",
    "sha256": "afb8e07b2177d07665f97fb7131162cbecf596195bb6ed1f3a5a3e7097544a0c",
@@ -5287,6 +5827,26 @@
    "sha256": "9ad265e8e1dc9c472d5ee9b5105b0f652044496b38da6dbe4097de7c05487e89",
    "bytes": 1223840
   },
+  "build/strip-landmarks/hampton-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312846465-174ed272ede1-hampton-tropicana-exterior-collision.bin",
+   "sha256": "174ed272ede19435d3bd2b7720381f54f3e31a4c7c32d68f76238f7a3e9fcadd",
+   "bytes": 5036
+  },
+  "build/strip-landmarks/hampton-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312846747-c820171157f0-hampton-tropicana-exterior.glb",
+   "sha256": "c820171157f0aa6920f6db2272290545a51b87958723862d15fa3cd6e8f7aee8",
+   "bytes": 5372940
+  },
+  "build/strip-landmarks/hampton-tropicana-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312846920-1e2feb3de0b7-hampton-tropicana-interior-collision.bin",
+   "sha256": "1e2feb3de0b74c925ffc7947d5b3b0548c53983f7ac17c619847ece9c5f35215",
+   "bytes": 1052
+  },
+  "build/strip-landmarks/hampton-tropicana-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312847196-87368a7e62a4-hampton-tropicana-interior.glb",
+   "sha256": "87368a7e62a47b6da9492597880c46e8df8e54d8ef56a642b40864582dbbefe4",
+   "bytes": 1664296
+  },
   "build/strip-landmarks/harleyDealership-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985277994-867b47b55bf7-harleyDealership-exterior-collision.bin",
    "sha256": "867b47b55bf71f3bedd8139ac2ea8bfb6a19d28dc9a69be94ef4a93608ad907f",
@@ -5296,6 +5856,16 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863139281-b49d3b09dba9-harleyDealership-exterior.glb",
    "sha256": "b49d3b09dba98ab6746e988282a80bc6580e6afd57362639a5284f8796b03f7e",
    "bytes": 474024
+  },
+  "build/strip-landmarks/harmon-dining-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312847278-4febcd0c41e7-harmon-dining-exterior-collision.bin",
+   "sha256": "4febcd0c41e7267c7f800d131cd95163494cc8b77d633ac139085b6a53355bc9",
+   "bytes": 576
+  },
+  "build/strip-landmarks/harmon-dining-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312847445-c1f13ba59938-harmon-dining-exterior.glb",
+   "sha256": "c1f13ba59938da31eabf1dc8cdff0b04170f11c9029d44bbfcf8b0a03c6717b9",
+   "bytes": 1652160
   },
   "build/strip-landmarks/harmonEastLift-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985277995-3669e9c885d5-harmonEastLift-exterior-collision.bin",
@@ -5337,6 +5907,26 @@
    "sha256": "2607d954772413efb8d11d571b81c3e03d8d3a19311b0a7c5cb8b405a9251ce9",
    "bytes": 674504
   },
+  "build/strip-landmarks/herbs-rye-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312847555-1f114d8932a5-herbs-rye-exterior-collision.bin",
+   "sha256": "1f114d8932a5299ea55e6421b10ce05e16af4ab0871081bd0dc7a5856dbf916f",
+   "bytes": 468
+  },
+  "build/strip-landmarks/herbs-rye-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312847820-ae477c472b45-herbs-rye-exterior.glb",
+   "sha256": "ae477c472b453fd1912e57fb77ff2987b173375a7dfa4f5dea7b17a138c328f7",
+   "bytes": 315988
+  },
+  "build/strip-landmarks/herbs-rye-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312848512-afc0759b4307-herbs-rye-interior-collision.bin",
+   "sha256": "afc0759b4307b74a786a4f338c3e54c3d228404b05e11a6be4a8db7a0c0bceac",
+   "bytes": 604
+  },
+  "build/strip-landmarks/herbs-rye-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312848787-ef59c13dcbc2-herbs-rye-interior.glb",
+   "sha256": "ef59c13dcbc2d163f790c4411cb18de854aa8d968543e1f1ae82f1f349422f3a",
+   "bytes": 992080
+  },
   "build/strip-landmarks/hgvExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985278280-b305627337ca-hgvExterior-exterior-collision.bin",
    "sha256": "b305627337ca4a57ac644905a440f1cdc6cf218af003a08bdf22320eb863da53",
@@ -5356,6 +5946,116 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863140922-f1392fb2ec94-hgvFlamingoExterior-exterior.glb",
    "sha256": "f1392fb2ec942140b462cd7f28df4a87c0ee871b2eb5ed664fe5604999aef23a",
    "bytes": 347944
+  },
+  "build/strip-landmarks/hilton-garden-city-center-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312849246-48c229c13e35-hilton-garden-city-center-exterior-collision.bin",
+   "sha256": "48c229c13e3517a966024ddd2dee430650daab02fe4d88f3bd7ceb29e21677a8",
+   "bytes": 1388
+  },
+  "build/strip-landmarks/hilton-garden-city-center-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312849531-651bb6670461-hilton-garden-city-center-exterior.glb",
+   "sha256": "651bb66704612e749975a957cb337b633b35a6afe4ed7ed4c43fd7fe169420e3",
+   "bytes": 1552836
+  },
+  "build/strip-landmarks/hilton-garden-city-center-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312849731-1d2b008083b7-hilton-garden-city-center-interior-collision.bin",
+   "sha256": "1d2b008083b799c57e5c81ea4670b12d4021c32e48dac55f5b924d8ed23efb44",
+   "bytes": 368
+  },
+  "build/strip-landmarks/hilton-garden-city-center-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312850024-55d8860ab4d0-hilton-garden-city-center-interior.glb",
+   "sha256": "55d8860ab4d0aa0b44c500d11b1eea738565fec18f33330e2921ff73f6b5da67",
+   "bytes": 218740
+  },
+  "build/strip-landmarks/hofbrauhaus-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312850040-788a43c8f859-hofbrauhaus-exterior-collision.bin",
+   "sha256": "788a43c8f8599b0da5f83067c350a7e6bfd0de118465c95d1e86e34fc6e3ba3d",
+   "bytes": 292
+  },
+  "build/strip-landmarks/hofbrauhaus-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312850319-8ed09d0c18cf-hofbrauhaus-exterior.glb",
+   "sha256": "8ed09d0c18cfea1e58d768a98d54e23092b707890b95e2ff3a8a28d278486fe7",
+   "bytes": 21411208
+  },
+  "build/strip-landmarks/hofbrauhaus-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312850556-c5f44d6ae317-hofbrauhaus-interior-collision.bin",
+   "sha256": "c5f44d6ae317c42cfd82e740f5ca02423072c2bbeab854cb54d5de2f70f235e3",
+   "bytes": 2728
+  },
+  "build/strip-landmarks/hofbrauhaus-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312850841-5242d135172d-hofbrauhaus-interior.glb",
+   "sha256": "5242d135172d3d8dde2fdba2d1034b329d8b09207a231206c88e91c902990b20",
+   "bytes": 13052244
+  },
+  "build/strip-landmarks/holiday-inn-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312851543-72d541ac9726-holiday-inn-tropicana-exterior-collision.bin",
+   "sha256": "72d541ac972665426fc80916467b02ed610d91b16e51ab592c1e610e9e9edd5d",
+   "bytes": 808
+  },
+  "build/strip-landmarks/holiday-inn-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312851831-d326ae1194c6-holiday-inn-tropicana-exterior.glb",
+   "sha256": "d326ae1194c6578d55a5c59c7377e1f3584d755ec466597fcae90ca5e089a472",
+   "bytes": 883024
+  },
+  "build/strip-landmarks/holiday-inn-tropicana-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312853253-948401984cdd-holiday-inn-tropicana-interior-collision.bin",
+   "sha256": "948401984cdd5f8d0f4b37f4a9faedcd229af8fc6f651075043a3272d4b6e4d7",
+   "bytes": 1004
+  },
+  "build/strip-landmarks/holiday-inn-tropicana-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312853499-503290185a20-holiday-inn-tropicana-interior.glb",
+   "sha256": "503290185a205eade9638ecfc3a6d02c5ed0e83d687ce055d5889ef39d056a80",
+   "bytes": 250868
+  },
+  "build/strip-landmarks/hollywood-cars-museum-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312853524-dc0ceeb1b518-hollywood-cars-museum-exterior-collision.bin",
+   "sha256": "dc0ceeb1b5181131168e6522d66cf5cd3238040994aaf667facc731feef11bf3",
+   "bytes": 340
+  },
+  "build/strip-landmarks/hollywood-cars-museum-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312853825-5be20427a9b0-hollywood-cars-museum-exterior.glb",
+   "sha256": "5be20427a9b0a2ad7249b1c6d02a602f215445202595d50bd91f366b44733e7f",
+   "bytes": 609388
+  },
+  "build/strip-landmarks/home2-stadium-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312853975-ca973840fd80-home2-stadium-exterior-collision.bin",
+   "sha256": "ca973840fd8045fd4b255eb9ccdbef5c61b932cde486409a8b533a7b9bde950c",
+   "bytes": 4812
+  },
+  "build/strip-landmarks/home2-stadium-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312854245-34258c9bacb3-home2-stadium-exterior.glb",
+   "sha256": "34258c9bacb3179dab45a8ad004a9d0639b907c2d17939ae87e258d2d642090b",
+   "bytes": 2903668
+  },
+  "build/strip-landmarks/home2-stadium-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312854943-3cedd3adae90-home2-stadium-interior-collision.bin",
+   "sha256": "3cedd3adae90e16fc2d486e31fa6b6ca184367e3a91ffee532a797922bcbbdcb",
+   "bytes": 1180
+  },
+  "build/strip-landmarks/home2-stadium-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312855233-c7ba0b8ac231-home2-stadium-interior.glb",
+   "sha256": "c7ba0b8ac231009d765c5e7b51b7532a6d53c6ea3d85a5b56bc5a8ebe2e2ec39",
+   "bytes": 1049972
+  },
+  "build/strip-landmarks/homewood-city-center-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312855347-175e8d295378-homewood-city-center-exterior-collision.bin",
+   "sha256": "175e8d295378d46b8d00532e12da98c53b45a2092e590c5727cbac299529c8ec",
+   "bytes": 920
+  },
+  "build/strip-landmarks/homewood-city-center-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312855633-5906b6c6080a-homewood-city-center-exterior.glb",
+   "sha256": "5906b6c6080a528e48766c5f9f4b802dd1c79b59884f32df17e88f81b5b5374d",
+   "bytes": 2203308
+  },
+  "build/strip-landmarks/homewood-city-center-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312857155-b365dd159223-homewood-city-center-interior-collision.bin",
+   "sha256": "b365dd15922336b798d80e8cc7f2982c66a42aa8b363390b736d453aa380ecca",
+   "bytes": 408
+  },
+  "build/strip-landmarks/homewood-city-center-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312857444-f8a88a51d9d2-homewood-city-center-interior.glb",
+   "sha256": "f8a88a51d9d224380c2e8c345bc2800acb5b5676d9453806eea100da4c8c1aa7",
+   "bytes": 94912
   },
   "build/strip-landmarks/horseshoeArrival-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985278537-bc3655fed534-horseshoeArrival-exterior-collision.bin",
@@ -5387,6 +6087,16 @@
    "sha256": "7a3e7792da144238e707dfb916df006bf61681b9036b72b546501128df6c9c04",
    "bytes": 13097404
   },
+  "build/strip-landmarks/hughes-retail-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312857534-27f42b3df681-hughes-retail-exterior-collision.bin",
+   "sha256": "27f42b3df6811cf6cfdbf12e7daa2f16970d6566dbe7c36008448984377353bb",
+   "bytes": 3344
+  },
+  "build/strip-landmarks/hughes-retail-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312857656-b0b802b2d7af-hughes-retail-exterior.glb",
+   "sha256": "b0b802b2d7afe676387cdda868bec6dc81ea3c5c7a6a9299e22087f802a7d655",
+   "bytes": 666232
+  },
   "build/strip-landmarks/ihopNorth-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985278732-8de8a7dcd5da-ihopNorth-exterior-collision.bin",
    "sha256": "8de8a7dcd5dad804c36bcd41c31ccb17ebb99ac07b66e14e6f972541784dde40",
@@ -5396,6 +6106,96 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863142081-2df8e381168d-ihopNorth-exterior.glb",
    "sha256": "2df8e381168d56bdfe52b831342d8d247459477394aa7e28b6cbb1a9b8b925e4",
    "bytes": 363260
+  },
+  "build/strip-landmarks/in-n-out-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312857781-b01a9bbdb978-in-n-out-sahara-exterior-collision.bin",
+   "sha256": "b01a9bbdb97871634ea8e5092ecbc14e650adfa83698504eee3aa4fbe8c369ad",
+   "bytes": 788
+  },
+  "build/strip-landmarks/in-n-out-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312857805-719055419442-in-n-out-sahara-exterior.glb",
+   "sha256": "71905541944231d35fe83904825982b95054ebfdcebc457d50725e6e711d304b",
+   "bytes": 266364
+  },
+  "build/strip-landmarks/in-n-out-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312858058-e494c7d8f3de-in-n-out-sahara-interior-collision.bin",
+   "sha256": "e494c7d8f3ded928db166af523c85125df8a16752ef94699a2212b5e090b6dd2",
+   "bytes": 264
+  },
+  "build/strip-landmarks/in-n-out-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312858224-0cf367b7b2d2-in-n-out-sahara-interior.glb",
+   "sha256": "0cf367b7b2d2df76960681abc5cc57b5904c5be9ed81f31f64c1bb601991ca11",
+   "bytes": 340492
+  },
+  "build/strip-landmarks/india-palace-twain-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312858335-e903e1a3d02d-india-palace-twain-exterior-collision.bin",
+   "sha256": "e903e1a3d02d4c0a85045cd42e7e41c95b95297e11f4bd1337da234fb26fc18f",
+   "bytes": 396
+  },
+  "build/strip-landmarks/india-palace-twain-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312858480-25b4dd21ec09-india-palace-twain-exterior.glb",
+   "sha256": "25b4dd21ec0992f0750dc08a7cd2c71faaf27d99279e74b7f479c02ab102fd28",
+   "bytes": 341604
+  },
+  "build/strip-landmarks/inout-company-store-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312858599-b93f214edcd4-inout-company-store-exterior-collision.bin",
+   "sha256": "b93f214edcd4b04769443742588d94c4484ea6c44483aaacf7f82b7baeeafb08",
+   "bytes": 364
+  },
+  "build/strip-landmarks/inout-company-store-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312858673-1091b5067955-inout-company-store-exterior.glb",
+   "sha256": "1091b50679554b8d9e2b86587deb9395db01cd468293910122e6f8b90ae0b0e8",
+   "bytes": 1123772
+  },
+  "build/strip-landmarks/inout-dean-martin-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312858834-02637c3ed46b-inout-dean-martin-exterior-collision.bin",
+   "sha256": "02637c3ed46bac4dd74f9411f09c30500c570a5fcba781f040dcb32d312d67ce",
+   "bytes": 1844
+  },
+  "build/strip-landmarks/inout-dean-martin-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312858871-aadc2ffb71fa-inout-dean-martin-exterior.glb",
+   "sha256": "aadc2ffb71fa24e3c5ae974ecdb183fc9e190002a1885e40c02aef49ffa5ae58",
+   "bytes": 2889784
+  },
+  "build/strip-landmarks/inout-dean-martin-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312859076-eb7f6e0a04c2-inout-dean-martin-interior-collision.bin",
+   "sha256": "eb7f6e0a04c240c97730669526611514a09507f137395c7d0ce428a94ba2e7ac",
+   "bytes": 1348
+  },
+  "build/strip-landmarks/inout-dean-martin-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312859110-c7578b0141b1-inout-dean-martin-interior.glb",
+   "sha256": "c7578b0141b199befa976e6fc5aa1e50041143818c55091c98ae0be833f0687e",
+   "bytes": 1600836
+  },
+  "build/strip-landmarks/jack-flamingo-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312859343-9405e753c6dc-jack-flamingo-exterior-collision.bin",
+   "sha256": "9405e753c6dc63d3d6fd734468c4af232a0416dce93a52501726f4e0fc6044eb",
+   "bytes": 520
+  },
+  "build/strip-landmarks/jack-flamingo-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312859596-7cdd0c968d4f-jack-flamingo-exterior.glb",
+   "sha256": "7cdd0c968d4fb6f04134cfa48564a29e9a9dbfa496cf1e827fc61bc22ab9f22a",
+   "bytes": 206408
+  },
+  "build/strip-landmarks/jack-flamingo-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312860119-a375cb7f2bfe-jack-flamingo-interior-collision.bin",
+   "sha256": "a375cb7f2bfe47c987b133e94c8987db4d0eb5c19b52f10d494273a4d3a6f62b",
+   "bytes": 600
+  },
+  "build/strip-landmarks/jack-flamingo-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312860229-367ee00e5a6a-jack-flamingo-interior.glb",
+   "sha256": "367ee00e5a6a4b747787076c4fa4c4dc94e55395b63b14256ac9cbc281c29f36",
+   "bytes": 95272
+  },
+  "build/strip-landmarks/jack-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312860391-d94e2424c642-jack-tropicana-exterior-collision.bin",
+   "sha256": "d94e2424c6428f099f985d55b3279f184e659f4161c2e772fd7ca345ec471a88",
+   "bytes": 256
+  },
+  "build/strip-landmarks/jack-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312860542-b0865bf325de-jack-tropicana-exterior.glb",
+   "sha256": "b0865bf325def72e69a4aa3eaba307b0a3a1a13b7a1e466c94dbc89bfd04a1c4",
+   "bytes": 1279392
   },
   "build/strip-landmarks/jackMainWyoming-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985278794-ae90bfd15530-jackMainWyoming-exterior-collision.bin",
@@ -5407,6 +6207,26 @@
    "sha256": "ffc42d7922e1520c7f404eaf40c6de34ad15c629daaed503468b8f418f3c1bea",
    "bytes": 404612
   },
+  "build/strip-landmarks/kung-fu-plaza-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312860547-85028f2e3cb4-kung-fu-plaza-exterior-collision.bin",
+   "sha256": "85028f2e3cb45793eb3a48e4b442592b640de9a3b87e744106bed80837c7155f",
+   "bytes": 388
+  },
+  "build/strip-landmarks/kung-fu-plaza-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312860669-30d138a55a40-kung-fu-plaza-exterior.glb",
+   "sha256": "30d138a55a40c97c15db8979a011a606e4c6fb3041c78d1c7df9ac2f8bea3c6f",
+   "bytes": 1470268
+  },
+  "build/strip-landmarks/kung-fu-plaza-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312860814-86b24e7eb87a-kung-fu-plaza-interior-collision.bin",
+   "sha256": "86b24e7eb87a91854c7dc8e762bb0034b4e1ba8037db632a6e4a7ee1bd689cff",
+   "bytes": 1732
+  },
+  "build/strip-landmarks/kung-fu-plaza-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312861109-91d62be13da3-kung-fu-plaza-interior.glb",
+   "sha256": "91d62be13da3ee67304e3ca47ea7fcd784bc482176dd3c5acdbbf586e2c46b80",
+   "bytes": 216728
+  },
   "build/strip-landmarks/laughingJackalope-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985278858-ae14648dbbb1-laughingJackalope-exterior-collision.bin",
    "sha256": "ae14648dbbb1d59b082a9f15a84298270b33d27e6000a69bf532aca712bb6914",
@@ -5416,6 +6236,26 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863142791-335227dfa8ae-laughingJackalope-exterior.glb",
    "sha256": "335227dfa8ae1817cefe8a88c2d6f0faace45c9e18e80ba885f874aa2638439c",
    "bytes": 142108
+  },
+  "build/strip-landmarks/lawrys-hughes-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312861562-695e2c8a37fc-lawrys-hughes-exterior-collision.bin",
+   "sha256": "695e2c8a37fcdaa2042389c3e483de3c8a4fa5544eb3d578eb3762cffb1a074f",
+   "bytes": 800
+  },
+  "build/strip-landmarks/lawrys-hughes-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312861794-e9ba80d68b35-lawrys-hughes-exterior.glb",
+   "sha256": "e9ba80d68b3593ca1244a412b5849e2517e70156492d441e249eabbfdca24b68",
+   "bytes": 462948
+  },
+  "build/strip-landmarks/lawrys-hughes-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312861882-2e9dabfb0bf6-lawrys-hughes-interior-collision.bin",
+   "sha256": "2e9dabfb0bf634ca6a7c45fe810e140ec842e434609e0767952f6e9944244a3a",
+   "bytes": 4324
+  },
+  "build/strip-landmarks/lawrys-hughes-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312862272-fbd4f06f3f96-lawrys-hughes-interior.glb",
+   "sha256": "fbd4f06f3f968b9b3ee165cdf52c015d6ad61c9a2eb14d44c9806f3572b2082c",
+   "bytes": 761852
   },
   "build/strip-landmarks/linq-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985278831-9e9655007391-linq-exterior-collision.bin",
@@ -5456,6 +6296,46 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863145185-8c8d4f1a3efd-littleChurchWest-exterior.glb",
    "sha256": "8c8d4f1a3efd7e9eff1b7fca47c79ee0c746037f3518df0aaf6c3fee3d33e9e9",
    "bytes": 12650744
+  },
+  "build/strip-landmarks/lolos-hughes-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312862285-91d98dfdc906-lolos-hughes-exterior-collision.bin",
+   "sha256": "91d98dfdc906c914f236e8111cb1fdb5bab8b1c8c2257ce930630a0acf74b29b",
+   "bytes": 1628
+  },
+  "build/strip-landmarks/lolos-hughes-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312862436-badbc68bd56e-lolos-hughes-exterior.glb",
+   "sha256": "badbc68bd56e1f53a76e3d8827382f34c089a276ed8ea63e3064b9ae75b1d61d",
+   "bytes": 484312
+  },
+  "build/strip-landmarks/lolos-hughes-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312862556-e94d86116e24-lolos-hughes-interior-collision.bin",
+   "sha256": "e94d86116e247ee1b9a5aa6b2f84c65bdf8ed9bb49e23030f05c04d7e083c0ac",
+   "bytes": 588
+  },
+  "build/strip-landmarks/lolos-hughes-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312862801-74b93f6b1e73-lolos-hughes-interior.glb",
+   "sha256": "74b93f6b1e73a21e83b7c0c6225ed726c8e4422be7ec22b89a8e072c3b44bf4d",
+   "bytes": 87772
+  },
+  "build/strip-landmarks/los-amores-julia-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312862825-640c8043a349-los-amores-julia-sahara-exterior-collision.bin",
+   "sha256": "640c8043a349d2b6eaf48ee5a706f8c0a02e78bec9cda03732c830250f92b437",
+   "bytes": 472
+  },
+  "build/strip-landmarks/los-amores-julia-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312863117-fdf38a009b3e-los-amores-julia-sahara-exterior.glb",
+   "sha256": "fdf38a009b3e034a541c14301bfc86ca3c2b212894920ea5a4a93f3228603175",
+   "bytes": 659016
+  },
+  "build/strip-landmarks/los-amores-julia-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312863167-3a759870846a-los-amores-julia-sahara-interior-collision.bin",
+   "sha256": "3a759870846a2d4c190b39e87828ff123673532db8cce1f5715bf0e4f54bbf39",
+   "bytes": 2452
+  },
+  "build/strip-landmarks/los-amores-julia-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312863245-536eb3fe052b-los-amores-julia-sahara-interior.glb",
+   "sha256": "536eb3fe052bc3d048d4fcc1665e673e4a7141e9882fa5422fbb6c758b444237",
+   "bytes": 3365832
   },
   "build/strip-landmarks/luvIt-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985279104-2a9241ad2696-luvIt-exterior-collision.bin",
@@ -5557,6 +6437,36 @@
    "sha256": "82aa7ccad2bf6735b2b15bb5e7a329e08aa4b530ec347136bba6981eea428bee",
    "bytes": 185736
   },
+  "build/strip-landmarks/mardi-gras-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312863426-31f37851b22b-mardi-gras-exterior-collision.bin",
+   "sha256": "31f37851b22b641782bf0be3d1f927799dac0026e92afa9ec3f4589cee618105",
+   "bytes": 27832
+  },
+  "build/strip-landmarks/mardi-gras-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312863676-d3e55fd03118-mardi-gras-exterior.glb",
+   "sha256": "d3e55fd031181fdac8a969b878fb9b2824fe1e13446aeba629931f9269781335",
+   "bytes": 6431620
+  },
+  "build/strip-landmarks/mardi-gras-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312863701-823811f1e1f6-mardi-gras-interior-collision.bin",
+   "sha256": "823811f1e1f67d34ee00e7fe3df61163880cec2ef8e77fb027dce60c1d9ba4e8",
+   "bytes": 3612
+  },
+  "build/strip-landmarks/mardi-gras-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312863983-a7d2f9075923-mardi-gras-interior.glb",
+   "sha256": "a7d2f907592393a88d771265596fe1221ad6a24302db906f08d58e76e51112d0",
+   "bytes": 273420
+  },
+  "build/strip-landmarks/marianas-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312864279-be19e6b828a5-marianas-sahara-exterior-collision.bin",
+   "sha256": "be19e6b828a51efd7f88e43af18e002a5999e058c7f3794c92857d6dcb42fa2d",
+   "bytes": 2408
+  },
+  "build/strip-landmarks/marianas-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312864505-491d8d9916e8-marianas-sahara-exterior.glb",
+   "sha256": "491d8d9916e8f0e5ce88874cd7a14041d0dc0883df181ccbc7c7419812d790d9",
+   "bytes": 536628
+  },
   "build/strip-landmarks/market1700-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985279837-6644409212fa-market1700-exterior-collision.bin",
    "sha256": "6644409212fa4383532d8b6c3e578f584318522886eb46de3213aa34ff6c3e67",
@@ -5577,6 +6487,26 @@
    "sha256": "df802cf8c4362f68bc2bc2985df2c2621fe6e3ee4a7b431369602697b8d8f503",
    "bytes": 546160
   },
+  "build/strip-landmarks/martinez-boxing-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312864543-bf67d58aed8b-martinez-boxing-exterior-collision.bin",
+   "sha256": "bf67d58aed8bf611f36cec34540e95c7713c9a5ebf64f1d578ab729118c70352",
+   "bytes": 560
+  },
+  "build/strip-landmarks/martinez-boxing-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312864800-36c302624fff-martinez-boxing-exterior.glb",
+   "sha256": "36c302624fff199d333bd1267695d9a3bf73142678053362b7f5b52b7be58b48",
+   "bytes": 431520
+  },
+  "build/strip-landmarks/martinez-boxing-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312865445-354c5794cea1-martinez-boxing-interior-collision.bin",
+   "sha256": "354c5794cea1cf562dd48dd99dfc6770bc484d2e347e6c165e0af8f9f4f5a6ee",
+   "bytes": 508
+  },
+  "build/strip-landmarks/martinez-boxing-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312865673-c1b96319ea35-martinez-boxing-interior.glb",
+   "sha256": "c1b96319ea3518d81a51265177c7641ed6faaf31ec9b7f959f11dc2d56ec7123",
+   "bytes": 704364
+  },
   "build/strip-landmarks/maverickTerminal-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985279987-1d344b407c9a-maverickTerminal-exterior-collision.bin",
    "sha256": "1d344b407c9a5733d98ebc52cfaff7ba9107439ca48b4cc3fc348a0b5e7fd0d5",
@@ -5586,6 +6516,36 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863150854-2665122725e6-maverickTerminal-exterior.glb",
    "sha256": "2665122725e60fe00de435814c45fcd72b585df51fbfe7b960d01db60ad60594",
    "bytes": 315140
+  },
+  "build/strip-landmarks/mcdonalds-paradise-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312865723-1529a4f164a1-mcdonalds-paradise-exterior-collision.bin",
+   "sha256": "1529a4f164a133eaed556c7d6eaac36a1d5ef953bdfb2551ffbe0692dba684f8",
+   "bytes": 252
+  },
+  "build/strip-landmarks/mcdonalds-paradise-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312865985-14364128eb81-mcdonalds-paradise-exterior.glb",
+   "sha256": "14364128eb814e4ce229c8bb64551bc2d87a1ebf672b192d6f03f6d1defb0944",
+   "bytes": 450284
+  },
+  "build/strip-landmarks/mcdonalds-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312866021-709b15099987-mcdonalds-sahara-exterior-collision.bin",
+   "sha256": "709b15099987c7d487e23cf489569d507734f6ed2de16d38110e53c33a4a0bc4",
+   "bytes": 520
+  },
+  "build/strip-landmarks/mcdonalds-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312866285-edc9cabeb743-mcdonalds-sahara-exterior.glb",
+   "sha256": "edc9cabeb74364738151e4723b5ab2842e9ea1028736415647189bf8c6029af6",
+   "bytes": 283900
+  },
+  "build/strip-landmarks/mcdonalds-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312866713-1bbc3c8d09ee-mcdonalds-tropicana-exterior-collision.bin",
+   "sha256": "1bbc3c8d09ee5d6b1f9621a614797020b9a3c068573d6c7aa0f2291de15f5a27",
+   "bytes": 260
+  },
+  "build/strip-landmarks/mcdonalds-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312866944-7b1b7626d9d0-mcdonalds-tropicana-exterior.glb",
+   "sha256": "7b1b7626d9d0e3357123fb620835ac8ee8874e1c67e069c210d9acb6148d277c",
+   "bytes": 1239624
   },
   "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985280092-5ac807528589-mcdonaldsSaharaCanopy-exterior-collision.bin",
@@ -5617,6 +6577,26 @@
    "sha256": "92b98003f7212b4507ca171273fdb75c8ba68ab1932d47702d825aa097c10e05",
    "bytes": 2826628
   },
+  "build/strip-landmarks/mi-ranchito-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312866976-cd0a879e4d96-mi-ranchito-sahara-exterior-collision.bin",
+   "sha256": "cd0a879e4d9646dcdabf7861dcc95d1c675a8b1dfd2d7eb2c00e4cdd4b0bfbec",
+   "bytes": 516
+  },
+  "build/strip-landmarks/mi-ranchito-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312867079-b09963e65e12-mi-ranchito-sahara-exterior.glb",
+   "sha256": "b09963e65e121a92834cf14ae0a6230cb7562db884af908d540ed68ee2be0f39",
+   "bytes": 197220
+  },
+  "build/strip-landmarks/mi-ranchito-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312867242-e92e69df9bed-mi-ranchito-sahara-interior-collision.bin",
+   "sha256": "e92e69df9bedd744cd9085e823ea74f504ced370d852c70e7cf2d21bf17fb67e",
+   "bytes": 6884
+  },
+  "build/strip-landmarks/mi-ranchito-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312867513-a2119ea58fe6-mi-ranchito-sahara-interior.glb",
+   "sha256": "a2119ea58fe64fb38fae78b4ed01e98e1318451ac4eca401dc906bdbf6b98d93",
+   "bytes": 418756
+  },
   "build/strip-landmarks/mirageExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985280282-b3fbfc946a79-mirageExterior-exterior-collision.bin",
    "sha256": "b3fbfc946a791929b33c927a00668d83ad7fa87e586dfbd3a2ce0ccfb5c9730b",
@@ -5636,6 +6616,116 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863151969-25945b0fe260-mirageMarquee-exterior.glb",
    "sha256": "25945b0fe2607e811c418476069e137c4e90ee20af559317f061913d4f279266",
    "bytes": 902848
+  },
+  "build/strip-landmarks/moneytree-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312867642-f4482a0dea71-moneytree-sahara-exterior-collision.bin",
+   "sha256": "f4482a0dea716601b6d00a525f3f626e7c5709da4b708179793ed4d1f1aa5f09",
+   "bytes": 660
+  },
+  "build/strip-landmarks/moneytree-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312867915-b968d28d33ff-moneytree-sahara-exterior.glb",
+   "sha256": "b968d28d33ff15ff8d9fecb32249b39ecfa305bc26c8658b402ab2288ec965ae",
+   "bytes": 199172
+  },
+  "build/strip-landmarks/moneytree-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312868281-8465251ccc7a-moneytree-sahara-interior-collision.bin",
+   "sha256": "8465251ccc7ad3109cd6ff315963e372cffc3e3c8437517dbc17114ec935566a",
+   "bytes": 388
+  },
+  "build/strip-landmarks/moneytree-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312868361-2dfdf1d636f2-moneytree-sahara-interior.glb",
+   "sha256": "2dfdf1d636f2b6b3b9e15e4ec3666ec0bc9e57016e36e7a45b8a0f5a4587cf82",
+   "bytes": 60932
+  },
+  "build/strip-landmarks/morning-news-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312868490-02454b32eb4a-morning-news-exterior-collision.bin",
+   "sha256": "02454b32eb4ae5b8db417fa2c4e33cd00482205d3f9362a3f6e81492b1f6aad2",
+   "bytes": 560
+  },
+  "build/strip-landmarks/morning-news-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312868550-8367bcf9a8fb-morning-news-exterior.glb",
+   "sha256": "8367bcf9a8fb03f24adc7307b78b6a399760648a609bfd169b4df986cbee684a",
+   "bytes": 222592
+  },
+  "build/strip-landmarks/morning-news-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312868675-a15805209be6-morning-news-interior-collision.bin",
+   "sha256": "a15805209be6a23426f738db55300ab09e0f880ae9e8cede3558693c19c8739e",
+   "bytes": 460
+  },
+  "build/strip-landmarks/morning-news-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312868741-8d74289a33ad-morning-news-interior.glb",
+   "sha256": "8d74289a33ad6ba4d26d874c51b7cf68bed2eeb8c99098c3b95dcc4c14d58c86",
+   "bytes": 215692
+  },
+  "build/strip-landmarks/mortons-flamingo-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312868937-76c009f66c77-mortons-flamingo-exterior-collision.bin",
+   "sha256": "76c009f66c779b195c6c9e9affc6bae3146c0a894504709ee9c2abdc892ac145",
+   "bytes": 848
+  },
+  "build/strip-landmarks/mortons-flamingo-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312869071-c2327fa43905-mortons-flamingo-exterior.glb",
+   "sha256": "c2327fa43905194855816c04df81044d1a4d89f4dd01c9829789ddedbcd1d111",
+   "bytes": 587460
+  },
+  "build/strip-landmarks/mortons-flamingo-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312869173-4bb28d364df5-mortons-flamingo-interior-collision.bin",
+   "sha256": "4bb28d364df57202541ff8b4ce9e6d684602c5e4e84989e94b4292d9019314b6",
+   "bytes": 4832
+  },
+  "build/strip-landmarks/mortons-flamingo-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312869266-8b9e3d3b1cc3-mortons-flamingo-interior.glb",
+   "sha256": "8b9e3d3b1cc31ef66cb13bf497067220a5a1737b0a054d945aeb2dc0f5b8d011",
+   "bytes": 317644
+  },
+  "build/strip-landmarks/motel6-stadium-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312869340-380f8b3c40f7-motel6-stadium-exterior-collision.bin",
+   "sha256": "380f8b3c40f7af379f245799b6710d627811ad9314fc58be7ded42753c3deded",
+   "bytes": 6580
+  },
+  "build/strip-landmarks/motel6-stadium-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312869456-8ac72c8b7331-motel6-stadium-exterior.glb",
+   "sha256": "8ac72c8b73319216f7d9388781df9dd18e11368da171bc4a6aa396369927e27d",
+   "bytes": 2273928
+  },
+  "build/strip-landmarks/motel6-stadium-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312869614-9dae04ba3c3c-motel6-stadium-interior-collision.bin",
+   "sha256": "9dae04ba3c3cb602b8668f06a29205443cd078869faadcfc8683078bf6318c24",
+   "bytes": 536
+  },
+  "build/strip-landmarks/motel6-stadium-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312869884-e22bb991acba-motel6-stadium-interior.glb",
+   "sha256": "e22bb991acba2d811cd6c3c1b82b8ebb71bf3aea4773f75c0d3b2a3e131409ac",
+   "bytes": 76480
+  },
+  "build/strip-landmarks/mt-everest-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312869960-efef7fff712a-mt-everest-sahara-exterior-collision.bin",
+   "sha256": "efef7fff712a00a740f5ad7e838178b98e1bc9ceb0c7a0a627ed0085b6416b9d",
+   "bytes": 436
+  },
+  "build/strip-landmarks/mt-everest-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312870189-78731b508570-mt-everest-sahara-exterior.glb",
+   "sha256": "78731b508570be0c48927ba858a89815ff0a41ef0d771ba6dc6a6313f8731af5",
+   "bytes": 1918672
+  },
+  "build/strip-landmarks/mt-everest-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312870208-4ed4f930464e-mt-everest-sahara-interior-collision.bin",
+   "sha256": "4ed4f930464e6d7c10659b21232274ea47a2131c59205443fbf8cad3784bea28",
+   "bytes": 1448
+  },
+  "build/strip-landmarks/mt-everest-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312870271-f099c7fc7032-mt-everest-sahara-interior.glb",
+   "sha256": "f099c7fc70324db033a0a8942b63f412ff80ddf496ae235e13e5cf7f7929d451",
+   "bytes": 522152
+  },
+  "build/strip-landmarks/nakedCity-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312870481-a4dae7f787ae-nakedCity-exterior-collision.bin",
+   "sha256": "a4dae7f787ae9b7529722e48841b4334e745d164b9c8de2b775ad15fb3e739e6",
+   "bytes": 720
+  },
+  "build/strip-landmarks/nakedCity-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312870748-8eafeee2b7f7-nakedCity-exterior.glb",
+   "sha256": "8eafeee2b7f78b1f6e528eb53ef0f65a2978a55dd8fd6214310be8c661ea818c",
+   "bytes": 664508
   },
   "build/strip-landmarks/newYorkFrontage-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985280355-9ab34b9c8926-newYorkFrontage-exterior-collision.bin",
@@ -5676,6 +6766,16 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863153365-8ac25daf9a59-northStripMotels-exterior.glb",
    "sha256": "8ac25daf9a592d4f9d5146cb2ef2e44aedce9e995a48a36361c6d8a60aaff564",
    "bytes": 2763528
+  },
+  "build/strip-landmarks/nuleaf-twain-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312871075-24e892d6df04-nuleaf-twain-exterior-collision.bin",
+   "sha256": "24e892d6df04dddca32cf73737089429a9483e3c936e3025c74cfacebb7a47fa",
+   "bytes": 376
+  },
+  "build/strip-landmarks/nuleaf-twain-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312871345-7b5c973d89d7-nuleaf-twain-exterior.glb",
+   "sha256": "7b5c973d89d70699ce1aea9610260c39b4c57ddadfe42df3f273cedb1caa96cc",
+   "bytes": 287880
   },
   "build/strip-landmarks/nynyArrival-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985280618-91b022712526-nynyArrival-exterior-collision.bin",
@@ -5747,6 +6847,26 @@
    "sha256": "7b938d2fbb7136a5089c238c9a5d29fc6192d499c1a3bb79ed8865eacbfafc60",
    "bytes": 628316
   },
+  "build/strip-landmarks/officeBar-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312871865-7a273657afaa-officeBar-exterior-collision.bin",
+   "sha256": "7a273657afaabca6542261a18caf00e7438d10876b70567250bfc65546d8bc4e",
+   "bytes": 472
+  },
+  "build/strip-landmarks/officeBar-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312871936-2a401c8d38e2-officeBar-exterior.glb",
+   "sha256": "2a401c8d38e2c8f6d2e19dc70f670ab1b2fff58fb0013b2eb2fc6e4831dabea2",
+   "bytes": 332184
+  },
+  "build/strip-landmarks/officeBar-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312871992-b4179eedb13c-officeBar-interior-collision.bin",
+   "sha256": "b4179eedb13c8f5f2f3b97000ea3ec10bb8a0b7e4c9087153295ca13bd02b77b",
+   "bytes": 348
+  },
+  "build/strip-landmarks/officeBar-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312872258-ba8ebdd70df4-officeBar-interior.glb",
+   "sha256": "ba8ebdd70df4cb57de20388e164c7780499c8b4edc4b1ffdb3b983597f344f37",
+   "bytes": 283728
+  },
   "build/strip-landmarks/oyoExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985281132-f6d88cab8161-oyoExterior-exterior-collision.bin",
    "sha256": "f6d88cab81617ff0b0b5931944278addc078ecd2e4e05e33b5e85a157f5e34ec",
@@ -5806,6 +6926,16 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863156626-d9a352d4db55-panoramaExterior-exterior.glb",
    "sha256": "d9a352d4db5549626350cee602d1139cc58defd99d0719001cd582cbc9f89170",
    "bytes": 360220
+  },
+  "build/strip-landmarks/paradiseShop-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312872298-da58ddf7e28b-paradiseShop-exterior-collision.bin",
+   "sha256": "da58ddf7e28b74941edb60e3c97b6bc9133955c062a21db30c2ee36bfaf03ff9",
+   "bytes": 312
+  },
+  "build/strip-landmarks/paradiseShop-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312872297-d3d0c22ec29a-paradiseShop-exterior.glb",
+   "sha256": "d3d0c22ec29a3c55ab8adc5eadbc1c905088598e0396b6d713f36084476515fd",
+   "bytes": 356992
   },
   "build/strip-landmarks/paradiseSmallFrontage-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985281447-2a91762df5fb-paradiseSmallFrontage-exterior-collision.bin",
@@ -5937,6 +7067,16 @@
    "sha256": "7f83c88dac4865f1188352720d29cd987d6161366123770b260652ad80dfe2f1",
    "bytes": 398388
   },
+  "build/strip-landmarks/piranha-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312872578-a45fc07398bb-piranha-exterior-collision.bin",
+   "sha256": "a45fc07398bb72051a9c622f5afbb4ebbd16c70c38de0cb6c2ea7392190ba343",
+   "bytes": 908
+  },
+  "build/strip-landmarks/piranha-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312872621-dd2e15c78ec5-piranha-exterior.glb",
+   "sha256": "dd2e15c78ec5ba5e393bd41c4a3feb3403b7414bd76b738e17c52e473ba8d85d",
+   "bytes": 1477980
+  },
   "build/strip-landmarks/planetHollywood-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985282527-0069d841a18b-planetHollywood-exterior-collision.bin",
    "sha256": "0069d841a18b8e8f3b80c7a781791fa51d2070be494754c8a39aeb94ed2bd222",
@@ -5996,6 +7136,46 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863162279-e54c46929964-psychicSessions-exterior.glb",
    "sha256": "e54c46929964b1150b56633c5e6f243ec21f70299a453e88f1e1f1d7d560f2fc",
    "bytes": 601840
+  },
+  "build/strip-landmarks/quadz-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312872846-81b036e676fc-quadz-exterior-collision.bin",
+   "sha256": "81b036e676fcba99be26dddd10f2c1f35cdc23f6dac4a0431b1dacc450018272",
+   "bytes": 512
+  },
+  "build/strip-landmarks/quadz-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312872847-ad550ee22a63-quadz-exterior.glb",
+   "sha256": "ad550ee22a6374b230145100f85e48070fae9938ce9968aad5513f5f6b9edd45",
+   "bytes": 772196
+  },
+  "build/strip-landmarks/quadz-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312873088-8e82026e27e7-quadz-interior-collision.bin",
+   "sha256": "8e82026e27e752b9ee6f58297fd0b14069addb153dc0aec77590e0e78242b2d9",
+   "bytes": 392
+  },
+  "build/strip-landmarks/quadz-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312873109-d2fa72e35989-quadz-interior.glb",
+   "sha256": "d2fa72e3598906025109ef56b723c8f3788b124db8c7d3fb4b74187c5456cfa3",
+   "bytes": 334396
+  },
+  "build/strip-landmarks/rancho-2320-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312873372-2f932218c743-rancho-2320-exterior-collision.bin",
+   "sha256": "2f932218c743d4829603bf1bd94e6cf6d5b8a3fa771ee37a7d7ce793c80298cb",
+   "bytes": 3464
+  },
+  "build/strip-landmarks/rancho-2320-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312873675-ed1940cc2d88-rancho-2320-exterior.glb",
+   "sha256": "ed1940cc2d8834d589e29fc788abd7f90dd2c2743cbd1aac292aa15f357cb8d6",
+   "bytes": 517988
+  },
+  "build/strip-landmarks/red-d-arc-highland-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312873744-4f3c5187b732-red-d-arc-highland-exterior-collision.bin",
+   "sha256": "4f3c5187b732e41686e0e5fc5e34513aa14906bdbd35803af539e6055abdcb6c",
+   "bytes": 740
+  },
+  "build/strip-landmarks/red-d-arc-highland-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312873869-55ec54e486c7-red-d-arc-highland-exterior.glb",
+   "sha256": "55ec54e486c7abc16c6319c5f66b8aaeb5c6171be7ae06c54bce55175b96b01d",
+   "bytes": 303368
   },
   "build/strip-landmarks/residenceInnHughes-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985282851-3d729fbe2316-residenceInnHughes-exterior-collision.bin",
@@ -6087,6 +7267,66 @@
    "sha256": "e7c00788e568e60fe58964716af0449047a1d2df97ee5ad9911d7b1a685ed6d9",
    "bytes": 70472
   },
+  "build/strip-landmarks/sahara-2500-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312874016-295974019858-sahara-2500-exterior-collision.bin",
+   "sha256": "295974019858a25a8d63e3d22377f6e94eab7c9466979ea2419f8d7603a35131",
+   "bytes": 3088
+  },
+  "build/strip-landmarks/sahara-2500-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312874132-30bf42dd38cd-sahara-2500-exterior.glb",
+   "sha256": "30bf42dd38cd995d764ddac86d28f5e760b6b9db24c2642f0017ff3cc32d6ed0",
+   "bytes": 622388
+  },
+  "build/strip-landmarks/sahara-2600-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312874270-2ddddc86a6f2-sahara-2600-exterior-collision.bin",
+   "sha256": "2ddddc86a6f2abff278b41af385d6d92c073c88b8e4f87edc3eb301775a23544",
+   "bytes": 2980
+  },
+  "build/strip-landmarks/sahara-2600-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312874494-6a7f0fb46680-sahara-2600-exterior.glb",
+   "sha256": "6a7f0fb46680a57e1dc04fc5acb7450040c1bfff115aca38f6a1ee28691368b7",
+   "bytes": 842000
+  },
+  "build/strip-landmarks/sahara-2600-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312874510-1415505a4c2c-sahara-2600-interior-collision.bin",
+   "sha256": "1415505a4c2cd9c1f8c6b15a58274e92b2d54817e390d93d5573c85aa936fa35",
+   "bytes": 1228
+  },
+  "build/strip-landmarks/sahara-2600-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312874525-71d9c9165a34-sahara-2600-interior.glb",
+   "sha256": "71d9c9165a34dc09c299a62bb414b7302d8a06ae8c0e402c937b6819c9142360",
+   "bytes": 375320
+  },
+  "build/strip-landmarks/sahara-annex-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312874790-fdec6a6ea575-sahara-annex-exterior-collision.bin",
+   "sha256": "fdec6a6ea57549c0403b8ac2b7d515a099c768a7f1eda588307d81b792b54044",
+   "bytes": 452
+  },
+  "build/strip-landmarks/sahara-annex-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312875056-fb186a0f4e57-sahara-annex-exterior.glb",
+   "sha256": "fb186a0f4e5796e7deeb50d6dfef962c291ac6e37b687fbc03509aece9fe4574",
+   "bytes": 350848
+  },
+  "build/strip-landmarks/sahara-surgery-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312875090-ac39652f9ea7-sahara-surgery-exterior-collision.bin",
+   "sha256": "ac39652f9ea7f7ebb6bff632f2f32fb623efb9adfacc660e1d72fb9b773b79ed",
+   "bytes": 1288
+  },
+  "build/strip-landmarks/sahara-surgery-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312875309-9665e663f68d-sahara-surgery-exterior.glb",
+   "sha256": "9665e663f68dad5a6a44fcdce68b3f0e3ee0292b26c3b15fe334468b9a83c5bc",
+   "bytes": 641236
+  },
+  "build/strip-landmarks/sahara-surgery-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312875342-c852a4180ea1-sahara-surgery-interior-collision.bin",
+   "sha256": "c852a4180ea1e1d636381dd6131c63878e0616aea1e5b998bef87124be339d15",
+   "bytes": 1732
+  },
+  "build/strip-landmarks/sahara-surgery-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312875621-40d068c9c6f7-sahara-surgery-interior.glb",
+   "sha256": "40d068c9c6f7dfcdac9fdf55643f3067fd1a982607eb04e6732ff800fe6004a7",
+   "bytes": 324472
+  },
   "build/strip-landmarks/saharaExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985283510-dc09ef8d6a44-saharaExterior-exterior-collision.bin",
    "sha256": "dc09ef8d6a44152e84bf66b2af9c7a91daba17dfeeb85d984deb8482baf0b342",
@@ -6156,6 +7396,56 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863170914-f0a62633daa2-santaPaulaWestCourts-exterior.glb",
    "sha256": "f0a62633daa2163dba6bab725f7dfccc31dd1d4203d2ddcde74805f499f73d20",
    "bytes": 12636748
+  },
+  "build/strip-landmarks/seven-eleven-paradise-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312875646-68b97e0ee3e3-seven-eleven-paradise-exterior-collision.bin",
+   "sha256": "68b97e0ee3e3f5b6a9ce0a31b5638da5d8b29f35ef1387f27c8854b04100a44c",
+   "bytes": 1968
+  },
+  "build/strip-landmarks/seven-eleven-paradise-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312875788-90e2ba03cb89-seven-eleven-paradise-exterior.glb",
+   "sha256": "90e2ba03cb89e60de290d32218abc3eb367295dd41870300697d825db62f90ce",
+   "bytes": 452684
+  },
+  "build/strip-landmarks/seven-eleven-paradise-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312875918-850e827daa17-seven-eleven-paradise-interior-collision.bin",
+   "sha256": "850e827daa177c42c60343a72487fbb9d1ff0149e565a77063b64faa809dff8d",
+   "bytes": 220
+  },
+  "build/strip-landmarks/seven-eleven-paradise-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876181-c065fa81142f-seven-eleven-paradise-interior.glb",
+   "sha256": "c065fa81142fab359e0f4c4ffccf56c5c37b421457dfd49ed54c8ffa0d719a65",
+   "bytes": 139676
+  },
+  "build/strip-landmarks/seven-eleven-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876200-066c8c5c546a-seven-eleven-sahara-exterior-collision.bin",
+   "sha256": "066c8c5c546a3fc20f0bb49bc4d136fc48a2ab7b69b0ecc01c7e9a967df97e79",
+   "bytes": 1200
+  },
+  "build/strip-landmarks/seven-eleven-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876264-faa4ae2bc642-seven-eleven-sahara-exterior.glb",
+   "sha256": "faa4ae2bc6423300a1ad183bf46978c76b842efb76acae8e82411e21c491eaf0",
+   "bytes": 303592
+  },
+  "build/strip-landmarks/seven-eleven-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876463-f10391ed09a6-seven-eleven-sahara-interior-collision.bin",
+   "sha256": "f10391ed09a6bbadc4ae8f082a511bc1d1b24248370eef911336c96ed73c6348",
+   "bytes": 584
+  },
+  "build/strip-landmarks/seven-eleven-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876571-649462afd2aa-seven-eleven-sahara-interior.glb",
+   "sha256": "649462afd2aa2aca46e30537ddf253a810c3839e81462f18bfddbb2e40b79449",
+   "bytes": 613492
+  },
+  "build/strip-landmarks/shooting-center-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876621-b82e64ba8466-shooting-center-exterior-collision.bin",
+   "sha256": "b82e64ba846657827917c24d516bb5297d85966615203fd9edab24dd167d23ee",
+   "bytes": 460
+  },
+  "build/strip-landmarks/shooting-center-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876734-ac7144265382-shooting-center-exterior.glb",
+   "sha256": "ac71442653827712047f900d85e5e8fb8aeab054c978d786fb74b7c788ad20dc",
+   "bytes": 1081876
   },
   "build/strip-landmarks/showcase-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985283902-ce6c08486ba3-showcase-exterior-collision.bin",
@@ -6277,6 +7567,26 @@
    "sha256": "089c9ffd3e4117d30e35d2b96b45d7202c2ac827c707184f9e766e305489efe1",
    "bytes": 190108
   },
+  "build/strip-landmarks/speedee-mart-paradise-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876862-b5febaeb1e62-speedee-mart-paradise-exterior-collision.bin",
+   "sha256": "b5febaeb1e62478e37089bc0d1326ab14f4cb9af63c94a475331e6f3dee8ebb5",
+   "bytes": 348
+  },
+  "build/strip-landmarks/speedee-mart-paradise-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312876893-6b965b542784-speedee-mart-paradise-exterior.glb",
+   "sha256": "6b965b542784e50e3771ff834ed5d77999ea4f7ed42a15f6f708a6f19865bfdc",
+   "bytes": 286476
+  },
+  "build/strip-landmarks/speedee-mart-paradise-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312877126-e90e1ef77c14-speedee-mart-paradise-interior-collision.bin",
+   "sha256": "e90e1ef77c140b17fbaa8344c2a136b952c22b9a1cd00c69a28566fbf64aa70c",
+   "bytes": 284
+  },
+  "build/strip-landmarks/speedee-mart-paradise-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312877396-01b3b3e98550-speedee-mart-paradise-interior.glb",
+   "sha256": "01b3b3e9855001ced3a0f3b4b90f52f1834887267ec6536d0c3057cc247eef6b",
+   "bytes": 216132
+  },
   "build/strip-landmarks/sphereGarage-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985284691-73df76065816-sphereGarage-exterior-collision.bin",
    "sha256": "73df76065816e4d2834810fc289f135c3867a1a9d7960be9badc09f980a3b717",
@@ -6317,6 +7627,46 @@
    "sha256": "81dca0066d0b3fb8a2a4692c99c6ea7b591f306168731a17238eea49f535881a",
    "bytes": 709700
   },
+  "build/strip-landmarks/stadium-garage-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312877497-2645b80ee9fd-stadium-garage-exterior-collision.bin",
+   "sha256": "2645b80ee9fd402d5acb29f5be271657ff37350f40750f6cc662d22b6953f72e",
+   "bytes": 6064
+  },
+  "build/strip-landmarks/stadium-garage-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312877571-4098d7a0b696-stadium-garage-exterior.glb",
+   "sha256": "4098d7a0b6965b948fa15e29532ab7b98700e6be55d06f4bfc64b3b70f88bf08",
+   "bytes": 296444
+  },
+  "build/strip-landmarks/standard-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312877657-757bfc7ea838-standard-tropicana-exterior-collision.bin",
+   "sha256": "757bfc7ea8380f76006a2948452e041c9f6ee42bb4dc72ca1d0078c9aad994c6",
+   "bytes": 1376
+  },
+  "build/strip-landmarks/standard-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312877753-82306c25de66-standard-tropicana-exterior.glb",
+   "sha256": "82306c25de661fd7ff917e0e8e47d29d7fbcf01628b54b49fe4eb987f64786f6",
+   "bytes": 1138696
+  },
+  "build/strip-landmarks/starbucks-flamingo-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312877889-7854efb61039-starbucks-flamingo-exterior-collision.bin",
+   "sha256": "7854efb61039420902e3a9cb64390f26135766ff51076f4610705fa3f3e68744",
+   "bytes": 604
+  },
+  "build/strip-landmarks/starbucks-flamingo-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312877913-639634df6ded-starbucks-flamingo-exterior.glb",
+   "sha256": "639634df6ded9c36a9e45b65e29d9ec55a9854351b5048d16e1fbd4a1b6971da",
+   "bytes": 212912
+  },
+  "build/strip-landmarks/starbucks-flamingo-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312878161-40f374a17185-starbucks-flamingo-interior-collision.bin",
+   "sha256": "40f374a171857c0de109c43e52f9e46fc40e84470d44badd093052327619c67e",
+   "bytes": 848
+  },
+  "build/strip-landmarks/starbucks-flamingo-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312878280-1a73c4f6e254-starbucks-flamingo-interior.glb",
+   "sha256": "1a73c4f6e254ec8836109cd9d3da46ad4f424ef3510bd5c5edd4892d197ac09c",
+   "bytes": 457624
+  },
   "build/strip-landmarks/stratExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985284962-041dec46b0e6-stratExterior-exterior-collision.bin",
    "sha256": "041dec46b0e6efac6ca57d3c0dd7c8ccb39760ee4a16b9a7afa6794026fc4b3b",
@@ -6337,6 +7687,26 @@
    "sha256": "340393644f0f45f712f081cce184ca4accfd7930e6a556f215f0c4a2bd7f4534",
    "bytes": 560132
   },
+  "build/strip-landmarks/tacos-mexico-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312878436-d6cb175846ae-tacos-mexico-sahara-exterior-collision.bin",
+   "sha256": "d6cb175846ae0b4a8f3bfed91a6a914cf56f1d5731d22112dcc61e962284e4b1",
+   "bytes": 548
+  },
+  "build/strip-landmarks/tacos-mexico-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312878498-9b44c20b7a81-tacos-mexico-sahara-exterior.glb",
+   "sha256": "9b44c20b7a81a92ffa247f33f731b79bc792b830d65712d52fc93924d4c76c3a",
+   "bytes": 127992
+  },
+  "build/strip-landmarks/tacos-mexico-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312878701-4cee72b3ea99-tacos-mexico-sahara-interior-collision.bin",
+   "sha256": "4cee72b3ea9982e13db8148032035d8a2575ed01fd20d143cd402d7523b3ec41",
+   "bytes": 1864
+  },
+  "build/strip-landmarks/tacos-mexico-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312878798-bffaea8e2820-tacos-mexico-sahara-interior.glb",
+   "sha256": "bffaea8e2820c34dc2ff6b23a123e937cf5c5ad70a877d35f0f0d593319b1878",
+   "bytes": 555968
+  },
   "build/strip-landmarks/tacosMexico-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985285152-3b2afb596f02-tacosMexico-exterior-collision.bin",
    "sha256": "3b2afb596f02410f32bc4c1ed80c5a45cf38e84ee9a4c2cc636becb94aa0e91a",
@@ -6346,6 +7716,26 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863177173-e09a6345f0c4-tacosMexico-exterior.glb",
    "sha256": "e09a6345f0c46b57006e57037fa6d76b40915fe9e867552dce0691e282603afd",
    "bytes": 325032
+  },
+  "build/strip-landmarks/terribles-tropicana-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312878894-3fedfc9f39fc-terribles-tropicana-exterior-collision.bin",
+   "sha256": "3fedfc9f39fc4dba77e8c6a3809cfb7806509429b75b219ac039a1bbab511952",
+   "bytes": 1732
+  },
+  "build/strip-landmarks/terribles-tropicana-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312878973-56e6097d9e00-terribles-tropicana-exterior.glb",
+   "sha256": "56e6097d9e00fb22b54d851c884f06dd50b3eb501da35dbe795612b1cd8f2c1d",
+   "bytes": 1305128
+  },
+  "build/strip-landmarks/terribles-tropicana-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312879067-e7a22960fbeb-terribles-tropicana-interior-collision.bin",
+   "sha256": "e7a22960fbeb509f75d6641d403e3e90d462c281584777a0be2dec7e953a0d4a",
+   "bytes": 664
+  },
+  "build/strip-landmarks/terribles-tropicana-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312879148-f743ec0d8e48-terribles-tropicana-interior.glb",
+   "sha256": "f743ec0d8e484cfced051147b87ae900dd59eb41310b9ab5bb3006e6fe793d5a",
+   "bytes": 998788
   },
   "build/strip-landmarks/terriblesHeadquarters-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985285191-6eaf682c7bf9-terriblesHeadquarters-exterior-collision.bin",
@@ -6387,6 +7777,16 @@
    "sha256": "8a4d922685d03df9d631ce73e4cd47c1d5d4af9cdc1005739adff57836e30b91",
    "bytes": 352568
   },
+  "build/strip-landmarks/tmobile-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312879324-073fc6238ce1-tmobile-sahara-exterior-collision.bin",
+   "sha256": "073fc6238ce1ce26772df260d44b47978f6c77187d090365dcbadbb9ba6f2c0d",
+   "bytes": 344
+  },
+  "build/strip-landmarks/tmobile-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312879366-1022b14bcc8a-tmobile-sahara-exterior.glb",
+   "sha256": "1022b14bcc8aa655eddfabf6b72e9faac8257ac0078cdfebb0cf356c60d7188b",
+   "bytes": 638060
+  },
   "build/strip-landmarks/todMotel-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985285453-5d3ff17325cc-todMotel-exterior-collision.bin",
    "sha256": "5d3ff17325ccc6ff8ff71a2cdfa94fdeddb691363e4b43dd4ed32aab2629a5b5",
@@ -6396,6 +7796,26 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863178525-d0758af80f39-todMotel-exterior.glb",
    "sha256": "d0758af80f398d62a7a2723a8d651d4bfc54537156d79ebb6c0828f7dab4220b",
    "bytes": 215464
+  },
+  "build/strip-landmarks/towneplace-stadium-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312879590-0f5e33d6d5b3-towneplace-stadium-exterior-collision.bin",
+   "sha256": "0f5e33d6d5b3bc7f5db2db1736f333934e5af60981e932389ae779868f66c4ab",
+   "bytes": 8548
+  },
+  "build/strip-landmarks/towneplace-stadium-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312879865-fd04791ba090-towneplace-stadium-exterior.glb",
+   "sha256": "fd04791ba09019dc037e99243ae11a547781f15e27de44f8601fa845bff5b485",
+   "bytes": 2082492
+  },
+  "build/strip-landmarks/towneplace-stadium-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312880197-59641c8f10be-towneplace-stadium-interior-collision.bin",
+   "sha256": "59641c8f10be09bb7a5d322b974e387f673e8e75a1acac905f5cd105b7ba59fe",
+   "bytes": 1060
+  },
+  "build/strip-landmarks/towneplace-stadium-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312880292-465389191d45-towneplace-stadium-interior.glb",
+   "sha256": "465389191d450066228a5729c5e24639701bba49ab58ae071f771bdd6af29c61",
+   "bytes": 681472
   },
   "build/strip-landmarks/travelersFrontage-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985285503-5c148771275a-travelersFrontage-exterior-collision.bin",
@@ -6437,6 +7857,26 @@
    "sha256": "7ad21eff198f4972a6cfd5ee83b01b496f867209a4cfc2eccfd2f7f806019dd1",
    "bytes": 1824120
   },
+  "build/strip-landmarks/twain-laundry-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312880464-89b7af35b12f-twain-laundry-exterior-collision.bin",
+   "sha256": "89b7af35b12f8c279ea42e4574f36915cb27f9f5fb55da3a2d45e31f8d666314",
+   "bytes": 416
+  },
+  "build/strip-landmarks/twain-laundry-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312880465-fbbe84ea1e52-twain-laundry-exterior.glb",
+   "sha256": "fbbe84ea1e52ef883e318d94b8a9954126a31d735bf1bb0fa0ec08ca3965f1d9",
+   "bytes": 314124
+  },
+  "build/strip-landmarks/twain-laundry-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312880741-11ac65710e69-twain-laundry-interior-collision.bin",
+   "sha256": "11ac65710e69bddb38503fdbd148fcd8a7791adebef4632b760675548005c49e",
+   "bytes": 4540
+  },
+  "build/strip-landmarks/twain-laundry-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312881015-5de4d7760d62-twain-laundry-interior.glb",
+   "sha256": "5de4d7760d6234ce2ad5c93abebf3d49d6f69b91b82e07b3d7d4027128137104",
+   "bytes": 8198388
+  },
   "build/strip-landmarks/usBankCenter-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985285779-307c60bb2401-usBankCenter-exterior-collision.bin",
    "sha256": "307c60bb24013537e99a36a96f7d402df528395454a182b37fcfd60ab7497761",
@@ -6466,6 +7906,26 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863180177-0f06d0d0039e-vanderpump-interior.glb",
    "sha256": "0f06d0d0039e828fc9e90501723f8f9578514d4df01936b6d62c7dd9ac1249ca",
    "bytes": 2395332
+  },
+  "build/strip-landmarks/vape-pirates-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312881130-7db0dd5c3e1a-vape-pirates-sahara-exterior-collision.bin",
+   "sha256": "7db0dd5c3e1abed163979b6d93cbab12b3cbc0abb56ee92c1d7cfafcd6afe2e9",
+   "bytes": 1288
+  },
+  "build/strip-landmarks/vape-pirates-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312881164-6192a6451bdd-vape-pirates-sahara-exterior.glb",
+   "sha256": "6192a6451bdd31f9b932693d79775aab59d18e7e94ed269b833507fd71dd7804",
+   "bytes": 121276
+  },
+  "build/strip-landmarks/vape-pirates-sahara-interior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312881399-83154b44ae95-vape-pirates-sahara-interior-collision.bin",
+   "sha256": "83154b44ae95d457d5ab34a41e5c49d3a091cf9b17433922e27c803f315c9d19",
+   "bytes": 780
+  },
+  "build/strip-landmarks/vape-pirates-sahara-interior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312881516-cab4c82bd64f-vape-pirates-sahara-interior.glb",
+   "sha256": "cab4c82bd64f81b28a9b3ce519c05d63d381c3ea5e82f7a5e4f5051e08a66340",
+   "bytes": 545744
   },
   "build/strip-landmarks/venetian-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985285977-a8ce6a57d82c-venetian-exterior-collision.bin",
@@ -6528,9 +7988,9 @@
    "bytes": 301164
   },
   "build/strip-landmarks/venues.bin": {
-   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985286416-7657ea06fb65-venues.bin",
-   "sha256": "7657ea06fb65bf58b971def9e9bd5ff54360cd9d35483e23e05ba9ed1fe63afb",
-   "bytes": 336024
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312881681-28937533f417-venues.bin",
+   "sha256": "28937533f4175da7b9585a28484af1cbb32bd27af445f394fcd769f3f323c43d",
+   "bytes": 390008
   },
   "build/strip-landmarks/virginExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985286493-826be41994f7-virginExterior-exterior-collision.bin",
@@ -6541,6 +8001,16 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863185339-fcf88dd27d4c-virginExterior-exterior.glb",
    "sha256": "fcf88dd27d4c9c4179f14285963011a836ad0c72e02d489c1afa2773d48277b5",
    "bytes": 328168
+  },
+  "build/strip-landmarks/wahoos-flamingo-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312881877-fcd34e595821-wahoos-flamingo-exterior-collision.bin",
+   "sha256": "fcd34e5958219719c61e863fea7c52acfd17bc44ecaa1d50cdb536841a363748",
+   "bytes": 292
+  },
+  "build/strip-landmarks/wahoos-flamingo-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312881998-296493aaad9a-wahoos-flamingo-exterior.glb",
+   "sha256": "296493aaad9a2e3a6ece54623c69af580bf2066a16896d21539c06284d47ed59",
+   "bytes": 557212
   },
   "build/strip-landmarks/waldorfExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985286592-2fb0479ee63c-waldorfExterior-exterior-collision.bin",
@@ -6581,6 +8051,16 @@
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792863186484-20c482bdc030-wellsFargoTower-exterior.glb",
    "sha256": "20c482bdc0308751398ea4e9d604976cd443df988b5a2cf4d83ee3c43b26365b",
    "bytes": 1010100
+  },
+  "build/strip-landmarks/western-alliance-sahara-exterior-collision.bin": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312882266-ed34b2efa2ef-western-alliance-sahara-exterior-collision.bin",
+   "sha256": "ed34b2efa2efb9fdc02623a2795ecefa46d2ad5fe1f59b45e93d630d784e92d4",
+   "bytes": 1460
+  },
+  "build/strip-landmarks/western-alliance-sahara-exterior.glb": {
+   "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1793312882263-6d7542490fc4-western-alliance-sahara-exterior.glb",
+   "sha256": "6d7542490fc497325c2fdbedfd9b5db76f33d47b03a3388d0087b4d6a963692f",
+   "bytes": 897380
   },
   "build/strip-landmarks/westgateExterior-exterior-collision.bin": {
    "url": "https://bitmagic.ai/worlds/v3/PVEF9G6NJIJ6/1792985286867-a3035baa5a5f-westgateExterior-exterior-collision.bin",
