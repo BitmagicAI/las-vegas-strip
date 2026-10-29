@@ -1,0 +1,53 @@
+{
+  "id": "dutch-bros-sahara",
+  "name": "Dutch Bros West Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/943068958"
+  ],
+  "claim": {
+    "issue": 389,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/389"
+  },
+  "sources": [
+    {
+      "url": "https://www.dutchbros.com/locations/nv/las-vegas/3121-w-sahara-ave",
+      "accessed": "2026-10-29",
+      "observed": "Official current address; takeaway only."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1442,-115.1841723&heading=180",
+      "imageDate": "January2023",
+      "accessed": "2026-10-29",
+      "observed": "Panorama SOscnDlSYOVXr1AWFpfuXw personally inspected: north blue corrugated field, tall cream east address pier, west flat gray canopy on stone piers, stone base. Generic owner promotional photo rejected as different site."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1440127,-115.1841723,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected aerial: narrow north-south service bar, hollow northwest canopy projection, west parking, east pickup lane, south/east drive loop."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights and window positions fitted; imagery2023 may predate changes. No measured plan."
+  ],
+  "remaining": [
+    "Build and inspect scoped exterior and open canopy.",
+    "Full site, current side/rear references and fine material/sign fidelity remain.",
+    "No public interior at takeaway-only site; private kitchen excluded."
+  ],
+  "components": [
+    {
+      "id": "service-bar",
+      "status": "planned"
+    },
+    {
+      "id": "canopy",
+      "status": "planned"
+    }
+  ],
+  "nextPass": {
+    "priority": "Original exterior",
+    "checkpoint": "Issue389 claim confirmed; scope only."
+  }
+}
