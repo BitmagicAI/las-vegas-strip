@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1499,
- "bytes": 1125391971,
+ "count": 1503,
+ "bytes": 1126712475,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19561429,
-   "sha256": "9c3c9e7c3860266ad08e1d3d447ca54e8b4e5b98d8a494b991693df9c044eb97",
+   "bytes": 19593619,
+   "sha256": "3e7680025ffa0fb8c27caa24bfe95dc08657ef6c0d72355be47570b5db0b3d7b",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13059344,
-   "sha256": "2fb4120f71018488e52d1b023f6d8cca61a3beff3af06907ea3e06fb23c14e3c",
+   "bytes": 13058472,
+   "sha256": "e78e28c904e94f4c4a1695fd981e655d0705feffa54f0df0b55a62000578411a",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109739524,
-   "sha256": "f7df969d3f8f380006376609acde795f6e14dd03e298ea32875a3254ae3ab88c",
+   "bytes": 109739364,
+   "sha256": "49396b0ad969a94c1399435ee8b4372817d2dc2e402cbc04d558de434de32eee",
    "kind": "optimized"
   },
   {
@@ -5801,6 +5801,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/buca-flamingo-exterior-collision.bin",
+   "bytes": 800,
+   "sha256": "caf845399341b3cb0b6af7a31df7e03cdcd797ae327e2910ebc09b1eff9e292b",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/buca-flamingo-exterior.glb",
+   "bytes": 841052,
+   "sha256": "662d1fb691b591234895bfd5d55fe6cba1dfa8d81f97027fc86f857b57488511",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/buca-flamingo-interior-collision.bin",
+   "bytes": 2176,
+   "sha256": "987cdd1df73f7a5114033854dd35483e5f151c09c1d5fd9dd033505530a3f49e",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/buca-flamingo-interior.glb",
+   "bytes": 444748,
+   "sha256": "541abb2208721938e4d313955c63439212d8c3e4e4f73c4e6138cf9a2a5c31be",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/caesarsExterior-exterior-collision.bin",
    "bytes": 37304,
    "sha256": "6aaaa1a7bfb819641ac9589015dd63df893641b75dd85a9a000b4d24677050c7",
@@ -8802,8 +8826,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 366088,
-   "sha256": "ec525f59bae08910e3b957fc1539a80322ab6d5ec41084594a95f835f63e8454",
+   "bytes": 366658,
+   "sha256": "2908ff2e0aae1b6dcee697ead0164510754ce582f41868ac210b6cfe63c5b2d2",
    "kind": "original"
   },
   {

@@ -1592,9 +1592,15 @@
     {
       "id": "nuleaf-twain",
       "name": "NuLeaf Twain Avenue",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "nuleaf-twain.json"
+    },
+    {
+      "id": "buca-flamingo",
+      "name": "Buca di Beppo Flamingo",
+      "status": "active",
+      "record": "buca-flamingo.json"
     }
   ],
-  "active": "nuleaf-twain"
+  "active": "buca-flamingo"
 }
