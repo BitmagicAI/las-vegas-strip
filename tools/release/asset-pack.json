@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1575,
- "bytes": 1149613489,
+ "count": 1579,
+ "bytes": 1149881236,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19972931,
-   "sha256": "e0f46a10c21e1cf580ac2f5cd5f0820e6b962862fceccaac8069509de985d4ba",
+   "bytes": 19979370,
+   "sha256": "e81e4fff0af8b8c228d179f478e50400a5498539f96bf2ea36207627972caec1",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13051728,
-   "sha256": "b96371f3b5b0118ccab2a7e59cdb87bdf52dac77df9825e97839373468008414",
+   "bytes": 13051684,
+   "sha256": "90bb325e0eda1d19dfd07d4d5075cf7fbd23573946202ef8884aa6bac199301f",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109710048,
-   "sha256": "ef86af14d09d051d104268169fc2e83f051aaf1a49fd3f47fa72bc08b56eeed4",
+   "bytes": 109709544,
+   "sha256": "049342b7619d6fbe65401e3bf97af0153cc95a39ce47384488b1a60e6fff5786",
    "kind": "optimized"
   },
   {
@@ -7781,6 +7781,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/moneytree-sahara-exterior-collision.bin",
+   "bytes": 660,
+   "sha256": "f4482a0dea716601b6d00a525f3f626e7c5709da4b708179793ed4d1f1aa5f09",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/moneytree-sahara-exterior.glb",
+   "bytes": 199172,
+   "sha256": "b968d28d33ff15ff8d9fecb32249b39ecfa305bc26c8658b402ab2288ec965ae",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/moneytree-sahara-interior-collision.bin",
+   "bytes": 388,
+   "sha256": "8465251ccc7ad3109cd6ff315963e372cffc3e3c8437517dbc17114ec935566a",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/moneytree-sahara-interior.glb",
+   "bytes": 60932,
+   "sha256": "2dfdf1d636f2b6b3b9e15e4ec3666ec0bc9e57016e36e7a45b8a0f5a4587cf82",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/morning-news-exterior-collision.bin",
    "bytes": 560,
    "sha256": "02454b32eb4ae5b8db417fa2c4e33cd00482205d3f9362a3f6e81492b1f6aad2",
@@ -9258,8 +9282,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 379720,
-   "sha256": "b4f4d1ef2f7af9d0b76ae1dedbf566a8f92d4e2003a0876de89810a1cbcd9477",
+   "bytes": 380424,
+   "sha256": "815ff81a8da47cb52ebcef6fd2ca4a849c795ec7f04aeb92b7db236c8666b42d",
    "kind": "original"
   },
   {
