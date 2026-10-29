@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1523,
- "bytes": 1134741072,
+ "bytes": 1134739725,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19640740,
-   "sha256": "880cb3e740a1a48ed7111fe9dc6733ae91426ca8b1637b240bdb7c72db5b2b6e",
+   "bytes": 19640631,
+   "sha256": "5570dc6904daae7bcc5f08478b24687fdfb0d971ed62fed28a40f7905bf71053",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13057448,
-   "sha256": "905eb71d7f09fdfdd91369c553c1ecf4e4d251a4fbfe6e8580712a4ba1f43658",
+   "bytes": 13057120,
+   "sha256": "1625e648840deaec7f381673032aa702d0f563a0c8e0338115a19b578f5f53ab",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109733992,
-   "sha256": "c716d7ffd2f81cb6edbc6f5e162a30670cc727657840c8ec182e44fe03878475",
+   "bytes": 109733472,
+   "sha256": "ab511b5fa7e23cbb61298bd34dcd957c0b25e5e926b1186c4783112a91351bfa",
    "kind": "optimized"
   },
   {
@@ -6570,26 +6570,26 @@
   },
   {
    "path": "build/strip-landmarks/fogo-hughes-exterior-collision.bin",
-   "bytes": 592,
-   "sha256": "2c51ecaa6947c9348eaca8361619105e55c41b81012a3d71d66efbad777e669e",
+   "bytes": 604,
+   "sha256": "cbdd6b5a2a9b2d14175910f2436e8b0aab3050b2545e95370fe731e35445ad92",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/fogo-hughes-exterior.glb",
-   "bytes": 912200,
-   "sha256": "ddfe7d7aa7ec0ef2dae49834603b903512833879d213d51a91bf5b904a6d3b12",
+   "bytes": 911796,
+   "sha256": "424106100f86aff4104b604913b8292572febbf573fa216b357455a373f33fac",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/fogo-hughes-interior-collision.bin",
-   "bytes": 3008,
-   "sha256": "ffad2f4d1f6291688d427c00011e9ab7cf1a9d7e1468f00096e1198b5edf14f3",
+   "bytes": 3012,
+   "sha256": "6e24e19bcd1c69409f61816f8856c379c7ac2a6a887a711c7e4bb7b369d08791",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/fogo-hughes-interior.glb",
-   "bytes": 1501804,
-   "sha256": "32488aeaf559b220199521ddbbb633e5bf92875b0d695f81406283bbcd14ffe5",
+   "bytes": 1501796,
+   "sha256": "4b81b818cc584f837a4e480b477e68784f4fc1125ca903fc1ce9bb9e6145e64e",
    "kind": "optimized"
   },
   {
@@ -8946,8 +8946,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 370650,
-   "sha256": "db1f5cf16ba54a96264ba5bb091c2e2a915fab8bce5237d2b9f3ba9a594d61a6",
+   "bytes": 370656,
+   "sha256": "2246af72a5f592352ca58832f97d945ef2f48ba341a24e2d3519daa8ebd76cdb",
    "kind": "original"
   },
   {

@@ -1,9 +1,9 @@
 import json,sys
 sys.path.insert(0,"tools/strip-landmarks")
 from common import footprint,Point,unary_union
-owned=unary_union([footprint(i) for i in ["way/511850832"]]).buffer(.005)
+owned=unary_union([footprint(i) for i in ["way/511850832","way/1460748967"]]).buffer(.005)
 from pathlib import Path
-old=json.load(open('.bitmagic/city-exterior-backups/fogo-hughes/city-meshes.json'))
+old=json.load(open('.bitmagic/city-exterior-backups/fogo-arrival/city-meshes.json'))
 new=json.load(open('build/geographic-strip/city-meshes.json'))
 assert len(old)==len(new)
 removed=0

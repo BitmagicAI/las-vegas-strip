@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import RAPIER from '@dimforge/rapier3d-compat';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const installed=process.argv.includes('--city');
-if(installed)assert(!read('build/geographic-strip/building-index.json').some(b=>['way/511850832'].includes(b.id)));
+if(installed)assert(!read('build/geographic-strip/building-index.json').some(b=>['way/511850832','way/1460748967'].includes(b.id)));
 await RAPIER.init();const world=new RAPIER.World({x:0,y:-9.81,z:0});
 for(const c of [...(installed?read('build/geographic-strip/city-colliders.json'):[]),read('build/strip-landmarks/fogo-hughes-exterior-collision.json'),read('build/strip-landmarks/fogo-hughes-interior-collision.json')]){
  const body=world.createRigidBody(RAPIER.RigidBodyDesc.fixed());
@@ -26,6 +26,13 @@ for(const route of meta.routes)for(let k=1;k<route.points.length;k++){
   const floor=world.castRay(new RAPIER.Ray({x,y:y+.25,z},{x:0,y:-1,z:0}),.55,true);
   if(hit||!floor)failures.push({x,y,z,blocked:!!hit,floor:!!floor});
  }
+}
+// The separately mapped roof used to be a solid block. Test clearance beneath
+// its arrival span against both the authored model and retained city colliders.
+for(const [x,z] of [[1507.8,124.3],[1508.6,124.9],[1509.5,125.4],[1510.3,126]]){
+ checks++;
+ const hit=world.intersectionWithShape({x,y:2,z},{x:0,y:0,z:0,w:1},new RAPIER.Capsule(.65,.29));
+ if(hit)failures.push({x,y:2,z,blocked:true,area:'open canopy'});
 }
 world.free();const result={checks,failures,city:installed};
 fs.writeFileSync('build/strip-landmarks/fogo-hughes-route-audit.json',JSON.stringify(result,null,2));
