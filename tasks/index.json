@@ -14766,12 +14766,11 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Author and inspect scoped original exterior and open canopies",
-    "Preserve offsite canopy way/1423939475",
-    "Verify actual walking, scoped collision and matching performance",
-    "Interior requires site-specific reference evidence"
+    "Public interior absent; site-specific plan and interior evidence needed",
+    "Monument sign and full site planting/paving remain unfinished",
+    "Finer stone, glazing, brand and facade proportions need refinement; dimensions fitted"
    ],
    "record": "tools/resort-blocks/chick-fil-a-paradise.json",
    "buildings": [],
@@ -14783,7 +14782,13 @@
     "writes": [
      "tools/resort-blocks/chick-fil-a-paradise.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/city-exteriors/install-chick-fil-a-paradise.py",
+     "tools/strip-landmarks/export_chick_fil_a_paradise.py",
+     "tools/strip-landmarks/test-chick-fil-a-paradise.mjs",
+     "tools/city-exteriors/check-chick-fil-a-paradise-preservation.py",
+     "tools/strip-landmarks/chick_fil_a_paradise.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

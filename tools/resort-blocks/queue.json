@@ -1690,8 +1690,12 @@
     {
       "id": "chick-fil-a-paradise",
       "name": "Chick-fil-A Flamingo and Paradise",
-      "status": "active",
-      "record": "chick-fil-a-paradise.json"
+      "status": "refinement-deferred",
+      "record": "chick-fil-a-paradise.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped exterior/open canopies; continue city-wide work with interior, site and fine fidelity remaining."
+      }
     }
   ],
   "active": "chick-fil-a-paradise"
