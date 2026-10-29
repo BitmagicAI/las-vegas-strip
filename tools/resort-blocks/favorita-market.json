@@ -1,0 +1,136 @@
+{
+  "id": "favorita-market",
+  "name": "La Favorita Market \u2014 Twain",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/390003968"
+  ],
+  "claim": {
+    "issue": 312,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/312",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/313"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/La+Favorita+Market/@36.1205547,-115.1508181,18z/",
+      "observed": "Owner May2023 photo CIHM0ogKEICAgICx0diYKw: blue fascia, cream cornice, black mullion glass, red/green market name, liquor and produce signage. Joseph ruri June2026 photo CIABIhDi0NreK7i6Nof9KrfwcV1N: checker floor, metal stocked shelves and fluorescent ceiling."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=gIM0wgsN8JgeISaCpiK7vQ&heading=180&pitch=0",
+      "observed": "March2018 north frontage proportions, continuous shallow cornice and glazing. Beige paint/signs superseded by May2023 owner photograph."
+    },
+    {
+      "url": "https://www.google.com/maps/place/La+Favorita+Market/@36.1205547,-115.1508181,18z/",
+      "observed": "Manato Kasaba March2026 photo CIABIhDlOHm0lOxBbAgzHY9A6bwn inspected: red/white meat counter, stainless cap, glazed display, checker floor and mats. Exact counter arrangement inferred."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint approximately64x27m including other retail frontage; market tenant extent and public room layout inferred. Heights, hidden services, newer signage unverified."
+  ],
+  "implemented": [
+    "Claim312 confirmed; exterior/public aisle photographs visually inspected.",
+    "Original162524triangle exterior/public room source. Source exterior,roof and revised aisle/counter/cooler views inspected.138source route checks pass.",
+    "Valid baseline views inspected17.2/25.1,29.9/34,16.4/20.4ms median/p95. Initial west/roof views invalid due nearby laundry obstruction; corrected fixed player location and cameras.",
+    "Installed optimized exterior0.55MiB and interior4.47MiB. Three daylight exterior views, four public interior views and walking return visually inspected.",
+    "138 current-city clearance samples and all10 actual walking segments pass. Targeted23face replacement preserves9560groups, vertices, metadata and retainedfaceorder. Current700batch bake;1451assets present,0missing."
+  ],
+  "remaining": [
+    "Sign lettering is small/plain; facade glass opaque, roof and service walls simplified. Product packages, cooler glazing and meat display contents remain visibly stylized. Exact tenant divisions and public room arrangement inferred; private spaces excluded.",
+    "Exterior median frame time21.6/37.4/18.9ms vs17.2/29.9/16.4baseline; further optimization required. Interior16.6\u201317.3ms median,21.1\u201329.9ms p95. No stable60fps or photorealistic completion claim."
+  ],
+  "nextPass": {
+    "priority": "Mapped exterior and reference-supported public market aisles.",
+    "checkpoint": "Installed and visually reviewed first pass; retain fidelity/performance refinements. Next candidate Mariana\u2019s Sahara needs full-front reference and claim before edits."
+  },
+  "publicInteriorPlan": {
+    "status": "inferred from dated public photographs; no floor plan",
+    "rooms": [
+      {
+        "name": "Public retail aisles, refrigerated cases and checkout",
+        "estimatedSizeM": [
+          40,
+          20
+        ],
+        "ceilingM": 3.55
+      }
+    ],
+    "connections": [
+      "North entry to cross aisle",
+      "Central aisle to meat counter",
+      "Counter aisle to cooler wall; return"
+    ],
+    "excluded": [
+      "Stock rooms",
+      "Preparation areas",
+      "Western neighboring tenant interiors"
+    ]
+  },
+  "evidence": [
+    "build/city-exteriors/favorita-market-installed/favorita-market-northeast.png",
+    "build/city-exteriors/favorita-market-installed/results.json",
+    "build/city-exteriors/favorita-market-installed/favorita-market-north-front.png",
+    "build/city-exteriors/favorita-market-installed/favorita-market-roof.png",
+    "build/city-exteriors/favorita-market-interior-installed/favorita-market-entrance.png",
+    "build/city-exteriors/favorita-market-interior-installed/favorita-market-counter.png",
+    "build/city-exteriors/favorita-market-interior-installed/results.json",
+    "build/city-exteriors/favorita-market-interior-installed/favorita-market-coolers.png",
+    "build/city-exteriors/favorita-market-interior-installed/favorita-market-aisle.png",
+    "build/city-exteriors/favorita-market-walk/results.json",
+    "build/city-exteriors/favorita-market-walk/walk-return-0.png",
+    "build/city-exteriors/favorita-market-baseline-final/favorita-market-northeast.png",
+    "build/city-exteriors/favorita-market-baseline-final/results.json",
+    "build/city-exteriors/favorita-market-baseline-final/favorita-market-north-front.png",
+    "build/city-exteriors/favorita-market-baseline-final/favorita-market-roof.png"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        17.2,
+        25.1
+      ],
+      [
+        29.9,
+        34
+      ],
+      [
+        16.4,
+        20.4
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        21.6,
+        27.2
+      ],
+      [
+        37.4,
+        54.8
+      ],
+      [
+        18.9,
+        27.4
+      ]
+    ],
+    "interiorMedianP95Ms": [
+      [
+        17.3,
+        26.7
+      ],
+      [
+        17.3,
+        29.9
+      ],
+      [
+        16.6,
+        21.7
+      ],
+      [
+        16.7,
+        21.1
+      ]
+    ],
+    "note": "960x540 ultra neutral daylight; shared machine, no stable60fps claim."
+  }
+}

@@ -1476,7 +1476,17 @@
       "name": "24 Hour Laundry Center \u2014 Twain",
       "status": "refinement-deferred",
       "record": "twain-laundry.json"
+    },
+    {
+      "id": "favorita-market",
+      "name": "La Favorita Market \u2014 Twain",
+      "status": "refinement-deferred",
+      "record": "favorita-market.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Installed first pass verified; fidelity/performance refinements retained while continuing city-wide coverage."
+      }
     }
   ],
-  "active": "twain-laundry"
+  "active": "favorita-market"
 }
