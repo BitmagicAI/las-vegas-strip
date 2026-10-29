@@ -1,0 +1,43 @@
+{
+  "id": "lolos-hughes",
+  "name": "325 Hughes Center retail / Lo-Los",
+  "status": "in-progress",
+  "mappedIds": [
+    "way/1001560963",
+    "way/1423439018"
+  ],
+  "claim": {
+    "issue": 363,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/363",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Lo-Los+Chicken+Waffles+325+Hughes+Center+Las+Vegas",
+      "observed": "Rea Clair March2026 photo CIABIhAgbvHR5iICwWTJaFfFHzFY personally inspected. Tall silver framed glazing, pale horizontally layered stone, dark projecting portal and wide silver roof overhang. Image capture February2026."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.115055,-115.1585693,20z/data=!3m1!1e3",
+      "observed": "Personally inspected aerial. Continuous north-south retail strip, taller southern restaurant roof, southern covered patio, east parking and west Howard Hughes Parkway."
+    },
+    {
+      "url": "https://loloschickenandwaffles.com/location/las-vegas-nv",
+      "observed": "Official link from Maps, unavailable behind security verification; not used as visual evidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights and facade measurements fitted, not measured.",
+    "Mapped named restaurant outline covers only southern projection; contiguous main retail footprint included in scope."
+  ],
+  "remaining": [
+    "Research remaining frontage and public room",
+    "Author original geometry",
+    "Install and visually inspect",
+    "Static and walking checks, performance, package"
+  ],
+  "nextPass": {
+    "priority": "References and original reconstruction",
+    "checkpoint": "Claim confirmed; no new geometry yet."
+  }
+}

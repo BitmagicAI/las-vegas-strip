@@ -1646,7 +1646,13 @@
       "name": "365 Hughes Center retail",
       "status": "refinement-deferred",
       "record": "hughes-retail.json"
+    },
+    {
+      "id": "lolos-hughes",
+      "name": "325 Hughes Center retail / Lo-Los",
+      "status": "in-progress",
+      "record": "lolos-hughes.json"
     }
   ],
-  "active": "hughes-retail"
+  "active": "lolos-hughes"
 }
