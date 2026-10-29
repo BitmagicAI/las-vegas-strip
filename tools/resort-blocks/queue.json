@@ -1452,7 +1452,13 @@
       "name": "5115 southern courtyard crossbar",
       "status": "refinement-deferred",
       "record": "dean-martin-south-crossbar.json"
+    },
+    {
+      "id": "dean-martin-east",
+      "name": "5115 east courtyard / NV Autopro frontage",
+      "status": "active",
+      "record": "dean-martin-east.json"
     }
   ],
-  "active": "dean-martin-south-crossbar"
+  "active": "dean-martin-east"
 }

@@ -1,0 +1,89 @@
+{
+  "id": "dean-martin-east",
+  "name": "5115 east courtyard / NV Autopro frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/225705141"
+  ],
+  "claim": {
+    "issue": 304,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/304",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/305"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=wRr0JJg10fXdBXPzDQdcmQ&heading=90&pitch=0",
+      "observed": "December2022,36.0963045,-115.182884: pale ribbed mansard, tan vertical panels, narrow glazed entries/transoms, slim posts, NV Autopro Services signs at205/206."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vJB0k2r9pDVw4-IlHT-KnQ&heading=90&pitch=0",
+      "observed": "December2022,36.0964433,-115.1828857: suites201/202/203 and opaque panels alternating with narrow glazed entry groups."
+    },
+    {
+      "url": "https://www.bbb.org/us/nv/las-vegas/profile/auto-repair/nv-autopro-services-1086-90086552",
+      "observed": "Secondary identity/address corroboration for Suite205; not interior evidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped bounds[-879.123,2150.737,-852.199,2240.205]. Heights, exact tenant partitions and hidden servicing estimated.",
+    "No verified interior plan; current tenant occupancy unverified."
+  ],
+  "implemented": [
+    "Three unobstructed baseline daylight views visually inspected before reconstruction.",
+    "Original19,504-triangle source: mapped west-facing long ribbed mansard, tan panels, narrow glazed door/window groups and transoms, referenced NV Autopro plaques, inferred rear services/roof plant. Entrance and roof source views inspected.",
+    "Targeted10-face shell/collision replacement; all9560meshgroups preserve vertices/metadata/retained face order.270 scoped route checks pass.",
+    "Three installed daylight views and walk-return visually inspected; four actual walking segments pass. Outward sign orientation confirmed.",
+    "Optimized0.86MiB GLB; current696-batch city bake,1437 runtime assets and0missing. Typecheck and records pass."
+  ],
+  "remaining": [
+    "Exact bay divisions, sign graphics, glass and weathering remain simplified.",
+    "Hidden rear services and roof plant inferred; interior closed without verified plan.",
+    "Canopy/roof aliasing and generic courtyard paving/landscaping remain; wider courtyard performance below60fps."
+  ],
+  "nextPass": {
+    "priority": "Later fidelity refinement; continue city expansion.",
+    "checkpoint": "Installed pass verified; not photorealistic completion."
+  },
+  "evidence": [
+    "build/city-exteriors/dean-martin-east-baseline/results.json",
+    "build/city-exteriors/dean-martin-east-source-review/entrance.png",
+    "build/city-exteriors/dean-martin-east-source-review/roof.png",
+    "build/city-exteriors/dean-martin-east-preservation.json",
+    "build/strip-landmarks/dean-martin-east-route-audit.json",
+    "build/city-exteriors/dean-martin-east-installed/results.json",
+    "build/city-exteriors/dean-martin-east-walk/results.json"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        23.3,
+        29.5
+      ],
+      [
+        37.9,
+        50.2
+      ],
+      [
+        18.1,
+        23.9
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        22.1,
+        33.4
+      ],
+      [
+        32.4,
+        40.5
+      ],
+      [
+        16.7,
+        22.3
+      ]
+    ],
+    "note": "Matching960x540ultra views, shared machine; not stable60fps guarantee."
+  }
+}
