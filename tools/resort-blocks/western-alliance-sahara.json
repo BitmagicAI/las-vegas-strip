@@ -1,0 +1,99 @@
+{
+  "id": "western-alliance-sahara",
+  "name": "Western Alliance Bank Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1414999317",
+    "way/1414999318"
+  ],
+  "claim": {
+    "issue": 395,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/395",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/396"
+  },
+  "sources": [
+    {
+      "url": "https://www.westernalliancebancorporation.com/about-us/locations?city=Las+Vegas&url=",
+      "accessed": "2026-10-29",
+      "observed": "Official Sahara branch2700WestSahara; surveyBankofAmerica identity outdated."
+    },
+    {
+      "url": "https://www.westernalliancebancorporation.com/sites/default/files/styles/location_webp/public/2025-09/sahara-location.jpg.jpg?itok=VyKt0eGS",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected cream multistory facade, rounded copper-toned fascia/crown, terra-cotta low roofs, braced entrance supports. Actual image dateunknown; missing sign may be edited."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14453,-115.17818&heading=0",
+      "accessed": "2026-10-29",
+      "imageDate": "January2026",
+      "observed": "Personally inspected JxI3h_XZjDf2tX36rbv9qg: WA-style signage on southeast curved tower, vertical narrow dark glazing, cream facade, tile lowroof, grass/shrubs/rocks/trees."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1450156,-115.1781607,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected rotated main building, flat central roof, southwest lowroof/entrycourt,northwesttilewing,northeastdrive-through,westparking,eastPaseoDelPrado,southSahara."
+    }
+  ],
+  "uncertainDimensions": [
+    "Survey6m height visibly wrong; office heights and roof divisions fitted from photos.",
+    "No measured plan or referenced public interior."
+  ],
+  "components": [
+    {
+      "id": "office-block",
+      "status": "implemented"
+    },
+    {
+      "id": "entrance-low-roofs",
+      "status": "implemented"
+    },
+    {
+      "id": "drive-through-canopy",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "Precise office elevation/roof heights and front tower silhouette remain photo-fitted, not measured.",
+    "Rear glazing rhythm and detailed service frontage require stronger references; current interpretation simplified.",
+    "Full site paving, grass, mature trees and fine facade/tile/sign fidelity remain; not photorealistic.",
+    "No referenced public banking interior; entrance remains closed.",
+    "Street-level roof proportion, rounded southeast tower and copper gutter extent still need a closer matching-view fidelity pass; present roof tiles and planting are simplified."
+  ],
+  "nextPass": {
+    "priority": "Front silhouette, complete site and fine material fidelity",
+    "checkpoint": "Four final-closed installed daylight views inspected;127static/16walking checks passed;fresh741-batch bake and1581runtime assets packaged."
+  },
+  "implemented": [
+    "Original24026-triangle scoped exterior/.86MiB optimized GLB.",
+    "Mapped irregular office shell, separately patterned front glazing, clay low roof/closed sides, curved copper crown with end caps, braced entry supports, open adjoining drive-through canopy."
+  ],
+  "evidence": [
+    "build/city-exteriors/western-alliance-sahara-baseline/results.json",
+    "build/city-exteriors/western-alliance-sahara-preview/results.json",
+    "build/city-exteriors/western-alliance-sahara-refined-preview/results.json",
+    "build/city-exteriors/western-alliance-sahara-final-closed/results.json",
+    "build/city-exteriors/western-alliance-sahara-walk-final-closed/results.json",
+    "build/city-exteriors/western-alliance-sahara-preservation.json",
+    "build/strip-landmarks/western-alliance-sahara-route-audit.json"
+  ],
+  "validation": {
+    "static": "127 current-city capsule/support checks passed.",
+    "walking": "16 final default-bake walking segments passed.",
+    "visual": "Four final installed daylight views personally inspected. Corrected inward window panels, open roof sides, tapered columns, overlapping front glazing and open copper-cap ends.",
+    "preservation": "295 owned faces and matching collision replaced;9560 other groups preserved.",
+    "packaging": "741-batch fresh city bake;1581runtime assets. Type/Bitmagic/record/public checks pass; preexisting public-email warning only."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/western-alliance-sahara-baseline/results.json",
+    "after": "build/city-exteriors/western-alliance-sahara-final-closed/results.json",
+    "method": "960x540DPR1ultra, matching south/roof/entry/canopy cameras. Other-session CPU workload preserved.",
+    "summary": "Baseline medians16.6/16.7/16.7/16.7,p9517.6/17.4/17.3/17.2ms; final16.7/16.6/16.6/16.6,p9518.9/18.3/18.5/18.7ms. Not locked60fps."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/western-alliance-sahara-exterior.glb": "6d7542490fc497325c2fdbedfd9b5db76f33d47b03a3388d0087b4d6a963692f",
+      "runtime-assets/strip-landmarks/western-alliance-sahara-exterior-collision.bin": "ed34b2efa2efb9fdc02623a2795ecefa46d2ad5fe1f59b45e93d630d784e92d4"
+    }
+  }
+}

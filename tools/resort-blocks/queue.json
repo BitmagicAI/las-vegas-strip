@@ -1766,7 +1766,13 @@
       "name": "Moneytree West Sahara",
       "status": "refinement-deferred",
       "record": "moneytree-sahara.json"
+    },
+    {
+      "id": "western-alliance-sahara",
+      "name": "Western Alliance Bank Sahara",
+      "status": "refinement-deferred",
+      "record": "western-alliance-sahara.json"
     }
   ],
-  "active": "moneytree-sahara"
+  "active": "western-alliance-sahara"
 }
