@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1583,
- "bytes": 1151171297,
+ "count": 1587,
+ "bytes": 1151799356,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20024561,
-   "sha256": "25ae16b4dcf5eb7c47c9d37e5a6ced5e06420fc9aa48b7e939ac8fe01aa475e3",
+   "bytes": 20029136,
+   "sha256": "e0f97ebf0bd19acf7324f6810a996819b704abae392990dd05037a92b813f2a3",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13050640,
-   "sha256": "a4684686bc447309eba9b1e9625c969bcc3a7318c816ee3e9081582ea2bfeefe",
+   "bytes": 13050472,
+   "sha256": "008164e9555d4058bfd78eff5f51f3e6a6eeb1db72d23fc33101362c8bf4b807",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109704476,
-   "sha256": "2e3c81f0b53c0bef505eb1378f8ad4c0a195e4d22b8b00ac596e59d5cd63dc05",
+   "bytes": 109704040,
+   "sha256": "203c6535df52a819c0bf9789cc98255cb0bc9ba4f69e826851ad60f0df1ecf4f",
    "kind": "optimized"
   },
   {
@@ -7757,6 +7757,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/mi-ranchito-sahara-exterior-collision.bin",
+   "bytes": 516,
+   "sha256": "cd0a879e4d9646dcdabf7861dcc95d1c675a8b1dfd2d7eb2c00e4cdd4b0bfbec",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mi-ranchito-sahara-exterior.glb",
+   "bytes": 197220,
+   "sha256": "b09963e65e121a92834cf14ae0a6230cb7562db884af908d540ed68ee2be0f39",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/mi-ranchito-sahara-interior-collision.bin",
+   "bytes": 6884,
+   "sha256": "e92e69df9bedd744cd9085e823ea74f504ced370d852c70e7cf2d21bf17fb67e",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/mi-ranchito-sahara-interior.glb",
+   "bytes": 418756,
+   "sha256": "a2119ea58fe64fb38fae78b4ed01e98e1318451ac4eca401dc906bdbf6b98d93",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/mirageExterior-exterior-collision.bin",
    "bytes": 11980,
    "sha256": "b3fbfc946a791929b33c927a00668d83ad7fa87e586dfbd3a2ce0ccfb5c9730b",
@@ -9294,8 +9318,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 381266,
-   "sha256": "3afbdc61c931ddf0f8b124b982b090a8f7801aeafa77a25f3f5f490feb5cdf59",
+   "bytes": 381978,
+   "sha256": "f6c6664f55c9097cef2de21cdc4eccfc6f27c7f16113b56a4c696727851992df",
    "kind": "original"
   },
   {

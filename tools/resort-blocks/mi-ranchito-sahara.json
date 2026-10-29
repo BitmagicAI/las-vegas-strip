@@ -1,0 +1,115 @@
+{
+  "id": "mi-ranchito-sahara",
+  "name": "Mi Ranchito Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/943068962"
+  ],
+  "claim": {
+    "issue": 399,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/399",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/400"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/Mi+Ranchito+Restaurant+SF+Sahara+Ave/",
+      "accessed": "2026-10-29",
+      "imageDate": "July2024",
+      "photoId": "CIHM0ogKEICAgICbwK2aDg",
+      "provider": "Business owner",
+      "observed": "Personally inspected ochre stucco, blue sloped roof/red eaves, gabled entrance on long facade, stone entry piers, glazed double doors, red patio fence and barrel planters."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Mi+Ranchito+Restaurant+SF+Sahara+Ave/",
+      "accessed": "2026-10-29",
+      "imageDate": "February2026",
+      "photoId": "CIABIhDhyE3eRmcThQySbrx1XKDO",
+      "provider": "Susan Elizabeth Thayer",
+      "observed": "Personally inspected wide dining room: yellow service wall with dark arched openings/menu screens, blue side wall/red door trim, brown square tile, pale ceiling/recessed square lights; colorful high-backed painted chairs/red seats and glazed rectangular tables."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Mi+Ranchito+Restaurant+SF+Sahara+Ave/",
+      "accessed": "2026-10-29",
+      "imageDate": "September2026",
+      "photoId": "CIABIhAN8oUkUikcnWlxVXL5L3yJ",
+      "observed": "Personally inspected green/orange scalloped chair backs/red seats; original abstract motifs will replace copyrighted painted artwork."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.14402,-115.18243,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected blue perimeter roof/white central spine, south service portion, parking and patio. Separate Vape Pirates west excluded."
+    },
+    {
+      "url": "https://www.loopnet.com/Listing/3001-W-Sahara-Ave-Las-Vegas-NV/32124105/",
+      "accessed": "2026-10-29",
+      "observed": "Property listing2870sqft,one story,built1975/renovated2019; not a measured interior plan."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14399,-115.18207&heading=270",
+      "accessed": "2026-10-29",
+      "imageDate": "January2026",
+      "panoId": "HnCjnCalDwpaYkz1adh7ng",
+      "observed": "Personally inspected east side from Richfield; blue roof, ochre high signage wall, parking and red patio edge; aerial reconciled east entry projection."
+    }
+  ],
+  "uncertainDimensions": [
+    "Elevations and room layout fitted to mapped footprint and photographs; no measured floor plan.",
+    "Public/private boundary and dining furniture placement fitted; entry verified on east long facade using aerial projection and photographs."
+  ],
+  "components": [
+    {
+      "id": "exterior-roof-entry",
+      "status": "implemented"
+    },
+    {
+      "id": "public-dining",
+      "status": "implemented"
+    },
+    {
+      "id": "public-approach-patio",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "Fine facade materials, accurate sign typography, full site paving/landscaping and west/rear facade reference matching remain.",
+    "Public room dimensions and table/service placement are inferred; private kitchen omitted.",
+    "Interior remains visibly simplified: wall art, trim, tabletop ornament, chair profile and counter details need higher-fidelity work.",
+    "North exterior view measured21.3/38.9ms median/p95, repeat19.8/26.2, versus17.2/22.2baseline. Cause unresolved under concurrent other-session CPU work; no locked60fps claim."
+  ],
+  "nextPass": {
+    "priority": "Complete site, fine fidelity and north-view performance",
+    "checkpoint": "Six final installed daylight views inspected;84static/16walking pass;743-batch bake/1587assets. North slowdown retained; packaging scoped pass."
+  },
+  "implemented": [
+    "Original19687-triangle exterior/public dining model; blue hip roof with flat spine, east stone-framed entrance, north sign wall, patio fence, service equipment and public furniture.",
+    "Original abstract chair/table motifs replace photographed artwork; no third-party image textures."
+  ],
+  "evidence": [
+    "build/city-exteriors/mi-ranchito-sahara-baseline/results.json",
+    "build/city-exteriors/mi-ranchito-sahara-final/results.json",
+    "build/city-exteriors/mi-ranchito-sahara-inside-final/results.json",
+    "build/city-exteriors/mi-ranchito-sahara-walk-final/results.json",
+    "build/city-exteriors/mi-ranchito-sahara-preservation.json",
+    "build/city-exteriors/mi-ranchito-sahara-north-recheck/results.json"
+  ],
+  "validation": {
+    "static": "84 current-city route/capsule/support checks passed.",
+    "walking": "16 final default-bake segments passed, including entry and public dining cross aisle.",
+    "visual": "Six final installed daylight views personally inspected. Corrected buried window, entrance canopy/lettering, chair crests and furniture density.",
+    "preservation": "31 owned faces and matching colliders replaced;9560 groups preserved.",
+    "packaging": "743-batch current bake/1587assets; type/Bitmagic/record/public checks pass with existing email warning only."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra, matching entry/roof/north cameras; other-session CPU work preserved.",
+    "summary": "Baseline medians16.6/16.6/17.2,p9524.8/17.9/22.2ms; final16.6/16.6/21.3,p9518.6/18.2/38.9ms. Interior16.7/16.5/16.7,p9518.5/18.7/19.3ms. Not locked60. North repeat19.8/26.2ms; retains unresolved slowdown."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/mi-ranchito-sahara-exterior-collision.bin": "cd0a879e4d9646dcdabf7861dcc95d1c675a8b1dfd2d7eb2c00e4cdd4b0bfbec",
+      "runtime-assets/strip-landmarks/mi-ranchito-sahara-interior.glb": "a2119ea58fe64fb38fae78b4ed01e98e1318451ac4eca401dc906bdbf6b98d93",
+      "runtime-assets/strip-landmarks/mi-ranchito-sahara-exterior.glb": "b09963e65e121a92834cf14ae0a6230cb7562db884af908d540ed68ee2be0f39",
+      "runtime-assets/strip-landmarks/mi-ranchito-sahara-interior-collision.bin": "e92e69df9bedd744cd9085e823ea74f504ced370d852c70e7cf2d21bf17fb67e"
+    }
+  }
+}
