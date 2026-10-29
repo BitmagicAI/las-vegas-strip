@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1599,
- "bytes": 1157937060,
+ "count": 1603,
+ "bytes": 1158863192,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20059770,
-   "sha256": "091dc3e21ed6cd8efc041992e7ed08e9c8455bbb1ef1356f5c9073d28573aabd",
+   "bytes": 20067012,
+   "sha256": "a19229e2ffd2664e29dda8a485f350d439a5cc2a4cc4963b70f81f8ec1697bd2",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13050024,
-   "sha256": "a7400844d15680e0cc1d716ff20fee6c861daa3657ba74eb11bf2c5ddad38de6",
+   "bytes": 13049720,
+   "sha256": "574e226429e47335cfd2ce2e8e922a8b262c86279b082a37597533a21f4bda6b",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109703056,
-   "sha256": "9db451792f9ab47fab5e71ef177b2a04503944237c041567294a9ba8b49c03f9",
+   "bytes": 109702684,
+   "sha256": "b9a8cca391e320743e2e0f441043687cd9899179bcdda6b69b8682fde382480b",
    "kind": "optimized"
   },
   {
@@ -8729,6 +8729,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/seven-eleven-sahara-exterior-collision.bin",
+   "bytes": 1200,
+   "sha256": "066c8c5c546a3fc20f0bb49bc4d136fc48a2ab7b69b0ecc01c7e9a967df97e79",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/seven-eleven-sahara-exterior.glb",
+   "bytes": 303592,
+   "sha256": "faa4ae2bc6423300a1ad183bf46978c76b842efb76acae8e82411e21c491eaf0",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/seven-eleven-sahara-interior-collision.bin",
+   "bytes": 584,
+   "sha256": "f10391ed09a6bbadc4ae8f082a511bc1d1b24248370eef911336c96ed73c6348",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/seven-eleven-sahara-interior.glb",
+   "bytes": 613492,
+   "sha256": "649462afd2aa2aca46e30537ddf253a810c3839e81462f18bfddbb2e40b79449",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/shooting-center-exterior-collision.bin",
    "bytes": 460,
    "sha256": "b82e64ba846657827917c24d516bb5297d85966615203fd9edab24dd167d23ee",
@@ -9390,8 +9414,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 384184,
-   "sha256": "aa2f8ccd176460c05440011e1f8badb797c687b785fecd974d445b3a05ea8c54",
+   "bytes": 384882,
+   "sha256": "407b12b637145e7a16b3cc07b10ffaded44ba370a845be7118f2e1dd6da2b10f",
    "kind": "original"
   },
   {
