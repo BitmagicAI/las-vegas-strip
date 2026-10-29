@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-10-28",
+ "revision": "2026-10-29",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-10-28.tar.gz",
+  "name": "las-vegas-strip-assets-2026-10-29.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
- "count": 1569,
- "bytes": 1149049900,
+ "count": 1573,
+ "bytes": 1149287098,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19956394,
-   "sha256": "4be81981a5c8b0ceca10263ef998f9133178926081dbd3e9ea5fac9af42c9009",
+   "bytes": 19964008,
+   "sha256": "4fa1e117df58106cb26c53febd80dafd72f06c1ab4467cb395dae9787443f69c",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13052076,
-   "sha256": "72efb119ee52d0eb7f0704ba385ca0f992ee4a019785b3fad02b145ad213dced",
+   "bytes": 13051752,
+   "sha256": "1efcb6e571330e63875e5df6efca73be322e5f8216de28231ab09d2ec32dafa2",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109711928,
-   "sha256": "9040dcad8daa87ba2ec9efe07dd4208637e38cd62d6c0969f696d77d82d7f6fd",
+   "bytes": 109710588,
+   "sha256": "e38f901d30f9005f7abd22b9bbd3f53b2bc0fb3f9f91d58e8ad9a533dde1cd0a",
    "kind": "optimized"
   },
   {
@@ -6401,6 +6401,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/dutch-bros-sahara-exterior-collision.bin",
+   "bytes": 544,
+   "sha256": "f1d5bd4554aacf6ad67516f779627a5503e6934a5b7e7d0712a8a98196c27fab",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/dutch-bros-sahara-exterior.glb",
+   "bytes": 229364,
+   "sha256": "cbc1cd4905cdfbe947b672fe36b3bff9a819b40c360063a3fb8fab55caf0e2e6",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/elaraExterior-exterior-collision.bin",
    "bytes": 1184,
    "sha256": "07ca5d247ca6f452cd6199b0945d50e5673e5df0ba26a51250fe4c04ac48fa6a",
@@ -7757,10 +7769,22 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/morning-news-exterior-collision.bin",
+   "bytes": 560,
+   "sha256": "02454b32eb4ae5b8db417fa2c4e33cd00482205d3f9362a3f6e81492b1f6aad2",
+   "kind": "original"
+  },
+  {
    "path": "build/strip-landmarks/morning-news-exterior.glb",
    "bytes": 222592,
    "sha256": "8367bcf9a8fb03f24adc7307b78b6a399760648a609bfd169b4df986cbee684a",
    "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/morning-news-interior-collision.bin",
+   "bytes": 460,
+   "sha256": "a15805209be6a23426f738db55300ab09e0f880ae9e8cede3558693c19c8739e",
+   "kind": "original"
   },
   {
    "path": "build/strip-landmarks/morning-news-interior.glb",
@@ -9222,8 +9246,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 379104,
-   "sha256": "c3d059013717a987cd46c1357fa57942e3d2426f9b5fe27c141bace07b1a37e5",
+   "bytes": 379424,
+   "sha256": "2793da94a3e30b713a62c4406082bccceaa1aa102ca8c81bf0bfc629d89e5e97",
    "kind": "original"
   },
   {
