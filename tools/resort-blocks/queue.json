@@ -1302,9 +1302,19 @@
     {
       "id": "former-wendys-tropicana",
       "name": "Former Wendys 3333 W Tropicana",
+      "status": "refinement-deferred",
+      "record": "former-wendys-tropicana.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Installed exterior verified; exact rear facade, landscaping and unknown interior retained while advancing city-wide."
+      }
+    },
+    {
+      "id": "jack-tropicana",
+      "name": "Jack in the Box 3235 W Tropicana",
       "status": "active",
-      "record": "former-wendys-tropicana.json"
+      "record": "jack-tropicana.json"
     }
   ],
-  "active": "former-wendys-tropicana"
+  "active": "jack-tropicana"
 }

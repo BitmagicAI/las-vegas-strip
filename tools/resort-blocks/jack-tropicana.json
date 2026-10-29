@@ -1,0 +1,60 @@
+{
+  "id": "jack-tropicana",
+  "name": "Jack in the Box 3235 W Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/431497410"
+  ],
+  "claim": {
+    "issue": 272,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/272",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/273"
+  },
+  "sources": [
+    {
+      "url": "https://locations.jackinthebox.com/us/nv/las-vegas/3235-w-tropicana-ave",
+      "observed": "Official location confirms3235address and operating restaurant.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1004768,-115.1842301,3a,75y,180h,90t/data=!3m4!1e1!3m2!1sc0qpErjFiiv2gzstk4IuKw!2e0",
+      "observed": "December2022 StreetView north facade inspected: greybrick piers, timber-look window surrounds, aluminium glazing, projecting greyfascia, northwest red diagonal-ribbed crown. RileyJan2022 sitephoto CIHM0ogKEICAgICm96lL confirms3235address and westreturn entrance.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mappedfootprint268.27m2; heights, bay widths and concealed service elevations inferred.",
+    "Public interior not established beyond visible chairs through glazing; no invented private rooms."
+  ],
+  "implemented": [
+    "Original grey brick exterior with north and west glazed bays, timber-look surrounds, projecting fascia, raised red diagonal-ribbed corner panels, original sign lettering, roof equipment and supported frontage paths.",
+    "Only10ownedvisual10collisionfaces replaced; all retained city geometry exact-equal."
+  ],
+  "remaining": [
+    "Exact logo typography, facade weathering, rear service arrangement and parking landscaping remain approximate.",
+    "Public interior is unverified and remains closed; model is not photorealistically complete."
+  ],
+  "evidence": [
+    "build/city-exteriors/jack-tropicana-first",
+    "build/city-exteriors/jack-tropicana-walk/results.json",
+    "build/city-exteriors/jack-tropicana-ownership-audit.json",
+    "build/strip-landmarks/jack-tropicana-route-audit.json",
+    "build/city-exteriors/jack-tropicana-packaged"
+  ],
+  "verification": {
+    "sourceTriangles": 2806,
+    "scopedChecks": 104,
+    "actualWalkingSegments": 12,
+    "visualReview": "Three first installed views inspected; corner gap and overlapping door/window corrected. Final packaged northwest and west views inspected.",
+    "assetsPresent": 1397,
+    "assetsMissing": 0,
+    "bakeBatches": 680
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/jack-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/jack-tropicana-packaged/results.json",
+    "conditions": "960x540 ultra neutral daylight,3cameras180frames. Baseline16.6\u201316.9msmedian17.7\u201324.0msp95; final16.5\u201316.8msmedian17.9\u201318.7msp95."
+  }
+}
