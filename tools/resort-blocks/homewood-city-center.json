@@ -1,0 +1,42 @@
+{
+  "id": "homewood-city-center",
+  "name": "Homewood Suites City Center",
+  "status": "in-progress",
+  "mappedIds": [
+    "way/494974482"
+  ],
+  "claim": {
+    "issue": 379,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/379"
+  },
+  "sources": [
+    {
+      "url": "https://www.hilton.com/en/hotels/lasdmhw-homewood-suites-las-vegas-city-center/gallery/",
+      "provider": "Hilton",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Personally inspected images1/11 day/dusk exterior and10 reception: six storeys, pale panels, brown vents, green glazing, stone entry, low canopy; dark/pale wood reception, white counter, teal pendants, gray plank floor and adjacent shop."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Homewood+Suites+4625+Dean+Martin+Las+Vegas",
+      "provider": "Google Maps",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Personally inspected aerial: L-shaped north and west wings, inward east-facing entry court, flat roof and equipment. No geometry extraction."
+    }
+  ],
+  "uncertainDimensions": [
+    "OSM13.3m conflicts with photographed six storeys; fit21.5m pending measured height",
+    "Reception placement and room dimensions inferred; no floorplan"
+  ],
+  "remaining": [
+    "Author scoped exterior/reception",
+    "Verify installed daylight views, actual walking, ownership and performance",
+    "Full pool/site, guest floors, unseen facades and fine fidelity unresolved"
+  ],
+  "nextPass": {
+    "priority": "Build and verify scoped original exterior and public reception",
+    "checkpoint": "Claim confirmed; aerial and official photos inspected. Neighboring Hilton Garden Inn excluded."
+  }
+}
