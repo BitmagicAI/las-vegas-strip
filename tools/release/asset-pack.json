@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1523,
- "bytes": 1134739725,
+ "count": 1527,
+ "bytes": 1135471212,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19640631,
-   "sha256": "5570dc6904daae7bcc5f08478b24687fdfb0d971ed62fed28a40f7905bf71053",
+   "bytes": 19646676,
+   "sha256": "c5b467f19f5125e815e14c8468836de3ee4733635035f197bffa837adcdeb6a1",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13057120,
-   "sha256": "1625e648840deaec7f381673032aa702d0f563a0c8e0338115a19b578f5f53ab",
+   "bytes": 13057104,
+   "sha256": "5230453950c33644c86176177bc81b1a2c4ff7ae603ae03ac81bb26920761dac",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109733472,
-   "sha256": "ab511b5fa7e23cbb61298bd34dcd957c0b25e5e926b1186c4783112a91351bfa",
+   "bytes": 109733180,
+   "sha256": "7bb080b1c675d60b180609ffd3dca5716e0a199673bd8dc00f358acc38ca7683",
    "kind": "optimized"
   },
   {
@@ -6449,6 +6449,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/fedex-hughes-exterior-collision.bin",
+   "bytes": 708,
+   "sha256": "624750d94cc756416cc031a676ea112237ce24141ad05cad495ae5d01f509542",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/fedex-hughes-exterior.glb",
+   "bytes": 242500,
+   "sha256": "90f4b9b6d0f809b205fbab7d2aa8ac3c92d3064edf45c0db48b33a3dbeefd61e",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/fedex-hughes-interior-collision.bin",
+   "bytes": 808,
+   "sha256": "0905debbc3268cb9b45be0a02611f7abb8219b63cb0c763792e302da7e27a134",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/fedex-hughes-interior.glb",
+   "bytes": 480932,
+   "sha256": "cf59cb53d0b62b0047150644b11514db593f30f236f102f6e9212365f09208a7",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/ferraros-exterior-collision.bin",
    "bytes": 768,
    "sha256": "a5ab0c92f130b2988ae7bfa2923eb957424ab3702c3afbbe0515c543997b7ac8",
@@ -8946,8 +8970,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 370656,
-   "sha256": "2246af72a5f592352ca58832f97d945ef2f48ba341a24e2d3519daa8ebd76cdb",
+   "bytes": 371458,
+   "sha256": "0f5fe7f7f5d4ae6ce01e6baac4e6d58c4d59139430fb28cdeac50c027c429fac",
    "kind": "original"
   },
   {

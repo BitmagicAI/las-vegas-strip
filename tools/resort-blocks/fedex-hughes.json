@@ -1,0 +1,62 @@
+{
+  "id": "fedex-hughes",
+  "name": "FedEx Office Hughes Center",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/159969363"
+  ],
+  "claim": {
+    "issue": 359,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/359",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/360"
+  },
+  "sources": [
+    {
+      "url": "https://local.fedex.com/en-us/nv/las-vegas/office-0741",
+      "observed": "Official395Hughesaddress and printing, shipping, selfservice and supplies."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.115987,-115.1548337,20z/data=!3m1!1e3",
+      "observed": "Aerial personallyinspected: longrectangularflat roof betweenHughesandParadise,northwestcurvedentry, westrowroofequipment, north/southparking."
+    },
+    {
+      "url": "https://www.google.com/maps/search/FedEx+Office+395+Hughes+Center+Drive+Las+Vegas",
+      "observed": "Exterior JaeLee Jun2026 CIABIhDi0U2sAPlrRBTCMLxMBuo9: tallcurvedbrown squaretilewall,crown,blackcablecanopy,blackframedglazing,palesides,redcurb. Interior AlounSiharath Oct2020 CIHM0ogKEICAgIDCj47jjgE: pale counters/printingworktables, darkcarpet,purplerearwall,whitedroppedgridceiling,merchandiseracks. Both personallyinspected; owner stock photos excluded."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mappedrectangle lacks observed northwestcurve; fit original curved entry within footprint. Heights and all publicroomcoordinates inferred.",
+    "Interiorreference is2020; currentlayoutunverified. Private/service rooms absent."
+  ],
+  "remaining": [
+    "Side facades, site landscaping, finish variation, copier/furniture detail and glass fidelity remain simplified",
+    "Public room dimensions and arrangement inferred from dated 2020 photograph; private rooms not modeled"
+  ],
+  "nextPass": {
+    "priority": "Reference-led material/site refinement",
+    "checkpoint": "Installed, visually inspected and walked. 158 static checks and20 actual walking segments pass. Exterior median16.6\u201316.7/p9518.7\u201319.1ms;interior16.6\u201316.7/p9517.6\u201317.8ms at960x540ultra. Current723batchbake/1527assets."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/fedex-hughes-baseline/results.json",
+    "initialExterior": "build/city-exteriors/fedex-hughes-initial/results.json",
+    "initialInterior": "build/city-exteriors/fedex-hughes-public-initial/results.json",
+    "after": "build/city-exteriors/fedex-hughes-refined/results.json",
+    "interior": "build/city-exteriors/fedex-hughes-public-refined/results.json"
+  },
+  "validation": {
+    "staticChecks": 158,
+    "walkingSegments": 20,
+    "walking": "build/city-exteriors/fedex-hughes-walk-refined/results.json",
+    "preservation": "build/city-exteriors/fedex-hughes-preservation.json",
+    "triangles": 5802,
+    "optimizedMiB": {
+      "exterior": 0.23,
+      "interior": 0.46
+    },
+    "bakeBatches": 723,
+    "visual": "Three initial exterior views plus corrected front and all three corrected interior views personally inspected. Letter burial, reversed signs and copier orientation corrected.",
+    "limits": "Stylized first fidelity pass, not photorealistic completion; exact public layout inferred."
+  }
+}
