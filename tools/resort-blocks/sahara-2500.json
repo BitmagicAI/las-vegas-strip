@@ -1,14 +1,15 @@
 {
   "id": "sahara-2500",
   "name": "2500 West Sahara offices",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/1018431817"
   ],
   "claim": {
     "issue": 417,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/417"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/417",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/418"
   },
   "sources": [
     {
@@ -35,23 +36,50 @@
   "components": [
     {
       "id": "facades-roof",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "corner-portico",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "public-approach",
-      "status": "planned"
+      "status": "implemented"
     }
   ],
   "remaining": [
-    "Build/install/inspect and verify approaches/performance/package.",
-    "Private interiors and complete parking/landscape excluded."
+    "Private interiors excluded; no verified interior photographs or floorplan.",
+    "Full parking layout, palms and surrounding landscape remain incomplete.",
+    "Window reflections/blinds and fine surface detail remain simplified; unseen elevations and dimensions inferred."
   ],
   "nextPass": {
-    "priority": "Exterior and entry approach",
-    "checkpoint": "417claim confirmed after414openissue/PRscan; only own415explicitly excluded this building.415released after52c7049push."
+    "priority": "Full landscaping and finer window/material fidelity",
+    "checkpoint": "Installed exterior inspected;68static/14walk pass;752batch bake current; packaging verified."
+  },
+  "implemented": [
+    "Original 20,730-triangle office exterior with green window crossbars, recessed bays, stepped parapet, panel joints, address lettering and square-column portico.",
+    "Only 10 owned shell faces and matching colliders replaced; 9560 groups preserved. Existing roads and other buildings retained."
+  ],
+  "validation": {
+    "static": "68 current-city checks passed",
+    "walking": "14 actual approach segments passed",
+    "visual": "Four final daylight views inspected; original west camera obstructed by adjacent building and replaced with close-up. Front partly occluded; entry close-up supplements it.",
+    "packaging": "752-batch current bake;1617 runtime assets; type/Bitmagic/public passed (existing email warning only)"
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra. Matching front/roof only; west baseline invalid and entry newly added.",
+    "summary": "Baseline front/roof median16.8/16.8ms,p9519.8/19.2; final16.7/16.6,p9519/18.7. New west/entry16.7/16.7,p9519.1/17.9. No locked60claim."
+  },
+  "evidence": [
+    "build/city-exteriors/sahara-2500-baseline/results.json",
+    "build/city-exteriors/sahara-2500-final/results.json",
+    "build/city-exteriors/sahara-2500-walk-final/results.json",
+    "build/city-exteriors/sahara-2500-preservation.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/sahara-2500-exterior.glb": "30bf42dd38cd995d764ddac86d28f5e760b6b9db24c2642f0017ff3cc32d6ed0",
+      "runtime-assets/strip-landmarks/sahara-2500-exterior-collision.bin": "295974019858a25a8d63e3d22377f6e94eab7c9466979ea2419f8d7603a35131"
+    }
   }
 }
