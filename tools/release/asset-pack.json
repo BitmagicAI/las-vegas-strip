@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-10-26",
+ "revision": "2026-10-27",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-10-26.tar.gz",
+  "name": "las-vegas-strip-assets-2026-10-27.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
- "count": 1351,
- "bytes": 1033182725,
+ "count": 1353,
+ "bytes": 1033549076,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18285623,
-   "sha256": "766a5d9c777ac9e7204fa5541990a7755bc24d6c3f01f42b4abc63885142d53b",
+   "bytes": 18294718,
+   "sha256": "d1b353d9864940a0b49bc4fb4f7cea1a22aca52ab561d1c2a957fccb31a9e4aa",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13067344,
-   "sha256": "3c9f697fdd3e2edd5ad383c8382515d95f6e5fe4e7b25d0acaca3a7453c74484",
+   "bytes": 13067224,
+   "sha256": "174ca109f17d9831e83e358f097c80e0236b2cfb10f706c8524a2455d1734298",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109767672,
-   "sha256": "f7b916795844c0c127b25e3c908af29915ea9dd6520dc32bd705051f3f5cafc7",
+   "bytes": 109767596,
+   "sha256": "c524fc82d55df4d7cbf90196247bed5696a78ef68e9ebc2e0105fab61369ca53",
    "kind": "optimized"
   },
   {
@@ -7037,6 +7037,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/paradiseShop-exterior-collision.bin",
+   "bytes": 312,
+   "sha256": "da58ddf7e28b74941edb60e3c97b6bc9133955c062a21db30c2ee36bfaf03ff9",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/paradiseShop-exterior.glb",
+   "bytes": 356992,
+   "sha256": "d3d0c22ec29a3c55ab8adc5eadbc1c905088598e0396b6d713f36084476515fd",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/paradiseSmallFrontage-exterior-collision.bin",
    "bytes": 6640,
    "sha256": "2a91762df5fb7a63277101fe5f66556b7800dc2ad480932599d3e5b54c6f2886",
@@ -7926,8 +7938,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 338524,
-   "sha256": "c1f74597382ce6ac23a66d1a67c674bdf909e692f69014b9447e3410e94c4284",
+   "bytes": 338672,
+   "sha256": "6ec5dbdaba7ef26b886cbc6c6345c4d65a9b36bac949a4dc34d10ed119e96d1d",
    "kind": "original"
   },
   {

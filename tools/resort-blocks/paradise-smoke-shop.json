@@ -1,0 +1,56 @@
+{
+  "id": "paradise-smoke-shop",
+  "name": "Paradise small retail frontage",
+  "status": "active",
+  "mappedIds": [
+    "way/1127963483"
+  ],
+  "claim": {
+    "issue": 240,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/240",
+    "assignee": "janiverse",
+    "date": "2026-10-26"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=AFzLX12f3zzcnqkxOVTaEg&heading=150&pitch=0",
+      "imageDate": "2023-02",
+      "accessDate": "2026-10-26",
+      "observed": "Visually inspected pale vertical panels, dark lower wall, continuous green fascia, white SMOKE SHOP sign and gold letters over storefront glass. Advertising-covered glazing and narrow metal frames. Original abstract display graphics only; no copied product imagery."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped10.61x14.26m envelope. Height4.6m estimated to match adjoining fascia; unmeasured.",
+    "Current tenancy/signage and rear service openings not corroborated. No public interior layout evidence."
+  ],
+  "remaining": [
+    "Current branding/date and exact signage proportions need newer close reference.",
+    "Service facade and rooftop equipment are approximate; corroborate openings and equipment positions.",
+    "No interior built: shop remains closed until public room references are available.",
+    "Further finish/weathering and individual window graphics refinement needed; not photorealistic completion."
+  ],
+  "implemented": [
+    "Mapped original exterior and green fascia bridge the remaining gap between QUADZ and Grove.",
+    "Metal-framed glazing, closed door/handles, signs, original generic printed window sheets, coping/roof equipment and approach apron.",
+    "Six old owned visual triangles and matching collision triangles replaced; neighbors and roads retained."
+  ],
+  "buildNotes": [
+    "Run python3 tools/strip-landmarks/paradise_shop_displays.py (Pillow>=10.1) before Blender export. Uses original text/art, local Arial or DejaVu fallback; no source photos."
+  ],
+  "validation": {
+    "scopedRoutes": "31 floor/support and clearance checks passed.",
+    "runtimeWalk": "Two actual outbound/return approach segments passed.",
+    "installedViews": "North/south daylight views inspected; initial blocky window display geometry replaced with original printed texture artwork and final north view inspected.",
+    "performance": "Matched960x540ultra180frames/view. Before north16.6/18.5,south16.8/18.7ms; final north16.6/18.6,south16.6/19.0median/p95. Local samples only.",
+    "checks": "Record/public checks and Python syntax passed; one pre-existing inventory email warning.",
+    "packaging": "Fresh city bake664batches24.5Mnear/7.07MLODtriangles17.45MBbinary.1353runtimeassets present,0missing."
+  },
+  "evidence": [
+    "build/city-exteriors/paradise-shop-before/results.json",
+    "build/city-exteriors/paradise-shop-final/results.json",
+    "build/city-exteriors/paradise-shop-final/shop-north.png",
+    "build/city-exteriors/paradise-shop-walk/results.json",
+    "build/strip-landmarks/paradiseShop-route-audit.json",
+    "build/city-exteriors/paradiseShop-ownership-audit.json"
+  ]
+}
