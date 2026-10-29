@@ -1,0 +1,94 @@
+{
+  "id": "bmo-sahara",
+  "name": "BMO West Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/900523798"
+  ],
+  "claim": {
+    "issue": 391,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/391",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/392"
+  },
+  "sources": [
+    {
+      "url": "https://usbranches.bmo.com/nv/las-vegas/bmo267/",
+      "accessed": "2026-10-29",
+      "observed": "Official current branch2980WSahara."
+    },
+    {
+      "url": "https://www.google.com/maps/search/BMO+2980+West+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "imageDate": "August2025",
+      "provider": "e mont (emont)",
+      "observed": "Personally inspected CIABIhAQumejnBYsDbg5U2ZGOerT: tan stucco flat parapet, projecting entry portal, dark glass double doors/sidelights, blue wedge awnings, gray cylindrical sconces,BMO letters/redroundel,2980address. Older BankofWest photos rejected as outdated."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.144703,-115.181686,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected aerial: north-south footprint, chamfered northwest, white flat roof with teal pyramidal feature over southhalf, east/northparking,westRichfield/southSahara."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.144703,-115.18194&heading=90",
+      "accessed": "2026-10-29",
+      "imageDate": "January2026",
+      "observed": "Personally inspected KLghUqq0PbRZa0TVyR21zw at36.1447395,-115.1819133: Richfield west side has blue awnings, narrow dark glazing, another BMO sign, angular tan wall returns, low clipped shrubs and red rocks. Side details fitted to mapped edges."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, detail positions and east entry orientation fitted from photo/aerial; no measured elevations."
+  ],
+  "remaining": [
+    "Full site paving/landscaping, precise north and rear detail and fine material/sign fidelity remain.",
+    "Heights and window/entry positions fitted from photographs and mapped footprint, not measured elevations.",
+    "Public interior not evidenced; no interior in this pass."
+  ],
+  "components": [
+    {
+      "id": "branch",
+      "status": "implemented",
+      "description": "Tan irregular shell, east portal and glazing, blue awnings, west glazing/sign and clipped planting."
+    },
+    {
+      "id": "roof-feature",
+      "status": "implemented",
+      "description": "Teal pyramidal feature, flat membrane and roof equipment; fitted heights."
+    }
+  ],
+  "nextPass": {
+    "priority": "Full site and precise rear references",
+    "checkpoint": "Scoped exterior verified,119static/12walking,three final views, optimized asset and current bake packaged."
+  },
+  "implemented": [
+    "Original 5645-triangle exterior; optimized .30 MiB.",
+    "Targeted replacement preserves all other city groups and roads."
+  ],
+  "evidence": [
+    "build/city-exteriors/bmo-sahara-baseline/results.json",
+    "build/city-exteriors/bmo-sahara-preview/results.json",
+    "build/city-exteriors/bmo-sahara-west-preview/results.json",
+    "build/city-exteriors/bmo-sahara-final/results.json",
+    "build/city-exteriors/bmo-sahara-walk-final/results.json",
+    "build/city-exteriors/bmo-sahara-preservation.json",
+    "build/strip-landmarks/bmo-sahara-route-audit.json"
+  ],
+  "validation": {
+    "static": "119 current-city checks passed.",
+    "walking": "12 actual walking segments passed in final default-bake level.",
+    "visual": "Three final installed daylight views personally inspected; west window heights and second roundel corrected.",
+    "preservation": "43 owned faces/colliders replaced;9560 groups preserved.",
+    "packaging": "1575 runtime assets;739-batch fresh city bake."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/bmo-sahara-baseline/results.json",
+    "after": "build/city-exteriors/bmo-sahara-final/results.json",
+    "method": "960x540 DPR1 ultra, matching entry/roof/west views.",
+    "summary": "Baseline median16.7ms each,p9517.5/17.2/17.2; final16.7/16.7/16.8,p9517.3/17.5/21.8ms. Concurrent machine workload possible; not a locked60fps claim."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/bmo-sahara-exterior.glb": "55c5ffe74937c7ac71589683ca497e1d393db06b2a50f55894ac6bfa4044bdc4"
+    }
+  }
+}
