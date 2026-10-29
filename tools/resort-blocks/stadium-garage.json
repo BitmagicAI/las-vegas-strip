@@ -1,0 +1,234 @@
+{
+  "id": "stadium-garage",
+  "name": "Home2 adjacent Stadium District parking garage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/790044912"
+  ],
+  "claim": {
+    "issue": 282,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/282",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/283"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0992,-115.1817&heading=330&pitch=0",
+      "accessDate": "2026-10-27",
+      "imageDate": "March 2020",
+      "observed": "Close March 2020 arrival Street View inspected: ground vehicle opening plus three raised parapet bands (four parking levels including roof), open deck slots, tall striped screen with ochre accents, concrete columns, green utility cabinet, yellow bollards and clearance bar; stairs visible behind corner opening."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0996,-115.1819,87m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial inspected: large separate angled garage east/northeast of Home2, roof parking markings, stepped south corner. Map image date unavailable."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0998178,-115.1817713,87m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Full roof aerial inspected: triangular open well beside a straight ramp along the angled northeast boundary, north stair enclosure and stepped south stair corner. Current first-pass flat roof does not yet reproduce these."
+    },
+    {
+      "url": "https://www.martinharris.com/portfolio/golden-palms-hilton-home2-suites-and-marriot-towneplace-suites/",
+      "accessDate": "2026-10-27",
+      "observed": "Builder describes completed garage as four-story precast, 170 parking spaces. Supports four parking levels seen in close Street View."
+    },
+    {
+      "url": "https://design-cell.com/marriott-towneplace-suites-and-hilton-home2-suites-las-vegas-breaks-ground/",
+      "accessDate": "2026-10-27",
+      "observed": "Architect groundbreaking announcement describes planned three-story 160-space garage. Conflicts with builder completed-project account; use visible as-built four-level geometry, retain this design-stage distinction."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint confirmed way/790044912 (232 original shell faces); untagged imported 5m height is not a measured height.",
+    "Adopted ground .12m, upper deck 3.36/6.60/9.84m, parapet 1.56m: estimates from Street View, not surveyed.",
+    "Roof ramp endpoints adopted in Home2 local frame (43,-41.5) to (70,-31.5), width6m, grade~11.25%, guided by aerial. Repeated lower ramps are inferred, not verified as-built internal plans.",
+    "North stair bay local(23,-23), south(72.8,-16), width2.8m, each flight run2.9m/rise1.62m. Roof shelter and repeated lower flight layout are inferred from visible exterior/aerial, not surveyed plans."
+  ],
+  "implemented": [
+    "Installed original 9906-triangle four-level open-deck garage on mapped way/790044912: columns, concrete parapets, striped screen, parking markings and ground entrance hardware.",
+    "Northeast straight ramp and triangular roof well based on aerial, with three repeated collision ramp ascents. Repeated lower layout explicitly inferred; heights estimated.",
+    "Only232ownedplaceholder visual and collision faces removed; all9560mesh groups retain vertices/metadata, roads and neighboring hotels preserved.",
+    "632scopedchecks and40actualwalkingsegments over5out-and-backroutes pass, including each upper ramp.",
+    "Installed north/south switchback stair bays with real deck openings, midpoint landings, metal rails and a north roof shelter. Flight dimensions and hidden repetitions explicitly inferred. All84newwalkingsegments pass with landing-height audit.",
+    "Actual jeep continuous entrance-to-roof drive passed in61.7seconds through both interlevel turns, without teleporting between floors. Earlier8isolatedclearanceruns also pass.",
+    "Added parapet joints, cabinet panel joints/handles, darker metal rail finish and simple collision curtains behind each stair flight rail. 932 scoped checks pass, including 24 sideways rail rays; all84 stair walking segments pass after collision change.",
+    "Asset-local names now select scanned concrete wall/soffit/parapet detail and concrete_floor_02 on decks; rejected first paver-grid mapping after installed visual review. No shared PBR rules changed."
+  ],
+  "remaining": [
+    "Corroborate inferred repeated lower ramp layout, estimated elevations, bay spacing and marking layout.",
+    "Interior illumination remains overly flat/bright; exact service layout and hardware remain approximate.",
+    "Performance remains variable and below60fps in arrival/ramp-bottom views; do not claim target achieved.",
+    "Corroborate estimated stair bay/flight dimensions and north roof shelter details; further edge-protection checks beyond sideways rays and centreline traversal remain.",
+    "Concrete floor detail removes the incorrect paver grid but its tonal mottling is too strong at roof scale; tune asset-local material variation in a later refinement pass without changing shared PBR rules."
+  ],
+  "evidence": [
+    {
+      "type": "scoped-route-check",
+      "path": "build/strip-landmarks/stadium-garage-route-audit.json",
+      "checks": 254,
+      "failures": 0,
+      "note": "Includes actual district foundation boxes from current geographic level, plus current city and target garage collision."
+    },
+    {
+      "type": "preservation-audit",
+      "path": "build/city-exteriors/stadium-garage-preservation-audit.json",
+      "note": "9560 mesh groups retain exact vertices and metadata. Only 232 claimed shell faces removed; no roads regenerated."
+    },
+    {
+      "type": "installed-views",
+      "path": "build/city-exteriors/stadium-garage-installed",
+      "note": "Arrival, roof and entry visually inspected. Wide decks view invalid: camera inside existing elevated road. Flat lighting and absent roof ramp retained as discrepancies."
+    },
+    {
+      "type": "actual-walking",
+      "path": "build/city-exteriors/stadium-garage-walk/results.json",
+      "passed": true,
+      "segments": 16,
+      "routes": 2
+    },
+    {
+      "type": "performance",
+      "baseline": "build/city-exteriors/stadium-garage-baseline/results.json",
+      "after": "build/city-exteriors/stadium-garage-installed/results.json",
+      "note": "960x540 ultra daylight, 300 settling frames then180 measured. Arrival baseline50.1/58.6ms ->53.7/80.9, roof24.8/39.6 ->26.2/34.5. Wide deck view invalid and entry baseline was placeholder wall; no60fps or controlled regression claim."
+    },
+    {
+      "type": "package",
+      "assets": 1413,
+      "missing": 0,
+      "cityBatches": 685,
+      "typecheck": "passed",
+      "publicCheck": "0 failures; one existing inventory email warning"
+    },
+    {
+      "type": "installed-close-views",
+      "path": "build/city-exteriors/stadium-garage-close",
+      "note": "Near deck bays and ground aisle inspected; no elevated-road obstruction. Materials/lighting visibly flat."
+    },
+    {
+      "type": "ramp-installed-views",
+      "path": "build/city-exteriors/stadium-garage-ramps-installed",
+      "note": "All four daylight arrival/roof/ramp-bottom/ramp-top views inspected. Actual opening/slopes visible; overly flat interior lighting/finish remains.",
+      "medianMs": {
+        "arrival": 58,
+        "roof": 19,
+        "rampBottom": 43.5,
+        "rampTop": 17.9
+      },
+      "p95Ms": {
+        "arrival": 67.8,
+        "roof": 31.3,
+        "rampBottom": 50.4,
+        "rampTop": 36.1
+      }
+    },
+    {
+      "type": "ramp-actual-walking",
+      "path": "build/city-exteriors/stadium-garage-ramps-walk/results.json",
+      "passed": true,
+      "segments": 40,
+      "routes": 5,
+      "scopedChecks": 632
+    },
+    {
+      "type": "stairs-actual-walking",
+      "path": "build/city-exteriors/stadium-garage-stairs-walk/results.json",
+      "passed": true,
+      "segments": 84,
+      "routes": 6,
+      "scopedChecks": 908,
+      "heightAudit": "All recorded waypoint heights within0.4m of expected floor; zero failures."
+    },
+    {
+      "type": "individual-vehicle-clearance",
+      "path": "build/city-exteriors/stadium-garage-drive-centered/results.json",
+      "passed": true,
+      "runs": 8,
+      "note": "Previous installed ramp revision, before stair additions. Real jeep keyboard inputs; route starts teleported. Does not establish interlevel turns."
+    },
+    {
+      "type": "stairs-installed-views",
+      "path": "build/city-exteriors/stadium-garage-stairs-installed",
+      "note": "All6views inspected; architectural openings present. Flat/bright interior shading retained as discrepancy. Same960x540ultra daylight method. Variable shared machine load; no controlled improvement claim.",
+      "frameTimesMs": {
+        "arrival": {
+          "median": 32.3,
+          "p95": 46
+        },
+        "roof": {
+          "median": 16.6,
+          "p95": 20.4
+        },
+        "ramp-bottom": {
+          "median": 27.2,
+          "p95": 37.7
+        },
+        "ramp-top": {
+          "median": 17.1,
+          "p95": 23.4
+        },
+        "south-stairs": {
+          "median": 17.1,
+          "p95": 21.5
+        },
+        "north-stairs": {
+          "median": 18.2,
+          "p95": 22.9
+        }
+      }
+    },
+    {
+      "type": "continuous-vehicle-route",
+      "path": "build/city-exteriors/stadium-garage-drive-continuous/results.json",
+      "passed": true,
+      "elapsedSeconds": 61.7,
+      "note": "Actual keyboard-driven jeep. Single initial placement; allthreeascents and bothinterlevelturns continuously driven. Final chassisheight10.397m matches roof9.84m."
+    },
+    {
+      "type": "finish-stair-walking",
+      "path": "build/city-exteriors/stadium-garage-finish-walk/results.json",
+      "passed": true,
+      "segments": 84,
+      "routes": 6,
+      "scopedChecks": 932
+    },
+    {
+      "type": "final-finish-installed",
+      "path": "build/city-exteriors/stadium-garage-concrete-installed",
+      "viewsInspected": 6,
+      "frameTimesMs": {
+        "arrival": {
+          "median": 64.6,
+          "p95": 93.2
+        },
+        "roof": {
+          "median": 29.1,
+          "p95": 32
+        },
+        "ramp-bottom": {
+          "median": 52.7,
+          "p95": 78.8
+        },
+        "ramp-top": {
+          "median": 32.7,
+          "p95": 36
+        },
+        "south-stairs": {
+          "median": 29.6,
+          "p95": 35.2
+        },
+        "north-stairs": {
+          "median": 30.4,
+          "p95": 34.8
+        }
+      },
+      "note": "Same960x540ultra daylight method. All six views inspected. Concrete floor mottling too strong; interiors overly flat. Variable shared-machine results, several views materially slower than prior pass; performance unresolved, no60fps or regression-free claim."
+    }
+  ],
+  "nextPass": {
+    "priority": "Refine deck tonal variation and interior shading; investigate performance under controlled load. Corroborate dimensions/layout. City-wide work advances to claimed Motel6 task284.",
+    "checkpoint": "Installed9906triangles;932scopedchecks;84actualstairsegments pass; final6daylightviewsinspected;1413assets0missing,current685batchbake. Prior61.7secondcontinuousjeepdrive retained, circulationunchanged."
+  }
+}
