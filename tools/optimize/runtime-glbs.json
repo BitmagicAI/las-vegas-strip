@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T09:46:29.127Z",
- "totalBytes": 3602493868,
- "count": 762,
+ "generated": "2026-10-29T10:29:15.919Z",
+ "totalBytes": 3604469916,
+ "count": 764,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 346962476,
+   "bytes": 346961660,
    "preset": "level",
    "overrides": []
   },
@@ -3024,6 +3024,24 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "streamed on approach",
    "bytes": 1224220,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/vape-pirates-sahara-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 319048,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/vape-pirates-sahara-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 1657816,
    "preset": "level",
    "overrides": []
   },
