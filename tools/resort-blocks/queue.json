@@ -1462,9 +1462,15 @@
     {
       "id": "kung-fu-plaza",
       "name": "Kung Fu Thai & Chinese Restaurant",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "kung-fu-plaza.json"
+    },
+    {
+      "id": "wahoos-flamingo",
+      "name": "Wahoo\u2019s Fish Taco \u2014 Flamingo",
+      "status": "active",
+      "record": "wahoos-flamingo.json"
     }
   ],
-  "active": "kung-fu-plaza"
+  "active": "wahoos-flamingo"
 }
