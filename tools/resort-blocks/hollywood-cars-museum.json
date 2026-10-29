@@ -1,0 +1,179 @@
+{
+  "id": "hollywood-cars-museum",
+  "name": "Hollywood Cars Museum warehouse",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/225705142"
+  ],
+  "claim": {
+    "issue": 286,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/286",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/287"
+  },
+  "sources": [
+    {
+      "url": "https://hollywoodcarsmuseum.com/contact-hollywood-cars-museum/",
+      "observed": "Official address5115DeanMartinDrive#905."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6OE_i_aM_-7TQu6pvH3C1w&heading=300&pitch=0",
+      "observed": "December2022 south approach identifies museum south end of north-southwarehouse. Tan verticalmetal siding, mixedblockend, ramp, glazedentry, hedge andbanner."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0969671,-115.1825704,347m/data=!3m1!1e3",
+      "observed": "Aerial confirms museum location west of motel southneighbor; surveynameway225705143 is misleading."
+    },
+    {
+      "url": "https://www.vegas.com/attractions/on-the-strip/hollywood-cars-museum/",
+      "observed": "Exterior photo: tan verticalmetal siding, glazeddoubleentry, broadbanners, clippedhedges. No reference media copied into assets."
+    }
+  ],
+  "uncertainDimensions": [
+    "Height, sidingpitch, doorway/rampdimensions inferred from photos, notsurveyed.",
+    "Exact exhibit plan and tenant subdivision unresolved; no full publicinterior claim.",
+    "OSM museumname is onwrong neighboringway225705143; do not remove that building."
+  ],
+  "implemented": [
+    "Original 13,758-triangle exterior: mapped warehouse, ribbed metal siding, shallow gable roof, west masonry bay, south signage/glazing, west approach ramp, hedge beds and roof equipment. Dimensions and hidden service positions inferred.",
+    "South frontage now follows the angled mapped wall; misplaced bounding-edge facade and west-ramp obstruction corrected."
+  ],
+  "remaining": [
+    "Generic signage, simplified hedges and missing mature tree/novelty display car need refinement.",
+    "Service-door positions and hidden elevations remain unverified; side walls are sparse and corrugation aliases at distance.",
+    "Existing generic courtyard paving/drive layout differs from reference; no unrelated road regeneration performed.",
+    "Museum entrance is closed and exterior-only. Exhibit layout and original display assets are unresolved.",
+    "Performance below60fps and variable; no controlled regression-free claim."
+  ],
+  "evidence": [
+    {
+      "type": "installed-baseline",
+      "path": "build/city-exteriors/hollywood-cars-museum-baseline",
+      "viewsInspected": 3,
+      "frameTimesMs": {
+        "south-entry": {
+          "median": 39.6,
+          "p95": 43.3
+        },
+        "east-side": {
+          "median": 31.9,
+          "p95": 36
+        },
+        "roof": {
+          "median": 32.5,
+          "p95": 37.1
+        }
+      },
+      "note": "960x540ultra neutraldaylight300settle180measure. Current building is undetailed whitewarehouse. Sharedmachine, descriptiveonly."
+    },
+    {
+      "type": "source-draft",
+      "path": "build/city-exteriors/museum-source-review",
+      "viewsInspected": 2,
+      "triangles": 13630,
+      "note": "Roof split at ridge; entrance/ramp/signs visible. South eave still reads as dark seam; inspect normals/closure before installation. Sparse draft, not final exterior."
+    },
+    {
+      "type": "source-and-preservation",
+      "path": "build/city-exteriors/hollywood-cars-museum-preservation.json",
+      "note": "Source entrance and roof re-inspected. 66 scoped checks pass with current city collision. Only 10 owned placeholder/collision triangles removed; all 9560 groups retain vertices/metadata and other faces in original order."
+    },
+    {
+      "type": "installed-first-pass",
+      "path": "build/city-exteriors/hollywood-cars-museum-installed",
+      "viewsInspected": 5,
+      "walk": "build/city-exteriors/hollywood-cars-museum-walk/results.json",
+      "note": "16 actual walking segments pass. Five installed daylight views inspected; close views found roof seams extending beyond angled front edge. Corrected source clips seam lengths to footprint; corrected installed verification pending.",
+      "performance": [
+        {
+          "name": "south-entry",
+          "eye": [
+            -855,
+            3,
+            2142
+          ],
+          "target": [
+            -866,
+            3,
+            2119
+          ],
+          "p50": 40,
+          "p95": 52
+        },
+        {
+          "name": "east-side",
+          "eye": [
+            -840,
+            9,
+            2100
+          ],
+          "target": [
+            -865,
+            3,
+            2075
+          ],
+          "p50": 31.100000023841858,
+          "p95": 38.800000071525574
+        },
+        {
+          "name": "roof",
+          "eye": [
+            -826,
+            62,
+            2140
+          ],
+          "target": [
+            -866,
+            3,
+            2070
+          ],
+          "p50": 24.899999976158142,
+          "p95": 31.299999952316284
+        }
+      ]
+    },
+    {
+      "type": "final-installed-close",
+      "path": "build/city-exteriors/hollywood-cars-museum-final-close",
+      "viewsInspected": 2,
+      "note": "Roof-seam projections gone. Collision unchanged from16segmentwalk.1419assets0missing;687batchbakecurrent.",
+      "performance": [
+        {
+          "name": "ramp",
+          "eye": [
+            -883,
+            2.2,
+            2125
+          ],
+          "target": [
+            -873,
+            1.5,
+            2121
+          ],
+          "p50": 56.59999990463257,
+          "p95": 63.89999997615814
+        },
+        {
+          "name": "entry",
+          "eye": [
+            -870,
+            2,
+            2127
+          ],
+          "target": [
+            -872.7,
+            1.6,
+            2120.8
+          ],
+          "p50": 34.200000047683716,
+          "p95": 43.60000002384186
+        }
+      ]
+    }
+  ],
+  "nextPass": {
+    "priority": "Retain detailing/interior/performance discrepancies for later refinement. Continue next claimed building288.",
+    "checkpoint": "Finalmuseum closeviews inspected afterseamcorrection; allpipelines complete.66scopedchecks/16walkingsegments passed. Sources and runtime installed; no fullmuseum/photorealcompletion claim."
+  }
+}
