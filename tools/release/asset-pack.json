@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1557,
- "bytes": 1143883642,
+ "count": 1561,
+ "bytes": 1145704401,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19841892,
-   "sha256": "4d94f0a1c2f891a4ccf914555a4aea0cafe0661c7adab2053c4a07a20782a0b2",
+   "bytes": 19896149,
+   "sha256": "1c99d7b68f70fd3ce3d4cd7b9a75328847e6df7d00372299f7e05d2fd3aedf81",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13054856,
-   "sha256": "7d158ed7cee10461e848a5754d35f82e222aeaed44e60bd6a49ccabe648709c4",
+   "bytes": 13052492,
+   "sha256": "2b90b6305726bda35cc9461eb976509b3fae126698d3047db412ede655675213",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109720364,
-   "sha256": "cba2e7b9e5bc6aea05590f07708aa2c67a6ea82c3d5b6fb143b043c83941e2fd",
+   "bytes": 109715216,
+   "sha256": "1acb6dca8d8858b9ecf4eee03d6b9dbef3f941f0c985d160a7c136f657854ca6",
    "kind": "optimized"
   },
   {
@@ -7013,6 +7013,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/hilton-garden-city-center-exterior-collision.bin",
+   "bytes": 1388,
+   "sha256": "48c229c13e3517a966024ddd2dee430650daab02fe4d88f3bd7ceb29e21677a8",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/hilton-garden-city-center-exterior.glb",
+   "bytes": 1552836,
+   "sha256": "651bb66704612e749975a957cb337b633b35a6afe4ed7ed4c43fd7fe169420e3",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/hilton-garden-city-center-interior-collision.bin",
+   "bytes": 368,
+   "sha256": "1d2b008083b799c57e5c81ea4670b12d4021c32e48dac55f5b924d8ed23efb44",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/hilton-garden-city-center-interior.glb",
+   "bytes": 218740,
+   "sha256": "55d8860ab4d0aa0b44c500d11b1eea738565fec18f33330e2921ff73f6b5da67",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/hofbrauhaus-exterior-collision.bin",
    "bytes": 292,
    "sha256": "788a43c8f8599b0da5f83067c350a7e6bfd0de118465c95d1e86e34fc6e3ba3d",
@@ -9150,8 +9174,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 376784,
-   "sha256": "9ae8898b9df89ba45d32673ba769faf36eea867b7db898b09b646fce3162084f",
+   "bytes": 377466,
+   "sha256": "6e2c83cc280ec5ff3d8044fe794573b6ff848af6b6f940e08237622c5b195301",
    "kind": "original"
   },
   {

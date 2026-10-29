@@ -1,0 +1,218 @@
+{
+  "id": "hilton-garden-city-center",
+  "name": "Hilton Garden Inn City Center",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/494974483",
+    "way/495532040",
+    "way/495532043"
+  ],
+  "claim": {
+    "issue": 381,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/381",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/382"
+  },
+  "sources": [
+    {
+      "url": "https://www.hilton.com/en/hotels/laslggi-hilton-garden-inn-las-vegas-city-center/gallery/",
+      "provider": "Hilton",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Personally inspected exterior image1, pool6, desk10, lounge11. Six-storey gray/ivory tower, low brick glazed lobby/lantern, beige desk/dark wood canopy, relief wall, marble fireplace, gray seating/orange cushions/teal stools, poolhouse and rounded pool."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Hilton+Garden+Inn+4655+Dean+Martin+Las+Vegas",
+      "provider": "Google Maps",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Aerial: southern east-west tower, lobby extends north from west end, poolhouse to west. Garage494978507 separate and retained. No extraction."
+    }
+  ],
+  "uncertainDimensions": [
+    "Six-storey height fitted; mapped13.3m conflicts with photographs",
+    "Public lobby layout fitted; no measured interior plan"
+  ],
+  "remaining": [
+    "Full pool basin/deck/landscaping and private guest floors not implemented",
+    "Photographed lobby adapted into fitted public room; no measured plan, full lounge/lantern connections uncertain",
+    "Facade/window proportions, sign placement, stone/wood/furniture material fidelity and unseen sides require refinement; not photorealistic completion",
+    "South exterior35.3msmedian/56msp95 vs baseline35.9/54.3; interior entry35.7/51.9 and lounge35.5/56.8. Cause unresolved; not locked60fps."
+  ],
+  "nextPass": {
+    "priority": "Site/fidelity and slow-view performance refinement",
+    "checkpoint": "Scoped original tower/lobby/poolhouse and public reception/lounge installed and visually inspected;82static/16walkingchecks pass. Continue next unclaimed building with all discrepancies retained."
+  },
+  "triangles": 59023,
+  "performance": {
+    "conditions": "Warm960x540DPR1ultra; same exterior cameras before/after. No preexisting public interior baseline.",
+    "baseline": [
+      {
+        "name": "front",
+        "eye": [
+          -796,
+          2,
+          1171
+        ],
+        "target": [
+          -817,
+          5,
+          1181
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.5
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -751,
+          57,
+          1245
+        ],
+        "target": [
+          -805,
+          10,
+          1199
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.300000071525574
+      },
+      {
+        "name": "south",
+        "eye": [
+          -793,
+          2,
+          1234
+        ],
+        "target": [
+          -793,
+          11,
+          1218
+        ],
+        "p50": 35.89999997615814,
+        "p95": 54.300000071525574
+      }
+    ],
+    "after": [
+      {
+        "name": "front",
+        "eye": [
+          -796,
+          2,
+          1171
+        ],
+        "target": [
+          -817,
+          5,
+          1181
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.300000071525574
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -751,
+          57,
+          1245
+        ],
+        "target": [
+          -805,
+          10,
+          1199
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.199999928474426
+      },
+      {
+        "name": "south",
+        "eye": [
+          -793,
+          2,
+          1234
+        ],
+        "target": [
+          -793,
+          11,
+          1218
+        ],
+        "p50": 35.299999952316284,
+        "p95": 56
+      }
+    ],
+    "interior": [
+      {
+        "name": "desk",
+        "eye": [
+          -813,
+          1.9,
+          1184
+        ],
+        "target": [
+          -819,
+          1.7,
+          1182
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.399999976158142
+      },
+      {
+        "name": "entry",
+        "eye": [
+          -816,
+          1.9,
+          1184
+        ],
+        "target": [
+          -802,
+          1.7,
+          1184
+        ],
+        "p50": 35.700000047683716,
+        "p95": 51.89999997615814
+      },
+      {
+        "name": "lounge",
+        "eye": [
+          -811,
+          1.9,
+          1184
+        ],
+        "target": [
+          -810,
+          1.2,
+          1181
+        ],
+        "p50": 35.5,
+        "p95": 56.800000071525574
+      }
+    ]
+  },
+  "viewsInspected": [
+    "build/city-exteriors/hilton-garden-city-center-final/hilton-garden-south.png",
+    "build/city-exteriors/hilton-garden-city-center-final/hilton-garden-roof.png",
+    "build/city-exteriors/hilton-garden-city-center-final/hilton-garden-front.png",
+    "build/city-exteriors/hilton-garden-city-center-inside-final/hilton-garden-desk.png",
+    "build/city-exteriors/hilton-garden-city-center-inside-final/hilton-garden-entry.png",
+    "build/city-exteriors/hilton-garden-city-center-inside-final/hilton-garden-lounge.png"
+  ],
+  "tests": [
+    "82currentcity static route checks pass",
+    "16 actual walking segments pass, lobby entrance/return and lounge approach",
+    "323owned visual/collider triangles removed;9560groups preserved",
+    "Six final installed daylight views inspected;734batch fresh bake,1561runtimeassets",
+    "Type/record/public checks pass; preexisting public-email warning only"
+  ],
+  "optimizedMiB": {
+    "exterior": 1.48,
+    "interior": 0.21
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/hilton-garden-city-center-exterior-collision.bin": "48c229c13e3517a966024ddd2dee430650daab02fe4d88f3bd7ceb29e21677a8",
+      "runtime-assets/strip-landmarks/hilton-garden-city-center-exterior.glb": "651bb66704612e749975a957cb337b633b35a6afe4ed7ed4c43fd7fe169420e3",
+      "runtime-assets/strip-landmarks/hilton-garden-city-center-interior-collision.bin": "1d2b008083b799c57e5c81ea4670b12d4021c32e48dac55f5b924d8ed23efb44",
+      "runtime-assets/strip-landmarks/hilton-garden-city-center-interior.glb": "55d8860ab4d0aa0b44c500d11b1eea738565fec18f33330e2921ff73f6b5da67"
+    }
+  }
+}
