@@ -1,7 +1,7 @@
 {
   "id": "hughes-retail",
   "name": "365 Hughes Center retail",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/511850834",
     "way/1421198546",
@@ -14,7 +14,8 @@
     "issue": 361,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/361",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/362"
   },
   "sources": [
     {
@@ -36,6 +37,10 @@
     {
       "url": "https://images1.showcase.com/d2/oAgjwbJ2cSUT59M5_8syxteIOs9F6WSX3_jcnnaLcUg/document.pdf",
       "observed": "Broker roster and formerpizza floorplan text read; imagery not yet retrieved. Roster conflicts with newer mapped vacancies."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chipotle+365+Hughes+Center+Drive+Las+Vegas",
+      "observed": "Zia Qureshi May2026 photo CIABIhC9iazNK4nppLXRM1vpGvu8 personally inspected: current round panel facade, illuminated lettering, tall glass bays, shallow shades and patio planters. Confirms older2016 architecture."
     }
   ],
   "uncertainDimensions": [
@@ -43,12 +48,29 @@
     "Habit/Jamba/Pieology occupancy conflicts across sources; verify before permanent signs."
   ],
   "remaining": [
-    "Resolve middle frontage references",
-    "Author original exterior and reference-supported public interior",
-    "Targeted install and preservation, visual/physical/performance validation"
+    "Verify middle tenant identities; currently only suite numbers",
+    "Reference-supported public interiors still absent; storefronts solid backed",
+    "Refine side/service facades, landscaping, patio boundaries, sign typography and surface detail",
+    "Heights, fixtures and facade dimensions fitted, not measured"
   ],
   "nextPass": {
-    "priority": "Reference research then model",
-    "checkpoint": "Claim361 confirmed. Aerial and two end storefront photos inspected; no geometry edits yet."
+    "priority": "Reference-supported rooms and facade refinement",
+    "checkpoint": "Verified scoped exterior pass installed. Corrected flat projecting sign, lower drum cladding, roof striping and window clearance.161 static/10 actual walking segments pass; final960x540ultra median16.6\u201316.7ms,p9517.8\u201318ms. Not photorealistic completion."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/hughes-retail-baseline/results.json",
+    "initial": "build/city-exteriors/hughes-retail-initial/results.json",
+    "after": "build/city-exteriors/hughes-retail-refined/results.json"
+  },
+  "validation": {
+    "triangles": 10578,
+    "optimizedMiB": 0.64,
+    "staticChecks": 161,
+    "walkingSegments": 10,
+    "walk": "build/city-exteriors/hughes-retail-walk-refined/results.json",
+    "preservation": "build/city-exteriors/hughes-retail-preservation.json",
+    "views": "Three initial and three corrected installed daylight views personally inspected",
+    "bakeBatches": 724,
+    "packageAssets": 1529
   }
 }
