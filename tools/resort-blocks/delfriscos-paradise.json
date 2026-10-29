@@ -1,0 +1,41 @@
+{
+  "id": "delfriscos-paradise",
+  "name": "Del Friscos Paradise",
+  "status": "active",
+  "mappedIds": [
+    "way/205741855"
+  ],
+  "claim": {
+    "issue": 365,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/365",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.delfriscos.com/location/del-friscos-double-eagle-steakhouse-las-vegas-nv/",
+      "observed": "Official address3925Paradise and eight private dining rooms; no measured plan available."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.11805,-115.15555,20z/data=!3m1!1e3",
+      "observed": "Personally inspected aerial: western covered arrival, pitched central gray roof, flat north/south service sections and roof equipment."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Del+Friscos+3925+Paradise+Las+Vegas",
+      "observed": "SatoshiYAGISAWA Dec2023 entrance photo CIHM0ogKEICAgIC17pWT7wE inspected: shallow white gable/darkfascia,paneled columns,darkbases/capitals,coffered ceiling/pendants,palms,shutters,red drapery. JMAC Oct2026 dining photo inspected: dark paneled walls, tall brown tufted banquettes, pale tablecloths, gold chairs, starburst pendants. Full layout unknown."
+    }
+  ],
+  "uncertainDimensions": [
+    "All heights and detail dimensions fitted, not measured.",
+    "Room layout insufficiently evidenced; do not invent private areas."
+  ],
+  "remaining": [
+    "Author and inspect installed scoped exterior",
+    "Verify routes, current city preservation and matching performance",
+    "Further interior reference needed"
+  ],
+  "nextPass": {
+    "priority": "Original exterior reconstruction",
+    "checkpoint": "Claim365 confirmed; aerial and entrance/dining photo references inspected. No geometry authored yet."
+  }
+}
