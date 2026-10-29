@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refuses runtime models that are not optimized the way the city ships them. The owner's rule (2026-10-28): every
+"""Refuses runtime models that are not optimized the way the city ships them. The owner's rule (2026-10-29): every
 submission runs the optimizing-assets skill (tools/optimize/), so no model lands now and needs optimizing later.
 
   python3 tools/optimize/check-runtime-glbs.py                    # every GLB in runtime-assets/

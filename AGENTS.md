@@ -34,7 +34,7 @@ the project has been run; their technical rules apply to everyone.
 
 ## Pull requests (every agent)
 
-The owner's rules for submissions (2026-10-28, after a stack of 99 one-building pull requests):
+The owner's rules for submissions (2026-10-29, after a stack of 99 one-building pull requests):
 
 - **Start each pull request from the current main** (`git fetch origin && git switch -c task/<task-id> origin/main`).
   Do not stack one on another unmerged branch unless the owner asks; if you must, stack at most three.

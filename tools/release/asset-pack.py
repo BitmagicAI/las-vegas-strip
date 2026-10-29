@@ -182,7 +182,7 @@ def listing():
 
 def unoptimized(files):
     """Runtime GLBs in the listing that break tools/optimize/check-runtime-glbs.py's rules: every submission ships its
-    models optimized (the owner, 2026-10-28)."""
+    models optimized (the owner, 2026-10-29)."""
     import importlib.util
     spec = importlib.util.spec_from_file_location('check_runtime_glbs', ROOT / 'tools/optimize/check-runtime-glbs.py')
     rules = importlib.util.module_from_spec(spec)
