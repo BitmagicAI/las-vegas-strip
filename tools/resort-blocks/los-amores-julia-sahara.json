@@ -1,0 +1,100 @@
+{
+  "id": "los-amores-julia-sahara",
+  "name": "Los Amores de Julia Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/276426262"
+  ],
+  "claim": {
+    "issue": 403,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/403",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/404"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Culichi+Town+2400+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "imageDate": "September2025",
+      "provider": "Culichitown Las Vegas owner",
+      "photoId": "CIABIhATP2JPyiTOAw6r0F1YVNae",
+      "observed": "Personally inspected white irregular stone/dark joints, layered entry gables, charcoal barrel tile roofs, stucco wings/dark windows, round gable vent, arched entrance, square chimneys, red curb and palms. Historical branding; listing now permanently closed."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1447405,-115.1750669,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected east entrance projection, pitched dark perimeter roof with flat HVAC well, east/north parking, landscaped Sahara frontage. Label identifies successor Los Amores de Julia."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Los+Amores+de+Julia+2400+W+Sahara",
+      "accessed": "2026-10-29",
+      "imageDate": "October2026",
+      "provider": "Blanca Cabada",
+      "photoId": "CIABIhB1Kk8bkpzhjCX-eindxNSY",
+      "observed": "Personally inspected wood tables, tan leather/rattan/blackwoven chairs, dark exposed ceiling, woven tan overhead panels, hanging foliage/stringlights/wovenpendants, brick arched public tortilla counter, fridge and TVs."
+    },
+    {
+      "url": "https://www.losamoresdejulia.com/",
+      "accessed": "2026-10-29",
+      "observed": "Official Las Vegas opening October16,2026; Maps confirms2400WestSahara current venue. Old Culichitown website redirects to blank lander."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights and public layout fitted from photographs, no measured floor plan.",
+    "Current branding and exterior alterations require further reference comparison; 2025 photo must not be treated as current signage."
+  ],
+  "components": [
+    {
+      "id": "exterior-roof-entry",
+      "status": "implemented"
+    },
+    {
+      "id": "public-dining-counter",
+      "status": "implemented"
+    },
+    {
+      "id": "public-approach",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "Full site parking, paving and landscape remain incomplete; side/rear service details need further reference verification.",
+    "Current exterior sign placement and rebranding changes are fitted; historical 2025 facade reference is distinguished from October2026 public interior.",
+    "Public room dimensions and entrance vestibule are inferred; private rooms excluded.",
+    "Flat finishes, sparse counter details, simplified furniture/foliage and bare entry walls need further fidelity work; not photorealistic completion."
+  ],
+  "nextPass": {
+    "priority": "Full site and finer exterior/public-room fidelity",
+    "checkpoint": "Final installed exterior/public dining verified; six views inspected,138static and18walking checks passed. Roof tile cap endpoints corrected to local roof slope."
+  },
+  "implemented": [
+    "Original118082-triangle exterior/public dining: layered stone entry gables, charcoal tiled roof perimeter, flat equipment well, dark windows, entry ramp, dining furniture, woven shades/canopies, foliage and brick public tortilla counter.",
+    "Corrected shallow counter arch, pendant geometry, west window placement and floating roof tile endpoints. Existing shared venue lights; no runtime source changes."
+  ],
+  "evidence": [
+    "build/city-exteriors/los-amores-julia-sahara-baseline/results.json",
+    "build/city-exteriors/los-amores-julia-sahara-final/results.json",
+    "build/city-exteriors/los-amores-julia-sahara-inside-final/results.json",
+    "build/city-exteriors/los-amores-julia-sahara-walk-final/results.json",
+    "build/city-exteriors/los-amores-julia-sahara-preservation.json"
+  ],
+  "validation": {
+    "static": "138 current-city checks passed.",
+    "walking": "18 final default-bake segments passed, entry and public counter cross aisle.",
+    "visual": "Six final installed daylight views personally inspected.",
+    "preservation": "46 owned faces/matching colliders replaced;9560 groups preserved.",
+    "packaging": "745-batch current bake,1595assets; type and Bitmagic checks passed."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra matching front/roof/south cameras; other-session workloads preserved.",
+    "summary": "Baseline median16.9/16.7/16.7,p9529.4/26.6/27.1ms; final16.7/16.7/16.7,p9517.5/17.7/18.5ms. Interior median16.6/16.5/16.5,p9518.6/18.6/18.5ms. No locked60fps claim."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/los-amores-julia-sahara-exterior-collision.bin": "640c8043a349d2b6eaf48ee5a706f8c0a02e78bec9cda03732c830250f92b437",
+      "runtime-assets/strip-landmarks/los-amores-julia-sahara-interior.glb": "536eb3fe052bc3d048d4fcc1665e673e4a7141e9882fa5422fbb6c758b444237",
+      "runtime-assets/strip-landmarks/los-amores-julia-sahara-interior-collision.bin": "3a759870846a2d4c190b39e87828ff123673532db8cce1f5715bf0e4f54bbf39",
+      "runtime-assets/strip-landmarks/los-amores-julia-sahara-exterior.glb": "fdf38a009b3e034a541c14301bfc86ca3c2b212894920ea5a4a93f3228603175"
+    }
+  }
+}
