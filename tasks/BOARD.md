@@ -304,7 +304,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-mi-ranchito-sahara` | M | P3 | 4 | Refine the exterior of Mi Ranchito Sahara |
 | `ext-vape-pirates-sahara` | M | P3 | 3 | Refine the exterior of Vape Pirates Sahara |
 | `ext-los-amores-julia-sahara` | M | P3 | 4 | Refine the exterior of Los Amores de Julia Sahara |
-| `ext-bourbon-street-sahara` | S | P3 | 2 | Refine the exterior of Bourbon Street Sahara |
+| `ext-bourbon-street-sahara` | M | P3 | 3 | Refine the exterior of Bourbon Street Sahara |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

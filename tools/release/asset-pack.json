@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1595,
- "bytes": 1156507174,
+ "count": 1599,
+ "bytes": 1157937060,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20039570,
-   "sha256": "dba5e49fec3ae3dab57694b4c517f15db0bfe1727c73116030cd8b21ee2187d9",
+   "bytes": 20059770,
+   "sha256": "091dc3e21ed6cd8efc041992e7ed08e9c8455bbb1ef1356f5c9073d28573aabd",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13050076,
-   "sha256": "33d4cbdf312e2ddc4bac51034aa6cf19d6c419163ef56c86f09ba5d6dc3c08b0",
+   "bytes": 13050024,
+   "sha256": "a7400844d15680e0cc1d716ff20fee6c861daa3657ba74eb11bf2c5ddad38de6",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109703488,
-   "sha256": "3e9f4d2a14f300e6803cfe3df615d874ccb9f4d43906999ca482b47edaa9e56d",
+   "bytes": 109703056,
+   "sha256": "9db451792f9ab47fab5e71ef177b2a04503944237c041567294a9ba8b49c03f9",
    "kind": "optimized"
   },
   {
@@ -5813,6 +5813,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/bourbon-street-sahara-exterior-collision.bin",
+   "bytes": 504,
+   "sha256": "e7652ec9dd583408638f79a1d739fb3dd4edb76a6b2966b7a6e448575e74fae6",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/bourbon-street-sahara-exterior.glb",
+   "bytes": 1042912,
+   "sha256": "33db51fc1917ef92448ee6ac55988124b70b1f5cc962b73d2e9ec165ffe8507a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/bourbon-street-sahara-interior-collision.bin",
+   "bytes": 512,
+   "sha256": "52d15fd8f414e16e33401b4c18838e98cec00cdfe2a06f8aef507c0f2aa21a5d",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/bourbon-street-sahara-interior.glb",
+   "bytes": 365508,
+   "sha256": "38500057227df491959c91a17e47acd9749916beed5560860354b61a7263275a",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/buca-flamingo-exterior-collision.bin",
    "bytes": 800,
    "sha256": "caf845399341b3cb0b6af7a31df7e03cdcd797ae327e2910ebc09b1eff9e292b",
@@ -9366,8 +9390,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 383450,
-   "sha256": "31aee5142f56ca58626197ef911d424aa8ad681b586d80c966385a53f7b1f2aa",
+   "bytes": 384184,
+   "sha256": "aa2f8ccd176460c05440011e1f8badb797c687b785fecd974d445b3a05ea8c54",
    "kind": "original"
   },
   {

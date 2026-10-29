@@ -15500,13 +15500,14 @@
    "id": "ext-bourbon-street-sahara",
    "title": "Refine the exterior of Bourbon Street Sahara",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Build/install and inspect reference-supported exterior and public room; verify routes, performance and packaging.",
-    "Full site and exact room arrangement need further references; private service spaces excluded."
+    "Full parking/landscape and side/rear service details remain incomplete.",
+    "Elevations, tower dimensions and public room arrangement are inferred from dated photos and mapped footprint; current alterations unverified.",
+    "Sparse wall decor, simplified furniture/foliage and flat materials need further fidelity work; not photorealistic completion. Private rooms excluded."
    ],
    "record": "tools/resort-blocks/bourbon-street-sahara.json",
    "buildings": [],
@@ -15516,9 +15517,19 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
+     "runtime-assets/strip-landmarks/bourbon-street-sahara-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/bourbon-street-sahara-exterior.glb",
+     "runtime-assets/strip-landmarks/bourbon-street-sahara-interior-collision.bin",
+     "runtime-assets/strip-landmarks/bourbon-street-sahara-interior.glb",
      "tools/resort-blocks/bourbon-street-sahara.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-bourbon-street-sahara.mjs",
+     "tools/city-exteriors/install-bourbon-street-sahara.py",
+     "tools/strip-landmarks/export_bourbon_street_sahara.py",
+     "tools/city-exteriors/check-bourbon-street-sahara-preservation.py",
+     "tools/strip-landmarks/bourbon_street_sahara.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

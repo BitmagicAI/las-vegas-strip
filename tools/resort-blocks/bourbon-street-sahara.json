@@ -1,14 +1,15 @@
 {
   "id": "bourbon-street-sahara",
   "name": "Bourbon Street Sahara",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/276426298"
   ],
   "claim": {
     "issue": 405,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/405"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/405",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/406"
   },
   "sources": [
     {
@@ -47,23 +48,53 @@
   "components": [
     {
       "id": "facades-roof",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "west-approach",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "public-pool-room",
-      "status": "planned"
+      "status": "implemented"
     }
   ],
   "remaining": [
-    "Build/install and inspect reference-supported exterior and public room; verify routes, performance and packaging.",
-    "Full site and exact room arrangement need further references; private service spaces excluded."
+    "Full parking/landscape and side/rear service details remain incomplete.",
+    "Elevations, tower dimensions and public room arrangement are inferred from dated photos and mapped footprint; current alterations unverified.",
+    "Sparse wall decor, simplified furniture/foliage and flat materials need further fidelity work; not photorealistic completion. Private rooms excluded."
   ],
   "nextPass": {
-    "priority": "Exterior and public pool room",
-    "checkpoint": "Issue405claimconfirmed;400openissue/PRscan found no conflicting claim;Amores403releaseconfirmed aftered681a2push."
+    "priority": "Full site and finer exterior/public room fidelity",
+    "checkpoint": "Six final installed daylight views personally inspected;132static/18actual walking segments passed; tower window obstruction and south cladding corrected."
+  },
+  "implemented": [
+    "Original37000-triangle exterior/public pool room: cream/brick/wood frontage, striped awnings, green hip tower, ribbed canopy and ramp, two detailed pool tables, original carpet and hanging shades.",
+    "31 owned shell faces/matching colliders replaced;9560groups preserved. Existing venue lighting; no runtime source changes."
+  ],
+  "evidence": [
+    "build/city-exteriors/bourbon-street-sahara-baseline/results.json",
+    "build/city-exteriors/bourbon-street-sahara-final/results.json",
+    "build/city-exteriors/bourbon-street-sahara-inside-final/results.json",
+    "build/city-exteriors/bourbon-street-sahara-walk-final/results.json",
+    "build/city-exteriors/bourbon-street-sahara-preservation.json"
+  ],
+  "validation": {
+    "static": "132 current-city checks passed",
+    "walking": "18 final default-bake segments passed",
+    "visual": "Six final installed daylight views personally inspected",
+    "packaging": "746-batch current bake,1599assets; type/Bitmagic/public checks passed (existing email warning only)."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra matching west/roof/south views; other-session workloads preserved.",
+    "summary": "Baseline median16.7/16.6/16.7,p9518.8/19.4/19.4ms. Final16.7/16.6/16.7,p9517.6/18.0/17.6ms. Interior16.6/16.7/16.7,p9517.6/17.6/18.3ms. No locked60claim."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/bourbon-street-sahara-exterior.glb": "33db51fc1917ef92448ee6ac55988124b70b1f5cc962b73d2e9ec165ffe8507a",
+      "runtime-assets/strip-landmarks/bourbon-street-sahara-interior-collision.bin": "52d15fd8f414e16e33401b4c18838e98cec00cdfe2a06f8aef507c0f2aa21a5d",
+      "runtime-assets/strip-landmarks/bourbon-street-sahara-interior.glb": "38500057227df491959c91a17e47acd9749916beed5560860354b61a7263275a",
+      "runtime-assets/strip-landmarks/bourbon-street-sahara-exterior-collision.bin": "e7652ec9dd583408638f79a1d739fb3dd4edb76a6b2966b7a6e448575e74fae6"
+    }
   }
 }
