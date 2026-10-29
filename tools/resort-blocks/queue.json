@@ -1580,9 +1580,15 @@
     {
       "id": "speedee-mart-paradise",
       "name": "Speedee Mart Paradise Road",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "speedee-mart-paradise.json"
+    },
+    {
+      "id": "seven-eleven-paradise",
+      "name": "7-Eleven Paradise Road",
+      "status": "active",
+      "record": "seven-eleven-paradise.json"
     }
   ],
-  "active": "speedee-mart-paradise"
+  "active": "seven-eleven-paradise"
 }

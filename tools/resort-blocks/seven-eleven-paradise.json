@@ -1,0 +1,375 @@
+{
+  "id": "seven-eleven-paradise",
+  "name": "7-Eleven Paradise Road",
+  "status": "active",
+  "mappedIds": [
+    "way/390004000",
+    "way/1423935197"
+  ],
+  "claim": {
+    "issue": 342,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/342",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/343"
+  },
+  "sources": [
+    {
+      "url": "https://www.7-eleven.com/locations/nv/las-vegas/3716-south-paradise-rd-29658",
+      "observed": "Official location corroborated with Maps address."
+    },
+    {
+      "url": "https://www.google.com/maps/search/7-Eleven+3716+Paradise+Road+Las+Vegas",
+      "observed": "January 2026 Nils Hunerfurst exterior and June 2023 MarkRobert Murphy Sr photo: continuous white fascia with orange/green/red bands, black canopy columns, fuel pumps, high storefront glazing. February 2025 Barbara Hellein public counter: speckled countertop, dark louvered cabinets, wire racks, white ceiling grid, high perimeter glass. Exact layout not established."
+    },
+    {
+      "url": "https://www.google.com/maps/place/7-Eleven/@36.1215719,-115.1545559,173m/data=!3m1!1e3!4m6!3m5!1s0x80c8c444a3744b59:0x4c8021b0c9dc23b3!8m2!3d36.1215719!4d-115.1545559!16s%2Fg%2F1tf48fb2",
+      "observed": "Overhead inspected: shop rectangular to northeast; connected irregular canopy wraps west/south, separate from McDonalds north and Nuleaf east. Mapped canopy footprint corroborated."
+    }
+  ],
+  "uncertainDimensions": [
+    "Shop height5.35m, canopysoffit4.95m/roof6.0m, interiorceiling4.65m and pump/columnpositions photo-fitted rather than surveyed.",
+    "Counter placement and shelving inferred; February2025 photograph establishes fixture appearance but not complete floorplan.",
+    "Local threshold ramp joins .15m shop floor to approximately .30m existing city paving; grade fitted to actual collision, not a survey.",
+    "Rounded roof coping radius0.38m/rise0.30m and1.5m seams estimated from January2026 facade photograph; concealed roof remains flat. Ceiling grid0.6x1.2m estimated."
+  ],
+  "implemented": [
+    "Separate mapped shop and open irregular fuel canopy with white fascia, orange/green/red belts, black columns/beams and soffit fixtures.",
+    "High storefront glazing, raised address and original brand lettering, roof service units and three pump islands with screens, hoses and bollards.",
+    "Accessible public counter room with louvered cabinetry, wire racks, cups, original generic stock and speckled countertop. Fixture arrangement inferred from limited public photograph.",
+    "Threshold ramp corrected a real blocked return walk; storefront pane/low rail no longer overlap doorway. Optimized GLBs and fixed shared light pool preserved.",
+    "Storefront wall openings cut on both faces, translucent panes retain collision; reference-supported suspended ceiling grid added with estimated 0.6 by 1.2m spacing.",
+    "Rounded segmented canopy coping follows January2026 photographed edge silhouette; concealed central membrane remains inferred and flat.",
+    "Original colored snack packaging with geometric label marks replaces plain stock blocks; tiny 3D lettering omitted to keep interior optimized size near0.34MiB."
+  ],
+  "remaining": [
+    "Exact roof coping dimensions, corner mitres and concealed roof/service layout remain estimated; photographed rounded edge is now modeled.",
+    "Public interior is a limited counter/arrival pass, not a complete store plan. Full aisles, chillers, checkout placement and hidden service rooms require further reference evidence.",
+    "Merchandise, pump fittings, signage graphic proportions remain simplified; no photorealistic completion claim.",
+    "Forecourt paving/curbs retained from city source; reconcile exact island grading and add reference-supported pylon, bins and other site detail in later scoped pass.",
+    "Glazing now translucent, but reflection/tint and complete interior fitout still need fidelity review."
+  ],
+  "nextPass": {
+    "priority": "Full reference-supported fitout, site pylon and finer canopy details",
+    "checkpoint": "Installed refined pass verified:24446source triangles,53route+9window collision checks,10actual walking segments.715batch bake1497assets. Final exterior16.6\u201316.7ms medians/p9517.6\u201317.7; interior16.5\u201316.6/p9519.2\u201319.7. Scoped pass saved before moving to NuLeaf claim344; unresolved details retained."
+  },
+  "verification": {
+    "sourceTriangles": 24446,
+    "staticClearanceSamples": 53,
+    "actualWalkSegments": 10,
+    "walkPassed": true,
+    "walk": "build/city-exteriors/seven-eleven-glazing-walk/results.json",
+    "initialFailedWalk": "build/city-exteriors/seven-eleven-paradise-walk/results.json",
+    "preservation": "build/city-exteriors/seven-eleven-paradise-preservation.json",
+    "preservedGroups": 9560,
+    "removedOwnedFaces": 173,
+    "baseline": "build/city-exteriors/seven-eleven-paradise-baseline/results.json",
+    "views": "build/city-exteriors/seven-eleven-refined-final",
+    "interiorViews": "build/city-exteriors/seven-eleven-refined-interior-final",
+    "typecheck": "passed",
+    "prePaintPerformance": {
+      "exterior": [
+        {
+          "name": "front",
+          "eye": [
+            1628,
+            3,
+            -624
+          ],
+          "target": [
+            1657,
+            3,
+            -634
+          ],
+          "p50": 16.5,
+          "p95": 33.39999997615814
+        },
+        {
+          "name": "roof",
+          "eye": [
+            1625,
+            40,
+            -604
+          ],
+          "target": [
+            1660,
+            1,
+            -630
+          ],
+          "p50": 16.799999952316284,
+          "p95": 26.600000023841858
+        },
+        {
+          "name": "south",
+          "eye": [
+            1660,
+            3,
+            -593
+          ],
+          "target": [
+            1660,
+            3,
+            -628
+          ],
+          "p50": 17.299999952316284,
+          "p95": 27.699999928474426
+        }
+      ],
+      "interior": [
+        {
+          "name": "entry",
+          "eye": [
+            1656.5,
+            1.9,
+            -633.8
+          ],
+          "target": [
+            1665,
+            1.7,
+            -634
+          ],
+          "p50": 16.700000047683716,
+          "p95": 22.899999976158142
+        },
+        {
+          "name": "counter",
+          "eye": [
+            1665,
+            1.9,
+            -636.6
+          ],
+          "target": [
+            1665,
+            1.55,
+            -640
+          ],
+          "p50": 18.299999952316284,
+          "p95": 23.899999976158142
+        },
+        {
+          "name": "canopy",
+          "eye": [
+            1651,
+            1.9,
+            -625
+          ],
+          "target": [
+            1661,
+            3,
+            -618
+          ],
+          "p50": 16.59999990463257,
+          "p95": 19.899999976158142
+        }
+      ]
+    },
+    "cityBakeBatches": 715,
+    "packagedAssets": 1497,
+    "optimizedMiB": {
+      "exterior": 0.492,
+      "interior": 0.336
+    },
+    "visualInspection": "All six final installed daylight views inspected: storefront continuity, ceiling grid, generic packaged stock, rounded coping and open canopy verified. Corner mitres and complete shop layout remain simplified.",
+    "previousPaintedPerformance": {
+      "exterior": [
+        {
+          "name": "front",
+          "eye": [
+            1628,
+            3,
+            -624
+          ],
+          "target": [
+            1657,
+            3,
+            -634
+          ],
+          "p50": 17.899999976158142,
+          "p95": 26
+        },
+        {
+          "name": "roof",
+          "eye": [
+            1625,
+            40,
+            -604
+          ],
+          "target": [
+            1660,
+            1,
+            -630
+          ],
+          "p50": 17.700000047683716,
+          "p95": 22.899999976158142
+        },
+        {
+          "name": "south",
+          "eye": [
+            1660,
+            3,
+            -593
+          ],
+          "target": [
+            1660,
+            3,
+            -628
+          ],
+          "p50": 21.100000023841858,
+          "p95": 27.800000071525574
+        }
+      ],
+      "interior": [
+        {
+          "name": "entry",
+          "eye": [
+            1656.5,
+            1.9,
+            -633.8
+          ],
+          "target": [
+            1665,
+            1.7,
+            -634
+          ],
+          "p50": 17.800000071525574,
+          "p95": 27.299999952316284
+        },
+        {
+          "name": "counter",
+          "eye": [
+            1665,
+            1.9,
+            -636.6
+          ],
+          "target": [
+            1665,
+            1.55,
+            -640
+          ],
+          "p50": 17.700000047683716,
+          "p95": 26.600000023841858
+        },
+        {
+          "name": "canopy",
+          "eye": [
+            1651,
+            1.9,
+            -625
+          ],
+          "target": [
+            1661,
+            3,
+            -618
+          ],
+          "p50": 17.5,
+          "p95": 26.899999976158142
+        }
+      ]
+    },
+    "windowCollisionSamples": 9,
+    "finalPerformance": {
+      "exterior": [
+        {
+          "name": "front",
+          "eye": [
+            1628,
+            3,
+            -624
+          ],
+          "target": [
+            1657,
+            3,
+            -634
+          ],
+          "p50": 16.700000047683716,
+          "p95": 17.600000023841858
+        },
+        {
+          "name": "roof",
+          "eye": [
+            1625,
+            40,
+            -604
+          ],
+          "target": [
+            1660,
+            1,
+            -630
+          ],
+          "p50": 16.600000023841858,
+          "p95": 17.699999928474426
+        },
+        {
+          "name": "south",
+          "eye": [
+            1660,
+            3,
+            -593
+          ],
+          "target": [
+            1660,
+            3,
+            -628
+          ],
+          "p50": 16.699999928474426,
+          "p95": 17.59999990463257
+        }
+      ],
+      "interior": [
+        {
+          "name": "entry",
+          "eye": [
+            1656.5,
+            1.9,
+            -633.8
+          ],
+          "target": [
+            1665,
+            1.7,
+            -634
+          ],
+          "p50": 16.59999990463257,
+          "p95": 19.699999928474426
+        },
+        {
+          "name": "counter",
+          "eye": [
+            1665,
+            1.9,
+            -636.6
+          ],
+          "target": [
+            1665,
+            1.55,
+            -640
+          ],
+          "p50": 16.600000023841858,
+          "p95": 19.600000023841858
+        },
+        {
+          "name": "canopy",
+          "eye": [
+            1651,
+            1.9,
+            -625
+          ],
+          "target": [
+            1661,
+            3,
+            -618
+          ],
+          "p50": 16.5,
+          "p95": 19.199999928474426
+        }
+      ]
+    }
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/seven-eleven-paradise-exterior.glb": "5e933cf75b31af5dd3a3391b935c46b056a881ff57b19a887720adcdff3bae5b",
+      "runtime-assets/strip-landmarks/seven-eleven-paradise-exterior-collision.bin": "68b97e0ee3e3f5b6a9ce0a31b5638da5d8b29f35ef1387f27c8854b04100a44c",
+      "runtime-assets/strip-landmarks/seven-eleven-paradise-interior.glb": "cbf85b3334e3082e75186990883362fd28a1c0d818175bdf589034af784d6349",
+      "runtime-assets/strip-landmarks/seven-eleven-paradise-interior-collision.bin": "850e827daa177c42c60343a72487fbb9d1ff0149e565a77063b64faa809dff8d"
+    }
+  }
+}
