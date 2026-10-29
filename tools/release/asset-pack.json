@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1573,
- "bytes": 1149287098,
+ "count": 1575,
+ "bytes": 1149613489,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19964008,
-   "sha256": "4fa1e117df58106cb26c53febd80dafd72f06c1ab4467cb395dae9787443f69c",
+   "bytes": 19972931,
+   "sha256": "e0f46a10c21e1cf580ac2f5cd5f0820e6b962862fceccaac8069509de985d4ba",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13051752,
-   "sha256": "1efcb6e571330e63875e5df6efca73be322e5f8216de28231ab09d2ec32dafa2",
+   "bytes": 13051728,
+   "sha256": "b96371f3b5b0118ccab2a7e59cdb87bdf52dac77df9825e97839373468008414",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109710588,
-   "sha256": "e38f901d30f9005f7abd22b9bbd3f53b2bc0fb3f9f91d58e8ad9a533dde1cd0a",
+   "bytes": 109710048,
+   "sha256": "ef86af14d09d051d104268169fc2e83f051aaf1a49fd3f47fa72bc08b56eeed4",
    "kind": "optimized"
   },
   {
@@ -5765,6 +5765,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/bmo-sahara-exterior-collision.bin",
+   "bytes": 412,
+   "sha256": "64e5b23a1c0f4900ee9c75f4a8dfa3dcfcefbbe12f59e042d4b00f04bd476da8",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/bmo-sahara-exterior.glb",
+   "bytes": 317324,
+   "sha256": "55c5ffe74937c7ac71589683ca497e1d393db06b2a50f55894ac6bfa4044bdc4",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/bonfire-exterior-collision.bin",
    "bytes": 356,
    "sha256": "af767719223ab85ea49a6c4454d86c27c2d5e4d371c6e7e1cb5fcc5d19534d39",
@@ -9246,8 +9258,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 379424,
-   "sha256": "2793da94a3e30b713a62c4406082bccceaa1aa102ca8c81bf0bfc629d89e5e97",
+   "bytes": 379720,
+   "sha256": "b4f4d1ef2f7af9d0b76ae1dedbf566a8f92d4e2003a0876de89810a1cbcd9477",
    "kind": "original"
   },
   {
