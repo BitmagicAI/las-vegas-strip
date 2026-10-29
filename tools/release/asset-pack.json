@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1553,
- "bytes": 1141542434,
+ "count": 1557,
+ "bytes": 1143883642,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19797618,
-   "sha256": "d831ca6b02e6091c0a62e3d95c55378f660b83cba9f1c594e916f2bcaa44bd54",
+   "bytes": 19841892,
+   "sha256": "4d94f0a1c2f891a4ccf914555a4aea0cafe0661c7adab2053c4a07a20782a0b2",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13055236,
-   "sha256": "233139091f3d6ed1c1e8b5f7e005561d82dabdd28f6fb2a85092c536bbcca4bb",
+   "bytes": 13054856,
+   "sha256": "7d158ed7cee10461e848a5754d35f82e222aeaed44e60bd6a49ccabe648709c4",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109723300,
-   "sha256": "65ae80b41d8f6717fbd81641af7256226522c153b6e63823eb4cdfaf4e7faf8d",
+   "bytes": 109720364,
+   "sha256": "cba2e7b9e5bc6aea05590f07708aa2c67a6ea82c3d5b6fb143b043c83941e2fd",
    "kind": "optimized"
   },
   {
@@ -7073,6 +7073,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/homewood-city-center-exterior-collision.bin",
+   "bytes": 920,
+   "sha256": "175e8d295378d46b8d00532e12da98c53b45a2092e590c5727cbac299529c8ec",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/homewood-city-center-exterior.glb",
+   "bytes": 2203308,
+   "sha256": "5906b6c6080a528e48766c5f9f4b802dd1c79b59884f32df17e88f81b5b5374d",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/homewood-city-center-interior-collision.bin",
+   "bytes": 408,
+   "sha256": "b365dd15922336b798d80e8cc7f2982c66a42aa8b363390b736d453aa380ecca",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/homewood-city-center-interior.glb",
+   "bytes": 94912,
+   "sha256": "f8a88a51d9d224380c2e8c345bc2800acb5b5676d9453806eea100da4c8c1aa7",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/horseshoeArrival-exterior-collision.bin",
    "bytes": 4640,
    "sha256": "bc3655fed53466481261f872477ed2b3fe899bc88b6c470f9685fca3c09c611e",
@@ -9126,8 +9150,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 376082,
-   "sha256": "9c1b42cd653feebd6ed4e4cafb9eab026e97641fb022dee9bd18216b8c52968d",
+   "bytes": 376784,
+   "sha256": "9ae8898b9df89ba45d32673ba769faf36eea867b7db898b09b646fce3162084f",
    "kind": "original"
   },
   {
