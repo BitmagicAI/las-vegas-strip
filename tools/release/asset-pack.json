@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1633,
- "bytes": 1166524234,
+ "bytes": 1161559782,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -5880,8 +5880,8 @@
   },
   {
    "path": "build/strip-landmarks/bourbon-street-sahara-interior.glb",
-   "bytes": 365508,
-   "sha256": "38500057227df491959c91a17e47acd9749916beed5560860354b61a7263275a",
+   "bytes": 282564,
+   "sha256": "5cf530af873f812a26fcfc4afc1366874b1e8a248731a0e406c5e13525f6c70b",
    "kind": "optimized"
   },
   {
@@ -5892,8 +5892,8 @@
   },
   {
    "path": "build/strip-landmarks/buca-flamingo-exterior.glb",
-   "bytes": 841052,
-   "sha256": "662d1fb691b591234895bfd5d55fe6cba1dfa8d81f97027fc86f857b57488511",
+   "bytes": 689908,
+   "sha256": "2c0f0ac6752855c2d2913dbb0939f628eb58160f27ce0064dde22bfb08e7c60c",
    "kind": "optimized"
   },
   {
@@ -5904,8 +5904,8 @@
   },
   {
    "path": "build/strip-landmarks/buca-flamingo-interior.glb",
-   "bytes": 444748,
-   "sha256": "541abb2208721938e4d313955c63439212d8c3e4e4f73c4e6138cf9a2a5c31be",
+   "bytes": 263628,
+   "sha256": "672d5c4a74230760065138fbc0403adac148178cd53fbf8d09a5f0013b371f71",
    "kind": "optimized"
   },
   {
@@ -6648,8 +6648,8 @@
   },
   {
    "path": "build/strip-landmarks/fedex-hughes-exterior.glb",
-   "bytes": 242500,
-   "sha256": "90f4b9b6d0f809b205fbab7d2aa8ac3c92d3064edf45c0db48b33a3dbeefd61e",
+   "bytes": 169320,
+   "sha256": "12151b378c25406fa680fce5a9952713ecd33accc208847538f50dd31f197262",
    "kind": "optimized"
   },
   {
@@ -6660,8 +6660,8 @@
   },
   {
    "path": "build/strip-landmarks/fedex-hughes-interior.glb",
-   "bytes": 480932,
-   "sha256": "cf59cb53d0b62b0047150644b11514db593f30f236f102f6e9212365f09208a7",
+   "bytes": 353992,
+   "sha256": "4002dd3dd776d308a5e1a378dec5b6f26ed21a784ce532e7f4422e92b6b58e0e",
    "kind": "optimized"
   },
   {
@@ -6720,8 +6720,8 @@
   },
   {
    "path": "build/strip-landmarks/firefly-hughes-exterior.glb",
-   "bytes": 708296,
-   "sha256": "e2e5fc4e7fa421e8984bd47d4dfbe5eb07ab8c9514f92159a1c9b2da2563aa80",
+   "bytes": 416120,
+   "sha256": "7f40ae631eb9132ba1a0a469b05ee9770b458f9e7f29e7447f9816a38f38099a",
    "kind": "optimized"
   },
   {
@@ -6732,8 +6732,8 @@
   },
   {
    "path": "build/strip-landmarks/firefly-hughes-interior.glb",
-   "bytes": 752920,
-   "sha256": "684b907cedd41457406ea87914d846a2ba21e7b73faa8965685ee1644c83b4a8",
+   "bytes": 543296,
+   "sha256": "f29a66790415cb0a7d286bdbb32ab4c24ce8273c199b472b63db68ae21c3e1ec",
    "kind": "optimized"
   },
   {
@@ -6792,8 +6792,8 @@
   },
   {
    "path": "build/strip-landmarks/fogo-hughes-exterior.glb",
-   "bytes": 911796,
-   "sha256": "424106100f86aff4104b604913b8292572febbf573fa216b357455a373f33fac",
+   "bytes": 505944,
+   "sha256": "4db72f21a71143ae3e4e86511e6e48bde1873875986877db3dc4cb0f2d178eeb",
    "kind": "optimized"
   },
   {
@@ -6804,8 +6804,8 @@
   },
   {
    "path": "build/strip-landmarks/fogo-hughes-interior.glb",
-   "bytes": 1501796,
-   "sha256": "4b81b818cc584f837a4e480b477e68784f4fc1125ca903fc1ce9bb9e6145e64e",
+   "bytes": 1275412,
+   "sha256": "8f34191644982df931bd973f7661ac9fc21d0102aa584b1c9d3473d5d729ff18",
    "kind": "optimized"
   },
   {
@@ -7500,8 +7500,8 @@
   },
   {
    "path": "build/strip-landmarks/lawrys-hughes-exterior.glb",
-   "bytes": 776804,
-   "sha256": "8580a9cc275020c78d76c17b0882a493d546061b55074787ccd6d665d794afb9",
+   "bytes": 462948,
+   "sha256": "e9ba80d68b3593ca1244a412b5849e2517e70156492d441e249eabbfdca24b68",
    "kind": "optimized"
   },
   {
@@ -7512,8 +7512,8 @@
   },
   {
    "path": "build/strip-landmarks/lawrys-hughes-interior.glb",
-   "bytes": 974604,
-   "sha256": "a5575bee77417559722a6216439e7da5f20539befd9cb158e54b62a3f3b99232",
+   "bytes": 761852,
+   "sha256": "fbd4f06f3f968b9b3ee165cdf52c015d6ad61c9a2eb14d44c9806f3572b2082c",
    "kind": "optimized"
   },
   {
@@ -7740,8 +7740,8 @@
   },
   {
    "path": "build/strip-landmarks/mardi-gras-exterior.glb",
-   "bytes": 6640028,
-   "sha256": "1eacc77d76b8278af2360068dc272d7458d33567d7a41d802d8d467bad42ee46",
+   "bytes": 6431620,
+   "sha256": "d3e55fd031181fdac8a969b878fb9b2824fe1e13446aeba629931f9269781335",
    "kind": "optimized"
   },
   {
@@ -7752,8 +7752,8 @@
   },
   {
    "path": "build/strip-landmarks/mardi-gras-interior.glb",
-   "bytes": 1202884,
-   "sha256": "4945459cf373e1c4cab38653d8d0821aa36c278c7bb31cb0d6037a4204dab420",
+   "bytes": 273420,
+   "sha256": "a7d2f907592393a88d771265596fe1221ad6a24302db906f08d58e76e51112d0",
    "kind": "optimized"
   },
   {
@@ -8004,8 +8004,8 @@
   },
   {
    "path": "build/strip-landmarks/mortons-flamingo-exterior.glb",
-   "bytes": 738252,
-   "sha256": "73c4057dbe9dc9efd822e1e01a7ff6e633e41877a34f7055c57bb6e7364e19a1",
+   "bytes": 587460,
+   "sha256": "c2327fa43905194855816c04df81044d1a4d89f4dd01c9829789ddedbcd1d111",
    "kind": "optimized"
   },
   {
@@ -8016,8 +8016,8 @@
   },
   {
    "path": "build/strip-landmarks/mortons-flamingo-interior.glb",
-   "bytes": 506224,
-   "sha256": "07c6619be47a5324ed0c3ae61fb855576452b3838a706a12b36681a462a89119",
+   "bytes": 317644,
+   "sha256": "8b9e3d3b1cc31ef66cb13bf497067220a5a1737b0a054d945aeb2dc0f5b8d011",
    "kind": "optimized"
   },
   {
@@ -8136,8 +8136,8 @@
   },
   {
    "path": "build/strip-landmarks/nuleaf-twain-exterior.glb",
-   "bytes": 472944,
-   "sha256": "4f53245e8cd702bbf92f69c0588a7b640ac7a62339cf3c831ec25dd9acece736",
+   "bytes": 287880,
+   "sha256": "7b5c973d89d70699ce1aea9610260c39b4c57ddadfe42df3f273cedb1caa96cc",
    "kind": "optimized"
   },
   {
@@ -8892,8 +8892,8 @@
   },
   {
    "path": "build/strip-landmarks/seven-eleven-paradise-exterior.glb",
-   "bytes": 516188,
-   "sha256": "5e933cf75b31af5dd3a3391b935c46b056a881ff57b19a887720adcdff3bae5b",
+   "bytes": 452684,
+   "sha256": "90e2ba03cb89e60de290d32218abc3eb367295dd41870300697d825db62f90ce",
    "kind": "optimized"
   },
   {
@@ -8904,8 +8904,8 @@
   },
   {
    "path": "build/strip-landmarks/seven-eleven-paradise-interior.glb",
-   "bytes": 352748,
-   "sha256": "cbf85b3334e3082e75186990883362fd28a1c0d818175bdf589034af784d6349",
+   "bytes": 139676,
+   "sha256": "c065fa81142fab359e0f4c4ffccf56c5c37b421457dfd49ed54c8ffa0d719a65",
    "kind": "optimized"
   },
   {
@@ -9096,8 +9096,8 @@
   },
   {
    "path": "build/strip-landmarks/speedee-mart-paradise-exterior.glb",
-   "bytes": 411324,
-   "sha256": "842cda561f5fb30b488f48a9b7a58eeb8aa8a89aa194867d8ab835402cd5a640",
+   "bytes": 286476,
+   "sha256": "6b965b542784e50e3771ff834ed5d77999ea4f7ed42a15f6f708a6f19865bfdc",
    "kind": "optimized"
   },
   {
@@ -9108,8 +9108,8 @@
   },
   {
    "path": "build/strip-landmarks/speedee-mart-paradise-interior.glb",
-   "bytes": 417828,
-   "sha256": "a4a1370009999c1cd33f383f5822de08e45f8cad29ab1fbe15f8bcc65c34d9e5",
+   "bytes": 216132,
+   "sha256": "01b3b3e9855001ced3a0f3b4b90f52f1834887267ec6536d0c3057cc247eef6b",
    "kind": "optimized"
   },
   {
@@ -9192,8 +9192,8 @@
   },
   {
    "path": "build/strip-landmarks/starbucks-flamingo-exterior.glb",
-   "bytes": 353024,
-   "sha256": "931fb5d98c12388d439d31e20f8580138e3b87e935f9bbac0b295b0dc3653eb5",
+   "bytes": 212912,
+   "sha256": "639634df6ded9c36a9e45b65e29d9ec55a9854351b5048d16e1fbd4a1b6971da",
    "kind": "optimized"
   },
   {
@@ -9204,8 +9204,8 @@
   },
   {
    "path": "build/strip-landmarks/starbucks-flamingo-interior.glb",
-   "bytes": 740564,
-   "sha256": "3ec24f889c93bb52cc61465a82ab222ee846716616ef76700c5376ceb4d93cc1",
+   "bytes": 457624,
+   "sha256": "1a73c4f6e254ec8836109cd9d3da46ad4f424ef3510bd5c5edd4892d197ac09c",
    "kind": "optimized"
   },
   {

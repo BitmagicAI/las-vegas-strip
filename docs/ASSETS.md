@@ -36,7 +36,9 @@ runtime set stores optimized GLBs at the original paths and would overwrite the 
 3. The optimizer's install step (`tools/optimize/install-optimized.mjs`) then runs
    `python3 tools/release/asset-pack.py stage` for you; after any other runtime change (collision, routes, venue lists)
    run `pnpm assets`. It lists the set again and mirrors it into `runtime-assets/`: new and changed files are copied,
-   files that left the set are deleted (it refuses to delete more than a tenth of the set without `--force`).
+   files that left the set are deleted (it refuses to delete more than a tenth of the set without `--force`). It also
+   refuses while anything is missing (a stale bake included) or a model is not optimized
+   (`python3 tools/optimize/check-runtime-glbs.py --help`).
 4. `git add -A runtime-assets tools/release/asset-pack.json`, commit, and open the pull request from your fork.
    A maintainer uploads the change to the CDN (`node tools/release/cdn-upload.mjs`) before the next publish.
 

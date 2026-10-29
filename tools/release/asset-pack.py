@@ -6,8 +6,10 @@ exactly that set, by the same rules the runtime code uses (the loaders named bes
 
   python3 tools/release/asset-pack.py list     # write tools/release/asset-pack.json (path, bytes, sha256 per file)
   python3 tools/release/asset-pack.py build    # list, then write .bitmagic/release/las-vegas-strip-assets-<rev>.tar.gz
-  python3 tools/release/asset-pack.py check    # what a loader rule names but build/ lacks (exit 1 if any)
-  python3 tools/release/asset-pack.py stage    # list, then mirror the set into runtime-assets/ (tracked with Git LFS)
+  python3 tools/release/asset-pack.py check    # what a loader rule names but build/ lacks, and models that are not
+                                               # optimized (tools/optimize/check-runtime-glbs.py); exit 1 if any
+  python3 tools/release/asset-pack.py stage    # list, then mirror the set into runtime-assets/ (tracked with Git LFS);
+                                               # refuses while anything is missing or not optimized
 
 Each runtime GLB ships as its meshopt-optimized copy (build/optimized/, installed by tools/optimize) stored at the
 ORIGINAL path: glbUrl() (src/work/OptimizedGlb.ts) returns the original URL when there is no optimized manifest, which a
@@ -178,6 +180,23 @@ def listing():
     return files, missing
 
 
+def unoptimized(files):
+    """Runtime GLBs in the listing that break tools/optimize/check-runtime-glbs.py's rules: every submission ships its
+    models optimized (the owner, 2026-10-29)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('check_runtime_glbs', ROOT / 'tools/optimize/check-runtime-glbs.py')
+    rules = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(rules)
+    manifest = optimized_files()
+    bad = []
+    for f in files:
+        if f['path'].endswith('.glb'):
+            found = rules.problems(f['path'], ROOT / f['from'], manifest.get(f['path']), f['kind'] if manifest else None)
+            if found:
+                bad.append((f['path'], '; '.join(found)))
+    return bad
+
+
 def write_list(files):
     old = json.loads(OUT_LIST.read_text()) if OUT_LIST.exists() else {}
     # Unchanged bytes keep their recorded kind: a clone has no optimizer manifest, so it would call every optimized
@@ -259,9 +278,17 @@ def main():
     files, missing = listing()
     for path, why in missing:
         print(f'missing {path}  ({why})')
+    bad = unoptimized(files)
+    for path, why in bad:
+        print(f'not optimized {path}  ({why})')
     if cmd == 'check':
-        print(f'{len(files)} present, {len(missing)} missing')
-        sys.exit(1 if missing else 0)
+        print(f'{len(files)} present, {len(missing)} missing, {len(bad)} not optimized')
+        sys.exit(1 if missing or bad else 0)
+    if cmd == 'stage' and (missing or bad):
+        # staging an incomplete set would delete the missing files from runtime-assets/ (a stale bake once removed the
+        # committed city-lod.bin), and an unoptimized model would be committed as it is
+        sys.exit(f'stage: refusing with {len(missing)} missing and {len(bad)} not optimized; fix them first '
+                 '(python3 tools/optimize/check-runtime-glbs.py --help)')
     doc = write_list(files)
     by = {}
     for f in files:
