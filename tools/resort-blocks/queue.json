@@ -1718,7 +1718,13 @@
       "name": "In-N-Out West Sahara",
       "status": "refinement-deferred",
       "record": "in-n-out-sahara.json"
+    },
+    {
+      "id": "homewood-city-center",
+      "name": "Homewood Suites City Center",
+      "status": "refinement-deferred",
+      "record": "homewood-city-center.json"
     }
   ],
-  "active": "in-n-out-sahara"
+  "active": "homewood-city-center"
 }

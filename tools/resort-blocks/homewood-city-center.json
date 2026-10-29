@@ -1,0 +1,283 @@
+{
+  "id": "homewood-city-center",
+  "name": "Homewood Suites City Center",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/494974482"
+  ],
+  "claim": {
+    "issue": 379,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/379",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/380"
+  },
+  "sources": [
+    {
+      "url": "https://www.hilton.com/en/hotels/lasdmhw-homewood-suites-las-vegas-city-center/gallery/",
+      "provider": "Hilton",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Personally inspected images1/11 day/dusk exterior and10 reception: six storeys, pale panels, brown vents, green glazing, stone entry, low canopy; dark/pale wood reception, white counter, teal pendants, gray plank floor and adjacent shop."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Homewood+Suites+4625+Dean+Martin+Las+Vegas",
+      "provider": "Google Maps",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Personally inspected aerial: L-shaped north and west wings, inward east-facing entry court, flat roof and equipment. No geometry extraction."
+    }
+  ],
+  "uncertainDimensions": [
+    "OSM13.3m conflicts with photographed six storeys; fit21.5m pending measured height",
+    "Reception placement and room dimensions inferred; no floorplan"
+  ],
+  "remaining": [
+    "Six-storey height21.5m and public reception placement/dimensions inferred; no measured plan",
+    "Full pool/parking/site landscaping and guest floors unfinished; neighbouring garage excluded",
+    "Unseen facade rhythm, signage placement, stone/wood/glazing/curtain fidelity and roof equipment require refinement; not photorealistic completion",
+    "Entrance-facing interior view median30.4ms/p9549.7ms; glass ablation33.4ms with and without new clear meshes, so cause remains unresolved; not locked60fps"
+  ],
+  "nextPass": {
+    "priority": "Site/fidelity and entrance-view performance refinement",
+    "checkpoint": "Scoped original exterior and public reception installed. Six final daylight views personally inspected;246static/16actualwalkingsegments pass. Continue next unclaimed building with discrepancies retained."
+  },
+  "triangles": 76963,
+  "optimizedMiB": {
+    "exterior": 2.1,
+    "interior": 0.09
+  },
+  "viewsInspected": [
+    "build/city-exteriors/homewood-city-center-final/homewood-front.png",
+    "build/city-exteriors/homewood-city-center-final/homewood-roof.png",
+    "build/city-exteriors/homewood-city-center-final/homewood-north.png",
+    "build/city-exteriors/homewood-city-center-inside-final/homewood-desk.png",
+    "build/city-exteriors/homewood-city-center-inside-final/homewood-entry.png",
+    "build/city-exteriors/homewood-city-center-inside-final/homewood-market.png"
+  ],
+  "tests": [
+    "246 current-city static route samples passed",
+    "16 actual walking segments passed, entrance/return and east frontage",
+    "202 owned visual/collider triangles removed;9560 groups and other geometry preserved",
+    "Six final installed daylight views inspected;733batch fresh bake and1557runtimeassets",
+    "Type checks, record review and public check pass; known preexisting public-email warning only"
+  ],
+  "performance": {
+    "conditions": "Warm960x540DPR1ultra. Original roof baseline matches final roof. Initial low-camera baselines obstructed by neighbouring buildings and are invalid. Corrected low-view baseline uses exact original triangles in standalone mesh; material/batching differs, a proxy only; bake=off. No original public-interior baseline existed.",
+    "originalBaseline": [
+      {
+        "name": "front",
+        "eye": [
+          -779,
+          2,
+          1124
+        ],
+        "target": [
+          -813,
+          9,
+          1106
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.300000071525574
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -746,
+          63,
+          1155
+        ],
+        "target": [
+          -801,
+          8,
+          1100
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.399999976158142
+      },
+      {
+        "name": "north",
+        "eye": [
+          -800,
+          2,
+          1054
+        ],
+        "target": [
+          -800,
+          9,
+          1080
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.5
+      }
+    ],
+    "correctedProxyBaseline": [
+      {
+        "name": "front",
+        "eye": [
+          -800,
+          2,
+          1116
+        ],
+        "target": [
+          -813,
+          9,
+          1106
+        ],
+        "p50": 17.299999952316284,
+        "p95": 27.800000071525574
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -746,
+          63,
+          1155
+        ],
+        "target": [
+          -801,
+          8,
+          1100
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.399999976158142
+      },
+      {
+        "name": "north",
+        "eye": [
+          -800,
+          2,
+          1070
+        ],
+        "target": [
+          -800,
+          9,
+          1080
+        ],
+        "p50": 16.799999952316284,
+        "p95": 18.800000071525574
+      }
+    ],
+    "after": [
+      {
+        "name": "front",
+        "eye": [
+          -800,
+          2,
+          1116
+        ],
+        "target": [
+          -813,
+          9,
+          1106
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.300000071525574
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -746,
+          63,
+          1155
+        ],
+        "target": [
+          -801,
+          8,
+          1100
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.200000047683716
+      },
+      {
+        "name": "north",
+        "eye": [
+          -800,
+          2,
+          1070
+        ],
+        "target": [
+          -800,
+          9,
+          1080
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.700000047683716
+      }
+    ],
+    "interior": [
+      {
+        "name": "desk",
+        "eye": [
+          -813.3,
+          1.9,
+          1106
+        ],
+        "target": [
+          -820,
+          1.6,
+          1106
+        ],
+        "p50": 17.399999976158142,
+        "p95": 25
+      },
+      {
+        "name": "entry",
+        "eye": [
+          -819,
+          1.9,
+          1108
+        ],
+        "target": [
+          -810,
+          1.7,
+          1106
+        ],
+        "p50": 30.399999976158142,
+        "p95": 49.699999928474426
+      },
+      {
+        "name": "market",
+        "eye": [
+          -816,
+          1.9,
+          1107
+        ],
+        "target": [
+          -821,
+          1.7,
+          1110
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.199999928474426
+      }
+    ],
+    "glassAblation": [
+      {
+        "hide": false,
+        "meshes": 2,
+        "p50": 33.39999997615814,
+        "p95": 59.10000002384186
+      },
+      {
+        "hide": true,
+        "meshes": 2,
+        "p50": 33.39999997615814,
+        "p95": 56.39999997615814
+      },
+      {
+        "hide": false,
+        "meshes": 2,
+        "p50": 33.39999997615814,
+        "p95": 54.09999990463257
+      }
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/homewood-city-center-exterior-collision.bin": "175e8d295378d46b8d00532e12da98c53b45a2092e590c5727cbac299529c8ec",
+      "runtime-assets/strip-landmarks/homewood-city-center-interior.glb": "f8a88a51d9d224380c2e8c345bc2800acb5b5676d9453806eea100da4c8c1aa7",
+      "runtime-assets/strip-landmarks/homewood-city-center-interior-collision.bin": "b365dd15922336b798d80e8cc7f2982c66a42aa8b363390b736d453aa380ecca",
+      "runtime-assets/strip-landmarks/homewood-city-center-exterior.glb": "5906b6c6080a528e48766c5f9f4b802dd1c79b59884f32df17e88f81b5b5374d"
+    }
+  }
+}
