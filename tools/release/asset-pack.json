@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1617,
- "bytes": 1162924793,
+ "count": 1621,
+ "bytes": 1164082569,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20139759,
-   "sha256": "e6c9311a90a7de50758cce12fcfde8bb74c76ed2d556565b1b1359e72fa97d78",
+   "bytes": 20160173,
+   "sha256": "0de01f6f136184787ca945aade49be645fce07f15b5861c4d7084a274ff4bf05",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13048992,
-   "sha256": "37bdab0a66f2a75f37c9a53a82825edca7b6f37f3cd45b12a700ab8f7a919f73",
+   "bytes": 13049088,
+   "sha256": "725d92b8e6e264ace2572a38313b9543094c3fc7ab5341a27fc29ad7e2577ec2",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109699624,
-   "sha256": "2b433f8bb5549fc5085140ef053769f0aa62298199d9c9e94766fab49c57fe3a",
+   "bytes": 109699244,
+   "sha256": "2cf4cc5aa1de17cf68d20545bf8d345848d78e5dcddf0f57d8189560ffc84db0",
    "kind": "optimized"
   },
   {
@@ -7733,6 +7733,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/martinez-boxing-exterior-collision.bin",
+   "bytes": 560,
+   "sha256": "bf67d58aed8bf611f36cec34540e95c7713c9a5ebf64f1d578ab729118c70352",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/martinez-boxing-exterior.glb",
+   "bytes": 431520,
+   "sha256": "36c302624fff199d333bd1267695d9a3bf73142678053362b7f5b52b7be58b48",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/martinez-boxing-interior-collision.bin",
+   "bytes": 508,
+   "sha256": "354c5794cea1cf562dd48dd99dfc6770bc484d2e347e6c165e0af8f9f4f5a6ee",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/martinez-boxing-interior.glb",
+   "bytes": 704364,
+   "sha256": "c1b96319ea3518d81a51265177c7641ed6faaf31ec9b7f959f11dc2d56ec7123",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/maverickTerminal-exterior-collision.bin",
    "bytes": 1980,
    "sha256": "1d344b407c9a5733d98ebc52cfaff7ba9107439ca48b4cc3fc348a0b5e7fd0d5",
@@ -9498,8 +9522,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 387152,
-   "sha256": "cc9165aedd97bbb0944f4e15d31d9c18b9d25efdc4894b0e0e7a0db82e4607b9",
+   "bytes": 387846,
+   "sha256": "91d9ae9b6739584e4af2f34d3aaf7a950382b84fe2cb56b16054bc379f5efc41",
    "kind": "original"
   },
   {
