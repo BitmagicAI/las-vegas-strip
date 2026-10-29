@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1579,
- "bytes": 1149881236,
+ "count": 1581,
+ "bytes": 1150799542,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19979370,
-   "sha256": "e81e4fff0af8b8c228d179f478e50400a5498539f96bf2ea36207627972caec1",
+   "bytes": 20004078,
+   "sha256": "0b5398ec8398f4d4cdfd2d9dbaa88dcbdc0c61bc90567e39793c274975876ba2",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13051684,
-   "sha256": "90bb325e0eda1d19dfd07d4d5075cf7fbd23573946202ef8884aa6bac199301f",
+   "bytes": 13050564,
+   "sha256": "a27ca0f46d67ced24f04c3541d9fe95ddf3c7c2f5b6dda3c3bc54bce1e5567ad",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109709544,
-   "sha256": "049342b7619d6fbe65401e3bf97af0153cc95a39ce47384488b1a60e6fff5786",
+   "bytes": 109705080,
+   "sha256": "0cfa46f96e6c155a3cf49abb8e9921a169d5d08a9308542b8aa39ad9f5a7fe11",
    "kind": "optimized"
   },
   {
@@ -9282,8 +9282,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 380424,
-   "sha256": "815ff81a8da47cb52ebcef6fd2ca4a849c795ec7f04aeb92b7db236c8666b42d",
+   "bytes": 380766,
+   "sha256": "8d326c5e89cf4f19d9bc48cfbbeecc33138e7392dabf042ca406e57b515af2d3",
    "kind": "original"
   },
   {
@@ -9356,6 +9356,18 @@
    "path": "build/strip-landmarks/wellsFargoTower-exterior.glb",
    "bytes": 1010100,
    "sha256": "20c482bdc0308751398ea4e9d604976cd443df988b5a2cf4d83ee3c43b26365b",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/western-alliance-sahara-exterior-collision.bin",
+   "bytes": 1460,
+   "sha256": "ed34b2efa2efb9fdc02623a2795ecefa46d2ad5fe1f59b45e93d630d784e92d4",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/western-alliance-sahara-exterior.glb",
+   "bytes": 897380,
+   "sha256": "6d7542490fc497325c2fdbedfd9b5db76f33d47b03a3388d0087b4d6a963692f",
    "kind": "optimized"
   },
   {
