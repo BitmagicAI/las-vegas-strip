@@ -13,13 +13,17 @@ This is an open repository. If you were asked to "pick up a task", do it this wa
 3. **Read it:** `node tools/tasks/pick.mjs show <task-id>`.
 4. **Claim it** before you change anything: `node tools/tasks/pick.mjs claim <task-id>`. If `gh` is not signed in, ask
    your human to comment `/claim` on the task's issue. Never work on a task someone else holds.
-5. **Branch and draft:** branch `task/<task-id>`, and open a draft pull request early with `Closes #<issue>`.
+5. **Branch and draft:** branch `task/<task-id>` from the current `origin/main`, and open a draft pull request early
+   with `Closes #<issue>`.
 6. **Do the work** under the rules in this file and in `CONTRIBUTING.md`. Meet every line of the task's "Done when"
    list, update the block record's `remaining`, and re-run `python3 tools/tasks/build-board.py`.
 7. **Verify:**
    - `bitmagic check` and the tests that apply;
    - `python3 tools/resort-blocks/review.py`;
    - `python3 tools/release/check-public.py`;
+   - for model changes: `python3 tools/optimize/check-runtime-glbs.py --changed origin/main`,
+     `node tools/bake/bake-city.mjs check`, `python3 tools/release/asset-pack.py check`, and
+     `node tools/release/smoke-clone.mjs` against `bitmagic dev`;
    - walk or drive the change in `bitmagic dev`.
 
    Then mark the pull request ready.
@@ -27,6 +31,30 @@ This is an open repository. If you were asked to "pick up a task", do it this wa
 Never commit third-party photos, floor plans or screenshots; link them in the record. Never publish, upload or
 `bitmagic publish` from a contributor checkout. The owner's sections below ("the creator", "the owner") describe how
 the project has been run; their technical rules apply to everyone.
+
+## Pull requests (every agent)
+
+The owner's rules for submissions (2026-10-28, after a stack of 99 one-building pull requests):
+
+- **Start each pull request from the current main** (`git fetch origin && git switch -c task/<task-id> origin/main`).
+  Do not stack one on another unmerged branch unless the owner asks; if you must, stack at most three.
+- **Commit only your own work.** Other agents may use the same checkout. Before every push, `git log origin/main..HEAD`
+  must list only your commits.
+- **Optimize every model you add or change, in the same pull request,** WebP pass included
+  (`python3 tools/optimize/check-runtime-glbs.py --help` lists the commands). `asset-pack.py stage` refuses a model
+  that is not optimized, and refuses to stage while anything is missing (a stale bake once deleted the committed
+  `city-lod.bin`).
+- **Group buildings, a few per pull request.** Each building rewrites the shared city files (`city.glb` is 110 MB, plus
+  `city-colliders.bin`, `venues.bin` and the `city-lod.bin` bake), and Git LFS keeps every version: the 99 one-building
+  pull requests stored 14.9 GB, 261 MB of it new buildings. Put up to about ten buildings from one area in a pull
+  request, regenerate the shared files once, and give each building its own section in the description. Propose any
+  change to how a building replaces its map shell to the owner before building it.
+- **Fix a mistake where it was made.** If a pull request left something out, fix it on that branch before it merges;
+  after it merged, say so in the first line of the next description.
+- **Ready means done.** Mark a pull request ready once the checks in step 7 pass. Its description lists what changed,
+  each check with its result, the bytes it adds to Git LFS, and anything it touches outside its own buildings.
+- **Keep review views findable.** Each building's `probe-<id>.js` lists its views as `[name, eye, target]` with an
+  exterior `front` view first, and its before and after captures use the same view names.
 
 ## The city and the games built on it
 

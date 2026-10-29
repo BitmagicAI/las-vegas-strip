@@ -50,7 +50,8 @@ node tools/tasks/pick.mjs claim <task-id> # assigns you on the task's GitHub iss
 git switch -c task/<task-id>
 ```
 
-Open a draft pull request early with `Closes #<issue>`. Claims with no activity for 21 days are released.
+Open a draft pull request early with `Closes #<issue>`, and mark it ready once every check in section 5 passes. Claims
+with no activity for 21 days are released.
 
 ## 3. Rules that are not negotiable
 
@@ -96,12 +97,15 @@ node --import ./tools/ts-register.mjs tests/<name>.test.mjs  # logic tests
 python3 tools/resort-blocks/review.py                       # block records are valid
 python3 tools/tasks/build-board.py                          # regenerate the board after editing records
 python3 tools/release/check-public.py                       # nothing private or third-party slipped in
+python3 tools/optimize/check-runtime-glbs.py --changed origin/main   # every model you changed is optimized
 ```
 
 For geometry changes, also do the following:
 
 - Regenerate through the builder scripts. Never hand-edit an exported GLB.
-- Re-optimize (`AGENTS.md`, "Runtime GLBs") and bump the folder's `version.json` revision.
+- Optimize every model you add or change, in the same pull request, WebP pass included (`AGENTS.md`, "Runtime GLBs";
+  `python3 tools/optimize/check-runtime-glbs.py --help` lists the commands), and bump the folder's `version.json`
+  revision. `asset-pack.py stage` refuses a model that is not optimized.
 - Commit `runtime-assets/` with `tools/release/asset-pack.json`. The optimizer's install step stages them; after any
   other runtime change run `pnpm assets` ([docs/ASSETS.md](docs/ASSETS.md), "Updating the runtime set").
 - Attach before and after captures from the same cameras.
