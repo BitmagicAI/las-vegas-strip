@@ -1,14 +1,15 @@
 {
   "id": "sahara-surgery",
   "name": "Sahara Surgery Center",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/1062820474"
   ],
   "claim": {
     "issue": 415,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/415"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/415",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/416"
   },
   "sources": [
     {
@@ -40,23 +41,53 @@
   "components": [
     {
       "id": "exterior",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "public-waiting-room",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "entrance-approach",
-      "status": "planned"
+      "status": "implemented"
     }
   ],
   "remaining": [
-    "Build/install/inspect/routecheck and package.",
-    "Private treatment spaces, neighboring WellTrac and complete parking excluded."
+    "Private treatment rooms excluded; public waiting-room dimensions and layout inferred, not surveyed.",
+    "Full parking, surrounding landscape, detailed palms and unseen service elevations incomplete.",
+    "Carpet/finish texture, detailed furniture and exact facade/window proportions need refinement; not photorealistic completion."
   ],
   "nextPass": {
-    "priority": "Exterior and public waiting room",
-    "checkpoint": "415claim confirmed;412openissue/PRscan clear;413released aftera123274push."
+    "priority": "Full site and finer materials/furnishings",
+    "checkpoint": "Installed4views inspected;97static/16actualwalkpass;751batchbake1615assets and checks passed."
+  },
+  "implemented": [
+    "Original 21,207-triangle exterior/public waiting room. Continuous angled masonry block, narrow windows, real covered entry, round columns, rooftop equipment and sparse planting.",
+    "Public waiting/reception includes colored upholstered metalarmchairs, side tables/plants, ceiling tray/suspended strips, glazed entrance and closed reception cabinets. Layout and dimensions inferred.",
+    "Only55ownedfaces and matching colliders replaced;9560citygroups preserved; no runtime or road edits."
+  ],
+  "validation": {
+    "static": "97 current-city checks passed",
+    "walking": "16 actual segments passed through entrance/waiting/reception route",
+    "visual": "Four final installed daylight views personally inspected; contiguous tall masonry facade correction verified",
+    "packaging": "751-batch current city bake,1615runtimeassets; type/Bitmagic/public checks passed, existing email warning only"
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra matched entry/roof/windows/waiting views",
+    "summary": "Baseline median16.8/16.7/16.6/16.7ms,p9519.5/17.2/17.3/19.2; final16.7/16.6/16.7/16.4,p9517.4/17.5/17.4/18.7ms. No locked60claim."
+  },
+  "evidence": [
+    "build/city-exteriors/sahara-surgery-baseline/results.json",
+    "build/city-exteriors/sahara-surgery-final/results.json",
+    "build/city-exteriors/sahara-surgery-walk-final/results.json",
+    "build/city-exteriors/sahara-surgery-preservation.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/sahara-surgery-exterior-collision.bin": "ac39652f9ea7f7ebb6bff632f2f32fb623efb9adfacc660e1d72fb9b773b79ed",
+      "runtime-assets/strip-landmarks/sahara-surgery-interior.glb": "40d068c9c6f7dfcdac9fdf55643f3067fd1a982607eb04e6732ff800fe6004a7",
+      "runtime-assets/strip-landmarks/sahara-surgery-interior-collision.bin": "c852a4180ea1e1d636381dd6131c63878e0616aea1e5b998bef87124be339d15",
+      "runtime-assets/strip-landmarks/sahara-surgery-exterior.glb": "9665e663f68dad5a6a44fcdce68b3f0e3ee0292b26c3b15fe334468b9a83c5bc"
+    }
   }
 }
