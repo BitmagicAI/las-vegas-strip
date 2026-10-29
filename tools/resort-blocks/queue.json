@@ -1312,9 +1312,19 @@
     {
       "id": "jack-tropicana",
       "name": "Jack in the Box 3235 W Tropicana",
+      "status": "refinement-deferred",
+      "record": "jack-tropicana.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Installed exterior verified; exact typography, landscape and unknown public interior retained while advancing city-wide."
+      }
+    },
+    {
+      "id": "standard-tropicana",
+      "name": "Standard / Chevron 3201 W Tropicana",
       "status": "active",
-      "record": "jack-tropicana.json"
+      "record": "standard-tropicana.json"
     }
   ],
-  "active": "jack-tropicana"
+  "active": "standard-tropicana"
 }

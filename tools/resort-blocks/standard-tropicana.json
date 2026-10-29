@@ -1,0 +1,56 @@
+{
+  "id": "standard-tropicana",
+  "name": "Standard / Chevron 3201 W Tropicana",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/431497409",
+    "way/431497411"
+  ],
+  "claim": {
+    "issue": 274,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/274",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/275"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/place/Chevron/@36.1002799,-115.1834479,694m/data=!3m2!1e3!4b1!4m6!3m5!1s0x80c8c5d4acc31b85:0x22c2b0b81222fd!8m2!3d36.1002799!4d-115.1834479!16s%2Fg%2F1v2yz44r",
+      "observed": "Address3201 verified. December2022 JayCViajero photoCIHM0ogKEICAgID-h_ScxQE inspected: broad blue canopy, white supports, Standard lettering, pump islands and tall two-post pylon. June2019 ErikJohansen photoCIHM0ogKEICAgIDEso_WzQE inspected: tanstucco store, brownbase, glazing, small tilehip over eastentrance, redTerribles signs and address3201. Dated branding, current exact finishes unverified.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped store and canopy define plan; heights and facade divisions inferred from dated photography.",
+    "Interior layout unverified. Current brand graphics may differ from dated photographs."
+  ],
+  "implemented": [
+    "Original tan stucco store, brown base, framed glazing and tiled entrance crown; open blue fuel canopy with six pump islands, hoses, screens and roadside pylon.",
+    "Only35 owned shell and35 matching collision faces removed; all retained city geometry exact-equal."
+  ],
+  "remaining": [
+    "Exact typography, current branding, surface texture and weathering, concealed service elevations and landscaping remain approximate.",
+    "Shop interior unverified and remains closed; not photorealistically complete."
+  ],
+  "evidence": [
+    "build/city-exteriors/standard-tropicana-first",
+    "build/city-exteriors/standard-tropicana-walk/results.json",
+    "build/city-exteriors/standard-tropicana-ownership-audit.json",
+    "build/strip-landmarks/standard-tropicana-route-audit.json",
+    "build/city-exteriors/standard-tropicana-packaged"
+  ],
+  "verification": {
+    "sourceTriangles": 3317,
+    "scopedChecks": 159,
+    "actualWalkingSegments": 12,
+    "visualReview": "Three installed daylight views inspected. Fine material detail and typography remain deferred.",
+    "assetsPresent": 1399,
+    "assetsMissing": 0,
+    "bakeBatches": 681
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/standard-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/standard-tropicana-packaged/results.json",
+    "conditions": "960x540 ultra neutral daylight,3cameras180frames. Baseline16.7msmedian18.5\u201319.5msp95; final16.6\u201316.7msmedian18.8\u201319.3msp95."
+  }
+}
