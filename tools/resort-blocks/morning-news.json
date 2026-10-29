@@ -1,14 +1,15 @@
 {
   "id": "morning-news",
   "name": "Morning News Sahara",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/905241567"
   ],
   "claim": {
     "issue": 387,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/387"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/387",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/388"
   },
   "sources": [
     {
@@ -36,12 +37,83 @@
     "Height and room layout fitted, not measured; facade north orientation inferred from parking approach."
   ],
   "remaining": [
-    "Build original exterior and supported public dining room.",
-    "Verify installed views/walking/current collision/performance.",
-    "Full site, private kitchen and fine fidelity remain."
+    "Rear and side facades remain under-detailed pending stronger site-specific reference coverage.",
+    "Full site planting/parking and private kitchen are not modeled.",
+    "Exact room layout, orientation and dimensions are fitted rather than measured; fine material/sign/furniture fidelity still needs refinement.",
+    "Frame pacing remains uneven in some close views. Concurrent unrelated processing confounds comparisons; no locked60fps claim."
   ],
   "nextPass": {
-    "priority": "Build scoped exterior/public dining",
-    "checkpoint": "Claim387confirmed; source photos and aerial personally inspected, no matching other claim."
+    "priority": "Rear facade references, full site and frame pacing",
+    "checkpoint": "Installed exterior/public dining pass verified with six final single-pane daylight views and 16 actual walking segments. Remaining fidelity and performance limitations retained."
+  },
+  "components": [
+    {
+      "id": "exterior",
+      "status": "implemented",
+      "description": "Mapped chamfered shell, cream stucco, dark coping, curved yellow awnings, north storefront and stone piers, roof services."
+    },
+    {
+      "id": "public-dining",
+      "status": "implemented",
+      "description": "Fitted public room, yellow banquettes, bistro furniture, herringbone wood floor, fluted walls, ceiling grid and original abstract art."
+    }
+  ],
+  "levels": [
+    {
+      "id": "threshold",
+      "elevationM": 0.22,
+      "basis": "Fitted raised walk with ramp to current ground."
+    },
+    {
+      "id": "dining-ceiling",
+      "elevationM": 3.42,
+      "basis": "Fitted from photograph, unmeasured."
+    },
+    {
+      "id": "roof",
+      "elevationM": 5.65,
+      "basis": "Fitted to mapped 6m shell and facade proportions, unmeasured."
+    }
+  ],
+  "implemented": [
+    "Original 10,320 triangle exterior and public dining model; optimized exterior/interior each about0.21MiB. Transparent glazing uses single collidable panes.",
+    "Cream stucco/dark coping, yellow curved awnings, stone piers, framed glazing, raised walk/ramp/rail, rooftop services.",
+    "Public dining with yellow banquettes, stone tables, woven bistro chairs, herringbone floor, fluted walls, ceiling grid and original abstract artwork."
+  ],
+  "evidence": [
+    "build/city-exteriors/morning-news-baseline/results.json",
+    "build/city-exteriors/morning-news-preview/results.json",
+    "build/city-exteriors/morning-news-inside-preview/results.json",
+    "build/city-exteriors/morning-news-final/results.json",
+    "build/city-exteriors/morning-news-inside-final/results.json",
+    "build/city-exteriors/morning-news-walk-final/results.json",
+    "build/strip-landmarks/morning-news-route-audit.json",
+    "build/city-exteriors/morning-news-preservation.json",
+    "build/city-exteriors/morning-news-ownership-audit.json",
+    "build/city-exteriors/morning-news-final-pane/results.json",
+    "build/city-exteriors/morning-news-inside-final-pane/results.json",
+    "build/city-exteriors/morning-news-walk-final-pane/results.json"
+  ],
+  "validation": {
+    "static": "121 current-city capsule and support checks passed.",
+    "walking": "16 actual segments passed, dining entrance and north frontage in both directions.",
+    "visual": "Six final daylight views personally inspected. Corrected storefront glazing, floor tiling and chair orientation after previews.",
+    "preservation": "22 owned visual and matching collision triangles replaced;9560 groups otherwise unchanged.",
+    "packaging": "737-batch fresh city bake;1569 runtime assets."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/morning-news-baseline/results.json",
+    "after": "build/city-exteriors/morning-news-final-pane/results.json",
+    "interior": "build/city-exteriors/morning-news-inside-final-pane/results.json",
+    "repeat": "build/city-exteriors/morning-news-performance-repeat/results.json",
+    "glazingAblation": "build/city-exteriors/morning-news-glass-ablation/results.json",
+    "singlePanePreview": "build/city-exteriors/morning-news-pane-preview/results.json",
+    "summary": "960x540 DPR1 ultra: exterior median16.5\u201318.5ms/p9518.9\u201325.6ms; interior median16.7\u201320.9ms/p9523.4\u201332.8ms. Concurrent unrelated CPU work; not a clean A/B or locked60fps."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/morning-news-exterior.glb": "8367bcf9a8fb03f24adc7307b78b6a399760648a609bfd169b4df986cbee684a",
+      "runtime-assets/strip-landmarks/morning-news-interior.glb": "8d74289a33ad6ba4d26d874c51b7cf68bed2eeb8c99098c3b95dcc4c14d58c86"
+    }
   }
 }

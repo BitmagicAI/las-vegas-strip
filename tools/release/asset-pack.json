@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1567,
- "bytes": 1148602670,
+ "count": 1569,
+ "bytes": 1149049900,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19947634,
-   "sha256": "df5cc4a7afb638ef397ecb63f482aab21a92701052063d537c8917050f979ef5",
+   "bytes": 19956394,
+   "sha256": "4be81981a5c8b0ceca10263ef998f9133178926081dbd3e9ea5fac9af42c9009",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13052160,
-   "sha256": "e0f000bc4c38a0b553251cdb3750963c9ac380a8abde5b938b8e5ad7ada859a1",
+   "bytes": 13052076,
+   "sha256": "72efb119ee52d0eb7f0704ba385ca0f992ee4a019785b3fad02b145ad213dced",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109712312,
-   "sha256": "d782dd775c115af9d8b7f4dd83dc1fdb3d7d731abc87032208f65f045557af1a",
+   "bytes": 109711928,
+   "sha256": "9040dcad8daa87ba2ec9efe07dd4208637e38cd62d6c0969f696d77d82d7f6fd",
    "kind": "optimized"
   },
   {
@@ -7757,6 +7757,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/morning-news-exterior.glb",
+   "bytes": 222592,
+   "sha256": "8367bcf9a8fb03f24adc7307b78b6a399760648a609bfd169b4df986cbee684a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/morning-news-interior.glb",
+   "bytes": 215692,
+   "sha256": "8d74289a33ad6ba4d26d874c51b7cf68bed2eeb8c99098c3b95dcc4c14d58c86",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/mortons-flamingo-exterior-collision.bin",
    "bytes": 848,
    "sha256": "76c009f66c779b195c6c9e9affc6bae3146c0a894504709ee9c2abdc892ac145",
@@ -9210,8 +9222,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 378450,
-   "sha256": "9c343431d3ad9c7b7743bf886af5090b8e22271d4cb4f73e57ec36abe90d0cff",
+   "bytes": 379104,
+   "sha256": "c3d059013717a987cd46c1357fa57942e3d2426f9b5fe27c141bace07b1a37e5",
    "kind": "original"
   },
   {
