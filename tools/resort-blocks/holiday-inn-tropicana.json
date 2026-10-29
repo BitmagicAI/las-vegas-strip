@@ -1,0 +1,217 @@
+{
+  "id": "holiday-inn-tropicana",
+  "name": "Holiday Inn Express East Tropicana",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/118363803"
+  ],
+  "claim": {
+    "issue": 383,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/383",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/384"
+  },
+  "sources": [
+    {
+      "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/las-vegas/lasta/hoteldetail/gallery",
+      "provider": "IHG",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Personally inspected exterior images 1/2 and lobby image 3: six storeys, white frames, rust-orange and gray/navy window fields, north canopy; communal wood tables, brown chairs, blue pier panels, wood ceiling and pale plank floor."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Holiday+Inn+Express+175+East+Tropicana+Las+Vegas",
+      "provider": "Google Maps",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Personally inspected aerial: narrow north-south hotel with flat roof, north entrance canopy, south pool and west drive. East Studio 6 remains separate. No image extraction."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped 6m height conflicts with six storeys in photographs; tower height fitted to 21.5m, not measured.",
+    "Public communal room layout fitted to mapped footprint; no measured floor plan."
+  ],
+  "remaining": [
+    "Full south pool/site/landscaping and private guest floors are not implemented.",
+    "Public room furniture and finish types are based on the official photograph, but the plan and connections are inferred.",
+    "Exact facade/window proportions, lettering, stone/wood/upholstery response and unseen sides require refinement; not photorealistic completion.",
+    "Interior entry view measured 19.9ms median/39.3ms p95 at 960x540 ultra; not locked 60fps. Cause unresolved.",
+    "Front exterior 17.1ms median/26.6ms p95 versus baseline 16.5/18.7; roof/west remain around16.6ms. Frame pacing requires further refinement."
+  ],
+  "nextPass": {
+    "priority": "Site, facade fidelity and interior-entry performance refinement",
+    "checkpoint": "Scoped exterior and public communal room installed, inspected and walked. Final facade-depth correction inspected in three exterior views. Continue next unclaimed building with all remaining site, fidelity and performance discrepancies retained."
+  },
+  "triangles": 27562,
+  "performance": {
+    "conditions": "Warm 960x540 DPR1 ultra; identical exterior cameras before/after. Interior has no original baseline.",
+    "baseline": [
+      {
+        "name": "front",
+        "eye": [
+          704,
+          2,
+          1789
+        ],
+        "target": [
+          705,
+          8,
+          1822
+        ],
+        "p50": 16.5,
+        "p95": 18.700000047683716
+      },
+      {
+        "name": "roof",
+        "eye": [
+          666,
+          55,
+          1780
+        ],
+        "target": [
+          705,
+          9,
+          1840
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.899999976158142
+      },
+      {
+        "name": "west",
+        "eye": [
+          682,
+          2,
+          1850
+        ],
+        "target": [
+          700,
+          9,
+          1849
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.399999976158142
+      }
+    ],
+    "interior": [
+      {
+        "name": "tables",
+        "eye": [
+          704,
+          1.9,
+          1816
+        ],
+        "target": [
+          704,
+          1.5,
+          1825
+        ],
+        "p50": 16.799999952316284,
+        "p95": 19.399999976158142
+      },
+      {
+        "name": "entry",
+        "eye": [
+          704,
+          1.9,
+          1825
+        ],
+        "target": [
+          704,
+          1.7,
+          1811
+        ],
+        "p50": 19.899999976158142,
+        "p95": 39.300000071525574
+      },
+      {
+        "name": "seating",
+        "eye": [
+          704,
+          1.9,
+          1826
+        ],
+        "target": [
+          704,
+          1.3,
+          1828
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.299999952316284
+      }
+    ],
+    "after": [
+      {
+        "name": "front",
+        "eye": [
+          704,
+          2,
+          1789
+        ],
+        "target": [
+          705,
+          8,
+          1822
+        ],
+        "p50": 17.100000023841858,
+        "p95": 26.600000023841858
+      },
+      {
+        "name": "roof",
+        "eye": [
+          666,
+          55,
+          1780
+        ],
+        "target": [
+          705,
+          9,
+          1840
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.40000009536743
+      },
+      {
+        "name": "west",
+        "eye": [
+          682,
+          2,
+          1850
+        ],
+        "target": [
+          700,
+          9,
+          1849
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.5
+      }
+    ]
+  },
+  "optimizedMiB": {
+    "exterior": 0.84,
+    "interior": 0.24
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/holiday-inn-tropicana-exterior-collision.bin": "72d541ac972665426fc80916467b02ed610d91b16e51ab592c1e610e9e9edd5d",
+      "runtime-assets/strip-landmarks/holiday-inn-tropicana-exterior.glb": "d326ae1194c6578d55a5c59c7377e1f3584d755ec466597fcae90ca5e089a472",
+      "runtime-assets/strip-landmarks/holiday-inn-tropicana-interior-collision.bin": "948401984cdd5f8d0f4b37f4a9faedcd229af8fc6f651075043a3272d4b6e4d7",
+      "runtime-assets/strip-landmarks/holiday-inn-tropicana-interior.glb": "503290185a205eade9638ecfc3a6d02c5ed0e83d687ce055d5889ef39d056a80"
+    }
+  },
+  "tests": [
+    "100 current-city static route checks passed.",
+    "12 actual walking segments passed, canopy approach and public communal room entrance/return.",
+    "188 owned visual/collider triangles removed; 9560 groups and all non-owned faces preserved.",
+    "Type and public-package checks passed; preexisting public-email warning only.",
+    "Six final installed daylight views inspected; corrected coplanar orange panel/vent overlap; fresh735-batch city bake and1565 runtime assets."
+  ],
+  "viewsInspected": [
+    "build/city-exteriors/holiday-inn-tropicana-final-depth/holiday-inn-front.png",
+    "build/city-exteriors/holiday-inn-tropicana-final-depth/holiday-inn-roof.png",
+    "build/city-exteriors/holiday-inn-tropicana-final-depth/holiday-inn-west.png",
+    "build/city-exteriors/holiday-inn-tropicana-inside-final/holiday-inn-entry.png",
+    "build/city-exteriors/holiday-inn-tropicana-inside-final/holiday-inn-seating.png",
+    "build/city-exteriors/holiday-inn-tropicana-inside-final/holiday-inn-tables.png"
+  ]
+}

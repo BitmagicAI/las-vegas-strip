@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1561,
- "bytes": 1145704401,
+ "count": 1565,
+ "bytes": 1146867613,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19896149,
-   "sha256": "1c99d7b68f70fd3ce3d4cd7b9a75328847e6df7d00372299f7e05d2fd3aedf81",
+   "bytes": 19925521,
+   "sha256": "d91bbe0f2db30c33aa5992e2e2804ac59ff1dfa5cb6f1697bf31c0af4f54f94a",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13052492,
-   "sha256": "2b90b6305726bda35cc9461eb976509b3fae126698d3047db412ede655675213",
+   "bytes": 13051972,
+   "sha256": "2ee81437a90a5bff69e36bd310f97fb2ed31f7a0986bf1ee5b4a6fe08d4af912",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109715216,
-   "sha256": "1acb6dca8d8858b9ecf4eee03d6b9dbef3f941f0c985d160a7c136f657854ca6",
+   "bytes": 109713240,
+   "sha256": "a4e6f51631553172686ed823b10a9310f10cc2fc6d896be35631b966c28fbac9",
    "kind": "optimized"
   },
   {
@@ -7061,6 +7061,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/holiday-inn-tropicana-exterior-collision.bin",
+   "bytes": 808,
+   "sha256": "72d541ac972665426fc80916467b02ed610d91b16e51ab592c1e610e9e9edd5d",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/holiday-inn-tropicana-exterior.glb",
+   "bytes": 883024,
+   "sha256": "d326ae1194c6578d55a5c59c7377e1f3584d755ec466597fcae90ca5e089a472",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/holiday-inn-tropicana-interior-collision.bin",
+   "bytes": 1004,
+   "sha256": "948401984cdd5f8d0f4b37f4a9faedcd229af8fc6f651075043a3272d4b6e4d7",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/holiday-inn-tropicana-interior.glb",
+   "bytes": 250868,
+   "sha256": "503290185a205eade9638ecfc3a6d02c5ed0e83d687ce055d5889ef39d056a80",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/hollywood-cars-museum-exterior-collision.bin",
    "bytes": 340,
    "sha256": "dc0ceeb1b5181131168e6522d66cf5cd3238040994aaf667facc731feef11bf3",
@@ -9174,8 +9198,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 377466,
-   "sha256": "6e2c83cc280ec5ff3d8044fe794573b6ff848af6b6f940e08237622c5b195301",
+   "bytes": 378098,
+   "sha256": "50848fc9e28ad6b154946926f600dc413a899b95ab36d59e385cc7b157d2b8a3",
    "kind": "original"
   },
   {
