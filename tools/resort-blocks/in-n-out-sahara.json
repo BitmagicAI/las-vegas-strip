@@ -1,14 +1,15 @@
 {
   "id": "in-n-out-sahara",
   "name": "In-N-Out West Sahara",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/276426443"
   ],
   "claim": {
     "issue": 377,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/377"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/377",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/378"
   },
   "sources": [
     {
@@ -30,12 +31,186 @@
     "Dining furniture arrangement not verified; private kitchen excluded"
   ],
   "remaining": [
-    "Author exterior and public counter room",
-    "Install and visually inspect; walk entrance/return",
-    "Record performance, preservation and full-site limitations"
+    "Public room placement and dimensions inferred; no measured floorplan",
+    "Private kitchen and unevidenced dining furniture/areas excluded",
+    "Full parking, landscaping, umbrellas and detached signs remain unfinished",
+    "Unseen facades, tile and palm motif, signage, fine materials and roof fidelity need refinement",
+    "Pickup-side view median19.5ms/p9527.4ms versus baseline17.6/23.1; not locked60fps, broader skyline performance unresolved"
   ],
   "nextPass": {
-    "priority": "Exterior and public counter room",
-    "checkpoint": "Claim377 confirmed; no overlapping mapped parts. Geometry not authored."
+    "priority": "Full-site, facade and performance refinement",
+    "checkpoint": "Installed scoped exterior/public counter pass verified. Six daylight views and actual entrance/return inspected."
+  },
+  "triangles": 10224,
+  "optimizedMiB": {
+    "exterior": 0.25,
+    "interior": 0.32
+  },
+  "viewsInspected": [
+    "build/city-exteriors/in-n-out-sahara-final/ino-entry.png",
+    "build/city-exteriors/in-n-out-sahara-final/ino-roof.png",
+    "build/city-exteriors/in-n-out-sahara-final/ino-drive.png",
+    "build/city-exteriors/in-n-out-sahara-inside-final/ino-counter.png",
+    "build/city-exteriors/in-n-out-sahara-inside-final/ino-entry.png",
+    "build/city-exteriors/in-n-out-sahara-inside-final/ino-tiles.png"
+  ],
+  "tests": [
+    "156 current-city static route checks passed",
+    "14 actual walking segments passed, including entrance/counter/return",
+    "61 owned visual/collider triangles removed, all 9560 groups preserved",
+    "Six final installed daylight views personally inspected",
+    "Type checks and public/record checks pass; current 732-batch city bake, 1553 runtime assets"
+  ],
+  "performance": {
+    "conditions": "Warm daylight 960x540 DPR1 ultra, static views; not locked 60fps",
+    "baseline": [
+      {
+        "name": "entry",
+        "eye": [
+          -665,
+          2,
+          -3183
+        ],
+        "target": [
+          -682,
+          3,
+          -3198
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.5
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -656,
+          34,
+          -3181
+        ],
+        "target": [
+          -683,
+          2,
+          -3208
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.59999990463257
+      },
+      {
+        "name": "drive",
+        "eye": [
+          -700,
+          2,
+          -3223
+        ],
+        "target": [
+          -685,
+          2.7,
+          -3210
+        ],
+        "p50": 17.600000023841858,
+        "p95": 23.100000023841858
+      }
+    ],
+    "after": [
+      {
+        "name": "entry",
+        "eye": [
+          -665,
+          2,
+          -3183
+        ],
+        "target": [
+          -682,
+          3,
+          -3198
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.899999976158142
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -656,
+          34,
+          -3181
+        ],
+        "target": [
+          -683,
+          2,
+          -3208
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.799999952316284
+      },
+      {
+        "name": "drive",
+        "eye": [
+          -700,
+          2,
+          -3223
+        ],
+        "target": [
+          -685,
+          2.7,
+          -3210
+        ],
+        "p50": 19.5,
+        "p95": 27.399999976158142
+      }
+    ],
+    "interior": [
+      {
+        "name": "counter",
+        "eye": [
+          -682.78,
+          1.85,
+          -3198
+        ],
+        "target": [
+          -682.78,
+          1.8,
+          -3204.2
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.399999976158142
+      },
+      {
+        "name": "entry",
+        "eye": [
+          -681,
+          1.85,
+          -3202
+        ],
+        "target": [
+          -682.78,
+          1.8,
+          -3195
+        ],
+        "p50": 19.299999952316284,
+        "p95": 25.399999976158142
+      },
+      {
+        "name": "tiles",
+        "eye": [
+          -685,
+          1.85,
+          -3200
+        ],
+        "target": [
+          -678,
+          1.8,
+          -3203
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.5
+      }
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/in-n-out-sahara-exterior.glb": "71905541944231d35fe83904825982b95054ebfdcebc457d50725e6e711d304b",
+      "runtime-assets/strip-landmarks/in-n-out-sahara-interior.glb": "0cf367b7b2d2df76960681abc5cc57b5904c5be9ed81f31f64c1bb601991ca11",
+      "runtime-assets/strip-landmarks/in-n-out-sahara-exterior-collision.bin": "b01a9bbdb97871634ea8e5092ecbc14e650adfa83698504eee3aa4fbe8c369ad",
+      "runtime-assets/strip-landmarks/in-n-out-sahara-interior-collision.bin": "e494c7d8f3ded928db166af523c85125df8a16752ef94699a2212b5e090b6dd2"
+    }
   }
 }
