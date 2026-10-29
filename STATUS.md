@@ -10,7 +10,7 @@ and the runtime asset list. Open work is in [tasks/BOARD.md](tasks/BOARD.md).
 - **Mapped buildings reviewed:** 631 buildings in the inventory (every mapped building at least 35 m tall and 500 m², plus every footprint within 200 m of Las Vegas Boulevard).
 - **Hotel guest floors:** 49 hotel sets with a streamed lobby, corridors, stairs and enterable rooms (`build/hotels/`).
 - **Authored public interiors:** 24 streamed venues at the Venetian, Palazzo, LINQ, Vanderpump, Fashion Show, the Arena, Park MGM, Treasure Island, Harrah's, Polo Towers, the Cosmopolitan, Bellagio and Paris. Compressed, photo-informed lobbies and casinos in the city level for Caesars, Flamingo, Horseshoe, Planet Hollywood, ARIA, Vdara, Waldorf Astoria, Veer and Crystals. The Sphere has an interior and video skin, and the Big Apple Coaster is rideable.
-- **Runtime assets:** 1529 files, 1084 MiB in the asset pack (revision 2026-10-28).
+- **Runtime assets:** 1533 files, 1084 MiB in the asset pack (revision 2026-10-28).
 
 ## Inventory status (mapped buildings)
 

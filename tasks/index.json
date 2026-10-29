@@ -14605,10 +14605,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Research remaining frontage and public room",
-    "Author original geometry",
-    "Install and visually inspect",
-    "Static and walking checks, performance, package"
+    "Lo-Lo’s dining room not authored; interior references insufficient",
+    "Refine material, sign typography, site landscaping, patio fixtures and side/rear elevations",
+    "Northern end glazing and all room dimensions inferred; verify against closer references",
+    "SIXT furniture, monitors, wall artwork and lighting remain simplified"
    ],
    "record": "tools/resort-blocks/lolos-hughes.json",
    "buildings": [],
@@ -14620,7 +14620,13 @@
     "writes": [
      "tools/resort-blocks/lolos-hughes.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-lolos-hughes.mjs",
+     "tools/city-exteriors/install-lolos-hughes.py",
+     "tools/strip-landmarks/export_lolos_hughes.py",
+     "tools/city-exteriors/check-lolos-hughes-preservation.py",
+     "tools/strip-landmarks/lolos_hughes.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
