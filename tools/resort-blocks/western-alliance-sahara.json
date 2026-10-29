@@ -1,0 +1,63 @@
+{
+  "id": "western-alliance-sahara",
+  "name": "Western Alliance Bank Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/1414999317",
+    "way/1414999318"
+  ],
+  "claim": {
+    "issue": 395,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/395"
+  },
+  "sources": [
+    {
+      "url": "https://www.westernalliancebancorporation.com/about-us/locations?city=Las+Vegas&url=",
+      "accessed": "2026-10-29",
+      "observed": "Official Sahara branch2700WestSahara; surveyBankofAmerica identity outdated."
+    },
+    {
+      "url": "https://www.westernalliancebancorporation.com/sites/default/files/styles/location_webp/public/2025-09/sahara-location.jpg.jpg?itok=VyKt0eGS",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected cream multistory facade, rounded copper-toned fascia/crown, terra-cotta low roofs, braced entrance supports. Actual image dateunknown; missing sign may be edited."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14453,-115.17818&heading=0",
+      "accessed": "2026-10-29",
+      "imageDate": "January2026",
+      "observed": "Personally inspected JxI3h_XZjDf2tX36rbv9qg: WA-style signage on southeast curved tower, vertical narrow dark glazing, cream facade, tile lowroof, grass/shrubs/rocks/trees."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1450156,-115.1781607,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected rotated main building, flat central roof, southwest lowroof/entrycourt,northwesttilewing,northeastdrive-through,westparking,eastPaseoDelPrado,southSahara."
+    }
+  ],
+  "uncertainDimensions": [
+    "Survey6m height visibly wrong; office heights and roof divisions fitted from photos.",
+    "No measured plan or referenced public interior."
+  ],
+  "components": [
+    {
+      "id": "office-block",
+      "status": "planned"
+    },
+    {
+      "id": "entrance-low-roofs",
+      "status": "planned"
+    },
+    {
+      "id": "drive-through-canopy",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build and inspect original scoped exterior with actual route/performance checks.",
+    "Precise elevations, full site and fine fidelity remain unverified."
+  ],
+  "nextPass": {
+    "priority": "Scoped exterior",
+    "checkpoint": "395claim confirmed; sources inspected; draft scope."
+  }
+}
