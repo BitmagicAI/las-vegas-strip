@@ -1,0 +1,183 @@
+{
+  "id": "tacos-mexico-sahara",
+  "name": "Tacos Mexico #2 \u2014 Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/907577008"
+  ],
+  "claim": {
+    "issue": 324,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/324",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/325"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=6toXwoL2mXFsk_gcXh5ZKw&heading=0&pitch=0",
+      "observed": "Feb2025 south facade inspected at36.144509,-115.1916598. Folded W-profile light gray roof with red fascia, central peaked glazed entry, cream stone piers with red patches, side windows, red posts, red paved apron and pylon east. Supersedes inconsistent historical2014 listing photo; do not model historical fascia."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Tacos+Mexico/@36.1447029,-115.1916704,18z/",
+      "observed": "Vegas G Nov2025 photo CIABIhC8Fn8HKmv4RzPg-zk_8cEp (captureOct2025): red/cream checkerfloor, red booths, pale laminate tables, cream square tiled wainscot/red border, white upper walls and glass entry. Laura Daley Jul2024 photo CIHM0ogKEICAgIDbgPasKw: stainless diamond-faced ordering counter, red/white menu panels, serving opening and red upper band. Photos visually inspected; no pixels copied."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint about19x13m; roof heights/folds, exact room arrangement and hidden services estimated. Private kitchen remains closed."
+  ],
+  "implemented": [
+    "Original 21,887-triangle exterior and public dining room; folded roof, red fascia and entrance piers, front glazing, estimated pylon/services, checker tiles, six booths, pale laminate tables and diamond-faced stainless counter.",
+    "25 owned faces removed with 9560 groups preserving vertices, metadata and retained order; 83 current-city clearance samples and 1512 furniture vertices inside mapped shell.",
+    "Final three daylight exterior and four interior views inspected; clipped booths corrected and return camera moved to aisle. Optimized exterior0.12MiB/interior0.53MiB, current706batch bake and1469assets with none missing. Typecheck/public checks pass (existing inventory warning only).",
+    "Final 12 actual walking segments pass; walking return inspected."
+  ],
+  "remaining": [
+    "Exact roof depths, stone relief, signage, pylon panels, opaque glazing, side/rear services and roof material repetition need refinement.",
+    "Public room footprint and layout inferred from photographs; menu panels are original simplified graphics, booth upholstery and metal embossing simplified. Kitchen/private areas closed.",
+    "Roads and parking retained; existing site paving differs from photographs. Bright ceiling pools and front-view p95 frame-time variation remain."
+  ],
+  "nextPass": {
+    "priority": "Continue with claimed T-Mobile Sahara326.",
+    "checkpoint": "Final installed exterior/interior and walking verified; preserve all listed fidelity discrepancies. Superseded interior captures must not be used as current evidence."
+  },
+  "evidence": [
+    "build/city-exteriors/tacos-mexico-sahara-baseline-clean/tacos-mexico-sahara-south-front.png",
+    "build/city-exteriors/tacos-mexico-sahara-baseline-clean/tacos-mexico-sahara-southwest.png",
+    "build/city-exteriors/tacos-mexico-sahara-baseline-clean/results.json",
+    "build/city-exteriors/tacos-mexico-sahara-baseline-clean/tacos-mexico-sahara-roof.png",
+    "build/city-exteriors/tacos-mexico-sahara-final/tacos-mexico-sahara-south-front.png",
+    "build/city-exteriors/tacos-mexico-sahara-final/tacos-mexico-sahara-southwest.png",
+    "build/city-exteriors/tacos-mexico-sahara-final/results.json",
+    "build/city-exteriors/tacos-mexico-sahara-final/tacos-mexico-sahara-roof.png",
+    "build/city-exteriors/tacos-mexico-sahara-interior-final/tacos-mexico-sahara-counter.png",
+    "build/city-exteriors/tacos-mexico-sahara-interior-final/results.json",
+    "build/city-exteriors/tacos-mexico-sahara-interior-final/tacos-mexico-sahara-entrance.png",
+    "build/city-exteriors/tacos-mexico-sahara-interior-final/tacos-mexico-sahara-booths.png",
+    "build/city-exteriors/tacos-mexico-sahara-interior-final/tacos-mexico-sahara-return.png",
+    "build/city-exteriors/tacos-mexico-sahara-walk-final/results.json",
+    "build/city-exteriors/tacos-mexico-sahara-walk-final/walk-return-0.png",
+    "build/city-exteriors/tacos-mexico-sahara-furniture-audit.json",
+    "build/city-exteriors/tacos-mexico-sahara-preservation.json"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.7,
+        19
+      ],
+      [
+        16.6,
+        18.9
+      ],
+      [
+        16.6,
+        19.1
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.7,
+        24.4
+      ],
+      [
+        16.7,
+        18.4
+      ],
+      [
+        16.6,
+        18.3
+      ]
+    ],
+    "interior": [
+      {
+        "view": "entrance",
+        "position": {
+          "x": -1683,
+          "y": 0.03999999046325681,
+          "z": -3187.39990234375
+        },
+        "resident": {
+          "landmarks": [
+            "tacos-mexico-sahara"
+          ],
+          "resorts": [],
+          "guest": {
+            "stairs": 14,
+            "corridors": 0,
+            "rooms": 0
+          },
+          "interiorBatches": 0
+        },
+        "p50": 16.600000023841858,
+        "p95": 18
+      },
+      {
+        "view": "booths",
+        "position": {
+          "x": -1683,
+          "y": 0.03999999046325681,
+          "z": -3192.39990234375
+        },
+        "resident": {
+          "landmarks": [
+            "tacos-mexico-sahara"
+          ],
+          "resorts": [],
+          "guest": {
+            "stairs": 14,
+            "corridors": 0,
+            "rooms": 0
+          },
+          "interiorBatches": 0
+        },
+        "p50": 16.699999928474426,
+        "p95": 18.200000047683716
+      },
+      {
+        "view": "counter",
+        "position": {
+          "x": -1683,
+          "y": 0.03999999046325681,
+          "z": -3194.10009765625
+        },
+        "resident": {
+          "landmarks": [
+            "tacos-mexico-sahara"
+          ],
+          "resorts": [],
+          "guest": {
+            "stairs": 14,
+            "corridors": 0,
+            "rooms": 0
+          },
+          "interiorBatches": 0
+        },
+        "p50": 16.699999928474426,
+        "p95": 18.699999928474426
+      },
+      {
+        "view": "return",
+        "position": {
+          "x": -1685,
+          "y": 0.03999999046325681,
+          "z": -3194.39990234375
+        },
+        "resident": {
+          "landmarks": [
+            "tacos-mexico-sahara"
+          ],
+          "resorts": [],
+          "guest": {
+            "stairs": 14,
+            "corridors": 0,
+            "rooms": 0
+          },
+          "interiorBatches": 0
+        },
+        "p50": 16.699999928474426,
+        "p95": 18.700000047683716
+      }
+    ],
+    "note": "960x540 ultra; fixed daylight exterior, normal interior lighting, shared machine. Front p95 variable; do not claim locked60fps."
+  }
+}
