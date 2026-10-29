@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1437,
- "bytes": 1090114927,
+ "count": 1441,
+ "bytes": 1091837566,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19155297,
-   "sha256": "75f9ec50f71a2ed43e34f719d18047c9431a36a0ff3ef79f587be010204017ab",
+   "bytes": 19187552,
+   "sha256": "e89072e928d225a1073b290324f9c29814c10e82f817dc00b60e34f84d47e983",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13061708,
-   "sha256": "55ebb1b5fc06afb9f9d04b831e7cea56475dd861d7dc286e8c22c424bf837910",
+   "bytes": 13062184,
+   "sha256": "ab08c1c30bc903417824adb22bf589bf9ba0cf4a71e22cf1f3dcd9c97661a1bd",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109749020,
-   "sha256": "7157f7d9eff7a13d8b0d202c5153cf5a52d2a1c5e9072bf834c2a114f5889b0a",
+   "bytes": 109748868,
+   "sha256": "41d3678c9c72e5ac57dc33dcaede2ead29786a0498204d3f8f6c769ad5d1e2fe",
    "kind": "optimized"
   },
   {
@@ -6893,6 +6893,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/kung-fu-plaza-exterior-collision.bin",
+   "bytes": 388,
+   "sha256": "85028f2e3cb45793eb3a48e4b442592b640de9a3b87e744106bed80837c7155f",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/kung-fu-plaza-exterior.glb",
+   "bytes": 1470268,
+   "sha256": "30d138a55a40c97c15db8979a011a606e4c6fb3041c78d1c7df9ac2f8bea3c6f",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/kung-fu-plaza-interior-collision.bin",
+   "bytes": 1732,
+   "sha256": "86b24e7eb87a91854c7dc8e762bb0034b4e1ba8037db632a6e4a7ee1bd689cff",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/kung-fu-plaza-interior.glb",
+   "bytes": 216728,
+   "sha256": "91d62be13da3ee67304e3ca47ea7fcd784bc482176dd3c5acdbbf586e2c46b80",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/laughingJackalope-exterior-collision.bin",
    "bytes": 2588,
    "sha256": "ae14648dbbb1d59b082a9f15a84298270b33d27e6000a69bf532aca712bb6914",
@@ -8442,8 +8466,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 353892,
-   "sha256": "a8d9a285a45966590226475fd5da5861027b9118fdef57051ed9cc1e7b3b55b8",
+   "bytes": 354836,
+   "sha256": "66424528619454783a8d85dbac126ae7aeab90c8acf0d654cc67bcae7fa83d1f",
    "kind": "original"
   },
   {

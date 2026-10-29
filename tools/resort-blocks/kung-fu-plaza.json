@@ -1,0 +1,130 @@
+{
+  "id": "kung-fu-plaza",
+  "name": "Kung Fu Thai & Chinese Restaurant",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1391666928"
+  ],
+  "claim": {
+    "issue": 306,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/306",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/307"
+  },
+  "sources": [
+    {
+      "url": "https://www.kungfuplaza.com/kungfu-plaza",
+      "observed": "Official address3505 S ValleyView and public dining/bar."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lQp0KLW8ViGOgGdxQRfYVQ&heading=270&pitch=0",
+      "observed": "January2026 east-facing entrance; curved blue tile roof, terracotta fascia and columns, glazing, planters. Taller north corner pavilion occupied by PowerSoul Cafe."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Kung+Fu+Thai+%26+Chinese+Restaurant/@36.126061,-115.1904716,18z/",
+      "observed": "Owner Nov2020 exterior photo CIHM0ogKEICAgIC6jP_EsQE; SarahLockhart Oct2026 dining photo CIABIhA0S1x7lq28sK09Px9LgoPg: burgundy booths/grid ceiling, cream beams, red spindle chairs, pale tables, brown carpet, bar at far end."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.126061,-115.1904716,173m/data=!3m1!1e3",
+      "observed": "Aerial footprint on west side of ValleyView, south of RenateDrive; roof plant and street-facing roof band."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped bounds[-1583.16,-1137.674,-1567.791,-1103.788]. Approx15x34m. Heights, precise roof curvature and tenant partition inferred.",
+    "Interior photo establishes furnishings/materials only; public dining/bar connection interpreted. Hidden kitchen/service and neighboring cafe interior excluded."
+  ],
+  "implemented": [
+    "Exterior, aerial and public dining references visually inspected; claim306 confirmed.",
+    "Three matching baseline daylight views visually inspected; median/p95ms16.7/20.7,16.6/21.8,16.6/29.4.",
+    "Original31658-triangle exterior/public dining source built; facade alignment corrected to mapped angle after source inspection.58 source clearance checks pass.",
+    "Entrance, roof, dining and bar source renders reviewed. Not installed yet.",
+    "Revised source 32,307 triangles; inward reveals, original finish maps, wall panels and crest. Optimized exterior/interior total about1.6MB installed.",
+    "Targeted replacement removed10 owned faces;9560 mesh groups preserve vertices/metadata/retained face order.58 scoped current-city checks pass.",
+    "Three installed daylight exterior and four public interior views visually inspected. Eight actual entrance/dining/bar and return walking segments pass.697-batch bake current;1441 assets present,0 missing."
+  ],
+  "remaining": [
+    "Exact roof hip/ridge proportions and edge closure, sign artwork, glazing transparency and landscape fidelity remain simplified.",
+    "Public room dimensions/connections inferred; private service and cafe interior excluded. Original geometric decor substitutes for photographed art; carpet and wood patterns too regular.",
+    "Booth view median36.4/p9548.6ms; not a stable60fps result. Other interior median17.6\u201321.4ms. Further performance/fidelity work needed."
+  ],
+  "nextPass": {
+    "priority": "Refine remaining roof/material/decor/performance gaps later; continue city expansion.",
+    "checkpoint": "Installed pass visually and physically reviewed. Next claimed building Wahoo issue308."
+  },
+  "evidence": [
+    "build/city-exteriors/kung-fu-plaza-baseline/results.json",
+    "build/city-exteriors/kung-fu-plaza-source-review/entrance.png",
+    "build/city-exteriors/kung-fu-plaza-source-review/roof.png",
+    "build/city-exteriors/kung-fu-plaza-source-review/dining.png",
+    "build/city-exteriors/kung-fu-plaza-source-review/bar.png",
+    "build/strip-landmarks/kung-fu-plaza-route-audit.json",
+    "build/city-exteriors/kung-fu-plaza-source-review/booths.png",
+    "build/city-exteriors/kung-fu-plaza-installed/results.json",
+    "build/city-exteriors/kung-fu-plaza-interior-installed/results.json",
+    "build/city-exteriors/kung-fu-plaza-walk/results.json",
+    "build/city-exteriors/kung-fu-plaza-ownership-audit.json"
+  ],
+  "publicInteriorPlan": {
+    "status": "inferred from public photograph; verify source and installed views",
+    "floorDatumM": 0.16,
+    "rooms": [
+      {
+        "name": "public dining",
+        "estimatedSizeM": [
+          11,
+          20
+        ],
+        "ceilingM": 3.4
+      },
+      {
+        "name": "bar alcove",
+        "estimatedSizeM": [
+          5,
+          3.5
+        ],
+        "ceilingM": 3.4
+      }
+    ],
+    "connections": [
+      "East street entrance through recessed twin-door opening to central dining aisle",
+      "Dining aisle to bar alcove; return through entrance"
+    ],
+    "excluded": [
+      "Hidden kitchen and service rooms",
+      "North neighboring cafe interior"
+    ],
+    "clearances": "Keep central aisle at least1.5m and door opening at least1.6m; test table/booth approach and return."
+  },
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.7,
+        20.7
+      ],
+      [
+        16.6,
+        21.8
+      ],
+      [
+        16.6,
+        29.4
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        17.3,
+        26.3
+      ],
+      [
+        17.5,
+        26.4
+      ],
+      [
+        17.8,
+        22.1
+      ]
+    ],
+    "note": "Matching960x540ultra daylight exterior views; shared machine. Interior entrance19.1/23.8,dining21.4/28.9,booths36.4/48.6,bar17.6/21.5ms."
+  }
+}
