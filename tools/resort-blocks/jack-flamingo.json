@@ -1,0 +1,60 @@
+{
+  "id": "jack-flamingo",
+  "name": "Jack in the Box East Flamingo",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/445000146"
+  ],
+  "claim": {
+    "issue": 373,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/373",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/374"
+  },
+  "sources": [
+    {
+      "url": "https://locations.jackinthebox.com/us/nv/las-vegas/780-e-flamingo-rd",
+      "observed": "Official address780EastFlamingo confirms identity."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Jack+in+the+Box+780+E+Flamingo+Las+Vegas",
+      "observed": "Mr.T Oct2026 photo CIABIhDSqPFqYU0G3OY1rnjjwLSE personally inspected: red raised entry bay/darkpiers, smallgrayawning, tan horizontalfacade,tallglazing,lowmonumentsign,desertplanting. LasVegas Apr2026video CIABIhBVSluWEaaj4EmK9WH9kHYI firstframe inspected: tan squarefloor tiles,red roundcorner tables,metal slatbackchairs,amberpendants,windowcounter,acousticceilinggrid."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.114999,-115.1469353,20z/data=!3m1!1e3",
+      "observed": "Aerial inspected: east-west lowrise, northentry/southservice projections,flatwhiteequipmentroof,southdrive-through,north/eastparking."
+    }
+  ],
+  "uncertainDimensions": [
+    "Dimensions and dining arrangement fitted from photographs, not a measured plan",
+    "Exact facade bay placement and entry side need reconciliation before authoring",
+    "Private kitchen layout unknown and excluded"
+  ],
+  "remaining": [
+    "Room layout and dimensions inferred; private kitchen excluded",
+    "North entry projection and unseen side details need closer references",
+    "Monument sign and full site planting/paving unfinished",
+    "Fine furniture, glazing, branding and material fidelity remain approximate"
+  ],
+  "nextPass": {
+    "priority": "Site, north entry and fine dining/facade refinement",
+    "checkpoint": "5855triangles,0.20/0.09MiB exterior/interior. Sixfinalinstalleddaylightviews personallyinspected.159staticchecks and16actualwalksegments pass.64ownedfaces/collidersremoved,9560groupspreserved.730batchfreshbake/1547assets. Notphotorealcomplete."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/jack-flamingo-baseline/results.json",
+    "baselineSummary": "960x540 DPR1 ultra warm median16.7\u201319.3ms,p9517.5\u201321ms.",
+    "finalExterior": "build/city-exteriors/jack-flamingo-final/results.json",
+    "finalInterior": "build/city-exteriors/jack-flamingo-interior-final/results.json",
+    "summary": "960x540 DPR1 ultra warm exterior median16.6\u201319.5ms,p9518.2\u201322.7; interior16.6\u201319.3,p9517.6\u201320.9. Exterior baseline16.7\u201319.3,p9517.5\u201321. Not locked60."
+  },
+  "verification": {
+    "views": [
+      "build/city-exteriors/jack-flamingo-final",
+      "build/city-exteriors/jack-flamingo-interior-final"
+    ],
+    "walking": "build/city-exteriors/jack-flamingo-walk-final/results.json",
+    "staticChecks": 159,
+    "actualWalkingSegments": 16
+  }
+}

@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1543,
- "bytes": 1140325054,
+ "count": 1547,
+ "bytes": 1140634769,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19774986,
-   "sha256": "2b29118206b6f1c62bfc73f2b98c24d03b64b77872dbd1604004e0c5bad54155",
+   "bytes": 19782217,
+   "sha256": "1dcd20aa10c1815d811f891a5f75944ccd52566861077b62dad74e977075491c",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13055460,
-   "sha256": "c0d69e69a9f8b48270e68c39893c5b942833088a5270ea1b4e48101465f11358",
+   "bytes": 13055340,
+   "sha256": "2c2810afd50de3379d429fa6f83fd64b1c601e9198458b32a3ecd30f1c5f29e7",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109725200,
-   "sha256": "e79fea6769a74d4376367b7bff04f2b173628b1dfc4786e641035441935f0872",
+   "bytes": 109724276,
+   "sha256": "d1a5150aba8c6a43b790440f82dd084b37b940ba02276d5bce6851c997b868eb",
    "kind": "optimized"
   },
   {
@@ -7181,6 +7181,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/jack-flamingo-exterior-collision.bin",
+   "bytes": 520,
+   "sha256": "9405e753c6dc63d3d6fd734468c4af232a0416dce93a52501726f4e0fc6044eb",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/jack-flamingo-exterior.glb",
+   "bytes": 206408,
+   "sha256": "7cdd0c968d4fb6f04134cfa48564a29e9a9dbfa496cf1e827fc61bc22ab9f22a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/jack-flamingo-interior-collision.bin",
+   "bytes": 600,
+   "sha256": "a375cb7f2bfe47c987b133e94c8987db4d0eb5c19b52f10d494273a4d3a6f62b",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/jack-flamingo-interior.glb",
+   "bytes": 95272,
+   "sha256": "367ee00e5a6a4b747787076c4fa4c4dc94e55395b63b14256ac9cbc281c29f36",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/jack-tropicana-exterior-collision.bin",
    "bytes": 256,
    "sha256": "d94e2424c6428f099f985d55b3279f184e659f4161c2e772fd7ca345ec471a88",
@@ -9066,8 +9090,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 374338,
-   "sha256": "481ce8203a612856fce2f593adcfab1d886c7e28953aaad5c19732107f5edd14",
+   "bytes": 375066,
+   "sha256": "599cf2502503344166bb84703fd4611b20aca150401a7be1b1e1b3bc01197719",
    "kind": "original"
   },
   {
