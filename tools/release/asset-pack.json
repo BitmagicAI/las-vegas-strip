@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1473,
- "bytes": 1113207030,
+ "count": 1477,
+ "bytes": 1113793218,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19395422,
-   "sha256": "e720b3dc8b4f4c98d0b6ceb819b0c2f25d0d5f1e6340da853672aed380a97468",
+   "bytes": 19409660,
+   "sha256": "e54568aa3fccb86c8b0fc58e3f0b058e47d084a3b413a486b9059345b6f5511f",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13060428,
-   "sha256": "9b89c8a30f89cfbf522d6b8a3abf8e277c5d7c4033e3fe1777231a09928c9ffe",
+   "bytes": 13060236,
+   "sha256": "313e4e2763445aacf02352b2dd2fafeaa96c5720f70fa5d24346e8d1ebec87bf",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109744104,
-   "sha256": "8fafca4828eb062fe93a3a4982591d0b859fdb1aeebedab4637b7cb6162cc7d7",
+   "bytes": 109743952,
+   "sha256": "83cedd5e7b8f6e3c4833e32340ec2acc14275483a802cf42c93e7ceff321ef44",
    "kind": "optimized"
   },
   {
@@ -6497,6 +6497,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/flex-twain-exterior-collision.bin",
+   "bytes": 320,
+   "sha256": "8860acf85b82ee439690d69e57371690b870d4610d8b23427641e8cd11c63d99",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/flex-twain-exterior.glb",
+   "bytes": 263116,
+   "sha256": "a10fbd12fe5ebc7a4e8cbc989b075d33923ecac6915f6d3fd0e7f910e653d1c4",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/flex-twain-interior-collision.bin",
+   "bytes": 604,
+   "sha256": "b3bd0c7f56cefa02657eca2c55f03f01ffa9bf374b40258e172ba41cc3640346",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/flex-twain-interior.glb",
+   "bytes": 307300,
+   "sha256": "884933c6e60ffea10388b38210419951a9883cd862232d160f7f6bb236ec9b84",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/fontainebleauExterior-exterior-collision.bin",
    "bytes": 2552,
    "sha256": "5abbfe6bf1ee7f7494f2446ff77c261b1c496aefa4709a09c7ad1307a6739778",
@@ -8646,8 +8670,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 360810,
-   "sha256": "583d5c56b96c672fce5f56c3c1b4ef808617feef48f7a1d42e4a3fda73eed099",
+   "bytes": 361764,
+   "sha256": "6a68fd189d0d12765e31bb92a07372f3b5d657553b50fa5919d4e2972f833d24",
    "kind": "original"
   },
   {
