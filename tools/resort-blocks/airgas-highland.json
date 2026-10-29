@@ -1,7 +1,7 @@
 {
   "id": "airgas-highland",
   "name": "Airgas Highland retail",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/464694104"
   ],
@@ -21,6 +21,13 @@
       "url": "https://www.google.com/maps/@36.1423126,-115.1694362,20z/data=!3m1!1e3",
       "accessed": "2026-10-29",
       "observed": "Personally inspected aerial: notched rectangular white roof, north entrance toward Sutter parking, south equipment yard and east slim canopy."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Airgas+Store/@36.1425778,-115.16924,3a,85.3y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICOj9_hIw!2e10!3e12",
+      "accessed": "2026-10-29",
+      "imageDate": "May 2024",
+      "author": "santino riviezzo",
+      "observed": "Personally inspected: freestanding gray slatwall with blue trim, two rows of hanging gray/yellow/blue welding gloves, off-white lower shelf, gray speckled square floor tiles, white acoustic ceiling grid with rectangular fluorescent panels; gray walls and high banners. Arrangement of whole store remains inferred. No packaging/banner artwork copied."
     }
   ],
   "uncertainDimensions": [
@@ -31,33 +38,72 @@
   "components": [
     {
       "id": "retail-exterior",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "public-sales-room",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "roof-service-details",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "public-approaches",
-      "status": "pending"
+      "status": "verified"
     }
   ],
   "remaining": [
-    "Research room overview and build original exterior/public sales interior.",
-    "Inspect installed views, check routes and preservation, profile and package fresh bake.",
-    "Unseen elevations, exact dimensions and nonpublic service yard remain uncertain."
+    "Exact retail room arrangement and measured heights remain inferred from fixture photographs.",
+    "Service-yard equipment, east canopy and fine site markings remain for a separate scoped refinement.",
+    "Side/rear finish and openings need additional corroborating views.",
+    "Gloves, blank packages, floor texture, sign font and weathering remain simplified; not photorealistic completion."
   ],
   "nextPass": {
-    "priority": "Retail exterior and public sales interior",
-    "checkpoint": "425 claim confirmed, scoped record before edits."
+    "priority": "Reference-led fine finish and site refinement",
+    "checkpoint": "Four final installed views inspected, 178 current-city static samples and 24 actual walking segments passed. Fresh bake current; public room is inferred from fixture photos."
   },
   "claim": {
     "issue": 425,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/425"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/425",
+    "pullRequest": 426
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/airgas-highland-baseline/results.json",
+    "after": "build/city-exteriors/airgas-highland-final/results.json",
+    "settings": "960x540 DPR1 ultra neutral daylight, 180 warm frames per view. Three matched exterior cameras. Interior baseline was placeholder and not comparable.",
+    "missingMetrics": [
+      "GPU/CPU spans",
+      "cold transition stalls",
+      "draw calls"
+    ]
+  },
+  "evidence": {
+    "preservation": "build/city-exteriors/airgas-highland-preservation.json",
+    "staticRoutes": "build/strip-landmarks/airgas-highland-route-audit.json",
+    "initialViews": "build/city-exteriors/airgas-highland-initial",
+    "correctedPreview": "build/city-exteriors/airgas-highland-preview-v2",
+    "finalViews": "build/city-exteriors/airgas-highland-final",
+    "walking": "build/city-exteriors/airgas-highland-walk-final/results.json"
+  },
+  "checks": {
+    "staticSamples": 178,
+    "walkingSegments": 24,
+    "preservedGroups": 9560,
+    "removedOwnedFaces": 16,
+    "typecheck": "passed",
+    "bitmagicCheck": "passed",
+    "publicCheck": "passed with existing inventory email warning",
+    "cityBakeBatches": 756,
+    "runtimeAssets": 1631
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/airgas-highland-exterior.glb": "e81f8556a6a3ca3580bd89a5bb153dc4db82f3798077e6e0b40ca6afeee50a79",
+      "runtime-assets/strip-landmarks/airgas-highland-exterior-collision.bin": "9144e8a383b815dd1fa0248ee311cfd5be444ef16c55dc25d0da292fc281c0c5",
+      "runtime-assets/strip-landmarks/airgas-highland-interior.glb": "2534a5abf8a03ca5d4101d9dbc855b228160768ff4a3b9f9b4449bdfbcec5c6c",
+      "runtime-assets/strip-landmarks/airgas-highland-interior-collision.bin": "f6119d0a8edd1e9d74d1eb53835aa6ed277b6717cdedc68a21e91410c6311812"
+    }
   }
 }

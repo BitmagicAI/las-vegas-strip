@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1627,
- "bytes": 1165310217,
+ "count": 1631,
+ "bytes": 1166207646,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20200143,
-   "sha256": "4130ddd4b95ad5c86ed868e1e3ad6fb69f14f6bd57f725492cf52a97e0809078",
+   "bytes": 20219596,
+   "sha256": "ca10353502bdf58f521e90205252db2ad773906788819cc3ae9935d649429e18",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13049004,
-   "sha256": "566c6951cd95d23e97c740b0bc081812f017edbe8776286a81fd65ad2e5e76a7",
+   "bytes": 13048600,
+   "sha256": "69a07c1e52c51cf65cebc4163edbb2306ce8d04412154e79298b6aea99585998",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109698964,
-   "sha256": "36d517c1daea4da6f4ca5c1d4d591d901b71be9d86155a00a0a0b5345c413ad1",
+   "bytes": 109698708,
+   "sha256": "9964ee01c87c07f78e6fbbe87ff851e903d6d2ac6289f11ea39e1a296bd8fdaa",
    "kind": "optimized"
   },
   {
@@ -5561,6 +5561,30 @@
    "kind": "original"
   },
   {
+   "path": "build/strip-landmarks/airgas-highland-exterior-collision.bin",
+   "bytes": 648,
+   "sha256": "9144e8a383b815dd1fa0248ee311cfd5be444ef16c55dc25d0da292fc281c0c5",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/airgas-highland-exterior.glb",
+   "bytes": 436844,
+   "sha256": "e81f8556a6a3ca3580bd89a5bb153dc4db82f3798077e6e0b40ca6afeee50a79",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/airgas-highland-interior-collision.bin",
+   "bytes": 1908,
+   "sha256": "f6119d0a8edd1e9d74d1eb53835aa6ed277b6717cdedc68a21e91410c6311812",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/airgas-highland-interior.glb",
+   "bytes": 438476,
+   "sha256": "2534a5abf8a03ca5d4101d9dbc855b228160768ff4a3b9f9b4449bdfbcec5c6c",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/akitaPlaza-exterior-collision.bin",
    "bytes": 4780,
    "sha256": "00dfbef5c2ad1a8107d6ab56cb9d343b572e0e8a01c5fe702a197718a692d4aa",
@@ -9558,8 +9582,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 388928,
-   "sha256": "14b0187641beba7c794fedc0a7d1d1ad6a59b68b40a496cd5fe2c0c369c9c4b2",
+   "bytes": 389688,
+   "sha256": "c708e9704549ff5aafce6f1f95e858d181f481900123676e281a6ecc3f9d5052",
    "kind": "original"
   },
   {
