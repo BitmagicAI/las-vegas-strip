@@ -1,0 +1,85 @@
+{
+  "id": "sahara-2500",
+  "name": "2500 West Sahara offices",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1018431817"
+  ],
+  "claim": {
+    "issue": 417,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/417",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/418"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1453755,-115.1757531,3a,75y,356.08h,101.99t/data=!3m4!1e1!3m2!1sVIT-B9Bzr30TdHQBf-TiIQ!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "November 2021",
+      "observed": "Personally inspected full/close views: two-storey cream stucco, horizontal lower panel joints, green window crossbars/blinds, stepped parapet, southeast portico with square columns and raised2500address."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1457105,-115.1765954,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Adjacent office visible in inspected aerial: rectangular white flat roof and HVAC, canopy parking excluded."
+    },
+    {
+      "url": "https://www.google.com/maps/search/WellTrac+2500+Paseo+del+Prado+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Map result labels building2500WestSaharaSte100; actual street address rather than search wording used. No interior evidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, recesses and unseen elevations fitted from dated imagery.",
+    "Current tenancy unverified; building identified by address, private interior excluded."
+  ],
+  "components": [
+    {
+      "id": "facades-roof",
+      "status": "implemented"
+    },
+    {
+      "id": "corner-portico",
+      "status": "implemented"
+    },
+    {
+      "id": "public-approach",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "Private interiors excluded; no verified interior photographs or floorplan.",
+    "Full parking layout, palms and surrounding landscape remain incomplete.",
+    "Window reflections/blinds and fine surface detail remain simplified; unseen elevations and dimensions inferred."
+  ],
+  "nextPass": {
+    "priority": "Full landscaping and finer window/material fidelity",
+    "checkpoint": "Installed exterior inspected;68static/14walk pass;752batch bake current; packaging verified."
+  },
+  "implemented": [
+    "Original 20,730-triangle office exterior with green window crossbars, recessed bays, stepped parapet, panel joints, address lettering and square-column portico.",
+    "Only 10 owned shell faces and matching colliders replaced; 9560 groups preserved. Existing roads and other buildings retained."
+  ],
+  "validation": {
+    "static": "68 current-city checks passed",
+    "walking": "14 actual approach segments passed",
+    "visual": "Four final daylight views inspected; original west camera obstructed by adjacent building and replaced with close-up. Front partly occluded; entry close-up supplements it.",
+    "packaging": "752-batch current bake;1617 runtime assets; type/Bitmagic/public passed (existing email warning only)"
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra. Matching front/roof only; west baseline invalid and entry newly added.",
+    "summary": "Baseline front/roof median16.8/16.8ms,p9519.8/19.2; final16.7/16.6,p9519/18.7. New west/entry16.7/16.7,p9519.1/17.9. No locked60claim."
+  },
+  "evidence": [
+    "build/city-exteriors/sahara-2500-baseline/results.json",
+    "build/city-exteriors/sahara-2500-final/results.json",
+    "build/city-exteriors/sahara-2500-walk-final/results.json",
+    "build/city-exteriors/sahara-2500-preservation.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/sahara-2500-exterior.glb": "30bf42dd38cd995d764ddac86d28f5e760b6b9db24c2642f0017ff3cc32d6ed0",
+      "runtime-assets/strip-landmarks/sahara-2500-exterior-collision.bin": "295974019858a25a8d63e3d22377f6e94eab7c9466979ea2419f8d7603a35131"
+    }
+  }
+}

@@ -1832,7 +1832,13 @@
       "name": "Sahara Surgery Center",
       "status": "refinement-deferred",
       "record": "sahara-surgery.json"
+    },
+    {
+      "id": "sahara-2500",
+      "name": "2500 West Sahara offices",
+      "status": "refinement-deferred",
+      "record": "sahara-2500.json"
     }
   ],
-  "active": "sahara-surgery"
+  "active": "sahara-2500"
 }
