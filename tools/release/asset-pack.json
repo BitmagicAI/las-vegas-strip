@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1565,
- "bytes": 1146867613,
+ "count": 1567,
+ "bytes": 1148602670,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19925521,
-   "sha256": "d91bbe0f2db30c33aa5992e2e2804ac59ff1dfa5cb6f1697bf31c0af4f54f94a",
+   "bytes": 19947634,
+   "sha256": "df5cc4a7afb638ef397ecb63f482aab21a92701052063d537c8917050f979ef5",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13051972,
-   "sha256": "2ee81437a90a5bff69e36bd310f97fb2ed31f7a0986bf1ee5b4a6fe08d4af912",
+   "bytes": 13052160,
+   "sha256": "e0f000bc4c38a0b553251cdb3750963c9ac380a8abde5b938b8e5ad7ada859a1",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109713240,
-   "sha256": "a4e6f51631553172686ed823b10a9310f10cc2fc6d896be35631b966c28fbac9",
+   "bytes": 109712312,
+   "sha256": "d782dd775c115af9d8b7f4dd83dc1fdb3d7d731abc87032208f65f045557af1a",
    "kind": "optimized"
   },
   {
@@ -6317,6 +6317,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/dennys-sahara-exterior-collision.bin",
+   "bytes": 332,
+   "sha256": "c92b0cf19dd9d25a21f53c9f7b9045cb2b73c7b0def000bc5019bafdf2725745",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/dennys-sahara-exterior.glb",
+   "bytes": 1713000,
+   "sha256": "89b2c5e4478a0cb6be2a16611ef914a597abee5c9d2f50477dfbca5151e0d133",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/dennys1822-exterior-collision.bin",
    "bytes": 340,
    "sha256": "6300eeffc091e0aca122f8f17cc7d743aaa1b5069cdf3e7a1faf984984f98fd4",
@@ -9198,8 +9210,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 378098,
-   "sha256": "50848fc9e28ad6b154946926f600dc413a899b95ab36d59e385cc7b157d2b8a3",
+   "bytes": 378450,
+   "sha256": "9c343431d3ad9c7b7743bf886af5090b8e22271d4cb4f73e57ec36abe90d0cff",
    "kind": "original"
   },
   {

@@ -1,14 +1,15 @@
 {
   "id": "dennys-sahara",
   "name": "Denny\u2019s West Sahara",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/905241566"
   ],
   "claim": {
     "issue": 385,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/385"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/385",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/386"
   },
   "sources": [
     {
@@ -22,7 +23,7 @@
       "provider": "Google Maps, Seany D",
       "imageDate": "January2020; uploadedMarch2020",
       "accessed": "2026-10-29",
-      "observed": "Dark hipped standing-seam roof, cream clerestory, stone lower walls/piers, silver-gray canopy band, aluminum glazing, red sign and black patio rail. Photo CIHM0ogKEICAgICcqJjXZg."
+      "observed": "Dark hipped standing-seam roof, cream clerestory, stone lower walls/piers, silver-gray canopy band, aluminum glazing, red sign and black patio rail. Photo CIHM0ogKEICAgICcqJjXZg. Re-inspection confirms photographed frontage is west: northern flat service section at left, southern hipped dining section/sign at right. Glazed entrance pairs are beneath west awning."
     },
     {
       "url": "https://www.google.com/maps/@36.144923,-115.182483,20z/data=!3m1!1e3",
@@ -34,15 +35,136 @@
   ],
   "uncertainDimensions": [
     "Facade photo dated2020; current appearance not fully corroborated.",
-    "Height, hidden elevations and detailed site dimensions fitted; no measured public interior plan."
+    "Height, hidden elevations and detailed site dimensions fitted; no measured public interior plan.",
+    "Fitted eaves5.45m/ridge7.5m from facade proportions; mapped height6m does not establish ridge."
   ],
   "remaining": [
-    "Build exterior and public approach.",
-    "Verify installed daylight, walking, preservation and performance.",
-    "Full parking/landscaping and interior remain."
+    "Full parking, planting, freestanding sign and exact drive-through details remain outside this scoped building pass.",
+    "Public dining interior not implemented: no site-specific room reference verified for this Denny\u2019s.",
+    "Facade proportions, exact lettering, upper stone areas and fine material response require refinement; not photorealistic completion.",
+    "North service and east facade details are inferred; 2020 photograph age and fitted eaves/ridge heights remain uncertain."
   ],
   "nextPass": {
-    "priority": "Build scoped exterior",
-    "checkpoint": "Claim385 confirmed, source research and mapped footprint checked."
-  }
+    "priority": "Interior/site and fine facade fidelity",
+    "checkpoint": "Original exterior installed and three final views inspected;129 static and14 actual walking checks pass. Continue next unclaimed building with all remaining requirements retained."
+  },
+  "triangles": 58822,
+  "performance": {
+    "conditions": "Warm960x540DPR1ultra matching exterior cameras before/after; final median16.6\u201316.7ms,p9518.1\u201318.4. Baseline16.7\u201316.8,p9523.7\u201325.8; scene variation prevents attributing all improvement to this building.",
+    "baseline": [
+      {
+        "name": "west",
+        "eye": [
+          -879,
+          2,
+          -3207
+        ],
+        "target": [
+          -857,
+          3.5,
+          -3213
+        ],
+        "p50": 16.700000047683716,
+        "p95": 25.800000071525574
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -880,
+          34,
+          -3180
+        ],
+        "target": [
+          -855,
+          3,
+          -3214
+        ],
+        "p50": 16.799999952316284,
+        "p95": 24.799999952316284
+      },
+      {
+        "name": "south",
+        "eye": [
+          -844,
+          2,
+          -3190
+        ],
+        "target": [
+          -854,
+          3.5,
+          -3203
+        ],
+        "p50": 16.699999928474426,
+        "p95": 23.699999928474426
+      }
+    ],
+    "after": [
+      {
+        "name": "west",
+        "eye": [
+          -879,
+          2,
+          -3207
+        ],
+        "target": [
+          -857,
+          3.5,
+          -3213
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.100000023841858
+      },
+      {
+        "name": "roof",
+        "eye": [
+          -880,
+          34,
+          -3180
+        ],
+        "target": [
+          -855,
+          3,
+          -3214
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.399999976158142
+      },
+      {
+        "name": "south",
+        "eye": [
+          -844,
+          2,
+          -3190
+        ],
+        "target": [
+          -854,
+          3.5,
+          -3203
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.40000009536743
+      }
+    ]
+  },
+  "optimizedMiB": {
+    "exterior": 1.63
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/dennys-sahara-exterior-collision.bin": "c92b0cf19dd9d25a21f53c9f7b9045cb2b73c7b0def000bc5019bafdf2725745",
+      "runtime-assets/strip-landmarks/dennys-sahara-exterior.glb": "89b2c5e4478a0cb6be2a16611ef914a597abee5c9d2f50477dfbca5151e0d133"
+    }
+  },
+  "viewsInspected": [
+    "build/city-exteriors/dennys-sahara-final/dennys-roof.png",
+    "build/city-exteriors/dennys-sahara-final/dennys-south.png",
+    "build/city-exteriors/dennys-sahara-final/dennys-west.png"
+  ],
+  "tests": [
+    "129 current-city static route checks pass.",
+    "82 owned visual/collider triangles removed;9560 groups and non-owned geometry preserved.",
+    "Three final installed daylight views inspected after entrance, stone and roof seam corrections.",
+    "Fresh736-batch city bake; 14 final actual walking segments pass,1567 runtime assets.",
+    "Type, record and public-package checks pass; preexisting public-email warning only."
+  ]
 }
