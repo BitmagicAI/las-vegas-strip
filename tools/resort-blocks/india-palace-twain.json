@@ -1,0 +1,101 @@
+{
+  "id": "india-palace-twain",
+  "name": "India Palace Twain",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/390003971"
+  ],
+  "claim": {
+    "issue": 334,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/334",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/335"
+  },
+  "sources": [
+    {
+      "url": "https://visitindiapalacelv.com/story",
+      "observed": "Official facade photograph visually inspected: red tall right parapet, dark stacked stone portal, cream rod-suspended canopies, recessed entry and glazed right bay. Date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/place/India+Palace/@36.1212463,-115.151622,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgMDwmK2YvwE!2e10!3e12",
+      "observed": "Divij B, March2025 facade photograph, visually inspected. Matches official facade."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=SrgiSGv6w1L_5luy1F_z2g&heading=130&pitch=0",
+      "observed": "February2026 streetscape confirms building frontage and nearby FLEX."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped15.42x17.74m shell; facade heights, depths, roof/service details inferred. Public interior not evidenced yet, remains deferred."
+  ],
+  "implemented": [
+    "Mapped exterior with stepped red parapet, staggered stone entrance portal, recessed door and glazed bay, suspended cream canopies, facade lights and roof services.",
+    "Targeted replacement of ten original shell/collision faces;9560city groups retain vertices, metadata and retained face order."
+  ],
+  "remaining": [
+    "No public dining room until reliable interior evidence is found.",
+    "Exact heights, recess depths, rear/service arrangement remain inferred.",
+    "Sign identity simplified; plain/over-bright materials, opaque windows, repetitive roof treatment and unverified side details require refinement.",
+    "Existing site paving retained; northeast review view obstructed by adjacent roof and excluded from visual acceptance. Supplemental entry view inspected. Not photorealistic completion."
+  ],
+  "nextPass": {
+    "priority": "Keep fidelity refinement; advance to next claimed building.",
+    "checkpoint": "Installed front, roof, close entrance and walking return inspected; six actual walking segments pass."
+  },
+  "verification": {
+    "sourceTriangles": 4612,
+    "routeSamples": 13,
+    "actualWalkingSegments": 6,
+    "installedViews": [
+      "build/city-exteriors/india-palace-twain-installed",
+      "build/city-exteriors/india-palace-twain-entry",
+      "build/city-exteriors/india-palace-twain-walk"
+    ],
+    "preservation": "build/city-exteriors/india-palace-twain-preservation.json",
+    "bakeBatches": 711,
+    "packagedAssets": 1483,
+    "missingAssets": 0,
+    "typecheck": "passed",
+    "publicCheck": "passed;existing inventory email warning"
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/india-palace-twain-baseline/results.json",
+    "after": "build/city-exteriors/india-palace-twain-installed/results.json",
+    "note": "Northeast is performance comparison only (obstructed). Baseline roof p95 had a transient spike; no speed-up claim.",
+    "baselineMedianP95Ms": [
+      [
+        16.7,
+        19
+      ],
+      [
+        16.6,
+        18.9
+      ],
+      [
+        16.6,
+        29.3
+      ]
+    ],
+    "afterMedianP95Ms": [
+      [
+        16.6,
+        17.5
+      ],
+      [
+        16.7,
+        18
+      ],
+      [
+        16.6,
+        17.4
+      ]
+    ]
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/india-palace-twain-exterior-collision.bin": "e903e1a3d02d4c0a85045cd42e7e41c95b95297e11f4bd1337da234fb26fc18f",
+      "runtime-assets/strip-landmarks/india-palace-twain-exterior.glb": "25b4dd21ec0992f0750dc08a7cd2c71faaf27d99279e74b7f479c02ab102fd28"
+    }
+  }
+}

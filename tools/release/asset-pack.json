@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1481,
- "bytes": 1114407796,
+ "count": 1483,
+ "bytes": 1114763319,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19416382,
-   "sha256": "2fa62c9089732922f9fb1e29a02790303aad8d01fadeffbcaf54b787c1125995",
+   "bytes": 19430129,
+   "sha256": "932b376f3cc2bd5f06903ca44e82043e9635df1d8b4dc67c6ea5f6de1704f4c6",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13060344,
-   "sha256": "b6d4337f8e1433fbc602009ddd2fa35c98fc373d2aee6be9acbb30f4f15605d6",
+   "bytes": 13060148,
+   "sha256": "22b25929e9e0531590f921fcf5633ef158a32ed1817ec9a727cf67d9899873e7",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109743904,
-   "sha256": "ee73c21beceea6a96e29653f2c579ab0a4737ce5381c41d839d66e94ac08ebbf",
+   "bytes": 109743616,
+   "sha256": "a5e53d18cd47fa528c63ba36adde9926235362df55ec99c729af6072bb558c6a",
    "kind": "optimized"
   },
   {
@@ -6965,6 +6965,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/india-palace-twain-exterior-collision.bin",
+   "bytes": 396,
+   "sha256": "e903e1a3d02d4c0a85045cd42e7e41c95b95297e11f4bd1337da234fb26fc18f",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/india-palace-twain-exterior.glb",
+   "bytes": 341604,
+   "sha256": "25b4dd21ec0992f0750dc08a7cd2c71faaf27d99279e74b7f479c02ab102fd28",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/inout-company-store-exterior-collision.bin",
    "bytes": 364,
    "sha256": "b93f214edcd4b04769443742588d94c4484ea6c44483aaacf7f82b7baeeafb08",
@@ -8694,8 +8706,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 362700,
-   "sha256": "0151cc5b36436786e4fe63ef8cd767c164db6d0cca68fe280f261c78de0cfee5",
+   "bytes": 362960,
+   "sha256": "f6281f52c7a3125ec60b62dc5109bbeba34464277e628ba6bc963d5c5a12e3e5",
    "kind": "original"
   },
   {
