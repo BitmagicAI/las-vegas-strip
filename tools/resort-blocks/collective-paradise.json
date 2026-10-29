@@ -1,0 +1,50 @@
+{
+  "id": "collective-paradise",
+  "name": "The Collective Paradise retail",
+  "status": "active",
+  "mappedIds": [
+    "way/565876924"
+  ],
+  "claim": {
+    "issue": 369,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/369",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://www.thecollectiveat3900.com/",
+      "observed": "Property owner identifies shared3900Paradise destination and tenants."
+    },
+    {
+      "url": "https://www.tacosandbeerlv.com/about",
+      "observed": "Official SuiteA address and public restaurant use."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.11920,-115.15450,20z/data=!3m1!1e3",
+      "observed": "Aerial personally inspected: L-shaped shared retail, flat northern/southern wings, central multi-pitched Cleaver roof, southwest patio."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Tacos+and+Beer+3900+Paradise+Las+Vegas",
+      "observed": "KevinDazey October2026 photo CIABIhBS3WTAKUdGYnL3IhCDE1WT inspected: broad dark fascia, wood soffit, black posts/braces, stringlights, stone walls/glazing/hedges/rails."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Cleaver+3900+Paradise+Las+Vegas",
+      "observed": "Owner October2021 gallery image CIHM0ogKEICAgID6-8nRZA (captureAug2021) inspected: paneled wood bar/ambercounter, ornate bottlecabinets/backlittransoms, pedestalstools/brassfootrail. No fullplan."
+    }
+  ],
+  "uncertainDimensions": [
+    "All facade heights and detail dimensions fitted, not measured",
+    "Unseen elevations and tenant divisions remain uncertain; avoid invented signage",
+    "Interior photo is dated and no measured public plan exists"
+  ],
+  "remaining": [
+    "Author and inspect scoped shared exterior and photographed Tacos patio",
+    "Check scoped routes, preservation and matching performance",
+    "Public interiors and unseen tenant facades require more references"
+  ],
+  "nextPass": {
+    "priority": "Shared exterior and Tacos patio",
+    "checkpoint": "Claim369confirmed. Aerial and sourcephotos inspected. No geometry yet."
+  }
+}
