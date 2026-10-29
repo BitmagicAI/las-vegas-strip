@@ -1,0 +1,42 @@
+{
+  "id": "jack-flamingo",
+  "name": "Jack in the Box East Flamingo",
+  "status": "active",
+  "mappedIds": [
+    "way/445000146"
+  ],
+  "claim": {
+    "issue": 373,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/373",
+    "assignee": "janiverse",
+    "date": "2026-10-28"
+  },
+  "sources": [
+    {
+      "url": "https://locations.jackinthebox.com/us/nv/las-vegas/780-e-flamingo-rd",
+      "observed": "Official address780EastFlamingo confirms identity."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Jack+in+the+Box+780+E+Flamingo+Las+Vegas",
+      "observed": "Mr.T Oct2026 photo CIABIhDSqPFqYU0G3OY1rnjjwLSE personally inspected: red raised entry bay/darkpiers, smallgrayawning, tan horizontalfacade,tallglazing,lowmonumentsign,desertplanting. LasVegas Apr2026video CIABIhBVSluWEaaj4EmK9WH9kHYI firstframe inspected: tan squarefloor tiles,red roundcorner tables,metal slatbackchairs,amberpendants,windowcounter,acousticceilinggrid."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.114999,-115.1469353,20z/data=!3m1!1e3",
+      "observed": "Aerial inspected: east-west lowrise, northentry/southservice projections,flatwhiteequipmentroof,southdrive-through,north/eastparking."
+    }
+  ],
+  "uncertainDimensions": [
+    "Dimensions and dining arrangement fitted from photographs, not a measured plan",
+    "Exact facade bay placement and entry side need reconciliation before authoring",
+    "Private kitchen layout unknown and excluded"
+  ],
+  "remaining": [
+    "Author and inspect exterior plus photo-supported public dining space",
+    "Check entrance/return walking, preservation and matching performance",
+    "Full site landscaping and fine material/sign fidelity require refinement"
+  ],
+  "nextPass": {
+    "priority": "Exterior and public dining interior",
+    "checkpoint": "Claim373 confirmed. Geometry not authored."
+  }
+}

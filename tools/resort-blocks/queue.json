@@ -1696,7 +1696,13 @@
         "date": "2026-10-28",
         "reason": "Verified scoped exterior/open canopies; continue city-wide work with interior, site and fine fidelity remaining."
       }
+    },
+    {
+      "id": "jack-flamingo",
+      "name": "Jack in the Box East Flamingo",
+      "status": "active",
+      "record": "jack-flamingo.json"
     }
   ],
-  "active": "chick-fil-a-paradise"
+  "active": "jack-flamingo"
 }
