@@ -14725,11 +14725,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Author and inspect scoped shared exterior and photographed Tacos patio",
-    "Check scoped routes, preservation and matching performance",
-    "Public interiors and unseen tenant facades require more references"
+    "Public interiors absent; site-specific room plans need further evidence",
+    "Unseen tenant facade divisions and entrances remain inferred",
+    "Central multi-pitched roof needs closer profile reconstruction",
+    "Full site planting/paving and finer facade, sign, furniture and material fidelity remain unfinished"
    ],
    "record": "tools/resort-blocks/collective-paradise.json",
    "buildings": [],
@@ -14741,7 +14742,13 @@
     "writes": [
      "tools/resort-blocks/collective-paradise.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/city-exteriors/install-collective-paradise.py",
+     "tools/strip-landmarks/export_collective_paradise.py",
+     "tools/strip-landmarks/test-collective-paradise.mjs",
+     "tools/city-exteriors/check-collective-paradise-preservation.py",
+     "tools/strip-landmarks/collective_paradise.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

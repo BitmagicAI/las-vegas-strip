@@ -1680,8 +1680,12 @@
     {
       "id": "collective-paradise",
       "name": "The Collective Paradise retail",
-      "status": "active",
-      "record": "collective-paradise.json"
+      "status": "refinement-deferred",
+      "record": "collective-paradise.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped shared exterior and patio; continue city-wide expansion with interior, roof and fine fidelity discrepancies retained."
+      }
     }
   ],
   "active": "collective-paradise"

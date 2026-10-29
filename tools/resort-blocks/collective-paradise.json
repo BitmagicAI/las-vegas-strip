@@ -1,7 +1,7 @@
 {
   "id": "collective-paradise",
   "name": "The Collective Paradise retail",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/565876924"
   ],
@@ -9,7 +9,8 @@
     "issue": 369,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/369",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/370"
   },
   "sources": [
     {
@@ -31,6 +32,10 @@
     {
       "url": "https://www.google.com/maps/search/Cleaver+3900+Paradise+Las+Vegas",
       "observed": "Owner October2021 gallery image CIHM0ogKEICAgID6-8nRZA (captureAug2021) inspected: paneled wood bar/ambercounter, ornate bottlecabinets/backlittransoms, pedestalstools/brassfootrail. No fullplan."
+    },
+    {
+      "url": "https://www.cbre.com/resources/fileassets/US-SMPL-162219/b432c852/20f4d210-a0e1-408f-bfbb-0e85357de3b7_Photo_5_large.jpg",
+      "observed": "Broker photo personally inspected: white tall portal, pale vertical ribbed sign infill/blue letters, woodaccent, three screened bays, recessed glazing, upper glazed box, grayplanters and courtyard pavers. Photo date not supplied; portal position/scale fitted to aerial."
     }
   ],
   "uncertainDimensions": [
@@ -39,12 +44,30 @@
     "Interior photo is dated and no measured public plan exists"
   ],
   "remaining": [
-    "Author and inspect scoped shared exterior and photographed Tacos patio",
-    "Check scoped routes, preservation and matching performance",
-    "Public interiors and unseen tenant facades require more references"
+    "Public interiors absent; site-specific room plans need further evidence",
+    "Unseen tenant facade divisions and entrances remain inferred",
+    "Central multi-pitched roof needs closer profile reconstruction",
+    "Full site planting/paving and finer facade, sign, furniture and material fidelity remain unfinished"
   ],
   "nextPass": {
-    "priority": "Shared exterior and Tacos patio",
-    "checkpoint": "Claim369confirmed. Aerial and sourcephotos inspected. No geometry yet."
+    "priority": "Reference-supported roof, tenant facade and public interior refinement",
+    "checkpoint": "Installed and inspected four final daylight views. 16050 triangles, 1.01 MiB optimized exterior. 220 static checks and 18 actual walking segments pass. 163 owned visual/collider faces removed; 9560 other groups preserved. Fresh 728-batch city bake and 1541 staged assets. Not photorealistically complete."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/collective-paradise-baseline/results.json",
+    "final": "build/city-exteriors/collective-paradise-final/results.json",
+    "summary": "960x540 DPR1 ultra warm samples: median 16.6\u201316.8 ms, p95 18.4\u201318.9 ms; baseline median 16.6\u201316.7 ms, p95 19.1\u201319.2 ms. Not a locked-60 claim."
+  },
+  "verification": {
+    "views": "build/city-exteriors/collective-paradise-final",
+    "walking": "build/city-exteriors/collective-paradise-walk-final/results.json",
+    "inspectedViews": [
+      "collective-patio",
+      "collective-roof",
+      "collective-court",
+      "collective-cleaver"
+    ],
+    "actualWalkingSegments": 18,
+    "staticChecks": 220
   }
 }
