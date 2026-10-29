@@ -1,0 +1,93 @@
+{
+  "id": "sahara-surgery",
+  "name": "Sahara Surgery Center",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1062820474"
+  ],
+  "claim": {
+    "issue": 415,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/415",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/416"
+  },
+  "sources": [
+    {
+      "url": "https://saharasurgery.com/",
+      "accessed": "2026-10-29",
+      "observed": "Official site confirms facility."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1460049,-115.1773164,3a,75y,117.14h,90t/data=!3m4!1e1!3m2!1s-E6Rng8gXkzm3FQzgerF8w!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January2023",
+      "observed": "Personally inspected palegray square masonry tall northwest block, narrow low windows, lower long covered entry with round columns, palms and desert beds."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1457105,-115.1765954,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected irregular white flat roof with three HVAC units in row, projecting entries, west parking/east road and gravel beds."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Sahara+Surgery+Center+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected public waitingroom photos Jan2025 CIHM0ogKEICAgID_jKLZPA and Aug2024. Gray/beige/purple metalarmchairs, carpettiles, tables/plants, glazed vestibule, open reception and white tray ceiling with suspended strip lights. No medical/private rooms used."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, window count and bay positions fitted from imagery.",
+    "Public waiting-room footprint, reception and furniture counts inferred; no measured plan."
+  ],
+  "components": [
+    {
+      "id": "exterior",
+      "status": "implemented"
+    },
+    {
+      "id": "public-waiting-room",
+      "status": "implemented"
+    },
+    {
+      "id": "entrance-approach",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "Private treatment rooms excluded; public waiting-room dimensions and layout inferred, not surveyed.",
+    "Full parking, surrounding landscape, detailed palms and unseen service elevations incomplete.",
+    "Carpet/finish texture, detailed furniture and exact facade/window proportions need refinement; not photorealistic completion."
+  ],
+  "nextPass": {
+    "priority": "Full site and finer materials/furnishings",
+    "checkpoint": "Installed4views inspected;97static/16actualwalkpass;751batchbake1615assets and checks passed."
+  },
+  "implemented": [
+    "Original 21,207-triangle exterior/public waiting room. Continuous angled masonry block, narrow windows, real covered entry, round columns, rooftop equipment and sparse planting.",
+    "Public waiting/reception includes colored upholstered metalarmchairs, side tables/plants, ceiling tray/suspended strips, glazed entrance and closed reception cabinets. Layout and dimensions inferred.",
+    "Only55ownedfaces and matching colliders replaced;9560citygroups preserved; no runtime or road edits."
+  ],
+  "validation": {
+    "static": "97 current-city checks passed",
+    "walking": "16 actual segments passed through entrance/waiting/reception route",
+    "visual": "Four final installed daylight views personally inspected; contiguous tall masonry facade correction verified",
+    "packaging": "751-batch current city bake,1615runtimeassets; type/Bitmagic/public checks passed, existing email warning only"
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra matched entry/roof/windows/waiting views",
+    "summary": "Baseline median16.8/16.7/16.6/16.7ms,p9519.5/17.2/17.3/19.2; final16.7/16.6/16.7/16.4,p9517.4/17.5/17.4/18.7ms. No locked60claim."
+  },
+  "evidence": [
+    "build/city-exteriors/sahara-surgery-baseline/results.json",
+    "build/city-exteriors/sahara-surgery-final/results.json",
+    "build/city-exteriors/sahara-surgery-walk-final/results.json",
+    "build/city-exteriors/sahara-surgery-preservation.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/sahara-surgery-exterior-collision.bin": "ac39652f9ea7f7ebb6bff632f2f32fb623efb9adfacc660e1d72fb9b773b79ed",
+      "runtime-assets/strip-landmarks/sahara-surgery-interior.glb": "40d068c9c6f7dfcdac9fdf55643f3067fd1a982607eb04e6732ff800fe6004a7",
+      "runtime-assets/strip-landmarks/sahara-surgery-interior-collision.bin": "c852a4180ea1e1d636381dd6131c63878e0616aea1e5b998bef87124be339d15",
+      "runtime-assets/strip-landmarks/sahara-surgery-exterior.glb": "9665e663f68dad5a6a44fcdce68b3f0e3ee0292b26c3b15fe334468b9a83c5bc"
+    }
+  }
+}

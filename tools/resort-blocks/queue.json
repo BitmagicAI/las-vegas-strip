@@ -1826,7 +1826,13 @@
       "name": "2600 Sahara retail and Bespoke Kitchen",
       "status": "refinement-deferred",
       "record": "sahara-2600.json"
+    },
+    {
+      "id": "sahara-surgery",
+      "name": "Sahara Surgery Center",
+      "status": "refinement-deferred",
+      "record": "sahara-surgery.json"
     }
   ],
-  "active": "sahara-2600"
+  "active": "sahara-surgery"
 }

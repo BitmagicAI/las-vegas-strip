@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1611,
- "bytes": 1161306209,
+ "count": 1615,
+ "bytes": 1162290525,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20115483,
-   "sha256": "5a76c138b17761b4891248721bf121b3b078cab5f7b528ed83be926316a8af6e",
+   "bytes": 20131327,
+   "sha256": "06afabffdb2bf6745378b180750b0ffc7be3f00baa501a3f4410bca6f352f27d",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13049120,
-   "sha256": "4966557503d297881139ada3b50ef7b2aa9ca8a4e46c705e964a090b2b994538",
+   "bytes": 13048796,
+   "sha256": "4ed0b84e12bbce6da860cc1d048097b9eb62dee5d333f1ac0e6bbb0865e25f5d",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109700384,
-   "sha256": "7046f2fd52377fca74e6d4064683f3232709a5133814fdac3c78b05a5da9b26e",
+   "bytes": 109699748,
+   "sha256": "4b45d81602a53dd89812286780332df0b8caf2f68bad26564d746afccf87f49e",
    "kind": "optimized"
   },
   {
@@ -8669,6 +8669,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/sahara-surgery-exterior-collision.bin",
+   "bytes": 1288,
+   "sha256": "ac39652f9ea7f7ebb6bff632f2f32fb623efb9adfacc660e1d72fb9b773b79ed",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/sahara-surgery-exterior.glb",
+   "bytes": 641236,
+   "sha256": "9665e663f68dad5a6a44fcdce68b3f0e3ee0292b26c3b15fe334468b9a83c5bc",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/sahara-surgery-interior-collision.bin",
+   "bytes": 1732,
+   "sha256": "c852a4180ea1e1d636381dd6131c63878e0616aea1e5b998bef87124be339d15",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/sahara-surgery-interior.glb",
+   "bytes": 324472,
+   "sha256": "40d068c9c6f7dfcdac9fdf55643f3067fd1a982607eb04e6732ff800fe6004a7",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/saharaExterior-exterior-collision.bin",
    "bytes": 31284,
    "sha256": "dc09ef8d6a44152e84bf66b2af9c7a91daba17dfeeb85d984deb8482baf0b342",
@@ -9462,8 +9486,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 386160,
-   "sha256": "3d9bb1f06a81806e63cf293e29d5f90e4e9dae414fa50c06a4cc970cb48d590e",
+   "bytes": 386864,
+   "sha256": "bf5836dd6421464cc288358419c719dcd6d7dad5c2decf5a90ec96e008f045fa",
    "kind": "original"
   },
   {
