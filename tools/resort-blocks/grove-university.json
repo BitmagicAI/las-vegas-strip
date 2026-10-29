@@ -1,7 +1,7 @@
 {
   "id": "grove-university",
   "name": "The Grove / Society retail frontage",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/1382446129"
   ],
@@ -66,5 +66,5 @@
     "checks": "Typecheck and block/public checks passed; one pre-existing public-check inventory email warning.",
     "packaging": "Fresh city bake662batches24.4Mnear/7.05MLOD,17.41MBbinary;1347runtimeassets present,0missing."
   },
-  "statusNote": "Installed first exterior pass validated; current active refinement retains sign/service/landscape discrepancies. No interior or photorealistic completion claim."
+  "statusNote": "Installed pass verified; retained discrepancies deferred while city frontage work advances."
 }

@@ -1188,9 +1188,15 @@
     {
       "id": "grove-university",
       "name": "The Grove / Society retail frontage",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "grove-university.json"
+    },
+    {
+      "id": "quadz",
+      "name": "QUADZ and west retail frontage",
+      "status": "active",
+      "record": "quadz.json"
     }
   ],
-  "active": "grove-university"
+  "active": "quadz"
 }
