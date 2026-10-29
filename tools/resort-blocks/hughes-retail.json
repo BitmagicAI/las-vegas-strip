@@ -1,0 +1,76 @@
+{
+  "id": "hughes-retail",
+  "name": "365 Hughes Center retail",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/511850834",
+    "way/1421198546",
+    "way/1421198547",
+    "way/1421198548",
+    "way/1421198549",
+    "way/1561277593"
+  ],
+  "claim": {
+    "issue": 361,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/361",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/362"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.11496,-115.1555063,20z/data=!3m1!1e3",
+      "observed": "Personally inspected aerial: flat roof with HVAC rows, angled tall southwest entrance, round southeast corner, south patios and north service/parking."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Panera+365+Hughes+Center+Drive+Las+Vegas",
+      "observed": "Mafate479 July2025 photo CIABIhCoCt-RySg689AdzGeiTD2R personally inspected: tall taupe scored wall, rust sloping awning with projecting supports, silver framed glass entry, white fixtures,365/100 numerals."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chipotle+365+Hughes+Center+Drive+Las+Vegas",
+      "observed": "JoeyMontgomery Jan2016 photo personally inspected: cylindrical pale metallic panel drum, tall dark glass bays, flat projecting glazing shade, planter wall and patio. Old photo date explicit."
+    },
+    {
+      "url": "https://locations.chipotle.com/nv/las-vegas/365-hughes-center-dr",
+      "observed": "Official location confirms address and current service."
+    },
+    {
+      "url": "https://images1.showcase.com/d2/oAgjwbJ2cSUT59M5_8syxteIOs9F6WSX3_jcnnaLcUg/document.pdf",
+      "observed": "Broker roster and formerpizza floorplan text read; imagery not yet retrieved. Roster conflicts with newer mapped vacancies."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Chipotle+365+Hughes+Center+Drive+Las+Vegas",
+      "observed": "Zia Qureshi May2026 photo CIABIhC9iazNK4nppLXRM1vpGvu8 personally inspected: current round panel facade, illuminated lettering, tall glass bays, shallow shades and patio planters. Confirms older2016 architecture."
+    }
+  ],
+  "uncertainDimensions": [
+    "Tower heights and detailed facade dimensions unmeasured.",
+    "Habit/Jamba/Pieology occupancy conflicts across sources; verify before permanent signs."
+  ],
+  "remaining": [
+    "Verify middle tenant identities; currently only suite numbers",
+    "Reference-supported public interiors still absent; storefronts solid backed",
+    "Refine side/service facades, landscaping, patio boundaries, sign typography and surface detail",
+    "Heights, fixtures and facade dimensions fitted, not measured"
+  ],
+  "nextPass": {
+    "priority": "Reference-supported rooms and facade refinement",
+    "checkpoint": "Verified scoped exterior pass installed. Corrected flat projecting sign, lower drum cladding, roof striping and window clearance.161 static/10 actual walking segments pass; final960x540ultra median16.6\u201316.7ms,p9517.8\u201318ms. Not photorealistic completion."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/hughes-retail-baseline/results.json",
+    "initial": "build/city-exteriors/hughes-retail-initial/results.json",
+    "after": "build/city-exteriors/hughes-retail-refined/results.json"
+  },
+  "validation": {
+    "triangles": 10578,
+    "optimizedMiB": 0.64,
+    "staticChecks": 161,
+    "walkingSegments": 10,
+    "walk": "build/city-exteriors/hughes-retail-walk-refined/results.json",
+    "preservation": "build/city-exteriors/hughes-retail-preservation.json",
+    "views": "Three initial and three corrected installed daylight views personally inspected",
+    "bakeBatches": 724,
+    "packageAssets": 1529
+  }
+}

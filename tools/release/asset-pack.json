@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1527,
- "bytes": 1135471212,
+ "count": 1529,
+ "bytes": 1136158551,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19646676,
-   "sha256": "c5b467f19f5125e815e14c8468836de3ee4733635035f197bffa837adcdeb6a1",
+   "bytes": 19665769,
+   "sha256": "a76498efb59b640dce266495e394fce833237ca8d349cba466520ddb3b741fe5",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13057104,
-   "sha256": "5230453950c33644c86176177bc81b1a2c4ff7ae603ae03ac81bb26920761dac",
+   "bytes": 13056988,
+   "sha256": "3a62cd4e471fb0f499863f80a0996aa7296d17a79f0544660b27c96938c8a0a3",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109733180,
-   "sha256": "7bb080b1c675d60b180609ffd3dca5716e0a199673bd8dc00f358acc38ca7683",
+   "bytes": 109731732,
+   "sha256": "6ab2522718e4d400e002dd504cff133fa80cd6188d7256c1de9d7bf8db7ecab7",
    "kind": "optimized"
   },
   {
@@ -7049,6 +7049,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/hughes-retail-exterior-collision.bin",
+   "bytes": 3344,
+   "sha256": "27f42b3df6811cf6cfdbf12e7daa2f16970d6566dbe7c36008448984377353bb",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/hughes-retail-exterior.glb",
+   "bytes": 666232,
+   "sha256": "b0b802b2d7afe676387cdda868bec6dc81ea3c5c7a6a9299e22087f802a7d655",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/ihopNorth-exterior-collision.bin",
    "bytes": 268,
    "sha256": "8de8a7dcd5dad804c36bcd41c31ccb17ebb99ac07b66e14e6f972541784dde40",
@@ -8970,8 +8982,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 371458,
-   "sha256": "0f5fe7f7f5d4ae6ce01e6baac4e6d58c4d59139430fb28cdeac50c027c429fac",
+   "bytes": 371692,
+   "sha256": "3914f57231ba61a3d3f37165992eb613834fe898ffc59f3d84d79752d59dbdb5",
    "kind": "original"
   },
   {
