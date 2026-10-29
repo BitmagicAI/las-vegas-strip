@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1341,
- "bytes": 1028529596,
+ "count": 1345,
+ "bytes": 1031638928,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18209546,
-   "sha256": "6e778cee7c4b827e5e352451993acb0cdf9af10aa821622117ac19275d03a7a3",
+   "bytes": 18239042,
+   "sha256": "63ba544e6871e87861a66a63b4295b9fe635c9de10dee3cfdb9c907461f1ed3f",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13067440,
-   "sha256": "d8213eb901845962083932caa9a7dd3e1856d0a4ccf4f7aa108cc17ea20edf6a",
+   "bytes": 13067492,
+   "sha256": "39ac50c5eb357e5eed5e99e5e8df5e3d9d6b5564afdb8697f55aa4c02b834e54",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109768032,
-   "sha256": "cd7b765fa3e67ac2b673a402920286884b37b6f5fc40cb39df39f1888914b713",
+   "bytes": 109767860,
+   "sha256": "c04ee907c5eb13a32987cf944d39693a55cc84eacdfea3e5ceedb14d8bf4249a",
    "kind": "optimized"
   },
   {
@@ -6125,6 +6125,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/doubleDown-exterior-collision.bin",
+   "bytes": 480,
+   "sha256": "5dd46fa40fa28fab5f06c2d7900171946e1cb91a911d55f41392e99202ef8a56",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/doubleDown-exterior.glb",
+   "bytes": 764684,
+   "sha256": "1bb685b06903b88b64a565bae385b3eda5aa0e0532d9999d96de11643e5bbfac",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/doubleDown-interior-collision.bin",
+   "bytes": 252,
+   "sha256": "82bf00ca9fd46d9e18b4f226f4e4472b7017c6301848b5d1b6014a5285673865",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/doubleDown-interior.glb",
+   "bytes": 2313692,
+   "sha256": "a806d1bb1fbe950989ed2083d27874772b96001d2c77f0eec14c02d544a0448e",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/elaraExterior-exterior-collision.bin",
    "bytes": 1184,
    "sha256": "07ca5d247ca6f452cd6199b0945d50e5673e5df0ba26a51250fe4c04ac48fa6a",
@@ -7866,8 +7890,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 336892,
-   "sha256": "2316317d0737989f56055d6183d4848bcb3826c960936a2eec805664caf3faee",
+   "bytes": 337740,
+   "sha256": "cf956725287d5c2b8b6084347772ba737cf0b2dc72e3fe382b506743136d57a3",
    "kind": "original"
   },
   {

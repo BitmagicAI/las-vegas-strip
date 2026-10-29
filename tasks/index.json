@@ -11959,12 +11959,11 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "First exterior/public bar pass installed and visually inspected;59 scoped samples and8 actual walking segments passed. Current city bake and1345 packaged runtime assets verified. Active refinement remains; not photorealistic completion.",
    "items": [
-    "Corroborate current Las Vegas exterior and entrance orientation.",
-    "Create owned exterior, entry and reference-supported public bar.",
-    "Remove only owned shell, install optimized runtime assets and collision.",
-    "Inspect installed views, walk public routes, profile and verify release packaging."
+    "Refine signs, original collage artwork, porch proportions, palm bark and furniture density; current installed pass is not photorealistic.",
+    "Exact interior layout, secondary doors and envelope heights are inferred and need stronger measured references.",
+    "Add closer reference-supported exterior detail and improve original interior collage/material fidelity before claiming this building fully complete."
    ],
    "record": "tools/resort-blocks/double-down-saloon.json",
    "buildings": [],
@@ -11976,7 +11975,9 @@
     "writes": [
      "tools/resort-blocks/double-down-saloon.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/double_down.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
