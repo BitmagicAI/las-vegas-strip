@@ -1670,8 +1670,12 @@
     {
       "id": "fairfield-paradise",
       "name": "Fairfield Inn Paradise",
-      "status": "active",
-      "record": "fairfield-paradise.json"
+      "status": "refinement-deferred",
+      "record": "fairfield-paradise.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped exterior/public-lobby pass; user requests sustained city-wide expansion. Pool, site, private rooms and fine fidelity remain recorded."
+      }
     }
   ],
   "active": "fairfield-paradise"

@@ -14687,9 +14687,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Author and inspect exterior and public lobby",
-    "Check scoped routes, preservation and matching performance",
-    "Pool courtyard, guestrooms and full private/back-of-house interiors outside initial pass"
+    "Pool courtyard, full site planting and guest/private interiors remain absent",
+    "Refine facade proportions, stone/stucco detail, furniture, lighting fixtures and sign typography",
+    "Public lobby arrangement and all detail dimensions fitted from photos, not a measured plan"
    ],
    "record": "tools/resort-blocks/fairfield-paradise.json",
    "buildings": [],
@@ -14701,7 +14701,13 @@
     "writes": [
      "tools/resort-blocks/fairfield-paradise.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-fairfield-paradise.mjs",
+     "tools/city-exteriors/install-fairfield-paradise.py",
+     "tools/strip-landmarks/export_fairfield_paradise.py",
+     "tools/city-exteriors/check-fairfield-paradise-preservation.py",
+     "tools/strip-landmarks/fairfield_paradise.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",

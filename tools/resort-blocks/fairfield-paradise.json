@@ -1,7 +1,7 @@
 {
   "id": "fairfield-paradise",
   "name": "Fairfield Inn Paradise",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/565876914"
   ],
@@ -9,7 +9,8 @@
     "issue": 367,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/367",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/368"
   },
   "sources": [
     {
@@ -26,12 +27,33 @@
     "Lobby arrangement inferred from photographs, not a measured plan."
   ],
   "remaining": [
-    "Author and inspect exterior and public lobby",
-    "Check scoped routes, preservation and matching performance",
-    "Pool courtyard, guestrooms and full private/back-of-house interiors outside initial pass"
+    "Pool courtyard, full site planting and guest/private interiors remain absent",
+    "Refine facade proportions, stone/stucco detail, furniture, lighting fixtures and sign typography",
+    "Public lobby arrangement and all detail dimensions fitted from photos, not a measured plan"
   ],
   "nextPass": {
-    "priority": "Reference-supported exterior and public lobby",
-    "checkpoint": "Claim367confirmed, official imagery and aerial inspected. No geometryyet."
+    "priority": "Pool courtyard, site and facade/material refinement",
+    "checkpoint": "Verified scoped exterior/public-lobby pass. Three installed exterior and six interior views inspected; removed unintended floor ring and added desk joints. 417 static and 26 actual walking segments passed; collision identical after final visual correction. Not photorealistic completion."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/fairfield-paradise-baseline/results.json",
+    "exterior": "build/city-exteriors/fairfield-paradise-initial/results.json",
+    "interiorInitial": "build/city-exteriors/fairfield-public-initial/results.json",
+    "interiorFinal": "build/city-exteriors/fairfield-public-refined/results.json",
+    "summary": "960x540 ultra: exterior median16.6\u201316.7ms/p9518.6\u201319.3ms; final interior median16.5\u201317.6ms/p9518.5\u201320.9ms. Baseline exterior16.7/p9517.3\u201317.7. Warm samples, not locked60 or cold transition proof."
+  },
+  "validation": {
+    "triangles": 40928,
+    "optimizedMiB": {
+      "exterior": 1.1,
+      "interior": 0.11
+    },
+    "staticChecks": 417,
+    "walkingSegments": 26,
+    "walk": "build/city-exteriors/fairfield-paradise-walk-initial/results.json",
+    "preservation": "build/city-exteriors/fairfield-paradise-preservation.json",
+    "views": "Three exterior and six interior installed daylight views personally inspected",
+    "bakeBatches": 727,
+    "packageAssets": 1539
   }
 }
