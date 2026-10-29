@@ -1610,9 +1610,15 @@
     {
       "id": "mortons-flamingo",
       "name": "Mortons The Steakhouse Flamingo",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "mortons-flamingo.json"
+    },
+    {
+      "id": "firefly-hughes",
+      "name": "Firefly Hughes Center",
+      "status": "active",
+      "record": "firefly-hughes.json"
     }
   ],
-  "active": "mortons-flamingo"
+  "active": "firefly-hughes"
 }

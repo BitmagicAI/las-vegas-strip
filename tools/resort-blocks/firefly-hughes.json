@@ -1,0 +1,185 @@
+{
+  "id": "firefly-hughes",
+  "name": "Firefly Hughes Center",
+  "status": "active",
+  "mappedIds": [
+    "way/511850831",
+    "way/511850830"
+  ],
+  "claim": {
+    "issue": 352,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/352",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/353"
+  },
+  "sources": [
+    {
+      "url": "https://www.fireflylv.com/locations/flamingo",
+      "observed": "Official current address335HughesCenterDr."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1150399,-115.1569789,20z/data=!3m1!1e3",
+      "observed": "Aerial inspected: west freestanding hipped porte cochere connected by trellis; northwest rounded patio; main shell has west/south tiled hipped roof bands and east flat equipment roof. Separate Fogo east and Starbucks southwest excluded."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Firefly+335+Hughes+Center+Dr+Las+Vegas",
+      "observed": "Official Mar2023 interior photo CIHM0ogKEICAgIDhv8jdfg: sage paneling, green banquettes along windows, round tables, bar with stools, brass chandeliers, broad passage to further dining. Rejected old exterior photo uploadedOct2026 but capturedOct2021, visibly3824Paradise address."
+    },
+    {
+      "url": "https://images1.showcase.com/d2/oAgjwbJ2cSUT59M5_8syxteIOs9F6WSX3_jcnnaLcUg/document.pdf",
+      "observed": "LogicCRE retail brochure page3 lists335Firefly approx8000sqft; siteplan, not public interior plan."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1148722,-115.1571729,3a,75y,336.05h,85.02t/data=!3m4!1e1!3m2!1sndNb7K2tBXmZ1n0LTEDGVw!2e0",
+      "observed": "Dec2022StreetView visually inspected: renovation dumpster; sage vertical siding, cream window frames, stone base, gray tile roof and green open gabled timber canopy. Date precedes2023Fireflyopening; permanent structure reference only."
+    },
+    {
+      "url": "https://www.fireflylv.com/locations/flamingo",
+      "observed": "Official current hero visually inspected: long brass bar front, dark green stone counter, mirror shelves with bottles, sage round columns/paneling and brown stools."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped6m main height and3.5m canopy height estimated; no surveyed public floorplan.",
+    "Public rooms fitted to mapped shell, 3.6m ceiling. Bar and banquette arrangement supported by photos, connections/furniture spacing inferred.",
+    "Roof eaves4.2m/rise1.35m; canopy3.43m eaves/5.08m ridge estimated."
+  ],
+  "implemented": [
+    "Original26574triangle geometry: open gabled arrival canopy, trellis, fitted roof bands/equipment, sage siding, window bays and stone plinth.",
+    "Northwest fenced patio with umbrellas; fitted public bar/dining with banquettes, brass counter, shelves, curved chairs, table settings, ceiling/wall joinery and chandeliers.",
+    "103ownedplaceholderfaces/collisionfaces removed,9560groups otherwise preserved."
+  ],
+  "remaining": [
+    "Facade and landscaping still simplified; no claim of photorealistic completion.",
+    "Room connections and dimensions inferred, not a surveyed plan; service/private spaces excluded.",
+    "Bar mirror/column composition, furniture detailing, glazing and lighting require a later fidelity pass.",
+    "Rear elevations and exact roof junctions need closer source comparison.",
+    "Sign visibility under the arrival canopy remains weak."
+  ],
+  "nextPass": {
+    "priority": "Scoped pass verified; retain fidelity gaps and continue next unclaimed building",
+    "checkpoint": "All6finalviews inspected;32actualwalkingsegments and247staticchecks pass;720batchbake fresh and1515assets packaged."
+  },
+  "baseline": {
+    "directory": "build/city-exteriors/firefly-hughes-baseline",
+    "visualReview": "All3frames inspected: opaque plain main shell and solid canopy placeholder.",
+    "performance": "median16.6\u201316.7ms,p9517.5\u201329.1ms,960x540ultra"
+  },
+  "verification": {
+    "sourceTriangles": 26574,
+    "staticCurrentCitySamples": 247,
+    "staticPassed": true,
+    "preservation": "build/city-exteriors/firefly-hughes-preservation.json",
+    "initialViews": "build/city-exteriors/firefly-hughes-installed",
+    "initialInterior": "build/city-exteriors/firefly-hughes-public",
+    "initialReview": "All6views inspected; corrected battens crossing panes, roof stripes, plinth overlap and boxy chairs.",
+    "refinedExterior": "build/city-exteriors/firefly-hughes-refined",
+    "refinedInterior": "build/city-exteriors/firefly-hughes-public-refined",
+    "refinedReview": "All6views inspected; panes now clear of battens and flat membrane no longer striped; curved chairs and paneling visible. Remaining fidelity gaps retained.",
+    "exteriorTimings": [
+      {
+        "name": "front",
+        "eye": [
+          1403,
+          2,
+          107
+        ],
+        "target": [
+          1430,
+          3,
+          106
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.5
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1402,
+          35,
+          148
+        ],
+        "target": [
+          1435,
+          1,
+          106
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.399999976158142
+      },
+      {
+        "name": "south",
+        "eye": [
+          1443,
+          2,
+          143
+        ],
+        "target": [
+          1440,
+          3,
+          124
+        ],
+        "p50": 16.699999928474426,
+        "p95": 17.800000071525574
+      }
+    ],
+    "interiorTimings": [
+      {
+        "name": "entry",
+        "eye": [
+          1428.2006479300192,
+          1.8,
+          105.83599222450387
+        ],
+        "target": [
+          1439.1935206998098,
+          1.8,
+          105.44007775496131
+        ],
+        "p50": 16.699999928474426,
+        "p95": 18.5
+      },
+      {
+        "name": "bar",
+        "eye": [
+          1433.9448147783778,
+          1.8,
+          98.62457438761382
+        ],
+        "target": [
+          1440.7963103702293,
+          2,
+          94.37522053616281
+        ],
+        "p50": 16.600000023841858,
+        "p95": 18.40000009536743
+      },
+      {
+        "name": "dining",
+        "eye": [
+          1437.2668010088555,
+          1.8,
+          107.510766343931
+        ],
+        "target": [
+          1445.621539813742,
+          2,
+          117.21634924770981
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.199999928474426
+      }
+    ],
+    "optimizedExteriorMiB": 0.68,
+    "optimizedInteriorMiB": 0.72,
+    "bakeBatches": 720,
+    "packagedAssets": 1515,
+    "typecheck": "passed",
+    "publicCheck": "0failures1existingemailwarning",
+    "walking": {
+      "passed": true,
+      "segments": 32,
+      "directory": "build/city-exteriors/firefly-hughes-walk-refined"
+    }
+  }
+}
