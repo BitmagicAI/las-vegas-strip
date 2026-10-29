@@ -1,0 +1,91 @@
+{
+  "id": "moneytree-sahara",
+  "name": "Moneytree West Sahara",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/900523799"
+  ],
+  "claim": {
+    "issue": 393,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/393",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/394"
+  },
+  "sources": [
+    {
+      "url": "https://locations.moneytreeinc.com/nv/las-vegas/2950-w-sahara-ave",
+      "accessed": "2026-10-29",
+      "observed": "Official address and storefront image: cream walls, blue sloped roof, yellow letters, glazed entrance and ramp."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Moneytree+2950+West+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected LivingLife June2026 CIABIhDuqN3DnlAvKTbMn-QtZ81Y east gable facade; Felix Miranda July2025 CIABIhBdHB907J-i_VWRISx6OIyJ public lobby: cream walls, ceiling grid/lights, dark carpet/pale tiles, blue writing islands/lightwood cabinets/gray legs and front glazing."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1448402,-115.1811118,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected aerial: blue gabled south portion, east-west ridge, flat white service half north, surrounding parking; separate BMO west and InNOut east."
+    }
+  ],
+  "uncertainDimensions": [
+    "All heights and public room plan fitted, not measured.",
+    "Official photo date unknown; older2016 teller close-up not reliable current service layout."
+  ],
+  "components": [
+    {
+      "id": "exterior",
+      "status": "implemented",
+      "description": "Cream mapped shell, blue southern gable roof, flat northern roof, signage and public east ramp/storefront."
+    },
+    {
+      "id": "public-lobby",
+      "status": "implemented",
+      "description": "Photographed ceiling/grid, carpet/tile, writing islands and public counter; room plan fitted."
+    }
+  ],
+  "remaining": [
+    "Full site paving/landscaping and precise north/rear service details remain.",
+    "Fine material/sign fidelity and carpet weave remain simplified; not photorealistic.",
+    "Public room and service-counter placement fitted from photographs, not measured; private service areas excluded."
+  ],
+  "nextPass": {
+    "priority": "Full site, precise rear details and fine material fidelity",
+    "checkpoint": "Six final installed daylight views inspected,65static/16walking passed; current740-batch bake and1579runtime assets packaged."
+  },
+  "implemented": [
+    "Original4722-triangle exterior and public lobby; optimized.19MiB exterior/.06MiB interior.",
+    "Blue gabled front roof, cream irregular shell, signs/vent/glazing, east ramp, public lobby finishes and writing islands."
+  ],
+  "evidence": [
+    "build/city-exteriors/moneytree-sahara-baseline/results.json",
+    "build/city-exteriors/moneytree-sahara-preview/results.json",
+    "build/city-exteriors/moneytree-sahara-inside-preview/results.json",
+    "build/city-exteriors/moneytree-sahara-walk-preview/results.json",
+    "build/city-exteriors/moneytree-sahara-final/results.json",
+    "build/city-exteriors/moneytree-sahara-inside-final/results.json",
+    "build/city-exteriors/moneytree-sahara-walk-final/results.json",
+    "build/city-exteriors/moneytree-sahara-preservation.json",
+    "build/strip-landmarks/moneytree-sahara-route-audit.json"
+  ],
+  "validation": {
+    "static": "65 current-city capsule/support checks passed.",
+    "walking": "16 actual walking segments passed in final default-bake level.",
+    "visual": "Six final installed daylight views personally inspected; corrected gable occlusion, storefront gap and roof-sign collision.",
+    "preservation": "34 owned faces and matching collision removed;9560 groups preserved.",
+    "packaging": "1579runtime assets;740-batch fresh city bake."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/moneytree-sahara-baseline/results.json",
+    "after": "build/city-exteriors/moneytree-sahara-final/results.json",
+    "interior": "build/city-exteriors/moneytree-sahara-inside-final/results.json",
+    "method": "960x540DPR1ultra matching south/roof/east cameras; interior has no prior furnished baseline.",
+    "summary": "Baseline median16.7/16.6/16.7,p9518/18.6/18.6ms. Final16.8/16.8/16.7,p9524.5/21.1/17.3. Interior16.7/17.1/19.2,p9517.3/25.8/38.2ms. Concurrent workload possible; not locked60fps."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/moneytree-sahara-exterior.glb": "b968d28d33ff15ff8d9fecb32249b39ecfa305bc26c8658b402ab2288ec965ae",
+      "runtime-assets/strip-landmarks/moneytree-sahara-interior.glb": "2dfdf1d636f2b6b3b9e15e4ec3666ec0bc9e57016e36e7a45b8a0f5a4587cf82"
+    }
+  }
+}

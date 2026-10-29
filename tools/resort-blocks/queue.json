@@ -1760,7 +1760,13 @@
       "name": "BMO West Sahara",
       "status": "refinement-deferred",
       "record": "bmo-sahara.json"
+    },
+    {
+      "id": "moneytree-sahara",
+      "name": "Moneytree West Sahara",
+      "status": "refinement-deferred",
+      "record": "moneytree-sahara.json"
     }
   ],
-  "active": "bmo-sahara"
+  "active": "moneytree-sahara"
 }
