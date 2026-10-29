@@ -1246,9 +1246,15 @@
     {
       "id": "harmon-dining",
       "name": "Harmon Square Dunkin / Subway / Roberto frontage",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "harmon-dining.json"
+    },
+    {
+      "id": "cvs-paradise",
+      "name": "CVS Paradise Esplanade",
+      "status": "active",
+      "record": "cvs-paradise.json"
     }
   ],
-  "active": "harmon-dining"
+  "active": "cvs-paradise"
 }

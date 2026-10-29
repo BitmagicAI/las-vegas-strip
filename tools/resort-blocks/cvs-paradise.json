@@ -1,0 +1,84 @@
+{
+  "id": "cvs-paradise",
+  "name": "CVS Paradise Esplanade",
+  "status": "active",
+  "mappedIds": [
+    "way/319208750"
+  ],
+  "claim": {
+    "issue": 256,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/256",
+    "assignee": "janiverse",
+    "date": "2026-10-27"
+  },
+  "sources": [
+    {
+      "url": "https://s4.localdatacdn.com/nv/las-vegas/155338/original/RJIAbpTqe2.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Inspected west facade: stone field, thin stacked-stone plinth, recessed windows and black canopies, thick stucco piers, layered cornices, raised glazed corner tower. Photo date unknown."
+    },
+    {
+      "url": "https://s1.localdatacdn.com/nv/las-vegas/155338/original/khGYnzdC9E.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Oblique west-front photo inspected: low stone base, square projecting CVS plaques, window divisions and parking-facing elevation. Photo date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1085,-115.1510,105m/data=!3m1!1e3",
+      "accessDate": "2026-10-27",
+      "observed": "Aerial inspected: detached southern pad, southwest chamfer entrance, west/south public elevations, east service road and parking on west/south."
+    },
+    {
+      "url": "https://images1.showcase.com/d2/9cxPDV2gM04CRe4l8BUXdGD-j52xyAVQg6vrB7qHFt8/document.pdf",
+      "accessDate": "2026-10-27",
+      "observed": "Colliers2026 site-plan roster lists suite1300 CVS13013sqft."
+    },
+    {
+      "url": "https://s3.localdatacdn.com/nv/las-vegas/155338/original/5nKDOzzz3G.jpg",
+      "accessDate": "2026-10-27",
+      "observed": "Evening corner entrance photo inspected: southwest glazed doors, tall 24 HOURS panel, upper clerestory and rooftop CVS letters; both elevations have CVS/pharmacy frames. Photo date unknown."
+    },
+    {
+      "url": "https://www.cvs.com/store-locator/cvs-pharmacy-locations/Nevada/Las-Vegas",
+      "accessDate": "2026-10-27",
+      "observed": "Official location roster read; confirms 4490 Paradise Rd, 24-hour store and drive-through pharmacy. Does not establish interior layout or drive-through window position."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint1131.8m2; listed lease area1208.9m2 uses different measurement convention. Heights and precise front divisions must be estimated against photos.",
+    "No public interior layout verified yet. Official store URL fetch timed out; no claim that its content was read.",
+    "Main roof 5.7m, curved fascia 6.25\u20136.67m, entrance cap 8.17m and top lettering approx9.5m are photographic estimates, not measured survey heights. Window/door divisions approximate."
+  ],
+  "implemented": [
+    "Installed mapped exterior with west/south stone and stucco facades, recessed framed storefronts, southwest clerestory entrance tower, swept cornices, roof equipment, service panels and collision-supported entrance sidewalk.",
+    "Original procedural color/normal maps; no third-party images packaged. 4449 source triangles before font conversion.",
+    "Removed exactly20 owned city triangles and20 matching collision triangles; retained surrounding geometry."
+  ],
+  "remaining": [
+    "Public interior not built; exact merchandising/circulation layout not yet sourced. Doors have solid backing and are not enterable.",
+    "Verify and model exact drive-through pharmacy window/canopy location; official roster confirms service but current rear treatment is generic.",
+    "Refine sign typography/proportions, individual stone shape/aging, window displays and exact fascia heights from measured evidence.",
+    "Neutral daylight reveals simplified glazing, sign lettering and blank service elevations; this is an exterior pass, not photorealistic completion.",
+    "Parking aprons and full drive-through circulation need reference-supported detailing."
+  ],
+  "evidence": [
+    "build/city-exteriors/cvs-offline.png",
+    "build/city-exteriors/cvs-paradise-before/results.json",
+    "build/city-exteriors/cvs-paradise-final/results.json",
+    "build/city-exteriors/cvs-paradise-walk/results.json",
+    "build/city-exteriors/cvs-paradise-ownership-audit.json",
+    "build/strip-landmarks/cvs-paradise-route-audit.json"
+  ],
+  "validation": {
+    "scopedChecks": 176,
+    "walkedSegments": 8,
+    "viewsInspected": [
+      "west",
+      "entrance",
+      "south"
+    ],
+    "performance": "960x540 ultra,300 warmup +180 sampled frames per fixed neutral daylight view. Baseline p50/p95 west16.7/18.7,entrance16.7/18.6,south16.7/18.5ms. Final16.6/17.2,16.7/18.3,16.6/17.3ms. No full GPU/memory/cold-stall audit.",
+    "checks": "Typecheck and records/public checks passed; one pre-existing inventory email warning.",
+    "bake": "672 batches17.67MB, fresh",
+    "package": "1375 files,0 missing"
+  }
+}
