@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1427,
- "bytes": 1087274364,
+ "count": 1429,
+ "bytes": 1087689672,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19041602,
-   "sha256": "8c4597de2588277e035bd4784320cd769bb74a499baa4389ea0c09e79b18bc58",
+   "bytes": 19057256,
+   "sha256": "b6b69f46a96736ceadb5e5c5fa774fe2d68fe436a2af84ba03e41471dcc719b4",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13062372,
-   "sha256": "452ff6635384e91f3f3e802710f268f4a1c615427518f686b993862a96d5d96b",
+   "bytes": 13061888,
+   "sha256": "976440788fdfb7bab66c2749db030a47b8c0b734ebb8e498094825452a239b2f",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109749688,
-   "sha256": "67416b90c082e78b4b39c8fc56178eb08a57214f8e998d76efe23165a2e67b81",
+   "bytes": 109749572,
+   "sha256": "b90b34e3a62e16b578ca20f6c1d0436f6f11786a054cbbbde3ec25d48662a335",
    "kind": "optimized"
   },
   {
@@ -6161,6 +6161,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/dean-martin-northwest-exterior-collision.bin",
+   "bytes": 200,
+   "sha256": "5228fa45e24f8cadddf79c88f6248d5ff0e534b8c0867180785fe07db267781f",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/dean-martin-northwest-exterior.glb",
+   "bytes": 399816,
+   "sha256": "5c09e484c85aaee6d7b18f165b37c513f5a9ee5e78dc34c6b05af38c9162b63d",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/dennys1822-exterior-collision.bin",
    "bytes": 340,
    "sha256": "6300eeffc091e0aca122f8f17cc7d743aaa1b5069cdf3e7a1faf984984f98fd4",
@@ -8382,8 +8394,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 352652,
-   "sha256": "76a9bdab451680ec7dfd0db49f9ae3fb96f67fd008870222f6ca2fb7bcdbf288",
+   "bytes": 352890,
+   "sha256": "9af34be1cbfa849a44566885cf667c404192b3749685fea3188af36e9502feb6",
    "kind": "original"
   },
   {
