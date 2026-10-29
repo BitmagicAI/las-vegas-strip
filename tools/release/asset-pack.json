@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1383,
- "bytes": 1058016095,
+ "count": 1387,
+ "bytes": 1060342218,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18601527,
-   "sha256": "fff01386377e0443303969edfe6cde275c60fc9e1500408c598f8933f8a2f12b",
+   "bytes": 18622354,
+   "sha256": "b9c0881937098d40111d59120cca27f0634f558f495930dbc5f10e81c63e2154",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13065524,
-   "sha256": "7ed44a1e94b02e59433a082e8fc3c6b9dc88ee2519753d8f26e651e5c89291c4",
+   "bytes": 13065012,
+   "sha256": "30b7108f61546713c5248621da337f9a9e4e52b3d82dae9194e159bd4cb46542",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109763180,
-   "sha256": "512df6ccf0ab5800e0bed79e2c585f25056d3945082260559fbddf06156c6c94",
+   "bytes": 109761892,
+   "sha256": "6c3f9ca0854c1560659be11d42f1cbd6b3ebaa6cc639432989c500452e39c328",
    "kind": "optimized"
   },
   {
@@ -7901,6 +7901,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/terribles-tropicana-exterior-collision.bin",
+   "bytes": 1732,
+   "sha256": "3fedfc9f39fc4dba77e8c6a3809cfb7806509429b75b219ac039a1bbab511952",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/terribles-tropicana-exterior.glb",
+   "bytes": 1305128,
+   "sha256": "56e6097d9e00fb22b54d851c884f06dd50b3eb501da35dbe795612b1cd8f2c1d",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/terribles-tropicana-interior-collision.bin",
+   "bytes": 664,
+   "sha256": "e7a22960fbeb509f75d6641d403e3e90d462c281584777a0be2dec7e953a0d4a",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/terribles-tropicana-interior.glb",
+   "bytes": 998788,
+   "sha256": "f743ec0d8e484cfced051147b87ae900dd59eb41310b9ab5bb3006e6fe793d5a",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/terriblesHeadquarters-exterior-collision.bin",
    "bytes": 548,
    "sha256": "6eaf682c7bf96ab827182e7b2dc88217acc10cb029ba9fdf1a6c0c15393bcf92",
@@ -8118,8 +8142,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 343354,
-   "sha256": "85d7579e22150e5d59355f24e10d6c47a5c1e5044fd6acf03f640d34129b34b6",
+   "bytes": 344138,
+   "sha256": "2da7b75d5c4172f33abbe7341715d555970e7af9fdac3946280c90236c92a6d7",
    "kind": "original"
   },
   {
