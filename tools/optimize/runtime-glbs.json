@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T23:35:21.228Z",
- "totalBytes": 3403286976,
- "count": 675,
+ "generated": "2026-10-28T00:49:14.339Z",
+ "totalBytes": 3410388480,
+ "count": 677,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 347157956,
+   "bytes": 347147600,
    "preset": "level",
    "overrides": []
   },
@@ -2241,6 +2241,24 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
    "bytes": 806380,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/motel6-stadium-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 6945124,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/motel6-stadium-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 166736,
    "preset": "level",
    "overrides": []
   },
