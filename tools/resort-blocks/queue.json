@@ -1206,9 +1206,15 @@
     {
       "id": "bonfire",
       "name": "Bonfire Naples",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "bonfire.json"
+    },
+    {
+      "id": "office-bar",
+      "name": "Office Bar I",
+      "status": "active",
+      "record": "office-bar.json"
     }
   ],
-  "active": "bonfire"
+  "active": "office-bar"
 }
