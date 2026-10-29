@@ -1604,9 +1604,15 @@
     {
       "id": "lawrys-hughes",
       "name": "Lawrys The Prime Rib Howard Hughes",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "lawrys-hughes.json"
+    },
+    {
+      "id": "mortons-flamingo",
+      "name": "Mortons The Steakhouse Flamingo",
+      "status": "active",
+      "record": "mortons-flamingo.json"
     }
   ],
-  "active": "lawrys-hughes"
+  "active": "mortons-flamingo"
 }
