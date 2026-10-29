@@ -1796,7 +1796,13 @@
       "name": "Los Amores de Julia Sahara",
       "status": "refinement-deferred",
       "record": "los-amores-julia-sahara.json"
+    },
+    {
+      "id": "bourbon-street-sahara",
+      "name": "Bourbon Street Sahara",
+      "status": "active",
+      "record": "bourbon-street-sahara.json"
     }
   ],
-  "active": "los-amores-julia-sahara"
+  "active": "bourbon-street-sahara"
 }

@@ -1,0 +1,69 @@
+{
+  "id": "bourbon-street-sahara",
+  "name": "Bourbon Street Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/276426298"
+  ],
+  "claim": {
+    "issue": 405,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/405"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Bourbon+Street+Sports+Bar+2610+W+Sahara",
+      "accessed": "2026-10-29",
+      "provider": "Trap Speed1320",
+      "imageDate": "March2021 (capture February2021)",
+      "photoId": "CIHM0ogKEICAgIDyivLOHg",
+      "observed": "Personally inspected cream upper/brick lower southfacade, striped upper awnings, horizontal weathered wood, deep wood canopy, black windows, whiteblack sign and red secondary letters, palms/timber garden edging."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Bourbon+Street+Sports+Bar+2610+W+Sahara",
+      "accessed": "2026-10-29",
+      "provider": "Jay Arlington",
+      "imageDate": "September2021",
+      "photoId": "CIHM0ogKEICAgIC6u7mS1AE",
+      "observed": "Personally inspected two turquoise pool tables, brown carpet, cream walls with framed art/screens, stained-glass hanging lamps and dark ceiling."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1447468,-115.1760358,3a,75y,86.64h,90t/data=!3m4!1e1!3m2!1skPpbca2wFmDDUneyk8i43w!2e0",
+      "accessed": "2026-10-29",
+      "provider": "GoogleStreetView",
+      "imageDate": "January2023",
+      "observed": "Latest available here (other date2018). Personally inspected west double entry under long ribbed metal canopy, tapered cream posts/brick bases, dark railing, grey horizontal wood walls, northcream tower/stripedawnings and southbrick tallarchedwindows."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1447273,-115.1759058,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected long northsouth footprint, flat equipment roof, northwestgreenhiptower, westparking/approach,south/eastlandscape."
+    }
+  ],
+  "uncertainDimensions": [
+    "Elevations and public room layout fitted, not a measured floor plan.",
+    "Dated2021/2023groundphotos; current facade changes not independently established."
+  ],
+  "components": [
+    {
+      "id": "facades-roof",
+      "status": "planned"
+    },
+    {
+      "id": "west-approach",
+      "status": "planned"
+    },
+    {
+      "id": "public-pool-room",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build/install and inspect reference-supported exterior and public room; verify routes, performance and packaging.",
+    "Full site and exact room arrangement need further references; private service spaces excluded."
+  ],
+  "nextPass": {
+    "priority": "Exterior and public pool room",
+    "checkpoint": "Issue405claimconfirmed;400openissue/PRscan found no conflicting claim;Amores403releaseconfirmed aftered681a2push."
+  }
+}
