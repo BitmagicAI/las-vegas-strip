@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1393,
- "bytes": 1063476072,
+ "count": 1395,
+ "bytes": 1064336124,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18637492,
-   "sha256": "e92e0f41c4ce9540457d0d7c948babd206a9ffb49620e68848b206761e8e98c7",
+   "bytes": 18638664,
+   "sha256": "854686129bfda5077989e15a92ce40ba0196e9efc5e2e3d2f3619e358021dde2",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13065168,
-   "sha256": "eb39ad2b9e64bfaf60a47f9af5daabf81b6fa2ad52e7fa3c483da9df54bf8d60",
+   "bytes": 13065124,
+   "sha256": "cf8ead05221da5f7d4c4f35d33ffd589f749b5db0a4bae6100c916279ce5708d",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109760932,
-   "sha256": "f0f4ab242a9a59195f859faac3b1509c701baa298091fb5ed43efa9983bc75ee",
+   "bytes": 109760824,
+   "sha256": "c34ce498f91c5c268e1a0ca42fda459942a1a6158934263d1ff89f2aa16d2952",
    "kind": "optimized"
   },
   {
@@ -6365,6 +6365,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/former-wendys-tropicana-exterior-collision.bin",
+   "bytes": 340,
+   "sha256": "41d7db4df5fbb361e66c48af448cee32c1b79ea213bf9c7b862368664dca6b79",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/former-wendys-tropicana-exterior.glb",
+   "bytes": 858388,
+   "sha256": "ca8bde4e49a0cdb5629053431c2e3fda7abbdf0a89bbc3b07d4bcb46bd565363",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/forumCoolingTowers-exterior-collision.bin",
    "bytes": 272,
    "sha256": "978ecac05eea6bb4187dba9aef2d379aaba2b82041236c11868482bc8d9b6b88",
@@ -8178,8 +8190,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 345098,
-   "sha256": "ad67679cf605c3bc36d8f8ce1adad95aa426df704d9c8034a615246472f7f004",
+   "bytes": 345402,
+   "sha256": "afb568d3c247a01c66db4d8e6be363a427e5812a383f79986b8c3da1059bede5",
    "kind": "original"
   },
   {

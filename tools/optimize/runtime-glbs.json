@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T13:56:53.715Z",
- "totalBytes": 3359131664,
- "count": 665,
+ "generated": "2026-10-27T14:14:32.024Z",
+ "totalBytes": 3360753064,
+ "count": 666,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -44,7 +44,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 347192108,
+   "bytes": 347191292,
    "preset": "level",
    "overrides": []
   },
@@ -2151,6 +2151,15 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
    "bytes": 1838856,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/former-wendys-tropicana-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 1622216,
    "preset": "level",
    "overrides": []
   },

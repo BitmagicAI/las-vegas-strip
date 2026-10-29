@@ -1292,9 +1292,19 @@
     {
       "id": "former-starbucks-tropicana",
       "name": "Former Starbucks 3575 W Tropicana",
+      "status": "refinement-deferred",
+      "record": "former-starbucks-tropicana.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Verified installed exterior pass; fine facade/landscape and unverified interior retained while advancing city-wide."
+      }
+    },
+    {
+      "id": "former-wendys-tropicana",
+      "name": "Former Wendys 3333 W Tropicana",
       "status": "active",
-      "record": "former-starbucks-tropicana.json"
+      "record": "former-wendys-tropicana.json"
     }
   ],
-  "active": "former-starbucks-tropicana"
+  "active": "former-wendys-tropicana"
 }

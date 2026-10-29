@@ -1,0 +1,65 @@
+{
+  "id": "former-wendys-tropicana",
+  "name": "Former Wendys 3333 W Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/431504497"
+  ],
+  "claim": {
+    "issue": 270,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/270",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/271"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1002777,-115.1849935,3a,75y,300h,90t/data=!3m4!1e1!3m2!1s5p_d-1NjXWikJ9SEboApzQ!2e0",
+      "observed": "December2022 site panorama inspected: reddish brick service wing, grey panel parapet, dark drive-through canopy; north part of east-facing facade has convex crown, red panels, pale stacked-stone end piers and full-height glazing.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/place/Wendy%27s/@36.1004119,-115.1851313,694m/data=!3m2!1e3!4b1!4m6!3m5!1s0x80c8c42b303d305f:0xe25398b802026c7d!8m2!3d36.1004119!4d-115.1851313!16s%2Fg%2F1tg9nds6",
+      "observed": "Listing permanentlyclosed. April2025 AndreiMarin photoCIHM0ogKEICAgMCIi6LVvQE confirms curved dark coping/redpanelgrid/palepiers and glazing, sideentry, brickbase. Historicalbranding, current tenancy not asserted.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://locations.wendys.com/united-states/nv/las-vegas",
+      "observed": "Current official LasVegas directory lists17sites;3333WTropicana absent. Supports avoiding operating-tenancy assertion.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint254.29m2,approximately11.07x23.17m; heights and baydivisions inferred from photographs.",
+    "Interior and current tenancy unverified; keep interior closed."
+  ],
+  "implemented": [
+    "Original mapped brick shell, curved red-panel entrance crown, pale stone piers, full-height glazing and closed entrance, drive-through bays and dark canopy, parapet coping, roof equipment and frontage aprons.",
+    "Only16ownedvisual16collisionfaces removed; all retained city properties and vertices exact-equal."
+  ],
+  "remaining": [
+    "Exact facade subdivisions, rear elevations, surrounding landscape and parking furniture remain approximate; not photorealistic.",
+    "Current tenancy and interior unknown; interior stays closed."
+  ],
+  "evidence": [
+    "build/city-exteriors/former-wendys-tropicana-first",
+    "build/city-exteriors/former-wendys-tropicana-packaged",
+    "build/city-exteriors/former-wendys-tropicana-walk/results.json",
+    "build/city-exteriors/former-wendys-tropicana-ownership-audit.json",
+    "build/strip-landmarks/former-wendys-tropicana-route-audit.json"
+  ],
+  "verification": {
+    "sourceTriangles": 2936,
+    "scopedChecks": 104,
+    "actualWalkingSegments": 10,
+    "visualReview": "All three first installed daylight views inspected; final packaged northeast view inspected.",
+    "assetsPresent": 1395,
+    "assetsMissing": 0,
+    "bakeBatches": 679
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/former-wendys-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/former-wendys-tropicana-packaged/results.json",
+    "conditions": "960x540 ultra neutral daylight,3cameras180frames. Baseline16.6\u201316.8msmedian17.8\u201318.0msp95; final16.6\u201316.7msmedian18.0msp95."
+  }
+}
