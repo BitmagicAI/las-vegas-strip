@@ -1712,7 +1712,13 @@
       "name": "McDonalds West Sahara",
       "status": "refinement-deferred",
       "record": "mcdonalds-sahara.json"
+    },
+    {
+      "id": "in-n-out-sahara",
+      "name": "In-N-Out West Sahara",
+      "status": "active",
+      "record": "in-n-out-sahara.json"
     }
   ],
-  "active": "mcdonalds-sahara"
+  "active": "in-n-out-sahara"
 }

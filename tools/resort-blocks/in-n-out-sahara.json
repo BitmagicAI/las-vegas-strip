@@ -1,0 +1,41 @@
+{
+  "id": "in-n-out-sahara",
+  "name": "In-N-Out West Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/276426443"
+  ],
+  "claim": {
+    "issue": 377,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/377"
+  },
+  "sources": [
+    {
+      "url": "https://locations.in-n-out.com/80",
+      "observed": "Official branch80 confirms2900WestSahara."
+    },
+    {
+      "url": "https://www.google.com/maps/search/In-N-Out+2900+West+Sahara+Las+Vegas",
+      "observed": "Joaquin Habacon May2026 exterior CIABIhDS6TzGSLwRW6Bp1P-beqX6: white cornices, red tiled entry roofs, red awnings, metal glazing. Chris Helm June2026 counter CIABIhAFfmdMyCUAuXc64qzgXGT3: white tiles/red palm band, gray counter, recessed lights and menu soffit. Both personally inspected."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1448147,-115.1805755,20z/data=!3m1!1e3",
+      "observed": "Personally inspected elongated north-south flat roof, south/east tiled entry towers, east patio, west/north drive-through."
+    }
+  ],
+  "uncertainDimensions": [
+    "Facade heights fitted to mapped footprint",
+    "Public counter room placement/layout inferred; no measured plan",
+    "Dining furniture arrangement not verified; private kitchen excluded"
+  ],
+  "remaining": [
+    "Author exterior and public counter room",
+    "Install and visually inspect; walk entrance/return",
+    "Record performance, preservation and full-site limitations"
+  ],
+  "nextPass": {
+    "priority": "Exterior and public counter room",
+    "checkpoint": "Claim377 confirmed; no overlapping mapped parts. Geometry not authored."
+  }
+}
