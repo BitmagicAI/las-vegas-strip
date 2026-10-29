@@ -1,0 +1,97 @@
+{
+  "id": "sahara-annex",
+  "name": "Sahara Annex shared retail",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1371426377",
+    "way/1371426379",
+    "way/1371426378",
+    "way/943068963"
+  ],
+  "claim": {
+    "issue": 397,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/397",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/398"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1440434,-115.1817677,3a,75y,190.01h,90t/data=!3m4!1e1!3m2!1sQrWb7uyICJzd3wGhSN0Z1g!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January2026",
+      "observed": "Personally inspected irregular pale stone storefronts; blue karate fascia/white red-letter panel, aluminum glazing with boarded panel; red/white Computer Repair fascia, purple psychic fascia and east barber sign."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1439267,-115.1817933,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected shared flat rectangular roof, north parking/SaharaAnnex, west Richfield, separate Dottys east and residence south."
+    },
+    {
+      "url": "https://computerrepairservice.vegas/",
+      "accessed": "2026-10-29",
+      "observed": "Official site lists2927; currentMaps business listing instead2800Suite7A. Do not transfer moved-business interior gallery to this footprint."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, door widths and roof equipment positions photo-fitted, not measured.",
+    "Current business operations uncertain; target dated January2026 physical frontage.",
+    "No address-matched interior reference yet."
+  ],
+  "components": [
+    {
+      "id": "karate-frontage",
+      "status": "implemented"
+    },
+    {
+      "id": "computer-frontage",
+      "status": "implemented"
+    },
+    {
+      "id": "psychic-frontage",
+      "status": "implemented"
+    },
+    {
+      "id": "barber-frontage",
+      "status": "implemented"
+    },
+    {
+      "id": "roof-service-faces",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "Full parking/site treatment, precise rear service details and fine material/sign fidelity remain; stone faces are simplified and flat, not photorealistic.",
+    "Heights, storefront divisions and roof equipment remain photo-fitted, not surveyed.",
+    "Current tenant operations and address-matched public interiors remain unverified; no invented interiors added."
+  ],
+  "nextPass": {
+    "priority": "Complete site and closer facade fidelity",
+    "checkpoint": "Three final installed daylight views inspected;40 static and16 actual walking checks passed;742-batch bake and1583 runtime assets packaged."
+  },
+  "implemented": [
+    "Original3527-triangle four-unit exterior, .33MiB optimized GLB; stone fronts/west wall, distinct fascias and storefronts, boarded karate panel, membrane roof/coping/service details."
+  ],
+  "evidence": [
+    "build/city-exteriors/sahara-annex-baseline/results.json",
+    "build/city-exteriors/sahara-annex-final/results.json",
+    "build/city-exteriors/sahara-annex-walk-final/results.json",
+    "build/city-exteriors/sahara-annex-preservation.json"
+  ],
+  "validation": {
+    "static": "40 current-city checks passed.",
+    "walking": "16 final default-bake walking segments passed.",
+    "visual": "Three final installed daylight views personally inspected. Corrected triangular stone coloring and excessive text mesh density.",
+    "preservation": "46 owned faces and matching colliders replaced;9560 groups preserved.",
+    "packaging": "742-batch current bake;1583 assets; type, Bitmagic, record and public checks passed (existing public email warning only)."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra; matching front/roof/west cameras. Concurrent other-session CPU workload preserved.",
+    "summary": "Baseline medians17.8/16.6/16.5,p9524.5/18.2/19.2ms; final17.9/16.6/16.6,p9524.8/18.4/19.0ms. Not locked60fps."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/sahara-annex-exterior-collision.bin": "fdec6a6ea57549c0403b8ac2b7d515a099c768a7f1eda588307d81b792b54044",
+      "runtime-assets/strip-landmarks/sahara-annex-exterior.glb": "fb186a0f4e5796e7deeb50d6dfef962c291ac6e37b687fbc03509aece9fe4574"
+    }
+  }
+}
