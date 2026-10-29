@@ -1,0 +1,93 @@
+{
+  "id": "martinez-boxing",
+  "name": "2800 South Highland / Martinez Boxing",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/464695953"
+  ],
+  "claim": {
+    "issue": 419,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/419",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/420"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1393271,-115.1714049,3a,75y,111.27h,90t/data=!3m4!1e1!3m2!1szi3fut5_MqJ3DXPqn3KBfg!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January 2026",
+      "observed": "Charcoal gym facade, central tall glazed double entry, flanking service doors, raised concrete landing, metal ramp and rope rails; adjacent blue Moroccan Mosaic tenant."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.139241,-115.1711451,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Shared stepped industrial roof with patchwork membrane and equipment, west parking, rear service yard. Older aerial label Las Vegas Gunfights conflicts with newer Street View gym identity."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Martinez+Boxing+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Owner March2025 ring photo CIABIhAA3ilW-yR_E2focDkACGpK: black rubber floor, blue/white/red ropes, dark steel ceiling and dome pendant. Pete Banyai Feb2026: belt wall/trophy shelf, framed pictures/mirrors, linear suspended lights. References only; original abstract decor."
+    },
+    {
+      "url": "https://www.lveliteboxing.org/contact-us/",
+      "accessed": "2026-10-29",
+      "observed": "Official LV Elite Boxing site confirms 2800 S Highland address; linked Gil Martinez Elite Boxing social account. Identity also corroborated by USA Boxing 2025 club list. No additional floorplan evidence."
+    }
+  ],
+  "uncertainDimensions": [
+    "Tenant boundary, training-room layout and heights inferred from images; no measured plan.",
+    "Shared mapped footprint includes neighboring tenants; public gym confined to inferred front bay."
+  ],
+  "components": [
+    {
+      "id": "shared-exterior",
+      "status": "implemented"
+    },
+    {
+      "id": "entry-ramp",
+      "status": "implemented"
+    },
+    {
+      "id": "public-training-room",
+      "status": "implemented"
+    }
+  ],
+  "remaining": [
+    "North and rear shared industrial facades remain sparse; complete parking/service yard and fine frontage proportions need more references.",
+    "Public training room dimensions and tenant boundary inferred; private and neighboring interiors excluded.",
+    "Fine material texture, exact fixtures/memorabilia density, true mirror reflections and full ring circulation need refinement. Not photorealistic completion."
+  ],
+  "nextPass": {
+    "priority": "Shared service elevations, full site and finer interior finishes",
+    "checkpoint": "Final5views inspected;199static/24actualwalkpass;753batchbakecurrent andchecks passed."
+  },
+  "implemented": [
+    "Original21960triangle shared shell/frontage and public boxing training room, raised landing/ramp, separate blue neighboring storefront, coping and rooftop equipment.",
+    "Public gym includes ring/ropes/corner pads, hanging bags/chains, steel ceiling, suspended lights, shaped belt plates/trophy cups and original abstract framed decorations. Layout inferred.",
+    "Only28ownedfaces/matchingcolliders replaced;9560groups preserved; no runtime/road changes."
+  ],
+  "validation": {
+    "static": "199currentcitychecks passed",
+    "walking": "24actualsegments passed: public ramp, entry and training aisle",
+    "visual": "Five final installed daylight views personally inspected after belt/trophy shape refinement",
+    "packaging": "753batchcurrentcitybake;1621runtimeassets;type/Bitmagic/public passed existingemailwarning only"
+  },
+  "performance": {
+    "method": "960x540DPR1ultra matched front/roof/neighbor; additional new interior views",
+    "summary": "Baseline median16.7/16.7/16.7ms,p9519.1/18.8/18.7;final16.7/16.6/16.7,p9518.8/18.7/18.7. Interiors16.7/16.6,p9518.9/18.9. No locked60claim."
+  },
+  "evidence": [
+    "build/city-exteriors/martinez-boxing-baseline/results.json",
+    "build/city-exteriors/martinez-boxing-final/results.json",
+    "build/city-exteriors/martinez-boxing-walk-final/results.json",
+    "build/city-exteriors/martinez-boxing-preservation.json"
+  ],
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/martinez-boxing-exterior-collision.bin": "bf67d58aed8bf611f36cec34540e95c7713c9a5ebf64f1d578ab729118c70352",
+      "runtime-assets/strip-landmarks/martinez-boxing-interior.glb": "c1b96319ea3518d81a51265177c7641ed6faaf31ec9b7f959f11dc2d56ec7123",
+      "runtime-assets/strip-landmarks/martinez-boxing-exterior.glb": "36c302624fff199d333bd1267695d9a3bf73142678053362b7f5b52b7be58b48",
+      "runtime-assets/strip-landmarks/martinez-boxing-interior-collision.bin": "354c5794cea1cf562dd48dd99dfc6770bc484d2e347e6c165e0af8f9f4f5a6ee"
+    }
+  }
+}
