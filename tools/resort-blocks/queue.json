@@ -1666,7 +1666,17 @@
         "date": "2026-10-28",
         "reason": "Verified scoped exterior pass; user requests sustained city-wide expansion. Interior, site and fine facade requirements retained in block record."
       }
+    },
+    {
+      "id": "fairfield-paradise",
+      "name": "Fairfield Inn Paradise",
+      "status": "refinement-deferred",
+      "record": "fairfield-paradise.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped exterior/public-lobby pass; user requests sustained city-wide expansion. Pool, site, private rooms and fine fidelity remain recorded."
+      }
     }
   ],
-  "active": "delfriscos-paradise"
+  "active": "fairfield-paradise"
 }

@@ -1,0 +1,59 @@
+{
+  "id": "fairfield-paradise",
+  "name": "Fairfield Inn Paradise",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/565876914"
+  ],
+  "claim": {
+    "issue": 367,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/367",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/368"
+  },
+  "sources": [
+    {
+      "url": "https://www.marriott.com/en-us/hotels/lasfi-fairfield-inn-las-vegas-convention-center/photos/",
+      "observed": "Official exterior fi-lasfi-hotel-exterior-28478 and gallery lobby photos personally inspected. Four-storey warmgray walls/dark perimeterbands; curved broad entrancecanopy/stonepier/pairedmetalposts. Lobby whitecolumns/woodfloor/greenchairs/tansofa/lightstonefrontdesk/greenbackwall and wooddivider."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.11969,-115.15420,19z/data=!3m1!1e3",
+      "observed": "Personally inspected aerial: offset east-west hotelwings, westernarrival, southrecess pool and eastparking."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped4storeys/15m estimate; facade and canopy dimensions fitted.",
+    "Lobby arrangement inferred from photographs, not a measured plan."
+  ],
+  "remaining": [
+    "Pool courtyard, full site planting and guest/private interiors remain absent",
+    "Refine facade proportions, stone/stucco detail, furniture, lighting fixtures and sign typography",
+    "Public lobby arrangement and all detail dimensions fitted from photos, not a measured plan"
+  ],
+  "nextPass": {
+    "priority": "Pool courtyard, site and facade/material refinement",
+    "checkpoint": "Verified scoped exterior/public-lobby pass. Three installed exterior and six interior views inspected; removed unintended floor ring and added desk joints. 417 static and 26 actual walking segments passed; collision identical after final visual correction. Not photorealistic completion."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/fairfield-paradise-baseline/results.json",
+    "exterior": "build/city-exteriors/fairfield-paradise-initial/results.json",
+    "interiorInitial": "build/city-exteriors/fairfield-public-initial/results.json",
+    "interiorFinal": "build/city-exteriors/fairfield-public-refined/results.json",
+    "summary": "960x540 ultra: exterior median16.6\u201316.7ms/p9518.6\u201319.3ms; final interior median16.5\u201317.6ms/p9518.5\u201320.9ms. Baseline exterior16.7/p9517.3\u201317.7. Warm samples, not locked60 or cold transition proof."
+  },
+  "validation": {
+    "triangles": 40928,
+    "optimizedMiB": {
+      "exterior": 1.1,
+      "interior": 0.11
+    },
+    "staticChecks": 417,
+    "walkingSegments": 26,
+    "walk": "build/city-exteriors/fairfield-paradise-walk-initial/results.json",
+    "preservation": "build/city-exteriors/fairfield-paradise-preservation.json",
+    "views": "Three exterior and six interior installed daylight views personally inspected",
+    "bakeBatches": 727,
+    "packageAssets": 1539
+  }
+}

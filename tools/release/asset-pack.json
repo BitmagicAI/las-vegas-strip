@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1535,
- "bytes": 1137298615,
+ "count": 1539,
+ "bytes": 1138586658,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19704171,
-   "sha256": "92c2483d218c6b27c4c079940f53e499f4ab626002af1fd496754ca3a61eddde",
+   "bytes": 19727428,
+   "sha256": "1b963df81bbb1a0fc026eeab1009f5b5dd8a65165542804d4cffd8bb54f55f59",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13056452,
-   "sha256": "2ba43d1c5fccd8db9e1e932aaf7314e2d319c531dfee755c74aa9f36aa7bea1d",
+   "bytes": 13056232,
+   "sha256": "032332088e855f252155efd192b9a257eef10b8e6ea03f246394fcb22fded9e6",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109729088,
-   "sha256": "ea78470b12df7ed128a6540da2b8d5154b6d14dfdff59c9e930c82e11cb45ef7",
+   "bytes": 109728312,
+   "sha256": "a6342494277dc93412636d6ad1e54fb76493c98a5c86b9c0ae698d153f4347a5",
    "kind": "optimized"
   },
   {
@@ -6413,6 +6413,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/fairfield-paradise-exterior-collision.bin",
+   "bytes": 1028,
+   "sha256": "8b5371c1bdc4bd949978b746438c063eaecb0dc3cc6d35aa0e22347c925f1a94",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/fairfield-paradise-exterior.glb",
+   "bytes": 1148420,
+   "sha256": "c87294827de36a876dc4d0e3af4a1dcb9f2d0d7088e761a6eba138a18efc72fb",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/fairfield-paradise-interior-collision.bin",
+   "bytes": 612,
+   "sha256": "ea9d39883a5a309fa9aa458bcf9ca073f8c9f2240f765b8fc950a1683c01fd82",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/fairfield-paradise-interior.glb",
+   "bytes": 114956,
+   "sha256": "18c6e83f36b0d0fdb96710fcb4347e683a1420cc63f571df9e049fd04e0dc2bb",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/fashion-exterior-collision.bin",
    "bytes": 7356,
    "sha256": "f9fd75740f319b368f0fe81f148a164eebbda49c8632a761d90d490890c6d82d",
@@ -9018,8 +9042,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 372838,
-   "sha256": "75e182aca8e6f221bf592db17e987cafa0ddc017205fcd8565bb6014e03b4e90",
+   "bytes": 373604,
+   "sha256": "30e23832a747c8c4ec924a0f61aaeb5a3d57e3129ecde9175a05a4ece86d45a4",
    "kind": "original"
   },
   {
