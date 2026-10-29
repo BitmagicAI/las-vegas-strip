@@ -1,0 +1,67 @@
+{
+  "id": "los-amores-julia-sahara",
+  "name": "Los Amores de Julia Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/276426262"
+  ],
+  "claim": {
+    "issue": 403,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/403"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/Culichi+Town+2400+W+Sahara+Las+Vegas",
+      "accessed": "2026-10-29",
+      "imageDate": "September2025",
+      "provider": "Culichitown Las Vegas owner",
+      "photoId": "CIABIhATP2JPyiTOAw6r0F1YVNae",
+      "observed": "Personally inspected white irregular stone/dark joints, layered entry gables, charcoal barrel tile roofs, stucco wings/dark windows, round gable vent, arched entrance, square chimneys, red curb and palms. Historical branding; listing now permanently closed."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1447405,-115.1750669,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected east entrance projection, pitched dark perimeter roof with flat HVAC well, east/north parking, landscaped Sahara frontage. Label identifies successor Los Amores de Julia."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Los+Amores+de+Julia+2400+W+Sahara",
+      "accessed": "2026-10-29",
+      "imageDate": "October2026",
+      "provider": "Blanca Cabada",
+      "photoId": "CIABIhB1Kk8bkpzhjCX-eindxNSY",
+      "observed": "Personally inspected wood tables, tan leather/rattan/blackwoven chairs, dark exposed ceiling, woven tan overhead panels, hanging foliage/stringlights/wovenpendants, brick arched public tortilla counter, fridge and TVs."
+    },
+    {
+      "url": "https://www.losamoresdejulia.com/",
+      "accessed": "2026-10-29",
+      "observed": "Official Las Vegas opening October16,2026; Maps confirms2400WestSahara current venue. Old Culichitown website redirects to blank lander."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights and public layout fitted from photographs, no measured floor plan.",
+    "Current branding and exterior alterations require further reference comparison; 2025 photo must not be treated as current signage."
+  ],
+  "components": [
+    {
+      "id": "exterior-roof-entry",
+      "status": "planned"
+    },
+    {
+      "id": "public-dining-counter",
+      "status": "planned"
+    },
+    {
+      "id": "public-approach",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build, install and inspect exterior/public dining; validate scope, routes, performance and package.",
+    "Resolve current exterior branding; retain inferred room layout and exclude private rooms."
+  ],
+  "nextPass": {
+    "priority": "Reference-supported exterior/public dining",
+    "checkpoint": "Issue403 claim confirmed;400open issue/PR scan found no scope overlap. VapePirates401 released after955f328 push."
+  }
+}

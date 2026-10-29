@@ -1790,7 +1790,13 @@
       "name": "Vape Pirates Sahara",
       "status": "refinement-deferred",
       "record": "vape-pirates-sahara.json"
+    },
+    {
+      "id": "los-amores-julia-sahara",
+      "name": "Los Amores de Julia Sahara",
+      "status": "active",
+      "record": "los-amores-julia-sahara.json"
     }
   ],
-  "active": "vape-pirates-sahara"
+  "active": "los-amores-julia-sahara"
 }
