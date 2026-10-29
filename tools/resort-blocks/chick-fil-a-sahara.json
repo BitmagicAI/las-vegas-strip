@@ -1,14 +1,15 @@
 {
   "id": "chick-fil-a-sahara",
   "name": "Chick-fil-A Sahara at I-15",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/587100024"
   ],
   "claim": {
     "issue": 409,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/409"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/409",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/410"
   },
   "sources": [
     {
@@ -45,27 +46,57 @@
   "components": [
     {
       "id": "facades-roof",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "patio-entrances",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "drive-canopy",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "landscape-approach",
-      "status": "planned"
+      "status": "implemented"
     }
   ],
   "remaining": [
-    "Build/install/inspect exterior and public patio, verify routes/performance/packaging.",
-    "Public interior/fine materials/site details remain separately required."
+    "Public dining interior remains unbuilt: official dine-in confirmed, but no location-specific interior photograph obtained.",
+    "Full site parking/paving, drive queue fixtures, service elevations and landscaping remain incomplete.",
+    "Canopy geometry, support positions, elevations and window dimensions fitted from imagery, not surveyed.",
+    "Original simplified type signage, sparse planting and flat finishes need finer visual fidelity; not photorealistic completion.",
+    "First final run p95 spikes27\u201332ms did not reproduce: repeat18.2\u201318.5ms. Machine workload variability not isolated; no locked60claim."
   ],
   "nextPass": {
-    "priority": "Exterior/patio/drive canopy",
-    "checkpoint": "409claimconfirmed after400openissue/PRscan;407released after704df01push."
+    "priority": "Public interior evidence, full site and finer facade/material fidelity",
+    "checkpoint": "Three final installed daylight views personally inspected; 163 current-city static checks and 18 actual walking segments passed. Fresh 748-batch bake staged; type/Bitmagic/public checks passed. Repeat median16.7ms,p9518.2\u201318.5ms; variability retained."
+  },
+  "implemented": [
+    "Original 13,677-triangle exterior: fitted tan entry pier, glazed north frontage, ribbed sloped overhang, dark awnings, patio furniture/red umbrellas, open curved drive canopy, local desert planting and roof equipment.",
+    "Only 34 owned faces and matching collision triangles replaced; 9,560 city groups retained. No runtime source edits."
+  ],
+  "evidence": [
+    "build/city-exteriors/chick-fil-a-sahara-baseline/results.json",
+    "build/city-exteriors/chick-fil-a-sahara-final/results.json",
+    "build/city-exteriors/chick-fil-a-sahara-walk-final/results.json",
+    "build/city-exteriors/chick-fil-a-sahara-repeat/results.json",
+    "build/city-exteriors/chick-fil-a-sahara-preservation.json"
+  ],
+  "validation": {
+    "static": "163 current-city checks passed",
+    "walking": "18 actual segments passed, patio and canopy round trips",
+    "visual": "Three final installed daylight views personally inspected; west finish and pickup sign corrections verified.",
+    "packaging": "748-batch current city bake, 1605 runtime assets; type/Bitmagic/public checks passed (existing email warning only)."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra, same north/roof/west viewpoints; other-session workloads preserved.",
+    "summary": "Baseline medians18.1/16.7/16.7ms,p9533.8/18.5/18.9; final16.9/16.8/16.7,p9532/27.5/27.8. Repeat medians16.7each,p9518.5/18.2/18.5ms. Initial spikes not reproduced, cause not isolated. No locked60claim."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/chick-fil-a-sahara-exterior-collision.bin": "c521b4f9c184e9587357641ef91eefe50a54960667eac506f5edcb989248c6ce",
+      "runtime-assets/strip-landmarks/chick-fil-a-sahara-exterior.glb": "65e38ad5c9e02cc4def94837e754823fd856a8801e614b55f0ebac2a4a7f290c"
+    }
   }
 }

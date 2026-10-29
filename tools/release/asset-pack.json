@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1603,
- "bytes": 1158863192,
+ "count": 1605,
+ "bytes": 1159529329,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20067012,
-   "sha256": "a19229e2ffd2664e29dda8a485f350d439a5cc2a4cc4963b70f81f8ec1697bd2",
+   "bytes": 20079971,
+   "sha256": "996bac2d1e93402968391ba2ffcf44e7b9d641bd255ea0d6dc534c2c91fd707b",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13049720,
-   "sha256": "574e226429e47335cfd2ce2e8e922a8b262c86279b082a37597533a21f4bda6b",
+   "bytes": 13049796,
+   "sha256": "1b98da93ab7775e6d2184f8da1e0e257eebb7c6be63eea305c4986bf13202e6a",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109702684,
-   "sha256": "b9a8cca391e320743e2e0f441043687cd9899179bcdda6b69b8682fde382480b",
+   "bytes": 109702296,
+   "sha256": "f406533f5288697cf5dae182d52945620a5d8f2638d7f3f1d1b3733e89c25997",
    "kind": "optimized"
   },
   {
@@ -6077,6 +6077,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/chick-fil-a-sahara-exterior-collision.bin",
+   "bytes": 884,
+   "sha256": "c521b4f9c184e9587357641ef91eefe50a54960667eac506f5edcb989248c6ce",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/chick-fil-a-sahara-exterior.glb",
+   "bytes": 652304,
+   "sha256": "65e38ad5c9e02cc4def94837e754823fd856a8801e614b55f0ebac2a4a7f290c",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/circusExterior-exterior-collision.bin",
    "bytes": 5508,
    "sha256": "7bd3518fc00c60b9884de93ac30249e54b8e97543ddcd170068c8cce48c85c4e",
@@ -9414,8 +9426,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 384882,
-   "sha256": "407b12b637145e7a16b3cc07b10ffaded44ba370a845be7118f2e1dd6da2b10f",
+   "bytes": 385184,
+   "sha256": "6366569c48917856cbc918eb85efc7a9fd2c10df5bc17a9ee5c2ffde9aef7aa0",
    "kind": "original"
   },
   {
