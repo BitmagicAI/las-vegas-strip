@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1361,
- "bytes": 1036417425,
+ "count": 1363,
+ "bytes": 1037919030,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18377097,
-   "sha256": "22afac44ac2b7b483f782e7f913b027b7d7205cd62604099806af95620235683",
+   "bytes": 18399378,
+   "sha256": "cca574a178049983ffd5c63cac3c344e3196863d3392bf434ee6991279b0f9e2",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13066728,
-   "sha256": "df302b455c8080ef90f03bbfa104098264b4c64b3858c5b04782ba5877725a71",
+   "bytes": 13067188,
+   "sha256": "42df21ff48781eb7f3d365489264042dd44ed23c0f7be67e18e64d6cec467b69",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109766896,
-   "sha256": "f6b2691cb3669463b35520fe323a9b8d918bdb7ae84606ef87bb8679e3adef28",
+   "bytes": 109766688,
+   "sha256": "662cc1ebecd9a26528e47df3f0bce343e42e37dd8b44206621f256d0af948752",
    "kind": "optimized"
   },
   {
@@ -7253,6 +7253,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/piranha-exterior-collision.bin",
+   "bytes": 908,
+   "sha256": "a45fc07398bb72051a9c622f5afbb4ebbd16c70c38de0cb6c2ea7392190ba343",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/piranha-exterior.glb",
+   "bytes": 1477980,
+   "sha256": "dd2e15c78ec5ba5e393bd41c4a3feb3403b7414bd76b738e17c52e473ba8d85d",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/planetHollywood-exterior-collision.bin",
    "bytes": 972,
    "sha256": "0069d841a18b8e8f3b80c7a781791fa51d2070be494754c8a39aeb94ed2bd222",
@@ -7986,8 +7998,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 339650,
-   "sha256": "b387ef047119aa162866dc953768153562512d06d1c661d7b2828b675baa810d",
+   "bytes": 339834,
+   "sha256": "e7322bbc89f140689d50ea624078bf26124e700af02005fef5d6032632b6426e",
    "kind": "original"
   },
   {
