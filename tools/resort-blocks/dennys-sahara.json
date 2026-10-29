@@ -1,0 +1,48 @@
+{
+  "id": "dennys-sahara",
+  "name": "Denny\u2019s West Sahara",
+  "status": "active",
+  "mappedIds": [
+    "way/905241566"
+  ],
+  "claim": {
+    "issue": 385,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/385"
+  },
+  "sources": [
+    {
+      "url": "https://locations.dennys.com/nv/las-vegas/249392",
+      "provider": "Denny\u2019s",
+      "accessed": "2026-10-29",
+      "observed": "Official address3010 W Sahara."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Dennys+3010+West+Sahara+Las+Vegas",
+      "provider": "Google Maps, Seany D",
+      "imageDate": "January2020; uploadedMarch2020",
+      "accessed": "2026-10-29",
+      "observed": "Dark hipped standing-seam roof, cream clerestory, stone lower walls/piers, silver-gray canopy band, aluminum glazing, red sign and black patio rail. Photo CIHM0ogKEICAgICcqJjXZg."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.144923,-115.182483,20z/data=!3m1!1e3",
+      "provider": "Google Maps aerial",
+      "imageDate": "Unknown",
+      "accessed": "2026-10-29",
+      "observed": "South hipped roof, north flat service roof, south canopy, east paved approach/parking. Separate northeast sign."
+    }
+  ],
+  "uncertainDimensions": [
+    "Facade photo dated2020; current appearance not fully corroborated.",
+    "Height, hidden elevations and detailed site dimensions fitted; no measured public interior plan."
+  ],
+  "remaining": [
+    "Build exterior and public approach.",
+    "Verify installed daylight, walking, preservation and performance.",
+    "Full parking/landscaping and interior remain."
+  ],
+  "nextPass": {
+    "priority": "Build scoped exterior",
+    "checkpoint": "Claim385 confirmed, source research and mapped footprint checked."
+  }
+}

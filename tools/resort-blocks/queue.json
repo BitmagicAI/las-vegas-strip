@@ -1736,7 +1736,13 @@
       "name": "Holiday Inn Express East Tropicana",
       "status": "refinement-deferred",
       "record": "holiday-inn-tropicana.json"
+    },
+    {
+      "id": "dennys-sahara",
+      "name": "Denny\u2019s West Sahara",
+      "status": "active",
+      "record": "dennys-sahara.json"
     }
   ],
-  "active": "holiday-inn-tropicana"
+  "active": "dennys-sahara"
 }
