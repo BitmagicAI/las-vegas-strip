@@ -1,0 +1,83 @@
+{
+  "id": "hampton-tropicana",
+  "name": "Hampton Inn Tropicana",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/431504492",
+    "way/431504500"
+  ],
+  "claim": {
+    "issue": 276,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/276",
+    "assignee": "janiverse",
+    "date": "2026-10-27",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/277"
+  },
+  "sources": [
+    {
+      "url": "https://www.hilton.com/en/hotels/lasinhx-hampton-tropicana/gallery/",
+      "observed": "Official images1,12,5 visually inspected: cream/terracotta exterior, green hip crowns, brick base, covered arrival; lobby with wood reception counters, ring chandelier, lounge; breakfast space with magenta wall, mustard seating and buffet. Image7 inspected: irregular pool, rock waterfall, timber lounge chairs with blue cushions and substantial palms/planting. These landscape details are not yet fully modelled. Image6 additionally inspected on 2026-10-27: rock feature is at the side of basin, courtyard framed by palms/shrubs, green-roofed rear entrance and firepit seating; present placement remains approximate.",
+      "accessDate": "2026-10-27"
+    },
+    {
+      "url": "https://www.google.com/maps/place/Hampton+Inn+Tropicana/@36.0996524,-115.1834629,401m/data=!3m1!1e3!4m9!3m8!1s0x80c8c5d4a67b25db:0x1a38e43716025f28!5m2!4m1!1i2!8m2!3d36.0996676!4d-115.1833771!16s%2Fg%2F1tghpw6k",
+      "observed": "Satellite inspected: rotated parallel wings around southwest-facing pool courtyard; northeast arrival facing Dean Martin. Source dates vary.",
+      "accessDate": "2026-10-27"
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint2852m2 anchors plan; heights, facade divisions and public interior dimensions need further validation.",
+    "Lobby and breakfast furnishings supported by photos; precise plan relationships inferred until verified.",
+    "Six storeys inferred from official facade photo; modeled roof height19.4m and crown21m are estimates.",
+    "Public lobby22x16m and adjoining breakfast furnishings approximate photo relationships; no surveyed plan.",
+    "Pool outline, depth and landscape placement approximate; new image6 clarifies side rock feature and rear entrance. Exact plan not surveyed."
+  ],
+  "implemented": [
+    "Original six-storey exterior fitted to mapped angled wings; framed glazing, spandrels, brick base, cornices, raised sign pavilions and green hipped arrival canopy.",
+    "Public lobby/reception and breakfast furnishings based on official photographs, with original wood/floor/textile maps and circulation kept clear.",
+    "Courtyard pool and deck with lounge seating; animated pool material integrated using existing water system.",
+    "Only152 owned shell and matching collision faces removed; retained geometry exact-equal.",
+    "Refinement: rounded seat cushions, splayed timber chair legs, reduced periodic wood/floor grain; asymmetrical pool basin, original rock feature, eight fan palms and planted boundary beds.",
+    "Courtyard porch with six brick piers and raised central hip roof; closed rear glazing, original folded-leaf hedge geometry, bark and sedimentary rock maps. Removed regular trunk rings and corrected walking route around a lounge chair. Canopy placement/dimensions inferred from official image6."
+  ],
+  "remaining": [
+    "Accurate facade bay widths, crown profiles, sign typography and surface weathering need closer reference matching.",
+    "Courtyard remains approximate: flowing waterfall effect, mature foliage, striped cushions, detailed outdoor furniture and firepit remain unfinished. Rear porch is now modeled, but its closed doors do not connect to an invented interior corridor. Stone and planting need closer reference matching.",
+    "Interior is a simplified photo-supported interpretation. Exact room boundaries, breakfast arches, displays, ornaments and seating profiles remain unverified or incomplete. Private hotel rooms remain closed.",
+    "Not photorealistically complete; refinements deferred while continuing the requested city-wide work.",
+    "Wood/floor grain improved and soft seating rounded; remaining furniture, cabinetry, textile pattern and ornament detail still simplified.",
+    "Pool-facing performance regressed: repeat18.9ms median30.2ms p95 versus previous16.6\u201316.7/19.2\u201321.4 close-pool results. Reverse view16.6/19.2. Cause not isolated; profile foliage/material/canopy costs in next optimization pass, no locked60fps claim."
+  ],
+  "evidence": [
+    "build/city-exteriors/hampton-tropicana-first",
+    "build/city-exteriors/hampton-tropicana-interior",
+    "build/city-exteriors/hampton-tropicana-walk-revised/results.json",
+    "build/city-exteriors/hampton-tropicana-ownership-audit.json",
+    "build/strip-landmarks/hampton-tropicana-route-audit.json",
+    "build/city-exteriors/hampton-tropicana-packaged",
+    "build/city-exteriors/hampton-tropicana-interior-final",
+    "build/city-exteriors/hampton-tropicana-interior-refined",
+    "build/city-exteriors/hampton-tropicana-pool-corrected",
+    "build/city-exteriors/hampton-tropicana-exterior-corrected",
+    "build/city-exteriors/hampton-tropicana-walk-corrected/results.json",
+    "build/city-exteriors/hampton-tropicana-courtyard-final",
+    "build/city-exteriors/hampton-tropicana-courtyard-repeat/results.json",
+    "build/city-exteriors/hampton-tropicana-walk-courtyard-final/results.json"
+  ],
+  "verification": {
+    "sourceTriangles": 83344,
+    "scopedChecks": 481,
+    "actualWalkingSegments": 34,
+    "visualReview": "Installed courtyard forward/reverse views inspected against official image6: widened porch with raised center, individual hedge leaves and bark/rock maps installed. Round shrub blobs and trunk rings removed. Foliage, stacked rockwork and facade still simplified. Lobby unchanged from previous inspected pass. All34 walking segments pass.",
+    "assetsPresent": 1403,
+    "assetsMissing": 0,
+    "bakeBatches": 682
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/hampton-tropicana-baseline/results.json",
+    "after": "build/city-exteriors/hampton-tropicana-exterior-corrected/results.json",
+    "conditions": "960x540 ultra neutral daylight,3views180frames. Baseline16.6\u201316.7msmedian17.9\u201318.1msp95; refined exterior16.6msmedian18.6\u201319.1msp95.",
+    "interior": "Refined3views16.7msmedian18.0\u201318.2msp95, same960x540ultra conditions.",
+    "pool": "Final pool-facing18.8msmedian24msp95; repeat18.9/30.2. Reverse16.6/18.8; repeat16.6/19.2. Same960x540ultra. Regression recorded, not resolved."
+  }
+}

@@ -1322,9 +1322,23 @@
     {
       "id": "standard-tropicana",
       "name": "Standard / Chevron 3201 W Tropicana",
-      "status": "active",
-      "record": "standard-tropicana.json"
+      "status": "refinement-deferred",
+      "record": "standard-tropicana.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Verified exterior pass; exact signage, material detail and unverified interior retained for refinement."
+      }
+    },
+    {
+      "id": "hampton-tropicana",
+      "name": "Hampton Inn Tropicana",
+      "status": "refinement-deferred",
+      "record": "hampton-tropicana.json",
+      "deferral": {
+        "date": "2026-10-27",
+        "reason": "Installed exterior/public rooms/courtyard inspected and routes checked. Retain recorded visual and performance discrepancies while continuing user-requested city-wide reconstruction."
+      }
     }
   ],
-  "active": "standard-tropicana"
+  "active": null
 }

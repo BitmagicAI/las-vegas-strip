@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1399,
- "bytes": 1066803457,
+ "count": 1403,
+ "bytes": 1073903511,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18686803,
-   "sha256": "93111485dd1f72da6aa7a8093d8ee7086e1bc79a98ad45b873a95f12a43416e8",
+   "bytes": 18745175,
+   "sha256": "9de36c3ae81fdb6466ee40d9c2889019dda1bdf37ad3354d791cb39a7c8fb079",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13064636,
-   "sha256": "bb323ae52ded88a71c3c0673c9251c1222980c0d7c4178885caaaedfcfd822eb",
+   "bytes": 13064184,
+   "sha256": "1fe8d541fe5b61c6ce1e835666fc532615bdff02703936be033df55641feac55",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109760212,
-   "sha256": "a52892853933386e3a94533251636705f329cf88e3858f9043d080855c5292fb",
+   "bytes": 109758320,
+   "sha256": "e10b52eaf45315ece613211ffc4451ea112f1407101e43b7a9727ac3f1ea726a",
    "kind": "optimized"
   },
   {
@@ -6509,6 +6509,30 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/hampton-tropicana-exterior-collision.bin",
+   "bytes": 5036,
+   "sha256": "174ed272ede19435d3bd2b7720381f54f3e31a4c7c32d68f76238f7a3e9fcadd",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/hampton-tropicana-exterior.glb",
+   "bytes": 5372940,
+   "sha256": "c820171157f0aa6920f6db2272290545a51b87958723862d15fa3cd6e8f7aee8",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/hampton-tropicana-interior-collision.bin",
+   "bytes": 1052,
+   "sha256": "1e2feb3de0b74c925ffc7947d5b3b0548c53983f7ac17c619847ece9c5f35215",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/hampton-tropicana-interior.glb",
+   "bytes": 1664296,
+   "sha256": "87368a7e62a47b6da9492597880c46e8df8e54d8ef56a642b40864582dbbefe4",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/harleyDealership-exterior-collision.bin",
    "bytes": 472,
    "sha256": "867b47b55bf71f3bedd8139ac2ea8bfb6a19d28dc9a69be94ef4a93608ad907f",
@@ -8214,8 +8238,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 345976,
-   "sha256": "7468cf3ebb8c728399ca6f106a72ece8880f74c57bf7982202bcfa758c122635",
+   "bytes": 346678,
+   "sha256": "0aef59b997def76203a852e5833e4df0bb7091a1d9534a3be926923295def6e7",
    "kind": "original"
   },
   {
