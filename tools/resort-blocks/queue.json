@@ -1676,7 +1676,17 @@
         "date": "2026-10-28",
         "reason": "Verified scoped exterior/public-lobby pass; user requests sustained city-wide expansion. Pool, site, private rooms and fine fidelity remain recorded."
       }
+    },
+    {
+      "id": "collective-paradise",
+      "name": "The Collective Paradise retail",
+      "status": "refinement-deferred",
+      "record": "collective-paradise.json",
+      "deferral": {
+        "date": "2026-10-28",
+        "reason": "Verified scoped shared exterior and patio; continue city-wide expansion with interior, roof and fine fidelity discrepancies retained."
+      }
     }
   ],
-  "active": "fairfield-paradise"
+  "active": "collective-paradise"
 }
