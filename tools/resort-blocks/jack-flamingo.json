@@ -1,7 +1,7 @@
 {
   "id": "jack-flamingo",
   "name": "Jack in the Box East Flamingo",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/445000146"
   ],
@@ -9,7 +9,8 @@
     "issue": 373,
     "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/373",
     "assignee": "janiverse",
-    "date": "2026-10-28"
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/374"
   },
   "sources": [
     {
@@ -31,12 +32,29 @@
     "Private kitchen layout unknown and excluded"
   ],
   "remaining": [
-    "Author and inspect exterior plus photo-supported public dining space",
-    "Check entrance/return walking, preservation and matching performance",
-    "Full site landscaping and fine material/sign fidelity require refinement"
+    "Room layout and dimensions inferred; private kitchen excluded",
+    "North entry projection and unseen side details need closer references",
+    "Monument sign and full site planting/paving unfinished",
+    "Fine furniture, glazing, branding and material fidelity remain approximate"
   ],
   "nextPass": {
-    "priority": "Exterior and public dining interior",
-    "checkpoint": "Claim373 confirmed. Geometry not authored."
+    "priority": "Site, north entry and fine dining/facade refinement",
+    "checkpoint": "5855triangles,0.20/0.09MiB exterior/interior. Sixfinalinstalleddaylightviews personallyinspected.159staticchecks and16actualwalksegments pass.64ownedfaces/collidersremoved,9560groupspreserved.730batchfreshbake/1547assets. Notphotorealcomplete."
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/jack-flamingo-baseline/results.json",
+    "baselineSummary": "960x540 DPR1 ultra warm median16.7\u201319.3ms,p9517.5\u201321ms.",
+    "finalExterior": "build/city-exteriors/jack-flamingo-final/results.json",
+    "finalInterior": "build/city-exteriors/jack-flamingo-interior-final/results.json",
+    "summary": "960x540 DPR1 ultra warm exterior median16.6\u201319.5ms,p9518.2\u201322.7; interior16.6\u201319.3,p9517.6\u201320.9. Exterior baseline16.7\u201319.3,p9517.5\u201321. Not locked60."
+  },
+  "verification": {
+    "views": [
+      "build/city-exteriors/jack-flamingo-final",
+      "build/city-exteriors/jack-flamingo-interior-final"
+    ],
+    "walking": "build/city-exteriors/jack-flamingo-walk-final/results.json",
+    "staticChecks": 159,
+    "actualWalkingSegments": 16
   }
 }

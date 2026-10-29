@@ -14806,11 +14806,12 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Author and inspect exterior plus photo-supported public dining space",
-    "Check entrance/return walking, preservation and matching performance",
-    "Full site landscaping and fine material/sign fidelity require refinement"
+    "Room layout and dimensions inferred; private kitchen excluded",
+    "North entry projection and unseen side details need closer references",
+    "Monument sign and full site planting/paving unfinished",
+    "Fine furniture, glazing, branding and material fidelity remain approximate"
    ],
    "record": "tools/resort-blocks/jack-flamingo.json",
    "buildings": [],
@@ -14822,7 +14823,13 @@
     "writes": [
      "tools/resort-blocks/jack-flamingo.json"
     ],
-    "builders": []
+    "builders": [
+     "tools/strip-landmarks/test-jack-flamingo.mjs",
+     "tools/city-exteriors/install-jack-flamingo.py",
+     "tools/strip-landmarks/export_jack_flamingo.py",
+     "tools/city-exteriors/check-jack-flamingo-preservation.py",
+     "tools/strip-landmarks/jack_flamingo.py"
+    ]
    },
    "acceptance": [
     "Each listed item is fixed, or stays in the record's `remaining` list with a sentence on why",
