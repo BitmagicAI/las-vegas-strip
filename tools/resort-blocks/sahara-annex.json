@@ -1,7 +1,7 @@
 {
   "id": "sahara-annex",
   "name": "Sahara Annex shared retail",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/1371426377",
     "way/1371426379",
@@ -11,7 +11,8 @@
   "claim": {
     "issue": 397,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/397"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/397",
+    "pullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/398"
   },
   "sources": [
     {
@@ -39,31 +40,58 @@
   "components": [
     {
       "id": "karate-frontage",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "computer-frontage",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "psychic-frontage",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "barber-frontage",
-      "status": "planned"
+      "status": "implemented"
     },
     {
       "id": "roof-service-faces",
-      "status": "planned"
+      "status": "implemented"
     }
   ],
   "remaining": [
-    "Author and inspect original scoped exterior, routes and matching performance.",
-    "Public interiors only with address-matched references; full site and fine fidelity remain."
+    "Full parking/site treatment, precise rear service details and fine material/sign fidelity remain; stone faces are simplified and flat, not photorealistic.",
+    "Heights, storefront divisions and roof equipment remain photo-fitted, not surveyed.",
+    "Current tenant operations and address-matched public interiors remain unverified; no invented interiors added."
   ],
   "nextPass": {
-    "priority": "Shared four-unit exterior",
-    "checkpoint": "397claim confirmed; sources inspected; scope branch."
+    "priority": "Complete site and closer facade fidelity",
+    "checkpoint": "Three final installed daylight views inspected;40 static and16 actual walking checks passed;742-batch bake and1583 runtime assets packaged."
+  },
+  "implemented": [
+    "Original3527-triangle four-unit exterior, .33MiB optimized GLB; stone fronts/west wall, distinct fascias and storefronts, boarded karate panel, membrane roof/coping/service details."
+  ],
+  "evidence": [
+    "build/city-exteriors/sahara-annex-baseline/results.json",
+    "build/city-exteriors/sahara-annex-final/results.json",
+    "build/city-exteriors/sahara-annex-walk-final/results.json",
+    "build/city-exteriors/sahara-annex-preservation.json"
+  ],
+  "validation": {
+    "static": "40 current-city checks passed.",
+    "walking": "16 final default-bake walking segments passed.",
+    "visual": "Three final installed daylight views personally inspected. Corrected triangular stone coloring and excessive text mesh density.",
+    "preservation": "46 owned faces and matching colliders replaced;9560 groups preserved.",
+    "packaging": "742-batch current bake;1583 assets; type, Bitmagic, record and public checks passed (existing public email warning only)."
+  },
+  "performance": {
+    "method": "960x540 DPR1 ultra; matching front/roof/west cameras. Concurrent other-session CPU workload preserved.",
+    "summary": "Baseline medians17.8/16.6/16.5,p9524.5/18.2/19.2ms; final17.9/16.6/16.6,p9524.8/18.4/19.0ms. Not locked60fps."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/sahara-annex-exterior-collision.bin": "fdec6a6ea57549c0403b8ac2b7d515a099c768a7f1eda588307d81b792b54044",
+      "runtime-assets/strip-landmarks/sahara-annex-exterior.glb": "fb186a0f4e5796e7deeb50d6dfef962c291ac6e37b687fbc03509aece9fe4574"
+    }
   }
 }
