@@ -1,0 +1,69 @@
+{
+  "id": "sahara-annex",
+  "name": "Sahara Annex shared retail",
+  "status": "active",
+  "mappedIds": [
+    "way/1371426377",
+    "way/1371426379",
+    "way/1371426378",
+    "way/943068963"
+  ],
+  "claim": {
+    "issue": 397,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/397"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1440434,-115.1817677,3a,75y,190.01h,90t/data=!3m4!1e1!3m2!1sQrWb7uyICJzd3wGhSN0Z1g!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January2026",
+      "observed": "Personally inspected irregular pale stone storefronts; blue karate fascia/white red-letter panel, aluminum glazing with boarded panel; red/white Computer Repair fascia, purple psychic fascia and east barber sign."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1439267,-115.1817933,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Personally inspected shared flat rectangular roof, north parking/SaharaAnnex, west Richfield, separate Dottys east and residence south."
+    },
+    {
+      "url": "https://computerrepairservice.vegas/",
+      "accessed": "2026-10-29",
+      "observed": "Official site lists2927; currentMaps business listing instead2800Suite7A. Do not transfer moved-business interior gallery to this footprint."
+    }
+  ],
+  "uncertainDimensions": [
+    "Heights, door widths and roof equipment positions photo-fitted, not measured.",
+    "Current business operations uncertain; target dated January2026 physical frontage.",
+    "No address-matched interior reference yet."
+  ],
+  "components": [
+    {
+      "id": "karate-frontage",
+      "status": "planned"
+    },
+    {
+      "id": "computer-frontage",
+      "status": "planned"
+    },
+    {
+      "id": "psychic-frontage",
+      "status": "planned"
+    },
+    {
+      "id": "barber-frontage",
+      "status": "planned"
+    },
+    {
+      "id": "roof-service-faces",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Author and inspect original scoped exterior, routes and matching performance.",
+    "Public interiors only with address-matched references; full site and fine fidelity remain."
+  ],
+  "nextPass": {
+    "priority": "Shared four-unit exterior",
+    "checkpoint": "397claim confirmed; sources inspected; scope branch."
+  }
+}

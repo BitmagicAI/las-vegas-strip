@@ -1772,7 +1772,13 @@
       "name": "Western Alliance Bank Sahara",
       "status": "refinement-deferred",
       "record": "western-alliance-sahara.json"
+    },
+    {
+      "id": "sahara-annex",
+      "name": "Sahara Annex shared retail",
+      "status": "active",
+      "record": "sahara-annex.json"
     }
   ],
-  "active": "western-alliance-sahara"
+  "active": "sahara-annex"
 }
