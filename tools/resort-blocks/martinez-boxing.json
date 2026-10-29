@@ -1,0 +1,57 @@
+{
+  "id": "martinez-boxing",
+  "name": "2800 South Highland / Martinez Boxing",
+  "status": "active",
+  "mappedIds": [
+    "way/464695953"
+  ],
+  "claim": {
+    "issue": 419,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/419"
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1393271,-115.1714049,3a,75y,111.27h,90t/data=!3m4!1e1!3m2!1szi3fut5_MqJ3DXPqn3KBfg!2e0",
+      "accessed": "2026-10-29",
+      "imageDate": "January 2026",
+      "observed": "Charcoal gym facade, central tall glazed double entry, flanking service doors, raised concrete landing, metal ramp and rope rails; adjacent blue Moroccan Mosaic tenant."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.139241,-115.1711451,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Shared stepped industrial roof with patchwork membrane and equipment, west parking, rear service yard. Older aerial label Las Vegas Gunfights conflicts with newer Street View gym identity."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Martinez+Boxing+Las+Vegas",
+      "accessed": "2026-10-29",
+      "observed": "Owner March2025 ring photo CIABIhAA3ilW-yR_E2focDkACGpK: black rubber floor, blue/white/red ropes, dark steel ceiling and dome pendant. Pete Banyai Feb2026: belt wall/trophy shelf, framed pictures/mirrors, linear suspended lights. References only; original abstract decor."
+    }
+  ],
+  "uncertainDimensions": [
+    "Tenant boundary, training-room layout and heights inferred from images; no measured plan.",
+    "Shared mapped footprint includes neighboring tenants; public gym confined to inferred front bay."
+  ],
+  "components": [
+    {
+      "id": "shared-exterior",
+      "status": "planned"
+    },
+    {
+      "id": "entry-ramp",
+      "status": "planned"
+    },
+    {
+      "id": "public-training-room",
+      "status": "planned"
+    }
+  ],
+  "remaining": [
+    "Build/install/visually inspect exterior and public interior; walk routes and record performance.",
+    "Neighboring interiors and private spaces excluded; unseen elevations and exact fixtures inferred."
+  ],
+  "nextPass": {
+    "priority": "Exterior and reference-supported public gym",
+    "checkpoint": "419claim confirmed;416openissue/PRscan clear. Exterior/public gym next."
+  }
+}

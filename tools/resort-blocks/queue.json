@@ -1838,7 +1838,13 @@
       "name": "2500 West Sahara offices",
       "status": "refinement-deferred",
       "record": "sahara-2500.json"
+    },
+    {
+      "id": "martinez-boxing",
+      "name": "2800 South Highland / Martinez Boxing",
+      "status": "active",
+      "record": "martinez-boxing.json"
     }
   ],
-  "active": "sahara-2500"
+  "active": "martinez-boxing"
 }
