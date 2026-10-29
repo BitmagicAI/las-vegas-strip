@@ -1730,7 +1730,13 @@
       "name": "Hilton Garden Inn City Center",
       "status": "refinement-deferred",
       "record": "hilton-garden-city-center.json"
+    },
+    {
+      "id": "holiday-inn-tropicana",
+      "name": "Holiday Inn Express East Tropicana",
+      "status": "active",
+      "record": "holiday-inn-tropicana.json"
     }
   ],
-  "active": "hilton-garden-city-center"
+  "active": "holiday-inn-tropicana"
 }

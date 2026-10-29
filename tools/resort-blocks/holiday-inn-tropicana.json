@@ -1,0 +1,42 @@
+{
+  "id": "holiday-inn-tropicana",
+  "name": "Holiday Inn Express East Tropicana",
+  "status": "active",
+  "mappedIds": [
+    "way/118363803"
+  ],
+  "claim": {
+    "issue": 383,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/383"
+  },
+  "sources": [
+    {
+      "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/las-vegas/lasta/hoteldetail/gallery",
+      "provider": "IHG",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Inspectedexterior1/2,lobby3:sixstoreys,whiteframes,rustorangeandgray/navywindowfields,northcanopy;communalwoodtables/brownchairs/bluepierpanels/woodceiling/paleplankfloor."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Holiday+Inn+Express+175+East+Tropicana+Las+Vegas",
+      "provider": "Google Maps",
+      "accessed": "2026-10-29",
+      "imageDate": "Unknown",
+      "observed": "Aerial: narrow north-south flatroofhotel,northentrance canopy,poolsouth,westdrive,eastStudio6separate. No extraction."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped6mheight conflicts withsixstoreys;fitheight",
+    "Public roomplan inferred;no measuredfloorplan"
+  ],
+  "remaining": [
+    "Build exterior and supportedpubliclobby",
+    "Verify scopedcollision/actualwalking/installeddaylight/performance",
+    "Full pool/site/privatefloors/finefidelity remain"
+  ],
+  "nextPass": {
+    "priority": "Build scoped exterior/public lobby",
+    "checkpoint": "Claim383confirmed; research/footprintscope checked. No geometryyet."
+  }
+}
