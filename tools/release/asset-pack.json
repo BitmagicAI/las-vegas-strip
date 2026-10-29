@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1423,
- "bytes": 1085871407,
+ "count": 1425,
+ "bytes": 1086806350,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 18972175,
-   "sha256": "a782e347db3b81d0e011ec79584d3108b24ef73adb34f42513bbef6213236de4",
+   "bytes": 19023886,
+   "sha256": "0e6b5cfe2a4017a5450479277c355c5a31dccec34dcdb8edd7fc4cabb563882f",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13062792,
-   "sha256": "f6be5f18b655b3e4b4fe729358f2beb8e4471e982e54bafdce1c39c4a3626355",
+   "bytes": 13061992,
+   "sha256": "cce2121a672859e0fc8ce41d4dd6474915dc4a9f9d4e379bbd6ad54cbcfe79ea",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109750068,
-   "sha256": "18283fc4423eea2baab63a0033c65356e5b2c17f73660760cb133f1af0b7667d",
+   "bytes": 109749936,
+   "sha256": "876478d3379d8d9c3a1b222bc4bfc3cdd99d08ef1b02ce95b15c26f066dcf0b6",
    "kind": "optimized"
   },
   {
@@ -6137,6 +6137,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/dean-martin-north-exterior-collision.bin",
+   "bytes": 232,
+   "sha256": "ec5b01d62d30092732bbf538a44c494d8a0ea64b0a6dbf31f51d4f218e2b23da",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/dean-martin-north-exterior.glb",
+   "bytes": 883668,
+   "sha256": "1296f01bd9edfb23a3799d4d9a8fd44304d16d1c5fcb75aaba49b1300b9077c5",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/dennys1822-exterior-collision.bin",
    "bytes": 340,
    "sha256": "6300eeffc091e0aca122f8f17cc7d743aaa1b5069cdf3e7a1faf984984f98fd4",
@@ -8358,8 +8370,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 352106,
-   "sha256": "5f18c2b14f3324ba1b873fbde8d997d2f64e9b4d3233bd120f197a776e88e3b8",
+   "bytes": 352370,
+   "sha256": "b2ed0500a7b4d1b3e01f184c3f338c91c7a3021a3ad2d3b5afef3d151156a491",
    "kind": "original"
   },
   {
