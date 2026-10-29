@@ -1,0 +1,246 @@
+{
+  "id": "nuleaf-twain",
+  "name": "NuLeaf Twain Avenue",
+  "status": "active",
+  "mappedIds": [
+    "way/331347657"
+  ],
+  "claim": {
+    "issue": 344,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/344",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/345"
+  },
+  "sources": [
+    {
+      "url": "https://nuleafnv.com/dispensaries/las-vegas/",
+      "observed": "Official address430E Twain confirmed."
+    },
+    {
+      "url": "https://leafly-public.imgix.net/dispensary/photos/qlVfFEC8TSiVRYBtTp6T_PSX_20190511_144545.jpg",
+      "observed": "Facade inspected: charcoal fascia, white masonry piers, recessed dark/brown horizontal panels, high windows, narrow entrance, raised430 andNuLeaf/cross, graypylon andtallplanters. Filename suggests2019; capturedate notverified."
+    },
+    {
+      "url": "https://www.google.com/maps/search/NuLeaf+430+E+Twain+Las+Vegas",
+      "observed": "Overhead reviewed: north side ofTwain, east of7-Eleven, facade faces south. StreetView1 opened photo gallery; November2024MouChen exterior inspected, not a navigable panorama: main facade/pylon corroborated, pale small umbrellas near east entry. No third-party pixels installed."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped height6m estimated; roofline, bay spacing and trim dimensions require photo fitting.",
+    "Concealed rear/roof layout unknown; public interior excluded from this initial exterior scope."
+  ],
+  "implemented": [
+    "Original facade authoring: charcoal fascia, narrow white block piers, dark/brown horizontal panels, clerestory glass, closed entrance, raised address/brand lettering, pylon, planter foliage and small umbrellas.",
+    "Generic roof service masses inferred; public interiors excluded from this scope."
+  ],
+  "remaining": [
+    "Exact fascia height, bay proportions, pylon placement/lettering and planter/umbrella dimensions are photo estimates.",
+    "Existing city paving retained: real frontage asphalt parking, striping and precise curb/entry grades remain to reconcile in a targeted site pass.",
+    "Rear facade and roof equipment arrangement inferred; need additional reference coverage.",
+    "Closed entrance/exterior-only scope: public interior layout not reconstructed.",
+    "Fine signage graphics, masonry relief, fixtures and planting remain simplified; no photorealistic completion claim."
+  ],
+  "nextPass": {
+    "priority": "Reference-supported site and material refinement",
+    "checkpoint": "Installed exterior pass verified and packaged. Final medians16.7\u201316.8ms, p9521\u201330.2ms at960x540ultra; no steady60fps guarantee. Preserve earlier slower measurements. Next queued new building Buca Flamingo claim346, no geometry edited yet."
+  },
+  "verification": {
+    "sourceTriangles": 1118,
+    "staticClearanceSamples": 59,
+    "walkPassed": true,
+    "actualWalkSegments": 6,
+    "walk": "build/city-exteriors/nuleaf-twain-walk/results.json",
+    "preservedGroups": 9560,
+    "removedOwnedFaces": 28,
+    "preservation": "build/city-exteriors/nuleaf-twain-preservation.json",
+    "baseline": "build/city-exteriors/nuleaf-twain-baseline/results.json",
+    "initialPerformance": [
+      {
+        "name": "front",
+        "eye": [
+          1713,
+          2,
+          -589
+        ],
+        "target": [
+          1721,
+          3,
+          -608
+        ],
+        "p50": 21.100000023841858,
+        "p95": 27
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1696,
+          28,
+          -589
+        ],
+        "target": [
+          1721,
+          1,
+          -611
+        ],
+        "p50": 16.800000071525574,
+        "p95": 21.800000071525574
+      },
+      {
+        "name": "east",
+        "eye": [
+          1740,
+          2,
+          -599
+        ],
+        "target": [
+          1725,
+          3,
+          -610
+        ],
+        "p50": 16.899999976158142,
+        "p95": 26.5
+      }
+    ],
+    "views": "build/city-exteriors/nuleaf-twain-filtered-final",
+    "seamGeometryPerformance": [
+      {
+        "name": "detail",
+        "eye": [
+          1716,
+          1.8,
+          -600
+        ],
+        "target": [
+          1718,
+          2.3,
+          -606.6
+        ],
+        "p50": 19.399999976158142,
+        "p95": 25.799999952316284
+      },
+      {
+        "name": "front",
+        "eye": [
+          1713,
+          2,
+          -589
+        ],
+        "target": [
+          1721,
+          3,
+          -608
+        ],
+        "p50": 17.5,
+        "p95": 23.700000047683716
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1696,
+          28,
+          -589
+        ],
+        "target": [
+          1721,
+          1,
+          -611
+        ],
+        "p50": 16.899999976158142,
+        "p95": 21.100000023841858
+      },
+      {
+        "name": "east",
+        "eye": [
+          1740,
+          2,
+          -599
+        ],
+        "target": [
+          1725,
+          3,
+          -610
+        ],
+        "p50": 18.100000023841858,
+        "p95": 26.700000047683716
+      }
+    ],
+    "visualReview": "All four final installed daylight views inspected. Thin seam meshes replaced with filtered original finish texture; white speckles absent in close and frontage captures. Paving/site and fine-detail discrepancies remain.",
+    "finalPerformance": [
+      {
+        "name": "detail",
+        "eye": [
+          1716,
+          1.8,
+          -600
+        ],
+        "target": [
+          1718,
+          2.3,
+          -606.6
+        ],
+        "p50": 16.799999952316284,
+        "p95": 30.199999928474426
+      },
+      {
+        "name": "front",
+        "eye": [
+          1713,
+          2,
+          -589
+        ],
+        "target": [
+          1721,
+          3,
+          -608
+        ],
+        "p50": 16.800000071525574,
+        "p95": 28.100000023841858
+      },
+      {
+        "name": "roof",
+        "eye": [
+          1696,
+          28,
+          -589
+        ],
+        "target": [
+          1721,
+          1,
+          -611
+        ],
+        "p50": 16.700000047683716,
+        "p95": 21
+      },
+      {
+        "name": "east",
+        "eye": [
+          1740,
+          2,
+          -599
+        ],
+        "target": [
+          1725,
+          3,
+          -610
+        ],
+        "p50": 16.700000047683716,
+        "p95": 27.299999952316284
+      }
+    ],
+    "cityBatches": 716,
+    "packagedAssets": 1499,
+    "optimizedExteriorMiB": 0.451,
+    "checks": "59 static samples, six actual walking segments, typecheck, public-file check (one existing email warning), record validation and diff check passed."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/nuleaf-twain-exterior.glb": "4f53245e8cd702bbf92f69c0588a7b640ac7a62339cf3c831ec25dd9acece736",
+      "runtime-assets/strip-landmarks/nuleaf-twain-exterior-collision.bin": "24e892d6df04dddca32cf73737089429a9483e3c936e3025c74cfacebb7a47fa",
+      "runtime-assets/strip-landmarks/venues.bin": "ec525f59bae08910e3b957fc1539a80322ab6d5ec41084594a95f835f63e8454",
+      "runtime-assets/geographic-strip/city.glb": "f7df969d3f8f380006376609acde795f6e14dd03e298ea32875a3254ae3ab88c",
+      "runtime-assets/geographic-strip/city-colliders.bin": "2fb4120f71018488e52d1b023f6d8cca61a3beff3af06907ea3e06fb23c14e3c",
+      "runtime-assets/baked/city-lod.bin": "9c3c9e7c3860266ad08e1d3d447ca54e8b4e5b98d8a494b991693df9c044eb97"
+    }
+  }
+}
