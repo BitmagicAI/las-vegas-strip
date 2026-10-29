@@ -1,7 +1,7 @@
 {
   "id": "chrome-gypsy",
   "name": "2640 Highland / Chrome Gypsy frontage",
-  "status": "active",
+  "status": "refinement-deferred",
   "mappedIds": [
     "way/464694106"
   ],
@@ -35,33 +35,74 @@
   "components": [
     {
       "id": "shared-exterior",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "glazed-storefronts",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "roof-service-details",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "public-approaches",
-      "status": "pending"
+      "status": "verified"
     }
   ],
   "remaining": [
-    "Implement and inspect original exterior at current footprint.",
-    "Validate approaches and preservation; measure matching performance and fresh bake.",
-    "Current identity, unseen elevations and exact dimensions uncertain."
+    "Current tenancy remains uncertain; facade is based on January 2021 imagery.",
+    "Exact heights, tenant divisions and unseen service elevations remain inferred.",
+    "North wall finish, local parking markings and boundary wall need stronger reference matching.",
+    "Fine weathering and glazing depth remain below photorealistic standard; no interior authored without a supported layout."
   ],
   "nextPass": {
-    "priority": "Shared industrial storefront exterior",
-    "checkpoint": "423claimconfirmed; research scope committed before implementation."
+    "priority": "Reference-led refinement",
+    "checkpoint": "Installed first exterior pass verified; current city bake; 125 static and 14 actual walking segments passed. Four final daylight views personally inspected. No supported interior layout yet."
   },
   "claim": {
     "issue": 423,
     "assignee": "janiverse",
-    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/423"
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/423",
+    "pullRequest": 424
+  },
+  "performance": {
+    "baseline": "build/city-exteriors/chrome-gypsy-baseline/results.json",
+    "after": "build/city-exteriors/chrome-gypsy-final/results.json",
+    "settings": "960x540 DPR1 ultra neutral daylight; four matched cameras; 180 warm frame samples each",
+    "missingMetrics": [
+      "GPU/CPU spans",
+      "cold transition stalls",
+      "draw calls"
+    ]
+  },
+  "geometry": {
+    "trianglesBeforeTextTessellation": 2146,
+    "ownedTrianglesRemoved": 10,
+    "retainedGroups": 9560
+  },
+  "evidence": {
+    "preservation": "build/city-exteriors/chrome-gypsy-preservation.json",
+    "staticRoutes": "build/strip-landmarks/chrome-gypsy-route-audit.json",
+    "initialViews": "build/city-exteriors/chrome-gypsy-initial",
+    "correctedPreview": "build/city-exteriors/chrome-gypsy-preview-v2",
+    "finalViews": "build/city-exteriors/chrome-gypsy-final",
+    "walking": "build/city-exteriors/chrome-gypsy-walk-final/results.json"
+  },
+  "checks": {
+    "staticSamples": 125,
+    "walkingSegments": 14,
+    "typecheck": "passed",
+    "bitmagicCheck": "passed",
+    "preservation": "passed",
+    "publicCheck": "passed with pre-existing inventory email warning",
+    "cityBakeBatches": 755,
+    "runtimeAssets": 1627
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/chrome-gypsy-exterior.glb": "924ff7c8eb444dea091be29a0b60970b7f41e780ae096776b7560bef2c2b4c4d",
+      "runtime-assets/strip-landmarks/chrome-gypsy-exterior-collision.bin": "1f6fd4501820dc64e9a0899f13555564f3dabcefe08d4e25806ccff62654983c"
+    }
   }
 }
