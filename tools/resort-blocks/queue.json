@@ -1518,7 +1518,13 @@
       "name": "Denny's \u2014 West Flamingo",
       "status": "refinement-deferred",
       "record": "dennys-flamingo.json"
+    },
+    {
+      "id": "chick-fil-a-flamingo",
+      "name": "Chick-fil-A \u2014 Flamingo & Valley View",
+      "status": "refinement-deferred",
+      "record": "chick-fil-a-flamingo.json"
     }
   ],
-  "active": "dennys-flamingo"
+  "active": "chick-fil-a-flamingo"
 }

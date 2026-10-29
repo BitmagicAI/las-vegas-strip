@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1463,
- "bytes": 1110897252,
+ "count": 1465,
+ "bytes": 1111229540,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 19343600,
-   "sha256": "30c856698bbd579da0454b6d021eb0561bc4cb0bf68e925ebe819a8de6f72c94",
+   "bytes": 19352980,
+   "sha256": "0bd35af68506bd9d2f091e8ed300d8893a37edbb77ed6e7f0a5d4058d3396ab4",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13061416,
-   "sha256": "b26f0e843f84ab1dd26ed85790cca564e3da7a096cf85244e4ba183bbf7fb934",
+   "bytes": 13061508,
+   "sha256": "2718e5521946e5c1f3f96f5727f9f0a452d4054cb6d80f0591e2f4e9f528fe5c",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109745760,
-   "sha256": "5ea937ebcb7828ca00933b4ac0f6bf5e6d02ef8cca1ae05e12343cc8cbbd4c2c",
+   "bytes": 109745344,
+   "sha256": "4bafa57caf1c15c282a416977a2817ca011191dbb5766631cd4c28ac87c0a796",
    "kind": "optimized"
   },
   {
@@ -5981,6 +5981,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/chick-fil-a-flamingo-exterior-collision.bin",
+   "bytes": 632,
+   "sha256": "cb5a089974c2fe6cba71ed62a659da4cf8a78140ad888c5665035bb8f75e2025",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/chick-fil-a-flamingo-exterior.glb",
+   "bytes": 322376,
+   "sha256": "b29c1c636b15cf731df9eb11c55bb0c44e51b837062f393812d0b699cb80f3b6",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/circusExterior-exterior-collision.bin",
    "bytes": 5508,
    "sha256": "7bd3518fc00c60b9884de93ac30249e54b8e97543ddcd170068c8cce48c85c4e",
@@ -8586,8 +8598,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 359266,
-   "sha256": "366e85328fdec1658353ddaeb213715d5a4fa22e943e495ba12c1c0d73bba47e",
+   "bytes": 359490,
+   "sha256": "db8a1a56f9b1011532167fae149f3e015ca3271c1d1b4227102ef5b80fe7731d",
    "kind": "original"
   },
   {

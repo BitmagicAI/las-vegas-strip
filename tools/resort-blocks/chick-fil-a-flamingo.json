@@ -1,0 +1,87 @@
+{
+  "id": "chick-fil-a-flamingo",
+  "name": "Chick-fil-A \u2014 Flamingo & Valley View",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/1264703200"
+  ],
+  "claim": {
+    "issue": 322,
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/322",
+    "assignee": "janiverse",
+    "date": "2026-10-28",
+    "draftPr": "https://github.com/BitmagicAI/las-vegas-strip/pull/323"
+  },
+  "sources": [
+    {
+      "url": "https://www.chick-fil-a.com/locations/nv/flamingo-valley-view",
+      "observed": "Official address3841WFlamingo; Nevada location listing verified."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Chick-fil-A/@36.11512,-115.19113,18z/",
+      "observed": "PhotoCIABIhAhAZHxPsE4dicJip1qTYym,\u3082\u308a\u308a\u3093,Aug2025 visually inspected: tan brick panels, cream upper fascia, dark roof cap, central glass entrance3841, black shallow canopies, dark mullions, red square brand sign, side covered glazing, gravel and low shrubs."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped footprint about12x32m. Heights, hidden services and exact landscape extent estimated. Public interior unsupported and closed."
+  ],
+  "implemented": [
+    "Original13,202triangle exterior source; brick courses, cream fascia, dark cap, entrance, glazed frontage, side canopy, small planters and estimated roof/services. Source front/roof inspected; side canopy alignment corrected.",
+    "Targeted replacement removes 28 owned faces; 9560 groups retain vertices, metadata and retained face order. Seven current-city clearance samples and four actual walking segments pass.",
+    "Three installed daylight views and walking return inspected. Optimized exterior 0.31 MiB; current city bake 705 batches, 1465 assets with none missing. Typecheck and public checks pass (existing inventory email warning only)."
+  ],
+  "remaining": [
+    "Sign typography, opaque glazing, material weathering and roof banding need refinement.",
+    "Hidden service elevations and roof equipment are estimated; side backing is extended about 1 m to close a mapped setback. Public interior remains closed without references.",
+    "Existing generated parking and roads do not reproduce photographed site layout; preserved within task scope."
+  ],
+  "nextPass": {
+    "priority": "Continue city coverage with Tacos Mexico Sahara after claim.",
+    "checkpoint": "Installed first pass verified; preserve listed fidelity discrepancies. No photorealistic completion claim."
+  },
+  "evidence": [
+    "build/city-exteriors/chick-fil-a-flamingo-source-review/exterior.png",
+    "build/city-exteriors/chick-fil-a-flamingo-source-review/roof.png",
+    "build/city-exteriors/chick-fil-a-flamingo-baseline/chick-fil-a-flamingo-south-front.png",
+    "build/city-exteriors/chick-fil-a-flamingo-baseline/chick-fil-a-flamingo-southwest.png",
+    "build/city-exteriors/chick-fil-a-flamingo-baseline/results.json",
+    "build/city-exteriors/chick-fil-a-flamingo-baseline/chick-fil-a-flamingo-roof.png",
+    "build/city-exteriors/chick-fil-a-flamingo-installed/chick-fil-a-flamingo-south-front.png",
+    "build/city-exteriors/chick-fil-a-flamingo-installed/chick-fil-a-flamingo-southwest.png",
+    "build/city-exteriors/chick-fil-a-flamingo-installed/results.json",
+    "build/city-exteriors/chick-fil-a-flamingo-installed/chick-fil-a-flamingo-roof.png",
+    "build/city-exteriors/chick-fil-a-flamingo-walk/results.json",
+    "build/city-exteriors/chick-fil-a-flamingo-walk/walk-return-0.png"
+  ],
+  "performance": {
+    "baselineMedianP95Ms": [
+      [
+        16.8,
+        18.3
+      ],
+      [
+        16.6,
+        18.6
+      ],
+      [
+        16.5,
+        18.5
+      ]
+    ],
+    "installedMedianP95Ms": [
+      [
+        16.6,
+        18.3
+      ],
+      [
+        16.5,
+        17.9
+      ],
+      [
+        16.6,
+        19.1
+      ]
+    ],
+    "note": "960x540 ultra neutral daylight, matching cameras, shared machine"
+  }
+}
