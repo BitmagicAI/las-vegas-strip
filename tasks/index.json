@@ -15999,13 +15999,11 @@
    "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Improve palm frond/trunk finish, roof tile articulation, arrival wing side elevation and courtyard planting; latest front and lobby source renders inspected, still below final material/detail target. Guest corridors excluded.",
-    "Use final probe cameras unchanged for installed after captures; front [324,5,-3057] toward [284,8,-3083] baseline inspected and unobstructed.",
-    "Research and claim neighboring Auto Collision Experts way/464694095 and optionally Evenplay way/464694094 before editing; only Lexi is claimed so far.",
-    "Complete grouped content, then perform one shared-city export/bake; do not install Lexi as a separate one-building PR.",
-    "Run both optimization passes including WebP, install, audit current-city routes and ownership, capture installed views, walk, measure performance and run all AGENTS step7 gates."
+    "Resolve or explain matched performance regression/variability before marking PR433 ready; content and release checks otherwise pass.",
+    "Fine weathering and glazing detail, unseen elevations and surveyed dimensions remain uncertain; guest corridors excluded.",
+    "Pool grade and lobby floor reconcile retained mapped road surfaces; layout is reference-informed, not a surveyed replica."
    ],
    "record": "tools/resort-blocks/lexi-westwood.json",
    "buildings": [],
@@ -16021,6 +16019,7 @@
      "tools/strip-landmarks/export_lexi_westwood.py",
      "tools/strip-landmarks/test-lexi-westwood.mjs",
      "tools/strip-landmarks/review_lexi_westwood.py",
+     "tools/city-exteriors/install-westwood-group.py",
      "tools/strip-landmarks/lexi_westwood.py"
     ]
    },

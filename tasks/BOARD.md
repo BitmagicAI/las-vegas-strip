@@ -315,7 +315,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-chrome-gypsy` | M | P3 | 4 | Refine the exterior of 2640 Highland / Chrome Gypsy frontage |
 | `ext-airgas-highland` | M | P3 | 4 | Refine the exterior of Airgas Highland retail |
 | `ext-red-d-arc-highland` | M | P3 | 5 | Refine the exterior of Red-D-Arc Highland |
-| `ext-lexi-westwood` | M | P3 | 5 | Refine the exterior of The Lexi Las Vegas |
+| `ext-lexi-westwood` | M | P3 | 3 | Refine the exterior of The Lexi Las Vegas |
 | `site-legacy-or-landmark` | S | P3 | 2 | Review and refine the mapped buildings owned by legacy-or-landmark |
 
 ## Interiors

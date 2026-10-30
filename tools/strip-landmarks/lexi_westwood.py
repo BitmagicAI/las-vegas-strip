@@ -5,7 +5,7 @@ This generator writes ONLY its own assets; grouped installation is separate.
 from common import *
 from shapely.geometry.polygon import orient
 KEY='lexi-westwood'
-COLORS={'lx-stucco':'deddd3','lx-cornice':'d8d7cd','lx-iron':'292e2d','lx-glass':'3a494b','lx-tile':'535650','lx-roof':'c9c8be','lx-paving':'b9b09a','lx-coping':'dbd4bd','lx-basin':'63918b','lexi_pool':'398c91','lx-cushion':'ae423e','lx-fabric':'c6b58b','lx-wall':'c3b09b','lx-floor':'ddd9ca','lx-blacktile':'333b39','lx-grout':'6f7169','lx-velvet':'414743','lx-green':'5d7565','lx-wood':'6b4c34','lx-metal':'949e98','lx-lamp':'e9e4cc','lx-art':'927d58','lx-leaf':'456044'}
+COLORS={'lx-stucco':'deddd3','lx-cornice':'d8d7cd','lx-iron':'292e2d','lx-glass':'3a494b','lx-tile':'535650','lx-tile-edge':'666960','lx-roof':'c9c8be','lx-paving':'b9b09a','lx-coping':'dbd4bd','lx-basin':'63918b','lexi_pool':'398c91','lx-cushion':'ae423e','lx-fabric':'c6b58b','lx-wall':'c3b09b','lx-floor':'ddd9ca','lx-blacktile':'333b39','lx-grout':'6f7169','lx-velvet':'414743','lx-green':'5d7565','lx-wood':'6b4c34','lx-metal':'949e98','lx-lamp':'e9e4cc','lx-art':'927d58','lx-leaf':'456044'}
 
 def rail(R,u,y,v,w):
  for yy in [y+.13,y+.92]:R.box('lx-iron',(u,yy,v),(w,.045,.055))
@@ -16,6 +16,13 @@ def hip(B,p,y,depth=1.6,rise=.85):
  for tri in triangles(p.difference(inner)):
   B.upface('lx-tile',[(x,y+rise*min(1,p.boundary.distance(Point(x,z))/depth),z)for x,z in list(tri.exterior.coords)[:-1]])
  B.planar('lx-roof',inner,y+rise-.03)
+ # Raised courses follow the hip perimeter; no coplanar decorative overlays.
+ for inset in np.arange(.18,depth,.28):
+  ring=p.buffer(-float(inset),join_style=2)
+  if ring.geom_type!='Polygon':continue
+  pts=[(x,y+rise*float(inset)/depth+.018,z)for x,z in ring.exterior.coords]
+  B.path('lx-tile-edge',pts,.018,5)
+
 
 def chair(R,u,v,yaw=0):
  C=Frame(R.b,*[R.p(u,0,v)[i]for i in [0,2]],R.yaw+yaw,y=R.y)
@@ -95,10 +102,10 @@ def build(B):
   for v in [-3.4,3.4]:C.box('lx-stucco',(u,2.15,v),(.50,4.3,.50),True)
  C.box('lx-iron',(0,4.2,0),(12.2,.25,7.6));hip(B,C.poly([(-6.3,-4),(6.3,-4),(6.3,4),(-6.3,4)]),4.3,1.3,.75)
  # Pool courtyard: recessed basin, unobstructed deck and shallow end stairs.
- Q=Frame(B,248.0,-3069,0,y=0)
+ Q=Frame(B,248.0,-3073,0,y=0)
  pool=Q.poly([(-3.1,-7.0),(3.1,-7),(3.1,7),(-3.1,7)])
  deck=Q.poly([(-8,-10),(8,-10),(8,10),(-8,10)]).difference(pool)
- B.planar('lx-paving',deck,.13,True);B.shell(pool,-1.25,.13,'lx-basin',roof=False);B.planar('lx-basin',pool,-1.25,True);B.planar('lexi_pool',pool,-.12)
+ B.planar('lx-paving',deck,.13,True);B.shell(pool,-1.25,.13,'lx-basin',roof=False);B.planar('lx-basin',pool,-1.25,True);B.planar('lexi_pool',pool,.05) # Above retained city datum; eight centimetres below coping.
  for a,b in zip(list(pool.exterior.coords),list(pool.exterior.coords)[1:]):
   R=Frame(B,(a[0]+b[0])/2,(a[1]+b[1])/2,math.atan2(a[1]-b[1],b[0]-a[0]),y=0);R.box('lx-coping',(0,.13,0),(math.dist(a,b),.12,.33),True)
  for side in [-1,1]:
@@ -109,27 +116,35 @@ def build(B):
   corners=[Q.p(-7.5,2.7,z-1.5),Q.p(-4.1,2.7,z-1.5),Q.p(-4.1,2.7,z+1.5),Q.p(-7.5,2.7,z+1.5)]
   for i in range(4):B.face('lx-fabric',[corners[i],corners[(i+1)%4],Q.p(-5.8,3.5,z)])
  # Original fan palms: tapered segmented trunks and individually folded fronds.
- for i,(x,z,h) in enumerate([(240,-3078,8.5),(240,-3060,9),(258,-3060,10),(264,-3066,11),(277,-3058,9),(306,-3061,10)]):
+ for i,(x,z,h) in enumerate([(240,-3078,8.5),(240,-3065,9),(258,-3065,10),(264,-3066,11),(277,-3063,9),(306,-3065,10)]):
   R=Frame(B,x,z,y=0);R.lathe('bark',0,0,[(.12,.28),(h*.4,.23),(h,.16)],12)
   for yy in np.arange(.5,h,.22):R.lathe('lx-wood',0,0,[(float(yy),.24),(float(yy)+.055,.25)],10)
-  for j in range(15):
-   a=j*2.399+i;length=2.7+(j%3)*.3;pts=[]
-   for k in range(7):
-    t=k/6;r=length*t;pts.append(R.p(r*math.cos(a),h+.7*math.sin(t*math.pi)-1.0*t,r*math.sin(a)))
-   B.path('lx-leaf',pts,.025,6)
-   for k in range(1,6):
-    c=pts[k];tip=pts[k+1];w=.50*math.sin(k/6*math.pi)
+  for j in range(24):
+   a=j*2.399+i;length=2.7+(j%4)*.28;pts=[]
+   for k in range(13):
+    t=k/12;r=length*t;pts.append(R.p(r*math.cos(a),h+.85*math.sin(t*math.pi)-1.25*t,r*math.sin(a)))
+   B.path('lx-leaf',pts,.021,6)
+   # Individual narrow leaflets arc from the midrib, with a folded centre.
+   for k in range(2,12):
+    c=pts[k];w=.72*math.sin(k/12*math.pi)
     for side in [-1,1]:
-     edge=(c[0]+side*w*math.sin(a),c[1]-.13,c[2]-side*w*math.cos(a))
-     B.face('lx-green' if j%3 else 'lx-leaf',[c,edge,tip])
+     tip=(c[0]+side*w*math.sin(a)+.22*math.cos(a),c[1]-.28,c[2]-side*w*math.cos(a)+.22*math.sin(a))
+     mid=tuple((c[q]+tip[q])/2 for q in range(3));ridge=(mid[0],mid[1]+.065,mid[2])
+     edge=(mid[0]-.055*math.cos(a),mid[1]-.02,mid[2]-.055*math.sin(a))
+     edge2=(mid[0]+.055*math.cos(a),mid[1]-.02,mid[2]+.055*math.sin(a))
+     mat='lx-green' if (j+k)%3 else 'lx-leaf'
+     for face in [[c,edge,ridge],[c,ridge,edge2],[edge,tip,ridge],[ridge,tip,edge2]]:B.face(mat,face)
  # Public lobby: observed seating island, foliage doorway, mezzanine and stair.
  B.property=KEY+'-interior';B.source='public/'+KEY
- room=lobby.buffer(-.12);B.planar('lx-floor',room,.2,True);B.shell(room,.2,5.75,'lx-wall',openings=[door],roof=False)
+ # Public floor clears retained mapped service-road/sidewalk surfaces (max .28m).
+ L.y=.3
+ B.upface('lx-floor',[L.p(-.3,-.1,-.4),L.p(2.3,-.1,-.4),L.p(2.3,.2,.5),L.p(-.3,.2,.5)],True)
+ room=lobby.buffer(-.12);B.planar('lx-floor',room,.5,True);B.shell(room,.5,5.75,'lx-wall',openings=[door],roof=False)
  for tri in triangles(room):B.face('lx-wall',[(x,5.75,z)for x,z in reversed(list(tri.exterior.coords)[:-1])])
  # Black tile inset rather than coplanar overlays on an uncut floor.
  inset=L.poly([(-4,3),(3.5,3),(3.5,10),(-4,10)])
  # Inset is raised 3cm; decorative joints cannot trip the capsule.
- B.planar('lx-blacktile',inset,.23)
+ B.planar('lx-blacktile',inset,.53)
  for u in np.arange(-3.5,3.5,.75):L.box('lx-grout',(float(u),.234,6.5),(.008,.006,7))
  for v in np.arange(3.5,10,.75):L.box('lx-grout',(-.25,.234,float(v)),(7.5,.006,.008))
  for u,v,a in [(-2.8,4.7,-.3),(1.8,4.7,.3),(-2.8,8.2,math.pi+.3),(1.8,8.2,math.pi-.3)]:chair(L,u,v,a)
@@ -152,8 +167,8 @@ def build(B):
  L.stairs(5.2,5.0,1.8,2.7,4.5,y=.2)
  L.box('lx-floor',(3.9,2.80,10.8),(6.0,.2,2.7),True);rail(L,2.5,2.9,9.45,3.2);rail(L,6.6,2.9,9.45,.6)
  for u in [-4,0,4]:
-  for v in [2,6,11]:L.lathe('lx-lamp',u,v,[(5.66,.11),(5.70,.11)],12)
- routes=[dict(name='Arrival to public lobby',points=[L.p(1,0,-5),L.p(1,0,-2),L.p(1,.2,-1.4),L.p(1,.2,1.5),L.p(4,.2,3.3),L.p(4,.2,5.2)]),dict(name='Lobby seating circulation',points=[L.p(u,.2,v)for u,v in [(4,3.3),(-4.8,2),(-4.8,4),(-4.8,10.8),(3.8,9),(3.8,6)]]),dict(name='Lobby mezzanine stair',points=[L.p(5.2,.2,4.6),L.p(5.2,.2,5.0),L.p(5.2,2.9,9.5),L.p(5.2,2.9,10.8),L.p(2.0,2.9,10.8)]),dict(name='Pool east deck',points=[Q.p(3.8,.13,z)for z in [-8,-4,0,4,8]])]
- return dict(key=KEY,name='The Lexi',center=(283,0,-3083),bounds=list(unary_union([p,lobby,deck]).buffer(3).bounds),structural=True,hotelSources=[],exteriorOnly=False,portals=[door],zones=[dict(origin=L.p(0,.2,.12),yaw=L.yaw,width=14.1,depth=12.05,height=5.55)],lights=[dict(p=L.p(u,5.1,v),color=0xffeee0,power=1,range=12)for u,v in [(-4,3),(4,3),(-4,11),(4,11)]],routes=routes)
+  for v in [2,6,11]:L.lathe('lx-lamp',u,v,[(5.36,.11),(5.40,.11)],12)
+ routes=[dict(name='Arrival to public lobby',points=[L.p(1,-.3,-5),L.p(1,-.3,-2),L.p(1,-.1,-1.4),L.p(1,.2,1.5),L.p(4,.2,3.3),L.p(4,.2,5.2)]),dict(name='Lobby seating circulation',points=[L.p(u,.2,v)for u,v in [(4,3.3),(-4.8,2),(-4.8,4),(-4.8,10.8),(3.8,9),(3.8,6)]]),dict(name='Lobby mezzanine stair',points=[L.p(5.2,.2,4.6),L.p(5.2,.2,5.0),L.p(5.2,2.9,9.5),L.p(5.2,2.9,10.8),L.p(2.0,2.9,10.8)]),dict(name='Pool east deck',points=[Q.p(3.8,.13,z)for z in [-8,-4,0,4,8]])]
+ return dict(key=KEY,name='The Lexi',center=(283,0,-3083),bounds=list(unary_union([p,lobby,deck]).buffer(3).bounds),structural=True,hotelSources=[],exteriorOnly=False,portals=[door],zones=[dict(origin=L.p(0,.2,.12),yaw=L.yaw,width=14.1,depth=12.05,height=5.25)],lights=[dict(p=L.p(u,5.1,v),color=0xffeee0,power=1,range=12)for u,v in [(-4,3),(4,3),(-4,11),(4,11)]],routes=routes)
 if __name__=='__main__':
  B=Meshes();meta=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(meta,indent=2)+'\n');print(KEY,sum(len(g['faces'])for g in B.groups.values()),'triangles')

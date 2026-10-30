@@ -22,8 +22,15 @@ for(const route of meta.routes)for(let k=1;k<route.points.length;k++){
  const a=route.points[k-1],b=route.points[k],n=Math.ceil(Math.hypot(...b.map((v,i)=>v-a[i]))/.3);
  for(let i=0;i<=n;i++){
   const [x,y,z]=a.map((v,j)=>v+(b[j]-v)*i/n);checks++;
-  const hit=world.intersectionWithShape({x,y:y+1.1,z},{x:0,y:0,z:0,w:1},new RAPIER.Capsule(.65,.29));
-  const floor=world.castRay(new RAPIER.Ray({x,y:y+.25,z},{x:0,y:-1,z:0}),.55,true);
+  // Exterior route points use district datum; retain the existing 28cm sidewalk.
+  let feet=y;
+  if(installed&&y===0)for(const [dx,dz] of [[0,0],[.28,0],[-.28,0],[0,.28],[0,-.28]]){
+   const pavement=world.castRay(new RAPIER.Ray({x:x+dx,y:.6,z:z+dz},{x:0,y:-1,z:0}),.65,true);
+   const ground=pavement ? .6-pavement.timeOfImpact : y;
+   if(ground>=0&&ground<=.35)feet=Math.max(feet,ground);
+  }
+  const hit=world.intersectionWithShape({x,y:feet+1.1,z},{x:0,y:0,z:0,w:1},new RAPIER.Capsule(.65,.29));
+  const floor=world.castRay(new RAPIER.Ray({x,y:feet+.25,z},{x:0,y:-1,z:0}),.55,true);
   if(hit||!floor)failures.push({x,y,z,blocked:!!hit,floor:!!floor});
  }
 }

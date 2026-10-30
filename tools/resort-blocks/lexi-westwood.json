@@ -48,21 +48,19 @@
     "Measured height, exact window spacing and full lobby floor plan not established; original source artwork will not be copied."
   ],
   "remaining": [
-    "Improve palm frond/trunk finish, roof tile articulation, arrival wing side elevation and courtyard planting; latest front and lobby source renders inspected, still below final material/detail target. Guest corridors excluded.",
-    "Use final probe cameras unchanged for installed after captures; front [324,5,-3057] toward [284,8,-3083] baseline inspected and unobstructed.",
-    "Research and claim neighboring Auto Collision Experts way/464694095 and optionally Evenplay way/464694094 before editing; only Lexi is claimed so far.",
-    "Complete grouped content, then perform one shared-city export/bake; do not install Lexi as a separate one-building PR.",
-    "Run both optimization passes including WebP, install, audit current-city routes and ownership, capture installed views, walk, measure performance and run all AGENTS step7 gates."
+    "Resolve or explain matched performance regression/variability before marking PR433 ready; content and release checks otherwise pass.",
+    "Fine weathering and glazing detail, unseen elevations and surveyed dimensions remain uncertain; guest corridors excluded.",
+    "Pool grade and lobby floor reconcile retained mapped road surfaces; layout is reference-informed, not a surveyed replica."
   ],
   "nextPass": {
     "priority": "Westwood/Highland grouped content pass",
-    "checkpoint": "Draft PR433 attached. Lexi generator, exporter, review, probe and source route test written. 254 standalone route checks pass; source renders inspected and balcony intrusion/blocked deck route fixed. Source GLBs remain in ignored build only. Shared city and runtime assets unchanged. Final front baseline refreshed and personally inspected unobstructed; matching source front inspected too. Automation resumed with new grouped workflow. Replacement design awaits explicit approval."
+    "checkpoint": "All release gates, seven inspected installed views and 40 actual walk segments pass. Two final performance runs are variable and slower than baseline; investigate before ready. Approved cell split is deferred until PR433 merges; rejected immutable-base design must not be implemented."
   },
   "draftPullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/433",
   "sourcePass": {
     "date": "2026-10-29",
-    "status": "local-draft-not-installed",
-    "trianglesBeforeText": 72572,
+    "status": "installed-verification-in-progress",
+    "trianglesBeforeText": 108298,
     "routeAudit": {
       "path": "build/strip-landmarks/lexi-westwood-route-audit.json",
       "checks": 254,
@@ -71,13 +69,96 @@
     },
     "sourceViews": "build/city-exteriors/lexi-westwood-source-review",
     "beforeViews": "build/city-exteriors/lexi-westwood-before",
-    "sharedCityRewrites": 0,
+    "sharedCityRewrites": 1,
     "newLfsBytes": 0,
     "sourceViewsInspected": [
       "front",
+      "pool",
       "roof",
       "lobby"
     ],
     "baselineResults": "build/city-exteriors/lexi-westwood-before/results.json"
+  },
+  "groupedBuildings": [
+    {
+      "id": "ace-westwood",
+      "name": "Auto Collision Experts",
+      "mappedIds": [
+        "way/464694095"
+      ],
+      "claim": {
+        "issue": 434,
+        "assignee": "janiverse",
+        "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/434"
+      },
+      "sources": [
+        {
+          "url": "https://acelv.com/",
+          "accessed": "2026-10-29",
+          "observed": "Current operator and 2600 Westwood address; owner photo inspected separately on Maps shows ACE signage."
+        },
+        {
+          "url": "https://www.google.com/maps/@36.1434634,-115.1701388,3a,75y,225h,90t/data=!3m4!1e1!3m2!1sULM6LDGo-WC5526paIJFwA!2e0",
+          "accessed": "2026-10-29",
+          "imageDate": "2024-10",
+          "observed": "Personally inspected L-shaped gray stucco workshop, masonry piers/base, dark coping, high vent, recessed court entrance and roof sign. Old Protection Plus branding replaced by current ACE type; permanent fabric retained."
+        }
+      ],
+      "uncertainDimensions": [
+        "4m eaves and roof equipment inferred; no public interior evidence; workshop remains closed."
+      ],
+      "status": "source-draft",
+      "sourceViewsInspected": [
+        "front",
+        "court"
+      ],
+      "baselineViews": "build/city-exteriors/ace-westwood-before",
+      "routeAudit": "build/strip-landmarks/ace-westwood-route-audit.json",
+      "trianglesBeforeText": 12496,
+      "installedViews": "build/city-exteriors/westwood-final",
+      "actualWalkSegmentsPassed": 4
+    }
+  ],
+  "installedPass": {
+    "status": "verification-in-progress",
+    "ownershipAudit": "build/city-exteriors/westwood-group-ownership-audit.json",
+    "preservationAudit": "build/city-exteriors/westwood-group-preservation.json",
+    "removedFaces": 47,
+    "groupsPreserved": 9560,
+    "routeAudit": "build/strip-landmarks/lexi-westwood-route-audit.json",
+    "walk": "build/city-exteriors/westwood-final-walk/results.json",
+    "walkSegmentsPassed": 36,
+    "installedViews": "build/city-exteriors/westwood-final",
+    "discrepancies": [
+      "Retained ground initially covered negative-elevation pool water; surface corrected to .05 below .13 coping and final installed pool capture inspected.",
+      "Retained sidewalk crosses inferred lobby footprint; floor raised to .5 with entry transition ramp. Final packaged walk passed all 36 Lexi segments.",
+      "Fine material weathering, unseen elevations, actual measured lobby layout and detailed guest rooms remain outside this pass."
+    ],
+    "viewsInspected": [
+      "lexi-westwood-front",
+      "lexi-westwood-pool",
+      "lexi-westwood-roof",
+      "lexi-westwood-lobby",
+      "ace-westwood-front",
+      "ace-westwood-court",
+      "ace-westwood-roof"
+    ],
+    "releaseChecks": {
+      "bitmagic": "passed",
+      "siteLightsAndPackDataTests": "2 passed",
+      "currentCityRoutes": "Lexi 254; ACE 16 passed",
+      "review": "passed",
+      "checkPublic": "passed; existing inventory email warning",
+      "changedRuntimeGlbs": "4 checked; 0 not optimized",
+      "bake": "759 batches, fresh",
+      "assetPack": "1639 present, 0 missing, 0 not optimized",
+      "smokeClone": "9 stops, 0 failed requests, 0 page errors, 0 console errors",
+      "actualWalk": "Lexi 36 and ACE 4 segments passed"
+    },
+    "lfsBytes": 147718816,
+    "buildingLfsBytes": 4307668,
+    "performanceFirstFinal": "build/city-exteriors/westwood-final/results.json",
+    "performanceConcern": "Repeat remains variable: Lexi median 17.3\u201320.6ms, p95 22.5\u201328ms; ACE median 26.6\u201359ms, p95 30.7\u201370.7ms. Baseline exterior medians ~16.7ms. Cause unresolved; no stable 60fps claim. PR remains draft. Follow-up process inspection found concurrent character-forger Blender GPU QA and Trellis worker jobs; possible contention confound, not proof of cause. Do not stop other-session jobs.",
+    "performanceRepeat": "build/city-exteriors/westwood-performance-repeat/results.json"
   }
 }

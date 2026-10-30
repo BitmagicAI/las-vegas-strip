@@ -3,12 +3,12 @@
  "revision": "2026-10-29",
  "pack": {
   "name": "las-vegas-strip-assets-2026-10-29.tar.gz",
-  "url": "https://github.com/BitmagicAI/las-vegas-strip/releases/download/assets-2026-10-29/las-vegas-strip-assets-2026-10-29.tar.gz",
-  "bytes": 590933487,
-  "sha256": "8dda29085be41e1f157b5cd7b16eff75e04079e747a8a5baa53995600a2438b4"
+  "url": "",
+  "bytes": 0,
+  "sha256": ""
  },
- "count": 1633,
- "bytes": 1161559782,
+ "count": 1639,
+ "bytes": 1165909526,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -36,8 +36,8 @@
   },
   {
    "path": "build/baked/city-lod.bin",
-   "bytes": 20232048,
-   "sha256": "665a3af13eb7dad2b0c5a1e085654695a73e7e6ab8d0c08904c672b8bbbf6384",
+   "bytes": 20273584,
+   "sha256": "781f6351effa6c30674d1399e94ed3730a4aa7e850703803945c10a6ab59ca48",
    "kind": "original"
   },
   {
@@ -138,14 +138,14 @@
   },
   {
    "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13048548,
-   "sha256": "cec0cbf3a665adf02b5597bfdedd4ad2e77cb82ba446ee765d63fd3738ad6675",
+   "bytes": 13048560,
+   "sha256": "0a9224a2f1d2e610fc7a404b8f99df812e4f4feec21034c3d9ed7e2cfbefc6b1",
    "kind": "original"
   },
   {
    "path": "build/geographic-strip/city.glb",
-   "bytes": 109698468,
-   "sha256": "019ae348f414ca83589ac5cfd6ba213d368f48b277420ac6fd40f9ef20ab7d6b",
+   "bytes": 109697888,
+   "sha256": "38e14b86f84980ae8efcaa5697b82c64f9bb4febd67affae7c8c87ec6fb07511",
    "kind": "optimized"
   },
   {
@@ -5561,6 +5561,18 @@
    "kind": "original"
   },
   {
+   "path": "build/strip-landmarks/ace-westwood-exterior-collision.bin",
+   "bytes": 620,
+   "sha256": "3cbd46ca47214d8c7970f4f5f1d9ed48a6b2e62d411b3a0bb1a70c834186a679",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/ace-westwood-exterior.glb",
+   "bytes": 645788,
+   "sha256": "63b994a5e580054b4e875bfd81ac99b671fc21130e3862a5182e1d76e6780b2c",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/airgas-highland-exterior-collision.bin",
    "bytes": 648,
    "sha256": "9144e8a383b815dd1fa0248ee311cfd5be444ef16c55dc25d0da292fc281c0c5",
@@ -7514,6 +7526,30 @@
    "path": "build/strip-landmarks/lawrys-hughes-interior.glb",
    "bytes": 761852,
    "sha256": "fbd4f06f3f968b9b3ee165cdf52c015d6ad61c9a2eb14d44c9806f3572b2082c",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/lexi-westwood-exterior-collision.bin",
+   "bytes": 2048,
+   "sha256": "f2c323149280608e78dda1bd240f3ffd3165283cab36b1078c75d13e5db97546",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/lexi-westwood-exterior.glb",
+   "bytes": 3482000,
+   "sha256": "8f588d73385c081b41d6aefbd76ce3e15c3e86a12aa6aa9433e7e04833049411",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/lexi-westwood-interior-collision.bin",
+   "bytes": 568,
+   "sha256": "ad11c8bf17130a3a73a5e37e8557e906c47668c5bba36335fb2da7e4873ed305",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/lexi-westwood-interior.glb",
+   "bytes": 176644,
+   "sha256": "145d1f4e634bf2bdc6d026e5c74f9338e5e2bbe02496b9da1ffbffe34d105fd3",
    "kind": "optimized"
   },
   {
@@ -9594,8 +9630,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 390008,
-   "sha256": "28937533f4175da7b9585a28484af1cbb32bd27af445f394fcd769f3f323c43d",
+   "bytes": 391116,
+   "sha256": "1ef7899c61af8b7ceea899225cc0cd628dda17f6a6c718a4766929862ccdd1aa",
    "kind": "original"
   },
   {
