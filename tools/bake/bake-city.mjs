@@ -39,6 +39,7 @@ import zlib from 'node:zlib';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { launchSystemChrome, browserRendererArgs } from '../lib/bitmagic-cli.mjs';
+import {writeLodCells} from '../city-cells/lod-files.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const BM = path.join(ROOT, 'tools/optimize/bm-tools/gltf/node_modules/meshoptimizer');
@@ -313,6 +314,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const step = process.argv[2] ?? 'build';
   if (step === 'capture') await capture();
   else if (step === 'lod') await lod();
+  else if (step === 'cells') {
+    const cells=writeLodCells(LOD_FILE,path.join(ROOT,'build/baked/cells'),'OpenStreetMap / geographic Strip',RAW);
+    console.log(`Packaged unchanged LOD blocks into ${cells.length} spatial files`);
+  }
   else if (step === 'check') { const s = bakeFresh(); console.log(s.fresh ? 'city bake is up to date' : `city bake is stale (${s.reason}): node tools/bake/bake-city.mjs`); process.exit(s.fresh ? 0 : 1); }
   else if (step === 'build') {
     const before = inputsHash(), s = bakeFresh();
@@ -324,5 +329,5 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       if (after.hash !== before.hash) { console.error('inputs changed while baking; run again'); process.exit(1); }
       fs.writeFileSync(INPUTS_FILE, JSON.stringify({ hash: after.hash, files: after.files, at: new Date().toISOString() }, null, 1) + '\n');
     }
-  } else { console.error('usage: node tools/bake/bake-city.mjs [build|check|capture|lod]'); process.exit(2); }
+  } else { console.error('usage: node tools/bake/bake-city.mjs [build|check|capture|lod|cells]'); process.exit(2); }
 }
