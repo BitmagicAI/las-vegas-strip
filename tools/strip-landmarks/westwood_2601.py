@@ -4,7 +4,7 @@ Height and roof pitch estimated. Public interior pending corroboration.
 """
 from common import *
 KEY='westwood-2601'
-COLORS={'w26-cream-stucco':'d5c9a5','w26-salmon-stucco':'b77568','w26-trim-paint':'eee5ce','w26-glass':'354345','w26-frame-paint':'9c9f93','w26-vent-paint':'9d9476','w26-roof-tile':'a56f51','w26-roof':'a9a69a','w26-canopy-paint':'9c5752','w26-paving-concrete':'918878','w26-grey-stucco':'777b76','w26-grey-panel':'656b69','w26-pool-tile':'b8cec6','w26_pool':'488a91','w26-ochre-stucco':'bca05d'}
+COLORS={'w26-cream-stucco':'d5c9a5','w26-salmon-stucco':'b77568','w26-trim-paint':'eee5ce','w26-glass':'354345','w26-frame-paint':'9c9f93','w26-vent-paint':'9d9476','w26-roof-tile':'a56f51','w26-roof':'a9a69a','w26-canopy-paint':'9c5752','w26-paving-concrete':'918878','w26-grey-stucco':'777b76','w26-grey-panel':'656b69','w26-pool-tile':'b8cec6','w26_pool':'488a91','w26-ochre-stucco':'bca05d','w26-pylon-paint':'c0c9c7','w26-pylon-inset':'536e83','w26-sign-screen':'18232b'}
 def roof_skirt(B,p,eave,ridge,inset):
  outer=p.buffer(.4,join_style=2);inner=p.buffer(-inset,join_style=2)
  oc=list(outer.exterior.coords)[:-1];ic=list(inner.exterior.coords)[:-1]
@@ -75,6 +75,26 @@ def build(B):
  for x in [-2.6,2.6]:
   F.box('w26-ochre-stucco',(x,.48,z+7),( .35,.95,11.7),True)
   F.box('w26-trim-paint',(x,.98,z+7),(.46,.10,11.85))
+ # Front downpipes and clipped brackets visible beside the central bays.
+ for x in [-9.0,9.0]:
+  F.tube('w26-ochre-stucco',(x,.22,z+.3),(x,9.35,z+.3),.055,8)
+  for yy in [1,3.6,6.6,8.9]:F.box('w26-frame-paint',(x,yy,z+.26),(.18,.045,.13))
+ # Existing two-legged roadside pylon: owner brochure specifies 100 ft height,
+ # 40 x 30 ft north/south display faces. Placement is estimated from the aerial.
+ # Use a dark screen instead of reproducing a third-party advertisement.
+ sign_x=width/2+3.0;sign_z=-depth/2-3.0
+ Q=Frame(B,*[F.p(sign_x,0,sign_z)[i] for i in [0,2]],yaw+math.pi/2,y=0)
+ h=100*.3048;face_w=40*.3048;face_h=30*.3048
+ for xx in [-3.4,3.4]:
+  Q.box('w26-pylon-paint',(xx,(h-face_h)/2,0),(1.45,h-face_h,1.5),True)
+  Q.box('w26-pylon-inset',(xx,(h-face_h)/2,-.77),(.60,h-face_h-2,.05))
+  Q.box('w26-pylon-inset',(xx,(h-face_h)/2,.77),(.60,h-face_h-2,.05))
+  Q.box('w26-paving-concrete',(xx,.12,0),(2.1,.24,2.1),True)
+ for yy in [3.1,12.2,20.5]:Q.box('w26-pylon-paint',(0,yy,0),(7.7,.45,1.25),True)
+ Q.box('w26-pylon-paint',(0,h-face_h/2,0),(face_w,face_h,1.5),True)
+ for side in [-1,1]:
+  Q.box('w26-sign-screen',(0,h-face_h/2,side*.79),(face_w-.38,face_h-.38,.06))
+ sign_bounds=Q.poly([(-face_w/2,-1.1),(face_w/2,-1.1),(face_w/2,1.1),(-face_w/2,1.1)])
  # Existing irregular pool, positioned from the brochure site plan; no proposed bar.
  court=F.poly([(-35,z-.05),(-7,z-.05),(-7,z+17),(-27,z+22),(-35,z+22)])
  pool=F.poly([(-29,z+5),(-22,z+5),(-21,z+6),(-24,z+12),(-24,z+19),(-27,z+20),(-30,z+19),(-30,z+6)])
@@ -124,7 +144,7 @@ def build(B):
      G.box('w26-trim-paint',(x+offset,y,-.10),(1.5,1.35,.10))
      G.box('w26-glass',(x+offset,y,-.18),(1.37,1.22,.045))
      G.box('w26-frame-paint',(x+offset,y,-.22),(.055,1.22,.045))
- bounds=unary_union([p,court,annex]).bounds
+ bounds=unary_union([p,court,annex,sign_bounds]).bounds
  routes=[dict(name='Main arrival ramp',points=[F.p(0,.12,z+12),F.p(0,.22,z+1)])]
  return dict(key=KEY,name='2601 Westwood — source study',center=[center.x,4,center.y],bounds=list(bounds),structural=True,hotelSources=[],exteriorOnly=True,portals=[],zones=[],lights=[],routes=routes,sourceOnly=True,remaining=['Installed pool gate and wall verification','Additional annex elevations','Public interior','Optimization and installed validation'])
 if __name__=='__main__':
