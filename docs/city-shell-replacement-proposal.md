@@ -90,3 +90,13 @@ Still required before ready: independent fresh-clone installation, wider matched
 ### Independent checkout validation
 
 Commit `2a868a1` was cloned into a separate local checkout with no authoring `build/` directory. `fetch-assets.mjs` restored all 1,914 files from the committed runtime snapshot, and `--verify` matched every hash. Only the engine and Node dependencies were shared with the authoring checkout; the test used the local Git LFS object store rather than a network download. The nine-stop smoke passed with zero failed requests, page errors, console errors or unplaced stops. The Sphere approach capture was visually inspected. This proves snapshot completeness locally, not published-CDN delivery or cold-load performance. Evidence is retained under `.bitmagic/city-cells/fresh-checkout/`.
+
+### Physical driving comparison
+
+The existing instrumented jeep probe ran the same 1,480 m Strip route at a target 20 m/s on combined and split assets. Both finished before their timeout with no driving or browser errors and no streaming jobs holding the scene. Combined/split mean frame intervals were 63.7/69.3 ms; worst gaps 467/317 ms; gaps over 250 ms 5/2; neither had a gap over 500 ms. These are single sequential heavily instrumented runs, not proof of unchanged performance: the split run has a worse average and fewer large gaps. Preserve this mixed result and obtain a controlled broader comparison before claiming no regression. Evidence: `.bitmagic/city-cells/driving/{before,after}`.
+
+### Controlled one-building storage result
+
+Restored only Airgas Highland (`way/464694104`)'s 16 owned shell triangles and their 16 collision triangles into an isolated copy of current city data, then exported and optimized that cell and recaptured/baked the same city in the separate checkout. Comparing this pre-removal fixture with the installed post-removal city changes exactly one visual, one collision and one LOD cell, all `0,-4`; the other 272 packages are byte-identical. Detailed Airgas geometry stays unchanged, so this measures the shared-city replacement cost.
+
+The old pipeline would add **143,020,032 bytes** of combined geometry/collision/LOD objects for this edit. Cell objects add **2,972,184 bytes**, or **3,043,390 bytes** conservatively including all three manifests (71,206 bytes). This is about **97.9% less** shared-city LFS storage for this specific building. It excludes the unchanged detailed model, the asset-pack catalog and network compression, and is separate from the one-time migration. Source and runtime files in the authoring checkout were not changed. Evidence: `.bitmagic/city-cells/building-experiment/{fixture,storage-report}.json`; the pre-removal capture retains 309 parts/759 batches.
