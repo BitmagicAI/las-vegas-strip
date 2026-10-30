@@ -4,7 +4,7 @@ Height and roof pitch estimated. Public interior pending corroboration.
 """
 from common import *
 KEY='westwood-2601'
-COLORS={'w26-cream-stucco':'d5c9a5','w26-salmon-stucco':'b77568','w26-trim-paint':'eee5ce','w26-glass':'354345','w26-frame-paint':'9c9f93','w26-vent-paint':'9d9476','w26-roof-tile':'a56f51','w26-roof':'a9a69a','w26-canopy-paint':'9c5752','w26-paving-concrete':'918878','w26-grey-stucco':'777b76','w26-grey-panel':'656b69','w26-pool-tile':'b8cec6','w26_pool':'488a91','w26-ochre-stucco':'bca05d','w26-pylon-paint':'c0c9c7','w26-pylon-inset':'536e83','w26-sign-screen':'18232b'}
+COLORS={'w26-cream-stucco':'d5c9a5','w26-salmon-stucco':'b77568','w26-trim-paint':'eee5ce','w26-glass':'354345','w26-frame-paint':'9c9f93','w26-vent-paint':'9d9476','w26-roof-tile':'a56f51','w26-roof':'a9a69a','w26-canopy-paint':'9c5752','w26-paving-concrete':'918878','w26-grey-stucco':'777b76','w26-grey-panel':'656b69','w26-pool-tile':'b8cec6','w26_pool':'488a91','w26-ochre-stucco':'bca05d','w26-pylon-paint':'c0c9c7','w26-pylon-inset':'536e83','w26-sign-screen':'18232b','w26-soil':'675542','c525-bark':'80705a','c525-collision':'80705a','c525-palm-stem':'706a38','c525-palm-leaf':'4c6335','c525-palm-light':'6d783c'}
 def roof_skirt(B,p,eave,ridge,inset):
  outer=p.buffer(.4,join_style=2);inner=p.buffer(-inset,join_style=2)
  oc=list(outer.exterior.coords)[:-1];ic=list(inner.exterior.coords)[:-1]
@@ -123,6 +123,14 @@ def build(B):
    for x in [-.82,.82]:G.box('w26-trim-paint',(x,1.12,0),(.18,2.24,.4),True)
    # Gate shown open: decorative leaf beside the opening, never across the route.
    G.box('w26-frame-paint',(1.65,1.05,-.27),(1.5,1.95,.05))
+ # Fan palms visible at the court and front facade in the November 2021 view.
+ # Reuse the project's original palm geometry, not a downloaded street-view mesh.
+ # Exact positions/heights are estimates; leave the ramp and hotel-edge route clear.
+ from courtyard_525 import palm
+ for x,zz,height in [(-33,z+19,6.8),(-33,z+8,7.4),(-9,z+14.5,6.2),(17,z+3,7.6),(30,z+3,7.0)]:
+  F.lathe('w26-paving-concrete',x,zz,[(0,.95),(.20,.95),(.20,.80)],20)
+  F.lathe('w26-soil',x,zz,[(.20,.79),(.22,.79)],20)
+  palm(B,F,x,zz,height)
  # Separate south building: grey three-storey arched facade observed in Nov 2021.
  # Keep mapped footprint; unseen elevations repeat observed bays as an inference.
  # Roof plant is omitted until supported by a reference.

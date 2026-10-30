@@ -40,3 +40,8 @@ Added `tools/city-exteriors/probe-westwood-2601.js` with matching front/roof/ann
 Re-inspected the owner's aerial placement reference. Added the two-legged sign pylon beside the hotel's freeway-side end, with the brochure's 100 ft overall height and 40 x 30 ft display faces. Leg dimensions, exact footing position and screen depth are inferred; the dark screen does not reproduce an advertisement or assert its current content. Added two front downpipes and brackets based on the previously inspected street view. Roof source render inspected after export; sign is separate from the hotel shell.
 
 Current source: 54,723 triangles, 449 collision triangles. All 94 floor samples and arrival body clearance still pass. GLB export and level optimization pass: 5,475,408 source bytes to 2,146,316 optimized bytes. WebP invoked (no embedded textures); installer dry-run passes. Actual installation and installed alignment/performance remain pending; no LFS bytes added.
+
+### Planting pass
+Added five fan palms at the pool court and front facade using the existing original `courtyard_525.palm` helper. Their presence is supported by the inspected November 2021 Street View; exact heights, positions and circular planting rims are inferred. No foliage source models changed, and no remote plant assets were downloaded. The front source render was inspected after rebuilding.
+
+Current result: 63,293 source triangles, 509 collision triangles; 94 floor samples and arrival body clearance PASS. Blender export PASS. Level optimizer 6,332,828 → 2,514,464 bytes; WebP invoked (textureless); installer dry-run PASS. Actual installation, public interior evidence, end-elevation refinement and all installed gates remain pending. The shared city is untouched.
