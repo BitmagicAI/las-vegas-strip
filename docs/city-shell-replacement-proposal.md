@@ -51,3 +51,11 @@ Collision residency is currently 160 m; preserve those individual records while 
 `tools/city-cells/lod-files.mjs` partitions the geographic VLOD blocks without decoding/re-simplifying them. All 631 existing blocks retain their bytes; repeated packaging is identical, and a simulated single-city-block change affects only its cell file (`test-lod-files.mjs`: PASS). The prototype retains non-geographic parts together in `other-parts.bin`; their spatial packaging still needs resolution before final integration.
 
 All 92 cell GLBs passed the existing level optimizer: combined candidates 109,926,564 bytes. The WebP pass was invoked and correctly skipped these textureless files. Candidates are not installed or staged. Runtime loaders, optimized no-op rebuild, render equivalence, release checks, cold-load/stall measurements and controlled building-change LFS evidence remain pending.
+
+### Runtime A/B preparation — 2026-10-30
+
+Added a localhost-only `?cityCells=on` path for cell GLBs and collision packs; the default and published paths remain combined. Local candidates are installed using `install-optimized.mjs --only=geographic-strip/cells/ --no-stage`; no release snapshot or LFS assets changed. Type check passed. A composite collision index retains the existing 160 m residency behavior.
+
+Forced re-optimization reproduced identical bytes for all 92 optimized GLBs. Offline decoded comparison passes for all 932 nodes (including 11 empty nodes), with original transforms, metadata, vertex attributes, oriented triangles and material factors. Node order must match Blender's natural name ordering, not alphabetical or scene insertion order; the manifest now records it and the offline check asserts the complete original order.
+
+Initial same-camera before/after screenshots at Lexi were personally inspected and look consistent, but reported mesh/triangle totals differed (325 / 4,461,515 versus 324 / 4,458,549). This is unresolved runtime-equivalence evidence, not a pass. One follow-up was interrupted after concurrent source edits could invalidate its live-reload session; a fresh stable comparison is required. No cold-load or no-stall claim.

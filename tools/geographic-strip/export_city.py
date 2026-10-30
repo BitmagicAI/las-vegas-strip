@@ -1,4 +1,4 @@
-import bpy,json,math,hashlib,sys
+import bpy,json,math,hashlib,sys,re
 from pathlib import Path
 from collections import defaultdict
 import sys as _sys; _sys.path.insert(0, 'tools/lib'); from paths import python312 as PY312  # a Python 3.12 on this machine (tools/lib/paths.py)
@@ -62,6 +62,8 @@ if '--cells' in sys.argv:
  cells=defaultdict(list)
  for obj in bpy.context.scene.objects:
   cells[obj['osmCell']].append(obj)
+ # glTF export uses natural name ordering, not scene insertion order.
+ node_order=sorted((obj.name for obj in bpy.context.scene.objects),key=lambda name:[int(t) if t.isdigit() else t for t in re.split(r'(\d+)',name)])
  manifest=[]
  for cell,objects in sorted(cells.items()):
   bpy.ops.object.select_all(action='DESELECT')
@@ -71,7 +73,7 @@ if '--cells' in sys.argv:
   bpy.ops.export_scene.gltf(filepath=str(target.resolve()),use_selection=True,export_format='GLB',export_yup=True,export_lights=False,export_cameras=False,export_extras=True)
   data=target.read_bytes()
   manifest.append(dict(cell=cell,file=name,sha256=hashlib.sha256(data).hexdigest(),bytes=len(data)))
- (cell_out/'manifest.json').write_text(json.dumps(dict(version=1,cellSize=800,cells=manifest),indent=2)+'\n')
+ (cell_out/'manifest.json').write_text(json.dumps(dict(version=1,cellSize=800,cells=manifest,nodeOrder=node_order),indent=2)+'\n')
  print('CITY CELLS EXPORTED',len(cells),'cells',len(groups),'batches',flush=True)
 else:
  bpy.ops.wm.save_as_mainfile(filepath=str((OUT/'city.blend').resolve()))
