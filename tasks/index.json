@@ -16001,7 +16001,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Resolve or explain matched performance regression/variability before marking PR433 ready; content and release checks otherwise pass.",
+    "Isolated full-scene performance under a quiet machine, GPU/CPU spans and cold transition stalls remain unmeasured; no sustained60 claim.",
     "Fine weathering and glazing detail, unseen elevations and surveyed dimensions remain uncertain; guest corridors excluded.",
     "Pool grade and lobby floor reconcile retained mapped road surfaces; layout is reference-informed, not a surveyed replica."
    ],
@@ -16013,6 +16013,9 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
+     "runtime-assets/strip-landmarks/ace-westwood-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/lexi-westwood-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/lexi-westwood-interior-collision.bin",
      "tools/resort-blocks/lexi-westwood.json"
     ],
     "builders": [

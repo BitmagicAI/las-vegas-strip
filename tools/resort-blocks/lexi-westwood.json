@@ -25,41 +25,41 @@
   "components": [
     {
       "id": "main-hotel-exterior",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "arrival-wing",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "pool-courtyard",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "public-lobby",
-      "status": "pending"
+      "status": "verified"
     },
     {
       "id": "public-routes",
-      "status": "pending"
+      "status": "verified"
     }
   ],
   "uncertainDimensions": [
     "Measured height, exact window spacing and full lobby floor plan not established; original source artwork will not be copied."
   ],
   "remaining": [
-    "Resolve or explain matched performance regression/variability before marking PR433 ready; content and release checks otherwise pass.",
+    "Isolated full-scene performance under a quiet machine, GPU/CPU spans and cold transition stalls remain unmeasured; no sustained60 claim.",
     "Fine weathering and glazing detail, unseen elevations and surveyed dimensions remain uncertain; guest corridors excluded.",
     "Pool grade and lobby floor reconcile retained mapped road surfaces; layout is reference-informed, not a surveyed replica."
   ],
   "nextPass": {
     "priority": "Westwood/Highland grouped content pass",
-    "checkpoint": "PR433 installed content and release checks pass; three performance runs remain confounded by concurrent character rendering. Latest medians17.0\u201321.9ms Lexi and16.5\u201327.2ms ACE. No content changes needed on evidence so far; obtain controlled comparison before ready. Cell split only after merge."
+    "checkpoint": "Westwood/Highland content verification complete with explicit performance limitations and alternating visibility diagnostic. PR433 ready for review; do not merge or start cell split until owner merge. No further city regeneration. Retain fine-finish/inferred-layout gaps."
   },
   "draftPullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/433",
   "sourcePass": {
     "date": "2026-10-29",
-    "status": "installed-verification-in-progress",
+    "status": "installed",
     "trianglesBeforeText": 108298,
     "routeAudit": {
       "path": "build/strip-landmarks/lexi-westwood-route-audit.json",
@@ -107,7 +107,7 @@
       "uncertainDimensions": [
         "4m eaves and roof equipment inferred; no public interior evidence; workshop remains closed."
       ],
-      "status": "source-draft",
+      "status": "installed",
       "sourceViewsInspected": [
         "front",
         "court"
@@ -120,7 +120,7 @@
     }
   ],
   "installedPass": {
-    "status": "verification-in-progress",
+    "status": "verified-with-performance-limitations",
     "ownershipAudit": "build/city-exteriors/westwood-group-ownership-audit.json",
     "preservationAudit": "build/city-exteriors/westwood-group-preservation.json",
     "removedFaces": 47,
@@ -160,6 +160,18 @@
     "performanceFirstFinal": "build/city-exteriors/westwood-final/results.json",
     "performanceConcern": "Repeat remains variable: Lexi median 17.3\u201320.6ms, p95 22.5\u201328ms; ACE median 26.6\u201359ms, p95 30.7\u201370.7ms. Baseline exterior medians ~16.7ms. Cause unresolved; no stable 60fps claim. PR remains draft. Follow-up process inspection found concurrent character-forger Blender GPU QA and Trellis worker jobs; possible contention confound, not proof of cause. Do not stop other-session jobs. Third run: Lexi medians 17.0\u201321.9ms, ACE 16.5\u201327.2ms; p95 up to37.5ms. Concurrent rendering restarted during run. Preserve evidence; defer additional timing until machine contention subsides or a controlled baseline comparison is available.",
     "performanceRepeat": "build/city-exteriors/westwood-performance-repeat/results.json",
-    "performanceThird": "build/city-exteriors/westwood-performance-quieter/results.json"
+    "performanceThird": "build/city-exteriors/westwood-performance-quieter/results.json",
+    "performanceAblation": "build/city-exteriors/westwood-ablation/results.json",
+    "performanceAssessment": "Alternating same-camera exterior visibility (four visible/four hidden samples) adds two draw calls. Visible p50 range32.7\u201334.6ms, hidden32.7\u201333.9ms, under concurrent rendering. Slowdown persists with new exteriors hidden; no clear incremental model cost above run variability. Diagnostic is not original-city baseline and cannot exclude shared-bake effects. Matching measurements and all content/release gates complete; absolute60fps and quiet-machine no-regression remain unclaimed."
+  },
+  "finalBuild": {
+    "files": {
+      "runtime-assets/strip-landmarks/lexi-westwood-exterior-collision.bin": "f2c323149280608e78dda1bd240f3ffd3165283cab36b1078c75d13e5db97546",
+      "runtime-assets/strip-landmarks/ace-westwood-exterior-collision.bin": "3cbd46ca47214d8c7970f4f5f1d9ed48a6b2e62d411b3a0bb1a70c834186a679",
+      "runtime-assets/strip-landmarks/lexi-westwood-interior-collision.bin": "ad11c8bf17130a3a73a5e37e8557e906c47668c5bba36335fb2da7e4873ed305",
+      "runtime-assets/strip-landmarks/ace-westwood-exterior.glb": "63b994a5e580054b4e875bfd81ac99b671fc21130e3862a5182e1d76e6780b2c",
+      "runtime-assets/strip-landmarks/lexi-westwood-interior.glb": "145d1f4e634bf2bdc6d026e5c74f9338e5e2bbe02496b9da1ffbffe34d105fd3",
+      "runtime-assets/strip-landmarks/lexi-westwood-exterior.glb": "8f588d73385c081b41d6aefbd76ce3e15c3e86a12aa6aa9433e7e04833049411"
+    }
   }
 }
