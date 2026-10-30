@@ -48,12 +48,36 @@
     "Measured height, exact window spacing and full lobby floor plan not established; original source artwork will not be copied."
   ],
   "remaining": [
-    "Research street elevations and reconcile roof/wing dimensions.",
-    "Build original geometry and public lobby; inspect installed views and walk routes.",
-    "Finish nearby batch before single shared-city export/bake; include WebP optimization and all updated release gates."
+    "Improve palm frond/trunk finish, roof tile articulation, arrival wing side elevation and courtyard planting; latest front and lobby source renders inspected, still below final material/detail target. Guest corridors excluded.",
+    "Use final probe cameras unchanged for installed after captures; front [324,5,-3057] toward [284,8,-3083] baseline inspected and unobstructed.",
+    "Research and claim neighboring Auto Collision Experts way/464694095 and optionally Evenplay way/464694094 before editing; only Lexi is claimed so far.",
+    "Complete grouped content, then perform one shared-city export/bake; do not install Lexi as a separate one-building PR.",
+    "Run both optimization passes including WebP, install, audit current-city routes and ownership, capture installed views, walk, measure performance and run all AGENTS step7 gates."
   ],
   "nextPass": {
     "priority": "Westwood/Highland grouped content pass",
-    "checkpoint": "Claim429 confirmed; branch task/ext-westwood-highland from ee968ce; no geometry edits yet. Adjacent Auto Collision Experts and Evenplay are research candidates only until claimed."
+    "checkpoint": "Draft PR433 attached. Lexi generator, exporter, review, probe and source route test written. 254 standalone route checks pass; source renders inspected and balcony intrusion/blocked deck route fixed. Source GLBs remain in ignored build only. Shared city and runtime assets unchanged. Final front baseline refreshed and personally inspected unobstructed; matching source front inspected too. Automation resumed with new grouped workflow. Replacement design awaits explicit approval."
+  },
+  "draftPullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/433",
+  "sourcePass": {
+    "date": "2026-10-29",
+    "status": "local-draft-not-installed",
+    "trianglesBeforeText": 72572,
+    "routeAudit": {
+      "path": "build/strip-landmarks/lexi-westwood-route-audit.json",
+      "checks": 254,
+      "failures": 0,
+      "scope": "Standalone authored collision plus district foundation; NOT installed city audit"
+    },
+    "sourceViews": "build/city-exteriors/lexi-westwood-source-review",
+    "beforeViews": "build/city-exteriors/lexi-westwood-before",
+    "sharedCityRewrites": 0,
+    "newLfsBytes": 0,
+    "sourceViewsInspected": [
+      "front",
+      "roof",
+      "lobby"
+    ],
+    "baselineResults": "build/city-exteriors/lexi-westwood-before/results.json"
   }
 }
