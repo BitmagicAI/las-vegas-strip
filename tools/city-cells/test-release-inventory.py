@@ -4,7 +4,7 @@ import json
 spec = importlib.util.spec_from_file_location('pack', 'tools/release/asset-pack.py')
 pack = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(pack)
-baseline, cells = pack.runtime_files(), pack.runtime_files(True)
+baseline, cells = pack.runtime_files(False), pack.runtime_files()
 old = {'build/geographic-strip/city.glb', 'build/geographic-strip/city-colliders.bin', 'build/baked/city-lod.bin'}
 new = {p for p in cells if '/cells/' in p or '/collision-cells/' in p}
 assert old.issubset(baseline) and not old.intersection(cells)

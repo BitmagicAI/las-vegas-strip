@@ -192,6 +192,7 @@ async function lod() {
   for (const [k, s] of Object.entries(split)) console.log(`\n  ${k}: ${(s.near / 1e6).toFixed(1)} M -> ${(s.kept / 1e6).toFixed(2)} M triangles (${(100 * s.kept / s.near).toFixed(1)}%), ${(s.vertices / 1e6).toFixed(2)} M vertices, ${(s.bytes / 1048576).toFixed(2)} MB before brotli`);
   fs.mkdirSync(path.dirname(LOD_FILE), { recursive: true });
   const bytes = out.done(); fs.writeFileSync(LOD_FILE, bytes);
+  writeLodCells(LOD_FILE,path.join(ROOT,'build/baked/cells'),'OpenStreetMap / geographic Strip',RAW);
   console.log(`\n${batches} batches: ${(near / 1e6).toFixed(1)} M near triangles -> ${(kept / 1e6).toFixed(2)} M LOD triangles (${(100 * kept / near).toFixed(1)}%), ${(vertices / 1e6).toFixed(2)} M LOD vertices; subsets ${(subsetBytes / 1048576).toFixed(2)} MB + indices ${(indexBytes / 1048576).toFixed(2)} MB = ${path.relative(ROOT, LOD_FILE)} ${(bytes.length / 1048576).toFixed(2)} MB, gzip ${(zlib.gzipSync(bytes, { level: 9 }).length / 1048576).toFixed(2)} MB, brotli ${(zlib.brotliCompressSync(bytes).length / 1048576).toFixed(2)} MB`);
 }
 // facades keep their UV seams (atlas textures); that costs 1% more vertices
@@ -272,9 +273,9 @@ function facadeLod(b, spacing) {
 /** One 1080p pixel (70-degree vertical field of view) at the distance the block's LOD can appear from (CityLod.lodLevel). */
 const lodError = (block) => 0.88 * block.near * (2 * Math.tan((35 * Math.PI) / 180)) / 1080;
 const INPUT_DIRS = ['build/geographic-strip', 'build/strip-landmarks', 'build/resort-blocks', 'build/highrises', 'build/sphere', 'build/south-strip'];
-const INPUT_CODE = ['src/work/CityBatches.ts', 'src/work/CityLod.ts', 'src/work/CityBake.ts', 'src/work/CityBakeLoad.ts', 'src/work/AttributeReader.ts', 'src/work/CityAtlas.ts',
+const INPUT_CODE = ['src/work/CityCells.ts', 'src/work/CityBatches.ts', 'src/work/CityLod.ts', 'src/work/CityBake.ts', 'src/work/CityBakeLoad.ts', 'src/work/AttributeReader.ts', 'src/work/CityAtlas.ts',
   'src/work/MaterialFixes.ts', 'src/work/StripLandmarks.ts', 'src/work/ResortBlocks.ts', 'src/work/HighriseCity.ts', 'src/work/GeographicCity.ts',
-  'src/work/GeographicStreetMaterials.ts', 'src/work/PbrDetailSets.ts', 'src/work/Game.ts', 'tools/bake/bake-city.mjs',
+  'src/work/GeographicStreetMaterials.ts', 'src/work/PbrDetailSets.ts', 'src/work/Game.ts', 'tools/bake/bake-city.mjs', 'tools/city-cells/lod-files.mjs',
   // the planting replaces the GLBs' old tree crowns, so where it goes counts; the tree models do not (instanced, never batched)
   'public/foliage/bellagio-placements.bin'];
 const MANIFEST_FILE = path.join(ROOT, 'build/optimized/manifest.json');
@@ -288,24 +289,35 @@ export function inputsHash() {
     if (!fs.existsSync(path.join(ROOT, dir))) return;
     for (const e of fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true })) {
       if (e.name.startsWith('.')) continue;
+      if (dir.endsWith('geographic-strip') && ['city.glb','city-colliders.bin','collision-cells'].includes(e.name)) continue;
       const rel = dir + '/' + e.name;
       if (e.isDirectory()) walk(rel);
       else if ((e.name.endsWith('.glb') && !/-interior\.glb$/.test(e.name)) || (e.name.endsWith('.bin') && !/collision/.test(e.name))) files.push(rel);
     }
   };
   for (const dir of INPUT_DIRS) { walk(dir); walk('build/optimized/' + dir); }
+  if(fs.existsSync(path.join(ROOT,'build/geographic-strip/cells/manifest.json')))files.push('build/geographic-strip/cells/manifest.json');
   for (const f of INPUT_CODE) if (fs.existsSync(path.join(ROOT, f))) files.push(f);
   files.sort();
   const hash = crypto.createHash('sha256');
   for (const f of files) { hash.update(f + '\0'); hash.update(fs.readFileSync(path.join(ROOT, f))); }
   const manifest = fs.existsSync(MANIFEST_FILE) ? JSON.parse(fs.readFileSync(MANIFEST_FILE, 'utf8')).files ?? {} : {};
-  const entries = Object.keys(manifest).filter((key) => INPUT_DIRS.some((dir) => key.startsWith(dir + '/'))).sort().map((key) => [key, manifest[key]]);
+  const entries = Object.keys(manifest).filter((key) => INPUT_DIRS.some((dir) => key.startsWith(dir + '/')) && key !== 'build/geographic-strip/city.glb').sort().map((key) => {const {modified,...stable}=manifest[key];return [key,stable];});
   hash.update('manifest\0'); hash.update(JSON.stringify(entries));
   return { hash: hash.digest('hex'), files: files.length + entries.length };
 }
 /** Whether build/baked/city-lod.bin was made from the current inputs. */
 export function bakeFresh() {
-  if (!fs.existsSync(LOD_FILE) || !fs.existsSync(INPUTS_FILE)) return { fresh: false, reason: 'no bake' };
+  if (!fs.existsSync(INPUTS_FILE)) return { fresh: false, reason: 'no bake' };
+  const directory=path.join(ROOT,'build/baked/cells'),indexFile=path.join(directory,'manifest.json');
+  if(!fs.existsSync(indexFile))return {fresh:false,reason:'no LOD cell manifest'};
+  const index=JSON.parse(fs.readFileSync(indexFile));
+  if(index.version!==1||index.cellSize!==800||!index.cells.length)return {fresh:false,reason:'invalid LOD cell manifest'};
+  for(const cell of index.cells){
+    const file=path.join(directory,cell.file);
+    if(!fs.existsSync(file)||crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')!==cell.sha256)
+      return {fresh:false,reason:`missing or changed LOD cell ${cell.file}`};
+  }
   const recorded = JSON.parse(fs.readFileSync(INPUTS_FILE, 'utf8')), now = inputsHash();
   return now.hash === recorded.hash ? { fresh: true } : { fresh: false, reason: 'inputs changed since ' + recorded.at, now };
 }

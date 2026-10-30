@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {readBlocks,encodeBlocks,partitionLod,readBlockCells} from './lod-files.mjs';
-const bytes=fs.readFileSync('runtime-assets/baked/city-lod.bin'),part='OpenStreetMap / geographic Strip';
+const bytes=fs.readFileSync(process.argv[2]??'build/baked/city-lod.bin'),part='OpenStreetMap / geographic Strip';
 const original=readBlocks(bytes),split=partitionLod(bytes,part),repeat=partitionLod(bytes,part);
 const key=b=>JSON.stringify([b.part,b.key]);
 const expected=new Map(original.map(b=>[key(b),b]));

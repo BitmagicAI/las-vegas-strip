@@ -10,7 +10,7 @@ const {NodeIO}=await dep('@gltf-transform/core/dist/index.js');
 const {ALL_EXTENSIONS}=await dep('@gltf-transform/extensions/dist/index.js');
 const {MeshoptDecoder}=await dep('meshoptimizer/index.js');await MeshoptDecoder.ready;
 const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.decoder':MeshoptDecoder});
-const source=await io.read('runtime-assets/geographic-strip/city.glb');
+const source=await io.read(process.argv[2]??'build/optimized/build/geographic-strip/city.glb');
 const signature=primitive=>{
  const h=crypto.createHash('sha256');
  for(const name of primitive.listSemantics().sort()){

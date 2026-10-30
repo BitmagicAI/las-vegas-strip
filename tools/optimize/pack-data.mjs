@@ -338,6 +338,17 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const files = named.length ? named : candidates();
   let packed = 0, stale = 0, before = 0, after = 0;
   for (const rel of files) {
+    if(kindOf(rel)==='city-collision'&&!args.includes('--combined-city')){
+      const {packCityCollision}=await import('../city-cells/pack-collision.mjs');
+      const input=path.join(ROOT,rel),output=path.join(ROOT,'build/geographic-strip/collision-cells');
+      const current=await packCityCollision(input,output,{check:true,encodeCollision});
+      if(check){if(!current.fresh){stale++;console.log('stale or missing: geographic collision cells');}continue;}
+      if(current.fresh&&!force)continue;
+      const result=await packCityCollision(input,output,{encodeCollision});
+      packed+=result.cells;before+=fs.statSync(input).size;after+=result.bytes;
+      console.log(`${rel}: ${result.records} records in ${result.cells} collision cells`);
+      continue;
+    }
     const src = path.join(ROOT, rel), out = path.join(ROOT, binPath(rel));
     const fresh = fs.existsSync(out) && inputs(rel).every((i) => fs.statSync(out).mtimeMs >= fs.statSync(path.join(ROOT, i)).mtimeMs);
     if (check) { if (!fresh) { stale++; console.log(`stale or missing: ${binPath(rel)}`); } continue; }

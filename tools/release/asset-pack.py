@@ -11,8 +11,7 @@ exactly that set, by the same rules the runtime code uses (the loaders named bes
   python3 tools/release/asset-pack.py stage    # list, then mirror the set into runtime-assets/ (tracked with Git LFS);
                                                # refuses while anything is missing or not optimized
 
---city-cells selects the approved spatial packages for migration checks/staging; the default remains combined until
-the runtime migration is complete. Cell manifests describe the exact optimized bytes selected for the release.
+Spatial packages are the default; --combined-city is retained for controlled migration comparisons. Cell manifests describe the exact optimized bytes selected for the release.
 
 Each runtime GLB ships as its meshopt-optimized copy (build/optimized/, installed by tools/optimize) stored at the
 ORIGINAL path: glbUrl() (src/work/OptimizedGlb.ts) returns the original URL when there is no optimized manifest, which a
@@ -69,7 +68,7 @@ def packed(path):
     return path[:-len('.json')] + '.bin'
 
 
-def runtime_files(city_cells=False):
+def runtime_files(city_cells=True):
     """(path, reason) for every runtime file the loaders ask for, GLBs included. A clone has the runtime set but not the
     optimizer's manifest or the JSON sources these rules read, so it keeps the committed list: a contributor's `stage`
     mirrors the files it was given."""
@@ -194,7 +193,7 @@ def sha256(path):
     return h.hexdigest()
 
 
-def listing(city_cells=False):
+def listing(city_cells=True):
     manifest = optimized_files()
     want = runtime_files(city_cells)
     files, missing = [], []
@@ -312,7 +311,7 @@ def stage(files, force=False):
 
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'list'
-    files, missing = listing('--city-cells' in sys.argv)
+    files, missing = listing('--combined-city' not in sys.argv)
     for path, why in missing:
         print(f'missing {path}  ({why})')
     bad = unoptimized(files)

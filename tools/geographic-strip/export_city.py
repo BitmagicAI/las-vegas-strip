@@ -54,7 +54,8 @@ for (cell,mat),(v,f) in groups.items():
   uv=me.uv_layers.new(name='Metre grid')
   for loop in me.loops:
    p=me.vertices[loop.vertex_index].co;uv.data[loop.index].uv=(p.x/4,-p.y/4)
-if '--cells' in sys.argv:
+# Spatial runtime export is the default; --combined is retained for controlled comparisons.
+if '--combined' not in sys.argv:
  # Split before compression: whole-city meshopt streams share buffer views across
  # cells, so copying those streams would duplicate unrelated geometry per file.
  # Keep the established group/material geometry and export each existing cell.

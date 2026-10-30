@@ -4,7 +4,7 @@ import {LodBake,parse,decodeLod} from '../../src/work/CityBakeLoad.ts';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {readBlocks,partitionLod,readBlockCells} from './lod-files.mjs';
 await MeshoptDecoder.ready;
-const bytes=fs.readFileSync('runtime-assets/baked/city-lod.bin');
+const bytes=fs.readFileSync(process.argv[2]??'build/baked/city-lod.bin');
 const source=parse(bytes);
 const files=[...partitionLod(bytes,'OpenStreetMap / geographic Strip',fs.existsSync('.bitmagic/bake/raw')?readBlockCells('.bitmagic/bake/raw'):undefined).values()].map(parse);
 const combined=LodBake.combine(files);

@@ -5,9 +5,9 @@ import {glbUrl} from './OptimizedGlb.js';
 import {loadGltf} from './Prefetch.js';
 import {runtimeUrl} from './RuntimeAssets.js';
 
-// Temporary A/B switch while migration evidence is collected; published behavior is unchanged.
-export const cityCellsEnabled=typeof location!=='undefined'&&['localhost','127.0.0.1'].includes(location.hostname)
-    &&new URLSearchParams(location.search).get('cityCells')==='on';
+// The combined path is retained only for local comparison against the pre-split assets.
+export const cityCellsEnabled=typeof location!=='undefined'&&!(
+    ['localhost','127.0.0.1'].includes(location.hostname)&&new URLSearchParams(location.search).get('cityCells')==='off');
 interface CellFile {cell:string;file:string}
 interface CellManifest {version:number;cellSize:number;cells:CellFile[];nodeOrder?:string[]}
 export interface CityCollision {
