@@ -1868,7 +1868,13 @@
       "name": "Red-D-Arc Highland",
       "status": "refinement-deferred",
       "record": "red-d-arc-highland.json"
+    },
+    {
+      "id": "lexi-westwood",
+      "name": "The Lexi Las Vegas",
+      "status": "active",
+      "record": "lexi-westwood.json"
     }
   ],
-  "active": "red-d-arc-highland"
+  "active": "lexi-westwood"
 }

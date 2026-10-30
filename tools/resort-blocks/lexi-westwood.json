@@ -1,0 +1,59 @@
+{
+  "id": "lexi-westwood",
+  "name": "The Lexi Las Vegas",
+  "status": "active",
+  "mappedIds": [
+    "way/276428190"
+  ],
+  "claim": {
+    "issue": 429,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/429"
+  },
+  "sources": [
+    {
+      "url": "https://thelexilasvegas.com/",
+      "accessed": "2026-10-29",
+      "observed": "Official exterior, arrival, lobby and overhead-pool gallery personally inspected. White multi-storey facade, dark Juliet railings and tall arched stairwell, tiled roof edges, low arrival wing; lobby seating, black/white floor, mezzanine stairs and foliage wall."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1437295,-115.1698746,20z/data=!3m1!1e3",
+      "accessed": "2026-10-29",
+      "observed": "Aerial personally inspected: long main building north of Westwood, low arrival wing southeast, west pool courtyard and south approach."
+    }
+  ],
+  "components": [
+    {
+      "id": "main-hotel-exterior",
+      "status": "pending"
+    },
+    {
+      "id": "arrival-wing",
+      "status": "pending"
+    },
+    {
+      "id": "pool-courtyard",
+      "status": "pending"
+    },
+    {
+      "id": "public-lobby",
+      "status": "pending"
+    },
+    {
+      "id": "public-routes",
+      "status": "pending"
+    }
+  ],
+  "uncertainDimensions": [
+    "Measured height, exact window spacing and full lobby floor plan not established; original source artwork will not be copied."
+  ],
+  "remaining": [
+    "Research street elevations and reconcile roof/wing dimensions.",
+    "Build original geometry and public lobby; inspect installed views and walk routes.",
+    "Finish nearby batch before single shared-city export/bake; include WebP optimization and all updated release gates."
+  ],
+  "nextPass": {
+    "priority": "Westwood/Highland grouped content pass",
+    "checkpoint": "Claim429 confirmed; branch task/ext-westwood-highland from ee968ce; no geometry edits yet. Adjacent Auto Collision Experts and Evenplay are research candidates only until claimed."
+  }
+}
