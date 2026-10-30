@@ -3,6 +3,7 @@ let root;
 const end=performance.now()+180000;
 while(performance.now()<end){root=scene.getObjectByName('OpenStreetMap / geographic Strip');if(root?.visible)break;await frame();}
 if(!root?.visible)throw new Error('City root not ready');
+const readyAt=performance.now();
 const views=[['front',[324,5,-3057],[284,8,-3083]]];
 const results=[];
 for(const [name,eye,target] of views){
@@ -36,5 +37,10 @@ if(capture){
   hashes[b.key+'/'+level]=(h>>>0).toString(16);
  }
  results.push({capture: capture.stats().find(p=>p.id===part.id),hashes,attributes});
+}
+if(window.__cellLoadMetrics){
+ const m=window.__cellLoadMetrics;
+ const summarize=list=>{const sorted=list.slice().sort((a,b)=>a-b);return {count:sorted.length,p50:sorted[Math.floor(sorted.length*.5)]??0,p95:sorted[Math.floor(sorted.length*.95)]??0,p99:sorted[Math.floor(sorted.length*.99)]??0,max:sorted.at(-1)??0};};
+ results.push({loadMetrics:{readyAt,framesBeforeReady:summarize(m.frames.filter(([t])=>t<=readyAt).map(([,d])=>d)),framesAfterReady:summarize(m.frames.filter(([t])=>t>readyAt).map(([,d])=>d)),longTasksBeforeReady:m.longTasks.filter(([t])=>t<=readyAt),resources:performance.getEntriesByType('resource').filter(e=>/geographic-strip|baked/.test(e.name)).map(e=>({name:e.name,duration:e.duration,bytes:e.transferSize}))}});
 }
 return results;

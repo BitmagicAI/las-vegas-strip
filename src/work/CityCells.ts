@@ -42,17 +42,22 @@ class CellCollision implements CityCollision {
 export async function loadCellCollision():Promise<CityCollision>{
     const directory='/build/geographic-strip/collision-cells',files=(await manifest(directory)).cells;
     const packs=new Map<number,CollisionPack>();
-    // Bounded parsing/decoding keeps the migration from launching 91 jobs at once.
-    for(let i=0;i<files.length;i++)packs.set(i,await loadCollisionPack(directory+'/'+files[i]!.file));
+    // Four requests overlap latency without starting all 91 decoders at once.
+    for(let i=0;i<files.length;i+=4){
+        const loaded=await Promise.all(files.slice(i,i+4).map(cell=>loadCollisionPack(directory+'/'+cell.file)));
+        loaded.forEach((pack,k)=>packs.set(i+k,pack));
+    }
     return new CellCollision(packs);
 }
 export async function loadCellVisuals():Promise<{scene:Group}>{
     const directory='/build/geographic-strip/cells',index=await manifest(directory),files=index.cells;
     if(!index.nodeOrder)throw new Error('City visual manifest lacks source node order');
     const scene=new Group();
-    for(const cell of files){
-        const gltf=await loadGltf(new GLTFLoader(),await glbUrl(directory+'/'+cell.file));
-        while(gltf.scene.children.length)scene.add(gltf.scene.children[0]!);
+    for(let i=0;i<files.length;i+=4){
+        const loaded=await Promise.all(files.slice(i,i+4).map(async cell=>
+            loadGltf(new GLTFLoader(),await glbUrl(directory+'/'+cell.file))));
+        // Promise.all retains manifest order regardless of request completion order.
+        for(const gltf of loaded)while(gltf.scene.children.length)scene.add(gltf.scene.children[0]!);
     }
     // Preserve Blender traversal order, including its natural ordering of signed cell names.
     const order=new Map<string,number>();

@@ -11,6 +11,9 @@ exactly that set, by the same rules the runtime code uses (the loaders named bes
   python3 tools/release/asset-pack.py stage    # list, then mirror the set into runtime-assets/ (tracked with Git LFS);
                                                # refuses while anything is missing or not optimized
 
+--city-cells selects the approved spatial packages for migration checks/staging; the default remains combined until
+the runtime migration is complete. Cell manifests describe the exact optimized bytes selected for the release.
+
 Each runtime GLB ships as its meshopt-optimized copy (build/optimized/, installed by tools/optimize) stored at the
 ORIGINAL path: glbUrl() (src/work/OptimizedGlb.ts) returns the original URL when there is no optimized manifest, which a
 clone does not have, so the compressed bytes load from the path the game asks for. A GLB whose source changed after it
@@ -66,7 +69,7 @@ def packed(path):
     return path[:-len('.json')] + '.bin'
 
 
-def runtime_files():
+def runtime_files(city_cells=False):
     """(path, reason) for every runtime file the loaders ask for, GLBs included. A clone has the runtime set but not the
     optimizer's manifest or the JSON sources these rules read, so it keeps the committed list: a contributor's `stage`
     mirrors the files it was given."""
@@ -81,6 +84,8 @@ def runtime_files():
     # GLBs: every runtime GLB the optimizer enumerated (tools/optimize/optimize-runtime-glbs.mjs walks the same loaders)
     # (the garden's public/foliage/*.glb are committed as their optimized copies: tools/optimize/foliage-trees.mjs)
     for path in runtime_glbs():
+        if path.startswith('build/geographic-strip/cells/') or (city_cells and path == 'build/geographic-strip/city.glb'):
+            continue
         add(path, 'runtime GLB (build/optimized/manifest.json)')
     # world.json assets served from build/ (doors in worldProfileData.doors)
     for a in load_json('src/work/world.json').get('assets', []):
@@ -90,8 +95,21 @@ def runtime_files():
     g = 'build/geographic-strip/'
     # GeographicCity.ts, Game.ts, SanctuaryJeep.ts (speed-map.bin: the road network and the Bellagio arrival roads,
     # baked), GeographicPassages.ts
-    for f in ['city-colliders.bin', 'speed-map.bin', 'access/manifest.bin', 'city.glb', 'detailed.glb']:
+    for f in ['speed-map.bin', 'access/manifest.bin', 'detailed.glb'] + ([] if city_cells else ['city-colliders.bin', 'city.glb']):
         add(g + f, 'GeographicCity / Game / SanctuaryJeep')
+    if city_cells:
+        for directory in [g + 'cells', g + 'collision-cells', 'build/baked/cells']:
+            add(directory + '/manifest.json', 'city cell manifest')
+            index = load_json(directory + '/manifest.json')
+            if index.get('version') != 1 or index.get('cellSize') != 800:
+                raise ValueError(f'Unsupported cell manifest: {directory}')
+            seen = set()
+            for cell in index['cells']:
+                name = cell['file']
+                if Path(name).name != name or name in seen:
+                    raise ValueError(f'Unsafe or duplicate cell file: {name}')
+                seen.add(name)
+                add(directory + '/' + name, 'city spatial package')
     access = load_json(g + 'access/manifest.json')
     for e in access.get('entries', access) if isinstance(access, dict) else access:
         add(f'{g}access/{e["id"]}.bin', 'GeographicPassages bridge concourse')
@@ -132,12 +150,31 @@ def runtime_files():
             add(path[:-4] + '.mesh-level.bin', 'HotelTemplates module levels')
     add('build/vehicles/afterlight-jeep.glb', 'SanctuaryJeep')
     # CityBakeLoad.ts: the city's baked distant LODs (tools/bake/bake-city.mjs)
-    add('build/baked/city-lod.bin', 'CityBakeLoad baked LODs')
+    if not city_cells:
+        add('build/baked/city-lod.bin', 'CityBakeLoad baked LODs')
     return want
 
 
 def source_for(path, manifest):
     """The bytes to ship for a runtime path: the optimized copy while it matches its source, else the original."""
+    if path in {'build/geographic-strip/cells/manifest.json',
+                'build/geographic-strip/collision-cells/manifest.json', 'build/baked/cells/manifest.json'}:
+        # Export manifests describe source bytes; releases ship the optimized bytes.
+        # Build a separate deterministic manifest without touching authoring inputs.
+        doc = load_json(path)
+        for cell in doc['cells']:
+            name = cell['file']
+            if Path(name).name != name:
+                raise ValueError(f'Unsafe cell filename: {name}')
+            source, _ = source_for(str(Path(path).parent / name), manifest)
+            cell['bytes'] = source.stat().st_size
+            cell['sha256'] = sha256(source)
+        data = (json.dumps(doc, indent=2) + '\n').encode()
+        dest = OUT_DIR / 'cell-manifests' / Path(path).relative_to('build')
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if not dest.exists() or dest.read_bytes() != data:
+            dest.write_bytes(data)
+        return dest, 'runtime cell manifest'
     e = manifest.get(path)
     src = ROOT / path
     if e and src.exists():
@@ -157,9 +194,9 @@ def sha256(path):
     return h.hexdigest()
 
 
-def listing():
+def listing(city_cells=False):
     manifest = optimized_files()
-    want = runtime_files()
+    want = runtime_files(city_cells)
     files, missing = [], []
     # the city bake must be made from the geometry being shipped. Only a full checkout can tell: a clone's build/ holds
     # the optimized copies at the original paths, so its inputs never hash as the bake's did; it keeps the committed bake
@@ -275,7 +312,7 @@ def stage(files, force=False):
 
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'list'
-    files, missing = listing()
+    files, missing = listing('--city-cells' in sys.argv)
     for path, why in missing:
         print(f'missing {path}  ({why})')
     bad = unoptimized(files)
