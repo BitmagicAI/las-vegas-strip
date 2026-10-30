@@ -59,6 +59,35 @@ def build(B):
      F.box('w26-frame-paint',(x,y,z+side*.23),(.055,1.35,.04))
      F.box('w26-vent-paint',(x,y-1.02,z+side*.14),(1.2,.46,.12))
      for row in range(4):F.box('w26-frame-paint',(x,y-1.19+row*.10,z+side*.22),(1.15,.025,.04))
+ # North end observed in February 2020 Street View (ba0gpHmaaTcW7rlwo1ugzg).
+ # Ochre blockwork, narrow stair glazing, small windows and service equipment.
+ # Positions/dimensions estimated; do not mirror this evidence onto unseen south end.
+ end=F.p(width/2,0,0); E=Frame(B,end[0],end[2],yaw+math.pi/2,y=0)
+ E.box('w26-ochre-stucco',(0,4.8,.035),(depth,9.6,.065))
+ # Shallow joints give the observed masonry coursing without separate block meshes.
+ for row in range(31):
+  yy=.15+row*.30
+  E.box('w26-vent-paint',(0,yy,.075),(depth,.012,.012))
+  for xx in np.arange(-depth/2+.30+(row%2)*.30,depth/2,.60):
+   E.box('w26-vent-paint',(xx,yy+.15,.075),(.012,.29,.012))
+ # Tall stair-window strip toward the street, with floor-level transoms.
+ E.box('w26-trim-paint',(-depth*.32,6.3,.13),(.78,5.85,.15))
+ E.box('w26-glass',(-depth*.32,6.3,.22),(.60,5.63,.04))
+ for yy in [3.55,6.4,9.05]:E.box('w26-frame-paint',(-depth*.32,yy,.26),(.64,.06,.04))
+ for yy in [4.65,7.7]:
+  E.box('w26-trim-paint',(-.2,yy,.12),(1.55,1.35,.13))
+  E.box('w26-glass',(-.2,yy,.21),(1.35,1.16,.04))
+  E.box('w26-frame-paint',(-.2,yy,.25),(.05,1.16,.04))
+ E.box('w26-frame-paint',(-.2,1.25,.13),(1.8,2.5,.15))
+ E.box('w26-trim-paint',(-.2,1.25,.22),(1.65,2.35,.04))
+ E.box('w26-frame-paint',(-.2,1.25,.26),(.05,2.35,.04))
+ E.box('w26-paving-concrete',(-.2,.12,.65),(2.6,.24,1.2),True)
+ # Freestanding screened utility cabinet and protective posts visible at this end.
+ E.box('w26-frame-paint',(0,.85,3.0),(2.0,1.7,1.25),True)
+ for xx in np.linspace(-.94,.94,19):E.box('w26-trim-paint',(xx,.85,3.65),(.045,1.5,.045))
+ E.box('w26-trim-paint',(0,1.73,3.0),(2.12,.08,1.36))
+ for xx in [-1.4,1.4]:
+  for zz in [2.0,4.0]:E.box('w26-trim-paint',(xx,.65,zz),(.09,1.3,.09),True)
  # Main arrival canopy, supports and closed glazing (interior not yet authored).
  z=depth/2
  F.box('w26-frame-paint',(0,1.55,z+.16),(4.2,3.1,.12),True)
