@@ -1,0 +1,183 @@
+{
+  "id": "westwood-2601",
+  "name": "2601 Westwood and separate south building",
+  "status": "queued",
+  "authoringStatus": "source-only; installation deferred during PR437",
+  "mappedIds": [
+    "way/1018431840",
+    "way/276428208"
+  ],
+  "claim": {
+    "issue": 435,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/435",
+    "pullRequest": 438
+  },
+  "sources": [
+    {
+      "url": "https://lvbuildings.com/2601-westwood-property/",
+      "accessed": "2026-10-30",
+      "observed": "Owner property identity and aerial; yellow overlay obscures colours."
+    },
+    {
+      "url": "https://lvbuildings.com/wp-content/uploads/2023/08/Hotel-Property-Info.pdf",
+      "accessed": "2026-10-30",
+      "imageDate": "2023 brochure",
+      "observed": "236 x 41 ft hotel plan; 100 ft pylon with 40 x 30 ft faces. Lobby/bar illustrations labelled proposed, not built interior evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1423359,-115.1714865,3a,75y,309.03h,90t/data=!3m4!1e1!3m2!1stnZRf7widER9VhzM2QIiIg!2e0",
+      "accessed": "2026-10-30",
+      "imageDate": "November 2021",
+      "observed": "Cream/salmon frontage, canopy/ramp, palms, pool wall and separate grey south building."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1426339,-115.1712835,3a,75y,306h,90t/data=!3m4!1e1!3m2!1sba0gpHmaaTcW7rlwo1ugzg!2e0",
+      "accessed": "2026-10-30",
+      "imageDate": "February 2020",
+      "observed": "North ochre masonry end, narrow stair glazing, small windows, service doors and utility cabinet."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped centre/heading retained; reference narrows main bar from coarse footprint. Installed neighbour/road alignment unverified.",
+    "Heights, bay spacing, pool/court dimensions, plants and pylon footing are inferred.",
+    "Rear/south elevation repetition uncorroborated; separate south building ownership unknown."
+  ],
+  "components": [
+    {
+      "id": "main-hotel-exterior",
+      "status": "source-authored"
+    },
+    {
+      "id": "north-service-end",
+      "status": "source-authored"
+    },
+    {
+      "id": "arrival-canopy-ramp",
+      "status": "source-authored"
+    },
+    {
+      "id": "pool-court-gate",
+      "status": "source-authored"
+    },
+    {
+      "id": "pylon",
+      "status": "source-authored"
+    },
+    {
+      "id": "frontage-palms",
+      "status": "source-authored"
+    },
+    {
+      "id": "south-building-exterior",
+      "status": "source-authored"
+    },
+    {
+      "id": "public-interior",
+      "status": "not-authored",
+      "reason": "Only proposed layouts found; no current as-built interior evidence."
+    }
+  ],
+  "views": [
+    {
+      "id": "front",
+      "eye": [
+        166,
+        6,
+        -2900
+      ],
+      "target": [
+        119,
+        5,
+        -2946
+      ],
+      "status": "source-only",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/front.png"
+    },
+    {
+      "id": "roof",
+      "eye": [
+        185,
+        70,
+        -2870
+      ],
+      "target": [
+        110,
+        4,
+        -2925
+      ],
+      "status": "source-only",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/roof.png"
+    },
+    {
+      "id": "annex",
+      "eye": [
+        135,
+        6,
+        -2915
+      ],
+      "target": [
+        87,
+        5,
+        -2887
+      ],
+      "status": "source-only",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/annex.png"
+    },
+    {
+      "id": "north-end",
+      "eye": [
+        162.302,
+        5,
+        -2978.071
+      ],
+      "target": [
+        141.245,
+        5,
+        -2973.11
+      ],
+      "status": "source-only",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/north-end.png"
+    },
+    {
+      "id": "pool-gate",
+      "eye": [
+        129.908,
+        3.5,
+        -2911.17
+      ],
+      "target": [
+        112.707,
+        1,
+        -2917.66
+      ],
+      "status": "source-only",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/pool-gate.png"
+    }
+  ],
+  "evidence": {
+    "sourceClearance": "docs/project-records/westwood-2601/source-route-report.json",
+    "checkpoint": "docs/project-records/westwood-2601/checkpoint.md"
+  },
+  "checks": {
+    "sourceFloorSamples": 214,
+    "sourceCollisionTriangles": 581,
+    "sourceTriangles": 65119,
+    "export": "passed",
+    "levelOptimization": "passed",
+    "webp": "passed; textureless",
+    "installation": "not run",
+    "installedWalk": "not run",
+    "runtimePerformance": "not measured"
+  },
+  "remaining": [
+    "Finish reference review for unseen elevations; do not invent a public interior from proposed plans.",
+    "After PR437 permits integration: verify mapped alignment, remove only claimed shells, install optimized geometry and targeted collision, regenerate shared files once.",
+    "Capture all matching before/after views; check cameras against retained neighbouring geometry.",
+    "Run complete integration/release gates and installed walks/performance; source renders do not count as installed evidence."
+  ],
+  "nextPass": {
+    "priority": "Reference review and integration after cell split",
+    "checkpoint": "Two source buildings with exterior/court geometry, source-only checks; no runtime or LFS changes."
+  }
+}
