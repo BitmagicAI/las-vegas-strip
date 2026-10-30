@@ -1,0 +1,35 @@
+# Decision: split shared city assets by existing 800 m cells
+
+Status: **approved direction, implementation deferred until Westwood/Highland PR #433 merges**. Owner decision: 2026-10-29. No infrastructure implementation is included in that building PR.
+
+## Decision and scope
+
+The earlier proposal for an immutable base, ownership index, replacement manifest, runtime exclusion and new local LOD system is **not approved**. Do not implement it.
+
+Instead, split the shared assets along the 800 m cells already used by city.glb:
+
+- Export one city GLB per cell, and partition city-colliders.bin and city-lod.bin along the same cells.
+- Preserve the existing face-removal installers, cell/material batching, shaders and bake logic. A building change should rewrite only the cells it touches.
+- Preserve unchanged cell bytes exactly so Git LFS stores no new object for them. Prove this with a rebuild that changes nothing.
+
+The owner's sizing at approval was about 90 cells: largest compressed GLB 8.5 MB, median 0.75 MB, compared with 104 MB for the combined file. These are planning figures to verify during implementation, not measured results of a completed split.
+
+## Sequence and coordination
+
+1. Finish and merge the Westwood/Highland building batch using the existing pipeline, including its current shared files and verification gates.
+2. Start a separate infrastructure task and PR from the then-current origin/main after #433 merges. Follow the repository claim and PR process.
+3. While the split PR is open, continue researching and authoring buildings, but **do not install those buildings into the shared city files**: the installers and split both rewrite those files.
+4. Resume installations against the merged split pipeline once it is verified and merged.
+
+## Required evidence before ready
+
+- A no-change rebuild produces byte-identical cell assets. Compare hashes and report any non-cell metadata changes separately.
+- Identical named cameras produce the same pictures, including near/far transitions. Collision and actual walking/driving routes remain equivalent.
+- No new stalls. Compare matching performance runs and report variability, not only the best run.
+- A cold load of the published game is no slower. Many small requests may require grouping cells; measure before choosing grouping and retain the cell-local change benefit. The present task does not authorize publishing; arrange published validation with the owner when needed.
+- Report the new Git LFS bytes caused by one representative building change before and after splitting, separately from the one-time migration cost.
+- Run the existing repository release gates, including optimization/WebP, current bake, asset-pack validation and fresh-clone smoke/walk checks.
+
+## Current content-batch baseline
+
+Westwood/Highland's staged runtime changes total **147,718,816 new LFS bytes**, of which **4,307,668 bytes** are its two buildings' own models and collision. This is a two-building batch baseline, not the required controlled one-building before/after experiment. Its shared city GLB was regenerated once. The split has not been implemented or benchmarked.

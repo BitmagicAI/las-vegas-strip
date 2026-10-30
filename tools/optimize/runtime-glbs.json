@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-29T16:19:31.153Z",
- "totalBytes": 3604619312,
- "count": 782,
+ "generated": "2026-10-30T01:02:43.400Z",
+ "totalBytes": 3617028616,
+ "count": 785,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -43,7 +43,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts",
    "when": "boot",
-   "bytes": 346938352,
+   "bytes": 346935936,
    "preset": "level",
    "overrides": []
   },
@@ -3230,6 +3230,33 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
    "bytes": 744884,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/lexi-westwood-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 10193528,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/lexi-westwood-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 599876,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/ace-westwood-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 1618316,
    "preset": "level",
    "overrides": []
   },
