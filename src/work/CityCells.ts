@@ -57,7 +57,9 @@ export async function loadCellVisuals():Promise<{scene:Group}>{
     // Preserve Blender traversal order, including its natural ordering of signed cell names.
     const order=new Map<string,number>();
     for(let i=0;i<index.nodeOrder.length;i++)order.set(index.nodeOrder[i]!,i);
-    for(const child of scene.children)if(!order.has(child.name))throw new Error('Unknown city node '+child.name);
-    scene.children.sort((a,b)=>order.get(a.name)!-order.get(b.name)!);
+    // GLTFLoader sanitizes names; extras retain the exporter's exact cell/material identity.
+    const key=(child:import('three').Object3D)=>`OSM ${child.userData.osmCell} ${child.userData.osmMaterial}`;
+    for(const child of scene.children)if(!order.has(key(child)))throw new Error('Unknown city node '+key(child));
+    scene.children.sort((a,b)=>order.get(key(a))!-order.get(key(b))!);
     return {scene};
 }
