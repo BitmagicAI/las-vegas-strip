@@ -67,9 +67,9 @@ def build(B):
  # Shallow joints give the observed masonry coursing without separate block meshes.
  for row in range(31):
   yy=.15+row*.30
-  E.box('w26-vent-paint',(0,yy,.075),(depth,.012,.012))
+  B.face('w26-vent-paint',[E.p(-depth/2,yy-.006,.081),E.p(depth/2,yy-.006,.081),E.p(depth/2,yy+.006,.081),E.p(-depth/2,yy+.006,.081)])
   for xx in np.arange(-depth/2+.30+(row%2)*.30,depth/2,.60):
-   E.box('w26-vent-paint',(xx,yy+.15,.075),(.012,.29,.012))
+   B.face('w26-vent-paint',[E.p(xx-.006,yy+.005,.081),E.p(xx+.006,yy+.005,.081),E.p(xx+.006,yy+.295,.081),E.p(xx-.006,yy+.295,.081)])
  # Tall stair-window strip toward the street, with floor-level transoms.
  E.box('w26-trim-paint',(-depth*.32,6.3,.13),(.78,5.85,.15))
  E.box('w26-glass',(-depth*.32,6.3,.22),(.60,5.63,.04))
@@ -182,7 +182,8 @@ def build(B):
      G.box('w26-glass',(x+offset,y,-.18),(1.37,1.22,.045))
      G.box('w26-frame-paint',(x+offset,y,-.22),(.055,1.22,.045))
  bounds=unary_union([p,court,annex,sign_bounds]).bounds
- routes=[dict(name='Main arrival ramp',points=[F.p(0,.12,z+12),F.p(0,.22,z+1)])]
- return dict(key=KEY,name='2601 Westwood — source study',center=[center.x,4,center.y],bounds=list(bounds),structural=True,hotelSources=[],exteriorOnly=True,portals=[],zones=[],lights=[],routes=routes,sourceOnly=True,remaining=['Installed pool gate and wall verification','Additional annex elevations','Public interior','Optimization and installed validation'])
+ routes=[dict(name='Main arrival ramp',points=[F.p(0,.12,z+12),F.p(0,.22,z+1)]),dict(name='Pool gate to hotel deck',points=[F.p(-17,.12,z+19.0),F.p(-15,.12,z+2)])]
+ gate=dict(centre=F.p(-17,.12,z+19.5),tangent=[-20/math.sqrt(425),5/math.sqrt(425)],width=1.5)
+ return dict(key=KEY,name='2601 Westwood — source study',center=[center.x,4,center.y],bounds=list(bounds),structural=True,hotelSources=[],exteriorOnly=True,portals=[],zones=[],lights=[],routes=routes,poolGate=gate,sourceOnly=True,remaining=['Installed pool gate and wall verification','Additional annex elevations','Public interior','Optimization and installed validation'])
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

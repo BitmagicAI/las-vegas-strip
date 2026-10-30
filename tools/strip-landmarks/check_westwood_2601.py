@@ -26,4 +26,30 @@ for i,x in enumerate(np.linspace(-33,-9,49)):
  hits=ray(np.array([xz[0],2,xz[1]]),np.array([0,-1,0]))
  if not np.any((hits>=1.7)&(hits<=2)):deck_missing.append(i)
 report['hotelDeckSamples']=49;report['hotelDeckMissingFloor']=deck_missing
+# Check a 0.6m-wide body through the gate and along the dry deck route.
+# Exterior street support belongs to the city and is checked only after installation.
+pool_a,pool_b=np.array(meta['routes'][1]['points']); delta=pool_b-pool_a
+pool_dist=np.linalg.norm(delta);direction=delta/pool_dist
+across=np.array([direction[2],0,-direction[0]])
+pool_missing=[];pool_blocked=[]
+for lane in [-.3,0,.3]:
+ start=pool_a+across*lane;end=pool_b+across*lane
+ for i,t in enumerate(np.linspace(0,1,40)):
+  point=start+(end-start)*t;hits=ray(point+[0,2,0],np.array([0,-1,0]))
+  if not np.any(abs(hits-2)<.05):pool_missing.append([lane,i])
+ for height in [.35,1.0,1.7]:
+  hits=ray(start+[0,height,0],direction)
+  if np.any(hits<pool_dist):pool_blocked.append([lane,height])
+# Cross the wall opening at three heights, including the full body width.
+gate=np.array(meta['poolGate']['centre'])
+t=meta['poolGate']['tangent'];tangent_xz=local_x*t[0]+local_z*t[1]
+tangent=np.array([tangent_xz[0],0,tangent_xz[1]])
+normal=np.cross(tangent,[0,1,0]);gate_blocked=[]
+for lane in [-.3,0,.3]:
+ for height in [.35,1,1.7]:
+  start=gate+tangent*lane-normal*.65+[0,height,0]
+  hits=ray(start,normal)
+  if np.any(hits<1.3):gate_blocked.append([lane,height])
+report.update(poolDeckSamples=120,poolDeckMissingFloor=pool_missing,poolDeckObstructions=pool_blocked,poolGateObstructions=gate_blocked)
+assert not pool_missing and not pool_blocked and not gate_blocked
 Path('.bitmagic/w26-source-route-report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report));assert report['finite'] and not missing and not blocked and report['maxSampleStep']<.02 and not deck_missing
