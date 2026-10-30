@@ -1,6 +1,6 @@
 # Decision: split shared city assets by existing 800 m cells
 
-Status: **approved direction, implementation deferred until Westwood/Highland PR #433 merges**. Owner decision: 2026-10-29. No infrastructure implementation is included in that building PR.
+Status: **implementation started in task #436 from main 288e2ac after PR #433 merged**. Owner decision: 2026-10-29; start authorized 2026-10-30. No infrastructure implementation was included in the building PR.
 
 ## Decision and scope
 
@@ -33,3 +33,9 @@ The owner's sizing at approval was about 90 cells: largest compressed GLB 8.5 MB
 ## Current content-batch baseline
 
 Westwood/Highland's staged runtime changes total **147,718,816 new LFS bytes**, of which **4,307,668 bytes** are its two buildings' own models and collision. This is a two-building batch baseline, not the required controlled one-building before/after experiment. Its shared city GLB was regenerated once. The split has not been implemented or benchmarked.
+
+## Implementation checkpoint — 2026-10-30
+
+Claim #436 confirmed for janiverse; branch `task/infra-city-cell-split` starts from `288e2ac`. The read-only baseline audit (`tools/city-cells/audit.py`) confirms 92 existing cell keys, 921 mesh nodes and 5,946,306 triangles in the optimized 109,697,888-byte city GLB. SHA-256: `38e14b86f84980ae8efcaa5697b82c64f9bb4febd67affae7c8c87ec6fb07511`. Detailed local baseline: `.bitmagic/city-cells/baseline.json`.
+
+Collision residency is currently 160 m; preserve those individual records while packaging them under 800 m parent cells. Keep the special `base` visual cell explicit. LOD data also contains other city parts: preserve their part/block identifiers and existing simplification rules. Runtime loading, cell export, collision/LOD partitioning, deterministic rebuild tests and performance comparisons are pending. No runtime assets have changed.
