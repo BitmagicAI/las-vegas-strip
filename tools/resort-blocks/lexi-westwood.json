@@ -54,7 +54,7 @@
   ],
   "nextPass": {
     "priority": "Westwood/Highland grouped content pass",
-    "checkpoint": "All release gates, seven inspected installed views and 40 actual walk segments pass. Two final performance runs are variable and slower than baseline; investigate before ready. Approved cell split is deferred until PR433 merges; rejected immutable-base design must not be implemented."
+    "checkpoint": "PR433 installed content and release checks pass; three performance runs remain confounded by concurrent character rendering. Latest medians17.0\u201321.9ms Lexi and16.5\u201327.2ms ACE. No content changes needed on evidence so far; obtain controlled comparison before ready. Cell split only after merge."
   },
   "draftPullRequest": "https://github.com/BitmagicAI/las-vegas-strip/pull/433",
   "sourcePass": {
@@ -158,7 +158,8 @@
     "lfsBytes": 147718816,
     "buildingLfsBytes": 4307668,
     "performanceFirstFinal": "build/city-exteriors/westwood-final/results.json",
-    "performanceConcern": "Repeat remains variable: Lexi median 17.3\u201320.6ms, p95 22.5\u201328ms; ACE median 26.6\u201359ms, p95 30.7\u201370.7ms. Baseline exterior medians ~16.7ms. Cause unresolved; no stable 60fps claim. PR remains draft. Follow-up process inspection found concurrent character-forger Blender GPU QA and Trellis worker jobs; possible contention confound, not proof of cause. Do not stop other-session jobs.",
-    "performanceRepeat": "build/city-exteriors/westwood-performance-repeat/results.json"
+    "performanceConcern": "Repeat remains variable: Lexi median 17.3\u201320.6ms, p95 22.5\u201328ms; ACE median 26.6\u201359ms, p95 30.7\u201370.7ms. Baseline exterior medians ~16.7ms. Cause unresolved; no stable 60fps claim. PR remains draft. Follow-up process inspection found concurrent character-forger Blender GPU QA and Trellis worker jobs; possible contention confound, not proof of cause. Do not stop other-session jobs. Third run: Lexi medians 17.0\u201321.9ms, ACE 16.5\u201327.2ms; p95 up to37.5ms. Concurrent rendering restarted during run. Preserve evidence; defer additional timing until machine contention subsides or a controlled baseline comparison is available.",
+    "performanceRepeat": "build/city-exteriors/westwood-performance-repeat/results.json",
+    "performanceThird": "build/city-exteriors/westwood-performance-quieter/results.json"
   }
 }
