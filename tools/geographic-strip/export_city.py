@@ -54,7 +54,27 @@ for (cell,mat),(v,f) in groups.items():
   uv=me.uv_layers.new(name='Metre grid')
   for loop in me.loops:
    p=me.vertices[loop.vertex_index].co;uv.data[loop.index].uv=(p.x/4,-p.y/4)
-bpy.ops.wm.save_as_mainfile(filepath=str((OUT/'city.blend').resolve()))
-bpy.ops.export_scene.gltf(filepath=str((OUT/'city.glb').resolve()),export_format='GLB',export_yup=True,export_lights=False,export_cameras=False,export_extras=True)
-(OUT/'city-version.json').write_text(json.dumps(dict(revision=hashlib.sha256((OUT/'city.glb').read_bytes()).hexdigest()[:16],batches=len(groups))))
-print('CITY EXPORTED',len(groups),'batches',flush=True)
+if '--cells' in sys.argv:
+ # Split before compression: whole-city meshopt streams share buffer views across
+ # cells, so copying those streams would duplicate unrelated geometry per file.
+ # Keep the established group/material geometry and export each existing cell.
+ cell_out=OUT/'cells';cell_out.mkdir(parents=True,exist_ok=True)
+ cells=defaultdict(list)
+ for obj in bpy.context.scene.objects:
+  cells[obj['osmCell']].append(obj)
+ manifest=[]
+ for cell,objects in sorted(cells.items()):
+  bpy.ops.object.select_all(action='DESELECT')
+  for obj in objects:obj.select_set(True)
+  name=('base' if cell=='base' else 'cell-'+cell.replace(',','_'))+'.glb'
+  target=cell_out/name
+  bpy.ops.export_scene.gltf(filepath=str(target.resolve()),use_selection=True,export_format='GLB',export_yup=True,export_lights=False,export_cameras=False,export_extras=True)
+  data=target.read_bytes()
+  manifest.append(dict(cell=cell,file=name,sha256=hashlib.sha256(data).hexdigest(),bytes=len(data)))
+ (cell_out/'manifest.json').write_text(json.dumps(dict(version=1,cellSize=800,cells=manifest),indent=2)+'\n')
+ print('CITY CELLS EXPORTED',len(cells),'cells',len(groups),'batches',flush=True)
+else:
+ bpy.ops.wm.save_as_mainfile(filepath=str((OUT/'city.blend').resolve()))
+ bpy.ops.export_scene.gltf(filepath=str((OUT/'city.glb').resolve()),export_format='GLB',export_yup=True,export_lights=False,export_cameras=False,export_extras=True)
+ (OUT/'city-version.json').write_text(json.dumps(dict(revision=hashlib.sha256((OUT/'city.glb').read_bytes()).hexdigest()[:16],batches=len(groups))))
+ print('CITY EXPORTED',len(groups),'batches',flush=True)

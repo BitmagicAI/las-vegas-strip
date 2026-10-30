@@ -39,3 +39,9 @@ Westwood/Highland's staged runtime changes total **147,718,816 new LFS bytes**, 
 Claim #436 confirmed for janiverse; branch `task/infra-city-cell-split` starts from `288e2ac`. The read-only baseline audit (`tools/city-cells/audit.py`) confirms 92 existing cell keys, 921 mesh nodes and 5,946,306 triangles in the optimized 109,697,888-byte city GLB. SHA-256: `38e14b86f84980ae8efcaa5697b82c64f9bb4febd67affae7c8c87ec6fb07511`. Detailed local baseline: `.bitmagic/city-cells/baseline.json`.
 
 Collision residency is currently 160 m; preserve those individual records while packaging them under 800 m parent cells. Keep the special `base` visual cell explicit. LOD data also contains other city parts: preserve their part/block identifiers and existing simplification rules. Runtime loading, cell export, collision/LOD partitioning, deterministic rebuild tests and performance comparisons are pending. No runtime assets have changed.
+
+### Export prototype verified — 2026-10-30
+
+`export_city.py --cells --preserve-surfaces` now exports the existing batches into separate GLBs without modifying the combined runtime files. Two Blender runs produced identical hashes for all 92 source GLBs. This is pre-optimization evidence; optimized no-op hashes and render equivalence remain pending. Splitting after whole-city compression was rejected during local prototyping because shared buffer streams duplicated unrelated data.
+
+`tools/city-cells/pack-collision.mjs` packages the unchanged 160 m records under 91 parent cells using the existing codec. Two runs produced identical files: 13,056,416 bytes in total. `check-collision.mjs` verifies all 1,516 records against the committed collision pack: exact decoded positions and the same ordered, oriented triangles. The codec may cyclically rotate a triangle at stream boundaries, without changing winding or geometry. Actual runtime walking is still pending. No LFS assets or runtime loaders have changed.
