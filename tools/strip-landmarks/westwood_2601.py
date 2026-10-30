@@ -76,7 +76,7 @@ def build(B):
   F.box('w26-ochre-stucco',(x,.48,z+7),( .35,.95,11.7),True)
   F.box('w26-trim-paint',(x,.98,z+7),(.46,.10,11.85))
  # Existing irregular pool, positioned from the brochure site plan; no proposed bar.
- court=F.poly([(-35,z+.5),(-7,z+.5),(-7,z+17),(-27,z+22),(-35,z+22)])
+ court=F.poly([(-35,z-.05),(-7,z-.05),(-7,z+17),(-27,z+22),(-35,z+22)])
  pool=F.poly([(-29,z+5),(-22,z+5),(-21,z+6),(-24,z+12),(-24,z+19),(-27,z+20),(-30,z+19),(-30,z+6)])
  B.planar('w26-paving-concrete',court.difference(pool.buffer(.28)),.12,True)
  B.planar('w26-pool-tile',pool.buffer(.28).difference(pool),.15,True)
@@ -84,7 +84,7 @@ def build(B):
  B.shell(pool,-1.35,.15,'w26-pool-tile',roof=False)
  B.planar('w26_pool',pool,.02)
  # Close the court perimeter, leaving a 1.5 m gate opening on its street edge.
- court_ring=[(-35,z+.5),(-7,z+.5),(-7,z+17),(-27,z+22),(-35,z+22),(-35,z+.5)]
+ court_ring=[(-35,z-.05),(-7,z-.05),(-7,z+17),(-27,z+22),(-35,z+22),(-35,z-.05)]
  for edge,(a,b) in enumerate(zip(court_ring, court_ring[1:])):
   if edge==0:continue  # Hotel elevation bounds the rear of the court.
   pa,pb=F.p(a[0],0,a[1]),F.p(b[0],0,b[1]);dx,dz=pb[0]-pa[0],pb[2]-pa[2]
@@ -126,6 +126,6 @@ def build(B):
      G.box('w26-frame-paint',(x+offset,y,-.22),(.055,1.22,.045))
  bounds=unary_union([p,court,annex]).bounds
  routes=[dict(name='Main arrival ramp',points=[F.p(0,.12,z+12),F.p(0,.22,z+1)])]
- return dict(key=KEY,name='2601 Westwood — source study',center=[center.x,4,center.y],bounds=list(bounds),structural=True,hotelSources=[],exteriorOnly=True,portals=[],zones=[],lights=[],routes=routes,sourceOnly=True,remaining=['Pool wall connections and gates','Additional annex elevations','Public interior','Optimization and installed validation'])
+ return dict(key=KEY,name='2601 Westwood — source study',center=[center.x,4,center.y],bounds=list(bounds),structural=True,hotelSources=[],exteriorOnly=True,portals=[],zones=[],lights=[],routes=routes,sourceOnly=True,remaining=['Installed pool gate and wall verification','Additional annex elevations','Public interior','Optimization and installed validation'])
 if __name__=='__main__':
  B=Meshes();m=build(B);B.save_all();(OUT/(KEY+'-metadata.json')).write_text(json.dumps(m,indent=2)+'\n');print(KEY,sum(len(g['faces']) for g in B.groups.values()),'triangles')

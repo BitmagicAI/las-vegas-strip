@@ -17,11 +17,11 @@ The brochure page 3 visibly specifies **236 by 41 feet** (71.933 by 12.497 metre
 The original plan labels the central ground-floor lobby as proposed. It therefore does not establish a built public interior. No speculative public lobby or proposed restaurant has been added. Further current/as-built interior evidence is needed.
 
 ### Local checks
-- Source generator: PASS, 54,379 triangles, no numerical warning.
+- Source generator: PASS, 54,403 triangles, no numerical warning.
 - Blender GLB export: PASS.
 - Front/roof/annex source renders personally inspected. Initial crossed roof ribs were corrected with shared inset-corner hip geometry, then the annex render rechecked.
 - Source collision: 353 triangles; 45 arrival-ramp floor samples have support; no obstruction at body height; largest adjacent height change 0.003m. This is source geometry evidence, not an installed walk.
-- Level optimization: PASS, approximately 5.19 MiB to 2.03 MiB. WebP pass invoked; no embedded textures to convert. Installer dry-run selects the candidate successfully.
+- Level optimization: PASS, approximately 5.20 MiB to 2.03 MiB. WebP pass invoked; no embedded textures to convert. Installer dry-run selects the candidate successfully.
 - No actual optimized installation: the old branch installer auto-stages the city-wide runtime set, so it is deferred until infrastructure coordination. No shared city files or runtime snapshots changed. Git LFS bytes added: zero.
 
 ## Remaining
@@ -30,3 +30,8 @@ The original plan labels the central ground-floor lobby as proposed. It therefor
 - Confirm the identity/operation of the south building; ownership or hotel affiliation is not asserted.
 - Public interior only with current/as-built evidence (the brochure is not sufficient).
 - Optimized installation, targeted collision replacement, route integration, matching front-first probes, full PR gates, current city bake and LFS accounting after infrastructure coordination. PR remains draft.
+
+### Deck-edge regression pass
+The previous courtyard polygon stopped 0.50m short of the hotel wall. A new source check reproduced 49 missing floor samples along this edge before the fix. The deck now overlaps the wall by 0.05m; all 49 samples pass, alongside the original 45 ramp samples and body-height clearance. The repeatable check is `tools/strip-landmarks/check_westwood_2601.py`. Export, roof source render and level/WebP optimizer were repeated successfully after the correction.
+
+Added `tools/city-exteriors/probe-westwood-2601.js` with matching front/roof/annex views. Each camera position was checked against mapped building footprints and heights; none lies within a mapped building. This does not replace an actual installed capture/occlusion check. The probe has not been run against installed Westwood content.
