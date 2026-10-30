@@ -57,6 +57,11 @@ function resolveList() {
   const add = (rel, cls, loader, when, extra = {}) => { if (!exists(rel)) { list.push({ rel, cls, loader, when, missing: true }); return; } list.push({ rel, cls, loader, when, ...extra }); };
   // GeographicCity
   add('build/geographic-strip/city.glb', 'level', 'src/work/GeographicCity.ts', 'boot');
+  // Opt-in while the cell migration is being verified; retain the existing runtime set.
+  if (flag('city-cells')) {
+    for (const cell of readJson('build/geographic-strip/cells/manifest.json').cells)
+      add(`build/geographic-strip/cells/${cell.file}`, 'level', 'src/work/GeographicCity.ts (cell migration)', 'boot');
+  }
   // MeshLevel (Game.ts)
   add('build/geographic-strip/detailed.glb', 'level', 'src/work/Game.ts -> engine MeshLevel', 'boot');
   // StripLandmarks: base + key + -exterior.glb (boot) / -interior.glb (streamed on approach)

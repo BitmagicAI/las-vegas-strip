@@ -45,3 +45,9 @@ Collision residency is currently 160 m; preserve those individual records while 
 `export_city.py --cells --preserve-surfaces` now exports the existing batches into separate GLBs without modifying the combined runtime files. Two Blender runs produced identical hashes for all 92 source GLBs. This is pre-optimization evidence; optimized no-op hashes and render equivalence remain pending. Splitting after whole-city compression was rejected during local prototyping because shared buffer streams duplicated unrelated data.
 
 `tools/city-cells/pack-collision.mjs` packages the unchanged 160 m records under 91 parent cells using the existing codec. Two runs produced identical files: 13,056,416 bytes in total. `check-collision.mjs` verifies all 1,516 records against the committed collision pack: exact decoded positions and the same ordered, oriented triangles. The codec may cyclically rotate a triangle at stream boundaries, without changing winding or geometry. Actual runtime walking is still pending. No LFS assets or runtime loaders have changed.
+
+### LOD and optimization checkpoint — 2026-10-30
+
+`tools/city-cells/lod-files.mjs` partitions the geographic VLOD blocks without decoding/re-simplifying them. All 631 existing blocks retain their bytes; repeated packaging is identical, and a simulated single-city-block change affects only its cell file (`test-lod-files.mjs`: PASS). The prototype retains non-geographic parts together in `other-parts.bin`; their spatial packaging still needs resolution before final integration.
+
+All 92 cell GLBs passed the existing level optimizer: combined candidates 109,926,564 bytes. The WebP pass was invoked and correctly skipped these textureless files. Candidates are not installed or staged. Runtime loaders, optimized no-op rebuild, render equivalence, release checks, cold-load/stall measurements and controlled building-change LFS evidence remain pending.
