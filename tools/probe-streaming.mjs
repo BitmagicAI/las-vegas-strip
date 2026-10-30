@@ -5,6 +5,7 @@
 // player sees without a message.
 //
 //   node tools/probe-streaming.mjs [--name base] [--speed 20] [--from-z -240] [--to-z 1240] [--laps 1]
+//        [--lightweight] (skip renderer/GPU method instrumentation)
 //        [--reverse] [--profile] [--viewport 960x540] [--query probe] [--max-seconds 240]
 //
 // A lap is one pass of the route; --laps 2 drives there and back, which is the case that matters most:
@@ -24,6 +25,7 @@ const opt=(name,fallback)=>{const i=argv.indexOf('--'+name);return i<0?fallback:
 const name=String(opt('name','run')),speed=Number(opt('speed',20)),fromZ=Number(opt('from-z',-240)),toZ=Number(opt('to-z',1240));
 const jeepMode=opt('jeep',false)===true,laps=jeepMode?1:Number(opt('laps',1)),reverse=opt('reverse',false)===true,profile=opt('profile',false)===true,maxSeconds=Number(opt('max-seconds',240));
 const [vw,vh]=String(opt('viewport','960x540')).split('x').map(Number);
+const lightweight=opt('lightweight',false)===true;
 const query=String(opt('query','probe')),traceGc=opt('trace-gc',false)===true;
 const port=JSON.parse(fs.readFileSync('.bitmagic/dev.json','utf8')).gamePort;
 const out=path.join('build/probe/streaming',name);fs.mkdirSync(out,{recursive:true});
@@ -43,7 +45,7 @@ try {
   const page=await context.newPage();
   page.on('pageerror',e=>errors.push(String(e)));
   page.on('console',m=>{const s=m.text();logs.push(s);if(m.type()==='error')errors.push(s);});
-  await page.addInitScript(()=>{
+  await page.addInitScript((lightweight)=>{
     Object.defineProperty(Element.prototype,'requestPointerLock',{configurable:true,writable:true,value:()=>Promise.resolve()});
     const P=window.__probe={gaps:[],longtasks:[],loaf:[],logs:[],frames:0,last:performance.now(),maxGap:0,sum:0};
     const loop=t=>{const gap=t-P.last;P.last=t;P.frames++;P.sum+=gap;if(gap>P.maxGap)P.maxGap=gap;if(gap>50)P.gaps.push({t:Math.round(t),gap:Math.round(gap)});requestAnimationFrame(loop);};
@@ -67,10 +69,11 @@ try {
     }catch{}
     // Time every GPU API call the renderer makes, so a stall can be split into JS work and GPU-object work.
     const G=window.__gpu={};
+    if(lightweight)return;
     const wrap=(proto,names)=>{if(!proto)return;for(const n of names){const f=proto[n];if(typeof f!=='function')continue;proto[n]=function(...a){const t=performance.now();try{return f.apply(this,a);}finally{const d=performance.now()-t,e=G[n]||(G[n]={n:0,ms:0});e.n++;e.ms+=d;}};}};
     wrap(window.GPUDevice?.prototype,['createRenderPipeline','createShaderModule','createBindGroup','createBindGroupLayout','createPipelineLayout','createTexture','createBuffer','createSampler']);
     wrap(window.GPUQueue?.prototype,['writeBuffer','writeTexture','copyExternalImageToTexture','submit']);
-  });
+  },lightweight);
   const url=`http://localhost:${port}/?${query}`;
   await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});await page.bringToFront();
   const bootDeadline=Date.now()+180000;
@@ -111,7 +114,9 @@ try {
   const loadTimer=setInterval(()=>{loadSamples.push([Date.now(),+os.loadavg()[0].toFixed(2)]);},2000);
   const psTimer=setInterval(()=>{try{busy.push(execSync("ps -Ao pcpu,rss,comm -r | head -7 | tail -6",{encoding:'utf8'}).trim().split('\n').map(l=>l.trim().replace(/\s+/g,' ').slice(0,90)));}catch{}},4000);
   const driveStarted=Date.now();
-  await page.evaluate(()=>{
+  await page.evaluate((lightweight)=>{
+    window.__builds=[];window.__rt={};
+    if(lightweight)return;
     // Time the renderer's own stages (inclusive times; they nest) so a long frame can be split into
     // shader building, geometry/texture upload, pipeline lookup and drawing.
     const R=window.__afterlightProbe.renderer(),T=window.__rt={};
@@ -128,8 +133,9 @@ try {
       return [o&&(o.isInstancedMesh?'inst':o.isBatchedMesh?'batch':o.isSkinnedMesh?'skin':o.isMesh?'mesh':o.type),m&&m.type,m&&m.transparent?'T':'',m&&(m.side===2?'DS':m.side===1?'BS':'FS'),m&&m.alphaTest?'AT':'',m&&m.map?'map':'',m&&m.normalMap?'nrm':'',m&&m.roughnessMap?'rgh':'',m&&m.metalnessMap?'mtl':'',m&&m.emissiveMap?'ems':'',m&&m.aoMap?'ao':'',m&&m.vertexColors?'vc':'',o&&o.receiveShadow?'rs':'',o&&o.castShadow?'cs':'','a:'+attrs].filter(Boolean).join('|');};
     const cnb=R.backend.createNodeBuilder;
     if(typeof cnb==='function')R.backend.createNodeBuilder=function(...a){const b=cnb.apply(this,a);const ob=b.build;b.build=function(...x){const t=performance.now();try{return ob.apply(this,x);}finally{const d=performance.now()-t,e=T['nodeBuilder.build']||(T['nodeBuilder.build']={n:0,ms:0});e.n++;e.ms+=d;if(window.__builds.length<3000)window.__builds.push({t:Math.round(t),ms:Math.round(d),sig:sigOf(this),name:String(this.object&&this.object.name||'').slice(0,40),src:String(this.object&&this.object.userData&&this.object.userData.source||'').slice(0,40),mat:String(this.material&&this.material.name||'').slice(0,40),lights:this.lightsNode&&this.lightsNode.getLights?this.lightsNode.getLights().length:-1,override:!!(this.scene&&this.scene.overrideMaterial)});}};return b;};
-  });
-  await page.evaluate(({route,cumulative,speed,laps,reverse,jeepMode})=>{
+  },lightweight);
+  await page.evaluate(({route,cumulative,speed,laps,reverse,jeepMode,lightweight})=>{
+    const P=window.__probe;P.gaps=[];P.longtasks=[];P.loaf=[];P.frames=0;P.sum=0;P.maxGap=0;P.last=performance.now();
     const total=cumulative[cumulative.length-1];
     const D=window.__drive={done:false,s:reverse?total:0,dir:reverse?-1:1,lap:0,lapStarts:[performance.now()],samples:[],long:[],heap:[],total};
     const pr=window.__afterlightProbe,R=pr.renderer();let last=performance.now(),i=0,lastHeap=0;
@@ -140,7 +146,7 @@ try {
     const E=pr.engine();let lightSig='',lightSet=new Set();D.lightChanges=[];
     // Sampled at 4 Hz: the lights that are visible all the way up the scene graph (a traversal of the whole scene is too heavy per frame).
     let lastLightScan=0,lastLights=[];
-    const lightsNow=()=>{const t=performance.now();if(t-lastLightScan<250)return lastLights;lastLightScan=t;const out=[];try{E.scene.traverseVisible(o=>{if(o.isLight)out.push(o);});}catch{}lastLights=out;return out;};
+    const lightsNow=()=>{if(lightweight)return [];const t=performance.now();if(t-lastLightScan<250)return lastLights;lastLightScan=t;const out=[];try{E.scene.traverseVisible(o=>{if(o.isLight)out.push(o);});}catch{}lastLights=out;return out;};
     const down=new Set();let stuckSince=0;
     const press=(code,on)=>{if(on===down.has(code))return;if(on)down.add(code);else down.delete(code);document.dispatchEvent(new KeyboardEvent(on?'keydown':'keyup',{code,key:code.replace('Key','').toLowerCase(),bubbles:true,cancelable:true}));};
     const releaseAll=()=>{for(const c of [...down])press(c,false);};
@@ -192,7 +198,7 @@ try {
       requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
-  },{route,cumulative,speed,laps,reverse,jeepMode});
+  },{route,cumulative,speed,laps,reverse,jeepMode,lightweight});
   const driveEnd=Date.now()+maxSeconds*1000;
   while(Date.now()<driveEnd){
     if(await page.evaluate(()=>window.__drive?window.__drive.done:'reloaded')==='reloaded')throw Error('the page reloaded during the run (the dev server hot-reloads every open page when a project file changes)');
@@ -205,7 +211,7 @@ try {
   if(cdp){const r=await cdp.send('Profiler.stop');profileData=r.profile;}
   const data=await page.evaluate(()=>{const P=window.__probe,D=window.__drive;return {
     frames:P.frames,sumMs:P.sum,maxGap:P.maxGap,gaps:P.gaps,longtasks:P.longtasks,loaf:P.loaf,logs:P.logs,
-    samples:D.samples,error:D.error||null,long:D.long,heap:D.heap,builds:window.__builds,lightChanges:window.__drive.lightChanges,lapStarts:D.lapStarts,distance:D.s,total:D.total,
+    done:D.done,samples:D.samples,error:D.error||null,long:D.long,heap:D.heap,builds:window.__builds,lightChanges:window.__drive.lightChanges,lapStarts:D.lapStarts,distance:D.s,total:D.total,
     streaming:window.__afterlightProbe.streaming(),resident:window.__afterlightProbe.resident(),timeOrigin:performance.timeOrigin};});
   const heartbeat=await page.evaluate(()=>new Promise(r=>{if(!window.__hb)return r(null);window.__hb.onmessage=e=>r(e.data.gaps);window.__hb.postMessage(0);setTimeout(()=>r(null),3000);}));
   const wall=(Date.now()-driveStarted)/1000;
@@ -242,7 +248,7 @@ try {
   const bucket=(n,l)=>data.gaps.filter(g=>g.gap>=n&&(l===undefined||lapOf(g.t-g.gap)===l)).length;
   const perLap=data.lapStarts.map((_,l)=>({lap:l,over100:bucket(100,l),over250:bucket(250,l),over500:bucket(500,l),over1000:bucket(1000,l),stalledSecondsOver250:+(data.gaps.filter(g=>g.gap>=250&&lapOf(g.t-g.gap)===l).reduce((n,g)=>n+g.gap,0)/1000).toFixed(1),maxGap:Math.max(0,...data.gaps.filter(g=>lapOf(g.t-g.gap)===l).map(g=>g.gap))}));
   const speeds=data.samples.map(r=>r[6]||0).filter(v=>v>0);
-  const summary={url,speed,laps,jeepMode,driveError:data.error,jeepSpeed:jeepMode?{max:Math.max(0,...speeds),mean:+(speeds.reduce((a,b)=>a+b,0)/Math.max(1,speeds.length)).toFixed(1)}:null,route:{points:route.length,metres:Math.round(cumulative[cumulative.length-1]),fromZ,toZ,reverse},driveSeconds:Math.round(wall),frames:data.frames,meanFrameMs:+mean.toFixed(1),maxGapMs:Math.round(data.maxGap),
+  const summary={url,speed,laps,jeepMode,lightweight,completed:data.done&&!data.error,distanceMetres:Math.round(data.distance),driveError:data.error,jeepSpeed:jeepMode?{max:Math.max(0,...speeds),mean:+(speeds.reduce((a,b)=>a+b,0)/Math.max(1,speeds.length)).toFixed(1)}:null,route:{points:route.length,metres:Math.round(cumulative[cumulative.length-1]),fromZ,toZ,reverse},driveSeconds:Math.round(wall),frames:data.frames,meanFrameMs:+mean.toFixed(1),maxGapMs:Math.round(data.maxGap),
     gapsOver100:bucket(100),gapsOver250:bucket(250),gapsOver500:bucket(500),gapsOver1000:bucket(1000),
     stalledSecondsOver250:+(data.gaps.filter(g=>g.gap>=250).reduce((n,g)=>n+g.gap,0)/1000).toFixed(1),
     uncoveredLongGaps:longGaps.filter(g=>!g.coveredByLoadingJobs.length).length,coveredLongGaps:longGaps.filter(g=>g.coveredByLoadingJobs.length).length,
