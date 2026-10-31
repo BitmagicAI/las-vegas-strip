@@ -164,12 +164,46 @@ def build(B):
  # Keep mapped footprint; unseen elevations repeat observed bays as an inference.
  # Roof plant is omitted until supported by a reference.
  annex=footprint('way/276428208')
- B.shell(annex,0,9.25,'w26-grey-stucco',roof=False);roof_skirt(B,annex,9.4,10.1,1.7)
+ # Street-facing short end: November 2021 panorama 9SfTBZn0Nrrsh5NjQYOSgQ
+ # shows an open gated stair slot, not the repeated blind arch used initially.
+ edges=list(zip(list(annex.exterior.coords),list(annex.exterior.coords)[1:]))
+ ea,eb=max((e for e in edges if math.dist(*e)<25),key=lambda e:(e[0][0]+e[1][0])/2)
+ stair_c=((ea[0]+eb[0])/2,(ea[1]+eb[1])/2)
+ B.shell(annex,0,9.25,'w26-grey-stucco',openings=[dict(p=[stair_c[0],0,stair_c[1]],width=3.8,height=9.0)],roof=False);roof_skirt(B,annex,9.4,10.1,1.7)
  from shapely.geometry.polygon import orient
  ring=list(orient(annex,sign=1).exterior.coords)
  for a,b in zip(ring,ring[1:]):
   length=math.dist(a,b);G=Frame(B,(a[0]+b[0])/2,(a[1]+b[1])/2,math.atan2(-(b[1]-a[1]),b[0]-a[0]),y=0)
   G.box('w26-trim-paint',(0,9.3,-.10),(length+.35,.16,.55))
+  if math.dist(((a[0]+b[0])/2,(a[1]+b[1])/2),stair_c)<.1:
+   # Keep this opening clear of decorative arch/window repetition. G +z is inside.
+   for lo,hi in [(-length/2,-1.9),(1.9,length/2)]:
+    G.box('w26-trim-paint',((lo+hi)/2,4.6,-.045),(hi-lo,9.2,.06))
+    for row in range(30):
+     yy=.15+row*.30
+     B.face('w26-vent-paint',[G.p(lo,yy-.006,-.081),G.p(lo,yy+.006,-.081),G.p(hi,yy+.006,-.081),G.p(hi,yy-.006,-.081)])
+     for xx in np.arange(lo+.3+(row%2)*.3,hi,.6):
+      B.face('w26-vent-paint',[G.p(xx-.006,yy+.005,-.081),G.p(xx-.006,yy+.295,-.081),G.p(xx+.006,yy+.295,-.081),G.p(xx+.006,yy+.005,-.081)])
+
+   for xx in [-2.0,2.0]:G.box('w26-trim-paint',(xx,4.6,0),(.20,9.2,.20),True)
+   G.box('w26-grey-stucco',(0,4.6,3.7),(4.2,9.2,.20),True)
+   for xx in [-2.05,2.05]:G.box('w26-grey-stucco',(xx,4.6,1.9),(.20,9.2,3.7),True)
+   G.box('w26-paving-concrete',(0,.08,1.8),(4,.16,3.6),True)
+   # Inferred switchback dimensions; reference supports exposed steel flights/rails.
+   for flight in range(6):
+    direction=1 if flight%2==0 else -1;lane=.8 if flight%2==0 else 2.6;base=flight*1.5
+    for step in range(10):
+     xx=direction*(-1.6+(step+.5)*.32);yy=base+(step+1)*.15
+     G.box('w26-frame-paint',(xx,yy-.045,lane),(.33,.09,1.25),True)
+     G.tube('w26-frame-paint',(xx,yy,lane-.65),(xx,yy+1,lane-.65),.022,6)
+    for zz in [lane-.65,lane+.65]:
+     G.tube('w26-frame-paint',(-direction*1.6,base+1,zz),(direction*1.6,base+2.5,zz),.035,6)
+     G.tube('w26-frame-paint',(-direction*1.6,base-.06,zz),(direction*1.6,base+1.44,zz),.07,6)
+    G.box('w26-paving-concrete',(direction*1.6,base+1.45,1.7),(.6,.10,3.4),True)
+   # Locked decorative gate: public entry is not asserted by the reference.
+   for yy in [.10,1.8]:G.box('w26-frame-paint',(0,yy,-.10),(3.8,.07,.07),True)
+   for xx in np.linspace(-1.85,1.85,23):G.box('w26-frame-paint',(xx,.94,-.16),(.04,1.72,.04),True)
+   continue
   count=max(2,round(length/8));step=length/count
   for bay in range(count):
    x=(bay-(count-1)/2)*step

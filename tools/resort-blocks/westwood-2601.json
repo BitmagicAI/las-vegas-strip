@@ -36,6 +36,12 @@
       "accessed": "2026-10-30",
       "imageDate": "February 2020",
       "observed": "North ochre masonry end, narrow stair glazing, small windows, service doors and utility cabinet."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1418057,-115.1717857,3a,75y,315h,90t/data=!3m4!1e1!3m2!1s9SfTBZn0Nrrsh5NjQYOSgQ!2e0",
+      "accessed": "2026-10-30",
+      "imageDate": "November 2021",
+      "observed": "Street-facing short end of south building has pale masonry, a full-height open steel stairwell and closed metal ground gate. Flights and rails visible; dimensions and internal landing arrangement inferred."
     }
   ],
   "uncertainDimensions": [
@@ -76,6 +82,10 @@
       "id": "public-interior",
       "status": "not-authored",
       "reason": "Only proposed layouts found; no current as-built interior evidence."
+    },
+    {
+      "id": "south-building-stairwell",
+      "status": "source-authored; gated, no public access claimed"
     }
   ],
   "views": [
@@ -153,6 +163,21 @@
       ],
       "status": "source-only",
       "sourceCapture": "build/city-exteriors/westwood-2601-source-review/pool-gate.png"
+    },
+    {
+      "id": "annex-stair",
+      "eye": [
+        133,
+        5,
+        -2864
+      ],
+      "target": [
+        109,
+        4.7,
+        -2876
+      ],
+      "status": "source-only",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/annex-stair.png"
     }
   ],
   "evidence": {
@@ -161,8 +186,8 @@
   },
   "checks": {
     "sourceFloorSamples": 214,
-    "sourceCollisionTriangles": 581,
-    "sourceTriangles": 65119,
+    "sourceCollisionTriangles": 1747,
+    "sourceTriangles": 67701,
     "export": "passed",
     "levelOptimization": "passed",
     "webp": "passed; textureless",
