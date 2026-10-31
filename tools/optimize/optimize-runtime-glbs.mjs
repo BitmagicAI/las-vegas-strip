@@ -56,7 +56,11 @@ function resolveList() {
   const list = [];
   const add = (rel, cls, loader, when, extra = {}) => { if (!exists(rel)) { list.push({ rel, cls, loader, when, missing: true }); return; } list.push({ rel, cls, loader, when, ...extra }); };
   // GeographicCity
-  add('build/geographic-strip/city.glb', 'level', 'src/work/GeographicCity.ts', 'boot');
+  if (flag('combined-city')) add('build/geographic-strip/city.glb', 'level', 'src/work/GeographicCity.ts (comparison)', 'boot');
+  else {
+    for (const cell of readJson('build/geographic-strip/cells/manifest.json').cells)
+      add(`build/geographic-strip/cells/${cell.file}`, 'level', 'src/work/GeographicCity.ts (cell migration)', 'boot');
+  }
   // MeshLevel (Game.ts)
   add('build/geographic-strip/detailed.glb', 'level', 'src/work/Game.ts -> engine MeshLevel', 'boot');
   // StripLandmarks: base + key + -exterior.glb (boot) / -interior.glb (streamed on approach)

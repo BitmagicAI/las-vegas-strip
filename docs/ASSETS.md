@@ -6,7 +6,7 @@ The runtime set (every model, texture and data file the game loads) is in the re
 | Tier | Size | Where | What |
 |---|---|---|---|
 | **Code and records** | ~80 MB | git | Code, tools, block records, `src/work/` (world, levels, hotel templates), `public/` (foliage) |
-| **Runtime set** | 1,345 files, 1.1 GiB | Git LFS, `runtime-assets/` → copied into `build/` | Every file the game loads from `build/`: optimized GLBs, collision, routes, venue lists, PBR strips, Sphere media |
+| **Runtime set** | 1,914 files, 1.1 GiB | Git LFS, `runtime-assets/` → copied into `build/` | Every file the game loads from `build/`: optimized GLBs, collision, routes, venue lists, PBR strips, Sphere media |
 | **Release snapshot** | ~564 MiB download | GitHub release asset (optional) | The same runtime set as one `.tar.gz`, for a download without git |
 | **Source files** | ~10 GiB | maintainers' machines (pack planned: `tool-source-pack`) | Original (unoptimized) GLBs, Blender scenes, OSM extracts, intermediates the builders read |
 | **Never published** | – | local only | Third-party reference photos, plans and screenshots; review renders; film recordings; probe output |
@@ -78,14 +78,22 @@ python3 tools/release/asset-pack.py build   # list, then .bitmagic/release/las-v
   returns the original URL and the compressed bytes load from there. A GLB whose source changed after it was optimized
   ships as the current original.
 Data files ship as the packed `.bin` that `tools/optimize/pack-data.mjs` writes beside each JSON; the game never parses
-JSON at runtime.
+large geometry JSON at runtime; small cell manifests name the spatial packages.
 
 - **Landmark and resort venues:** `venues.bin` in `build/strip-landmarks/` and `build/resort-blocks/{cosmo,bellagio,paris}/`.
   Each venue contributes its exterior GLB and exterior collision, plus, unless it is `exteriorOnly`, its interior GLB
   and interior collision.
-- **City:** `city.glb`, `detailed.glb`, `city-colliders.bin`, `speed-map.bin` (the road network and the Bellagio
-  arrival roads, baked) and the bridge concourses listed in `access/manifest.bin`.
-- **City bake:** `build/baked/city-lod.bin`, the distant LODs (`tools/bake/bake-city.mjs`).
+- **City:** `build/geographic-strip/cells/manifest.json` and one optimized GLB per existing 800 m cell;
+  `collision-cells/manifest.json` and the matching packed files retain the original 160 m physics records.
+  `detailed.glb`, `speed-map.bin` and the bridge concourses in `access/manifest.bin` are unchanged.
+- **City bake:** `build/baked/cells/manifest.json` and spatial VLOD files (`tools/bake/bake-city.mjs`). The combined
+  `build/baked/city-lod.bin` remains an ignored bake intermediate; it is not part of the release.
+
+The existing face-removal installers still edit the same authoring JSON. Run the city exporter normally to write
+cell GLBs, run the level and WebP optimizers, pack collision normally, then bake and stage. Unchanged package bytes
+are retained. Release manifests record the optimized bytes actually shipped, separately from source manifests.
+For controlled local comparisons only, the exporter accepts `--combined`, optimization/packing/release accept
+`--combined-city`, and the browser accepts `?cityCells=off`; these need the old combined files available locally.
 - **High-rises:** `exteriors.glb` and every `*-collision.bin`.
 - **Hotel modules:** every hotel module GLB the optimizer lists (HotelLayout's set and part names) with its `<module>.mesh-level.bin`.
 - **Coaster:** `route.bin`, `coaster-collision.bin`, `coaster.glb` and `train.glb`.

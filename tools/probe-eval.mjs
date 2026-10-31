@@ -35,6 +35,14 @@ try {
   // --storage 'key=json;key2=json': localStorage entries set before the game loads (e.g. afterlight:film=1).
   const storage=String(opt('storage','')).split(';').filter(Boolean).map(e=>{const i=e.indexOf('=');return [e.slice(0,i),e.slice(i+1)];});
   if(storage.length)await page.addInitScript(entries=>{for(const [k,v] of entries)localStorage.setItem(k,v);},storage);
+  if(opt('load-metrics',false))await page.addInitScript(()=>{
+    const metrics=window.__cellLoadMetrics={frames:[],longTasks:[],started:performance.now()};
+    let previous=performance.now();
+    const frame=now=>{metrics.frames.push([now,now-previous]);previous=now;requestAnimationFrame(frame);};
+    requestAnimationFrame(frame);
+    new PerformanceObserver(list=>{for(const e of list.getEntries())metrics.longTasks.push([e.startTime,e.duration]);}).observe({type:'longtask',buffered:true});
+    performance.setResourceTimingBufferSize(10000);
+  });
   await page.goto(`http://localhost:${port}/?probe&quality=${process.env.PROBE_QUALITY??"ultra"}${opt('query',null)?'&'+opt('query'):''}`,{waitUntil:'domcontentloaded',timeout:60000});
   const end=Date.now()+180000;let clickedPlay=false;
   while(Date.now()<end&&!logs.some(s=>s.includes('🎮 Starting game...'))){

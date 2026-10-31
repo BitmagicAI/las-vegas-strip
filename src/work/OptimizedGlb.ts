@@ -31,7 +31,9 @@ export async function glbUrl(url:string):Promise<string> {
     try{
         const head=await fetch(parsed.pathname,{method:'HEAD',cache:'no-store'});
         const size=Number(head.headers.get('content-length')),modified=Date.parse(head.headers.get('last-modified')??'');
-        if(size===entry.size&&Math.floor(modified/1000)===Math.floor(entry.modified/1000))return '/'+entry.optimized+parsed.search;
+        // Node's static server rounds filesystem sub-milliseconds when constructing Last-Modified.
+        // Match that before dropping seconds; otherwise xx:26.9998 falsely misses xx:27.
+        if(size===entry.size&&Math.floor(modified/1000)===Math.floor(Math.round(entry.modified)/1000))return '/'+entry.optimized+parsed.search;
         console.warn(`[OptimizedGlb] ${key} changed since it was optimized; loading the original. Re-run: node tools/optimize/optimize-runtime-glbs.mjs && node tools/optimize/optimize-runtime-glbs.mjs --variant=webp-textures && node tools/optimize/install-optimized.mjs`);
     }catch{}
     return url;

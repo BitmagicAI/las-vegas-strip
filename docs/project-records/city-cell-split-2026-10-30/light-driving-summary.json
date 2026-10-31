@@ -1,0 +1,226 @@
+[
+  {
+    "side": "before",
+    "run": 1,
+    "summary": {
+      "url": "http://localhost:3090/?probe&quality=ultra&cityCells=off",
+      "speed": 20,
+      "laps": 1,
+      "jeepMode": true,
+      "lightweight": true,
+      "completed": true,
+      "distanceMetres": 368,
+      "driveError": null,
+      "jeepSpeed": {
+        "max": 21.1,
+        "mean": 19.8
+      },
+      "route": {
+        "points": 13,
+        "metres": 379,
+        "fromZ": 600,
+        "toZ": 1040,
+        "reverse": false
+      },
+      "driveSeconds": 22,
+      "frames": 927,
+      "meanFrameMs": 23.1,
+      "maxGapMs": 50,
+      "gapsOver100": 0,
+      "gapsOver250": 0,
+      "gapsOver500": 0,
+      "gapsOver1000": 0,
+      "stalledSecondsOver250": 0,
+      "uncoveredLongGaps": 0,
+      "coveredLongGaps": 0,
+      "bootJobs": 12,
+      "driveJobs": 9,
+      "driveJobsHeldMs": 0,
+      "heapMB": {
+        "first": 2985,
+        "max": 3015,
+        "last": 2994
+      },
+      "perLap": [
+        {
+          "lap": 0,
+          "over100": 0,
+          "over250": 0,
+          "over500": 0,
+          "over1000": 0,
+          "stalledSecondsOver250": 0,
+          "maxGap": 50
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "side": "after",
+    "run": 1,
+    "summary": {
+      "url": "http://localhost:3090/?probe&quality=ultra",
+      "speed": 20,
+      "laps": 1,
+      "jeepMode": true,
+      "lightweight": true,
+      "completed": true,
+      "distanceMetres": 368,
+      "driveError": null,
+      "jeepSpeed": {
+        "max": 21.4,
+        "mean": 19.8
+      },
+      "route": {
+        "points": 13,
+        "metres": 379,
+        "fromZ": 600,
+        "toZ": 1040,
+        "reverse": false
+      },
+      "driveSeconds": 22,
+      "frames": 942,
+      "meanFrameMs": 22.7,
+      "maxGapMs": 50,
+      "gapsOver100": 0,
+      "gapsOver250": 0,
+      "gapsOver500": 0,
+      "gapsOver1000": 0,
+      "stalledSecondsOver250": 0,
+      "uncoveredLongGaps": 0,
+      "coveredLongGaps": 0,
+      "bootJobs": 12,
+      "driveJobs": 9,
+      "driveJobsHeldMs": 0,
+      "heapMB": {
+        "first": 3048,
+        "max": 3088,
+        "last": 3088
+      },
+      "perLap": [
+        {
+          "lap": 0,
+          "over100": 0,
+          "over250": 0,
+          "over500": 0,
+          "over1000": 0,
+          "stalledSecondsOver250": 0,
+          "maxGap": 0
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "side": "after",
+    "run": 2,
+    "summary": {
+      "url": "http://localhost:3090/?probe&quality=ultra",
+      "speed": 20,
+      "laps": 1,
+      "jeepMode": true,
+      "lightweight": true,
+      "completed": true,
+      "distanceMetres": 368,
+      "driveError": null,
+      "jeepSpeed": {
+        "max": 21.1,
+        "mean": 19.8
+      },
+      "route": {
+        "points": 13,
+        "metres": 379,
+        "fromZ": 600,
+        "toZ": 1040,
+        "reverse": false
+      },
+      "driveSeconds": 22,
+      "frames": 965,
+      "meanFrameMs": 22.3,
+      "maxGapMs": 50,
+      "gapsOver100": 0,
+      "gapsOver250": 0,
+      "gapsOver500": 0,
+      "gapsOver1000": 0,
+      "stalledSecondsOver250": 0,
+      "uncoveredLongGaps": 0,
+      "coveredLongGaps": 0,
+      "bootJobs": 12,
+      "driveJobs": 9,
+      "driveJobsHeldMs": 0,
+      "heapMB": {
+        "first": 2914,
+        "max": 2933,
+        "last": 2913
+      },
+      "perLap": [
+        {
+          "lap": 0,
+          "over100": 0,
+          "over250": 0,
+          "over500": 0,
+          "over1000": 0,
+          "stalledSecondsOver250": 0,
+          "maxGap": 50
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "side": "before",
+    "run": 2,
+    "summary": {
+      "url": "http://localhost:3090/?probe&quality=ultra&cityCells=off",
+      "speed": 20,
+      "laps": 1,
+      "jeepMode": true,
+      "lightweight": true,
+      "completed": true,
+      "distanceMetres": 368,
+      "driveError": null,
+      "jeepSpeed": {
+        "max": 21.1,
+        "mean": 19.8
+      },
+      "route": {
+        "points": 13,
+        "metres": 379,
+        "fromZ": 600,
+        "toZ": 1040,
+        "reverse": false
+      },
+      "driveSeconds": 22,
+      "frames": 935,
+      "meanFrameMs": 22.9,
+      "maxGapMs": 50,
+      "gapsOver100": 0,
+      "gapsOver250": 0,
+      "gapsOver500": 0,
+      "gapsOver1000": 0,
+      "stalledSecondsOver250": 0,
+      "uncoveredLongGaps": 0,
+      "coveredLongGaps": 0,
+      "bootJobs": 12,
+      "driveJobs": 9,
+      "driveJobsHeldMs": 0,
+      "heapMB": {
+        "first": 2982,
+        "max": 2999,
+        "last": 2999
+      },
+      "perLap": [
+        {
+          "lap": 0,
+          "over100": 0,
+          "over250": 0,
+          "over500": 0,
+          "over1000": 0,
+          "stalledSecondsOver250": 0,
+          "maxGap": 50
+        }
+      ]
+    },
+    "errors": []
+  }
+]
