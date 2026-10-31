@@ -183,7 +183,8 @@
   "evidence": {
     "sourceClearance": "docs/project-records/westwood-2601/source-route-report.json",
     "checkpoint": "docs/project-records/westwood-2601/checkpoint.md",
-    "sourcePlacement": "docs/project-records/westwood-2601/placement-report.json"
+    "sourcePlacement": "docs/project-records/westwood-2601/placement-report.json",
+    "sourceRebuild": "docs/project-records/westwood-2601/source-rebuild.json"
   },
   "checks": {
     "sourceFloorSamples": 214,
@@ -195,7 +196,9 @@
     "installation": "not run",
     "installedWalk": "not run",
     "runtimePerformance": "not measured",
-    "sourcePlacement": "passed against 6766 mapped buildings; 6 camera origins outside mapped building volumes"
+    "sourcePlacement": "passed against 6766 mapped buildings; 6 camera origins outside mapped building volumes",
+    "sourceRebuild": "passed: mesh, collision and metadata JSON byte-identical",
+    "recordReview": "passed after restoring 15 existing ignored local reference images from main checkout"
   },
   "remaining": [
     "Finish reference review for unseen elevations; do not invent a public interior from proposed plans.",

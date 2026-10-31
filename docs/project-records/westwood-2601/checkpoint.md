@@ -68,3 +68,6 @@ Source 67,701 triangles, collision 1,747; 214 existing route floor samples and b
 
 ### Read-only installation preflight
 Added preflight_westwood_2601.py to compare authored shell footprints and above-ground collision projections against all 6,766 mapped building footprints, excluding only the two claimed IDs. No neighbouring-building overlap over 0.05 square metres found. All six named camera origins are outside mapped building volumes. Saved placement-report.json. This is not road alignment, runtime occlusion, collision equivalence or an installed walk; those gates remain pending while #437 is open. No generated geometry or shared city files changed.
+
+### Reproducible source checkpoint
+Resolved the spare-checkout review.py failure by copying 15 already-existing reference images from the main checkout into their original ignored local paths; no reference imagery is committed. Full record review now PASS (287 queued records), and targeted Westwood record validation remains separate. Rebuilt Westwood source mesh/collision/metadata JSON and verified all three SHA-256 hashes unchanged; evidence saved in source-rebuild.json. This does not assert binary exporter or installed-runtime reproducibility. No geometry, runtime, city bake, uploads or new claims changed. #437 remains open; #439 remains queued/unclaimed.
