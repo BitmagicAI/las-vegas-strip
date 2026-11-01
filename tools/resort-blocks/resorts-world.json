@@ -104,8 +104,10 @@
     }
   },
   "geometry": {
-    "triangles": 13354,
-    "batches": 46
+    "sourceTriangles": 25493,
+    "batches": 65,
+    "preexistingDegenerateRoofTriangles": 6,
+    "scope": "Current exterior JSON; six retained old zero-area roof triangles omitted by exporter, no new degenerate geometry."
   },
   "tests": {
     "roofSupportSamples": 591,
@@ -322,7 +324,7 @@
     }
   },
   "arrivalPass": {
-    "status": "source-authored-verification-in-progress",
+    "status": "installed-visually-reviewed-refinement-deferred",
     "issue": 34,
     "pullRequest": 452,
     "sources": "docs/project-records/rw-arrival/checkpoint.json",
@@ -330,6 +332,14 @@
     "collision": "docs/project-records/rw-arrival/collision.json",
     "routes": "docs/project-records/rw-arrival/routes.json",
     "before": "build/city-exteriors/rw-arrival-before-final",
-    "after": "pending"
+    "after": "build/city-exteriors/rw-arrival-after",
+    "normalWalking": "docs/project-records/rw-arrival/normal-walk.json",
+    "detailViews": "build/city-exteriors/rw-arrival-detail-final",
+    "preservation": "docs/project-records/rw-arrival/preservation.json",
+    "materialDecision": "Muted original bronze/red canopy palette follows January2025StreetView; unchanged tower materials. No new scene lights.",
+    "checks": "docs/project-records/rw-arrival/checks.json",
+    "performanceBefore": "docs/project-records/rw-arrival/performance-before-final.json",
+    "performanceAfter": "docs/project-records/rw-arrival/performance-after.json",
+    "assetDelta": "docs/project-records/rw-arrival/asset-delta.json"
   }
 }

@@ -45,9 +45,9 @@ def detail(B):
  B.planar('rw-paving',box(*MASK),.235,True)
  # Keep the hotel's existing high-rise access kit and floor at y=.24.
  # Broad flat bronze roof, paired pale piers and recessed red/brown soffit.
- B.box('bronze',(559,8.05,-2160.5),(78,1.1,37),True)
+ B.box('rw-arrival-bronze',(559,8.05,-2160.5),(78,1.1,37),True)
  B.box('rw-flat-roof',(559,8.64,-2160.5),(77.6,.08,36.6))
- B.box('rw-red',(559,7.48,-2160.5),(77.6,.12,36.6))
+ B.box('rw-arrival-red',(559,7.48,-2160.5),(77.6,.12,36.6))
  # Close the new cut at the retained podium; no unresearched lobby is opened.
  B.box('rw-stone',(559,10,-2141.9),(78,20,.2),True)
  for x in np.arange(523,598,4):
@@ -61,15 +61,15 @@ def detail(B):
  B.detail=1
  for x in np.arange(524,596,8):
   for z in [-2171,-2163,-2155,-2147]:
-   B.box('bronze',(x,7.16,z),(7.1,.42,6.4))
-   B.box('rw-white',(x,6.94,z),(6.55,.035,5.85))
-   for dz in [-2.5,2.5]:B.box('rw-red',(x,6.88,z+dz),(6.15,.07,.12))
-   for dx in [-2.9,2.9]:B.box('rw-red',(x+dx,6.88,z),(.12,.07,5))
+   B.box('rw-arrival-bronze',(x,7.16,z),(7.1,.42,6.4))
+   B.box('rw-arrival-panel',(x,6.94,z),(6.55,.035,5.85))
+   for dz in [-2.5,2.5]:B.box('rw-arrival-red',(x,6.88,z+dz),(6.15,.07,.12))
+   for dx in [-2.9,2.9]:B.box('rw-arrival-red',(x+dx,6.88,z),(.12,.07,5))
    # Suspended square lanterns seen in the dated driveway panorama.
    if z in [-2171,-2155]:
     B.box('rw-metal',(x,6.35,z),(.07,1.1,.07))
-    B.box('rw-red',(x,5.58,z),(1.05,.64,1.05))
-    B.box('rw-white',(x,5.02,z),(.91,.45,.91))
+    B.box('rw-arrival-red',(x,5.58,z),(1.05,.64,1.05))
+    B.box('rw-arrival-panel',(x,5.02,z),(.91,.45,.91))
     B.box('rw-metal',(x,4.76,z),(1.06,.08,1.06))
  B.detail=0
  # Planted island entirely outside the drive lanes, fitted to existing road island.

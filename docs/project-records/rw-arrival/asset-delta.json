@@ -1,0 +1,46 @@
+{
+  "newLfsBytes": 3119618,
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_-3.bin",
+      "bytes": 256292
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/geographic-strip/cells/cell-0_-3.glb",
+      "bytes": 1775188
+    },
+    {
+      "path": "runtime-assets/geographic-strip/cells/manifest.json",
+      "bytes": 39796
+    },
+    {
+      "path": "runtime-assets/geographic-strip/collision-cells/cell-0_-3.bin",
+      "bytes": 221592
+    },
+    {
+      "path": "runtime-assets/geographic-strip/collision-cells/manifest.json",
+      "bytes": 17609
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/resortsWorldExterior-exterior-collision.bin",
+      "bytes": 9924
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/resortsWorldExterior-exterior.glb",
+      "bytes": 785416
+    }
+  ],
+  "changedCellFiles": [
+    "runtime-assets/geographic-strip/cells/cell-0_-3.glb",
+    "runtime-assets/geographic-strip/cells/manifest.json",
+    "runtime-assets/geographic-strip/collision-cells/manifest.json",
+    "runtime-assets/geographic-strip/collision-cells/cell-0_-3.bin",
+    "runtime-assets/baked/cells/manifest.json",
+    "runtime-assets/baked/cells/cell-0_-3.bin"
+  ],
+  "unchangedCellFiles": 272
+}

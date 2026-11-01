@@ -104,6 +104,7 @@ colors.update({'luxor-glass':'615845','luxor-pyramid':'202e33','luxor-stone':'cb
 colors.update({'mandalay-glass':'84764d','mandalay-white':'dbd9c8','mandalay-stone':'c9c2a7','mandalay-band':'aaa48d','mandalay-bronze':'8b8061','mandalay-window':'425951','mandalay-roof':'c1c0ae','mandalay-mint':'8eae98','mandalay-solar':'313d50'})
 colors.update({'cc-flat-roof':'a7a6a0','cc-metal':'444c51','cc-door':'465866','cc-gold':'ae874b','cc-brown':'6b5043','cc-asphalt':'535354','circus_pool':'367f8d'})
 colors.update({'cc-white':'dedbd7','cc-pink':'cf719d','cc-window':'505763','cc-sill':'c9c6c3','cc-shadow':'3b3d40','cc-blue':'497a9a','cc-yellow':'d6b535','cc-dome-glass':'aa668a','cc-dome-frame':'7e536b'})
+colors.update({'rw-arrival-red':'68392f','rw-arrival-bronze':'514038','rw-arrival-panel':'b2a48e'})
 colors.update({'rw-red':'a62c3b','rw-bronze':'685848','rw-mullion':'61554b','rw-white':'dfdbd2','rw-stone':'cec4ae','rw-fin':'8f806a','rw-gold':'b9995a','rw-joint':'b7afa0','rw-shadow':'303033','rw-metal':'747579','rw-led':'511629'})
 colors.update({'rw-flat-roof':'c7c8bc','rw-blue-panel':'4a6477','rw-paving':'c5b9a1','rw-planter':'b7ac95','rw-soil':'454638','rw-garden':'526142'})
 colors.update({'fb-entry-dark':'2e3436','fb-entry-stone':'a7ada9','fb-entry-water':'95a8ac','fb-entry-bronze':'6f573b','fb-entry-gold':'bda16c','fb-entry-glass':'625e43'})
