@@ -1,0 +1,42 @@
+{
+  "candidate": "2650 Westwood Drive",
+  "mappedId": "way/464694101",
+  "issue": 439,
+  "status": "claimed issue439; authoring from origin/next 405e0d3",
+  "addressPin": {
+    "lat": 36.141975,
+    "lon": -115.1713202,
+    "projected": [
+      151.05887573352248,
+      -2891.523773355562
+    ],
+    "insideMappedFootprint": true
+  },
+  "references": [
+    {
+      "url": "https://www.google.com/maps/search/2650+Westwood+Drive+Las+Vegas",
+      "observed": "Address pin inside mapped building; aerial shows adjoining higher north and lower south masses. Listing associates Digital Lizard, independently unconfirmed."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1416397,-115.1716678,3a,75y,44.61h,90t/data=!3m4!1e1!3m2!1sNDKKf3vLoCOS6SglkQvUjw!2e0",
+      "imageDate": "October 2024",
+      "observed": "White scored masonry, dark cap, inset brick entrance band, dark vertical glazing, concrete sidewalk, gravel and clipped shrubs."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1418229,-115.1715881,3a,75y,44.61h,90t/data=!3m4!1e1!3m2!1sMYVF8GPoYsxyj_PHJ1hHAw!2e0",
+      "imageDate": "October 2024",
+      "observed": "Higher north white mass with brick entrance band; lower south mass has rooftop mechanical equipment. Height difference visible; exact dimensions inferred."
+    },
+    {
+      "url": "https://www.cushmanwakefield.com/en/united-states/properties/for-sale/warehousedistribution/nv/las-vegas/2650-westwood-dr/s119447304s119447304-s",
+      "accessed": "2026-10-31",
+      "observed": "Broker identifies 19,127 SF building on 24,394 SF lot, built 1970; downloadable property brochure available, not yet inspected.",
+      "brochureStatus": "Linked PDF returned HTTP410 through browser fetch and direct download; use available Street View and listing photographs without waiting."
+    }
+  ],
+  "next": [
+    "Verify issue439 claim before authoring; branch from current origin/next after438 merges.",
+    "Inspect broker brochure alongside dated Street View to confirm height break and service elevations.",
+    "Group nearby claimed buildings when supported by references; no uploads."
+  ]
+}
