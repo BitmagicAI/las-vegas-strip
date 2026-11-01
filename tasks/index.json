@@ -1243,7 +1243,7 @@
     "No surveyed facade heights or exact bay schedule; photo fitting remains approximate",
     "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate",
     "Shopping mall interiors and public upper-floor routes not implemented",
-    "Next action recorded: Review the restored footprint with creator, then refine sculptural ornament, landscaping, surveyed heights and real public interior routes.",
+    "Next action recorded: Later refinement of surveyed dimensions, exact ornament and complete mall public circulation; no owner approval wait.",
     "Completion gates still pending: survey, massing, levels, facades, integration, runtime, visual (tools/resort-blocks/README.md)"
    ],
    "record": "tools/resort-blocks/forum-shops.json",
@@ -1264,11 +1264,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/build.py",
+     "tools/city-exteriors/audit-forum-entry.py",
      "tools/city-exteriors/audit-forum-shops.py",
      "tools/resort-blocks/bellagio_service.py",
      "tools/resort-blocks/build_paris_service.py",
-     "tools/resort-blocks/cosmo_frontage.py",
-     "tools/strip-landmarks/akita_plaza.py"
+     "tools/resort-blocks/cosmo_frontage.py"
     ]
    },
    "acceptance": [

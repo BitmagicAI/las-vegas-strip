@@ -8,6 +8,14 @@
     {
       "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11971,-115.17479&zoom=21&basemap=satellite",
       "review": "Two square fan cells aligned north/south with large six-blade fans; grey metal housings, connecting pipework, perimeter service platform. Exact building:part footprint is a hole in parent way/34068416."
+    },
+    {
+      "id": "cooling-aerial-20261031",
+      "title": "Google aerial of twin cooling fan housings",
+      "url": "https://www.google.com/maps/@36.11971,-115.17479,87m/data=!3m1!1e3",
+      "kind": "visual-reference",
+      "accessed": "2026-10-31",
+      "note": "Personally inspected; image date unavailable. Confirms north/south twin arrangement, not measured elevations or pipe details."
     }
   ],
   "remaining": [
@@ -106,5 +114,24 @@
       "build/strip-landmarks/forumCoolingTowers-exterior.glb": "ac8a83a5cad608fd58fc7ad8a6519dd15556eb831089f89565ec2e6f6b9ec248",
       "build/strip-landmarks/forumCoolingTowers-exterior-collision.json": "6d59d46828c768f844dc9c95504a2dd61d39a47f046957bfd002dace151ca562"
     }
-  }
+  },
+  "claim": {
+    "issue": 195,
+    "assignee": "janiverse",
+    "pullRequest": 445
+  },
+  "entryReviewPass": {
+    "status": "installed-reviewed-refinement-pending",
+    "evidence": "docs/project-records/forum-entry",
+    "remaining": [
+      "Service roof elevation16.8m inferred",
+      "Pipe routes and casing detail approximate; static fans",
+      "Local service-lane verification does not establish public roof access or driving performance"
+    ],
+    "performance": "docs/project-records/forum-entry/performance.json",
+    "checks": "docs/project-records/forum-entry/checks.json",
+    "captures": "build/city-exteriors/forum-cooling-after"
+  },
+  "updated": "2026-10-31",
+  "nextAction": "Later reference-supported mechanical detail and surveyed service roof elevations; retain current verified local service lane."
 }

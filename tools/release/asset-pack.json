@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1924,
- "bytes": 1172158319,
+ "bytes": 1172806087,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -42,8 +42,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_-1.bin",
-   "bytes": 690635,
-   "sha256": "ad4b08b3ebf82279631cbc4a95af7d32da36569414999917d75a591d1955a94c",
+   "bytes": 693423,
+   "sha256": "4c1cde0f351a8f9247ed783b86d23ba1c90facbd900ed0197ca198cc227cfaec",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "af81d19ebbdd2e3f5b5444f736a87b222b792c644a7a2cf630f9148a5b85c078",
+   "sha256": "d248e3db4f705d35e9a87f821a2218017994d65cb816f7dba265e232bb760c77",
    "kind": "runtime cell manifest"
   },
   {
@@ -8532,14 +8532,14 @@
   },
   {
    "path": "build/strip-landmarks/forumShops-exterior-collision.bin",
-   "bytes": 5240,
-   "sha256": "748d8b85c6a7321e41fc72c883de341dcd18e2c332c760ca4356527b6a58d43d",
+   "bytes": 5696,
+   "sha256": "707253866f80b2686c939086d0c916f6a64139b9e82257051688f774da31d032",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/forumShops-exterior.glb",
-   "bytes": 1940640,
-   "sha256": "1e89e92fed22856f4de48f669c03d8c1719dab0b6a2c7274d7a433cd543d1c9d",
+   "bytes": 2585164,
+   "sha256": "7286f873a7f0909ed3c365b0de9d6ce8483f9c3bd613c70aa602e963afec7055",
    "kind": "optimized"
   },
   {

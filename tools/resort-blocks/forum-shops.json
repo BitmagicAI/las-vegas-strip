@@ -2,10 +2,10 @@
   "version": 1,
   "id": "forum-shops",
   "name": "The Forum Shops at Caesars",
-  "updated": "2026-10-13",
+  "updated": "2026-10-31",
   "stage": "atrium-exterior-installed-and-inspected",
   "statusNote": "Missing mapped shopping mall exterior restored. Map micro-outlines at Strip entrance replaced with photo-fitted concave facade. Heights, detail and interiors remain incomplete.",
-  "nextAction": "Review the restored footprint with creator, then refine sculptural ornament, landscaping, surveyed heights and real public interior routes.",
+  "nextAction": "Later refinement of surveyed dimensions, exact ornament and complete mall public circulation; no owner approval wait.",
   "sources": [
     {
       "id": "creator-aerial",
@@ -78,6 +78,14 @@
       "accessed": "2026-10-13",
       "kind": "primary",
       "note": "130ft wide by100ft high grand entrance, three levels, steel/stud/plaster facade; facade undulates up to6ft. Supports height order and projecting detail. Not a dimensioned as-built plan."
+    },
+    {
+      "id": "contractor-2004-expansion",
+      "title": "Tutor Perini Forum Shops project photographs",
+      "url": "https://www.tutorperini.com/projects/mixed-use-retail/the-forum-shops-at-caesars/",
+      "kind": "visual-reference",
+      "accessed": "2026-10-31",
+      "note": "Exterior and interior photographs personally inspected; historical expansion, exact present tenant details not established."
     }
   ],
   "levels": [
@@ -361,5 +369,22 @@
       "typecheck": "passed",
       "cliVerify": "FAILED180s: menu,noPlay detected,30fps; dedicated probe selected character thenPlay and completed all three installed views. Not a full CLI pass."
     }
-  }
+  },
+  "claim": {
+    "issue": 25,
+    "assignee": "janiverse",
+    "pullRequest": 445
+  },
+  "entryReviewPass": {
+    "status": "installed-reviewed-refinement-pending",
+    "evidence": "docs/project-records/forum-entry",
+    "remaining": [
+      "Exact facade dimensions and sculptural detail remain unsurveyed",
+      "Complete mall public interiors and upper-floor connections remain unimplemented"
+    ],
+    "performance": "docs/project-records/forum-entry/performance.json",
+    "checks": "docs/project-records/forum-entry/checks.json",
+    "captures": "build/city-exteriors/forum-entry-after"
+  },
+  "status": "refinement-deferred"
 }

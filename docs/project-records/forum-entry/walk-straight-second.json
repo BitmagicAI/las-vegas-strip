@@ -1,0 +1,83 @@
+{
+  "routes": [
+    {
+      "name": "Forum Shops public frontage",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            8,
+            0.24,
+            -310
+          ],
+          "position": {
+            "x": 8.0023775100708,
+            "y": 0.15661147117614743,
+            "z": -309.9455871582031
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            8,
+            0.24,
+            -390
+          ],
+          "position": {
+            "x": 8.029448509216309,
+            "y": -0.009975404739379912,
+            "z": -389.6711120605469
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Cooling-tower service lane (not public access)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -166.65,
+            16.8,
+            -406.8
+          ],
+          "position": {
+            "x": -166.65003967285156,
+            "y": 16.82076957702637,
+            "z": -406.8009948730469
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -166.65,
+            16.8,
+            -418.8
+          ],
+          "position": {
+            "x": -166.64979553222656,
+            "y": 16.820781021118165,
+            "z": -418.4516296386719
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}
