@@ -1,7 +1,76 @@
 {
   "newTriangles": 27072,
   "finiteNondegenerateUnique": true,
-  "newSolidMaxX": 5.399021838580392,
-  "sidewalkRouteX": 18,
-  "note": "Source clearance for additions only; actual walking checks exercise the complete installed scene."
+  "routeXZ": [
+    [
+      6.532,
+      -390
+    ],
+    [
+      3.112,
+      -385
+    ],
+    [
+      0.2919999999999998,
+      -380
+    ],
+    [
+      -1.928,
+      -375
+    ],
+    [
+      -3.548,
+      -370
+    ],
+    [
+      -4.568,
+      -365
+    ],
+    [
+      -4.988,
+      -360
+    ],
+    [
+      -4.9,
+      -355
+    ],
+    [
+      -4.9,
+      -350
+    ],
+    [
+      -4.9,
+      -345
+    ],
+    [
+      -4.996,
+      -340
+    ],
+    [
+      -4.856,
+      -335
+    ],
+    [
+      -4.516,
+      -330
+    ],
+    [
+      -3.976,
+      -325
+    ],
+    [
+      -3.2359999999999998,
+      -320
+    ],
+    [
+      -2.2959999999999994,
+      -315
+    ],
+    [
+      -1.1560000000000006,
+      -310
+    ]
+  ],
+  "minAddedSolidClearance": 1.1759693828610456,
+  "note": "New-plinth body clearance only. Actual movement checks exercise the complete installed scene and the curved pedestrian strip."
 }

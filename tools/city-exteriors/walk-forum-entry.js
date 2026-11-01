@@ -1,5 +1,5 @@
 const frame=()=>new Promise(r=>requestAnimationFrame(r));
-const meta={routes:[{name:'Forum Shops public frontage',points:[[18,.24,-390],[18,.24,-310]]},{name:'Cooling-tower service lane (not public access)',points:[[-166.65,16.8,-418.8],[-166.65,16.8,-406.8]]}]};
+const meta={routes:[{name:'Forum Shops public frontage',points:[[6.532, 0.24, -390], [3.112, 0.24, -385], [0.292, 0.24, -380], [-1.928, 0.24, -375], [-3.548, 0.24, -370], [-4.568, 0.24, -365], [-4.988, 0.24, -360], [-4.9, 0.24, -355], [-4.9, 0.24, -350], [-4.9, 0.24, -345], [-4.996, 0.24, -340], [-4.856, 0.24, -335], [-4.516, 0.24, -330], [-3.976, 0.24, -325], [-3.236, 0.24, -320], [-2.296, 0.24, -315], [-1.156, 0.24, -310]]},{name:'Cooling-tower service lane (not public access)',points:[[-166.65,16.8,-418.8],[-166.65,16.8,-406.8]]}]};
 const allResults=[];
 for(const route of meta.routes){
 const points=route.points,walk=points.concat(points.slice(0,-1).reverse());
