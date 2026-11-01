@@ -45,7 +45,7 @@
     {
       "id": "harrahs",
       "name": "Harrah\u2019s Las Vegas",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "harrahs.json",
       "deferral": {
         "date": "2026-10-09",
@@ -1892,5 +1892,5 @@
       "record": "westwood-commercial.json"
     }
   ],
-  "active": "springhill"
+  "active": "harrahs"
 }

@@ -383,5 +383,21 @@
       "build/strip-landmarks/linqParking-exterior.glb": "a4b00db0ce346c74ae43e897bd32b8a68841b6647eadea637967ec0afe25c491",
       "src/work/StripLandmarks.ts": "209ebae1c3fed8cbdfaa1feab88146b014dd0ef24e9defacd2ea22de45146291"
     }
+  },
+  "claim": {
+    "issue": 23,
+    "assignee": "janiverse",
+    "pullRequest": 443
+  },
+  "poolDeckPass": {
+    "status": "optimized-install-baking",
+    "sourceRegister": "docs/project-records/harrahs-linq-decks/references.json",
+    "sourceRoutes": "docs/project-records/harrahs-linq-decks/source-routes.json",
+    "scope": "Original pool courtyard surfaces and furnishings; preserve all existing interiors/colliders; replace only conflicting Harrahs generic roof surface/plant; local deck loops only",
+    "remaining": [
+      "Installed visual, walk, matched performance and local step-7 gates pending",
+      "Pool dimensions and deck heights inferred; continuous lift/guest access not established",
+      "Exact mural, landscaping and unseen service boundaries remain unmodelled"
+    ]
   }
 }

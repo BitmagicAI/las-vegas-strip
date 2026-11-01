@@ -1070,8 +1070,8 @@
      "tools/strip-landmarks/next_arrivals.py",
      "tools/strip-landmarks/export.py",
      "tools/strip-landmarks/build_harrahs_exterior.py",
-     "tools/strip-landmarks/harrahs_roof_detail.py",
-     "tools/city-exteriors/audit-harrahs-roof.py"
+     "tools/strip-landmarks/build_harrahs_linq_decks.py",
+     "tools/strip-landmarks/harrahs_roof_detail.py"
     ]
    },
    "acceptance": [

@@ -432,5 +432,21 @@
         "p95": 30.899999856948853
       }
     ]
+  },
+  "claim": {
+    "issue": 22,
+    "assignee": "janiverse",
+    "pullRequest": 443
+  },
+  "poolDeckPass": {
+    "status": "optimized-install-baking",
+    "sourceRegister": "docs/project-records/harrahs-linq-decks/references.json",
+    "sourceRoutes": "docs/project-records/harrahs-linq-decks/source-routes.json",
+    "scope": "Original pool courtyard surfaces and furnishings; preserve all existing interiors/colliders; replace only conflicting Harrahs generic roof surface/plant; local deck loops only",
+    "remaining": [
+      "Installed visual, walk, matched performance and local step-7 gates pending",
+      "Pool dimensions and deck heights inferred; continuous lift/guest access not established",
+      "Exact mural, landscaping and unseen service boundaries remain unmodelled"
+    ]
   }
 }
