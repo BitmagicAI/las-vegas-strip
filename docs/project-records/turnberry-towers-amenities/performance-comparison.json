@@ -1,0 +1,37 @@
+{
+  "resolution": "960x540",
+  "quality": "ultra",
+  "settleFrames": 300,
+  "measuredFrames": 180,
+  "views": [
+    {
+      "name": "front",
+      "p50Before": 16.7,
+      "p50After": 16.6,
+      "p95Before": 17.5,
+      "p95After": 19
+    },
+    {
+      "name": "west-pool",
+      "p50Before": 16.7,
+      "p50After": 17,
+      "p95Before": 17.5,
+      "p95After": 22.9
+    },
+    {
+      "name": "east-pool",
+      "p50Before": 16.7,
+      "p50After": 16.7,
+      "p95Before": 17.5,
+      "p95After": 17.8
+    },
+    {
+      "name": "tennis",
+      "p50Before": 16.7,
+      "p50After": 16.7,
+      "p95Before": 18,
+      "p95After": 18.9
+    }
+  ],
+  "limitation": "West pool p95 is 5.4 ms slower in final run; median +0.3 ms. Other medians stable. No no-regression or driving benchmark claim."
+}

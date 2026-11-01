@@ -2778,12 +2778,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Planting, pool furniture, tennis fencing, arrival canopies and detailed entrance finishes remain unimplemented.",
-    "Front facade white piers and exact crown subdivision still need closer matched reference comparison.",
-    "No full public-route traversal; main tower colliders and guest rooms preserved.",
-    "Corrected pool courts inspected inside site; no overlap with Karen Avenue or central arrival drive."
+    "Arrival canopies and detailed entrance finishes remain deferred: this pass is scoped to the paired pool and tennis courts.",
+    "Front facade white piers and exact crown subdivision need closer matched reference comparison; existing tower geometry is preserved.",
+    "No full public-route traversal; main tower colliders and guest rooms are preserved. Scoped pool/court routes are recorded separately.",
+    "Furniture and planting density are reduced; positions and3m tennis fences/2.4m open gates are inferred, not surveyed.",
+    "South tennis court is labeled tennis/pickleball in current aerial; exact repainting not verified, existing tennis lines preserved."
    ],
    "record": "tools/resort-blocks/turnberry-towers.json",
    "buildings": [
@@ -2808,7 +2809,10 @@
     ],
     "builders": [
      "tools/strip-landmarks/turnberry_towers.py",
+     "tools/city-exteriors/test-turnberry-amenities.mjs",
      "tools/highrises/catalog.py",
+     "tools/strip-landmarks/turnberry_amenities.py",
+     "tools/city-exteriors/install-turnberry-amenities.mjs",
      "tools/strip-landmarks/build_turnberry_towers.py"
     ]
    },
