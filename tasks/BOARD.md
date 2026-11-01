@@ -59,7 +59,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-westgate` | M | P2 | 3 | Refine the exterior of Westgate |
 | `ext-springhill` | M | P2 | 3 | Refine the exterior of SpringHill Suites |
 | `ext-trump` | M | P2 | 3 | Refine the exterior of Trump International |
-| `ext-elara` | M | P2 | 3 | Refine the exterior of Elara |
+| `ext-elara` | M | P2 | 4 | Refine the exterior of Elara |
 | `ext-grand-chateau` | L | P2 | 6 | Refine the exterior of Marriott Grand Chateau |
 | `ext-signature` | M | P2 | 4 | Refine the exterior of The Signature at MGM Grand |
 | `ext-panorama` | M | P2 | 3 | Refine the exterior of Panorama Towers |

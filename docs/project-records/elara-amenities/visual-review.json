@@ -1,0 +1,29 @@
+{
+  "baseline": {
+    "views": [
+      "front",
+      "pool",
+      "arrival",
+      "overview"
+    ],
+    "inspected": true,
+    "finding": "All cameras valid exterior views before edits."
+  },
+  "preview": {
+    "views": [
+      "front",
+      "pool",
+      "arrival",
+      "overview"
+    ],
+    "inspected": true,
+    "finding": "Stepped pool, two-level galleries, yellow canopies, palms and stair installed. Preview rail panels were opaque; exporter corrected to translucent glass and outer edge guards added, pending installation and final inspection."
+  },
+  "remaining": "Exact site elevation, curved north cabana gallery, complete cabana count, second spa, pylon/service frontage and full interior links remain deferred.",
+  "initialWalk": {
+    "passed": true,
+    "segments": 80,
+    "endpointImagesInspected": 14,
+    "note": "All lower paths, spiral up/down and upper galleries passed. Added outer guards and explicit stair-to-gallery connection now being rechecked."
+  }
+}

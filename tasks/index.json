@@ -3186,11 +3186,12 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Exact glass color and reflected surroundings need daylight comparison.",
     "Pool landscaping, sign pylon and canopy details incomplete.",
-    "Full sidewalk/interior circulation remains unverified."
+    "Full sidewalk/interior circulation remains unverified.",
+    "Amenity heights, exact north gallery curve, full33 cabanas, second hot tub and street-side raised podium remain approximations/incomplete."
    ],
    "record": "tools/resort-blocks/elara.json",
    "buildings": [
@@ -3209,12 +3210,12 @@
      "tools/resort-blocks/elara.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-elara-amenities.mjs",
+     "tools/strip-landmarks/elara_amenities.py",
      "tools/highrises/interiors.py",
      "tools/city-exteriors/fit-elara-collision.py",
      "tools/strip-landmarks/elara_exterior.py",
-     "tools/city-exteriors/test-elara.mjs",
-     "tools/highrises/catalog.py",
-     "tools/strip-landmarks/build_elara.py"
+     "tools/city-exteriors/test-elara-amenities.mjs"
     ]
    },
    "acceptance": [

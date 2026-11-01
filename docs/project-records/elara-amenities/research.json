@@ -1,5 +1,5 @@
 {
-  "status": "Claim48 assigned janiverse verified; official aerial pool photograph personally inspected, other visual references pending.",
+  "status": "Claim48 verified; four baseline cameras and official aerial/day pool photographs plus Google aerial and January2025 Street View personally inspected.",
   "sources": [
     {
       "url": "https://www.hiltongrandvacations.com/en/resorts-and-destinations/las-vegas/elara-a-hilton-club",
@@ -16,6 +16,19 @@
     {
       "url": "https://www.hilton.com/im/en/LASEHGV/23242634/lascs-hi-res-pool-aerial.jpg?impolicy=crop&cw=4215&ch=2810&gravity=NorthWest&xposition=392&yposition=0&rw=640&rh=427",
       "observations": "Personally inspected official aerial: stepped irregular pool, lounge ledges, curved north cabana row, yellow shade canopies at south/west, two-level deck, palms, umbrellas, circular southeast pavilion and southwest spiral stair. Existing plain pool footprint requires comparison. Photo date unknown."
+    },
+    {
+      "url": "https://www.hilton.com/im/en/LASEHGV/23242643/lascs-hi-res-pool-day.jpg?impolicy=crop&cw=4215&ch=2810&gravity=NorthWest&xposition=392&yposition=0&rw=640&rh=427",
+      "observations": "Personally inspected: planted palms, cream loungers, glass rail/gold posts, elevated deck, square spa, lower pool, broad shelf and curved north cabana gallery. Date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1083,-115.1688&zoom=20&basemap=satellite",
+      "observations": "Personally inspected southeast pavilion and south yellow canopy row; pool partly outside frame. Imagery date unavailable."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=linSBqw-qXmEhERftPZXGA&heading=0&pitch=5",
+      "observations": "January2025 Street View personally inspected: blue tower, low south service facade, raised southwest pool terrace behind sign, arrival canopy east. No surveyed heights."
     }
-  ]
+  ],
+  "uncertainty": "Pool outline, deck heights, cabana count/spacing, spiral stair dimensions and pavilion proportions inferred; existing ground datum retained. No guest interior or tower replacement."
 }

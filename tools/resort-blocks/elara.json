@@ -16,12 +16,12 @@
   "remaining": [
     "Exact glass color and reflected surroundings need daylight comparison.",
     "Pool landscaping, sign pylon and canopy details incomplete.",
-    "Full sidewalk/interior circulation remains unverified."
+    "Full sidewalk/interior circulation remains unverified.",
+    "Amenity heights, exact north gallery curve, full33 cabanas, second hot tub and street-side raised podium remain approximations/incomplete."
   ],
   "notes": [
     "Mapped relation/5342155 includes south-east low canopy in the 183m footprint. Must separate canopy from tower before detailing.",
-    "Preserve existing guest core and Planet Hollywood/Miracle Mile ownership.",
-    "Elara baseline probe in flight."
+    "Preserve existing guest core and Planet Hollywood/Miracle Mile ownership."
   ],
   "geometry": {
     "triangles": 10319,
@@ -43,5 +43,14 @@
     "build/city-exteriors/elara-before",
     "build/city-exteriors/elara-after",
     "build/city-exteriors/elara-final"
-  ]
+  ],
+  "amenitiesPass": {
+    "status": "installed-preview-walk-in-progress",
+    "issue": 48,
+    "pr": 465,
+    "record": "docs/project-records/elara-amenities",
+    "scope": "Replace only southwest pool deck geometry; preserve 13 tower/arrival/roof nodes and111 collision triangles.",
+    "preview": "Four matching daylight views personally inspected; stepped pool, seven yellow sail cabanas, six lower cabanas, spiral stair, upper galleries, seven palms and southeast pavilion.",
+    "bake": "Not yet run."
+  }
 }
