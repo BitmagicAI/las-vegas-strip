@@ -39,7 +39,7 @@
     "visual": "All three installed views inspected; silhouette now narrow, no duplicate tall podium. Glass reflection/roughness still needs daylight refinement."
   },
   "amenityPass": {
-    "status": "installed-preview-under-review",
+    "status": "installed-verified-refinement-deferred",
     "record": "docs/project-records/trump-amenities",
     "authoredTriangles": 6219,
     "addedCollisionTriangles": 889,
@@ -47,6 +47,18 @@
     "removedPoolNodes": 3,
     "removedPoolCollisionTriangles": 81,
     "retainedCollisionTriangles": 140,
-    "scope": "Correct prior overlong pool, infill ends, navy awning, 26 loungers, five parasols, seven palms and south planted edge/rail."
+    "scope": "Correct prior overlong pool, infill ends, navy awning, 26 loungers, five parasols, seven palms and south planted edge/rail.",
+    "normalWalk": "Eight bidirectional deck/end-passage segments PASS, all eight endpoint captures personally inspected.",
+    "preview": "All four installed preview views and baseline views personally inspected; source dimensions corrected, remaining width/elevation and density inferred.",
+    "daylight": "All four final installed matching daylight views personally inspected.",
+    "performance": "Median16.6\u201316.7ms; p9517.3/17.3/17.5/19.3ms versus baseline17.3/17.3/17.4/27.5ms. Fixed-camera local sample only.",
+    "storage": {
+      "bakes": 1,
+      "newLfsBytes": 1043272,
+      "objects": 4,
+      "unchangedCellFiles": 276,
+      "totalCellFiles": 278
+    },
+    "checks": "All step7 local gates PASS; nine smoke stops placed, zero request/page/console errors."
   }
 }
