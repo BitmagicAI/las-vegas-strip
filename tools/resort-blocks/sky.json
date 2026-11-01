@@ -36,9 +36,9 @@
   ],
   "remaining": [
     "Precise curved corners and penthouse roof forms still differ from reference.",
-    "Pool terrace, entrance fittings and landscaping are not finished.",
-    "Corrected aerial and both street views inspected. Main mass improved; curved corner/penthouse and full-site detail remain.",
-    "Public routes and balcony access not traversed."
+    "Pool terrace and dense landscaping remain unfinished. Arrival guardhouse/canopy/islands are now installed approximate interpretations; precise branding, metal gates, planting and finish detail remain incomplete.",
+    "Prior aerial and street massing retained; exact canopy/guardhouse dimensions and frontage registration are photo-estimated.",
+    "Both entry lanes traversed out/back with ordinary movement; all other public routes and private balcony access remain unverified."
   ],
   "geometry": {
     "triangles": 11713,
@@ -65,10 +65,44 @@
     "pullRequest": 451
   },
   "courtyardArrivalPass": {
-    "status": "authored-verification-in-progress",
+    "status": "installed-local-verification-passed",
     "scope": "Closed guardhouse, slotted canopy with two clear lanes, low hedge islands and unlit bollard fixtures.",
     "references": "docs/project-records/hgv-sky/checkpoint.json",
     "evidence": "docs/project-records/hgv-sky",
-    "estimates": "Furniture counts, canopy/guardhouse dimensions and positions fitted approximately; retain prior pool/tower geometry."
+    "estimates": "Furniture counts, canopy/guardhouse dimensions and positions fitted approximately; retain prior pool/tower geometry.",
+    "checks": "docs/project-records/hgv-sky/checks.json",
+    "performance": {
+      "before": "docs/project-records/hgv-sky/performance-before-final.json",
+      "after": "docs/project-records/hgv-sky/performance-after.json",
+      "p95BeforeAfterMs": {
+        "front": [
+          28.5,
+          18.9
+        ],
+        "pool-overview": [
+          26.5,
+          18.6
+        ],
+        "pool-walk": [
+          26.1,
+          19
+        ],
+        "sky-front": [
+          20.8,
+          18.7
+        ],
+        "sky-arrival": [
+          24.6,
+          18.7
+        ],
+        "sky-aerial": [
+          37.5,
+          24.4
+        ]
+      },
+      "method": "960x540 ultra,180frames/view,same cameras; shared workstation variation, no broad gain claim"
+    },
+    "newGroupedLfsBytes": 1543515,
+    "cellDelta": "Only LODcell1,-4 and manifest changed;276othercellfilesbyteidentical"
   }
 }

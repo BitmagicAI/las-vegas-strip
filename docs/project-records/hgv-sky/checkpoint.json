@@ -1,5 +1,5 @@
 {
-  "status": "research and baseline; no asset edits yet",
+  "status": "All local step7 checks passed; ready for merge",
   "pullRequest": 451,
   "base": "60e15fa",
   "claims": [
@@ -11,28 +11,59 @@
     {
       "url": "https://www.google.com/maps/@36.1396,-115.1615,200m/data=!3m1!1e3",
       "provider": "Google Maps aerial",
-      "inspection": "Personally inspected north-up aerial: Hilton west pool court with dense canopy and blue shade, Sky north entrance in gap between properties. Imagery acquisition date not shown."
+      "inspection": "Personally inspected north-up aerial: Hilton west pool court with dense canopy and blue shade, Sky north entrance in gap between properties. Imagery acquisition date not shown.",
+      "title": "Google Maps aerial \u2014 Hilton Boulevard / Sky site reference"
     },
     {
       "url": "https://www.hiltongrandvacations.com/en/resorts-and-destinations/las-vegas/the-boulevard-a-hilton-grand-vacations-club",
       "provider": "Hilton Grand Vacations",
-      "inspection": "Official amenities photograph personally inspected: palms, curved pool island, terracotta urns on piers, blue umbrellas, dark wicker lounge seating around circular firetable. Image alt filename includes 2019; not proof of current exact furniture positions."
+      "inspection": "Official amenities photograph personally inspected: palms, curved pool island, terracotta urns on piers, blue umbrellas, dark wicker lounge seating around circular firetable. Image alt filename includes 2019; not proof of current exact furniture positions.",
+      "title": "Hilton Grand Vacations \u2014 Hilton Boulevard / Sky site reference"
     },
     {
       "url": "https://commons.wikimedia.org/wiki/File:Sky_Las_Vegas.jpg",
       "provider": "AJFU, own photograph dated 2011-01-05",
-      "inspection": "Sky guardhouse, slotted portal beams, rectangular metal gates, raised hedge islands and palms. Historical reference requiring current corroboration. No pixels reused."
+      "inspection": "Sky guardhouse, slotted portal beams, rectangular metal gates, raised hedge islands and palms. Historical reference requiring current corroboration. No pixels reused.",
+      "title": "AJFU, own photograph dated 2011-01-05 \u2014 Hilton Boulevard / Sky site reference"
     },
     {
-      "url": "https://www.google.com/maps/@36.1392038,-115.1604208,627a,75y,289.61h,90t/data=!3m7!1e1!3m5!1s1dp_xPbgzxvoT1qRhdIReA!2e0",
+      "url": "https://www.google.com/maps/@36.1392038,-115.1604208,627a,75y,289.61h,90t/data=!3m7!1e1!3m5!1s1dp_xPbgzxvoT1qRhdIReA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D1dp_xPbgzxvoT1qRhdIReA%26yaw%3D289.61!7i16384!8i8192",
       "provider": "Google Street View",
       "imagery": "October 2026",
-      "inspection": "Personally inspected Hilton south frontage with palms, fence, bus shelters and bollards; Sky guardhouse visible at left. Exact dimensions remain inferred."
+      "inspection": "Personally inspected October2026 panorama, then turned south: Hilton south frontage palms/fence/shelters/bollards and Sky guardhouse/slotted canopy visible. Current imagery corroborates historical entrance structure; exact dimensions and metal gate details still inferred.",
+      "title": "Google Street View \u2014 Hilton Boulevard / Sky site reference"
     }
   ],
   "uncertainty": [
     "Existing pool outlines and datums are retained estimates, not surveyed.",
     "Exact furniture/plant counts and Sky gate dimensions need fitted local interpretation.",
     "Full tower roof corrections, private balcony access and all public interiors are outside this focused pass and remain in block records."
-  ]
+  ],
+  "baseline": "build/city-exteriors/hgv-sky-before-final",
+  "preview": "build/city-exteriors/hgv-sky-preview",
+  "baselineCorrection": "Initial Sky arrival camera was blocked by Hilton. Corrected and recaptured all six baseline views with old GLBs before final model installation. Discarded interrupted capture during export.",
+  "visualReview": "All six installed preview views inspected. Original pools, towers and roads retained. Hilton court furniture/urns/palms and Sky open-lane guardhouse/canopy visible. Garden density, facade detail and signage remain coarse approximations; no full-block or photorealistic completion claim.",
+  "checks": {
+    "typecheck": "PASS",
+    "scopedTests": "PASS3/3",
+    "geometry": "PASS15Hilton+9Sky groups, labels and prior collision preserved",
+    "staticRoutes": "PASS1191samples,39terrain/roadfloor locations verified by normal walking",
+    "normalWalk": "PASS10segments,6endpointimages inspected",
+    "optimization": "PASSbothmodels level+WebP installed",
+    "recordReview": "PASS",
+    "publicCheck": "PASSpreexisting inventory emailwarning only",
+    "runtimeModels": "PASS2changedGLBs,0unoptimized",
+    "bake": "PASScurrent,onebake,zero geographicexports",
+    "package": "PASS1926present,0missing,0unoptimized",
+    "installedViews": "PASS6finalsamecamera daylight views personally inspected",
+    "smoke": "PASS9stops,0failedrequests,0pageerrors,0consoleerrors,0unplaced",
+    "release": "CDN/publishedcoldload reserved for owner release"
+  },
+  "installedModelHashes": {
+    "build/strip-landmarks/hgvExterior-exterior.glb": "eb38467a6adde65d2e89914e93447aeac63dd95988e2c923257739824847af14",
+    "build/strip-landmarks/hgvExterior-exterior-collision.bin": "0d414f64ee67bd28e53299980b3933947b55f33dc59d3815fe3daff58bf13649",
+    "build/strip-landmarks/skyExterior-exterior.glb": "5ce4e4b0ab0b3ce810d61da67e90568f37da5efd4ece18d18864eb71686a62dd",
+    "build/strip-landmarks/skyExterior-exterior-collision.bin": "501f789afd862cde92522d7f248ee8552a8853ed2108302dc10d7024fad5e4e3"
+  },
+  "finalViews": "build/city-exteriors/hgv-sky-after"
 }
