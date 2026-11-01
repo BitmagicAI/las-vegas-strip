@@ -6,7 +6,7 @@ from common import *
 import palms_exterior as P
 from rio_amenities import AmenityMeshes
 REC=Path('docs/project-records/rio-palms-amenities')
-Y=.32
+Y=.335
 
 def build(B):
  B.property='palmsAmenities-exterior';B.source='palms-amenities';B.detail=0

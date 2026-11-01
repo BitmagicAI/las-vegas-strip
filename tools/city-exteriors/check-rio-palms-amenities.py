@@ -12,7 +12,7 @@ for key in ['rio','palms']:
   v=np.array(g['vertices']).reshape(-1,3);f=np.array(g['faces']).reshape(-1,3);t=v[f];total+=len(f);bad+=int((np.linalg.norm(np.cross(t[:,1]-t[:,0],t[:,2]-t[:,0]),axis=1)<1e-8).sum())
  assert bad==0,(key,bad)
  collision=json.loads(Path('build/strip-landmarks/'+key+'Amenities-exterior-collision.json').read_text());v=np.array(collision['vertices']).reshape(-1,3);t=v[np.array(collision['indices']).reshape(-1,3)]
- floors=unary_union([Polygon(a[:,[0,2]]) for a in t if np.max(abs(a[:,1]-.32))<.001 and Polygon(a[:,[0,2]]).area>1e-8])
+ floors=unary_union([Polygon(a[:,[0,2]]) for a in t if np.max(abs(a[:,1]-(.32 if key=='rio' else .335)))<.001 and Polygon(a[:,[0,2]]).area>1e-8])
  samples=0;unsupported=0
  for route in json.loads((REC/(key+'-routes.json')).read_text()):
   for a,b in zip(route['points'],route['points'][1:]):
