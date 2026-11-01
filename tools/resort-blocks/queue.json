@@ -221,7 +221,7 @@
     {
       "id": "springhill",
       "name": "SpringHill Suites",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "springhill.json"
     },
     {
@@ -1888,5 +1888,5 @@
       "record": "westwood-commercial.json"
     }
   ],
-  "active": "westwood-commercial"
+  "active": "springhill"
 }

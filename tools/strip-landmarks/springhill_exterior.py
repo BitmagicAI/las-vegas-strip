@@ -7,6 +7,8 @@ KEY='springhillExterior'
 def exterior(B):
  B.property=KEY+'-exterior';B.detail=0
  rs=[dict(BYID[i],shape=footprint(i),height=h) for i,h in [('way/543640999',74),('way/313762434',19)]]
+ # The eastern map projection is the arrival canopy, not a 19 m garage wing.
+ rs[1]['shape']=rs[1]['shape'].difference(rs[0]['shape']).intersection(box(-10000,-10000,1598.4,10000))
  surf=BuildingSurfaces(rs);access=Access(next(p for p in json.load(open('build/highrises/plan.json')) if p['key']=='springhill'))
  pool=box(1543,-2138,1551,-2133)
  for r in rs:
@@ -61,4 +63,6 @@ def exterior(B):
  for a,b in zip(ps,ps[1:]):B.face('hgv-pool-tile',[(a[0],72.8,a[1]),(b[0],72.8,b[1]),(b[0],74.1,b[1]),(a[0],74.1,a[1])],True)
  B.box('sh-white',(1570,75.8,-2134.5),(14,3.6,12),True)
  B.box('sh-roof',(1570,77.65,-2134.5),(13.4,.1,11.4))
- return dict(key=KEY,name='SpringHill Suites exterior and garage',center=[1570,0,-2130],bounds=[1535,-2150,1608,-2105],building='springhill',structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
+ from springhill_arrival_deck import details
+ routes=details(B)
+ return dict(key=KEY,name='SpringHill Suites exterior and garage',center=[1570,0,-2130],bounds=[1535,-2150,1608,-2105],building='springhill',structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=routes,hotelSources=[],views={})

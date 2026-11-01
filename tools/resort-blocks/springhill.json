@@ -1,6 +1,6 @@
 {
   "id": "springhill",
-  "status": "refinement-deferred",
+  "status": "active",
   "references": [
     {
       "url": "https://www.marriott.com/en-us/hotels/laspr-springhill-suites-las-vegas-convention-center/photos/",
@@ -14,8 +14,10 @@
     }
   ],
   "remaining": [
-    "Exact arrival facade/signage and canopy require further fit.",
-    "Pool deck furnishings and route traversal unfinished; tower proportions use mapped data."
+    "Finish installed walk, visual, optimization, bake and package gates.",
+    "The photographed east arrival does not yet connect to the existing generic west lobby; preserve current guest interiors in this pass.",
+    "Exact surveyed dimensions, unseen elevations and continuous guest-lift-to-roof access remain unestablished.",
+    "Rooftop mural is not reproduced; furniture placement is inferred from official images."
   ],
   "geometry": {
     "triangles": 17494,
@@ -37,5 +39,20 @@
     "typecheck": "passed",
     "visual": "All three final installed views inspected; roof enclosure visible in aerial. No obvious overlapping surfaces.",
     "collision": "Roof enclosure has simple collision. Existing highrise collision contains no all-74m roof triangles; no cut required."
+  },
+  "claim": {
+    "issue": 44,
+    "assignee": "janiverse",
+    "pullRequest": 442
+  },
+  "mappedIds": [
+    "way/543640999",
+    "way/313762434"
+  ],
+  "refinementSources": "docs/project-records/springhill-refinement/references.json",
+  "authoringStatus": "Source review and matching baseline complete; targeted installation in progress",
+  "refinementChecks": {
+    "sourceClearance": "PASS: 852 roof floor samples, no body-width obstructions; ground apron floor is checked after installation",
+    "cameraPlacement": "PASS: all four origins outside mapped building volumes"
   }
 }

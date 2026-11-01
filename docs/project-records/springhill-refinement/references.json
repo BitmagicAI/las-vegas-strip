@@ -1,0 +1,33 @@
+{
+  "issue": 44,
+  "pullRequest": 442,
+  "base": "origin/next c1a2d07",
+  "sources": [
+    {
+      "url": "https://www.marriott.com/en-us/hotels/laspr-springhill-suites-las-vegas-convention-center/photos/",
+      "observed": "Official entrance: broad projecting canopy, thin upper steel louvers, white lettering, six downlights, paired flanking glazed bays, address2989. Roof pool: railings, sling loungers, small teal tables and ladder rails; dimensions inferred."
+    },
+    {
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/sh-laspr-entrance-84194%3AClassic-Hor?fit=constrain&wid=1336",
+      "observed": "Entrance photograph personally inspected."
+    },
+    {
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/sh-laspr-outdoor-rooftop-pool16862-63413%3AClassic-Hor?fit=constrain&wid=1336",
+      "observed": "Pool photograph personally inspected; wall mural is not copied as a texture."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1350845,-115.1547596,3a,75y,300h,90t/data=!3m4!1e1!3m2!1sw3ud8JX1K0nAHq9mYjHPbQ!2e0",
+      "imageDate": "February2026",
+      "observed": "Street View from ParadiseRoad confirms canopy on east short face, garage open levels to its south, white tower and front planting."
+    },
+    {
+      "url": "https://www.google.com/maps/place/SpringHill+Suites+by+Marriott+Las+Vegas+Convention+Center/@36.135193,-115.1567495,347m/data=!3m1!1e3",
+      "observed": "Aerial: compact west roof pool, southern garage, wraparound driveway; exact measurements uncertain."
+    }
+  ],
+  "decisions": [
+    "Existing generic hotel lobby enters on west side; retain it and guest interiors. New east canopy is an exterior arrival treatment, not a claimed new working lobby connection.",
+    "Roof routes validate local deck movement only; continuous guest-lift-to-roof access is not established.",
+    "Retain mapped heights and current pool footprint; add original furnishings informed by official photographs."
+  ]
+}
