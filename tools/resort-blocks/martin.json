@@ -105,13 +105,44 @@
     "build/city-exteriors/martin-pool-final"
   ],
   "amenitiesPass": {
-    "status": "installed-verification-in-progress",
+    "status": "installed-verified-refinement-deferred",
     "issue": 52,
     "pr": 467,
     "record": "docs/project-records/panorama-martin-amenities",
-    "visual": "Four matching installed daylight previews inspected; final baked capture pending.",
-    "collision": "3003 grouped packed route samples PASS; 55 Panorama roof, 29 Martin roof and 306 Martin approach samples PASS. Panorama 24 circuit movement segments and 6 combined retained lobby approach segments passed; corrected Martin loop recheck in progress.",
+    "visual": "Four final matching daylight views personally inspected after the single bake; retained lobby interiors also inspected in normal movement.",
+    "collision": "3003 grouped packed route samples PASS, zero unsupported. 24 Panorama and 18 corrected Martin circuit movement segments plus 6 retained lobby approach segments PASS; all endpoint captures inspected.",
     "source": "tools/strip-landmarks/panorama_martin_amenities.py",
-    "bake": "Not yet run."
+    "bake": "One bake; 276/278 cell files byte-identical, only baked cell -2,1 and its manifest changed.",
+    "newLfsBytesGrouped": 1397319,
+    "performance": [
+      {
+        "name": "front",
+        "beforeP50": 27.59999990463257,
+        "afterP50": 26.40000009536743,
+        "beforeP95": 45.60000014305115,
+        "afterP95": 42.09999990463257
+      },
+      {
+        "name": "pool",
+        "beforeP50": 36.89999985694885,
+        "afterP50": 34,
+        "beforeP95": 56.299999952316284,
+        "afterP95": 38.5
+      },
+      {
+        "name": "arrival",
+        "beforeP50": 27.5,
+        "afterP50": 25.200000047683716,
+        "beforeP95": 42.700000047683716,
+        "afterP95": 43.90000009536743
+      },
+      {
+        "name": "overview",
+        "beforeP50": 32.799999952316284,
+        "afterP50": 33.09999990463257,
+        "beforeP95": 55.39999985694885,
+        "afterP95": 48.09999990463257
+      }
+    ]
   }
 }

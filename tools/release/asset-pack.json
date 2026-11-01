@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1190206475,
+ "bytes": 1190429466,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -168,8 +168,8 @@
   },
   {
    "path": "build/baked/cells/cell--2_1.bin",
-   "bytes": 249119,
-   "sha256": "9ac2000e709db805364839094670139fe98091a0cfc20dfc2fb2ccd0a53bbd7b",
+   "bytes": 252310,
+   "sha256": "5d1df6f3df5dbc65515831dbe8a69285aa4f9361c8daf354a1fba06c3cbfcabb",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "c926d99b2ee2d0fa047328961fc315e525fb98c75c8ae00f7ed166276ce0bfc1",
+   "sha256": "74d695e8f54b7448c978bdc32f15d82d7bbeb5833174e82ea0eac444d90aa3a6",
    "kind": "runtime cell manifest"
   },
   {
@@ -9516,14 +9516,14 @@
   },
   {
    "path": "build/strip-landmarks/martinExterior-exterior-collision.bin",
-   "bytes": 1904,
-   "sha256": "b017d5dac90740fe74e226972736f9728831807ed478398dd459d0ec974e2eb0",
+   "bytes": 3660,
+   "sha256": "d1db4e714a2f8ded19b1764e560d817ffe5eab6b29d2dcd13d4b96bc0a5393b6",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/martinExterior-exterior.glb",
-   "bytes": 546160,
-   "sha256": "df802cf8c4362f68bc2bc2985df2c2621fe6e3ee4a7b431369602697b8d8f503",
+   "bytes": 686704,
+   "sha256": "93284a51adf7a9f5e5d539a244ddf27f23fa94b3beb3033b1ca35d3ca87f918a",
    "kind": "optimized"
   },
   {
@@ -10044,14 +10044,14 @@
   },
   {
    "path": "build/strip-landmarks/panoramaExterior-exterior-collision.bin",
-   "bytes": 3124,
-   "sha256": "7c27914685b971b2bc7f6dd825d6dfe562a606ef21d94f7e48b652d50908694b",
+   "bytes": 5076,
+   "sha256": "b2e6f12ddbfd55c83cd7b21a42f9f7dd8ffec4cef27a36e77f7a8a203601ec9c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/panoramaExterior-exterior.glb",
-   "bytes": 360220,
-   "sha256": "d9a352d4db5549626350cee602d1139cc58defd99d0719001cd582cbc9f89170",
+   "bytes": 435768,
+   "sha256": "6d6f7e9999ea2a1bdedee689896dfb4bb07a01e66bdb38bbb65c44bc9d80251e",
    "kind": "optimized"
   },
   {

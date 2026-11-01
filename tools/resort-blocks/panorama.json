@@ -123,13 +123,44 @@
   },
   "evidence": "build/city-exteriors/panorama-corrected",
   "amenitiesPass": {
-    "status": "installed-verification-in-progress",
+    "status": "installed-verified-refinement-deferred",
     "issue": 51,
     "pr": 467,
     "record": "docs/project-records/panorama-martin-amenities",
-    "visual": "Four matching installed daylight previews inspected; final baked capture pending.",
-    "collision": "3003 grouped packed route samples PASS; 55 Panorama roof, 29 Martin roof and 306 Martin approach samples PASS. Panorama 24 circuit movement segments and 6 combined retained lobby approach segments passed; corrected Martin loop recheck in progress.",
+    "visual": "Four final matching daylight views personally inspected after the single bake; retained lobby interiors also inspected in normal movement.",
+    "collision": "3003 grouped packed route samples PASS, zero unsupported. 24 Panorama and 18 corrected Martin circuit movement segments plus 6 retained lobby approach segments PASS; all endpoint captures inspected.",
     "source": "tools/strip-landmarks/panorama_martin_amenities.py",
-    "bake": "Not yet run."
+    "bake": "One bake; 276/278 cell files byte-identical, only baked cell -2,1 and its manifest changed.",
+    "newLfsBytesGrouped": 1397319,
+    "performance": [
+      {
+        "name": "front",
+        "beforeP50": 34.89999985694885,
+        "afterP50": 34.700000047683716,
+        "beforeP95": 61.200000047683716,
+        "afterP95": 42.299999952316284
+      },
+      {
+        "name": "pool1",
+        "beforeP50": 24.5,
+        "afterP50": 23.799999952316284,
+        "beforeP95": 46.39999985694885,
+        "afterP95": 39.5
+      },
+      {
+        "name": "pool2",
+        "beforeP50": 25.5,
+        "afterP50": 25,
+        "beforeP95": 42.799999952316284,
+        "afterP95": 33.09999990463257
+      },
+      {
+        "name": "overview",
+        "beforeP50": 28.600000143051147,
+        "afterP50": 28.699999809265137,
+        "beforeP95": 50,
+        "afterP95": 44.5
+      }
+    ]
   }
 }
