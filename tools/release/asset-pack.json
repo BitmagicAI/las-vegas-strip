@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1189584755,
+ "bytes": 1189891377,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -360,8 +360,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-3.bin",
-   "bytes": 665187,
-   "sha256": "2d353cd0f18ca92aa84a8f6c05da861d602c3654b2896746ff3870655fc5e5d1",
+   "bytes": 672489,
+   "sha256": "6875aac2b7df10ff46f8468a3a8658e418dc4f5d9558e7989485ece54a98ffef",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "fe37c99dc6720394c225bcdfa6d93b6af1eab4e81da3b1eb20d8308da888434e",
+   "sha256": "e1e3abf22f13a4b76bd936401f46fb6e38f14659f685e021a406307281528c01",
    "kind": "runtime cell manifest"
   },
   {
@@ -11160,14 +11160,14 @@
   },
   {
    "path": "build/strip-landmarks/turnberryPlaceExterior-exterior-collision.bin",
-   "bytes": 48,
-   "sha256": "30d17a65bea876b0a62c957514cd908f9eaa843e0345166fff89019b871a53a1",
+   "bytes": 6416,
+   "sha256": "6aeee558cbc9ba961228116b3899a87b9dec2b227a0be3ca4a370ec754524e88",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/turnberryPlaceExterior-exterior.glb",
-   "bytes": 6511392,
-   "sha256": "e47da0c771d2313dedb4845db4f578d037f3716cffe465e6e2fb6106d616fa40",
+   "bytes": 6804344,
+   "sha256": "947d86e7a2304e958780eadbda37c1ec61afd8d64965faafd5f92a5fb58ee9e3",
    "kind": "optimized"
   },
   {
