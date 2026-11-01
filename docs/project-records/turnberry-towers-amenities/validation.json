@@ -1,0 +1,19 @@
+{
+  "bitmagicCheck": "PASS",
+  "applicableTests": "3 PASS: ground surface, site lights, lazy city LOD",
+  "sourceTriangles": 9202,
+  "degenerateTriangles": 0,
+  "collisionSamples": 924,
+  "normalMovementSegments": 16,
+  "walkEndpointImagesInspected": 12,
+  "matchingDaylightViewsInspected": 4,
+  "review": "PASS",
+  "checkPublic": "PASS, existing public contact warning only",
+  "changedRuntimeCheck": "PASS,1 GLB,0 not optimized",
+  "optimization": "level + WebP installed",
+  "bake": "one rebuild, freshness PASS",
+  "assetPack": "1928 present,0 missing,0 not optimized",
+  "smoke": "9 stops PASS,0 failed requests/page/console errors",
+  "limitations": "West pool p95 +5.4 ms; counts/layout inferred; whole block remains refinement-deferred",
+  "releaseStep": "CDN upload and published cold-load check before next merges to main"
+}

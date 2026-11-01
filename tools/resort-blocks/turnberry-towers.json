@@ -54,20 +54,32 @@
     "build/city-exteriors/turnberry-before",
     "build/city-exteriors/turnberry-after",
     "build/city-exteriors/turnberry-final",
-    "build/city-exteriors/turnberry-courts"
+    "build/city-exteriors/turnberry-courts",
+    "build/city-exteriors/turnberry-amenities-before",
+    "build/city-exteriors/turnberry-amenities-after",
+    "build/city-exteriors/turnberry-amenities-walk"
   ],
   "tests": {
     "typecheck": "passed",
     "threeViews": "All front/rear/aerial views and corrected court view inspected."
   },
   "amenityPass": {
-    "status": "installed-preview-under-review",
+    "status": "installed-verified-local",
     "record": "docs/project-records/turnberry-towers-amenities",
     "authoredTriangles": 9202,
     "addedCollisionTriangles": 480,
     "preservedNodes": 17,
     "preservedCollisionTriangles": 1289,
     "foliage": "12originalpalms and8existingCC0PolyHaventrees fromtools/foliage/models/tree-2.glb;sourceunchanged.",
-    "walk": "16 normal movement segments passed; all 12 endpoint captures personally inspected. Final grass clipping is non-colliding; routes unchanged."
+    "walk": "16 normal movement segments passed; all 12 endpoint captures personally inspected. Final grass clipping is non-colliding; routes unchanged.",
+    "optimizedBytes": 2129116,
+    "collisionSamples": 924,
+    "normalMovementSegments": 16,
+    "newLfsBytes": 2405534,
+    "unchangedCellFiles": "276/278",
+    "bakeCount": 1,
+    "visual": "Four matching final daylight views and all 12 walk endpoint captures personally inspected. Grass/paved-edge overlap corrected before bake.",
+    "performance": "Medians 16.6/17.0/16.7/16.7 ms; west-pool p95 +5.4 ms versus baseline, retained as limitation.",
+    "remaining": "Reduced landscape density, inferred furniture/fence positions, arrival/crown details and whole-site connections remain deferred."
   }
 }
