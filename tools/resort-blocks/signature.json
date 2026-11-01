@@ -89,8 +89,8 @@
     "issue": 50,
     "pr": 466,
     "record": "docs/project-records/signature-amenities",
-    "geometry": "19835 original triangles; 2265 added collision triangles; 41 original nodes and 386 collision triangles preserved.",
-    "collision": "2820static samplesPASS;36external gate samples rely on runtime terrain, requiring normal movement proof.",
+    "geometry": "16171 original triangles, zero degenerates; 2221 added collision triangles; 41 original nodes and 386 collision triangles preserved.",
+    "collision": "2820 static samples PASS; 36 external gate samples proved with normal movement. 24 bidirectional deck segments PASS; all 24 endpoint images inspected. Existing lobby approach rail clearance corrected; entrance walk running.",
     "bake": "Not yet run."
   }
 }

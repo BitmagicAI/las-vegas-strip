@@ -65,5 +65,6 @@
     }
   ],
   "measurementMethod": "Google satellite context-menu coordinates at visually selected basin centers; widths/lengths estimated using displayed20ft scale. Imagery date unavailable; not a survey. Retain roads and mapped low structures.",
-  "baseline": "Initial pool2/3 views partly occluded; replaced before edits. Use build/city-exteriors/signature-amenities-baseline-corrected for comparisons."
+  "baseline": "Initial pool2/3 views partly occluded; replaced before edits. Use build/city-exteriors/signature-amenities-baseline-corrected for comparisons.",
+  "installedCorrection": "Normal movement endpoint inspection showed a new rail near an existing lobby approach. Rails now omit mapped building edges and the existing three lobby approach corridors; furniture is excluded from those corridors too. Original lobby geometry remains untouched."
 }
