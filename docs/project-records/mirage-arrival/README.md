@@ -1,5 +1,13 @@
 # Historical Mirage public arrival
 
-Issue #47, based on next 1ee00b7. Dated December 2022 Street View establishes tropical hip pavilions, exposed timber rafters, pale beam grids, stone columns and a planted median. Scope and measurements remain provisional until installed baseline inspection. Existing hotel, lagoon, gardens, marquee, roads and interiors must be preserved.
+Issue #47 / PR #456, based on next 1ee00b7. December 2022 Street View establishes tropical hip pavilions, exposed timber rafters, pale beam grids and stone columns. Links and observations are in research.json. The official historical map is indexed as text but its live URL returns HTML; no PDF visual inspection is claimed.
 
-No architectural completion claim; remaining site deficiencies will retain explicit reasons. Local step 7 verification precedes merge; published validation belongs to the release step.
+Replace only the old arrival node and its exact 36 collision triangles. Preserve the other 24 nodes and 3,367 collision triangles, including hotel, lagoon, drive and all separate entrance/interior assets. Two low hip pavilions and original timber/stone detail fit the existing 17 × 28 m canopy footprint. Eaves 6.35 m, ridges 8.5 m, sections and roof subdivisions are inferred. Existing hotel structure supports the west edge; retain two eastern columns and avoid adding supports inside the hotel facade.
+
+Four baseline and four preview daylight views personally inspected. The first hotel-side route intersected the existing angled building wall; moved the route into the clear covered lane. Updated packed-collision audit passes 807 samples with no missing floors. Six normal movement segments passed and all six endpoint captures were personally inspected. The final model removes only two unused hotel-side supports outside those paths; final packed collision still passes all 807 samples. Final source has 7,408 authored triangles and 120 collision triangles, replacing 36 old collision triangles. Final installation views and package checks are in progress.
+
+The reference median separates a broader multi-lane arrival than the existing model. This pass preserves the road layout rather than introducing an unsupported partial road alteration. Median, complete entry circulation, lagoon/crater, rear gardens, mechanical details and facade refinements remain in the block record with reasons. This is a scoped canopy pass, not whole-resort completion.
+
+Rebuild: retain the pre-pass mirageExterior GLB and collision JSON under .bitmagic/city-exterior-backups/mirage-arrival; run mirage_arrival.py, export_mirage_arrival.py in Blender, install-mirage-arrival.mjs, pack the collision, optimize level then WebP, and install. The installer always reads the saved base and cannot accumulate duplicate canopies.
+
+All local step 7 checks must pass before merge. CDN upload and published cold-load validation belong to the owner release step.

@@ -3108,10 +3108,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Lagoon garden vegetation, detailed crater rock forms and waterfall remain incomplete.",
-    "Roof mechanical units, rear pool garden and full facade fittings unfinished.",
-    "Exact arrival circulation and public access unverified.",
-    "Lagoon silhouette, driveway endpoint fit and crater fidelity require additional refinement; no photorealistic completion claim."
+    "Lagoon garden vegetation, detailed crater rock forms and waterfall remain deferred: this pass preserves their existing ownership and geometry; night designer photos do not establish daylight rock sections accurately.",
+    "Roof mechanical units, rear pool garden and full facade fittings remain deferred for separately scoped photographic reconstruction outside the public arrival canopy.",
+    "Public covered arrival roof reconstructed and scoped drive routes checked. Exact wider arrival/valet median layout remains deferred: dated imagery shows more lanes than the installed drive, whose road geometry and hotel entrance ownership are preserved.",
+    "Lagoon silhouette, driveway endpoint fit and crater fidelity still need a separate site-layout pass. Roof subdivisions, stone courses and column sections are inferred within the existing canopy footprint; no photorealistic completion claim."
    ],
    "record": "tools/resort-blocks/mirage.json",
    "buildings": [
@@ -3150,12 +3150,12 @@
      "tools/resort-blocks/mirage.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-mirage-arrival.mjs",
+     "tools/city-exteriors/audit-mirage-arrival.py",
      "tools/strip-landmarks/mirage_exterior.py",
      "tools/city-exteriors/replace-mirage-marquee.py",
      "tools/strip-landmarks/mirage_marquee.py",
-     "tools/city-exteriors/stair-mirage-marquee.mjs",
-     "tools/city-exteriors/test-mirage-marquee.mjs",
-     "tools/highrises/interiors.py"
+     "tools/city-exteriors/stair-mirage-marquee.mjs"
     ]
    },
    "acceptance": [
