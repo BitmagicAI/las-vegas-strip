@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1926,
- "bytes": 1174857958,
+ "bytes": 1175138495,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -282,8 +282,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-3.bin",
-   "bytes": 248571,
-   "sha256": "9996ab375d3c8cad05ebe8c2641a39287b57311f307b1b30747690237333f7ea",
+   "bytes": 256292,
+   "sha256": "273199fbeca9930681ea12529362abfd23c348e2dd7f70ed0ab107ba39f60ef3",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "8cd4a098473a03b70bb870f38213373b98fafe4ba3e07347ec2f7e098b221d8e",
+   "sha256": "1451075738328d93f6463b2199c5ad1a15e4609dfa388fdbfda905cfa566cd0d",
    "kind": "runtime cell manifest"
   },
   {
@@ -936,8 +936,8 @@
   },
   {
    "path": "build/geographic-strip/cells/cell-0_-3.glb",
-   "bytes": 1775476,
-   "sha256": "671242f07721daaf7c98e33ae6a582b4859320ea870c129e51ec8b25997c1926",
+   "bytes": 1775188,
+   "sha256": "fd5886f90481f7f4b856858a091164aac534a28f7a8cf143b4244240ae3662b5",
    "kind": "optimized"
   },
   {
@@ -1243,7 +1243,7 @@
   {
    "path": "build/geographic-strip/cells/manifest.json",
    "bytes": 39796,
-   "sha256": "648ee17e5409c037376e7ed1a2d642f2a65114e7208b5d7fed6d9ca37fcab8ee",
+   "sha256": "b54375bb883be7e8d7bf21ba77fbf0f2b30e236ad23f4c4367b81b0737a8f1be",
    "kind": "runtime cell manifest"
   },
   {
@@ -1488,8 +1488,8 @@
   },
   {
    "path": "build/geographic-strip/collision-cells/cell-0_-3.bin",
-   "bytes": 221436,
-   "sha256": "4602a38a6dde4e383240c94abc0720a2251a5c7cc5910edb3b3c674234622527",
+   "bytes": 221592,
+   "sha256": "19896663232d1cc73b256231f3746b3f06b237d68ea98cb3c28edbd56a4c8afa",
    "kind": "original"
   },
   {
@@ -1795,7 +1795,7 @@
   {
    "path": "build/geographic-strip/collision-cells/manifest.json",
    "bytes": 17609,
-   "sha256": "f0b059520ecf2e11ba6d53580a1215120062865332e15c49b3414f93a67fb242",
+   "sha256": "6e1e16652f0e690054f3bd6c05e1f730893c891e6d1d4fa7fa8651a88ab94a05",
    "kind": "runtime cell manifest"
   },
   {
@@ -10368,14 +10368,14 @@
   },
   {
    "path": "build/strip-landmarks/resortsWorldExterior-exterior-collision.bin",
-   "bytes": 8756,
-   "sha256": "fef9416d44e1d53eb41d242dd67721240ef81b99a3e5af8aa5ec4eede05b0959",
+   "bytes": 9924,
+   "sha256": "8c6094eb9b7e5f0134b2db8d3f178b8409dc01b187448e3bb1cbba6fe684dad1",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/resortsWorldExterior-exterior.glb",
-   "bytes": 513636,
-   "sha256": "f03abc6c22f31c81f2f01a198cb636ecc15893efc7bcf4538022dc66df11fb4f",
+   "bytes": 785416,
+   "sha256": "c38c2f4e3109faaf31c900309e0f4667b9107181bda82fb9195b71892b5b9d16",
    "kind": "optimized"
   },
   {

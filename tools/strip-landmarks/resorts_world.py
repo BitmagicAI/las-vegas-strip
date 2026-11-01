@@ -78,4 +78,6 @@ def exterior(B):
    if roof.contains(box(x-2,z-2,x+2,z+2)) and not terrace.buffer(2).contains(Point(x,z)):
     B.box('rw-metal',(x,20.8,z),(3.2,1.5,3.2));B.box('rw-shadow',(x,21.57,z),(2.8,.06,2.8))
  B.detail=0
+ from resorts_world_arrival import apply
+ apply(B)
  return dict(key=KEY,name='Resorts World exterior',center=[590,0,-1980],bounds=[360,-2270,790,-1750],building='resorts-world',structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

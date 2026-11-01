@@ -2314,11 +2314,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Landscaping, pool furniture and full terrace access remain unfinished.",
-    "Rounded southern pavilion and individual restaurant details need closer fit; current facade is simplified.",
-    "Main LED has original abstract art, not copied advertising; slim east display UV composition needs refinement.",
-    "Main arrival bronze canopy and planted islands remain unimplemented; Strip retail entrance is a separate structure.",
-    "No trees in new forecourt lawn bands; planting, individual storefront detail and public connections remain incomplete."
+    "Landscaping, pool furniture and full terrace access remain unfinished; this pass targets the north Hilton arrival without changing the established pool deck.",
+    "Rounded southern pavilion and individual restaurant details need closer fit; separate references and measured registration remain necessary.",
+    "Main LED retains original abstract art; east display UV refinement is deferred to a display-specific pass to preserve current tower surfaces.",
+    "Hilton arrival canopy and planted island now have original geometry, but dimensions and registration are photo/aerial estimates. Conrad and Crockfords canopies remain unfinished; their separate footprints require independent fit.",
+    "Strip forecourt trees, storefront detail and continuous public connections remain incomplete; the existing Strip entrance and guest entry are preserved rather than implying new interiors."
    ],
    "record": "tools/resort-blocks/resorts-world.json",
    "buildings": [
@@ -2351,8 +2351,8 @@
      "tools/highrises/interiors.py",
      "tools/city-exteriors/test-resorts-world-entry.mjs",
      "tools/city-exteriors/test-resorts-world.mjs",
-     "tools/highrises/catalog.py",
-     "tools/highrises/review.py"
+     "tools/city-exteriors/test-rw-arrival.mjs",
+     "tools/city-exteriors/audit-rw-arrival.py"
     ]
    },
    "acceptance": [
