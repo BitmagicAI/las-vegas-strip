@@ -1,0 +1,36 @@
+{
+  "setup": "960x540 ultra daylight, identical five cameras; one before run and two after runs",
+  "views": [
+    {
+      "name": "front",
+      "beforeP95": 26.7,
+      "afterP95": 23,
+      "repeatP95": 17.7
+    },
+    {
+      "name": "sphinx",
+      "beforeP95": 18,
+      "afterP95": 24.8,
+      "repeatP95": 17.7
+    },
+    {
+      "name": "north-arrival",
+      "beforeP95": 19.8,
+      "afterP95": 23.5,
+      "repeatP95": 17.3
+    },
+    {
+      "name": "connector",
+      "beforeP95": 17.5,
+      "afterP95": 22.9,
+      "repeatP95": 17.4
+    },
+    {
+      "name": "north-roof",
+      "beforeP95": 17.8,
+      "afterP95": 23.8,
+      "repeatP95": 26.5
+    }
+  ],
+  "limitations": "Shared workstation with other GPU apps active. Observational timings, not a controlled causal performance result; no broad performance gain claim."
+}
