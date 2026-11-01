@@ -11,3 +11,9 @@ GLBoptimizedincludingWebP38.25→11.80MiB; targetedcollisionpacked/current. Type
 
 ## Installed visual pass
 Allthreeactualinstalleddaylightviews inspected; samecameras/namesasbaseline. p95before18.7–19.3ms,after18.2–18.8ms (singlelocalrun960×540). Roof/tower/covefrontage retained. Palms and furnishing density simplified; pool-sidefacade remainsoriginalapproximation. Onebake finished; onlyLODcell0,-2 plusmanifestchanged,276othercellfilesidentical. Package1924present/0missing/0unoptimized;1changedGLBpasses. FourLFSobjects13,123,350bytes. Final10normalmovementsegmentsrunningthen9stopsmoke, session68242. Check /tmp/ti-pool-walk.log and /tmp/ti-smoke.log before claiming success. No ownerwait.
+
+## Walking verification
+Ten normal movement segments passed: the courtyard perimeter in both directions and the retained lobby entry/exit. Arrival and return captures inspected; the existing lobby remains intact. Final smoke run is active; do not reuse the older smoke report.
+
+## Final local checks
+Nine-stop smoke PASS: zero failed requests, page errors, console errors or unplaced stops. All local step7 checks pass. Generated evidence archived (154 files,58.6MB). Ready to merge444 into next and close24. Published/CDN checks belong to release.
