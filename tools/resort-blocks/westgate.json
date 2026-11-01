@@ -45,13 +45,24 @@
     "visual": "All three final installed views inspected. No obvious z-fighting; lower roof and exact crown still too plain."
   },
   "amenityPass": {
-    "status": "installed-preview-under-review",
+    "status": "installed-verified-refinement-deferred",
     "record": "docs/project-records/westgate-amenities",
     "authoredTriangles": 8824,
     "addedCollisionTriangles": 1248,
     "preservedNodes": 22,
     "preservedCollisionTriangles": 1351,
     "scope": "Three blue polygonal pavilions, eight open curtained cabanas, 24 loungers and eight palms; tower/podium/pool/roads retained.",
-    "uncertainty": "Furniture counts, sizes and layout photo-fitted at existing 12.04m deck elevation."
+    "uncertainty": "Furniture counts, sizes and layout photo-fitted at existing 12.04m deck elevation.",
+    "normalWalk": "Ten bidirectional segments PASS: two deck paths, central pavilion passage and open cabana entry. All eight endpoint captures personally inspected.",
+    "checks": "All step7 local checks PASS; nine smoke stops placed, zero errors.",
+    "daylight": "All four final matching daylight views personally inspected.",
+    "storage": {
+      "bakes": 1,
+      "newLfsBytes": 753728,
+      "objects": 4,
+      "unchangedCellFiles": 276,
+      "totalCellFiles": 278
+    },
+    "performance": "Final median16.5\u201316.8ms, p9518.1\u201318.6ms; maximum p95 change +0.8ms at front. Fixed-camera local sample only."
   }
 }
