@@ -1,5 +1,5 @@
 {
-  "status": "hgv-source-study",
+  "status": "both-sources-authored-not-installed",
   "issues": [
     55,
     56
@@ -41,12 +41,15 @@
     {
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1168,-115.1683&heading=270&pitch=10",
       "review": "Returned Dec2019 user Tesla Supercharger panorama, not requested official street imagery. HGV partly visible across road; do not use for pool layout or precise arrival."
+    },
+    {
+      "url": "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_768%2Ch_768%2Cq_80%2Cf_auto%2Cg_auto/Imagery/Lifestyle%20Photography/Waldorf%20Astoria/L/LASWDWA/Pool_ICE_3.jpg",
+      "review": "Personally inspected official gallery photo: tandem narrow rectangular pools, broad pale stone deck, grey cushioned loungers, flat white cabanas with grey screens/black furniture along west side, white parasols, palm planters; glass screen and steps at inter-pool division. Photo date unknown."
     }
   ],
   "uncertainties": [
     "Inherited deck dimensions/elevations must be checked against aerial and official photos before edits.",
-    "Aerial fitting still needs explicit anchors/scale. Existing HGV rectangle and Waldorf second basin differ from inspected aerials.",
-    "Waldorf official pool/cabana photograph still needed; browser page failure does not block continued research."
+    "Aerial fitting still needs explicit anchors/scale. Existing HGV rectangle and Waldorf second basin differ from inspected aerials."
   ],
   "baselineReview": "All eight initial neutral-daylight captures personally inspected. Exterior front cameras clear of walls; HGV front partly occluded by low frontage but identifies tower. Pool views show both inherited sparse courts. No geometry edits yet.",
   "hgvFit": {
@@ -67,5 +70,26 @@
     "rationale": "Observed narrow north/south rectangle with west rounded bulge and east step; distinct east spa. Official photograph supports three pale hipped pavilions and stepped upper terrace. Five estimated risers support 0.85m rise.",
     "limitations": "Map viewport centre and aerial perspective create registration uncertainty. Basin size, furniture counts and pavilion positions remain inferred; compare installed preview before accepting. Existing hotel and arrival geometry retained."
   },
-  "sourceCheckpoint": "HGV source only: three open pavilions, 30 strap loungers, seven lime parasols, pool/spa, raised terrace and stair. 10862 triangles, zero degenerates, 517 source-route samples within dry deck. Foliage imports, installed collision checks and visual review pending. Waldorf not authored."
+  "sourceCheckpoint": "HGV source only: three open pavilions, 30 strap loungers, seven lime parasols, pool/spa, raised terrace and stair. 10862 triangles, zero degenerates, 517 source-route samples within dry deck. Foliage imports, installed collision checks and visual review pending. Waldorf not authored.",
+  "waldorfFit": {
+    "poolCentres": [
+      [
+        -170,
+        1065
+      ],
+      [
+        -160,
+        1092
+      ]
+    ],
+    "poolDimensionsM": [
+      5.3,
+      23
+    ],
+    "axisDegreesEastOfSouth": 20,
+    "method": "Approximate aerial tandem layout registered inside mapped garage roof; official photograph confirms proportions and arrangement. No independent surveyed anchors.",
+    "elevationM": 27.1,
+    "elevationBasis": "Inherited estimated eighth-floor roof datum.",
+    "deferred": "Exact inter-pool level transition, caf\u00e9, cabana count/layout and perimeter planting need further fit. Available foliage source is broadleaf, not a suitable palm substitute; palm imports unresolved."
+  }
 }
