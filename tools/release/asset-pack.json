@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1190181712,
+ "bytes": 1190307468,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -312,8 +312,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_1.bin",
-   "bytes": 760528,
-   "sha256": "c3b396c46ec3e3a6496a1b1a7bb4cd25a4b03c2963b318855959ad07adb690e1",
+   "bytes": 764444,
+   "sha256": "3007a9a5125fe482dafed470ca6bff44b8b74aa2238e27f06af691e18523798a",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "86eb9493083d3b3f11f2a4fb31fb03ecefa8d04e28febafc5ab2369344c78891",
+   "sha256": "cd1a6d24142748b65f9fe816edaffba29834b4144d6bd99bab320ba422d3bd9c",
    "kind": "runtime cell manifest"
   },
   {
@@ -8196,14 +8196,14 @@
   },
   {
    "path": "build/strip-landmarks/elaraExterior-exterior-collision.bin",
-   "bytes": 1184,
-   "sha256": "07ca5d247ca6f452cd6199b0945d50e5673e5df0ba26a51250fe4c04ac48fa6a",
+   "bytes": 5796,
+   "sha256": "2c60ec567a31eb643d115381e7148efcfd6270338092c244a0ed507150df6fc2",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/elaraExterior-exterior.glb",
-   "bytes": 358444,
-   "sha256": "1dce92ef6429221ad49897c6349188538c47bc4fa6f6311134c015974b8d7b43",
+   "bytes": 475672,
+   "sha256": "e5191e5bca878a21ff83ffdc79fc8057359fa64a52e80fbb35fb03566c55d81c",
    "kind": "optimized"
   },
   {
