@@ -1,0 +1,49 @@
+{
+  "newLfsBytes": 2529143,
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell--2_-1.bin",
+      "bytes": 256342
+    },
+    {
+      "path": "runtime-assets/baked/cells/cell--3_0.bin",
+      "bytes": 125392
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/palmsExterior-exterior-collision.bin",
+      "bytes": 15740
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/palmsExterior-exterior.glb",
+      "bytes": 516184
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/rioExterior-exterior-collision.bin",
+      "bytes": 21640
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/rioExterior-exterior.glb",
+      "bytes": 1580044
+    }
+  ],
+  "cellFiles": 278,
+  "unchangedCellFiles": 275,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell--2_-1.bin",
+    "runtime-assets/baked/cells/cell--3_0.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "changedRuntimeFiles": [
+    "runtime-assets/baked/cells/cell--2_-1.bin",
+    "runtime-assets/baked/cells/cell--3_0.bin",
+    "runtime-assets/baked/cells/manifest.json",
+    "runtime-assets/strip-landmarks/palmsExterior-exterior-collision.bin",
+    "runtime-assets/strip-landmarks/palmsExterior-exterior.glb",
+    "runtime-assets/strip-landmarks/rioExterior-exterior-collision.bin",
+    "runtime-assets/strip-landmarks/rioExterior-exterior.glb"
+  ]
+}

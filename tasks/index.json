@@ -3448,9 +3448,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Dense garden planting, landscape islands, pool enclosure and authentic furnishings unfinished.",
-    "Photo-exact facade curve and colors, crown signage and arrival canopies remain incomplete.",
-    "Detailed public walking routes and guest-top-floor boundary require traversal; roof/approach tests are not whole-site acceptance."
+    "Planting is overly regular; rock waterfalls, exact landscaped islands, pool enclosure, bars and stage remain deferred because the approximate inherited basin registration needs further survey calibration.",
+    "Photo-exact facade curves/colors, crown signage and arrival canopy detail remain deferred; this pass preserves the existing tower and podium geometry.",
+    "Pool circuits passed 134 bidirectional movement segments. Full public connections and guest-top-floor boundaries remain outside this scoped amenity pass; roof/approach checks do not establish whole-site acceptance."
    ],
    "record": "tools/resort-blocks/rio.json",
    "buildings": [
@@ -3505,16 +3505,17 @@
    "id": "ext-palms",
    "title": "Refine the exterior of Palms",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
-    "Exact tower plan calibration and Ivory height remain estimates",
-    "Pool courtyard is visibly sparse: cabanas, planting, furniture, enclosure and Palms Place sixth-floor pool missing",
-    "Arrival signage is not readable in installed views; canopy and entry route need reference refinement",
-    "Full public circulation and fine facade detail not verified",
-    "No photorealistic-completion claim"
+    "Exact tower plan calibration and Ivory height remain estimates; existing tower geometry and guest core are preserved.",
+    "Main-court cabanas and chairs installed, but exact curved cabana banks, planting and enclosure remain deferred pending tighter aerial registration.",
+    "Palms Place sixth-floor pool remains unbuilt: roof elevation and tower/garage clearance are not sufficiently calibrated to alter the retained roof safely in this pass.",
+    "Upper cabana galleries are visual only; reference-supported staircase placement and upper circulation remain unresolved. Lower public court routes passed 378 bidirectional movement segments.",
+    "Arrival signage/canopy and fine facade details remain deferred; retained arrival nodes and guest approach checks are preserved.",
+    "No photorealistic or whole-block completion claim."
    ],
    "record": "tools/resort-blocks/palms.json",
    "buildings": [
@@ -3534,11 +3535,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/palms_exterior.py",
+     "tools/strip-landmarks/palms_amenities.py",
+     "tools/strip-landmarks/rio_amenities.py",
      "tools/city-exteriors/fit-palms-core.py",
-     "tools/strip-landmarks/mandalay_pool_detail.py",
-     "tools/city-exteriors/test-palms.mjs",
-     "tools/highrises/plan.py",
-     "tools/strip-landmarks/build_palms.py"
+     "tools/city-exteriors/run-rio-palms-walk.mjs",
+     "tools/strip-landmarks/mandalay_pool_detail.py"
     ]
    },
    "acceptance": [

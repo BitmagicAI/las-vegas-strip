@@ -36,9 +36,9 @@
   "id": "rio",
   "status": "refinement-deferred",
   "remaining": [
-    "Dense garden planting, landscape islands, pool enclosure and authentic furnishings unfinished.",
-    "Photo-exact facade curve and colors, crown signage and arrival canopies remain incomplete.",
-    "Detailed public walking routes and guest-top-floor boundary require traversal; roof/approach tests are not whole-site acceptance."
+    "Planting is overly regular; rock waterfalls, exact landscaped islands, pool enclosure, bars and stage remain deferred because the approximate inherited basin registration needs further survey calibration.",
+    "Photo-exact facade curves/colors, crown signage and arrival canopy detail remain deferred; this pass preserves the existing tower and podium geometry.",
+    "Pool circuits passed 134 bidirectional movement segments. Full public connections and guest-top-floor boundaries remain outside this scoped amenity pass; roof/approach checks do not establish whole-site acceptance."
   ],
   "estimates": {
     "IpanemaM": 74,
@@ -132,5 +132,98 @@
   "evidence": [
     "build/city-exteriors/rio-courts",
     "build/city-exteriors/rio-pools-final"
-  ]
+  ],
+  "amenitiesPass": {
+    "status": "installed-verified-refinement-deferred",
+    "record": "docs/project-records/rio-palms-amenities",
+    "source": "tools/strip-landmarks/rio_amenities.py",
+    "baseline": "build/city-exteriors/rio-amenities-baseline",
+    "preview": "build/city-exteriors/rio-amenities-preview",
+    "sourceChecks": {
+      "triangles": 27446,
+      "degenerateTriangles": 0,
+      "collisionTriangles": 5877,
+      "routeSamples": 1256,
+      "unsupportedSamples": 0,
+      "scope": "Authored source only; installed preservation, visual and movement checks still required"
+    },
+    "preservation": {
+      "preservedNodes": 97,
+      "preservedNodeGeometry": true,
+      "oldCollisionTriangles": 3603,
+      "addedCollisionTriangles": 5877,
+      "removedPoolNodes": 5,
+      "removedPoolCollisionTriangles": 2946,
+      "retainedCollisionTriangles": 657,
+      "scope": "Replace pool nodes and bounded pool collision; preserve tower, podium, arrival and guest routes."
+    },
+    "visualReview": "All four final matching daylight views personally inspected after bake, loading clear.",
+    "normalMovementSegments": 134,
+    "endpointImagesInspected": 8,
+    "walkEvidence": "docs/project-records/rio-palms-amenities/walk.json",
+    "finalEvidence": "build/city-exteriors/rio-amenities-final",
+    "performance": [
+      {
+        "name": "front",
+        "eye": [
+          -1295,
+          5,
+          90
+        ],
+        "target": [
+          -1260,
+          48,
+          -55
+        ],
+        "p50": 16.40000009536743,
+        "p95": 19.600000143051147
+      },
+      {
+        "name": "pools",
+        "eye": [
+          -1080,
+          100,
+          -260
+        ],
+        "target": [
+          -1220,
+          4,
+          -172
+        ],
+        "p50": 16.600000143051147,
+        "p95": 19
+      },
+      {
+        "name": "north",
+        "eye": [
+          -1360,
+          115,
+          -460
+        ],
+        "target": [
+          -1300,
+          30,
+          -180
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "overview",
+        "eye": [
+          -910,
+          270,
+          175
+        ],
+        "target": [
+          -1310,
+          30,
+          -160
+        ],
+        "p50": 16.5,
+        "p95": 19.40000009536743
+      }
+    ],
+    "localChecks": "bitmagic, three tests, roof/approach, source/installed clearance, review/public, optimized runtime, bake freshness, asset pack and nine-stop smoke PASS"
+  }
 }
