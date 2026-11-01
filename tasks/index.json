@@ -2724,11 +2724,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Exact crown and balcony fit still approximate.",
-    "Podium leisure deck, pool, landscaping and arrival details unfinished.",
-    "No full public-route traversal."
+    "New north podium/deck elevation17.5m and pool20x24m are photo/aerial-fitted, not surveyed; secondary fifth/sixth-floor descriptions conflict.",
+    "Private amenity-wing interiors and continuous lift access are not implemented.",
+    "Arrival sign, canopy and sparse furniture/planting are original approximations; full landscape detail and garage internal circulation remain unfinished.",
+    "Full-site public-route traversal remains incomplete; scoped arrival/deck checks are recorded separately."
    ],
    "record": "tools/resort-blocks/allure.json",
    "buildings": [
@@ -2753,10 +2755,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/allure_exterior.py",
+     "tools/city-exteriors/install-allure-amenities.mjs",
      "tools/strip-landmarks/export.py",
-     "tools/highrises/catalog.py",
-     "tools/highrises/interiors.py",
-     "tools/strip-landmarks/build_allure.py"
+     "tools/strip-landmarks/allure_amenities.py",
+     "tools/city-exteriors/test-allure-amenities.mjs",
+     "tools/strip-landmarks/export_allure_amenities.py"
     ]
    },
    "acceptance": [
