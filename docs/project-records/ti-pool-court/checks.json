@@ -1,0 +1,15 @@
+{
+  "typecheck": "PASS",
+  "runtimeTests": "PASS3/3:ground-surface-index,site-lights,city-lazy-lod",
+  "recordReview": "PASS;16whole-resort items pending",
+  "publicCheck": "PASS;existing inventory email warning only",
+  "sourceRoute": "PASS3480floor samples,body-width rays",
+  "preservation": "All82previousvisualgroups,417341triangles,1065collisiontrianglesandlabelsidentical",
+  "optimizedGLB": "PASS1checked/0unoptimized;WebPincluded",
+  "bake": "PASS:current;onebake,nogeographicexport",
+  "package": "PASS1924present/0missing/0unoptimized",
+  "visual": "Three actual installed daylight views personally inspected",
+  "walk": "Running10normalmovementsegments",
+  "smoke": "Pending final9stoprun",
+  "release": "Published/CDNvalidation deferred to release"
+}
