@@ -3291,10 +3291,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact pool footprints remain estimated; south pool is clipped by retained walkway/road masks and needs reference alignment.",
-    "Garden planting and paths incomplete.",
+    "Pool centers corrected from Google satellite selection; exact basin/deck dimensions, elevations, spa arrangement and planting density remain estimated.",
+    "Garden paths and fire pits outside the three scoped pool courts remain incomplete.",
     "Crown and roof equipment approximate; signage absent.",
-    "Full public route walk and pool gate collision pending."
+    "Interior door-to-pool links and exact street-boundary masonry remain unverified."
    ],
    "record": "tools/resort-blocks/signature.json",
    "buildings": [
@@ -3323,12 +3323,12 @@
      "tools/resort-blocks/signature.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-signature-amenities.mjs",
+     "tools/strip-landmarks/signature_amenities.py",
      "tools/city-cells/check-visuals.mjs",
      "tools/highrises/interiors.py",
      "tools/city-exteriors/test-signature.mjs",
-     "tools/resort-blocks/bellagio_edge_ownership.py",
-     "tools/strip-landmarks/signature_exterior.py",
-     "tools/city-exteriors/test-signature-aviation.mjs"
+     "tools/resort-blocks/bellagio_edge_ownership.py"
     ]
    },
    "acceptance": [

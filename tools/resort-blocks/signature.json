@@ -18,10 +18,10 @@
     }
   ],
   "remaining": [
-    "Exact pool footprints remain estimated; south pool is clipped by retained walkway/road masks and needs reference alignment.",
-    "Garden planting and paths incomplete.",
+    "Pool centers corrected from Google satellite selection; exact basin/deck dimensions, elevations, spa arrangement and planting density remain estimated.",
+    "Garden paths and fire pits outside the three scoped pool courts remain incomplete.",
     "Crown and roof equipment approximate; signage absent.",
-    "Full public route walk and pool gate collision pending."
+    "Interior door-to-pool links and exact street-boundary masonry remain unverified."
   ],
   "estimates": {
     "heightM": 145,
@@ -83,5 +83,14 @@
       }
     ]
   },
-  "evidence": "build/city-exteriors/signature-courts"
+  "evidence": "build/city-exteriors/signature-courts",
+  "amenitiesPass": {
+    "status": "installed-walk-running",
+    "issue": 50,
+    "pr": 466,
+    "record": "docs/project-records/signature-amenities",
+    "geometry": "19835 original triangles; 2265 added collision triangles; 41 original nodes and 386 collision triangles preserved.",
+    "collision": "2820static samplesPASS;36external gate samples rely on runtime terrain, requiring normal movement proof.",
+    "bake": "Not yet run."
+  }
 }

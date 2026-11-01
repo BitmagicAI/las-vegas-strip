@@ -1,5 +1,5 @@
 {
-  "status": "Issue50 assigned janiverse verified. Official MGM pool photograph personally inspected; Google and other reference views pending.",
+  "status": "Issue50 claim verified; official pool photo, all three satellite courts and January2025 Street View personally inspected. Five corrected baseline cameras inspected before installation.",
   "sources": [
     {
       "url": "https://signaturemgmgrand.mgmresorts.com/en/amenities/private-pool.html",
@@ -12,11 +12,58 @@
     {
       "url": "https://thelibrary.mgmresorts.com/transform/Qgh2YUQOQ661/MGM01946.tif?format=webp&io=transform%3Afill%2Cwidth%3A639%2Cheight%3A480&quality=75",
       "observations": "Personally inspected: rectangular pool and separate foreground spa, stone paving, metal handrails, cream loungers, burgundy parasols, palms and rear cabana. Photo date unknown; which tower requires map alignment."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1058,-115.1671&zoom=20&basemap=satellite",
+      "observations": "Personally inspected southern pool court: compact rectangle, west/south cabanas, paving grid and palms; old pool incorrectly placed farther northwest across retained drive."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.107,-115.1671&zoom=20&basemap=satellite",
+      "observations": "Personally inspected middle pool: long rectangle, south separate spa, planted outer edges and cabanas. Old pool too far south behind mapped low structure."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1077,-115.1671&zoom=20&basemap=satellite",
+      "observations": "Personally inspected north pool: rectangle with small south step projection, separate north spa, broad paved court and palms."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=LrkIipYkZc6R3VZowTMqXg&heading=90&pitch=5",
+      "observations": "January2025 Street View personally inspected: west boundary masonry wall, palms above, monorail overhead. Pool not visible from street."
     }
   ],
   "photoCandidates": [
     "https://thelibrary.mgmresorts.com/transform/EyyodEcID5441YsM/signature-amenities-pool-hot-tub-waterfall.jpg",
     "https://thelibrary.mgmresorts.com/transform/gO8RcplfluL5/MGM02938.tif",
     "https://thelibrary.mgmresorts.com/transform/Qgh2YUQOQ661/MGM01946.tif?format=webp&io=transform%3Afill%2Cwidth%3A639%2Cheight%3A480&quality=75"
-  ]
+  ],
+  "poolCenters": [
+    {
+      "name": "pool1",
+      "lat": 36.105746,
+      "lon": -115.167095,
+      "x": 531.02,
+      "z": 1141.47,
+      "widthEstimateM": 7,
+      "lengthEstimateM": 13
+    },
+    {
+      "name": "pool2",
+      "lat": 36.107046,
+      "lon": -115.167077,
+      "x": 532.64,
+      "z": 996.75,
+      "widthEstimateM": 10,
+      "lengthEstimateM": 23
+    },
+    {
+      "name": "pool3",
+      "lat": 36.107608,
+      "lon": -115.167077,
+      "x": 532.64,
+      "z": 934.19,
+      "widthEstimateM": 9.5,
+      "lengthEstimateM": 19.5
+    }
+  ],
+  "measurementMethod": "Google satellite context-menu coordinates at visually selected basin centers; widths/lengths estimated using displayed20ft scale. Imagery date unavailable; not a survey. Retain roads and mapped low structures.",
+  "baseline": "Initial pool2/3 views partly occluded; replaced before edits. Use build/city-exteriors/signature-amenities-baseline-corrected for comparisons."
 }
