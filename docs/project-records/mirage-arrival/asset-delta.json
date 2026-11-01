@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_-1.bin",
+      "bytes": 695054
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/mirageExterior-exterior-collision.bin",
+      "bytes": 12244
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/mirageExterior-exterior.glb",
+      "bytes": 602760
+    }
+  ],
+  "totalBytes": 1323859,
+  "cellsCompared": 278,
+  "cellsUnchanged": 276,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell--1_-1.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "cityBakes": 1,
+  "geographicExports": 0,
+  "method": "SHA256 of every runtime cell compared with origin/next LFS object ID, including collision-cells."
+}

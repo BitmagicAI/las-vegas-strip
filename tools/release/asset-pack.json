@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1926,
- "bytes": 1187827492,
+ "bytes": 1187982651,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -42,8 +42,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_-1.bin",
-   "bytes": 693423,
-   "sha256": "4c1cde0f351a8f9247ed783b86d23ba1c90facbd900ed0197ca198cc227cfaec",
+   "bytes": 695054,
+   "sha256": "2e1e2476caf7c5fec7d206b4ebff1fb2d73d01db9acbd6e921954a93ad61cdce",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "11cbd1f9a72f1df23f0dcb0575f5e08be41775c201a1f69b0d4956aacf78b28a",
+   "sha256": "e9e28e5301d2e1a0682b0d5cec0ca4479146e5e0612c2405267b5d208c5e6048",
    "kind": "runtime cell manifest"
   },
   {
@@ -9648,14 +9648,14 @@
   },
   {
    "path": "build/strip-landmarks/mirageExterior-exterior-collision.bin",
-   "bytes": 11980,
-   "sha256": "b3fbfc946a791929b33c927a00668d83ad7fa87e586dfbd3a2ce0ccfb5c9730b",
+   "bytes": 12244,
+   "sha256": "ee316fa913179d6c037551237e22c941a5304c29238ecef5a6efc711b89fd8a5",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/mirageExterior-exterior.glb",
-   "bytes": 449496,
-   "sha256": "c471ea7144dfc7a702c8b6551121a5de9b8f1ccf44c9057947e648828a333e50",
+   "bytes": 602760,
+   "sha256": "85f06f18d6e9fa4e4494d27762fa10fc24fe9bc02583612c1ee4470148aa17aa",
    "kind": "optimized"
   },
   {

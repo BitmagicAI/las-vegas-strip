@@ -1,0 +1,117 @@
+{
+  "routes": [
+    {
+      "name": "covered-drive",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -43,
+            0.08,
+            -571
+          ],
+          "position": {
+            "x": -42.999881744384766,
+            "y": 0.0981204795837402,
+            "z": -570.9359130859375
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -43,
+            0.08,
+            -604
+          ],
+          "position": {
+            "x": -42.999053955078125,
+            "y": 0.09812429428100583,
+            "z": -603.6754150390625
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "hotel-side-covered-lane",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -44.5,
+            0.08,
+            -575
+          ],
+          "position": {
+            "x": -44.49925994873047,
+            "y": 0.10748985290527341,
+            "z": -574.9241943359375
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -44.5,
+            0.08,
+            -600
+          ],
+          "position": {
+            "x": -44.4992561340332,
+            "y": 0.1080445337295532,
+            "z": -599.6553955078125
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "public-crossing",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -39,
+            0.08,
+            -588
+          ],
+          "position": {
+            "x": -38.96235275268555,
+            "y": 0.1055740404129028,
+            "z": -588.0384521484375
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -44.5,
+            0.08,
+            -588
+          ],
+          "position": {
+            "x": -44.15616226196289,
+            "y": 0.1036807584762573,
+            "z": -588.0275268554688
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 15,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

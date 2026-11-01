@@ -16,10 +16,10 @@
     }
   ],
   "remaining": [
-    "Lagoon garden vegetation, detailed crater rock forms and waterfall remain incomplete.",
-    "Roof mechanical units, rear pool garden and full facade fittings unfinished.",
-    "Exact arrival circulation and public access unverified.",
-    "Lagoon silhouette, driveway endpoint fit and crater fidelity require additional refinement; no photorealistic completion claim."
+    "Lagoon garden vegetation, detailed crater rock forms and waterfall remain deferred: this pass preserves their existing ownership and geometry; night designer photos do not establish daylight rock sections accurately.",
+    "Roof mechanical units, rear pool garden and full facade fittings remain deferred for separately scoped photographic reconstruction outside the public arrival canopy.",
+    "Public covered arrival roof reconstructed and scoped drive routes checked. Exact wider arrival/valet median layout remains deferred: dated imagery shows more lanes than the installed drive, whose road geometry and hotel entrance ownership are preserved.",
+    "Lagoon silhouette, driveway endpoint fit and crater fidelity still need a separate site-layout pass. Roof subdivisions, stone courses and column sections are inferred within the existing canopy footprint; no photorealistic completion claim."
   ],
   "geometry": {
     "triangles": 19550,
@@ -44,5 +44,25 @@
     "build/city-exteriors/mirage-final",
     "build/city-exteriors/mirage-lagoon",
     "build/city-exteriors/mirage-site-final"
-  ]
+  ],
+  "arrivalPass": {
+    "status": "installed-locally-verified",
+    "issue": 47,
+    "pullRequest": 456,
+    "source": "tools/strip-landmarks/mirage_arrival.py",
+    "research": "docs/project-records/mirage-arrival/research.json",
+    "before": "build/city-exteriors/mirage-arrival-before",
+    "preservation": "docs/project-records/mirage-arrival/preservation.json",
+    "dimensions": "Existing 17x28m footprint retained, eave6.35m/ridge8.5m and column/rafter sections inferred. No road or entrance ownership change.",
+    "review": "Four final packaged daylight views personally inspected, plus four baseline/preview and two detail views. Clear covered roadway, exposed rafters and stone columns; original hotel entrance preserved. Six normal walking segments/807packedcollision samples pass. Similar median performance but canopy/south p95 tails slower; no no-regression claim.",
+    "geometry": "docs/project-records/mirage-arrival/geometry.json",
+    "collision": "docs/project-records/mirage-arrival/collision.json",
+    "walking": "docs/project-records/mirage-arrival/normal-walk.json",
+    "detail": "build/city-exteriors/mirage-arrival-detail-final",
+    "after": "build/city-exteriors/mirage-arrival-after-final",
+    "performance": "docs/project-records/mirage-arrival/performance-comparison.json",
+    "assets": "docs/project-records/mirage-arrival/asset-delta.json",
+    "smoke": "docs/project-records/mirage-arrival/smoke.json",
+    "checks": "docs/project-records/mirage-arrival/checks.json"
+  }
 }
