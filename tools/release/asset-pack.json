@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1926,
- "bytes": 1187982651,
+ "bytes": 1188086598,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -42,8 +42,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_-1.bin",
-   "bytes": 695054,
-   "sha256": "2e1e2476caf7c5fec7d206b4ebff1fb2d73d01db9acbd6e921954a93ad61cdce",
+   "bytes": 698029,
+   "sha256": "e5ef079bbf99cbeebc96cb07a30c2b07c3a37fdd405131a93d453141c05b8019",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "e9e28e5301d2e1a0682b0d5cec0ca4479146e5e0612c2405267b5d208c5e6048",
+   "sha256": "3267ea9f012bd6767a8cf5b1004a6243e441560688d6de56b32db1efd32d152c",
    "kind": "runtime cell manifest"
   },
   {
@@ -7572,14 +7572,14 @@
   },
   {
    "path": "build/strip-landmarks/caesarsExterior-exterior-collision.bin",
-   "bytes": 37304,
-   "sha256": "6aaaa1a7bfb819641ac9589015dd63df893641b75dd85a9a000b4d24677050c7",
+   "bytes": 38336,
+   "sha256": "4af81fb32fc5a77fa0cb57240519154b9bf26de2609321b30c6e6cba88c572b3",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/caesarsExterior-exterior.glb",
-   "bytes": 6636012,
-   "sha256": "4bf77327ddf764c2603d4760382bd1d013906ca27bc3e485ff3fd4fc3f919d1c",
+   "bytes": 6735952,
+   "sha256": "43df92b8a65328a28db7c8fe8462b191ee15c9083ca576fc7b144ab9892a4ca9",
    "kind": "optimized"
   },
   {

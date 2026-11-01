@@ -1,0 +1,10 @@
+{
+  "preservedNodes": 179,
+  "removedRoofNodes": 2,
+  "removedRoofTriangles": 13,
+  "preservedNodeGeometry": true,
+  "oldCollisionTriangles": 12006,
+  "addedCollisionTriangles": 324,
+  "oldCollisionPrefixPreserved": true,
+  "scope": "Replace only two cp-roof nodes. Preserve all other nodes and full old collision prefix, including original garage roof floors. No geographic city export."
+}

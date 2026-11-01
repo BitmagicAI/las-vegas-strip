@@ -76,11 +76,11 @@
     "Existing caesars-palace guest core has linear scale 2.114x3.105 and is not contained in mapped Palace footprint; resolve support and circulation before replacement"
   ],
   "remaining": [
-    "Pool architecture installed; mature gardens, sculpture, fountain jets, true three-level elevation schedule and connected public circulation unresolved.",
-    "Legacy Colosseum and lower casino/street frontage still simplified",
-    "Ground stair screenshot is a close closed-door view; full lobby-to-stairs traversal unverified",
-    "Precise facade bay dimensions estimated from Earth; no photorealistic completion claim",
-    "Garage entry/circulation and roof parking markings remain incomplete"
+    "Pool architecture is installed; mature planting, sculpture, fountain jets, true three-level datum and connected public access remain deferred because vertical integration overlaps preserved occupied casino/gallery interiors.",
+    "Colosseum, lower podium/frontage, garden pavilions and rotunda are implemented in recorded prior passes and preserved. Fine sculpture, planting, facade fittings and current OMNIA footprint still need separate reference-supported reconstruction.",
+    "Full lobby-to-guest-stair traversal remains unverified; this roof-only pass does not alter existing occupied interiors or claim that route.",
+    "Exact facade bay dimensions and heights remain photographic estimates. January2025 north garage/service facade shows decorative grille bays that need ownership/height reconciliation before replacement; no photorealistic completion claim.",
+    "Two self-parking roofs receive original markings and service details at the retained23m datum. Internal garage floors/ramps, entry circulation and ground-to-roof public access remain deferred to a dedicated garage circulation task; roof row pitch/equipment placement are inferred."
   ],
   "implementation": {
     "towerFootprints": [
@@ -695,5 +695,27 @@
         18.1
       ]
     }
+  },
+  "garageRoofPass": {
+    "status": "implemented-visually-reviewed-refinement-deferred",
+    "issue": 59,
+    "pullRequest": 457,
+    "buildings": [
+      "way/134949710",
+      "way/134949713"
+    ],
+    "research": "docs/project-records/caesars-garage-roofs/research.json",
+    "source": "tools/strip-landmarks/caesars_garage_roofs.py",
+    "before": "build/city-exteriors/caesars-garage-before",
+    "preservation": "docs/project-records/caesars-garage-roofs/preservation.json",
+    "geometry": "docs/project-records/caesars-garage-roofs/geometry.json",
+    "collision": "docs/project-records/caesars-garage-roofs/collision.json",
+    "preview": "build/city-exteriors/caesars-garage-preview",
+    "walk": "docs/project-records/caesars-garage-roofs/walk.json",
+    "visualReview": "All four installed daylight views and all six normal-walk endpoint images personally inspected. Diagonal rows, housings and mechanical bank visible. Existing front bridge/facades preserved.",
+    "after": "build/city-exteriors/caesars-garage-after",
+    "performance": "docs/project-records/caesars-garage-roofs/performance-after.json",
+    "assetDelta": "docs/project-records/caesars-garage-roofs/asset-delta.json",
+    "checks": "docs/project-records/caesars-garage-roofs/checks.json"
   }
 }
