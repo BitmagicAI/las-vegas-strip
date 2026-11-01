@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-01T03:02:09.742Z",
- "totalBytes": 3637168992,
- "count": 881,
+ "generated": "2026-11-01T03:29:03.953Z",
+ "totalBytes": 3639826436,
+ "count": 882,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -1456,7 +1456,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 2355440,
+   "bytes": 3219464,
    "preset": "level",
    "overrides": []
   },
@@ -7964,6 +7964,15 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
    "bytes": 138600,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/peppermillRetail-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 1793420,
    "preset": "level",
    "overrides": []
   }
