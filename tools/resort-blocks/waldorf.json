@@ -40,7 +40,8 @@
   ],
   "remaining": [
     "Older lobby cladding and entrance details remain visually unfinished",
-    "Pool deck and garage height27m estimated; terrace landscaping, shade, furnishings and full public routes remain incomplete",
+    "Estimated 27m deck height, two tandem pool fits and southern spa/plunge positions need survey calibration; inter-pool elevation change, cafe and complete public connections remain unresolved",
+    "Three furnished cabanas and 32 loungers installed; exact shade layout and palm/planting reconstruction unfinished. Available foliage sources are broadleaf, not used as palm substitutes",
     "Tower facade proportions based on KPF/Front photos, not a measured panel survey"
   ],
   "implementation": {
@@ -72,5 +73,20 @@
     ],
     "allInspected": true,
     "corrections": "Removed old tower overlap, duplicate terrace roof, clipped pool and excessive lounger grid; roof no longer receives corrugated-metal detail. North camera was inside garage, not a verified arrival route."
+  },
+  "amenityPass": {
+    "status": "verified-scoped-pass",
+    "research": "docs/project-records/waldorf-hgv-amenities/research.json",
+    "geometry": "docs/project-records/waldorf-hgv-amenities/waldorf-geometry.json",
+    "preservation": "docs/project-records/waldorf-hgv-amenities/waldorf-preservation.json",
+    "installedRouteClearance": "docs/project-records/waldorf-hgv-amenities/installed-route-clearance.json",
+    "preview": "build/city-exteriors/waldorf-amenities-preview",
+    "notes": "All eight grouped final daylight views and16movement endpoints inspected. 520 normal movement segments pass. One grouped bake; all local step7 checks pass. Refined scope only; remaining discrepancies retained.",
+    "walk": "docs/project-records/waldorf-hgv-amenities/walk.json",
+    "movementSegments": 432,
+    "finalViews": "build/city-exteriors/waldorf-amenities-final",
+    "performance": "docs/project-records/waldorf-hgv-amenities/performance.json",
+    "assetDelta": "docs/project-records/waldorf-hgv-amenities/asset-delta.json",
+    "smoke": "docs/project-records/waldorf-hgv-amenities/smoke.json"
   }
 }
