@@ -361,5 +361,10 @@
       "typecheck": "passed",
       "cliVerify": "FAILED180s: menu,noPlay detected,30fps; dedicated probe selected character thenPlay and completed all three installed views. Not a full CLI pass."
     }
+  },
+  "claim": {
+    "issue": 25,
+    "assignee": "janiverse",
+    "pullRequest": 445
   }
 }
