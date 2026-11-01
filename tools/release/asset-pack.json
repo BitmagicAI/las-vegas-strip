@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1189891377,
+ "bytes": 1190054626,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -432,8 +432,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-3.bin",
-   "bytes": 220778,
-   "sha256": "77d30b3ec67969ca14a60a4bc5381a45d01530f36ecb43ddc22a3409e3efece3",
+   "bytes": 226651,
+   "sha256": "6a17f9e0055e36f32a943e921bf1cd38bc28c9c4e94f8be0df88ea48460b4e55",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "e1e3abf22f13a4b76bd936401f46fb6e38f14659f685e021a406307281528c01",
+   "sha256": "5a3d034aa3e6e3aa469461abcd998ffd6562b451ae2365937c2b1f62e093d85c",
    "kind": "runtime cell manifest"
   },
   {
@@ -11430,14 +11430,14 @@
   },
   {
    "path": "build/strip-landmarks/westgateExterior-exterior-collision.bin",
-   "bytes": 5180,
-   "sha256": "a3035baa5a5f7af71f051a92493191277b055a851fa5335b575c6669d24c14f3",
+   "bytes": 8668,
+   "sha256": "b6445c4793b9f1b4deb75170e79ab914da7cebd9347e37f82e8c9bdc1f8d096e",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/westgateExterior-exterior.glb",
-   "bytes": 350720,
-   "sha256": "9e2a1a7c7142c2e02b14c1ab8ef03c87344ee79b34c3016b1b4834d321aa5396",
+   "bytes": 504608,
+   "sha256": "b016678ceabc596088989a8c8a6f8bf19e871eb1695a9679c611b12396ca1100",
    "kind": "optimized"
   },
   {

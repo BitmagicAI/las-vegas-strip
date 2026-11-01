@@ -2899,8 +2899,8 @@
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
     "Stepped penthouse crown and precise window rhythm still require matched comparison.",
-    "Pool footprint/elevation estimated; deck furniture, planting, entry canopies and signage unfinished.",
-    "Existing guest-core openings retained; full public-route traversal pending."
+    "Existing pool footprint/elevation retained; pavilion/cabana dimensions and landscape density inferred. Full pool deck perimeter, entry canopies and signage remain deferred.",
+    "Existing guest-core openings retained; full public-route traversal and interior-to-pool connections pending."
    ],
    "record": "tools/resort-blocks/westgate.json",
    "buildings": [
@@ -2919,10 +2919,12 @@
      "tools/resort-blocks/westgate.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-westgate-amenities.mjs",
+     "tools/strip-landmarks/westgate_amenities.py",
      "tools/strip-landmarks/westgate_exterior.py",
+     "tools/city-exteriors/test-westgate-amenities.mjs",
      "tools/highrises/interiors.py",
-     "tools/highrises/catalog.py",
-     "tools/strip-landmarks/build_westgate.py"
+     "tools/strip-landmarks/export_westgate_amenities.py"
     ]
    },
    "acceptance": [
