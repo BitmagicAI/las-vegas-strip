@@ -77,7 +77,7 @@
     "pullRequest": 447
   },
   "entryDetailPass": {
-    "status": "installed-visually-reviewed-walk-smoke-pending",
+    "status": "installed-reviewed-refinement-pending",
     "evidence": "docs/project-records/park-eataly-entry",
     "scope": "Original looping cobble bands, closed entrance leaf frames, glazed gable and under-canopy bracing. All48 prior groups/131610 triangles, labels and collision retained.",
     "limitations": [
@@ -96,6 +96,7 @@
       "path": "build/city-exteriors/park-eataly-entry-after",
       "assessment": "Four actual installed daylight views inspected. Paving and door frames visible; gable gap filled with glazing and bracing. Roof mass and preserved north lobby unchanged. Sign size, dark glass and facade proportions remain approximate, not photorealistic completion.",
       "performance": "docs/project-records/park-eataly-entry/performance.json"
-    }
+    },
+    "checks": "docs/project-records/park-eataly-entry/checks.json"
   }
 }

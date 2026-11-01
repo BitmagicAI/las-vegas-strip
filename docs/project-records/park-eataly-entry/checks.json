@@ -10,6 +10,6 @@
   "recordReview": "PASS active Park record, whole-site gaps retained",
   "views": "Four actual installed daylight views inspected, identical before/after cameras/names",
   "normalWalk": "PASS6segments; covered porch and preserved north lobby both directions; arrival/return images inspected",
-  "smoke": "PENDING; active nine-stop test",
+  "smoke": "PASS: nine stops, zero failed requests/page errors/console errors/unplaced stops",
   "release": "CDN/published cold-load verification belongs to release"
 }
