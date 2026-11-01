@@ -28,5 +28,14 @@
   "notes": "Read record: arrival and Irish kiosk already corrected Oct21. Preserve those. Possible next scope public Park entrance detailing or landscaping, after current baseline and current Street View.",
   "candidateScope": "Arrival island landscaping and soffit/detail refinement; retain existing canopy, roads/coaster/interiors. Need aerial fit and installed baseline after claim.",
   "base": "76bfd7c",
-  "status": "claimed; matching baseline pending"
+  "status": "installed preview inspected; buried flower strokes and visible collision-only tree markers corrected before bake",
+  "previewFindings": [
+    "Existing dense coaster supports retained and still visually dominate this approximate frontage.",
+    "First preview buried parts of flower lettering in slope; fitted all flower heights to actual mound triangles.",
+    "Removed visible collision-only tree trunk geometry; imported source bark is the sole visual trunk."
+  ],
+  "decisions": [
+    "Medium tree-1 source trial reduced bytes but lost visible tree coverage in installed views; rejected before bake. Retain verified tree-0 near/tree-2 far with full optimization. Source foliage unchanged.",
+    "Retain legacy dense coaster supports and facade; removing them would exceed this island pass and needs independent ownership work."
+  ]
 }

@@ -1880,10 +1880,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact varied streetwall widths and northeastern Art Deco corner remain approximate.",
-    "Landscaping, signage and fine replica architecture require refinement.",
-    "South arrival canopy, rear pool, north restaurant roof heights and exact tenant divisions remain approximate.",
-    "Static checks cover336obstacle samples and3roof support points;274ground samples absent from loaded subset, not a complete walkability claim."
+    "Exact varied streetwall widths and northeastern Art Deco corner remain approximate; separate facade fitting needs independent elevation references beyond this arrival-island pass.",
+    "Arrival island landscaping implemented from January2025 imagery; exact horticultural species/counts, sign typography and replica ornament remain approximate because references are not measured construction or planting drawings.",
+    "South canopy/pavilion retained from the earlier pass; rear pool, north restaurant roof heights and tenant divisions remain approximate and require their own scoped reference and circulation audit.",
+    "Arrival island bypass and canopy routes now have 12 normal walking segments and1398 static clearance samples; full public resort traversal remains unverified outside these routes."
    ],
    "record": "tools/resort-blocks/new-york.json",
    "buildings": [
@@ -11654,7 +11654,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Pavilion and canopy heights estimated, not surveyed.",
-    "Front landscaped island, exact sign typography/ornament and rear entrance facade remain unfinished.",
+    "Front island now has original lawn, flower letters and planting; species/counts/dimensions remain inferred. Exact sign typography/ornament and rear entrance facade need a separately referenced facade pass.",
     "Existing city paving stripes/roughness and dense legacy coaster supports differ from reference; preserved in this exterior pass.",
     "Whole NYNY resort remains refinement-deferred; no photoreal completion claim."
    ],
@@ -11677,12 +11677,12 @@
      "tools/resort-blocks/nyny-arrival.json"
     ],
     "builders": [
+     "tools/city-exteriors/audit-nyny-landscape.py",
      "tools/city-exteriors/replace-nyny-arrival.py",
      "tools/strip-landmarks/nyny_arrival.py",
      "tools/city-exteriors/drive-clearance-nyny-arrival.mjs",
      "tools/city-exteriors/stair-nyny-arrival.mjs",
-     "tools/city-exteriors/test-nyny-arrival.mjs",
-     "tools/city-exteriors/trim-nyny-arrival.py"
+     "tools/city-exteriors/test-nyny-arrival.mjs"
     ]
    },
    "acceptance": [

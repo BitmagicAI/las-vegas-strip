@@ -56,4 +56,6 @@ def exterior(B):
  samples=[[x,8.35,z]for x in np.arange(q.bounds[0]+.7,q.bounds[2],1)for z in np.arange(1610.5,1642,1)if q.buffer(-.3).contains(Point(x,z))]
  routes=[[[-159,D,1641],[-159,D,1610.5]],[[-144,D,1641],[-144,D,1610.5]],[[-165,D,1618],[-138,D,1618]]]
  Path('build/city-exteriors/nyny-arrival-samples.json').write_text(json.dumps(samples));Path('build/city-exteriors/nyny-arrival-stairs.json').write_text(json.dumps(routes))
- return dict(key=KEY,name='NYNY arrival pavilion and canopy',center=[cx,0,1620],bounds=[-167,1598,-136,1644],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
+ from nyny_landscape import landscape
+ landscape(B)
+ return dict(key=KEY,name='NYNY arrival pavilion and canopy',center=[cx,0,1620],bounds=[-172,1598,-131,1654],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
