@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1924,
- "bytes": 1170061344,
+ "bytes": 1170340777,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -360,8 +360,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-3.bin",
-   "bytes": 645944,
-   "sha256": "1515a4d25114be463716bad29ee42a4e473961dcc24321d175726c435bbee9b2",
+   "bytes": 658439,
+   "sha256": "879c21b4dc57bdc83557436b513332c4c4edac332979243c123aad4f55a82836",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "955abf986ea5bf1aca695de562a32023cf83910160e3f1f9b7544abe5c0eb829",
+   "sha256": "49f9c484be7857cff49c1acdfb31eebbb128eabd2855d54d30dfa52562181625",
    "kind": "runtime cell manifest"
   },
   {
@@ -1014,8 +1014,8 @@
   },
   {
    "path": "build/geographic-strip/cells/cell-1_-3.glb",
-   "bytes": 1626828,
-   "sha256": "912b05c9e19a6aa08e47b55eebcfc50e24ec55c63103fd09773217c46dd7ec31",
+   "bytes": 1624532,
+   "sha256": "dbfffc546ea09c56317517dc1ee148b22779b12d3a8ee76a4ea79bebb9f2d510",
    "kind": "optimized"
   },
   {
@@ -1243,7 +1243,7 @@
   {
    "path": "build/geographic-strip/cells/manifest.json",
    "bytes": 39796,
-   "sha256": "4a45d95e5ab22cd3d3000cd2b8623287ec8c917fa14720d9da2a17077e7dbd45",
+   "sha256": "648ee17e5409c037376e7ed1a2d642f2a65114e7208b5d7fed6d9ca37fcab8ee",
    "kind": "runtime cell manifest"
   },
   {
@@ -1566,8 +1566,8 @@
   },
   {
    "path": "build/geographic-strip/collision-cells/cell-1_-3.bin",
-   "bytes": 201228,
-   "sha256": "59633df00dab1f9cac4b807c3877cb559be6185d45d91f7b7fac97cbe7e3615f",
+   "bytes": 200664,
+   "sha256": "e06101a13c659f8646cb67d0058b50316b493361fb9d7f783a08f6af2ce8c9b1",
    "kind": "original"
   },
   {
@@ -1795,7 +1795,7 @@
   {
    "path": "build/geographic-strip/collision-cells/manifest.json",
    "bytes": 17609,
-   "sha256": "7af5fbe1cec17bfeb8df6ded65619202e653344b6a399521107f75eb60397a5d",
+   "sha256": "f0b059520ecf2e11ba6d53580a1215120062865332e15c49b3414f93a67fb242",
    "kind": "runtime cell manifest"
   },
   {
@@ -10848,14 +10848,14 @@
   },
   {
    "path": "build/strip-landmarks/springhillExterior-exterior-collision.bin",
-   "bytes": 884,
-   "sha256": "19103d0faabb90f02ac06575a78885d7fcd5acb4babf8b71b50477236dac1d04",
+   "bytes": 1384,
+   "sha256": "120406c6a728ab7e44020d6ba0da047b984c33a38013895232bc6931b3318070",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/springhillExterior-exterior.glb",
-   "bytes": 286492,
-   "sha256": "6140c0bb145d654c315ce4a24f69d59e6faed023552668e727a4dfe251eec55a",
+   "bytes": 555516,
+   "sha256": "693cb393e154556413cf1376788d1ebf3f8dd0c01bd9ce29995a93863dda2556",
    "kind": "optimized"
   },
   {
@@ -11316,8 +11316,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 393156,
-   "sha256": "627fc69bb7e2bd2500f3ad3a44dca6558b95f608ecb7c805a8dccc821a70b8f6",
+   "bytes": 393430,
+   "sha256": "437d3e3850726655c0ce3dd158798b7a74c46563294e204a66072bedc480fc16",
    "kind": "original"
   },
   {

@@ -57,7 +57,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-turnberry-towers` | M | P2 | 4 | Refine the exterior of Turnberry Towers |
 | `ext-turnberry-place` | M | P2 | 3 | Refine the exterior of Turnberry Place |
 | `ext-westgate` | M | P2 | 3 | Refine the exterior of Westgate |
-| `ext-springhill` | S | P2 | 2 | Refine the exterior of SpringHill Suites |
+| `ext-springhill` | M | P2 | 3 | Refine the exterior of SpringHill Suites |
 | `ext-trump` | M | P2 | 3 | Refine the exterior of Trump International |
 | `ext-elara` | M | P2 | 3 | Refine the exterior of Elara |
 | `ext-grand-chateau` | L | P2 | 6 | Refine the exterior of Marriott Grand Chateau |

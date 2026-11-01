@@ -1,12 +1,5 @@
-const frame=()=>new Promise(r=>requestAnimationFrame(r));
-probe.teleport(1630,2,-2115);engine.editorManager.enableEditorMode();
-document.querySelector('.bm-editor-header-buttons button')?.click();
-let eye,target;
-const release=engine.registerBeforeRender(()=>{engine.camera.position.set(...eye);engine.camera.lookAt(...target);engine.camera.updateMatrixWorld();});
-const results=[];
-for(const v of [
-{name:'springhill-aerial',eye:[1670,120,-2050],target:[1570,30,-2130]},
-{name:'springhill-east',eye:[1640,6,-2120],target:[1570,30,-2130]},
-{name:'springhill-south',eye:[1570,6,-2065],target:[1570,25,-2130]}
-]){eye=v.eye;target=v.target;for(let i=0;i<120;i++)await frame();await __shot(v.name);const t=[];let last=performance.now();for(let i=0;i<120;i++){await frame();const now=performance.now();t.push(now-last);last=now;}t.sort((a,b)=>a-b);results.push({...v,p50:t[60],p95:t[114]});}
-release();return results;
+// Use unchanged names and cameras for both before and after installation.
+let skyColor;scene.traverse(o=>{if(o.isDirectionalLight){o.color.setHex(0xffffff);o.intensity=2;skyColor=o.color.clone().setHex(0xc2d5e0);}if(o.isAmbientLight||o.isHemisphereLight){o.color.setHex(0xffffff);o.intensity=1.3;}if(/skybox/i.test(o.name))o.visible=false;});if(skyColor)scene.background=skyColor;
+const views=[["front", [1630, 7, -2110], [1598, 8, -2134]], ["arrival", [1616, 3.2, -2134.2], [1598.65, 2.8, -2134.2]], ["roof", [1524, 88, -2117], [1550, 74, -2135]], ["deck", [1540.2, 75.7, -2127.8], [1548, 74.7, -2135]]];
+const frame=()=>new Promise(r=>requestAnimationFrame(r)),results=[];
+for(const [name,eye,target] of views){probe.teleport(eye[0],name==='deck'?74.15:1.1,eye[2]);const release=engine.registerBeforeRender(()=>{engine.camera.position.set(...eye);engine.camera.lookAt(...target);engine.camera.updateMatrixWorld();});for(let i=0;i<300;i++)await frame();await __shot('springhill-'+name);const times=[];let last=performance.now();for(let i=0;i<180;i++){await frame();const now=performance.now();times.push(now-last);last=now;}times.sort((a,b)=>a-b);release();results.push({name,eye,target,p50:times[90],p95:times[171]});}return results;
