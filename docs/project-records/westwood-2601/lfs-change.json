@@ -1,0 +1,50 @@
+{
+  "newLfsBytes": 6117401,
+  "objects": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_-4.bin",
+      "bytes": 391851,
+      "oid": "3bb590d920fad689e94eb71976576f3eb67d592cdb628244dd4cdaded2f19e17"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "oid": "b8387c2c5a97fc1569e5825201f7bd7419000d8192991cf37c7eb6844bd3aec1"
+    },
+    {
+      "path": "runtime-assets/geographic-strip/cells/cell-0_-4.glb",
+      "bytes": 2320820,
+      "oid": "7acd096a965c930a46046eb9ad6e6f04f95c287970679490f53b02fed30c041d"
+    },
+    {
+      "path": "runtime-assets/geographic-strip/cells/manifest.json",
+      "bytes": 39796,
+      "oid": "c452268d056fa0000f1ccd814b1b4c5f1bbd279fbf22bc42baac6cfa9effc4ac"
+    },
+    {
+      "path": "runtime-assets/geographic-strip/collision-cells/cell-0_-4.bin",
+      "bytes": 296056,
+      "oid": "f35de0a64f4c1b8f64af1b706e31010e94f85ad8aef6a9a6fecc20054897b8cf"
+    },
+    {
+      "path": "runtime-assets/geographic-strip/collision-cells/manifest.json",
+      "bytes": 17609,
+      "oid": "429ec09e5896143de5c1d06dc1916bfaab4b5b60b8bc07733f3b609f59f60f7c"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/venues.bin",
+      "bytes": 391688,
+      "oid": "db1698ee02a898c2dd188319f9874e6e9f03bbeda25770b514df49f3f3afa78f"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/westwood-2601-exterior-collision.bin",
+      "bytes": 6156,
+      "oid": "304e255915987f730fcbca5f19d11c4ec85e35edc56781e5655abd9f6b5d7263"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/westwood-2601-exterior.glb",
+      "bytes": 2639624,
+      "oid": "0e24914c96805240f66429278e443335efacf6c6e33d61d211a02481835b72e4"
+    }
+  ]
+}

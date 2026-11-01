@@ -1,6 +1,6 @@
 # 2601 Westwood — source authoring checkpoint
 
-Issue #435 assigned to janiverse, verified 2026-10-30. Branch starts at main 288e2ac. Source-only work while city-cell PR #437 remains open; do not run a shared-city installer or bake.
+Issue #435 assigned to janiverse, verified 2026-10-30. Branch starts at main 288e2ac. PR #437 merged into next on 2026-10-31. Owner authorized installation and unattended local acceptance/merge into next; release/CDN validation is owner-only.
 
 ## References inspected
 - [Owner property page](https://lvbuildings.com/2601-westwood-property/)
@@ -71,3 +71,22 @@ Added preflight_westwood_2601.py to compare authored shell footprints and above-
 
 ### Reproducible source checkpoint
 Resolved the spare-checkout review.py failure by copying 15 already-existing reference images from the main checkout into their original ignored local paths; no reference imagery is committed. Full record review now PASS (287 queued records), and targeted Westwood record validation remains separate. Rebuilt Westwood source mesh/collision/metadata JSON and verified all three SHA-256 hashes unchanged; evidence saved in source-rebuild.json. This does not assert binary exporter or installed-runtime reproducibility. No geometry, runtime, city bake, uploads or new claims changed. #437 remains open; #439 remains queued/unclaimed.
+
+### 2026-10-31 — unattended next workflow and installation
+The owner superseded the earlier waiting/CDN coordination rules. Infrastructure PR437 merged into next; issue436 closed. The requested Long runs rules are committed on next (120ba33). PR438 targets next and includes that base. Published/CDN validation belongs to the owner release step, not this merge gate.
+
+Installed both claimed shells with a dedicated face-removal installer: 35 visual faces and 35 corresponding collision faces removed; 9,560 groups, all retained face order, vertices, metadata and unrelated collision preserved. Exported the existing 800 m city cells, optimized the changed geometry and invoked the WebP pass; existing optimized cells reused. The first bake correctly rejected changed inputs after recovering the complete authoring manifest in this spare worktree; final bake and installed review are in progress. Front review camera moved outside the foreground obstruction; matching baseline recaptured before restoring the installed files.
+
+### Installed visual and movement review
+Inspected all six actual daylight game views with identical baseline/installed cameras and names. The frontage, pool-wall opening, canopy, sign, north equipment and annex stairwell are visible; roads and neighbouring shells remain. This is a simplified reference reconstruction, not photorealistic completion. Unobserved elevations and dimensions remain documented estimates.
+
+Both authored public routes pass normal movement in both directions (four segments): arrival ramp, pool gate to hotel deck. Arrival images face the nearby closed facade; return images show the approach. The gated annex stairwell is not represented as publicly accessible. Matched single-run p95 frame intervals were 18.5–19.3 ms before and 18.5–18.6 ms after, at 960×540 ultra over 180 measured frames per view. Published cold-load remains a release check.
+
+Geometry/collision cell SHA-256 comparison: 91/92 geometry cells and 90/91 collision cells unchanged byte-for-byte. Only cell 0,-4 changes (geometry 2,321,288 → 2,320,820 bytes); detailed building is 2,639,624 bytes. Final bake/package results follow below.
+
+### Final local gates and package
+PASS: bitmagic check; source clearance and preservation; record review; public-file check (existing inventory email warning); runtime GLB check against origin/next (2 models, 0 unoptimized); current city bake; deterministic LOD partition and 760-batch recombination; city LOD behavior tests; asset package (1916 present, 0 missing, 0 unoptimized); installed walk and matching daylight review. Smoke against this worktree's bitmagic dev passed all 9 stops with no failed requests, page errors or console errors. This smoke run uses the installed worktree, not a fresh remote clone/CDN.
+
+Final staging copied 9 files, retained 1907 and removed none. Only cell 0,-4 changed in geometry, collision and LOD; 91/92 LOD files unchanged. New LFS bytes 6,117,401 across 9 objects. Detailed hashes/sizes are in lfs-change.json. First bake rejected changing manifest inputs; second completed with stable inputs; only the final package was staged.
+
+Remaining discrepancies are evidence limits on unseen elevations, estimated dimensions and unconfirmed public interiors. Deferred them explicitly, without claiming full completion. CDN upload and published cold-load validation belong to the owner release step and do not hold the next merge.
