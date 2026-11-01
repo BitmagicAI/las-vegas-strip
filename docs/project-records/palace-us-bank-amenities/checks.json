@@ -1,0 +1,28 @@
+{
+  "typecheck": "PASS",
+  "blockReview": "PASS",
+  "publicCheck": "PASS; one pre-existing public Little Chapel email warning",
+  "siteLights": "PASS",
+  "lightingResize": "PASS",
+  "roofSupport": {
+    "palace": 509,
+    "usBank": 104,
+    "failures": 0,
+    "entranceSamples": 0
+  },
+  "installedCapsuleClearance": {
+    "palace": 295,
+    "usBank": 374,
+    "failures": 0
+  },
+  "optimization": "Both level and WebP passes completed, two candidates installed locally with --no-stage.",
+  "pending": [
+    "Inspect all seven daylight previews",
+    "Normal installed movement and endpoint images",
+    "One grouped bake",
+    "Stage and changed-runtime/bake/asset-pack checks",
+    "Final matching views/performance",
+    "Smoke against dev",
+    "Archive and LFS byte accounting"
+  ]
+}

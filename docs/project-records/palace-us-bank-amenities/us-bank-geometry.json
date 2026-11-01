@@ -1,0 +1,56 @@
+{
+  "treePlacements": [
+    [
+      -36.679085826078875,
+      -3208.5671417339627,
+      3.8
+    ],
+    [
+      -47.973596225363096,
+      -3204.0366365761056,
+      4.5
+    ],
+    [
+      -40.41042699468407,
+      -3202.74184533078,
+      5.199999999999999
+    ],
+    [
+      -48.589614060473366,
+      -3198.265026802249,
+      3.8
+    ],
+    [
+      -89.6375047901455,
+      -3187.4902192505515,
+      4.5
+    ],
+    [
+      -61.990755021904036,
+      -3178.424507270164,
+      5.199999999999999
+    ]
+  ],
+  "planterAreaM2": 169.31619425581374,
+  "dryLandscapeAreaM2": 2474.217512124467,
+  "coordinateFit": {
+    "centre": [
+      -62.94869211356148,
+      -3200.4353603068685
+    ],
+    "metresPerPixel": 0.1206,
+    "screenCentre": [
+      676,
+      360
+    ]
+  },
+  "limitations": [
+    "Approximate registration, retained mapped shells, elevations and species.",
+    "Close Jan2026 Street View shows gravel and hedges; no new water asserted.",
+    "Sign, palm court, exact entrances and full garage access remain unresolved.",
+    "Source only; installed review and clearance pending."
+  ],
+  "trianglesExcludingImportedTrees": 8495,
+  "degenerateTriangles": 0,
+  "sourceDryRouteSamples": 552
+}
