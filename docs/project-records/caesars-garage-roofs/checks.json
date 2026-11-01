@@ -1,0 +1,20 @@
+{
+  "typecheck": "PASS",
+  "tests": "PASS: ground-surface-index, site-lights, city-lazy-lod; 3/3",
+  "records": "PASS: 289 refinement-deferred records",
+  "public": "PASS: zero failures; one existing public business email warning",
+  "geometry": "PASS: original roof geometry has no nonfinite or degenerate triangles",
+  "preservation": "PASS:179 other nodes and12006 old collision triangles preserved",
+  "routes": "PASS:1785 packed collision samples and6 normal movement segments; all6endpoint images inspected",
+  "visualPreview": "PASS:4same-camera daylight images personally inspected",
+  "optimization": "PASS:level thenWebP installed;20.17MiB source to6.42MiB runtime",
+  "bake": "PASS:one invocation",
+  "release": "CDN upload and published cold-load checks belong to owner release step",
+  "runtime": "PASS:1 changed GLB,0 not optimized",
+  "pack": "PASS:1926 present,0missing,0notoptimized",
+  "bakeCheck": "PASS:up to date",
+  "visualFinal": "PASS:all four packaged matching-camera daylight views personally inspected",
+  "archive": "561 local reference/evidence files,190.2MB",
+  "performance": "Matching baseline/final saved; west-roof p95 slower by9.4ms, no no-regression claim",
+  "smoke": "PASS:9 stops,0failedrequests,0pageerrors,0consoleerrors"
+}

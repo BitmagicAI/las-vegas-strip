@@ -9,3 +9,11 @@ Installed preview: all four fixed daylight views personally inspected. Both prev
 The 23 m roof height is retained from the installed model, not newly surveyed. Stall pitch, equipment and housing dimensions are inferred. Ground-to-roof access and garage internal ramps are explicitly outside this pass; rooftop movement begins with a testing teleport and is not proof of public access. January 2025 facade grille observations require ownership and height reconciliation before a separate facade replacement. Existing road, bridge, towers and interiors remain intact.
 
 Rebuild from the saved pre-pass caesarsExterior GLB and collision JSON in .bitmagic/city-exterior-backups/caesars-garage-roofs: run caesars_garage_roofs.py, export_caesars_garage_roofs.py in Blender, install-caesars-garage-roofs.mjs, pack collision, optimize level and WebP, then install. No geographic face-removal export is needed.
+
+All six normal movement segments passed, including the public frontage. All six endpoint captures personally inspected.
+
+All four final packaged daylight views personally inspected. One bake, no geographic export; four changed LFS objects add7,486,118bytes.276/278runtimecellfiles remain byte-identical. Matching960x540ultra p50after30.8/33.5/16.8/26.8ms versus32.1/32.2/16.8/27.2ms; p95after51.5/57.9/19.2/42.9ms versus53.0/48.5/23.8/44.8ms. West roof has a slower tail (+9.4ms); no no-regression or stable60fps claim.
+
+Evidence archive: 561 local files,190.2MB, including before/preview/final and walking captures. These local captures are not claimed as uploaded PR attachments.
+
+All local step7 checks PASS, including nine smoke stops with zero failed requests/page/console errors.

@@ -697,7 +697,7 @@
     }
   },
   "garageRoofPass": {
-    "status": "installed-preview-verification-in-progress",
+    "status": "implemented-visually-reviewed-refinement-deferred",
     "issue": 59,
     "pullRequest": 457,
     "buildings": [
@@ -709,6 +709,13 @@
     "before": "build/city-exteriors/caesars-garage-before",
     "preservation": "docs/project-records/caesars-garage-roofs/preservation.json",
     "geometry": "docs/project-records/caesars-garage-roofs/geometry.json",
-    "collision": "docs/project-records/caesars-garage-roofs/collision.json"
+    "collision": "docs/project-records/caesars-garage-roofs/collision.json",
+    "preview": "build/city-exteriors/caesars-garage-preview",
+    "walk": "docs/project-records/caesars-garage-roofs/walk.json",
+    "visualReview": "All four installed daylight views and all six normal-walk endpoint images personally inspected. Diagonal rows, housings and mechanical bank visible. Existing front bridge/facades preserved.",
+    "after": "build/city-exteriors/caesars-garage-after",
+    "performance": "docs/project-records/caesars-garage-roofs/performance-after.json",
+    "assetDelta": "docs/project-records/caesars-garage-roofs/asset-delta.json",
+    "checks": "docs/project-records/caesars-garage-roofs/checks.json"
   }
 }
