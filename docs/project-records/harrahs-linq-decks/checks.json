@@ -13,7 +13,7 @@
   "publicCheck": "PASS:existing inventory email warning only",
   "recordReview": "PASS:whole-resort gates still pending",
   "visual": "Six installed daylight views inspected; corrected front cameras recaptured from baseline and current optimized assets",
-  "walk": "Final distance-based timeout run in progress; initial long routes timed out, retained as evidence",
-  "smoke": "Pending final run",
+  "walk": "PASS:4 routes,20 normal movement segments; both court perimeters and retained lobby entries in both directions",
+  "smoke": "PASS:9 stops,0 failed requests,0 page errors,0 console errors,0 stops not placed",
   "release": "CDN upload and published cold-load validation deferred to owner release step"
 }

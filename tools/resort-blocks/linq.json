@@ -2,9 +2,9 @@
   "version": 1,
   "id": "linq",
   "name": "The LINQ",
-  "updated": "2026-10-09",
+  "updated": "2026-10-31",
   "stage": "facade-pass-installed-and-inspected",
-  "statusNote": "Targeted exterior facade revision authorized after Venetian canal-detail pass. Existing interiors and public circulation retained. Photo-fit dimensions are estimates; full resort completion is not claimed.",
+  "statusNote": "Pool courtyard refinement installed and visually inspected; local deck perimeter and preserved lobby routes pass normal movement. Whole-resort gates and exact surveyed dimensions remain unresolved.",
   "nextAction": "Refine surveyed bay dimensions, exact tenant/sign typography, roof/services and landscape detail; match all sides and public levels before whole-resort acceptance.",
   "sources": [
     {
@@ -390,14 +390,28 @@
     "pullRequest": 443
   },
   "poolDeckPass": {
-    "status": "optimized-install-baking",
+    "status": "installed-reviewed-refinement-pending",
     "sourceRegister": "docs/project-records/harrahs-linq-decks/references.json",
     "sourceRoutes": "docs/project-records/harrahs-linq-decks/source-routes.json",
     "scope": "Original pool courtyard surfaces and furnishings; preserve all existing interiors/colliders; replace only conflicting Harrahs generic roof surface/plant; local deck loops only",
     "remaining": [
-      "Installed visual, walk, matched performance and local step-7 gates pending",
       "Pool dimensions and deck heights inferred; continuous lift/guest access not established",
-      "Exact mural, landscaping and unseen service boundaries remain unmodelled"
+      "Exact landscaping and unseen service boundaries remain unmodelled",
+      "Existing Harrahs courtyard wing massing and LINQ facade colours differ from references; retained for a separate measured pass"
+    ],
+    "evidence": {
+      "checks": "docs/project-records/harrahs-linq-decks/checks.json",
+      "performance": "docs/project-records/harrahs-linq-decks/performance.json",
+      "preservation": "docs/project-records/harrahs-linq-decks/preservation.json",
+      "source-routes": "docs/project-records/harrahs-linq-decks/source-routes.json",
+      "walk": "docs/project-records/harrahs-linq-decks/walk.json",
+      "smoke": "docs/project-records/harrahs-linq-decks/smoke.json",
+      "cell-delta": "docs/project-records/harrahs-linq-decks/cell-delta.json",
+      "lfs-delta": "docs/project-records/harrahs-linq-decks/lfs-delta.json"
+    },
+    "captures": [
+      "build/city-exteriors/linq-decks-before",
+      "build/city-exteriors/linq-decks-after"
     ]
   }
 }

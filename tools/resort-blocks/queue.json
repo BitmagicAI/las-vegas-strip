@@ -45,11 +45,11 @@
     {
       "id": "harrahs",
       "name": "Harrah\u2019s Las Vegas",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "harrahs.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Facade pass installed and inspected; creator explicitly requests LINQ next. Retain full-site and fine-detail discrepancies."
+        "date": "2026-10-31",
+        "reason": "PR443 pool court pass installed/inspected and local routes verified. Remaining full-site massing, measured dimensions, landscaping and continuous lift access retained."
       }
     },
     {
@@ -58,8 +58,8 @@
       "status": "refinement-deferred",
       "record": "linq.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Revised blue projecting facade inspected in the installed game; continuing creator-requested TI/Caesars pass. Full-site gates remain pending."
+        "date": "2026-10-31",
+        "reason": "PR443 pool court pass installed/inspected and local routes verified. Remaining full-site massing, measured dimensions, landscaping and continuous lift access retained."
       }
     },
     {
