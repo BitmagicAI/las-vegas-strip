@@ -1,0 +1,20 @@
+{
+  "objects": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_1.bin",
+      "bytes": 1198356,
+      "sha256": "9c83c0a688f7415fe9ed9caab71d7b1c3797a45ee0d910567bac561a9934d74c"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "e402a30b004214106d41e31f26d896d3652387eaf2ce21a44ab0aa66bdd4f12a"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/park-exterior.glb",
+      "bytes": 3016264,
+      "sha256": "3d647a2b208b53b989933f9d2ec64f893513bd727b0b8f9fe2e97d544e2b5611"
+    }
+  ],
+  "bytes": 4228421
+}

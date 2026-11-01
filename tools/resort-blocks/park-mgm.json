@@ -77,7 +77,7 @@
     "pullRequest": 447
   },
   "entryDetailPass": {
-    "status": "source-reviewed-installed-validation-pending",
+    "status": "installed-visually-reviewed-walk-smoke-pending",
     "evidence": "docs/project-records/park-eataly-entry",
     "scope": "Original looping cobble bands, closed entrance leaf frames, glazed gable and under-canopy bracing. All48 prior groups/131610 triangles, labels and collision retained.",
     "limitations": [
@@ -85,6 +85,17 @@
       "Existing generic north market lobby preserved; precise real-world interior registration remains unverified",
       "Original front sign proportions and glazing darkness remain approximate",
       "Pools, rear gardens, exact stone pattern and mature frontage trees remain deferred"
-    ]
+    ],
+    "visualReview": {
+      "views": [
+        "front",
+        "canopy",
+        "roof",
+        "lobby"
+      ],
+      "path": "build/city-exteriors/park-eataly-entry-after",
+      "assessment": "Four actual installed daylight views inspected. Paving and door frames visible; gable gap filled with glazing and bracing. Roof mass and preserved north lobby unchanged. Sign size, dark glass and facade proportions remain approximate, not photorealistic completion.",
+      "performance": "docs/project-records/park-eataly-entry/performance.json"
+    }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "typecheck": "PASS",
+  "scopedTests": "PASS 3/3 ground-surface-index, site-lights, city-lazy-lod",
+  "geometry": "PASS 14564 finite/nondegenerate/unique added triangles; 48 old groups/131610 triangles and labels preserved",
+  "collision": "PASS byte-identical authored collision; 108 packed-runtime floor/headroom samples",
+  "optimization": "PASS level then WebP,10.83\u21922.88MiB;1changedGLB/0unoptimized",
+  "bake": "PASS current; one bake, zero geographic exports",
+  "package": "PASS1924present/0missing/0unoptimized",
+  "publicCheck": "PASS with pre-existing inventory email warning",
+  "recordReview": "PASS active Park record, whole-site gaps retained",
+  "views": "Four actual installed daylight views inspected, identical before/after cameras/names",
+  "normalWalk": "PASS6segments; covered porch and preserved north lobby both directions; arrival/return images inspected",
+  "smoke": "PENDING; active nine-stop test",
+  "release": "CDN/published cold-load verification belongs to release"
+}

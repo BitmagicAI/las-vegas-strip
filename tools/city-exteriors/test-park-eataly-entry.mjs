@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import RAPIER from '@dimforge/rapier3d-compat';
+import {CollisionPack} from '../../src/work/CollisionPack.ts';
 const read=p=>JSON.parse(fs.readFileSync(p));
 const venue=read('build/strip-landmarks/venues.json').find(v=>v.key==='park'),portal=venue.portals[0];
 const old=fs.readFileSync('.bitmagic/city-exterior-backups/park-eataly-entry/park-exterior-collision.json');
@@ -8,8 +9,15 @@ const oldCollision=JSON.parse(old),currentCollision=read('build/strip-landmarks/
 assert.deepEqual(currentCollision.vertices.slice(0,oldCollision.vertices.length),oldCollision.vertices,'Original collision vertices changed');
 assert.deepEqual(currentCollision.indices.slice(0,oldCollision.indices.length),oldCollision.indices,'Original collision faces changed');
 await RAPIER.init();const world=new RAPIER.World({x:0,y:-9.81,z:0});
-for(const c of [...read('build/geographic-strip/city-colliders.json'),read('build/strip-landmarks/park-exterior-collision.json'),read('build/strip-landmarks/park-interior-collision.json')]){
- if(c.indices.length)world.createCollider(RAPIER.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));
+for(const cell of read('build/geographic-strip/collision-cells/manifest.json').cells){
+ const bytes=fs.readFileSync('build/geographic-strip/collision-cells/'+cell.file);
+ const pack=await CollisionPack.decode(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength));
+ for(let i=0;i<pack.count;i++)world.createCollider(RAPIER.ColliderDesc.trimesh(pack.vertices(i),pack.indices(i),144));
+}
+for(const file of ['park-exterior','park-interior']){
+ const bytes=fs.readFileSync('build/strip-landmarks/'+file+'-collision.bin');
+ const pack=await CollisionPack.decode(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength));
+ for(let i=0;i<pack.count;i++)world.createCollider(RAPIER.ColliderDesc.trimesh(pack.vertices(i),pack.indices(i),144));
 }
 world.step();let samples=0;const failures=[],shape=new RAPIER.Capsule(.65,.29),q={x:0,y:0,z:0,w:1};
 for(let d=-5;d<35;d+=.5){

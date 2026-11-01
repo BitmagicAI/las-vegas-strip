@@ -6,4 +6,4 @@ Original additive geometry: looping cobble bands, staggered stone joints, closed
 
 Official 2023 event plans and stone-supplier photos inform reference only. Event seating is not normal layout evidence. South public interior connection remains unimplemented; north generic market lobby preserved. Exact dimensions, sign/glazing fidelity, pools, gardens and mature trees remain explicit gaps.
 
-Four matching baseline views recorded. WebP optimization complete10.83→2.88MiB. One grouped bake running /tmp/park-bake.log; no geographic export. Next actual installed views/performance, normal walks, smoke, package and final step7 gates. Do not claim installed verification yet.
+Four matching baseline views recorded. WebP optimization complete10.83→2.88MiB. One grouped bake complete; no geographic export. Only LOD cell-1,1 plus its manifest changed;276other cellfiles byte-identical. Package1924present/zero missing/unoptimized; bake current. Three new LFS objects4,228,421bytes. Installed four views, six normal walking segments and nine-stop smoke running in sequence session24041. Do not claim installed verification until results and images are inspected.
