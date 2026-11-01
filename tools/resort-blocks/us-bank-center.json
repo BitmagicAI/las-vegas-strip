@@ -64,11 +64,12 @@
     }
   },
   "amenityRefinement20261101": {
-    "status": "installed-verification-in-progress",
+    "status": "installed-walk-and-preview-verified-final-package-pending",
     "pullRequest": 470,
     "research": "docs/project-records/palace-us-bank-amenities/research.json",
     "checks": "docs/project-records/palace-us-bank-amenities/checks.json",
     "scope": "Dry gravel and diagonal paths with raised planted beds; close Jan2026 Street View supersedes earlier ambiguous fountain interpretation",
-    "limitations": "Approximate layout/elevations; normal movement, final visual and performance verification pending. No whole-block completion claim."
+    "limitations": "Approximate layout/elevations, remaining landscape and public connections; final packaged performance/smoke checks pending. No whole-block completion claim.",
+    "walk": "docs/project-records/palace-us-bank-amenities/walk.json"
   }
 }

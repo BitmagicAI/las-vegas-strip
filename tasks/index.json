@@ -4079,7 +4079,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Arrival canopy and real entrance apertures",
-    "Pool deck, landscaping and garage ramps",
+    "Pool court installed as estimated study; raised bar/stair, landscaping/palms and garage ramps remain unresolved.",
     "Closer facade reference matching and material review",
     "Full route and performance measurements"
    ],
@@ -4102,6 +4102,9 @@
      "tools/resort-blocks/palace-station.json"
     ],
     "builders": [
+     "tools/strip-landmarks/palace_station_amenities.py",
+     "tools/city-exteriors/install-palace-us-bank-amenities.mjs",
+     "tools/city-exteriors/test-palace-us-bank-routes.mjs",
      "tools/city-exteriors/test-palace-station.mjs",
      "tools/strip-landmarks/palace_station.py",
      "tools/strip-landmarks/build_palace_station.py"
@@ -4125,7 +4128,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Ground landscaping and water features",
+    "Dry frontage landscape installed as estimated study; exact species, palm court and any water features outside the inspected dry frontage remain unresolved.",
     "Exact signage, entrance and garage route checks",
     "Performance route comparison",
     "Corner reveals show thin seams; refine trims"
@@ -4149,7 +4152,9 @@
      "tools/resort-blocks/us-bank-center.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-palace-us-bank-amenities.mjs",
      "tools/strip-landmarks/us_bank.py",
+     "tools/city-exteriors/test-palace-us-bank-routes.mjs",
      "tools/city-exteriors/test-us-bank.mjs"
     ]
    },

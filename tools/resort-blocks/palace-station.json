@@ -64,11 +64,12 @@
     }
   },
   "amenityRefinement20261101": {
-    "status": "installed-verification-in-progress",
+    "status": "installed-walk-and-preview-verified-final-package-pending",
     "pullRequest": 470,
     "research": "docs/project-records/palace-us-bank-amenities/research.json",
     "checks": "docs/project-records/palace-us-bank-amenities/checks.json",
     "scope": "Original pool/spa and furniture court, excluding retained mapped pavilions",
-    "limitations": "Approximate layout/elevations; normal movement, final visual and performance verification pending. No whole-block completion claim."
+    "limitations": "Approximate layout/elevations, remaining landscape and public connections; final packaged performance/smoke checks pending. No whole-block completion claim.",
+    "walk": "docs/project-records/palace-us-bank-amenities/walk.json"
   }
 }
