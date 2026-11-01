@@ -1,0 +1,37 @@
+{
+  "viewport": "960x540",
+  "quality": "ultra",
+  "settleFrames": 300,
+  "sampleFrames": 180,
+  "views": [
+    {
+      "name": "front",
+      "beforeP50": 27.4,
+      "afterP50": 30,
+      "beforeP95": 49.6,
+      "afterP95": 51.2
+    },
+    {
+      "name": "pool-overview",
+      "beforeP50": 35.7,
+      "afterP50": 39.4,
+      "beforeP95": 49,
+      "afterP95": 45.8
+    },
+    {
+      "name": "pool-west",
+      "beforeP50": 17.4,
+      "afterP50": 17.8,
+      "beforeP95": 23.9,
+      "afterP95": 22.1
+    },
+    {
+      "name": "pool-north",
+      "beforeP50": 47.7,
+      "afterP50": 50.4,
+      "beforeP95": 55.2,
+      "afterP95": 70.4
+    }
+  ],
+  "limitation": "Single matching-camera run; no 60fps or no-regression claim. Browser scheduling and GPU contention may affect tails."
+}
