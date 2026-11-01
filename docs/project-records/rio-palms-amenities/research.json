@@ -1,5 +1,5 @@
 {
-  "status": "research-and-baseline",
+  "status": "references-inspected-baseline-correction",
   "issues": [
     53,
     54
@@ -21,11 +21,65 @@
     {
       "url": "https://www.palms.com/entertainment/palms-pool",
       "review": "Official pool reference from existing block; current visual review pending."
+    },
+    {
+      "url": "https://www.riolasvegas.com/wp-content/uploads/2025/03/2025-Pool-Map-1-1.png",
+      "review": "Visually inspected official 2025 map: four basins named Nautilus, Fish, Shell and Lagoon; thick planting islands, curved lounger rows, Shell cabanas 1-6, Lagoon cabanas 7-18, stage and two bars. Diagram is not a survey."
+    },
+    {
+      "url": "https://riolv.wpengine.com/wp-content/uploads/2024/06/Cabana-Interior-scaled.jpg",
+      "review": "Visually inspected: pale yellow tent walls, white tied curtains, teal chair, red patterned daybed, white tables, wood storage/minifridge and screen; waterfall rockwork outside. Original adapted furnishing possible; no photo texture copying."
+    },
+    {
+      "url": "https://riolv.wpengine.com/wp-content/uploads/2024/06/Lagoon-Cabana-1-scaled.jpg",
+      "review": "Visually inspected: yellow hip canopy, white scalloped valance/tied drapes, paired open rooms, red/blue upholstered seating and multicolor parasols."
+    },
+    {
+      "url": "https://riolv.wpengine.com/wp-content/uploads/2024/04/Pool-3_042224_3000w-1600x1600.jpg",
+      "review": "Visually inspected dense tall palms, low planting, tan artificial rockwork, white in-water curved loungers and scalloped red/yellow/blue parasols. Filename suggests April2024; exact capture not independently verified."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11755,-115.1865&zoom=19&basemap=satellite",
+      "review": "Visually inspected four Rio basins and planting islands; official map matches arrangement. Pixel640,400 right-click anchor36.117463,-115.186500. Imagery date not shown. Existing game pool registration remains approximate."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1148,-115.1882&heading=0&pitch=10",
+      "review": "Visually inspected Feb2025 Google Street View3157NV592: blue/red curved tower, dense palm frontage, tall Rio sign and central covered arrival. Pool courtyard concealed. Earlier36.1166,-115.1860 returned unrelated indoor KISS photosphere and was not used for exterior inference."
+    },
+    {
+      "url": "https://www.palms.com/sites/default/files/2026-08/fill-entertainment-palms-place-pool_hero.webp",
+      "review": "Visually inspected official photograph: narrow pool along glazed restaurant and mosaic columns, rectangular spa, silver-framed white loungers, palms in stone beds, red cabanas, white horizontal stone fireplace and blue cushions. Exact date/elevation not shown."
+    },
+    {
+      "url": "https://www.palms.com/sites/default/files/2026-08/fill-entertainment-palms-place-pool_cabanas.webp",
+      "review": "Visually inspected red horizontal wall cabanas with white louver shutters, white loungers, white shade canopy and blue sofa."
+    },
+    {
+      "url": "https://www.palms.com/sites/default/files/2026-10/palms_pool_2560x1440.jpg",
+      "review": "Visually inspected main pool: white two-level cabana terraces, upper plunge pools with turquoise mosaic face, timber pergolas, stone accents, navy cushions and drapes, round shallow-water daybeds, palm and shrub beds. Filename month is not proof of capture date."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1146,-115.1934&zoom=19&basemap=satellite",
+      "review": "Visually inspected main Palms court: two rounded basins, west one has central island/round void, surrounding curved/north/east cabana banks and upper narrow pools. Date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1140,-115.1985&zoom=19&basemap=satellite",
+      "review": "Visually inspected Palms Place east and south L terrace, linear cabanas along east edge and palms on south margin; tower perspective obscures portions. Exact terrace footprint/elevation inferred."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1130,-115.1994&heading=30&pitch=15",
+      "review": "Visually inspected Nov2024 Google Street View4241SArville: tower above planted lower podium; pools largely hidden. Retain elevation uncertainty."
     }
   ],
   "uncertainties": [
     "No new dimensions or layout accepted until Google aerial/Street View and official photographs inspected.",
     "Existing Palms tower plan and Ivory height remain estimates.",
     "One shared bake only after all authoring, optimization and normal movement corrections."
+  ],
+  "baselineReview": "All eight initial game views inspected: Rio front is clear, four Rio views usable. Palms front has Preparing area overlay; increase settling before recapturing matching baseline. Palms Place view shows missing terrace; other two views clear.",
+  "decisions": [
+    "Retain existing tower/podium/interior geometry and target amenity courts.",
+    "Palms Place sixth floor is official; absolute metre elevation and terrace boundaries still inferred.",
+    "Rio existing basins are approximate and one was previously shifted to avoid podium; do not claim calibrated exact footprint."
   ]
 }
