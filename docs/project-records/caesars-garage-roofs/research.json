@@ -1,0 +1,27 @@
+{
+  "task": "ext-caesars-towers",
+  "issue": 59,
+  "claimed": true,
+  "candidate": "Two mapped self-parking roof decks: original stall markings, roof housings and reference-supported edge detail, preserve inaccessible internal garage for separate access task. Check baseline before choosing final scope.",
+  "recordsToReconcile": "Top remaining list stale: Colosseum, frontage, garden pavilions and rotunda already have implemented passes. Pool elevation/public connections still unresolved; do not obscure with garden additions.",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11775,-115.1782&zoom=19&basemap=satellite",
+      "observed": "Personally inspected close and zoomed-out aerial: adjoining west/east garage decks, diagonal parking row bands, broad circulation lanes, pale west deck/darker east, small roof stair/elevator housings, western mechanical bank. Acquisition date not displayed; copyright2026 is not image date. Stall spacing and exact housing dimensions inferred."
+    },
+    {
+      "url": "https://newsroom.caesars.com/Property-Fact-Sheets/Caesars-Palace/",
+      "observed": "Primary resort press-kit text read; links official fact sheet/photo gallery. No gallery image personally inspected in this pass yet."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=tRm-GP7pjqTe3PIjGS89QQ&heading=180&pitch=35",
+      "date": "January 2025",
+      "observed": "Personally inspected north Jay Sarno facade at36.1183485,-115.1793619, low and upward views. Pale concrete blank lower wall, large upper rectangular metal starburst grille bays with small gold bosses, broad pilasters and stepped cornices. Exact garage-vs-service facade ownership/height must be resolved before changing it; roof markings are a less intrusive candidate."
+    }
+  ],
+  "mappedGarages": [
+    "way/134949710",
+    "way/134949713"
+  ],
+  "base": "bf0ee10"
+}
