@@ -14,6 +14,7 @@ def build(B):
  for p in parts(parent):
   for r in p.interiors:
    if Polygon(r).area>100:pools.append(Polygon(r))
+ pools=[p.intersection(P.courtyard().buffer(-2.5)) for p in pools]
  pools.sort(key=lambda p:p.centroid.x)
  # West pool's round dry island is visible in aerial photography.
  pools[0]=pools[0].difference(Point(pools[0].centroid.x,pools[0].centroid.y).buffer(3.2,resolution=24))

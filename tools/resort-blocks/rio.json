@@ -36,9 +36,9 @@
   "id": "rio",
   "status": "refinement-deferred",
   "remaining": [
-    "Dense garden planting, landscape islands, pool enclosure and authentic furnishings unfinished.",
-    "Photo-exact facade curve and colors, crown signage and arrival canopies remain incomplete.",
-    "Detailed public walking routes and guest-top-floor boundary require traversal; roof/approach tests are not whole-site acceptance."
+    "Planting is overly regular; rock waterfalls, exact landscaped islands, pool enclosure, bars and stage remain deferred because the approximate inherited basin registration needs further survey calibration.",
+    "Photo-exact facade curves/colors, crown signage and arrival canopy detail remain deferred; this pass preserves the existing tower and podium geometry.",
+    "Pool circuits are under movement review. Full public connections and guest-top-floor boundaries remain outside this scoped amenity pass; roof/approach checks do not establish whole-site acceptance."
   ],
   "estimates": {
     "IpanemaM": 74,
@@ -132,5 +132,31 @@
   "evidence": [
     "build/city-exteriors/rio-courts",
     "build/city-exteriors/rio-pools-final"
-  ]
+  ],
+  "amenitiesPass": {
+    "status": "installed-preview-awaiting-walk",
+    "record": "docs/project-records/rio-palms-amenities",
+    "source": "tools/strip-landmarks/rio_amenities.py",
+    "baseline": "build/city-exteriors/rio-amenities-baseline",
+    "preview": "build/city-exteriors/rio-amenities-preview",
+    "sourceChecks": {
+      "triangles": 27446,
+      "degenerateTriangles": 0,
+      "collisionTriangles": 5877,
+      "routeSamples": 1256,
+      "unsupportedSamples": 0,
+      "scope": "Authored source only; installed preservation, visual and movement checks still required"
+    },
+    "preservation": {
+      "preservedNodes": 97,
+      "preservedNodeGeometry": true,
+      "oldCollisionTriangles": 3603,
+      "addedCollisionTriangles": 5877,
+      "removedPoolNodes": 5,
+      "removedPoolCollisionTriangles": 2946,
+      "retainedCollisionTriangles": 657,
+      "scope": "Replace pool nodes and bounded pool collision; preserve tower, podium, arrival and guest routes."
+    },
+    "visualReview": "All four matching installed daylight preview images inspected; full-block fidelity is not claimed."
+  }
 }

@@ -40,11 +40,12 @@
   "id": "palms",
   "status": "refinement-deferred",
   "remaining": [
-    "Exact tower plan calibration and Ivory height remain estimates",
-    "Pool courtyard is visibly sparse: cabanas, planting, furniture, enclosure and Palms Place sixth-floor pool missing",
-    "Arrival signage is not readable in installed views; canopy and entry route need reference refinement",
-    "Full public circulation and fine facade detail not verified",
-    "No photorealistic-completion claim"
+    "Exact tower plan calibration and Ivory height remain estimates; existing tower geometry and guest core are preserved.",
+    "Main-court cabanas and chairs installed, but exact curved cabana banks, planting and enclosure remain deferred pending tighter aerial registration.",
+    "Palms Place sixth-floor pool remains unbuilt: roof elevation and tower/garage clearance are not sufficiently calibrated to alter the retained roof safely in this pass.",
+    "Upper cabana galleries are visual only; reference-supported staircase placement and upper circulation remain unresolved. Lower public court routes are being tested.",
+    "Arrival signage/canopy and fine facade details remain deferred; retained arrival nodes and guest approach checks are preserved.",
+    "No photorealistic or whole-block completion claim."
   ],
   "implemented": [
     "Three separately fitted towers replacing one78m full-site extrusion",
@@ -171,5 +172,31 @@
         "p95": 17.600000143051147
       }
     ]
+  },
+  "amenitiesPass": {
+    "status": "installed-preview-awaiting-walk",
+    "record": "docs/project-records/rio-palms-amenities",
+    "source": "tools/strip-landmarks/palms_amenities.py",
+    "baseline": "build/city-exteriors/palms-amenities-baseline-corrected",
+    "preview": "build/city-exteriors/palms-amenities-preview",
+    "sourceChecks": {
+      "triangles": 6340,
+      "degenerateTriangles": 0,
+      "collisionTriangles": 3309,
+      "routeSamples": 778,
+      "unsupportedSamples": 0,
+      "scope": "Authored source only; installed preservation, visual and movement checks still required"
+    },
+    "preservation": {
+      "preservedNodes": 27,
+      "preservedNodeGeometry": true,
+      "oldCollisionTriangles": 1331,
+      "addedCollisionTriangles": 3309,
+      "removedPoolNodes": 2,
+      "removedPoolCollisionTriangles": 161,
+      "retainedCollisionTriangles": 1170,
+      "scope": "Replace pool nodes and bounded pool collision; preserve tower, podium, arrival and guest routes."
+    },
+    "visualReview": "All four matching installed daylight preview images inspected; full-block fidelity is not claimed."
   }
 }
