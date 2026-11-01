@@ -18,8 +18,11 @@ Optimize both `highrises/exteriors.glb` and `excaliburFrontage-exterior.glb` ind
 - `geometry.json`: finite geometry and retained frontage/collision audit.
 - `replacement-report.json`, `highrise-preservation.json`: precise replacement scope and optimized output checks.
 - Matching baseline: `build/city-exteriors/excalibur-arcade-before-final`; initial `before` has two obstructed cameras and is not the comparison baseline.
-- Final installed captures, normal walking, performance, bake and package checks are still pending. Do not treat this source checkpoint as completion.
+- Five final matching installed daylight views personally inspected: `build/city-exteriors/excalibur-arcade-after-final`. Three close arcade views and two corrected elevated roof views inspected separately.
+- Six normal walking segments passed; 543 static clearance samples and 114 retained bridge samples passed.
+- Matching 960x540 frame medians remain 16.6–16.7 ms; p95 increases 0.1–1.1 ms across the five views (17.5–18.9 ms final). This is a local sample, not a published cold-load guarantee.
+- Final bake, optimization and package checks passed. See `checks.json` for final gate results.
 
 ## Final elevated-view correction
 
-The first final elevated view revealed 480 old crenellation faces outside the original removal radii. Removal radii expanded by0.45m to cover their box corners, without reaching neighboring features. A second local bake is required to correct this before merge; only the final corrected runtime assets will be staged for commit, so no extra LFS asset version is uploaded. Initial after captures are superseded by the corrected final captures.
+The first final elevated view revealed 480 old crenellation faces outside the original removal radii. Removal radii expanded by0.45m to cover their box corners, without reaching neighboring features. A second local bake corrected this before merge; only the final corrected runtime assets will be staged for commit, so no extra LFS asset version is uploaded. Initial after captures are superseded by the corrected final captures.

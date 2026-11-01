@@ -182,17 +182,20 @@
     }
   },
   "arcadePass": {
-    "status": "installed-preview-verification-in-progress",
+    "status": "installed-reviewed-refinement-deferred",
     "issue": 32,
     "pullRequest": 453,
     "source": "tools/strip-landmarks/excalibur_arcade.py",
     "before": "build/city-exteriors/excalibur-arcade-before-final",
-    "after": "pending",
+    "after": "build/city-exteriors/excalibur-arcade-after-final",
     "geometry": "docs/project-records/excalibur-arcade/geometry.json",
     "highrisePreservation": "docs/project-records/excalibur-arcade/highrise-preservation.json",
     "estimates": "Pier tops4.8m, roof5.1m, square widths2m/4.2m; mapped centers retained, shapes and trim fitted to April2025StreetView. Original flat floor0.3m preserved, not a surveyed elevation.",
     "normalWalking": "docs/project-records/excalibur-arcade/normal-walk.json",
     "detailViews": "build/city-exteriors/excalibur-arcade-detail",
-    "localBakeCorrection": "Final elevated view exposed 480 old crenellation faces outside original masks. Expanded radii by0.45m; second local bake before first runtime commit. Only corrected final LFS version will be uploaded."
+    "localBakeCorrection": "Final elevated view exposed 480 old crenellation faces outside original masks. Expanded radii by0.45m; second local bake before first runtime commit. Only corrected final LFS version will be uploaded.",
+    "performance": "docs/project-records/excalibur-arcade/performance-comparison.json",
+    "assetDelta": "docs/project-records/excalibur-arcade/asset-delta.json",
+    "checks": "docs/project-records/excalibur-arcade/checks.json"
   }
 }

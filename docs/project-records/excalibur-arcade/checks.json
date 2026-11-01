@@ -1,0 +1,15 @@
+{
+  "bitmagicCheck": "PASS",
+  "tests": "PASS 3/3: ground-surface-index, site-lights, city-lazy-lod",
+  "review": "PASS 289 block records",
+  "public": "PASS 0 failures, one existing public inventory email warning",
+  "runtimeGlbs": "PASS --changed origin/next; both changed models level + WebP",
+  "bake": "PASS current",
+  "assetPack": "PASS 1926 present, 0 missing, 0 not optimized",
+  "smoke": "PASS 9 stops; zero failed requests/page errors/console errors/unplaced stops",
+  "walking": "PASS six normal segments in both directions; endpoints inspected",
+  "collision": "PASS 543 arcade and 114 retained bridge samples",
+  "visual": "Five matching final daylight views, three close views and two corrected roof views personally inspected",
+  "archive": "429 evidence/reference files, 148.0 MB",
+  "release": "CDN upload and published cold-load deferred to release step"
+}
