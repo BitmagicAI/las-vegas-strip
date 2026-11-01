@@ -38,10 +38,36 @@
     {
       "url": "https://www.lasvegasnevada.gov/News/Blog/Detail/popular-las-vegas-landmarks-and-attractions",
       "imageDate": "September4,2024",
-      "observed": "Primary city text corroborates80ft arches atSTRAT betweenStLouis/BobStupak."
+      "observed": "Primary city text corroborates80ft arches atSTRAT betweenStLouis/BobStupak. Official night photograph personally inspected: broad blue crossed ribbons with dense dot lamps, suspended pink script emblem, thin suspension cables and small upper-right star accents."
     }
   ],
   "recordNotes": "Top remaining list stale: poolIntegration20261021 and rideIntegration20261021 already implemented. Preserve those and reconcile record before choosing concrete scoped work.",
   "candidateScope": "Missing gateway arches are explicitly recorded in podiumAudit.remaining; check actual installed baseline and existing city ownership before authoring.",
-  "base": "8731e5f"
+  "base": "8731e5f",
+  "pullRequest": 455,
+  "placement": {
+    "aerialClickedLandingsLatLon": [
+      [
+        36.147134,
+        -115.155382
+      ],
+      [
+        36.146765,
+        -115.155162
+      ],
+      [
+        36.146921,
+        -115.155526
+      ],
+      [
+        36.146979,
+        -115.15503
+      ]
+    ],
+    "fittedCenterXZ": [
+      1594,
+      -3445.3
+    ],
+    "note": "Approximate visible aerial edge clicks span45.1\u201345.6m, vs official140ft/42.672m. Use official span around fitted common centre and observed diagonal directions; footing and ribbon sections remain estimated. Initial north baseline camera was inside the existing tower base and is superseded before authoring."
+  }
 }
