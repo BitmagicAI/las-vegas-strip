@@ -10,8 +10,18 @@
   "release": "Published/CDN checks deferred to release",
   "runtimeOptimization": "PASS: 1 changed GLB, 0 unoptimized; WebP included",
   "package": "PASS: 1924 present, 0 missing, 0 unoptimized",
-  "recordReview": "PASS; whole-site gaps retained",
+  "recordReview": "PASS after PR446 adds five missing source titles. PR445 final active-record review failed with KeyError title and was mistakenly merged; its earlier PASS applied to the previous active record.",
   "publicCheck": "PASS; existing inventory email warning only",
   "walk": "PASS: 34 normal movement segments, curved public frontage and cooling maintenance lane in both directions; arrival/return images inspected. Two straight approaches retained as superseded evidence.",
-  "smoke": "PASS: 9 stops; zero failed requests/page errors/console errors/unplaced stops"
+  "smoke": "PASS: 9 stops; zero failed requests/page errors/console errors/unplaced stops",
+  "metadataCorrection": {
+    "pullRequest": 446,
+    "typecheck": "PASS",
+    "tests": "PASS 3/3 with tools/ts-register.mjs; first invocation without loader failed before test execution",
+    "publicCheck": "PASS, existing inventory email warning",
+    "optimization": "PASS, zero changed GLBs",
+    "bake": "PASS, current without regeneration",
+    "package": "PASS 1924 present, zero missing/unoptimized",
+    "installedEvidence": "PR445 six matched captures, 34 walk segments and nine smoke stops retained; no geometry/runtime changes"
+  }
 }
