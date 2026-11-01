@@ -1,0 +1,16 @@
+{
+  "typecheck": "PASS",
+  "applicableTests": "3 PASS",
+  "review": "PASS",
+  "public": "PASS; pre-existing public contact warning",
+  "changedRuntime": "1 GLB PASS; level plus WebP installed",
+  "bake": "One bake; freshness PASS",
+  "package": "1928 present; 0 missing; 0 not optimized",
+  "smoke": "9 stops placed; zero failed requests/page errors/console errors",
+  "visual": "5 final matching daylight views and 30 walk endpoint images inspected",
+  "walk": "24 deck segments before rail removal; 6 retained lobby approach segments after removal; all PASS",
+  "triangles": 16171,
+  "degenerates": 0,
+  "remaining": "Exact dimensions, full garden/fire pits, street-boundary masonry and interior pool links deferred",
+  "release": "CDN and published cold-load validation deferred to owner release step"
+}

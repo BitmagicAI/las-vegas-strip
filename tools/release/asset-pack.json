@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1190307468,
+ "bytes": 1190206475,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -312,8 +312,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_1.bin",
-   "bytes": 764444,
-   "sha256": "3007a9a5125fe482dafed470ca6bff44b8b74aa2238e27f06af691e18523798a",
+   "bytes": 768415,
+   "sha256": "a90849a2122c391f58f7d81348c4ab22ddf32b0b88a57ac841bb29ba7dc5bff5",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "cd1a6d24142748b65f9fe816edaffba29834b4144d6bd99bab320ba422d3bd9c",
+   "sha256": "c926d99b2ee2d0fa047328961fc315e525fb98c75c8ae00f7ed166276ce0bfc1",
    "kind": "runtime cell manifest"
   },
   {
@@ -10728,14 +10728,14 @@
   },
   {
    "path": "build/strip-landmarks/signatureExterior-exterior-collision.bin",
-   "bytes": 5784,
-   "sha256": "0f80c9f3ce67daaf345508573d0f3f660774c66ad893e5c550cefc135f0257b3",
+   "bytes": 8956,
+   "sha256": "5ad473fcabc08aec68405086ff3e15ee3640b6f24e4790bce8f3f4055c4fc8de",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/signatureExterior-exterior.glb",
-   "bytes": 3301680,
-   "sha256": "25db0fe8890dc025f6c9794f549ed45e3f12765ed4b1ec730c5d75db197fd5bb",
+   "bytes": 3193544,
+   "sha256": "061a70f64c9bd22269141bef7aab5bd054f9d54c8058bf775ca58f6b72b0f564",
    "kind": "optimized"
   },
   {

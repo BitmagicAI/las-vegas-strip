@@ -85,12 +85,15 @@
   },
   "evidence": "build/city-exteriors/signature-courts",
   "amenitiesPass": {
-    "status": "installed-walk-running",
+    "status": "installed-verified-refinement-deferred",
     "issue": 50,
     "pr": 466,
     "record": "docs/project-records/signature-amenities",
     "geometry": "16171 original triangles, zero degenerates; 2221 added collision triangles; 41 original nodes and 386 collision triangles preserved.",
-    "collision": "2820 static samples PASS; 36 external gate samples proved with normal movement. 24 bidirectional deck segments PASS; all 24 endpoint images inspected. Existing lobby approach rail clearance corrected; entrance walk running.",
-    "bake": "Not yet run."
+    "collision": "2820 packed deck samples PASS; 36 outside-gate samples supported by runtime terrain in actual movement. 24 bidirectional deck segments and 6 retained lobby approach segments PASS; all 30 endpoint captures inspected.",
+    "bake": "One bake; 276/278 cell files byte-identical, only baked 0,1 and its manifest changed.",
+    "visual": "Five final matching daylight views personally inspected after the single bake. Lobby approach rail obstruction found and corrected before bake; original interiors retained.",
+    "newLfsBytes": 3984716,
+    "performance": "Median front/pool1/pool2/pool3/overview 16.7/16.7/16.8/16.7/16.7ms; p95 19.8/18.7/18.2/18.3/18.0ms versus 27.8/18.5/18.3/18.1/18.2 baseline. Local fixed-camera sample, not city-wide performance proof."
   }
 }
