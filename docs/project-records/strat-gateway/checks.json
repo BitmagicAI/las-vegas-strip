@@ -1,0 +1,17 @@
+{
+  "typecheck": "PASS",
+  "applicableTests": "PASS: ground-surface-index, site-lights, city-lazy-lod (3/3)",
+  "geometryAudit": "PASS: 11796 original triangles, no invalid or degenerate faces",
+  "preservation": "PASS: 69 original nodes and 4715 collision triangle prefix",
+  "packedCollision": "PASS: 2148 samples, no missing floors",
+  "normalWalk": "PASS: 8 segments, all endpoint images inspected",
+  "review": "PASS",
+  "publicFiles": "PASS",
+  "runtimeGlbs": "PASS: 1 changed model optimized, level and WebP installed",
+  "bake": "PASS: single bake, current",
+  "assetPack": "PASS: 1926 files, none missing/unoptimized",
+  "smoke": "PASS: 9 stops, zero failed requests/page/console errors",
+  "visual": "PASS: 4 final matching daylight views plus 2 detail views personally inspected",
+  "releaseDeferred": "CDN upload and published cold-load validation are owner release-step checks.",
+  "performance": "Performance is measured, not declared unchanged: final p50 16.8/16.8/22.9/16.7ms and p95 20.1/23.8/34.2/17.9ms. Repeat north p50 22.6ms and p95 39.4ms versus baseline 20.5/22.3ms; other repeat view medians near 16.6\u201316.7ms. North-facing tail latency remains a limitation; no stable-60fps or no-regression claim."
+}
