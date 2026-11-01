@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1190054626,
+ "bytes": 1190181712,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -276,8 +276,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-2.bin",
-   "bytes": 711705,
-   "sha256": "d71e2f22ea3c9df9e24bcb8196acc58061bb654c7b8fa90055a07c0b150b36bb",
+   "bytes": 716511,
+   "sha256": "e349e52ba2df7da2e56f13ce09ec298bb6f4b64d94e4d7682b7e0a2ead4608fb",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "5a3d034aa3e6e3aa469461abcd998ffd6562b451ae2365937c2b1f62e093d85c",
+   "sha256": "86eb9493083d3b3f11f2a4fb31fb03ecefa8d04e28febafc5ab2369344c78891",
    "kind": "runtime cell manifest"
   },
   {
@@ -11148,14 +11148,14 @@
   },
   {
    "path": "build/strip-landmarks/trumpExterior-exterior-collision.bin",
-   "bytes": 1056,
-   "sha256": "19988bf46aebed5f2e7bfd5a6066e2874635ac16227fd415f14bc69ea97d88d5",
+   "bytes": 3392,
+   "sha256": "f5ef2a8a6c4fe7e21b0e7aebc8ef8add268edcf42738fbd115774e4a681b1901",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/trumpExterior-exterior.glb",
-   "bytes": 189624,
-   "sha256": "8d2bff1f27372c65491831ee6ed08a0125e4a5bce6892e972eebe98d05552d24",
+   "bytes": 309568,
+   "sha256": "3e601f4bf68e24927368f2bbb90509ff620baf6671bef8af11b5b971bf52a6fa",
    "kind": "optimized"
   },
   {

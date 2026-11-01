@@ -1,0 +1,5 @@
+// Use unchanged names and cameras for both before and after installation.
+let skyColor;scene.traverse(o=>{if(o.isDirectionalLight){o.color.setHex(0xffffff);o.intensity=2;skyColor=o.color.clone().setHex(0xc2d5e0);}if(o.isAmbientLight||o.isHemisphereLight){o.color.setHex(0xffffff);o.intensity=1.3;}if(/skybox/i.test(o.name))o.visible=false;});if(skyColor)scene.background=skyColor;
+const views=[['front',[25,8,-1400],[32,65,-1510]],['pool',[32,24,-1454],[32,16,-1480]],['arrival',[70,8,-1418],[30,4,-1446]],['overview',[120,95,-1390],[32,15,-1480]]];
+const frame=()=>new Promise(r=>requestAnimationFrame(r)),results=[];
+for(const [name,eye,target] of views){probe.teleport(eye[0],1.1,eye[2]);const release=engine.registerBeforeRender(()=>{engine.camera.position.set(...eye);engine.camera.lookAt(...target);engine.camera.updateMatrixWorld();});for(let i=0;i<300;i++)await frame();await __shot('trump-'+name);const times=[];let last=performance.now();for(let i=0;i<180;i++){await frame();const now=performance.now();times.push(now-last);last=now;}times.sort((a,b)=>a-b);release();results.push({name,eye,target,p50:times[90],p95:times[171]});}return results;
