@@ -1,0 +1,37 @@
+{
+  "pr": 467,
+  "issues": [
+    51,
+    52
+  ],
+  "status": "installed-verified-refinement-deferred",
+  "sourceTriangles": 4964,
+  "degenerateTriangles": 0,
+  "checks": {
+    "staticCircuitSamples": 3003,
+    "staticUnsupported": 0,
+    "panoramaRoofSamples": 55,
+    "martinRoofSamples": 29,
+    "martinApproachSamples": 306,
+    "typecheck": "passed",
+    "siteLightsAndResize": "2 passed",
+    "lazyLod": "passed with tools/ts-register.mjs (initial invocation without loader failed)",
+    "review": "passed",
+    "public": "passed, pre-existing public email warning",
+    "runtimeGlbs": "2 checked, 0 unoptimized",
+    "assetPack": "1928 present, 0 missing, 0 unoptimized",
+    "bake": "fresh",
+    "smoke": "9 stops placed, zero request/page/console errors"
+  },
+  "visual": "All eight final matching daylight views personally inspected after bake; 12 initial and 4 corrected walk endpoints inspected.",
+  "walk": "build/city-exteriors/panorama-martin-walk/results.json",
+  "bake": "Completed once; freshness passed; 276/278 cells identical.",
+  "remaining": [
+    "Finish normal movement and inspect endpoints",
+    "Update block records, one bake, stage and remaining step7 checks",
+    "Final matching daylight/performance probes, smoke, archive, LFS delta, merge next and close claims"
+  ],
+  "walkReview": "All 12 endpoints and blocked view personally inspected. Panorama two circuits: 24 segments passed. Three retained lobby approaches: 6 segments passed. Martin forward circuit passed; reverse segment12 blocked at x=-868.092,z=836.634 by retained entrance furnishing/canopy area.",
+  "correction": "Martin east tip clearance correction installed with level+WebP. Recheck passed:18 pool circuit segments plus2 retained lobby approach segments; all4 endpoints inspected.",
+  "next": "Commit verified package, update PR467 and merge to next; close51/52, then start next task from picker."
+}

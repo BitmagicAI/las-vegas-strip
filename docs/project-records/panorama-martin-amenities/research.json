@@ -1,0 +1,228 @@
+{
+  "status": "Claimed issues51/52; research and baseline before authoring",
+  "references": [
+    "https://www.themartin.com/amenities",
+    "https://www.themartin.com/gfx/images/amenities/The_Martin_Amenities_Map_2022.svg?v=1.0",
+    "https://www.themartin.com/gfx/images/hero/TheMartin_Hero_2_2x.jpg?v=1.0",
+    "https://www.themartin.com/gfx/images/amenities/The_Martin_Amenity_Garden_800px.jpg?v=1.0",
+    "https://www.ocmi.com/portfolio/commerical/panorama-towers/",
+    "https://simpsoncoulter.com/panorama",
+    "https://images.squarespace-cdn.com/content/v1/5bec9d461aef1d579c01a837/1582159684026-WDUT1JKJ29JDAWCE67DI/002.jpg",
+    "https://www.google.com/maps/@?api=1&map_action=map&center=36.1085,-115.1830&zoom=20&basemap=satellite",
+    "https://www.google.com/maps/@?api=1&map_action=map&center=36.1076,-115.18285&zoom=20&basemap=satellite",
+    "https://www.google.com/maps/@?api=1&map_action=map&center=36.1068,-115.18285&zoom=20&basemap=satellite",
+    "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1083,-115.1834&heading=90&pitch=5"
+  ],
+  "notes": "Official Martin page: 2000sqft boomerang pool, wraparound deck/cabanas/grilling, curved entry canopy and palm groves, garden fire/water feature. OCMI project page: Panorama pair, five-level garage and pool courtyard surrounded by townhomes. panoramatower.com search result is Miami and must not be used for Las Vegas.",
+  "visualReview": [
+    "Official Martin amenity map personally inspected: elongated bent pool with separate outdoor Jacuzzi, cabanas/palm line, garden lounge beside motor court, porte-cochere, library/lobby and service rooms. Plan orientation and mapping to world coordinates require Google aerial verification.",
+    "Official Martin pool photograph: dark rectangular pergola cabanas with cream daybeds, stone coping and trees between bays; image is at night and date unknown.",
+    "Official Martin garden photograph: black/white armchairs, striped cushions, slender pepper trees in paving cutouts and alternating planter boxes; exact furniture counts inferred.",
+    "Google satellite: Panorama north and south pools are opposite stepped L forms with separate square spas, west/south palm rows and loungers; existing large rectangles are inaccurate.",
+    "Google satellite: Martin pool runs east-west, bends north at east end, with north tree/cabana row, separate south spa and west garden.",
+    "January 2025 Google Street View at 4499 Aldebaran Avenue: white boundary walls and palms obscure the Martin court; Panorama facades visible across Harmon. An earlier nearest-panorama query returned an unrelated indoor photosphere and was rejected.",
+    "Simpson Coulter official project photos: illuminated tapered entry monolith/blue canopy and indoor spa vanity inspected; future entrance/spa reference, not evidence for outdoor pool elevations."
+  ],
+  "measurementMethod": "Visually selected Google context-menu anchors; approximate original polygon vertices fitted from aerial proportions at 0.1204m per screen pixel. Not survey data or source imagery redistribution. Aerial capture date unknown. Basin/deck elevations retained near existing datum; spa height and furniture arrangement inferred.",
+  "courts": [
+    {
+      "name": "martin",
+      "anchorLat": 36.108467,
+      "anchorLon": -115.182883,
+      "anchorWorld": [
+        -888.7456059472381,
+        838.5697241459784
+      ],
+      "pool": [
+        [
+          -904.277,
+          837.125
+        ],
+        [
+          -890.431,
+          837.245
+        ],
+        [
+          -881.281,
+          835.078
+        ],
+        [
+          -871.288,
+          833.754
+        ],
+        [
+          -869.12,
+          837.005
+        ],
+        [
+          -881.642,
+          840.376
+        ],
+        [
+          -889.107,
+          841.459
+        ],
+        [
+          -905.12,
+          839.774
+        ]
+      ],
+      "deck": [
+        [
+          -912.464,
+          832.429
+        ],
+        [
+          -868.639,
+          832.068
+        ],
+        [
+          -866.953,
+          840.135
+        ],
+        [
+          -880.558,
+          843.265
+        ],
+        [
+          -891.154,
+          845.914
+        ],
+        [
+          -911.02,
+          845.914
+        ]
+      ]
+    },
+    {
+      "name": "panorama-north",
+      "anchorLat": 36.107562,
+      "anchorLon": -115.182877,
+      "anchorWorld": [
+        -888.2060457292023,
+        939.3138633134386
+      ],
+      "pool": [
+        [
+          -885.678,
+          928.719
+        ],
+        [
+          -880.38,
+          930.284
+        ],
+        [
+          -885.437,
+          941.963
+        ],
+        [
+          -881.223,
+          944.491
+        ],
+        [
+          -883.029,
+          949.668
+        ],
+        [
+          -896.032,
+          946.538
+        ]
+      ],
+      "deck": [
+        [
+          -886.761,
+          914.632
+        ],
+        [
+          -873.878,
+          914.511
+        ],
+        [
+          -879.176,
+          941.601
+        ],
+        [
+          -875.082,
+          945.334
+        ],
+        [
+          -880.019,
+          954.845
+        ],
+        [
+          -900.487,
+          954.364
+        ]
+      ]
+    },
+    {
+      "name": "panorama-south",
+      "anchorLat": 36.10683,
+      "anchorLon": -115.182896,
+      "anchorWorld": [
+        -889.9146530861029,
+        1020.7997305740357
+      ],
+      "pool": [
+        [
+          -898.222,
+          1012.251
+        ],
+        [
+          -884.737,
+          1009.121
+        ],
+        [
+          -883.413,
+          1014.539
+        ],
+        [
+          -888.711,
+          1017.308
+        ],
+        [
+          -883.293,
+          1028.987
+        ],
+        [
+          -888.951,
+          1030.552
+        ]
+      ],
+      "deck": [
+        [
+          -900.751,
+          1005.629
+        ],
+        [
+          -882.45,
+          1003.462
+        ],
+        [
+          -876.911,
+          1013.335
+        ],
+        [
+          -881.005,
+          1017.067
+        ],
+        [
+          -875.948,
+          1044.519
+        ],
+        [
+          -888.831,
+          1044.157
+        ]
+      ]
+    }
+  ],
+  "remainingDiscrepancies": [
+    "Martin fitted water outline is approximately 141.55 square metres, versus the official 2,000 square feet (185.8 square metres); aerial scale/edge interpretation remains unresolved.",
+    "Martin deck includes an inferred two-metre margin for cabanas and clear circulation; elevations and boundaries are not surveyed.",
+    "Full pool enclosures, precise garden seating and planting, entrance canopy/monolith and indoor spa remain deferred.",
+    "Panorama spa platform heights, detailed crown geometry and landscaping remain estimates; this is not whole-block completion.",
+    "Runtime walk exposed an east-tip conflict with the retained Martin entrance furnishings; the fitted pool tip was clipped at world x=-870 to preserve existing interior and approach. This increases the discrepancy from the official pool area."
+  ],
+  "installedPreviewReview": "All eight matching daylight previews personally inspected. Three corrected basin outlines, separate spas and furniture visible; preserved tower/low-wing geometry intact. Normal movement verification pending."
+}

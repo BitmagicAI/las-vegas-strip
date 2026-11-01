@@ -3349,9 +3349,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Garden planting, exact curved crown profile and entrance furniture incomplete.",
-    "Recess profiles and garage heights are photo estimates.",
-    "Public entrance route walk and pool enclosure unverified."
+    "Crown/recess profiles and garage heights remain photo estimates.",
+    "Exact planting, pool enclosures, raised spa elevations, entry monolith/canopy and indoor spa remain incomplete.",
+    "Public lobby approaches verified in both directions; full public circulation beyond scoped circuits remains unverified."
    ],
    "record": "tools/resort-blocks/panorama.json",
    "buildings": [
@@ -3375,12 +3375,12 @@
      "tools/resort-blocks/panorama.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-panorama-martin-amenities.mjs",
      "tools/strip-landmarks/panorama_exterior.py",
+     "tools/strip-landmarks/panorama_martin_amenities.py",
+     "tools/city-exteriors/test-panorama-martin-amenities.mjs",
      "tools/city-exteriors/test-panorama.mjs",
-     "tools/highrises/catalog.py",
-     "tools/highrises/interiors.py",
-     "tools/sphere/video.py",
-     "tools/strip-landmarks/atomic_golf.py"
+     "tools/highrises/catalog.py"
     ]
    },
    "acceptance": [
@@ -3401,9 +3401,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Detailed planting, canopy and entry-sign alignment remain incomplete.",
-    "Pool layout, lower heights and balcony dimensions are estimated; full public walking routes not verified.",
-    "Reference-level architectural realism remains unfinished."
+    "Detailed garden seating, pool enclosure, entry canopy and sign alignment remain incomplete.",
+    "Fitted pool area approximately 140.86m2 versus official 2000sqft (185.8m2); aerial scale, elevations and exact boundaries unresolved. East tip clipped to preserve existing entrance clearance.",
+    "Lower heights and balcony dimensions remain estimates; full public circulation and reference-level architectural realism unfinished."
    ],
    "record": "tools/resort-blocks/martin.json",
    "buildings": [
@@ -3422,12 +3422,12 @@
      "tools/resort-blocks/martin.json"
     ],
     "builders": [
+     "tools/strip-landmarks/panorama_martin_amenities.py",
      "tools/strip-landmarks/export_dean_martin_5115.py",
      "tools/strip-landmarks/export_dean_martin_courtyard.py",
      "tools/strip-landmarks/export_dean_martin_crossbar.py",
      "tools/strip-landmarks/export_dean_martin_east.py",
-     "tools/strip-landmarks/export_dean_martin_north.py",
-     "tools/strip-landmarks/export_dean_martin_northwest.py"
+     "tools/strip-landmarks/export_dean_martin_north.py"
     ]
    },
    "acceptance": [
