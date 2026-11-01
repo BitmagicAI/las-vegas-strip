@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1924,
- "bytes": 1172951377,
+ "bytes": 1173228043,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -90,8 +90,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_2.bin",
-   "bytes": 769519,
-   "sha256": "6fa499f84595af4fb41eb6590223e23bb83be0a6d4ebc0fee098e4ecdf28c24c",
+   "bytes": 777241,
+   "sha256": "3dd24786ec47792bc480613df1b274a2d1f0038f1a398556c51ea14345be55a0",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "e402a30b004214106d41e31f26d896d3652387eaf2ce21a44ab0aa66bdd4f12a",
+   "sha256": "65705938435d63930539a93500303ba941589a4a02d7017e300028e2f73ed5a0",
    "kind": "runtime cell manifest"
   },
   {
@@ -9354,8 +9354,8 @@
   },
   {
    "path": "build/strip-landmarks/luxorExterior-exterior.glb",
-   "bytes": 947016,
-   "sha256": "8d3d76bc2eef2fb2ac42548edf5c9d55c69e30da5e6ffa1f49891769f5052767",
+   "bytes": 1215960,
+   "sha256": "215e79d1c41fc8ffb881bdd882e9e0109c7841db0bcd8d4b07e7afbf7b44bc93",
    "kind": "optimized"
   },
   {

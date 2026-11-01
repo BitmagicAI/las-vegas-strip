@@ -95,7 +95,7 @@
     "pullRequest": 448
   },
   "northArrivalPass": {
-    "status": "source-reviewed-installed-validation-pending",
+    "status": "installed-reviewed-refinement-pending",
     "evidence": "docs/project-records/luxor-arrival",
     "scope": "Slotted stone beam faces and original shallow decorative panels on 48 existing north-arrival piers. All prior groups, labels and collision retained.",
     "remaining": [
@@ -104,6 +104,17 @@
       "No new lower-lobby to elevated-connector connection implemented",
       "Current pool renovation geometry requires newer primary evidence; no unsupported pool rebuild",
       "Whole-resort routes and Sphinx sculpture remain broader refinements"
-    ]
+    ],
+    "validation": {
+      "geometry": "21632 new valid triangles; all47 prior groups/99788triangles and labels preserved",
+      "collision": "byte-identical;254 current geographic-cell samples PASS",
+      "normalWalk": "6 segments PASS; existing elevated connector/landing and carport in both directions only",
+      "views": "five installed daylight views inspected; same before/after names and cameras",
+      "rebuild": "full-builder detail output exactly matches installed addition",
+      "lfsBytes": 2007002,
+      "bakes": 1,
+      "unchangedCellFiles": 276,
+      "smoke": "9 stops PASS; zero request/page/console errors"
+    }
   }
 }

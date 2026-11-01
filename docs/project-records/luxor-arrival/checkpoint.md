@@ -1,7 +1,9 @@
-# Luxor north-arrival refinement
+# Luxor north-arrival installed pass
 
-Claim #29, draft #448 from next3c9706d. Official July2026 property map, Google aerial and February2025 north-arrival Street View inspected. No third-party pixels used in assets. Source render front/pier inspected.
+Claim #29, PR #448 against next. Five installed daylight views and four normal-walk endpoints personally inspected. All six movement segments and 254 collision samples pass. Nine-stop smoke has zero page/console/request errors. Typecheck, three scoped tests, record/public/runtime/bake/package checks pass. One bake and zero geographic exports; one LOD cell plus manifest changed, 276 other cell files byte-identical. Three LFS objects total 2,007,002 bytes.
 
-48 existing piers gain original shallow decorative panels and adjacent beams gain slotted stone faces. Dense first stroke draft reduced from127392 to21632addedtriangles before final export. All47oldgroups/99788triangles, labels and collision bytes preserved. Static254samplesPASS against current geographic collision cells. No new indoor connection, pool rebuild or whole-resort route claim.
+Original slotted friezes and shallow motifs on48piers add21632 valid triangles. All47priorgroups/99788triangles, labels and collision bytes preserved. Full-builder detail function matches the installed addition exactly. References are official map and personally inspected aerial/Feb2025StreetView; no third-party pixels used.
 
-Five matching baseline views captured, front first. Optimization + WebP complete4.58→1.16MiB and collision packed. Typecheck/three scoped tests/record review PASS. One grouped bake active session5257 /tmp/luxor-arrival-bake.log; do not restart. Next installed five views/performance, six normal movement segments (existing connector and carport), smoke and final step7. No owner wait.
+Matched performance before/after/repeat is in performance.json. Shared workstation variance; roof p95 remained slower in both after runs, other views returned nearbaseline inrepeat. No broad performance claim. Original frame dimensions/open roof geometry, historical ornament, current pool renovation and complete public connections remain unresolved. This is a surface refinement, not completed resort certification.
+
+All local checks complete; merge into next and close29. CDN/published validation remains the owner release step; no owner wait.

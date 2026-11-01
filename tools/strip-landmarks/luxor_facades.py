@@ -82,5 +82,7 @@ def exterior(B):
   C.shell(p,r['base'],r['height'],'x',roof=False);C.planar('x',p,r['height'],True)
   target=B.solids[KEY+'-exterior'];other=C.solids[KEY+'-exterior'];offset=len(target['vertices'])//3
   target['vertices'].extend(other['vertices']);target['indices'].extend(i+offset for i in other['indices']);replacement.append(ident)
+ from build_luxor_arrival_detail import detail as arrival_detail
+ arrival_detail(B)
  ledger=OUT/'replacement-ids.json';ids=set(json.loads(ledger.read_text()));ids.update(replacement);ledger.write_text(json.dumps(sorted(ids)))
  return dict(key=KEY,name='Luxor exterior',center=[-250,0,2240],bounds=[-545,2050,-70,2440],building='luxor',structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

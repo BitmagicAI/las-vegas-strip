@@ -23,9 +23,8 @@ def ornament(F,y,kind):
 def panel(F,mat,width,lo,hi,depth=0):
  F.b.face(mat,[F.p(-width/2,lo,depth),F.p(-width/2,hi,depth),F.p(width/2,hi,depth),F.p(width/2,lo,depth)])
 
-def build():
- old=json.loads((BASE/'luxorExterior-exterior.json').read_text())
- B=Meshes();B.property='luxorExterior-exterior';B.source='luxor-north-arrival-detail';B.detail=1
+def detail(B):
+ B.source='luxor-north-arrival-detail';B.detail=1
  count=0
  for xa,xb in [(-387,-335),(-309,-281),(-228,-197),(-171,-122)]:
   for z in [2100,2123]:
@@ -44,6 +43,12 @@ def build():
       for yy in [y-.18,y+.72]:panel(F,'luxor-arrival-carve',.75,yy-.0125,yy+.0125,-.03)
       G=Frame(B,x,z+side*.46,0 if side<0 else math.pi,y=0)
       ornament(G,y, row+count)
+ return count
+
+def build():
+ old=json.loads((BASE/'luxorExterior-exterior.json').read_text())
+ B=Meshes();B.property='luxorExterior-exterior'
+ count=detail(B)
  groups=list(B.groups.values())
  (OUT/'luxorExterior-exterior.json').write_text(json.dumps({'meshes':old['meshes']+groups,'labels':old['labels']},separators=(',',':')))
  (OUT/'luxorExterior-exterior-collision.json').write_bytes((BASE/'luxorExterior-exterior-collision.json').read_bytes())
