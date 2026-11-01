@@ -14,4 +14,4 @@ for(const a of old.getRoot().listNodes()){
   rows.push({name:a.getName(),removed:delta});
  }
 }
-assert.equal(removed,4776);const report={unchangedPrimitiveTriangleCountsAndBounds:unchanged,removed,allNodeTransformsAndExtrasPreserved:true,toleranceM:.02,scope:'Optimized output count/bounds/metadata preservation; not a per-pixel guarantee',nodes:rows};fs.writeFileSync('docs/project-records/excalibur-arcade/highrise-preservation.json',JSON.stringify(report,null,2)+'\n');console.log({unchanged,removed});
+assert.equal(removed,changes.removed);const report={unchangedPrimitiveTriangleCountsAndBounds:unchanged,removed,allNodeTransformsAndExtrasPreserved:true,toleranceM:.02,scope:'Optimized output count/bounds/metadata preservation; not a per-pixel guarantee',nodes:rows};fs.writeFileSync('docs/project-records/excalibur-arcade/highrise-preservation.json',JSON.stringify(report,null,2)+'\n');console.log({unchanged,removed});

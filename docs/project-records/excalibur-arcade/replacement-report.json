@@ -1,6 +1,6 @@
 {
-  "removed": 4776,
-  "retainedTargetFaces": 35984,
+  "removed": 5256,
+  "retainedTargetFaces": 35504,
   "scope": "Only indices inside ten mapped pier radii below 11.6m; other node meshes and all collision unchanged.",
   "nodes": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "node": "excalibur/castle-turrets/white",
-      "removed": 2208,
-      "retained": 18592
+      "removed": 2688,
+      "retained": 18112
     },
     {
       "node": "excalibur/castle-turrets/window",

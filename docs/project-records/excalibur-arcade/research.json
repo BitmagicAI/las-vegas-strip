@@ -21,11 +21,12 @@
     }
   ],
   "issue": 32,
-  "status": "installed square-pier arcade; six-segment normal walk in progress, no bake yet",
+  "status": "corrected elevated roof views inspected; final corrective bake running",
   "baselineNote": "Initial ground-level covered-approach and side cameras were inside existing geometry; replaced before any model edit with elevated approach and side cameras. Front, hall and south baseline cameras are clear.",
   "remaining": [
     "Existing flat ground datum retained; no moving walkway, escalator or grade reconstruction in this pass.",
     "Five final matching views, matching performance, package and smoke pending.",
     "All remaining whole-resort discrepancies remain in tools/resort-blocks/excalibur.json."
-  ]
+  ],
+  "correction": "Expanded removal radius0.45m catches all old small-turret crenellation box corners. Final removed5256 triangles. Two corrected elevated views personally inspected; collision unchanged."
 }

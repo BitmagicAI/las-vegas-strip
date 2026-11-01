@@ -45,7 +45,7 @@
   ],
   "remaining": [
     "Full landscaping and exact turret detailing remain incomplete; this pass focuses on the public approach arcade.",
-    "Station heights retain mapped data; detailed station platform, moving walkway and elevated circulation are deferred to a dedicated connection pass. The current approach remains at the existing flat ground datum.",
+    "Station heights retain mapped data; detailed station platform, moving walkway and elevated circulation are deferred to a dedicated connection pass. The current approach remains at the existing flat ground datum. Existing bridge supports remain visually prominent at the north termination; this pass does not claim a complete bridge-to-casino connection.",
     "Exact stepped hall elevations, turret openings and roof profiles remain approximate; the mapped 29m hall was already restored in the 2026-10-14 correction and is retained.",
     "Tower room bays, front red pyramidal turret and gardens need closer architectural refinement; no full-block completion claimed.",
     "South-side lower elevation remains generic; requires closer facade/site reference outside this approach pass."
@@ -190,6 +190,9 @@
     "after": "pending",
     "geometry": "docs/project-records/excalibur-arcade/geometry.json",
     "highrisePreservation": "docs/project-records/excalibur-arcade/highrise-preservation.json",
-    "estimates": "Pier tops4.8m, roof5.1m, square widths2m/4.2m; mapped centers retained, shapes and trim fitted to April2025StreetView. Original flat floor0.3m preserved, not a surveyed elevation."
+    "estimates": "Pier tops4.8m, roof5.1m, square widths2m/4.2m; mapped centers retained, shapes and trim fitted to April2025StreetView. Original flat floor0.3m preserved, not a surveyed elevation.",
+    "normalWalking": "docs/project-records/excalibur-arcade/normal-walk.json",
+    "detailViews": "build/city-exteriors/excalibur-arcade-detail",
+    "localBakeCorrection": "Final elevated view exposed 480 old crenellation faces outside original masks. Expanded radii by0.45m; second local bake before first runtime commit. Only corrected final LFS version will be uploaded."
   }
 }
