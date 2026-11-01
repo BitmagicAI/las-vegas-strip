@@ -14,6 +14,14 @@
       "kind": "visual-reference",
       "accessed": "2026-10-09",
       "note": "Viewed tower brick, white bay frames and arched crown; photo date unknown."
+    },
+    {
+      "id": "official-pool",
+      "title": "TI official pool photographs",
+      "url": "https://treasureisland.com/amenities/pools-cabanas",
+      "kind": "visual-reference",
+      "accessed": "2026-10-31",
+      "note": "Hero and2023-namedoverview personally inspected; curvedwateredge,palms,bluecabanasanddaybeds. Geometryoriginal;dimensionsestimated."
     }
   ],
   "levels": [
@@ -340,5 +348,20 @@
       }
     ],
     "visualReview": "All five installed views inspected. Flat dark sign material, visible rooftop equipment and Gilleys white fascia verified. North close view only for timing; wider retail view used for facade review."
+  },
+  "claim": {
+    "issue": 24,
+    "assignee": "janiverse",
+    "pullRequest": 444
+  },
+  "poolCourtPass": {
+    "status": "optimized-install-baking",
+    "sourceRegister": "docs/project-records/ti-pool-court/references.json",
+    "scope": "Original curved pool courtyard and perimeter furnishings; preserve existing tower, mapped frontage, cove and interiors",
+    "remaining": [
+      "Installed baseline and source boundary audit underway",
+      "Inferred dimensions and unsurveyed pool-side levels",
+      "Continuous guest access and exact landscaping require verification"
+    ]
   }
 }

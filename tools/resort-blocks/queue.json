@@ -65,7 +65,7 @@
     {
       "id": "ti",
       "name": "Treasure Island",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "ti.json",
       "deferral": {
         "date": "2026-10-09",
@@ -1892,5 +1892,5 @@
       "record": "westwood-commercial.json"
     }
   ],
-  "active": "harrahs"
+  "active": "ti"
 }
