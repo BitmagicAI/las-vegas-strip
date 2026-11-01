@@ -1,0 +1,31 @@
+{
+  "unchangedCells": 276,
+  "totalCells": 278,
+  "changedCells": [
+    "baked/cells/manifest.json",
+    "baked/cells/cell--1_2.bin"
+  ],
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_2.bin",
+      "bytes": 771735
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/nynyArrival-exterior-collision.bin",
+      "bytes": 2764
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/nynyArrival-exterior.glb",
+      "bytes": 12706044
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/venues.bin",
+      "bytes": 393704
+    }
+  ],
+  "lfsBytes": 13888048
+}

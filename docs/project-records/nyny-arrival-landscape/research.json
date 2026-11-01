@@ -1,0 +1,41 @@
+{
+  "task": "ext-new-york",
+  "issue": 31,
+  "claimed": true,
+  "sources": [
+    {
+      "url": "https://www.marriott.com/en-us/hotels/lasny-new-york-new-york-hotel-and-casino-mgm-collection/photos/",
+      "status": "Official first exterior photograph personally inspected: night southeast corner, Statue of Liberty foreground, striped rust/pale masonry arcade and twin dark copper caps behind, pale projecting cornice on southeast pavilion, domed circular corner to west. Undated; validate against current Street View before authoring."
+    },
+    {
+      "url": "https://static.mgmresorts.com/content/dam/MGM/new-york-new-york/hotel/property-map/new-york-new-york-property-map.pdf",
+      "status": "Official page1 map personally inspected: Park exit at north beside Village Street Eateries and Chrysler elevators; main entrance/valet south; pool west; mezzanine connectors to Excalibur and MGM. Schematic, not construction dimensions."
+    },
+    {
+      "url": "https://special.library.unlv.edu/ark%3A/62930/d13j39874",
+      "status": "found archival Park entrance photo, dated2016; not yet inspected, historical evidence only"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dfe6vZFo4uAikp3Q5gjSmw&heading=0&pitch=15",
+      "imageDate": "January2025",
+      "status": "Personally inspected arrival: low sloped lawn island with pink flower NYNY letters, red curb, stones/desert planting and mature broadleaf trees at ends, small upright trees and black fence behind, pale/red fascia and radial soffit. Exact plant counts/species and all dimensions inferred."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.101591,-115.174685&zoom=21&basemap=satellite",
+      "status": "Personally inspected two aerial scales and panned south: stepped square central arrival pavilion, broad shallow rectangular canopy, forecourt trees and narrow lawn/flower-letter island between canopy and curved one-way drive. No acquisition date exposed; copyright2026 is not acquisition date."
+    }
+  ],
+  "notes": "Read record: arrival and Irish kiosk already corrected Oct21. Preserve those. Possible next scope public Park entrance detailing or landscaping, after current baseline and current Street View.",
+  "candidateScope": "Arrival island landscaping and soffit/detail refinement; retain existing canopy, roads/coaster/interiors. Need aerial fit and installed baseline after claim.",
+  "base": "76bfd7c",
+  "status": "installed preview inspected; buried flower strokes and visible collision-only tree markers corrected before bake",
+  "previewFindings": [
+    "Existing dense coaster supports retained and still visually dominate this approximate frontage.",
+    "First preview buried parts of flower lettering in slope; fitted all flower heights to actual mound triangles.",
+    "Removed visible collision-only tree trunk geometry; imported source bark is the sole visual trunk."
+  ],
+  "decisions": [
+    "Medium tree-1 source trial reduced bytes but lost visible tree coverage in installed views; rejected before bake. Retain verified tree-0 near/tree-2 far with full optimization. Source foliage unchanged.",
+    "Retain legacy dense coaster supports and facade; removing them would exceed this island pass and needs independent ownership work."
+  ]
+}

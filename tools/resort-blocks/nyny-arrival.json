@@ -9,7 +9,7 @@
   ],
   "remaining": [
     "Pavilion and canopy heights estimated, not surveyed.",
-    "Front landscaped island, exact sign typography/ornament and rear entrance facade remain unfinished.",
+    "Front island now has original lawn, flower letters and planting; species/counts/dimensions remain inferred. Exact sign typography/ornament and rear entrance facade need a separately referenced facade pass.",
     "Existing city paving stripes/roughness and dense legacy coaster supports differ from reference; preserved in this exterior pass.",
     "Whole NYNY resort remains refinement-deferred; no photoreal completion claim."
   ],
@@ -114,5 +114,6 @@
       "build/strip-landmarks/nynyArrival-exterior.glb": "f66e1aabb9a4b96be3d2ddf4bd0416bb4f08e7e00cccab755bf5fe0d8c29dbd9",
       "build/strip-landmarks/nynyArrival-exterior-collision.json": "70d6eb38d35c973ad201d68077db428d09bc21c5295578d116f1ad05bb028329"
     }
-  }
+  },
+  "landscapePass": "docs/project-records/nyny-arrival-landscape/README.md"
 }
