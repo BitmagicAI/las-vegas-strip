@@ -23,7 +23,8 @@
     }
   ],
   "remaining": [
-    "Detailed garden planting, pool enclosures/shade, and public circulation unfinished",
+    "Pool fit, .85m raised terrace, three hip-roof pavilions,30 loungers and seven parasols are inferred from imagery; exact positions and dimensions need refinement",
+    "Detailed palm planting, pool enclosure, BBQ/dining and complete connections to public interiors unfinished; available broadleaf foliage models do not match referenced palms",
     "Facade bay/step dimensions visually estimated; side-wing elevations retained from map",
     "Ground-floor doors are geometric apertures, not new working public interiors"
   ],
@@ -61,5 +62,14 @@
     "roofSupport": 69,
     "failures": 0,
     "typecheck": "passed"
+  },
+  "amenityPass": {
+    "status": "installed-preview-walk-pending",
+    "research": "docs/project-records/waldorf-hgv-amenities/research.json",
+    "geometry": "docs/project-records/waldorf-hgv-amenities/hgv-geometry.json",
+    "preservation": "docs/project-records/waldorf-hgv-amenities/hgvFlamingo-preservation.json",
+    "installedRouteClearance": "docs/project-records/waldorf-hgv-amenities/installed-route-clearance.json",
+    "preview": "build/city-exteriors/hgv-flamingo-amenities-preview",
+    "notes": "All four daylight previews personally inspected, clear. Existing hotel and arrival remain preserved. Actual movement verification and final single bake pending."
   }
 }
