@@ -6,18 +6,21 @@
       "url": "https://earth.google.com/web/@36.1398,-115.1605,650a,450d,35y,270h,55t,0r",
       "provider": "Google Earth",
       "imagery": "2022-11-09",
-      "establishes": "Two unequal hotel wings, ribbed crowns, pale rose facades, central pavilion."
+      "establishes": "Two unequal hotel wings, ribbed crowns, pale rose facades, central pavilion.",
+      "title": "Google Earth \u2014 Two unequal hotel wings, ribbed crowns, pale rose facades, central pavilion."
     },
     {
       "url": "https://earth.google.com/web/@36.1398,-115.1605,900a,450d,35y,0h,0t,0r",
       "provider": "Google Earth",
       "imagery": "2022-11-09",
-      "establishes": "Rear L-shaped and freeform pool courts; photographed dimensions estimated."
+      "establishes": "Rear L-shaped and freeform pool courts; photographed dimensions estimated.",
+      "title": "Google Earth \u2014 Rear L-shaped and freeform pool courts; photographed dimensions estimated."
     },
     {
       "url": "https://www.skyscrapercenter.com/complex/3317",
       "provider": "CTBUH",
-      "establishes": "90m shorter wing; taller mapped wing 123m retained."
+      "establishes": "90m shorter wing; taller mapped wing 123m retained.",
+      "title": "CTBUH \u2014 90m shorter wing; taller mapped wing 123m retained."
     }
   ],
   "components": [
@@ -63,5 +66,17 @@
   "evidence": [
     "build/city-exteriors/hgv-after",
     "build/city-exteriors/hgv-final"
-  ]
+  ],
+  "claim": {
+    "issue": 38,
+    "assignee": "janiverse",
+    "pullRequest": 451
+  },
+  "courtyardArrivalPass": {
+    "status": "authored-verification-in-progress",
+    "scope": "Blue shade parasols, original lounge seating, terracotta urns and folded-leaf palms around retained pool outlines.",
+    "references": "docs/project-records/hgv-sky/checkpoint.json",
+    "evidence": "docs/project-records/hgv-sky",
+    "estimates": "Furniture counts, canopy/guardhouse dimensions and positions fitted approximately; retain prior pool/tower geometry."
+  }
 }

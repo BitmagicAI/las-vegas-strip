@@ -1,0 +1,38 @@
+{
+  "status": "research and baseline; no asset edits yet",
+  "pullRequest": 451,
+  "base": "60e15fa",
+  "claims": [
+    38,
+    39
+  ],
+  "scope": "Hilton Boulevard pool court and Sky arrival, four mapped buildings; retain towers, guest cores and surrounding roads",
+  "references": [
+    {
+      "url": "https://www.google.com/maps/@36.1396,-115.1615,200m/data=!3m1!1e3",
+      "provider": "Google Maps aerial",
+      "inspection": "Personally inspected north-up aerial: Hilton west pool court with dense canopy and blue shade, Sky north entrance in gap between properties. Imagery acquisition date not shown."
+    },
+    {
+      "url": "https://www.hiltongrandvacations.com/en/resorts-and-destinations/las-vegas/the-boulevard-a-hilton-grand-vacations-club",
+      "provider": "Hilton Grand Vacations",
+      "inspection": "Official amenities photograph personally inspected: palms, curved pool island, terracotta urns on piers, blue umbrellas, dark wicker lounge seating around circular firetable. Image alt filename includes 2019; not proof of current exact furniture positions."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Sky_Las_Vegas.jpg",
+      "provider": "AJFU, own photograph dated 2011-01-05",
+      "inspection": "Sky guardhouse, slotted portal beams, rectangular metal gates, raised hedge islands and palms. Historical reference requiring current corroboration. No pixels reused."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1392038,-115.1604208,627a,75y,289.61h,90t/data=!3m7!1e1!3m5!1s1dp_xPbgzxvoT1qRhdIReA!2e0",
+      "provider": "Google Street View",
+      "imagery": "October 2026",
+      "inspection": "Personally inspected Hilton south frontage with palms, fence, bus shelters and bollards; Sky guardhouse visible at left. Exact dimensions remain inferred."
+    }
+  ],
+  "uncertainty": [
+    "Existing pool outlines and datums are retained estimates, not surveyed.",
+    "Exact furniture/plant counts and Sky gate dimensions need fitted local interpretation.",
+    "Full tower roof corrections, private balcony access and all public interiors are outside this focused pass and remain in block records."
+  ]
+}

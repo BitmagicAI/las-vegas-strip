@@ -5,13 +5,15 @@
     {
       "url": "https://www.lochsa.com/projects/sky-las-vegas",
       "provider": "Lochsa Engineering",
-      "establishes": "45-storey 500ft tower; blue glass and white EIFS bands."
+      "establishes": "45-storey 500ft tower; blue glass and white EIFS bands.",
+      "title": "Lochsa Engineering \u2014 45-storey 500ft tower; blue glass and white EIFS bands."
     },
     {
       "url": "https://earth.google.com/web/@36.1388,-115.1613,690a,450d,35y,270h,55t,0r",
       "provider": "Google Earth",
       "imagery": "2022-11-09",
-      "establishes": "Narrow glazed tower, low podium, projecting balcony ends, crown frames; visually inspected."
+      "establishes": "Narrow glazed tower, low podium, projecting balcony ends, crown frames; visually inspected.",
+      "title": "Google Earth \u2014 Narrow glazed tower, low podium, projecting balcony ends, crown frames; visually inspected."
     }
   ],
   "components": [
@@ -56,5 +58,17 @@
   "tests": {
     "typecheck": "passed before material mapping update",
     "materialMapping": "scanned stucco mapping verified"
+  },
+  "claim": {
+    "issue": 39,
+    "assignee": "janiverse",
+    "pullRequest": 451
+  },
+  "courtyardArrivalPass": {
+    "status": "authored-verification-in-progress",
+    "scope": "Closed guardhouse, slotted canopy with two clear lanes, low hedge islands and unlit bollard fixtures.",
+    "references": "docs/project-records/hgv-sky/checkpoint.json",
+    "evidence": "docs/project-records/hgv-sky",
+    "estimates": "Furniture counts, canopy/guardhouse dimensions and positions fitted approximately; retain prior pool/tower geometry."
   }
 }
