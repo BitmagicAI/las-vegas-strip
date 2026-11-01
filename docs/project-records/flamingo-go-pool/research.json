@@ -1,0 +1,31 @@
+{
+  "task": "ext-flamingo",
+  "issue": 60,
+  "claim": "janiverse verified",
+  "sources": [
+    {
+      "url": "https://newsroom.caesars.com/press-releases/press-release-details/2025/Pool-Party-Paradise-Flock-to-the-All-New-Go-Pool-at-Flamingo-Las-Vegas-for-Fun-in-the-Sun/default.aspx",
+      "date": "2025-05-22",
+      "observations": "Official opening release: five pools across nearly1.5acres; main swimup bar canopy and wetdeck; grotto behind50ft raincurtain withDJabove; circularVIP40ft diameter and15ft waterfall; rectangularVIP60ft length; freeformVIPthreewetdecks. Nearly200trees including90palms. South entrance byrideshare.",
+      "inspection": "Text inspected, photographs pending"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1XKK3sc0mEmelyw8IJs3Hrw-SHEFxfI1_?usp=sharing",
+      "description": "Official release linked highresGoPool gallery",
+      "inspection": "Not yet inspected"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1CG43jAc7EhlpCCydZWmPR4uD8IokOI9O",
+      "image": "Architecture_Main Pool_Credit Caesars Entertainment - Michel Rudin.jpg",
+      "inspection": "Personally inspected official gallery photograph",
+      "observations": "Broad aqua pool with curved shallow steps, mustard/white striped umbrellas, pale pink rounded bar canopy on cylindrical columns, waterfall curtain and planted palm backdrop."
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1H4e4VoUbQa6hg2VI9inpzA1xkbWeBiyt",
+      "image": "Architecture_Circular VIP Pool_4_Courtesy of Caesars Entertainment.jpg",
+      "inspection": "Personally inspected official gallery photograph",
+      "observations": "Curved circular edge and shallow submerged bench, white fabric cabanas with pyramidal roofs, dense palms and terraced stone perimeter; white covered structure behind. Exact plan location remains to be matched to aerial."
+    }
+  ],
+  "existing": "Separate flamingoGarden asset has mapped rotundas/path/pavilions; do not overwrite. Need inspect legacy pool geometry and ownership before scope."
+}
