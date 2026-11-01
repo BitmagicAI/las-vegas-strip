@@ -19,8 +19,8 @@
   ],
   "remaining": [
     "Stepped penthouse crown and precise window rhythm still require matched comparison.",
-    "Pool footprint/elevation estimated; deck furniture, planting, entry canopies and signage unfinished.",
-    "Existing guest-core openings retained; full public-route traversal pending."
+    "Existing pool footprint/elevation retained; pavilion/cabana dimensions and landscape density inferred. Full pool deck perimeter, entry canopies and signage remain deferred.",
+    "Existing guest-core openings retained; full public-route traversal and interior-to-pool connections pending."
   ],
   "geometry": {
     "triangles": 20347,
@@ -43,5 +43,15 @@
   "tests": {
     "typecheck": "passed",
     "visual": "All three final installed views inspected. No obvious z-fighting; lower roof and exact crown still too plain."
+  },
+  "amenityPass": {
+    "status": "installed-preview-under-review",
+    "record": "docs/project-records/westgate-amenities",
+    "authoredTriangles": 8824,
+    "addedCollisionTriangles": 1248,
+    "preservedNodes": 22,
+    "preservedCollisionTriangles": 1351,
+    "scope": "Three blue polygonal pavilions, eight open curtained cabanas, 24 loungers and eight palms; tower/podium/pool/roads retained.",
+    "uncertainty": "Furniture counts, sizes and layout photo-fitted at existing 12.04m deck elevation."
   }
 }
