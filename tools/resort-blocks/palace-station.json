@@ -19,7 +19,7 @@
   ],
   "remaining": [
     "Arrival canopy and real entrance apertures",
-    "Pool deck, landscaping and garage ramps",
+    "Pool court installed as estimated study; raised bar/stair, landscaping/palms and garage ramps remain unresolved.",
     "Closer facade reference matching and material review",
     "Full route and performance measurements"
   ],
@@ -62,5 +62,13 @@
       "tools/strip-landmarks/palace_station.py": "e880d8d3cc0e3dcb7e588632e07b5b45b3d95602ecc8651fdc1a7faa498b1830",
       "build/optimized/build/strip-landmarks/palaceStation-exterior.glb": "195458aecc46decf9300fe7a606c81c90042794f625af2dc3b1141f20e446623"
     }
+  },
+  "amenityRefinement20261101": {
+    "status": "installed-verification-in-progress",
+    "pullRequest": 470,
+    "research": "docs/project-records/palace-us-bank-amenities/research.json",
+    "checks": "docs/project-records/palace-us-bank-amenities/checks.json",
+    "scope": "Original pool/spa and furniture court, excluding retained mapped pavilions",
+    "limitations": "Approximate layout/elevations; normal movement, final visual and performance verification pending. No whole-block completion claim."
   }
 }

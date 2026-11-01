@@ -55,7 +55,8 @@
     "Pool and plaza fit/elevations need explicit coordinate calibration.",
     "Palace screen-to-metre fit uses zoom20 .1206m/px and centre676,360; all dimensions/elevations estimated and need installed review.",
     "US Bank old listing fountain wording conflicts with Jan2026 visible dry gravel frontage. Model current dry frontage, retain any other water-feature investigation as unresolved.",
-    "US Bank trees use existing tools/foliage/models/tree-1.glb without source edits; exact species and palm court remain unresolved."
+    "US Bank trees use existing tools/foliage/models/tree-1.glb without source edits; exact species and palm court remain unresolved.",
+    "Initial installed bank preview showed near-invisible foliage: inherited tree-0 alpha textures on solid tree-1 LOD. Export now follows foliage-trees.mjs textureless tree-1 treatment with original muted leaf/trunk colours; source GLBs unchanged. Revised installed verification required."
   ],
   "baselineReview": "All six initial daylight views personally inspected clear. Palace front shows unfinished casino wall; east/west establish site. US Bank ground frontage has no landscape. Added pool baseline needed because Palace pool is separate southeast of garage, outside initial close views. Palace pool baseline personally inspected: correct empty court southeast of garage with retained mapped pavilions; four-view baseline record refreshed."
 }
