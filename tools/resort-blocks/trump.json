@@ -14,9 +14,9 @@
     }
   ],
   "remaining": [
-    "Pool furnishings, deck enclosure and landscaping unfinished.",
-    "Exact entry facade details and crown signage proportions approximate.",
-    "Existing guest route retained but full city route traversal not performed."
+    "Cabana interiors, complete planting density and exact deck enclosure remain deferred; furniture and awning placement are photo-fitted.",
+    "Exact entry facade and crown signage proportions approximate; arrival geometry unchanged.",
+    "Existing guest routes retained; interior-to-pool route and full city traversal not performed."
   ],
   "geometry": {
     "triangles": 8102,
@@ -26,7 +26,7 @@
   "estimates": {
     "towerM": 195,
     "podiumM": 16,
-    "pool": "51m by 11m, estimated",
+    "pool": "33.528m official110ft length; 11m width still inferred",
     "crownBandM": 5
   },
   "evidence": [
@@ -37,5 +37,16 @@
     "typecheck": "passed",
     "arrivalClearance": "45 samples pass with new and retained highrise collision",
     "visual": "All three installed views inspected; silhouette now narrow, no duplicate tall podium. Glass reflection/roughness still needs daylight refinement."
+  },
+  "amenityPass": {
+    "status": "installed-preview-under-review",
+    "record": "docs/project-records/trump-amenities",
+    "authoredTriangles": 6219,
+    "addedCollisionTriangles": 889,
+    "preservedNodes": 14,
+    "removedPoolNodes": 3,
+    "removedPoolCollisionTriangles": 81,
+    "retainedCollisionTriangles": 140,
+    "scope": "Correct prior overlong pool, infill ends, navy awning, 26 loungers, five parasols, seven palms and south planted edge/rail."
   }
 }

@@ -2992,9 +2992,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Pool furnishings, deck enclosure and landscaping unfinished.",
-    "Exact entry facade details and crown signage proportions approximate.",
-    "Existing guest route retained but full city route traversal not performed."
+    "Cabana interiors, complete planting density and exact deck enclosure remain deferred; furniture and awning placement are photo-fitted.",
+    "Exact entry facade and crown signage proportions approximate; arrival geometry unchanged.",
+    "Existing guest routes retained; interior-to-pool route and full city traversal not performed."
    ],
    "record": "tools/resort-blocks/trump.json",
    "buildings": [
@@ -3018,12 +3018,12 @@
      "tools/resort-blocks/trump.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-trump-amenities.mjs",
+     "tools/strip-landmarks/trump_amenities.py",
      "tools/highrises/interiors.py",
      "tools/strip-landmarks/trump_exterior.py",
      "tools/city-exteriors/fit-trump-collision.py",
-     "tools/city-exteriors/test-trump.mjs",
-     "tools/highrises/catalog.py",
-     "tools/highrises/report.py"
+     "tools/city-exteriors/test-trump-amenities.mjs"
     ]
    },
    "acceptance": [
