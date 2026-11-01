@@ -1,0 +1,15 @@
+{
+  "typecheck": "PASS",
+  "scopedTests": "PASS 3/3 ground-surface-index, site-lights, city-lazy-lod",
+  "geometry": "PASS 27366 finite/nondegenerate interior triangles; four neighboring store groups and labels unchanged",
+  "collision": "PASS all old exterior triangles retained plus12threshold triangles;840current geographic-cell samples",
+  "optimization": "PASS both GLBs level then WebP, installed;2changedGLBs/0unoptimized",
+  "bake": "PASS current;one bake,zero geographic exports",
+  "package": "PASS1926present/0missing/0unoptimized",
+  "recordReview": "PASS active Peppermill record; whole-site gaps retained",
+  "publicCheck": "PASS pre-existing inventory email warning only",
+  "views": "PASS six installed daylight views personally inspected; matching names/eye/target before and after",
+  "normalWalk": "PASS12segments existing entrance to lounge/dining and return; four endpoint images inspected",
+  "smoke": "PASS9stops zero failed requests/page errors/console errors/unplaced stops",
+  "release": "CDN/published cold-load check belongs to release"
+}

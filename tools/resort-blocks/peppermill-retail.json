@@ -57,7 +57,7 @@
   },
   "publicRoomPass": {
     "revision": "2026-10-31",
-    "status": "optimized-installed-preview-pending",
+    "status": "installed-local-verification-passed",
     "evidence": "docs/project-records/peppermill-public",
     "scope": "Photo-informed Fireside lounge and dining-room public routes; blue eave trim and italic approximation; four neighboring stores retained",
     "interiorTriangles": 27366,
@@ -66,13 +66,26 @@
       "staticRoutes": "840samplesPASS against current geographic collision cells",
       "typecheck": "PASS",
       "tests": "3/3PASS",
-      "sourceViews": "Lounge/dining inspected; angular seating replaced by rounded upholstered arcs"
+      "sourceViews": "Lounge/dining inspected; angular seating replaced by rounded upholstered arcs",
+      "normalWalk": "PASS: 12 normal-movement segments, lounge and dining return routes; four endpoint captures inspected",
+      "views": "Six matching installed daylight views personally inspected; roof/trim and public rooms visible; decorative and layout approximations retained",
+      "package": "1926 present,0missing,0unoptimized",
+      "runtimeModels": "2changedGLBs,0unoptimized",
+      "bake": "Current;onebake;oneLODcell1,-3+manifest changed;276othercellfilesbyteidentical",
+      "smoke": "PASS9stops zero failed requests/page errors/console errors/unplaced stops"
     },
     "remaining": [
       "Interior partition positions, seating count and dimensions are inferred, not a surveyed plan.",
       "Fire is static original geometry; basin is an opaque blue finish, not a simulated fire/water system.",
       "Historical sign typography, dense floral decoration, actual stained-glass designs and reflections remain simplified.",
-      "Other exterior entry registration, parking/landscape/signs and precise tenant dimensions remain incomplete."
-    ]
+      "Other exterior entry registration, parking/landscape/signs and precise tenant dimensions remain incomplete.",
+      "Roof shingle scale/contrast and plain interior wall/ceiling areas need closer photo matching."
+    ],
+    "performance": {
+      "baseline": "docs/project-records/peppermill-public/performance-before.json",
+      "after": "docs/project-records/peppermill-public/performance-after.json",
+      "note": "960x540 matching views. p95 before/after ms: front17.8/21.7,row17.8/21.0,Ross18.8/18.3,Walgreens30.9/27.6,lounge26.7/24.5,dining17.4/25.5. Shared workstation variance; dining slower than empty-room baseline. No broad speedup claim."
+    },
+    "newLfsBytes": 2569798
   }
 }
