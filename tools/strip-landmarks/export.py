@@ -106,6 +106,7 @@ colors.update({'cc-flat-roof':'a7a6a0','cc-metal':'444c51','cc-door':'465866','c
 colors.update({'cc-white':'dedbd7','cc-pink':'cf719d','cc-window':'505763','cc-sill':'c9c6c3','cc-shadow':'3b3d40','cc-blue':'497a9a','cc-yellow':'d6b535','cc-dome-glass':'aa668a','cc-dome-frame':'7e536b'})
 colors.update({'rw-red':'a62c3b','rw-bronze':'685848','rw-mullion':'61554b','rw-white':'dfdbd2','rw-stone':'cec4ae','rw-fin':'8f806a','rw-gold':'b9995a','rw-joint':'b7afa0','rw-shadow':'303033','rw-metal':'747579','rw-led':'511629'})
 colors.update({'rw-flat-roof':'c7c8bc','rw-blue-panel':'4a6477','rw-paving':'c5b9a1','rw-planter':'b7ac95','rw-soil':'454638','rw-garden':'526142'})
+colors.update({'fb-entry-dark':'2e3436','fb-entry-stone':'a7ada9','fb-entry-water':'95a8ac','fb-entry-bronze':'6f573b','fb-entry-gold':'bda16c','fb-entry-glass':'625e43'})
 colors.update({'fb-flat-roof':'c9ceca','fb-canopy-white':'dedfd8','fb-soffit':'3c4549','fb-rib-metal':'a8b1b5','fb-limestone':'d6d7d1','fb-silver':'bbc4c8','fb-metal':'7e919b','fb-glass':'22566c','fb-joint':'284a59','fb-shadow':'293b45','fb-paving':'c5b99e','fb-pool-tile':'699b9f','fb_pool':'2a879a'})
 colors.update({'castle-limestone':'dbd8cd'})
 colors.update({'harrahs-membrane-paint':'c7c7bd','harrahs-service-paint':'a8aaa1'})
@@ -223,6 +224,10 @@ def material(k):
  if k.startswith('vi-'):
   VM.build(bpy,m,bs,k,linear);materials[k]=m;return m
  metal=k in ['silver','steel','brass','bronze','gold','blackiron','copper','copperpanel','copper2','copper3'];glass=k in ['glass','shopglass','cabinglass','darkglass','water','palazzo-glass','harrahs-window','linq-glass','linq-blue'];bs.inputs['Metallic'].default_value=.62 if metal else .2 if glass else .0;bs.inputs['Roughness'].default_value=.28 if metal else .14 if glass else .74
+ if k in ['fb-entry-gold','fb-entry-bronze']:
+  bs.inputs['Metallic'].default_value=.65;bs.inputs['Roughness'].default_value=.34
+ if k in ['fb-entry-glass','fb-entry-water']:
+  bs.inputs['Metallic'].default_value=.25;bs.inputs['Roughness'].default_value=.24
  if k in ['hel-panel-paint','hel-cap-paint','hel-metal-paint']:
   bs.inputs['Metallic'].default_value=.6;bs.inputs['Roughness'].default_value=.43
  if k=='hel-guard-glass':

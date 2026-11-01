@@ -2290,10 +2290,10 @@
     "builders": [
      "tools/strip-landmarks/fontainebleau.py",
      "tools/city-exteriors/test-fontainebleau-arrival.mjs",
+     "tools/city-exteriors/check-fontainebleau-entry.py",
      "tools/highrises/interiors.py",
-     "tools/city-exteriors/test-fontainebleau.mjs",
-     "tools/highrises/catalog.py",
-     "tools/highrises/review.py"
+     "tools/city-exteriors/test-fontainebleau-entry.mjs",
+     "tools/city-exteriors/test-fontainebleau.mjs"
     ]
    },
    "acceptance": [

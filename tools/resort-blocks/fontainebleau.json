@@ -337,5 +337,20 @@
       "build/strip-landmarks/fontainebleauExterior-exterior-collision.json": "0b8c83ad5343140afbd95762ab754ce6ffd918392e5924bed014baba27cdc2bd",
       "tools/strip-landmarks/fontainebleau_arrival.py": "f33e82e05ff898937be60e17e12505c85cbd11c9b55388a1480ee2ddafffe99c"
     }
+  },
+  "claim": {
+    "issue": 33,
+    "assignee": "janiverse",
+    "pullRequest": 450
+  },
+  "entryDetailPass": {
+    "status": "source-preview-refinement",
+    "sources": "docs/project-records/fontainebleau-entry/references.json",
+    "scope": "Original static waterwall/basin, closed gold-framed glazing, flared pale supports, bowtie interpretations and low soffit; exact dimensions inferred",
+    "remaining": [
+      "No animated water or transparent interior behind new closed entry glazing.",
+      "Existing north canopy scale, height, pillar arrangement and facade registration remain estimated.",
+      "Existing tower, garage and pool terrace preserved; upper deck access, landscaping, service roofs and close facade details remain unfinished."
+    ]
   }
 }
