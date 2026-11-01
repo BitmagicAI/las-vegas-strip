@@ -1,6 +1,6 @@
 // Keep each continuous forward/reverse circuit below probe-eval's ten-minute watchdog.
 import fs from 'node:fs';import {spawnSync} from 'node:child_process';import assert from 'node:assert/strict';
-const source=fs.readFileSync('tools/city-exteriors/walk-rio-palms-amenities.js','utf8'),start=source.indexOf('const meta='),end=source.indexOf('const allResults');
+const source=fs.readFileSync('tools/city-exteriors/walk-rio-palms-amenities.js','utf8'),start=source.indexOf('const meta='),end=source.indexOf('const waitReady=');
 const {routes}=JSON.parse(source.slice(start+11,end).trim().replace(/;$/,''));
 const root='build/city-exteriors/rio-palms-walk-scripts';fs.mkdirSync(root,{recursive:true});const results=[];
 for(let i=0;i<routes.length;i++){

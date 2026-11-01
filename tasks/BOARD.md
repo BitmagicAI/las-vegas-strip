@@ -65,7 +65,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-panorama` | M | P2 | 3 | Refine the exterior of Panorama Towers |
 | `ext-martin` | M | P2 | 3 | Refine the exterior of The Martin |
 | `ext-rio` | M | P2 | 3 | Refine the exterior of Rio |
-| `ext-palms` | M | P2 | 5 | Refine the exterior of Palms |
+| `ext-palms` | L | P2 | 6 | Refine the exterior of Palms |
 | `ext-waldorf` | M | P2 | 3 | Refine the exterior of Waldorf Astoria |
 | `ext-hgv-flamingo` | M | P2 | 3 | Refine the exterior of Hilton Grand Vacations Flamingo |
 | `ext-virgin-hotels` | S | P2 | 0 | Refine the exterior of Virgin Hotels Las Vegas |

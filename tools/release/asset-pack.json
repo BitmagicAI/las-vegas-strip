@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1190429466,
+ "bytes": 1191021871,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -120,8 +120,8 @@
   },
   {
    "path": "build/baked/cells/cell--2_-1.bin",
-   "bytes": 214754,
-   "sha256": "07f6e14328b35174202377429c051d1ec939d28ffba9f37c1a4b7a5e072b6fc3",
+   "bytes": 256342,
+   "sha256": "b7be5e3c619bfba3bf3a464793a0036bf5c4630f220cbfd99f8b3e5e8eff867b",
    "kind": "original"
   },
   {
@@ -234,8 +234,8 @@
   },
   {
    "path": "build/baked/cells/cell--3_0.bin",
-   "bytes": 118603,
-   "sha256": "67c0a9c8222747f88fd7a159f8806ca84f24f8349b9cfe57f4cc86f77b342d04",
+   "bytes": 125392,
+   "sha256": "e9010e687a677a9364dcc3239baa7c6755f2499e24f03a9946566ce1b55b067d",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "74d695e8f54b7448c978bdc32f15d82d7bbeb5833174e82ea0eac444d90aa3a6",
+   "sha256": "b34d1420cc126302d00c61e9d307072bc936335d17f8f03f09092be020e2fbcf",
    "kind": "runtime cell manifest"
   },
   {
@@ -10032,14 +10032,14 @@
   },
   {
    "path": "build/strip-landmarks/palmsExterior-exterior-collision.bin",
-   "bytes": 6096,
-   "sha256": "ec01cfb6adeb32af3783e8e9ca850873792a5ac27d297d14f0b5ac5249d1470f",
+   "bytes": 15740,
+   "sha256": "bb227acdf4b7da93ba4be4862aa90e732572d5b6b1f3ff3973caef310b787498",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/palmsExterior-exterior.glb",
-   "bytes": 435932,
-   "sha256": "00da863ce6a7883570776326efb7c7cd46c74bc0b93fa20df6b3da519d2a82e0",
+   "bytes": 516184,
+   "sha256": "4e7be833f2eed07e1c0f527740dde7c678cef38b4ce07f566a6de46c32efd653",
    "kind": "optimized"
   },
   {
@@ -10452,14 +10452,14 @@
   },
   {
    "path": "build/strip-landmarks/rioExterior-exterior-collision.bin",
-   "bytes": 12600,
-   "sha256": "34c11c6c46ff1c35ad202e115055ac344423d515f3af48955eb981c4f006e444",
+   "bytes": 21640,
+   "sha256": "0372382358ff89e70962aa54f0c3143685ff686884ffee38896efb0ba0a17ca3",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/rioExterior-exterior.glb",
-   "bytes": 1134952,
-   "sha256": "46de9e3ec0a42857bacb068b6c1bf8f4c7771eea07025d2d69cd9579b9564ad8",
+   "bytes": 1580044,
+   "sha256": "24680fa7d188c0acc1f5e9b45f20055359d919bec9f51de3d241906a20545559",
    "kind": "optimized"
   },
   {

@@ -43,7 +43,7 @@
     "Exact tower plan calibration and Ivory height remain estimates; existing tower geometry and guest core are preserved.",
     "Main-court cabanas and chairs installed, but exact curved cabana banks, planting and enclosure remain deferred pending tighter aerial registration.",
     "Palms Place sixth-floor pool remains unbuilt: roof elevation and tower/garage clearance are not sufficiently calibrated to alter the retained roof safely in this pass.",
-    "Upper cabana galleries are visual only; reference-supported staircase placement and upper circulation remain unresolved. Lower public court routes are being tested.",
+    "Upper cabana galleries are visual only; reference-supported staircase placement and upper circulation remain unresolved. Lower public court routes passed 378 bidirectional movement segments.",
     "Arrival signage/canopy and fine facade details remain deferred; retained arrival nodes and guest approach checks are preserved.",
     "No photorealistic or whole-block completion claim."
   ],
@@ -174,16 +174,16 @@
     ]
   },
   "amenitiesPass": {
-    "status": "installed-preview-awaiting-walk",
+    "status": "installed-verified-refinement-deferred",
     "record": "docs/project-records/rio-palms-amenities",
     "source": "tools/strip-landmarks/palms_amenities.py",
     "baseline": "build/city-exteriors/palms-amenities-baseline-corrected",
     "preview": "build/city-exteriors/palms-amenities-preview",
     "sourceChecks": {
-      "triangles": 6340,
+      "triangles": 6315,
       "degenerateTriangles": 0,
-      "collisionTriangles": 3309,
-      "routeSamples": 778,
+      "collisionTriangles": 3287,
+      "routeSamples": 773,
       "unsupportedSamples": 0,
       "scope": "Authored source only; installed preservation, visual and movement checks still required"
     },
@@ -191,12 +191,79 @@
       "preservedNodes": 27,
       "preservedNodeGeometry": true,
       "oldCollisionTriangles": 1331,
-      "addedCollisionTriangles": 3309,
+      "addedCollisionTriangles": 3287,
       "removedPoolNodes": 2,
       "removedPoolCollisionTriangles": 161,
       "retainedCollisionTriangles": 1170,
       "scope": "Replace pool nodes and bounded pool collision; preserve tower, podium, arrival and guest routes."
     },
-    "visualReview": "All four matching installed daylight preview images inspected; full-block fidelity is not claimed."
+    "visualReview": "All four final matching daylight views personally inspected after bake, loading clear.",
+    "normalMovementSegments": 378,
+    "endpointImagesInspected": 4,
+    "walkEvidence": "docs/project-records/rio-palms-amenities/walk.json",
+    "finalEvidence": "build/city-exteriors/palms-amenities-final",
+    "performance": [
+      {
+        "name": "front",
+        "eye": [
+          -1750,
+          7,
+          155
+        ],
+        "target": [
+          -1860,
+          28,
+          150
+        ],
+        "p50": 16.59999990463257,
+        "p95": 18.600000143051147
+      },
+      {
+        "name": "pool",
+        "eye": [
+          -1745,
+          70,
+          180
+        ],
+        "target": [
+          -1830,
+          2,
+          161
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.5
+      },
+      {
+        "name": "place",
+        "eye": [
+          -2400,
+          90,
+          300
+        ],
+        "target": [
+          -2305,
+          24,
+          210
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19.5
+      },
+      {
+        "name": "overview",
+        "eye": [
+          -1700,
+          240,
+          -130
+        ],
+        "target": [
+          -2050,
+          50,
+          180
+        ],
+        "p50": 16.40000009536743,
+        "p95": 19.09999990463257
+      }
+    ],
+    "localChecks": "bitmagic, three tests, roof/approach, source/installed clearance, review/public, optimized runtime, bake freshness, asset pack and nine-stop smoke PASS"
   }
 }
