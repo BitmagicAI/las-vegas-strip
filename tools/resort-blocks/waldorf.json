@@ -75,14 +75,18 @@
     "corrections": "Removed old tower overlap, duplicate terrace roof, clipped pool and excessive lounger grid; roof no longer receives corrugated-metal detail. North camera was inside garage, not a verified arrival route."
   },
   "amenityPass": {
-    "status": "movement-verified-final-bake-pending",
+    "status": "verified-scoped-pass",
     "research": "docs/project-records/waldorf-hgv-amenities/research.json",
     "geometry": "docs/project-records/waldorf-hgv-amenities/waldorf-geometry.json",
     "preservation": "docs/project-records/waldorf-hgv-amenities/waldorf-preservation.json",
     "installedRouteClearance": "docs/project-records/waldorf-hgv-amenities/installed-route-clearance.json",
     "preview": "build/city-exteriors/waldorf-amenities-preview",
-    "notes": "All four daylight previews and all forward/reverse endpoint images personally inspected. Eight continuous circuits total pass, including HGV terrace stair. Exact landscape, elevations and full public connections remain unresolved.",
+    "notes": "All eight grouped final daylight views and16movement endpoints inspected. 520 normal movement segments pass. One grouped bake; all local step7 checks pass. Refined scope only; remaining discrepancies retained.",
     "walk": "docs/project-records/waldorf-hgv-amenities/walk.json",
-    "movementSegments": 432
+    "movementSegments": 432,
+    "finalViews": "build/city-exteriors/waldorf-amenities-final",
+    "performance": "docs/project-records/waldorf-hgv-amenities/performance.json",
+    "assetDelta": "docs/project-records/waldorf-hgv-amenities/asset-delta.json",
+    "smoke": "docs/project-records/waldorf-hgv-amenities/smoke.json"
   }
 }

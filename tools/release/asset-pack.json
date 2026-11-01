@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1191021871,
+ "bytes": 1191242710,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -84,8 +84,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_1.bin",
-   "bytes": 1198356,
-   "sha256": "9c83c0a688f7415fe9ed9caab71d7b1c3797a45ee0d910567bac561a9934d74c",
+   "bytes": 1200436,
+   "sha256": "80ef043497768b22c3465223d80d013c215da67f5969375d6705d1494679eca1",
    "kind": "original"
   },
   {
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1537029,
-   "sha256": "9ca11888e9d42b49a79ea7a2bd847fff2ef0acf21d2444c7459f40e6cce3f790",
+   "bytes": 1538488,
+   "sha256": "1be60b47ef8ab31be7581f6d2f32d8de17be07441da738e05e5a2ae25342a734",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "b34d1420cc126302d00c61e9d307072bc936335d17f8f03f09092be020e2fbcf",
+   "sha256": "9d4f7b140bd6212cfa5834ede091790711749d57d399e27e807aabadbcf3e15c",
    "kind": "runtime cell manifest"
   },
   {
@@ -8820,14 +8820,14 @@
   },
   {
    "path": "build/strip-landmarks/hgvFlamingoExterior-exterior-collision.bin",
-   "bytes": 4348,
-   "sha256": "653d1b8293e3514ab2b0bd059338263b01a82ae9d9f0f49ddf5efb81eaec6e75",
+   "bytes": 11204,
+   "sha256": "cfc285eb7efc1e07802a89a26de202b43dbd666c7bd96302a9e9cc5beebae0c1",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/hgvFlamingoExterior-exterior.glb",
-   "bytes": 347944,
-   "sha256": "f1392fb2ec942140b462cd7f28df4a87c0ee871b2eb5ed664fe5604999aef23a",
+   "bytes": 511976,
+   "sha256": "2f1efff348fe2df0f380fc9db9e46cc142a265316caefb4a28deea0cef86767a",
    "kind": "optimized"
   },
   {
@@ -11370,14 +11370,14 @@
   },
   {
    "path": "build/strip-landmarks/waldorfExterior-exterior-collision.bin",
-   "bytes": 2744,
-   "sha256": "2fb0479ee63c197a5eafd5fab4aee56e60dcebc9002b359869a6c123def150d4",
+   "bytes": 9868,
+   "sha256": "ea1ca3d188d7996140dd70af6e77a5d87733fb8243fd19b5eb3e760e7a42a25d",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/waldorfExterior-exterior.glb",
-   "bytes": 367644,
-   "sha256": "3148ee7a4873fe40a2b11c11303c9722d85dd871932e8ca0b8ddb3b51319f000",
+   "bytes": 406932,
+   "sha256": "6a9f6dcfe71ce37346e220658e59e29adb224e1ea89f5ec3348efb9cd0215891",
    "kind": "optimized"
   },
   {

@@ -1,0 +1,49 @@
+{
+  "newLfsBytes": 3692705,
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_1.bin",
+      "bytes": 1200436
+    },
+    {
+      "path": "runtime-assets/baked/cells/cell-0_-1.bin",
+      "bytes": 1538488
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/hgvFlamingoExterior-exterior-collision.bin",
+      "bytes": 11204
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/hgvFlamingoExterior-exterior.glb",
+      "bytes": 511976
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/waldorfExterior-exterior-collision.bin",
+      "bytes": 9868
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/waldorfExterior-exterior.glb",
+      "bytes": 406932
+    }
+  ],
+  "cellFiles": 278,
+  "unchangedCellFiles": 275,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell--1_1.bin",
+    "runtime-assets/baked/cells/cell-0_-1.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "changedRuntimeFiles": [
+    "runtime-assets/baked/cells/cell--1_1.bin",
+    "runtime-assets/baked/cells/cell-0_-1.bin",
+    "runtime-assets/baked/cells/manifest.json",
+    "runtime-assets/strip-landmarks/hgvFlamingoExterior-exterior-collision.bin",
+    "runtime-assets/strip-landmarks/hgvFlamingoExterior-exterior.glb",
+    "runtime-assets/strip-landmarks/waldorfExterior-exterior-collision.bin",
+    "runtime-assets/strip-landmarks/waldorfExterior-exterior.glb"
+  ]
+}
