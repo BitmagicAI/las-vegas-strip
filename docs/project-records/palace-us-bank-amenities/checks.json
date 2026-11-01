@@ -17,15 +17,17 @@
   },
   "optimization": "Both level and WebP passes completed, two candidates installed locally with --no-stage.",
   "pending": [
-    "Inspect all seven daylight previews",
-    "Normal installed movement and endpoint images",
-    "One grouped bake",
-    "Stage and changed-runtime/bake/asset-pack checks",
-    "Final matching views/performance",
+    "Final seven matching captures and performance",
     "Smoke against dev",
-    "Archive and LFS byte accounting"
+    "Archive"
   ],
   "normalMovement": "PASS: 36 Palace pool/spa segments and 8 US Bank frontage segments; both forward/reverse circuits passed:true. All four endpoint images inspected.",
   "visualIssue": "Resolved: full tree-0 source canopy visible in all three revised daylight views personally inspected. Earlier tree-1 failures retained in research.",
-  "previewReview": "All seven views inspected; Palace pool, furniture and bank dry court/trees visible. Sparse Palace landscape, approximate layouts and unrefined shell details remain documented."
+  "previewReview": "All seven views inspected; Palace pool, furniture and bank dry court/trees visible. Sparse Palace landscape, approximate layouts and unrefined shell details remain documented.",
+  "singleBake": "PASS; one grouped bake completed",
+  "runtimeCheck": "PASS: two changed GLBs, zero unoptimized",
+  "bakeFreshness": "PASS",
+  "assetPack": "PASS: 1928 present, zero missing/unoptimized; seven copied, 1921 unchanged",
+  "cellPreservation": "275/278 cell files identical; only baked -1,-4 and -1,-5 plus manifest changed",
+  "newLfsBytes": 14421578
 }
