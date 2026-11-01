@@ -1,0 +1,19 @@
+{
+  "typecheck": "PASS",
+  "tests": {
+    "ground-surface-index": "PASS",
+    "site-lights": "PASS",
+    "city-lazy-lod": "PASS"
+  },
+  "sourceFloorSamples": 6252,
+  "preservationAudit": "PASS: all prior colliders/labels retained; only323 owned Harrahs roof triangles removed",
+  "runtimeGLBs": "PASS:2 checked,0unoptimized;WebP included",
+  "bake": "PASS:current;one grouped bake;no geographic export",
+  "assetPack": "PASS:1924present,0missing,0unoptimized",
+  "publicCheck": "PASS:existing inventory email warning only",
+  "recordReview": "PASS:whole-resort gates still pending",
+  "visual": "Six installed daylight views inspected; corrected front cameras recaptured from baseline and current optimized assets",
+  "walk": "PASS:4 routes,20 normal movement segments; both court perimeters and retained lobby entries in both directions",
+  "smoke": "PASS:9 stops,0 failed requests,0 page errors,0 console errors,0 stops not placed",
+  "release": "CDN upload and published cold-load validation deferred to owner release step"
+}

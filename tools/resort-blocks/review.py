@@ -235,7 +235,7 @@ def build_report(queue, record, baseline):
     def refs(ids):
         return ' · '.join(f'<a href="#source-{esc(i)}">{esc(sources[i]["title"])}</a>' for i in ids)
     ready_errors = check_record(record, ready=True)
-    queue_html = ''.join(f'<div class="queue-item {esc(b["status"])}"><small>{i+1:02} / {esc(b["status"])}</small><strong>{esc(b["name"])}</strong></div>' for i,b in enumerate(queue['blocks']))
+    queue_html = ''.join(f'<div class="queue-item {esc(b["status"])}"><small>{i+1:02} / {esc(b["status"])}</small><strong>{esc(b.get("name", b["id"]))}</strong></div>' for i,b in enumerate(queue['blocks']))
     gate_html = ''.join(f'<li><span>{i+1:02}</span><div><strong>{esc(g["name"])}</strong><small>{esc(g["status"])}</small></div></li>' for i,g in enumerate(record['gates']))
     rows = ''.join(f'<tr data-category="{esc(c["category"])}"><td><small>{esc(c["priority"])} / {esc(c["status"])}</small><strong>{esc(c["name"])}</strong></td><td>{esc(", ".join(c["levels"]))}</td><td>{esc(c["scope"])}<details><summary>Reference evidence</summary>{refs(c["sources"])}</details></td></tr>' for c in record['components'])
     level_html = ''.join(f'<article><small>{esc(l["id"])}</small><h3>{esc(l["label"])}</h3><p>{esc(l["features"])}</p><p class="muted">{("Elevation: "+str(l["elevationM"])+" m") if l["elevationM"] is not None else "Physical elevation: survey pending"}</p><div class="refs">{refs(l["sources"])}</div></article>' for l in record['levels'])

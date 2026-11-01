@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1924,
- "bytes": 1170340777,
+ "bytes": 1170591878,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1517878,
-   "sha256": "b074097e3118bdc6d4ee29ad882aa4ed84fe80c9ae511d53c3e95011e8bd9558",
+   "bytes": 1521291,
+   "sha256": "2b9323e9b3ff4150a5932a8cf982e48941d2ef9d18a26f77d813bfd454dee56f",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "49f9c484be7857cff49c1acdfb31eebbb128eabd2855d54d30dfa52562181625",
+   "sha256": "d1623e56ab998ca56db4a3c166c98b8fd31ec6c396054c0f0401713a1daa9ba6",
    "kind": "runtime cell manifest"
   },
   {
@@ -8736,14 +8736,14 @@
   },
   {
    "path": "build/strip-landmarks/harrahs-exterior-collision.bin",
-   "bytes": 1076,
-   "sha256": "9fba7e91849ebb1acf70e87cff3d1ccb9d67eebd697329f82ea77b33c995767c",
+   "bytes": 4488,
+   "sha256": "3f9207ce1ec5301730163e20ca5b497a7babd32c02b7321396377a7dbb8e3d6d",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/harrahs-exterior.glb",
-   "bytes": 3108420,
-   "sha256": "57b470212f9c8c44ad8163165fa4560457699399269d1c998c806da92f576e04",
+   "bytes": 3251540,
+   "sha256": "82053f6511e5c1d3ce2c95cfc9fda5ef2bd60165bf72b5e3a0484bae6e244667",
    "kind": "optimized"
   },
   {
@@ -9240,14 +9240,14 @@
   },
   {
    "path": "build/strip-landmarks/linq-exterior-collision.bin",
-   "bytes": 3136,
-   "sha256": "9e9655007391d36589de349c04219b79a79634b5aab30ed2b633ee3d318eb5d2",
+   "bytes": 5028,
+   "sha256": "c504e903dacb92560b7dfbabccbfd648dbdc8b39b90383c6d86738e49358e4db",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/linq-exterior.glb",
-   "bytes": 12078300,
-   "sha256": "f2658c2524a10f16a301bb01b4422766f49909e8b25af6ea7b413e3427211b69",
+   "bytes": 12177564,
+   "sha256": "4e3f8c7bb33cb8fcbfe057058c44328931edb9b51d789c6f41d8a0d271f53c37",
    "kind": "optimized"
   },
   {

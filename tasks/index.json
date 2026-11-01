@@ -1021,7 +1021,7 @@
    "size": "M",
    "priority": "P1",
    "status": "open",
-   "summary": "Targeted exterior facade revision authorized after Venetian canal-detail pass. Existing interiors and public circulation retained. Photo-fit dimensions are estimates; full resort completion is not claimed.",
+   "summary": "Pool courtyard refinement installed and visually inspected; local deck perimeter and preserved lobby routes pass normal movement. Whole-resort gates and exact surveyed dimensions remain unresolved.",
    "items": [
     "No surveyed facade heights or exact bay schedule; photo fitting remains approximate",
     "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate",
@@ -1070,8 +1070,8 @@
      "tools/strip-landmarks/next_arrivals.py",
      "tools/strip-landmarks/export.py",
      "tools/strip-landmarks/build_harrahs_exterior.py",
-     "tools/strip-landmarks/harrahs_roof_detail.py",
-     "tools/city-exteriors/audit-harrahs-roof.py"
+     "tools/strip-landmarks/build_harrahs_linq_decks.py",
+     "tools/strip-landmarks/harrahs_roof_detail.py"
     ]
    },
    "acceptance": [
@@ -1090,7 +1090,7 @@
    "size": "M",
    "priority": "P1",
    "status": "open",
-   "summary": "Targeted exterior facade revision authorized after Venetian canal-detail pass. Existing interiors and public circulation retained. Photo-fit dimensions are estimates; full resort completion is not claimed.",
+   "summary": "Pool courtyard refinement installed and visually inspected; local deck perimeter and preserved lobby routes pass normal movement. Whole-resort gates and exact surveyed dimensions remain unresolved.",
    "items": [
     "No surveyed facade heights or exact bay schedule; photo fitting remains approximate",
     "Individual tenant details, exact ornament, roof equipment positions and complete landscaping remain approximate",
