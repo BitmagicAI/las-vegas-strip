@@ -1,0 +1,29 @@
+{
+  "loungers": 33,
+  "parasols": 3,
+  "daybeds": 1,
+  "deckAreaM2": 1340.9741057041765,
+  "basinAreasM2": [
+    237.88027998000007,
+    13.046290919999901
+  ],
+  "coordinateFit": {
+    "centre": [
+      -226.61529161086605,
+      -2840.8734050443645
+    ],
+    "metresPerPixel": 0.1206,
+    "screenCentre": [
+      676,
+      360
+    ]
+  },
+  "limitations": [
+    "Estimated map registration, deck extent, furniture count and ground elevation.",
+    "Existing mapped pavilions retained; raised bar/stair and planting still unresolved.",
+    "Source only; installation, collision, daylight and performance acceptance pending."
+  ],
+  "triangles": 2971,
+  "degenerateTriangles": 0,
+  "sourceDryRouteSamples": 392
+}
