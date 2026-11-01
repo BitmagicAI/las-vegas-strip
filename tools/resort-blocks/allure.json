@@ -56,7 +56,11 @@
     "note": "Mapped footprint retained; facade spacing and roof details photo-estimated."
   },
   "evidence": [
-    "build/city-exteriors/allure-final"
+    "build/city-exteriors/allure-final",
+    "build/city-exteriors/allure-amenities-baseline",
+    "build/city-exteriors/allure-amenities-preview",
+    "build/city-exteriors/allure-amenities-walk",
+    "build/city-exteriors/allure-amenities-final"
   ],
   "tests": {
     "typecheck": "passed",
@@ -64,13 +68,27 @@
     "materialFix": "Exclude glass balcony guard allure-rail from generic metal scanned detail."
   },
   "amenityPass": {
-    "status": "installed-preview-under-review",
+    "status": "installed-reviewed-refinement-deferred",
     "record": "docs/project-records/allure-amenities/",
     "sourceTriangles": 4434,
     "addedCollisionTriangles": 1063,
     "preservedNodes": 16,
     "scope": "North podium and pool/spa court; silver arrival canopy, guard booth and south sign. Existing tower, Ahern shells and private-unit interiors preserved.",
     "dimensions": "Inferred17.5mdeck/20x24mpool/5x5mspa/5mcanopyclearance.",
-    "foliage": "Four existing CC0 Poly Haven source trees, foliage source unchanged."
+    "foliage": "Four existing CC0 Poly Haven source trees, foliage source unchanged.",
+    "checks": {
+      "typecheck": "PASS",
+      "applicableTests": "3 PASS",
+      "sourceAudit": "4434 authored triangles,zero degenerate;foliage excluded from source count",
+      "packedRoutes": "1308 samples PASS",
+      "normalWalk": "8 segments PASS;all8endpointimages inspected",
+      "optimization": "level+WebP installed",
+      "singleBake": "PASS",
+      "runtimeCheck": "1 GLB,0 not optimized",
+      "finalViews": "PASS,four matching daylight views personally inspected",
+      "smoke": "PASS,nine stops,zero failed requests/page/console errors",
+      "package": "PASS,1928 present,zero missing/unoptimized"
+    },
+    "performance": "Similar medians;pool/overview p95 slower3.0/4.4ms,explicitly recorded."
   }
 }

@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1188954404,
+ "bytes": 1189272494,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -366,8 +366,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-4.bin",
-   "bytes": 406874,
-   "sha256": "2e28968f7298b56663e05632700d3dbff3fedc3a7d4b073193c30f3a2ef35cdd",
+   "bytes": 414940,
+   "sha256": "3ab805eb8ad82be0c9363221be0e8752b46367b4c7cefe6fa5f867e79c84671e",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "b1230c8038a363bd5b1e817d64b7bfcd010b089c646aebe89fd1559363ba2769",
+   "sha256": "08a5d9063ddde8cfd04166cfd8d15b2e6fd4ff0a04b352eb97b35be78e28fc0d",
    "kind": "runtime cell manifest"
   },
   {
@@ -7296,14 +7296,14 @@
   },
   {
    "path": "build/strip-landmarks/allureExterior-exterior-collision.bin",
-   "bytes": 48,
-   "sha256": "30d17a65bea876b0a62c957514cd908f9eaa843e0345166fff89019b871a53a1",
+   "bytes": 3568,
+   "sha256": "3d13e198c87098744e9f9ba60752fd30eb9b0099a200715512d5a852146adb3c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/allureExterior-exterior.glb",
-   "bytes": 434340,
-   "sha256": "70c1b13529b0a8526ccee9b93d3b45055c4966049bc0e3e7f15cfd56234c0d9d",
+   "bytes": 740844,
+   "sha256": "28921379468d173e906a9b1657ef6ce3230c0bf1684cebe455916a9e370b5263",
    "kind": "optimized"
   },
   {

@@ -1,0 +1,36 @@
+{
+  "viewport": "960x540 ultra",
+  "settleFrames": 300,
+  "sampleFrames": 180,
+  "views": [
+    {
+      "name": "front",
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18,
+      "afterP95": 17.5
+    },
+    {
+      "name": "arrival",
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18.299999952316284,
+      "afterP95": 17.5
+    },
+    {
+      "name": "pool",
+      "beforeP50": 20.399999856948853,
+      "afterP50": 20.100000143051147,
+      "beforeP95": 31.5,
+      "afterP95": 34.5
+    },
+    {
+      "name": "overview",
+      "beforeP50": 16.90000009536743,
+      "afterP50": 17.299999952316284,
+      "beforeP95": 25.59999990463257,
+      "afterP95": 30
+    }
+  ],
+  "limitation": "Pool and overview p95 slower by3.0/4.4ms; not a driving benchmark and no no-regression claim."
+}
