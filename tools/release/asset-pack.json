@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1926,
- "bytes": 1175138495,
+ "bytes": 1175102025,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -90,8 +90,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_2.bin",
-   "bytes": 777241,
-   "sha256": "3dd24786ec47792bc480613df1b274a2d1f0038f1a398556c51ea14345be55a0",
+   "bytes": 769787,
+   "sha256": "b14d43b96e83176ad7f7fcbe27cdd23f817e2f01dc974836df46d18f168f5320",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "1451075738328d93f6463b2199c5ad1a15e4609dfa388fdbfda905cfa566cd0d",
+   "sha256": "fec4e420ca600ee0777715a3962fe19a63f0668cff3b821dec1d239f6bf9c338",
    "kind": "runtime cell manifest"
   },
   {
@@ -1848,8 +1848,8 @@
   },
   {
    "path": "build/highrises/exteriors.glb",
-   "bytes": 12147720,
-   "sha256": "a82e1fa6e31c9abb1f444dc451684f37ecdc4cd709365eb0241c728113381489",
+   "bytes": 12056944,
+   "sha256": "b4c5c2487b5ec11de039179f085c5cf13d573ddba83df1ca044f4e8c82e50e89",
    "kind": "optimized"
   },
   {
@@ -8232,14 +8232,14 @@
   },
   {
    "path": "build/strip-landmarks/excaliburFrontage-exterior-collision.bin",
-   "bytes": 372,
-   "sha256": "bbe73bc9cfad39cebb75d221ae818cbca11bf0b7649c0d16e1bd0c50f4171f08",
+   "bytes": 1048,
+   "sha256": "3172ff2a2dfebe79603a12cf719570a4c030d4306ec6049b2f7fc32c5a021351",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/excaliburFrontage-exterior.glb",
-   "bytes": 1024600,
-   "sha256": "1ecd140897d6478897df12f979a0ad92e031ad23117f0db241f8549609dfa4d4",
+   "bytes": 1085684,
+   "sha256": "90b76baef234d95196cbbced6f12a266a25f5449ed2c7d8e05b504f01b668420",
    "kind": "optimized"
   },
   {

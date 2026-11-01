@@ -1998,11 +1998,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Full landscaping and exact turret detailing remain incomplete.",
-    "Station heights retained from mapped data; detailed station platform/circulation not rebuilt.",
-    "Entry sign appears reversed on approach; repair required",
-    "Mapped29m part way/114870395 was skipped by castle generator; verify actual footprint before marking reviewed",
-    "South-side lower elevation remains blank in reviewed view; needs further facade/site reference"
+    "Full landscaping and exact turret detailing remain incomplete; this pass focuses on the public approach arcade.",
+    "Station heights retain mapped data; detailed station platform, moving walkway and elevated circulation are deferred to a dedicated connection pass. The current approach remains at the existing flat ground datum. Existing bridge supports remain visually prominent at the north termination; this pass does not claim a complete bridge-to-casino connection.",
+    "Exact stepped hall elevations, turret openings and roof profiles remain approximate; the mapped 29m hall was already restored in the 2026-10-14 correction and is retained.",
+    "Tower room bays, front red pyramidal turret and gardens need closer architectural refinement; no full-block completion claimed.",
+    "South-side lower elevation remains generic; requires closer facade/site reference outside this approach pass."
    ],
    "record": "tools/resort-blocks/excalibur.json",
    "buildings": [
@@ -2226,12 +2226,12 @@
      "tools/resort-blocks/excalibur.json"
     ],
     "builders": [
+     "tools/city-exteriors/audit-excalibur-arcade.py",
      "tools/south-strip/build_architecture.py",
+     "tools/city-exteriors/audit-excalibur-highrise.mjs",
      "tools/city-exteriors/fix-excalibur-material.py",
-     "tools/city-exteriors/audit-excalibur-hall.py",
-     "tools/city-exteriors/fix-excalibur-labels.py",
-     "tools/city-exteriors/test-excalibur-bridge.mjs",
-     "tools/south-strip/export.py"
+     "tools/city-exteriors/install-excalibur-arcade.mjs",
+     "tools/city-exteriors/audit-excalibur-hall.py"
     ]
    },
    "acceptance": [

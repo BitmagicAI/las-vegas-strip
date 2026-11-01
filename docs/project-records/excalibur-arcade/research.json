@@ -1,0 +1,31 @@
+{
+  "task": "ext-excalibur",
+  "notClaimedYet": false,
+  "recordCorrection": "Top remaining list says sign reversed and29m hall missing, but hallCorrection20261014 records both installed. Verify current model and reconcile, do not redo blindly.",
+  "sources": [
+    {
+      "url": "https://www.marriott.com/en-us/hotels/lasex-excalibur-hotel-and-casino-mgm-collection/photos/",
+      "observed": "Official first hotel-view night photo personally inspected: white castle, blue/red/gold roof caps, arched arcade details, front entry bridge and landscaping. Date not provided."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1001,-115.174,347m/data=!3m1!1e3",
+      "observed": "Aerial personally inspected: north semicircular fan paving, narrow diagonal covered public approach, tram station east and road loops around castle."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0999639,-115.174212,3a,75y,17.87h,90t/data=!3m4!1e1!3m2!1s53pzrEZs686XAT8QLC5bwg!2e0",
+      "observed": "April2025GoogleStreetView personally inspected: covered public bridge, central moving walkway, white square piers, pale-tan raised stone trims around shallow pointed openings, crenellated low wall on one side and gray railing other side, pale flat ceiling with recessed fixtures. Approxworldx-109,z1785. Reversible scoped arcade detail could preserve existing public route. All dimensions require fitted estimates."
+    },
+    {
+      "url": "https://static.mgmresorts.com/content/dam/MGM/excalibur/hotel/excalibur-property-map.pdf",
+      "observed": "Official one-page map personally inspected: front entrance and New York-New York/T-Mobile walkway at northeast, adjacent tram connection, casino-level entrances and separate Castle Walk level. Schematic circulation only; not a scaled construction plan."
+    }
+  ],
+  "issue": 32,
+  "status": "installed-reviewed; all local step7 checks passed",
+  "baselineNote": "Initial ground-level covered-approach and side cameras were inside existing geometry; replaced before any model edit with elevated approach and side cameras. Front, hall and south baseline cameras are clear.",
+  "remaining": [
+    "Existing flat ground datum retained; no moving walkway, escalator or grade reconstruction in this pass.",
+    "All remaining whole-resort discrepancies remain in tools/resort-blocks/excalibur.json."
+  ],
+  "correction": "Expanded removal radius0.45m catches all old small-turret crenellation box corners. Final removed5256 triangles. Two corrected elevated views personally inspected; collision unchanged."
+}

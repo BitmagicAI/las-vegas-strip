@@ -1,0 +1,31 @@
+{
+  "lfsBytes": 13927264,
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_2.bin",
+      "bytes": 769787
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/highrises/exteriors.glb",
+      "bytes": 12056944
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/excaliburFrontage-exterior-collision.bin",
+      "bytes": 1048
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/excaliburFrontage-exterior.glb",
+      "bytes": 1085684
+    }
+  ],
+  "changedCells": [
+    "baked/cells/manifest.json",
+    "baked/cells/cell--1_2.bin"
+  ],
+  "unchangedCellFiles": 276,
+  "baselineCellFiles": 278
+}
