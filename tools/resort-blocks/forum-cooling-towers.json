@@ -111,5 +111,14 @@
     "issue": 195,
     "assignee": "janiverse",
     "pullRequest": 445
+  },
+  "entryReviewPass": {
+    "status": "source-reviewed-bake-running",
+    "evidence": "docs/project-records/forum-entry",
+    "remaining": [
+      "Service roof elevation16.8m inferred",
+      "Pipe routes and casing detail approximate; static fans",
+      "Local service-lane verification does not establish public roof access or driving performance"
+    ]
   }
 }

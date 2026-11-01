@@ -1264,11 +1264,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/build.py",
+     "tools/city-exteriors/audit-forum-entry.py",
      "tools/city-exteriors/audit-forum-shops.py",
      "tools/resort-blocks/bellagio_service.py",
      "tools/resort-blocks/build_paris_service.py",
-     "tools/resort-blocks/cosmo_frontage.py",
-     "tools/strip-landmarks/akita_plaza.py"
+     "tools/resort-blocks/cosmo_frontage.py"
     ]
    },
    "acceptance": [

@@ -1,0 +1,15 @@
+{
+  "typecheck": "PASS",
+  "scopedTests": "PASS3/3: ground-surface-index, site-lights, city-lazy-lod",
+  "sourceGeometry": "PASS27072 finite, nondegenerate, unique triangles",
+  "sourcePreservation": "PASS39 visual groups/86903 triangles/1585 collider triangles and labels unchanged",
+  "coolingSupport": "PASS61 lane floor samples",
+  "coolingController": "PASSboth directions using Rapier controller",
+  "visual": "Six installed baseline and two source views inspected; installed after views pending",
+  "bake": "PASS: current; one grouped bake, no geographic export",
+  "release": "Published/CDN checks deferred to release",
+  "runtimeOptimization": "PASS: 1 changed GLB, 0 unoptimized; WebP included",
+  "package": "PASS: 1924 present, 0 missing, 0 unoptimized",
+  "recordReview": "PASS; whole-site gaps retained",
+  "publicCheck": "PASS; existing inventory email warning only"
+}
