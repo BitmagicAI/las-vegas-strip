@@ -1,6 +1,7 @@
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {runtimeUrl} from './RuntimeAssets.js';
 import {bakeMode} from './CityBake.js';
+import {cityCellsEnabled} from './CityCells.js';
 
 /** The baked distant LODs (build/baked/city-lod.bin, VLOD, written by tools/bake/bake-city.mjs; the format is described
  * there). Per near batch: which of its vertices the LOD keeps and the LOD's triangles over them, ~2.7 MB for the city
@@ -17,6 +18,17 @@ export class LodBake {
     constructor(private readonly parts:Map<string,Map<string,BakedLod[]>>){}
     batch(part:string,key:string,k:number):BakedLod|undefined{return this.parts.get(part)?.get(key)?.[k];}
     get partCount():number{return this.parts.size;}
+    static combine(files:readonly LodBake[]):LodBake {
+        const parts=new Map<string,Map<string,BakedLod[]>>();
+        for(const file of files)for(const [id,blocks] of file.parts){
+            let target=parts.get(id);if(!target){target=new Map();parts.set(id,target);}
+            for(const [key,batches] of blocks){
+                if(target.has(key))throw new Error(`Duplicate LOD block ${id}/${key}`);
+                target.set(key,batches);
+            }
+        }
+        return new LodBake(parts);
+    }
 }
 
 let bake:LodBake|null=null,loading:Promise<LodBake|null>|null=null;
@@ -29,6 +41,24 @@ export function loadCityLodBake():Promise<LodBake|null>{
     if(bakeMode!=='use')return Promise.resolve(null);
     return loading??=(async()=>{
         try{
+            if(cityCellsEnabled){
+                const directory='/build/baked/cells';
+                const response=await fetch(runtimeUrl(directory+'/manifest.json'));
+                if(!response.ok)throw new Error('City LOD cell manifest unavailable');
+                const manifest=await response.json() as {version:number;cellSize:number;cells:{file:string}[]};
+                if(manifest.version!==1||manifest.cellSize!==800)throw new Error('Unsupported LOD cell manifest');
+                await MeshoptDecoder.ready;
+                const files:LodBake[]=[];
+                // Bound simultaneous requests without changing any part or batch identity.
+                for(let i=0;i<manifest.cells.length;i+=4){
+                    files.push(...await Promise.all(manifest.cells.slice(i,i+4).map(async cell=>{
+                        const r=await fetch(runtimeUrl(directory+'/'+cell.file));
+                        if(!r.ok)throw new Error(`City LOD cell unavailable: ${cell.file}`);
+                        return parse(new Uint8Array(await r.arrayBuffer()));
+                    })));
+                }
+                return bake=LodBake.combine(files);
+            }
             const [response]=await Promise.all([fetch(runtimeUrl('/build/baked/city-lod.bin')),MeshoptDecoder.ready]);
             if(!response.ok){console.warn(`[CityBake] no baked LODs (${response.status}): run node tools/bake/bake-city.mjs; clustering in the browser`);return null;}
             bake=parse(new Uint8Array(await response.arrayBuffer()));
@@ -37,7 +67,7 @@ export function loadCityLodBake():Promise<LodBake|null>{
     })();
 }
 
-function parse(bytes:Uint8Array):LodBake{
+export function parse(bytes:Uint8Array):LodBake{
     const dv=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
     if(dv.getUint32(0,true)!==0x444f4c56||dv.getUint16(4,true)!==1)throw new Error('Not a baked LOD file (VLOD 1)');
     let at=8;

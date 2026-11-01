@@ -1,0 +1,31 @@
+{
+  "building": "way/464694104",
+  "change": "Remove 16 owned shell triangles with matching collision; existing detailed building unchanged",
+  "changed": {
+    "visual": [
+      {
+        "file": "cell-0_-4.glb",
+        "newBytes": 2321288,
+        "oldBytes": 2321500
+      }
+    ],
+    "collision": [
+      {
+        "file": "cell-0_-4.bin",
+        "newBytes": 296056,
+        "oldBytes": 296196
+      }
+    ],
+    "lod": [
+      {
+        "file": "cell-0_-4.bin",
+        "newBytes": 354840,
+        "oldBytes": 354886
+      }
+    ]
+  },
+  "newCellObjectBytes": 3043390,
+  "manifestBytesUpperBound": 71206,
+  "legacyNewObjectBytes": 143020032,
+  "excluded": "unchanged detailed building; asset-pack catalog; network compression; one-time migration"
+}
