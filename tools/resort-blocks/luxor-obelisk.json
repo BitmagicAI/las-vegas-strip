@@ -104,10 +104,16 @@
     }
   },
   "reliefPass20261101": {
-    "status": "installed-validation-in-progress",
+    "status": "implemented-visually-reviewed",
     "research": "docs/project-records/luxor-obelisk-refinement/research.json",
     "authoredTriangles": 14156,
     "collision": "unchanged",
-    "packedRouteSamples": 1473
+    "packedRouteSamples": 1473,
+    "normalMovementSegments": 4,
+    "bakeRuns": 1,
+    "storage": "docs/project-records/luxor-obelisk-refinement/storage.json",
+    "performance": "docs/project-records/luxor-obelisk-refinement/performance-comparison.json",
+    "installedViews": "build/city-exteriors/luxor-obelisk-refinement-final",
+    "validation": "docs/project-records/luxor-obelisk-refinement/validation.json"
   }
 }
