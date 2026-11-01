@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1926,
- "bytes": 1174091995,
+ "bytes": 1174232594,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -366,8 +366,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-4.bin",
-   "bytes": 391375,
-   "sha256": "d3695bcca1bfe927a9916ef748849fb5c5f0c29e5e50fb0d69d8f2c8212116f3",
+   "bytes": 392534,
+   "sha256": "0d25197e4f96771039c89698cd5214a9455fbd224cc67907d96bc22577aecae2",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "16c6ace7bb8682c20afa71999ed856fe9d738c61375abae41cc23ec58056cda0",
+   "sha256": "e4b184464d9dc03a18b00b7cede535c54f2e5644f471d863e9eccc27b1c1d04e",
    "kind": "runtime cell manifest"
   },
   {
@@ -8484,14 +8484,14 @@
   },
   {
    "path": "build/strip-landmarks/fontainebleauExterior-exterior-collision.bin",
-   "bytes": 2552,
-   "sha256": "5abbfe6bf1ee7f7494f2446ff77c261b1c496aefa4709a09c7ad1307a6739778",
+   "bytes": 3196,
+   "sha256": "088c5a07dade8136dd7fb3103d839e3d631b8c6dccf70b809aeac2399348226d",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/fontainebleauExterior-exterior.glb",
-   "bytes": 624448,
-   "sha256": "365133747bb8cf9e18c97efc4aa76b42c55ef5f7325a1d2c3597cc5b16102997",
+   "bytes": 763244,
+   "sha256": "4585a5bd5b3eb16ad4923b464299a1d90a160ca48987cb373bbfb8dbf598a1f5",
    "kind": "optimized"
   },
   {

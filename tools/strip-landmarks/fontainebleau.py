@@ -95,4 +95,6 @@ def exterior(B):
    B.face('fb-limestone',[(a[0],16.05,a[1]),(b[0],16.05,b[1]),(b[0],17.12,b[1]),(a[0],17.12,a[1])],True)
  from fontainebleau_arrival import arrival
  arrival(B)
+ from fontainebleau_entry import detail
+ detail(B)
  return dict(key=KEY,name='Fontainebleau exterior and pool terrace',center=[1210,0,-2390],bounds=[1020,-2560,1410,-2260],building='fontainebleau',structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

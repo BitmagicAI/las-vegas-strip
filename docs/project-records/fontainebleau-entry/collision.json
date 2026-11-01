@@ -1,0 +1,42 @@
+{
+  "samples": 612,
+  "terrainFloorSamples": 241,
+  "failures": [],
+  "routes": [
+    {
+      "name": "West arrival aisle",
+      "points": [
+        [
+          1198,
+          -2556
+        ],
+        [
+          1212,
+          -2556
+        ],
+        [
+          1212,
+          -2547
+        ]
+      ]
+    },
+    {
+      "name": "East arrival aisle",
+      "points": [
+        [
+          1242,
+          -2556
+        ],
+        [
+          1228,
+          -2556
+        ],
+        [
+          1228,
+          -2547
+        ]
+      ]
+    }
+  ],
+  "scope": "Static obstruction/headroom and available packed support; terrain/road mesh floor is not represented by these collision packs and must be verified by normal runtime movement."
+}

@@ -58,7 +58,7 @@
     "Upper-deck access, landscaping and complete cabana/furniture layout remain unfinished.",
     "Podium height and schematic plan fit require further measured comparison; low-rise terrace volumes remain simplified.",
     "Tower glass reads too flat in sunset front views; material refinement and brand signage remain.",
-    "North canopy lacks photographed central water wall, entrance glazing, bowtie logo and flared supporting column integration. Lower band and canopy dimensions remain estimated.",
+    "North arrival now has original static waterwall, closed gold glazing, bowtie interpretations and flared supports; water motion, reflective fidelity, exact entry registration and canopy dimensions remain approximate.",
     "Large roof service volumes and garden layouts are still sparse; public podium facades remain generic at close range."
   ],
   "estimatedDimensions": {
@@ -337,5 +337,54 @@
       "build/strip-landmarks/fontainebleauExterior-exterior-collision.json": "0b8c83ad5343140afbd95762ab754ce6ffd918392e5924bed014baba27cdc2bd",
       "tools/strip-landmarks/fontainebleau_arrival.py": "f33e82e05ff898937be60e17e12505c85cbd11c9b55388a1480ee2ddafffe99c"
     }
+  },
+  "claim": {
+    "issue": 33,
+    "assignee": "janiverse",
+    "pullRequest": 450
+  },
+  "entryDetailPass": {
+    "status": "installed-local-verification-passed",
+    "sources": "docs/project-records/fontainebleau-entry/references.json",
+    "scope": "Original static waterwall/basin, closed gold-framed glazing, flared pale supports, bowtie interpretations and low soffit; exact dimensions inferred",
+    "remaining": [
+      "No animated water or transparent interior behind new closed entry glazing.",
+      "Existing north canopy scale, height, pillar arrangement and facade registration remain estimated.",
+      "Existing tower, garage and pool terrace preserved; upper deck access, landscaping, service roofs and close facade details remain unfinished."
+    ],
+    "evidence": "docs/project-records/fontainebleau-entry",
+    "triangles": 7904,
+    "collisionTriangles": 188,
+    "newLfsBytes": 1172775,
+    "cellDelta": "LOD cell1,-4 and manifest changed;276othercellfilesbyteidentical",
+    "performance": {
+      "baseline": "docs/project-records/fontainebleau-entry/performance-before.json",
+      "after": "docs/project-records/fontainebleau-entry/performance-after.json",
+      "method": "960x540 ultra, same cameras,180frames/view; shared workstation",
+      "p95BeforeAfterMs": {
+        "front": [
+          43.5,
+          41.5
+        ],
+        "arrival-west": [
+          17.5,
+          22.5
+        ],
+        "water-wall": [
+          42,
+          39.9
+        ],
+        "east-aisle": [
+          44.2,
+          35.3
+        ],
+        "pool-deck": [
+          27.8,
+          25.7
+        ]
+      },
+      "note": "West arrival slower; other views lower. No broad speedup claim."
+    },
+    "checks": "docs/project-records/fontainebleau-entry/checks.json"
   }
 }

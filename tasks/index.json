@@ -2255,7 +2255,7 @@
     "Upper-deck access, landscaping and complete cabana/furniture layout remain unfinished.",
     "Podium height and schematic plan fit require further measured comparison; low-rise terrace volumes remain simplified.",
     "Tower glass reads too flat in sunset front views; material refinement and brand signage remain.",
-    "North canopy lacks photographed central water wall, entrance glazing, bowtie logo and flared supporting column integration. Lower band and canopy dimensions remain estimated.",
+    "North arrival now has original static waterwall, closed gold glazing, bowtie interpretations and flared supports; water motion, reflective fidelity, exact entry registration and canopy dimensions remain approximate.",
     "Large roof service volumes and garden layouts are still sparse; public podium facades remain generic at close range."
    ],
    "record": "tools/resort-blocks/fontainebleau.json",
@@ -2290,10 +2290,10 @@
     "builders": [
      "tools/strip-landmarks/fontainebleau.py",
      "tools/city-exteriors/test-fontainebleau-arrival.mjs",
+     "tools/city-exteriors/check-fontainebleau-entry.py",
      "tools/highrises/interiors.py",
-     "tools/city-exteriors/test-fontainebleau.mjs",
-     "tools/highrises/catalog.py",
-     "tools/highrises/review.py"
+     "tools/city-exteriors/test-fontainebleau-entry.mjs",
+     "tools/city-exteriors/test-fontainebleau.mjs"
     ]
    },
    "acceptance": [
