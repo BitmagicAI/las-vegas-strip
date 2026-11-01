@@ -2530,10 +2530,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Observation tower replaced with tripod, glazed pod and lattice mast; exact pod proportions, ride structures and accessible observation interior remain unfinished.",
-    "Rooftop pools, landscaping, precise entrance and tenant frontage remain unfinished.",
-    "All four installed views inspected; lower frontage remains repetitive and lacks reference-specific signs/canopies.",
-    "No new collision; full public route traversal unverified."
+    "Existing tripod, glazed pod, lattice mast and separately integrated static rides are preserved. Exact pod proportions and a complete accessible observation interior need a separately scoped reference/route pass.",
+    "Existing Level 8 rooftop pool integration is preserved. Detailed gardens, precise entrance finishes and tenant frontage still need individual photographic reconstruction.",
+    "Gateway arches added from primary city dimensions and aerial-fitted placement. Exact ribbon sections, footing positions, 13,016-light layout and script typography remain approximate; detailed artwork needs closer measured references.",
+    "Eight normal movement segments verify both gateway sidewalks and lanes in both directions. Whole-resort circulation, main entrance interior connection and driveable garage decks remain outside this gateway scope."
    ],
    "record": "tools/resort-blocks/strat.json",
    "buildings": [
@@ -2594,12 +2594,12 @@
      "tools/resort-blocks/strat.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-strat-gateway.mjs",
      "tools/level/refine_public_resorts.py",
      "tools/level/resort_interiors.py",
      "tools/strip-landmarks/strat_frontage.py",
-     "tools/city-exteriors/test-strat-podium.mjs",
-     "tools/city-exteriors/replace-strat-thrill-rides.py",
-     "tools/city-exteriors/test-strat-observation.mjs"
+     "tools/city-exteriors/audit-strat-gateway.py",
+     "tools/city-exteriors/test-strat-podium.mjs"
     ]
    },
    "acceptance": [

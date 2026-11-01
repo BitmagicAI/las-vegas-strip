@@ -65,10 +65,10 @@
     }
   ],
   "remaining": [
-    "Observation tower replaced with tripod, glazed pod and lattice mast; exact pod proportions, ride structures and accessible observation interior remain unfinished.",
-    "Rooftop pools, landscaping, precise entrance and tenant frontage remain unfinished.",
-    "All four installed views inspected; lower frontage remains repetitive and lacks reference-specific signs/canopies.",
-    "No new collision; full public route traversal unverified."
+    "Existing tripod, glazed pod, lattice mast and separately integrated static rides are preserved. Exact pod proportions and a complete accessible observation interior need a separately scoped reference/route pass.",
+    "Existing Level 8 rooftop pool integration is preserved. Detailed gardens, precise entrance finishes and tenant frontage still need individual photographic reconstruction.",
+    "Gateway arches added from primary city dimensions and aerial-fitted placement. Exact ribbon sections, footing positions, 13,016-light layout and script typography remain approximate; detailed artwork needs closer measured references.",
+    "Eight normal movement segments verify both gateway sidewalks and lanes in both directions. Whole-resort circulation, main entrance interior connection and driveable garage decks remain outside this gateway scope."
   ],
   "geometry": {
     "triangles": 7893,
@@ -201,9 +201,9 @@
     },
     "remaining": [
       "Main entrance still requires real interior connection",
-      "Pools and gardens not implemented",
+      "Pool integration is recorded separately; detailed gardens still need reference-supported work",
       "Garage remains facade-only without driveable decks",
-      "Gateway arches and detailed artwork absent"
+      "Gateway arches now implemented in gatewayPass; exact artwork and lamp layout remain approximate"
     ],
     "tests": [
       "202 new roof support samples PASS",
@@ -270,5 +270,24 @@
   "rideIntegration20261021": {
     "change": "Added static Big Shot and X-Scream assemblies; removed false ground-level ride footprint.",
     "evidence": "tools/resort-blocks/strat-thrill-rides.json"
+  },
+  "gatewayPass": {
+    "status": "installed-locally-verified",
+    "issue": 37,
+    "pullRequest": 455,
+    "source": "tools/strip-landmarks/strat_gateway.py",
+    "research": "docs/project-records/strat-gateway/research.json",
+    "before": "build/city-exteriors/strat-gateway-before-corrected",
+    "preservation": "docs/project-records/strat-gateway/preservation.json",
+    "geometry": "docs/project-records/strat-gateway/geometry.json",
+    "dimensions": "City: 80ft high, 140ft span, emblem20x40ft. Aerial-fitted center1594,-3445.3; 1.35x0.46m ribbons and 2.5m piers inferred. Original script approximation.",
+    "walking": "docs/project-records/strat-gateway/normal-walk.json",
+    "collision": "docs/project-records/strat-gateway/collision.json",
+    "detail": "build/city-exteriors/strat-gateway-detail-final",
+    "review": "All four final matching daylight views and two corrected detail views personally inspected. Clear supports and lanes, readable south script and reversed north script; preserved arrival frontage. Eight normal movement segments and 2148 packed collision samples pass. Exact emblem/lamps remain approximate.",
+    "after": "build/city-exteriors/strat-gateway-after-final",
+    "performance": "docs/project-records/strat-gateway/performance-comparison.json",
+    "assets": "docs/project-records/strat-gateway/asset-delta.json",
+    "smoke": "docs/project-records/strat-gateway/smoke.json"
   }
 }
