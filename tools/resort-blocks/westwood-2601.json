@@ -1,0 +1,234 @@
+{
+  "id": "westwood-2601",
+  "name": "2601 Westwood and separate south building",
+  "status": "refinement-deferred",
+  "authoringStatus": "installed and locally verified",
+  "mappedIds": [
+    "way/1018431840",
+    "way/276428208"
+  ],
+  "claim": {
+    "issue": 435,
+    "assignee": "janiverse",
+    "url": "https://github.com/BitmagicAI/las-vegas-strip/issues/435",
+    "pullRequest": 438
+  },
+  "sources": [
+    {
+      "url": "https://lvbuildings.com/2601-westwood-property/",
+      "accessed": "2026-10-30",
+      "observed": "Owner property identity and aerial; yellow overlay obscures colours."
+    },
+    {
+      "url": "https://lvbuildings.com/wp-content/uploads/2023/08/Hotel-Property-Info.pdf",
+      "accessed": "2026-10-30",
+      "imageDate": "2023 brochure",
+      "observed": "236 x 41 ft hotel plan; 100 ft pylon with 40 x 30 ft faces. Lobby/bar illustrations labelled proposed, not built interior evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1423359,-115.1714865,3a,75y,309.03h,90t/data=!3m4!1e1!3m2!1stnZRf7widER9VhzM2QIiIg!2e0",
+      "accessed": "2026-10-30",
+      "imageDate": "November 2021",
+      "observed": "Cream/salmon frontage, canopy/ramp, palms, pool wall and separate grey south building."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1426339,-115.1712835,3a,75y,306h,90t/data=!3m4!1e1!3m2!1sba0gpHmaaTcW7rlwo1ugzg!2e0",
+      "accessed": "2026-10-30",
+      "imageDate": "February 2020",
+      "observed": "North ochre masonry end, narrow stair glazing, small windows, service doors and utility cabinet."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1418057,-115.1717857,3a,75y,315h,90t/data=!3m4!1e1!3m2!1s9SfTBZn0Nrrsh5NjQYOSgQ!2e0",
+      "accessed": "2026-10-30",
+      "imageDate": "November 2021",
+      "observed": "Street-facing short end of south building has pale masonry, a full-height open steel stairwell and closed metal ground gate. Flights and rails visible; dimensions and internal landing arrangement inferred."
+    }
+  ],
+  "uncertainDimensions": [
+    "Mapped centre/heading retained; reference narrows main bar from coarse footprint. Installed roads/neighbours visually inspected; no survey accuracy claimed.",
+    "Heights, bay spacing, pool/court dimensions, plants and pylon footing are inferred.",
+    "Rear/south elevation repetition uncorroborated; separate south building ownership unknown."
+  ],
+  "components": [
+    {
+      "id": "main-hotel-exterior",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "north-service-end",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "arrival-canopy-ramp",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "pool-court-gate",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "pylon",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "frontage-palms",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "south-building-exterior",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "public-interior",
+      "status": "not-authored",
+      "reason": "Only proposed layouts found; no current as-built interior evidence."
+    },
+    {
+      "id": "south-building-stairwell",
+      "status": "installed and visually inspected; gated, no public access claimed"
+    }
+  ],
+  "views": [
+    {
+      "id": "front",
+      "eye": [
+        130,
+        4,
+        -2915
+      ],
+      "target": [
+        116,
+        5,
+        -2947
+      ],
+      "status": "installed daylight inspected",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/front.png",
+      "beforeCapture": "build/city-exteriors/westwood-2601-before/westwood-2601-front.png",
+      "afterCapture": "build/city-exteriors/westwood-2601-after/westwood-2601-front.png"
+    },
+    {
+      "id": "roof",
+      "eye": [
+        185,
+        70,
+        -2870
+      ],
+      "target": [
+        110,
+        4,
+        -2925
+      ],
+      "status": "installed daylight inspected",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/roof.png",
+      "beforeCapture": "build/city-exteriors/westwood-2601-before/westwood-2601-roof.png",
+      "afterCapture": "build/city-exteriors/westwood-2601-after/westwood-2601-roof.png"
+    },
+    {
+      "id": "annex",
+      "eye": [
+        135,
+        6,
+        -2915
+      ],
+      "target": [
+        87,
+        5,
+        -2887
+      ],
+      "status": "installed daylight inspected",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/annex.png",
+      "beforeCapture": "build/city-exteriors/westwood-2601-before/westwood-2601-annex.png",
+      "afterCapture": "build/city-exteriors/westwood-2601-after/westwood-2601-annex.png"
+    },
+    {
+      "id": "north-end",
+      "eye": [
+        162.302,
+        5,
+        -2978.071
+      ],
+      "target": [
+        141.245,
+        5,
+        -2973.11
+      ],
+      "status": "installed daylight inspected",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/north-end.png",
+      "beforeCapture": "build/city-exteriors/westwood-2601-before/westwood-2601-north-end.png",
+      "afterCapture": "build/city-exteriors/westwood-2601-after/westwood-2601-north-end.png"
+    },
+    {
+      "id": "pool-gate",
+      "eye": [
+        129.908,
+        3.5,
+        -2911.17
+      ],
+      "target": [
+        112.707,
+        1,
+        -2917.66
+      ],
+      "status": "installed daylight inspected",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/pool-gate.png",
+      "beforeCapture": "build/city-exteriors/westwood-2601-before/westwood-2601-pool-gate.png",
+      "afterCapture": "build/city-exteriors/westwood-2601-after/westwood-2601-pool-gate.png"
+    },
+    {
+      "id": "annex-stair",
+      "eye": [
+        133,
+        5,
+        -2864
+      ],
+      "target": [
+        109,
+        4.7,
+        -2876
+      ],
+      "status": "installed daylight inspected",
+      "sourceCapture": "build/city-exteriors/westwood-2601-source-review/annex-stair.png",
+      "beforeCapture": "build/city-exteriors/westwood-2601-before/westwood-2601-annex-stair.png",
+      "afterCapture": "build/city-exteriors/westwood-2601-after/westwood-2601-annex-stair.png"
+    }
+  ],
+  "evidence": {
+    "sourceClearance": "docs/project-records/westwood-2601/source-route-report.json",
+    "checkpoint": "docs/project-records/westwood-2601/checkpoint.md",
+    "sourcePlacement": "docs/project-records/westwood-2601/placement-report.json",
+    "sourceRebuild": "docs/project-records/westwood-2601/source-rebuild.json",
+    "performance": "docs/project-records/westwood-2601/installed-performance.json",
+    "preservation": "docs/project-records/westwood-2601/preservation.json",
+    "installedWalk": "docs/project-records/westwood-2601/installed-walk.json",
+    "smoke": "docs/project-records/westwood-2601/installed-smoke.json",
+    "cellChanges": "docs/project-records/westwood-2601/cell-changes.json"
+  },
+  "checks": {
+    "sourceFloorSamples": 214,
+    "sourceCollisionTriangles": 1747,
+    "sourceTriangles": 67701,
+    "export": "passed",
+    "levelOptimization": "passed",
+    "webp": "passed; textureless",
+    "installation": "targeted shell removal: 35 visual and collision faces; other data preserved",
+    "installedWalk": "PASS: arrival ramp and pool gate/deck, both directions, four segments using normal movement",
+    "runtimePerformance": "matched six views PASS: after p95 18.5\u201318.6 ms; single local run",
+    "sourcePlacement": "passed against 6766 mapped buildings; 6 camera origins outside mapped building volumes",
+    "sourceRebuild": "passed: mesh, collision and metadata JSON byte-identical",
+    "recordReview": "PASS: 288 block records",
+    "typecheck": "PASS",
+    "publicCheck": "PASS: existing inventory email warning",
+    "bake": "PASS: current inputs; 91 of 92 LOD cells byte-identical",
+    "lodTests": "PASS: deterministic files and 760 decoded batches",
+    "assetPack": "PASS: 1916 present, 0 missing, 0 not optimized",
+    "smoke": "PASS: 9 stops, no failed requests/page/console errors"
+  },
+  "remaining": [
+    "Unseen rear elevations, exact height/bay dimensions, pool shape and pylon footing remain inferred from incomplete dated evidence.",
+    "Public interiors are not authored: available lobby/bar layouts are proposed rather than confirmed as-built."
+  ],
+  "nextPass": {
+    "priority": "Reference-led refinement",
+    "checkpoint": "Installed exterior pass verified locally; seek evidence for unseen elevations and as-built public interior before refinements."
+  }
+}

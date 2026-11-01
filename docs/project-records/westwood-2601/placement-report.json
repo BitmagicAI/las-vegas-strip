@@ -1,0 +1,12 @@
+{
+  "scope": "Source shell footprints, collision projections and mapped building camera volumes only; roads, actual runtime mesh occlusion and installed alignment still require inspection.",
+  "mappedBuildingCount": 6766,
+  "claimedIds": [
+    "way/1018431840",
+    "way/276428208"
+  ],
+  "collisionTriangles": 1747,
+  "neighbourOverlaps": [],
+  "cameraCount": 6,
+  "camerasInsideMappedBuildings": []
+}

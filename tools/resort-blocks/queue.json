@@ -1872,9 +1872,15 @@
     {
       "id": "lexi-westwood",
       "name": "The Lexi Las Vegas",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "lexi-westwood.json"
+    },
+    {
+      "id": "westwood-2601",
+      "name": "2601 Westwood and separate south building",
+      "status": "refinement-deferred",
+      "record": "westwood-2601.json"
     }
   ],
-  "active": "lexi-westwood"
+  "active": "westwood-2601"
 }

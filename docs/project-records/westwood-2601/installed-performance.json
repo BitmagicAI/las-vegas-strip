@@ -1,0 +1,101 @@
+{
+  "method": "960x540 ultra, daylight fixed named cameras; 300 settle frames and 180 measured frames per view; single local run, not a published cold-load claim",
+  "views": [
+    {
+      "name": "front",
+      "eye": [
+        130,
+        4,
+        -2915
+      ],
+      "target": [
+        116,
+        5,
+        -2947
+      ],
+      "beforeP95ms": 19.3,
+      "afterP95ms": 18.6,
+      "afterP50ms": 16.7
+    },
+    {
+      "name": "roof",
+      "eye": [
+        185,
+        70,
+        -2870
+      ],
+      "target": [
+        110,
+        4,
+        -2925
+      ],
+      "beforeP95ms": 19.2,
+      "afterP95ms": 18.6,
+      "afterP50ms": 16.6
+    },
+    {
+      "name": "annex",
+      "eye": [
+        135,
+        6,
+        -2915
+      ],
+      "target": [
+        87,
+        5,
+        -2887
+      ],
+      "beforeP95ms": 19,
+      "afterP95ms": 18.6,
+      "afterP50ms": 16.7
+    },
+    {
+      "name": "north-end",
+      "eye": [
+        162.302,
+        5,
+        -2978.071
+      ],
+      "target": [
+        141.245,
+        5,
+        -2973.11
+      ],
+      "beforeP95ms": 18.5,
+      "afterP95ms": 18.5,
+      "afterP50ms": 16.5
+    },
+    {
+      "name": "pool-gate",
+      "eye": [
+        129.908,
+        3.5,
+        -2911.17
+      ],
+      "target": [
+        112.707,
+        1,
+        -2917.66
+      ],
+      "beforeP95ms": 19.2,
+      "afterP95ms": 18.5,
+      "afterP50ms": 16.5
+    },
+    {
+      "name": "annex-stair",
+      "eye": [
+        133,
+        5,
+        -2864
+      ],
+      "target": [
+        109,
+        4.7,
+        -2876
+      ],
+      "beforeP95ms": 19,
+      "afterP95ms": 18.5,
+      "afterP50ms": 16.7
+    }
+  ]
+}

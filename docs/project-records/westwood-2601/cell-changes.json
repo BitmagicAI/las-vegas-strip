@@ -1,0 +1,32 @@
+{
+  "geographic-strip/cells": {
+    "unchanged": 91,
+    "changed": [
+      {
+        "file": "cell-0_-4.glb",
+        "beforeBytes": 2321288,
+        "afterBytes": 2320820
+      }
+    ]
+  },
+  "geographic-strip/collision-cells": {
+    "unchanged": 90,
+    "changed": [
+      {
+        "file": "cell-0_-4.bin",
+        "beforeBytes": 296056,
+        "afterBytes": 296056
+      }
+    ]
+  },
+  "baked/cells": {
+    "unchanged": 91,
+    "changed": [
+      {
+        "file": "cell-0_-4.bin",
+        "beforeBytes": 354840,
+        "afterBytes": 391851
+      }
+    ]
+  }
+}

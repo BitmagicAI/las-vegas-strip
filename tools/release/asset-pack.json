@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-10-30",
+ "revision": "2026-10-31",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-10-30.tar.gz",
+  "name": "las-vegas-strip-assets-2026-10-31.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
- "count": 1914,
- "bytes": 1166221434,
+ "count": 1916,
+ "bytes": 1168904329,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -288,8 +288,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-4.bin",
-   "bytes": 354840,
-   "sha256": "4e36b4b9b0139ff0674f6cb279227f88f5ac1b4d84e638b7b5d81196acf0a230",
+   "bytes": 391851,
+   "sha256": "3bb590d920fad689e94eb71976576f3eb67d592cdb628244dd4cdaded2f19e17",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "5be21e544e3f55b88aad9a56b6ffa7dd06872f2050f583a6e90a568f140aa062",
+   "sha256": "b8387c2c5a97fc1569e5825201f7bd7419000d8192991cf37c7eb6844bd3aec1",
    "kind": "runtime cell manifest"
   },
   {
@@ -942,8 +942,8 @@
   },
   {
    "path": "build/geographic-strip/cells/cell-0_-4.glb",
-   "bytes": 2321288,
-   "sha256": "93518e3d456f6cfaafd63e7cd2c322dc731bb930f54f34be9deb3da23a584ab7",
+   "bytes": 2320820,
+   "sha256": "7acd096a965c930a46046eb9ad6e6f04f95c287970679490f53b02fed30c041d",
    "kind": "optimized"
   },
   {
@@ -1243,7 +1243,7 @@
   {
    "path": "build/geographic-strip/cells/manifest.json",
    "bytes": 39796,
-   "sha256": "a15fceb5fd0ea085cd53031fac4c129900511e77cded9a2f1a0e80e6c48adce4",
+   "sha256": "c452268d056fa0000f1ccd814b1b4c5f1bbd279fbf22bc42baac6cfa9effc4ac",
    "kind": "runtime cell manifest"
   },
   {
@@ -1495,7 +1495,7 @@
   {
    "path": "build/geographic-strip/collision-cells/cell-0_-4.bin",
    "bytes": 296056,
-   "sha256": "be11f150558e7a06141298d856a5d349460ef26d7680803b0e84da6d3612de8a",
+   "sha256": "f35de0a64f4c1b8f64af1b706e31010e94f85ad8aef6a9a6fecc20054897b8cf",
    "kind": "original"
   },
   {
@@ -1795,7 +1795,7 @@
   {
    "path": "build/geographic-strip/collision-cells/manifest.json",
    "bytes": 17609,
-   "sha256": "86cc77a85c10b427cd8e02d1e226a4a0bf3851eabbdaf95bcaa94243a4ed1b10",
+   "sha256": "429ec09e5896143de5c1d06dc1916bfaab4b5b60b8bc07733f3b609f59f60f7c",
    "kind": "runtime cell manifest"
   },
   {
@@ -11280,8 +11280,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 391116,
-   "sha256": "1ef7899c61af8b7ceea899225cc0cd628dda17f6a6c718a4766929862ccdd1aa",
+   "bytes": 391688,
+   "sha256": "db1698ee02a898c2dd188319f9874e6e9f03bbeda25770b514df49f3f3afa78f",
    "kind": "original"
   },
   {
@@ -11390,6 +11390,18 @@
    "path": "build/strip-landmarks/westin-exterior.glb",
    "bytes": 239128,
    "sha256": "c2472d9e0babccccc95e4660c146f62193cbc2b7a0adbc1fa84d8521a8bd0e66",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/westwood-2601-exterior-collision.bin",
+   "bytes": 6156,
+   "sha256": "304e255915987f730fcbca5f19d11c4ec85e35edc56781e5655abd9f6b5d7263",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/westwood-2601-exterior.glb",
+   "bytes": 2639624,
+   "sha256": "0e24914c96805240f66429278e443335efacf6c6e33d61d211a02481835b72e4",
    "kind": "optimized"
   },
   {
