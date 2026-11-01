@@ -3558,10 +3558,11 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Older lobby cladding and entrance details remain visually unfinished",
-    "Pool deck and garage height27m estimated; terrace landscaping, shade, furnishings and full public routes remain incomplete",
+    "Estimated 27m deck height, two tandem pool fits and southern spa/plunge positions need survey calibration; inter-pool elevation change, cafe and complete public connections remain unresolved",
+    "Three furnished cabanas and 32 loungers installed; exact shade layout and palm/planting reconstruction unfinished. Available foliage sources are broadleaf, not used as palm substitutes",
     "Tower facade proportions based on KPF/Front photos, not a measured panel survey"
    ],
    "record": "tools/resort-blocks/waldorf.json",
@@ -3593,10 +3594,10 @@
     "builders": [
      "tools/level/resort_guest_templates.py",
      "tools/city-exteriors/install-waldorf.py",
+     "tools/strip-landmarks/waldorf_amenities.py",
      "tools/level/reconstruct_arrivals.py",
-     "tools/fetch-public-resort-references.py",
-     "tools/geographic-strip/mapping.py",
-     "tools/level/citycenter.py"
+     "tools/city-exteriors/install-waldorf-hgv-amenities.mjs",
+     "tools/fetch-public-resort-references.py"
     ]
    },
    "acceptance": [
@@ -3615,9 +3616,10 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Detailed garden planting, pool enclosures/shade, and public circulation unfinished",
+    "Pool fit, .85m raised terrace, three hip-roof pavilions,30 loungers and seven parasols are inferred from imagery; exact positions and dimensions need refinement",
+    "Detailed palm planting, pool enclosure, BBQ/dining and complete connections to public interiors unfinished; available broadleaf foliage models do not match referenced palms",
     "Facade bay/step dimensions visually estimated; side-wing elevations retained from map",
     "Ground-floor doors are geometric apertures, not new working public interiors"
    ],
@@ -3639,6 +3641,7 @@
     ],
     "builders": [
      "tools/strip-landmarks/hgv_flamingo_exterior.py",
+     "tools/strip-landmarks/hgv_flamingo_amenities.py",
      "tools/city-exteriors/test-hgv-flamingo.mjs",
      "tools/strip-landmarks/build_hgv_flamingo.py"
     ]

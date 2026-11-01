@@ -75,12 +75,14 @@
     "corrections": "Removed old tower overlap, duplicate terrace roof, clipped pool and excessive lounger grid; roof no longer receives corrugated-metal detail. North camera was inside garage, not a verified arrival route."
   },
   "amenityPass": {
-    "status": "installed-preview-walk-pending",
+    "status": "movement-verified-final-bake-pending",
     "research": "docs/project-records/waldorf-hgv-amenities/research.json",
     "geometry": "docs/project-records/waldorf-hgv-amenities/waldorf-geometry.json",
     "preservation": "docs/project-records/waldorf-hgv-amenities/waldorf-preservation.json",
     "installedRouteClearance": "docs/project-records/waldorf-hgv-amenities/installed-route-clearance.json",
     "preview": "build/city-exteriors/waldorf-amenities-preview",
-    "notes": "All four daylight previews personally inspected, clear. Existing hotel and arrival remain preserved. Actual movement verification and final single bake pending."
+    "notes": "All four daylight previews and all forward/reverse endpoint images personally inspected. Eight continuous circuits total pass, including HGV terrace stair. Exact landscape, elevations and full public connections remain unresolved.",
+    "walk": "docs/project-records/waldorf-hgv-amenities/walk.json",
+    "movementSegments": 432
   }
 }
