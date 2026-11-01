@@ -36,6 +36,31 @@
       "accessDate": "2026-10-13",
       "imageryDate": "2022-11-09",
       "observed": "Close aerial reviewed. Rounded bronze corner with red base portal, red rectangular central entrance, slanted vertical upper fins, red storefront awnings, triangular stepped grass/paving and pale oval forecourt."
+    },
+    {
+      "title": "Current official property map",
+      "url": "https://www.rwlasvegas.com/map/",
+      "observed": "Current level1 labels distinguish Hilton, Crockfords and Conrad porte cocheres from Strip/plaza entrances. Current tenant labels differ from2025PDF; do not reuse old tenants blindly."
+    },
+    {
+      "title": "Official February2025 sales kit page12",
+      "url": "https://www.rwlasvegas.com/wp-content/uploads/2025/02/SLE-00294_SalesKit_Updates_013025.pdf",
+      "observed": "PDF page12 personally inspected; arrival/lobby relationships and retail/casino circulation, schematic not measured plan. LocalPDF /tmp/vegas-pdf-research/resorts-world-saleskit.pdf."
+    },
+    {
+      "title": "Official main entrance sunrise photograph",
+      "url": "https://www.rwlasvegas.com/wp-content/uploads/2023/04/RW-Main-Entrance-Exterior-Sunrise.jpg",
+      "observed": "Personally inspected: broad bronze canopy, pale paired/slotted rectangular piers, red/bronzeframed soffit with luminous rectangular panels, curved glazed pavilion, dense palms and planted islands. Exact dimensions inferred."
+    },
+    {
+      "title": "Google aerial",
+      "url": "https://www.google.com/maps/@36.1346,-115.1664,400m/data=!3m1!1e3",
+      "observed": "Personally inspected: north side arrival loop and separate south pool terrace/Strip frontage. Imagery date not exposed in aerial."
+    },
+    {
+      "title": "Google Street View Hilton arrival January 2025",
+      "url": "https://www.google.com/maps/@36.1354443,-115.1665494,3a,75y,260.98h,90t/data=!3m4!1e1!3m2!1sEnl_cjM7C33yrIRuqs3iPQ!2e0",
+      "observed": "Personally inspected dated panorama: red/bronze coffers, white inset ceiling panels, square hanging lanterns, paired pale piers, glazed entry and palms/low hedges/benches. Panorama world position approximately580,-2164.5. Canopy registration and all dimensions inferred from aerial, footprint and photographs."
     }
   ],
   "components": [
@@ -61,16 +86,22 @@
     }
   ],
   "remaining": [
-    "Landscaping, pool furniture and full terrace access remain unfinished.",
-    "Rounded southern pavilion and individual restaurant details need closer fit; current facade is simplified.",
-    "Main LED has original abstract art, not copied advertising; slim east display UV composition needs refinement.",
-    "Main arrival bronze canopy and planted islands remain unimplemented; Strip retail entrance is a separate structure.",
-    "No trees in new forecourt lawn bands; planting, individual storefront detail and public connections remain incomplete."
+    "Landscaping, pool furniture and full terrace access remain unfinished; this pass targets the north Hilton arrival without changing the established pool deck.",
+    "Rounded southern pavilion and individual restaurant details need closer fit; separate references and measured registration remain necessary.",
+    "Main LED retains original abstract art; east display UV refinement is deferred to a display-specific pass to preserve current tower surfaces.",
+    "Hilton arrival canopy and planted island now have original geometry, but dimensions and registration are photo/aerial estimates. Conrad and Crockfords canopies remain unfinished; their separate footprints require independent fit.",
+    "Strip forecourt trees, storefront detail and continuous public connections remain incomplete; the existing Strip entrance and guest entry are preserved rather than implying new interiors."
   ],
   "estimatedDimensions": {
     "podiumTopM": 20,
     "theatreTopM": 24,
-    "method": "Photo-derived estimates; tower205.4m retained from mapped height."
+    "method": "Photo-derived estimates; tower205.4m retained from mapped height.",
+    "hiltonCanopyM": {
+      "width": 78,
+      "depth": 37,
+      "roofTop": 8.68,
+      "method": "Approximate registration to mapped podium and personally inspected January2025StreetView/officialphoto/aerial, not surveyed dimensions."
+    }
   },
   "geometry": {
     "triangles": 13354,
@@ -289,5 +320,16 @@
       "build/strip-landmarks/resortsWorldExterior-exterior.json": "64c8c44bcbdd0e7f35e5be821c9cf7aef5968d4a53a00f19f26e3cc0dbbc5431",
       "build/strip-landmarks/resortsWorldExterior-exterior.blend": "6167ca07f92a06692bef32ff5e7cf1187fa13feb301cd3f837f905aa68ce6b43"
     }
+  },
+  "arrivalPass": {
+    "status": "source-authored-verification-in-progress",
+    "issue": 34,
+    "pullRequest": 452,
+    "sources": "docs/project-records/rw-arrival/checkpoint.json",
+    "geometry": "docs/project-records/rw-arrival/geometry.json",
+    "collision": "docs/project-records/rw-arrival/collision.json",
+    "routes": "docs/project-records/rw-arrival/routes.json",
+    "before": "build/city-exteriors/rw-arrival-before-final",
+    "after": "pending"
   }
 }

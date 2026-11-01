@@ -1,0 +1,24 @@
+{
+  "visual": [
+    {
+      "cell": "3,-13",
+      "material": "building-estimated",
+      "trianglesClipped": 136
+    },
+    {
+      "cell": "3,-14",
+      "material": "building-estimated",
+      "trianglesClipped": 22
+    }
+  ],
+  "collision": [
+    {
+      "cell": "3,-14",
+      "trianglesClipped": 22
+    },
+    {
+      "cell": "3,-13",
+      "trianglesClipped": 136
+    }
+  ]
+}

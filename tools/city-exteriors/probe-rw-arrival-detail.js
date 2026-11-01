@@ -1,0 +1,5 @@
+// Use unchanged names and cameras for both before and after installation.
+let skyColor;scene.traverse(o=>{if(o.isDirectionalLight){o.color.setHex(0xffffff);o.intensity=2;skyColor=o.color.clone().setHex(0xc2d5e0);}if(o.isAmbientLight||o.isHemisphereLight){o.color.setHex(0xffffff);o.intensity=1.3;}if(/skybox/i.test(o.name))o.visible=false;});if(skyColor)scene.background=skyColor;
+const views=[["front",[566,3,-2220],[559,6,-2160]],["under-canopy",[584,2,-2164],[540,5,-2164]],["west-lane",[530,2,-2150],[530,5,-2180]]];
+const frame=()=>new Promise(r=>requestAnimationFrame(r)),results=[];
+for(const [name,eye,target] of views){probe.teleport(eye[0],1.1,eye[2]);const release=engine.registerBeforeRender(()=>{engine.camera.position.set(...eye);engine.camera.lookAt(...target);engine.camera.updateMatrixWorld();});for(let i=0;i<300;i++)await frame();await __shot('rw-arrival-'+name);const times=[];let last=performance.now();for(let i=0;i<180;i++){await frame();const now=performance.now();times.push(now-last);last=now;}times.sort((a,b)=>a-b);release();results.push({name,eye,target,p50:times[90],p95:times[171]});}return results;
