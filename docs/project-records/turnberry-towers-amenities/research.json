@@ -23,8 +23,25 @@
       "url": "https://swedroe.com/wp-content/uploads/swedroe-turnberrytowers-004-1.jpg",
       "inspection": "Personally inspected primary architect aerial",
       "observations": "Overall arrangement and landscape/amenity furniture distribution; do not infer measured heights from image."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1408,-115.1527&zoom=18&basemap=satellite",
+      "inspection": "Aerial personally inspected",
+      "observations": "Separate south pool courts, central arrival and two west tennis courts. South court is labeled Tennis and Pickleball; precise repainting is not inferred from label. Aerial acquisition date not shown."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14028,-115.15268&heading=0&pitch=5",
+      "inspection": "Jan2026StreetView personally inspected,panoY5chFSDOa61ufnkgwEQFuw",
+      "observations": "Dense tall palms and broadleaf trees, white-pier/picket perimeter fences, planted/gravel strips. Prior36.13978point landed at unrelated Hilton interior and is excluded."
     }
   ],
   "caution": "Do not confuse Turnberry Towers with Turnberry Place or Florida One Park Tower.",
-  "accessed": "2026-11-01"
+  "accessed": "2026-11-01",
+  "scope": "Paired south pool furniture/planting and both west tennis enclosures; preserve existing pools, towers, guest interiors and mapped roads.",
+  "uncertainties": [
+    "Exact furniture and planting counts reduced/inferred.",
+    "Court fencing height and gate locations inferred; current tennis/pickleball repainting not verified.",
+    "Arrival canopy and detailed tower crown require further matched references, deferred in this pass."
+  ],
+  "redistributableAssets": "Original geometry/material colors;8 trees reuse existing CC0 Poly Haven tree_small_02 via tools/foliage/models/tree-2.glb. No source foliage edits or reference pixels."
 }

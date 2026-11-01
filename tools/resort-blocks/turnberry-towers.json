@@ -7,13 +7,27 @@
       "provider": "Google Earth",
       "imagery": "2022-11-09 to 2024-03-05",
       "establishes": "Paired curved white towers, blue glazing, balcony bands, shared rear podium, pools and tennis courts."
+    },
+    {
+      "url": "https://swedroe.com/projects/turnberry-towers/",
+      "provider": "SwedroeArchitecture",
+      "accessed": "2026-11-01",
+      "establishes": "Primary aerial photograph personally inspected: pairedpools,tenniscourts,loungers,palmsandcentralarrival."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14028,-115.15268&heading=0&pitch=5",
+      "provider": "GoogleStreetView",
+      "imagery": "Jan2026",
+      "accessed": "2026-11-01",
+      "establishes": "Densepalms/broadleaf trees andpicketfencefrontage,personallyinspected."
     }
   ],
   "remaining": [
-    "Planting, pool furniture, tennis fencing, arrival canopies and detailed entrance finishes remain unimplemented.",
-    "Front facade white piers and exact crown subdivision still need closer matched reference comparison.",
-    "No full public-route traversal; main tower colliders and guest rooms preserved.",
-    "Corrected pool courts inspected inside site; no overlap with Karen Avenue or central arrival drive."
+    "Arrival canopies and detailed entrance finishes remain deferred: this pass is scoped to the paired pool and tennis courts.",
+    "Front facade white piers and exact crown subdivision need closer matched reference comparison; existing tower geometry is preserved.",
+    "No full public-route traversal; main tower colliders and guest rooms are preserved. Scoped pool/court routes are recorded separately.",
+    "Furniture and planting density are reduced; positions and3m tennis fences/2.4m open gates are inferred, not surveyed.",
+    "South tennis court is labeled tennis/pickleball in current aerial; exact repainting not verified, existing tennis lines preserved."
   ],
   "geometry": {
     "triangles": 106889,
@@ -45,5 +59,15 @@
   "tests": {
     "typecheck": "passed",
     "threeViews": "All front/rear/aerial views and corrected court view inspected."
+  },
+  "amenityPass": {
+    "status": "installed-preview-under-review",
+    "record": "docs/project-records/turnberry-towers-amenities",
+    "authoredTriangles": 9202,
+    "addedCollisionTriangles": 480,
+    "preservedNodes": 17,
+    "preservedCollisionTriangles": 1289,
+    "foliage": "12originalpalms and8existingCC0PolyHaventrees fromtools/foliage/models/tree-2.glb;sourceunchanged.",
+    "walk": "16 normal movement segments passed; all 12 endpoint captures personally inspected. Final grass clipping is non-colliding; routes unchanged."
   }
 }
