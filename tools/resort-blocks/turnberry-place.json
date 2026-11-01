@@ -11,12 +11,25 @@
       "provider": "Google Earth",
       "imagery": "2022-11-09 to 2024-03-05",
       "establishes": "Four straight diagonal tower slabs, rounded corner terraces, pale blue curved crowns and red tiled central clubhouse; visually inspected."
+    },
+    {
+      "url": "https://thestirlingclub.com/wp-content/uploads/2026/07/stirling-hero-poster.webp",
+      "provider": "The Stirling Club official photograph",
+      "establishes": "Compass motif, rounded pool, palms, lounger rows, red-roof clubhouse; personally inspected. Photo date not established."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1375,-115.1546&heading=270&pitch=0",
+      "provider": "Google Street View",
+      "imagery": "February 2026",
+      "establishes": "Three-arch cream gatehouse, clock tower and tiled caps; personally inspected."
     }
   ],
   "remaining": [
-    "Pool, planting, arrival canopies and detailed clubhouse portals unfinished.",
-    "Exact facade subdivisions and roof crown shape require further matched-angle refinement.",
-    "Public circulation and terrace access not traversed; existing guest cores unchanged."
+    "Exact facade subdivisions and roof crown shape need matched-angle refinement; all four existing towers are preserved.",
+    "Clubhouse interior and detailed doorway connections remain unmodeled; no private internal plan was inferred.",
+    "Landscape density and court furniture are reduced, with photo-fitted dimensions rather than a survey.",
+    "Pool uses a shallow raised basin to preserve mapped ground; realistic swimming depth and full site circulation remain deferred.",
+    "Tennis/pickleball courts and complete perimeter landscaping are outside this pool-and-arrival pass."
   ],
   "geometry": {
     "triangles": 344219,
@@ -38,5 +51,16 @@
   "tests": {
     "typecheck": "passed",
     "visual": "All three final installed views inspected. Solid sections improved; exact crown, club massing and gardens remain approximate."
+  },
+  "amenityPass": {
+    "status": "installed-preview-under-review",
+    "record": "docs/project-records/turnberry-place-amenities",
+    "authoredTriangles": 7778,
+    "addedCollisionTriangles": 2244,
+    "preservedNodes": 22,
+    "preservedCollisionTriangles": 0,
+    "scope": "Central compass pool/deck/ramp/furniture/planting and three-arch arrival clock gatehouse; four towers unchanged.",
+    "normalWalk": "12 segments PASS; all 8 endpoint captures personally inspected. Four added arrival trunks are outside these routes and checked separately by packed collision audit.",
+    "waterLimitation": "Opaque existing water hides basin-floor graphics, so compass motif is rendered at water surface; not an underwater optical simulation."
   }
 }
