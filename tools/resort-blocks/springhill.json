@@ -1,6 +1,6 @@
 {
   "id": "springhill",
-  "status": "active",
+  "status": "refinement-deferred",
   "references": [
     {
       "url": "https://www.marriott.com/en-us/hotels/laspr-springhill-suites-las-vegas-convention-center/photos/",
@@ -14,15 +14,14 @@
     }
   ],
   "remaining": [
-    "Finish installed walk, visual, optimization, bake and package gates.",
     "The photographed east arrival does not yet connect to the existing generic west lobby; preserve current guest interiors in this pass.",
     "Exact surveyed dimensions, unseen elevations and continuous guest-lift-to-roof access remain unestablished.",
     "Rooftop mural is not reproduced; furniture placement is inferred from official images."
   ],
   "geometry": {
-    "triangles": 17494,
-    "batches": 15,
-    "optimizedMiB": 0.27
+    "triangles": 19595,
+    "batches": 22,
+    "optimizedMiB": 0.53
   },
   "estimates": {
     "towerHeightM": 74,
@@ -33,7 +32,10 @@
   "evidence": [
     "build/city-exteriors/springhill-before",
     "build/city-exteriors/springhill-after",
-    "build/city-exteriors/springhill-final"
+    "build/city-exteriors/springhill-final",
+    "build/city-exteriors/springhill-refinement-before",
+    "build/city-exteriors/springhill-refinement-after",
+    "build/city-exteriors/springhill-refinement-walk"
   ],
   "tests": {
     "typecheck": "passed",
@@ -50,9 +52,15 @@
     "way/313762434"
   ],
   "refinementSources": "docs/project-records/springhill-refinement/references.json",
-  "authoringStatus": "Source review and matching baseline complete; targeted installation in progress",
+  "authoringStatus": "Installed visual and movement review complete; final smoke gate running",
   "refinementChecks": {
     "sourceClearance": "PASS: 852 roof floor samples, no body-width obstructions; ground apron floor is checked after installation",
-    "cameraPlacement": "PASS: all four origins outside mapped building volumes"
+    "cameraPlacement": "PASS: all four origins outside mapped building volumes",
+    "visual": "PASS: installed front, arrival, roof and deck daylight views inspected; preserved plain mural wall and inferred furniture layout documented",
+    "performance": "Same four cameras, p95 before 18.6\u201318.8 ms; after 18.5\u201318.8 ms",
+    "cityPreservation": "PASS: 218 visual and 218 collision triangles removed from two owned shells; all other source faces unchanged; only cell 1,-3 changes, 272 other cell files byte-identical",
+    "packing": "PASS: all 1516 mapped collision meshes compared to source; runtime GLBs optimized including WebP; package 1924 present, zero missing/unoptimized",
+    "bake": "PASS: one grouped bake, up-to-date check",
+    "movement": "PASS: 4 routes, 14 segments both directions, including east court, canopy frontage, roof perimeter and preserved west lobby"
   }
 }

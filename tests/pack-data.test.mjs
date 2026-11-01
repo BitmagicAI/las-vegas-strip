@@ -71,12 +71,27 @@ let meshes = 0, dropped = 0, coarse = 0;
 // the mapped city: 1,516 cells
 {
   const json = JSON.parse(fs.readFileSync('build/geographic-strip/city-colliders.json', 'utf8'));
-  const pack = await CollisionPack.decode(bin('build/geographic-strip/city-colliders.bin'));
-  assert.equal(pack.count, json.length);
-  for (let i = 0; i < json.length; i++) {
-    assert.equal(`${pack.cellX[i]},${pack.cellZ[i]}`, json[i].id);
-    const r = check('city ' + json[i].id, pack, i, json[i].vertices, json[i].indices); meshes++; dropped += r.dropped; if (r.step > 1 / 256) coarse++;
+  const manifestPath = 'build/geographic-strip/collision-cells/manifest.json';
+  const files = fs.existsSync(manifestPath)
+    ? JSON.parse(fs.readFileSync(manifestPath, 'utf8')).cells.map(c => 'build/geographic-strip/collision-cells/' + c.file)
+    : ['build/geographic-strip/city-colliders.bin'];
+  const sources = new Map(json.map(row => [row.id, row])), seen = new Set();
+  for (const file of files) {
+    const pack = await CollisionPack.decode(bin(file));
+    for (let i = 0; i < pack.count; i++) {
+      const id = `${pack.cellX[i]},${pack.cellZ[i]}`, source = sources.get(id);
+      assert.ok(source, `unexpected collision cell ${id}`);
+      assert.ok(!seen.has(id), `duplicate collision cell ${id}`); seen.add(id);
+      const r = check('city ' + id, pack, i, source.vertices, source.indices);
+      meshes++; dropped += r.dropped; if (r.step > 1 / 256) coarse++;
+    }
   }
+  assert.equal(seen.size, json.length, 'every source collision cell is present');
+}
+// A targeted city install need not materialize unrelated authoring-only collision packs.
+if (process.argv.includes('--city-collision-only')) {
+  console.log(`city collision packs match their JSON: ${meshes} meshes, ${dropped} collapsed triangles dropped`);
+  process.exit(0);
 }
 // every venue, high-rise, the Sphere and the coaster
 for (const dir of ['build/strip-landmarks', 'build/resort-blocks/cosmo', 'build/resort-blocks/bellagio', 'build/resort-blocks/paris', 'build/highrises', 'build/sphere', 'build/south-strip']) {

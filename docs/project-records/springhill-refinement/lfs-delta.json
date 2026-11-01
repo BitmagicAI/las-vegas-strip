@@ -1,0 +1,51 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-3.bin",
+      "oid": "879c21b4dc57bdc83557436b513332c4c4edac332979243c123aad4f55a82836",
+      "bytes": 658439
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "oid": "49f9c484be7857cff49c1acdfb31eebbb128eabd2855d54d30dfa52562181625",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/geographic-strip/cells/cell-1_-3.glb",
+      "oid": "dbfffc546ea09c56317517dc1ee148b22779b12d3a8ee76a4ea79bebb9f2d510",
+      "bytes": 1624532
+    },
+    {
+      "path": "runtime-assets/geographic-strip/cells/manifest.json",
+      "oid": "648ee17e5409c037376e7ed1a2d642f2a65114e7208b5d7fed6d9ca37fcab8ee",
+      "bytes": 39796
+    },
+    {
+      "path": "runtime-assets/geographic-strip/collision-cells/cell-1_-3.bin",
+      "oid": "e06101a13c659f8646cb67d0058b50316b493361fb9d7f783a08f6af2ce8c9b1",
+      "bytes": 200664
+    },
+    {
+      "path": "runtime-assets/geographic-strip/collision-cells/manifest.json",
+      "oid": "f0b059520ecf2e11ba6d53580a1215120062865332e15c49b3414f93a67fb242",
+      "bytes": 17609
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/springhillExterior-exterior-collision.bin",
+      "oid": "120406c6a728ab7e44020d6ba0da047b984c33a38013895232bc6931b3318070",
+      "bytes": 1384
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/springhillExterior-exterior.glb",
+      "oid": "693cb393e154556413cf1376788d1ebf3f8dd0c01bd9ce29995a93863dda2556",
+      "bytes": 555516
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/venues.bin",
+      "oid": "437d3e3850726655c0ce3dd158798b7a74c46563294e204a66072bedc480fc16",
+      "bytes": 393430
+    }
+  ],
+  "totalBytes": 3505171,
+  "objects": 9
+}

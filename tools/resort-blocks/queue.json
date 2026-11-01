@@ -221,8 +221,12 @@
     {
       "id": "springhill",
       "name": "SpringHill Suites",
-      "status": "active",
-      "record": "springhill.json"
+      "status": "refinement-deferred",
+      "record": "springhill.json",
+      "deferral": {
+        "date": "2026-10-31",
+        "reason": "Arrival and roof furniture pass inspected; east lobby connection, surveyed dimensions, mural and continuous lift access remain documented."
+      }
     },
     {
       "id": "trump",

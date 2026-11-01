@@ -2928,13 +2928,14 @@
    "id": "ext-springhill",
    "title": "Refine the exterior of SpringHill Suites",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Exact arrival facade/signage and canopy require further fit.",
-    "Pool deck furnishings and route traversal unfinished; tower proportions use mapped data."
+    "The photographed east arrival does not yet connect to the existing generic west lobby; preserve current guest interiors in this pass.",
+    "Exact surveyed dimensions, unseen elevations and continuous guest-lift-to-roof access remain unestablished.",
+    "Rooftop mural is not reproduced; furniture placement is inferred from official images."
    ],
    "record": "tools/resort-blocks/springhill.json",
    "buildings": [
@@ -2954,10 +2955,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/springhill_exterior.py",
+     "tools/city-exteriors/check-springhill-refinement-preservation.py",
+     "tools/city-exteriors/install-springhill-refinement.py",
      "tools/highrises/catalog.py",
-     "tools/highrises/interiors.py",
-     "tools/highrises/report.py",
-     "tools/strip-landmarks/build_springhill.py"
+     "tools/strip-landmarks/springhill_arrival_deck.py",
+     "tools/highrises/interiors.py"
     ]
    },
    "acceptance": [
