@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-10-31",
+ "revision": "2026-11-01",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-10-31.tar.gz",
+  "name": "las-vegas-strip-assets-2026-11-01.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
- "count": 1926,
- "bytes": 1188086598,
+ "count": 1928,
+ "bytes": 1188376748,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1521291,
-   "sha256": "2b9323e9b3ff4150a5932a8cf982e48941d2ef9d18a26f77d813bfd454dee56f",
+   "bytes": 1537029,
+   "sha256": "9ca11888e9d42b49a79ea7a2bd847fff2ef0acf21d2444c7459f40e6cce3f790",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "3267ea9f012bd6767a8cf5b1004a6243e441560688d6de56b32db1efd32d152c",
+   "sha256": "b1230c8038a363bd5b1e817d64b7bfcd010b089c646aebe89fd1559363ba2769",
    "kind": "runtime cell manifest"
   },
   {
@@ -8435,6 +8435,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/flamingoGoPool-exterior-collision.bin",
+   "bytes": 22084,
+   "sha256": "41117abb403f7cad859ae7528285be2f1e539cd07a5763f15e570c161aa12daa",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/flamingoGoPool-exterior.glb",
+   "bytes": 251972,
+   "sha256": "ce8ec4aadb178e7e027c02495897c46cd7b853244aeab3227045b75d92e1cca6",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/flex-twain-exterior-collision.bin",
    "bytes": 320,
    "sha256": "8860acf85b82ee439690d69e57371690b870d4610d8b23427641e8cd11c63d99",
@@ -11328,8 +11340,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 393704,
-   "sha256": "622b4b77fa950c682b95c2652ef8e5691abf131a1b97b7134be18fb62d956c58",
+   "bytes": 394060,
+   "sha256": "b98dd66a8c0e36249c6f4285f5451f8eee20f77cdc71b2b3c0562bca889496a1",
    "kind": "original"
   },
   {

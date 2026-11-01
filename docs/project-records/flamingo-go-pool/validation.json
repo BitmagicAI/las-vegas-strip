@@ -1,0 +1,22 @@
+{
+  "typecheck": "PASS",
+  "applicableTests": {
+    "passed": 3,
+    "files": [
+      "tests/ground-surface-index.test.mjs",
+      "tests/site-lights.test.mjs",
+      "tests/city-lazy-lod.test.mjs"
+    ]
+  },
+  "sourceAudit": "PASS:13018 triangles,6431 collision triangles,zero degenerates,six neighbor files unchanged",
+  "packedCollision": "PASS:3228 samples",
+  "movement": "PASS:8 segments;6endpoint images inspected,southreturn faces retainedwall",
+  "review": "PASS",
+  "public": "PASS:one pre-existing contact-address warning",
+  "bake": "PASS:single invocation completed",
+  "runtimeCheck": "PASS:1 changed GLB,0 not optimized",
+  "package": "PASS:1928 present,0 missing,0 not optimized",
+  "smoke": "PASS:9 stops,0 failed requests/page/console errors",
+  "finalViews": "PASS:all4 matching daylight images personally inspected",
+  "archive": "589 evidence files,200.7MB"
+}

@@ -1,0 +1,33 @@
+{
+  "newLfsBytes": 2218946,
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_-1.bin",
+      "bytes": 1537029
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/flamingoGoPool-exterior-collision.bin",
+      "bytes": 22084
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/flamingoGoPool-exterior.glb",
+      "bytes": 251972
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/venues.bin",
+      "bytes": 394060
+    }
+  ],
+  "unchangedCellFiles": 276,
+  "totalCellFiles": 278,
+  "changedCellFiles": [
+    "runtime-assets/baked/cells/cell-0_-1.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "geographicExportRuns": 0,
+  "bakeRuns": 1
+}
