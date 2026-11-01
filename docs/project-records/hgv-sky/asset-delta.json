@@ -1,0 +1,35 @@
+{
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-4.bin",
+      "bytes": 406874
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/hgvExterior-exterior-collision.bin",
+      "bytes": 3784
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/hgvExterior-exterior.glb",
+      "bytes": 871312
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/skyExterior-exterior-collision.bin",
+      "bytes": 408
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/skyExterior-exterior.glb",
+      "bytes": 247336
+    }
+  ],
+  "newLfsBytes": 1543515,
+  "cellFilesCompared": 278,
+  "cellFilesChanged": [
+    "runtime-assets/baked/cells/cell-1_-4.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "unchangedCellFiles": 276
+}

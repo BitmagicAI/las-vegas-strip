@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1926,
- "bytes": 1174232594,
+ "bytes": 1174857958,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -366,8 +366,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-4.bin",
-   "bytes": 392534,
-   "sha256": "0d25197e4f96771039c89698cd5214a9455fbd224cc67907d96bc22577aecae2",
+   "bytes": 406874,
+   "sha256": "2e28968f7298b56663e05632700d3dbff3fedc3a7d4b073193c30f3a2ef35cdd",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "e4b184464d9dc03a18b00b7cede535c54f2e5644f471d863e9eccc27b1c1d04e",
+   "sha256": "8cd4a098473a03b70bb870f38213373b98fafe4ba3e07347ec2f7e098b221d8e",
    "kind": "runtime cell manifest"
   },
   {
@@ -8796,14 +8796,14 @@
   },
   {
    "path": "build/strip-landmarks/hgvExterior-exterior-collision.bin",
-   "bytes": 2816,
-   "sha256": "b305627337ca4a57ac644905a440f1cdc6cf218af003a08bdf22320eb863da53",
+   "bytes": 3784,
+   "sha256": "0d414f64ee67bd28e53299980b3933947b55f33dc59d3815fe3daff58bf13649",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/hgvExterior-exterior.glb",
-   "bytes": 278700,
-   "sha256": "2d706bb6bb390cf54b9c608e6775e7c3a0e48ed66a7a49c6ea389dd4fa0fa02e",
+   "bytes": 871312,
+   "sha256": "112922d5d589103b2254445448540ce999ff7bdd4671b9404584007a106d12d0",
    "kind": "optimized"
   },
   {
@@ -10740,14 +10740,14 @@
   },
   {
    "path": "build/strip-landmarks/skyExterior-exterior-collision.bin",
-   "bytes": 48,
-   "sha256": "30d17a65bea876b0a62c957514cd908f9eaa843e0345166fff89019b871a53a1",
+   "bytes": 408,
+   "sha256": "501f789afd862cde92522d7f248ee8552a8853ed2108302dc10d7024fad5e4e3",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/skyExterior-exterior.glb",
-   "bytes": 230252,
-   "sha256": "4ce695ce5ea6675a4336d946e06582d92a9f0318f6a43e5a58b07f6e926c63eb",
+   "bytes": 247336,
+   "sha256": "eb9a7b1e5937c895f829f06c128d7f76f6234935ddd7b9ed12ed089bfdc58864",
    "kind": "optimized"
   },
   {

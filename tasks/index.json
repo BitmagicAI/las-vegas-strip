@@ -2620,10 +2620,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Planting, arrival court landscaping, precise signage and portico are unfinished.",
-    "Pool placement is photographic estimate, not survey-certified; collision access traversal still unverified.",
+    "Arrival court landscaping, precise signage and portico are unfinished; this pass concentrates on the existing rear pool court.",
+    "Pool placement remains a photographic estimate, not survey-certified. Ten route segments across this grouped pass were walked; continuous guest-lobby-to-pool access remains unverified.",
     "Existing guest core preserved with 24 floors to fit 90m wing; no tall-wing interior authored.",
-    "Final front aerial and pool court inspected. Court remains visually sparse; planting and precise fitted outlines unfinished."
+    "Pool court now has original shade, seating, urns and palms; garden density, exact furniture counts, pool edges and planting species still differ from references."
    ],
    "record": "tools/resort-blocks/hgv-boulevard.json",
    "buildings": [
@@ -2674,9 +2674,9 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Precise curved corners and penthouse roof forms still differ from reference.",
-    "Pool terrace, entrance fittings and landscaping are not finished.",
-    "Corrected aerial and both street views inspected. Main mass improved; curved corner/penthouse and full-site detail remain.",
-    "Public routes and balcony access not traversed."
+    "Pool terrace and dense landscaping remain unfinished. Arrival guardhouse/canopy/islands are now installed approximate interpretations; precise branding, metal gates, planting and finish detail remain incomplete.",
+    "Prior aerial and street massing retained; exact canopy/guardhouse dimensions and frontage registration are photo-estimated.",
+    "Both entry lanes traversed out/back with ordinary movement; all other public routes and private balcony access remain unverified."
    ],
    "record": "tools/resort-blocks/sky.json",
    "buildings": [
@@ -2702,10 +2702,10 @@
     "builders": [
      "tools/strip-landmarks/export.py",
      "tools/strip-landmarks/sky_exterior.py",
+     "tools/strip-landmarks/hgv_sky_detail.py",
      "tools/strip-landmarks/venetian_materials.py",
      "tools/level/resort_interiors.py",
-     "tools/level/citycenter.py",
-     "tools/strip-landmarks/build.py"
+     "tools/level/citycenter.py"
     ]
    },
    "acceptance": [

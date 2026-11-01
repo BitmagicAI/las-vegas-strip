@@ -72,4 +72,6 @@ def exterior(B):
   F.box('ph-awning',(0,.42,0),(.68,.13,1.95));F.box('ph-metal',(0,.3,0),(.72,.08,2))
   for xx in [-.28,.28]:F.box('ph-metal',(xx,.14,.1),(.035,.28,1.65))
   B.face('ph-awning',[F.p(-.34,.49,-.3),F.p(.34,.49,-.3),F.p(.34,.95,-.94),F.p(-.34,.95,-.94)])
+ from hgv_sky_detail import hgv_detail
+ hgv_detail(B)
  return dict(key=KEY,name='Hilton Grand Vacations Boulevard exterior',center=[1100,0,-2660],bounds=[985,-2800,1170,-2560],building='hgv-boulevard',structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

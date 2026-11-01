@@ -1,0 +1,16 @@
+{
+  "typecheck": "PASS",
+  "scopedTests": "PASS3/3",
+  "geometry": "PASS15Hilton+9Sky groups, labels and prior collision preserved",
+  "staticRoutes": "PASS1191samples,39terrain/roadfloor locations verified by normal walking",
+  "normalWalk": "PASS10segments,6endpointimages inspected",
+  "optimization": "PASSbothmodels level+WebP installed",
+  "recordReview": "PASS",
+  "publicCheck": "PASSpreexisting inventory emailwarning only",
+  "runtimeModels": "PASS2changedGLBs,0unoptimized",
+  "bake": "PASScurrent,onebake,zero geographicexports",
+  "package": "PASS1926present,0missing,0unoptimized",
+  "installedViews": "PASS6finalsamecamera daylight views personally inspected",
+  "smoke": "PASS9stops,0failedrequests,0pageerrors,0consoleerrors,0unplaced",
+  "release": "CDN/publishedcoldload reserved for owner release"
+}
