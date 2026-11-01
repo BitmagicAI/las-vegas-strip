@@ -1,0 +1,35 @@
+{
+  "task": "ext-mirage",
+  "issue": 47,
+  "claimed": true,
+  "scope": "Historical Mirage public covered arrival: replace the existing flat canopy with reference-supported hip pavilions, exposed roof framing and stone columns. Preserve other resort geometry and roads; dimensions and circulation need installed baseline fit.",
+  "sources": [
+    {
+      "url": "https://casino.hardrock.com/las-vegas/-/media/project/shrss/hri/casinos/hard-rock/las-vegas/pdf/property/mirage-property-map.pdf?rev=0b7493395f0b4b51b056fefe61b1ac83",
+      "observed": "Official former resort map text read: main entrance connects valet/taxi to atrium/front desk; volcano on frontage, Rhumbar by south entrance, pool and gardens behind. Visual PDF inspection pending.",
+      "accessNote": "Search index exposes historical PDF text, but direct fetch currently returns HTML rather than PDF. Do not claim visual inspection; use dated Street View and another historical map source."
+    },
+    {
+      "url": "https://prod.wetdesign.com/creations/mirage-volcano",
+      "observed": "Primary designer text inspected:120 FireShooters across3-acre lagoon, tallest50ft eruption. Page footer saysMay1996 while descriptive text discusses redesign; do not infer acquisition date. First official photo personally inspected: night eruption, layered coarse rock facade around broad crater, foreground fire devices in water; date not exposed."
+    },
+    {
+      "url": "https://assets.wetdesign.com/images/creations/usa/landscape/mirage_0.jpg",
+      "observed": "Personally inspected official designer photo; nighttime lighting limits daylight colour/section inference."
+    },
+    {
+      "url": "https://assets.wetdesign.com/images/creations/usa/landscape/mirage_12.jpg",
+      "observed": "Personally inspected official designer wide photo: eastern-facing rough layered rock escarpment with multiple short cascading channels/pools, palms between arrival canopy and volcano. Night lighting and unknown date limit exact colour/dimension inference."
+    },
+    {
+      "url": "https://assets.wetdesign.com/images/creations/usa/landscape/mirage_5.jpg",
+      "observed": "Personally inspected: fire plume and palm crowns only; little usable rock geometry detail."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Wh0Q7DTIOGHG30WF9B-lWw&heading=270&pitch=5",
+      "date": "December 2022",
+      "observed": "Personally inspected west and east facing panoramas in preceding checkpoint. Warm brown hip pavilion roofs with exposed rafters, pale perimeter beam grid and open skylight gaps, irregular cream stone columns, salmon shutter panels and central glass doors. Raised planted median with palms through roof openings separates carriageways. Exact extent needs baseline fit; no road rewrite."
+    }
+  ],
+  "base": "1ee00b7"
+}
