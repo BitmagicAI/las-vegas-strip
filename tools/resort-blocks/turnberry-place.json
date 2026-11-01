@@ -53,7 +53,7 @@
     "visual": "All three final installed views inspected. Solid sections improved; exact crown, club massing and gardens remain approximate."
   },
   "amenityPass": {
-    "status": "installed-preview-under-review",
+    "status": "installed-verified-refinement-deferred",
     "record": "docs/project-records/turnberry-place-amenities",
     "authoredTriangles": 7778,
     "addedCollisionTriangles": 2244,
@@ -61,6 +61,16 @@
     "preservedCollisionTriangles": 0,
     "scope": "Central compass pool/deck/ramp/furniture/planting and three-arch arrival clock gatehouse; four towers unchanged.",
     "normalWalk": "12 segments PASS; all 8 endpoint captures personally inspected. Four added arrival trunks are outside these routes and checked separately by packed collision audit.",
-    "waterLimitation": "Opaque existing water hides basin-floor graphics, so compass motif is rendered at water surface; not an underwater optical simulation."
+    "waterLimitation": "Opaque existing water hides basin-floor graphics, so compass motif is rendered at water surface; not an underwater optical simulation.",
+    "daylight": "All four final installed matching daylight views personally inspected; front, pool, arrival, overview.",
+    "performance": "Matching 960x540 ultra medians 16.6\u201316.7 ms; p95 17.3\u201317.5 ms versus baseline 18.0\u201318.5 ms. Local fixed-camera sample only.",
+    "storage": {
+      "newLfsBytes": 7497050,
+      "objects": 4,
+      "unchangedCellFiles": 276,
+      "totalCellFiles": 278,
+      "bakes": 1
+    },
+    "checks": "All step 7 local gates PASS; nine smoke stops placed, zero request/page/console errors."
   }
 }
