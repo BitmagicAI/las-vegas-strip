@@ -32,11 +32,44 @@
       "accessed": "2026-10-31",
       "observed": "Broker identifies 19,127 SF building on 24,394 SF lot, built 1970; downloadable property brochure available, not yet inspected.",
       "brochureStatus": "Linked PDF returned HTTP410 through browser fetch and direct download; use available Street View and listing photographs without waiting."
+    },
+    {
+      "url": "https://highlandsteellv.com/",
+      "observed": "Official address 2621 S Highland; steel/ornamental stock and customer service. Does not establish the whole mapped building occupancy."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1419712,-115.1699528,3a,90y,270h,90t/data=!3m7!1e1!3m5!1spttzYBKm_8nqMozAy4wicg!2e0",
+      "imageDate": "January 2026",
+      "observed": "Low cream/yellow Highland Steel storefront with customer entrance, barred displays and large delivery opening. Adjoining south Creel warehouse is tall beige masonry with blue-grey recessed vertical bands/cap; palms and evergreen at frontage. Business pin lies on forecourt; footprint99 is low strip and100 is taller south complex."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Highland+Steel+%26+Ornamental+Supply/",
+      "photoId": "CIHM0ogKEICAgIDUsfvntgE",
+      "author": "Angel Alfonso",
+      "imageDate": "August 2019",
+      "observed": "Warehouse aisle, low concrete ceiling with strip fixtures/conduit, rows of steel stock; not evidence that all warehouse areas are public."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Highland+Steel+%26+Ornamental+Supply/",
+      "photoId": "CIHM0ogKEICAgIDUsfvTnQE",
+      "author": "Angel Alfonso",
+      "imageDate": "August 2019",
+      "observed": "Blue display board carrying light ornamental gate samples and SERVICE COUNTER arrow; supports customer-facing display use, not full floor-plan dimensions."
     }
   ],
   "next": [
     "Verify issue439 claim before authoring; branch from current origin/next after438 merges.",
     "Inspect broker brochure alongside dated Street View to confirm height break and service elevations.",
     "Group nearby claimed buildings when supported by references; no uploads."
-  ]
+  ],
+  "groupMappedIds": [
+    "way/464694101",
+    "way/464694099",
+    "way/464694100"
+  ],
+  "claims": [
+    439,
+    441
+  ],
+  "pullRequest": 440
 }

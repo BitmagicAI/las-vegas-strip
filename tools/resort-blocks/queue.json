@@ -1880,7 +1880,13 @@
       "name": "2601 Westwood and separate south building",
       "status": "refinement-deferred",
       "record": "westwood-2601.json"
+    },
+    {
+      "id": "westwood-commercial",
+      "name": "2650 Westwood, Highland Steel and Creel",
+      "status": "active",
+      "record": "westwood-commercial.json"
     }
   ],
-  "active": "westwood-2601"
+  "active": "westwood-commercial"
 }
