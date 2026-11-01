@@ -13,6 +13,6 @@ def pt(q):
  x,y,z=q;return (x,-z,y)
 bpy.ops.object.camera_add();cam=bpy.context.object;s.camera=cam;cam.data.lens=28
 s.render.resolution_x=960;s.render.resolution_y=640;s.render.resolution_percentage=100;s.view_settings.view_transform='AgX'
-views=([['front',[-18,3,-422],[65,11,-390]],['pool',[177,120,-306],[167,8.6,-345]],['deck',[164,10.3,-332],[183,8.6,-346]]] if key=='harrahs' else [['front',[-16,3,-274],[40,17,-251]],['pool',[245,85,-190],[246,17,-227]],['deck',[215,18.7,-213],[234,17.5,-227]]])
+views=([['front',[25,3,-405],[65,11,-390]],['pool',[177,120,-306],[167,8.6,-345]],['deck',[164,10.3,-332],[183,8.6,-346]]] if key=='harrahs' else [['front',[12,3,-250],[40,17,-251]],['pool',[245,85,-190],[246,17,-227]],['deck',[215,18.7,-213],[234,17.5,-227]]])
 for name,eye,target in views:
  cam.location=pt(eye);cam.rotation_euler=(Vector(pt(target))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.lens=22 if name=='lobby' else 28;s.render.filepath=str((out/(name+'.png')).resolve());bpy.ops.render.render(write_still=True)

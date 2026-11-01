@@ -12,8 +12,8 @@ const press=on=>document.dispatchEvent(new KeyboardEvent(on?'keydown':'keyup',{c
 const results=[];
 try{
  for(let k=1;k<walk.length;k++){
-  const goal=walk[k];let reached=false;const start=performance.now();
-  while(performance.now()-start<30000){
+  const goal=walk[k];let reached=false;const start=performance.now(),origin=probe.position(),timeout=10000+1000*Math.hypot(goal[0]-origin.x,goal[2]-origin.z)/1.5;
+  while(performance.now()-start<timeout){
    const p=probe.position(),dx=goal[0]-p.x,dz=goal[2]-p.z;
    if(Math.hypot(dx,dz)<.35){reached=Math.abs(p.y-goal[1])<.45;break;}
    probe.look(Math.atan2(-dx,-dz),0);press(true);await frame();

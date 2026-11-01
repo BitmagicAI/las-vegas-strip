@@ -6,3 +6,8 @@ Official photographs personally inspected; Google aerial locates both courtyards
 
 ## Optimized installation
 All six source views inspected. Corrected downward-facing new floor and existing Harrahs roof overlap before installation. Lounger bases refined to open legs; final source route audit still passes6252 samples. Two models optimized including WebP (~3.10MiB Harrahs,11.61MiB LINQ); targeted collision packing and typecheck pass. Grouped bake now running (/tmp/hl-bake.log), no geographic export necessary because mapped city faces unchanged. Do not restart bake or change its inputs while active. Next: installed six-view captures/performance, normal perimeter and retained-lobby walks, smoke, package/LFS checks, ready/merge443 andclose22/23.
+
+## Installed review and camera correction
+One grouped bake finished; only LOD cell0,-1 and its manifest changed,276 other cell files byte-identical. Package1924present/0missing/0unoptimized; both changed runtime GLBs pass. Six installed views inspected. Initial Harrahs front was occluded by custom Forum Shops geometry despite the mapped-volume audit; moved both front cameras to clear street positions and recapturing actual baseline/current assets at identical cameras. Pool/deck cameras unchanged.
+
+The first normal walk exceeded30seconds on long deck segments while still moving (~2m/s); both lobby routes passed. Walking probe now allows distance/1.5mps plus10seconds. This is a test timeout correction, not a geometry fix; final rerun pending. Original failed results retained. No extra bake or geographic export.
