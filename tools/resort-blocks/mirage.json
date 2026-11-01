@@ -46,7 +46,7 @@
     "build/city-exteriors/mirage-site-final"
   ],
   "arrivalPass": {
-    "status": "installed-preview-verification-in-progress",
+    "status": "installed-locally-verified",
     "issue": 47,
     "pullRequest": 456,
     "source": "tools/strip-landmarks/mirage_arrival.py",
@@ -54,10 +54,15 @@
     "before": "build/city-exteriors/mirage-arrival-before",
     "preservation": "docs/project-records/mirage-arrival/preservation.json",
     "dimensions": "Existing 17x28m footprint retained, eave6.35m/ridge8.5m and column/rafter sections inferred. No road or entrance ownership change.",
-    "review": "Four baseline and four preview daylight views personally inspected. Hip pavilion roofs, open beam grid, exposed rafters and stone columns visible; existing glass entrance and drive retained. Final removes two inferred hotel-side columns to avoid adding collision within the existing facade. Exact broader median and hotel-side canopy construction deferred.",
+    "review": "Four final packaged daylight views personally inspected, plus four baseline/preview and two detail views. Clear covered roadway, exposed rafters and stone columns; original hotel entrance preserved. Six normal walking segments/807packedcollision samples pass. Similar median performance but canopy/south p95 tails slower; no no-regression claim.",
     "geometry": "docs/project-records/mirage-arrival/geometry.json",
     "collision": "docs/project-records/mirage-arrival/collision.json",
     "walking": "docs/project-records/mirage-arrival/normal-walk.json",
-    "detail": "build/city-exteriors/mirage-arrival-detail-final"
+    "detail": "build/city-exteriors/mirage-arrival-detail-final",
+    "after": "build/city-exteriors/mirage-arrival-after-final",
+    "performance": "docs/project-records/mirage-arrival/performance-comparison.json",
+    "assets": "docs/project-records/mirage-arrival/asset-delta.json",
+    "smoke": "docs/project-records/mirage-arrival/smoke.json",
+    "checks": "docs/project-records/mirage-arrival/checks.json"
   }
 }
