@@ -29,9 +29,10 @@ def detail(B):
    B.face('fb-entry-water',[F.p(x,y,depth),F.p(x,y+.09,depth-.025),F.p(x+.103,y+.09,depth-.025),F.p(x+.103,y,depth)])
  B.detail=0
  # Original bowtie silhouette (two flared trapezoids), projected off panel.
- def bowtie(x,y,z,s):
+ def bowtie(x,y,z,s,curved=False):
   for side in [-1,1]:
    pts=[(x+side*.03*s,y-.09*s,z),(x+side*.03*s,y+.09*s,z),(x+side*.45*s,y+.28*s,z),(x+side*.45*s,y-.28*s,z)]
+   if curved:pts=[(px,py,3-.48*math.sqrt(15.26**2-px**2)) for px,py,pz in pts]
    B.face('fb-entry-gold',[F.p(*p) for p in (pts if side>0 else reversed(pts))])
  bowtie(0,3.3,-.60,1.5)
  # Side entrance glazing is closed facade detail, not a newly claimed portal.
@@ -55,7 +56,7 @@ def detail(B):
    for lo,hi in zip(rings,rings[1:]):
     for k in range(4):B.face('fb-canopy-white',[lo[k],lo[(k+1)%4],hi[(k+1)%4],hi[k]],True)
    B.upface('fb-canopy-white',rings[-1],True)
-  bowtie(side*12.1,5.61,3-7.296*math.sqrt(1-(12.1/15.2)**2)-.05,.75)
+  bowtie(side*12.1,5.61,0,.75,True)
 
 def build():
  base=Path('.bitmagic/city-exterior-backups/fontainebleau-entry')

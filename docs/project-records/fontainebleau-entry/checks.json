@@ -1,0 +1,17 @@
+{
+  "typecheck": "PASS",
+  "scopedTests": "PASS3/3 ground-surface-index,site-lights,city-lazy-lod",
+  "geometry": "PASS29priorgroups/labels/collisionpreserved;7904validaddedtriangles",
+  "collision": "PASS612staticclearance/headroomsamples;241terrain/roadfloorlocationsvalidatedbyruntimewalking",
+  "canopy": "PASS96roof/127clear/20solidpositions",
+  "normalWalk": "PASS8segments including both returns;4endpointimagesinspected",
+  "optimization": "PASS level thenWebP2.45MiB\u21920.73MiB;collisionpacked",
+  "recordReview": "PASS",
+  "publicCheck": "PASS pre-existing inventoryemailwarningonly",
+  "bake": "PASS current;one bake;zero geographicexports",
+  "package": "PASS1926present/0missing/0unoptimized",
+  "finalViews": "PASS five installed daylight views personally inspected, identical before/after cameras",
+  "smoke": "PASS9stops zero failed requests/page errors/console errors/unplaced stops",
+  "release": "CDN/published coldload belongs to release",
+  "runtimeModelCheck": "PASS1changedGLB/0unoptimized"
+}

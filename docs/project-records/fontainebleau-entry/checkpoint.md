@@ -1,9 +1,7 @@
-# Fontainebleau arrival — source and preview
+# Fontainebleau arrival — verified
 
-Claim33assignedjaniverse, draft450, task/ext-fontainebleau fromorigin/next8966f3d. Preserved all prior groups/labels/collision; appended7776validtriangles and100collidertriangles. New original central static rippled waterwall/basin, side closed goldglazing/doorframes, pale flaredsupports and bowtie interpretations. Hooked into normalfullbuilder. Exactdimensions/registration inferred from officiallookbookpage2. No newpublicinteriorclaim.
+Issue33,PR450,task/ext-fontainebleau from origin/next8966f3d. Original arrival staticwaterwall/basin/closedglazing/supports/soffit/emblems installed. All29previousgroups/labels/collision retained;7904newvalidtriangles/188collidertriangles. All localstep7checksPASS (checks.json);5matchingdaylightviews/8normalwalksegments/4endpointimagesinspected;9smokestopszeroerrors.
 
-Five matching baseline views inspected. Initialtower camera obstructed by neighboring building, removed from both viewlists; rejectedcapture retained separately. Level+WebPinstalled,collisionpacked. No citybakeyet. Preview/walkchain active session37942; inspect allfivepreviews and8walkingsegments beforeONEbake. Static612samples passes obstruction/headroom;241terrain/road floor samples absent fromcollisionpack require runtimewalkvalidation. Typecheck/tests session96920.
+Onebake,zero geographicexports. OneLODcell1,-4+manifestchanged;276othercellfilesbyteidentical. FourLFSobjects1,172,775bytes. Performancebefore/afterrecorded;westviewslower17.5→22.5msp95,other four views had lower p95; shared workstation variance. Layout/dimensions/water/reflections remainapproximate;newglazingclosed,notnewpublicinterior. Fullresortgapsretained. Noownerdependency;CDN/publishedcoldloadreleaseonly.
 
-Next fix installed discrepancies/routes beforeonebake, normalizeoptimizermanifestorder, recordreview/publicchecks, stage/final5captures/perf/smoke/package, merge450next/close33 thennexttask. Noownerdependency.
-
-First five installed previews personally inspected and8normalwalksegmentsPASS, all4endpointimagesinspected. Correctedlowsoffitgap andfloatingbowtiepositions; addedclosedglazingcollision. Finalsource7904triangles/188newcollidertriangles,29oldgroups/labels/collisionretained. Static612samplesPASS plus96roof/127clear/20solidcanopychecks. Correctedpreview+walkchain67358active; no bakeyet. Typecheckand3testsPASS.
+Next commit/push verifiedpackage andrecords,verifyonlyowncommits,ready/merge450next,close33,syncnext,picknexttask. Possible groupedHGV38/Sky39 research in /tmp/north-strip-next-research.txt, notclaimed.

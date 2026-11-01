@@ -1,0 +1,32 @@
+{
+  "baselineCellFiles": 278,
+  "unchangedCellFiles": 276,
+  "changedCellFiles": [
+    "runtime-assets/baked/cells/cell-1_-4.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "runtimeFiles": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-4.bin",
+      "bytes": 392534,
+      "sha256": "0d25197e4f96771039c89698cd5214a9455fbd224cc67907d96bc22577aecae2"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "e4b184464d9dc03a18b00b7cede535c54f2e5644f471d863e9eccc27b1c1d04e"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/fontainebleauExterior-exterior-collision.bin",
+      "bytes": 3196,
+      "sha256": "088c5a07dade8136dd7fb3103d839e3d631b8c6dccf70b809aeac2399348226d"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/fontainebleauExterior-exterior.glb",
+      "bytes": 763244,
+      "sha256": "4585a5bd5b3eb16ad4923b464299a1d90a160ca48987cb373bbfb8dbf598a1f5"
+    }
+  ],
+  "newLfsBytes": 1172775,
+  "baselineMethod": "Pre-bake geographic-GLB/LOD hashes plus origin/next LFS collision-cell hashes, excluding geographic access/manifest.bin."
+}
