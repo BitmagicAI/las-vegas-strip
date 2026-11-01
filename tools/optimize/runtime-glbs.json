@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-01T06:37:29.266Z",
- "totalBytes": 3675699788,
- "count": 882,
+ "generated": "2026-11-01T07:07:29.215Z",
+ "totalBytes": 3676441564,
+ "count": 883,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -7973,6 +7973,15 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "streamed on approach",
    "bytes": 1793420,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/flamingoGoPool-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 741776,
    "preset": "level",
    "overrides": []
   }

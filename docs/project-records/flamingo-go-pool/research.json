@@ -7,12 +7,12 @@
       "url": "https://newsroom.caesars.com/press-releases/press-release-details/2025/Pool-Party-Paradise-Flock-to-the-All-New-Go-Pool-at-Flamingo-Las-Vegas-for-Fun-in-the-Sun/default.aspx",
       "date": "2025-05-22",
       "observations": "Official opening release: five pools across nearly1.5acres; main swimup bar canopy and wetdeck; grotto behind50ft raincurtain withDJabove; circularVIP40ft diameter and15ft waterfall; rectangularVIP60ft length; freeformVIPthreewetdecks. Nearly200trees including90palms. South entrance byrideshare.",
-      "inspection": "Text inspected, photographs pending"
+      "inspection": "Official release text inspected; main and circular VIP photographs inspected in linked gallery subfolders."
     },
     {
       "url": "https://drive.google.com/drive/folders/1XKK3sc0mEmelyw8IJs3Hrw-SHEFxfI1_?usp=sharing",
       "description": "Official release linked highresGoPool gallery",
-      "inspection": "Not yet inspected"
+      "inspection": "Linked main and circular VIP subfolders inspected; not an exhaustive gallery review."
     },
     {
       "url": "https://drive.google.com/drive/folders/1CG43jAc7EhlpCCydZWmPR4uD8IokOI9O",
@@ -25,7 +25,51 @@
       "image": "Architecture_Circular VIP Pool_4_Courtesy of Caesars Entertainment.jpg",
       "inspection": "Personally inspected official gallery photograph",
       "observations": "Curved circular edge and shallow submerged bench, white fabric cabanas with pyramidal roofs, dense palms and terraced stone perimeter; white covered structure behind. Exact plan location remains to be matched to aerial."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1162,-115.1701&zoom=19&basemap=satellite",
+      "inspection": "Personally inspected aerial",
+      "observations": "Freeform pool with southern rectangular lap-like extension, tree islands and nearbyroundpool; appears earlier layout than2025officialphotos. Acquisitiondateunknown;copyright2026isnotdatedimagery. Do notcopyoldlayoutascurrent."
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1Z17htrXwvtTtFGCRrhLCQhvyy25PEgLG",
+      "status": "Official Feb2025rendering link returns404; noinspectionclaim."
+    },
+    {
+      "url": "https://booketing.com/microsite/gopool/map/1373/1126/go-pool?eventcode=EVE112600020261031",
+      "provenance": "OfficialCaesarsPoolpage links bookingprovider; mapread-only, no bookingmade",
+      "inspection": "Map redirected to November 1 and reported no items available; no interactive seating-plan inspection or booking.",
+      "labels": "Party Pool,NorthVIP,EastVIP,WestVIP,FamilyPool fromcurrentbookingpage"
+    },
+    {
+      "url": "https://www.bachelorvegas.com/pool-party/images/flamingo/map.png",
+      "inspection": "Personally inspected current-layout seating map",
+      "observations": "Main Party Pool with bar northwest and DJ west; freeform VIP north, rectangular VIP southeast, circular VIP southwest, separate family pool west. Secondary reference, not a surveyed plan."
+    },
+    {
+      "url": "https://www.traveldailynews.com/wp-content/uploads/2025/02/Flamingo-Las-Vegas_GO-Pool.jpg",
+      "inspection": "Personally inspected published design rendering",
+      "observations": "Stepped pink circular bar canopy, DJ canopy above grotto, white cabanas and palms. Design rendering, not as-built photographic evidence."
     }
   ],
-  "existing": "Separate flamingoGarden asset has mapped rotundas/path/pavilions; do not overwrite. Need inspect legacy pool geometry and ownership before scope."
+  "existing": "Existing flamingoGarden, flamingoExterior and HGV private-pool assets preserved byte-identically; new asset occupies previously empty GO Pool parcel.",
+  "baselineTrial": {
+    "views": "build/city-exteriors/flamingo-go-pool-before",
+    "review": "All four trial images inspected; front and west inside existing structures were discarded before modeling. Corrected four-view baseline inspected and retained unchanged for comparisons.",
+    "newBaseline": "build/city-exteriors/flamingo-go-pool-baseline"
+  },
+  "baseline": "Four corrected baseline images personally inspected before geometry authoring.",
+  "inferences": [
+    "World placement and all deck elevations inferred from map/rendering and existing city; not a survey.",
+    "Circular VIP diameter12.192m, rectangle length18.288m, rain-curtain frontage15.24m follow official published dimensions; widths and exact outlines inferred.",
+    "Ground deck1.2m, VIP1.8m and connecting ramps inferred for walkable access. Existing arrival structure retained, ramp starts north of it.",
+    "Pool physical depth limited by retained terrain beneath; no swimming or realistic depth claim."
+  ],
+  "discrepancies": [
+    "Four principal GO Pool basins plus grotto reconstructed; separate family pool not rebuilt in this pass.",
+    "18 bar stools,15 cabanas,22 original palms; full official30 seats/33 cabanas/90 palms not reproduced. Counts and planting need later refinement.",
+    "Static waterfall ribbons, simplified furnishing/planting, no animated rain curtain.",
+    "No public interior added: this task is the exterior pool complex; adjacent existing interiors preserved.",
+    "No whole-resort or photorealistic completion claim."
+  ]
 }
