@@ -1,0 +1,29 @@
+{
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-4.bin",
+      "bytes": 414940
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/allureExterior-exterior-collision.bin",
+      "bytes": 3568
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/allureExterior-exterior.glb",
+      "bytes": 740844
+    }
+  ],
+  "lfsAddedBytes": 1173153,
+  "cellFileCount": 278,
+  "byteIdenticalCells": 276,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell-1_-4.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "sharedBakes": 1,
+  "geographicExports": 0
+}
