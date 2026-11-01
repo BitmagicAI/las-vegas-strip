@@ -14,9 +14,9 @@
     }
   ],
   "remaining": [
-    "Garden planting, exact curved crown profile and entrance furniture incomplete.",
-    "Recess profiles and garage heights are photo estimates.",
-    "Public entrance route walk and pool enclosure unverified."
+    "Crown/recess profiles and garage heights remain photo estimates.",
+    "Exact planting, pool enclosures, raised spa elevations, entry monolith/canopy and indoor spa remain incomplete.",
+    "Public lobby approaches verified in both directions; full public circulation beyond scoped circuits remains unverified."
   ],
   "estimates": {
     "towerM": 101,
@@ -121,5 +121,15 @@
       }
     ]
   },
-  "evidence": "build/city-exteriors/panorama-corrected"
+  "evidence": "build/city-exteriors/panorama-corrected",
+  "amenitiesPass": {
+    "status": "installed-verification-in-progress",
+    "issue": 51,
+    "pr": 467,
+    "record": "docs/project-records/panorama-martin-amenities",
+    "visual": "Four matching installed daylight previews inspected; final baked capture pending.",
+    "collision": "3003 grouped packed route samples PASS; 55 Panorama roof, 29 Martin roof and 306 Martin approach samples PASS. Panorama 24 circuit movement segments and 6 combined retained lobby approach segments passed; corrected Martin loop recheck in progress.",
+    "source": "tools/strip-landmarks/panorama_martin_amenities.py",
+    "bake": "Not yet run."
+  }
 }

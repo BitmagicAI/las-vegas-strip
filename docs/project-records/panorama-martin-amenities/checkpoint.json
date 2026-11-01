@@ -4,11 +4,11 @@
     51,
     52
   ],
-  "status": "installed-preview-verified-walk-running",
-  "sourceTriangles": 4931,
+  "status": "movement-verified-ready-for-single-bake",
+  "sourceTriangles": 4964,
   "degenerateTriangles": 0,
   "checks": {
-    "staticCircuitSamples": 3018,
+    "staticCircuitSamples": 3003,
     "staticUnsupported": 0,
     "panoramaRoofSamples": 55,
     "martinRoofSamples": 29,
@@ -26,5 +26,8 @@
     "Finish normal movement and inspect endpoints",
     "Update block records, one bake, stage and remaining step7 checks",
     "Final matching daylight/performance probes, smoke, archive, LFS delta, merge next and close claims"
-  ]
+  ],
+  "walkReview": "All 12 endpoints and blocked view personally inspected. Panorama two circuits: 24 segments passed. Three retained lobby approaches: 6 segments passed. Martin forward circuit passed; reverse segment12 blocked at x=-868.092,z=836.634 by retained entrance furnishing/canopy area.",
+  "correction": "Martin east tip clearance correction installed with level+WebP. Recheck passed:18 pool circuit segments plus2 retained lobby approach segments; all4 endpoints inspected.",
+  "next": "Single bake, stage, checks, final views/performance and smoke."
 }

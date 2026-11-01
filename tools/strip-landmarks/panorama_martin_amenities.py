@@ -10,6 +10,9 @@ def build(B):
   name=r['name'];martin=name=='martin';key='martinAmenities' if martin else 'panoramaAmenities';B.property=key+'-exterior';B.source=name+'-amenities';B.detail=0
   ids=[M.TOWER]+M.LOW if martin else P.TOWERS+P.GARAGES+P.LOW
   occupied=unary_union([footprint(i) for i in ids]);pool=Polygon(r['pool']);deck=Polygon(r['deck']).buffer(2 if martin else .8,join_style=2).difference(occupied.buffer(.3));x,z=r['anchorWorld']
+  # Preserve the existing streamed lobby planter and its approach clearance.
+  # The aerial-fitted east tip approached that retained furnishing too closely in the reverse walk.
+  if martin:pool=pool.intersection(box(-2000,-2000,-870,2000))
   # Separate spa follows observed aerial placement; exact raised platform elevation deferred.
   sx,sz=(x-8.3,z+6) if martin else (x+9.5,z-18.8) if name.endswith('north') else (x+8,z+17.5)
   spa=box(sx-2,sz-1.7,sx+2,sz+1.7);water=pool.union(spa)

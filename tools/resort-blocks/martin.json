@@ -14,9 +14,9 @@
     }
   ],
   "remaining": [
-    "Detailed planting, canopy and entry-sign alignment remain incomplete.",
-    "Pool layout, lower heights and balcony dimensions are estimated; full public walking routes not verified.",
-    "Reference-level architectural realism remains unfinished."
+    "Detailed garden seating, pool enclosure, entry canopy and sign alignment remain incomplete.",
+    "Fitted pool area approximately 140.86m2 versus official 2000sqft (185.8m2); aerial scale, elevations and exact boundaries unresolved. East tip clipped to preserve existing entrance clearance.",
+    "Lower heights and balcony dimensions remain estimates; full public circulation and reference-level architectural realism unfinished."
   ],
   "estimates": {
     "towerM": 157,
@@ -103,5 +103,15 @@
   "evidence": [
     "build/city-exteriors/martin-after",
     "build/city-exteriors/martin-pool-final"
-  ]
+  ],
+  "amenitiesPass": {
+    "status": "installed-verification-in-progress",
+    "issue": 52,
+    "pr": 467,
+    "record": "docs/project-records/panorama-martin-amenities",
+    "visual": "Four matching installed daylight previews inspected; final baked capture pending.",
+    "collision": "3003 grouped packed route samples PASS; 55 Panorama roof, 29 Martin roof and 306 Martin approach samples PASS. Panorama 24 circuit movement segments and 6 combined retained lobby approach segments passed; corrected Martin loop recheck in progress.",
+    "source": "tools/strip-landmarks/panorama_martin_amenities.py",
+    "bake": "Not yet run."
+  }
 }
