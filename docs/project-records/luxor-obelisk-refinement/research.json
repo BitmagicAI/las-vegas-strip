@@ -11,7 +11,22 @@
     {
       "url": "https://commons.wikimedia.org/wiki/File:Luxor_-_Quinn_Dombrowski.jpg",
       "date": "2019-09-10",
-      "inspection": "Metadata read only; image visual inspection pending."
+      "inspection": "Personally inspected 960px photograph in browser; four north pedestal figures, straight legs and arms beside torso, broad striped headdresses; dark blue raised lettering and fine incised shaft groups."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09568,-115.17308&heading=205&pitch=15",
+      "pano": "5QMGQlgR9FxABOAj48Q8eA",
+      "imageDate": "2024-10",
+      "inspection": "Personally inspected wide and zoomed Street View. Four north pedestal relief figures confirmed; broad headdresses and straight legs/arms. Retain existing tunnel inferred dimensions; no new measured section."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09512,-115.17312&heading=340&pitch=15",
+      "pano": "3j77lIL_I1F9HE8RuyOf_g",
+      "imageDate": "2024-10",
+      "inspection": "Personally inspected wide and zoomed south view. Four pedestal figures; tunnel opening below. Bright sunlight limits small facial detail."
     }
-  ]
+  ],
+  "plannedCorrection": "Correct both north and south relief count from five to four. Refine original silhouette/face/headdress while preserving all tunnel collision and existing height.",
+  "baseline": "All four corrected baseline images personally inspected; separate clean performance run after reference tabs closed.",
+  "previewCorrection": "First preview still showed old model: Blender caught missing procedural stone PNGs but exited0. Recreated only this model's original texture sources and reran exporter with --python-exit-code1. Old preview is not installation evidence."
 }

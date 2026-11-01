@@ -8,11 +8,11 @@
     "docs/project-records/city-exteriors-2026-10-12/luxor-obelisk-research.json"
   ],
   "remaining": [
-    "Sculpted figures remain visibly simplified and rounded; require detailed anatomical relief refinement.",
-    "Incised glyphs are original decorative approximations, not historical transcription.",
-    "Published 140ft height used; exact base clearance and proportions are estimated.",
-    "Surrounding Luxor landscape, sphinx detail and raised walkways remain broader resort discrepancies.",
-    "Static 960x540 capture is not a 60fps driving benchmark."
+    "Fine sculptural facial and robe detail remains an authored approximation; four figures per face now reference-supported.",
+    "Incised glyph texture remains original decorative approximation, not historical transcription; retained in this focused relief pass.",
+    "Published140ft height and inferred tunnel clearance retained because no measured section is available.",
+    "Surrounding Luxor landscape, sphinx and elevated walkways are separate resort work, preserved in this pass.",
+    "Matching static frame times are not a driving60fps certification."
   ],
   "triangles": 6940,
   "batches": 7,
@@ -102,5 +102,12 @@
       "build/strip-landmarks/luxorObelisk-exterior.glb": "dd96b8649e3aa6fb385a2f235d77b034c0ea9234bfd380d5d35fd2569882b014",
       "build/strip-landmarks/luxorObelisk-exterior-collision.json": "2c41751264041668f2480193464e5db87add2790916a97a642ec912de7a10a24"
     }
+  },
+  "reliefPass20261101": {
+    "status": "installed-validation-in-progress",
+    "research": "docs/project-records/luxor-obelisk-refinement/research.json",
+    "authoredTriangles": 14156,
+    "collision": "unchanged",
+    "packedRouteSamples": 1473
   }
 }
