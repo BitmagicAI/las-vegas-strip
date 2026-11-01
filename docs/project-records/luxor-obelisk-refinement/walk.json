@@ -1,0 +1,83 @@
+{
+  "routes": [
+    {
+      "name": "tunnel",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -28.4755,
+            0.24,
+            2290.336
+          ],
+          "position": {
+            "x": -28.47536277770996,
+            "y": 0.2573430824279785,
+            "z": 2290.22509765625
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -28.4755,
+            0.24,
+            2277.336
+          ],
+          "position": {
+            "x": -28.47555923461914,
+            "y": 0.26815321922302243,
+            "z": 2277.649169921875
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "west-sidewalk",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -34.3755,
+            0.24,
+            2289.636
+          ],
+          "position": {
+            "x": -34.37510681152344,
+            "y": 0.2682792234420776,
+            "z": 2289.49755859375
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -34.3755,
+            0.24,
+            2278.036
+          ],
+          "position": {
+            "x": -34.375484466552734,
+            "y": 0.2579691696166992,
+            "z": 2278.35546875
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

@@ -21,28 +21,44 @@ def exterior(B):
  F.box('lob-stone-paint',(0,6.5,0),(7.55,.22,8.85),True)
  loft(6.61,39.35,6.7,6.7,3.55,3.55,'lob-glyph-paint',True)
  loft(39.35,42.672,3.55,3.55,.015,.015,'lob-stone-paint',True)
- # North/south channel letters project from the tapered faces.
+ # Raised blue letters with a narrow warm metal backing, referenced north/south.
  for side in [-1,1]:
   for j,ch in enumerate('LUXOR'):
-   y=35.4-j*2.2;d=(6.7+(3.55-6.7)*(y-6.61)/(39.35-6.61))/2
-   F.text(ch,(0,y,side*(d+.11)),1.95,'lob-blue-letter',back=side>0)
- # Flanking pedestal relief figures, segmented sculpted silhouettes, batched.
- # Fine facial/robe carving remains an approximation, never scan-quality.
+   y=34.7-j*2.8;d=(6.7+(3.55-6.7)*(y-6.61)/(39.35-6.61))/2
+   F.text(ch,(0,y,side*(d+.10)),3.85,'lob-gold-letter',back=side>0)
+   F.text(ch,(0,y+.02,side*(d+.19)),3.7,'lob-blue-letter',back=side>0)
+ # Four original relief figures on each face (October2024 Street View).
+ # Profile rings give continuous carved silhouettes, not downloaded sculpture.
  def sculpt(x,z,y,yaw):
   S=Frame(B,CX+x,CZ+z,yaw=yaw,y=y)
-  for sx in [-.22,.22]:
-   S.box('lob-sculpt-stone',(sx,.16,-.1),(.38,.24,.6))
-   S.tube('lob-sculpt-stone',(sx,.25,0),(sx,.98,0),.16,12,.22)
-  S.lathe('lob-sculpt-stone',0,0,[(.9,.45),(1.35,.43),(1.75,.52),(2.05,.36)],20)
-  S.lathe('lob-sculpt-stone',0,-.01,[(1.95,.2),(2.1,.31),(2.45,.30),(2.6,.12)],20)
-  S.box('lob-sculpt-stone',(0,2.26,-.29),(.10,.18,.10))
+  def form(profile,mat='lob-sculpt-stone',cx=0,n=16):
+   rings=[[(cx+w*math.cos(a),yy,zz+depth*math.sin(a)) for a in np.linspace(0,math.tau,n,endpoint=False)] for yy,w,depth,zz in profile]
+   for lo,hi in zip(rings,rings[1:]):
+    for i in range(n):B.face(mat,[S.p(*lo[i]),S.p(*hi[i]),S.p(*hi[(i+1)%n]),S.p(*lo[(i+1)%n])])
+   B.face(mat,[S.p(*q)for q in rings[0]])
+   B.upface(mat,[S.p(*q)for q in rings[-1]])
   for side in [-1,1]:
-   S.path('lob-sculpt-stone',[(side*.45,1.8,0),(side*.63,1.32,-.08),(side*.3,1.25,-.34)],.13,10)
-  # Stone headdress side lappets and incised kilt folds.
-  for side in [-1,1]:S.path('lob-sculpt-stone',[(side*.23,2.5,.02),(side*.37,2.15,.04),(side*.32,1.88,-.03)],.11,8)
-  for x0 in [-.27,-.13,0,.13,.27]:S.path('lob-carve-paint',[(x0,.93,-.43),(x0,1.28,-.43)],.015,4)
+   cx=side*.23
+   form([(.05,.19,.36,-.18),(.18,.2,.37,-.18),(.27,.16,.23,-.05)],cx=cx)
+   form([(.22,.12,.14,0),(.50,.14,.16,0),(.78,.19,.19,0),(1.13,.21,.22,0)],cx=cx)
+  form([(1.02,.45,.24,0),(1.18,.46,.25,0),(1.45,.37,.24,0),(1.72,.50,.25,0),(1.90,.53,.23,.01),(2.02,.34,.20,.02)])
+  form([(1.99,.16,.16,0),(2.12,.17,.16,0)])
+  form([(2.08,.17,.17,-.03),(2.17,.24,.23,-.03),(2.40,.25,.23,-.02),(2.52,.19,.19,0)])
+  # Broad headdress crown and hanging lappets, collar and carved brow/eyes.
+  form([(2.35,.31,.25,.035),(2.54,.32,.24,.04),(2.62,.22,.18,.05)])
+  for side in [-1,1]:
+   form([(1.91,.105,.17,.04),(2.12,.14,.20,.045),(2.37,.13,.22,.05),(2.49,.10,.20,.05)],cx=side*.31,n=12)
+   S.path('lob-carve-paint',[(side*.08,2.30,-.251),(side*.19,2.30,-.21)],.012,6)
+   S.path('lob-sculpt-stone',[(side*.06,2.34,-.26),(side*.19,2.34,-.225)],.025,8)
+   S.path('lob-sculpt-stone',[(side*.48,1.89,0),(side*.57,1.63,-.01),(side*.53,1.26,-.10)],.12,12)
+   form([(1.12,.10,.11,-.11),(1.32,.115,.12,-.10)],cx=side*.53,n=12)
+   for yy in [1.98,2.08,2.18,2.28,2.38]:S.path('lob-carve-paint',[(side*.23,yy,-.15),(side*.40,yy,-.12)],.009,4)
+  S.box('lob-sculpt-stone',(0,2.25,-.285),(.085,.17,.10))
+  S.path('lob-carve-paint',[(-.10,2.15,-.24),(0,2.14,-.27),(.10,2.15,-.24)],.009,6)
+  S.path('lob-carve-paint',[(-.32,1.96,-.15),(-.20,1.84,-.23),(0,1.79,-.25),(.20,1.84,-.23),(.32,1.96,-.15)],.014,6)
+  for x0 in [-.30,-.15,0,.15,.30]:S.path('lob-carve-paint',[(x0,1.07,-.25),(x0,1.37,-.235)],.01,4)
  for side in [-1,1]:
-  for x in [-2.8,-1.4,0,1.4,2.8]:sculpt(x,side*5.35,3.65,0 if side<0 else math.pi)
+  for x in [-2.85,-.95,.95,2.85]:sculpt(x,side*5.35,3.65,0 if side<0 else math.pi)
  # Service lights are fixtures only; do not alter the runtime light set.
  for side in [-1,1]:
   for x in [-2.6,2.6]:F.box('lob-metal-paint',(x,3.65,side*5.2),(.3,.16,.25))
