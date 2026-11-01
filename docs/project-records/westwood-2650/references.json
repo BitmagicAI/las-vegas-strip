@@ -2,7 +2,7 @@
   "candidate": "2650 Westwood Drive",
   "mappedId": "way/464694101",
   "issue": 439,
-  "status": "claimed issue439; authoring from origin/next 405e0d3",
+  "status": "Claimed and authored in PR440 against next; local installation verification in progress.",
   "addressPin": {
     "lat": 36.141975,
     "lon": -115.1713202,
@@ -30,7 +30,7 @@
     {
       "url": "https://www.cushmanwakefield.com/en/united-states/properties/for-sale/warehousedistribution/nv/las-vegas/2650-westwood-dr/s119447304s119447304-s",
       "accessed": "2026-10-31",
-      "observed": "Broker identifies 19,127 SF building on 24,394 SF lot, built 1970; downloadable property brochure available, not yet inspected.",
+      "observed": "Broker identifies 19,127 SF building on 24,394 SF lot, built 1970; linked brochure unavailable (HTTP410).",
       "brochureStatus": "Linked PDF returned HTTP410 through browser fetch and direct download; use available Street View and listing photographs without waiting."
     },
     {
@@ -58,9 +58,8 @@
     }
   ],
   "next": [
-    "Verify issue439 claim before authoring; branch from current origin/next after438 merges.",
-    "Inspect broker brochure alongside dated Street View to confirm height break and service elevations.",
-    "Group nearby claimed buildings when supported by references; no uploads."
+    "Complete local installation gates; preserve dated evidence and inferred dimensions.",
+    "Release-only CDN upload and published cold-load validation do not hold the next merge."
   ],
   "groupMappedIds": [
     "way/464694101",

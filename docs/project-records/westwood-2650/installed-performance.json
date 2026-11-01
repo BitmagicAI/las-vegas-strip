@@ -1,0 +1,40 @@
+{
+  "method": "960x540 ultra; 300 settle and 180 measured frames; one local run per view, sequential probes",
+  "views": [
+    {
+      "name": "westwood-2650-front",
+      "beforeP95": 18.90000009536743,
+      "afterP95": 18.200000047683716
+    },
+    {
+      "name": "westwood-2650-roof",
+      "beforeP95": 18.5,
+      "afterP95": 18.5
+    },
+    {
+      "name": "highland-steel-front",
+      "beforeP95": 18.299999952316284,
+      "afterP95": 18.399999856948853
+    },
+    {
+      "name": "highland-steel-roof",
+      "beforeP95": 18.40000009536743,
+      "afterP95": 18.59999990463257
+    },
+    {
+      "name": "highland-display",
+      "beforeP95": 18.600000143051147,
+      "afterP95": 18.5
+    },
+    {
+      "name": "creel-highland-front",
+      "beforeP95": 18.699999809265137,
+      "afterP95": 18.5
+    },
+    {
+      "name": "creel-highland-roof",
+      "beforeP95": 19.09999990463257,
+      "afterP95": 18.699999809265137
+    }
+  ]
+}

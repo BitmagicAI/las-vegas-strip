@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1916,
- "bytes": 1168904329,
+ "count": 1924,
+ "bytes": 1170061344,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -288,8 +288,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-4.bin",
-   "bytes": 391851,
-   "sha256": "3bb590d920fad689e94eb71976576f3eb67d592cdb628244dd4cdaded2f19e17",
+   "bytes": 402546,
+   "sha256": "f2855e89bd022ff95fa19c6fba26a5825855372e751430d165530001a55d41bc",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "b8387c2c5a97fc1569e5825201f7bd7419000d8192991cf37c7eb6844bd3aec1",
+   "sha256": "955abf986ea5bf1aca695de562a32023cf83910160e3f1f9b7544abe5c0eb829",
    "kind": "runtime cell manifest"
   },
   {
@@ -942,8 +942,8 @@
   },
   {
    "path": "build/geographic-strip/cells/cell-0_-4.glb",
-   "bytes": 2320820,
-   "sha256": "7acd096a965c930a46046eb9ad6e6f04f95c287970679490f53b02fed30c041d",
+   "bytes": 2319944,
+   "sha256": "f1ae04260834c2ca3c755bcc02d229f212bbefd6a81afc4edc8536bb70999bb8",
    "kind": "optimized"
   },
   {
@@ -1243,7 +1243,7 @@
   {
    "path": "build/geographic-strip/cells/manifest.json",
    "bytes": 39796,
-   "sha256": "c452268d056fa0000f1ccd814b1b4c5f1bbd279fbf22bc42baac6cfa9effc4ac",
+   "sha256": "4a45d95e5ab22cd3d3000cd2b8623287ec8c917fa14720d9da2a17077e7dbd45",
    "kind": "runtime cell manifest"
   },
   {
@@ -1494,8 +1494,8 @@
   },
   {
    "path": "build/geographic-strip/collision-cells/cell-0_-4.bin",
-   "bytes": 296056,
-   "sha256": "f35de0a64f4c1b8f64af1b706e31010e94f85ad8aef6a9a6fecc20054897b8cf",
+   "bytes": 295748,
+   "sha256": "802599e599259cc1bf013277740f12748e396a40877fd7193dad7d992aea7571",
    "kind": "original"
   },
   {
@@ -1795,7 +1795,7 @@
   {
    "path": "build/geographic-strip/collision-cells/manifest.json",
    "bytes": 17609,
-   "sha256": "429ec09e5896143de5c1d06dc1916bfaab4b5b60b8bc07733f3b609f59f60f7c",
+   "sha256": "7af5fbe1cec17bfeb8df6ded65619202e653344b6a399521107f75eb60397a5d",
    "kind": "runtime cell manifest"
   },
   {
@@ -7907,6 +7907,18 @@
    "kind": "optimized"
   },
   {
+   "path": "build/strip-landmarks/creel-highland-exterior-collision.bin",
+   "bytes": 304,
+   "sha256": "bfcc292c2f1b881930ac3aadfd6307ffc4c473658a9b112864e38b32e23cec53",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/creel-highland-exterior.glb",
+   "bytes": 61692,
+   "sha256": "a4598346df1b0083160f48f75d2d0524a94620d50a2537a62912af92907825a9",
+   "kind": "optimized"
+  },
+  {
    "path": "build/strip-landmarks/crystalsPedestrianLift-exterior-collision.bin",
    "bytes": 596,
    "sha256": "0d68b3c129fa7f5b7611cfe1863fc43a79bc3e8fb730219831659184692c2b63",
@@ -8804,6 +8816,30 @@
    "path": "build/strip-landmarks/hgvFlamingoExterior-exterior.glb",
    "bytes": 347944,
    "sha256": "f1392fb2ec942140b462cd7f28df4a87c0ee871b2eb5ed664fe5604999aef23a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/highland-steel-exterior-collision.bin",
+   "bytes": 364,
+   "sha256": "9162f72864527d902e0a0fba734afe006753847a2167fa9aca11ec2063314326",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/highland-steel-exterior.glb",
+   "bytes": 223368,
+   "sha256": "27433e93156226ee5f66e8ae34f2715c4c8d8225f9e59c07302aea5b881e5ac3",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/highland-steel-interior-collision.bin",
+   "bytes": 236,
+   "sha256": "60d45740735e770afbe0ae12fa9de487663b9684b5b8b76dc630c126709ed5d5",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/highland-steel-interior.glb",
+   "bytes": 681080,
+   "sha256": "22b1de90556a6c8c771fec21ca07d9a39d7b749d9adf25530dbc92ce98a312ab",
    "kind": "optimized"
   },
   {
@@ -11280,8 +11316,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 391688,
-   "sha256": "db1698ee02a898c2dd188319f9874e6e9f03bbeda25770b514df49f3f3afa78f",
+   "bytes": 393156,
+   "sha256": "627fc69bb7e2bd2500f3ad3a44dca6558b95f608ecb7c805a8dccc821a70b8f6",
    "kind": "original"
   },
   {
@@ -11402,6 +11438,18 @@
    "path": "build/strip-landmarks/westwood-2601-exterior.glb",
    "bytes": 2639624,
    "sha256": "0e24914c96805240f66429278e443335efacf6c6e33d61d211a02481835b72e4",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/westwood-2650-exterior-collision.bin",
+   "bytes": 368,
+   "sha256": "c34aaae0a07c982a6ea05101c5979f1d3e79f512c4416b8250332b1007f733e1",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/westwood-2650-exterior.glb",
+   "bytes": 178624,
+   "sha256": "3e67717e5a64dcff8ada6342c088332f54c2bfacc611dfc7d1910e8e923139b2",
    "kind": "optimized"
   },
   {
