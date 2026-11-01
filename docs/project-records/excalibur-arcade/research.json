@@ -17,9 +17,15 @@
     },
     {
       "url": "https://static.mgmresorts.com/content/dam/MGM/excalibur/hotel/excalibur-property-map.pdf",
-      "observed": "Found primary official map, NOT YET visually inspected."
+      "observed": "Official one-page map personally inspected: front entrance and New York-New York/T-Mobile walkway at northeast, adjacent tram connection, casino-level entrances and separate Castle Walk level. Schematic circulation only; not a scaled construction plan."
     }
   ],
   "issue": 32,
-  "status": "claimed; baseline and source inspection"
+  "status": "installed square-pier arcade; six-segment normal walk in progress, no bake yet",
+  "baselineNote": "Initial ground-level covered-approach and side cameras were inside existing geometry; replaced before any model edit with elevated approach and side cameras. Front, hall and south baseline cameras are clear.",
+  "remaining": [
+    "Existing flat ground datum retained; no moving walkway, escalator or grade reconstruction in this pass.",
+    "Five final matching views, matching performance, package and smoke pending.",
+    "All remaining whole-resort discrepancies remain in tools/resort-blocks/excalibur.json."
+  ]
 }

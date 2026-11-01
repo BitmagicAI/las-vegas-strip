@@ -1,0 +1,1889 @@
+{
+  "unchangedPrimitiveTriangleCountsAndBounds": 465,
+  "removed": 4776,
+  "allNodeTransformsAndExtrasPreserved": true,
+  "toleranceM": 0.02,
+  "scope": "Optimized output count/bounds/metadata preservation; not a per-pixel guarantee",
+  "nodes": [
+    {
+      "name": "allure roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "allure/way/134935559/frame",
+      "removed": 0
+    },
+    {
+      "name": "allure/way/134935559/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "allure/way/134935559/glass",
+      "removed": 0
+    },
+    {
+      "name": "allure/way/134935559/roof",
+      "removed": 0
+    },
+    {
+      "name": "allure/way/134935559/stone",
+      "removed": 0
+    },
+    {
+      "name": "allure/way/134935559/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/25723910/frame",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/25723910/glass",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/25723910/roof",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/25723910/stone",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/25723910/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/114716301/frame",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/114716301/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/114716301/glass",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/114716301/roof",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/114716301/stone",
+      "removed": 0
+    },
+    {
+      "name": "bellagio-spa/way/114716301/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "BROADWAY",
+      "removed": 0
+    },
+    {
+      "name": "BROADWAY.001",
+      "removed": 0
+    },
+    {
+      "name": "BROADWAY.002",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332955/frame",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332955/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332955/glass",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332955/roof",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332955/stone",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332955/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332957/frame",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332957/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332957/glass",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332957/roof",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332957/stone",
+      "removed": 0
+    },
+    {
+      "name": "circus-circus/way/135332957/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "elara roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "elara/relation/5342155/frame",
+      "removed": 0
+    },
+    {
+      "name": "elara/relation/5342155/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "elara/relation/5342155/glass",
+      "removed": 0
+    },
+    {
+      "name": "elara/relation/5342155/roof",
+      "removed": 0
+    },
+    {
+      "name": "elara/relation/5342155/stone",
+      "removed": 0
+    },
+    {
+      "name": "encore roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "encore/way/27910891/frame",
+      "removed": 0
+    },
+    {
+      "name": "encore/way/27910891/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "encore/way/27910891/glass",
+      "removed": 0
+    },
+    {
+      "name": "encore/way/27910891/roof",
+      "removed": 0
+    },
+    {
+      "name": "encore/way/27910891/stone",
+      "removed": 0
+    },
+    {
+      "name": "EXCALIBUR",
+      "removed": 0
+    },
+    {
+      "name": "EXCALIBUR.001",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/castle-turrets/castlebrick",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/castle-turrets/goldroof",
+      "removed": 536
+    },
+    {
+      "name": "excalibur/castle-turrets/navy",
+      "removed": 512
+    },
+    {
+      "name": "excalibur/castle-turrets/redroof",
+      "removed": 512
+    },
+    {
+      "name": "excalibur/castle-turrets/white",
+      "removed": 2208
+    },
+    {
+      "name": "excalibur/castle-turrets/window",
+      "removed": 1008
+    },
+    {
+      "name": "excalibur/relation/8086330/castlebrick",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/relation/8086330/paving",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/castlebrick",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/castlebrick.001",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/navy",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/roof",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/trim",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/trim.001",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/white",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/white.001",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114857390/window",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/castlebrick",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/castlebrick.001",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/navy",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/roof",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/trim",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/trim.001",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/white",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/white.001",
+      "removed": 0
+    },
+    {
+      "name": "excalibur/way/114859870/window",
+      "removed": 0
+    },
+    {
+      "name": "fontainebleau roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "fontainebleau/way/134068318/frame",
+      "removed": 0
+    },
+    {
+      "name": "fontainebleau/way/134068318/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "fontainebleau/way/134068318/glass",
+      "removed": 0
+    },
+    {
+      "name": "fontainebleau/way/134068318/roof",
+      "removed": 0
+    },
+    {
+      "name": "fontainebleau/way/134068318/stone",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/276427203/frame",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/276427203/glass",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/276427203/roof",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/276427203/stone",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/276427203/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/358923855/frame",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/358923855/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/358923855/glass",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/358923855/stone",
+      "removed": 0
+    },
+    {
+      "name": "grand-chateau/way/358923855/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "harrahs roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "harrahs roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/111367828/frame",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/111367828/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/111367828/glass",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/111367828/roof",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/111367828/stone",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/111367828/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/128632721/frame",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/128632721/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/128632721/glass",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/128632721/roof",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/128632721/stone",
+      "removed": 0
+    },
+    {
+      "name": "harrahs/way/128632721/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "hgv-boulevard roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "hgv-boulevard/relation/6138877/frame",
+      "removed": 0
+    },
+    {
+      "name": "hgv-boulevard/relation/6138877/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "hgv-boulevard/relation/6138877/glass",
+      "removed": 0
+    },
+    {
+      "name": "hgv-boulevard/relation/6138877/roof",
+      "removed": 0
+    },
+    {
+      "name": "hgv-boulevard/relation/6138877/stone",
+      "removed": 0
+    },
+    {
+      "name": "hgv-boulevard/relation/6138877/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "horseshoe-east roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "horseshoe-east/way/27897922/frame",
+      "removed": 0
+    },
+    {
+      "name": "horseshoe-east/way/27897922/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "horseshoe-east/way/27897922/glass",
+      "removed": 0
+    },
+    {
+      "name": "horseshoe-east/way/27897922/roof",
+      "removed": 0
+    },
+    {
+      "name": "horseshoe-east/way/27897922/stone",
+      "removed": 0
+    },
+    {
+      "name": "horseshoe-east/way/27897922/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "Liberty / gomeasure3d / CC BY 4.0",
+      "removed": 0
+    },
+    {
+      "name": "Liberty / gomeasure3d / CC BY 4.0",
+      "removed": 0
+    },
+    {
+      "name": "Liberty / gomeasure3d / CC BY 4.0",
+      "removed": 0
+    },
+    {
+      "name": "luxor roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "luxor roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/27858544/frame",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/27858544/glass",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516661/frame",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516661/glass",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516661/roof",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516661/stone",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516669/frame",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516669/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516669/glass",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516669/roof",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516669/stone",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516672/frame",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516672/glass",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516672/roof",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136516672/stone",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520112/frame",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520112/glass",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520112/roof",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520112/stone",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520119/frame",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520119/glass",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520119/roof",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520119/stone",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520124/frame",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520124/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520124/glass",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520124/roof",
+      "removed": 0
+    },
+    {
+      "name": "luxor/way/136520124/stone",
+      "removed": 0
+    },
+    {
+      "name": "mandalay-bay roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "mandalay-bay/way/27858550/frame",
+      "removed": 0
+    },
+    {
+      "name": "mandalay-bay/way/27858550/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "mandalay-bay/way/27858550/glass",
+      "removed": 0
+    },
+    {
+      "name": "mandalay-bay/way/27858550/roof",
+      "removed": 0
+    },
+    {
+      "name": "mandalay-bay/way/27858550/stone",
+      "removed": 0
+    },
+    {
+      "name": "MANHATTAN",
+      "removed": 0
+    },
+    {
+      "name": "MANHATTAN.001",
+      "removed": 0
+    },
+    {
+      "name": "martin roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "martin/way/495695274/frame",
+      "removed": 0
+    },
+    {
+      "name": "martin/way/495695274/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "martin/way/495695274/glass",
+      "removed": 0
+    },
+    {
+      "name": "martin/way/495695274/roof",
+      "removed": 0
+    },
+    {
+      "name": "martin/way/495695274/stone",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115093734/frame",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115093734/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115093734/glass",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115093734/roof",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115093734/stone",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095167/frame",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095167/glass",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095167/roof",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095167/stone",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095169/frame",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095169/glass",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095169/roof",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095169/stone",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095172/frame",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095172/glass",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095172/roof",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095172/stone",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095174/frame",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095174/glass",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095174/roof",
+      "removed": 0
+    },
+    {
+      "name": "mgm-grand/way/115095174/stone",
+      "removed": 0
+    },
+    {
+      "name": "mirage roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "mirage/way/27727143/frame",
+      "removed": 0
+    },
+    {
+      "name": "mirage/way/27727143/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "mirage/way/27727143/glass",
+      "removed": 0
+    },
+    {
+      "name": "mirage/way/27727143/roof",
+      "removed": 0
+    },
+    {
+      "name": "mirage/way/27727143/stone",
+      "removed": 0
+    },
+    {
+      "name": "NEW YORK",
+      "removed": 0
+    },
+    {
+      "name": "NEW YORK  NEW YORK",
+      "removed": 0
+    },
+    {
+      "name": "NEW YORK.002",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661791/blackglass",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661791/bronze",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661791/bronze.001",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661791/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661792/blackglass",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661792/ivory",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661792/ivory.001",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661792/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661792/silver",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661792/trim",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661792/trim.001",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661792/window",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661793/brick",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661793/canopy",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661793/limestone",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661793/sandstone",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661793/trim",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661793/window",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661795/limestone",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661795/limestone.001",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661795/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661795/trim",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661795/window",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661796/ivory",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661796/ivory.001",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661796/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661796/silver",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661796/trim",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661796/window",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661797/emerald",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661797/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661797/silver",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661798/blackglass",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661798/pink",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661798/pink.001",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661798/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661799/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661799/sandstone",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661799/sandstone.001",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661799/trim",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661799/window",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661800/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661800/silver",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661800/teal",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661801/blueglass",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661801/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661801/white",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661801/white.001",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661802/roof",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661802/silver",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661802/teal",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661805/bronze",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661805/oxblood",
+      "removed": 0
+    },
+    {
+      "name": "new-york/way/115661805/roof",
+      "removed": 0
+    },
+    {
+      "name": "palazzo roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "palazzo/way/30424125/frame",
+      "removed": 0
+    },
+    {
+      "name": "palazzo/way/30424125/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "palazzo/way/30424125/glass",
+      "removed": 0
+    },
+    {
+      "name": "palazzo/way/30424125/roof",
+      "removed": 0
+    },
+    {
+      "name": "palazzo/way/30424125/stone",
+      "removed": 0
+    },
+    {
+      "name": "palazzo/way/30424125/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "palms roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "palms/relation/7655651/frame",
+      "removed": 0
+    },
+    {
+      "name": "palms/relation/7655651/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "palms/relation/7655651/glass",
+      "removed": 0
+    },
+    {
+      "name": "palms/relation/7655651/roof",
+      "removed": 0
+    },
+    {
+      "name": "palms/relation/7655651/stone",
+      "removed": 0
+    },
+    {
+      "name": "palms/relation/7655651/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "panorama roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "panorama roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545499/frame",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545499/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545499/glass",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545499/roof",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545499/stone",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545499/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545514/frame",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545514/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545514/glass",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545514/roof",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545514/stone",
+      "removed": 0
+    },
+    {
+      "name": "panorama/way/495545514/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "PARK AVENUE",
+      "removed": 0
+    },
+    {
+      "name": "PARK AVENUE.002",
+      "removed": 0
+    },
+    {
+      "name": "park-mgm roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "park-mgm/way/27831695/frame",
+      "removed": 0
+    },
+    {
+      "name": "park-mgm/way/27831695/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "park-mgm/way/27831695/glass",
+      "removed": 0
+    },
+    {
+      "name": "park-mgm/way/27831695/roof",
+      "removed": 0
+    },
+    {
+      "name": "park-mgm/way/27831695/stone",
+      "removed": 0
+    },
+    {
+      "name": "park-mgm/way/27831695/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "resorts-world roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "resorts-world/way/316303708/accent",
+      "removed": 0
+    },
+    {
+      "name": "resorts-world/way/316303708/frame",
+      "removed": 0
+    },
+    {
+      "name": "resorts-world/way/316303708/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "resorts-world/way/316303708/glass",
+      "removed": 0
+    },
+    {
+      "name": "resorts-world/way/316303708/roof",
+      "removed": 0
+    },
+    {
+      "name": "resorts-world/way/316303708/stone",
+      "removed": 0
+    },
+    {
+      "name": "rio roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998220/accent",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998220/frame",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998220/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998220/glass",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998220/roof",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998220/stone",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998223/accent",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998223/frame",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998223/glass",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998223/roof",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/27998223/stone",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938477/accent",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938477/frame",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938477/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938477/glass",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938477/roof",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938477/stone",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938479/accent",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938479/frame",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938479/glass",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938479/roof",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938479/stone",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938481/accent",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938481/frame",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938481/glass",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938481/roof",
+      "removed": 0
+    },
+    {
+      "name": "rio/way/134938481/stone",
+      "removed": 0
+    },
+    {
+      "name": "sahara roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "sahara/way/276426484/frame",
+      "removed": 0
+    },
+    {
+      "name": "sahara/way/276426484/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "sahara/way/276426484/glass",
+      "removed": 0
+    },
+    {
+      "name": "sahara/way/276426484/roof",
+      "removed": 0
+    },
+    {
+      "name": "sahara/way/276426484/stone",
+      "removed": 0
+    },
+    {
+      "name": "sahara/way/276426484/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "signature roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "signature roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "signature roof lettering.002",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223224/frame",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223224/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223224/glass",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223224/roof",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223224/stone",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223231/frame",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223231/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223231/glass",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223231/roof",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223231/stone",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223232/frame",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223232/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223232/glass",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223232/roof",
+      "removed": 0
+    },
+    {
+      "name": "signature/way/95223232/stone",
+      "removed": 0
+    },
+    {
+      "name": "sky roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "sky roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/134068316/frame",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/134068316/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/134068316/glass",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/134068316/roof",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/134068316/stone",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/134068316/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/543641002/frame",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/543641002/glass",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/543641002/roof",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/543641002/stone",
+      "removed": 0
+    },
+    {
+      "name": "sky/way/543641002/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "springhill roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "springhill/way/543640999/frame",
+      "removed": 0
+    },
+    {
+      "name": "springhill/way/543640999/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "springhill/way/543640999/glass",
+      "removed": 0
+    },
+    {
+      "name": "springhill/way/543640999/roof",
+      "removed": 0
+    },
+    {
+      "name": "springhill/way/543640999/stone",
+      "removed": 0
+    },
+    {
+      "name": "springhill/way/543640999/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "strat roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "strat/way/135457469/glass",
+      "removed": 0
+    },
+    {
+      "name": "strat/way/135457469/stone",
+      "removed": 0
+    },
+    {
+      "name": "strat/way/543641711/frame",
+      "removed": 0
+    },
+    {
+      "name": "strat/way/543641711/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "strat/way/543641711/glass",
+      "removed": 0
+    },
+    {
+      "name": "strat/way/543641711/roof",
+      "removed": 0
+    },
+    {
+      "name": "strat/way/543641711/stone",
+      "removed": 0
+    },
+    {
+      "name": "treasure-island roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "treasure-island/way/27727145/frame",
+      "removed": 0
+    },
+    {
+      "name": "treasure-island/way/27727145/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "treasure-island/way/27727145/glass",
+      "removed": 0
+    },
+    {
+      "name": "treasure-island/way/27727145/roof",
+      "removed": 0
+    },
+    {
+      "name": "treasure-island/way/27727145/stone",
+      "removed": 0
+    },
+    {
+      "name": "treasure-island/way/27727145/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "trump roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "trump roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "trump/way/111380664/frame",
+      "removed": 0
+    },
+    {
+      "name": "trump/way/111380664/roof",
+      "removed": 0
+    },
+    {
+      "name": "trump/way/111380664/stone",
+      "removed": 0
+    },
+    {
+      "name": "trump/way/111380666/frame",
+      "removed": 0
+    },
+    {
+      "name": "trump/way/111380666/glass",
+      "removed": 0
+    },
+    {
+      "name": "trump/way/111380666/roof",
+      "removed": 0
+    },
+    {
+      "name": "trump/way/111380666/stone",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place roof lettering.002",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place roof lettering.003",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677416/frame",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677416/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677416/glass",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677416/roof",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677416/stone",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677416/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677417/frame",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677417/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677417/glass",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677417/roof",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677417/stone",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677417/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677425/frame",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677425/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677425/glass",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677425/roof",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677425/stone",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677425/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677429/frame",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677429/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677429/glass",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677429/roof",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677429/stone",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-place/way/134677429/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134679980/frame",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134679980/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134679980/glass",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134679980/roof",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134679980/stone",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134679980/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134918082/frame",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134918082/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134918082/glass",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134918082/roof",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134918082/stone",
+      "removed": 0
+    },
+    {
+      "name": "turnberry-towers/way/134918082/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "venetian roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "venetian roof lettering.001",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/30618090/frame",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/30618090/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/30618090/glass",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/30618090/roof",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/30618090/stone",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/30618090/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/111322067/frame",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/111322067/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/111322067/glass",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/111322067/roof",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/111322067/stone",
+      "removed": 0
+    },
+    {
+      "name": "venetian/way/111322067/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "w-las-vegas roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "w-las-vegas/way/118347176/frame",
+      "removed": 0
+    },
+    {
+      "name": "w-las-vegas/way/118347176/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "w-las-vegas/way/118347176/glass",
+      "removed": 0
+    },
+    {
+      "name": "w-las-vegas/way/118347176/roof",
+      "removed": 0
+    },
+    {
+      "name": "w-las-vegas/way/118347176/stone",
+      "removed": 0
+    },
+    {
+      "name": "westgate roof lettering",
+      "removed": 0
+    },
+    {
+      "name": "westgate/way/85402000/frame",
+      "removed": 0
+    },
+    {
+      "name": "westgate/way/85402000/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "westgate/way/85402000/glass",
+      "removed": 0
+    },
+    {
+      "name": "westgate/way/85402000/roof",
+      "removed": 0
+    },
+    {
+      "name": "westgate/way/85402000/stone",
+      "removed": 0
+    },
+    {
+      "name": "westgate/way/85402000/stone.001",
+      "removed": 0
+    },
+    {
+      "name": "wynn/way/205501268/frame",
+      "removed": 0
+    },
+    {
+      "name": "wynn/way/205501268/frame.001",
+      "removed": 0
+    },
+    {
+      "name": "wynn/way/205501268/glass",
+      "removed": 0
+    },
+    {
+      "name": "wynn/way/205501268/roof",
+      "removed": 0
+    },
+    {
+      "name": "wynn/way/205501268/stone",
+      "removed": 0
+    }
+  ]
+}

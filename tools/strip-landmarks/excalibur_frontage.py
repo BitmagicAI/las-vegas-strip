@@ -79,4 +79,6 @@ def exterior(B):
      F.box('nyny-white',(u,h-.1,-.13),(.88,.28,.82))
    # Do not overlay the existing podium roof: its cutouts belong to legacy geometry.
    if ident!='relation/8086330':B.planar('ph-roof',surface.roof(ident,poly,h),h+.07)
+ from excalibur_arcade import exterior as arcade
+ arcade(B)
  return dict(key=KEY,name='Excalibur lower facades',center=[-190,0,1870],bounds=[-350,1720,-25,2035],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

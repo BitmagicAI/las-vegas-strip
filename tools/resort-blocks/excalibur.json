@@ -11,6 +11,22 @@
     {
       "url": "https://earth.google.com/web/@36.1001,-115.1735,635a,180d,35y,270h,65t,0r",
       "observed": "Existing elevated pedestrian connection; partial tower occlusion. Original broad aerial used for podium form."
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/lasex-excalibur-hotel-and-casino-mgm-collection/photos/",
+      "observed": "Official first hotel-view night photo personally inspected: white castle, blue/red/gold roof caps, arched arcade details, front entry bridge and landscaping. Date not provided."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1001,-115.174,347m/data=!3m1!1e3",
+      "observed": "Aerial personally inspected: north semicircular fan paving, narrow diagonal covered public approach, tram station east and road loops around castle."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0999639,-115.174212,3a,75y,17.87h,90t/data=!3m4!1e1!3m2!1s53pzrEZs686XAT8QLC5bwg!2e0",
+      "observed": "April2025GoogleStreetView personally inspected: covered public bridge, central moving walkway, white square piers, pale-tan raised stone trims around shallow pointed openings, crenellated low wall on one side and gray railing other side, pale flat ceiling with recessed fixtures. Approxworldx-109,z1785. Reversible scoped arcade detail could preserve existing public route. All dimensions require fitted estimates."
+    },
+    {
+      "url": "https://static.mgmresorts.com/content/dam/MGM/excalibur/hotel/excalibur-property-map.pdf",
+      "observed": "Official one-page map personally inspected: front entrance and New York-New York/T-Mobile walkway at northeast, adjacent tram connection, casino-level entrances and separate Castle Walk level. Schematic circulation only; not a scaled construction plan."
     }
   ],
   "components": [
@@ -28,11 +44,11 @@
     }
   ],
   "remaining": [
-    "Full landscaping and exact turret detailing remain incomplete.",
-    "Station heights retained from mapped data; detailed station platform/circulation not rebuilt.",
-    "Entry sign appears reversed on approach; repair required",
-    "Mapped29m part way/114870395 was skipped by castle generator; verify actual footprint before marking reviewed",
-    "South-side lower elevation remains blank in reviewed view; needs further facade/site reference"
+    "Full landscaping and exact turret detailing remain incomplete; this pass focuses on the public approach arcade.",
+    "Station heights retain mapped data; detailed station platform, moving walkway and elevated circulation are deferred to a dedicated connection pass. The current approach remains at the existing flat ground datum.",
+    "Exact stepped hall elevations, turret openings and roof profiles remain approximate; the mapped 29m hall was already restored in the 2026-10-14 correction and is retained.",
+    "Tower room bays, front red pyramidal turret and gardens need closer architectural refinement; no full-block completion claimed.",
+    "South-side lower elevation remains generic; requires closer facade/site reference outside this approach pass."
   ],
   "geometry": {
     "triangles": 39622,
@@ -164,5 +180,16 @@
       "build/strip-landmarks/excaliburFrontage-exterior.glb": "d053c23ef5fded204ac0b3b69b49c7b5c56c8694002ee478af55d207dd2109fd",
       "build/highrises/exteriors.glb": "ee3841c1d58712f96a598da2bb909e114cba8a0300498b9a3a5d334cddbfc97c"
     }
+  },
+  "arcadePass": {
+    "status": "installed-preview-verification-in-progress",
+    "issue": 32,
+    "pullRequest": 453,
+    "source": "tools/strip-landmarks/excalibur_arcade.py",
+    "before": "build/city-exteriors/excalibur-arcade-before-final",
+    "after": "pending",
+    "geometry": "docs/project-records/excalibur-arcade/geometry.json",
+    "highrisePreservation": "docs/project-records/excalibur-arcade/highrise-preservation.json",
+    "estimates": "Pier tops4.8m, roof5.1m, square widths2m/4.2m; mapped centers retained, shapes and trim fitted to April2025StreetView. Original flat floor0.3m preserved, not a surveyed elevation."
   }
 }
