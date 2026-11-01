@@ -1,0 +1,30 @@
+{
+  "pr": 467,
+  "issues": [
+    51,
+    52
+  ],
+  "status": "installed-preview-verified-walk-running",
+  "sourceTriangles": 4931,
+  "degenerateTriangles": 0,
+  "checks": {
+    "staticCircuitSamples": 3018,
+    "staticUnsupported": 0,
+    "panoramaRoofSamples": 55,
+    "martinRoofSamples": 29,
+    "martinApproachSamples": 306,
+    "typecheck": "passed",
+    "siteLightsAndResize": "2 passed",
+    "lazyLod": "passed with tools/ts-register.mjs (initial invocation without loader failed)",
+    "review": "passed",
+    "public": "passed, pre-existing public email warning"
+  },
+  "visual": "All 8 installed daylight preview images inspected; matching baseline cameras retained. Ground-level and retained lobby walks pending.",
+  "walk": "build/city-exteriors/panorama-martin-walk/results.json",
+  "bake": "Not started; single bake only after walk and corrections.",
+  "remaining": [
+    "Finish normal movement and inspect endpoints",
+    "Update block records, one bake, stage and remaining step7 checks",
+    "Final matching daylight/performance probes, smoke, archive, LFS delta, merge next and close claims"
+  ]
+}
