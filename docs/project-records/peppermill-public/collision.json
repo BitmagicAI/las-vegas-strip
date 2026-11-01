@@ -1,0 +1,49 @@
+{
+  "samples": 840,
+  "failures": [],
+  "routes": [
+    {
+      "name": "West entrance to Fireside lounge",
+      "points": [
+        [
+          870,
+          -1965.3
+        ],
+        [
+          876,
+          -1965.3
+        ],
+        [
+          890,
+          -1965.3
+        ],
+        [
+          890,
+          -1970
+        ]
+      ]
+    },
+    {
+      "name": "West entrance to dining aisle",
+      "points": [
+        [
+          870,
+          -1965.3
+        ],
+        [
+          878,
+          -1965.3
+        ],
+        [
+          878,
+          -1959
+        ],
+        [
+          902,
+          -1959
+        ]
+      ]
+    }
+  ],
+  "scope": "Static clearance with current geographic cells; dynamic doors and normal movement checked separately."
+}

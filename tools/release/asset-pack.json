@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1924,
- "bytes": 1173228043,
+ "count": 1926,
+ "bytes": 1174091995,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -360,8 +360,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-3.bin",
-   "bytes": 658439,
-   "sha256": "879c21b4dc57bdc83557436b513332c4c4edac332979243c123aad4f55a82836",
+   "bytes": 665187,
+   "sha256": "2d353cd0f18ca92aa84a8f6c05da861d602c3654b2896746ff3870655fc5e5d1",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "65705938435d63930539a93500303ba941589a4a02d7017e300028e2f73ed5a0",
+   "sha256": "16c6ace7bb8682c20afa71999ed856fe9d738c61375abae41cc23ec58056cda0",
    "kind": "runtime cell manifest"
   },
   {
@@ -10152,14 +10152,26 @@
   },
   {
    "path": "build/strip-landmarks/peppermillRetail-exterior-collision.bin",
-   "bytes": 3340,
-   "sha256": "bdf51426e3c0e5b5bf9e3182160d2e174c43714c79adef5378b24556e75b2e0b",
+   "bytes": 3376,
+   "sha256": "a40fb56a366fbda27492e18ba395ffd0f11c55ffa1cf4b738bb1f61662f3cb6b",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/peppermillRetail-exterior.glb",
-   "bytes": 636836,
-   "sha256": "24fb697972a7f9ec033c1e1af71a33fb1111d0d110f74bc5916c6bb56d09b99e",
+   "bytes": 959436,
+   "sha256": "99be36f2a9c9294b711f827416eb5ef4b151e1bd4775b1ec405c1af7fc7c9aa6",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/peppermillRetail-interior-collision.bin",
+   "bytes": 26476,
+   "sha256": "39b5182f5a0c13da9c4b966acf773aec8542310c8fb340b465948559f3b2d4e3",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/peppermillRetail-interior.glb",
+   "bytes": 507820,
+   "sha256": "f196c83faffd248f99c6059701d7defa1d5821b647b612a66f6e88a641871780",
    "kind": "optimized"
   },
   {
@@ -11316,8 +11328,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 393430,
-   "sha256": "437d3e3850726655c0ce3dd158798b7a74c46563294e204a66072bedc480fc16",
+   "bytes": 393702,
+   "sha256": "d162576541ddae201c7694376b78f48f97d144d894f2c67b6f3bc645ecc90379",
    "kind": "original"
   },
   {

@@ -1,0 +1,141 @@
+{
+  "routes": [
+    {
+      "name": "Street entrance through Fireside lounge and back",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            875,
+            0.24,
+            -1965.3
+          ],
+          "position": {
+            "x": 874.65771484375,
+            "y": 0.2582423973083496,
+            "z": -1965.2994384765625
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            890,
+            0.24,
+            -1965.3
+          ],
+          "position": {
+            "x": 889.656982421875,
+            "y": 0.25828125953674314,
+            "z": -1965.3001708984375
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            890,
+            0.24,
+            -1970
+          ],
+          "position": {
+            "x": 889.9877319335938,
+            "y": 0.25826862335205075,
+            "z": -1969.8475341796875
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            890,
+            0.24,
+            -1965.3
+          ],
+          "position": {
+            "x": 889.9996948242188,
+            "y": 0.2581495332717895,
+            "z": -1965.6195068359375
+          }
+        },
+        {
+          "segment": 5,
+          "reached": true,
+          "goal": [
+            875,
+            0.24,
+            -1965.3
+          ],
+          "position": {
+            "x": 875.323974609375,
+            "y": 0.2694180297851562,
+            "z": -1965.3077392578125
+          }
+        },
+        {
+          "segment": 6,
+          "reached": true,
+          "goal": [
+            868,
+            0,
+            -1965.3
+          ],
+          "position": {
+            "x": 868.3402099609375,
+            "y": 0.15671875953674314,
+            "z": -1965.30029296875
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Street entrance through dining aisle and back",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            877,
+            0.24,
+            -1965.3
+          ],
+          "position": {
+            "x": 876.6867065429688,
+            "y": 0.25828125953674314,
+            "z": -1965.2994384765625
+          }
+        },
+        {
+          "segment": 2,
+          "reached": false,
+          "goal": [
+            877,
+            0.24,
+            -1959
+          ],
+          "position": {
+            "x": 876.83349609375,
+            "y": 0.25825968265533444,
+            "z": -1963.2325439453125
+          }
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "resident": {
+    "landmarks": [
+      "peppermillRetail"
+    ],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

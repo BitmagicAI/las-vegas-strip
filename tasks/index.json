@@ -4959,8 +4959,11 @@
      "tools/resort-blocks/peppermill-retail.json"
     ],
     "builders": [
+     "tools/city-exteriors/check-peppermill-public.py",
      "tools/city-exteriors/test-peppermill-retail.mjs",
+     "tools/city-exteriors/test-peppermill-public.mjs",
      "tools/strip-landmarks/build_peppermill_retail.py",
+     "tools/strip-landmarks/peppermill_public.py",
      "tools/strip-landmarks/peppermill_retail.py"
     ]
    },

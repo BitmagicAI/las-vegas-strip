@@ -3,7 +3,7 @@ from common import *
 from forum_shops import facade_frame
 KEY='peppermillRetail';IDS=['way/'+i for i in ['160585815','160585816','160585820','1381561598','160585814']]
 def exterior(B):
- B.property=KEY+'-exterior';B.detail=0
+ B.property=KEY+'-exterior';B.detail=0;portals=[]
  shapes=[footprint(i) for i in IDS]
  corner=box(807,-1858,818,-1847)
  shapes[4]=shapes[4].difference(corner).union(Point(818,-1858).buffer(10,resolution=12).intersection(corner).intersection(shapes[4]))
@@ -27,10 +27,17 @@ def exterior(B):
      F.box(mat,((lo+hi)/2,h/2,0),(hi-lo,h,.3),True)
     if entry:
      F.box(mat,(L/2,(h+3.2)/2,0),(4,h-3.2,.3),True)
-     F.box('darkglass',(L/2,1.7,.5),(3.8,2.9,.12))
-     for x in [L/2-1.9,L/2,L/2+1.9]:F.box('silver',(x,1.7,.4),(.08,2.9,.08))
+     if idx==0:
+      portals.append(dict(p=F.p(L/2,.24,0),yaw=F.yaw,width=3.8,height=2.9,name='Peppermill public entrance'))
+      for x in [L/2-2,L/2+2]:F.box('silver',(x,1.7,.15),(.08,2.9,.08))
+     else:
+      F.box('darkglass',(L/2,1.7,.5),(3.8,2.9,.12))
+      for x in [L/2-1.9,L/2,L/2+1.9]:F.box('silver',(x,1.7,.4),(.08,2.9,.08))
      F.box('tile',(L/2,.12,.8),(4,.24,2),True)
     F.box('white',(L/2,h-.1,-.16),(L,.22,.5))
+    if idx==0:
+     F.box('pmr-blue-trim',(L/2,3.86,-.46),(L,.18,.15))
+     F.box('pmr-blue-led',(L/2,3.98,-.55),(L,.035,.035))
     if front:
      if idx==4 and L<4:
       F.box('darkglass',(L/2,4.3,-.19),(L,3.2,.08))
@@ -72,10 +79,10 @@ def exterior(B):
     pts=list(poly.exterior.coords)
     for a,b in zip(pts,pts[1:]):
      c=inner.boundary.interpolate(inner.boundary.project(Point(a)));d=inner.boundary.interpolate(inner.boundary.project(Point(b)))
-     B.face('roof',[(a[0],4,a[1]),(b[0],4,b[1]),(d.x,9,d.y),(c.x,9,c.y)],True)
+     B.face('pmr-roof-paint',[(a[0],4,a[1]),(b[0],4,b[1]),(d.x,9,d.y),(c.x,9,c.y)],True)
    B.planar('st-roof',inner,8.6,True)
    F=Frame(B,871.7,-1965,math.pi/2,y=0)
-   F.text('PEPPERMILL',(0,4.3,-.5),1.2,'white')
+   F.text('Peppermill',(0,4.3,-.5),1.5,'pmr-sign-letter')
    F.box('sandstone',(0,3.1,-1.5),(9,.4,3),True)
    for x in [-4,4]:F.box('stone',(x,1.6,-2.5),(.35,3.2,.35),True)
   else:
@@ -83,4 +90,9 @@ def exterior(B):
     for z in np.arange(p.bounds[1]+6,p.bounds[3]-3,13):
      if p.contains(box(x-1.5,z-1,x+1.5,z+1)):
       B.box('st-grey',(x,h+.55,z),(3,1.1,2));B.box('silver',(x,h+1.16,z),(3.1,.12,2.1))
- return dict(key=KEY,name='Peppermill and Strip retail row',center=[855,0,-1915],bounds=list(allp.bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],views={})
+ # Bridge the pre-existing small exterior collider gap at the entrance.
+ B.source='peppermill-entry-threshold'
+ B.box('tile',(871.2,.12,-1965.3),(3.4,.24,4),True)
+ from peppermill_public import interior
+ rooms=interior(B)
+ return dict(key=KEY,name='Peppermill and Strip retail row',center=[855,0,-1915],bounds=list(allp.bounds),structural=True,exteriorOnly=False,portals=portals,zones=rooms['zones'],lights=rooms['lights'],routes=[],views={})

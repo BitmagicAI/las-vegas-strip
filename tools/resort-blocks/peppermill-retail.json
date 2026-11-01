@@ -5,16 +5,19 @@
     {
       "url": "https://earth.google.com/web/@36.1333,-115.1633,620a,160d,35y,90h,78t,0r",
       "imagery": "2024-03-05",
-      "inspected": true
+      "inspected": true,
+      "title": "Google Earth retail aerial"
     },
     {
       "url": "https://earth.google.com/web/@36.13285,-115.1637,620a,180d,35y,55h,78t,0r",
       "imagery": "2022-11-09 to2024-03-05",
-      "inspected": true
+      "inspected": true,
+      "title": "Google Earth retail frontage"
     },
     {
       "url": "https://www.peppermilllasvegas.com/about-us",
-      "inspected": "Text; confirms restaurant beside Ross"
+      "inspected": "Text; confirms restaurant beside Ross",
+      "title": "Official Peppermill about page"
     }
   ],
   "dimensions": "Mapped footprints;Peppermill4m eaves9mhip;Ross8mroof/10mfront;otherretail5.6\u20137m roofs estimated. Walgreens corner rounded within footprint.",
@@ -46,5 +49,43 @@
       "build/optimized/build/strip-landmarks/peppermillRetail-exterior.glb": "24fb697972a7f9ec033c1e1af71a33fb1111d0d110f74bc5916c6bb56d09b99e"
     }
   },
-  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-peppermill-retail.log"
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-peppermill-retail.log",
+  "claim": {
+    "issue": 80,
+    "assignee": "janiverse",
+    "pullRequest": 449
+  },
+  "publicRoomPass": {
+    "revision": "2026-10-31",
+    "status": "installed-local-verification-passed",
+    "evidence": "docs/project-records/peppermill-public",
+    "scope": "Photo-informed Fireside lounge and dining-room public routes; blue eave trim and italic approximation; four neighboring stores retained",
+    "interiorTriangles": 27366,
+    "validation": {
+      "geometry": "Four neighboring stores and labels identical; all prior exterior collision retained;12threshold triangles added",
+      "staticRoutes": "840samplesPASS against current geographic collision cells",
+      "typecheck": "PASS",
+      "tests": "3/3PASS",
+      "sourceViews": "Lounge/dining inspected; angular seating replaced by rounded upholstered arcs",
+      "normalWalk": "PASS: 12 normal-movement segments, lounge and dining return routes; four endpoint captures inspected",
+      "views": "Six matching installed daylight views personally inspected; roof/trim and public rooms visible; decorative and layout approximations retained",
+      "package": "1926 present,0missing,0unoptimized",
+      "runtimeModels": "2changedGLBs,0unoptimized",
+      "bake": "Current;onebake;oneLODcell1,-3+manifest changed;276othercellfilesbyteidentical",
+      "smoke": "PASS9stops zero failed requests/page errors/console errors/unplaced stops"
+    },
+    "remaining": [
+      "Interior partition positions, seating count and dimensions are inferred, not a surveyed plan.",
+      "Fire is static original geometry; basin is an opaque blue finish, not a simulated fire/water system.",
+      "Historical sign typography, dense floral decoration, actual stained-glass designs and reflections remain simplified.",
+      "Other exterior entry registration, parking/landscape/signs and precise tenant dimensions remain incomplete.",
+      "Roof shingle scale/contrast and plain interior wall/ceiling areas need closer photo matching."
+    ],
+    "performance": {
+      "baseline": "docs/project-records/peppermill-public/performance-before.json",
+      "after": "docs/project-records/peppermill-public/performance-after.json",
+      "note": "960x540 matching views. p95 before/after ms: front17.8/21.7,row17.8/21.0,Ross18.8/18.3,Walgreens30.9/27.6,lounge26.7/24.5,dining17.4/25.5. Shared workstation variance; dining slower than empty-room baseline. No broad speedup claim."
+    },
+    "newLfsBytes": 2569798
+  }
 }

@@ -4,6 +4,7 @@ import numpy as np
 from pathlib import Path
 OUT=Path('build/strip-landmarks');materials={}
 colors={'white':'e8e7de','ivory':'e4dac7','stone':'bfb5a3','sandstone':'bbaa90','marble':'e2ded3','plaster':'ddd9d0','panel':'877467','roof':'8b8580','silver':'afb8bd','steel':'52616a','brass':'b99a56','bronze':'94704c','gold':'cfb060','blackiron':'242a2a','charcoal':'22292b','blue':'17619c','blue2':'4a91af','blue3':'9cbbc9','red':'bb3c44','warm':'fff2d2','screen':'1595ac','glass':'adc4cb','shopglass':'b0cbd0','cabinglass':'8faebc','darkglass':'293e47','water':'398f90','velvet':'777066','walnut':'614a39','grout':'b2afa6','foliage':'395942','bark':'77614a','vortex0':'937797','vortex1':'75638f','vortex2':'6989ab','ledblue':'356daa','cloudskin':'ddd9cc','pinkstone':'bb9d93','brick':'9a6650','bricklight':'b07c60','copper':'719588','copperpanel':'9e624d','copper2':'a7755c','copper3':'92593e','concrete':'8e8c89','magenta':'db146e','ice':'d6e6e6','tile':'d5cec1','letter':'f5eedc','carpet':'31343f','floralcarpet':'43373b','skyglass':'c9d8df'}
+colors.update({'pmr-carpet':'292132','pmr-ceiling':'302b3c','pmr-wall':'3c2945','pmr-rose':'b54e80','pmr-blue':'424684','pmr-cyan':'458aab','pmr-basin':'353f73','pmr-water':'315b9a','pmr-dark':'282335','pmr-table':'56515d','pmr-chrome':'b2b5bc','pmr-mirror':'657185','pmr-bottle':'416c62','pmr-bark':'56404a','pmr-blossom':'aa668e','pmr-lamp-pink':'d17fa8','pmr-lamp-blue':'719cae','pmr-flame':'ffc36c','pmr-pink-led':'d650b0','pmr-blue-led':'5f90da','pmr-blue-trim':'315a9f','pmr-roof-paint':'7a756e','pmr-sign-letter':'e2dfd7'})
 colors.update({'cv-service-asphalt':'424345','cv-concrete-paint':'b7b1a4'})
 colors.update({'fg-path':'b4a28c','fg-soil-paint':'475d36','fg-floor':'b5aa96','fg-pond_water':'457b76','fg-basin-paint':'33473e','fg-stone':'8f8b77','fg-roof-paint':'c7c5b8','fg-white-stucco':'d9d7c7','fg-coping-paint':'b9bcae','fg-glass':'344648','fg-frame-paint':'77756b','fg-tan-stucco':'b4a389','fg-green-roof-paint':'405b4c','fg-wood-paint':'574e3d','fg-equipment-paint':'b4b7ac','fg-dark-paint':'343c38'})
 colors.update({'pl-dark-stucco':'535856'})
@@ -292,6 +293,19 @@ def material(k):
   bs.inputs['Emission Color'].default_value=(*linear,1);bs.inputs['Emission Strength'].default_value=.18
  if k.startswith('lob-'):
   bs.inputs['Roughness'].default_value=.94;bs.inputs['Specular IOR Level'].default_value=.18
+ if k.startswith('pmr-'):
+  bs.inputs['Roughness'].default_value=.88
+  if k in ['pmr-chrome','pmr-mirror']:bs.inputs['Metallic'].default_value=.72;bs.inputs['Roughness'].default_value=.25
+  if k in ['pmr-pink-led','pmr-blue-led','pmr-flame','pmr-lamp-blue','pmr-lamp-pink']:
+   bs.inputs['Emission Color'].default_value=(*linear,1);bs.inputs['Emission Strength'].default_value=.7
+ if k=='pmr-roof-paint':
+  # Original staggered shingle courses; no reference-image pixels.
+  n=512;vv,uu=np.mgrid[0:n,0:n];row=vv//64;col=((uu+(row%2)*64)%512)//128
+  rng=np.random.default_rng(160585815);tiles=rng.uniform(-.07,.07,(8,4));tone=tiles[row,col]+rng.normal(0,.012,(n,n))
+  seam=(vv%64<3)|((uu+(row%2)*64)%128<2);tone[seam]-=.12
+  pix=np.ones((n,n,4),dtype=np.float32);pix[:,:,:3]=np.clip(rgb[None,None,:]+tone[:,:,None],0,1)
+  im=bpy.data.images.new('Original Peppermill staggered shingles',width=n,height=n);im.pixels.foreach_set(pix.flatten());im.pack()
+  tx=m.node_tree.nodes.new('ShaderNodeTexImage');tx.image=im;m.node_tree.links.new(tx.outputs['Color'],bs.inputs['Base Color']);bs.inputs['Roughness'].default_value=.94
  if k=='lob-glyph-paint':
   for suffix,socket in [('stone','Base Color'),('normal',None)]:
    im=bpy.data.images.load(str((OUT/('textures/luxor-obelisk-original-'+suffix+'.png')).resolve()));im.pack()
@@ -454,13 +468,14 @@ def add(name):
   if g['material'].startswith('luxor-sculpt-') or g['material'] in ['lob-sculpt-stone','ph-disc','ice','rootwood','rope','gondola-lacquer','gondola-upholstery','gondola-brass','gondola-chrome','gondola-wood'] or (g['material']=='bronze' and g['source']=='polo-lobby'):
    for polygon in me.polygons:polygon.use_smooth=True
   if g['material'].startswith('vi-'):VM.uvs(me,g['material'])
-  if g['material'] in patterns or g['material'] in ['bcr-tile-paint','bcr-curved-tile-paint','lob-glyph-paint','mm-display-paint','wm-led-paint','ccourt-fascia-paint','ccourt-column-color-paint','bhs-roof-metal-paint','sky','ph-led-cylinder','luxor-pyramid','rw-led','bhc-roof-paint','oo-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint','ms-white-brick-paint','mk-peeling-white-paint','cu-board0','cu-board1','cu-board2']:
+  if g['material'] in patterns or g['material'] in ['pmr-roof-paint','bcr-tile-paint','bcr-curved-tile-paint','lob-glyph-paint','mm-display-paint','wm-led-paint','ccourt-fascia-paint','ccourt-column-color-paint','bhs-roof-metal-paint','sky','ph-led-cylinder','luxor-pyramid','rw-led','bhc-roof-paint','oo-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint','ms-white-brick-paint','mk-peeling-white-paint','cu-board0','cu-board1','cu-board2']:
    uv=me.uv_layers.new(name='Metres')
    for poly in me.polygons:
     axis=max(range(3),key=lambda i:abs(poly.normal[i]))
     for li in poly.loop_indices:
      p=me.vertices[me.loops[li].vertex_index].co
-     if g['material']=='bcr-tile-paint':uv.data[li].uv=((p.y if abs(poly.normal.x)>abs(poly.normal.y) else p.x)/1.12,p.z/.78)
+     if g['material']=='pmr-roof-paint':uv.data[li].uv=((p.y if abs(poly.normal.x)>abs(poly.normal.y) else p.x)/2.4,p.z/1.3)
+     elif g['material']=='bcr-tile-paint':uv.data[li].uv=((p.y if abs(poly.normal.x)>abs(poly.normal.y) else p.x)/1.12,p.z/.78)
      elif g['material']=='bcr-curved-tile-paint':uv.data[li].uv=(math.atan2(-p.y-294.85,p.x+215.4)*18/1.12,math.hypot(p.x+215.4,-p.y-294.85)/1.6)
      elif g['material']=='ccourt-fascia-paint':uv.data[li].uv=(.5,(p.z-4.6)/1.0)
      elif g['material']=='ccourt-column-color-paint':uv.data[li].uv=(.5,(p.z-3.6)/.95)
@@ -490,6 +505,9 @@ def add(name):
    bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.convert(target='MESH')
    for vert in o.data.vertices:vert.co.z+=1.65*(vert.co.x/7.62)**2
    o.select_set(False)
+  if t['material']=='pmr-sign-letter':
+   fp=Path('/System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf')
+   if fp.exists():cu.font=bpy.data.fonts.load(str(fp),check_existing=True)
   if t['material'] in ['cv-white-letter','lob-blue-letter']:
    fp=Path('/System/Library/Fonts/Supplemental/Arial Bold.ttf')
    if fp.exists():cu.font=bpy.data.fonts.load(str(fp),check_existing=True)
