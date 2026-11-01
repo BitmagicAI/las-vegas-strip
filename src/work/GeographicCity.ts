@@ -1,3 +1,4 @@
+import {cityCellsEnabled,loadCellVisuals,loadCellCollision,type CityCollision} from './CityCells.js';
 import {unmergedCasterShadows,unmergedCasterShadowsSteps} from './CityShadows.js';
 import {runSliced} from './FrameBudget.js';
 import {CollisionPack,loadCollisionPack} from './CollisionPack.js';
@@ -31,7 +32,7 @@ export class GeographicCity {
     /** False while a background load is still building the city: update leaves the hidden root alone. */
     private shown=false;
     private lod:CityLod|null=null;
-    private collision:CollisionPack|null=null;
+    private collision:CityCollision|null=null;
     /** cell key -> mesh in `collision` */
     private byCell=new Map<number,number>();
     /** cell key -> its static body */
@@ -53,12 +54,12 @@ export class GeographicCity {
     async load(background=false,focus?:()=>THREE.Vector3):Promise<void>{
         const parts=Promise.all([this.passages.load(),this.sphere.load(),this.highrises.load(background),this.landmarks.load(background,focus),this.resortBlocks.load(background,focus)]);
         // the city's 74 MB come down while the landmarks above are parsed (Prefetch.ts)
-        prefetch([await glbUrl('/build/geographic-strip/city.glb'),runtimeUrl('/build/geographic-strip/city-colliders.bin')]);
+        if(!cityCellsEnabled)prefetch([await glbUrl('/build/geographic-strip/city.glb'),runtimeUrl('/build/geographic-strip/city-colliders.bin')]);
         if(!background)await parts;
         const collidersPath='/build/geographic-strip/city-colliders.bin',prefetched=takePrefetched(runtimeUrl(collidersPath));
         // 1,516 collision cells, 8.6 MB packed (CollisionPack.ts), decoded in the meshopt workers
-        const [gltf,collision]=await Promise.all([loadGltf(new GLTFLoader(),await glbUrl('/build/geographic-strip/city.glb')),
-            (prefetched??Promise.resolve(null)).then(bytes=>bytes?CollisionPack.decode(bytes):loadCollisionPack(collidersPath))]);
+        const [gltf,collision]=await Promise.all([cityCellsEnabled?loadCellVisuals():loadGltf(new GLTFLoader(),await glbUrl('/build/geographic-strip/city.glb')),
+            cityCellsEnabled?loadCellCollision():(prefetched??Promise.resolve(null)).then(bytes=>bytes?CollisionPack.decode(bytes):loadCollisionPack(collidersPath))]);
         this.collision=collision;
         for(let i=0;i<collision.count;i++)this.byCell.set(cellKey(collision.cellX![i]!,collision.cellZ![i]!),i);
         this.root=gltf.scene;this.root.name='OpenStreetMap / geographic Strip';

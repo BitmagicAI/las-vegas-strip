@@ -15,6 +15,7 @@
  * build/optimized/<served path> and records the source's size and modification time in
  * build/optimized/manifest.json. src/work/OptimizedGlb.ts serves the copy only while the source still has
  * that size and time, so a regenerated source always wins. --remove deletes matching installs.
+ * --no-stage installs local comparison candidates without staging a release snapshot.
  * Originals stay in place: Blender and the resort pipelines read and patch them byte by byte.
  */
 import {spawnSync} from 'node:child_process';
@@ -54,4 +55,4 @@ if(!dry){fs.mkdirSync(OUT,{recursive:true});fs.writeFileSync(MANIFEST,JSON.strin
 const MB=n=>(n/1048576).toFixed(1);
 console.log(remove?`removed ${removed}`:`installed ${installed} [${variant}] (${MB(before)} -> ${MB(after)} MB), skipped ${skipped}${dry?' (dry run)':''}; manifest has ${Object.keys(manifest.files).length} entries`);
 // The repository's runtime set (runtime-assets/, Git LFS) follows every install, ready to commit (docs/ASSETS.md).
-if(!dry&&(installed||removed)){const r=spawnSync('python3',['tools/release/asset-pack.py','stage'],{cwd:ROOT,stdio:'inherit'});if(r.status!==0)console.warn('runtime-assets/ not staged: run `pnpm assets`');}
+if(!dry&&!arg('no-stage')&&(installed||removed)){const r=spawnSync('python3',['tools/release/asset-pack.py','stage'],{cwd:ROOT,stdio:'inherit'});if(r.status!==0)console.warn('runtime-assets/ not staged: run `pnpm assets`');}
