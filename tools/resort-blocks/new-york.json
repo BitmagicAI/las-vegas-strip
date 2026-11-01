@@ -96,7 +96,7 @@
     "build/strip-landmarks/newYorkFrontage-exterior.glb": "769a3db86f99a6499bc6ea8f646064aa411407233fafafb5c6455b8d72cfe9e3"
   },
   "arrivalLandscapePass": {
-    "status": "installed-preview-verification-in-progress",
+    "status": "installed-locally-verified",
     "issue": 31,
     "pullRequest": 454,
     "research": "docs/project-records/nyny-arrival-landscape/research.json",
@@ -105,6 +105,11 @@
     "estimates": "Island34x6.2m, mound0.9m, two broadleaf trees6.1–6.5m; dimensions/species/counts inferred, not survey. Existing coaster supports retained.",
     "geometry": "docs/project-records/nyny-arrival-landscape/geometry.json",
     "collision": "docs/project-records/nyny-arrival-landscape/collision.json",
-    "walking": "docs/project-records/nyny-arrival-landscape/normal-walk.json"
+    "walking": "docs/project-records/nyny-arrival-landscape/normal-walk.json",
+    "after": "build/city-exteriors/nyny-landscape-after",
+    "smoke": "docs/project-records/nyny-arrival-landscape/smoke.json",
+    "assetDelta": "docs/project-records/nyny-arrival-landscape/asset-delta.json",
+    "performance": "docs/project-records/nyny-arrival-landscape/performance-comparison.json",
+    "performanceCaveat": "At 960x540 ultra, final p50 changed by -0.2 to +1.6 ms against baseline. Final p95: front 38.4, aerial 17.6, under-canopy 36.5, east 17.9 ms; under-canopy is +9.0 ms. One repeat measured 44.4/17.7/42.7/18.4 ms respectively. This does not establish stall-free performance: front/under-canopy tails remain variable and slower in the repeat. No new runtime lights or shaders; the two foliage meshes add geometry. Retain these measurements as a performance limitation for later profiling, not a no-regression claim."
   }
 }

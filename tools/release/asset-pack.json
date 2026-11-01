@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1926,
- "bytes": 1175102025,
+ "bytes": 1187533467,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -90,8 +90,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_2.bin",
-   "bytes": 769787,
-   "sha256": "b14d43b96e83176ad7f7fcbe27cdd23f817e2f01dc974836df46d18f168f5320",
+   "bytes": 771735,
+   "sha256": "dd1f0017645dda9c3322b4453d4174029c7070c9cd079c7dd143ac72e457ebfe",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "fec4e420ca600ee0777715a3962fe19a63f0668cff3b821dec1d239f6bf9c338",
+   "sha256": "b9207d6192c564ea7879369e50904cb13bfebf5ed9f91e863f4a206418456845",
    "kind": "runtime cell manifest"
   },
   {
@@ -9864,14 +9864,14 @@
   },
   {
    "path": "build/strip-landmarks/nynyArrival-exterior-collision.bin",
-   "bytes": 1100,
-   "sha256": "91b022712526f2b0ae5775ad4ff989d339b86d98b02ed57fd53babcf5be143a8",
+   "bytes": 2764,
+   "sha256": "d8dafb27893dd0e399ad40d68a90ca3063dee05993c6838a7819da1f2bbcb0f6",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/nynyArrival-exterior.glb",
-   "bytes": 278216,
-   "sha256": "3d0237f37b37193ce9ae36f8ff7ccd3f33cbd8ef958961d461a9a86f68e89fe3",
+   "bytes": 12706044,
+   "sha256": "3f2c08aad627132430f9e9407353a846edb3b9349a052cab2f1eb7c36c3612e8",
    "kind": "optimized"
   },
   {
@@ -11328,8 +11328,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 393702,
-   "sha256": "d162576541ddae201c7694376b78f48f97d144d894f2c67b6f3bc645ecc90379",
+   "bytes": 393704,
+   "sha256": "622b4b77fa950c682b95c2652ef8e5691abf131a1b97b7134be18fb62d956c58",
    "kind": "original"
   },
   {
