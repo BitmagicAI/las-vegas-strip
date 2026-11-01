@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-30T18:58:31.677Z",
- "totalBytes": 3623911556,
- "count": 877,
+ "generated": "2026-11-01T00:58:13.527Z",
+ "totalBytes": 3626842920,
+ "count": 881,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -412,7 +412,7 @@
    "cls": "level",
    "loader": "src/work/GeographicCity.ts (cell migration)",
    "when": "boot",
-   "bytes": 7085672,
+   "bytes": 7080644,
    "preset": "level",
    "overrides": []
   },
@@ -7928,6 +7928,42 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
    "bytes": 6695004,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/westwood-2650-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 430916,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/highland-steel-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 556384,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/highland-steel-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 1810492,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/creel-highland-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 138600,
    "preset": "level",
    "overrides": []
   }

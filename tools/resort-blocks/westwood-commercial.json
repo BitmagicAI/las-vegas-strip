@@ -1,0 +1,314 @@
+{
+  "id": "westwood-commercial",
+  "name": "2650 Westwood, Highland Steel and Creel",
+  "status": "refinement-deferred",
+  "authoringStatus": "Installed, visually inspected and walked; release checks deferred",
+  "mappedIds": [
+    "way/464694101",
+    "way/464694099",
+    "way/464694100"
+  ],
+  "claim": {
+    "issues": [
+      439,
+      441
+    ],
+    "assignee": "janiverse",
+    "pullRequest": 440
+  },
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/search/2650+Westwood+Drive+Las+Vegas",
+      "observed": "Address pin inside mapped building; aerial shows adjoining higher north and lower south masses. Listing associates Digital Lizard, independently unconfirmed."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1416397,-115.1716678,3a,75y,44.61h,90t/data=!3m4!1e1!3m2!1sNDKKf3vLoCOS6SglkQvUjw!2e0",
+      "imageDate": "October 2024",
+      "observed": "White scored masonry, dark cap, inset brick entrance band, dark vertical glazing, concrete sidewalk, gravel and clipped shrubs."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1418229,-115.1715881,3a,75y,44.61h,90t/data=!3m4!1e1!3m2!1sMYVF8GPoYsxyj_PHJ1hHAw!2e0",
+      "imageDate": "October 2024",
+      "observed": "Higher north white mass with brick entrance band; lower south mass has rooftop mechanical equipment. Height difference visible; exact dimensions inferred."
+    },
+    {
+      "url": "https://www.cushmanwakefield.com/en/united-states/properties/for-sale/warehousedistribution/nv/las-vegas/2650-westwood-dr/s119447304s119447304-s",
+      "accessed": "2026-10-31",
+      "observed": "Broker identifies 19,127 SF building on 24,394 SF lot, built 1970; linked brochure unavailable (HTTP410).",
+      "brochureStatus": "Linked PDF returned HTTP410 through browser fetch and direct download; use available Street View and listing photographs without waiting."
+    },
+    {
+      "url": "https://highlandsteellv.com/",
+      "observed": "Official address 2621 S Highland; steel/ornamental stock and customer service. Does not establish the whole mapped building occupancy."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1419712,-115.1699528,3a,90y,270h,90t/data=!3m7!1e1!3m5!1spttzYBKm_8nqMozAy4wicg!2e0",
+      "imageDate": "January 2026",
+      "observed": "Low cream/yellow Highland Steel storefront with customer entrance, barred displays and large delivery opening. Adjoining south Creel warehouse is tall beige masonry with blue-grey recessed vertical bands/cap; palms and evergreen at frontage. Business pin lies on forecourt; footprint99 is low strip and100 is taller south complex."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Highland+Steel+%26+Ornamental+Supply/",
+      "photoId": "CIHM0ogKEICAgIDUsfvntgE",
+      "author": "Angel Alfonso",
+      "imageDate": "August 2019",
+      "observed": "Warehouse aisle, low concrete ceiling with strip fixtures/conduit, rows of steel stock; not evidence that all warehouse areas are public."
+    },
+    {
+      "url": "https://www.google.com/maps/place/Highland+Steel+%26+Ornamental+Supply/",
+      "photoId": "CIHM0ogKEICAgIDUsfvTnQE",
+      "author": "Angel Alfonso",
+      "imageDate": "August 2019",
+      "observed": "Blue display board carrying light ornamental gate samples and SERVICE COUNTER arrow; supports customer-facing display use, not full floor-plan dimensions."
+    }
+  ],
+  "components": [
+    {
+      "id": "westwood-2650",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "highland-steel",
+      "status": "installed and visually inspected"
+    },
+    {
+      "id": "creel-highland",
+      "status": "installed and visually inspected"
+    }
+  ],
+  "routes": [
+    {
+      "building": "westwood-2650",
+      "name": "Frontage approach 1",
+      "points": [
+        [
+          132.0122868528356,
+          0.12,
+          -2862.375640469669
+        ],
+        [
+          135.69812397325109,
+          0.12,
+          -2869.475964738445
+        ]
+      ]
+    },
+    {
+      "building": "westwood-2650",
+      "name": "Frontage approach 2",
+      "points": [
+        [
+          144.4963559354901,
+          0.12,
+          -2890.0777749696895
+        ],
+        [
+          148.29320833511736,
+          0.12,
+          -2897.119359440208
+        ]
+      ]
+    },
+    {
+      "building": "highland-steel",
+      "name": "Public display entry",
+      "points": [
+        [
+          259.1327137364514,
+          0.12,
+          -2910.5102869187413
+        ],
+        [
+          257.6184212466904,
+          0.12,
+          -2911.282891769524
+        ],
+        [
+          255.8369006705009,
+          0.12,
+          -2912.191838652798
+        ],
+        [
+          252.63016363335984,
+          0.12,
+          -2913.8279430426915
+        ]
+      ]
+    },
+    {
+      "building": "highland-steel",
+      "name": "Counter approach",
+      "points": [
+        [
+          254.58983626716827,
+          0.12,
+          -2912.82810147109
+        ],
+        [
+          252.54470577980177,
+          0.12,
+          -2908.819680174664
+        ]
+      ]
+    },
+    {
+      "building": "creel-highland",
+      "name": "Warehouse public frontage",
+      "points": [
+        [
+          250.34739755507476,
+          0.12,
+          -2886.8941722780814
+        ],
+        [
+          224.61290555028867,
+          0.12,
+          -2838.0885589231943
+        ]
+      ]
+    }
+  ],
+  "views": [
+    {
+      "id": "westwood-2650-front",
+      "eye": [
+        117.9682298616574,
+        3.6,
+        -2874.1728631609867
+      ],
+      "target": [
+        135.719040533597,
+        3,
+        -2864.958270359948
+      ],
+      "status": "installed daylight inspected",
+      "beforeCapture": "build/city-exteriors/westwood-commercial-before/westwood-commercial-westwood-2650-front.png",
+      "afterCapture": "build/city-exteriors/westwood-commercial-after/westwood-commercial-westwood-2650-front.png"
+    },
+    {
+      "id": "westwood-2650-roof",
+      "eye": [
+        199.5406379321184,
+        65,
+        -2831.9419871888213
+      ],
+      "target": [
+        154.5406379321184,
+        3,
+        -2871.9419871888213
+      ],
+      "status": "installed daylight inspected",
+      "beforeCapture": "build/city-exteriors/westwood-commercial-before/westwood-commercial-westwood-2650-roof.png",
+      "afterCapture": "build/city-exteriors/westwood-commercial-after/westwood-commercial-westwood-2650-roof.png"
+    },
+    {
+      "id": "highland-steel-front",
+      "eye": [
+        274.90644547380003,
+        3.6,
+        -2903.360504608897
+      ],
+      "target": [
+        257.09123971190525,
+        3,
+        -2912.449973441637
+      ],
+      "status": "installed daylight inspected",
+      "beforeCapture": "build/city-exteriors/westwood-commercial-before/westwood-commercial-highland-steel-front.png",
+      "afterCapture": "build/city-exteriors/westwood-commercial-after/westwood-commercial-highland-steel-front.png"
+    },
+    {
+      "id": "highland-steel-roof",
+      "eye": [
+        282.61956599865584,
+        65,
+        -2882.611075756012
+      ],
+      "target": [
+        237.61956599865582,
+        3,
+        -2922.611075756012
+      ],
+      "status": "installed daylight inspected",
+      "beforeCapture": "build/city-exteriors/westwood-commercial-before/westwood-commercial-highland-steel-roof.png",
+      "afterCapture": "build/city-exteriors/westwood-commercial-after/westwood-commercial-highland-steel-roof.png"
+    },
+    {
+      "id": "highland-display",
+      "eye": [
+        256.4586142126493,
+        1.75,
+        -2911.6501078418696
+      ],
+      "target": [
+        250.32871701667253,
+        1.6,
+        -2911.297460189452
+      ],
+      "status": "installed daylight inspected",
+      "beforeCapture": "build/city-exteriors/westwood-commercial-before/westwood-commercial-highland-display.png",
+      "afterCapture": "build/city-exteriors/westwood-commercial-after/westwood-commercial-highland-display.png"
+    },
+    {
+      "id": "creel-highland-front",
+      "eye": [
+        273.924206515791,
+        5.5,
+        -2843.2749440335024
+      ],
+      "target": [
+        235.88793555914782,
+        5,
+        -2863.330917999202
+      ],
+      "status": "installed daylight inspected",
+      "beforeCapture": "build/city-exteriors/westwood-commercial-before/westwood-commercial-creel-highland-front.png",
+      "afterCapture": "build/city-exteriors/westwood-commercial-after/westwood-commercial-creel-highland-front.png"
+    },
+    {
+      "id": "creel-highland-roof",
+      "eye": [
+        253.73743215593032,
+        65,
+        -2824.8868057248046
+      ],
+      "target": [
+        208.73743215593032,
+        3,
+        -2864.8868057248046
+      ],
+      "status": "installed daylight inspected",
+      "beforeCapture": "build/city-exteriors/westwood-commercial-before/westwood-commercial-creel-highland-roof.png",
+      "afterCapture": "build/city-exteriors/westwood-commercial-after/westwood-commercial-creel-highland-roof.png"
+    }
+  ],
+  "checks": {
+    "sourceClearance": "PASS: 1233 floor samples; 0 body obstructions",
+    "sourceCameraPlacement": "PASS: exterior origins outside mapped building volumes",
+    "preservation": "PASS: 67 visual and 67 collision faces removed; all other vertices, faces and metadata preserved",
+    "typecheck": "PASS",
+    "publicCheck": "PASS: existing inventory email warning",
+    "runtimeGlbs": "PASS: 5 checked; 0 not optimized",
+    "optimization": "PASS: all four new GLBs plus touched city cell; WebP variant installed",
+    "bake": "PASS: current inputs; only cell0,-4 changes",
+    "assetPack": "PASS: 1924 present; 0 missing; 0 not optimized",
+    "performance": "Matched seven views: p95 before18.3\u201319.1ms, after18.2\u201318.7ms; single run",
+    "visual": "PASS: all seven installed daylight views inspected",
+    "installedWalk": "PASS: five routes in both directions, fourteen segments; normal keyboard movement",
+    "smoke": "PASS: clean repeat, 9 stops; 0 failed requests, page errors or console errors. First run had one existing Paris carpet pipeline error; preserved in smoke-first-run.json."
+  },
+  "remaining": [
+    "Heights, equipment locations, unseen elevations and Creel rear massing are inferred.",
+    "Highland customer display motifs use August 2019 photos; room layout is inferred, not a surveyed current interior. Warehouse remains inaccessible.",
+    "Creel palms/evergreen planting and fine facade details are not yet reconstructed; this is not photorealistic completion."
+  ],
+  "evidence": {
+    "sourceClearance": "docs/project-records/westwood-2650/source-route-report.json",
+    "placement": "docs/project-records/westwood-2650/placement-report.json",
+    "performance": "docs/project-records/westwood-2650/installed-performance.json",
+    "preservation": "docs/project-records/westwood-2650/preservation.json",
+    "cells": "docs/project-records/westwood-2650/cell-changes.json",
+    "lfs": "docs/project-records/westwood-2650/lfs-change.json",
+    "installedWalk": "docs/project-records/westwood-2650/installed-walk.json",
+    "smoke": "docs/project-records/westwood-2650/installed-smoke.json"
+  }
+}
