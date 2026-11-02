@@ -13,10 +13,39 @@
     {
       "url": "https://www.allegiantstadium.com/assets/doc/Entrance-Maps_4000x2044-3e1720d955.pdf",
       "evidence": "Official entrance map identified; visual review pending."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0922,-115.1833,19z/data=!3m1!1e3",
+      "evidence": "Aerial personally inspected: broad paved north forecourt, curved entrance canopy, narrow landscaped street edge and two white temporary tent rows. Acquisition date unavailable."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0927,-115.1833&heading=180&pitch=5&fov=80",
+      "date": "2025-01",
+      "evidence": "Street View snapped36.0927867,-115.1833401, panoramaPeBwr2Hrkj5gFjVrKGtYEg. North glass aperture, black/silver framing, low entrance canopy, palms, planted retaining edge and crosswalk inspected."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09265,-115.1825&heading=210&pitch=0&fov=65",
+      "date": "2025-01",
+      "evidence": "Street View snapped36.0927554,-115.1825488, panorama2_KAFfiIaIsYOj3kZS0YbQ. Broadleaf trees behind low concrete planted edge, temporary tents, curved low entrance canopy. Do not confuse tents with permanent redevelopment."
+    },
+    {
+      "url": "https://www.raiders.com/photos/top-shots-best-photos-of-allegiant-stadium-inaugural-season-2020",
+      "date": "2020 season",
+      "provider": "Jason ORear / Las Vegas Raiders",
+      "evidence": "Official completed photos25 and26 personally inspected.25 southwest aerial shows facade ribbon shapes/roof membrane/service-edge geometry.26 north aerial shows broad raised central arrival terrace, paired broad stairs left/right, centered Raider Image store projecting forward below terrace, planted curved flank edges and low continuous curved North Entry canopy. Existing generator lacks these assemblies."
+    },
+    {
+      "url": "https://static.clubs.nfl.com/image/private/t_photogallery/f_auto/raiders/fdws216lhk3txwsfgkmh.jpg",
+      "evidence": "Direct official photo26 north terrace; visual reference only, no image committed."
     }
   ],
   "decisions": [
     "Use corroborated built entry configuration, not proposed2027\u201328 plaza."
   ],
-  "next": "Inspect baseline captures, Google Earth/Street View and official built-condition photographs/maps; register routes before authoring."
+  "next": "Capture elevated north terrace baseline; audit mapped paving ownership and source collision. Author original inferred terrace/stair/store exterior and curved entrance canopy only after ensuring public road/sidewalk preservation.",
+  "baselineReview": "All three neutral daylight captures inspected. Existing black oval shell, pale membrane, mapped paved/green approaches. North entry closed glass wall, tiny centered sign, no detailed stair/terrace assembly. P95 front19.5/south18.3/entry19.0ms.",
+  "discrepancies": [
+    "Existing narrow upper glazing and crossing diagonal ribbons differ from broad north opening/curved frame in2020official+2025StreetView. Preserve discrepancy for explicit scoped correction; do not claim existing facade accurate.",
+    "North terrace elevation and store/canopy dimensions require inferred registration; reference photographs are not measured survey."
+  ]
 }
