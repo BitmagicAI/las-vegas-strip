@@ -14,9 +14,11 @@
   "capsuleSamples": 820,
   "capsuleFailures": 0,
   "actualWalk": "Seven circuits, 170 forward/reverse movement segments passed; all 14 endpoint images personally inspected. Includes tennis gate access.",
-  "sharedBake": "Single grouped bake started; not yet complete.",
-  "runtimeCheck": "pending staging",
+  "sharedBake": "Passed: one grouped bake, cells 1,-1 and 1,0 changed.",
+  "runtimeCheck": "Passed: 3 changed GLBs, zero unoptimized.",
   "smoke": "pending",
   "finalPerformance": "pending",
-  "daylightReview": "All 12 initial and eight corrected exterior views personally inspected; corrected Park court clear of road, Wells path/pergola benches pass movement."
+  "daylightReview": "All 12 initial and eight corrected exterior views personally inspected; corrected Park court clear of road, Wells path/pergola benches pass movement.",
+  "assetPack": "Passed: 1930 present, zero missing, zero unoptimized; stage 9 copied, 1921 unchanged, zero removed.",
+  "bakeFreshness": "Passed"
 }
