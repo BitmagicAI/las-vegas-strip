@@ -98,10 +98,19 @@
       "Carnaval 144 roof samples PASS"
     ],
     "remaining": [
-      "Actual continuous walk running session91616; inspect result and endpoint captures.",
-      "Garage actual vehicle validation pending.",
-      "Unchanged retail legacy test requires absent historical samples; do not fabricate a pass.",
-      "One shared bake/stage, runtime/pack/smoke checks and final records/PR still pending."
-    ]
+      "Finish grouped bake, stage assets and verify unchanged cells",
+      "Run runtime/pack/smoke checks and archive evidence",
+      "Finish PR description, mark ready and merge only after all applicable local checks"
+    ],
+    "movement": {
+      "walking": "104 continuous forward/reverse segments passed across pool and pavilion circuits; all four endpoint screenshots inspected.",
+      "driving": "Real jeep drove 34m ascending ground-to-first-deck ramp continuously; passed, both endpoint screenshots inspected. End-turns and upper ramps remain unverified.",
+      "cameraDiscrepancy": "Third-person garage chase camera clips underside at ramp start; vehicle traversal passed. Existing camera behavior not changed in this asset pass."
+    }
+  },
+  "sharedBake": {
+    "status": "Running once for grouped PR",
+    "session": 56440,
+    "log": "/tmp/royale-carnaval-bake.log"
   }
 }

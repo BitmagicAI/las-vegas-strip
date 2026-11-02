@@ -109,5 +109,12 @@
       "build/strip-landmarks/carnavalCourt-exterior.glb": "4e13d572368a5129cb0775bee6df4169a97aa5ff2fac03d3a2721987fdf6507e",
       "build/strip-landmarks/carnavalCourt-exterior-collision.json": "f19f3178d4e5f93484a196d67d71adbf74edafd1032a255eec2b450d275a0f6a"
     }
+  },
+  "refinement20261102": {
+    "record": "docs/project-records/royale-carnaval-refinement/research.json",
+    "pr": 473,
+    "status": "Installed local review passed; release checks pending",
+    "preservation": "All prior model nodes and collision triangles retained.",
+    "scope": "Suspended purple fascia, six mesh cages and three panels above clear guest circulation."
   }
 }
