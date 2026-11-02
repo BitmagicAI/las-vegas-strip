@@ -80,5 +80,28 @@
     "captureDirectories": "build/city-exteriors/{royale,royale-garage,carnaval}-refinement-installed",
     "sharedBake": "Not run yet.",
     "testDiscrepancy": "Legacy casino-royale test needs missing generated exterior source JSON; no assertion failure reached. Reconstruct test input without overwriting preserved runtime assets."
+  },
+  "installedReview": {
+    "viewsInspected": 11,
+    "findings": [
+      "Courtyard loungers and parasol tables visible around retained basin; planting and ground-detail view still needed.",
+      "Garage fixtures visible under retained deck; unchanged exterior piers/rails.",
+      "Carnaval overhead fascia/cages/panels visible above guest ring; entrances remain visually open."
+    ],
+    "performance": "All initial matching view P95 changes <=2.8%; large apparent improvements are timing variance, not claimed speedups. Raw comparison saved.",
+    "checks": [
+      "bitmagic check PASS",
+      "review.py PASS",
+      "check-public.py PASS with existing unrelated email warning",
+      "Casino Royale 102 roof + 1 courtyard support PASS",
+      "Garage 645 floor/headroom samples PASS",
+      "Carnaval 144 roof samples PASS"
+    ],
+    "remaining": [
+      "Actual continuous walk running session91616; inspect result and endpoint captures.",
+      "Garage actual vehicle validation pending.",
+      "Unchanged retail legacy test requires absent historical samples; do not fabricate a pass.",
+      "One shared bake/stage, runtime/pack/smoke checks and final records/PR still pending."
+    ]
   }
 }
