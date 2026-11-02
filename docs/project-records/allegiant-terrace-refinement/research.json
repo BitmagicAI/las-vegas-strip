@@ -3,7 +3,7 @@
   "base": "84fd854 origin/next",
   "claim": "Issue65 assigned janiverse confirmed before edits",
   "scope": "Two mapped stadium structures; entry terraces/circulation and contextual exterior refinement. Preserve roof, existing shell and roads.",
-  "state": "Four baseline images inspected. Original curved North Entry canopy authored but not exported, optimized or installed. No shared bake.",
+  "state": "Canopy source exported, level+WebP optimized and installed locally without staging. Matching four daylight captures running; no shared bake.",
   "sources": [
     {
       "url": "https://www.raiders.com/news/las-vegas-stadium-authority-unanimously-approves-funds-for-raiders-allegiant-stadium-renovation-project",
@@ -42,12 +42,19 @@
   "decisions": [
     "Use corroborated built entry configuration, not proposed2027\u201328 plaza."
   ],
-  "next": "Export canopy palette anc-roof/anc-soffit/anc-edge/anc-frame with scoped Allegiant exporter; backup sourceGLB/collision, level+WebP optimize, install--no-stage, matching daylight review and actual walk under canopy, route audit. Preserve remaining terrace/facade discrepancies. Bake only once after reviewed group.",
+  "next": "Inspect all4installed daylight captures and compare matching timings; run prepared walk-allegiant-canopy.js and inspect endpoints. Correct registration/performance if needed before single bake.",
   "baselineReview": "All three neutral daylight captures inspected. Existing black oval shell, pale membrane, mapped paved/green approaches. North entry closed glass wall, tiny centered sign, no detailed stair/terrace assembly. P95 front19.5/south18.3/entry19.0ms. Elevated terrace baseline personally inspected: mapped paths and retaining blocks retained, no existing terrace assembly; terraceP95 20.7ms.",
   "discrepancies": [
     "Existing narrow upper glazing and crossing diagonal ribbons differ from broad north opening/curved frame in2020official+2025StreetView. Preserve discrepancy for explicit scoped correction; do not claim existing facade accurate.",
     "North terrace elevation and store/canopy dimensions require inferred registration; reference photographs are not measured survey."
   ],
   "canopyStudy": "164m wide,6m deep curved roof inferred from official north photo and Jan2025 Street View; edge4.65m/crown5.07m.30thin supports;12omitted where mapped road/sidewalk clearance would be violated. Exact registration requires installed review.",
-  "terraceDecision": "Retain mapped circulation: preliminary raised terrace footprint intersects existing road/sidewalk network. Defer raised terrace/store/stairs rather than invent a disconnected elevated route or alter roads. Canopy pass leaves all ground geometry unchanged."
+  "terraceDecision": "Retain mapped circulation: preliminary raised terrace footprint intersects existing road/sidewalk network. Defer raised terrace/store/stairs rather than invent a disconnected elevated route or alter roads. Canopy pass leaves all ground geometry unchanged.",
+  "checks": {
+    "typecheck": "PASS",
+    "roofSupport": "5714samplesPASS",
+    "canopyHeadroom": "138route samplesPASS; does not assert ground support",
+    "optimization": "level7.65to2.20MiB; WebP pass complete; install--no-stage",
+    "collisionTriangles": 22658
+  }
 }
