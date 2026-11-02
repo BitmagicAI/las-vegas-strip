@@ -4277,7 +4277,7 @@
     "Continuous street-to-roof public/guest lift access and entrance/garage circulation remain unverified; current routes start on the amenity deck.",
     "Exact facade/signage/balcony dimensions, measured pool depth and elevations remain inferred.",
     "Reference planting, detailed railings/ladders, fixtures and full frontage refinements remain unfinished.",
-    "Final matching performance and baked package verification pending."
+    "Performance varies between runs; full60fps coverage, GPU/CPU spans and resident-memory measurements remain unestablished. Historical and matched timing samples retained in amenityPass evidence."
    ],
    "record": "tools/resort-blocks/westin.json",
    "buildings": [
@@ -4300,10 +4300,10 @@
     "builders": [
      "tools/city-exteriors/install-westin-platinum-amenities.mjs",
      "tools/strip-landmarks/westin_amenities.py",
-     "tools/city-exteriors/run-westin-platinum-walk.mjs",
-     "tools/city-exteriors/test-westin-platinum-routes.mjs",
-     "tools/strip-landmarks/westin.py",
-     "tools/city-exteriors/capture-platinum-interior.mjs"
+     "tools/city-exteriors/compare-westin-water.mjs",
+     "tools/city-exteriors/compare-westin-west.mjs",
+     "tools/city-exteriors/compare-westin-platinum-performance.mjs",
+     "tools/city-exteriors/run-westin-platinum-walk.mjs"
     ]
    },
    "acceptance": [
@@ -4327,8 +4327,8 @@
     "Continuous street-to-roof public/guest lift access and entrance/garage circulation remain unverified; current routes start on the amenity deck.",
     "Exact facade/signage/balcony dimensions, measured pool depth and elevations remain inferred.",
     "Reference planting, detailed railings/ladders, fixtures and full frontage refinements remain unfinished.",
-    "Final matching performance and baked package verification pending.",
-    "Indoor pool plan/ceiling/window placement is a photographic approximation; glazing and furniture detail remain simplified."
+    "Indoor pool plan/ceiling/window placement is a photographic approximation; glazing and furniture detail remain simplified.",
+    "Performance varies between runs; full60fps coverage, GPU/CPU spans and resident-memory measurements remain unestablished. Historical and matched timing samples retained in amenityPass evidence."
    ],
    "record": "tools/resort-blocks/platinum.json",
    "buildings": [
@@ -4353,8 +4353,8 @@
      "tools/city-exteriors/install-westin-platinum-amenities.mjs",
      "tools/city-exteriors/capture-platinum-interior.mjs",
      "tools/city-exteriors/test-westin-platinum-routes.mjs",
-     "tools/city-exteriors/run-westin-platinum-walk.mjs",
-     "tools/strip-landmarks/platinum.py"
+     "tools/city-exteriors/compare-westin-platinum-performance.mjs",
+     "tools/city-exteriors/run-westin-platinum-walk.mjs"
     ]
    },
    "acceptance": [

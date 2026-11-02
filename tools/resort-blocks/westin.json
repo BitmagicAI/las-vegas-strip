@@ -16,7 +16,7 @@
     "Continuous street-to-roof public/guest lift access and entrance/garage circulation remain unverified; current routes start on the amenity deck.",
     "Exact facade/signage/balcony dimensions, measured pool depth and elevations remain inferred.",
     "Reference planting, detailed railings/ladders, fixtures and full frontage refinements remain unfinished.",
-    "Final matching performance and baked package verification pending."
+    "Performance varies between runs; full60fps coverage, GPU/CPU spans and resident-memory measurements remain unestablished. Historical and matched timing samples retained in amenityPass evidence."
   ],
   "baseline": [
     "build/city-exteriors/westin-before/westin-front.png",
@@ -63,7 +63,8 @@
     "installedClearance": "docs/project-records/westin-platinum-amenities/installed-route-clearance.json",
     "movement": "docs/project-records/westin-platinum-amenities/walk.json",
     "daylight": "docs/project-records/westin-platinum-amenities/preview-review.json",
-    "status": "Local geometry, walking, daylight, bake/package and smoke passed; historical exterior performance regression under same-session A/B investigation before merge.",
-    "performance": "docs/project-records/westin-platinum-amenities/performance.json"
+    "status": "Verified limited amenity pass: local step7, installed walking, daylight, bake/package and smoke passed; repeated matched performance investigation retained with limitations.",
+    "performance": "docs/project-records/westin-platinum-amenities/performance.json",
+    "performanceReplay": "docs/project-records/westin-platinum-amenities/performance-ab.json"
   }
 }

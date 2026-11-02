@@ -15,5 +15,5 @@
   "cellPreservation": "275/278cellfilesbyteidentical;onlybaked0,0and1,0plusmanifestchanged",
   "newLfsBytes": 3374835,
   "finalDaylight": "All10finalcaptures personallyinspected; exterior+interior visuals remain accepted as limited amenity pass.",
-  "performance": "Historical baseline comparison has >10% exterior regressions; merge held for same-session baseline/candidate replay. No overall performance improvement claimed."
+  "performance": "Accepted scoped pass after matched replay and repeated water-on/off diagnostics: Westin west water-on p95 18.5/18.8/18.7\u219218.8/18.7/18.6ms (median unchanged); pool25.3/23.5/22.5\u219224.8/25.1/27.5ms (median+6.8%). Pool water-off19.1\u201320.6\u219219.2\u201319.8ms. Same draw calls in both arms (pool350/west115). Initial larger regressions did not reproduce consistently; retain all samples, including candidate pool27.5ms. No claim of60fps at every view, performance improvement, or proven external cause. Near-model replay uses current distant cells in both arms; full historical comparison remains recorded. GPU/CPU spans and resident bytes not measured."
 }
