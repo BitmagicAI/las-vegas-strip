@@ -5,7 +5,7 @@
     "Wyndham Desert Blue (#68)",
     "Gold Coast (#58)"
   ],
-  "state": "Daylight and movement reviewed. Controlled paired performance test temporarily swaps local GLBs, restores installed hashes in finally. DO NOT bake, stage, install or run other GPU jobs until it finishes.",
+  "state": "Paired performance investigation complete; ONE grouped city bake running. Do not rerun bake.",
   "sources": [
     {
       "url": "https://www.wyndhamhotels.com/wyndham-vacations/las-vegas-nevada/wyndham-desert-blue/overview",
@@ -24,7 +24,7 @@
       "evidence": "Aerial inspected: two rectangular pools west/southwest of crescent tower, north-south elongated eastern basin, oblique shorter western basin, small spa south of eastern basin, round splash pad to south, blue cabanas/parasols and landscaped perimeter. Pixel tracing and ground registration still needed before modeling. Image acquisition date unknown."
     }
   ],
-  "next": "Review timing repeats and real movement results/endpoints; correct any failures before ONE grouped bake and remaining release-local checks.",
+  "next": "Finish single bake,stage/runtimecheck/bakecheck/packcheck/smoke,archive and finalize PR.",
   "claims": "Both assigned janiverse, confirmed before edits.",
   "baselineReview": "Wyndham front/back/entry baseline all three inspected: existing curved tower and open canopy, blank surrounding amenity ground, closed ground facade. No pool/garden currently drawn.",
   "goldBaselineReview": "All three usable views inspected. Corrected north-side pool view clearly shows blank rectangular deck and rounded pool without furniture/shade; south/front preserve existing building reference. Earlier roof-obscured pool view excluded from comparison.",
@@ -58,5 +58,6 @@
   },
   "goldInstalledReview": "All3images inspected: original street facade/garage/tower retained; ten chaises and open brown pergola visible beside unchanged pool. Pool shape/landscaping/indoor link discrepancies retained. FrontP95rose18.9to26.6ms; two identical-camera repeats underway, not yet cleared. South+1.64%,pool-2.25%.",
   "wyndhamInstalledReview": "All4images inspected. Two rectangular pools and two shallow spas on inferred courtyard west/southwest of tower, furnishings visible, roads and tower retained. Sparse landscape compared to reference: palms/cabanas/splash-pad remain explicit. No interior arrival or pool-swimming claim.",
-  "wyndhamPerformanceInvestigation": "InitialfrontP95 18to28ms(+55.6%),back17.7to19.5ms(+10.17%). Entry+6.25%,amenity-30.9%. Need identical front/back repeats after currently running sequential Gold repeats/walks; no performance acceptance yet."
+  "wyndhamPerformanceInvestigation": "InitialfrontP95 18to28ms(+55.6%),back17.7to19.5ms(+10.17%). Entry+6.25%,amenity-30.9%. Need identical front/back repeats after currently running sequential Gold repeats/walks; no performance acceptance yet.",
+  "performanceConclusion": "Paired installed/original P95: Goldfront19.0/18.6ms(+2.15%),Wyndhamfront17.8/17.9(-0.56%),back18.7/19.1(-2.09%). All six images inspected. Earlier spikes not reproduced as persistent asset regression; all samples retained."
 }

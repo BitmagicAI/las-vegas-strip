@@ -1,0 +1,117 @@
+{
+  "installed": [
+    {
+      "name": "gold-front",
+      "eye": [
+        -1725,
+        5,
+        4
+      ],
+      "target": [
+        -1770,
+        7,
+        -30
+      ],
+      "p50": 16.700000047683716,
+      "p95": 19
+    },
+    {
+      "name": "wyndham-front",
+      "eye": [
+        -1100,
+        95,
+        -530
+      ],
+      "target": [
+        -968,
+        25,
+        -700
+      ],
+      "p50": 16.5,
+      "p95": 17.800000190734863
+    },
+    {
+      "name": "wyndham-back",
+      "eye": [
+        -830,
+        95,
+        -850
+      ],
+      "target": [
+        -968,
+        25,
+        -700
+      ],
+      "p50": 16.699999809265137,
+      "p95": 18.700000047683716
+    }
+  ],
+  "original": [
+    {
+      "name": "gold-front",
+      "eye": [
+        -1725,
+        5,
+        4
+      ],
+      "target": [
+        -1770,
+        7,
+        -30
+      ],
+      "p50": 16.59999990463257,
+      "p95": 18.59999990463257
+    },
+    {
+      "name": "wyndham-front",
+      "eye": [
+        -1100,
+        95,
+        -530
+      ],
+      "target": [
+        -968,
+        25,
+        -700
+      ],
+      "p50": 16.600000143051147,
+      "p95": 17.90000009536743
+    },
+    {
+      "name": "wyndham-back",
+      "eye": [
+        -830,
+        95,
+        -850
+      ],
+      "target": [
+        -968,
+        25,
+        -700
+      ],
+      "p50": 16.600000143051147,
+      "p95": 19.100000143051147
+    }
+  ],
+  "comparison": [
+    {
+      "name": "gold-front",
+      "installedP95": 19,
+      "originalP95": 18.59999990463257,
+      "deltaPercent": 2.150538158163151
+    },
+    {
+      "name": "wyndham-front",
+      "installedP95": 17.800000190734863,
+      "originalP95": 17.90000009536743,
+      "deltaPercent": -0.5586586821217265
+    },
+    {
+      "name": "wyndham-back",
+      "installedP95": 18.700000047683716,
+      "originalP95": 19.100000143051147,
+      "deltaPercent": -2.0942413213172584
+    }
+  ],
+  "review": "All six paired images inspected. Original and installed GLBs compared sequentially with identical cameras and settling; installed hashes restored and verified. No persistent asset regression reproduced; all initial outliers retained. Does not certify universal60fps."
+}
