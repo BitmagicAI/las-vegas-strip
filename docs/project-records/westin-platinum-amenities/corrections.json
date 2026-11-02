@@ -1,0 +1,9 @@
+{
+  "platinumDoorway": {
+    "initialInstalledCapsuleFailures": 2,
+    "cause": "Shell openings without yaw use ground-relative heights, leaving elevated pool doorway solid.",
+    "fix": "Explicit yaw0 makes openings use their physical12.47m base.",
+    "retest": "413 exterior+interior capsule samples,0 failures.",
+    "visualReview": "Pending sequential previews; do not infer visual acceptance from clearance."
+  }
+}

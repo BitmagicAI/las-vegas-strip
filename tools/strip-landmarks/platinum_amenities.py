@@ -30,7 +30,7 @@ def build(B):
  # Separate interior source for required interior-light treatment at integration.
  B.source='platinum-pool-interior';B.property='platinum-interior'
  x0,z0,x1,z1=inside.bounds;H=3.4
- B.shell(inside,Y,Y+H,'ppa-interior-wall',roof=False,openings=[dict(p=[877,Y,z0],width=2.4,height=2.8),dict(p=[883,Y,z0],width=2.1,height=2.7),dict(p=[880,Y+.55,z0],width=2.1,height=2.15),dict(p=[886.5,Y+.55,z0],width=2.4,height=2.15),dict(p=[889.5,Y+.55,z0],width=2.4,height=2.15)])
+ B.shell(inside,Y,Y+H,'ppa-interior-wall',roof=False,openings=[dict(yaw=0,p=[877,Y,z0],width=2.4,height=2.8),dict(yaw=0,p=[883,Y,z0],width=2.1,height=2.7),dict(yaw=0,p=[880,Y+.55,z0],width=2.1,height=2.15),dict(yaw=0,p=[886.5,Y+.55,z0],width=2.4,height=2.15),dict(yaw=0,p=[889.5,Y+.55,z0],width=2.4,height=2.15)])
  B.planar('ppa-interior-ceiling',inside,Y+H)
  # Four north-facing glazed bays: visual frames above pool, clear doorway retained.
  for x in [880,886.5,889.5]:
