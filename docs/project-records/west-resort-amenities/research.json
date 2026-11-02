@@ -13,9 +13,31 @@
     },
     {
       "url": "https://goldcoast.boydgaming.com/stay/resort-pool",
-      "evidence": "Operator describes freeform pool/hot tub and approach through breezeway and elevator-lobby glass doors. Text checked; images not yet inspected."
+      "evidence": "Official pool and hot-tub gallery images personally inspected: cream deck, irregular lobed pool with brown coping, white strap chaises on dark tubular frames, metal water handrails, tall palms, brown slatted pergola on pale square columns beside rock feature; circular spa and broad three-step deck transition. Text locates access through breezeway/elevator lobby. Photo dates unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1171,-115.19385,20z/data=!3m1!1e3",
+      "evidence": "Aerial visually inspected. Pool courtyard west of tower and north of casino. Pergola on north edge; freeform pool to its south, lounging curves northeast/east; building with curved roof west, planting on south edge. Image acquisition date not shown (copyright2026 is not acquisition). Retain mapped geometry; dimensions require ground registration."
     }
   ],
   "next": "Inspect Google aerial/Street View and official photos, establish pool/site geometry and matching baseline views before authoring. Preserve buildings/roads/interiors; one group bake after all geometry reviewed.",
-  "claims": "Both assigned janiverse, confirmed before edits."
+  "claims": "Both assigned janiverse, confirmed before edits.",
+  "baselineReview": "Wyndham front/back/entry baseline all three inspected: existing curved tower and open canopy, blank surrounding amenity ground, closed ground facade. No pool/garden currently drawn.",
+  "goldBaselineReview": "Front and south views inspected: existing arcade/tower/garage and motor court retained. Initial pool view from south obscured by casino roof: rejected as amenity evidence. Replaced pool eye with[-1880,18,-155], target[-1878,1,-119]; detail-only baseline running, must inspect and combine timing result before after-comparison.",
+  "goldGeometryAudit": {
+    "existingDeckBounds": [
+      -1904,
+      -132,
+      -1852,
+      -106
+    ],
+    "existingWaterBounds": [
+      -1887,
+      -125,
+      -1868,
+      -111
+    ],
+    "existingWaterAreaM2": 262.5305,
+    "note": "Source deck does not intersect mapped buildings after existing subtraction. Existing rounded-rectangle pool differs from reference lobed pool; exact registration still needed. No geometry edits yet."
+  }
 }
