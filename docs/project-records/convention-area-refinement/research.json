@@ -19,7 +19,7 @@
   ],
   "remaining": [
     "Optimize/preserve-merge Embassy spa addition, inspect installed registration and walk access",
-    "Research LVCC terrace and frontage official photos/Google views",
+    "Register LVCC terrace footprint/elevation and inspect new terrace baseline; research Convention frontage operator photographs",
     "Register and author original public exterior refinements",
     "All step 7 checks, installed movement and matching performance"
   ],
@@ -91,6 +91,27 @@
         ],
         "note": "Provisional scale inferred against mapped hotel width and displayed scale; reconcile with ground walls/roads before installation."
       }
+    },
+    {
+      "url": "https://www.martinharris.com/portfolio/lvccd-west-hall-expansion/",
+      "review": "Builder gallery atrium photograph personally inspected: white structural columns, three levels, glass balustrades, triangular roof openings. Text lists 25,000 sf terrace event space, different scope from operator 14,000 sf; do not force these into one area."
+    },
+    {
+      "url": "https://lasvegasweekly.com/photos/2021/may/03/824297/",
+      "review": "Yasmina Chavez photograph dated May 3 2021 personally inspected: view from west-end terrace eastward across south entry, glass wall and triangular roof lattice. Confirms terrace on western end, not roof of exhibition hall."
+    },
+    {
+      "url": "https://lasvegassun.com/photos/2020/oct/13/808810/",
+      "review": "Wade Vandervort photograph dated October 12 2020 personally inspected: square tan paving, glass outer guardrail, paired splayed columns, cream soffit with small recessed black fixtures, roof opening, full-height rear glass. Construction-stage image: temporary equipment is not permanent furniture."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1328,-115.1585&zoom=19&basemap=satellite",
+      "review": "Aerial personally inspected: open roof notch in western south wing, west of main lattice-roof entry. Provisional centre world [1303.937,-1870.167], centre pixel [676,360], scale ~0.2412m/px; notch roughly pixels [395..560,330..400], roof parallax. Terrace extends under roof, so notch alone is not its footprint."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.13236,-115.159&heading=0&pitch=15&fov=80",
+      "imageDate": "2026-02",
+      "review": "Street View personally inspected, 305 Convention Center Dr: open third-level terrace above two-story glazing, glass guardrail and support columns under roof, small ceiling fixtures. Ground has gravel planting beds, broadleaf trees, clipped shrubs/agaves, paired-band grey bollards and modern pole lights. Existing full-height model glazing incorrectly encloses terrace; terrace reconstruction requires scoped facade opening, not merely appending a hidden deck."
     }
   ],
   "baselineReview": {
@@ -110,5 +131,6 @@
       "No external Terrace Bar: official photo locates it inside atrium.",
       "Palms deferred rather than substituting broadleaf source trees."
     ]
-  }
+  },
+  "terraceDecision": "Do not append an inaccessible deck behind existing full-height glass. Reconcile scoped upper-facade opening with third-level floor and existing roof; preserve all unrelated geometry. No unsupported terrace furniture count."
 }
