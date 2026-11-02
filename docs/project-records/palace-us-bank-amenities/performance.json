@@ -1,0 +1,41 @@
+{
+  "palace-station": [
+    {
+      "name": "front",
+      "beforeP95": 18.1,
+      "afterP95": 17.7
+    },
+    {
+      "name": "pool",
+      "beforeP95": 18.1,
+      "afterP95": 17.8
+    },
+    {
+      "name": "east",
+      "beforeP95": 17.7,
+      "afterP95": 21
+    },
+    {
+      "name": "west",
+      "beforeP95": 27.4,
+      "afterP95": 17.8
+    }
+  ],
+  "us-bank": [
+    {
+      "name": "front",
+      "beforeP95": 17.6,
+      "afterP95": 17.8
+    },
+    {
+      "name": "overview",
+      "beforeP95": 17.7,
+      "afterP95": 17.7
+    },
+    {
+      "name": "back",
+      "beforeP95": 17.8,
+      "afterP95": 30.3
+    }
+  ]
+}
