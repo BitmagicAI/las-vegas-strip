@@ -5,5 +5,10 @@
     "fix": "Explicit yaw0 makes openings use their physical12.47m base.",
     "retest": "413 exterior+interior capsule samples,0 failures.",
     "visualReview": "Pending sequential previews; do not infer visual acceptance from clearance."
+  },
+  "interiorFrontProbe": {
+    "problem": "First front camera teleported player into water above old roof aperture; player fell below deck so streamed interior did not load. Interior camera and all26actualmovementsegments passed.",
+    "fix": "Keep identical camera; teleport player onto dry doorway approach877,267.4 for both baseline and candidate. Record player and resident data.",
+    "status": "Recapture pending"
   }
 }

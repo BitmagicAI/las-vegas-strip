@@ -5,7 +5,7 @@ let source=fs.readFileSync('tools/probe-eval.mjs','utf8').replaceAll("'./lib/bit
 if(baseline){
  source=source.replace('  await page.goto(',`  let baselineModelHits=0,baselineMetadataHits=0;
   await page.route('**/*platinum-exterior.glb*',route=>{baselineModelHits++;return route.fulfill({body:fs.readFileSync('.bitmagic/city-exterior-backups/westin-platinum-amenities/platinum-exterior.glb'),contentType:'model/gltf-binary'});});
-  await page.route('**/strip-landmarks/venues.bin*',route=>{baselineMetadataHits++;return route.fulfill({body:fs.readFileSync('runtime-assets/strip-landmarks/venues.bin'),contentType:'application/octet-stream'});});
+  await page.route('**/strip-landmarks/venues.bin*',route=>{baselineMetadataHits++;return route.fulfill({body:fs.readFileSync('.bitmagic/city-exterior-backups/westin-platinum-amenities/venues-before.bin'),contentType:'application/octet-stream'});});
   await page.goto(`);
  source=source.replace('  fs.writeFileSync(`${outDir}/results.json`',"  if(!baselineModelHits||!baselineMetadataHits)throw new Error('Baseline overrides not used');\n  fs.writeFileSync(`${outDir}/results.json`");
 }

@@ -4274,10 +4274,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Public entrance circulation",
-    "Pool access and landscape",
-    "Exact signage and facade bay dimensions",
-    "Route performance"
+    "Continuous street-to-roof public/guest lift access and entrance/garage circulation remain unverified; current routes start on the amenity deck.",
+    "Exact facade/signage/balcony dimensions, measured pool depth and elevations remain inferred.",
+    "Reference planting, detailed railings/ladders, fixtures and full frontage refinements remain unfinished.",
+    "Final matching performance and baked package verification pending."
    ],
    "record": "tools/resort-blocks/westin.json",
    "buildings": [
@@ -4298,10 +4298,12 @@
      "tools/resort-blocks/westin.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-westin-platinum-amenities.mjs",
+     "tools/strip-landmarks/westin_amenities.py",
+     "tools/city-exteriors/run-westin-platinum-walk.mjs",
+     "tools/city-exteriors/test-westin-platinum-routes.mjs",
      "tools/strip-landmarks/westin.py",
-     "tools/city-exteriors/test-westin.mjs",
-     "tools/strip-landmarks/build_westin.py",
-     "tools/strip-landmarks/export.py"
+     "tools/city-exteriors/capture-platinum-interior.mjs"
     ]
    },
    "acceptance": [
@@ -4320,12 +4322,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Public entrance and garage circulation",
-    "Pool access and landscaping",
-    "Exact balcony spacing and roof crown",
-    "Route performance"
+    "Continuous street-to-roof public/guest lift access and entrance/garage circulation remain unverified; current routes start on the amenity deck.",
+    "Exact facade/signage/balcony dimensions, measured pool depth and elevations remain inferred.",
+    "Reference planting, detailed railings/ladders, fixtures and full frontage refinements remain unfinished.",
+    "Final matching performance and baked package verification pending.",
+    "Indoor pool plan/ceiling/window placement is a photographic approximation; glazing and furniture detail remain simplified."
    ],
    "record": "tools/resort-blocks/platinum.json",
    "buildings": [
@@ -4346,11 +4349,12 @@
      "tools/resort-blocks/platinum.json"
     ],
     "builders": [
-     "tools/strip-landmarks/platinum.py",
-     "tools/city-exteriors/test-platinum.mjs",
-     "tools/strip-landmarks/build_platinum.py",
-     "tools/strip-landmarks/export.py",
-     "tools/strip-landmarks/oyo.py"
+     "tools/strip-landmarks/platinum_amenities.py",
+     "tools/city-exteriors/install-westin-platinum-amenities.mjs",
+     "tools/city-exteriors/capture-platinum-interior.mjs",
+     "tools/city-exteriors/test-westin-platinum-routes.mjs",
+     "tools/city-exteriors/run-westin-platinum-walk.mjs",
+     "tools/strip-landmarks/platinum.py"
     ]
    },
    "acceptance": [
