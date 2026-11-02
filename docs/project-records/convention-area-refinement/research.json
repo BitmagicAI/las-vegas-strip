@@ -160,13 +160,13 @@
     "change": "Open upper southwest facade at inferred Y16m, add slab/paver joints, clear guardrail, splayed columns and small soffit fixtures. Original roof holes discovered in mapped outline and retained; no invented new roof cut.",
     "validation": "7162 roof support and 78 planned deck-loop support/headroom samples pass. Initial failed deck tests exposed roof-hole polygons wrongly carried into floor: fixed by filling roof holes before buffering floor footprint.",
     "discrepancy": "Inferred slab area 1741m\u00b2 is greater than operator event terrace area about1301m\u00b2. Do not claim exact terrace footprint; reconcile circulation/back-wall boundary in installed review. No stair/public arrival link yet.",
-    "state": "Final Blender export plus level/WebP optimization running. No optimized installation or shared bake yet."
+    "state": "Optimized, installed, visually inspected and movement-verified; exact area and public stair connection remain discrepancies."
   },
   "installation": {
     "embassy": "Merged addition retaining 12 prior nodes and all535 collision triangles; added150collisiontriangles. Level+WebP optimized and installed locally --no-stage.",
     "lvcc": "Level+WebP optimized and installed locally --no-stage, 6.68MiB\u21921.77MiB level candidate. Repacked current collision binary for subsequent movement checks.",
-    "captures": "Matching four Embassy/five LVCC daylight captures running. First three Embassy images inspected, original facade retained, south deck visible. No installed pass until detail/movement/performance review.",
-    "sharedBake": "Not run.",
+    "captures": "All 16 matching installed daylight captures personally inspected, plus two identical-camera timing repeat captures.",
+    "sharedBake": "Single grouped bake completed; bake-city.mjs check PASS. Asset stage copied9files,1921unchanged,0removed.",
     "embassyReview": "All four installed daylight images personally inspected. Tan banded walls, six mesh loungers, parasols, shallow spa/handrail/lift appear on south deck; facade retained. Four matching P95 differences -7.7/-8.1/-6.7/-7.4 percent, timing variance not a speedup claim. Actual access walk still pending.",
     "lvccReview": "All five matching installed daylight images inspected. Southwest third-level terrace is open under roof with splayed columns and clear guardrail; original south atrium, service elevations and raised approach roads retained. Slab boundary/elevation remain inferred; public stair link absent. Five matching P95 differences -10.1/-2.7/-1.6/-7.9/-9.6 percent; no regression, variance not a speedup claim.",
     "embassyMovement": "Continuous six-segment forward/reverse walk through west gate to spa approach and back PASS. Both endpoint captures personally inspected. Does not certify indoor connection or pool swimming.",
@@ -178,8 +178,11 @@
     "bitmagicCheck": "passed",
     "review": "passed289records",
     "checkPublic": "0failures;2existing chapel-email warnings",
-    "remaining": "Movement, LVCC installed review/performance, Convention frontage work, one grouped bake then runtime/pack/smoke checks."
+    "remaining": "None for scoped local refinement; whole-site discrepancies retained in block records.",
+    "runtimeGlbs": "3changed GLBs checked,0not optimized",
+    "assetPack": "1930present,0missing,0not optimized",
+    "smoke": "9stops PASS,0failed requests/page errors/console errors/unplaced stops"
   },
   "frontageSource": "Correct southern west souvenir label and add pale horizontal rail to existing restaurant patio with 2.4m entry gap. Other three buildings untouched by geometry; preserve prior facade/interiors/roads. Full corner mixed-retail allocation remains unresolved.",
-  "frontageInstallation": "Level+WebP optimized, installed --no-stage (12.34\u21923.67MiB). Repacked7707collisiontriangles. 154support+38Royalcanopyclearance samples pass;49of50meshbatches identical to original generator. Only white rails and southern souvenir label changed. Matching seven daylight captures running; actual patio entry clearance still needs movement review against existing tables."
+  "frontageInstallation": "Level+WebP optimized and installed. All seven images inspected, six patio walking segments and17mRoyal jeep canopy approach passed. Other three mapped buildings retained."
 }

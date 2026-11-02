@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204212398,
+ "bytes": 1204112271,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -360,8 +360,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-3.bin",
-   "bytes": 672489,
-   "sha256": "6875aac2b7df10ff46f8468a3a8658e418dc4f5d9558e7989485ece54a98ffef",
+   "bytes": 668708,
+   "sha256": "64101e1fc6a9eb314f6949675b214bd1d043b7f8f6ed52f8c96054b565d79b6a",
    "kind": "original"
   },
   {
@@ -426,8 +426,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-2.bin",
-   "bytes": 288189,
-   "sha256": "c0de740694c03a1a337dde07eb014377297dec3ed30b797c351fbefbc5213db5",
+   "bytes": 288611,
+   "sha256": "c058a59030e461e4b4b81393e7f4f272902d6f94904d065cd9bb8506c1cc9508",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "48e134bf9436404e80aa2c170a84aa04a093457ee060808f113f342757117262",
+   "sha256": "b8d96a30872c517f46f79461d281e3eaaf66ec5c82ed78402b4e1cf5d80b678b",
    "kind": "runtime cell manifest"
   },
   {
@@ -7872,14 +7872,14 @@
   },
   {
    "path": "build/strip-landmarks/conventionFrontage-exterior-collision.bin",
-   "bytes": 27564,
-   "sha256": "f2df849bd505c1fa53777caddfa08eee26da86c008454905769abd639c1a6260",
+   "bytes": 27976,
+   "sha256": "d7ea8d1e9fa2b37f42edf349eed854c320beecebe88d65837ef1e21378c10825",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/conventionFrontage-exterior.glb",
-   "bytes": 3918736,
-   "sha256": "e23db21decf971581f771b55af50ec9398e5808f6b4f08ecb76f91ed8c974b0f",
+   "bytes": 3846164,
+   "sha256": "e9bdf0447c6eac5b7a3f6059ce07df97aebb82152d3391c92bf872fad9b1e8dd",
    "kind": "optimized"
   },
   {
@@ -8208,14 +8208,14 @@
   },
   {
    "path": "build/strip-landmarks/embassyConvention-exterior-collision.bin",
-   "bytes": 3060,
-   "sha256": "837b141f9404b15a0a196e1a40665d78320d12bed8b67da3a5ef7fd544f29114",
+   "bytes": 3588,
+   "sha256": "1fcb6c067a2ec964f78636290b00a2ea1db4fac377eea425a7578160115095f7",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/embassyConvention-exterior.glb",
-   "bytes": 448464,
-   "sha256": "701266c5e10262c8e0c6ccb2b5c219069274abd3d07971a006137276a7249bfd",
+   "bytes": 489876,
+   "sha256": "42b590cfa8f21b90bfd83a949f463a2abd144d3a0e93a8cac5891c6037020e19",
    "kind": "optimized"
   },
   {
@@ -9408,14 +9408,14 @@
   },
   {
    "path": "build/strip-landmarks/lvccWest-exterior-collision.bin",
-   "bytes": 26372,
-   "sha256": "8baf493b81e82b446bd267e3cf2b37c2ea813f38ce0c28944072593ec6556fba",
+   "bytes": 26616,
+   "sha256": "494f3b12d22ce6661151dd2c6839825ef2142c4a4da363cbc343316f3fd5a120",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/lvccWest-exterior.glb",
-   "bytes": 1924624,
-   "sha256": "d2e77b2cf2a91794b5dc31411c40d36a4bf788c5d154484b1463cadd6856b18c",
+   "bytes": 1857832,
+   "sha256": "92ddebc2164a199d168688eaceaf06acf2ec83d0966db42ddc1bad427b7dec2d",
    "kind": "optimized"
   },
   {
