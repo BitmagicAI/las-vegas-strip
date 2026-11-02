@@ -1,5 +1,5 @@
 {
-  "status": "claimed-baseline-capture",
+  "status": "baseline-reviewed-reference-survey-in-progress",
   "issues": [
     70,
     71,
@@ -8,9 +8,155 @@
   "base": "9be283b",
   "scope": "Nearby Wells Fargo Tower, both Park Towers and Residence Inn Hughes Center: reference-supported arrival and amenity refinement. Precise scope follows current photographs and aerial review.",
   "remaining": [
-    "Official photographs and Google Earth/Street View research",
+    "Complete Park/Residence Street View corroboration and Wells property photographs; register ground-level plans against mapped footprints.",
     "Matching baseline review",
     "Original geometry, preservation, optimization and installation",
     "All step7 checks and one grouped city bake"
+  ],
+  "baselineReview": {
+    "views": 9,
+    "review": "All nine installed daylight images personally inspected. Existing facades and crowns present; Wells landscape blank, Park Towers shared base/rotunda/pool/tennis absent, Residence Inn courtyard pool and sports court absent. Preserve existing road network and towers. Park front clips tower crown but covers arrival zone; overview/back show full towers.",
+    "limitations": "These initial views do not tightly resolve proposed ground amenities; add matching detail baselines after plan registration."
+  },
+  "references": [
+    {
+      "building": "residence-inn",
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1158,-115.1559&zoom=20&basemap=satellite",
+      "review": "North-up aerial personally inspected: rounded courtyard pool in northwest U-plan recess, circular spa northwest of pool, blue-roof east arrival canopy. Imagery date not displayed. Roof displacement must not be used as ground registration.",
+      "coordinateFit": {
+        "centreLonLat": [
+          -115.1559,
+          36.1158
+        ],
+        "screenCentre": [
+          676,
+          360
+        ],
+        "metresPerPixelApprox": 0.1206,
+        "poolApproxPixels": [
+          [
+            475,
+            207
+          ],
+          [
+            510,
+            200
+          ],
+          [
+            537,
+            216
+          ],
+          [
+            550,
+            254
+          ],
+          [
+            537,
+            276
+          ],
+          [
+            505,
+            282
+          ],
+          [
+            482,
+            269
+          ],
+          [
+            468,
+            235
+          ]
+        ],
+        "spaCentrePixels": [
+          449,
+          188
+        ]
+      }
+    },
+    {
+      "building": "residence-inn",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/ri-lashh-outdoor-pool-11735%3AWide-Hor?fit=constrain&wid=1200",
+      "provider": "Marriott official photo gallery",
+      "review": "Personally inspected: rounded basin, navy waterline tile and pale coping, gray metal perimeter fence and gate, dark gray loungers with striped cushions, pale parasols and dining tables beside entry. Date unspecified."
+    },
+    {
+      "building": "residence-inn",
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/ri-lashh-sport-court-53224%3AWide-Hor?fit=constrain&wid=1200",
+      "provider": "Marriott official photo gallery",
+      "review": "Personally inspected: compact green court with red surround, white markings, tennis net and basketball hoop at far end, high black mesh enclosure, gray bench. Do not infer regulation tennis dimensions; site location still to register."
+    },
+    {
+      "building": "park-towers",
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1163,-115.1591&zoom=19&basemap=satellite",
+      "review": "Personally inspected zoom19 and20. Shared round roof west of intertower entrance, landscaped circular arrival island east, rectangular pool west, north-south tennis court farther southwest, planted terraces and small circular garden pavilions.",
+      "coordinateFit": {
+        "centreLonLat": [
+          -115.1591,
+          36.1163
+        ],
+        "zoom": 19,
+        "screenCentre": [
+          676,
+          360
+        ],
+        "metresPerPixelApprox": 0.2412,
+        "tennisBoundsPixels": [
+          280,
+          407,
+          357,
+          555
+        ],
+        "poolApproxPixels": [
+          [
+            402,
+            359
+          ],
+          [
+            462,
+            336
+          ],
+          [
+            474,
+            365
+          ],
+          [
+            414,
+            390
+          ]
+        ],
+        "rotundaCentrePixels": [
+          543,
+          300
+        ],
+        "rotundaRadiusPixelsApprox": 48,
+        "arrivalIslandCentrePixels": [
+          654,
+          408
+        ]
+      }
+    },
+    {
+      "building": "park-towers",
+      "url": "https://parktowers.com/assets/img/courtyard-dusk.webp",
+      "provider": "Informational community website; not independently verified as HOA/operator",
+      "review": "Personally inspected: semicircular fountain and broad stairs in front of colonnaded small rotunda, palm-rich planters, pale stone. Date and provenance unverified; corroborate geometry with Google Street View before detailed modeling. Website claims30x58ft pool but dimensions not yet independently verified."
+    },
+    {
+      "building": "wells",
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1190,-115.1565&zoom=20&basemap=satellite",
+      "review": "Personally inspected: west shade pergolas, south/west lawn with palm rows and intersecting paths, east-side blue parasols alongside parking structure and southeast driveway. Tall-roof parallax means ground position must be checked against footprint."
+    },
+    {
+      "building": "wells",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1186,-115.1570&heading=40&pitch=5",
+      "imageDate": "2024-12",
+      "review": "Personally inspected Google Street View at3898 Howard Hughes Pkwy toward tower: broad lawn, straight intersecting concrete paths, tall palms with white lower trunks, low clipped hedge at building edge, flowerbed at street signs. West pergolas visible behind palm row."
+    },
+    {
+      "building": "wells",
+      "url": "https://assets.ctfassets.net/e7rmatpvay37/4bWdLnR31jvOurFsMOyCzx/4c9de4fb7ce389c226f2cb4a3bc6e802/Hughes_Center_Brochure_2.22.pdf",
+      "provider": "Cushman & Wakefield property brochure",
+      "review": "Text/site-map labels retrieved; photographs not yet visually inspected. Includes3800 Howard Hughes, shared amenities and central green. Not evidence of exact new geometry."
+    }
   ]
 }
