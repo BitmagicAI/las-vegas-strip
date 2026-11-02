@@ -153,7 +153,10 @@
     "lvcc": "Level+WebP optimized and installed locally --no-stage, 6.68MiB\u21921.77MiB level candidate. Repacked current collision binary for subsequent movement checks.",
     "captures": "Matching four Embassy/five LVCC daylight captures running. First three Embassy images inspected, original facade retained, south deck visible. No installed pass until detail/movement/performance review.",
     "sharedBake": "Not run.",
-    "embassyReview": "All four installed daylight images personally inspected. Tan banded walls, six mesh loungers, parasols, shallow spa/handrail/lift appear on south deck; facade retained. Four matching P95 differences -7.7/-8.1/-6.7/-7.4 percent, timing variance not a speedup claim. Actual access walk still pending."
+    "embassyReview": "All four installed daylight images personally inspected. Tan banded walls, six mesh loungers, parasols, shallow spa/handrail/lift appear on south deck; facade retained. Four matching P95 differences -7.7/-8.1/-6.7/-7.4 percent, timing variance not a speedup claim. Actual access walk still pending.",
+    "lvccReview": "All five matching installed daylight images inspected. Southwest third-level terrace is open under roof with splayed columns and clear guardrail; original south atrium, service elevations and raised approach roads retained. Slab boundary/elevation remain inferred; public stair link absent. Five matching P95 differences -10.1/-2.7/-1.6/-7.9/-9.6 percent; no regression, variance not a speedup claim.",
+    "embassyMovement": "Continuous six-segment forward/reverse walk through west gate to spa approach and back PASS. Both endpoint captures personally inspected. Does not certify indoor connection or pool swimming.",
+    "lvccMovement": "Eight continuous forward/reverse deck-loop segments PASS; both endpoint captures personally inspected. Direct probe begins on terrace; this is not proof of connected stairs or public arrival access."
   },
   "localChecks": {
     "bitmagicCheck": "passed",
