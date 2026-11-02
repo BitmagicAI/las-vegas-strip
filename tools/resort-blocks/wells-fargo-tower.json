@@ -57,7 +57,7 @@
   },
   "hughesAmenitiesPass": {
     "date": "2026-11-02",
-    "status": "local-installed-verification-in-progress",
+    "status": "installed-walk-verified-performance-pending",
     "pullRequest": 472,
     "record": "docs/project-records/hughes-center-amenities/research.json",
     "geometry": {
@@ -83,7 +83,14 @@
       ]
     },
     "preservation": "Every existing tower node and collision triangle retained; road geometry unchanged.",
-    "visualReview": "Initial 12 daylight captures inspected; eight corrected Wells/Park captures inspected after road keepout correction.",
-    "checks": "820 capsule samples pass; roof/canopy supports, typecheck, review, public and lighting tests pass. Actual walking and remaining step 7 checks pending."
+    "visualReview": "All 12 final daylight captures and 14 movement endpoint images personally inspected. Residence close view partly occluded by retained neighboring roof; movement endpoints confirm enclosure, furniture and spa.",
+    "checks": "170 total forward/reverse movement segments and 820 capsule samples passed; all local checks except final performance accepted. Local smoke finishing.",
+    "captures": [
+      "build/city-exteriors/wells-amenities-final/wells-front.png",
+      "build/city-exteriors/wells-amenities-final/wells-overview.png",
+      "build/city-exteriors/wells-amenities-final/wells-back.png",
+      "build/city-exteriors/wells-amenities-final/wells-amenity.png"
+    ],
+    "installedSha256": "ea52032221687026da05c429357799438e9f3f98218afc82b026f785464aa656"
   }
 }
