@@ -16,7 +16,7 @@ try{
    if(Math.hypot(dx,dz)<.35){reached=Math.abs(p.y-goal[1])<.45;break;}
    probe.look(Math.atan2(-dx,-dz),0);press(true);await frame();
   }
-  press(false);if(k===points.length-1){await waitReady();await __shot('walk-palace-bank-'+allResults.length);}results.push({segment:k,reached,goal,position:probe.position()});
+  press(false);if(k===points.length-1){await waitReady();await __shot('walk-westin-platinum-'+allResults.length);}results.push({segment:k,reached,goal,position:probe.position()});
   if(!reached){await __shot('walk-blocked-'+k);break;}
  }
 }finally{press(false);}
