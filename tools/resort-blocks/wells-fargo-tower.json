@@ -57,7 +57,7 @@
   },
   "hughesAmenitiesPass": {
     "date": "2026-11-02",
-    "status": "installed-walk-verified-performance-pending",
+    "status": "verified-scoped-pass",
     "pullRequest": 472,
     "record": "docs/project-records/hughes-center-amenities/research.json",
     "geometry": {
@@ -75,8 +75,7 @@
         ]
       ],
       "limitations": [
-        "Uninstalled study, approximate aerial and Dec2024StreetView layout.",
-        "Road and neighboring parcel clearance requires installed review.",
+        "Original geometry, approximate aerial and Dec2024StreetView layout.",
         "Palm trees with white lower trunks not substituted by available broadleaf sources; remain unfinished.",
         "Public lobby, exact crown proportions and east patio remain unchanged.",
         "No terrain/road regeneration."
@@ -84,13 +83,14 @@
     },
     "preservation": "Every existing tower node and collision triangle retained; road geometry unchanged.",
     "visualReview": "All 12 final daylight captures and 14 movement endpoint images personally inspected. Residence close view partly occluded by retained neighboring roof; movement endpoints confirm enclosure, furniture and spa.",
-    "checks": "170 total forward/reverse movement segments and 820 capsule samples passed; all local checks except final performance accepted. Local smoke finishing.",
+    "checks": "All local step 7 checks passed; 170 movement segments, 820 capsule samples, nine smoke visits. See checks.json and performance-ab.json for performance scope and timing variability.",
     "captures": [
       "build/city-exteriors/wells-amenities-final/wells-front.png",
       "build/city-exteriors/wells-amenities-final/wells-overview.png",
       "build/city-exteriors/wells-amenities-final/wells-back.png",
       "build/city-exteriors/wells-amenities-final/wells-amenity.png"
     ],
-    "installedSha256": "ea52032221687026da05c429357799438e9f3f98218afc82b026f785464aa656"
+    "installedSha256": "ea52032221687026da05c429357799438e9f3f98218afc82b026f785464aa656",
+    "performance": "docs/project-records/hughes-center-amenities/performance-ab.json"
   }
 }

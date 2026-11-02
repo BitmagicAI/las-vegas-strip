@@ -17,7 +17,7 @@
   "sharedBake": "Passed: one grouped bake, cells 1,-1 and 1,0 changed.",
   "runtimeCheck": "Passed: 3 changed GLBs, zero unoptimized.",
   "smoke": "Passed: nine visits placed; zero failed requests, page errors or console errors.",
-  "finalPerformance": "Park and Residence final matching views within 10%; Wells front/overview/amenity exceed baseline by 17.1/46.1/49.7%. Same-session baseline/candidate replay running; not ready.",
+  "finalPerformance": "Accepted within measured scope. Same-session Wells replay: front/overview/back/amenity P95 18.8/18.9/18.5/18.5 to 19.8/19.1/18.7/18.5 ms (maximum +5.4%). Earlier 17\u201350% regressions did not reproduce; all historical samples retained. Identical current distant cells in both arms; baseline near GLB interception and all eight images verified. No universal 60fps or speedup claim; GPU/CPU spans and resident bytes not measured.",
   "daylightReview": "All 12 final views inspected, front first and identical before/after camera arrays. All 14 walk endpoint images inspected.",
   "assetPack": "Passed: 1930 present, zero missing, zero unoptimized; stage 9 copied, 1921 unchanged, zero removed.",
   "bakeFreshness": "Passed",

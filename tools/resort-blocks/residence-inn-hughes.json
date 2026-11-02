@@ -68,7 +68,7 @@
   },
   "hughesAmenitiesPass": {
     "date": "2026-11-02",
-    "status": "installed-walk-verified-performance-pending",
+    "status": "verified-scoped-pass",
     "pullRequest": 472,
     "record": "docs/project-records/hughes-center-amenities/research.json",
     "geometry": {
@@ -86,19 +86,19 @@
         "Approximate aerial registration; not surveyed.",
         "Original court, landscaping and lobby connection not yet built.",
         "Fence south gap is provisional, not verified public access.",
-        "Visual water above retained ground; no swimming-depth claim.",
-        "Source not installed or accepted."
+        "Visual water above retained ground; no swimming-depth claim."
       ]
     },
     "preservation": "Every existing tower node and collision triangle retained; road geometry unchanged.",
     "visualReview": "All 12 final daylight captures and 14 movement endpoint images personally inspected. Residence close view partly occluded by retained neighboring roof; movement endpoints confirm enclosure, furniture and spa.",
-    "checks": "170 total forward/reverse movement segments and 820 capsule samples passed; all local checks except final performance accepted. Local smoke finishing.",
+    "checks": "All local step 7 checks passed; 170 movement segments, 820 capsule samples, nine smoke visits. See checks.json and performance-ab.json for performance scope and timing variability.",
     "captures": [
       "build/city-exteriors/residence-inn-amenities-final/residence-inn-front.png",
       "build/city-exteriors/residence-inn-amenities-final/residence-inn-overview.png",
       "build/city-exteriors/residence-inn-amenities-final/residence-inn-back.png",
       "build/city-exteriors/residence-inn-amenities-final/residence-inn-amenity.png"
     ],
-    "installedSha256": "e83ed6e300470bb8386707503b8a6e81ee46f117779a223e0f4a6826d7e051c6"
+    "installedSha256": "e83ed6e300470bb8386707503b8a6e81ee46f117779a223e0f4a6826d7e051c6",
+    "performance": "docs/project-records/hughes-center-amenities/performance-ab.json"
   }
 }
