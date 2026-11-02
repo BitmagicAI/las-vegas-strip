@@ -10,5 +10,10 @@
     "problem": "First front camera teleported player into water above old roof aperture; player fell below deck so streamed interior did not load. Interior camera and all26actualmovementsegments passed.",
     "fix": "Keep identical camera; teleport player onto dry doorway approach877,267.4 for both baseline and candidate. Record player and resident data.",
     "status": "Corrected paired recapture passed visual inspection; player stays on deck, Platinum interior resident."
+  },
+  "packMetadata": {
+    "initialFailure": "Stage refused stale venues.bin timestamp after repeated source installer.",
+    "fix": "Repacked metadata, freshness and pack checks passed. Installer now always encodes venues.bin alongside JSON to prevent recurrence.",
+    "bakes": 1
   }
 }

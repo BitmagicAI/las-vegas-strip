@@ -4,7 +4,7 @@ import {NodeIO} from '../optimize/bm-tools/gltf/node_modules/@gltf-transform/cor
 import {ALL_EXTENSIONS} from '../optimize/bm-tools/gltf/node_modules/@gltf-transform/extensions/dist/index.js';
 import {mergeDocuments,unpartition} from '../optimize/bm-tools/gltf/node_modules/@gltf-transform/functions/dist/index.js';
 import {MeshoptDecoder} from '../optimize/bm-tools/gltf/node_modules/meshoptimizer/index.js';
-import {encodeCollision} from '../optimize/pack-data.mjs';
+import {encodeCollision,encodeRecords} from '../optimize/pack-data.mjs';
 await MeshoptDecoder.ready;const io=new NodeIO().registerExtensions(ALL_EXTENSIONS).registerDependencies({'meshopt.decoder':MeshoptDecoder});
 const base='build/strip-landmarks/',backup='.bitmagic/city-exterior-backups/westin-platinum-amenities/';fs.mkdirSync(backup,{recursive:true});
 for(const [key,addition] of [['westin','westinAmenities'],['platinum','platinumAmenities']]){
@@ -31,5 +31,5 @@ for(const [key,addition] of [['westin','westinAmenities'],['platinum','platinumA
 fs.writeFileSync(base+'version.json',JSON.stringify({revision:crypto.createHash('sha256').update(fs.readFileSync(base+'westin-exterior.glb')).update(fs.readFileSync(base+'platinum-exterior.glb')).digest('hex').slice(0,16)}));
 
 // Existing streamed venue loader applies InteriorLighting; no new light objects or runtime code.
-const venues=JSON.parse(fs.readFileSync(base+'venues.json')),p=venues.find(v=>v.key==='platinum');assert(p);p.exteriorOnly=false;p.levelY=12.47;p.preloadDistance=38;p.accessPoints=[877,12.47,268.058];p.zones=[{origin:[882.0895,12.47,268.058],yaw:0,width:18.573,depth:11.457,height:3.4}];p.routes=JSON.parse(fs.readFileSync('docs/project-records/westin-platinum-amenities/platinum-routes.json'));fs.writeFileSync(base+'venues.json',JSON.stringify(venues));
+const venues=JSON.parse(fs.readFileSync(base+'venues.json')),p=venues.find(v=>v.key==='platinum');assert(p);p.exteriorOnly=false;p.levelY=12.47;p.preloadDistance=38;p.accessPoints=[877,12.47,268.058];p.zones=[{origin:[882.0895,12.47,268.058],yaw:0,width:18.573,depth:11.457,height:3.4}];p.routes=JSON.parse(fs.readFileSync('docs/project-records/westin-platinum-amenities/platinum-routes.json'));fs.writeFileSync(base+'venues.json',JSON.stringify(venues));fs.writeFileSync(base+'venues.bin',encodeRecords(venues));
 const interior=JSON.parse(fs.readFileSync(base+'platinum-interior-collision.json'));fs.writeFileSync(base+'platinum-interior-collision.bin',await encodeCollision([interior]));
