@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1928,
- "bytes": 1191242710,
+ "bytes": 1203528987,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -60,14 +60,14 @@
   },
   {
    "path": "build/baked/cells/cell--1_-4.bin",
-   "bytes": 237121,
-   "sha256": "03f8c6d11e8f104353f20b2660c7025c218d8b32c9d2f8ec0034866d3861af6e",
+   "bytes": 238520,
+   "sha256": "f45c83bafc5dbd9a194c14128ecb211325b7a17aa738ef795afbe1faabf45075",
    "kind": "original"
   },
   {
    "path": "build/baked/cells/cell--1_-5.bin",
-   "bytes": 167611,
-   "sha256": "7860baefd436cb46f4e4ee85e1046e88722fa6bb899f37acda64b8b4bb5020fa",
+   "bytes": 170897,
+   "sha256": "09241ba070927709ee1b7d9a00ab286e60ff5619472a151c46d98b488627ef90",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "9d4f7b140bd6212cfa5834ede091790711749d57d399e27e807aabadbcf3e15c",
+   "sha256": "2f1d08c8c2c7758941d048bdb718bf135f295712e48511593571dbc71edc9597",
    "kind": "runtime cell manifest"
   },
   {
@@ -9996,14 +9996,14 @@
   },
   {
    "path": "build/strip-landmarks/palaceStation-exterior-collision.bin",
-   "bytes": 10944,
-   "sha256": "e60a44277918327308cf934b11e81e94487ed91e22dac975ba9ae6d74b30b4ab",
+   "bytes": 13560,
+   "sha256": "fbae525e420a3c544b16f23de6f92795d85ac51d87b7b92935ee0ff4d200b228",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/palaceStation-exterior.glb",
-   "bytes": 1532796,
-   "sha256": "195458aecc46decf9300fe7a606c81c90042794f625af2dc3b1141f20e446623",
+   "bytes": 1598972,
+   "sha256": "0016758d70644b23a44c17d1bbb0eb23c532c8cb5d56a71c7e651a4f2eb4594f",
    "kind": "optimized"
   },
   {
@@ -11208,14 +11208,14 @@
   },
   {
    "path": "build/strip-landmarks/usBankCenter-exterior-collision.bin",
-   "bytes": 2632,
-   "sha256": "307c60bb24013537e99a36a96f7d402df528395454a182b37fcfd60ab7497761",
+   "bytes": 20044,
+   "sha256": "fb9c0ad547ed488580c6e9fd7dc97c1398a463cdd907b5ddb3809466db8f6f8a",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/usBankCenter-exterior.glb",
-   "bytes": 170396,
-   "sha256": "c636409aa7f3469b0ac0a962fe269acf673414ea7d2a08a688711d1372c3ed6f",
+   "bytes": 12365784,
+   "sha256": "451be6c199f834f96c6c1c9ea8741943d954468daff2ccaa01090540e315ef98",
    "kind": "optimized"
   },
   {

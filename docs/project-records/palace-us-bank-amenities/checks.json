@@ -1,0 +1,31 @@
+{
+  "typecheck": "PASS",
+  "blockReview": "PASS",
+  "publicCheck": "PASS; one pre-existing public Little Chapel email warning",
+  "siteLights": "PASS",
+  "lightingResize": "PASS",
+  "roofSupport": {
+    "palace": 509,
+    "usBank": 104,
+    "failures": 0,
+    "entranceSamples": 0
+  },
+  "installedCapsuleClearance": {
+    "palace": 295,
+    "usBank": 374,
+    "failures": 0
+  },
+  "optimization": "Both level and WebP passes completed, two candidates installed locally with --no-stage.",
+  "pending": [],
+  "normalMovement": "PASS: 36 Palace pool/spa segments and 8 US Bank frontage segments; both forward/reverse circuits passed:true. All four endpoint images inspected.",
+  "visualIssue": "Resolved: full tree-0 source canopy visible in all three revised daylight views personally inspected. Earlier tree-1 failures retained in research.",
+  "previewReview": "All seven views inspected; Palace pool, furniture and bank dry court/trees visible. Sparse Palace landscape, approximate layouts and unrefined shell details remain documented.",
+  "singleBake": "PASS; one grouped bake completed",
+  "runtimeCheck": "PASS: two changed GLBs, zero unoptimized",
+  "bakeFreshness": "PASS",
+  "assetPack": "PASS: 1928 present, zero missing/unoptimized; seven copied, 1921 unchanged",
+  "cellPreservation": "275/278 cell files identical; only baked -1,-4 and -1,-5 plus manifest changed",
+  "newLfsBytes": 14421578,
+  "smoke": "PASS: nine visits placed, zero request/page/console errors",
+  "finalDaylight": "PASS: all seven final matching views personally inspected; exact camera names/eye/target match baseline"
+}

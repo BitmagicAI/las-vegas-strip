@@ -1,0 +1,64 @@
+{
+  "status": "installed-visual-and-walk-verified-final-package-checks-running",
+  "issues": [
+    62,
+    63
+  ],
+  "scope": "Nearby West Sahara frontage, courtyard and site refinements; preserve towers and other-session changes.",
+  "references": [
+    {
+      "url": "https://palacestation.com/see-do/pool/",
+      "review": "Official pool page; linked photos personally inspected. Photo upload dates do not independently establish capture dates."
+    },
+    {
+      "url": "https://i0.wp.com/palacestation.com/wp-content/uploads/2023/04/Palace-Pool-1.jpg?resize=1280%2C720&ssl=1",
+      "review": "Personally inspected: white mesh loungers, white parasols with dark ribs, navy patterned daybeds/yellow cushions, hedge screen and palms."
+    },
+    {
+      "url": "https://i0.wp.com/palacestation.com/wp-content/uploads/2021/01/PS-Pool.jpg?resize=1280%2C720&ssl=1",
+      "review": "Personally inspected: shallow in-water loungers, mosaic tile border, raised bar pavilion with broad layered hip roof, stairs and metal handrails, white chairs and parasols."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14152,-115.17552&zoom=20&basemap=satellite",
+      "review": "Personally inspected: pool is isolated southeast of south parking garage. Angular long pool with north shallow shelf/east notch, separate small south spa, large north pavilion, southwest small service pavilion, perimeter loungers and planting. Approximate screen tracing pending; not the small blue canopy beside hotel."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14312,-115.1737&heading=260&pitch=5",
+      "review": "Personally inspected Jan2023 Google StreetView: east casino frontage, charcoal storefront, cream wall bands, planted traffic islands, red curbs, palms and broadleaf trees. Canopy partly obscured."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.145,-115.1737&zoom=20&basemap=satellite",
+      "review": "Personally inspected US Bank aerial: east/south plaza has diagonal grid of dark rectangular basins/paving framed by pale crossing paths, trees/low planting; southwest paved court with palms. Dark rectangles need ground confirmation before asserting water."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14478,-115.17312&heading=285&pitch=5",
+      "review": "Personally inspected Jan2026 StreetView: pale stone bands/dark glass, tall monument sign, light low retaining walls, dense trees/hedges and shallow terraced fountain forms. Exact water geometry obscured at this distance."
+    },
+    {
+      "url": "https://www.showcase.com/2300-w-sahara-ave-las-vegas-nv-89102/27850699/",
+      "review": "Listing text supports12stories and three-story gated garage; photo still pending."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1448,-115.1733&heading=285&pitch=0",
+      "review": "Personally inspected Jan2026 close Street View: dry gravel rectangles between pale diagonal paths, low pink-grey stone raised planters, clipped hedges and broadleaf trees. This resolves earlier aerial ambiguity; do not assert these are fountains."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.14475,-115.1737&zoom=20&basemap=satellite",
+      "review": "Personally inspected and approximately traced south/east court: diagonal grid paths, gravel, zigzag planting beds, paved southwest palm court; preserve adjacent roads and mapped shells."
+    },
+    {
+      "url": "https://www.loopnet.com/Listing/2300-W-Sahara-Ave-Las-Vegas-NV/4415882/",
+      "review": "Personally inspected leasing exterior photograph: brown/pink stone horizontal bands and dark glazing on stepped tower, ground tree canopy. Photograph is above ground and does not establish plaza basin depths; capture date unknown."
+    }
+  ],
+  "uncertainties": [
+    "Pool and plaza fit/elevations need explicit coordinate calibration.",
+    "Palace screen-to-metre fit uses zoom20 .1206m/px and centre676,360; all dimensions/elevations estimated and need installed review.",
+    "US Bank old listing fountain wording conflicts with Jan2026 visible dry gravel frontage. Model current dry frontage, retain any other water-feature investigation as unresolved.",
+    "US Bank trees use existing tools/foliage/models/tree-1.glb without source edits; exact species and palm court remain unresolved.",
+    "Initial installed bank preview showed near-invisible foliage: inherited tree-0 alpha textures on solid tree-1 LOD. Export now follows foliage-trees.mjs textureless tree-1 treatment with original muted leaf/trunk colours; source GLBs unchanged. Revised installed verification required.",
+    "Textureless tree-1 correction did not restore canopy. Both original-GLB and forced-near diagnostics personally inspected with the same sparse geometry. Replaced import with existing full tree-0 source; source files unchanged, no runtime or PR432 changes. Full-canopy optimization and matching preview pending."
+  ],
+  "baselineReview": "All six initial daylight views personally inspected clear. Palace front shows unfinished casino wall; east/west establish site. US Bank ground frontage has no landscape. Added pool baseline needed because Palace pool is separate southeast of garage, outside initial close views. Palace pool baseline personally inspected: correct empty court southeast of garage with retained mapped pavilions; four-view baseline record refreshed.",
+  "finalFoliageChoice": "Existing full tree-0 source, original textures and leaf alpha, optimized level+WebP. Three revised daylight previews personally inspected with visible canopies. Earlier tree-1 experiments retained as unsuccessful investigation, not final asset."
+}

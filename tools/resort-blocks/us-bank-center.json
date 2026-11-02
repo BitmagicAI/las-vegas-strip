@@ -18,7 +18,7 @@
     }
   ],
   "remaining": [
-    "Ground landscaping and water features",
+    "Dry frontage landscape installed as estimated study; exact species, palm court and any water features outside the inspected dry frontage remain unresolved.",
     "Exact signage, entrance and garage route checks",
     "Performance route comparison",
     "Corner reveals show thin seams; refine trims"
@@ -62,5 +62,15 @@
       "tools/strip-landmarks/us_bank.py": "04e0248e74ebda17de9d9af30c1482f1cd698885dd0d44e972248d894843413b",
       "build/optimized/build/strip-landmarks/usBankCenter-exterior.glb": "c636409aa7f3469b0ac0a962fe269acf673414ea7d2a08a688711d1372c3ed6f"
     }
+  },
+  "amenityRefinement20261101": {
+    "status": "verified-scoped-refinement",
+    "pullRequest": 470,
+    "research": "docs/project-records/palace-us-bank-amenities/research.json",
+    "checks": "docs/project-records/palace-us-bank-amenities/checks.json",
+    "scope": "Dry gravel and diagonal paths with raised planted beds; close Jan2026 Street View supersedes earlier ambiguous fountain interpretation",
+    "limitations": "Approximate layout/elevations; remaining landscape and public connections retained. No whole-block completion claim.",
+    "walk": "docs/project-records/palace-us-bank-amenities/walk.json",
+    "performance": "docs/project-records/palace-us-bank-amenities/performance.json"
   }
 }

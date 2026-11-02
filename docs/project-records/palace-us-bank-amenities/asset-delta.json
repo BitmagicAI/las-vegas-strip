@@ -1,0 +1,49 @@
+{
+  "newLfsBytes": 14421578,
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_-4.bin",
+      "bytes": 238520
+    },
+    {
+      "path": "runtime-assets/baked/cells/cell--1_-5.bin",
+      "bytes": 170897
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/palaceStation-exterior-collision.bin",
+      "bytes": 13560
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/palaceStation-exterior.glb",
+      "bytes": 1598972
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/usBankCenter-exterior-collision.bin",
+      "bytes": 20044
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/usBankCenter-exterior.glb",
+      "bytes": 12365784
+    }
+  ],
+  "cellFiles": 278,
+  "unchangedCellFiles": 275,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell--1_-4.bin",
+    "runtime-assets/baked/cells/cell--1_-5.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "changedRuntimeFiles": [
+    "runtime-assets/baked/cells/cell--1_-4.bin",
+    "runtime-assets/baked/cells/cell--1_-5.bin",
+    "runtime-assets/baked/cells/manifest.json",
+    "runtime-assets/strip-landmarks/palaceStation-exterior-collision.bin",
+    "runtime-assets/strip-landmarks/palaceStation-exterior.glb",
+    "runtime-assets/strip-landmarks/usBankCenter-exterior-collision.bin",
+    "runtime-assets/strip-landmarks/usBankCenter-exterior.glb"
+  ]
+}
