@@ -126,7 +126,7 @@
   },
   "remaining": [
     "No survey of internal circulation or exact elevations",
-    "Stair cores, garage signs and lighting not reproduced",
+    "Stair cores and garage signage still incomplete; fixture layout inferred and dynamic lighting not added",
     "Rail density and sign typography approximate",
     "No actual vehicle route test; ramp end turns need driving review",
     "Floor material and piers need calibrated reference comparison; not photorealistic completion"
@@ -136,5 +136,12 @@
       "build/strip-landmarks/casinoRoyaleGarage-exterior.glb": "08f5d285fb434938b59eebd1c2015f053e1cec5cd82d2326ba7a2d66ebf1c5a1",
       "build/strip-landmarks/casinoRoyaleGarage-exterior-collision.json": "73c5cb1103ed5afe82c7d84566e25da0d8b1efa6f2881886dd22269870577e09"
     }
+  },
+  "refinement20261102": {
+    "record": "docs/project-records/royale-carnaval-refinement/research.json",
+    "pr": 473,
+    "status": "Verified scoped refinement; full-site discrepancies retained",
+    "preservation": "All prior model nodes and collision triangles retained.",
+    "scope": "50 inferred underdeck fixture housings, no runtime light changes."
   }
 }

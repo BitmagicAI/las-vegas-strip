@@ -5132,7 +5132,7 @@
    "items": [
     "Exact individual gable profiles and ornate facade trim",
     "Public entrances and onward connections",
-    "Rear courtyard landscape and furnishings",
+    "Rear courtyard palm planting, exact furniture placement and surveyed basin/deck registration",
     "Adjacent rear/south structures still pending their own passes"
    ],
    "record": "tools/resort-blocks/casino-royale.json",
@@ -5163,7 +5163,7 @@
      "tools/city-exteriors/stairs-casino-royale-retail.mjs",
      "tools/city-exteriors/test-casino-royale.mjs",
      "tools/city-exteriors/walk-casino-royale-retail.mjs",
-     "tools/city-exteriors/replace-casino-royale-garage.py"
+     "tools/city-exteriors/install-royale-carnaval-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -9106,7 +9106,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "No survey of internal circulation or exact elevations",
-    "Stair cores, garage signs and lighting not reproduced",
+    "Stair cores and garage signage still incomplete; fixture layout inferred and dynamic lighting not added",
     "Rail density and sign typography approximate",
     "No actual vehicle route test; ramp end turns need driving review",
     "Floor material and piers need calibrated reference comparison; not photorealistic completion"
@@ -9133,6 +9133,7 @@
      "tools/city-exteriors/replace-casino-royale-garage.py",
      "tools/city-exteriors/test-casino-royale-garage.mjs",
      "tools/city-exteriors/walk-casino-royale-garage.mjs",
+     "tools/city-exteriors/install-royale-carnaval-refinement.mjs",
      "tools/strip-landmarks/build_casino_royale_garage.py",
      "tools/strip-landmarks/casino_royale_garage.py"
     ]
@@ -9848,6 +9849,7 @@
      "tools/strip-landmarks/carnaval_court.py",
      "tools/city-exteriors/replace-carnaval-court.py",
      "tools/city-exteriors/walk-carnaval-court.mjs",
+     "tools/city-exteriors/install-royale-carnaval-refinement.mjs",
      "tools/strip-landmarks/build_carnaval_court.py"
     ]
    },
