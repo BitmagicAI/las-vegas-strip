@@ -1,5 +1,5 @@
 {
-  "status": "Grouped additions exported, preserved and optimized locally; installed capture review running",
+  "status": "Verified scoped installed refinement; ready for next",
   "date": "2026-11-02",
   "base": "b2adcae",
   "issues": [
@@ -98,9 +98,7 @@
       "Carnaval 144 roof samples PASS"
     ],
     "remaining": [
-      "Finish grouped bake, stage assets and verify unchanged cells",
-      "Run runtime/pack/smoke checks and archive evidence",
-      "Finish PR description, mark ready and merge only after all applicable local checks"
+      "Upper garage ramps/turns, exact rig layout, palm planting and surveyed details remain documented refinements."
     ],
     "movement": {
       "walking": "104 continuous forward/reverse segments passed across pool and pavilion circuits; all four endpoint screenshots inspected.",
@@ -109,8 +107,16 @@
     }
   },
   "sharedBake": {
-    "status": "Running once for grouped PR",
+    "status": "Completed once; bake check PASS",
     "session": 56440,
     "log": "/tmp/royale-carnaval-bake.log"
+  },
+  "releaseValidation": {
+    "runtimeGlbs": "3 changed GLBs checked, 0 not optimized",
+    "assetPack": "1930 present, 0 missing, 0 not optimized",
+    "smoke": "9 placed stops; zero failed requests/page errors/console errors",
+    "newLfsBytes": 4066137,
+    "cells": "184 of 186 tracked cell files including manifests unchanged; only LOD cell 0,-1 and its manifest changed.",
+    "releaseStep": "CDN upload and published cold-load checks deferred to owner release."
   }
 }
