@@ -5,7 +5,7 @@
     "Wyndham Desert Blue (#68)",
     "Gold Coast (#58)"
   ],
-  "state": "Single bake complete/current. Stage initially refused because paired comparison restored source bytes with new timestamps, invalidating optimizer manifest. Reinstalled existing hash-matched level/WebP candidates; bakecheck still current. Corrected comparison now swaps optimized copies only; prior pair retained as diagnostic, not final acceptance.",
+  "state": "Scoped refinement verified: optimized models installed, one grouped bake staged, all local step7 checks passed. Full-site discrepancies retained.",
   "sources": [
     {
       "url": "https://www.wyndhamhotels.com/wyndham-vacations/las-vegas-nevada/wyndham-desert-blue/overview",
@@ -24,7 +24,7 @@
       "evidence": "Aerial inspected: two rectangular pools west/southwest of crescent tower, north-south elongated eastern basin, oblique shorter western basin, small spa south of eastern basin, round splash pad to south, blue cabanas/parasols and landscaped perimeter. Pixel tracing and ground registration still needed before modeling. Image acquisition date unknown."
     }
   ],
-  "next": "Finish single bake,stage/runtimecheck/bakecheck/packcheck/smoke,archive and finalize PR.",
+  "next": "Merge verified PR475 into next, close issues68/58, select next unclaimed area.",
   "claims": "Both assigned janiverse, confirmed before edits.",
   "baselineReview": "Wyndham front/back/entry baseline all three inspected: existing curved tower and open canopy, blank surrounding amenity ground, closed ground facade. No pool/garden currently drawn.",
   "goldBaselineReview": "All three usable views inspected. Corrected north-side pool view clearly shows blank rectangular deck and rounded pool without furniture/shade; south/front preserve existing building reference. Earlier roof-obscured pool view excluded from comparison.",
@@ -42,9 +42,9 @@
       -111
     ],
     "existingWaterAreaM2": 262.5305,
-    "note": "Source deck does not intersect mapped buildings after existing subtraction. Existing rounded-rectangle pool differs from reference lobed pool; exact registration still needed. No geometry edits yet."
+    "note": "Source deck does not intersect mapped buildings after existing subtraction. Existing rounded-rectangle pool differs from reference lobed pool; exact registration still needed. Original basin retained in this refinement."
   },
-  "goldSourceStudy": "Original ten white-strap chaises and north-edge open pergola authored, dimensions/counts inferred. Route-clearance assertions PASS; all31original mesh batches byte-identical in source audit,4new batches. Not exported/optimized/installed yet. Existing pool shape/spa/steps/rock feature/palms/indoor connection retained as discrepancies.",
+  "goldSourceStudy": "Original ten white-strap chaises and north-edge open pergola authored, dimensions/counts inferred. Route-clearance assertions PASS; all31original mesh batches byte-identical in source audit,4new batches. Exported, level/WebP optimized, installed and reviewed. Existing pool shape/spa/steps/rock feature/palms/indoor connection retained as discrepancies.",
   "wyndhamBaselineReview": "Fourth amenity baseline inspected: empty ground southwest of tower; P95 26.9ms retained with earlier three views for identical after comparison.",
   "wyndhamSourceStudy": "Traced two rectangular basins/two spas from aerial, inferred ground registration. Shallow raised basins preserve ground. Nine mesh loungers/two blue parasols. Deck clipped around mapped road/sidewalk surfaces (initial7.84m2sidewalk overlap removed). Original tower/canopy source batches preserved. Palms,cabanas,splash pad and interior link still absent.",
   "checks": {
@@ -56,10 +56,12 @@
     "sharedBake": "Completed once; bakecheck current after optimizer reinstall.",
     "routeSupport": "203Gold+65Wyndham samples PASS",
     "assetPack": "1930present,0missing/unoptimized after reinstall",
-    "smoke": "Initial9stops placed/0requests/pageerrors but1WebGPUasyncpipeline consoleerror. Preserve report; rerun after corrected comparison restores optimized assets. Not clean acceptance yet."
+    "smoke": "Final staged rerun:9stops placed,0failedrequests,0pageerrors,0consoleerrors. Initial single async pipeline consoleerror preserved in smoke-initial.json.",
+    "runtime": "2changed GLBs,0not optimized; bakecurrent; pack1930present,0missing/notoptimized.",
+    "newGitLfsBytes": 3744265
   },
-  "goldInstalledReview": "All3images inspected: original street facade/garage/tower retained; ten chaises and open brown pergola visible beside unchanged pool. Pool shape/landscaping/indoor link discrepancies retained. FrontP95rose18.9to26.6ms; two identical-camera repeats underway, not yet cleared. South+1.64%,pool-2.25%.",
+  "goldInstalledReview": "All3images inspected: original street facade/garage/tower retained; ten chaises and open brown pergola visible beside unchanged pool. Pool shape/landscaping/indoor link discrepancies retained. FrontP95rose18.9to26.6ms; repeats and corrected optimized paired comparison completed, see performanceConclusion. South+1.64%,pool-2.25%.",
   "wyndhamInstalledReview": "All4images inspected. Two rectangular pools and two shallow spas on inferred courtyard west/southwest of tower, furnishings visible, roads and tower retained. Sparse landscape compared to reference: palms/cabanas/splash-pad remain explicit. No interior arrival or pool-swimming claim.",
-  "wyndhamPerformanceInvestigation": "InitialfrontP95 18to28ms(+55.6%),back17.7to19.5ms(+10.17%). Entry+6.25%,amenity-30.9%. Need identical front/back repeats after currently running sequential Gold repeats/walks; no performance acceptance yet.",
-  "performanceConclusion": "Paired installed/original P95: Goldfront19.0/18.6ms(+2.15%),Wyndhamfront17.8/17.9(-0.56%),back18.7/19.1(-2.09%). All six images inspected. Earlier spikes not reproduced as persistent asset regression; all samples retained."
+  "wyndhamPerformanceInvestigation": "Initial front/back outliers retained; corrected optimized-only paired investigation completed, see performanceConclusion.",
+  "performanceConclusion": "Corrected optimized-only pair: installed/original P95 Gold-front19.4/19.1ms, Wyndham-front18.7/18.8ms, Wyndham-back19.5/19.3ms. All six captures inspected; installed hashes restored without source timestamp changes. No persistent >10% asset regression. First source-swapping pair is superseded diagnostic only; initial outliers retained. No speedup or universal60fps claim."
 }
