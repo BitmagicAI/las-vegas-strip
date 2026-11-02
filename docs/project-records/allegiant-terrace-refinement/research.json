@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-02",
+  "base": "84fd854 origin/next",
+  "claim": "Issue65 assigned janiverse confirmed before edits",
+  "scope": "Two mapped stadium structures; entry terraces/circulation and contextual exterior refinement. Preserve roof, existing shell and roads.",
+  "state": "Research and matching neutral-daylight baseline; no geometry changes or shared bake.",
+  "sources": [
+    {
+      "url": "https://www.raiders.com/news/las-vegas-stadium-authority-unanimously-approves-funds-for-raiders-allegiant-stadium-renovation-project",
+      "date": "2026-09-02",
+      "evidence": "Operator says north entry redevelopment is proposed, construction expected Q3 2027 to end2028. Raised Hacienda connection/canopy renderings are future proposals, not evidence of present architecture."
+    },
+    {
+      "url": "https://www.allegiantstadium.com/assets/doc/Entrance-Maps_4000x2044-3e1720d955.pdf",
+      "evidence": "Official entrance map identified; visual review pending."
+    }
+  ],
+  "decisions": [
+    "Use corroborated built entry configuration, not proposed2027\u201328 plaza."
+  ],
+  "next": "Inspect baseline captures, Google Earth/Street View and official built-condition photographs/maps; register routes before authoring."
+}
