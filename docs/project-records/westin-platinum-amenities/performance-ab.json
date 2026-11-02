@@ -1,0 +1,57 @@
+{
+  "westin": [
+    {
+      "view": "front",
+      "beforeP95": 55.30000019073486,
+      "afterP95": 49.59999990463257,
+      "changePercent": -10.307414586695229
+    },
+    {
+      "view": "pool",
+      "beforeP95": 18.199999809265137,
+      "afterP95": 30.299999952316284,
+      "changePercent": 66.48351796625491
+    },
+    {
+      "view": "east",
+      "beforeP95": 75.10000014305115,
+      "afterP95": 82,
+      "changePercent": 9.187749459128725
+    },
+    {
+      "view": "west",
+      "beforeP95": 18.40000009536743,
+      "afterP95": 25.700000047683716,
+      "changePercent": 39.673912578697234
+    }
+  ],
+  "platinum": [
+    {
+      "view": "front",
+      "beforeP95": 38.200000047683716,
+      "afterP95": 39.799999952316284,
+      "changePercent": 4.188481420511381
+    },
+    {
+      "view": "pool",
+      "beforeP95": 25.200000047683716,
+      "afterP95": 24.09999990463257,
+      "changePercent": -4.365079924482995
+    },
+    {
+      "view": "east",
+      "beforeP95": 34,
+      "afterP95": 31.5,
+      "changePercent": -7.352941176470584
+    },
+    {
+      "view": "west",
+      "beforeP95": 21.59999990463257,
+      "afterP95": 22.699999809265137,
+      "changePercent": 5.092592173561306
+    }
+  ],
+  "method": "Sequential browser-only replay of retained pre-pass near GLBs and metadata, same current baked distant cells in both arms; same camera names/eye/target. Pool images personally inspected in both arms for both buildings.",
+  "conclusion": "Platinum within10% in all views; Westin pool and west regression repeats. Candidate-only ablation identifies water cost but cannot yet explain the baseline difference. Matching daylight baseline/candidate water ablation in progress; PR remains draft.",
+  "waterAblation": "Matching daylight pool on/off/on/off/on: baseline water-on p95 25.3/23.5/22.5 ms, candidate 24.8/25.1/27.5; off baseline20.6/19.1,candidate19.8/19.2. Same350drawcalls, candidate+2831triangles. Earlier66%poolregression does not reproduce at this magnitude; timings remain variable. Westview repeated ablation next. No visual cuts."
+}
