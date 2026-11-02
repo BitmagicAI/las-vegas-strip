@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-02",
+  "status": "Reference research and neutral daylight baseline capture",
+  "base": "0901ea2",
+  "issues": [
+    64,
+    75,
+    94
+  ],
+  "scope": [
+    "Embassy Suites Convention Center",
+    "LVCC West Hall",
+    "Royal Resort historical-era building and three Convention Drive low-rise frontages"
+  ],
+  "constraints": [
+    "Preserve all existing interiors, roads, optimized runtime and prior geometry where possible.",
+    "Royal Resort September 2026 demolition is a recorded era discrepancy. Preserve historical geometry reversibly; do not claim present-day accuracy.",
+    "No new shared bake until grouped geometry has been inspected."
+  ],
+  "remaining": [
+    "Inspect baseline captures",
+    "Research official photos and Google aerial/Street View",
+    "Choose reference-supported public exterior refinements",
+    "All step 7 checks, installed movement and matching performance"
+  ]
+}
