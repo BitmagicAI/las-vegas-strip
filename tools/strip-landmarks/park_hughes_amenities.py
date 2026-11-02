@@ -3,6 +3,7 @@ Tower shells are never rebuilt. Shared arrival registration remains separate.
 """
 from common import *
 from rio_amenities import AmenityMeshes
+from hughes_site import roads
 RECORD=Path('docs/project-records/hughes-center-amenities');Y=.18
 
 def plan():
@@ -11,7 +12,10 @@ def plan():
  def xy(p):return cx+(p[0]-676)*.2412,cz+(p[1]-360)*.2412
  pool=Polygon([xy(p) for p in r['poolApproxPixels']]);a,b,c,d=r['tennisBoundsPixels'];court=Polygon([xy(p) for p in [(a,b),(c,b),(c,d),(a,d)]])
  occupied=unary_union([footprint(i) for i in ['way/182464616','way/182464631']]).buffer(.4)
- deck=pool.buffer(4.8,join_style=2).difference(occupied)
+ # Preserve the mapped streets: the provisional aerial fit crossed their edge.
+ court=translate(court,xoff=6,yoff=2)
+ deck=pool.buffer(4.8,join_style=2).difference(occupied).difference(roads())
+ assert not court.intersects(roads());assert not court.intersects(deck)
  assert not court.intersects(occupied);assert deck.buffer(-1.3).covers(pool)
  return deck,pool,court
 
@@ -56,7 +60,7 @@ def build(B):
    for v in [-.65,.65]:F.box('pha-metal',(u,.19,v),(.05,.38,.05))
  route=pool.buffer(1.1,join_style=2).exterior;assert deck.covers(LineString(route).buffer(.4))
  (RECORD/'park-routes.json').write_text(json.dumps([{'name':'park-pool-circuit','points':[[x,Y,z] for x,z in route.coords]}],indent=2)+'\n')
- audit={'poolAreaM2':pool.area,'courtBounds':list(court.bounds),'poolBounds':list(pool.bounds),'loungers':count,'limitations':['Uninstalled original source study.','Aerial fit and ground elevation inferred; road/site-boundary validation pending.','Arrival rotunda and fountain omitted until mapped tower/ground parallax reconciled.','Cabana, planting, pool enclosure and full connections unfinished.','Sport net is visual only; no game mechanics.']}
+ audit={'poolAreaM2':pool.area,'courtBounds':list(court.bounds),'courtFitOffsetM':[6,2],'roadOverlapM2':court.union(deck).intersection(roads()).area,'poolBounds':list(pool.bounds),'loungers':count,'limitations':['Uninstalled original source study.','Aerial fit and ground elevation inferred; road/site-boundary validation pending.','Arrival rotunda and fountain omitted until mapped tower/ground parallax reconciled.','Cabana, planting, pool enclosure and full connections unfinished.','Sport net is visual only; no game mechanics.']}
  (RECORD/'park-geometry.json').write_text(json.dumps(audit,indent=2)+'\n');return audit
 if __name__=='__main__':
  B=AmenityMeshes();print(build(B));B.save_all()

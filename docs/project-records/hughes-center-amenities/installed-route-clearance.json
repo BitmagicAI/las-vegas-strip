@@ -1,81 +1,8 @@
 [
   {
     "key": "wellsFargoTower",
-    "samples": 403,
-    "failures": [
-      {
-        "route": "wells-garden-path-0-0",
-        "segment": 1,
-        "position": {
-          "x": 1448.2727272727273,
-          "y": 1.165,
-          "z": -339
-        }
-      },
-      {
-        "route": "wells-garden-path-0-0",
-        "segment": 1,
-        "position": {
-          "x": 1448.3636363636363,
-          "y": 1.165,
-          "z": -338.7142857142857
-        }
-      },
-      {
-        "route": "wells-garden-path-0-0",
-        "segment": 1,
-        "position": {
-          "x": 1448.4545454545455,
-          "y": 1.165,
-          "z": -338.42857142857144
-        }
-      },
-      {
-        "route": "wells-garden-path-0-0",
-        "segment": 1,
-        "position": {
-          "x": 1448.5454545454545,
-          "y": 1.165,
-          "z": -338.14285714285717
-        }
-      },
-      {
-        "route": "wells-garden-path-0-0",
-        "segment": 1,
-        "position": {
-          "x": 1448.6363636363637,
-          "y": 1.165,
-          "z": -337.85714285714283
-        }
-      },
-      {
-        "route": "wells-garden-path-0-0",
-        "segment": 1,
-        "position": {
-          "x": 1452.1818181818182,
-          "y": 1.165,
-          "z": -326.7142857142857
-        }
-      },
-      {
-        "route": "wells-garden-path-0-0",
-        "segment": 1,
-        "position": {
-          "x": 1452.2727272727273,
-          "y": 1.165,
-          "z": -326.42857142857144
-        }
-      },
-      {
-        "route": "wells-garden-path-0-0",
-        "segment": 1,
-        "position": {
-          "x": 1452.3636363636363,
-          "y": 1.165,
-          "z": -326.14285714285717
-        }
-      }
-    ]
+    "samples": 387,
+    "failures": []
   },
   {
     "key": "parkTowers",

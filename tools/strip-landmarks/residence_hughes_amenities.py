@@ -3,6 +3,7 @@ Source study only: ground registration/access still need installed review.
 """
 from common import *
 from rio_amenities import AmenityMeshes
+from hughes_site import roads
 RECORD=Path('docs/project-records/hughes-center-amenities')
 Y=.16
 
@@ -15,7 +16,8 @@ def plan():
  spa=Point(xy(r['spaCentrePixels'])).buffer(1.35,resolution=20)
  occupied=footprint('way/205497576').buffer(.3)
  water=pool.union(spa)
- deck=water.buffer(5,join_style=2).difference(occupied)
+ deck=water.buffer(5,join_style=2).difference(occupied).difference(roads())
+ assert not water.buffer(1.8).intersects(roads())
  assert not water.buffer(1.8).intersects(occupied)
  return deck,pool,spa
 
