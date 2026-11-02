@@ -1,0 +1,63 @@
+{
+  "newLfsBytes": 5514098,
+  "newLfsObjects": 9,
+  "cellFilesCompared": 278,
+  "cellFilesByteIdentical": 275,
+  "changedRuntimeFiles": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-1.bin",
+      "bytes": 319593,
+      "sha256": "9beb703f9fc6c979a5954603628e88c257a736010baff1ea0524f557e4840f5d",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:5dc1e307c68736dcdd29ad21809e8ebd4271614f49a71ad63d3b417676232dd7\nsize 317971"
+    },
+    {
+      "path": "runtime-assets/baked/cells/cell-1_0.bin",
+      "bytes": 240324,
+      "sha256": "0acca36734dbb5bbe7529adabe1d1c1406e70411f34c6646cb88b3f0820f6fda",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:8ad18433d874d5f5adb1ff8a68afd7942204c44b1db181ded2c6149cbf622b09\nsize 238491"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "0777c79b1cb0a37a435a5590aff8a0c3d8381f130b9519ab8d7ba38de1ffba6f",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:d99b36cfb6e25eee2453a67e6e51263026da22ed3cb76bd185f47e59b60a938b\nsize 13801"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/parkTowers-exterior-collision.bin",
+      "bytes": 37304,
+      "sha256": "f402cd12a85da34d88429533c8b3ac6ca8ddad8f4b642b75e507476a1e5048c7",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:20372cf804efe7adfdb5f7566fc2dce00f78ebc07c927edcc641d70e2691fc29\nsize 35732"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/parkTowers-exterior.glb",
+      "bytes": 2558240,
+      "sha256": "444daea5429f2ab0b92fb20faf6544b2910f44f629e07b7cfd64ed0723f05822",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:3462ef67eef38c2b82b0f8c0047cda728a47a293d96f404c63089c93bad19136\nsize 2456776"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/residenceInnHughes-exterior-collision.bin",
+      "bytes": 4936,
+      "sha256": "96ac03aadad5b2837fc52efc8ae0d31a335966997fb1a462550455b5a46ad216",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:3d729fbe2316f8a31ba6fe8e36e43508b30c0341cc7f2715b2e9dd9257a568c5\nsize 632"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/residenceInnHughes-exterior.glb",
+      "bytes": 1276680,
+      "sha256": "e83ed6e300470bb8386707503b8a6e81ee46f117779a223e0f4a6826d7e051c6",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:9d7253336355b8921fa73184c369b2076c324aa1056cade4110f84055e1d833a\nsize 1097456"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/wellsFargoTower-exterior-collision.bin",
+      "bytes": 1884,
+      "sha256": "e755212bce13eb8f48d6ffd10bff62b1b5b8cc70dc1ea0349d7bbf7e05e9d5ba",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:89c7dcf3010924bacecea90d0046b58d2744f8c28be4a5e356742cb9d2e6c93f\nsize 692"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/wellsFargoTower-exterior.glb",
+      "bytes": 1061336,
+      "sha256": "ea52032221687026da05c429357799438e9f3f98218afc82b026f785464aa656",
+      "previousPointer": "version https://git-lfs.github.com/spec/v1\noid sha256:20c482bdc0308751398ea4e9d604976cd443df988b5a2cf4d83ee3c43b26365b\nsize 1010100"
+    }
+  ],
+  "cellScope": "Geographic cells, collision cells and baked LOD cells including manifests. Only baked cells 1,-1 and 1,0 and their manifest changed."
+}

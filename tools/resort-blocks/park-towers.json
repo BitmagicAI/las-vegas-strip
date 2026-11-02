@@ -14,12 +14,12 @@
     },
     {
       "url": "https://parktowers.com/The%20Building.html",
-      "review": "Official site identifies two20story towers above shared base,84residences."
+      "review": "Community informational site identifies two20story towers above shared base,84residences; operator/HOA provenance not verified. Previous official attribution corrected in PR472."
     }
   ],
   "dimensions": "Mapped62m shell retained; roof caps64.5m and plant screens65.5m estimated. Exact facade bay spacing uncertain.",
   "remaining": [
-    "Shared base, arrival court and pool/tennis landscape",
+    "Shared base and arrival court, pool enclosure, cabana and planting; pool/tennis candidate installed with aerial fit adjusted to preserve roads",
     "Full public connections",
     "Facade and crown precision",
     "Route performance"
@@ -57,5 +57,49 @@
     "typecheck": "passed",
     "localWebGPU": "passed; see log for spawn sample, not route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-park-towers.log"
+  },
+  "hughesAmenitiesPass": {
+    "date": "2026-11-02",
+    "status": "verified-scoped-pass",
+    "pullRequest": 472,
+    "record": "docs/project-records/hughes-center-amenities/research.json",
+    "geometry": {
+      "poolAreaM2": 121.47449471999934,
+      "courtBounds": [
+        1160.4659719791505,
+        -20.059447238299732,
+        1179.0383719791505,
+        15.638152761700269
+      ],
+      "courtFitOffsetM": [
+        6,
+        2
+      ],
+      "roadOverlapM2": 0.0,
+      "poolBounds": [
+        1183.8923719791505,
+        -39.18464723829973,
+        1201.2587719791504,
+        -26.15984723829973
+      ],
+      "loungers": 35,
+      "limitations": [
+        "Aerial fit and ground elevation inferred; mapped roads checked; exact parcel boundaries remain inferred.",
+        "Arrival rotunda and fountain omitted until mapped tower/ground parallax reconciled.",
+        "Cabana, planting, pool enclosure and full connections unfinished.",
+        "Sport net is visual only; no game mechanics."
+      ]
+    },
+    "preservation": "Every existing tower node and collision triangle retained; road geometry unchanged.",
+    "visualReview": "All 12 final daylight captures and 14 movement endpoint images personally inspected. Residence close view partly occluded by retained neighboring roof; movement endpoints confirm enclosure, furniture and spa.",
+    "checks": "All local step 7 checks passed; 170 movement segments, 820 capsule samples, nine smoke visits. See checks.json and performance-ab.json for performance scope and timing variability.",
+    "captures": [
+      "build/city-exteriors/park-towers-amenities-final/park-towers-front.png",
+      "build/city-exteriors/park-towers-amenities-final/park-towers-overview.png",
+      "build/city-exteriors/park-towers-amenities-final/park-towers-back.png",
+      "build/city-exteriors/park-towers-amenities-final/park-towers-amenity.png"
+    ],
+    "installedSha256": "444daea5429f2ab0b92fb20faf6544b2910f44f629e07b7cfd64ed0723f05822",
+    "performance": "docs/project-records/hughes-center-amenities/performance-ab.json"
   }
 }

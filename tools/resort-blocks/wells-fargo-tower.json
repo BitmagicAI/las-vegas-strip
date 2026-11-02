@@ -54,5 +54,43 @@
     "typecheck": "passed",
     "localWebGPU": "passed58fps spawn3011bodies; not route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-wells.log"
+  },
+  "hughesAmenitiesPass": {
+    "date": "2026-11-02",
+    "status": "verified-scoped-pass",
+    "pullRequest": 472,
+    "record": "docs/project-records/hughes-center-amenities/research.json",
+    "geometry": {
+      "roadOverlapM2": 4.600764214046649e-13,
+      "gardenAreaM2": 1048.9160648156374,
+      "pathAreaM2": 200.84721808353353,
+      "pergolas": [
+        [
+          1449,
+          -341
+        ],
+        [
+          1452.3,
+          -329
+        ]
+      ],
+      "limitations": [
+        "Original geometry, approximate aerial and Dec2024StreetView layout.",
+        "Palm trees with white lower trunks not substituted by available broadleaf sources; remain unfinished.",
+        "Public lobby, exact crown proportions and east patio remain unchanged.",
+        "No terrain/road regeneration."
+      ]
+    },
+    "preservation": "Every existing tower node and collision triangle retained; road geometry unchanged.",
+    "visualReview": "All 12 final daylight captures and 14 movement endpoint images personally inspected. Residence close view partly occluded by retained neighboring roof; movement endpoints confirm enclosure, furniture and spa.",
+    "checks": "All local step 7 checks passed; 170 movement segments, 820 capsule samples, nine smoke visits. See checks.json and performance-ab.json for performance scope and timing variability.",
+    "captures": [
+      "build/city-exteriors/wells-amenities-final/wells-front.png",
+      "build/city-exteriors/wells-amenities-final/wells-overview.png",
+      "build/city-exteriors/wells-amenities-final/wells-back.png",
+      "build/city-exteriors/wells-amenities-final/wells-amenity.png"
+    ],
+    "installedSha256": "ea52032221687026da05c429357799438e9f3f98218afc82b026f785464aa656",
+    "performance": "docs/project-records/hughes-center-amenities/performance-ab.json"
   }
 }
