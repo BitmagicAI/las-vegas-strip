@@ -17,11 +17,51 @@
     "Research before geometry; all initial dimensions provisional.",
     "One grouped bake after installation and local review."
   ],
-  "references": [],
+  "references": [
+    {
+      "url": "https://www.casinoroyalehotel.com/photo-gallery/",
+      "review": "Operator gallery personally inspected, including pool photo. Orange/red parasols, dark frames with longitudinal multicolored striped chaise fabric, white towels, warm terracotta deck, metal pool handrails, square tables and palm/planting edges."
+    },
+    {
+      "url": "https://www.casinoroyalehotel.com/wp-content/uploads/2024/11/14431802-725x408.jpg",
+      "review": "Pool photograph inspected; upload path is not capture date."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12056,-115.17153&zoom=21&basemap=satellite",
+      "review": "Personally inspected aerial: asymmetric kidney pool, terracotta courtyard, loungers mainly around west/north/east edges, palms concentrated south and corners; surrounding hotel roofs and eastern service alley. Capture date unavailable."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.12042,-115.17076&zoom=20&basemap=satellite",
+      "review": "Garage roof parking stripes, central longitudinal divider, southwest utilities and south/east service alleys inspected. Western annex function uncertain."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12010,-115.17065&heading=345&pitch=8",
+      "review": "December 2022 Street View personally inspected: tan broad end piers, narrow metal picket rails, burgundy Best Western PLUS/Casino Royale sign, rectangular underdeck fixtures. Temporary dumpsters and parked vehicles are not architectural scope."
+    },
+    {
+      "url": "https://www.caesars.com/content/scaffold_pages/generic/harrahs/las/en/carnaval_court/_jcr_content/cards/card/featuredImage.stdimg.hd.xl.jpg/1597789548910.jpg",
+      "review": "Official Carnaval photo personally inspected: rainbow fascia, round dark fixtures, tapered columns, overhead trusses, suspended rectangular panels, purple central equipment structure and hanging mesh cages. Exact functions/dimensions unverified; historic background facade must not be copied."
+    }
+  ],
   "remaining": [
-    "Inspect matching neutral daylight baselines",
-    "Research official photographs and Google aerial/Street View",
-    "Select reversible reference-supported refinements",
-    "Complete step 7, installed walking/driving and matching performance"
+    "Recapture and inspect corrected garage front baseline",
+    "Corroborate Carnaval permanent features with Street View",
+    "Author original preserving refinements; optimize WebP before install",
+    "Complete step 7, installed walking/driving and matching performance; one grouped bake"
+  ],
+  "baselineReview": {
+    "inspected": 11,
+    "accepted": 10,
+    "rejected": "Garage front at eye [194,3,-438] obstructed by nearby wall. Raise to historical [194,19,-438] and recapture all four garage views before editing models.",
+    "observations": [
+      "Royale rear courtyard has basin but no reference-supported furniture.",
+      "Garage geometry includes piers, rails, ramps and stripes; actual vehicle circulation remains unverified.",
+      "Carnaval existing radial roof/bar lacks detailed overhead equipment."
+    ]
+  },
+  "decisions": [
+    "Preserve existing basin and public interiors; author original furniture proportions inferred from official photographs.",
+    "Do not substitute broadleaf tree-0/1/2 assets for palms.",
+    "Keep garage inferred ramp layout pending actual drive review; do not describe it as surveyed."
   ]
 }
