@@ -1,0 +1,27 @@
+{
+  "status": "Baseline capture and reference research",
+  "date": "2026-11-02",
+  "base": "b2adcae",
+  "issues": [
+    83,
+    157,
+    170
+  ],
+  "scope": [
+    "Casino Royale frontage and rear hotel courtyard (two mapped buildings)",
+    "Casino Royale garage",
+    "Carnaval Court pavilion"
+  ],
+  "constraints": [
+    "Preserve existing interiors, public routes, road geometry and optimized runtime.",
+    "Research before geometry; all initial dimensions provisional.",
+    "One grouped bake after installation and local review."
+  ],
+  "references": [],
+  "remaining": [
+    "Inspect matching neutral daylight baselines",
+    "Research official photographs and Google aerial/Street View",
+    "Select reversible reference-supported refinements",
+    "Complete step 7, installed walking/driving and matching performance"
+  ]
+}
