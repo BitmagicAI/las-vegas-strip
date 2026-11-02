@@ -1,0 +1,80 @@
+{
+  "rows": [
+    {
+      "name": "front",
+      "beforeP95": 18.800000190734863,
+      "afterP95": 18.5,
+      "changePercent": -1.6
+    },
+    {
+      "name": "entry",
+      "beforeP95": 19.299999952316284,
+      "afterP95": 18,
+      "changePercent": -6.74
+    },
+    {
+      "name": "back",
+      "beforeP95": 18.899999856948853,
+      "afterP95": 17.799999952316284,
+      "changePercent": -5.82
+    },
+    {
+      "name": "tacos",
+      "beforeP95": 18.200000047683716,
+      "afterP95": 25.399999856948853,
+      "changePercent": 39.56
+    },
+    {
+      "name": "liquor",
+      "beforeP95": 19.09999990463257,
+      "afterP95": 17.40000009536743,
+      "changePercent": -8.9
+    },
+    {
+      "name": "shops",
+      "beforeP95": 19,
+      "afterP95": 18.299999952316284,
+      "changePercent": -3.68
+    },
+    {
+      "name": "shops-strip",
+      "beforeP95": 19.700000047683716,
+      "afterP95": 17.5,
+      "changePercent": -11.17
+    }
+  ],
+  "note": "Matching960x540DPR1; single capture timing variance, not speedup claim.",
+  "tacosFollowup": [
+    {
+      "name": "tacos",
+      "eye": [
+        721,
+        12,
+        -1820
+      ],
+      "target": [
+        766,
+        4,
+        -1791
+      ],
+      "p50": 16.600000143051147,
+      "p95": 17.90000009536743
+    },
+    {
+      "name": "tacos",
+      "eye": [
+        721,
+        12,
+        -1820
+      ],
+      "target": [
+        766,
+        4,
+        -1791
+      ],
+      "p50": 16.59999990463257,
+      "p95": 18
+    }
+  ],
+  "assessment": "Initial25.4msP95outlier not reproduced: identical-camera repeats17.9/18.0ms versus18.2msbaseline. Preserve all samples; no persistent regression observed, no speedupclaim."
+}

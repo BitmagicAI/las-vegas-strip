@@ -4176,10 +4176,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Public arrival/entrance openings and route validation",
-    "Side terrace and landscaping",
-    "Exact bay spacing and measured elevations",
-    "Block route performance comparison"
+    "Public indoor arrival/entrance openings remain closed",
+    "Palm landscaping and exact amenity dimensions/layout",
+    "Exact bay spacing/elevations; shallow spa does not simulate swimming",
+    "Static pool lift does not provide functional accessibility"
    ],
    "record": "tools/resort-blocks/embassy-convention.json",
    "buildings": [
@@ -4201,6 +4201,7 @@
     ],
     "builders": [
      "tools/strip-landmarks/embassy_convention.py",
+     "tools/city-exteriors/install-convention-refinement.mjs",
      "tools/city-exteriors/test-embassy.mjs",
      "tools/strip-landmarks/build_embassy.py"
     ]
@@ -4715,13 +4716,12 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact roof curvature and mullion proportions",
-    "Public west terrace and furnishings",
-    "Landscape and street-level detailing",
-    "Entrance/approach elevation reconciliation and onward public connections",
-    "Route-level performance measurement"
+    "Exact terrace boundary/elevation: inferred1741m²slab versus operator~1301m²eventarea",
+    "Public stairs/interior connection to third-level terrace remains absent",
+    "Exact roof/mullion proportions and ground landscaping",
+    "Existing raised approach roads and onward public connections unresolved"
    ],
    "record": "tools/resort-blocks/lvcc-west.json",
    "buildings": [
@@ -4742,7 +4742,10 @@
     ],
     "builders": [
      "tools/city-exteriors/test-lvcc-west.mjs",
+     "tools/strip-landmarks/export_convention_refinement.py",
      "tools/strip-landmarks/lvcc_west.py",
+     "tools/city-exteriors/install-convention-refinement.mjs",
+     "tools/city-exteriors/test-lvcc-terrace.mjs",
      "tools/strip-landmarks/build_lvcc_west.py"
     ]
    },
@@ -5764,13 +5767,12 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Precise elevations, sign artwork, landscaping and parking-lot integration",
-    "Dry pool basin is simplified",
-    "Closed public interiors and doors; full approach driving test pending",
-    "Whole-block performance measurement",
-    "Royal Resort era conflict: September2026 demolition reported; installed2022–24 historical architecture is not current."
+    "Precise elevations, signage artwork, landscape and parking integration",
+    "Mixed retail allocation in red-gabled3041building:Jan2025Everything$10sign conflicts with broad currentElGordo labels",
+    "Dry Royalpool remains simplified; interiors/doors closed",
+    "Royal retained2022–24architecture despite September2026demolition"
    ],
    "record": "tools/resort-blocks/convention-frontage.json",
    "buildings": [

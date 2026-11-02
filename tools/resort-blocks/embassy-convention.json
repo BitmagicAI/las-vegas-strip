@@ -17,10 +17,10 @@
   ],
   "dimensions": "Mapped 36m tower height; component elevations estimated from relative floor bands. No survey precision claim.",
   "remaining": [
-    "Public arrival/entrance openings and route validation",
-    "Side terrace and landscaping",
-    "Exact bay spacing and measured elevations",
-    "Block route performance comparison"
+    "Public indoor arrival/entrance openings remain closed",
+    "Palm landscaping and exact amenity dimensions/layout",
+    "Exact bay spacing/elevations; shallow spa does not simulate swimming",
+    "Static pool lift does not provide functional accessibility"
   ],
   "baseline": [
     "build/city-exteriors/embassy-before/embassy-front.png",
@@ -58,5 +58,10 @@
       "tools/strip-landmarks/embassy_convention.py": "1cd2858440fee9d284d3f2beb5bf9aa2d44802dd0e3f5f444aa7fb016bd3c1f1",
       "build/optimized/build/strip-landmarks/embassyConvention-exterior.glb": "701266c5e10262c8e0c6ccb2b5c219069274abd3d07971a006137276a7249bfd"
     }
+  },
+  "refinement20261102": {
+    "summary": "2026-11-02: Added south outdoor spa/deck, six loungers/towels, two parasols, banded walls/open gate, handrails/static lift. Four daylight views and six actual walking segments passed. Original12nodes/535collisiontriangles retained.",
+    "record": "docs/project-records/convention-area-refinement/research.json",
+    "status": "installed-local-review; grouped final checks pending"
   }
 }

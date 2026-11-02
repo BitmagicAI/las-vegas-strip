@@ -26,11 +26,10 @@
     }
   ],
   "remaining": [
-    "Exact roof curvature and mullion proportions",
-    "Public west terrace and furnishings",
-    "Landscape and street-level detailing",
-    "Entrance/approach elevation reconciliation and onward public connections",
-    "Route-level performance measurement"
+    "Exact terrace boundary/elevation: inferred1741m\u00b2slab versus operator~1301m\u00b2eventarea",
+    "Public stairs/interior connection to third-level terrace remains absent",
+    "Exact roof/mullion proportions and ground landscaping",
+    "Existing raised approach roads and onward public connections unresolved"
   ],
   "baseline": [
     "build/city-exteriors/lvcc-west-before/lvcc-west-front.png",
@@ -61,5 +60,10 @@
     "files": {
       "build/optimized/build/strip-landmarks/lvccWest-exterior.glb": "d2e77b2cf2a91794b5dc31411c40d36a4bf788c5d154484b1463cadd6856b18c"
     }
+  },
+  "refinement20261102": {
+    "summary": "2026-11-02: Opened southwest third-level terrace, added paving/guardrail/columns/soffit fixtures. Five daylight views and eight actual deck-loop segments passed. Originalroof/servicepanels/labels retained.",
+    "record": "docs/project-records/convention-area-refinement/research.json",
+    "status": "installed-local-review; grouped final checks pending"
   }
 }
