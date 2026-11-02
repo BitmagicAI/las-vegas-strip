@@ -20,5 +20,10 @@
       "deltaPercent": -2.2471902135977273
     }
   ],
-  "note": "Same neutral daylight cameras/viewport. Timing variance, not a speedup claim."
+  "note": "Same neutral daylight cameras/viewport. Timing variance, not a speedup claim.",
+  "repeatP95": [
+    28.09999990463257,
+    19.200000047683716
+  ],
+  "investigation": "One repeat remains high28.1ms and second19.2ms. Controlled paired installed/original runs underway to distinguish host/boot variance from asset regression; no performance clearance yet."
 }

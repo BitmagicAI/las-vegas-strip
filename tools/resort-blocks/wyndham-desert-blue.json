@@ -17,10 +17,10 @@
   ],
   "dimensions": "Mapped53m tower and4m minimum canopy elevation retained. Floor bands and2.4m rooftop screen estimated from reference.",
   "remaining": [
-    "Pool garden and landscaping",
-    "Full entrance route",
-    "Exact facade colors after2024 repaint",
-    "Route performance"
+    "Exact basin/deck ground registration and water depth remain inferred; no swimming simulation",
+    "Cabanas, palms, splash pad and complete pool garden landscaping remain absent",
+    "Indoor public entrance connection and exact post2024 facade palette remain unverified",
+    "Matching performance investigation and grouped release-local checks pending"
   ],
   "baseline": [
     "build/city-exteriors/wyndham-before/wyndham-front.png",
@@ -58,5 +58,10 @@
     "typecheck": "passed",
     "localWebGPU": "passed56fps at spawn3011bodies; not block route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-wyndham.log"
+  },
+  "refinement20261102": {
+    "summary": "Two rectangular pools/two shallowspas, nine mesh loungers andtwo blueparasols; roads/sidewalks excluded, original10tower/canopybatches preserved.4daylightviews and6actualwalkingsegments inspected/passed.",
+    "status": "installed review; performance and final checks pending",
+    "record": "docs/project-records/west-resort-amenities/research.json"
   }
 }

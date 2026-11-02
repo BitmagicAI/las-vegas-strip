@@ -5,7 +5,7 @@
     "Wyndham Desert Blue (#68)",
     "Gold Coast (#58)"
   ],
-  "state": "Both installed daylight sets inspected; actual walks and Gold-front timing outlier investigation running. No shared bake.",
+  "state": "Daylight and movement reviewed. Controlled paired performance test temporarily swaps local GLBs, restores installed hashes in finally. DO NOT bake, stage, install or run other GPU jobs until it finishes.",
   "sources": [
     {
       "url": "https://www.wyndhamhotels.com/wyndham-vacations/las-vegas-nevada/wyndham-desert-blue/overview",
@@ -52,7 +52,7 @@
     "wyndhamRoof": 67,
     "wyndhamCanopy": 3,
     "failures": 0,
-    "movement": "Pending actual controls",
+    "movement": "Gold8continuoussegments andWyndham6continuoussegments PASS,all4endpointimages inspected. Goldreturnfaceswall(not indoor access).",
     "sharedBake": "Not run",
     "routeSupport": "203Gold+65Wyndham samples PASS"
   },
