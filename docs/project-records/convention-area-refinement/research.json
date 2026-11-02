@@ -18,9 +18,9 @@
     "No new shared bake until grouped geometry has been inspected."
   ],
   "remaining": [
-    "Inspect baseline captures",
-    "Research official photos and Google aerial/Street View",
-    "Choose reference-supported public exterior refinements",
+    "Capture Embassy south amenity detail baseline",
+    "Research LVCC terrace and frontage official photos/Google views",
+    "Register and author original public exterior refinements",
     "All step 7 checks, installed movement and matching performance"
   ],
   "references": [
@@ -31,6 +31,75 @@
     {
       "url": "https://www.vegasmeansbusiness.com/why-choose-vegas/blog/post/12-outdoor-event-venues-in-las-vegas/",
       "review": "LVCVA text describes West Hall terrace as 14,000 square feet, mostly covered; photographs/layout not yet inspected. Area approximately 1301 square metres, not a surveyed polygon."
+    },
+    {
+      "url": "https://www.hilton.com/en/hotels/lascces-embassy-suites-convention-center-las-vegas/gallery/",
+      "review": "Photo 10/73 Outdoor Sun Deck with Whirlpool Tub personally inspected: small rectangular turquoise spa, pale coping, cream deck, tan textured walls with two dark horizontal bands, brown mesh chaise frames with white towels, beige parasols, metal handrail, pool lift and gate. Palms outside boundary. Photo date unknown. Photo 6/73 Terrace Bar personally inspected: INSIDE atrium, not an outdoor terrace; do not construct an external bar from its name."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.124,-115.1538&zoom=20&basemap=satellite",
+      "review": "Aerial personally inspected: outdoor spa/deck against south hotel wall near east half. Interior pool not visible from overhead. Roof parallax present; ground/deck registration remains approximate. Image acquisition date not provided.",
+      "coordinateFit": {
+        "centreLonLat": [
+          -115.1538,
+          36.124
+        ],
+        "viewport": [
+          1280,
+          720
+        ],
+        "mapCentrePixels": [
+          676,
+          360
+        ],
+        "estimatedMetresPerPixel": 0.1206,
+        "spaApproxPixels": [
+          [
+            658,
+            580
+          ],
+          [
+            711,
+            580
+          ],
+          [
+            711,
+            605
+          ],
+          [
+            658,
+            605
+          ]
+        ],
+        "deckApproxPixels": [
+          [
+            560,
+            566
+          ],
+          [
+            724,
+            566
+          ],
+          [
+            724,
+            630
+          ],
+          [
+            560,
+            630
+          ]
+        ],
+        "note": "Provisional scale inferred against mapped hotel width and displayed scale; reconcile with ground walls/roads before installation."
+      }
     }
-  ]
+  ],
+  "baselineReview": {
+    "inspected": 14,
+    "findings": [
+      "Embassy existing glazed atrium and stepped wings retained; outdoor hot tub/deck absent.",
+      "LVCC West roof/glass shell present; raised approach roads obscure the low southern entry and must be preserved. Terrace not yet registered to existing facade.",
+      "Royal historical balcony grid/canopy retained; rear pool a blank simplified pad. Shop frontages sparse; El Pastor signage duplicated on two west portions."
+    ],
+    "acceptance": "Baseline only, no completed refinement claim."
+  }
 }
