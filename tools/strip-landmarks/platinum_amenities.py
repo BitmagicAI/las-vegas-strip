@@ -28,9 +28,9 @@ def build(B):
  B.planar('ppa-coping',water.buffer(.2).difference(water),Y+.025,True)
  # Open dry doorway west of water channel, no collision across the water opening.
  # Separate interior source for required interior-light treatment at integration.
- B.source='platinum-pool-interior'
+ B.source='platinum-pool-interior';B.property='platinum-interior'
  x0,z0,x1,z1=inside.bounds;H=3.4
- B.shell(inside,Y,Y+H,'ppa-interior-wall',roof=False,openings=[dict(p=[877,Y,z0],width=2.4,height=2.8),dict(p=[883,Y,z0],width=2.1,height=2.7)])
+ B.shell(inside,Y,Y+H,'ppa-interior-wall',roof=False,openings=[dict(p=[877,Y,z0],width=2.4,height=2.8),dict(p=[883,Y,z0],width=2.1,height=2.7),dict(p=[880,Y+.55,z0],width=2.1,height=2.15),dict(p=[886.5,Y+.55,z0],width=2.4,height=2.15),dict(p=[889.5,Y+.55,z0],width=2.4,height=2.15)])
  B.planar('ppa-interior-ceiling',inside,Y+H)
  # Four north-facing glazed bays: visual frames above pool, clear doorway retained.
  for x in [880,886.5,889.5]:
@@ -43,7 +43,10 @@ def build(B):
   for dz in [-.95,.95]:
    B.box('ppa-dark',(x,Y+.45,z+dz),(.55,.12,.55),True)
    B.box('ppa-frame',(x,Y+.2,z+dz),(.40,.40,.40))
- B.source='platinum-amenities'
+ B.source='platinum-amenities';B.property='platinumAmenities-exterior'
+ # Exterior backs retain enclosure silhouette while the public interior streams.
+ B.box('ppa-gray',((x0+x1)/2,Y+H/2,z1+.04),(x1-x0,H,.08),True)
+ for x in [x0-.04,x1+.04]:B.box('ppa-gray',(x,Y+H/2,(z0+z1)/2),(.08,H,z1-z0),True)
  B.planar('ppa-roof',inside,Y+H+.1,True)
  # Gray perimeter wall punctured with rectangular skyline openings and lime awnings.
  for a,b in [((873,249),(891.5,249)),((873,249),(873,266.5))]:
@@ -66,7 +69,7 @@ def build(B):
     for dz in [-.7,.7]:F.box('ppa-frame',(dx,.16,dz),(.04,.32,.04))
    B.face('ppa-dark',[F.p(-.35,.42,-.3),F.p(.35,.42,-.3),F.p(.35,.86,-.9),F.p(-.35,.86,-.9)]);count+=1
  (RECORD/'platinum-routes.json').write_text(json.dumps(routes,indent=2)+'\n')
- (RECORD/'platinum-geometry.json').write_text(json.dumps(dict(loungers=count,deckAreaM2=deck.area,waterAreaM2=water.area,indoorBounds=list(inside.bounds),limitations=['Inferred enclosure dimensions/ceiling and channel registration.','Shallow water above retained structural roof; no swimming-depth claim.','Interior source must receive interior lighting during integration; not installed yet.','Exact planting, festoon fixtures, guest lift access and street-to-pool route remain unfinished.']),indent=2)+'\n')
+ (RECORD/'platinum-geometry.json').write_text(json.dumps(dict(loungers=count,deckAreaM2=deck.area,waterAreaM2=water.area,indoorBounds=list(inside.bounds),limitations=['Inferred enclosure dimensions/ceiling and channel registration.','Shallow water above retained structural roof; no swimming-depth claim.','Separate platinum-interior asset uses existing streamed venue interior lighting; metadata integration pending.','Exact planting, festoon fixtures, guest lift access and street-to-pool route remain unfinished.']),indent=2)+'\n')
  return count
 if __name__=='__main__':
  B=AmenityMeshes();print('loungers',build(B));B.save_all()

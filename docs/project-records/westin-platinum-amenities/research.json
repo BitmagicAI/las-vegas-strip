@@ -1,5 +1,5 @@
 {
-  "status": "both-source-studies-await-export-and-integration",
+  "status": "optimized-local-candidates-await-installed-review",
   "issues": [
     66,
     67
@@ -184,5 +184,6 @@
   },
   "decisionsForOwner": [
     "Retain existing podium structural roof; new Westin water stays shallow above roof collision. This avoids cutting structural geometry in an amenity pass; swimming depth and continuous guest access remain unfinished."
-  ]
+  ],
+  "integration": "Platinum interior split to platinum-interior.glb; existing venue streaming loader applies InteriorLighting. Installer adds levelY/accessPoints/zones to existing Platinum metadata, preserving other venue rows. Metadata binary refresh and installed acceptance pending. No runtime source changes."
 }
