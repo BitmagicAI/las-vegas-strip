@@ -59,4 +59,6 @@ def exterior(B):
  for ident in LOGOS:
   color=BYID[ident]['tags'].get('roof:colour','').lower();mat='as-yellow' if color=='#ffff00' else 'as-orange' if color=='#ff8000' else 'as-letter'
   B.planar(mat,footprint(ident),62.07)
+ from allegiant_entry_canopy import build as build_entry_canopy
+ build_entry_canopy(B)
  return dict(key=KEY,name='Allegiant Stadium',center=[cx,0,cz],bounds=list(p.bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],views={})
