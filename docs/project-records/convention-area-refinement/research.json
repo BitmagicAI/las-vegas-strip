@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "status": "Reference research and neutral daylight baseline capture",
+  "status": "Embassy source study exported; grouped research and installation pending",
   "base": "0901ea2",
   "issues": [
     64,
@@ -18,7 +18,7 @@
     "No new shared bake until grouped geometry has been inspected."
   ],
   "remaining": [
-    "Capture Embassy south amenity detail baseline",
+    "Optimize/preserve-merge Embassy spa addition, inspect installed registration and walk access",
     "Research LVCC terrace and frontage official photos/Google views",
     "Register and author original public exterior refinements",
     "All step 7 checks, installed movement and matching performance"
@@ -100,6 +100,15 @@
       "LVCC West roof/glass shell present; raised approach roads obscure the low southern entry and must be preserved. Terrace not yet registered to existing facade.",
       "Royal historical balcony grid/canopy retained; rear pool a blank simplified pad. Shop frontages sparse; El Pastor signage duplicated on two west portions."
     ],
-    "acceptance": "Baseline only, no completed refinement claim."
+    "acceptance": "Baseline only, no completed refinement claim.",
+    "embassyDetail": "All four matching daylight baseline-detail images personally inspected; south strip is empty, hotel glass and existing sidewalk/road retained. Amenity capture baseline accepted."
+  },
+  "sourceStudy": {
+    "embassy": "Original 152.5 m\u00b2 deck, 19.23 m\u00b2 shallow raised spa, six mesh loungers/towels, two beige parasols, two-band perimeter walls, 1.5 m open gate, handrails and static lift. Placement and counts inferred. Source clearance assertions and Blender export pass. No installation/optimization/shared bake yet.",
+    "decisions": [
+      "Shallow raised basin preserves pre-existing ground; not a swimming/depth simulation.",
+      "No external Terrace Bar: official photo locates it inside atrium.",
+      "Palms deferred rather than substituting broadleaf source trees."
+    ]
   }
 }
