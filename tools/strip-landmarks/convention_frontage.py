@@ -93,7 +93,10 @@ def exterior(B):
      for u in np.arange(1,L,3):F.tube('cf-frame',(u,4,-.15),(u,3.3,-1.3),.024,4)
      if name=='liquor':F.text('LIQUOR',(L*.5,4.5,-.22),1.2,'cf-red')
      elif nx<-.7 and L>10:
-      if F.x<750:F.text('Tacos el Pastor',(L/2,4.6,-.22),.85,'cf-red')
+      if F.x<750:
+       # May 2022 Street View: restaurant on north bay, souvenir shop south.
+       label='Tacos el Pastor' if (a[1]+b[1])/2 < -1730 else 'SOUVENIRS'
+       F.text(label,(L/2,4.6,-.22),.85,'cf-red')
       elif F.x>820:F.text('KIMCHI',(L/2,4.6,-.22),.9,'cf-red')
      elif nz<-.7 and L>35:
       F.text('TACOS EL PASTOR',(L*.15,4.6,-.22),.75,'cf-red')
@@ -107,6 +110,14 @@ def exterior(B):
  for x in [742,747,752]:
   B.box('cf-frame',(x,1,-1744),(1,.07,1));B.tube('cf-frame',(x,.24,-1744),(x,.97,-1744),.06,6)
   patio_chair(B,x-.8,-1744,'cf-red');patio_chair(B,x+.8,-1744,'cf-blue')
+ # January 2025 Street View: pale horizontal patio rails, with an open access bay.
+ # Rail dimensions inferred; preserve the existing furniture and pad registration.
+ for lo,hi in [(739,745.8),(748.2,755)]:
+  for x in np.linspace(lo,hi,max(2,math.ceil((hi-lo)/1.5)+1)):
+   B.box('cf-white',(x,.79,-1746),(.055,1.1,.055),True)
+  for y in [.5,.75,1,1.3]:B.tube('cf-white',(lo,y,-1746),(hi,y,-1746),.025,6)
+ for x in [739,755]:
+  for y in [.5,.75,1,1.3]:B.tube('cf-white',(x,y,-1746),(x,y,-1742.1),.025,6)
  # Corner El Gordo: tan fascia, red tiled piers and pitched red metal edge roofs.
  B.source='tacos-el-gordo';hh=5.8
  B.shell(taco,.24,hh,'cf-tan',roof=False);B.planar('cf-flat-roof',taco,hh,True)

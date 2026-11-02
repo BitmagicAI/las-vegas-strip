@@ -120,6 +120,20 @@
     {
       "url": "https://tacoselgordobc.com/locations/",
       "review": "Operator locations text confirms 3041 S Las Vegas Blvd, supporting existing footprint/name correction."
+    },
+    {
+      "url": "https://tacoelpastor.com/gallery/",
+      "review": "Operator gallery visually inspected: food photographs, not useful exterior/patio evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1316,-115.16525&heading=90&pitch=4&fov=90",
+      "imageDate": "2022-05",
+      "review": "Street View inspected: northern white frontage Tacos El Pastor; southern adjacent bay T-shirts/Souvenirs/Indian Jewelry/Gifts. Correct duplicate restaurant label on southern west bay to plain SOUVENIRS; no copied logo."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.13184,-115.1651&heading=90&pitch=5&fov=65",
+      "imageDate": "2025-01",
+      "review": "Street View inspected: white horizontal patio rail at northern restaurant corner, colourful chairs, red/blue parasols, corner-wrap restaurant labels and east Kimchi fascia. Red-gabled frontage to north advertises Everything $10: existing broad El Gordo labelling may overstate tenant extent despite operator3041 address. Retain era/tenant discrepancy rather than guessing full reallocation."
     }
   ],
   "baselineReview": {
@@ -163,5 +177,7 @@
     "review": "passed289records",
     "checkPublic": "0failures;2existing chapel-email warnings",
     "remaining": "Movement, LVCC installed review/performance, Convention frontage work, one grouped bake then runtime/pack/smoke checks."
-  }
+  },
+  "frontageSource": "Correct southern west souvenir label and add pale horizontal rail to existing restaurant patio with 2.4m entry gap. Other three buildings untouched by geometry; preserve prior facade/interiors/roads. Full corner mixed-retail allocation remains unresolved.",
+  "frontageInstallation": "Level+WebP optimized, installed --no-stage (12.34\u21923.67MiB). Repacked7707collisiontriangles. 154support+38Royalcanopyclearance samples pass;49of50meshbatches identical to original generator. Only white rails and southern souvenir label changed. Matching seven daylight captures running; actual patio entry clearance still needs movement review against existing tables."
 }

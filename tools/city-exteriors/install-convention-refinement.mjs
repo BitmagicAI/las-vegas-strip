@@ -24,7 +24,9 @@ for(const [key,addition] of [['embassyConvention','embassySpaRefinement']]){
  fs.writeFileSync('docs/project-records/convention-area-refinement/'+key+'-preservation.json',JSON.stringify(report,null,2)+'\n');console.log(key,report);
 }
 // LVCC is a scoped source regeneration, not an additive merge. Pack its matching collision.
-const lvcc=JSON.parse(fs.readFileSync(base+'lvccWest-exterior-collision.json'));
-fs.writeFileSync(base+'lvccWest-exterior-collision.bin',await encodeCollision([lvcc]));
-hash.update(fs.readFileSync(base+'lvccWest-exterior.glb'));
+for(const key of ['lvccWest','conventionFrontage']){
+ const collision=JSON.parse(fs.readFileSync(base+key+'-exterior-collision.json'));
+ fs.writeFileSync(base+key+'-exterior-collision.bin',await encodeCollision([collision]));
+ hash.update(fs.readFileSync(base+key+'-exterior.glb'));
+}
 fs.writeFileSync(base+'version.json',JSON.stringify({revision:hash.digest('hex').slice(0,16)}));
