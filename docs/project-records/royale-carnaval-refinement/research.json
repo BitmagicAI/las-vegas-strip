@@ -1,5 +1,5 @@
 {
-  "status": "Original courtyard and garage source studies; not installed",
+  "status": "Grouped additions exported, preserved and optimized locally; installed capture review running",
   "date": "2026-11-02",
   "base": "b2adcae",
   "issues": [
@@ -41,13 +41,17 @@
     {
       "url": "https://www.caesars.com/content/scaffold_pages/generic/harrahs/las/en/carnaval_court/_jcr_content/cards/card/featuredImage.stdimg.hd.xl.jpg/1597789548910.jpg",
       "review": "Official Carnaval photo personally inspected: rainbow fascia, round dark fixtures, tapered columns, overhead trusses, suspended rectangular panels, purple central equipment structure and hanging mesh cages. Exact functions/dimensions unverified; historic background facade must not be copied."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.11873,-115.17218&heading=90&pitch=8",
+      "review": "April 2025 Google Street View personally inspected. Rainbow fascia, tapered columns, hanging gray rectangular panels and dark mesh cages corroborate official photo. Street-side purple kiosk visible but not reproduced in this scoped refinement. Rig layout/dimensions remain inferred."
     }
   ],
   "remaining": [
-    "Corroborate Carnaval permanent overhead features and author preserving source",
-    "Corroborate Carnaval permanent features with Street View",
-    "Author original preserving refinements; optimize WebP before install",
-    "Complete step 7, installed walking/driving and matching performance; one grouped bake"
+    "Export all three studies and preserving merge into existing exterior GLBs",
+    "Optimize every changed GLB including WebP before installation",
+    "Inspect installed daylight views and walk/drive routes; compare matching performance",
+    "Complete all step 7 checks and one grouped bake"
   ],
   "baselineReview": {
     "inspected": 11,
@@ -68,5 +72,13 @@
   "sourceStudies": [
     "royale_courtyard_refinement.py: 15 striped loungers and 2 red/orange parasol tables; retained pool and clear 0.4m capsule route.",
     "royale_garage_refinement.py: 50 inferred underdeck fixture housings; no runtime lights or altered deck/ramp collision."
-  ]
+  ],
+  "installation": {
+    "preservation": "Every existing node and collision triangle retained; added 228 courtyard collision triangles, zero garage/pavilion collision triangles.",
+    "optimization": "All three runtime exterior GLBs passed level and WebP pass, locally installed with --no-stage.",
+    "captureSession": 40193,
+    "captureDirectories": "build/city-exteriors/{royale,royale-garage,carnaval}-refinement-installed",
+    "sharedBake": "Not run yet.",
+    "testDiscrepancy": "Legacy casino-royale test needs missing generated exterior source JSON; no assertion failure reached. Reconstruct test input without overwriting preserved runtime assets."
+  }
 }
