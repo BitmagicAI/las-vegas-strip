@@ -112,6 +112,14 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.13236,-115.159&heading=0&pitch=15&fov=80",
       "imageDate": "2026-02",
       "review": "Street View personally inspected, 305 Convention Center Dr: open third-level terrace above two-story glazing, glass guardrail and support columns under roof, small ceiling fixtures. Ground has gravel planting beds, broadleaf trees, clipped shrubs/agaves, paired-band grey bollards and modern pole lights. Existing full-height model glazing incorrectly encloses terrace; terrace reconstruction requires scoped facade opening, not merely appending a hidden deck."
+    },
+    {
+      "url": "https://tacoelpastor.com/",
+      "review": "Operator website text confirms 3049 S Las Vegas Blvd. Gallery still needs visual inspection for patio/detail geometry."
+    },
+    {
+      "url": "https://tacoselgordobc.com/locations/",
+      "review": "Operator locations text confirms 3041 S Las Vegas Blvd, supporting existing footprint/name correction."
     }
   ],
   "baselineReview": {
@@ -139,5 +147,18 @@
     "validation": "7162 roof support and 78 planned deck-loop support/headroom samples pass. Initial failed deck tests exposed roof-hole polygons wrongly carried into floor: fixed by filling roof holes before buffering floor footprint.",
     "discrepancy": "Inferred slab area 1741m\u00b2 is greater than operator event terrace area about1301m\u00b2. Do not claim exact terrace footprint; reconcile circulation/back-wall boundary in installed review. No stair/public arrival link yet.",
     "state": "Final Blender export plus level/WebP optimization running. No optimized installation or shared bake yet."
+  },
+  "installation": {
+    "embassy": "Merged addition retaining 12 prior nodes and all535 collision triangles; added150collisiontriangles. Level+WebP optimized and installed locally --no-stage.",
+    "lvcc": "Level+WebP optimized and installed locally --no-stage, 6.68MiB\u21921.77MiB level candidate. Repacked current collision binary for subsequent movement checks.",
+    "captures": "Matching four Embassy/five LVCC daylight captures running. First three Embassy images inspected, original facade retained, south deck visible. No installed pass until detail/movement/performance review.",
+    "sharedBake": "Not run.",
+    "embassyReview": "All four installed daylight images personally inspected. Tan banded walls, six mesh loungers, parasols, shallow spa/handrail/lift appear on south deck; facade retained. Four matching P95 differences -7.7/-8.1/-6.7/-7.4 percent, timing variance not a speedup claim. Actual access walk still pending."
+  },
+  "localChecks": {
+    "bitmagicCheck": "passed",
+    "review": "passed289records",
+    "checkPublic": "0failures;2existing chapel-email warnings",
+    "remaining": "Movement, LVCC installed review/performance, Convention frontage work, one grouped bake then runtime/pack/smoke checks."
   }
 }
