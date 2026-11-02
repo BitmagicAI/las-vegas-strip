@@ -13,10 +13,10 @@
   ],
   "dimensions": "Mapped tower50m retained. Podium7.5m,garage12.4m,upper dark section37.1m estimated from reference; not surveyed elevations.",
   "remaining": [
-    "Public entrance circulation",
-    "Pool access and landscape",
-    "Exact signage and facade bay dimensions",
-    "Route performance"
+    "Continuous street-to-roof public/guest lift access and entrance/garage circulation remain unverified; current routes start on the amenity deck.",
+    "Exact facade/signage/balcony dimensions, measured pool depth and elevations remain inferred.",
+    "Reference planting, detailed railings/ladders, fixtures and full frontage refinements remain unfinished.",
+    "Performance varies between runs; full60fps coverage, GPU/CPU spans and resident-memory measurements remain unestablished. Historical and matched timing samples retained in amenityPass evidence."
   ],
   "baseline": [
     "build/city-exteriors/westin-before/westin-front.png",
@@ -53,5 +53,18 @@
     "typecheck": "passed",
     "localWebGPU": "passed58fps at spawn,3011bodies; not block-route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-westin.log"
+  },
+  "amenityPass": {
+    "pr": 471,
+    "research": "docs/project-records/westin-platinum-amenities/research.json",
+    "geometry": "docs/project-records/westin-platinum-amenities/westin-geometry.json",
+    "preservation": "docs/project-records/westin-platinum-amenities/westin-preservation.json",
+    "sourceAudit": "docs/project-records/westin-platinum-amenities/export-audit.json",
+    "installedClearance": "docs/project-records/westin-platinum-amenities/installed-route-clearance.json",
+    "movement": "docs/project-records/westin-platinum-amenities/walk.json",
+    "daylight": "docs/project-records/westin-platinum-amenities/preview-review.json",
+    "status": "Verified limited amenity pass: local step7, installed walking, daylight, bake/package and smoke passed; repeated matched performance investigation retained with limitations.",
+    "performance": "docs/project-records/westin-platinum-amenities/performance.json",
+    "performanceReplay": "docs/project-records/westin-platinum-amenities/performance-ab.json"
   }
 }

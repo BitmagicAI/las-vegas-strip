@@ -1,0 +1,78 @@
+{
+  "westin": [
+    {
+      "view": "front",
+      "beforeP95": 49.3,
+      "afterP95": 55.2,
+      "beforeP50": 27.6,
+      "afterP50": 52.4
+    },
+    {
+      "view": "pool",
+      "beforeP95": 18.9,
+      "afterP95": 28.2,
+      "beforeP50": 16.7,
+      "afterP50": 26
+    },
+    {
+      "view": "east",
+      "beforeP95": 72.5,
+      "afterP95": 94.1,
+      "beforeP50": 53.9,
+      "afterP50": 87.4
+    },
+    {
+      "view": "west",
+      "beforeP95": 18.6,
+      "afterP95": 25.6,
+      "beforeP50": 16.6,
+      "afterP50": 22.4
+    }
+  ],
+  "platinum": [
+    {
+      "view": "front",
+      "beforeP95": 27.3,
+      "afterP95": 37.2,
+      "beforeP50": 18.5,
+      "afterP50": 34.1
+    },
+    {
+      "view": "pool",
+      "beforeP95": 18.6,
+      "afterP95": 26.6,
+      "beforeP50": 16.7,
+      "afterP50": 23.8
+    },
+    {
+      "view": "east",
+      "beforeP95": 27.8,
+      "afterP95": 34.5,
+      "beforeP50": 17,
+      "afterP50": 31.5
+    },
+    {
+      "view": "west",
+      "beforeP95": 18.7,
+      "afterP95": 22.9,
+      "beforeP50": 16.7,
+      "afterP50": 19.1
+    }
+  ],
+  "platinum-interior": [
+    {
+      "view": "front",
+      "beforeP95": 19.4,
+      "afterP95": 17.7,
+      "beforeP50": 16.7,
+      "afterP50": 16.6
+    },
+    {
+      "view": "interior",
+      "beforeP95": 29.2,
+      "afterP95": 19.1,
+      "beforeP50": 17.5,
+      "afterP50": 16.5
+    }
+  ]
+}

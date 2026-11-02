@@ -1,0 +1,88 @@
+{
+  "records": [
+    {
+      "mode": "on",
+      "p50": 16.699999809265137,
+      "p95": 18.799999952316284,
+      "render": {
+        "calls": 7643,
+        "frameCalls": 4,
+        "drawCalls": 115,
+        "triangles": 1526785,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    },
+    {
+      "mode": "off",
+      "p50": 16.600000143051147,
+      "p95": 18.899999856948853,
+      "render": {
+        "calls": 9799,
+        "frameCalls": 4,
+        "drawCalls": 114,
+        "triangles": 1526783,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    },
+    {
+      "mode": "on",
+      "p50": 16.600000143051147,
+      "p95": 18.700000047683716,
+      "render": {
+        "calls": 11959,
+        "frameCalls": 4,
+        "drawCalls": 115,
+        "triangles": 1526785,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    },
+    {
+      "mode": "off",
+      "p50": 16.5,
+      "p95": 18.700000047683716,
+      "render": {
+        "calls": 14119,
+        "frameCalls": 4,
+        "drawCalls": 114,
+        "triangles": 1526783,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    },
+    {
+      "mode": "on",
+      "p50": 16.600000143051147,
+      "p95": 18.600000143051147,
+      "render": {
+        "calls": 16279,
+        "frameCalls": 4,
+        "drawCalls": 115,
+        "triangles": 1526785,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    }
+  ],
+  "names": [
+    {
+      "name": "westinAmenities-exteriorwestin-amenitieswpa_pool",
+      "source": "westin-amenities",
+      "materials": [
+        "Strip / wpa_pool (realistic water)"
+      ]
+    }
+  ]
+}

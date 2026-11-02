@@ -1,0 +1,20 @@
+{
+  "loungers": 27,
+  "daybeds": 2,
+  "shadeBays": 2,
+  "parasols": 3,
+  "deckAreaM2": 598.8453745277759,
+  "poolAreaM2": 78.64862670000005,
+  "poolBounds": [
+    590.7765750839458,
+    104.63136717425975,
+    603.4395750839458,
+    117.53556717425975
+  ],
+  "limitations": [
+    "Estimated tracing clipped to preserved mapped podium.",
+    "Water is a shallow visual surface above retained roof collision; no swimming-depth claim.",
+    "Shade/furniture placement inferred. North access link and street-to-deck guest circulation unfinished.",
+    "Source study only; export, installed visual/collision checks and performance pending."
+  ]
+}

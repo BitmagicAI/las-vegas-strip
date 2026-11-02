@@ -74,7 +74,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-embassy-convention` | M | P2 | 4 | Refine the exterior of Embassy Suites Convention Center |
 | `ext-allegiant-stadium` | M | P2 | 4 | Refine the exterior of Allegiant Stadium |
 | `ext-westin` | M | P2 | 4 | Refine the exterior of The Westin Las Vegas |
-| `ext-platinum` | M | P2 | 4 | Refine the exterior of Platinum Hotel |
+| `ext-platinum` | M | P2 | 5 | Refine the exterior of Platinum Hotel |
 | `ext-wyndham-desert-blue` | M | P2 | 4 | Refine the exterior of Wyndham Desert Blue |
 | `ext-sky-west-garage` | M | P2 | 4 | Refine the exterior of Sky west parking structure |
 | `ext-wells-fargo-tower` | M | P2 | 3 | Refine the exterior of Wells Fargo Tower |

@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-01T14:07:32.155Z",
- "totalBytes": 3716408560,
- "count": 883,
+ "totalBytes": 3716710916,
+ "count": 884,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -1330,7 +1330,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 764224,
+   "bytes": 957540,
    "preset": "level",
    "overrides": []
   },
@@ -1339,7 +1339,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3322316,
+   "bytes": 3414964,
    "preset": "level",
    "overrides": []
   },
@@ -7982,6 +7982,15 @@
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
    "bytes": 741776,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/platinum-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 16392,
    "preset": "level",
    "overrides": []
   }

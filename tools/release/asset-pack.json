@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1928,
- "bytes": 1203528987,
+ "count": 1930,
+ "bytes": 1203634439,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -306,8 +306,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_0.bin",
-   "bytes": 1580121,
-   "sha256": "7a50daba9e00e1f1f5d97fcf391b271390f4531c0bfce08de97751ac55b067e5",
+   "bytes": 1580867,
+   "sha256": "0efadefe7a96f1722ab331187fa74522f67f4025988575be5a0f578b439c0f48",
    "kind": "original"
   },
   {
@@ -384,8 +384,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_0.bin",
-   "bytes": 238169,
-   "sha256": "e5b76c2f4a7b1deaf9c5a62d856620d23e226d5c3974641780f4c58e4c22b4e7",
+   "bytes": 238491,
+   "sha256": "8ad18433d874d5f5adb1ff8a68afd7942204c44b1db181ded2c6149cbf622b09",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "2f1d08c8c2c7758941d048bdb718bf135f295712e48511593571dbc71edc9597",
+   "sha256": "d99b36cfb6e25eee2453a67e6e51263026da22ed3cb76bd185f47e59b60a938b",
    "kind": "runtime cell manifest"
   },
   {
@@ -10260,14 +10260,26 @@
   },
   {
    "path": "build/strip-landmarks/platinum-exterior-collision.bin",
-   "bytes": 10440,
-   "sha256": "1ff2fd2f94c35f0d1675baa2529f04ff2efafc79425a15d51eecc03d269107b2",
+   "bytes": 12464,
+   "sha256": "dac4054d8a032d44bd6924b62e608b18e36a583f3e9a1e58de75627adccec21c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/platinum-exterior.glb",
-   "bytes": 783224,
-   "sha256": "ab85b9dc2aa2e38c26002628f995d62bb0ddd88190141eab02b3ccae62243490",
+   "bytes": 809552,
+   "sha256": "93e0d4f97ab6c84a6f41de72716d31ff8354462cae4f52bc0bb915c3765dabf7",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/platinum-interior-collision.bin",
+   "bytes": 528,
+   "sha256": "e63d3a1140f60bf523b8d274ff33f0fbe3f468f7a059155589c0904f4e0d17b8",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/platinum-interior.glb",
+   "bytes": 9388,
+   "sha256": "92907374840d25401c65c41f3d360e30f4f7b5d8e075fe3d79375a6371fc797b",
    "kind": "optimized"
   },
   {
@@ -11340,8 +11352,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 394060,
-   "sha256": "b98dd66a8c0e36249c6f4285f5451f8eee20f77cdc71b2b3c0562bca889496a1",
+   "bytes": 394372,
+   "sha256": "f63da8b365e462aed66b5f1fd59522dc6ce29c4e8525fa742de6d5450aba1160",
    "kind": "original"
   },
   {
@@ -11442,14 +11454,14 @@
   },
   {
    "path": "build/strip-landmarks/westin-exterior-collision.bin",
-   "bytes": 10440,
-   "sha256": "47c4e2a8c946cc250ce07277e31404b16035bfc20d3129f3a2d1dbc5741ff94b",
+   "bytes": 12424,
+   "sha256": "ab0b8adaf44fab50d5a43c6d2a079eb91772994a6a0746d648a6cf696309f285",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/westin-exterior.glb",
-   "bytes": 239128,
-   "sha256": "c2472d9e0babccccc95e4660c146f62193cbc2b7a0adbc1fa84d8521a8bd0e66",
+   "bytes": 302948,
+   "sha256": "d634c0606b7437b0166778c5cf1652b93556c4cf758ef3cb8eb22079b2482f39",
    "kind": "optimized"
   },
   {

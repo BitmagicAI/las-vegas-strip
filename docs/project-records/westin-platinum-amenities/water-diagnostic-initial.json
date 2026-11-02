@@ -1,0 +1,89 @@
+{
+  "records": [
+    {
+      "mode": "on",
+      "p50": 16.799999952316284,
+      "p95": 26.899999856948853,
+      "render": {
+        "calls": 7562,
+        "frameCalls": 4,
+        "drawCalls": 351,
+        "triangles": 2440852,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    },
+    {
+      "mode": "off",
+      "p50": 16.700000047683716,
+      "p95": 20.299999952316284,
+      "render": {
+        "calls": 9173,
+        "frameCalls": 3,
+        "drawCalls": 350,
+        "triangles": 2440850,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    },
+    {
+      "mode": "on",
+      "p50": 16.800000190734863,
+      "p95": 24.299999952316284,
+      "render": {
+        "calls": 11321,
+        "frameCalls": 4,
+        "drawCalls": 351,
+        "triangles": 2440852,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    },
+    {
+      "mode": "water-off",
+      "p50": 16.700000047683716,
+      "p95": 20.699999809265137,
+      "render": {
+        "calls": 12929,
+        "frameCalls": 3,
+        "drawCalls": 350,
+        "triangles": 2440850,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    },
+    {
+      "mode": "on",
+      "p50": 16.700000047683716,
+      "p95": 25.299999952316284,
+      "render": {
+        "calls": 15065,
+        "frameCalls": 4,
+        "drawCalls": 351,
+        "triangles": 2440852,
+        "points": 0,
+        "lines": 0,
+        "timestamp": 0
+      },
+      "nodes": 1
+    }
+  ],
+  "names": [
+    {
+      "name": "westinAmenities-exteriorwestin-amenitieswpa_pool",
+      "source": "westin-amenities",
+      "materials": [
+        "Strip / wpa_pool (realistic water)"
+      ]
+    }
+  ],
+  "interpretation": "Initial candidate-only ablation collected one water mesh, not all amenities. Hiding it reduced p95 from 24.3\u201326.9ms to 20.3\u201320.7ms, while p50 stayed 16.7\u201316.8ms. This implicates visible water cost but does not establish the baseline difference. Matching daylight baseline/candidate water ablation follows. No visual cuts or runtime changes made."
+}
