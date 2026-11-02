@@ -1,13 +1,185 @@
 {
-  "status": "baseline-starting",
+  "status": "references-inspected-source-authoring-next",
   "issues": [
     66,
     67
   ],
   "scope": "Nearby East Flamingo hotel amenity and public frontage refinement; preserve hotel shells, roads and interiors.",
-  "references": [],
+  "references": [
+    {
+      "building": "westin",
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11515,-115.16635&zoom=20&basemap=satellite",
+      "provider": "Google Maps aerial",
+      "imageDate": null,
+      "review": "Personally inspected north-up aerial. Southwest podium pool is rotated about45degrees; basin screen corners660,443;721,507;680,550;616,486. Deck approximate screen boundary558,348;680,326;802,432;804,505;685,610;557,479. Pool centre inferred world597,111 rather than inherited599.5,103. Map image date not displayed."
+    },
+    {
+      "building": "westin",
+      "url": "https://www.marriott.com/en-us/hotels/lasvw-the-westin-las-vegas-hotel-and-spa/photos/",
+      "provider": "Marriott official",
+      "imageDate": null,
+      "review": "Personally inspected gallery62 The Westin Las Vegas Pool & Bar and63 Rooftop Pool & Bar. Rectangular basin, broad underwater entry steps and metal ladders, cream deck, dark-frame gray lounges, navy daybeds, thin-post flat/slatted shade roofs, striped canopy fabric, pale perimeter walls and planters. Photo62 includes Ballys signage and may predate2023; do not adopt its branding as current. Photo63 confirms navy beds, three turquoise parasols across basin and striped shade canopies."
+    },
+    {
+      "building": "westin",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1148,-115.1658&heading=0&pitch=10&fov=90",
+      "provider": "Google Street View",
+      "imageDate": "2025-01",
+      "review": "Personally inspected160NV-592 south frontage. Pale restaurant volume with five tall dark sloped awnings, curved arrival connection to east, low palms along street and existing parking court. Pool hidden behind frontage; not pool dimension evidence."
+    },
+    {
+      "building": "platinum",
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1138,-115.1629&zoom=20&basemap=satellite",
+      "provider": "Google Maps aerial",
+      "imageDate": null,
+      "review": "Personally inspected. Outdoor pool west of tower, approximatelyscreen396..498x466..540 with softened corners; enclosed pool volume immediatelysouth aroundscreen382..536x552..647. Deck north/west ofpool. Estimate using.1206m/px and mapcentre676,360; outside basin about12x9m, differs from inherited8x15m. Exact roof registration needs mapped-footprint fit."
+    },
+    {
+      "building": "platinum",
+      "url": "https://www.theplatinumhotel.com/gallery/pool",
+      "provider": "Platinum official",
+      "imageDate": null,
+      "review": "Personally inspected pool_2 thumbnail, pool_5-full and pool_1-full. Gray perforated perimeter wall with large rectangular openings, lime retractable awnings, dark mesh lounges with light frames, blue square planters, tan deck, metal ladders and overhead festoon wires. Interior pool has rounded corners and a narrow water channel through the glazed north wall into outdoor pool; gray walls, tiled ceiling, tan coping, metal table/chairs. Door beside channel provides dry connection. No floor plan dimensions published."
+    },
+    {
+      "building": "platinum",
+      "url": "https://assets.graydientcreative.com/files/outlets/platinum/images/pool_5-full.jpg",
+      "provider": "Platinum official image",
+      "imageDate": null,
+      "review": "Exterior pool/deck material and furniture reference, personally inspected; third-party image not committed."
+    },
+    {
+      "building": "platinum",
+      "url": "https://assets.graydientcreative.com/files/outlets/platinum/images/pool_1-full.jpg",
+      "provider": "Platinum official image",
+      "imageDate": null,
+      "review": "Indoor/outdoor pool connection reference, personally inspected; third-party image not committed."
+    },
+    {
+      "building": "platinum",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1139,-115.1642&heading=90&pitch=10&fov=90",
+      "provider": "Google Street View",
+      "imageDate": "2025-02",
+      "review": "Personally inspected4125KovalLn westview. White tower and balconies, rounded north crown, street-facing shops obscure lower pool podium. Not direct lobby-entry evidence."
+    }
+  ],
   "uncertainties": [
-    "Official photographs and Google aerial/Street View must be inspected before source edits.",
-    "Existing pool elevations and dimensions remain estimates; validate cameras and fit."
-  ]
+    "All dimensions and heights remain estimated, not surveyed. Preserve existing deck datum7.5m Westin/12.4m Platinum until corroborated.",
+    "Westin pool shape/orientation differs from inherited model; selectively replace pool furniture/coping/water and patch old hole without regenerating whole shell.",
+    "Platinum indoor pool has official photographic support; exact enclosed plan, water-channel placement and ceiling height inferred. Need suitable interior lighting integration if implemented.",
+    "Continuous street-to-roof guest access, exact frontages and landscaping remain unfinished; a deck circuit cannot establish those routes.",
+    "A requested panorama east of Platinum landed inside Tuscany; rejected as evidence. A north request landed on Koval beside Westin garage; not treated as Platinum entrance evidence."
+  ],
+  "baselineReview": "All eight matching neutral-daylight captures personally inspected. Westin has sparse southwest podium with a small axis-aligned pool and block chairs; Platinum has bare parking podium, axis-aligned pool and block chairs, with no indoor pool enclosure. Front/east/west views retain the shells. These are baseline observations, not acceptance of new geometry.",
+  "coordinateFit": {
+    "method": "North-up zoom20 maps; approximate scale.1206m/px at36.115deg; canvas centre676,360 due72px navigation rail. Ground datum unchanged. Satellite roof parallax and screenshot tracing remain uncertainties.",
+    "westin": {
+      "centreLonLat": [
+        -115.16635,
+        36.11515
+      ],
+      "poolPixels": [
+        [
+          660,
+          443
+        ],
+        [
+          721,
+          507
+        ],
+        [
+          680,
+          550
+        ],
+        [
+          616,
+          486
+        ]
+      ],
+      "deckPixels": [
+        [
+          558,
+          348
+        ],
+        [
+          680,
+          326
+        ],
+        [
+          802,
+          432
+        ],
+        [
+          804,
+          505
+        ],
+        [
+          685,
+          610
+        ],
+        [
+          557,
+          479
+        ]
+      ]
+    },
+    "platinum": {
+      "centreLonLat": [
+        -115.1629,
+        36.1138
+      ],
+      "outdoorPoolPixels": [
+        [
+          400,
+          466
+        ],
+        [
+          492,
+          466
+        ],
+        [
+          498,
+          478
+        ],
+        [
+          498,
+          526
+        ],
+        [
+          485,
+          540
+        ],
+        [
+          406,
+          540
+        ],
+        [
+          396,
+          530
+        ],
+        [
+          396,
+          478
+        ]
+      ],
+      "indoorEnclosurePixels": [
+        [
+          382,
+          552
+        ],
+        [
+          536,
+          552
+        ],
+        [
+          536,
+          647
+        ],
+        [
+          382,
+          647
+        ]
+      ]
+    }
+  }
 }
