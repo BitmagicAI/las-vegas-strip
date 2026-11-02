@@ -5,7 +5,7 @@
     "Wyndham Desert Blue (#68)",
     "Gold Coast (#58)"
   ],
-  "state": "Paired performance investigation complete; ONE grouped city bake running. Do not rerun bake.",
+  "state": "Single bake complete/current. Stage initially refused because paired comparison restored source bytes with new timestamps, invalidating optimizer manifest. Reinstalled existing hash-matched level/WebP candidates; bakecheck still current. Corrected comparison now swaps optimized copies only; prior pair retained as diagnostic, not final acceptance.",
   "sources": [
     {
       "url": "https://www.wyndhamhotels.com/wyndham-vacations/las-vegas-nevada/wyndham-desert-blue/overview",
@@ -53,8 +53,10 @@
     "wyndhamCanopy": 3,
     "failures": 0,
     "movement": "Gold8continuoussegments andWyndham6continuoussegments PASS,all4endpointimages inspected. Goldreturnfaceswall(not indoor access).",
-    "sharedBake": "Not run",
-    "routeSupport": "203Gold+65Wyndham samples PASS"
+    "sharedBake": "Completed once; bakecheck current after optimizer reinstall.",
+    "routeSupport": "203Gold+65Wyndham samples PASS",
+    "assetPack": "1930present,0missing/unoptimized after reinstall",
+    "smoke": "Initial9stops placed/0requests/pageerrors but1WebGPUasyncpipeline consoleerror. Preserve report; rerun after corrected comparison restores optimized assets. Not clean acceptance yet."
   },
   "goldInstalledReview": "All3images inspected: original street facade/garage/tower retained; ten chaises and open brown pergola visible beside unchanged pool. Pool shape/landscaping/indoor link discrepancies retained. FrontP95rose18.9to26.6ms; two identical-camera repeats underway, not yet cleared. South+1.64%,pool-2.25%.",
   "wyndhamInstalledReview": "All4images inspected. Two rectangular pools and two shallow spas on inferred courtyard west/southwest of tower, furnishings visible, roads and tower retained. Sparse landscape compared to reference: palms/cabanas/splash-pad remain explicit. No interior arrival or pool-swimming claim.",

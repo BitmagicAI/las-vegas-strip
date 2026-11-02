@@ -113,5 +113,6 @@
       "deltaPercent": -2.0942413213172584
     }
   ],
-  "review": "All six paired images inspected. Original and installed GLBs compared sequentially with identical cameras and settling; installed hashes restored and verified. No persistent asset regression reproduced; all initial outliers retained. Does not certify universal60fps."
+  "review": "All six paired images inspected. Original and installed GLBs compared sequentially with identical cameras and settling; installed hashes restored and verified. No persistent asset regression reproduced; all initial outliers retained. Does not certify universal60fps.",
+  "superseded": "Asset staging exposed source timestamp invalidation by first comparison. Original half may have loaded unoptimized source. Retained as diagnostic only; corrected optimized-target comparison required."
 }
