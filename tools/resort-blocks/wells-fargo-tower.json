@@ -54,5 +54,36 @@
     "typecheck": "passed",
     "localWebGPU": "passed58fps spawn3011bodies; not route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-wells.log"
+  },
+  "hughesAmenitiesPass": {
+    "date": "2026-11-02",
+    "status": "local-installed-verification-in-progress",
+    "pullRequest": 472,
+    "record": "docs/project-records/hughes-center-amenities/research.json",
+    "geometry": {
+      "roadOverlapM2": 4.600764214046649e-13,
+      "gardenAreaM2": 1048.9160648156374,
+      "pathAreaM2": 200.84721808353353,
+      "pergolas": [
+        [
+          1449,
+          -341
+        ],
+        [
+          1452.3,
+          -329
+        ]
+      ],
+      "limitations": [
+        "Uninstalled study, approximate aerial and Dec2024StreetView layout.",
+        "Road and neighboring parcel clearance requires installed review.",
+        "Palm trees with white lower trunks not substituted by available broadleaf sources; remain unfinished.",
+        "Public lobby, exact crown proportions and east patio remain unchanged.",
+        "No terrain/road regeneration."
+      ]
+    },
+    "preservation": "Every existing tower node and collision triangle retained; road geometry unchanged.",
+    "visualReview": "Initial 12 daylight captures inspected; eight corrected Wells/Park captures inspected after road keepout correction.",
+    "checks": "820 capsule samples pass; roof/canopy supports, typecheck, review, public and lighting tests pass. Actual walking and remaining step 7 checks pending."
   }
 }

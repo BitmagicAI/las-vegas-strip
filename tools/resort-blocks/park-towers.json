@@ -14,12 +14,12 @@
     },
     {
       "url": "https://parktowers.com/The%20Building.html",
-      "review": "Official site identifies two20story towers above shared base,84residences."
+      "review": "Community informational site identifies two20story towers above shared base,84residences; operator/HOA provenance not verified. Previous official attribution corrected in PR472."
     }
   ],
   "dimensions": "Mapped62m shell retained; roof caps64.5m and plant screens65.5m estimated. Exact facade bay spacing uncertain.",
   "remaining": [
-    "Shared base, arrival court and pool/tennis landscape",
+    "Shared base and arrival court, pool enclosure, cabana and planting; pool/tennis candidate installed with aerial fit adjusted to preserve roads",
     "Full public connections",
     "Facade and crown precision",
     "Route performance"
@@ -57,5 +57,42 @@
     "typecheck": "passed",
     "localWebGPU": "passed; see log for spawn sample, not route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-park-towers.log"
+  },
+  "hughesAmenitiesPass": {
+    "date": "2026-11-02",
+    "status": "local-installed-verification-in-progress",
+    "pullRequest": 472,
+    "record": "docs/project-records/hughes-center-amenities/research.json",
+    "geometry": {
+      "poolAreaM2": 121.47449471999934,
+      "courtBounds": [
+        1160.4659719791505,
+        -20.059447238299732,
+        1179.0383719791505,
+        15.638152761700269
+      ],
+      "courtFitOffsetM": [
+        6,
+        2
+      ],
+      "roadOverlapM2": 0.0,
+      "poolBounds": [
+        1183.8923719791505,
+        -39.18464723829973,
+        1201.2587719791504,
+        -26.15984723829973
+      ],
+      "loungers": 35,
+      "limitations": [
+        "Uninstalled original source study.",
+        "Aerial fit and ground elevation inferred; road/site-boundary validation pending.",
+        "Arrival rotunda and fountain omitted until mapped tower/ground parallax reconciled.",
+        "Cabana, planting, pool enclosure and full connections unfinished.",
+        "Sport net is visual only; no game mechanics."
+      ]
+    },
+    "preservation": "Every existing tower node and collision triangle retained; road geometry unchanged.",
+    "visualReview": "Initial 12 daylight captures inspected; eight corrected Wells/Park captures inspected after road keepout correction.",
+    "checks": "820 capsule samples pass; roof/canopy supports, typecheck, review, public and lighting tests pass. Actual walking and remaining step 7 checks pending."
   }
 }

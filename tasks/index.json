@@ -4492,7 +4492,9 @@
     ],
     "builders": [
      "tools/city-exteriors/test-wells.mjs",
-     "tools/strip-landmarks/wells_fargo.py"
+     "tools/strip-landmarks/wells_fargo.py",
+     "tools/city-exteriors/install-hughes-amenities.mjs",
+     "tools/city-exteriors/test-hughes-routes.mjs"
     ]
    },
    "acceptance": [
@@ -4513,7 +4515,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Shared base, arrival court and pool/tennis landscape",
+    "Shared base and arrival court, pool enclosure, cabana and planting; pool/tennis candidate installed with aerial fit adjusted to preserve roads",
     "Full public connections",
     "Facade and crown precision",
     "Route performance"
@@ -4544,7 +4546,10 @@
     "builders": [
      "tools/city-exteriors/test-park-towers.mjs",
      "tools/strip-landmarks/park_towers.py",
-     "tools/strip-landmarks/build_park_towers.py"
+     "tools/city-exteriors/install-hughes-amenities.mjs",
+     "tools/city-exteriors/test-hughes-routes.mjs",
+     "tools/strip-landmarks/build_park_towers.py",
+     "tools/strip-landmarks/park_hughes_amenities.py"
     ]
    },
    "acceptance": [
@@ -4590,6 +4595,8 @@
     "builders": [
      "tools/city-exteriors/test-residence-inn.mjs",
      "tools/strip-landmarks/residence_inn_hughes.py",
+     "tools/city-exteriors/install-hughes-amenities.mjs",
+     "tools/city-exteriors/test-hughes-routes.mjs",
      "tools/strip-landmarks/build_residence_inn.py"
     ]
    },

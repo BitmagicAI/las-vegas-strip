@@ -1,0 +1,22 @@
+{
+  "typecheck": "passed",
+  "blockReview": "passed",
+  "public": "passed; retained unrelated inventory email warning",
+  "roofSupport": {
+    "wells": 16,
+    "park": 86,
+    "residence": 30,
+    "residenceCanopy": 3,
+    "failures": 0
+  },
+  "siteLights": "passed",
+  "cityLightingResize": "passed",
+  "capsuleSamples": 820,
+  "capsuleFailures": 0,
+  "actualWalk": "Six circuits passed, 162 forward/reverse movement segments; all 12 endpoint images inspected. Additional tennis gate walk running.",
+  "sharedBake": "not yet run",
+  "runtimeCheck": "pending staging",
+  "smoke": "pending",
+  "finalPerformance": "pending",
+  "daylightReview": "All 12 initial and eight corrected exterior views personally inspected; corrected Park court clear of road, Wells path/pergola benches pass movement."
+}
