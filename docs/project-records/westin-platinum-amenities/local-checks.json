@@ -8,10 +8,12 @@
   "actualWalk": "PASS26forward/reverse segments across3circuits; all6endpoint images personally inspected. Deck movement only, not street-to-roof access.",
   "daylight": "PASS8exterior and4paired interior captures personally inspected; front probe corrected to dry player placement. Simplified detailing retained.",
   "sharedBake": "PASS one grouped bake",
-  "smoke": "running after10finalcaptures",
+  "smoke": "PASS9visitsallplaced0failedrequests0pageerrors0consoleerrors",
   "roofSupport": "PASS364Westin+498Platinum;0entrance samples. Platinum accepts raised2.5cmcoping above underlyingdeck (prior1failurewasexpectedoverlay,notmissingfloor).",
   "runtimeGlbs": "PASS3models0unoptimized",
   "assetPack": "PASS1930present0missing0unoptimized;10copied1920unchanged0removed",
   "cellPreservation": "275/278cellfilesbyteidentical;onlybaked0,0and1,0plusmanifestchanged",
-  "newLfsBytes": 3374835
+  "newLfsBytes": 3374835,
+  "finalDaylight": "All10finalcaptures personallyinspected; exterior+interior visuals remain accepted as limited amenity pass.",
+  "performance": "Historical baseline comparison has >10% exterior regressions; merge held for same-session baseline/candidate replay. No overall performance improvement claimed."
 }
