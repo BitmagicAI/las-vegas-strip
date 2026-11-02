@@ -5,7 +5,7 @@
     "Wyndham Desert Blue (#68)",
     "Gold Coast (#58)"
   ],
-  "state": "Research and matching baselines; no geometry changes, installation or shared bake.",
+  "state": "Gold Coast and Wyndham original sources exported, level+WebP optimized and installed locally --no-stage. Gold3view installed capture running; no visual acceptance or shared bake yet.",
   "sources": [
     {
       "url": "https://www.wyndhamhotels.com/wyndham-vacations/las-vegas-nevada/wyndham-desert-blue/overview",
@@ -44,5 +44,15 @@
     "existingWaterAreaM2": 262.5305,
     "note": "Source deck does not intersect mapped buildings after existing subtraction. Existing rounded-rectangle pool differs from reference lobed pool; exact registration still needed. No geometry edits yet."
   },
-  "goldSourceStudy": "Original ten white-strap chaises and north-edge open pergola authored, dimensions/counts inferred. Route-clearance assertions PASS; all31original mesh batches byte-identical in source audit,4new batches. Not exported/optimized/installed yet. Existing pool shape/spa/steps/rock feature/palms/indoor connection retained as discrepancies."
+  "goldSourceStudy": "Original ten white-strap chaises and north-edge open pergola authored, dimensions/counts inferred. Route-clearance assertions PASS; all31original mesh batches byte-identical in source audit,4new batches. Not exported/optimized/installed yet. Existing pool shape/spa/steps/rock feature/palms/indoor connection retained as discrepancies.",
+  "wyndhamBaselineReview": "Fourth amenity baseline inspected: empty ground southwest of tower; P95 26.9ms retained with earlier three views for identical after comparison.",
+  "wyndhamSourceStudy": "Traced two rectangular basins/two spas from aerial, inferred ground registration. Shallow raised basins preserve ground. Nine mesh loungers/two blue parasols. Deck clipped around mapped road/sidewalk surfaces (initial7.84m2sidewalk overlap removed). Original tower/canopy source batches preserved. Palms,cabanas,splash pad and interior link still absent.",
+  "checks": {
+    "goldRoof": 43,
+    "wyndhamRoof": 67,
+    "wyndhamCanopy": 3,
+    "failures": 0,
+    "movement": "Pending actual controls",
+    "sharedBake": "Not run"
+  }
 }
