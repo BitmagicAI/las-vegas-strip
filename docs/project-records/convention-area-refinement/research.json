@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "status": "Embassy source study exported; grouped research and installation pending",
+  "status": "Embassy and LVCC source studies authored; installed review pending",
   "base": "0901ea2",
   "issues": [
     64,
@@ -132,5 +132,12 @@
       "Palms deferred rather than substituting broadleaf source trees."
     ]
   },
-  "terraceDecision": "Do not append an inaccessible deck behind existing full-height glass. Reconcile scoped upper-facade opening with third-level floor and existing roof; preserve all unrelated geometry. No unsupported terrace furniture count."
+  "terraceDecision": "Do not append an inaccessible deck behind existing full-height glass. Reconcile scoped upper-facade opening with third-level floor and existing roof; preserve all unrelated geometry. No unsupported terrace furniture count.",
+  "lvccSourceReview": {
+    "baseline": "New terrace baseline inspected: full-height glazing encloses third level.",
+    "change": "Open upper southwest facade at inferred Y16m, add slab/paver joints, clear guardrail, splayed columns and small soffit fixtures. Original roof holes discovered in mapped outline and retained; no invented new roof cut.",
+    "validation": "7162 roof support and 78 planned deck-loop support/headroom samples pass. Initial failed deck tests exposed roof-hole polygons wrongly carried into floor: fixed by filling roof holes before buffering floor footprint.",
+    "discrepancy": "Inferred slab area 1741m\u00b2 is greater than operator event terrace area about1301m\u00b2. Do not claim exact terrace footprint; reconcile circulation/back-wall boundary in installed review. No stair/public arrival link yet.",
+    "state": "Final Blender export plus level/WebP optimization running. No optimized installation or shared bake yet."
+  }
 }
