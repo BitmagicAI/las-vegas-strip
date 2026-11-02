@@ -9,7 +9,7 @@
   "sources": [
     {
       "url": "https://www.wyndhamhotels.com/wyndham-vacations/las-vegas-nevada/wyndham-desert-blue/overview",
-      "evidence": "Operator lists two outdoor pools, two hot tubs, splash pad, fire pit, cabanas and poolside bar. Text checked; photographs/layout not yet inspected."
+      "evidence": "Official gallery photos23/29 and24/29 personally inspected: rectangular spa and rectangular pool with broad inset steps, metal curved handrails, light-grey mesh chaises, blue parasols/cabana curtains and dense palm borders. Date unknown; photo1/29 is generic Strip view and not property evidence."
     },
     {
       "url": "https://goldcoast.boydgaming.com/stay/resort-pool",
@@ -18,12 +18,16 @@
     {
       "url": "https://www.google.com/maps/@36.1171,-115.19385,20z/data=!3m1!1e3",
       "evidence": "Aerial visually inspected. Pool courtyard west of tower and north of casino. Pergola on north edge; freeform pool to its south, lounging curves northeast/east; building with curved roof west, planting on south edge. Image acquisition date not shown (copyright2026 is not acquisition). Retain mapped geometry; dimensions require ground registration."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.12205,-115.18415,20z/data=!3m1!1e3",
+      "evidence": "Aerial inspected: two rectangular pools west/southwest of crescent tower, north-south elongated eastern basin, oblique shorter western basin, small spa south of eastern basin, round splash pad to south, blue cabanas/parasols and landscaped perimeter. Pixel tracing and ground registration still needed before modeling. Image acquisition date unknown."
     }
   ],
   "next": "Inspect Google aerial/Street View and official photos, establish pool/site geometry and matching baseline views before authoring. Preserve buildings/roads/interiors; one group bake after all geometry reviewed.",
   "claims": "Both assigned janiverse, confirmed before edits.",
   "baselineReview": "Wyndham front/back/entry baseline all three inspected: existing curved tower and open canopy, blank surrounding amenity ground, closed ground facade. No pool/garden currently drawn.",
-  "goldBaselineReview": "Front and south views inspected: existing arcade/tower/garage and motor court retained. Initial pool view from south obscured by casino roof: rejected as amenity evidence. Replaced pool eye with[-1880,18,-155], target[-1878,1,-119]; detail-only baseline running, must inspect and combine timing result before after-comparison.",
+  "goldBaselineReview": "All three usable views inspected. Corrected north-side pool view clearly shows blank rectangular deck and rounded pool without furniture/shade; south/front preserve existing building reference. Earlier roof-obscured pool view excluded from comparison.",
   "goldGeometryAudit": {
     "existingDeckBounds": [
       -1904,
@@ -39,5 +43,6 @@
     ],
     "existingWaterAreaM2": 262.5305,
     "note": "Source deck does not intersect mapped buildings after existing subtraction. Existing rounded-rectangle pool differs from reference lobed pool; exact registration still needed. No geometry edits yet."
-  }
+  },
+  "goldSourceStudy": "Original ten white-strap chaises and north-edge open pergola authored, dimensions/counts inferred. Route-clearance assertions PASS; all31original mesh batches byte-identical in source audit,4new batches. Not exported/optimized/installed yet. Existing pool shape/spa/steps/rock feature/palms/indoor connection retained as discrepancies."
 }
