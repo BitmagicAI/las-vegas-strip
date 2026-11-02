@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-02",
+  "base": "a8c5b84 origin/next",
+  "scope": [
+    "Wyndham Desert Blue (#68)",
+    "Gold Coast (#58)"
+  ],
+  "state": "Research and matching baselines; no geometry changes, installation or shared bake.",
+  "sources": [
+    {
+      "url": "https://www.wyndhamhotels.com/wyndham-vacations/las-vegas-nevada/wyndham-desert-blue/overview",
+      "evidence": "Operator lists two outdoor pools, two hot tubs, splash pad, fire pit, cabanas and poolside bar. Text checked; photographs/layout not yet inspected."
+    },
+    {
+      "url": "https://goldcoast.boydgaming.com/stay/resort-pool",
+      "evidence": "Operator describes freeform pool/hot tub and approach through breezeway and elevator-lobby glass doors. Text checked; images not yet inspected."
+    }
+  ],
+  "next": "Inspect Google aerial/Street View and official photos, establish pool/site geometry and matching baseline views before authoring. Preserve buildings/roads/interiors; one group bake after all geometry reviewed.",
+  "claims": "Both assigned janiverse, confirmed before edits."
+}
