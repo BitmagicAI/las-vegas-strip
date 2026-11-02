@@ -1,0 +1,9 @@
+{
+  "wellsBenchClearance": {
+    "initialFailures": 8,
+    "cause": "Benches across pergola ends intersected central garden path.",
+    "sourceCorrection": "Move benches to side edges parallel to the central passage.",
+    "status": "Source corrected; re-export, preserving merge, level/WebP optimization and capsule retest pending after current preview completes."
+  },
+  "parkRoofTest": "Required missing source model JSON rebuilt only for test input using Meshes.save; live GLB/collision/venue metadata untouched. 86 roof samples pass."
+}

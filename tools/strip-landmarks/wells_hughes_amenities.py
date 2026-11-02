@@ -23,9 +23,9 @@ def build(B):
    for v in [-3.4,3.4]:F.box('wha-metal',(u,1.65,v),(.15,3.3,.15),True)
    F.box('wha-metal',(u,3.25,0),(.18,.2,7.2))
   for v in np.arange(-3.5,3.51,.32):F.box('wha-slat',(0,3.4,float(v)),(5.5,.09,.12))
-  for v in [-2.65,2.65]:
-   F.box('wha-seat',(0,.48,v),(2.2,.14,.65),True)
-   for u in [-.8,.8]:F.box('wha-metal',(u,.21,v),(.08,.42,.42))
+  for u in [-1.8,1.8]:
+   F.box('wha-seat',(u,.48,0),(.65,.14,2.2),True)
+   for v in [-.8,.8]:F.box('wha-metal',(u,.21,v),(.42,.42,.08))
   pergolas.append([x,z])
  # Low clipped hedge near the building edge; interrupted by the crossing path.
  hedge=tower.buffer(1.9).difference(tower.buffer(1.15)).intersection(site).difference(paths.buffer(.45))
