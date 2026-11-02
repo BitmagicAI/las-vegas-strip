@@ -1,5 +1,5 @@
 {
-  "status": "Baseline capture and reference research",
+  "status": "Original courtyard and garage source studies; not installed",
   "date": "2026-11-02",
   "base": "b2adcae",
   "issues": [
@@ -44,24 +44,29 @@
     }
   ],
   "remaining": [
-    "Recapture and inspect corrected garage front baseline",
+    "Corroborate Carnaval permanent overhead features and author preserving source",
     "Corroborate Carnaval permanent features with Street View",
     "Author original preserving refinements; optimize WebP before install",
     "Complete step 7, installed walking/driving and matching performance; one grouped bake"
   ],
   "baselineReview": {
     "inspected": 11,
-    "accepted": 10,
+    "accepted": 11,
     "rejected": "Garage front at eye [194,3,-438] obstructed by nearby wall. Raise to historical [194,19,-438] and recapture all four garage views before editing models.",
     "observations": [
       "Royale rear courtyard has basin but no reference-supported furniture.",
       "Garage geometry includes piers, rails, ramps and stripes; actual vehicle circulation remains unverified.",
       "Carnaval existing radial roof/bar lacks detailed overhead equipment."
-    ]
+    ],
+    "correction": "All four corrected garage captures personally inspected; front now clear. Use baseline-corrected directory for garage comparison. Keep original obstructed capture as rejected evidence."
   },
   "decisions": [
     "Preserve existing basin and public interiors; author original furniture proportions inferred from official photographs.",
     "Do not substitute broadleaf tree-0/1/2 assets for palms.",
     "Keep garage inferred ramp layout pending actual drive review; do not describe it as surveyed."
+  ],
+  "sourceStudies": [
+    "royale_courtyard_refinement.py: 15 striped loungers and 2 red/orange parasol tables; retained pool and clear 0.4m capsule route.",
+    "royale_garage_refinement.py: 50 inferred underdeck fixture housings; no runtime lights or altered deck/ramp collision."
   ]
 }
