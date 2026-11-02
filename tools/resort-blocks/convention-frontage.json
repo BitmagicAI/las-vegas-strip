@@ -46,11 +46,10 @@
     }
   ],
   "remaining": [
-    "Precise elevations, sign artwork, landscaping and parking-lot integration",
-    "Dry pool basin is simplified",
-    "Closed public interiors and doors; full approach driving test pending",
-    "Whole-block performance measurement",
-    "Royal Resort era conflict: September2026 demolition reported; installed2022\u201324 historical architecture is not current."
+    "Precise elevations, signage artwork, landscape and parking integration",
+    "Mixed retail allocation in red-gabled3041building:Jan2025Everything$10sign conflicts with broad currentElGordo labels",
+    "Dry Royalpool remains simplified; interiors/doors closed",
+    "Royal retained2022\u201324architecture despite September2026demolition"
   ],
   "mappingCorrection": "276427198 is cornerElGordo3041; ElPastor3049 belongs to white331347691 southernrow. Initial record assumption corrected after Earth+ground comparison.",
   "baselineViews": [
@@ -87,5 +86,10 @@
     "build/optimized/build/strip-landmarks/conventionFrontage-exterior.glb": "e23db21decf971581f771b55af50ec9398e5808f6b4f08ecb76f91ed8c974b0f",
     "tools/strip-landmarks/convention_frontage.py": "592960c87e9ff493a68dcd21976b710938af94f4742d437bb15b4330ffb92407",
     "src/work/PbrDetailSets.ts": "a50e98b815286c10da8dc1e5cb9fb264f8a5055788d9d690f904e2e4b4c9afed"
+  },
+  "refinement20261102": {
+    "summary": "2026-11-02: Corrected southern west bay to SOUVENIRS and added pale patio rail. Seven daylight views and six actual patio-access walking segments passed.49/50oldmeshbatches identical; other three buildings unchanged.",
+    "record": "docs/project-records/convention-area-refinement/research.json",
+    "status": "verified scoped refinement; full-site requirements deferred"
   }
 }

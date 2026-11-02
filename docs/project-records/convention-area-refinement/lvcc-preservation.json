@@ -1,0 +1,20 @@
+{
+  "unchangedMaterials": [
+    "lvw-doorframe",
+    "lvw-door",
+    "lvw-panel",
+    "lvw-loading",
+    "lvw-roof",
+    "lvw-service",
+    "lvw-paving"
+  ],
+  "changedMaterials": [
+    "lvw-glass",
+    "lvw-frame",
+    "lvw-white",
+    "lvw-joint",
+    "lvw-soffit"
+  ],
+  "signLabelsIdentical": true,
+  "note": "Original generator evaluated in memory, no export/install. Main roof geometry, service panels and signage unchanged. Terrace-related white/frame/glass/soffit/joint groups change."
+}

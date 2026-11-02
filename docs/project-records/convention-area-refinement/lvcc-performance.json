@@ -1,0 +1,96 @@
+{
+  "viewport": "960x540 DPR1",
+  "rows": [
+    {
+      "name": "front",
+      "eye": [
+        1335,
+        12,
+        -1780
+      ],
+      "target": [
+        1348,
+        22,
+        -1890
+      ],
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 19.899999856948853,
+      "afterP95": 17.90000009536743,
+      "p95ChangePercent": -10.05
+    },
+    {
+      "name": "overview",
+      "eye": [
+        940,
+        170,
+        -1790
+      ],
+      "target": [
+        1380,
+        20,
+        -2020
+      ],
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18.799999952316284,
+      "afterP95": 18.299999952316284,
+      "p95ChangePercent": -2.66
+    },
+    {
+      "name": "back",
+      "eye": [
+        1810,
+        170,
+        -2350
+      ],
+      "target": [
+        1390,
+        20,
+        -2040
+      ],
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.5,
+      "beforeP95": 19.09999990463257,
+      "afterP95": 18.799999952316284,
+      "p95ChangePercent": -1.57
+    },
+    {
+      "name": "entry",
+      "eye": [
+        1165,
+        2,
+        -1995
+      ],
+      "target": [
+        1330,
+        15,
+        -2045
+      ],
+      "beforeP50": 16.5,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 20.200000047683716,
+      "afterP95": 18.600000143051147,
+      "p95ChangePercent": -7.92
+    },
+    {
+      "name": "terrace",
+      "eye": [
+        1245,
+        20,
+        -1802
+      ],
+      "target": [
+        1253,
+        16,
+        -1860
+      ],
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 19.799999952316284,
+      "afterP95": 17.90000009536743,
+      "p95ChangePercent": -9.6
+    }
+  ],
+  "note": "Single matching capture comparison; timing variance, not a speedup/60fps claim."
+}

@@ -82,7 +82,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-residence-inn-hughes` | M | P2 | 3 | Refine the exterior of Residence Inn Hughes Center |
 | `ext-harmon-tower` | M | P2 | 4 | Refine the exterior of Wyndham Grand Desert |
 | `ext-oyo` | M | P2 | 4 | Refine the exterior of OYO Hotel and Casino |
-| `ext-lvcc-west` | M | P2 | 5 | Refine the exterior of Las Vegas Convention Center West Hall |
+| `ext-lvcc-west` | M | P2 | 4 | Refine the exterior of Las Vegas Convention Center West Hall |
 | `ext-venetian-expo` | M | P2 | 4 | Refine the exterior of Venetian Expo |
 | `ext-peppermill-retail` | M | P2 | 5 | Refine the exterior of Peppermill and neighboring Strip retail |
 | `ext-casino-royale` | M | P2 | 4 | Refine the exterior of Casino Royale Strip frontage |
@@ -90,7 +90,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-north-strip-motels` | M | P2 | 5 | Refine the exterior of North Strip motels and convenience stores |
 | `ext-ti-parking` | L | P2 | 6 | Refine the exterior of Treasure Island parking structures |
 | `ext-guardian-angel` | L | P2 | 6 | Refine the exterior of Guardian Angel Cathedral |
-| `ext-convention-frontage` | M | P2 | 5 | Refine the exterior of Convention Center Drive and Strip frontage |
+| `ext-convention-frontage` | M | P2 | 4 | Refine the exterior of Convention Center Drive and Strip frontage |
 | `ext-fashion-show` | M | P2 | 5 | Refine the exterior of Fashion Show Mall |
 | `ext-crystals` | L | P2 | 8 | Refine the exterior of The Shops at Crystals |
 | `ext-showcase` | M | P2 | 4 | Refine the exterior of Showcase Mall and Showcase IV |

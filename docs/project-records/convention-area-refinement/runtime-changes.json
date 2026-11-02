@@ -1,0 +1,61 @@
+{
+  "changed": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-3.bin",
+      "bytes": 668708,
+      "sha256": "64101e1fc6a9eb314f6949675b214bd1d043b7f8f6ed52f8c96054b565d79b6a",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/baked/cells/cell-2_-2.bin",
+      "bytes": 288611,
+      "sha256": "c058a59030e461e4b4b81393e7f4f272902d6f94904d065cd9bb8506c1cc9508",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "b8d96a30872c517f46f79461d281e3eaaf66ec5c82ed78402b4e1cf5d80b678b",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/conventionFrontage-exterior-collision.bin",
+      "bytes": 27976,
+      "sha256": "d7ea8d1e9fa2b37f42edf349eed854c320beecebe88d65837ef1e21378c10825",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/conventionFrontage-exterior.glb",
+      "bytes": 3846164,
+      "sha256": "e9bdf0447c6eac5b7a3f6059ce07df97aebb82152d3391c92bf872fad9b1e8dd",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/embassyConvention-exterior-collision.bin",
+      "bytes": 3588,
+      "sha256": "1fcb6c067a2ec964f78636290b00a2ea1db4fac377eea425a7578160115095f7",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/embassyConvention-exterior.glb",
+      "bytes": 489876,
+      "sha256": "42b590cfa8f21b90bfd83a949f463a2abd144d3a0e93a8cac5891c6037020e19",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/lvccWest-exterior-collision.bin",
+      "bytes": 26616,
+      "sha256": "494f3b12d22ce6661151dd2c6839825ef2142c4a4da363cbc343316f3fd5a120",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/lvccWest-exterior.glb",
+      "bytes": 1857832,
+      "sha256": "92ddebc2164a199d168688eaceaf06acf2ec83d0966db42ddc1bad427b7dec2d",
+      "lfs": true
+    }
+  ],
+  "newLfsBytes": 7223172,
+  "cellFiles": 186,
+  "unchangedCellFiles": 183
+}

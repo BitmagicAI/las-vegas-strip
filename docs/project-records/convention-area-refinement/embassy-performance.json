@@ -1,0 +1,78 @@
+{
+  "viewport": "960x540 DPR1",
+  "rows": [
+    {
+      "name": "front",
+      "eye": [
+        1610,
+        45,
+        -825
+      ],
+      "target": [
+        1723,
+        18,
+        -887
+      ],
+      "beforeP50": 16.600000143051147,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 19.600000143051147,
+      "afterP95": 18.100000143051147,
+      "p95ChangePercent": -7.65
+    },
+    {
+      "name": "back",
+      "eye": [
+        1810,
+        45,
+        -952
+      ],
+      "target": [
+        1723,
+        18,
+        -887
+      ],
+      "beforeP50": 16.600000143051147,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 19.700000047683716,
+      "afterP95": 18.09999990463257,
+      "p95ChangePercent": -8.12
+    },
+    {
+      "name": "arrival",
+      "eye": [
+        1638,
+        3,
+        -885
+      ],
+      "target": [
+        1688,
+        10,
+        -887
+      ],
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 19.5,
+      "afterP95": 18.200000047683716,
+      "p95ChangePercent": -6.67
+    },
+    {
+      "name": "amenity",
+      "eye": [
+        1726,
+        15,
+        -848
+      ],
+      "target": [
+        1726,
+        1,
+        -862
+      ],
+      "beforeP50": 16.799999952316284,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 18.90000009536743,
+      "afterP95": 17.5,
+      "p95ChangePercent": -7.41
+    }
+  ],
+  "note": "Single matching capture comparison; timing variance, not a speedup/60fps claim."
+}
