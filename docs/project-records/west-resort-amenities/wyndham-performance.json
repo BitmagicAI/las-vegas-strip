@@ -1,0 +1,30 @@
+{
+  "matching": true,
+  "views": [
+    {
+      "name": "front",
+      "beforeP95": 18,
+      "afterP95": 28,
+      "deltaPercent": 55.55555555555556
+    },
+    {
+      "name": "back",
+      "beforeP95": 17.700000047683716,
+      "afterP95": 19.5,
+      "deltaPercent": 10.169491228627647
+    },
+    {
+      "name": "entry",
+      "beforeP95": 17.600000143051147,
+      "afterP95": 18.700000047683716,
+      "deltaPercent": 6.24999940734019
+    },
+    {
+      "name": "amenity",
+      "beforeP95": 26.90000009536743,
+      "afterP95": 18.59999990463257,
+      "deltaPercent": -30.855019187023135
+    }
+  ],
+  "note": "Same cameras/neutral daylight/viewport; timing variance not a speedup claim."
+}

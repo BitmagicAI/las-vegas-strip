@@ -3700,9 +3700,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Fine facade proportions, arcade depth and pool planting remain approximate",
-    "Fine entry sculpture/signs and landscaping unfinished",
-    "Public circulation not verified"
+    "Exact pool outline and terrace elevations differ from reference; retained original basin pending measured reconstruction",
+    "Spa, rock feature, steps, palms and complete landscaping remain absent",
+    "Full indoor breezeway/arrival connection and fine arcade/signage remain unverified"
    ],
    "record": "tools/resort-blocks/gold-coast.json",
    "buildings": [
@@ -3723,7 +3723,8 @@
     "builders": [
      "tools/strip-landmarks/gold_coast_exterior.py",
      "tools/city-exteriors/test-gold-coast.mjs",
-     "tools/strip-landmarks/build_gold_coast.py"
+     "tools/strip-landmarks/build_gold_coast.py",
+     "tools/strip-landmarks/gold_coast_amenities.py"
     ]
    },
    "acceptance": [
@@ -4374,12 +4375,11 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Pool garden and landscaping",
-    "Full entrance route",
-    "Exact facade colors after2024 repaint",
-    "Route performance"
+    "Exact basin/deck ground registration and water depth remain inferred; no swimming simulation",
+    "Cabanas, palms, splash pad and complete pool garden landscaping remain absent",
+    "Indoor public entrance connection and exact post2024 facade palette remain unverified"
    ],
    "record": "tools/resort-blocks/wyndham-desert-blue.json",
    "buildings": [
@@ -4402,6 +4402,9 @@
     "builders": [
      "tools/city-exteriors/test-wyndham.mjs",
      "tools/strip-landmarks/wyndham_desert_blue.py",
+     "tools/city-exteriors/compare-west-resort-performance.py",
+     "tools/city-exteriors/install-west-resort-amenities.mjs",
+     "tools/city-exteriors/test-west-resort-amenities.mjs",
      "tools/strip-landmarks/build_wyndham.py"
     ]
    },

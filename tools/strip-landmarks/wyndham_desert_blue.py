@@ -63,4 +63,6 @@ def exterior(B):
  # Entry canopy fascia, at the source's south-west outward edge.
  pp=footprint(IDS[2]);qs=list(pp.exterior.coords);a,b=min(zip(qs,qs[1:]),key=lambda ab:LineString(ab).distance(Point(-974,-674)))
  F,L,_,_=facade_frame(B,a,b,pp,0);F.text('WYNDHAM',(L/2,4.45,-.25),.5,'wd-letter')
+ from wyndham_pool_garden import build as add_pool_garden
+ add_pool_garden(B)
  return dict(key=KEY,name='Wyndham Desert Blue',center=[-968,0,-700],bounds=list(footprint(IDS[0]).bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],views={})

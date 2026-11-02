@@ -1,0 +1,117 @@
+{
+  "installed": [
+    {
+      "name": "gold-front",
+      "eye": [
+        -1725,
+        5,
+        4
+      ],
+      "target": [
+        -1770,
+        7,
+        -30
+      ],
+      "p50": 16.699999809265137,
+      "p95": 19.399999856948853
+    },
+    {
+      "name": "wyndham-front",
+      "eye": [
+        -1100,
+        95,
+        -530
+      ],
+      "target": [
+        -968,
+        25,
+        -700
+      ],
+      "p50": 16.59999990463257,
+      "p95": 18.700000047683716
+    },
+    {
+      "name": "wyndham-back",
+      "eye": [
+        -830,
+        95,
+        -850
+      ],
+      "target": [
+        -968,
+        25,
+        -700
+      ],
+      "p50": 16.59999990463257,
+      "p95": 19.5
+    }
+  ],
+  "original": [
+    {
+      "name": "gold-front",
+      "eye": [
+        -1725,
+        5,
+        4
+      ],
+      "target": [
+        -1770,
+        7,
+        -30
+      ],
+      "p50": 16.5,
+      "p95": 19.09999990463257
+    },
+    {
+      "name": "wyndham-front",
+      "eye": [
+        -1100,
+        95,
+        -530
+      ],
+      "target": [
+        -968,
+        25,
+        -700
+      ],
+      "p50": 16.59999990463257,
+      "p95": 18.799999952316284
+    },
+    {
+      "name": "wyndham-back",
+      "eye": [
+        -830,
+        95,
+        -850
+      ],
+      "target": [
+        -968,
+        25,
+        -700
+      ],
+      "p50": 16.59999990463257,
+      "p95": 19.299999952316284
+    }
+  ],
+  "comparison": [
+    {
+      "name": "gold-front",
+      "installedP95": 19.399999856948853,
+      "originalP95": 19.09999990463257,
+      "deltaPercent": 1.570680386461798
+    },
+    {
+      "name": "wyndham-front",
+      "installedP95": 18.700000047683716,
+      "originalP95": 18.799999952316284,
+      "deltaPercent": -0.531914387692578
+    },
+    {
+      "name": "wyndham-back",
+      "installedP95": 19.5,
+      "originalP95": 19.299999952316284,
+      "deltaPercent": 1.0362696796779591
+    }
+  ],
+  "review": "All6images inspected. Optimized runtime assets compared with unchanged source timestamps and manifest; installed optimized hashes restored. No persistent asset regression, initial outliers retained."
+}

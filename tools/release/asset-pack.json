@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204112271,
+ "bytes": 1204184692,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -120,8 +120,8 @@
   },
   {
    "path": "build/baked/cells/cell--2_-1.bin",
-   "bytes": 256342,
-   "sha256": "b7be5e3c619bfba3bf3a464793a0036bf5c4630f220cbfd99f8b3e5e8eff867b",
+   "bytes": 257137,
+   "sha256": "a5cd30eb0767cfcc52470483ea6b2aac8eaaa397c87be50042b1f1de032e9066",
    "kind": "original"
   },
   {
@@ -198,8 +198,8 @@
   },
   {
    "path": "build/baked/cells/cell--3_-1.bin",
-   "bytes": 76629,
-   "sha256": "65783abe978458b2c36d23997b77e1cba4134e4fac8952dcdd38675d0e20d14e",
+   "bytes": 83691,
+   "sha256": "a554670a3a20a54729cbda902b1ab159494e6c89a916565aeff67ff646688291",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "b8d96a30872c517f46f79461d281e3eaaf66ec5c82ed78402b4e1cf5d80b678b",
+   "sha256": "4bd8f1bb5f1368be2f25321cab3bfd8b4a6dfbf250a086f363f580ab91381f47",
    "kind": "runtime cell manifest"
   },
   {
@@ -8604,14 +8604,14 @@
   },
   {
    "path": "build/strip-landmarks/goldCoastExterior-exterior-collision.bin",
-   "bytes": 4132,
-   "sha256": "2c254e112e2bdda59e17ff4a5a42a0dd5bba1ec0d8407e84232183412076c126",
+   "bytes": 4860,
+   "sha256": "1233c2d86931e712cb32ae0467f0105f605b6b8168d40c01441119bbf85b1f9b",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/goldCoastExterior-exterior.glb",
-   "bytes": 2344760,
-   "sha256": "6456d7c3a84f3be7ba2faf41fb86c45cc37a01cd6d13eaed68392fe9e2484cbc",
+   "bytes": 2403772,
+   "sha256": "0457ddf887986b614b0efe8a9eb56afb5bdf90918e0b034d4ff08e4518766a24",
    "kind": "optimized"
   },
   {
@@ -11502,14 +11502,14 @@
   },
   {
    "path": "build/strip-landmarks/wyndhamDesertBlue-exterior-collision.bin",
-   "bytes": 1540,
-   "sha256": "5ad51655c1efe708094623a02fe133ddc44d32816ea1ac607b85dcbd15309c78",
+   "bytes": 2308,
+   "sha256": "ad9b35b580471f65a34efbab70478027db21e8306040837f86d9e0ff74facfed",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/wyndhamDesertBlue-exterior.glb",
-   "bytes": 974640,
-   "sha256": "9e1e818a3d83324333e74022f28d1aacda633f2963a78d5416d52d33ad632023",
+   "bytes": 978696,
+   "sha256": "4ea8de9ebba310556665e36c69262653a851ae3b302066b9677a4d6674dc7f81",
    "kind": "optimized"
   },
   {

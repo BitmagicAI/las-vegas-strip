@@ -47,9 +47,9 @@
     "build/city-exteriors/gold-coast-before/gold-coast-front.png"
   ],
   "remaining": [
-    "Fine facade proportions, arcade depth and pool planting remain approximate",
-    "Fine entry sculpture/signs and landscaping unfinished",
-    "Public circulation not verified"
+    "Exact pool outline and terrace elevations differ from reference; retained original basin pending measured reconstruction",
+    "Spa, rock feature, steps, palms and complete landscaping remain absent",
+    "Full indoor breezeway/arrival connection and fine arcade/signage remain unverified"
   ],
   "corrections": [
     "Visual review found upper glazing inside the wall: moved forward beyond the wall plane.",
@@ -60,5 +60,10 @@
     "build/city-exteriors/gold-coast-corrected/gold-coast-south.png",
     "build/city-exteriors/gold-coast-corrected/gold-coast-front.png"
   ],
-  "visualReview": "Both corrected installed views inspected; window intersections and backwards entry bays resolved."
+  "visualReview": "Both corrected installed views inspected; window intersections and backwards entry bays resolved.",
+  "refinement20261102": {
+    "summary": "Ten white-strap loungers and open pergola added with original31sourcebatches preserved;3daylightviews and8actualwalkingsegments inspected/passed.",
+    "status": "Verified scoped installed refinement; all step7 local checks passed; full-site remaining items retained",
+    "record": "docs/project-records/west-resort-amenities/research.json"
+  }
 }
