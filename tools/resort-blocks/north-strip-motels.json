@@ -60,9 +60,9 @@
     "Pool safety enclosure, palms and full court paving remain approximate"
   ],
   "geometry": {
-    "triangles": 135737,
+    "triangles": 135261,
     "batches": 89,
-    "optimizedMiB": 2.64
+    "optimizedMiB": 2.63
   },
   "tests": "91 flat roof samples and canopy support PASS; open canopy underside clearance PASS; obsolete El Mirador roof absent at2 city collision samples; typecheck PASS;1517 collision cells valid; revised pool close view inspected; full WebGPU verify PASS59fps startup3011bodies (not site benchmark)",
   "finalBuild": {
@@ -88,7 +88,8 @@
     "record": "docs/project-records/north-strip-motels-refinement",
     "change": "Original rectangular 15x7m basin and existing 1m coping, -20 degree orientation; center1557,-3263 accommodates existing gallery. Visual estimates, not survey dimensions.",
     "verified": "Six matched daylight views inspected;58 coping support samples and8 actual coping walking segments passed. Other9surviving buildings unchanged.",
-    "pending": "Front performance outlier followup, one shared bake and final packaging/smoke checks.",
-    "limitations": "Retain all remaining items. Does not complete chapel, enclosure, landscape, parking or public access."
+    "pending": "All local checks passed; ready for merge to next.",
+    "limitations": "Retain all remaining items. Does not complete chapel, enclosure, landscape, parking or public access.",
+    "performance": "Paired front P95 original18.6/18.3/18.1ms installed19.5/19.6/19.5ms; modest increase retained, initial28.2ms outlier not reproduced."
   }
 }

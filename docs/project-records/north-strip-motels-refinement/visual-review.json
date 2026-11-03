@@ -42,5 +42,5 @@
     18.4,
     18.4
   ],
-  "performanceFollowup": "Front outlier28.2ms versus baseline20.6ms; paired original/installed three trials running before bake."
+  "performanceFollowup": "Optimized-only paired original-first/installed three trials: original18.6/18.3/18.1ms, installed19.5/19.6/19.5ms P95. Initial28.2ms outlier not reproduced. Small1-1.5ms increase retained; no speedup or60fps claim. Installed hash restoration verified."
 }

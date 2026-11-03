@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204317286,
+ "bytes": 1204309801,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -372,8 +372,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-5.bin",
-   "bytes": 305554,
-   "sha256": "678fac201c5cac1bcefbc0ed1b92dc8fa4caac2ab6897fe2e4fd95a73d9e6e94",
+   "bytes": 305089,
+   "sha256": "439d2f45dbf7bc7f162f92ec9a20964f2235e420f238de14298f5b6362b4e929",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "483ec0c6fdffff131893f2a60b5c6f8feb86afb34ab54bfd2b50084985940028",
+   "sha256": "cb394e71928053f7b06e323ef4ef455cc4f4b44b00d3a5e3f9328f2e7d152d00",
    "kind": "runtime cell manifest"
   },
   {
@@ -9852,14 +9852,14 @@
   },
   {
    "path": "build/strip-landmarks/northStripMotels-exterior-collision.bin",
-   "bytes": 17960,
-   "sha256": "b7c6809acfa329528d704bb941a3e43ec6eb2f8e439d696ad9d4b497e2e3fdaa",
+   "bytes": 16756,
+   "sha256": "eac858fe1f7cf68c172a18073650ad0fa12d51598f52896326de88ee2aeccd11",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/northStripMotels-exterior.glb",
-   "bytes": 2763528,
-   "sha256": "8ac25daf9a592d4f9d5146cb2ef2e44aedce9e995a48a36361c6d8a60aaff564",
+   "bytes": 2757712,
+   "sha256": "7f99ba8ffad4ff6875a47e245056847029c5a8065d6cda79734f13e3d9009e16",
    "kind": "optimized"
   },
   {
