@@ -90,9 +90,15 @@ def exterior(B):
  for x,z in [(466.3,1713.2),(484.7,1713.2),(466.3,1737.8),(484.7,1737.8)]:B.box('oy-white',(x,2.3,z),(.65,4.6,.65),True)
  F=Frame(B,475.5,1712,y=0);F.text('OYO HOTEL & CASINO',(0,5.2,-.2),.62,'oy-letter')
  F=Frame(B,510,1745.6,y=0);F.text('HOOTERS',(0,5.25,-.4),1.05,'oy-orange')
- # Pool enclosed by the L-shaped hotel; size is estimated from aerial view.
- pool=scale(Point(496,1861).buffer(1,28),11,15,origin=(496,1861));deck=pool.buffer(3)
- B.planar('oy-paving',deck.difference(pool),.24,True);B.planar('oy-sill',pool.buffer(.4).difference(pool),.34,True);B.planar('oyo_pool',pool,.17);B.planar('oy-blue',pool,-1.1,True)
- ps=list(pool.exterior.coords)
- for a,b in zip(ps,ps[1:]):B.face('oy-blue',[(a[0],-1.1,a[1]),(b[0],-1.1,b[1]),(b[0],.34,b[1]),(a[0],.34,a[1])],True)
+ # Two original basin plans inferred from Earth and official gallery views.
+ # Dimensions/positions are estimates fitted to the existing mapped courtyard.
+ north=Polygon([(488,1846),(495,1846),(497,1850),(503,1851),(505,1858),(500,1860),(490,1859)])
+ south=scale(Point(497,1872).buffer(1,28),8,7,origin=(497,1872)).difference(Point(488,1867).buffer(5.5,28))
+ pools=[north,south];water=unary_union(pools);deck=water.buffer(2.5)
+ assert deck.intersection(footprint(IDS[0])).area<1e-6, 'Pool deck overlaps mapped building'
+ B.planar('oy-paving',deck.difference(water),.24,True)
+ for pool in pools:
+  B.planar('oy-sill',pool.buffer(.4).difference(pool),.34,True);B.planar('oyo_pool',pool,.17);B.planar('oy-blue',pool,-1.1,True)
+  ps=list(pool.exterior.coords)
+  for a,b in zip(ps,ps[1:]):B.face('oy-blue',[(a[0],-1.1,a[1]),(b[0],-1.1,b[1]),(b[0],.34,b[1]),(a[0],.34,a[1])],True)
  return dict(key=KEY,name='OYO Hotel and Casino exterior',center=[480,0,1810],bounds=[420,1730,542,1894],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],views={})

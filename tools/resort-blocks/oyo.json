@@ -28,10 +28,10 @@
     }
   ],
   "remaining": [
-    "Exact mansard and facade group proportions, mural fidelity",
-    "Public casino entrance onward route",
-    "Pool landscaping and pylon signage",
-    "Measured route performance"
+    "Exact mansard and facade group proportions, mural fidelity: existing source corrections are now installed, but surveyed fit and mural detail remain unverified.",
+    "Public casino entrance onward route: local exterior walks do not establish a continuous interior connection.",
+    "Pool landscaping and pylon signage: this pass corrects basin count and plan only; palms, furniture, safety boundaries and pylon remain unbuilt or unverified.",
+    "Measured route performance: matching fixed-camera measurements are recorded; continuous driving and entrance route profiling remains outstanding."
   ],
   "baseline": [
     "build/city-exteriors/oyo-before/oyo-front.png",
@@ -65,13 +65,21 @@
   },
   "finalBuild": {
     "files": {
-      "tools/strip-landmarks/oyo.py": "4938e874b0d2125b5b25d5654cd7fd6fec7b22e3ed89031bf88e36d7a32aa66f",
-      "build/optimized/build/strip-landmarks/oyoExterior-exterior.glb": "995c5aef1ea2b8a309a527fd997b0cc95af9bede471dc7bc812ba8ab386716a8"
+      "tools/strip-landmarks/oyo.py": "996753cb9a384d6320a25cc14b9343b1946aceb1c67dad0d57644095e35faeb1",
+      "build/optimized/build/strip-landmarks/oyoExterior-exterior.glb": "5765f9138312385639d3ee592ac4f5e0935ed5881d21c76c1f8dcb7a35202f87"
     }
   },
   "verification": {
     "typecheck": "passed",
     "localWebGPU": "passed59fps spawn3011bodies; not route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-oyo.log"
+  },
+  "refinement20261103": {
+    "record": "docs/project-records/oyo-refinement",
+    "changes": "Two original inferred basin shapes replace one ellipse. Regeneration also installs previously source-corrected mapped arrival canopy, closed mansard corners, curved palm fronds and garage roof duplicate removal; disclosed source/runtime drift.",
+    "tests": "2762 existing roof/deck samples and901 pool deck/coping samples passed;8actual pool-deck walk segments passed.",
+    "views": "build/city-exteriors/oyo-refinement-installed",
+    "performance": "docs/project-records/oyo-refinement/performance.json",
+    "scope": "Partial refinement only, not whole-block completion."
   }
 }

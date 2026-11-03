@@ -1,0 +1,18 @@
+{
+  "issue": 74,
+  "base": "3bda4ed0661a13fd41e31a612bf0025acd3a2712",
+  "stage": "All local checks passed; ready to merge PR484",
+  "scope": "OYO mapped resort structures and pool court. Choose reference-supported refinement after baseline and research.",
+  "pending": "Commit final evidence/runtime, verify own-only history, push, ready, merge --merge to next, close74 and picker.",
+  "pr": 484,
+  "baseline": "build/city-exteriors/oyo-refinement-baseline",
+  "baselineReview": "All four PNGs inspected: front/back/entry unchanged existing architecture; pool is one oversized ellipse instead of two distinct basins.",
+  "p95Ms": [
+    18.3,
+    18.5,
+    18.4,
+    18.7
+  ],
+  "decisions": "Northern angular 17x14m envelope and southern indented 16x14m envelope are inferred, not surveyed. Existing pool elevations retained; separate decks2.5m. All building groups and group keys unchanged except four materials containing pool geometry. Roof/arrival/murals/interiors/roads unchanged.",
+  "newLfsBytes": 1037977
+}
