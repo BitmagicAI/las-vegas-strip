@@ -1,5 +1,5 @@
 {
-  "status": "optimized-installed-review-pending",
+  "status": "installed-verified-scoped-refinement",
   "issue": 30,
   "base": "f4a4994e3f3fc254cbfd157f83f4e2105f38da33",
   "scope": "Nine existing north-lagoon mapped cabanas: 399554413,417,437,441,415,421,439,436,438. Existing positions/heights retained; original thin fabric valances, rear/side screens and tied front curtains. Palette tan inferred; reference photograph date and exact gazebo-to-OSM correspondence unconfirmed.",
@@ -38,7 +38,7 @@
     }
   ],
   "remaining": [
-    "Installed captures and walking review pending. Source preservation audit passed. No shared bake yet.",
+    "All required local checks passed; whole-block discrepancies retained.",
     "Inspect installed geometry and route before acceptance; retain all whole-block gaps.",
     "Street View cannot show enclosed pool court from public streets; Google aerial and operator pool photos support this scope.",
     "Exact gazebo numbers, fabric color for each footprint and dates are unconfirmed; dimensions inferred."
@@ -67,7 +67,7 @@
     "optimizedMiB": 6.45,
     "variant": "level then webp-textures",
     "collisionTriangles": 11068,
-    "sharedBake": "not started",
+    "sharedBake": "ONE completed",
     "note": "Initial backup omitted absent source JSON; GLB was saved successfully. Builder ran before setup finished and appended venue record. Restored order from unchanged venues.bin, then fixed builder to replace in-place. No shared bake occurred."
   }
 }

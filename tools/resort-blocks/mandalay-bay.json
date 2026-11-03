@@ -92,7 +92,7 @@
     "blockedSamples": 0,
     "compressedMiB": 0.5
   },
-  "currentPass": "Nine north-lagoon cabanas installed, matching daylight/performance and actual entry/return walks reviewed. Final packaging pending; all full-site gaps retained.",
+  "currentPass": "Nine north-lagoon cabanas installed, matching daylight/performance and actual entry/return walks verified. Local step 7 checks passed; full-site discrepancies retained.",
   "performance": {
     "viewport": "1280x720",
     "medianMs": 16.7,
@@ -519,6 +519,7 @@
     ],
     "visualReview": "All four inspected; tan screens/valances visible, open front retained; tower/water/other roofs preserved. Simplified fabric and empty cabanas remain explicit.",
     "walking": "Nine approach/entry/return routes,18 actual continuous segments PASS; representative endpoint images inspected. Curtains remain decorative without collision.",
-    "sharedBake": "ONE bake running"
+    "sharedBake": "ONE completed; unchanged Gold Coast/Wyndham LOD bytes restored without recapture;184/186 cell files unchanged.",
+    "checks": "Typecheck, arrival123, pool386, deck1213,18 actual walk segments,review289,public0failures2existingwarnings,runtime1GLBoptimized,bakecurrent,pack1930present,smoke9stops0errors PASS."
   }
 }
