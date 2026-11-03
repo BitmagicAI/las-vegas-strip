@@ -121,6 +121,6 @@
     "visual": "Eight corrected daylight views personally inspected, exterior front first. Lamp row now clears lettering, roof seams visible. Stylized low-poly bulbs and estimated spacing, not precise facade reconstruction.",
     "walk": "16 actual forward/return sidewalk segments passed; four endpoints inspected. Existing432motelstair/gallery support/headroom samples pass. Not full site or public interior traversal.",
     "remaining": "All six existing whole-block discrepancies remain; this pass addresses only two facade/roof details.",
-    "performance": "Initial outliers retained. Motel three900-frame original trials19.6/33.5/21.2ms versus installed19.2/18.8/18.7ms demonstrate variance also on unchanged original. Corrected six broad views19/19.4/18.9/19.1/18.2/19.9ms; new roof-detail29ms outlier under longer paired investigation. No speedup/60fps claim."
+    "performance": "Initial outliers retained. Motel three900-frame original trials19.6/33.5/21.2ms versus installed19.2/18.8/18.7ms demonstrate variance also on unchanged original. Corrected six broad views19/19.4/18.9/19.1/18.2/19.9ms; new roof-detail29ms outlier under longer paired investigation. No speedup/60fps claim. Longer three900-frame roof trials original18.8/19/18.7ms versus installed18.8/18.7/18.6ms: roof outlier not reproduced; no measured regression in controlled trials. Initial outliers remain recorded."
   }
 }

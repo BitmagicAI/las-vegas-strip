@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_-3.bin",
+      "bytes": 256408,
+      "sha256": "55a5e0709c4ac570a7de52c98811132870466ef1e8eb86af95dc7f7d7d015514"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "5fab3d10c7a244eb1e145c5aa5e1301938959080b1e95ffd834d3a87b6f7a58c"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/circusExterior-exterior.glb",
+      "bytes": 3599900,
+      "sha256": "ef386a5237917052694b1045fce6a4721cedc9b6a50786a12a4f25b41bb97aff"
+    }
+  ],
+  "newLfsBytes": 3870109,
+  "cellFiles": 186,
+  "unchangedCellFiles": 184,
+  "sharedBakes": 1
+}
