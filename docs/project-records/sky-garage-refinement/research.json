@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://www.lochsa.com/projects/sky-las-vegas",
+      "inspected": "Text only",
+      "establishes": "Engineer describes integrated low-rise podium with700-car garage, post-tensioned cast-in-place concrete and shear walls. Does not provide garage deck count or height.",
+      "photoLead": "https://cdn.prod.website-files.com/64491f36889bcd7cda9a5860/65733dab0621e68b996153c6_SKY%20Las%20Vegas%20%28004%29.jpg"
+    },
+    {
+      "url": "https://www.mjdeanconstruction.com/project/sky-las-vegas/",
+      "inspected": "Text only",
+      "establishes": "Contractor corroborates low-rise700-car structure and2007completion. Does not establish mapped west structure identity.",
+      "photoLead": "https://www.mjdeanconstruction.com/wp-content/uploads/2007/08/sky-tower-1.jpg"
+    }
+  ],
+  "discrepancy": "Existing model/record assumes fifteen decks and47m from mapped data. Low-rise wording is a reason to verify identity and elevations visually, not sufficient evidence to change them.",
+  "next": "Inspect official photographs and Google Earth/aerial after baseline GPU capture completes. No geometry edits yet."
+}
