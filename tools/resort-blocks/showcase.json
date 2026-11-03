@@ -31,10 +31,10 @@
     "Rooftopcanopy2022imagerymaypredatefinishedBrewDog; corroborate currentprimaryphotos."
   ],
   "remaining": [
-    "Public vertical access to BrewDog terrace and retail interiors",
-    "Exact Target dog sculpture and promotional graphics",
-    "Rooftop furnishings, planting and facade material fidelity still approximate",
-    "Older Showcase whole-block details and public connections remain incomplete"
+    "Public vertical access to BrewDog terrace and retail interiors: official photographs establish appearance but no verified continuous stair/lift plan; current terrace walk starts on roof.",
+    "Exact Target dog sculpture and promotional graphics: no redistributable exact sculpture/artwork authored in this rooftop furniture pass.",
+    "Rooftop furnishings, planting and facade material fidelity: individual dining chairs/sign corrected, but lounge/hanging chairs, planting, exact layout and guard materials remain approximate because photographs do not supply a complete measured plan.",
+    "Older Showcase whole-block details and public connections: preserved existing three-building frontage; this pass does not establish interior routes or all detailed facade dimensions."
   ],
   "interiors": "No indoor retail interiors are modified in this exteriorpass.",
   "installedPass": {
@@ -105,5 +105,25 @@
     "captures": "build/city-exteriors/showcase-ownership-2026-10-19",
     "visual": "All3views inspected; no former generic roof within detailed fronts. Commercial artwork remains simplified.",
     "verify": "CLI failed menu/start interaction timeout; screenshot shows PLAY. Independent game probe successfully played and captured3views. Not recorded as verify pass."
+  },
+  "rooftopRefinement20261103": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/showcase-refinement/",
+    "issue": 97,
+    "pr": 485,
+    "changes": [
+      "IV: turquoise freestanding BREWDOG lettering with narrow dark support rails replaces solid blue board",
+      "IV:17 inferred dining clusters now have68 individual timber chairs instead of attached picnic benches",
+      "Walgreens and3 older mapped Showcase structures retain existing geometry"
+    ],
+    "dimensions": "Existing inferred sign scale/position, roof22.86m and dining positions retained; chairs0.49m wide, seat0.45m, back0.91m, table0.76m are furniture-scale estimates, not surveyed.",
+    "evidence": "Five front-first matched daylight images and six actual-walk endpoint images inspected.12walksegments passed;1504roof+210terrace+15guard samples passed. Paired terrace timing investigation ongoing before shared bake. Isolated old/refined terrace pair50.4\u219251.2ms p95 (+1.6%); both exceed60fpsbudget and timing varies between runs. Shared bake in progress.",
+    "decisions": "Original batched timber furniture and existing teal material. Reference photos are not textures; no new images. Keep existing guard/floor collision and public access discrepancy.",
+    "remaining": [
+      "Exact roof lounge seating, hanging wicker chairs, planters, furniture arrangement and guard materials remain approximate",
+      "No verified public street-to-rooftop route; current walk tests start on terrace",
+      "No whole-block or photorealistic completion claimed"
+    ],
+    "checks": "All step7localchecks pass; smoke9stops0errors; one shared bake,91/92unchangedLODcells;8,709,937newLFSbytes including attached original game captures."
   }
 }

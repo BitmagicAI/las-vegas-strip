@@ -13,14 +13,23 @@ def curtain(F,L,lo,hi,metal='ph-metal'):
  for y in np.arange(lo+2.2,hi,2.2):F.box('ph-silver',(L/2,y,-.16),(L,.045,.10))
  for y in [lo,hi]:F.box(metal,(L/2,y,-.26),(L,.28,.44))
 
-def picnic(B,x,z,y,angle=0):
+def dining(B,x,z,y,angle=0):
+ # Operator rooftop photo: individual timber chairs, not attached picnic benches.
+ # Dimensions and cluster positions are inferred; furniture is visual detail only.
  F=Frame(B,x,z,angle,y=y)
  F.box('walnut',(0,.76,0),(2.0,.09,.85))
+ for xx in [-.75,.75]:
+  for zz in [-.30,.30]:F.box('blackiron',(xx,.36,zz),(.055,.72,.055))
  for side in [-1,1]:
-  F.box('walnut',(0,.45,side*.7),(2.0,.08,.32))
   for xx in [-.65,.65]:
-   F.tube('steel',(xx,.06,side*.83),(xx,.72,side*.26),.035,6)
- F.tube('steel',(-.65,.3,0),(.65,.3,0),.035,6)
+   zz=side*.88
+   F.box('walnut',(xx,.45,zz),(.49,.065,.49))
+   for dx in [-.20,.20]:
+    for dz in [-.20,.20]:
+     F.box('walnut',(xx+dx,.22,zz+dz),(.045,.44,.045))
+    F.box('walnut',(xx+dx,.68,zz+side*.22),(.045,.48,.045))
+   for h in [.63,.76,.88]:
+    F.box('walnut',(xx,h,zz+side*.22),(.44,.065,.045))
 
 def build(B):
  p=footprint(IDS[0]);B.source='showcase-iv-shell';B.detail=0
@@ -103,8 +112,9 @@ def build(B):
   for xx in [-7.2,7.2]:C.box('steel',(xx,yy,0),(.22,.22,12.0))
  for xx in [-7.2,0,7.2]:
   C.tube('steel',(xx,3.9,-6),(xx,6.7,0),.075,6);C.tube('steel',(xx,6.7,0),(xx,3.9,6),.075,6)
- C.box('ph-led-blue',(0,2.7,-6.08),(14.6,2.05,.12))
- C.text('BREWDOG',(0,2.8,-6.18),1.45,'ph-white')
+ # Official photo shows open backing between individual turquoise letters.
+ for yy in [2.15,3.35]:C.box('blackiron',(0,yy,-6.08),(14.6,.07,.09))
+ C.text('BREWDOG',(0,2.8,-6.18),1.45,'teal')
  # Pale tensioned central shade with faceted rising center, tucked inside frame.
  corners=[(-6,-4.8),(6,-4.8),(6,4.8),(-6,4.8)]
  for a,b in zip(corners,corners[1:]+corners[:1]):
@@ -114,10 +124,10 @@ def build(B):
  for x in [57.2,66.4]:
   for z in [1249,1261]:B.box('steel',(x,ROOF+1.65,z),(.12,3.3,.12),True)
  B.detail=1
- for x in [41.3,45.2,49.1,53.0,56.9,61.0]:picnic(B,x,1244.2,ROOF+.06,math.pi/2)
+ for x in [41.3,45.2,49.1,53.0,56.9,61.0]:dining(B,x,1244.2,ROOF+.06,math.pi/2)
  for x in [42,48,54,60]:
-  for z in [1266.2,1270.1]:picnic(B,x,z,ROOF+.06)
- for z in [1250,1255,1260]:picnic(B,62,z,ROOF+.06,math.pi/2)
+  for z in [1266.2,1270.1]:dining(B,x,z,ROOF+.06)
+ for z in [1250,1255,1260]:dining(B,62,z,ROOF+.06,math.pi/2)
  # Rooftop service equipment stays behind bar, following the observed east plant zone.
  for x,z,w,d in [(91,1247,4,3),(94,1254,4,3),(99,1262,5,3),(105,1262,5,3),(115,1256,10,9),(91,1271,5,3),(112,1271,6,3)]:
   if not p.contains(box(x-w/2,z-d/2,x+w/2,z+d/2)):continue

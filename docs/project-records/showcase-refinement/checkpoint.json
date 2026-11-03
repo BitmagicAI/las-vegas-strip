@@ -1,7 +1,84 @@
 {
   "issue": 97,
   "base": "66917a012c0c8a0e30064acd46b0e39786eae74a",
-  "stage": "Claim confirmed; five matched baseline views capturing",
+  "stage": "All local checks passed; PR485 ready for final commit and merge",
   "scope": "Five mapped Showcase structures, including IV rooftop and older frontage. Select supported refinements after references.",
-  "pending": "Inspect baseline, Google Earth and current official BrewDog photos. Keep all existing interiors/roads and remaining discrepancies. No geometry edited."
+  "pending": "Verify own-only history, push, update PR485 description from /tmp/showcase-pr.md, ready, merge --merge to next, close97 and pick next task.",
+  "baseline": {
+    "directory": "build/city-exteriors/showcase-refinement-baseline",
+    "views": [
+      "front",
+      "back",
+      "entry",
+      "terrace",
+      "older-front"
+    ],
+    "p95Ms": [
+      17.8,
+      17.8,
+      17.6,
+      25.6,
+      17.9
+    ],
+    "review": "All five PNGs inspected; terrace baseline slower than other views, retain exact cameras."
+  },
+  "capture": {
+    "session": 4164,
+    "log": "/tmp/showcase-installed.log",
+    "out": "build/city-exteriors/showcase-refinement-installed"
+  },
+  "completed": [
+    "Official photographs and Earth overhead reviewed",
+    "Original freestanding turquoise sign with dark narrow rails; individual timber dining chairs",
+    "Source 77101 triangles, IV/Walgreens17785; both geometry audits zero errors",
+    "Level and WebP optimization done; 10.24MiB source to3.37MiB WebP variant",
+    "Local install410 collision triangles",
+    "Typecheck PASS",
+    "Terrace210 floor and15 guard samples PASS",
+    "Roof support1504 samples PASS",
+    "Resort block review PASS",
+    "Public check PASS0fail4existingwarnings",
+    "All12 actual walk segments PASS across2terrace routes and1street route; all6endpointPNGs inspected"
+  ],
+  "roofTest": "PASS1504 samples, restored original test-point file from main build after initial missing-input failure",
+  "reviewedInstalledViews": [
+    "front",
+    "back",
+    "entry",
+    "terrace",
+    "older-front"
+  ],
+  "installedP95Ms": [
+    18.1,
+    17.7,
+    18.2,
+    41.2,
+    17.5
+  ],
+  "walk": {
+    "session": 6785,
+    "log": "/tmp/showcase-walk.log",
+    "out": "build/city-exteriors/showcase-refinement-walk"
+  },
+  "reviewedWalkImages": [
+    "walk-showcase-0",
+    "walk-return-0",
+    "walk-showcase-1"
+  ],
+  "pairedTiming": {
+    "session": 28272,
+    "before": "build/city-exteriors/showcase-terrace-paired-before",
+    "after": "build/city-exteriors/showcase-terrace-paired-after",
+    "backup": ".bitmagic/showcase-refinement-installed-ab.glb",
+    "target": "build/optimized/build/strip-landmarks/showcase-exterior.glb",
+    "status": "complete; refined optimized GLB restored"
+  },
+  "bake": {
+    "session": 4723,
+    "log": "/tmp/showcase-bake.log",
+    "runsStarted": 1,
+    "status": "complete; unchanged cells preserved"
+  },
+  "performanceResolution": "Initial terrace25.6\u219241.2ms prompted isolated exact-camera A/B. Committed old GLB50.4ms p95 /33.3p50 versus refined51.2p95 /31.8p50 (+1.6%p95). Both paired PNGs inspected and correct assets verified. Large between-run variation affects old asset too; no material paired regression established. Terrace does not meet60fps; do not claim speedup.",
+  "newLfsBytes": 8709937
 }
