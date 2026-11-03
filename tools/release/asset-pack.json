@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204362158,
+ "bytes": 1204384625,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -366,8 +366,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-4.bin",
-   "bytes": 414940,
-   "sha256": "3ab805eb8ad82be0c9363221be0e8752b46367b4c7cefe6fa5f867e79c84671e",
+   "bytes": 415119,
+   "sha256": "34c9b9faa6a3d8de1a072526f50847c48c4bb3d929e494210a85e8d1a93872ca",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "3b29cc8cabe74c4351fa103a831647b4beec41569a007df7754e5235c11eb590",
+   "sha256": "ecb3f180f343aed6f6c2465995c53ced78cd84070a2018368fc305b666140754",
    "kind": "runtime cell manifest"
   },
   {
@@ -10566,8 +10566,8 @@
   },
   {
    "path": "build/strip-landmarks/saharaExterior-exterior.glb",
-   "bytes": 1069040,
-   "sha256": "9c30a467d4562f55b1cb51c49af9cc20ebd5a2844878d95f08cc174157a94598",
+   "bytes": 1091328,
+   "sha256": "0162ca2b503d0429290cf6c54ed4f791679d98731ef35ab1c55793436cdbdd0d",
    "kind": "optimized"
   },
   {
