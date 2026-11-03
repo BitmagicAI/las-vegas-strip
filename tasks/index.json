@@ -2468,7 +2468,7 @@
     "All four installed views inspected. Canopy outline, front door articulation and precise tower bay widths still need closer fit.",
     "Current arrival pylon and canopy dimensions remain approximate except supplier-specified column cover sizes.",
     "2026-10-13 west arrival arc has two retained city road-edge contacts; central basin is intentionally solid.",
-    "Four display columns, roof oculus and complete entrance/landscape design missing."
+    "Four display columns and complete entrance/landscape design missing. Earlier roof-oculus interpretation is superseded: supplier photo and Google aerial support a closed roof with dark underside inset."
    ],
    "record": "tools/resort-blocks/sahara.json",
    "buildings": [
@@ -2507,10 +2507,10 @@
     "builders": [
      "tools/strip-landmarks/sahara.py",
      "tools/city-exteriors/test-sahara-arrival.mjs",
+     "tools/city-exteriors/compare-sahara-performance.py",
      "tools/city-exteriors/test-sahara.mjs",
      "tools/highrises/interiors.py",
-     "tools/strip-landmarks/export_carls_jr_sahara.py",
-     "tools/strip-landmarks/export_marianas_sahara.py"
+     "tools/strip-landmarks/export_carls_jr_sahara.py"
     ]
    },
    "acceptance": [

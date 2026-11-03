@@ -55,7 +55,7 @@
     "All four installed views inspected. Canopy outline, front door articulation and precise tower bay widths still need closer fit.",
     "Current arrival pylon and canopy dimensions remain approximate except supplier-specified column cover sizes.",
     "2026-10-13 west arrival arc has two retained city road-edge contacts; central basin is intentionally solid.",
-    "Four display columns, roof oculus and complete entrance/landscape design missing."
+    "Four display columns and complete entrance/landscape design missing. Earlier roof-oculus interpretation is superseded: supplier photo and Google aerial support a closed roof with dark underside inset."
   ],
   "estimates": {
     "marraHeightM": 85,
@@ -346,5 +346,20 @@
       "build/strip-landmarks/saharaExterior-exterior-collision.json": "c1655b26954e674cad71c9f429177c8d62e831018fd24b03c77c4c7d71e0b786",
       "tools/strip-landmarks/sahara_arrival.py": "2df94cc3abe5e933099e584c427f5887546433634c35e7ada507f2575f890faa"
     }
+  },
+  "arrivalRefinement": {
+    "record": "docs/project-records/sahara-arrival-refinement",
+    "changes": [
+      "Original closed annular crown and dark metallic central inset; hanger tops extended into inset.",
+      "Only central crossing beam segments removed; surrounding beams, roof, basin, roads, towers, interiors and all collision preserved."
+    ],
+    "review": "Four matching daylight captures personally inspected, front first; twelve actual west-arc forward/return segments passed. Full site remains incomplete.",
+    "dimensions": "Crown radii 5.8/4m; bottom/top 10.35/10.65m; inset 10.62m underside. Inferred, not surveyed.",
+    "performance": "P95 baseline 18.2/18.5/19.1/19.7ms; corrected 19/17.7/19/19ms. Initial 29ms canopy outlier retained, not reproduced; cause unproven.",
+    "limitations": [
+      "Static metallic inset does not reproduce real mirror reflections.",
+      "Two retained north approach road-edge contacts remain; full circulation unverified.",
+      "No new interiors, display columns or landscaping in this pass."
+    ]
   }
 }
