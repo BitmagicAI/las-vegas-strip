@@ -1,0 +1,37 @@
+{
+  "installed": [
+    {
+      "name": "south",
+      "eye": [
+        -1230,
+        150,
+        3090
+      ],
+      "target": [
+        -929,
+        35,
+        2813
+      ],
+      "p50": 21.600000143051147,
+      "p95": 28.600000143051147
+    }
+  ],
+  "original": [
+    {
+      "name": "south",
+      "eye": [
+        -1230,
+        150,
+        3090
+      ],
+      "target": [
+        -929,
+        35,
+        2813
+      ],
+      "p50": 23.199999809265137,
+      "p95": 39.39999985694885
+    }
+  ],
+  "review": "Both paired south captures personally inspected. Same optimized runtime swap, installed hashes restored. InstalledP9528.6ms/original39.4ms: original also slow versus earlier18.3ms baseline, so no persistent added-canopy regression established. Host/scene timing variance remains; no speedup or universal60fps claim. Initial outlier retained."
+}
