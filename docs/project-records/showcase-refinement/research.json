@@ -1,0 +1,47 @@
+{
+  "stage": "Five baseline views reviewed; Earth overhead and three official photos inspected",
+  "sources": [
+    {
+      "url": "https://usa.brewdog.com/pages/us-vegas-private-events",
+      "provider": "BrewDog operator",
+      "accessDate": "2026-11-03",
+      "observed": "Official page describes rooftop terrace and separate indoor event space; links rooftop photographs. Text read."
+    },
+    {
+      "url": "https://usa.brewdog.com/cdn/shop/files/JN_221123_Brewdog_Las_Vegas_1348.jpg?v=1770136667&width=1280",
+      "provider": "BrewDog official gallery",
+      "accessDate": "2026-11-03",
+      "imageDate": "Unknown; filename suggests2022-11-23, not independently confirmed",
+      "observed": "Personally inspected: freestanding turquoise BREWDOG letters attached to dark steel scaffold, without solid blue panel behind lettering; dining tables with individual timber chairs, padded bench dividers and lounge seating. Photo looks south toward New York/Park MGM. Existing source uses white letters on solid blue board and picnic tables.",
+      "limitations": "Does not establish exact dimensions, whole roof circulation or current canopy plan. No photo used as game texture."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.10468,-115.17210,700a,250d,35y,0h,0t,0r",
+      "provider": "Google Earth",
+      "accessDate": "2026-11-03",
+      "imageDate": "Not displayed in inspected overhead view",
+      "observed": "Overhead 40m scale view: IV terrace occupies west side of roof, open steel canopy frame with central pale shade at northwest, dense seating south of frame, enclosed white-roof volumes and plant east. Walgreens is separate low roof to north. No measurement tool used; existing mapped footprint retained.",
+      "limitations": "Overhead cannot resolve letter color or exact chairs. Native browser fallback succeeded after extension timeoutMs failure; research tab closed."
+    },
+    {
+      "url": "https://usa.brewdog.com/cdn/shop/files/BREWED_FRESH_V2_2560_x_1440_px_4.png?width=1280",
+      "provider": "BrewDog official gallery",
+      "accessDate": "2026-11-03",
+      "imageDate": "Unknown",
+      "observed": "Interior: exposed metal deck, beams and silver ducts, dark columns, timber high tables with blue chairs and lounge seating. No complete plan or public vertical route established."
+    },
+    {
+      "url": "https://usa.brewdog.com/cdn/shop/files/BREWED_FRESH_V2_2560_x_1440_px_5.png?width=1280",
+      "provider": "BrewDog official gallery",
+      "accessDate": "2026-11-03",
+      "imageDate": "Unknown",
+      "observed": "North-facing terrace: timber sofas with pale cushions, hanging wicker seats on dark frames, tile floor and vertical metal perimeter railing. This differs from the glass guard in another official angle; do not globally replace guards based on one photograph."
+    }
+  ],
+  "next": "Author supported sign and dining furniture; scoped source audit, optimization, installation and all local verification still required.",
+  "decisions": [
+    "Replace opaque blue BREWDOG backing with slender dark support rails and turquoise freestanding letters at existing inferred location/scale.",
+    "Replace generic picnic benches with individual timber dining chairs at existing dining clusters; exact table arrangement remains inferred.",
+    "Retain mapped buildings, floor and guard collision, canopy and interiors. Hanging wicker furniture and verified vertical access require a later pass; photographs are reference only, never textures."
+  ]
+}
