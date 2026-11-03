@@ -1,8 +1,8 @@
 {
   "issue": 69,
   "base": "2d6582a0ccb0d85efaf5e5670d09184774a279cc",
-  "stage": "Optimized rooftop paint installed; matching views and actual roof walks running",
+  "stage": "Installed daylight and eight actual roof walking segments passed; ONE shared bake running",
   "constraints": "Preserve surrounding buildings, roads, interiors and existing decks. Exact circulation and facade dimensions require reference confirmation.",
-  "pending": "Finish capture/walk session80930, inspect all PNGs and matching timings, then ONE shared bake and all final checks. No shared bake yet.",
+  "pending": "Finish bake session16895 (/tmp/sky-garage-group-bake.log), preserve unrelated Gold Coast/Wyndham LOD blocks byte-identically if they drift, stage then runtime GLB check against origin/next, bake check, asset-pack check and smoke clone. No second bake. Final PR description, ready/merge next, close69, picker.",
   "scope": "40 original triangles added to existing skg-line batch; all other geometry, labels and collision identical."
 }
