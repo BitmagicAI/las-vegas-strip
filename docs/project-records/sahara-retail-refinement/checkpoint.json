@@ -1,8 +1,8 @@
 {
   "issue": 84,
   "base": "64e9574d1add56b58f1f87ceb98a912dc6ed30c3",
-  "stage": "Final low-complexity script optimized and installed; matching captures running",
+  "stage": "Initial visual review rejected arc order; corrected model installed and paired capture running",
   "scope": "Five mapped neighboring retail/parking buildings; select supported improvements after visual survey. Preserve roads and all existing interiors.",
-  "pending": "Finish capture17271 (/tmp/sahara-retail-installed.log), inspect4PNGs and matching P95. Final level+WebP3.94\u21921.41MiB. Actual site walks and ONE shared bake/finalchecks still pending; no bake yet.",
+  "pending": "Finish95101 (/tmp/sahara-retail-paired.log): original then corrected installed5views, finally hash-restores installed GLB. Do not mutate assets/startGPU meanwhile. Inspect corrected Bonanza spelling/orientation and Walgreens-detail sizing and compare P95. Then run prepared walk-sahara-retail-refinement.js (two frontage routes,8segments), inspect4endpoints, ONE bake/finalchecks. No bake yet.",
   "baselineReview": "All4baselinePNGs personally reviewed; P9519/19/18.7/19.3ms. Existing Bonanza text too small/straight, Walgreens block font; forecourt mismatch retained."
 }

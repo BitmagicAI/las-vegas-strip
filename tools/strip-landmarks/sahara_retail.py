@@ -51,7 +51,7 @@ def exterior(B):
       F.box('sr-billboard',(L/2,8.1,-.27),(L,4.9,.14))
       for y in [5.55,10.6,11.7]:F.box('silver',(L/2,y,-.38),(L,.1,.13))
       if L>16:
-       F.text('Walgreens',(L/2,4.05,-.42),1.55,'sr-red-stucco')
+       F.text('Walgreens',(L/2,3.75,-.42),2.5,'sr-red-stucco')
        B.labels[-1]['letterStyle']='script'
       for x in np.arange(.2,L,4):F.box('silver',(x,8.1,-.36),(.04,4.9,.08))
      elif idx==3:
@@ -76,7 +76,7 @@ def exterior(B):
    # Radius, type sizes and spacing are photographic estimates, not traced art.
    for letter,angle in zip('BONANZA',np.linspace(140,40,7)):
     a=math.radians(angle)
-    F.text(letter,(4.7*math.cos(a),10+4.7*math.sin(a),-.28),1.45,'sr-yellow')
+    F.text(letter,(-4.7*math.cos(a),10+4.7*math.sin(a),-.28),1.45,'sr-yellow')
     B.labels[-1]['roll']=a-math.pi/2
    for text,y,size in [('GIFT',11.1,2.0),('& SOUVENIR',9.2,1.05),('SHOPS',7.2,1.65)]:F.text(text,(0,y,-.28),size,'sr-yellow')
    for x in [-3,3]:F.box('sr-dark',(x,5.4,.2),(.18,3,.18))

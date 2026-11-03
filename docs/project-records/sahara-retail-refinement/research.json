@@ -26,5 +26,6 @@
   ],
   "scope": "Two-building sign refinement: original separately positioned Bonanza glyphs on upper arc and larger center lettering; Walgreens red script approximation using local font outlines. No reference image/mesh copied.",
   "inferred": "Bonanza arc radius4.7m, angles140..40 degrees, glyph size1.45m; center type2/1.05/1.65m. Walgreens type1.55m. Existing sign disk and building dimensions retained.",
-  "limitations": "Generic font outlines approximate lettering, not exact logo reproduction. Parking/roads, billboard creative and full public onward access remain unchanged and unverified. Other three mapped buildings retain all geometry."
+  "limitations": "Generic font outlines approximate lettering, not exact logo reproduction. Parking/roads, billboard creative and full public onward access remain unchanged and unverified. Other three mapped buildings retain all geometry.",
+  "correction": "Initial installed arc spelled in reverse order because facade-local x runs opposite text-reading x. Negated arc x, retained glyph roll; Walgreens script enlarged2.5m, baseline3.75m after tiny result in broad view. Corrected close review pending."
 }
