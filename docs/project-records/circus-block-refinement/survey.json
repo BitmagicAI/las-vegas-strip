@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-03",
+  "baseline": "All six installed daylight captures personally inspected. P95 front/arrival/motel/slots/mcdonalds/dome: 18/17.8/18/17.5/17.6/20ms.",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1360,-115.1630,20z/data=!3m1!1e3",
+      "inspected": true,
+      "findings": "Slots flat rectangular roof, layered east edge; adjacent McDonalds yellow ribbed dining roof and flat service roof. Imagery capture date unknown."
+    },
+    {
+      "url": "https://ucarecdn.com/330c007e-5bf3-4285-b34e-b0c3a061ada9/",
+      "inspected": true,
+      "findings": "Existing linked ground photo shows continuous small pearl lamps along gold fascia edges above dark-framed entrance doors. Graphic art not copied. Photo date and attribution remain unknown."
+    },
+    {
+      "url": "https://www.circuscircus.com/wp-content/uploads/2026/03/Rectangle-15.webp",
+      "inspected": true,
+      "findings": "Official interior marketing photo, bar patrons and slot machines; not exterior layout evidence."
+    },
+    {
+      "url": "https://www.circuscircus.com/wp-content/uploads/2026/03/Rectangle-14.webp",
+      "inspected": true,
+      "findings": "Official interior marketing photo; colored ceiling tubes and bar, insufficient full interior layout evidence."
+    }
+  ],
+  "scope": "Two nearby frontage buildings: Slots-A-Fun pearl fascia lamps and McDonalds yellow roof seams. Original decorative geometry; no new lights or collision. Other seven mapped buildings retained.",
+  "estimates": "Lamp radius0.065m spacing0.32m at existing4.3/5.3m fascia edges. Roof seams0.025m radius every0.55m. Photo-fit estimates, not survey.",
+  "status": "Source authored and Python compilation passes; not built, optimized, installed or reviewed yet. Source preservation audit required before export.",
+  "remaining": "All six whole-block gaps retained; fine graphic art, exact current facade, full interior and all-site circulation remain unfinished."
+}
