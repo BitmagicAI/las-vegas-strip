@@ -1,8 +1,8 @@
 {
   "issue": 84,
   "base": "64e9574d1add56b58f1f87ceb98a912dc6ed30c3",
-  "stage": "Initial visual review rejected arc order; corrected model installed and paired capture running",
+  "stage": "Corrected installed visual and actual walk pass; ONE shared bake running",
   "scope": "Five mapped neighboring retail/parking buildings; select supported improvements after visual survey. Preserve roads and all existing interiors.",
-  "pending": "Finish95101 (/tmp/sahara-retail-paired.log): original then corrected installed5views, finally hash-restores installed GLB. Do not mutate assets/startGPU meanwhile. Inspect corrected Bonanza spelling/orientation and Walgreens-detail sizing and compare P95. Then run prepared walk-sahara-retail-refinement.js (two frontage routes,8segments), inspect4endpoints, ONE bake/finalchecks. No bake yet.",
+  "pending": "Finish43017 (/tmp/sahara-retail-group-bake.log), preserve unrelated Gold Coast/Wyndham LOD blocks if drift, stage then runtime check origin/next, bake check, asset-pack check, local smoke. No second bake. Final bytes/evidence/PRdescription, ready/merge next, close84 and picker.",
   "baselineReview": "All4baselinePNGs personally reviewed; P9519/19/18.7/19.3ms. Existing Bonanza text too small/straight, Walgreens block font; forecourt mismatch retained."
 }
