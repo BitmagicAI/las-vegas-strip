@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-5.bin",
+      "bytes": 305089,
+      "sha256": "439d2f45dbf7bc7f162f92ec9a20964f2235e420f238de14298f5b6362b4e929"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "cb394e71928053f7b06e323ef4ef455cc4f4b44b00d3a5e3f9328f2e7d152d00"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/northStripMotels-exterior-collision.bin",
+      "bytes": 16756,
+      "sha256": "eac858fe1f7cf68c172a18073650ad0fa12d51598f52896326de88ee2aeccd11"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/northStripMotels-exterior.glb",
+      "bytes": 2757712,
+      "sha256": "7f99ba8ffad4ff6875a47e245056847029c5a8065d6cda79734f13e3d9009e16"
+    }
+  ],
+  "newLfsBytes": 3093358,
+  "unchangedLodCellBins": 91,
+  "totalLodCellBins": 92,
+  "note": "Changed LOD manifest counted separately; all other cells retained byte-identically."
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-03",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.14585,-115.15655,700a,300d,35y,0h,0t,0r",
+      "visuallyInspected": true,
+      "imageryFooter": "2/3/2026",
+      "observations": "Red tile motel courts east of Strip, Aztec west. Southern court has rectangular blue pool, pale paving and surrounding palms. Separate white-roof chapel toward Strip. Existing kidney-shaped pool needs plan correspondence before modification. No imagery or mesh copied."
+    },
+    {
+      "url": "https://www.chapelofthebellslasvegas.com/",
+      "visuallyInspected": true,
+      "observations": "Operator identifies 2233 Las Vegas Blvd South. Text describes garden and white baby grand piano; homepage hero is wedding couple, not architectural evidence."
+    },
+    {
+      "url": "https://www.chapelofthebellslasvegas.com/about.html",
+      "visuallyInspected": true,
+      "observations": "Operator photo shows freestanding burgundy rectangular sign with cream inset, Chapel of the Bells script, upper WEDDINGS band and neon bell motif, lower LICENSE SERVICE plinth. No reliable scale or complete building plan supplied."
+    }
+  ],
+  "decisions": [
+    "Retain existing chapel gap until footprint and access can be supported. Do not infer complete interior from operator text alone.",
+    "Original pool baseline camera was roof-obstructed. Raise camera to [1553,28,-3251] looking at [1553,0.5,-3263] before geometry changes; preserve rejected baseline.",
+    "Correct only the motel court basin and its existing coping in this pass: original 15 x 7 m rectangle, -20 degree long-axis rotation about [1553,-3263], inferred from overhead relative to the same southern U-shaped court. Keep existing 1 m coping width and elevations. No surveyed dimensions claimed. Other nine surviving buildings and obsolete vacant parcel unchanged.",
+    "Initial center1553 rejected after installed review: footprint clipping truncated rectangle and coping met gallery. Shift center4m east to1557 with >2m coping-to-wall clearance, preserving existing buildings and roads. This placement is a reversible accommodation of the existing mapped shell, not surveyed pool positioning."
+  ],
+  "remaining": [
+    "Exact pool dimensions, full paving, safety enclosure and palms remain unresolved.",
+    "Chapel plan/interior, tenant dates, parking islands and gallery connections remain unresolved."
+  ]
+}
