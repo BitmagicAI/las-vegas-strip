@@ -1,0 +1,7 @@
+{
+  "inspected": "Both original/installed Slots-detail and roof-detail captures; all four actual walk endpoints.",
+  "findings": "Roof seams visible without crossing existing planes. Initial upper bulb row crossed top of existing lettering: moved from5.3 to5.65m, re-exported/optimized/installed on same branch. Corrected capture pending.",
+  "walk": "All16 continuous segments passed on two frontage sidewalks; no full entrance/interior or whole-site traversal claim. Decorative row movement leaves collision unchanged.",
+  "performance": "First pair installed/original P95 front19.5/19.5 arrival17.7/18.7 motel27.3/18.6 slots19.1/18.8 mcdonalds19.4/18 dome19.7/18.3 slots-detail19.3/17.9 roof-detail19.3/18.2. Motel regression remains unexplained; longer three-trial 900-frame original-first comparison running.",
+  "scope": "No new lights. One material group added; unchanged motel geometry does not by itself prove performance unaffected."
+}

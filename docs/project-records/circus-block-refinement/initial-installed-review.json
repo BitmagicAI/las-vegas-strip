@@ -1,0 +1,17 @@
+{
+  "personallyInspected": [
+    "front",
+    "arrival",
+    "motel",
+    "slots",
+    "mcdonalds",
+    "dome"
+  ],
+  "findings": [
+    "Broad site, towers, motel and arrival retain baseline appearance.",
+    "Small bulb rows appear on Slots fascia; long-distance framing is insufficient for close geometry approval.",
+    "McDonalds seams require closer elevated view before approval."
+  ],
+  "performance": "Initial P95 19/30/30.1/26.9/19.4/20.5ms versus baseline18/17.8/18/17.5/17.6/20ms; regressions unresolved. No readiness or performance pass claimed.",
+  "next": "Controlled optimized-only original/installed same eight cameras, including two close detail views; finally restores installed asset by hash. Then automatic actual walking run."
+}

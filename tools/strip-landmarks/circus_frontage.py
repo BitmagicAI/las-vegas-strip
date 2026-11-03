@@ -61,6 +61,15 @@ def frontage(B,ident,p,h):
       F.box('cc-flat-roof',(L/2,4.08,-.9),(L,.14,1.8),True)
      if front and L>15:
       F.text('SLOTS A FUN',(L/2,4.8,-.55),1.05,'cc-gold')
+      # Original low-poly marquee bulbs: the linked entrance photo shows
+      # continuous pearl lamps along the fascia. Spacing/radii are inferred.
+      # No scene lights or collision; existing door openings remain unchanged.
+      for yy,depth in [(4.3,.58),(5.65,.48)]:
+       F.box('cc-gold',(L/2,yy,-depth),(L,.055,.055))
+       for u in np.arange(.25,L-.2,.32):
+        r=.065;v=[F.p(u+r,yy,-depth-.05),F.p(u-r,yy,-depth-.05),F.p(u,yy+r,-depth-.05),F.p(u,yy-r,-depth-.05),F.p(u,yy,-depth-.05+r),F.p(u,yy,-depth-.05-r)]
+        for a,b,c in [(0,2,4),(2,1,4),(1,3,4),(3,0,4),(2,0,5),(1,2,5),(3,1,5),(0,3,5)]:B.face('cc-white',[v[a],v[b],v[c]])
+
       F.box('cc-shadow',(L/2,6.85,-.2),(10,1.7,.24))
       F.text('SLOTS A FUN',(L/2,6.85,-.35),.9,'cc-yellow')
     elif food:
@@ -83,6 +92,11 @@ def frontage(B,ident,p,h):
   F,L,_,_=facade_frame(B,(882.136,-2163.216),(891.938,-2181.851),p,0)
   for sign in [-1,1]:
    B.upface('cc-yellow',[F.p(L/2+sign*L/2,6.05,-.6),F.p(L/2+sign*L/2,6.05,15),F.p(L/2,7.2,15),F.p(L/2,7.2,-.6)])
+   # Fine standing seams visible in the aerial yellow dining roof.
+   # Original geometry, inferred 0.55m spacing, retaining both roof planes.
+   for zz in np.arange(-.45,14.9,.55):
+    F.tube('cc-yellow',(L/2+sign*L/2,6.075,zz),(L/2,7.225,zz),.025,4)
+
  if motel:
   court=Polygon([(846,-2419),(860,-2445),(906,-2444),(917,-2396),(969,-2368),(972,-2350),(950,-2359),(851,-2410)])
   B.planar('cc-asphalt',court.difference(p.buffer(.4)),.06,True)
