@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204421401,
+ "bytes": 1204421767,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -366,8 +366,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-4.bin",
-   "bytes": 415119,
-   "sha256": "34c9b9faa6a3d8de1a072526f50847c48c4bb3d929e494210a85e8d1a93872ca",
+   "bytes": 415137,
+   "sha256": "42865a0d78a4d85ce2182810f6276489dc29da566ec7c3c950e146181dfb8581",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "5fab3d10c7a244eb1e145c5aa5e1301938959080b1e95ffd834d3a87b6f7a58c",
+   "sha256": "5639988c52ce4c4f24e00ada1b13821579e8c5c88a68e8fb7aae7d702b89e26e",
    "kind": "runtime cell manifest"
   },
   {
@@ -10782,8 +10782,8 @@
   },
   {
    "path": "build/strip-landmarks/skyGarage-exterior.glb",
-   "bytes": 74340,
-   "sha256": "7aa956f6ffe6fdba5a0ef09235fa78b98ede5b45df262890c4bb21456827bb18",
+   "bytes": 74688,
+   "sha256": "a763c2a08d7a8d960ecddfba0f456e24334e7d9af319fe92daf5f34b8338590f",
    "kind": "optimized"
   },
   {
