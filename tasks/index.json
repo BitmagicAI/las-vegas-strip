@@ -4681,10 +4681,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact mansard and facade group proportions, mural fidelity",
-    "Public casino entrance onward route",
-    "Pool landscaping and pylon signage",
-    "Measured route performance"
+    "Exact mansard and facade group proportions, mural fidelity: existing source corrections are now installed, but surveyed fit and mural detail remain unverified.",
+    "Public casino entrance onward route: local exterior walks do not establish a continuous interior connection.",
+    "Pool landscaping and pylon signage: this pass corrects basin count and plan only; palms, furniture, safety boundaries and pylon remain unbuilt or unverified.",
+    "Measured route performance: matching fixed-camera measurements are recorded; continuous driving and entrance route profiling remains outstanding."
    ],
    "record": "tools/resort-blocks/oyo.json",
    "buildings": [
@@ -4705,10 +4705,12 @@
      "tools/resort-blocks/oyo.json"
     ],
     "builders": [
+     "tools/city-exteriors/test-oyo-pools.mjs",
      "tools/city-exteriors/test-oyo.mjs",
      "tools/strip-landmarks/oyo.py",
      "tools/strip-landmarks/build_oyo.py",
-     "tools/strip-landmarks/export.py"
+     "tools/city-exteriors/install-oyo-refinement.mjs",
+     "tools/strip-landmarks/export_oyo_refinement.py"
     ]
    },
    "acceptance": [

@@ -1,0 +1,77 @@
+{
+  "routes": [
+    {
+      "name": "Mapped arrival canopy forward and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            475,
+            0.1,
+            1722
+          ],
+          "position": {
+            "x": 475.0074157714844,
+            "y": -0.000008018016815214413,
+            "z": 1721.669921875
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            475,
+            0.1,
+            1734
+          ],
+          "position": {
+            "x": 475.0001220703125,
+            "y": 0.30104675769805905,
+            "z": 1733.8597412109375
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            475,
+            0.1,
+            1722
+          ],
+          "position": {
+            "x": 474.9877624511719,
+            "y": 0.009984343051910372,
+            "z": 1722.3299560546875
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            475,
+            0.1,
+            1710
+          ],
+          "position": {
+            "x": 474.993896484375,
+            "y": 0.269456295967102,
+            "z": 1710.335205078125
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

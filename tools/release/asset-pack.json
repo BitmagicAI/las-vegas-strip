@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204321110,
+ "bytes": 1204310031,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -318,8 +318,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_2.bin",
-   "bytes": 362375,
-   "sha256": "e683c72282119084b30c061ed0d95a17dc0f83ca583c91f58ce70cd01f288111",
+   "bytes": 362864,
+   "sha256": "dab977fd22bf7f22279132057e92dd9becb56387b2673be0b98280ccae86366a",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "d42100dbbcff7798b7a77b10d94873d6f01a93ce1eb65f61d8982965895cfd42",
+   "sha256": "019ddae8cec641fa2f1d4b6789e7a3d32ad97ed7498c77cc96f307532bc0a467",
    "kind": "runtime cell manifest"
   },
   {
@@ -9984,14 +9984,14 @@
   },
   {
    "path": "build/strip-landmarks/oyoExterior-exterior-collision.bin",
-   "bytes": 10420,
-   "sha256": "f6d88cab81617ff0b0b5931944278addc078ecd2e4e05e33b5e85a157f5e34ec",
+   "bytes": 11424,
+   "sha256": "aed88c25065d3c3751f8aa407cffe098200dba1b24657f652c558a5a223975b9",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/oyoExterior-exterior.glb",
-   "bytes": 662460,
-   "sha256": "995c5aef1ea2b8a309a527fd997b0cc95af9bede471dc7bc812ba8ab386716a8",
+   "bytes": 649888,
+   "sha256": "5765f9138312385639d3ee592ac4f5e0935ed5881d21c76c1f8dcb7a35202f87",
    "kind": "optimized"
   },
   {
