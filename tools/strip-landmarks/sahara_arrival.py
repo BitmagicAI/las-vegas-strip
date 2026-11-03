@@ -66,10 +66,25 @@ def arrival(B):
   for y in [3.5,7]:B.lathe('sa-joint',(x,z),[(y,.311),(y+.035,.311)],32)
  # Ringed suspended tubes visible in supplier photo, architectural water feature.
  ring=Point(CX,CZ).buffer(5.8,48).difference(Point(CX,CZ).buffer(4.0,48))
- B.planar('sa-champagne',ring,10.35)
+ # Supplier photograph shows a deep crown and closed dark central inset.
+ # Keep the continuous exterior roof: this is not an open-air oculus.
+ B.shell(ring,10.35,10.65,'sar-crown',roof=False,solid=False)
+ B.planar('sar-crown',ring,10.65)
+ for poly in parts(ring):
+  for tri in triangles(poly):
+   pts=[(x,10.35,z) for x,z in list(tri.exterior.coords)[:-1]]
+   if np.cross(np.array(pts[1])-pts[0],np.array(pts[2])-pts[0])[1]>0:pts.reverse()
+   B.face('sar-crown',pts)
+ inset=Point(CX,CZ).buffer(4.0,48)
+ B.shell(inset,10.62,10.68,'sar-inset',roof=False,solid=False)
+ B.planar('sar-inset',inset,10.68)
+ for tri in triangles(inset):
+  pts=[(x,10.62,z) for x,z in list(tri.exterior.coords)[:-1]]
+  if np.cross(np.array(pts[1])-pts[0],np.array(pts[2])-pts[0])[1]>0:pts.reverse()
+  B.face('sar-inset',pts)
  for j in range(24):
   a=j*math.tau/24;r=2.2+(j%3)*.55;x=CX+r*math.cos(a);z=CZ+r*math.sin(a);bottom=5.7+(j%5)*.44
-  B.tube('sa-champagne',(x,bottom+1.1,z),(x,10.35,z),.045,8)
+  B.tube('sa-champagne',(x,bottom+1.1,z),(x,10.62,z),.045,8)
   B.lathe('sa-blue-reveal',(x,z),[(bottom,.24),(bottom+1.1,.24)],16)
  # Separate boulevard pylon, restrained branded content rather than invented advertising.
  B.source='sahara-pylon';F=Frame(B,1360,-2937,math.pi/2,y=0)

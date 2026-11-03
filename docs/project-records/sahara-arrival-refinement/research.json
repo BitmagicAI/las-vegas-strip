@@ -1,5 +1,5 @@
 {
-  "status": "reference-and-baseline",
+  "status": "optimized-installed-review-pending",
   "issue": 36,
   "base": "02420d2fa990a1f3981de73ece2d3a7178265af2",
   "scope": "Refine existing arrival central ceiling/feature after matched daylight review. Preserve four mapped structures, guest modules, roads and existing circulation. No geometry changed yet.",
@@ -26,8 +26,26 @@
     }
   ],
   "remaining": [
-    "Matching baseline and installed review pending.",
+    "Matching installed capture and actual walk pending; no shared bake yet.",
     "All prior SAHARA unresolved gaps retained.",
     "Roof oculus wording conflicts with current aerial; interpret as underside circular inset pending review, not an open hole."
-  ]
+  ],
+  "baseline": {
+    "views": [
+      "front",
+      "arrival",
+      "canopy",
+      "feature"
+    ],
+    "allInspected": true,
+    "p95Ms": [
+      18.2,
+      18.5,
+      19.1,
+      19.7
+    ],
+    "finding": "Thin central ring has no depth; diamond beams visible through its center unlike supplier photograph. Existing arrival and fa\u00e7ade differences remain."
+  },
+  "change": "Original closed0.30m deep circular crown and dark metallic central inset; hanging rods extended0.27m to inset. Retained original radii5.8m/4m, lower10.35m/upper10.65m; heights inferred. Closed exterior roof retained. No dynamic mirror pass or lights.",
+  "sourceAudit": "53 originalgroups\u219255; onlyoldsa-champagnearrivalgroupchanged;labelsandcollisionidentical. Newundersidefacesexplicitlyorienteddown."
 }
