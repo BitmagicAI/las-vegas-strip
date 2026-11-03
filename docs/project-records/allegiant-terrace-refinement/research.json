@@ -3,7 +3,7 @@
   "base": "84fd854 origin/next",
   "claim": "Issue65 assigned janiverse confirmed before edits",
   "scope": "Two mapped stadium structures; entry terraces/circulation and contextual exterior refinement. Preserve roof, existing shell and roads.",
-  "state": "Four daylight views, controlled south performance comparison and six actual walking segments reviewed. Single shared bake next.",
+  "state": "Scoped canopy verified; single bake staged, all step7 local checks passed. Full-site discrepancies retained.",
   "sources": [
     {
       "url": "https://www.raiders.com/news/las-vegas-stadium-authority-unanimously-approves-funds-for-raiders-allegiant-stadium-renovation-project",
@@ -42,7 +42,7 @@
   "decisions": [
     "Use corroborated built entry configuration, not proposed2027\u201328 plaza."
   ],
-  "next": "Single grouped bake,stage,finalstep7checks,smoke,LFSbytes,board/archive,readymergeclose65.",
+  "next": "Merge PR476 into next, close65, pick next unclaimed area.",
   "baselineReview": "All three neutral daylight captures inspected. Existing black oval shell, pale membrane, mapped paved/green approaches. North entry closed glass wall, tiny centered sign, no detailed stair/terrace assembly. P95 front19.5/south18.3/entry19.0ms. Elevated terrace baseline personally inspected: mapped paths and retaining blocks retained, no existing terrace assembly; terraceP95 20.7ms.",
   "discrepancies": [
     "Existing narrow upper glazing and crossing diagonal ribbons differ from broad north opening/curved frame in2020official+2025StreetView. Preserve discrepancy for explicit scoped correction; do not claim existing facade accurate.",
@@ -57,7 +57,9 @@
     "optimization": "level7.65to2.20MiB; WebP pass complete; install--no-stage",
     "collisionTriangles": 22658,
     "performance": "Controlled optimized-only south pair installed28.6/original39.4msP95; bothimagesinspected/hashrestored. Originalalso slow, no persistent added-canopy regression. Initialoutliersretained,nospeedup/60fpsclaim.",
-    "movement": "SixcontinuoussegmentsPASS;bothendpointPNGsinspected. Endpoints face away from stadium; route crosses beneath canopy twice each direction. Not an interior/terrace access claim."
+    "movement": "SixcontinuoussegmentsPASS;bothendpointPNGsinspected. Endpoints face away from stadium; route crosses beneath canopy twice each direction. Not an interior/terrace access claim.",
+    "final": "Runtime1GLB0unoptimized;bakecurrent;pack1930present0missing/unoptimized;smoke9stops0failedrequests/pageerrors/consoleerrors;review289PASS/public0failures2existingwarnings.",
+    "packagingCorrection": "Restored venue order with exact byte comparison (298records) and unchanged west-resort LOD bytes; no repeated bake.4changedruntimefiles2639272LFSbytes;276/278cellfilesincludingcollision/manifestsunchanged."
   },
   "installedReview": "Thin curved pale canopy visible at north forecourt, original shell/roof/ground retained. Elevated terrace/store/stairs remain absent. Exact canopy dimensions and incomplete support rhythm at mapped circulation retained as discrepancies."
 }
