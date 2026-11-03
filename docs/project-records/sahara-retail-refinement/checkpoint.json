@@ -1,7 +1,8 @@
 {
   "issue": 84,
   "base": "64e9574d1add56b58f1f87ceb98a912dc6ed30c3",
-  "stage": "Claim confirmed; reference survey and baseline",
+  "stage": "Final low-complexity script optimized and installed; matching captures running",
   "scope": "Five mapped neighboring retail/parking buildings; select supported improvements after visual survey. Preserve roads and all existing interiors.",
-  "pending": "Inspect matching baseline and Google/official imagery, choose reversible supported changes. No geometry edits or shared bake yet."
+  "pending": "Finish capture17271 (/tmp/sahara-retail-installed.log), inspect4PNGs and matching P95. Final level+WebP3.94\u21921.41MiB. Actual site walks and ONE shared bake/finalchecks still pending; no bake yet.",
+  "baselineReview": "All4baselinePNGs personally reviewed; P9519/19/18.7/19.3ms. Existing Bonanza text too small/straight, Walgreens block font; forecourt mismatch retained."
 }

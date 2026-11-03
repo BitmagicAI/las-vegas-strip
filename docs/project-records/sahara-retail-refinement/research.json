@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://earth.google.com/web/@36.1444,-115.1578,635a,180d,35y,310h,65t,0r",
+      "inspected": "Personally inspected rendered oblique; footer showed 2/3/2026.",
+      "observations": "Bonanza red round sign: large yellow BONANZA follows upper arc; GIFT, & SOUVENIR, SHOPS fill center. L-shaped canopy and open asphalt forecourt. Existing road-derived parking islands clearly differ."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.14425,-115.15615,638a,250d,35y,50h,65t,0r",
+      "inspected": "Personally inspected rendered oblique.",
+      "observations": "Walgreens rounded cream base, red cursive brand letters, billboard band and pink end pier. Garage and Paradise arcade massing visible."
+    },
+    {
+      "url": "https://www.walgreens.com/locator/walgreens-2427%2Bs%2Blas%2Bvegas%2Bblvd-las%2Bvegas-nv-89108/id%3D12271?reactjs=true",
+      "inspected": "Operator search result text corroborates store address; no operator photograph inspected."
+    },
+    {
+      "url": "https://www.worldslargestgiftshop.com",
+      "inspected": "Unavailable via web tool; not used as visual evidence."
+    },
+    {
+      "url": "https://lasvegasmagazine.com/entertainment/2020/dec/13/bonanza-gifts-souvenir-shops-las-vegas/",
+      "inspected": "2020 editorial text inspected; linked photograph returned404, not used as visual evidence."
+    }
+  ],
+  "scope": "Two-building sign refinement: original separately positioned Bonanza glyphs on upper arc and larger center lettering; Walgreens red script approximation using local font outlines. No reference image/mesh copied.",
+  "inferred": "Bonanza arc radius4.7m, angles140..40 degrees, glyph size1.45m; center type2/1.05/1.65m. Walgreens type1.55m. Existing sign disk and building dimensions retained.",
+  "limitations": "Generic font outlines approximate lettering, not exact logo reproduction. Parking/roads, billboard creative and full public onward access remain unchanged and unverified. Other three mapped buildings retain all geometry."
+}

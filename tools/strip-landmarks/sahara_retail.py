@@ -50,7 +50,9 @@ def exterior(B):
       F.box('sr-cream',(L/2,4.3,-.2),(L,1.7,.3))
       F.box('sr-billboard',(L/2,8.1,-.27),(L,4.9,.14))
       for y in [5.55,10.6,11.7]:F.box('silver',(L/2,y,-.38),(L,.1,.13))
-      if L>16:F.text('Walgreens',(L/2,4.05,-.42),1.35,'sr-red-stucco')
+      if L>16:
+       F.text('Walgreens',(L/2,4.05,-.42),1.55,'sr-red-stucco')
+       B.labels[-1]['letterStyle']='script'
       for x in np.arange(.2,L,4):F.box('silver',(x,8.1,-.36),(.04,4.9,.08))
      elif idx==3:
       # Long low retail arcade; higher north end is authored below.
@@ -70,7 +72,13 @@ def exterior(B):
    pts=[F.p(6.1*math.cos(a),10+6.1*math.sin(a),-.2) for a in np.linspace(0,math.tau,64,endpoint=False)]
    B.face('sr-red-stucco',pts);B.face('sr-red-stucco',[F.p(6.1*math.cos(a),10+6.1*math.sin(a),.15) for a in np.linspace(0,math.tau,64,endpoint=False)][::-1])
    F.path('sr-yellow',[(6.12*math.cos(a),10+6.12*math.sin(a),-.24) for a in np.linspace(0,math.tau,65)],.10,8)
-   for text,y,size in [('BONANZA',12.4,1.15),('GIFT',10.7,1.2),('& SOUVENIR',9.2,.72),('SHOPS',7.7,1.1)]:F.text(text,(0,y,-.28),size,'sr-yellow')
+   # Individually placed original type follows the sign's observed upper arc.
+   # Radius, type sizes and spacing are photographic estimates, not traced art.
+   for letter,angle in zip('BONANZA',np.linspace(140,40,7)):
+    a=math.radians(angle)
+    F.text(letter,(4.7*math.cos(a),10+4.7*math.sin(a),-.28),1.45,'sr-yellow')
+    B.labels[-1]['roll']=a-math.pi/2
+   for text,y,size in [('GIFT',11.1,2.0),('& SOUVENIR',9.2,1.05),('SHOPS',7.2,1.65)]:F.text(text,(0,y,-.28),size,'sr-yellow')
    for x in [-3,3]:F.box('sr-dark',(x,5.4,.2),(.18,3,.18))
   if idx==1:
    # Pink end pier at the Sahara corner seen beside the curved billboard band.
