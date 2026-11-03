@@ -4225,10 +4225,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Entry terrace/ramp route validation",
-    "Landscape and service apron",
-    "Exact signs/media displays",
-    "Route performance comparison"
+    "Raised entry terrace, paired stairs and Raider Image store remain absent: preliminary footprint conflicts with existing mapped circulation, which this pass preserves.",
+    "Landscape and service apron remain incomplete; canopy support rhythm omits columns where mapped road/sidewalk paths cross.",
+    "Exact signs/media displays and broad north glazing/frame remain approximate or missing.",
+    "Full-site arrival/raised terrace route validation remains; scoped canopy six-segment walk verified. South timing variability also occurs with original model; no universal60fps claim."
    ],
    "record": "tools/resort-blocks/allegiant-stadium.json",
    "buildings": [
@@ -4255,7 +4255,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/allegiant.py",
-     "tools/city-exteriors/test-allegiant.mjs"
+     "tools/city-exteriors/compare-allegiant-performance.py",
+     "tools/city-exteriors/install-allegiant-refinement.mjs",
+     "tools/city-exteriors/test-allegiant-canopy.mjs",
+     "tools/city-exteriors/test-allegiant.mjs",
+     "tools/strip-landmarks/allegiant_entry_canopy.py"
     ]
    },
    "acceptance": [

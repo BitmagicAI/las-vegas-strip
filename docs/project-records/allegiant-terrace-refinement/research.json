@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-02",
+  "base": "84fd854 origin/next",
+  "claim": "Issue65 assigned janiverse confirmed before edits",
+  "scope": "Two mapped stadium structures; entry terraces/circulation and contextual exterior refinement. Preserve roof, existing shell and roads.",
+  "state": "Scoped canopy verified; single bake staged, all step7 local checks passed. Full-site discrepancies retained.",
+  "sources": [
+    {
+      "url": "https://www.raiders.com/news/las-vegas-stadium-authority-unanimously-approves-funds-for-raiders-allegiant-stadium-renovation-project",
+      "date": "2026-09-02",
+      "evidence": "Operator says north entry redevelopment is proposed, construction expected Q3 2027 to end2028. Raised Hacienda connection/canopy renderings are future proposals, not evidence of present architecture."
+    },
+    {
+      "url": "https://www.allegiantstadium.com/assets/doc/Entrance-Maps_4000x2044-3e1720d955.pdf",
+      "evidence": "Official entrance map identified; visual review pending."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0922,-115.1833,19z/data=!3m1!1e3",
+      "evidence": "Aerial personally inspected: broad paved north forecourt, curved entrance canopy, narrow landscaped street edge and two white temporary tent rows. Acquisition date unavailable."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.0927,-115.1833&heading=180&pitch=5&fov=80",
+      "date": "2025-01",
+      "evidence": "Street View snapped36.0927867,-115.1833401, panoramaPeBwr2Hrkj5gFjVrKGtYEg. North glass aperture, black/silver framing, low entrance canopy, palms, planted retaining edge and crosswalk inspected."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09265,-115.1825&heading=210&pitch=0&fov=65",
+      "date": "2025-01",
+      "evidence": "Street View snapped36.0927554,-115.1825488, panorama2_KAFfiIaIsYOj3kZS0YbQ. Broadleaf trees behind low concrete planted edge, temporary tents, curved low entrance canopy. Do not confuse tents with permanent redevelopment."
+    },
+    {
+      "url": "https://www.raiders.com/photos/top-shots-best-photos-of-allegiant-stadium-inaugural-season-2020",
+      "date": "2020 season",
+      "provider": "Jason ORear / Las Vegas Raiders",
+      "evidence": "Official completed photos25 and26 personally inspected.25 southwest aerial shows facade ribbon shapes/roof membrane/service-edge geometry.26 north aerial shows broad raised central arrival terrace, paired broad stairs left/right, centered Raider Image store projecting forward below terrace, planted curved flank edges and low continuous curved North Entry canopy. Existing generator lacks these assemblies."
+    },
+    {
+      "url": "https://static.clubs.nfl.com/image/private/t_photogallery/f_auto/raiders/fdws216lhk3txwsfgkmh.jpg",
+      "evidence": "Direct official photo26 north terrace; visual reference only, no image committed."
+    }
+  ],
+  "decisions": [
+    "Use corroborated built entry configuration, not proposed2027\u201328 plaza."
+  ],
+  "next": "Merge PR476 into next, close65, pick next unclaimed area.",
+  "baselineReview": "All three neutral daylight captures inspected. Existing black oval shell, pale membrane, mapped paved/green approaches. North entry closed glass wall, tiny centered sign, no detailed stair/terrace assembly. P95 front19.5/south18.3/entry19.0ms. Elevated terrace baseline personally inspected: mapped paths and retaining blocks retained, no existing terrace assembly; terraceP95 20.7ms.",
+  "discrepancies": [
+    "Existing narrow upper glazing and crossing diagonal ribbons differ from broad north opening/curved frame in2020official+2025StreetView. Preserve discrepancy for explicit scoped correction; do not claim existing facade accurate.",
+    "North terrace elevation and store/canopy dimensions require inferred registration; reference photographs are not measured survey."
+  ],
+  "canopyStudy": "164m wide,6m deep curved roof inferred from official north photo and Jan2025 Street View; edge4.65m/crown5.07m.30thin supports;12omitted where mapped road/sidewalk clearance would be violated. Exact registration requires installed review.",
+  "terraceDecision": "Retain mapped circulation: preliminary raised terrace footprint intersects existing road/sidewalk network. Defer raised terrace/store/stairs rather than invent a disconnected elevated route or alter roads. Canopy pass leaves all ground geometry unchanged.",
+  "checks": {
+    "typecheck": "PASS",
+    "roofSupport": "5714samplesPASS",
+    "canopyHeadroom": "138route samplesPASS; does not assert ground support",
+    "optimization": "level7.65to2.20MiB; WebP pass complete; install--no-stage",
+    "collisionTriangles": 22658,
+    "performance": "Controlled optimized-only south pair installed28.6/original39.4msP95; bothimagesinspected/hashrestored. Originalalso slow, no persistent added-canopy regression. Initialoutliersretained,nospeedup/60fpsclaim.",
+    "movement": "SixcontinuoussegmentsPASS;bothendpointPNGsinspected. Endpoints face away from stadium; route crosses beneath canopy twice each direction. Not an interior/terrace access claim.",
+    "final": "Runtime1GLB0unoptimized;bakecurrent;pack1930present0missing/unoptimized;smoke9stops0failedrequests/pageerrors/consoleerrors;review289PASS/public0failures2existingwarnings.",
+    "packagingCorrection": "Restored venue order with exact byte comparison (298records) and unchanged west-resort LOD bytes; no repeated bake.4changedruntimefiles2639272LFSbytes;276/278cellfilesincludingcollision/manifestsunchanged."
+  },
+  "installedReview": "Thin curved pale canopy visible at north forecourt, original shell/roof/ground retained. Elevated terrace/store/stairs remain absent. Exact canopy dimensions and incomplete support rhythm at mapped circulation retained as discrepancies."
+}

@@ -1,0 +1,32 @@
+{
+  "changed": [
+    {
+      "path": "runtime-assets/baked/cells/cell--2_3.bin",
+      "bytes": 259851,
+      "sha256": "1c03656f3bbc13d941e31c453b70cdc13b8f95a29b6deed6d13bd31f39adbb75",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "8e1968056abe55a0704d4d84a23da200b4942f57017e45c5e57ab4c0463c8106",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/allegiantStadium-exterior-collision.bin",
+      "bytes": 58592,
+      "sha256": "8e3d4f2449a42bbcd29367cd8d71599a048e858d05cc74393ef94537860314ed",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/allegiantStadium-exterior.glb",
+      "bytes": 2307028,
+      "sha256": "d3e3691828cc46716bd23461fba423611b39925a524db9189ee11205273cc10b",
+      "lfs": true
+    }
+  ],
+  "newGitLfsBytes": 2639272,
+  "trackedCellFiles": 278,
+  "unchangedCellFiles": 276,
+  "packagingNote": "Single bake produced byte drift in unchanged Gold Coast/Wyndham LOD blocks. Restored their prior encoded blocks into combined LOD and repartitioned without recapture/simplification; both unchanged cells byte-identical. Venue builder ordering was corrected; reordered current JSON reproduces prior venues.bin exactly (298 records)."
+}
