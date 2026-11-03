@@ -1,0 +1,21 @@
+{
+  "status": "research-and-baseline",
+  "issue": 30,
+  "base": "f4a4994e3f3fc254cbfd157f83f4e2105f38da33",
+  "scope": "Select a contiguous group of at most ten existing pool pavilions after visual survey; preserve towers, water contours, roads and interiors. No geometry changes yet.",
+  "sources": [
+    {
+      "url": "https://pools.mgmresorts.com/mandalaybay",
+      "observed": "Operator distinguishes Mandalay Beach, W WET Deck, Moorea and Tailgate; do not conflate pool areas. Text reviewed; photographs pending."
+    },
+    {
+      "url": "https://mandalaybay.mgmresorts.com/en/nightlife/tailgate-beach-club.html",
+      "observed": "Operator describes current Tailgate venue with two premium bungalows and 25 cabanas. Its location and built appearance require visual corroboration before modeling."
+    }
+  ],
+  "remaining": [
+    "Google aerial/Street View and official photo inspection pending.",
+    "Matching baseline captures and performance pending.",
+    "All existing whole-block discrepancies retained."
+  ]
+}
