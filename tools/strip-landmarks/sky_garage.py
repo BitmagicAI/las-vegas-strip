@@ -33,6 +33,13 @@ def exterior(B):
     for z in [minz+1,maxz-6]:
      stripe=box(x,z,x+.08,z+4.7).intersection(pp.buffer(-.65))
      B.planar('skg-line',stripe,n*pitch+.08)
+   # Aerial survey shows a central double parking row on the broad roof.
+   # Bay dimensions are inferred (2.7 x 4.7m), not traced survey measurements.
+   # Clip paint to each retained roof level; no new collision or circulation claim.
+   paint_area=pp.buffer(-1.2).intersection(box(957,-2763,1007,-2753))
+   for x in np.arange(958,1007,2.7):
+    B.planar('skg-line',box(x,-2762.7,x+.08,-2753.3).intersection(paint_area),n*pitch+.08)
+   B.planar('skg-line',box(958,-2758.04,1007,-2757.96).intersection(paint_area),n*pitch+.08)
  # Solid stair tower on the south-east corner is raised above the parking roof.
  core=box(1010.4,-2742.5,1018.9,-2735.3).intersection(p)
  B.shell(core,0,50,'skg-sand',roof=False);B.planar('skg-deck',core,50,True)

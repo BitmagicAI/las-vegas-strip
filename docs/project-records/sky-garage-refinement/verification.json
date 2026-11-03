@@ -1,0 +1,13 @@
+{
+  "typecheck": "PASS",
+  "deckSupport": "207 samples PASS",
+  "walk": "8 actual roof segments PASS",
+  "daylight": "4 matched views personally inspected",
+  "review": "289 valid records",
+  "public": "0 failures, 3 existing warnings",
+  "optimizedRuntime": "1 changed GLB PASS",
+  "bake": "One bake; current; unrelated blocks restored byte-identically",
+  "assetPack": "1930 present;0 missing;0 unoptimized",
+  "smoke": "9 stops;0 errors",
+  "diff": "PASS"
+}
