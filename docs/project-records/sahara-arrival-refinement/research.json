@@ -1,0 +1,33 @@
+{
+  "status": "reference-and-baseline",
+  "issue": 36,
+  "base": "02420d2fa990a1f3981de73ece2d3a7178265af2",
+  "scope": "Refine existing arrival central ceiling/feature after matched daylight review. Preserve four mapped structures, guest modules, roads and existing circulation. No geometry changed yet.",
+  "references": [
+    {
+      "url": "https://mozdesigns.com/moz-projects/sahara-las-vegas/",
+      "provider": "column supplier",
+      "observed": "Text reviewed: ten tapered columns24ft tall, four round water-feature columns24in diameter34ft tall, four square display columns9ft7in by24ft. Exact display footprint interpretation remains uncertain."
+    },
+    {
+      "url": "https://mozdesigns.com/wp-content/uploads/2022/11/J3501_N86_cropped_1600x900.jpg",
+      "visuallyInspected": true,
+      "observed": "Four pale cylindrical supports under deep circular annular crown with dark reflective central inset above hanging cyan tubes. Wood diamond beams and black framed wall diamonds. Central inset does not show sky; do not assume open roof oculus."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1420,-115.1577,20z/data=!3m1!1e3",
+      "visuallyInspected": true,
+      "imageDate": null,
+      "observed": "Continuous pale elliptical roof membrane; no visible central opening. Aerial supports keeping closed roof, refining underside only. No imagery extracted."
+    },
+    {
+      "url": "https://anningjohnson.com/project/sahara-porte-corche/",
+      "observed": "Contractor text dates completion August2022 and identifies faux wood EIFS beams. Photos not inspected this pass."
+    }
+  ],
+  "remaining": [
+    "Matching baseline and installed review pending.",
+    "All prior SAHARA unresolved gaps retained.",
+    "Roof oculus wording conflicts with current aerial; interpret as underside circular inset pending review, not an open hole."
+  ]
+}
