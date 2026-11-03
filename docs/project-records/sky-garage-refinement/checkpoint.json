@@ -1,7 +1,8 @@
 {
   "issue": 69,
   "base": "2d6582a0ccb0d85efaf5e5670d09184774a279cc",
-  "stage": "Reference survey and matching baseline",
+  "stage": "Optimized rooftop paint installed; matching views and actual roof walks running",
   "constraints": "Preserve surrounding buildings, roads, interiors and existing decks. Exact circulation and facade dimensions require reference confirmation.",
-  "pending": "Inspect baseline and Google/official references, choose reversible supported geometry, optimize/install and verify. No geometry edits or shared bake yet."
+  "pending": "Finish capture/walk session80930, inspect all PNGs and matching timings, then ONE shared bake and all final checks. No shared bake yet.",
+  "scope": "40 original triangles added to existing skg-line batch; all other geometry, labels and collision identical."
 }
