@@ -110,5 +110,17 @@
     "tools/strip-landmarks/circus_circus.py": "58fdfc5213e3e59c0e6aa780171d7f9d68a946b1154399d90722b02e398639e7",
     "tools/strip-landmarks/circus_frontage.py": "eae4003624b4acae07d7e808075e7f759fe20d77102a7bf052946994f8dc488d",
     "src/work/PbrDetailSets.ts": "6d32ef81443f914f5051979892e96df2c55e2d56dfac4e1cecea537ec4aa23d7"
+  },
+  "frontageRefinement": {
+    "record": "docs/project-records/circus-block-refinement",
+    "buildings": {
+      "way/180250495": "Original pearl lamp rows and gold rails on Slots-A-Fun front fascia. Upper row raised to5.65m after installed overlap review; no added lights or collision.",
+      "way/180250447": "Original thin standing seams on existing yellow McDonalds dining roof. Existing planes and flat service roof retained."
+    },
+    "preservation": "Other mapped buildings, labels, collision, roads and interiors unchanged; source audit61\u219262groups.",
+    "visual": "Eight corrected daylight views personally inspected, exterior front first. Lamp row now clears lettering, roof seams visible. Stylized low-poly bulbs and estimated spacing, not precise facade reconstruction.",
+    "walk": "16 actual forward/return sidewalk segments passed; four endpoints inspected. Existing432motelstair/gallery support/headroom samples pass. Not full site or public interior traversal.",
+    "remaining": "All six existing whole-block discrepancies remain; this pass addresses only two facade/roof details.",
+    "performance": "Initial outliers retained. Motel three900-frame original trials19.6/33.5/21.2ms versus installed19.2/18.8/18.7ms demonstrate variance also on unchanged original. Corrected six broad views19/19.4/18.9/19.1/18.2/19.9ms; new roof-detail29ms outlier under longer paired investigation. No speedup/60fps claim."
   }
 }
