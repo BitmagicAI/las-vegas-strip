@@ -64,7 +64,7 @@ def frontage(B,ident,p,h):
       # Original low-poly marquee bulbs: the linked entrance photo shows
       # continuous pearl lamps along the fascia. Spacing/radii are inferred.
       # No scene lights or collision; existing door openings remain unchanged.
-      for yy,depth in [(4.3,.58),(5.3,.48)]:
+      for yy,depth in [(4.3,.58),(5.65,.48)]:
        F.box('cc-gold',(L/2,yy,-depth),(L,.055,.055))
        for u in np.arange(.25,L-.2,.32):
         r=.065;v=[F.p(u+r,yy,-depth-.05),F.p(u-r,yy,-depth-.05),F.p(u,yy+r,-depth-.05),F.p(u,yy-r,-depth-.05),F.p(u,yy,-depth-.05+r),F.p(u,yy,-depth-.05-r)]
