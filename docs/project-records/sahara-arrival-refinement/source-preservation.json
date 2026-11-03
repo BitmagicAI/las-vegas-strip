@@ -5,12 +5,17 @@
     [
       "saharaExterior-exterior",
       "sahara-arrival",
+      "sa-wood",
+      0
+    ],
+    [
+      "saharaExterior-exterior",
+      "sahara-arrival",
       "sa-champagne",
       0
     ]
   ],
   "collisionIdentical": true,
   "labelsIdentical": true,
-  "scope": "Existing roof/soffit, beams, towers, basin, pylon and ground retained; crown/inset and hanger tops only.",
-  "estimatedDimensions": "Existing radii 5.8m/4m retained; crown thickness0.30m, inset lower10.62m inferred from supplier image."
+  "scope": "Central crown/inset/hangers and exact beam clipping at existing5.8m crown radius only; surrounding roof, columns, basin, towers and pylon preserved."
 }

@@ -26,7 +26,7 @@
     }
   ],
   "remaining": [
-    "Matching installed capture and actual walk pending; no shared bake yet.",
+    "Corrected optimized installation captures and actual walk running; performance outlier not cleared. No shared bake yet.",
     "All prior SAHARA unresolved gaps retained.",
     "Roof oculus wording conflicts with current aerial; interpret as underside circular inset pending review, not an open hole."
   ],
@@ -46,6 +46,22 @@
     ],
     "finding": "Thin central ring has no depth; diamond beams visible through its center unlike supplier photograph. Existing arrival and fa\u00e7ade differences remain."
   },
-  "change": "Original closed0.30m deep circular crown and dark metallic central inset; hanging rods extended0.27m to inset. Retained original radii5.8m/4m, lower10.35m/upper10.65m; heights inferred. Closed exterior roof retained. No dynamic mirror pass or lights.",
-  "sourceAudit": "53 originalgroups\u219255; onlyoldsa-champagnearrivalgroupchanged;labelsandcollisionidentical. Newundersidefacesexplicitlyorienteddown."
+  "change": "Original closed0.30m deep circular crown and dark metallic central inset; hanging rods extended0.27m to inset. Retained original radii5.8m/4m, lower10.35m/upper10.65m; heights inferred. Closed exterior roof retained. No dynamic mirror pass or lights. Installed review correction clips only central beam segments against5.8m crown boundary; no beam geometry crosses inset.",
+  "sourceAudit": "53 originalgroups\u219255; onlyoldsa-champagnearrivalgroupchanged;labelsandcollisionidentical. Newundersidefacesexplicitlyorienteddown.",
+  "initialInstalledReview": {
+    "views": [
+      "front",
+      "arrival",
+      "canopy",
+      "feature"
+    ],
+    "allInspected": true,
+    "p95Ms": [
+      18.1,
+      18.9,
+      29,
+      19
+    ],
+    "finding": "Crown depth and dark inset visible; old ceiling beams cut through inset. Reject overlap and clip beams precisely to crown outer boundary. Canopy timing outlier29ms vs19.1 baseline requires corrected comparison before acceptance."
+  }
 }

@@ -30,15 +30,17 @@ def arrival(B):
  roof=scale(Point(CX,CZ).buffer(1,96),xfact=RX*.97,yfact=RZ*.97,origin=(CX,CZ))
  for direction in [-1,1]:
   for off in np.arange(-42,43,8):
-   line=LineString([(CX-50,CZ+off-direction*50),(CX+50,CZ+off+direction*50)]).intersection(roof)
-   if line.is_empty or line.geom_type!='LineString':continue
-   count=max(2,math.ceil(line.length/1.8));points=[line.interpolate(i/count,normalized=True) for i in range(count+1)]
-   for aa,bb in zip(points,points[1:]):
-    dx,dz=bb.x-aa.x,bb.y-aa.y;L=math.hypot(dx,dz);nx,nz=-dz/L*.18,dx/L*.18
-    A=[(aa.x-nx,ceiling(aa.x,aa.y)-.52,aa.y-nz),(aa.x+nx,ceiling(aa.x,aa.y)-.52,aa.y+nz)]
-    C=[(bb.x-nx,ceiling(bb.x,bb.y)-.52,bb.y-nz),(bb.x+nx,ceiling(bb.x,bb.y)-.52,bb.y+nz)]
-    B.face('sa-wood',[A[0],C[0],C[1],A[1]])
-    for k in range(2):B.face('sa-wood',[A[k],C[k],(C[k][0],C[k][1]+.50,C[k][2]),(A[k][0],A[k][1]+.50,A[k][2])])
+   line=LineString([(CX-50,CZ+off-direction*50),(CX+50,CZ+off+direction*50)]).intersection(roof.difference(Point(CX,CZ).buffer(5.8,48)))
+   segments=list(line.geoms) if hasattr(line,'geoms') else [line]
+   for line in segments:
+    if line.is_empty or line.geom_type!='LineString':continue
+    count=max(2,math.ceil(line.length/1.8));points=[line.interpolate(i/count,normalized=True) for i in range(count+1)]
+    for aa,bb in zip(points,points[1:]):
+     dx,dz=bb.x-aa.x,bb.y-aa.y;L=math.hypot(dx,dz);nx,nz=-dz/L*.18,dx/L*.18
+     A=[(aa.x-nx,ceiling(aa.x,aa.y)-.52,aa.y-nz),(aa.x+nx,ceiling(aa.x,aa.y)-.52,aa.y+nz)]
+     C=[(bb.x-nx,ceiling(bb.x,bb.y)-.52,bb.y-nz),(bb.x+nx,ceiling(bb.x,bb.y)-.52,bb.y+nz)]
+     B.face('sa-wood',[A[0],C[0],C[1],A[1]])
+     for k in range(2):B.face('sa-wood',[A[k],C[k],(C[k][0],C[k][1]+.50,C[k][2]),(A[k][0],A[k][1]+.50,A[k][2])])
  # Ten tapered wood-look column covers, 24ft tall, diameter3ft10in ->6ft.
  # Positions estimated from completed photos; each is outside the drive-through lanes.
  for i in range(10):
