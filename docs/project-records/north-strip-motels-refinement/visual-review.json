@@ -1,0 +1,46 @@
+{
+  "initialInstalledViewsInspected": [
+    "front",
+    "pool",
+    "aztec",
+    "circle-k",
+    "southern-shops",
+    "vacant-site"
+  ],
+  "result": "Rejected pool placement: west corner of coping meets gallery; shape clipped by footprint buffer. Other buildings visually unchanged.",
+  "baselineP95ms": [
+    20.6,
+    19,
+    19.2,
+    18.8,
+    20.2,
+    19.7
+  ],
+  "initialInstalledP95ms": [
+    19.1,
+    19.5,
+    19.2,
+    19,
+    18.8,
+    18.2
+  ],
+  "correction": "Shift original rectangular basin 4 m east to x=1557, preserving camera and all existing buildings. Require uncut rectangular plan and clearance from 1.7 m gallery projection. Retain initial rejected evidence.",
+  "correctedInstalledViewsInspected": [
+    "front",
+    "pool",
+    "aztec",
+    "circle-k",
+    "southern-shops",
+    "vacant-site"
+  ],
+  "correctedResult": "Rectangular water and complete coping visible, clear of gallery. Existing court paving/parking discrepancy retained. All four actual walk endpoint screenshots inspected; eight coping segments passed. No whole-court access claim.",
+  "correctedP95ms": [
+    28.2,
+    19.3,
+    19.2,
+    18.6,
+    18.4,
+    18.4
+  ],
+  "performanceFollowup": "Front outlier28.2ms versus baseline20.6ms; paired original/installed three trials running before bake."
+}

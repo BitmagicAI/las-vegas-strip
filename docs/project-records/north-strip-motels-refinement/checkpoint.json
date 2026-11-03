@@ -1,7 +1,7 @@
 {
   "issue": 85,
   "base": "850120d50b0a2a28b9648467361fad56e07b91c9",
-  "stage": "Claim confirmed; baseline and reference survey",
-  "scope": "Ten surviving mapped buildings and one obsolete footprint retained vacant. Select supported changes after visual survey; preserve roads/interiors.",
-  "pending": "Inspect six baseline views and current Google/official imagery, resolve tenant/chapel identity before geometry edits. No shared bake or source changes yet."
+  "stage": "Corrected visuals and actual coping walks passed; front timing followup running",
+  "scope": "Correct motel court pool and existing coping only. Other nine surviving mapped buildings and vacant El Mirador retained.",
+  "pending": "8288 original/installed paired three-front-view timing running, temporarily swaps optimized GLB and restores with hash assertion. Do not mutate assets or run another GPU job. Corrected six daylight views and four walk endpoints inspected;8 segments and58coping samples PASS. Initialfront28.2ms vs20.6baseline requires followup. Then ONE shared bake and packaging/smoke."
 }
