@@ -63,7 +63,8 @@
     "Convention hall30m survey-derivedheight is retained; stepped roof elevations need survey refinement.",
     "Closed service/anchor facades do not create new public interiors.",
     "Fine solar seams removed after installed aliasing review; fields are approximate, not individual panel survey.",
-    "Pool court now has mapped water, palms and furnishings; planting density, detailed pavilion materials and access graph remain incomplete."
+    "Pool court now has mapped water, palms and furnishings; planting density, detailed pavilion materials and access graph remain incomplete.",
+    "Nine north-lagoon cabana fabric colors/heights and exact gazebo number mapping are inferred; interior furnishings, fabric folds and dense planting remain incomplete. All other pool structures retained."
   ],
   "evidence": [
     "build/city-exteriors/mandalay-final",
@@ -78,7 +79,11 @@
     "build/city-exteriors/mandalay-deck-collision.json",
     "build/city-exteriors/mandalay-cabana-ownership-audit.json",
     "build/city-exteriors/mandalay-pool-path-cut.json",
-    "build/city-exteriors/mandalay-canopies-2026-10-19"
+    "build/city-exteriors/mandalay-canopies-2026-10-19",
+    "docs/project-records/mandalay-pavilion-refinement/research.json",
+    "docs/project-records/mandalay-pavilion-refinement/source-preservation.json",
+    "build/city-exteriors/mandalay-refinement-baseline",
+    "build/city-exteriors/mandalay-refinement-installed"
   ],
   "geometry": {
     "triangles": 18228,
@@ -87,7 +92,7 @@
     "blockedSamples": 0,
     "compressedMiB": 0.5
   },
-  "currentPass": "Pool/pavilion pass installed and visually reviewed; outstanding full-site details retained.",
+  "currentPass": "Nine north-lagoon cabanas have optimized original fabric valances/screens/tied curtains installed; matching daylight reviewed. Walking and final packaging gates pending; full-site refinement remains deferred.",
   "performance": {
     "viewport": "1280x720",
     "medianMs": 16.7,
@@ -491,5 +496,29 @@
         "p95": 18
       }
     ]
+  },
+  "cabanaRefinement20261103": {
+    "structures": 9,
+    "beforeP95Ms": [
+      21,
+      18.8,
+      19.4,
+      20.1
+    ],
+    "afterP95Ms": [
+      18.5,
+      18.9,
+      19.1,
+      18.8
+    ],
+    "views": [
+      "front",
+      "pool-court",
+      "pavilions",
+      "four-seasons"
+    ],
+    "visualReview": "All four inspected; tan screens/valances visible, open front retained; tower/water/other roofs preserved. Simplified fabric and empty cabanas remain explicit.",
+    "walking": "pending",
+    "sharedBake": "not started"
   }
 }
