@@ -1,0 +1,13 @@
+{
+  "typecheck": "PASS",
+  "support": "41roof+1floor PASS",
+  "actualWalk": "8segments PASS;4endpoint captures inspected",
+  "daylight": "5matched corrected views inspected",
+  "review": "289valid records",
+  "public": "0failures4existing warnings",
+  "runtime": "1changedGLB optimized",
+  "bake": "ONE bake, current; unrelated blocks restored",
+  "assetPack": "1930present0missing0unoptimized",
+  "smoke": "9stops0errors",
+  "diff": "PASS"
+}
