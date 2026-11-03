@@ -503,6 +503,14 @@ def add(name):
      else:uv.data[li].uv=(p.y/2,p.z/2) if axis==0 else (p.x/2,p.z/2) if axis==1 else (p.x/2,p.y/2)
  for t in data['labels']:
   cu=bpy.data.curves.new(t['text'],'FONT');cu.body=t['text'];cu.align_x='CENTER';cu.size=t['size'];cu.extrude=.008;cu.bevel_depth=.002;cu.bevel_resolution=1;cu.materials.append(material(t['material']));o=bpy.data.objects.new(t['text'],cu);bpy.context.collection.objects.link(o);x,y,z=t['position'];o.location=(x,-z,y);o.rotation_euler=(math.pi/2,0,-t['yaw']+math.pi);o['property']=name.split('-')[0];o['source']=t['source'];o['detail']=t.get('detail',1)
+  # Optional authored label styling; absent fields preserve every existing label.
+  if t.get('roll'):
+   from mathutils import Matrix
+   o.rotation_euler=(o.rotation_euler.to_matrix().to_4x4() @ Matrix.Rotation(t['roll'],4,'Z')).to_euler()
+  if t.get('letterStyle')=='script':
+   cu.resolution_u=3;cu.bevel_depth=0
+   fp=Path('/System/Library/Fonts/Supplemental/SnellRoundhand.ttc')
+   if fp.exists():cu.font=bpy.data.fonts.load(str(fp),check_existing=True)
   if t['material'] in ['wm-gold-letter','wm-screen-letter']:
    if t['material']=='wm-gold-letter':
     fp=Path('/System/Library/Fonts/Supplemental/SnellRoundhand.ttc')

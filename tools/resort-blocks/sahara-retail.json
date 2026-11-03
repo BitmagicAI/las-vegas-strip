@@ -63,5 +63,12 @@
   "canopyIntegration20261021": {
     "change": "Restaurant south glazing enabled beneath new canopy; obsolete small yellow arches removed. Other retail geometry retained.",
     "evidence": "tools/resort-blocks/mcdonalds-sahara-canopy.json"
+  },
+  "refinement20261103": {
+    "scope": "Bonanza arc and enlarged center lettering, Walgreens red cursive approximation; other three buildings unchanged.",
+    "research": "docs/project-records/sahara-retail-refinement/research.json",
+    "review": "docs/project-records/sahara-retail-refinement/corrected-review.json",
+    "remainingReasons": "Exact custom lettering and advertising artwork need further source comparison; generic outlines remain approximate. Road-derived forecourt islands preserved under road constraint. Public onward access still needs broader route validation.",
+    "collision": "Source collision and all non-label geometry identical;41roof and1floor support samples pass."
   }
 }

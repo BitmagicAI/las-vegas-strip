@@ -1,0 +1,22 @@
+{
+  "review": "All five corrected installed daylight views personally inspected plus original Walgreens detail. BONANZA now reads left-to-right with tangent glyph rotation; center lettering fits inside retained disk. Walgreens script fits the fascia without glazing overlap. Other three mapped buildings retain appearance.",
+  "limitations": "Generic script approximates the red cursive sign; exact letterforms, original bulb detailing, billboard campaign graphics, forecourt parking/road islands and onward public access remain unresolved. No whole-block or photorealistic claim.",
+  "pairedP95ms": {
+    "original": [
+      20.6,
+      19,
+      19.2,
+      18.6,
+      18.3
+    ],
+    "installed": [
+      19,
+      19,
+      19.2,
+      18.8,
+      19.3
+    ]
+  },
+  "interpretation": "Matched five cameras and optimized-only asset swap, hashes restored. Largest positive difference1ms at close Walgreens view; no sustained speedup claim.",
+  "walk": "Eight actual frontage walking segments PASS; all four endpoint PNGs personally inspected. No shop-interior or full onward route pass claimed."
+}
