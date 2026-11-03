@@ -21,7 +21,7 @@
   ],
   "identity": "Wyndham Grand Desert: mapped west tower and both adjoining L-shaped towers in relation/6138879",
   "remaining": [
-    "Courtyard landscape, third pool and furniture",
+    "Courtyard landscape, hot tubs, furniture and exact pool/deck outlines remain; three estimated basins now authored from reference-supported layouts.",
     "Ground public entrances and onward connections",
     "Exact tower height assignment and roof cap fit",
     "Route performance"
@@ -61,5 +61,14 @@
     "typecheck": "passed",
     "localWebGPU": "passed57fps spawn3011bodies; not route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-grand-desert.log"
+  },
+  "poolRefinement": {
+    "date": "2026-11-03",
+    "record": "docs/project-records/grand-desert-refinement",
+    "change": "Freeform/lap pools in northern eastern courtyard and small separate west-tower pool. Three tower/crown groups and arrival geometry unchanged. All pool dimensions inferred.",
+    "visualReview": "Five final matched daylight views inspected before/after; no tower or road replacement. Sparse courtyard landscape and pool enclosure remain incomplete.",
+    "support": "1741 pool deck/coping triangle samples and92 roof samples PASS.",
+    "optimization": "17.54\u21924.22MiB; WebP variant invoked, no source images to encode.",
+    "pending": "Actual deck walks running, then ONE shared bake and final runtime/packaging/smoke checks."
   }
 }

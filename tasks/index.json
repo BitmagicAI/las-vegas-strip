@@ -4627,7 +4627,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Courtyard landscape, third pool and furniture",
+    "Courtyard landscape, hot tubs, furniture and exact pool/deck outlines remain; three estimated basins now authored from reference-supported layouts.",
     "Ground public entrances and onward connections",
     "Exact tower height assignment and roof cap fit",
     "Route performance"
@@ -4656,7 +4656,10 @@
      "tools/resort-blocks/harmon-tower.json"
     ],
     "builders": [
+     "tools/city-exteriors/test-grand-desert-pools.mjs",
      "tools/city-exteriors/test-grand-desert.mjs",
+     "tools/city-exteriors/install-grand-desert-refinement.mjs",
+     "tools/strip-landmarks/export_grand_desert_refinement.py",
      "tools/strip-landmarks/grand_desert.py"
     ]
    },
