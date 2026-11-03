@@ -1,0 +1,73 @@
+{
+  "status": "installed-verified-scoped-refinement",
+  "issue": 30,
+  "base": "f4a4994e3f3fc254cbfd157f83f4e2105f38da33",
+  "scope": "Nine existing north-lagoon mapped cabanas: 399554413,417,437,441,415,421,439,436,438. Existing positions/heights retained; original thin fabric valances, rear/side screens and tied front curtains. Palette tan inferred; reference photograph date and exact gazebo-to-OSM correspondence unconfirmed.",
+  "sources": [
+    {
+      "url": "https://pools.mgmresorts.com/mandalaybay",
+      "observed": "Operator distinguishes Mandalay Beach, W WET Deck, Moorea and Tailgate; do not conflate pool areas. Text reviewed; photographs pending."
+    },
+    {
+      "url": "https://mandalaybay.mgmresorts.com/en/nightlife/tailgate-beach-club.html",
+      "observed": "Operator describes current Tailgate venue with two premium bungalows and 25 cabanas. Its location and built appearance require visual corroboration before modeling."
+    },
+    {
+      "url": "https://thelibrary.mgmresorts.com/transform/YchPXM3aN31/MAN121313437.tif",
+      "provider": "MGM official Beach page Cabanas image",
+      "accessDate": "2026-11-03",
+      "imageDate": null,
+      "visuallyInspected": true,
+      "observed": "Lazy-river row has blue peaked fabric canopies and umbrellas, beige vertically striped rear screens, tied curtains and blue tubular-frame loungers. This is a distinct pool location; do not apply blue throughout."
+    },
+    {
+      "url": "https://thelibrary.mgmresorts.com/transform/uBHcOVhDrK01/MAN121312833.tif",
+      "provider": "MGM official Beach page Gazebos image",
+      "accessDate": "2026-11-03",
+      "imageDate": null,
+      "visuallyInspected": true,
+      "observed": "Lagoon Gazebo 38/39 labels; tan and rust fabric roof valances, full rear screens, tied side curtains on pale square posts; red tubular loungers and round side tables. No image stored in repository."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0907,-115.1758,20z/data=!3m1!1e3",
+      "provider": "Google Maps aerial",
+      "accessDate": "2026-11-03",
+      "imageDate": null,
+      "visuallyInspected": true,
+      "observed": "North/east lagoon edge follows curved line of pale/greenish small pitched cabanas with dense palms and loungers; separate elevated angular basin southeast. Visual comparison only; no imagery/geometry extracted."
+    }
+  ],
+  "remaining": [
+    "All required local checks passed; whole-block discrepancies retained.",
+    "Inspect installed geometry and route before acceptance; retain all whole-block gaps.",
+    "Street View cannot show enclosed pool court from public streets; Google aerial and operator pool photos support this scope.",
+    "Exact gazebo numbers, fabric color for each footprint and dates are unconfirmed; dimensions inferred."
+  ],
+  "baselineReview": {
+    "inspected": [
+      "front",
+      "pool-court",
+      "pavilions",
+      "four-seasons"
+    ],
+    "observed": "Existing bare pale canopy frames lack fabric valance/screens; pool paving and previous circulation retained. Four Seasons view mostly roof, not interior evidence.",
+    "timings": "baseline-performance.json"
+  },
+  "localChecks": {
+    "arrival": 123,
+    "pool": 386,
+    "deck": 1213,
+    "result": "all samples passed",
+    "typecheck": "passed",
+    "public": "0 failures, 2 existing chapel-email warnings",
+    "review": "passed"
+  },
+  "installation": {
+    "sourceMiB": 20.49,
+    "optimizedMiB": 6.45,
+    "variant": "level then webp-textures",
+    "collisionTriangles": 11068,
+    "sharedBake": "ONE completed",
+    "note": "Initial backup omitted absent source JSON; GLB was saved successfully. Builder ran before setup finished and appended venue record. Restored order from unchanged venues.bin, then fixed builder to replace in-place. No shared bake occurred."
+  }
+}

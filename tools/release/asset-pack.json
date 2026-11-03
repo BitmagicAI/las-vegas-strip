@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204294319,
+ "bytes": 1204362158,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -96,8 +96,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_3.bin",
-   "bytes": 345926,
-   "sha256": "e28474ee4ba63356b65dd38d79b5bca618f5959e2c4a42289548e96aecdf9307",
+   "bytes": 346429,
+   "sha256": "b90907a43ffda12e96b3f073e17610e69887dd5b83640cffd72e4d2bc3679d16",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "8e1968056abe55a0704d4d84a23da200b4942f57017e45c5e57ab4c0463c8106",
+   "sha256": "3b29cc8cabe74c4351fa103a831647b4beec41569a007df7754e5235c11eb590",
    "kind": "runtime cell manifest"
   },
   {
@@ -9450,8 +9450,8 @@
   },
   {
    "path": "build/strip-landmarks/mandalayExterior-exterior.glb",
-   "bytes": 6696128,
-   "sha256": "6847cd038dc6aecad196e9f7164046bd0d9a709d308b3e389533503342b0c640",
+   "bytes": 6763464,
+   "sha256": "899330f69a816cb8c341d158242bca12a338c521ef174f29a58a2ccf14acb0ed",
    "kind": "optimized"
   },
   {

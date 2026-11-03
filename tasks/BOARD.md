@@ -37,7 +37,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-mgm-grand` | S | P1 | 0 | Refine the exterior of MGM Grand |
 | `ext-park-mgm` | M | P1 | 5 | Refine the exterior of Park MGM |
 | `ext-luxor` | M | P1 | 4 | Refine the exterior of Luxor |
-| `ext-mandalay-bay` | L | P1 | 6 | Refine the exterior of Mandalay Bay / W |
+| `ext-mandalay-bay` | L | P1 | 7 | Refine the exterior of Mandalay Bay / W |
 | `ext-new-york` | M | P1 | 4 | Refine the exterior of New York–New York |
 | `ext-excalibur` | M | P1 | 5 | Refine the exterior of Excalibur |
 | `ext-fontainebleau` | M | P1 | 5 | Refine the exterior of Fontainebleau |

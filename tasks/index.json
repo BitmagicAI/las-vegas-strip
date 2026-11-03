@@ -1735,14 +1735,15 @@
    "size": "L",
    "priority": "P1",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 7 known gaps are recorded.",
    "items": [
     "Tower crown and signage remain approximate; exact measurements unavailable.",
     "Side/service frontage and garage detailing remain incomplete.",
     "Convention hall30m survey-derivedheight is retained; stepped roof elevations need survey refinement.",
     "Closed service/anchor facades do not create new public interiors.",
     "Fine solar seams removed after installed aliasing review; fields are approximate, not individual panel survey.",
-    "Pool court now has mapped water, palms and furnishings; planting density, detailed pavilion materials and access graph remain incomplete."
+    "Pool court now has mapped water, palms and furnishings; planting density, detailed pavilion materials and access graph remain incomplete.",
+    "Nine north-lagoon cabana fabric colors/heights and exact gazebo number mapping are inferred; interior furnishings, fabric folds and dense planting remain incomplete. All other pool structures retained."
    ],
    "record": "tools/resort-blocks/mandalay-bay.json",
    "buildings": [
