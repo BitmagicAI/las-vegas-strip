@@ -5,6 +5,20 @@ KEY='grandDesert';IDS=['way/1226448921','relation/6138879']
 def hip(B,x,z,w,d,y,rise):
  c=[(x-w/2,y,z-d/2),(x+w/2,y,z-d/2),(x+w/2,y,z+d/2),(x-w/2,y,z+d/2)];r=[(x-w*.15,y+rise,z),(x+w*.15,y+rise,z)]
  for pts in [[c[0],c[1],r[1],r[0]],[c[1],c[2],r[1]],[c[2],c[3],r[0],r[1]],[c[3],c[0],r[0]]]:B.upface('gd-tile',pts,True)
+def pool_plans():
+ # Original layouts inferred from Earth and contractor photos; not traced/surveyed.
+ freeform=unary_union([
+  scale(Point(1055,966).buffer(1,20),7.5,7,origin=(1055,966)),
+  scale(Point(1056,975).buffer(1,20),5.5,10,origin=(1056,975)),
+  scale(Point(1057,981).buffer(1,20),7.5,7,origin=(1057,981)),
+ ])
+ lap=box(1078,963.5,1092,990.5)
+ # Shallow concave corner entries, rather than an ellipse.
+ for x in [1078,1092]:
+  for z in [963.5,990.5]:lap=lap.difference(Point(x,z).buffer(1.8,12))
+ west=scale(Point(976,1044).buffer(1,24),8,4.5,origin=(976,1044))
+ return [('courtyard-freeform',freeform),('courtyard-lap',lap),('west-tower',west)]
+
 def exterior(B):
  B.property=KEY+'-exterior';B.source='grand-desert';B.detail=0
  east=list(parts(footprint(IDS[1])));east.sort(key=lambda p:p.centroid.y)
@@ -48,8 +62,9 @@ def exterior(B):
  for xx in [x-6,x+6]:F.box('gd-gray',(xx,2.33,-8.8),(.7,4.66,.7),True)
  F.text('WYNDHAM GRAND DESERT',(x,4.55,-10.2),.38,'gd-sign')
  # Courtyard pools and paved surrounds observed between the two eastern wings.
- for x,z,rx,rz in [(1060,982,10,14),(1082,1010,11,7)]:
-  pool=scale(Point(x,z).buffer(1,24),rx,rz,origin=(x,z));deck=pool.buffer(4)
+ for name,pool in pool_plans():
+  assert pool.buffer(1).distance(unary_union([footprint(i) for i in IDS]))>2, name+' must clear towers'
+  deck=pool.buffer(3)
   B.planar('gd-paving',deck.difference(pool),.28,True);B.planar('gd-coping',pool.buffer(.45).difference(pool),.36,True)
   B.planar('grand_desert_pool',pool,.20);B.planar('gd-pool-tile',pool,-1.1,True)
   ring=list(pool.exterior.coords)

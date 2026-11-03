@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204309801,
+ "bytes": 1204321110,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -390,8 +390,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_1.bin",
-   "bytes": 257219,
-   "sha256": "a7135dbba7a3c6781578350757630102693c67122887c30fa7d65ce6b57da0f3",
+   "bytes": 257560,
+   "sha256": "4142d5c806c9d2e5be0ee24e875cfcdae4fc5db09c504c818a39c644e2518803",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "cb394e71928053f7b06e323ef4ef455cc4f4b44b00d3a5e3f9328f2e7d152d00",
+   "sha256": "d42100dbbcff7798b7a77b10d94873d6f01a93ce1eb65f61d8982965895cfd42",
    "kind": "runtime cell manifest"
   },
   {
@@ -8652,14 +8652,14 @@
   },
   {
    "path": "build/strip-landmarks/grandDesert-exterior-collision.bin",
-   "bytes": 7632,
-   "sha256": "cc3d415515a6d0fc5929c19dfa2c487b8834e4bdf8dc2aa0d4c81a4e6da8b749",
+   "bytes": 10644,
+   "sha256": "ca91033177879d440faa8d949413572fc4699c1559059f7e171372c753d81e3c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/grandDesert-exterior.glb",
-   "bytes": 4419632,
-   "sha256": "d1616ed770cca78ffc472072989ee74c4af737baabafc10fd15aad5583fab8ff",
+   "bytes": 4427588,
+   "sha256": "53c25bf0f92c11bde9feb281a30ab271e8217715df874e1dd5e230e2e7a5d782",
    "kind": "optimized"
   },
   {

@@ -1,0 +1,27 @@
+{
+  "views": [
+    "front",
+    "back",
+    "entry",
+    "courtyard",
+    "west-pool"
+  ],
+  "baselineAndInstalledInspected": true,
+  "findings": "Freeform and lap pools now occupy northern courtyard, with separate west-tower pool. All tower/crown/arrival geometry unchanged. Basin shapes and dimensions are estimates. Sparse garden, enclosure, hot tubs, furniture and full site access remain unresolved.",
+  "baselineP95ms": [
+    27.5,
+    18,
+    20,
+    19.3,
+    20
+  ],
+  "installedP95ms": [
+    20.1,
+    18,
+    19.5,
+    19.2,
+    19.3
+  ],
+  "performanceLimit": "Baseline front27.5ms outlier; no speedup claim. Other matching views within0.7ms.",
+  "optimization": "Level PASS17.54\u21924.22MiB. WebP variant invoked; source has no images so same level result used."
+}
