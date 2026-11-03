@@ -1,0 +1,13 @@
+{
+  "views": [
+    "front",
+    "arrival",
+    "canopy",
+    "feature"
+  ],
+  "allPersonallyInspected": true,
+  "findings": "Closed crown and dark inset visible; central beam overlap removed. Outer roof, towers and approach retained. Dark inset is a static metallic approximation, not a real reflection.",
+  "walk": "12 forward/return west-arc segments passed; both endpoint captures inspected. Return camera looks toward retained ramp edge; no full-site traversal claim.",
+  "performance": "Matching P95 baseline 18.2/18.5/19.1/19.7 ms, corrected 19/17.7/19/19 ms. Initial canopy 29 ms outlier retained; not reproduced in corrected run, cause unproven. No speedup or 60fps claim.",
+  "pending": "One shared bake running; packaging and final step 7 checks remain."
+}
