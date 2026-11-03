@@ -38,7 +38,7 @@
       "way/1226448921",
       "relation/6138879"
     ],
-    "triangles": 275002,
+    "triangles": 275963,
     "batches": 14,
     "tests": "92 tower/crown roof support samples passed."
   },
@@ -53,8 +53,8 @@
   },
   "finalBuild": {
     "files": {
-      "tools/strip-landmarks/grand_desert.py": "633c9da4115f674a4ca89c80bc661290e76d925cac61295c402be56296406edd",
-      "build/optimized/build/strip-landmarks/grandDesert-exterior.glb": "d1616ed770cca78ffc472072989ee74c4af737baabafc10fd15aad5583fab8ff"
+      "tools/strip-landmarks/grand_desert.py": "8bfd57013ec69b975ee1bcdc65edfc55ea92854bb2ba193a21d9d3d956da8b5e",
+      "build/optimized/build/strip-landmarks/grandDesert-exterior.glb": "53c25bf0f92c11bde9feb281a30ab271e8217715df874e1dd5e230e2e7a5d782"
     }
   },
   "verification": {
@@ -69,6 +69,6 @@
     "visualReview": "Five final matched daylight views inspected before/after; no tower or road replacement. Sparse courtyard landscape and pool enclosure remain incomplete.",
     "support": "1741 pool deck/coping triangle samples and92 roof samples PASS.",
     "optimization": "17.54\u21924.22MiB; WebP variant invoked, no source images to encode.",
-    "pending": "Actual deck walks running, then ONE shared bake and final runtime/packaging/smoke checks."
+    "pending": "All local checks passed; ready for merge to next."
   }
 }

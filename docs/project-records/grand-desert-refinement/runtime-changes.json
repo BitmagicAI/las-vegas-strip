@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_1.bin",
+      "bytes": 257560,
+      "sha256": "4142d5c806c9d2e5be0ee24e875cfcdae4fc5db09c504c818a39c644e2518803"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "d42100dbbcff7798b7a77b10d94873d6f01a93ce1eb65f61d8982965895cfd42"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/grandDesert-exterior-collision.bin",
+      "bytes": 10644,
+      "sha256": "ca91033177879d440faa8d949413572fc4699c1559059f7e171372c753d81e3c"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/grandDesert-exterior.glb",
+      "bytes": 4427588,
+      "sha256": "53c25bf0f92c11bde9feb281a30ab271e8217715df874e1dd5e230e2e7a5d782"
+    }
+  ],
+  "newLfsBytes": 4709593,
+  "unchangedLodCellBins": 91,
+  "totalLodCellBins": 92
+}
