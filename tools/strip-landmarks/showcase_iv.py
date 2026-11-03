@@ -13,6 +13,16 @@ def curtain(F,L,lo,hi,metal='ph-metal'):
  for y in np.arange(lo+2.2,hi,2.2):F.box('ph-silver',(L/2,y,-.16),(L,.045,.10))
  for y in [lo,hi]:F.box(metal,(L/2,y,-.26),(L,.28,.44))
 
+def picnic(B,x,z,y,angle=0):
+ F=Frame(B,x,z,angle,y=y)
+ F.box('walnut',(0,.76,0),(2.0,.09,.85))
+ for side in [-1,1]:
+  F.box('walnut',(0,.45,side*.7),(2.0,.08,.32))
+  for xx in [-.65,.65]:
+   F.tube('steel',(xx,.06,side*.83),(xx,.72,side*.26),.035,6)
+ F.tube('steel',(-.65,.3,0),(.65,.3,0),.035,6)
+
+# Showcase dining is separate: BLVD still imports the original picnic helper.
 def dining(B,x,z,y,angle=0):
  # Operator rooftop photo: individual timber chairs, not attached picnic benches.
  # Dimensions and cluster positions are inferred; furniture is visual detail only.
