@@ -20,6 +20,10 @@ def exterior(B):
    G.box('tf-gold',(L*.82,3.3,-.2),(L*.34,1.05,.1))
    G.box('tf-black',(L*.82,3.3,-.27),(L*.31,.75,.04))
    G.text('TATTOO',(L*.82,3.25,-.31),.65,'tf-letter')
+   # Original narrow base strips beneath the tattoo storefront advertising.
+   for u in np.arange(L*.66,L*.98,.18):
+    if abs(u-L*.84)<.66:continue
+    G.box('tf-maroon',(u,.68,-.29),(.065,.42,.035))
    G.text('NEW LIFE',(L*.35,3.28,-.22),.68,'tf-green')
    for u in np.arange(2,L-1,3.1):
     G.box('tf-frame',(u,1.6,-.12),(2.65,2.45,.1));G.box('tf-cream-stucco' if 5<u<21 else 'tf-glass',(u,1.6,-.2),(2.5,2.3,.06))

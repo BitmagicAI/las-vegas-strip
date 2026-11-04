@@ -33,7 +33,12 @@ def exterior(B):
    for u,w in [(L*.22,2.0),(L*.94,.45)]:
     G.box('bp-frame',(u,1.75,-.09),(w+.15,1.4,.1));G.box('bp-glass',(u,1.75,-.17),(w,1.25,.04));G.box('bp-frame',(u,1.75,-.22),(.045,1.3,.04))
    G.box('bp-red',(L*.23,3.7,-.1),(2.8,1.1,.1));G.box('bp-sign',(L*.23,3.7,-.17),(2.65,.95,.03))
-   G.text('BOSTON PIZZA',(L*.23,3.65,-.2),.21,'bp-red-letter');G.text('385-2595',(L*.23,3.97,-.2),.3,'bp-black')
+   G.text('385-2595',(L*.23,3.98,-.2),.30,'bp-black')
+   G.text('OPEN UNTIL 3AM',(L*.23,3.72,-.2),.17,'bp-red-letter')
+   G.text('WE DELIVER',(L*.23,3.49,-.2),.17,'bp-red-letter')
+   G.text('PIZZA - PASTA - SANDWICHES',(L*.23,3.30,-.2),.12,'bp-black')
+   G.box('bp-black',(L*.22,1.93,-.24),(1.3,.48,.025))
+   G.text('OPEN',(L*.22,1.89,-.27),.26,'bp-red-letter')
    G.text('1507',(L*.85,4.35,-.1),.24,'bp-red-letter')
    for u in [1,L-1]:
     G.tube('bp-metal',(u,4.9,0),(u,5.3,-.55),.025,8);G.box('bp-light',(u,5.25,-.55),(.32,.15,.22))

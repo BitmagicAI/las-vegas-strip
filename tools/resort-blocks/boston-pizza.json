@@ -10,23 +10,41 @@
     {
       "url": "https://bostonpizzavegas.com/location/",
       "observed": "Official address1507SBlvd, north of Stratosphere."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9r4gKK6qdAx0o9hbFGDKqw&heading=90&pitch=0&fov=80",
+      "date": "Jan2026",
+      "observed": "Re-inspected Boston frontage. South wing framed sign reads385-2595,OPEN UNTIL3AM,WE DELIVER,PIZZA-PASTA-SANDWICHES; window has OPEN lettering. Existing mainfascia text/steppedstucco broadlycorrect. No rear view."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9r4gKK6qdAx0o9hbFGDKqw&heading=280&pitch=0&fov=80",
+      "date": "Jan2026",
+      "observed": "Travelers frontage re-inspected; tattoo bay has maroon/cream narrow vertical base strips beneath advertising and yellow text; green upper projecting horizontal trim. Temporary scaffolding and palms obscure part of facade. Rear notvisible."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1531,-115.1514,415m/data=!3m1!1e3",
+      "observed": "Satellite inspected: angled boulevard, small east storefront with south parking, west L-plan aroundrear court. Imagerycapturedate notexposed; retain existing mappedfootprints."
     }
   ],
   "remaining": [
     "Facade height estimated",
     "Current advertising omitted or abstracted",
-    "Rear facade not seen"
+    "Rear facade not seen",
+    "Full-site landscaping and precise surveyed dimensions remain unresolved; this pass addresses only visible storefront details."
   ],
   "evidence": {
-    "views": "build/city-exteriors/boston-pizza-final",
+    "views": "docs/project-records/north-strip-small-frontages/views.md",
     "support": "build/city-exteriors/boston-pizza-collision.json",
     "walk": "build/city-exteriors/boston-pizza-walk.json",
     "ownership": "build/city-exteriors/boston-pizza-ownership-audit.json",
-    "visualReview": "All three installed views inspected; reversed fascia text order corrected and final front rechecked. Ground windows/doors and stepped frontage match broad layout. Detailed painted graphics and rough stucco need refinement."
+    "visualReview": "All three installed views inspected; reversed fascia text order corrected and final front rechecked. Ground windows/doors and stepped frontage match broad layout. Detailed painted graphics and rough stucco need refinement.",
+    "refinement": "docs/project-records/north-strip-small-frontages",
+    "refinementDescription": "Framed south-wing sign wording and OPEN window panel reconstructed in original geometry from Jan2026 StreetView. Current official3:30AMhours differ from pictured3AMsign; preserved as depicted historicalsign, not businesshours advice.",
+    "installedWalk": "docs/project-records/north-strip-small-frontages/after-installed-walk.json"
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/bostonPizza-exterior.glb": "a1848c78906be1b73bca44ed3de2002e4ecb8cb2176f488a0145d469b579343a",
+      "build/strip-landmarks/bostonPizza-exterior.glb": "b68a6e74f234b85702aa4f0366ac9fe0302b3c51a75ad4fd35ef238b42315658",
       "build/strip-landmarks/bostonPizza-exterior-collision.json": "697dc658bb6dabf0197f17bccb460e9ced574ca4d1f2fed282b94ed6158fabb0"
     }
   }
