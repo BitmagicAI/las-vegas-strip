@@ -1,7 +1,21 @@
 {
   "issue": 102,
   "base": "f65a541aa9220beb4202840a15ca76483bd9da2f",
-  "stage": "Claim confirmed; inspect current installed portals before source edits",
-  "pending": "Read latest Harmon bridge/atrium records and source, capture matched front-first baseline, research owner current images and plan. Existing open-harmon-bridge-portals.py and stair-harmon-east-lift.mjs may supersede stale remaining list. Preserve unrelated Planet Hollywood geometry and installed passages.",
-  "previous": "BLVD487 merged; issue98closed; allchecksPASS. No Harmon geometry edited."
+  "stage": "All local checks passed; ready to merge PR488",
+  "pending": "Commit final evidence/runtime, verify own-only origin/next..HEAD, push, ready/merge488 --merge, explicitly close102, continue picker.",
+  "previous": "BLVD487 merged; issue98closed; allchecksPASS. No Harmon geometry edited.",
+  "bake": {
+    "runsStarted": 1,
+    "log": "/tmp/harmon-bake.log",
+    "status": "complete;one run;91/92cellsunchanged"
+  },
+  "reviewedInstalledViews": [
+    "front",
+    "back",
+    "entry",
+    "bridge",
+    "terrace",
+    "walk-harmon-0",
+    "walk-return-0"
+  ]
 }
