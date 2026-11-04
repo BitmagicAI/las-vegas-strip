@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232274473,
+ "bytes": 1232096667,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 704542,
-   "sha256": "6129d3f3a9ec297fc1dae85abf6b782db39edd16abc7cb81967bc745f4a8d72c",
+   "bytes": 696256,
+   "sha256": "6aa7fb17e0a9545d393852faf55a9064e0152da75390b58f327a51425dce6f5e",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "d094494367bcdc589cb7a73310c7ff2ed24be3b44d07b9637c41654ec0da9909",
+   "sha256": "c0c25fc39ce1bca1696b5b2059df9f40ef763b19e7a0a4d313fb5d9c45d021c1",
    "kind": "runtime cell manifest"
   },
   {
@@ -7950,8 +7950,8 @@
   },
   {
    "path": "build/strip-landmarks/curaleaf1736-exterior.glb",
-   "bytes": 600392,
-   "sha256": "b22747cf3d479ebbee5c27c7331c818df3228a09aad2ac057ea65956a3599ab5",
+   "bytes": 428748,
+   "sha256": "10bdcb83b50ed5cb76794175478ecfbd42e258d2fd8fec1609249a6143411f7a",
    "kind": "optimized"
   },
   {
@@ -11496,8 +11496,8 @@
   },
   {
    "path": "build/strip-landmarks/whiteCrossAnnex-exterior.glb",
-   "bytes": 943992,
-   "sha256": "4e7b2a8f4c7b0c54c9c7cba9c8edff4215c322e737d97950d33ece70164e5b6d",
+   "bytes": 946116,
+   "sha256": "8cf8af763036c17ab4a48ff083e39a8f964fc7684f4fab4cb19b9f6927fc91d1",
    "kind": "optimized"
   },
   {
