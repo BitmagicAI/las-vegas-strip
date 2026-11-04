@@ -8118,7 +8118,7 @@
    "items": [
     "Heights, window schedule and rear equipment placement are estimates",
     "Existing CC0 tree_small_02 represents garden mass but not the reference mature pine species",
-    "Fine ornament, flower beds, detailed gazebo, photo-garden features and interior access remain unfinished",
+    "Original gazebo added from official photos; exact roof tiles, crystal ceiling ornament, flowerbeds, photo-garden features and interior access remain unfinished because measured detail and room connections are unverified",
     "Paving and garden boundaries fitted approximately; no survey claim"
    ],
    "record": "tools/resort-blocks/chapel-flowers.json",
@@ -8153,9 +8153,9 @@
      "tools/city-exteriors/test-chapel-flowers.mjs",
      "tools/city-exteriors/replace-chapel-flowers.py",
      "tools/city-exteriors/walk-chapel-flowers.mjs",
+     "tools/strip-landmarks/build_chapel_tacos_refinement.py",
      "tools/strip-landmarks/chapel_flowers.py",
-     "tools/strip-landmarks/export_chapel_flowers.py",
-     "tools/strip-landmarks/build_chapel_flowers.py"
+     "tools/strip-landmarks/export_chapel_flowers.py"
     ]
    },
    "acceptance": [
@@ -8177,7 +8177,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Exact logo crest, window menu graphics and lighting unfinished",
-    "Sign proportions and detailed awning corner folds need further refinement",
+    "Rooflettering enlarged from close reference; exact signcrest, proportions andawning cornerfolds remain approximate. Jan2026glare obscures awning stripes whileundatedsatellite showsstripes; retainedpendingdatedcloseevidence",
     "Planting and precise parking/curb extent not yet matched",
     "Approximate3.75mwallheight and4.2mcentralroof not surveyed",
     "No interior access in exteriorpass"

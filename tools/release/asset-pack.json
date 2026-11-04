@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1219963401,
+ "bytes": 1219980419,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 702758,
-   "sha256": "233ebd0a37200ab6980d7553a55441a968abb44b1656e8957fd3e97573bf2d84",
+   "bytes": 702808,
+   "sha256": "6b59d0a45fe076879604963435b2c1c5ec6ed05dc77cc8b6655176145c19e85f",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "44a25577958185ebc943154c60ddfa774e83f99778fe9b2b413920e8cb6ff9d9",
+   "sha256": "99b9ac17bc0c171a57e651cd774fdd2092887ef28cba3375869846628642c471",
    "kind": "runtime cell manifest"
   },
   {
@@ -7740,14 +7740,14 @@
   },
   {
    "path": "build/strip-landmarks/chapelFlowers-exterior-collision.bin",
-   "bytes": 1000,
-   "sha256": "0f1efd5e3df31484e0c17dc5e92fbbfa3ca430e4e3f69a6d2813633e8eb0537a",
+   "bytes": 1336,
+   "sha256": "50f2574a5e6e67449ac0c8d57582da4df732d405872603fa40cfa24d2aca7e8a",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/chapelFlowers-exterior.glb",
-   "bytes": 13295932,
-   "sha256": "aa3895492c0c46b4193e00faf27d69eef02f8c17b023585f92ecc2d6424e721b",
+   "bytes": 13312324,
+   "sha256": "efb01aed2a70c94c62a8f9c2b896cbe46ec36a1186a34c50dcd1e5d22b24b70d",
    "kind": "optimized"
   },
   {
@@ -11022,8 +11022,8 @@
   },
   {
    "path": "build/strip-landmarks/tacosMexico-exterior.glb",
-   "bytes": 325032,
-   "sha256": "e09a6345f0c46b57006e57037fa6d76b40915fe9e867552dce0691e282603afd",
+   "bytes": 325272,
+   "sha256": "6d6b7d71b47e5f0d187908ca8816e28b1ea0b720a61d6f4d07f7ec5d37ed824f",
    "kind": "optimized"
   },
   {

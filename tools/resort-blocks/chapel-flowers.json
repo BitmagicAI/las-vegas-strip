@@ -25,12 +25,16 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15055,-115.15276&heading=80&pitch=0",
       "imageDate": "January2026",
       "observed": "Street view shows street chapel with cream stucco, gray/brown tile gable roof parallel to Strip, square louvered belfry and tall white octagonal spire, rounded windows along street face, iron garden fence and mature pine trees. Back court has small glass-front gabled chapel/entry. Broad brick motor court; southern fabric canopy and long ornamental fence."
+    },
+    {
+      "url": "docs/project-records/chapel-tacos-refinement/research.json",
+      "observed": "2026-11-04 refreshedJan2026StreetView,satellite andofficialphotographs with inferredgeometry andlimits."
     }
   ],
   "remaining": [
     "Heights, window schedule and rear equipment placement are estimates",
     "Existing CC0 tree_small_02 represents garden mass but not the reference mature pine species",
-    "Fine ornament, flower beds, detailed gazebo, photo-garden features and interior access remain unfinished",
+    "Original gazebo added from official photos; exact roof tiles, crystal ceiling ornament, flowerbeds, photo-garden features and interior access remain unfinished because measured detail and room connections are unverified",
     "Paving and garden boundaries fitted approximately; no survey claim"
   ],
   "evidence": {
@@ -38,12 +42,15 @@
     "support": "build/city-exteriors/chapel-flowers-collision.json",
     "walk": "build/city-exteriors/chapel-flowers-walk.json",
     "ownership": "build/city-exteriors/chapel-flowers-ownership-audit.json",
-    "visualReview": "Three installed views reviewed; rear entrance orientation/position/glass stand-off and street fence corrected, all3views reinspected.731 support samples6walkinglegsPASS.52oldtri removed.38264 authoredtri15batches plus3existingCC0treeswithLOD;12.68MBoptimized. Suspected courtyard pavement overlay investigated: city triangles at1860,-3825 areverge.018andground-.02 belownewpavers.18; patch is cast shadow. No photoreal completion claim."
+    "visualReview": "Three installed views reviewed; rear entrance orientation/position/glass stand-off and street fence corrected, all3views reinspected.731 support samples6walkinglegsPASS.52oldtri removed.38264 authoredtri15batches plus3existingCC0treeswithLOD;12.68MBoptimized. Suspected courtyard pavement overlay investigated: city triangles at1860,-3825 areverge.018andground-.02 belownewpavers.18; patch is cast shadow. No photoreal completion claim.",
+    "refinementCheckpoint": "docs/project-records/chapel-tacos-refinement/checkpoint.json",
+    "refinementViews": "docs/project-records/chapel-tacos-refinement/views.md",
+    "refinementReview": "2026-11-04: seven matching daylight pairs and twelve actualwalkendpoint images inspected acrossgroup;1012support,18CPUafter,18actualbefore/after legs passed. Pavilion clearentry/crossing/return verified. No warm p95 regressionabove10%; no speedup claim. All remainingfullsitegaps retained."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/chapelFlowers-exterior.glb": "329fb57daa6d95ef4e2e8d42c68c32994483a27cbb2b9668a62b966922af46b9",
-      "build/strip-landmarks/chapelFlowers-exterior-collision.json": "a79182ffe4fd0060a1469ddeeecc099bab092ef17f83a34b252d12851b31d587"
+      "build/strip-landmarks/chapelFlowers-exterior.glb": "45ec733d5773962f0184115a4540ff8093f732cec2f9f56f3aa56fa44d9a96f1",
+      "build/strip-landmarks/chapelFlowers-exterior-collision.json": "3695013ecf6f09092f14caf2be7095be25ad43fe13be24714cf47dc94bb0c593"
     }
   }
 }

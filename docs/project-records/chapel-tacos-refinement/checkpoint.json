@@ -5,8 +5,8 @@
     138
   ],
   "claims": "janiverse confirmed",
-  "stage": "7baseline daylightviews+6actualwalkendpoints inspected.18actualbaselinelegs passed (12frontages+6gazebo);12CPUbefore/after passed;731chapel+281tacos support passed. FreshJan2026StreetView/satellite andofficialphotos inspected. OriginalgazeboandTacoslargerlettering built/exported. Optimization/install/sharedbake sequence16322 running.",
-  "pending": "Finish16322 optimization+WebP/install/sharedbake+scopedLODpreserve. Check alloutputs; retainunchangedcells. Then7matchingafterviews,18actualafterlegs,smoke,allstep7. Inspect gazeboroof/posts/tree andTacosletterfit; addgazeboCPUroutecheck ifneeded. Saveproofpairs/perf/blockrecords/taskindex/LFSaudit/archive. PR502draft stillinitial5fbf795;ee681a4 local;newgeometrycheckpoint local. No verifiedinstallationclaim.",
+  "stage": "Installedpassverified:7matchingpairs+12walkendpoints inspected,1012support,12CPUbefore/18after,18actualbefore/after,9cleansmokestops,allstep7passed.91/92cellsidentical;25278697newuniqueLFSbytes.",
+  "pending": "Pushowncommits,updatePR502,verifyexactremoteheadandnextbase,readyguardedmerge,close137138,picker. No wholeblockcompletion claim.",
   "pr": 502,
   "baselineSession": 69388,
   "buildSession": 16322

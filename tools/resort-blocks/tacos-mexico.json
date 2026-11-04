@@ -20,11 +20,15 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14992,-115.15369&heading=330&pitch=0",
       "imageDate": "April2018",
       "observed": "Southern parking-side full facade: long low wall with tall pilasters, continuous red/white striped hood, roof stepped up central section and eastern sign bay; windows concentrated at eastern dining end. Separate red roadside pylon at southwest."
+    },
+    {
+      "url": "docs/project-records/chapel-tacos-refinement/research.json",
+      "observed": "2026-11-04 refreshedJan2026StreetView,satellite andofficialphotographs with inferredgeometry andlimits."
     }
   ],
   "remaining": [
     "Exact logo crest, window menu graphics and lighting unfinished",
-    "Sign proportions and detailed awning corner folds need further refinement",
+    "Rooflettering enlarged from close reference; exact signcrest, proportions andawning cornerfolds remain approximate. Jan2026glare obscures awning stripes whileundatedsatellite showsstripes; retainedpendingdatedcloseevidence",
     "Planting and precise parking/curb extent not yet matched",
     "Approximate3.75mwallheight and4.2mcentralroof not surveyed",
     "No interior access in exteriorpass"
@@ -34,11 +38,14 @@
     "support": "build/city-exteriors/tacos-mexico-collision.json",
     "walk": "build/city-exteriors/tacos-mexico-walk.json",
     "ownership": "build/city-exteriors/tacos-mexico-ownership-audit.json",
-    "visualReview": "Three installed views inspected; wall strip spacing, serif sign lettering and pylon facing revised andfront/side reinspected.281support samples6walkinglegsPASS.2510authoredtri10batches. No photoreal completion claim."
+    "visualReview": "Three installed views inspected; wall strip spacing, serif sign lettering and pylon facing revised andfront/side reinspected.281support samples6walkinglegsPASS.2510authoredtri10batches. No photoreal completion claim.",
+    "refinementCheckpoint": "docs/project-records/chapel-tacos-refinement/checkpoint.json",
+    "refinementViews": "docs/project-records/chapel-tacos-refinement/views.md",
+    "refinementReview": "2026-11-04: seven matching daylight pairs and twelve actualwalkendpoint images inspected acrossgroup;1012support,18CPUafter,18actualbefore/after legs passed. Pavilion clearentry/crossing/return verified. No warm p95 regressionabove10%; no speedup claim. All remainingfullsitegaps retained."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/tacosMexico-exterior.glb": "77d20c3a1fe6a8ca0454fa821fe54c0a0869e51ffab6e041b7fa441a1fa662fd",
+      "build/strip-landmarks/tacosMexico-exterior.glb": "7539a5408f3638b0af919967fd77ab44a31094d2f35ed6591064db1fc45c9da3",
       "build/strip-landmarks/tacosMexico-exterior-collision.json": "1aa4f135b68eed8f1379975fe3e607c679346bb736cf51c992328c41c7bc077a"
     }
   }
