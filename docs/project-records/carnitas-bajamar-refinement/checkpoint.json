@@ -5,6 +5,8 @@
     130
   ],
   "claims": "janiverse confirmed",
-  "stage": "Active records read; no geometry changes yet. Previous PR499 fully merged and issues127128 closed.",
-  "pending": "Read source and README; capture front-first neutral matching baselines and actual walks, research dated Maps and official references, choose reversible scoped refinements. Optimize level+WebP before install, shared bake once, all step7 checks. Preserve known gaps and other-session changes."
+  "stage": "CPU baseline both six-leg routes passed. GPU sequence82752 running: Carnitas3views thenBajamar3views then12-leginstalledwalk. Official sites and two Bajamar photos inspected; interiorphoto location ambiguous (door110), no interior inference authorized from it.",
+  "pending": "Finish baseline session/logs, inspect six images and four walk endpoints and performance. Research dated Maps and official photographs after GPU work; CPU baselines may run concurrently. Then scoped geometry refinement and all local checks.",
+  "pr": 500,
+  "baselineSession": 82752
 }
