@@ -5,10 +5,25 @@
     126
   ],
   "claim": "janiverse confirmed",
-  "stage": "All6baseline views and4walkendpoints inspected;12actualbaselinelegs passed. LocatedJan2026StreetView+satellite inspected, originalBostonlettering/OPENpanel andTravelersbase strips authored/exported/optimizedlevel+WebP/installed. Sharedbake running session75685.",
-  "pending": "Finish /tmp/north-small-bake.log then node /tmp/north-small-preserve-lod498.mjs. Aftermatchingprobes/actualwalk, inspectimages/performance, assetstage andallstep7. No ready/merge untilcomplete.",
+  "stage": "All local step7 passed;6matchingviewpairs and8walkendpoints inspected; runtime staged.",
+  "pending": "Final own-commit push; verifyPR498exactHEAD; ready+guarded--merge,next;close125/126thenpicker.",
   "remaining": "Preserve both block records uncertainties; no whole-block completion claim",
   "pr": 498,
   "sourceBackup": "build/city-exteriors/north-small-source-before",
-  "checks": "139Boston+341Travelerssupport passed; CPUwalks in /tmp/{boston,travelers}-cpu-after.log session89816."
+  "checks": {
+    "typecheck": "passed",
+    "records": "289valid; refinement-deferred",
+    "support": "139Boston+341Travelers=480samples passed",
+    "cpuWalk": "12legs passed",
+    "actualWalk": "12before+12after passed;8endpoint images inspected",
+    "views": "6front-first matchingdaylightpairs inspected",
+    "performance": "Boston p95 0/-.2/+.3ms; Travelers0/+.4/+.2ms. No speedup claim.",
+    "optimization": "Both level andWebPinvocation passed;2runtimeGLBschecked0unoptimized",
+    "bake": "one sharedbake; freshnesspassed;91/92cells byte-identical,onlycell-2_-6.bin;unownedGoldCoast/Wyndhamrestored",
+    "assetPack": "1930present0missing0unoptimized;4copied1926unchanged",
+    "smoke": "9stopsplaced0failedrequests0pageerrors0consoleerrors",
+    "public": "0failures7existingwarnings",
+    "diff": "passed",
+    "newLfsBytes": 5859428
+  }
 }

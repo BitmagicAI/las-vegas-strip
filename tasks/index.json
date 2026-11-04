@@ -7491,11 +7491,12 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Facade height estimated",
     "Current advertising omitted or abstracted",
-    "Rear facade not seen"
+    "Rear facade not seen",
+    "Full-site landscaping and precise surveyed dimensions remain unresolved; this pass addresses only visible storefront details."
    ],
    "record": "tools/resort-blocks/boston-pizza.json",
    "buildings": [
@@ -7520,7 +7521,8 @@
      "tools/city-exteriors/replace-boston-pizza.py",
      "tools/city-exteriors/walk-boston-pizza.mjs",
      "tools/strip-landmarks/boston_pizza.py",
-     "tools/strip-landmarks/build_boston_pizza.py"
+     "tools/strip-landmarks/build_north_small_refinement.py",
+     "tools/city-exteriors/install-north-small-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -7539,11 +7541,12 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Rear courtyard facade not yet inspected",
     "Upper floor height estimated",
-    "Detailed tenant graphic artwork not reproduced"
+    "Detailed tenant graphic artwork not reproduced",
+    "Full-site landscaping and precise surveyed dimensions remain unresolved; this pass addresses only visible storefront details."
    ],
    "record": "tools/resort-blocks/travelers-frontage.json",
    "buildings": [
@@ -7567,8 +7570,9 @@
      "tools/city-exteriors/test-travelers-frontage.mjs",
      "tools/city-exteriors/replace-travelers-frontage.py",
      "tools/city-exteriors/walk-travelers-frontage.mjs",
+     "tools/strip-landmarks/build_north_small_refinement.py",
      "tools/strip-landmarks/travelers_frontage.py",
-     "tools/strip-landmarks/build_travelers_frontage.py"
+     "tools/city-exteriors/install-north-small-refinement.mjs"
     ]
    },
    "acceptance": [

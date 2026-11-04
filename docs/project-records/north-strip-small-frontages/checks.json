@@ -1,0 +1,16 @@
+{
+  "typecheck": "passed",
+  "records": "289valid; refinement-deferred",
+  "support": "139Boston+341Travelers=480samples passed",
+  "cpuWalk": "12legs passed",
+  "actualWalk": "12before+12after passed;8endpoint images inspected",
+  "views": "6front-first matchingdaylightpairs inspected",
+  "performance": "Boston p95 0/-.2/+.3ms; Travelers0/+.4/+.2ms. No speedup claim.",
+  "optimization": "Both level andWebPinvocation passed;2runtimeGLBschecked0unoptimized",
+  "bake": "one sharedbake; freshnesspassed;91/92cells byte-identical,onlycell-2_-6.bin;unownedGoldCoast/Wyndhamrestored",
+  "assetPack": "1930present0missing0unoptimized;4copied1926unchanged",
+  "smoke": "9stopsplaced0failedrequests0pageerrors0consoleerrors",
+  "public": "0failures7existingwarnings",
+  "diff": "passed",
+  "newLfsBytes": 5859428
+}

@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1219036860,
+ "bytes": 1219198910,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -450,8 +450,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-6.bin",
-   "bytes": 237299,
-   "sha256": "40b2772e15332b80f9a593ad26cc9533139e9854cd008823f3fb98c03841acd1",
+   "bytes": 247205,
+   "sha256": "b2b3779f39e30756c93380add22bc4328ae6909e37ba1663dd38e583a68ea662",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "58552e59040873c57f370836ba350f0089f006624707b742501ca032f410277c",
+   "sha256": "ee843c7cbd79d5b10d511bb25be54fb18ef3e802de1f41f8799f85d0f599f9df",
    "kind": "runtime cell manifest"
   },
   {
@@ -7518,8 +7518,8 @@
   },
   {
    "path": "build/strip-landmarks/bostonPizza-exterior.glb",
-   "bytes": 430096,
-   "sha256": "b639f9366afc879161e4ed6cac525aae2c5e2ee4128349f6b92a8b55494a0e06",
+   "bytes": 573484,
+   "sha256": "9a48e97db0a9ff70abb866885343dbc46fb9dad558c7bc3673e7f07cf80394cb",
    "kind": "optimized"
   },
   {
@@ -11154,8 +11154,8 @@
   },
   {
    "path": "build/strip-landmarks/travelersFrontage-exterior.glb",
-   "bytes": 122368,
-   "sha256": "9c87494402b78eabc0945a5b01f0259cbcc6a0846c2b071d2c258d5270a729e1",
+   "bytes": 131124,
+   "sha256": "36dad19866d7c9d7ad4a0619b31b20d8b3773c30d639dbf50b94582b6e676faf",
    "kind": "optimized"
   },
   {

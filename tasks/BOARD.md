@@ -121,8 +121,8 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-signature-aviation` | L | P2 | 6 | Refine the exterior of Signature Aviation LAS |
 | `ext-terribles-headquarters` | L | P2 | 6 | Refine the exterior of Terrible Herbst Headquarters |
 | `ext-pristine-hangar` | M | P2 | 4 | Refine the exterior of Pristine Flight hangar |
-| `ext-boston-pizza` | M | P2 | 3 | Refine the exterior of Boston Pizza Vegas |
-| `ext-travelers-frontage` | M | P2 | 3 | Refine the exterior of Travelers frontage |
+| `ext-boston-pizza` | M | P2 | 4 | Refine the exterior of Boston Pizza Vegas |
+| `ext-travelers-frontage` | M | P2 | 4 | Refine the exterior of Travelers frontage |
 | `ext-tod-motel` | M | P2 | 5 | Refine the exterior of Tod Motor Motel |
 | `ext-main-street-1511` | M | P2 | 4 | Refine the exterior of 1511 South Main Street |
 | `ext-carnitas-1601` | M | P2 | 5 | Refine the exterior of Carnitas y Tortas Ahogadas Guadalajara 2 |

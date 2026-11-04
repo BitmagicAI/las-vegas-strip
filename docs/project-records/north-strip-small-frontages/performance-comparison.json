@@ -1,0 +1,47 @@
+{
+  "method": "Identical neutral daylight960x540DPR1ultra;900frames+streamquiet+60settle+180timedframes. Localvariance; no speedupclaim.",
+  "views": [
+    {
+      "building": "boston-pizza",
+      "view": "front",
+      "beforeP95": 19.5,
+      "afterP95": 19.5,
+      "deltaP95": 0.0
+    },
+    {
+      "building": "boston-pizza",
+      "view": "south",
+      "beforeP95": 19.100000143051147,
+      "afterP95": 18.90000009536743,
+      "deltaP95": -0.2
+    },
+    {
+      "building": "boston-pizza",
+      "view": "aerial",
+      "beforeP95": 19,
+      "afterP95": 19.299999952316284,
+      "deltaP95": 0.3
+    },
+    {
+      "building": "travelers-frontage",
+      "view": "front",
+      "beforeP95": 18.700000047683716,
+      "afterP95": 18.700000047683716,
+      "deltaP95": 0.0
+    },
+    {
+      "building": "travelers-frontage",
+      "view": "court",
+      "beforeP95": 18.899999856948853,
+      "afterP95": 19.299999952316284,
+      "deltaP95": 0.4
+    },
+    {
+      "building": "travelers-frontage",
+      "view": "aerial",
+      "beforeP95": 18.90000009536743,
+      "afterP95": 19.09999990463257,
+      "deltaP95": 0.2
+    }
+  ]
+}

@@ -6,23 +6,41 @@
       "url": "https://www.google.com/maps/@36.1530537,-115.1512024,620a,90y,280.06h,90t/data=!3m7!1e1!3m5!1s9r4gKK6qdAx0o9hbFGDKqw!2e0",
       "imageDate": "January2026",
       "observed": "Across-road east frontage inspected. White parapet, sage upper wall, repeated windows with maroon side panels, ground tattoo storefront on south and light fascia center. Temporary scaffold omitted. Nearby purple tower appears separate south building."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9r4gKK6qdAx0o9hbFGDKqw&heading=90&pitch=0&fov=80",
+      "date": "Jan2026",
+      "observed": "Re-inspected Boston frontage. South wing framed sign reads385-2595,OPEN UNTIL3AM,WE DELIVER,PIZZA-PASTA-SANDWICHES; window has OPEN lettering. Existing mainfascia text/steppedstucco broadlycorrect. No rear view."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9r4gKK6qdAx0o9hbFGDKqw&heading=280&pitch=0&fov=80",
+      "date": "Jan2026",
+      "observed": "Travelers frontage re-inspected; tattoo bay has maroon/cream narrow vertical base strips beneath advertising and yellow text; green upper projecting horizontal trim. Temporary scaffolding and palms obscure part of facade. Rear notvisible."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1531,-115.1514,415m/data=!3m1!1e3",
+      "observed": "Satellite inspected: angled boulevard, small east storefront with south parking, west L-plan aroundrear court. Imagerycapturedate notexposed; retain existing mappedfootprints."
     }
   ],
   "remaining": [
     "Rear courtyard facade not yet inspected",
     "Upper floor height estimated",
-    "Detailed tenant graphic artwork not reproduced"
+    "Detailed tenant graphic artwork not reproduced",
+    "Full-site landscaping and precise surveyed dimensions remain unresolved; this pass addresses only visible storefront details."
   ],
   "evidence": {
-    "views": "build/city-exteriors/travelers-frontage-final",
+    "views": "docs/project-records/north-strip-small-frontages/views.md",
     "support": "build/city-exteriors/travelers-frontage-collision.json",
     "walk": "build/city-exteriors/travelers-frontage-walk.json",
     "ownership": "build/city-exteriors/travelers-frontage-ownership-audit.json",
-    "visualReview": "Three installed views inspected. Final front rechecked after replacing excessive ground glazing with covered pale panels. Rear window pattern inferred; no interior access claim. 341 support/headroom samples and six walking legs passed. Retry static 960x540 p95 about17.2ms; not a route performance benchmark."
+    "visualReview": "Three installed views inspected. Final front rechecked after replacing excessive ground glazing with covered pale panels. Rear window pattern inferred; no interior access claim. 341 support/headroom samples and six walking legs passed. Retry static 960x540 p95 about17.2ms; not a route performance benchmark.",
+    "refinement": "docs/project-records/north-strip-small-frontages",
+    "refinementDescription": "Narrow maroon base strips added to tattoo storefront, leaving door clear; inferreddimensions fromJan2026StreetView. Detailed tenantartwork remains abstracted.",
+    "installedWalk": "docs/project-records/north-strip-small-frontages/after-installed-walk.json"
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/travelersFrontage-exterior.glb": "a13992b41eadc4dbb031682019b2f2c2a04deaa9808ac5bba234b200628bd258",
+      "build/strip-landmarks/travelersFrontage-exterior.glb": "6652b35bc3b2467b304cd60456e0e62f865d3cc1f2a04e85bbf75f3b08bb66d0",
       "build/strip-landmarks/travelersFrontage-exterior-collision.json": "c0322bcc2e4edfce15313d670e8ec3a550c209103fb1ff4f6f56f197faecb3a7"
     }
   }
