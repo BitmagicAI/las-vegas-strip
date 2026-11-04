@@ -8228,7 +8228,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Exact signage lettering, logo shape and facade panel joints need refinement",
-    "Mature courtyard trees and stone planter borders missing",
+    "Three CC0 trees and original gravel/masonry courtyard islands installed; exact species, pruning, planter outlines and utility cabinet remain approximate or deferred pending measured detail",
     "Parking extent, heights and roof equipment are estimates; no interior access in this exterior pass",
     "Glazing and wall material response need closer matching to reference"
    ],
@@ -8254,8 +8254,9 @@
      "tools/city-exteriors/test-dennys-1822.mjs",
      "tools/city-exteriors/replace-dennys-1822.py",
      "tools/city-exteriors/walk-dennys-1822.mjs",
+     "tools/strip-landmarks/build_dennys_main_refinement.py",
      "tools/strip-landmarks/dennys_1822.py",
-     "tools/strip-landmarks/build_dennys_1822.py"
+     "tools/strip-landmarks/export_dennys_1822.py"
     ]
    },
    "acceptance": [
@@ -8276,7 +8277,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Weathered paint and fascia scars, fine roof/service details and exact sign graphics remain approximate",
+    "Additional high address plate and original pale fascia scars added; full weathered paint, roof/service detail and exact signage remain approximate because source dimensions and texture detail are not surveyed",
     "Existing CC0 trees stand in for tightly pruned reference trees; species/form not exact",
     "Roof heights4.7m/6.9m inferred, not surveyed",
     "Parking extent and cracked asphalt need closer matching",
@@ -8305,8 +8306,8 @@
      "tools/city-exteriors/replace-main-1700.py",
      "tools/city-exteriors/walk-main-1700-ramp.mjs",
      "tools/city-exteriors/walk-main-1700.mjs",
-     "tools/strip-landmarks/export_main_1700.py",
-     "tools/strip-landmarks/main_1700.py"
+     "tools/strip-landmarks/build_dennys_main_refinement.py",
+     "tools/strip-landmarks/export_main_1700.py"
     ]
    },
    "acceptance": [

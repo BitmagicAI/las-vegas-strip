@@ -1,0 +1,36 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "dennys-courtyard-gap",
+      "results": [
+        {
+          "segment": 1,
+          "reached": false,
+          "goal": [
+            1729,
+            0.18,
+            -3743
+          ],
+          "position": {
+            "x": 1727.8748779296875,
+            "y": 0.2711614656448364,
+            "z": -3742.9814453125
+          }
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

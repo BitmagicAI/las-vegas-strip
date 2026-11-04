@@ -6,6 +6,12 @@
   "optimizedModels": "2 runtime GLBs checked, 0 not optimized\n",
   "assets": "1930 present, 0 missing, 0 not optimized\n",
   "tests": "PASS: lazy near detail: LOD vertices bit-identical to the near level (93 checked), near level filled on approach = eager, casters = casting parts, eviction and refill\n\u2714 tests/city-lazy-lod.test.mjs (683.939208ms)\nPASS: city surfaces carry the cluster grid in their program key and rebuild once per resize\n\u2714 tests/city-lighting-resize.test.mjs (309.854ms)\nsite-lights: ok\n\u2714 tests/site-lights.test.mjs (431.20825ms)\n\u2139 tests 3\n\u2139 suites 0\n\u2139 pass 3\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 688.8575\n",
-  "public": "7273 files, 1292.1 MB would be committed\nwarn  docs/project-records/city-exteriors-2026-10-12/inventory.json: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/mandalay-pavilion-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/royale-carnaval-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/sky-garage-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/south-strip-civic-refinement/public.txt: home-folder path (1x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/south-strip-civic-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/south-strip-civic-refinement/research.json: home-folder path (1x, e.g. /home/showpublishedimage)\n0 failures, 7 warnings\n",
-  "pending": "After visual review, actual walks, added courtyard-gap walk, smoke, final records/archive/diff/LFS audit."
+  "public": "0failures,7pre-existing warnings (raw log kept locally)",
+  "support": "348 Denny\u2019s +659 Main =1007 passed",
+  "CPU": "18 before and18 after passed",
+  "actualWalk": "18 matched before/after legs plus6 supplemental courtyard crossing/return legs after passed;14 endpoint images inspected. Initial invalid start inside existing closed vestibule failed and remains documented.",
+  "smoke": "9 stops;0 failed requests/page errors/console errors/unplaced stops",
+  "visualReview": "6 matching daylight pairs plus12 approach/ramp endpoint images inspected. No warm p95 regression over10%; largest7.18%.",
+  "remaining": "Denny\u2019s species/pruning/planter outlines/utility cabinet/signs/materials/interior remain approximate or deferred. Main weathering/scar distribution/roof details/tree forms/site remain approximate. No whole-block or photoreal completion claim.",
+  "archive": "Archived2400 reference/evidence files(745.2MB)"
 }

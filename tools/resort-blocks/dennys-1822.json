@@ -41,7 +41,9 @@
     "walk": "build/city-exteriors/dennys-1822-walk.json",
     "ownership": "build/city-exteriors/dennys-1822-ownership-audit.json",
     "visualReview": "Front, east and aerial installed captures inspected. Curved southern facade and eastern red screen present. 348 support samples and 6 walk legs PASS. 2422 authored triangles,16 batches. Static 960x540 p50 16.7ms p95 17.7\u201317.8ms; not driving-route performance evidence.",
-    "refinementCheckpoint": "docs/project-records/dennys-main-refinement/checkpoint.md"
+    "refinementCheckpoint": "docs/project-records/dennys-main-refinement/checkpoint.md",
+    "refinementViews": "docs/project-records/dennys-main-refinement/views.md",
+    "refinementReview": "2026-11-04 installed six matching daylight pairs and twelve approach/ramp endpoint images inspected across group.1007support samples and18CPU/18actual matched legs passed. Warm p95 deltas0\u20137.2%; no >10% regression. Full-site gaps retained; six supplemental courtyard crossing/return legs also passed, both endpoint images inspected."
   },
   "finalBuild": {
     "files": {

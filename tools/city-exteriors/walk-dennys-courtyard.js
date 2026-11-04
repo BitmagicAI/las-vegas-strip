@@ -1,7 +1,7 @@
 // Use unchanged names and cameras for both before and after installation.
 let skyColor;scene.traverse(o=>{if(o.isDirectionalLight){o.color.setHex(0xffffff);o.intensity=2;skyColor=o.color.clone().setHex(0xc2d5e0);}if(o.isAmbientLight||o.isHemisphereLight){o.color.setHex(0xffffff);o.intensity=1.3;}if(/skybox/i.test(o.name))o.visible=false;});if(skyColor)scene.background=skyColor;
 const frame=()=>new Promise(r=>requestAnimationFrame(r));
-const meta={"routes": [{"name": "dennys-courtyard-gap", "points": [[1725, 0.18, -3743], [1729, 0.18, -3743], [1733, 0.18, -3743], [1736, 0.18, -3743]]}]};
+const meta={"routes": [{"name": "dennys-courtyard-gap", "points": [[1736, 0.18, -3743], [1733, 0.18, -3743], [1730, 0.18, -3743], [1730, 0.18, -3742]]}]};
 const waitReady=async()=>{const end=performance.now()+120000;while(probe.streaming().busy){if(performance.now()>end)throw new Error('Area not ready');await frame();}};
 const allResults=[],doorEvents=[];
 const {getInteractionManager}=await import('/dist/engine/engine/InteractionManager.js');

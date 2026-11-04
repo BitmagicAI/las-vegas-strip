@@ -47,7 +47,9 @@
     "ramp": "build/city-exteriors/main-1700-ramp-walk.json",
     "ownership": "build/city-exteriors/main-1700-ownership-audit.json",
     "visualReview": "Three installed views reviewed; repeated after fixing polygon-difference sliver that incorrectly extended tall facade along lower wing.659support samples,6approachlegs,6ramplegsPASS.3611authoredtri19batches plus3existingCC0trees/LODs.11.83MiBoptimized.34oldvisual/collisiontri removed. Planter moved out of ramp following failed controller test.",
-    "refinementCheckpoint": "docs/project-records/dennys-main-refinement/checkpoint.md"
+    "refinementCheckpoint": "docs/project-records/dennys-main-refinement/checkpoint.md",
+    "refinementViews": "docs/project-records/dennys-main-refinement/views.md",
+    "refinementReview": "2026-11-04 installed six matching daylight pairs and twelve approach/ramp endpoint images inspected across group.1007support samples and18CPU/18actual matched legs passed. Warm p95 deltas0\u20137.2%; no >10% regression. Full-site gaps retained; six supplemental courtyard crossing/return legs also passed, both endpoint images inspected."
   },
   "finalBuild": {
     "files": {

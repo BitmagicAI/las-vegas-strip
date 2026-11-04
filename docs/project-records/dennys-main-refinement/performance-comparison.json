@@ -1,0 +1,63 @@
+{
+  "viewport": "960x540",
+  "dpr": 1,
+  "quality": "ultra",
+  "samples": 180,
+  "rows": [
+    {
+      "building": "dennys-1822",
+      "view": "front",
+      "beforeP50": 16.600000143051147,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 17.899999856948853,
+      "afterP95": 18,
+      "p95PercentChange": 0.5586600215101489
+    },
+    {
+      "building": "dennys-1822",
+      "view": "east",
+      "beforeP50": 16.600000143051147,
+      "afterP50": 16.5,
+      "beforeP95": 18,
+      "afterP95": 18,
+      "p95PercentChange": 0.0
+    },
+    {
+      "building": "dennys-1822",
+      "view": "aerial",
+      "beforeP50": 16.600000143051147,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 18,
+      "afterP95": 19.09999990463257,
+      "p95PercentChange": 6.111110581292056
+    },
+    {
+      "building": "main-1700",
+      "view": "front",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18,
+      "afterP95": 18.800000190734863,
+      "p95PercentChange": 4.444445504082584
+    },
+    {
+      "building": "main-1700",
+      "view": "parking",
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 18.100000143051147,
+      "afterP95": 19.40000009536743,
+      "p95PercentChange": 7.182320121778418
+    },
+    {
+      "building": "main-1700",
+      "view": "aerial",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18.700000047683716,
+      "afterP95": 19.59999990463257,
+      "p95PercentChange": 4.812833447347131
+    }
+  ],
+  "limitations": "Warm frame intervals only; no cold stall/residency/CPU-GPU spans measured. No speedup claim."
+}
