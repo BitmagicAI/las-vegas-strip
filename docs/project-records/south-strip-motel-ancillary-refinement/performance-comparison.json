@@ -1,0 +1,104 @@
+{
+  "method": "Identical960x540DPR1ultra neutral daylight cameras, front first,900settle frames+stream idle+60frames;180 measured frames per view. Near60Hzcap; no speedup claim.",
+  "views": [
+    {
+      "building": "jackalope",
+      "view": "front",
+      "before": {
+        "p50": 16.600000143051147,
+        "p95": 19.100000143051147
+      },
+      "after": {
+        "p50": 16.59999990463257,
+        "p95": 19
+      },
+      "p95Delta": -0.1
+    },
+    {
+      "building": "jackalope",
+      "view": "arcade",
+      "before": {
+        "p50": 16.799999952316284,
+        "p95": 18
+      },
+      "after": {
+        "p50": 16.59999990463257,
+        "p95": 19.199999809265137
+      },
+      "p95Delta": 1.2
+    },
+    {
+      "building": "jackalope",
+      "view": "aerial",
+      "before": {
+        "p50": 16.600000143051147,
+        "p95": 17.600000143051147
+      },
+      "after": {
+        "p50": 16.600000143051147,
+        "p95": 18.5
+      },
+      "p95Delta": 0.9
+    },
+    {
+      "building": "nirvana-ancillary",
+      "view": "front",
+      "before": {
+        "p50": 16.699999809265137,
+        "p95": 17.59999990463257
+      },
+      "after": {
+        "p50": 16.700000047683716,
+        "p95": 23.200000047683716
+      },
+      "p95Delta": 5.6
+    },
+    {
+      "building": "nirvana-ancillary",
+      "view": "garden",
+      "before": {
+        "p50": 16.600000143051147,
+        "p95": 19
+      },
+      "after": {
+        "p50": 17,
+        "p95": 26.799999952316284
+      },
+      "p95Delta": 7.8
+    },
+    {
+      "building": "nirvana-ancillary",
+      "view": "aerial",
+      "before": {
+        "p50": 16.59999990463257,
+        "p95": 17.800000190734863
+      },
+      "after": {
+        "p50": 16.600000143051147,
+        "p95": 19.200000047683716
+      },
+      "p95Delta": 1.4
+    }
+  ],
+  "idleRepeat": [
+    {
+      "view": "front",
+      "p50": 16.600000143051147,
+      "p95": 18.299999952316284,
+      "p95Delta": 0.7
+    },
+    {
+      "view": "garden",
+      "p50": 16.700000047683716,
+      "p95": 19.299999952316284,
+      "p95Delta": 0.3
+    },
+    {
+      "view": "aerial",
+      "p50": 16.700000047683716,
+      "p95": 18.800000190734863,
+      "p95Delta": 1.0
+    }
+  ],
+  "interpretation": "Initial Nirvana p95 increase did not reproduce in the idle repeat: +0.3 to+1.0ms against baseline. Initial results retained; near60Hzcap, no speedup claim."
+}

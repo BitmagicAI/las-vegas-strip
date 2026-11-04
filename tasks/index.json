@@ -6986,8 +6986,9 @@
      "tools/city-exteriors/test-laughing-jackalope.mjs",
      "tools/city-exteriors/replace-laughing-jackalope.py",
      "tools/city-exteriors/walk-laughing-jackalope.mjs",
-     "tools/strip-landmarks/build_laughing_jackalope.py",
-     "tools/strip-landmarks/laughing_jackalope.py"
+     "tools/strip-landmarks/build_motel_ancillary_refinement.py",
+     "tools/city-exteriors/install-motel-ancillary-refinement.mjs",
+     "tools/strip-landmarks/build_laughing_jackalope.py"
     ]
    },
    "acceptance": [
@@ -7003,16 +7004,17 @@
    "id": "ext-nirvana-ancillary",
    "title": "Refine the exterior of Nirvana / former Motel 8 ancillary buildings",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
     "Height and exact stair position estimated",
     "Garden planting and detailed surface weathering incomplete",
     "No room interiors authored",
     "Smaller southern wing height and exact balcony arrangement inferred",
-    "Roof material striping and offsite ground voids remain"
+    "Roof material striping and offsite ground voids remain",
+    "Large east Zen garden differs from the small courtyard circle; owner photo and satellite links preserved, precise placement still unresolved"
    ],
    "record": "tools/resort-blocks/nirvana-ancillary.json",
    "buildings": [
@@ -7046,9 +7048,9 @@
      "tools/city-exteriors/test-nirvana-ancillary.mjs",
      "tools/city-exteriors/walk-nirvana-ancillary.mjs",
      "tools/city-exteriors/replace-nirvana-ancillary.py",
+     "tools/strip-landmarks/build_motel_ancillary_refinement.py",
      "tools/strip-landmarks/nirvana_hotel.py",
-     "tools/city-exteriors/test-nirvana.mjs",
-     "tools/city-exteriors/test-psychic-sessions.mjs"
+     "tools/city-exteriors/install-motel-ancillary-refinement.mjs"
     ]
    },
    "acceptance": [

@@ -1,0 +1,33 @@
+{
+  "base": "1b4bcec5346b95fb4c0f93a32ad0a94af4fe6957",
+  "issues": [
+    115,
+    116
+  ],
+  "claims": "Both confirmed janiverse",
+  "stage": "All step7 local checks passed;26actual segments and6matching viewpairs inspected;ready for PR merge.",
+  "scope": "Former Laughing Jackalope and nearby Nirvana ancillary wings; preserve PR491 main Nirvana improvements and all existing interiors/roads. Research reference-supported details before choosing reversible scope.",
+  "pending": "Commit and push only own changes; mark494ready, merge into next with --merge, explicitly close115116, then pick next nearby group.",
+  "previous": "PR493 merged next1b4bcec;113/114explicitlyclosed. Allstep7checks,30actualsegments,6matchingviews passed.91/92cells unchanged;4040333newLFSbytes. Baseline waypoint/headroomdiagnostics preserved.",
+  "baseline": {
+    "jackalope": "build/city-exteriors/jackalope-refinement-before",
+    "nirvanaAncillary": "build/city-exteriors/nirvana-ancillary-refinement-before",
+    "walk": "build/city-exteriors/motel-ancillary-walk-before",
+    "walkLog": "/tmp/motel-walk-before494.log",
+    "walkResult": {
+      "passed": false,
+      "jackalopeSegmentsPassed": 14,
+      "nirvanaSegmentsPassed": 3,
+      "nirvanaFailedSegment": 4,
+      "stoppedAt": [
+        105.64657592773438,
+        0.38780680179595944,
+        2711.272705078125
+      ],
+      "note": "Unchanged installed Nirvana stair base blocks actual controller; CPU forward/return walks pass 12 legs. Preserve both results. Not a failure caused by current source edits."
+    }
+  },
+  "sourceChecks": "Jackalope collision byte-identical. Nirvana changed only two ramp triangles, reversing downward winding while retaining four corners/plane; standalone normal regression, 14/12 CPU walk legs and 170/188 support/headroom samples pass.",
+  "runningJobs": [],
+  "performanceDiscrepancy": "Initial after p95 increases retained. Idle repeat same cameras gives Nirvana+0.7/+0.3/+1.0ms; initial spike not reproduced. No speedup claim."
+}

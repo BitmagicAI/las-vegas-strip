@@ -41,8 +41,20 @@
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/laughingJackalope-exterior.glb": "d8deae00607e30e60769109fb3d63594a7f421c7e9c77b4261d4ce043c43e18b",
+      "build/strip-landmarks/laughingJackalope-exterior.glb": "47d147264926b6344cc4b637e15f844e77aab80ff7f5b3ab88312ca92ef23ac1",
       "build/strip-landmarks/laughingJackalope-exterior-collision.json": "715c24c4a1bc62233ab684b035449c87208c622fe9e77e2d753d3d1703718c36"
     }
+  },
+  "activeRefinement": {
+    "record": "docs/project-records/south-strip-motel-ancillary-refinement/checkpoint.json",
+    "research": "docs/project-records/south-strip-motel-ancillary-refinement/research.json",
+    "status": "Scoped installed pass verified; whole-block refinements remain deferred",
+    "preserved": "Existing roads, footprints, interiors and PR491 main-hotel work",
+    "change": "Curved segmental doorway pediment replaces triangular approximation from February 2026 Street View; estimated span3.4m/rise1m.",
+    "actualWalking": "Passed 14 segments, forward and return; four group endpoints inspected.",
+    "evidence": "docs/project-records/south-strip-motel-ancillary-refinement/installed-runtime-walk.json",
+    "visual": "Three matching front-first before/after daylight views inspected; dimensions remain estimates.",
+    "performance": "docs/project-records/south-strip-motel-ancillary-refinement/performance-comparison.json",
+    "checks": "docs/project-records/south-strip-motel-ancillary-refinement/checks.json"
   }
 }

@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1219011468,
+ "bytes": 1219025494,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -324,8 +324,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_3.bin",
-   "bytes": 334156,
-   "sha256": "9fdd9ec97cd0d3b1d39c3b3325fbabbdd92484227ec8436b728c8239192af022",
+   "bytes": 334194,
+   "sha256": "7ca531867f5de9dc4781f8e2b8a00e19402a057d776b34819dd5e52143ee85ac",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "12e2d12d02e7fbf5dd3f33111ddd3e7bb06c73fcac2658b00bf66736088c6242",
+   "sha256": "7e1ad4ff371308ea868d61c2270987b27da386f0047dce6c18fae7ff4953a1be",
    "kind": "runtime cell manifest"
   },
   {
@@ -9198,8 +9198,8 @@
   },
   {
    "path": "build/strip-landmarks/laughingJackalope-exterior.glb",
-   "bytes": 142108,
-   "sha256": "335227dfa8ae1817cefe8a88c2d6f0faace45c9e18e80ba885f874aa2638439c",
+   "bytes": 156100,
+   "sha256": "100107f6000228d807e772afb89b9453a5dffb03e113c90e46f4ee367fa71f7c",
    "kind": "optimized"
   },
   {
@@ -9829,13 +9829,13 @@
   {
    "path": "build/strip-landmarks/nirvanaAncillary-exterior-collision.bin",
    "bytes": 3208,
-   "sha256": "6538b2ee114e942343f9f92e19edc5524f9cf7df35bd784e199a0862d7222cfa",
+   "sha256": "74b8c4850ab9540d154af23fc5985c874badec4b99ffba288bc69d7c2c0345f2",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/nirvanaAncillary-exterior.glb",
-   "bytes": 326864,
-   "sha256": "d4deb9dbfb5da96687ed45039d5e70ab8845cfc875a80d883136e5dec4935df8",
+   "bytes": 326860,
+   "sha256": "a0f3ee1d2bfc5f60cb498ef65cfef54ca0a7d3d47cc4650fc345d75d1630085f",
    "kind": "optimized"
   },
   {
