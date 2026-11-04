@@ -5,7 +5,7 @@
     128
   ],
   "claims": "janiverse confirmed previousturn",
-  "stage": "Tod3baselineviews inspected; front clips partofsign, add a dedicated matching signview if refining sign. Main3views+12leg actualwalk still running63446. BothCPUwalks6legs each passed. No geometrychanges.",
-  "pending": "Finish /tmp/tod-before.log,/tmp/main1511-before.log,/tmp/tod-main-walk-before.log; inspectallimages/results. CPUbaseline session11042. Then Mapsresearch withoutGPUoverlap and original scopedrefinement; allstep7.",
+  "stage": "Baseline complete: seven camera views and four actual-walk endpoints inspected; 12 CPU and 12 actual legs passed. Tod wire sphere/pole and Main upper-left framed slogan board generated, exported, level+WebP optimized and locally installed. Shared bake running session29681 (/tmp/tod-main-bake.log). Not yet verified or staged.",
+  "pending": "Finish shared bake; adapt /tmp/north-small-preserve-lod498.mjs own-key regex to todMotel|mainStreet1511 and record directory tod-main-street-refinement. Restore only unowned GoldCoast/Wyndham LOD churn. Run matching three Tod + dedicated sign + three Main after probes and actual walk; inspect all, compare performance. CPU support/walk and every step7 check, asset stage, records, LFS audit and PR499 guarded selfmerge/issue closure remain. Main sign u=.90 assumes left endpoint orientation; verify visually and correct if needed.",
   "pr": 499
 }

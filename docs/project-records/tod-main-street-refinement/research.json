@@ -17,7 +17,21 @@
     {
       "url": "https://www.wiseguysvegas.com/images/faq-header.jpg",
       "observed": "Official FAQimage request failed TLS via curl; web resizedimage timedout. Notvisuallyinspected, no validationbypass."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=NrXqYGACvFUsQrkj59r3Dw&heading=270&pitch=0&fov=85",
+      "date": "Jan 2026",
+      "observed": "Visually inspected. Boarded blue three-floor front; thin pitched entry canopy; surviving V roadside sign has open wire sphere above TOD on a narrow pole, with small stacked panels below V. Strong sun glare obscures paint colors; preserve existing palette rather than copy 2017 colors."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=gUR4hDj-BSPteX2YjZ2IJg&heading=90&pitch=0&fov=75",
+      "date": "Jan 2026",
+      "observed": "Visually inspected. White brick, stone strips, red entry, ribbed silver canopy, Wiseguys lettering and a small framed black upper-left board reading this place is a joke. Portrait murals remain missing in model; no photograph textures copied. Parking and bicycle docks visible; no evidence here for public interior."
     }
   ],
-  "pending": "Inspect dated2026StreetView andsatellite once GPUbaselinejobs finish. Preserve MainStreetoriginalwhitebricktextures, omittedmurals andbothsitesestimateddimensions."
+  "pending": "Verify installed additions and all local checks. Remaining original sign panel shapes, weathering, landscapes, murals, exact measurements and rear-layout discrepancies remain deferred.",
+  "decisionsForOwner": [
+    "Add open wire sphere using three intersecting ellipses, estimated 0.96m diameter and 1.24m height, on existing sign pole. Preserve existing palette because January 2026 glare prevents reliable color matching.",
+    "Add original framed slogan board, estimated 1.5m x .86m, near Main Street facade upper-left. Preserve existing white-brick textures, missing murals and public-interior uncertainty."
+  ]
 }
