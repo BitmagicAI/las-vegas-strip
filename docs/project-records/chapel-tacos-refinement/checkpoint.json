@@ -5,8 +5,9 @@
     138
   ],
   "claims": "janiverse confirmed",
-  "stage": "Six baseline daylight views visually inspected.12CPUbaselinelegs passed. Scoped source rebuilt from committed geometry only and backed up underbuild/city-exteriors/chapel-tacos-source-before; runtime untouched. Official gazebo/tour/Victorian interior photos inspected and research links recorded. Baseline GPU sequence69388 actualwalk underway.",
-  "pending": "Finish69388 actualwalk baseline and inspect4endpoints. Then freshMapsStreetView/satellite research forbothsites; locate gazebo before adding supported originalpavilion geometry; assessTacos1800 currentawning/sign details. No geometry edits yet. Preserve allremaininggaps. Continue optimize/install/sharedbake/step7/afterproof beforePR502merge.",
+  "stage": "7baseline daylightviews+6actualwalkendpoints inspected.18actualbaselinelegs passed (12frontages+6gazebo);12CPUbefore/after passed;731chapel+281tacos support passed. FreshJan2026StreetView/satellite andofficialphotos inspected. OriginalgazeboandTacoslargerlettering built/exported. Optimization/install/sharedbake sequence16322 running.",
+  "pending": "Finish16322 optimization+WebP/install/sharedbake+scopedLODpreserve. Check alloutputs; retainunchangedcells. Then7matchingafterviews,18actualafterlegs,smoke,allstep7. Inspect gazeboroof/posts/tree andTacosletterfit; addgazeboCPUroutecheck ifneeded. Saveproofpairs/perf/blockrecords/taskindex/LFSaudit/archive. PR502draft stillinitial5fbf795;ee681a4 local;newgeometrycheckpoint local. No verifiedinstallationclaim.",
   "pr": 502,
-  "baselineSession": 69388
+  "baselineSession": 69388,
+  "buildSession": 16322
 }
