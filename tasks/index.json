@@ -6338,8 +6338,11 @@
      "tools/resort-blocks/harley-dealership.json"
     ],
     "builders": [
+     "tools/strip-landmarks/build_south_strip_retail_refinement.py",
+     "tools/city-exteriors/install-south-strip-retail-refinement.mjs",
      "tools/city-exteriors/test-harley.mjs",
      "tools/strip-landmarks/build_harley.py",
+     "tools/strip-landmarks/export_south_strip_retail_refinement.py",
      "tools/strip-landmarks/harley_dealership.py"
     ]
    },
@@ -6385,8 +6388,11 @@
      "tools/resort-blocks/pinball-hall.json"
     ],
     "builders": [
+     "tools/strip-landmarks/build_south_strip_retail_refinement.py",
+     "tools/city-exteriors/install-south-strip-retail-refinement.mjs",
      "tools/city-exteriors/test-pinball.mjs",
      "tools/strip-landmarks/build_pinball.py",
+     "tools/strip-landmarks/export_south_strip_retail_refinement.py",
      "tools/strip-landmarks/pinball_hall.py"
     ]
    },

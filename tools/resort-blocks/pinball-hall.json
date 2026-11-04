@@ -50,5 +50,17 @@
       "build/strip-landmarks/pinballHall-exterior.glb": "ddabd7a2438ca8d4bdbbb6eaf147297b4384fdc40f3a1dad7bf191280a498170",
       "tools/strip-landmarks/pinball_hall.py": "6231aaff5f8939bd7a9011f8f82c5167273af54d9dc72903623e05e7b27b90ac"
     }
+  },
+  "refinement20261104": {
+    "status": "verified-scoped-refinement",
+    "pr": 489,
+    "record": "docs/project-records/south-strip-retail-refinement",
+    "scope": "Original sampled curved red roadside blade and four starbursts on both faces; warehouse, pole and medallions retained.",
+    "dimensions": "Sign plate dimensions inferred from linked photographs; not surveyed. Mapped footprints and building heights unchanged.",
+    "preservation": "Source collision byte-identical; no roads, interiors, runtime code or lighting changes.",
+    "remaining": "All existing discrepancies retained; sign refinement is not whole-site completion.",
+    "validation": "Four front-first neutral daylight cameras compared with identical before cameras; forecourt six forward/return segments passed before and after. No interior access claim.",
+    "runtimeSha256": "2dc7a034d13829f428581512acf5ce52f36175992c8019e847c7589c51fdf75e",
+    "checks": "All step7 local checks passed; smoke9stops0errors;91/92cells unchanged. Remaining full-site discrepancies retained."
   }
 }

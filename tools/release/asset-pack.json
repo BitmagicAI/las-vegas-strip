@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204483109,
+ "bytes": 1204598905,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -330,8 +330,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_4.bin",
-   "bytes": 105847,
-   "sha256": "f3f56c6321322ddb0c843364c0d8f56e6ac71d0107d50a1bbebb1a86348fdefc",
+   "bytes": 108227,
+   "sha256": "549fcabd83d5ea868731a6a8d31de440597be9d3f9ba632ff0db17bc9e9b8f95",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "9ae1c7e7de20ca6e77685daccb05a58c225651c4dadd3cdd3fb7e1504c4b90d3",
+   "sha256": "b91852f00c05ec2a42520f7f51188c4b53b633e600417b9716820a5d9e89ad01",
    "kind": "runtime cell manifest"
   },
   {
@@ -8718,8 +8718,8 @@
   },
   {
    "path": "build/strip-landmarks/harleyDealership-exterior.glb",
-   "bytes": 474024,
-   "sha256": "b49d3b09dba98ab6746e988282a80bc6580e6afd57362639a5284f8796b03f7e",
+   "bytes": 577544,
+   "sha256": "d6cd390dd7f06d7b35f1226ca17600220faff61efceeda7a1e63fb7317038aae",
    "kind": "optimized"
   },
   {
@@ -10230,8 +10230,8 @@
   },
   {
    "path": "build/strip-landmarks/pinballHall-exterior.glb",
-   "bytes": 398388,
-   "sha256": "7f83c88dac4865f1188352720d29cd987d6161366123770b260652ad80dfe2f1",
+   "bytes": 408284,
+   "sha256": "2dc7a034d13829f428581512acf5ce52f36175992c8019e847c7589c51fdf75e",
    "kind": "optimized"
   },
   {

@@ -1,0 +1,30 @@
+{
+  "unchangedCells": 91,
+  "totalCells": 92,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell-0_4.bin"
+  ],
+  "newLfsBytes": 1107856,
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_4.bin",
+      "bytes": 108227,
+      "sha256": "549fcabd83d5ea868731a6a8d31de440597be9d3f9ba632ff0db17bc9e9b8f95"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "b91852f00c05ec2a42520f7f51188c4b53b633e600417b9716820a5d9e89ad01"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/harleyDealership-exterior.glb",
+      "bytes": 577544,
+      "sha256": "d6cd390dd7f06d7b35f1226ca17600220faff61efceeda7a1e63fb7317038aae"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/pinballHall-exterior.glb",
+      "bytes": 408284,
+      "sha256": "2dc7a034d13829f428581512acf5ce52f36175992c8019e847c7589c51fdf75e"
+    }
+  ]
+}

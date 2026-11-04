@@ -3,6 +3,7 @@ Mapped warehouse retained, original polygon lettering and sign construction.
 """
 from common import *
 from forum_shops import facade_frame
+from retail_signs import plate,star
 KEY='pinballHall'
 
 def letter_shape(c):
@@ -56,7 +57,15 @@ def exterior(B):
  B.box('pb-blue',(57,10.75,3440),(.9,21.5,.9),True)
  for yaw in [0,math.pi]:
   F=Frame(B,62,3440,yaw,y=0)
-  if yaw==0:F.box('pb-red',(0,14.4,0),(9.5,7.1,.65))
+  if yaw==0:
+   # Curved silhouette inferred from June2026 photograph; original sampled profile.
+   right=[(3.4+1.8*math.cos(a),14.4+3.55*math.sin(a)) for a in np.linspace(-math.pi/2,math.pi/2,19)]
+   left=[(-4.75+1.05*math.sin(a),14.4+3.55*math.cos(a)) for a in np.linspace(0,math.pi,19)]
+   plate(F,Polygon(right+left),'pb-red',-.325,.65)
+  for x,y,r in [(-3.6,18.15,.82),(4.6,18.1,.68),(-3.7,11.1,.63),(4.7,11.1,.77)]:
+   # Mirrored back face keeps ornaments on the same world-space corners.
+   plate(F,star(x if yaw==0 else -x,y,r),'pb-yellow',-.40,.08)
+   plate(F,star(x if yaw==0 else -x,y,r*.62),'pb-white',-.43,.025)
   F.box('pb-charcoal',(0,7.8,-.1),(8,4.3,.7))
   F.box('pb-blue',(0,7.8,-.49),(7.6,3.9,.05))
   F.text('PLAY PINBALL',(0,8.1,-.54),.65,'pb-white')
