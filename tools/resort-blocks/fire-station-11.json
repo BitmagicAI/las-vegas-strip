@@ -24,7 +24,10 @@
     "Exact bay dimensions and roof heights estimated",
     "Unseen rear service details inferred",
     "No interiors or fire vehicles authored",
-    "Fine roof ribs alias at distant view; landscape not complete"
+    "Fine roof ribs alias at distant view; landscape not complete",
+    "Photorealistic finish and whole-block completion not demonstrated",
+    "Broad gray ground patches in baseline/after route views remain unresolved",
+    "Curved marker plaque still simplified as flat plate"
   ],
   "implemented": [
     "Mapped exterior with three east apparatus doors",
@@ -44,8 +47,18 @@
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/fireStation11-exterior.glb": "2f1ab9d987c3c106297a159ba09757221991c2a081c87fd68c50b328b3cc3d76",
+      "build/strip-landmarks/fireStation11-exterior.glb": "461bc7efabda910fd2538998e05b4674071fea89d1f1d6ba4fca415cf0eea58a",
       "build/strip-landmarks/fireStation11-exterior-collision.json": "be96778409e46739efc02063cdc1b871bb69e33643808c7cdb4156017191787f"
     }
+  },
+  "refinement20261104": {
+    "record": "docs/project-records/south-strip-civic-refinement",
+    "changes": [
+      "Three vertical offset windows per apparatus bay",
+      "Continuous bay shade and yellow bay-side bollards",
+      "Entry canopy cables and station wording"
+    ],
+    "validation": "6 matching view pairs inspected across pair;28 actual legs before+after and28CPUlegs passed;598 support samples;91/92cells byte-identical.",
+    "performance": "Matching fixed-camera p95 deltas recorded; no speedup claim."
   }
 }

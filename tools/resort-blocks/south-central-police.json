@@ -23,7 +23,11 @@
     "Roof heights and exact window counts estimated",
     "Landscape and signage artwork simplified",
     "No interiors or secured parking circulation authored",
-    "Low-detail vegetation, service elevations and PBR tiling need refinement"
+    "Low-detail vegetation, service elevations and PBR tiling need refinement",
+    "Photorealistic finish and whole-block completion not demonstrated",
+    "Broad gray ground patches in baseline/after route views remain unresolved",
+    "Existing department lettering duplication/offset in entry view remains unresolved",
+    "Reference brick entry tower and mature landscaping remain deferred"
   ],
   "implemented": [
     "Mapped shell and intersecting roofs fitted to angled walls",
@@ -43,8 +47,16 @@
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/southCentralPolice-exterior.glb": "4510f028a0031fdc901bb6985cd637621b7effaea694197f2b7e34e9494923e0",
+      "build/strip-landmarks/southCentralPolice-exterior.glb": "5cbc288a303b20661e77036ca79a90958a1576dde95c8e2bedf4740ecc774bb4",
       "build/strip-landmarks/southCentralPolice-exterior-collision.json": "a6c19922272109ef9c12a8d14bd07799cc4a85ea7662bb2ebe83debf35f83b53"
     }
+  },
+  "refinement20261104": {
+    "record": "docs/project-records/south-strip-civic-refinement",
+    "changes": [
+      "Upper entry shade and four cylindrical entrance bollards"
+    ],
+    "validation": "6 matching view pairs inspected across pair;28 actual legs before+after and28CPUlegs passed;598 support samples;91/92cells byte-identical.",
+    "performance": "Matching fixed-camera p95 deltas recorded; no speedup claim."
   }
 }
