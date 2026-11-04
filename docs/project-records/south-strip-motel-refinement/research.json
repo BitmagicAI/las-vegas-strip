@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "url": "https://www.jpking.com/wp-content/uploads/2024/01/Offering-Memorandum.pdf",
+      "provider": "J.P.King auction agent",
+      "imageDate": "Unknown; memorandum for March2024 sale",
+      "observations": "Cover and page2 aerials visually inspected: U-shaped low white/blue motel, drained kidney pool, lawn beds, dense broadleaf central courtyard trees, palms and closed-site frontage fence. Current authoring incorrectly relies on sparse palms throughout; tree placement/height remains inferred."
+    },
+    {
+      "url": "https://images.lacarmina.com/230519-nirvana-hotel-las-vegas-boutique-bed-breakfast-indie-hotels-3.jpg",
+      "provider": "La Carmina travel photography",
+      "imageDate": "2023 inferred from filename",
+      "observations": "Visually inspected white roadside sign with black narrow serif NIRVANA HOTEL and solid pink lotus to RIGHT of lettering. Existing installed model also places lotus on viewer-right (negative local X reverses in this frame), but sparse overlapping loops read as a heart/diamond; refine silhouette in place. White block wall, dark fascia, exposed string bulbs, broadleaf planter at right."
+    },
+    {
+      "url": "https://nirvanahotelvegas.com/our-rooms/",
+      "provider": "Hotel owner",
+      "observations": "Search confirms official hotel site/address. Direct homepage could not be retrieved due certificate-chain validation; no current exterior inference from this page."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0875,-115.1721,416m/data=!3m1!1e3",
+      "provider": "Google satellite Airbus/CNES/Maxar/Vexcel",
+      "observations": "Visually inspected U-shaped Diamond site, kidney pool and broadleaf center canopy; adjacent north/east paved lots are separate. Capture date unknown;2026copyright is not date."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0915,-115.1721,415m/data=!3m1!1e3",
+      "provider": "Google satellite Airbus/CNES/Maxar/Vexcel",
+      "observations": "Visually inspected Nirvana main L and separate south wings; courtyard parking south of main wing, garden at rear. Preserve earlier ancillary layout; capture date unknown."
+    }
+  ],
+  "pending": "Exact tree species, heights and placements remain inferred; no complete perimeter/interior claim.",
+  "decisions": "Preserve Nirvana sign placement: installed view disproves initial local-coordinate inference that it was on wrong side. Refine filled petals in place. Preserve later south-facing guest doors and ancillary geometry; no invented interior.",
+  "design": {
+    "diamond": "Three existing CC0 PolyHaven tree_small_02 broadleaf trees at inferred central island positions84/3173,98/3177,90/3187,height9/10/9m. Replace one unsupported central palm and two primitive inner shrub groups; preserve four other palms and street shrubs. Low green island and red edging, visual only; collision unchanged.",
+    "nirvana": "Original filled pink lotus petals at existing sign position; lettering unchanged because exact typography/font unverified."
+  }
+}

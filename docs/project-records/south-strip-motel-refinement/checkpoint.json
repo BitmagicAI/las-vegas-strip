@@ -5,8 +5,15 @@
     109
   ],
   "claims": "Both confirmed assigned to janiverse",
-  "stage": "Claimed and read active records; no geometry edits",
+  "stage": "All local checks passed; ready to push and merge PR491",
   "scope": "Diamond Inn three footprints and Nirvana main hotel footprint; preserve later Nirvana ancillary correction and all neighboring property ownership.",
-  "pending": "Research current Google Earth/Street View and official/photo references. Capture front-first unchanged baseline cameras and actual walks before edits. Prioritize reference-supported landscaping/sign refinement; foliage sources tools/foliage/models. Preserve all unresolved discrepancies and do not infer missing interiors.",
-  "previous": "PR490 merged next eb8a6bb;106/107closed; all local checks passed;91/92cells unchanged;1817328newLFSbytes."
+  "pending": "Commit own staged work; fetch and inspect origin/next..HEAD, push, update PR491 description and ready/merge --merge, explicitly close108/109, then picker.",
+  "previous": "PR490 merged next eb8a6bb;106/107closed; all local checks passed;91/92cells unchanged;1817328newLFSbytes.",
+  "pr": 491,
+  "baseline": "Diamond12segments and corrected Nirvana6segments passed; all4endpoints inspected. Seven cameras inspected.261/70floor/headroom samples passed; Diamond Rapier6legs bothways passed. Failed initial Nirvana route crossed front building; retained evidence, corrected path z2711.",
+  "optimization": "Diamond WebP 13.11MiB; Nirvana level 0.31MiB, WebP driver confirms no texture images so identical level output. Both source hashes matched installer.",
+  "afterCpu": "261 Diamond and70 Nirvana support/headroom samples pass; Diamond six legs each direction pass.",
+  "afterVisual": "Diamond canopy/island visible; Nirvana filled lotus reads viewer-right; all7after views inspected. Worst p95 delta+0.3ms; no sustained regression or speedup claim.",
+  "afterWalk": "18segments pass; all4endpoints inspected.",
+  "assetAudit": "One bake,91/92cells unchanged;14411250newGitLFSbytes; onlycell-0_3.bin changed."
 }

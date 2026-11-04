@@ -28,7 +28,7 @@
     "Courtyard along guest wing and return"
   ],
   "remaining": [
-    "Exact front retail glazing and lettering require better matched reference; lotus simplified",
+    "Exact front retail glazing and lettering require better matched reference; filled lotus silhouette improved but exact proportions remain inferred.",
     "Mature landscaping and facade aging not reproduced",
     "Room interiors outside exterior scope",
     "Neighboring mapped parcels still show missing ground outside authored site"
@@ -43,14 +43,24 @@
   "evidence": [
     "build/city-exteriors/nirvana-final/nirvana-front.png",
     "build/city-exteriors/nirvana-final/nirvana-courtyard.png",
-    "build/city-exteriors/nirvana-final/nirvana-aerial.png"
+    "build/city-exteriors/nirvana-final/nirvana-aerial.png",
+    "build/city-exteriors/nirvana-refinement-after/nirvana-front.png",
+    "build/city-exteriors/nirvana-refinement-after/nirvana-courtyard.png",
+    "build/city-exteriors/nirvana-refinement-after/nirvana-aerial.png"
   ],
   "performance": "960x540ultra fixed aerial p50 16.7ms p95 17.4ms;not full route benchmark",
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/nirvanaHotel-exterior.glb": "ae8d9c4c59b8ee5761fb0a25129b169b49c138f0021d29558bdc86f3fcce2495",
-      "build/strip-landmarks/nirvanaHotel-exterior-collision.json": "731afb51cd9b566faa863fc56dae6ed09ab8c7bf20c158ce52186fb414f0097d"
+      "build/strip-landmarks/nirvanaHotel-exterior.glb": "a3fb3836bdae88f7b21f51e05707fd682e2a4befce2e521783beda072c4b6aa3",
+      "build/strip-landmarks/nirvanaHotel-exterior-collision.json": "b09e002de518b21fc4edda15e37af55d26f5bbb0fac7b8cda7bf69e5caa766da"
     }
   },
-  "correction20261020": "Main rooms corrected to face southern courtyard from June2023 owner photo; current evidence and hashes in nirvana-ancillary.json."
+  "correction20261020": "Main rooms corrected to face southern courtyard from June2023 owner photo; current evidence and hashes in nirvana-ancillary.json.",
+  "refinement20261104": {
+    "record": "docs/project-records/south-strip-motel-refinement/",
+    "pr": 491,
+    "changes": "Filled original pink lotus petals replace tubular loops; preserves sign position, lettering and south-facing guest doors.",
+    "verification": "All step7 local checks passed; seven matching installed daylight views inspected;18actualmovement segments before/after passed and eight endpoints inspected.261/70support samples and Diamond12Rapierlegs passed. One shared bake;91/92cells unchanged; smoke9stops0errors. See validation.json/performance.json.",
+    "scope": "Partial exterior refinement; all prior remaining discrepancies retained except explicitly refined elements."
+  }
 }

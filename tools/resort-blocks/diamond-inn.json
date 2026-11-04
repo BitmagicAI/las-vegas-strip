@@ -24,7 +24,7 @@
   "dimensions": "Mapped way4579391201908.6m2;one-storey roof3.65m estimated from photo,previous6m fallback removed. Pool and pylons estimated fromsatellite/photo.",
   "remaining": [
     "Elephant anatomy and surface detail remain simplified; not photorealistic",
-    "Sparse palm fronds and primitive shrubs need replacement/refinement",
+    "Remaining palm fronds and front primitive shrubs need refinement; broadleaf species, canopy density, dimensions and island placement remain inferred.",
     "Room interiors and closed-site perimeter fence not included",
     "Neighboring parcels show missing ground in aerial review; not repaired by this property pass"
   ],
@@ -39,13 +39,24 @@
     "build/city-exteriors/diamond-final/diamond-front.png",
     "build/city-exteriors/diamond-final/diamond-courtyard.png",
     "build/city-exteriors/diamond-final/diamond-elephant.png",
-    "build/city-exteriors/diamond-final/diamond-aerial.png"
+    "build/city-exteriors/diamond-final/diamond-aerial.png",
+    "build/city-exteriors/diamond-refinement-after/diamond-front.png",
+    "build/city-exteriors/diamond-refinement-after/diamond-courtyard.png",
+    "build/city-exteriors/diamond-refinement-after/diamond-elephant.png",
+    "build/city-exteriors/diamond-refinement-after/diamond-aerial.png"
   ],
   "performance": "960x540ultra fixed aerial p50 16.6ms p95 17.3ms; not route benchmark",
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/diamondInn-exterior.glb": "a08999e2498e21c835583e0333bd5e8895223e5db97585f37c9f7087a5978ff4",
+      "build/strip-landmarks/diamondInn-exterior.glb": "bd1c350d2aad999358885cc505e9bfde9c56ba4f54d41f4aa202df17682e3a99",
       "build/strip-landmarks/diamondInn-exterior-collision.json": "e8e61dba3462b1260c9e674134328701fc5f8d1128d8536b645671c9a0d02ee1"
     }
+  },
+  "refinement20261104": {
+    "record": "docs/project-records/south-strip-motel-refinement/",
+    "pr": 491,
+    "changes": "Three existing CC0 broadleaf trees, inferred courtyard grass island/red edging; replaces central palm and two primitive inner shrub groups.",
+    "verification": "All step7 local checks passed; seven matching installed daylight views inspected;18actualmovement segments before/after passed and eight endpoints inspected.261/70support samples and Diamond12Rapierlegs passed. One shared bake;91/92cells unchanged; smoke9stops0errors. See validation.json/performance.json.",
+    "scope": "Partial exterior refinement; all prior remaining discrepancies retained except explicitly refined elements."
   }
 }
