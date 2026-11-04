@@ -5,12 +5,36 @@
       "url": "https://locations.dennys.com/nv/las-vegas/200002",
       "provider": "Denny\u2019s official location page",
       "observed": "Confirms branch address 1822 Las Vegas Blvd South. Generic diner promotional image asset dennys-store.webp is not established as this branch; do not derive architectural geometry from it. No branch-specific interior plan established."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HA48Bsfex55Izp4muE55FQ&heading=270&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Denny\u2019s east courtyard has mature sparse-canopied branching trees in gravel beds, low tan-gray masonry borders, central paved access gap, utility cabinet in northern bed. Eastern red screen and broad low windows corroborated."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.14965,-115.15375,87m/data=!3m1!1e3",
+      "imageDate": null,
+      "observed": "Satellite top-down inspected. Copyright2026 is not capture date. Two east planting islands separated by path, diagonal street edge. Right-click anchors north tree area36.149684,-115.153743 and south tree area36.149579,-115.153767. World anchors1731.719,-3749.686 and1729.560,-3737.997; outlines inferred from overhead scale, not surveyed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=i_nRMkUwIY_V0UN552LD1A&heading=270&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "1700Main low wing has additional white1700 numerals on blue-purple plate high on fascia; tall wing pale scarred fascia; closely pruned trees differ from current CC0 shape."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Yw7cU1NZIWKr7Ag_hyqs3Q&heading=300&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Second angle confirms irregular pale removed-letter scars on tall east fascia, additional low-wing address plate, existing1700 by tall-wing door and ramp. Preserve door address. For Sale sign is temporary; no phone details copied."
     }
   ],
   "pending": [
-    "Fresh dated Street View and satellite inspection after GPU baseline sequence completes.",
-    "Identify tree locations and stone planter footprints; do not place from text description alone.",
-    "Former pawn facade/service details require fresh visual evidence."
+    "Exact planter dimensions, tree count/species and utility cabinet position remain inferred or deferred.",
+    "Denny\u2019s exact signs/panel joints/materials and public interior plan remain unverified.",
+    "Former pawn roofing/weathering/site details and close-pruned vegetation remain incomplete; exterior closed."
   ],
-  "provenance": "Existing tools/foliage/models tree assets reference Poly Haven tree_small_02; exact tree species/form remains an approximation."
+  "provenance": "Existing tools/foliage/models tree assets reference Poly Haven tree_small_02; exact tree species/form remains an approximation.",
+  "decisions": [
+    "Original polygonal gravel beds with .35m raised masonry border; no road changes. Three existingCC0trees6.2/5.8/6m tall are provisional inferred fits.",
+    "Add low-wing high address plate and original geometric small fascia paint scars. Retain existing door numerals and closed interior."
+  ]
 }
