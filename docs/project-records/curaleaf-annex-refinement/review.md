@@ -15,3 +15,42 @@ Curaleaf still needs surveyed tower/side/rear dimensions, more exact emblem/ston
 
 ## Validation pending
 Source support: 836 Curaleaf and 923 annex samples passed. CPU walks: 12 legs before and after passed. All six baseline views and four baseline walk endpoints inspected. After installation review, actual walks, smoke, asset checks and performance comparison must complete before this report can claim an installed pass.
+
+## Matching views
+
+### curaleaf-1736: front
+
+![Before](../../../public/review/curaleaf-annex-refinement/before/curaleaf-1736-front.png)
+
+![After](../../../public/review/curaleaf-annex-refinement/after/curaleaf-1736-front.png)
+
+### curaleaf-1736: north
+
+![Before](../../../public/review/curaleaf-annex-refinement/before/curaleaf-1736-north.png)
+
+![After](../../../public/review/curaleaf-annex-refinement/after/curaleaf-1736-north.png)
+
+### curaleaf-1736: aerial
+
+![Before](../../../public/review/curaleaf-annex-refinement/before/curaleaf-1736-aerial.png)
+
+![After](../../../public/review/curaleaf-annex-refinement/after/curaleaf-1736-aerial.png)
+
+### white-cross-annex: front
+
+![Before](../../../public/review/curaleaf-annex-refinement/before/white-cross-annex-front.png)
+
+![After](../../../public/review/curaleaf-annex-refinement/after/white-cross-annex-front.png)
+
+### white-cross-annex: north
+
+![Before](../../../public/review/curaleaf-annex-refinement/before/white-cross-annex-north.png)
+
+![After](../../../public/review/curaleaf-annex-refinement/after/white-cross-annex-north.png)
+
+### white-cross-annex: aerial
+
+![Before](../../../public/review/curaleaf-annex-refinement/before/white-cross-annex-aerial.png)
+
+![After](../../../public/review/curaleaf-annex-refinement/after/white-cross-annex-aerial.png)
+

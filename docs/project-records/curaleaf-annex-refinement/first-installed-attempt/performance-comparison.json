@@ -1,0 +1,63 @@
+{
+  "viewport": "960x540",
+  "dpr": 1,
+  "quality": "ultra",
+  "samples": 180,
+  "rows": [
+    {
+      "building": "curaleaf-1736",
+      "view": "front",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 21,
+      "afterP95": 18.600000143051147,
+      "p95PercentChange": -11.428570747375488
+    },
+    {
+      "building": "curaleaf-1736",
+      "view": "north",
+      "beforeP50": 34.69999980926514,
+      "afterP50": 17,
+      "beforeP95": 43.700000047683716,
+      "afterP95": 18.90000009536743,
+      "p95PercentChange": -56.75057191133983
+    },
+    {
+      "building": "curaleaf-1736",
+      "view": "aerial",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 21,
+      "afterP95": 19.600000143051147,
+      "p95PercentChange": -6.666665985470721
+    },
+    {
+      "building": "white-cross-annex",
+      "view": "front",
+      "beforeP50": 16.40000009536743,
+      "afterP50": 16.699999809265137,
+      "beforeP95": 32.30000019073486,
+      "afterP95": 17.800000190734863,
+      "p95PercentChange": -44.89164060178326
+    },
+    {
+      "building": "white-cross-annex",
+      "view": "north",
+      "beforeP50": 31.40000009536743,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 41.5,
+      "afterP95": 18.799999952316284,
+      "p95PercentChange": -54.698795295623405
+    },
+    {
+      "building": "white-cross-annex",
+      "view": "aerial",
+      "beforeP50": 18.300000190734863,
+      "afterP50": 16.799999952316284,
+      "beforeP95": 28.100000143051147,
+      "afterP95": 27.799999952316284,
+      "p95PercentChange": -1.067616331699739
+    }
+  ],
+  "limitations": "Warm frame intervals only; no cold stall/residency/CPU-GPU spans measured. No speedup claim."
+}

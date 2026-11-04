@@ -48,10 +48,10 @@ def exterior(B):
      T.box('cu-tile-dark' if (row+col)%5==0 else 'cu-tile-light',((left+right)/2,y,side*.678),(right-left-.012,.388,.012))
  # Original outline construction; reference artwork is not embedded as a texture.
  path=[(.53*math.cos(a),8.22+.53*math.sin(a),-.70) for a in np.linspace(.50,5.78,40)]
- T.path('cu-white-letter',path,.025,6)
+ T.path('cu-white-letter',[(-x,y,z) for x,y,z in path],.025,6)
  leaf=[(-.30,7.94,-.70),(-.25,8.20,-.70),(-.08,8.39,-.70),(.30,8.51,-.70),(.24,8.25,-.70),(.06,8.07,-.70),(-.30,7.94,-.70)]
- T.path('cu-white-letter',leaf,.019,6)
- T.path('cu-white-letter',[(-.45,7.82,-.70),(.19,8.40,-.70)],.018,6)
+ T.path('cu-white-letter',[(-x,y,z) for x,y,z in leaf],.019,6)
+ T.path('cu-white-letter',[(.45,7.82,-.70),(-.19,8.40,-.70)],.018,6)
  for dx in [-1.5,1.5]:T.tube('cu-yellow-paint',(dx,.18,-.4),(dx,1.3,-.4),.055,8)
  # Narrow apron, north entrance approach and site circulation, avoiding neighboring footprints.
  site=Polygon([(1705,-3835),(1768,-3835),(1772,-3829),(1767,-3808),(1730,-3807),(1705,-3810)]).difference(p)
