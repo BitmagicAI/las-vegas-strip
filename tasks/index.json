@@ -6847,11 +6847,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Planting and northern billboard absent",
-    "Tenant boundary and lettering proportions remain estimated; brand graphics approximate",
-    "Storefront interiors not authored",
-    "Surrounding off-site terrain gaps remain",
-    "Facade weathering and smaller street furniture need refinement"
+    "Northern billboard remains absent: exact scale and ownership need further reference reconciliation.",
+    "Tenant boundaries, lettering and brand graphics remain approximate because available photos span conflicting dates.",
+    "Storefront interiors remain unauthored: no corroborated public room plans were found.",
+    "Off-site terrain gaps remain outside the property scope.",
+    "Facade weathering and smaller street furniture need more detailed reference coverage."
    ],
    "record": "tools/resort-blocks/akita-plaza.json",
    "buildings": [
@@ -6875,8 +6875,9 @@
      "tools/city-exteriors/test-akita-plaza.mjs",
      "tools/city-exteriors/replace-akita-plaza.py",
      "tools/city-exteriors/walk-akita-plaza.mjs",
-     "tools/strip-landmarks/akita_plaza.py",
-     "tools/strip-landmarks/build_akita_plaza.py"
+     "tools/strip-landmarks/build_retail_courtyard_refinement.py",
+     "tools/city-exteriors/install-retail-courtyard-refinement.mjs",
+     "tools/city-exteriors/retail-courtyard-walk-samples.py"
     ]
    },
    "acceptance": [
@@ -6897,11 +6898,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "No interior rooms authored",
-    "Planting,satellite dishes,weathering and discarded signage detail missing",
-    "Southwing facade window arrangement inferred",
-    "Exact courtyard stairs and pool dimensions remain approximate",
-    "Street sign lettering and screen aperture pattern approximate"
+    "Private apartment rooms remain unauthored; no supported public interior layout found.",
+    "Front shrubs and courtyard palms added; other planting, weathering and discarded signage remain incomplete. Satellite dishes are photographed but long-wall ownership/orientation remains unresolved.",
+    "South-wing window arrangement remains inferred: dated frontal coverage insufficient.",
+    "Courtyard stairs and pool dimensions remain approximate without surveyed dimensions.",
+    "Street sign lettering and screen apertures remain approximate; photographic scale is uncertain."
    ],
    "record": "tools/resort-blocks/desert-oasis.json",
    "buildings": [

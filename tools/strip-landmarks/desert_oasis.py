@@ -3,6 +3,8 @@ May2025 photographed architecture; roof heights inferred, not measured.
 """
 from common import *
 from forum_shops import facade_frame
+from terminal_service_planting import hedge
+from retail_courtyard_details import fan_palm
 KEY='desertOasis';IDS=['way/364846547','way/364846546','way/1424222041']
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/apartments';B.detail=0
@@ -61,7 +63,9 @@ def exterior(B):
  P.box('do-gold',(0,6.1,0),(4.7,2.5,.32),True);P.box('do-sign-paint',(0,6.35,-.19),(4.5,1.9,.05));P.box('do-red',(0,5.4,-.19),(4.5,.65,.05))
  P.text('MOTEL',(0,6,-.24),.74,'do-ink');P.text('APARTMENTS',(0,5.15,-.24),.4,'do-white')
  P.box('do-red',(0,3.5,0),(3.2,1.7,.37),True)
- for i in range(8):P.box('do-worn',(-1.35+i*.39,3.5,-.22),(.35,1.55,.06))
+ # May2025 photo shows exposed vertical cabinet strips rather than a full sign face.
+ for i in [0,2,3,6,7]:P.box('do-worn',(-1.35+i*.39,3.5,-.22),(.23,1.55,.06))
+ for i in range(8):P.box('do-metal',(-1.35+i*.39,3.5,-.27),(.025,1.55,.04))
  # Complete walking and parking support, courtyard pool retained below deck.
  site=box(39,2728,119,2764).difference(main.union(south));pool=box(68,2740,75,2743.3)
  for x in range(39,119,3):
@@ -72,5 +76,9 @@ def exterior(B):
  B.planar('do-pool',pool,.15);B.planar('do-paving',pool,-.8,True);B.shell(pool,-.8,.34,'do-tile',roof=False)
  for z in np.arange(2730,2759,2.8):W.box('do-line',(47,.35,z),(4.8,.015,.08))
  for x,z in [(69,2732),(81,2732),(98,2734),(110,2734),(68,2755),(86,2755)]:W.box('do-metal',(x,6.3 if z<2745 else 5.95,z),(1.3,.5,1.15))
+ # Photographed front planting; keep passage and parking approach clear.
+ for i,z in enumerate([2730.6,2732.4]):hedge(B,52.4,z,y=.34,width=1.2,height=.9,seed=593+i)
+ # Satellite-visible courtyard corner palms, inferred heights and crown dimensions.
+ for x,z,h in [(64.6,2742,4.2),(83.3,2740.5,4.8)]:fan_palm(B,x,z,h=h)
  B.detail=0
  return dict(key=KEY,name='Desert Oasis apartments exterior',center=[79,0,2746],bounds=[38,2727,120,2765],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

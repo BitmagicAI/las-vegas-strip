@@ -1,0 +1,30 @@
+{
+  "typecheck": "passed",
+  "cpuRapier": {
+    "akita": 12,
+    "desertOasis": 18,
+    "result": "passed"
+  },
+  "supportHeadroom": {
+    "akita": 125,
+    "desertOasis": 71,
+    "result": "passed; Desert ray corrected to1.95m, original failure preserved"
+  },
+  "optimization": "both level and WebP passes installed; Akita textureless WebP no-op",
+  "matchingViews": "six before/after neutral daylight images visually inspected, identical cameras asserted",
+  "actualWalk": {
+    "segments": 30,
+    "result": "passed",
+    "endpointImagesInspected": 4,
+    "baseline": "Akita12pass; Desert original .35m waypoint stair miss retained, centered .10m baseline18pass without geometry change"
+  },
+  "pending": [],
+  "blockReview": "289recordsvalid",
+  "archive": "2007 reference/evidence files preserved locally",
+  "publicCheck": "0failures,4existingwarnings",
+  "sharedBake": "passed; one bake, known unrelated Gold Coast/Wyndham LOD bytes restored",
+  "cellAudit": "91/92cells byte-identical; only cell-0_3 changed",
+  "assetPack": "1930present,0missing,0not optimized",
+  "runtimeOptimizer": "2changedGLBs checked,0not optimized",
+  "smoke": "9stops placed;0failed requests,page errors,console errors"
+}

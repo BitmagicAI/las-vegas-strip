@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-11-03",
+ "revision": "2026-11-04",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-11-03.tar.gz",
+  "name": "las-vegas-strip-assets-2026-11-04.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1217620413,
+ "bytes": 1219011468,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -324,8 +324,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_3.bin",
-   "bytes": 324765,
-   "sha256": "7cdfa3d21996486c6afdf55a24357afbc8458323d2cd4578ade47f106fecc3c6",
+   "bytes": 334156,
+   "sha256": "9fdd9ec97cd0d3b1d39c3b3325fbabbdd92484227ec8436b728c8239192af022",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "1c9a8dae9e827a8389a63619a3d8b7bb0470045a2d517694a2971d627bfb5868",
+   "sha256": "12e2d12d02e7fbf5dd3f33111ddd3e7bb06c73fcac2658b00bf66736088c6242",
    "kind": "runtime cell manifest"
   },
   {
@@ -7254,8 +7254,8 @@
   },
   {
    "path": "build/strip-landmarks/akitaPlaza-exterior.glb",
-   "bytes": 1729228,
-   "sha256": "d0d7be2c67b22886e77563ea677e8f6f27c67c65e7e3d099b3c623bc26cc57bc",
+   "bytes": 2862624,
+   "sha256": "282115b1849c8dfba2c433c84ff542e2d456ee9b522032a094c9ae094ff41d3c",
    "kind": "optimized"
   },
   {
@@ -8130,8 +8130,8 @@
   },
   {
    "path": "build/strip-landmarks/desertOasis-exterior.glb",
-   "bytes": 581484,
-   "sha256": "456d37163d5fa3408b4a2e48e168fd57fd91b8dc6942c99b062afea750511230",
+   "bytes": 829752,
+   "sha256": "3a9a4ab8668dc832c7ddba8927d50722f22f981b852f01b1c4d764e2cee6f0da",
    "kind": "optimized"
   },
   {
