@@ -1,6 +1,7 @@
 """4207 Las Vegas Blvd: mapped store/canopy, April2023 front reference."""
 from common import *
 from forum_shops import facade_frame
+from terminal_service_planting import palm
 KEY='southShell'
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/store';B.detail=0
@@ -51,6 +52,11 @@ def exterior(B):
    cell=site.intersection(box(x,z,x+4,z+4));B.planar('ss-asphalt',cell.difference(apron),.32,True);B.planar('ss-paving',cell.intersection(apron),.42,True)
  for x,z in [(113,2941),(120,2946)]:F.box('ss-metal',(x,4.54,z),(1.6,.68,1.3))
  for z in [2942,2945,2948,2951]:F.tube('ss-yellow',(105.4,.12,z),(105.4,1,z),.075,10)
+ # Northern palms observed in satellite and August2021 frontage photograph.
+ # Keep the north driveway and reviewed forecourt route clear; visual only.
+ for x,h in [(54,5.5),(69,6),(79,5.5)]:
+  B.planar('ss-tan',Point(x,2928).buffer(1.25),.325)
+  palm(B,x,2928,h=h,y=.32,scale=.85)
  # Pump island protective posts.
  for x in [76.2,82.7]:
   for z in [2942.1,2945.1,2951.8,2954.8]:F.tube('ss-white',(x,.2,z),(x,.85,z),.07,10)

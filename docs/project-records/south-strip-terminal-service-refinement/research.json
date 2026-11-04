@@ -1,0 +1,57 @@
+{
+  "sources": [
+    {
+      "url": "https://lasvegasthenandnow.com/wp-content/uploads/2023/04/Maverick-Helicopter-Building-1024x768.jpg",
+      "provider": "Las Vegas Then and Now",
+      "imageDate": "April2023 upload; capture date unconfirmed",
+      "observed": "Visually inspected red thick serif Maverick lettering with dark border, grey helicopter relief nose viewer-left with cockpit openings and tail ring; tan panel grid, trimmed hedge columns and small fan palms at west entrance."
+    },
+    {
+      "url": "https://www.flymaverick.com/images/las-vegas-terminal-800x400.jpg",
+      "provider": "Official Maverick contact page",
+      "imageDate": "Unknown",
+      "observed": "Visually inspected separate courtyard/apron-facing WELCOME entrance: stone piers, high glazing, silver canopy, date palm circular planter, clipped hedge planting. Do not apply this facade to road-facing sign wall without confirming location."
+    },
+    {
+      "url": "https://www.flymaverick.com/contact-us",
+      "provider": "Owner",
+      "observed": "Confirms6075 S Las Vegas Blvd and links terminal photograph."
+    },
+    {
+      "url": "https://www.maverickhelicopter.com/media-downloads/2016-Maverick-Helicopters-Las-Vegas-Terminal-Highlight-Sheet.pdf",
+      "status": "404 again; flymaverick and plural-domain alternatives also404. Search snippet is not a visually inspected floorplan."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0787062,-115.1720479,416m/data=!3m1!1e3",
+      "provider": "Google satellite Airbus/CNES/Maxar/Vexcel",
+      "observed": "Visually inspected distinct dark-roof west volume, narrow light east roof, north curving drive and planted west border. Exact facade ownership remains uncertain; preserve footprint and ramps. Capture date unknown, copyright2026 is not image date."
+    },
+    {
+      "url": "https://find.shell.com/us/fuel/10006335-4207-las-vegas-blvd-s/en_US",
+      "provider": "Shell official locator",
+      "observed": "Confirms4207 location, convenience store and fuels; no site-specific photograph from this page."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Shell+4207+Las+Vegas+Boulevard+South",
+      "provider": "Google Maps photo by Dave Shapiro",
+      "imageDate": "August2021",
+      "photoId": "CIHM0ogKEICAgICaiZvZiwE",
+      "observed": "Visually inspected Green Valley Grocery white fascia/green lettering, glazed front, low fan palms and tall date palm. Conflicts with older SMART/MINI MART branding in other photos; do not silently mix dates."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.089519,-115.1721178,104m/data=!3m1!1e3",
+      "provider": "Google satellite Airbus/Maxar/Vexcel",
+      "observed": "Visually inspected northern planting strip with three palms west of north driveway, northeast tree bed, canopy south of strip, curved store corner. Preserve driveway gaps and existing street boundaries. Capture date unknown."
+    }
+  ],
+  "decisions": [
+    "Prioritize Maverick planting and helicopter relief silhouette; retain approximate terminal footprint and unresolved official courtyard facade/interior requirements.",
+    "Shell northern planting is corroborated; preserve traffic routes. Branding conflict requires current Street View before changing lettering. No invented advertisements/prices."
+  ],
+  "pending": "Current Street View branding/date confirmation and official terminal public floor plan remain unresolved; no branding or interior changes in this pass.",
+  "inferredDimensions": [
+    "Maverick hedge crowns 2.3m wide x1.8m high in existing 3m beds; positions retained, not surveyed.",
+    "Maverick small palms 1.6m trunks and approximately1.35m frond reach; generic leaf silhouette, fan shape remains a fidelity discrepancy.",
+    "Shell north palms at x54/69/79,z2928 with5.5/6/5.5m trunks and2.55m frond reach, inferred from satellite and dated photographs; preserve northern driveway."
+  ]
+}
