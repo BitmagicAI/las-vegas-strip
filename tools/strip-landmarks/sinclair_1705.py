@@ -50,7 +50,7 @@ def exterior(B):
  # Small utility cabinets at south end; pylon separated from pump circulation.
  G.box('sc17-white-paint',(-1,1.1,0),(.9,1.85,.7),True)
  G.box('sc17-white-paint',(L+1.2,3.2,-15),(.24,6,.24),True)
- G.box('sc17-white-paint',(L+1.2,6,-15),(1.8,1.65,.18));G.box('sc17-green-paint',(L+1.2,6,-15.11),(1.65,1.5,.05));G.text('Sinclair',(L+1.2,6.25,-15.17),.3,'sc17-white-letter');G.text('FUEL',(L+1.2,5.62,-15.17),.29,'sc17-white-letter')
+ G.box('sc17-white-paint',(L+1.2,6,-15),(1.8,1.65,.18));G.box('sc17-green-paint',(L+1.2,6,-15.11),(1.65,1.5,.05));G.text('Sinclair',(L+1.2,6.25,-15.17),.3,'sc17-white-letter');G.box('sc17-white-paint',(L+1.2,5.65,-15.16),(1.65,.75,.06));G.text('7',(L+1.2,5.55,-15.21),.65,'sc17-red-letter');G.text('ELEVEN',(L+1.2,5.34,-15.22),.14,'sc17-green-paint')
  samples=[]
  for u in np.arange(-2,L+2,1.1):
   for w in np.arange(-15,-2,1.1):

@@ -20,11 +20,15 @@
     {
       "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15095,-115.15215&zoom=20&basemap=satellite",
       "observed": "Overhead confirms narrow long canopy parallel to shop, three longitudinal pump bays, store roof dark pitched end sections and flat central equipment well. Canopy dimensions fitted approximately24x5.5m; date unspecified."
+    },
+    {
+      "url": "docs/project-records/market-sinclair-refinement/research.json",
+      "observed": "2026-11-04 reference register: January2026 Street View, satellite, official source limitations and inferred sign dimensions."
     }
   ],
   "remaining": [
     "Canopy fitted from satellite approximately24x5.5m;4.1m clearheight estimated, not surveyed",
-    "Dinosaur sculpture/logo and exact sign lettering unfinished",
+    "Lower pylon 7/ELEVEN panel refined; dinosaur sculpture/logo, canopy sweep and exact branding unfinished",
     "No shop interior access; glazing backed by shell",
     "Roadside bus shelter and mature trees not added",
     "Property asphalt tie-in has inherited mapped pavement strips; exact grading unverified"
@@ -34,11 +38,15 @@
     "support": "build/city-exteriors/sinclair-1705-collision.json",
     "walk": "build/city-exteriors/sinclair-1705-walk.json",
     "ownership": "build/city-exteriors/sinclair-1705-ownership-audit.json",
-    "visualReview": "Three installed views inspected. Narrowed storefront glazing and corrected canopy sign panel, then front/pump views reinspected.287 support samples and6walkinglegsPASS.10oldtri removed.3084 authored triangles15batches/0.32MB. No photoreal completion claim."
+    "visualReview": "Three installed views inspected. Narrowed storefront glazing and corrected canopy sign panel, then front/pump views reinspected.287 support samples and6walkinglegsPASS.10oldtri removed.3084 authored triangles15batches/0.32MB. No photoreal completion claim.",
+    "refinementCheckpoint": "docs/project-records/market-sinclair-refinement/checkpoint.json",
+    "refinementViews": "docs/project-records/market-sinclair-refinement/views.md",
+    "refinementWalk": "docs/project-records/market-sinclair-refinement/actual-walk-after.json",
+    "refinementReview": "2026-11-04: three matching daylight pairs per building and both actual-walk endpoints per building inspected.337 combined support samples,12CPU legs and12actual legs after passed; before also12CPU+12actual. Original sign geometry only. Sinclair front p95 outlier28.1ms repeated at17.8ms versus18.6baseline; both retained; all prior fullsite gaps retained."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/sinclair1705-exterior.glb": "d56996697962869b204b581de46bf30d8b2f86fd3534c63658ccd7c4ce5f588d",
+      "build/strip-landmarks/sinclair1705-exterior.glb": "8cecd02899aec3a98e31988387f3ece516d4302b08f59815fe374ebe93fd9f1e",
       "build/strip-landmarks/sinclair1705-exterior-collision.json": "220eb7f4b3a8cbee21cb23b10c8d05d3d0d981161d96705e48911617cfa2382c"
     }
   }

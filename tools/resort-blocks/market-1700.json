@@ -15,11 +15,15 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15085,-115.15265&heading=270&pitch=0",
       "imageDate": "January2026",
       "observed": "Fullfrontage viewed acrossstreet: roofsignWHITE CROSS MARKET, green upper panel, flatroof,bluecoping. OldmappedNativeAmericanJewelry label is stale."
+    },
+    {
+      "url": "docs/project-records/market-sinclair-refinement/research.json",
+      "observed": "2026-11-04 reference register: January2026 Street View, satellite, official source limitations and inferred sign dimensions."
     }
   ],
   "remaining": [
     "Height4.5mestimated",
-    "Fine sign font and logo missing",
+    "Heavy MARKET fascia lettering refined; exact sign font, remaining roof lettering and logo still approximate",
     "Rear service treatment inferred",
     "Closed property has no interior access",
     "Weathering is an original procedural approximation; exact damage pattern and panel distortion remain unmatched."
@@ -29,11 +33,15 @@
     "support": "build/city-exteriors/market-1700-collision.json",
     "walk": "build/city-exteriors/market-1700-walk.json",
     "ownership": "build/city-exteriors/market-1700-ownership-audit.json",
-    "visualReview": "Three installed views inspected. Missing UVs fixed and overly large regular chips reduced after close-up review. 50 support samples and six walking legs passed. 26 old triangles removed. 6787 authored triangles/17 batches/0.55 MB optimized. No photoreal completion claim."
+    "visualReview": "Three installed views inspected. Missing UVs fixed and overly large regular chips reduced after close-up review. 50 support samples and six walking legs passed. 26 old triangles removed. 6787 authored triangles/17 batches/0.55 MB optimized. No photoreal completion claim.",
+    "refinementCheckpoint": "docs/project-records/market-sinclair-refinement/checkpoint.json",
+    "refinementViews": "docs/project-records/market-sinclair-refinement/views.md",
+    "refinementWalk": "docs/project-records/market-sinclair-refinement/actual-walk-after.json",
+    "refinementReview": "2026-11-04: three matching daylight pairs per building and both actual-walk endpoints per building inspected.337 combined support samples,12CPU legs and12actual legs after passed; before also12CPU+12actual. Original sign geometry only. Sinclair front p95 outlier28.1ms repeated at17.8ms versus18.6baseline; both retained; all prior fullsite gaps retained."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/market1700-exterior.glb": "177238e9427922e65869fedc7710db74ebeaff03ec289ff48a5605ad019dbff5",
+      "build/strip-landmarks/market1700-exterior.glb": "288e390f930fe39836a584ab8530f388bc5a8f31097341256a87f46db55ab381",
       "build/strip-landmarks/market1700-exterior-collision.json": "0d4a4dc0ce9b002f1dcd334d8c7f922928f6c091c55c4d371820a32c5bb195e5"
     }
   }
