@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204458387,
+ "bytes": 1204483109,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -306,8 +306,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_0.bin",
-   "bytes": 1580867,
-   "sha256": "0efadefe7a96f1722ab331187fa74522f67f4025988575be5a0f578b439c0f48",
+   "bytes": 1583253,
+   "sha256": "568831693011b35dec01c89103434dd8b0e53d7cada23cd4512d3e62e08951fd",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "5b6841329ab30498dbcd74689c9b99b1a185bc1fbd25abf25465b739345436dc",
+   "sha256": "9ae1c7e7de20ca6e77685daccb05a58c225651c4dadd3cdd3fb7e1504c4b90d3",
    "kind": "runtime cell manifest"
   },
   {
@@ -10254,8 +10254,8 @@
   },
   {
    "path": "build/strip-landmarks/planetHollywood-exterior.glb",
-   "bytes": 7323916,
-   "sha256": "38da16543cfde081bc092c3cf11afee71951e9d272f824125712ad7a60381fff",
+   "bytes": 7346252,
+   "sha256": "ef82a0fedf1a0e029212dad45ab917fc16a9eec0fb501d000cd0afdc703ffcd3",
    "kind": "optimized"
   },
   {

@@ -6258,11 +6258,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Rebuild open second-floor bridge approach and atrium connection using owner plan; current glazing closes the approach.",
+    "Existing bridge atrium is open after operating its two paired doors: 14 actual forward/return segments verified 2026-11-04. Refine its facade/atrium spatial fidelity against owner plan; old uninterrupted-glazing diagnosis superseded by later portal work.",
     "Refine silver projecting retail pavilion massing, corner curvature and accurate tenant frontage sizes.",
     "Verify restaurant terrace access and route back to street; floors/guards alone do not establish access.",
-    "Replace plain purple billboard graphic with original appropriately scaled display design; no copyrighted ad imagery copied.",
-    "Neutral daylight material review remains outstanding."
+    "Original skyline display replaces blank billboard and is reviewed at five daylight cameras. Actual advertising/animation and fine LED appearance remain intentionally outside this original design pass.",
+    "Five neutral daylight views reviewed; silver pavilion massing, tenant bays and detailed material fidelity still require refinement. Front/bridge exceed16.7msbudget; no sustained60fps claim."
    ],
    "record": "tools/resort-blocks/harmon-corner.json",
    "buildings": [
@@ -6282,12 +6282,12 @@
      "tools/resort-blocks/harmon-corner.json"
     ],
     "builders": [
+     "tools/city-exteriors/check-harmon-preservation.py",
      "tools/city-exteriors/open-harmon-bridge-portals.py",
      "tools/strip-landmarks/planet_hollywood.py",
+     "tools/city-exteriors/audit-harmon-refinement.py",
      "tools/city-exteriors/test-planet.mjs",
-     "tools/strip-landmarks/build_planet_hollywood.py",
-     "tools/city-exteriors/audit-miracle-mile.py",
-     "tools/city-exteriors/stair-harmon-east-lift.mjs"
+     "tools/strip-landmarks/build_planet_hollywood.py"
     ]
    },
    "acceptance": [

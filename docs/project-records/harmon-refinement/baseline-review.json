@@ -1,0 +1,110 @@
+{
+  "referenceUrl": "https://static.wixstatic.com/media/f92106_2a6038f622b6449984a84b76d263fa68~mv2.jpeg",
+  "provider": "Harmon Corner owner",
+  "imageDate": "June 2026",
+  "accessed": "2026-11-04",
+  "visualInspection": "Silver projecting retail volumes frame an open bridge-level passage. Upper restaurant terrace is recessed below the LED. LED has curved corner and large-scale advertising. Reference only, no advertisement copied.",
+  "installedInspection": "All five neutral daylight baseline captures inspected. Existing bridge portal is visibly cut open, superseding the older claim of uninterrupted glazing; actual traversal remains under test. Retail volume remains generic, flat continuous bands instead of projecting pavilions. Billboard is blank purple with undersized generic lettering. Terrace floor and guards visible but street return not established. Back has coarse roof and service volumes.",
+  "baseline": [
+    {
+      "name": "front",
+      "eye": [
+        -40,
+        42,
+        900
+      ],
+      "target": [
+        74,
+        14,
+        809
+      ],
+      "p50": 26.100000143051147,
+      "p95": 29.299999952316284
+    },
+    {
+      "name": "back",
+      "eye": [
+        145,
+        40,
+        795
+      ],
+      "target": [
+        78,
+        14,
+        808
+      ],
+      "p50": 16.700000047683716,
+      "p95": 18.100000143051147
+    },
+    {
+      "name": "entry",
+      "eye": [
+        16,
+        3,
+        825
+      ],
+      "target": [
+        65,
+        9,
+        805
+      ],
+      "p50": 16.700000047683716,
+      "p95": 18
+    },
+    {
+      "name": "bridge",
+      "eye": [
+        80,
+        8,
+        875
+      ],
+      "target": [
+        79,
+        7,
+        825
+      ],
+      "p50": 30.5,
+      "p95": 39.59999990463257
+    },
+    {
+      "name": "terrace",
+      "eye": [
+        25,
+        15,
+        797
+      ],
+      "target": [
+        62,
+        9,
+        798
+      ],
+      "p50": 16.700000047683716,
+      "p95": 17.799999952316284
+    }
+  ],
+  "captureDirectory": "build/city-exteriors/harmon-refinement-baseline",
+  "decision": "Preserve installed bridge atrium and lift work. Test existing route before editing openings. Original display composition can replace plain purple later without copying the reference advertisement. No whole-block completion claim.",
+  "initialWalk": {
+    "result": "build/city-exteriors/harmon-refinement-walk-before/results.json",
+    "passed": false,
+    "observation": "First segment stopped at z835.52997. Screenshot inspected: closed portal door leaves visible. Opening interaction has not yet been exercised; this does not establish a blocked facade or traversable route."
+  },
+  "openedDoorWalk": {
+    "result": "build/city-exteriors/harmon-refinement-walk-open-before/results.json",
+    "passed": true,
+    "segments": 14,
+    "doorInteractionsAccepted": 2,
+    "endpointCapturesInspected": true,
+    "scope": "Existing bridge atrium between south and west portals, forward and return. Does not prove terrace access or continuous street route."
+  },
+  "displayDecision": "Original flat skyline bands and larger place lettering within unchanged LED envelope; no advertisement copied. Reuses existing materials. Source changes only three Harmon display material groups; all unrelated labels and collision identical.",
+  "installedViewsInspected": [
+    "front",
+    "back",
+    "entry",
+    "bridge",
+    "terrace"
+  ],
+  "installedObservation": "Larger place lettering and original skyline bands now visible at both street and bridge distances. Roof, terrace furniture, portal apertures and neighboring geometry visually retained. Facade remains a generic approximation and upper terrace street access is unverified.",
+  "performance": "p95 before29.3/18.1/18.0/39.6/17.8ms;after32.2/18.0/17.7/37.8/17.5ms. Front+9.9%,median26.1msunchanged. Front and bridge remain over16.7msbudget; no60fps or speedup claim."
+}

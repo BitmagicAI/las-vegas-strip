@@ -2,7 +2,7 @@
   "id": "harmon-corner",
   "name": "Harmon Corner",
   "status": "refinement-deferred",
-  "stage": "Installed second exterior pass; three screenshots inspected. Still generic compared with owner photograph; public bridge/atrium connection unresolved.",
+  "stage": "Original skyline display installed and five daylight views reviewed; existing bridge atrium route verified. Pavilion and terrace fidelity remain deferred.",
   "sources": [
     {
       "url": "https://www.harmoncorner.com/",
@@ -19,26 +19,28 @@
     }
   ],
   "remaining": [
-    "Rebuild open second-floor bridge approach and atrium connection using owner plan; current glazing closes the approach.",
+    "Existing bridge atrium is open after operating its two paired doors: 14 actual forward/return segments verified 2026-11-04. Refine its facade/atrium spatial fidelity against owner plan; old uninterrupted-glazing diagnosis superseded by later portal work.",
     "Refine silver projecting retail pavilion massing, corner curvature and accurate tenant frontage sizes.",
     "Verify restaurant terrace access and route back to street; floors/guards alone do not establish access.",
-    "Replace plain purple billboard graphic with original appropriately scaled display design; no copyrighted ad imagery copied.",
-    "Neutral daylight material review remains outstanding."
+    "Original skyline display replaces blank billboard and is reviewed at five daylight cameras. Actual advertising/animation and fine LED appearance remain intentionally outside this original design pass.",
+    "Five neutral daylight views reviewed; silver pavilion massing, tenant bays and detailed material fidelity still require refinement. Front/bridge exceed16.7msbudget; no sustained60fps claim."
   ],
   "evidence": [
     "build/city-exteriors/harmon-corner-before/",
     "build/city-exteriors/harmon-corner-after/",
     "build/city-exteriors/harmon-preservation.json",
-    "build/city-exteriors/harmon-terrace-results.json"
+    "build/city-exteriors/harmon-terrace-results.json",
+    "docs/project-records/harmon-refinement/baseline-review.json"
   ],
   "tests": {
     "terrace": "306 floor support and head clearance samples passed with city collision present.",
     "preservation": "All unrelated Planet Hollywood meshes and labels identical (order-independent compare).",
-    "verify": "Passed WebGPU playing,60fps default spawn,2960bodies; not route benchmark."
+    "verify": "Passed WebGPU playing,60fps default spawn,2960bodies; not route benchmark.",
+    "bridgeAtrium": "14 actual installed forward/return segments PASS before and after, using two registered Door interactions; all four endpoint images inspected."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/planetHollywood-exterior.glb": "34dfe6a919f9c3a66c55587d0793dfcedd18446b6558b583a0f592a1399015cf"
+      "build/strip-landmarks/planetHollywood-exterior.glb": "b566fcf30cc11af7bfb134cd690b37b75421b147f530fc0345089ddfdadaf9e5"
     }
   }
 }
