@@ -1,0 +1,23 @@
+{
+  "reviewed": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://special.library.unlv.edu/ark:/62930/d18911z4q",
+      "date": "2017-02-28 surveyphotos /2017-07-13 surveytext",
+      "observed": "Institutional UNLV/NeonMuseum survey describes V sign with sphere above TOD, boardedproperty. Text read; photo download page presents agreement, no agreementaccepted and photograph notyetvisuallyinspected. Historical appearance mustbecomparedto2026StreetView."
+    },
+    {
+      "url": "https://www.wiseguysvegas.com/faqs",
+      "observed": "FAQ still names1511MainStreet and adjacentparking; this does not establish currentoperation."
+    },
+    {
+      "url": "https://www.wiseguysvegas.com/",
+      "observed": "Current landingpage is TownSquare6593SBlvd and describes MainStreet2021opening historically. Do nottransfer TownSquareinterior/photos ontoMainStreet."
+    },
+    {
+      "url": "https://www.wiseguysvegas.com/images/faq-header.jpg",
+      "observed": "Official FAQimage request failed TLS via curl; web resizedimage timedout. Notvisuallyinspected, no validationbypass."
+    }
+  ],
+  "pending": "Inspect dated2026StreetView andsatellite once GPUbaselinejobs finish. Preserve MainStreetoriginalwhitebricktextures, omittedmurals andbothsitesestimateddimensions."
+}

@@ -5,6 +5,7 @@
     128
   ],
   "claims": "janiverse confirmed previousturn",
-  "stage": "Baseline setup; no geometrychanges",
-  "pending": "Capturebaseline, inspect official andMapsreferences, scope originals, preserve existingtextures/interiors, optimizeincludingWebP,bakeonce,allstep7"
+  "stage": "Tod3baselineviews inspected; front clips partofsign, add a dedicated matching signview if refining sign. Main3views+12leg actualwalk still running63446. BothCPUwalks6legs each passed. No geometrychanges.",
+  "pending": "Finish /tmp/tod-before.log,/tmp/main1511-before.log,/tmp/tod-main-walk-before.log; inspectallimages/results. CPUbaseline session11042. Then Mapsresearch withoutGPUoverlap and original scopedrefinement; allstep7.",
+  "pr": 499
 }
