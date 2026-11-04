@@ -1,0 +1,30 @@
+{
+  "accessed": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://www.puncharc.com/1700",
+      "provider": "PUNCH architect",
+      "imageDate": "2020\u20132022 project period",
+      "observed": "Architect explicitly labels White Cross redevelopment UNBUILT; proposed two-story east/west additions and patios must not be modeled as current building."
+    },
+    {
+      "url": "https://special.library.unlv.edu/ark:/62930/d1s756s60",
+      "provider": "UNLV Southern Nevada Neon Survey",
+      "imageDate": "2017-02-15 photographs;2017-08-11 survey",
+      "observed": "Historical site and sign provenance only. Blue-on-white east market signage belongs to separate market1700 ownership. Text does not establish current western annex sign condition. Linked original images not yet inspected; no image reuse."
+    },
+    {
+      "url": "https://curaleaf.com/dispensary/nevada/curaleaf-nv-las-vegas",
+      "provider": "Curaleaf official location URL",
+      "observed": "Direct text fetch failed non-retryably; no architectural conclusion from inaccessible page."
+    }
+  ],
+  "pending": [
+    "Fresh dated Street View and satellite inspection once GPU baseline sequence finishes.",
+    "Current north annex branding versus old2024record.",
+    "Branch-specific official exterior photograph when accessible; do not substitute unbuilt architect renderings or unrelated production-facility plans."
+  ],
+  "decisions": [
+    "Retain known historical/unbuilt distinctions and preserve separate east market ownership. No new geometry chosen before fresh visual references."
+  ]
+}
