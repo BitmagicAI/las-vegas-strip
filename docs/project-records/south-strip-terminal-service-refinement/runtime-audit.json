@@ -1,0 +1,40 @@
+{
+  "newLfsBytes": 1648758,
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_3.bin",
+      "bytes": 324765,
+      "sha256": "7cdfa3d21996486c6afdf55a24357afbc8458323d2cd4578ade47f106fecc3c6"
+    },
+    {
+      "path": "runtime-assets/baked/cells/cell-0_5.bin",
+      "bytes": 33856,
+      "sha256": "3def0f6da3622f9c86a8e35ce4ab70460cecc2bfa32cf763453153d69dc67ce7"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "1c9a8dae9e827a8389a63619a3d8b7bb0470045a2d517694a2971d627bfb5868"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/maverickTerminal-exterior-collision.bin",
+      "bytes": 1980,
+      "sha256": "1ec515c58bac43933b528501e9b71319095f5f6fe0af08f95ce87bd0bab26a77"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/maverickTerminal-exterior.glb",
+      "bytes": 792840,
+      "sha256": "1377d24ea1208c63df44134177c2692b19ef3e1fe59bfd5353b52214c53ac0be"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/southShell-exterior.glb",
+      "bytes": 481516,
+      "sha256": "dac1eca3f01893217156b990de77b131b02ceffb8392c918723fc6a6752d42e0"
+    }
+  ],
+  "unchangedCells": 90,
+  "changedCells": [
+    "cell-0_3.bin",
+    "cell-0_5.bin"
+  ]
+}

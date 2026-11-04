@@ -2,6 +2,9 @@
 Satellite-traced west terminal; height and bay counts are photo estimates."""
 from common import *
 from forum_shops import facade_frame
+from terminal_service_planting import hedge,palm
+from retail_signs import plate
+from shapely.affinity import scale,translate
 KEY='maverickTerminal'
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/terminal';B.detail=0
@@ -39,9 +42,14 @@ def exterior(B):
  G.text('HELICOPTERS',(11,2.75,-.13),.32,'mv-dark')
  # Raised helicopter silhouette, drawn as sign relief, not a vehicle prop.
  outline=[(-2,.1),(-1.7,.65),(-.7,1),(.4,.85),(1.1,.4),(3.4,.55),(3.55,.9),(3.8,.9),(3.7,-.1),(1,-.15),(.3,-.45),(-1.2,-.45)]
- for i in range(1,len(outline)-1):B.face('mv-dark',[G.p(10+outline[j][0],5+outline[j][1],-.14) for j in [0,i,i+1]])
- G.path('mv-metal',[(7.2,6.03,-.18),(13.4,6.03,-.18)],.035,6)
- G.path('mv-metal',[(8.2,4.4,-.18),(8.5,4.25,-.18),(11.3,4.25,-.18)],.04,6)
+ # Mirror local X: facade frame reverses screen horizontal. Nose faces viewer-left.
+ relief=Polygon(outline).difference(Polygon([(-1.7,.15),(-1.45,.52),(-.8,.72),(-.8,.15)]))
+ relief=relief.difference(Polygon([(-.63,.15),(-.63,.76),(-.12,.69),(.33,.22)]))
+ relief=translate(scale(relief,xfact=-1,yfact=1,origin=(0,0)),10,5)
+ plate(G,relief,'mv-metal',-.18,.055)
+ G.path('mv-metal',[(7.2,6.03,-.21),(13.4,6.03,-.21)],.035,6)
+ G.path('mv-metal',[(11.8,4.4,-.21),(11.5,4.25,-.21),(8.7,4.25,-.21)],.04,6)
+ G.path('mv-metal',[(6.33+.23*math.cos(a),5.54+.23*math.sin(a),-.21) for a in np.linspace(0,math.tau,25)],.035,6)
  # Roof membrane and service equipment; screened behind parapet.
  for x,z in [(78,4110),(91,4110),(78,4133),(95,4140),(121,4110),(121,4174)]:
   h=6.2 if x<110 else 5.3;F.box('mv-metal',(x,h+.42,z),(2.1,.84,1.7))
@@ -59,11 +67,13 @@ def exterior(B):
    B.planar('mv-gravel',cell.intersection(landscape),.05,True)
  # Bridge the existing .28m roadside curb with a gradual driveway apron.
  for xa,xb,ya,yb in [(46,49,.04,.34),(49,53,.34,.34),(53,59,.34,.04)]:
-  B.face('mv-asphalt',[(xa,ya,4091),(xb,yb,4091),(xb,yb,4097),(xa,ya,4097)],True)
+  B.upface('mv-asphalt',[(xa,ya,4091),(xb,yb,4091),(xb,yb,4097),(xa,ya,4097)],True)
  for z in np.arange(4158,4187,2.8):F.box('mv-line',(76,.15,z),(5,.025,.07))
- # Small planting beds are rough mulch; no placeholder sphere shrubs.
+ # Reference-supported clipped hedges in the existing beds; dimensions inferred.
  for z in [4105,4133,4143]:
   F.box('mv-stone',(58,.28,z),(3,.5,3));F.box('mv-soil',(58,.55,z),(2.75,.06,2.75))
+  hedge(B,58,z,seed=int(z))
+ for z in [4109,4138]:palm(B,56,z,h=1.6,y=.05,scale=.45)
  for z in np.arange(4116,4125,2):F.tube('mv-metal',(61,.12,z),(61,1,z),.085,10)
  B.detail=0
  return dict(key=KEY,name='Maverick Las Vegas terminal exterior',center=[88,0,4137],bounds=[41,4087,132,4189],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

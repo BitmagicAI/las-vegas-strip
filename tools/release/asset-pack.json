@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1216846895,
+ "bytes": 1217620413,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -324,8 +324,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_3.bin",
-   "bytes": 323109,
-   "sha256": "16281820eacb2a319198affaa9267bd17231de2da0b1ca80ea30251ec8fc6848",
+   "bytes": 324765,
+   "sha256": "7cdfa3d21996486c6afdf55a24357afbc8458323d2cd4578ade47f106fecc3c6",
    "kind": "original"
   },
   {
@@ -336,8 +336,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_5.bin",
-   "bytes": 31102,
-   "sha256": "fb092ab15f6a28268e82aefaa4fd77c66cc14abe38ad158556651441ac9f4b0f",
+   "bytes": 33856,
+   "sha256": "3def0f6da3622f9c86a8e35ce4ab70460cecc2bfa32cf763453153d69dc67ce7",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "0dd4282cee265db48b304eec8006cd6b34f30c4cc1fbdc2745a5408b06df8af4",
+   "sha256": "1c9a8dae9e827a8389a63619a3d8b7bb0470045a2d517694a2971d627bfb5868",
    "kind": "runtime cell manifest"
   },
   {
@@ -9553,13 +9553,13 @@
   {
    "path": "build/strip-landmarks/maverickTerminal-exterior-collision.bin",
    "bytes": 1980,
-   "sha256": "1d344b407c9a5733d98ebc52cfaff7ba9107439ca48b4cc3fc348a0b5e7fd0d5",
+   "sha256": "1ec515c58bac43933b528501e9b71319095f5f6fe0af08f95ce87bd0bab26a77",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/maverickTerminal-exterior.glb",
-   "bytes": 315140,
-   "sha256": "2665122725e60fe00de435814c45fcd72b585df51fbfe7b960d01db60ad60594",
+   "bytes": 792840,
+   "sha256": "1377d24ea1208c63df44134177c2692b19ef3e1fe59bfd5353b52214c53ac0be",
    "kind": "optimized"
   },
   {
@@ -10842,8 +10842,8 @@
   },
   {
    "path": "build/strip-landmarks/southShell-exterior.glb",
-   "bytes": 190108,
-   "sha256": "089c9ffd3e4117d30e35d2b96b45d7202c2ac827c707184f9e766e305489efe1",
+   "bytes": 481516,
+   "sha256": "dac1eca3f01893217156b990de77b131b02ceffb8392c918723fc6a6752d42e0",
    "kind": "optimized"
   },
   {

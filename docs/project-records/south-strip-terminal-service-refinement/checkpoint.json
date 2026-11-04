@@ -4,9 +4,20 @@
     111,
     112
   ],
-  "stage": "Records read; claims posted; research and baseline next",
-  "claims": "111 confirmed janiverse;112 assignment pending after /claim, verify before geometry edits",
+  "stage": "Verified scoped pass ready to merge PR492",
+  "claims": "Both111/112 confirmed assigned to janiverse",
   "scope": "Maverick visitor terminal/east service wing and South Strip Shell/grocery; preserve existing roads, site ramps, neighbor ownership and all interiors",
-  "pending": "Confirm112 claim, open draft targeting next; research official/site photos and Google Earth/Street View. Capture matching front-first baseline views and actual installed walks before geometry. No geometry edits or GPU jobs active.",
-  "previous": "PR491 merged next12aa573;108/109 explicitly closed. All step7 passed;18actualsegments,7matchingviews;91/92cells unchanged;14411250newLFSbytes. Earlier Nirvana failed baseline route preserved, corrected route passed."
+  "pending": "Commit and push only own changes; ready+merge492 to next; explicitly close111/112 and run picker. All step7 local checks passed; no GPU jobs remain.",
+  "previous": "PR491 merged next12aa573;108/109 explicitly closed. All step7 passed;18actualsegments,7matchingviews;91/92cells unchanged;14411250newLFSbytes. Earlier Nirvana failed baseline route preserved, corrected route passed.",
+  "pr": 492,
+  "baseline": "Six matching baseline views inspected. Shell actual walk passed 12 segments. Maverick actual walk failed first segment despite CPU Rapier 10-leg pass; all three failed captures retained. CPU support checks passed.",
+  "research": "Official Maverick courtyard photograph differs from roadside sign facade; placement must not be conflated. Shell2021GVG branding conflicts with other photos; retain uncertainty and confirm current Street View before changing letters.",
+  "sourceChanges": "Original hedges and palms, mirrored cutout helicopter relief, Shell north palms. Existing Maverick apron upface correction changes only six triangle winding; no road edits.",
+  "checks": {
+    "typecheck": "passed",
+    "cpuRapier": "Maverick10 and Shell12 legs passed after installation",
+    "supportHeadroom": "Maverick75 and Shell44 passed",
+    "review": "passed before final records update",
+    "actualWalk": "Passed22segments: Maverick10,Shell12; four endpoints inspected."
+  }
 }

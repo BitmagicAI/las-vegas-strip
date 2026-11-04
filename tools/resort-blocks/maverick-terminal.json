@@ -17,26 +17,57 @@
     {
       "url": "https://www.google.com/maps/@36.0787062,-115.1720479,180m/data=!3m1!1e3",
       "observed": "Satellite inspected: mapped80x19m rectangular roof is east-side hangar/service wing; main visitor terminal is separate dark-roof volume to west with front canopy and north driveway. Do not decorate hangar as terminal. Southern apron,west landscape strip andnorth access road."
+    },
+    {
+      "url": "https://lasvegasthenandnow.com/wp-content/uploads/2023/04/Maverick-Helicopter-Building-1024x768.jpg",
+      "provider": "Las Vegas Then and Now",
+      "imageDate": "April2023 upload; capture date unconfirmed",
+      "observed": "Visually inspected red thick serif Maverick lettering with dark border, grey helicopter relief nose viewer-left with cockpit openings and tail ring; tan panel grid, trimmed hedge columns and small fan palms at west entrance."
+    },
+    {
+      "url": "https://www.flymaverick.com/images/las-vegas-terminal-800x400.jpg",
+      "provider": "Official Maverick contact page",
+      "imageDate": "Unknown",
+      "observed": "Visually inspected separate courtyard/apron-facing WELCOME entrance: stone piers, high glazing, silver canopy, date palm circular planter, clipped hedge planting. Do not apply this facade to road-facing sign wall without confirming location."
+    },
+    {
+      "url": "https://www.flymaverick.com/contact-us",
+      "provider": "Owner",
+      "observed": "Confirms6075 S Las Vegas Blvd and links terminal photograph."
+    },
+    {
+      "url": "https://www.maverickhelicopter.com/media-downloads/2016-Maverick-Helicopters-Las-Vegas-Terminal-Highlight-Sheet.pdf",
+      "status": "404 again; flymaverick and plural-domain alternatives also404. Search snippet is not a visually inspected floorplan."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0787062,-115.1720479,416m/data=!3m1!1e3",
+      "provider": "Google satellite Airbus/CNES/Maxar/Vexcel",
+      "observed": "Visually inspected distinct dark-roof west volume, narrow light east roof, north curving drive and planted west border. Exact facade ownership remains uncertain; preserve footprint and ramps. Capture date unknown, copyright2026 is not image date."
     }
   ],
   "remaining": [
     "West terminal outline traced approximately from satellite; no measured drawing",
-    "Landscaping planters lack planted hedges/palms",
     "Sign relief and typeface not exact; front wall has excessive unarticulated area",
     "Airport apron surroundings and offsite ground remain incomplete",
-    "No interior created; official floorplan link404"
+    "No interior created; official floorplan link404",
+    "New palms use a generic pinnate silhouette; photographed small fan crowns need closer matching.",
+    "Official courtyard facade location remains uncertain; do not conflate it with roadside sign wall."
   ],
   "dimensions": "Mapped east wing111.437..131.365,4101.099..4181.461. Unmapped visitor terminal west footprint must be traced using satellite scale; height from front photograph is uncertain.",
   "implemented": [
     "Separate west visitor terminal and mapped east service wing",
     "Panel joints,parapets,glazed entrance,silver canopy,raised lettering and helicopter sign relief",
-    "North/east glazing,service doors,roof equipment,forecourt and gradual roadside driveway transition"
+    "North/east glazing,service doors,roof equipment,forecourt and gradual roadside driveway transition",
+    "Three original clipped hedges and two small palms in existing planting strip",
+    "Grey raised helicopter relief with cockpit openings, nose facing viewer-left",
+    "Existing driveway apron surface winding corrected; unchanged surface extents/elevations, no road geometry edits"
   ],
   "validation": {
     "support": "184 support/headroom checks passed",
     "walk": "5legs each direction pass after local apron smooths existing curb",
     "visual": "Final front,north views inspected; aerial inspected before local ramp/sign alignment fixes",
-    "performance": "fixed960x540 aerial16.6ms p50/18ms p95; notfullroutebenchmark"
+    "performance": "fixed960x540 aerial16.6ms p50/18ms p95; notfullroutebenchmark",
+    "refinement492": "All22 installed actual segments passed (Maverick10/Shell12), four endpoint images inspected. CPU support/headroom75/44 and Rapier10/12 passed. Six identical-camera neutral daylight before/after views inspected; p95 delta0..+1.8ms near60Hz cap. Single shared bake current;90/92cells unchanged,optimized asset pack and public/block checks pass. Local smoke9stops placed,0errors; all step7 local checks passed."
   },
   "evidence": [
     "build/city-exteriors/maverick-final/maverick-front.png",
@@ -44,12 +75,16 @@
     "build/city-exteriors/maverick-final/maverick-aerial.png",
     "build/city-exteriors/maverick-collision.json",
     "build/city-exteriors/maverick-walk.json",
-    "build/city-exteriors/maverick-ownership-audit.json"
+    "build/city-exteriors/maverick-ownership-audit.json",
+    "docs/project-records/south-strip-terminal-service-refinement/actual-walk-after.json",
+    "docs/project-records/south-strip-terminal-service-refinement/research.json",
+    "docs/project-records/south-strip-terminal-service-refinement/performance-comparison.json",
+    "docs/project-records/south-strip-terminal-service-refinement/source-audit.json"
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/maverickTerminal-exterior.glb": "39423e79a5f4a3226377418b5811c4caa714e9f875dabee7b977dd66122c24ad",
-      "build/strip-landmarks/maverickTerminal-exterior-collision.json": "a2ab44f3dbb75e3498e96eaa7bbd5f45578198448b78dd904dce7136d70778c1"
+      "build/strip-landmarks/maverickTerminal-exterior.glb": "7d556ff39ef53648574209d378ace618594887bdc9a90109fc7f5ff7d6d44efa",
+      "build/strip-landmarks/maverickTerminal-exterior-collision.json": "b4ec6b41421aef58d8003b9f74dcb01021d2fceb855dfba2e9008887f8c04979"
     }
   }
 }

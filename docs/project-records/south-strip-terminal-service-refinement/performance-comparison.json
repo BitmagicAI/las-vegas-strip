@@ -1,0 +1,59 @@
+{
+  "method": "960x540 DPR1 ultra neutral daylight, identical cameras,900 settle frames then streaming quiet+60frames;180 frame samples per view. Frame-time measurements near display cap, no speedup claim.",
+  "views": [
+    {
+      "building": "maverick",
+      "view": "front",
+      "beforeP50": 16.7,
+      "afterP50": 16.7,
+      "beforeP95": 17.5,
+      "afterP95": 17.5,
+      "deltaP95": 0.0
+    },
+    {
+      "building": "maverick",
+      "view": "north",
+      "beforeP50": 16.6,
+      "afterP50": 16.8,
+      "beforeP95": 17.8,
+      "afterP95": 18.7,
+      "deltaP95": 0.9
+    },
+    {
+      "building": "maverick",
+      "view": "aerial",
+      "beforeP50": 16.6,
+      "afterP50": 16.6,
+      "beforeP95": 18.2,
+      "afterP95": 19,
+      "deltaP95": 0.8
+    },
+    {
+      "building": "south-shell",
+      "view": "front",
+      "beforeP50": 16.6,
+      "afterP50": 16.7,
+      "beforeP95": 17.8,
+      "afterP95": 19,
+      "deltaP95": 1.2
+    },
+    {
+      "building": "south-shell",
+      "view": "store",
+      "beforeP50": 16.7,
+      "afterP50": 16.8,
+      "beforeP95": 17.5,
+      "afterP95": 19.3,
+      "deltaP95": 1.8
+    },
+    {
+      "building": "south-shell",
+      "view": "aerial",
+      "beforeP50": 16.7,
+      "afterP50": 16.7,
+      "beforeP95": 18,
+      "afterP95": 18.9,
+      "deltaP95": 0.9
+    }
+  ]
+}

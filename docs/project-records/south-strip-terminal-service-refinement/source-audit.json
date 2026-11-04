@@ -1,0 +1,19 @@
+{
+  "maverickTerminal": {
+    "addedSourceFaces": 18640,
+    "removedSourceFaces": 76,
+    "newInvalidFaces": 0,
+    "collisionByteIdentical": false,
+    "collisionChange": "Three existing planar apron quads now face upward, changing six triangles (winding and quad diagonal); surface vertex set and elevations unchanged. Actual baseline walk stopped at x47.37 despite standalone Rapier passing.",
+    "collisionUnorientedTrianglesIdentical": false,
+    "changedOrientedTriangles": 6
+  },
+  "southShell": {
+    "addedSourceFaces": 11850,
+    "removedSourceFaces": 0,
+    "newInvalidFaces": 0,
+    "collisionByteIdentical": true,
+    "collisionUnorientedTrianglesIdentical": true,
+    "changedOrientedTriangles": 0
+  }
+}

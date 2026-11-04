@@ -107,8 +107,8 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-diamond-inn` | M | P2 | 4 | Refine the exterior of Diamond Inn Motel |
 | `ext-nirvana-hotel` | M | P2 | 4 | Refine the exterior of Nirvana Hotel |
 | `ext-little-church-west` | L | P2 | 6 | Refine the exterior of Little Church of the West |
-| `ext-maverick-terminal` | M | P2 | 5 | Refine the exterior of Maverick Las Vegas Terminal |
-| `ext-south-strip-shell-grocery` | M | P2 | 4 | Refine the exterior of South Strip Shell / Green Valley Grocery |
+| `ext-maverick-terminal` | L | P2 | 6 | Refine the exterior of Maverick Las Vegas Terminal |
+| `ext-south-strip-shell-grocery` | M | P2 | 5 | Refine the exterior of South Strip Shell / Green Valley Grocery |
 | `ext-akita-plaza` | M | P2 | 5 | Refine the exterior of Akita Plaza retail frontage |
 | `ext-desert-oasis` | M | P2 | 5 | Refine the exterior of Desert Oasis apartments |
 | `ext-laughing-jackalope` | M | P2 | 4 | Refine the exterior of Former Laughing Jackalope |

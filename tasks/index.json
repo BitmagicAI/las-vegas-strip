@@ -6735,16 +6735,17 @@
    "id": "ext-maverick-terminal",
    "title": "Refine the exterior of Maverick Las Vegas Terminal",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
     "West terminal outline traced approximately from satellite; no measured drawing",
-    "Landscaping planters lack planted hedges/palms",
     "Sign relief and typeface not exact; front wall has excessive unarticulated area",
     "Airport apron surroundings and offsite ground remain incomplete",
-    "No interior created; official floorplan link404"
+    "No interior created; official floorplan link404",
+    "New palms use a generic pinnate silhouette; photographed small fan crowns need closer matching.",
+    "Official courtyard facade location remains uncertain; do not conflate it with roadside sign wall."
    ],
    "record": "tools/resort-blocks/maverick-terminal.json",
    "buildings": [
@@ -6765,10 +6766,12 @@
      "tools/resort-blocks/maverick-terminal.json"
     ],
     "builders": [
+     "tools/strip-landmarks/build_terminal_service_refinement.py",
+     "tools/city-exteriors/install-terminal-service-refinement.mjs",
      "tools/city-exteriors/test-maverick.mjs",
      "tools/city-exteriors/walk-maverick.mjs",
      "tools/strip-landmarks/build_maverick_terminal.py",
-     "tools/strip-landmarks/maverick_terminal.py"
+     "tools/strip-landmarks/export_terminal_service_refinement.py"
     ]
    },
    "acceptance": [
@@ -6787,12 +6790,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Northern planting,pylon and advertisements absent",
+    "Northern planting spacing/species approximate; pylon, advertisements and northeast planting remain absent",
     "Canopy emblem and lettering approximate",
     "Pump wear,asphalt patching and storefront interiors require refinement",
-    "Off-site terrain gaps still visible"
+    "Off-site terrain gaps still visible",
+    "Dated MINI MART and Green Valley Grocery photographs conflict; current branding needs Street View confirmation."
    ],
    "record": "tools/resort-blocks/south-strip-shell-grocery.json",
    "buildings": [
@@ -6818,8 +6822,10 @@
      "tools/resort-blocks/south-strip-shell-grocery.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-terminal-service-refinement.mjs",
      "tools/city-exteriors/test-south-shell.mjs",
      "tools/city-exteriors/walk-south-shell.mjs",
+     "tools/strip-landmarks/export_terminal_service_refinement.py",
      "tools/strip-landmarks/south_shell.py"
     ]
    },
