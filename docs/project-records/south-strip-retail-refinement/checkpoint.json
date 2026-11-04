@@ -1,0 +1,61 @@
+{
+  "issues": [
+    103,
+    104
+  ],
+  "base": "ec68b054eea8794b4635f1de00d503d82b17f9eb",
+  "stage": "All local checks passed; ready for PR489 merge",
+  "scope": "Nearby Harley-Davidson main/south wing and Pinball Hall, three mapped footprints grouped for one shared bake",
+  "pending": "Final public check after stage, commit, verify own-only origin/next..HEAD, push, ready/merge489 --merge, explicitly close103+104, picker.",
+  "pr": 489,
+  "reviewedBaselineViews": [
+    "harley-front",
+    "harley-back",
+    "harley-entry",
+    "harley-north",
+    "pinball-front",
+    "pinball-back",
+    "pinball-entry",
+    "pinball-sign"
+  ],
+  "baselineFindings": [
+    "Harley north sign is small plain text, no diamond silhouette; facade striping and entry canopy installed.",
+    "Parking has broad white paved strips and sparse site detail; preserve existing shared roads/paving pending ownership research."
+  ],
+  "sourceAudit": "source-audit.json: four Harley material groups and three Pinball roadside sign groups changed; collision byte-identical; no invalid changed faces.",
+  "geometry": "Harley original diamond welcome plate/round medallions/starburst, Pinball original curved red pylon and four starbursts on each face. Shapes and dimensions photo-inferred; preserve mapped footprints/heights and public-interior discrepancies.",
+  "optimization": "Both level and WebP passes exit0; installed harley ~0.55MiB and pinball ~0.39MiB. Jobs18109/58292/83801 completed.",
+  "installedReviewFinding": "Reversed WELCOME medallion order corrected; all four revision2 Harley captures inspected. Eight final views and four after-walk endpoints inspected.",
+  "reviewedInstalledViews": [
+    "pinball-front",
+    "pinball-back",
+    "pinball-entry",
+    "pinball-sign",
+    "harley-front",
+    "harley-back",
+    "harley-entry",
+    "harley-north",
+    "walk-south-strip-0",
+    "walk-return-0",
+    "walk-south-strip-1",
+    "walk-return-1"
+  ],
+  "pinballPerformance": "Same cameras/settings, p95 before18.7/18.4/18.6/18.9ms; after19.2/19.2/18.9/19.2ms. Largest increase0.8ms (4.3%); medians16.6-16.7ms. No speedup claim.",
+  "checksSoFar": [
+    "bitmagic check PASS",
+    "resort records valid",
+    "public0fail4existingwarnings",
+    "Harley527floor samples PASS",
+    "Pinball567floor samples PASS",
+    "source collision unchanged, 0 invalid changed faces",
+    "baseline actual12route segments PASS",
+    "installed actual12route segments PASS"
+  ],
+  "bake": {
+    "runsStarted": 1,
+    "job": 62012,
+    "log": "/tmp/south-strip-bake.log",
+    "status": "completed once;91/92 cells byte-identical"
+  },
+  "harleyPerformance": "Matching cameras/settings p95 before19.0/17.9/19.3/19.6ms, after18.4/17.5/19.4/18.6ms. Medians~16.7ms. No speedup claim."
+}

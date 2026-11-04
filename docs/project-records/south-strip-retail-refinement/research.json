@@ -1,0 +1,56 @@
+{
+  "accessed": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://www.martinharris.com/portfolio/las-vegas-harley-davidson/",
+      "provider": "General contractor",
+      "observed": "50000sf, Moser Architecture Studio, central entry/plaza, steel/concrete finishes."
+    },
+    {
+      "url": "https://www.martinharris.com/wp-content/uploads/2023/04/Ext-3.jpg",
+      "imageDate": "Unknown; April2023 upload",
+      "visuallyInspected": true,
+      "observed": "Silver north panels carry diamond-shaped welcome sign and lower shield; south showroom striped in warm bands. Steel canopy, palms and small desert trees in parking islands. Roadside tall sign at south frontage."
+    },
+    {
+      "url": "https://www.martinharris.com/wp-content/uploads/2023/04/Int-1.jpg",
+      "visuallyInspected": true,
+      "observed": "Polished gray floor, high exposed steel roof, gray columns, tan walls, motor-parts counter and retail display racks. Photograph establishes finishes, not measured interior plan."
+    },
+    {
+      "url": "https://www.martinharris.com/wp-content/uploads/2023/04/Int-2.jpg",
+      "visuallyInspected": true,
+      "observed": "Open motorcycle showroom and parts counter, raised rear mezzanine; exact circulation/core layout unknown."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pinball_Hall_of_Fame_sign_and_building.jpg",
+      "provider": "TalkTuahLunchly",
+      "imageDate": "2026-06-22",
+      "visuallyInspected": true,
+      "observed": "Pylon blue cylindrical post, vertical round letter medallions, sculpted red upper blade with convex end and inward curved opposite edge; yellow arrow band and four starbursts; lower rectangular display. Existing simple rectangular red blade is incomplete."
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Pinball_Hall_of_Fame_front.jpg",
+      "provider": "Fugugames",
+      "imageDate": "2021-07-02",
+      "visuallyInspected": true,
+      "observed": "Large red lettering on white front panel, recessed gray ground story, central glazed entry, parking aisles and small landscaped islands."
+    },
+    {
+      "url": "https://pinballmuseum.org/news.php",
+      "provider": "Museum",
+      "observed": "2021 opening at4925LasVegasBlvd;25000sf. Older addresses on same page are former buildings, not current plan evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.08315,-115.1708,416m/data=!3m1!1e3",
+      "visuallyInspected": true,
+      "observed": "Satellite shows Harley white roof with central west entry projection, narrow west parking strip and broad east parking, planted perimeter islands. Northern neighboring parcel appears under construction; image capture date unknown despite 2026 attribution. Do not use that construction state as current Pinball completion evidence."
+    }
+  ],
+  "provenance": "All linked photos are visual references only; no photos, advertisements or artwork copied into runtime or committed. Geometry authored originally.",
+  "decisions": [
+    "Preserve mapped footprints and existing heights; sign detail can be revised reversibly using known facade frames.",
+    "Inspect installed baselines before edits; initial focus is missing Harley welcome-sign silhouette and Pinball sculpted pylon. Existing shell-only doors do not establish public interiors.",
+    "Need Earth/StreetView site layout review before adding planting or changing circulation. No interior plan dimensions inferred as measured."
+  ]
+}
