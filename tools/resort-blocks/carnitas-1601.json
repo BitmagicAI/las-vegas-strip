@@ -12,7 +12,7 @@
   "remaining": [
     "Facade height not surveyed",
     "Rear elevation not inspected",
-    "Fine restaurant graphics, sign font and weathering omitted",
+    "Tall condensed fascia wording refined; exact pig graphics, original sign font and weathering remain approximate or omitted.",
     "Opaque exterior glazing; no interior access",
     "Forecourt uses existing mapped datum, not surveyed paving"
   ],
@@ -21,11 +21,13 @@
     "support": "build/city-exteriors/carnitas-1601-collision.json",
     "walk": "build/city-exteriors/carnitas-1601-walk.json",
     "ownership": "build/city-exteriors/carnitas-1601-ownership-audit.json",
-    "visualReview": "Three installed views inspected; final front and patio rechecked after red fascia trim and plain painted metal fix. 256support/headroom and6walkinglegs passed.22oldtriangles removed.2006authoredtri11batches. Static960x540p95~17.1ms final aerial, notroutebenchmark."
+    "visualReview": "Three installed views inspected; final front and patio rechecked after red fascia trim and plain painted metal fix. 256support/headroom and6walkinglegs passed.22oldtriangles removed.2006authoredtri11batches. Static960x540p95~17.1ms final aerial, notroutebenchmark.",
+    "refinementPass": "docs/project-records/carnitas-bajamar-refinement",
+    "refinementStatus": "Installed sign refinement verified: matching three-view before/after images, support and six CPU/actual walking legs passed; clean nine-stop smoke recheck. All remaining discrepancies retained."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/carnitas1601-exterior.glb": "b5257562b4122c80d89e1097236dc0698b71bbe9a2f4f92b02a45c856526616e",
+      "build/strip-landmarks/carnitas1601-exterior.glb": "6f90256635e604c4cdb8b745ca4e50eb997b5c285ed2b0c9752cb97a83737abf",
       "build/strip-landmarks/carnitas1601-exterior-collision.json": "407035bad4ff46521fa736045782961555187c6951e803dbc9e32eae871689d6"
     }
   }

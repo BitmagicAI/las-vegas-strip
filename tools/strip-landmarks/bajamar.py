@@ -22,9 +22,12 @@ def exterior(B):
    for u in [0,L]:B.face('bj-awning-paint',[G.p(u,y,w) for y,w in profile])
    G.box('bj-aluminum-paint',(L/2,3.05,-.72),(L,.06,.055))
    if L<9:
-    G.text('BAJAMAR',(L/2,3.27,-.755),.53,'bj-white-letter')
+    G.text('BAJAMAR',(L/2,3.27,-.755),.53,'bj-sign-blue')
    else:
     u=L*.53;G.box('bj-aluminum-paint',(u,1.58,-.25),(1.17,2.72,.07));G.box('bj-glass',(u,1.53,-.3),(1.02,2.43,.04));G.tube('bj-aluminum-paint',(u-.35,1.1,-.34),(u-.35,1.68,-.34),.023,8);G.text('1615',(u,2.81,-.34),.21,'bj-white-letter')
+    # Small window OPEN board observed beside the north entry; emissive-free.
+    G.box('bj-sign-blue',(u-2.0,2.64,-.23),(.72,.30,.035))
+    G.text('OPEN',(u-2.0,2.54,-.26),.22,'bj-white-letter')
     # Sign pole and rounded triangular roadside sign, based on observed silhouette.
     G.lathe('bj-blue-paint',L*.52,-3.0,[(.18,.48),(1.25,.48)],24);G.tube('bj-teal-paint',(L*.52,1.25,-3),(L*.52,6.45,-3),.13,16)
     px,py,pz=G.p(L*.52,0,-3);H=Frame(B,px,pz,yaw=G.yaw+math.pi/2,y=0)
@@ -41,6 +44,7 @@ def exterior(B):
  for x,z in [(1907,-3978),(1900,-3981)]:W.box('bj-service',(x,3.98,z),(1.2,.6,1.0))
  S=Frame(B,1899,-3981,yaw=math.atan2(2.86,5.778),y=0)
  S.box('bj-white-paint',(0,4.17,0),(2.7,.82,1.3));S.text('BAJAMAR',(0,4.18,-.67),.39,'bj-sign-blue');S.text('BAJAMAR',(0,4.18,.67),.39,'bj-sign-blue',back=True)
+ for w,back in [(-.675,False),(.675,True)]:S.text('SEAFOOD & TACOS',(0,3.94,w),.115,'bj-sign-blue',back=back)
  site=p.buffer(1.3,join_style=2).difference(p);B.planar('bj-paving',site,.18,True)
  samples=[]
  for x in np.arange(1894,1916,.55):

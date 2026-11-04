@@ -1,0 +1,15 @@
+{
+  "typecheck": "passed",
+  "records": "289 valid; refinement-deferred",
+  "support": "256 Carnitas +112 Bajamar =368 passed",
+  "cpuWalk": "12 before and12 after legs passed",
+  "optimization": "Both level+WebP invocations passed;2 changed runtimeGLBs checked,0 unoptimized",
+  "bake": "One shared bake; freshness passed;91/92 cells unchanged,onlycell-2_-5.bin; GoldCoast/Wyndham unowned churn restored",
+  "assetPack": "1930 present,0 missing,0 unoptimized;4copied1926unchanged0removed",
+  "public": "0 failures,7pre-existing warnings",
+  "pending": [],
+  "actualWalk": "12 before and12 after legs passed; eight endpoint images inspected",
+  "views": "Six matching camera pairs inspected; performance-comparison.json retains all timings",
+  "newLfsBytes": 9219890,
+  "smoke": "Clean recheck:9 stops placed,0 failed requests,0 page errors,0 console errors. Initial async Paris carpet pipeline console error preserved in smoke-first.json."
+}
