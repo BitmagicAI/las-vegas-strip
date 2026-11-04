@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1219953184,
+ "bytes": 1219963401,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 702413,
-   "sha256": "b69e6955de47ced5805057fe30bb10c0fe112a13d0df4e6c0fbd04aaf5e7a049",
+   "bytes": 702758,
+   "sha256": "233ebd0a37200ab6980d7553a55441a968abb44b1656e8957fd3e97573bf2d84",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "8e5e35072a0d977dcc63c6232a1c29aa637d8123578924494d82626828a85bb5",
+   "sha256": "44a25577958185ebc943154c60ddfa774e83f99778fe9b2b413920e8cb6ff9d9",
    "kind": "runtime cell manifest"
   },
   {
@@ -9510,8 +9510,8 @@
   },
   {
    "path": "build/strip-landmarks/market1700-exterior.glb",
-   "bytes": 581612,
-   "sha256": "da8b23bb6aae6aeb3e182275dc601ea185d636adf440f53a2e31af39ece4574d",
+   "bytes": 594288,
+   "sha256": "d0b9bf62902a5cd989dfce2910869ade58df021eb2f9f5fceedf73d9917a6fb4",
    "kind": "optimized"
   },
   {
@@ -10758,8 +10758,8 @@
   },
   {
    "path": "build/strip-landmarks/sinclair1705-exterior.glb",
-   "bytes": 333264,
-   "sha256": "f9be00b70882ce66c56615a90cdc0e2e8f6d9b5766bc6629d889d488c260b82d",
+   "bytes": 330460,
+   "sha256": "d5e996383b9193789da29bf8f0398fce08c60d1823fc6d54920e005db2b9d32a",
    "kind": "optimized"
   },
   {

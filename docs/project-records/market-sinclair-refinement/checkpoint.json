@@ -5,11 +5,12 @@
     136
   ],
   "claims": "janiverse confirmed",
-  "stage": "All six baseline views and four baseline walk endpoints inspected;12CPU+12actual baseline legs passed. January2026 Maps and satellite inspected; sign geometry built/exported/level+WebP optimized and installed locally. Shared bake8547 underway; support50+287 passed; CPUafter20479.",
-  "pending": "Finish bake8547 and scoped LOD preservation /tmp/market-sinclair-preserve-lod501.mjs. Check CPUafter20479. Run six matching after captures, actual walk,smoke,allstep7; stageassets onlyafterfreshbake. Review lettering and pylon panel. Finalizeblockrecords/own taskindex/LFSaudit/PR501 before verifiedguardedmerge. No fullsite claim.",
+  "stage": "Verified local pass:6matchingpairs+8walkendpoints inspected;337support;12CPUbefore/after;12actualbefore/after;9clean smoke stops;allstep7passed. Sinclair front p95 initial28.1ms vs18.6baseline; isolated exactcamera recheck17.8ms, retained both.91/92cells identical.9,677,897new uniqueLFSbytes including20proofPNGs.",
+  "pending": "Push only own commits, updatePR501,verifyexactremotehead/base next,ready and guardedmerge;close135136,continuepicker. No wholeblockcompletion claim.",
   "pr": 501,
   "baselineSession": 64633,
   "walkSession": 70235,
   "bakeSession": 8547,
-  "cpuSession": 20479
+  "cpuSession": 20479,
+  "afterSession": 5976
 }

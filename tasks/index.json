@@ -8015,7 +8015,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Height4.5mestimated",
-    "Fine sign font and logo missing",
+    "Heavy MARKET fascia lettering refined; exact sign font, remaining roof lettering and logo still approximate",
     "Rear service treatment inferred",
     "Closed property has no interior access",
     "Weathering is an original procedural approximation; exact damage pattern and panel distortion remain unmatched."
@@ -8042,9 +8042,9 @@
      "tools/city-exteriors/test-market-1700.mjs",
      "tools/city-exteriors/replace-market-1700.py",
      "tools/city-exteriors/walk-market-1700.mjs",
-     "tools/strip-landmarks/market_1700.py",
-     "tools/strip-landmarks/build_market_1700.py",
-     "tools/strip-landmarks/white_cross_annex.py"
+     "tools/strip-landmarks/build_market_sinclair_refinement.py",
+     "tools/strip-landmarks/export_market_sinclair_refinement.py",
+     "tools/strip-landmarks/market_1700.py"
     ]
    },
    "acceptance": [
@@ -8066,7 +8066,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Canopy fitted from satellite approximately24x5.5m;4.1m clearheight estimated, not surveyed",
-    "Dinosaur sculpture/logo and exact sign lettering unfinished",
+    "Lower pylon 7/ELEVEN panel refined; dinosaur sculpture/logo, canopy sweep and exact branding unfinished",
     "No shop interior access; glazing backed by shell",
     "Roadside bus shelter and mature trees not added",
     "Property asphalt tie-in has inherited mapped pavement strips; exact grading unverified"
@@ -8094,7 +8094,8 @@
      "tools/city-exteriors/walk-sinclair-1705.mjs",
      "tools/strip-landmarks/sinclair_1705.py",
      "tools/city-exteriors/replace-sinclair-1705.py",
-     "tools/strip-landmarks/build_sinclair_1705.py"
+     "tools/strip-landmarks/build_market_sinclair_refinement.py",
+     "tools/city-exteriors/install-market-sinclair-refinement.mjs"
     ]
    },
    "acceptance": [
