@@ -11,26 +11,44 @@
     {
       "url": "https://www.google.com/maps/@36.0914118,-115.1722989,100m/data=!3m1!1e3",
       "observed": "Satellite inspected: courtyard main building, south detached bar, small pool in notch. Main footprint way364846547 despite commercial3961tag; property ownership inferred from contiguous photo/satellite layout."
+    },
+    {
+      "url": "https://abandonedonline.net/an-evening-walk-on-the-edge-of-the-las-vegas-strip/",
+      "imageUrl": "https://i0.wp.com/abandonedonline.net/wp-content/uploads/2025/05/20250506-20250506-110484-Enhanced-NR-1024x684.jpg?ssl=1",
+      "author": "Sherman Cahal",
+      "imageDate": "May6,2025 per filename; articleMay23,2025",
+      "observed": "Photo inspected: small grey satellite dishes and brackets along long south-facing apartment wall and roof corner; red perforated screens, tiled front, clipped front vegetation."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09139,-115.17257&heading=90&pitch=0&fov=85",
+      "panoid": "yWOr6z_5pDh6yOy7q3oxgw",
+      "imageDate": "February2026",
+      "observed": "StreetView3961label inspected: DesertOasis still present, front planting behind low metal fence, palms beside north frontage, no surveyed room plan. Temporary road works outside scope."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0914118,-115.1722989,104m/data=!3m1!1e3",
+      "observed": "Satellite inspected: U-shaped main block and pool court, separate south bar and east service building, palm crowns at courtyard corners. Capture date unknown."
     }
   ],
   "remaining": [
-    "No interior rooms authored",
-    "Planting,satellite dishes,weathering and discarded signage detail missing",
-    "Southwing facade window arrangement inferred",
-    "Exact courtyard stairs and pool dimensions remain approximate",
-    "Street sign lettering and screen aperture pattern approximate"
+    "Private apartment rooms remain unauthored; no supported public interior layout found.",
+    "Front shrubs and courtyard palms added; other planting, weathering and discarded signage remain incomplete. Satellite dishes are photographed but long-wall ownership/orientation remains unresolved.",
+    "South-wing window arrangement remains inferred: dated frontal coverage insufficient.",
+    "Courtyard stairs and pool dimensions remain approximate without surveyed dimensions.",
+    "Street sign lettering and screen apertures remain approximate; photographic scale is uncertain."
   ],
   "implemented": [
     "Courtyard block and detached southern wing with windows,doors and roof equipment",
     "Perforated red entrance screens and squared tiled frontage",
     "Open entrance passage,upper walkway and stairs,courtyard pool and canopy",
-    "Pylon,parking and continuous floor support"
+    "Pylon,parking and continuous floor support",
+    "PR493 source: exposed lower sign-cabinet strips and rails, two front shrubs, two original fan palms in courtyard corners."
   ],
   "validation": {
-    "support": "136 support/headroom checks passed",
-    "walking": "9legs in both directions passed;reverse begins on upperwalkway",
-    "visual": "Three installed views inspected;finalfront inspected after door/endwall/material correction",
-    "performance": "960x540 ultra fixed aerial16.7ms p50/18.3ms p95;notfullroutebenchmark"
+    "support": "71 floor/headroom samples pass; reproducible public-route samples, no private room claim.",
+    "walking": "18 standalone Rapier and actual installed keyboard-walk legs pass; forward and return endpoints inspected.",
+    "visual": "PR493 six matching neutral daylight before/after views inspected across both properties; fullblock fidelity remains deferred.",
+    "performance": "PR493 identical960x540 DPR1 ultra views in performance-comparison.json; near60Hz cap, no speedup claim."
   },
   "evidence": [
     "build/city-exteriors/desert-oasis-final/desert-front.png",
@@ -38,12 +56,27 @@
     "build/city-exteriors/desert-oasis-final/desert-aerial.png",
     "build/city-exteriors/desert-oasis-collision.json",
     "build/city-exteriors/desert-oasis-walk.json",
-    "build/city-exteriors/desert-oasis-ownership-audit.json"
+    "build/city-exteriors/desert-oasis-ownership-audit.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/research.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/performance-comparison.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/actual-walk-after.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/checks.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/runtime-audit.json"
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/desertOasis-exterior.glb": "410c53e29d08892a9d8811af7c8b3e327be80877f21a3d291b7d1c4cccd07458",
+      "build/strip-landmarks/desertOasis-exterior.glb": "df2fa2b0ae930833c61c98ae30adf5176193721b9214883565f28863b55eb655",
       "build/strip-landmarks/desertOasis-exterior-collision.json": "134f3c3c1e7bd7b9bc69e646ea77b79614fe47dd46e11d5316541e32dab2a073"
     }
+  },
+  "refinement493": {
+    "record": "docs/project-records/south-strip-retail-courtyard-refinement",
+    "status": "scoped-refinement-verified; remaining discrepancies retained",
+    "decisions": [
+      "Retain building ownership, footprints and existing interiors; no private apartments invented.",
+      "Scope Akita south shrubs, second drive-through window, ribbed upper trim and Sayulitas tile strip; Desert Oasis weathered cabinet strips, front shrubs and courtyard fan palms. Exact dimensions inferred.",
+      "Northern billboard and full store/public interiors remain deferred because scale, ownership and room layouts require further evidence.",
+      "Satellite dishes are visible in the dated photo but the long-wall ownership/orientation needs closer reconciliation with the mapped U-plan; retain this discrepancy rather than scatter unverified dishes."
+    ]
   }
 }

@@ -5,8 +5,14 @@
     114
   ],
   "claims": "Both assigned to janiverse",
-  "stage": "Claimed and branched from current next; reference research and baselines next",
-  "scope": "Akita Plaza retail and Desert Oasis main/south/service structures nearby; preserve all existing interiors, roads and circulation. Determine source-supported refinements after research; no geometry edits yet.",
-  "pending": "Inspect current reference photos and Google Earth/Street View; capture front-first matching baselines and actual installed routes before editing. Read applicable builders and retained discrepancies. All previous GPU jobs ended.",
-  "previous": "PR492 merged next b44cfe5;111/112closed. All step7 checks pass;22actualsegments and6matchingviews. Maverick apron winding repaired;90/92cells unchanged;1648758newLFSbytes. Fidelity/interior gaps retained."
+  "stage": "All step7 local checks passed; ready to push and selfmerge493",
+  "scope": "Akita Plaza retail and Desert Oasis main/south/service structures nearby; preserve all existing interiors, roads and circulation.",
+  "pending": "Verify own-only commits before push, ready/merge493 targetingnext, explicitlyclose113/114, picker again.",
+  "previous": "PR492 merged next b44cfe5;111/112closed. All step7 checks pass;22actualsegments and6matchingviews. Maverick apron winding repaired;90/92cells unchanged;1648758newLFSbytes. Fidelity/interior gaps retained.",
+  "pr": 493,
+  "research": "Google satellite both sites; Akita south StreetViewFeb2025; DesertfrontStreetViewFeb2026; officialSayulitastrimphoto and CahalMay2025dishesphoto inspected. Original source geometry planned; no private apartment interiors.",
+  "sourceChanges": "Akita south planting/two-window detail/ribbed fascia and blue tile band; Desert cabinet strips/front shrubs/original courtyard fan palms. Satellite dishes retained as unresolved placement discrepancy.",
+  "baselineDiagnosis": "Original Desert stair failure reproduced at left edge due .35m waypoint tolerance; .10m centered baseline passes all18legs without geometry changes. Four baseline endpoint images inspected. Original headroom ray demanded2.75m; corrected to1.95m (standalone test capsule1.66m), preserving original failed report.",
+  "newLfsBytes": 4040333,
+  "cellAudit": "91/92unchanged; only0_3"
 }
