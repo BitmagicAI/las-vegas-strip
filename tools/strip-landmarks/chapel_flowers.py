@@ -66,6 +66,22 @@ def exterior(B):
  site=Polygon([(1834,-3867),(1876,-3866),(1923,-3840),(1902,-3796),(1818,-3841)])
  garden=Polygon([(1834,-3867),(1871,-3860),(1863,-3845),(1854,-3836),(1830,-3841),(1818,-3841)]).difference(allbuild)
  apron=site.difference(allbuild);B.planar('cf-pavers',apron.difference(garden),.18,True);B.planar('cf-grass',garden,.2,True)
+ # Original open octagonal gazebo, located from satellite roof center and official photos.
+ # Diameter4.8m, eave2.65m and peak3.2m inferred; retain clear open sides.
+ Q=Frame(B,1847.274,-3848.983,yaw=0,y=0)
+ ring=[(2.4*math.cos(a),2.4*math.sin(a)) for a in np.linspace(math.pi/8,math.tau+math.pi/8,9)[:-1]]
+ B.planar('cf-paving',Q.poly(ring),.24,True)
+ for i,(u,w) in enumerate(ring):
+  v,t=ring[(i+1)%8]
+  Q.box('cf-white-paint',(u,1.445,w),(.16,2.41,.16),True)
+  Q.tube('cf-white-paint',(u,2.58,w),(v,2.58,t),.085,6)
+  Q.tube('cf-white-paint',(u,2.62,w),(0,3.13,0),.055,6)
+  for sign in [-1,1]:
+   a,b=ring[(i+sign)%8];du,dw=a-u,b-w;length=math.hypot(du,dw)
+   Q.tube('cf-white-paint',(u,2.04,w),(u+du/length*.48,2.55,w+dw/length*.48),.055,6)
+  B.face('cf-tile-paint',[Q.p(u*1.12,2.75,w*1.12),Q.p(v*1.12,2.75,t*1.12),Q.p(0,3.2,0)])
+  B.face('cf-white-paint',[Q.p(v*1.12,2.65,t*1.12),Q.p(u*1.12,2.65,w*1.12),Q.p(0,3.1,0)])
+  B.face('cf-gold-paint',[Q.p(u*1.12,2.65,w*1.12),Q.p(v*1.12,2.65,t*1.12),Q.p(v*1.12,2.75,t*1.12),Q.p(u*1.12,2.75,w*1.12)])
  # Garden walk connects small chapel to court without enclosed blocked test routes.
  path=LineString([(1836,-3849),(1846,-3844),(1854,-3840),(1860,-3843)]).buffer(.9)
  B.planar('cf-paving',path.intersection(apron),.225,True)
@@ -85,9 +101,11 @@ def exterior(B):
  B.groups={k:g for k,g in B.groups.items() if g['material']!='cf-collision'}
  samples=[]
  excluded=allbuild.buffer(.65).union(Point(1823,-3839).buffer(1.6)).union(E.poly([(-3.4,-.3),(3.4,-.3),(3.4,2.3),(-3.4,2.3)]))
+ excluded=excluded.union(Point(1847.274,-3848.983).buffer(2.9))
  for x in np.arange(1822,1920,1.7):
   for z in np.arange(-3865,-3800,1.7):
    pt=Point(x,z)
    if apron.buffer(-1).covers(pt) and not excluded.covers(pt):samples.append([float(x),.18,float(z)])
+ samples.extend([[1847.274+dx,.24,-3848.983+dz] for dx in [-1,0,1] for dz in [-1,0,1]])
  Path('build/city-exteriors/chapel-flowers-samples.json').write_text(json.dumps(samples))
  return dict(key=KEY,name='Chapel of the Flowers campus exterior',center=[1866,0,-3835],bounds=[1817,-3868,1924,-3795],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

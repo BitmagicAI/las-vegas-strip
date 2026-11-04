@@ -1,0 +1,13 @@
+{
+  "base": "f04996f873e9d6f7e8d369b955b8180096c54ba7",
+  "issues": [
+    137,
+    138
+  ],
+  "claims": "janiverse confirmed",
+  "stage": "Installedpassverified:7matchingpairs+12walkendpoints inspected,1012support,12CPUbefore/18after,18actualbefore/after,9cleansmokestops,allstep7passed.91/92cellsidentical;25278697newuniqueLFSbytes.",
+  "pending": "Pushowncommits,updatePR502,verifyexactremoteheadandnextbase,readyguardedmerge,close137138,picker. No wholeblockcompletion claim.",
+  "pr": 502,
+  "baselineSession": 69388,
+  "buildSession": 16322
+}

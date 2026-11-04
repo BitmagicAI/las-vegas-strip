@@ -1,0 +1,72 @@
+{
+  "viewport": "960x540",
+  "dpr": 1,
+  "quality": "ultra",
+  "samples": 180,
+  "rows": [
+    {
+      "building": "chapel-flowers",
+      "view": "front",
+      "beforeP50": 16.5,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 19.600000143051147,
+      "afterP95": 17.59999990463257,
+      "p95PercentChange": -10.204082774599598
+    },
+    {
+      "building": "chapel-flowers",
+      "view": "court",
+      "beforeP50": 16.59999990463257,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18.59999990463257,
+      "afterP95": 17.799999952316284,
+      "p95PercentChange": -4.301075034505963
+    },
+    {
+      "building": "chapel-flowers",
+      "view": "aerial",
+      "beforeP50": 16.59999990463257,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 18.90000009536743,
+      "afterP95": 17.800000190734863,
+      "p95PercentChange": -5.820105286148591
+    },
+    {
+      "building": "tacos-mexico",
+      "view": "front",
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.699999809265137,
+      "beforeP95": 18.700000047683716,
+      "afterP95": 19,
+      "p95PercentChange": 1.6042778157823845
+    },
+    {
+      "building": "tacos-mexico",
+      "view": "side",
+      "beforeP50": 16.5,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 25.799999952316284,
+      "afterP95": 17.700000047683716,
+      "p95PercentChange": -31.39534852559317
+    },
+    {
+      "building": "tacos-mexico",
+      "view": "aerial",
+      "beforeP50": 16.799999952316284,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 28,
+      "afterP95": 19.5,
+      "p95PercentChange": -30.35714285714286
+    },
+    {
+      "building": "chapel-gazebo",
+      "view": "gazebo",
+      "beforeP50": 16.5,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 25.59999990463257,
+      "afterP95": 18.800000190734863,
+      "p95PercentChange": -26.562498981365934
+    }
+  ],
+  "limitations": "Warm frame intervals only; no cold stall/residency/CPU-GPU spans measured. No speedup claim."
+}
