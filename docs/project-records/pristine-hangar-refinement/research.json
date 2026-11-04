@@ -1,0 +1,34 @@
+{
+  "reviewed": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://www.pristineflight.com/",
+      "observed": "Official website now reachable, lists5195SouthLasVegasBlvd and aircraft cleaning services; does not identify precise facade configuration."
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/650a5d9586441f0dd79522d9/f5f308bc-9171-4249-8299-d75935152ce3/Pristine%2BFlight%2B2.jpg",
+      "observed": "Official gallery image inspected: aircraft cabin only, rejected as building/interior architecture evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.08245,-115.17067,208m/data=!3m1!1e3",
+      "observed": "Satellite inspected: rectangular white roof, rows of roof penetrations near north/south edges, west parking, east apron and tall east door projection. Date not exposed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=MHRT3Kk0q-c8AIY6tb2pSA&heading=135&pitch=0&fov=60",
+      "date": "Mar2020",
+      "observed": "Northwest parking panorama located correctly, not Signature. West side partly hidden by mature trees and white boundary wall; avoid inventing window counts."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=QszC0tAOnOqH2xLXHnGY1g&heading=150&pitch=0&fov=75",
+      "date": "Mar2020",
+      "observed": "Closer northern face visible at36.0826582,-115.1709658: broad smooth white wall with sparse vertical panel joints, small wall fixtures and parapet; no dense corrugation or north windows. West side remains tree-obscured."
+    }
+  ],
+  "decision": "Correct visible north wall only after installed baseline; retain uncertain east/west details. No invented public hangar interior. Neighboring claimed buildings untouched.",
+  "pending": "After-installed comparison and verification required. No interiors or broad-site completion claim.",
+  "inferredDimensions": {
+    "northPanelJoint": "0.012m wide at wall midpoint; sparse rather than0.55m repeated ribs",
+    "northFixtures": "two0.36x0.20m housings at8.2m height; placement inferred from visible small fixtures",
+    "shell": "Existing mapped footprint and11m height retained; no surveyed dimension claim"
+  }
+}

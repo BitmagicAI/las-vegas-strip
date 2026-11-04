@@ -1,0 +1,35 @@
+{
+  "viewport": [
+    960,
+    540
+  ],
+  "dpr": 1,
+  "quality": "ultra",
+  "method": "Identical neutral daylight cameras; 900frames+stream quiet+60 settle,180timed frames. Uncontrolled local machine; no speedup claim.",
+  "views": [
+    {
+      "view": "front",
+      "beforeP95": 17.59999990463257,
+      "afterP95": 19.09999990463257,
+      "deltaP95": 1.5
+    },
+    {
+      "view": "north",
+      "beforeP95": 19.59999990463257,
+      "afterP95": 18.899999856948853,
+      "deltaP95": -0.7
+    },
+    {
+      "view": "west",
+      "beforeP95": 18.200000047683716,
+      "afterP95": 17.59999990463257,
+      "deltaP95": -0.6
+    },
+    {
+      "view": "aerial",
+      "beforeP95": 22.700000047683716,
+      "afterP95": 18,
+      "deltaP95": -4.7
+    }
+  ]
+}

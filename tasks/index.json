@@ -7443,10 +7443,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Street View redirected south near Signature; rejected as facade reference",
-    "Official website inaccessible via web tool",
-    "Detailed door and facade configuration estimated",
-    "Interior not included"
+    "Detailed east/west door and facade configuration estimated; western facade obscured by trees in located March2020 imagery",
+    "Interior not included; official gallery image depicts aircraft cabin, not building interior",
+    "North fixture dimensions/positions and wall height inferred, not surveyed",
+    "Ground outside site absent in existing map; mature west landscaping and boundary wall not reconstructed"
    ],
    "record": "tools/resort-blocks/pristine-hangar.json",
    "buildings": [
@@ -7470,8 +7470,9 @@
      "tools/city-exteriors/test-pristine-hangar.mjs",
      "tools/city-exteriors/replace-pristine-hangar.py",
      "tools/city-exteriors/walk-pristine-hangar.mjs",
+     "tools/strip-landmarks/build_pristine_refinement.py",
      "tools/strip-landmarks/pristine_hangar.py",
-     "tools/strip-landmarks/build_pristine_hangar.py"
+     "tools/city-exteriors/install-pristine-refinement.mjs"
     ]
    },
    "acceptance": [
