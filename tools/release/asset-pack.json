@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232096667,
+ "bytes": 1232096594,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 696256,
-   "sha256": "6aa7fb17e0a9545d393852faf55a9064e0152da75390b58f327a51425dce6f5e",
+   "bytes": 696263,
+   "sha256": "52c818c94a33d67a48316cb229ca339a61ad15eea75b3d3c8ee1bf7660e0255c",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "c0c25fc39ce1bca1696b5b2059df9f40ef763b19e7a0a4d313fb5d9c45d021c1",
+   "sha256": "e981b62ab29baaa758fe7f9fc739a637121ca8459356125e90d9427aedd77019",
    "kind": "runtime cell manifest"
   },
   {
@@ -7950,8 +7950,8 @@
   },
   {
    "path": "build/strip-landmarks/curaleaf1736-exterior.glb",
-   "bytes": 428748,
-   "sha256": "10bdcb83b50ed5cb76794175478ecfbd42e258d2fd8fec1609249a6143411f7a",
+   "bytes": 428668,
+   "sha256": "447d80d943020294095efce7fcddb2e15b6280be2fc940804bbf306cd7f0d287",
    "kind": "optimized"
   },
   {

@@ -13,8 +13,8 @@ Retain the existing building envelopes and public approach routes. Keep the date
 ## Remaining discrepancies
 Curaleaf still needs surveyed tower/side/rear dimensions, more exact emblem/stone/board finishes, a fuller planting layout and reference-supported interiors. Annex tile/board weathering, exact lettering, roof equipment and current north branding remain unresolved. All source collision JSON is byte-identical to the prior version.
 
-## Validation pending
-Source support: 836 Curaleaf and 923 annex samples passed. CPU walks: 12 legs before and after passed. All six baseline views and four baseline walk endpoints inspected. After installation review, actual walks, smoke, asset checks and performance comparison must complete before this report can claim an installed pass.
+## Validation
+Source support: 836 Curaleaf and 923 annex samples passed. CPU walks: 12 legs before and after passed. All six baseline views and four baseline walk endpoints inspected. All six corrected after views and four corrected walk endpoints inspected. Twelve actual after legs passed; nine smoke stops placed with zero request, page or console errors. Typecheck, three relevant runtime tests, record review, public scan (seven existing warnings), optimized GLB check, fresh bake and 1930 assets passed. 91/92 cells remain byte-identical. The emblem correction required a second grouped bake; the first attempt and discrepancy are retained. Performance repeat for the aerial outlier is recorded separately.
 
 ## Matching views
 
@@ -54,3 +54,4 @@ Source support: 836 Curaleaf and 923 annex samples passed. CPU walks: 12 legs be
 
 ![After](../../../public/review/curaleaf-annex-refinement/after/white-cross-annex-aerial.png)
 
+Curaleaf aerial corrected first run p95 23.4ms versus 21ms baseline (+11.43%); identical-camera repeat p95 18.5ms. Both retained. Other corrected p95 values 17.9–19.3ms. Baseline north views were unusually slow; no speedup or sustained60fps claim. Cold stalls, memory, draw calls and separate CPU/GPU spans were not measured.

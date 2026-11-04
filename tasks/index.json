@@ -8328,7 +8328,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Tower logo and panel cladding remain an approximation, not exact vector artwork",
+    "Tower logo and panel cladding remain an approximation, not exact vector artwork; scoped panel/emblem or sign-frame refinement installed, but exact artwork and material matching still need better measured references",
     "North/rear entrance arrangement and dimensions partly inferred from mapped recesses; no interior access claim",
     "Desert planting quantity/species, hedge and palms not fully matched",
     "Stone pier material and plywood weathering need closer matching",
@@ -8356,8 +8356,9 @@
      "tools/city-exteriors/test-curaleaf-1736.mjs",
      "tools/city-exteriors/replace-curaleaf-1736.py",
      "tools/city-exteriors/walk-curaleaf-1736.mjs",
+     "tools/strip-landmarks/build_curaleaf_annex_refinement.py",
      "tools/strip-landmarks/curaleaf_1736.py",
-     "tools/strip-landmarks/build_curaleaf_1736.py"
+     "tools/city-exteriors/install-curaleaf-annex-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -8378,7 +8379,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact sign artwork, tile weathering and boarded storefront material need closer matching",
+    "Exact sign artwork, tile weathering and boarded storefront material need closer matching; scoped panel/emblem or sign-frame refinement installed, but exact artwork and material matching still need better measured references",
     "North sign source August2024 and west closed frontage January2026; current north branding uncertain",
     "Height5.9m and canopy dimensions estimated; roof equipment arrangement inferred",
     "No interior access claim; closed storefronts and temporary fenced boundary represented"
@@ -8405,8 +8406,9 @@
      "tools/city-exteriors/test-white-cross-annex.mjs",
      "tools/city-exteriors/replace-white-cross-annex.py",
      "tools/city-exteriors/walk-white-cross-annex.mjs",
+     "tools/strip-landmarks/build_curaleaf_annex_refinement.py",
      "tools/strip-landmarks/white_cross_annex.py",
-     "tools/strip-landmarks/build_white_cross_annex.py"
+     "tools/city-exteriors/install-curaleaf-annex-refinement.mjs"
     ]
    },
    "acceptance": [
