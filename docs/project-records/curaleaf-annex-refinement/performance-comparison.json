@@ -1,0 +1,67 @@
+{
+  "viewport": "960x540",
+  "dpr": 1,
+  "quality": "ultra",
+  "samples": 180,
+  "rows": [
+    {
+      "building": "curaleaf-1736",
+      "view": "front",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 21,
+      "afterP95": 19.299999952316284,
+      "p95PercentChange": -8.09523832230341
+    },
+    {
+      "building": "curaleaf-1736",
+      "view": "north",
+      "beforeP50": 34.69999980926514,
+      "afterP50": 16.799999952316284,
+      "beforeP95": 43.700000047683716,
+      "afterP95": 18.59999990463257,
+      "p95PercentChange": -57.4370712028902
+    },
+    {
+      "building": "curaleaf-1736",
+      "view": "aerial",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 21,
+      "afterP95": 23.40000009536743,
+      "p95PercentChange": 11.428571882702055
+    },
+    {
+      "building": "white-cross-annex",
+      "view": "front",
+      "beforeP50": 16.40000009536743,
+      "afterP50": 16.699999809265137,
+      "beforeP95": 32.30000019073486,
+      "afterP95": 18.59999990463257,
+      "p95PercentChange": -42.414861316415994
+    },
+    {
+      "building": "white-cross-annex",
+      "view": "north",
+      "beforeP50": 31.40000009536743,
+      "afterP50": 16.699999809265137,
+      "beforeP95": 41.5,
+      "afterP95": 17.90000009536743,
+      "p95PercentChange": -56.86746964971703
+    },
+    {
+      "building": "white-cross-annex",
+      "view": "aerial",
+      "beforeP50": 18.300000190734863,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 28.100000143051147,
+      "afterP95": 18.600000143051147,
+      "p95PercentChange": -33.80782900938617
+    }
+  ],
+  "limitations": "Warm frame intervals only; no cold stall/residency/CPU-GPU spans measured. No speedup claim.",
+  "repeat": {
+    "reason": "Curaleaf aerial first corrected p95 23.4ms exceeded 21ms baseline by11.43%; identical camera/settings repeat p95 18.5ms, p50 16.5ms. Both results retained; variability precludes speedup claim.",
+    "report": "docs/project-records/curaleaf-annex-refinement/aerial-repeat.json"
+  }
+}

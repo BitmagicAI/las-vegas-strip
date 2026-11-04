@@ -34,18 +34,24 @@ def exterior(B):
    for y in [4.45,4.55]:G.box('cu-cap-metal-paint',(L/2,y,-.42),(L,.06,.8))
    for u in np.arange(.3,L,.9):G.box('cu-frame-paint',(float(u),4.4,-.35),(.035,.22,.85))
  W=Frame(B,0,0,y=0)
- # Southeast corner sign tower, gray-blue panel skin with staggered vertical strips.
+ # January 2026 east-facing tower: shallow staggered gray panels, emblem only.
+ # Existing overall tower dimensions retained; panel and emblem dimensions estimated.
  T=Frame(B,1762.5,-3813.3,yaw=-math.pi/2+.025,y=0)
  T.box('cu-tower-paint',(0,4.8,0),(2.4,9.3,1.35),True)
  for side in [-1,1]:
-  for u in np.arange(-1.15,1.16,.16):
-   for i in range(10):
-    y=.8+i*.8+(int((u+1.2)*10)%2)*.2
-    T.box('cu-tile-light' if int((u+1.2)*100)%3 else 'cu-tile-dark',(float(u),y,side*.69),(.12,.7,.025))
- T.text('Curaleaf',(0,7.45,-.73),.4,'cu-white-letter');T.text('DISPENSARY',(0,7.05,-.73),.17,'cu-white-letter')
- # Leaf mark as a thin curved outline; exact vector brand artwork remains a refinement.
- path=[(0+.65*math.cos(a),8.35+.42*math.sin(a),-.74) for a in np.linspace(.3,5.8,32)]
- T.path('cu-white-letter',path,.022,6);T.path('cu-white-letter',[(-.65,7.95,-.74),(.25,8.6,-.74)],.022,6)
+  for row in range(23):
+   y=.36+row*.4
+   offset=.3 if row%2 else 0
+   for col in range(-1,5):
+    left=max(-1.2,-1.2+col*.6+offset);right=min(1.2,-1.2+(col+1)*.6+offset)
+    if right-left>.04:
+     T.box('cu-tile-dark' if (row+col)%5==0 else 'cu-tile-light',((left+right)/2,y,side*.678),(right-left-.012,.388,.012))
+ # Original outline construction; reference artwork is not embedded as a texture.
+ path=[(.53*math.cos(a),8.22+.53*math.sin(a),-.70) for a in np.linspace(.50,5.78,40)]
+ T.path('cu-white-letter',[(-x,y,z) for x,y,z in path],.025,6)
+ leaf=[(-.30,7.94,-.70),(-.25,8.20,-.70),(-.08,8.39,-.70),(.30,8.51,-.70),(.24,8.25,-.70),(.06,8.07,-.70),(-.30,7.94,-.70)]
+ T.path('cu-white-letter',[(-x,y,z) for x,y,z in leaf],.019,6)
+ T.path('cu-white-letter',[(.45,7.82,-.70),(-.19,8.40,-.70)],.018,6)
  for dx in [-1.5,1.5]:T.tube('cu-yellow-paint',(dx,.18,-.4),(dx,1.3,-.4),.055,8)
  # Narrow apron, north entrance approach and site circulation, avoiding neighboring footprints.
  site=Polygon([(1705,-3835),(1768,-3835),(1772,-3829),(1767,-3808),(1730,-3807),(1705,-3810)]).difference(p)
