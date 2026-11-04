@@ -12,7 +12,9 @@ def exterior(B):
   G.box('cg-red-stucco',(L/2,4.43,-.1),(L,.2,.12))
   G.box('cg-coping',(L/2,4.59,0),(L,.13,.2))
   if nx<-.7:
-   G.box('cg-white',(L/2,4.03,-.19),(L-.3,.9,.12));G.text('CARNITAS Y TORTAS AHOGADAS GUADALAJARA #2',(L/2,4,-.27),.48,'cg-red-letter')
+   G.box('cg-white',(L/2,4.03,-.19),(L-.3,.9,.12));G.text('CARNITAS Y TORTAS AHOGADAS GUADALAJARA #2',(L/2,3.69,-.27),.95,'cg-red-letter');B.labels[-1]['fitWidth']=L-1.2
+   # Shallow fascia underside fixtures seen in August 2024; no new runtime lights.
+   for u in [L*.15,L*.4,L*.65,L*.9]:G.box('cg-metal-paint',(u,3.36,-.46),(.24,.055,.18))
    for u in [L*.13,L*.46,L*.72,L*.9]:
     G.box('cg-white',(u,1.8,-.1),(1.9,1.5,.12));G.box('cg-glass',(u,1.8,-.18),(1.68,1.28,.05));G.box('cg-metal-paint',(u,1.8,-.23),(.04,1.28,.04))
    u=L*.3;G.box('cg-metal-paint',(u,1.55,-.17),(1.2,2.6,.12));G.box('cg-glass',(u,1.55,-.25),(1.05,2.4,.05));G.tube('cg-metal-paint',(u+.35,1.1,-.32),(u+.35,1.8,-.32),.025,8)

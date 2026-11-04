@@ -24,8 +24,21 @@
     {
       "url": "https://carnitasytortasguadalajara.com/las-vegas-blvd",
       "observed": "Official branch page lists1601SBlvd. Its FindUs photo (a57ddf51-ce07-4cd5-8471-762136852430.jpg) was visually inspected: food/menu closeup, not facade or plan evidence."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=J8TEioEg-J7-UZ1qMwYcfA&heading=152.37&pitch=0&fov=75",
+      "imageDate": "August 2024",
+      "observed": "Visually inspected both buildings together. Date selector offers August2024 as newest at this position. Carnitas fascia has tall condensed red lettering with pig graphics at ends and small fixtures underneath; current game lettering too short vertically. Bajamar has navy-outlined awning lettering, rooftop SEAFOOD&TACOS subline, and OPEN window sign. Octopus illustration (not fish) remains absent. Fine brand artwork not reproduced in this scope."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.15185,-115.15165,208m/data=!3m1!1e3",
+      "observed": "Satellite visually inspected. Carnitas rectangular plan behind angled Bajamar diner; large shared parking court behind. Image capture date not exposed; copyright2026 is not capture date. Existing mapped footprints retained."
     }
   ],
-  "pending": "Inspect dated StreetView and satellite after GPU baseline completes; preserve original2024 links and compare current architecture. Do not reuse third-party photo pixels in geometry.",
-  "baselineReview": "All six baseline views inspected. Carnitas red-white shell, barred patio, very thin single-line fascia text; no detailed fascia graphics. Bajamar white-on-white awning lettering, blank opaque glazing and logo-free signs; prior surfaces and roads retained. These are observations, not yet scope decisions."
+  "pending": "Inspect installed model, especially fitted Carnitas lettering; perform every local check and matching after captures/performance before merging.",
+  "baselineReview": "All six baseline views inspected. Carnitas red-white shell, barred patio, very thin single-line fascia text; no detailed fascia graphics. Bajamar white-on-white awning lettering, blank opaque glazing and logo-free signs; prior surfaces and roads retained. These are observations, not yet scope decisions.",
+  "decisionsForOwner": [
+    "Increase Carnitas fascia lettering height to .95m font size, fit width to front length minus1.2m, use available condensed bold font; .24m underside fixture housings estimated. No active lights added.",
+    "Bajamar navy awning text replaces unreadable white-on-white; add small .72x.30m OPEN board and rooftop secondary wording. Fine octopus/pig logos, translucent glazing/interiors and parking remain deferred; dimensional estimates unmeasured."
+  ]
 }
