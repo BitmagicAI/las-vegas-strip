@@ -37,7 +37,18 @@ def exterior(B):
     for u in [-.27,0,.27]:G.box('sar-yellow',(u,1.22,-.055),(.16,.08,.025))
    for side in [-1,1]:
     W.path('sar-black',[(px+side*.55,1.95,zz),(px+side*.77,1.75,zz),(px+side*.87,.7,zz),(px+side*.73,.56,zz),(px+side*.57,.9,zz)],.035,6)
-   for dx in [-.68,.68]:W.tube('sar-white',(x+dx,.26,z+1.5),(x+dx,1.15,z+1.5),.065,8)
+   # February 2026 Street View: blue pump crowns and yellow U-shaped guards.
+   # Scale estimated from the existing 1.65 m pump; mapped island positions retained.
+   W.box('sar-blue',(px,2.12,zz),(1.14,.19,.73))
+   for side in [-1,1]:
+    G=Frame(B,px,zz+side*.38,math.pi if side>0 else 0,y=0)
+    G.box('sar-white',(0,2.12,-.02),(.28,.14,.025))
+    G.text(str(1+[52.5,61.9].index(x)*2+[2100,2109].index(z)),(0,2.12,-.04),.11,'sar-blue')
+   for end in [-1,1]:
+    gz=zz+end*.62
+    W.path('sar-yellow',[(px-.68,.37,gz),(px-.68,.98,gz),
+      (px-.62,1.1,gz),(px-.5,1.15,gz),(px+.5,1.15,gz),
+      (px+.62,1.1,gz),(px+.68,.98,gz),(px+.68,.37,gz)],.065,8)
  for x in [53,61]:
   for z in [2098,2106,2111]:W.box('sar-light',(x,4.57,z),(.35,.05,.65))
  B.shell(store,.24,4.1,'sar-cream',roof=False);B.planar('sar-roof',store,4.1,True)

@@ -1,0 +1,18 @@
+[
+  {
+    "rel": "build/strip-landmarks/psychicSessions-exterior.glb",
+    "exitCode": 0,
+    "failed": [],
+    "beforeBytes": 2780020,
+    "afterBytes": 1068764,
+    "webp": "Pass invoked; no embedded images, so variant correctly reuses level output."
+  },
+  {
+    "rel": "build/strip-landmarks/southArco-exterior.glb",
+    "exitCode": 0,
+    "failed": [],
+    "beforeBytes": 2727012,
+    "afterBytes": 1241688,
+    "webp": "Pass invoked; no embedded images, so variant correctly reuses level output."
+  }
+]

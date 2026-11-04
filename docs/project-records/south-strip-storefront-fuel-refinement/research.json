@@ -1,0 +1,76 @@
+{
+  "reviewed": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://psychicsessionsoflasvegas.com/pictures.html",
+      "author": "Psychic Sessions official website",
+      "imageDate": "undated",
+      "observed": "Owner gallery identifies store and seating photographs. Inspected three full images; no exterior in the image labeled store."
+    },
+    {
+      "url": "https://psychicsessionsoflasvegas.com/store3.jpg.jpg",
+      "observed": "White interior walls, glass display cabinet and counter, dark floor and metallic decorative wall plaques. Photo does not establish room footprint or entrance connection.",
+      "local": "build/city-exteriors/storefront-fuel-references/owner-store.jpg"
+    },
+    {
+      "url": "https://psychicsessionsoflasvegas.com/waitingroom.jpg.jpg",
+      "observed": "Two dark upholstered waiting chairs, small central planter, red patterned rug, white wall with artwork. Do not copy exact artwork.",
+      "local": "build/city-exteriors/storefront-fuel-references/owner-waiting.jpg"
+    },
+    {
+      "url": "https://psychicsessionsoflasvegas.com/seating.jpg.jpg",
+      "observed": "Ornate upholstered wooden chair, large fabric wall hanging, plants and a wind chime. Undated partial view, no complete room layout.",
+      "local": "build/city-exteriors/storefront-fuel-references/owner-seating.jpg"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09705,-115.17265&heading=90&pitch=0&fov=85",
+      "pano": "kYaWp6IrMANIWYapsHhzQA",
+      "date": "2019-03",
+      "author": "Google Street View",
+      "observed": "Inspected hip terracotta canopy, blue/white fascia, cream columns, blue rounded pump toppers, yellow U guards, hoses and dark trash bins. Old store appearance is not used to replace later storefront."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09714,-115.17280&heading=90&pitch=0&fov=85",
+      "pano": "xKqBChCn2C79g-_7BTzlrA",
+      "date": "2026-02",
+      "author": "Google Street View",
+      "observed": "Inspected 3873 S Las Vegas Blvd canopy and pump blue toppers/yellow guards. Gravel island, price cabinet and palms visible; store entrance partly obscured. Preserve inferred existing pump positions; do not absorb street bollards or adjacent billboard."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09203,-115.17278&heading=90&pitch=0&fov=70",
+      "pano": "2zfRZI9Wjb3r_Bu_GI9_jw",
+      "date": "2026-02",
+      "author": "Google Street View",
+      "observed": "Inspected Psychic Sessions 3953 facade: dentils, white cream stucco, two doors/windows, projecting marquee, parapet eye sign, small red WE ARE OPEN sign, number 3953. Large white wheeled sign on forecourt with red borders/text and black base. Chipped paint and boarded panel remain approximate. Neighbor grass/palms outside scope."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.09199,-115.1721,208m/data=!3m1!1e3",
+      "author": "Google Maps satellite",
+      "date": "capture date not established",
+      "observed": "Inspected rectangular Psychic roof, west forecourt, east rear parking; neighboring northern grass belongs to 3951 and must not be copied into site. Movable sign cannot be precisely located from aerial."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0970809,-115.1723648,104m/data=!3m1!1e3",
+      "author": "Google Maps satellite",
+      "date": "capture date not established",
+      "observed": "Inspected canopy west, store east with canted northwest corner, northern Reno access and southern billboard/service strip. No scope expansion or road edits."
+    },
+    {
+      "url": "https://www.arco.com/en-us/southwest/find-a-station",
+      "author": "ARCO official website",
+      "observed": "Locator examined; readable region links did not establish site-specific exterior or interior photography."
+    }
+  ],
+  "pending": [
+    "Complete baseline actual walk and choose source changes before export/install."
+  ],
+  "limitations": [
+    "Official interior images show furnishings but do not establish an entire accessible public room layout. Keep incomplete interiors recorded until a supported layout is authored.",
+    "Reference images are local research only; never commit or use as game textures."
+  ],
+  "decisionsForOwner": [
+    "Use existing mapped footprints and pump placement. Refine pump toppers and protective guards using dated Street View; exact dimensions estimated from pump scale.",
+    "A reversible original movable Psychic sign may be added within the forecourt; exact historic position unmeasured. No copied artwork or third-party textures.",
+    "Retain no-interior discrepancy: official partial-room pictures do not establish the entrance or full public circulation layout."
+  ]
+}

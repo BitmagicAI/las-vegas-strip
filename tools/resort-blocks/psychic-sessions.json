@@ -17,6 +17,19 @@
       "date": "2022-12",
       "author": "GoogleStreetView",
       "observed": "White stucco, blank upper parapet, cornice dentils, two entry doors and flanking storefront windows, south half rooftop sign and projecting marquee. Only date available at selected panorama."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09203,-115.17278&heading=90&pitch=0&fov=70",
+      "pano": "2zfRZI9Wjb3r_Bu_GI9_jw",
+      "date": "2026-02",
+      "author": "Google Street View",
+      "observed": "Inspected Psychic Sessions 3953 facade: dentils, white cream stucco, two doors/windows, projecting marquee, parapet eye sign, small red WE ARE OPEN sign, number 3953. Large white wheeled sign on forecourt with red borders/text and black base. Chipped paint and boarded panel remain approximate. Neighbor grass/palms outside scope."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.09199,-115.1721,208m/data=!3m1!1e3",
+      "author": "Google Maps satellite",
+      "date": "capture date not established",
+      "observed": "Inspected rectangular Psychic roof, west forecourt, east rear parking; neighboring northern grass belongs to 3951 and must not be copied into site. Movable sign cannot be precisely located from aerial."
     }
   ],
   "remaining": [
@@ -51,5 +64,10 @@
       "build/strip-landmarks/psychicSessions-exterior.glb": "5b9d6b5d179505038d0c7e2183fe9ee8e2295ad632335116469e5fb99a88bb95",
       "build/strip-landmarks/psychicSessions-exterior-collision.json": "f1ed00956479013d6ade3bd9d690a00a067bb34fdddc3e081f96ff45a16825df"
     }
+  },
+  "refinementInProgress": {
+    "pr": 495,
+    "record": "docs/project-records/south-strip-storefront-fuel-refinement",
+    "state": "Sources and baseline26-leg installed walk checked; optimized models installed and shared bake in progress. After validation pending."
   }
 }

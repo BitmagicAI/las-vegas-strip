@@ -44,6 +44,11 @@ def exterior(B):
    for u in np.arange(2.4,9.7,.18):G.box('ps-bulb',(u,3.03,-1.28),(.045,.045,.04))
    G.text('PSYCHIC',(11.5,2.52,-.2),.25,'ps-white')
    G.text('OPEN',(2.9,2.17,-.2),.3,'ps-red')
+   # February 2026 Street View: small opening notice and civic number.
+   G.box('ps-red',(11.3,4.28,-.1),(1.05,.63,.055))
+   G.text('WE ARE',(11.3,4.43,-.14),.14,'ps-white')
+   G.text('OPEN',(11.3,4.16,-.14),.22,'ps-white')
+   G.text('3953',(7.3,2.87,-.2),.18,'ps-ink')
    # Painted security panel, rainpipe and entry lamps.
    G.box('ps-panel',(1.2,1.7,-.08),(1.25,2.05,.14))
    for u in [1,14.7]:G.box('ps-metal',(u,2.8,-.24),(.18,.28,.28))
@@ -61,6 +66,23 @@ def exterior(B):
   for z in range(2647,2678,3):B.planar('ps-asphalt',site.intersection(box(x,z,x+3,z+3)),.26,True)
  for z in np.arange(2652,2666,2.8):W.box('ps-line',(67.6,.275,z),(5,.015,.07))
  W.box('ps-paving',(69.7,.31,2658.5),(2.6,.1,16),True)
+ # Movable forecourt sign observed February 2026. Position and 2 x 2.4 m board
+ # are inferred; original lettering replaces advertisements and contact details.
+ # Kept within our paving, away from the verified west-east door approach.
+ S=Frame(B,63,2662,math.pi/2,y=0)
+ S.box('ps-sign-paint',(0,1.9,0),(2,2.4,.22),True)
+ for side in [-1,1]:
+  F=Frame(B,63+side*.13,2662,math.pi/2 if side<0 else -math.pi/2,y=0)
+  for u in [-.94,.94]:F.box('ps-red',(u,1.9,-.01),(.045,2.28,.025))
+  for y in [.78,3.02]:F.box('ps-red',(0,y,-.01),(1.9,.045,.025))
+  F.text('PSYCHIC',(0,2.64,-.04),.28,'ps-red')
+  F.text('READINGS',(0,2.24,-.04),.25,'ps-red')
+  F.text('PALM  CARD',(0,1.69,-.04),.18,'ps-ink')
+  F.text('OPEN',(0,1.12,-.04),.34,'ps-red')
+ for u in [-.72,.72]:
+  S.box('ps-metal',(u,.49,0),(.08,.5,.08))
+  S.box('ps-metal',(u,.3,0),(.13,.1,1.1),True)
+  for v in [-.43,.43]:S.tube('ps-ink',(u-.07,.22,v),(u+.07,.22,v),.12,10)
  # Low security rail beside northern window, kept off the door approach.
  for z in np.arange(2652,2655.4,.17):W.box('ps-frame',(68.7,.85,z),(.025,1.08,.025))
  W.box('ps-frame',(68.7,1.4,2653.6),(.06,.055,3.4),True)

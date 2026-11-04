@@ -11,6 +11,26 @@
     {
       "url": "https://www.google.com/maps/@36.0970809,-115.1723648,100m/data=!3m1!1e3",
       "observed": "Satellite inspected: canopy west,store east with canted NWcorner,RenoAvenue north,open paved forecourt."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09705,-115.17265&heading=90&pitch=0&fov=85",
+      "pano": "kYaWp6IrMANIWYapsHhzQA",
+      "date": "2019-03",
+      "author": "Google Street View",
+      "observed": "Inspected hip terracotta canopy, blue/white fascia, cream columns, blue rounded pump toppers, yellow U guards, hoses and dark trash bins. Old store appearance is not used to replace later storefront."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09714,-115.17280&heading=90&pitch=0&fov=85",
+      "pano": "xKqBChCn2C79g-_7BTzlrA",
+      "date": "2026-02",
+      "author": "Google Street View",
+      "observed": "Inspected 3873 S Las Vegas Blvd canopy and pump blue toppers/yellow guards. Gravel island, price cabinet and palms visible; store entrance partly obscured. Preserve inferred existing pump positions; do not absorb street bollards or adjacent billboard."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0970809,-115.1723648,104m/data=!3m1!1e3",
+      "author": "Google Maps satellite",
+      "date": "capture date not established",
+      "observed": "Inspected canopy west, store east with canted northwest corner, northern Reno access and southern billboard/service strip. No scope expansion or road edits."
     }
   ],
   "dimensions": "Mapped canopy16.3x17.6m,storeoutline preserved. Canopy soffit4.6m,cap5.88m,store4.1m,pylon11m photoestimates.",
@@ -41,5 +61,10 @@
       "build/strip-landmarks/southArco-exterior.glb": "7439dc284d2af282d4f899d64c39fd7f3191640e8a77f159e0f217e14d8621d1",
       "build/strip-landmarks/southArco-exterior-collision.json": "82c23531b81138a13d9796268f3ff00f392468fb8108772d5293f765a8158f2a"
     }
+  },
+  "refinementInProgress": {
+    "pr": 495,
+    "record": "docs/project-records/south-strip-storefront-fuel-refinement",
+    "state": "Sources and baseline26-leg installed walk checked; optimized models installed and shared bake in progress. After validation pending."
   }
 }
