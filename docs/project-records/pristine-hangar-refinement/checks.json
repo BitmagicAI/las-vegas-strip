@@ -1,0 +1,16 @@
+{
+  "typecheck": "passed",
+  "records": "289valid, activePristine refinement-deferred",
+  "supportHeadroom": "259samples,0failures",
+  "cpuWalk": "6legs passed",
+  "installedWalk": "6before+6after legs passed;4endpoint screenshots inspected",
+  "views": "4matching neutral-daylight pairs inspected,front first",
+  "performance": "p95 front+1.5ms,north-0.7,west-0.6,aerial-4.7; no speedup claim",
+  "optimizer": "level and WebP invocation passed; no textures;1GLB check passed",
+  "bake": "one shared bake; up-to-date check passed; restoredunownedGoldCoast/Wyndham",
+  "cells": "91/92 byte-identical to origin/next; onlycell-0_4.bin changed",
+  "assetPack": "1930present,0missing,0unoptimized;3filescopied,1927unchanged",
+  "smoke": "9stops,0failedrequests,0pageerrors,0consoleerrors,0unplaced",
+  "public": "0failures,7existingwarnings",
+  "archive": "2152files archived locally; third-party media excluded fromgit"
+}

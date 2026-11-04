@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1219051648,
+ "bytes": 1219036860,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -330,8 +330,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_4.bin",
-   "bytes": 108227,
-   "sha256": "549fcabd83d5ea868731a6a8d31de440597be9d3f9ba632ff0db17bc9e9b8f95",
+   "bytes": 107967,
+   "sha256": "5e497fd86472b7c485c79778a7c80481c99a6fbc1c05d5ab63525c34f7ead022",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "a29707c7a4e6719b8b7668a240eaebd4f5d7f85b5284a107d04725d67232601a",
+   "sha256": "58552e59040873c57f370836ba350f0089f006624707b742501ca032f410277c",
    "kind": "runtime cell manifest"
   },
   {
@@ -10314,8 +10314,8 @@
   },
   {
    "path": "build/strip-landmarks/pristineHangar-exterior.glb",
-   "bytes": 94096,
-   "sha256": "364cdacbcdcae6ed8f530cdaf010497ed2718c7c8f10780941d9024fab403390",
+   "bytes": 79568,
+   "sha256": "83f47e15e52e8e57fae80af6a27031088ccf8e4df8926d236d2372594ec73355",
    "kind": "optimized"
   },
   {
