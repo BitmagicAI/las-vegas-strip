@@ -1,0 +1,238 @@
+{
+  "diamond": {
+    "before": [
+      {
+        "name": "front",
+        "eye": [
+          18,
+          5,
+          3168
+        ],
+        "target": [
+          85,
+          2,
+          3176
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19.399999856948853
+      },
+      {
+        "name": "courtyard",
+        "eye": [
+          80,
+          2.1,
+          3158
+        ],
+        "target": [
+          118,
+          2,
+          3190
+        ],
+        "p50": 16.5,
+        "p95": 19.5
+      },
+      {
+        "name": "elephant",
+        "eye": [
+          40,
+          3,
+          3168
+        ],
+        "target": [
+          49,
+          2.3,
+          3177
+        ],
+        "p50": 16.799999952316284,
+        "p95": 19.100000143051147
+      },
+      {
+        "name": "aerial",
+        "eye": [
+          -15,
+          65,
+          3120
+        ],
+        "target": [
+          88,
+          0,
+          3177
+        ],
+        "p50": 16.700000047683716,
+        "p95": 20.300000190734863
+      }
+    ],
+    "after": [
+      {
+        "name": "front",
+        "eye": [
+          18,
+          5,
+          3168
+        ],
+        "target": [
+          85,
+          2,
+          3176
+        ],
+        "p50": 16.5,
+        "p95": 18.799999952316284
+      },
+      {
+        "name": "courtyard",
+        "eye": [
+          80,
+          2.1,
+          3158
+        ],
+        "target": [
+          118,
+          2,
+          3190
+        ],
+        "p50": 16.799999952316284,
+        "p95": 18.299999952316284
+      },
+      {
+        "name": "elephant",
+        "eye": [
+          40,
+          3,
+          3168
+        ],
+        "target": [
+          49,
+          2.3,
+          3177
+        ],
+        "p50": 16.699999809265137,
+        "p95": 19.200000047683716
+      },
+      {
+        "name": "aerial",
+        "eye": [
+          -15,
+          65,
+          3120
+        ],
+        "target": [
+          88,
+          0,
+          3177
+        ],
+        "p50": 16.799999952316284,
+        "p95": 19.199999809265137
+      }
+    ],
+    "method": "960x540 DPR1 ultra; identical neutral daylight cameras;900settle frames, streaming quiet,60extra frames,180timing frames; fixed camera windows, not full route performance.",
+    "p95ChangeMs": {
+      "front": -0.6,
+      "courtyard": -1.2,
+      "elephant": 0.1,
+      "aerial": -1.1
+    }
+  },
+  "limitations": "No GPU/CPU span, cold-transition or full-route timing claim. Hardware/browser contention can affect short windows. No speedup claim.",
+  "nirvana": {
+    "before": [
+      {
+        "name": "front",
+        "eye": [
+          30,
+          4.5,
+          2675
+        ],
+        "target": [
+          66,
+          2,
+          2685
+        ],
+        "p50": 16.799999952316284,
+        "p95": 20.5
+      },
+      {
+        "name": "courtyard",
+        "eye": [
+          111,
+          2.1,
+          2712
+        ],
+        "target": [
+          53,
+          1.8,
+          2702
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.40000009536743
+      },
+      {
+        "name": "aerial",
+        "eye": [
+          25,
+          48,
+          2625
+        ],
+        "target": [
+          81,
+          0,
+          2685
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19.399999856948853
+      }
+    ],
+    "after": [
+      {
+        "name": "front",
+        "eye": [
+          30,
+          4.5,
+          2675
+        ],
+        "target": [
+          66,
+          2,
+          2685
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19.300000190734863
+      },
+      {
+        "name": "courtyard",
+        "eye": [
+          111,
+          2.1,
+          2712
+        ],
+        "target": [
+          53,
+          1.8,
+          2702
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.700000047683716
+      },
+      {
+        "name": "aerial",
+        "eye": [
+          25,
+          48,
+          2625
+        ],
+        "target": [
+          81,
+          0,
+          2685
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19
+      }
+    ],
+    "method": "960x540 DPR1 ultra; identical neutral daylight cameras;900settle frames, streaming quiet,60extra frames,180timing frames; fixed camera windows, not full route performance.",
+    "p95ChangeMs": {
+      "front": -1.2,
+      "courtyard": 0.3,
+      "aerial": -0.4
+    }
+  }
+}

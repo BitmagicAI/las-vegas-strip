@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204728187,
+ "bytes": 1216846895,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -324,8 +324,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_3.bin",
-   "bytes": 325541,
-   "sha256": "0a8e4e6b5e331f634805e9ba6b0d9dba8ad96d34207880167d11d994d3dd68ce",
+   "bytes": 323109,
+   "sha256": "16281820eacb2a319198affaa9267bd17231de2da0b1ca80ea30251ec8fc6848",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "f265d0bb8a1c5db1fed565fed4a178b14ab78124dbdc65c9e8c6681441ee746c",
+   "sha256": "0dd4282cee265db48b304eec8006cd6b34f30c4cc1fbdc2745a5408b06df8af4",
    "kind": "runtime cell manifest"
   },
   {
@@ -8154,8 +8154,8 @@
   },
   {
    "path": "build/strip-landmarks/diamondInn-exterior.glb",
-   "bytes": 1625016,
-   "sha256": "f0ab8c3bc608303e72896a77313d1595026b2a1f6e8480d79e52819bf2946119",
+   "bytes": 13747976,
+   "sha256": "720e2e912b576a62757bbd3dc73a7bc2660cf368a2f12f905f51bc343144ca36",
    "kind": "optimized"
   },
   {
@@ -9846,8 +9846,8 @@
   },
   {
    "path": "build/strip-landmarks/nirvanaHotel-exterior.glb",
-   "bytes": 328184,
-   "sha256": "cde5fbb50cfbae24c082348dc5d7877065707ca64aae8443d30daf59b7b0e56a",
+   "bytes": 326364,
+   "sha256": "cb850eee247770f00664b48076ac0be9e36c7861fc113cea43419ad0c146e681",
    "kind": "optimized"
   },
   {

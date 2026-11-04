@@ -6578,7 +6578,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Elephant anatomy and surface detail remain simplified; not photorealistic",
-    "Sparse palm fronds and primitive shrubs need replacement/refinement",
+    "Remaining palm fronds and front primitive shrubs need refinement; broadleaf species, canopy density, dimensions and island placement remain inferred.",
     "Room interiors and closed-site perimeter fence not included",
     "Neighboring parcels show missing ground in aerial review; not repaired by this property pass"
    ],
@@ -6611,12 +6611,12 @@
      "tools/resort-blocks/diamond-inn.json"
     ],
     "builders": [
+     "tools/strip-landmarks/build_south_motel_refinement.py",
+     "tools/strip-landmarks/export_diamond_refinement.py",
+     "tools/city-exteriors/install-south-motel-refinement.mjs",
      "tools/city-exteriors/test-diamond.mjs",
      "tools/city-exteriors/walk-diamond.mjs",
-     "tools/strip-landmarks/build_diamond_inn.py",
-     "tools/strip-landmarks/diamond_inn.py",
-     "tools/strip-landmarks/peppermint_hippo.py",
-     "tools/strip-landmarks/terribles_headquarters.py"
+     "tools/strip-landmarks/build_diamond_inn.py"
     ]
    },
    "acceptance": [
@@ -6637,7 +6637,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact front retail glazing and lettering require better matched reference; lotus simplified",
+    "Exact front retail glazing and lettering require better matched reference; filled lotus silhouette improved but exact proportions remain inferred.",
     "Mature landscaping and facade aging not reproduced",
     "Room interiors outside exterior scope",
     "Neighboring mapped parcels still show missing ground outside authored site"
@@ -6661,12 +6661,12 @@
      "tools/resort-blocks/nirvana-hotel.json"
     ],
     "builders": [
+     "tools/strip-landmarks/build_south_motel_refinement.py",
+     "tools/city-exteriors/install-south-motel-refinement.mjs",
      "tools/city-exteriors/test-nirvana-ancillary.mjs",
      "tools/city-exteriors/test-nirvana.mjs",
      "tools/city-exteriors/test-psychic-sessions.mjs",
-     "tools/city-exteriors/walk-nirvana-ancillary.mjs",
-     "tools/city-exteriors/walk-nirvana.mjs",
-     "tools/city-exteriors/walk-psychic-sessions.mjs"
+     "tools/city-exteriors/walk-nirvana-ancillary.mjs"
     ]
    },
    "acceptance": [

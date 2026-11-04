@@ -1,0 +1,30 @@
+{
+  "typecheck": "PASS",
+  "sourceAudit": "source-audit.json",
+  "floorHeadroom": {
+    "diamond": 261,
+    "nirvana": 70,
+    "before": "PASS",
+    "after": "PASS"
+  },
+  "diamondRapier": "PASS:6legs both directions before/after",
+  "actualInstalledWalk": {
+    "before": "PASS",
+    "after": "PASS",
+    "segments": {
+      "diamond": 12,
+      "nirvana": 6
+    },
+    "endpointImages": "All4before and4after inspected"
+  },
+  "installedDaylightViews": "All7before and7after inspected, identical cameras front first",
+  "optimization": "PASS level; Diamond WebP; Nirvana textureless WebP driver no-op",
+  "performance": "Worst matched p95 increase0.3ms; no speedup claim; fixed camera windows only",
+  "pending": [],
+  "resortRecordReview": "PASS",
+  "bake": "PASS:one grouped bake, current;91/92cells byte-identical",
+  "assetPack": "PASS:1930present,0missing,0unoptimized;4copied1926unchanged0removed",
+  "publicScan": "PASS:0failures,4existingwarnings",
+  "runtimeOptimization": "PASS:2changedGLBs,0unoptimized",
+  "devSmoke": "PASS:9stops,0failedrequests,0pageErrors,0consoleErrors against port3180"
+}

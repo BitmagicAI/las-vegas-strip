@@ -1,0 +1,461 @@
+{
+  "diamondInn": {
+    "exitCode": 0,
+    "failed": [],
+    "checks": [
+      {
+        "name": "node names",
+        "fail": false,
+        "detail": "49 kept"
+      },
+      {
+        "name": "texture slots",
+        "fail": false,
+        "detail": "10 kept"
+      },
+      {
+        "name": "vertex layout",
+        "fail": false,
+        "detail": "separate"
+      },
+      {
+        "name": "bounds",
+        "fail": false,
+        "detail": "0.000% of size"
+      },
+      {
+        "name": "smaller",
+        "fail": false,
+        "detail": "16.80 MiB saved"
+      },
+      {
+        "name": "Khronos validator",
+        "fail": false,
+        "detail": "0 errors (0 new), 3 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/3/primitives/0/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/3/primitives/1/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/3/primitives/2/material"
+      }
+    ],
+    "before": {
+      "bytes": 33626432,
+      "triangles": 334762,
+      "vertices": 637918,
+      "nodes": 49,
+      "skins": 0,
+      "animations": 0,
+      "gpuGeometry": 26358814,
+      "gpuTextures": 54171645,
+      "textures": [
+        {
+          "name": "tree_small_02_branch_nor_gl_1k",
+          "slot": "normal",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 581596,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_branch_diff_1k",
+          "slot": "base",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 449977,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_branch_arm_1k",
+          "slot": "orm",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 375732,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_leaves_nor_gl_1k",
+          "slot": "normal",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 681604,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+          "slot": "base",
+          "w": 1024,
+          "h": 1024,
+          "mime": "png",
+          "bytes": 1047075,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_leaves_arm_1k",
+          "slot": "orm",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 633698,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_nor_gl_1k",
+          "slot": "normal",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 1228646,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_diff_1k",
+          "slot": "base",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 863246,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_arm_1k",
+          "slot": "orm",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 708242,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree-proof",
+          "slot": "base",
+          "w": 800,
+          "h": 900,
+          "mime": "png",
+          "bytes": 652270,
+          "gpu": 3840000
+        }
+      ],
+      "extensions": [
+        "KHR_materials_specular",
+        "KHR_texture_transform"
+      ]
+    },
+    "after": {
+      "bytes": 16006716,
+      "triangles": 334762,
+      "vertices": 637916,
+      "nodes": 49,
+      "skins": 0,
+      "animations": 0,
+      "gpuGeometry": 16884442,
+      "gpuTextures": 54171645,
+      "textures": [
+        {
+          "name": "tree_small_02_branch_nor_gl_1k",
+          "slot": "normal",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 581596,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_branch_diff_1k",
+          "slot": "base",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 449977,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_branch_arm_1k",
+          "slot": "orm",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 375732,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_leaves_nor_gl_1k",
+          "slot": "normal",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 681604,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+          "slot": "base",
+          "w": 1024,
+          "h": 1024,
+          "mime": "png",
+          "bytes": 1047075,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_leaves_arm_1k",
+          "slot": "orm",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 633698,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_nor_gl_1k",
+          "slot": "normal",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 1228646,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_diff_1k",
+          "slot": "base",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 863246,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree_small_02_arm_1k",
+          "slot": "orm",
+          "w": 1024,
+          "h": 1024,
+          "mime": "jpeg",
+          "bytes": 708242,
+          "gpu": 5592405
+        },
+        {
+          "name": "tree-proof",
+          "slot": "base",
+          "w": 800,
+          "h": 900,
+          "mime": "png",
+          "bytes": 652270,
+          "gpu": 3840000
+        }
+      ],
+      "extensions": [
+        "EXT_meshopt_compression",
+        "KHR_materials_specular",
+        "KHR_mesh_quantization",
+        "KHR_texture_transform"
+      ]
+    },
+    "webp": {
+      "exitCode": 0,
+      "failed": [],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "49 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "10 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "18.96 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 3 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/3/primitives/0/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/3/primitives/1/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/3/primitives/2/material"
+        }
+      ],
+      "after": {
+        "bytes": 13747976,
+        "triangles": 334762,
+        "vertices": 637916,
+        "nodes": 49,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 16884442,
+        "gpuTextures": 54171645,
+        "textures": [
+          {
+            "name": "tree_small_02_branch_nor_gl_1k",
+            "slot": "normal",
+            "w": 1024,
+            "h": 1024,
+            "mime": "jpeg",
+            "bytes": 581596,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree_small_02_branch_diff_1k",
+            "slot": "base",
+            "w": 1024,
+            "h": 1024,
+            "mime": "webp",
+            "bytes": 108330,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree_small_02_branch_arm_1k",
+            "slot": "orm",
+            "w": 1024,
+            "h": 1024,
+            "mime": "jpeg",
+            "bytes": 375732,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree_small_02_leaves_nor_gl_1k",
+            "slot": "normal",
+            "w": 1024,
+            "h": 1024,
+            "mime": "jpeg",
+            "bytes": 681604,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+            "slot": "base",
+            "w": 1024,
+            "h": 1024,
+            "mime": "webp",
+            "bytes": 185084,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree_small_02_leaves_arm_1k",
+            "slot": "orm",
+            "w": 1024,
+            "h": 1024,
+            "mime": "jpeg",
+            "bytes": 633698,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree_small_02_nor_gl_1k",
+            "slot": "normal",
+            "w": 1024,
+            "h": 1024,
+            "mime": "jpeg",
+            "bytes": 1228646,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree_small_02_diff_1k",
+            "slot": "base",
+            "w": 1024,
+            "h": 1024,
+            "mime": "webp",
+            "bytes": 314700,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree_small_02_arm_1k",
+            "slot": "orm",
+            "w": 1024,
+            "h": 1024,
+            "mime": "jpeg",
+            "bytes": 708242,
+            "gpu": 5592405
+          },
+          {
+            "name": "tree-proof",
+            "slot": "base",
+            "w": 800,
+            "h": 900,
+            "mime": "webp",
+            "bytes": 145532,
+            "gpu": 3840000
+          }
+        ],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "EXT_texture_webp",
+          "KHR_materials_specular",
+          "KHR_mesh_quantization",
+          "KHR_texture_transform"
+        ]
+      }
+    }
+  },
+  "nirvanaHotel": {
+    "exitCode": 0,
+    "failed": [],
+    "checks": [
+      {
+        "name": "node names",
+        "fail": false,
+        "detail": "19 kept"
+      },
+      {
+        "name": "texture slots",
+        "fail": false,
+        "detail": "0 kept"
+      },
+      {
+        "name": "vertex layout",
+        "fail": false,
+        "detail": "separate"
+      },
+      {
+        "name": "bounds",
+        "fail": false,
+        "detail": "0.000% of size"
+      },
+      {
+        "name": "smaller",
+        "fail": false,
+        "detail": "718.9 KiB saved"
+      },
+      {
+        "name": "Khronos validator",
+        "fail": false,
+        "detail": "0 errors (0 new), 0 warnings"
+      }
+    ],
+    "before": {
+      "bytes": 1062484,
+      "triangles": 17951,
+      "vertices": 38208,
+      "nodes": 19,
+      "skins": 0,
+      "animations": 0,
+      "gpuGeometry": 1043450,
+      "gpuTextures": 0,
+      "textures": [],
+      "extensions": []
+    },
+    "after": {
+      "bytes": 326364,
+      "triangles": 17951,
+      "vertices": 38176,
+      "nodes": 19,
+      "skins": 0,
+      "animations": 0,
+      "gpuGeometry": 689722,
+      "gpuTextures": 0,
+      "textures": [],
+      "extensions": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "webp": "Driver run: textureless GLB skips texture conversion, preserves level output."
+  }
+}

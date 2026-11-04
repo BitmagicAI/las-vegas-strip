@@ -4,6 +4,8 @@ Closed-site exterior; no operating hotel or accessible room claim.
 from common import *
 from forum_shops import facade_frame
 KEY='diamondInn'
+# Estimated from auction-agent aerials and Google satellite; existing CC0 tree source.
+TREE_PLACEMENTS=[(84,3173,9,.4),(98,3177,10,1.9),(90,3187,9,2.8)]
 def palm(B,x,z,h=8,crown_scale=1):
  F=Frame(B,x,z,y=0);F.lathe('bark',0,0,[(0,.24),(h*.55,.18),(h,.13)],16)
  for y in np.arange(.2,h,.3):F.lathe('bark',0,0,[(y,.2),(y+.06,.23),(y+.1,.2)],12)
@@ -92,10 +94,14 @@ def exterior(B):
   G=Frame(B,42,3177,yaw,y=0);G.box('di-white',(0,7.3,-.25),(5.6,3,.25));G.text('DIAMOND',(0,7.9,-.4),.62,'di-red');G.text('MOTEL',(0,6.8,-.4),.8,'di-red')
  B.source='podium/yard';elephant(B)
  B.detail=1
- for x,z,h in [(58,3162,8),(60,3187,9),(96,3163,8),(102,3189,9),(83,3179,10)]:palm(B,x,z,h)
- for x,z in [(49,3167),(51,3186),(88,3174),(91,3183)]:
+ for x,z,h in [(58,3162,8),(60,3187,9),(96,3163,8),(102,3189,9)]:palm(B,x,z,h)
+ for x,z in [(49,3167),(51,3186)]:
   B.planar('di-soil',Point(x,z).buffer(2),.02)
   for j in range(7):B.sphere('di-leaf',(x+math.sin(j*2.4),.6,z+math.cos(j*2.4)),.8,10,6,scale=(1,.7,1))
+ # Broadleaf courtyard planting island visible in both auction aerials and satellite.
+ island=box(77,3166,105,3193).buffer(1.0,resolution=6)
+ B.planar('di-grass',island,.045)
+ ring=list(island.exterior.coords);B.path('di-red',[(x,.09,z) for x,z in ring],.055,6)
  for x in np.arange(78,114,4.4):
   F.box('di-line',(x,.015,3157),(.08,.025,5));F.box('di-line',(x,.015,3198),(.08,.025,5))
  for x,z in [(81,3144),(104,3145),(121,3185),(96,3208)]:F.box('di-ac',(x,4,z),(1.5,.7,1.3))
