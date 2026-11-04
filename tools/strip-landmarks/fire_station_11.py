@@ -22,7 +22,12 @@ def exterior(B):
     if min(a[1],b[1])-.1<z<max(a[1],b[1])+.1:
      u=LineString([a,b]).project(Point(-69.6,z));G.box('f11-frame',(u,2.55,-.06),(3.85,4.6,.16));G.box('f11-door',(u,2.55,-.16),(3.6,4.4,.07))
      for y in np.arange(.55,4.7,.42):G.box('f11-door-joint',(u,y,-.21),(3.6,.025,.02))
-     for dx in [-1.15,-.38,.38,1.15]:G.box('f11-glass',(u+dx,2.8,-.22),(.63,.4,.025))
+     # Feb2025 Street View and official photo: three vertically stacked lights,
+     # offset toward the viewer's right, rather than a horizontal window strip.
+     for y in [1.85,2.55,3.25]:G.box('f11-glass',(u-1.05,y,-.22),(.48,.48,.025))
+     for dx in [-2.02,2.02]:
+      G.tube('f11-bay-bollard',(u+dx,.32,-.65),(u+dx,1.35,-.65),.09,10)
+   G.box('f11-canopy',(L/2,4.98,-.48),(L,.14,1.05))
   elif L>7:
    for u in np.arange(2,L-1,4.2):
     G.box('f11-frame',(u,2,-.07),(1.8,1.5,.13));G.box('f11-glass',(u,2,-.15),(1.65,1.35,.04))
@@ -34,10 +39,12 @@ def exterior(B):
  E.box('f11-metal',(0,10.55,-.04),(1.9,1.7,.1));E.text('11',(0,10.1,-.12),1.22,'f11-dark')
  W.box('f11-canopy',(-57.5,3.15,3639.5),(7,.16,6),True)
  for z in [3637,3642]:W.tube('f11-metal',(-54.2,.3,z),(-54.2,3.15,z),.065,8)
+ # Thin suspended shade cables visible in the architect photograph and Street View.
+ for z in [3637,3642]:W.tube('f11-metal',(-59.1,5.0,z),(-54.2,3.28,z),.025,6)
  D=Frame(B,-59.4,3639.5,-math.pi/2,y=0)
  D.box('f11-frame',(0,1.65,-.02),(1.7,2.7,.1));D.box('f11-glass',(0,1.65,-.09),(1.55,2.55,.04));D.box('f11-metal',(.1,1.45,-.16),(.04,.35,.05))
  D.text('STATION 11',(0,2.9,-.15),.24,'f11-letter')
- F=Frame(B,-69.35,3653.7,-math.pi/2,y=0);F.text('CLARK COUNTY FIRE DEPARTMENT',(0,5.25,-.06),.35,'f11-letter')
+ F=Frame(B,-69.35,3653.7,-math.pi/2,y=0);F.text('CLARK COUNTY FIRE STATION NO. 11',(0,5.25,-.06),.32,'f11-letter')
  for x,z in [(-87,3650),(-78,3657),(-85,3657),(-78,3650)]:
   W.box('f11-service',(x,6.45,z),(1,.8,1.4));W.box('f11-dark',(x,6.88,z),(.8,.05,1.1))
  # Front gravel garden and separate engine apron; no underlying road regeneration.

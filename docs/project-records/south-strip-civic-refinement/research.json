@@ -1,0 +1,69 @@
+{
+  "reviewed": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://www.lvmpd.com/Home/Components/FacilityDirectory/FacilityDirectory/20/150",
+      "observed": "Official page identifies 4860 S Las Vegas Blvd. Direct HTTP access returned403; official image2774 successfully inspected in Chrome on2026-11-04."
+    },
+    {
+      "url": "https://www.clarkcountynv.gov/assets/images/general/media_141ae6c029efbbeed7197638bd17fb959a28c1e05.jpeg",
+      "author": "Clark County official website",
+      "date": "undated",
+      "observed": "Full image inspected. Terracotta bay facade, cream raised center, three white apparatus doors each with three vertically stacked offset small windows; yellow door-side bollards. Continuous shallow pale canopy over bays. Small entrance window shades;5150 number; gravel and palms/agave.",
+      "local": "build/city-exteriors/civic-references/fire-official.jpg"
+    },
+    {
+      "url": "https://www.csdarchitecture.com/csd-projects/clark-county---fire-station-11",
+      "imageUrl": "https://static.wixstatic.com/media/78f6ab_7ea6223e8d9147a996a314c45e34ceaf~mv2.jpg/v1/fill/w_2048%2Ch_1360%2Cal_c%2Cq_90/P1010171.JPG",
+      "author": "Carpenter Sellers Del Gatto architects",
+      "date": "undated",
+      "observed": "Full photograph inspected. Tall red marker has curved silver11plaque; entrance shade canopy with support cables; barrel roof, palm/agave/gravel landscape and low terracotta planters. No complete interior layout shown.",
+      "local": "build/city-exteriors/civic-references/fire-architect.jpg"
+    },
+    {
+      "url": "https://www.lvmpd.com/home/showpublishedimage/2774",
+      "author": "LVMPD",
+      "date": "undated",
+      "observed": "Inspected full official photograph in browser. Ribbed brick lower facade and cream gable; narrow blue-green windows with horizontal mullions. Entrance has two-tier pale metal canopy, cylindrical gray bollards, and adjacent rectangular brick tower with open square apertures. Building signage is on north gable. No public interior layout shown."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=uOVh44IJkyKIyhSlGq-MJg&heading=270&pitch=0&fov=45",
+      "date": "Feb2025",
+      "observed": "Police front inspected. Metal entrance canopy, gray entrance bollards, ribbed brick tower, slim divided windows, cream upper gables and brown standing-seam roofs. Mature desert trees and clipped shrubs in front parking islands. Snapped coordinate36.0845364,-115.1730252."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=muKe8BYQQD69zOMAid_b3w&heading=270&pitch=0&fov=30",
+      "date": "Feb2025",
+      "observed": "Fire current facade is muted gray/beige, unlike historic undated terracotta official/architect photographs. Three vertically stacked offset-right windows per apparatus door, shallow continuous shade over bays, yellow door-side bollards. Red marker retains protruding curved metal11plaque; entrance canopy support cable. Small window shades,5150,agaves and palms in gravel."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.08465,-115.17365,208m/data=!3m1!1e3",
+      "date": "capture date not exposed; reviewed2026-11-04",
+      "observed": "Police overhead inspected. Long north-south building; orange roofs and white flat rear sections. East public parking has central landscaped islands and boulevard access. West parking is separated from public east frontage. Preserve current mapped footprint and circulation."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.08325,-115.17365,208m/data=!3m1!1e3",
+      "date": "capture date not exposed; reviewed2026-11-04",
+      "observed": "Fire overhead inspected. Central barrel roof, flat southern apparatus volume, east apparatus apron, separate north parking and west drive. Broad east gravel landscape bisected by entrance path. Preserve current mapped footprint and roads."
+    }
+  ],
+  "pending": [
+    "Draft geometry built successfully, not exported/optimized/installed or visually verified yet.",
+    "Baseline actual walk underway.",
+    "Duplicated police sign seen in installed baseline unresolved.",
+    "Curved fire marker plaque, police brick entrance tower and broader landscaping remain deferred."
+  ],
+  "decisionsForOwner": [
+    "Preserve current gray/beige fire paint, supported by dated Feb2025 Street View; do not copy undated historic terracotta paint.",
+    "Refine existing shells using original small geometry. No inferred operational police/fire interiors.",
+    "Dimensions of small features will be inferred against existing 3.6m apparatus doors and 2.7m entrance frame; not survey measurements."
+  ],
+  "inferredDimensions": {
+    "fireBayWindows": "3 lights per door;0.48m square,0.70m vertical spacing,1.05m sideways offset relative to existing3.6m door.",
+    "fireBayShade": "1.05m projection,0.14m thickness at4.98m height; wall-length canopy.",
+    "fireBayBollards": "0.18m diameter,1.03m exposed height;0.65m outward and2.02m either side of door center.",
+    "fireCanopyCables": "0.05m diameter from existing wall5.0m high to canopy3.28m high.",
+    "policeCanopy": "Existing lower9x8m canopy retained; inferred6.8x7.6m upper metal shade at4.25m,0.16m thick.",
+    "policeBollards": "Four0.24m diameter,1.13m high cylinders flank a3m clear center gap."
+  }
+}

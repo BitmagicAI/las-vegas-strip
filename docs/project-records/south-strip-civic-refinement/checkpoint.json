@@ -5,13 +5,26 @@
     120
   ],
   "claims": "Confirmed janiverse; direct self-assignment after posted /claim automation failed to assign. No other assignees existed.",
-  "stage": "Records read; PR495 local runtime changes isolated and six paths restored to current next. No civic model edits.",
-  "pending": "Capture baseline front-first daylight views and actual walks. Research current Street View/satellite and official photographs. Choose supported original geometry; optimize then one shared bake, all step7.",
+  "stage": "Original civic details exported, level optimized and WebP pass invoked (zero textures), installed locally; shared bake running. No after-install verification or completion claim yet.",
+  "pending": "Bake session22125 /tmp/civic-bake.log. On success run node /tmp/civic-preserve-lod496.mjs, inspect preserved-cell report. Then capture both probe scripts with --out build/city-exteriors/<id>-refinement-after, actual walk-civic-refinement.js with --out build/city-exteriors/civic-walk-after. Inspect all views, compare baseline performance, stage only owned runtime and run all step7 before ready/guarded merge.",
   "previousBlockedPR": {
     "pr": 495,
     "verifiedHead": "d52eef1d8977065b0545596045737961d06556f8",
     "reason": "GitHub PR API stale head; guarded merge rejected. Issues117/118 documented and /unclaim posted. Do not poll.",
     "preservedBranch": "task/south-strip-storefront-fuel-refinement"
   },
-  "runtimeRestore": "Only six own PR495 runtime paths restored; monolithic LOD reassembled from current next cells. Previous installed files and optimizer manifest backed up in build/city-exteriors/storefront-fuel-installed-495. Other 879 working source/runtime differences preserved."
+  "runtimeRestore": "Only six own PR495 runtime paths restored; monolithic LOD reassembled from current next cells. Previous installed files and optimizer manifest backed up in build/city-exteriors/storefront-fuel-installed-495. Other 879 working source/runtime differences preserved.",
+  "research": "research.json records Feb2025 Street View, official photos, both satellite layouts, inferred dimensions, paint chronology and deferred discrepancies.",
+  "baselineViews": "build/city-exteriors/{south-central-police,fire-station-11}-refinement-before; all six inspected. Performance saved in baseline-performance.json.",
+  "sourceChecks": "Source builds, Python compile and git diff check passed;598 support/headroom samples and28 independent CPU walk legs passed (source-checks.json). These do not replace installed checks.",
+  "sourceBackup": "build/city-exteriors/civic-source-before preserves four baseline source/collision JSONs.",
+  "baselineWalk": "28/28 actual installed baseline walk legs passed; all four endpoint images inspected. Broad gray ground patches visible in baseline return views remain a preexisting discrepancy, not a geometry-pass success claim.",
+  "localChecks": {
+    "bitmagic check": "passed",
+    "resort-block review": "passed",
+    "sourceBuildCompileDiff": "passed",
+    "supportSamples": 598,
+    "cpuWalkLegs": 28,
+    "actualBaselineWalkLegs": 28
+  }
 }

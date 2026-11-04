@@ -44,6 +44,12 @@ def exterior(B):
      for y in [1,1.55,2.1,2.65]:G.box('scp-frame',(u,y,-.21),(.42,.035,.03))
  # Public lobby canopy in recessed east-facing central bay.
  W.box('scp-canopy',(-64,3.5,3502),(9,.28,8),True)
+ # Two-tier pale metal entry shade and cylindrical approach bollards are visible
+ # in official LVMPD photograph2774 and Feb2025 Street View. Sizes are estimates.
+ W.box('scp-canopy',(-65.1,4.25,3502),(6.8,.16,7.6))
+ for z in [3498.5,3505.5]:W.box('scp-metal',(-64,3.9,z),(.12,.6,.12))
+ for z in [3499,3500.5,3503.5,3505]:
+  W.tube('scp-metal',(-58.9,.32,z),(-58.9,1.45,z),.12,10)
  for z in [3498.5,3505.5]:W.box('scp-brick',(-59.6,1.85,z),(.45,3.2,.45),True)
  E=Frame(B,-67.3,3502,-math.pi/2,y=0)
  for u in [-.52,.52]:
