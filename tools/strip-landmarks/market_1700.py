@@ -37,7 +37,7 @@ def exterior(B):
      G.tube('mk-wire-paint',(float(u),.55,-2.3),(end,height,-2.3),.007,4)
    B.face('mk-collision',[G.p(0,.5,-2.3),G.p(L,.5,-2.3),G.p(L,2.2,-2.3),G.p(0,2.2,-2.3)],True)
    # Major surviving sign layout, no fabricated active-tenant claim or personal telephone number.
-   G.text('MARKET',(L*.53,3.02,-.99),1.04,'mk-blue-letter')
+   G.text('MARKET',(L*.53,2.98,-.99),1.55,'mk-blue-letter');B.labels[-1]['fitWidth']=8.5
    G.box('mk-red-sign-paint',(L*.17,3.6,-.99),(6.6,1.05,.08));G.text('LIQUOR',(L*.17,3.55,-1.05),.62,'mk-white-letter');G.text('FINE WINE  CRAFT BEER',(L*.17,3.25,-1.05),.22,'mk-white-letter')
    G.box('mk-green-sign-paint',(L*.8,3.55,-.99),(5.2,.95,.08));G.text('FOR SALE',(L*.8,3.32,-1.06),.5,'mk-white-letter')
    G.text('1700',(1,2.96,-1),.31,'mk-blue-letter')

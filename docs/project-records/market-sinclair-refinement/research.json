@@ -12,7 +12,31 @@
     {
       "url": "https://epubs.nsla.nv.gov/statepubs/epubs/818726-2013.pdf",
       "observed": "Search excerpt reports historical2013 opening; direct PDF open rejected by source. Photographs uninspected; no geometry decisions based on them."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=HVuHbSUGNp9h92Q_FZlkxw&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Visually inspected close frontage: MARKET uses large heavy blue block capitals nearly filling white corrugated fascia vertically; peeling paint, blue boards, closed chainlink and black rail. Date selector shows Jan2026 newest, Jan2025 and Aug2024 older."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lP8qcNMrm9WljaelTwnr6g&heading=90&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Wide and zoomed view inspected. White/green canopy with diagonal color transition and green dinosaur at south end. Roadside pylon has a white lower panel carrying7branding, not FUEL. Shop front7ELEVEN sign partially occluded. Mature trees and bus shelter separate roadside ownership."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.15095,-115.15215,87m/data=!3m1!1e3",
+      "imageDate": "Unspecified; copyright2026 is not capture date",
+      "observed": "Satellite and zoomed-out surrounding site inspected. Narrow canopy parallel to shop; dark end roofs, central flat equipmentwell, north entrance offOakey, church south, market acrossBoulevard. Preserve established footprint."
+    },
+    {
+      "url": "https://stations.sinclairoil.com/nv/las-vegas/1705-s-las-vegas-blvd",
+      "observed": "Official branch URL returns404; official masterlist still identifies1705. No branch-specific interior photograph established."
     }
   ],
-  "pending": "Inspect dated Google Street View and satellite, official photos; determine justified refinements before changing source geometry."
+  "pending": "Model scoped sign changes and inspect installed comparisons; no full-site completion claim.",
+  "decisions": [
+    "Increase MARKET lettering to1.55m nominal font size and fit8.5m width with heavy sans font; dimensions inferred from1.7m fascia, not surveyed. Preserve original procedural paint texture.",
+    "Replace Sinclair pylon generic FUEL with white lower7panel:1.65m wide\u00d7.75m high, red7 and greenELEVEN original text geometry. Existing pylon silhouette retained.",
+    "Detailed dinosaur logo, canopy sweep, roadside trees/shelter, full shop branding and interiors remain deferred pending closer evidence/ownership scope. No copied reference pixels or runtime light changes."
+  ]
 }
