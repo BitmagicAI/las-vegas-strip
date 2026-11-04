@@ -1,0 +1,10 @@
+{
+  "beforeTriangles": 51228,
+  "afterTriangles": 51324,
+  "changedGroups": [
+    "('blvdRetail-exterior', 'blvd-hub-stairs', 'blvd-painted-metal', 0)",
+    "('blvdRetail-exterior', 'blvd-hub-stairs', 'glass', 0)"
+  ],
+  "otherMeshGroupsIdentical": true,
+  "limitation": "Source geometry comparison, not proof of prior optimized runtime identity"
+}

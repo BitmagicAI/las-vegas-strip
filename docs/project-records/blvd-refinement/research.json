@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "url": "https://blvdlasvegas.com/",
+      "observed": "Official home page reviewed: shop/dine/play directory and current image gallery. Marketing language does not establish a complete route."
+    },
+    {
+      "url": "https://blvdlasvegas.com/wp-content/uploads/2026/01/BLVD-Las-Vegas-Merchandise-Plan-January-2026.pdf",
+      "observed": "Three-page plan resolves; prior block record has inspected dimensioned frontage/rooftop and stair/lift plan. New screenshot call did not expose a reviewable image this turn; no new visual conclusion claimed."
+    },
+    {
+      "url": "https://blvdlasvegas.com/wp-content/uploads/2026/03/Aug2025_BLVD_Overlook_1620x1080_1.jpg",
+      "observed": "Official gallery link discovered; web fetch too large, direct download403. Not inspected yet."
+    }
+  ],
+  "next": "Inspect dedicated landing baseline; then add only missing landing guards, optimize/install and repeat actual route and matching views.",
+  "findings": [
+    "Actual street\u2192both hub stair flights\u2192north terrace\u2192return passes all22segments; both endpoint images inspected.",
+    "Intermediate landing spans worldx59..62 at y7.1; source has slope guards but no landing side panels. All6lateral rays at x59.4/60.5/61.6 miss both sides within1.9m."
+  ],
+  "decision": "Add matching transparent collision guards and dark cap rails across both 3m sides of the existing intermediate landing. This is an inferred safety completion of the authored route, not a claim of surveyed as-built guard details. Preserve tread geometry, mapped footprint, streets, interiors and existing elevations."
+}

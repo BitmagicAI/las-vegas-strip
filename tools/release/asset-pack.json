@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204456983,
+ "bytes": 1204458387,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -313,7 +313,7 @@
   {
    "path": "build/baked/cells/cell-0_1.bin",
    "bytes": 768655,
-   "sha256": "912fa2f8641f6f2fb45ef27c29693bba64c20e850c8aed99c895488e75a21486",
+   "sha256": "5b3d30869e1437016fce4fa317a212677aba81360494310c0277a71d1e06ff30",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "8f24e8e20d0f78461038d1071b6b24388c92ad84fff855a599775678ba22c3f6",
+   "sha256": "5b6841329ab30498dbcd74689c9b99b1a185bc1fbd25abf25465b739345436dc",
    "kind": "runtime cell manifest"
   },
   {
@@ -7464,14 +7464,14 @@
   },
   {
    "path": "build/strip-landmarks/blvdRetail-exterior-collision.bin",
-   "bytes": 4104,
-   "sha256": "e3eaf268b24bfcc850ea2bf36f2f52958dffbe62dd5728850e69678e52d03e85",
+   "bytes": 4168,
+   "sha256": "7c8b4b5f9fbf42b77a6b3cd37a231ef7ccaed8980e26dd3e2181c543c0c1a7ab",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/blvdRetail-exterior.glb",
-   "bytes": 2056124,
-   "sha256": "191944bf447d5d554dddd27a667aa37ec1a2cb052bd45b85500b692684d1a321",
+   "bytes": 2057464,
+   "sha256": "1a6e5f4e7da260f5ca2de36c64572f538ccf19979603b22634434cac2a464a27",
    "kind": "optimized"
   },
   {

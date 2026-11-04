@@ -35,11 +35,11 @@
   "id": "blvd-retail",
   "name": "BLVD retail and rooftop",
   "remaining": [
-    "Exact elevator and escalator implementation; stairs implemented",
-    "Fine storefront glazing, tenant identity and rooftop furnishings",
-    "Wide-view performance not60fps; warmedBLVDhidden38.2ms versusvisible38.4ms did not isolate building as cause",
-    "Precise heights and setbacks are photo estimates",
-    "Full public route traversal beyond sampled support/headroom tests"
+    "Exact elevator and escalator implementation: existing stairs now traversed but no authored moving escalator/lift system; exact machinery and landing layout need further references.",
+    "Fine storefront glazing, tenant identity and rooftop furnishings: preserve current facade and sparse furniture because this pass repairs landing safety only.",
+    "Wide-view performance: older ablation did not isolate BLVD as bottleneck; new same-camera p95 mostly18ms but sustained60fps is not established.",
+    "Precise heights and setbacks remain photo estimates; no surveyed elevations were introduced by this pass.",
+    "Public traversal beyond the verified street\u2192north terrace return route: south terrace, all storefront interiors and lift/escalator access remain unverified or unimplemented."
   ],
   "implementation": {
     "deckElevationM": 14,
@@ -101,5 +101,16 @@
     "Painted steel replaces scanned metal on frames",
     "Green painted shade rings",
     "Private hub paving closes terrain gap; roads preserved"
-  ]
+  ],
+  "landingGuardPass20261103": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/blvd-refinement/",
+    "changes": "Two 3m intermediate landing side guards with dark rails/posts; existing landing x59..62,y7.1 retained. Inferred safety detail, not a surveyed as-built claim.",
+    "verification": "All five matched installed wide views and landing detail inspected.22actual street\u2192northterrace\u2192return segments pass before/after; all4endpointimages inspected.6lateralguard rays fail before and pass after;420stair+110terrace samples pass.",
+    "source": "Only glass and paintedmetal hubstairs groups change;51228\u219251324triangles;0geometryauditerrors.",
+    "performance": "Five p95 before17.8/17.7/17.9/29.6/17.7ms; after18/17.9/18.5/17.8/17.9ms. Prior terrace outlier retained; no speedup or sustained60fps claim.",
+    "optimization": "Level6.21\u21922.57MiB; WebP1.96MiB installed.",
+    "limitations": "North terrace route verified, not every storefront/interior or south terrace route; exact lift/escalator implementation still absent.",
+    "checks": "Typecheck, block/public review, runtime optimization, bake-current, pack1930/0missing/0unoptimized, smoke9/0errors PASS; one bake,91/92cellsunchanged;2,844,088newLFSbytes."
+  }
 }
