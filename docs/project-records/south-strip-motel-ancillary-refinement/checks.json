@@ -1,0 +1,32 @@
+{
+  "typecheck": "passed",
+  "recordReview": "passed;289records,1167remaining",
+  "normalRegression": "passes corrected ramp; fails original downward ramp as expected",
+  "cpuWalking": {
+    "jackalope": 14,
+    "nirvanaAncillary": 12,
+    "passed": true
+  },
+  "supportHeadroom": {
+    "jackalope": 170,
+    "nirvanaAncillary": 188,
+    "passed": true
+  },
+  "actualWalking": {
+    "jackalope": 14,
+    "nirvanaAncillary": 12,
+    "passed": true,
+    "endpointsInspected": 4
+  },
+  "optimization": "Both exported models level and WebP optimized before local install",
+  "pending": [],
+  "publicCheck": "passed;0failures,4existing public-email warnings",
+  "runtimeOptimization": "passed;2 changed runtime GLBs,0 not optimized",
+  "bake": "passed;single shared capture/bake,up to date",
+  "assetPack": "passed;1930present,0missing,0notoptimized",
+  "cellIdentity": "91/92byte-identical;onlycell0_3changed",
+  "visual": "six matching viewpairs plus three idle repeat captures inspected",
+  "performance": "Original after p95 increase retained; idle repeat Nirvana +0.3..+1.0ms, Jackalope -0.1..+1.2ms; no speedup claim",
+  "smoke": "passed;dev3180,9stops,0failedrequests,0pageerrors,0consoleerrors,0unplacedstops",
+  "archive": "2051reference/evidence files retained locally"
+}

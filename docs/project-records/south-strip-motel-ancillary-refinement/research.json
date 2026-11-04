@@ -1,0 +1,55 @@
+{
+  "reviewed": "2026-11-04",
+  "references": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09095,-115.17257&heading=90&pitch=0&fov=85",
+      "date": "February 2026",
+      "pano": "EoMan8zoXDa5uSUbctLpvA",
+      "observed": "3977 S Las Vegas Blvd. Tall pylon absent. Boarded broad central entrance with curved segmental pediment; open south arcade, grooved piers, weathered tan stucco, rounded marquee ends. Temporary roadworks excluded."
+    },
+    {
+      "url": "https://abandonedonline.net/an-evening-walk-on-the-edge-of-the-las-vegas-strip/",
+      "date": "May 23 2025 article; May 6 photographs",
+      "observed": "Arcade masonry joints, weathered stucco and gold bulb marquee. Older tall pylon excluded in favor of February 2026 Street View."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0915,-115.1721,208m/data=!3m1!1e3",
+      "date": "Imagery date unavailable; copyright date not treated as capture date",
+      "observed": "Small circle west of rear Nirvana wing is distinct from large red-gravel Zen garden east of main wing. Large garden world-coordinate placement unresolved."
+    },
+    {
+      "url": "https://lacarmina.com/blog/2023/06/las-vegas-instagrammable-photo-locations-hotels-art-drag-queens/",
+      "date": "June 11 2023",
+      "observed": "Red gravel, cream winding paths, white circular raised fountain bed, dark tiered fountain, horizontal wood fence, young trees and flower hedge."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Nirvana+Hotel+Las+Vegas",
+      "ownerProfile": "https://maps.google.com/maps/contrib/116567771424290143573",
+      "photoId": "CIHM0ogKEICAgIDR6YbhaA",
+      "date": "April 2023 capture and upload",
+      "observed": "Owner garden overview: red gravel, winding cream loop, white circular bed and dark tiered fountain, wood slat benches with dark block supports, round table and stools, horizontal rear fence with shrubs, young palms and saplings."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Nirvana+Hotel+Las+Vegas",
+      "photoId": "CIHM0ogKEICAgIDxisnMygE",
+      "date": "May 2023 capture, June upload",
+      "observed": "Owner west patio photograph: teal loungers, umbrellas, flower pots on horizontal brown fence. Not assumed to belong to ancillary east garden."
+    }
+  ],
+  "limitations": [
+    "Official hotel website and rooms page unavailable (timeout/502/certificate validation failure); no security bypass. Google owner photographs used.",
+    "No public interior plan established. Private bedroom photo does not justify public interior.",
+    "Large garden coordinates and extent need reconciliation before new geometry or matching baseline camera."
+  ],
+  "decisions": [
+    "Retain current footprint, roads, existing interiors and PR491 main hotel details.",
+    "Replace triangular Jackalope visual pediment with original segmental curve inferred about 3.4 m wide and 1 m rise, within existing envelope; dimensions are estimates, not a survey.",
+    "Do not replace the separate small courtyard circle with the large east garden."
+  ],
+  "localReferences": [
+    "build/city-exteriors/motel-ancillary-references/jack479494.jpg",
+    "build/city-exteriors/motel-ancillary-references/jack481494.jpg",
+    "build/city-exteriors/motel-ancillary-references/nirvana-garden494.jpg",
+    "build/city-exteriors/motel-ancillary-references/nirvana-court494.jpg"
+  ]
+}

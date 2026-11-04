@@ -25,7 +25,8 @@
     "Garden planting and detailed surface weathering incomplete",
     "No room interiors authored",
     "Smaller southern wing height and exact balcony arrangement inferred",
-    "Roof material striping and offsite ground voids remain"
+    "Roof material striping and offsite ground voids remain",
+    "Large east Zen garden differs from the small courtyard circle; owner photo and satellite links preserved, precise placement still unresolved"
   ],
   "implemented": [
     "Two southern wings with doors, glazing, AC units, galleries and exterior stair",
@@ -49,9 +50,23 @@
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/nirvanaAncillary-exterior.glb": "b87c7758ce0de064faaccd5285070f119596c76838f20bc43cab2940cf8182d5",
-      "build/strip-landmarks/nirvanaHotel-exterior.glb": "f5a7ab01535c8c2c5a412c6b71305a9c0607f5cc4cc532a86c18501b8af58b0c"
+      "build/strip-landmarks/nirvanaAncillary-exterior.glb": "552384e89c12aeecbb01a2d6348d5a296e8eb100a1096da9453ac8c94774ad67",
+      "build/strip-landmarks/nirvanaHotel-exterior.glb": "f5a7ab01535c8c2c5a412c6b71305a9c0607f5cc4cc532a86c18501b8af58b0c",
+      "build/strip-landmarks/nirvanaAncillary-exterior-collision.json": "eb2e9b7c88f741bf33eec5b99f93db778a1442dd2b653af75a9bac4bd6b4f85b"
     }
   },
-  "correction": "North pavement trimmed at2677.5 to share boundary with PsychicSessions. Main facades unchanged."
+  "correction": "North pavement trimmed at2677.5 to share boundary with PsychicSessions. Main facades unchanged.",
+  "activeRefinement": {
+    "record": "docs/project-records/south-strip-motel-ancillary-refinement/checkpoint.json",
+    "research": "docs/project-records/south-strip-motel-ancillary-refinement/research.json",
+    "status": "Scoped installed pass verified; whole-block refinements remain deferred",
+    "preserved": "Existing roads, footprints, interiors and PR491 main-hotel work",
+    "baselineDiscrepancy": "Historical baseline actual ascent blocked despite standalone CPU success; resolved by upward ramp winding and verified12 actual segments. Original failure retained.",
+    "actualWalking": "Passed 12 segments, forward and return; four group endpoints inspected.",
+    "evidence": "docs/project-records/south-strip-motel-ancillary-refinement/installed-runtime-walk.json",
+    "change": "Reversed downward ramp winding on two triangles; same ramp corners and plane. Actual installed stair now traverses in both directions.",
+    "visual": "Three matching front-first before/after daylight views inspected; dimensions remain estimates.",
+    "performance": "docs/project-records/south-strip-motel-ancillary-refinement/performance-comparison.json",
+    "checks": "docs/project-records/south-strip-motel-ancillary-refinement/checks.json"
+  }
 }

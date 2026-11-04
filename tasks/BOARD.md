@@ -112,7 +112,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-akita-plaza` | M | P2 | 5 | Refine the exterior of Akita Plaza retail frontage |
 | `ext-desert-oasis` | M | P2 | 5 | Refine the exterior of Desert Oasis apartments |
 | `ext-laughing-jackalope` | M | P2 | 4 | Refine the exterior of Former Laughing Jackalope |
-| `ext-nirvana-ancillary` | M | P2 | 5 | Refine the exterior of Nirvana / former Motel 8 ancillary buildings |
+| `ext-nirvana-ancillary` | L | P2 | 6 | Refine the exterior of Nirvana / former Motel 8 ancillary buildings |
 | `ext-psychic-sessions` | M | P2 | 5 | Refine the exterior of Psychic Sessions south Strip |
 | `ext-south-arco` | M | P2 | 4 | Refine the exterior of ARCO and ampm3873Strip |
 | `ext-south-central-police` | M | P2 | 4 | Refine the exterior of South Central police station |
