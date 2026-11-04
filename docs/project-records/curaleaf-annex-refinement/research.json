@@ -17,14 +17,40 @@
       "url": "https://curaleaf.com/dispensary/nevada/curaleaf-nv-las-vegas",
       "provider": "Curaleaf official location URL",
       "observed": "Direct text fetch failed non-retryably; no architectural conclusion from inaccessible page."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=n-iIgrG059NXa9fzsLu_Vg&heading=270&pitch=0",
+      "provider": "Google Street View",
+      "imageDate": "January 2026",
+      "observed": "Zoomed east frontage inspected: dark gray small staggered rectangular tower panels, white C/leaf mark only on observed face; no Curaleaf/DISPENSARY wordmark visible. Weathered reddish-brown boarded panels, stone piers, gray base, horizontal sunshade and desert planting. Logo geometry remains inferred."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=BdnK3zOqDDhD31_gBUSRhQ&heading=90&pitch=0",
+      "provider": "Google Street View",
+      "imageDate": "January 2026",
+      "observed": "West annex inspected at two zooms: broad terracotta mansard, white piers, recessed brown boarded frontage, central white FOR SALE panel with green letters and temporary chainlink boundary. Roadside trees are outside scope."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jCHDnIxHaMV9Z7Hx0Sfzdw&heading=180&pitch=0",
+      "provider": "Google Street View",
+      "imageDate": "August 2024",
+      "observed": "North annex sign has clipped corners, red inset ribbon behind small white WHITE CROSS letters, larger red Market letters beneath. Recessed dark brown front and terracotta tiles. Date chooser lists August 2024 as newest at this viewpoint; this does not establish 2026 condition."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15030,-115.15356&zoom=20&basemap=satellite",
+      "provider": "Google Maps satellite",
+      "imageDate": "Unknown; copyright 2026 is not capture date",
+      "observed": "Overhead inspected: Curaleaf north parking, east curved drive and separate gravel islands, south boundary hedge; annex shared northern roof. No precise new planting positions inferred from this view."
     }
   ],
   "pending": [
-    "Fresh dated Street View and satellite inspection once GPU baseline sequence finishes.",
-    "Current north annex branding versus old2024record.",
-    "Branch-specific official exterior photograph when accessible; do not substitute unbuilt architect renderings or unrelated production-facility plans."
+    "Current north annex branding remains uncertain after newest available August 2024 panorama.",
+    "Official branch exterior photograph still unavailable; unbuilt proposal and historical text are not substitutes."
   ],
   "decisions": [
-    "Retain known historical/unbuilt distinctions and preserve separate east market ownership. No new geometry chosen before fresh visual references."
+    "Keep current footprint, height and collision estimates; scoped tower-panel/logo and annex north sign refinements only.",
+    "Do not create public interiors from unbuilt proposal; preserve opaque storefronts and existing routes.",
+    "Keep tower 2.4m wide by 9.3m tall; new panel spacing and logo dimensions are visual estimates, not survey measurements.",
+    "Retain annex north historical sign with date caveat; use original chamfered panel/ribbon geometry, not extracted imagery."
   ]
 }

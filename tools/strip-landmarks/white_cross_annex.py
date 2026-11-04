@@ -37,10 +37,25 @@ def exterior(B):
     G.box('wca-pier-paint',(float(u),3.91,-.72),(.28,1.15,2.0))
     B.face('wca-pier-paint',[G.p(u-.14,4.3,-1.7),G.p(u+.14,4.3,-1.7),G.p(u+.14,6.1,.75),G.p(u-.14,6.1,.75)])
    G.box('wca-paving',(L/2,.16,-1.45),(L,.08,2.9),True)
-   G.box('wca-sign-paint',(L*.52,3.83,-1.69),(9.8,1.5,.1))
-   if nx<-.7:G.text('FOR SALE',(L*.52,3.7,-1.77),.7,'wca-green-letter')
+   if nx<-.7:
+    G.box('wca-sign-paint',(L*.52,3.83,-1.69),(9.8,1.5,.1))
+    G.text('FOR SALE',(L*.52,3.7,-1.77),.7,'wca-green-letter')
    else:
-    G.text('WHITE CROSS',(L*.52,4.1,-1.77),.42,'wca-red-letter');G.text('Market',(L*.52,3.38,-1.77),.83,'wca-red-letter')
+    # August 2024 north sign: clipped corners and a red name ribbon.
+    # Original geometry; dimensions estimated within the existing sign envelope.
+    cx=L*.52;cy=3.83;w=4.9;h=.75;c=.42
+    outline=[(-w+c,-h),(w-c,-h),(w,-h+c),(w,h-c),(w-c,h),(-w+c,h),(-w,h-c),(-w,-h+c)]
+    for depth in [-1.64,-1.74]:B.face('wca-sign-paint',[G.p(cx+x,cy+y,depth) for x,y in (outline if depth==-1.64 else list(reversed(outline)))])
+    for i,(x,y) in enumerate(outline):
+     xx,yy=outline[(i+1)%len(outline)]
+     B.face('wca-sign-paint',[G.p(cx+x,cy+y,-1.64),G.p(cx+xx,cy+yy,-1.64),G.p(cx+xx,cy+yy,-1.74),G.p(cx+x,cy+y,-1.74)])
+    ribbon=[(-3.6,4.46),(3.6,4.46),(3.1,4.20),(3.6,3.98),(-3.6,3.98),(-3.1,4.20)]
+    for tri in triangles(Polygon(ribbon)):
+     pts=list(tri.exterior.coords)[:-1]
+     if tri.exterior.is_ccw:pts.reverse()
+     B.face('wca-red-letter',[G.p(cx+x,y,-1.755) for x,y in pts])
+    G.text('WHITE CROSS',(cx,4.10,-1.78),.34,'wca-sign-paint')
+    G.text('Market',(cx,3.38,-1.78),.83,'wca-red-letter')
   elif L>8:
    for u in np.arange(1,L,4):G.box('wca-joint-paint',(float(u),2.85,-.04),(.02,5.4,.03))
    G.box('wca-service-paint',(L*.77,1.5,-.08),(1.1,2.55,.14));G.box('wca-vent',(L*.25,3.5,-.09),(1.4,.7,.16))
