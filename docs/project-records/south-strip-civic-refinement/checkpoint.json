@@ -5,8 +5,8 @@
     120
   ],
   "claims": "Confirmed janiverse; direct self-assignment after posted /claim automation failed to assign. No other assignees existed.",
-  "stage": "One shared bake completed; unrelated GoldCoast/Wyndham LOD churn restored. Only owned civic LOD blocks changed. After captures and installed walk running sequentially.",
-  "pending": "After probe/walk command running (logs /tmp/civic-{police,fire,walk}-after.log). Inspect six images and walk results when complete, compare performance, stage owned runtime and run remaining step7 checks. No ready/merge until all pass. Initial source push had server500; preserved locally.",
+  "stage": "Installed local pass verified. All step7 checks passed;91/92cells unchanged, six before/after view pairs inspected,28 actual legs passed each direction set before and after. Draft ready for final push/head verification.",
+  "pending": "Push final own commits; verify GitHub PR head equals local verified HEAD, then ready and guarded --merge into next; close119/120. On backend failure document blocker, /unclaim and pick next. Never merge stale PR head.",
   "previousBlockedPR": {
     "pr": 495,
     "verifiedHead": "d52eef1d8977065b0545596045737961d06556f8",
@@ -28,6 +28,7 @@
     "actualBaselineWalkLegs": 28
   },
   "push": "Source commit20266c1 retained locally. Push rejected GitHub Internal Server Error at2026-11-04T10:32:09Z (requestDED6:52A4F:5A8918:6E0174:6AEB09A7). Continue local verification; do not poll backend. Draft PR496 remains unverified.",
-  "activeVerificationSession": 49508,
-  "cellAudit": "91/92 cells byte-identical; only cell--1_4.bin changed. Both unowned changed LOD blocks restored to committed bytes."
+  "cellAudit": "91/92 cells byte-identical; only cell--1_4.bin changed. Both unowned changed LOD blocks restored to committed bytes.",
+  "checks": "598 support/headroom samples;28 CPUlegs;28actual before+28afterlegs;9 smoke stops with0request/page/console errors. bitmagic check, block review, public scan, optimized GLB2/2, bake current, assetpack1930/1930 all pass. Public scan5warnings:4existing emails and official LVMPD /home URL false positive.",
+  "performance": "Fixed-camera p95: police front+1.6ms,entry+0.5ms,aerial-0.3ms;fire front+0.6ms,entry-0.9ms,aerial0ms. No speedup claimed. Not a route benchmark."
 }

@@ -7170,15 +7170,19 @@
    "id": "ext-south-central-police",
    "title": "Refine the exterior of South Central police station",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 8 known gaps are recorded.",
    "items": [
     "Roof heights and exact window counts estimated",
     "Landscape and signage artwork simplified",
     "No interiors or secured parking circulation authored",
-    "Low-detail vegetation, service elevations and PBR tiling need refinement"
+    "Low-detail vegetation, service elevations and PBR tiling need refinement",
+    "Photorealistic finish and whole-block completion not demonstrated",
+    "Broad gray ground patches in baseline/after route views remain unresolved",
+    "Existing department lettering duplication/offset in entry view remains unresolved",
+    "Reference brick entry tower and mature landscaping remain deferred"
    ],
    "record": "tools/resort-blocks/south-central-police.json",
    "buildings": [
@@ -7202,8 +7206,9 @@
      "tools/city-exteriors/test-south-central-police.mjs",
      "tools/city-exteriors/replace-south-central-police.py",
      "tools/city-exteriors/walk-south-central-police.mjs",
-     "tools/strip-landmarks/build_south_central_police.py",
-     "tools/strip-landmarks/south_central_police.py"
+     "tools/strip-landmarks/build_civic_refinement.py",
+     "tools/city-exteriors/install-civic-refinement.mjs",
+     "tools/city-exteriors/sample-civic-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -7219,16 +7224,19 @@
    "id": "ext-fire-station-11",
    "title": "Refine the exterior of Clark County Fire Station11",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 8 known gaps are recorded.",
    "items": [
     "Detailed landscaping and flag fabric pending",
     "Exact bay dimensions and roof heights estimated",
     "Unseen rear service details inferred",
     "No interiors or fire vehicles authored",
-    "Fine roof ribs alias at distant view; landscape not complete"
+    "Fine roof ribs alias at distant view; landscape not complete",
+    "Photorealistic finish and whole-block completion not demonstrated",
+    "Broad gray ground patches in baseline/after route views remain unresolved",
+    "Curved marker plaque still simplified as flat plate"
    ],
    "record": "tools/resort-blocks/fire-station-11.json",
    "buildings": [
@@ -7252,8 +7260,9 @@
      "tools/city-exteriors/test-fire-station-11.mjs",
      "tools/city-exteriors/replace-fire-station-11.py",
      "tools/city-exteriors/walk-fire-station-11.mjs",
-     "tools/strip-landmarks/build_fire_station_11.py",
-     "tools/strip-landmarks/fire_station_11.py"
+     "tools/strip-landmarks/build_civic_refinement.py",
+     "tools/city-exteriors/install-civic-refinement.mjs",
+     "tools/city-exteriors/sample-civic-refinement.mjs"
     ]
    },
    "acceptance": [

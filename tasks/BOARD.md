@@ -115,8 +115,8 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-nirvana-ancillary` | L | P2 | 6 | Refine the exterior of Nirvana / former Motel 8 ancillary buildings |
 | `ext-psychic-sessions` | M | P2 | 5 | Refine the exterior of Psychic Sessions south Strip |
 | `ext-south-arco` | M | P2 | 4 | Refine the exterior of ARCO and ampm3873Strip |
-| `ext-south-central-police` | M | P2 | 4 | Refine the exterior of South Central police station |
-| `ext-fire-station-11` | M | P2 | 5 | Refine the exterior of Clark County Fire Station11 |
+| `ext-south-central-police` | L | P2 | 8 | Refine the exterior of South Central police station |
+| `ext-fire-station-11` | L | P2 | 8 | Refine the exterior of Clark County Fire Station11 |
 | `ext-bali-hai-clubhouse` | L | P2 | 8 | Refine the exterior of Bali Hai Clubhouse |
 | `ext-signature-aviation` | L | P2 | 6 | Refine the exterior of Signature Aviation LAS |
 | `ext-terribles-headquarters` | L | P2 | 6 | Refine the exterior of Terrible Herbst Headquarters |
