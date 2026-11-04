@@ -1,7 +1,13 @@
 {
   "base": "8e35c6f35e72605d1b6003601eef230e0eb27495",
   "issue": 124,
-  "stage": "Research underway; no geometry edits. Official website now reachable. Correct northwest parking Street View found (Mar2020).",
-  "pending": "Inspect west elevation, official gallery and baseline. Nearby exterior tasks are claimed or closed; do not overlap.",
-  "runtime": "Current merged PR496 runtime preserved; no new build changes."
+  "stage": "4 front-first baseline captures inspected. North wall draft correction authored and source-built; not exported or installed. Baseline actual6leg walk running.",
+  "pending": "Finish /tmp/pristine-walk-before.log, inspect result and endpoints. Export/optimize level+WebP/install north-wall draft, one shared bake, preserve unowned LOD blocks, after captures and walk, matching performance and allstep7.",
+  "runtime": "Current merged PR496 runtime preserved; no new build changes.",
+  "pr": 497,
+  "claim": "janiverse confirmed on issue124 after /claim and direct self-assignment",
+  "sourceChecks": "259support/headroom samples and6CPUlegs passed. Baseline images show known missing surrounding ground; preserve discrepancy.",
+  "sourceBackup": "build/city-exteriors/pristine-source-before",
+  "decision": "North wall smooth-white finish supported by March2020 Street View; remove dense corrugation and contrasting base band only on north. Sparse panel joint and two small fixture sizes/positions inferred; other elevations unchanged.",
+  "activeBaselineWalkSession": 58547
 }
