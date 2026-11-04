@@ -5,8 +5,10 @@
     126
   ],
   "claim": "janiverse confirmed",
-  "stage": "Boston3baseline views inspected; travelers3view capture then actual12leg walk still running session33473. BothCPUwalks6legs each pass. No geometry edits.",
-  "pending": "Finish baseline logs /tmp/boston-before.log /tmp/travelers-before.log /tmp/north-small-walk-before.log; inspectimages/results. Then Mapsresearch (no GPUoverlap); original scopedgeometry,optimization,onebake,afterchecks. No geometry edited.",
+  "stage": "All6baseline views and4walkendpoints inspected;12actualbaselinelegs passed. LocatedJan2026StreetView+satellite inspected, originalBostonlettering/OPENpanel andTravelersbase strips authored/exported/optimizedlevel+WebP/installed. Sharedbake running session75685.",
+  "pending": "Finish /tmp/north-small-bake.log then node /tmp/north-small-preserve-lod498.mjs. Aftermatchingprobes/actualwalk, inspectimages/performance, assetstage andallstep7. No ready/merge untilcomplete.",
   "remaining": "Preserve both block records uncertainties; no whole-block completion claim",
-  "pr": 498
+  "pr": 498,
+  "sourceBackup": "build/city-exteriors/north-small-source-before",
+  "checks": "139Boston+341Travelerssupport passed; CPUwalks in /tmp/{boston,travelers}-cpu-after.log session89816."
 }

@@ -20,7 +20,27 @@
     {
       "url": "http://travelersbedandbreakfastlv.com/",
       "observed": "Previously listed official site inaccessible via webtool. Aggregators explicitly not official are not used as official photographs."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9r4gKK6qdAx0o9hbFGDKqw&heading=90&pitch=0&fov=80",
+      "date": "Jan2026",
+      "observed": "Re-inspected Boston frontage. South wing framed sign reads385-2595,OPEN UNTIL3AM,WE DELIVER,PIZZA-PASTA-SANDWICHES; window has OPEN lettering. Existing mainfascia text/steppedstucco broadlycorrect. No rear view."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9r4gKK6qdAx0o9hbFGDKqw&heading=280&pitch=0&fov=80",
+      "date": "Jan2026",
+      "observed": "Travelers frontage re-inspected; tattoo bay has maroon/cream narrow vertical base strips beneath advertising and yellow text; green upper projecting horizontal trim. Temporary scaffolding and palms obscure part of facade. Rear notvisible."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1531,-115.1514,415m/data=!3m1!1e3",
+      "observed": "Satellite inspected: angled boulevard, small east storefront with south parking, west L-plan aroundrear court. Imagerycapturedate notexposed; retain existing mappedfootprints."
     }
   ],
-  "pending": "Fresh Google Street View/satellite inspection after GPU baseline jobs complete; existing Jan2026 references retained but not yet re-inspected this pass."
+  "pending": "Rear facades, surveyed heights, accurate tenant artwork and complete site landscaping remain unresolved.",
+  "decision": "Original text and simple storefront base strips only; no photos copied as textures, no interior inferred. Reference sign3AM retained although official current website says3:30AM; this is Jan2026 signage depiction, not operatinghours guidance.",
+  "inferredDimensions": {
+    "bostonSignText": "existing2.65m sign face, text0.12\u20130.30m",
+    "bostonOpen": "1.3x.48m darkpanel in existingwindow, text.26m",
+    "travelersBaseStrips": "0.065mwide at.18mspacing, .42mheight; fronttattoobayonly"
+  }
 }
