@@ -35,36 +35,41 @@
   ],
   "dimensions": "Mapped canopy16.3x17.6m,storeoutline preserved. Canopy soffit4.6m,cap5.88m,store4.1m,pylon11m photoestimates.",
   "remaining": [
-    "Exact branding graphics,advertisements and surface wear incomplete",
-    "Landscaping and side/rear service detail incomplete",
-    "No interior authored",
-    "Roof material striping and offsite ground voids remain"
+    "Exact branding graphics, advertisements and wear remain incomplete: original pump details follow reference geometry without copying advertising surfaces.",
+    "Landscaping and side/rear service detail remain incomplete: ownership and exact placement of visible gravel/palms and neighboring billboard are not sufficiently established.",
+    "No interior authored: no site-specific official interior layout established.",
+    "Roof material striping and offsite ground voids remain: this pass retains the existing canopy and neighboring ground ownership."
   ],
   "validation": {
-    "support": "229 floor/headroom checks passed",
-    "walking": "7 legs both directions passed",
-    "visual": "Three installed views inspected after correcting bollard taper and isolating Sahara palette",
-    "performance": "Fixed aerial960x540ultra16.7ms p50/17.4ms p95;notroutebenchmark"
+    "support": "217 checks passed",
+    "walking": "14 actual installed forward/return legs passed; endpoint screenshots inspected",
+    "visual": "Three front-first identical before/after daylight views inspected; committed comparison board in docs/project-records/south-strip-storefront-fuel-refinement/views.md",
+    "performance": "Matching960x540DPR1ultra p95 delta -0.8..+0.3ms; near60Hzcap, no speedup claim."
   },
   "implemented": [
     "Hip canopy, columns, pumps and bollards",
     "ampm storefront and slatted fascia",
-    "Sign pylon and paved forecourt"
+    "Sign pylon and paved forecourt",
+    "Blue pump crowns and number panels, yellow U-shaped guards from March2019/February2026 Street View"
   ],
   "evidence": [
     "build/city-exteriors/south-arco-final/arco-front.png",
     "build/city-exteriors/south-arco-final/arco-store.png",
-    "build/city-exteriors/south-arco-final/arco-aerial.png"
+    "build/city-exteriors/south-arco-final/arco-aerial.png",
+    "docs/project-records/south-strip-storefront-fuel-refinement/views.md",
+    "docs/project-records/south-strip-storefront-fuel-refinement/performance.json",
+    "docs/project-records/south-strip-storefront-fuel-refinement/source-collision-validation.json",
+    "docs/project-records/south-strip-storefront-fuel-refinement/installed-walk.json"
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/southArco-exterior.glb": "7439dc284d2af282d4f899d64c39fd7f3191640e8a77f159e0f217e14d8621d1",
+      "build/strip-landmarks/southArco-exterior.glb": "c9e5aeb33cad6bafff6ebacd3b6ec6e8d75d19bf6dff896c41c7f7e600ed92a8",
       "build/strip-landmarks/southArco-exterior-collision.json": "82c23531b81138a13d9796268f3ff00f392468fb8108772d5293f765a8158f2a"
     }
   },
-  "refinementInProgress": {
+  "refinementPass": {
     "pr": 495,
     "record": "docs/project-records/south-strip-storefront-fuel-refinement",
-    "state": "Sources and baseline26-leg installed walk checked; optimized models installed and shared bake in progress. After validation pending."
+    "status": "Verified installed refinement; full-site discrepancies retained"
   }
 }

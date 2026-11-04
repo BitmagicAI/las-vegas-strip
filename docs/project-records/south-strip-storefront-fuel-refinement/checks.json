@@ -1,0 +1,16 @@
+{
+  "typecheck": "passed",
+  "sourceSupportHeadroom": 451,
+  "sourceControllerLegs": 26,
+  "actualBaselineLegs": 26,
+  "actualInstalledLegs": 26,
+  "visual": "six identical camera pairs; four before plus four after walk endpoints inspected",
+  "optimization": "2GLBs pass; WebP pass no embedded textures",
+  "bake": "fresh; 90/92 cells byte-identical; unrelated GoldCoast/Wyndham LOD restored",
+  "assetPack": "1930 present,0missing,0unoptimized",
+  "records": "289blocks;1167remaining",
+  "public": "0failures,4existing email warnings",
+  "performance": "Psychic p95delta0..+0.4ms;ARCO-0.8..+0.3ms; no speedup claim",
+  "smoke": "dev3180:9stops,0failedrequests,0pageerrors,0consoleerrors,0unplaced",
+  "archive": "2090 local reference/evidence files,665.6MB preserved"
+}

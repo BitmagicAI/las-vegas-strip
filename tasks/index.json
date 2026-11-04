@@ -7071,11 +7071,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Weathered paint and poster/sign graphics approximate",
-    "Unseen side/rear service details inferred",
-    "No interior authored",
-    "Sign artwork is a simplified geometric reconstruction",
-    "Offsite ground voids remain"
+    "Weathered paint and posters remain approximate: dated Street View shows wear, but this pass adds original sign geometry rather than copying photographic surfaces.",
+    "Side/rear service details remain inferred: current street views and satellite do not establish their detailed finish.",
+    "No interior authored: official partial-room photographs do not establish full room dimensions or entrance circulation.",
+    "Sign artwork remains simplified original geometry: exact third-party artwork is not redistributed. Movable sign placement is inferred and kept clear of the audited route.",
+    "Offsite ground voids remain: neighboring land lies outside this claimed footprint and shared roads are preserved."
    ],
    "record": "tools/resort-blocks/psychic-sessions.json",
    "buildings": [
@@ -7099,8 +7099,9 @@
      "tools/city-exteriors/test-psychic-sessions.mjs",
      "tools/city-exteriors/replace-psychic-sessions.py",
      "tools/city-exteriors/walk-psychic-sessions.mjs",
-     "tools/strip-landmarks/build_psychic_sessions.py",
-     "tools/strip-landmarks/psychic_sessions.py"
+     "tools/strip-landmarks/build_storefront_fuel_refinement.py",
+     "tools/city-exteriors/install-storefront-fuel-refinement.mjs",
+     "tools/city-exteriors/sample-storefront-fuel.mjs"
     ]
    },
    "acceptance": [
@@ -7121,10 +7122,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact branding graphics,advertisements and surface wear incomplete",
-    "Landscaping and side/rear service detail incomplete",
-    "No interior authored",
-    "Roof material striping and offsite ground voids remain"
+    "Exact branding graphics, advertisements and wear remain incomplete: original pump details follow reference geometry without copying advertising surfaces.",
+    "Landscaping and side/rear service detail remain incomplete: ownership and exact placement of visible gravel/palms and neighboring billboard are not sufficiently established.",
+    "No interior authored: no site-specific official interior layout established.",
+    "Roof material striping and offsite ground voids remain: this pass retains the existing canopy and neighboring ground ownership."
    ],
    "record": "tools/resort-blocks/south-arco.json",
    "buildings": [
@@ -7153,8 +7154,9 @@
      "tools/city-exteriors/test-south-arco.mjs",
      "tools/city-exteriors/replace-south-arco.py",
      "tools/city-exteriors/walk-south-arco.mjs",
-     "tools/strip-landmarks/build_south_arco.py",
-     "tools/strip-landmarks/south_arco.py"
+     "tools/strip-landmarks/build_storefront_fuel_refinement.py",
+     "tools/city-exteriors/install-storefront-fuel-refinement.mjs",
+     "tools/city-exteriors/sample-storefront-fuel.mjs"
     ]
    },
    "acceptance": [

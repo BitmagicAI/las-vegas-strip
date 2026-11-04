@@ -5,13 +5,11 @@
     118
   ],
   "claims": "Both confirmed janiverse",
-  "stage": "All six baseline views and four walk endpoints inspected; 26 actual baseline legs passed. 451 source support/headroom checks and 26 standalone controller legs pass. Optimized pair installed; shared bake in progress.",
+  "stage": "Installed pass verified: all step7 checks passed,6matchingviewpairs,26actuallegs,451supportchecks,9smokestops.90/92cellsunchanged;7149450newLFSbytes including original game comparison images.",
   "scope": "Psychic Sessions storefront and nearby south Strip ARCO/ampm. Preserve footprint replacement ownership, roads, existing interiors and prior nearby improvements.",
-  "pending": "Finish shared bake and preserve unrelated LOD bytes. Stage scoped runtime assets; capture identical after cameras/performance and actual walk; smoke and all step7 before ready/merge.",
+  "pending": "Commit verified runtime/evidence, push own commits, ready and selfmerge PR495 to next, explicitly close117/118; picker next.",
   "previous": "PR494 merged into next194076c;115116explicitlyclosed. Stair upward winding resolves actual Nirvana ascent/descent;Jackalope curved crown installed.26actualsegments,6matchingviewpairs,allstep7passed;91/92cellsunchanged;834163newLFSbytes. Initial performance spike retained; idle repeat+0.3..+1.0ms. No wholeblockcompletion.",
-  "runningJobs": [
-    "session13890 shared bake /tmp/storefront-bake495.log"
-  ],
+  "runningJobs": [],
   "changes": [
     "Psychic Sessions original movable sign at inferred forecourt position, opening notice and civic number",
     "ARCO blue pump crowns and yellow U guards; original pump positions preserved"

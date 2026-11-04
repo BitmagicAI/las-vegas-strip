@@ -33,23 +33,24 @@
     }
   ],
   "remaining": [
-    "Weathered paint and poster/sign graphics approximate",
-    "Unseen side/rear service details inferred",
-    "No interior authored",
-    "Sign artwork is a simplified geometric reconstruction",
-    "Offsite ground voids remain"
+    "Weathered paint and posters remain approximate: dated Street View shows wear, but this pass adds original sign geometry rather than copying photographic surfaces.",
+    "Side/rear service details remain inferred: current street views and satellite do not establish their detailed finish.",
+    "No interior authored: official partial-room photographs do not establish full room dimensions or entrance circulation.",
+    "Sign artwork remains simplified original geometry: exact third-party artwork is not redistributed. Movable sign placement is inferred and kept clear of the audited route.",
+    "Offsite ground voids remain: neighboring land lies outside this claimed footprint and shared roads are preserved."
   ],
   "dimensions": "Mapped20x16m footprint;roof6.1m,marquee3.34m heights photoestimated.",
   "implemented": [
     "Mapped storefront with two doors, windows, cornice and parapet",
     "Eye/star/crescent sign geometry and projecting marquee",
-    "Forecourt and side/rear service facades"
+    "Forecourt and side/rear service facades",
+    "Original movable forecourt sign, opening notice and civic number from February2026 Street View"
   ],
   "validation": {
-    "support": "155 floor/headroom checks passed",
-    "walking": "6 legs in both directions passed",
-    "visual": "Three installed views inspected;front rechecked after correcting boarded panel and window lettering sides",
-    "performance": "Fixed aerial960x540ultra16.6ms p50/19.3ms p95;notroutebenchmark"
+    "support": "234 checks passed",
+    "walking": "12 actual installed forward/return legs passed; endpoint screenshots inspected",
+    "visual": "Three front-first identical before/after daylight views inspected; committed comparison board in docs/project-records/south-strip-storefront-fuel-refinement/views.md",
+    "performance": "Matching960x540DPR1ultra p95 delta 0.0..+0.4ms; near60Hzcap, no speedup claim."
   },
   "evidence": [
     "build/city-exteriors/psychic-sessions-final/psychic-front.png",
@@ -57,17 +58,21 @@
     "build/city-exteriors/psychic-sessions-final/psychic-aerial.png",
     "build/city-exteriors/psychic-sessions-collision.json",
     "build/city-exteriors/psychic-sessions-walk.json",
-    "build/city-exteriors/psychic-sessions-ownership-audit.json"
+    "build/city-exteriors/psychic-sessions-ownership-audit.json",
+    "docs/project-records/south-strip-storefront-fuel-refinement/views.md",
+    "docs/project-records/south-strip-storefront-fuel-refinement/performance.json",
+    "docs/project-records/south-strip-storefront-fuel-refinement/source-collision-validation.json",
+    "docs/project-records/south-strip-storefront-fuel-refinement/installed-walk.json"
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/psychicSessions-exterior.glb": "5b9d6b5d179505038d0c7e2183fe9ee8e2295ad632335116469e5fb99a88bb95",
-      "build/strip-landmarks/psychicSessions-exterior-collision.json": "f1ed00956479013d6ade3bd9d690a00a067bb34fdddc3e081f96ff45a16825df"
+      "build/strip-landmarks/psychicSessions-exterior.glb": "513cd03e26de11a37feb3d1c6a6128fa52ad3189ee512d9508d46645579f19df",
+      "build/strip-landmarks/psychicSessions-exterior-collision.json": "bf1e1912bb803dc9d9abd8f1c583ff242d8bc0a5cc5b95d91e8e125e480f239e"
     }
   },
-  "refinementInProgress": {
+  "refinementPass": {
     "pr": 495,
     "record": "docs/project-records/south-strip-storefront-fuel-refinement",
-    "state": "Sources and baseline26-leg installed walk checked; optimized models installed and shared bake in progress. After validation pending."
+    "status": "Verified installed refinement; full-site discrepancies retained"
   }
 }
