@@ -37,4 +37,3 @@ Original game captures at identical cameras, 960×540, DPR1, ultra, neutral dayl
 | Before | After |
 | --- | --- |
 | ![before](views/south-arco-aerial-before.png) | ![after](views/south-arco-aerial-after.png) |
-
