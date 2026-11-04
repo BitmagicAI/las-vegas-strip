@@ -5,7 +5,8 @@
     126
   ],
   "claim": "janiverse confirmed",
-  "stage": "Baseline probes prepared; no geometry changes",
-  "pending": "Capture and inspect baseline; research located Google Street View/satellite and official photographs; scoped reference-supported correction, optimize, bake once and allstep7",
-  "remaining": "Preserve both block records uncertainties; no whole-block completion claim"
+  "stage": "Boston3baseline views inspected; travelers3view capture then actual12leg walk still running session33473. BothCPUwalks6legs each pass. No geometry edits.",
+  "pending": "Finish baseline logs /tmp/boston-before.log /tmp/travelers-before.log /tmp/north-small-walk-before.log; inspectimages/results. Then Mapsresearch (no GPUoverlap); original scopedgeometry,optimization,onebake,afterchecks. No geometry edited.",
+  "remaining": "Preserve both block records uncertainties; no whole-block completion claim",
+  "pr": 498
 }
