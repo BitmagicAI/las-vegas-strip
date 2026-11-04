@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1219980419,
+ "bytes": 1232274473,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 702808,
-   "sha256": "6b59d0a45fe076879604963435b2c1c5ec6ed05dc77cc8b6655176145c19e85f",
+   "bytes": 704542,
+   "sha256": "6129d3f3a9ec297fc1dae85abf6b782db39edd16abc7cb81967bc745f4a8d72c",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "99b9ac17bc0c171a57e651cd774fdd2092887ef28cba3375869846628642c471",
+   "sha256": "d094494367bcdc589cb7a73310c7ff2ed24be3b44d07b9637c41654ec0da9909",
    "kind": "runtime cell manifest"
   },
   {
@@ -8112,14 +8112,14 @@
   },
   {
    "path": "build/strip-landmarks/dennys1822-exterior-collision.bin",
-   "bytes": 340,
-   "sha256": "6300eeffc091e0aca122f8f17cc7d743aaa1b5069cdf3e7a1faf984984f98fd4",
+   "bytes": 536,
+   "sha256": "683459df0b81555c97486537f3092b8e7a6b73776eaf23ed074b959dbb4410a1",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/dennys1822-exterior.glb",
-   "bytes": 245172,
-   "sha256": "f911b6fecf7d95c2d008956d7ff3e37af4109205ab710f0f6fc1a946541eb8f9",
+   "bytes": 12501744,
+   "sha256": "4ca89c4b0cd594bce0caca9e4bf3f4595b347b932025d0736df4f5638a67adfe",
    "kind": "optimized"
   },
   {
@@ -9426,8 +9426,8 @@
   },
   {
    "path": "build/strip-landmarks/main1700-exterior.glb",
-   "bytes": 12408964,
-   "sha256": "22e48382dde1ce9fb8c99e3d6653a04310fcbaf5ef1b2e1ec093bcc35688a6fc",
+   "bytes": 12444516,
+   "sha256": "30ce633ac871d2baafb915c47f6d0d51e7b95fccabf09dbae6dba216c288bbfa",
    "kind": "optimized"
   },
   {

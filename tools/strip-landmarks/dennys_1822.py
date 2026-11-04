@@ -60,6 +60,15 @@ def exterior(B):
    G.box('dn-service-paint',(L*.7,1.4,-.08),(1.2,2.4,.12));G.box('dn-vent',(L*.3,2.6,-.08),(1.6,.8,.12))
  W=Frame(B,0,0,y=0)
  for x,z in [(1708,-3756),(1714,-3756),(1720,-3755),(1713,-3750)]:W.box('dn-service-paint',(x,4.45,z),(1.5,.75,1.25));W.box('dn-vent',(x,4.84,z),(1.25,.04,1))
+ # East courtyard gravel islands and low masonry borders, inferred from Jan2026
+ # Street View and two satellite coordinate anchors; keep the entry path open.
+ for coords in [[(1727.8,-3757),(1736.2,-3757),(1731.8,-3745),(1727.8,-3745)],
+                [(1727,-3741),(1730.5,-3741),(1732,-3737),(1728,-3732),(1727,-3732)]]:
+  bed=Polygon(coords);inner=bed.buffer(-.24)
+  B.planar('dn-gravel',inner,.24,True)
+  B.shell(bed,.18,.53,'dn-stone-border',roof=False)
+  B.shell(inner,.24,.53,'dn-stone-border',roof=False)
+  B.planar('dn-stone-border',bed.difference(inner),.53,True)
  # Parking surface and boundary fit remain local to this block; no road changes.
  site=Polygon([(1698,-3764),(1733,-3764),(1736,-3740),(1727,-3719),(1699,-3723)]).difference(p)
  B.planar('dn-asphalt',site,.18,True)
