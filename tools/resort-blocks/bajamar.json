@@ -11,21 +11,23 @@
   ],
   "remaining": [
     "Heightestimated3.7m",
-    "Finefishlogographicmissing",
+    "Octopus logo graphic missing (prior record called it a fish; August2024 imagery shows an octopus).",
     "No interior layout yet",
     "Forecourt preserves mapped road/ground; parking surfacing is not yet reference matched",
-    "Rear details inferred; sign logo and glazing posters missing"
+    "Rear details inferred; sign logo and most glazing posters missing; OPEN board and rooftop secondary wording added."
   ],
   "evidence": {
     "views": "build/city-exteriors/bajamar-final",
     "support": "build/city-exteriors/bajamar-collision.json",
     "walk": "build/city-exteriors/bajamar-walk.json",
     "ownership": "build/city-exteriors/bajamar-ownership-audit.json",
-    "visualReview": "Three installed views inspected. Sign turned toward Strip and glazing material corrected; final front and entry inspected again.112support/headroom samples,6walklegs PASS.10oldmappedtriangles removed.1074authoredtri12batches,.26MBoptimized. Static960x540aerialp95 18ms,notroutebenchmark."
+    "visualReview": "Three installed views inspected. Sign turned toward Strip and glazing material corrected; final front and entry inspected again.112support/headroom samples,6walklegs PASS.10oldmappedtriangles removed.1074authoredtri12batches,.26MBoptimized. Static960x540aerialp95 18ms,notroutebenchmark.",
+    "refinementPass": "docs/project-records/carnitas-bajamar-refinement",
+    "refinementStatus": "Installed sign refinement verified: matching three-view before/after images, support and six CPU/actual walking legs passed; clean nine-stop smoke recheck. All remaining discrepancies retained."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/bajamar-exterior.glb": "1b0c8655e123f158515b23896f3e8431a689c8d893870a5c8b2ee539b9122d82",
+      "build/strip-landmarks/bajamar-exterior.glb": "87d8d74d54edbb74669024405da364ddcc756f27cfd314c8f905460203200cc5",
       "build/strip-landmarks/bajamar-exterior-collision.json": "bd433c9ed5602b23dd3b072bd38da3c61d44cc06874039061f9a3e7772eddf24"
     }
   }

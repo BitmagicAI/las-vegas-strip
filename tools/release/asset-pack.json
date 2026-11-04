@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1219437306,
+ "bytes": 1219953184,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 683111,
-   "sha256": "ebf6cdb30b24f927720bc79fc35ed7e1a92ef0ab58da683bc9cca960c4a23cac",
+   "bytes": 702413,
+   "sha256": "b69e6955de47ced5805057fe30bb10c0fe112a13d0df4e6c0fbd04aaf5e7a049",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "cac1f34112b64d50c78167c12d87495a916ab3b7855fdafb74860b11632015bb",
+   "sha256": "8e5e35072a0d977dcc63c6232a1c29aa637d8123578924494d82626828a85bb5",
    "kind": "runtime cell manifest"
   },
   {
@@ -7386,8 +7386,8 @@
   },
   {
    "path": "build/strip-landmarks/bajamar-exterior.glb",
-   "bytes": 273344,
-   "sha256": "1e0d6f93749d3d1a3fa53b128e0f7bd507e67d3596c747fdf81118850de3a169",
+   "bytes": 537236,
+   "sha256": "87bd943fd036275c775294f0c6166b2e741148d79c9d0141c4b95d68072bfe99",
    "kind": "optimized"
   },
   {
@@ -7650,8 +7650,8 @@
   },
   {
    "path": "build/strip-landmarks/carnitas1601-exterior.glb",
-   "bytes": 304804,
-   "sha256": "94b178d33c7f5813899690e8c71c0f0fd487ba1ff9e334b76b9927d253fd9ee0",
+   "bytes": 537488,
+   "sha256": "caf571dacd503bc3af9a991ab3c5b005da3710485baf56931c55e8101909bf71",
    "kind": "optimized"
   },
   {

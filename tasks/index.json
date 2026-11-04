@@ -7698,7 +7698,7 @@
    "items": [
     "Facade height not surveyed",
     "Rear elevation not inspected",
-    "Fine restaurant graphics, sign font and weathering omitted",
+    "Tall condensed fascia wording refined; exact pig graphics, original sign font and weathering remain approximate or omitted.",
     "Opaque exterior glazing; no interior access",
     "Forecourt uses existing mapped datum, not surveyed paving"
    ],
@@ -7724,8 +7724,9 @@
      "tools/city-exteriors/test-carnitas-1601.mjs",
      "tools/city-exteriors/replace-carnitas-1601.py",
      "tools/city-exteriors/walk-carnitas-1601.mjs",
+     "tools/strip-landmarks/build_carnitas_bajamar_refinement.py",
      "tools/strip-landmarks/carnitas_1601.py",
-     "tools/strip-landmarks/build_carnitas_1601.py"
+     "tools/strip-landmarks/export_carnitas_bajamar_refinement.py"
     ]
    },
    "acceptance": [
@@ -7747,10 +7748,10 @@
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Heightestimated3.7m",
-    "Finefishlogographicmissing",
+    "Octopus logo graphic missing (prior record called it a fish; August2024 imagery shows an octopus).",
     "No interior layout yet",
     "Forecourt preserves mapped road/ground; parking surfacing is not yet reference matched",
-    "Rear details inferred; sign logo and glazing posters missing"
+    "Rear details inferred; sign logo and most glazing posters missing; OPEN board and rooftop secondary wording added."
    ],
    "record": "tools/resort-blocks/bajamar.json",
    "buildings": [
@@ -7775,7 +7776,8 @@
      "tools/city-exteriors/replace-bajamar.py",
      "tools/city-exteriors/walk-bajamar.mjs",
      "tools/strip-landmarks/bajamar.py",
-     "tools/strip-landmarks/build_bajamar.py"
+     "tools/strip-landmarks/build_carnitas_bajamar_refinement.py",
+     "tools/city-exteriors/install-carnitas-bajamar-refinement.mjs"
     ]
    },
    "acceptance": [

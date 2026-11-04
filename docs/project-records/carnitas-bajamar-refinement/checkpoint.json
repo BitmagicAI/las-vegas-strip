@@ -5,9 +5,10 @@
     130
   ],
   "claims": "janiverse confirmed",
-  "stage": "Baseline complete: six view images plus four actual-walk endpoints inspected,12 CPU and12actuallegs passed. August2024 StreetView and satellite inspected. Original scoped fascia/fixture/awning/window-sign refinements generated and exported; optimize/install/sharedbake pipeline session15138 running.",
-  "pending": "Finish session15138, logs /tmp/carnitas-opt.log,/tmp/bajamar-opt.log,/tmp/carnitas-bajamar-install.log,/tmp/carnitas-bajamar-bake.log. Adapt LOD preservation helper from499 ownkeys carnitas1601|bajamar; preserve unowned GoldCoast/Wyndham. Inspect matched after probes and actualwalk, compare performance; allstep7, assetstage, records/LFS/PR500 guarded merge and explicit129130closure. No new baseline needed.",
+  "stage": "Installed refinement verified: all step7 local checks, six matching daylight pairs,12 actual after legs and clean nine-stop smoke recheck passed. Initial transient smoke console error preserved.",
+  "pending": "Push verified own commits, guarded merge PR500 into next, explicitly close129130 and run picker.",
   "pr": 500,
   "baselineSession": 82752,
-  "pipelineSession": 15138
+  "pipelineSession": 15138,
+  "verificationSession": 21304
 }
