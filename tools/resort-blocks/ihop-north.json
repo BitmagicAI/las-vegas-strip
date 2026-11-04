@@ -24,7 +24,7 @@
     }
   ],
   "remaining": [
-    "Pylon arrow/signfont and exact material/weathering incomplete.",
+    "Exact sign typography, arrow proportions and material/weathering remain approximations; original folded arrow/address oval installed in PR490 pass.",
     "Satellite location checked, exact elevations and facade dimensions estimated.",
     "Health-fund facades need dedicated reference photos; neutral pass only.",
     "Public interior and entry navigation not implemented."
@@ -56,5 +56,16 @@
       "build/strip-landmarks/ihopNorth-exterior-collision.json": "664b5a8d0788c1e3267fedf71f882e3951a3e27016d3de9ccbdb0d299a30e363",
       "build/geographic-strip/city.glb": "5965205f5d4bcfc2a77d6a1e4473ce1aeffe46ef4fde1028e71d5c364c8e3568"
     }
+  },
+  "refinement20261103": {
+    "record": "docs/project-records/north-strip-roadside-refinement",
+    "changes": [
+      "Original folded red arrow and oval address ring on both pylon faces; separate health-fund building preserved."
+    ],
+    "visual": "All matching before/after daylight cameras inspected, front first; actual installed forward/return routes passed and endpoint images inspected.",
+    "scope": "Scoped reference-supported detail pass, not whole-block completion.",
+    "collision": "Source collision JSON byte-identical.",
+    "research": "docs/project-records/north-strip-roadside-refinement/research.json",
+    "runtimeSha256": "b3dfd64ab192f94d8869768a3941d2f70bc8c52bac575761073a0ad6c9f28242"
   }
 }

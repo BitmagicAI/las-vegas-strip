@@ -1,0 +1,29 @@
+{
+  "typecheck": "PASS",
+  "resortRecordReview": "PASS",
+  "sourceAudit": "source-audit.json",
+  "floorHeadroom": {
+    "ihop": 28,
+    "oasis": 325,
+    "before": "PASS",
+    "after": "PASS"
+  },
+  "oasisRapier": "PASS:7legs both directions before/after",
+  "actualInstalledWalk": {
+    "before": "PASS",
+    "after": "PASS",
+    "segments": {
+      "ihop": 4,
+      "oasis": 14
+    },
+    "endpointImages": "All4 before and4after inspected"
+  },
+  "installedDaylightViews": "All7 before and7after inspected, identical cameras front first",
+  "pending": [],
+  "optimization": "PASS:2changedGLBs,0unoptimized;level+WebP",
+  "bake": "PASS:one grouped bake, current;91/92cells byte-identical",
+  "assetPack": "PASS:1930present,0missing,0unoptimized;4copied1926unchanged0removed",
+  "publicScan": "PASS final staged scan:0failures,4existingwarnings",
+  "performance": "Repeated identical sign camera with committed baseline substitution; no sustained regression established, one30.1ms after outlier retained in performance.json",
+  "devSmoke": "PASS:9stops,0failures,0pageErrors,0consoleErrors against port3180"
+}

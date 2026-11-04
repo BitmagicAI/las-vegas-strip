@@ -6472,7 +6472,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Pylon arrow/signfont and exact material/weathering incomplete.",
+    "Exact sign typography, arrow proportions and material/weathering remain approximations; original folded arrow/address oval installed in PR490 pass.",
     "Satellite location checked, exact elevations and facade dimensions estimated.",
     "Health-fund facades need dedicated reference photos; neutral pass only.",
     "Public interior and entry navigation not implemented."
@@ -6528,7 +6528,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Three final installed views inspected; chapel setback corrected. Vegetation, typography and facade surface detail remain simplified.",
+    "Facade climbing greenery and sign-trim bulbs added; courtyard vegetation, typography and facade surface detail remain simplified.",
     "Motel rooms and chapel interior not implemented",
     "Brand typography and foliage simplified;photo material fidelity not established"
    ],
@@ -6551,10 +6551,12 @@
      "tools/resort-blocks/oasis-motel.json"
     ],
     "builders": [
+     "tools/strip-landmarks/build_north_roadside_refinement.py",
+     "tools/city-exteriors/install-north-roadside-refinement.mjs",
      "tools/city-exteriors/test-oasis.mjs",
      "tools/city-exteriors/walk-oasis.mjs",
      "tools/strip-landmarks/build_oasis_motel.py",
-     "tools/strip-landmarks/oasis_motel.py"
+     "tools/strip-landmarks/export_north_roadside_refinement.py"
     ]
    },
    "acceptance": [

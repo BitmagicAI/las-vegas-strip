@@ -25,7 +25,7 @@
   ],
   "dimensions": "Mapped1499m2 footprint,approximately32x93m U plan. Heights3.8m motel,6.6m chapel,arch3.9\u20134.7m clear are photo-estimates.",
   "remaining": [
-    "Three final installed views inspected; chapel setback corrected. Vegetation, typography and facade surface detail remain simplified.",
+    "Facade climbing greenery and sign-trim bulbs added; courtyard vegetation, typography and facade surface detail remain simplified.",
     "Motel rooms and chapel interior not implemented",
     "Brand typography and foliage simplified;photo material fidelity not established"
   ],
@@ -47,5 +47,16 @@
       "build/strip-landmarks/oasisMotel-exterior.glb": "76261e8c4b4e867f80bff777bbb5280d42604ce0afc8d2571f921977389f8e25",
       "build/strip-landmarks/oasisMotel-exterior-collision.json": "c303ebfe5680bfcca3ef63e4a7d455adf3d864c55dac305b9e31b23d6c435d73"
     }
+  },
+  "refinement20261103": {
+    "record": "docs/project-records/north-strip-roadside-refinement",
+    "changes": [
+      "Original climbing leaves/flowers on chapel glazing and small geometric sign-trim bulbs; no new runtime lights."
+    ],
+    "visual": "All matching before/after daylight cameras inspected, front first; actual installed forward/return routes passed and endpoint images inspected.",
+    "scope": "Scoped reference-supported detail pass, not whole-block completion.",
+    "collision": "Source collision JSON byte-identical.",
+    "research": "docs/project-records/north-strip-roadside-refinement/research.json",
+    "runtimeSha256": "39a99b2310877cc6ae0ee7a109d4ad9c071e17f82380741f37901a0b7daca098"
   }
 }
