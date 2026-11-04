@@ -7,3 +7,8 @@ Capture matching front-first daylight baseline and actual walks before edits. Re
 
 ## Prior pass
 PR502 merged as 2ea9a0bf05119b8ab4632ea0b2cf54874716e2f9 at 2026-11-04T19:21:18Z; issues137/138 closed. All checks and evidence are in chapel-tacos-refinement. PR495 remains blocked/unclaimed; do not poll it. Existing dev3180/editor3181 retained. No GPU jobs active at this checkpoint.
+
+## Baseline capture underway — 2026-11-04
+Draft PR503 is open. Added dedicated matching 960×540 DPR1 ultra daylight probes for both buildings (front first, 900 warm-up frames, stream-quiet gate, 180 frame samples) and actual approach/ramp return walk script. CPU baseline 18 legs passed; results saved in before/. GPU sequence session7392 runs Denny’s views, Main views, then actual walks; logs /tmp/dm-dennys-before.log, /tmp/dm-main-before.log, /tmp/dm-walk-before.log. Denny’s front baseline inspected: simple facade, empty eastern frontage; no new geometry installed. Finish and inspect all captures before Maps research. Official Denny’s branch page checked; its generic promotional photo is not branch-specific evidence. See research.json.
+
+Denny’s front/east/aerial baseline captures all inspected. Empty eastern asphalt apron currently lacks mature courtyard trees and borders; front lettering remains generic. Fresh reference must establish placement before authoring. All three measured view samples saved in before/dennys-1822-performance.json. GPU sequence continues to Main Street and walks.
