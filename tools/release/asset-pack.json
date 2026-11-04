@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1204598905,
+ "bytes": 1204728187,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 682669,
-   "sha256": "4c24abaacc66c971acdcb825d81781d9e45767cb3d9bb69734cf4002df443cea",
+   "bytes": 683111,
+   "sha256": "ebf6cdb30b24f927720bc79fc35ed7e1a92ef0ab58da683bc9cca960c4a23cac",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "b91852f00c05ec2a42520f7f51188c4b53b633e600417b9716820a5d9e89ad01",
+   "sha256": "f265d0bb8a1c5db1fed565fed4a178b14ab78124dbdc65c9e8c6681441ee746c",
    "kind": "runtime cell manifest"
   },
   {
@@ -9042,8 +9042,8 @@
   },
   {
    "path": "build/strip-landmarks/ihopNorth-exterior.glb",
-   "bytes": 363260,
-   "sha256": "2df8e381168d56bdfe52b831342d8d247459477394aa7e28b6cbb1a9b8b925e4",
+   "bytes": 420896,
+   "sha256": "b3dfd64ab192f94d8869768a3941d2f70bc8c52bac575761073a0ad6c9f28242",
    "kind": "optimized"
   },
   {
@@ -9954,8 +9954,8 @@
   },
   {
    "path": "build/strip-landmarks/oasisMotel-exterior.glb",
-   "bytes": 628316,
-   "sha256": "7b938d2fbb7136a5089c238c9a5d29fc6192d499c1a3bb79ed8865eacbfafc60",
+   "bytes": 699520,
+   "sha256": "39a99b2310877cc6ae0ee7a109d4ad9c071e17f82380741f37901a0b7daca098",
    "kind": "optimized"
   },
   {

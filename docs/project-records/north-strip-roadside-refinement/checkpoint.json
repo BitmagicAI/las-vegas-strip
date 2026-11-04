@@ -4,8 +4,43 @@
     106,
     107
   ],
-  "stage": "Claims posted; reference research and matching baseline next",
+  "stage": "All local checks passed; ready for PR490 merge",
   "scope": "IHOP current restaurant, separate former IHOP/health-fund footprint and Oasis Motel/Sweethearts Chapel; three mapped footprints nearby.",
-  "pending": "Confirm assignments106/107; review official photos/Google site views and existing builders. Capture front-first matched baselines and actual routes before editing. Preserve all recorded uncertainties, current interiors and roads. No geometry changes.",
-  "previous": "PR489 mergednext;103/104explicitlyclosed;allchecksPASS;91/92unchangedcells;1107856newLFSbytes."
+  "pending": "Commit scoped files, verify origin/next..HEAD only own commits, push, ready/merge490 with --merge, explicitly close106/107, pick next task.",
+  "previous": "PR489 mergednext;103/104explicitlyclosed;allchecksPASS;91/92unchangedcells;1107856newLFSbytes.",
+  "pr": 490,
+  "reviewedBaselineViews": [
+    "ihop-front",
+    "ihop-drive",
+    "ihop-aerial",
+    "ihop-sign",
+    "oasis-front",
+    "oasis-courtyard",
+    "oasis-aerial"
+  ],
+  "baselineFindings": [
+    "IHOP pylon lacks red folded arrow and oval address ring shown in five city2020photos; large blank silver shaft and small plain lettering.",
+    "Oasis facade glazing bare, missing reference-supported climbing greenery and sign trim bulbs; current arch route clear.",
+    "Ground/planting and material fidelity remain simplified; preserve adjacent health-fund structure and shared roads."
+  ],
+  "baselineWalk": "Both actual walks passed forward/reverse; all four endpoint images inspected. Floor/headroom 28 IHOP and325 Oasis samples passed; Oasis Rapier seven legs each direction passed.",
+  "changes": [
+    "IHOP original folded red pylon arrow and oval address ring; moved address text.",
+    "Oasis original climbing leaves/flowers on chapel glazing and small geometric sign-trim bulbs; no new lights."
+  ],
+  "sourceAudit": "build/city-exteriors/north-roadside-source-audit.json: both collision JSON files byte-identical, health-fund facade groups unchanged.",
+  "checksSoFar": [
+    "bitmagic check passed",
+    "resort review passed",
+    "IHOP28/Oasis325 floor/headroom after samples passed",
+    "Oasis Rapier seven legs each way after passed",
+    "Changed geometry groups have zero degenerate faces; existing unchanged courtyard sphere poles retained."
+  ],
+  "visualFindings": [
+    "IHOP arrow points toward restaurant and oval address is readable in front/sign views; neutral L-shaped neighbor preserved.",
+    "Oasis front greenery visible on chapel glazing, geometric sign bulbs remain subtle; drive arch and courtyard stay clear.",
+    "Both remain simplified architecture/materials; no photorealistic or whole-block completion claim."
+  ],
+  "assetAudit": "91/92 cells byte-identical; onlycell-2_-5 changed;1817328newLFSbytes. Verified GoldCoast/Wyndham unrelated LOD drift restored; pack1930present/0missing/0unoptimized;2changedGLBs optimized; bake current.",
+  "performanceResolution": "Three baseline-substituted sign windows21.7/20.3/22.1ms vs after20.0/30.1/20.8ms; median after20.8 baseline21.7. No sustained regression established; outlier retained. No speed claim."
 }

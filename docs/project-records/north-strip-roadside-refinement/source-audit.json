@@ -1,0 +1,23 @@
+{
+  "ihopNorth": {
+    "collisionByteIdentical": true,
+    "changedGroups": [
+      "('podium/restaurant', 'ih-red', 0)"
+    ],
+    "healthFundUnchanged": true,
+    "changedGroupFaces": 3088,
+    "degenerateFaces": 0
+  },
+  "oasisMotel": {
+    "collisionByteIdentical": true,
+    "changedGroups": [
+      "('podium/chapel-greenery', 'om-leaf', 1)",
+      "('podium/chapel-greenery', 'om-red', 1)",
+      "('podium/motel', 'om-letter', 1)"
+    ],
+    "healthFundUnchanged": true,
+    "changedGroupFaces": 3444,
+    "degenerateFaces": 0
+  },
+  "notes": "Existing unchanged Oasis courtyard sphere group has300 pole-degenerate faces; unchanged. Initial new flower spheres replaced with original six-triangle folded flower faces before after-capture."
+}

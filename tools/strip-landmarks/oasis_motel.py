@@ -66,6 +66,28 @@ def exterior(B):
   G.box('om-stucco',(0,9.2,-.24),(4.5,2.65,.3));G.box('om-red',(0,6.9,-.24),(4.5,1.75,.3))
   G.text('OASIS',(0,9.7,-.43),.8,'om-teal');G.text('MOTEL',(0,8.7,-.43),.8,'om-teal');G.text('MOTEL',(0,6.9,-.43),.65,'om-letter')
   for y in [5.95,7.85,10.65]:G.box('om-trim',(0,y,-.3),(4.8,.16,.45))
+ # Photo-supported climbing decoration on chapel street glazing; shallow original
+ # leaf geometry stays outside the existing wall and away from the drive opening.
+ B.source='podium/chapel-greenery';B.detail=1
+ rng=random.Random(1735)
+ for x0 in [-13.7,-11.5,-9.3,-7.1,-4.9,-2.7]:
+  stem=[(x0+.16*math.sin(i*.8),.35+i*.19,-1.63) for i in range(14)]
+  F.path('om-leaf',stem,.026,6)
+  for i in range(13):
+   for side in [-1,1]:
+    x=x0+side*(.14+rng.random()*.20)+.12*math.sin(i*.8);y=.4+i*.18+rng.random()*.12;z=-1.69-rng.random()*.09
+    # Folded pointed leaf, four non-coplanar triangles; no transparency shader.
+    edge=[(x,y-.11,z),(x+.12,y,z),(x,y+.17,z),(x-.12,y,z)]
+    for a,b in zip(edge,edge[1:]+edge[:1]):B.face('om-leaf',[F.p(*a),F.p(x,y,z-.045),F.p(*b)])
+    if i%5==0 and side==1:
+     ring=[(x+.055*math.cos(a),y+.055*math.sin(a),z-.05) for a in np.linspace(0,math.tau,7)[:-1]]
+     for a,b in zip(ring,ring[1:]+ring[:1]):B.face('om-red',[F.p(*a),F.p(x,y,z-.08),F.p(*b)])
+ B.source='podium/motel'
+ # Small sign-edge bulbs as geometry only: never add runtime lights.
+ for yaw in [F.yaw,F.yaw+math.pi]:
+  q=F.p(10,0,1.2);G=Frame(B,q[0],q[2],yaw,y=0)
+  for y in [5.95,7.85,10.65]:
+   for x in np.arange(-2.25,2.26,.30):G.box('om-letter',(x,y,-.56),(.065,.065,.05))
  B.detail=1
  # Courtyard planting strips and rear service equipment. No invented pool.
  for z in np.arange(27,85,12):

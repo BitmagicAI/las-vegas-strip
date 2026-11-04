@@ -4,6 +4,7 @@ city's 2020 photo establishes blue cylinder and corrugated cladding.
 """
 from common import *
 from forum_shops import facade_frame
+from retail_signs import plate
 KEY='ihopNorth'
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/restaurant';B.detail=0
@@ -42,7 +43,12 @@ def exterior(B):
  for yaw in [F.yaw,F.yaw+math.pi]:
   H=Frame(B,G.x,G.z,yaw,y=0)
   H.box('ih-blue',(0,8.7,-.4),(4,2.8,.2));H.text('IHOP',(0,8.65,-.52),1.05,'ih-letter')
-  H.text('1809',(0,5.2,-.4),.55,'ih-blue')
+  # Original folded arrow and address ring, inferred from city October2020 photos.
+  points=[(-1.1,7.3),(-1.9,5.7),(.1,5.7),(.1,6.15),(1.2,5.25),(.1,4.35),(.1,4.8),(-2.9,4.8),(-1.75,7.3)]
+  if yaw!=F.yaw:points=[(-x,y) for x,y in points]
+  plate(H,Polygon(points),'ih-red',-.56,.18)
+  H.path('ih-red',[(1.05*math.cos(a),3.65+.72*math.sin(a),-.47) for a in np.linspace(0,math.tau,49)],.045,8)
+  H.text('1809',(0,3.6,-.54),.55,'ih-blue')
  # Roof/service fixtures stay behind the parapet.
  B.detail=1
  for x,z in [(-3,14),(3,23),(-3,26)]:F.box('ih-metal',(x,5.9,z),(2.7,1,2));F.box('ih-dark',(x,6.42,z),(2.4,.04,1.8))

@@ -1,0 +1,321 @@
+{
+  "ihop": {
+    "before": [
+      {
+        "name": "front",
+        "eye": [
+          1737,
+          5,
+          -3765
+        ],
+        "target": [
+          1775,
+          5,
+          -3747
+        ],
+        "p50": 16.800000190734863,
+        "p95": 28.299999952316284
+      },
+      {
+        "name": "drive",
+        "eye": [
+          1754,
+          5,
+          -3707
+        ],
+        "target": [
+          1785,
+          4,
+          -3739
+        ],
+        "p50": 16.59999990463257,
+        "p95": 19.09999990463257
+      },
+      {
+        "name": "aerial",
+        "eye": [
+          1730,
+          65,
+          -3780
+        ],
+        "target": [
+          1800,
+          2,
+          -3692
+        ],
+        "p50": 16.699999809265137,
+        "p95": 18.5
+      },
+      {
+        "name": "sign",
+        "eye": [
+          1755,
+          7,
+          -3767
+        ],
+        "target": [
+          1766,
+          7,
+          -3736
+        ],
+        "p50": 16.799999952316284,
+        "p95": 18.59999990463257
+      }
+    ],
+    "after": [
+      {
+        "name": "front",
+        "eye": [
+          1737,
+          5,
+          -3765
+        ],
+        "target": [
+          1775,
+          5,
+          -3747
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.700000047683716
+      },
+      {
+        "name": "drive",
+        "eye": [
+          1754,
+          5,
+          -3707
+        ],
+        "target": [
+          1785,
+          4,
+          -3739
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.40000009536743
+      },
+      {
+        "name": "aerial",
+        "eye": [
+          1730,
+          65,
+          -3780
+        ],
+        "target": [
+          1800,
+          2,
+          -3692
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.299999952316284
+      },
+      {
+        "name": "sign",
+        "eye": [
+          1755,
+          7,
+          -3767
+        ],
+        "target": [
+          1766,
+          7,
+          -3736
+        ],
+        "p50": 16.899999856948853,
+        "p95": 22.799999952316284
+      }
+    ]
+  },
+  "oasis": {
+    "before": [
+      {
+        "name": "front",
+        "eye": [
+          1773,
+          4,
+          -3813
+        ],
+        "target": [
+          1800,
+          4,
+          -3799
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.90000009536743
+      },
+      {
+        "name": "courtyard",
+        "eye": [
+          1810.1,
+          2.1,
+          -3796.7
+        ],
+        "target": [
+          1854.4,
+          2,
+          -3773.5
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.700000047683716
+      },
+      {
+        "name": "aerial",
+        "eye": [
+          1750,
+          65,
+          -3840
+        ],
+        "target": [
+          1835,
+          0,
+          -3778
+        ],
+        "p50": 16.5,
+        "p95": 18.700000047683716
+      }
+    ],
+    "after": [
+      {
+        "name": "front",
+        "eye": [
+          1773,
+          4,
+          -3813
+        ],
+        "target": [
+          1800,
+          4,
+          -3799
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.600000143051147
+      },
+      {
+        "name": "courtyard",
+        "eye": [
+          1810.1,
+          2.1,
+          -3796.7
+        ],
+        "target": [
+          1854.4,
+          2,
+          -3773.5
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.40000009536743
+      },
+      {
+        "name": "aerial",
+        "eye": [
+          1750,
+          65,
+          -3840
+        ],
+        "target": [
+          1835,
+          0,
+          -3778
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18
+      }
+    ]
+  },
+  "method": "960x540 DPR1 ultra, neutral daylight, identical front-first cameras;900 frames settle, stream quiet,60 extra frames,180 sampled frames. Fixed views only; no city-driving or GPU-memory benchmark.",
+  "ihopSignRepeatAfter": [
+    {
+      "name": "sign",
+      "eye": [
+        1755,
+        7,
+        -3767
+      ],
+      "target": [
+        1766,
+        7,
+        -3736
+      ],
+      "p50": 17,
+      "p95": 20
+    },
+    {
+      "name": "sign",
+      "eye": [
+        1755,
+        7,
+        -3767
+      ],
+      "target": [
+        1766,
+        7,
+        -3736
+      ],
+      "p50": 17.09999990463257,
+      "p95": 30.100000143051147
+    },
+    {
+      "name": "sign",
+      "eye": [
+        1755,
+        7,
+        -3767
+      ],
+      "target": [
+        1766,
+        7,
+        -3736
+      ],
+      "p50": 17.100000143051147,
+      "p95": 20.799999952316284
+    }
+  ],
+  "ihopSignRepeatBaseline": [
+    {
+      "name": "sign",
+      "eye": [
+        1755,
+        7,
+        -3767
+      ],
+      "target": [
+        1766,
+        7,
+        -3736
+      ],
+      "p50": 17.799999952316284,
+      "p95": 21.700000047683716
+    },
+    {
+      "name": "sign",
+      "eye": [
+        1755,
+        7,
+        -3767
+      ],
+      "target": [
+        1766,
+        7,
+        -3736
+      ],
+      "p50": 17.700000047683716,
+      "p95": 20.300000190734863
+    },
+    {
+      "name": "sign",
+      "eye": [
+        1755,
+        7,
+        -3767
+      ],
+      "target": [
+        1766,
+        7,
+        -3736
+      ],
+      "p50": 17.59999990463257,
+      "p95": 22.100000143051147
+    }
+  ],
+  "analysis": "First sign p95 rose18.6\u219222.8ms. Three unchanged-camera after windows measured20.0/30.1/20.8ms, while committed baseline GLB substituted in browser measured21.7/20.3/22.1ms. Median-window p95 after20.8 vs baseline21.7ms; no sustained regression established, one30.1ms after outlier retained. Other six fixed views improved within measurement variability; no speedup or city-route claim.",
+  "baselineSubstitution": "Recovered HEAD optimized runtime IHOP GLB via Git LFS to /tmp/north-ihop-baseline.glb; verified one GET substitution at /build/optimized/build/strip-landmarks/ihopNorth-exterior.glb; baseline image inspected, arrow absent. Runtime files unchanged by comparison."
+}
