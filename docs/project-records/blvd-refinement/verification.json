@@ -1,0 +1,16 @@
+{
+  "geometry": "PASS51324triangles0errors;twohubstairsgroupschange+96triangles",
+  "support": "PASS420stair110terraceroutesamples",
+  "guards": "6lateralraysFAILbefore/PASSafter",
+  "actualWalk": "22segmentsPASSbefore/after;4endpointcapturesinspected",
+  "visual": "Fiveidenticalfrontfirstwideviewsandlandingdetailbefore/afterinspected",
+  "performance": "Before17.8/17.7/17.9/29.6/17.7ms;after18/17.9/18.5/17.8/17.9ms;p95. No speedup or sustained60fps claim.",
+  "typecheck": "PASS",
+  "blockReview": "PASS",
+  "public": "PASS0fail4existingwarnings after staging",
+  "optimization": "level6.21\u21922.57MiB;WebP1.96MiB;changedGLBcheck1/0unoptimized",
+  "bake": "One run,current;91/92cellsbyteidentical",
+  "pack": "1930present0missing0unoptimized",
+  "smoke": "PASS9stops0request/page/consoleerrors",
+  "newLfsBytes": 2844088
+}

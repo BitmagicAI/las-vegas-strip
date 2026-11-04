@@ -6023,11 +6023,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Exact elevator and escalator implementation; stairs implemented",
-    "Fine storefront glazing, tenant identity and rooftop furnishings",
-    "Wide-view performance not60fps; warmedBLVDhidden38.2ms versusvisible38.4ms did not isolate building as cause",
-    "Precise heights and setbacks are photo estimates",
-    "Full public route traversal beyond sampled support/headroom tests"
+    "Exact elevator and escalator implementation: existing stairs now traversed but no authored moving escalator/lift system; exact machinery and landing layout need further references.",
+    "Fine storefront glazing, tenant identity and rooftop furnishings: preserve current facade and sparse furniture because this pass repairs landing safety only.",
+    "Wide-view performance: older ablation did not isolate BLVD as bottleneck; new same-camera p95 mostly18ms but sustained60fps is not established.",
+    "Precise heights and setbacks remain photo estimates; no surveyed elevations were introduced by this pass.",
+    "Public traversal beyond the verified street→north terrace return route: south terrace, all storefront interiors and lift/escalator access remain unverified or unimplemented."
    ],
    "record": "tools/resort-blocks/blvd-retail.json",
    "buildings": [

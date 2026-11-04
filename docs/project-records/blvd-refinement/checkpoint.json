@@ -1,0 +1,81 @@
+{
+  "issue": 98,
+  "base": "45f98959fb36663a36139ec8d0dedac9709eef07",
+  "stage": "All local checks passed; ready to merge PR487",
+  "scope": "Seven mapped BLVD structures; prioritize actual continuous stair route traversal and reference-supported rooftop details",
+  "pending": "Commit final evidence/runtime, verify own-only origin/next..HEAD before push, ready/merge487 --merge, explicitly close98, continue picker.",
+  "baseline": {
+    "session": 57729,
+    "directory": "build/city-exteriors/blvd-refinement-baseline"
+  },
+  "pr": 487,
+  "reviewedBaselineViews": [
+    "front",
+    "back",
+    "entry",
+    "terrace",
+    "south"
+  ],
+  "findings": [
+    "Front: north/south retail wings and central hub/roof connector present; large unrefined roof areas retained.",
+    "Back: central stair opening and connector visible; continuous installed route still requires actual traversal."
+  ],
+  "baselineP95Ms": [
+    17.8,
+    17.7,
+    17.9,
+    29.6,
+    17.7
+  ],
+  "walk": {
+    "session": 2834,
+    "log": "/tmp/blvd-walk-baseline.log",
+    "directory": "build/city-exteriors/blvd-refinement-walk-baseline"
+  },
+  "verificationJob": {
+    "session": 78961,
+    "sequence": [
+      "blvd-refinement-installed",
+      "blvd-landing-after",
+      "blvd-refinement-walk-after"
+    ],
+    "logs": "/tmp/<directory>.log"
+  },
+  "completed": [
+    "Baseline five views and dedicated landing view inspected",
+    "Baseline street-to-north-terrace and return22segments PASS;2endpoints inspected",
+    "Baseline landing6lateralguardraysFAIL; after6PASS",
+    "Existing420stair+110terrace support/headroom PASS after edit",
+    "51324triangles,0geometryauditerrors;only2hubstairs materialgroupschange (+96triangles)",
+    "Level6.21\u21922.57MiB,WebP1.96MiB;localinstall1117collisiontriangles"
+  ],
+  "decision": "Add3mglass side panels and matching dark rails/posts on both sides of existing y7.1m intermediate landing. Inferred safety detail; no measured as-built guard claim. Existing floors, footpaths, stairs and neighboring structures preserved.",
+  "bake": {
+    "session": 93029,
+    "log": "/tmp/blvd-bake.log",
+    "runsStarted": 1,
+    "status": "complete, one run; known unrelated drift restored"
+  },
+  "reviewedInstalledViews": [
+    "front",
+    "back",
+    "entry",
+    "terrace",
+    "south",
+    "landing",
+    "walk-blvd-0",
+    "walk-return-0"
+  ],
+  "installedP95Ms": [
+    18,
+    17.9,
+    18.5,
+    17.8,
+    17.9
+  ],
+  "smoke": {
+    "session": 8340,
+    "log": "/tmp/blvd-smoke.log"
+  },
+  "newLfsBytes": 2844088
+}

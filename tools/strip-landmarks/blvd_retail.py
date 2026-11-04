@@ -120,6 +120,13 @@ def exterior(B):
   u=side*1.65
   for z0,z1,y0,y1 in [(0,18,.2,7.1),(21,39,7.1,14)]:
    B.face('glass',[S.p(u,y0,z0),S.p(u,y1,z1),S.p(u,y1+1.05,z1),S.p(u,y0+1.05,z0)],True)
+ # Complete the intermediate landing's side guards between the two slope guards.
+ # Existing landing/elevations retained; detail is inferred, not a surveyed rail plan.
+ for side in [-1,1]:
+  u=side*1.65
+  S.box('glass',(u,7.625,19.5),(.06,1.05,3),True)
+  S.box('blvd-painted-metal',(u,8.18,19.5),(.10,.06,3.05))
+  for zz in [18,21]:S.box('blvd-painted-metal',(u,7.625,zz),(.07,1.05,.07))
  # Guards around the deck opening leave the east landing unobstructed.
  for z in [1091.77,1095.43]:
   B.box('glass',(71,DECK+.55,z),(22,1.1,.06),True)
