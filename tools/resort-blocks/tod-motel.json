@@ -17,18 +17,21 @@
     "Rear elevation rhythm inferred; no operating/interior claim",
     "Weathering and sign artwork need refinement",
     "Palm trees, facade weathering and finer sign shape not yet reproduced",
-    "Paving partly meets retained mapped sidewalk; no whole-lot surface survey"
+    "Paving partly meets retained mapped sidewalk; no whole-lot surface survey",
+    "Wire sphere added from January 2026 reference; original panel silhouette, lettering style and small lower boards still approximate or missing."
   ],
   "evidence": {
     "views": "build/city-exteriors/tod-motel-final",
     "support": "build/city-exteriors/tod-motel-collision.json",
     "walk": "build/city-exteriors/tod-motel-walk.json",
     "ownership": "build/city-exteriors/tod-motel-ownership-audit.json",
-    "visualReview": "All three installed views inspected, canopy edge closure and two-sided sign corrected; courtyard and aerial rechecked. 434 support/headroom samples, six walking legs passed. 130 original building visual/collision triangles replaced. Static960x540 p95~17.3ms, not route benchmark."
+    "visualReview": "All three installed views inspected, canopy edge closure and two-sided sign corrected; courtyard and aerial rechecked. 434 support/headroom samples, six walking legs passed. 130 original building visual/collision triangles replaced. Static960x540 p95~17.3ms, not route benchmark.",
+    "refinementPass": "docs/project-records/tod-main-street-refinement",
+    "refinementStatus": "Seven group matching daylight pairs and eight actual-walk endpoints inspected; 774 support samples and 12 CPU + 12 installed after-walk legs passed. Signs refined; outstanding fidelity and interior gaps retained."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/todMotel-exterior.glb": "33270d6fcaa50abb10bed9819cb0cc0d863b7bc8ee99db8e4f908ad501bf2b0f",
+      "build/strip-landmarks/todMotel-exterior.glb": "834d8dd7467652608d4390c6c2419c0a0d4aa89a167b70eeb318917ce837a25c",
       "build/strip-landmarks/todMotel-exterior-collision.json": "0438eede390c39d40fe84a38ba857cc8a890e27fba0258406ff22dbdc2a42266"
     }
   }

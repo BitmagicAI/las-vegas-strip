@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1219198910,
+ "bytes": 1219437306,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -450,8 +450,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-6.bin",
-   "bytes": 247205,
-   "sha256": "b2b3779f39e30756c93380add22bc4328ae6909e37ba1663dd38e583a68ea662",
+   "bytes": 257897,
+   "sha256": "a20b4f03125abde3d4db7f7c7b796078c27c5041a240a5c3e713d9777a276f16",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "ee843c7cbd79d5b10d511bb25be54fb18ef3e802de1f41f8799f85d0f599f9df",
+   "sha256": "cac1f34112b64d50c78167c12d87495a916ab3b7855fdafb74860b11632015bb",
    "kind": "runtime cell manifest"
   },
   {
@@ -9438,8 +9438,8 @@
   },
   {
    "path": "build/strip-landmarks/mainStreet1511-exterior.glb",
-   "bytes": 288472,
-   "sha256": "7f8593de5822c00d1a168da6cf85a49b84b10f4ce059355d261f8a3d96d2ef83",
+   "bytes": 477660,
+   "sha256": "369f3760acd511268d87a73ce03fe42d51540ea7520a0900bb4e2178b7cded59",
    "kind": "optimized"
   },
   {
@@ -11118,8 +11118,8 @@
   },
   {
    "path": "build/strip-landmarks/todMotel-exterior.glb",
-   "bytes": 215464,
-   "sha256": "d0758af80f398d62a7a2723a8d651d4bfc54537156d79ebb6c0828f7dab4220b",
+   "bytes": 253980,
+   "sha256": "a7609ad8549f948972b4867a4a6532d708f84100d9c43ba0fe3e531019b7855c",
    "kind": "optimized"
   },
   {

@@ -1,0 +1,15 @@
+# Tod and Main Street sign refinements
+
+Seven identical-camera daylight pairs and eight actual-walk endpoint images inspected. Tod wire sphere and Main upper-left slogan board visible; white brick preserved. Murals, landscapes, exact sign artwork, dimensions and rear details remain deferred. No full-site or interior completion claim.
+
+| View | Before | After | p95 delta |
+|---|---|---|---|
+| tod-motel-front | [Before](../../../public/review/tod-main-street-refinement/before/tod-motel-front.png) | [After](../../../public/review/tod-main-street-refinement/after/tod-motel-front.png) | +0.2 ms |
+| tod-motel-court | [Before](../../../public/review/tod-main-street-refinement/before/tod-motel-court.png) | [After](../../../public/review/tod-main-street-refinement/after/tod-motel-court.png) | -0.9 ms |
+| tod-motel-aerial | [Before](../../../public/review/tod-main-street-refinement/before/tod-motel-aerial.png) | [After](../../../public/review/tod-main-street-refinement/after/tod-motel-aerial.png) | -0.1 ms |
+| tod-motel-sign | [Before](../../../public/review/tod-main-street-refinement/before/tod-motel-sign.png) | [After](../../../public/review/tod-main-street-refinement/after/tod-motel-sign.png) | +0.9 ms |
+| main-street-1511-front | [Before](../../../public/review/tod-main-street-refinement/before/main-street-1511-front.png) | [After](../../../public/review/tod-main-street-refinement/after/main-street-1511-front.png) | -0.1 ms |
+| main-street-1511-side | [Before](../../../public/review/tod-main-street-refinement/before/main-street-1511-side.png) | [After](../../../public/review/tod-main-street-refinement/after/main-street-1511-side.png) | +0.3 ms |
+| main-street-1511-aerial | [Before](../../../public/review/tod-main-street-refinement/before/main-street-1511-aerial.png) | [After](../../../public/review/tod-main-street-refinement/after/main-street-1511-aerial.png) | +0.0 ms |
+
+960×540, DPR1, ultra, neutral daylight; 900 settle frames plus streaming quiet and 60 frames, then 180 timed frames. No speedup claim.

@@ -5,7 +5,24 @@
     128
   ],
   "claims": "janiverse confirmed previousturn",
-  "stage": "Baseline complete: seven camera views and four actual-walk endpoints inspected; 12 CPU and 12 actual legs passed. Tod wire sphere/pole and Main upper-left framed slogan board generated, exported, level+WebP optimized and locally installed. Shared bake running session29681 (/tmp/tod-main-bake.log). Not yet verified or staged.",
-  "pending": "Finish shared bake; adapt /tmp/north-small-preserve-lod498.mjs own-key regex to todMotel|mainStreet1511 and record directory tod-main-street-refinement. Restore only unowned GoldCoast/Wyndham LOD churn. Run matching three Tod + dedicated sign + three Main after probes and actual walk; inspect all, compare performance. CPU support/walk and every step7 check, asset stage, records, LFS audit and PR499 guarded selfmerge/issue closure remain. Main sign u=.90 assumes left endpoint orientation; verify visually and correct if needed.",
-  "pr": 499
+  "stage": "Installed refinement verified: seven matched daylight pairs and eight walk endpoints inspected; all local checks passed, including nine-stop smoke.",
+  "pending": "Commit/push only own commits; exact-head guarded merge PR499 into next, explicitly close127128; select next task.",
+  "pr": 499,
+  "checks": {
+    "typecheck": "passed",
+    "records": "289 valid, refinement-deferred",
+    "support": "434 Tod + 340 Main = 774 passed",
+    "cpuWalk": "12 after legs passed",
+    "optimization": "Both level and WebP passes; 2 changed GLBs checked, 0 unoptimized",
+    "bake": "One shared bake; freshness passed; only cell-2_-6.bin differs from base; unowned GoldCoast/Wyndham restored",
+    "assetPack": "1930 present, 0 missing, 0 unoptimized; 4 copied, 1926 unchanged",
+    "pending": [],
+    "actualWalk": "12 before + 12 after legs passed; all eight endpoint images inspected",
+    "views": "Seven front-first matching daylight pairs inspected",
+    "performance": "Tod p95 deltas +0.2/-0.9/-0.1ms, sign +0.9ms; Main -0.1/+0.3/0ms; no speedup claim",
+    "public": "0 failures, 7 existing warnings",
+    "smoke": "9 stops placed, 0 failed requests, 0 page errors, 0 console errors",
+    "newLfsBytes": 8635068,
+    "diff": "passed"
+  }
 }
