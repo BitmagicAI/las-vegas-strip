@@ -7588,16 +7588,17 @@
    "id": "ext-tod-motel",
    "title": "Refine the exterior of Tod Motor Motel",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
     "Rear-wing height estimated3.65m; front10.1m estimated",
     "Rear elevation rhythm inferred; no operating/interior claim",
     "Weathering and sign artwork need refinement",
     "Palm trees, facade weathering and finer sign shape not yet reproduced",
-    "Paving partly meets retained mapped sidewalk; no whole-lot surface survey"
+    "Paving partly meets retained mapped sidewalk; no whole-lot surface survey",
+    "Wire sphere added from January 2026 reference; original panel silhouette, lettering style and small lower boards still approximate or missing."
    ],
    "record": "tools/resort-blocks/tod-motel.json",
    "buildings": [
@@ -7621,8 +7622,9 @@
      "tools/city-exteriors/test-tod-motel.mjs",
      "tools/city-exteriors/replace-tod-motel.py",
      "tools/city-exteriors/walk-tod-motel.mjs",
+     "tools/strip-landmarks/build_tod_main_refinement.py",
      "tools/strip-landmarks/tod_motel.py",
-     "tools/strip-landmarks/build_tod_motel.py"
+     "tools/city-exteriors/install-tod-main-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -7641,12 +7643,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Murals not reproduced; outstanding major visual detail",
     "Estimated4.65mheight",
     "No interior modeled",
-    "Rear utility details partly inferred"
+    "Rear utility details partly inferred",
+    "Small upper-left slogan board added; exact lettering style, stone relief and side canopy end detail remain approximate."
    ],
    "record": "tools/resort-blocks/main-street-1511.json",
    "buildings": [
@@ -7670,8 +7673,9 @@
      "tools/city-exteriors/test-main-street-1511.mjs",
      "tools/city-exteriors/replace-main-street-1511.py",
      "tools/city-exteriors/walk-main-street-1511.mjs",
+     "tools/strip-landmarks/build_tod_main_refinement.py",
      "tools/strip-landmarks/main_street_1511.py",
-     "tools/strip-landmarks/build_main_street_1511.py"
+     "tools/city-exteriors/install-tod-main-refinement.mjs"
     ]
    },
    "acceptance": [

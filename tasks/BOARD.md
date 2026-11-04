@@ -123,8 +123,8 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-pristine-hangar` | M | P2 | 4 | Refine the exterior of Pristine Flight hangar |
 | `ext-boston-pizza` | M | P2 | 4 | Refine the exterior of Boston Pizza Vegas |
 | `ext-travelers-frontage` | M | P2 | 4 | Refine the exterior of Travelers frontage |
-| `ext-tod-motel` | M | P2 | 5 | Refine the exterior of Tod Motor Motel |
-| `ext-main-street-1511` | M | P2 | 4 | Refine the exterior of 1511 South Main Street |
+| `ext-tod-motel` | L | P2 | 6 | Refine the exterior of Tod Motor Motel |
+| `ext-main-street-1511` | M | P2 | 5 | Refine the exterior of 1511 South Main Street |
 | `ext-carnitas-1601` | M | P2 | 5 | Refine the exterior of Carnitas y Tortas Ahogadas Guadalajara 2 |
 | `ext-bajamar` | M | P2 | 5 | Refine the exterior of Bajamar 1615 |
 | `ext-luv-it` | L | P2 | 6 | Refine the exterior of Luv-It Frozen Custard |

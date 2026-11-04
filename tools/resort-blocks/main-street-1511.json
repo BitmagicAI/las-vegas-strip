@@ -21,18 +21,21 @@
     "Murals not reproduced; outstanding major visual detail",
     "Estimated4.65mheight",
     "No interior modeled",
-    "Rear utility details partly inferred"
+    "Rear utility details partly inferred",
+    "Small upper-left slogan board added; exact lettering style, stone relief and side canopy end detail remain approximate."
   ],
   "evidence": {
     "views": "build/city-exteriors/main-street-1511-final",
     "support": "build/city-exteriors/main-street-1511-collision.json",
     "walk": "build/city-exteriors/main-street-1511-walk.json",
     "ownership": "build/city-exteriors/main-street-1511-ownership-audit.json",
-    "visualReview": "Three installed views inspected. Incorrect red-brick PBR replaced by original packed white-painted brick colour/normal maps; side entrance moved toward east end. Final front and side rechecked. Murals remain a major omitted visual component, not complete.340support+6walking legs passed;10oldmappedtriangles removed. Static960x540p95~17.3ms, notroutebenchmark."
+    "visualReview": "Three installed views inspected. Incorrect red-brick PBR replaced by original packed white-painted brick colour/normal maps; side entrance moved toward east end. Final front and side rechecked. Murals remain a major omitted visual component, not complete.340support+6walking legs passed;10oldmappedtriangles removed. Static960x540p95~17.3ms, notroutebenchmark.",
+    "refinementPass": "docs/project-records/tod-main-street-refinement",
+    "refinementStatus": "Seven group matching daylight pairs and eight actual-walk endpoints inspected; 774 support samples and 12 CPU + 12 installed after-walk legs passed. Signs refined; outstanding fidelity and interior gaps retained."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/mainStreet1511-exterior.glb": "a988de4981fc29dea94f3b342c2a20d56c89b625e798314f9d01c048e7df4f5d",
+      "build/strip-landmarks/mainStreet1511-exterior.glb": "1c002f2c02d53800d4d629e14614eb263e34828507a980441b8bf6c318606bde",
       "build/strip-landmarks/mainStreet1511-exterior-collision.json": "8144736f0caddad568b4e454a151dd2868300c80057c50c2746f83bd793502e7"
     }
   }
