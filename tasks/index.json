@@ -8647,7 +8647,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Heights/side openings estimated; rear elevations partly inferred",
-    "Parking apron does not yet reach the curved Weldon sidewalk exactly; refine boundary from survey",
+    "Apron now follows retained county sidewalk curve; exact paving joints, planting pockets and field-survey accuracy remain unverified.",
     "Conifers, lawn foliage, carport and fine fence texture remain incomplete",
     "Roof junctions and weathering need closer neutral-daylight review; no interior access claim"
    ],
@@ -8681,10 +8681,11 @@
     ],
     "builders": [
      "tools/city-exteriors/test-santa-paula-courtyard.mjs",
+     "tools/city-exteriors/install-santa-paula-st-louis-refinement.mjs",
      "tools/city-exteriors/replace-santa-paula-courtyard.py",
+     "tools/city-exteriors/test-santa-paula-apron-refinement.mjs",
      "tools/city-exteriors/walk-santa-paula-courtyard.mjs",
-     "tools/strip-landmarks/santa_paula_courtyard.py",
-     "tools/strip-landmarks/build_santa_paula_courtyard.py"
+     "tools/strip-landmarks/build_santa_paula_st_louis_refinement.py"
     ]
    },
    "acceptance": [
@@ -8708,7 +8709,7 @@
     "Roof and trim dimensions estimated; southern roof subdivision and seams need closer neutral-daylight review",
     "Street trees, railings and frontage landscaping remain incomplete",
     "Current tenant lettering and east/service openings not fully verified; no interior access claim",
-    "Facades retain repeated bay simplifications; match ornamental stepped parapets and bay positions more closely in refinement"
+    "Southern west parapet now has observed stepped center; other facades retain repeated bay simplifications and estimated ornamental dimensions."
    ],
    "record": "tools/resort-blocks/st-louis-square-frontage.json",
    "buildings": [
@@ -8742,9 +8743,9 @@
      "tools/city-exteriors/test-st-louis-square-frontage.mjs",
      "tools/city-exteriors/replace-st-louis-square-frontage.py",
      "tools/city-exteriors/walk-st-louis-square-frontage.mjs",
+     "tools/strip-landmarks/build_santa_paula_st_louis_refinement.py",
      "tools/strip-landmarks/st_louis_square_frontage.py",
-     "tools/strip-landmarks/build_st_louis_square_frontage.py",
-     "tools/strip-landmarks/st_louis_office_515.py"
+     "tools/city-exteriors/install-santa-paula-st-louis-refinement.mjs"
     ]
    },
    "acceptance": [

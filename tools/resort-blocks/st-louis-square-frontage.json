@@ -36,18 +36,21 @@
     "Roof and trim dimensions estimated; southern roof subdivision and seams need closer neutral-daylight review",
     "Street trees, railings and frontage landscaping remain incomplete",
     "Current tenant lettering and east/service openings not fully verified; no interior access claim",
-    "Facades retain repeated bay simplifications; match ornamental stepped parapets and bay positions more closely in refinement"
+    "Southern west parapet now has observed stepped center; other facades retain repeated bay simplifications and estimated ornamental dimensions."
   ],
   "evidence": {
     "views": "build/city-exteriors/st-louis-square-frontage-final",
     "support": "build/city-exteriors/st-louis-square-frontage-collision.json",
     "walk": "build/city-exteriors/st-louis-square-frontage-walk.json",
     "ownership": "build/city-exteriors/st-louis-square-frontage-ownership-audit.json",
-    "visualReview": "All four first installed views inspected; southern wider arched windows corrected and west/south views rechecked.30806tri16batches.68MiB.187support6walkinglegsPASS,72oldtriangles removed. Static960x540 p95~18ms not driving benchmark. Not photorealistic completion."
+    "visualReview": "All four first installed views inspected; southern wider arched windows corrected and west/south views rechecked.30806tri16batches.68MiB.187support6walkinglegsPASS,72oldtriangles removed. Static960x540 p95~18ms not driving benchmark. Not photorealistic completion.",
+    "refinement": "docs/project-records/santa-paula-st-louis-refinement",
+    "matchedViews": "public/review/santa-paula-st-louis-refinement",
+    "refinementVisualReview": "Eight front-first matched daylight captures inspected; expanded curved apron and distinct stepped southern parapet visible. No photorealism or whole-block completion claim."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/stLouisSquareFrontage-exterior.glb": "80a2002f88e17e5ea771b5c04e7da6b29a665cff59dbea1b4d75552711d113e1",
+      "build/strip-landmarks/stLouisSquareFrontage-exterior.glb": "5acfa32c09a2cb1b545cb46d1fae742ab66ba6a53a58300c6c2d80af1577e114",
       "build/strip-landmarks/stLouisSquareFrontage-exterior-collision.json": "a562399320f19cf44d540e96df43abf6e8161ead4c33d405f8070f2263907c06"
     }
   }
