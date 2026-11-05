@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232194823,
+ "bytes": 1232195932,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,14 +444,14 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 697076,
-   "sha256": "7b6c6c0c70494ef1d4a9411e69d493daccc2efdd5b906c79cf3dccc99628ee28",
+   "bytes": 697172,
+   "sha256": "fa73b5279f4e1849449b23bc8a7b1caab137650a47c6e37ccb93cd30ee367b71",
    "kind": "original"
   },
   {
    "path": "build/baked/cells/cell-2_-6.bin",
-   "bytes": 257923,
-   "sha256": "9cef0db614a1986fc424ceb5570eaed3ed0f6c2fbd42c530f8fa71b243bd764d",
+   "bytes": 257924,
+   "sha256": "9b43f90143b9fea01312e58589807bc80566accd8784ad2570b374b760573d3f",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "15d3645c5ad0d2d22d89d6b636ea62d42ec90cc54656c02f3c8a6660e9d6a50b",
+   "sha256": "c1dc4bde902f3516844d9ce96dc3536b4f64ea639e8aa1b405cec605381f1563",
    "kind": "runtime cell manifest"
   },
   {
@@ -7686,8 +7686,8 @@
   },
   {
    "path": "build/strip-landmarks/casinoCenter1520-exterior.glb",
-   "bytes": 12733752,
-   "sha256": "28e487b6a6ab560d34074b3fe4d7289845108108beb5da8fbfcea6213521fa7f",
+   "bytes": 12733804,
+   "sha256": "708e172a8086e116bf3ef6bb9b390e7ee31c8a963fff458d9d83d40f339e01bf",
    "kind": "optimized"
   },
   {
@@ -10422,8 +10422,8 @@
   },
   {
    "path": "build/strip-landmarks/rexfordEllenCourtyard-exterior.glb",
-   "bytes": 665104,
-   "sha256": "2815c8220fe2ee3024a00fca76ccb3a3eb5772622b36d31af892f3c220026ad5",
+   "bytes": 666064,
+   "sha256": "c57ae35fc06179013d0e1835824266015612a16ebdb57fa66a302caabe2d7261",
    "kind": "optimized"
   },
   {

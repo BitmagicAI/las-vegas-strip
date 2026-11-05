@@ -9522,16 +9522,17 @@
    "id": "ext-rexford-ellen-courtyard",
    "title": "Refine the exterior of Rexford and Ellen courtyard apartments",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
     "No interiors or verified property name",
     "Trees, materials and exact courtyard circulation need further reference",
     "Street view partly occluded by neighboring house",
     "Sparse tree LOD and empty planting beds remain approximate",
-    "Neutral daylight comparison and full driving benchmark not yet performed"
+    "Neutral daylight baseline captured; matched after comparison and full driving benchmark not yet complete",
+    "Pool surround reddish coating and dense mature courtyard planting visible in satellite remain unmodeled in this facade-pier pass; exact layout and species need corroboration."
    ],
    "record": "tools/resort-blocks/rexford-ellen-courtyard.json",
    "buildings": [
@@ -9562,7 +9563,7 @@
      "tools/city-exteriors/stairs-rexford-ellen-courtyard-0.mjs",
      "tools/city-exteriors/stairs-rexford-ellen-courtyard-1.mjs",
      "tools/city-exteriors/walk-rexford-ellen-courtyard.mjs",
-     "tools/strip-landmarks/export_rexford_ellen_courtyard.py"
+     "tools/strip-landmarks/build_rexford_casino_refinement.py"
     ]
    },
    "acceptance": [
@@ -9581,11 +9582,12 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Concealed courtyard/gallery/stair arrangement inferred; no playable room interiors",
     "Palm leaves remain stylized; exact materials/sign proportions approximate",
-    "No neutral daylight comparison or full driving benchmark"
+    "Neutral daylight baseline captured; matched after comparison and full driving benchmark pending",
+    "Operator gallery reveals dense central planting, agaves, seating and courtyard arrangement differing from the inferred model; full layout remodelling needs matched current evidence. This pass only corrects gallery/rail material."
    ],
    "record": "tools/resort-blocks/casino-center-1520.json",
    "buildings": [
@@ -9611,7 +9613,7 @@
      "tools/city-exteriors/replace-casino-center-1520.py",
      "tools/city-exteriors/stairs-casino-center-1520.mjs",
      "tools/city-exteriors/walk-casino-center-1520.mjs",
-     "tools/strip-landmarks/export_casino_center_1520.py"
+     "tools/strip-landmarks/build_rexford_casino_refinement.py"
     ]
    },
    "acceptance": [
