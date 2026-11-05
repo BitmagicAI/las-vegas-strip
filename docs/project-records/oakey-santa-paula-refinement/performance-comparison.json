@@ -1,0 +1,63 @@
+{
+  "viewport": "960x540",
+  "dpr": 1,
+  "quality": "ultra",
+  "samples": 180,
+  "rows": [
+    {
+      "building": "oakey-offices",
+      "view": "front",
+      "beforeP50": 17.100000143051147,
+      "afterP50": 27,
+      "beforeP95": 18.5,
+      "afterP95": 42.09999990463257,
+      "p95PercentChange": 127.56756705206796
+    },
+    {
+      "building": "oakey-offices",
+      "view": "east",
+      "beforeP50": 16.5,
+      "afterP50": 16.800000190734863,
+      "beforeP95": 18.100000143051147,
+      "afterP95": 22.299999952316284,
+      "p95PercentChange": 23.2044186523257
+    },
+    {
+      "building": "oakey-offices",
+      "view": "aerial",
+      "beforeP50": 16.90000009536743,
+      "afterP50": 21.799999952316284,
+      "beforeP95": 29,
+      "afterP95": 37,
+      "p95PercentChange": 27.586206896551737
+    },
+    {
+      "building": "santa-paula-office",
+      "view": "front",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.5,
+      "beforeP95": 18.100000143051147,
+      "afterP95": 18.09999990463257,
+      "p95PercentChange": -1.317229703090561e-06
+    },
+    {
+      "building": "santa-paula-office",
+      "view": "east",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.799999952316284,
+      "beforeP95": 17.799999952316284,
+      "afterP95": 24.100000143051147,
+      "p95PercentChange": 35.39325959332407
+    },
+    {
+      "building": "santa-paula-office",
+      "view": "aerial",
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18.100000143051147,
+      "afterP95": 17.700000047683716,
+      "p95PercentChange": -2.209945260807067
+    }
+  ],
+  "limitations": "Warm frame intervals only; no cold stall/residency/CPU-GPU spans measured. No speedup claim."
+}

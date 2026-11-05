@@ -9,7 +9,8 @@ def fan_palm(B,x,z,h,r=1.5):
  B.detail=0
  for j in range(64):
   a=j*2.399963;co,si=math.cos(a),math.sin(a);tier=(j*.41421356237)%1
-  tilt=math.radians(78-158*tier);reach=r*.7*math.cos(tilt);cy=h+r*.7*math.sin(tilt);center=(co*reach,cy,si*reach)
+  # Fold each fan across its width; flat horizontal fans created an empty waist.
+  tilt=math.radians(72-140*tier);reach=r*.58*math.cos(tilt);cy=h+r*.48*math.sin(tilt)+.12*r*math.sin(j*1.73);center=(co*reach,cy,si*reach)
   F.path('spo-palm-stem',[(0,h,0),(co*reach*.55,h+.5,si*reach*.55),center],.023,5)
   # Pleated fan leaves with pointed radial lobes, not broad round canopy blobs.
   for k in range(14):
@@ -17,9 +18,10 @@ def fan_palm(B,x,z,h,r=1.5):
    points=[]
    for q,t in enumerate(angles):
     length=r*(.86 if q!=1 else 1.0);rad=math.cos(t)*length;tang=math.sin(t)*length
-    points.append((center[0]+co*rad*math.cos(tilt)-si*tang,cy+rad*math.sin(tilt)-(.06 if q==1 else 0),center[2]+si*rad*math.cos(tilt)+co*tang))
+    points.append((center[0]+co*rad*math.cos(tilt)-si*tang,cy+rad*math.sin(tilt)-r*.42*abs(math.sin(t))-(.09*r if q==1 else 0),center[2]+si*rad*math.cos(tilt)+co*tang))
    mat='spo-palm-leaf' if (j+k)%3 else 'spo-palm-light'
-   B.face(mat,[F.p(*center),F.p(*points[0]),F.p(*points[1])]);B.face(mat,[F.p(*center),F.p(*points[1]),F.p(*points[2])])
+   for a0,b0 in [(points[0],points[1]),(points[1],points[2])]:
+    face=[F.p(*center),F.p(*a0),F.p(*b0)];B.face(mat,face);B.face(mat,list(reversed(face)))
  # Dried retained frond skirt under mature crowns.
  for j in range(24):
   a=j*math.tau/24;co,si=math.cos(a),math.sin(a)
@@ -34,10 +36,7 @@ def window(G,u):
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/office';B.detail=0;W=Frame(B,0,0,y=0);p=footprint('way/1236725797')
  B.shell(p,.15,2.8,'spo-siding-paint',roof=False)
- hip(B,p,2.83,1.2)
- for g in B.groups.values():
-  if g['material']=='oo-roof-paint':g['material']='spo-roof-paint'
-  elif g['material']=='oo-fascia-paint':g['material']='spo-frame-paint'
+ hip(B,p,2.83,1.2,'spo-roof-paint','spo-frame-paint')
  for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
   G,L,nx,nz=facade_frame(B,a,b,p,.03)
   G.box('spo-stone-base',(L/2,.45,-.06),(L,.6,.12))

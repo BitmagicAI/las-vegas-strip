@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232096594,
+ "bytes": 1232145086,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 696263,
-   "sha256": "52c818c94a33d67a48316cb229ca339a61ad15eea75b3d3c8ee1bf7660e0255c",
+   "bytes": 696739,
+   "sha256": "212ec20664fd3ed474247542b7c911fca21d50916a6b5d53735de44ad5abc234",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "e981b62ab29baaa758fe7f9fc739a637121ca8459356125e90d9427aedd77019",
+   "sha256": "fb8602409843ca24af31fc4edb089059fc449f0b27eb49d998da424759bb563c",
    "kind": "runtime cell manifest"
   },
   {
@@ -9918,8 +9918,8 @@
   },
   {
    "path": "build/strip-landmarks/oakeyOffices-exterior.glb",
-   "bytes": 628108,
-   "sha256": "0c1e490573af01ede9ea8ad2689aac6f6a5d63d33a6c3712be825a3fa2ffabc5",
+   "bytes": 677668,
+   "sha256": "63bfc93f70d02389cb4ab85f25aa91f8eb286ab01b379ad95edf964e5c7d02ee",
    "kind": "optimized"
   },
   {
@@ -10626,8 +10626,8 @@
   },
   {
    "path": "build/strip-landmarks/santaPaulaOffice-exterior.glb",
-   "bytes": 713432,
-   "sha256": "a5a950cb7c9776ed23e9753ce49e0a71c304a7d422a16644ef031289a6ddbb1a",
+   "bytes": 711888,
+   "sha256": "17131bb969a7f96792015784457ece432fa1eb29c56b2bd05c169cfe59b1c147",
    "kind": "optimized"
   },
   {

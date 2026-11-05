@@ -21,10 +21,11 @@
     }
   ],
   "remaining": [
-    "Exact rear fenestration, weathering and occupancy unverified; heights estimated",
-    "Fan palm crown silhouettes still visibly pinched at mid-height; replace/refine before final quality approval",
-    "Irregular surrounding planting not fully matched; no interior access claim",
-    "Neutral daylight material and perimeter driving review outstanding"
+    "Rear fenestration, weathering, occupancy and heights remain unverified because public imagery lacks full coverage and measurements.",
+    "Open crown waist improved with folded overlapping fans; radial lobes remain stylized and exact crown dimensions unmeasured.",
+    "Willow-like surrounding planting remains unmatched and street-side palm remains wrong fan species; supplied broadleaf asset is unsuitable as reference fan substitute.",
+    "No interior access claim: public interior reference/layout unavailable.",
+    "Neutral daylight material review completed; perimeter vehicle driving and cold transition performance remain unmeasured in this scoped walking pass."
   ],
   "plannedComponents": [
     "Mapped low office shell and shallow gray roof",
@@ -40,11 +41,14 @@
     "views": "build/city-exteriors/santa-paula-office-final",
     "support": "build/city-exteriors/santa-paula-office-collision.json",
     "walk": "build/city-exteriors/santa-paula-office-walk.json",
-    "visualReview": "Third installed south/east/aerial images inspected. Office siding, roof, windows, boundary and ground installed; palm mid-crown gap remains. 23328 triangles,19 batches,.68MiB.504 support samples and6 walk legs pass. Static960x540 p50~16.7ms p95~18.2ms not route performance."
+    "visualReview": "Third installed south/east/aerial images inspected. Office siding, roof, windows, boundary and ground installed; palm mid-crown gap remains. 23328 triangles,19 batches,.68MiB.504 support samples and6 walk legs pass. Static960x540 p50~16.7ms p95~18.2ms not route performance.",
+    "refinement505": "docs/project-records/oakey-santa-paula-refinement",
+    "visualReview505": "Six matching neutral daylight views inspected: distinct Oakey roof hues corrected after material remapping defect; Santa palm open waist filled with folded overlapping fronds, residual stylization retained. Twelve actual movement legs pass; nine-stop smoke clean. Controlled extended performance comparison shows no sustained >10% regression; no whole-block completion.",
+    "performance505": "docs/project-records/oakey-santa-paula-refinement/performance-ab/windows-comparison.json"
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/santaPaulaOffice-exterior.glb": "6c333341f29c879ea0445567e74c8dc2bdd73ecc5225af0e1784b3f423ce4423",
+      "build/strip-landmarks/santaPaulaOffice-exterior.glb": "afa0337cdf3ae32e84c1149e1d362974e54d1af3a8b2de526dce0050a706caec",
       "build/strip-landmarks/santaPaulaOffice-exterior-collision.json": "6bf0f201ac6534a408c2078b70440aec01e0eafc1297e0752d67172c0eabde08"
     }
   }

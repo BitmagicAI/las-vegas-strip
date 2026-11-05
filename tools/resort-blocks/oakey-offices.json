@@ -23,11 +23,11 @@
     }
   ],
   "remaining": [
-    "Heights/eave dimensions estimated; rear facades partly inferred",
-    "Signs and banners approximate; shrubs not yet matched",
-    "No interior access claim",
-    "Exact wall signs, roof weathering and boundary layout remain approximate",
-    "Roof hip rectangles approximate slight mapped skew/notches; materials require neutral daylight review"
+    "Heights/eave dimensions and rear facades remain inferred because dated street views do not provide measured or complete rear coverage.",
+    "Signs/banners and shrubs remain approximate: business address and visible doorway differ; official architectural photographs unavailable.",
+    "Interior layouts/access remain unverified; no new interior created.",
+    "Exact signs, roof weathering and boundary detail remain approximate because references lack sufficient close coverage.",
+    "Hip rectangles retain slight mapped skew/notch approximation; neutral daylight material review completed, but no surveyed roof fit claimed."
   ],
   "researchNext": {
     "id": "way/1236725797",
@@ -40,11 +40,14 @@
     "support": "build/city-exteriors/oakey-offices-collision.json",
     "walk": "build/city-exteriors/oakey-offices-walk.json",
     "ownership": "build/city-exteriors/oakey-offices-ownership-audit.json",
-    "visualReview": "Installed north/east/aerial inspected; north repeated after feather-banner silhouette and readable vertical lettering correction. 9296 authored triangles,23 batches,0.60 MiB optimized.396 support samples and6 walking legs pass.36 old visual/collision triangles removed. Typecheck passed. Static960x540 p50~16.8ms/p95~18.6ms is not driving-route performance evidence."
+    "visualReview": "Installed north/east/aerial inspected; north repeated after feather-banner silhouette and readable vertical lettering correction. 9296 authored triangles,23 batches,0.60 MiB optimized.396 support samples and6 walking legs pass.36 old visual/collision triangles removed. Typecheck passed. Static960x540 p50~16.8ms/p95~18.6ms is not driving-route performance evidence.",
+    "refinement505": "docs/project-records/oakey-santa-paula-refinement",
+    "visualReview505": "Six matching neutral daylight views inspected: distinct Oakey roof hues corrected after material remapping defect; Santa palm open waist filled with folded overlapping fronds, residual stylization retained. Twelve actual movement legs pass; nine-stop smoke clean. Controlled extended performance comparison shows no sustained >10% regression; no whole-block completion.",
+    "performance505": "docs/project-records/oakey-santa-paula-refinement/performance-ab/windows-comparison.json"
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/oakeyOffices-exterior.glb": "3da370af1750a2d8ff859aae1a30208f9c75cbc8d3b863ab07f7adfe7b9e930d",
+      "build/strip-landmarks/oakeyOffices-exterior.glb": "7050ab27528185abafba5ea478f785a1571281dfd1e4bf36f36e398b45dda386",
       "build/strip-landmarks/oakeyOffices-exterior-collision.json": "ebfb16671369046de58a92eda516326f409882e4bdb20ca0f38e868ca0240df6"
     }
   }

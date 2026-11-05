@@ -141,7 +141,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-white-cross-annex` | M | P2 | 4 | Refine the exterior of WhiteCross westernretailwing |
 | `ext-oakey-service-compound` | L | P2 | 6 | Refine the exterior of Oakey Service Compound |
 | `ext-oakey-offices` | M | P2 | 5 | Refine the exterior of Oakey Offices |
-| `ext-santa-paula-office` | M | P2 | 4 | Refine the exterior of Santa Paula Office |
+| `ext-santa-paula-office` | M | P2 | 5 | Refine the exterior of Santa Paula Office |
 | `ext-courtyard-525` | L | P2 | 8 | Refine the exterior of Courtyard 525 Apartments |
 | `ext-santa-paula-courtyard` | M | P2 | 4 | Refine the exterior of Santa Paula courtyard buildings |
 | `ext-st-louis-square-frontage` | M | P2 | 4 | Refine the exterior of St Louis Square Strip frontage |

@@ -1,0 +1,38 @@
+[
+  {
+    "building": "oakeyOffices",
+    "phase": "baseline",
+    "bytes": 628108,
+    "primitives": 42,
+    "triangles": 34828,
+    "materials": 25,
+    "textures": 2
+  },
+  {
+    "building": "oakeyOffices",
+    "phase": "current",
+    "bytes": 677668,
+    "primitives": 43,
+    "triangles": 34828,
+    "materials": 26,
+    "textures": 3
+  },
+  {
+    "building": "santaPaulaOffice",
+    "phase": "baseline",
+    "bytes": 713432,
+    "primitives": 19,
+    "triangles": 23328,
+    "materials": 18,
+    "textures": 2
+  },
+  {
+    "building": "santaPaulaOffice",
+    "phase": "current",
+    "bytes": 711888,
+    "primitives": 18,
+    "triangles": 23328,
+    "materials": 18,
+    "textures": 2
+  }
+]
