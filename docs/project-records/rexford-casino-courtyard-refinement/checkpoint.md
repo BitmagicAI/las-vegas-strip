@@ -11,3 +11,5 @@ Six-view serial baseline GPU43488 running, log /tmp/rc-baseline.log; outputs bui
 Finalbothlevel+WebP optimizations succeeded, customfoliage preserved; installedpair then groupedbake started. CPUafter24ground+18stairs pass andsaved. GPU71482 nowbaking.
 
 13:55: groupedbake/stage complete;90/92cells identical,only2_-5/2_-6 changed. Bothsourcecollisions unchanged;27Rexford+15Casino streettree node metadata/transforms identical tobase. Opt2/2,bakefreshness,pack1930,review/public0fail11warnings pass. Three Rexfordafterviews inspected/saved: screenpiers visible, courtyard unchanged; p95 19.1/18.9/19.2→18.7/18.3/18.2ms. Casinoafterviews still running GPU66656 (log /tmp/rc-after-views.log). Next inspect/saveCasino3views then42actualafterlegs+9smoke. No otherGPU.
+
+All6afterviews inspected/saved; maximum p95 increase3.30% (Casino roof18.2→18.8ms); otherfiveviews belowbaseline. Casino darkrails/bluegraygallery confirmed, trees retained. Actual42legafter then9stopsmoke runningserial GPU73321, logs /tmp/rc-actual-after.log,/tmp/rc-smoke.log. Next assert42passed and inspect10PNGs,assert9placed/zeroerrors, saveproofs; finalboard/LFS/checks/PR511mergeclose163164/picker.

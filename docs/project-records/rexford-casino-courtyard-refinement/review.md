@@ -10,7 +10,7 @@ Both property-specific exporters preserve the existing street-tree LODs; 27 Rexf
 
 Typecheck and3regressiontests pass. Optimization2/2, bakefreshness, assetpack1930present/0missing/0unoptimized pass. Stage5copied1925unchanged0removed. Resortrecords pass; publiccheck0failures11existingwarnings.
 
-New reproducible4116roofsupport samples pass before/after,24CPUground and18CPUstair/gallery legs pass. The old ignored736/412sample sets were unavailable; the new count is not a reproduction claim.42actual keyboard walking/stair legs passed before;10endpoint images inspected. Actualafter,smoke and six matched afterviews pending.
+New reproducible4116roofsupport samples pass before/after,24CPUground and18CPUstair/gallery legs pass. The old ignored736/412sample sets were unavailable; the new count is not a reproduction claim.42actual keyboard walking/stair legs passed before;10endpoint images inspected. All six matched afterviews inspected: piers and scoped gallery coating/rails visible; existing trees preserved. Actualafter andsmoke pending.
 
 ## Decisions for the owner
 
@@ -30,22 +30,36 @@ CDN/published-game checks and owner review of inferred dimensions/layout. No pub
 
 ![Before](../../../public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-front.png)
 
+![After](../../../public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-front.png)
+
 ### rexford-ellen-courtyard roof
 
 ![Before](../../../public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-roof.png)
+
+![After](../../../public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-roof.png)
 
 ### rexford-ellen-courtyard court
 
 ![Before](../../../public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-court.png)
 
+![After](../../../public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-court.png)
+
 ### casino-center-1520 front
 
 ![Before](../../../public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-front.png)
+
+![After](../../../public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-front.png)
 
 ### casino-center-1520 roof
 
 ![Before](../../../public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-roof.png)
 
+![After](../../../public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-roof.png)
+
 ### casino-center-1520 court
 
 ![Before](../../../public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-court.png)
+
+![After](../../../public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-court.png)
+
+Matching 960x540DPR1ultra,900warm+streamquiet60settle,180samples/view. Maximum p95 increase3.30% (Casino roof18.2→18.8ms); other five views below baseline; see performance.json. Static samples do not establish sustained60fps, cold-streaming or full driving performance.
