@@ -55,3 +55,5 @@ CDN/published-game checks and owner review of inferred dimensions. No publish/up
 ![Before](../../../public/review/wyoming-perception-refinement/before/perception-museum-plaza.png)
 
 ![After](../../../public/review/wyoming-perception-refinement/after/perception-museum-plaza.png)
+
+New Git LFS:9,892,278bytes,25 unique objects absent from base across all own commits.
