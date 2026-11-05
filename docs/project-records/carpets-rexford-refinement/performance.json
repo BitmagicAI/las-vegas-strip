@@ -1,0 +1,54 @@
+{
+  "status": "Initial matched samples; aerial regression requires serial original-asset A/B before merge",
+  "views": [
+    {
+      "building": "carpets-galore",
+      "name": "front",
+      "beforeP95": 18.299999952316284,
+      "afterP95": 17.800000190734863,
+      "changePercent": -2.732239141444015
+    },
+    {
+      "building": "carpets-galore",
+      "name": "carpets-north",
+      "beforeP95": 25.100000143051147,
+      "afterP95": 19.799999952316284,
+      "changePercent": -21.11553848816272
+    },
+    {
+      "building": "carpets-galore",
+      "name": "carpets-aerial",
+      "beforeP95": 18,
+      "afterP95": 26.699999809265137,
+      "changePercent": 48.333332273695206
+    },
+    {
+      "building": "rexford-courtyard-1701",
+      "name": "front",
+      "beforeP95": 17.5,
+      "afterP95": 17.899999856948853,
+      "changePercent": 2.285713468279149
+    },
+    {
+      "building": "rexford-courtyard-1701",
+      "name": "rexford-court",
+      "beforeP95": 18.399999856948853,
+      "afterP95": 19,
+      "changePercent": 3.260870368020985
+    },
+    {
+      "building": "rexford-courtyard-1701",
+      "name": "rexford-gallery",
+      "beforeP95": 17.90000009536743,
+      "afterP95": 18.90000009536743,
+      "changePercent": 5.586592149006764
+    },
+    {
+      "building": "rexford-courtyard-1701",
+      "name": "rexford-aerial",
+      "beforeP95": 34.19999980926514,
+      "afterP95": 19.59999990463257,
+      "changePercent": -42.69005843876431
+    }
+  ]
+}
