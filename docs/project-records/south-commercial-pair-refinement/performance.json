@@ -1,0 +1,47 @@
+{
+  "method": "960x540DPR1ultra,900warmframes,streamingquiet+60settle,180samples/view; static only",
+  "views": [
+    {
+      "building": "south-commercial-364846558",
+      "view": "front",
+      "beforeP95": 19,
+      "afterP95": 18.799999952316284,
+      "changePercent": -1.0526318299142967
+    },
+    {
+      "building": "south-commercial-364846558",
+      "view": "roof",
+      "beforeP95": 18.600000143051147,
+      "afterP95": 18.59999990463257,
+      "changePercent": -1.2818203054543176e-06
+    },
+    {
+      "building": "south-commercial-364846558",
+      "view": "north",
+      "beforeP95": 18.90000009536743,
+      "afterP95": 19,
+      "changePercent": 0.5291000218411668
+    },
+    {
+      "building": "south-commercial-annex",
+      "view": "front",
+      "beforeP95": 19.100000143051147,
+      "afterP95": 18.90000009536743,
+      "changePercent": -1.0471206606586292
+    },
+    {
+      "building": "south-commercial-annex",
+      "view": "roof",
+      "beforeP95": 19,
+      "afterP95": 18.5,
+      "changePercent": -2.631578947368418
+    },
+    {
+      "building": "south-commercial-annex",
+      "view": "east",
+      "beforeP95": 26.200000047683716,
+      "afterP95": 18.799999952316284,
+      "changePercent": -28.24427512175386
+    }
+  ]
+}

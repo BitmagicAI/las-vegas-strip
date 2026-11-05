@@ -23,7 +23,7 @@
     "Exact identity remains unverified: map panorama address is not a confirmed building address, and text search did not locate matching official property photography; no invented sign.",
     "Mature trees and xeriscape remain incomplete pending suitable species silhouettes and measured placement; existing foliage source models were reviewed but not installed in this seam/hatching pass.",
     "Rear/entry details and public interior remain deferred because connected layout and closer elevation references are not verified.",
-    "Masonry colour/roughness and roof-seam spacing remain visual estimates rather than survey-calibrated; broader lower-contrast ribs installed, pending matched aliasing review."
+    "Masonry colour/roughness and roof-seam spacing remain estimated. Broader lower-contrast ribs improve one-plane readability but opposite-plane dotted alias persists at aerial angles; a future antialiasing/material approach is needed, not a full fix."
   ],
   "triangles": 6088,
   "batches": 17,
@@ -114,14 +114,20 @@
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/southCommercial558-exterior.glb": "d5dad582dbddeb521a2ddc7f7991542be2486eded7b4a03ed720cb29914440ab",
+      "build/strip-landmarks/southCommercial558-exterior.glb": "a307cb89cbbede5762e57beb7b09e505e69982c275c8797d0883b705acc5f959",
       "build/strip-landmarks/southCommercial558-exterior-collision.json": "21fe541645405edd381d56944b079943bbcd3636708c5e1c5d2f0bc096dee8b0"
-    }
+    },
+    "revision": "97c59b2c05d7503d"
   },
   "refinementCheckpoint": {
     "record": "docs/project-records/south-commercial-pair-refinement",
     "pullRequest": 510,
-    "phase": "Optimized installed pass; after visual/performance and actual walk/smoke pending",
+    "phase": "Six matched after views reviewed; actual after walk and smoke running",
     "date": "2026-11-05"
+  },
+  "evidence": {
+    "refinement": "docs/project-records/south-commercial-pair-refinement/review.md",
+    "visual": "Six matched neutral views inspected. Diagonal annex hatching confirmed. Main roof ribs more continuous on one plane; opposite-plane dotted alias remains explicitly deferred.",
+    "checks": "2369 roof support samples,20CPUlegs,20corrected actualbaselinelegs pass; all staticstep7 pass. Actualafter andsmoke pending."
   }
 }
