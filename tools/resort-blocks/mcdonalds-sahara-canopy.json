@@ -114,7 +114,7 @@
     "record": "docs/project-records/festival-sahara-canopy-refinement/review.md",
     "research": "docs/project-records/festival-sahara-canopy-refinement/research.md",
     "changes": "Original diagonal open lattice inside existing yellow arches; estimated spacing and profile",
-    "validation": "1543 grouped support samples, 44 CPU and 44 actual keyboard legs before/after, six matched neutral daylight views, nine-stop smoke; all local step 7 checks pass. Initial Festival front timing spike pending exact-base A/B investigation.",
+    "validation": "1543 grouped support samples, 44 CPU and 44 actual keyboard legs before/after, six matched neutral daylight views, nine-stop smoke; all local step 7 checks pass. Initial and first A/B front timing spikes retained; longer-warmed reversed-order repeat stable, median p95 +4.13%. See performance.json for variability and limits.",
     "limitations": "Scoped refinement only; full-site gaps retained. Original Festival XZ-only walking audit falsely passed while falling; corrected supported-apron audit used.",
     "historicalMetrics": "Top-level triangle/batch/optimizedMiB, tests and static960x540 entries describe the earlier pass. Current validation and performance evidence live in the linked refinement record."
   },
