@@ -92,4 +92,4 @@ def exterior(B):
    if north.contains(Point(x,z)) and not allp.buffer(.7).contains(Point(x,z)):samples.append([float(x),.11,z])
  for u in np.arange(1,34,1.3):samples.append(G.p(float(u),.11,5))
  Path('build/city-exteriors/santa-paula-courtyard-samples.json').write_text(json.dumps(samples))
- return dict(key=KEY,name='Santa Paula courtyard buildings',center=[1950,0,-3817],bounds=[1909,-3841,1983,-3775],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
+ return dict(key=KEY,name='Santa Paula courtyard buildings',center=[1950,0,-3817],bounds=[1909,-3841,1983,-3772],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
