@@ -30,7 +30,9 @@
     "views": "build/city-exteriors/st-louis-office-515-final",
     "visualReview": "Installed front, rear and aerial views inspected. Brick walls, arcade, red entrance roof and central flat roof visible. Forecourt paving remains incomplete; not photorealistic completion.",
     "tests": "32 support and 6 walk legs passed; 10 old building triangles removed.",
-    "implementation": "11890 triangles,20 batches,.38MiB optimized. Static960x540 p95~18.2ms, not route benchmark."
+    "implementation": "11890 triangles,20 batches,.38MiB optimized. Static960x540 p95~18.2ms, not route benchmark.",
+    "refinement": "docs/project-records/st-louis-office-city-market-refinement/review.md",
+    "refinementPending": "Pale tower infills, dark arched surrounds and two layered white arcade cornice bands; dimensions inferred from February 2022 panorama. Installed after-view/walk review pending."
   },
   "finalBuild": {
     "files": {

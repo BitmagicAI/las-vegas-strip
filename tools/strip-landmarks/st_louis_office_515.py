@@ -49,7 +49,7 @@ def exterior(B):
   F.arch(u,-.84,.72,6.02,mat='o515-rail-paint',thick=.065,base=4.52)
   F.box('o515-rail-paint',(u,4.52,-.84),(.85,.10,.13))
  roof(B,F,8.9,13.1,-.95,2.95,y=6.32,rise=1.0)
- F.text('515',(11,4.12,-1.04),.28,'o515-dark-letter');F.text('BUILDING C',(4.7,3.92,-1.04),.3,'o515-dark-letter')
+ F.text('515',(11,4.12,-1.19),.28,'o515-dark-letter');F.text('BUILDING C',(4.7,3.92,-1.19),.3,'o515-dark-letter')
  # Entry behind the small tower, with an explicit sloped approach from the west apron.
  F.box('o515-frame-paint',(11,1.82,1.86),(1.85,2.4,.16));F.box('o515-glass',(11,1.82,1.76),(1.68,2.24,.04))
  B.upface('o515-ramp-concrete',[F.p(5,.12,-3.0),F.p(11,.6,-3.0),F.p(11,.6,-1.5),F.p(5,.12,-1.5)],True)
