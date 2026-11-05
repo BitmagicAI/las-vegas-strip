@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232254920,
+ "bytes": 1232358896,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 697172,
-   "sha256": "fa73b5279f4e1849449b23bc8a7b1caab137650a47c6e37ccb93cd30ee367b71",
+   "bytes": 698072,
+   "sha256": "e243c3eafe1c5fca9fa01005fe0a7084a263b51845b63b817e52dd93f19b2e04",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "6df26a2c47e149dd9247a8635754250ff7acb543c6556196919116de4c9fb1b8",
+   "sha256": "aed10ea397360a035a64103ae481fda07e479f30a8d3611a0ee0c137f12e20d0",
    "kind": "runtime cell manifest"
   },
   {
@@ -7506,8 +7506,8 @@
   },
   {
    "path": "build/strip-landmarks/bonitaTerrace-exterior.glb",
-   "bytes": 12961532,
-   "sha256": "4cd919883c5a48adde43122c719499f505c1ec0a1a2c69f4178001a895e57131",
+   "bytes": 13041376,
+   "sha256": "3ee96a83f391981cabae30a02d1339d1b297dfea9f8521d4af509d10b09214d1",
    "kind": "optimized"
   },
   {
@@ -10722,8 +10722,8 @@
   },
   {
    "path": "build/strip-landmarks/siegelParadise-exterior.glb",
-   "bytes": 13598088,
-   "sha256": "22777c4b342f0e0fb3e21977d317de87c23b3b92d5fa42e75f6894d11b876ef8",
+   "bytes": 13621320,
+   "sha256": "017c8cbe06177ef61628921e59952d4356ac70ac65f762c13452f5b9ccfe103b",
    "kind": "optimized"
   },
   {
