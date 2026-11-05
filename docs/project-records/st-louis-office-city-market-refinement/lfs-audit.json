@@ -1,0 +1,103 @@
+{
+  "base": "5772c9292cd3043feb8a3079b616ecda8218950d",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "d7f09173c5e0b4754b32a4429f0525867e2e220d10cf10db598348541d15a6be",
+      "bytes": 306688,
+      "path": "public/review/st-louis-office-city-market-refinement/after/city-market-liquor-front.png"
+    },
+    {
+      "oid": "3e443367fa723d9e452ca3f91e3d9762e9844b4c863c5fb5da55788ee1413962",
+      "bytes": 614829,
+      "path": "public/review/st-louis-office-city-market-refinement/after/city-market-liquor-market-aerial.png"
+    },
+    {
+      "oid": "94400018a7cf4a4475e44ff8329f4ccd44989c99ff1943a1542e0c5c02afcaac",
+      "bytes": 407401,
+      "path": "public/review/st-louis-office-city-market-refinement/after/city-market-liquor-market-rear.png"
+    },
+    {
+      "oid": "93a087d44b3a5ba213a3ed940579a5ca841c8b3a98250e38dfac66713a18244a",
+      "bytes": 306234,
+      "path": "public/review/st-louis-office-city-market-refinement/before/city-market-liquor-front.png"
+    },
+    {
+      "oid": "c7a386839d0cb8027289067faa24f19bba22773bf2c7fa1e165712d86db63fb3",
+      "bytes": 614417,
+      "path": "public/review/st-louis-office-city-market-refinement/before/city-market-liquor-market-aerial.png"
+    },
+    {
+      "oid": "2b5d6b7fb7c845743210ffc5fe095af82d0463455d36e507618566e9a93c2c8a",
+      "bytes": 407330,
+      "path": "public/review/st-louis-office-city-market-refinement/before/city-market-liquor-market-rear.png"
+    },
+    {
+      "oid": "21d3703777ea63fafbfccde388bac3958f7c9bde00067efcdf02f71f1ccc5169",
+      "bytes": 437700,
+      "path": "public/review/st-louis-office-city-market-refinement/before/st-louis-office-515-front.png"
+    },
+    {
+      "oid": "55b9a60992503d5c2ccf3703d3291ba7e95f33805bb1e7848abab4e3401b8d04",
+      "bytes": 605887,
+      "path": "public/review/st-louis-office-city-market-refinement/before/st-louis-office-515-office-aerial.png"
+    },
+    {
+      "oid": "89b071caa1cc18aac41fc466d691e64d9279c7744adf8002e94905a9a11679af",
+      "bytes": 484520,
+      "path": "public/review/st-louis-office-city-market-refinement/before/st-louis-office-515-office-rear.png"
+    },
+    {
+      "oid": "aefee6fced1277395326b166d69a04bac8f60f8cbd2ae81368c2d34fdbaec5d9",
+      "bytes": 305703,
+      "path": "public/review/st-louis-office-city-market-refinement/before/walk-frontage-0.png"
+    },
+    {
+      "oid": "911c7357918e852a2a441a60b75b8d9012bd7a5fab2e3e8563c453c33e49253a",
+      "bytes": 420439,
+      "path": "public/review/st-louis-office-city-market-refinement/before/walk-frontage-1.png"
+    },
+    {
+      "oid": "6aaa493a523d319672da291e65d6aa66eedd205ec8981c7f4a978c156782c5af",
+      "bytes": 385104,
+      "path": "public/review/st-louis-office-city-market-refinement/before/walk-return-0.png"
+    },
+    {
+      "oid": "419204d31728c2b3c27fe1f30285c04b8f4d78216a689cd28f325093c55354ab",
+      "bytes": 436344,
+      "path": "public/review/st-louis-office-city-market-refinement/before/walk-return-1.png"
+    },
+    {
+      "oid": "938f5ce6515bfd2a3411eb210bb1afd70dac9ef160f17261623edcd69dac26be",
+      "bytes": 436402,
+      "path": "public/review/st-louis-office-city-market-refinement/first-review/st-louis-office-515-front.png"
+    },
+    {
+      "oid": "8a9b686972fd94f715e05792d876b959163fb2838193e1a26552a5ad25693eee",
+      "bytes": 605772,
+      "path": "public/review/st-louis-office-city-market-refinement/first-review/st-louis-office-515-office-aerial.png"
+    },
+    {
+      "oid": "8f6d38871b1e219584bf09f56f7fd420a6e73d4f065c064b7124266821c14d1b",
+      "bytes": 696893,
+      "path": "runtime-assets/baked/cells/cell-2_-5.bin"
+    },
+    {
+      "oid": "ff5c9b2f467fc5038a11089190eaa696565027aebc75d1097979ef082af78e63",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "cd43284750686a53b5b55576912584cc72929d8156ac0c7bedf577691768336a",
+      "bytes": 310588,
+      "path": "runtime-assets/strip-landmarks/cityMarketLiquor-exterior.glb"
+    },
+    {
+      "oid": "a78c9b10b7394c5adcf4a8efd3f4a3bf0d0cd2b94f8155cbb3ff18094903d4bb",
+      "bytes": 401088,
+      "path": "runtime-assets/strip-landmarks/stLouisOffice515-exterior.glb"
+    }
+  ],
+  "count": 19,
+  "bytes": 8197140
+}

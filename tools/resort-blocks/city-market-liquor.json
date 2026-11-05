@@ -16,9 +16,9 @@
     }
   ],
   "remaining": [
-    "Branding and storefront based on January2022 imagery; current appearance uncertain",
-    "Sign typography, advertising, weathering and vending fixtures simplified/omitted",
-    "Rear service openings inferred; heights estimated; neutral daylight review pending; no interior"
+    "Current appearance remains uncertain: the inspected storefront panorama is January 2022; the November 2025 official retailer list supports historical identity only.",
+    "Sign typography, advertising, weathering and vending fixtures remain simplified or omitted: reference detail is dated and this scoped pass adds only transom framing and two non-emitting flood housings.",
+    "Rear service openings and heights remain inferred; no measured elevations or verified interior layout were available, so rear geometry and interior scope are unchanged."
   ],
   "evidence": {
     "views": "build/city-exteriors/city-market-liquor-final",
@@ -26,7 +26,7 @@
     "tests": "132support6walkPASS;10oldtri removed",
     "implementation": "1320tri20batches.29MiBoptimized",
     "refinement": "docs/project-records/st-louis-office-city-market-refinement/review.md",
-    "refinementPending": "Narrow door transom frame/glazing and two non-emitting roof-mounted flood housings, inferred from January 2022 panorama. Installed after-view/walk review pending."
+    "refinementReview": "Narrow door transom frame/glazing and two non-emitting roof-mounted flood housings, inferred from January 2022 panorama. Three matched daylight views and six installed walking legs passed; see refinement record for limits."
   },
   "finalBuild": {
     "files": {
