@@ -36,10 +36,7 @@ def window(G,u):
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/office';B.detail=0;W=Frame(B,0,0,y=0);p=footprint('way/1236725797')
  B.shell(p,.15,2.8,'spo-siding-paint',roof=False)
- hip(B,p,2.83,1.2)
- for g in B.groups.values():
-  if g['material']=='oo-roof-paint':g['material']='spo-roof-paint'
-  elif g['material']=='oo-fascia-paint':g['material']='spo-frame-paint'
+ hip(B,p,2.83,1.2,'spo-roof-paint','spo-frame-paint')
  for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
   G,L,nx,nz=facade_frame(B,a,b,p,.03)
   G.box('spo-stone-base',(L/2,.45,-.06),(L,.6,.12))

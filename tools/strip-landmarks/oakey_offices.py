@@ -2,7 +2,7 @@
 from common import *
 from forum_shops import facade_frame
 KEY='oakeyOffices'
-def hip(B,p,eave,rise,roof_mat='oo-roof-paint'):
+def hip(B,p,eave,rise,roof_mat='oo-roof-paint',fascia_mat='oo-fascia-paint'):
  x0,z0,x1,z1=p.bounds;x0-=.38;x1+=.38;z0-=.38;z1+=.38;cx=(x0+x1)/2;cz=(z0+z1)/2
  if x1-x0>z1-z0:
   h=(z1-z0)/2;a=(x0+h,eave+rise,cz);b=(x1-h,eave+rise,cz)
@@ -12,7 +12,7 @@ def hip(B,p,eave,rise,roof_mat='oo-roof-paint'):
   faces=[[(x0,eave,z0),(x1,eave,z0),a],[(x1,eave,z0),(x1,eave,z1),b,a],[(x1,eave,z1),(x0,eave,z1),b],[(x0,eave,z1),(x0,eave,z0),a,b]]
  for face in faces:B.upface(roof_mat,face)
  W=Frame(B,0,0,y=0)
- for a,b in zip([(x0,eave,z0),(x1,eave,z0),(x1,eave,z1),(x0,eave,z1)],[(x1,eave,z0),(x1,eave,z1),(x0,eave,z1),(x0,eave,z0)]):W.tube('oo-fascia-paint',a,b,.085,4)
+ for a,b in zip([(x0,eave,z0),(x1,eave,z0),(x1,eave,z1),(x0,eave,z1)],[(x1,eave,z0),(x1,eave,z1),(x0,eave,z1),(x0,eave,z0)]):W.tube(fascia_mat,a,b,.085,4)
 def window(G,u,width=1.7):
  G.box('oo-window-frame-paint',(u,1.65,-.08),(width+.14,1.14,.16))
  G.box('oo-glass',(u,1.65,-.17),(width,1,.025))
