@@ -17,3 +17,5 @@ DraftPR510againstnext. Serial6view baselineGPU7156 running -> build/city-exterio
 First2afterviews inspected: seam readability improved ononeplane but residualdottedalias persists onoppositeplane. Retain thisgap; donotclaimfullyfixed. Other4afterviews/actualwalk/smoke/performancepending. GPU43707continues.
 
 12:25: all6afterimages inspected/saved; annexdiagonalhatching confirmed, mainnearreadabilitypartiallyimproved but dottedalias stillretained. Staticp95before→after main19→18.8,18.6→18.6,18.9→19;annex19.1→18.9,19→18.5,26.2→18.8; maxincrease0.53%. Actual20legafterwalk then9stopsmoke runningserial GPU45219, logs /tmp/sc-actual-after.log and /tmp/sc-smoke.log. Inspectwalkpassedflag and4endpointimages; assert9smokevisits placed/0errors. Thenfinalizeevidence/LFS/PR510readymerge,close159160,picker. ProvisionalLFS8,252,519bytes24objects beforefinalwalkproofs; re-run /tmp/sc-lfs.py afterthosecommitted. No otherGPU.
+
+Final verification: all20actualafterlegs passed; four endpoint images inspected and preserved. Smoke9/9 placed, zero request/page/console errors. Ready to finalize LFS audit and merge PR510; retain residual roof aliasing and all recorded fidelity gaps.

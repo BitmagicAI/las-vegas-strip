@@ -6,7 +6,7 @@ References and inferred dimensions are in research.md. Identity, detailed materi
 
 One grouped bake; both GLBs level+WebP optimized.91/92 cell binaries byte-identical (onlycell--1_4 changed). Typecheck,3regressiontests, optimization2/2, bakefreshness, assetpack1930present, resortreview pass; publiccheck0failures11existingwarnings.
 
-New reproducible2369roof-support samples pass before/after. The old ignored910/825samples were unavailable, so this count is not a reproduction claim. Original18CPUwalklegs passed but actualannexdiagonal cut a corner and stopped: failure JSON/images retained. Adding an explicit outer-corner waypoint produced20CPUlegs and20actualbaselinelegs passing with original endpoints/tolerances. Actual after walks and smoke are running; do not merge until verified.
+New reproducible2369roof-support samples pass before/after. The old ignored910/825samples were unavailable, so this count is not a reproduction claim. Original18CPUwalklegs passed but actualannexdiagonal cut a corner and stopped: failure JSON/images retained. Adding an explicit outer-corner waypoint produced20CPUlegs and20actualbaselinelegs passing with original endpoints/tolerances. All 20 actual after-walk legs pass; four endpoint captures inspected. Nine-stop dev smoke passes with zero failed requests, page errors or console errors.
 
 ## Matching performance
 

@@ -128,6 +128,6 @@
   "evidence": {
     "refinement": "docs/project-records/south-commercial-pair-refinement/review.md",
     "visual": "Six matched neutral views inspected. Diagonal annex hatching confirmed. Main roof ribs more continuous on one plane; opposite-plane dotted alias remains explicitly deferred.",
-    "checks": "2369 roof support samples,20CPUlegs,20corrected actualbaselinelegs pass; all staticstep7 pass. Actualafter andsmoke pending."
+    "checks": "2369 roof support samples,20CPUlegs,20corrected actualbaselinelegs pass; all staticstep7 pass. 20 actual after-walk legs pass; four endpoint images inspected. Nine-stop dev smoke passes, zero request/page/console errors."
   }
 }
