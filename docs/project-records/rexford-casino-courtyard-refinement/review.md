@@ -63,3 +63,5 @@ CDN/published-game checks and owner review of inferred dimensions/layout. No pub
 ![After](../../../public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-court.png)
 
 Matching 960x540DPR1ultra,900warm+streamquiet60settle,180samples/view. Maximum p95 increase3.30% (Casino roof18.2→18.8ms); other five views below baseline; see performance.json. Static samples do not establish sustained60fps, cold-streaming or full driving performance.
+
+New Git LFS:26,541,701bytes across36uniqueobjects absent from origin/next, counting every own commit.
