@@ -33,6 +33,8 @@ def exterior(B):
      window(G,float(u),1.42,1.65,.82);window(G,float(u),5.48,1.65,.62)
     if screen:
      at=L*.25
+     # Jan2026 street reference: cream vertical piers frame the screen.
+     for u in [at-2.05,at+2.05]:G.box('re-cream-paint',(u,3.10,-.09),(.48,5.84,.18))
      # Recessed backing and genuinely perforated concrete block screen.
      G.box('re-shadow-paint',(at,3.0,.58),(3.4,5.6,.06))
      for ix in range(8):

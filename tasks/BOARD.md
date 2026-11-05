@@ -158,8 +158,8 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-south-commercial-annex` | M | P2 | 3 | Refine the exterior of South Commercial Annex |
 | `ext-haven-courtyards` | L | P2 | 6 | Refine the exterior of Haven courtyard buildings |
 | `ext-bali-hai-service` | L | P2 | 6 | Refine the exterior of Bali Hai service yard |
-| `ext-rexford-ellen-courtyard` | M | P2 | 5 | Refine the exterior of Rexford and Ellen courtyard apartments |
-| `ext-casino-center-1520` | M | P2 | 3 | Refine the exterior of Casino Center 1520 |
+| `ext-rexford-ellen-courtyard` | L | P2 | 6 | Refine the exterior of Rexford and Ellen courtyard apartments |
+| `ext-casino-center-1520` | M | P2 | 4 | Refine the exterior of Casino Center 1520 |
 | `ext-wyoming-17-frontage` | M | P2 | 4 | Refine the exterior of Wyoming 17 Frontage |
 | `ext-perception-museum` | M | P2 | 4 | Refine the exterior of Perception Museum |
 | `ext-festival-grounds-service` | M | P2 | 3 | Refine the exterior of Festival grounds building235 |
