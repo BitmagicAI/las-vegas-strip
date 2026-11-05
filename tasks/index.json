@@ -8877,10 +8877,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Front imagery older than rear; current branding uncertain",
-    "Elevations, canopy depth and accessibility ramp positions are estimates",
-    "Street landscaping, parking paving/markings and fine ornamental cornice profiles remain incomplete",
-    "Neutral daylight and full perimeter drive review pending; no interiors reconstructed"
+    "Current facade branding remains uncertain: newly inspected front panorama is February 2022; official text corroborates Building C identity but does not date its facade.",
+    "Elevations, canopy depth and ramp placement remain estimates: no measured elevation or accessibility plan was available; existing traversable geometry retained.",
+    "Landscaping, forecourt parking/markings and fine cornice ornament remain incomplete: this pass refines only reference-supported tower surrounds and two cornice bands, without extending into neighboring paved surfaces.",
+    "Full perimeter driving review and interiors remain deferred: this pass validates short entrance walks; official education-room text supplies no reliable interior layout."
    ],
    "record": "tools/resort-blocks/st-louis-office-515.json",
    "buildings": [
@@ -8904,8 +8904,9 @@
      "tools/city-exteriors/test-st-louis-office-515.mjs",
      "tools/city-exteriors/replace-st-louis-office-515.py",
      "tools/city-exteriors/walk-st-louis-office-515.mjs",
+     "tools/strip-landmarks/build_office_market_refinement.py",
      "tools/strip-landmarks/st_louis_office_515.py",
-     "tools/strip-landmarks/build_st_louis_office_515.py"
+     "tools/city-exteriors/install-office-market-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -8926,9 +8927,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Branding and storefront based on January2022 imagery; current appearance uncertain",
-    "Sign typography, advertising, weathering and vending fixtures simplified/omitted",
-    "Rear service openings inferred; heights estimated; neutral daylight review pending; no interior"
+    "Current appearance remains uncertain: the inspected storefront panorama is January 2022; the November 2025 official retailer list supports historical identity only.",
+    "Sign typography, advertising, weathering and vending fixtures remain simplified or omitted: reference detail is dated and this scoped pass adds only transom framing and two non-emitting flood housings.",
+    "Rear service openings and heights remain inferred; no measured elevations or verified interior layout were available, so rear geometry and interior scope are unchanged."
    ],
    "record": "tools/resort-blocks/city-market-liquor.json",
    "buildings": [
@@ -8952,8 +8953,9 @@
      "tools/city-exteriors/test-city-market-liquor.mjs",
      "tools/city-exteriors/replace-city-market-liquor.py",
      "tools/city-exteriors/walk-city-market-liquor.mjs",
+     "tools/strip-landmarks/build_office_market_refinement.py",
      "tools/strip-landmarks/city_market_liquor.py",
-     "tools/strip-landmarks/build_city_market_liquor.py"
+     "tools/city-exteriors/install-office-market-refinement.mjs"
     ]
    },
    "acceptance": [

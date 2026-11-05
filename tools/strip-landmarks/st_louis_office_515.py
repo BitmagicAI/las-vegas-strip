@@ -38,12 +38,18 @@ def exterior(B):
  for u in [0,3.67,7.34,14.66,18.33,22]:
   F.box('o515-white-paint',(u,2.1,-.8),(.25,3.0,.25),True);F.box('o515-white-paint',(u,.8,-.8),(.42,.4,.42),True);F.box('o515-white-paint',(u,3.45,-.8),(.5,.18,.5))
  F.box('o515-white-paint',(11,3.85,.4),(22,.7,2.8))
+ # February 2022 frontage: layered white cornice above the arcade.
+ for y,h,d in [(4.12,.08,.14),(4.23,.10,.22)]:
+  F.box('o515-white-paint',(11,y,-1.04),(22.12,h,d))
  for a,b in [(0,3.67),(3.67,7.34),(7.34,9),(13,14.66),(14.66,18.33),(18.33,22)]:F.path('o515-white-paint',[((a+b)/2+(b-a)/2*math.cos(t),3.5+.28*math.sin(t),-1.0) for t in np.linspace(0,math.pi,18)],.075,6)
  F.box('o515-white-paint',(11,5.05,1),(3.8,2.4,3.5),True)
  for u in [10.15,11.85]:
-  F.box('o515-glass',(u,5.18,-.78),(.62,1.35,.04));F.arch(u,-.82,.72,6.02,mat='o515-frame-paint',thick=.045,base=4.52)
+  # Dark arched surrounds with pale recessed infill, not green glazing.
+  F.box('o515-white-paint',(u,5.18,-.78),(.62,1.35,.04))
+  F.arch(u,-.84,.72,6.02,mat='o515-rail-paint',thick=.065,base=4.52)
+  F.box('o515-rail-paint',(u,4.52,-.84),(.85,.10,.13))
  roof(B,F,8.9,13.1,-.95,2.95,y=6.32,rise=1.0)
- F.text('515',(11,4.12,-1.04),.28,'o515-dark-letter');F.text('BUILDING C',(4.7,3.92,-1.04),.3,'o515-dark-letter')
+ F.text('515',(11,4.12,-1.19),.28,'o515-dark-letter');F.text('BUILDING C',(4.7,3.92,-1.19),.3,'o515-dark-letter')
  # Entry behind the small tower, with an explicit sloped approach from the west apron.
  F.box('o515-frame-paint',(11,1.82,1.86),(1.85,2.4,.16));F.box('o515-glass',(11,1.82,1.76),(1.68,2.24,.04))
  B.upface('o515-ramp-concrete',[F.p(5,.12,-3.0),F.p(11,.6,-3.0),F.p(11,.6,-1.5),F.p(5,.12,-1.5)],True)
