@@ -1,0 +1,28 @@
+{
+  "accessed": "2026-11-05",
+  "sources": [
+    {
+      "url": "https://bamboo-lemon-amsw.squarespace.com/about",
+      "provider": "Plumb Crazy Solutions business website",
+      "observed": "Contact page lists520 E Oakey Blvd. Identity/address evidence only; no facade photo inspected yet."
+    },
+    {
+      "url": "https://www.bcnv.org/DocumentCenter/View/4913/Business-License-report-as-of-January-2026-PDF",
+      "provider": "Boulder City business license list",
+      "observed": "Search excerpt lists Plumb Crazy Solutions at520 Oakey. Does not settle individual building door address528 or architecture."
+    },
+    {
+      "url": "https://plumbperfectnv.com/",
+      "provider": "Plumb Perfect business website",
+      "observed": "States formerly Plumb Crazy, but matching this company to Oakey Solutions not established; do not change wall branding from this name similarity."
+    }
+  ],
+  "pending": [
+    "Fresh dated north/east/south Street View and satellite after GPU baseline finishes.",
+    "Official exterior photographs and identity consistency; do not infer public interiors from business contact listings."
+  ],
+  "foliageReview": {
+    "manifest": "tools/foliage/models/tree-manifest.json",
+    "observed": "Available tree_small_02 source is a small broadleaf tree, not a fan palm; grass models also present. Do not substitute a broadleaf crown for reference fan palms. Existing procedural palm uses tiered leaf tilt around a fixed crown origin; inspect baseline pinching then refine original fan geometry if supported."
+  }
+}
