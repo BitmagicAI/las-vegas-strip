@@ -146,7 +146,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-santa-paula-courtyard` | M | P2 | 4 | Refine the exterior of Santa Paula courtyard buildings |
 | `ext-st-louis-square-frontage` | M | P2 | 4 | Refine the exterior of St Louis Square Strip frontage |
 | `ext-albo-dinos-frontage` | M | P2 | 4 | Refine the exterior of Albo Dinos Frontage |
-| `ext-casino-center-courtyard` | M | P2 | 4 | Refine the exterior of Casino Center Courtyard |
+| `ext-casino-center-courtyard` | M | P2 | 5 | Refine the exterior of Casino Center Courtyard |
 | `ext-st-louis-office-515` | M | P2 | 4 | Refine the exterior of St Louis Office 515 |
 | `ext-city-market-liquor` | M | P2 | 3 | Refine the exterior of City Market Liquor |
 | `ext-carpets-galore` | M | P2 | 4 | Refine the exterior of Carpets Galore |

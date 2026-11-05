@@ -8767,9 +8767,9 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Exact roof pitch/awning profile, weathering and sign artwork remain approximations",
-    "Dinos double-stage canopy profile simplified to single slope; rear/services inferred",
+    "Dinos double-stage canopy installed from January2026 frontage; exact pitch, sign artwork, rear/services remain inferred.",
     "Patio furniture lacks fine detail; tenant interiors not included",
-    "Neutral daylight and drive-through performance review pending"
+    "Matched neutral daylight static review completed; perimeter driving performance remains unmeasured."
    ],
    "record": "tools/resort-blocks/albo-dinos-frontage.json",
    "buildings": [
@@ -8799,7 +8799,8 @@
      "tools/city-exteriors/replace-albo-dinos-frontage.py",
      "tools/city-exteriors/walk-albo-dinos-frontage.mjs",
      "tools/strip-landmarks/albo_dinos_frontage.py",
-     "tools/strip-landmarks/build_albo_dinos_frontage.py"
+     "tools/strip-landmarks/build_albo_casino_refinement.py",
+     "tools/city-exteriors/install-albo-casino-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -8818,12 +8819,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Gallery heights and stair positions estimated; source confirms two levels and external circulation, not precise dimensions",
-    "Missing street trees, planters, parking markings, fine blockwall finish and gate hardware",
-    "Pool size and office mansard proportions approximate; neutral daylight/perimeter drive review pending",
-    "No studio interiors or resident information reconstructed"
+    "Office planter rims installed; vegetation, street trees, parking markings, fine blockwall finish and gate hardware remain incomplete.",
+    "Pool size and office mansard proportions approximate; matched neutral daylight reviewed, perimeter driving remains unmeasured.",
+    "No studio interiors or resident information reconstructed",
+    "Official1520gallery contains frontage/landscape images inconsistent with current street reference; property/era attribution unresolved, not used to infer geometry."
    ],
    "record": "tools/resort-blocks/casino-center-courtyard.json",
    "buildings": [

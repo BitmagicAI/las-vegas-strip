@@ -1,0 +1,42 @@
+{
+  "accessDate": "2026-11-05",
+  "sources": [
+    {
+      "url": "https://dinoslv.com/",
+      "provider": "Dinos official website",
+      "imageDate": "Unknown",
+      "observed": "Official text confirms karaoke and pool tables. Architecture photos not yet inspected; text does not establish interior layout."
+    },
+    {
+      "url": "https://dinoslv.com/contact-us",
+      "provider": "Dinos official website",
+      "observed": "1516 South Las Vegas Boulevard address."
+    },
+    {
+      "url": "https://www.downtownlasvegas.apartments/property/artdistrict/",
+      "provider": "Las Vegas Apartments Corporation",
+      "imageDate": "Unknown; linked photo upload paths contain2019/07, not capture dates",
+      "observed": "Official listing identifies1520S Casino Center as41-unit gated apartment complex with outdoor furniture and BBQ. No resident data or private interiors to be reproduced. Gallery pending visual inspection.",
+      "photoLinks": [
+        "https://www.downtownlasvegas.apartments/wp-content/uploads/2019/07/ADA-Sign.jpg",
+        "https://www.downtownlasvegas.apartments/wp-content/uploads/2019/07/Front-showing-Art-Sign.jpg",
+        "https://www.downtownlasvegas.apartments/wp-content/uploads/2019/07/Tree-and-Courtyard-Close-Up.jpg"
+      ],
+      "photoReview": "Two linked photos inspected. Tree-and-Courtyard-Close-Up shows lush palm/agave beds and dark rails; Front-showing-Art-Sign shows ribbon windows and stone endwall unlike current1520street frontage. Gallery may mix properties or eras; no geometry inferred from these photos without corroboration."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=hdkcdjEkQEfq0GYVMSNsZg&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Dinos red canopy has shallow projecting lower roof and steep upper stage. Black patio rail and picnic tables beneath; existing single slope is inaccurate. Heights3.2/3.45/4.35m and breakpoint2.6m inward estimated from existing footprint and facade scale."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=J7Kn33pD2Z-Ip25QSI3tdA&heading=90&pitch=0",
+      "imageDate": "January2026",
+      "observed": "1510SCasinoCenter office: low concrete planting beds flank central entry,gray mansard,streettrees in sidewalk pits. Model planterlength3.8m,depth.88m,rimtop.55m inferred. Central2.8mclearway preserved; public streettrees and planting content still deferred."
+    }
+  ],
+  "pending": [
+    "Official gallery location/era conflict unresolved; do not use as current1520layout evidence",
+    "Detailed canopy pitch, courtyard planter vegetation and streettrees remain approximate/incomplete"
+  ]
+}
