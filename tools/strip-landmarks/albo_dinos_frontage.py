@@ -3,11 +3,14 @@ from common import *
 from forum_shops import facade_frame
 KEY='alboDinosFrontage'
 IDS=['way/1020191190','way/364846573']
-def canopy(B,G,L,mat,inside=1.8):
- profile=[(3.2,-.6),(4.35,inside),(4.25,inside),(3.1,-.6)]
+def canopy(B,G,L,mat,inside=1.8,stepped=False):
+ # Jan2026 Dino frontage has a shallow projecting lower roof and steep upper fascia.
+ top=[(3.2,-.6),(3.45,2.6),(4.35,inside)] if stepped else [(3.2,-.6),(4.35,inside)]
+ profile=top+[(y-.1,w) for y,w in reversed(top)]
  for (y,w),(yy,ww) in zip(profile,profile[1:]+profile[:1]):B.face(mat,[G.p(0,y,w),G.p(L,y,w),G.p(L,yy,ww),G.p(0,yy,ww)])
  for u in [0,L]:B.face(mat,[G.p(u,y,w) for y,w in profile])
- for u in np.arange(.15,L,.4):G.tube('ad-seam-paint',(float(u),3.22,-.61),(float(u),4.37,inside),.018,4)
+ for u in np.arange(.15,L,.4):
+  for (y,w),(yy,ww) in zip(top,top[1:]):G.tube('ad-seam-paint',(float(u),y+.02,w),(float(u),yy+.02,ww),.018,4)
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/albo-dinos';B.detail=0;W=Frame(B,0,0,y=0)
  p=footprint(IDS[0]);d=footprint(IDS[1]);body=d.intersection(Polygon([(1800,-4200),(1894,-4200),(1894,-4075),(1893,-4065),(1890,-4052),(1800,-4052)]))
@@ -39,7 +42,7 @@ def exterior(B):
    W.box('ad-service-paint',(x+dx,4.05,z+dz),(1.5,.9,1.4));W.box('ad-vent-paint',(x+dx,4.52,z+dz),(1.25,.03,1.2))
  # One continuous street roof avoids overlapping fans at concave mapped footprint edges.
  G=Frame(B,1900.78,-4072.58,yaw=-math.atan2(18.93,-5.28),y=0);L=19.65
- canopy(B,G,L,'ad-red-roof-paint',inside=4.0)
+ canopy(B,G,L,'ad-red-roof-paint',inside=4.0,stepped=True)
  G.text("Dino's",(L*.48,3.65,.28),.72,'ad-white-letter')
  for u in [.2,5,10,15,L-.2]:G.box('ad-black-paint',(u,1.62,-.35),(.08,2.98,.08),True)
  for u in np.arange(.1,17,.17):G.box('ad-black-paint',(float(u),.76,-.38),(.025,1.25,.025))

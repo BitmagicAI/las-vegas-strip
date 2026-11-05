@@ -49,6 +49,14 @@ def exterior(B):
  B.upface('ccc-mansard-paint',[G.p(0,5.9,-.15),G.p(L,5.9,-.15),G.p(L,3.75,-1.05),G.p(0,3.75,-1.05)])
  for u in np.arange(.2,L,.55):G.tube('ccc-trim-paint',(float(u),5.92,-.15),(float(u),3.77,-1.05),.015,4)
  G.box('ccc-frame-paint',(L/2,1.4,-.23),(1.85,2.5,.12));G.box('ccc-glass',(L/2,1.4,-.31),(1.68,2.34,.04));G.box('ccc-frame-paint',(L/2,1.4,-.35),(.045,2.34,.04));G.text('LEASING OFFICE',(L/2,3.2,-.22),.25,'ccc-dark-letter')
+ # Low office planters flank the entry in January2026 frontage; dimensions inferred.
+ # Keep a 2.8m central approach and the public sidewalk outside the frontage clear.
+ for u0,u1 in [(1.0,4.8),(7.6,11.4)]:
+  u=(u0+u1)/2;length=u1-u0;w=-.72
+  G.box('ccc-boundary-stucco',(u,.35,w-.38),(length,.4,.12),True)
+  G.box('ccc-boundary-stucco',(u,.35,w+.38),(length,.4,.12),True)
+  for edge in [u0+.06,u1-.06]:G.box('ccc-boundary-stucco',(edge,.35,w),(.12,.4,.64),True)
+  G.box('ccc-dark-letter',(u,.38,w),(length-.24,.05,.64))
  # Shared courtyard and recessed pool, clipped around both mapped wings.
  court=F.poly([(-1,0),(41,0),(41,47),(-1,47)]).difference(allp)
  pool=F.poly([(5,8),(15,8),(15,17),(5,17)])
