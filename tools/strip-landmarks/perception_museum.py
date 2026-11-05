@@ -44,7 +44,17 @@ def exterior(B):
  B.planar('perception-paving-concrete',p.buffer(1.2,join_style=2).difference(p).difference(court),.18,True)
  for w in [3,10,17,24,31]:palm(B,F,25.4,w,10.5 if w%2 else 9.3)
  for w in np.arange(-.5,36,1.65):
-  F.lathe('perception-bollard-paint',30,float(w),[(.18,.16),(1.32,.16)],12)
+  F.lathe('perception-bollard-paint',30,float(w),[(.18,.16),(1.20,.16)],12)
+  # Sloping closed cap, observed in Oct 2026 Street View and operator exterior photo.
+  # Radius/height and cut angle inferred; preserve the existing hidden collider.
+  ring=[]
+  for k in range(12):
+   a=math.tau*k/12;du=.16*math.cos(a);dw=.16*math.sin(a)
+   ring.append(F.p(30+du,1.32+.5*du,float(w)+dw))
+  for k in range(12):
+   j=(k+1)%12;a=math.tau*k/12;b=math.tau*j/12
+   B.face('perception-bollard-paint',[F.p(30+.16*math.cos(a),1.20,float(w)+.16*math.sin(a)),ring[k],ring[j],F.p(30+.16*math.cos(b),1.20,float(w)+.16*math.sin(b))])
+   B.upface('perception-bollard-paint',[F.p(30,1.32,float(w)),ring[k],ring[j]])
   for y in [1.01,1.15]:F.lathe('perception-white-paint',30,float(w),[(y,.165),(y+.045,.165)],12)
   F.box('perception-hidden-collision',(30,.75,float(w)),(.32,1.14,.32),True)
  for w in [7,20,33]:

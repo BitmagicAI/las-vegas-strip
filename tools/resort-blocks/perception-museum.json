@@ -28,7 +28,7 @@
     "Palms stylized; concealed entrance/service details estimated",
     "No interiors; current operating status unverified",
     "Unchanged dark city surface outside authored forecourt; wider site treatment remains",
-    "No neutral daylight or full driving benchmark"
+    "Full driving benchmark remains; matched neutral daylight captured in PR512"
   ],
   "triangles": 10484,
   "batches": 19,
@@ -118,5 +118,11 @@
       "build/strip-landmarks/perceptionMuseum-exterior-collision.json": "345ae4b3c2d906ec863c604336e92bf1cf6b9c2f7557454e6fb92d93f32b79dc"
     }
   },
-  "materialIsolation": "Renamed museum materials from shared pm prefix to perception prefix; existing Park MGM palette retained."
+  "materialIsolation": "Renamed museum materials from shared pm prefix to perception prefix; existing Park MGM palette retained.",
+  "refinement20261105": {
+    "record": "docs/project-records/wyoming-perception-refinement/review.md",
+    "change": "Closed inclined bollard caps",
+    "validation": "1697 support samples,24CPU and24actual legs before/after; sixmatcheddaylight views; exactbase fivewindowperformanceAB; allstep7 and9smoke pass",
+    "status": "refinement-deferred"
+  }
 }

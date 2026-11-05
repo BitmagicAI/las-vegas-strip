@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232195932,
+ "bytes": 1232218967,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -366,8 +366,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-4.bin",
-   "bytes": 410560,
-   "sha256": "3b2561935eb35cb12f647be98b7ab3c9b923bbd0815a236086db1b16daebdbf4",
+   "bytes": 410612,
+   "sha256": "ed03736764aeaf5a4b5fcac0489f7538341530aff2ebbfbff288dc6ea611938b",
    "kind": "original"
   },
   {
@@ -450,8 +450,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-6.bin",
-   "bytes": 257924,
-   "sha256": "9b43f90143b9fea01312e58589807bc80566accd8784ad2570b374b760573d3f",
+   "bytes": 258003,
+   "sha256": "a139aa4d35468d1ea9a854bbddc7f692373c505ba2570b150ce969e9f8ebb35d",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "c1dc4bde902f3516844d9ce96dc3536b4f64ea639e8aa1b405cec605381f1563",
+   "sha256": "7408b3fe0992aae060542d7de16996c225624e0758f2fe0dfb5682cb37f1079b",
    "kind": "runtime cell manifest"
   },
   {
@@ -10206,8 +10206,8 @@
   },
   {
    "path": "build/strip-landmarks/perceptionMuseum-exterior.glb",
-   "bytes": 392092,
-   "sha256": "7ff01713bea6a2987a28739db6bb3dd33cb98f03c26db6837ea8829561b7d3ba",
+   "bytes": 410624,
+   "sha256": "186f63b6fddd766b8e717d694feee0b7f3d967c9f397dbe51bddd39b85fec9a1",
    "kind": "optimized"
   },
   {
@@ -11580,8 +11580,8 @@
   },
   {
    "path": "build/strip-landmarks/wyoming17Frontage-exterior.glb",
-   "bytes": 154516,
-   "sha256": "aecb7d1cb6a2e65a65c234ea55d621f2cff3c442ccacda2ade71e815c3537bd0",
+   "bytes": 158888,
+   "sha256": "89e15251dc351f54b732bc2e89aae25bdbcd8dc2b62309ec2dc7e610c3df8089",
    "kind": "optimized"
   },
   {

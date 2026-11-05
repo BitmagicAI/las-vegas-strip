@@ -9661,8 +9661,9 @@
      "tools/city-exteriors/test-wyoming-17-frontage.mjs",
      "tools/city-exteriors/replace-wyoming-17-frontage.py",
      "tools/city-exteriors/walk-wyoming-17-frontage.mjs",
+     "tools/strip-landmarks/build_wyoming_perception_refinement.py",
      "tools/strip-landmarks/wyoming_17_frontage.py",
-     "tools/strip-landmarks/build_wyoming_17_frontage.py"
+     "tools/city-exteriors/install-wyoming-perception-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -9686,7 +9687,7 @@
     "Palms stylized; concealed entrance/service details estimated",
     "No interiors; current operating status unverified",
     "Unchanged dark city surface outside authored forecourt; wider site treatment remains",
-    "No neutral daylight or full driving benchmark"
+    "Full driving benchmark remains; matched neutral daylight captured in PR512"
    ],
    "record": "tools/resort-blocks/perception-museum.json",
    "buildings": [
@@ -9707,11 +9708,12 @@
      "tools/resort-blocks/perception-museum.json"
     ],
     "builders": [
+     "tools/city-exteriors/samples-wyoming-perception-refinement.py",
      "tools/city-exteriors/test-perception-museum.mjs",
      "tools/city-exteriors/replace-perception-museum.py",
      "tools/city-exteriors/walk-perception-museum.mjs",
-     "tools/strip-landmarks/perception_museum.py",
-     "tools/strip-landmarks/build_perception_museum.py"
+     "tools/strip-landmarks/build_wyoming_perception_refinement.py",
+     "tools/strip-landmarks/perception_museum.py"
     ]
    },
    "acceptance": [
