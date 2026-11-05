@@ -2,7 +2,7 @@
 from common import *
 from forum_shops import facade_frame
 KEY='oakeyOffices'
-def hip(B,p,eave,rise):
+def hip(B,p,eave,rise,roof_mat='oo-roof-paint'):
  x0,z0,x1,z1=p.bounds;x0-=.38;x1+=.38;z0-=.38;z1+=.38;cx=(x0+x1)/2;cz=(z0+z1)/2
  if x1-x0>z1-z0:
   h=(z1-z0)/2;a=(x0+h,eave+rise,cz);b=(x1-h,eave+rise,cz)
@@ -10,7 +10,7 @@ def hip(B,p,eave,rise):
  else:
   h=(x1-x0)/2;a=(cx,eave+rise,z0+h);b=(cx,eave+rise,z1-h)
   faces=[[(x0,eave,z0),(x1,eave,z0),a],[(x1,eave,z0),(x1,eave,z1),b,a],[(x1,eave,z1),(x0,eave,z1),b],[(x0,eave,z1),(x0,eave,z0),a,b]]
- for face in faces:B.upface('oo-roof-paint',face)
+ for face in faces:B.upface(roof_mat,face)
  W=Frame(B,0,0,y=0)
  for a,b in zip([(x0,eave,z0),(x1,eave,z0),(x1,eave,z1),(x0,eave,z1)],[(x1,eave,z0),(x1,eave,z1),(x0,eave,z1),(x0,eave,z0)]):W.tube('oo-fascia-paint',a,b,.085,4)
 def window(G,u,width=1.7):
@@ -30,8 +30,8 @@ def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/offices';B.detail=0;W=Frame(B,0,0,y=0)
  west=footprint('way/1236725799');east=footprint('way/1236725798');carport=footprint('way/1236725800');site=box(1935,-3919,1984,-3881)
  B.planar('oo-asphalt',site,.105,True)
- for p in [west,east]:
-  B.shell(p,.15,2.8,'oo-white-stucco',roof=False);hip(B,p,2.84,1.45)
+ for office_index,p in enumerate([west,east]):
+  B.shell(p,.15,2.8,'oo-white-stucco',roof=False);hip(B,p,2.84,1.45,'oo-west-roof-paint' if office_index==0 else 'oo-roof-paint')
   for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
    G,L,nx,nz=facade_frame(B,a,b,p,.03)
    G.box('oo-base-paint',(L/2,.35,-.04),(L,.4,.08))

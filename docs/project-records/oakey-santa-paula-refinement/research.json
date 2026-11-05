@@ -15,14 +15,39 @@
       "url": "https://plumbperfectnv.com/",
       "provider": "Plumb Perfect business website",
       "observed": "States formerly Plumb Crazy, but matching this company to Oakey Solutions not established; do not change wall branding from this name similarity."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=p-4-D4AN-Gd_YGXuykGZzw&heading=300&pitch=0",
+      "imageDate": "December 2022",
+      "observed": "Zoomed Santa Paula office south/east: two mature rounded fan crowns, larger east palm with dense drooping fronds to low skirt; no open horizontal crown waist. Siding and roof visible. Street-side palm is pinnate, not a fan palm; existing third palm species mismatch remains."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=vO3ezhOc7X__1EE4_OwzGA&heading=180&pitch=0",
+      "imageDate": "August 2024",
+      "observed": "Oakey north zoomed: white walls, reddish-brown roofs, dark burgundy plumbing banners, black fences. Two west rooftop mechanical boxes. Location-based lookup instead returned February2020 tan walls; use explicit2024panoid, not2020 for current facade."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4krGIpUltPFYG6E2ye-HXg&heading=270&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Shared street boundary low pale block masonry and iron upper rails; willow-like tree and pinnate palms. Neighbor beige roof wing is separate owner; preserve boundary."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15085,-115.15165&zoom=20&basemap=satellite",
+      "imageDate": "Unknown acquisition date",
+      "observed": "Overhead inspected: west Oakey roof distinctly redder than dark brown east roof, separate side carport, long pale Santa Paula roof and dense planting along frontage. Labels are identity clues only."
     }
   ],
   "pending": [
-    "Fresh dated north/east/south Street View and satellite after GPU baseline finishes.",
-    "Official exterior photographs and identity consistency; do not infer public interiors from business contact listings."
+    "Official site-specific architectural photos remain unavailable; business listings do not establish layouts.",
+    "Installed after review must establish whether crown waist improvement is sufficient; retain exact species/height/weathering gaps."
   ],
   "foliageReview": {
     "manifest": "tools/foliage/models/tree-manifest.json",
     "observed": "Available tree_small_02 source is a small broadleaf tree, not a fan palm; grass models also present. Do not substitute a broadleaf crown for reference fan palms. Existing procedural palm uses tiered leaf tilt around a fixed crown origin; inspect baseline pinching then refine original fan geometry if supported."
-  }
+  },
+  "decisions": [
+    "Retain existing footprints/elevations and palm trunk positions/collisions. Improve original fan leaves with pleating, asymmetric crown centers and visible undersides; no third-party geometry or photos.",
+    "Differentiate Oakey west red-brown versus east dark-brown roof using scoped material; darken burgundy banners. Preserve signs pending identity evidence.",
+    "Public interior layouts are unverified; no new interior access claim. Third palm species and fuller vegetation remain unresolved."
+  ]
 }
