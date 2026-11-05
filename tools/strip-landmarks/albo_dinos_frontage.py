@@ -43,7 +43,7 @@ def exterior(B):
  # One continuous street roof avoids overlapping fans at concave mapped footprint edges.
  G=Frame(B,1900.78,-4072.58,yaw=-math.atan2(18.93,-5.28),y=0);L=19.65
  canopy(B,G,L,'ad-red-roof-paint',inside=4.0,stepped=True)
- G.text("Dino's",(L*.48,3.65,.28),.72,'ad-white-letter')
+ G.text("Dino's",(L*.48,3.92,2.65),.72,'ad-white-letter')
  for u in [.2,5,10,15,L-.2]:G.box('ad-black-paint',(u,1.62,-.35),(.08,2.98,.08),True)
  for u in np.arange(.1,17,.17):G.box('ad-black-paint',(float(u),.76,-.38),(.025,1.25,.025))
  for y in [.25,1.37]:G.box('ad-black-paint',(8.5,y,-.38),(17,.045,.045))

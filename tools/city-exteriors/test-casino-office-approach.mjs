@@ -1,0 +1,6 @@
+import fs from 'node:fs';import R from '@dimforge/rapier3d-compat';
+await R.init();const w=new R.World({x:0,y:-9.81,z:0});const read=p=>JSON.parse(fs.readFileSync(p));
+for(const c of [...read('build/geographic-strip/city-colliders.json'),...read('src/work/geographic/level.json').colliders,read('build/strip-landmarks/casinoCenterCourtyard-exterior-collision.json')])if(c.vertices?.length&&c.indices?.length)w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));
+w.step();const samples=read('build/city-exteriors/casino-office-approach-samples.json'),failures=[];
+for(const [x,y,z] of samples){const h=w.castRay(new R.Ray({x,y:y+.8,z},{x:0,y:-1,z:0}),1.1,true);const ceiling=w.castRay(new R.Ray({x,y:y+.85,z},{x:0,y:1,z:0}),1.3,true);if(ceiling)failures.push({x,y,z,floor:!!h,blocked:!!ceiling});}
+const report={samples:samples.length,failures,scope:'Source headroom only: this JSON subset lacks some installed office ground. Support is validated by the actual installed office approach walk; original source-only floor discrepancy preserved in project record.'};fs.writeFileSync('build/city-exteriors/casino-office-approach-collision.json',JSON.stringify(report,null,2));console.log(report);w.free();if(failures.length)process.exitCode=1;
