@@ -16,7 +16,7 @@
     }
   ],
   "remaining": [
-    "Canopy profile and height visually estimated; lattice inside large arches and exact signage incomplete",
+    "Canopy profile and height visually estimated; original arch lattice added with estimated spacing, exact profile and signage still incomplete",
     "Landscaping, detached roadside sign and detailed restaurant doors remain unfinished",
     "Angled support tube colliders need a later dedicated pass; floor/roof and broad fascia are collidable",
     "No interiors or moving-route benchmark"
@@ -105,6 +105,20 @@
     "scope": "Only building-material triangles wholly in mcdonaldsSaharaCanopy mapped footprint; all other triangles retained exactly."
   },
   "finalBuild": {
+    "files": {
+      "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior.glb": "72ed87b433db297077dc57e081299dcc5d8c8c866894e02fa46ad1853ec62847",
+      "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior-collision.json": "7142b79268e664c3c1c7ad2167e32b05821ae8931714facd2454c3f569a0e06f"
+    }
+  },
+  "refinement20261105": {
+    "record": "docs/project-records/festival-sahara-canopy-refinement/review.md",
+    "research": "docs/project-records/festival-sahara-canopy-refinement/research.md",
+    "changes": "Original diagonal open lattice inside existing yellow arches; estimated spacing and profile",
+    "validation": "1543 grouped support samples, 44 CPU and 44 actual keyboard legs before/after, six matched neutral daylight views, nine-stop smoke; all local step 7 checks pass. Initial and first A/B front timing spikes retained; longer-warmed reversed-order repeat stable, median p95 +4.13%. See performance.json for variability and limits.",
+    "limitations": "Scoped refinement only; full-site gaps retained. Original Festival XZ-only walking audit falsely passed while falling; corrected supported-apron audit used.",
+    "historicalMetrics": "Top-level triangle/batch/optimizedMiB, tests and static960x540 entries describe the earlier pass. Current validation and performance evidence live in the linked refinement record."
+  },
+  "historicalBuildBeforeRefinement20261105": {
     "files": {
       "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior.glb": "b8dd3caeb72a9d979eecc62fd574e3b5f60819c9f8046bf44a25f823dfa3c9f8",
       "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior-collision.json": "7142b79268e664c3c1c7ad2167e32b05821ae8931714facd2454c3f569a0e06f"

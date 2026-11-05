@@ -23,7 +23,7 @@
   "remaining": [
     "Wider festival ground asphalt, perimeter fence, landscaping and permanent event structures remain unauthored",
     "Hidden wall access layout and south canopy inferred; precise function unverified",
-    "No interiors, neutral daylight or full driving benchmark"
+    "No interiors or full moving-route performance benchmark; matched neutral daylight views now recorded"
   ],
   "triangles": 2874,
   "batches": 15,
@@ -109,6 +109,20 @@
     "limitation": "Static views not driving benchmark"
   },
   "finalBuild": {
+    "files": {
+      "build/strip-landmarks/festivalGroundsService-exterior.glb": "50e226972986501486a869dc7d5afc51cea0109fe4959864acf6950d8b6abe25",
+      "build/strip-landmarks/festivalGroundsService-exterior-collision.json": "b1b74b3979e31454c1abf2a8989d73d9c8483de8bbce57feb290741edfae5b04"
+    }
+  },
+  "refinement20261105": {
+    "record": "docs/project-records/festival-sahara-canopy-refinement/review.md",
+    "research": "docs/project-records/festival-sahara-canopy-refinement/research.md",
+    "changes": "Low roof service runs, estimated paths and unspecified utility function",
+    "validation": "1543 grouped support samples, 44 CPU and 44 actual keyboard legs before/after, six matched neutral daylight views, nine-stop smoke; all local step 7 checks pass. Initial and first A/B front timing spikes retained; longer-warmed reversed-order repeat stable, median p95 +4.13%. See performance.json for variability and limits.",
+    "limitations": "Scoped refinement only; full-site gaps retained. Original Festival XZ-only walking audit falsely passed while falling; corrected supported-apron audit used.",
+    "historicalMetrics": "Top-level triangle/batch/optimizedMiB, tests and static960x540 entries describe the earlier pass. Current validation and performance evidence live in the linked refinement record."
+  },
+  "historicalBuildBeforeRefinement20261105": {
     "files": {
       "build/strip-landmarks/festivalGroundsService-exterior.glb": "01da2f665dad004deb12500df968c54cce0e70dcbd7cd94c366888335dd1a166",
       "build/strip-landmarks/festivalGroundsService-exterior-collision.json": "b1b74b3979e31454c1abf2a8989d73d9c8483de8bbce57feb290741edfae5b04"

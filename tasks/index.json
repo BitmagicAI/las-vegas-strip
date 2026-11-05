@@ -9736,7 +9736,7 @@
    "items": [
     "Wider festival ground asphalt, perimeter fence, landscaping and permanent event structures remain unauthored",
     "Hidden wall access layout and south canopy inferred; precise function unverified",
-    "No interiors, neutral daylight or full driving benchmark"
+    "No interiors or full moving-route performance benchmark; matched neutral daylight views now recorded"
    ],
    "record": "tools/resort-blocks/festival-grounds-service.json",
    "buildings": [
@@ -9760,8 +9760,9 @@
      "tools/city-exteriors/test-festival-grounds-service.mjs",
      "tools/strip-landmarks/festival_grounds_service.py",
      "tools/city-exteriors/replace-festival-grounds-service.py",
+     "tools/city-exteriors/walk-festival-grounds-apron-refinement.mjs",
      "tools/city-exteriors/walk-festival-grounds-service.mjs",
-     "tools/strip-landmarks/build_festival_grounds_service.py"
+     "tools/strip-landmarks/build_festival_sahara_refinement.py"
     ]
    },
    "acceptance": [
@@ -10999,7 +11000,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Canopy profile and height visually estimated; lattice inside large arches and exact signage incomplete",
+    "Canopy profile and height visually estimated; original arch lattice added with estimated spacing, exact profile and signage still incomplete",
     "Landscaping, detached roadside sign and detailed restaurant doors remain unfinished",
     "Angled support tube colliders need a later dedicated pass; floor/roof and broad fascia are collidable",
     "No interiors or moving-route benchmark"
@@ -11027,7 +11028,8 @@
      "tools/strip-landmarks/mcdonalds_sahara_canopy.py",
      "tools/city-exteriors/stair-mcdonalds-sahara-canopy.mjs",
      "tools/city-exteriors/test-mcdonalds-sahara-canopy.mjs",
-     "tools/strip-landmarks/build_mcdonalds_sahara_canopy.py"
+     "tools/city-exteriors/samples-festival-sahara-refinement.py",
+     "tools/strip-landmarks/build_festival_sahara_refinement.py"
     ]
    },
    "acceptance": [

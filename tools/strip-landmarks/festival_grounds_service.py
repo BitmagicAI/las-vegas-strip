@@ -33,6 +33,10 @@ def exterior(B):
   for yy in np.arange(4.33,4.8,.085):F.box('fgs-grille-paint',(25.27,float(yy),w),(.03,.018,1.78))
  for u,w in [(2,1.1),(9,1.2),(17,12.4)]:
   F.lathe('fgs-service-paint',u,w,[(4.02,.18),(4.4,.18),(4.45,.32),(4.55,.24)],12)
+ # Low roof service runs inferred from visible satellite lines; visual-only.
+ # Keep exact utilities/function unknown and retain the existing support surface.
+ for points in [[(24,4.08,2.5),(23,4.08,1.05),(29,4.08,.85),(35,4.08,.9),(39,4.08,1.15),(43,4.08,2.1),(44,4.08,3.3)],[(22.6,4.08,4),(22.1,4.08,7),(21.1,4.08,9.7),(19,4.08,11.6),(17,4.08,12.4)]]:
+  F.path('fgs-hardware-paint',points,.035,6)
  # South recess is the shallow green strip in aerial imagery, interpreted as covered frontage.
  F.box('fgs-canopy-paint',(24,3.35,14.25),(30.2,.15,1.25))
  for u in [9.2,19.2,29.2,39.0]:F.box('fgs-frame-paint',(u,1.75,14.7),(.12,3.2,.12),True)

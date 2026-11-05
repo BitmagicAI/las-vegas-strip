@@ -1,0 +1,44 @@
+[
+  {
+    "site": "festival-grounds-service",
+    "view": "front",
+    "beforeP95": 18.200000047683716,
+    "afterP95": 27.40000009536743,
+    "changePercent": 50.54945067901022
+  },
+  {
+    "site": "festival-grounds-service",
+    "view": "roof",
+    "beforeP95": 19,
+    "afterP95": 18.100000143051147,
+    "changePercent": -4.7368413523623865
+  },
+  {
+    "site": "festival-grounds-service",
+    "view": "south",
+    "beforeP95": 17.899999856948853,
+    "afterP95": 18.100000143051147,
+    "changePercent": 1.1173200430202979
+  },
+  {
+    "site": "mcdonalds-sahara-canopy",
+    "view": "front",
+    "beforeP95": 18.200000047683716,
+    "afterP95": 17.799999952316284,
+    "changePercent": -2.197802716040864
+  },
+  {
+    "site": "mcdonalds-sahara-canopy",
+    "view": "under",
+    "beforeP95": 32.89999985694885,
+    "afterP95": 18.5,
+    "changePercent": -43.768996715990596
+  },
+  {
+    "site": "mcdonalds-sahara-canopy",
+    "view": "roof",
+    "beforeP95": 32,
+    "afterP95": 18.100000143051147,
+    "changePercent": -43.437499552965164
+  }
+]

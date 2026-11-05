@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232218967,
+ "bytes": 1232254920,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -367,7 +367,7 @@
   {
    "path": "build/baked/cells/cell-1_-4.bin",
    "bytes": 410612,
-   "sha256": "ed03736764aeaf5a4b5fcac0489f7538341530aff2ebbfbff288dc6ea611938b",
+   "sha256": "f2c6c8b3e86f16f2cf7667b6b06dc01ddb661c47dd792f90a16e1ac96f8655e9",
    "kind": "original"
   },
   {
@@ -438,8 +438,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-4.bin",
-   "bytes": 256413,
-   "sha256": "456b2b663dc5f495cc33e42ce833617bd3f810b302e32957340f5a38902e1d15",
+   "bytes": 256546,
+   "sha256": "5fde0899a98896f9abb3ce4c900f221c9e18714b796071302951d7fc6cad0072",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "7408b3fe0992aae060542d7de16996c225624e0758f2fe0dfb5682cb37f1079b",
+   "sha256": "6df26a2c47e149dd9247a8635754250ff7acb543c6556196919116de4c9fb1b8",
    "kind": "runtime cell manifest"
   },
   {
@@ -8370,8 +8370,8 @@
   },
   {
    "path": "build/strip-landmarks/festivalGroundsService-exterior.glb",
-   "bytes": 71100,
-   "sha256": "c564b55bb13735767d5ae0248d5221df49640969023ace5f62d1ced90ea37b4a",
+   "bytes": 75120,
+   "sha256": "926ed81f652572fd75a96d5cfee6b8c4ac100f0088dccd1a400003640dbeec02",
    "kind": "optimized"
   },
   {
@@ -9606,8 +9606,8 @@
   },
   {
    "path": "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior.glb",
-   "bytes": 148652,
-   "sha256": "3d3591c0d2422b1ccdc519a7a6bac9fd9ab15b985a9f3cc806c1ce1c6144b38b",
+   "bytes": 180452,
+   "sha256": "b77c7d269c561129485974fa5dc34728e6cb981c79759bd9b0e5fe9b34f7d721",
    "kind": "optimized"
   },
   {
