@@ -20,10 +20,10 @@
     "Mapped lot orientation retained; yard bounds interpreted from satellite"
   ],
   "remaining": [
-    "Exact building identity not verified; no invented commercial sign",
-    "Reference trees and xeriscape planting not yet reproduced",
-    "Rear/entry details require closer reference; no playable interior",
-    "Facade masonry colour/roughness and roof-seam spacing not survey-calibrated"
+    "Exact identity remains unverified: map panorama address is not a confirmed building address, and text search did not locate matching official property photography; no invented sign.",
+    "Mature trees and xeriscape remain incomplete pending suitable species silhouettes and measured placement; existing foliage source models were reviewed but not installed in this seam/hatching pass.",
+    "Rear/entry details and public interior remain deferred because connected layout and closer elevation references are not verified.",
+    "Masonry colour/roughness and roof-seam spacing remain visual estimates rather than survey-calibrated; broader lower-contrast ribs installed, pending matched aliasing review."
   ],
   "triangles": 6088,
   "batches": 17,
@@ -117,5 +117,11 @@
       "build/strip-landmarks/southCommercial558-exterior.glb": "d5dad582dbddeb521a2ddc7f7991542be2486eded7b4a03ed720cb29914440ab",
       "build/strip-landmarks/southCommercial558-exterior-collision.json": "21fe541645405edd381d56944b079943bbcd3636708c5e1c5d2f0bc096dee8b0"
     }
+  },
+  "refinementCheckpoint": {
+    "record": "docs/project-records/south-commercial-pair-refinement",
+    "pullRequest": 510,
+    "phase": "Optimized installed pass; after visual/performance and actual walk/smoke pending",
+    "date": "2026-11-05"
   }
 }

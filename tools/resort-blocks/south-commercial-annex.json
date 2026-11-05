@@ -14,9 +14,9 @@
     "Wallheight3.8m and all concealed elevation openings inferred; no ground-level wall reference"
   ],
   "remaining": [
-    "Unverified building identity, inferred doors/windows and materials",
-    "Neighbor558 thin roof seams still alias at some aerial angles",
-    "Retained terrain and road surroundings remain uneven; no interior"
+    "Identity, concealed doors/windows and wall materials remain inferred because only satellite roof/site photography is verified.",
+    "Neighbor558 roof-seam aliasing correction is installed but still requires matched after review; no complete fidelity claim.",
+    "Existing uneven terrain and roads are retained outside this building scope; no supported public interior layout is available."
   ],
   "triangles": 1580,
   "batches": 19,
@@ -45,5 +45,11 @@
       "build/strip-landmarks/southCommercialAnnex-exterior.glb": "b9c564e09f3cebeb9331523a1f90bb5ff73cca99cea329a2ec38a9e10be7722e",
       "build/strip-landmarks/southCommercialAnnex-exterior-collision.json": "a7459afbf5e22c675766aaa580b4cbd95be0f65921d7df0756ba4d4e7b0aca54"
     }
+  },
+  "refinementCheckpoint": {
+    "record": "docs/project-records/south-commercial-pair-refinement",
+    "pullRequest": 510,
+    "phase": "Optimized installed pass; after visual/performance and actual walk/smoke pending",
+    "date": "2026-11-05"
   }
 }

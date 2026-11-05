@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232176577,
+ "bytes": 1232194823,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -102,8 +102,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_4.bin",
-   "bytes": 234010,
-   "sha256": "c9c98ff6b465a9f7f725c4699b7c6ec79a1c728c8e282acd1cc246b3f2e18eac",
+   "bytes": 234284,
+   "sha256": "db9493e8614e75d30073f6e6fe97496b8ace395a4aa1e6ac84ccc816a8db38ee",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "f4e27ea773454d1e697bdd994d7fb4d36e1ed5bb759c557ca55613c1705923af",
+   "sha256": "15d3645c5ad0d2d22d89d6b636ea62d42ec90cc54656c02f3c8a6660e9d6a50b",
    "kind": "runtime cell manifest"
   },
   {
@@ -10818,8 +10818,8 @@
   },
   {
    "path": "build/strip-landmarks/southCommercial558-exterior.glb",
-   "bytes": 135812,
-   "sha256": "b98bb64acea5fb8182f362368a4cca5b8dee9e2d404e331adcca33a0271ea2b4",
+   "bytes": 155804,
+   "sha256": "0acdc6c84c0853c9006d469e81ef7ca55d019fc0fd795bf419a3cf5831f4a721",
    "kind": "optimized"
   },
   {
@@ -10830,8 +10830,8 @@
   },
   {
    "path": "build/strip-landmarks/southCommercialAnnex-exterior.glb",
-   "bytes": 53532,
-   "sha256": "a90460ac43eb7fd5b300a74199a09b7725129da2ca56a1364c74aa1ed29a744d",
+   "bytes": 51512,
+   "sha256": "6d8d41974fdb98909ea5c3a90e630bebffb0d89a25633c8289bdacf1f908e64c",
    "kind": "optimized"
   },
   {
