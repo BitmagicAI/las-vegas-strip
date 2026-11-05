@@ -18,7 +18,7 @@ Existing source support tests:635Albo/Dinos and126courtyard samples passed.16CPU
 
 Matching p95 milliseconds: Albo front18.6→19.0, Dinos street17.9→19.0, patio18.7→19.4, aerial18.6→19.3; courtyard front18.9→18.9, inside18.8→19.8, office20.2→19.1, aerial18.4→19.0. Largest increase6.15%; no observed >10%regression.900warmframes, streaming quiet+60settle,180samples/view,960×540DPR1ultra. Static short samples do not establish sustained60fps or driving performance.
 
-Actual after walks and smoke results pending.
+Actual installed20groundlegs passed before/after, including4officeapproach legs; all six after endpoint images inspected. Smoke9/9stops passed with0failed requests/page errors/console errors. New Git LFS12,348,405bytes in33unique objects across all own commits including proofs; see lfs-audit.json.
 
 ## Decisions for the owner
 
