@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232358896,
+ "bytes": 1232406341,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 698072,
-   "sha256": "e243c3eafe1c5fca9fa01005fe0a7084a263b51845b63b817e52dd93f19b2e04",
+   "bytes": 699949,
+   "sha256": "64ddf0235daf6e7bfb6d542c1d5dae826598223ba32872a25cc3507944cd0a60",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "aed10ea397360a035a64103ae481fda07e479f30a8d3611a0ee0c137f12e20d0",
+   "sha256": "ce289e78693b65e5a624085f05ecc073a35ebb9740396ee68cc1a4c41e7766de",
    "kind": "runtime cell manifest"
   },
   {
@@ -10590,8 +10590,8 @@
   },
   {
    "path": "build/strip-landmarks/santaPaula1807-exterior.glb",
-   "bytes": 12682172,
-   "sha256": "de55c1fa0b08412dfa1f0d596442e317be0393a2a68c0de1917d55304e4916d2",
+   "bytes": 12728200,
+   "sha256": "1b76f1c3ece7b5547a5ba09b1bc35b1d230e7c5f342ba453808b26decc410cb9",
    "kind": "optimized"
   },
   {
@@ -10614,8 +10614,8 @@
   },
   {
    "path": "build/strip-landmarks/santaPaulaNorth-exterior.glb",
-   "bytes": 685740,
-   "sha256": "5dcbd1884428d72f9580447285944c997bf822cffb57ed29bb53eedcd47e457a",
+   "bytes": 685280,
+   "sha256": "942119ec17f38bfb9bae90dedfa3f6edcfd5c0796f81d36ffc91ea616022ba0f",
    "kind": "optimized"
   },
   {

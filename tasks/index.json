@@ -10110,7 +10110,7 @@
     "Side/rear door locations and stair dimensions inferred",
     "Facade proportions approximate; chainlink fence coarse and courtyard planting sparse",
     "Exterior only; interiors not implemented",
-    "Neutral daylight and full driving benchmark not performed"
+    "Neutral daylight refinement review is recorded separately; full driving benchmark remains unperformed"
    ],
    "record": "tools/resort-blocks/santa-paula-1807-1811.json",
    "buildings": [
@@ -10137,6 +10137,7 @@
     ],
     "builders": [
      "tools/strip-landmarks/export_santa_paula_1807.py",
+     "tools/city-exteriors/install-santa-paula-eight-refinement.mjs",
      "tools/city-exteriors/stair-santa-paula-1807.mjs",
      "tools/city-exteriors/test-santa-paula-1807.mjs",
      "tools/strip-landmarks/santa_paula_1807.py"
@@ -10161,9 +10162,9 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Roof and window proportions approximate; rooftop equipment simplified",
-    "All south-side gallery/stair layouts inferred where street references obscure access",
-    "Yards lack referenced trees and shrubs; fence representations approximate",
-    "No interior implementation, neutral daylight review or route performance benchmark"
+    "South-side gallery/stair layouts inferred; olive ground frontage door and gray entry/gallery arrangement differ from generic modeled layout",
+    "Yards lack referenced trees/shrubs; side gates, fence dimensions and exact boundaries remain approximate; purple address modeled1725 versus satellite1727 unresolved",
+    "No interior implementation or driving benchmark; neutral daylight refinement evidence is recorded separately"
    ],
    "record": "tools/resort-blocks/santa-paula-north-row.json",
    "buildings": [
@@ -10209,6 +10210,7 @@
      "tools/resort-blocks/santa-paula-north-row.json"
     ],
     "builders": [
+     "tools/city-exteriors/install-santa-paula-eight-refinement.mjs",
      "tools/city-exteriors/stair-santa-paula-north.mjs",
      "tools/city-exteriors/test-santa-paula-north.mjs",
      "tools/strip-landmarks/santa_paula_north.py"

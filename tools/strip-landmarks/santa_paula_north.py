@@ -66,9 +66,19 @@ def exterior(B):
    W.box('spn-service-paint',(x,7.55,z),(1.3,.85,1.5));W.box('spn-vent-paint',(x,8,z),(1.13,.03,1.3))
   B.planar('spn-concrete',p.buffer(1.85,join_style=2).difference(p),.18,True)
   yard=box(1992,p.bounds[1],p.bounds[0],p.bounds[3]);B.planar('spn-gravel',yard,.17,True)
-  # Sparse metal perimeter fence, with a pedestrian gap beside the gallery.
-  for z in np.arange(p.bounds[1],p.bounds[3]-.8,.22):W.box('spn-fence-paint',(1992, .8,float(z)),(.03,1.25,.03))
-  W.box('spn-fence-paint',(1992,1.33,(p.bounds[1]+p.bounds[3]-.8)/2),(.04,.045,p.bounds[3]-p.bounds[1]-.8))
+  # Dated street references: open cream/charcoal parking fronts, metal fences elsewhere.
+  # Preserve the existing pedestrian gap and collision; heights and spacing are inferred.
+  if idx not in [3,4]:
+   mat='spn-frame-paint' if idx==2 else 'spn-fence-paint'
+   top=1.22 if idx==5 else 1.48
+   for z in np.arange(p.bounds[1],p.bounds[3]-.8,.19):
+    z=float(z);W.box(mat,(1992,(top+.18)/2,z),(.03,top-.18,.03))
+    # Small pointed caps visible on the pale middle fence.
+    if idx==2:W.lathe(mat,1992,z,[(top,.035),(top+.09,0)],4)
+   for y in [.42,top-.18]:
+    W.box(mat,(1992,y,(p.bounds[1]+p.bounds[3]-.8)/2),(.045,.045,p.bounds[3]-p.bounds[1]-.8))
+   for z in np.arange(p.bounds[1],p.bounds[3]-.8,2.4):
+    W.box(mat,(1992,(top+.18)/2,float(z)),(.07,top-.18,.07))
   for x in np.arange(p.bounds[0]+.5,p.bounds[2],1.2):
    for z in np.arange(p.bounds[1]+.5,p.bounds[3],1.2):
     if p.buffer(-.25).contains(Point(x,z)):samples.append([float(x),hh(x,z)+.3 if idx in [0,3,4] else 7.35,float(z)])
