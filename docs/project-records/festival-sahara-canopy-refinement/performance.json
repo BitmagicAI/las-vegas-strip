@@ -1,0 +1,48 @@
+{
+  "method": "Exact ab348c78 local LFS four-asset interception; six matched neutral daylight cameras, 960x540 DPR1 ultra, 900-frame warmup and streaming quiet plus60frames, five180frame windows. Before then after serial.",
+  "rows": [
+    {
+      "building": "festival-grounds-service",
+      "view": "front",
+      "beforeMedianP95Ms": 18.200000047683716,
+      "afterMedianP95Ms": 32,
+      "changePercent": 75.82417536351922
+    },
+    {
+      "building": "festival-grounds-service",
+      "view": "roof",
+      "beforeMedianP95Ms": 17.700000047683716,
+      "afterMedianP95Ms": 18.799999952316284,
+      "changePercent": 6.214688709995331
+    },
+    {
+      "building": "festival-grounds-service",
+      "view": "south",
+      "beforeMedianP95Ms": 17.5,
+      "afterMedianP95Ms": 18.09999990463257,
+      "changePercent": 3.428570883614679
+    },
+    {
+      "building": "mcdonalds-sahara-canopy",
+      "view": "front",
+      "beforeMedianP95Ms": 22.299999952316284,
+      "afterMedianP95Ms": 17.600000143051147,
+      "changePercent": -21.07623237361017
+    },
+    {
+      "building": "mcdonalds-sahara-canopy",
+      "view": "under",
+      "beforeMedianP95Ms": 18.09999990463257,
+      "afterMedianP95Ms": 17.90000009536743,
+      "changePercent": -1.104971327728832
+    },
+    {
+      "building": "mcdonalds-sahara-canopy",
+      "view": "roof",
+      "beforeMedianP95Ms": 17.699999809265137,
+      "afterMedianP95Ms": 18.199999809265137,
+      "changePercent": 2.824858787502782
+    }
+  ],
+  "conclusion": "UNRESOLVED Festival front median p95 18.2 to32.0ms (+75.82%); no merge. Other views within +6.22% or improved. Focused reversed-order longer-warmup investigation next; no sustained fps claim."
+}

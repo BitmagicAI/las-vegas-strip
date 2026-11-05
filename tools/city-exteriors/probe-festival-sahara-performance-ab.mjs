@@ -74,7 +74,7 @@ try {
   const result=await page.evaluate(async body=>{const probe=window.__afterlightProbe,engine=probe.engine(),scene=engine.scene,renderer=probe.renderer();
     return await (new Function('probe','engine','scene','renderer',`return (async()=>{${body}})()`))(probe,engine,scene,renderer);},body);
   fs.writeFileSync(`${outDir}/results.json`,JSON.stringify(result,null,2)+'\n');
-  if(opt('festival-sahara-baseline',false)){if(new Set(officeHits.map(x=>x.oid)).size!==4)throw new Error('Festival/Sahara baseline did not intercept all four assets');fs.writeFileSync(`${outDir}/baseline-interceptions.json`,JSON.stringify(officeHits,null,2)+'\n');}
+  if(opt('festival-sahara-baseline',false)){const manifest=JSON.parse(fs.readFileSync('build/city-exteriors/festival-sahara-performance-baseline/manifest.json'));const expected=opt('festival-front-only',false)?manifest.files.filter(x=>x.path==='baked/cells/cell-1_-4.bin'||x.path==='strip-landmarks/festivalGroundsService-exterior.glb'):manifest.files;const hits=new Set(officeHits.map(x=>x.oid));if(!expected.every(x=>hits.has(x.oid)))throw new Error('Festival/Sahara baseline did not intercept required assets');fs.writeFileSync(`${outDir}/baseline-interceptions.json`,JSON.stringify(officeHits,null,2)+'\n');}
   console.log(JSON.stringify(result,null,1));
   if(opt('lod-baseline',false)){if(!lodBaselinePatches)throw new Error('LOD baseline was not installed');console.error(`LOD baseline installed in ${lodBaselinePatches} module response(s)`);}
   const errs=logs.filter(l=>/PAGEERROR|error/i.test(l)).slice(0,8);if(errs.length)console.error('page errors:\n'+errs.join('\n'));
