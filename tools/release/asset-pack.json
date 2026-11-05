@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232162579,
+ "bytes": 1232166042,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 696794,
-   "sha256": "c4438c7976f800bfcd5d01e424692d99d1e46a6584a18a56986038312d2f8617",
+   "bytes": 696893,
+   "sha256": "8f6d38871b1e219584bf09f56f7fd420a6e73d4f065c064b7124266821c14d1b",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "83675e56779427535b7de6bc9842b671354841b014fcb3718a3caaa971b27442",
+   "sha256": "ff5c9b2f467fc5038a11089190eaa696565027aebc75d1097979ef082af78e63",
    "kind": "runtime cell manifest"
   },
   {
@@ -7842,8 +7842,8 @@
   },
   {
    "path": "build/strip-landmarks/cityMarketLiquor-exterior.glb",
-   "bytes": 308796,
-   "sha256": "b7372e770212bd680627a13538133e06163141623f76244ca8e2ff1ee2f7c0a2",
+   "bytes": 310588,
+   "sha256": "cd43284750686a53b5b55576912584cc72929d8156ac0c7bedf577691768336a",
    "kind": "optimized"
   },
   {
@@ -10902,8 +10902,8 @@
   },
   {
    "path": "build/strip-landmarks/stLouisOffice515-exterior.glb",
-   "bytes": 399516,
-   "sha256": "61a8b997f504ab416a582942baab58858367bb9a0912773e6320868616f2714c",
+   "bytes": 401088,
+   "sha256": "a78c9b10b7394c5adcf4a8efd3f4a3bf0d0cd2b94f8155cbb3ff18094903d4bb",
    "kind": "optimized"
   },
   {
