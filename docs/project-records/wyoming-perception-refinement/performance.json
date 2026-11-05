@@ -1,0 +1,48 @@
+{
+  "method": "Exact base 55d96d49 assets intercepted only in baseline browser; four distinct asset OIDs required. Same six cameras, 960x540 DPR1 ultra neutral daylight, 900 warm+stream quiet+60 settle, five180frame windows per view; serial runs.",
+  "results": [
+    {
+      "site": "wyoming-17-frontage",
+      "view": "front",
+      "beforeMedianP95": 18.200000047683716,
+      "afterMedianP95": 17.600000143051147,
+      "changePercent": -3.296702764069115
+    },
+    {
+      "site": "wyoming-17-frontage",
+      "view": "roof",
+      "beforeMedianP95": 18.40000009536743,
+      "afterMedianP95": 19.399999856948853,
+      "changePercent": 5.434781284773971
+    },
+    {
+      "site": "wyoming-17-frontage",
+      "view": "storefront",
+      "beforeMedianP95": 18.09999990463257,
+      "afterMedianP95": 19.399999856948853,
+      "changePercent": 7.182320216386073
+    },
+    {
+      "site": "perception-museum",
+      "view": "front",
+      "beforeMedianP95": 17.40000009536743,
+      "afterMedianP95": 18,
+      "changePercent": 3.4482752950806717
+    },
+    {
+      "site": "perception-museum",
+      "view": "roof",
+      "beforeMedianP95": 17.40000009536743,
+      "afterMedianP95": 18.700000047683716,
+      "changePercent": 7.47126405282259
+    },
+    {
+      "site": "perception-museum",
+      "view": "plaza",
+      "beforeMedianP95": 17.5,
+      "afterMedianP95": 18.40000009536743,
+      "changePercent": 5.142857687813884
+    }
+  ],
+  "interpretation": "Initial Wyoming front/roof spikes did not recur: fivewindow median p95 max +7.47%; temporal variability remains, no sustained60fps or full driving claim. Initial data preserved."
+}

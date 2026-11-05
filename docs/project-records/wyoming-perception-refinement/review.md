@@ -2,11 +2,11 @@
 
 Wyoming rooftop billboard has exposed rear stiffeners and edge rails. Perception bollards have closed inclined caps, retaining their positions, bands and hidden colliders. All six matched front-first daylight afterviews inspected; details visible. This remains a partial exterior refinement: palms, facade graphic accuracy, weathering, hidden access, current tenancy/operations and wider site details remain unresolved.
 
-Both GLBs level+WebP optimized before install. One grouped bake; unrelated Gold Coast/Wyndham regenerated differences restored.90/92 cell binaries unchanged, only1_-4 and2_-6 changed. Both source collision JSONs byte-identical.1697 reproducible support samples and24CPUlegs pass; original ignored294/395sample sets unavailable.24actualbaselinelegs/four endpoint images passed and preserved. Afteractualwalk/smoke pending.
+Both GLBs level+WebP optimized before install. One grouped bake; unrelated Gold Coast/Wyndham regenerated differences restored.90/92 cell binaries unchanged, only1_-4 and2_-6 changed. Both source collision JSONs byte-identical.1697 reproducible support samples and24CPUlegs pass; original ignored294/395sample sets unavailable.24actualbaselinelegs/four endpoint images passed and preserved. All24 actual afterlegs passed; four endpoint images inspected and preserved. Nine-stop smoke passed with zero request/page/console errors.
 
 Typecheck,3regressiontests,optimization,bakefreshness,assetpack,resortrecords andpublic checks pass (0failures11existingwarnings).
 
-Initial performance: Wyoming front18.7→29.1ms androof19.9→27.1ms p95 regressions remain unresolved; storefront19.3→18.2ms. Perception24.3/19.1/18.9→18.5/18.9/18.1ms. Exact original-asset browser-only fivewindow A/B prepared to distinguish geometry cost from temporal noise. Do not merge until investigated.
+Initial performance: Wyoming front18.7→29.1ms androof19.9→27.1ms p95 regressions prompted the controlled comparison below; storefront19.3→18.2ms. Perception24.3/19.1/18.9→18.5/18.9/18.1ms. Exact original-asset browser-only fivewindow A/B completed with four baseline assets verified. Median p95 Wyoming18.2/18.4/18.1→17.6/19.4/19.4ms; Perception17.4/17.4/17.5→18.0/18.7/18.4ms. Largest increase7.47%; initial spikes did not recur at that magnitude. Temporal variability remains; initial data retained.
 
 ## Decisions for the owner
 

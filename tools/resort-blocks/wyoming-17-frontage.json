@@ -119,5 +119,11 @@
       "build/strip-landmarks/wyoming17Frontage-exterior.glb": "5341ce103ee798b1eb932954e7de84ceb95f542dbfcf35491f69751ec3e52341",
       "build/strip-landmarks/wyoming17Frontage-exterior-collision.json": "c41163955677014c383628e3a83f5b9ebf323c156cc8b8ef198f2ee211d523c9"
     }
+  },
+  "refinement20261105": {
+    "record": "docs/project-records/wyoming-perception-refinement/review.md",
+    "change": "Exposed billboard rear stiffeners and perimeter rails",
+    "validation": "1697 support samples,24CPU and24actual legs before/after; sixmatcheddaylight views; exactbase fivewindowperformanceAB; allstep7 and9smoke pass",
+    "status": "refinement-deferred"
   }
 }
