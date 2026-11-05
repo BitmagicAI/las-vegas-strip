@@ -42,7 +42,8 @@
     "ownership": "build/city-exteriors/oakey-offices-ownership-audit.json",
     "visualReview": "Installed north/east/aerial inspected; north repeated after feather-banner silhouette and readable vertical lettering correction. 9296 authored triangles,23 batches,0.60 MiB optimized.396 support samples and6 walking legs pass.36 old visual/collision triangles removed. Typecheck passed. Static960x540 p50~16.8ms/p95~18.6ms is not driving-route performance evidence.",
     "refinement505": "docs/project-records/oakey-santa-paula-refinement",
-    "visualReview505": "Six matching neutral daylight views inspected: distinct Oakey roof hues corrected after material remapping defect; Santa palm open waist filled with folded overlapping fronds, residual stylization retained. Twelve actual movement legs pass; nine-stop smoke clean. Performance repeat pending; no whole-block completion."
+    "visualReview505": "Six matching neutral daylight views inspected: distinct Oakey roof hues corrected after material remapping defect; Santa palm open waist filled with folded overlapping fronds, residual stylization retained. Twelve actual movement legs pass; nine-stop smoke clean. Controlled extended performance comparison shows no sustained >10% regression; no whole-block completion.",
+    "performance505": "docs/project-records/oakey-santa-paula-refinement/performance-ab/windows-comparison.json"
   },
   "finalBuild": {
     "files": {

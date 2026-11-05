@@ -74,7 +74,7 @@ After
 
 900 support samples and12 CPU walking legs passed. Twelve actual forward/return movement legs passed before and after; four after endpoints visually inspected. Nine-stop dev smoke: no failed requests, page/console errors or misplaced stops. Typecheck, three runtime regression tests, record review, public check, optimization, bake freshness and asset pack passed. Two optimized WebP models; one changed cell, other91 cells unchanged. A second grouped bake was required for the caught material defect; first attempt evidence retained.
 
-Corrected-build first performance capture showed several >10% p95 regressions. An identical-camera repeat is pending; both runs will remain in the record. No 60fps, speedup, cold-stall or vehicle-driving claim.
+Extended exact-base browser A/B, five consecutive180-frame windows per view, reversed run order (current then baseline): median-window p95 baseline→current Oakey front37→26.3ms,east18.1→17.7,aerial17.8→17.6; Santa front17.8→17.7,east17.5→18.2(+4%),aerial18.1→18.1. No sustained >10% regression in this comparison. Large earlier front/aerial spikes also occur with baseline assets; root cause not established. All short samples/windows retained; no speedup or sustained60fps claim.
 
 ## Decisions for the owner
 
