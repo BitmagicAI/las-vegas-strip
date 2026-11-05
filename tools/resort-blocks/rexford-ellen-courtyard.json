@@ -26,7 +26,7 @@
     "Trees, materials and exact courtyard circulation need further reference",
     "Street view partly occluded by neighboring house",
     "Sparse tree LOD and empty planting beds remain approximate",
-    "Neutral daylight baseline captured; matched after comparison and full driving benchmark not yet complete",
+    "Six matched neutral daylight comparisons completed for the pair; full driving benchmark remains outside these static measurements",
     "Pool surround reddish coating and dense mature courtyard planting visible in satellite remain unmodeled in this facade-pier pass; exact layout and species need corroboration."
   ],
   "triangles": 29052,
@@ -122,6 +122,6 @@
   "refinement20261105": {
     "record": "docs/project-records/rexford-casino-courtyard-refinement",
     "changes": "Cream screen-framing facade piers",
-    "checks": "4116support samples,24ground+18stair CPU and actual baseline legs pass. Matched after and remaining step7 pending."
+    "checks": "All step7 local checks pass;4116support samples,24ground+18stair CPU and actual before/after legs pass. Six matched views inspected;maxp95increase3.30%. Nine-stop smoke zero errors.90/92cells unchanged; sourcecollisions and streettree transforms unchanged."
   }
 }

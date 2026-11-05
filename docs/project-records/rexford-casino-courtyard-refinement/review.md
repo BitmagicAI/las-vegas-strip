@@ -10,7 +10,7 @@ Both property-specific exporters preserve the existing street-tree LODs; 27 Rexf
 
 Typecheck and3regressiontests pass. Optimization2/2, bakefreshness, assetpack1930present/0missing/0unoptimized pass. Stage5copied1925unchanged0removed. Resortrecords pass; publiccheck0failures11existingwarnings.
 
-New reproducible4116roofsupport samples pass before/after,24CPUground and18CPUstair/gallery legs pass. The old ignored736/412sample sets were unavailable; the new count is not a reproduction claim.42actual keyboard walking/stair legs passed before;10endpoint images inspected. All six matched afterviews inspected: piers and scoped gallery coating/rails visible; existing trees preserved. Actualafter andsmoke pending.
+New reproducible4116roofsupport samples pass before/after,24CPUground and18CPUstair/gallery legs pass. The old ignored736/412sample sets were unavailable; the new count is not a reproduction claim.42actual keyboard walking/stair legs passed before;10endpoint images inspected. All six matched afterviews inspected: piers and scoped gallery coating/rails visible; existing trees preserved. All42 actual after walking/stair legs pass;10 endpoint images inspected. Nine-stop smoke passes with zero request/page/console errors.
 
 ## Decisions for the owner
 
