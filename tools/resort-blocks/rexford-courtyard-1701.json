@@ -31,17 +31,20 @@
     "views": "build/city-exteriors/rexford-courtyard-1701-final",
     "review": "Four installed views inspected; closed facade seam, removed screen/window intersections and added landing guard; final street/court rechecked",
     "tests": "639support6groundwalk6stairlegsPASS including upper/lower height assertions;10oldtri removed",
-    "implementation": "16164tri17batches.29MiBwebpoptimized"
+    "implementation": "16164tri17batches.29MiBwebpoptimized",
+    "refinement": "docs/project-records/carpets-rexford-refinement/review.md",
+    "refinementTests": "1378group support/headroom,12CPUground,6CPUstairs and18actualbefore/afterlegs pass. Sevenmatched daylight views inspected. Staticstep7checks pass. Performance investigation and smoke pending."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/rexfordCourtyard1701-exterior.glb": "ecb37809838c49a8730c8d48ab955a7888902559082cebecb9f00d8f7fbf4b24",
+      "build/strip-landmarks/rexfordCourtyard1701-exterior.glb": "05b2c15e6e1807c64f39a03bc27135cbeba8be929090c69e6055903f08d2fc47",
       "build/strip-landmarks/rexfordCourtyard1701-exterior-collision.json": "0c4860fc0235c9a11b77a8e7bd82a1ba008e8f1a054e9254934b204a81ea5f37"
-    }
+    },
+    "revision": "eb87606ca3ca7606"
   },
   "refinementCheckpoint": {
     "record": "docs/project-records/carpets-rexford-refinement",
-    "phase": "Optimized geometry installed; shared bake and installed after validation pending",
+    "phase": "Seven matched views and 18 actual walk legs passed; aerial performance A/B and smoke pending",
     "date": "2026-11-05",
     "pullRequest": 509,
     "baselineActualLegs": 18
