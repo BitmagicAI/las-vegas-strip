@@ -1,7 +1,7 @@
 // Use unchanged names and cameras for both before and after installation.
 let skyColor;scene.traverse(o=>{if(o.isDirectionalLight){o.color.setHex(0xffffff);o.intensity=2;skyColor=o.color.clone().setHex(0xc2d5e0);}if(o.isAmbientLight||o.isHemisphereLight){o.color.setHex(0xffffff);o.intensity=1.3;}if(/skybox/i.test(o.name))o.visible=false;});if(skyColor)scene.background=skyColor;
 const frame=()=>new Promise(r=>requestAnimationFrame(r));
-const meta={"routes": [{"name": "south-commercial-364846558", "points": [[-70, 0.3508767127990723, 3394.3], [-53, 0.35000004768371584, 3394.3], [-34, 0.34999659061431887, 3394.3], [-30.5, 0.2501633405685425, 3402]]}, {"name": "south-commercial-annex", "points": [[-108, 0.3200001955032349, 3404], [-108, 0.19026889801025393, 3416], [-108, 0.1898659706115723, 3429], [-100, 0.18999972343444826, 3434], [-90, 0.190233850479126, 3434], [-89, 0.18927993774414065, 3417], [-89, 0.17999997138977053, 3403]]}]};
+const meta={"routes": [{"name": "south-commercial-364846558", "points": [[-70, 0.3508767127990723, 3394.3], [-53, 0.35000004768371584, 3394.3], [-34, 0.34999659061431887, 3394.3], [-30.5, 0.2501633405685425, 3402]]}, {"name": "south-commercial-annex", "points": [[-108, 0.3200001955032349, 3404], [-108, 0.19026889801025393, 3416], [-108, 0.1898659706115723, 3429], [-108, 0.19, 3434], [-100, 0.18999972343444826, 3434], [-90, 0.190233850479126, 3434], [-89, 0.18927993774414065, 3417], [-89, 0.17999997138977053, 3403]]}]};
 const waitReady=async()=>{const end=performance.now()+120000;while(probe.streaming().busy){if(performance.now()>end)throw new Error('Area not ready');await frame();}};
 const allResults=[],doorEvents=[];
 const {getInteractionManager}=await import('/dist/engine/engine/InteractionManager.js');
