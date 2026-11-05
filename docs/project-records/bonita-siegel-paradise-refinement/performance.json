@@ -1,0 +1,62 @@
+{
+  "method": "Eight identical front-first neutral daylight cameras,960x540 DPR1 ultra,900warmupframes plus streamingquiet/60settle,180frame sample; serial before/after.",
+  "views": [
+    {
+      "building": "bonita-terrace",
+      "view": "front",
+      "beforeP95Ms": 18.799999952316284,
+      "afterP95Ms": 18.399999856948853,
+      "changePercent": -2.1276600871381834
+    },
+    {
+      "building": "bonita-terrace",
+      "view": "roof",
+      "beforeP95Ms": 19.200000047683716,
+      "afterP95Ms": 17.90000009536743,
+      "changePercent": -6.770833068165105
+    },
+    {
+      "building": "bonita-terrace",
+      "view": "court",
+      "beforeP95Ms": 19.200000047683716,
+      "afterP95Ms": 18.09999990463257,
+      "changePercent": -5.729167397496182
+    },
+    {
+      "building": "siegel-paradise",
+      "view": "front",
+      "beforeP95Ms": 18.59999990463257,
+      "afterP95Ms": 18.5,
+      "changePercent": -0.5376338986306184
+    },
+    {
+      "building": "siegel-paradise",
+      "view": "roof",
+      "beforeP95Ms": 18.600000143051147,
+      "afterP95Ms": 18.899999856948853,
+      "changePercent": 1.6129016752173708
+    },
+    {
+      "building": "siegel-paradise",
+      "view": "court",
+      "beforeP95Ms": 19.399999856948853,
+      "afterP95Ms": 19.700000047683716,
+      "changePercent": 1.546392747149472
+    },
+    {
+      "building": "siegel-paradise",
+      "view": "stairs",
+      "beforeP95Ms": 18.799999952316284,
+      "afterP95Ms": 18.799999952316284,
+      "changePercent": 0.0
+    },
+    {
+      "building": "siegel-paradise",
+      "view": "pool",
+      "beforeP95Ms": 20.199999809265137,
+      "afterP95Ms": 18.200000047683716,
+      "changePercent": -9.900989012208218
+    }
+  ],
+  "limitation": "Single static windows, not a moving-route benchmark or sustained60fps claim."
+}

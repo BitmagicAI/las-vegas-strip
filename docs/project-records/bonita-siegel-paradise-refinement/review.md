@@ -2,7 +2,7 @@
 
 Seven nearby wings: original strap-leaf rosettes in Bonita's existing soil beds and subtle roof seams across Siegel's five wings. Reference links, dates and inferred dimensions are in research.md. No whole-block or photorealism claim.
 
-Both GLBs exported with their established custom tree exporters, level optimized and WebP optimized before installation. Ten tree nodes in each GLB retained by exact name list. Both source collision JSON hashes unchanged. One grouped bake completed:91/92cell binaries byte-identical, onlycell-2_-5changed. UnrelatedGoldCoast/WyndhamLOD regeneration differences restored. Typecheck,3regressiontests,1323support/114CPUlegs,optimization2/2,bakefreshness,assetpack1930present0missing0unoptimized,resortreview/public0failures11existingwarnings pass. Final installed views/walks/smoke/performance pending.
+Both GLBs exported with their established custom tree exporters, level optimized and WebP optimized before installation. Ten tree nodes in each GLB retained by exact name list. Both source collision JSON hashes unchanged. One grouped bake completed:91/92cell binaries byte-identical, onlycell-2_-5changed. UnrelatedGoldCoast/WyndhamLOD regeneration differences restored. Typecheck,3regressiontests,1323support/114CPUlegs,optimization2/2,bakefreshness,assetpack1930present0missing0unoptimized,resortreview/public0failures11existingwarnings pass. Eight installed matched views and12actualendpoint images inspected. Bonita rosettes visible; Siegel seams remain very subtle at the wide roof camera and are not a claim of resolved roof fidelity.90actuallegs pass after (Bonita10supportedsubset,Siegel80), nine smoke stops allplaced withzero failedrequests/pageerrors/consoleerrors. Matching p95 changes range−9.90% to+1.61%; staticwindows only.
 
 ## Baseline evidence and discrepancy
 
@@ -26,31 +26,47 @@ CDN/published-game checks and owner review of inferred design choices. No publis
 
 ![Before](../../../public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-front.png)
 
+![After](../../../public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-front.png)
+
 ### bonita-terrace-roof
 
 ![Before](../../../public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-roof.png)
+
+![After](../../../public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-roof.png)
 
 ### bonita-terrace-court
 
 ![Before](../../../public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-court.png)
 
+![After](../../../public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-court.png)
+
 ### siegel-paradise-front
 
 ![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-front.png)
+
+![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-front.png)
 
 ### siegel-paradise-roof
 
 ![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-roof.png)
 
+![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-roof.png)
+
 ### siegel-paradise-court
 
 ![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-court.png)
+
+![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-court.png)
 
 ### siegel-paradise-stairs
 
 ![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-stairs.png)
 
+![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-stairs.png)
+
 ### siegel-paradise-pool
 
 ![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-pool.png)
+
+![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-pool.png)
 

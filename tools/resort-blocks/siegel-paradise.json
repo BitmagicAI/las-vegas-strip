@@ -159,9 +159,10 @@
   "refinement20261105": {
     "record": "docs/project-records/bonita-siegel-paradise-refinement/review.md",
     "research": "docs/project-records/bonita-siegel-paradise-refinement/research.md",
-    "status": "Installed optimized models; grouped bake and final installed verification pending",
+    "status": "Scoped installed refinement verified; remaining gaps retained",
     "changes": "Original1.2mestimated roof seam pattern across five existing roofs",
-    "historicalMetrics": "Top-level counts and tests describe the previous pass; see refinement evidence for current validation."
+    "historicalMetrics": "Top-level counts and tests describe the previous pass; see refinement evidence for current validation.",
+    "validation": "1323grouped support samples,114CPUlegs,90supported actuallegs before/after (Bonita10/Siegel80),8matcheddaylightviews,9smokestops,alllocalstep7 checks pass. Bonita full-world west/stair baselinefailure retained; not a fullcirculation pass. Matchingstaticp95 max+1.61%."
   },
   "historicalBuildBeforeRefinement20261105": {
     "files": {
