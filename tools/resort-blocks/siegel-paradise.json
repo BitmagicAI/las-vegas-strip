@@ -23,7 +23,7 @@
     "Stair bay dimensions and concealed door locations inferred",
     "Roadside fence, dense planting and western parking layout remain unfinished",
     "Window counts and facade proportions approximate; no interiors",
-    "Neutral daylight and full driving benchmark not performed"
+    "No full moving-route performance benchmark; matched neutral daylight baseline now recorded"
   ],
   "triangles": 66923,
   "batches": 21,
@@ -151,6 +151,20 @@
     "scope": "Only building-material triangles wholly in SiegelParadise mapped footprint; all other triangles retained exactly."
   },
   "finalBuild": {
+    "files": {
+      "build/strip-landmarks/siegelParadise-exterior.glb": "c3a57e15a10239a82a2a0a8a59ded9351f8dd980d618dfa06e52826e2786b252",
+      "build/strip-landmarks/siegelParadise-exterior-collision.json": "0e208876d3f984a02f54fdc1fbcddba0abd6f5f45fd0a28839ab0fceff2320a1"
+    }
+  },
+  "refinement20261105": {
+    "record": "docs/project-records/bonita-siegel-paradise-refinement/review.md",
+    "research": "docs/project-records/bonita-siegel-paradise-refinement/research.md",
+    "status": "Scoped installed refinement verified; remaining gaps retained",
+    "changes": "Original1.2mestimated roof seam pattern across five existing roofs",
+    "historicalMetrics": "Top-level counts and tests describe the previous pass; see refinement evidence for current validation.",
+    "validation": "1323grouped support samples,114CPUlegs,90supported actuallegs before/after (Bonita10/Siegel80),8matcheddaylightviews,9smokestops,alllocalstep7 checks pass. Bonita full-world west/stair baselinefailure retained; not a fullcirculation pass. Matchingstaticp95 max+1.61%."
+  },
+  "historicalBuildBeforeRefinement20261105": {
     "files": {
       "build/strip-landmarks/siegelParadise-exterior.glb": "37e5f1f5986fda9cf9f00334ca5d133cdf8177ffb62671d0dea43de11f39155f",
       "build/strip-landmarks/siegelParadise-exterior-collision.json": "0e208876d3f984a02f54fdc1fbcddba0abd6f5f45fd0a28839ab0fceff2320a1"

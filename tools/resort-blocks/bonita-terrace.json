@@ -22,10 +22,10 @@
     "Foliage uses summer CC0 tree asset; source street photo has leafless front tree"
   ],
   "remaining": [
-    "Front garden lacks dense low planting; summer tree asset differs from leafless February photo",
-    "West stair locations inferred, not surveyed; galleries and room bays approximate",
+    "Dense shrubs, flowers, privacy screen and seasonal tree appearance remain incomplete; scoped strap-leaf rosettes added with inferred spacing/species",
+    "West stairs/layout inferred: original CPU audit passes but full-world actual west route and stairs fail; adjacent-geometry overlap suspected, ownership/layout investigation remains",
     "Pool geometry installed using existing water material path; animation not separately verified",
-    "No interiors, neutral daylight or full driving benchmark"
+    "No interiors or full moving-route performance benchmark; matched neutral daylight baseline now recorded"
   ],
   "triangles": 27066,
   "batches": 30,
@@ -113,6 +113,20 @@
     "limitation": "Static views not driving benchmark"
   },
   "finalBuild": {
+    "files": {
+      "build/strip-landmarks/bonitaTerrace-exterior.glb": "600afbb184f3176f093c5aeaf93bfa6130e716b511ba2b0af26b818fcb5d497b",
+      "build/strip-landmarks/bonitaTerrace-exterior-collision.json": "c69b9ba5234d71b67b196979ec97ad8ef00e90dc813d1fd4fa1f23143b23e94d"
+    }
+  },
+  "refinement20261105": {
+    "record": "docs/project-records/bonita-siegel-paradise-refinement/review.md",
+    "research": "docs/project-records/bonita-siegel-paradise-refinement/research.md",
+    "status": "Scoped installed refinement verified; remaining gaps retained",
+    "changes": "Original24strap-leaf rosettes inside existing soil bed; path and trees retained",
+    "historicalMetrics": "Top-level counts and tests describe the previous pass; see refinement evidence for current validation.",
+    "validation": "1323grouped support samples,114CPUlegs,90supported actuallegs before/after (Bonita10/Siegel80),8matcheddaylightviews,9smokestops,alllocalstep7 checks pass. Bonita full-world west/stair baselinefailure retained; not a fullcirculation pass. Matchingstaticp95 max+1.61%."
+  },
+  "historicalBuildBeforeRefinement20261105": {
     "files": {
       "build/strip-landmarks/bonitaTerrace-exterior.glb": "26bce0566845b64e58baddc72677fb5661bbd1b32ed6bc0cfb381ac79e5b7f7e",
       "build/strip-landmarks/bonitaTerrace-exterior-collision.json": "c69b9ba5234d71b67b196979ec97ad8ef00e90dc813d1fd4fa1f23143b23e94d"

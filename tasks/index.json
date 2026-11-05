@@ -9838,10 +9838,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Front garden lacks dense low planting; summer tree asset differs from leafless February photo",
-    "West stair locations inferred, not surveyed; galleries and room bays approximate",
+    "Dense shrubs, flowers, privacy screen and seasonal tree appearance remain incomplete; scoped strap-leaf rosettes added with inferred spacing/species",
+    "West stairs/layout inferred: original CPU audit passes but full-world actual west route and stairs fail; adjacent-geometry overlap suspected, ownership/layout investigation remains",
     "Pool geometry installed using existing water material path; animation not separately verified",
-    "No interiors, neutral daylight or full driving benchmark"
+    "No interiors or full moving-route performance benchmark; matched neutral daylight baseline now recorded"
    ],
    "record": "tools/resort-blocks/bonita-terrace.json",
    "buildings": [
@@ -9870,9 +9870,9 @@
      "tools/city-exteriors/test-bonita-terrace.mjs",
      "tools/strip-landmarks/bonita_terrace.py",
      "tools/city-exteriors/replace-bonita-terrace.py",
+     "tools/city-exteriors/samples-bonita-siegel-refinement.py",
      "tools/city-exteriors/stair-bonita-north.mjs",
-     "tools/city-exteriors/stair-bonita-south.mjs",
-     "tools/city-exteriors/walk-bonita-terrace.mjs"
+     "tools/city-exteriors/stair-bonita-south.mjs"
     ]
    },
    "acceptance": [
@@ -10040,7 +10040,7 @@
     "Stair bay dimensions and concealed door locations inferred",
     "Roadside fence, dense planting and western parking layout remain unfinished",
     "Window counts and facade proportions approximate; no interiors",
-    "Neutral daylight and full driving benchmark not performed"
+    "No full moving-route performance benchmark; matched neutral daylight baseline now recorded"
    ],
    "record": "tools/resort-blocks/siegel-paradise.json",
    "buildings": [
@@ -10085,8 +10085,8 @@
      "tools/city-exteriors/stair-siegel-paradise.mjs",
      "tools/city-exteriors/test-siegel-paradise.mjs",
      "tools/city-exteriors/replace-siegel-paradise.py",
-     "tools/strip-landmarks/export_siegel_paradise.py",
-     "tools/strip-landmarks/build_siegel_paradise.py"
+     "tools/city-exteriors/samples-bonita-siegel-refinement.py",
+     "tools/strip-landmarks/build_bonita_siegel_refinement.py"
     ]
    },
    "acceptance": [
