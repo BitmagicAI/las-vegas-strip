@@ -1,1 +1,3 @@
 Claims167186 confirmed janiverse. Branch task/festival-sahara-canopy-refinement from currentorigin/next ab348c78 (PR512merged,165166closed). Two northStrip/Sahara sites about450m apart. Briefs/records read; no geometry edits. Nextsix neutraldaylight front-first baselines, reproducible support/CPU/actualwalks, freshdatedMaps+officialphotos before selecting improvements. Preserve hiddenaccess/function/canopyinferences/interiors/sitegaps; GPUserial.
+
+Sixbaselineviews GPU90589 running serial /tmp/fs-baseline.log, outputs build/city-exteriors/festival-grounds-service-refinement-before andmcdonalds-sahara-canopy-refinement-before. NootherGPU/Maps. Inspectall6thenCPU/actualbaseline.
