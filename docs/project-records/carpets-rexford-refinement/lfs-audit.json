@@ -3,6 +3,76 @@
   "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
   "objects": [
     {
+      "oid": "3a7111738c48d58adad7dd6589b47e2ab4109a1ff6b5b628109a94c7e7599470",
+      "bytes": 342805,
+      "path": "public/review/carpets-rexford-refinement/ab-after/carpets-rexford-window-0-front.png"
+    },
+    {
+      "oid": "d2f7c75bb7c1adaca1f078a33656098d0e6ce39e84a2716efa91b3f5c211b3fe",
+      "bytes": 356360,
+      "path": "public/review/carpets-rexford-refinement/ab-after/carpets-rexford-window-1-carpets-north.png"
+    },
+    {
+      "oid": "2dfb04f6d7ec17a8ff7aa54ff51b84c2238cf9cdf397c16a4fb44acfb6fa533e",
+      "bytes": 621362,
+      "path": "public/review/carpets-rexford-refinement/ab-after/carpets-rexford-window-2-carpets-aerial.png"
+    },
+    {
+      "oid": "6ce1608b843764f3300146cefe58e253ae2b0e1167323ccbeeee2c4c21d182d1",
+      "bytes": 395651,
+      "path": "public/review/carpets-rexford-refinement/ab-after/carpets-rexford-window-3-front.png"
+    },
+    {
+      "oid": "2f723cbc435006bd0912bcebdf00596a261fa6ee3670711eebf6484b1447052a",
+      "bytes": 358156,
+      "path": "public/review/carpets-rexford-refinement/ab-after/carpets-rexford-window-4-rexford-court.png"
+    },
+    {
+      "oid": "0ae61c0bb60497c77ae3b807db0ae1107d558ae8c37864eaa7644870bbf3d5fe",
+      "bytes": 231574,
+      "path": "public/review/carpets-rexford-refinement/ab-after/carpets-rexford-window-5-rexford-gallery.png"
+    },
+    {
+      "oid": "61433714928c4936075f448ac7af445b4f182357cba3598d12e740655d7a440b",
+      "bytes": 559064,
+      "path": "public/review/carpets-rexford-refinement/ab-after/carpets-rexford-window-6-rexford-aerial.png"
+    },
+    {
+      "oid": "60878b66264444c0fbf431f96ab36e7d1a0b7b4963b52090bd090d38f5c30d4f",
+      "bytes": 342324,
+      "path": "public/review/carpets-rexford-refinement/ab-before/carpets-rexford-window-0-front.png"
+    },
+    {
+      "oid": "89458242e19b3ad4155b502a8c5d96b06c290977ac9ff787d52a8e7b70629ad0",
+      "bytes": 356346,
+      "path": "public/review/carpets-rexford-refinement/ab-before/carpets-rexford-window-1-carpets-north.png"
+    },
+    {
+      "oid": "f45251df24f45409ddd0ce6a11074624c2deac74082c4fd2a9de7ac801283813",
+      "bytes": 620859,
+      "path": "public/review/carpets-rexford-refinement/ab-before/carpets-rexford-window-2-carpets-aerial.png"
+    },
+    {
+      "oid": "475489d57f996f54fc6f420fab6f76d5a14ff7ed43083c8d2150c6b1fbdec595",
+      "bytes": 392696,
+      "path": "public/review/carpets-rexford-refinement/ab-before/carpets-rexford-window-3-front.png"
+    },
+    {
+      "oid": "81cdacf189d02ff986a223484b0de06d8fa486c454722a8bcf81812d470cb571",
+      "bytes": 358257,
+      "path": "public/review/carpets-rexford-refinement/ab-before/carpets-rexford-window-4-rexford-court.png"
+    },
+    {
+      "oid": "afa5fdb6d6cca8f4be148282feedcd10b673d77db26b3b69d37cf14bcf5e1738",
+      "bytes": 231553,
+      "path": "public/review/carpets-rexford-refinement/ab-before/carpets-rexford-window-5-rexford-gallery.png"
+    },
+    {
+      "oid": "c66697d1760f010f27f2a38aaa1287c2fd693928e71ca65100454e4340a66ee4",
+      "bytes": 558387,
+      "path": "public/review/carpets-rexford-refinement/ab-before/carpets-rexford-window-6-rexford-aerial.png"
+    },
+    {
       "oid": "790dc387529ead8f13c87cbfd8a965708c2af91c37f75f47da9699c187817478",
       "bytes": 621363,
       "path": "public/review/carpets-rexford-refinement/after/carpets-galore-carpets-aerial.png"
@@ -68,24 +138,9 @@
       "path": "public/review/carpets-rexford-refinement/after/walk-return-1.png"
     },
     {
-      "oid": "f45251df24f45409ddd0ce6a11074624c2deac74082c4fd2a9de7ac801283813",
-      "bytes": 620859,
-      "path": "public/review/carpets-rexford-refinement/before/carpets-galore-carpets-aerial.png"
-    },
-    {
       "oid": "201c48da8415ebabbeb5b6c8ae3539cc1c0df85dabc7893064eaac55d61e55e9",
       "bytes": 356339,
       "path": "public/review/carpets-rexford-refinement/before/carpets-galore-carpets-north.png"
-    },
-    {
-      "oid": "60878b66264444c0fbf431f96ab36e7d1a0b7b4963b52090bd090d38f5c30d4f",
-      "bytes": 342324,
-      "path": "public/review/carpets-rexford-refinement/before/carpets-galore-front.png"
-    },
-    {
-      "oid": "475489d57f996f54fc6f420fab6f76d5a14ff7ed43083c8d2150c6b1fbdec595",
-      "bytes": 392696,
-      "path": "public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-front.png"
     },
     {
       "oid": "8945990c25bff6e3b97b1fb63eab982fadba3105352c0f47d6d95402fb1b5b74",
@@ -153,6 +208,6 @@
       "path": "runtime-assets/strip-landmarks/rexfordCourtyard1701-exterior.glb"
     }
   ],
-  "count": 30,
-  "bytes": 11875082
+  "count": 41,
+  "bytes": 16244597
 }

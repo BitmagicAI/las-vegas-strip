@@ -1,12 +1,12 @@
 # Carpets Galore and Rexford courtyard refinement
 
-Two mapped structures; scoped exterior detail pass, not full-block completion. Matched verification and performance investigation complete; smoke check pending.
+Two mapped structures; scoped exterior detail pass, not full-block completion. Matched verification, performance investigation and nine-stop smoke check passed.
 
 Carpets Galore: four small roof-mounted sign flood housings above the two west fascia runs, with non-emitting faces and existing materials. North pale-blue painted finish reviewed under neutral daylight. Rexford: a thin outer roof lip follows the existing rounded footprint. All dimensions are inferred; see research.md for dated references and decisions.
 
 One grouped bake, level plus WebP optimization for both models. No runtime lights, roads or interiors changed. Both source collisions retain their exact baseline hashes. Unrelated Gold Coast and Wyndham LOD regeneration restored;91/92 cell binaries remain byte-identical, onlycell2_-5 changes. Shared cell manifest and asset pack are the necessary out-of-scope data touches.
 
-Before and after:1378 source support/headroom samples,12CPUgroundlegs,6CPUstairs and18actual installed keyboard walk legs pass. All7matched daylight views and6afterwalk endpoint images inspected. The existing Blender rail validity warning produced no missing rails in the installed court/gallery/stair views. Typecheck,3regressiontests, recordreview, optimization2/2, bake freshness and assetpack1930present pass. Public-content check0failures,11existingwarnings. Smoke still pending.
+Before and after:1378 source support/headroom samples,12CPUgroundlegs,6CPUstairs and18actual installed keyboard walk legs pass. All7matched daylight views and6afterwalk endpoint images inspected. The existing Blender rail validity warning produced no missing rails in the installed court/gallery/stair views. Typecheck,3regressiontests, recordreview, optimization2/2, bake freshness and assetpack1930present pass. Public-content check0failures,11existingwarnings. Smoke:9/9 stops placed,0failed requests/page errors/console errors. New Git LFS16,244,597bytes in41uniqueobjects across all own commits, including baseline, after and A/B proofs.
 
 ## Performance discrepancy retained
 

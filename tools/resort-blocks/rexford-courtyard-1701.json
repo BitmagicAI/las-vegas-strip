@@ -33,7 +33,7 @@
     "tests": "639support6groundwalk6stairlegsPASS including upper/lower height assertions;10oldtri removed",
     "implementation": "16164tri17batches.29MiBwebpoptimized",
     "refinement": "docs/project-records/carpets-rexford-refinement/review.md",
-    "refinementTests": "1378group support/headroom,12CPUground,6CPUstairs and18actualbefore/afterlegs pass. Sevenmatched daylight views inspected. Staticstep7checks pass. Performance investigation and smoke pending."
+    "refinementTests": "1378group support/headroom,12CPUground,6CPUstairs and18actualbefore/afterlegs pass. Sevenmatched views and14A/Bimages inspected. Allstep7checks pass, smoke9/9 with0errors. Maximummedianp95increase6.29%; initialaerialspike retained."
   },
   "finalBuild": {
     "files": {
@@ -44,7 +44,7 @@
   },
   "refinementCheckpoint": {
     "record": "docs/project-records/carpets-rexford-refinement",
-    "phase": "Seven matched views and 18 actual walk legs passed; aerial performance A/B and smoke pending",
+    "phase": "Verified scoped pass: seven views,18actuallegs, five-window performance A/B and9stop smoke passed",
     "date": "2026-11-05",
     "pullRequest": 509,
     "baselineActualLegs": 18
