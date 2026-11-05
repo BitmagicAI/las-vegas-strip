@@ -1,0 +1,797 @@
+{
+  "santaPaula1807": {
+    "report.json": {
+      "rel": "build/strip-landmarks/santaPaula1807-exterior.glb",
+      "sourceSha256": "5cdd72dafb6d10522392fb14b3e1212c12874dcc52e18dc00e9e198cdfc4bae8",
+      "cls": "level",
+      "loader": "src/work/StripLandmarks.ts",
+      "when": "boot",
+      "label": "primary",
+      "preset": "level",
+      "overrides": [],
+      "exitCode": 0,
+      "signal": null,
+      "seconds": 1.326,
+      "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/santaPaula1807-exterior.glb .bitmagic/optimize/build/strip-landmarks/santaPaula1807-exterior/out.glb --preset=level --json",
+      "failed": [],
+      "stderr": [],
+      "report": {
+        "src": "build/strip-landmarks/santaPaula1807-exterior.glb",
+        "dst": ".bitmagic/optimize/build/strip-landmarks/santaPaula1807-exterior/out.glb",
+        "preset": "level",
+        "before": {
+          "bytes": 30605636,
+          "triangles": 276747,
+          "vertices": 518031,
+          "nodes": 32,
+          "skins": 0,
+          "animations": 0,
+          "gpuGeometry": 23116108,
+          "gpuTextures": 55569746,
+          "textures": [
+            {
+              "name": "tree_small_02_branch_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 581596,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_branch_diff_1k",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 449977,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_branch_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 375732,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 681604,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "png",
+              "bytes": 1047075,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 633698,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 1228646,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_diff_1k",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 863246,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 708242,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree-proof",
+              "slot": "base",
+              "w": 800,
+              "h": 900,
+              "mime": "png",
+              "bytes": 652270,
+              "gpu": 3840000
+            },
+            {
+              "name": "Original stone",
+              "slot": "base",
+              "w": 512,
+              "h": 512,
+              "mime": "png",
+              "bytes": 229228,
+              "gpu": 1398101
+            }
+          ],
+          "extensions": [
+            "KHR_texture_transform"
+          ]
+        },
+        "after": {
+          "bytes": 15195080,
+          "triangles": 276747,
+          "vertices": 518027,
+          "nodes": 32,
+          "skins": 0,
+          "animations": 0,
+          "gpuGeometry": 14698433,
+          "gpuTextures": 55569746,
+          "textures": [
+            {
+              "name": "tree_small_02_branch_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 581596,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_branch_diff_1k",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 449977,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_branch_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 375732,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 681604,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "png",
+              "bytes": 1047075,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 633698,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 1228646,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_diff_1k",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 863246,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 708242,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree-proof",
+              "slot": "base",
+              "w": 800,
+              "h": 900,
+              "mime": "png",
+              "bytes": 652270,
+              "gpu": 3840000
+            },
+            {
+              "name": "Original stone",
+              "slot": "base",
+              "w": 512,
+              "h": 512,
+              "mime": "png",
+              "bytes": 229228,
+              "gpu": 1398101
+            }
+          ],
+          "extensions": [
+            "EXT_meshopt_compression",
+            "KHR_mesh_quantization",
+            "KHR_texture_transform"
+          ]
+        },
+        "notes": [
+          "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+          "TEXCOORD_1 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant",
+          "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+        ],
+        "checks": [
+          {
+            "name": "node names",
+            "fail": false,
+            "detail": "32 kept"
+          },
+          {
+            "name": "texture slots",
+            "fail": false,
+            "detail": "11 kept"
+          },
+          {
+            "name": "vertex layout",
+            "fail": false,
+            "detail": "separate"
+          },
+          {
+            "name": "bounds",
+            "fail": false,
+            "detail": "0.000% of size"
+          },
+          {
+            "name": "smaller",
+            "fail": false,
+            "detail": "14.70 MiB saved"
+          },
+          {
+            "name": "Khronos validator",
+            "fail": false,
+            "detail": "0 errors (0 new), 3 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/4/primitives/0/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/4/primitives/1/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/4/primitives/2/material"
+          }
+        ]
+      }
+    },
+    "report-webp-textures.json": {
+      "rel": "build/strip-landmarks/santaPaula1807-exterior.glb",
+      "sourceSha256": "5cdd72dafb6d10522392fb14b3e1212c12874dcc52e18dc00e9e198cdfc4bae8",
+      "label": "variant webp-textures",
+      "preset": "level",
+      "overrides": [
+        "--base=webp",
+        "--emissive=webp",
+        "--orm=webp-lossless"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "seconds": 17.83,
+      "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/santaPaula1807-exterior.glb .bitmagic/optimize/build/strip-landmarks/santaPaula1807-exterior/out-webp-textures.glb --preset=level --base=webp --emissive=webp --orm=webp-lossless --json",
+      "failed": [],
+      "stderr": [],
+      "report": {
+        "src": "build/strip-landmarks/santaPaula1807-exterior.glb",
+        "dst": ".bitmagic/optimize/build/strip-landmarks/santaPaula1807-exterior/out-webp-textures.glb",
+        "preset": "level",
+        "before": {
+          "bytes": 30605636,
+          "triangles": 276747,
+          "vertices": 518031,
+          "nodes": 32,
+          "skins": 0,
+          "animations": 0,
+          "gpuGeometry": 23116108,
+          "gpuTextures": 55569746,
+          "textures": [
+            {
+              "name": "tree_small_02_branch_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 581596,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_branch_diff_1k",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 449977,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_branch_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 375732,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 681604,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "png",
+              "bytes": 1047075,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 633698,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 1228646,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_diff_1k",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 863246,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 708242,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree-proof",
+              "slot": "base",
+              "w": 800,
+              "h": 900,
+              "mime": "png",
+              "bytes": 652270,
+              "gpu": 3840000
+            },
+            {
+              "name": "Original stone",
+              "slot": "base",
+              "w": 512,
+              "h": 512,
+              "mime": "png",
+              "bytes": 229228,
+              "gpu": 1398101
+            }
+          ],
+          "extensions": [
+            "KHR_texture_transform"
+          ]
+        },
+        "after": {
+          "bytes": 12728200,
+          "triangles": 276747,
+          "vertices": 518027,
+          "nodes": 32,
+          "skins": 0,
+          "animations": 0,
+          "gpuGeometry": 14698433,
+          "gpuTextures": 55569746,
+          "textures": [
+            {
+              "name": "tree_small_02_branch_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 581596,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_branch_diff_1k",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "webp",
+              "bytes": 108330,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_branch_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 375732,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 681604,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "webp",
+              "bytes": 185084,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_leaves_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 633698,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_nor_gl_1k",
+              "slot": "normal",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 1228646,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_diff_1k",
+              "slot": "base",
+              "w": 1024,
+              "h": 1024,
+              "mime": "webp",
+              "bytes": 314700,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree_small_02_arm_1k",
+              "slot": "orm",
+              "w": 1024,
+              "h": 1024,
+              "mime": "jpeg",
+              "bytes": 708242,
+              "gpu": 5592405
+            },
+            {
+              "name": "tree-proof",
+              "slot": "base",
+              "w": 800,
+              "h": 900,
+              "mime": "webp",
+              "bytes": 145532,
+              "gpu": 3840000
+            },
+            {
+              "name": "Original stone",
+              "slot": "base",
+              "w": 512,
+              "h": 512,
+              "mime": "webp",
+              "bytes": 21056,
+              "gpu": 1398101
+            }
+          ],
+          "extensions": [
+            "EXT_meshopt_compression",
+            "EXT_texture_webp",
+            "KHR_mesh_quantization",
+            "KHR_texture_transform"
+          ]
+        },
+        "notes": [
+          "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+          "texture tree_small_02_branch_arm_1k kept: the webp-lossless re-encode was not smaller than the original",
+          "texture tree_small_02_leaves_arm_1k kept: the webp-lossless re-encode was not smaller than the original",
+          "texture tree_small_02_arm_1k kept: the webp-lossless re-encode was not smaller than the original",
+          "TEXCOORD_1 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant",
+          "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+        ],
+        "checks": [
+          {
+            "name": "node names",
+            "fail": false,
+            "detail": "32 kept"
+          },
+          {
+            "name": "texture slots",
+            "fail": false,
+            "detail": "11 kept"
+          },
+          {
+            "name": "vertex layout",
+            "fail": false,
+            "detail": "separate"
+          },
+          {
+            "name": "bounds",
+            "fail": false,
+            "detail": "0.000% of size"
+          },
+          {
+            "name": "smaller",
+            "fail": false,
+            "detail": "17.05 MiB saved"
+          },
+          {
+            "name": "Khronos validator",
+            "fail": false,
+            "detail": "0 errors (0 new), 3 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/4/primitives/0/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/4/primitives/1/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/4/primitives/2/material"
+          }
+        ]
+      }
+    }
+  },
+  "santaPaulaNorth": {
+    "report.json": {
+      "rel": "build/strip-landmarks/santaPaulaNorth-exterior.glb",
+      "sourceSha256": "488d80b3feb0f7fe46839a9aa09c4b5b01cfa242616efc76655eb83f7f93a53f",
+      "cls": "level",
+      "loader": "src/work/StripLandmarks.ts",
+      "when": "boot",
+      "label": "primary",
+      "preset": "level",
+      "overrides": [],
+      "exitCode": 0,
+      "signal": null,
+      "seconds": 0.448,
+      "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/santaPaulaNorth-exterior.glb .bitmagic/optimize/build/strip-landmarks/santaPaulaNorth-exterior/out.glb --preset=level --json",
+      "failed": [],
+      "stderr": [],
+      "report": {
+        "src": "build/strip-landmarks/santaPaulaNorth-exterior.glb",
+        "dst": ".bitmagic/optimize/build/strip-landmarks/santaPaulaNorth-exterior/out.glb",
+        "preset": "level",
+        "before": {
+          "bytes": 2368588,
+          "triangles": 38821,
+          "vertices": 73560,
+          "nodes": 39,
+          "skins": 0,
+          "animations": 0,
+          "gpuGeometry": 2097854,
+          "gpuTextures": 1398101,
+          "textures": [
+            {
+              "name": "Original stone",
+              "slot": "base",
+              "w": 512,
+              "h": 512,
+              "mime": "png",
+              "bytes": 229228,
+              "gpu": 1398101
+            }
+          ],
+          "extensions": []
+        },
+        "after": {
+          "bytes": 893388,
+          "triangles": 38821,
+          "vertices": 73560,
+          "nodes": 39,
+          "skins": 0,
+          "animations": 0,
+          "gpuGeometry": 1411606,
+          "gpuTextures": 1398101,
+          "textures": [
+            {
+              "name": "Original stone",
+              "slot": "base",
+              "w": 512,
+              "h": 512,
+              "mime": "png",
+              "bytes": 229228,
+              "gpu": 1398101
+            }
+          ],
+          "extensions": [
+            "EXT_meshopt_compression",
+            "KHR_mesh_quantization"
+          ]
+        },
+        "notes": [
+          "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+          "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+        ],
+        "checks": [
+          {
+            "name": "node names",
+            "fail": false,
+            "detail": "39 kept"
+          },
+          {
+            "name": "texture slots",
+            "fail": false,
+            "detail": "1 kept"
+          },
+          {
+            "name": "vertex layout",
+            "fail": false,
+            "detail": "separate"
+          },
+          {
+            "name": "bounds",
+            "fail": false,
+            "detail": "0.000% of size"
+          },
+          {
+            "name": "smaller",
+            "fail": false,
+            "detail": "1.41 MiB saved"
+          },
+          {
+            "name": "Khronos validator",
+            "fail": false,
+            "detail": "0 errors (0 new), 0 warnings"
+          }
+        ]
+      }
+    },
+    "report-webp-textures.json": {
+      "rel": "build/strip-landmarks/santaPaulaNorth-exterior.glb",
+      "sourceSha256": "488d80b3feb0f7fe46839a9aa09c4b5b01cfa242616efc76655eb83f7f93a53f",
+      "label": "variant webp-textures",
+      "preset": "level",
+      "overrides": [
+        "--base=webp",
+        "--emissive=webp",
+        "--orm=webp-lossless"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "seconds": 0.49,
+      "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/santaPaulaNorth-exterior.glb .bitmagic/optimize/build/strip-landmarks/santaPaulaNorth-exterior/out-webp-textures.glb --preset=level --base=webp --emissive=webp --orm=webp-lossless --json",
+      "failed": [],
+      "stderr": [],
+      "report": {
+        "src": "build/strip-landmarks/santaPaulaNorth-exterior.glb",
+        "dst": ".bitmagic/optimize/build/strip-landmarks/santaPaulaNorth-exterior/out-webp-textures.glb",
+        "preset": "level",
+        "before": {
+          "bytes": 2368588,
+          "triangles": 38821,
+          "vertices": 73560,
+          "nodes": 39,
+          "skins": 0,
+          "animations": 0,
+          "gpuGeometry": 2097854,
+          "gpuTextures": 1398101,
+          "textures": [
+            {
+              "name": "Original stone",
+              "slot": "base",
+              "w": 512,
+              "h": 512,
+              "mime": "png",
+              "bytes": 229228,
+              "gpu": 1398101
+            }
+          ],
+          "extensions": []
+        },
+        "after": {
+          "bytes": 685280,
+          "triangles": 38821,
+          "vertices": 73560,
+          "nodes": 39,
+          "skins": 0,
+          "animations": 0,
+          "gpuGeometry": 1411606,
+          "gpuTextures": 1398101,
+          "textures": [
+            {
+              "name": "Original stone",
+              "slot": "base",
+              "w": 512,
+              "h": 512,
+              "mime": "webp",
+              "bytes": 21056,
+              "gpu": 1398101
+            }
+          ],
+          "extensions": [
+            "EXT_meshopt_compression",
+            "EXT_texture_webp",
+            "KHR_mesh_quantization"
+          ]
+        },
+        "notes": [
+          "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+          "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+        ],
+        "checks": [
+          {
+            "name": "node names",
+            "fail": false,
+            "detail": "39 kept"
+          },
+          {
+            "name": "texture slots",
+            "fail": false,
+            "detail": "1 kept"
+          },
+          {
+            "name": "vertex layout",
+            "fail": false,
+            "detail": "separate"
+          },
+          {
+            "name": "bounds",
+            "fail": false,
+            "detail": "0.000% of size"
+          },
+          {
+            "name": "smaller",
+            "fail": false,
+            "detail": "1.61 MiB saved"
+          },
+          {
+            "name": "Khronos validator",
+            "fail": false,
+            "detail": "0 errors (0 new), 0 warnings"
+          }
+        ]
+      }
+    }
+  }
+}

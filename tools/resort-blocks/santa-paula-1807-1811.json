@@ -20,7 +20,7 @@
     "Side/rear door locations and stair dimensions inferred",
     "Facade proportions approximate; chainlink fence coarse and courtyard planting sparse",
     "Exterior only; interiors not implemented",
-    "Neutral daylight and full driving benchmark not performed"
+    "Neutral daylight refinement review is recorded separately; full driving benchmark remains unperformed"
   ],
   "triangles": 17173,
   "batches": 23,
@@ -107,8 +107,22 @@
   },
   "finalBuild": {
     "files": {
+      "build/strip-landmarks/santaPaula1807-exterior.glb": "5cdd72dafb6d10522392fb14b3e1212c12874dcc52e18dc00e9e198cdfc4bae8",
+      "build/strip-landmarks/santaPaula1807-exterior-collision.json": "f6b565e996290bbf3462d3e20674cdf2b89cd70963bfae8be60ca389610a1a3c"
+    }
+  },
+  "historicalBuildBeforeRefinement20261105": {
+    "files": {
       "build/strip-landmarks/santaPaula1807-exterior.glb": "03f3ecd9715ddef5c5cc20f805d978cb3d4528449af3cf01b43b3d166e445733",
       "build/strip-landmarks/santaPaula1807-exterior-collision.json": "f6b565e996290bbf3462d3e20674cdf2b89cd70963bfae8be60ca389610a1a3c"
     }
+  },
+  "refinement20261105": {
+    "record": "docs/project-records/santa-paula-eight-refinement/review.md",
+    "research": "docs/project-records/santa-paula-eight-refinement/research.md",
+    "status": "Scoped installed frontage refinement verified; all remaining gaps retained",
+    "changes": "1807 stacked address board, painted stair infill and canopy post;1811 painted stair rails; existing tree retained",
+    "historicalMetrics": "Top-level counts/tests/performance describe the previous pass; refinement evidence gives current validation.",
+    "validation": "1454 grouped support samples,40 CPU stair legs,40 installed keyboard legs before/after,7 matched daylight views,9 dev smoke stops and all step7 local checks pass. North-front initial p95 spike20.8\u219231.1ms retained; longer-warm ten-window exact-assets A/B median18.0\u219217.9ms, not a startup/driving guarantee."
   }
 }

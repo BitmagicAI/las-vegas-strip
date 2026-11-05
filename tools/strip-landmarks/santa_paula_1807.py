@@ -2,6 +2,10 @@
 from common import *
 from forum_shops import facade_frame
 KEY='santaPaula1807';IDS=['way/1236725810','way/1236725812']
+class PaintedStair(Frame):
+ # Keep the existing ramp and tread geometry; only the exposed rail finish changes.
+ def tube(self,mat,a,b,r=.05,n=8,r2=None):
+  super().tube('spf-rail-paint' if mat=='steel' else mat,a,b,r,n,r2)
 def rail(F,a,b,y):
  L=math.dist(a,b)
  for t in np.linspace(0,1,math.ceil(L/.15)+1):
@@ -41,15 +45,29 @@ def exterior(B):
   # West stair copied from street reference; exact run and landing lengths estimated.
   F,L,_,_,_=min((e for e in edges if e[2]<-.8),key=lambda e:e[0].x)
   start=.8 if idx==0 else L-1;end=start+(5.8 if idx==0 else -5.8)
-  q=F.p(start,0,-.85);S=Frame(B,q[0],q[2],F.yaw+(math.pi/2 if idx==0 else -math.pi/2),y=0)
+  q=F.p(start,0,-.85);S=PaintedStair(B,q[0],q[2],F.yaw+(math.pi/2 if idx==0 else -math.pi/2),y=0)
   S.stairs(0,0,1.6,3,5.8,y=.18)
+  # January 2026: close painted infill on 1807's west stair; spacing estimated.
+  if idx==0:
+   for side in [-1,1]:
+    for z in np.arange(.12,5.8,.19):
+     y=.18+3*float(z)/5.8
+     S.box('spf-rail-paint',(side*.72,y+.53,float(z)),(.035,.98,.035))
+    S.tube('spf-rail-paint',(side*.72,.31,0),(side*.72,3.31,5.8),.025,6)
   lo,hi=(end,L+1.6) if idx==0 else (-1.6,end)
   F.box('spf-gallery-concrete',((lo+hi)/2,3.08,-.85),(hi-lo,.2,1.7),True);rail(F,(lo,-1.7),(hi,-1.7),3.18)
   # Cover over 1807's west landing is visible in the reference.
   if idx==0:F.box('spf-soffit-paint',((lo+hi)/2,6.20,-.85),(hi-lo,.16,1.8))
   turn=L+.8 if idx==0 else -.8
   routes.append([F.p(start,.18,-.85),F.p(end,3.18,-.85),F.p(turn,3.18,-.85),F.p(turn,3.18,2.5),F.p(turn,3.18,9)])
-  F.text('1807' if idx==0 else '1811',(L-.8,4.7,-.14),.28,'spf-number-paint')
+  if idx==0:
+   # Original three-row sign geometry, not a copied reference texture.
+   F.box('spf-number-paint',(1.05,4.78,-.10),(.72,.96,.055))
+   F.box('spf-frame-paint',(1.05,4.78,-.14),(.72,.30,.025))
+   for text,y,mat in [('7-12',5.09,'spf-frame-paint'),('1807',4.78,'spf-number-paint'),('1-6',4.47,'spf-frame-paint')]:
+    F.text(text,(1.05,y,-.17),.21,mat)
+   F.box('spf-rail-paint',(hi-.08,3.18,-1.62),(.10,6.04,.10))
+  else:F.text('1811',(L-.8,4.7,-.14),.28,'spf-number-paint')
   # Rooftop HVAC: six units on1807, small vents and low ridges on1811.
   if idx==0:
    for x in [1993,1999,2004,2010,2016,2021]:

@@ -1,0 +1,56 @@
+{
+  "after": {
+    "medianP95": 17.899999976158142,
+    "windowP95": [
+      17.700000047683716,
+      17.799999952316284,
+      18,
+      18.09999990463257,
+      17.799999952316284,
+      18,
+      17.799999952316284,
+      17.799999952316284,
+      18.100000143051147,
+      18.200000047683716
+    ],
+    "name": "front",
+    "eye": [
+      1975,
+      4,
+      -3886
+    ],
+    "target": [
+      2007,
+      3,
+      -3880
+    ]
+  },
+  "before": {
+    "medianP95": 18.0,
+    "windowP95": [
+      18,
+      18.09999990463257,
+      18,
+      17.90000009536743,
+      17.90000009536743,
+      17.90000009536743,
+      18,
+      18,
+      17.799999952316284,
+      18.200000047683716
+    ],
+    "name": "front",
+    "eye": [
+      1975,
+      4,
+      -3886
+    ],
+    "target": [
+      2007,
+      3,
+      -3880
+    ]
+  },
+  "deltaPercent": -0.555555688010323,
+  "method": "After then exact pre-PR assets in a separate browser, 1800-frame warm-up, stream quiet plus60frames, ten180framewindows, identical960x540DPR1ultra; initial900warm spike retained separately."
+}
