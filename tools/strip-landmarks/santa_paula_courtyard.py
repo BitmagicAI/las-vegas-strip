@@ -1,5 +1,6 @@
 """Three distinct small courtyard buildings; January2026 Street View and satellite."""
 from common import *
+from shapely.geometry import shape
 from forum_shops import facade_frame
 from courtyard_525 import palm
 KEY='santaPaulaCourtyard'
@@ -73,7 +74,14 @@ def exterior(B):
  for a,b in [((1981,-3818),(1981,-3798)),((1981,-3795),(1981,-3790)),((1951,-3818),(1975,-3818))]:rail(B,a,b,h=1.7)
  # Angled southern parking apron and white veranda approach; no resident vehicles recreated.
  G=Frame(B,1917.7103,-3789.8341,yaw=math.atan2(12.47194,32.0537),y=0)
- parking=G.poly([(-1,0),(35,0),(35,10.3),(-1,10.3)]).difference(allp)
+ # January2026 frontage and county mask: apron follows the curved sidewalk.
+ envelope=G.poly([(-1,0),(35,0),(35,18),(-1,18)])
+ layers=json.loads(Path('build/geographic-strip/surface-layers.geojson').read_text())['features']
+ blocked=unary_union([shape(f['geometry']).intersection(envelope) for f in layers if f['properties']['kind'] in ['road','sidewalk']])
+ parking=envelope.difference(blocked.buffer(.025)).difference(allp)
+ original=G.poly([(-1,0),(35,0),(35,10.3),(-1,10.3)])
+ parking=unary_union([part for part in parts(parking) if part.intersection(original).area>1])
+ assert parking.intersection(blocked).area<1e-6, 'Apron overlaps retained pavement'
  B.planar('spc-parking-concrete',parking,.11,True)
  for u in [2,7,12,17,22,27,32]:G.box('spc-joint-paint',(u,.118,6),(.018,.005,8.5))
  for u,h in [(5,9),(13,7),(22,10)]:palm(B,G,u,8.8,h)
@@ -84,4 +92,4 @@ def exterior(B):
    if north.contains(Point(x,z)) and not allp.buffer(.7).contains(Point(x,z)):samples.append([float(x),.11,z])
  for u in np.arange(1,34,1.3):samples.append(G.p(float(u),.11,5))
  Path('build/city-exteriors/santa-paula-courtyard-samples.json').write_text(json.dumps(samples))
- return dict(key=KEY,name='Santa Paula courtyard buildings',center=[1950,0,-3817],bounds=[1909,-3841,1983,-3775],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
+ return dict(key=KEY,name='Santa Paula courtyard buildings',center=[1950,0,-3817],bounds=[1909,-3841,1983,-3772],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

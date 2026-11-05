@@ -1,0 +1,61 @@
+{
+  "method": "Identical cameras; neutral daylight;960x540 DPR1 ultra;900 warm frames then stream quiet and60 frames;180 measured frames. Short local samples, no speedup or locked60fps claim.",
+  "views": [
+    {
+      "building": "santa-paula-courtyard",
+      "view": "front",
+      "beforeP95": 18.899999856948853,
+      "afterP95": 18.899999856948853,
+      "changePercent": 0.0
+    },
+    {
+      "building": "santa-paula-courtyard",
+      "view": "north",
+      "beforeP95": 17.90000009536743,
+      "afterP95": 18.200000047683716,
+      "changePercent": 1.6759773783125542
+    },
+    {
+      "building": "santa-paula-courtyard",
+      "view": "south",
+      "beforeP95": 18.799999952316284,
+      "afterP95": 19.09999990463257,
+      "changePercent": 1.5957444312616698
+    },
+    {
+      "building": "santa-paula-courtyard",
+      "view": "aerial",
+      "beforeP95": 18.59999990463257,
+      "afterP95": 18.699999809265137,
+      "changePercent": 0.5376338986306184
+    },
+    {
+      "building": "st-louis-square-frontage",
+      "view": "front",
+      "beforeP95": 18.700000047683716,
+      "afterP95": 19,
+      "changePercent": 1.6042778157823845
+    },
+    {
+      "building": "st-louis-square-frontage",
+      "view": "south",
+      "beforeP95": 18.100000143051147,
+      "afterP95": 17.90000009536743,
+      "changePercent": -1.1049726304035334
+    },
+    {
+      "building": "st-louis-square-frontage",
+      "view": "plaza",
+      "beforeP95": 18.300000190734863,
+      "afterP95": 17.700000047683716,
+      "changePercent": -3.2786892721177296
+    },
+    {
+      "building": "st-louis-square-frontage",
+      "view": "aerial",
+      "beforeP95": 18.700000047683716,
+      "afterP95": 17.699999809265137,
+      "changePercent": -5.347594844217363
+    }
+  ]
+}

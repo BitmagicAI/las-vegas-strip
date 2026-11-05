@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232145086,
+ "bytes": 1232146777,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 696739,
-   "sha256": "212ec20664fd3ed474247542b7c911fca21d50916a6b5d53735de44ad5abc234",
+   "bytes": 696794,
+   "sha256": "c4438c7976f800bfcd5d01e424692d99d1e46a6584a18a56986038312d2f8617",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "fb8602409843ca24af31fc4edb089059fc449f0b27eb49d998da424759bb563c",
+   "sha256": "5e614f414efff8a993af44b11c4eb81f8b3fdc65bb8acd0b578c73537da85ed9",
    "kind": "runtime cell manifest"
   },
   {
@@ -10596,14 +10596,14 @@
   },
   {
    "path": "build/strip-landmarks/santaPaulaCourtyard-exterior-collision.bin",
-   "bytes": 1428,
-   "sha256": "9e4640164305027054c23a097f2b7ba71fa5e2a6e59d6ed67ef47d0a7d2005e7",
+   "bytes": 1504,
+   "sha256": "3532bbbccd311eba287afd4a34cb32f43d2bf70a540d705e83330441bcd5e714",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/santaPaulaCourtyard-exterior.glb",
-   "bytes": 600260,
-   "sha256": "8dc444f694ee10b602ea997e476aae895f991c21c4d298f466ea41eaa712d03b",
+   "bytes": 600364,
+   "sha256": "57b9efa677d22dbd17c21a90c37062e46961d0d89e0d780206d66b033ca5eef8",
    "kind": "optimized"
   },
   {
@@ -10914,8 +10914,8 @@
   },
   {
    "path": "build/strip-landmarks/stLouisSquareFrontage-exterior.glb",
-   "bytes": 709700,
-   "sha256": "81dca0066d0b3fb8a2a4692c99c6ea7b591f306168731a17238eea49f535881a",
+   "bytes": 711156,
+   "sha256": "c185fb20c8944ad82fb9d844e64bf7d04e0498c7950ca67468c570961a4f17ff",
    "kind": "optimized"
   },
   {
@@ -11353,7 +11353,7 @@
   {
    "path": "build/strip-landmarks/venues.bin",
    "bytes": 394372,
-   "sha256": "f63da8b365e462aed66b5f1fd59522dc6ce29c4e8525fa742de6d5450aba1160",
+   "sha256": "2a2a0f8d2b72bd38879911a0a0e8c57b811d8927c840faeaebf96bd0dfb91e23",
    "kind": "original"
   },
   {
