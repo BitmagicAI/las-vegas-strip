@@ -1,0 +1,3 @@
+PR514 merged7210ca11, issues169173closed. Bonita24rosettes/Siegelroofseams scopedpassverified;1323support114CPU90actuallegs8views9smoke,91/92cellsidentical,10tree nodes retained perGLB. LFS44,311,328bytes48objects. Bonita originalfullworldwest/stairfailure remains documented, nofullcirculationclaim.
+
+Claims174175 confirmedjaniverse. Branch task/santa-paula-eight-refinement fromcurrentorigin/next7210ca11. Eight adjacent SantaPaula buildings (1807/1811pair+northsixrow); briefs/recordsread. No geometryedits. Next7neutraldaylight frontfirstbaselineviews, originalsupport/CPU/actualroutes, freshdatedMaps andofficialphotos. Preserveinferredaccess/roofproportions/fences/landscaping/interiors andcustom1807treeexport.
