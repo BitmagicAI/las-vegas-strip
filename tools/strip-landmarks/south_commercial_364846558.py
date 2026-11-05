@@ -39,12 +39,14 @@ def exterior(B):
  for a,b in zip(corners,corners[1:]+corners[:1]):
   F.tube('s558-roof-rib-paint',(a[0],e,a[1]),(b[0],e,b[1]),.07,6)
  # Parallel standing seams clipped at hip-plane transitions. Near detail only.
+ # Broader, lower-contrast ribs reduce subpixel breakup in matched aerial views.
+ # Radius/offset are inferred visual choices; roof support is unchanged.
  B.detail=1
  for u in np.arange(-w/2+.35,w/2,.7):
   vv=max(0,d/2-(w/2-abs(u)));cuts=sorted(set([-d/2,-vv,vv,d/2]))
-  def yy(v):return e+rise*max(0,min((w/2-abs(u))/(d/2),(d/2-abs(v))/(d/2)))+.035
+  def yy(v):return e+rise*max(0,min((w/2-abs(u))/(d/2),(d/2-abs(v))/(d/2)))+.06
   for va,vb in zip(cuts,cuts[1:]):
-   if vb-va>.01:F.tube('s558-roof-rib-paint',(float(u),yy(va),va),(float(u),yy(vb),vb),.025,4)
+   if vb-va>.01:F.tube('s558-roof-rib-paint',(float(u),yy(va),va),(float(u),yy(vb),vb),.045,6)
  B.detail=0
  # Inferred equipment on the flat service roof, constrained to the mapped footprint.
  W=Frame(B,0,0,y=0)

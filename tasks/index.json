@@ -9320,10 +9320,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact building identity not verified; no invented commercial sign",
-    "Reference trees and xeriscape planting not yet reproduced",
-    "Rear/entry details require closer reference; no playable interior",
-    "Facade masonry colour/roughness and roof-seam spacing not survey-calibrated"
+    "Exact identity remains unverified: map panorama address is not a confirmed building address, and text search did not locate matching official property photography; no invented sign.",
+    "Mature trees and xeriscape remain incomplete pending suitable species silhouettes and measured placement; existing foliage source models were reviewed but not installed in this seam/hatching pass.",
+    "Rear/entry details and public interior remain deferred because connected layout and closer elevation references are not verified.",
+    "Masonry colour/roughness and roof-seam spacing remain estimated. Broader lower-contrast ribs improve one-plane readability but opposite-plane dotted alias persists at aerial angles; a future antialiasing/material approach is needed, not a full fix."
    ],
    "record": "tools/resort-blocks/south-commercial-364846558.json",
    "buildings": [
@@ -9347,8 +9347,9 @@
      "tools/city-exteriors/test-south-commercial-364846558.mjs",
      "tools/city-exteriors/replace-south-commercial-364846558.py",
      "tools/city-exteriors/walk-south-commercial-364846558.mjs",
-     "tools/strip-landmarks/build_south_commercial_364846558.py",
-     "tools/strip-landmarks/south_commercial_364846558.py"
+     "tools/strip-landmarks/build_south_commercial_refinement.py",
+     "tools/city-exteriors/install-south-commercial-refinement.mjs",
+     "tools/city-exteriors/samples-south-commercial-refinement.py"
     ]
    },
    "acceptance": [
@@ -9369,9 +9370,9 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Unverified building identity, inferred doors/windows and materials",
-    "Neighbor558 thin roof seams still alias at some aerial angles",
-    "Retained terrain and road surroundings remain uneven; no interior"
+    "Identity, concealed doors/windows and wall materials remain inferred because only satellite roof/site photography is verified.",
+    "Neighbor558 roof ribs were broadened and lower-contrast; residual dotted alias remains at aerial angles because thin geometric detail is still undersampled.",
+    "Existing uneven terrain and roads are retained outside this building scope; no supported public interior layout is available."
    ],
    "record": "tools/resort-blocks/south-commercial-annex.json",
    "buildings": [
@@ -9394,9 +9395,10 @@
     "builders": [
      "tools/city-exteriors/test-south-commercial-annex.mjs",
      "tools/city-exteriors/replace-south-commercial-annex.py",
+     "tools/city-exteriors/walk-south-commercial-annex-refinement.mjs",
      "tools/city-exteriors/walk-south-commercial-annex.mjs",
-     "tools/strip-landmarks/south_commercial_annex.py",
-     "tools/strip-landmarks/build_south_commercial_annex.py"
+     "tools/strip-landmarks/build_south_commercial_refinement.py",
+     "tools/strip-landmarks/south_commercial_annex.py"
     ]
    },
    "acceptance": [
