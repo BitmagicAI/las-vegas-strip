@@ -25,6 +25,15 @@ def exterior(B):
   body=p.difference(recess)
   B.shell(body,.18,6.35,'spad-yellow-stucco',roof=False);B.shell(body,6.35,9.5,'spad-charcoal-paint',roof=False)
   B.planar('spad-roof-paint',p.buffer(-.12),9.36,True)
+  # Original low roof seam runs; spacing/thickness estimated from satellite.
+  # Clip to each existing roof; purely visual, preserving support/circulation.
+  for u in np.arange(.8,L,1.2):
+   a=F.p(float(u),0,-40);b=F.p(float(u),0,40)
+   line=LineString([(a[0],a[2]),(b[0],b[2])]).intersection(p.buffer(-.2))
+   parts=list(line.geoms) if hasattr(line,'geoms') else [line]
+   for part in parts:
+    if part.geom_type=='LineString' and part.length>.2:
+     pts=[(x,9.372,z) for x,z in part.coords];W.path('spad-service-paint',pts,.008,4)
   # Thin horizontal floor lines, white windows and lower-wall ventilation grilles.
   for nx,G,ell,nz,a,b in edges:
    front=G is F
