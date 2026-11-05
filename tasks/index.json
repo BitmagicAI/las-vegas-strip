@@ -8976,10 +8976,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Sign typography/window advertising and facade weathering simplified",
-    "Neutral daylight review required to validate pale blue paint under sunset lighting",
-    "Rear and south elevations inferred; exact roof heights and HVAC locations estimated",
-    "Forecourt planting and sign fixtures incomplete; no store interior"
+    "Sign typography/window advertising and facade weathering remain simplified because high-resolution elevations and original redistributable surface artwork are not established.",
+    "Rear and south elevations, exact roof heights and HVAC positions remain inferred because this pass only has dated street views and mapped footprint evidence.",
+    "Forecourt planting and parking markings remain incomplete pending measured alignment with the existing apron and road boundaries; west sign housings added in PR509.",
+    "Store interior remains deferred: official photos show sample boards, a narrow sample aisle and roll storage, but do not establish a connected public layout or entrance mapping."
    ],
    "record": "tools/resort-blocks/carpets-galore.json",
    "buildings": [
@@ -9003,8 +9003,9 @@
      "tools/city-exteriors/test-carpets-galore.mjs",
      "tools/city-exteriors/replace-carpets-galore.py",
      "tools/city-exteriors/walk-carpets-galore.mjs",
+     "tools/strip-landmarks/build_carpets_rexford_refinement.py",
      "tools/strip-landmarks/carpets_galore.py",
-     "tools/strip-landmarks/build_carpets_galore.py"
+     "tools/city-exteriors/install-carpets-rexford-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -9025,11 +9026,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Current exterior condition needs newer imagery than2021/22",
-    "Gallery elevations3m/roof6.12m and courtyard stair/passage arrangement estimated; not measured plans",
-    "Landscaping, textured curved corner entry, precise screen/window layout and rear service annex missing",
-    "Doors opaque exterior units; no private unit interiors",
-    "Performance route benchmark pending; latest static960x540p95~29.9ms with simultaneous browser research, not isolated"
+    "Current exterior condition remains unverified: the inspected corner panorama offered January2021 only, and existing other imagery is2022.",
+    "Gallery3m, roof6.12m and stair/passage arrangement remain estimated because measured plans are unavailable; thin roof lip reaches6.18m.",
+    "Landscaping, textured curved corner entry, precise screen/window layout and rear service annex remain incomplete because dimensions, current materials and entry alignment are not established by these references.",
+    "Doors remain opaque exterior units; no private unit interiors because no supported public layout is available.",
+    "Perimeter driving, cold transition stalls, draw calls, GPU spans and residency benchmark remain unmeasured in this bounded facade pass; isolated matched static views and actual entrance/stair walks are being recorded separately."
    ],
    "record": "tools/resort-blocks/rexford-courtyard-1701.json",
    "buildings": [
@@ -9054,8 +9055,8 @@
      "tools/city-exteriors/replace-rexford-courtyard-1701.py",
      "tools/city-exteriors/stairs-rexford-courtyard-1701.mjs",
      "tools/city-exteriors/walk-rexford-courtyard-1701.mjs",
-     "tools/strip-landmarks/rexford_courtyard_1701.py",
-     "tools/strip-landmarks/build_rexford_courtyard_1701.py"
+     "tools/strip-landmarks/build_carpets_rexford_refinement.py",
+     "tools/strip-landmarks/rexford_courtyard_1701.py"
     ]
    },
    "acceptance": [

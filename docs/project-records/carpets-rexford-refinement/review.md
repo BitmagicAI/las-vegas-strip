@@ -1,6 +1,6 @@
 # Carpets Galore and Rexford courtyard refinement
 
-Two mapped structures; scoped exterior detail pass, not full-block completion. Verification remains in progress until the performance discrepancy and smoke check below are resolved.
+Two mapped structures; scoped exterior detail pass, not full-block completion. Matched verification and performance investigation complete; smoke check pending.
 
 Carpets Galore: four small roof-mounted sign flood housings above the two west fascia runs, with non-emitting faces and existing materials. North pale-blue painted finish reviewed under neutral daylight. Rexford: a thin outer roof lip follows the existing rounded footprint. All dimensions are inferred; see research.md for dated references and decisions.
 
@@ -10,7 +10,7 @@ Before and after:1378 source support/headroom samples,12CPUgroundlegs,6CPUstairs
 
 ## Performance discrepancy retained
 
-960×540,DPR1,ultra;900warmframes,streaming quiet+60settle,180samples/view. Carpets aerial initialp95 increased48.3%; the other6views remain within10% or improve. Five-window browser-only original-asset A/B is running to distinguish persistent cost from short timing spikes. No sustained60fps, perimeter driving, coldtransition, GPUspan or residency claim.
+960×540,DPR1,ultra;900warmframes,streaming quiet+60settle,180samples/view. Carpets aerial initialp95 increased48.3%; the other6views remain within10% or improve. Five-window browser-only original-asset A/B completed, intercepting all three baseline assets without changing live files. The aerial spike was not sustained: median17.5→18.6ms (+6.29%), with after windows18.3–18.9ms. All seven median p95 comparisons stay below10%; north has one21.6ms window, retained in the raw results. All14A/B screenshots inspected. This supports a short timing spike in the initial aerial sample, not a persistent48.3% geometry cost. No sustained60fps, perimeter driving, coldtransition, GPUspan or residency claim.
 
 |Building/view|Beforep95ms|Afterp95ms|
 |---|---:|---:|
@@ -73,3 +73,15 @@ CDN and published-game checks, and owner review of inferred dimensions. No publi
 ![Before](../../../public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-rexford-aerial.png)
 
 ![After](../../../public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-rexford-aerial.png)
+
+## Five-window A/B median p95
+
+|View|Beforems|Afterms|Change|
+|---|---:|---:|---:|
+|front|18.9|19.0|0.53%|
+|carpets-north|18.0|19.1|6.11%|
+|carpets-aerial|17.5|18.6|6.29%|
+|front|18.0|17.9|-0.56%|
+|rexford-court|19.5|19.2|-1.54%|
+|rexford-gallery|19.2|19.0|-1.04%|
+|rexford-aerial|18.0|18.2|1.11%|
