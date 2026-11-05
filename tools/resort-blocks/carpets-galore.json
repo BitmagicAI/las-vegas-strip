@@ -21,10 +21,10 @@
     }
   ],
   "remaining": [
-    "Sign typography/window advertising and facade weathering simplified",
-    "Neutral daylight review required to validate pale blue paint under sunset lighting",
-    "Rear and south elevations inferred; exact roof heights and HVAC locations estimated",
-    "Forecourt planting and sign fixtures incomplete; no store interior"
+    "Sign typography/window advertising and facade weathering remain simplified because high-resolution elevations and original redistributable surface artwork are not established.",
+    "Rear and south elevations, exact roof heights and HVAC positions remain inferred because this pass only has dated street views and mapped footprint evidence.",
+    "Forecourt planting and parking markings remain incomplete pending measured alignment with the existing apron and road boundaries; west sign housings added in PR509.",
+    "Store interior remains deferred: official photos show sample boards, a narrow sample aisle and roll storage, but do not establish a connected public layout or entrance mapping."
   ],
   "evidence": {
     "views": "build/city-exteriors/carpets-galore-final",
@@ -37,5 +37,12 @@
       "build/strip-landmarks/carpetsGalore-exterior.glb": "f5ba4eef59195c2c9c04939e494b55c9e308f5b7ac04535f79d8e7e8c899329d",
       "build/strip-landmarks/carpetsGalore-exterior-collision.json": "72179efa60ec8ec2144205347eede2e03c8b8b04336db88441129138f1d25e17"
     }
+  },
+  "refinementCheckpoint": {
+    "record": "docs/project-records/carpets-rexford-refinement",
+    "phase": "Optimized geometry installed; shared bake and installed after validation pending",
+    "date": "2026-11-05",
+    "pullRequest": 509,
+    "baselineActualLegs": 18
   }
 }

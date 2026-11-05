@@ -21,11 +21,11 @@
     }
   ],
   "remaining": [
-    "Current exterior condition needs newer imagery than2021/22",
-    "Gallery elevations3m/roof6.12m and courtyard stair/passage arrangement estimated; not measured plans",
-    "Landscaping, textured curved corner entry, precise screen/window layout and rear service annex missing",
-    "Doors opaque exterior units; no private unit interiors",
-    "Performance route benchmark pending; latest static960x540p95~29.9ms with simultaneous browser research, not isolated"
+    "Current exterior condition remains unverified: the inspected corner panorama offered January2021 only, and existing other imagery is2022.",
+    "Gallery3m, roof6.12m and stair/passage arrangement remain estimated because measured plans are unavailable; thin roof lip reaches6.18m.",
+    "Landscaping, textured curved corner entry, precise screen/window layout and rear service annex remain incomplete because dimensions, current materials and entry alignment are not established by these references.",
+    "Doors remain opaque exterior units; no private unit interiors because no supported public layout is available.",
+    "Perimeter driving, cold transition stalls, draw calls, GPU spans and residency benchmark remain unmeasured in this bounded facade pass; isolated matched static views and actual entrance/stair walks are being recorded separately."
   ],
   "evidence": {
     "views": "build/city-exteriors/rexford-courtyard-1701-final",
@@ -38,5 +38,12 @@
       "build/strip-landmarks/rexfordCourtyard1701-exterior.glb": "ecb37809838c49a8730c8d48ab955a7888902559082cebecb9f00d8f7fbf4b24",
       "build/strip-landmarks/rexfordCourtyard1701-exterior-collision.json": "0c4860fc0235c9a11b77a8e7bd82a1ba008e8f1a054e9254934b204a81ea5f37"
     }
+  },
+  "refinementCheckpoint": {
+    "record": "docs/project-records/carpets-rexford-refinement",
+    "phase": "Optimized geometry installed; shared bake and installed after validation pending",
+    "date": "2026-11-05",
+    "pullRequest": 509,
+    "baselineActualLegs": 18
   }
 }

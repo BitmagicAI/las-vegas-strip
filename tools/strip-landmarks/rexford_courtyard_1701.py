@@ -14,6 +14,12 @@ def exterior(B):
  B.shell(rooms,3.0,5.95,'rc-pale-stucco',roof=False)
  roof=p.buffer(.35,join_style=1).difference(court)
  B.shell(roof,5.95,6.12,'rc-roof-edge-paint',roof=False);B.planar('rc-roof-paint',roof,6.12,True)
+ # January 2021 rounded corner reference has a thin projecting roof lip.
+ # Preserve the existing curved footprint, roof support and courtyard opening.
+ # 7 cm projection / 10 cm height are visual estimates, not surveyed dimensions.
+ lip=p.buffer(.42,join_style=1).difference(p.buffer(.25,join_style=1))
+ B.shell(lip,6.08,6.18,'rc-roof-paint',roof=False,solid=False)
+ B.planar('rc-roof-paint',lip,6.18)
  floors=p.difference(rooms).union(passage.intersection(p))
  pool=F.poly([(16.3,22),(21.7,22),(21.7,35),(16.3,35)])
  B.planar('rc-floor-concrete',floors.difference(pool),.18,True)

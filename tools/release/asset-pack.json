@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-11-04",
+ "revision": "2026-11-05",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-11-04.tar.gz",
+  "name": "las-vegas-strip-assets-2026-11-05.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232166042,
+ "bytes": 1232176577,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 696893,
-   "sha256": "8f6d38871b1e219584bf09f56f7fd420a6e73d4f065c064b7124266821c14d1b",
+   "bytes": 697076,
+   "sha256": "7b6c6c0c70494ef1d4a9411e69d493daccc2efdd5b906c79cf3dccc99628ee28",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "ff5c9b2f467fc5038a11089190eaa696565027aebc75d1097979ef082af78e63",
+   "sha256": "f4e27ea773454d1e697bdd994d7fb4d36e1ed5bb759c557ca55613c1705923af",
    "kind": "runtime cell manifest"
   },
   {
@@ -7662,8 +7662,8 @@
   },
   {
    "path": "build/strip-landmarks/carpetsGalore-exterior.glb",
-   "bytes": 885636,
-   "sha256": "0e49656ca59fd797439fc0b24b7be7fad8210207c010efd1b3411560e89f860b",
+   "bytes": 888196,
+   "sha256": "9183834bf3cdd10616b08550c82dd8eb3f81dedc1358f17101b832d474d1d780",
    "kind": "optimized"
   },
   {
@@ -10410,8 +10410,8 @@
   },
   {
    "path": "build/strip-landmarks/rexfordCourtyard1701-exterior.glb",
-   "bytes": 301404,
-   "sha256": "56c991fadefb6387876bd0eeec43ae673748576c31f38d2e1582512e029fc342",
+   "bytes": 309196,
+   "sha256": "d16446ac0369f19d9eb9a27d9ae8b714e27c18588a6cd73cbfb9092eeffd8d89",
    "kind": "optimized"
   },
   {
