@@ -21,7 +21,8 @@
   "remaining": [
     "Concealed courtyard/gallery/stair arrangement inferred; no playable room interiors",
     "Palm leaves remain stylized; exact materials/sign proportions approximate",
-    "No neutral daylight comparison or full driving benchmark"
+    "Neutral daylight baseline captured; matched after comparison and full driving benchmark pending",
+    "Operator gallery reveals dense central planting, agaves, seating and courtyard arrangement differing from the inferred model; full layout remodelling needs matched current evidence. This pass only corrects gallery/rail material."
   ],
   "triangles": 15804,
   "batches": 26,
@@ -116,5 +117,10 @@
   "visualCorrections": [
     "Added palms and sign fins after first installed inspection",
     "tree-1.glb rendered fragmented; switched near LODs to existing CC0 tree-0.glb, verified installed. tree-2 remains distant LOD."
-  ]
+  ],
+  "refinement20261105": {
+    "record": "docs/project-records/rexford-casino-courtyard-refinement",
+    "changes": "Property-specific dark gallery rails and blue-gray gallery coating from operator photos",
+    "checks": "4116support samples,24ground+18stair CPU and actual baseline legs pass. Matched after and remaining step7 pending."
+  }
 }
