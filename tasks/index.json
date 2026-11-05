@@ -8480,11 +8480,11 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Heights/eave dimensions estimated; rear facades partly inferred",
-    "Signs and banners approximate; shrubs not yet matched",
-    "No interior access claim",
-    "Exact wall signs, roof weathering and boundary layout remain approximate",
-    "Roof hip rectangles approximate slight mapped skew/notches; materials require neutral daylight review"
+    "Heights/eave dimensions and rear facades remain inferred because dated street views do not provide measured or complete rear coverage.",
+    "Signs/banners and shrubs remain approximate: business address and visible doorway differ; official architectural photographs unavailable.",
+    "Interior layouts/access remain unverified; no new interior created.",
+    "Exact signs, roof weathering and boundary detail remain approximate because references lack sufficient close coverage.",
+    "Hip rectangles retain slight mapped skew/notch approximation; neutral daylight material review completed, but no surveyed roof fit claimed."
    ],
    "record": "tools/resort-blocks/oakey-offices.json",
    "buildings": [
@@ -8518,9 +8518,9 @@
      "tools/city-exteriors/test-oakey-offices.mjs",
      "tools/city-exteriors/replace-oakey-offices.py",
      "tools/city-exteriors/walk-oakey-offices.mjs",
+     "tools/strip-landmarks/build_oakey_santa_paula_refinement.py",
      "tools/strip-landmarks/oakey_offices.py",
-     "tools/strip-landmarks/build_oakey_offices.py",
-     "tools/strip-landmarks/santa_paula_office.py"
+     "tools/city-exteriors/install-oakey-santa-paula-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -8539,12 +8539,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Exact rear fenestration, weathering and occupancy unverified; heights estimated",
-    "Fan palm crown silhouettes still visibly pinched at mid-height; replace/refine before final quality approval",
-    "Irregular surrounding planting not fully matched; no interior access claim",
-    "Neutral daylight material and perimeter driving review outstanding"
+    "Rear fenestration, weathering, occupancy and heights remain unverified because public imagery lacks full coverage and measurements.",
+    "Open crown waist improved with folded overlapping fans; radial lobes remain stylized and exact crown dimensions unmeasured.",
+    "Willow-like surrounding planting remains unmatched and street-side palm remains wrong fan species; supplied broadleaf asset is unsuitable as reference fan substitute.",
+    "No interior access claim: public interior reference/layout unavailable.",
+    "Neutral daylight material review completed; perimeter vehicle driving and cold transition performance remain unmeasured in this scoped walking pass."
    ],
    "record": "tools/resort-blocks/santa-paula-office.json",
    "buildings": [
@@ -8568,8 +8569,9 @@
      "tools/city-exteriors/test-santa-paula-office.mjs",
      "tools/city-exteriors/replace-santa-paula-office.py",
      "tools/city-exteriors/walk-santa-paula-office.mjs",
+     "tools/strip-landmarks/build_oakey_santa_paula_refinement.py",
      "tools/strip-landmarks/santa_paula_office.py",
-     "tools/strip-landmarks/build_santa_paula_office.py"
+     "tools/city-exteriors/install-oakey-santa-paula-refinement.mjs"
     ]
    },
    "acceptance": [
