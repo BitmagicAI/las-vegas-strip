@@ -29,6 +29,19 @@ def exterior(B):
    aa=np.array(a);bb=np.array(b);dv=bb-aa;normal=np.array([0,-dv[2],dv[1]]);normal=normal/np.linalg.norm(normal)*.32
    for side in [-1,1]:B.face('mc-yellow-paint',[F.p(*(aa+normal+[side*.16,0,0])),F.p(*(bb+normal+[side*.16,0,0])),F.p(*(bb-normal+[side*.16,0,0])),F.p(*(aa-normal+[side*.16,0,0]))])
    for sign in [-1,1]:B.face('mc-yellow-paint',[F.p(*(aa+sign*normal+[-.16,0,0])),F.p(*(bb+sign*normal+[-.16,0,0])),F.p(*(bb+sign*normal+[.16,0,0])),F.p(*(aa+sign*normal+[.16,0,0]))])
+ # Original diagonal lattice clipped inside each arch above the existing canopy.
+ # February 2026 Street View supports an open mesh; spacing and thickness inferred.
+ top=[(-.15+(depth+.3)*t,.65+8.1*math.sin(math.pi*t)-.34) for t in np.linspace(0,1,65)]
+ region=Polygon(top+[(depth+.15,4.72),(-.15,4.72)]).buffer(0).intersection(box(-.15,4.72,depth+.15,8.5))
+ for u in [.55,L-.55]:
+  for slope in [-1,1]:
+   for offset in np.arange(-depth-10,depth+10,.55):
+    line=LineString([(-2,offset+slope*(-2)),(depth+2,offset+slope*(depth+2))]).intersection(region)
+    pieces=list(line.geoms) if hasattr(line,'geoms') else [line]
+    for part in pieces:
+     if part.geom_type=='LineString' and part.length>.08:
+      coords=list(part.coords);a,b=coords[0],coords[-1]
+      F.tube('mc-post-paint',(u,a[1],a[0]),(u,b[1],b[0]),.018,5)
  # Roof equipment curb and shallow louvres, not another floating floor.
  cu=L*.51;cw=depth*.56
  F.box('mc-roof-curb-paint',(cu,4.94,cw),(4.1,.58,4.1));F.box('mc-vent-paint',(cu,5.24,cw),(3.6,.04,3.6))
