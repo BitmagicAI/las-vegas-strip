@@ -1,0 +1,253 @@
+{
+  "base": "7210ca112da323f3c8fe78ad18a0831d55e13096",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "ab5228995e30012da2a0dc7ec73b97484d17407dcaf131b917a85c04ad43b6f6",
+      "bytes": 358654,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-1807-1811-court.png"
+    },
+    {
+      "oid": "39a06e9b7fba2bcce1f1804a3a1359aaea0a2f7b230222e4f983630c9ee5720e",
+      "bytes": 391283,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-1807-1811-front.png"
+    },
+    {
+      "oid": "88be4f2ac17e87b4a4e88110ec2cda00c81344a78131eb9bd1e901b8f85626c2",
+      "bytes": 535180,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-1807-1811-roof.png"
+    },
+    {
+      "oid": "f17a2d3df70a4ec7e877e3884a2453350901218917cd732eeeb091e5152e2c66",
+      "bytes": 262406,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-1807-walk-frontage-0.png"
+    },
+    {
+      "oid": "fe95aff24374a988c8d5f7a603c315d278ea5dee410931fd6fbfb099bed8d474",
+      "bytes": 182543,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-1807-walk-frontage-1.png"
+    },
+    {
+      "oid": "51d16f5124c66f0df54e8a5317dcc110bec74a9b58dd912664d988009bf877cb",
+      "bytes": 458623,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-1807-walk-return-0.png"
+    },
+    {
+      "oid": "1c235df2390ef6ec4b822e6233e981cc2c80cfc4d11166ee9c4a73786e34c798",
+      "bytes": 432050,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-1807-walk-return-1.png"
+    },
+    {
+      "oid": "19bc54d0e179185064942806dc53deb8bb47c3fa362e990c08b11fba64d74daf",
+      "bytes": 242957,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-row-front.png"
+    },
+    {
+      "oid": "9540f86243c5300f372ad3d646f1c8dd7831b8b989fcc691c17d63dae5734075",
+      "bytes": 332374,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-row-gallery.png"
+    },
+    {
+      "oid": "c6b8b916a8c07c50befdcf84daaf7f14031dc830a2e7fbb6fb6a4dd3d74ffaa1",
+      "bytes": 559939,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-row-roof.png"
+    },
+    {
+      "oid": "3030f17b34c2ae63ba4f0b337277df732bda34ae3c63dcd7282f59b2cff6e713",
+      "bytes": 259848,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-row-south.png"
+    },
+    {
+      "oid": "bc98affbc494962cb0195f7adc6ee1a5e747a864674cfac8c050ac5a9685de42",
+      "bytes": 289887,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-frontage-0.png"
+    },
+    {
+      "oid": "b92929efc727045431a7b976b9070fcb604875c3317b407eff91f15608a6ffa5",
+      "bytes": 313018,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-frontage-1.png"
+    },
+    {
+      "oid": "58b6b55f1787d9d852aaa84486da3658d156f05a75d45b67b2809ebc29468844",
+      "bytes": 307797,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-frontage-2.png"
+    },
+    {
+      "oid": "820d96da2de823cf90c7b78005ab2a34a692d67380178767c4f39e57abcc557b",
+      "bytes": 280780,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-frontage-3.png"
+    },
+    {
+      "oid": "f3bf16d764b9349c299a135673ba12724a8430a8c92f9f22d99ab7e52bdd12cb",
+      "bytes": 310502,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-frontage-4.png"
+    },
+    {
+      "oid": "3a17d6dad2499f883e1b51ff253e5aa1d4e096cce67ab4f6c8a04550fd04083b",
+      "bytes": 312716,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-frontage-5.png"
+    },
+    {
+      "oid": "a75c3381b0d2c8852df5525bb494404bfb5ca800370c02422d5dd53c4f8b81c3",
+      "bytes": 374405,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-return-0.png"
+    },
+    {
+      "oid": "763e41775b842dcb5adeb35234580f6942338bd8cf78682a92e8959b971a4767",
+      "bytes": 282610,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-return-1.png"
+    },
+    {
+      "oid": "624d8271e7b037f16b6d2fce641a79a2ad0d37a70696711faa38bfb9792bd1c7",
+      "bytes": 396244,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-return-2.png"
+    },
+    {
+      "oid": "b88b3e7e13dc585fcc6138e4b4da9dbd94e2b9fa280bd68211d9913f16bbb82f",
+      "bytes": 390589,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-return-3.png"
+    },
+    {
+      "oid": "66bf4fa5bb24bacb930aba3460d32f9ce3ed0a6ba0f6ec21eca9a17a081858b0",
+      "bytes": 396963,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-return-4.png"
+    },
+    {
+      "oid": "bb5993ba6239489bd7f231493c3c7c6b58b9afe60131f641ac4a349afbba6e7e",
+      "bytes": 284336,
+      "path": "public/review/santa-paula-eight-refinement/after/santa-paula-north-walk-return-5.png"
+    },
+    {
+      "oid": "bfd0bf2678f4e99bd26b1926a04dbde3ecad1c4db8f28e2335c248f14c3f0095",
+      "bytes": 393693,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-1807-1811-front.png"
+    },
+    {
+      "oid": "9ec0bdaa97557edea1f24c2e3a078bef0849a5e9f22ddd62e225fd7346fb38a6",
+      "bytes": 536377,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-1807-1811-roof.png"
+    },
+    {
+      "oid": "ca36d86a149140592dc1f918e2ffc8fc3504b47d80a4ff32857bb90148ea80a9",
+      "bytes": 258642,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-1807-walk-frontage-0.png"
+    },
+    {
+      "oid": "f2c9f0cc60f728f14d8cbc530e3324b544bd6ce1e7f70046268494ce4e7cf21d",
+      "bytes": 183419,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-1807-walk-frontage-1.png"
+    },
+    {
+      "oid": "23e1de0ce46b2ae60037ae0056562918aae496f1523e7479a4a22d40e3c13c30",
+      "bytes": 464625,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-1807-walk-return-0.png"
+    },
+    {
+      "oid": "8c4ead954271b3287ebc8b06dff03064c7c5ae64b5d50443fa818eca35fe8351",
+      "bytes": 437782,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-1807-walk-return-1.png"
+    },
+    {
+      "oid": "3cc2257267cef94d496fd67fcca3b2524f6eaa0a0ca3b01cc86372e46b7272a5",
+      "bytes": 240890,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-row-front.png"
+    },
+    {
+      "oid": "d2764d9b898029b44ce52ec487d3bb314ca77714568d11796e4f99c815ead406",
+      "bytes": 332378,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-row-gallery.png"
+    },
+    {
+      "oid": "9e8467597e80507213afc116cc5a1a3e81de3126f5308afea8c7def174af250c",
+      "bytes": 561053,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-row-roof.png"
+    },
+    {
+      "oid": "1510fdb612a4d1d71ce81b99c5ca0438317aa854f1e06c345936cbe979f21f0c",
+      "bytes": 264522,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-row-south.png"
+    },
+    {
+      "oid": "8b3f00f694b6cd9297bac13c254bfb59ba2d04b5968a562c509a2d3576996ef0",
+      "bytes": 291539,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-frontage-0.png"
+    },
+    {
+      "oid": "f1fc6da08a019fdd46a588f2a6a629ddfa3e00f544204ee74cc7364634b7828a",
+      "bytes": 313720,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-frontage-1.png"
+    },
+    {
+      "oid": "0fcdfeb56eca3fd312f4f413f0ba2a7a2b63981c34c210b0068c71b8db44cca6",
+      "bytes": 312011,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-frontage-2.png"
+    },
+    {
+      "oid": "a2f70097cf3002cd4bf0d30b70586255cd02db6b2c099fc5c3a49c0939d92738",
+      "bytes": 286758,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-frontage-3.png"
+    },
+    {
+      "oid": "f21902e27154ab7f59962a78d3468739b860c0f960be609c1bac3931aaa411c7",
+      "bytes": 313164,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-frontage-4.png"
+    },
+    {
+      "oid": "665fc4d9d2fab2a9ff20c0bfb81bf346db5b9ccad4e62fe0eb1a753f5db76f49",
+      "bytes": 312680,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-frontage-5.png"
+    },
+    {
+      "oid": "ae616b1671ccc23b8d1e989a94a54166d1423a250d27e669e1ab8f91e382380a",
+      "bytes": 373933,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-return-0.png"
+    },
+    {
+      "oid": "dce39c612bc91c1bff69a400d35b58a131d0181f6b4c05daac1e43807f6cc726",
+      "bytes": 284286,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-return-1.png"
+    },
+    {
+      "oid": "46f930a6d07d77fb5a6cb8bfd00b37a1044512d907b5e3be8ca58593a1137ddc",
+      "bytes": 396654,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-return-2.png"
+    },
+    {
+      "oid": "6702cf20fb1e6607d1284edf2faa529f0332c878ff6f3f95bcde622f44c3b8ef",
+      "bytes": 391140,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-return-3.png"
+    },
+    {
+      "oid": "c9f10723fbcc44d00225f61a67aa1b954313772110bdb74bf8776f0a8a199488",
+      "bytes": 396698,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-return-4.png"
+    },
+    {
+      "oid": "754bbdd40f667a17e261fa353a192de2ce6699860b145276c4c563e4406dfd77",
+      "bytes": 283866,
+      "path": "public/review/santa-paula-eight-refinement/before/santa-paula-north-walk-return-5.png"
+    },
+    {
+      "oid": "64ddf0235daf6e7bfb6d542c1d5dae826598223ba32872a25cc3507944cd0a60",
+      "bytes": 699949,
+      "path": "runtime-assets/baked/cells/cell-2_-5.bin"
+    },
+    {
+      "oid": "ce289e78693b65e5a624085f05ecc073a35ebb9740396ee68cc1a4c41e7766de",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "1b76f1c3ece7b5547a5ba09b1bc35b1d230e7c5f342ba453808b26decc410cb9",
+      "bytes": 12728200,
+      "path": "runtime-assets/strip-landmarks/santaPaula1807-exterior.glb"
+    },
+    {
+      "oid": "942119ec17f38bfb9bae90dedfa3f6edcfd5c0796f81d36ffc91ea616022ba0f",
+      "bytes": 685280,
+      "path": "runtime-assets/strip-landmarks/santaPaulaNorth-exterior.glb"
+    }
+  ],
+  "count": 49,
+  "bytes": 29712764
+}

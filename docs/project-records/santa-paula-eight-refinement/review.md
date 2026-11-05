@@ -46,3 +46,5 @@ The north-row front measured p95 20.8→31.1ms (+49.52%) after the original 900-
 | santa-paula-north-row south | [before](../../../public/review/santa-paula-eight-refinement/before/santa-paula-north-row-south.png) | [after](../../../public/review/santa-paula-eight-refinement/after/santa-paula-north-row-south.png) |
 | santa-paula-north-row roof | [before](../../../public/review/santa-paula-eight-refinement/before/santa-paula-north-row-roof.png) | [after](../../../public/review/santa-paula-eight-refinement/after/santa-paula-north-row-roof.png) |
 | santa-paula-north-row gallery | [before](../../../public/review/santa-paula-eight-refinement/before/santa-paula-north-row-gallery.png) | [after](../../../public/review/santa-paula-eight-refinement/after/santa-paula-north-row-gallery.png) |
+
+Git LFS audit: **29,712,764 new bytes across 49 unique objects** absent from base7210ca11, including every own commit's generated evidence and assets. Runtime payload grows47,445bytes; this is distinct from LFS history storage.
