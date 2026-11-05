@@ -1,0 +1,3 @@
+PR513 merged7cdb049b; issues167/186 closed. Scoped roof runs/arch lattice installed, all local checks/44actuallegs/6views/9smokestops passed. Front initial+50.55% and firstAB+75.82% spikes retained; longerwarmed reversedorder10window repeat18.15→18.90ms (+4.13%) stable, no startup/sustainedfps guarantee. LFS10,442,666bytes31objects.
+
+Next: claims169173 confirmed janiverse, branch task/bonita-siegel-paradise-refinement fromorigin/next7cdb049b. Bonita2wings andSiegel5wings about250mapart onParadise. Readbothrecords/briefs. Preserve trees withcustomexporters, stairs/pools/interiors andalluncertainlayouts. Beforegeometry:8matchedneutraldaylightviews, reproducible support/CPU/actualwalk baselines, freshMaps/operatorphotos. No geometryedits.
