@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232146777,
+ "bytes": 1232162579,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -450,8 +450,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-6.bin",
-   "bytes": 257897,
-   "sha256": "a20b4f03125abde3d4db7f7c7b796078c27c5041a240a5c3e713d9777a276f16",
+   "bytes": 257923,
+   "sha256": "9cef0db614a1986fc424ceb5570eaed3ed0f6c2fbd42c530f8fa71b243bd764d",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "5e614f414efff8a993af44b11c4eb81f8b3fdc65bb8acd0b578c73537da85ed9",
+   "sha256": "83675e56779427535b7de6bc9842b671354841b014fcb3718a3caaa971b27442",
    "kind": "runtime cell manifest"
   },
   {
@@ -7278,8 +7278,8 @@
   },
   {
    "path": "build/strip-landmarks/alboDinosFrontage-exterior.glb",
-   "bytes": 549860,
-   "sha256": "135ccc9d110e959779bacc05c8c5a7c43e2a7ab505ecdd8b7be98ca5f4c43397",
+   "bytes": 563940,
+   "sha256": "cd8285c70ca8e261ebf89f30ea950ed2ad5a9f2b5c2c97095cad3906cdb3cdad",
    "kind": "optimized"
   },
   {
@@ -7692,14 +7692,14 @@
   },
   {
    "path": "build/strip-landmarks/casinoCenterCourtyard-exterior-collision.bin",
-   "bytes": 5868,
-   "sha256": "ed5b9b1f4f456cc082085b7b15b3879383f2d6d53ed0433d22863b4d6d29dcc5",
+   "bytes": 6124,
+   "sha256": "fbd9909951ec4eb9e0cd98877d09cdb5e85cbb2a84fee603e1bb902035eeec72",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/casinoCenterCourtyard-exterior.glb",
-   "bytes": 711556,
-   "sha256": "10668a89c517eaf433a4d90393a06815dd17824b0d4607d54f8d863cf2333b92",
+   "bytes": 712996,
+   "sha256": "9bb3be5855d37144329d05e97e27c284e8d574d7e05cd311b56491fb7295423c",
    "kind": "optimized"
   },
   {
