@@ -66,3 +66,5 @@ CDN/published-game checks and owner review of inferred dimensions. No publishing
 ![Before](../../../public/review/south-commercial-pair-refinement/before/south-commercial-annex-east.png)
 
 ![After](../../../public/review/south-commercial-pair-refinement/after/south-commercial-annex-east.png)
+
+New Git LFS: 9,894,629 bytes across 28 unique objects absent from base, including intermediate evidence.
