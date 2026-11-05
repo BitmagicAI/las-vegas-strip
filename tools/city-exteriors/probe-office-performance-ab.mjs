@@ -36,8 +36,9 @@ try {
   if(opt('office-baseline',false)){
     const baseline=JSON.parse(fs.readFileSync('build/city-exteriors/office-performance-baseline/manifest.json'));
     for(const entry of baseline.files){
-      const filename=entry.path.split('/').at(-1);
-      await page.route('**/'+filename+'*',async route=>{
+      // Cell names also occur in collision packs: match the full owned path.
+      await page.route(url=>url.pathname.endsWith('/'+entry.path),async route=>{
+        if(route.request().method()==='HEAD'){await route.continue();return;}
         officeHits.push({url:route.request().url(),oid:entry.oid});
         await route.fulfill({status:200,contentType:'application/octet-stream',body:fs.readFileSync(entry.file)});
       });
