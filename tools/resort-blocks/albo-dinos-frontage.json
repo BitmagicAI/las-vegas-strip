@@ -23,20 +23,22 @@
   ],
   "remaining": [
     "Exact roof pitch/awning profile, weathering and sign artwork remain approximations",
-    "Dinos double-stage canopy profile simplified to single slope; rear/services inferred",
+    "Dinos double-stage canopy installed from January2026 frontage; exact pitch, sign artwork, rear/services remain inferred.",
     "Patio furniture lacks fine detail; tenant interiors not included",
-    "Neutral daylight and drive-through performance review pending"
+    "Matched neutral daylight static review completed; perimeter driving performance remains unmeasured."
   ],
   "evidence": {
     "views": "build/city-exteriors/albo-dinos-frontage-final",
     "support": "build/city-exteriors/albo-dinos-frontage-collision.json",
     "walk": "build/city-exteriors/albo-dinos-frontage-walk.json",
     "ownership": "build/city-exteriors/albo-dinos-frontage-ownership-audit.json",
-    "visualReview": "Installed4views inspected. Corrected initially overlapping canopy fans to continuous roof and removed duplicate patio floor; final street/patio/aerial rechecked.3979tri17batches.52MiB,635support10walkPASS including patio entrance;53oldtriangles removed. Static960x540 p95~18ms,not driving performance."
+    "visualReview": "Installed4views inspected. Corrected initially overlapping canopy fans to continuous roof and removed duplicate patio floor; final street/patio/aerial rechecked.3979tri17batches.52MiB,635support10walkPASS including patio entrance;53oldtriangles removed. Static960x540 p95~18ms,not driving performance.",
+    "refinement": "docs/project-records/albo-dinos-casino-courtyard-refinement/review.md",
+    "matchedViews": "public/review/albo-dinos-casino-courtyard-refinement"
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/alboDinosFrontage-exterior.glb": "df68c4cb4b513af6a4998c15c99d6e07de7151131860de520d720df46ffa1e64",
+      "build/strip-landmarks/alboDinosFrontage-exterior.glb": "c58add3412669188af5016f96a2a68a0a4366a0cfe59fe5b9aa06f2cc8ba97b5",
       "build/strip-landmarks/alboDinosFrontage-exterior-collision.json": "9d762e9b66301b8cae303087966750bf7b03de4abe2c64c370940fa3a2938340"
     }
   }

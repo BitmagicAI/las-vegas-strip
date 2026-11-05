@@ -27,9 +27,10 @@
   },
   "remaining": [
     "Gallery heights and stair positions estimated; source confirms two levels and external circulation, not precise dimensions",
-    "Missing street trees, planters, parking markings, fine blockwall finish and gate hardware",
-    "Pool size and office mansard proportions approximate; neutral daylight/perimeter drive review pending",
-    "No studio interiors or resident information reconstructed"
+    "Office planter rims installed; vegetation, street trees, parking markings, fine blockwall finish and gate hardware remain incomplete.",
+    "Pool size and office mansard proportions approximate; matched neutral daylight reviewed, perimeter driving remains unmeasured.",
+    "No studio interiors or resident information reconstructed",
+    "Official1520gallery contains frontage/landscape images inconsistent with current street reference; property/era attribution unresolved, not used to infer geometry."
   ],
   "evidence": {
     "views": "build/city-exteriors/casino-center-courtyard-final",
@@ -40,12 +41,14 @@
       "build/city-exteriors/casino-center-courtyard-north-stairs.json"
     ],
     "ownership": "build/city-exteriors/casino-center-courtyard-ownership-audit.json",
-    "visualReview": "Installed4views reviewed. Fixed courtyard-floating equipment using footprint-interior test, removed office generic windows and enlarged mansard. Final office/inside/aerial rechecked.45225tri24batches.68MiB.126support6groundwalk10stairlegsPASS,35oldtri removed. Static960p95~18.1ms not route benchmark."
+    "visualReview": "Installed4views reviewed. Fixed courtyard-floating equipment using footprint-interior test, removed office generic windows and enlarged mansard. Final office/inside/aerial rechecked.45225tri24batches.68MiB.126support6groundwalk10stairlegsPASS,35oldtri removed. Static960p95~18.1ms not route benchmark.",
+    "refinement": "docs/project-records/albo-dinos-casino-courtyard-refinement/review.md",
+    "matchedViews": "public/review/albo-dinos-casino-courtyard-refinement"
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/casinoCenterCourtyard-exterior.glb": "ef4f89294e952cf6b188647b91058baa79eff54c4f0b642584ff61d9f2eb2e80",
-      "build/strip-landmarks/casinoCenterCourtyard-exterior-collision.json": "9a0cce458617c0fb7f0a6a3a17614462826a0a699e769931a315ffa03799f32c"
+      "build/strip-landmarks/casinoCenterCourtyard-exterior.glb": "04db5752336d6d957488832470e0fa06524aec319c89ece413395e0d41033ff3",
+      "build/strip-landmarks/casinoCenterCourtyard-exterior-collision.json": "9a81cc940c8f23d7038e46ad9bc9e31669cecbc29a3350a66cf49cbf48bdc9d7"
     }
   }
 }

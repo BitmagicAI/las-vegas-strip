@@ -1,0 +1,61 @@
+{
+  "method": "Identical cameras;960x540DPR1ultra,neutral daylight,900warmframes+streamquiet+60settle,180samples. Static short samples only.",
+  "views": [
+    {
+      "building": "albo-dinos-frontage",
+      "view": "front",
+      "beforeP95": 18.59999990463257,
+      "afterP95": 19,
+      "changePercent": 2.150538158163151
+    },
+    {
+      "building": "albo-dinos-frontage",
+      "view": "dinos-street",
+      "beforeP95": 17.90000009536743,
+      "afterP95": 19,
+      "changePercent": 6.14525083112849
+    },
+    {
+      "building": "albo-dinos-frontage",
+      "view": "dinos-patio",
+      "beforeP95": 18.700000047683716,
+      "afterP95": 19.399999856948853,
+      "changePercent": 3.7433144785036676
+    },
+    {
+      "building": "albo-dinos-frontage",
+      "view": "frontage-aerial",
+      "beforeP95": 18.59999990463257,
+      "afterP95": 19.299999952316284,
+      "changePercent": 3.763441135875345
+    },
+    {
+      "building": "casino-center-courtyard",
+      "view": "front",
+      "beforeP95": 18.899999856948853,
+      "afterP95": 18.90000009536743,
+      "changePercent": 1.2614739697269783e-06
+    },
+    {
+      "building": "casino-center-courtyard",
+      "view": "courtyard-inside",
+      "beforeP95": 18.799999952316284,
+      "afterP95": 19.799999952316284,
+      "changePercent": 5.319148949661523
+    },
+    {
+      "building": "casino-center-courtyard",
+      "view": "courtyard-office",
+      "beforeP95": 20.199999809265137,
+      "afterP95": 19.100000143051147,
+      "changePercent": -5.445542953468008
+    },
+    {
+      "building": "casino-center-courtyard",
+      "view": "courtyard-aerial",
+      "beforeP95": 18.40000009536743,
+      "afterP95": 19,
+      "changePercent": 3.2608690300150123
+    }
+  ]
+}
