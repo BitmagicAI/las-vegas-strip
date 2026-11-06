@@ -10295,10 +10295,10 @@
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "2015/2020 street references may not reflect current finishes; exact windows and doors inferred",
-    "Palm-heavy landscape not reproduced; four broadleaf trees only",
+    "Four original palms added at three reference-supported frontage groups; exact positions/heights inferred, dense palm-heavy landscaping still incomplete. Four existing broadleaf trees retained.",
     "Full property yards and driveways still need coverage to sidewalk; ground outside authored patches remains cracked dirt",
     "Roof proportions approximate, private rear features not modeled",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "No interiors or full driving benchmark; neutral daylight reviewed. Initial middle-view p95 regression retained; warmed exact-base A/B pending."
    ],
    "record": "tools/resort-blocks/rexford-place-west.json",
    "buildings": [
@@ -10365,16 +10365,16 @@
     ],
     "writes": [
      "build/strip-landmarks/rexfordPlaceWest-exterior-collision.json",
-     "build/strip-landmarks/rexfordPlaceWest-exterior.glb",
+     "runtime-assets/strip-landmarks/rexfordPlaceWest-exterior.glb",
      "tools/resort-blocks/rexford-place-west.json"
     ],
     "builders": [
      "tools/strip-landmarks/rexford_place_west.py",
+     "tools/city-exteriors/probe-rexford-place-west-performance-ab.mjs",
      "tools/city-exteriors/stair-rexford-place-west.mjs",
      "tools/city-exteriors/test-rexford-place-west.mjs",
      "tools/strip-landmarks/export_rexford_place_west.py",
-     "tools/city-exteriors/replace-rexford-place-west.py",
-     "tools/strip-landmarks/build_rexford_place_west.py"
+     "tools/city-exteriors/prepare-rexford-place-west-performance-baseline.py"
     ]
    },
    "acceptance": [
