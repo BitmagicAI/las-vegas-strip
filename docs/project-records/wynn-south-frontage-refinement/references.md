@@ -1,0 +1,9 @@
+# Wynn South Gate reference review — 2026-11-06
+
+- [Google Street View, January 2025, approach](https://www.google.com/maps/@?api=1&map_action=pano&pano=VuY0TB7GEUeXarqVcarcSA&heading=0&pitch=10): visually inspected at36.1253936,-115.1664588. Low dark hip roof, cream elliptical arches, broad cornice and heavily landscaped drive.
+- [Google Street View, January 2025, close canopy](https://www.google.com/maps/@?api=1&map_action=pano&pano=BzN3_4lkir9BYPAiRhGKSA&heading=5&pitch=25): visually inspected at36.1255637,-115.1665316. Fine metal roof divisions, radial joints around cream arch trim, horizontal stone courses on square piers. The terracotta relief is partly obscured by shrubs; do not invent a replica carving. Decorative ceiling and chandelier visible but not modeled by this scoped exterior pass.
+- [Official Wynn directions](https://www.wynnlasvegas.com/directions/to-wynn-tower-suites): indexed official text identifies Tower Suites valet via South Gate Drive; direct retrieval403.
+- [Official resort map](https://cdn.wynnresorts.com/image/upload/v1776879405/visitwynn_pdfs_files/Resort-Map.pdf): indexed text identifies South Gate, South Valet and Tower Suites entrance; not a surveyed elevation.
+- [Official art walk](https://www.wynnlasvegas.com/stories/art-at-wynn-a-self-guided-walk-through-the-property): identifies Shoe sculpture at the south porte-cochere. Linked official photograph retrieval failed; no photographic observation or geometry claim based on that unavailable image.
+
+Original estimated canopy elevations7.1m/8.7m, pier spacing and mapped footprint retained. New seam spacing.65m/radius.022m, arch-joint width.018m and stone-course interval.58m are inferred visual details, not measurements. No third-party images committed. Waterfall-area building142899193 ownership remains unresolved; it is untouched. No new interiors or geometry-owner changes.

@@ -17,6 +17,9 @@ def exterior(B):
    # Recessed arched soffit, trim and a true open aperture through the fascia.
    pts=[F.p(c+r*math.cos(t),4.35+1.35*math.sin(t),-.04) for t in np.linspace(0,math.pi,33)]
    for aa,bb in zip(pts,pts[1:]):B.tube('wsc-trim-stone',aa,bb,.105,8)
+   # Fine radial joints divide the existing stone arch trim; no collision.
+   for t in np.linspace(.15,math.pi-.15,11):
+    F.tube('wsc-hip-metal-paint',((r-.08)*math.cos(t)+c,4.35+(1.35-.08)*math.sin(t),-.135),((r+.08)*math.cos(t)+c,4.35+(1.35+.08)*math.sin(t),-.135),.009,4)
    for t,u in zip(np.linspace(0,math.pi,33),np.linspace(0,math.pi,33)[1:]):
     B.face('wsc-soffit-paint',[F.p(c+r*math.cos(t),4.35+1.35*math.sin(t),0),F.p(c+r*math.cos(u),4.35+1.35*math.sin(u),0),F.p(c+r*math.cos(u),4.35+1.35*math.sin(u),.7),F.p(c+r*math.cos(t),4.35+1.35*math.sin(t),.7)])
   for q in parts(region):
@@ -29,6 +32,14 @@ def exterior(B):
   for j in range(n+1):
    u=min(L-.45,max(.45,j*step))
    F.box('wsc-plinth-stone',(u,.4,.35),(.95,.4,.9))
+   # Horizontal stone courses visible in January 2025 imagery. Preserve the relief strip.
+   for y in np.arange(.9,4.25,.58):
+    cut=LineString([(u-.51,y),(u+.51,y)]).intersection(region.buffer(-.035))
+    lines=[cut] if cut.geom_type=='LineString' else list(getattr(cut,'geoms',[]))
+    for line in lines:
+     if line.is_empty or line.geom_type!='LineString':continue
+     left,_,right,_=line.bounds
+     if right-left>.02:F.box('wsc-plinth-stone',((left+right)/2,y,-.012),(right-left,.018,.015))
    F.box('wsc-relief-paint',(u,2.85,-.025),(.22,1.85,.05))
  # Continuous roof slab; underside wound down, with no wall across the driveway.
  B.planar('wsc-roof-paint',p,7.2,True)
@@ -43,6 +54,18 @@ def exterior(B):
   for tri in triangles(q):
    B.upface('wsc-hip-metal-paint',[(x,7.23+min(2.8,p.boundary.distance(Point(x,z)))*.52,z) for x,z in list(tri.exterior.coords)[:-1]],True)
  B.planar('wsc-roof-paint',inner,8.70,True)
+ # Narrow raised seams follow the existing hip surface, clipped at corner bisectors.
+ # Spacing .65m and .022m radius are inferred, not surveyed dimensions.
+ for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
+  F,L,nx,nz=facade_frame(B,a,b,p,0)
+  for u in np.arange(.35,L,.65):
+   points=[]
+   for d in np.linspace(.12,2.68,14):
+    x,_,z=F.p(float(u),0,float(d));q=Point(x,z)
+    if not p.contains(q) or abs(p.boundary.distance(q)-d)>.06:break
+    points.append((x,7.23+d*.52+.028,z))
+   if len(points)>1:B.tube('wsc-hip-metal-paint',points[0],points[-1],.022,4)
+
  # Roof border coping and drainage are geometry, without extra live lights.
  for a,b in zip(list(inner.exterior.coords),list(inner.exterior.coords)[1:]):B.tube('wsc-trim-stone',(a[0],8.73,a[1]),(b[0],8.73,b[1]),.10,8)
  samples=[]

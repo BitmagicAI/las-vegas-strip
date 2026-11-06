@@ -1,0 +1,46 @@
+{
+  "viewport": [
+    960,
+    540
+  ],
+  "dpr": 1,
+  "quality": "ultra",
+  "warmFrames": 900,
+  "settleFrames": 60,
+  "timedFrames": 180,
+  "rows": [
+    {
+      "view": "front",
+      "beforeP50": 16.59999990463257,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 19.399999856948853,
+      "afterP95": 17.799999952316284,
+      "p95ChangePercent": -8.247422249642266
+    },
+    {
+      "view": "roof",
+      "beforeP50": 16.40000009536743,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 19.59999990463257,
+      "afterP95": 17.5,
+      "p95ChangePercent": -10.714285279849523
+    },
+    {
+      "view": "under",
+      "beforeP50": 16.799999952316284,
+      "afterP50": 16.5,
+      "beforeP95": 21.40000009536743,
+      "afterP95": 17.799999952316284,
+      "p95ChangePercent": -16.822430500037513
+    },
+    {
+      "view": "pier",
+      "beforeP50": 16.90000009536743,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 19.299999952316284,
+      "afterP95": 17.5,
+      "p95ChangePercent": -9.326424646442854
+    }
+  ],
+  "scope": "Matched static views only; no driving, vehicle turning, cold-stall, memory or sustained60fps claim."
+}
