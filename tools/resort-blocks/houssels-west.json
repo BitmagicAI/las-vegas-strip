@@ -29,18 +29,21 @@
     }
   ],
   "remaining": [
-    "2021 street references may not reflect current finishes; exact doors, windows and garage arrangements inferred",
-    "Roof and solar placement approximate; gable porch screen represented by framing only",
-    "Yards and drives reach mapped sidewalk exclusion, but side/rear gardens and lush planting remain incomplete",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "2021 Street View and 2009 brokerage imagery may not reflect current finishes; exact doors, windows and garage arrangements remain inferred",
+    "Window band and porch house associations corrected in this pass, but exact dimensions, solar placement and gable screen details remain approximate",
+    "Corner yard recolored to photographed red gravel; existing sidewalk exclusions retained, but side/rear gardens and dense planting remain incomplete",
+    "No interiors or full driving benchmark; actual walks establish nine short entrance approaches and returns, close-wall endpoint images do not establish interior access",
+    "Initial front p95 rose 18\u219223ms (+27.78%); warmed exact-base rendering A/B median18.20\u219218.25ms (+0.27%). Initial discrepancy retained; no startup/full-driving/sustained60fps claim"
   ],
   "triangles": 28134,
-  "batches": 34,
-  "optimizedMiB": 12.5,
+  "batches": 35,
+  "optimizedMiB": 12.51,
   "metricScope": "Authored triangles exclude two existing CC0 tree instances",
   "tests": [
-    "1629 roof-support samples PASS after placeholder removal",
-    "36 entrance approach legs in both directions PASS"
+    "1629 support samples and36 CPU legs before/after PASS",
+    "36 actual keyboard legs before/after PASS;36 endpoint images inspected",
+    "Four matched neutral-daylight camera pairs inspected",
+    "Nine smoke stops placed;0 failed requests/page/console errors"
   ],
   "viewsInspected": [
     "build/city-exteriors/houssels-west-final5/houssels-north.png",
@@ -129,7 +132,9 @@
         "p50": 16.600000023841858,
         "p95": 17.600000023841858
       }
-    ]
+    ],
+    "refinementInitial": "docs/project-records/houssels-west-refinement/performance-initial.json",
+    "warmedExactBaseAB": "docs/project-records/houssels-west-refinement/performance-ab-summary.json"
   },
   "ownership": {
     "removed": 192,
@@ -139,10 +144,23 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/housselsWest-exterior.glb": "87da43d1f4d77c6e64d3fe7cacf660a651c0696ce879b39e347187f511ad3c20",
-      "build/strip-landmarks/housselsWest-exterior-collision.json": "f6b83857a4ba492e8ad60c02c9e08560ac2740490cf14360474da20641df9fa5"
+      "build/strip-landmarks/housselsWest-exterior.glb": "acbd6904a3196f1def806dc9e47b87ac233b09bf5709892a24d3bd76b90eaff2",
+      "build/strip-landmarks/housselsWest-exterior-collision.json": "b6ee36ca3567c6be41cf82fcc23dc5dc1141a70cf8a97b4d5b7c294b2aa97b90"
     }
   },
   "yardCorrection": "Removed disconnected patches beyond the road; only yard pieces attached to their own house remain.",
-  "sidewalkApproachReview": "Full approach from sidewalk-side gate to door and back passed; logs /tmp/houssels_west-approach.log."
+  "sidewalkApproachReview": "Full approach from sidewalk-side gate to door and back passed; logs /tmp/houssels_west-approach.log.",
+  "refinementPass": {
+    "pr": 519,
+    "status": "verified scoped pass; full-site refinement deferred",
+    "evidence": "docs/project-records/houssels-west-refinement",
+    "references": "docs/project-records/houssels-west-refinement/references.md",
+    "changedMappedIds": [
+      "way/1236746616",
+      "way/1236746598",
+      "way/1236746595",
+      "way/1236746594"
+    ],
+    "scope": "Relocate high window band index2\u21923, framed porch index8\u21927, corner yard muted red gravel; other five houses unchanged"
+  }
 }

@@ -10495,12 +10495,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "2021 street references may not reflect current finishes; exact doors, windows and garage arrangements inferred",
-    "Roof and solar placement approximate; gable porch screen represented by framing only",
-    "Yards and drives reach mapped sidewalk exclusion, but side/rear gardens and lush planting remain incomplete",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "2021 Street View and 2009 brokerage imagery may not reflect current finishes; exact doors, windows and garage arrangements remain inferred",
+    "Window band and porch house associations corrected in this pass, but exact dimensions, solar placement and gable screen details remain approximate",
+    "Corner yard recolored to photographed red gravel; existing sidewalk exclusions retained, but side/rear gardens and dense planting remain incomplete",
+    "No interiors or full driving benchmark; actual walks establish nine short entrance approaches and returns, close-wall endpoint images do not establish interior access",
+    "Initial front p95 rose 18→23ms (+27.78%); warmed exact-base rendering A/B median18.20→18.25ms (+0.27%). Initial discrepancy retained; no startup/full-driving/sustained60fps claim"
    ],
    "record": "tools/resort-blocks/houssels-west.json",
    "buildings": [
@@ -10562,11 +10563,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/houssels_west.py",
+     "tools/city-exteriors/probe-houssels-west-performance-ab.mjs",
      "tools/city-exteriors/stair-houssels-west.mjs",
      "tools/city-exteriors/test-houssels-west.mjs",
      "tools/strip-landmarks/export_houssels_west.py",
-     "tools/city-exteriors/replace-houssels-west.py",
-     "tools/strip-landmarks/build_houssels_west.py"
+     "tools/city-exteriors/prepare-houssels-west-performance-baseline.py"
     ]
    },
    "acceptance": [
