@@ -1,0 +1,9 @@
+# Shake Shack frontage refinement
+
+2026-11-06: PR523 Excalibur ownership/review merged ec80e2e6efb5d41e953acd69c46fc7206d89dbd1;207explicitly closed. Pickerselected ext-shake-shack-frontage #168; claimconfirmed janiverse. Branch task/ext-shake-shack-frontage from currentorigin/next. No model/runtime edits yet; no GPU jobs running. All temporary browser tabs closed.
+
+Read existing record tools/resort-blocks/shake-shack-frontage.json and source tools/strip-landmarks/shake_shack_frontage.py, called by new_york_frontage.py. Two mapped IDs115661794/115661804; whole shared assetnewYorkFrontage includes other streetwall/garage/park restaurants that must be retained. Prior terrace rise1.15m,canopy5.45–6.05m are inferred. Existing stair/ramp/seat/counter geometry and collision preserved. Existing source has text signs but no burger icon or landscaping. Candidate focused refinement is reference-backed missing sign/planting or north-return details, not another unactioned audit; inspect current officialphotos and StreetView first. Do not speculate private interiors or change upperhotel envelope without evidence.
+
+Knownremaining:upper mass/roof junction approximate;north-returnglazing inferred;burgericon,landscaping,Tomsfrontageincomplete;nointeriors/neutraldaylight/full drivingbenchmark. Existing185support/14movement legs are historical,notnewchecks.
+
+Next: inspect existing builder/export/installer and current source references; baseline front-first neutraldaylight captures/performance and actual walks; select defensible small geometry additions after research; optimizelevel+WebP beforeinstall; use existingcity-cell pipeline/sharedbakeonce; preserveunchangedcells andotherLOD. Fullstep7checks/devsmoke/walks/matchingcaptures,PRexactscope/LFS/out-of-scope/Decisions/releasechecks. NeveruploadCDN,publish ormerge main.
