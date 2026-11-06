@@ -176,7 +176,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-weldon-east` | M | P2 | 4 | Refine the exterior of Weldon Place east homes |
 | `ext-santa-paula-west-courts` | M | P2 | 4 | Refine the exterior of Santa Paula west courtyard homes |
 | `ext-mcdonalds-sahara-canopy` | M | P2 | 4 | Refine the exterior of McDonalds Sahara corner canopy |
-| `ext-circus-north-canopy` | M | P2 | 3 | Refine the exterior of Circus Circus north roadside canopy |
 | `ext-encore-tower-suites-canopy` | M | P2 | 4 | Refine the exterior of Encore Tower Suites striped arrival canopy |
 | `ext-wynn-plaza-canopy` | M | P2 | 4 | Refine the exterior of Wynn Plaza curved motor court canopy |
 | `ext-wynn-lakefront` | L | P2 | 7 | Refine the exterior of Wynn Lake of Dreams lakefront and terraces |

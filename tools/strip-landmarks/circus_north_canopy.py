@@ -21,6 +21,16 @@ def exterior(B):
  for u in [2.2,7,12.2]:
   F.box('cc-shadow',(u,4.98,1.5),(.36,.08,.36))
   F.tube('cc-metal',(u,5.05,.5),(u,5.05,2.7),.018,6)
+ # January 2025 north-road Street View: suspended rectangular utility duct.
+ # Dimensions/position are reversible visual estimates; decorative, no collision.
+ # Keep its lower face well above public walking clearance.
+ F.box('cc-metal',(L-4.1,4.65,1.15),(4.2,.46,.92))
+ for u in [L-v for v in [2.05,3.4,4.8,6.15]]:
+  # Shallow flange bands and twin vertical suspension rods.
+  F.box('cc-sill',(u,4.65,1.15),(.045,.50,.96))
+  for w in [.63,1.67]:
+   F.tube('cc-metal',(u,4.39,w),(u,5.27,w),.018,6)
+  F.box('cc-metal',(u,4.38,1.15),(.065,.045,1.12))
  # Individual unlit marquee bulbs; no extra runtime lights.
  for u in np.arange(.25,L,.23):
   x,y,z=F.p(float(u),5.64,-.18);B.lathe('cc-gold',(x,z),[(y-.025,.025),(y+.025,.025)],6)

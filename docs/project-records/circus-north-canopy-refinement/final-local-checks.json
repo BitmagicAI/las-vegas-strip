@@ -1,0 +1,46 @@
+[
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-circus-north-canopy.mjs"
+    ],
+    "exitCode": 0,
+    "output": "{\"samples\":199,\"failures\":[],\"passed\":true}\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/stair-circus-north-canopy.mjs"
+    ],
+    "exitCode": 0,
+    "output": "[\n  {\n    \"building\": 0,\n    \"direction\": 1,\n    \"legs\": [\n      {\n        \"goal\": [\n          906.5724897108576,\n          0.2,\n          -2361.7810870329454\n        ],\n        \"frames\": 47,\n        \"position\": {\n          \"x\": 906.5243530273438,\n          \"y\": 1.190000057220459,\n          \"z\": -2361.806884765625\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          909.2179225085617,\n          0.2,\n          -2360.3662777479776\n        ],\n        \"frames\": 46,\n        \"position\": {\n          \"x\": 909.1602172851562,\n          \"y\": 1.200408697128296,\n          \"z\": -2360.397216796875\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          911.8633553062659,\n          0.2,\n          -2358.95146846301\n        ],\n        \"frames\": 47,\n        \"position\": {\n          \"x\": 911.806396484375,\n          \"y\": 1.2010525465011597,\n          \"z\": -2358.98193359375\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          913.626977171402,\n          0.2,\n          -2358.0082622730315\n        ],\n        \"frames\": 32,\n        \"position\": {\n          \"x\": 913.5941162109375,\n          \"y\": 1.200843334197998,\n          \"z\": -2358.02587890625\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 0,\n    \"direction\": -1,\n    \"legs\": [\n      {\n        \"goal\": [\n          911.8633553062659,\n          0.2,\n          -2358.95146846301\n        ],\n        \"frames\": 30,\n        \"position\": {\n          \"x\": 911.9067993164062,\n          \"y\": 1.190000057220459,\n          \"z\": -2358.92822265625\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          909.2179225085617,\n          0.2,\n          -2360.3662777479776\n        ],\n        \"frames\": 47,\n        \"position\": {\n          \"x\": 909.25927734375,\n          \"y\": 1.201632022857666,\n          \"z\": -2360.34423828125\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          906.5724897108576,\n          0.2,\n          -2361.7810870329454\n        ],\n        \"frames\": 47,\n        \"position\": {\n          \"x\": 906.6140747070312,\n          \"y\": 1.2005069255828857,\n          \"z\": -2361.7587890625\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          903.9270569131533,\n          0.2,\n          -2363.195896317913\n        ],\n        \"frames\": 46,\n        \"position\": {\n          \"x\": 903.9727783203125,\n          \"y\": 1.2012618780136108,\n          \"z\": -2363.17138671875\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 1,\n    \"direction\": 1,\n    \"legs\": [\n      {\n        \"goal\": [\n          909.0906765279765,\n          0.2,\n          -2362.2487783350753\n        ],\n        \"frames\": 18,\n        \"position\": {\n          \"x\": 909.1289672851562,\n          \"y\": 1.1784648895263672,\n          \"z\": -2362.320556640625\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          908.6190734329872,\n          0.2,\n          -2361.3669674025073\n        ],\n        \"frames\": 16,\n        \"position\": {\n          \"x\": 908.6586303710938,\n          \"y\": 1.2009464502334595,\n          \"z\": -2361.444091796875\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          907.9116687905034,\n          0.2,\n          -2360.044251003655\n        ],\n        \"frames\": 24,\n        \"position\": {\n          \"x\": 907.9241943359375,\n          \"y\": 1.1898846626281738,\n          \"z\": -2360.0673828125\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 1,\n    \"direction\": -1,\n    \"legs\": [\n      {\n        \"goal\": [\n          908.6190734329872,\n          0.2,\n          -2361.3669674025073\n        ],\n        \"frames\": 23,\n        \"position\": {\n          \"x\": 908.5914916992188,\n          \"y\": 1.2025084495544434,\n          \"z\": -2361.312255859375\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          909.0906765279765,\n          0.2,\n          -2362.2487783350753\n        ],\n        \"frames\": 16,\n        \"position\": {\n          \"x\": 909.0708618164062,\n          \"y\": 1.1897743940353394,\n          \"z\": -2362.21240234375\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          909.5622796229658,\n          0.2,\n          -2363.1305892676432\n        ],\n        \"frames\": 15,\n        \"position\": {\n          \"x\": 909.5416259765625,\n          \"y\": 1.0449957847595215,\n          \"z\": -2363.09228515625\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  }\n]\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "output": "1 runtime GLBs checked, 0 not optimized\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "city bake is up to date\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "1930 present, 0 missing, 0 not optimized\n"
+  }
+]

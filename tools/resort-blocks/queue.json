@@ -1070,8 +1070,12 @@
     {
       "id": "strat-pool-deck",
       "name": "STRAT level-eight pool deck and pavilion",
-      "status": "active",
-      "record": "strat-pool-deck.json"
+      "status": "refinement-deferred",
+      "record": "strat-pool-deck.json",
+      "deferral": {
+        "date": "2026-11-06",
+        "reason": "PR530 verified scoped pool and BigShot refinements merged; all unresolved STRAT discrepancies retained."
+      }
     },
     {
       "id": "strat-thrill-rides",
@@ -1082,7 +1086,7 @@
     {
       "id": "circus-north-canopy",
       "name": "Circus Circus north roadside canopy",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "circus-north-canopy.json"
     },
     {
@@ -1908,5 +1912,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "strat-pool-deck"
+  "active": "circus-north-canopy"
 }

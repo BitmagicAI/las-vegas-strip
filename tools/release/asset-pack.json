@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233178645,
+ "bytes": 1233182482,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -360,8 +360,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-3.bin",
-   "bytes": 668708,
-   "sha256": "64101e1fc6a9eb314f6949675b214bd1d043b7f8f6ed52f8c96054b565d79b6a",
+   "bytes": 668821,
+   "sha256": "9df4e329adbe5382d7e8f93c089c5428b9e97d1b39dbbdce567195ffc731c20c",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "585132654130a48236321b6d895a060692168e11d0badcbb11acee484bd42d06",
+   "sha256": "49b2ad2a181840f6601539ebf6f33d00f35d440366b4dd6b3d79140d18eed932",
    "kind": "runtime cell manifest"
   },
   {
@@ -7830,8 +7830,8 @@
   },
   {
    "path": "build/strip-landmarks/circusNorthCanopy-exterior.glb",
-   "bytes": 31216,
-   "sha256": "16f2409114975bf562d77630b1712f8d0b3292d69c73c0e2b581bd3fda48e29a",
+   "bytes": 34940,
+   "sha256": "1d8f658353b5d8920bd8ded27a19348b27cc27a83e058662e2e683323a609b53",
    "kind": "optimized"
   },
   {

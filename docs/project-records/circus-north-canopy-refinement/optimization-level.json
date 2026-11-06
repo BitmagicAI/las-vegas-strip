@@ -1,0 +1,83 @@
+{
+ "rel": "build/strip-landmarks/circusNorthCanopy-exterior.glb",
+ "sourceSha256": "9d0d54c70de6512630786c19be11466542069b49e41c4412876cfdca346b55d0",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.383,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/circusNorthCanopy-exterior.glb .bitmagic/optimize/build/strip-landmarks/circusNorthCanopy-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/circusNorthCanopy-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/circusNorthCanopy-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 97192,
+   "triangles": 1474,
+   "vertices": 3378,
+   "nodes": 7,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 89916,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 34940,
+   "triangles": 1474,
+   "vertices": 3378,
+   "nodes": 7,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 59514,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "7 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "0 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "60.8 KiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

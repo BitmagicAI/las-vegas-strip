@@ -1,0 +1,88 @@
+{
+  "base": "26f363b0498950f1eaf8eaa68ab0a9991d31293d",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "8181692296ddf207ea40f955c996424c7d75ae6aa7b8a1d5f6f780ba6fb6e4db",
+      "bytes": 415351,
+      "path": "public/project-records/circus-north-canopy-refinement/after-circus-canopy-roof.png"
+    },
+    {
+      "oid": "60dbbe2cad1535efb20f8ea7cd28a29689f7a7cacccc5c0ed269e17d9d8326cb",
+      "bytes": 298220,
+      "path": "public/project-records/circus-north-canopy-refinement/after-circus-canopy-under.png"
+    },
+    {
+      "oid": "0b4dba27d7cd2e1a95e6435893f849d883e055a03fe4bb85616834128c5c7492",
+      "bytes": 287890,
+      "path": "public/project-records/circus-north-canopy-refinement/after-front-circus-canopy.png"
+    },
+    {
+      "oid": "ef71eb74888b268305e24ffa1ca7e2fcc34f1d82b81059f7a016dceb72770e6b",
+      "bytes": 378937,
+      "path": "public/project-records/circus-north-canopy-refinement/after-walk-endpoint-0.png"
+    },
+    {
+      "oid": "c4a39dc4e5b8fe912f82ac3560936e59ea25dd03830bb330f07d6581b39799f6",
+      "bytes": 94504,
+      "path": "public/project-records/circus-north-canopy-refinement/after-walk-endpoint-1.png"
+    },
+    {
+      "oid": "b942f9fb240634ffbfeb82f05c9d279e09e7093745f3b6aeb965c0bd9da7892b",
+      "bytes": 356893,
+      "path": "public/project-records/circus-north-canopy-refinement/after-walk-return-0.png"
+    },
+    {
+      "oid": "01481745ca7480d95127581c5742d718023113e808082bb168949f2dcd4efe77",
+      "bytes": 357013,
+      "path": "public/project-records/circus-north-canopy-refinement/after-walk-return-1.png"
+    },
+    {
+      "oid": "7759d9601ca086b05c135e32ab828ff56b58b71a2d797f25af18334af3515d44",
+      "bytes": 297525,
+      "path": "public/project-records/circus-north-canopy-refinement/before-circus-canopy-under.png"
+    },
+    {
+      "oid": "63ec07d1eaf24d11dfeb16d36fac2a97a4ebe352ff07ea3d4eceb9fc8a676045",
+      "bytes": 287516,
+      "path": "public/project-records/circus-north-canopy-refinement/before-front-circus-canopy.png"
+    },
+    {
+      "oid": "b9c38cc3582c4d1a804d0378489b562cd282ef1edb029a4c970ebd9daaaef3bb",
+      "bytes": 380171,
+      "path": "public/project-records/circus-north-canopy-refinement/before-walk-endpoint-0.png"
+    },
+    {
+      "oid": "526f4bfab6a0e4e2e8cbc752cf32a1ee817f234447e0af8e3fcecc9e7b26bc7e",
+      "bytes": 94800,
+      "path": "public/project-records/circus-north-canopy-refinement/before-walk-endpoint-1.png"
+    },
+    {
+      "oid": "4d9a0c64628e142800867f5551beb2f82666b43feeea517bab936e621ef690ff",
+      "bytes": 355385,
+      "path": "public/project-records/circus-north-canopy-refinement/before-walk-return-0.png"
+    },
+    {
+      "oid": "6b89cc06f07afbd9f572a031250a0455bc62e5ed543497689ab67a3bcc041bb1",
+      "bytes": 355773,
+      "path": "public/project-records/circus-north-canopy-refinement/before-walk-return-1.png"
+    },
+    {
+      "oid": "9df4e329adbe5382d7e8f93c089c5428b9e97d1b39dbbdce567195ffc731c20c",
+      "bytes": 668821,
+      "path": "runtime-assets/baked/cells/cell-1_-3.bin"
+    },
+    {
+      "oid": "49b2ad2a181840f6601539ebf6f33d00f35d440366b4dd6b3d79140d18eed932",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "1d8f658353b5d8920bd8ded27a19348b27cc27a83e058662e2e683323a609b53",
+      "bytes": 34940,
+      "path": "runtime-assets/strip-landmarks/circusNorthCanopy-exterior.glb"
+    }
+  ],
+  "count": 16,
+  "bytes": 4677540
+}
