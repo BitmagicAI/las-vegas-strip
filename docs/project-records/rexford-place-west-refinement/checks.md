@@ -3,7 +3,7 @@
 - Type check passed; three runtime tests passed (lazy LOD, lighting resize, site lights).
 - 1653 support samples and44CPU approach/return legs passed before and after.
 - Actual44keyboard baseline legs passed; 44after legs passed. All44before/after endpoint images inspected; close-door views are walls, not interior evidence.
-- Four matched neutral daylight baseline views inspected; four matching after views inspected; middle-view timing follow-up pending.
+- Four matched neutral daylight baseline views inspected; four matching after views inspected; initial middle-view+49.43% spike retained; warmed exact-base10window A/B medianp95 18.75→18.85ms(+0.53%). No startup/full-driving guarantee.
 - Level+WebP optimization completed,12.32MiB optimized model. Changed-model check1checked/0unoptimized.
 - City bake current; asset pack1930present/0missing/0unoptimized.
 - Record validator289valid/1182remaining. Public check0failures/11existingwarnings.

@@ -25,5 +25,11 @@
       "changePercent": 5.142856325422018
     }
   ],
-  "status": "Middle p95+49.43% retained; warmed exact-base A/B pending. Not a performance pass."
+  "status": "Initial +49.43% middle-view spike retained. Longer warmed median p95 +0.53%; no material sustained increase in this static view. No startup/full-driving/sustained60fps guarantee.",
+  "warmedExactBaseAB": {
+    "beforeMedianP95": 18.75,
+    "afterMedianP95": 18.84999990463257,
+    "changePercent": 0.53333282470704,
+    "method": "Exactbase18e9e65c browser-only oldGLB+cell2_-6; afterthenbefore,1800warm60settle10x180frames;both required intercepts verified."
+  }
 }

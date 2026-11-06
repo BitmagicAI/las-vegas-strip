@@ -40,7 +40,7 @@
     "Four original palms added at three reference-supported frontage groups; exact positions/heights inferred, dense palm-heavy landscaping still incomplete. Four existing broadleaf trees retained.",
     "Full property yards and driveways still need coverage to sidewalk; ground outside authored patches remains cracked dirt",
     "Roof proportions approximate, private rear features not modeled",
-    "No interiors or full driving benchmark; neutral daylight reviewed. Initial middle-view p95 regression retained; warmed exact-base A/B pending."
+    "No interiors or full driving benchmark; initial middle-view p95 spike retained. Longer warmed exact-base A/B median p95+0.53%, no startup guarantee."
   ],
   "triangles": 14382,
   "batches": 27,
@@ -161,7 +161,7 @@
   "refinement20261106": {
     "scope": "Four original fan palms on way/1236621163 (two),1236621167(one),1236621172(one); other eight houses unchanged. Historical references, estimated heights/positions.",
     "record": "docs/project-records/rexford-place-west-refinement",
-    "status": "Installed visual/walk checks passed; performance follow-up pending.",
+    "status": "Scoped installed landscaping pass verified; full-site gaps retained.",
     "checks": {
       "supportSamples": 1653,
       "cpuLegs": 44,
