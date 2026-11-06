@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232760831,
+ "bytes": 1232774909,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -84,8 +84,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_1.bin",
-   "bytes": 1200436,
-   "sha256": "80ef043497768b22c3465223d80d013c215da67f5969375d6705d1494679eca1",
+   "bytes": 1200458,
+   "sha256": "323ab63f64b1f0a28dca832a36fd9600065b2150de74423940d6126452a9ff84",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "78ff992b150546a5828d11135f53f9099fa3e99c834e74423e7b5ab826d4619f",
+   "sha256": "770fd9a52f68bc1d91c68cbb8b7e650ad76b06ad447051f7512fd6ca4a39a5ae",
    "kind": "runtime cell manifest"
   },
   {
@@ -9822,8 +9822,8 @@
   },
   {
    "path": "build/strip-landmarks/newYorkFrontage-exterior.glb",
-   "bytes": 1081272,
-   "sha256": "bc460bb12ac4bd1b34e8805e564a3325e899cfd7f204271553877515cff04a6e",
+   "bytes": 1095328,
+   "sha256": "4c260c905edda7dd41b617011ae5944e02170e616f4fa3994feb7dd3e38682eb",
    "kind": "optimized"
   },
   {
