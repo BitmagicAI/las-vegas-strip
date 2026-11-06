@@ -1,0 +1,306 @@
+{
+ "rel": "build/strip-landmarks/rexfordPlaceWest-exterior.glb",
+ "sourceSha256": "f83f2226abab020c767bc088a5270714c5e6b11eb134759864363b5603fa8845",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 2.242,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/rexfordPlaceWest-exterior.glb .bitmagic/optimize/build/strip-landmarks/rexfordPlaceWest-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/rexfordPlaceWest-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/rexfordPlaceWest-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 31842068,
+   "triangles": 270716,
+   "vertices": 521717,
+   "nodes": 51,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 23130506,
+   "gpuTextures": 65356455,
+   "textures": [
+    {
+     "name": "Original Bali Hai shingle normal",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 16077,
+     "gpu": 5592405
+    },
+    {
+     "name": "Original Bali Hai green shingles",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1425621,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 581596,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_diff_1k",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 449977,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 375732,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 681604,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1047075,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 633698,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 1228646,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_diff_1k",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 863246,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 708242,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree-proof",
+     "slot": "base",
+     "w": 800,
+     "h": 900,
+     "mime": "png",
+     "bytes": 652270,
+     "gpu": 3840000
+    }
+   ],
+   "extensions": [
+    "KHR_texture_transform"
+   ]
+  },
+  "after": {
+   "bytes": 16441568,
+   "triangles": 270716,
+   "vertices": 521717,
+   "nodes": 51,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 14704069,
+   "gpuTextures": 65356455,
+   "textures": [
+    {
+     "name": "Original Bali Hai shingle normal",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 16077,
+     "gpu": 5592405
+    },
+    {
+     "name": "Original Bali Hai green shingles",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1425621,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 581596,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_diff_1k",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 449977,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 375732,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 681604,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1047075,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 633698,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 1228646,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_diff_1k",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 863246,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 708242,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree-proof",
+     "slot": "base",
+     "w": 800,
+     "h": 900,
+     "mime": "png",
+     "bytes": 652270,
+     "gpu": 3840000
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization",
+    "KHR_texture_transform"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant",
+   "TEXCOORD_1 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "51 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "12 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "14.69 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 4 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/0/primitives/0/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/31/primitives/0/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/31/primitives/1/material"
+   }
+  ]
+ }
+}
