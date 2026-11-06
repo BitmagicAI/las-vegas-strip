@@ -14,9 +14,13 @@
   "existingTreeNodesPreserved": 10,
   "collision": "50 removed and 50 added triangles confined to relocated southern porch; all other triangles identical",
   "remaining": [
-    "grouped bake/cell preservation/stage",
-    "model/bake/asset checks",
     "installed after views/actual walks/smoke/performance",
     "records/board/LFS audit/PR"
-  ]
+  ],
+  "modelCheck": "1 optimized GLB, 0 unoptimized",
+  "bakeCheck": "current",
+  "assetCheck": "1930 present, 0 missing, 0 unoptimized",
+  "stage": "4 copied, 1926 unchanged, 0 removed",
+  "cells": "91/92 byte-identical; only 2_-6 changed",
+  "speedMap": "restored missing ignored source dependencies, repacked and confirmed byte-identical to baseline runtime"
 }
