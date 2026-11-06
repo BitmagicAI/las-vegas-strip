@@ -1,0 +1,112 @@
+{
+  "id": "jack-main-wyoming",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/689003962"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15255,-115.15335&zoom=20&basemap=satellite",
+      "review": "Restaurant at Main/Wyoming corner, mapped stepped plan, drive-through on east/south, parking north, setbacks west/south"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15239,-115.15402&heading=90&pitch=2",
+      "imageDate": "January2026",
+      "review": "Red central entrance gable, two small red-sided roof gables, gray green tiled mansard, cream walls, broad storefront glazing, detached sign, desert landscaping"
+    }
+  ],
+  "remaining": [
+    "Exact heights, rear service positions and window divisions estimated",
+    "Sign lettering is an approximation of the brand typography; original simplified menu posters",
+    "Desert shrubs, mature trees, exact drive-through menu equipment and interior missing",
+    "No neutral daylight review or full driving benchmark"
+  ],
+  "triangles": 2149,
+  "batches": 21,
+  "optimizedMiB": 0.38,
+  "viewsInspected": [
+    "build/city-exteriors/jack-main-wyoming-final/jack-front.png",
+    "build/city-exteriors/jack-main-wyoming-final/jack-south.png",
+    "build/city-exteriors/jack-main-wyoming-final/jack-roof.png"
+  ],
+  "tests": [
+    "631 roof support samples PASS after placeholder removal",
+    "4 full entrance approach legs PASS"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "jack-front",
+        "eye": [
+          1709,
+          3,
+          -4053
+        ],
+        "target": [
+          1731,
+          2.5,
+          -4053
+        ],
+        "p": [
+          1717,
+          2,
+          -4053
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.400000035762787
+      },
+      {
+        "name": "jack-south",
+        "eye": [
+          1720,
+          4,
+          -4028
+        ],
+        "target": [
+          1741,
+          2.5,
+          -4047
+        ],
+        "p": [
+          1740,
+          2,
+          -4037
+        ],
+        "p50": 16.69999998807907,
+        "p95": 18.5
+      },
+      {
+        "name": "jack-roof",
+        "eye": [
+          1703,
+          30,
+          -4031
+        ],
+        "target": [
+          1740,
+          2,
+          -4053
+        ],
+        "p": [
+          1717,
+          2,
+          -4053
+        ],
+        "p50": 16.799999952316284,
+        "p95": 18.69999998807907
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 64,
+    "colliderTrianglesRemoved": 64,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in JackMainWyoming mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/jackMainWyoming-exterior.glb": "cfb14e1239b710710fd1acb9a5a5be3e277c4d9e5d922fae60a6087e067eaa6e",
+      "build/strip-landmarks/jackMainWyoming-exterior-collision.json": "dc7b284ac63705d4edcce27ad80f5f3a003867753b7bfcbff49a718fb2c19163"
+    }
+  }
+}

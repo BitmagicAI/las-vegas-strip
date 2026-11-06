@@ -39,7 +39,7 @@ def exterior(B):
  for side in [-1,1]:B.face('jm-red-paint',[F.p(du+side*1.8,5.2,-.65),F.p(du,6.55,-.65),F.p(du,6.55,-.11),F.p(du+side*1.8,5.2,-.11)])
  F.box('jm-frame-paint',(du,1.55,-.67),(2.25,2.72,.09));F.box('jm-glass',(du,1.55,-.73),(2.08,2.55,.03));F.box('jm-frame-paint',(du,1.55,-.77),(.06,2.55,.04))
  for u in [du-.12,du+.12]:F.tube('jm-handle-paint',(u,1.1,-.84),(u,1.7,-.84),.025,8)
- F.box('jm-red-sign-paint',(du,4.6,-.69),(1.75,1.5,.08));F.text('Jack',(du,4.58,-.75),.48,'jm-white-letter');F.text('IN THE BOX',(du,4.16,-.75),.13,'jm-white-letter');F.text('1531',(L-.65,3.0,-.4),.18,'jm-dark-letter')
+ F.box('jm-red-sign-paint',(du,4.6,-.69),(1.75,1.5,.08));F.text('Jack',(du,4.58,-.75),.48,'jm-white-letter');F.text('IN THE BOX',(du,4.16,-.75),.13,'jm-white-letter');F.text('1591',(L-.65,3.0,-.4),.18,'jm-dark-letter')
  # Two small hipped/gabled corner markers above the main fascia.
  for u in [1.3,L-1.3]:
   for side in [-1,1]:B.face('jm-roof-paint',[F.p(u+side*.9,4.65,-.05),F.p(u+side*.9,4.65,1.6),F.p(u,5.85,1.6),F.p(u,5.85,-.05)])

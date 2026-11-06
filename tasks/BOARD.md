@@ -175,8 +175,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-weldon-west` | M | P2 | 5 | Refine the exterior of Weldon Place west homes |
 | `ext-weldon-east` | M | P2 | 4 | Refine the exterior of Weldon Place east homes |
 | `ext-santa-paula-west-courts` | M | P2 | 4 | Refine the exterior of Santa Paula west courtyard homes |
-| `ext-jack-main-wyoming` | M | P2 | 4 | Refine the exterior of Jack in the Box Main and Wyoming |
-| `ext-casino-center-1512` | M | P2 | 3 | Refine the exterior of Casino Center 1512 cottage and rear building |
 | `ext-paradise-road-small-frontage` | M | P2 | 4 | Refine the exterior of Paradise Road small commercial frontage |
 | `ext-mcdonalds-sahara-canopy` | M | P2 | 4 | Refine the exterior of McDonalds Sahara corner canopy |
 | `ext-strat-pool-deck` | M | P2 | 4 | Refine the exterior of STRAT level-eight pool deck and pavilion |
