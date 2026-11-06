@@ -1,0 +1,35 @@
+{
+  "initialMatchedViews": [
+    {
+      "name": "front",
+      "beforeP95": 17.700000047683716,
+      "afterP95": 17.399999856948853,
+      "changePercent": -1.6949163272692913
+    },
+    {
+      "name": "middle",
+      "beforeP95": 17.399999856948853,
+      "afterP95": 26,
+      "changePercent": 49.42528858479649
+    },
+    {
+      "name": "south",
+      "beforeP95": 18.600000143051147,
+      "afterP95": 18.199999809265137,
+      "changePercent": -2.150539412417418
+    },
+    {
+      "name": "roof",
+      "beforeP95": 17.5,
+      "afterP95": 18.399999856948853,
+      "changePercent": 5.142856325422018
+    }
+  ],
+  "status": "Initial +49.43% middle-view spike retained. Longer warmed median p95 +0.53%; no material sustained increase in this static view. No startup/full-driving/sustained60fps guarantee.",
+  "warmedExactBaseAB": {
+    "beforeMedianP95": 18.75,
+    "afterMedianP95": 18.84999990463257,
+    "changePercent": 0.53333282470704,
+    "method": "Exactbase18e9e65c browser-only oldGLB+cell2_-6; afterthenbefore,1800warm60settle10x180frames;both required intercepts verified."
+  }
+}
