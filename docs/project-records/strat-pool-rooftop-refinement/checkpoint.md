@@ -1,0 +1,11 @@
+# STRAT pool and rooftop refinement
+
+2026-11-06. Issues187/188 claimed and assignment verified janiverse. Branch task/ext-strat-pool-rooftop-refinement from origin/next c99fa51d022100d66e710c0a24829184e10384df in vegas-2601-westwood. Prior PR529 merged and issue185 closed. No GPU jobs or Maps tabs remain. Dev3180/editor3181. No model edits yet.
+
+Read both task briefs and records tools/resort-blocks/strat-pool-deck.json and strat-thrill-rides.json. Scope is the same STRAT site: Level8 pool/pavilion/furniture and rooftop ride exterior. Preserve existing tower, observation ring, podium, all public interiors and roads. Pool key stratPoolDeck; rooftop key stratExterior. One shared bake for the group after final geometry; optimize every changed GLB includingWebP.
+
+Next: inspect source builders and ownership of long rods around tower pod, research linked official photographs and GoogleEarth/StreetView. Confirm latest permanent ride structures rather than inferring status from old ticket listings. Establish front-first identical neutraldaylight baseline and actual keyboard route baseline before edits; record performance on matching cameras. Choose reversible reference-supported refinements and preserve unresolved heights, registration, indoor circulation, WET24 and machinery/boarding limitations. No claims of functioning rides or whole-site completion.
+
+Required: source support/route checks, all step7 local checks, final installed visual review, actual walks, matching performance and nine-stop devsmoke. GPU jobs serial; no Maps/browser during probes. Use Python3.12 at /Users/janisun/.local/share/uv/python/cpython-3.12-macos-aarch64-none/bin/python3 for authoring; system3.9 fails localnumpy. Blender /Applications/Blender.app/Contents/MacOS/Blender. Dependency symlinks .agents,engine,node_modules,tools/optimize/bm-tools remain untracked.
+
+Every bitmagiccommand uses --original-prompt 'Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue.' Never main/CDNupload/publish/release/settings. Before eachpush verify origin/next..HEAD onlyowncommits. Targetnext,selfmergeverified --merge with exacthead,close187/188,picker. Genuinelyblockedtasks get issue explanation and standalone /unclaim, then selectanother.
