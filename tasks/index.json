@@ -16483,15 +16483,15 @@
    "area": "exteriors",
    "size": "S",
    "priority": "P2",
-   "status": "open",
-   "summary": "Sphere now has a lightweight record. This pass audits the existing installation; fine fidelity, full public connections and remaining adjoining ownership stay explicit in the record.",
+   "status": "done",
+   "summary": "Scoped existing-installation audit complete; lightweight block record and matching captures added. Full architectural fidelity and plaza performance remain deferred in the record.",
    "items": [
     "Fine facade fidelity remains open: display panel seams, entrance bay rhythm, canopy and hardscape need matched current ground/aerial reference coverage before a justified mesh change.",
     "Full Venetian-to-Sphere connection remains open: a local bridge threshold test does not establish the entire inter-property route.",
     "Public interior alignment, suite levels, accessible lifts and complete seat capacity remain approximate; existing generated 10394 seats are below the architect’s 17600-seat description and must not be called exact.",
     "Historical blank adjoining-component finding is partly superseded by the separate sphere-garage record; remaining unowned background shells still require a current ownership inventory.",
     "Baseline plaza p95 is 59.7 ms at 960x540 DPR1 ultra, while other sampled views are 17.7–19.3 ms. Existing performance limitation requires diagnosis; no sustained 60 fps claim.",
-    "Maps/Street View comparison and full perimeter walk are still pending for this pass."
+    "Full perimeter and exact north/west sloped canopy/arrival geometry remain unverified. January2025 Sands frontage is partly occluded by the monorail; satellite does not establish elevations."
    ],
    "record": "tools/resort-blocks/sphere.json",
    "buildings": [

@@ -1,0 +1,41 @@
+{
+  "method": "Identical 960x540 DPR1 ultra cameras, neutral daylight; 900 warm frames, streaming quiet,60 settle,180 timed. No model/runtime change. Stationary samples, not sustained route FPS.",
+  "views": [
+    {
+      "view": "front",
+      "beforeP95Ms": 19.299999952316284,
+      "afterP95Ms": 19.200000047683716,
+      "changePercent": -0.5181342221742713
+    },
+    {
+      "view": "plaza",
+      "beforeP95Ms": 59.700000047683716,
+      "afterP95Ms": 61.299999952316284,
+      "changePercent": 2.680066839789963
+    },
+    {
+      "view": "bridge",
+      "beforeP95Ms": 18.90000009536743,
+      "afterP95Ms": 20.5,
+      "changePercent": 8.46560791830231
+    },
+    {
+      "view": "atrium",
+      "beforeP95Ms": 18.300000190734863,
+      "afterP95Ms": 18,
+      "changePercent": -1.6393452874757353
+    },
+    {
+      "view": "bowl",
+      "beforeP95Ms": 17.700000047683716,
+      "afterP95Ms": 17.700000047683716,
+      "changePercent": 0.0
+    },
+    {
+      "view": "upper",
+      "beforeP95Ms": 17.700000047683716,
+      "afterP95Ms": 17.700000047683716,
+      "changePercent": 0.0
+    }
+  ]
+}

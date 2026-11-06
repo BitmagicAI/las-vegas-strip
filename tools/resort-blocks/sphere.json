@@ -30,6 +30,21 @@
       "provider": "Sphere",
       "accessed": "2026-11-06",
       "observed": "Confirms East and West entries from Sands Avenue and accessible Venetian bridge via the resort; elevators and escalators exist. Does not establish exact architectural dimensions or a complete floor plan."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1212,-115.162,18z/data=!3m1!1e3",
+      "provider": "Google Maps satellite",
+      "accessed": "2026-11-06",
+      "imageDate": "Unknown; copyright2026 is not capture date.",
+      "observed": "Visually inspected: circular shell, broad low perimeter apron, east parking and looping drives, west long garage/service buildings, southwest diagonal bridge route. No imagery copied into repository."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1225,-115.1622&heading=180&pitch=15&fov=90",
+      "provider": "Google Street View,55 Sands Ave",
+      "panoid": "dq3xNbDNBaC4r90PSeOIow",
+      "imageDate": "January2025",
+      "accessed": "2026-11-06",
+      "observed": "Visually inspected: shell behind elevated monorail track; foreground fencing and sparse new trees; broad sloped pale canopy west/right of shell. Track obstructs part of facade. Exact canopy geometry and ownership remain to reconcile. Initial near-center request resolved to unrelated contributed shopping-mall panorama, rejected as architectural evidence."
     }
   ],
   "dimensions": {
@@ -56,16 +71,24 @@
     "Public interior alignment, suite levels, accessible lifts and complete seat capacity remain approximate; existing generated 10394 seats are below the architect\u2019s 17600-seat description and must not be called exact.",
     "Historical blank adjoining-component finding is partly superseded by the separate sphere-garage record; remaining unowned background shells still require a current ownership inventory.",
     "Baseline plaza p95 is 59.7 ms at 960x540 DPR1 ultra, while other sampled views are 17.7\u201319.3 ms. Existing performance limitation requires diagnosis; no sustained 60 fps claim.",
-    "Maps/Street View comparison and full perimeter walk are still pending for this pass."
+    "Full perimeter and exact north/west sloped canopy/arrival geometry remain unverified. January2025 Sands frontage is partly occluded by the monorail; satellite does not establish elevations."
   ],
   "validation": {
     "collision": "Existing sphere test passed 5879 support/body and 6 door checks with 11 city cells; actual movement is a separate pending check.",
-    "visual": "Six baseline installed views inspected; front first. Bridge framing is close to a brace, bowl view emphasizes screen, and neither proves the complete bridge or seating layout.",
-    "performance": "Baseline six stationary views, 900 warm frames plus streaming quiet, 60 settle frames and 180 measured frames; dynamic original screen content makes pixel-identical comparisons inappropriate."
+    "visual": "Six matching before/after installed views inspected, front first; no geometry change. Expected animated display changes only. Bridge brace obstructs part of view and bowl framing favors screen, so neither establishes whole-route or exact seating fidelity.",
+    "performance": "Matched p95 ms front19.3\u219219.2, plaza59.7\u219261.3, bridge18.9\u219220.5, atrium18.3\u219218.0, bowl17.7\u219217.7, upper17.7\u219217.7. No >10% change in sampled views; plaza remains an existing slow view and no 60fps/speedup claim is made.",
+    "walking": "Actual installed keyboard movement passed 28 forward/return legs over five local routes: bridge threshold to atrium, plaza doors to atrium, west entry escalator, atrium to terrace and terrace to gallery. Two nearby door interactions. This does not cover the full Venetian connection, all entrances or all seating aisles."
   },
   "evidence": [
     "docs/project-records/sphere-refinement/collision-before.json",
-    "docs/project-records/sphere-refinement/performance-before.json"
+    "docs/project-records/sphere-refinement/performance-before.json",
+    "docs/project-records/sphere-refinement/actual-walk-before.json",
+    "docs/project-records/sphere-refinement/performance-after.json",
+    "docs/project-records/sphere-refinement/performance-comparison.json",
+    "docs/project-records/sphere-refinement/smoke.json",
+    "public/review/sphere-refinement/comparison.jpg",
+    "docs/project-records/sphere-refinement/checks.json",
+    "docs/project-records/sphere-refinement/runtime-audit.json"
   ],
   "decisions": [
     "Preserve existing geometry and optimized runtime while establishing a durable inventory and explicit remaining work. No speculative geometry or third-party texture copying.",
