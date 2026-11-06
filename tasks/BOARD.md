@@ -164,7 +164,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-shake-shack-frontage` | M | P2 | 4 | Refine the exterior of Shake Shack Strip facade and canopy |
 | `ext-bonita-terrace` | M | P2 | 4 | Refine the exterior of Bonita Terrace apartments |
 | `ext-carnaval-court` | M | P2 | 3 | Refine the exterior of Carnaval Court outdoor pavilion |
-| `ext-wynn-south-frontage` | M | P2 | 4 | Refine the exterior of Wynn south frontage audit |
 | `ext-russell-service` | M | P2 | 3 | Refine the exterior of Russell Road service building |
 | `ext-siegel-paradise` | M | P2 | 4 | Refine the exterior of Siegel Suites Paradise |
 | `ext-santa-paula-1807-1811` | M | P2 | 4 | Refine the exterior of Santa Paula1807/1811 apartments |

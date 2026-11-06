@@ -1,0 +1,36 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Existing canopy driveway approach and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": false,
+          "goal": [
+            592,
+            0.24,
+            -1073
+          ],
+          "position": {
+            "x": 593.2855224609375,
+            "y": 0.26722648620605466,
+            "z": -1069.437744140625
+          }
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

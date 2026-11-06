@@ -1,0 +1,16 @@
+{
+  "before": {
+    "bytes": 283520,
+    "triangles": 12221,
+    "batches": 7,
+    "textures": 0
+  },
+  "after": {
+    "bytes": 374092,
+    "triangles": 16457,
+    "batches": 7,
+    "textures": 0
+  },
+  "revision": "2558580fac4b53a3",
+  "optimization": "Level pass successful. WebP pass ran and skipped because the authored model has zero image textures."
+}
