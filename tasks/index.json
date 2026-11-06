@@ -9779,15 +9779,17 @@
    "id": "ext-shake-shack-frontage",
    "title": "Refine the exterior of Shake Shack Strip facade and canopy",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
-   "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "status": "done",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
-    "Upper hotel mass and roof remain prior approximation, not photo-matched tower/restaurant junction",
-    "North return glazing bays inferred using front material vocabulary",
-    "Burger icon, landscaping and adjacent Toms frontage still incomplete",
-    "No interiors, neutral daylight or full driving benchmark"
+    "Upper hotel mass and roof junction remain the prior approximation: the inspected sources do not establish surveyed tower-to-restaurant dimensions; no speculative mass replacement in this sign pass.",
+    "North return glazing remains inferred: current frontal Street View does not resolve every return bay.",
+    "Landscaping and adjacent Toms frontage remain incomplete: their planted bed boundaries and shared stair ownership need a coordinated frontage pass.",
+    "Public dining interior remains unbuilt: official interior photograph establishes finishes and furniture but not a measured circulation/entrance plan.",
+    "Full driving and cold-transition performance benchmark remains outstanding; this pass measures identical static cameras only. Terrace p95 remains about39.6ms, so no sustained60fps claim.",
+    "Burger outline placement and dimensions remain estimated; current installed review verifies its visibility, not survey-accurate branding or whole-block photorealism."
    ],
    "record": "tools/resort-blocks/shake-shack-frontage.json",
    "buildings": [
@@ -9808,17 +9810,18 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
-     "build/strip-landmarks/newYorkFrontage-exterior-collision.json",
-     "build/strip-landmarks/newYorkFrontage-exterior.glb",
+     "runtime-assets/baked/cells/cell--1_1.bin",
+     "runtime-assets/strip-landmarks/newYorkFrontage-exterior-collision.bin",
+     "runtime-assets/strip-landmarks/newYorkFrontage-exterior.glb",
      "tools/resort-blocks/shake-shack-frontage.json"
     ],
     "builders": [
+     "tools/city-exteriors/append-shake-shack-refinement.mjs",
      "tools/city-exteriors/audit-nyny-restaurants.py",
      "tools/city-exteriors/test-shake-shack-frontage.mjs",
      "tools/city-exteriors/walk-shake-shack-frontage.mjs",
      "tools/strip-landmarks/new_york_frontage.py",
-     "tools/city-exteriors/drive-clearance-nyny-arrival.mjs",
-     "tools/city-exteriors/stair-nyny-arrival.mjs"
+     "tools/city-exteriors/drive-clearance-nyny-arrival.mjs"
     ]
    },
    "acceptance": [
