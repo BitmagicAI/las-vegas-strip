@@ -1890,7 +1890,13 @@
       "name": "2650 Westwood, Highland Steel and Creel",
       "status": "refinement-deferred",
       "record": "westwood-commercial.json"
+    },
+    {
+      "id": "sphere",
+      "name": "Sphere",
+      "status": "refinement-deferred",
+      "record": "sphere.json"
     }
   ],
-  "active": "weldon-west"
+  "active": "sphere"
 }
