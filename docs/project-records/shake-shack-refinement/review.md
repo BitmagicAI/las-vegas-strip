@@ -6,10 +6,10 @@ All 43 existing source GLB nodes remain unchanged before optimization. All 273 c
 
 | View | Before | After | p95 ms before → after |
 |---|---|---|---|
-| Front | [before](before/shake-shack-front.png) | [after](after/shake-shack-front.png) | 24.0 → 17.3 |
-| Terrace | [before](before/shake-shack-terrace.png) | [after](after/shake-shack-terrace.png) | 39.9 → 39.6 |
-| North | [before](before/shake-shack-north.png) | [after](after/shake-shack-north.png) | 17.6 → 18.4 |
-| Roof | [before](before/shake-shack-roof.png) | [after](after/shake-shack-roof.png) | 25.1 → 19.2 |
+| Front | [before](../../../public/project-records/shake-shack-refinement/before/shake-shack-front.png) | [after](../../../public/project-records/shake-shack-refinement/after/shake-shack-front.png) | 24.0 → 17.3 |
+| Terrace | [before](../../../public/project-records/shake-shack-refinement/before/shake-shack-terrace.png) | [after](../../../public/project-records/shake-shack-refinement/after/shake-shack-terrace.png) | 39.9 → 39.6 |
+| North | [before](../../../public/project-records/shake-shack-refinement/before/shake-shack-north.png) | [after](../../../public/project-records/shake-shack-refinement/after/shake-shack-north.png) | 17.6 → 18.4 |
+| Roof | [before](../../../public/project-records/shake-shack-refinement/before/shake-shack-roof.png) | [after](../../../public/project-records/shake-shack-refinement/after/shake-shack-roof.png) | 25.1 → 19.2 |
 
 Identical cameras, neutral daylight, ultra, 960×540, DPR 1; 900 warm frames, streaming quiet, 60 settling frames, 180 timed frames. Each pair was visually inspected. No measured view regressed over 10%, but the terrace remains slow. This small addition does not establish a performance improvement, full driving benchmark, or sustained 60 fps.
 
