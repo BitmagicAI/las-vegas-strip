@@ -3,6 +3,8 @@ Street photographs span2015–2020; doors and mechanical dimensions are estimate
 """
 from common import *
 from forum_shops import facade_frame
+import copy
+from courtyard_525 import palm
 KEY='rexfordPlaceEast';IDS=['way/1236746614', 'way/1236746613', 'way/1236746612', 'way/1236746611', 'way/1236621178', 'way/1236621177', 'way/1236621179', 'way/1236621176', 'way/1236621175', 'way/1236621174', 'way/1236621173']
 def window(F,u,y=1.65,w=1.8):
  F.box('rpw-frame-paint',(u,y,-.06),(w+.14,1.3,.12));F.box('rpw-glass',(u,y,-.14),(w,1.16,.04));F.box('rpw-frame-paint',(u,y,-.18),(.04,1.16,.03));F.box('rpw-sill-paint',(u,y-.7,-.14),(w+.25,.09,.27))
@@ -46,7 +48,7 @@ def exterior(B):
    if b-a<.2:continue
    if idx%3==0:
     F.box('rpw-block-stucco',((a+b)/2,.67,-5.9),(b-a,1.0,.18),True);F.box('rpw-fence-cap-paint',((a+b)/2,1.2,-5.9),(b-a,.10,.23))
-   elif idx%3==1:
+   elif idx%3==1 and idx!=1:
     for u in np.arange(a,b,.20):F.box('rpw-fence-paint',(float(u),.74,-5.9),(.03,1.12,.03))
     F.box('rpw-fence-paint',((a+b)/2,1.3,-5.9),(b-a,.04,.04))
   # Short perimeter apron makes visible side doors accessible without terrain holes.
@@ -54,11 +56,18 @@ def exterior(B):
   routes.append([F.p(du,.18,-5.5),F.p(du,.18,-2.0),F.p(du,.18,-.55)])
   if idx in [0,3,6,9]:
    x,y,z=F.p(L*.18,0,-3.4);trees.append([x,z,5.5+idx*.15,idx*.7])
+  # February 2020 east-facing imagery: middle frontage fan palms.
+  # Placement and 5.5–8 m trunk heights are estimates, outside the entry paths.
+  for fraction,height in {4:[(.14,7.0),(.86,8.0)],5:[(.14,5.5),(.86,6.5)]}.get(idx,[]):
+   preserved_solids=copy.deepcopy(B.solids)
+   palm(B,F,L*fraction,-4.3,height)
+   B.solids=preserved_solids
   x,z=p.representative_point().coords[0];yy=3.0+roof.boundary.distance(Point(x,z))*slope
   W.box('rpw-service-paint',(x,yy+.36,z),(1.1,.72,1.1));W.box('rpw-vent-paint',(x,yy+.73,z),(.97,.03,.97))
   B.lathe('rpw-flue-paint',(x+2,z),[(yy-.2,.12),(yy+.65,.12),(yy+.7,.19)],10)
   for x in np.arange(p.bounds[0]+.5,p.bounds[2],1.2):
    for z in np.arange(p.bounds[1]+.5,p.bounds[3],1.2):
     if p.buffer(-.3).contains(Point(x,z)):samples.append([float(x),3.0+roof.boundary.distance(Point(x,z))*slope+.4,float(z)])
+ B.groups={k:g for k,g in B.groups.items() if g['material']!='c525-collision'}
  Path('build/city-exteriors/rexford-place-east-samples.json').write_text(json.dumps(samples));Path('build/city-exteriors/rexford-place-east-stairs.json').write_text(json.dumps(routes));Path('build/city-exteriors/rexford-place-east-trees.json').write_text(json.dumps(trees))
  return dict(key=KEY,name='Rexford Place east homes',center=[2088,0,-4045],bounds=list(unary_union(ps).buffer(7).bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
