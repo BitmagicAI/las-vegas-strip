@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232407248,
+ "bytes": 1232579283,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -450,8 +450,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-6.bin",
-   "bytes": 258003,
-   "sha256": "a139aa4d35468d1ea9a854bbddc7f692373c505ba2570b150ce969e9f8ebb35d",
+   "bytes": 265086,
+   "sha256": "83d7c0b0420343fe300846c1a2408c3025f391d6e9c642e8844df50eb5e3ab72",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "55b15795751dd00754009f6d24e1b3048f41191c7858902b2bb860bba8f419c5",
+   "sha256": "1d09e98d506b54025b8489cb46f48820a3527037e7e775b961e9f112bed5494b",
    "kind": "runtime cell manifest"
   },
   {
@@ -10446,8 +10446,8 @@
   },
   {
    "path": "build/strip-landmarks/rexfordPlaceWest-exterior.glb",
-   "bytes": 12749352,
-   "sha256": "12d6957cda6b2de98020d41ffb47cc1e05ba1c6b755e4b1762758960e7200cd9",
+   "bytes": 12914304,
+   "sha256": "71e9dcadd118c20ca523f15c61553366be2fd4264434e4b6f94a1538d3758bf2",
    "kind": "optimized"
   },
   {
