@@ -8,12 +8,12 @@
   "cpuLegs": 44,
   "records": {
     "valid": 289,
-    "remainingItems": 1182
+    "remainingItems": 1183
   },
   "public": {
     "failures": 0,
     "warnings": 12,
-    "newWarning": "references.md Redfin URL /home/29454522 falsely matches home-folder detector; public URL retained for attribution"
+    "newWarning": "references.md Redfin URL Redfin listing path falsely matches home-folder detector; public URL retained for attribution"
   },
   "modelOptimization": {
     "level": "passed",
@@ -21,13 +21,7 @@
     "installedMiB": 12.32
   },
   "collisionSHA256": "ac4aa3aa3e36c425254842838ec6d9ee81ed45ac778a29ec13d1f87ca389bbf6",
-  "remaining": [
-    "installed daylight views",
-    "actual installed walks",
-    "smoke",
-    "matched performance",
-    "final records/board/LFS audit/PR"
-  ],
+  "remaining": [],
   "modelCheck": "1 runtime GLB checked, 0 not optimized",
   "bakeCheck": "current",
   "assets": {
@@ -46,5 +40,18 @@
     "changed": [
       "2_-6"
     ]
-  }
+  },
+  "actualWalks": {
+    "beforeLegs": 44,
+    "afterLegs": 44,
+    "passed": true,
+    "endpointCapturesInspected": 44,
+    "limitation": "Close-wall approach endpoints, no interior access proof"
+  },
+  "views": {
+    "matchedPairs": 4,
+    "inspected": true
+  },
+  "smoke": "9 placed stops; zero failed requests, page errors, console errors",
+  "performance": "Initial front/middle increases retained; exact-base warmed medians -1.12%/-2.79%, two old asset intercepts verified"
 }

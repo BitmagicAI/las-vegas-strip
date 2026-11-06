@@ -10390,16 +10390,17 @@
    "id": "ext-rexford-place-east",
    "title": "Refine the exterior of Rexford Place east houses",
    "area": "exteriors",
-   "size": "M",
+   "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
-    "Street references date2015/2020; current colors and obscured details uncertain",
+    "Street references date 2015/2020 and brokerage photos 2011; current colors and obscured details uncertain",
     "Windows, porch and garage details simplified and estimated",
-    "Referenced palms and dense garden planting not reproduced; four broadleaf trees only",
-    "Ground beyond yard patches and side drives remains sparse",
-    "No interiors, neutral daylight or route benchmark"
+    "Four estimated mid-row fan palms added; exact parcel association, counts, height and dense garden planting remain uncertain",
+    "Ground beyond yard patches and side drives remains sparse; fence and driveway layout needs parcel-level refinement",
+    "No interiors; actual walks prove only short entrance approaches and returns, with close-wall approach endpoint views",
+    "Initial front/middle p95 increased 10.53%/14.04%; warmed exact-base A/B medians improved 1.12%/2.79%, so original timing discrepancy is retained without a sustained 60 fps claim"
    ],
    "record": "tools/resort-blocks/rexford-place-east.json",
    "buildings": [
@@ -10471,11 +10472,11 @@
     ],
     "builders": [
      "tools/strip-landmarks/rexford_place_east.py",
+     "tools/city-exteriors/probe-rexford-place-east-performance-ab.mjs",
      "tools/city-exteriors/stair-rexford-place-east.mjs",
      "tools/city-exteriors/test-rexford-place-east.mjs",
      "tools/strip-landmarks/export_rexford_place_east.py",
-     "tools/city-exteriors/replace-rexford-place-east.py",
-     "tools/strip-landmarks/build_rexford_place_east.py"
+     "tools/city-exteriors/prepare-rexford-place-east-performance-baseline.py"
     ]
    },
    "acceptance": [
