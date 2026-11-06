@@ -1,0 +1,17 @@
+{
+  "method": "1800warmframes;10x180framewindows;afterthenbefore;exactbase2e97697c browser-only JSON substitution;onebaselineinterceptverified;initialspikesretained",
+  "results": [
+    {
+      "view": "front",
+      "medianP95Before": 21.850000023841858,
+      "medianP95After": 23.15000009536743,
+      "percent": 5.949657071428205
+    },
+    {
+      "view": "gap",
+      "medianP95Before": 29.350000023841858,
+      "medianP95After": 29.600000023841858,
+      "percent": 0.851788755696492
+    }
+  ]
+}
