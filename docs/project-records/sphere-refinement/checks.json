@@ -17,7 +17,7 @@
     ],
     "exitCode": 0,
     "log": "/tmp/sphere-check-1.log",
-    "tail": "8702 files, 1525.5 MB would be committed\nwarn  docs/project-records/city-exteriors-2026-10-12/inventory.json: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/curaleaf-annex-refinement/public.txt: home-folder path (3x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/curaleaf-annex-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/houssels-west-refinement/reference-candidates.md: home-folder path (1x, e.g. /home/29454609)\nwarn  docs/project-records/mandalay-pavilion-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/oakey-santa-paula-refinement/after/public.txt: home-folder path (4x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/oakey-santa-paula-refinement/after/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/rexford-place-east-refinement/references.md: home-folder path (1x, e.g. /home/29454522)\nwarn  docs/project-records/royale-carnaval-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/sky-garage-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/south-strip-civic-refinement/public.txt: home-folder path (1x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/south-strip-civic-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/south-strip-civic-refinement/research.json: home-folder path (1x, e.g. /home/showpublishedimage)\n0 failures, 13 warnings\n"
+    "result": "0 failures; warnings are existing historical reference text and copied diagnostic text, not newly exposed private data."
   },
   {
     "command": [
@@ -62,7 +62,7 @@
       "tools/release/check-public.py"
     ],
     "exitCode": 0,
-    "output": "8731 files, 1532.8 MB would be committed\nwarn  docs/project-records/city-exteriors-2026-10-12/inventory.json: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/curaleaf-annex-refinement/public.txt: home-folder path (3x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/curaleaf-annex-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/houssels-west-refinement/reference-candidates.md: home-folder path (1x, e.g. /home/29454609)\nwarn  docs/project-records/mandalay-pavilion-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/oakey-santa-paula-refinement/after/public.txt: home-folder path (4x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/oakey-santa-paula-refinement/after/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/rexford-place-east-refinement/references.md: home-folder path (1x, e.g. /home/29454522)\nwarn  docs/project-records/royale-carnaval-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/sky-garage-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/south-strip-civic-refinement/public.txt: home-folder path (1x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/south-strip-civic-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/south-strip-civic-refinement/research.json: home-folder path (1x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/sphere-refinement/checks-in-progress.json: home-folder path (6x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/sphere-refinement/checks-in-progress.json: e-mail address marryme@littlechapel.com\n0 failures, 15 warnings\n"
+    "result": "0 failures; warnings are existing historical reference text and copied diagnostic text, not newly exposed private data."
   },
   {
     "command": [
@@ -96,5 +96,10 @@
     "command": "node tools/probe-eval.mjs tools/city-exteriors/walk-sphere-refinement.js --viewport 960x540 --dpr 1",
     "result": "28 keyboard movement legs passed;2 door interactions; five local routes",
     "evidence": "actual-walk-before.json"
+  },
+  {
+    "command": "python3 tools/release/check-public.py (final, after compacting copied diagnostic text)",
+    "exitCode": 0,
+    "result": "0 failures, 13 warnings"
   }
 ]
