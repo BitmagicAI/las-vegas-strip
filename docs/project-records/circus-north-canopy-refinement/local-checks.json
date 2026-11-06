@@ -1,0 +1,46 @@
+[
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "output": "1 runtime GLBs checked, 0 not optimized\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "city bake is up to date\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "1930 present, 0 missing, 0 not optimized\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0,
+    "output": "Records valid: 291 blocks (290 refinement-deferred, 1 active); 8 full seven-gate records; 1199 remaining items.\nActive: circus-north-canopy (lightweight record: no review board). Task board: python3 tools/tasks/build-board.py\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/check-public.py"
+    ],
+    "exitCode": 0,
+    "output": "0 failures, 13 existing warnings. Repeated legacy diagnostic text omitted to avoid copying unrelated contact/home-path strings into this record."
+  }
+]

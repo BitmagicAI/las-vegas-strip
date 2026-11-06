@@ -15,3 +15,5 @@ Inspect installed baseline before choosing scoped underside duct/framing refinem
 Official homepage photograph https://www.circuscircus.com/wp-content/uploads/2026/02/0H4A4038-1-1024x426.webp inspected: indoor trapeze performers, not canopy architecture. Excluded as geometry evidence. No downloaded photo committed.
 
 Installed front and underside baseline inspected: canopy frame is present, but suspended rectangular utility duct and hanger bands are absent. Parent facade remains generic glazing with no upper gallery. Choose a modest original duct/hanger refinement beneath the existing roof; parent facade remains a coordinated future scope.
+
+Final reversible dimensions: rectangular duct4.2m long ×0.92m deep ×0.46m tall, centered at y4.65m (bottom4.42m), with four shallow flange/hanger bands. Local X is reversed by facade_frame; final center L-4.1 locates the duct at the western end seen on the left in the reference. These are visual approximations, not survey dimensions or an engineering duct-system claim.

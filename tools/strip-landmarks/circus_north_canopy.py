@@ -24,8 +24,8 @@ def exterior(B):
  # January 2025 north-road Street View: suspended rectangular utility duct.
  # Dimensions/position are reversible visual estimates; decorative, no collision.
  # Keep its lower face well above public walking clearance.
- F.box('cc-metal',(4.1,4.65,1.15),(4.2,.46,.92))
- for u in [2.05,3.4,4.8,6.15]:
+ F.box('cc-metal',(L-4.1,4.65,1.15),(4.2,.46,.92))
+ for u in [L-v for v in [2.05,3.4,4.8,6.15]]:
   # Shallow flange bands and twin vertical suspension rods.
   F.box('cc-sill',(u,4.65,1.15),(.045,.50,.96))
   for w in [.63,1.67]:
