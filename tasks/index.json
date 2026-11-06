@@ -10739,7 +10739,7 @@
     "Exact entrances, unit count and roof pitch inferred; no interior layout claimed",
     "Northern gravel area now visually represented, but granular texture, measured garden subdivisions, chainlink fences and dense planting remain missing",
     "Roof sheen reduced; roof surface texture/variation, surveyed HVAC positions, parking and household detail remain sparse",
-    "No interiors or full driving benchmark; initial court/roof p95 regression under investigation, raw measurements retained"
+    "No interiors or full driving benchmark; initial static court/roof p95 spikes retained. Longer warmed exact-base A/B showed no sustained increase; startup behavior not proven."
    ],
    "record": "tools/resort-blocks/santa-paula-west-courts.json",
    "buildings": [
