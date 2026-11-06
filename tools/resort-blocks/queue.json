@@ -1043,7 +1043,11 @@
       "id": "jack-main-wyoming",
       "name": "Jack in the Box Main and Wyoming",
       "status": "refinement-deferred",
-      "record": "jack-main-wyoming.json"
+      "record": "jack-main-wyoming.json",
+      "deferral": {
+        "date": "2026-11-06",
+        "reason": "PR528 address/frontage pass merged and checked; remaining exact detail, landscape, interior and vehicle benchmark retained."
+      }
     },
     {
       "id": "casino-center-1512",
@@ -1054,7 +1058,7 @@
     {
       "id": "paradise-road-small-frontage",
       "name": "Paradise Road small commercial frontage",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "paradise-road-small-frontage.json"
     },
     {
@@ -1904,5 +1908,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "jack-main-wyoming"
+  "active": "paradise-road-small-frontage"
 }

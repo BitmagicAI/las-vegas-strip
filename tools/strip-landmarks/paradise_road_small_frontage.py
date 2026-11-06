@@ -17,6 +17,15 @@ def exterior(B):
    for poly in parts(outer.difference(inner)):
     for t in triangles(poly):B.upface(roofmat,[(x,height+.08+roof.boundary.distance(Point(x,z))*slope,z)for x,z in list(t.exterior.coords)[:-1]],True)
    outer=inner;level+=.35
+  # Original shallow courses on the brown hipped roofs seen in February2026.
+  # 0.30m exposure is estimated; the existing solid roof remains unchanged.
+  if slope>.1:
+   for d in np.arange(.30,12,.30):
+    inset=roof.buffer(-float(d),join_style=2)
+    if inset.is_empty:break
+    for part in parts(inset):
+     coords=list(part.exterior.coords)
+     B.path('bt-roof-paint',[(x,height+.08+float(d)*slope+.014,z) for x,z in coords],.012,4)
   edges=[facade_frame(B,a,b,p,0)for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:])];front=[e for e in edges if e[2]<-.65];F,L,_,_=max(front,key=lambda e:e[1]);du=L*.79
   for G,ll,nx,nz in edges:
    G.box('pr-white-trim-paint' if idx in [2,3] else 'pr-brown-trim-paint',(ll/2,height-.03,-.15),(ll,.17,.48))
@@ -36,8 +45,9 @@ def exterior(B):
      for u in [ll*.21,ll*.48]:G.box('pr-black-paint',(u,1.5,-.09),(min(2.7,ll*.25),2.5,.12))
     G.box('pr-window-frame-paint',(du,1.34,-.08),(1.13,2.32,.16));G.box('pr-door-paint',(du,1.34,-.18),(.97,2.16,.04));G.box('pr-glass',(du,1.67,-.21),(.72,1.35,.025));G.box('pr-handle-paint',(du-.34,1.2,-.25),(.045,.32,.05))
     # Projecting door canopy, thin folded drip edge, and wall lights.
-    G.box('pr-awning-paint',(du,2.78,-.84),(1.9,.08,1.68));G.box('pr-brown-trim-paint',(du,2.69,-1.65),(1.9,.16,.05))
-    for u in [du-.83,du+.83]:G.tube('pr-bar-paint',(u,2.30,-.1),(u,2.75,-1.48),.018,6)
+    awning_u=ll/2 if idx==7 else du;awning_w=ll-.5 if idx==7 else 1.9
+    G.box('pr-awning-paint',(awning_u,2.78,-.84),(awning_w,.08,1.68));G.box('pr-brown-trim-paint',(awning_u,2.69,-1.65),(awning_w,.16,.05))
+    for u in [awning_u-awning_w/2+.12,awning_u+awning_w/2-.12]:G.tube('pr-bar-paint',(u,2.30,-.1),(u,2.75,-1.48),.018,6)
     G.box('pr-light-paint',(du-1,2.40,-.17),(.18,.27,.25))
     if idx in [1,2,5,7]:
      text={1:'DESIGNER RESALE',2:'CHAPEL EXPRESS',5:'TAX',7:'MASSAGE'}[idx];sw=min(ll*.68,6.2);G.box('pr-sign-paint',(ll*.37,2.65,-.13),(sw,.55,.14));G.text(text,(ll*.37,2.46,-.22),min(.32,sw/(len(text)*.7)),'pr-sign-letter')
@@ -46,6 +56,27 @@ def exterior(B):
     # Downpipe and service grille, kept off the principal arrival route.
     G.box('pr-drain-paint',(ll-.25,1.6,-.12),(.075,2.85,.09));G.box('pr-service-paint',(ll*.28,1.1,-.10),(.85,.7,.15))
     for y in np.arange(.82,1.4,.075):G.box('pr-vent-paint',(ll*.28,float(y),-.20),(.72,.025,.025))
+  if idx==0:
+   # White perforated garden screen; preserve the existing entrance opening.
+   # Small openings are visual; one simple slab collider per panel avoids tiny holes.
+   for a,b in [(0,du-1.05),(du+1.05,L)]:
+    if b-a<.25:continue
+    region=box(a,.20,b,2.18)
+    for u in np.arange(a+.22,b-.15,.38):
+     for y in np.arange(.48,2.05,.38):region=region.difference(box(float(u)-.055,float(y)-.055,float(u)+.055,float(y)+.055))
+    for poly in parts(region):
+     for tri in triangles(poly):
+      points=list(tri.exterior.coords)[:-1]
+      B.face('pr-white-stucco',[F.p(u,y,-2.64) for u,y in reversed(points)])
+      B.face('pr-white-stucco',[F.p(u,y,-2.48) for u,y in points])
+     for ring in [poly.exterior,*poly.interiors]:
+      for q,r in zip(list(ring.coords),list(ring.coords)[1:]):B.face('pr-white-stucco',[F.p(*q,-2.64),F.p(*r,-2.64),F.p(*r,-2.48),F.p(*q,-2.48)])
+    F.box('pr-white-trim-paint',((a+b)/2,2.21,-2.56),(b-a+.08,.10,.23))
+    # Collision-only slab keeps the tiny perforations out of the physics mesh.
+    C=Meshes();C.property=B.property
+    C.box('screen',F.p((a+b)/2,1.19,-2.56),(b-a,1.98,.16),True,F.yaw)
+    collider=B.solids[B.property];panel=C.solids[B.property];offset=len(collider['vertices'])//3
+    collider['vertices'].extend(panel['vertices']);collider['indices'].extend(i+offset for i in panel['indices'])
   # Forecourt reaches the existing street edge without spilling into the road.
   apron=F.poly([(-.4,0),(L+.4,0),(L+.4,-36),(-.4,-36)]).difference(roadmask).difference(whole)
   apron=unary_union([a for a in parts(apron)if a.distance(p)<.51]);B.planar('pr-asphalt',apron,.18,True)

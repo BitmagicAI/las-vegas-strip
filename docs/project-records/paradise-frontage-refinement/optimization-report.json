@@ -1,0 +1,122 @@
+{
+ "rel": "build/strip-landmarks/paradiseSmallFrontage-exterior.glb",
+ "sourceSha256": "ec110fde47ac491024a7d74bb5615a44cde6ce3d7b5fc337de04a606079b9a69",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.552,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/paradiseSmallFrontage-exterior.glb .bitmagic/optimize/build/strip-landmarks/paradiseSmallFrontage-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/paradiseSmallFrontage-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/paradiseSmallFrontage-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 3478732,
+   "triangles": 40111,
+   "vertices": 63039,
+   "nodes": 31,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 2002442,
+   "gpuTextures": 11184810,
+   "textures": [
+    {
+     "name": "Original Bali Hai shingle normal",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 16077,
+     "gpu": 5592405
+    },
+    {
+     "name": "Original Bali Hai green shingles",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1425621,
+     "gpu": 5592405
+    }
+   ],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 2144428,
+   "triangles": 40111,
+   "vertices": 63039,
+   "nodes": 31,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1378963,
+   "gpuTextures": 11184810,
+   "textures": [
+    {
+     "name": "Original Bali Hai shingle normal",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 16077,
+     "gpu": 5592405
+    },
+    {
+     "name": "Original Bali Hai green shingles",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1425621,
+     "gpu": 5592405
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "31 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "2 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "1.27 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 1 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/3/primitives/0/material"
+   }
+  ]
+ }
+}
