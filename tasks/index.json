@@ -10586,12 +10586,13 @@
    "size": "M",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
     "Exact door and window positions, roof pitch and mechanical dimensions are estimates",
     "Chainlink fencing represented by coarser metal bars; lawns need richer ground texture and planting",
     "Side and rear drives/yards need further detail; no parked vehicles or household clutter",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "Private residential interiors remain out of scope; full driving benchmark deferred. Neutral daylight and exterior approach review recorded in weldon-homes-refinement; close door endpoints do not demonstrate entry.",
+    "1814 window proportions are inferred from January2026 street imagery; exact surveyed sizes, remaining household-specific doors/windows and north duplex subdivision still need refinement."
    ],
    "record": "tools/resort-blocks/weldon-west.json",
    "buildings": [
@@ -10637,7 +10638,7 @@
      "tools/city-exteriors/test-weldon-west.mjs",
      "tools/strip-landmarks/export_weldon_west.py",
      "tools/city-exteriors/replace-weldon-west.py",
-     "tools/strip-landmarks/build_weldon_west.py"
+     "tools/city-exteriors/install-weldon-homes-refinement.mjs"
     ]
    },
    "acceptance": [
@@ -10661,7 +10662,7 @@
     "Exact door and window positions, roof pitch and mechanical dimensions are estimates",
     "Chainlink fencing represented by coarser metal bars; lawns need richer ground texture and planting",
     "Side and rear drives/yards need further detail; no parked vehicles or household clutter",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "Private residential interiors remain out of scope; full driving benchmark deferred. Neutral daylight and exterior approach review recorded in weldon-homes-refinement; close door endpoints do not demonstrate entry."
    ],
    "record": "tools/resort-blocks/weldon-east.json",
    "buildings": [
