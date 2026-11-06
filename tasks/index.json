@@ -10737,9 +10737,9 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Exact entrances, unit count and roof pitch inferred; no interior layout claimed",
-    "Northern gravel garden simplified to paved forecourt; chainlink fences and dense planting still missing",
-    "Gray roof needs more surface variation and reduced sheen; parking and household detail sparse",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "Northern gravel area now visually represented, but granular texture, measured garden subdivisions, chainlink fences and dense planting remain missing",
+    "Roof sheen reduced; roof surface texture/variation, surveyed HVAC positions, parking and household detail remain sparse",
+    "No interiors or full driving benchmark; initial static court/roof p95 spikes retained. Longer warmed exact-base A/B showed no sustained increase; startup behavior not proven."
    ],
    "record": "tools/resort-blocks/santa-paula-west-courts.json",
    "buildings": [
@@ -10786,16 +10786,16 @@
     ],
     "writes": [
      "build/strip-landmarks/santaPaulaWestCourts-exterior-collision.json",
-     "build/strip-landmarks/santaPaulaWestCourts-exterior.glb",
+     "runtime-assets/strip-landmarks/santaPaulaWestCourts-exterior.glb",
      "tools/resort-blocks/santa-paula-west-courts.json"
     ],
     "builders": [
      "tools/strip-landmarks/santa_paula_west_courts.py",
+     "tools/city-exteriors/probe-santa-paula-west-courts-performance-ab.mjs",
      "tools/city-exteriors/stair-santa-paula-west-courts.mjs",
      "tools/city-exteriors/test-santa-paula-west-courts.mjs",
      "tools/strip-landmarks/export_santa_paula_west_courts.py",
-     "tools/city-exteriors/replace-santa-paula-west-courts.py",
-     "tools/strip-landmarks/build_santa_paula_west_courts.py"
+     "tools/city-exteriors/prepare-santa-paula-west-courts-performance-baseline.py"
     ]
    },
    "acceptance": [

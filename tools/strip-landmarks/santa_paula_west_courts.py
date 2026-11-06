@@ -9,7 +9,7 @@ KEY='santaPaulaWestCourts'
 IDS=['way/'+str(v) for v in [1236725793,1236725792,1236725794,1236725778,1236725782,1236725776,1236725775]]
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/santa-paula-west-courts';B.detail=0
- ps=[footprint(i)for i in IDS];whole=unary_union(ps);samples=[];routes=[];trees=[];W=Frame(B,0,0,y=0)
+ ps=[footprint(i)for i in IDS];whole=unary_union(ps);samples=[];routes=[];trees=[];approaches=[];W=Frame(B,0,0,y=0)
  yard=unary_union([box(1958,-3748,1975,-3692),box(1936,-3692,1973,-3610),box(1910,-3644,1936,-3610)]).difference(whole)
  B.planar('rpw-concrete',yard,.18,True)
  for idx,p in enumerate(ps):
@@ -35,6 +35,7 @@ def exterior(B):
      for v in [u-1,u+1]:G.box('rpw-post-paint',(v,1.4,-1.55),(.07,2.44,.07),True)
      approach=G.poly([(u-.7,0),(u+.7,0),(u+.7,-3),(u-.7,-3)]).difference(whole)
      B.planar('rpw-concrete',approach,.18,True)
+     approaches.append(approach)
      routes.append([G.p(u,.18,-2.8),G.p(u,.18,-1.8),G.p(u,.18,-.55)])
    elif ll>4:
     for u in np.arange(2,ll-1,5):window(G,float(u),w=1.3)
@@ -47,6 +48,10 @@ def exterior(B):
    if not p.buffer(-1).contains(Point(x,z)):continue
    y=3+roof.boundary.distance(Point(x,z))*slope
    W.box('rpw-service-paint',(x,y+.35,z),(1,.7,1));W.box('rpw-vent-paint',(x,y+.71,z),(.9,.025,.9))
+ # January 2026 reference: northern frontage is gravel. Visual-only overlay;
+ # retain existing support collision and clear modeled entrance approaches.
+ gravel=box(1963.8,-3746.5,1974.2,-3718.7).difference(whole.buffer(.45)).difference(unary_union(approaches).buffer(.16))
+ B.planar('swc-gravel-paint',gravel,.195)
  # Marked concrete parking court, clear paths around its perimeter.
  for z in np.arange(-3688,-3648,2.8):W.box('rpw-frame-paint',(1968,.195,float(z)),(4.4,.015,.08))
  for x,z,h in [(1966,-3728,5.4),(1953,-3658,6.5),(1916,-3624,4.8)]:trees.append([x,z,h,.7])

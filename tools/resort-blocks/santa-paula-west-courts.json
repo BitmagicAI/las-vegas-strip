@@ -28,9 +28,9 @@
   ],
   "remaining": [
     "Exact entrances, unit count and roof pitch inferred; no interior layout claimed",
-    "Northern gravel garden simplified to paved forecourt; chainlink fences and dense planting still missing",
-    "Gray roof needs more surface variation and reduced sheen; parking and household detail sparse",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "Northern gravel area now visually represented, but granular texture, measured garden subdivisions, chainlink fences and dense planting remain missing",
+    "Roof sheen reduced; roof surface texture/variation, surveyed HVAC positions, parking and household detail remain sparse",
+    "No interiors or full driving benchmark; initial static court/roof p95 spikes retained. Longer warmed exact-base A/B showed no sustained increase; startup behavior not proven."
   ],
   "triangles": 9359,
   "batches": 22,
@@ -138,8 +138,29 @@
   },
   "finalBuild": {
     "files": {
+      "runtime-assets/strip-landmarks/santaPaulaWestCourts-exterior.glb": "7a7a7d050be82dd681972ed2ae6fcb5f88c9b79e4d1e4e0b9c28da4615db763d",
+      "build/strip-landmarks/santaPaulaWestCourts-exterior-collision.json": "ce125d4381793c929c532607553afdcec01022450aca1019ca6256ea615f910d"
+    }
+  },
+  "historicalBuildBeforeRefinement20261106": {
+    "files": {
       "build/strip-landmarks/santaPaulaWestCourts-exterior.glb": "ce34bf953daa74e8aad6cc1129ee28c49af854db3d55dfe92cbe5d781950110d",
       "build/strip-landmarks/santaPaulaWestCourts-exterior-collision.json": "ce125d4381793c929c532607553afdcec01022450aca1019ca6256ea615f910d"
     }
+  },
+  "refinement20261106": {
+    "scope": "Northern visual gravel surface leaving modeled approach paths; scoped matte roof materials for all seven mapped buildings. Roof shapes/colors, source collision and 15 existing tree nodes/transforms preserved.",
+    "record": "docs/project-records/santa-paula-west-courts-refinement",
+    "status": "Scoped installed refinement verified; full-site gaps retained.",
+    "checks": {
+      "supportSamples": 1159,
+      "cpuLegs": 68,
+      "actualKeyboardLegsBeforeAndAfter": 68,
+      "matchedDaylightViews": 4,
+      "smokeStopsPlaced": 9,
+      "unchangedCells": 91,
+      "totalCells": 92
+    },
+    "limitations": "Close door endpoint screenshots face walls; position/height passed, no interiors proven. Return7 also faces wall. Remaining full-site discrepancies retained."
   }
 }

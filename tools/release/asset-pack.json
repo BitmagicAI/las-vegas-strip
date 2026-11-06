@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232406341,
+ "bytes": 1232407248,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 699949,
-   "sha256": "64ddf0235daf6e7bfb6d542c1d5dae826598223ba32872a25cc3507944cd0a60",
+   "bytes": 698480,
+   "sha256": "17afc24e74a5ad93b520a944dc2f1ac2108b3f13d3bd47207d7132e9f3a46a06",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "ce289e78693b65e5a624085f05ecc073a35ebb9740396ee68cc1a4c41e7766de",
+   "sha256": "55b15795751dd00754009f6d24e1b3048f41191c7858902b2bb860bba8f419c5",
    "kind": "runtime cell manifest"
   },
   {
@@ -10638,8 +10638,8 @@
   },
   {
    "path": "build/strip-landmarks/santaPaulaWestCourts-exterior.glb",
-   "bytes": 12636748,
-   "sha256": "f0a62633daa2163dba6bab725f7dfccc31dd1d4203d2ddcde74805f499f73d20",
+   "bytes": 12639124,
+   "sha256": "7a7a7d050be82dd681972ed2ae6fcb5f88c9b79e4d1e4e0b9c28da4615db763d",
    "kind": "optimized"
   },
   {
