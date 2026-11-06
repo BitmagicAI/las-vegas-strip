@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232992112,
+ "bytes": 1233197100,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 698436,
-   "sha256": "70eda9229da7d3817bf74fdfdbf64f9cf202d790bcd1a2f38c15aa2ab287b14d",
+   "bytes": 699112,
+   "sha256": "ad61bc52fbf2e0a72f6b80b2aca99dce4f8ecd2da63ec4eb9f886401f1dcaf22",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "00403e71c929556d17333516bd9eacf11ea7a1d3d7f0a08bfdaf4103007a0179",
+   "sha256": "c95a07d06a3ac0efff628be0db45267572928273269405d23eef47547a7f51d3",
    "kind": "runtime cell manifest"
   },
   {
@@ -10068,14 +10068,14 @@
   },
   {
    "path": "build/strip-landmarks/paradiseSmallFrontage-exterior-collision.bin",
-   "bytes": 6640,
-   "sha256": "2a91762df5fb7a63277101fe5f66556b7800dc2ad480932599d3e5b54c6f2886",
+   "bytes": 6728,
+   "sha256": "ef443681458f415391d7ed27faf7be30182af71298213588734082879bcad9ca",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/paradiseSmallFrontage-exterior.glb",
-   "bytes": 671648,
-   "sha256": "ecfeac4485f0749656747ca0b4d34fa31a7dc0b4bc188d5258af26fc1e1803f7",
+   "bytes": 875872,
+   "sha256": "43739e9a5b88ea8bd3ce8352816a7d2b929ac046d5609dde97921390fcdf6579",
    "kind": "optimized"
   },
   {
