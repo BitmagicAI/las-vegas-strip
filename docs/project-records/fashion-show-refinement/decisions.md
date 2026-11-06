@@ -1,0 +1,15 @@
+# Decisions and unresolved evidence
+
+Preserve the existing galleria and ground entrance. The source has a straight entry assembly that is separate from the perimeter facade. The official photograph establishes curved/raked restaurant frontage but does not supply a floorplan or physical floor heights; tenant Level2/3 labels are not enough to create interior connections.
+
+The old collision audit initially failed because its ignored roof-samples.json input was missing. Reconstructed those samples from the unchanged builder with save_all disabled; no source or runtime meshes overwritten. Recovered2956roof+183stair/plaza support/headroom samples all pass against current source collision. Saved samples durably. This is not actual walking proof.
+
+Scoped source candidate now changes only the north east restaurant frontage (east-facing mapped edges north of z=-1240): outward-raked panes/mullions, existing horizontal levels retained and a broader closed projecting soffit. Upper outward offset2.2m and eave projection approximately.8m are inferred from the official photo and Oct2026 north panorama. Galleria portal, existing entry assembly, stairs, terrace, all labels, roof/anchor volumes and interiors stay unchanged. No new tenant interior or access claim. This leaves the central flat entry assembly and fine facade junctions for later refinement; inspect installed corner seams before accepting.
+
+Baseline actual keyboard walk passed20legs through both stairs and the upper terrace and back, no doors opened. Endpoint images inspected. This validates the existing plaza only, not restaurant access.
+
+First local preview revealed wide white wedges at facade bends: independently offset faces did not meet. Replaced segment offsets with shared perimeter-corner miters, matching soffit polygons and terminal glass returns. This happened before shared bake or runtime staging. Source count77434triangles; Corrected local preview was inspected and the preservation audit refreshed before final installation.
+
+Before staging, collision review found the outward-raked glazing still used the retained vertical wall as its only blocker. That could let a close camera enter the sloped skin. Stopped the in-progress bake and its own child processes before any stage; made the raked pane and terminal return faces solid. Reran source/capsule checks and the final shared bake. Visual geometry did not change in this collision-only correction, so the already level+WebP optimized corrected model remained valid; no redundant visual export was needed. No intermediate runtime assets committed.
+
+Final evidence: all 97 authored facade solidity/outward clearance samples pass; all existing collider triangles remain. All 82 installed walking legs pass, including the preserved galleria and two local facade approaches. Eight endpoint/return screenshots inspected. These routes do not establish restaurant access or the entire perimeter. The earlier all-glass sample attempt included unrelated windows and terminal backs; it was replaced with samples emitted explicitly by the scoped facade authoring code.

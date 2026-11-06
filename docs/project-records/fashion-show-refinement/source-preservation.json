@@ -1,0 +1,19 @@
+{
+  "oldSourceTriangles": 74862,
+  "newSourceTriangles": 77434,
+  "removed": 4152,
+  "added": 6724,
+  "changedSources": [
+    "mall/GALLERIA"
+  ],
+  "changedMaterials": [
+    "fs-glass",
+    "fs-metal",
+    "fs-stone"
+  ],
+  "scope": "Northern east frontage only,z<-1238; all labels unchanged; other source/material triangles identical. All original collision retained;600 added triangles cover raked panes, terminal returns and roof soffit.",
+  "newCollisionTriangles": 600,
+  "status": "Final installed source verified; bake and staging complete",
+  "finalCollisionTriangles": 2684,
+  "facadeClearance": "97 authored points: skin solid and outward standing capsule clear"
+}

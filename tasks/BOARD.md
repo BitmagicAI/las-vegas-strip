@@ -90,7 +90,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-ti-parking` | L | P2 | 6 | Refine the exterior of Treasure Island parking structures |
 | `ext-guardian-angel` | L | P2 | 6 | Refine the exterior of Guardian Angel Cathedral |
 | `ext-convention-frontage` | M | P2 | 4 | Refine the exterior of Convention Center Drive and Strip frontage |
-| `ext-fashion-show` | M | P2 | 5 | Refine the exterior of Fashion Show Mall |
 | `ext-crystals` | L | P2 | 8 | Refine the exterior of The Shops at Crystals |
 | `ext-showcase` | M | P2 | 4 | Refine the exterior of Showcase Mall and Showcase IV |
 | `ext-blvd-retail` | M | P2 | 5 | Refine the exterior of BLVD retail and rooftop |
