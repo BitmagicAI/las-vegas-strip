@@ -1,0 +1,5 @@
+{
+  "command": "node tools/optimize/optimize-runtime-glbs.mjs --only=stratPoolDeck --variant=webp-textures",
+  "exitCode": 0,
+  "skipped": "Source has no images; WebP driver reuses level output."
+}

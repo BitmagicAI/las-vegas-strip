@@ -1058,7 +1058,7 @@
     {
       "id": "paradise-road-small-frontage",
       "name": "Paradise Road small commercial frontage",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "paradise-road-small-frontage.json"
     },
     {
@@ -1070,7 +1070,7 @@
     {
       "id": "strat-pool-deck",
       "name": "STRAT level-eight pool deck and pavilion",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "strat-pool-deck.json"
     },
     {
@@ -1908,5 +1908,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "paradise-road-small-frontage"
+  "active": "strat-pool-deck"
 }

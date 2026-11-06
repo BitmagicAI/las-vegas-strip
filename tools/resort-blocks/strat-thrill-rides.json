@@ -23,15 +23,15 @@
     }
   ],
   "remaining": [
-    "Ride placement and machinery dimensions estimated from undated photos; model is static and simplified, not a functioning or photorealistic ride",
-    "Existing tapered upper roof needs surveyed segmentation, glazing and access-door refinement; boarding/interior routes not verified",
-    "Insanity structure current physical status not established, so not modeled in this pass",
-    "Existing long rods/structures around pod visible in wide review require separate ownership investigation",
-    "No moving-route performance benchmark"
+    "Static ride machinery placement and dimensions remain estimated; new restraint/carrier details use official photographs but do not establish a functioning ride.",
+    "Upper roof segmentation/glazing and boarding/interior connections remain unverified without reliable plans.",
+    "Insanity physical status remains unestablished; current X-Scream closure notice does not prove removal.",
+    "Long projecting rods remain visible; ownership not established, so no removal attempted.",
+    "Original southwest source-proxy ring route blocks at X-Scream platform while installed keyboard route passes; discrepancy preserved. No full moving-vehicle benchmark."
   ],
   "triangles": 44608,
   "batches": 62,
-  "optimizedMiB": 1.26,
+  "optimizedMiB": 1.478,
   "viewsInspected": [
     "build/city-exteriors/strat-thrill-rides-final/strat-rides-wide.png",
     "build/city-exteriors/strat-thrill-rides-final/strat-rides-deck.png",
@@ -115,8 +115,23 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/stratExterior-exterior.glb": "617645e42be9acc47aac222c619116ded3d240b841e3a09fcc86bd84eeca475d",
-      "build/strip-landmarks/stratExterior-exterior-collision.json": "f6bd798413171463d3933035cc3038d5526042e3e67a76c905c14308171f5807"
+      "runtime-assets/strip-landmarks/stratExterior-exterior.glb": "df91efc99962a00312602f69d4f51b90c5f13332b451d148bea6bd1957549a5f",
+      "runtime-assets/strip-landmarks/stratExterior-exterior-collision.bin": "3417f4ba59c015540642331ec352019c3ccfaaa029d125dc56ebac5c38795b55"
     }
+  },
+  "refinement20261106": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/strat-pool-rooftop-refinement/checkpoint.md",
+    "sources": "docs/project-records/strat-pool-rooftop-refinement/references.md",
+    "baseline": "docs/project-records/strat-pool-rooftop-refinement/performance-before.json",
+    "actualBaseline": "docs/project-records/strat-pool-rooftop-refinement/walk-before.json",
+    "checks": "docs/project-records/strat-pool-rooftop-refinement/local-checks.json",
+    "preservation": "docs/project-records/strat-pool-rooftop-refinement/preservation.json",
+    "changes": "Red padded BigShot restraints and segmented carrier backing. Replaced only eight ride nodes; preserved tower and gateway geometry and all collision.",
+    "cellPreservation": "docs/project-records/strat-pool-rooftop-refinement/cell-delta.json",
+    "performance": "docs/project-records/strat-pool-rooftop-refinement/performance-comparison.json",
+    "review": "docs/project-records/strat-pool-rooftop-refinement/review.md",
+    "actualFinal": "docs/project-records/strat-pool-rooftop-refinement/walk-after.json",
+    "smoke": "docs/project-records/strat-pool-rooftop-refinement/smoke.json"
   }
 }

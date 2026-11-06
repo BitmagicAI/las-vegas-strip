@@ -20,14 +20,14 @@
     }
   ],
   "remaining": [
-    "Absolute deck height 26.25m, pavilion dimensions and aerial registration estimated; official source confirms Level 8 but not surveyed elevation",
-    "Furniture and fabric detailing remain simplified; water requires moving-camera and neutral-daylight review",
-    "Hotel-to-pool indoor circulation and upper WET24 pool remain unimplemented",
-    "No moving-route performance benchmark or photorealistic completion claim"
+    "Absolute deck height26.25m, pavilion dimensions and aerial registration remain estimates; official source confirmsLevel8 but no surveyed elevation.",
+    "Daybed top and umbrella placement corrected; patterned fabric, chair detail and water grazing-angle reflections remain simplified or unresolved.",
+    "Hotel-to-pool indoor circulation and WET24 remain unimplemented because no reliable plan/elevation route was established.",
+    "Nine neutral daylight comparisons recorded; no full moving-vehicle performance benchmark or photorealistic completion claim."
   ],
-  "triangles": 23048,
+  "triangles": 25218,
   "batches": 18,
-  "optimizedMiB": 0.53,
+  "optimizedMiB": 0.568,
   "viewsInspected": [
     "build/city-exteriors/strat-pool-deck-final/strat-pool-deck.png",
     "build/city-exteriors/strat-pool-deck-final/strat-pool-east.png",
@@ -131,8 +131,23 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/stratPoolDeck-exterior.glb": "fa977b1e0bfe11a487a4e1e4b65c3392b7487e70c9aff9fd66c63db753fcbdbc",
-      "build/strip-landmarks/stratPoolDeck-exterior-collision.json": "ce5f8e0e9aed88636e3733b2be7206e74cfa17cef91a5f3a710ae3d2cd1f1e0b"
+      "runtime-assets/strip-landmarks/stratPoolDeck-exterior.glb": "b8fd88e088983acaa69efee14d91db0899556cdcb33a97960ad8c0ebccd6b72b",
+      "runtime-assets/strip-landmarks/stratPoolDeck-exterior-collision.bin": "5bc1e41aa8474b4c20c30034e82c20f8f4d103d1b14da8123e43009030065a9d"
     }
+  },
+  "refinement20261106": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/strat-pool-rooftop-refinement/checkpoint.md",
+    "sources": "docs/project-records/strat-pool-rooftop-refinement/references.md",
+    "baseline": "docs/project-records/strat-pool-rooftop-refinement/performance-before.json",
+    "actualBaseline": "docs/project-records/strat-pool-rooftop-refinement/walk-before.json",
+    "checks": "docs/project-records/strat-pool-rooftop-refinement/local-checks.json",
+    "preservation": "docs/project-records/strat-pool-rooftop-refinement/preservation.json",
+    "changes": "Explicit daybed cushion top caps, piping/base seams and separate weighted umbrella bases. Collision unchanged.",
+    "cellPreservation": "docs/project-records/strat-pool-rooftop-refinement/cell-delta.json",
+    "performance": "docs/project-records/strat-pool-rooftop-refinement/performance-comparison.json",
+    "review": "docs/project-records/strat-pool-rooftop-refinement/review.md",
+    "actualFinal": "docs/project-records/strat-pool-rooftop-refinement/walk-after.json",
+    "smoke": "docs/project-records/strat-pool-rooftop-refinement/smoke.json"
   }
 }

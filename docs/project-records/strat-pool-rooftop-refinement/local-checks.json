@@ -1,0 +1,79 @@
+[
+  {
+    "command": "bitmagic check --original-prompt Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue.",
+    "exitCode": 0
+  },
+  {
+    "command": "node --import ./tools/ts-register.mjs --test tests/city-lazy-lod.test.mjs tests/city-lighting-resize.test.mjs tests/site-lights.test.mjs",
+    "exitCode": 0
+  },
+  {
+    "command": "node tools/city-exteriors/test-strat-pool-deck.mjs",
+    "exitCode": 0
+  },
+  {
+    "command": "node tools/city-exteriors/stair-strat-pool-deck.mjs",
+    "exitCode": 0
+  },
+  {
+    "command": "node tools/city-exteriors/test-strat-thrill-rides.mjs",
+    "exitCode": 0
+  },
+  {
+    "command": "node tools/city-exteriors/test-strat-observation.mjs",
+    "exitCode": 0
+  },
+  {
+    "command": "node tools/city-exteriors/test-strat-podium.mjs",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/optimize/check-runtime-glbs.py --changed origin/next",
+    "exitCode": 0
+  },
+  {
+    "command": "node tools/bake/bake-city.mjs check",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/release/asset-pack.py check",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/resort-blocks/review.py",
+    "exitCode": 0
+  },
+  {
+    "command": "python3 tools/release/check-public.py",
+    "exitCode": 0
+  },
+  {
+    "command": "node tools/city-exteriors/stair-strat-thrill-rides.mjs",
+    "exitCode": 1,
+    "phase": "baseline source proxy",
+    "finding": "Six directions passed; southwest quarter failed in both directions at existing X-Scream platform. Original report retained. Baseline installed keyboard walking passes the same quarter; no collision changes in this pass."
+  },
+  {
+    "command": "node tools/release/smoke-clone.mjs --viewport 960x540",
+    "exitCode": 0,
+    "visits": 9,
+    "failedRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  {
+    "command": "python3 tools/resort-blocks/review.py",
+    "exitCode": 0,
+    "phase": "final-records"
+  },
+  {
+    "command": "python3 tools/release/check-public.py",
+    "exitCode": 0,
+    "phase": "final-records"
+  },
+  {
+    "command": "git diff --check",
+    "exitCode": 0,
+    "phase": "final-records"
+  }
+]

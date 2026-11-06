@@ -1,0 +1,104 @@
+{
+ "rel": "build/strip-landmarks/stratExterior-exterior.glb",
+ "sourceSha256": "368bd673e88ab88c8b0d2d14400e45aa12a46a6a93023580b674e7d3d6c2cebd",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.597,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/stratExterior-exterior.glb .bitmagic/optimize/build/strip-landmarks/stratExterior-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/stratExterior-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/stratExterior-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 5102344,
+   "triangles": 100144,
+   "vertices": 181726,
+   "nodes": 75,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 4810624,
+   "gpuTextures": 1398101,
+   "textures": [
+    {
+     "name": "Original roof",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 228903,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 1757056,
+   "triangles": 100144,
+   "vertices": 181244,
+   "nodes": 75,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 3320548,
+   "gpuTextures": 1398101,
+   "textures": [
+    {
+     "name": "Original roof",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 228903,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "75 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "1 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "3.19 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

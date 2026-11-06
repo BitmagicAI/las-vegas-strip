@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233197100,
+ "bytes": 1233178645,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -372,8 +372,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-5.bin",
-   "bytes": 305089,
-   "sha256": "439d2f45dbf7bc7f162f92ec9a20964f2235e420f238de14298f5b6362b4e929",
+   "bytes": 305470,
+   "sha256": "bce7ec1f9712c24f92b6da2969aa6521b587cbd4679dac7fe7647dfc51d24707",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "c95a07d06a3ac0efff628be0db45267572928273269405d23eef47547a7f51d3",
+   "sha256": "585132654130a48236321b6d895a060692168e11d0badcbb11acee484bd42d06",
    "kind": "runtime cell manifest"
   },
   {
@@ -10974,8 +10974,8 @@
   },
   {
    "path": "build/strip-landmarks/stratExterior-exterior.glb",
-   "bytes": 1604084,
-   "sha256": "9c15b86c1db3ecd2fd61b5b29fa365aad6ef7a98fbadb334e4f4721d37cc3e45",
+   "bytes": 1549348,
+   "sha256": "df91efc99962a00312602f69d4f51b90c5f13332b451d148bea6bd1957549a5f",
    "kind": "optimized"
   },
   {
@@ -10986,8 +10986,8 @@
   },
   {
    "path": "build/strip-landmarks/stratPoolDeck-exterior.glb",
-   "bytes": 560132,
-   "sha256": "340393644f0f45f712f081cce184ca4accfd7930e6a556f215f0c4a2bd7f4534",
+   "bytes": 596032,
+   "sha256": "b8fd88e088983acaa69efee14d91db0899556cdcb33a97960ad8c0ebccd6b72b",
    "kind": "optimized"
   },
   {

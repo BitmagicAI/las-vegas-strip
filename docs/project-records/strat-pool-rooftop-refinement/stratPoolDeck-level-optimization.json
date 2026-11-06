@@ -1,0 +1,83 @@
+{
+ "rel": "build/strip-landmarks/stratPoolDeck-exterior.glb",
+ "sourceSha256": "9bb4ff92ad4d3a3f46d59a13c93fb16faf0fe8ddc686ef9afc12e28c1b16b0b4",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.467,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/stratPoolDeck-exterior.glb .bitmagic/optimize/build/strip-landmarks/stratPoolDeck-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/stratPoolDeck-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/stratPoolDeck-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 2050736,
+   "triangles": 33458,
+   "vertices": 74354,
+   "nodes": 20,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 2030060,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 596032,
+   "triangles": 33458,
+   "vertices": 74350,
+   "nodes": 20,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1338406,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "20 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "0 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "1.39 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}
