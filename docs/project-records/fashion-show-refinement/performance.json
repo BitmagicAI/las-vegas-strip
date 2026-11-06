@@ -1,0 +1,62 @@
+{
+  "viewport": [
+    960,
+    540
+  ],
+  "dpr": 1,
+  "quality": "ultra",
+  "warmFrames": 900,
+  "settleFrames": 60,
+  "timedFrames": 180,
+  "rows": [
+    {
+      "view": "front",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18.200000047683716,
+      "afterP95": 18.200000047683716,
+      "p95ChangePercent": 0.0
+    },
+    {
+      "view": "upper-plaza",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.699999809265137,
+      "beforeP95": 18.799999952316284,
+      "afterP95": 17.200000047683716,
+      "p95ChangePercent": -8.510637812184873
+    },
+    {
+      "view": "east",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 17.90000009536743,
+      "afterP95": 17.299999952316284,
+      "p95ChangePercent": -3.351956088572472
+    },
+    {
+      "view": "north-entry",
+      "beforeP50": 16.799999952316284,
+      "afterP50": 17.09999990463257,
+      "beforeP95": 24.299999952316284,
+      "afterP95": 23.59999990463257,
+      "p95ChangePercent": -2.8806586380959676
+    },
+    {
+      "view": "roof",
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 18.09999990463257,
+      "afterP95": 19.200000047683716,
+      "p95ChangePercent": 6.07734888865723
+    },
+    {
+      "view": "restaurant",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 19.100000143051147,
+      "afterP95": 18.800000190734863,
+      "p95ChangePercent": -1.570680366855537
+    }
+  ],
+  "scope": "Matched static views only; no sustained60fps, driving, cold-stall or memory claim. No p95 regression above10%."
+}

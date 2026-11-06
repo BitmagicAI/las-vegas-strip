@@ -27,6 +27,22 @@
       "inspected": true,
       "imagery": "2022-11-09",
       "establishes": "Northanchor roofs stepped;Nordstrom beige taller precast facade and ovalporte,MacysMen white lowerwing,dark horizontal entry bands; rooftopPVgroups."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=315H3xSOIbz2MlL0kQaxNA&heading=265&pitch=8",
+      "imagery": "2026-10",
+      "inspected": true,
+      "establishes": "Northern restaurant wing raked end glazing, curved frontage, projecting soffit, intermediate landing and external stair/escalator. Physical dimensions not surveyed."
+    },
+    {
+      "url": "https://www.fslv.com/en/directory/24644/",
+      "inspected": true,
+      "establishes": "Capital Grille Level3 on The Plaza; tenant level label does not establish physical floor elevation."
+    },
+    {
+      "url": "https://www.fslv.com/en/directory/24643/",
+      "inspected": true,
+      "establishes": "Maggianos Level2 on The Plaza; no interior floorplan established."
     }
   ],
   "components": [
@@ -60,34 +76,121 @@
     }
   ],
   "remaining": [
-    "Anchor heights12.5\u201323m and facade measurements are photographic estimates.",
-    "Curved/raked restaurant facade, landscaping and exact brand graphics require refinement.",
-    "Upper plaza has stairs and guards but no new restaurant interior connections; existing galleria preserved.",
-    "North Macys Men rounded entrance and precise rooftop equipment placements remain approximate.",
-    "Fixed-camera measurements do not establish driving/streaming performance."
+    "Anchor heights12.5\u201323m, facade dimensions and inferred2.2m upper rake/.8m eave projection are photographic estimates; no surveyed elevations.",
+    "Northern raked frontage improved, but central entry remains a simplified flat galleria assembly; fine curved/raked junctions, landscaping and exact brand graphics still need source-supported refinement.",
+    "Upper plaza stairs and guards remain; no new restaurant interior connections because official tenant level labels do not provide floorplans. Existing galleria preserved.",
+    "North MacysMen rounded entrance and rooftop equipment placements remain approximate; Nordstrom baseline camera does not establish MacysMen fidelity.",
+    "Fixed-camera performance and selected local walking routes do not establish full driving/streaming, cold-stall or memory performance."
   ],
   "evidence": [
     "build/city-exteriors/fashion-show-before",
     "build/city-exteriors/fashion-show-after",
     "build/city-exteriors/fashion-show-final",
     "build/city-exteriors/fashion-access",
-    "build/city-exteriors/fashion-roof-test.json"
+    "build/city-exteriors/fashion-roof-test.json",
+    "docs/project-records/fashion-show-refinement/review.md",
+    "docs/project-records/fashion-show-refinement/walk/results.json",
+    "docs/project-records/fashion-show-refinement/facade-clearance.json",
+    "docs/project-records/fashion-show-refinement/performance.json",
+    "docs/project-records/fashion-show-refinement/smoke.json"
   ],
   "baselineReview": "All six installed baseline views inspected: blank outer facades, uniform16.5mroof, oversized tiled PBRroof, tinyCloudsupports and minimalentryframe. Galleria interior exists and must remain.",
   "estimates": "Roofheights,glasssetbacks andCloudsupportdiameters photographic estimates pending authored dimensions.",
   "geometry": {
-    "triangles": 74862,
-    "batches": 91,
-    "compressedMiB": 2.35
+    "sourceTriangles": 77434,
+    "sourceBatches": 91,
+    "installedTriangles": 166224,
+    "installedBatches": 109,
+    "installedBytes": 2538396,
+    "collisionTriangles": 2684
   },
   "tests": [
     "Typecheck PASS",
-    "2956 roof support samples PASS",
-    "183 stair/plaza support and headroom samples PASS",
-    "CLI verify FAILED: no Play detected at 60s cap, menu 30fps. Direct game probe entered play and reviewed three views successfully."
+    "Three runtime lighting/lazy LOD tests PASS (TypeScript loader required for lazy LOD)",
+    "2956 roof support and 183 stair/plaza support/headroom checks PASS",
+    "97 raked skin solidity/outward capsule clearance checks PASS",
+    "82 actual installed keyboard walking legs PASS; all four routes returned",
+    "Optimized level+WebP model audit PASS; shared bake current; 1930 assets present, zero missing/unoptimized",
+    "91 of 92 cell binaries unchanged; only cell-0_-2.bin changed",
+    "Six matching daylight views inspected; no static p95 regression above 10%",
+    "Public check: zero failures, 13 existing warnings",
+    "Nine-stop bitmagic dev smoke PASS: zero failed requests, page errors, console errors or misplaced stops"
   ],
-  "currentPass": "Installed exterior pass reviewed; architectural refinement and complete circulation/perimeter performance gates remain open.",
+  "currentPass": "PR526 scoped north restaurant frontage rake, joined mullions and projecting soffit installed and reviewed. Existing galleria/portal and plaza circulation preserved. No full-block completion claim.",
   "performance": {
+    "viewport": [
+      960,
+      540
+    ],
+    "dpr": 1,
+    "quality": "ultra",
+    "warmFrames": 900,
+    "settleFrames": 60,
+    "timedFrames": 180,
+    "rows": [
+      {
+        "view": "front",
+        "beforeP50": 16.700000047683716,
+        "afterP50": 16.700000047683716,
+        "beforeP95": 18.200000047683716,
+        "afterP95": 18.200000047683716,
+        "p95ChangePercent": 0.0
+      },
+      {
+        "view": "upper-plaza",
+        "beforeP50": 16.700000047683716,
+        "afterP50": 16.699999809265137,
+        "beforeP95": 18.799999952316284,
+        "afterP95": 17.200000047683716,
+        "p95ChangePercent": -8.510637812184873
+      },
+      {
+        "view": "east",
+        "beforeP50": 16.700000047683716,
+        "afterP50": 16.600000143051147,
+        "beforeP95": 17.90000009536743,
+        "afterP95": 17.299999952316284,
+        "p95ChangePercent": -3.351956088572472
+      },
+      {
+        "view": "north-entry",
+        "beforeP50": 16.799999952316284,
+        "afterP50": 17.09999990463257,
+        "beforeP95": 24.299999952316284,
+        "afterP95": 23.59999990463257,
+        "p95ChangePercent": -2.8806586380959676
+      },
+      {
+        "view": "roof",
+        "beforeP50": 16.699999809265137,
+        "afterP50": 16.59999990463257,
+        "beforeP95": 18.09999990463257,
+        "afterP95": 19.200000047683716,
+        "p95ChangePercent": 6.07734888865723
+      },
+      {
+        "view": "restaurant",
+        "beforeP50": 16.700000047683716,
+        "afterP50": 16.59999990463257,
+        "beforeP95": 19.100000143051147,
+        "afterP95": 18.800000190734863,
+        "p95ChangePercent": -1.570680366855537
+      }
+    ],
+    "scope": "Matched static views only; no sustained60fps, driving, cold-stall or memory claim. No p95 regression above10%."
+  },
+  "refinementCheckpoint": {
+    "record": "docs/project-records/fashion-show-refinement/checkpoint.md",
+    "status": "verified-ready-for-merge",
+    "sourceTriangles": 77434,
+    "sourceBatches": 91,
+    "collisionTriangles": 2684,
+    "sourceAudit": "docs/project-records/fashion-show-refinement/source-preservation.json",
+    "facadeClearanceSamples": 97,
+    "baselineWalkingLegs": 20,
+    "finalWalkingLegs": 82
+  },
+  "historicalPerformance": {
     "viewport": "1280x720",
     "framesPerView": 180,
     "upperPlaza": {
@@ -103,5 +206,11 @@
       "p95": 17.3
     },
     "scope": "Fixed camera samples, not driving"
-  }
+  },
+  "historicalTests": [
+    "Typecheck PASS",
+    "2956 roof support samples PASS",
+    "183 stair/plaza support and headroom samples PASS",
+    "CLI verify FAILED: no Play detected at 60s cap, menu 30fps. Direct game probe entered play and reviewed three views successfully."
+  ]
 }

@@ -20,3 +20,6 @@ for name,q,h,mat in areas:
   for z in np.arange(q.bounds[1]+2,q.bounds[3],6):
    if q.buffer(-.5).contains(Point(x,z)):checks.append([x,h,z])
 Path('build/city-exteriors/fashion-roof-samples.json').write_text(json.dumps(checks))
+
+if hasattr(B,'fashion_clearance'):
+ Path('build/city-exteriors/fashion-clearance-samples.json').write_text(json.dumps(B.fashion_clearance))

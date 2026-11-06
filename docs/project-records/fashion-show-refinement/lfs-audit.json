@@ -1,0 +1,138 @@
+{
+  "base": "2f09d54da93e74963531fdc7cb71bd433da29201",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "8a8a521af513d54fda89c2ba3442542090d5e2ff369616f6e33b2945cdd96237",
+      "bytes": 453978,
+      "path": "public/project-records/fashion-show-refinement/after/fashion-east.png"
+    },
+    {
+      "oid": "11f589a0d4c5f8b01076169b1b7e3c490e2eab120f7ced0aa29b561b8a0a4598",
+      "bytes": 469418,
+      "path": "public/project-records/fashion-show-refinement/after/fashion-front.png"
+    },
+    {
+      "oid": "49545cb1dcc38d1dcd287485adeb40b47992a8d19be76c1f93418457a6a2e0ac",
+      "bytes": 360036,
+      "path": "public/project-records/fashion-show-refinement/after/fashion-north-entry.png"
+    },
+    {
+      "oid": "d0e8ebf9dd92282c1221b571435f7c7c15a81585ff9a7054cccdbaa76df758e5",
+      "bytes": 399075,
+      "path": "public/project-records/fashion-show-refinement/after/fashion-restaurant.png"
+    },
+    {
+      "oid": "dd1b8c034007657201c9a28a874b1a3e474935a0adff46ef37dd5c795551ab5f",
+      "bytes": 430554,
+      "path": "public/project-records/fashion-show-refinement/after/fashion-roof.png"
+    },
+    {
+      "oid": "ee491c4a9259801289b014e0525a1055507b3c7f49676e763adcd3561e0ef1b9",
+      "bytes": 444623,
+      "path": "public/project-records/fashion-show-refinement/after/fashion-upper-plaza.png"
+    },
+    {
+      "oid": "e8142815b705c9cf295219cec150c685890676a32bafc2d4511ecf9da8ffc53a",
+      "bytes": 434034,
+      "path": "public/project-records/fashion-show-refinement/baseline-walk/walk-frontage-0.png"
+    },
+    {
+      "oid": "cb3c7f15b60e5a3ba6f29c2ab4e810f399e87ef7920bc9827d507f19f20481a2",
+      "bytes": 420218,
+      "path": "public/project-records/fashion-show-refinement/baseline-walk/walk-return-0.png"
+    },
+    {
+      "oid": "4c296beb2d3ff779be8ee5a42fb212c5a5af3a6ba7e1e51b17b165d48a48f478",
+      "bytes": 452057,
+      "path": "public/project-records/fashion-show-refinement/before/fashion-east.png"
+    },
+    {
+      "oid": "dc183c30cd5bdd1f02e7e9f985cc84f3f217420ce372e185ac735df5b39bef02",
+      "bytes": 466906,
+      "path": "public/project-records/fashion-show-refinement/before/fashion-front.png"
+    },
+    {
+      "oid": "e5083554bcd6b719228fac4d23864e572d05955cb799cb0343f8c807a6c918ad",
+      "bytes": 360035,
+      "path": "public/project-records/fashion-show-refinement/before/fashion-north-entry.png"
+    },
+    {
+      "oid": "3c711786d1b0be44287ca8e5e8b3cf1743ea714b305616013cd6f4928e36f3b6",
+      "bytes": 389645,
+      "path": "public/project-records/fashion-show-refinement/before/fashion-restaurant.png"
+    },
+    {
+      "oid": "3299bad8919ac462ba2266ada19ea5a2f7672f8da6f4a54ef44aa84b6e376e7d",
+      "bytes": 430506,
+      "path": "public/project-records/fashion-show-refinement/before/fashion-roof.png"
+    },
+    {
+      "oid": "1b3b5c62765c5bce3bb1af1e28cb022c450082d79b8f857f23d5943e9c1182e8",
+      "bytes": 443835,
+      "path": "public/project-records/fashion-show-refinement/before/fashion-upper-plaza.png"
+    },
+    {
+      "oid": "ac7e95df8d13eed39b741eba8c60b16a5e13b55e0dfc15fffcf28f3a00799357",
+      "bytes": 435421,
+      "path": "public/project-records/fashion-show-refinement/walk/walk-frontage-0.png"
+    },
+    {
+      "oid": "a2ee7e5fc6ec32da8d1cdae7bd159503a7aee29c80418998c96bb5b817c3b75a",
+      "bytes": 281284,
+      "path": "public/project-records/fashion-show-refinement/walk/walk-frontage-1.png"
+    },
+    {
+      "oid": "4599b280df126c13aa7c3cc95502b05127bb44d2ca7f9bdd12f54a23a24c24cf",
+      "bytes": 405734,
+      "path": "public/project-records/fashion-show-refinement/walk/walk-frontage-2.png"
+    },
+    {
+      "oid": "d453cc3f3c89115ca400473d49642216ee1f16f1204bdb9e4c698aa5e10be150",
+      "bytes": 398282,
+      "path": "public/project-records/fashion-show-refinement/walk/walk-frontage-3.png"
+    },
+    {
+      "oid": "add74674667635476afc5016976cb784ff6a7bd9139360e21fc7de1060e58597",
+      "bytes": 419803,
+      "path": "public/project-records/fashion-show-refinement/walk/walk-return-0.png"
+    },
+    {
+      "oid": "2239fac8c251d596849e40dff5f116d68d8a58a9061cbc8fba533124e40e194a",
+      "bytes": 476749,
+      "path": "public/project-records/fashion-show-refinement/walk/walk-return-1.png"
+    },
+    {
+      "oid": "bf7ee3b272bed84a9ef39ecfa798326d815f535e9339b06db323fc9708408638",
+      "bytes": 412204,
+      "path": "public/project-records/fashion-show-refinement/walk/walk-return-2.png"
+    },
+    {
+      "oid": "16dbeb64b5345c2b3c39cb9413c38546916a612e79244ad789277e05c1e0f24a",
+      "bytes": 400884,
+      "path": "public/project-records/fashion-show-refinement/walk/walk-return-3.png"
+    },
+    {
+      "oid": "e2683b7e490597e51c28cb3f7746221e36467196a15216aee3eca0da78602c81",
+      "bytes": 715303,
+      "path": "runtime-assets/baked/cells/cell-0_-2.bin"
+    },
+    {
+      "oid": "6d5984adeaf56dd2d6e369b9f391361a075be5daebc9b024f6347c839e059ac7",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "420ed7a94f47b5ce0d3211855b981bca58109a2ec9d4c61a3e287cc24536d8ec",
+      "bytes": 10020,
+      "path": "runtime-assets/strip-landmarks/fashion-exterior-collision.bin"
+    },
+    {
+      "oid": "b3bc4792b57374885026ce0d769d87e9a17bf8351452b6fd73f0fdd6d1103a02",
+      "bytes": 2538396,
+      "path": "runtime-assets/strip-landmarks/fashion-exterior.glb"
+    }
+  ],
+  "count": 26,
+  "bytes": 12462801
+}
