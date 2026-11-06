@@ -175,7 +175,7 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-rexford-place-west` | M | P2 | 5 | Refine the exterior of Rexford Place west houses |
 | `ext-rexford-place-east` | M | P2 | 5 | Refine the exterior of Rexford Place east houses |
 | `ext-houssels-west` | M | P2 | 4 | Refine the exterior of Houssels Avenue west homes |
-| `ext-weldon-west` | M | P2 | 4 | Refine the exterior of Weldon Place west homes |
+| `ext-weldon-west` | M | P2 | 5 | Refine the exterior of Weldon Place west homes |
 | `ext-weldon-east` | M | P2 | 4 | Refine the exterior of Weldon Place east homes |
 | `ext-santa-paula-west-courts` | M | P2 | 4 | Refine the exterior of Santa Paula west courtyard homes |
 | `ext-jack-main-wyoming` | M | P2 | 4 | Refine the exterior of Jack in the Box Main and Wyoming |

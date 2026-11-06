@@ -35,7 +35,7 @@
     "Exact door and window positions, roof pitch and mechanical dimensions are estimates",
     "Chainlink fencing represented by coarser metal bars; lawns need richer ground texture and planting",
     "Side and rear drives/yards need further detail; no parked vehicles or household clutter",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "Private residential interiors remain out of scope; full driving benchmark deferred. Neutral daylight and exterior approach review recorded in weldon-homes-refinement; close door endpoints do not demonstrate entry."
   ],
   "triangles": 13173,
   "batches": 27,
@@ -43,7 +43,8 @@
   "metricScope": "Authored triangles exclude three existing CC0 tree instances",
   "tests": [
     "1021 roof support samples PASS after placeholder removal",
-    "28 entrance approach legs from sidewalk-side gates in both directions PASS"
+    "28 entrance approach legs from sidewalk-side gates in both directions PASS",
+    "2026-11-06: step7 local checks PASS; matched neutral-daylight4views and installed keyboard approach/return 28legs before/after PASS;9-stop dev smoke PASS. Scope and limitations in docs/project-records/weldon-homes-refinement."
   ],
   "viewsInspected": [
     "build/city-exteriors/weldon-east-final/weldon-east-north.png",
@@ -146,5 +147,20 @@
       "build/strip-landmarks/weldonEast-exterior.glb": "36cc0971852587ff09cd4226445ce854169f06b55729c043ae2f4a15a18f6925",
       "build/strip-landmarks/weldonEast-exterior-collision.json": "66747d2cf072c5b78af0246355360a76261cc433b3855798d98d964c39009a91"
     }
+  },
+  "refinementPass": {
+    "date": "2026-11-06",
+    "record": "docs/project-records/weldon-homes-refinement",
+    "scope": "Neutral daylight and installed approach validation of seven existing homes; geometry unchanged.",
+    "status": "verified-scoped-pass",
+    "collisionUnchanged": true,
+    "baselineSupportSamples": 1021,
+    "baselineCpuLegs": 28,
+    "baselineActualLegs": 28,
+    "baselineViews": 4,
+    "actualLegsAfter": 28,
+    "viewsAfter": 4,
+    "smokeStops": 9,
+    "performanceReport": "docs/project-records/weldon-homes-refinement/performance.json"
   }
 }

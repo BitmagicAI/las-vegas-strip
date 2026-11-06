@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232765631,
+ "bytes": 1232760831,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 698480,
-   "sha256": "17afc24e74a5ad93b520a944dc2f1ac2108b3f13d3bd47207d7132e9f3a46a06",
+   "bytes": 698436,
+   "sha256": "70eda9229da7d3817bf74fdfdbf64f9cf202d790bcd1a2f38c15aa2ab287b14d",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "e756d38659393a38c579bf96d69202b8b66eb49561baaf33a1d66cf22af00d46",
+   "sha256": "78ff992b150546a5828d11135f53f9099fa3e99c834e74423e7b5ab826d4619f",
    "kind": "runtime cell manifest"
   },
   {
@@ -11412,8 +11412,8 @@
   },
   {
    "path": "build/strip-landmarks/weldonWest-exterior.glb",
-   "bytes": 12664840,
-   "sha256": "59cad8f5e18f8946dd88b9af06fe6873c0a977fc21d6171d39bad01a4c30b8cb",
+   "bytes": 12660084,
+   "sha256": "4f212e94624abe00ac7e83cc76a5717b0f34b6cd537b5f2aefb6401873bada6f",
    "kind": "optimized"
   },
   {
