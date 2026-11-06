@@ -1,0 +1,5 @@
+{
+  "speedMapSHA256": "5ac325b5b45317085ce1ac6aada552fea788e7257ffa980802e487d717bf15c3",
+  "unchanged": true,
+  "reason": "Restored ignored road-network JSON had newer mtime; repacked named speed map and verified bytes equal baseline runtime before staging"
+}

@@ -1,0 +1,21 @@
+{
+  "baselineSHA256": "f6b83857a4ba492e8ad60c02c9e08560ac2740490cf14360474da20641df9fa5",
+  "afterSHA256": "b6ee36ca3567c6be41cf82fcc23dc5dc1141a70cf8a97b4d5b7c294b2aa97b90",
+  "removedTriangles": 50,
+  "addedTriangles": 50,
+  "changedXYZBounds": [
+    [
+      2099.4679150500283,
+      2107.948231598155
+    ],
+    [
+      0.16999999999999998,
+      2.925
+    ],
+    [
+      -3985.9644285804457,
+      -3960.9779342934276
+    ]
+  ],
+  "scope": "Only relocated porch supports, low side walls and floor at two southern houses; all other source triangles identical"
+}

@@ -5,7 +5,7 @@ sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
 import bpy
 from mathutils import Matrix,Vector
-name='housselsWest-exterior';bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add(name)
+name='housselsWest-exterior';bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.colors['hs-red-gravel']='916954';E.add(name)
 for mat in bpy.data.materials:
  if mat.name=='Strip / cf-grass':
   bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=1;bs.inputs['Specular IOR Level'].default_value=0
