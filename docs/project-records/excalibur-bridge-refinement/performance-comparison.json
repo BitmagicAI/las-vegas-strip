@@ -1,0 +1,35 @@
+{
+  "method": "960x540 DPR1 ultra, identical cameras, neutral daylight;900 warm frames plus streaming quiet,60 settle,180 measured. No runtime or geometry changes.",
+  "views": [
+    {
+      "name": "front",
+      "beforeP95Ms": 19.700000047683716,
+      "afterP95Ms": 17.59999990463257,
+      "changePercent": -10.659899177503107
+    },
+    {
+      "name": "north-landing",
+      "beforeP95Ms": 18,
+      "afterP95Ms": 17.59999990463257,
+      "changePercent": -2.222222752041292
+    },
+    {
+      "name": "diagonal",
+      "beforeP95Ms": 18,
+      "afterP95Ms": 17.799999952316284,
+      "changePercent": -1.111111376020646
+    },
+    {
+      "name": "east-landing",
+      "beforeP95Ms": 17.899999856948853,
+      "afterP95Ms": 18.09999990463257,
+      "changePercent": 1.1173187110729232
+    },
+    {
+      "name": "arcade",
+      "beforeP95Ms": 18,
+      "afterP95Ms": 17.899999856948853,
+      "changePercent": -0.5555563502841476
+    }
+  ]
+}
