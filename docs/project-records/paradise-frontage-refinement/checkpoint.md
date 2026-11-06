@@ -1,0 +1,9 @@
+# Paradise Road eight-building refinement
+
+2026-11-06. Issue185 claimed and assignment confirmed janiverse. Branch task/ext-paradise-frontage-refinement from origin/next11acbe89406d72ab2ddab12709f58e1a7e6faf02; active worktree vegas-2601-westwood. Prior PR528 merged,183/184closed. NoGPUjobs or Maps tabs. No new model edits. Dev3180/editor3181.
+
+Read task brief and tools/resort-blocks/paradise-road-small-frontage.json; eight mapped buildings with intervening vacant plots that must stay vacant. Source builder paradise_road_small_frontage.py, key paradiseSmallFrontage. Read first35lines; remaining builder still to inspect. Existing gaps: mural/brandlettering, estimated doors/windows/HVAC/rears, north garden screen/landscape/paving/furnishings, neutraldaylight and movingroutebenchmark. Existing source12903tri27groups,1562roof samples and16bidirectional approach legs historical.
+
+Next: finish builder audit; inspect linked February2026GoogleStreetView and official architectural sources; record uncertainties. Capture front-first matched neutraldaylight baseline before edits, source support/approaches and actual installed keyboard approaches. Select reference-supported original geometry improvements for this one eight-buildinggroup, optimize includingWebP, one sharedbake,retain unchangedcellsbyteidentical,fullstep7checks/finalactualwalk/matchingperformance/9stopsmoke serially. Preserve neighbors,roads,interiors/runtimecode and vacantplots. Do not reproduce mural pixels.
+
+Use uv Python3.12 for authoring (systemPython3.9 fails localnumpy). Blender5.2. Dependency symlinks .agents,engine,node_modules,tools/optimize/bm-tools remainuntracked. Append required originalprompt to everybitmagiccommand. No main/CDNupload/publish/release/settings. Beforepushverifyorigin/next..HEAD onlyowncommits; targetnext,selfmergeverified--mergeexacthead,close185,picker.
