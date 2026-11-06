@@ -1,0 +1,16 @@
+{
+  "assetPack": "1930 present, 0 missing, 0 not optimized",
+  "optimization": "1 runtime GLB checked, 0 not optimized; level and WebP passes installed",
+  "bake": "up to date",
+  "cells": "91/92 binaries byte-identical, including base; only cell-0_-1 changed",
+  "public": "0 failures, 13 existing warnings",
+  "recordReview": "291 records valid",
+  "typecheck": "passed before final bake; source/runtime code unchanged since",
+  "runtimeTests": "city-lazy-lod, city-lighting-resize, site-lights passed",
+  "arcade": "241 floor + 241 capsule samples, 0 failures",
+  "roof": "28 samples, 0 failures",
+  "cityCollision": "1516 nonempty cells; 24 neighborhood colliders constructed",
+  "walk": "24/24 actual keyboard legs passed, east-west-return ~524m; no doors opened; endpoint walls are not onward connections",
+  "smoke": "9 stops placed, 0 failed requests/page errors/console errors",
+  "performance": "Initial front +29% not reproduced in paired baseline/after repeat: p95 63.8\u219264.8ms (+1.57%); other initial views within10%. Area remains slow."
+}

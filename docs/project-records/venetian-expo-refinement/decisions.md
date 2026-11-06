@@ -1,0 +1,9 @@
+# Covered public approach — decisions and limits
+
+January2025 Street View shows a continuous open ground colonnade beneath the curved upper window band. Replace the prior full-height glass skin only on that mapped frontage. Infer a4.5m covered depth and5.4m soffit, preserving18m/22m roof estimates and all roof equipment. Keep a recessed closed exhibition boundary: public hall interiors and the Sphere onward connector are separate unresolved work, not implied by the new outdoor arcade.
+
+The hall/meeting-wing split at x577 is an authored modeling boundary. A low opening through its intersection with the arcade is necessary for continuous pedestrian access. Both coincident shells are cut there. All labels and protected roof/service/loading/joint geometry are identical. Retriangulation of the long internal wall changes triangle identities, but the geometric symmetric difference is confined to the low arcade interval. Other frontage cuts use an opt-in boundaryOnly flag so their masks do not nick neighboring returns; callers without that flag retain existing behavior.
+
+Development audit corrections: first floor samples exposed wedges between independently buffered facade segments; a continuous polyline buffer closes those wedges. The exact-boundary cut then exposed the shared x577 divider, fixed with the explicit low arcade crossing. Final241floor and241capsule tests pass. An initial bake had already started before these audits completed; its result was discarded and final corrected geometry was re-exported, optimized and baked. No intermediate runtime asset was staged or committed. The final shared bake is the one retained.
+
+Baseline neutral static p95 is already slow: front56.3ms,entry60.0ms,north65.3ms,east43.8ms. No sustained60fps or whole-site fidelity claim. Compare after with identical cameras and settings, retain any unresolved regression.

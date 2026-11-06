@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232774909,
+ "bytes": 1232818204,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1540784,
-   "sha256": "daa12a08799112d23013de804d883fbc9d967924596c0b0a0892de76bdc05696",
+   "bytes": 1541639,
+   "sha256": "37d4ac0e72e9f09408d9f9dcb03bc2cff31a7c05e655db987c5f5406366bb170",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "770fd9a52f68bc1d91c68cbb8b7e650ad76b06ad447051f7512fd6ca4a39a5ae",
+   "sha256": "68a536acd96feb29ed6374791b2437d2cacdecd2d6b514829490dfa2a693644a",
    "kind": "runtime cell manifest"
   },
   {
@@ -11340,14 +11340,14 @@
   },
   {
    "path": "build/strip-landmarks/venetianExpo-exterior-collision.bin",
-   "bytes": 3676,
-   "sha256": "7487223324b13148dd01249b83075db403e80ae42cfeb522d2b207013df47231",
+   "bytes": 5592,
+   "sha256": "08f8a81385b6b1b7d278a7db9fbde216ec08a629cd1246ff746ad543e08559ad",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/venetianExpo-exterior.glb",
-   "bytes": 301164,
-   "sha256": "fdb6b6432b31eabd21a7d95aba35dffa22356d1fdf5bea87bb39113f093cad05",
+   "bytes": 341688,
+   "sha256": "5aff3b327c811b39b6e246e6e2d1e04ad33e33722c4d47dfbd4c1b033f90bed8",
    "kind": "optimized"
   },
   {

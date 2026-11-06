@@ -1,0 +1,5 @@
+# Installed arcade review (in progress)
+
+Matched 960×540, DPR1, ultra, neutral daylight; front-first cameras unchanged from baseline. Front and entry after captures inspected: pale columns and recessed ground glazing now sit beneath the upper window band. Existing pedestrian bridge overlaps the left entry view; no bridge geometry changed. The wide front remains partly occluded by the separate Wynn-side building, exactly as in the baseline. Source geometry is an inferred architectural reconstruction, not photorealistic completion.
+
+North and east aerials inspected: roof silhouette, equipment and loading facade retained. First matched performance pass p95 front56.3→72.6ms (+29%), entry60→63.2ms, north65.3→62.7ms, east43.8→44.7ms. Controlled paired repeat p95 63.8→64.8ms(+1.57%) did not reproduce the initial front spike. All24actual keyboard legs passed. Supplemental east/west close arcade views inspected: continuous paving, open column spacing, soffit and closed recessed glass read clearly; existing bridge remains separate. Public hall access and the opaque Sphere boundary remain unresolved.

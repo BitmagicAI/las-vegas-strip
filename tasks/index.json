@@ -4827,13 +4827,13 @@
    "area": "exteriors",
    "size": "M",
    "priority": "P2",
-   "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "status": "done",
+   "summary": "Scoped covered arcade and neutral review verified; unresolved hall access, heights, Sphere connector and full-site fidelity retained with reasons.",
    "items": [
-    "Entrances and accessible onward routes",
-    "Exact height fit and roof equipment placement",
-    "Adjacent Sphere bridge connection",
-    "Neutral-light close surface review"
+    "Public hall entrance doors, interior circulation and accessible onward routes remain closed; this pass verifies only the covered outdoor approach.",
+    "Exact exterior heights and roof equipment placement remain estimates: official hall clear ceilings do not establish exterior roof elevations.",
+    "Adjacent Sphere bridge still meets an opaque boundary; the outdoor arcade does not establish a continuous interior connector.",
+    "Fine facade/material fidelity and full perimeter driving remain unverified; matched neutral daylight frontage review covers this scoped pass only."
    ],
    "record": "tools/resort-blocks/venetian-expo.json",
    "buildings": [
@@ -4849,12 +4849,15 @@
      "tools/resort-blocks/README.md"
     ],
     "writes": [
-     "build/optimized/build/strip-landmarks/venetianExpo-exterior.glb",
+     "runtime-assets/strip-landmarks/venetianExpo-exterior.glb",
      "tools/resort-blocks/venetian-expo.json"
     ],
     "builders": [
+     "tools/city-exteriors/audit-venetian-expo-arcade.mjs",
      "tools/city-exteriors/test-venetian-expo.mjs",
+     "tools/.expo-ab-probe.mjs",
      "tools/strip-landmarks/venetian_expo.py",
+     "tools/city-exteriors/install-venetian-expo-refinement.mjs",
      "tools/strip-landmarks/build_venetian_expo.py"
     ]
    },

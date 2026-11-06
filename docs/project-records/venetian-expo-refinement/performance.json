@@ -1,0 +1,79 @@
+{
+  "viewport": [
+    960,
+    540
+  ],
+  "dpr": 1,
+  "quality": "ultra",
+  "warmFrames": 900,
+  "timedFrames": 180,
+  "rows": [
+    {
+      "view": "front",
+      "beforeP50": 52.10000014305115,
+      "afterP50": 58.10000014305115,
+      "beforeP95": 56.299999952316284,
+      "afterP95": 72.60000014305115,
+      "p95ChangePercent": 28.95204299207863
+    },
+    {
+      "view": "entry",
+      "beforeP50": 52.59999990463257,
+      "afterP50": 55.19999980926514,
+      "beforeP95": 60,
+      "afterP95": 63.200000047683716,
+      "p95ChangePercent": 5.333333412806196
+    },
+    {
+      "view": "north",
+      "beforeP50": 53.299999952316284,
+      "afterP50": 49.700000047683716,
+      "beforeP95": 65.29999995231628,
+      "afterP95": 62.700000047683716,
+      "p95ChangePercent": -3.981623134044643
+    },
+    {
+      "view": "east",
+      "beforeP50": 27.09999990463257,
+      "afterP50": 32.5,
+      "beforeP95": 43.799999952316284,
+      "afterP95": 44.700000047683716,
+      "p95ChangePercent": 2.054794740518795
+    }
+  ],
+  "status": "Initial front +29% did not reproduce in controlled paired repeat: p50 52.5\u219252.9ms, p95 63.8\u219264.8ms (+1.57%). Retain both runs; noisy slow area, no speedup or 60fps claim.",
+  "pairedFrontRepeat": {
+    "baseline": {
+      "name": "front",
+      "eye": [
+        743,
+        2,
+        -800
+      ],
+      "target": [
+        650,
+        7,
+        -730
+      ],
+      "p50": 52.5,
+      "p95": 63.799999952316284
+    },
+    "after": {
+      "name": "front",
+      "eye": [
+        743,
+        2,
+        -800
+      ],
+      "target": [
+        650,
+        7,
+        -730
+      ],
+      "p50": 52.89999985694885,
+      "p95": 64.79999995231628
+    },
+    "p95ChangePercent": 1.567398120293717,
+    "method": "Browser-only intercept restores origin/next Expo GLB, collision and changed LOD cell/manifest; service workers blocked for both. Serial runs, same camera, viewport, quality and warmup. baseline-hits.json confirms old GLB loaded."
+  }
+}
