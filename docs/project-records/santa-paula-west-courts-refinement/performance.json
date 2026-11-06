@@ -1,0 +1,29 @@
+{
+  "initialMatchedViews": [
+    {
+      "name": "front",
+      "beforeP95": 18.200000047683716,
+      "afterP95": 17.699999809265137,
+      "changePercent": -2.7472540500471765
+    },
+    {
+      "name": "south",
+      "beforeP95": 19.100000143051147,
+      "afterP95": 17.5,
+      "changePercent": -8.376964037004209
+    },
+    {
+      "name": "court",
+      "beforeP95": 17.799999952316284,
+      "afterP95": 32.299999952316284,
+      "changePercent": 81.46067437552516
+    },
+    {
+      "name": "roof",
+      "beforeP95": 17.700000047683716,
+      "afterP95": 20.59999990463257,
+      "changePercent": 16.384179938622978
+    }
+  ],
+  "status": "Court +81.46% and roof +16.38% regressions retained; longer warmed exact-baseline A/B pending. Not a performance pass."
+}
