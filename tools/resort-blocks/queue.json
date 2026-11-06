@@ -1896,7 +1896,13 @@
       "name": "Sphere",
       "status": "refinement-deferred",
       "record": "sphere.json"
+    },
+    {
+      "id": "excalibur-pedestrian-bridge",
+      "name": "Excalibur elevated pedestrian corridor",
+      "status": "refinement-deferred",
+      "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "sphere"
+  "active": "excalibur-pedestrian-bridge"
 }

@@ -1,0 +1,74 @@
+{
+  "id": "excalibur-pedestrian-bridge",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://static.mgmresorts.com/content/dam/MGM/excalibur/hotel/excalibur-property-map.pdf",
+      "observed": "Official current PDF text rechecked: front entrance, New York-New York/T-Mobile walkway, Luxor walkway, tram station, casino and Castle Walk levels with escalators/elevators. Schematic circulation, no scaled deck heights.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.google.com/maps/@36.0999639,-115.174212,3a,75y,17.87h,90t/data=!3m4!1e1!3m2!1s53pzrEZs686XAT8QLC5bwg!2e0",
+      "imageDate": "April2025 per prior Excalibur record",
+      "observed": "April2025 Street View visually re-inspected this pass: covered elevated approach, gray railing, pale square piers with pointed trim, flat ceiling with recessed fittings and central moving walkway. This is not reproduced by merely retaining an open elevated deck above a flat ground arcade.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1001,-115.174,18z/data=!3m1!1e3",
+      "provider": "Google Maps satellite",
+      "accessed": "2026-11-06",
+      "imageDate": "Unknown; copyright2026 not capture date",
+      "observed": "Visually inspected: diagonal covered approach across north fan-shaped forecourt, tram station on east edge, raised road-crossing connections to north and east. Confirms broad plan relationships, not deck heights."
+    }
+  ],
+  "dimensions": {
+    "mappedSource": "way/567108272",
+    "mappedBoundsM": [
+      -125.565,
+      1721.177,
+      -25.917,
+      1815.465
+    ],
+    "mappedHeightM": 5,
+    "heightConfidence": "unknown mapped extrusion, not the installed deck elevation",
+    "existingDeckM": 6.035,
+    "existingGroundArcadeM": 0.3,
+    "basis": "Existing bridge support samples and arcade authoring metadata; not surveyed elevations."
+  },
+  "implemented": [
+    "Duplicate ground-level mapped corridor extrusion was already suppressed by build_excalibur_frontage.py; retained suppression rather than recreating a solid around the elevated route.",
+    "Existing elevated geographic pedestrian paths and stairs retained; Excalibur arcade, hall and resort geometry stay owned by parent excalibur.json."
+  ],
+  "remaining": [
+    "Complete bridge-to-casino connection remains unverified; elevated deck and ground arcade use different datums, and passing separate segment tests does not prove a continuous arrival.",
+    "Exact station platform, moving walkway, canopy, pier and railing details remain deferred until fitted to current reference geometry.",
+    "Full perimeter, accessibility/lift route and boundary joins to neighboring resorts remain outside the current local route proof.",
+    "Actual walk endpoint for way29713830 is visually obscured by a blue pyramidal roof despite passing collision and movement checks (walk-frontage-1.png). The elevated mapped route and lower authored arcade/roof geometry require a coordinated elevation/ownership correction, supported by Street View, before this can be called a visually valid connection. Preserve the failure evidence; do not count movement success as visual approval."
+  ],
+  "validation": {
+    "floor": "Existing114 floor samples passed; new packed city-cell plus frontage/highrise collider audit also reports114 floor and114 capsule-body checks without failures.",
+    "movement": "50 actual keyboard movement legs passed across five separate bridge/stair route pieces, forward and return. This does not establish joined full routes or visual clearance: the diagonal endpoint is roof-obscured.",
+    "visual": "Five matching before/after installed views inspected, exterior front first. No geometry change. The diagonal route remains visually invalid at its blue-roof-obscured endpoint, retained as a required follow-up; local movement success is not architectural approval.",
+    "performance": "Matched p95 ms: front19.7\u219217.6,north18.0\u219217.6,diagonal18.0\u219217.8,east17.9\u219218.1,arcade18.0\u219217.9. No >10% regression; unchanged runtime means timing variations are not an optimization result. No sustained60fps claim."
+  },
+  "evidence": [
+    "docs/project-records/excalibur-bridge-refinement/body-baseline.json",
+    "docs/project-records/excalibur-bridge-refinement/bridge-samples.json",
+    "docs/project-records/excalibur-bridge-refinement/actual-walk.json",
+    "public/review/excalibur-bridge-refinement/walk-frontage-1.png",
+    "docs/project-records/excalibur-bridge-refinement/performance-comparison.json",
+    "docs/project-records/excalibur-bridge-refinement/checks.json",
+    "docs/project-records/excalibur-bridge-refinement/runtime-audit.json",
+    "public/review/excalibur-bridge-refinement/comparison.jpg",
+    "docs/project-records/excalibur-bridge-refinement/smoke.json"
+  ],
+  "ownership": {
+    "geometryOwner": "geographic pedestrian bridge",
+    "suppressedMappedShell": "way/567108272",
+    "parentRecord": "tools/resort-blocks/excalibur.json",
+    "scope": "Documentation/review mapping only; no duplicate owner for parent resort meshes."
+  },
+  "decisions": [
+    "Preserve the prior explicit suppression and existing optimized geometry. Distinguish mapped shell height from bridge deck datum."
+  ]
+}

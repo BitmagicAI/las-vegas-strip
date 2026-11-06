@@ -16349,12 +16349,15 @@
    "area": "exteriors",
    "size": "S",
    "priority": "P2",
-   "status": "open",
-   "summary": "1 mapped building(s) (Unnamed building) passed a first exterior review; refinement is pending and no block record covers them yet. Start one in tools/resort-blocks/ (copy a lightweight record such as akita-plaza.json) and add it to queue.json.",
+   "status": "done",
+   "summary": "Scoped ownership and installed-route audit complete. Duplicate task generation is resolved; full bridge-to-casino continuity and demonstrated visual roof obstruction remain deferred in the dedicated record.",
    "items": [
-    "Unnamed building (way/567108272, 5.0 m, status reviewed-refinement-pending)"
+    "Complete bridge-to-casino connection remains unverified; elevated deck and ground arcade use different datums, and passing separate segment tests does not prove a continuous arrival.",
+    "Exact station platform, moving walkway, canopy, pier and railing details remain deferred until fitted to current reference geometry.",
+    "Full perimeter, accessibility/lift route and boundary joins to neighboring resorts remain outside the current local route proof.",
+    "Actual walk endpoint for way29713830 is visually obscured by a blue pyramidal roof despite passing collision and movement checks (walk-frontage-1.png). The elevated mapped route and lower authored arcade/roof geometry require a coordinated elevation/ownership correction, supported by Street View, before this can be called a visually valid connection. Preserve the failure evidence; do not count movement success as visual approval."
    ],
-   "record": "docs/project-records/city-exteriors-2026-10-12/inventory.json",
+   "record": "tools/resort-blocks/excalibur-pedestrian-bridge.json",
    "buildings": [
     {
      "id": "way/567108272",

@@ -1,0 +1,56 @@
+[
+  {
+    "command": [
+      "bitmagic",
+      "check",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "output": "Type check passed.\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0,
+    "output": "Records valid: 291 blocks (291 refinement-deferred); 8 full seven-gate records; 1195 remaining items.\nActive: excalibur-pedestrian-bridge (lightweight record: no review board). Task board: python3 tools/tasks/build-board.py\n"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tools/city-exteriors/audit-excalibur-bridge-body.mjs"
+    ],
+    "exitCode": 0,
+    "output": "{\"samples\":114,\"failures\":[],\"floorFailures\":[]}\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "city bake is up to date\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "1930 present, 0 missing, 0 not optimized\n"
+  },
+  {
+    "command": "node --import ./tools/ts-register.mjs --test tests/city-lazy-lod.test.mjs tests/city-lighting-resize.test.mjs tests/site-lights.test.mjs",
+    "output": "PASS: lazy near detail: LOD vertices bit-identical to the near level (93 checked), near level filled on approach = eager, casters = casting parts, eviction and refill\n\u2714 tests/city-lazy-lod.test.mjs (973.794125ms)\nPASS: city surfaces carry the cluster grid in their program key and rebuild once per resize\n\u2714 tests/city-lighting-resize.test.mjs (442.40625ms)\nsite-lights: ok\n\u2714 tests/site-lights.test.mjs (591.313375ms)\n\u2139 tests 3\n\u2139 suites 0\n\u2139 pass 3\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 982.392333\n"
+  },
+  {
+    "command": "python3 tools/optimize/check-runtime-glbs.py --changed origin/next",
+    "result": "0 changed GLBs,0 unoptimized"
+  }
+]
