@@ -911,6 +911,13 @@
       "severity": "refinement",
       "status": "open",
       "detail": "Main composition rebuilt. Relief groups, statues, balloon medallions and script are original approximations; transverse Arc passages are not modeled. Door arrangement, elevation, window spacing and street planting need further photo/metric refinement. Vestibule is a playable connector, not a replica of the complete actual hotel lobby."
+    },
+    {
+      "id": "horseshoe-ground-connector",
+      "title": "Reconstruct and validate the geographic Le Boulevard\u2013Horseshoe connector",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Official Paris map and Monorail directions confirm the real-world connection. Legacy Paris-side physical door was mapped with Horseshoe,138.266m from its Paris-frame location; its unreachable visibility entry is retired in PR521. Preserve existing interiors and working Horseshoe-side portal. A future geometry pass must align doorway, continuous floor/collision and both visibility ends; short local walk checks are not a through-route verification. Evidence: docs/project-records/paris-horseshoe-passage."
     }
   ],
   "gates": [
