@@ -1,0 +1,22 @@
+{
+  "typecheck": "PASS",
+  "runtimeTests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "supportSamplesBeforeAfter": 1629,
+  "cpuLegsBeforeAfter": 36,
+  "actualBaselineLegs": 36,
+  "baselineViewsInspected": 4,
+  "baselineEndpointCapturesInspected": 18,
+  "optimizedMiB": 12.51,
+  "optimization": "level and WebP PASS",
+  "existingTreeNodesPreserved": 10,
+  "collision": "50 removed and 50 added triangles confined to relocated southern porch; all other triangles identical",
+  "remaining": [
+    "grouped bake/cell preservation/stage",
+    "model/bake/asset checks",
+    "installed after views/actual walks/smoke/performance",
+    "records/board/LFS audit/PR"
+  ]
+}
