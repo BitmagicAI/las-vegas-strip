@@ -1,0 +1,7 @@
+# Venetian Expo refinement
+
+2026-11-06: preceding Shake Shack PR524 merged b6fa0c3a28b7b62df0619880cad5b15fab40813b;168explicitly closed. Picker selected ext-venetian-expo #77; claim posted. Branch task/ext-venetian-expo from currentorigin/next. No geometry/runtime edits yet. No GPU jobs or reference browser tabs running.
+
+Read record venetian-expo.json and source venetian_expo.py. Single mapped footprint way/111367819. Hall roof18m and west meeting wing22m are inferred, not survey-confirmed. Existing source shells are solid; frontage doors are visual boxes, not open circulation. Old record explicitly says Sphere bridge meets opaque interior boundary. Do not claim a through connection or remove walls without reference-supported public circulation and collision changes.
+
+Latest Sphere pass PR522 already verified local atrium/bridge routes and kept missing full Venetian connector explicit. Reuse its camera/route evidence where relevant, do not replay its completed setup. Current Expo gaps: entrances/onward accessible routes; exact height/roof equipment fit; Sphere connection; neutral close surface review. Next inspect current official Expo/Sphere plans and Street View, choose a defensible focused geometry/circulation refinement, capture matched front-first daylight baseline, preserve other owners/interiors/roads. Optimize level+WebP before installation, bake once,retain unchanged cells,run all step7 checks/actual walks/devsmoke/matched performance. Keep all gaps and person/CDN checks under release. Never publish/upload/merge main.
