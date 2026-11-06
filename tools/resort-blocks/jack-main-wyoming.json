@@ -19,7 +19,7 @@
     "Exact heights, rear service positions and window divisions estimated",
     "Sign lettering is an approximation of the brand typography; original simplified menu posters",
     "Desert shrubs, mature trees, exact drive-through menu equipment and interior missing",
-    "No neutral daylight review or full driving benchmark"
+    "Full driving benchmark still missing; this pass verifies matched neutral daylight and pedestrian approaches only."
   ],
   "triangles": 2149,
   "batches": 21,
@@ -105,8 +105,22 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/jackMainWyoming-exterior.glb": "cfb14e1239b710710fd1acb9a5a5be3e277c4d9e5d922fae60a6087e067eaa6e",
-      "build/strip-landmarks/jackMainWyoming-exterior-collision.json": "dc7b284ac63705d4edcce27ad80f5f3a003867753b7bfcbff49a718fb2c19163"
+      "runtime-assets/strip-landmarks/jackMainWyoming-exterior.glb": "ca7a18d588a88becb8ef997d2ce5e079aa5f214f299b80d39ec77d8aeaeefe9e",
+      "runtime-assets/strip-landmarks/jackMainWyoming-exterior-collision.bin": "ae90bfd15530b2e8665957e374e63bc690aadf62159bbaff6e75d5e3b40871ac"
     }
+  },
+  "refinement20261106": {
+    "status": "reviewed",
+    "record": "docs/project-records/main-wyoming-refinement/checkpoint.md",
+    "references": "docs/project-records/main-wyoming-refinement/references.md",
+    "baseline": "docs/project-records/main-wyoming-refinement/performance-before.json",
+    "baselineActualWalk": "docs/project-records/main-wyoming-refinement/walk-before.json",
+    "changed": "Address lettering corrected1531\u21921591 from official location and Jan2026StreetView; collision unchanged.",
+    "actualWalk": "docs/project-records/main-wyoming-refinement/walk-after.json",
+    "performance": "docs/project-records/main-wyoming-refinement/performance-comparison.json",
+    "smoke": "docs/project-records/main-wyoming-refinement/smoke.json",
+    "checks": "docs/project-records/main-wyoming-refinement/local-checks.json",
+    "cells": "docs/project-records/main-wyoming-refinement/cell-delta.json",
+    "performanceRepeat": "docs/project-records/main-wyoming-refinement/performance-after-repeat.json"
   }
 }

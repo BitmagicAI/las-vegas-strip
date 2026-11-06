@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1232985761,
+ "bytes": 1232992112,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -450,8 +450,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-6.bin",
-   "bytes": 272542,
-   "sha256": "5b743a91e936762934c2af62675218e6b4179a9f2988f464e2c043cd0253c49c",
+   "bytes": 272453,
+   "sha256": "19e956fac5eecaa6857b1e6ccb1ff9ad7b8ec148892e1fe98909eb03ba5297c9",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "62774f9f003d25ca9372bc7587ebf4ac6062ac1d338cd701782d9644c0a891bd",
+   "sha256": "00403e71c929556d17333516bd9eacf11ea7a1d3d7f0a08bfdaf4103007a0179",
    "kind": "runtime cell manifest"
   },
   {
@@ -7669,13 +7669,13 @@
   {
    "path": "build/strip-landmarks/casinoCenter1512-exterior-collision.bin",
    "bytes": 344,
-   "sha256": "a66650be3fba58e562eb38613343e4b5a0d8ccb67bd6b15c159c0f68f13e9875",
+   "sha256": "e2c189890d07d9df281dbab6d1b1d30f5bbd5f0c143bf9ade2e1fd552d815de2",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/casinoCenter1512-exterior.glb",
-   "bytes": 41056,
-   "sha256": "89dd8f4df1b6fe39be183cb523f1174544befff41c896a956f43a7cb66ba12bb",
+   "bytes": 49140,
+   "sha256": "bc70dfed0403b029a41f165b382bdcfd8d15c3dbe8f423097c3a6bed6ea58c6a",
    "kind": "optimized"
   },
   {
@@ -9162,8 +9162,8 @@
   },
   {
    "path": "build/strip-landmarks/jackMainWyoming-exterior.glb",
-   "bytes": 404612,
-   "sha256": "ffc42d7922e1520c7f404eaf40c6de34ad15c629daaed503468b8f418f3c1bea",
+   "bytes": 402968,
+   "sha256": "ca7a18d588a88becb8ef997d2ce5e079aa5f214f299b80d39ec77d8aeaeefe9e",
    "kind": "optimized"
   },
   {

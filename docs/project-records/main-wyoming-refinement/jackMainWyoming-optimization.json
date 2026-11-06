@@ -1,0 +1,83 @@
+{
+  "rel": "build/strip-landmarks/jackMainWyoming-exterior.glb",
+  "sourceSha256": "b1c7366fe02392f3ea179d99513d608ec7759bcc6949676df5fa674e3ac54206",
+  "cls": "level",
+  "loader": "src/work/StripLandmarks.ts",
+  "when": "boot",
+  "label": "primary",
+  "preset": "level",
+  "overrides": [],
+  "exitCode": 0,
+  "signal": null,
+  "seconds": 0.536,
+  "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/jackMainWyoming-exterior.glb .bitmagic/optimize/build/strip-landmarks/jackMainWyoming-exterior/out.glb --preset=level --json",
+  "failed": [],
+  "stderr": [],
+  "report": {
+    "src": "build/strip-landmarks/jackMainWyoming-exterior.glb",
+    "dst": ".bitmagic/optimize/build/strip-landmarks/jackMainWyoming-exterior/out.glb",
+    "preset": "level",
+    "before": {
+      "bytes": 895516,
+      "triangles": 31201,
+      "vertices": 24871,
+      "nodes": 33,
+      "skins": 0,
+      "animations": 0,
+      "gpuGeometry": 861062,
+      "gpuTextures": 0,
+      "textures": [],
+      "extensions": []
+    },
+    "after": {
+      "bytes": 402968,
+      "triangles": 31201,
+      "vertices": 24871,
+      "nodes": 33,
+      "skins": 0,
+      "animations": 0,
+      "gpuGeometry": 640087,
+      "gpuTextures": 0,
+      "textures": [],
+      "extensions": [
+        "EXT_meshopt_compression",
+        "KHR_mesh_quantization"
+      ]
+    },
+    "notes": [
+      "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+    ],
+    "checks": [
+      {
+        "name": "node names",
+        "fail": false,
+        "detail": "33 kept"
+      },
+      {
+        "name": "texture slots",
+        "fail": false,
+        "detail": "0 kept"
+      },
+      {
+        "name": "vertex layout",
+        "fail": false,
+        "detail": "separate"
+      },
+      {
+        "name": "bounds",
+        "fail": false,
+        "detail": "0.000% of size"
+      },
+      {
+        "name": "smaller",
+        "fail": false,
+        "detail": "481.0 KiB saved"
+      },
+      {
+        "name": "Khronos validator",
+        "fail": false,
+        "detail": "0 errors (0 new), 0 warnings"
+      }
+    ]
+  }
+}

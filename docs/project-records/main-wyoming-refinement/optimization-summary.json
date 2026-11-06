@@ -1,0 +1,15 @@
+{
+  "webpPass": "Both --variant=webp-textures commands completed with exit0. Both GLBs have zero embedded textures; no WebP candidate generated. Level candidates installed.",
+  "jack": {
+    "sourceTriangles": 2149,
+    "sourceGroups": 21,
+    "optimizedBytes": 402968,
+    "collision": "unchanged"
+  },
+  "casino": {
+    "sourceTriangles": 1676,
+    "sourceGroups": 14,
+    "optimizedBytes": 49140,
+    "collision": "street roof rotated; lawn moved with path; rear preserved"
+  }
+}
