@@ -25,5 +25,19 @@
       "changePercent": 16.384179938622978
     }
   ],
-  "status": "Court +81.46% and roof +16.38% regressions retained; longer warmed exact-baseline A/B pending. Not a performance pass."
+  "status": "Initial spikes retained. Exact-base browser-only reverse-order A/B,1800warm/60settle/10x180frames, shows no sustained increase in these two static views. No startup/full-driving/sustained60fps guarantee.",
+  "warmedExactBaseAB": [
+    {
+      "name": "court",
+      "beforeMedianP95": 18.850000023841858,
+      "afterMedianP95": 17.899999976158142,
+      "changePercent": -5.0397880449980725
+    },
+    {
+      "name": "roof",
+      "beforeMedianP95": 18.25000011920929,
+      "afterMedianP95": 17.65000009536743,
+      "changePercent": -3.287671342041909
+    }
+  ]
 }

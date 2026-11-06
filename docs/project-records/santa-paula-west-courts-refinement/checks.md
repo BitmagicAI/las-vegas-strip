@@ -9,7 +9,7 @@
 - 1159 support samples and 68 CPU approach legs passed before and after.
 - Actual keyboard approach/return: 68 baseline and 68 after legs passed; all 68 endpoint images inspected.
 - Four neutral-daylight front-first baseline views inspected; matching after views inspected.
-- Nine-stop dev smoke: all placed, zero failed requests/page/console errors. Performance follow-up pending; initial court and roof regressions preserved in performance.json.
+- Nine-stop dev smoke: all placed, zero failed requests/page/console errors. Performance follow-up: ten-window warmed exact-base A/B court18.85→17.90ms, roof18.25→17.65ms median p95; initial spikes preserved. No startup or full-driving guarantee.
 - Source collision SHA unchanged; 15 existing tree nodes/transforms retained.
 - 91/92 cell binaries byte-identical. Only cell-2_-5 changed. Stage copied 3 files, left 1927 unchanged, removed 0.
 - Out-of-scope regenerated Gold Coast / Wyndham LOD differences restored; lod-preservation.json records exact blocks.

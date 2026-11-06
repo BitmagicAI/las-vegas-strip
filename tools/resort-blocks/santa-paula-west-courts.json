@@ -30,7 +30,7 @@
     "Exact entrances, unit count and roof pitch inferred; no interior layout claimed",
     "Northern gravel area now visually represented, but granular texture, measured garden subdivisions, chainlink fences and dense planting remain missing",
     "Roof sheen reduced; roof surface texture/variation, surveyed HVAC positions, parking and household detail remain sparse",
-    "No interiors or full driving benchmark; initial court/roof p95 regression under investigation, raw measurements retained"
+    "No interiors or full driving benchmark; initial static court/roof p95 spikes retained. Longer warmed exact-base A/B showed no sustained increase; startup behavior not proven."
   ],
   "triangles": 9359,
   "batches": 22,
@@ -151,7 +151,7 @@
   "refinement20261106": {
     "scope": "Northern visual gravel surface leaving modeled approach paths; scoped matte roof materials for all seven mapped buildings. Roof shapes/colors, source collision and 15 existing tree nodes/transforms preserved.",
     "record": "docs/project-records/santa-paula-west-courts-refinement",
-    "status": "Installed visual/walking review passed; performance follow-up pending.",
+    "status": "Scoped installed refinement verified; full-site gaps retained.",
     "checks": {
       "supportSamples": 1159,
       "cpuLegs": 68,
