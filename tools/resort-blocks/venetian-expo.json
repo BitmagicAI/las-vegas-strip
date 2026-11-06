@@ -15,25 +15,43 @@
     {
       "url": "https://www.venetianlasvegas.com/meetings/planning/spaces/expo-halls/expo-map-floor-plan.html",
       "inspected": "Level 1 and 2 map images viewed; Hall G13ft5in, upper halls32ft5in clear ceiling"
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=ZlTcEVi3wUI_LtdK82RTvg&heading=180&pitch=5",
+      "imagery": "2025-01",
+      "inspected": true,
+      "observation": "Open ground colonnade, recessed glazing and upper window band; temporary event advertising excluded."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=yTcIfOTAK99IVr0XvVoeeg&heading=220&pitch=5",
+      "imagery": "2025-01",
+      "inspected": true,
+      "observation": "Open ground colonnade, recessed glazing and upper window band; temporary event advertising excluded."
     }
   ],
-  "dimensions": "Mapped plan retained; outer roof18m estimated from two hall levels and Earth. Hotel-side meeting wing22m estimated. Not survey-confirmed.",
+  "dimensions": "Mapped plan retained; outer roof18m estimated from two hall levels and Earth. Hotel-side meeting wing22m estimated. Not survey-confirmed. Covered approach depth4.5m, soffit5.4m, floor0.24m and column spacing9m are reference-informed estimates.",
   "remaining": [
-    "Entrances and accessible onward routes",
-    "Exact height fit and roof equipment placement",
-    "Adjacent Sphere bridge connection",
-    "Neutral-light close surface review"
+    "Public hall entrance doors, interior circulation and accessible onward routes remain closed; this pass verifies only the covered outdoor approach.",
+    "Exact exterior heights and roof equipment placement remain estimates: official hall clear ceilings do not establish exterior roof elevations.",
+    "Adjacent Sphere bridge still meets an opaque boundary; the outdoor arcade does not establish a continuous interior connector.",
+    "Fine facade/material fidelity and full perimeter driving remain unverified; matched neutral daylight frontage review covers this scoped pass only."
   ],
   "geometry": {
-    "triangles": 15971,
-    "batches": 11
+    "triangles": 21451,
+    "batches": 14,
+    "bytes": 341688,
+    "measurement": "Final installed optimized GLB including labels"
   },
   "tests": {
     "roofSupportSamples": 28,
     "failures": 0,
-    "roadLandscapeGroupsPreserved": 8478
+    "roadLandscapeGroupsPreserved": 8478,
+    "arcadeSupportSamples": 241,
+    "arcadeCapsuleSamples": 241,
+    "actualWalkLegs": 24,
+    "actualWalkFailures": 0
   },
-  "verification": "Typecheck passed. Final full local WebGPU verification55fps at spawn3011bodies. Final neighborhood probe no errors. No claim of street-route60fps.",
+  "verification": "Scoped covered arcade: 241support+241capsule checks,28roof checks,24actual keyboard legs passed; nine-stop local smoke0errors. Level+WebP optimized; bake current;1930assets present. Initial front performance spike did not reproduce in controlled paired repeat, p95 63.8\u219264.8ms. Area remains slow; no whole-site60fps claim.",
   "collisionFix": {
     "cause": "Building replacement left empty city collision cell3,-4; Rapier refused null raw trimesh",
     "change": "Filter cells with no indices during building-only regeneration. Removed current empty cell and updated collision revision.",
@@ -41,22 +59,35 @@
   },
   "installedReview": {
     "views": [
-      "build/city-exteriors/venetian-expo-checked/expo-north.png",
-      "build/city-exteriors/venetian-expo-checked/expo-east.png",
-      "build/city-exteriors/venetian-expo-checked/expo-entry.png"
+      "public/project-records/venetian-expo-refinement/after/expo-front.png",
+      "public/project-records/venetian-expo-refinement/after/expo-entry.png",
+      "public/project-records/venetian-expo-refinement/after/expo-north.png",
+      "public/project-records/venetian-expo-refinement/after/expo-east.png"
     ],
     "inspected": true,
+    "record": "docs/project-records/venetian-expo-refinement/review.md",
     "findings": [
-      "Curved glazed Sands frontage and loading facade replace old6m mass",
-      "Corrected fascia lettering visible",
-      "No page errors in final neighborhood probe",
-      "Meeting wing height and roof equipment remain photo-estimated",
-      "Existing Sphere bridge still meets an opaque interior boundary; onward route not implemented"
+      "Open covered ground arcade and recessed glazing replace full-height glass along mapped public frontage.",
+      "Pale columns, continuous paving and soffit inspected at walking height.",
+      "Roof, loading/service geometry and existing labels preserved.",
+      "Full public hall interiors, onward routes and Sphere connection remain unresolved."
     ]
   },
   "finalBuild": {
     "files": {
-      "build/optimized/build/strip-landmarks/venetianExpo-exterior.glb": "fdb6b6432b31eabd21a7d95aba35dffa22356d1fdf5bea87bb39113f093cad05"
+      "runtime-assets/strip-landmarks/venetianExpo-exterior.glb": "5aff3b327c811b39b6e246e6e2d1e04ad33e33722c4d47dfbd4c1b033f90bed8"
     }
+  },
+  "refinementCheckpoint": {
+    "status": "installed-scoped-pass-verified",
+    "record": "docs/project-records/venetian-expo-refinement/checkpoint.md",
+    "sourcePreservation": "docs/project-records/venetian-expo-refinement/source-preservation.json",
+    "arcadeAudit": "docs/project-records/venetian-expo-refinement/arcade-collision.json",
+    "cells": "docs/project-records/venetian-expo-refinement/cell-preservation.json",
+    "floorSamples": 241,
+    "capsuleSamples": 241,
+    "failures": 0,
+    "collisionTriangles": 1600,
+    "revision": "ebefc919222864dd"
   }
 }

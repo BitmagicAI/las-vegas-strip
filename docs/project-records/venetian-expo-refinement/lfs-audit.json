@@ -1,0 +1,88 @@
+{
+  "base": "b6fa0c3a28b7b62df0619880cad5b15fab40813b",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "0455bfc7163a5b239c96937cbee7513e01eac53fe395723eb0b6e1882158b571",
+      "bytes": 416170,
+      "path": "public/project-records/venetian-expo-refinement/after/expo-east.png"
+    },
+    {
+      "oid": "689da4b2fcb66a1d140ce13934039c52297db352878a3ac8870daf558be939fa",
+      "bytes": 407926,
+      "path": "public/project-records/venetian-expo-refinement/after/expo-entry.png"
+    },
+    {
+      "oid": "b1e14efa217fb97dbb0e88b7c33b3d30fff8e9bc4f424fe9edc2f4a3493570ba",
+      "bytes": 481936,
+      "path": "public/project-records/venetian-expo-refinement/after/expo-front.png"
+    },
+    {
+      "oid": "596cadcfb8f46c7c32708be1acf97f738a619d7cde6ad2a93e41130b322a87cf",
+      "bytes": 403303,
+      "path": "public/project-records/venetian-expo-refinement/after/expo-north.png"
+    },
+    {
+      "oid": "f534bbb12ca7c0c127a23b40b74bd84ba88abd18838a0858f11c4fdb27af2840",
+      "bytes": 415744,
+      "path": "public/project-records/venetian-expo-refinement/before/expo-east.png"
+    },
+    {
+      "oid": "31913daece9a1e43b935f2976ead74ed173f754ce84c36c78d635357a456d524",
+      "bytes": 411087,
+      "path": "public/project-records/venetian-expo-refinement/before/expo-entry.png"
+    },
+    {
+      "oid": "3cf88994bfa8e865735e7ce76aa98be4eb16af117ad7d3a20df69a4837d8e288",
+      "bytes": 481888,
+      "path": "public/project-records/venetian-expo-refinement/before/expo-front.png"
+    },
+    {
+      "oid": "b402c532e9f99f1451bbc3e8b5337691bf652064d80f2403077e5c80b998c57f",
+      "bytes": 403973,
+      "path": "public/project-records/venetian-expo-refinement/before/expo-north.png"
+    },
+    {
+      "oid": "ceed18b595b4ee42c1f5c86b23c3ae8f24cad33a5eeab56e13e81400b9ef9eea",
+      "bytes": 448466,
+      "path": "public/project-records/venetian-expo-refinement/close/expo-arcade-east.png"
+    },
+    {
+      "oid": "5503b842edf24e350818e1718d432b6a5886fd60b5a71a01a28203f43011f895",
+      "bytes": 346901,
+      "path": "public/project-records/venetian-expo-refinement/close/expo-arcade-west.png"
+    },
+    {
+      "oid": "953169866b532f496f6aa3c5ae7312944e238f9edd023a870ccedb0407071654",
+      "bytes": 467906,
+      "path": "public/project-records/venetian-expo-refinement/walk/walk-frontage-0.png"
+    },
+    {
+      "oid": "94f3fc39664edb1a9360a68ac4f5d7544592eebdc3f72255a21c9ae4faec18ac",
+      "bytes": 489749,
+      "path": "public/project-records/venetian-expo-refinement/walk/walk-return-0.png"
+    },
+    {
+      "oid": "37d4ac0e72e9f09408d9f9dcb03bc2cff31a7c05e655db987c5f5406366bb170",
+      "bytes": 1541639,
+      "path": "runtime-assets/baked/cells/cell-0_-1.bin"
+    },
+    {
+      "oid": "68a536acd96feb29ed6374791b2437d2cacdecd2d6b514829490dfa2a693644a",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "08f8a81385b6b1b7d278a7db9fbde216ec08a629cd1246ff746ad543e08559ad",
+      "bytes": 5592,
+      "path": "runtime-assets/strip-landmarks/venetianExpo-exterior-collision.bin"
+    },
+    {
+      "oid": "5aff3b327c811b39b6e246e6e2d1e04ad33e33722c4d47dfbd4c1b033f90bed8",
+      "bytes": 341688,
+      "path": "runtime-assets/strip-landmarks/venetianExpo-exterior.glb"
+    }
+  ],
+  "count": 16,
+  "bytes": 7077769
+}

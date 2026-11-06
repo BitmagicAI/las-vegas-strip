@@ -83,7 +83,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-harmon-tower` | M | P2 | 4 | Refine the exterior of Wyndham Grand Desert |
 | `ext-oyo` | M | P2 | 4 | Refine the exterior of OYO Hotel and Casino |
 | `ext-lvcc-west` | M | P2 | 4 | Refine the exterior of Las Vegas Convention Center West Hall |
-| `ext-venetian-expo` | M | P2 | 4 | Refine the exterior of Venetian Expo |
 | `ext-peppermill-retail` | M | P2 | 5 | Refine the exterior of Peppermill and neighboring Strip retail |
 | `ext-casino-royale` | M | P2 | 4 | Refine the exterior of Casino Royale Strip frontage |
 | `ext-sahara-retail` | M | P2 | 5 | Refine the exterior of Bonanza and Sahara Strip retail |
