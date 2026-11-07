@@ -17,7 +17,13 @@ def exterior(B):
   seg=p.intersection(LineString([(x0-1,z),(x1+1,z)]))
   if seg.is_empty or seg.geom_type!='LineString':continue
   a,b=list(seg.coords)[0],list(seg.coords)[-1]
-  W.path('arc-edge-paint',[(a[0],roof(a[0])+.012,a[1]),(b[0],roof(b[0])+.012,b[1])],.016,4)
+  # Original folded rib: .10m shoulder span/.028m rise inferred from Dec2022 view.
+  # Preserve pitch, roof datum and structural collision. Clip each profile strip.
+  profile=[(-.05,.002),(-.025,.028),(.025,.028),(.05,.002)]
+  for (za,ha),(zb,hb) in zip(profile,profile[1:]):
+   strip=p.intersection(box(x0-1,float(z+za),x1+1,float(z+zb)))
+   for tri in triangles(strip):
+    B.upface('arc-edge-paint',[(x,roof(x)+ha+(hb-ha)*(zz-z-za)/(zb-za),zz) for x,zz in list(tri.exterior.coords)[:-1]])
  # Two timber support lines with knee braces, continuous beams and rafters.
  for x in [x0+.6,x1-.6]:
   top=roof(x)-.2
