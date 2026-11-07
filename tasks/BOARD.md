@@ -167,7 +167,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-siegel-paradise` | M | P2 | 4 | Refine the exterior of Siegel Suites Paradise |
 | `ext-santa-paula-1807-1811` | M | P2 | 4 | Refine the exterior of Santa Paula1807/1811 apartments |
 | `ext-santa-paula-north-row` | M | P2 | 4 | Refine the exterior of Santa Paula north apartment row |
-| `ext-bellagio-arcade-pavilions` | M | P2 | 4 | Refine the exterior of Bellagio covered walkway pavilions |
 | `ext-rexford-place-west` | M | P2 | 5 | Refine the exterior of Rexford Place west houses |
 | `ext-rexford-place-east` | M | P2 | 5 | Refine the exterior of Rexford Place east houses |
 | `ext-houssels-west` | M | P2 | 4 | Refine the exterior of Houssels Avenue west homes |
@@ -179,7 +178,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-mirage-marquee` | L | P2 | 6 | Refine the exterior of Mirage historic marquee and sidewalk shelter |
 | `ext-forum-cooling-towers` | M | P2 | 5 | Refine the exterior of Forum Shops twin cooling towers |
 | `ext-paris-rooftop-bar` | M | P2 | 4 | Refine the exterior of Paris mapped rooftop pavilion |
-| `ext-bellagio-curved-roofs` | M | P2 | 3 | Refine the exterior of Bellagio curved lakefront roof volumes |
 | `ext-desert-oasis-service` | M | P2 | 4 | Refine the exterior of Desert Oasis detached service building |
 | `ext-pedestrian-lifts` | M | P2 | 5 | Refine the exterior of Harmon and Park MGM pedestrian lifts |
 | `ext-cvs-horseshoe-east` | M | P2 | 3 | Refine the exterior of CVS east service apron |
