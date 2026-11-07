@@ -1,0 +1,46 @@
+{
+  "typecheck": 0,
+  "resortRecordReviewAfterQueueCorrection": 0,
+  "publicCheck": {
+    "failures": 0,
+    "inheritedWarnings": 24
+  },
+  "cityLazyLod": 0,
+  "cityLightingResize": 0,
+  "siteLights": 0,
+  "sourceCollision": {
+    "support": 331,
+    "aisle": 146,
+    "failures": 0
+  },
+  "optimizationChangedOriginNext": {
+    "checkedBeforeAddingNewRuntimeFile": 1,
+    "notOptimized": 0
+  },
+  "assetPackCheck": {
+    "present": 1932,
+    "missing": 0,
+    "notOptimized": 0
+  },
+  "cityBakeCheck": 0,
+  "bitmagicReload": 0,
+  "pending": [],
+  "installedWalksCandidate1": {
+    "legs": 18,
+    "passed": true
+  },
+  "nineStopSmokeCandidate1": {
+    "failedRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "unplacedStops": 0
+  },
+  "finalCandidate": {
+    "localChecks": "local-checks.json:11PASS",
+    "walks": "18legsPASS; all6captures reviewed",
+    "views": "7matching daylight views reviewed",
+    "smoke": "smoke-final.json:9stopsPASS,0errors",
+    "optimization": "2changed models checked,0unoptimized; WebP included",
+    "cells": "91/92unchanged; onlycell-1_-3.bin changed"
+  }
+}

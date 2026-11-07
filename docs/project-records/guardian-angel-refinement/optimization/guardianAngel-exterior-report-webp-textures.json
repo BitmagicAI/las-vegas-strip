@@ -1,0 +1,106 @@
+{
+ "rel": "build/strip-landmarks/guardianAngel-exterior.glb",
+ "sourceSha256": "a08052dcef89d9182fd677923c1d6cb8c4fd564e84d2acbca7a8f84b48c3eb15",
+ "label": "variant webp-textures",
+ "preset": "level",
+ "overrides": [
+  "--base=webp",
+  "--emissive=webp",
+  "--orm=webp-lossless"
+ ],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.561,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/guardianAngel-exterior.glb .bitmagic/optimize/build/strip-landmarks/guardianAngel-exterior/out-webp-textures.glb --preset=level --base=webp --emissive=webp --orm=webp-lossless --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/guardianAngel-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/guardianAngel-exterior/out-webp-textures.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 4077740,
+   "triangles": 51684,
+   "vertices": 146143,
+   "nodes": 32,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 3818196,
+   "gpuTextures": 1398101,
+   "textures": [
+    {
+     "name": "Original roof",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 228903,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 1221860,
+   "triangles": 51684,
+   "vertices": 146137,
+   "nodes": 32,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 2502831,
+   "gpuTextures": 1398101,
+   "textures": [
+    {
+     "name": "Original roof",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "webp",
+     "bytes": 21152,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "EXT_texture_webp",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "32 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "1 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "2.72 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

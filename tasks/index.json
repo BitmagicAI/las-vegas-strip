@@ -5729,12 +5729,12 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
-    "Authentic Piczek mural and stained glass detail; current geometric artwork is a stand-in",
-    "Closed exterior doors only; interiors/public access not implemented",
-    "Precise surveyed elevations and facade proportions",
-    "Landscape fidelity and office/cathedral sidewalk integration",
-    "Full-site driving performance benchmark",
-    "Standard CLI verify startup detection gate failed; direct gameplay probe succeeds"
+    "Authentic Piczek mural and stained-glass detail remain deferred: photographs were used for spatial reference only; no faithful artwork reproduction or licensed texture authored.",
+    "Precise elevations and facade proportions remain estimates because no surveyed dimensions were established from the available references.",
+    "Landscape fidelity and office/cathedral sidewalk integration remain sparse; this pass confines geometry changes to the public nave and cathedral doorway.",
+    "Full-site driving and cold-streaming performance benchmarks remain deferred; the current comparison measures matching warm stationary views and actual pedestrian routes.",
+    "Historical standard CLI verify startup detection failure remains un-retested by that command; direct gameplay and nine-stop dev smoke succeed.",
+    "Public nave has inferred pew count/dimensions; sanctuary steps and balcony circulation remain unbuilt because the photographs do not establish their layout. Private offices remain closed."
    ],
    "record": "tools/resort-blocks/guardian-angel.json",
    "buildings": [
@@ -5768,7 +5768,8 @@
      "tools/resort-blocks/guardian-angel.json"
     ],
     "builders": [
-     "tools/strip-landmarks/build_guardian_angel.py"
+     "tools/strip-landmarks/build_guardian_angel.py",
+     "tools/strip-landmarks/guardian_angel_interior.py"
     ]
    },
    "acceptance": [
