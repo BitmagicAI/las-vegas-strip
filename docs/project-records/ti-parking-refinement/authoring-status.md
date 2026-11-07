@@ -1,3 +1,5 @@
+Historical source checkpoint; superseded by installed-review.md.
+
 # Authoring checkpoint
 
 Original guest entry canopy, scalloped valance, three text panels and horizontal spandrel relief authored. Guest entry facade columns cut below3.44m, upper sections retained. Scoped collision audit:40 removed/40 added triangles, every changed triangle restricted to the guest entry column bounds; all other collision triangles identical. Scoped builder rerun succeeds against pinned baseline source.
