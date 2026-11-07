@@ -1,0 +1,125 @@
+{
+ "rel": "build/strip-landmarks/bellagioCurvedRoofs-exterior.glb",
+ "sourceSha256": "116edac10b39fce92137712236e061d36b174ab47557026a85d529012d5c5986",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.337,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/bellagioCurvedRoofs-exterior.glb .bitmagic/optimize/build/strip-landmarks/bellagioCurvedRoofs-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/bellagioCurvedRoofs-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/bellagioCurvedRoofs-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 380148,
+   "triangles": 4091,
+   "vertices": 10651,
+   "nodes": 10,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 351682,
+   "gpuTextures": 2796202,
+   "textures": [
+    {
+     "name": "Original Bellagio clay tile normal",
+     "slot": "normal",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 10008,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original Bellagio clay tile albedo",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 7524,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "KHR_materials_specular"
+   ]
+  },
+  "after": {
+   "bytes": 170540,
+   "triangles": 4091,
+   "vertices": 10651,
+   "nodes": 10,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 255967,
+   "gpuTextures": 2796202,
+   "textures": [
+    {
+     "name": "Original Bellagio clay tile normal",
+     "slot": "normal",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 10008,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original Bellagio clay tile albedo",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 7524,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_materials_specular",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "10 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "4 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "204.7 KiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 2 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/3/primitives/0/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/9/primitives/0/material"
+   }
+  ]
+ }
+}

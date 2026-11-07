@@ -6,24 +6,33 @@
     "way/114719023"
   ],
   "sources": [
-    "docs/project-records/city-exteriors-2026-10-12/bellagio-curved-roofs-research.json"
+    "docs/project-records/city-exteriors-2026-10-12/bellagio-curved-roofs-research.json",
+    "docs/project-records/bellagio-lakefront-roof-refinement/research.json"
   ],
   "remaining": [
-    "Heights and concave arc estimated from map and aerial, not surveyed",
-    "Original tile maps and cornices remain a visual approximation; broad adjacent podium roof and dome need later refinement",
-    "Not whole-resort photoreal completion"
+    "Heights and concave arc remain estimated from map and aerial, not surveyed; decorative caps preserve the prior structural roof profile.",
+    "Original tile maps and cornices remain approximate: available photographs do not resolve exact profiles. Adjacent podium roof and dome need a separately scoped refinement.",
+    "No whole-resort photoreal completion or driving performance claim; evidence covers these two roofs and retained public terrace routes."
   ],
-  "triangles": 2475,
+  "triangles": 4091,
   "batches": 10,
-  "optimizedMiB": 0.1,
+  "optimizedMiB": 0.158,
   "viewsInspected": [
     "build/city-exteriors/bellagio-curved-roofs-review2/bellagio-roofs-aerial.png",
     "build/city-exteriors/bellagio-curved-roofs-review2/bellagio-roofs-north.png",
-    "build/city-exteriors/bellagio-curved-roofs-review2/bellagio-roofs-south.png"
+    "build/city-exteriors/bellagio-curved-roofs-review2/bellagio-roofs-south.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-curved-roofs-aerial.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-front-curved-roof-south.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-front-pavilion-east.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-front-pavilion-middle.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-front-pavilion-west.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-pavilions-aerial.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-rectangular-roof-north.png"
   ],
   "tests": [
     "1117 roof-support samples passed",
-    "4 bidirectional terrace-route reports passed with retained Bellagio runtime collision"
+    "4 bidirectional terrace-route reports passed with retained Bellagio runtime collision",
+    "2026-11-07: matched before/after actual keyboard walks20legs each PASS across walkway and two retained terrace routes; local-checks.json records all CPU/gate checks."
   ],
   "performance": {
     "static960x540": [
@@ -163,5 +172,18 @@
       "build/strip-landmarks/bellagioCurvedRoofs-exterior.glb": "3531e07933af6968afbb064b55b2be8473f551c0d60f359903d26c319e61aaed",
       "build/strip-landmarks/bellagioCurvedRoofs-exterior-collision.json": "52ae4d2e1c69dbc6d40aa786b096241d9eb2b9ce2f53b460309c71aa4d025df4"
     }
+  },
+  "roofRefinement": {
+    "date": "2026-11-07",
+    "record": "docs/project-records/bellagio-lakefront-roof-refinement",
+    "change": "Original segmented hip/ridge caps fitted to existing roof geometry; collisions unchanged.",
+    "installed": {
+      "bytes": 165276,
+      "indexedTriangles": 4091,
+      "sha256": "cded2cd8cf7417dc4705aecf609390c611f0b21ce0af30897facdf4bdc4882d1"
+    },
+    "performance": "docs/project-records/bellagio-lakefront-roof-refinement/performance-comparison.json",
+    "visualReview": "docs/project-records/bellagio-lakefront-roof-refinement/visual-review.md",
+    "scope": "Five mapped roof structures; not whole-resort completion."
   }
 }

@@ -1,0 +1,20 @@
+# Bellagio lakefront roof group checkpoint
+
+2026-11-07. PR536 merged as b1e617dec86439d5a670ebb382874700f3e971fb; issues200/201 explicitly closed. NYNY proof and remaining discrepancies retained. Do not replay that pass.
+
+Picker selected ext-bellagio-arcade-pavilions #176 and ext-bellagio-curved-roofs #202, both claims confirmed janiverse. Fresh branch task/ext-bellagio-lakefront-roof-refinement from current origin/next b1e617de. Read both block records and task instructions. Five nearby mapped roof structures grouped for one shared bake: arcade823658733/732/731; curvedroof114719022/023. No geometry edits or new research/captures yet.
+
+Next read README/source builders/linked research, inspect Google aerial and Street View plus official photographs, record dimensions as inferred. Establish front-first neutral matched before captures and actual keyboard walks before exports. Preserve arcade piers, retained parapets, roads and Bellagio interiors. Parapets intersect pavilion sides in legacy record; center route clear. Do not replay removal/carving. Preserve unmeasured elevations/pier placement, roof ornament/tiles, concave arc, adjacent podium/dome discrepancies. Old sunset performance is not neutral/60fps driving evidence.
+
+Use scoped build/export and optimize every changed model level+WebP before installation. One shared bake, assert unchanged cells byte-identical. GPU jobs serial; Maps closed during probes; no heavy CPU during timed views. All step7, matched performance, installed walks,9stopdevsmoke; preserve failures/repeats, release-only checks separately. Draft next, own-commit audit before each push, self-merge verified exacthead --merge, close176/202, picker. No main/CDN/publish/release/settings. Active worktree vegas-2601-westwood; dev3180/editor3181; dependency symlinks untracked; no running jobs.
+
+## 2026-11-07 continuation
+Direct Google aerials and Feb2025 roadway panoramas inspected; current official MGM/Anthony Mair exterior photo inspected. Source URLs/limits in research.json. Lakefront panorama request resolved to irrelevant2017userimage, excluded. No third-party imagery committed. Seven matched neutral before views personally inspected; p95 retained, pavilion group aerial42.2ms (no60fpsclaim). Actual3routes/20KeyWlegs passed before export; endpoint captures inspected. Missing historical routes restored from main ignored build, existing southarrivalreport retained.
+
+Original shallow segmented hip/ridge caps added to3pavilions/northernroof and curved ridge of southernroof; inferred .26mwidth/.10mnominalrise. No new vents: aerial protrusion shapes not corroborated. Existing roofs/heights/landscape/parapets/interiors retained. Scoped build3504/4091faces, both collisions byte-identical. Pair exported; both level+WebP passes completed, installed/packed/version updated. Single shared bake in progress, then asserted unrelatedLODpreservation and stage. Localchecks underway. Next finish checks/bake, reload, seven matched after views/performance, actualwalk,9stopsmoke, records/board/archive/LFSaudit, verifiedPR537merge next, close176/202,picker. No duplicate bake unless a new failure requires correction.
+
+Single bake/stage complete: 91/92cells byte-identical; onlycell--1_0 changed. Optimizer, bakecheck, assetpackcheck and reload exit0; all11initialchecks exit0 (public0failures15existingwarnings). Seven matched afterviews inspected, p95 24.6/20.3/20.0/44.9/17.9/19.6/22.3ms; allchanges<10%, no60fpsclaim. Actual20legwalk-after running; then9stopsmoke and finishrecords/PR.
+
+Actual installed20legwalk-after PASS; all6after endpoint/returncaptures inspected.9stopdevsmoke running.26own gamePNGs copied to public/project-records for PR review.
+
+Final9stopdevsmoke PASS (no request/page/console failures), finalreview/public/diffcheck PASS; public0failures15existingwarnings. Archive3856files1108.4MB. Own26gamePNGs committed; LFSaudit13,713,701bytes30objects. Ready for verifiedPR537merge next and explicit issue176/202closure, thenpicker.

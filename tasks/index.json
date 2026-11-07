@@ -10238,13 +10238,13 @@
    "area": "exteriors",
    "size": "M",
    "priority": "P2",
-   "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
+   "status": "done",
+   "summary": "Roof cap refinement verified; remaining limitations retained in block record.",
    "items": [
-    "Pavilion elevations and pier placement estimated",
-    "Retained walkway inner parapets still run through pavilion sides; center route is clear",
-    "Roof ornament and exact tile/seam proportions need refinement",
-    "Static views are about51fps, not60fps; full driving benchmark and neutral daylight not performed"
+    "Pavilion elevations and pier placement remain estimated: aerials and partially tree-obscured Street View do not establish measured vertical dimensions.",
+    "Retained walkway inner parapets still run through pavilion sides; center route is clear. Altering retained circulation geometry is outside the decorative roof pass.",
+    "Segmented hip caps added; exact tile/seam proportions and pale rooftop protrusion forms remain inferred or deferred because available references do not establish their dimensions.",
+    "Seven matched neutral daylight views measured; group aerial p95 44.9ms. Full driving benchmark remains unperformed; this roof-detail pass tests existing walking routes and makes no60fpsclaim."
    ],
    "record": "tools/resort-blocks/bellagio-arcade-pavilions.json",
    "buildings": [
@@ -11819,12 +11819,12 @@
    "area": "exteriors",
    "size": "M",
    "priority": "P2",
-   "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
+   "status": "done",
+   "summary": "Roof cap refinement verified; remaining limitations retained in block record.",
    "items": [
-    "Heights and concave arc estimated from map and aerial, not surveyed",
-    "Original tile maps and cornices remain a visual approximation; broad adjacent podium roof and dome need later refinement",
-    "Not whole-resort photoreal completion"
+    "Heights and concave arc remain estimated from map and aerial, not surveyed; decorative caps preserve the prior structural roof profile.",
+    "Original tile maps and cornices remain approximate: available photographs do not resolve exact profiles. Adjacent podium roof and dome need a separately scoped refinement.",
+    "No whole-resort photoreal completion or driving performance claim; evidence covers these two roofs and retained public terrace routes."
    ],
    "record": "tools/resort-blocks/bellagio-curved-roofs.json",
    "buildings": [

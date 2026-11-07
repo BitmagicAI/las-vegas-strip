@@ -10,26 +10,35 @@
     {
       "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11110,-115.17450&zoom=20&basemap=satellite",
       "review": "Three square hip-roof pavilions along covered arcade, tree-lined roads below. Dimensions and elevations inferred from mapped footprint and existing walkway datum."
-    }
+    },
+    "docs/project-records/bellagio-lakefront-roof-refinement/research.json"
   ],
   "remaining": [
-    "Pavilion elevations and pier placement estimated",
-    "Retained walkway inner parapets still run through pavilion sides; center route is clear",
-    "Roof ornament and exact tile/seam proportions need refinement",
-    "Static views are about51fps, not60fps; full driving benchmark and neutral daylight not performed"
+    "Pavilion elevations and pier placement remain estimated: aerials and partially tree-obscured Street View do not establish measured vertical dimensions.",
+    "Retained walkway inner parapets still run through pavilion sides; center route is clear. Altering retained circulation geometry is outside the decorative roof pass.",
+    "Segmented hip caps added; exact tile/seam proportions and pale rooftop protrusion forms remain inferred or deferred because available references do not establish their dimensions.",
+    "Seven matched neutral daylight views measured; group aerial p95 44.9ms. Full driving benchmark remains unperformed; this roof-detail pass tests existing walking routes and makes no60fpsclaim."
   ],
-  "triangles": 1968,
+  "triangles": 3468,
   "batches": 5,
-  "optimizedMiB": 0.04,
+  "optimizedMiB": 0.074,
   "metricScope": "Complete bellagioArcadePiers asset including original piers",
   "tests": [
     "294 pavilion-floor support samples PASS",
     "8 full walkway route legs in both directions PASS",
-    "45 road clearance samples under walkway PASS at4.4m"
+    "45 road clearance samples under walkway PASS at4.4m",
+    "2026-11-07: matched before/after actual keyboard walks20legs each PASS across walkway and two retained terrace routes; local-checks.json records all CPU/gate checks."
   ],
   "viewsInspected": [
     "build/city-exteriors/bellagio-pavilions-final/bellagio-bridge-south.png",
-    "build/city-exteriors/bellagio-pavilions-final/bellagio-bridge-north.png"
+    "build/city-exteriors/bellagio-pavilions-final/bellagio-bridge-north.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-curved-roofs-aerial.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-front-curved-roof-south.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-front-pavilion-east.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-front-pavilion-middle.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-front-pavilion-west.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-pavilions-aerial.png",
+    "public/project-records/bellagio-lakefront-roof-refinement/after-rectangular-roof-north.png"
   ],
   "performance": {
     "static960x540": [
@@ -86,5 +95,18 @@
       "build/strip-landmarks/bellagioArcadePiers-exterior.glb": "acdeb6df9e40325464a0169eef1547f8f8fbc7886c2e35aae5b1c8ccaad9d772",
       "build/strip-landmarks/bellagioArcadePiers-exterior-collision.json": "219c5038e0d5214285770bc493709f5eb3339b938b68e78420069f1148d8e659"
     }
+  },
+  "roofRefinement": {
+    "date": "2026-11-07",
+    "record": "docs/project-records/bellagio-lakefront-roof-refinement",
+    "change": "Original segmented hip/ridge caps fitted to existing roof geometry; collisions unchanged.",
+    "installed": {
+      "bytes": 77428,
+      "indexedTriangles": 3468,
+      "sha256": "4504b71ad9ba04a20b15d736afac67fed81e4be3d51d249e356e5befaf20794f"
+    },
+    "performance": "docs/project-records/bellagio-lakefront-roof-refinement/performance-comparison.json",
+    "visualReview": "docs/project-records/bellagio-lakefront-roof-refinement/visual-review.md",
+    "scope": "Five mapped roof structures; not whole-resort completion."
   }
 }

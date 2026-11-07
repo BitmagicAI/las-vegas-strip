@@ -1000,7 +1000,7 @@
     {
       "id": "bellagio-arcade-pavilions",
       "name": "Bellagio covered walkway pavilions",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "bellagio-arcade-pavilions.json"
     },
     {
@@ -1156,7 +1156,7 @@
     {
       "id": "nyny-irish-kiosk",
       "name": "Nine Fine Irishmen outdoor kiosk",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "nyny-irish-kiosk.json"
     },
     {
@@ -1916,5 +1916,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "nyny-irish-kiosk"
+  "active": "bellagio-arcade-pavilions"
 }
