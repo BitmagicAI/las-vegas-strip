@@ -1,0 +1,10 @@
+# Chayo terrace refinement checkpoint
+
+2026-11-07. Issue196 claimed and confirmed janiverse. Fresh task/ext-chayo-terraces-refinement from origin/next b0f51d155aae227b55fcfbc0b043f0024836808f. Previous PR533 merged and193 closed; do not replay completed marquee work. Dev3180/editor3181 in active vegas-2601-westwood. No GPU jobs or Maps tabs. Untracked dependency symlinks must stay untracked.
+
+## Next
+Read current record and source builder. Directly inspect linked aerial, Street View and official Chayo private-events rooftop/entrance photographs. Existing furniture, sloped glazing, pergola and agave are approximate. Choose a reference-supported reversible detail only after inspecting installed baseline; no model edits yet. Preserve neighboring LINQ/promenade, runtime code, roads and existing interiors. Interior stair access remains unverified and must not be claimed from disconnected upper terrace teleports.
+
+Capture front-first neutral daylight baseline cameras with matching before/after coordinates and actual keyboard routes at both terrace levels. Preserve source support/route reports and all discrepancies. Scoped build/export must avoid shared venue/replacement metadata noise. Optimize level and WebP per key, pack collision, revision bump, one shared bake. Restore only known unrelated GoldCoast/Wyndham LOD variation after asserting scope, retain unchanged cell bytes. Full step7 checks, serial aftercaptures/walks/performance and nine-stop dev smoke before merge. Use node --import ./tools/ts-register.mjs for city-lazy-lod tests; optimizer has no --help mode, read header instead.
+
+Keep unresolved neighboring walls, interior stair connection, approximate furniture/glazing/ornament and driving qualification in remaining. PR final must list every check, bytes in all new LFS objects and out-of-scope touches. Before push verify origin/next..HEAD only own commits. Merge next --merge exact head when verified, explicitly close196 then picker. Never main/CDN/publish/release/settings.
