@@ -32,6 +32,16 @@ def exterior(B):
   F.box('nik-sign-paint',(L/2,2.51,-.075),(L-.55,.43,.10))
   F.text('PINTS · FOOD · SPIRITS',(L/2,2.49,-.135),.13,'nik-gold-letter')
   F.box('nik-counter-paint',(L/2,.91,-.28),(L-.43,.10,.62),True)
+  # Official current patio gallery shows curved dark sign lights on exposed faces.
+  # Dimensions/spacing inferred; purely decorative, no runtime lights or collision.
+  if nx>.3 or nz>.3:
+   for u in np.linspace(.65,L-.65,max(2,round(L/1.8))):
+    F.box('nik-dark-paint',(u,2.85,-.19),(.11,.17,.07))
+    curve=[(u,2.85,-.22),(u,3.04,-.24),(u,3.14,-.34),
+           (u,3.15,-.47),(u,3.09,-.58),(u,3.01,-.60)]
+    F.path('nik-dark-paint',curve,.022,6)
+    F.lathe('nik-dark-paint',u,-.60,[(2.91,.145),(2.95,.13),(3.01,.055),(3.04,.035)],10)
+
   # Roofline raised square end plaques and small cap balls.
   for u in [.30,L-.30]:
    F.box('nik-edge-paint',(u,2.52,-.13),(.27,.47,.18))

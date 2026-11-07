@@ -1,0 +1,56 @@
+{
+  "reviewed": "2026-11-07",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.102005,-115.17330&heading=270&pitch=0",
+      "capture": "April 2025",
+      "pano": "FhwLSjiDzAxfC_sxe4AeAw",
+      "observed": "Green freestanding kiosk behind trees, dark gold-letter sign band; broad curved stone stairs and raised terrace. Does not measure grade."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.102005,-115.173529&zoom=21&basemap=satellite",
+      "capture": "Not exposed; copyright year is not acquisition date",
+      "observed": "Rotated rectangular green roof with dark inset center, trees and curved stairs east."
+    },
+    {
+      "url": "https://newyorknewyork.mgmresorts.com/en/restaurants/nine-fine-irishmen.html",
+      "observed": "Current official restaurant gallery and renovated patio; interior wayfinding alone does not establish elevations."
+    },
+    {
+      "url": "https://newsroom.mgmresorts.com/press-releases?item=122690",
+      "published": "2025-10-15",
+      "observed": "Patio renovation announcement postdates April panorama; expanded outdoor seating, shade and bar."
+    },
+    {
+      "url": "https://thelibrary.mgmresorts.com/transform/wiOjgDx21YF916Xx/NEW164321423.tif",
+      "capture": "Not exposed",
+      "observed": "New long bar and canopy, stools and tables; distinct from freestanding kiosk."
+    },
+    {
+      "url": "https://thelibrary.mgmresorts.com/transform/6Fs2Ewou0kT21Axp/NEW164321429.tif",
+      "capture": "Not exposed",
+      "observed": "Wide official patio photo retains green kiosk at left, partly tree-obscured. Black curved gooseneck lamps over its dark gold-letter sign band."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=dfe6vZFo4uAikp3Q5gjSmw&heading=0&pitch=15",
+      "capture": "January 2025",
+      "observed": "South arrival: flat broad pointed gold crown rays behind two rows of raised pale letters; red/gold canopy fascia, fan-inlay columns, planted NYNY lawn, open under-canopy passage. Rod-only crown representation lacks blade width."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.101591,-115.174685&zoom=21&basemap=satellite",
+      "capture": "Not exposed; copyright year is not acquisition date",
+      "observed": "Stepped square pavilion north of broad flat canopy, adjacent drive lanes and retained planter areas."
+    }
+  ],
+  "decisions": [
+    "Preserve kiosk footprint and .28m datum; grade and terrace stairs require separate reconciliation.",
+    "Candidate narrow kiosk refinement: non-emitting gooseneck sign fixtures on reference-supported faces, dimensions inferred. No new runtime lights.",
+    "Candidate arrival refinement: replace cylindrical crown rays with shallow tapered gold blade geometry using existing ray endpoints, inferred blade widths/depth. Preserve landscape and collision.",
+    "Current official patio photo corroborates kiosk retention after renovation; do not reconstruct entire pre-renovation patio from April panorama."
+  ],
+  "limits": [
+    "No exact surveyed dimensions or acquisition date for aerial/current official photos.",
+    "Public outdoor circulation only; no unsupported interior or full-resort completion claim.",
+    "Baseline views and walks precede model edits; candidate changes remain uninstalled."
+  ]
+}

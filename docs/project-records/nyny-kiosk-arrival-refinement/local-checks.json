@@ -1,0 +1,159 @@
+[
+  {
+    "command": [
+      "bitmagic",
+      "check",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-0.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-1.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/check-public.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-2.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lazy-lod.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-3.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lighting-resize.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-4.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/site-lights.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-5.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-nyny-irish-kiosk.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-6.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/stair-nyny-irish-kiosk.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-7.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-nyny-arrival.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-check-8.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/stair-nyny-arrival.mjs"
+    ],
+    "exitCode": 1,
+    "log": "/tmp/nyny-check-9.log",
+    "resolution": "Legacy test expects missing raw coaster JSON. Scoped equivalent reads installed packed coaster collision; six directions pass without changing source collision."
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tools/city-exteriors/stair-nyny-arrival-refinement.mjs"
+    ],
+    "exitCode": 0,
+    "report": "arrival-packed-stair-test.json"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-installed-check-0.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-installed-check-1.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-installed-check-2.log"
+  },
+  {
+    "command": [
+      "bitmagic",
+      "reload",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "/tmp/nyny-installed-check-3.log"
+  },
+  {
+    "check": "Final public check",
+    "result": "0 failures, 15 existing warnings"
+  },
+  {
+    "check": "Archive",
+    "result": "3846 files,1108.3MB"
+  },
+  {
+    "check": "Nine-stop dev smoke",
+    "result": "zero request/page/console/placement errors"
+  },
+  {
+    "check": "Actual installed walk",
+    "result": "14/14 legs before and after; after14captures inspected"
+  },
+  {
+    "check": "Kiosk WebP pass",
+    "result": "Completed; no texture images to transcode"
+  }
+]

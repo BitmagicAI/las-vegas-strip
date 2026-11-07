@@ -1,0 +1,24 @@
+# NYNY kiosk and arrival checkpoint
+
+2026-11-07. Issues200/201 claimed and confirmed janiverse. Fresh branch task/ext-nyny-kiosk-arrival-refinement from origin/next4899802c. Previous PR535 merged and198/172closed; do not replay service-pair checks.
+
+Two nearby NYNY structures grouped for one bake. Read linked research JSON, existing landscape record and scoped builders. Direct Google Earth/Street View plus official photographs before choosing supported refinements. Capture neutral front-first baselines and actual keyboard walks before model export. No model edits yet.
+
+Keep kiosk terrace grade/stone stair uncertainty (.28m datum), parent streetwall/ornament approximation, paving material discrepancy; preserve arrival landscape, legacy coaster/supports, roads and interiors. Exact canopy heights, sign typography and rear facade remain unresolved. Kiosk integrationAudit says third review pending despite review3 images; verify installed baseline and reconcile with evidence. Arrival stage also stale. Do not replay old removal/carving or overwrite parent NYNY assets. No whole-resort completion claim.
+
+Scoped builders/export, optimize each key level+WebP before installation, packedcollision/version, onegroupbake and byte-identical unchanged cells. Run every step7, matched six-or-more daylight views, installed keyboardroutes, matchingperformance and9stopdevsmoke. GPUjobs serial, Mapsclosed, no heavyCPU duringtiming. Preserve GoldCoast/Wyndham LOD noise only with assertions. Record decisions, every unresolveditem, release-stepchecks and allnewLFSbytes. Auditonlyowncommits beforepush; verifiedPRnext --merge exacthead,close200/201,picker. No main/CDN/publish/release/settings. Activeworktree vegas-2601-westwood;dev3180/editor3181;noactivejobs;dependency symlinks untracked.
+
+## 2026-11-07 continuation
+
+Direct April2025 kiosk panorama/current official patio gallery and January2025 arrival panorama plus both aerials inspected; references, dates and renovation conflict in research.json. Six installed neutral before views saved and personally inspected; p95 values retained in baseline-review.md. Initial seven-route/14-leg baseline passed numerically but arrival endpoints at z1610.5 face dark parent facade; retain original evidence and use shortened z1613.5 endpoints for matched repeat. Adjusted baseline walk in progress, output walk-before-adjusted.
+
+Source edits now add inferred decorative goosenecks on exposed kiosk faces and replace arrival round crown rods with tapered shallow gold blades at existing endpoints. Scoped builder completed: kiosk5840faces, arrival14115faces; both collision JSON byte-identical. New pair exporter reuses existing landscape exporter to retain imported CC0 trees. **No export, optimization, installation or shared bake yet.** Baseline remains installed. Next: finish/inspect adjusted baseline walks, run scoped pair exporter in Blender, optimize each level+WebP, install pair, pack collision/version, one shared bake with asserted unrelated LOD preservation, stage, reload, matched after capture/walk, all step7 and smoke. Review source dimensions/fixture faces visually before acceptance. Do not relabel task complete from numeric walks alone.
+
+## Installed checkpoint
+Adjusted baseline all14legs passed. Pair exported with retained foliage importer, both level and WebP optimization passed; installed, collision packed, version updated. One shared bake completed; asserted GoldCoast/Wyndham noise restored,90/92cellbins byte-identical, only -1_1/-1_2 changed. Staged5runtimefiles. Six after views personally inspected: added kiosk dark goosenecks and tapered arrival rays visible; landscape/under-canopy retained. Matching p95 in performance.json, no general speedup claim.
+
+Step7 typecheck, resort review, public check(0failures/15existingwarnings),3applicable tests, both roof support tests and kiosk CPUwalk pass. Legacy arrival CPUwalk expected missing raw coaster JSON; scoped equivalent reads installed packed coaster and passes6directions, initial failure retained in local-checks. Modeloptimization2/2pass, bakecheck and assetpackcheck pass, reloaded. Actual adjusted after walk running; smoke still pending. No model rebake needed unless visual issue found. Next finish14legwalk/inspect,9stopsmoke, finalrecords/board/archive/publiccheck, commit/LFSaudit, PR536ready/mergeexacthead,explicitclose200/201,picker.
+
+Final local verification: adjusted after walk all14legs passed and all14endpoint/return captures inspected;9stopdevsmoke passed with zero request/page/console/placement errors. Final publicreview/archive/commit/LFSaudit/push/merge remain. No active GPU jobs.
+
+All required local checks complete. Public copies of42original game captures recorded in capture-links.json (no third-party screenshots). LFS audit35,983,008bytes/46objects. PR536 final description prepared; only own commits confirmed after fetch. Pending push/ready/exact-head merge,explicitissueclose,picker.

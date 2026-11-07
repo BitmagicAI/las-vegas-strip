@@ -1144,7 +1144,7 @@
     {
       "id": "akita-rear-canopy",
       "name": "Akita rear parking canopy",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "akita-rear-canopy.json"
     },
     {
@@ -1156,7 +1156,7 @@
     {
       "id": "nyny-irish-kiosk",
       "name": "Nine Fine Irishmen outdoor kiosk",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "nyny-irish-kiosk.json"
     },
     {
@@ -1916,5 +1916,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "akita-rear-canopy"
+  "active": "nyny-irish-kiosk"
 }

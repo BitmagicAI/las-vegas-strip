@@ -1,0 +1,9 @@
+{
+  "totalCells": 92,
+  "changedBins": [
+    "runtime-assets/baked/cells/cell--1_1.bin",
+    "runtime-assets/baked/cells/cell--1_2.bin"
+  ],
+  "unchangedBins": 90,
+  "method": "git diff against branch baseline; unchanged tracked binary contents identical; LOD audit asserts all changed blocks owned or explicitly restored."
+}
