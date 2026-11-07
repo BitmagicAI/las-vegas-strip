@@ -9,3 +9,5 @@ Sphere owner sphereGarage covers way/111339081 and service building way/10015609
 NEXT read both sourcebuilders and applicableAGENTS; research current GoogleEarth/StreetView and official photos, recordlinks/inferred dimensions; capture front-first matching neutralbeforeviews and actualroute/performance baselines. Select reversible reference-supported refinements for grouped3buildings; optimizeeverychangedmodel includingWebP, installallbefore onegroupbake, packmetadata and snapshotfreshbasecells. Keepunchangedcells byte-identical. Runallstep7checks,smoke andactualwalk/drive proofs. PRtargetsnext,selfmergeverified--merge exacthead,explicitlyclosebothissues thenpicker. Never main/CDN/publish/release/settings. Neverpoll releasedblockers117/118/203.
 
 Dev3180/editor3181 anddependency symlinks retained. No activeGPUjob or ownedresearchtab. Journal records previous pass. Do not replay Guardian Angel setup or probes.
+
+Draft PR545 targets next: https://github.com/BitmagicAI/las-vegas-strip/pull/545 . Both issue76 and79 assignments confirmed janiverse. Claims are owned; proceed from research/baseline stage without re-claiming.
