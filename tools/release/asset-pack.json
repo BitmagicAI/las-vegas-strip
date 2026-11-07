@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233182482,
+ "bytes": 1233400242,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -276,8 +276,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-2.bin",
-   "bytes": 715612,
-   "sha256": "a9d82cd59760bb022792efa4a552a050a43fc7d223f13d12029436cf711dcf32",
+   "bytes": 716696,
+   "sha256": "5a2d8b9101dd2b3dc71c045283bd9b0a32c1555a3de5e01c73d1686aee85626a",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "49b2ad2a181840f6601539ebf6f33d00f35d440366b4dd6b3d79140d18eed932",
+   "sha256": "b4b3a263b9020cf8778f5860304b84e506f78d2886f4dbb06f8a5acfd7504fb7",
    "kind": "runtime cell manifest"
   },
   {
@@ -8226,8 +8226,8 @@
   },
   {
    "path": "build/strip-landmarks/encoreSuitesCanopy-exterior.glb",
-   "bytes": 173156,
-   "sha256": "1e30df56b6ba32a12008b309ada08490b47af1ef9287b4064f68568704ff5245",
+   "bytes": 381028,
+   "sha256": "6a22df5446cb5812522a5d314db515fd3fc21fc6acaea59d0193affb5bc1c202",
    "kind": "optimized"
   },
   {
@@ -11556,8 +11556,8 @@
   },
   {
    "path": "build/strip-landmarks/wynnPlazaCanopy-exterior.glb",
-   "bytes": 24604,
-   "sha256": "4d6a4f6ab89e77b4b170bb9fdcb57525130e6767218a7ed22639ac7ad2230466",
+   "bytes": 33408,
+   "sha256": "a332b3b150b90c2eec66d1665739abbe529b20c1cb1bbb364a95f2d9a0fa13fb",
    "kind": "optimized"
   },
   {

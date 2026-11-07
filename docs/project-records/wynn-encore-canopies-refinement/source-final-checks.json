@@ -1,0 +1,34 @@
+[
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-encore-tower-suites-canopy.mjs"
+    ],
+    "exitCode": 0,
+    "output": "{\"samples\":226,\"failures\":[],\"passed\":true}\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/stair-encore-tower-suites-canopy.mjs"
+    ],
+    "exitCode": 0,
+    "output": "[\n  {\n    \"building\": 0,\n    \"direction\": 1,\n    \"legs\": [\n      {\n        \"goal\": [\n          720,\n          0.2,\n          -1542\n        ],\n        \"frames\": 64,\n        \"position\": {\n          \"x\": 720.0588989257812,\n          \"y\": 1.120079517364502,\n          \"z\": -1541.941162109375\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          717,\n          0.2,\n          -1544\n        ],\n        \"frames\": 56,\n        \"position\": {\n          \"x\": 717.0398559570312,\n          \"y\": 1.109991192817688,\n          \"z\": -1543.97314453125\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 0,\n    \"direction\": -1,\n    \"legs\": [\n      {\n        \"goal\": [\n          720,\n          0.2,\n          -1542\n        ],\n        \"frames\": 55,\n        \"position\": {\n          \"x\": 719.9722900390625,\n          \"y\": 1.1201980113983154,\n          \"z\": -1542.0184326171875\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          723,\n          0.2,\n          -1539\n        ],\n        \"frames\": 66,\n        \"position\": {\n          \"x\": 722.972900390625,\n          \"y\": 1.109939455986023,\n          \"z\": -1539.02685546875\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 1,\n    \"direction\": 1,\n    \"legs\": [\n      {\n        \"goal\": [\n          716,\n          0.2,\n          -1537\n        ],\n        \"frames\": 57,\n        \"position\": {\n          \"x\": 715.9650268554688,\n          \"y\": 1.1202459335327148,\n          \"z\": -1536.947509765625\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          719,\n          0.2,\n          -1540\n        ],\n        \"frames\": 66,\n        \"position\": {\n          \"x\": 718.9520874023438,\n          \"y\": 1.120010495185852,\n          \"z\": -1539.9515380859375\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 1,\n    \"direction\": -1,\n    \"legs\": [\n      {\n        \"goal\": [\n          716,\n          0.2,\n          -1537\n        ],\n        \"frames\": 67,\n        \"position\": {\n          \"x\": 716.0430908203125,\n          \"y\": 1.1201673746109009,\n          \"z\": -1537.0430908203125\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          714,\n          0.2,\n          -1534\n        ],\n        \"frames\": 56,\n        \"position\": {\n          \"x\": 714.014404296875,\n          \"y\": 1.1100000143051147,\n          \"z\": -1534.021484375\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  }\n]\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-wynn-plaza-canopy.mjs"
+    ],
+    "exitCode": 0,
+    "output": "{\"samples\":351,\"failures\":[],\"passed\":true}\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/stair-wynn-plaza-canopy.mjs"
+    ],
+    "exitCode": 0,
+    "output": "[\n  {\n    \"building\": 0,\n    \"direction\": 1,\n    \"legs\": [\n      {\n        \"goal\": [\n          595,\n          0.2,\n          -1265\n        ],\n        \"frames\": 62,\n        \"position\": {\n          \"x\": 594.9983520507812,\n          \"y\": 1.119512915611267,\n          \"z\": -1264.91748046875\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          595,\n          0.2,\n          -1270\n        ],\n        \"frames\": 78,\n        \"position\": {\n          \"x\": 595.0000610351562,\n          \"y\": 1.1202057600021362,\n          \"z\": -1269.9312744140625\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          596,\n          0.2,\n          -1275\n        ],\n        \"frames\": 80,\n        \"position\": {\n          \"x\": 595.9849243164062,\n          \"y\": 1.119974970817566,\n          \"z\": -1274.9237060546875\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 0,\n    \"direction\": -1,\n    \"legs\": [\n      {\n        \"goal\": [\n          595,\n          0.2,\n          -1270\n        ],\n        \"frames\": 81,\n        \"position\": {\n          \"x\": 595.010009765625,\n          \"y\": 1.1206432580947876,\n          \"z\": -1270.0498046875\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          595,\n          0.2,\n          -1265\n        ],\n        \"frames\": 77,\n        \"position\": {\n          \"x\": 595,\n          \"y\": 1.1204712390899658,\n          \"z\": -1265.0438232421875\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          595,\n          0.2,\n          -1261\n        ],\n        \"frames\": 63,\n        \"position\": {\n          \"x\": 594.9999389648438,\n          \"y\": 1.1201894283294678,\n          \"z\": -1261.0579833984375\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 1,\n    \"direction\": 1,\n    \"legs\": [\n      {\n        \"goal\": [\n          593,\n          0.2,\n          -1266\n        ],\n        \"frames\": 48,\n        \"position\": {\n          \"x\": 592.9360961914062,\n          \"y\": 1.1100000143051147,\n          \"z\": -1266\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          595,\n          0.2,\n          -1266\n        ],\n        \"frames\": 31,\n        \"position\": {\n          \"x\": 594.9512939453125,\n          \"y\": 1.120143175125122,\n          \"z\": -1266\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  },\n  {\n    \"building\": 1,\n    \"direction\": -1,\n    \"legs\": [\n      {\n        \"goal\": [\n          593,\n          0.2,\n          -1266\n        ],\n        \"frames\": 31,\n        \"position\": {\n          \"x\": 593.0302124023438,\n          \"y\": 1.1200000047683716,\n          \"z\": -1266\n        },\n        \"reached\": true\n      },\n      {\n        \"goal\": [\n          590,\n          0.2,\n          -1266\n        ],\n        \"frames\": 47,\n        \"position\": {\n          \"x\": 590.0310668945312,\n          \"y\": 1.1200000047683716,\n          \"z\": -1266\n        },\n        \"reached\": true\n      }\n    ],\n    \"passed\": true\n  }\n]\n"
+  }
+]
