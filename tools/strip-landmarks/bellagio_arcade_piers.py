@@ -28,6 +28,9 @@ def exterior(B):
   # Raised hip roof covers the old corridor gable, without coplanar exterior faces.
   for a,c in zip(list(outer.exterior.coords),list(outer.exterior.coords)[1:]):
    B.upface('bap-roof-terracotta',[(a[0],10.5,a[1]),(c[0],10.5,c[1]),(cx,13.2,cz)])
+  # Aerial-visible hip cap seams; dimensions inferred, existing roof retained.
+  from bellagio_roof_caps import caps
+  for x,z in list(outer.exterior.coords)[:-1]:caps(B,'bap-roof-terracotta',[(x,10.5,z),(cx,13.2,cz)])
   # Down-facing soffit outside retained corridor.
   for q in parts(p.difference(walkpoly)):
    for t in triangles(q):

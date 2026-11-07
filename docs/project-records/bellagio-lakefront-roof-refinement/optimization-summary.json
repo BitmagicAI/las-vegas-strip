@@ -1,0 +1,13 @@
+{
+  "bellagioArcadePiers": {
+    "level": "passed; report retained",
+    "webpTextures": "pass invoked; skipped because model has zero embedded textures; runtime world-space tile detail retained"
+  },
+  "bellagioCurvedRoofs": {
+    "level": "passed",
+    "webpTextures": "passed; report retained"
+  },
+  "gate": "check-runtime-glbs --changed origin/next exit0",
+  "collision": "Both raw collision JSON files byte-identical across scoped build; packed collision has no diff",
+  "sharedBake": "One bake; 91 of92 cells byte-identical; cell--1_0.bin changed; unrelated GoldCoast/Wyndham LOD blocks restored with assertions"
+}

@@ -1,0 +1,50 @@
+{
+  "reviewed": "2026-11-07",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11110,-115.17450&zoom=20&basemap=satellite",
+      "observed": "Three square hip-roof pavilions interrupt long narrow tiled covered walkway. Four small pale roof protrusions visible on each pavilion; hip seams visible. Trees obscure lower supports. Acquisition date not exposed; copyright2026 not capture date."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.11120,-115.17445&heading=210&pitch=15",
+      "pano": "NZSRj1FLZRWtdt9yVbykzw",
+      "capture": "February2025",
+      "observed": "Open elevated walkway and pale piers partly visible behind dense trees; roof details obscured. Not a height measurement."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.11085,-115.17385&heading=285&pitch=15",
+      "pano": "UDhGJ-NtjLO6qW-FxxK8Kg",
+      "capture": "February2025",
+      "observed": "Eastern approach: pale pavilion/corridor with balustrades and glazed/arced end, largely tree-obscured. No precise roof-vent dimensions established."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11350,-115.17522&zoom=21&basemap=satellite",
+      "observed": "Southern concave tiled roof with visible radial hip seams and curving ridge; two pale small fixtures on eastern slope. Adjacent dome and flat service roof separate. Acquisition date not exposed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11366,-115.17525&zoom=21&basemap=satellite",
+      "observed": "Northern rectangular hip roof has four diagonal hip seams meeting short north/south ridge and dark rectangular framed rooflight on western slope. Acquisition date not exposed."
+    },
+    {
+      "url": "https://bellagio.mgmresorts.com/en/entertainment/fountains-of-bellagio.html",
+      "image": "https://thelibrary.mgmresorts.com/transform/cPg5C4YqJj35/Bellagio-Exterior-Cooler---Anthony-Mair",
+      "author": "Anthony Mair / MGM Resorts",
+      "observed": "Official dusk full-resort photo personally inspected; confirms tiled lakefront roofs/pale cornices, but fountains/trees obscure target roof details. Undated; not a dimensional source."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.11354,-115.17360&heading=270&pitch=10",
+      "pano": "CIHM0ogKEICAgIC4kvu_eQ",
+      "capture": "June2017 user panorama, Devakinandan Verma",
+      "observed": "Request resolved to obstructed nighttime user panorama, no target roof evidence; excluded from geometry decisions."
+    }
+  ],
+  "candidateScope": [
+    "Pavilion raised hip cap seams and small pale roof fixtures, all original geometry with inferred dimensions.",
+    "Northern roof hip/ridge cap seams; southern curved ridge/seam refinement fitted to existing roof profile. Preserve footprints, heights, roof collision and underlying podium."
+  ],
+  "limits": [
+    "Exact vent shapes require closer corroboration; do not invent elaborate dormer glazing from tiny aerial marks.",
+    "Unmeasured elevations, retained walkway inner parapets, adjacent dome/podium and full-resort fidelity remain unresolved.",
+    "No new supported public interior identified by these references."
+  ]
+}

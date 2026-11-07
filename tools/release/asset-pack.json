@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233452544,
+ "bytes": 1233554526,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -78,8 +78,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_0.bin",
-   "bytes": 1790012,
-   "sha256": "037b44ef443c5b074551053a9d46c1e55992c4de93dab0bacf167a9e7e2c8e68",
+   "bytes": 1790606,
+   "sha256": "f222e66c64d7da20c1fcad40a2684d6f2c004046ca7992b92d12f6021dc1da7b",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "4e4e35a4eec34d80f8a6901995bbc50803bb124502311c2c192a2c3d426d51a8",
+   "sha256": "e32f9295c352ef9b250bfad625738c218d27bc9961d09e3cb254d89dea249fba",
    "kind": "runtime cell manifest"
   },
   {
@@ -7446,8 +7446,8 @@
   },
   {
    "path": "build/strip-landmarks/bellagioArcadePiers-exterior.glb",
-   "bytes": 39672,
-   "sha256": "d2ad08fb3cbc1a9a0fa7ab973c52aefa6c6559dd68d99b7226584c0080b822c2",
+   "bytes": 77428,
+   "sha256": "4504b71ad9ba04a20b15d736afac67fed81e4be3d51d249e356e5befaf20794f",
    "kind": "optimized"
   },
   {
@@ -7458,8 +7458,8 @@
   },
   {
    "path": "build/strip-landmarks/bellagioCurvedRoofs-exterior.glb",
-   "bytes": 101644,
-   "sha256": "03a1ce849afcb89ce56171f96c25f9d3245322e5e08262318da8adebc6b4ef14",
+   "bytes": 165276,
+   "sha256": "cded2cd8cf7417dc4705aecf609390c611f0b21ce0af30897facdf4bdc4882d1",
    "kind": "optimized"
   },
   {

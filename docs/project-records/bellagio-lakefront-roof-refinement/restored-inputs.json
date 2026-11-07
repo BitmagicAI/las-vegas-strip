@@ -1,0 +1,17 @@
+[
+  {
+    "path": "build/resort-blocks/bellagio/routes.json",
+    "sha256": "392969bb7a3e2d3bfd336e3e8434215d26221b4d7025428361fa81835210f17a",
+    "source": "retained existing file"
+  },
+  {
+    "path": "build/resort-blocks/bellagio/south-arrival-report.json",
+    "sha256": "e10e92a39f91bbf516fd97dc8b8ba3801099f5517c29d1f4923932b955384145",
+    "source": "retained existing file"
+  },
+  {
+    "path": "build/city-exteriors/bellagio-pavilion-stairs.json",
+    "sha256": "b0ab9ff5fc2d8bd9b623ad6e6fdfacf37145ccf16e41780a809c64b8b7a2dbcf",
+    "source": "existing main checkout ignored build input"
+  }
+]
