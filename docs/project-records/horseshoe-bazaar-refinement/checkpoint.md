@@ -19,3 +19,5 @@ Three matching after daylight views and four actual movement legs PASS and perso
 Optimize every changed model with level and WebP passes before installation; one group pack/bake, unchanged city cells byte-identical. All step7 local checks, dev9stop smoke, actual after walks and identical daylight/performance required before ready/merge. Record every check/result/new LFS bytes/out-of-scope touch in PR. Before push fetch next and verify only own commits. Selfmerge exact verified head with --merge, explicitly close61 then picker. Do not poll released117/118/203. Dev3180/editor3181 retained. No CDN/main/publication/release/settings actions.
 
 Validation note: direct node --check reports illegal top-level return because these files are async function bodies consumed by probe-eval, not standalone modules. Correct AsyncFunction parsing PASS for both; both also executed successfully in the installed game. No runtime source/model changed.
+
+Final LFS audit:11,377,198bytes/23unique objects absent from origin/next, across all own commits including proof images. Final task status remains refinement-deferred; all local verification passed, exact-head merge pending.
