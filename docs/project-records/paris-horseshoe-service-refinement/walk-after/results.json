@@ -1,0 +1,257 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Paris pavilion 0",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            38.5,
+            6.64,
+            425
+          ],
+          "position": {
+            "x": 38.49906921386719,
+            "y": 6.670619277954102,
+            "z": 424.9300842285156
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            38.5,
+            6.64,
+            418
+          ],
+          "position": {
+            "x": 38.49921417236328,
+            "y": 6.670623092651367,
+            "z": 418.08935546875
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Paris pavilion 1",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            43.974,
+            6.64,
+            425
+          ],
+          "position": {
+            "x": 43.973514556884766,
+            "y": 6.670612602233887,
+            "z": 424.93939208984375
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            43.974,
+            6.64,
+            417.5
+          ],
+          "position": {
+            "x": 43.97393798828125,
+            "y": 6.670599250793457,
+            "z": 417.5851135253906
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "CVS apron 0",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            118,
+            0.18,
+            305
+          ],
+          "position": {
+            "x": 117.99849700927734,
+            "y": 0.19792380809783933,
+            "z": 304.768310546875
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            118,
+            0.18,
+            315
+          ],
+          "position": {
+            "x": 118.00049591064453,
+            "y": 0.19968750953674314,
+            "z": 314.9168395996094
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "CVS apron 1",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            75,
+            0.18,
+            278
+          ],
+          "position": {
+            "x": 74.99913787841797,
+            "y": 0.19958355903625485,
+            "z": 277.8388366699219
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            75,
+            0.18,
+            315
+          ],
+          "position": {
+            "x": 75.0000228881836,
+            "y": 0.19962087154388425,
+            "z": 314.9384460449219
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "CVS apron 2",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            75,
+            0.18,
+            307
+          ],
+          "position": {
+            "x": 74.99808502197266,
+            "y": 0.20964863777160642,
+            "z": 307.3054504394531
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            75,
+            0.18,
+            278
+          ],
+          "position": {
+            "x": 75.00059509277344,
+            "y": 0.19968750953674314,
+            "z": 278.0826416015625
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "CVS apron 3",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            163,
+            0.18,
+            305
+          ],
+          "position": {
+            "x": 163.14739990234375,
+            "y": 0.1995759296417236,
+            "z": 305.00018310546875
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            75,
+            0.18,
+            305
+          ],
+          "position": {
+            "x": 75.0631103515625,
+            "y": 0.19961646080017087,
+            "z": 304.9997863769531
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "CVS apron 4",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            150,
+            0.18,
+            274
+          ],
+          "position": {
+            "x": 150.139892578125,
+            "y": 0.19968750953674314,
+            "z": 274
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            95,
+            0.18,
+            274
+          ],
+          "position": {
+            "x": 95.08161163330078,
+            "y": 0.19968750953674314,
+            "z": 274.0002746582031
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [
+      "parisDining",
+      "parisBlock"
+    ],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 47
+  }
+}

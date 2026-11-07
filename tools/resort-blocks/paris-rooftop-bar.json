@@ -11,7 +11,7 @@
   "remaining": [
     "Exact use of mapped small roof remains uncertain; no speculative venue branding.",
     "Mapped plan, roof height and retained6.64m terrace datum remain estimated; available references do not establish measured elevations.",
-    "Existing Ch\u00e9ri-inspired panels/counter/shelves retained with new footrail/pendant frames; exact mapped pavilion identity and larger terrace vegetation/layout remain unverified by the available views.",
+    "Existing Chéri-inspired panels/counter/shelves retained with new footrail/pendant frames; exact mapped pavilion identity and larger terrace vegetation/layout remain unverified by the available views.",
     "Matched neutral daylight measured in this pass; initial counter p95 spike23.9ms repeated21.8ms against21.1ms before. Full driving benchmark remains unperformed; static views are not60fps validation."
   ],
   "triangles": 9546,
@@ -109,7 +109,7 @@
     "record": "docs/project-records/paris-horseshoe-service-refinement",
     "change": "Original brass footrail and two dark pendant frames fitted to the existing generic bar; no runtime lights or collision changes.",
     "inferredDimensions": "Footrail radius.035m at.24m above terrace; pendant frames.54m wide, bottom2.38m above terrace. Reference supports form/palette, not measured proportions.",
-    "status": "installed-verification-pending",
+    "status": "installed-verified",
     "installed": {
       "bytes": 192916,
       "indexedTriangles": 9546,
@@ -117,6 +117,8 @@
     },
     "collision": "Raw collision JSON byte-identical; packed collision unchanged",
     "performance": "docs/project-records/paris-horseshoe-service-refinement/performance-comparison.json",
-    "review": "docs/project-records/paris-horseshoe-service-refinement/visual-review.md"
+    "review": "docs/project-records/paris-horseshoe-service-refinement/visual-review.md",
+    "walk": "14 before and 14 after actual keyboard legs passed; endpoint/corridor limitations retained in visual-review.md",
+    "smoke": "Nine stops passed; zero failed requests/page errors/console errors/unplaced stops"
   }
 }

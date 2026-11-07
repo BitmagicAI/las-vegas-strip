@@ -53,7 +53,7 @@
     "change": "South-facing decorative shop glazing replaced by gray loading shutters/service-door overlays and unlit wall fixtures; existing wall and apron collision retained.",
     "reference": "December2022 Google Street View KVmIEbJ9iIjhBIjCxcUwJQ; dated before tower construction, not exact current east-facade evidence.",
     "inferredDimensions": "Two shutters up to3m wide/2.7m high; two1.05m service doors; fixture.42m wide. Positions estimated as fractions of the existing south edge.",
-    "status": "installed-verification-pending",
+    "status": "installed-verified",
     "installed": {
       "bytes": 404704,
       "indexedTriangles": 34356,
@@ -62,6 +62,8 @@
     "collision": "Raw collision JSON byte-identical; packed collision unchanged",
     "performance": "docs/project-records/paris-horseshoe-service-refinement/performance-comparison.json",
     "review": "docs/project-records/paris-horseshoe-service-refinement/visual-review.md",
-    "scopeExtension": "Adjacent south-facing shop service elevation corrected from dated reference; parent hotel geometry unchanged."
+    "scopeExtension": "Adjacent south-facing shop service elevation corrected from dated reference; parent hotel geometry unchanged.",
+    "walk": "14 before and 14 after actual keyboard legs passed; endpoint/corridor limitations retained in visual-review.md",
+    "smoke": "Nine stops passed; zero failed requests/page errors/console errors/unplaced stops"
   }
 }
