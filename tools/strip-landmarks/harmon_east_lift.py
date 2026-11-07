@@ -45,26 +45,32 @@ def exterior(B):
  slab(B,p,9.91,10.08,'hel-cap-paint')
  # Fine panel joints follow each actual wall, avoiding both door cutouts.
  for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
-  G,L,_,_=facade_frame(B,a,b,p,-.008);G.y=0
-  for y in np.arange(.25,10,1.18):
-   segment=LineString([G.p(0,0,0)[::2],G.p(L,0,0)[::2]])
-   masks=unary_union([Point(o['p'][0],o['p'][2]).buffer(.72) for o in openings if o['p'][1]-.16<y<o['p'][1]+2.45])
-   for piece in parts_line(segment.difference(masks)):
-    aa,bb=list(piece.coords)[0],list(piece.coords)[-1];B.tube('hel-joint-paint',(aa[0],float(y),aa[1]),(bb[0],float(y),bb[1]),.008,4)
-  for u in np.arange(1.1,L,1.1):
-   q=G.p(float(u),0,0)
-   for low,high in [(0,10.02)]:
-    cuts=[(low,high)]
-    for o in openings:
-     if math.hypot(q[0]-o['p'][0],q[2]-o['p'][2])<.72:
-      cuts=[v for aa,bb in cuts for v in [(aa,min(bb,o['p'][1]-.16)),(max(aa,o['p'][1]+2.45),bb)] if v[1]>v[0]]
-    for aa,bb in cuts:G.box('hel-joint-paint',(float(u),(aa+bb)/2,0),(.012,bb-aa,.018))
+  # Keep the inner grid visible in the cabin; expose a second grid outside.
+  for seamOffset in [-.008,.012]:
+   G,L,_,_=facade_frame(B,a,b,p,seamOffset);G.y=0
+   for y in np.arange(.25,10,1.18):
+    segment=LineString([G.p(0,0,0)[::2],G.p(L,0,0)[::2]])
+    masks=unary_union([Point(o['p'][0],o['p'][2]).buffer(.72) for o in openings if o['p'][1]-.16<y<o['p'][1]+2.45])
+    for piece in parts_line(segment.difference(masks)):
+     aa,bb=list(piece.coords)[0],list(piece.coords)[-1];B.tube('hel-joint-paint',(aa[0],float(y),aa[1]),(bb[0],float(y),bb[1]),.008,4)
+   for u in np.arange(1.1,L,1.1):
+    q=G.p(float(u),0,0)
+    for low,high in [(0,10.02)]:
+     cuts=[(low,high)]
+     for o in openings:
+      if math.hypot(q[0]-o['p'][0],q[2]-o['p'][2])<.72:
+       cuts=[v for aa,bb in cuts for v in [(aa,min(bb,o['p'][1]-.16)),(max(aa,o['p'][1]+2.45),bb)] if v[1]>v[0]]
+     for aa,bb in cuts:G.box('hel-joint-paint',(float(u),(aa+bb)/2,0),(.012,bb-aa,.018))
  # Door surrounds, recessed headers, sills and upper vent.
  for u,y,_ in [(-.43,H,''),(1.02,D,'')]:
   for s in [-1,1]:F.box('hel-metal-paint',(u+s*.66,y+1.18,-2.045),(.10,2.46,.16))
   F.box('hel-metal-paint',(u,y+2.41,-2.045),(1.42,.14,.16))
   F.box('hel-metal-paint',(u,y+.012,-2.06),(1.42,.025,.25))
   F.box('hel-dark-paint',(u,y+2.64,-2.036),(.5,.12,.025))
+  if y>1:
+   # April2025 upper landing call plate, visual only; runtime lift remains unchanged.
+   F.box('hel-metal-paint',(u-.87,y+1.12,-2.055),(.13,.34,.035))
+   F.box('hel-dark-paint',(u-.87,y+1.17,-2.08),(.055,.055,.012))
  F.box('hel-dark-paint',(0,9.35,-2.02),(1.55,.32,.04))
  for y in [9.25,9.33,9.41]:F.box('hel-metal-paint',(0,y,-2.055),(1.53,.025,.04))
  F.box('hel-sign-paint',(-1.7,8.8,-2.38),(.08,.42,.85))
