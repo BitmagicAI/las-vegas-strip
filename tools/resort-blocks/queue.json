@@ -5,17 +5,17 @@
     {
       "id": "cosmopolitan",
       "name": "The Cosmopolitan",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "cosmopolitan.json",
       "deferral": {
-        "date": "2026-10-05",
-        "reason": "Creator requested advancing to Bellagio, with a separate polishing/refinement pass later."
+        "date": "2026-11-07",
+        "reason": "PR548 verified bounded pool-lounger palette pass; all full-resort geometry/layout/circulation discrepancies retained. Continue owner-requested city refinement."
       }
     },
     {
       "id": "bellagio",
       "name": "Bellagio",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "bellagio.json",
       "deferral": {
         "date": "2026-10-05",
@@ -1928,5 +1928,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "cosmopolitan"
+  "active": "bellagio"
 }
