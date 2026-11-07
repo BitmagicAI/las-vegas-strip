@@ -1,0 +1,11 @@
+# Active Sphere / Venetian employee garages refinement
+
+Guardian Angel PR544 merged2774a6c39d66b0766d783775abc2412adfec05dd into next; issue93 explicitly closed. Final11localchecks,9smokestops,18physicalwalklegs,7matchingdaylightviews passed. All6walkcaptures reviewed; lowglazinggaps/entrytympanum corrected.91/92cells unchanged;11977037newLFSbytes42objects including intermediate evidence. No photorealistic/wholeblock claim. Notification delivered at this heartbeat completion; do not repeat.
+
+Picker selected nearby ext-sphere-garage#76 and ext-venetian-employee-garage#79, three mapped buildings total. /claim posted on both; verify assignment before model edits. Fresh branch task/ext-sphere-venetian-garages-refinement from origin/next2774a6c3, active worktree vegas-2601-westwood. Existing records read. No new research, captures or model edits for this group yet.
+
+Sphere owner sphereGarage covers way/111339081 and service building way/1001560970. Existing25m garage estimate,7deck intervals and13.5m servicebuilding; remaining exactramps/stairaccess and facade/servicecourtdetail. Venetian owner venetianEmployeeGarage covers way/111367849;42m estimate/~14deck intervals, remaining measuredheight/count and private ramp/roof details. Preserve roofs/decks, optimizedcode, roads and other sessions. Do not invent private circulation without reference support.
+
+NEXT read both sourcebuilders and applicableAGENTS; research current GoogleEarth/StreetView and official photos, recordlinks/inferred dimensions; capture front-first matching neutralbeforeviews and actualroute/performance baselines. Select reversible reference-supported refinements for grouped3buildings; optimizeeverychangedmodel includingWebP, installallbefore onegroupbake, packmetadata and snapshotfreshbasecells. Keepunchangedcells byte-identical. Runallstep7checks,smoke andactualwalk/drive proofs. PRtargetsnext,selfmergeverified--merge exacthead,explicitlyclosebothissues thenpicker. Never main/CDN/publish/release/settings. Neverpoll releasedblockers117/118/203.
+
+Dev3180/editor3181 anddependency symlinks retained. No activeGPUjob or ownedresearchtab. Journal records previous pass. Do not replay Guardian Angel setup or probes.

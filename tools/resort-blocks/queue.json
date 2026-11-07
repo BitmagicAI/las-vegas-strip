@@ -417,7 +417,7 @@
     {
       "id": "sphere-garage",
       "name": "Wynn employee garage beside Sphere",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "sphere-garage.json"
     },
     {
@@ -1928,5 +1928,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "guardian-angel"
+  "active": "sphere-garage"
 }
