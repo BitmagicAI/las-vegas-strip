@@ -1,4 +1,4 @@
-"""October 2026 construction exterior, from dated owner/engineer photography.
+"""Construction exterior: October structure with November 2026 equipment study.
 
 Mapped outline bounds the work; bowl section and arch positions are photographic
 estimates. No finished 2028 shell, glazing, seats or field are invented.
@@ -14,6 +14,44 @@ def beam(B,mat,a,b,width=.35,depth=.7):
  for lo,hi,w in [(-depth/2,-depth/2+.08,width),(depth/2-.08,depth/2,width),(-depth/2+.08,depth/2-.08,.08)]:
   vs=[tuple(p+u*x+v*y) for p in [a,b] for x,y in [(-w/2,lo),(w/2,lo),(w/2,hi),(-w/2,hi)]]
   for f in [(0,3,2,1),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)]:B.face(mat,[vs[i] for i in f])
+
+def construction_crane(B,F,x,z,reach,height):
+ """Original static crawler crane; inferred proportions, no branded mesh reuse.
+
+ Positioned between existing arch planes, inside the nonpublic field. This is a
+ reversible November snapshot, not a surveyed equipment layout or moving crane.
+ """
+ B.source='stadium-construction-equipment'
+ C=Frame(B,*[F.p(x,0,z)[i] for i in [0,2]],F.yaw,y=.08)
+ red='stadium-crane-red-paint';dark='stadium-equipment-dark-paint'
+ for side in [-1,1]:
+  C.box(dark,(0,.65,side*2.5),(9,1.3,1.3))
+  for xx in np.linspace(-4,4,17):C.box('stadium-steel',(xx,1.34,side*2.5),(.12,.12,1.35))
+ C.box(dark,(0,1.7,0),(5,.8,4))
+ C.box(red,(-1.5,2.9,0),(5,1.6,3.6))
+ C.box(dark,(-4.1,2.9,0),(1.8,1.9,4.5))
+ C.box(red,(1.2,3,2.2),(2.2,2.2,1.7))
+ C.box('stadium-equipment-glass',(1.2,3.35,3.065),(1.8,1.25,.025))
+ # Four longitudinal chords with alternating diagonals on all four faces.
+ start=np.array([1.,3.6,0]);end=np.array([reach,height,0]);axis=end-start;axis/=np.linalg.norm(axis)
+ u=np.array([0.,0.,1.]);v=np.cross(axis,u)
+ corners=[u*a+v*b for a,b in [(-1.2,-1.2),(1.2,-1.2),(1.2,1.2),(-1.2,1.2)]]
+ stations=np.linspace(start,end,19)
+ for j,(a,b) in enumerate(zip(stations,stations[1:])):
+  for k in range(4):
+   kk=(k+1)%4
+   C.tube(red,tuple(a+corners[k]),tuple(b+corners[k]),.12,6)
+   C.tube(red,tuple(a+corners[k]),tuple(a+corners[kk]),.075,6)
+   ca,cb=(k,kk) if j%2==0 else (kk,k)
+   C.tube(red,tuple(a+corners[ca]),tuple(b+corners[cb]),.065,6)
+ for k in range(4):C.tube(red,tuple(end+corners[k]),tuple(end+corners[(k+1)%4]),.075,6)
+ # Rear mast and pendant cables; hanging block stays clear of the ground.
+ for side in [-1,1]:
+  C.tube(red,(-3,3.6,side*1.3),(-5,15,side*.7),.13,6)
+  C.tube(dark,(-5,15,side*.7),tuple(end+u*side*.7),.035,5)
+  C.tube(dark,tuple(end+u*side*.3),(reach,9,side*.3),.035,5)
+ C.box(dark,(reach,8.6,0),(.8,1.1,.8))
+ C.path(dark,[(reach,8.1,0),(reach,7.5,0),(reach+.5,7.3,0),(reach+.8,7.7,0)],.10,6)
 
 def exterior(B):
  B.property=KEY+'-exterior';B.detail=0
@@ -96,4 +134,7 @@ def exterior(B):
      F.tube('stadium-shoring-paint',(x+a[0],y,z+a[1]),(x+b[0],y,z+b[1]),.12,6)
    F.box('stadium-steel',(x,height,z),(6,.45,6))
   B.source='stadium-roof-arches'
+ # Inferred parked lifting equipment in the field, clear of the arch/shoring planes.
+ construction_crane(B,F,-20,-26,30,65)
+ construction_crane(B,F,18,26,-27,59)
  return dict(key=KEY,name='Athletics stadium construction',center=[250.45,0,1875.52],bounds=list(boundary.bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
