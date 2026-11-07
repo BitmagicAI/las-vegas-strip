@@ -1,0 +1,71 @@
+{
+  "before": [
+    {
+      "name": "bazaar-north-front",
+      "path": "public/project-records/horseshoe-bazaar-refinement/before/bazaar-north-front.png",
+      "sha256": "c5639e895ed4f6163036e1c13dcdf36976df4307771407e6e0f9660fc49f8374",
+      "provenance": "Project-generated installed baseline, neutral daylight, 2026-11-07; not a reference photograph."
+    },
+    {
+      "name": "ole-red-front",
+      "path": "public/project-records/horseshoe-bazaar-refinement/before/ole-red-front.png",
+      "sha256": "ea9249c957df49d9f8233d06d8acba0ed95c99a38dd9b2022307dd89c8aa5a96",
+      "provenance": "Project-generated installed baseline, neutral daylight, 2026-11-07; not a reference photograph."
+    },
+    {
+      "name": "ole-red-rooftop",
+      "path": "public/project-records/horseshoe-bazaar-refinement/before/ole-red-rooftop.png",
+      "sha256": "dacee225d00e985283953f7873e25ec3f9c727ac8a4ba8837ce073cd27cca619",
+      "provenance": "Project-generated installed baseline, neutral daylight, 2026-11-07; not a reference photograph."
+    }
+  ],
+  "walkBeforeOriginal": [
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before/walk-blocked-1.png",
+      "sha256": "b3b7b3be1c1cba023c03850b51061be3796c534260b6e6460ca6406136c09dc7",
+      "provenance": "Project-generated installed movement baseline; includes existing bridge-pier obstruction."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before/walk-endpoint-0.png",
+      "sha256": "30768e2317579c1e4cb7b516e003658209fb29dc687c3eead0ea2150fca147b2",
+      "provenance": "Project-generated installed movement baseline; includes existing bridge-pier obstruction."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before/walk-endpoint-1.png",
+      "sha256": "a9a98ff27f0aaf3e300a284ab3d903a470aa523d060cc9ef6ca6e32b74368233",
+      "provenance": "Project-generated installed movement baseline; includes existing bridge-pier obstruction."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before/walk-return-0.png",
+      "sha256": "b3b7b3be1c1cba023c03850b51061be3796c534260b6e6460ca6406136c09dc7",
+      "provenance": "Project-generated installed movement baseline; includes existing bridge-pier obstruction."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before/walk-return-1.png",
+      "sha256": "b18f86029f2705c302a2e17f82f9896bb3f6b13be6b7c649f0b0717e4718441e",
+      "provenance": "Project-generated installed movement baseline; includes existing bridge-pier obstruction."
+    }
+  ],
+  "walkBeforeClearSegment": [
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/walk-endpoint-0.png",
+      "sha256": "57183484a0a90fc52e2627f706460ebd8a6fcf964e5cf80eaee7d48cc3187c53",
+      "provenance": "Project-generated installed movement baseline; four legs passed, four images visually inspected."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/walk-endpoint-1.png",
+      "sha256": "81c4a154311935d07bb24c8a7bf0cd3a92bc6fb1dc92f702f80583d4f2f8cc14",
+      "provenance": "Project-generated installed movement baseline; four legs passed, four images visually inspected."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/walk-return-0.png",
+      "sha256": "ef271b6b8540b88e53d7b40513f04b099c929b7838b4d4842de5f5e128df7b50",
+      "provenance": "Project-generated installed movement baseline; four legs passed, four images visually inspected."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/walk-return-1.png",
+      "sha256": "6068f803acfd460f484124dc7d02b3c19ab767aa2cd93b3572e136166c19ceeb",
+      "provenance": "Project-generated installed movement baseline; four legs passed, four images visually inspected."
+    }
+  ]
+}

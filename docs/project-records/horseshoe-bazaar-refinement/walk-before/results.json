@@ -1,0 +1,70 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Ole Red west sidewalk and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": false,
+          "goal": [
+            30,
+            0.18,
+            201
+          ],
+          "position": {
+            "x": 30.000844955444336,
+            "y": 0.3006998586654663,
+            "z": 194.06704711914062
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "name": "Ole Red existing rooftop and return (teleport start; vertical access unverified)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            47,
+            12.84,
+            201
+          ],
+          "position": {
+            "x": 46.999637603759766,
+            "y": 12.863393096923827,
+            "z": 201.28402709960938
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            47,
+            12.84,
+            180
+          ],
+          "position": {
+            "x": 47.000823974609375,
+            "y": 12.863734512329101,
+            "z": 180.0718994140625
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}
