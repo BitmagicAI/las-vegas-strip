@@ -114,5 +114,14 @@
       "build/strip-landmarks/chayoTerraces-exterior.glb": "a84b48b5f32bedf4976461e18ca915caa541a4bc1470717614465c5c27081a1b",
       "build/strip-landmarks/chayoTerraces-exterior-collision.json": "aa35c54c9442a6e3b0d13d3bdc1883594a4461f1b18a50bc13bc2ccb96f30fe7"
     }
+  },
+  "refinement20261107": {
+    "status": "source-draft-baselines-verified",
+    "references": "docs/project-records/chayo-terraces-refinement/references.md",
+    "candidate": "Shallow red fabric swags within existing outline; five-slat chair seats and foot crossbars, preserving positions and collision. Not exported or installed.",
+    "decisions": "0.8m pitch/0.14m sag and chair crossbar sizes inferred from official photos. Retain approximate elevations and existing terrace layouts. Old2017 nighttime Street View supplies context only. Ground-to-upper connection remains unverified.",
+    "walkBefore": "Eight actual keyboard legs across four local routes passed; all eight endpoint/return images inspected. Several terminate facing opaque parent walls/glazing. No ground-to-upper connection established.",
+    "baselinePerformance": "p95 front38.8,upper18.0,pergola-under30.0,aerial35.5ms; preserve these values and avoid causal speedup claims.",
+    "source": "4933 source faces, collision JSON byte-identical; support and bidirectional route checks pass."
   }
 }
