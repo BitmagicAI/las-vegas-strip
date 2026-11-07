@@ -1,0 +1,68 @@
+{
+  "pavilions": [
+    {
+      "pavilion": 0,
+      "center": [
+        -146,
+        245
+      ],
+      "dentils": 104,
+      "medallions": 2
+    },
+    {
+      "pavilion": 1,
+      "center": [
+        -119,
+        237
+      ],
+      "dentils": 86,
+      "medallions": 2
+    },
+    {
+      "pavilion": 2,
+      "center": [
+        -90,
+        230
+      ],
+      "dentils": 84,
+      "medallions": 2
+    },
+    {
+      "pavilion": 3,
+      "center": [
+        -52,
+        201
+      ],
+      "dentils": 38,
+      "medallions": 0
+    },
+    {
+      "pavilion": 4,
+      "center": [
+        -39,
+        190
+      ],
+      "dentils": 36,
+      "medallions": 1
+    }
+  ],
+  "retainedGroups": 265,
+  "addedTriangles": 10112,
+  "bounds": [
+    [
+      -160.00967294025776,
+      -31.793967628980678
+    ],
+    [
+      9.19,
+      13.29
+    ],
+    [
+      180.86633077570156,
+      257.77198497864174
+    ]
+  ],
+  "existingGroupsAndLabelsPreserved": true,
+  "newCollisionTriangles": 0,
+  "sourceSHA256": "7ac7f3cc947ff15ae884c4897dc8fb0d0bb0176c6039bc37c8f67f0daf371f07"
+}
