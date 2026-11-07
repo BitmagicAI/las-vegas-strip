@@ -1,0 +1,542 @@
+{
+  "level": {
+    "rel": ".bitmagic/paris-arc-candidate/parisBlock-exterior.glb",
+    "sourceSha256": "f5fe0dc08bb26b24c84336265ba4a75417ae278c128aea53ad38df36bda6df6c",
+    "cls": "level",
+    "loader": "Paris candidate",
+    "when": "candidate",
+    "label": "primary",
+    "preset": "level",
+    "overrides": [],
+    "exitCode": 0,
+    "signal": null,
+    "seconds": 4.356,
+    "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/paris-arc-candidate/parisBlock-exterior.glb .bitmagic/optimize/.bitmagic/paris-arc-candidate/parisBlock-exterior/out.glb --preset=level --json",
+    "failed": [],
+    "stderr": [],
+    "report": {
+      "src": ".bitmagic/paris-arc-candidate/parisBlock-exterior.glb",
+      "dst": ".bitmagic/optimize/.bitmagic/paris-arc-candidate/parisBlock-exterior/out.glb",
+      "preset": "level",
+      "before": {
+        "bytes": 104670976,
+        "triangles": 1467924,
+        "vertices": 3464614,
+        "nodes": 451,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 101991800,
+        "gpuTextures": 13981010,
+        "textures": [
+          {
+            "name": "Paris original paris-stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 217470,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-slate",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 222698,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-paving",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 219492,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original marble",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 236566,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-rattan",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 223477,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-water",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 217556,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229228,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original brick",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 238900,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "KHR_materials_emissive_strength"
+        ]
+      },
+      "after": {
+        "bytes": 35448268,
+        "triangles": 1467924,
+        "vertices": 3464614,
+        "nodes": 451,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 70948914,
+        "gpuTextures": 13981010,
+        "textures": [
+          {
+            "name": "Paris original paris-stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 217470,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-slate",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 222698,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-paving",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 219492,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original marble",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 236566,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-rattan",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 223477,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-water",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 217556,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229228,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original brick",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 238900,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "KHR_materials_emissive_strength",
+          "KHR_mesh_quantization"
+        ]
+      },
+      "notes": [
+        "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+        "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+      ],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "451 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "10 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "66.02 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 0 warnings"
+        }
+      ]
+    }
+  },
+  "webp": {
+    "rel": ".bitmagic/paris-arc-candidate/parisBlock-exterior.glb",
+    "sourceSha256": "f5fe0dc08bb26b24c84336265ba4a75417ae278c128aea53ad38df36bda6df6c",
+    "label": "variant webp-textures",
+    "preset": "level",
+    "overrides": [
+      "--base=webp",
+      "--emissive=webp",
+      "--orm=webp-lossless"
+    ],
+    "exitCode": 0,
+    "signal": null,
+    "seconds": 5.133,
+    "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/paris-arc-candidate/parisBlock-exterior.glb .bitmagic/optimize/.bitmagic/paris-arc-candidate/parisBlock-exterior/out-webp-textures.glb --preset=level --base=webp --emissive=webp --orm=webp-lossless --json",
+    "failed": [],
+    "stderr": [],
+    "report": {
+      "src": ".bitmagic/paris-arc-candidate/parisBlock-exterior.glb",
+      "dst": ".bitmagic/optimize/.bitmagic/paris-arc-candidate/parisBlock-exterior/out-webp-textures.glb",
+      "preset": "level",
+      "before": {
+        "bytes": 104670976,
+        "triangles": 1467924,
+        "vertices": 3464614,
+        "nodes": 451,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 101991800,
+        "gpuTextures": 13981010,
+        "textures": [
+          {
+            "name": "Paris original paris-stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 217470,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-slate",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 222698,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-paving",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 219492,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original marble",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 236566,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-rattan",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 223477,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-water",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 217556,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229228,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original brick",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 238900,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "KHR_materials_emissive_strength"
+        ]
+      },
+      "after": {
+        "bytes": 33365096,
+        "triangles": 1467924,
+        "vertices": 3464614,
+        "nodes": 451,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 70948914,
+        "gpuTextures": 13981010,
+        "textures": [
+          {
+            "name": "Paris original paris-stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 6456,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 21152,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-slate",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 17824,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-paving",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 7516,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original marble",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 22864,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-rattan",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 24512,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 20358,
+            "gpu": 1398101
+          },
+          {
+            "name": "Paris original paris-water",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 15176,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 21056,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original brick",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 26598,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "EXT_texture_webp",
+          "KHR_materials_emissive_strength",
+          "KHR_mesh_quantization"
+        ]
+      },
+      "notes": [
+        "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+        "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+      ],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "451 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "10 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "68.00 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 0 warnings"
+        }
+      ]
+    }
+  }
+}

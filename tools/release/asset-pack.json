@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235571199,
+ "bytes": 1235735056,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -306,8 +306,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_0.bin",
-   "bytes": 1584186,
-   "sha256": "9971a958e52731fe7ab09931b2276ebf0e3aa23b43e7bc66b8f9822df600a1c4",
+   "bytes": 1586555,
+   "sha256": "a4b5b9f1b55cfd1665b8f21ade9a8856eeb1814be05d4a4a4eec137099b48236",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "34a528c4ed8f35fa7f88dbea00e5f43fc5d627f2507f4567375296befa7d54c2",
+   "sha256": "2d29e04f238ba57f4aef9211f40a0e90d3c090b5095ee2fcffa990a3baad499a",
    "kind": "runtime cell manifest"
   },
   {
@@ -7056,8 +7056,8 @@
   },
   {
    "path": "build/resort-blocks/paris/parisBlock-exterior.glb",
-   "bytes": 33203608,
-   "sha256": "01ea92d373ec9200b9aadc579e0c5ea78fa0b406157351981fbe78b302ab25d7",
+   "bytes": 33365096,
+   "sha256": "dae071b1291e8d439614f50308e86b56a54895e9cfe8f160722330335a1dd7c5",
    "kind": "optimized"
   },
   {

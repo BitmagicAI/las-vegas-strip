@@ -1,0 +1,40 @@
+{
+  "identicalCameras": true,
+  "neutralDaylight": true,
+  "views": [
+    {
+      "name": "paris-arc-front",
+      "before": {
+        "p50": 29.899999856948853,
+        "p95": 36.5
+      },
+      "after": {
+        "p50": 18.700000047683716,
+        "p95": 30
+      }
+    },
+    {
+      "name": "paris-arc-vault",
+      "before": {
+        "p50": 19.09999990463257,
+        "p95": 23.200000047683716
+      },
+      "after": {
+        "p50": 16.700000047683716,
+        "p95": 17.799999952316284
+      }
+    },
+    {
+      "name": "paris-arc-east",
+      "before": {
+        "p50": 41.5,
+        "p95": 52.299999952316284
+      },
+      "after": {
+        "p50": 22.700000047683716,
+        "p95": 35.60000014305115
+      }
+    }
+  ],
+  "interpretation": "No measured regression in these samples. Lower after timings are not claimed as an optimization benefit; machine variance is substantial and no stable60fps claim is made."
+}
