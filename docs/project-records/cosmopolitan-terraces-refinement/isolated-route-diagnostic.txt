@@ -1,0 +1,306 @@
+{
+  "checks": 7609,
+  "failures": [
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -49,
+        6.035,
+        744.25
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -49,
+        6.035,
+        744.25
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.832425,
+        6.035,
+        744.44825
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.66485,
+        6.035,
+        744.6465000000001
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.497275,
+        6.035,
+        744.84475
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.3297,
+        6.035,
+        745.043
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.3297,
+        6.035,
+        745.043
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.285465,
+        6.035,
+        745.3397
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.24123,
+        6.035,
+        745.6364
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.196995,
+        6.035,
+        745.9331
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.15276,
+        6.035,
+        746.2298
+      ],
+      "blocker": null,
+      "floor": false
+    },
+    {
+      "route": "Harmon bridge threshold",
+      "p": [
+        -48.108525,
+        6.035,
+        746.5264999999999
+      ],
+      "blocker": null,
+      "floor": false
+    }
+  ],
+  "city": false,
+  "stairWalks": [
+    {
+      "route": "public stair -170 / 1",
+      "reverse": false,
+      "passed": true,
+      "end": [
+        -170.00111389160156,
+        6.741881847381592,
+        713.208740234375
+      ]
+    },
+    {
+      "route": "public stair -170 / 1",
+      "reverse": true,
+      "passed": true,
+      "end": [
+        -170.00157165527344,
+        1.1399966478347778,
+        693.447998046875
+      ]
+    },
+    {
+      "route": "public stair -170 / 2",
+      "reverse": false,
+      "passed": true,
+      "end": [
+        -170.00144958496094,
+        12.338343620300293,
+        713.1409301757812
+      ]
+    },
+    {
+      "route": "public stair -170 / 2",
+      "reverse": true,
+      "passed": true,
+      "end": [
+        -169.99978637695312,
+        6.739595890045166,
+        693.3972778320312
+      ]
+    },
+    {
+      "route": "public stair -170 / 3",
+      "reverse": false,
+      "passed": true,
+      "end": [
+        -169.99989318847656,
+        17.93967056274414,
+        713.2141723632812
+      ]
+    },
+    {
+      "route": "public stair -170 / 3",
+      "reverse": true,
+      "passed": true,
+      "end": [
+        -170.0001220703125,
+        12.339418411254883,
+        693.3977661132812
+      ]
+    },
+    {
+      "route": "public stair -170 / 4",
+      "reverse": false,
+      "passed": true,
+      "end": [
+        -170.0045623779297,
+        23.539901733398438,
+        713.2145385742188
+      ]
+    },
+    {
+      "route": "public stair -170 / 4",
+      "reverse": true,
+      "passed": true,
+      "end": [
+        -169.9998779296875,
+        17.939725875854492,
+        693.3971557617188
+      ]
+    },
+    {
+      "route": "public stair -318 / 1",
+      "reverse": false,
+      "passed": true,
+      "end": [
+        -318.0009460449219,
+        6.740139007568359,
+        713.0621337890625
+      ]
+    },
+    {
+      "route": "public stair -318 / 1",
+      "reverse": true,
+      "passed": true,
+      "end": [
+        -318.0016784667969,
+        1.1399999856948853,
+        693.5416259765625
+      ]
+    },
+    {
+      "route": "public stair -318 / 2",
+      "reverse": false,
+      "passed": true,
+      "end": [
+        -318.0030517578125,
+        12.34005355834961,
+        713.137939453125
+      ]
+    },
+    {
+      "route": "public stair -318 / 2",
+      "reverse": true,
+      "passed": true,
+      "end": [
+        -318.0003356933594,
+        6.7397637367248535,
+        693.621826171875
+      ]
+    },
+    {
+      "route": "public stair -318 / 3",
+      "reverse": false,
+      "passed": true,
+      "end": [
+        -318.00189208984375,
+        17.940000534057617,
+        713.2089233398438
+      ]
+    },
+    {
+      "route": "public stair -318 / 3",
+      "reverse": true,
+      "passed": true,
+      "end": [
+        -317.9996643066406,
+        12.339408874511719,
+        693.3970336914062
+      ]
+    },
+    {
+      "route": "public stair -318 / 4",
+      "reverse": false,
+      "passed": true,
+      "end": [
+        -318.0006408691406,
+        23.53999900817871,
+        713.1365966796875
+      ]
+    },
+    {
+      "route": "public stair -318 / 4",
+      "reverse": true,
+      "passed": true,
+      "end": [
+        -317.9993896484375,
+        17.94009017944336,
+        693.4724731445312
+      ]
+    }
+  ]
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+27 !== 0
+
+    at file:///Users/janisun/Development/GitFork/vegas-2601-westwood/tools/resort-blocks/test-cosmo.mjs:30:162 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 27,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.9.0
