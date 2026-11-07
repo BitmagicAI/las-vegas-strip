@@ -237,7 +237,7 @@
     {
       "id": "wynn-encore",
       "name": "Wynn and Encore",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "wynn-encore.json"
     },
     {
@@ -327,7 +327,7 @@
     {
       "id": "horseshoe-versailles",
       "name": "Horseshoe and Versailles tower block",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "horseshoe-versailles.json"
     },
     {
@@ -1928,5 +1928,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "wynn-encore"
+  "active": "horseshoe-versailles"
 }

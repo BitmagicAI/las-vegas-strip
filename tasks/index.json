@@ -3954,7 +3954,7 @@
     "Versailles west-facing balconies and Paris skybridge not implemented",
     "Verify all exterior public entrance routes against reference maps",
     "Grand Bazaar tenant-specific facades and exact awning layouts need further corroboration",
-    "Ole Red rooftop furnishings and real vertical access missing",
+    "Ole Red rooftop furnishing pass is bounded/inferred; small stage, floor finish, shade/other guard edges and real public vertical access remain unresolved",
     "Casino service and arrival facade proportions require closer ground references",
     "Whole block traversal and route performance not yet measured",
     "Ole Red sign partly obscured by existing bridge; correct sign placement from built reference."
@@ -4059,9 +4059,9 @@
      "tools/city-exteriors/test-horseshoe-arrival.mjs",
      "tools/city-exteriors/walk-horseshoe-arrival-ground.mjs",
      "tools/city-exteriors/walk-horseshoe-arrival.mjs",
+     "tools/city-exteriors/audit-ole-red-rooftop.py",
      "tools/city-exteriors/stair-cvs-east-apron.mjs",
-     "tools/city-exteriors/test-cvs-east-apron.mjs",
-     "tools/city-exteriors/test-horseshoe.mjs"
+     "tools/city-exteriors/test-cvs-east-apron.mjs"
     ]
    },
    "acceptance": [

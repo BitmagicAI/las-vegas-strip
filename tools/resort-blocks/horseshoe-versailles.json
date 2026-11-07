@@ -44,7 +44,7 @@
     "Versailles west-facing balconies and Paris skybridge not implemented",
     "Verify all exterior public entrance routes against reference maps",
     "Grand Bazaar tenant-specific facades and exact awning layouts need further corroboration",
-    "Ole Red rooftop furnishings and real vertical access missing",
+    "Ole Red rooftop furnishing pass is bounded/inferred; small stage, floor finish, shade/other guard edges and real public vertical access remain unresolved",
     "Casino service and arrival facade proportions require closer ground references",
     "Whole block traversal and route performance not yet measured",
     "Ole Red sign partly obscured by existing bridge; correct sign placement from built reference."
@@ -230,5 +230,19 @@
       "build/geographic-strip/detailed.glb": "4c7b7cc733d0ef0b9fd52b2f4ff667397653a6019e0973b88d1e3d68188ae7b9"
     },
     "performance": "Same960x540 ultra static viewpoints only; results recorded, no city-driving60fps certification."
+  },
+  "rooftopRefinement20261107": {
+    "status": "installed-local-verification",
+    "scope": "Ole Red way839503453 only; six dining tables/twelve tan chairs, three high tables/six red stools, west red mesh guard overlay. Other fifteen mapped buildings retained.",
+    "record": "docs/project-records/horseshoe-bazaar-refinement",
+    "geometryAudit": "docs/project-records/horseshoe-bazaar-refinement/geometry-audit.json",
+    "limitations": "Inferred furniture counts/layout, retained glass behind mesh, no new public vertical access, shade/core/interior unchanged; not whole-block or photorealistic completion.",
+    "localChecks": "docs/project-records/horseshoe-bazaar-refinement/local-checks.json",
+    "smoke": "docs/project-records/horseshoe-bazaar-refinement/smoke-report.json",
+    "walkBefore": "docs/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/results.json",
+    "walkAfter": "docs/project-records/horseshoe-bazaar-refinement/walk-after/results.json",
+    "performance": "docs/project-records/horseshoe-bazaar-refinement/performance-comparison.json",
+    "visualReview": "docs/project-records/horseshoe-bazaar-refinement/visual-review.md",
+    "cellPreservation": "docs/project-records/horseshoe-bazaar-refinement/cell-preservation.json"
   }
 }

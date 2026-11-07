@@ -1,0 +1,84 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Ole Red north west-sidewalk segment and return (south bridge piers excluded)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            30,
+            0.18,
+            190
+          ],
+          "position": {
+            "x": 29.999937057495117,
+            "y": 0.3011645364761352,
+            "z": 190.32875061035156
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            30,
+            0.18,
+            180
+          ],
+          "position": {
+            "x": 30.000125885009766,
+            "y": 0.3012461948394775,
+            "z": 180.04811096191406
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Ole Red existing rooftop and return (teleport start; vertical access unverified)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            47,
+            12.84,
+            201
+          ],
+          "position": {
+            "x": 47.00004577636719,
+            "y": 12.873393325805663,
+            "z": 201.27452087402344
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            47,
+            12.84,
+            180
+          ],
+          "position": {
+            "x": 47.000152587890625,
+            "y": 12.863473205566406,
+            "z": 180.0592803955078
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

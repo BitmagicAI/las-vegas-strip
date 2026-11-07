@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235192861,
+ "bytes": 1235274887,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -306,8 +306,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_0.bin",
-   "bytes": 1583192,
-   "sha256": "c1972568c802adc3d4d765a8da58051edc4645b0248e4d17a8473b53a7cf9af0",
+   "bytes": 1584186,
+   "sha256": "9971a958e52731fe7ab09931b2276ebf0e3aa23b43e7bc66b8f9822df600a1c4",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "69ad0b4f0434ce3792799c5da5924ce588a70cf4a856688c0bb68090d4d12c5c",
+   "sha256": "2da8c1b73ec8f83717e88644d7b1030c7e212fcfec775dcce7258828e9d388ae",
    "kind": "runtime cell manifest"
   },
   {
@@ -9012,14 +9012,14 @@
   },
   {
    "path": "build/strip-landmarks/horseshoeExterior-exterior-collision.bin",
-   "bytes": 6880,
-   "sha256": "86602154f884832b0634499f8b003b1a73ea38fb62f6353b2958764943199734",
+   "bytes": 7772,
+   "sha256": "e1d3be767fd68fbb20532be12662f14f246c68ba8f5dbeabc76f4cb7c5bc0313",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/horseshoeExterior-exterior.glb",
-   "bytes": 1224128,
-   "sha256": "32b7ca8dacc2f440ee0e13428364eecf50f98e4adc36a79481d45eaed54909cd",
+   "bytes": 1304268,
+   "sha256": "6d90e41d5ba33ed32d1ec8b09aa944a246dc5bc4697f6b17a5f7296fa4808ab9",
    "kind": "optimized"
   },
   {
@@ -11365,7 +11365,7 @@
   {
    "path": "build/strip-landmarks/venues.bin",
    "bytes": 394536,
-   "sha256": "d86d5e2b5ccaf5f548c20d02c61bc95a3e69aa0807d669589a22d9f1d691862b",
+   "sha256": "da2bfa14a02b5c989a87e6abcf070e4e597cc543c2842ab21c9fd87c84a826bc",
    "kind": "original"
   },
   {

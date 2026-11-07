@@ -1,0 +1,6 @@
+{
+  "command": "node tools/optimize/optimize-runtime-glbs.mjs --only=horseshoeExterior --variant=webp-textures",
+  "exitCode": 0,
+  "embeddedImages": 0,
+  "result": "No images to encode; level candidate used. No texture asset added."
+}
