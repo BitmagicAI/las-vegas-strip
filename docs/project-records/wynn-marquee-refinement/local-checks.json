@@ -1,0 +1,118 @@
+[
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "output": "1 runtime GLBs checked, 0 not optimized\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "city bake is up to date\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "1930 present, 0 missing, 0 not optimized\n"
+  },
+  {
+    "command": [
+      "bitmagic",
+      "check",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "output": "Type check passed.\n"
+  },
+  {
+    "command": [
+      "node",
+      "--test",
+      "tests/city-lazy-lod.test.mjs",
+      "tests/city-lighting-resize.test.mjs",
+      "tests/site-lights.test.mjs"
+    ],
+    "exitCode": 1,
+    "output": "node:internal/modules/run_main:107\n    triggerUncaughtException(\n    ^\n\nfile://<checkout>/src/work/CityLod.ts:85\n    readonly ready:Promise<void>;\n    constructor(private owner:THREE.Group,options:CityLodOptions){\n                        ^^^^^^^^^^^^^^^^^\n        this.prepare=options.prepare;\n\nSyntaxError [ERR_UNSUPPORTED_TYPESCRIPT_SYNTAX]: TypeScript parameter property is not supported in strip-only mode\n    at parseTypeScript (node:internal/modules/typescript:68:40)\n    at processTypeScriptCode (node:internal/modules/typescript:146:42)\n    at stripTypeScriptModuleTypes (node:internal/modules/typescript:209:22)\n    at ModuleLoader.<anonymous> (node:internal/modules/esm/translators:642:29)\n    at #translate (node:internal/modules/esm/loader:451:20)\n    at afterLoad (node:internal/modules/esm/loader:507:29)\n    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)\n    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)\n    at afterResolve (node:internal/modules/esm/loader:603:52)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12) {\n  code: 'ERR_UNSUPPORTED_TYPESCRIPT_SYNTAX'\n}\n\nNode.js v25.9.0\n\u2716 tests/city-lazy-lod.test.mjs (96.152167ms)\nPASS: city surfaces carry the cluster grid in their program key and rebuild once per resize\n\u2714 tests/city-lighting-resize.test.mjs (123.1365ms)\nsite-lights: ok\n\u2714 tests/site-lights.test.mjs (265.902333ms)\n\u2139 tests 3\n\u2139 suites 0\n\u2139 pass 2\n\u2139 fail 1\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 275.18725\n\n\u2716 failing tests:\n\ntest at tests/city-lazy-lod.test.mjs:1:1\n\u2716 tests/city-lazy-lod.test.mjs (96.152167ms)\n  'test failed'\n"
+  },
+  {
+    "command": [
+      "node",
+      "--experimental-transform-types",
+      "--test",
+      "tests/city-lazy-lod.test.mjs",
+      "tests/city-lighting-resize.test.mjs",
+      "tests/site-lights.test.mjs"
+    ],
+    "exitCode": 1,
+    "output": "(node:20075) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/package_json_reader:301\n  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);\n        ^\n\nError [ERR_MODULE_NOT_FOUND]: Cannot find package 'engine' imported from <checkout>/src/work/CityLod.ts\n    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:301:9)\n    at packageResolve (node:internal/modules/esm/resolve:764:81)\n    at moduleResolve (node:internal/modules/esm/resolve:855:18)\n    at defaultResolve (node:internal/modules/esm/resolve:988:11)\n    at #cachedDefaultResolve (node:internal/modules/esm/loader:697:20)\n    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:714:38)\n    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:746:52)\n    at #resolve (node:internal/modules/esm/loader:679:17)\n    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:599:35)\n    at ModuleJob.syncLink (node:internal/modules/esm/module_job:162:33) {\n  code: 'ERR_MODULE_NOT_FOUND'\n}\n\nNode.js v25.9.0\n\u2716 tests/city-lazy-lod.test.mjs (194.007542ms)\n(node:20076) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nPASS: city surfaces carry the cluster grid in their program key and rebuild once per resize\n\u2714 tests/city-lighting-resize.test.mjs (202.531375ms)\nsite-lights: ok\n\u2714 tests/site-lights.test.mjs (400.922292ms)\n\u2139 tests 3\n\u2139 suites 0\n\u2139 pass 2\n\u2139 fail 1\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 413.650459\n\n\u2716 failing tests:\n\ntest at tests/city-lazy-lod.test.mjs:1:1\n\u2716 tests/city-lazy-lod.test.mjs (194.007542ms)\n  'test failed'\n"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lazy-lod.test.mjs"
+    ],
+    "exitCode": 0,
+    "output": "PASS: lazy near detail: LOD vertices bit-identical to the near level (93 checked), near level filled on approach = eager, casters = casting parts, eviction and refill\n"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lighting-resize.test.mjs"
+    ],
+    "exitCode": 0,
+    "output": "PASS: city surfaces carry the cluster grid in their program key and rebuild once per resize\n"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/site-lights.test.mjs"
+    ],
+    "exitCode": 0,
+    "output": "site-lights: ok\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0,
+    "output": "Records valid: 291 blocks (290 refinement-deferred, 1 active); 8 full seven-gate records; 1200 remaining items.\nActive: wynn-marquee (lightweight record: no review board). Task board: python3 tools/tasks/build-board.py\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/check-public.py"
+    ],
+    "exitCode": 0,
+    "output": "9262 files, 1617.9 MB would be committed\nwarn  docs/project-records/city-exteriors-2026-10-12/inventory.json: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/curaleaf-annex-refinement/public.txt: home-folder path (3x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/curaleaf-annex-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/houssels-west-refinement/reference-candidates.md: home-folder path (1x, e.g. /home/29454609)\nwarn  docs/project-records/mandalay-pavilion-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/oakey-santa-paula-refinement/after/public.txt: home-folder path (4x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/oakey-santa-paula-refinement/after/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/rexford-place-east-refinement/references.md: home-folder path (1x, e.g. /home/29454522)\nwarn  docs/project-records/royale-carnaval-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/sky-garage-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/south-strip-civic-refinement/public.txt: home-folder path (1x, e.g. /home/showpublishedimage)\nwarn  docs/project-records/south-strip-civic-refinement/public.txt: e-mail address marryme@littlechapel.com\nwarn  docs/project-records/south-strip-civic-refinement/research.json: home-folder path (1x, e.g. /home/showpublishedimage)\n0 failures, 13 warnings\n"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exitCode": 0,
+    "output": ""
+  }
+]

@@ -1096,7 +1096,7 @@
     {
       "id": "encore-tower-suites-canopy",
       "name": "Encore Tower Suites striped arrival canopy",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "encore-tower-suites-canopy.json"
     },
     {
@@ -1114,7 +1114,7 @@
     {
       "id": "wynn-marquee",
       "name": "Wynn curved roadside marquee",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "wynn-marquee.json"
     },
     {
@@ -1916,5 +1916,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "encore-tower-suites-canopy"
+  "active": "wynn-marquee"
 }
