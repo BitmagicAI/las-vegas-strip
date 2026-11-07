@@ -1,0 +1,134 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Ocean Prime terrace segment and return; isolated start, not vertical access",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -85,
+            18.675,
+            783
+          ],
+          "position": {
+            "x": -85.06440734863281,
+            "y": 18.69571044921875,
+            "z": 783.0220336914062
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -78,
+            18.675,
+            783
+          ],
+          "position": {
+            "x": -78.07349395751953,
+            "y": 18.695781021118165,
+            "z": 783.0003051757812
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            -71,
+            18.675,
+            784
+          ],
+          "position": {
+            "x": -71.0864028930664,
+            "y": 18.705655364990236,
+            "z": 783.987548828125
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            -65,
+            18.675,
+            786
+          ],
+          "position": {
+            "x": -64.8868637084961,
+            "y": 18.69575050354004,
+            "z": 786.037841796875
+          }
+        },
+        {
+          "segment": 5,
+          "reached": true,
+          "goal": [
+            -71,
+            18.675,
+            784
+          ],
+          "position": {
+            "x": -70.92646026611328,
+            "y": 18.695752410888673,
+            "z": 784.0247192382812
+          }
+        },
+        {
+          "segment": 6,
+          "reached": true,
+          "goal": [
+            -78,
+            18.675,
+            783
+          ],
+          "position": {
+            "x": -77.90092468261719,
+            "y": 18.707701950073243,
+            "z": 783.0122680664062
+          }
+        },
+        {
+          "segment": 7,
+          "reached": true,
+          "goal": [
+            -85,
+            18.675,
+            783
+          ],
+          "position": {
+            "x": -84.9056396484375,
+            "y": 18.695542602539064,
+            "z": 783
+          }
+        },
+        {
+          "segment": 8,
+          "reached": true,
+          "goal": [
+            -92,
+            18.675,
+            785
+          ],
+          "position": {
+            "x": -91.91043853759766,
+            "y": 18.695773391723634,
+            "z": 784.974365234375
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

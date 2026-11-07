@@ -1,3 +1,4 @@
+from citycenter63_shades import terrace_shade
 """63 CityCenter: owner 2025 leasing plans + exterior photographs.
 Mapped plan, estimated elevations. No commercial photograph/ad is used as texture.
 """
@@ -164,6 +165,6 @@ def exterior(B):
   for dx in [-.95,.95]:
    F.box('ph-metal',(dx,.4,0),(.5,.08,.55));F.box('ph-metal',(dx,.7,.23),(.5,.6,.06))
   F.tube('ph-silver',(0,0,0),(0,2.5,0),.035,8)
-  F.lathe('blue',0,0,[(2.15,1.2),(2.6,.04)],12)
+  terrace_shade(F)
  B.detail=0
  return dict(key=KEY,name='63 CityCenter exterior',center=[-110,0,813],bounds=[-167,778,-48,856],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

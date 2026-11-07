@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235537790,
+ "bytes": 1235574519,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -84,8 +84,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_1.bin",
-   "bytes": 1202921,
-   "sha256": "ad0de20ad5b08ef2989f546c6a206e435630f1977835123072cbe15256bccb2a",
+   "bytes": 1203210,
+   "sha256": "02a78019eda3855ae65547137142e4f7bf2413813693e0514b9127ef7eb9d404",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "b10645cc159bd99e8a2156006332f86ff7289fc67a525f2dfcfc184910660436",
+   "sha256": "f4313bd67108f07c877b49331db02101c143ed3b06fb28c0fbc4dae7fc72a81e",
    "kind": "runtime cell manifest"
   },
   {
@@ -7854,8 +7854,8 @@
   },
   {
    "path": "build/strip-landmarks/citycenter63-exterior.glb",
-   "bytes": 1989648,
-   "sha256": "074ddbe54f895e60e3729671abfd77d2f297df36bd22859ca7a786f2181e06fe",
+   "bytes": 2026088,
+   "sha256": "37ad4b080be73e45f945d10e9cab22825cac33a09d26d736487e18406503ee5c",
    "kind": "optimized"
   },
   {

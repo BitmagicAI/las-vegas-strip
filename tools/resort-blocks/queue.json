@@ -545,8 +545,12 @@
     {
       "id": "crystals",
       "name": "The Shops at Crystals",
-      "status": "active",
-      "record": "crystals.json"
+      "status": "refinement-deferred",
+      "record": "crystals.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "PR552 verified two bounded opaque roof glazing representations; full roof/facade/circulation discrepancies retained. Continue nearby CityCenter task."
+      }
     },
     {
       "id": "showcase",
@@ -575,7 +579,7 @@
     {
       "id": "citycenter-63",
       "name": "63 CityCenter / ARTE Museum",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "citycenter-63.json"
     },
     {
@@ -1928,5 +1932,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "crystals"
+  "active": "citycenter-63"
 }
