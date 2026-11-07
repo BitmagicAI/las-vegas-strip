@@ -58,7 +58,7 @@ def campanile(B):
   B.detail=0
  T.lathe('gold',0,0,[(94,.13),(94.3,.24),(94.6,.11),(95.7,0)],12)
 
-def palazzi(B):
+def palazzi(B, refine_street=True):
  for ident in ['way/33996627','way/543728945','way/115776190']:
   poly=footprint(ident);B.source='palazzo-front';B.detail=0
   from venetian_rialto import START,END
@@ -73,26 +73,43 @@ def palazzi(B):
     if q.contains(Point((a[0]+b[0])/2+nx*.1,(a[1]+b[1])/2+nz*.1)):nx,nz=-nx,-nz
     F=Frame(B,a[0]+nx*.13,a[1]+nz*.13,math.atan2(-nx,-nz),y=0)
     if F.co*ux-F.si*uz<0:F=Frame(B,b[0]+nx*.13,b[1]+nz*.13,F.yaw,y=0)
+    # Two-storey street composition corroborated by January2025/October2026 views.
+    tallStreet=refine_street and ident=='way/33996627' and (nx<-.3 or nz<-.3)
     entryEdge=ident=='way/543728945' and Point(*START).distance(LineString([a,b]))<.1
     cols=max(1,round(L/4.0));cw=L/cols
     for y,h,d in [(.5,.4,.35),(4.55,.32,.48),(8.85,.42,.55),(12.9,.25,.50),(13.35,.4,.8)]:
+     if tallStreet and y==8.85:continue
      if not (entryEdge and y<5.6):F.box('ivory',(L/2,y,-d/2),(L,h,d))
     for j in range(cols):
      x=(j+.5)*cw
-     for y,top in [(1.0,4.1),(5.0,8.35),(9.3,12.45)]:
+     tiers=[(1.0,4.1),(5.0,11.1)] if tallStreet else [(1.0,4.1),(5.0,8.35),(9.3,12.45)]
+     for y,top in tiers:
       if entryEdge and y<5.6:continue
       w=cw*.64
-      F.box('darkglass',(x,(y+top)/2,-.08),(w,top-y,.06))
+      if tallStreet and y>4:
+       # Real arched glazing: opaque spandrels remain outside the curved head.
+       radius=w/2;spring=top-radius
+       glass=[(x-radius,y,-.11),(x+radius,y,-.11)]+[(x+radius*math.cos(a),spring+radius*math.sin(a),-.11) for a in np.linspace(0,math.pi,19)]
+       B.face('darkglass',[F.p(*q) for q in reversed(glass)])
+      else:F.box('darkglass',(x,(y+top)/2,-.08),(w,top-y,.06))
       F.arch(x,-.22,w+.13,top,'ivory',.10,y)
       for s in [-1,1]:
        F.lathe('ivory',x+s*cw*.43,-.25,[(y-.25,.16),(y,.23),(top-.45,.13),(top-.2,.26)],10)
       F.box('ivory',(x,y-.18,-.27),(cw*.84,.19,.56))
       B.detail=1
       F.box('champagne',(x,(y+top)/2,-.16),(.055,top-y,.06))
-      F.box('champagne',(x,top-.8,-.16),(w,.055,.06))
+      crossY=top-w/2-.15 if tallStreet and y>4 else top-.8
+      F.box('champagne',(x,crossY,-.16),(w,.055,.06))
       if y>4:
        for xx in np.arange(x-w/2,x+w/2,.26):F.lathe('ivory',xx,-.53,[(y-.03,.045),(y+.33,.08),(y+.58,.045)],8)
        F.box('ivory',(x,y+.64,-.53),(w+.3,.10,.17))
+      B.detail=0
+     if tallStreet:
+      # Original round glazing and molded oculus; dimensions inferred, not surveyed.
+      B.detail=1
+      ring=[(x+.48*math.cos(a),12.0+.48*math.sin(a),-.10) for a in np.linspace(0,math.tau,25)]
+      for k in range(24):B.face('darkglass',[F.p(x,12,-.10),F.p(*ring[k+1]),F.p(*ring[k])])
+      F.path('ivory',[(u,v,-.23) for u,v,_ in ring],.075,8)
       B.detail=0
      # Parapet balusters remain at near detail, cornice keeps the skyline.
      B.detail=1

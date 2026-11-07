@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235735056,
+ "bytes": 1235519528,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1542972,
-   "sha256": "00a062900820a47d4b32b14feac6e29cc10bfd72f282663c556bd9e9a519d12f",
+   "bytes": 1539064,
+   "sha256": "624a708ef7fa04e35b615d6c0f71a8304d4d87cd702d761950d6cb8d77c90c3f",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "2d29e04f238ba57f4aef9211f40a0e90d3c090b5095ee2fcffa990a3baad499a",
+   "sha256": "97f0bff12e74fceec71fa14927afe831bd2f8e517f73f081839ef81e74930bb0",
    "kind": "runtime cell manifest"
   },
   {
@@ -11298,8 +11298,8 @@
   },
   {
    "path": "build/strip-landmarks/venetian-exterior.glb",
-   "bytes": 28437620,
-   "sha256": "e625fc068261d3d12366a95cd5d05be6c7551b893a47f6dc0f759016ee09e361",
+   "bytes": 28226000,
+   "sha256": "42954d43b85b82d2c62e2df5aa0a5c610762afc98b6b7ab5c20efcbb1dbb89ac",
    "kind": "optimized"
   },
   {
