@@ -15,17 +15,17 @@
     {
       "id": "bellagio",
       "name": "Bellagio",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "bellagio.json",
       "deferral": {
-        "date": "2026-10-05",
-        "reason": "Creator requested continuing down the block list; remaining Bellagio refinements stay in bellagio.json."
+        "date": "2026-11-07",
+        "reason": "PR549 verified bounded five-pavilion stone ornament pass; all full-resort discrepancies and gates retained. Continue owner city refinement."
       }
     },
     {
       "id": "paris",
       "name": "Paris Las Vegas",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "paris.json",
       "deferral": {
         "date": "2026-10-09",
@@ -1928,5 +1928,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "bellagio"
+  "active": "paris"
 }
