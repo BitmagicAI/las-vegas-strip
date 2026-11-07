@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233721346,
+ "bytes": 1233976092,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -318,8 +318,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_2.bin",
-   "bytes": 362864,
-   "sha256": "dab977fd22bf7f22279132057e92dd9becb56387b2673be0b98280ccae86366a",
+   "bytes": 367514,
+   "sha256": "94155fd70b24b631dbf0643227ea18837c58fbbf2cc89aa92475be66eb3cc5e3",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "485021d925ca75ddc1848856e348a9c9458098f1afdb5d3b6f61c9f3c27df997",
+   "sha256": "942e2bd738e46ab73d4ffb4daf068b7349f7e35e81e6f5db402b7e50cb275d81",
    "kind": "runtime cell manifest"
   },
   {
@@ -7362,8 +7362,8 @@
   },
   {
    "path": "build/strip-landmarks/athleticsStadium-exterior.glb",
-   "bytes": 1871136,
-   "sha256": "c590b677243815f05e2f823dc43c51ce9f32b9b779d3f2c8af1f4f1a25b25c89",
+   "bytes": 2121232,
+   "sha256": "5ad3d0f8df071b3fb19b9fe33db98a2577f5c839e2b5f1c54921dcc53461013e",
    "kind": "optimized"
   },
   {
