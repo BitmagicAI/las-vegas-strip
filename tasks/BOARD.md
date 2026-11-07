@@ -179,7 +179,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-wynn-lakefront` | L | P2 | 7 | Refine the exterior of Wynn Lake of Dreams lakefront and terraces |
 | `ext-mirage-marquee` | L | P2 | 6 | Refine the exterior of Mirage historic marquee and sidewalk shelter |
 | `ext-forum-cooling-towers` | M | P2 | 5 | Refine the exterior of Forum Shops twin cooling towers |
-| `ext-chayo-terraces` | M | P2 | 4 | Refine the exterior of Chayo lower patio and upper terrace |
 | `ext-akita-rear-canopy` | M | P2 | 3 | Refine the exterior of Akita rear parking canopy |
 | `ext-paris-rooftop-bar` | M | P2 | 4 | Refine the exterior of Paris mapped rooftop pavilion |
 | `ext-nyny-irish-kiosk` | M | P2 | 3 | Refine the exterior of Nine Fine Irishmen outdoor kiosk |

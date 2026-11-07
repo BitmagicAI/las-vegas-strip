@@ -1114,7 +1114,7 @@
     {
       "id": "wynn-marquee",
       "name": "Wynn curved roadside marquee",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "wynn-marquee.json"
     },
     {
@@ -1132,7 +1132,7 @@
     {
       "id": "chayo-terraces",
       "name": "Chayo lower patio and upper terrace",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "chayo-terraces.json"
     },
     {
@@ -1916,5 +1916,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "wynn-marquee"
+  "active": "chayo-terraces"
 }

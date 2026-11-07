@@ -28,7 +28,7 @@
   ],
   "triangles": 3693,
   "batches": 12,
-  "optimizedMiB": 0.1,
+  "optimizedMiB": 0.12039947509765625,
   "viewsInspected": [
     "chayo-ground",
     "chayo-upper",
@@ -111,8 +111,27 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/chayoTerraces-exterior.glb": "a84b48b5f32bedf4976461e18ca915caa541a4bc1470717614465c5c27081a1b",
-      "build/strip-landmarks/chayoTerraces-exterior-collision.json": "aa35c54c9442a6e3b0d13d3bdc1883594a4461f1b18a50bc13bc2ccb96f30fe7"
+      "runtime-assets/strip-landmarks/chayoTerraces-exterior.glb": "86059a6061e86eacd8d519cb73fc42909dfddf92f2354c37c9d9294ba690f27f",
+      "runtime-assets/strip-landmarks/chayoTerraces-exterior-collision.bin": "dc9b28165613141f4fdb14764f4f81bd2709245eaeb1e05973d762be1b40cc35"
     }
+  },
+  "refinement20261107": {
+    "status": "installed-reviewed-refinement-deferred",
+    "references": "docs/project-records/chayo-terraces-refinement/references.md",
+    "candidate": "Installed shallow red fabric swags and slatted seats with foot crossbars; collision unchanged.",
+    "decisions": "0.8m pitch/0.14m sag and chair crossbar sizes inferred from official photos. Retain approximate elevations and existing terrace layouts. Old2017 nighttime Street View supplies context only. Ground-to-upper connection remains unverified.",
+    "walkBefore": "Eight actual keyboard legs across four local routes passed; all eight endpoint/return images inspected. Several terminate facing opaque parent walls/glazing. No ground-to-upper connection established.",
+    "baselinePerformance": "p95 front38.8,upper18.0,pergola-under30.0,aerial35.5ms; preserve these values and avoid causal speedup claims.",
+    "source": "4933 source faces, collision JSON byte-identical; support and bidirectional route checks pass.",
+    "performance": "Matched first p95 front38.8\u219219.9,upper18.0\u219227.1,under30.0\u219218.4,aerial35.5\u219229.4ms. Isolated upper repeat17.9ms: initial regression did not reproduce; cause not established. All timings retained, no causal speedup claim.",
+    "walkAfter": "All eight actual keyboard legs pass; all eight endpoint/return screenshots inspected. Local terrace proof only; no interior or inter-floor connection claim.",
+    "viewsInspected": [
+      "public/project-records/chayo-terraces-refinement/after-front-chayo-ground.png",
+      "public/project-records/chayo-terraces-refinement/after-chayo-upper.png",
+      "public/project-records/chayo-terraces-refinement/after-chayo-pergola-under.png",
+      "public/project-records/chayo-terraces-refinement/after-chayo-aerial.png"
+    ],
+    "preservation": "docs/project-records/chayo-terraces-refinement/preservation.json",
+    "smoke": "Nine stops passed with zero failed requests, page errors, console errors or missed stops."
   }
 }
