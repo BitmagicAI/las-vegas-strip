@@ -6102,10 +6102,10 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact structural positions and concrete section remain photographic estimates",
-    "Construction cranes, equipment, service access and ground wear missing",
-    "Current construction layout is provisional, not completed 2028 stadium",
-    "Full perimeter walk and cold streaming benchmark not performed"
+    "Exact structural positions and concrete sections remain photographic estimates: no survey or complete as-built engineering set available.",
+    "Two original crawler cranes now represented, but precise equipment count/positions and material storage, service access and ground wear remain unresolved because available photos do not establish a complete measured layout.",
+    "Current construction snapshot is provisional: temporary crane placements are explicitly inferred, and the completed2028 stadium is out of scope.",
+    "Full perimeter public sidewalk continuity remains unverified: rectangular east route enters inherited neighboring parking structure and stops near[451.924,1735.010]; preserve that structure. North road/west sidewalk/south ground short walks pass12legs, but south verge remains visually unfinished and none establishes a connected sidewalk loop."
    ],
    "record": "tools/resort-blocks/athletics-stadium.json",
    "buildings": [
@@ -6122,13 +6122,16 @@
     ],
     "writes": [
      "build/strip-landmarks/athleticsStadium-exterior.glb",
+     "runtime-assets/strip-landmarks/athleticsStadium-exterior.glb",
      "tools/resort-blocks/athletics-stadium.json"
     ],
     "builders": [
+     "tools/strip-landmarks/build_athletics_refinement.py",
      "tools/city-exteriors/audit-athletics.py",
      "tools/city-exteriors/test-athletics.mjs",
      "tools/strip-landmarks/athletics_stadium.py",
-     "tools/strip-landmarks/build_athletics_stadium.py"
+     "tools/strip-landmarks/build_athletics_stadium.py",
+     "tools/strip-landmarks/export_athletics_refinement.py"
     ]
    },
    "acceptance": [

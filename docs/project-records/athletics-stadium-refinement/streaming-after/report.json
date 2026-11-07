@@ -1,0 +1,869 @@
+{
+ "gcMark": null,
+ "summary": {
+  "url": "http://localhost:3180/?probe",
+  "speed": 20,
+  "laps": 2,
+  "jeepMode": false,
+  "lightweight": true,
+  "completed": true,
+  "distanceMetres": 0,
+  "driveError": null,
+  "jeepSpeed": null,
+  "route": {
+   "points": 30,
+   "metres": 701,
+   "fromZ": 1500,
+   "toZ": 2250,
+   "reverse": false
+  },
+  "driveSeconds": 73,
+  "frames": 4362,
+  "meanFrameMs": 16.7,
+  "maxGapMs": 167,
+  "gapsOver100": 1,
+  "gapsOver250": 0,
+  "gapsOver500": 0,
+  "gapsOver1000": 0,
+  "stalledSecondsOver250": 0,
+  "uncoveredLongGaps": 1,
+  "coveredLongGaps": 0,
+  "bootJobs": 14,
+  "driveJobs": 20,
+  "driveJobsHeldMs": 0,
+  "heapMB": {
+   "first": 3397,
+   "max": 3669,
+   "last": 3669
+  },
+  "perLap": [
+   {
+    "lap": 0,
+    "over100": 0,
+    "over250": 0,
+    "over500": 0,
+    "over1000": 0,
+    "stalledSecondsOver250": 0,
+    "maxGap": 0
+   },
+   {
+    "lap": 1,
+    "over100": 1,
+    "over250": 0,
+    "over500": 0,
+    "over1000": 0,
+    "stalledSecondsOver250": 0,
+    "maxGap": 167
+   }
+  ]
+ },
+ "machine": {
+  "busiestProcesses": [
+   [
+    "61.9 6916384 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "50.5 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "22.9 667600 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "17.1 1064224 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.8 1146880 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "13.2 130720 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte"
+   ],
+   [
+    "78.6 6914336 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "50.1 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "20.4 667616 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "18.7 130720 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "15.6 1146784 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.4 1061024 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "56.2 6914848 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "45.6 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "20.0 218192 /Applications/Warp.app/Contents/MacOS/stable",
+    "17.1 1146848 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "16.9 1063248 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "13.4 667616 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer"
+   ],
+   [
+    "54.9 6915072 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "49.7 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "19.6 667616 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "17.0 1146960 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "16.0 1065520 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "13.6 26640 /sbin/launchd"
+   ],
+   [
+    "57.1 6915376 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "52.1 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "25.0 667728 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "20.9 130752 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "16.4 1067712 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.9 1147040 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "89.9 1148496 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "59.7 6915728 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "54.1 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "25.9 667552 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "16.3 1070080 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "14.9 130752 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte"
+   ],
+   [
+    "60.4 6916144 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "54.5 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "26.8 667600 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "19.5 130736 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "15.9 1148400 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.7 1072288 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "58.9 6923840 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "53.1 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "28.6 667600 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "17.1 130720 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "16.8 1148512 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.7 1074576 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "55.0 6923920 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "53.3 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "27.5 667600 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "19.1 130704 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "16.5 1148544 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.7 1076560 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "56.2 6924304 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "49.6 289776 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "26.9 667840 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "17.0 130704 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "16.1 1078768 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "16.0 1148592 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "55.2 6924704 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "50.6 289776 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "22.9 667840 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "19.1 130720 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "15.6 1081200 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.4 1148512 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "54.5 6924960 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "47.3 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "19.5 667856 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "18.3 130704 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "15.8 1148576 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.1 1083376 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "54.5 6925312 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "49.2 289808 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "16.4 1148576 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "16.0 1085616 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "14.2 668832 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "3.8 130720 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conten"
+   ],
+   [
+    "60.5 668768 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "56.5 6940560 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "53.0 289808 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "25.6 279648 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.fr",
+    "21.9 130720 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "17.0 1147776 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "56.5 6942128 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "51.8 289792 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "24.9 668848 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "16.6 1090464 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "16.5 1147904 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "14.6 130736 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte"
+   ],
+   [
+    "62.0 7055552 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "52.4 289840 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "26.4 668848 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "18.2 130736 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "15.9 1147968 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.3 1092768 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ],
+   [
+    "59.2 7117504 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "52.2 289840 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+    "27.2 668848 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper (Renderer",
+    "17.6 130720 /Applications/Antigravity.app/Contents/Frameworks/Antigravity Helper.app/Conte",
+    "16.9 1094976 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f",
+    "15.8 1146896 /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.f"
+   ]
+  ],
+  "loadavg": [
+   [
+    1794049695234,
+    4.29
+   ],
+   [
+    1794049697290,
+    4.29
+   ],
+   [
+    1794049699292,
+    4.51
+   ],
+   [
+    1794049701293,
+    4.51
+   ],
+   [
+    1794049703295,
+    4.51
+   ],
+   [
+    1794049705295,
+    4.39
+   ],
+   [
+    1794049707297,
+    4.39
+   ],
+   [
+    1794049709297,
+    4.76
+   ],
+   [
+    1794049711300,
+    4.76
+   ],
+   [
+    1794049713300,
+    4.76
+   ],
+   [
+    1794049715302,
+    4.61
+   ],
+   [
+    1794049717303,
+    4.61
+   ],
+   [
+    1794049719304,
+    4.57
+   ],
+   [
+    1794049721305,
+    4.57
+   ],
+   [
+    1794049723305,
+    4.57
+   ],
+   [
+    1794049725305,
+    4.76
+   ],
+   [
+    1794049727308,
+    4.76
+   ],
+   [
+    1794049729308,
+    4.62
+   ],
+   [
+    1794049731310,
+    4.62
+   ],
+   [
+    1794049733311,
+    4.62
+   ],
+   [
+    1794049735313,
+    4.41
+   ],
+   [
+    1794049737314,
+    4.41
+   ],
+   [
+    1794049739316,
+    4.54
+   ],
+   [
+    1794049741317,
+    4.54
+   ],
+   [
+    1794049743319,
+    4.54
+   ],
+   [
+    1794049745320,
+    4.65
+   ],
+   [
+    1794049747321,
+    4.65
+   ],
+   [
+    1794049749323,
+    4.52
+   ],
+   [
+    1794049751325,
+    4.52
+   ],
+   [
+    1794049753327,
+    4.52
+   ],
+   [
+    1794049755329,
+    4.24
+   ],
+   [
+    1794049757331,
+    4.24
+   ],
+   [
+    1794049759333,
+    4.22
+   ],
+   [
+    1794049761335,
+    4.22
+   ],
+   [
+    1794049763337,
+    4.22
+   ]
+  ],
+  "cpus": 18,
+  "heartbeatStallsOver40ms": 0,
+  "heartbeatWorstMs": 0
+ },
+ "lightChanges": [],
+ "longGaps": [
+  {
+   "lap": 1,
+   "at": 91939,
+   "gap": 167,
+   "pos": {
+    "s": 115,
+    "x": 16,
+    "z": 1649
+   },
+   "coveredByLoadingJobs": [],
+   "longTasksMs": [
+    171
+   ],
+   "renderer": {
+    "created": {
+     "geo": 0,
+     "tex": -2,
+     "prog": 0,
+     "builders": 0,
+     "pipes": 0
+    },
+    "gpuCalls": {},
+    "stagesMs": {}
+   },
+   "loaf": [
+    {
+     "dur": 175,
+     "block": 121,
+     "render": 171,
+     "style": 0,
+     "scripts": [
+      {
+       "fn": "tick",
+       "src": "work/FrameBudget.js",
+       "dur": 162,
+       "pause": 0
+      }
+     ]
+    }
+   ],
+   "builds": {
+    "n": 0,
+    "ms": 0,
+    "overridePass": 0,
+    "bySignature": []
+   },
+   "lightChangesNearby": [],
+   "workerThreadStalls": {
+    "n": 0,
+    "maxMs": 0
+   }
+  }
+ ],
+ "jobs": [
+  {
+   "key": "city-collision:0,10",
+   "label": "nearby roads and buildings",
+   "at": 31359.599999904633,
+   "queuedMs": 0,
+   "prepareMs": 3.5,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 28,
+   "background": true
+  },
+  {
+   "key": "landmark:excaliburFrontage",
+   "label": "Excalibur lower facades",
+   "at": 32910.09999990463,
+   "queuedMs": 0,
+   "prepareMs": 2.299999952316284,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 26.90000009536743,
+   "background": true
+  },
+  {
+   "key": "highrise-collision:excalibur",
+   "label": "excalibur exterior",
+   "at": 32944.39999985695,
+   "queuedMs": 0,
+   "prepareMs": 2.3000001907348633,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 26.300000190734863,
+   "background": true
+  },
+  {
+   "key": "landmark:athleticsStadium",
+   "label": "Athletics stadium construction",
+   "at": 35077.39999985695,
+   "queuedMs": 0,
+   "prepareMs": 2.5,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 25.800000190734863,
+   "background": true
+  },
+  {
+   "key": "city-collision:0,11",
+   "label": "nearby roads and buildings",
+   "at": 38959.200000047684,
+   "queuedMs": 0,
+   "prepareMs": 16.699999809265137,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 43.19999980926514,
+   "background": true
+  },
+  {
+   "key": "city-collision:0,12",
+   "label": "nearby roads and buildings",
+   "at": 47809.39999985695,
+   "queuedMs": 0,
+   "prepareMs": 16.40000009536743,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 42.40000009536743,
+   "background": true
+  },
+  {
+   "key": "landmark:southArco",
+   "label": "ARCO and ampm south Strip",
+   "at": 51275.799999952316,
+   "queuedMs": 0,
+   "prepareMs": 2.5,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 27.299999952316284,
+   "background": true
+  },
+  {
+   "key": "landmark:luxorExterior",
+   "label": "Luxor exterior",
+   "at": 52009.5,
+   "queuedMs": 0,
+   "prepareMs": 3.5,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 27.399999856948853,
+   "background": true
+  },
+  {
+   "key": "city-collision:0,13",
+   "label": "nearby roads and buildings",
+   "at": 55393.09999990463,
+   "queuedMs": 0,
+   "prepareMs": 17.59999990463257,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 42.5,
+   "background": true
+  },
+  {
+   "key": "landmark:luxorObelisk",
+   "label": "Luxor obelisk",
+   "at": 60976.700000047684,
+   "queuedMs": 0,
+   "prepareMs": 2.3999998569488525,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 26.699999809265137,
+   "background": true
+  },
+  {
+   "key": "landmark:excaliburFrontage",
+   "label": "Excalibur lower facades",
+   "at": 68892.89999985695,
+   "queuedMs": 0,
+   "prepareMs": 2.200000047683716,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 25.300000190734863,
+   "background": true
+  },
+  {
+   "key": "landmark:athleticsStadium",
+   "label": "Athletics stadium construction",
+   "at": 71390.89999985695,
+   "queuedMs": 0,
+   "prepareMs": 2.4000000953674316,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 26.600000143051147,
+   "background": true
+  },
+  {
+   "key": "city-collision:0,11",
+   "label": "nearby roads and buildings",
+   "at": 78741,
+   "queuedMs": 0,
+   "prepareMs": 6,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 30.5,
+   "background": true
+  },
+  {
+   "key": "highrise-collision:new-york",
+   "label": "new-york exterior",
+   "at": 87224.89999985695,
+   "queuedMs": 0,
+   "prepareMs": 2,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 27.5,
+   "background": true
+  },
+  {
+   "key": "landmark:mgmGrand",
+   "label": "MGM Grand exterior",
+   "at": 87252.5,
+   "queuedMs": 10.700000047683716,
+   "prepareMs": 1.9000000953674316,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 16,
+   "background": true
+  },
+  {
+   "key": "city-collision:0,10",
+   "label": "nearby roads and buildings",
+   "at": 87590.79999995232,
+   "queuedMs": 0,
+   "prepareMs": 15.399999856948853,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 40.299999952316284,
+   "background": true
+  },
+  {
+   "key": "landmark:newYorkFrontage",
+   "label": "New York New York streetwall",
+   "at": 88324.5,
+   "queuedMs": 0,
+   "prepareMs": 1.7999999523162842,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 26.09999990463257,
+   "background": true
+  },
+  {
+   "key": "landmark:nynyIrishKiosk",
+   "label": "NYNY Irish outdoor kiosk",
+   "at": 92457.5,
+   "queuedMs": 0,
+   "prepareMs": 1.7999999523162842,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 25.899999856948853,
+   "background": true
+  },
+  {
+   "key": "landmark:showcase",
+   "label": "Showcase Mall street frontage",
+   "at": 94240.89999985695,
+   "queuedMs": 0,
+   "prepareMs": 1.9000000953674316,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 26.300000190734863,
+   "background": true
+  },
+  {
+   "key": "city-collision:0,9",
+   "label": "nearby roads and buildings",
+   "at": 95273.20000004768,
+   "queuedMs": 0,
+   "prepareMs": 2.6000001430511475,
+   "revealMs": 0,
+   "heldMs": 0,
+   "ranMs": 26.5,
+   "background": true
+  }
+ ],
+ "attribution": null,
+ "resident": {
+  "landmarks": [],
+  "resorts": [],
+  "guest": {
+   "stairs": 14,
+   "corridors": 0,
+   "rooms": 0
+  },
+  "interiorBatches": 0
+ },
+ "rendererLong": [
+  {
+   "t": 92106,
+   "gap": 167,
+   "lap": 1,
+   "z": 1648,
+   "busy": false,
+   "d": {
+    "geo": 0,
+    "tex": -2,
+    "prog": 0,
+    "builders": 0,
+    "pipes": 0
+   },
+   "gpu": {},
+   "stages": {}
+  }
+ ],
+ "logs": [
+  {
+   "t": 2426,
+   "level": "info",
+   "text": "[HighriseCity] 36 properties; near facade detail, streamed collision/interiors"
+  },
+  {
+   "t": 2534,
+   "level": "info",
+   "text": "[StripLandmarks] 6 exteriors ready; public interiors and guest hotels remain streamed."
+  },
+  {
+   "t": 3283,
+   "level": "info",
+   "text": "[StripLandmarks] 5 exteriors ready; public interiors and guest hotels remain streamed."
+  },
+  {
+   "t": 3668,
+   "level": "info",
+   "text": "[StripLandmarks] 3 exteriors ready; public interiors and guest hotels remain streamed."
+  },
+  {
+   "t": 8101,
+   "level": "info",
+   "text": "[StripLandmarks] 298 exteriors ready; public interiors and guest hotels remain streamed."
+  },
+  {
+   "t": 9810,
+   "level": "info",
+   "text": "[HotelStreaming] Ready: 64 tower recipes; property-specific lazy guest sets; no guest rooms resident"
+  },
+  {
+   "t": 9832,
+   "level": "info",
+   "text": "[BuildingVisibility] outdoors|true|: 322/923 batches visible"
+  },
+  {
+   "t": 9895,
+   "level": "info",
+   "text": "[StreamingWork] landmark:bellagioArcadePiers \"Bellagio covered arcade supports\": prepare 3 ms, first frames 62 ms, game held 83 ms (waited 0 ms in the queue)"
+  },
+  {
+   "t": 9937,
+   "level": "info",
+   "text": "[StreamingWork] landmark:cosmo \"Cosmopolitan complete exterior\": background, ran 42 ms without holding the game (waited 82 ms in the queue)"
+  },
+  {
+   "t": 9949,
+   "level": "info",
+   "text": "[StreamingWork] landmark:cosmoL1 \"Cosmopolitan · Level 1\": background, ran 12 ms without holding the game (waited 124 ms in the queue)"
+  },
+  {
+   "t": 9967,
+   "level": "info",
+   "text": "[StreamingWork] landmark:cosmoL2 \"Cosmopolitan · Level 2\": background, ran 18 ms without holding the game (waited 136 ms in the queue)"
+  },
+  {
+   "t": 10424,
+   "level": "info",
+   "text": "[StreamingWork] landmark:cosmoL3 \"Cosmopolitan · Level 3\": background, ran 457 ms without holding the game (waited 154 ms in the queue)"
+  },
+  {
+   "t": 10431,
+   "level": "info",
+   "text": "[StreamingWork] landmark:cosmoL4 \"Cosmopolitan · Level 4\": background, ran 6 ms without holding the game (waited 611 ms in the queue)"
+  },
+  {
+   "t": 10450,
+   "level": "info",
+   "text": "[StreamingWork] landmark:cosmoL14 \"Cosmopolitan · Level 14\": background, ran 19 ms without holding the game (waited 618 ms in the queue)"
+  },
+  {
+   "t": 10906,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:-1,3 \"nearby roads and buildings\": prepare 297 ms, first frames 126 ms, game held 456 ms (waited 637 ms in the queue)"
+  },
+  {
+   "t": 10906,
+   "level": "info",
+   "text": "[StreamingWork] queue drained: game held 1094 ms in total"
+  },
+  {
+   "t": 19385,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:0,9 \"nearby roads and buildings\": prepare 239 ms, first frames 83 ms, game held 370 ms (waited 0 ms in the queue)"
+  },
+  {
+   "t": 19552,
+   "level": "info",
+   "text": "[StreamingWork] landmark:showcase \"Showcase Mall street frontage\": prepare 70 ms, first frames 64 ms, game held 166 ms (waited 84 ms in the queue)"
+  },
+  {
+   "t": 19814,
+   "level": "info",
+   "text": "[StreamingWork] landmark:newYorkFrontage \"New York New York streetwall\": background, ran 262 ms without holding the game (waited 250 ms in the queue)"
+  },
+  {
+   "t": 19860,
+   "level": "info",
+   "text": "[StreamingWork] landmark:nynyIrishKiosk \"NYNY Irish outdoor kiosk\": background, ran 47 ms without holding the game (waited 512 ms in the queue)"
+  },
+  {
+   "t": 20007,
+   "level": "info",
+   "text": "[StreamingWork] landmark:mgmGrand \"MGM Grand exterior\": prepare 29 ms, first frames 63 ms, game held 147 ms (waited 559 ms in the queue)"
+  },
+  {
+   "t": 20025,
+   "level": "info",
+   "text": "[StreamingWork] highrise-collision:new-york \"new-york exterior\": background, ran 18 ms without holding the game (waited 705 ms in the queue)"
+  },
+  {
+   "t": 20026,
+   "level": "info",
+   "text": "[StreamingWork] queue drained: game held 1010 ms in total"
+  },
+  {
+   "t": 31388,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:0,10 \"nearby roads and buildings\": background, ran 28 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 32937,
+   "level": "info",
+   "text": "[StreamingWork] landmark:excaliburFrontage \"Excalibur lower facades\": background, ran 27 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 32971,
+   "level": "info",
+   "text": "[StreamingWork] highrise-collision:excalibur \"excalibur exterior\": background, ran 26 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 35103,
+   "level": "info",
+   "text": "[StreamingWork] landmark:athleticsStadium \"Athletics stadium construction\": background, ran 26 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 39002,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:0,11 \"nearby roads and buildings\": background, ran 43 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 47852,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:0,12 \"nearby roads and buildings\": background, ran 42 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 51303,
+   "level": "info",
+   "text": "[StreamingWork] landmark:southArco \"ARCO and ampm south Strip\": background, ran 27 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 52037,
+   "level": "info",
+   "text": "[StreamingWork] landmark:luxorExterior \"Luxor exterior\": background, ran 27 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 55436,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:0,13 \"nearby roads and buildings\": background, ran 43 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 61003,
+   "level": "info",
+   "text": "[StreamingWork] landmark:luxorObelisk \"Luxor obelisk\": background, ran 27 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 68918,
+   "level": "info",
+   "text": "[StreamingWork] landmark:excaliburFrontage \"Excalibur lower facades\": background, ran 25 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 71418,
+   "level": "info",
+   "text": "[StreamingWork] landmark:athleticsStadium \"Athletics stadium construction\": background, ran 27 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 78772,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:0,11 \"nearby roads and buildings\": background, ran 31 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 87252,
+   "level": "info",
+   "text": "[StreamingWork] highrise-collision:new-york \"new-york exterior\": background, ran 28 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 87269,
+   "level": "info",
+   "text": "[StreamingWork] landmark:mgmGrand \"MGM Grand exterior\": background, ran 16 ms without holding the game (waited 11 ms in the queue)"
+  },
+  {
+   "t": 87631,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:0,10 \"nearby roads and buildings\": background, ran 40 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 88351,
+   "level": "info",
+   "text": "[StreamingWork] landmark:newYorkFrontage \"New York New York streetwall\": background, ran 26 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 92483,
+   "level": "info",
+   "text": "[StreamingWork] landmark:nynyIrishKiosk \"NYNY Irish outdoor kiosk\": background, ran 26 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 94267,
+   "level": "info",
+   "text": "[StreamingWork] landmark:showcase \"Showcase Mall street frontage\": background, ran 26 ms without holding the game (waited 0 ms in the queue)"
+  },
+  {
+   "t": 95300,
+   "level": "info",
+   "text": "[StreamingWork] city-collision:0,9 \"nearby roads and buildings\": background, ran 27 ms without holding the game (waited 0 ms in the queue)"
+  }
+ ],
+ "errors": []
+}

@@ -2,7 +2,7 @@
   "id": "athletics-stadium",
   "name": "Athletics stadium construction site",
   "status": "refinement-deferred",
-  "scope": "Current October 2026 visible construction exterior on mapped former Tropicana site; no speculative completed roof or interior gameplay.",
+  "scope": "Inherited October2026 construction structure with reference-supported November2026 static lifting equipment; no speculative completed roof or public worksite interior.",
   "mappedIds": [
     "way/1468590525"
   ],
@@ -80,14 +80,32 @@
   "installedAsset": "build/strip-landmarks/athleticsStadium-exterior.glb",
   "reviewEvidence": "build/city-exteriors/athletics-after",
   "remaining": [
-    "Exact structural positions and concrete section remain photographic estimates",
-    "Construction cranes, equipment, service access and ground wear missing",
-    "Current construction layout is provisional, not completed 2028 stadium",
-    "Full perimeter walk and cold streaming benchmark not performed"
+    "Exact structural positions and concrete sections remain photographic estimates: no survey or complete as-built engineering set available.",
+    "Two original crawler cranes now represented, but precise equipment count/positions and material storage, service access and ground wear remain unresolved because available photos do not establish a complete measured layout.",
+    "Current construction snapshot is provisional: temporary crane placements are explicitly inferred, and the completed2028 stadium is out of scope.",
+    "Full perimeter public sidewalk continuity remains unverified: rectangular east route enters inherited neighboring parking structure and stops near[451.924,1735.010]; preserve that structure. North road/west sidewalk/south ground short walks pass12legs, but south verge remains visually unfinished and none establishes a connected sidewalk loop."
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/athleticsStadium-exterior.glb": "f985d46a7856167bae8480c98af22d62d501175b1ac042a397f58f7567426a74"
+      "build/strip-landmarks/athleticsStadium-exterior.glb": "d6586f8d1941f5f6563f48a61f7bafd8e1362400c3b59196580826ddf8685d5a",
+      "runtime-assets/strip-landmarks/athleticsStadium-exterior.glb": "5ad3d0f8df071b3fb19b9fe33db98a2577f5c839e2b5f1c54921dcc53461013e"
     }
+  },
+  "refinement20261107": {
+    "research": "docs/project-records/athletics-stadium-refinement/research.md",
+    "before": "docs/project-records/athletics-stadium-refinement/before/results.json",
+    "after": "docs/project-records/athletics-stadium-refinement/after/results.json",
+    "visualReview": "docs/project-records/athletics-stadium-refinement/visual-review.md",
+    "captureLinks": "docs/project-records/athletics-stadium-refinement/capture-links.json",
+    "geometry": "109005 triangles; 10136 added; finite/nondegenerate/nonduplicate audit passes; inherited collision byte-identical",
+    "equipmentFootprint": "No overlap of equipment convex footprint with road/sidewalk mask or outside inherited hoarding; not a full structural intersection audit",
+    "optimization": "Level then WebP pass; zero textures; runtime2121232bytes",
+    "cells": "91/92 cells byte-identical; only cell-0_2.bin changed",
+    "localChecks": "docs/project-records/athletics-stadium-refinement/local-checks.json",
+    "performance": "docs/project-records/athletics-stadium-refinement/performance-comparison.json",
+    "status": "verified-scoped-equipment-pass; wider block remains refinement-deferred",
+    "walk": "docs/project-records/athletics-stadium-refinement/walk-review.md",
+    "streaming": "Matched cold synthetic two-lap route completed before/after;73s,mean16.7ms,maxgap167ms,one>100ms,zero>250ms each; peak heap3421\u21923669MB, no regression-free claim. Distance counter0 discrepancy retained.",
+    "smoke": "docs/project-records/athletics-stadium-refinement/smoke.json"
   }
 }

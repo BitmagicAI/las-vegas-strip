@@ -1,0 +1,27 @@
+PROBE athletics-refinement-before: {"url":"http://localhost:3180/?probe","speed":20,"laps":2,"jeepMode":false,"lightweight":true,"completed":true,"distanceMetres":0,"driveError":null,"jeepSpeed":null,"route":{"points":30,"metres":701,"fromZ":1500,"toZ":2250,"reverse":false},"driveSeconds":73,"frames":4364,"meanFrameMs":16.7,"maxGapMs":167,"gapsOver100":1,"gapsOver250":0,"gapsOver500":0,"gapsOver1000":0,"stalledSecondsOver250":0,"uncoveredLongGaps":1,"coveredLongGaps":0,"bootJobs":14,"driveJobs":20,"driveJobsHeldMs":0,"heapMB":{"first":3164,"max":3421,"last":3406},"perLap":[{"lap":0,"over100":0,"over250":0,"over500":0,"over1000":0,"stalledSecondsOver250":0,"maxGap":0},{"lap":1,"over100":1,"over250":0,"over500":0,"over1000":0,"stalledSecondsOver250":0,"maxGap":167}]}
+
+Long gaps (>=120 ms), 1:
+  lap1 t=91955 gap=167 ms at z=1648 s=114  loading=NONE (no loading message)  stages={}
+        gpu={}
+
+Streaming jobs during the drive:
+  city-collision:0,10 "nearby roads and buildings" prepare 4 first-frames 0 held 0 ms
+  landmark:excaliburFrontage "Excalibur lower facades" prepare 3 first-frames 0 held 0 ms
+  highrise-collision:excalibur "excalibur exterior" prepare 3 first-frames 0 held 0 ms
+  landmark:athleticsStadium "Athletics stadium construction" prepare 3 first-frames 0 held 0 ms
+  city-collision:0,11 "nearby roads and buildings" prepare 17 first-frames 0 held 0 ms
+  city-collision:0,12 "nearby roads and buildings" prepare 18 first-frames 0 held 0 ms
+  landmark:southArco "ARCO and ampm south Strip" prepare 3 first-frames 0 held 0 ms
+  landmark:luxorExterior "Luxor exterior" prepare 4 first-frames 0 held 0 ms
+  city-collision:0,13 "nearby roads and buildings" prepare 21 first-frames 0 held 0 ms
+  landmark:luxorObelisk "Luxor obelisk" prepare 2 first-frames 0 held 0 ms
+  landmark:excaliburFrontage "Excalibur lower facades" prepare 3 first-frames 0 held 0 ms
+  landmark:athleticsStadium "Athletics stadium construction" prepare 3 first-frames 0 held 0 ms
+  city-collision:0,11 "nearby roads and buildings" prepare 17 first-frames 0 held 0 ms
+  landmark:mgmGrand "MGM Grand exterior" prepare 2 first-frames 0 held 0 ms
+  highrise-collision:new-york "new-york exterior" prepare 2 first-frames 0 held 0 ms
+  city-collision:0,10 "nearby roads and buildings" prepare 16 first-frames 0 held 0 ms
+  landmark:newYorkFrontage "New York New York streetwall" prepare 2 first-frames 0 held 0 ms
+  landmark:nynyIrishKiosk "NYNY Irish outdoor kiosk" prepare 2 first-frames 0 held 0 ms
+  landmark:showcase "Showcase Mall street frontage" prepare 2 first-frames 0 held 0 ms
+  city-collision:0,9 "nearby roads and buildings" prepare 2 first-frames 0 held 0 ms

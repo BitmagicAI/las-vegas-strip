@@ -91,6 +91,7 @@ patterns={'marble','stone','sandstone','brick','bricklight','copperpanel','coppe
 colors.update({'forum-column-dark':'242c2b','forum-column-vein':'837b69'})
 colors.update({'blvd-painted-metal':'40494b','blvd-green-paint':'648b32','blvd-copper':'b65d32','forum-flat-roof':'c3c3bd','forum-skylight':'355571','forum-limestone':'d6caba','forum-plinth':'b9ab95','forum-panel':'c5b7a2','forum-roof':'c3c3bd','forum-roof-trim':'a9aaa5','forum-service':'b0b5b2','forum-shadow':'4b4c46','forum-glass':'344c54','forum-bronze':'807664','forum-relief':'b7a384','forum-joint':'a79983'})
 colors.update({'stadium-concrete':'b6b3aa','stadium-steel':'6a7070','stadium-arch-paint':'deded6','stadium-shoring-paint':'367368','stadium-hoarding':'435b55','stadium-soil':'a6957c'})
+colors.update({'stadium-crane-red-paint':'a63132','stadium-equipment-dark-paint':'343b3b','stadium-equipment-glass':'344b57'})
 colors.update({'wy-red-fabric':'8f2636','wy-theater-roof-paint':'8c7f68','wy-theater-center-paint':'b9ac90','wy-theater-wall-paint':'9d9075','wy-equipment-paint':'a9aaa1'})
 colors.update({'sc-blue-paint':'7b8b9f','sc-blue-relief':'abb6c5','sc-rim-paint':'303b47','sc-atrium-glass':'477a96','sc-yellow-paint':'d8b521','sc-gold-paint':'c9a552'})
 colors.update({'coke-glass':'447967','showcase-roof':'426b73'})
