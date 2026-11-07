@@ -1,0 +1,84 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Beach Club public west sidewalk and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            578,
+            0.18,
+            -1485
+          ],
+          "position": {
+            "x": 577.9947509765625,
+            "y": 0.15642812728881833,
+            "z": -1484.683837890625
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            578,
+            0.18,
+            -1515
+          ],
+          "position": {
+            "x": 578.0217895507812,
+            "y": 0.3135259437561035,
+            "z": -1514.91357421875
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Beach Club existing court deck and return (access unverified)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            620,
+            0.28,
+            -1460
+          ],
+          "position": {
+            "x": 619.8568725585938,
+            "y": 0.30125000953674314,
+            "z": -1459.7166748046875
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            645,
+            0.28,
+            -1510
+          ],
+          "position": {
+            "x": 644.9664306640625,
+            "y": 0.3012255716323852,
+            "z": -1509.93310546875
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}
