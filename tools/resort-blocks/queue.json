@@ -237,7 +237,7 @@
     {
       "id": "wynn-encore",
       "name": "Wynn and Encore",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "wynn-encore.json"
     },
     {
@@ -1928,5 +1928,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "sphere-garage"
+  "active": "wynn-encore"
 }
