@@ -1,0 +1,13 @@
+# Final installed review
+
+Seven front-first matching neutral daylight views personally inspected after the entry correction. Brown curved canopy, pale signage and scalloped edge visible; horizontal guest spandrel relief visible. Western and southern structure shapes retained, as are the roof mechanical block and separately owned open guest bridge. Original redistributable surfaces only. Exact canopy dimensions remain inferred. No whole-block or photorealistic completion claim.
+
+Eight corrected entry walk legs pass. All four endpoint/return captures inspected. The original north obstruction is removed below3.44m; the next internal column remains beyond the short12m route. This is entry-aperture validation, not a complete driving aisle or street circuit. Twelve ramp walk legs passed on the first installation; subsequent source collision diff affects only the entry column and leaves those ramp routes unchanged. All six ramp walk images inspected.
+
+Three final matched real jeep ramp ascents pass; all six standard start/end captures inspected. High chase-camera clipping under guest/southern ceilings is inherited and remains. Two additional actual repeat drives with low side cameras pass; both side endpoint images personally inspected and show supported jeeps under the ceilings. The camera evidence limitation is resolved for these local endpoints, not fixed in the gameplay camera code.
+
+Final matching jeep p50/p95/max frame gaps(ms), before→after: western24.6/30.8/79.2→24.7/29.0/36.9; guest22.0/24.7/39.0→22.4/25.2/43.1; southern19.1/21.6/29.7→19.6/22.4/37.8. Seven final view p95 values17.9,35.6,18.9,18.1,17.9,24.2,42.8ms; medians16.6–30.2ms. Short local samples do not prove cold-streaming or long-session behavior. Candidate1 timing variation/failure evidence remains preserved.
+
+Final scoped collision audit50removed/50added triangles, only entry facade/first interior column lower portions changed. All unrelated collision triangles identical. Level optimizer and WebP pass completed; no image maps in this model, so level variant retained. Installed GLB659,668bytes. Second grouped bake was required by the detected entry obstruction;91/92runtime cells remain byte-identical to the pre-pass snapshot, only cell--1_-2.bin changed. Unrelated GoldCoast/Wyndham bake drift restored. All11local checks passed after final installation. Final9-stop smoke result stored separately.
+
+Remaining: surveyed dimensions, enclosed guest bridge and hotel landing, western hairpin/southern bridge topology, stairs/lifts, landscaping, full street/upper-level vehicle routes, cold-streaming benchmark, inherited western duplicate faces and chase-camera clipping. Preserve these in the block record.

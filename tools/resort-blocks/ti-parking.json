@@ -58,12 +58,15 @@
     "Enclosed guest bridge glazing and hotel landing (existing bridge currently open-air)",
     "Stair/lift circulation",
     "Landscape and signage detail",
-    "Local driving benchmark and vehicle traversal"
+    "Complete garage-to-street driving circuits, upper-level/hairpin traversal and cold-streaming benchmark; first-ramp local jeep benchmark recorded",
+    "Inherited western st-white duplicate faces and high chase-camera clipping under guest/southern ceilings"
   ],
   "geometry": {
     "triangles": 14458,
     "batches": 17,
-    "optimizedMiB": 0.34
+    "optimizedMiB": 0.34,
+    "refinementSourceTriangles": 23998,
+    "refinementOptimizedBytes": 659668
   },
   "tests": "238 deck support and340 ramp/landing/headroom samples PASS;1517 city cells valid;typecheck PASS;full WebGPU verification PASS57fps startup3011bodies (not local driving benchmark)",
   "bridge": {
@@ -83,7 +86,18 @@
   "reviewFindings": "All six installed captures inspected. Three distinct heights, ramp cuts, roof plant and retained bridge visible. Open parking interiors are overbright under current environment; no claim of photographic lighting. Existing bridge is open-air unlike enclosed reference, and hotel interior landing remains unaudited. Exact western hairpin ramp topology and southern bridge deck fit need further work.",
   "finalBuild": {
     "files": {
-      "build/optimized/build/strip-landmarks/tiParking-exterior.glb": "8a4d922685d03df9d631ce73e4cd47c1d5d4af9cdc1005739adff57836e30b91"
+      "build/optimized/build/strip-landmarks/tiParking-exterior.glb": "ef6569f46a87b2fc39230dd854e72257c07fa33680a63a1056c2174fca3c5338"
     }
+  },
+  "refinement20261107": {
+    "status": "verified-scoped-refinement",
+    "pullRequest": 543,
+    "record": "docs/project-records/ti-parking-refinement",
+    "scope": "Guest entry curved canopy, scalloped valance and signage, horizontal guest facade relief, ground-column entry aperture; western and southern geometry retained.",
+    "dimensions": "Canopy18m span,3.4m projection,3.10m front/4.05m rear elevation;0.25m valance. Inferred fit, not surveyed.",
+    "collision": "50 removed/50 added triangles confined to guest entry facade and first interior column; upper shafts and unrelated collision preserved.",
+    "baseline": "Seven neutral views,12keyboard walk legs,3actual jeep first-ramp ascents; guest/southern jeep endpoint camera obstruction retained.",
+    "decisions": "Retain separate geographic bridge owner; no invented underdeck hairpin/stair/lift topology; canopy not a walkable roof.",
+    "checks": "11local checks PASS;8final entry walk legs PASS;12ramp walk legs PASS before entry-only correction;3final matched jeep ascents and2supplemental visible endpoint drives PASS;7neutral matching views inspected; final smoke report in project record."
   }
 }
