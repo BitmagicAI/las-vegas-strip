@@ -13,7 +13,7 @@
     "Existing city paving stripes/roughness and dense legacy coaster supports differ from reference; preserved in this exterior pass.",
     "Whole NYNY resort remains refinement-deferred; no photoreal completion claim."
   ],
-  "stage": "Installed; visual probe running",
+  "stage": "Installed and visually reviewed2026-11-07; full-resort refinement deferred.",
   "geometry": {
     "triangles": 6681,
     "batches": 10
@@ -37,7 +37,10 @@
   "viewsInspected": [
     "build/city-exteriors/nyny-arrival-review2/arrival-front.png",
     "build/city-exteriors/nyny-arrival-review2/arrival-aerial.png",
-    "build/city-exteriors/nyny-arrival-review2/arrival-under.png"
+    "build/city-exteriors/nyny-arrival-review2/arrival-under.png",
+    "docs/project-records/nyny-kiosk-arrival-refinement/after/front-arrival-south.png",
+    "docs/project-records/nyny-kiosk-arrival-refinement/after/arrival-aerial.png",
+    "docs/project-records/nyny-kiosk-arrival-refinement/after/arrival-under.png"
   ],
   "tests": {
     "roofSupport": 864,
@@ -115,5 +118,15 @@
       "build/strip-landmarks/nynyArrival-exterior-collision.json": "70d6eb38d35c973ad201d68077db428d09bc21c5295578d116f1ad05bb028329"
     }
   },
-  "landscapePass": "docs/project-records/nyny-arrival-landscape/README.md"
+  "landscapePass": "docs/project-records/nyny-arrival-landscape/README.md",
+  "detailRefinement20261107": {
+    "scope": "17 shallow tapered gold crown blades replace rods at existing endpoints; retained landscape and trees.",
+    "record": "docs/project-records/nyny-kiosk-arrival-refinement",
+    "collision": "Byte-identical scoped build assertion",
+    "visualReview": "Six matched before/after neutral daylight views personally inspected, fronts first. All14 after walk endpoint/return captures inspected.",
+    "walking": "Seven routes,14 actual KeyW legs before/after; arrival endpoints shortened to1613.5 after initial full-screen facade captures, originals retained. No rear entrance access claim.",
+    "performance": "docs/project-records/nyny-kiosk-arrival-refinement/performance.json",
+    "status": "Verified installed detail pass; broader refinement remains deferred",
+    "smoke": "Nine dev stops passed; zero failed requests/page errors/console errors/unplaced stops."
+  }
 }

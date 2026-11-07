@@ -179,8 +179,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-mirage-marquee` | L | P2 | 6 | Refine the exterior of Mirage historic marquee and sidewalk shelter |
 | `ext-forum-cooling-towers` | M | P2 | 5 | Refine the exterior of Forum Shops twin cooling towers |
 | `ext-paris-rooftop-bar` | M | P2 | 4 | Refine the exterior of Paris mapped rooftop pavilion |
-| `ext-nyny-irish-kiosk` | M | P2 | 3 | Refine the exterior of Nine Fine Irishmen outdoor kiosk |
-| `ext-nyny-arrival` | M | P2 | 4 | Refine the exterior of New York–New York arrival pavilion and canopy |
 | `ext-bellagio-curved-roofs` | M | P2 | 3 | Refine the exterior of Bellagio curved lakefront roof volumes |
 | `ext-desert-oasis-service` | M | P2 | 4 | Refine the exterior of Desert Oasis detached service building |
 | `ext-pedestrian-lifts` | M | P2 | 5 | Refine the exterior of Harmon and Park MGM pedestrian lifts |

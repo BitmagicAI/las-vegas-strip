@@ -1,0 +1,46 @@
+{
+  "viewport": "960x540",
+  "dpr": 1,
+  "frames": 180,
+  "neutralDaylight": true,
+  "cameraMatch": true,
+  "rows": [
+    {
+      "name": "front-kiosk-east",
+      "beforeP95": 19.200000047683716,
+      "afterP95": 18.5,
+      "changePercent": -3.645833572631496
+    },
+    {
+      "name": "kiosk-south",
+      "beforeP95": 22.699999809265137,
+      "afterP95": 23.299999952316284,
+      "changePercent": 2.6431724585576966
+    },
+    {
+      "name": "kiosk-aerial",
+      "beforeP95": 28.700000047683716,
+      "afterP95": 18.59999990463257,
+      "changePercent": -35.191638070628805
+    },
+    {
+      "name": "front-arrival-south",
+      "beforeP95": 34.10000014305115,
+      "afterP95": 23.5,
+      "changePercent": -31.085044277371367
+    },
+    {
+      "name": "arrival-aerial",
+      "beforeP95": 21.299999952316284,
+      "afterP95": 21.200000047683716,
+      "changePercent": -0.46948312139171167
+    },
+    {
+      "name": "arrival-under",
+      "beforeP95": 22.700000047683716,
+      "afterP95": 23.200000047683716,
+      "changePercent": 2.2026431671792857
+    }
+  ],
+  "interpretation": "Small sample with baseline variance; maximum increase 2.7%. No general speedup claim."
+}
