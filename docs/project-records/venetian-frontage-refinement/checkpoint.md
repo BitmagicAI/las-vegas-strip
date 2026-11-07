@@ -11,3 +11,5 @@ Read related recent checkpoints: PR545 Sphere/Venetian employee garages facade p
 NEXT fresh Google Earth/StreetView and official photograph research, preserve links/acquisition/access dates and inferred dimensions. Front-first identical neutral cameras and actual movement baseline before installation. Original redistributable geometry, existing city-cell pipeline, optimize level+WebP before install, one final shared groupbake, unchangedcells byteidentical. Allstep7/localdevsmoke/actualwalks/matchingperf/visualinspection; records remaining/board/evidence/LFS audit, own-only history beforeeachpush; PRnext selfmerge--merge exacthead, explicitlyclose21 thenpicker. Nevermain/CDN/publish/release/settings. Neverpoll released117/118/203.
 
 Dev3180/editor3181; no owned research tabs or GPUjobs. Preserveuntracked .agents/engine/node_modules/tools/optimize/bm-tools. DraftPRpending creation immediately after this checkpoint commit.
+
+DraftPR551 now open againstnext: https://github.com/BitmagicAI/las-vegas-strip/pull/551 . Claimconfirmed; resume freshresearch and baseline stage, notsetup.
