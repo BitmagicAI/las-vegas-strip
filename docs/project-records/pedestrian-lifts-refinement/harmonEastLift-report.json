@@ -1,6 +1,6 @@
 {
  "rel": "build/strip-landmarks/harmonEastLift-exterior.glb",
- "sourceSha256": "35abb1c4cc99cf75277ae2368a218616292ea9cc24a1494dd5999225cce91fc1",
+ "sourceSha256": "e00f8e0fad5db6ebab392550621327a268ee351971b86308b0fe286db25a2d13",
  "cls": "level",
  "loader": "src/work/StripLandmarks.ts",
  "when": "boot",
@@ -9,7 +9,7 @@
  "overrides": [],
  "exitCode": 0,
  "signal": null,
- "seconds": 0.368,
+ "seconds": 0.349,
  "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/harmonEastLift-exterior.glb .bitmagic/optimize/build/strip-landmarks/harmonEastLift-exterior/out.glb --preset=level --json",
  "failed": [],
  "stderr": [],
@@ -18,25 +18,25 @@
   "dst": ".bitmagic/optimize/build/strip-landmarks/harmonEastLift-exterior/out.glb",
   "preset": "level",
   "before": {
-   "bytes": 560360,
+   "bytes": 560312,
    "triangles": 10894,
-   "vertices": 19417,
+   "vertices": 19415,
    "nodes": 12,
    "skins": 0,
    "animations": 0,
-   "gpuGeometry": 547644,
+   "gpuGeometry": 547596,
    "gpuTextures": 0,
    "textures": [],
    "extensions": []
   },
   "after": {
-   "bytes": 184248,
+   "bytes": 184284,
    "triangles": 10894,
-   "vertices": 19384,
+   "vertices": 19382,
    "nodes": 12,
    "skins": 0,
    "animations": 0,
-   "gpuGeometry": 364260,
+   "gpuGeometry": 364230,
    "gpuTextures": 0,
    "textures": [],
    "extensions": [
@@ -71,7 +71,7 @@
    {
     "name": "smaller",
     "fail": false,
-    "detail": "367.3 KiB saved"
+    "detail": "367.2 KiB saved"
    },
    {
     "name": "Khronos validator",
