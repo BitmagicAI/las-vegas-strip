@@ -10,3 +10,9 @@ No third-party imagery downloaded or committed. Personally inspected the followi
 ## Working scope and Decisions for the owner
 
 Investigate bounded north-village facade ornament refinement within the existing mapped pavilion group (seven roof footprints plus parent podium; at most ten features), preserving prior tower, lake, road, balcony, interior and bridge work. Add only original geometry where observed details can be registered to existing surfaces. Existing heights/layout remain inferred, and exact sculpted ornament is not surveyed. No geometry changes until installed baseline and source ownership are verified. No current shop identity or whole-block completion claim.
+
+
+## Decisions for the owner — bounded additive pass
+Retain the existing five north-village pavilion footprints, heights, windows, balconies, signs and roof profiles. Add shallow original stone cornice dentils and end-wall framed oval medallions, using the existing stone material. The oval form and cornice rhythm are supported by the JERDE built photograph and the historical lakeside panorama; dimensions and exact repetition are inferred to fit existing bay spacing. This does not resolve the broader mismatch in bay counts, proportions, dome finishes or uncertain current tenant signs.
+
+End-wall medallions avoid the existing long-face signs. The existing Via Bellagio circulation mask excludes additions near bridge openings. Decorative geometry has no collision. Five pavilions are a bounded subset of the parent block; preserve the separate PR537 south arcade and curved roofs. No new public interior is claimed in this pass.

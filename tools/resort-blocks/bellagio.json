@@ -3,8 +3,8 @@
   "id": "bellagio",
   "name": "Bellagio",
   "stage": "lakefront-reconstruction-installed",
-  "updated": "2026-10-08",
-  "statusNote": "Mapped north lakefront reconstruction installed with water, distinct village pavilions, vaulted arcade, domes, shoreline planting and promenade. Exact architectural fit and full resort acceptance remain open.",
+  "updated": "2026-11-07",
+  "statusNote": "Bounded north-village ornament pass installed on five existing pavilions: original cornice dentils and framed oval medallions. Existing geometry, signs, interiors and collision retained. Full exterior fidelity and resort acceptance remain open.",
   "nextAction": "Compare all north village elevations and shop-specific detail; refine bridge-facing architecture and public gallery, then continue the remaining Bellagio facade/lobby/terrace work recorded below.",
   "surveyBoundsXZ": [
     -620,
@@ -193,7 +193,8 @@
       "title": "Owner's Google Earth view of the main tower and Spa Tower",
       "kind": "owner-reference",
       "image": "docs/project-records/bellagio-remodel-2026-10-08/owner-reference-google-earth.webp",
-      "note": "Three segments per tower (owner): cream lower with a square row under two tall rows, white band, eight square rows, white crown with different (arched) windows. Visual reference only; nothing traced or textured from it."
+      "note": "Three segments per tower (owner): cream lower with a square row under two tall rows, white band, eight square rows, white crown with different (arched) windows. Visual reference only; nothing traced or textured from it. Access date reflects the dated owner-reference record, not a fresh review in this pass.",
+      "accessed": "2026-10-08"
     }
   ],
   "levels": [
@@ -996,5 +997,25 @@
       "build/strip-landmarks/bellagioArcadePiers-exterior.glb": "7d649dee3ecceefd59bc7e3842219af3981269c1f63442ab74bc6a6a7458f98d",
       "build/strip-landmarks/bellagioArcadePiers-exterior-collision.json": "cd2d436d2f90e9f1370ade52af88e8cf331e905d38682a245fecf05f9070f5d9"
     }
+  },
+  "remaining": [
+    "Physical podium elevations remain estimates because this decorative pass has no new surveyed height evidence.",
+    "Full exterior fidelity remains open: bay counts, pavilion proportions and dome finishes require broader reference matching beyond this additive five-pavilion pass.",
+    "Legacy interior remains at prototype coordinates; registration and public interior reconstruction are outside the bounded exterior ornament changes.",
+    "Mapped lobby and conservatory need a dedicated reference-supported detail and circulation pass; no new interior is claimed here.",
+    "Pool garden and patio detail remains approximate; no pool or patio geometry is changed in this north-village pass.",
+    "Full route and performance acceptance remains pending: only the north promenade and casino approach roundtrips are exercised; historical sign-stair discrepancies and cold/guest transitions remain. Contemporary original controls also exceeded the 60fps budget.",
+    "North village remains a fitted reconstruction: ornament dimensions/repetition are inferred, current tenant identities remain uncertain, and existing reversed-looking shop signs require a separate orientation audit.",
+    "Fountain show and engineering layout remain unimplemented because this pass changes only shallow pavilion decoration.",
+    "Bridge-facing public gallery refinement remains open: existing openings and collision are preserved, but full passage/interior traversal is not established by the approach walks."
+  ],
+  "northVillageOrnament20261107": {
+    "record": "docs/project-records/bellagio-lakefront-refinement",
+    "scope": "Five existing north-village pavilion frames; 348 dentils and 7 framed oval medallions, 10112 additive triangles using the existing stone material. No other model changed.",
+    "preserved": "265 existing mesh groups and 42 labels exactly; authored and runtime collision byte-identical; separate PR537 south arcade/curved roofs retained.",
+    "checks": "11 local checks passed; 10 before and 10 installed movement legs passed; three matching neutral daylight views inspected. Nine-stop dev smoke passed with zero failed requests, page errors, console errors or unplaced stops.",
+    "cells": "91 of 92 cells byte-identical; only cell--1_0 changed. Unrelated Gold Coast/Wyndham LOD drift restored.",
+    "performance": "Initial after timings exceeded the earlier baseline. Contemporary original GLB+cell browser controls also slowed; installed p50 within 1% or lower and p95 lower than control. No improvement or whole-block performance claim.",
+    "decisions": "Original additive detail, inferred dimensions fitted to existing frames; Via circulation masks and long-face signs excluded. Historical references do not establish current tenants."
   }
 }

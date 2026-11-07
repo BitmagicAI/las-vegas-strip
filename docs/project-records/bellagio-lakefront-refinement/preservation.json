@@ -1,0 +1,36 @@
+{
+  "bellagioBlock-exterior-collision.json": {
+    "unchanged": true,
+    "sha256": "54b0eafc45d2d9ca1b27af2f492e3de5dc537df9673b6126023972d7dcddecea"
+  },
+  "bellagioBlock-exterior-runtime-collision.json": {
+    "unchanged": true,
+    "sha256": "3ae37b64e0097a916197ff74ea9aae0b9227f8f49ab30e9b4c8ccbbadffa0b28"
+  },
+  "source": {
+    "unchangedGroups": 265,
+    "unchangedLabels": 42,
+    "addedGroups": 1
+  },
+  "before": {
+    "bytes": 138665600,
+    "sha256": "baa89fe0cd987eb18f93b61fd849e3e7c7c7d62bb8537b820af6945d9c069b21",
+    "meshes": 331,
+    "materials": 67,
+    "extensionsUsed": [
+      "KHR_materials_emissive_strength"
+    ]
+  },
+  "after": {
+    "bytes": 49160292,
+    "sha256": "a27ac492b89df1628bd1c109ff9b877a14a277e169ff543d7c7ea6c820d9cd8f",
+    "meshes": 332,
+    "materials": 67,
+    "extensionsUsed": [
+      "EXT_meshopt_compression",
+      "EXT_texture_webp",
+      "KHR_materials_emissive_strength",
+      "KHR_mesh_quantization"
+    ]
+  }
+}

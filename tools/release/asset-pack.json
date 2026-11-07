@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235216137,
+ "bytes": 1235571199,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -78,8 +78,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_0.bin",
-   "bytes": 1790308,
-   "sha256": "8879da6ed5f0d0d0cacc1e3c84cfc36900c014c3f3be01c925dd4648b3e49eb8",
+   "bytes": 1793382,
+   "sha256": "46358d0451c9bef1aa50ab7cb11b0e01b249be736d77210d663265d6a94227f5",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "cd981a57da298f873eec8a4a4e9a56a02ce2da3a5ae67d559b03d2d6bbabd4b6",
+   "sha256": "34a528c4ed8f35fa7f88dbea00e5f43fc5d627f2507f4567375296befa7d54c2",
    "kind": "runtime cell manifest"
   },
   {
@@ -6780,8 +6780,8 @@
   },
   {
    "path": "build/resort-blocks/bellagio/bellagioBlock-exterior.glb",
-   "bytes": 48808304,
-   "sha256": "22ac221cc5e0cd5fbb57311405cc9eaec4d30c8b1ea2abf6ac920fba94a44ff2",
+   "bytes": 49160292,
+   "sha256": "a27ac492b89df1628bd1c109ff9b877a14a277e169ff543d7c7ea6c820d9cd8f",
    "kind": "optimized"
   },
   {
