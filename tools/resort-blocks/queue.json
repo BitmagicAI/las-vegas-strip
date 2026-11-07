@@ -25,17 +25,17 @@
     {
       "id": "paris",
       "name": "Paris Las Vegas",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "paris.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Creator requests overnight work on remaining resorts, explicitly identifying Venetian. Preserve all unfinished Paris issues and gates."
+        "date": "2026-11-07",
+        "reason": "PR550 verified bounded Arc vault coffer refinement; all full-resort discrepancies and partial gates retained. Continue owner city task sequence."
       }
     },
     {
       "id": "venetian",
       "name": "Venetian / Palazzo",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "venetian.json",
       "deferral": {
         "date": "2026-10-09",
@@ -1928,5 +1928,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "paris"
+  "active": "venetian"
 }
