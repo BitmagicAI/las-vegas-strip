@@ -38,6 +38,13 @@ def exterior(B):
   for j in range(max(1,math.ceil(L/.32))):
    lo=j*.32;hi=min(L,lo+.32);mat='etsc-black-fabric-paint'if j%2 else'etsc-white-fabric-paint'
    B.face(mat,[G.p(lo,5.3,0),G.p(hi,5.3,0),G.p(hi,4.87,0),G.p((lo+hi)/2,4.82,0),G.p(lo,4.87,0)])
+   # Original thin fabric backing and hem, inferred from January2025 Street View.
+   # Preserve the existing front face and collision; decorative thickness 25mm.
+   edge=[(lo,5.3),(hi,5.3),(hi,4.87),((lo+hi)/2,4.82),(lo,4.87)]
+   B.face(mat,[G.p(u,y,.025) for u,y in edge][::-1])
+   for (u0,y0),(u1,y1) in zip(edge,edge[1:]+edge[:1]):
+    B.face(mat,[G.p(u0,y0,0),G.p(u0,y0,.025),G.p(u1,y1,.025),G.p(u1,y1,0)])
+   G.path(mat,[(hi,4.87,-.006),((lo+hi)/2,4.82,-.006),(lo,4.87,-.006)],.009,6)
  # Pillars at the three exposed corners; western edge attaches to existing entry.
  for x,z in [(719,-1547.3),(724.6,-1539.8),(714,-1532.8)]:
   C=Frame(B,x,z,.68,y=0);C.box('etsc-white-frame-paint',(0,2.6,0),(.38,5.2,.38),True);C.box('etsc-white-frame-paint',(0,.35,0),(.57,.7,.57),True);C.box('etsc-white-frame-paint',(0,4.97,0),(.63,.3,.63))
