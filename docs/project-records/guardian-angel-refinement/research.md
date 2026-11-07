@@ -13,3 +13,8 @@
 ## Decisions for the owner / candidate scope
 
 Investigate a reversible public nave with open entry, center aisle, original timber pew geometry and pale folded interior lining. Use existing footprint and roof as envelope; do not invent private-office access or balcony circulation. Exact pew count, proportions, sanctuary levels and dimensions remain inferred pending source fit. Preserve existing exterior artwork study and defer authentic artwork fidelity. Interior materials must follow existing InteriorLighting pipeline; no new runtime lights or per-frame allocations. Establish installed before views and physical entry/approach baseline before editing geometry. No model changes yet.
+
+
+## Candidate authored dimensions (inferred, not surveyed)
+
+Public nave keeps existing 47m envelope, with finish from x833.7 to877.8 and24.6m width. Forty original pews in two banks of20,1.4m row pitch,7.2m bench length,3.2m clear central aisle and clear rear/sanctuary cross aisles. Seat approximately.46m above slab. Exact count is a reversible fit, not observed count. Folded cream lining follows existing roof inset8cm; existing slab supports finish. Sanctuary furniture stays on the level slab because step dimensions are unknown. Original plain hanging cross, no sculptural figure or copied mural. Private office/carport and annex circulation untouched. Portal uses existing paired ArrivalDoor and interior lighting pipeline; no runtime source changes.
