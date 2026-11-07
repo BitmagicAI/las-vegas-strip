@@ -5,7 +5,7 @@
     {
       "id": "cosmopolitan",
       "name": "The Cosmopolitan",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "cosmopolitan.json",
       "deferral": {
         "date": "2026-10-05",
@@ -327,7 +327,7 @@
     {
       "id": "horseshoe-versailles",
       "name": "Horseshoe and Versailles tower block",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "horseshoe-versailles.json"
     },
     {
@@ -1928,5 +1928,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "horseshoe-versailles"
+  "active": "cosmopolitan"
 }
