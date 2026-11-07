@@ -16,9 +16,9 @@
     }
   ],
   "geometry": {
-    "triangles": 44784,
-    "batches": 81,
-    "optimizedMiB": 0.9
+    "triangles": 61368,
+    "batches": 86,
+    "optimizedMiB": 1.23
   },
   "estimates": {
     "towerHeightsM": [
@@ -49,10 +49,10 @@
   ],
   "remaining": [
     "Lake of Dreams mountain, landscaping and pools not fully represented.",
-    "Pool furniture, cabanas, arrival details and detailed storefront identities unfinished.",
+    "Wynn/Encore resort pool furniture, cabanas, arrival details and detailed storefront identities remain unfinished: this bounded pass changes Beach Club only and preserves separate facade owners.",
     "Tower signature signs and exact bronze daylight calibration unfinished.",
     "Public route traversal and exact roof sections remain unverified.",
-    "Beach Club furniture, planting, sculpted facade details and exact pool contours remain unfinished.",
+    "Beach Club now has sparse original daybeds/parasols, dark guards, paired columns and limited lattice. Planting, sculpted facade detail, complete cabana furnishing and exact pool contours remain unfinished because references establish style rather than surveyed placement/sections.",
     "Full public approach and interior-to-deck route traversal is not certified by the targeted structural ray tests."
   ],
   "remainingPass20261014": {
@@ -156,5 +156,17 @@
       "build/strip-landmarks/wynnEncoreExterior-exterior.glb": "22dc415479426ffdfb1b5df28d3170991491b58161edf23b7454ebc9308950b7",
       "build/strip-landmarks/wynnEncoreExterior-exterior-collision.json": "e555dc1998de69a4f6b617755e1086505fbec177f357a2846deabab902d4aee1"
     }
+  },
+  "courtsRefinement20261107": {
+    "status": "verified-bounded-refinement",
+    "record": "docs/project-records/wynn-encore-courts-refinement/checkpoint.md",
+    "research": "docs/project-records/wynn-encore-courts-refinement/research.md",
+    "scope": "Beach Club way/156626862 facade guards, paired columns, return lattice and sparse original court furniture only; all other parent source groups unchanged.",
+    "visual": "Six matching neutral daylight views inspected; corrected inside court baseline used. Thin guards/columns/lattice and sparse daybeds/parasols visible. No whole-block completion claim.",
+    "collision": "All 6423 old triangles retained; 360 furniture triangles added. 839 roof and 721 clear court/pool-bed samples pass.",
+    "performance": "docs/project-records/wynn-encore-courts-refinement/performance-comparison.json",
+    "remaining": "Exact contours, landscaping, other pool courts, cabanas, tower signs/calibration and public interior connections remain unresolved; retain all remaining entries.",
+    "movement": "Four actual after legs pass matching the four before legs; sidewalk and courtyard deck only, access from Esplanade unverified.",
+    "smoke": "Nine stops pass on dev3180, zero failed requests/page/console errors."
   }
 }

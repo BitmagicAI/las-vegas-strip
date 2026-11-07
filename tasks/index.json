@@ -3047,10 +3047,10 @@
    "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
    "items": [
     "Lake of Dreams mountain, landscaping and pools not fully represented.",
-    "Pool furniture, cabanas, arrival details and detailed storefront identities unfinished.",
+    "Wynn/Encore resort pool furniture, cabanas, arrival details and detailed storefront identities remain unfinished: this bounded pass changes Beach Club only and preserves separate facade owners.",
     "Tower signature signs and exact bronze daylight calibration unfinished.",
     "Public route traversal and exact roof sections remain unverified.",
-    "Beach Club furniture, planting, sculpted facade details and exact pool contours remain unfinished.",
+    "Beach Club now has sparse original daybeds/parasols, dark guards, paired columns and limited lattice. Planting, sculpted facade detail, complete cabana furnishing and exact pool contours remain unfinished because references establish style rather than surveyed placement/sections.",
     "Full public approach and interior-to-deck route traversal is not certified by the targeted structural ray tests."
    ],
    "record": "tools/resort-blocks/wynn-encore.json",
@@ -3100,6 +3100,7 @@
      "tools/resort-blocks/wynn-encore.json"
     ],
     "builders": [
+     "tools/city-exteriors/audit-wynn-encore-courts.py",
      "tools/strip-landmarks/build_wynn.py",
      "tools/strip-landmarks/wynn_encore.py"
     ]

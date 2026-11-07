@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1234862163,
+ "bytes": 1235192861,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -276,8 +276,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-2.bin",
-   "bytes": 717893,
-   "sha256": "e5aba2254208e6d861308a78648233052af47056c2348dc42204e5c238183e51",
+   "bytes": 723719,
+   "sha256": "8ca01c08632b35487ea7d391597f65867330e577b454e0849b659ea90c627676",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "852ec8b69551bed6d35caa56f11ab37a669f048d41f75ee9f7c9b8261080fc91",
+   "sha256": "69ad0b4f0434ce3792799c5da5924ce588a70cf4a856688c0bb68090d4d12c5c",
    "kind": "runtime cell manifest"
   },
   {
@@ -11365,7 +11365,7 @@
   {
    "path": "build/strip-landmarks/venues.bin",
    "bytes": 394536,
-   "sha256": "bba73166135eca5e0f1b818903501909ca3059be691d2ac9ef16899ef778368a",
+   "sha256": "d86d5e2b5ccaf5f548c20d02c61bc95a3e69aa0807d669589a22d9f1d691862b",
    "kind": "original"
   },
   {
@@ -11526,14 +11526,14 @@
   },
   {
    "path": "build/strip-landmarks/wynnEncoreExterior-exterior-collision.bin",
-   "bytes": 23248,
-   "sha256": "9a877021409a16d3a1e0df6faf5ed95cfcf6be68978a6d1115c26f98c46d97a0",
+   "bytes": 24400,
+   "sha256": "72efd8abd392b3f656cbf9b01701f46af0862386dc40a0e90335e1a476806f79",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/wynnEncoreExterior-exterior.glb",
-   "bytes": 969524,
-   "sha256": "559ed0890e03a492db16034d1fb6d4de5f661d58891dd07d56fd8fefaf8fec4c",
+   "bytes": 1293244,
+   "sha256": "d8cb5b5f45a6f8dd70de64d9275ada9f953a150bc333c4371d63e76606a912b9",
    "kind": "optimized"
   },
   {

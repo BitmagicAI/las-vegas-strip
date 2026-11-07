@@ -98,9 +98,26 @@ def exterior(B):
          patch('wy-white',x,y-.25,min(x+.45,L),y+4.0,.55)
          patch('wy-red-fabric',min(x+.55,L),y+.18,min(x+1.0,L),y+3.5,.59)
          patch('wy-red-fabric',min(x+3.8,L),y+.18,min(x+4.25,L),y+3.5,.59)
-       # Balustrade strip between the levels; single material batch.
-       for x in np.arange(.7,L,.55):patch('wy-white',x,4.65,min(x+.13,L),5.55,.57)
-       patch('wy-trim',0,5.48,L,5.65,.60)
+       # January 2025 street imagery: thin dark guards above projecting ledges,
+       # paired round columns and pale lattice end screens. Dimensions inferred.
+       patch('wy-trim',0,6.08,L,6.32,.85)
+       for yy in [6.42,7.38]:patch('wy-shadow',0,yy,L,yy+.055,.94)
+       for x in np.arange(.18,L,.32):patch('wy-shadow',x,6.42,min(x+.035,L),7.43,.94)
+       for x in np.arange(.25,L-.65,4.8):
+        for xx in [x,x+.48]:
+         F.tube('wy-white',(xx,.8,-.62),(xx,5.75,-.62),.13,8)
+         F.box('wy-trim',(xx,.75,-.62),(.36,.16,.36))
+         F.box('wy-trim',(xx,5.73,-.62),(.42,.18,.42))
+       # Screen only the short curved return bays, leaving the broad bays open.
+       if 2.0<L<5.5:
+        screen=box(.3,7.6,L-.3,10.45)
+        for slope in [-1,1]:
+         for start in np.arange(-4,L+4,.55):
+          q=LineString([(start,7.6),(start+slope*2.85,10.45)]).intersection(screen)
+          if q.geom_type=='LineString' and q.length>.1:
+           ends=list(q.coords)
+           for u,v in zip(ends,ends[1:]):
+            B.tube('wy-white',(a[0]+ux*u[0]+nx*.68,u[1],a[1]+uz*u[0]+nz*.68),(a[0]+ux*v[0]+nx*.68,v[1],a[1]+uz*v[0]+nz*.68),.035,4)
       else:
        for x in np.arange(.3,L,6):
         patch('wy-shadow',x,1,min(x+4.2,L-.1),5.2,.30)
@@ -161,6 +178,10 @@ def exterior(B):
  B.planar('hgv-pool-tile',water,-1.25,True)
  B.planar('wy-white',water.buffer(.3).difference(water),.30,True)
  B.shell(water,-1.25,.28,'hgv-pool-tile',roof=False)
+ # Original white/red pool furniture; sparse inferred placements, not a count survey.
+ # Reserve the tested circulation lane and 1.5 m of clear coping around the basin.
+ from wynn_court_furniture import furnish_club
+ furnish_club(B,court,water)
  # Long eastern glazed roof, following the court's straight rear edge.
  hull=list(club.convex_hull.exterior.coords)
  rear=[]
