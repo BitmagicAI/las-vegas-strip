@@ -1000,7 +1000,7 @@
     {
       "id": "bellagio-arcade-pavilions",
       "name": "Bellagio covered walkway pavilions",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "bellagio-arcade-pavilions.json"
     },
     {
@@ -1150,7 +1150,7 @@
     {
       "id": "paris-rooftop-bar",
       "name": "Paris mapped rooftop pavilion",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "paris-rooftop-bar.json"
     },
     {
@@ -1916,5 +1916,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "bellagio-arcade-pavilions"
+  "active": "paris-rooftop-bar"
 }

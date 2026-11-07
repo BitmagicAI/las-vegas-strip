@@ -5,17 +5,18 @@
     "way/1424222076"
   ],
   "sources": [
-    "docs/project-records/city-exteriors-2026-10-12/paris-small-parts-research.json"
+    "docs/project-records/city-exteriors-2026-10-12/paris-small-parts-research.json",
+    "docs/project-records/paris-horseshoe-service-refinement/research.json"
   ],
   "remaining": [
     "Exact use of mapped small roof remains uncertain; no speculative venue branding.",
-    "Mapped plan, roof height and6.64m retained terrace datum are not surveyed.",
-    "Pale panels/dark counter/brass shelves follow Ch\u00e9ri photos, but larger Beer Park/Ch\u00e9ri terrace layout and vegetation remain approximate.",
-    "Static ultra960x540 frametimes45\u201347ms median; this is not a60fps driving validation."
+    "Mapped plan, roof height and retained6.64m terrace datum remain estimated; available references do not establish measured elevations.",
+    "Existing Chéri-inspired panels/counter/shelves retained with new footrail/pendant frames; exact mapped pavilion identity and larger terrace vegetation/layout remain unverified by the available views.",
+    "Matched neutral daylight measured in this pass; initial counter p95 spike23.9ms repeated21.8ms against21.1ms before. Full driving benchmark remains unperformed; static views are not60fps validation."
   ],
-  "triangles": 8350,
+  "triangles": 9546,
   "batches": 16,
-  "optimizedMiB": 0.16,
+  "optimizedMiB": 0.184,
   "viewsInspected": [
     "build/city-exteriors/paris-rooftop-bar-review2/cheri-west.png",
     "build/city-exteriors/paris-rooftop-bar-review2/cheri-roof.png",
@@ -102,5 +103,22 @@
       "build/strip-landmarks/parisRooftopBar-exterior-collision.json": "bebef27edfed93a2243609f86bb8120ce89d50bf7a46960c5df857bd483a594d"
     }
   },
-  "parentOwnershipTrim": "build/city-exteriors/paris-rooftop-parent-trim.json"
+  "parentOwnershipTrim": "build/city-exteriors/paris-rooftop-parent-trim.json",
+  "serviceRefinement": {
+    "date": "2026-11-07",
+    "record": "docs/project-records/paris-horseshoe-service-refinement",
+    "change": "Original brass footrail and two dark pendant frames fitted to the existing generic bar; no runtime lights or collision changes.",
+    "inferredDimensions": "Footrail radius.035m at.24m above terrace; pendant frames.54m wide, bottom2.38m above terrace. Reference supports form/palette, not measured proportions.",
+    "status": "installed-verified",
+    "installed": {
+      "bytes": 192916,
+      "indexedTriangles": 9546,
+      "sha256": "b7dcf03472d9a0ee5ef6551c1e4891b4b6f139566b2965c5422c66dd0b1fb53b"
+    },
+    "collision": "Raw collision JSON byte-identical; packed collision unchanged",
+    "performance": "docs/project-records/paris-horseshoe-service-refinement/performance-comparison.json",
+    "review": "docs/project-records/paris-horseshoe-service-refinement/visual-review.md",
+    "walk": "14 before and 14 after actual keyboard legs passed; endpoint/corridor limitations retained in visual-review.md",
+    "smoke": "Nine stops passed; zero failed requests/page errors/console errors/unplaced stops"
+  }
 }

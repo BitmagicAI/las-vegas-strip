@@ -1,0 +1,154 @@
+[
+  {
+    "command": [
+      "bitmagic",
+      "check",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-0.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-1.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/check-public.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-2.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lazy-lod.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-3.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lighting-resize.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-4.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/site-lights.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-5.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-paris-rooftop-bar.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-6.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/stair-paris-rooftop-bar.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-7.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-cvs-east-apron.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-8.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/stair-cvs-east-apron.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-9.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-cvs-horseshoe.mjs"
+    ],
+    "exitCode": 1,
+    "log": "/tmp/paris-horseshoe-check-10.log",
+    "errorSummary": "ENOENT: build/city-exteriors/cvs-horseshoe-samples.json missing. Restored unchanged historical test input; repeat passed468samples."
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/walk-cvs-horseshoe.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-11.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-12.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-13.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-14.log"
+  },
+  {
+    "command": [
+      "bitmagic",
+      "reload",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-15.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-cvs-horseshoe.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-check-10-restored.log",
+    "repeat": "Restore missing historical sample data; no geometry changed."
+  }
+]

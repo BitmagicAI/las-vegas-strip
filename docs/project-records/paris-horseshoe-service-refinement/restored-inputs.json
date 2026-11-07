@@ -1,0 +1,28 @@
+[
+  {
+    "path": "build/city-exteriors/paris-rooftop-bar-stairs.json",
+    "exists": true,
+    "sha256": "9c5ab48774cc19c62d9784e6b812da3a6d81bb49b4ac9436324703b6a58d9bdc"
+  },
+  {
+    "path": "build/city-exteriors/paris-rooftop-bar-samples.json",
+    "exists": true,
+    "sha256": "04b742a57471fb903e0eb2dc83f28fcf9a84c5d38840205aac0149178849d7bf"
+  },
+  {
+    "path": "build/city-exteriors/cvs-east-apron-routes.json",
+    "exists": true,
+    "sha256": "466b10910866951a05069d1637466706158cd560bb91ec29b66a22e0f6613f69"
+  },
+  {
+    "path": "build/city-exteriors/cvs-east-apron-samples.json",
+    "exists": true,
+    "sha256": "0fb1eef014ff248ad4daf8b9fc2e8b867290328c363082043e2599ed187b7434"
+  },
+  {
+    "path": "build/city-exteriors/cvs-horseshoe-samples.json",
+    "source": "main checkout ignored historical build",
+    "sha256": "0b986def6c7e8fdb7873a1597c49f8c90508b1220d9a16aba6ad5012376ba895",
+    "reason": "Initial legacy roof support test failed only because sample file missing; original failure retained."
+  }
+]

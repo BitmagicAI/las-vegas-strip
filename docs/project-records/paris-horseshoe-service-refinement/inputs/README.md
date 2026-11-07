@@ -1,0 +1,1 @@
+Historical ignored audit inputs restored from the main checkout, copied here for reproducibility. Restore these JSON files into build/city-exteriors/ to run the named legacy support/walk tests. Hashes and initial missing-file failure are in ../restored-inputs.json and ../local-checks.json. These are test data, not new geometry.

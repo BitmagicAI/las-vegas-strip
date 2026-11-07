@@ -177,10 +177,8 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-wynn-lakefront` | L | P2 | 7 | Refine the exterior of Wynn Lake of Dreams lakefront and terraces |
 | `ext-mirage-marquee` | L | P2 | 6 | Refine the exterior of Mirage historic marquee and sidewalk shelter |
 | `ext-forum-cooling-towers` | M | P2 | 5 | Refine the exterior of Forum Shops twin cooling towers |
-| `ext-paris-rooftop-bar` | M | P2 | 4 | Refine the exterior of Paris mapped rooftop pavilion |
 | `ext-desert-oasis-service` | M | P2 | 4 | Refine the exterior of Desert Oasis detached service building |
 | `ext-pedestrian-lifts` | M | P2 | 5 | Refine the exterior of Harmon and Park MGM pedestrian lifts |
-| `ext-cvs-horseshoe-east` | M | P2 | 3 | Refine the exterior of CVS east service apron |
 | `site-aria-crystals-veer` | L | P2 | 7 | Review and refine the mapped buildings owned by aria-crystals-veer |
 | `site-geographic-pedestrian-bridge-visual-replacement-suppressed` | S | P2 | 1 | Review and refine the mapped buildings owned by geographic pedestrian bridge; visual replacement suppressed |
 | `site-mapped-background` | M | P2 | 3 | Review and refine the mapped buildings owned by mapped-background |

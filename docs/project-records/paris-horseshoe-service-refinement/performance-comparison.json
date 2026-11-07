@@ -1,0 +1,59 @@
+{
+  "scope": "Matched neutral daylight ultra960x540 DPR1,180frames; static only, not a driving/60fps claim. Initial comparison separately retained. CVS front p95 spike29.5ms with median17.3ms requires one matched repeat; no result discarded.",
+  "views": [
+    {
+      "name": "front-paris-pavilion",
+      "beforeP95": 21.40000009536743,
+      "afterP95": 21.600000143051147,
+      "changePercent": 0.9345796579085519
+    },
+    {
+      "name": "paris-pavilion-roof",
+      "beforeP95": 27.100000143051147,
+      "afterP95": 24,
+      "changePercent": -11.439114858624954
+    },
+    {
+      "name": "paris-counter",
+      "beforeP95": 21.100000143051147,
+      "afterP95": 21.799999952316284,
+      "changePercent": 3.317534618575202
+    },
+    {
+      "name": "front-cvs-service",
+      "beforeP95": 19.700000047683716,
+      "afterP95": 29.5,
+      "changePercent": 49.74619253094137
+    },
+    {
+      "name": "cvs-south-service",
+      "beforeP95": 32.89999985694885,
+      "afterP95": 30.100000143051147,
+      "changePercent": -8.510637465265258
+    },
+    {
+      "name": "cvs-apron-aerial",
+      "beforeP95": 28.5,
+      "afterP95": 29.199999809265137,
+      "changePercent": 2.4561396816320524
+    }
+  ],
+  "repeat": [
+    {
+      "name": "front-cvs-service",
+      "eye": [
+        90,
+        5,
+        310
+      ],
+      "target": [
+        68,
+        3,
+        297
+      ],
+      "p50": 17.600000143051147,
+      "p95": 18.799999952316284
+    }
+  ],
+  "finding": "Initial Paris counter21.1\u219223.9ms p95 repeated21.8ms. Final CVS front19.7\u219229.5ms p95 (median17.3ms) repeated18.8ms with identical camera/settings. Both spikes retained; no persistent regression established by repeats, no speedup/60fps/driving claim."
+}

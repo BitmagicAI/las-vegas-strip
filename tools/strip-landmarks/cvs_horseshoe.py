@@ -12,6 +12,23 @@ def exterior(B):
  for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
   F,L,nx,nz=facade_frame(B,a,b,p,.025)
   if nx>.8:continue
+  if nz>.8 and L>12:
+   # Dec2022 south service-lane panorama: gray loading bays, not retail glass.
+   # Visual overlays preserve the original solid wall and all apron collision.
+   F.box('cv-door-frame-paint',(L/2,1.8,-.08),(L,3.3,.12))
+   for f in [.76,.52]:
+    u=L*f;w=min(3.0,L*.17)
+    F.box('cv-service-paint',(u,1.55,-.17),(w,2.7,.08))
+    for y in np.arange(.28,2.9,.16):F.box('cv-joint-paint',(u,float(y),-.22),(w,.018,.025))
+    for du in [-w/2-.07,w/2+.07]:F.box('cv-frame-paint',(u+du,1.55,-.23),(.13,2.86,.12))
+   for f in [.32,.19]:
+    u=L*f;F.box('cv-joint-paint',(u,1.35,-.17),(1.05,2.3,.08))
+    F.box('cv-frame-paint',(u+.38,1.25,-.24),(.05,.13,.06))
+   for u in [L*.25,L*.5,L*.75]:
+    F.box('cv-frame-paint',(u,3.75,-.18),(.42,.15,.26))
+    F.box('cv-white-paint',(u,3.70,-.32),(.32,.045,.08))
+   for y in np.arange(4.1,8.2,.67):F.box('cv-screen-paint',(L/2,float(y),-.12),(L,.60,.16))
+   continue
   F.box('cv-dark-paint',(L/2,1.65,-.07),(L,3,.1))
   for u in np.arange(.4,L-.4,1.6):
    F.box('cv-glass',(u,1.7,-.14),(1.48,2.75,.04));F.box('cv-frame-paint',(u+.77,1.7,-.19),(.05,2.95,.09))
