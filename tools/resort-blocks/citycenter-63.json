@@ -20,6 +20,12 @@
       "accessed": "2026-10-19",
       "local": "docs/project-records/city-exteriors-2026-10-19/references/citycenter63-leasing.pdf",
       "observed": "Pages 7, 8, 12 inspected. Exploded levels and bridge-level tenant plan. Plans explicitly schematic, not to scale; page 8 is illustrative rendering."
+    },
+    {
+      "url": "https://ocean-prime.com/locations-menus/las-vegas/",
+      "provider": "Tenant official gallery",
+      "accessed": "2026-11-07",
+      "observed": "Outdoor Terrace slides7/8: dark shallow polygonal sunshades with visible support ribs. Modeled twelve retained placements, 2.4m inferred span, 0.25m crown rise; exact fixture count/placement unverified. Details in docs/project-records/citycenter63-refinement/references.md."
     }
   ],
   "uncertainties": [
@@ -83,5 +89,13 @@
       "build/geographic-strip/city.glb": "cbdf7df74f56e51c0b94ce6e7468c22b3e667090c2228b4f9118c5f86c5e0283",
       "build/geographic-strip/detailed.glb": "2fbffcc24c30a4b70e8c9bbce3aef0a6e9fd142c911212a748430d5325db70e6"
     }
+  },
+  "shadeRefinement20261107": {
+    "status": "verified-bounded",
+    "scope": "Twelve terrace canopy meshes only; 32 existing groups, labels, collision and existing glass/paving material definitions preserved. Main mapped building1421481100 changed; west wing1422113647 retained.",
+    "evidence": "docs/project-records/citycenter63-refinement/",
+    "remaining": "All preexisting remaining items retained; no public vertical access, whole-block or photorealism claim.",
+    "checks": "11 local checks; 3 fixed before/after views; 8+8 actual terrace walk legs; 9 dev smoke stops, zero errors; 91/92 cells identical; collision preserved.",
+    "installedSHA256": "37ad4b080be73e45f945d10e9cab22825cac33a09d26d736487e18406503ee5c"
   }
 }

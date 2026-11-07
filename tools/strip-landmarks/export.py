@@ -223,6 +223,8 @@ colors.update({'lob-stone-paint':'c8bda8','lob-glyph-paint':'c8bda8','lob-paving
 
 colors.update({'arc-roof-paint':'c3c8c2','arc-soffit-paint':'b0b7b0','arc-edge-paint':'b2b8b0','arc-timber':'a58b69','arc-foot-paint':'969c90','arc-bolt-paint':'68736c','arc-container-paint':'c2c8bb','arc-rib-paint':'a8b3a8','arc-door-paint':'b4beb1','arc-asphalt':'555b53','arc-line-paint':'b9bcb0'})
 
+colors.update({'c63-shade-fabric':'233b44'})
+
 def material(k):
  if k in materials:return materials[k]
  rgb=np.array([int(colors[k][i:i+2],16)/255 for i in (0,2,4)]);linear=np.where(rgb<.04045,rgb/12.92,((rgb+.055)/1.055)**2.4)
