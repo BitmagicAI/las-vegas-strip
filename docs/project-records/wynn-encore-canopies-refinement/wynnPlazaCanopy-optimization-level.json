@@ -1,0 +1,83 @@
+{
+ "rel": "build/strip-landmarks/wynnPlazaCanopy-exterior.glb",
+ "sourceSha256": "4003ee90a9cf434b79ef560dc0d92c3cccc03e1a4e39d9c5044d28a8721a3a73",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.327,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/wynnPlazaCanopy-exterior.glb .bitmagic/optimize/build/strip-landmarks/wynnPlazaCanopy-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/wynnPlazaCanopy-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/wynnPlazaCanopy-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 87428,
+   "triangles": 1244,
+   "vertices": 3022,
+   "nodes": 7,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 79992,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 33408,
+   "triangles": 1244,
+   "vertices": 3022,
+   "nodes": 7,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 52794,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "7 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "0 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "52.8 KiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

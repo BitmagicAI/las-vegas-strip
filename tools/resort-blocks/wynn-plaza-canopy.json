@@ -19,11 +19,11 @@
     "Surrounding Plaza facade remains generic; real storefront glazing, signage and finer material detail unfinished",
     "Canopy heights and lantern dimensions estimated from April2025 reference",
     "Local paving patch and adjoining road edges still visually discontinuous; no road regeneration in this pass",
-    "Static960x540 timing only; not photorealistic or 60fps moving-route acceptance"
+    "Seven matched daylight views and18actual keyboard legs across the grouped canopies are verified; full driving, cold-streaming and resident-memory qualification remain outside these measurements. No photorealistic or whole-block acceptance."
   ],
   "triangles": 818,
   "batches": 7,
-  "optimizedMiB": 0.02,
+  "optimizedMiB": 0.0318603515625,
   "viewsInspected": [
     "build/city-exteriors/wynn-plaza-canopy-final/wynn-plaza-drive.png",
     "build/city-exteriors/wynn-plaza-canopy-final/wynn-plaza-under.png",
@@ -127,8 +127,22 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/wynnPlazaCanopy-exterior.glb": "b69f4956731e3113b97b3d2db4766800ec6d0dc14c27a6fa386658366e80ea1a",
-      "build/strip-landmarks/wynnPlazaCanopy-exterior-collision.json": "a4cd362da42981a4f8c07a0d55398dc763d6547a536f2bf50b1af486e89dd97c"
+      "runtime-assets/strip-landmarks/wynnPlazaCanopy-exterior.glb": "a332b3b150b90c2eec66d1665739abbe529b20c1cb1bbb364a95f2d9a0fa13fb",
+      "runtime-assets/strip-landmarks/wynnPlazaCanopy-exterior-collision.bin": "a96f40e9b0d772f04b0b152a4750d57a988127321536e078ea9f43a4bd0b9781"
     }
+  },
+  "refinement20261107": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/wynn-encore-canopies-refinement",
+    "scope": "Tapered lantern ribs, trim, finials and closed cap",
+    "collision": "Unchanged JSON and packed binary",
+    "baselineWalkLegs": 10,
+    "performance": "docs/project-records/wynn-encore-canopies-refinement/performance-comparison.json",
+    "preservation": "docs/project-records/wynn-encore-canopies-refinement/preservation.json",
+    "installedWalkLegs": 10,
+    "walkReport": "docs/project-records/wynn-encore-canopies-refinement/walk-after.json",
+    "views": "public/project-records/wynn-encore-canopies-refinement",
+    "checks": "docs/project-records/wynn-encore-canopies-refinement/local-checks.json",
+    "smoke": "docs/project-records/wynn-encore-canopies-refinement/smoke.json"
   }
 }

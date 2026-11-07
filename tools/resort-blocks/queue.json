@@ -1086,13 +1086,17 @@
     {
       "id": "circus-north-canopy",
       "name": "Circus Circus north roadside canopy",
-      "status": "active",
-      "record": "circus-north-canopy.json"
+      "status": "refinement-deferred",
+      "record": "circus-north-canopy.json",
+      "deferral": {
+        "date": "2026-11-06",
+        "reason": "PR531 scoped canopy refinement verified and merged; parent facade and other remaining requirements retained."
+      }
     },
     {
       "id": "encore-tower-suites-canopy",
       "name": "Encore Tower Suites striped arrival canopy",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "encore-tower-suites-canopy.json"
     },
     {
@@ -1912,5 +1916,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "circus-north-canopy"
+  "active": "encore-tower-suites-canopy"
 }

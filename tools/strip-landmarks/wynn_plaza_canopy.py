@@ -26,6 +26,15 @@ def exterior(B):
   B.tube('wpc-bronze-paint',(x,4.9,z),(x,4.5,z),.018,6)
   B.lathe('wpc-lantern-glass',(x,z),[(4.05,.07),(4.4,.16),(4.5,.12)],6)
   B.lathe('wpc-bronze-paint',(x,z),[(4.4,.18),(4.46,.18)],6)
+  # Tapered frame ribs, closed cap and lower finial: April2025 reference.
+  # Decorative original geometry, no added runtime lights or collision.
+  for a in np.linspace(0,math.tau,7)[:-1]:
+   B.tube('wpc-bronze-paint',(x+.072*math.cos(a),4.05,z+.072*math.sin(a)),(x+.164*math.cos(a),4.4,z+.164*math.sin(a)),.009,6)
+  B.lathe('wpc-bronze-paint',(x,z),[(4.03,.075),(4.06,.075)],6)
+  B.lathe('wpc-bronze-paint',(x,z),[(3.97,.0),(4.03,.035)],6)
+  cap=[(x+.12*math.cos(a),4.5,z+.12*math.sin(a)) for a in np.linspace(0,math.tau,7)[:-1]]
+  B.upface('wpc-bronze-paint',cap)
+
  B.planar('wpc-paving-stone',p.union(LineString([(590,-1266),(595,-1266)]).buffer(1.2,cap_style=2)),.20,True)
  samples=[]
  for x in np.arange(p.bounds[0],p.bounds[2],.5):
