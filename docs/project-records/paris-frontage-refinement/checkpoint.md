@@ -11,3 +11,5 @@ Read latest local checkpoints paris-horseshoe-passage and paris-horseshoe-servic
 NEXT read full active Paris components/sources/evidence and current sourceownership; inspect fresh Google Earth/StreetView andofficialphotographs, recordlinks/dates/inferreddimensions. Select bounded reference-supported improvement, front-firstidenticalneutralbaseline andactualwalksbeforeedits. Avoidfullregenerationundoinglaterownershippatches. Optimizeeverychangedmodellevel+WebPbeforeinstallation;onefinalsharedbake/group;unchangedcellsbyteidentical;allstep7,matchingafter/performance,actualwalks,devsmoke;exacthead --merge/explicitissueclose/picker. No main/CDN/publish/release/settings. Neverpollreleased117/118/203.
 
 Worktree vegas-2601-westwood; dev3180/editor3181runningpid13778. NoactiveGPUjobs/researchtabs. Preserveuntracked .agents/engine/node_modules/tools/optimize/bm-tools symlinks. Beforeeverypush fetch+verifyorigin/next..HEAD onlyowncommits.
+
+DraftPR550 opened againstnext: https://github.com/BitmagicAI/las-vegas-strip/pull/550 . Claimconfirmed; resume research/scope, notsetup.
