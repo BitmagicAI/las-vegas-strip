@@ -178,7 +178,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-mirage-marquee` | L | P2 | 6 | Refine the exterior of Mirage historic marquee and sidewalk shelter |
 | `ext-forum-cooling-towers` | M | P2 | 5 | Refine the exterior of Forum Shops twin cooling towers |
 | `ext-desert-oasis-service` | M | P2 | 4 | Refine the exterior of Desert Oasis detached service building |
-| `ext-pedestrian-lifts` | M | P2 | 5 | Refine the exterior of Harmon and Park MGM pedestrian lifts |
 | `site-aria-crystals-veer` | L | P2 | 7 | Review and refine the mapped buildings owned by aria-crystals-veer |
 | `site-geographic-pedestrian-bridge-visual-replacement-suppressed` | S | P2 | 1 | Review and refine the mapped buildings owned by geographic pedestrian bridge; visual replacement suppressed |
 | `site-mapped-background` | M | P2 | 3 | Review and refine the mapped buildings owned by mapped-background |

@@ -1,0 +1,31 @@
+{
+  "models": {
+    "cosmoPedestrianLift": {
+      "bytes": 86704,
+      "indexedTriangles": 4800,
+      "sha256": "6bac1678263a852c8397489a636762c3cfb4f15fc191afa812b9654087200889"
+    },
+    "crystalsPedestrianLift": {
+      "bytes": 120360,
+      "indexedTriangles": 7740,
+      "sha256": "440e376f9c4af1cefe2f035ee1205364c2b1f75bf0bde0f5abf5fd1153fe0832"
+    },
+    "parkPedestrianLift": {
+      "bytes": 50392,
+      "indexedTriangles": 3334,
+      "sha256": "b6d8f2b9255c6c4d8e7fbe3405970a7fc37f9cac2accf1d909d51c83984d8069"
+    },
+    "harmonEastLift": {
+      "bytes": 184248,
+      "indexedTriangles": 10894,
+      "sha256": "5754d2fb43c67ff23cdda7ced464a7ac3ca229be1cd85d4fc5b033955ae189fb"
+    }
+  },
+  "changedCells": [
+    "runtime-assets/baked/cells/cell-0_1.bin",
+    "runtime-assets/baked/cells/cell--1_1.bin",
+    "runtime-assets/baked/cells/cell--1_0.bin"
+  ],
+  "unchangedCells": 89,
+  "collision": "All four raw collision JSON byte-identical to baseline"
+}

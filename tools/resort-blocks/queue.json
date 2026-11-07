@@ -1150,7 +1150,7 @@
     {
       "id": "paris-rooftop-bar",
       "name": "Paris mapped rooftop pavilion",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "paris-rooftop-bar.json"
     },
     {
@@ -1180,7 +1180,7 @@
     {
       "id": "pedestrian-lifts",
       "name": "Harmon and Park MGM pedestrian lifts",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "pedestrian-lifts.json"
     },
     {
@@ -1916,5 +1916,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "paris-rooftop-bar"
+  "active": "pedestrian-lifts"
 }

@@ -543,5 +543,67 @@
     "build/city-exteriors/harmon-bridge-portals-cut.json",
     "build/city-exteriors/crystals-lift-portal-cut.json",
     "build/city-exteriors/cosmo-lift-rail-cut.json"
-  ]
+  ],
+  "liftRefinement": {
+    "date": "2026-11-07",
+    "status": "verified-scoped-pass",
+    "record": "docs/project-records/pedestrian-lifts-refinement",
+    "changes": {
+      "cosmoPedestrianLift": "Exterior panel seam grid added outside shell while preserving original cabin grid; upper call plate.",
+      "crystalsPedestrianLift": "Exterior panel seam grid added; lower projecting ELEVATOR sign. Existing cabin joints retained.",
+      "harmonEastLift": "Exterior seam grid added while preserving cabin grid; upper call plate.",
+      "parkPedestrianLift": "Original shallow rooftop louver box and cap, inferred proportions from January2025 Street View."
+    },
+    "installed": {
+      "models": {
+        "cosmoPedestrianLift": {
+          "bytes": 86728,
+          "indexedTriangles": 4800,
+          "sha256": "fff45c02c1781aa5252ceeabd50066f2328a71823ceaee99f846ccad8206a171"
+        },
+        "crystalsPedestrianLift": {
+          "bytes": 120360,
+          "indexedTriangles": 7740,
+          "sha256": "440e376f9c4af1cefe2f035ee1205364c2b1f75bf0bde0f5abf5fd1153fe0832"
+        },
+        "parkPedestrianLift": {
+          "bytes": 50392,
+          "indexedTriangles": 3334,
+          "sha256": "b6d8f2b9255c6c4d8e7fbe3405970a7fc37f9cac2accf1d909d51c83984d8069"
+        },
+        "harmonEastLift": {
+          "bytes": 184284,
+          "indexedTriangles": 10894,
+          "sha256": "9216f5935a2eeb9bf01e3399b07afdc4048e9c63cb4a26d1e77784824cd8c904"
+        }
+      },
+      "changedCells": [
+        "runtime-assets/baked/cells/cell-0_1.bin",
+        "runtime-assets/baked/cells/cell--1_1.bin",
+        "runtime-assets/baked/cells/cell--1_0.bin"
+      ],
+      "unchangedCells": 89,
+      "collision": "All four raw collision JSON byte-identical to baseline"
+    },
+    "research": "docs/project-records/pedestrian-lifts-refinement/research.json",
+    "remaining": "All existing remaining items retained. No whole-block, survey precision or full driving claim.",
+    "verification": {
+      "localChecks": "docs/project-records/pedestrian-lifts-refinement/local-checks.json",
+      "walk": "docs/project-records/pedestrian-lifts-refinement/walk-after/results.json",
+      "interactions": "docs/project-records/pedestrian-lifts-refinement/interact-after/results.json",
+      "smoke": "docs/project-records/pedestrian-lifts-refinement/smoke.json",
+      "visualReview": "docs/project-records/pedestrian-lifts-refinement/final-visual-review.md",
+      "performance": "docs/project-records/pedestrian-lifts-refinement/performance-paired-repeat.json",
+      "status": "passed-with-performance-variability-recorded",
+      "attribution": "docs/project-records/pedestrian-lifts-refinement/profile-summary.json"
+    },
+    "remainingReasons": {
+      "estimatedHeightsAndCladding": "No surveyed dimensions available; this pass retains datums and adds only reference-supported details.",
+      "harmonCorridorAndStaticEscalators": "Existing circulation/parent interior retained; animation and corridor rebuilding exceed this exterior detail pass.",
+      "pavingSeams": "Unchanged street geometry outside four lift model ownership.",
+      "crystalsParentWalls": "Unchanged neighboring parent building outside claimed lift geometry.",
+      "drivingAndFullResorts": "Matched static local probes cover this pass only; full city driving and resort refinement remain separate work."
+    },
+    "performanceLimitation": "Short-window Cosmo upper p95 differed across runs;900-frame attribution had equal16.7ms median,33.4\u219233.3ms p95,304draws,149resident programs and+744triangles. No geometry/draw/shader bottleneck reproduced; static timing remains variable, not60fps/driving signoff."
+  }
 }

@@ -1,0 +1,503 @@
+{
+  "base": "2348ade30a0ba7a763b926b75551e13a8ee196bd",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "aebdf7d6006b95e270c6591ddb401283afae6fc2c49fa9ae2bacc0fa70df1d25",
+      "bytes": 393533,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-cosmo-upper.png"
+    },
+    {
+      "oid": "6e31a7c22fc3391f6d0ccc8870af7e0a72a857ff1c95e0f4cd61b8d23b8f16da",
+      "bytes": 377587,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-crystals-upper.png"
+    },
+    {
+      "oid": "3479d4857f30f458d24c088e28e33001a09bcd2b4fae85c9655a8a192e0e93b0",
+      "bytes": 542702,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-front-cosmo-street.png"
+    },
+    {
+      "oid": "0c671e7ccc96ae3f62d1ba15cad921dfc4fbefe1a418702f827f5fb40351b788",
+      "bytes": 436365,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-front-crystals-street.png"
+    },
+    {
+      "oid": "452b0049b242b38f620885c9f294ebb820eb65f5c88fbfab61255d0e01900e49",
+      "bytes": 532009,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-front-east-ground-door.png"
+    },
+    {
+      "oid": "d133c29a552b5e0dd1546fbcd9ddd0b283c819d37b1e0980085213e35d5d5d38",
+      "bytes": 659849,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-front-park-street.png"
+    },
+    {
+      "oid": "3fcb53dcaec1e435bbc1a0782e955fac5947e1ef195bd961ae86bea9ac91686a",
+      "bytes": 405084,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-harmon-upper.png"
+    },
+    {
+      "oid": "6215cd7aeb294453a2f0ff75a2c80c5cd270e3d10166befe05db405e6df52517",
+      "bytes": 430094,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-park-upper.png"
+    },
+    {
+      "oid": "5edc6c2c2c1d6ef54e3e2222f73555bfd63f36225249e1e18d08ff3df9803cde",
+      "bytes": 347617,
+      "path": "public/project-records/pedestrian-lifts-refinement/after-repeat-west-landing-ground.png"
+    },
+    {
+      "oid": "fddf9dac72e7f1d89ebc4d385598959183e9aa176c9341292cd36b838ca2807f",
+      "bytes": 392704,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-cosmo-upper.png"
+    },
+    {
+      "oid": "31fb4e0282375d38c88326466f78c8d77c7d701b5dc0538ae28de301645e2a8f",
+      "bytes": 377067,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-crystals-upper.png"
+    },
+    {
+      "oid": "592cab098a0064af215fb9e9995132d4bdf7fe3b017033d67f9a4fce79defde9",
+      "bytes": 541082,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-front-cosmo-street.png"
+    },
+    {
+      "oid": "723265122a4e568009a202617266ea7d40a75e9c3b6737ebe501303806d99342",
+      "bytes": 432493,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-front-crystals-street.png"
+    },
+    {
+      "oid": "13bbac6edc0d6e06b38b71eb6bf29b51c788234cfab037389238f056748ecbb5",
+      "bytes": 527147,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-front-east-ground-door.png"
+    },
+    {
+      "oid": "134d090cf2544eee9458a49d8698df7e000a506e36ead8d2d5c7e1dd041b99a2",
+      "bytes": 660053,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-front-park-street.png"
+    },
+    {
+      "oid": "da149f3a8929638f5f9f7ef3c16694ac4622b88368f7331216d5bac117e66a9e",
+      "bytes": 402434,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-harmon-upper.png"
+    },
+    {
+      "oid": "ff8f54125e47b40caf24ecd6a67a3e71c39009f6efb9972552a67f1c374bf3a1",
+      "bytes": 430242,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-park-upper.png"
+    },
+    {
+      "oid": "ad229c1ffdfecfd0920fd170c51c554ae848c7c340b67e11df8b7050deed3cfb",
+      "bytes": 392733,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-repeat-cosmo-upper.png"
+    },
+    {
+      "oid": "91dfe50032170470a96dce66fa2baf908ff1b9d0ebeb8ac60518641dd1c4bebd",
+      "bytes": 432493,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-repeat-front-crystals-street.png"
+    },
+    {
+      "oid": "33486798f1e748778f4be18f6d0c16e3f5527e0aec9f2917e982b8b0b7a60884",
+      "bytes": 402557,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-repeat-harmon-upper.png"
+    },
+    {
+      "oid": "98b4cca0d79333d49057550cd7168b4fe7ab0165058212fca45796c6ca965b5c",
+      "bytes": 430253,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-repeat-park-upper.png"
+    },
+    {
+      "oid": "2a0778953383c869b79d97e8ae0c6eb7de69798683f2c83bedd162985cd32c34",
+      "bytes": 347655,
+      "path": "public/project-records/pedestrian-lifts-refinement/before-repeat-west-landing-ground.png"
+    },
+    {
+      "oid": "bd22989b91878347ab7daf5b899db419f5699487613092149406a673cdb0c39b",
+      "bytes": 393559,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-cosmo-upper.png"
+    },
+    {
+      "oid": "ce10b5d328d4b175283b561d8898c33106220a2eaf8a507564bb5cf05a4c0660",
+      "bytes": 377585,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-crystals-upper.png"
+    },
+    {
+      "oid": "368f4b1c5cf8b02514b86938820fe9c65b40a6a54e148542628072762d02ca61",
+      "bytes": 542694,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-front-cosmo-street.png"
+    },
+    {
+      "oid": "273a872ac4351a8bebf4ffeb4704152b5d6407e70cf4f77ea8598ba2c3b3a470",
+      "bytes": 436499,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-front-crystals-street.png"
+    },
+    {
+      "oid": "0a479e1f00ed6134868c777de88bd7ab4cf991f8f3c0a3c25520f1d065502c08",
+      "bytes": 531894,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-front-east-ground-door.png"
+    },
+    {
+      "oid": "da15e35182460919289257317a763372dd4178c0408883e2961495b812cc0c98",
+      "bytes": 659903,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-front-park-street.png"
+    },
+    {
+      "oid": "3773dc130b07c06b711759cb9b200ba816f77bf9fcb31f9676c000ca4734cb0c",
+      "bytes": 405110,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-harmon-upper.png"
+    },
+    {
+      "oid": "5d0c8279eecba5904c33720af290be4af7a0684604af9fb03db9ab2d491e2b28",
+      "bytes": 430096,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-park-upper.png"
+    },
+    {
+      "oid": "d29fc7b94badd8e3441bd8ffef4dd6c60cf13502c59fead3e2137b086307e4c1",
+      "bytes": 347657,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-after-west-landing-ground.png"
+    },
+    {
+      "oid": "7e8c78f95655046f7fbbc84942c4d05c98fcaf3f260366bbd1ba4141f28ac983",
+      "bytes": 544300,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-roof-detail-park-roof-detail.png"
+    },
+    {
+      "oid": "dce11b0a25d848eed9330bb47fed64b48a7944232ba27ca37760d2c6405877a8",
+      "bytes": 58802,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-endpoint-0.png"
+    },
+    {
+      "oid": "fdffe6f6c5c810b527c58c928044a37e3a0fe5ed0dd180711d9b099775784860",
+      "bytes": 44432,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-endpoint-1.png"
+    },
+    {
+      "oid": "4a44fa3776348023495a7472e42f83e46b357da78518c86755191f54830d300f",
+      "bytes": 71999,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-endpoint-2.png"
+    },
+    {
+      "oid": "0a2b7f62bdbfa1bdb3da41afe57b8e23c4cd75a68bc3085d3e5741a35d57cda6",
+      "bytes": 50940,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-endpoint-3.png"
+    },
+    {
+      "oid": "ee7b7acb1d4663d74f7d57a72b1534f1c97269a540c9681b1fa928f620fa35ea",
+      "bytes": 411282,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-endpoint-4.png"
+    },
+    {
+      "oid": "e37b8247415674ff935bf6fcf681fa5a9561374c1c4ac5aeb11ede906d717312",
+      "bytes": 425200,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-endpoint-5.png"
+    },
+    {
+      "oid": "b4c9aff6324575748e26b1660ea05de56be1d159359128ce8e7bb9d5d581d738",
+      "bytes": 48055,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-endpoint-6.png"
+    },
+    {
+      "oid": "ce3c5012f01c9431484bb53e4b33cefeaa4ffa2c5e1537940007b8f20da54f1b",
+      "bytes": 51083,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-endpoint-7.png"
+    },
+    {
+      "oid": "4c633fabd0a85901ce437d9acf7940f2be4042d6767a25313416f0cfd550df70",
+      "bytes": 141391,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-return-0.png"
+    },
+    {
+      "oid": "1656a84b572224d57fcfb81d2cabc549dfd5cbf1f3cfb2d35b97eaac87ef3ba9",
+      "bytes": 342151,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-return-1.png"
+    },
+    {
+      "oid": "d8c8a7dd6f930a94701ef71b934469dc93ffc1dce8f696b04df26538f3af5e93",
+      "bytes": 503578,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-return-2.png"
+    },
+    {
+      "oid": "a8e7dc35216a3bbf786a365288d07bb58b1cb2664ed068b962fdf965532600b0",
+      "bytes": 173660,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-return-3.png"
+    },
+    {
+      "oid": "e239f8bbb08fc6766812733d87bdda953bbc63090bf0935e5a69c6e0ac199fc6",
+      "bytes": 428506,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-return-4.png"
+    },
+    {
+      "oid": "bf8cf918db49384d1b59ab04532834296b7623597aadec2d258fb91b853094f6",
+      "bytes": 408930,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-return-5.png"
+    },
+    {
+      "oid": "670df6a3dd5e73ac8a3017e87d91e1796866671ccdff481abb2b69e4266248b4",
+      "bytes": 352168,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-return-6.png"
+    },
+    {
+      "oid": "e9d74eb13ed7ed4e70c546c8c88dd0bdb86685c5a9ff6121c5560a72dac739fd",
+      "bytes": 517142,
+      "path": "public/project-records/pedestrian-lifts-refinement/final-walk-after-walk-return-7.png"
+    },
+    {
+      "oid": "1d77521e24e90cc8ca5503f4bfb28495f98a8f1e2914231e34c8d7d57503c51d",
+      "bytes": 393540,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-cosmo-upper.png"
+    },
+    {
+      "oid": "25c23192801a49174af6d4470e83a2b9516a4f24bcfa93d888a982b84c8d30a6",
+      "bytes": 542674,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-front-cosmo-street.png"
+    },
+    {
+      "oid": "26226c7c42b7705a459f1624c0c3d2488c48c170874ebd8ca45945407621fae6",
+      "bytes": 436499,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-front-crystals-street.png"
+    },
+    {
+      "oid": "e64897c0f661672320bf9354eb63830cb0dae5257950d57a8028983d79581530",
+      "bytes": 405093,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-harmon-upper.png"
+    },
+    {
+      "oid": "278e25bb7104d681710a0e344c22e99c22c072e87e9c97c2f14452b2a7342813",
+      "bytes": 430084,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-park-upper.png"
+    },
+    {
+      "oid": "16143669bcae26237e7d0c2d0646cb76bb0f4ca03d402c405631734d5192a75d",
+      "bytes": 58926,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-endpoint-0.png"
+    },
+    {
+      "oid": "bce98556a95a71a90b195a8cc359483811cf14fcc75837b5eaf8eabd5116e5c0",
+      "bytes": 44400,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-endpoint-1.png"
+    },
+    {
+      "oid": "ba38d43bd627ca811dc80b80efc9e3730f84bf5551050a97839ce8fe55518054",
+      "bytes": 73896,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-endpoint-2.png"
+    },
+    {
+      "oid": "9e748574716e85d1cad36599e55d911d84d907153f587091f0d1de770f30410f",
+      "bytes": 50951,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-endpoint-3.png"
+    },
+    {
+      "oid": "119bdb19269c0a2316f3f322672c7a8a57318889032999362d345113dabfbe09",
+      "bytes": 428040,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-endpoint-4.png"
+    },
+    {
+      "oid": "f0dda548dbf736baa8627679cd193af1ad5048072d3588d5671ab54334adc517",
+      "bytes": 422559,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-endpoint-5.png"
+    },
+    {
+      "oid": "bf1baa92eab59000753deb39f0f20939f92b8390ffb168ced85275054cf38c9d",
+      "bytes": 48050,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-endpoint-6.png"
+    },
+    {
+      "oid": "58454f694fe486ec2b15449cf790d0b9fe30e1e340c7dd83d9d49168c6f68f5c",
+      "bytes": 51134,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-endpoint-7.png"
+    },
+    {
+      "oid": "757c3b33a6fc129f3857fb45d0f029f9233f3fbe3cebef1ad58713b780b8222a",
+      "bytes": 147523,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-return-0.png"
+    },
+    {
+      "oid": "bf7094f6acad2b7986b32653a65da692266d0c32da0e489b23cdc8f3bbbb3fa2",
+      "bytes": 337670,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-return-1.png"
+    },
+    {
+      "oid": "974392754dc5a8f90288b983e9948e73ce06f6c55a83ebb0cbfeba2676253266",
+      "bytes": 504527,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-return-2.png"
+    },
+    {
+      "oid": "f34f1a7e3a73df1c2e25251d5127da20ed361859def712802e5e2b4c173f7655",
+      "bytes": 171444,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-return-3.png"
+    },
+    {
+      "oid": "28d8bcbeca9763ffc1fdc222bb2e872253ba03f70126788b76c55e00442bcec5",
+      "bytes": 427325,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-return-4.png"
+    },
+    {
+      "oid": "cc663138f3f6fef8e8aef6da3aaa6b9e5fb3156e99ea2937dbcb318965af7af1",
+      "bytes": 409046,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-return-5.png"
+    },
+    {
+      "oid": "64646bcf459a7c5996d03bf46ef0285ae8d54389eded68f72af260e9efd35784",
+      "bytes": 354977,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-return-6.png"
+    },
+    {
+      "oid": "4053eaed4600d68778769fd0afa638f4f2e3defc37db771bd7cb6147703398ca",
+      "bytes": 514800,
+      "path": "public/project-records/pedestrian-lifts-refinement/initial-after-walk-return-7.png"
+    },
+    {
+      "oid": "5a55933740bb771b6886a8c552a0d12b5ae58567e8146b97961e779f5cdf6bab",
+      "bytes": 393508,
+      "path": "public/project-records/pedestrian-lifts-refinement/profile-after-cosmo-upper.png"
+    },
+    {
+      "oid": "4037cfc109d7b294f3d03b529ad79a3eea712c2334c932bb65bd5fcb0ff0aade",
+      "bytes": 58895,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-endpoint-0.png"
+    },
+    {
+      "oid": "9ba928deff860bbdbc834e703aaefa95b86c46f84c5fbeb679f865053ba8316f",
+      "bytes": 44133,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-endpoint-1.png"
+    },
+    {
+      "oid": "0c24c3944e9c35bc1984c1172f289a233c1952c46f9472aa0ff4e7ddc14d78ca",
+      "bytes": 72053,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-endpoint-2.png"
+    },
+    {
+      "oid": "56523e34e588b37a20acfff66962fe3793b1f73012e25881425f0c6e8af313e2",
+      "bytes": 51065,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-endpoint-3.png"
+    },
+    {
+      "oid": "77a9f90afa3a574a4947d7814f92fc345325f547ac09d7e505b8abe3cd8f6b90",
+      "bytes": 426400,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-endpoint-4.png"
+    },
+    {
+      "oid": "9e27beae42c21eb72b2ade06c299704a47166636f9729252ad2ab7027bc512a3",
+      "bytes": 425763,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-endpoint-5.png"
+    },
+    {
+      "oid": "f831acce8895a809229ea7a025f62ecfe19f0bd1fbc01d22f2b40e814656f745",
+      "bytes": 47702,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-endpoint-6.png"
+    },
+    {
+      "oid": "907bcb7c1cdfe57fa8f64fbf89a504c5e3a9f23ef8a7570c606808c9423f8e00",
+      "bytes": 51704,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-endpoint-7.png"
+    },
+    {
+      "oid": "8fe1b05eede7537e237c12aeed4da5e31685dd8e8f056b14aceaa530ff81659c",
+      "bytes": 160032,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-return-0.png"
+    },
+    {
+      "oid": "97a0c1fdb08f65b9bf2fa9b0b5bc8847d8bcf63eec4a2e85d1016d91493cd7d4",
+      "bytes": 340850,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-return-1.png"
+    },
+    {
+      "oid": "614c574f5e3f05c96300604721b5f0f5e24e1a86f972752c3ed3888b0b960bc1",
+      "bytes": 504242,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-return-2.png"
+    },
+    {
+      "oid": "f24eb255bdc3d41abff72e6bb0f41a6ec1923465c1e0694e87c43c3dd9145f7d",
+      "bytes": 171593,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-return-3.png"
+    },
+    {
+      "oid": "9dfba5f973aa278c294350d07dfe9804ffdfde576fc065de98e023027f8d80e0",
+      "bytes": 427911,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-return-4.png"
+    },
+    {
+      "oid": "632f4ba6863daa5e83ec01db4bda7ef09a76fedd4243d9c4eb91903472c98734",
+      "bytes": 407611,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-return-5.png"
+    },
+    {
+      "oid": "a627a1248a4e37946c003e0852036cdce5c488c6b902ec1aed1a33ee4efdaeb2",
+      "bytes": 352668,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-return-6.png"
+    },
+    {
+      "oid": "25186daf03f5a2d3b0399b25e731174e0cefb1fbe63769b771189d7f9869a30c",
+      "bytes": 510725,
+      "path": "public/project-records/pedestrian-lifts-refinement/walk-before-walk-return-7.png"
+    },
+    {
+      "oid": "831fea299d636b8bc9cb164c56213f175ea17dfe1d850fc0f21ced5a6f28032e",
+      "bytes": 1790606,
+      "path": "runtime-assets/baked/cells/cell--1_0.bin"
+    },
+    {
+      "oid": "760b51fc250c9b2a0c0e6cbbe7497d9e97db90aff693de5c2ed656d5e59a972d",
+      "bytes": 1202783,
+      "path": "runtime-assets/baked/cells/cell--1_1.bin"
+    },
+    {
+      "oid": "c0d72a4a1c3c782854b31b2e60cbd3560c03088d00d3143dc68325375dd028cc",
+      "bytes": 768656,
+      "path": "runtime-assets/baked/cells/cell-0_1.bin"
+    },
+    {
+      "oid": "df89cec321f6d9cab6347143162008f68ee42d6ec355385350a1b97ade5482e1",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "fff45c02c1781aa5252ceeabd50066f2328a71823ceaee99f846ccad8206a171",
+      "bytes": 86728,
+      "path": "runtime-assets/strip-landmarks/cosmoPedestrianLift-exterior.glb"
+    },
+    {
+      "oid": "440e376f9c4af1cefe2f035ee1205364c2b1f75bf0bde0f5abf5fd1153fe0832",
+      "bytes": 120360,
+      "path": "runtime-assets/strip-landmarks/crystalsPedestrianLift-exterior.glb"
+    },
+    {
+      "oid": "9216f5935a2eeb9bf01e3399b07afdc4048e9c63cb4a26d1e77784824cd8c904",
+      "bytes": 184284,
+      "path": "runtime-assets/strip-landmarks/harmonEastLift-exterior.glb"
+    },
+    {
+      "oid": "b6d8f2b9255c6c4d8e7fbe3405970a7fc37f9cac2accf1d909d51c83984d8069",
+      "bytes": 50392,
+      "path": "runtime-assets/strip-landmarks/parkPedestrianLift-exterior.glb"
+    },
+    {
+      "oid": "9777156e0620c85fdfd8ce4cae202a42fac0d67950db9b460fd4e528205a2a27",
+      "bytes": 1790606,
+      "path": "runtime-assets/baked/cells/cell--1_0.bin"
+    },
+    {
+      "oid": "966bca3b268b4ae6e86151602564de8f1cb3a7fefc9724e0cdfba197b2a0de6c",
+      "bytes": 768656,
+      "path": "runtime-assets/baked/cells/cell-0_1.bin"
+    },
+    {
+      "oid": "31f022a92be741178be4e87302e3281a2da0aea4852a5a13c876fd74f36853ed",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "6bac1678263a852c8397489a636762c3cfb4f15fc191afa812b9654087200889",
+      "bytes": 86704,
+      "path": "runtime-assets/strip-landmarks/cosmoPedestrianLift-exterior.glb"
+    },
+    {
+      "oid": "5754d2fb43c67ff23cdda7ced464a7ac3ca229be1cd85d4fc5b033955ae189fb",
+      "bytes": 184248,
+      "path": "runtime-assets/strip-landmarks/harmonEastLift-exterior.glb"
+    }
+  ],
+  "count": 99,
+  "bytes": 36354007
+}

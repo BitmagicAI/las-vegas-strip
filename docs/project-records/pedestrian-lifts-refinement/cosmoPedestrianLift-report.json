@@ -1,0 +1,83 @@
+{
+ "rel": "build/strip-landmarks/cosmoPedestrianLift-exterior.glb",
+ "sourceSha256": "3965b6e928ccf7e9e8c5ec1e88b22c1326ed4dacd11d55804c703fd366ee660d",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.397,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/cosmoPedestrianLift-exterior.glb .bitmagic/optimize/build/strip-landmarks/cosmoPedestrianLift-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/cosmoPedestrianLift-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/cosmoPedestrianLift-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 223192,
+   "triangles": 4800,
+   "vertices": 6973,
+   "nodes": 10,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 212424,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 86728,
+   "triangles": 4800,
+   "vertices": 6973,
+   "nodes": 10,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 141531,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "10 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "0 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "133.3 KiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

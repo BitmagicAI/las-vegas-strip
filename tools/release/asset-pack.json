@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233577665,
+ "bytes": 1233666478,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -79,13 +79,13 @@
   {
    "path": "build/baked/cells/cell--1_0.bin",
    "bytes": 1790606,
-   "sha256": "f222e66c64d7da20c1fcad40a2684d6f2c004046ca7992b92d12f6021dc1da7b",
+   "sha256": "831fea299d636b8bc9cb164c56213f175ea17dfe1d850fc0f21ced5a6f28032e",
    "kind": "original"
   },
   {
    "path": "build/baked/cells/cell--1_1.bin",
-   "bytes": 1200511,
-   "sha256": "6a8b2f2cbe690d7457f4dde6da5967be895ccf5664056407e8c245225bf157f7",
+   "bytes": 1202783,
+   "sha256": "760b51fc250c9b2a0c0e6cbbe7497d9e97db90aff693de5c2ed656d5e59a972d",
    "kind": "original"
   },
   {
@@ -312,8 +312,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_1.bin",
-   "bytes": 768655,
-   "sha256": "5b3d30869e1437016fce4fa317a212677aba81360494310c0277a71d1e06ff30",
+   "bytes": 768656,
+   "sha256": "c0d72a4a1c3c782854b31b2e60cbd3560c03088d00d3143dc68325375dd028cc",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "8f8709c28ba7633e2eae6f4be1c0c0c07296c8a538c97cbebe92fc07bd1aa8ef",
+   "sha256": "df89cec321f6d9cab6347143162008f68ee42d6ec355385350a1b97ade5482e1",
    "kind": "runtime cell manifest"
   },
   {
@@ -7890,8 +7890,8 @@
   },
   {
    "path": "build/strip-landmarks/cosmoPedestrianLift-exterior.glb",
-   "bytes": 70208,
-   "sha256": "29f0c05fc91c97aa0ae4e5050ab03c13559b1663a8a6a198b78cb93f148fe50d",
+   "bytes": 86728,
+   "sha256": "fff45c02c1781aa5252ceeabd50066f2328a71823ceaee99f846ccad8206a171",
    "kind": "optimized"
   },
   {
@@ -7926,8 +7926,8 @@
   },
   {
    "path": "build/strip-landmarks/crystalsPedestrianLift-exterior.glb",
-   "bytes": 68540,
-   "sha256": "9faa4da62e6bf0693a0d18916032b2020d5eb365b022d211d9d96810eb386f42",
+   "bytes": 120360,
+   "sha256": "440e376f9c4af1cefe2f035ee1205364c2b1f75bf0bde0f5abf5fd1153fe0832",
    "kind": "optimized"
   },
   {
@@ -8742,8 +8742,8 @@
   },
   {
    "path": "build/strip-landmarks/harmonEastLift-exterior.glb",
-   "bytes": 167356,
-   "sha256": "bc8de67264926e9438e1316962a778ce8865a2a5fa7f7dd41faa5b6516649586",
+   "bytes": 184284,
+   "sha256": "9216f5935a2eeb9bf01e3399b07afdc4048e9c63cb4a26d1e77784824cd8c904",
    "kind": "optimized"
   },
   {
@@ -10146,8 +10146,8 @@
   },
   {
    "path": "build/strip-landmarks/parkPedestrianLift-exterior.glb",
-   "bytes": 49120,
-   "sha256": "1a5f90b16133b6852dc3c9e3610fbb3d839018f09307bfb1b862093c3f3bde54",
+   "bytes": 50392,
+   "sha256": "b6d8f2b9255c6c4d8e7fbe3405970a7fc37f9cac2accf1d909d51c83984d8069",
    "kind": "optimized"
   },
   {
