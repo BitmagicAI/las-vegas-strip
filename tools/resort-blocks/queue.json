@@ -523,7 +523,7 @@
     {
       "id": "guardian-angel",
       "name": "Guardian Angel Cathedral",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "guardian-angel.json"
     },
     {
@@ -1920,5 +1920,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "ti-parking"
+  "active": "guardian-angel"
 }
