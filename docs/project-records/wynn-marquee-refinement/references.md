@@ -1,0 +1,7 @@
+# References and decisions — 2026-11-07
+
+- Google Street View, April 2025, directly inspected: https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.12644,-115.16844&heading=90&pitch=50 . Ribbed eraser housing has closed underside and wrapped end faces, above bronze panelled pedestal. Reversible candidate: close existing open ribbed housing underside/ends, keeping its existing footprint and static position. Depth and thickness inferred, not surveyed.
+- Google aerial directly inspected: https://www.google.com/maps/@?api=1&map_action=map&center=36.12645,-115.1682&zoom=21&basemap=satellite . Concave faces and substantial recessed end geometry/roof details visible. Current shallow lens/flat end abstraction is not exact. Preserve this discrepancy; no unsupported whole-sign completion claim.
+- Manufacturer YESCO January 2005 publication, page 3 text and both official photographs directly inspected: https://www.yesco.com/cmsdocuments/Yescozette_Facts_Final.pdf . Total height 135ft and display 100×50ft support existing 41.148m /30.48×15.24m sizes. Historical moving eraser seen at different elevations; retain static lower position matching April2025 reference. Do not reproduce advertising pixels or imply motion. Historical images are contextual, current Street View governs surface finish.
+
+No third-party image pixels committed. Existing logo approximation, dimensions, hillside, motion and performance limitations remain. No public interior justified for a sign.

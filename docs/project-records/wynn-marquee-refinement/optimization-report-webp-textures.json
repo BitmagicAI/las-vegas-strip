@@ -1,0 +1,109 @@
+{
+ "rel": "build/strip-landmarks/wynnMarquee-exterior.glb",
+ "sourceSha256": "07d8e2f972ccfdb3bb79905dc2a1cd0628659d0d48db6372af9a5150a01428d3",
+ "label": "variant webp-textures",
+ "preset": "level",
+ "overrides": [
+  "--base=webp",
+  "--emissive=webp",
+  "--orm=webp-lossless"
+ ],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.457,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/wynnMarquee-exterior.glb .bitmagic/optimize/build/strip-landmarks/wynnMarquee-exterior/out-webp-textures.glb --preset=level --base=webp --emissive=webp --orm=webp-lossless --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/wynnMarquee-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/wynnMarquee-exterior/out-webp-textures.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 2059432,
+   "triangles": 49100,
+   "vertices": 62662,
+   "nodes": 13,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1973984,
+   "gpuTextures": 1398101,
+   "textures": [
+    {
+     "name": "Original Wynn neutral LED artwork",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 71103,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "KHR_materials_emissive_strength"
+   ]
+  },
+  "after": {
+   "bytes": 710212,
+   "triangles": 49100,
+   "vertices": 62662,
+   "nodes": 13,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1376474,
+   "gpuTextures": 1398101,
+   "textures": [
+    {
+     "name": "Original Wynn neutral LED artwork",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "webp",
+     "bytes": 2868,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "EXT_texture_webp",
+    "KHR_materials_emissive_strength",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "13 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "2 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "1.29 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

@@ -26,7 +26,8 @@
     "LED content is original neutral static art; no moving eraser or advertisement playback.",
     "Pedestal detailing and panel proportions are estimated; manufacturer total/display dimensions used.",
     "Surrounding garden/hillside remains unfinished in wynn-lakefront record.",
-    "Static960x540 timings are recorded, not a60fps driving qualification."
+    "Static960x540 timings are recorded, not a60fps driving qualification.",
+    "Direct aerial inspection 2026-11-07 shows substantial recessed end geometry and roof details absent from the shallow lens abstraction; this scoped housing detail does not resolve overall sign section fidelity."
   ],
   "triangles": 9248,
   "batches": 7,
@@ -117,5 +118,12 @@
       "build/strip-landmarks/wynnMarquee-exterior.glb": "3926074d3fda2739ab5078e1cde8d54c9b442065e92208b7dce5b02d45a3a9fc",
       "build/strip-landmarks/wynnMarquee-exterior-collision.json": "40a8dc900354d912dcf1d74a6e3e9ea05e133bfbe573f137d4178215e74ed663"
     }
+  },
+  "refinement20261107": {
+    "status": "research-baseline-and-source-draft",
+    "checkpoint": "docs/project-records/wynn-marquee-refinement/checkpoint.md",
+    "references": "docs/project-records/wynn-marquee-refinement/references.md",
+    "candidate": "Closed static eraser underside/ends and 60mm folded lower rib returns. Decorative only, collision unchanged. Not installed.",
+    "decisions": "Keep existing static original artwork, logo and dimensions; inferred folded metal depth. Current aerial reveals recessed end/roof geometry not captured by the existing shallow lens."
   }
 }
