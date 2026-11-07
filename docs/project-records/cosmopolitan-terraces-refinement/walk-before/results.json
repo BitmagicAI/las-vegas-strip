@@ -1,0 +1,145 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Boulevard pool south deck and return (teleport start; vertical access unverified)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -40,
+            17.04,
+            688
+          ],
+          "position": {
+            "x": -40.08910369873047,
+            "y": 17.069051055908204,
+            "z": 688.0010375976562
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -40,
+            17.04,
+            675
+          ],
+          "position": {
+            "x": -40.000240325927734,
+            "y": 17.0690625,
+            "z": 675.0451049804688
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            -40,
+            17.04,
+            688
+          ],
+          "position": {
+            "x": -39.99993133544922,
+            "y": 17.06905487060547,
+            "z": 687.9146728515625
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            -46,
+            17.04,
+            688
+          ],
+          "position": {
+            "x": -45.91587829589844,
+            "y": 17.069056777954103,
+            "z": 687.9992065429688
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Chelsea pool approach and return (teleport start; vertical access unverified)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -304,
+            22.64,
+            713
+          ],
+          "position": {
+            "x": -304.0967712402344,
+            "y": 22.670625,
+            "z": 713
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -296,
+            22.64,
+            715
+          ],
+          "position": {
+            "x": -296.0723571777344,
+            "y": 22.670531539916993,
+            "z": 714.981201171875
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            -304,
+            22.64,
+            713
+          ],
+          "position": {
+            "x": -303.914306640625,
+            "y": 22.67062309265137,
+            "z": 713.0218505859375
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            -314,
+            22.64,
+            713
+          ],
+          "position": {
+            "x": -313.9049377441406,
+            "y": 22.67051628112793,
+            "z": 713.0005493164062
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [
+      "cosmo",
+      "cosmoL3",
+      "cosmoL4",
+      "cosmoL14"
+    ],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}
