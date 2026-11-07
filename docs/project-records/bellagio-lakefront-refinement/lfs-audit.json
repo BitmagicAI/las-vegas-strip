@@ -1,0 +1,108 @@
+{
+  "base": "bac274313f876601852bf3625965e1402c37e4e5",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "3e3c5b3cdb96725cd57cffb73bb5e18197fda32098af0ceb88d1e7deff3d1740",
+      "bytes": 543046,
+      "path": "public/project-records/bellagio-lakefront-refinement/after/bellagio-east-pavilion.png"
+    },
+    {
+      "oid": "46352ca42d39c9bc40ec518a0674a82697eafb650f0a0828dd1eaf1d0c60b025",
+      "bytes": 484016,
+      "path": "public/project-records/bellagio-lakefront-refinement/after/bellagio-village-front.png"
+    },
+    {
+      "oid": "2cbc8fa2ec01e37718c370cf0744088dc40652e272609b4e8df8844b878b40b5",
+      "bytes": 595089,
+      "path": "public/project-records/bellagio-lakefront-refinement/after/bellagio-west-pavilions.png"
+    },
+    {
+      "oid": "375a2171d0708d751ff224e63f4671e3e75aca0ad6dafebfdd131035d828f6b3",
+      "bytes": 541870,
+      "path": "public/project-records/bellagio-lakefront-refinement/before/bellagio-east-pavilion.png"
+    },
+    {
+      "oid": "9c22d4f93ab5ede5a0e79b91843db542c6dffe9f7bcb6750715e6cdb64025967",
+      "bytes": 483906,
+      "path": "public/project-records/bellagio-lakefront-refinement/before/bellagio-village-front.png"
+    },
+    {
+      "oid": "7b4aa5b20a072b07318c29301b4d628cc2061bc41d4b97419f54ff075efb74ed",
+      "bytes": 593733,
+      "path": "public/project-records/bellagio-lakefront-refinement/before/bellagio-west-pavilions.png"
+    },
+    {
+      "oid": "0096cb20f9d9d91ece3f6435262ba3a1453f0223711847532dc00e8b3b5b14f5",
+      "bytes": 540601,
+      "path": "public/project-records/bellagio-lakefront-refinement/control-before/bellagio-east-pavilion.png"
+    },
+    {
+      "oid": "258d2b4f56682a180c2449a863c1a04f2fb90358d3751a748626e23f0211f91c",
+      "bytes": 484030,
+      "path": "public/project-records/bellagio-lakefront-refinement/control-before/bellagio-village-front.png"
+    },
+    {
+      "oid": "9bc47c9f4c73827fabf984c01b8a25ed32d73b14e6675e087ad0e940778175ff",
+      "bytes": 593733,
+      "path": "public/project-records/bellagio-lakefront-refinement/control-before/bellagio-west-pavilions.png"
+    },
+    {
+      "oid": "a403c34ef1d9fa4dbe185e0d2798738f2d4c2346395b7228abc67f90a779c229",
+      "bytes": 577678,
+      "path": "public/project-records/bellagio-lakefront-refinement/walk-after/walk-endpoint-0.png"
+    },
+    {
+      "oid": "33045dabf815f7662d8acee33a24a4b17e2eb68e089004aa678199ea9f28bc1b",
+      "bytes": 198247,
+      "path": "public/project-records/bellagio-lakefront-refinement/walk-after/walk-endpoint-1.png"
+    },
+    {
+      "oid": "cbb33396930fe1ca974ed62f3983c0001a4e48475c747fa781fc665bd3c8094d",
+      "bytes": 483452,
+      "path": "public/project-records/bellagio-lakefront-refinement/walk-after/walk-return-0.png"
+    },
+    {
+      "oid": "2641f4358d118269b838afe0b9a576a5341b5e92dbcb63c4002331718aead9ce",
+      "bytes": 396443,
+      "path": "public/project-records/bellagio-lakefront-refinement/walk-after/walk-return-1.png"
+    },
+    {
+      "oid": "175f3c98dc2194c7436881094919bf5f5a4d16f361b68cc58216cea452524b28",
+      "bytes": 586271,
+      "path": "public/project-records/bellagio-lakefront-refinement/walk-before/walk-endpoint-0.png"
+    },
+    {
+      "oid": "7e567b46fa6103301c07e4e3a57307106a31953bbeeb3f884b4910d8c40b8fd2",
+      "bytes": 209265,
+      "path": "public/project-records/bellagio-lakefront-refinement/walk-before/walk-endpoint-1.png"
+    },
+    {
+      "oid": "07de57215831449caadb9f48bed68b5b2612ca87d1245009d59664f63329ff2e",
+      "bytes": 484589,
+      "path": "public/project-records/bellagio-lakefront-refinement/walk-before/walk-return-0.png"
+    },
+    {
+      "oid": "1242aa60819e6427c2b86f3e16fd9a8979815c7f375efa84693ca9bad4f72cf4",
+      "bytes": 396138,
+      "path": "public/project-records/bellagio-lakefront-refinement/walk-before/walk-return-1.png"
+    },
+    {
+      "oid": "46358d0451c9bef1aa50ab7cb11b0e01b249be736d77210d663265d6a94227f5",
+      "bytes": 1793382,
+      "path": "runtime-assets/baked/cells/cell--1_0.bin"
+    },
+    {
+      "oid": "34a528c4ed8f35fa7f88dbea00e5f43fc5d627f2507f4567375296befa7d54c2",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "a27ac492b89df1628bd1c109ff9b877a14a277e169ff543d7c7ea6c820d9cd8f",
+      "bytes": 49160292,
+      "path": "runtime-assets/resort-blocks/bellagio/bellagioBlock-exterior.glb"
+    }
+  ],
+  "count": 20,
+  "bytes": 59159582
+}

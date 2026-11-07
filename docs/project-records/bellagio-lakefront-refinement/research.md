@@ -1,0 +1,18 @@
+# North Bellagio reference review — 2026-11-07
+
+No third-party imagery downloaded or committed. Personally inspected the following sources in the browser.
+
+- [JERDE architect project](https://www.jerde.com/projects/7501/bellagio): historical design sketch, dome plan, physical massing models and built dusk lakefront photograph. Built photograph shows cream/pink plaster, dark bronze-green arched glazing, small circular rosette/oculus ornaments above arches, rectangular framed spandrels around oval medallions, corbel/dentil-like cornice rhythm, projecting stone balconies/balusters, terracotta roofs, patinated dome and rocky planted shoreline. Photo acquisition date unknown; visible HERMES/CIRCO signage is historical and cannot establish current tenants. Diagram/model confirm general massing relationships, not measured current dimensions. Video unavailable; still photographs inspected successfully.
+- [Google aerial overview](https://www.google.com/maps/@36.1147,-115.1734,694m/data=!3m1!1e3) and [detail](https://www.google.com/maps/@36.1137,-115.1743,347m/data=!3m1!1e3): north curved glazed arcade, distinct round rotundas and projecting tiled pavilions, bridge landings and lake shoreline visually confirmed. Underlying capture date unavailable; copyright2026 is not imagery acquisition date. Map labels do not date the imagery.
+- [Google Street View January2025](https://www.google.com/maps/@?api=1&map_action=pano&pano=Jugq4jeaN-XOT3REnuEzSQ&heading=245&pitch=5): resolves36.114322,-115.1727751. Bridge soffit and truck obstruct most lakefront; cream bridge relief/balusters and eastern pavilion seen. Not a full village elevation reference.
+- [GRADD CO panorama June2020](https://www.google.com/maps/@?api=1&map_action=pano&pano=CIHM0ogKEICAgIDcstqXnwE&heading=290&pitch=5): resolves36.113703,-115.1732956. Historical user panorama, not current Google street capture. Across-lake village shows circular ornaments over arched bays, rectangular spandrel with oval centerpiece and stepped cornices; corroborates enduring architectural character in architect photograph. Foreground promenade balusters and lantern are separate ownership. Cannot establish current tenant fit-out.
+
+## Working scope and Decisions for the owner
+
+Investigate bounded north-village facade ornament refinement within the existing mapped pavilion group (seven roof footprints plus parent podium; at most ten features), preserving prior tower, lake, road, balcony, interior and bridge work. Add only original geometry where observed details can be registered to existing surfaces. Existing heights/layout remain inferred, and exact sculpted ornament is not surveyed. No geometry changes until installed baseline and source ownership are verified. No current shop identity or whole-block completion claim.
+
+
+## Decisions for the owner — bounded additive pass
+Retain the existing five north-village pavilion footprints, heights, windows, balconies, signs and roof profiles. Add shallow original stone cornice dentils and end-wall framed oval medallions, using the existing stone material. The oval form and cornice rhythm are supported by the JERDE built photograph and the historical lakeside panorama; dimensions and exact repetition are inferred to fit existing bay spacing. This does not resolve the broader mismatch in bay counts, proportions, dome finishes or uncertain current tenant signs.
+
+End-wall medallions avoid the existing long-face signs. The existing Via Bellagio circulation mask excludes additions near bridge openings. Decorative geometry has no collision. Five pavilions are a bounded subset of the parent block; preserve the separate PR537 south arcade and curved roofs. No new public interior is claimed in this pass.

@@ -213,6 +213,12 @@ edge_report['vergeSupportTrianglesAdded']=support_roadside_verge(b,json.loads(Pa
 (OUT/'lake-edge-ownership.json').write_text(json.dumps(edge_report,indent=2))
 import bellagio_service
 bellagio_service.build(b)
+# Additive reference-supported village ornament; no circulation/collision changes.
+from patch_bellagio_village_ornament import ornament
+ornament_groups, ornament_counts = ornament()
+for group in ornament_groups:
+ b.groups[(group['property'],group['source'],group['material'],group['detail'])]=group
+(OUT/'village-ornament-counts.json').write_text(json.dumps(ornament_counts,indent=2))
 b.save_all()
 for v in venues:
  for layer in ['exterior','interior']:
