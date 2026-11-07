@@ -13,3 +13,16 @@ NEXT read full active Paris components/sources/evidence and current sourceowners
 Worktree vegas-2601-westwood; dev3180/editor3181runningpid13778. NoactiveGPUjobs/researchtabs. Preserveuntracked .agents/engine/node_modules/tools/optimize/bm-tools symlinks. Beforeeverypush fetch+verifyorigin/next..HEAD onlyowncommits.
 
 DraftPR550 opened againstnext: https://github.com/BitmagicAI/las-vegas-strip/pull/550 . Claimconfirmed; resume research/scope, notsetup.
+
+
+## 2026-11-07 resumed: reference survey and pre-installation baseline
+
+Fresh official Caesars Main Valet photograph and Google aerial / December2022 west / January2025 east Street View inspected. Links, image dates, observed versus inferred geometry and retained discrepancies saved in research.md. Bounded decision: Arc main vault and two mapped piers, additive original coffer frames; all other frontage retained.
+
+Three front-first neutral baseline views completed and personally inspected in before/: front29.9/36.5ms, vault19.1/23.2ms, east41.5/52.3ms median/p95. Use identical committed camera script for after. Existing smooth intrados clearly lacks reference-supported rectangular coffers. Eight actual installed movement legs through the main opening and back passed in before-walk/results.json; initial teleport only, movement uses KeyW, no doors involved. These are baseline results, not an installed-change pass.
+
+Created tools/resort-blocks/patch_paris_arc_coffers.py and uninstalled candidate .bitmagic/paris-arc-candidate/parisBlock-exterior.json.45 coffer frames,5400 triangles,415 old groups retained; no collision changes. Two64m cell groups. Raw main-checkout exterior GLB and both collision hashes match active worktree; authored JSON sourceSHA b7a48be2e185bc618e0bbee18c15ec9b90775681d911531f52ed0237dc580e58. Audit coffer-audit.json. Baseline source JSON lives in main checkout build/resort-blocks/paris; active worktree initially lacks it. Do not regenerate the entire resort.
+
+NEXT: finish additive candidate verification, add safe full-builder hook after existing rooftop trim, export ONLY parisBlock-exterior using a temporary exporter copy with out=.bitmagic/paris-arc-candidate (exporter supports --only), run level and WebP optimization before installation. Candidate not exported/optimized/installed yet. Preserve all415 source groups and labels, collision/interiors/PR521 andPR538, and two-cell provenance. Then install through existing pipeline, bake shared data once, retain unchanged cells byte-identically, all step7 checks, identical after captures/performance and eight actual movement legs,9stop devsmoke. Archive local capture evidence only. Complete parent remaining/board/PR550/LFS accounting before ready, exact-head --merge and explicit issue20 close, then picker. Do not replay research/baselines. No release/CDN/main operations.
+
+Candidate verification PASS: all415 older groups and all labels structurally identical, two correctly assigned64m cells,5400 nondegenerate new triangles. No GPU or shell jobs running. Local baseline PNG/results remain under ignored evidence directories and must be archived before final PR completion.
