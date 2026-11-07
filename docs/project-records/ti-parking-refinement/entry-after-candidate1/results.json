@@ -1,0 +1,112 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "south entry beneath canopy",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -34,
+            0.24,
+            -951
+          ],
+          "position": {
+            "x": -33.92160415649414,
+            "y": 0.25437500953674314,
+            "z": -950.9998168945312
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -40,
+            0.24,
+            -951
+          ],
+          "position": {
+            "x": -40.163089752197266,
+            "y": 0.3012498903274536,
+            "z": -951.0006713867188
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            -34,
+            0.24,
+            -951
+          ],
+          "position": {
+            "x": -34.07434844970703,
+            "y": 0.26526465892791745,
+            "z": -951.0000610351562
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            -28,
+            0.24,
+            -951
+          ],
+          "position": {
+            "x": -28.07941246032715,
+            "y": 0.1657154846191406,
+            "z": -951.0000610351562
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "north entry beneath canopy",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -34,
+            0.24,
+            -961
+          ],
+          "position": {
+            "x": -33.91946029663086,
+            "y": 0.25370457649230954,
+            "z": -961.0001220703125
+          }
+        },
+        {
+          "segment": 2,
+          "reached": false,
+          "goal": [
+            -40,
+            0.24,
+            -961
+          ],
+          "position": {
+            "x": -33.953792572021484,
+            "y": 0.254373459815979,
+            "z": -961.0001220703125
+          }
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

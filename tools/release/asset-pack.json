@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233976092,
+ "bytes": 1234292283,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -48,8 +48,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_-2.bin",
-   "bytes": 291008,
-   "sha256": "2c04e7c7303548a88738266088a603f55ced57651f4704f7aa11fb0c05b93311",
+   "bytes": 300095,
+   "sha256": "5f0dc9f1fa5c17a1a05cabca4a1d90c25f4eaa4ad2855c0908fb5bbd67a865ea",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "942e2bd738e46ab73d4ffb4daf068b7349f7e35e81e6f5db402b7e50cb275d81",
+   "sha256": "cd5b035f322db29a16eb0fd4e793c2f9c9e426c9655b65dbe3de25461eda6744",
    "kind": "runtime cell manifest"
   },
   {
@@ -11088,14 +11088,14 @@
   },
   {
    "path": "build/strip-landmarks/tiParking-exterior-collision.bin",
-   "bytes": 35276,
-   "sha256": "2f9527e49d377a0dcd39b39f72726353c3c2893d2ad08aa17f3b33f35750db5e",
+   "bytes": 35280,
+   "sha256": "8bb944f4a8112ea5c7f4cfd2b5714473dfb17bf0e904a0ee17c44260fec79e60",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/tiParking-exterior.glb",
-   "bytes": 352568,
-   "sha256": "8a4d922685d03df9d631ce73e4cd47c1d5d4af9cdc1005739adff57836e30b91",
+   "bytes": 659668,
+   "sha256": "ef6569f46a87b2fc39230dd854e72257c07fa33680a63a1056c2174fca3c5338",
    "kind": "optimized"
   },
   {

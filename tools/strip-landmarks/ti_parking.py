@@ -40,7 +40,9 @@ def exterior(B):
   usable=p.buffer(-1).difference(hole.buffer(.6));minx,minz,maxx,maxz=p.bounds
   for x in np.arange(minx+7,maxx-2,8):
    for z in np.arange(minz+7,maxz-2,17):
-    if usable.contains(Point(x,z)):B.box('skg-slab',(x,top/2,z),(.45,top,.45),True)
+    if usable.contains(Point(x,z)):
+     lo=3.44 if ident==IDS[1] and x>-41 and -965<z<-947 else 0
+     B.box('skg-slab',(x,(top+lo)/2,z),(.45,top-lo,.45),True)
   for z in np.arange(minz+5,maxz-3,17):
    for x in np.arange(minx+3,maxx-2,2.7):B.planar('skg-line',box(x,z,x+.075,z+5).intersection(usable),top+.014)
   for x in np.arange(minx+20,maxx-10,45):

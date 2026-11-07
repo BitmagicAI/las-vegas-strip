@@ -16,11 +16,11 @@ removed=list((old-new).elements());added=list((new-old).elements())
 assert removed and added,'Expected documented entry-column correction'
 for tri in removed+added:
  for x,y,z in tri:
-  assert -34.5<x<-32 and -965.3<z<-946.7 and -.01<=y<=17.95,(x,y,z)
+  assert -41<x<-32 and -965.3<z<-946.7 and -.01<=y<=17.95,(x,y,z)
 for tri in added:
  assert min(p[1] for p in tri)>=3.44-1e-6,tri
 for label in B.labels:label['detail']=0
 B.save_all()
-report={'removedTriangles':len(removed),'addedTriangles':len(added),'scope':'Guest facade columns in entry aperture only; all other collision triangles identical','triangles':sum(len(g['faces']) for g in B.groups.values())}
+report={'removedTriangles':len(removed),'addedTriangles':len(added),'scope':'Guest facade and first interior column in entry aperture only; all other collision triangles identical','triangles':sum(len(g['faces']) for g in B.groups.values())}
 Path('docs/project-records/ti-parking-refinement/source-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print(report)

@@ -496,7 +496,11 @@
       "id": "ti-parking",
       "name": "Treasure Island parking structures",
       "status": "refinement-deferred",
-      "record": "ti-parking.json"
+      "record": "ti-parking.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "Verified scoped guest canopy and entry correction with all three garages validated; retained bridge, topology, lifts/stairs, landscape and complete vehicle-circuit discrepancies."
+      }
     },
     {
       "id": "park-mgm-parking",

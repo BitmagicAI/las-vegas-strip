@@ -5522,14 +5522,15 @@
    "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 6 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 7 known gaps are recorded.",
    "items": [
     "Exact western hairpin topology",
     "Southern pedestrian bridge height/landing",
     "Enclosed guest bridge glazing and hotel landing (existing bridge currently open-air)",
     "Stair/lift circulation",
     "Landscape and signage detail",
-    "Local driving benchmark and vehicle traversal"
+    "Complete garage-to-street driving circuits, upper-level/hairpin traversal and cold-streaming benchmark; first-ramp local jeep benchmark recorded",
+    "Inherited western st-white duplicate faces and high chase-camera clipping under guest/southern ceilings"
    ],
    "record": "tools/resort-blocks/ti-parking.json",
    "buildings": [
@@ -5559,9 +5560,11 @@
      "tools/resort-blocks/ti-parking.json"
     ],
     "builders": [
-     "tools/city-exteriors/test-ti-parking.mjs",
+     "tools/strip-landmarks/build_ti_refinement.py",
      "tools/strip-landmarks/ti_parking.py",
-     "tools/strip-landmarks/build_ti_parking.py"
+     "tools/city-exteriors/test-ti-parking.mjs",
+     "tools/strip-landmarks/build_ti_parking.py",
+     "tools/strip-landmarks/export_ti_refinement.py"
     ]
    },
    "acceptance": [
