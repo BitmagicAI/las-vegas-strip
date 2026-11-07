@@ -523,8 +523,12 @@
     {
       "id": "guardian-angel",
       "name": "Guardian Angel Cathedral",
-      "status": "active",
-      "record": "guardian-angel.json"
+      "status": "refinement-deferred",
+      "record": "guardian-angel.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "PR544 public nave/entry refinement locally installed and verified. Remaining artwork, surveyed dimensions, landscaping and full-site benchmark discrepancies retained."
+      }
     },
     {
       "id": "convention-frontage",
