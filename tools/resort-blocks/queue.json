@@ -44,7 +44,7 @@
     },
     {
       "id": "harrahs",
-      "name": "Harrah\u2019s Las Vegas",
+      "name": "Harrah’s Las Vegas",
       "status": "refinement-deferred",
       "record": "harrahs.json",
       "deferral": {
@@ -134,7 +134,7 @@
     },
     {
       "id": "new-york",
-      "name": "New York\u2013New York",
+      "name": "New York–New York",
       "status": "refinement-deferred",
       "record": "new-york.json",
       "deferral": {
@@ -1000,7 +1000,7 @@
     {
       "id": "bellagio-arcade-pavilions",
       "name": "Bellagio covered walkway pavilions",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "bellagio-arcade-pavilions.json"
     },
     {
@@ -1150,7 +1150,7 @@
     {
       "id": "paris-rooftop-bar",
       "name": "Paris mapped rooftop pavilion",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "paris-rooftop-bar.json"
     },
     {
@@ -1161,7 +1161,7 @@
     },
     {
       "id": "nyny-arrival",
-      "name": "New York\u2013New York arrival pavilion and canopy",
+      "name": "New York–New York arrival pavilion and canopy",
       "status": "refinement-deferred",
       "record": "nyny-arrival.json"
     },
@@ -1191,7 +1191,7 @@
     },
     {
       "id": "hofbrauhaus",
-      "name": "Hofbr\u00e4uhaus Las Vegas",
+      "name": "Hofbräuhaus Las Vegas",
       "status": "refinement-deferred",
       "record": "hofbrauhaus.json"
     },
@@ -1255,7 +1255,7 @@
     },
     {
       "id": "ferraros",
-      "name": "Ferraro\u2019s Ristorante",
+      "name": "Ferraro’s Ristorante",
       "status": "refinement-deferred",
       "record": "ferraros.json"
     },
@@ -1285,7 +1285,7 @@
     },
     {
       "id": "mcdonalds-tropicana",
-      "name": "McDonald\u2019s West Tropicana",
+      "name": "McDonald’s West Tropicana",
       "status": "refinement-deferred",
       "record": "mcdonalds-tropicana.json"
     },
@@ -1407,7 +1407,7 @@
     },
     {
       "id": "shooting-center",
-      "name": "5155 Dean Martin \u2014 Shooting Center / J&S Diesel",
+      "name": "5155 Dean Martin — Shooting Center / J&S Diesel",
       "status": "refinement-deferred",
       "record": "shooting-center.json"
     },
@@ -1483,19 +1483,19 @@
     },
     {
       "id": "wahoos-flamingo",
-      "name": "Wahoo\u2019s Fish Taco \u2014 Flamingo",
+      "name": "Wahoo’s Fish Taco — Flamingo",
       "status": "refinement-deferred",
       "record": "wahoos-flamingo.json"
     },
     {
       "id": "twain-laundry",
-      "name": "24 Hour Laundry Center \u2014 Twain",
+      "name": "24 Hour Laundry Center — Twain",
       "status": "refinement-deferred",
       "record": "twain-laundry.json"
     },
     {
       "id": "favorita-market",
-      "name": "La Favorita Market \u2014 Twain",
+      "name": "La Favorita Market — Twain",
       "status": "refinement-deferred",
       "record": "favorita-market.json",
       "deferral": {
@@ -1505,7 +1505,7 @@
     },
     {
       "id": "marianas-sahara",
-      "name": "Mariana\u2019s Supermarkets \u2014 Sahara",
+      "name": "Mariana’s Supermarkets — Sahara",
       "status": "refinement-deferred",
       "record": "marianas-sahara.json",
       "deferral": {
@@ -1515,7 +1515,7 @@
     },
     {
       "id": "mt-everest-sahara",
-      "name": "Mt. Everest India's Cuisine \u2014 Sahara",
+      "name": "Mt. Everest India's Cuisine — Sahara",
       "status": "refinement-deferred",
       "record": "mt-everest-sahara.json",
       "deferral": {
@@ -1531,19 +1531,19 @@
     },
     {
       "id": "dennys-flamingo",
-      "name": "Denny's \u2014 West Flamingo",
+      "name": "Denny's — West Flamingo",
       "status": "refinement-deferred",
       "record": "dennys-flamingo.json"
     },
     {
       "id": "chick-fil-a-flamingo",
-      "name": "Chick-fil-A \u2014 Flamingo & Valley View",
+      "name": "Chick-fil-A — Flamingo & Valley View",
       "status": "refinement-deferred",
       "record": "chick-fil-a-flamingo.json"
     },
     {
       "id": "tacos-mexico-sahara",
-      "name": "Tacos Mexico #2 \u2014 Sahara",
+      "name": "Tacos Mexico #2 — Sahara",
       "status": "refinement-deferred",
       "record": "tacos-mexico-sahara.json"
     },
@@ -1555,7 +1555,7 @@
     },
     {
       "id": "carls-jr-sahara",
-      "name": "Carl\u2019s Jr. Sahara",
+      "name": "Carl’s Jr. Sahara",
       "status": "refinement-deferred",
       "record": "carls-jr-sahara.json"
     },
@@ -1755,7 +1755,7 @@
     },
     {
       "id": "dennys-sahara",
-      "name": "Denny\u2019s West Sahara",
+      "name": "Denny’s West Sahara",
       "status": "refinement-deferred",
       "record": "dennys-sahara.json"
     },
@@ -1863,7 +1863,7 @@
     },
     {
       "id": "barrys-boxing",
-      "name": "Barry\u2019s Boxing",
+      "name": "Barry’s Boxing",
       "status": "refinement-deferred",
       "record": "barrys-boxing.json"
     },
@@ -1916,5 +1916,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "bellagio-arcade-pavilions"
+  "active": "paris-rooftop-bar"
 }
