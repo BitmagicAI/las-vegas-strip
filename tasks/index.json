@@ -5905,16 +5905,17 @@
    "size": "L",
    "priority": "P2",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 8 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 9 known gaps are recorded.",
    "items": [
-    "Compare actual installed roof and streetfront with references",
-    "Review existing door/bridge connections",
-    "Retain all interior geometry",
-    "Streetfront brand order/glazing and landscaping remain incorrect",
-    "Dimensions/fold positions estimated from2022Earth; no surveyaccuracyclaim",
-    "North/south facade returns need comparison",
-    "Roof beforecamera was insideotherbuilding; aftercamera moved to[35,95,937]",
-    "Audit mapped roof1422113646 northwestern wing against custom roof and63CityCenter; footprint partially outside current custom roof. No new geometry yet."
+    "Full roof/streetfront fidelity remains unresolved: this pass only adds two inferred exterior glazing representations; existing broad folds and facade volumes are preserved.",
+    "Public door/bridge connections need dedicated continuous walking review; current eight-leg route only tests road-edge movement.",
+    "Existing interior geometry is retained; no interior daylight opening or current interior-layout verification is claimed.",
+    "Streetfront brand order, glazing and landscaping remain incorrect; outside the two central roof panels.",
+    "Dimensions/fold positions remain estimated from older Earth views; no survey accuracy claim.",
+    "North/south facade returns still need detailed photographic matching; preserved in this bounded pass.",
+    "Historical roof before camera was inside another building; its mismatched historical pair remains invalid. New fixed cameras do not retroactively validate it.",
+    "Northwest wing1422113646 was already installed and audited in northwestWingReview; preserve its prior join correction. Its measured heights, returns and relationship to63CityCenter still need fidelity refinement.",
+    "Two triangular roof panels are opaque exterior representations on existing approximate facets, not cut-through skylights; exact geometry, mullion spacing and public roof access remain unverified."
    ],
    "record": "tools/resort-blocks/crystals.json",
    "buildings": [

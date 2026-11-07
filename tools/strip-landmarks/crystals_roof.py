@@ -119,6 +119,8 @@ def exterior(B):
     x,_,z=G.p(u,0,0);h=height(x,z)-.28
     G.box('cr-nw-frame',(u,(h+.24)/2,-.04),(.075,h-.24,.12))
    for y in [1,5,9,13,17]:G.box('cr-nw-frame',(L/2,y,-.04),(L,.07,.12))
+ from crystals_glazing import roof_glazing
+ roof_glazing(B,POINTS)
  # Roof panel coverage evidence for replacement collision tests.
  Path('build/city-exteriors/crystals-roof-triangles.json').write_text(json.dumps([p.tolist() for p in panels]))
  return dict(key=KEY,name='Crystals folded metal roof',center=[-110,0,913],bounds=[-203,792,-41,1002],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],views={})

@@ -42,16 +42,17 @@
   "ownership": [
     "way/52134608"
   ],
-  "stage": "Roof correction installed and inspected. Full storefront, landscape and route refinement still outstanding.",
+  "stage": "Bounded two-panel central roof glazing refinement installed and verified; full storefront, roof topology, landscape and route refinement still outstanding.",
   "remaining": [
-    "Compare actual installed roof and streetfront with references",
-    "Review existing door/bridge connections",
-    "Retain all interior geometry",
-    "Streetfront brand order/glazing and landscaping remain incorrect",
-    "Dimensions/fold positions estimated from2022Earth; no surveyaccuracyclaim",
-    "North/south facade returns need comparison",
-    "Roof beforecamera was insideotherbuilding; aftercamera moved to[35,95,937]",
-    "Audit mapped roof1422113646 northwestern wing against custom roof and63CityCenter; footprint partially outside current custom roof. No new geometry yet."
+    "Full roof/streetfront fidelity remains unresolved: this pass only adds two inferred exterior glazing representations; existing broad folds and facade volumes are preserved.",
+    "Public door/bridge connections need dedicated continuous walking review; current eight-leg route only tests road-edge movement.",
+    "Existing interior geometry is retained; no interior daylight opening or current interior-layout verification is claimed.",
+    "Streetfront brand order, glazing and landscaping remain incorrect; outside the two central roof panels.",
+    "Dimensions/fold positions remain estimated from older Earth views; no survey accuracy claim.",
+    "North/south facade returns still need detailed photographic matching; preserved in this bounded pass.",
+    "Historical roof before camera was inside another building; its mismatched historical pair remains invalid. New fixed cameras do not retroactively validate it.",
+    "Northwest wing1422113646 was already installed and audited in northwestWingReview; preserve its prior join correction. Its measured heights, returns and relationship to63CityCenter still need fidelity refinement.",
+    "Two triangular roof panels are opaque exterior representations on existing approximate facets, not cut-through skylights; exact geometry, mullion spacing and public roof access remain unverified."
   ],
   "beforeViews": {
     "directory": "build/city-exteriors/crystals-ownership",
@@ -380,5 +381,22 @@
       "caveat": "960x540 static 180-frame samples only, not driving benchmark",
       "log": "/tmp/crnw-probe2.log"
     }
+  },
+  "roofGlazingRefinement20261107": {
+    "status": "verified-bounded-pass",
+    "scope": "Two inferred central triangular exterior roof glazing representations; existing envelope and interiors retained",
+    "research": "docs/project-records/crystals-frontage-refinement/research.md",
+    "before": "docs/project-records/crystals-frontage-refinement/before/results.json",
+    "beforeWalk": "docs/project-records/crystals-frontage-refinement/before-walk/results.json",
+    "geometry": "docs/project-records/crystals-frontage-refinement/geometry-audit.json",
+    "preservation": "docs/project-records/crystals-frontage-refinement/preservation-check.json",
+    "decision": "Use opaque surface representations on existing roof facets; no roof cut, interior daylight or measured topology claim. Full facade, roof folds and public connections remain unresolved.",
+    "after": "docs/project-records/crystals-frontage-refinement/after/results.json",
+    "detail": "docs/project-records/crystals-frontage-refinement/after-detail/results.json",
+    "afterWalk": "docs/project-records/crystals-frontage-refinement/after-walk/results.json",
+    "checks": "docs/project-records/crystals-frontage-refinement/local-checks.json",
+    "smoke": "docs/project-records/crystals-frontage-refinement/smoke.json",
+    "performance": "docs/project-records/crystals-frontage-refinement/performance.json",
+    "cells": "docs/project-records/crystals-frontage-refinement/cell-preservation.json"
   }
 }
