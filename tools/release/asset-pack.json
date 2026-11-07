@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-11-06",
+ "revision": "2026-11-07",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-11-06.tar.gz",
+  "name": "las-vegas-strip-assets-2026-11-07.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233666478,
+ "bytes": 1233721346,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -312,8 +312,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_1.bin",
-   "bytes": 768656,
-   "sha256": "c0d72a4a1c3c782854b31b2e60cbd3560c03088d00d3143dc68325375dd028cc",
+   "bytes": 771224,
+   "sha256": "24265b47d6e46689ce2ceb25bf4f497a561ce47c787184f46d7da7bc81cf965c",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "df89cec321f6d9cab6347143162008f68ee42d6ec355385350a1b97ade5482e1",
+   "sha256": "485021d925ca75ddc1848856e348a9c9458098f1afdb5d3b6f61c9f3c27df997",
    "kind": "runtime cell manifest"
   },
   {
@@ -8646,8 +8646,8 @@
   },
   {
    "path": "build/strip-landmarks/grandChateauExterior-exterior.glb",
-   "bytes": 217072,
-   "sha256": "dc5c8c9c8ec10e0db6772f3bcb1ebd2038886f6fe8e9d5f8c0cbf1307972e057",
+   "bytes": 269372,
+   "sha256": "3a71bdca373a4f6ff802c73c09682a65302d761ee3b7e114c1ca44e2e2508017",
    "kind": "optimized"
   },
   {
