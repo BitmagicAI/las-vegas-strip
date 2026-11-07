@@ -1,0 +1,4 @@
+# Installed review
+All six final neutral daylight views personally inspected after the corrective export/bake. CVS south shows the two loading shutters west/left and narrow doors east/right, consistent with the dated service-lane panorama; proportions remain inferred. Existing east facade/apron, parent arbor/red sculpture/props and adjacent buildings remain unchanged. Paris footrail and two open pendant frames are visible; no new lighting is created. Roof, shelving, stools and terrace planting/furniture remain intact. The front is partially tree-obscured, with a clear counter detail view.
+
+Initial CVS mirrored-bay error and initial six captures remain in after-initial; second bake was necessary to correct that review finding. Both builds asserted raw collision byte equality. Final91/92cells unchanged; onlycell-0_0 changed. Do not claim photorealism, whole-block completion, measured dimensions or a new interior layout.

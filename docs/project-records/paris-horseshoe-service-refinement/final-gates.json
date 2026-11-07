@@ -1,0 +1,40 @@
+[
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-final-gate-0.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-final-gate-1.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-final-gate-2.log"
+  },
+  {
+    "command": [
+      "bitmagic",
+      "reload",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-final-gate-3.log"
+  }
+]

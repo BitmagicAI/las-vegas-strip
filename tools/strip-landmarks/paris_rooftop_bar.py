@@ -25,6 +25,21 @@ def exterior(B):
  for u in np.arange(-L/2+.7,L/2-.5,1.15):
   for y in [.12,.96]:F.box('prb-trim-paint',(u,y,.53),(1.02,.045,.035))
   for du in [-.51,.51]:F.box('prb-trim-paint',(u+du,.54,.53),(.035,.84,.035))
+ # Official bar photo supports a brass footrail and dark open pendant frames.
+ # Inferred proportions, visual only; retain the established circulation/collision.
+ F.tube('prb-brass-paint',(-L/2+.55,.24,.31),(L/2-.55,.24,.31),.035,10)
+ for u in np.arange(-L/2+.7,L/2-.5,1.6):
+  F.path('prb-brass-paint',[(u,.12,.5),(u,.24,.5),(u,.24,.31)],.025,8)
+ for u in [-L*.24,L*.24]:
+  F.tube('prb-metal-paint',(u,3.36,1.05),(u,3.04,1.05),.016,7)
+  for y in [2.38,3.04]:
+   F.path('prb-metal-paint',[(u-.27,y,.78),(u+.27,y,.78),(u+.27,y,1.32),(u-.27,y,1.32),(u-.27,y,.78)],.016,7)
+  for du in [-.27,.27]:
+   for v in [.78,1.32]:F.tube('prb-metal-paint',(u+du,2.38,v),(u+du,3.04,v),.016,7)
+  F.tube('prb-brass-paint',(u,2.43,1.05),(u,2.76,1.05),.025,8)
+  for du in [-.15,.15]:
+   F.tube('prb-brass-paint',(u,2.53,1.05),(u+du,2.53,1.05),.018,7)
+   F.box('prb-trim-paint',(u+du,2.64,1.05),(.055,.16,.055))
  # Green-backed open shelves with brass uprights, no extra runtime lights.
  back=x1-x0-.35
  F.box('prb-green-paint',(0,1.92,back),(L-.75,2.65,.10))

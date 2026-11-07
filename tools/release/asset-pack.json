@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233554526,
+ "bytes": 1233577665,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -306,8 +306,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_0.bin",
-   "bytes": 1583253,
-   "sha256": "568831693011b35dec01c89103434dd8b0e53d7cada23cd4512d3e62e08951fd",
+   "bytes": 1583192,
+   "sha256": "c1972568c802adc3d4d765a8da58051edc4645b0248e4d17a8473b53a7cf9af0",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "e32f9295c352ef9b250bfad625738c218d27bc9961d09e3cb254d89dea249fba",
+   "sha256": "8f8709c28ba7633e2eae6f4be1c0c0c07296c8a538c97cbebe92fc07bd1aa8ef",
    "kind": "runtime cell manifest"
   },
   {
@@ -7974,8 +7974,8 @@
   },
   {
    "path": "build/strip-landmarks/cvsHorseshoe-exterior.glb",
-   "bytes": 401408,
-   "sha256": "45bcd8ecc5e54a44849d848b4bb287716f2bd4c8a46afc656579edcd6cc54996",
+   "bytes": 404704,
+   "sha256": "7b80123fc07ce3d9fc7d89108c41331e428dacd7f87f6961fd1e38c5a36ebd58",
    "kind": "optimized"
   },
   {
@@ -10098,8 +10098,8 @@
   },
   {
    "path": "build/strip-landmarks/parisRooftopBar-exterior.glb",
-   "bytes": 173012,
-   "sha256": "5c41b33f7850f5d50a126028b305e2f7b27f2b1383470415afec9f2cd5078018",
+   "bytes": 192916,
+   "sha256": "b7dcf03472d9a0ee5ef6551c1e4891b4b6f139566b2965c5422c66dd0b1fb53b",
    "kind": "optimized"
   },
   {

@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-07",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11335,-115.17202&zoom=20&basemap=satellite",
+      "review": "Direct aerial inspected. CVS roof mechanical row and service lane south; tower construction east. Acquisition date unavailable; copyright2026 is not image date. No ground dimensions established."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.11305,-115.17222&heading=0&pitch=10",
+      "panorama": "KVmIEbJ9iIjhBIjCxcUwJQ",
+      "date": "December2022",
+      "resolved": [
+        36.1131233,
+        -115.1722063
+      ],
+      "review": "South service elevation directly inspected: horizontal pale upper cladding, gray lower surround, two loading shutters and narrow service doors, small wall-mounted rectangular lights. Trees/truck obstruct portions. This is south-facing evidence, not proof of east door positions."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.112216,-115.172507&zoom=21&basemap=satellite",
+      "review": "Direct aerial inspected: small rectangular flat roof, mechanical clutter, adjoining terraces and Eiffel. Exact mapped pavilion use remains uncertain; date unavailable."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.11212,-115.17302&heading=75&pitch=15",
+      "panorama": "S6b2of4EaXdpN0h-ehQ-Cw",
+      "date": "October2026",
+      "review": "Direct street panorama inspected: Eiffel and Beer Park terrace visible, palm obstruction; target pavilion not independently identified. Do not assign branding from this image."
+    },
+    {
+      "url": "https://www.cherirooftop.com/",
+      "review": "Official venue page identifies setting below Eiffel; does not identify small mapped roof."
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/66b1a83c49018c1559bc8343/e8601fc0-aee9-404c-a4bd-97e256b8b42d/Cheri_Bar_NightWeb.jpg",
+      "review": "Official bar photograph downloaded to temporary file and personally inspected. Dark counter/pale framed panels, brass foot rail, dark metal framed hanging pendants, green-backed brass shelves, dark stools. Undated; guides existing generic bar finish only, no exact pavilion identity."
+    },
+    {
+      "url": "https://www.cvs.com/store-locator/las-vegas-nv-pharmacies/3645-las--vegas--blvd%2C-south-las-vegas-nv-89109/storeid%3D10348",
+      "review": "Official store location confirms address; no precise rear facade evidence obtained."
+    }
+  ],
+  "decisions": [
+    "Retain mapped geometry/roof heights/public circulation until installed baseline inspection.",
+    "Potential Paris refinement: original footrail and pendant frames supported by official existing bar palette, no new runtime lights.",
+    "CVS south service reference differs from generic shop facade; first verify mapped orientation and installed geometry before editing. Parent arbor cleanup remains uncorroborated."
+  ],
+  "media": "Third-party images viewed only; none committed."
+}
