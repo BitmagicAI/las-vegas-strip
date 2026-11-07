@@ -164,7 +164,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-shake-shack-frontage` | M | P2 | 4 | Refine the exterior of Shake Shack Strip facade and canopy |
 | `ext-bonita-terrace` | M | P2 | 4 | Refine the exterior of Bonita Terrace apartments |
 | `ext-carnaval-court` | M | P2 | 3 | Refine the exterior of Carnaval Court outdoor pavilion |
-| `ext-russell-service` | M | P2 | 3 | Refine the exterior of Russell Road service building |
 | `ext-siegel-paradise` | M | P2 | 4 | Refine the exterior of Siegel Suites Paradise |
 | `ext-santa-paula-1807-1811` | M | P2 | 4 | Refine the exterior of Santa Paula1807/1811 apartments |
 | `ext-santa-paula-north-row` | M | P2 | 4 | Refine the exterior of Santa Paula north apartment row |
@@ -179,7 +178,6 @@ already taken is shown on its GitHub issue (`[task-id]` in the title), not here.
 | `ext-wynn-lakefront` | L | P2 | 7 | Refine the exterior of Wynn Lake of Dreams lakefront and terraces |
 | `ext-mirage-marquee` | L | P2 | 6 | Refine the exterior of Mirage historic marquee and sidewalk shelter |
 | `ext-forum-cooling-towers` | M | P2 | 5 | Refine the exterior of Forum Shops twin cooling towers |
-| `ext-akita-rear-canopy` | M | P2 | 3 | Refine the exterior of Akita rear parking canopy |
 | `ext-paris-rooftop-bar` | M | P2 | 4 | Refine the exterior of Paris mapped rooftop pavilion |
 | `ext-nyny-irish-kiosk` | M | P2 | 3 | Refine the exterior of Nine Fine Irishmen outdoor kiosk |
 | `ext-nyny-arrival` | M | P2 | 4 | Refine the exterior of New York–New York arrival pavilion and canopy |

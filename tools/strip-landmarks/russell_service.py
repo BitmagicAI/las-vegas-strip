@@ -25,8 +25,17 @@ def exterior(B):
  # Six roof equipment groups at aerial positions and smaller pipe terminals.
  for j,(u,w) in enumerate([(2.2,3),(2.3,8),(3.8,12),(11.4,12),(3.8,24),(11.4,24)]):
   F.box('rsv-curb-paint',(u,5.7,w),(1.6,.22,1.7));F.box('rsv-service-paint',(u,6.06,w),(1.3,.6,1.4))
-  F.lathe('rsv-vent-paint',u,w,[(6.37,.4),(6.42,.4)],20)
-  for ang in np.linspace(0,math.tau,8,endpoint=False):F.tube('rsv-grille-paint',(u,6.44,w),(u+.38*math.cos(ang),6.44,w+.38*math.sin(ang)),.014,5)
+  if j<2:
+   # Only the two northern west units show circular tops in the reviewed aerial.
+   F.lathe('rsv-vent-paint',u,w,[(6.37,.4),(6.42,.4)],20)
+   for ang in np.linspace(0,math.tau,8,endpoint=False):F.tube('rsv-grille-paint',(u,6.44,w),(u+.38*math.cos(ang),6.44,w+.38*math.sin(ang)),.014,5)
+  else:
+   # Rectangular weather hood; .06m lip and .07m crown are inferred detail.
+   F.box('rsv-service-paint',(u,6.39,w),(1.42,.06,1.52))
+   bottom=[(u-.71,6.42,w-.76),(u+.71,6.42,w-.76),(u+.71,6.42,w+.76),(u-.71,6.42,w+.76)]
+   top=[(u-.59,6.49,w-.64),(u+.59,6.49,w-.64),(u+.59,6.49,w+.64),(u-.59,6.49,w+.64)]
+   B.upface('rsv-service-paint',[F.p(*q) for q in top])
+   for i in range(4):B.face('rsv-service-paint',[F.p(*q) for q in [bottom[i],bottom[(i+1)%4],top[(i+1)%4],top[i]]])
   F.box('rsv-vent-paint',(u+.66,6.04,w),(.025,.4,1.1))
  for u,w in [(2,10),(2.7,18),(11,13.4)]:F.lathe('rsv-drain-paint',u,w,[(5.58,.12),(5.9,.12),(5.94,.20)],12)
  for w in np.arange(1.2,30,2.4):F.box('rsv-roof-seam-paint',(7.7,5.59,float(w)),(14.8,.014,.016))

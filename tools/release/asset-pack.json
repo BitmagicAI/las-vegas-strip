@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233456330,
+ "bytes": 1233429305,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -102,8 +102,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_4.bin",
-   "bytes": 234284,
-   "sha256": "db9493e8614e75d30073f6e6fe97496b8ace395a4aa1e6ac84ccc816a8db38ee",
+   "bytes": 234394,
+   "sha256": "91cc5f6552ffdd36a3f67ae6d88895713735afdd2968f6191b541ab942f39976",
    "kind": "original"
   },
   {
@@ -324,8 +324,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_3.bin",
-   "bytes": 334194,
-   "sha256": "7ca531867f5de9dc4781f8e2b8a00e19402a057d776b34819dd5e52143ee85ac",
+   "bytes": 333431,
+   "sha256": "5ee0b91a5c92ad12a71e03218c87e5a1880f02227468f10ccfeb418de152d9ad",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "ecc578e38b49c992c327024ccb23014ef0c44faf9036dc7867849511f3af0df8",
+   "sha256": "5542c41c2244e6c8cb244524f4fdc2fb51da4e318f79fec3002a66a52b297679",
    "kind": "runtime cell manifest"
   },
   {
@@ -7266,8 +7266,8 @@
   },
   {
    "path": "build/strip-landmarks/akitaRearCanopy-exterior.glb",
-   "bytes": 96348,
-   "sha256": "5c458107f64d3b917672563a9f890ea91b5de21982578b9d6b30058f34e20ea6",
+   "bytes": 82100,
+   "sha256": "cb7039c90462c8c8d9df8ede1649dfa25bafafb6c8daf8b02ba54fc0e2bb47d1",
    "kind": "optimized"
   },
   {
@@ -10482,8 +10482,8 @@
   },
   {
    "path": "build/strip-landmarks/russellService-exterior.glb",
-   "bytes": 70472,
-   "sha256": "e7c00788e568e60fe58964716af0449047a1d2df97ee5ad9911d7b1a685ed6d9",
+   "bytes": 58348,
+   "sha256": "d8da7a4571c6a2fad4cfaa261700f3382fdc588531a5ebc726e22157889abc64",
    "kind": "optimized"
   },
   {
