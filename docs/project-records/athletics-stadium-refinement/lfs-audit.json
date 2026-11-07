@@ -1,0 +1,33 @@
+{
+  "base": "c7d3f9f3d3233e8dad143b75c06141986fc6ef4f",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "35be8ca890fee4016bf60242ca464cf12313805ed68c188ea7f7ef6c37b902ef",
+      "bytes": 487061,
+      "path": "public/project-records/athletics-stadium-refinement/before-aerial-northeast.png"
+    },
+    {
+      "oid": "8d464155c187a32f2134902fcb8bc0e5685dae94ef3bb33fbb348603a00034ec",
+      "bytes": 592802,
+      "path": "public/project-records/athletics-stadium-refinement/before-east-service.png"
+    },
+    {
+      "oid": "e58b74ce0eba5fc9c4fa004255c7b7fc00d1c9f294bc5523282aa0bcf6ecb0f1",
+      "bytes": 302594,
+      "path": "public/project-records/athletics-stadium-refinement/before-front-northwest.png"
+    },
+    {
+      "oid": "b91f93031a25cee51877ad16ce2067c055516a6f5565e1e7601e5f449cdbf79f",
+      "bytes": 140259,
+      "path": "public/project-records/athletics-stadium-refinement/before-rejected-east-service.png"
+    },
+    {
+      "oid": "a97ac2443b579f6b90eb8fcf17e3ed2513f20ca43f3c8f11f1565230cc177eb9",
+      "bytes": 282358,
+      "path": "public/project-records/athletics-stadium-refinement/before-south-perimeter.png"
+    }
+  ],
+  "count": 5,
+  "bytes": 1805074
+}
