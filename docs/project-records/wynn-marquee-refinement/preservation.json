@@ -1,0 +1,22 @@
+{
+  "runtimeChanged": [
+    "runtime-assets/baked/cells/cell-0_-2.bin",
+    "runtime-assets/baked/cells/manifest.json",
+    "runtime-assets/strip-landmarks/wynnMarquee-exterior.glb"
+  ],
+  "cellsTotal": 92,
+  "cellsChanged": [
+    "runtime-assets/baked/cells/cell-0_-2.bin"
+  ],
+  "collisionBinaryUnchanged": true,
+  "sourceCollisionByteIdentical": true,
+  "optimizedBytes": 710212,
+  "exportTriangles": 49100,
+  "sourceFaceCount": 14148,
+  "texture": "One embedded WebP image: original neutral LED artwork",
+  "stage": {
+    "copied": 3,
+    "unchanged": 1927,
+    "removed": 0
+  }
+}

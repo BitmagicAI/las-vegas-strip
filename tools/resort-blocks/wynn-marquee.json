@@ -31,7 +31,7 @@
   ],
   "triangles": 9248,
   "batches": 7,
-  "optimizedMiB": 0.64,
+  "optimizedMiB": 0.6773109436035156,
   "viewsInspected": [
     "build/city-exteriors/wynn-marquee-final/wynn-marquee-south.png",
     "build/city-exteriors/wynn-marquee-final/wynn-marquee-north.png",
@@ -115,15 +115,28 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/wynnMarquee-exterior.glb": "3926074d3fda2739ab5078e1cde8d54c9b442065e92208b7dce5b02d45a3a9fc",
-      "build/strip-landmarks/wynnMarquee-exterior-collision.json": "40a8dc900354d912dcf1d74a6e3e9ea05e133bfbe573f137d4178215e74ed663"
+      "runtime-assets/strip-landmarks/wynnMarquee-exterior.glb": "bfd48e04e8909dcf32c335132fa2c75545c172e07e430bdf4a1dd6fc91250732",
+      "runtime-assets/strip-landmarks/wynnMarquee-exterior-collision.bin": "051a2e2e21df4d29bef9e5c57b8687303e85a99e91fead93d6190cd52a33da5b"
     }
   },
   "refinement20261107": {
-    "status": "research-baseline-and-source-draft",
+    "status": "installed-reviewed-refinement-deferred",
     "checkpoint": "docs/project-records/wynn-marquee-refinement/checkpoint.md",
     "references": "docs/project-records/wynn-marquee-refinement/references.md",
-    "candidate": "Closed static eraser underside/ends and 60mm folded lower rib returns. Decorative only, collision unchanged. Not installed.",
-    "decisions": "Keep existing static original artwork, logo and dimensions; inferred folded metal depth. Current aerial reveals recessed end/roof geometry not captured by the existing shallow lens."
+    "candidate": "Installed folded rib returns and closed static eraser underside/end faces; no structural collision change.",
+    "decisions": "Keep existing static original artwork, logo and dimensions; inferred folded metal depth. Current aerial reveals recessed end/roof geometry not captured by the existing shallow lens.",
+    "evidence": {
+      "preservation": "docs/project-records/wynn-marquee-refinement/preservation.json",
+      "performance": "docs/project-records/wynn-marquee-refinement/performance-comparison.json"
+    },
+    "walk": "Eight actual keyboard legs pass before and after; endpoint/return images inspected.",
+    "performance": "First front p95 18.2\u219226.1ms; isolated repeat 17.7ms after other jobs completed. Both retained; regression did not reproduce, cause not established. North50.1\u219247.4,under17.7\u219217.6,aerial17.7\u219217.6ms. No causal speedup claim.",
+    "viewsInspected": [
+      "public/project-records/wynn-marquee-refinement/after-front-wynn-marquee-south.png",
+      "public/project-records/wynn-marquee-refinement/after-wynn-marquee-north.png",
+      "public/project-records/wynn-marquee-refinement/after-wynn-marquee-under.png",
+      "public/project-records/wynn-marquee-refinement/after-wynn-marquee-aerial.png"
+    ],
+    "smoke": "Nine dev stops pass; zero failed requests, page errors, console errors or missed stops."
   }
 }
