@@ -294,6 +294,12 @@ for name,points in [
 import cosmo_frontage
 cosmo_frontage.update_builder(b)
 b.save_all()
+# Keep full builds consistent with the scoped reference-supported pool pass.
+from patch_cosmo_pool_palette import patch as pool_palette_patch, KEYS as POOL_KEYS
+for pool_key,pool_y in POOL_KEYS.items():
+ pool_path=OUT/(pool_key+'.json')
+ pool_data,_=pool_palette_patch(json.loads(pool_path.read_text()),pool_key,pool_y)
+ pool_path.write_text(json.dumps(pool_data,separators=(',',':')))
 # Empty collision sets are valid and keep the runtime loader uniform.
 for v in venues:
  for layer in ['exterior','interior']:

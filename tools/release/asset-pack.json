@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235274887,
+ "bytes": 1235216137,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -78,8 +78,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_0.bin",
-   "bytes": 1790606,
-   "sha256": "831fea299d636b8bc9cb164c56213f175ea17dfe1d850fc0f21ced5a6f28032e",
+   "bytes": 1790308,
+   "sha256": "8879da6ed5f0d0d0cacc1e3c84cfc36900c014c3f3be01c925dd4648b3e49eb8",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "2da8c1b73ec8f83717e88644d7b1030c7e212fcfec775dcce7258828e9d388ae",
+   "sha256": "cd981a57da298f873eec8a4a4e9a56a02ce2da3a5ae67d559b03d2d6bbabd4b6",
    "kind": "runtime cell manifest"
   },
   {
@@ -6954,8 +6954,8 @@
   },
   {
    "path": "build/resort-blocks/cosmo/cosmoL14-exterior.glb",
-   "bytes": 1116076,
-   "sha256": "492350535a90a40062a33ea76cd2ff182941e55037823a733bbdbce012549ba3",
+   "bytes": 1061588,
+   "sha256": "5d68d5af32d2eb2a0db3541b2902b8be53dd9a5161a22952cfe0ffd04735b6dc",
    "kind": "optimized"
   },
   {
@@ -7026,8 +7026,8 @@
   },
   {
    "path": "build/resort-blocks/cosmo/cosmoL4-exterior.glb",
-   "bytes": 879848,
-   "sha256": "4e8aab62e6cac6aa40ab24a8f3c16be95dfe4c51bd42469b375f38991ce8b79b",
+   "bytes": 875884,
+   "sha256": "a6becf8367cbb744ea12764c9d088cb746fe387cf69f02e10cd958011cf233b2",
    "kind": "optimized"
   },
   {
