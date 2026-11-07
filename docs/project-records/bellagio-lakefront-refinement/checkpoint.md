@@ -2,7 +2,7 @@
 
 PR548 Cosmopolitan merged bac27431 into next, issue18 explicitly closed. Verified 148-lounger palette correction:40Boulevard/108Chelsea, all authored triangles/labels/collision retained,2level+WebPoptimizedmodels,11localchecks,9stop smoke0errors,8before/8after movementlegs,3matchingdaylightpairs.91/92cells unchanged.13,959,957newLFSbytes28objects. Initialfrontp95spike investigated with original-LFS browsercontrols: median original18.8/21.4ms vsafter18/20.9ms. Fullparent discrepancies retained. Installed-pass notification at completion of this heartbeat; do not repeat.
 
-Picker selected ext-bellagio#19, claimconfirmed janiverse. Fresh task/ext-bellagio-lakefront-refinement from origin/next bac27431. QueueactiveBellagio, priorCosmorefinement-deferred. Open draft PR next before implementation. No newBellagio edits/research/baselines yet.
+Picker selected ext-bellagio#19, claimconfirmed janiverse. Fresh task/ext-bellagio-lakefront-refinement from origin/next bac27431. QueueactiveBellagio, priorCosmorefinement-deferred. Draft PR549 targets next: https://github.com/BitmagicAI/las-vegas-strip/pull/549 . No newBellagio edits/research/baselines yet.
 
 Task and parentrecord read:14mappedfeatures so choose nearby subset<=10, notall14inonePR. NextAction northvillage elevations/shopdetail and bridge-facingarchitecture/publicgallery. Existing5fittedpavilions,4rotundas,campanile,barrelvaultarcade,balconies,hippedroofs,darkcurvedshopbay; retain. Ground.24m,bridge6.085m,pool.24m estimates. Main155.8m publishedheight, ownerOct8towerremodel mustremain. Preserve guestrooms/customcasino, roads, lake/waterrepair, northvillage, southgarageandarcade. No full-resortcompletionclaim.
 
