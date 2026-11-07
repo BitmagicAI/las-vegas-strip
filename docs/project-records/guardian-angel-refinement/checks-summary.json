@@ -1,0 +1,41 @@
+{
+  "typecheck": 0,
+  "resortRecordReviewAfterQueueCorrection": 0,
+  "publicCheck": {
+    "failures": 0,
+    "inheritedWarnings": 24
+  },
+  "cityLazyLod": 0,
+  "cityLightingResize": 0,
+  "siteLights": 0,
+  "sourceCollision": {
+    "support": 331,
+    "aisle": 146,
+    "failures": 0
+  },
+  "optimizationChangedOriginNext": {
+    "checkedBeforeAddingNewRuntimeFile": 1,
+    "notOptimized": 0
+  },
+  "assetPackCheck": {
+    "present": 1932,
+    "missing": 0,
+    "notOptimized": 0
+  },
+  "cityBakeCheck": 0,
+  "bitmagicReload": 0,
+  "pending": [
+    "Build/export/optimize/install low plinth and entry tympanum correction",
+    "Repeat installed checks after correction; do not overwrite candidate1 after/ and walk-nave-after/ evidence"
+  ],
+  "installedWalksCandidate1": {
+    "legs": 18,
+    "passed": true
+  },
+  "nineStopSmokeCandidate1": {
+    "failedRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "unplacedStops": 0
+  }
+}

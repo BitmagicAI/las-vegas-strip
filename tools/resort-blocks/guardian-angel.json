@@ -46,11 +46,11 @@
   ],
   "remaining": [
     "Authentic Piczek mural and stained glass detail; current geometric artwork is a stand-in",
-    "Closed exterior doors only; interiors/public access not implemented",
     "Precise surveyed elevations and facade proportions",
     "Landscape fidelity and office/cathedral sidewalk integration",
     "Full-site driving performance benchmark",
-    "Standard CLI verify startup detection gate failed; direct gameplay probe succeeds"
+    "Standard CLI verify startup detection gate failed; direct gameplay probe succeeds",
+    "Public nave is an inferred layout: exact pew count, sanctuary steps, balcony and authentic artwork not reconstructed; office remains closed."
   ],
   "baselineViews": [
     "build/city-exteriors/guardian-angel-before/north.png",
@@ -83,5 +83,16 @@
     "build/optimized/build/strip-landmarks/guardianAngel-exterior.glb": "9ad265e8e1dc9c472d5ee9b5105b0f652044496b38da6dbe4097de7c05487e89",
     "tools/strip-landmarks/guardian_angel.py": "152cfbcc2ec746cac4a458febbd1f0efdd86a5b4ce1ed0f0cdaa69bfd14ecb7a",
     "src/work/PbrDetailSets.ts": "ac7194e8dfa3c3030fc91b2deae57c1f246b7b87fa028ec385893b4be7420f49"
+  },
+  "activeRefinement": {
+    "pr": 544,
+    "record": "docs/project-records/guardian-angel-refinement/checkpoint.md",
+    "status": "installed-local-checks-passed-smoke-pending",
+    "scope": "Public nave and paired west entrance within existing four-building owner. Office, carport, annex and roof collider geometry preserved.",
+    "research": "docs/project-records/guardian-angel-refinement/research.md",
+    "sourceAudit": "docs/project-records/guardian-angel-refinement/source-audit.json",
+    "sourceChecks": "docs/project-records/guardian-angel-refinement/source-collision-test.json",
+    "walks": "18 real movement legs passed through west paired doors and center/both side aisles; walk-nave-after/results.json",
+    "views": "All seven after views personally reviewed using matching neutral cameras; nave lining/pews and original simple sanctuary present; existing geometric artwork retained."
   }
 }

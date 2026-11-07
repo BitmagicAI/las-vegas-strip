@@ -22,6 +22,12 @@ def interior(B,meta):
     points=list(face);v=np.array(points)
     if np.cross(v[1]-v[0],v[2]-v[0])[1]>0:points.reverse()
     B.face('ga-nave-cream',points)
+ # Close the inherited low gap beneath the side glazing from inside the nave.
+ # Inset plinth stays below the folded roof at its lowest corner.
+ for side in [-1,1]:
+  B.box('ga-nave-cream',(855.75,.62,Z+side*12.30),(43.9,.76,.12),True)
+ # Inner face of the existing opaque entry tympanum; exterior mural remains untouched.
+ B.face('ga-nave-cream',[(832.42,3.48,Z+10.8),(832.42,3.48,Z-10.8),(832.42,22.1,Z)])
  # Two banks, 20 rows each. 3.2m central aisle, clear rear and sanctuary cross aisles.
  # Seat height .46m above floor; 1.4m row pitch, .86m clear between backs.
  for x in np.arange(840,868,1.4):

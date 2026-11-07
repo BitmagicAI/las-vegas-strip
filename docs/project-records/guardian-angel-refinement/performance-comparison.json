@@ -1,0 +1,82 @@
+{
+  "scope": "Matching warm stationary camera samples; not a full-site driving or cold-streaming benchmark",
+  "samples": [
+    {
+      "view": "front",
+      "beforeMs": [
+        16.7,
+        19.9
+      ],
+      "afterMs": [
+        16.8,
+        18.1
+      ]
+    },
+    {
+      "view": "side",
+      "beforeMs": [
+        17.2,
+        18.7
+      ],
+      "afterMs": [
+        17.5,
+        19.3
+      ]
+    },
+    {
+      "view": "entry",
+      "beforeMs": [
+        16.6,
+        20
+      ],
+      "afterMs": [
+        16.7,
+        18.4
+      ]
+    },
+    {
+      "view": "office-west",
+      "beforeMs": [
+        16.7,
+        20.5
+      ],
+      "afterMs": [
+        16.6,
+        18.2
+      ]
+    },
+    {
+      "view": "office-roof",
+      "beforeMs": [
+        16.8,
+        20.4
+      ],
+      "afterMs": [
+        16.7,
+        18.8
+      ]
+    },
+    {
+      "view": "carport",
+      "beforeMs": [
+        16.7,
+        17.6
+      ],
+      "afterMs": [
+        16.6,
+        18.7
+      ]
+    },
+    {
+      "view": "nave",
+      "beforeMs": [
+        16.8,
+        19.7
+      ],
+      "afterMs": [
+        16.7,
+        18.3
+      ]
+    }
+  ]
+}

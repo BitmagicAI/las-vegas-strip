@@ -1184,8 +1184,12 @@
     {
       "id": "pedestrian-lifts",
       "name": "Harmon and Park MGM pedestrian lifts",
-      "status": "active",
-      "record": "pedestrian-lifts.json"
+      "status": "refinement-deferred",
+      "record": "pedestrian-lifts.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "PR539 merged dcbf8739; prior lift refinements verified, remaining discrepancies retained. Clear stale active marker while Guardian Angel PR544 is claimed."
+      }
     },
     {
       "id": "cvs-horseshoe-east",

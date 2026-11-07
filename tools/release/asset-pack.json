@@ -7,8 +7,8 @@
   "bytes": 0,
   "sha256": ""
  },
- "count": 1930,
- "bytes": 1234292283,
+ "count": 1932,
+ "bytes": 1234362422,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -360,8 +360,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-3.bin",
-   "bytes": 668821,
-   "sha256": "9df4e329adbe5382d7e8f93c089c5428b9e97d1b39dbbdce567195ffc731c20c",
+   "bytes": 668796,
+   "sha256": "f7e19beed92501e261c6b249e117b9f92c6a365f1c6938b22ef389a339180a5f",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "cd5b035f322db29a16eb0fd4e793c2f9c9e426c9655b65dbe3de25461eda6744",
+   "sha256": "6b62532588d5951dd440d7c09c822077b849da6bf838fa1c67380e310c9f43d3",
    "kind": "runtime cell manifest"
   },
   {
@@ -8676,14 +8676,26 @@
   },
   {
    "path": "build/strip-landmarks/guardianAngel-exterior-collision.bin",
-   "bytes": 4192,
-   "sha256": "afb8e07b2177d07665f97fb7131162cbecf596195bb6ed1f3a5a3e7097544a0c",
+   "bytes": 4112,
+   "sha256": "88572e3b1676a8f5921b80229aef075aec8ffd3d2087c484e375e842c4c922bd",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/guardianAngel-exterior.glb",
-   "bytes": 1223840,
-   "sha256": "9ad265e8e1dc9c472d5ee9b5105b0f652044496b38da6dbe4097de7c05487e89",
+   "bytes": 1221860,
+   "sha256": "4c33b5485991d34e283c50cf4962e72c3ea347a8cd4eed5b1d550df333e4cb1b",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/guardianAngel-interior-collision.bin",
+   "bytes": 10344,
+   "sha256": "969d4df23dfa14c2b94a40b5c7bcc895b56fc03bce4691394ee359c9d5f9b0bd",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/guardianAngel-interior.glb",
+   "bytes": 61720,
+   "sha256": "8e473a7a7fe6eac1a13337aee67e62f5f5fdce1c98acb29986237098f8814359",
    "kind": "optimized"
   },
   {
@@ -11352,8 +11364,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 394372,
-   "sha256": "2a2a0f8d2b72bd38879911a0a0e8c57b811d8927c840faeaebf96bd0dfb91e23",
+   "bytes": 394532,
+   "sha256": "26905f0bda7ecac48116cd8a218f2b758109180e9c4fe743ac45c7a1df998b59",
    "kind": "original"
   },
   {
