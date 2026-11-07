@@ -23,9 +23,9 @@
   "remaining": [
     "Side and rear service doors/vents inferred because concealed in street photos",
     "Full yard planting, fence and billboard not implemented",
-    "No interior, neutral daylight or driving benchmark"
+    "No interior or driving benchmark; matched neutral daylight inspected in refinement20261107"
   ],
-  "triangles": 2438,
+  "triangles": 1854,
   "batches": 17,
   "tests": [
     "358 roof support samples PASS",
@@ -108,8 +108,27 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/russellService-exterior.glb": "53f497e7ec0099530a84928189b1f004a719249fcf215912dbd21229f1a3c4d0",
-      "build/strip-landmarks/russellService-exterior-collision.json": "f5101514c8d2cc8d9e5b9308d6a3502ac46e550078572d695e58da78c6772f2b"
+      "runtime-assets/strip-landmarks/russellService-exterior.glb": "d8da7a4571c6a2fad4cfaa261700f3382fdc588531a5ebc726e22157889abc64",
+      "runtime-assets/strip-landmarks/russellService-exterior-collision.bin": "67e1845c33ccefc7804efbb83bde6514d1ccde9bf1c65cd2f05262774bb1be4c"
     }
+  },
+  "optimizedMiB": 0.055644989013671875,
+  "refinement20261107": {
+    "status": "installed-reviewed-refinement-deferred",
+    "references": "docs/project-records/south-service-pair-refinement/research.md",
+    "changes": "Two northern circular fan tops retained; remaining four changed to rectangular weather hoods based on aerial.",
+    "decisions": "Small rib and hood dimensions inferred; retain mapped plan/equipment positions, collision, all concealed-facade and surrounding-site discrepancies. No new service interior.",
+    "before": "docs/project-records/south-service-pair-refinement/performance-before.json",
+    "after": "docs/project-records/south-service-pair-refinement/performance-after.json",
+    "comparison": "docs/project-records/south-service-pair-refinement/performance-comparison.json",
+    "preservation": "docs/project-records/south-service-pair-refinement/preservation.json",
+    "viewsInspected": [
+      "public/project-records/south-service-pair-refinement/after-front-russell-north.png",
+      "public/project-records/south-service-pair-refinement/after-russell-roof.png",
+      "public/project-records/south-service-pair-refinement/after-russell-east.png"
+    ],
+    "walk": "16 actual keyboard legs across both sites pass before/after, all ten endpoint/return captures inspected each time; longitudinal Akita return faces container, no entrance claim.",
+    "remainingRationale": "No survey establishes exact dimensions; concealed service facades lack reference evidence. Broader yard/terrain/parent building work remains a separate scope, and no public service interior is documented. Preserve these gaps rather than invent geometry.",
+    "smoke": "Nine stops; zero failed requests, page errors, console errors or missed stops."
   }
 }

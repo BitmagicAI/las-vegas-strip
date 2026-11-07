@@ -12,9 +12,9 @@
     "Parking apron patches fill missing surfaces but broader adjacent terrain still has gaps.",
     "Materials and main Akita rear facade remain approximate; not photorealistic."
   ],
-  "triangles": 4641,
+  "triangles": 4016,
   "batches": 11,
-  "optimizedMiB": 0.09,
+  "optimizedMiB": 0.07829666137695312,
   "viewsInspected": [
     "build/city-exteriors/akita-rear-canopy-final/akita-canopy-west.png",
     "build/city-exteriors/akita-rear-canopy-final/akita-canopy-under.png",
@@ -158,8 +158,26 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/akitaRearCanopy-exterior.glb": "5650c5beb5f19829aae42df7b5aba1ca7e5179ac96c9362bc0fad33995a11985",
-      "build/strip-landmarks/akitaRearCanopy-exterior-collision.json": "0cc03707107e2417423b5b81135ca42dfcbc67d4abe38f117100cec6ad0f127a"
+      "runtime-assets/strip-landmarks/akitaRearCanopy-exterior.glb": "cb7039c90462c8c8d9df8ede1649dfa25bafafb6c8daf8b02ba54fc0e2bb47d1",
+      "runtime-assets/strip-landmarks/akitaRearCanopy-exterior-collision.bin": "95a9703b9210844515a6b7e90ad5c624e66aaa4198ac6ef166254b59dc6291de"
     }
+  },
+  "refinement20261107": {
+    "status": "installed-reviewed-refinement-deferred",
+    "references": "docs/project-records/south-service-pair-refinement/research.md",
+    "changes": "Original shallow folded roof ribs replace thin rod approximation at existing pitch.",
+    "decisions": "Small rib and hood dimensions inferred; retain mapped plan/equipment positions, collision, all concealed-facade and surrounding-site discrepancies. No new service interior.",
+    "before": "docs/project-records/south-service-pair-refinement/performance-before.json",
+    "after": "docs/project-records/south-service-pair-refinement/performance-after.json",
+    "comparison": "docs/project-records/south-service-pair-refinement/performance-comparison.json",
+    "preservation": "docs/project-records/south-service-pair-refinement/preservation.json",
+    "viewsInspected": [
+      "public/project-records/south-service-pair-refinement/after-front-akita-canopy-west.png",
+      "public/project-records/south-service-pair-refinement/after-akita-canopy-under.png",
+      "public/project-records/south-service-pair-refinement/after-akita-canopy-aerial.png"
+    ],
+    "walk": "16 actual keyboard legs across both sites pass before/after, all ten endpoint/return captures inspected each time; longitudinal Akita return faces container, no entrance claim.",
+    "remainingRationale": "No survey establishes exact dimensions; concealed service facades lack reference evidence. Broader yard/terrain/parent building work remains a separate scope, and no public service interior is documented. Preserve these gaps rather than invent geometry.",
+    "smoke": "Nine stops; zero failed requests, page errors, console errors or missed stops."
   }
 }

@@ -1,0 +1,86 @@
+[
+  {
+    "command": [
+      "bitmagic",
+      "check",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "output": "Type check passed.\n"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lazy-lod.test.mjs"
+    ],
+    "exitCode": 0,
+    "output": "PASS: lazy near detail: LOD vertices bit-identical to the near level (93 checked), near level filled on approach = eager, casters = casting parts, eviction and refill\n"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lighting-resize.test.mjs"
+    ],
+    "exitCode": 0,
+    "output": "PASS: city surfaces carry the cluster grid in their program key and rebuild once per resize\n"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/site-lights.test.mjs"
+    ],
+    "exitCode": 0,
+    "output": "site-lights: ok\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0,
+    "output": "Records valid: 291 blocks (290 refinement-deferred, 1 active); 8 full seven-gate records; 1200 remaining items.\nActive: akita-rear-canopy (lightweight record: no review board). Task board: python3 tools/tasks/build-board.py\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/check-public.py"
+    ],
+    "exitCode": 0,
+    "output": "0 failures, 15 warnings (existing warnings retained in prior records; full log /tmp/south-service-checks.json)"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "output": "2 runtime GLBs checked, 0 not optimized\n"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "city bake is up to date\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "output": "1930 present, 0 missing, 0 not optimized\n"
+  }
+]
