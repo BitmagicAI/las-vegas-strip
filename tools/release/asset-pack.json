@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235519528,
+ "bytes": 1235537790,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -84,8 +84,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_1.bin",
-   "bytes": 1202783,
-   "sha256": "760b51fc250c9b2a0c0e6cbbe7497d9e97db90aff693de5c2ed656d5e59a972d",
+   "bytes": 1202921,
+   "sha256": "ad0de20ad5b08ef2989f546c6a206e435630f1977835123072cbe15256bccb2a",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "97f0bff12e74fceec71fa14927afe831bd2f8e517f73f081839ef81e74930bb0",
+   "sha256": "b10645cc159bd99e8a2156006332f86ff7289fc67a525f2dfcfc184910660436",
    "kind": "runtime cell manifest"
   },
   {
@@ -7938,8 +7938,8 @@
   },
   {
    "path": "build/strip-landmarks/crystalsRoof-exterior.glb",
-   "bytes": 66008,
-   "sha256": "7c00e1b007b9eef2a851635e05bcc518226bd716876ce24b3aaa286533604117",
+   "bytes": 84132,
+   "sha256": "fbf2a13b4004a12063855dbcf78e021ea6cab6e53355a036ac0777c5fcff9504",
    "kind": "optimized"
   },
   {

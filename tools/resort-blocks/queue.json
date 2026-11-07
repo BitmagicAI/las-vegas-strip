@@ -35,11 +35,11 @@
     {
       "id": "venetian",
       "name": "Venetian / Palazzo",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "venetian.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Targeted lower facade duplicates cut; remaining full-site issues retained. Creator requests LINQ and TI/Caesars corrections in same pass."
+        "date": "2026-11-07",
+        "reason": "PR551 verified bounded west-palazzo tall arches/oculi pass; all full-resort discrepancies retained. Continue owner city task sequence."
       }
     },
     {
@@ -545,7 +545,7 @@
     {
       "id": "crystals",
       "name": "The Shops at Crystals",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "crystals.json"
     },
     {
@@ -1928,5 +1928,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "venetian"
+  "active": "crystals"
 }
