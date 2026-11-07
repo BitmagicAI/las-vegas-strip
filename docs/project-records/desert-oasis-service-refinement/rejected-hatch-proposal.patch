@@ -1,0 +1,17 @@
+diff --git a/tools/strip-landmarks/desert_oasis_service.py b/tools/strip-landmarks/desert_oasis_service.py
+index 776e12d8..e160b28a 100644
+--- a/tools/strip-landmarks/desert_oasis_service.py
++++ b/tools/strip-landmarks/desert_oasis_service.py
+@@ -27,6 +27,12 @@ def exterior(B):
+   B.lathe('dos-metal-paint',(x,z),[(5.8,.09),(6.2,.09),(6.23,.16),(6.29,.16)],12)
+  local_pavement(B,box(119,2718,166,2765).difference(p),.14,'dos-paving')
+  for z in [2725,2728,2747,2750,2753]:B.box('dos-line-paint',(154,.155,z),(5,.012,.09))
++ # Northwest outlined hatch observed in aerial; inferred bounds, paint only.
++ hatch=box(130.5,2730.8,134.3,2737.2)
++ B.planar('dos-line-paint',hatch.difference(hatch.buffer(-.09)),.162)
++ for z in np.arange(2727.5,2737.2,.65):
++  stripe=LineString([(130.5,float(z)),(134.3,float(z)+3.8)]).buffer(.045,cap_style=2).intersection(hatch.buffer(-.09))
++  if not stripe.is_empty:B.planar('dos-line-paint',stripe,.162)
+  samples=[[x,6.05,z]for x in np.arange(p.bounds[0]+.2,p.bounds[2],.6)for z in np.arange(p.bounds[1]+.2,p.bounds[3],.6)if p.buffer(-.15).contains(Point(x,z))]
+  Path('build/city-exteriors/desert-oasis-service-samples.json').write_text(json.dumps(samples))
+  Path('build/city-exteriors/desert-oasis-service-stairs.json').write_text(json.dumps([[[140,.24,2731],[140,.24,2744]],[[150,.24,2731],[150,.24,2744]]]))

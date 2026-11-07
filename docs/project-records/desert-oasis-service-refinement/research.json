@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-07",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.091405,-115.171385&zoom=21&basemap=satellite",
+      "review": "Fresh aerial personally inspected. Detached white rectangular roof, two central roof equipment forms, parking east/south and white outlined rectangular diagonal hatch immediately northwest. Roof geometry already represented; targeted addition is missing northwest ground hatch. Imagery date not displayed;2026copyright is not capture date."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.09165,-115.171385&heading=180&pitch=0",
+      "review": "New north-side request resolved to Sylvain Brouillette February2020Motel8Plus guestroom, panoCIHM0ogKEICAgICc3NO0eQ at36.091796,-115.1715453. UI no Street View imagery here. Rejected as unrelated; no facade inference."
+    },
+    {
+      "url": "https://www.clarkcountynv.gov/adobe/assets/urn%3Aaaid%3Aaem%3Ac19695f0-1398-43b3-bd8b-8f8077023715/original/as/new-businesses-apr-2025.pdf",
+      "review": "Official county April2025license search result identifies Desert Oasis Apts and Motel at3965LasVegasBlvdS. Identity context only, no detached facade or dimensional evidence."
+    }
+  ],
+  "decisions": [
+    "Add only original white northwest parking hatch geometry inferred from directly inspected aerial; no accessibility icon or unsupported facade changes.",
+    "Inferred hatch bounds x130.5..134.3,z2730.8..2737.2 using retained8x14m building as scale; not survey-accurate. Thin paint atop existing parcel paving, no collision changes.",
+    "No official photograph of detached service facade located; retain explicit unknown door/louver/height assumptions and no new public interior. Existing neighborhood missingground and roadstubs unchanged."
+  ]
+}
