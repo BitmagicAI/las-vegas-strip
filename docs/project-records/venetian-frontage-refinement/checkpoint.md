@@ -13,3 +13,14 @@ NEXT fresh Google Earth/StreetView and official photograph research, preserve li
 Dev3180/editor3181; no owned research tabs or GPUjobs. Preserveuntracked .agents/engine/node_modules/tools/optimize/bm-tools. DraftPRpending creation immediately after this checkpoint commit.
 
 DraftPR551 now open againstnext: https://github.com/BitmagicAI/las-vegas-strip/pull/551 . Claimconfirmed; resume freshresearch and baseline stage, notsetup.
+
+
+## 2026-11-07 reference survey and baseline complete
+
+Fresh official resort aerial, Google aerial, January2025 west Campanile/palazzo, October2026 northwest frontage and January2021 service alley personally inspected; links/dates/observations in research.md. Official image date unknown and oldMiragebranding means notcurrenttenantproof. October2026 machinery is temporary, notpermanentclosure evidence. Agent researchtab98 closed.
+
+Three front-first neutral before views captured and personally inspected: westfront16.8/18.2ms,north41.6/45.4ms,context22.6/25.7ms median/p95. Existing model has three repetitive arch tiers; dated facade references show ground frontage plus one tall upper stage with round oculi. Scope decision: correct west/north-facing edges of west palazzo way33996627 to tall upper arches/oculi, retaining ground storefront, awnings, banners, overallheight, parapet, collision,servicewall and adjacentCampanile/otherpalazzi. Detailed proposed inferred heights and safe triangle-difference patch plan in research.md. No model edits/candidate/export/install yet.
+
+Eight actual baseline movement legs westfront segmentx100,z-570..-610 andreturn pass; both endpoint/returnimages inspected. This is street/frontage segment evidence only, notinterior/whole-resort traversal. Endpoint snapshot after release drifted toz-610.261 after the threshold was reached; preserve recorded distinction. Geometry snapshots do not establish rooftop/pool access. AllGPUjobsfinished.
+
+Source rawGLB andcollision matchmaincheckout hashes; authored160MiBJSON exists only in main build/strip-landmarks/venetian-exterior.json. NEXT implement scoped old/new palazzi generation/delta patch with assertions that every removed triangle is recognized. Preserve all labels/collision and later surface-ownership cuts, especially ground champagne/blackiron reconciliation. Candidatevisualreview beforeinstallation; level+WebP beforeinstall,onegroupbake,allchecks/afterwalk/smoke/performance. Do not replay currentresearch/baselines. Current scripts probe-venetian-frontage-refinement.js and walk-venetian-frontage-refinement.js are fixed for matchingafter.
