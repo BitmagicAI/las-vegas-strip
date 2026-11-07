@@ -1,0 +1,78 @@
+{
+  "before": {
+    "eye": [
+      -46,
+      7.8,
+      741.5
+    ],
+    "target": [
+      -53.4,
+      7.4,
+      742.2
+    ],
+    "samples": 900,
+    "p50": 16.69999999999709,
+    "p95": 33.400000000001455,
+    "cpuP50": 16.59999990463257,
+    "cpuP95": 30.399999856948853,
+    "drawsP50": 304,
+    "trianglesP50": 6536506,
+    "initialPrograms": 149,
+    "finalPrograms": 149,
+    "streamingFrames": 0,
+    "startAudit": {
+      "builds": 397,
+      "buildMs": 1245.700001001358,
+      "programs": 151,
+      "programMs": 13.300000429153442,
+      "pipelines": 145,
+      "pipelineMs": 8.799999475479126
+    },
+    "endAudit": {
+      "builds": 397,
+      "buildMs": 1245.700001001358,
+      "programs": 151,
+      "programMs": 13.300000429153442,
+      "pipelines": 145,
+      "pipelineMs": 8.799999475479126
+    }
+  },
+  "after": {
+    "eye": [
+      -46,
+      7.8,
+      741.5
+    ],
+    "target": [
+      -53.4,
+      7.4,
+      742.2
+    ],
+    "samples": 900,
+    "p50": 16.69999999999709,
+    "p95": 33.30000000000291,
+    "cpuP50": 14.900000095367432,
+    "cpuP95": 26.399999856948853,
+    "drawsP50": 304,
+    "trianglesP50": 6537250,
+    "initialPrograms": 149,
+    "finalPrograms": 149,
+    "streamingFrames": 0,
+    "startAudit": {
+      "builds": 399,
+      "buildMs": 1227.7000050544739,
+      "programs": 151,
+      "programMs": 12.69999885559082,
+      "pipelines": 150,
+      "pipelineMs": 10.200001001358032
+    },
+    "endAudit": {
+      "builds": 399,
+      "buildMs": 1227.7000050544739,
+      "programs": 151,
+      "programMs": 12.69999885559082,
+      "pipelines": 150,
+      "pipelineMs": 10.200001001358032
+    }
+  }
+}

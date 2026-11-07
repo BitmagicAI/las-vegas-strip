@@ -546,7 +546,7 @@
   ],
   "liftRefinement": {
     "date": "2026-11-07",
-    "status": "installed-verification-pending",
+    "status": "verified-scoped-pass",
     "record": "docs/project-records/pedestrian-lifts-refinement",
     "changes": {
       "cosmoPedestrianLift": "Exterior panel seam grid added outside shell while preserving original cabin grid; upper call plate.",
@@ -594,7 +594,8 @@
       "smoke": "docs/project-records/pedestrian-lifts-refinement/smoke.json",
       "visualReview": "docs/project-records/pedestrian-lifts-refinement/final-visual-review.md",
       "performance": "docs/project-records/pedestrian-lifts-refinement/performance-paired-repeat.json",
-      "status": "performance-targeted-repeat-pending"
+      "status": "passed-with-performance-variability-recorded",
+      "attribution": "docs/project-records/pedestrian-lifts-refinement/profile-summary.json"
     },
     "remainingReasons": {
       "estimatedHeightsAndCladding": "No surveyed dimensions available; this pass retains datums and adds only reference-supported details.",
@@ -602,6 +603,7 @@
       "pavingSeams": "Unchanged street geometry outside four lift model ownership.",
       "crystalsParentWalls": "Unchanged neighboring parent building outside claimed lift geometry.",
       "drivingAndFullResorts": "Matched static local probes cover this pass only; full city driving and resort refinement remain separate work."
-    }
+    },
+    "performanceLimitation": "Short-window Cosmo upper p95 differed across runs;900-frame attribution had equal16.7ms median,33.4\u219233.3ms p95,304draws,149resident programs and+744triangles. No geometry/draw/shader bottleneck reproduced; static timing remains variable, not60fps/driving signoff."
   }
 }
