@@ -1,0 +1,9 @@
+# CityCenter63 refinement — active checkpoint
+
+2026-11-07: Crystals PR552 merged14eec9790dbc78211145028061462770bdcae1bd into next, issue96 explicitly closed. Picker selected nearby ext-citycenter-63 issue101; assignment confirmed janiverse. Fresh branch task/ext-citycenter-63-refinement from currentorigin/next in /Users/janisun/Development/GitFork/vegas-2601-westwood. Preserve four untracked dependency symlinks.
+
+Read AGENTS Long runs, task and full tools/resort-blocks/citycenter-63.json. Two mapped buildings1422113647/1421481100, six exterior component groups. Existing sixth pass is installed; current source photos/elevations are historical and estimated. Known4clearance failures and legacyCrystals-wall route failure remain, not a new regression to poll. Preserve existing interiors, bridge joins and newly merged Crystals roof glazing. Do not use old finalBuild Crystals hashes to restore oldergeometry.
+
+Next: fresh official/Google reference inspection and actual installed neutral daylight baseline; choose bounded nearby terrace/tenant/door fixture refinement supported by current evidence, with inferreddimensions and explicitlimits. Preserve all current sources/collision/optimizedruntimecode. Need front-first fixed before/after cameras, actualmovementbaseline, level+WebP beforeinstallation, onesharedbake, unchangedcellproof, allstep7checks andsmoke/performance. No new geometry/research/baseline yet. Dev3180/editor3181 remains available. No activeGPUjobs or researchtabs.
+
+Current related scripts: tools/strip-landmarks/citycenter63.py, build_citycenter63.py; tools/city-exteriors/probe-citycenter63.js, test-citycenter63.mjs, audit-citycenter63-ownership.py, join-citycenter63-bridges.py, walk-citycenter63.mjs. Never regenerate whole legacy geographic files to add local detail. Reconcile oldinterior/publicaccess only when evidence supports safe bounded changes; retain unresolved issues explicitly.
