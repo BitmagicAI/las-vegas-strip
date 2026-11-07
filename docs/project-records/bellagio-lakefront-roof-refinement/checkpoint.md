@@ -1,0 +1,9 @@
+# Bellagio lakefront roof group checkpoint
+
+2026-11-07. PR536 merged as b1e617dec86439d5a670ebb382874700f3e971fb; issues200/201 explicitly closed. NYNY proof and remaining discrepancies retained. Do not replay that pass.
+
+Picker selected ext-bellagio-arcade-pavilions #176 and ext-bellagio-curved-roofs #202, both claims confirmed janiverse. Fresh branch task/ext-bellagio-lakefront-roof-refinement from current origin/next b1e617de. Read both block records and task instructions. Five nearby mapped roof structures grouped for one shared bake: arcade823658733/732/731; curvedroof114719022/023. No geometry edits or new research/captures yet.
+
+Next read README/source builders/linked research, inspect Google aerial and Street View plus official photographs, record dimensions as inferred. Establish front-first neutral matched before captures and actual keyboard walks before exports. Preserve arcade piers, retained parapets, roads and Bellagio interiors. Parapets intersect pavilion sides in legacy record; center route clear. Do not replay removal/carving. Preserve unmeasured elevations/pier placement, roof ornament/tiles, concave arc, adjacent podium/dome discrepancies. Old sunset performance is not neutral/60fps driving evidence.
+
+Use scoped build/export and optimize every changed model level+WebP before installation. One shared bake, assert unchanged cells byte-identical. GPU jobs serial; Maps closed during probes; no heavy CPU during timed views. All step7, matched performance, installed walks,9stopdevsmoke; preserve failures/repeats, release-only checks separately. Draft next, own-commit audit before each push, self-merge verified exacthead --merge, close176/202, picker. No main/CDN/publish/release/settings. Active worktree vegas-2601-westwood; dev3180/editor3181; dependency symlinks untracked; no running jobs.
