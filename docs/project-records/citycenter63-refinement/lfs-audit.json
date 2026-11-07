@@ -1,0 +1,98 @@
+{
+  "base": "14eec9790dbc78211145028061462770bdcae1bd",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "322b0e5c34937c8aadf2c0c0df3c8a7f9cac86cac3f9897a1ca2e718e739153c",
+      "bytes": 444396,
+      "path": "public/project-records/citycenter63-refinement/after/citycenter63-east-front.png"
+    },
+    {
+      "oid": "47a576da611098f761297c50d1e5fa507882606cc00204a87bc48836f451a514",
+      "bytes": 420743,
+      "path": "public/project-records/citycenter63-refinement/after/citycenter63-south-context.png"
+    },
+    {
+      "oid": "5d6b6807e12a2e5894bbef3d39b4c292ca066c15ac899f57cf2b9ab4f7fe8bf3",
+      "bytes": 441629,
+      "path": "public/project-records/citycenter63-refinement/after/citycenter63-terrace.png"
+    },
+    {
+      "oid": "2ae6f979aaec3815e582a3d8af58f066ce5cee163046dfb7b09fa998d1d738cf",
+      "bytes": 444195,
+      "path": "public/project-records/citycenter63-refinement/before/citycenter63-east-front.png"
+    },
+    {
+      "oid": "fd45140bcd85ce092980dbc7a2d6f306d30f9d6683af0d84e6ea79c5a7384bc8",
+      "bytes": 420806,
+      "path": "public/project-records/citycenter63-refinement/before/citycenter63-south-context.png"
+    },
+    {
+      "oid": "4c4cbe19dd3b670c8dcc2cda98838b50afaea0b0cfb9e2be9d3ad833e9e3fc69",
+      "bytes": 441835,
+      "path": "public/project-records/citycenter63-refinement/before/citycenter63-terrace.png"
+    },
+    {
+      "oid": "03c327f440462dfe6560d3b6df2fc938e32fe34fc60b83fcc4b853edbae30057",
+      "bytes": 444398,
+      "path": "public/project-records/citycenter63-refinement/candidate-material-preserved/citycenter63-east-front.png"
+    },
+    {
+      "oid": "9ea8a8a66bd0ea18c52b5d1fcf2e088704b41b6df07bd6d5be5d8fda52bab864",
+      "bytes": 441601,
+      "path": "public/project-records/citycenter63-refinement/candidate-material-preserved/citycenter63-terrace.png"
+    },
+    {
+      "oid": "558b8db04db410bdb57f0f9ba7b387e022fa130a07a940763bc5d665c51033de",
+      "bytes": 443600,
+      "path": "public/project-records/citycenter63-refinement/candidate/citycenter63-east-front.png"
+    },
+    {
+      "oid": "c020e80da56d95fa7bcbca5ee3000d0ae80e73938a70716a548b971f3a8e8334",
+      "bytes": 420350,
+      "path": "public/project-records/citycenter63-refinement/candidate/citycenter63-south-context.png"
+    },
+    {
+      "oid": "884c58edc9641850ef1f920d644414f82ff8adf53c64d15124086e9f8a46368c",
+      "bytes": 441182,
+      "path": "public/project-records/citycenter63-refinement/candidate/citycenter63-terrace.png"
+    },
+    {
+      "oid": "1e6156e7070a6b9f3cf3e149f1b56a9707cb15973908eee3dccd5907850fcf09",
+      "bytes": 351683,
+      "path": "public/project-records/citycenter63-refinement/walk-after/walk-endpoint-0.png"
+    },
+    {
+      "oid": "0670c6aa2c1aad75fc8ca06310f3505858753a46590944def8bcb42ec3999324",
+      "bytes": 483375,
+      "path": "public/project-records/citycenter63-refinement/walk-after/walk-return-0.png"
+    },
+    {
+      "oid": "78f04024a83d5af7dc51c01040c8eaf5ff7fb05c9fadd5b2e8e0a72169d0325b",
+      "bytes": 342651,
+      "path": "public/project-records/citycenter63-refinement/walk-before/walk-endpoint-0.png"
+    },
+    {
+      "oid": "3a2335679234677f1ecca4d9fb4818e78870517edc53900114f489c1944db253",
+      "bytes": 467021,
+      "path": "public/project-records/citycenter63-refinement/walk-before/walk-return-0.png"
+    },
+    {
+      "oid": "02a78019eda3855ae65547137142e4f7bf2413813693e0514b9127ef7eb9d404",
+      "bytes": 1203210,
+      "path": "runtime-assets/baked/cells/cell--1_1.bin"
+    },
+    {
+      "oid": "f4313bd67108f07c877b49331db02101c143ed3b06fb28c0fbc4dae7fc72a81e",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "37ad4b080be73e45f945d10e9cab22825cac33a09d26d736487e18406503ee5c",
+      "bytes": 2026088,
+      "path": "runtime-assets/strip-landmarks/citycenter63-exterior.glb"
+    }
+  ],
+  "count": 18,
+  "bytes": 9692564
+}
