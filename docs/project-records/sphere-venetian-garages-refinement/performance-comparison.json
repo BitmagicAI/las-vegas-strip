@@ -1,0 +1,317 @@
+{
+  "method": "Same cameras, ultra960x540DPR1, neutral lighting,900warmframes,60settle,180samples. Serial GPU jobs. Individual runs, not a whole-block benchmark.",
+  "limitation": "Final sphere-front p95 outlier32.3ms retained (baseline19.1); three isolated same-camera repeats18.4/19.7/20.3ms p95,16.6\u201316.8ms median. No persistent slowdown established by these samples. Venetian northeast remains~32ms median before/after; not a whole-block or all-device benchmark.",
+  "views": [
+    {
+      "name": "sphere-front",
+      "before": {
+        "name": "sphere-front",
+        "eye": [
+          785,
+          17,
+          -560
+        ],
+        "target": [
+          837,
+          13,
+          -560
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19.100000143051147
+      },
+      "after": {
+        "name": "sphere-front",
+        "eye": [
+          785,
+          17,
+          -560
+        ],
+        "target": [
+          837,
+          13,
+          -560
+        ],
+        "p50": 16.600000143051147,
+        "p95": 32.299999952316284
+      }
+    },
+    {
+      "name": "sphere-northwest",
+      "before": {
+        "name": "sphere-northwest",
+        "eye": [
+          790,
+          30,
+          -700
+        ],
+        "target": [
+          854,
+          14,
+          -606
+        ],
+        "p50": 16.5,
+        "p95": 27.899999856948853
+      },
+      "after": {
+        "name": "sphere-northwest",
+        "eye": [
+          790,
+          30,
+          -700
+        ],
+        "target": [
+          854,
+          14,
+          -606
+        ],
+        "p50": 16.5,
+        "p95": 19.09999990463257
+      }
+    },
+    {
+      "name": "sphere-roof",
+      "before": {
+        "name": "sphere-roof",
+        "eye": [
+          862,
+          72,
+          -540
+        ],
+        "target": [
+          862,
+          20,
+          -540
+        ],
+        "p50": 16.700000047683716,
+        "p95": 27.200000047683716
+      },
+      "after": {
+        "name": "sphere-roof",
+        "eye": [
+          862,
+          72,
+          -540
+        ],
+        "target": [
+          862,
+          20,
+          -540
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19
+      }
+    },
+    {
+      "name": "service-front",
+      "before": {
+        "name": "service-front",
+        "eye": [
+          785,
+          8,
+          -410
+        ],
+        "target": [
+          838,
+          7,
+          -410
+        ],
+        "p50": 16.59999990463257,
+        "p95": 27.59999990463257
+      },
+      "after": {
+        "name": "service-front",
+        "eye": [
+          785,
+          8,
+          -410
+        ],
+        "target": [
+          838,
+          7,
+          -410
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.40000009536743
+      }
+    },
+    {
+      "name": "service-oblique",
+      "before": {
+        "name": "service-oblique",
+        "eye": [
+          800,
+          17,
+          -454
+        ],
+        "target": [
+          858,
+          7,
+          -412
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.5
+      },
+      "after": {
+        "name": "service-oblique",
+        "eye": [
+          800,
+          17,
+          -454
+        ],
+        "target": [
+          858,
+          7,
+          -412
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.199999809265137
+      }
+    },
+    {
+      "name": "venetian-front",
+      "before": {
+        "name": "venetian-front",
+        "eye": [
+          520,
+          27,
+          -482
+        ],
+        "target": [
+          520,
+          22,
+          -410
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.5
+      },
+      "after": {
+        "name": "venetian-front",
+        "eye": [
+          520,
+          27,
+          -482
+        ],
+        "target": [
+          520,
+          22,
+          -410
+        ],
+        "p50": 16.5,
+        "p95": 18.399999856948853
+      }
+    },
+    {
+      "name": "venetian-northeast",
+      "before": {
+        "name": "venetian-northeast",
+        "eye": [
+          653,
+          35,
+          -474
+        ],
+        "target": [
+          540,
+          23,
+          -410
+        ],
+        "p50": 32.10000014305115,
+        "p95": 39.10000014305115
+      },
+      "after": {
+        "name": "venetian-northeast",
+        "eye": [
+          653,
+          35,
+          -474
+        ],
+        "target": [
+          540,
+          23,
+          -410
+        ],
+        "p50": 32,
+        "p95": 37.299999952316284
+      }
+    },
+    {
+      "name": "venetian-roof",
+      "before": {
+        "name": "venetian-roof",
+        "eye": [
+          525,
+          95,
+          -405
+        ],
+        "target": [
+          525,
+          40,
+          -405
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.90000009536743
+      },
+      "after": {
+        "name": "venetian-roof",
+        "eye": [
+          525,
+          95,
+          -405
+        ],
+        "target": [
+          525,
+          40,
+          -405
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19.299999952316284
+      }
+    }
+  ],
+  "sphereFrontRepeats": [
+    {
+      "name": "sphere-front-repeat-1",
+      "eye": [
+        785,
+        17,
+        -560
+      ],
+      "target": [
+        837,
+        13,
+        -560
+      ],
+      "p50": 16.700000047683716,
+      "p95": 18.399999856948853
+    },
+    {
+      "name": "sphere-front-repeat-2",
+      "eye": [
+        785,
+        17,
+        -560
+      ],
+      "target": [
+        837,
+        13,
+        -560
+      ],
+      "p50": 16.799999952316284,
+      "p95": 19.700000047683716
+    },
+    {
+      "name": "sphere-front-repeat-3",
+      "eye": [
+        785,
+        17,
+        -560
+      ],
+      "target": [
+        837,
+        13,
+        -560
+      ],
+      "p50": 16.600000143051147,
+      "p95": 20.299999952316284
+    }
+  ]
+}

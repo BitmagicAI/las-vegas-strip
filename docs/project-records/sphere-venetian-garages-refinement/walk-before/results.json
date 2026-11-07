@@ -1,0 +1,152 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Wynn west frontage and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            810,
+            0.18,
+            -570
+          ],
+          "position": {
+            "x": 810.0001220703125,
+            "y": 0.16661956787109372,
+            "z": -569.8502807617188
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            810,
+            0.18,
+            -600
+          ],
+          "position": {
+            "x": 810.000244140625,
+            "y": 0.16733053207397458,
+            "z": -599.9038696289062
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "service west frontage and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            810,
+            0.18,
+            -395
+          ],
+          "position": {
+            "x": 810,
+            "y": 0.15665843963623044,
+            "z": -394.88043212890625
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            810,
+            0.18,
+            -432
+          ],
+          "position": {
+            "x": 810.0001831054688,
+            "y": 0.17032185077667233,
+            "z": -431.9071960449219
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Venetian north frontage and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            540,
+            0.18,
+            -457
+          ],
+          "position": {
+            "x": 540.1427612304688,
+            "y": 0.16588142395019528,
+            "z": -456.9999694824219
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            490,
+            0.18,
+            -457
+          ],
+          "position": {
+            "x": 490.09002685546875,
+            "y": 0.15671124935150144,
+            "z": -456.99993896484375
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "existing Wynn first ramp and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            866.75,
+            3.75,
+            -461
+          ],
+          "position": {
+            "x": 866.7499389648438,
+            "y": 3.7834527778625486,
+            "z": -460.8527526855469
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            866.75,
+            0.3,
+            -520
+          ],
+          "position": {
+            "x": 866.7499389648438,
+            "y": 0.3260214614868164,
+            "z": -519.9205322265625
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

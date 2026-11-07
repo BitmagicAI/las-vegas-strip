@@ -4776,13 +4776,14 @@
    "id": "ext-sphere-garage",
    "title": "Refine the exterior of Wynn employee garage beside Sphere",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Exact ramp arrangement and stair-core access",
-    "Fine facade fit and service court detail"
+    "Exact ramp arrangement and stair-core access remain unverified: public aerial/street references do not establish internal routes; existing paired ramps retained.",
+    "Fine facade fit and service court detail remain approximate: January/February2025 imagery supports trim and glazing, but landscaping, signage and measured facade dimensions need further evidence.",
+    "Deck interiors remain brighter than reference openings; this facade pass preserves existing materials/lighting behavior and does not claim a complete interior reconstruction."
    ],
    "record": "tools/resort-blocks/sphere-garage.json",
    "buildings": [
@@ -4809,7 +4810,8 @@
     "builders": [
      "tools/city-exteriors/test-sphere-garage.mjs",
      "tools/strip-landmarks/sphere_garage.py",
-     "tools/strip-landmarks/build_sphere_garage.py"
+     "tools/strip-landmarks/build_sphere_garage.py",
+     "tools/strip-landmarks/export_sphere_venetian_refinement.py"
     ]
    },
    "acceptance": [
@@ -4919,13 +4921,14 @@
    "id": "ext-venetian-employee-garage",
    "title": "Refine the exterior of Venetian employee garage",
    "area": "exteriors",
-   "size": "S",
+   "size": "M",
    "priority": "P3",
    "status": "open",
-   "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
+   "summary": "Implemented and reviewed in an earlier pass; 3 known gaps are recorded.",
    "items": [
-    "Exact deck count and height",
-    "Private ramp connections and fine roof details"
+    "Exact deck count and height remain unverified: partly obstructed street images do not establish surveyed dimensions; existing42m/~14interval estimate retained.",
+    "Private ramp connections and fine roof details remain unverified: aerial and historical solar-capacity text do not resolve circulation or current panel layout.",
+    "Deck interiors remain brighter than reference openings; existing lighting behavior retained."
    ],
    "record": "tools/resort-blocks/venetian-employee-garage.json",
    "buildings": [
@@ -4947,7 +4950,8 @@
     "builders": [
      "tools/city-exteriors/test-venetian-employee-garage.mjs",
      "tools/strip-landmarks/venetian_employee_garage.py",
-     "tools/strip-landmarks/build_venetian_employee_garage.py"
+     "tools/strip-landmarks/build_venetian_employee_garage.py",
+     "tools/strip-landmarks/export_sphere_venetian_refinement.py"
     ]
    },
    "acceptance": [

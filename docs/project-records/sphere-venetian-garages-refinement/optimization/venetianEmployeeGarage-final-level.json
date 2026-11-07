@@ -1,0 +1,83 @@
+{
+ "rel": "build/strip-landmarks/venetianEmployeeGarage-exterior.glb",
+ "sourceSha256": "176bb4a655470f6bc49d7b589ab1cff20d25452a0f10c6115ff7db76ecbcfac9",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.417,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/venetianEmployeeGarage-exterior.glb .bitmagic/optimize/build/strip-landmarks/venetianEmployeeGarage-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/venetianEmployeeGarage-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/venetianEmployeeGarage-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 1628948,
+   "triangles": 26971,
+   "vertices": 60733,
+   "nodes": 9,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1619418,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 437400,
+   "triangles": 26971,
+   "vertices": 60705,
+   "nodes": 9,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1072401,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "9 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "0 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "1.14 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}
