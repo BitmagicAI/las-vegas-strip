@@ -1,0 +1,406 @@
+{
+  "level": {
+    "rel": ".bitmagic/venetian-street-candidate/venetian-exterior.glb",
+    "sourceSha256": "5fae1131922a851b6da733daca9afc5ae9e9af919feca1a43a6615538f8b7821",
+    "cls": "level",
+    "loader": "Venetian candidate",
+    "when": "candidate",
+    "label": "primary",
+    "preset": "level",
+    "overrides": [],
+    "exitCode": 0,
+    "signal": null,
+    "seconds": 3.257,
+    "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/venetian-street-candidate/venetian-exterior.glb .bitmagic/optimize/.bitmagic/venetian-street-candidate/venetian-exterior/out.glb --preset=level --json",
+    "failed": [],
+    "stderr": [],
+    "report": {
+      "src": ".bitmagic/venetian-street-candidate/venetian-exterior.glb",
+      "dst": ".bitmagic/optimize/.bitmagic/venetian-street-candidate/venetian-exterior/out.glb",
+      "preset": "level",
+      "before": {
+        "bytes": 100864676,
+        "triangles": 1374093,
+        "vertices": 3542483,
+        "nodes": 245,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 99253126,
+        "gpuTextures": 8388606,
+        "textures": [
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original marble",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 236566,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original tile",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 233546,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original sandstone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229482,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229228,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "KHR_materials_clearcoat",
+          "KHR_materials_emissive_strength",
+          "KHR_materials_sheen"
+        ]
+      },
+      "after": {
+        "bytes": 29492528,
+        "triangles": 1374093,
+        "vertices": 3542453,
+        "nodes": 245,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 67350993,
+        "gpuTextures": 8388606,
+        "textures": [
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original marble",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 236566,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original tile",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 233546,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original sandstone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229482,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229228,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "KHR_materials_clearcoat",
+          "KHR_materials_emissive_strength",
+          "KHR_materials_sheen",
+          "KHR_mesh_quantization"
+        ]
+      },
+      "notes": [
+        "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+        "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+      ],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "245 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "6 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "68.07 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 0 warnings"
+        }
+      ]
+    }
+  },
+  "webp": {
+    "rel": ".bitmagic/venetian-street-candidate/venetian-exterior.glb",
+    "sourceSha256": "5fae1131922a851b6da733daca9afc5ae9e9af919feca1a43a6615538f8b7821",
+    "label": "variant webp-textures",
+    "preset": "level",
+    "overrides": [
+      "--base=webp",
+      "--emissive=webp",
+      "--orm=webp-lossless"
+    ],
+    "exitCode": 0,
+    "signal": null,
+    "seconds": 3.649,
+    "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/venetian-street-candidate/venetian-exterior.glb .bitmagic/optimize/.bitmagic/venetian-street-candidate/venetian-exterior/out-webp-textures.glb --preset=level --base=webp --emissive=webp --orm=webp-lossless --json",
+    "failed": [],
+    "stderr": [],
+    "report": {
+      "src": ".bitmagic/venetian-street-candidate/venetian-exterior.glb",
+      "dst": ".bitmagic/optimize/.bitmagic/venetian-street-candidate/venetian-exterior/out-webp-textures.glb",
+      "preset": "level",
+      "before": {
+        "bytes": 100864676,
+        "triangles": 1374093,
+        "vertices": 3542483,
+        "nodes": 245,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 99253126,
+        "gpuTextures": 8388606,
+        "textures": [
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original marble",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 236566,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original tile",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 233546,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original sandstone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229482,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229228,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "KHR_materials_clearcoat",
+          "KHR_materials_emissive_strength",
+          "KHR_materials_sheen"
+        ]
+      },
+      "after": {
+        "bytes": 28226000,
+        "triangles": 1374093,
+        "vertices": 3542453,
+        "nodes": 245,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 67350993,
+        "gpuTextures": 8388606,
+        "textures": [
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 21152,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original marble",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 22864,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original tile",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 20374,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 20358,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original sandstone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 17848,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original stone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 21056,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "EXT_texture_webp",
+          "KHR_materials_clearcoat",
+          "KHR_materials_emissive_strength",
+          "KHR_materials_sheen",
+          "KHR_mesh_quantization"
+        ]
+      },
+      "notes": [
+        "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+        "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+      ],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "245 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "6 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "69.27 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 0 warnings"
+        }
+      ]
+    }
+  }
+}
