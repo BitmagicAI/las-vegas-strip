@@ -3,6 +3,7 @@ Unknown tenant placements are deliberately not given invented brand signs.
 """
 from common import *
 from forum_shops import facade_frame
+from ole_red_rooftop import rooftop
 RETAIL=['way/1254249180','way/983892276','way/1254249181','way/839503453','way/839503455','way/1254249185','way/1254249184','way/839503452','way/1254249190','way/1254249183','way/839470825','way/1254249182']
 def frontage(B):
  B.source='horseshoe/bazaar-frontage'
@@ -37,6 +38,7 @@ def frontage(B):
    B.box('baz-shade',(x0+3.8,16.16,(z0+z1)/2),(7.6,.1,z1-z0))
    for level in [1,2,3]:B.box('baz-red',(x0-.03,.24+level*4.2-.18,(z0+z1)/2),(.12,.14,z1-z0))
    F=Frame(B,x0-.1,(z0+z1)/2,math.pi/2,y=0);F.text('OLE RED',(0,4.25,0),1.2,'baz-letter')
+   rooftop(B,p.bounds)
    continue
   if roof:
    B.planar('baz-shade',p,h)

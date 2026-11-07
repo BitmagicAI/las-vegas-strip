@@ -67,5 +67,44 @@
       "sha256": "6068f803acfd460f484124dc7d02b3c19ab767aa2cd93b3572e136166c19ceeb",
       "provenance": "Project-generated installed movement baseline; four legs passed, four images visually inspected."
     }
+  ],
+  "after": [
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/after/bazaar-north-front.png",
+      "sha256": "479d7fced95289e73caf87274cf27f350ac5c4651bb0aa033cc6234277536a4d",
+      "provenance": "Project-generated installed after evidence, personally visually inspected 2026-11-07."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/after/ole-red-front.png",
+      "sha256": "3ad034e022d040d2fe1fa10e626a14505768db129b4761f56d59ac4eb6cd1054",
+      "provenance": "Project-generated installed after evidence, personally visually inspected 2026-11-07."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/after/ole-red-rooftop.png",
+      "sha256": "db293c92fa8c3fcbeaad0e0a85fb1469729c0a5d36ac016b184f961cfe45dd00",
+      "provenance": "Project-generated installed after evidence, personally visually inspected 2026-11-07."
+    }
+  ],
+  "walk-after": [
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-after/walk-endpoint-0.png",
+      "sha256": "48c10af554991f10e2be1887621c8b036fc896b75caa902a2c1dc9b09bed5859",
+      "provenance": "Project-generated installed after evidence, personally visually inspected 2026-11-07."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-after/walk-endpoint-1.png",
+      "sha256": "b7da5c083a455a70b634fb1635ae7f3d16c598b26777d83f300d111dfd003547",
+      "provenance": "Project-generated installed after evidence, personally visually inspected 2026-11-07."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-after/walk-return-0.png",
+      "sha256": "f94a75f10ac6556c25c42a1f767251af194b513fb6ad3d3864c1a46c152ecd6d",
+      "provenance": "Project-generated installed after evidence, personally visually inspected 2026-11-07."
+    },
+    {
+      "path": "public/project-records/horseshoe-bazaar-refinement/walk-after/walk-return-1.png",
+      "sha256": "d4e8ce70e84e41de8099df9f4d1578add38cde93f6eba2b5cfd13031af7f8593",
+      "provenance": "Project-generated installed after evidence, personally visually inspected 2026-11-07."
+    }
   ]
 }
