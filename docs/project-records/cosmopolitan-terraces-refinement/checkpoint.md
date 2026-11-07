@@ -2,7 +2,7 @@
 
 PR547 merged e24e236f0928d628a0aca71397843a2eac4d0c28 into next; issue61 explicitly closed. Ole Red bounded roof pass verified:12localchecks,9stop smoke,4before/4after movement legs,3matching neutral daylight pairs,91/92unchanged cells.11,377,198newLFSbytes23objects. Performance variance investigated with repeated original-asset control; no measured >10% regression against control. Full proof and remaining discrepancies in horseshoe-bazaar-refinement. Meaningful installed-pass notification at heartbeat completion; do not repeat.
 
-Picker selected ext-cosmopolitan#18, confirmed unclaimed before claim; now assigned janiverse. Fresh task/ext-cosmopolitan-terraces-refinement from origin/next e24e236f. Active queue Cosmopolitan; prior Horseshoe remains refinement-deferred. Draft PR to create. No Cosmopolitan geometry edits/research/baselines yet.
+Picker selected ext-cosmopolitan#18, confirmed unclaimed before claim; now assigned janiverse. Fresh task/ext-cosmopolitan-terraces-refinement from origin/next e24e236f. Active queue Cosmopolitan; prior Horseshoe remains refinement-deferred. Draft PR548 targets next: https://github.com/BitmagicAI/las-vegas-strip/pull/548 . No Cosmopolitan geometry edits/research/baselines yet.
 
 Task and parent record read including latest October13 ownership and October21 boundary passes. Nine mapped buildings, so scope a nearby group up to about10. Existing model has L1=.24,L2=5.84,L3=11.44,L4=17.04,L14=22.64, all inferred physical elevations, not actual floor-count survey. Boulevard is way134795273, Chelsea way27897905, way472669744 treated as podium; Jockey footprints27897904/699020450. Preserve existing public floors, two stair stacks, portals, guest cores/interiors, roads and pedestrian-lift boundary patches.
 
