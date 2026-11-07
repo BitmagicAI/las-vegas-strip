@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1930,
- "bytes": 1233438839,
+ "bytes": 1233456330,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1541639,
-   "sha256": "37d4ac0e72e9f09408d9f9dcb03bc2cff31a7c05e655db987c5f5406366bb170",
+   "bytes": 1541782,
+   "sha256": "4ee5adad197903088c4012c38ccb708e79e54a96aa66b4156941ff48ba25e6df",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "5af6d53e68627c4b8c85706773e8464b72b70c260ae81a1f0f7aad8f5cbe0629",
+   "sha256": "ecc578e38b49c992c327024ccb23014ef0c44faf9036dc7867849511f3af0df8",
    "kind": "runtime cell manifest"
   },
   {
@@ -7758,8 +7758,8 @@
   },
   {
    "path": "build/strip-landmarks/chayoTerraces-exterior.glb",
-   "bytes": 108900,
-   "sha256": "f4baca055f2fb821f3ae959de8d73ecb2e1a69245671d4f6534c998c6cf8ddbc",
+   "bytes": 126248,
+   "sha256": "86059a6061e86eacd8d519cb73fc42909dfddf92f2354c37c9d9294ba690f27f",
    "kind": "optimized"
   },
   {
