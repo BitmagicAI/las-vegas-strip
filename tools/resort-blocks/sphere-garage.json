@@ -2,8 +2,9 @@
   "id": "sphere-garage",
   "status": "refinement-deferred",
   "remaining": [
-    "Exact ramp arrangement and stair-core access",
-    "Fine facade fit and service court detail"
+    "Exact ramp arrangement and stair-core access remain unverified: public aerial/street references do not establish internal routes; existing paired ramps retained.",
+    "Fine facade fit and service court detail remain approximate: January/February2025 imagery supports trim and glazing, but landscaping, signage and measured facade dimensions need further evidence.",
+    "Deck interiors remain brighter than reference openings; this facade pass preserves existing materials/lighting behavior and does not claim a complete interior reconstruction."
   ],
   "baseline": "build/city-exteriors/existing-large-audit/sphere.png",
   "references": [
@@ -16,15 +17,46 @@
       "url": "https://earth.google.com/web/@36.1210,-115.1634,650a,400d,35y,270h,60t,0r",
       "imagery": "2022-11-09",
       "inspected": true
+    },
+    {
+      "url": "docs/project-records/sphere-venetian-garages-refinement/research.md",
+      "type": "Linked Google aerial, January/February2025 Street View and official Sands source register; original geometry only",
+      "inspected": true
     }
   ],
   "geometry": {
-    "triangles": 5964,
-    "batches": 11
+    "triangles": 19584,
+    "batches": 14,
+    "optimizedBytes": 315604
   },
   "dimensions": "Mapped garage height25m; seven deck intervals estimated from photograph. Attached service building13.5m estimated from relative elevation; mapped5m was inconsistent with reference.",
-  "tests": "218 roof/deck/ramp support samples pass",
+  "tests": "218+240 deck/ramp/roof support samples PASS; all8272 existing collision triangles identical; eight actual movement legs PASS before and after;12localchecks PASS. See docs/project-records/sphere-venetian-garages-refinement/local-checks.json",
   "installedReview": {
+    "views": [
+      "public/project-records/sphere-venetian-garages-refinement/after/service-front.png",
+      "public/project-records/sphere-venetian-garages-refinement/after/service-oblique.png",
+      "public/project-records/sphere-venetian-garages-refinement/after/sphere-front.png",
+      "public/project-records/sphere-venetian-garages-refinement/after/sphere-northwest.png",
+      "public/project-records/sphere-venetian-garages-refinement/after/sphere-roof.png"
+    ],
+    "inspected": true,
+    "findings": "West warm inset bands/guards and four tall bronze glazed service-building banks visible in installed matching daylight views. Three road-frontage and existing ramp routes preserved; no new public interior or exact private ramp/stair access claim."
+  },
+  "verification": "12 local checks PASS,9 local dev smoke stops PASS with0 failed requests/page/console errors;8 actual movement legs PASS. docs/project-records/sphere-venetian-garages-refinement/smoke-final.json",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/sphereGarage-exterior.glb": "75c88f62c0c546a60164cd8b93ce3ea8f7ac7faf959a4bde8be205d6c786068d"
+    }
+  },
+  "activeRefinement": {
+    "record": "docs/project-records/sphere-venetian-garages-refinement/checkpoint.md",
+    "research": "docs/project-records/sphere-venetian-garages-refinement/research.md",
+    "sourceAudit": "docs/project-records/sphere-venetian-garages-refinement/source-audit.json",
+    "baseline": "docs/project-records/sphere-venetian-garages-refinement/before/results.json",
+    "walkBaseline": "docs/project-records/sphere-venetian-garages-refinement/walk-before/results.json",
+    "status": "verified refinement; unresolved dimensions and private circulation retained"
+  },
+  "previousInstalledReview": {
     "views": [
       "build/city-exteriors/sphere-garage-final/garage-west.png",
       "build/city-exteriors/sphere-garage-final/garage-south.png",
@@ -33,10 +65,9 @@
     "inspected": true,
     "findings": "Open decks, ramps, projecting warm stair cores and lower service facade visible. Old blocks removed. Exact ramp/stair access and fine fit remain approximate."
   },
-  "verification": "Full local WebGPU verification passed; 59 fps at spawn, 3011 bodies. Not a block-route performance claim.",
-  "finalBuild": {
-    "files": {
-      "build/optimized/build/strip-landmarks/sphereGarage-exterior.glb": "c2affb011c922a1ab2da6c76ac608f7a145b014fda4da0dcea218047f29d172b"
-    }
+  "performance": {
+    "baseline": "docs/project-records/sphere-venetian-garages-refinement/before/results.json",
+    "after": "docs/project-records/sphere-venetian-garages-refinement/after/results.json",
+    "comparison": "docs/project-records/sphere-venetian-garages-refinement/performance-comparison.json"
   }
 }

@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1234362906,
+ "bytes": 1234862163,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1541782,
-   "sha256": "4ee5adad197903088c4012c38ccb708e79e54a96aa66b4156941ff48ba25e6df",
+   "bytes": 1542972,
+   "sha256": "00a062900820a47d4b32b14feac6e29cc10bfd72f282663c556bd9e9a519d12f",
    "kind": "original"
   },
   {
@@ -348,8 +348,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-1.bin",
-   "bytes": 319593,
-   "sha256": "9beb703f9fc6c979a5954603628e88c257a736010baff1ea0524f557e4840f5d",
+   "bytes": 321348,
+   "sha256": "861cb3861adba83a0065db8fb0dfbd62d2bcb605dd3413378dd3c47d4a714e33",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "6b62532588d5951dd440d7c09c822077b849da6bf838fa1c67380e310c9f43d3",
+   "sha256": "852ec8b69551bed6d35caa56f11ab37a669f048d41f75ee9f7c9b8261080fc91",
    "kind": "runtime cell manifest"
   },
   {
@@ -10890,8 +10890,8 @@
   },
   {
    "path": "build/strip-landmarks/sphereGarage-exterior.glb",
-   "bytes": 105860,
-   "sha256": "c2affb011c922a1ab2da6c76ac608f7a145b014fda4da0dcea218047f29d172b",
+   "bytes": 315604,
+   "sha256": "75c88f62c0c546a60164cd8b93ce3ea8f7ac7faf959a4bde8be205d6c786068d",
    "kind": "optimized"
   },
   {
@@ -11346,8 +11346,8 @@
   },
   {
    "path": "build/strip-landmarks/venetianEmployeeGarage-exterior.glb",
-   "bytes": 150836,
-   "sha256": "c5843c49254b018bfc17e01b1324d0ad9b1653c62ad3cc665cf6f8e54969a9fd",
+   "bytes": 437400,
+   "sha256": "7108d0ff6f6a6686033f55f9dd2ed70707f29e8972cd203c6e18da0125502fc6",
    "kind": "optimized"
   },
   {
@@ -11364,8 +11364,8 @@
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 394532,
-   "sha256": "26905f0bda7ecac48116cd8a218f2b758109180e9c4fe743ac45c7a1df998b59",
+   "bytes": 394536,
+   "sha256": "bba73166135eca5e0f1b818903501909ca3059be691d2ac9ef16899ef778368a",
    "kind": "original"
   },
   {
