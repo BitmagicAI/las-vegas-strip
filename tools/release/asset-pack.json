@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235807122,
+ "bytes": 1235872447,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -102,8 +102,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_4.bin",
-   "bytes": 234394,
-   "sha256": "91cc5f6552ffdd36a3f67ae6d88895713735afdd2968f6191b541ab942f39976",
+   "bytes": 237815,
+   "sha256": "bdfb84c988b6898c284df0cdceb2e5ec0be497c6b0b87e5fca36cf3f05fe2beb",
    "kind": "original"
   },
   {
@@ -330,8 +330,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_4.bin",
-   "bytes": 107967,
-   "sha256": "5e497fd86472b7c485c79778a7c80481c99a6fbc1c05d5ab63525c34f7ead022",
+   "bytes": 107979,
+   "sha256": "186c6f01be58f82cd431d1ec23b1c6d105a9f451051e04a2623dcd9f0a5f3a23",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "c4c491e6e6b4b27fd4603b57fbc01a174cf39a2e345835894b885fb76929905e",
+   "sha256": "da055826120cc952297617f7ea92ab9857b2d1249cacb65e1c535ec02b9fb58c",
    "kind": "runtime cell manifest"
   },
   {
@@ -7398,8 +7398,8 @@
   },
   {
    "path": "build/strip-landmarks/baliHaiClubhouse-exterior.glb",
-   "bytes": 588548,
-   "sha256": "cddb1bcce0a488cddb45cbf93bfcb8940c211f463c702fc718f07f6bd104c5b4",
+   "bytes": 628916,
+   "sha256": "ced20c43e29befcea1066d21f1a4c3512aa6a106ba245d78626c9021b3b3480d",
    "kind": "optimized"
   },
   {
@@ -7410,8 +7410,8 @@
   },
   {
    "path": "build/strip-landmarks/baliHaiService-exterior.glb",
-   "bytes": 175884,
-   "sha256": "c0648507aeca4a726cdc6ada3ad171c7828330a071c9c51b1f837a9eab0fe89b",
+   "bytes": 175844,
+   "sha256": "ed1332730ad990c5afe4eb573f882451e1828f701fa6ca0349270b37bf39aa13",
    "kind": "optimized"
   },
   {
@@ -9306,8 +9306,8 @@
   },
   {
    "path": "build/strip-landmarks/littleChurchWest-exterior.glb",
-   "bytes": 12650744,
-   "sha256": "8c8d4f1a3efd7e9eff1b7fca47c79ee0c746037f3518df0aaf6c3fee3d33e9e9",
+   "bytes": 12672308,
+   "sha256": "551eed58acf5a61b726215996363f2042821b315b0ac70273aac9e46767a8a7c",
    "kind": "optimized"
   },
   {

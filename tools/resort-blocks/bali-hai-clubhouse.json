@@ -47,5 +47,12 @@
       "build/strip-landmarks/baliHaiClubhouse-exterior.glb": "c148bf8722cdb90827c64737e43e622b3e56ea779439fdd8b25d644024078960",
       "build/strip-landmarks/baliHaiClubhouse-exterior-collision.json": "9a4a337d36956b11b6eeb9b5a8ef7cd488c72af701581db56e5b736579a09235"
     }
+  },
+  "refinement20261108": {
+    "change": "Three stepped stone cap layers per existing column; existing roof textures and circulation retained.",
+    "record": "docs/project-records/bali-chapel-refinement",
+    "references": "docs/project-records/bali-chapel-refinement/references.md",
+    "validation": "13 local checks passed; 1493 support samples; 26 before and 26 after actual walk legs; 11 matching daylight views inspected; 9-stop dev smoke zero errors. 90/92 binary cells unchanged.",
+    "scope": "Bounded original detail pass; all other remaining discrepancies retained. No whole-block or photorealistic completion claim."
   }
 }

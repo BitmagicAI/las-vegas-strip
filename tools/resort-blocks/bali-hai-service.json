@@ -119,5 +119,12 @@
   "visualCorrections": [
     "Added missing entrance support apron",
     "Replaced thin roofrib geometry with original filtered normal map to reduce aliasing"
-  ]
+  ],
+  "refinement20261108": {
+    "change": "Three paired transverse rooflights separate from four retained ridge vents; existing wall material and yard circulation retained.",
+    "record": "docs/project-records/bali-chapel-refinement",
+    "references": "docs/project-records/bali-chapel-refinement/references.md",
+    "validation": "13 local checks passed; 1493 support samples; 26 before and 26 after actual walk legs; 11 matching daylight views inspected; 9-stop dev smoke zero errors. 90/92 binary cells unchanged.",
+    "scope": "Bounded original detail pass; all other remaining discrepancies retained. No whole-block or photorealistic completion claim."
+  }
 }

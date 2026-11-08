@@ -28,7 +28,10 @@ def exterior(B):
   for u in np.linspace(.55,L-.55,max(2,round(L/4.5)+1)) if L>2 else []:
    G.box('bhc-stacked-ashlar',(u,1.25,.42),(.68,1.86,.68),True)
    G.box('bhc-dark-timber',(u,3.6,.42),(.30,2.85,.30),True)
-   G.box('bhc-stone-cap',(u,2.21,.42),(.8,.14,.8))
+   # Original stepped capital suggested by official entrance photograph.
+   # Visual only: keep the existing pier/post collision and shared stone material.
+   for yy,width,depth in [(2.16,.78,.12),(2.29,.68,.14),(2.43,.54,.14)]:
+    G.box('bhc-stone-cap',(u,yy,.42),(width,depth,width))
  # Glazed restaurant and pro-shop bays beneath the overhang, not opaque blank walls.
  for a,b in zip(list(body.exterior.coords),list(body.exterior.coords)[1:]):
   G,L,nx,nz=facade_frame(B,a,b,body,.025)
