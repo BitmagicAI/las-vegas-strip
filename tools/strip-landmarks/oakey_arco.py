@@ -5,7 +5,11 @@ KEY='oakeyArco'
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/fuel';B.detail=0;W=Frame(B,0,0,y=0)
  canopy=footprint('way/316303729');store=footprint('way/316303728');ground=.18;clear=ground+3.3528
- B.shell(canopy,clear,clear+.48,'oa-white-paint',roof=False,solid=False);B.planar('oa-roof-paint',canopy,clear+.48);B.planar('oa-white-paint',canopy,clear,True)
+ B.shell(canopy,clear,clear+.48,'oa-white-paint',roof=False,solid=False);B.planar('oa-roof-paint',canopy,clear+.48);B.planar('oa-white-paint',canopy,clear+.14)
+ # Keep the established collision ceiling while recessing the visual soffit.
+ ceiling=Meshes();ceiling.property=B.property;ceiling.source=B.source;ceiling.detail=B.detail
+ ceiling.planar('oa-white-paint',canopy,clear,True)
+ B.solids[B.property]=ceiling.solids[B.property]
  for a,b in zip(list(canopy.exterior.coords),list(canopy.exterior.coords)[1:]):
   G,L,nx,nz=facade_frame(B,a,b,canopy,.025)
   G.box('oa-blue-paint',(L/2,clear+.25,-.035),(L,.24,.09))
@@ -13,6 +17,9 @@ def exterior(B):
    G.text('ARCO',(L/2,clear+.19,-.11),.24,'oa-white-letter')
  # Two longitudinal pump islands, each with a structural white brick pier and two dispensers.
  F=Frame(B,1891.8,-3954.15,yaw=-math.atan2(7.002,12.922),y=0)
+ # Recessed soffit and two shallow longitudinal beams seen in August 2024.
+ # Beam bottoms retain the existing 11 ft datum; dimensions inferred from canopy.
+ for w in [-1.65,1.65]:F.box('oa-white-paint',(0,clear+.07,w),(13.8,.14,.18))
  for u in [-4.5,4.5]:
   F.box('oa-island',(u,.28,0),(1.6,.2,4.4),True);F.box('ms-white-brick-paint',(u,(ground+clear)/2,0),(.55,clear-ground,.55),True)
   for w in [-1.43,1.43]:

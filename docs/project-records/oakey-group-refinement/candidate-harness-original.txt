@@ -1,0 +1,136 @@
+[
+ {
+  "name": "luvit-front",
+  "eye": [
+   1929,
+   2.5,
+   -3932
+  ],
+  "target": [
+   1930,
+   2,
+   -3943
+  ],
+  "p50": 16.700000047683716,
+  "p95": 18.09999990463257
+ },
+ {
+  "name": "luvit-service",
+  "eye": [
+   1943,
+   2.2,
+   -3945
+  ],
+  "target": [
+   1933,
+   2,
+   -3946
+  ],
+  "p50": 17.700000047683716,
+  "p95": 21.40000009536743
+ },
+ {
+  "name": "oakey-front",
+  "eye": [
+   1873,
+   3,
+   -3952
+  ],
+  "target": [
+   1899,
+   2,
+   -3953
+  ],
+  "p50": 16.700000047683716,
+  "p95": 17.700000047683716
+ },
+ {
+  "name": "oakey-store",
+  "eye": [
+   1902,
+   2.1,
+   -3950
+  ],
+  "target": [
+   1914,
+   1.8,
+   -3952
+  ],
+  "p50": 16.700000047683716,
+  "p95": 17.699999809265137
+ },
+ {
+  "name": "shops-front",
+  "eye": [
+   1851,
+   3,
+   -3943
+  ],
+  "target": [
+   1838,
+   2,
+   -3946
+  ],
+  "p50": 16.700000047683716,
+  "p95": 17.5
+ },
+ {
+  "name": "shops-north",
+  "eye": [
+   1864,
+   3,
+   -3983
+  ],
+  "target": [
+   1848,
+   2,
+   -3985
+  ],
+  "p50": 16.699999809265137,
+  "p95": 17.40000009536743
+ }
+]
+Probe failed; recent browser messages:
+[StreamingWork] landmark:cosmoL2 "Cosmopolitan · Level 2": background, ran 6 ms without holding the game (waited 183 ms in the queue)
+[StreamingWork] landmark:cosmoL3 "Cosmopolitan · Level 3": background, ran 22 ms without holding the game (waited 189 ms in the queue)
+[StreamingWork] landmark:cosmoL4 "Cosmopolitan · Level 4": background, ran 769 ms without holding the game (waited 211 ms in the queue)
+[StreamingWork] landmark:cosmoL14 "Cosmopolitan · Level 14": background, ran 20 ms without holding the game (waited 981 ms in the queue)
+[StreamingWork] city-collision:-1,3 "nearby roads and buildings": prepare 329 ms, first frames 254 ms, game held 602 ms (waited 1000 ms in the queue)
+[StreamingWork] queue drained: game held 1605 ms in total
+THREE.AttributeNode: Vertex attribute "uv" not found on geometry.
+THREE.AttributeNode: Vertex attribute "uv" not found on geometry.
+[Warmup] GPU warmup: 5763ms (mode=full)
+[GameState] Game state changed: loading → menu
+[GameTemplate] 🎮 Starting game...
+[GameState] Game state changed: menu → playing
+[StreamingWork] city-collision:12,-25 "nearby roads and buildings": prepare 229 ms, first frames 116 ms, game held 478 ms (waited 0 ms in the queue)
+[StreamingWork] landmark:chapelFlowers "Chapel of the Flowers campus exterior": background, ran 164 ms without holding the game (waited 116 ms in the queue)
+[StreamingWork] landmark:sinclair1705 "Sinclair 1705 exterior": background, ran 186 ms without holding the game (waited 281 ms in the queue)
+[StreamingWork] landmark:oakeyService "Oakey retained service compound": prepare 129 ms, first frames 105 ms, game held 272 ms (waited 466 ms in the queue)
+[StreamingWork] landmark:santaPaulaOffice "Santa Paula low office": background, ran 253 ms without holding the game (waited 739 ms in the queue)
+[StreamingWork] landmark:santaPaulaNorth "Santa Paula north apartment row": background, ran 105 ms without holding the game (waited 991 ms in the queue)
+[StreamingWork] landmark:oakeyOffices "Oakey small offices and carport": prepare 75 ms, first frames 115 ms, game held 229 ms (waited 1096 ms in the queue)
+[StreamingWork] landmark:oakeyShops "Oakey mixed storefronts": background, ran 106 ms without holding the game (waited 1325 ms in the queue)
+[StreamingWork] landmark:oakeyArco "ARCO and ampm at Oakey": prepare 269 ms, first frames 52 ms, game held 565 ms (waited 1431 ms in the queue)
+[StreamingWork] landmark:luvIt "Luv-It Frozen Custard": prepare 4 ms, first frames 63 ms, game held 98 ms (waited 1996 ms in the queue)
+[StreamingWork] landmark:bajamar "Bajamar Seafood and Tacos": background, ran 21 ms without holding the game (waited 2094 ms in the queue)
+[StreamingWork] landmark:cityMarketLiquor "City Market & Liquor": prepare 16 ms, first frames 64 ms, game held 111 ms (waited 2115 ms in the queue)
+[StreamingWork] landmark:carnitas1601 "Carnitas y Tortas Ahogadas Guadalajara 2": background, ran 21 ms without holding the game (waited 2227 ms in the queue)
+[StreamingWork] landmark:peppermintHippo "Peppermint Hippo 1531": background, ran 17 ms without holding the game (waited 2247 ms in the queue)
+[StreamingWork] landmark:rexfordPlaceWest "Rexford Place west homes": background, ran 18 ms without holding the game (waited 2264 ms in the queue)
+[StreamingWork] queue drained: game held 2644 ms in total
+[StreamingWork] city-collision:11,-25 "nearby roads and buildings": background, ran 52 ms without holding the game (waited 0 ms in the queue)
+[StreamingWork] landmark:market1700 "White Cross Market exterior": background, ran 135 ms without holding the game (waited 0 ms in the queue)
+[StreamingWork] landmark:whiteCrossAnnex "WhiteCrossMarket west wing": background, ran 31 ms without holding the game (waited 0 ms in the queue)
+[StreamingWork] landmark:wyoming17Frontage "Wyoming17 street frontage": background, ran 29 ms without holding the game (waited 0 ms in the queue)
+[StreamingWork] landmark:casinoCenter1520 "1520 Art District Apartments": background, ran 13 ms without holding the game (waited 29 ms in the queue)
+[StreamingWork] landmark:alboDinosFrontage "Albo Pizza and Dino's Lounge": background, ran 17 ms without holding the game (waited 42 ms in the queue)
+[StreamingWork] landmark:casinoCenterCourtyard "Casino Center courtyard studios": background, ran 17 ms without holding the game (waited 59 ms in the queue)
+file:///private/tmp/oakey-candidate-runner.mjs:70
+  console.log(JSON.stringify(result,null,1));fs.writeFileSync(`${outDir}/candidate-replacements.json`,JSON.stringify(replaced,null,2)+'\n');if(!replaced['atomicGolf-exterior.glb'])throw new Error('Candidate was not requested');
+                                                                                                                                                                                          ^
+
+Error: Candidate was not requested
+    at file:///private/tmp/oakey-candidate-runner.mjs:70:187
+
+Node.js v25.9.0

@@ -1,0 +1,96 @@
+{
+  "viewport": "960x540",
+  "dpr": 1,
+  "quality": "ultra",
+  "warmupFrames": 900,
+  "timedFrames": 180,
+  "views": [
+    {
+      "name": "luvit-front",
+      "before": [
+        16.700000047683716,
+        31.399999856948853
+      ],
+      "after": [
+        16.600000143051147,
+        18.200000047683716
+      ]
+    },
+    {
+      "name": "luvit-service",
+      "before": [
+        18.899999856948853,
+        22.5
+      ],
+      "after": [
+        16.699999809265137,
+        17.800000190734863
+      ]
+    },
+    {
+      "name": "oakey-front",
+      "before": [
+        17.5,
+        24.799999952316284
+      ],
+      "after": [
+        16.699999809265137,
+        17.200000047683716
+      ]
+    },
+    {
+      "name": "oakey-store",
+      "before": [
+        16.700000047683716,
+        19.09999990463257
+      ],
+      "after": [
+        16.700000047683716,
+        17.799999952316284
+      ]
+    },
+    {
+      "name": "shops-front",
+      "before": [
+        17.199999809265137,
+        27.700000047683716
+      ],
+      "after": [
+        16.600000143051147,
+        17.90000009536743
+      ]
+    },
+    {
+      "name": "shops-north",
+      "before": [
+        18.799999952316284,
+        23.40000009536743
+      ],
+      "after": [
+        16.600000143051147,
+        17.5
+      ]
+    }
+  ],
+  "limits": "Static matched camera samples; baseline p95 variable. No whole-route or device-independent performance claim.",
+  "supplemental": {
+    "name": "oakey-front-soffit",
+    "before": [
+      16.600000143051147,
+      17.90000009536743
+    ],
+    "after": [
+      22.200000047683716,
+      27.09999990463257
+    ]
+  },
+  "soffit-control": [
+    24.5,
+    29.200000047683716
+  ],
+  "soffit-repeat": [
+    25,
+    30.90000009536743
+  ],
+  "assessment": "Original-model contemporaneous control also ran slower than early baseline. Keep all samples; no reproducible change-specific regression established and no performance improvement claim."
+}

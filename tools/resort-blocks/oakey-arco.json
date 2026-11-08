@@ -38,5 +38,14 @@
       "build/strip-landmarks/oakeyArco-exterior.glb": "ba70140e3f3ee7bac2eb0ca9a7a22bc504caef3e031a8de0f48d02e05ab684a3",
       "build/strip-landmarks/oakeyArco-exterior-collision.json": "0bbfda0e52a277a04e5f9745d1493325e4ecf7e215964f485da6b099598cfdfc"
     }
+  },
+  "refinement20261108": {
+    "scope": "Recessed visual canopy soffit and two shallow longitudinal beams; original collision ceiling and four dispensers preserved. WebP candidate selected.",
+    "record": "docs/project-records/oakey-group-refinement/",
+    "status": "verified-bounded",
+    "notCompletion": true,
+    "installedSHA256": "96df0283dd54bcc4358e28c22245333d66bed107e3c0b019b115903eca678f09",
+    "checks": "13 local checks;705 support/headroom samples;18before+18after actual walking legs;9devsmokestops;7installed daylight views inspected;91/92cells byte-identical.",
+    "performance": "Static matched camera measurements and contemporaneous original-model control/repeat retained in performance.json; no whole-route or improvement claim."
   }
 }

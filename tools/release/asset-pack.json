@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235734819,
+ "bytes": 1235750780,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,8 +444,8 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 699112,
-   "sha256": "ad61bc52fbf2e0a72f6b80b2aca99dce4f8ecd2da63ec4eb9f886401f1dcaf22",
+   "bytes": 699129,
+   "sha256": "55a4943e3310d6af5820cf2e31b4870820d88238a38899169f75931857628ba8",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "61cd53f8feb946d6055df2c59082e4f47ddad9521327123697a1df4c4f0d005f",
+   "sha256": "36cce5b7d441c381f61c5219cf53118121393afd17fbf2582e7db64d685b5e05",
    "kind": "runtime cell manifest"
   },
   {
@@ -9366,8 +9366,8 @@
   },
   {
    "path": "build/strip-landmarks/luvIt-exterior.glb",
-   "bytes": 287828,
-   "sha256": "083bb602fa06e7eb81533867fd9cf1ee51a7f05213ce29784dd096dec76c244c",
+   "bytes": 303284,
+   "sha256": "b8f986c6d788b976c7c8e571c025a81ff198d0aa3d331a0cb84e13a46fe9c006",
    "kind": "optimized"
   },
   {
@@ -9918,8 +9918,8 @@
   },
   {
    "path": "build/strip-landmarks/oakeyArco-exterior.glb",
-   "bytes": 491580,
-   "sha256": "07be1f514be19afedc2e7966dd24845f989c6e7553afcd8ba0a820d7c9349ba6",
+   "bytes": 492068,
+   "sha256": "96df0283dd54bcc4358e28c22245333d66bed107e3c0b019b115903eca678f09",
    "kind": "optimized"
   },
   {

@@ -1,0 +1,5 @@
+1932 files, 1178.5 MiB -> tools/release/asset-pack.json
+  optimized: 1118.9 MiB
+  original: 59.5 MiB
+  runtime cell manifest: 0.1 MiB
+runtime-assets/: 4 copied, 1928 unchanged, 0 removed. Commit it: git add -A runtime-assets tools/release/asset-pack.json
