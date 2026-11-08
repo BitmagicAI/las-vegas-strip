@@ -748,7 +748,7 @@
     "Refine stepped roofline, pavilions and current rooftop venue fit-out from newer imagery",
     "Complete remaining live routes and automated startup verification",
     "Exact Opera/Arc ornament, mature landscaping and surveyed arrival proportions",
-    "Reconstruct and validate the geographic Le Boulevard–Horseshoe connector",
+    "Reconstruct and validate the geographic Le Boulevard\u2013Horseshoe connector",
     "Next action recorded: Retain every remaining survey, facade, circulation and ornament discrepancy; continue owner-authorized city task sequence after this bounded pass is verified.",
     "Completion gates still pending: survey, massing, levels, facades, integration, runtime, visual (tools/resort-blocks/README.md)"
    ],
@@ -891,7 +891,7 @@
     "No resort-route performance comparison or full traversal signoff",
     "Creator rejects visual fidelity of complete visible composition",
     "Exact outdoor bridge profiles, water depth and northern terminal treatment remain approximate",
-    "Next action recorded: Preserve current separate canal layout. Refine exact street tenants, palazzo ornament, tower details, podium and map-based interiors. Harrah’s/LINQ targeted facades advanced per creator request; no whole-resort acceptance.",
+    "Next action recorded: Preserve current separate canal layout. Refine exact street tenants, palazzo ornament, tower details, podium and map-based interiors. Harrah\u2019s/LINQ targeted facades advanced per creator request; no whole-resort acceptance.",
     "Completion gates still pending: survey, massing, levels, facades, integration, runtime, visual (tools/resort-blocks/README.md)"
    ],
    "record": "tools/resort-blocks/venetian.json",
@@ -1017,7 +1017,7 @@
   },
   {
    "id": "ext-harrahs",
-   "title": "Refine the exterior of Harrah’s Las Vegas",
+   "title": "Refine the exterior of Harrah\u2019s Las Vegas",
    "area": "exteriors",
    "size": "M",
    "priority": "P1",
@@ -1384,7 +1384,7 @@
     },
     {
      "id": "way/115665216",
-     "name": "KÀ - Cirque du Soleil",
+     "name": "K\u00c0 - Cirque du Soleil",
      "status": "reviewed-refinement-pending"
     },
     {
@@ -1875,7 +1875,7 @@
   },
   {
    "id": "ext-new-york",
-   "title": "Refine the exterior of New York–New York",
+   "title": "Refine the exterior of New York\u2013New York",
    "area": "exteriors",
    "size": "M",
    "priority": "P1",
@@ -3808,7 +3808,7 @@
     },
     {
      "id": "way/34000287",
-     "name": "Gordon Ramsay's Hell’s Kitchen",
+     "name": "Gordon Ramsay's Hell\u2019s Kitchen",
      "status": "exterior-pass-reviewed-refinement-pending"
     },
     {
@@ -4733,7 +4733,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Exact terrace boundary/elevation: inferred1741m²slab versus operator~1301m²eventarea",
+    "Exact terrace boundary/elevation: inferred1741m\u00b2slab versus operator~1301m\u00b2eventarea",
     "Public stairs/interior connection to third-level terrace remains absent",
     "Exact roof/mullion proportions and ground landscaping",
     "Existing raised approach roads and onward public connections unresolved"
@@ -5798,7 +5798,7 @@
     "Precise elevations, signage artwork, landscape and parking integration",
     "Mixed retail allocation in red-gabled3041building:Jan2025Everything$10sign conflicts with broad currentElGordo labels",
     "Dry Royalpool remains simplified; interiors/doors closed",
-    "Royal retained2022–24architecture despite September2026demolition"
+    "Royal retained2022\u201324architecture despite September2026demolition"
    ],
    "record": "tools/resort-blocks/convention-frontage.json",
    "buildings": [
@@ -5853,7 +5853,7 @@
    "status": "done",
    "summary": "Implemented and reviewed in an earlier pass; 5 known gaps are recorded.",
    "items": [
-    "Anchor heights12.5–23m and facade measurements are photographic estimates.",
+    "Anchor heights12.5\u201323m and facade measurements are photographic estimates.",
     "Curved/raked restaurant facade, landscaping and exact brand graphics require refinement.",
     "Upper plaza has stairs and guards but no new restaurant interior connections; existing galleria preserved.",
     "North Macys Men rounded entrance and precise rooftop equipment placements remain approximate.",
@@ -6041,7 +6041,7 @@
     "Fine storefront glazing, tenant identity and rooftop furnishings: preserve current facade and sparse furniture because this pass repairs landing safety only.",
     "Wide-view performance: older ablation did not isolate BLVD as bottleneck; new same-camera p95 mostly18ms but sustained60fps is not established.",
     "Precise heights and setbacks remain photo estimates; no surveyed elevations were introduced by this pass.",
-    "Public traversal beyond the verified street→north terrace return route: south terrace, all storefront interiors and lift/escalator access remain unverified or unimplemented."
+    "Public traversal beyond the verified street\u2192north terrace return route: south terrace, all storefront interiors and lift/escalator access remain unverified or unimplemented."
    ],
    "record": "tools/resort-blocks/blvd-retail.json",
    "buildings": [
@@ -9136,10 +9136,10 @@
     "No restaurant interior or working doors",
     "Escalator represented by fixed walkable stair, no moving steps",
     "Exact signage/logo letterforms and curved upper fascia remain approximate",
-    "Harrahs existing north wall blocks attempted route atz≈−449.3; not rebuilt here",
+    "Harrahs existing north wall blocks attempted route atz\u2248\u2212449.3; not rebuilt here",
     "Generic nearby resort facade remains a separate refinement",
     "Gold arch and labels remain simplified and need calibrated photo comparison",
-    "No nearby café furnishings/landscaping; service elevation inferred",
+    "No nearby caf\u00e9 furnishings/landscaping; service elevation inferred",
     "Upper landing red fascia line remains visually approximate despite passing actual stair routes; retain for future architecture review."
    ],
    "record": "tools/resort-blocks/casino-royale-retail.json",
@@ -10522,7 +10522,7 @@
     "Window band and porch house associations corrected in this pass, but exact dimensions, solar placement and gable screen details remain approximate",
     "Corner yard recolored to photographed red gravel; existing sidewalk exclusions retained, but side/rear gardens and dense planting remain incomplete",
     "No interiors or full driving benchmark; actual walks establish nine short entrance approaches and returns, close-wall endpoint images do not establish interior access",
-    "Initial front p95 rose 18→23ms (+27.78%); warmed exact-base rendering A/B median18.20→18.25ms (+0.27%). Initial discrepancy retained; no startup/full-driving/sustained60fps claim"
+    "Initial front p95 rose 18\u219223ms (+27.78%); warmed exact-base rendering A/B median18.20\u219218.25ms (+0.27%). Initial discrepancy retained; no startup/full-driving/sustained60fps claim"
    ],
    "record": "tools/resort-blocks/houssels-west.json",
    "buildings": [
@@ -11690,8 +11690,8 @@
    "items": [
     "Exact use of mapped small roof remains uncertain; no speculative venue branding.",
     "Mapped plan, roof height and6.64m retained terrace datum are not surveyed.",
-    "Pale panels/dark counter/brass shelves follow Chéri photos, but larger Beer Park/Chéri terrace layout and vegetation remain approximate.",
-    "Static ultra960x540 frametimes45–47ms median; this is not a60fps driving validation."
+    "Pale panels/dark counter/brass shelves follow Ch\u00e9ri photos, but larger Beer Park/Ch\u00e9ri terrace layout and vegetation remain approximate.",
+    "Static ultra960x540 frametimes45\u201347ms median; this is not a60fps driving validation."
    ],
    "record": "tools/resort-blocks/paris-rooftop-bar.json",
    "buildings": [
@@ -11779,7 +11779,7 @@
   },
   {
    "id": "ext-nyny-arrival",
-   "title": "Refine the exterior of New York–New York arrival pavilion and canopy",
+   "title": "Refine the exterior of New York\u2013New York arrival pavilion and canopy",
    "area": "exteriors",
    "size": "M",
    "priority": "P2",
@@ -12055,14 +12055,14 @@
   },
   {
    "id": "ext-hofbrauhaus",
-   "title": "Refine the exterior of Hofbräuhaus Las Vegas",
+   "title": "Refine the exterior of Hofbr\u00e4uhaus Las Vegas",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
    "status": "open",
    "summary": "Installed exterior and public rooms visually reviewed; all eight actual walking segments and packaging checks passed. Remaining architectural polish explicitly deferred while city expansion continues.",
    "items": [
-    "Refine roof intersections, façade ornament, interior wall detail and exact inferred room arrangement; this is not photorealistic.",
+    "Refine roof intersections, fa\u00e7ade ornament, interior wall detail and exact inferred room arrangement; this is not photorealistic.",
     "Improve tree density/species match and interior decoration without increasing shader count; retain measured performance.",
     "Garden fountain sculpture, exact balcony/decorative artwork and botanical species remain approximations; no surveyed interior floorplan found."
    ],
@@ -12436,7 +12436,7 @@
   },
   {
    "id": "ext-ferraros",
-   "title": "Refine the exterior of Ferraro’s Ristorante",
+   "title": "Refine the exterior of Ferraro\u2019s Ristorante",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -12635,7 +12635,7 @@
   },
   {
    "id": "ext-mcdonalds-tropicana",
-   "title": "Refine the exterior of McDonald’s West Tropicana",
+   "title": "Refine the exterior of McDonald\u2019s West Tropicana",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -12915,7 +12915,7 @@
     "Interior is a simplified photo-supported interpretation. Exact room boundaries, breakfast arches, displays, ornaments and seating profiles remain unverified or incomplete. Private hotel rooms remain closed.",
     "Not photorealistically complete; refinements deferred while continuing the requested city-wide work.",
     "Wood/floor grain improved and soft seating rounded; remaining furniture, cabinetry, textile pattern and ornament detail still simplified.",
-    "Pool-facing performance regressed: repeat18.9ms median30.2ms p95 versus previous16.6–16.7/19.2–21.4 close-pool results. Reverse view16.6/19.2. Cause not isolated; profile foliage/material/canopy costs in next optimization pass, no locked60fps claim."
+    "Pool-facing performance regressed: repeat18.9ms median30.2ms p95 versus previous16.6\u201316.7/19.2\u201321.4 close-pool results. Reverse view16.6/19.2. Cause not isolated; profile foliage/material/canopy costs in next optimization pass, no locked60fps claim."
    ],
    "record": "tools/resort-blocks/hampton-tropicana.json",
    "buildings": [],
@@ -13089,7 +13089,7 @@
     "Plain end walls, sparse lobby/laundry furnishings and opaque lobby glazing need refinement; no photorealistic completion claim.",
     "Pool furniture placement, pool dimensions, stair dimensions and hidden interior plan remain inferred; add furniture collision where appropriate.",
     "Existing generic courtyard drive does not match aerial parking layout; any future correction must be targeted and preserve public roads.",
-    "Performance remains below60fps: latest matched-view medians19.6–30.1ms, p95up to49.3ms. Shared-machine measurements, no controlled improvement claim.",
+    "Performance remains below60fps: latest matched-view medians19.6\u201330.1ms, p95up to49.3ms. Shared-machine measurements, no controlled improvement claim.",
     "Palms and sparse public-room furnishings remain visibly stylized; further material and foliage refinement needed."
    ],
    "record": "tools/resort-blocks/motel6-stadium.json",
@@ -13165,7 +13165,7 @@
   },
   {
    "id": "ext-shooting-center",
-   "title": "Refine the exterior of 5155 Dean Martin — Shooting Center / J&S Diesel",
+   "title": "Refine the exterior of 5155 Dean Martin \u2014 Shooting Center / J&S Diesel",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -13546,7 +13546,7 @@
    "items": [
     "Exact roof hip/ridge proportions and edge closure, sign artwork, glazing transparency and landscape fidelity remain simplified.",
     "Public room dimensions/connections inferred; private service and cafe interior excluded. Original geometric decor substitutes for photographed art; carpet and wood patterns too regular.",
-    "Booth view median36.4/p9548.6ms; not a stable60fps result. Other interior median17.6–21.4ms. Further performance/fidelity work needed."
+    "Booth view median36.4/p9548.6ms; not a stable60fps result. Other interior median17.6\u201321.4ms. Further performance/fidelity work needed."
    ],
    "record": "tools/resort-blocks/kung-fu-plaza.json",
    "buildings": [],
@@ -13578,7 +13578,7 @@
   },
   {
    "id": "ext-wahoos-flamingo",
-   "title": "Refine the exterior of Wahoo’s Fish Taco — Flamingo",
+   "title": "Refine the exterior of Wahoo\u2019s Fish Taco \u2014 Flamingo",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -13619,7 +13619,7 @@
   },
   {
    "id": "ext-twain-laundry",
-   "title": "Refine the exterior of 24 Hour Laundry Center — Twain",
+   "title": "Refine the exterior of 24 Hour Laundry Center \u2014 Twain",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -13628,7 +13628,7 @@
    "items": [
     "Exact public room arrangement and tenant partition are inferred; private service spaces and neighboring tenant interiors excluded.",
     "Glazing opaque, sign artwork/graphics simplified, service elevations and roof plant approximate; finishes and repeated machine details need refinement.",
-    "Performance below60fps in close views. Initial frontage36.8ms median versus27.9baseline;repeat35.7;within-run ablation28ms with room vs26.1without, indicating variable shared-machine timing and about1.9ms room cost. Interior21.3–35.1ms median; p95 up to50.3ms. Optimization remains."
+    "Performance below60fps in close views. Initial frontage36.8ms median versus27.9baseline;repeat35.7;within-run ablation28ms with room vs26.1without, indicating variable shared-machine timing and about1.9ms room cost. Interior21.3\u201335.1ms median; p95 up to50.3ms. Optimization remains."
    ],
    "record": "tools/resort-blocks/twain-laundry.json",
    "buildings": [],
@@ -13660,7 +13660,7 @@
   },
   {
    "id": "ext-favorita-market",
-   "title": "Refine the exterior of La Favorita Market — Twain",
+   "title": "Refine the exterior of La Favorita Market \u2014 Twain",
    "area": "exteriors",
    "size": "S",
    "priority": "P3",
@@ -13668,7 +13668,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 2 known gaps are recorded.",
    "items": [
     "Sign lettering is small/plain; facade glass opaque, roof and service walls simplified. Product packages, cooler glazing and meat display contents remain visibly stylized. Exact tenant divisions and public room arrangement inferred; private spaces excluded.",
-    "Exterior median frame time21.6/37.4/18.9ms vs17.2/29.9/16.4baseline; further optimization required. Interior16.6–17.3ms median,21.1–29.9ms p95. No stable60fps or photorealistic completion claim."
+    "Exterior median frame time21.6/37.4/18.9ms vs17.2/29.9/16.4baseline; further optimization required. Interior16.6\u201317.3ms median,21.1\u201329.9ms p95. No stable60fps or photorealistic completion claim."
    ],
    "record": "tools/resort-blocks/favorita-market.json",
    "buildings": [],
@@ -13700,7 +13700,7 @@
   },
   {
    "id": "ext-marianas-sahara",
-   "title": "Refine the exterior of Mariana’s Supermarkets — Sahara",
+   "title": "Refine the exterior of Mariana\u2019s Supermarkets \u2014 Sahara",
    "area": "exteriors",
    "size": "S",
    "priority": "P3",
@@ -13740,7 +13740,7 @@
   },
   {
    "id": "ext-mt-everest-sahara",
-   "title": "Refine the exterior of Mt. Everest India's Cuisine — Sahara",
+   "title": "Refine the exterior of Mt. Everest India's Cuisine \u2014 Sahara",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -13749,7 +13749,7 @@
    "items": [
     "Exact sign lettering/proportions, roof hips/tile seams, opaque glazing, repetitive brick and inferred services remain simplified.",
     "Public room layout and dimensions are inferred; hidden service/kitchen rooms remain closed. Carpet reads as broad streaks, glassware is opaque, buffet steel/food and furniture upholstery need finer material/geometry work.",
-    "Not consistently 60 fps. Exterior front median 21.8 ms; interior medians 16.8–24.4 ms, p95 up to 48.2 ms. Not photorealistic completion."
+    "Not consistently 60 fps. Exterior front median 21.8 ms; interior medians 16.8\u201324.4 ms, p95 up to 48.2 ms. Not photorealistic completion."
    ],
    "record": "tools/resort-blocks/mt-everest-sahara.json",
    "buildings": [],
@@ -13822,7 +13822,7 @@
   },
   {
    "id": "ext-dennys-flamingo",
-   "title": "Refine the exterior of Denny's — West Flamingo",
+   "title": "Refine the exterior of Denny's \u2014 West Flamingo",
    "area": "exteriors",
    "size": "S",
    "priority": "P3",
@@ -13862,7 +13862,7 @@
   },
   {
    "id": "ext-chick-fil-a-flamingo",
-   "title": "Refine the exterior of Chick-fil-A — Flamingo & Valley View",
+   "title": "Refine the exterior of Chick-fil-A \u2014 Flamingo & Valley View",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -13903,7 +13903,7 @@
   },
   {
    "id": "ext-tacos-mexico-sahara",
-   "title": "Refine the exterior of Tacos Mexico #2 — Sahara",
+   "title": "Refine the exterior of Tacos Mexico #2 \u2014 Sahara",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -13985,7 +13985,7 @@
   },
   {
    "id": "ext-carls-jr-sahara",
-   "title": "Refine the exterior of Carl’s Jr. Sahara",
+   "title": "Refine the exterior of Carl\u2019s Jr. Sahara",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -14500,7 +14500,7 @@
     "Refine side elevations, landscaping, roof fit and material fidelity; roof stripes still visible in installed result",
     "Historical2014tour and inferred public layout; no surveyed private/service plan",
     "Furniture/material detailing and lighting remain simplified",
-    "Final exteriorp9518.5–18.7ms vsbaseline18–18.2ms; do notclaim locked60fps"
+    "Final exteriorp9518.5\u201318.7ms vsbaseline18\u201318.2ms; do notclaim locked60fps"
    ],
    "record": "tools/resort-blocks/mortons-flamingo.json",
    "buildings": [],
@@ -14745,7 +14745,7 @@
    "status": "open",
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Lo-Lo’s dining room not authored; interior references insufficient",
+    "Lo-Lo\u2019s dining room not authored; interior references insufficient",
     "Refine material, sign typography, site landscaping, patio fixtures and side/rear elevations",
     "Northern end glazing and all room dimensions inferred; verify against closer references",
     "SIXT furniture, monitors, wall artwork and lighting remain simplified"
@@ -15208,7 +15208,7 @@
   },
   {
    "id": "ext-dennys-sahara",
-   "title": "Refine the exterior of Denny’s West Sahara",
+   "title": "Refine the exterior of Denny\u2019s West Sahara",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -15216,7 +15216,7 @@
    "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
     "Full parking, planting, freestanding sign and exact drive-through details remain outside this scoped building pass.",
-    "Public dining interior not implemented: no site-specific room reference verified for this Denny’s.",
+    "Public dining interior not implemented: no site-specific room reference verified for this Denny\u2019s.",
     "Facade proportions, exact lettering, upper stone areas and fine material response require refinement; not photorealistic completion.",
     "North service and east facade details are inferred; 2020 photograph age and fitted eaves/ridge heights remain uncertain."
    ],
@@ -15692,7 +15692,7 @@
     "Full site paving/parking and landscape, cell-palm tower and service elevations remain incomplete.",
     "Public interior arrangement and elevations fitted; dated2021 interior may differ today. Four double pump stations inferred from number8, not surveyed.",
     "Original generic merchandise, simplified branding/dispensers and flat materials need finer fidelity. Not photorealistic completion.",
-    "First interior p95 spikes25–33ms were not reproduced in repeat (18–19ms); machine workload variability not isolated. No locked60claim."
+    "First interior p95 spikes25\u201333ms were not reproduced in repeat (18\u201319ms); machine workload variability not isolated. No locked60claim."
    ],
    "record": "tools/resort-blocks/seven-eleven-sahara.json",
    "buildings": [],
@@ -15738,7 +15738,7 @@
     "Full site parking/paving, drive queue fixtures, service elevations and landscaping remain incomplete.",
     "Canopy geometry, support positions, elevations and window dimensions fitted from imagery, not surveyed.",
     "Original simplified type signage, sparse planting and flat finishes need finer visual fidelity; not photorealistic completion.",
-    "First final run p95 spikes27–32ms did not reproduce: repeat18.2–18.5ms. Machine workload variability not isolated; no locked60claim."
+    "First final run p95 spikes27\u201332ms did not reproduce: repeat18.2\u201318.5ms. Machine workload variability not isolated; no locked60claim."
    ],
    "record": "tools/resort-blocks/chick-fil-a-sahara.json",
    "buildings": [],
@@ -15988,7 +15988,7 @@
   },
   {
    "id": "ext-barrys-boxing",
-   "title": "Refine the exterior of Barry’s Boxing",
+   "title": "Refine the exterior of Barry\u2019s Boxing",
    "area": "exteriors",
    "size": "M",
    "priority": "P3",
@@ -16450,46 +16450,38 @@
    ]
   },
   {
-   "id": "site-mapped-background",
-   "title": "Review and refine the mapped buildings owned by mapped-background",
+   "id": "ext-mapped-background",
+   "title": "Refine the exterior of Wynn\u2013Encore mapped podium and parking audit",
    "area": "exteriors",
    "size": "M",
-   "priority": "P2",
+   "priority": "P3",
    "status": "open",
-   "summary": "3 mapped building(s) (Encore, Unnamed building) passed a first exterior review; refinement is pending and no block record covers them yet. Start one in tools/resort-blocks/ (copy a lightweight record such as akita-plaza.json) and add it to queue.json.",
+   "summary": "Implemented and reviewed in an earlier pass; 4 known gaps are recorded.",
    "items": [
-    "Encore (way/135291730, 6.0 m, status reviewed-refinement-deferred): Precise storefronts, landscape and full route verification pending.",
-    "Unnamed building (way/111322083, 5.0 m, status reviewed-refinement-deferred): Precise storefronts, landscape and full route verification pending.",
-    "Unnamed building (way/111322055, 6.0 m, status reviewed-refinement-deferred): Precise storefronts, landscape and full route verification pending."
+    "Exact parking stall count, ramp slopes, drive-through access, roof equipment and weathering remain unresolved; aerial establishes broad layout only.",
+    "Full public garage-to-lobby circulation remains unverified; targeted roof walks do not certify access.",
+    "Encore podium135291730 and Wynn retailpodium111322055 preserve existing authored geometry; exact storefronts, landscape and public interior fit-out remain unresolved.",
+    "Parent Wynn\u2013Encore and lakefront records retain their separate unresolved towers, pool courts, gardens and interiors."
    ],
-   "record": "docs/project-records/city-exteriors-2026-10-12/inventory.json",
-   "buildings": [
-    {
-     "id": "way/135291730",
-     "name": "Encore",
-     "status": "reviewed-refinement-deferred"
-    },
-    {
-     "id": "way/111322083",
-     "name": "Unnamed building",
-     "status": "reviewed-refinement-deferred"
-    },
-    {
-     "id": "way/111322055",
-     "name": "Unnamed building",
-     "status": "reviewed-refinement-deferred"
-    }
-   ],
+   "record": "tools/resort-blocks/mapped-background.json",
+   "buildings": [],
    "files": {
     "reads": [
-     "docs/project-records/city-exteriors-2026-10-12/inventory.json",
-     "build/city-exteriors/wynn-final"
+     "tools/resort-blocks/mapped-background.json",
+     "tools/resort-blocks/README.md"
     ],
     "writes": [
-     "tools/resort-blocks/"
+     "build/strip-landmarks/wynnEncoreExterior-exterior-collision.json",
+     "build/strip-landmarks/wynnEncoreExterior-exterior.glb",
+     "tools/resort-blocks/mapped-background.json"
     ],
     "builders": [
-     "tools/city-exteriors/inventory.py"
+     "tools/city-exteriors/inventory.py",
+     "tools/city-exteriors/audit-wynn-encore-courts.py",
+     "tools/city-exteriors/stair-encore-tower-suites-canopy.mjs",
+     "tools/city-exteriors/stair-wynn-lakefront.mjs",
+     "tools/city-exteriors/stair-wynn-plaza-canopy.mjs",
+     "tools/city-exteriors/test-encore-canopy.mjs"
     ]
    },
    "acceptance": [
@@ -16498,7 +16490,8 @@
     "Walkable surfaces still pass the collision/walk audit for the block (tools/city-exteriors/audit-*.py or the block's own audit)",
     "The changed GLBs are re-optimized (AGENTS.md: optimize-runtime-glbs.mjs, then install-optimized.mjs) and their version.json revision is bumped",
     "python3 tools/resort-blocks/review.py passes, and the block record lists the new evidence"
-   ]
+   ],
+   "queueOrder": 291
   },
   {
    "id": "site-sphere",
@@ -16511,9 +16504,9 @@
    "items": [
     "Fine facade fidelity remains open: display panel seams, entrance bay rhythm, canopy and hardscape need matched current ground/aerial reference coverage before a justified mesh change.",
     "Full Venetian-to-Sphere connection remains open: a local bridge threshold test does not establish the entire inter-property route.",
-    "Public interior alignment, suite levels, accessible lifts and complete seat capacity remain approximate; existing generated 10394 seats are below the architect’s 17600-seat description and must not be called exact.",
+    "Public interior alignment, suite levels, accessible lifts and complete seat capacity remain approximate; existing generated 10394 seats are below the architect\u2019s 17600-seat description and must not be called exact.",
     "Historical blank adjoining-component finding is partly superseded by the separate sphere-garage record; remaining unowned background shells still require a current ownership inventory.",
-    "Baseline plaza p95 is 59.7 ms at 960x540 DPR1 ultra, while other sampled views are 17.7–19.3 ms. Existing performance limitation requires diagnosis; no sustained 60 fps claim.",
+    "Baseline plaza p95 is 59.7 ms at 960x540 DPR1 ultra, while other sampled views are 17.7\u201319.3 ms. Existing performance limitation requires diagnosis; no sustained 60 fps claim.",
     "Full perimeter and exact north/west sloped canopy/arrival geometry remain unverified. January2025 Sands frontage is partly occluded by the monorail; satellite does not establish elevations."
    ],
    "record": "tools/resort-blocks/sphere.json",
@@ -16559,7 +16552,7 @@
    "summary": "Caesars Palace has streamed guest floors (build/hotels/caesars-*.glb) and a compressed, photo-informed arrival, reception and casino in the city level (build/public-resorts/DESIGN.md, 2026-10-02), which is not laid out to a plan. Rebuild it as a streamed venue to the published resort map, keeping its look. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16602,7 +16595,7 @@
    "summary": "Flamingo has streamed guest floors (build/hotels/flamingo-*.glb) and a compressed, photo-informed arrival, reception and casino in the city level (build/public-resorts/DESIGN.md, 2026-10-02), which is not laid out to a plan. Rebuild it as a streamed venue to the published resort map, keeping its look. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16645,7 +16638,7 @@
    "summary": "Horseshoe (Versailles tower) has streamed guest floors (build/hotels/horseshoe-*.glb) and a compressed, photo-informed arrival, reception and casino in the city level (build/public-resorts/DESIGN.md, 2026-10-02), which is not laid out to a plan. Rebuild it as a streamed venue to the published resort map, keeping its look. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16688,7 +16681,7 @@
    "summary": "Planet Hollywood has streamed guest floors (build/hotels/planet-hollywood-*.glb) and a compressed, photo-informed arrival, reception and casino in the city level (build/public-resorts/DESIGN.md, 2026-10-02), which is not laid out to a plan. Rebuild it as a streamed venue to the published resort map, keeping its look. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16731,7 +16724,7 @@
    "summary": "ARIA has streamed guest floors (build/hotels/aria-*.glb) and a compressed, photo-informed arrival, reception and casino in the city level (build/public-resorts/DESIGN.md, 2026-10-02), which is not laid out to a plan. Rebuild it as a streamed venue to the published resort map, keeping its look. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16774,7 +16767,7 @@
    "summary": "Circus Circus has streamed guest floors (lobby, corridors, rooms: build/hotels/circus-circus-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16817,7 +16810,7 @@
    "summary": "Encore has streamed guest floors (lobby, corridors, rooms: build/hotels/encore-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16860,7 +16853,7 @@
    "summary": "Wynn has streamed guest floors (lobby, corridors, rooms: build/hotels/wynn-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16903,7 +16896,7 @@
    "summary": "Fontainebleau has streamed guest floors (lobby, corridors, rooms: build/hotels/fontainebleau-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16946,7 +16939,7 @@
    "summary": "Luxor has streamed guest floors (lobby, corridors, rooms: build/hotels/luxor-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -16989,7 +16982,7 @@
    "summary": "Mandalay Bay has streamed guest floors (lobby, corridors, rooms: build/hotels/mandalay-bay-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17032,7 +17025,7 @@
    "summary": "MGM Grand has streamed guest floors (lobby, corridors, rooms: build/hotels/mgm-grand-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17075,7 +17068,7 @@
    "summary": "The Mirage has streamed guest floors (lobby, corridors, rooms: build/hotels/mirage-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17118,7 +17111,7 @@
    "summary": "New York-New York has streamed guest floors (lobby, corridors, rooms: build/hotels/new-york-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17161,7 +17154,7 @@
    "summary": "Palms has streamed guest floors (lobby, corridors, rooms: build/hotels/palms-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17204,7 +17197,7 @@
    "summary": "Resorts World has streamed guest floors (lobby, corridors, rooms: build/hotels/resorts-world-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17247,7 +17240,7 @@
    "summary": "Rio has streamed guest floors (lobby, corridors, rooms: build/hotels/rio-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17290,7 +17283,7 @@
    "summary": "SAHARA has streamed guest floors (lobby, corridors, rooms: build/hotels/sahara-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17333,7 +17326,7 @@
    "summary": "The STRAT has streamed guest floors (lobby, corridors, rooms: build/hotels/strat-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],
@@ -17376,7 +17369,7 @@
    "summary": "Westgate has streamed guest floors (lobby, corridors, rooms: build/hotels/westgate-*.glb) but no authored public interior on record: no casino floor, main lobby or retail promenade. Check the city level in game before starting. The Venetian, Palazzo, LINQ, Bellagio, Paris and Cosmopolitan venues show the pattern (tools/strip-landmarks/build.py, venues.json).",
    "items": [
     "Find the published resort map or floor plan and record its URL in a block record (never commit the image)",
-    "Lay out the casino floor, main lobby, porte-cochère entrance and the routes to the Strip and to the hotel lifts",
+    "Lay out the casino floor, main lobby, porte-coch\u00e8re entrance and the routes to the Strip and to the hotel lifts",
     "Build it as a streamed venue with its own collision, lit through lightInterior()",
     "Connect it to the existing hotel lobby so guests can walk from the casino to their room"
    ],

@@ -1,0 +1,56 @@
+{
+  "id": "mapped-background",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/135291730",
+    "way/111322083",
+    "way/111322055"
+  ],
+  "ownership": "These three stale inventory mapped-background entries are already authored by wynnEncoreExterior. This record is a scoped audit of existing podium ownership, not a second geometry owner.",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@36.1285,-115.1662,19z/data=!3m1!1e3",
+      "observed": "Aerial visually inspected: gray Wynn parking roof, white repeated stall stripes, long aisles; date unknown."
+    },
+    {
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnresorts/wynn-las-vegas-resort-fact-sheet/s/d68e3fea-7a3a-44d1-8a15-c445ecfedc30",
+      "observed": "Official Exterior-Daytime photo495812 inspected, context only; does not establish garage roof layout."
+    },
+    {
+      "url": "https://cdn.wynnresorts.com/image/upload/v1745932898/visitwynn_pdfs_files/PropertyMap.pdf",
+      "observed": "Official map names separate Wynn/Encore garages and Wynn Plaza; no surveyed dimensions."
+    }
+  ],
+  "remaining": [
+    "Exact parking stall count, ramp slopes, drive-through access, roof equipment and weathering remain unresolved; aerial establishes broad layout only.",
+    "Full public garage-to-lobby circulation remains unverified; targeted roof walks do not certify access.",
+    "Encore podium135291730 and Wynn retailpodium111322055 preserve existing authored geometry; exact storefronts, landscape and public interior fit-out remain unresolved.",
+    "Parent Wynn\u2013Encore and lakefront records retain their separate unresolved towers, pool courts, gardens and interiors."
+  ],
+  "estimatedDimensions": {
+    "garageRoofHeightM": 20.04,
+    "paintWidthM": 0.11,
+    "stallPitchM": 2.7,
+    "stallDepthM": 5.2,
+    "basis": "Inherited roof height; original line layout inferred from aerial, not surveyed."
+  },
+  "evidence": [
+    "docs/project-records/mapped-background-refinement/references.md",
+    "docs/project-records/mapped-background-refinement/checkpoint.md"
+  ],
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/wynnEncoreExterior-exterior.glb": "edb948239fbbab0ca2e54cd95c7832ecf57c4241b434cf6d7f2698c4dfc47630",
+      "build/strip-landmarks/wynnEncoreExterior-exterior-collision.json": "8637a150f94d6af643be8381efdc865fe23718bea74ec9f9ab979a889c550ba4"
+    }
+  },
+  "refinement20261108": {
+    "status": "installed-verified-scoped",
+    "scope": "Gray roof and original white parking banks on111322083;135291730/111322055 geometry preserved and stale inventory owners corrected.",
+    "checks": "11localchecks PASS;839existing lowroof support samples;24before/24afteractual rooflegs;7matchingdaylightviews;9stopdevsmoke",
+    "visual": "All7after and6walkafterendpointcaptures inspected; readable graydeck and whitebanks. Distant thin-line aliasing and unresolved architectural detail retained.",
+    "preservation": "Collision/labels and85oldgroups exact;1roofmaterial group changed.91/92binarycells identical;onlycell-0_-2 changed. GoldCoast/Wyndham drift restored.",
+    "record": "docs/project-records/mapped-background-refinement",
+    "performance": "docs/project-records/mapped-background-refinement/performance-comparison.json"
+  }
+}
