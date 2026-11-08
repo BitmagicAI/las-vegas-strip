@@ -55,5 +55,11 @@
       "build/strip-landmarks/signatureAviation-exterior.glb": "53374ebf6c356364200b5a197f4b234c8ebae85c9ab523f0748e5e6f7e21c5e2",
       "build/strip-landmarks/signatureAviation-exterior-collision.json": "51462e90fede84e8278b21a539bc58703637075e0705f1efc062d8eaaeb20e17"
     }
+  },
+  "refinement20261108": {
+    "change": "Single-line current branding arrangement and 6005 address; exact logo/font/scale/placement remain approximate.",
+    "record": "docs/project-records/south-airport-refinement",
+    "validation": "14 local checks passed, 651 support samples, 12 legacy walk legs, 12 before and 12 installed actual walk legs, six matched installed daylight views inspected, nine-stop dev smoke zero errors; 90/92 binary cells unchanged.",
+    "scope": "Bounded original detail pass. All prior remaining discrepancies retained; no whole-block or photorealistic completion."
   }
 }

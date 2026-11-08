@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-11-07",
+ "revision": "2026-11-08",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-11-07.tar.gz",
+  "name": "las-vegas-strip-assets-2026-11-08.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235872447,
+ "bytes": 1236104691,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -330,14 +330,14 @@
   },
   {
    "path": "build/baked/cells/cell-0_4.bin",
-   "bytes": 107979,
-   "sha256": "186c6f01be58f82cd431d1ec23b1c6d105a9f451051e04a2623dcd9f0a5f3a23",
+   "bytes": 108373,
+   "sha256": "f3680cca9974519e412a5c96958751d2cb67be6c112f55cc041848c9c972b74c",
    "kind": "original"
   },
   {
    "path": "build/baked/cells/cell-0_5.bin",
-   "bytes": 33856,
-   "sha256": "3def0f6da3622f9c86a8e35ce4ab70460cecc2bfa32cf763453153d69dc67ce7",
+   "bytes": 36394,
+   "sha256": "2d1d5938f970aa96e3ac850d17d2ba981a3c74a45050daa3f45ac932e07c378c",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "da055826120cc952297617f7ea92ab9857b2d1249cacb65e1c535ec02b9fb58c",
+   "sha256": "caec5baa342f69814b352476cf421c07d74e56679ed5ea492845be6d58773534",
    "kind": "runtime cell manifest"
   },
   {
@@ -10746,8 +10746,8 @@
   },
   {
    "path": "build/strip-landmarks/signatureAviation-exterior.glb",
-   "bytes": 258928,
-   "sha256": "a6d9a25e1a8fe26c3c0ab402dbd040308024c6bb687c7ada3403f45437b5b44b",
+   "bytes": 308036,
+   "sha256": "a05f40f289669c73b97216014d09e152e2741168dc3f784349791a83acc60453",
    "kind": "optimized"
   },
   {
@@ -11070,8 +11070,8 @@
   },
   {
    "path": "build/strip-landmarks/terriblesHeadquarters-exterior.glb",
-   "bytes": 863888,
-   "sha256": "809cc2183d02e1358645ba03452547a794bc402857c67eb3b1aee57eb63c4789",
+   "bytes": 1044092,
+   "sha256": "42aa781df0a4ebd3ed330d7e483e4ab13937595813970042ec5c27b706d80c6b",
    "kind": "optimized"
   },
   {
