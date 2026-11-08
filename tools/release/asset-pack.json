@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235750780,
+ "bytes": 1235807122,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -444,14 +444,14 @@
   },
   {
    "path": "build/baked/cells/cell-2_-5.bin",
-   "bytes": 699129,
-   "sha256": "55a4943e3310d6af5820cf2e31b4870820d88238a38899169f75931857628ba8",
+   "bytes": 699127,
+   "sha256": "4c01742559376a9af9fd71827f6b1c65838bd5c5234d709745323be148b4c76e",
    "kind": "original"
   },
   {
    "path": "build/baked/cells/cell-2_-6.bin",
-   "bytes": 272453,
-   "sha256": "19e956fac5eecaa6857b1e6ccb1ff9ad7b8ec148892e1fe98909eb03ba5297c9",
+   "bytes": 272701,
+   "sha256": "5403de3119ace253e98eeb8a638bfc7326130b2e7d05069cfc10282358320d93",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "36cce5b7d441c381f61c5219cf53118121393afd17fbf2582e7db64d685b5e05",
+   "sha256": "c4c491e6e6b4b27fd4603b57fbc01a174cf39a2e345835894b885fb76929905e",
    "kind": "runtime cell manifest"
   },
   {
@@ -7902,8 +7902,8 @@
   },
   {
    "path": "build/strip-landmarks/courtyard525-exterior.glb",
-   "bytes": 1714340,
-   "sha256": "bb2b57f7389beb2549c276719339468f25b58436c77247b7edf997442f3909fb",
+   "bytes": 1718888,
+   "sha256": "59ec83bb77d6822d80cc8969f3798cd95aed249f213dd555e61bb0de643fdbef",
    "kind": "optimized"
   },
   {
@@ -9942,8 +9942,8 @@
   },
   {
    "path": "build/strip-landmarks/oakeyService-exterior.glb",
-   "bytes": 247180,
-   "sha256": "c404422c1e8ea9448f8edffa5e0e2927b033803982946b8d218b7cfebd4ec4f3",
+   "bytes": 204176,
+   "sha256": "fbeb5c916beb74abdf0e14f9900d75293fc3f5e47f12f225b72509b555475388",
    "kind": "optimized"
   },
   {
@@ -10206,8 +10206,8 @@
   },
   {
    "path": "build/strip-landmarks/peppermintHippo-exterior.glb",
-   "bytes": 1651736,
-   "sha256": "a0761e406e1ac1a42ed82296485078cc5a8f697cb207f7764ff7540abc11b72d",
+   "bytes": 1746288,
+   "sha256": "92b2cd8bb411a7adb4d92effdf5536240714ecd2f7dc975871c17618b83b452e",
    "kind": "optimized"
   },
   {

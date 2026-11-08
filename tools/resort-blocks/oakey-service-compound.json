@@ -35,5 +35,14 @@
       "build/strip-landmarks/oakeyService-exterior.glb": "2ebf03dc97b4e9d167bda2012058d7d52fbd21cce7ba9972f00a4285f20f1a7a",
       "build/strip-landmarks/oakeyService-exterior-collision.json": "9852dba8e6c435e12076f12321a5009982f12b783e184c6079ee24f9117ac073"
     }
+  },
+  "refinement20261108": {
+    "scope": "Shallow longitudinal same-material sheet seams replace dark transverse roof tubes; roof shape and closed yard preserved.",
+    "record": "docs/project-records/oakey-neighbors-refinement/",
+    "status": "verified-bounded",
+    "notCompletion": true,
+    "installedSHA256": "fbeb5c916beb74abdf0e14f9900d75293fc3f5e47f12f225b72509b555475388",
+    "checks": "14localchecks;859supportsamples;56before+56afteractuallegs including3floorstairs;9devsmokestops;10installeddaylightviews;90/92cells byte-identical.",
+    "performance": "Matched static timings in performance.json; no improvement or whole-route claim."
   }
 }
