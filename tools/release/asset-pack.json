@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235726261,
+ "bytes": 1235734819,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -372,8 +372,8 @@
   },
   {
    "path": "build/baked/cells/cell-1_-5.bin",
-   "bytes": 305470,
-   "sha256": "bce7ec1f9712c24f92b6da2969aa6521b587cbd4679dac7fe7647dfc51d24707",
+   "bytes": 305368,
+   "sha256": "544c8cd437c8ec1eb6aaf4d53a779723accb43e4b61d87d9f2a7d21b94e15cb4",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "321e5ef922690c77b24a904190ee1fe8d1fc2d9ebb2b8e09199165352370e664",
+   "sha256": "61cd53f8feb946d6055df2c59082e4f47ddad9521327123697a1df4c4f0d005f",
    "kind": "runtime cell manifest"
   },
   {
@@ -7374,8 +7374,8 @@
   },
   {
    "path": "build/strip-landmarks/atomicGolf-exterior.glb",
-   "bytes": 1002028,
-   "sha256": "cdc8e9aded40b3362acb2ca5ba7567c187c01b97740a34cbc77da6a7e72b4868",
+   "bytes": 1010688,
+   "sha256": "362bfe16b7ae4b67c0cabf213a907c718295dd6cdb69a21487551d1dd7e8fc51",
    "kind": "optimized"
   },
   {

@@ -1,0 +1,17 @@
+# Generated local review captures
+
+- [after/atomic-east-front.png](/public/project-records/atomic-golf-refinement/after/atomic-east-front.png)
+- [after/atomic-south-front.png](/public/project-records/atomic-golf-refinement/after/atomic-south-front.png)
+- [after/atomic-south-terrace.png](/public/project-records/atomic-golf-refinement/after/atomic-south-terrace.png)
+- [after-repeat/atomic-south-terrace.png](/public/project-records/atomic-golf-refinement/after-repeat/atomic-south-terrace.png)
+- [before/atomic-east-front.png](/public/project-records/atomic-golf-refinement/before/atomic-east-front.png)
+- [before/atomic-south-front.png](/public/project-records/atomic-golf-refinement/before/atomic-south-front.png)
+- [before/atomic-south-terrace.png](/public/project-records/atomic-golf-refinement/before/atomic-south-terrace.png)
+- [candidate/atomic-east-front.png](/public/project-records/atomic-golf-refinement/candidate/atomic-east-front.png)
+- [candidate/atomic-south-front.png](/public/project-records/atomic-golf-refinement/candidate/atomic-south-front.png)
+- [candidate/atomic-south-terrace.png](/public/project-records/atomic-golf-refinement/candidate/atomic-south-terrace.png)
+- [control-original/atomic-south-terrace.png](/public/project-records/atomic-golf-refinement/control-original/atomic-south-terrace.png)
+- [walk-after/walk-endpoint-0.png](/public/project-records/atomic-golf-refinement/walk-after/walk-endpoint-0.png)
+- [walk-after/walk-return-0.png](/public/project-records/atomic-golf-refinement/walk-after/walk-return-0.png)
+- [walk-before/walk-endpoint-0.png](/public/project-records/atomic-golf-refinement/walk-before/walk-endpoint-0.png)
+- [walk-before/walk-return-0.png](/public/project-records/atomic-golf-refinement/walk-before/walk-return-0.png)

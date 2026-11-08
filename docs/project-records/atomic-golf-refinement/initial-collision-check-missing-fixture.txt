@@ -1,0 +1,16 @@
+node:fs:556
+  return binding.open(
+                 ^
+
+Error: ENOENT: no such file or directory, open 'build/city-exteriors/atomic-samples.json'
+    at Object.openSync (node:fs:556:18)
+    at Object.readFileSync (node:fs:440:35)
+    at read (file:///Users/janisun/Development/GitFork/vegas-2601-westwood/tools/city-exteriors/test-atomic-golf.mjs:2:83)
+    at file:///Users/janisun/Development/GitFork/vegas-2601-westwood/tools/city-exteriors/test-atomic-golf.mjs:4:24 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'build/city-exteriors/atomic-samples.json'
+}
+
+Node.js v25.9.0
