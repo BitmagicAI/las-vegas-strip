@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1236214491,
+ "bytes": 1237644191,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1538357,
-   "sha256": "9b06eda5230ec039222c96790ed19bcab4e1ad010819321a6a455ad8a26da32d",
+   "bytes": 1564325,
+   "sha256": "afa06a2efb21bb028649bfbec96b657d882208c3dbecb214c71f1f9e56822faa",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "63f8787099a6c40fc8d778b8c3717ccd05b52aa4375a622f4218bc7fb511a4a6",
+   "sha256": "fee5f3722a8df7ad03a246bbefbbaf48fc6919769b2e059150e066a882b0a8d1",
    "kind": "runtime cell manifest"
   },
   {
@@ -8430,8 +8430,8 @@
   },
   {
    "path": "build/strip-landmarks/flamingoGarden-exterior.glb",
-   "bytes": 12693392,
-   "sha256": "a2003d119847df6c4b0091f775a2532333329838b4ffd7e50b3fda7110b839ed",
+   "bytes": 14097124,
+   "sha256": "c9ebc8df8fcff2b18ea2b10cb67d626f1dbe84a9db796d7dbafacfef7fbc0ffd",
    "kind": "optimized"
   },
   {

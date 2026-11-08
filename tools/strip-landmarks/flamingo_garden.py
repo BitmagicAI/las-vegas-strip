@@ -4,6 +4,7 @@ The retained casino mask is shared with the scoped legacy cut, not a bounding-bo
 """
 from common import *
 from forum_shops import facade_frame
+from flamingo_garden_palms import PALM_INDICES,add_palm
 KEY='flamingoGarden';D=.4
 ROTUNDA_IDS=['way/115767967','way/115767969','way/115767971']
 CAP_IDS=['way/115767964','way/115767970','way/115767972']
@@ -119,6 +120,10 @@ def exterior(B):
   for z in np.arange(-116,7,6):
    q=Point(float(x)+rng.uniform(-1.6,1.6),float(z)+rng.uniform(-1.6,1.6))
    if lawn.buffer(-1.2).contains(q)and q.distance(paths)>2.0 and q.distance(buildings)>2.0 and rng.random()<.5:trees.append([q.x,q.y,rng.uniform(3.2,6.5),rng.random()*math.tau])
+ B.source='garden/flamingo-original-palms'
+ for i,(x,z,h,yaw) in enumerate(trees):
+  if i in PALM_INDICES:add_palm(B,x,z,i,yaw,D)
+ B.source='garden-gallery-stair'
  for x,z,h,yaw in trees:B.box('fg-trunk-collision',(x,D+min(h*.3,2)/2,z),(.24,min(h*.3,2),.24),True)
  for key in list(B.groups):
   if B.groups[key]['material']=='fg-trunk-collision':del B.groups[key]

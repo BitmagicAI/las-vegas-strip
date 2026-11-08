@@ -1,0 +1,274 @@
+{
+ "rel": ".bitmagic/flamingo-garden-candidate/flamingoGarden-exterior.glb",
+ "sourceSha256": "77b1c9e90a556f2e767880c93b6d0cf8410f39f4e40c09c9b438220aa9a3e1b0",
+ "label": "variant webp-textures",
+ "preset": "level",
+ "overrides": [
+  "--base=webp",
+  "--emissive=webp",
+  "--orm=webp-lossless"
+ ],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 58.455,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/flamingo-garden-candidate/flamingoGarden-exterior.glb .bitmagic/optimize/.bitmagic/flamingo-garden-candidate/flamingoGarden-exterior/out-webp-textures.glb --preset=level --base=webp --emissive=webp --orm=webp-lossless --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": ".bitmagic/flamingo-garden-candidate/flamingoGarden-exterior.glb",
+  "dst": ".bitmagic/optimize/.bitmagic/flamingo-garden-candidate/flamingoGarden-exterior/out-webp-textures.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 34571812,
+   "triangles": 322903,
+   "vertices": 668445,
+   "nodes": 377,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 27185298,
+   "gpuTextures": 54171645,
+   "textures": [
+    {
+     "name": "tree_small_02_branch_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 581596,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_diff_1k",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 449977,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 375732,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 681604,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1047075,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 633698,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 1228646,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_diff_1k",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 863246,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 708242,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree-proof",
+     "slot": "base",
+     "w": 800,
+     "h": 900,
+     "mime": "png",
+     "bytes": 652270,
+     "gpu": 3840000
+    }
+   ],
+   "extensions": [
+    "KHR_texture_transform"
+   ]
+  },
+  "after": {
+   "bytes": 14097124,
+   "triangles": 322897,
+   "vertices": 668427,
+   "nodes": 377,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 17439965,
+   "gpuTextures": 54171645,
+   "textures": [
+    {
+     "name": "tree_small_02_branch_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 581596,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_diff_1k",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "webp",
+     "bytes": 108330,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_branch_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 375732,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 681604,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_diff-tree_small_02_leaves_alpha-alpha",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "webp",
+     "bytes": 185084,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_leaves_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 633698,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_nor_gl_1k",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 1228646,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_diff_1k",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "webp",
+     "bytes": 314700,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree_small_02_arm_1k",
+     "slot": "orm",
+     "w": 1024,
+     "h": 1024,
+     "mime": "jpeg",
+     "bytes": 708242,
+     "gpu": 5592405
+    },
+    {
+     "name": "tree-proof",
+     "slot": "base",
+     "w": 800,
+     "h": 900,
+     "mime": "webp",
+     "bytes": 145532,
+     "gpu": 3840000
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "EXT_texture_webp",
+    "KHR_mesh_quantization",
+    "KHR_texture_transform"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "texture tree_small_02_branch_arm_1k kept: the webp-lossless re-encode was not smaller than the original",
+   "texture tree_small_02_leaves_arm_1k kept: the webp-lossless re-encode was not smaller than the original",
+   "texture tree_small_02_arm_1k kept: the webp-lossless re-encode was not smaller than the original",
+   "TEXCOORD_1 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "377 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "10 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "19.53 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 3 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/0/primitives/0/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/0/primitives/1/material; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/0/primitives/2/material"
+   }
+  ]
+ }
+}
