@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1236085128,
+ "bytes": 1236214491,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -276,8 +276,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-2.bin",
-   "bytes": 723719,
-   "sha256": "8ca01c08632b35487ea7d391597f65867330e577b454e0849b659ea90c627676",
+   "bytes": 724078,
+   "sha256": "0ea4f241121508085e6c17e1d303bf1b2a41706e774ec86d6efff2211ee449f0",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "ff78910638d46ab5b8a3f8a6275ab120b2d01702dfc6aa26bdf0d6cbd1c38848",
+   "sha256": "63f8787099a6c40fc8d778b8c3717ccd05b52aa4375a622f4218bc7fb511a4a6",
    "kind": "runtime cell manifest"
   },
   {
@@ -11544,8 +11544,8 @@
   },
   {
    "path": "build/strip-landmarks/wynnLakefront-exterior.glb",
-   "bytes": 211196,
-   "sha256": "49ccdc5e2cc48aa7c6f82ddab567b50966eabc6bac7b5c6f3ebe8feac41d89fb",
+   "bytes": 340200,
+   "sha256": "bd51427b63d1cbd12af16250efb96a8b7d91c5ec9ca4c97b3d891d1d0ede16e4",
    "kind": "optimized"
   },
   {
