@@ -1,0 +1,238 @@
+{
+  "base": "a77d6dc1017b16ac4e84b0004406cdfbb5ec3fa7",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "7c73467f00c0f16b48642081081a5e2949c7ce1190777f8c2fd66d264b6ad508",
+      "bytes": 570315,
+      "path": "public/project-records/oakey-neighbors-refinement/after/courtyard-aerial.png"
+    },
+    {
+      "oid": "3d70b698de9804387f85c449eb67018f2877d05adccbf9730667f9cb39d099ea",
+      "bytes": 292037,
+      "path": "public/project-records/oakey-neighbors-refinement/after/courtyard-front.png"
+    },
+    {
+      "oid": "6b3feb36207ba9ba6bdf2918f45df312e00bb3fc8e84f4bfd2adb488da317a4e",
+      "bytes": 396108,
+      "path": "public/project-records/oakey-neighbors-refinement/after/courtyard-pool.png"
+    },
+    {
+      "oid": "cd7a228de320638a5f9d301fb45023d9b63d5b09b36f86348ffee0042214053f",
+      "bytes": 315983,
+      "path": "public/project-records/oakey-neighbors-refinement/after/courtyard-west.png"
+    },
+    {
+      "oid": "9a2b75bfeb99e75c0d48533406a38d6674290853bcf64b8b1b440b7f42f5b16c",
+      "bytes": 510790,
+      "path": "public/project-records/oakey-neighbors-refinement/after/hippo-aerial.png"
+    },
+    {
+      "oid": "b029adc2e6491634cce72c23836258edeed7fd971677e0b4fd721cfac90af91d",
+      "bytes": 347934,
+      "path": "public/project-records/oakey-neighbors-refinement/after/hippo-canopy.png"
+    },
+    {
+      "oid": "af8c8150a15507aec2333871801c22a00df56f86c94e7a1e360509d88cd8ced0",
+      "bytes": 314523,
+      "path": "public/project-records/oakey-neighbors-refinement/after/hippo-front.png"
+    },
+    {
+      "oid": "7f2d2ecd919d713423f384c933eba68c487bb9843682f389326d8149128e1c66",
+      "bytes": 543597,
+      "path": "public/project-records/oakey-neighbors-refinement/after/oakey-aerial.png"
+    },
+    {
+      "oid": "7448ab390a4f40286daf77fef4ab628bf241cac7e9a3170a74335d1967b53c6e",
+      "bytes": 413539,
+      "path": "public/project-records/oakey-neighbors-refinement/after/oakey-yard.png"
+    },
+    {
+      "oid": "79c2be12ca694c27a712f0ba8bb6a7519aa8c6ba9d7daf80cc591abc5a2e3f8c",
+      "bytes": 347427,
+      "path": "public/project-records/oakey-neighbors-refinement/after/service-front.png"
+    },
+    {
+      "oid": "5fcd5fbf12f54a180ce5fe4180cd8daa0bf91db9a81f6a2e00bd309afc23e85a",
+      "bytes": 570614,
+      "path": "public/project-records/oakey-neighbors-refinement/before/courtyard-aerial.png"
+    },
+    {
+      "oid": "1a89ba7829e21f0c72750bb053ca38de4500f3fd8a31103d087589527c6f0adf",
+      "bytes": 395935,
+      "path": "public/project-records/oakey-neighbors-refinement/before/courtyard-pool.png"
+    },
+    {
+      "oid": "4340947f0a4f4e5cd01346cf7288c5066c1dd46adf643959f1df69e895995dc5",
+      "bytes": 315983,
+      "path": "public/project-records/oakey-neighbors-refinement/before/courtyard-west.png"
+    },
+    {
+      "oid": "842e5edbccc2ee6b2612aff348333e8095c1448cf7a60460004c66d1acb41e52",
+      "bytes": 510548,
+      "path": "public/project-records/oakey-neighbors-refinement/before/hippo-aerial.png"
+    },
+    {
+      "oid": "91e0467180a704ac10ce2085fbc9ead720eccb97deda75501f3946e25fcd2af4",
+      "bytes": 347197,
+      "path": "public/project-records/oakey-neighbors-refinement/before/hippo-canopy.png"
+    },
+    {
+      "oid": "0d13e899ee7115c0a7144bffc5c8ed3014aef39c5f2e15b42fc2421e9a4ee9f0",
+      "bytes": 313352,
+      "path": "public/project-records/oakey-neighbors-refinement/before/hippo-front.png"
+    },
+    {
+      "oid": "0b7dca68f9cec6277b6921c0778bb491a6ce9d1f32f4dd35ac80e6ad6924ccf1",
+      "bytes": 544989,
+      "path": "public/project-records/oakey-neighbors-refinement/before/oakey-aerial.png"
+    },
+    {
+      "oid": "96df824f2d3254951fbd7d2f185fd88a9c7302ed327d6262692258c0aa5bfc4c",
+      "bytes": 417053,
+      "path": "public/project-records/oakey-neighbors-refinement/before/oakey-yard.png"
+    },
+    {
+      "oid": "7b9c53dfebaee64012424ab48a019be7c8ae81e6c010bc24893b6e8c349efbf6",
+      "bytes": 347434,
+      "path": "public/project-records/oakey-neighbors-refinement/before/service-front.png"
+    },
+    {
+      "oid": "3af781f48e7a08673b00625923b23d522c0318be52469289f883f5011f8626bc",
+      "bytes": 570362,
+      "path": "public/project-records/oakey-neighbors-refinement/candidate/courtyard-aerial.png"
+    },
+    {
+      "oid": "6090db7ebc1556c5781e7c26e911762d70a12bc44285d83ff1e666ca694fb34c",
+      "bytes": 396667,
+      "path": "public/project-records/oakey-neighbors-refinement/candidate/courtyard-pool.png"
+    },
+    {
+      "oid": "ef04a348398ece6664ab96ba0ede76bafd85de3631a3c742da068842c8cf0690",
+      "bytes": 315980,
+      "path": "public/project-records/oakey-neighbors-refinement/candidate/courtyard-west.png"
+    },
+    {
+      "oid": "32b395d3b9a55dd0c83a97db4c2ef5aab0762f9fdff1dfe8be63b7a1dc951de8",
+      "bytes": 348014,
+      "path": "public/project-records/oakey-neighbors-refinement/candidate/hippo-canopy.png"
+    },
+    {
+      "oid": "5418b23cdb91cfe2fd47cfe3fe0a6ddfd78ac5c5d4c49fbe132049d27c213bc0",
+      "bytes": 191912,
+      "path": "public/project-records/oakey-neighbors-refinement/stairs-before/walk-endpoint-0.png"
+    },
+    {
+      "oid": "831c06053374eb09740b46f48461d7993e6369b4509e5fd4309eaf192a8580d0",
+      "bytes": 468430,
+      "path": "public/project-records/oakey-neighbors-refinement/stairs-before/walk-return-0.png"
+    },
+    {
+      "oid": "93965ef1c3c659f3b9701a566cf7488aaaae1a5cb3e97a9bddbe7e216fa57d83",
+      "bytes": 342363,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-after/walk-endpoint-0.png"
+    },
+    {
+      "oid": "eca7ab7b2c116b2ea00316141d9d01a4a63cececc5dcf1ca2fc0c229e97bb270",
+      "bytes": 365064,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-after/walk-endpoint-1.png"
+    },
+    {
+      "oid": "2cb22b7348248bdb88e8ceeb079221ad229b233fe400d59d486bdd48e2e95e6d",
+      "bytes": 310347,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-after/walk-endpoint-2.png"
+    },
+    {
+      "oid": "ed21f5570173a496f04c1fd28cc071c00c9117b6b0382e18d96de82313a0cc82",
+      "bytes": 192139,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-after/walk-endpoint-3.png"
+    },
+    {
+      "oid": "ef124ec5de8e045974245fdb3f8ba3042cdfe55215f7b17591f83fb217589751",
+      "bytes": 269868,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-after/walk-return-0.png"
+    },
+    {
+      "oid": "9fb9f83c6c0c53671d404a0ac25260177fd76b8f50238cf83c12518dc0cc64cb",
+      "bytes": 334017,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-after/walk-return-1.png"
+    },
+    {
+      "oid": "474ec5aaf35bf6430d904bb19cfffe9e7593226e7c40a1b4aab008e3deda2c30",
+      "bytes": 467933,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-after/walk-return-2.png"
+    },
+    {
+      "oid": "66a978b91e4e6d3d206e85c5ff9d7cce4a9d9ef3458f264fa4bc72c3be1aaea1",
+      "bytes": 469436,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-after/walk-return-3.png"
+    },
+    {
+      "oid": "81664824f7fd874dc08ee851841de5660f682c5c54703438062291416c410007",
+      "bytes": 254541,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-before/walk-blocked-1.png"
+    },
+    {
+      "oid": "a69706aa762a4f2891add0cd0fcd78941e0b2b10dd00c665ce22af678052a0c4",
+      "bytes": 342443,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-before/walk-endpoint-0.png"
+    },
+    {
+      "oid": "469e6130e9229d294d2303948528abe534052976d41f60affe0cd7e722a766ec",
+      "bytes": 363497,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-before/walk-endpoint-1.png"
+    },
+    {
+      "oid": "d810836ae2a6641121548baf589fe0f8a178f80b48debfe753cabd90283aac83",
+      "bytes": 310726,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-before/walk-endpoint-2.png"
+    },
+    {
+      "oid": "9beca0d375be0daab0cf2f272a6e9e62bc0a0a2cbf627097121b6be22eedfb39",
+      "bytes": 270862,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-before/walk-return-0.png"
+    },
+    {
+      "oid": "f50414e3e74a5f745d3629f992f15c69e5eae67ee47ef697c6750485638222c5",
+      "bytes": 334825,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-before/walk-return-1.png"
+    },
+    {
+      "oid": "0e9ba7d8d70c56c595972fcba02bac24768747fd41a7ad85a02f8a551daab39b",
+      "bytes": 469301,
+      "path": "public/project-records/oakey-neighbors-refinement/walk-before/walk-return-2.png"
+    },
+    {
+      "oid": "4c01742559376a9af9fd71827f6b1c65838bd5c5234d709745323be148b4c76e",
+      "bytes": 699127,
+      "path": "runtime-assets/baked/cells/cell-2_-5.bin"
+    },
+    {
+      "oid": "5403de3119ace253e98eeb8a638bfc7326130b2e7d05069cfc10282358320d93",
+      "bytes": 272701,
+      "path": "runtime-assets/baked/cells/cell-2_-6.bin"
+    },
+    {
+      "oid": "c4c491e6e6b4b27fd4603b57fbc01a174cf39a2e345835894b885fb76929905e",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "59ec83bb77d6822d80cc8969f3798cd95aed249f213dd555e61bb0de643fdbef",
+      "bytes": 1718888,
+      "path": "runtime-assets/strip-landmarks/courtyard525-exterior.glb"
+    },
+    {
+      "oid": "fbeb5c916beb74abdf0e14f9900d75293fc3f5e47f12f225b72509b555475388",
+      "bytes": 204176,
+      "path": "runtime-assets/strip-landmarks/oakeyService-exterior.glb"
+    },
+    {
+      "oid": "92b2cd8bb411a7adb4d92effdf5536240714ecd2f7dc975871c17618b83b452e",
+      "bytes": 1746288,
+      "path": "runtime-assets/strip-landmarks/peppermintHippo-exterior.glb"
+    }
+  ],
+  "count": 46,
+  "bytes": 19859066
+}
