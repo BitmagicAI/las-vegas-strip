@@ -60,5 +60,14 @@
       "build/strip-landmarks/courtyard525-exterior.glb": "eab06184576a490cee5ba14bb333ac82219cdde5119996cbcda51df7894bc029",
       "build/strip-landmarks/courtyard525-exterior-collision.json": "38805c4ae60638f9d1e2fce3c2042acdec24c5903f2812187cdda88745262b2b"
     }
+  },
+  "refinement20261108": {
+    "scope": "Original static pool access-chair silhouette added at east end; no operating lift or accessibility certification claim.",
+    "record": "docs/project-records/oakey-neighbors-refinement/",
+    "status": "verified-bounded",
+    "notCompletion": true,
+    "installedSHA256": "59ec83bb77d6822d80cc8969f3798cd95aed249f213dd555e61bb0de643fdbef",
+    "checks": "14localchecks;859supportsamples;56before+56afteractuallegs including3floorstairs;9devsmokestops;10installeddaylightviews;90/92cells byte-identical.",
+    "performance": "Matched static timings in performance.json; no improvement or whole-route claim."
   }
 }

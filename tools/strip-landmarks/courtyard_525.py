@@ -120,6 +120,17 @@ def exterior(B):
   F.box('c525-seat-fabric',(float(u),.48,-36.8),(.62,.07,1.45));F.box('c525-seat-fabric',(float(u),.77,-37.45),(.62,.65,.07))
   for dx in [-.26,.26]:F.tube('c525-metal-paint',(float(u)+dx,.15,-37.3),(float(u)+dx,.48,-36.3),.025,6)
  B.detail=0
+ # Official gallery shows a compact pool access chair at the eastern end.
+ # Original static silhouette only; hidden mechanism and dimensions are inferred.
+ u,w=50.8,-34.5
+ F.box('c525-metal-paint',(u,.19,w),(.36,.08,.46))
+ F.tube('c525-metal-paint',(u,.23,w),(u,1.2,w),.065,8)
+ F.tube('c525-metal-paint',(u,1.15,w),(u-.55,.85,w),.045,8)
+ F.box('c525-seat-fabric',(u-.6,.67,w),(.5,.08,.5))
+ F.box('c525-seat-fabric',(u-.36,.91,w),(.07,.48,.5))
+ for dz in [-.27,.27]:
+  F.path('c525-metal-paint',[(u-.35,.73,w+dz),(u-.35,.94,w+dz),(u-.79,.94,w+dz)],.022,6)
+ F.box('c525-metal-paint',(u-.87,.38,w),(.28,.045,.4))
  # West leasing office: separate small building in official gallery; flat roof, cantilevered shade and terracotta core.
  office=F.poly([(17,-34),(23,-34),(23,-27),(17,-27)]);B.shell(office,.15,3.3,'c525-white-stucco',roof=False);B.planar('c525-roof-paint',office,3.4)
  F.box('c525-terracotta-paint',(22.5,2.1,-30.5),(1.1,4.2,7.2),True)

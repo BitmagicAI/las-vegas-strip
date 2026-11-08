@@ -10,10 +10,18 @@ def archpanel(G,u,base,width,height,mat,depth=-.17):
  G.b.face(mat,[G.p(*q) for q in reversed(pts)]);G.path(frame_mat,[(u-r,base,depth-.02),(u-r,spring,depth-.02)],.022,6);G.path(frame_mat,[(u+r,base,depth-.02),(u+r,spring,depth-.02)],.022,6)
  G.path(frame_mat,[(u+r*math.cos(a),spring+r*math.sin(a),depth-.02) for a in np.linspace(0,math.pi,17)],.022,6)
  if mat=='ph-black-paint':return
+ # January 2026 street reference: rectangular lower lights and a curved fan head.
+ # Keep the existing opening, glass plane and perimeter; dimensions remain inferred.
  for dx in np.arange(-r+.3,r,.35):
-  hi=spring+math.sqrt(max(0,r*r-dx*dx));G.tube(frame_mat,(u+float(dx),base,depth-.02),(u+float(dx),hi,depth-.02),.014,6)
- for y in np.arange(base+.3,base+height,.35):
-  half=r if y<spring else math.sqrt(max(0,r*r-(y-spring)**2));G.tube(frame_mat,(u-half,float(y),depth-.02),(u+half,float(y),depth-.02),.014,6)
+  G.tube(frame_mat,(u+float(dx),base,depth-.02),(u+float(dx),spring,depth-.02),.014,6)
+ for y in np.arange(base+.3,spring,.35):
+  G.tube(frame_mat,(u-r,float(y),depth-.02),(u+r,float(y),depth-.02),.014,6)
+ G.tube(frame_mat,(u-r,spring,depth-.02),(u+r,spring,depth-.02),.014,6)
+ for radius in [r*.4,r*.72]:
+  G.path(frame_mat,[(u+radius*math.cos(a),spring+radius*math.sin(a),depth-.02) for a in np.linspace(0,math.pi,9)],.012,3)
+ for a in [math.pi/4,math.pi/2,3*math.pi/4]:
+  G.tube(frame_mat,(u,spring,depth-.02),(u+r*math.cos(a),spring+r*math.sin(a),depth-.02),.012,3)
+
 def rail(G,lo,hi,z,base):
  for y in [base+.12,base+.95]:G.tube('ph-red-metal-paint',(lo,y,z),(hi,y,z),.035,8)
  for u in np.arange(lo,hi,.75):
