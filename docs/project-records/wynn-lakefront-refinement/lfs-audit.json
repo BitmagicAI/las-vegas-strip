@@ -1,0 +1,163 @@
+{
+  "base": "979f8ee8e4cd9dc85207ce9bf320334622343c39",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "635dfddbf2a56ad821429e139eb712c49f2413f8d2119872d6334df469fed5ec",
+      "bytes": 205252,
+      "path": "public/project-records/wynn-lakefront-refinement/after-details/wynn-north-capital.png"
+    },
+    {
+      "oid": "1572163876b39442e0335b95a9cc5b39f35eb364690fdd9c297cda5f00e3b737",
+      "bytes": 217861,
+      "path": "public/project-records/wynn-lakefront-refinement/after-details/wynn-sw-capital.png"
+    },
+    {
+      "oid": "03102428f77a61e7a9005d761c930081765a05a1919b4e280c82251633f0d0f0",
+      "bytes": 475299,
+      "path": "public/project-records/wynn-lakefront-refinement/after/wynn-lake-wide.png"
+    },
+    {
+      "oid": "0a1af8f448927d7f24753a78f27ad4618ce5ffe07c378ab7a21da1b076094367",
+      "bytes": 316155,
+      "path": "public/project-records/wynn-lakefront-refinement/after/wynn-north-terrace.png"
+    },
+    {
+      "oid": "775857a7b97b82d4b903f36295e04b80a3f29fe19eeae513246f3616b1a80768",
+      "bytes": 472976,
+      "path": "public/project-records/wynn-lakefront-refinement/after/wynn-south-basin.png"
+    },
+    {
+      "oid": "aca81473e93a2bff846f04cbb310395db4c3972400231902dec582012f641f00",
+      "bytes": 303585,
+      "path": "public/project-records/wynn-lakefront-refinement/after/wynn-sw-terrace.png"
+    },
+    {
+      "oid": "fe5b23cec9997b0ab5267391ad018a29ec12a65bb1bd17e2d38a503ca6413969",
+      "bytes": 201538,
+      "path": "public/project-records/wynn-lakefront-refinement/before-details/wynn-north-capital.png"
+    },
+    {
+      "oid": "5371bc040a2ca288ac0c917e6837e8a10c07eacd5e276c866d664d9c6376b79a",
+      "bytes": 214918,
+      "path": "public/project-records/wynn-lakefront-refinement/before-details/wynn-sw-capital.png"
+    },
+    {
+      "oid": "25f694938528470bc7703c1d8ef0d0792628955ef28aa9bbdbc9dd956db74d54",
+      "bytes": 474901,
+      "path": "public/project-records/wynn-lakefront-refinement/before/wynn-lake-wide.png"
+    },
+    {
+      "oid": "17a0c9a4eac9f69ff3c5812970aa7376038a973fff3f26d95d64655dee277cca",
+      "bytes": 315248,
+      "path": "public/project-records/wynn-lakefront-refinement/before/wynn-north-terrace.png"
+    },
+    {
+      "oid": "6feb94848ac4eb26bf75feecf5901ed7134f2e015f87635822343de2f137c916",
+      "bytes": 472343,
+      "path": "public/project-records/wynn-lakefront-refinement/before/wynn-south-basin.png"
+    },
+    {
+      "oid": "5ebbc717279b878c27de15cbfd22ef2ec7032922bc7b9c71da82c6a7dcc8fd5e",
+      "bytes": 302607,
+      "path": "public/project-records/wynn-lakefront-refinement/before/wynn-sw-terrace.png"
+    },
+    {
+      "oid": "4d25f89b72b0ad03915f1c677e6c2a2432d3ae3a964e9276f33c2fce3ff1e3d0",
+      "bytes": 241067,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-after/walk-endpoint-0.png"
+    },
+    {
+      "oid": "d3179d5b7ff5f1558208facaea4057951dc862743e92d77f58d4bf7fb328e89c",
+      "bytes": 253011,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-after/walk-endpoint-1.png"
+    },
+    {
+      "oid": "0569ca188874259ca1e4337a1f76fb80b2292ade939e6e9a4003b4f91bf2f6a0",
+      "bytes": 292593,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-after/walk-endpoint-2.png"
+    },
+    {
+      "oid": "0d8055894aeb91580cf3ce0ffe8d54d77a04185038c7b6b6fc0027c8bef24262",
+      "bytes": 306470,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-after/walk-endpoint-3.png"
+    },
+    {
+      "oid": "200d6c4d4291bfb45d271bfe08d6359d0606eee5c4febf936fff09043fda1577",
+      "bytes": 224469,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-after/walk-return-0.png"
+    },
+    {
+      "oid": "cb52f864eae8be5ae8d669e81ea624089b8f6c9203e9c79b8a2677991a2f4aff",
+      "bytes": 286021,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-after/walk-return-1.png"
+    },
+    {
+      "oid": "8bd66167c42a188c22dbc819fbbc3229170bde9c03778c7e7c28988a262215d9",
+      "bytes": 231185,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-after/walk-return-2.png"
+    },
+    {
+      "oid": "a7eb65bef17bbea2371c8a609a993e2ae8e31b6286f9541f2d811ae70390f63f",
+      "bytes": 207986,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-after/walk-return-3.png"
+    },
+    {
+      "oid": "49659c853204aa7a83c4da0026e37fd796151c7c4539e15b0a1ac08bc5792d32",
+      "bytes": 223627,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-before/walk-endpoint-0.png"
+    },
+    {
+      "oid": "c60685effcf7d451a1d56c737273bbecf1303cf838d1bc132c6d145a120db101",
+      "bytes": 239663,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-before/walk-endpoint-1.png"
+    },
+    {
+      "oid": "8797a1d20a8225da26f398f45932e5838956b322d3a77f3402cb5fbda2a1ad87",
+      "bytes": 286387,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-before/walk-endpoint-2.png"
+    },
+    {
+      "oid": "fe5b439a92f506a4238818035b161320f940ab6a11100d29c5a8c2ec33616ec1",
+      "bytes": 307995,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-before/walk-endpoint-3.png"
+    },
+    {
+      "oid": "81cd0a070625af7390a3ac3ba8dd7334ec8eca90e5252023a0b5d15c409c2dc9",
+      "bytes": 225232,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-before/walk-return-0.png"
+    },
+    {
+      "oid": "d2bbacb95999614da2f21704fc08e7df68ee7a0bc574d87f1ff43526807c5e11",
+      "bytes": 285980,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-before/walk-return-1.png"
+    },
+    {
+      "oid": "247444bf6579eac764d2b28436c47d4f49593ff9bdada94a6154fa39b6e24304",
+      "bytes": 228136,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-before/walk-return-2.png"
+    },
+    {
+      "oid": "f6f07b2e17b12ee9acf4b4b272567810ec8133a3f89c314d2b2427a7f02ddba4",
+      "bytes": 213798,
+      "path": "public/project-records/wynn-lakefront-refinement/walk-before/walk-return-3.png"
+    },
+    {
+      "oid": "0ea4f241121508085e6c17e1d303bf1b2a41706e774ec86d6efff2211ee449f0",
+      "bytes": 724078,
+      "path": "runtime-assets/baked/cells/cell-0_-2.bin"
+    },
+    {
+      "oid": "63f8787099a6c40fc8d778b8c3717ccd05b52aa4375a622f4218bc7fb511a4a6",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "bd51427b63d1cbd12af16250efb96a8b7d91c5ec9ca4c97b3d891d1d0ede16e4",
+      "bytes": 340200,
+      "path": "runtime-assets/strip-landmarks/wynnLakefront-exterior.glb"
+    }
+  ],
+  "count": 31,
+  "bytes": 9104382
+}
