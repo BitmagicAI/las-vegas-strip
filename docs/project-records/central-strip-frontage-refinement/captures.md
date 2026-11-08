@@ -1,0 +1,41 @@
+# Generated review captures
+
+Original game captures only; external references remain linked.
+
+- public/project-records/central-strip-frontage-refinement/before/casino-royale-retail-front.png
+- public/project-records/central-strip-frontage-refinement/before/casino-royale-retail-north.png
+- public/project-records/central-strip-frontage-refinement/before/casino-royale-retail-street.png
+- public/project-records/central-strip-frontage-refinement/before/mirage-pier-detail.png
+- public/project-records/central-strip-frontage-refinement/before/mirage-sign-base.png
+- public/project-records/central-strip-frontage-refinement/before/mirage-sign-north.png
+- public/project-records/central-strip-frontage-refinement/before/mirage-sign-south.png
+- public/project-records/central-strip-frontage-refinement/candidate/casino-royale-retail-front.png
+- public/project-records/central-strip-frontage-refinement/candidate/casino-royale-retail-north.png
+- public/project-records/central-strip-frontage-refinement/candidate/casino-royale-retail-street.png
+- public/project-records/central-strip-frontage-refinement/candidate/mirage-pier-detail.png
+- public/project-records/central-strip-frontage-refinement/candidate/mirage-sign-base.png
+- public/project-records/central-strip-frontage-refinement/candidate/mirage-sign-north.png
+- public/project-records/central-strip-frontage-refinement/candidate/mirage-sign-south.png
+- public/project-records/central-strip-frontage-refinement/after/casino-royale-retail-front.png
+- public/project-records/central-strip-frontage-refinement/after/casino-royale-retail-north.png
+- public/project-records/central-strip-frontage-refinement/after/casino-royale-retail-street.png
+- public/project-records/central-strip-frontage-refinement/after/mirage-pier-detail.png
+- public/project-records/central-strip-frontage-refinement/after/mirage-sign-base.png
+- public/project-records/central-strip-frontage-refinement/after/mirage-sign-north.png
+- public/project-records/central-strip-frontage-refinement/after/mirage-sign-south.png
+- public/project-records/central-strip-frontage-refinement/walk-before/walk-endpoint-0.png
+- public/project-records/central-strip-frontage-refinement/walk-before/walk-endpoint-1.png
+- public/project-records/central-strip-frontage-refinement/walk-before/walk-endpoint-2.png
+- public/project-records/central-strip-frontage-refinement/walk-before/walk-endpoint-3.png
+- public/project-records/central-strip-frontage-refinement/walk-before/walk-return-0.png
+- public/project-records/central-strip-frontage-refinement/walk-before/walk-return-1.png
+- public/project-records/central-strip-frontage-refinement/walk-before/walk-return-2.png
+- public/project-records/central-strip-frontage-refinement/walk-before/walk-return-3.png
+- public/project-records/central-strip-frontage-refinement/walk-after/walk-endpoint-0.png
+- public/project-records/central-strip-frontage-refinement/walk-after/walk-endpoint-1.png
+- public/project-records/central-strip-frontage-refinement/walk-after/walk-endpoint-2.png
+- public/project-records/central-strip-frontage-refinement/walk-after/walk-endpoint-3.png
+- public/project-records/central-strip-frontage-refinement/walk-after/walk-return-0.png
+- public/project-records/central-strip-frontage-refinement/walk-after/walk-return-1.png
+- public/project-records/central-strip-frontage-refinement/walk-after/walk-return-2.png
+- public/project-records/central-strip-frontage-refinement/walk-after/walk-return-3.png

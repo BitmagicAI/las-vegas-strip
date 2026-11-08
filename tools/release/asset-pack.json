@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1236097915,
+ "bytes": 1236085128,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -42,8 +42,8 @@
   },
   {
    "path": "build/baked/cells/cell--1_-1.bin",
-   "bytes": 698029,
-   "sha256": "e5ef079bbf99cbeebc96cb07a30c2b07c3a37fdd405131a93d453141c05b8019",
+   "bytes": 698077,
+   "sha256": "5a7f5ab12ec55966da1e1310dbfde5bc8500de1aa5bd61bfc15a73c2eb1c355f",
    "kind": "original"
   },
   {
@@ -270,8 +270,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_-1.bin",
-   "bytes": 1539064,
-   "sha256": "624a708ef7fa04e35b615d6c0f71a8304d4d87cd702d761950d6cb8d77c90c3f",
+   "bytes": 1538357,
+   "sha256": "9b06eda5230ec039222c96790ed19bcab4e1ad010819321a6a455ad8a26da32d",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "c0bec75b6c6fa2fab87009c29c4cc9cad5de53a86479ca640d1eda0d35cfaf1e",
+   "sha256": "ff78910638d46ab5b8a3f8a6275ab120b2d01702dfc6aa26bdf0d6cbd1c38848",
    "kind": "runtime cell manifest"
   },
   {
@@ -7734,8 +7734,8 @@
   },
   {
    "path": "build/strip-landmarks/casinoRoyaleRetail-exterior.glb",
-   "bytes": 733032,
-   "sha256": "661ec861d3be0f9722f983dcfe744ec887e7b04fd17be3f0669977a873f65386",
+   "bytes": 720036,
+   "sha256": "6bb4309fc15e7b8fdc8bde1156ea0ad0d3bf49a278690c5f19b11d8679a86361",
    "kind": "optimized"
   },
   {
@@ -9690,8 +9690,8 @@
   },
   {
    "path": "build/strip-landmarks/mirageMarquee-exterior.glb",
-   "bytes": 902848,
-   "sha256": "25945b0fe2607e811c418476069e137c4e90ee20af559317f061913d4f279266",
+   "bytes": 903716,
+   "sha256": "89dfba7e5760cb0293879f11f084c759d9cb8860b9d761f9e163ac90f54c1b04",
    "kind": "optimized"
   },
   {

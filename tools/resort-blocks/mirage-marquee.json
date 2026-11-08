@@ -123,5 +123,13 @@
       "build/strip-landmarks/mirageMarquee-exterior.glb": "0c6d5b2aa0c7eb2c2d1d586b4facb5e33d5f520d7f879f1155964629338bbf6b",
       "build/strip-landmarks/mirageMarquee-exterior-collision.json": "912c4921891eefc93d34e931594be4ed9fde94fa82bac7ac2bc188b39bf7c911"
     }
+  },
+  "refinement20261108": {
+    "scope": "Add two-tier transition collars on both historic piers; shelter unchanged",
+    "record": "docs/project-records/central-strip-frontage-refinement",
+    "checks": "15localchecksPASS;377supportsamples;18legacylegs;18before+18afteractuallegs;9devsmokestops",
+    "views": "7matching neutral-daylight views, front first, all inspected",
+    "cells": "90/92byte-identical",
+    "status": "verified bounded refinement; all existing remaining gaps retained"
   }
 }
