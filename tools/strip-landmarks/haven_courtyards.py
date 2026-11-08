@@ -10,7 +10,7 @@ def exterior(B):
  ps=[footprint(i) for i in IDS];W=Frame(B,0,0,y=0);samples=[]
  for index,p in enumerate(ps):
   B.shell(p,.18,6.45,'hc-cream-stucco',roof=False);B.planar('hc-roof-paint',p.buffer(-.12),6.16,True)
-  # Four recessed rusty-red window strips on long outer side wings.
+  # December 2022 east view: north wing has narrow blank strips; south has windows.
   for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
    G,L,nx,nz=facade_frame(B,a,b,p,0)
    G.box('hc-coping-paint',(L/2,6.47,0),(L,.12,.30))
@@ -18,9 +18,12 @@ def exterior(B):
    mx,mz=G.p(L/2,0,0)[0],G.p(L/2,0,0)[2]
    court=(180<mx<204 and ((index==0 and mz>2739) or(index==1 and mz<2793)))
    if abs(nx)>.8 and L>18:
+    blank_east = index==0 and nx>.8
     for u in np.linspace(3.7,L-3.7,4):
-     G.box('hc-rust-paint',(float(u),3.14,-.035),(1.55,5.92,.05))
-     for y in [1.65,4.75]:window(G,float(u),y)
+     # Strip width is a reversible visual estimate, not a surveyed dimension.
+     G.box('hc-rust-paint',(float(u),3.14,-.035),(.45 if blank_east else 1.55,5.92,.05))
+     if not blank_east:
+      for y in [1.65,4.75]:window(G,float(u),y)
     for u in [1.25,L-1.25]:G.box('hc-cream-stucco',(u,3.36,-.10),(2.5,6.36,.20))
    elif court:
     for u in np.arange(1.4,L-1,3.9):

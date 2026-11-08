@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1236104691,
+ "bytes": 1236097915,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -324,8 +324,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_3.bin",
-   "bytes": 333431,
-   "sha256": "5ee0b91a5c92ad12a71e03218c87e5a1880f02227468f10ccfeb418de152d9ad",
+   "bytes": 332807,
+   "sha256": "13f22191fd2b816dd2f37c174f5800cdb4af1842d64c19931d9df5457767633f",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "caec5baa342f69814b352476cf421c07d74e56679ed5ea492845be6d58773534",
+   "sha256": "c0bec75b6c6fa2fab87009c29c4cc9cad5de53a86479ca640d1eda0d35cfaf1e",
    "kind": "runtime cell manifest"
   },
   {
@@ -8790,8 +8790,8 @@
   },
   {
    "path": "build/strip-landmarks/havenCourtyards-exterior.glb",
-   "bytes": 674504,
-   "sha256": "2607d954772413efb8d11d571b81c3e03d8d3a19311b0a7c5cb8b405a9251ce9",
+   "bytes": 668352,
+   "sha256": "5780b2b18b5df63306a5db0d9feb7725432df32d0e0a188193de76c620ca6d2a",
    "kind": "optimized"
   },
   {

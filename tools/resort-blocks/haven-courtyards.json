@@ -26,7 +26,7 @@
     "Palms and planted beds still approximate and visibly simplified",
     "Gallery/stair positions inferred, not surveyed",
     "Terrain beyond this local lot remains unfinished",
-    "Neutral-daylight and vehicle route verification outstanding"
+    "Vehicle route verification outstanding; neutral-daylight five-view comparison verified2026-11-08"
   ],
   "triangles": 34626,
   "batches": 27,
@@ -145,5 +145,14 @@
       "build/strip-landmarks/havenCourtyards-exterior.glb": "a66a4c903fc9645208bed897fc858ae43a08a3e5988cd69e782ba2b276d886c0",
       "build/strip-landmarks/havenCourtyards-exterior-collision.json": "a7c7ad0399b8cc5c5917a0ad85946bf6dc33869dac4f5186b96c19b5e296dc37"
     }
+  },
+  "refinement20261108": {
+    "scope": "North building east facade: eight inferred windows removed, four rust strips narrowed to estimated0.45m; south building preserved and revalidated",
+    "record": "docs/project-records/haven-courtyards-refinement",
+    "checks": "14local checks PASS;543roof samples;26legacy and26before+26afteractualwalklegs;9devsmokestops",
+    "views": "Five identical neutral-daylight cameras, front first; inspected",
+    "cells": "91/92 byte-identical; only cell-0_3 changes",
+    "decisions": "Blank north facade follows December2022 Street View; strip widths estimated; identity and private interiors unresolved",
+    "status": "verified bounded refinement; full-site discrepancies retained"
   }
 }
