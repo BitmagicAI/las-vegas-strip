@@ -42,10 +42,20 @@ def exterior(B):
  F=Frame(B,99.85,-453.6,math.pi/2,y=0)
  F.box('rr-red-paint',(0,8.1,-.1),(12.2,1.3,.28));F.text("McDonald's",(0,7.77,-.27),.85,'rr-white-letter')
  L=Frame(B,93.1,-453.5,math.pi/2,y=0)
- for u,word in [(-3.2,'CHIPOTLE'),(3.2,'CHIPOTLE')]:
+ for u,word in [(-3.2,'CHIPOTLE'),(3.2,'PANDA')]:
   pts=[L.p(u+1.1*math.cos(t),2.95+1.1*math.sin(t),-.1)for t in np.linspace(0,math.tau,48,endpoint=False)];B.face('rr-burgundy-paint',pts)
-  B.path('rr-cream-paint',pts+[pts[0]],.065,8);L.text(word,(u,3.35,-.2),.25,'rr-white-letter');L.text('MEXICAN GRILL',(u,2.25,-.2),.15,'rr-white-letter')
-  L.path('rr-white-letter',[(u-.25,3.05,-.22),(u+.2,3.15,-.22),(u+.37,2.75,-.22),(u,2.55,-.22),(u-.25,3.05,-.22)],.035,8)
+  B.path('rr-cream-paint',pts+[pts[0]],.065,8);L.text(word,(u,3.35,-.2),.25,'rr-white-letter');L.text('EXPRESS' if word=='PANDA' else 'MEXICAN GRILL',(u,2.25,-.2),.15,'rr-white-letter')
+  if word=='PANDA':
+   # North sign tenant confirmed by frontage photo and operator's 3475 address.
+   # Original simplified panda medallion; exact branding remains approximate.
+   def disc(mat,cx,cy,rx,ry,depth):
+    B.face(mat,[L.p(cx+rx*math.cos(t),cy+ry*math.sin(t),depth) for t in np.linspace(0,math.tau,32,endpoint=False)])
+   for dx in [-.27,.27]:disc('rr-shadow-paint',u+dx,3.10,.15,.15,-.225)
+   disc('rr-white-letter',u,2.85,.38,.34,-.23)
+   for dx in [-.15,.15]:disc('rr-shadow-paint',u+dx,2.9,.10,.13,-.24)
+   disc('rr-shadow-paint',u,2.73,.08,.055,-.245)
+  else:
+   L.path('rr-white-letter',[(u-.25,3.05,-.22),(u+.2,3.15,-.22),(u+.37,2.75,-.22),(u,2.55,-.22),(u-.25,3.05,-.22)],.035,8)
  # One continuous arched ribbon, bending from sidewalk to upper restaurant.
  A=Frame(B,94,-454.65,-math.atan2(11.7,18),y=.24)
  def pt(t):

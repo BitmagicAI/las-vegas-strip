@@ -1,0 +1,5 @@
+# Installed review
+
+All seven matched daylight views and eight installed walk endpoint/return images inspected. Panda north tenant correction and two-tier Mirage collars are visible; unchanged architecture remains approximate.15localchecksPASS,377supportsamples,18legacylegs,18actuallegs before and18after,9devsmokestops without errors. Standard and explicitWebP optimization preceded installation. Original source/material/image audit passed; collision preserved, retail labels intentionally changed. One shared bake;90/92cells identical; unrelated GoldCoast/WyndhamLOD drift restored exactly.
+
+Decisions for the owner: original panda symbol and letterforms remain approximate; collar dimensions inferred from historical sidephoto/UNLV survey. Preserve historic Mirage target, estimated60mheight±8m, original neutral display art and all broader gaps. Forum/sign intersection, Harrahs blocked route, restaurant doors/interiors, landscape, service facade and vehicle performance remain unresolved. Upper landing fascia appears approximate despite passing routes. No whole-block or photorealistic claim. See performance.json for single-sample matching timings.
