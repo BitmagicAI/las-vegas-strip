@@ -225,6 +225,8 @@ colors.update({'arc-roof-paint':'c3c8c2','arc-soffit-paint':'b0b7b0','arc-edge-p
 
 colors.update({'c63-shade-fabric':'233b44'})
 
+colors.update({'vp-soleia-curtain-paint':'b52c28','vp-soleia-cushion-paint':'b8322b'})
+
 def material(k):
  if k in materials:return materials[k]
  rgb=np.array([int(colors[k][i:i+2],16)/255 for i in (0,2,4)]);linear=np.where(rgb<.04045,rgb/12.92,((rgb+.055)/1.055)**2.4)

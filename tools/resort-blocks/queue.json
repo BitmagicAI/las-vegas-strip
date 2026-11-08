@@ -573,14 +573,18 @@
     {
       "id": "vanderpump",
       "name": "The Vanderpump Hotel, former Cromwell",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "vanderpump.json"
     },
     {
       "id": "citycenter-63",
       "name": "63 CityCenter / ARTE Museum",
-      "status": "active",
-      "record": "citycenter-63.json"
+      "status": "refinement-deferred",
+      "record": "citycenter-63.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "PR553 verified bounded terrace shade refinement; all public access, detailed furniture/material and full-block discrepancies retained."
+      }
     },
     {
       "id": "harmon-corner",
@@ -1932,5 +1936,5 @@
       "record": "excalibur-pedestrian-bridge.json"
     }
   ],
-  "active": "citycenter-63"
+  "active": "vanderpump"
 }

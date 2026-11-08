@@ -8,7 +8,7 @@
   "sha256": ""
  },
  "count": 1932,
- "bytes": 1235574519,
+ "bytes": 1235726261,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -306,8 +306,8 @@
   },
   {
    "path": "build/baked/cells/cell-0_0.bin",
-   "bytes": 1586555,
-   "sha256": "a4b5b9f1b55cfd1665b8f21ade9a8856eeb1814be05d4a4a4eec137099b48236",
+   "bytes": 1586913,
+   "sha256": "c9ab0d04399272d2262dd7009e96ec7f04d3ef386f4385776bb30a77934341af",
    "kind": "original"
   },
   {
@@ -589,7 +589,7 @@
   {
    "path": "build/baked/cells/manifest.json",
    "bytes": 13801,
-   "sha256": "f4313bd67108f07c877b49331db02101c143ed3b06fb28c0fbc4dae7fc72a81e",
+   "sha256": "321e5ef922690c77b24a904190ee1fe8d1fc2d9ebb2b8e09199165352370e664",
    "kind": "runtime cell manifest"
   },
   {
@@ -11250,8 +11250,8 @@
   },
   {
    "path": "build/strip-landmarks/vanderpump-exterior.glb",
-   "bytes": 2174372,
-   "sha256": "353fdfe2bc986cff87c29a21cded7cad384ba112318f2d1b5897df3cb8db044e",
+   "bytes": 2325756,
+   "sha256": "315aeb9df7f163347341c4deb8fdc69e90357f230b56315eb544db38f6ce18e4",
    "kind": "optimized"
   },
   {
