@@ -136,7 +136,10 @@ def exterior(B):
        c=B.solids[B.property];n=len(c['vertices'])//3;c['vertices'].extend(float(v) for pt in tri for v in pt);c['indices'].extend([n,n+1,n+2])
    roof=surf.roof(r['id'],poly,h)
    if h==14:roof=roof.difference(pools)
-   B.planar('wy-theater-roof-paint' if r['id'] in ['way/111322079','way/142899198'] else 'wy-roof',roof,h+.04,not tower)
+   B.planar('wy-parking-deck-paint' if r['id']=='way/111322083' else 'wy-theater-roof-paint' if r['id'] in ['way/111322079','way/142899198'] else 'wy-roof',roof,h+.04,not tower)
+   if r['id']=='way/111322083':
+    from wynn_parking_deck import mark_deck
+    mark_deck(B,roof,h)
    if r['id']=='way/142899198':
     c=poly.centroid
     B.lathe('wy-trim',(c.x,c.y),[(h+.08,2.3),(h+.5,2.1)],24)

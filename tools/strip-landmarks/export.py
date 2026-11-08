@@ -140,6 +140,7 @@ colors.update({'sg-stone':'c5b99e','sg-white':'dddcd4','sg-gold':'9a885d','sg-gl
 colors.update({'gc-cream':'d2c7ac','gc-white':'e3e0d2','gc-taupe':'a3947f','gc-window':'373b3b','gc-shadow':'393b36','gc-roof':'c3c1b2','gc-green':'85a797'})
 colors.update({'el-glass':'304e6b','el-spandrel':'304158','el-frame':'547086','el-roof':'c7cbca','el-white':'deded4','el-red':'9d354c','el-metal':'737f84','el-vent':'5d676a'})
 colors.update({'mi-white':'e1dfd3','mi-cream':'cbbd9e','mi-glass':'8e7750','mi-frame':'b4a078','mi-shadow':'333c3a','mi-roof':'bca886','mi-window':'424c48','mi-awning':'9b4641','mi-dome':'557c89','mi-banner':'564455','mi-letter':'424644'})
+colors.update({'wy-parking-deck-paint':'777a78','wy-parking-line-paint':'e3e0cf'})
 colors.update({'wy-white':'ded6c2','wy-stone':'c8b89c','wy-bronze':'5b4035','wy-band':'c3bdb3','wy-joint':'7b695d','wy-rim':'74523f','wy-trim':'ded2bc','wy-window':'3d4846','wy-shadow':'343637','wy-roof':'c4c0b2','wy-skylight':'94b7bf'})
 colors.update({'tr-white':'dddcd2','tr-glass':'a58b48','tr-spandrel':'8c784d','tr-frame':'ceba7e','tr-shadow':'343c3c','tr-roof':'c2c2b9','tr-letter':'70633e'})
 colors.update({'sh-white':'dededa','sh-window':'566c75','sh-frame':'aeb7b8','sh-sill':'c6cecf','sh-joint':'b8bfbd','sh-shadow':'303d42','sh-roof':'c7cbc8'})
