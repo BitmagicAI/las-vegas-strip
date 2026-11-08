@@ -15,12 +15,14 @@ def exterior(B):
  for side in [-1,1]:
   F.box('bhs-trim-paint',(side*(w/2+.25),4.5,0),(.18,.18,d+.65))
   for z in [-d/2,d/2]:F.tube('bhs-trim-paint',(0,6.23,z),(side*(w/2+.25),4.53,z),.065,6)
- # Four pairs of translucent rooflights and ridge extractors, laid flush to slope.
- for z in [-13.5,-4.5,4.5,13.5]:
+ # Fresh satellite: three paired rooflights, separate from four ridge extractors.
+ # Pale panels run across the slope; offsets remain image-derived estimates.
+ for z in [-4.5,4.5,13.5]:
   for side in [-1,1]:
    u=side*4.9
-   for mat,du,dz,off in [('bhs-rooflight-frame-paint',.7,1.45,.04),('bhs-rooflight-paint',.59,1.32,.07)]:
+   for mat,du,dz,off in [('bhs-rooflight-frame-paint',1.45,.7,.04),('bhs-rooflight-paint',1.32,.59,.07)]:
     B.upface(mat,[F.p(uu,ry(uu)+off,zz) for uu,zz in [(u-du,z-dz),(u+du,z-dz),(u+du,z+dz),(u-du,z+dz)]])
+ for z in [-13.5,-4.5,4.5,13.5]:
   F.box('bhs-service-paint',(0,6.45,z),(1.05,.45,1.9));F.box('bhs-cap-paint',(0,6.7,z),(1.2,.10,2.1))
   for y in [6.32,6.43,6.54]:
    for side in [-1,1]:F.box('bhs-shadow-paint',(side*.53,y,z),(.025,.035,1.7))

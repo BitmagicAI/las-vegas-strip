@@ -76,9 +76,20 @@ def exterior(B):
  # Roadside shaped sign and small timber hitching-post sign.
  S=Frame(B,43,3325,math.pi/2,y=0)
  S.box('cw-cedar',(0,2.8,0),(.55,5.6,.5),True)
- outline=[(-1.45,3.7),(-1.4,6.25),(-.7,6.3),(0,6.5),(.7,6.3),(1.4,6.25),(1.45,3.7),(0,3.35)]
- for i in range(1,len(outline)-1):B.face('cw-sign',[S.p(outline[j][0],outline[j][1],-.3) for j in [0,i,i+1]])
+ # Smooth original sign shoulders/lower scallop, based on owner photograph.
+ outline=[(float(x),6.25+.25*math.cos(float(x)/1.4*math.pi/2)**2) for x in np.linspace(-1.4,1.4,17)]
+ outline += [(float(x),3.35+.35*(float(x)/1.45)**2) for x in np.linspace(1.45,-1.45,17)]
+ for tri in triangles(Polygon(outline)):
+  B.face('cw-sign',[S.p(x,y,-.3) for x,y in reversed(list(tri.exterior.coords)[:-1])])
  S.path('cw-gold',[(x,y,-.32) for x,y in outline+[outline[0]]],.07,8)
+ # Small pointed bell panel above the main sign, static original relief.
+ bellpanel=[(-.44,6.48),(-.44,7.25),(0,7.82),(.44,7.25),(.44,6.48)]
+ for tri in triangles(Polygon(bellpanel)):
+  B.face('cw-cedar',[S.p(x,y,-.12) for x,y in reversed(list(tri.exterior.coords)[:-1])])
+ S.path('cw-gold',[(x,y,-.16) for x,y in bellpanel+[bellpanel[0]]],.035,6)
+ bell=[(-.22,6.84),(-.16,6.98),(-.14,7.22),(0,7.31),(.14,7.22),(.16,6.98),(.22,6.84)]
+ S.path('cw-gold',[(x,y,-.19) for x,y in bell+[bell[0]]],.025,6)
+ S.tube('cw-gold',(0,6.84,-.19),(0,6.75,-.19),.035,6)
  for text,y,size in [('LITTLE',5.98,.39),('CHURCH',5.55,.4),('OF THE',5.18,.26),('WEST',4.8,.42),('WEDDING',4.26,.36),('CHAPEL',3.87,.39)]:S.text(text,(0,y,-.35),size,'cw-trim')
  H=Frame(B,53,3339,2.098,y=0)
  for x in [-1.1,1.1]:H.tube('cw-batten',(x,0,0),(x,1.2,0),.08,8)

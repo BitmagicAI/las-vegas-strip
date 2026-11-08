@@ -1,0 +1,82 @@
+{
+  "method": "Identical daylight cameras; 960x540 DPR1 ultra; 900 warmup plus 60 settled frames, 180 measured frames. Single samples, not a driving benchmark or improvement claim.",
+  "views": [
+    {
+      "name": "church-front-wide",
+      "beforeP50": 16.600000143051147,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 17.799999952316284,
+      "afterP95": 18.200000047683716
+    },
+    {
+      "name": "church-front",
+      "beforeP50": 16.699999809265137,
+      "afterP50": 16.699999809265137,
+      "beforeP95": 18.40000009536743,
+      "afterP95": 17.799999952316284
+    },
+    {
+      "name": "church-office",
+      "beforeP50": 16.59999990463257,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 18.700000047683716,
+      "afterP95": 18.09999990463257
+    },
+    {
+      "name": "church-aerial",
+      "beforeP50": 16.59999990463257,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 20,
+      "afterP95": 18.5
+    },
+    {
+      "name": "bali-arrival",
+      "beforeP50": 16.90000009536743,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 28.600000143051147,
+      "afterP95": 18.399999856948853
+    },
+    {
+      "name": "bali-terrace",
+      "beforeP50": 16.799999952316284,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 28.699999809265137,
+      "afterP95": 18.90000009536743
+    },
+    {
+      "name": "bali-aerial",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 19,
+      "afterP95": 18.09999990463257
+    },
+    {
+      "name": "bali-service-east",
+      "beforeP50": 16.5,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 19.799999952316284,
+      "afterP95": 19
+    },
+    {
+      "name": "bali-service-roof",
+      "beforeP50": 16.799999952316284,
+      "afterP50": 16.600000143051147,
+      "beforeP95": 20.799999952316284,
+      "afterP95": 18
+    },
+    {
+      "name": "bali-service-yard",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 20.09999990463257,
+      "afterP95": 18.700000047683716
+    },
+    {
+      "name": "church-sign",
+      "beforeP50": 16.700000047683716,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 20.59999990463257,
+      "afterP95": 18.200000047683716
+    }
+  ]
+}

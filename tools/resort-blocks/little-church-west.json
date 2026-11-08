@@ -23,7 +23,7 @@
   "remaining": [
     "Office facade remains generic and needs better photographic reference",
     "Lawn lacks turf detail and hedges; garden less dense than owner photo",
-    "Sign shape and lettering require refinement; front camera crops sign",
+    "Sign lettering and fine ornament require refinement; widened front-first camera now includes whole sign",
     "Nearby off-site parcels show missing ground, not addressed by this property pass",
     "No interior access created",
     "Full driving performance not benchmarked; distant tree billboard transition not visually checked"
@@ -55,5 +55,12 @@
       "src/work/GroveLod.ts": "b5cd1cdd5a5d19e7a9a9b314d032294f315f46cea86d48745a4efcb65cd3c8d2",
       "src/work/StripLandmarks.ts": "48e494279b7c6cd496db9ab05d5ead984d01168c4b652d9db7677cdbe4b930b8"
     }
+  },
+  "refinement20261108": {
+    "change": "Curved sign shoulders/lower edge and original pointed bell panel, preserving existing lettering and all 25 foliage nodes.",
+    "record": "docs/project-records/bali-chapel-refinement",
+    "references": "docs/project-records/bali-chapel-refinement/references.md",
+    "validation": "13 local checks passed; 1493 support samples; 26 before and 26 after actual walk legs; 11 matching daylight views inspected; 9-stop dev smoke zero errors. 90/92 binary cells unchanged.",
+    "scope": "Bounded original detail pass; all other remaining discrepancies retained. No whole-block or photorealistic completion claim."
   }
 }
