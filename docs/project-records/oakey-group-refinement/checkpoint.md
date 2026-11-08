@@ -29,3 +29,5 @@ Decision: Shops geometry unchanged for this bounded group, with fresh frontage/r
 Actualafterwalk then9stopdevsmoke queued sequentially in session34009;logs/tmp/oakey-walk-after.log and/tmp/oakey-smoke.log. Archive session14769,/tmp/oakey-archive.log. Finishandinspect walkcaptures, copyfreshsmokereport, runperformancecontrol/repeat; finalize records,capturearchive/LFS andPR. No furtherbake. Local13checksremainpassed; nofinalvalidation/mergeclaimyet.
 
 2026-11-08 03:39: All18afterlegs passed andsixendpoint/returnimagesinspected;devsmoke9/9zeroerrors. Originalsoffitcontrol24.5/29.2ms,installedrepeat25.0/30.9ms; bothslowerthanearlybaseline, delta+.5/+1.7ms, retainallrunswithnoimprovementclaim. Seveninstalledviews inspected;41generatedcapturesindexed. Finalarchive/review/public/diffchecks pass (public97existingwarnings,0failures). Board regenerated, unrelatedstatusesrestored. Ready for implementationcommit,LFS audit,PR556finalization/selfmerge andexplicitissueclosure.
+
+Final LFS audit: 11,101,747 new bytes across 33 unique objects absent from origin/next, including generated captures and models.

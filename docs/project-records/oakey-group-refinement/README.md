@@ -19,3 +19,5 @@ Installed seven daylight views and six walk endpoint/return captures inspected;1
 ## Out of scope and release step
 
 Roads, existing interiors, shared runtime code, city ownership and Shops geometry remain unchanged. Exact sign graphics, site paving, rear utility layouts, surveyed dimensions and interiors remain in the three block records. CDN and published-game checks belong to the owner's release step. No CDN upload, publication, main merge, release or settings change is authorized here.
+
+Final LFS audit: 11,101,747 new bytes across 33 unique objects absent from origin/next, including generated captures and models.
