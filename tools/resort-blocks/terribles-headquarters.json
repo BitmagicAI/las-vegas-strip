@@ -43,5 +43,11 @@
       "build/strip-landmarks/terriblesHeadquarters-exterior.glb": "3403fb7629bd0e216a21a659a1e384718ee5e74e40c891e44e6019b248dc7d9a",
       "build/strip-landmarks/terriblesHeadquarters-exterior-collision.json": "e691dffa711c92c43e8aa043370f1f2489d8ea7681702d7817084fb2aa1bc2f5"
     }
+  },
+  "refinement20261108": {
+    "change": "Eight original ribbed barrel cacti in existing west garden; exact planting density, species dimensions and layout remain inferred.",
+    "record": "docs/project-records/south-airport-refinement",
+    "validation": "14 local checks passed, 651 support samples, 12 legacy walk legs, 12 before and 12 installed actual walk legs, six matched installed daylight views inspected, nine-stop dev smoke zero errors; 90/92 binary cells unchanged.",
+    "scope": "Bounded original detail pass. All prior remaining discrepancies retained; no whole-block or photorealistic completion."
   }
 }
