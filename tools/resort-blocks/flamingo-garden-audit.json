@@ -49,7 +49,7 @@
     "Pond edges are aerial-guided estimates; actual wildlife enclosure layout and planting species need refinement.",
     "GO Pool2025complex remains outside this pass.",
     "Garden restaurant/chapel fittings and real interior fit-out not established.",
-    "Trees useexistingCC0deciduousasset; reference palms species still need appropriate assets.",
+    "65 existing CC0 deciduous trees retained;12 original inferred pinnate palms added. Exact species, dense understory and surveyed planting positions remain unresolved.",
     "Retained upper-gallery access uses new14m flight; stair/endpoints are functional accommodations, not verified architectural circulation."
   ],
   "planAudit20261021": {
@@ -92,11 +92,22 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/flamingoGarden-exterior.glb": "1aa8672f2811b6237e62cbe43e36146e897be3ff55b60222e28b070bcc39cfb6",
+      "build/strip-landmarks/flamingoGarden-exterior.glb": "77b1c9e90a556f2e767880c93b6d0cf8410f39f4e40c09c9b438220aa9a3e1b0",
       "build/strip-landmarks/flamingoGarden-exterior-collision.json": "b39e8b7d998bf9ed6a2528d557e3ee5a6e876b57b1bcc56460edfeeac7e79a3c",
       "build/strip-landmarks/flamingoExterior-exterior.glb": "4f2df8d77f6cfc0f58ebd70d02ac47571af78f094aa83022b0deb2f127b3b928",
       "build/geographic-strip/detailed.glb": "45f0ef0c7cd9d2a448ce014b290eb8a573e4c67df9f8c30dff5128ee5e8e57be",
       "build/geographic-strip/city.glb": "ccb6936cc1db8f6016be0d000db068db7f4662f67c566d7a4ce4ee2e0d5a6fcd"
     }
+  },
+  "refinement20261108": {
+    "scope": "Original pinnate palms at12 existing safe planting positions;65deciduous trees retained acrossLODs. All10 mapped features, architecture, interiors, water, paths and collision preserved.",
+    "status": "installed-verified-scoped",
+    "record": "docs/project-records/flamingo-garden-refinement",
+    "sourceTriangles": 86715,
+    "optimizedBytes": 14097124,
+    "checks": "12local checks PASS;512support samples;22legacy bidirectional reports;100before/100after actualkeyboardlegs;7matching daylight views;9stopdevsmoke PASS",
+    "preservation": "325retained tree nodes exact attributes/transforms/metadata;10embedded images and existing material definitions unchanged;91/92binarycells identical,onlycell-0_-1 changed; unrelatedGoldCoast/Wyndham LOD restored.",
+    "decisions": "Original schematic pinnate forms,8.4\u201310.8m trunks, inferred placement at existing tree coordinates; no species or survey claim.",
+    "performance": "docs/project-records/flamingo-garden-refinement/performance-comparison.json"
   }
 }

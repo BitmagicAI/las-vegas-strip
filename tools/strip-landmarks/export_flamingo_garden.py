@@ -1,8 +1,13 @@
-"""Export chapel with existing CC0 Poly Haven tree asset, shared mesh data."""
+"""Export garden architecture, original palms and retained CC0 shared trees."""
 import sys,math,json,hashlib,struct
 from pathlib import Path
 sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
+from flamingo_garden_palms import PALM_INDICES
+from preserve_flamingo_tree_lod import preserve_cards
+previous_path=Path('build/strip-landmarks/flamingoGarden-exterior.glb')
+previous_glb=previous_path.read_bytes() if previous_path.exists() else None
+E.colors.update({'fgp-bark':'86735a','fgp-leaf':'607c45'})
 import bpy
 from mathutils import Matrix,Vector
 name='flamingoGarden-exterior';bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add(name)
@@ -21,6 +26,7 @@ for lod in range(3):
     if mat:mat['sourceLicense']='CC0 Poly Haven tree_small_02 (existing project asset)'
   for o in added:bpy.data.objects.remove(o,do_unlink=True)
  for i,(x,z,h,yaw) in enumerate(json.loads(Path('build/city-exteriors/flamingo-garden-trees.json').read_text())):
+  if i in PALM_INDICES:continue
   s=h/(hi-lo);T=Matrix.Translation((x,-z,.4))@Matrix.Rotation(yaw,4,'Z')@Matrix.Scale(s,4)@Matrix.Translation((0,0,-lo))
   for j,(data,m) in enumerate(proto):
    o=bpy.data.objects.new(f'Flamingo garden tree {i}/{lod}/{j}',data);bpy.context.collection.objects.link(o);o.matrix_world=T@m;o['property']='flamingoGarden';o['source']=f'arrival-tree/{math.floor(x/40)},{math.floor(z/40)}/{lod}';o['detail']=0
@@ -31,6 +37,8 @@ b=p.read_bytes();jn=struct.unpack_from('<I',b,12)[0];d=json.loads(b[20:20+jn]);r
 for mat in d.get('materials',[]):
  if 'leaves' in mat.get('name','').lower():mat['alphaMode']='MASK';mat['alphaCutoff']=.12;mat['doubleSided']=True
 j=json.dumps(d,separators=(',',':')).encode();j+=b' '*((-len(j))%4);p.write_bytes(struct.pack('<III',0x46546c67,2,20+len(j)+len(rest))+struct.pack('<II',len(j),0x4e4f534a)+j+rest)
+if previous_glb:
+ preserved,count=preserve_cards(previous_glb,p.read_bytes());p.write_bytes(preserved);print('PRESERVED_TREE_CARDS',count)
 h=hashlib.sha256()
 for f in sorted(E.OUT.glob('*.glb')):h.update(f.read_bytes())
 for f in sorted(E.OUT.glob('*-collision.json')):h.update(f.read_bytes())
