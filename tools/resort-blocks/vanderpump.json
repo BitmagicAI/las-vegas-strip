@@ -21,7 +21,7 @@
     "Full public roof access certification",
     "Exact sculptural ornament and material fidelity",
     "No photo-perfect claim",
-    "Sparse roof planting and simplified cabana furniture/curtains.",
+    "Sparse roof planting and simplified cabana furniture; new gathered curtain profiles are inferred and exact fixture layout remains unverified.",
     "Existing pedestrian bridge ramp crosses the main entrance view; full global route clearance not certified.",
     "Window spacing and club elevations remain estimated; close material and sculptural fidelity incomplete.",
     "Canopy finishes and lighting remain simple; public roof circulation not yet certified."
@@ -51,5 +51,15 @@
       "build/strip-landmarks/vanderpump-exterior.glb": "d0a971153ea1ae3a491618ba72a74fbac6444285bca2a94e7b0331d6d4ab4035",
       "tools/strip-landmarks/build_vanderpump_exterior.py": "b2158e523347a5d8fa2458a6673311892959c0cb178ed4a9f6de33e6f7a7fd1b"
     }
+  },
+  "soleiaTextileRefinement20261107": {
+    "status": "verified-bounded",
+    "scope": "Twenty original gathered curtain panels across ten retained cabanas; existing cushion geometry recolored red.32other groups, labels and collision retained.",
+    "evidence": "docs/project-records/vanderpump-refinement/",
+    "reference": "Official Caesars Soleia cabana/pool photographs and Google Earth oblique; dates and dimensions remain uncertain.",
+    "remaining": "All existing remaining entries retained; no public roof access certification or full rooftop layout claim.",
+    "installedSHA256": "315aeb9df7f163347341c4deb8fdc69e90357f230b56315eb544db38f6ce18e4",
+    "checks": "12 local checks, 101 collision samples, 8 before + 8 after actual roof-deck legs, 9 dev smoke stops passed; 3 matching views inspected; 91/92 cells unchanged.",
+    "performance": "Five matching runs preserved. Contemporary cabana median +3.9ms/p95 +8.0ms amid variable renderer load; no zero-regression or speedup claim. Quiet-machine follow-up retained."
   }
 }

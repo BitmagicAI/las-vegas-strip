@@ -1,0 +1,326 @@
+{
+  "report.json": {
+    "rel": ".bitmagic/vanderpump-candidate/vanderpump-exterior.glb",
+    "sourceSha256": "bdc3bd980335a737202a785439312f5e8a1e015bcb6df4a9908ac677477cc26f",
+    "cls": "level",
+    "loader": "Venetian candidate",
+    "when": "candidate",
+    "label": "primary",
+    "preset": "level",
+    "overrides": [],
+    "exitCode": 0,
+    "signal": null,
+    "seconds": 0.663,
+    "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/vanderpump-candidate/vanderpump-exterior.glb .bitmagic/optimize/.bitmagic/vanderpump-candidate/vanderpump-exterior/out.glb --preset=level --json",
+    "failed": [],
+    "stderr": [],
+    "report": {
+      "src": ".bitmagic/vanderpump-candidate/vanderpump-exterior.glb",
+      "dst": ".bitmagic/optimize/.bitmagic/vanderpump-candidate/vanderpump-exterior/out.glb",
+      "preset": "level",
+      "before": {
+        "bytes": 8925336,
+        "triangles": 133457,
+        "vertices": 281077,
+        "nodes": 39,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 7962004,
+        "gpuTextures": 5592404,
+        "textures": [
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original sandstone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229482,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original tile",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 233546,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "KHR_materials_emissive_strength"
+        ]
+      },
+      "after": {
+        "bytes": 3170428,
+        "triangles": 133457,
+        "vertices": 281077,
+        "nodes": 39,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 5407897,
+        "gpuTextures": 5592404,
+        "textures": [
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original sandstone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229482,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original tile",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 233546,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "KHR_materials_emissive_strength",
+          "KHR_mesh_quantization"
+        ]
+      },
+      "notes": [
+        "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+        "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+      ],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "39 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "4 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "5.49 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 0 warnings"
+        }
+      ]
+    }
+  },
+  "report-webp-textures.json": {
+    "rel": ".bitmagic/vanderpump-candidate/vanderpump-exterior.glb",
+    "sourceSha256": "bdc3bd980335a737202a785439312f5e8a1e015bcb6df4a9908ac677477cc26f",
+    "label": "variant webp-textures",
+    "preset": "level",
+    "overrides": [
+      "--base=webp",
+      "--emissive=webp",
+      "--orm=webp-lossless"
+    ],
+    "exitCode": 0,
+    "signal": null,
+    "seconds": 0.829,
+    "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/vanderpump-candidate/vanderpump-exterior.glb .bitmagic/optimize/.bitmagic/vanderpump-candidate/vanderpump-exterior/out-webp-textures.glb --preset=level --base=webp --emissive=webp --orm=webp-lossless --json",
+    "failed": [],
+    "stderr": [],
+    "report": {
+      "src": ".bitmagic/vanderpump-candidate/vanderpump-exterior.glb",
+      "dst": ".bitmagic/optimize/.bitmagic/vanderpump-candidate/vanderpump-exterior/out-webp-textures.glb",
+      "preset": "level",
+      "before": {
+        "bytes": 8925336,
+        "triangles": 133457,
+        "vertices": 281077,
+        "nodes": 39,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 7962004,
+        "gpuTextures": 5592404,
+        "textures": [
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 228903,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original sandstone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 229482,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original tile",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 233546,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "png",
+            "bytes": 232610,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "KHR_materials_emissive_strength"
+        ]
+      },
+      "after": {
+        "bytes": 2325756,
+        "triangles": 133457,
+        "vertices": 281077,
+        "nodes": 39,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 5407897,
+        "gpuTextures": 5592404,
+        "textures": [
+          {
+            "name": "Original roof",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 21152,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original sandstone",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 17848,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original tile",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 20374,
+            "gpu": 1398101
+          },
+          {
+            "name": "Original walnut",
+            "slot": "base",
+            "w": 512,
+            "h": 512,
+            "mime": "webp",
+            "bytes": 20358,
+            "gpu": 1398101
+          }
+        ],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "EXT_texture_webp",
+          "KHR_materials_emissive_strength",
+          "KHR_mesh_quantization"
+        ]
+      },
+      "notes": [
+        "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+        "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+      ],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "39 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "4 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "6.29 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 0 warnings"
+        }
+      ]
+    }
+  }
+}
