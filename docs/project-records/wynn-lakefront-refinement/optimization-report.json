@@ -1,0 +1,83 @@
+{
+ "rel": ".bitmagic/wynn-lakefront-candidate/wynnLakefront-exterior.glb",
+ "sourceSha256": "69735bad148213c59bfcd927b00dbcaf5aa726ac433550cfce92cdc727df388e",
+ "cls": "level",
+ "loader": "Oakey candidate",
+ "when": "candidate",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.383,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/wynn-lakefront-candidate/wynnLakefront-exterior.glb .bitmagic/optimize/.bitmagic/wynn-lakefront-candidate/wynnLakefront-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": ".bitmagic/wynn-lakefront-candidate/wynnLakefront-exterior.glb",
+  "dst": ".bitmagic/optimize/.bitmagic/wynn-lakefront-candidate/wynnLakefront-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 1267476,
+   "triangles": 19198,
+   "vertices": 47528,
+   "nodes": 11,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1255860,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 340200,
+   "triangles": 19198,
+   "vertices": 47528,
+   "nodes": 11,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 828108,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "11 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "0 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "905.5 KiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

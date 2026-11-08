@@ -57,6 +57,29 @@ def exterior(B):
    pt=F.p(x,0,-2.4)
    if not p.buffer(-.1).contains(Point(pt[0],pt[2])):continue
    F.lathe('wlf-cream-stucco',x,-2.4,[(.7,.33),(.95,.33),(1.05,.23),(4.45,.20),(4.6,.37),(4.8,.37)],12)
+   # Original low-relief foliage: photo-supported capital articulation, not a
+   # surveyed carving. Keep the existing 0.37m cap envelope and collision.
+   for k in range(8):
+    ang=k*math.tau/8
+    def leafpoint(t,r,y):
+     return F.p(x+r*math.cos(ang+t),y,-2.4+r*math.sin(ang+t))
+    outline=[leafpoint(0,.205,4.28),leafpoint(-.19,.245,4.40),
+             leafpoint(-.22,.29,4.52),leafpoint(0,.355,4.57),
+             leafpoint(.22,.29,4.52),leafpoint(.19,.245,4.40)]
+    ridge=leafpoint(0,.32,4.48)
+    for j in range(len(outline)):
+     B.face('wlf-cream-stucco',[outline[j],outline[(j+1)%len(outline)],ridge])
+   # Four pairs of small curled stems below the abacus, using the same batch.
+   for k in range(4):
+    ang=k*math.tau/4
+    for side in [-1,1]:
+     pts=[]
+     for t in np.linspace(0,math.pi*1.5,6):
+      r=.055*(1-t/(math.pi*2))
+      u=side*(.12+r*math.cos(t));y=4.53+r*math.sin(t)
+      pts.append(F.p(x+.30*math.cos(ang)-u*math.sin(ang),y,
+                     -2.4+.30*math.sin(ang)+u*math.cos(ang)))
+     B.path('wlf-cream-stucco',pts,.014,4)
    F.box('wlf-cream-stucco',(x,4.9,-1.6),(.20,.22,3.2))
   F.box('wlf-cream-stucco',(L/2,4.85,-2.4),(L,.23,.23))
   for x in np.arange(.6,L-1,1.4):
