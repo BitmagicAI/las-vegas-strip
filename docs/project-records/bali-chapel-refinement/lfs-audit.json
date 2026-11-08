@@ -1,0 +1,233 @@
+{
+  "base": "d1e79f2e31821526431945bd636b16205ada1df8",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "9b527211f32a957b61a3f4d39f06eedcc809278f52c22e38b3c074f39b27a953",
+      "bytes": 617812,
+      "path": "public/project-records/bali-chapel-refinement/after/bali-aerial.png"
+    },
+    {
+      "oid": "4a148970300400b627153233137067f45a970a129bdef4ab2d3abb23961a8000",
+      "bytes": 323023,
+      "path": "public/project-records/bali-chapel-refinement/after/bali-arrival.png"
+    },
+    {
+      "oid": "586eced2233b3ff87dd81acd4ce86b22a6e25b7febc8691355284bdf4ab7fd0a",
+      "bytes": 254969,
+      "path": "public/project-records/bali-chapel-refinement/after/bali-service-east.png"
+    },
+    {
+      "oid": "301f280bf3be7efe90040aae5ed975c6ab175bd7c31afab7edc2dfbb7871c4f3",
+      "bytes": 625365,
+      "path": "public/project-records/bali-chapel-refinement/after/bali-service-roof.png"
+    },
+    {
+      "oid": "8b4f8c2fba72f296b0382f4c44481fe167ecb99c372a8b8674187475892eb757",
+      "bytes": 244641,
+      "path": "public/project-records/bali-chapel-refinement/after/bali-service-yard.png"
+    },
+    {
+      "oid": "d3ea11317608fde6c243adee1b7d444981cb6f8d5f7e155520935c3380312c0b",
+      "bytes": 481799,
+      "path": "public/project-records/bali-chapel-refinement/after/bali-terrace.png"
+    },
+    {
+      "oid": "37a45a499a7a935bbb39fbe330eb58f0f8acc8c0e860351ef5fcfb205d857b24",
+      "bytes": 318014,
+      "path": "public/project-records/bali-chapel-refinement/after/church-aerial.png"
+    },
+    {
+      "oid": "d6cb56f90ace322c264be47677ac6edcd343f7dbbaa0c6993c31d7dd2d6e5522",
+      "bytes": 325716,
+      "path": "public/project-records/bali-chapel-refinement/after/church-front-wide.png"
+    },
+    {
+      "oid": "f6e3a4db6cb9deaa581516a50a00470668ccdc050eba7c2c646b85c8cf47e4b5",
+      "bytes": 370754,
+      "path": "public/project-records/bali-chapel-refinement/after/church-front.png"
+    },
+    {
+      "oid": "91e9c30574523f631840f033e0cddb13d4d8733ab8e0fdccc6fe71f0917273ad",
+      "bytes": 322071,
+      "path": "public/project-records/bali-chapel-refinement/after/church-office.png"
+    },
+    {
+      "oid": "52491f318de0b509dcfda34a088fd95c45b14a018936be46e7f9ee07f71e8275",
+      "bytes": 278721,
+      "path": "public/project-records/bali-chapel-refinement/after/church-sign.png"
+    },
+    {
+      "oid": "59244b181f84691b400ba0aa0651c4fa868332edcfef72d74cb486ba0b2f299c",
+      "bytes": 277985,
+      "path": "public/project-records/bali-chapel-refinement/before-sign/church-sign.png"
+    },
+    {
+      "oid": "d3b0828d11b8887242d7d5fcabfae6271def1156ce68767a109a3309b18b9b08",
+      "bytes": 617842,
+      "path": "public/project-records/bali-chapel-refinement/before/bali-aerial.png"
+    },
+    {
+      "oid": "9b0d08561a34607dfbd83f5adced6d2c21f84c8b9605ee334d0b936ae1c72e4c",
+      "bytes": 322350,
+      "path": "public/project-records/bali-chapel-refinement/before/bali-arrival.png"
+    },
+    {
+      "oid": "f9ea4886fccfafd84d601be0bfa472475b288fbc7a4d361437fb111a58513e47",
+      "bytes": 254876,
+      "path": "public/project-records/bali-chapel-refinement/before/bali-service-east.png"
+    },
+    {
+      "oid": "ee3656f8bfb84988c46346c35b6b2fec7cab7923e7cf53be54aafd0f100338b6",
+      "bytes": 626253,
+      "path": "public/project-records/bali-chapel-refinement/before/bali-service-roof.png"
+    },
+    {
+      "oid": "4cc6077c28418bf08987e1cb3c190ca7c7455a707f57fc1e6254f742be3a86be",
+      "bytes": 244552,
+      "path": "public/project-records/bali-chapel-refinement/before/bali-service-yard.png"
+    },
+    {
+      "oid": "332fe8d8d65738544a6817d0c74f7e49e70cc490924ed4265d7d005ba34d2860",
+      "bytes": 481178,
+      "path": "public/project-records/bali-chapel-refinement/before/bali-terrace.png"
+    },
+    {
+      "oid": "09b99368ffe8832cea9707ef3204c9cb4ae725b6b7dc9675411924d83f217b8b",
+      "bytes": 317954,
+      "path": "public/project-records/bali-chapel-refinement/before/church-aerial.png"
+    },
+    {
+      "oid": "35a6a5c6b3da571526c2674466f88c6b53f0d625f5a4961ea9d7fc598d2396bb",
+      "bytes": 325592,
+      "path": "public/project-records/bali-chapel-refinement/before/church-front-wide.png"
+    },
+    {
+      "oid": "8f085ab078c3e31de4d0906a9295dfde4b28491811c9b65e8b972f610c9fb094",
+      "bytes": 370657,
+      "path": "public/project-records/bali-chapel-refinement/before/church-front.png"
+    },
+    {
+      "oid": "1b9746fc042e92a6e19aad419fa5411f8e8ec108a734db63eb74b971444f81e7",
+      "bytes": 323391,
+      "path": "public/project-records/bali-chapel-refinement/candidate/bali-arrival.png"
+    },
+    {
+      "oid": "5e668a0493dd6ccaf4778b6b131efd2ea713a1f8bb8bac94dd4d1d0ba0f58db1",
+      "bytes": 254972,
+      "path": "public/project-records/bali-chapel-refinement/candidate/bali-service-east.png"
+    },
+    {
+      "oid": "4a8b6fd54206fe280c3323df83ac365ad2045e08affad6d1ff1be5ed2e5dfe5f",
+      "bytes": 481836,
+      "path": "public/project-records/bali-chapel-refinement/candidate/bali-terrace.png"
+    },
+    {
+      "oid": "2c0b8fa44247019c5a6e7ddea229100b970373b6931050f924d42f5db2f757f1",
+      "bytes": 325663,
+      "path": "public/project-records/bali-chapel-refinement/candidate/church-front-wide.png"
+    },
+    {
+      "oid": "ee93ba48804ac8b79debe18eee29786af75823c31c58eaf2720d53cdc248b73d",
+      "bytes": 371222,
+      "path": "public/project-records/bali-chapel-refinement/candidate/church-front.png"
+    },
+    {
+      "oid": "1bf45261fcfa7450326dc8c53921012828fe2720b454853b4930e834e1b86c0e",
+      "bytes": 278999,
+      "path": "public/project-records/bali-chapel-refinement/candidate/church-sign.png"
+    },
+    {
+      "oid": "66843166dc9d8053b02b8c4b33228638063243fb216497dde5f004c030e1cf58",
+      "bytes": 321193,
+      "path": "public/project-records/bali-chapel-refinement/walk-after/walk-endpoint-0.png"
+    },
+    {
+      "oid": "5be77394811c6eb629f945793769d5348bd0fcc3a20fbc9c98bb9a34c217b6e8",
+      "bytes": 323178,
+      "path": "public/project-records/bali-chapel-refinement/walk-after/walk-endpoint-1.png"
+    },
+    {
+      "oid": "ed14e19109cc08d39e6ee4d7b46ee6b3c680c8e4f0e975b6911d1270241ace5c",
+      "bytes": 224568,
+      "path": "public/project-records/bali-chapel-refinement/walk-after/walk-endpoint-2.png"
+    },
+    {
+      "oid": "66300cdcbce220175b22848ac60df722295ccf19cad7aa30f40f3e12e8675daa",
+      "bytes": 334901,
+      "path": "public/project-records/bali-chapel-refinement/walk-after/walk-return-0.png"
+    },
+    {
+      "oid": "e05c97192bcf23c26fdaad44f92f1b5270d165b2f4998411f8c133021169f555",
+      "bytes": 371846,
+      "path": "public/project-records/bali-chapel-refinement/walk-after/walk-return-1.png"
+    },
+    {
+      "oid": "b1a79c50d709b70361408306d835273ac757de4417690cbbe54dd2ed2dbc55b0",
+      "bytes": 289356,
+      "path": "public/project-records/bali-chapel-refinement/walk-after/walk-return-2.png"
+    },
+    {
+      "oid": "1c1aed9d73c839757e7fe1d6aeaaaea68a5b66ec7fc2328563ed66e324ad8654",
+      "bytes": 321137,
+      "path": "public/project-records/bali-chapel-refinement/walk-before/walk-endpoint-0.png"
+    },
+    {
+      "oid": "c3f2480550c1c2d7a9323d203309e050c14f44301ebd93fa819ea64a1f8c4e8f",
+      "bytes": 320398,
+      "path": "public/project-records/bali-chapel-refinement/walk-before/walk-endpoint-1.png"
+    },
+    {
+      "oid": "dbd4dedc358ecddca0057f8a74f7aaca845610429c9d237f8bf0dadb7b943db2",
+      "bytes": 224293,
+      "path": "public/project-records/bali-chapel-refinement/walk-before/walk-endpoint-2.png"
+    },
+    {
+      "oid": "5f00758bcd0181542c7e9d02ba158139dc8b43a7aa31f87a1da08287a15acd88",
+      "bytes": 334456,
+      "path": "public/project-records/bali-chapel-refinement/walk-before/walk-return-0.png"
+    },
+    {
+      "oid": "b8c3d86949953207065347818c3ceead6cb985673514f95aa297d67895255354",
+      "bytes": 371828,
+      "path": "public/project-records/bali-chapel-refinement/walk-before/walk-return-1.png"
+    },
+    {
+      "oid": "83a8c8da08c1b6328877c2fa67eb32ef4cdbe0b28c11b040cd87b284dc55024a",
+      "bytes": 288370,
+      "path": "public/project-records/bali-chapel-refinement/walk-before/walk-return-2.png"
+    },
+    {
+      "oid": "bdfb84c988b6898c284df0cdceb2e5ec0be497c6b0b87e5fca36cf3f05fe2beb",
+      "bytes": 237815,
+      "path": "runtime-assets/baked/cells/cell--1_4.bin"
+    },
+    {
+      "oid": "186c6f01be58f82cd431d1ec23b1c6d105a9f451051e04a2623dcd9f0a5f3a23",
+      "bytes": 107979,
+      "path": "runtime-assets/baked/cells/cell-0_4.bin"
+    },
+    {
+      "oid": "da055826120cc952297617f7ea92ab9857b2d1249cacb65e1c535ec02b9fb58c",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "ced20c43e29befcea1066d21f1a4c3512aa6a106ba245d78626c9021b3b3480d",
+      "bytes": 628916,
+      "path": "runtime-assets/strip-landmarks/baliHaiClubhouse-exterior.glb"
+    },
+    {
+      "oid": "ed1332730ad990c5afe4eb573f882451e1828f701fa6ca0349270b37bf39aa13",
+      "bytes": 175844,
+      "path": "runtime-assets/strip-landmarks/baliHaiService-exterior.glb"
+    },
+    {
+      "oid": "551eed58acf5a61b726215996363f2042821b315b0ac70273aac9e46767a8a7c",
+      "bytes": 12672308,
+      "path": "runtime-assets/strip-landmarks/littleChurchWest-exterior.glb"
+    }
+  ],
+  "count": 45,
+  "bytes": 27600394
+}
