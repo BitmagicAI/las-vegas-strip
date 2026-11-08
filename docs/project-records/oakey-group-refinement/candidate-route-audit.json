@@ -1,0 +1,13 @@
+{
+  "replacements": {
+    "oakeyArco": 3,
+    "luvIt": 3
+  },
+  "bothCandidatesLoaded": true,
+  "harnessError": "Final assertion retained atomicGolf key from template; actual replacement counters verify both Oakey candidates loaded. Corrected assertion in runner. Original log retained.",
+  "baselineWalking": {
+    "passed": true,
+    "legs": 18
+  },
+  "shopsDecision": "Keep geometry unchanged in this bounded pass; verified frontage and route, preserve remaining detailed survey/interior tasks."
+}

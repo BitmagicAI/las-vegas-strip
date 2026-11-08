@@ -37,5 +37,14 @@
       "build/strip-landmarks/luvIt-exterior.glb": "35fd5ead2227af2d952f88bb3e5c7a91bf6d2f9646ee4c272211864f84be1dc4",
       "build/strip-landmarks/luvIt-exterior-collision.json": "09481938c334c0c5e7b84e372175efe2d6b1c47a3ba1c2c199aa6df01a6bf2f7"
     }
+  },
+  "refinement20261108": {
+    "scope": "Original low-poly ornamental scrolls added to both south window grilles; preserves original glass, labels, shell and collision.",
+    "record": "docs/project-records/oakey-group-refinement/",
+    "status": "verified-bounded",
+    "notCompletion": true,
+    "installedSHA256": "b8f986c6d788b976c7c8e571c025a81ff198d0aa3d331a0cb84e13a46fe9c006",
+    "checks": "13 local checks;705 support/headroom samples;18before+18after actual walking legs;9devsmokestops;7installed daylight views inspected;91/92cells byte-identical.",
+    "performance": "Static matched camera measurements and contemporaneous original-model control/repeat retained in performance.json; no whole-route or improvement claim."
   }
 }
