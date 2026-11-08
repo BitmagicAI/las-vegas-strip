@@ -1,0 +1,73 @@
+{
+  "base": "4b4c565f53305a4e191cea5a0b02a5aac3d97029",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "d32d6c3b0c4fd0584559f443877cc20612d9dff187eb590051ac3bf4adf4c8f3",
+      "bytes": 103367,
+      "path": "public/project-records/atomic-golf-refinement/after-repeat/atomic-south-terrace.png"
+    },
+    {
+      "oid": "eb6df5edacf6399f6a258c9cc590c7435208d590f604ddf4769c3bfccf6ffb9c",
+      "bytes": 281951,
+      "path": "public/project-records/atomic-golf-refinement/after/atomic-east-front.png"
+    },
+    {
+      "oid": "93b336f94972506c0abfdb7f948203c2ab8496ab5598521170ca7d68f1cb8cfc",
+      "bytes": 351668,
+      "path": "public/project-records/atomic-golf-refinement/after/atomic-south-front.png"
+    },
+    {
+      "oid": "f0a253c384019ffb9d4449c4d081f30978ee3a0daf24e6d05da8869fdaf6d892",
+      "bytes": 281628,
+      "path": "public/project-records/atomic-golf-refinement/before/atomic-east-front.png"
+    },
+    {
+      "oid": "4a547a1ebbe9b1cd266c1a33c163019a3ec1e624730ef6fcc43e70b3c519a9d5",
+      "bytes": 353300,
+      "path": "public/project-records/atomic-golf-refinement/before/atomic-south-front.png"
+    },
+    {
+      "oid": "02461702b8326b07af8f9b18243e7055a209f2a915c35e4a06a7591a552997f3",
+      "bytes": 78952,
+      "path": "public/project-records/atomic-golf-refinement/before/atomic-south-terrace.png"
+    },
+    {
+      "oid": "aaabad4cb155c17122d5e4cd973f4a0cfbcecece92477916c52a41146c0edea1",
+      "bytes": 388156,
+      "path": "public/project-records/atomic-golf-refinement/walk-after/walk-endpoint-0.png"
+    },
+    {
+      "oid": "50485e0e1ce29fecb90b471278b998c7276577723e0893e9ae400bf8092e0557",
+      "bytes": 413618,
+      "path": "public/project-records/atomic-golf-refinement/walk-after/walk-return-0.png"
+    },
+    {
+      "oid": "a431d8f09baf355bea0879c9f7876628a33c9ebf5c6b304005085022718d281a",
+      "bytes": 384078,
+      "path": "public/project-records/atomic-golf-refinement/walk-before/walk-endpoint-0.png"
+    },
+    {
+      "oid": "073a148ecee626ad778961c53394fa59d474b3d9d28a4d789f18160d58277a07",
+      "bytes": 413201,
+      "path": "public/project-records/atomic-golf-refinement/walk-before/walk-return-0.png"
+    },
+    {
+      "oid": "544c8cd437c8ec1eb6aaf4d53a779723accb43e4b61d87d9f2a7d21b94e15cb4",
+      "bytes": 305368,
+      "path": "runtime-assets/baked/cells/cell-1_-5.bin"
+    },
+    {
+      "oid": "61cd53f8feb946d6055df2c59082e4f47ddad9521327123697a1df4c4f0d005f",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "362bfe16b7ae4b67c0cabf213a907c718295dd6cdb69a21487551d1dd7e8fc51",
+      "bytes": 1010688,
+      "path": "runtime-assets/strip-landmarks/atomicGolf-exterior.glb"
+    }
+  ],
+  "count": 13,
+  "bytes": 4379776
+}
