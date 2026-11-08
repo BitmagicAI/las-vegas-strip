@@ -1,0 +1,7 @@
+# Mapped background / Wynn–Encore checkpoint
+
+2026-11-08 19:39: Flamingo PR563 merged c45cbd0008082a453974c366235ba9f44160a13e into next; issue158 explicitlyclosed; verified bounded palm pass. Do not replay.
+
+Picker selected site-mapped-background issue209; /claim posted and assignment confirmed janiverse. Fresh task/site-mapped-background from current origin/next c45cbd00 in vegas-2601-westwood. Three mapped features: Encore podium135291730, parking111322083, Wynn retailpodium111322055. Inventory labels them mapped-background with estimated6/5/6m heights, but current tools/strip-landmarks/wynn_encore.py already owns them at14/20/14m. Resolve stale ownership evidence before editing; preserve existing wynnLakefront PR562 nearby and all pool/club/interior work. Scope only these3features; map grouping and update record/task evidence without altering another session's queue active little-church-west.
+
+Next read current wynn_encore.py/build_wynn.py, wynn-encore blockrecord and installed sources. Refresh official photos and GoogleEarth/StreetView, choose bounded reversible refinement, save inferred dimensions. Front-first matching baseline captures and actual baseline walks before edits. Use existing custom pipeline, explicitWebP, single groupedbake, unchangedcells preservation and fullstep7/installedwalks/captures/devsmoke/performance. No model edits or research yet. Dev3180/editor3181; noGPUjobs active. Preserve untracked dependency symlinks. Never main/CDN/publish/release/settings; never poll117/118/203.
