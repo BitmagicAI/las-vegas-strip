@@ -56,6 +56,7 @@ colors.update({'nv-masonry':'dedfd7','nv-white':'e5e4db','nv-roof':'bfc3bd','nv-
 colors.update({'di-white':'d4d6ca','di-roof':'c3c4bb','di-blue':'37678b','di-red':'a13440','di-glass':'476371','di-frame':'abb3ac','di-door':'50697b','di-ac':'a8ada6','di-shadow':'4f5a5d','di-paving':'bab6aa','di-asphalt':'505252','di-pool':'8ca6b1','di-letter':'eee8d7','di-pink':'aa6a91','di-toe':'deb2bc','di-eye':'262d30','di-ivory':'daceb9','di-leaf':'4c6750','di-soil':'82725b','di-line':'c8c8b7'})
 colors.update({'om-stucco':'d5d2c5','om-ochre':'ac8b4e','om-trim':'b7b8ae','om-gray':'7c8583','om-glass':'34484c','om-frame':'9fa399','om-door':'626c68','om-roof':'b5b4a7','om-reveal':'4d534d','om-ac':'a6aca6','om-paving':'b4aca0','om-red':'9b4145','om-teal':'36787a','om-letter':'eee9db','om-soil':'7a6b53','om-leaf':'456341'})
 colors.update({'ih-paving':'b8b3a8','ih-silver':'aeb5b7','ih-rib':'c1c8c9','ih-roof':'b8bdbb','ih-blue':'225681','ih-red':'a53535','ih-glass':'3d6a72','ih-metal':'a4b4b8','ih-letter':'eee9de','ih-dark':'333c41','ih-cream':'c9c3b5','ih-red-roof':'9d5442'})
+colors.update({'ag-terrace-guard-glass':'b5cbd1','ag-fan-paint':'b9bcb9','ag-terrace-soffit-paint':'20252b'})
 colors.update({'ag-white':'e1e2df','ag-floor':'9b9d9d','ag-gray':'8b8e8f','ag-black':'20252b','ag-mat':'496257','ag-screen':'293354','ag-metal':'8a9398','ag-joint':'b5b9ba','ag-blue':'313f65','ag-purple':'684d80','ag-glass':'304553','ag-paving':'abaeaa','ag-range':'a2aeab','ag-green':'4d6658','ag-red':'a64e5a','ag-net':'4b5155'})
 colors.update({'pb-gray':'777a78','pb-joint':'555a58','pb-white':'e6e4db','pb-charcoal':'252b2e','pb-red':'b3212b','pb-blue':'29485c','pb-yellow':'dec345','pb-glass':'30434b','pb-metal':'9da6a8','pb-roof':'aaa9a2'})
 colors.update({'hd-asphalt':'383b3c','hd-silver':'aeb3b2','hd-concrete':'a4a59e','hd-orange':'bf5824','hd-red':'90352c','hd-cream':'d2bd90','hd-charcoal':'292e30','hd-joint':'60666a','hd-letter':'eee9db','hd-glass':'344b50','hd-roof':'a1a09a'})
@@ -331,7 +332,7 @@ def material(k):
  if k=='chy-canopy-glass':
   m.use_backface_culling=False
   bs.inputs['Alpha'].default_value=.35;bs.inputs['Roughness'].default_value=.27;m.diffuse_color=(*linear,.35);m.surface_render_method='DITHERED'
- if k=='wlf-rail-glass':
+ if k in ['wlf-rail-glass','ag-terrace-guard-glass']:
   bs.inputs['Alpha'].default_value=.16;bs.inputs['Roughness'].default_value=.19;m.diffuse_color=(*linear,.16);m.surface_render_method='DITHERED'
  if k=='wlf-window-glass':
   bs.inputs['Metallic'].default_value=.25;bs.inputs['Roughness'].default_value=.25

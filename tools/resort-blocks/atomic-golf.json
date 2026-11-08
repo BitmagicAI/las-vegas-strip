@@ -57,7 +57,7 @@
     "No complete interior/vertical access/stairs; only exterior structural decks.",
     "Furniture, ball sculpture, complete netting and fine facade detail pending.",
     "Range/poles/floor height dimensions estimated, no photo-perfect claim.",
-    "Southern terrace installed from October2025 panorama; exact height not measured. Glass guards render too dark/opaque and terrace lacks furniture and vertical access.",
+    "Southern terrace installed from October2025 panorama; exact height not measured. Upper guards now use inferred transparent glass and two static fans/dark soffit are added; terrace furniture, complete fixtures and vertical access remain unverified.",
     "South forecourt landscape, fence and patterned paving missing; main clubhouse facade/roof height relationship requires further reference correction."
   ],
   "dimensions": {
@@ -103,5 +103,15 @@
     "tests": "220 new support/headroom plus236 existing bay checks and6 perimeter walk legs pass",
     "evidence": "build/city-exteriors/atomic-golf-south-final",
     "review": "Three installed views inspected. No duplicate old box, terrace joins main clubhouse. Remaining opaque guard material, empty terrace and incomplete forecourt explicitly retained."
+  },
+  "terraceRefinement20261108": {
+    "status": "verified-bounded",
+    "scope": "Upper south terrace guards use pale transparent glass; two original static eight-blade fans and dark soffit. Existing clubhouse, ground glazing, all original geometry and collision retained.",
+    "evidence": "docs/project-records/atomic-golf-refinement/",
+    "dimensions": "Inherited floor4.74m/roof9.24m; added soffit9.0m, two fan centers1633/-3663 and1634/-3675; blades8.16m, radius1.63m. All inferred, not surveyed.",
+    "remaining": "Six existing discrepancy entries retained with guard improvement noted; no furniture, complete fixtures, vertical access or whole-block completion claim.",
+    "installedSHA256": "362bfe16b7ae4b67c0cabf213a907c718295dd6cdb69a21487551d1dd7e8fc51",
+    "checks": "13 local checks passed, including236clubhouse+220south support/headroom samples;6before+6after actual perimeter legs;9dev smoke stops;3fixed daylight views inspected;91/92cells unchanged.",
+    "performance": "See performance.json; initial terrace tail increase and contemporaneous control/repeat retained. No whole-city or zero-regression claim."
   }
 }

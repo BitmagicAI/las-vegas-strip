@@ -1,0 +1,86 @@
+{
+  "level": {
+    "rel": ".bitmagic/atomic-candidate/atomicGolf-exterior.glb",
+    "sourceSha256": "0fd58162c75d65ef76199625eb2ef45ea538bb217adae3a4f1d83bd2cd81d6e9",
+    "cls": "level",
+    "loader": "Venetian candidate",
+    "when": "candidate",
+    "label": "primary",
+    "preset": "level",
+    "overrides": [],
+    "exitCode": 0,
+    "signal": null,
+    "seconds": 0.876,
+    "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/atomic-candidate/atomicGolf-exterior.glb .bitmagic/optimize/.bitmagic/atomic-candidate/atomicGolf-exterior/out.glb --preset=level --json",
+    "failed": [],
+    "stderr": [],
+    "report": {
+      "src": ".bitmagic/atomic-candidate/atomicGolf-exterior.glb",
+      "dst": ".bitmagic/optimize/.bitmagic/atomic-candidate/atomicGolf-exterior/out.glb",
+      "preset": "level",
+      "before": {
+        "bytes": 3308860,
+        "triangles": 61822,
+        "vertices": 115711,
+        "nodes": 37,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 3274604,
+        "gpuTextures": 0,
+        "textures": [],
+        "extensions": []
+      },
+      "after": {
+        "bytes": 1010688,
+        "triangles": 61822,
+        "vertices": 115705,
+        "nodes": 37,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 2169811,
+        "gpuTextures": 0,
+        "textures": [],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "KHR_mesh_quantization"
+        ]
+      },
+      "notes": [
+        "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+      ],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "37 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "0 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "2.19 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 0 warnings"
+        }
+      ]
+    }
+  },
+  "webp": "Standard webp-textures pass executed; zero source textures so skipped as identical to level output."
+}
