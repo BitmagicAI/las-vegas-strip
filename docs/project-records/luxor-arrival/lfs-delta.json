@@ -1,0 +1,20 @@
+{
+  "objects": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_2.bin",
+      "bytes": 777241,
+      "sha256": "3dd24786ec47792bc480613df1b274a2d1f0038f1a398556c51ea14345be55a0"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "65705938435d63930539a93500303ba941589a4a02d7017e300028e2f73ed5a0"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/luxorExterior-exterior.glb",
+      "bytes": 1215960,
+      "sha256": "215e79d1c41fc8ffb881bdd882e9e0109c7841db0bcd8d4b07e7afbf7b44bc93"
+    }
+  ],
+  "totalBytes": 2007002
+}

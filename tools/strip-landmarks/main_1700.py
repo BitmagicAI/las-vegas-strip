@@ -18,6 +18,16 @@ def exterior(B):
    if nx<-.65 or nz>.7:
     G.box('mp-turquoise-paint',(L/2,.43,-.045),(L,.55,.12))
     for u in np.arange(1,L,7):G.box('mp-drain-paint',(float(u),h/2,-.11),(.09,h-.6,.13))
+   if nx>.7 and h<6 and L>5:
+    # Additional high address plate visible on the low wing in both Jan2026 views.
+    G.box('mp-address-blue-paint',(L*.35,h-.13,-.16),(1.05,.38,.045))
+    G.text('1700',(L*.35,h-.26,-.19),.29,'mp-white-letter')
+   if nx>.7 and h>6 and L>5:
+    # Removed lettering leaves irregular pale fastener/paint scars on the fascia.
+    # Original scattered chips, not copied photograph pixels or restored branding.
+    for i in range(27):
+     u=L*.18+(L*.64)*(i/26);y=h-.34+math.sin(i*2.7)*.11
+     G.box('mp-scar-paint',(u,y,-.151),(.035+.035*(i%3),.035+.02*(i%4),.012))
    if nx>.7 and h>6 and L>5:
     u=L*.62
     G.box('mp-door-paint',(u,1.66,-.07),(1.2,2.25,.14));G.box('mp-handle-paint',(u+.4,1.6,-.16),(.07,.14,.06))

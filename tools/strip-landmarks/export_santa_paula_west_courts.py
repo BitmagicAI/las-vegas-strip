@@ -5,8 +5,11 @@ sys.path.insert(0,str(Path('tools/strip-landmarks').resolve()))
 import export as E
 import bpy
 from mathutils import Matrix,Vector
+E.colors['swc-gravel-paint']='9c8970'
 name='santaPaulaWestCourts-exterior';bpy.ops.wm.read_factory_settings(use_empty=True);E.materials.clear();E.add(name)
 for mat in bpy.data.materials:
+ if mat.name in {'Strip / rpw-gray-roof-paint','Strip / bt-roof-paint','Strip / terracotta','Strip / swc-gravel-paint'}:
+  bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.96;bs.inputs['Metallic'].default_value=0;bs.inputs['Specular IOR Level'].default_value=.08
  if mat.name=='Strip / cf-grass':
   bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=1;bs.inputs['Specular IOR Level'].default_value=0
 for lod in range(3):

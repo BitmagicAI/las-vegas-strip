@@ -132,6 +132,8 @@ for i,f in enumerate(exc):
  if f['id'] in ['relation/8086330','way/114859870','way/114857390']:continue
  p=shape(f);c=p.centroid;r=min(9,max(1.2,math.sqrt(p.area/math.pi)));h=f['height'];B.source='castle-turrets'
  if p.area>1500:continue
+ # Mapped public arcade piers are not conical castle turrets.
+ if f['id'] in {'way/399352452','way/399352453','way/399352454','way/399352455','way/399352456','way/399352457','way/399352458','way/399352459','way/399352467','way/399352470'}:continue
  if h<8:h=10
  roofh=min(19,max(5,h*.38));body=h-roofh
  B.lathe('white',(c.x,c.y),[(.2,r),(body-2,r),(body-1,r*1.12),(body,r*1.12)],28)

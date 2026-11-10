@@ -32,10 +32,10 @@
     }
   ],
   "remaining": [
-    "Exact varied streetwall widths and northeastern Art Deco corner remain approximate.",
-    "Landscaping, signage and fine replica architecture require refinement.",
-    "South arrival canopy, rear pool, north restaurant roof heights and exact tenant divisions remain approximate.",
-    "Static checks cover336obstacle samples and3roof support points;274ground samples absent from loaded subset, not a complete walkability claim."
+    "Exact varied streetwall widths and northeastern Art Deco corner remain approximate; separate facade fitting needs independent elevation references beyond this arrival-island pass.",
+    "Arrival island landscaping implemented from January2025 imagery; exact horticultural species/counts, sign typography and replica ornament remain approximate because references are not measured construction or planting drawings.",
+    "South canopy/pavilion retained from the earlier pass; rear pool, north restaurant roof heights and tenant divisions remain approximate and require their own scoped reference and circulation audit.",
+    "Arrival island bypass and canopy routes now have 12 normal walking segments and1398 static clearance samples; full public resort traversal remains unverified outside these routes."
   ],
   "geometry": {
     "triangles": 30855,
@@ -51,7 +51,7 @@
   "performance": {
     "baseline": "docs/project-records/city-exteriors-2026-10-12/nyny-before-performance.json",
     "after": "docs/project-records/city-exteriors-2026-10-12/nyny-after-performance.json",
-    "note": "Initial after p95 elevated24ms while Earth renderer active; isolated repeat17.4\u201318.4ms. p50 stable16.7ms."
+    "note": "Initial after p95 elevated24ms while Earth renderer active; isolated repeat17.4–18.4ms. p50 stable16.7ms."
   },
   "restaurantPass20261014": {
     "status": "implemented-visually-reviewed",
@@ -94,5 +94,22 @@
   "currentFingerprints": {
     "build/highrises/exteriors.glb": "7ab1c58beeff2de235f1f1f15c44942f4505f3b9c554b8aaf84e352b1943b3be",
     "build/strip-landmarks/newYorkFrontage-exterior.glb": "769a3db86f99a6499bc6ea8f646064aa411407233fafafb5c6455b8d72cfe9e3"
+  },
+  "arrivalLandscapePass": {
+    "status": "installed-locally-verified",
+    "issue": 31,
+    "pullRequest": 454,
+    "research": "docs/project-records/nyny-arrival-landscape/research.json",
+    "before": "build/city-exteriors/nyny-landscape-before",
+    "source": "tools/strip-landmarks/nyny_landscape.py",
+    "estimates": "Island34x6.2m, mound0.9m, two broadleaf trees6.1–6.5m; dimensions/species/counts inferred, not survey. Existing coaster supports retained.",
+    "geometry": "docs/project-records/nyny-arrival-landscape/geometry.json",
+    "collision": "docs/project-records/nyny-arrival-landscape/collision.json",
+    "walking": "docs/project-records/nyny-arrival-landscape/normal-walk.json",
+    "after": "build/city-exteriors/nyny-landscape-after",
+    "smoke": "docs/project-records/nyny-arrival-landscape/smoke.json",
+    "assetDelta": "docs/project-records/nyny-arrival-landscape/asset-delta.json",
+    "performance": "docs/project-records/nyny-arrival-landscape/performance-comparison.json",
+    "performanceCaveat": "At 960x540 ultra, final p50 changed by -0.2 to +1.6 ms against baseline. Final p95: front 38.4, aerial 17.6, under-canopy 36.5, east 17.9 ms; under-canopy is +9.0 ms. One repeat measured 44.4/17.7/42.7/18.4 ms respectively. This does not establish stall-free performance: front/under-canopy tails remain variable and slower in the repeat. No new runtime lights or shaders; the two foliage meshes add geometry. Retain these measurements as a performance limitation for later profiling, not a no-regression claim."
   }
 }

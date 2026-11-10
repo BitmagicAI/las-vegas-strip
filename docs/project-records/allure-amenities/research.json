@@ -1,0 +1,50 @@
+{
+  "task": "ext-allure",
+  "issue": 40,
+  "status": "claimed-janiverse-verified",
+  "sources": [
+    {
+      "url": "https://www.nevadarealestategroup.com/high-rise-condos/allure-las-vegas/",
+      "inspection": "Search text only, photographs not yet inspected",
+      "observations": "Residential amenity deck with pool,spa,cabanas; not a hotel."
+    },
+    {
+      "url": "https://rebeccaleerealestate.com/developments/allure-las-vegas",
+      "inspection": "Search text only; photos pending",
+      "observations": "Describes sixth-floor pool/spa,cabanas,outdoor kitchen and game area."
+    },
+    {
+      "url": "https://theprinsloogroup.com/developments/allure",
+      "inspection": "Search text only",
+      "observations": "Calls pooldeck fifth-floor; floor convention conflicting, verify level from aerial/building geometry."
+    },
+    {
+      "url": "https://pvedi-ae.com/project/allure/",
+      "inspection": "Architect gallery personally inspected in browser",
+      "observations": "Pool photograph Small-03: rectangular pool, pale deck, planted square pots, metal loungers and rails, low tiled-roof amenity wings. Arrival Small-08: curved silver canopy on round metal columns, separate small guard booth, masonry boundary wall. Lobby Small-06: curved reception and stone flooring; private residential interior not included in this pass. Gallery date unknown; upload path is not photo date."
+    },
+    {
+      "url": "https://pvedi-ae.com/wp-content/uploads/2026/06/MFHR-04052-Allure-Small-03.webp",
+      "inspection": "Personally inspected architect pool photograph",
+      "observations": "Pool on north side facing rear tower; exact dimensions and deck level inferred, not measured."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1441,-115.1590&zoom=19&basemap=satellite",
+      "inspection": "Personally inspected aerial",
+      "observations": "North rectangular pool and smaller attached spa; curved arrival west/south of tower. Red low buildings west belong to neighboring Ahern and must be preserved."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14387,-115.15947&heading=35&pitch=5",
+      "inspection": "Personally inspected Feb 2026 Street View; pano iKpCmUGez2dHVECj6aBycg",
+      "observations": "Curved silver arrival canopy at west side, guard booth, palm median, raised ALLURE sign on blue base at south front, blue handrails and short stairs to east entrance. Current arrival corroborates architect photograph."
+    }
+  ],
+  "scopeCandidate": "Arrival and amenity deck, preserve tower and guest interiors; no private-unit redesign.",
+  "uncertainties": [
+    "Deck reported as fifth or sixth floor in secondary sources; actual elevation requires fit to existing model.",
+    "Amenity dimensions and planter/furniture counts are inferred from photographs; no surveyed plan.",
+    "Preserve existing tower, neighboring Ahern shells and all private-unit interiors."
+  ],
+  "redistributableFoliage": "Four planter trees reuse tools/foliage/models/tree-2.glb, existing CC0 Poly Haven tree_small_02 source; no source edits, WebP optimization in this PR.",
+  "accessed": "2026-11-01"
+}

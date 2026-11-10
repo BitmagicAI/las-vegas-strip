@@ -1,0 +1,17 @@
+# Rexford / Casino courtyard refinement
+
+Claims163164 confirmed janiverse; branch task/rexford-casino-courtyard-refinement from current origin/next 1a4c2c37. Read both briefs/records. Three neighboring mapped buildings in two assets. No geometry edits. Next six front-first neutral daylight baseline captures, support/ground/stairs and actual walks, fresh dated Maps/official references before selecting reversible improvements. Preserve inferred courtyard layouts/private interiors and roads. GPU serial.
+
+Six-view serial baseline GPU43488 running, log /tmp/rc-baseline.log; outputs build/city-exteriors/rexford-ellen-courtyard-refinement-before then casino-center-1520-refinement-before. Inspect/save all6views and p95, then CPU/support/stairs/actualwalk baselines. No concurrent GPU/Maps. Draft PR511 opened against next.
+
+12:55: all6baselineimages inspected/saved.4116new reproducible support samples,24CPUgroundlegs+18CPUstairs pass. Oldignored736/412samplefiles absent; no reproductionclaim. Actual42leg baseline started -> build/city-exteriors/rexford-casino-walk-before, log /tmp/rc-actual-before.log. Inspect passedflags and10endpoint images beforegeometry. Official702apartments.com propertygallery lead found for1520; not yet visuallyinspected. FreshMaps afterGPU only.
+
+13:25: all42actualbaselinelegs pass;10endpoint images inspected/saved. FreshJan2026Maps and operatorcourtyard photos inspected (research.md). Added cream screen-frame piers to Rexford; scoped Casino gallery coating/rails to blue-gray/dark materials. Full courtyard planting/layout discrepancies retained. Both sourcecollisions byte-identical. Genericexport omitted existing trees and was discarded beforeinstallation; re-export via both existing property-specific exporters preserving all street-treeLODs. Finaloptimizer/install/groupbake GPU71482 running (/tmp/rc-opt-final.log,/tmp/rc-install.log,/tmp/rc-bake.log). Afterbake run /tmp/rc-preserve-lod.mjs, stage/check/reload,6afterviews+42actuallegs+9smoke. CPUafter4240 running. No Maps open, no otherGPU.
+
+Finalbothlevel+WebP optimizations succeeded, customfoliage preserved; installedpair then groupedbake started. CPUafter24ground+18stairs pass andsaved. GPU71482 nowbaking.
+
+13:55: groupedbake/stage complete;90/92cells identical,only2_-5/2_-6 changed. Bothsourcecollisions unchanged;27Rexford+15Casino streettree node metadata/transforms identical tobase. Opt2/2,bakefreshness,pack1930,review/public0fail11warnings pass. Three Rexfordafterviews inspected/saved: screenpiers visible, courtyard unchanged; p95 19.1/18.9/19.2→18.7/18.3/18.2ms. Casinoafterviews still running GPU66656 (log /tmp/rc-after-views.log). Next inspect/saveCasino3views then42actualafterlegs+9smoke. No otherGPU.
+
+All6afterviews inspected/saved; maximum p95 increase3.30% (Casino roof18.2→18.8ms); otherfiveviews belowbaseline. Casino darkrails/bluegraygallery confirmed, trees retained. Actual42legafter then9stopsmoke runningserial GPU73321, logs /tmp/rc-actual-after.log,/tmp/rc-smoke.log. Next assert42passed and inspect10PNGs,assert9placed/zeroerrors, saveproofs; finalboard/LFS/checks/PR511mergeclose163164/picker.
+
+14:25: final42actualafterlegs passed;10endpoint images inspected/saved. Smoke9/9placed,zero request/page/console errors. Allstep7 passed. Finalize board/LFS/PR511,merge to next,close163164,picker.

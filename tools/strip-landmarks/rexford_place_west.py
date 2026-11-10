@@ -3,6 +3,8 @@ Street photographs span2015–2020; doors and mechanical dimensions are estimate
 """
 from common import *
 from forum_shops import facade_frame
+from courtyard_525 import palm
+import copy
 KEY='rexfordPlaceWest';IDS=['way/'+str(v) for v in [*range(1236621163,1236621173),1236621180]]
 def window(F,u,y=1.65,w=1.8):
  F.box('rpw-frame-paint',(u,y,-.06),(w+.14,1.3,.12));F.box('rpw-glass',(u,y,-.14),(w,1.16,.04));F.box('rpw-frame-paint',(u,y,-.18),(.04,1.16,.03));F.box('rpw-sill-paint',(u,y-.7,-.14),(w+.25,.09,.27))
@@ -54,11 +56,18 @@ def exterior(B):
   routes.append([F.p(du,.18,-5.5),F.p(du,.18,-2.0),F.p(du,.18,-.55)])
   if idx in [0,3,6,9]:
    x,y,z=F.p(L*.18,0,-3.4);trees.append([x,z,5.5+idx*.15,idx*.7])
+  # Reference-supported palm groups; estimated heights, kept clear of approaches.
+  for fraction,height in {0:[(.12,3.2),(.88,3.8)],4:[(.84,8.5)],9:[(.84,7.0)]}.get(idx,[]):
+   preserved_solids=copy.deepcopy(B.solids)
+   palm(B,F,L*fraction,-4.3,height)
+   B.solids=preserved_solids
   x,z=p.representative_point().coords[0];yy=3.0+roof.boundary.distance(Point(x,z))*slope
   W.box('rpw-service-paint',(x,yy+.36,z),(1.1,.72,1.1));W.box('rpw-vent-paint',(x,yy+.73,z),(.97,.03,.97))
   B.lathe('rpw-flue-paint',(x+2,z),[(yy-.2,.12),(yy+.65,.12),(yy+.7,.19)],10)
   for x in np.arange(p.bounds[0]+.5,p.bounds[2],1.2):
    for z in np.arange(p.bounds[1]+.5,p.bounds[3],1.2):
     if p.buffer(-.3).contains(Point(x,z)):samples.append([float(x),3.0+roof.boundary.distance(Point(x,z))*slope+.4,float(z)])
+ # Visual foliage must not alter the existing circulation colliders.
+ B.groups={k:g for k,g in B.groups.items() if g['material']!='c525-collision'}
  Path('build/city-exteriors/rexford-place-west-samples.json').write_text(json.dumps(samples));Path('build/city-exteriors/rexford-place-west-stairs.json').write_text(json.dumps(routes));Path('build/city-exteriors/rexford-place-west-trees.json').write_text(json.dumps(trees))
  return dict(key=KEY,name='Rexford Place west homes',center=[2020,0,-4034],bounds=list(unary_union(ps).buffer(7).bounds),structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

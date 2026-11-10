@@ -3,8 +3,8 @@
 (`git ls-files --cached --others --exclude-standard`), checked for things that must not go public.
 
 Fails on: files over 50 MB (GitHub refuses 100 MB and warns at 50), secret-shaped strings, private keys, word-for-word
-quotes of the owner's messages, fonts outside the allow-list, third-party reference media (photos, PDFs, screenshots) outside the folders that are ours, and missing
-licence/contribution files. Warns on: home-folder paths and e-mail addresses in text files.
+quotes of the owner's messages, fonts outside the allow-list, third-party reference media (photos, PDFs, screenshots) outside the folders that are ours, anything
+under public/ but the foliage (Vite copies public/ into every build, so a publish ships it), and missing licence/contribution files. Warns on: home-folder paths and e-mail addresses in text files.
 
 python3 tools/release/check-public.py               # report; exit 1 on any failure
 python3 tools/release/check-public.py --fix-paths   # also rewrite home-folder paths in docs/ and tools/ records
@@ -27,7 +27,10 @@ FONT_OK = re.compile(r'^(engine/|node_modules/)')
 MEDIA = re.compile(r'\.(png|jpe?g|webp|gif|heic|pdf|mp4|mov)$', re.I)
 # runtime-assets/ is the game's own runtime set (the asset pack's files: PBR strips from CC0 scans, the Sphere's videos).
 # tools/foliage/models/ holds the garden foliage's sources and their proof render (CC0 Poly Haven models, our render).
-MEDIA_OK = re.compile(r'^(engine/|public/|src/work/|tools/film/brand/|tools/foliage/models/|runtime-assets/|\.agents/skills/|\.claude/skills/)')
+MEDIA_OK = re.compile(r'^(engine/|public/foliage/|src/work/|tools/film/brand/|tools/foliage/models/|runtime-assets/|\.agents/skills/|\.claude/skills/)')
+# public/ is copied into every build and publish: only files the game loads from it belong there (the foliage).
+# Review captures stay local (.bitmagic/review/<task>/); 669 MiB of them came out of public/ on 2026-11-09.
+PUBLIC_OK = re.compile(r'^public/foliage/')
 SECRETS = [
     ('private key', re.compile(r'-----BEGIN [A-Z ]*PRIVATE KEY-----')),
     ('AWS key', re.compile(r'\bAKIA[0-9A-Z]{16}\b')),
@@ -76,7 +79,9 @@ def main():
             fails.append(f'{rel}: {size / 1048576:.1f} MB (over 50 MB: track it with Git LFS, e.g. in runtime-assets/)')
         if re.search(r'\.(ttf|otf|woff2?)$', rel, re.I) and not FONT_OK.match(rel):
             fails.append(f'{rel}: font outside the allow-list (check its licence, then ignore it or list it in NOTICE.md)')
-        if MEDIA.search(rel) and not MEDIA_OK.match(rel):
+        if rel.startswith('public/') and not PUBLIC_OK.match(rel):
+            fails.append(f'{rel}: under public/, which every build and publish ships (review captures stay local in .bitmagic/review/)')
+        elif MEDIA.search(rel) and not MEDIA_OK.match(rel):
             fails.append(f'{rel}: image/PDF/video outside our own asset folders (third-party reference media stay local)')
         if p.suffix.lower() not in TEXT or size > 20 * 1048576:
             continue

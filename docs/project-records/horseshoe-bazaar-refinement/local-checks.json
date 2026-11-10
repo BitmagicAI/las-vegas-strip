@@ -1,0 +1,112 @@
+[
+  {
+    "command": [
+      "bitmagic",
+      "check",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-0.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-1.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/check-public.py"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-2.txt"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lazy-lod.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-3.txt"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lighting-resize.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-4.txt"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/site-lights.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-5.txt"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-horseshoe.mjs"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-6.txt"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-cvs-horseshoe.mjs"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-7.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-8.txt"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-9.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-10.txt"
+  },
+  {
+    "command": [
+      "bitmagic",
+      "reload",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/horseshoe-bazaar-refinement/final-check-11.txt"
+  }
+]

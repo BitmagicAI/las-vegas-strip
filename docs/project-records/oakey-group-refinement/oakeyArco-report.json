@@ -1,0 +1,122 @@
+{
+ "rel": ".bitmagic/oakey-candidate/oakeyArco-exterior.glb",
+ "sourceSha256": "fe38da1186172f346bb2893d00977ec058f4128d96ba723a0d206656df2ea660",
+ "cls": "level",
+ "loader": "Oakey candidate",
+ "when": "candidate",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.446,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/oakey-candidate/oakeyArco-exterior.glb .bitmagic/optimize/.bitmagic/oakey-candidate/oakeyArco-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": ".bitmagic/oakey-candidate/oakeyArco-exterior.glb",
+  "dst": ".bitmagic/optimize/.bitmagic/oakey-candidate/oakeyArco-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 2172128,
+   "triangles": 35887,
+   "vertices": 30243,
+   "nodes": 24,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1062706,
+   "gpuTextures": 11184810,
+   "textures": [
+    {
+     "name": "Original painted masonry normal",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 24271,
+     "gpu": 5592405
+    },
+    {
+     "name": "Original white painted masonry",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1060123,
+     "gpu": 5592405
+    }
+   ],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 1527600,
+   "triangles": 35887,
+   "vertices": 30243,
+   "nodes": 24,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 757471,
+   "gpuTextures": 11184810,
+   "textures": [
+    {
+     "name": "Original painted masonry normal",
+     "slot": "normal",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 24271,
+     "gpu": 5592405
+    },
+    {
+     "name": "Original white painted masonry",
+     "slot": "base",
+     "w": 1024,
+     "h": 1024,
+     "mime": "png",
+     "bytes": 1060123,
+     "gpu": 5592405
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "24 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "2 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "629.4 KiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 1 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/7/primitives/0/material"
+   }
+  ]
+ }
+}

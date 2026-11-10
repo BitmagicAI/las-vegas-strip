@@ -1,0 +1,1 @@
+Initial browser-only preview failed before capture: runner expected out-webp-textures.glb, but standard optimizer intentionally skips WebP variant for a model with zero textures. Corrected runner to validated out.glb. No live assets installed; level optimizer/validator passed.

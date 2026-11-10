@@ -1,0 +1,19 @@
+{
+  "typecheck": "PASS",
+  "tests": "PASS: ground-surface-index, site-lights, city-lazy-lod (3/3)",
+  "geometry": "PASS: 7408 authored triangles, no invalid or degenerate faces",
+  "preservation": "PASS: 24 unrelated nodes and3367collisiontriangles preserved, exact36oldcanopytriangles replaced",
+  "collision": "PASS:807packedcollision samples, no missing floors",
+  "normalWalk": "PASS:6segments,all6endpointimages inspected; final removes only2unused hotel-side supports outside routes, packedcollision rerunPASS",
+  "preview": "PASS:4baseline+4preview+2finaldetailviews personally inspected",
+  "optimization": "PASS:level+WebP installed",
+  "releaseDeferred": "CDN upload and published cold-load validation belong to owner release step",
+  "finalVisual": "PASS: all four matching packaged daylight views personally inspected",
+  "review": "PASS",
+  "publicFiles": "PASS: no failures, one existing inventory email warning",
+  "runtimeGlbs": "PASS:1changedmodel optimized",
+  "bake": "PASS:single bake,current",
+  "assetPack": "PASS:1926 files,no missing/unoptimized",
+  "smoke": "PASS:9stops,zero failed requests/page/console errors",
+  "performance": "Measured: similar medians, canopy/south p95 tails slower; see comparison, no no-regression claim"
+}

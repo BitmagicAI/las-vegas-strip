@@ -1,0 +1,41 @@
+{
+  "cabanas": 3,
+  "loungers": 32,
+  "parasols": 0,
+  "basinAreasM2": [
+    121.9,
+    121.90000000000114,
+    8.0295641357975,
+    8.0295641357975,
+    27.460683504745973
+  ],
+  "foliagePlacements": [
+    {
+      "p": [
+        -169,
+        27.8,
+        1100
+      ],
+      "height": 6
+    },
+    {
+      "p": [
+        -157,
+        27.8,
+        1112
+      ],
+      "height": 6
+    },
+    {
+      "p": [
+        -121,
+        27.8,
+        1130
+      ],
+      "height": 6
+    }
+  ],
+  "limitations": [
+    "Approximate basin fit, furniture and elevations; not installed or visually accepted."
+  ]
+}

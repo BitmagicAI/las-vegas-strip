@@ -1,0 +1,81 @@
+{
+  "objects": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_-4.bin",
+      "oid": "f2855e89bd022ff95fa19c6fba26a5825855372e751430d165530001a55d41bc",
+      "bytes": 402546
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "oid": "955abf986ea5bf1aca695de562a32023cf83910160e3f1f9b7544abe5c0eb829",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/geographic-strip/cells/cell-0_-4.glb",
+      "oid": "f1ae04260834c2ca3c755bcc02d229f212bbefd6a81afc4edc8536bb70999bb8",
+      "bytes": 2319944
+    },
+    {
+      "path": "runtime-assets/geographic-strip/cells/manifest.json",
+      "oid": "4a45d95e5ab22cd3d3000cd2b8623287ec8c917fa14720d9da2a17077e7dbd45",
+      "bytes": 39796
+    },
+    {
+      "path": "runtime-assets/geographic-strip/collision-cells/cell-0_-4.bin",
+      "oid": "802599e599259cc1bf013277740f12748e396a40877fd7193dad7d992aea7571",
+      "bytes": 295748
+    },
+    {
+      "path": "runtime-assets/geographic-strip/collision-cells/manifest.json",
+      "oid": "7af5fbe1cec17bfeb8df6ded65619202e653344b6a399521107f75eb60397a5d",
+      "bytes": 17609
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/creel-highland-exterior-collision.bin",
+      "oid": "bfcc292c2f1b881930ac3aadfd6307ffc4c473658a9b112864e38b32e23cec53",
+      "bytes": 304
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/creel-highland-exterior.glb",
+      "oid": "a4598346df1b0083160f48f75d2d0524a94620d50a2537a62912af92907825a9",
+      "bytes": 61692
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/highland-steel-exterior-collision.bin",
+      "oid": "9162f72864527d902e0a0fba734afe006753847a2167fa9aca11ec2063314326",
+      "bytes": 364
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/highland-steel-exterior.glb",
+      "oid": "27433e93156226ee5f66e8ae34f2715c4c8d8225f9e59c07302aea5b881e5ac3",
+      "bytes": 223368
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/highland-steel-interior-collision.bin",
+      "oid": "60d45740735e770afbe0ae12fa9de487663b9684b5b8b76dc630c126709ed5d5",
+      "bytes": 236
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/highland-steel-interior.glb",
+      "oid": "22b1de90556a6c8c771fec21ca07d9a39d7b749d9adf25530dbc92ce98a312ab",
+      "bytes": 681080
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/venues.bin",
+      "oid": "627fc69bb7e2bd2500f3ad3a44dca6558b95f608ecb7c805a8dccc821a70b8f6",
+      "bytes": 393156
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/westwood-2650-exterior-collision.bin",
+      "oid": "c34aaae0a07c982a6ea05101c5979f1d3e79f512c4416b8250332b1007f733e1",
+      "bytes": 368
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/westwood-2650-exterior.glb",
+      "oid": "3e67717e5a64dcff8ada6342c088332f54c2bfacc611dfc7d1910e8e923139b2",
+      "bytes": 178624
+    }
+  ],
+  "totalBytes": 4628636,
+  "count": 15
+}

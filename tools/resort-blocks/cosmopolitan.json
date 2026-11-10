@@ -3,7 +3,7 @@
   "id": "cosmopolitan",
   "name": "The Cosmopolitan",
   "stage": "geometry-review",
-  "updated": "2026-10-06",
+  "updated": "2026-11-07",
   "target": "Latest corroborated permanent architecture; record imagery dates and distinguish uncertain or temporary features.",
   "statusNote": "Replacement geometry is installed locally: individually fitted towers, podium Levels 1/2/3/4/14, two continuous stair stacks, furnished decks and street entrances. This is a playable reconstruction pass, not full architectural sign-off.",
   "surveyBoundsXZ": [
@@ -1198,5 +1198,31 @@
       "asset": "build/resort-blocks/cosmo/cosmo-exterior.glb",
       "sha256": "aeb08470b801ef06d9d58c208532b0515d5b0640f6099ee75a0a40006d9aa9ea"
     }
-  ]
+  ],
+  "poolPaletteRefinement20261107": {
+    "status": "verified-bounded-pass",
+    "scope": "Boulevard 40 and Chelsea 108 existing lounge chairs: reference-supported purple upholstery/white frames only. All triangles, collision, inferred dimensions and arrangement retained.",
+    "record": "docs/project-records/cosmopolitan-terraces-refinement",
+    "remaining": [
+      "Exact pool/furniture dimensions and layouts remain unsurveyed.",
+      "Daybeds, cabana partitions/curtains, parasols and full deck arrangement remain incomplete.",
+      "Existing Boulevard palm/lounger overlap at x-40,z675 retained; bounded walk ends atz679.",
+      "All pre-existing parent issues and completion gates remain unresolved where previously open."
+    ],
+    "decisionsForOwner": "Retain existing original chair geometry and change only its visual palette; no invented public connections or private terrace work.",
+    "performance": "Initial front p95 spike retained. Three-run original-asset control median p50/p95 18.8/21.4ms vs after18.0/20.9ms; no measured regression against control. Other two matching views improve p95. No city-wide60fps claim.",
+    "validation": {
+      "localChecks": 11,
+      "smokeStops": 9,
+      "smokeErrors": 0,
+      "beforeAfterMovementLegs": [
+        8,
+        8
+      ],
+      "matchingDaylightViews": 3,
+      "unchangedCells": 91,
+      "totalCells": 92,
+      "allAuthoredTrianglesAndCollisionRetained": true
+    }
+  }
 }

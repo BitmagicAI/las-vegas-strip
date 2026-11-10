@@ -1,0 +1,7 @@
+# Installed visual review — 2026-11-07
+
+Three matching neutral-daylight before/after pairs inspected, exterior front first. Ole Red west roof now reads as red square mesh; furniture visible beneath the existing shade and around the retained clear centre route. Six dining tables/twelve tan chairs and three high tables/six red stools remain sparse inferred arrangements, not an exact seating count or surveyed plan. North Bazaar front unchanged. Four after movement endpoint/return images inspected; all four legs PASS, matching the corrected baseline.
+
+Existing broad solid shade strip, empty brown floor finish, brick core, other guard edges and missing small stage differ from official daylight tour. Glass remains behind added mesh. Main hall and real public vertical access remain approximations/unverified. Original long west sidewalk route still meets bridge piers; shortened northern segment proves only that clear segment. Low sign remains obscured by bridge. These discrepancies remain in the parent record; no whole-block or photorealistic completion.
+
+No new runtime code, lights or shaders. All original visual/collision triangles retained; all other source groups identical. 91/92 runtime cells byte-identical, only cell-0_0 changed. Shared venues metadata contents identical after decoding; only record order changed from the existing builder's remove-and-append behavior. Gold Coast/Wyndham LOD regeneration drift restored before staging.

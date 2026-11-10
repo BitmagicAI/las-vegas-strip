@@ -1,0 +1,105 @@
+{
+  "viewport": [
+    960,
+    540
+  ],
+  "singleLocalRun": true,
+  "views": [
+    {
+      "building": "harrahs",
+      "view": "front",
+      "eye": [
+        25,
+        3,
+        -405
+      ],
+      "target": [
+        65,
+        11,
+        -390
+      ],
+      "beforeP95": 17.800000190734863,
+      "afterP95": 18.200000047683716
+    },
+    {
+      "building": "harrahs",
+      "view": "pool",
+      "eye": [
+        177,
+        120,
+        -306
+      ],
+      "target": [
+        167,
+        8.6,
+        -345
+      ],
+      "beforeP95": 19.100000143051147,
+      "afterP95": 18.90000009536743
+    },
+    {
+      "building": "harrahs",
+      "view": "deck",
+      "eye": [
+        164,
+        10.3,
+        -332
+      ],
+      "target": [
+        183,
+        8.6,
+        -346
+      ],
+      "beforeP95": 20.09999990463257,
+      "afterP95": 19
+    },
+    {
+      "building": "linq",
+      "view": "front",
+      "eye": [
+        12,
+        3,
+        -250
+      ],
+      "target": [
+        40,
+        17,
+        -251
+      ],
+      "beforeP95": 17.700000047683716,
+      "afterP95": 17.90000009536743
+    },
+    {
+      "building": "linq",
+      "view": "pool",
+      "eye": [
+        245,
+        85,
+        -190
+      ],
+      "target": [
+        246,
+        17,
+        -227
+      ],
+      "beforeP95": 18.5,
+      "afterP95": 18.700000047683716
+    },
+    {
+      "building": "linq",
+      "view": "deck",
+      "eye": [
+        215,
+        18.7,
+        -213
+      ],
+      "target": [
+        234,
+        17.5,
+        -227
+      ],
+      "beforeP95": 20.09999990463257,
+      "afterP95": 19
+    }
+  ]
+}

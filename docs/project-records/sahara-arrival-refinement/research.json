@@ -1,0 +1,67 @@
+{
+  "status": "optimized-installed-review-pending",
+  "issue": 36,
+  "base": "02420d2fa990a1f3981de73ece2d3a7178265af2",
+  "scope": "Refine existing arrival central ceiling/feature after matched daylight review. Preserve four mapped structures, guest modules, roads and existing circulation. No geometry changed yet.",
+  "references": [
+    {
+      "url": "https://mozdesigns.com/moz-projects/sahara-las-vegas/",
+      "provider": "column supplier",
+      "observed": "Text reviewed: ten tapered columns24ft tall, four round water-feature columns24in diameter34ft tall, four square display columns9ft7in by24ft. Exact display footprint interpretation remains uncertain."
+    },
+    {
+      "url": "https://mozdesigns.com/wp-content/uploads/2022/11/J3501_N86_cropped_1600x900.jpg",
+      "visuallyInspected": true,
+      "observed": "Four pale cylindrical supports under deep circular annular crown with dark reflective central inset above hanging cyan tubes. Wood diamond beams and black framed wall diamonds. Central inset does not show sky; do not assume open roof oculus."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1420,-115.1577,20z/data=!3m1!1e3",
+      "visuallyInspected": true,
+      "imageDate": null,
+      "observed": "Continuous pale elliptical roof membrane; no visible central opening. Aerial supports keeping closed roof, refining underside only. No imagery extracted."
+    },
+    {
+      "url": "https://anningjohnson.com/project/sahara-porte-corche/",
+      "observed": "Contractor text dates completion August2022 and identifies faux wood EIFS beams. Photos not inspected this pass."
+    }
+  ],
+  "remaining": [
+    "Corrected optimized installation captures and actual walk running; performance outlier not cleared. No shared bake yet.",
+    "All prior SAHARA unresolved gaps retained.",
+    "Roof oculus wording conflicts with current aerial; interpret as underside circular inset pending review, not an open hole."
+  ],
+  "baseline": {
+    "views": [
+      "front",
+      "arrival",
+      "canopy",
+      "feature"
+    ],
+    "allInspected": true,
+    "p95Ms": [
+      18.2,
+      18.5,
+      19.1,
+      19.7
+    ],
+    "finding": "Thin central ring has no depth; diamond beams visible through its center unlike supplier photograph. Existing arrival and fa\u00e7ade differences remain."
+  },
+  "change": "Original closed0.30m deep circular crown and dark metallic central inset; hanging rods extended0.27m to inset. Retained original radii5.8m/4m, lower10.35m/upper10.65m; heights inferred. Closed exterior roof retained. No dynamic mirror pass or lights. Installed review correction clips only central beam segments against5.8m crown boundary; no beam geometry crosses inset.",
+  "sourceAudit": "53 originalgroups\u219255; onlyoldsa-champagnearrivalgroupchanged;labelsandcollisionidentical. Newundersidefacesexplicitlyorienteddown.",
+  "initialInstalledReview": {
+    "views": [
+      "front",
+      "arrival",
+      "canopy",
+      "feature"
+    ],
+    "allInspected": true,
+    "p95Ms": [
+      18.1,
+      18.9,
+      29,
+      19
+    ],
+    "finding": "Crown depth and dark inset visible; old ceiling beams cut through inset. Reject overlap and clip beams precisely to crown outer boundary. Canopy timing outlier29ms vs19.1 baseline requires corrected comparison before acceptance."
+  }
+}

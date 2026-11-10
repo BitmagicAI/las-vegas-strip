@@ -1,0 +1,30 @@
+{
+  "baseline": "bf0ee10",
+  "cellFiles": 278,
+  "unchangedCellFiles": 276,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell--1_-1.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_-1.bin",
+      "bytes": 698029
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/caesarsExterior-exterior-collision.bin",
+      "bytes": 38336
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/caesarsExterior-exterior.glb",
+      "bytes": 6735952
+    }
+  ],
+  "newLfsBytes": 7486118,
+  "bakeInvocations": 1,
+  "geographicExports": 0
+}

@@ -32,9 +32,9 @@
   ],
   "remaining": [
     "Roof and window proportions approximate; rooftop equipment simplified",
-    "All south-side gallery/stair layouts inferred where street references obscure access",
-    "Yards lack referenced trees and shrubs; fence representations approximate",
-    "No interior implementation, neutral daylight review or route performance benchmark"
+    "South-side gallery/stair layouts inferred; olive ground frontage door and gray entry/gallery arrangement differ from generic modeled layout",
+    "Yards lack referenced trees/shrubs; side gates, fence dimensions and exact boundaries remain approximate; purple address modeled1725 versus satellite1727 unresolved",
+    "No interior implementation or driving benchmark; neutral daylight refinement evidence is recorded separately"
   ],
   "triangles": 30149,
   "batches": 33,
@@ -141,8 +141,22 @@
   },
   "finalBuild": {
     "files": {
+      "build/strip-landmarks/santaPaulaNorth-exterior.glb": "488d80b3feb0f7fe46839a9aa09c4b5b01cfa242616efc76655eb83f7f93a53f",
+      "build/strip-landmarks/santaPaulaNorth-exterior-collision.json": "2502635cd662df3b093deaacec52f28e1e3b37698ba1cd19b5b8236aefc85a6d"
+    }
+  },
+  "historicalBuildBeforeRefinement20261105": {
+    "files": {
       "build/strip-landmarks/santaPaulaNorth-exterior.glb": "57cca565f38e4476281a81bfd0fff3e1a8700f85ec79516875b8c114f428553c",
       "build/strip-landmarks/santaPaulaNorth-exterior-collision.json": "2502635cd662df3b093deaacec52f28e1e3b37698ba1cd19b5b8236aefc85a6d"
     }
+  },
+  "refinement20261105": {
+    "record": "docs/project-records/santa-paula-eight-refinement/review.md",
+    "research": "docs/project-records/santa-paula-eight-refinement/research.md",
+    "status": "Scoped installed frontage refinement verified; all remaining gaps retained",
+    "changes": "Differentiated frontage fences across six buildings: two rails/posts, pale middle finials, open cream/charcoal parking fronts, lower purple fence",
+    "historicalMetrics": "Top-level counts/tests/performance describe the previous pass; refinement evidence gives current validation.",
+    "validation": "1454 grouped support samples,40 CPU stair legs,40 installed keyboard legs before/after,7 matched daylight views,9 dev smoke stops and all step7 local checks pass. North-front initial p95 spike20.8\u219231.1ms retained; longer-warm ten-window exact-assets A/B median18.0\u219217.9ms, not a startup/driving guarantee."
   }
 }

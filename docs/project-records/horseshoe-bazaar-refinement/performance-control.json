@@ -1,0 +1,22 @@
+{
+  "reason": "Initial unchanged north-front p95 increased29\u219238.2ms; three after repeats31.9\u201333.5ms remain above old single sample. Run contemporaneous original-asset control to separate scene cost from session variance.",
+  "base": "1b73c28c",
+  "replacements": [
+    {
+      "path": "runtime-assets/strip-landmarks/horseshoeExterior-exterior.glb",
+      "oid": "32b7ca8dacc2f440ee0e13428364eecf50f98e4adc36a79481d45eaed54909cd"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/horseshoeExterior-exterior-collision.bin",
+      "oid": "86602154f884832b0634499f8b003b1a73ea38fb62f6353b2958764943199734"
+    },
+    {
+      "path": "runtime-assets/baked/cells/cell-0_0.bin",
+      "oid": "c1972568c802adc3d4d765a8da58051edc4645b0248e4d17a8473b53a7cf9af0"
+    }
+  ],
+  "method": "Fresh probe-eval browser context with page.route fulfilling original committed LFS bytes for the three matching filename URLs. Live filesystem/runtime stays installed after. Same three-camera-repeat script and warmup/sample count. Replacement request counters retained.",
+  "script": "tools/city-exteriors/probe-horseshoe-north-repeat.js",
+  "wholeBlockPerformanceClaim": false,
+  "rejectedAttempt": "Initial overly broad filename route also intercepted city collision cell-0_0.bin and supplied LOD bytes, causing VCOL parse failure in the isolated browser. Live installed files unchanged. Corrected route scoped to **/baked/cells/cell-0_0.bin*. Failed attempt is not a performance measurement."
+}

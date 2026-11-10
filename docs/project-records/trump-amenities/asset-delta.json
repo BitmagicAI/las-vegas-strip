@@ -1,0 +1,33 @@
+{
+  "newLfsBytes": 1043272,
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_-2.bin",
+      "bytes": 716511
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/trumpExterior-exterior-collision.bin",
+      "bytes": 3392
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/trumpExterior-exterior.glb",
+      "bytes": 309568
+    }
+  ],
+  "cellFiles": 278,
+  "unchangedCellFiles": 276,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell-0_-2.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "changedRuntimeFiles": [
+    "runtime-assets/baked/cells/cell-0_-2.bin",
+    "runtime-assets/baked/cells/manifest.json",
+    "runtime-assets/strip-landmarks/trumpExterior-exterior-collision.bin",
+    "runtime-assets/strip-landmarks/trumpExterior-exterior.glb"
+  ]
+}

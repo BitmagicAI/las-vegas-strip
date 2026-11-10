@@ -6,18 +6,21 @@
       "url": "https://earth.google.com/web/@36.1398,-115.1605,650a,450d,35y,270h,55t,0r",
       "provider": "Google Earth",
       "imagery": "2022-11-09",
-      "establishes": "Two unequal hotel wings, ribbed crowns, pale rose facades, central pavilion."
+      "establishes": "Two unequal hotel wings, ribbed crowns, pale rose facades, central pavilion.",
+      "title": "Google Earth \u2014 Two unequal hotel wings, ribbed crowns, pale rose facades, central pavilion."
     },
     {
       "url": "https://earth.google.com/web/@36.1398,-115.1605,900a,450d,35y,0h,0t,0r",
       "provider": "Google Earth",
       "imagery": "2022-11-09",
-      "establishes": "Rear L-shaped and freeform pool courts; photographed dimensions estimated."
+      "establishes": "Rear L-shaped and freeform pool courts; photographed dimensions estimated.",
+      "title": "Google Earth \u2014 Rear L-shaped and freeform pool courts; photographed dimensions estimated."
     },
     {
       "url": "https://www.skyscrapercenter.com/complex/3317",
       "provider": "CTBUH",
-      "establishes": "90m shorter wing; taller mapped wing 123m retained."
+      "establishes": "90m shorter wing; taller mapped wing 123m retained.",
+      "title": "CTBUH \u2014 90m shorter wing; taller mapped wing 123m retained."
     }
   ],
   "components": [
@@ -39,10 +42,10 @@
     }
   ],
   "remaining": [
-    "Planting, arrival court landscaping, precise signage and portico are unfinished.",
-    "Pool placement is photographic estimate, not survey-certified; collision access traversal still unverified.",
+    "Arrival court landscaping, precise signage and portico are unfinished; this pass concentrates on the existing rear pool court.",
+    "Pool placement remains a photographic estimate, not survey-certified. Ten route segments across this grouped pass were walked; continuous guest-lobby-to-pool access remains unverified.",
     "Existing guest core preserved with 24 floors to fit 90m wing; no tall-wing interior authored.",
-    "Final front aerial and pool court inspected. Court remains visually sparse; planting and precise fitted outlines unfinished."
+    "Pool court now has original shade, seating, urns and palms; garden density, exact furniture counts, pool edges and planting species still differ from references."
   ],
   "geometry": {
     "triangles": 16152,
@@ -63,5 +66,51 @@
   "evidence": [
     "build/city-exteriors/hgv-after",
     "build/city-exteriors/hgv-final"
-  ]
+  ],
+  "claim": {
+    "issue": 38,
+    "assignee": "janiverse",
+    "pullRequest": 451
+  },
+  "courtyardArrivalPass": {
+    "status": "installed-local-verification-passed",
+    "scope": "Blue shade parasols, original lounge seating, terracotta urns and folded-leaf palms around retained pool outlines.",
+    "references": "docs/project-records/hgv-sky/checkpoint.json",
+    "evidence": "docs/project-records/hgv-sky",
+    "estimates": "Furniture counts, canopy/guardhouse dimensions and positions fitted approximately; retain prior pool/tower geometry.",
+    "checks": "docs/project-records/hgv-sky/checks.json",
+    "performance": {
+      "before": "docs/project-records/hgv-sky/performance-before-final.json",
+      "after": "docs/project-records/hgv-sky/performance-after.json",
+      "p95BeforeAfterMs": {
+        "front": [
+          28.5,
+          18.9
+        ],
+        "pool-overview": [
+          26.5,
+          18.6
+        ],
+        "pool-walk": [
+          26.1,
+          19
+        ],
+        "sky-front": [
+          20.8,
+          18.7
+        ],
+        "sky-arrival": [
+          24.6,
+          18.7
+        ],
+        "sky-aerial": [
+          37.5,
+          24.4
+        ]
+      },
+      "method": "960x540 ultra,180frames/view,same cameras; shared workstation variation, no broad gain claim"
+    },
+    "newGroupedLfsBytes": 1543515,
+    "cellDelta": "Only LODcell1,-4 and manifest changed;276othercellfilesbyteidentical"
+  }
 }

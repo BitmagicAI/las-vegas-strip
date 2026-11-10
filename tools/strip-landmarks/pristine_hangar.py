@@ -7,8 +7,18 @@ def exterior(B):
  p=footprint('way/457939133');B.shell(p,.18,11,'pf-white-metal-paint',roof=False);B.planar('pf-roof-paint',p,10.9,True)
  for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
   G,L,nx,nz=facade_frame(B,a,b,p,.025)
-  G.box('pf-coping',(L/2,11.02,-.06),(L,.18,.3));G.box('pf-base',(L/2,.65,-.06),(L,1,.12))
-  for u in np.arange(.4,L,.55):G.box('pf-seam',(u,5.65,-.065),(.025,10.1,.03))
+  G.box('pf-coping',(L/2,11.02,-.06),(L,.18,.3))
+  if nz<-.7:
+   # Correctly located Mar2020 north-side Street View shows a smooth white wall,
+   # not the closely spaced metal ribs previously inferred from the roof.
+   # Sparse panel seam and small fixture sizes are photo estimates, not a survey.
+   if L>20:G.box('pf-seam',(L/2,5.6,-.025),(.012,10.5,.012))
+   for u in [L*.22,L*.65]:
+    G.box('pf-service',(u,8.2,-.12),(.36,.2,.18))
+    G.box('pf-grille',(u,8.18,-.22),(.22,.09,.025))
+  else:
+   G.box('pf-base',(L/2,.65,-.06),(L,1,.12))
+   for u in np.arange(.4,L,.55):G.box('pf-seam',(u,5.65,-.065),(.025,10.1,.03))
   if nx>.6:
    G.box('pf-door',(L/2,4.8,-.12),(L-1.8,9.2,.13),True)
    for u in np.arange(1,L-1,2.3):G.box('pf-door-seam',(u,4.8,-.21),(.065,9.2,.06))

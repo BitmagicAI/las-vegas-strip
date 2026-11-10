@@ -1,0 +1,88 @@
+{
+  "base": "e264bbe7da3c6f436966901deff3a4a3d146ebd5",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "de10f4cd0e18b03c3f4162709f2d28045ec1123b2bc9628e03359635c5a66f43",
+      "bytes": 389963,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/after/wynn-south-front.png"
+    },
+    {
+      "oid": "d037a2faf7ef6238e3164a49da679bb739a60a3c14a1910b5a7e25f817215c67",
+      "bytes": 360186,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/after/wynn-south-pier.png"
+    },
+    {
+      "oid": "f5f365ced59cd8e3d1d3a7dce2a253cd101a1ed4cc0cc4f21b048acc8e86ff96",
+      "bytes": 543676,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/after/wynn-south-roof.png"
+    },
+    {
+      "oid": "05d74d6a018b6653a4a6001de6a38460be03b21b0bc2b9c04b509a3662a7e9e4",
+      "bytes": 263457,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/after/wynn-south-under.png"
+    },
+    {
+      "oid": "c18654ecd44ab99fac2dc59962333f1b4590729066e1eddca19a161a740a04ee",
+      "bytes": 379235,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/baseline-walk/direct-route-blocked.png"
+    },
+    {
+      "oid": "67cda47e3cca903a6bdfba6d8c2bb62fe6558e676beaeb23bd67dd452777910e",
+      "bytes": 434640,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/baseline-walk/walk-frontage-0.png"
+    },
+    {
+      "oid": "af64327ab0d9b637d39780a9fd819b20ed29fd7df57e2b68355691e623a6b34d",
+      "bytes": 442179,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/baseline-walk/walk-return-0.png"
+    },
+    {
+      "oid": "458f0996e09bda25537eff183906e8df3a1252f9553de7575fa25a548f115a95",
+      "bytes": 386164,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/before/wynn-south-front.png"
+    },
+    {
+      "oid": "25fff6fabd530536dc26b6b38534dc61aa485b56d72764239ef607c69d5d483b",
+      "bytes": 357397,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/before/wynn-south-pier.png"
+    },
+    {
+      "oid": "c0dc3eb1f8088879a5a37f68e6a085d591d01a6443069a9e33e781d186546a1a",
+      "bytes": 538744,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/before/wynn-south-roof.png"
+    },
+    {
+      "oid": "3191cf1e78d7cb8282898a8f55a35bd08d9a856eaa5c92d371b7dc91edb111f7",
+      "bytes": 263395,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/before/wynn-south-under.png"
+    },
+    {
+      "oid": "0978fc48e6cc95e4c5eae010a9f4239693b49cec04282bf6864af6d8423d95c4",
+      "bytes": 435120,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/walk/walk-frontage-0.png"
+    },
+    {
+      "oid": "28a755ff9c0fa7751c199b8aa365102c93da4d6463ef50b281acbbfe9b764816",
+      "bytes": 443383,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-south-frontage-refinement/walk/walk-return-0.png"
+    },
+    {
+      "oid": "a9d82cd59760bb022792efa4a552a050a43fc7d223f13d12029436cf711dcf32",
+      "bytes": 715612,
+      "path": "runtime-assets/baked/cells/cell-0_-2.bin"
+    },
+    {
+      "oid": "62774f9f003d25ca9372bc7587ebf4ac6062ac1d338cd701782d9644c0a891bd",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "4e335c0ed315ff948ded2b4b15abe29f44b9509411c6a89e938d53baa1b8d2d2",
+      "bytes": 374092,
+      "path": "runtime-assets/strip-landmarks/wynnSouthCanopy-exterior.glb"
+    }
+  ],
+  "count": 16,
+  "bytes": 6341044
+}

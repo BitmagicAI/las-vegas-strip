@@ -1,0 +1,19 @@
+{
+  "bellagioArcadePiers": {
+    "bytes": 77428,
+    "indexedTriangles": 3468,
+    "sha256": "4504b71ad9ba04a20b15d736afac67fed81e4be3d51d249e356e5befaf20794f"
+  },
+  "bellagioCurvedRoofs": {
+    "bytes": 165276,
+    "indexedTriangles": 4091,
+    "sha256": "cded2cd8cf7417dc4705aecf609390c611f0b21ce0af30897facdf4bdc4882d1"
+  },
+  "cells": {
+    "count": 92,
+    "changed": [
+      "runtime-assets/baked/cells/cell--1_0.bin"
+    ],
+    "unchanged": 91
+  }
+}

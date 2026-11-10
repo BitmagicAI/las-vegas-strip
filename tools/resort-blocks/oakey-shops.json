@@ -38,5 +38,14 @@
       "build/strip-landmarks/oakeyShops-exterior.glb": "44f42dc4cb5522776c1a95a4c61e3a2a5899e497fdbee372ef1468b27cbb4cef",
       "build/strip-landmarks/oakeyShops-exterior-collision.json": "9614cba1ec87c4b99f7780f28eb35483645ec76a7a82917f25204e95c526164f"
     }
+  },
+  "refinement20261108": {
+    "scope": "Fresh January 2026 frontage reference and actual shared walkway inspected; geometry unchanged in this bounded group. Glare did not justify furniture changes; all survey/interior discrepancies retained.",
+    "record": "docs/project-records/oakey-group-refinement/",
+    "status": "verified-bounded",
+    "notCompletion": true,
+    "installedSHA256": "d980571ba6082fa423df6a851c2e1a7208daa03209c7753aa49888ed468466a0",
+    "checks": "13 local checks;705 support/headroom samples;18before+18after actual walking legs;9devsmokestops;7installed daylight views inspected;91/92cells byte-identical.",
+    "performance": "Static matched camera measurements and contemporaneous original-model control/repeat retained in performance.json; no whole-route or improvement claim."
   }
 }

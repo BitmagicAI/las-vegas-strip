@@ -1,0 +1,112 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "cathedral west approach and closed doorway",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            830,
+            0.24,
+            -1616.5
+          ],
+          "position": {
+            "x": 829.9212036132812,
+            "y": 0.3011035013198852,
+            "z": -1616.5
+          }
+        },
+        {
+          "segment": 2,
+          "reached": false,
+          "goal": [
+            836,
+            0.24,
+            -1616.5
+          ],
+          "position": {
+            "x": 833.1494750976562,
+            "y": 0.2580480861663818,
+            "z": -1616.501220703125
+          }
+        }
+      ],
+      "passed": false
+    },
+    {
+      "name": "office west apron",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            914.5,
+            0.18,
+            -1569
+          ],
+          "position": {
+            "x": 914.5000610351562,
+            "y": 0.2582037734985351,
+            "z": -1569.0780029296875
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            918,
+            0.18,
+            -1569
+          ],
+          "position": {
+            "x": 918.0470581054688,
+            "y": 0.2579917001724243,
+            "z": -1568.9998779296875
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            914.5,
+            0.18,
+            -1569
+          ],
+          "position": {
+            "x": 914.5960083007812,
+            "y": 0.2682254600524902,
+            "z": -1568.999755859375
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            914.5,
+            0.18,
+            -1583
+          ],
+          "position": {
+            "x": 914.500244140625,
+            "y": 0.25828102111816403,
+            "z": -1582.91015625
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

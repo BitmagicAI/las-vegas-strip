@@ -1,0 +1,88 @@
+{
+  "base": "9c5f7f2795e26114ba0235304332a1957af757b1",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "f402686fc795ea6b21089cceb8525028aaf52f992f1c9ec2701cf33fc1f07107",
+      "bytes": 262661,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/after-detail/crystals-central-roof-detail.png"
+    },
+    {
+      "oid": "fe5d226bda3d345138f8ff44ec4c3d04684600ae47c9877bacce43baf582fd4c",
+      "bytes": 521493,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/after-north-repeat/crystals-north-return.png"
+    },
+    {
+      "oid": "29a44dedf97cf13af72f898a8fdc4ff98a0e2a12ed7157ebac72f66075360370",
+      "bytes": 403351,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/after-walk/walk-endpoint-0.png"
+    },
+    {
+      "oid": "7cc584ed4a39657d37da42e2b9bbdda492b914c3b3d83fd2fde29cf5f1c99651",
+      "bytes": 435052,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/after-walk/walk-return-0.png"
+    },
+    {
+      "oid": "bb40dd199245469ffab21f52ef77d1b5963ce0770a26c6ad065b3a00c40f8d92",
+      "bytes": 401852,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/after/crystals-east-front.png"
+    },
+    {
+      "oid": "e909c08d2d77f1b5ecebd5ed9e7e6176e2a0159219db807ead50ec9d47b3ab7b",
+      "bytes": 522098,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/after/crystals-north-return.png"
+    },
+    {
+      "oid": "f62ab1221ffed73c3a4b486b2a17d6f89e7bc535d00f08f7c73af6b18333f0aa",
+      "bytes": 439376,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/after/crystals-roof-context.png"
+    },
+    {
+      "oid": "41980ffe30864d04f4153ea8ce24aa12febca329e7138bf38203c23cbfbb45b5",
+      "bytes": 251448,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/before-detail/crystals-central-roof-detail.png"
+    },
+    {
+      "oid": "a09dd7c615b57966ec4dcf07433394d4bf972fa83ef587484987fb21f8b2191b",
+      "bytes": 402527,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/before-walk/walk-endpoint-0.png"
+    },
+    {
+      "oid": "4231fef3946f828807c4a8336fdc67a4609d195f7e9ce5f9eadd6240230716f3",
+      "bytes": 436492,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/before-walk/walk-return-0.png"
+    },
+    {
+      "oid": "c37406bf58b5483e0c53362031da33870c7da740caf0b39f347b482d69ff18ff",
+      "bytes": 399971,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/before/crystals-east-front.png"
+    },
+    {
+      "oid": "ffec4485f20e021e506b3b6dc9889110ccd5c542ee03548fb3acd0a995b63740",
+      "bytes": 521355,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/before/crystals-north-return.png"
+    },
+    {
+      "oid": "faae1ae1a9f3dc309da8b3000aa79ee0ae1b033eec63194db6253b60c41447fd",
+      "bytes": 437135,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/crystals-frontage-refinement/before/crystals-roof-context.png"
+    },
+    {
+      "oid": "ad0de20ad5b08ef2989f546c6a206e435630f1977835123072cbe15256bccb2a",
+      "bytes": 1202921,
+      "path": "runtime-assets/baked/cells/cell--1_1.bin"
+    },
+    {
+      "oid": "b10645cc159bd99e8a2156006332f86ff7289fc67a525f2dfcfc184910660436",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "fbf2a13b4004a12063855dbcf78e021ea6cab6e53355a036ac0777c5fcff9504",
+      "bytes": 84132,
+      "path": "runtime-assets/strip-landmarks/crystalsRoof-exterior.glb"
+    }
+  ],
+  "count": 16,
+  "bytes": 6735665
+}

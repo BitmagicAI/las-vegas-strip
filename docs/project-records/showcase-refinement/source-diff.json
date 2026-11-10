@@ -1,0 +1,13 @@
+{
+  "oldTriangles": 10905,
+  "newTriangles": 17785,
+  "changedGroups": [
+    "('new-york', 'showcase-iv-rooftop', 'blackiron', 0)",
+    "('new-york', 'showcase-iv-rooftop', 'blackiron', 1)",
+    "('new-york', 'showcase-iv-rooftop', 'ph-led-blue', 0)",
+    "('new-york', 'showcase-iv-rooftop', 'steel', 1)",
+    "('new-york', 'showcase-iv-rooftop', 'walnut', 1)"
+  ],
+  "scope": "IV and Walgreens authoring source comparison; source/runtime equivalence not established by this check.",
+  "textChange": "BREWDOG text material ph-white to teal; position, string and scale unchanged. Text records are separate from mesh groups."
+}

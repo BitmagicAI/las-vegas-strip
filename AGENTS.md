@@ -54,7 +54,27 @@ The owner's rules for submissions (2026-10-29, after a stack of 99 one-building 
 - **Ready means done.** Mark a pull request ready once the checks in step 7 pass. Its description lists what changed,
   each check with its result, the bytes it adds to Git LFS, and anything it touches outside its own buildings.
 - **Keep review views findable.** Each building's `probe-<id>.js` lists its views as `[name, eye, target]` with an
-  exterior `front` view first, and its before and after captures use the same view names.
+  exterior `front` view first, and its before and after captures use the same view names. Captures stay local, in
+  `.bitmagic/review/<task-id>/`: never commit them, and never put them under `public/`, which Vite copies into every
+  build, so a publish would ship them (669 MiB of captures came out of `public/` on 2026-11-09). The description gives
+  each view's name and numbers instead; `check-public.py` fails on anything in `public/` but the foliage.
+
+## Long runs (the owner's agents)
+
+The owner's agents run for days unattended. These rules are for them; outside contributors keep branching from main.
+
+- **`next` is your base.** Branch each task from `origin/next`, open its pull request against `next`, and merge it
+  yourself with `gh pr merge <n> --merge` once every check in step 7 passes. Then `gh issue close <issue>`, because
+  `Closes` does not fire outside main and the claim must be freed, and start the next task from
+  `node tools/tasks/pick.mjs`.
+- **Stay out of the release.** Never merge to `main`, upload, publish, make a release or change repository settings.
+  The owner starts those as one release step.
+- **Nothing waits for the owner.** A check that needs the CDN, a published game or a person goes in the description
+  under "For the release step" and does not hold the merge. On a design question, take the reversible option and list
+  it under "Decisions for the owner". If a task truly cannot continue, say why on its issue, `/unclaim` it and take
+  another.
+- **Never poll a blocker.** While an unclaimed task is open, there is work to do. Stop only if `next` itself is broken
+  and you cannot fix it.
 
 ## The city and the games built on it
 

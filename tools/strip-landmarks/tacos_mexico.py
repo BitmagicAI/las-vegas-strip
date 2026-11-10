@@ -24,13 +24,13 @@ def exterior(B):
     for du in [-.77,.77]:G.box('tm-red-paint',(u+du,1.52,-.25),(.065,2.08,.07))
     for yy in [.51,2.55]:G.box('tm-red-paint',(u,yy,-.25),(1.6,.065,.07))
     G.box('tm-metal-paint',(u,1.52,-.29),(.035,1.98,.04));G.box('tm-metal-paint',(u,1.9,-.29),(1.45,.035,.04))
-   G.text('TACOS MEXICO',(L/2,3.92,-.18),.57,'tm-red-letter');G.text('1800',(.35,2.1,-.2),.23,'tm-red-letter')
+   G.text('TACOS MEXICO',(L/2,3.92,-.18),.88,'tm-red-letter');G.text('1800',(.35,2.1,-.2),.23,'tm-red-letter')
   elif nz>.7 and L>8:
    for u in [2,5]:
     G.box('tm-glass',(u,1.55,-.18),(1.9,1.9,.1))
     for du in [-1,1]:G.box('tm-red-paint',(u+du,1.55,-.25),(.06,2,.07))
     for yy in [.57,2.53]:G.box('tm-red-paint',(u,yy,-.25),(2,.06,.07))
-   G.text('TACOS MEXICO',(4,3.94,-.18),.54,'tm-red-letter')
+   G.text('TACOS MEXICO',(4,3.94,-.18),.7,'tm-red-letter')
   elif nz<-.7 and L>6:
    G.box('tm-glass',(L*.48,1.6,-.13),(1.5,1.2,.12));G.box('tm-metal-paint',(L*.48,.96,-.45),(1.8,.12,.85));G.text('PICK UP',(L*.48,2.45,-.13),.3,'tm-red-letter')
   elif nx<-.7:G.box('tm-service-paint',(L/2,1.38,-.1),(1.1,2.4,.12))

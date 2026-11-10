@@ -1,0 +1,16 @@
+{
+  "typecheck": "PASS",
+  "tests": "3/3 PASS: ground-surface-index, site-lights, city-lazy-lod",
+  "review": "PASS, all records valid",
+  "public": "PASS, pre-existing public contact warning only",
+  "sourceGeometry": "6590 triangles, zero degenerate faces",
+  "collision": "2613 packed route samples PASS, zero unsupported;36 retained arrival clearances PASS",
+  "movement": "86 current route segments PASS (12 lower +74 corrected upper/spiral);20 total endpoint captures inspected across initial and corrected runs",
+  "optimization": "Level then WebP then install PASS, about0.45MiB",
+  "bake": "PASS, one bake exited0; freshness check PASS",
+  "runtimeOptimization": "PASS,1changedGLB",
+  "package": "PASS,1928present,0missing,0unoptimized",
+  "smoke": "PASS:9stops placed,0failed requests,0page errors,0console errors",
+  "visual": "Four final matching daylight views personally inspected after bake.",
+  "performance": "p95 +3.1/+3.6/+3.2/+3.4ms; local regression retained in visual review and block record."
+}

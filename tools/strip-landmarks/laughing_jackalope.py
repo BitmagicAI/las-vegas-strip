@@ -18,8 +18,16 @@ def exterior(B):
  # Central classical door surround: true projecting pediment and engaged piers.
  for u in [15.7,18.5]:F.box('lj-trim',(u,1.9,-.35),(.24,3.4,.48))
  F.box('lj-trim',(17.1,3.61,-.37),(3.3,.22,.62))
- for x in [-1.7,1.7]:F.path('lj-gray',[(17.1+x,3.8,-.5),(17.1,4.8,-.5)],.12,8)
- B.face('lj-trim',[F.p(15.4,3.8,-.42),F.p(18.8,3.8,-.42),F.p(17.1,4.8,-.42)])
+ # February 2026 Street View shows a segmental crown, not a triangular gable.
+ # Inferred 3.4 m span / 1 m rise; retain the existing envelope and collision.
+ radius=(1.7**2+1.0**2)/2.0
+ center_y=4.8-radius
+ half_angle=math.asin(1.7/radius)
+ crown=[(17.1+radius*math.sin(a),center_y+radius*math.cos(a),-.5)
+        for a in np.linspace(-half_angle,half_angle,25)]
+ F.path('lj-gray',crown,.12,8)
+ for a,b in zip(crown,crown[1:]):
+  B.face('lj-trim',[F.p(17.1,3.8,-.42),F.p(a[0],a[1],-.42),F.p(b[0],b[1],-.42)])
  # Narrow raised central pier, canopy and round-headed blind niche.
  F.box('lj-stucco',(10.2,3.3,-.25),(1.8,6.6,.5),True)
  F.box('lj-trim',(10.2,6.65,-.25),(2.1,.2,.66))

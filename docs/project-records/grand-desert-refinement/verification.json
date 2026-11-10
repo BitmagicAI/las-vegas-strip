@@ -1,0 +1,30 @@
+{
+  "typecheck": "PASS",
+  "recordReview": "PASS",
+  "public": {
+    "failures": 0,
+    "existingWarnings": 4
+  },
+  "runtimeGlbs": {
+    "checked": 1,
+    "unoptimized": 0
+  },
+  "bake": "PASS; one bake; unrelated LOD blocks restored byte-identically",
+  "assetPack": {
+    "present": 1930,
+    "missing": 0,
+    "unoptimized": 0
+  },
+  "smoke": {
+    "stops": 9,
+    "failedRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "actualWalkSegments": 12,
+  "poolSupportSamples": 1741,
+  "roofSamples": 92,
+  "daylightViewsInspected": 5,
+  "newLfsBytes": 4709593,
+  "remaining": "Four whole-block gaps retained, with pool presence updated; no whole-block completion claim"
+}

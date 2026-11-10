@@ -1,0 +1,30 @@
+{
+  "legacyPortal": {
+    "id": "Interiors / Paris Horseshoe passage",
+    "position": [
+      232.6058874458875,
+      2.125,
+      287.3521303258145
+    ],
+    "buildings": [
+      "paris"
+    ],
+    "exterior": true,
+    "adjacent": [
+      "horseshoe"
+    ],
+    "arrivals": []
+  },
+  "parisSourceDoor": [
+    110,
+    2.125,
+    -80
+  ],
+  "parisTransformDoor": [
+    135.93714285714285,
+    2.125,
+    386.20833333333337
+  ],
+  "separation": 138.26566838310848,
+  "note": "Source door mapped with Paris frame is a mathematical candidate only, not evidence of a built continuous connector. Physical world door remains at legacyPortal.position."
+}

@@ -1,0 +1,113 @@
+{
+  "routes": [
+    {
+      "name": "Eataly covered porch exterior",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -50.204581464244875,
+            0.24,
+            1314.511506225792
+          ],
+          "position": {
+            "x": -50.17282485961914,
+            "y": 0.2621653366088867,
+            "z": 1314.4791259765625
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -57.27564927611035,
+            0.24,
+            1321.5825740376574
+          ],
+          "position": {
+            "x": -57.0303955078125,
+            "y": 0.2619645881652832,
+            "z": 1321.3360595703125
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "Park MGM preserved north public lobby",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -48,
+            0.24,
+            1230.1
+          ],
+          "position": {
+            "x": -47.66106033325195,
+            "y": 0.29207745075225827,
+            "z": 1230.0968017578125
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -68,
+            0.24,
+            1230.5
+          ],
+          "position": {
+            "x": -67.8707275390625,
+            "y": 0.29221990585327146,
+            "z": 1230.4967041015625
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            -48,
+            0.24,
+            1230.1
+          ],
+          "position": {
+            "x": -48.33485794067383,
+            "y": 0.28170302391052243,
+            "z": 1230.10791015625
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            -28,
+            0.24,
+            1229.8
+          ],
+          "position": {
+            "x": -28.333641052246094,
+            "y": 0.3111282873153686,
+            "z": 1229.8060302734375
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [
+      "park"
+    ],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

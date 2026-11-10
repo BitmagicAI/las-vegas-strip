@@ -1,0 +1,142 @@
+{
+  "protocol": "Identical cameras, ultra960x540DPR1, neutral daylight,900warmframes+idle+60settle+180samples",
+  "samples": [
+    {
+      "name": "ole-red-front",
+      "before": {
+        "p50": 16.700000047683716,
+        "p95": 18.299999952316284
+      },
+      "after": {
+        "p50": 16.699999809265137,
+        "p95": 18.09999990463257
+      },
+      "p95ChangePercent": -1.0928964382778683
+    },
+    {
+      "name": "ole-red-rooftop",
+      "before": {
+        "p50": 25.09999990463257,
+        "p95": 43.799999952316284
+      },
+      "after": {
+        "p50": 23.40000009536743,
+        "p95": 39.299999952316284
+      },
+      "p95ChangePercent": -10.273972613924688
+    },
+    {
+      "name": "bazaar-north-front",
+      "before": {
+        "p50": 25.899999856948853,
+        "p95": 29
+      },
+      "after": {
+        "p50": 26.200000047683716,
+        "p95": 38.200000047683716
+      },
+      "p95ChangePercent": 31.724138095461086
+    }
+  ],
+  "finding": "North tail increase did not persist relative to contemporaneous original-asset control: original repeat p95 33.6/33.9/44.5ms versus installed31.9/32.0/33.5ms. Median repeated p50 27.0\u219226.9ms,p95 33.9\u219232.0ms. Single-sample tails vary substantially; no measured >10% regression relative to repeated control, and no whole-block60fps certification. GPU/CPU spans, cold route stalls and city-wide memory were not measured in this bounded pass.",
+  "northRepeatedControl": {
+    "original": [
+      {
+        "name": "bazaar-north-front-repeat-1",
+        "eye": [
+          95,
+          8,
+          145
+        ],
+        "target": [
+          95,
+          4,
+          175
+        ],
+        "p50": 27,
+        "p95": 33.60000014305115
+      },
+      {
+        "name": "bazaar-north-front-repeat-2",
+        "eye": [
+          95,
+          8,
+          145
+        ],
+        "target": [
+          95,
+          4,
+          175
+        ],
+        "p50": 27,
+        "p95": 33.90000009536743
+      },
+      {
+        "name": "bazaar-north-front-repeat-3",
+        "eye": [
+          95,
+          8,
+          145
+        ],
+        "target": [
+          95,
+          4,
+          175
+        ],
+        "p50": 27.200000047683716,
+        "p95": 44.5
+      }
+    ],
+    "after": [
+      {
+        "name": "bazaar-north-front-repeat-1",
+        "eye": [
+          95,
+          8,
+          145
+        ],
+        "target": [
+          95,
+          4,
+          175
+        ],
+        "p50": 26.59999990463257,
+        "p95": 32
+      },
+      {
+        "name": "bazaar-north-front-repeat-2",
+        "eye": [
+          95,
+          8,
+          145
+        ],
+        "target": [
+          95,
+          4,
+          175
+        ],
+        "p50": 27.40000009536743,
+        "p95": 31.90000009536743
+      },
+      {
+        "name": "bazaar-north-front-repeat-3",
+        "eye": [
+          95,
+          8,
+          145
+        ],
+        "target": [
+          95,
+          4,
+          175
+        ],
+        "p50": 26.90000009536743,
+        "p95": 33.5
+      }
+    ],
+    "medianOriginalP50": 27,
+    "medianOriginalP95": 33.90000009536743,
+    "medianAfterP50": 26.90000009536743,
+    "medianAfterP95": 32
+  }
+}

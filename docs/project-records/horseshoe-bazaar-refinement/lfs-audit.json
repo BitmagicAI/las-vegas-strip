@@ -1,0 +1,123 @@
+{
+  "base": "1b73c28c03eb92c469194e4c10c05586ad2674b0",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "479d7fced95289e73caf87274cf27f350ac5c4651bb0aa033cc6234277536a4d",
+      "bytes": 466168,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/after/bazaar-north-front.png"
+    },
+    {
+      "oid": "3ad034e022d040d2fe1fa10e626a14505768db129b4761f56d59ac4eb6cd1054",
+      "bytes": 444465,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/after/ole-red-front.png"
+    },
+    {
+      "oid": "db293c92fa8c3fcbeaad0e0a85fb1469729c0a5d36ac016b184f961cfe45dd00",
+      "bytes": 359476,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/after/ole-red-rooftop.png"
+    },
+    {
+      "oid": "c5639e895ed4f6163036e1c13dcdf36976df4307771407e6e0f9660fc49f8374",
+      "bytes": 466170,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/before/bazaar-north-front.png"
+    },
+    {
+      "oid": "ea9249c957df49d9f8233d06d8acba0ed95c99a38dd9b2022307dd89c8aa5a96",
+      "bytes": 440431,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/before/ole-red-front.png"
+    },
+    {
+      "oid": "dacee225d00e985283953f7873e25ec3f9c727ac8a4ba8837ce073cd27cca619",
+      "bytes": 335393,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/before/ole-red-rooftop.png"
+    },
+    {
+      "oid": "48c10af554991f10e2be1887621c8b036fc896b75caa902a2c1dc9b09bed5859",
+      "bytes": 721190,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-after/walk-endpoint-0.png"
+    },
+    {
+      "oid": "b7da5c083a455a70b634fb1635ae7f3d16c598b26777d83f300d111dfd003547",
+      "bytes": 294628,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-after/walk-endpoint-1.png"
+    },
+    {
+      "oid": "f94a75f10ac6556c25c42a1f767251af194b513fb6ad3d3864c1a46c152ecd6d",
+      "bytes": 472188,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-after/walk-return-0.png"
+    },
+    {
+      "oid": "d4e8ce70e84e41de8099df9f4d1578add38cde93f6eba2b5cfd13031af7f8593",
+      "bytes": 248941,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-after/walk-return-1.png"
+    },
+    {
+      "oid": "57183484a0a90fc52e2627f706460ebd8a6fcf964e5cf80eaee7d48cc3187c53",
+      "bytes": 722747,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/walk-endpoint-0.png"
+    },
+    {
+      "oid": "81c4a154311935d07bb24c8a7bf0cd3a92bc6fb1dc92f702f80583d4f2f8cc14",
+      "bytes": 296943,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/walk-endpoint-1.png"
+    },
+    {
+      "oid": "ef271b6b8540b88e53d7b40513f04b099c929b7838b4d4842de5f5e128df7b50",
+      "bytes": 469596,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/walk-return-0.png"
+    },
+    {
+      "oid": "6068f803acfd460f484124dc7d02b3c19ab767aa2cd93b3572e136166c19ceeb",
+      "bytes": 247329,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-before-clear-segment/walk-return-1.png"
+    },
+    {
+      "oid": "b3b7b3be1c1cba023c03850b51061be3796c534260b6e6460ca6406136c09dc7",
+      "bytes": 771221,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-before/walk-blocked-1.png"
+    },
+    {
+      "oid": "30768e2317579c1e4cb7b516e003658209fb29dc687c3eead0ea2150fca147b2",
+      "bytes": 771237,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-before/walk-endpoint-0.png"
+    },
+    {
+      "oid": "a9a98ff27f0aaf3e300a284ab3d903a470aa523d060cc9ef6ca6e32b74368233",
+      "bytes": 296959,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-before/walk-endpoint-1.png"
+    },
+    {
+      "oid": "b18f86029f2705c302a2e17f82f9896bb3f6b13be6b7c649f0b0717e4718441e",
+      "bytes": 247553,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/horseshoe-bazaar-refinement/walk-before/walk-return-1.png"
+    },
+    {
+      "oid": "9971a958e52731fe7ab09931b2276ebf0e3aa23b43e7bc66b8f9822df600a1c4",
+      "bytes": 1584186,
+      "path": "runtime-assets/baked/cells/cell-0_0.bin"
+    },
+    {
+      "oid": "2da8c1b73ec8f83717e88644d7b1030c7e212fcfec775dcce7258828e9d388ae",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "e1d3be767fd68fbb20532be12662f14f246c68ba8f5dbeabc76f4cb7c5bc0313",
+      "bytes": 7772,
+      "path": "runtime-assets/strip-landmarks/horseshoeExterior-exterior-collision.bin"
+    },
+    {
+      "oid": "6d90e41d5ba33ed32d1ec8b09aa944a246dc5bc4697f6b17a5f7296fa4808ab9",
+      "bytes": 1304268,
+      "path": "runtime-assets/strip-landmarks/horseshoeExterior-exterior.glb"
+    },
+    {
+      "oid": "da2bfa14a02b5c989a87e6abcf070e4e597cc543c2842ab21c9fd87c84a826bc",
+      "bytes": 394536,
+      "path": "runtime-assets/strip-landmarks/venues.bin"
+    }
+  ],
+  "count": 23,
+  "bytes": 11377198
+}

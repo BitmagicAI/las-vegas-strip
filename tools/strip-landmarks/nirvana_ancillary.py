@@ -44,7 +44,8 @@ def exterior(B):
   W.box('nv-ac',(cx,6.6,cz),(1.5,.6,1.2))
  # Stairs rise southward toward the north-facing gallery of the long wing.
  x=105.65;z=2711.35;run=5.85;rise=2.9
- B.face('nv-fascia',[(x-.65,.35,z),(x+.65,.35,z),(x+.65,3.25,z+run),(x-.65,3.25,z+run)],True)
+ # Upward-facing ramp: the installed walking motor must see a standable surface.
+ B.upface('nv-fascia',[(x-.65,.35,z),(x+.65,.35,z),(x+.65,3.25,z+run),(x-.65,3.25,z+run)],True)
  for i in range(18):W.box('nv-fascia',(x,.35+(i+1)*rise/18-.03,z+(i+.5)*run/18),(1.3,.06,run/18))
  for xx in [x-.7,x+.7]:
   W.tube('nv-fascia',(xx,1.4,z),(xx,4.3,z+run),.03,6)

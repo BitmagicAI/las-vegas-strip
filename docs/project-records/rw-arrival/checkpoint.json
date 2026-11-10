@@ -1,0 +1,51 @@
+{
+  "status": "installed-verified-ready-for-next",
+  "claim": 34,
+  "pullRequest": 452,
+  "base": "202194e",
+  "sources": [
+    {
+      "title": "Current official property map",
+      "url": "https://www.rwlasvegas.com/map/",
+      "observed": "Current level1 labels distinguish Hilton, Crockfords and Conrad porte cocheres from Strip/plaza entrances. Current tenant labels differ from2025PDF; do not reuse old tenants blindly."
+    },
+    {
+      "title": "Official February2025 sales kit page12",
+      "url": "https://www.rwlasvegas.com/wp-content/uploads/2025/02/SLE-00294_SalesKit_Updates_013025.pdf",
+      "observed": "PDF page12 personally inspected; arrival/lobby relationships and retail/casino circulation, schematic not measured plan. LocalPDF /tmp/vegas-pdf-research/resorts-world-saleskit.pdf."
+    },
+    {
+      "title": "Official main entrance sunrise photograph",
+      "url": "https://www.rwlasvegas.com/wp-content/uploads/2023/04/RW-Main-Entrance-Exterior-Sunrise.jpg",
+      "observed": "Personally inspected: broad bronze canopy, pale paired/slotted rectangular piers, red/bronzeframed soffit with luminous rectangular panels, curved glazed pavilion, dense palms and planted islands. Exact dimensions inferred."
+    },
+    {
+      "title": "Google aerial",
+      "url": "https://www.google.com/maps/@36.1346,-115.1664,400m/data=!3m1!1e3",
+      "observed": "Personally inspected: north side arrival loop and separate south pool terrace/Strip frontage. Imagery date not exposed in aerial."
+    },
+    {
+      "title": "Google Street View Hilton arrival January 2025",
+      "url": "https://www.google.com/maps/@36.1354443,-115.1665494,3a,75y,260.98h,90t/data=!3m4!1e1!3m2!1sEnl_cjM7C33yrIRuqs3iPQ!2e0",
+      "observed": "Personally inspected dated panorama: red/bronze coffers, white inset ceiling panels, square hanging lanterns, paired pale piers, glazed entry and palms/low hedges/benches. Panorama world position approximately580,-2164.5. Canopy registration and all dimensions inferred from aerial, footprint and photographs."
+    }
+  ],
+  "remaining": [
+    "Hilton 78x37m canopy / 8.68m roof and layout are estimates. Final six matching views, three detail views, eight normal walking segments and package checks completed.",
+    "Conrad/Crockfords arrivals, detailed landscaping, pool furnishings and whole-site public circulation remain unfinished.",
+    "Existing high-rise guest entry retained; no new interior claimed."
+  ],
+  "checks": {
+    "bitmagic": "PASS",
+    "applicableTests": "PASS: ground-surface-index, site-lights, city-lazy-lod",
+    "recordReview": "PASS",
+    "checkPublic": "PASS; existing inventory email warning",
+    "runtimeGlbs": "PASS: 2 changed GLBs optimized including WebP",
+    "bake": "PASS: one bake, current",
+    "assetPack": "PASS: 1926 present, 0 missing, 0 unoptimized",
+    "smoke": "PASS: 9 stops, 0 failures/errors",
+    "walking": "PASS: 8 normal walking segments; endpoint captures inspected",
+    "visualReview": "PASS: six installed daylight views and three canopy detail views personally inspected; stylized approximation, not photorealistic",
+    "performance": "Matching 960x540 ultra cameras, 180 frames after 300 settle. Before p50 16.6\u201320.6ms / p95 18.2\u201336.3ms; after p50 16.7\u201320.4ms / p95 17.3\u201337.9ms. Conrad p95 worsened 6.7ms while median improved 1.3ms; mixed local timing, not a no-stall or published performance guarantee."
+  }
+}

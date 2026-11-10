@@ -42,7 +42,17 @@ def exterior(B):
  F=Frame(B,-151.72,1643,0,y=0)
  # Positive local Z is south; text faces south with back=True.
  for i in range(17):
-  a=math.pi*i/16;B.tube('nya-gold-paint',(-151.72+3*math.cos(a),9+1.1*math.sin(a),1643.1),(-151.72+7.3*math.cos(a),9+5.4*math.sin(a),1643.1),.09,8)
+  # January 2025 south panorama: broad pointed blades, not round rods.
+  # Preserve endpoints; inferred .46m root width/.10m depth, no new collision.
+  a=math.pi*i/16
+  root=np.array([-151.72+3*math.cos(a),9+1.1*math.sin(a)])
+  tip=np.array([-151.72+7.3*math.cos(a),9+5.4*math.sin(a)])
+  d=tip-root;side=np.array([-d[1],d[0]])/np.linalg.norm(d)*.23
+  shape=[root-side,tip,root+side]
+  front=[(float(v[0]),float(v[1]),1643.16) for v in shape]
+  back=[(float(v[0]),float(v[1]),1643.06) for v in shape]
+  B.face('nya-gold-paint',front);B.face('nya-gold-paint',back[::-1])
+  for j in range(3):B.face('nya-gold-paint',[front[j],back[j],back[(j+1)%3],front[(j+1)%3]])
  for side in [-1,1]:
   F.box('nya-pale-stone',(side*8.9,8.95,-.14),(3.0,1.2,.40))
   F.box('nya-pale-stone',(side*8.6,9.65,-.18),(2.4,.28,.48))
@@ -56,4 +66,6 @@ def exterior(B):
  samples=[[x,8.35,z]for x in np.arange(q.bounds[0]+.7,q.bounds[2],1)for z in np.arange(1610.5,1642,1)if q.buffer(-.3).contains(Point(x,z))]
  routes=[[[-159,D,1641],[-159,D,1610.5]],[[-144,D,1641],[-144,D,1610.5]],[[-165,D,1618],[-138,D,1618]]]
  Path('build/city-exteriors/nyny-arrival-samples.json').write_text(json.dumps(samples));Path('build/city-exteriors/nyny-arrival-stairs.json').write_text(json.dumps(routes))
- return dict(key=KEY,name='NYNY arrival pavilion and canopy',center=[cx,0,1620],bounds=[-167,1598,-136,1644],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})
+ from nyny_landscape import landscape
+ landscape(B)
+ return dict(key=KEY,name='NYNY arrival pavilion and canopy',center=[cx,0,1620],bounds=[-172,1598,-131,1654],structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

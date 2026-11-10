@@ -1,0 +1,60 @@
+{
+  "method": "960x540 DPR1 ultra, neutral daylight, identical cameras,900settle+streamquiet+60frames,180frame sample; one GPU task; near60Hz cap, no speedup claim",
+  "views": [
+    {
+      "site": "akita",
+      "view": "front",
+      "p50Before": 16.699999809265137,
+      "p50After": 16.59999990463257,
+      "p95Before": 19.600000143051147,
+      "p95After": 19.40000009536743,
+      "p95Delta": -0.20000004768371582
+    },
+    {
+      "site": "akita",
+      "view": "south",
+      "p50Before": 16.700000047683716,
+      "p50After": 16.600000143051147,
+      "p95Before": 17.799999952316284,
+      "p95After": 18.199999809265137,
+      "p95Delta": 0.39999985694885254
+    },
+    {
+      "site": "akita",
+      "view": "aerial",
+      "p50Before": 16.700000047683716,
+      "p50After": 16.700000047683716,
+      "p95Before": 17.800000190734863,
+      "p95After": 19,
+      "p95Delta": 1.1999998092651367
+    },
+    {
+      "site": "desert-oasis",
+      "view": "front",
+      "p50Before": 16.59999990463257,
+      "p50After": 16.700000047683716,
+      "p95Before": 18.90000009536743,
+      "p95After": 18.299999952316284,
+      "p95Delta": -0.6000001430511475
+    },
+    {
+      "site": "desert-oasis",
+      "view": "court",
+      "p50Before": 16.700000047683716,
+      "p50After": 16.5,
+      "p95Before": 17.700000047683716,
+      "p95After": 18.699999809265137,
+      "p95Delta": 0.9999997615814209
+    },
+    {
+      "site": "desert-oasis",
+      "view": "aerial",
+      "p50Before": 16.700000047683716,
+      "p50After": 16.699999809265137,
+      "p95Before": 19.5,
+      "p95After": 19.200000047683716,
+      "p95Delta": -0.2999999523162842
+    }
+  ],
+  "allSixBeforeAfterImagesInspected": true
+}

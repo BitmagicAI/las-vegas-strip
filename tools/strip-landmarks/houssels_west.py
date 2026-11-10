@@ -25,7 +25,7 @@ def exterior(B):
    G.box('hs-red-fascia-paint' if idx in [2,3] else 'rpw-fascia-paint',(ll/2,2.97,-.12),(ll,.17,.46));G.box('rpw-plinth-paint',(ll/2,.31,-.025),(ll,.26,.08))
    if G is F:
     for u in [ll*.22,ll*.79]:
-     if idx==2:
+     if idx==3:
       G.box('rpw-frame-paint',(u,2.15,-.07),(min(3.8,ll*.35),.65,.12));G.box('rpw-glass',(u,2.15,-.15),(min(3.6,ll*.33),.49,.04))
      else:window(G,u,w=min(2.1,ll*.24))
     G.box('rpw-door-trim-paint',(du,1.25,-.07),(1.04,2.14,.15));G.box('rpw-door-paint',(du,1.25,-.16),(.88,1.99,.04));G.box('rpw-hardware-paint',(du+.31,1.2,-.2),(.04,.14,.04))
@@ -51,7 +51,7 @@ def exterior(B):
     drive=G.poly([(.1,0),(ll-.1,0),(ll-.1,-28),(.1,-28)]).difference(roadmask).difference(allhomes)
     drive=unary_union([v for v in parts(drive) if v.distance(p)<.51])
     path=path.union(drive);yard=yard.union(drive)
-  B.planar('hs-yard-gravel-paint',yard.difference(path),.19,True);B.planar('rpw-concrete',path,.18,True)
+  B.planar('hs-red-gravel' if idx==8 else 'hs-yard-gravel-paint',yard.difference(path),.19,True);B.planar('rpw-concrete',path,.18,True)
   for a,b in [(0,du-1),(du+1,L)]:
    if b-a<.2:continue
    if idx%3==0:
@@ -68,7 +68,7 @@ def exterior(B):
   if idx in [2,3,4,7,8]:
    palm(B,F,L*.15,-4.5,4.5+(idx%3)*2)
    if idx==8:palm(B,F,L*.25,-4.0,3.5)
-  if idx==8:
+  if idx==7:
    # Screened porch with exposed gable framing; door approach remains open.
    for side in [-1,1]:
     B.face('rpw-gray-roof-paint',[F.p(du+side*2,2.9,0),F.p(du+side*2,2.9,-2.3),F.p(du,3.65,-2.3),F.p(du,3.65,0)])

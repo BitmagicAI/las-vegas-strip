@@ -1,0 +1,14 @@
+{
+  "base": "af80a501c0cfadb8090d5363394808964be313b3",
+  "issues": [
+    129,
+    130
+  ],
+  "claims": "janiverse confirmed",
+  "stage": "Installed refinement verified: all step7 local checks, six matching daylight pairs,12 actual after legs and clean nine-stop smoke recheck passed. Initial transient smoke console error preserved.",
+  "pending": "Push verified own commits, guarded merge PR500 into next, explicitly close129130 and run picker.",
+  "pr": 500,
+  "baselineSession": 82752,
+  "pipelineSession": 15138,
+  "verificationSession": 21304
+}

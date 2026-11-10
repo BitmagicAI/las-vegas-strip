@@ -1,0 +1,13 @@
+{
+  "bitmagic": "PASS",
+  "applicableTests": "PASS: ground-surface-index, site-lights, city-lazy-lod",
+  "recordReview": "PASS",
+  "checkPublic": "PASS; existing inventory email warning",
+  "runtimeGlbs": "PASS: 2 changed GLBs optimized including WebP",
+  "bake": "PASS: one bake, current",
+  "assetPack": "PASS: 1926 present, 0 missing, 0 unoptimized",
+  "smoke": "PASS: 9 stops, 0 failures/errors",
+  "walking": "PASS: 8 normal walking segments; endpoint captures inspected",
+  "visualReview": "PASS: six installed daylight views and three canopy detail views personally inspected; stylized approximation, not photorealistic",
+  "performance": "Matching 960x540 ultra cameras, 180 frames after 300 settle. Before p50 16.6\u201320.6ms / p95 18.2\u201336.3ms; after p50 16.7\u201320.4ms / p95 17.3\u201337.9ms. Conrad p95 worsened 6.7ms while median improved 1.3ms; mixed local timing, not a no-stall or published performance guarantee."
+}

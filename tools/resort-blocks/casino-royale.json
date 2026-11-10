@@ -38,7 +38,7 @@
   "remaining": [
     "Exact individual gable profiles and ornate facade trim",
     "Public entrances and onward connections",
-    "Rear courtyard landscape and furnishings",
+    "Rear courtyard palm planting, exact furniture placement and surveyed basin/deck registration",
     "Adjacent rear/south structures still pending their own passes"
   ],
   "geometry": {
@@ -58,5 +58,12 @@
       "build/optimized/build/strip-landmarks/casinoRoyale-exterior.glb": "ceb9fde88a901fa28156cb082b8d708aafad31254b17a2bfe013e8766bb4c0f2"
     }
   },
-  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-casino-royale.log"
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-casino-royale.log",
+  "refinement20261102": {
+    "record": "docs/project-records/royale-carnaval-refinement/research.json",
+    "pr": 473,
+    "status": "Verified scoped refinement; full-site discrepancies retained",
+    "preservation": "All prior model nodes and collision triangles retained.",
+    "scope": "15 striped loungers, 2 parasol tables and warm courtyard paving; pool retained."
+  }
 }

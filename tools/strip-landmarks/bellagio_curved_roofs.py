@@ -24,6 +24,25 @@ def exterior(B):
   for d,e in zip(offsets,offsets[1:]):
    band=roof.buffer(-d,join_style=2).difference(roof.buffer(-e,join_style=2))
    for tri in triangles(band):B.face(mat,[(x,height(x,z),z)for x,z in list(tri.exterior.coords)[:-1]],True)
+  # Aerial-visible hip/ridge caps fitted to the unchanged estimated roof.
+  from bellagio_roof_caps import caps
+  if index==1:
+   x0,z0,x1,z1=roof.bounds;cx=(x0+x1)/2
+   ridge=[(cx,z0+(x1-x0)/2),(cx,z1-(x1-x0)/2)]
+   for x,z in list(roof.exterior.coords)[:-1]:
+    end=min(ridge,key=lambda q:math.dist(q,(x,z)))
+    caps(B,mat,[(x,height(x,z),z),(end[0],height(*end),end[1])])
+   caps(B,mat,[(x,height(x,z),z) for x,z in ridge])
+  else:
+   # Sample the highest point along each radial section rather than imposing
+   # a new circle/elevation on the existing concave roof.
+   ridge=[]
+   for angle in np.linspace(-.92,.92,37):
+    candidates=[(-215.4+r*math.cos(angle),294.85+r*math.sin(angle)) for r in np.arange(11.25,25,.06)]
+    candidates=[q for q in candidates if roof.buffer(-.12).contains(Point(*q))]
+    if candidates:
+     x,z=max(candidates,key=lambda q:height(*q));ridge.append((x,height(x,z),z))
+   caps(B,mat,ridge)
   # Pale service vent/skylight on the rectangular roof, visible in the aerial.
   if index==1:
    x,z=-206.1,260.4;pts=[(x-.65,z-.75),(x+.65,z-.75),(x+.65,z+.75),(x-.65,z+.75)]

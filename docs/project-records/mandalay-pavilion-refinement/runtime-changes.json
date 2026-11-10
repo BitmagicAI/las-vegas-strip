@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell--1_3.bin",
+      "bytes": 346429,
+      "sha256": "b90907a43ffda12e96b3f073e17610e69887dd5b83640cffd72e4d2bc3679d16"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "3b29cc8cabe74c4351fa103a831647b4beec41569a007df7754e5235c11eb590"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/mandalayExterior-exterior.glb",
+      "bytes": 6763464,
+      "sha256": "899330f69a816cb8c341d158242bca12a338c521ef174f29a58a2ccf14acb0ed"
+    }
+  ],
+  "newLfsBytes": 7123694,
+  "cellFiles": 186,
+  "unchangedCellFiles": 184,
+  "sharedBakes": 1
+}

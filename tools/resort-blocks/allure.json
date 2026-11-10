@@ -7,6 +7,17 @@
       "provider": "Google Earth",
       "imagery": "2022-11-09",
       "establishes": "White solid ends, glazed curved central tower, balcony bands, red adjacent lower buildings; visually inspected."
+    },
+    {
+      "url": "https://pvedi-ae.com/project/allure/",
+      "provider": "PVEDI architect",
+      "establishes": "Pool/court, arrival canopy/booth and tower imagery personally inspected; photograph date unknown."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14387,-115.15947&heading=35&pitch=5",
+      "provider": "Google Street View",
+      "imagery": "Feb2026",
+      "establishes": "Silver canopy, guard booth, palm median, blue-base south sign; personally inspected."
     }
   ],
   "components": [
@@ -25,8 +36,10 @@
   ],
   "remaining": [
     "Exact crown and balcony fit still approximate.",
-    "Podium leisure deck, pool, landscaping and arrival details unfinished.",
-    "No full public-route traversal."
+    "New north podium/deck elevation17.5m and pool20x24m are photo/aerial-fitted, not surveyed; secondary fifth/sixth-floor descriptions conflict.",
+    "Private amenity-wing interiors and continuous lift access are not implemented.",
+    "Arrival sign, canopy and sparse furniture/planting are original approximations; full landscape detail and garage internal circulation remain unfinished.",
+    "Full-site public-route traversal remains incomplete; scoped arrival/deck checks are recorded separately."
   ],
   "geometry": {
     "triangles": 24298,
@@ -43,11 +56,39 @@
     "note": "Mapped footprint retained; facade spacing and roof details photo-estimated."
   },
   "evidence": [
-    "build/city-exteriors/allure-final"
+    "build/city-exteriors/allure-final",
+    "build/city-exteriors/allure-amenities-baseline",
+    "build/city-exteriors/allure-amenities-preview",
+    "build/city-exteriors/allure-amenities-walk",
+    "build/city-exteriors/allure-amenities-final"
   ],
   "tests": {
     "typecheck": "passed",
     "installedViews": "All three final views inspected; no obvious z-fighting.",
     "materialFix": "Exclude glass balcony guard allure-rail from generic metal scanned detail."
+  },
+  "amenityPass": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/allure-amenities/",
+    "sourceTriangles": 4434,
+    "addedCollisionTriangles": 1063,
+    "preservedNodes": 16,
+    "scope": "North podium and pool/spa court; silver arrival canopy, guard booth and south sign. Existing tower, Ahern shells and private-unit interiors preserved.",
+    "dimensions": "Inferred17.5mdeck/20x24mpool/5x5mspa/5mcanopyclearance.",
+    "foliage": "Four existing CC0 Poly Haven source trees, foliage source unchanged.",
+    "checks": {
+      "typecheck": "PASS",
+      "applicableTests": "3 PASS",
+      "sourceAudit": "4434 authored triangles,zero degenerate;foliage excluded from source count",
+      "packedRoutes": "1308 samples PASS",
+      "normalWalk": "8 segments PASS;all8endpointimages inspected",
+      "optimization": "level+WebP installed",
+      "singleBake": "PASS",
+      "runtimeCheck": "1 GLB,0 not optimized",
+      "finalViews": "PASS,four matching daylight views personally inspected",
+      "smoke": "PASS,nine stops,zero failed requests/page/console errors",
+      "package": "PASS,1928 present,zero missing/unoptimized"
+    },
+    "performance": "Similar medians;pool/overview p95 slower3.0/4.4ms,explicitly recorded."
   }
 }

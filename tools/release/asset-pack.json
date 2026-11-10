@@ -1,14 +1,14 @@
 {
  "about": "Runtime files the game loads from the ignored build/ folder. Made by tools/release/asset-pack.py; fetched by tools/release/fetch-assets.mjs. See docs/ASSETS.md.",
- "revision": "2026-10-29",
+ "revision": "2026-11-08",
  "pack": {
-  "name": "las-vegas-strip-assets-2026-10-29.tar.gz",
+  "name": "las-vegas-strip-assets-2026-11-08.tar.gz",
   "url": "",
   "bytes": 0,
   "sha256": ""
  },
- "count": 1639,
- "bytes": 1165909526,
+ "count": 1932,
+ "bytes": 1237651792,
  "files": [
   {
    "path": "build/arrival-reconstruction/door-black.glb",
@@ -35,10 +35,562 @@
    "kind": "optimized"
   },
   {
-   "path": "build/baked/city-lod.bin",
-   "bytes": 20273584,
-   "sha256": "781f6351effa6c30674d1399e94ed3730a4aa7e850703803945c10a6ab59ca48",
+   "path": "build/baked/cells/base.bin",
+   "bytes": 845,
+   "sha256": "79503e5ebff4b4dce6547895364d6cb1d5098d2e27782b652e97229a0167eaee",
    "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_-1.bin",
+   "bytes": 698077,
+   "sha256": "5a7f5ab12ec55966da1e1310dbfde5bc8500de1aa5bd61bfc15a73c2eb1c355f",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_-2.bin",
+   "bytes": 300095,
+   "sha256": "5f0dc9f1fa5c17a1a05cabca4a1d90c25f4eaa4ad2855c0908fb5bbd67a865ea",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_-3.bin",
+   "bytes": 123171,
+   "sha256": "3b1dca04e6cb7aeb3820d175b4a6b238192f65f2b7fbe7a55d5af548d6711c35",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_-4.bin",
+   "bytes": 238520,
+   "sha256": "f45c83bafc5dbd9a194c14128ecb211325b7a17aa738ef795afbe1faabf45075",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_-5.bin",
+   "bytes": 170897,
+   "sha256": "09241ba070927709ee1b7d9a00ab286e60ff5619472a151c46d98b488627ef90",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_-6.bin",
+   "bytes": 9736,
+   "sha256": "3418baad61d393fb906c682a16b7cbac247c2d08484763cdabd0675672aa65c7",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_0.bin",
+   "bytes": 1793382,
+   "sha256": "46358d0451c9bef1aa50ab7cb11b0e01b249be736d77210d663265d6a94227f5",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_1.bin",
+   "bytes": 1203210,
+   "sha256": "02a78019eda3855ae65547137142e4f7bf2413813693e0514b9127ef7eb9d404",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_2.bin",
+   "bytes": 771757,
+   "sha256": "89fa0b71fa61ede3311dcf3c50389978e03381ed43773900e81b925a3f7e6b15",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_3.bin",
+   "bytes": 346429,
+   "sha256": "b90907a43ffda12e96b3f073e17610e69887dd5b83640cffd72e4d2bc3679d16",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_4.bin",
+   "bytes": 237815,
+   "sha256": "bdfb84c988b6898c284df0cdceb2e5ec0be497c6b0b87e5fca36cf3f05fe2beb",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_5.bin",
+   "bytes": 35585,
+   "sha256": "8e40e7ba856e46ffa838dba237f468bcacb5b1b533691284e5479db9be5272b0",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--1_6.bin",
+   "bytes": 323,
+   "sha256": "b32a424101b5dc7bc4977bd3e8885ca1a9e6b82d6a49eda8de4557688d863b56",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_-1.bin",
+   "bytes": 257137,
+   "sha256": "a5cd30eb0767cfcc52470483ea6b2aac8eaaa397c87be50042b1f1de032e9066",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_-2.bin",
+   "bytes": 165547,
+   "sha256": "ea1e4135c11bd7a08e9570b546315704fdac19ac2193185c7f0926f2040c0a31",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_-3.bin",
+   "bytes": 115804,
+   "sha256": "40d2b534df59537b8cd8ee0744c8c841ff161413b52837c6d1861abf7b2fa616",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_-4.bin",
+   "bytes": 209862,
+   "sha256": "46c55b62c4e3cf0d863c3d2be155fe4417d1a31db4b3b7c0e0441b926f2d3354",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_-5.bin",
+   "bytes": 93353,
+   "sha256": "d04dfb747a4c4dbe7b506881d7abb6dd1f4f54b72916fbe22f8e5dcfb38f9fac",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_-6.bin",
+   "bytes": 16099,
+   "sha256": "2eac680702651e139cf9231086057657161ba2707e256a3e4fafff6756b71b8c",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_-7.bin",
+   "bytes": 487,
+   "sha256": "431d000e31c50256a02d56419704f9f226dab6da7f0e87e2f9ef7274f0018e90",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_0.bin",
+   "bytes": 240190,
+   "sha256": "251a376bf04b94919b7ce7803650978aeeaa2f0fc585e172e6babb32486d2d0c",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_1.bin",
+   "bytes": 252310,
+   "sha256": "5d1df6f3df5dbc65515831dbe8a69285aa4f9361c8daf354a1fba06c3cbfcabb",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_2.bin",
+   "bytes": 708542,
+   "sha256": "787a0eb2c6f0a19ec9c9c2220d70920530d38b371e2fd9fb1e6dee28870af88b",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_3.bin",
+   "bytes": 259851,
+   "sha256": "1c03656f3bbc13d941e31c453b70cdc13b8f95a29b6deed6d13bd31f39adbb75",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_4.bin",
+   "bytes": 181026,
+   "sha256": "a9234ccac1e145b4bf470c80b1ea61db9e78bbff3543b20dd2e1bf1a47ab1744",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--2_5.bin",
+   "bytes": 7224,
+   "sha256": "b08a5dc39a7c94ea6846c00d9d7d6ab5f0f1c8cd13d595bfa3a2ae4fcfe336ed",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_-1.bin",
+   "bytes": 83691,
+   "sha256": "a554670a3a20a54729cbda902b1ab159494e6c89a916565aeff67ff646688291",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_-2.bin",
+   "bytes": 25670,
+   "sha256": "e763c69d983764f89ab48183be1db2a59190f8180a434b74ca3ce337511b62e7",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_-3.bin",
+   "bytes": 26297,
+   "sha256": "db64e4f6bed343659dc4b8a48089cb4c2854f3f6981c19abfa9d2c38ddf06481",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_-4.bin",
+   "bytes": 59460,
+   "sha256": "93c5d3f1dcc34437d51efb8cd7f662f02098b6e10f255a0660618aa862f2430b",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_-5.bin",
+   "bytes": 61749,
+   "sha256": "86a33fef31049fb939da23f7540d0669e3383375312a3819c3d754ce290adcc9",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_-6.bin",
+   "bytes": 8139,
+   "sha256": "ac5d9f521514608ef9eafcef420f545d58af99bd37584ccb8bbc06d6632f015b",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_0.bin",
+   "bytes": 125392,
+   "sha256": "e9010e687a677a9364dcc3239baa7c6755f2499e24f03a9946566ce1b55b067d",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_1.bin",
+   "bytes": 14128,
+   "sha256": "087f594707e01e88a5b4e3612086eac2f5264128e928d722ac3c707c1aea1374",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_2.bin",
+   "bytes": 30215,
+   "sha256": "e715e8167a6a02d24680b341505f94be856b857091df8b140b8eb0696fa5f8c6",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_3.bin",
+   "bytes": 66819,
+   "sha256": "76713e1216eca6083491d1157bedaf1eebf413fbcfed231e504b9dcdf6fefbf3",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_4.bin",
+   "bytes": 28667,
+   "sha256": "e2245bef22370a328ca7c3ad716385f8bc9386379e94cb09564d78cfac3f1927",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell--3_5.bin",
+   "bytes": 908,
+   "sha256": "5264d75e46ded27b49dc04efe1669203024d94e8efee733bfc9bfea932b0aba0",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_-1.bin",
+   "bytes": 1564325,
+   "sha256": "afa06a2efb21bb028649bfbec96b657d882208c3dbecb214c71f1f9e56822faa",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_-2.bin",
+   "bytes": 724543,
+   "sha256": "b8dcd2721f9fb4324bb72e8cb19858de1de3667098c76f69d52bf96732a7b38c",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_-3.bin",
+   "bytes": 256408,
+   "sha256": "55a5e0709c4ac570a7de52c98811132870466ef1e8eb86af95dc7f7d7d015514",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_-4.bin",
+   "bytes": 402546,
+   "sha256": "f2855e89bd022ff95fa19c6fba26a5825855372e751430d165530001a55d41bc",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_-5.bin",
+   "bytes": 142157,
+   "sha256": "893ec00bb50560f9415cc1ad35c50b1268d17f3fee86f9d3337a533306f4a77e",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_-6.bin",
+   "bytes": 12294,
+   "sha256": "afa6f1f22605b3a3b0a921f25ac17243e06692e95529e49702af456f9f4ae748",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_0.bin",
+   "bytes": 1586913,
+   "sha256": "c9ab0d04399272d2262dd7009e96ec7f04d3ef386f4385776bb30a77934341af",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_1.bin",
+   "bytes": 771224,
+   "sha256": "24265b47d6e46689ce2ceb25bf4f497a561ce47c787184f46d7da7bc81cf965c",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_2.bin",
+   "bytes": 367514,
+   "sha256": "94155fd70b24b631dbf0643227ea18837c58fbbf2cc89aa92475be66eb3cc5e3",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_3.bin",
+   "bytes": 332807,
+   "sha256": "13f22191fd2b816dd2f37c174f5800cdb4af1842d64c19931d9df5457767633f",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_4.bin",
+   "bytes": 108373,
+   "sha256": "f3680cca9974519e412a5c96958751d2cb67be6c112f55cc041848c9c972b74c",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_5.bin",
+   "bytes": 36394,
+   "sha256": "2d1d5938f970aa96e3ac850d17d2ba981a3c74a45050daa3f45ac932e07c378c",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-0_6.bin",
+   "bytes": 304,
+   "sha256": "ebd3584e2fb1ee1b818532d24e0306eaadfbbdaeccd54bc81fedcde52865e243",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_-1.bin",
+   "bytes": 321348,
+   "sha256": "861cb3861adba83a0065db8fb0dfbd62d2bcb605dd3413378dd3c47d4a714e33",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_-2.bin",
+   "bytes": 167641,
+   "sha256": "d3e7fc1f6dfd93fec319285a8743f2167a898896dce1470179ce5ea570f209af",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_-3.bin",
+   "bytes": 668796,
+   "sha256": "f7e19beed92501e261c6b249e117b9f92c6a365f1c6938b22ef389a339180a5f",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_-4.bin",
+   "bytes": 410612,
+   "sha256": "f2c6c8b3e86f16f2cf7667b6b06dc01ddb661c47dd792f90a16e1ac96f8655e9",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_-5.bin",
+   "bytes": 305368,
+   "sha256": "544c8cd437c8ec1eb6aaf4d53a779723accb43e4b61d87d9f2a7d21b94e15cb4",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_-6.bin",
+   "bytes": 55885,
+   "sha256": "9c1f6ca94be9c0fef23eec41544d6df41dbb5e1d80c1d4c040f0aa76601db917",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_0.bin",
+   "bytes": 240324,
+   "sha256": "0acca36734dbb5bbe7529adabe1d1c1406e70411f34c6646cb88b3f0820f6fda",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_1.bin",
+   "bytes": 257560,
+   "sha256": "4142d5c806c9d2e5be0ee24e875cfcdae4fc5db09c504c818a39c644e2518803",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_2.bin",
+   "bytes": 32153,
+   "sha256": "964f5b85e8cd6409b74e45a752f9024df175fe660a66543c092f8c28b9cf2165",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_3.bin",
+   "bytes": 520,
+   "sha256": "a9bef3af7f2eebc9abc7091f834f8b1f1000dd22dc92b27af5f762e8ad273c2a",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_4.bin",
+   "bytes": 405,
+   "sha256": "1a596ba25f8981822c7c9b376a37f2bd2d014345c5551d9d33e3f2841151bfbc",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-1_6.bin",
+   "bytes": 340,
+   "sha256": "061bd689a9ec41859e578215017a9de39e8ae392db78cafa1f21ea96c62bb04b",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_-1.bin",
+   "bytes": 300655,
+   "sha256": "4881a618be356545561a1d32593fcbb119d83ea2aa48a9e25e3c0516f585c434",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_-2.bin",
+   "bytes": 288611,
+   "sha256": "c058a59030e461e4b4b81393e7f4f272902d6f94904d065cd9bb8506c1cc9508",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_-3.bin",
+   "bytes": 226651,
+   "sha256": "6a17f9e0055e36f32a943e921bf1cd38bc28c9c4e94f8be0df88ea48460b4e55",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_-4.bin",
+   "bytes": 256546,
+   "sha256": "5fde0899a98896f9abb3ce4c900f221c9e18714b796071302951d7fc6cad0072",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_-5.bin",
+   "bytes": 699127,
+   "sha256": "4c01742559376a9af9fd71827f6b1c65838bd5c5234d709745323be148b4c76e",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_-6.bin",
+   "bytes": 272701,
+   "sha256": "5403de3119ace253e98eeb8a638bfc7326130b2e7d05069cfc10282358320d93",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_0.bin",
+   "bytes": 199984,
+   "sha256": "2e48d42547cf7a0b5e589f188175811960e168528cd86563f84bfa7f3ed331b2",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_1.bin",
+   "bytes": 435285,
+   "sha256": "d39d7cef40b64c604797eca878fbc6f9c561cd2aa0cfb9e10d91a46d2db71683",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_2.bin",
+   "bytes": 59559,
+   "sha256": "16887454301a9fd1d44f1d38c47383b473e77e7c90964f89af1799659af679a3",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_3.bin",
+   "bytes": 119308,
+   "sha256": "74df357f61b402c225327f7116e7d838408293e2cd0ec5d8d999e3a6eb7b57cf",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_4.bin",
+   "bytes": 81820,
+   "sha256": "60d42d760fac1357b036eb1fd20a0a7843592a9647595f34966b4329cf1777d0",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_5.bin",
+   "bytes": 559,
+   "sha256": "28679d12114107bb14c3df9f5e13d4c24ef2ca35a9dd4d9ef039a57da9b8bb52",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-2_6.bin",
+   "bytes": 423,
+   "sha256": "3939d45e1f69368a4f51fa10ac00160332885b6f16686150c04c85b96e377f86",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_-1.bin",
+   "bytes": 785,
+   "sha256": "60f894c97b85b37aca95a789a1c03cdc4275373069b0d75ead1cea4f2ee3a510",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_-2.bin",
+   "bytes": 2117,
+   "sha256": "7556e0ac82051a7b475cbde979fa670d57fb2a82ebc9b5ee5b85bb46ad021acb",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_-3.bin",
+   "bytes": 446,
+   "sha256": "e43d6dd3b110ee9f0c1b5577b9a3751d3988479b300b4c5ba3e45da1c4c0cb75",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_-4.bin",
+   "bytes": 1844,
+   "sha256": "c1782acd06227b7b6102edcbbaf0a15273492b1c6ab105054bcee3df45f0e185",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_-5.bin",
+   "bytes": 1723,
+   "sha256": "3c6a18dba6919c8d8ec0f6d64af1653582df4ecf37befc8333991d67b05e3a87",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_-6.bin",
+   "bytes": 333,
+   "sha256": "f5a2d260b274d5da63204ee4483c692ffc2135eebbe54eae947c2cbff99ae638",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_0.bin",
+   "bytes": 573,
+   "sha256": "f34e25602a7101e1d331c1caa33435eeb2a8e771c4fe901150b646708940e042",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_1.bin",
+   "bytes": 1736,
+   "sha256": "31c6f846cf9cfbee516d364867a2fe1df93678aaa429b0e89ce19a00ecb94acd",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_2.bin",
+   "bytes": 1676,
+   "sha256": "14160d5379158ac16d266d566795f024696ca6fd8923f429ada5ace28b7ebd42",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_3.bin",
+   "bytes": 304,
+   "sha256": "d8563fcbf877fbd20833052680f88df30b5e240917590776d0da143e0281a3b2",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_4.bin",
+   "bytes": 461,
+   "sha256": "51c6081705e14f5fe9e64d34fb2b9731d4901aaf3686fe1c9733fdeacd267f0b",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-3_6.bin",
+   "bytes": 414,
+   "sha256": "e63e0665a698874a13df264745ae4c1d445ca154c8f24323d265fabdaf49f5e8",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-4_-5.bin",
+   "bytes": 383,
+   "sha256": "58d3da63fba9c7b8981e56e310ca1765319714e81210536551ea83397746bae9",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-4_6.bin",
+   "bytes": 346,
+   "sha256": "6cde99ce485fc3218591e26e89310fb78efa7e2a49cadd76a57a3298412fdc7a",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/cell-5_6.bin",
+   "bytes": 227,
+   "sha256": "61ba2a222ac9c86c68f171af4a97a5601215897cb7a2e15133ba0c3a2e78caf6",
+   "kind": "original"
+  },
+  {
+   "path": "build/baked/cells/manifest.json",
+   "bytes": 13801,
+   "sha256": "a52af8488745b255453c80c997c596c2c9f062f9208db0d407c11f6d38da2844",
+   "kind": "runtime cell manifest"
   },
   {
    "path": "build/geographic-strip/access/bellagio-via.bin",
@@ -137,16 +689,1114 @@
    "kind": "original"
   },
   {
-   "path": "build/geographic-strip/city-colliders.bin",
-   "bytes": 13048560,
-   "sha256": "0a9224a2f1d2e610fc7a404b8f99df812e4f4feec21034c3d9ed7e2cfbefc6b1",
+   "path": "build/geographic-strip/cells/base.glb",
+   "bytes": 5440,
+   "sha256": "644016bca4984a4acc587f6a9aa51c4ec356510dfa8a5227e04cb454691cb1c1",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_-1.glb",
+   "bytes": 1683884,
+   "sha256": "a33d3653e8ed1208b55b9f46d02a35f49687962cd6b919d990a25cf463b0c5c0",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_-2.glb",
+   "bytes": 3983236,
+   "sha256": "63459eac50cc58edaea3502c7cbc9a6c225548416530dd54ce2cc4bd20c2ab37",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_-3.glb",
+   "bytes": 1727808,
+   "sha256": "770420031fa67611702aa5ced4ece7f052cfb792a6b74dfcc7b0c46cd09db3d7",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_-4.glb",
+   "bytes": 1423364,
+   "sha256": "623a068814a855e25baaf59a43810562121cb6d8179fec32bac5973980d559c8",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_-5.glb",
+   "bytes": 667208,
+   "sha256": "949a248d75bed084e31b106568df327ca73523027959fb2afe5217c5a0b01872",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_-6.glb",
+   "bytes": 77892,
+   "sha256": "17f3495bf1fa84caa692a0697e0601c746fe2bbf12e01459935283761912ca54",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_0.glb",
+   "bytes": 3121828,
+   "sha256": "69cb12fb931bd0fc2f35d3c9722f440bd3dad285506f21f3c19ca879ff9ff183",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_1.glb",
+   "bytes": 3494412,
+   "sha256": "855c3b0941982881e84dc6c56a59ac5971203d66a32ded76b07b5b48f7bff6cc",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_2.glb",
+   "bytes": 4138344,
+   "sha256": "22fdbc8dd0efb2141c7ab03f1dd39d0174d2056b3977d237613eb43290cfbbf1",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_3.glb",
+   "bytes": 1915088,
+   "sha256": "df78eba01524ee3d8da023cce27e46dd8fc3669c414b8b5962a63b1c5bf16059",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_4.glb",
+   "bytes": 2561792,
+   "sha256": "5fec4ad1023c99215d91a9b38fcc34a8795ab73e1ea597ba995e32e418400858",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_5.glb",
+   "bytes": 634296,
+   "sha256": "35e5526fc200472acfa82828533913d8ad438f145fc649623325f8b91afac996",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--1_6.glb",
+   "bytes": 13104,
+   "sha256": "386428eeb8148ae8e6d94faa08c560c1f98ea6924c5acb20c35501e4145f87ea",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_-1.glb",
+   "bytes": 1803596,
+   "sha256": "0f33f1aa3eb051b817839ddf0cf4d86470ddfe60f4bfc3c1d48eb2a89e8507b7",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_-2.glb",
+   "bytes": 2001224,
+   "sha256": "967585df66c2f5b59bde0adeba44ccdf52779ad386af1daa7d7f63cd0215081f",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_-3.glb",
+   "bytes": 1659172,
+   "sha256": "c7c4337adc36de89882bd6e699b75255e6979e0bb6e96c5357c351e182586573",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_-4.glb",
+   "bytes": 1484324,
+   "sha256": "4c43d2171834c43c803d60e25eaaed62234e488e89aeb19c4d2987ffed0c911c",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_-5.glb",
+   "bytes": 738800,
+   "sha256": "cac03d42da56fd5e5b3c2710b52545b9014e5a16073b9bd8b8d026580210f3c5",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_-6.glb",
+   "bytes": 180844,
+   "sha256": "8ab0eff6e5c9f01513c6d6675a108e0418334746ef7aa2b4f8e72d724820b8fe",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_-7.glb",
+   "bytes": 13724,
+   "sha256": "051deeaafafea284f93361d6422e131a3ef3fd8688553387b41c7f2638f8573a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_0.glb",
+   "bytes": 4366592,
+   "sha256": "9f862ffce5c67d39b817ddd6959880b3897d8d331a90b3ac4d716d70dbe14e4a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_1.glb",
+   "bytes": 2021816,
+   "sha256": "1d6a31b219827b405681ed0ee216dea76016413aa77ed09e84e4f9f7d50c6866",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_2.glb",
+   "bytes": 1796300,
+   "sha256": "71707a56b78b074a1cc867b7985dc148f4324fd9528ae4016a44963e79e10c79",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_3.glb",
+   "bytes": 2161372,
+   "sha256": "ad1dfcdbe9f20e751ceaa477d9c2a16a885cc5e2548c2225d0ce7c69c3412daa",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_4.glb",
+   "bytes": 2660416,
+   "sha256": "42939c4f23f77526cd69174cdf5498aca55ec17ab80c60f7d63c353e6c3df154",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--2_5.glb",
+   "bytes": 126380,
+   "sha256": "63a0a47fe7876ac125eca40d475399660e5964a1ee301b0bc4c07fa310f88d88",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_-1.glb",
+   "bytes": 345624,
+   "sha256": "0123778d48ec08203ab9ffdec6a334adda46814e994f1ca8ca13c5f7e936e5e4",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_-2.glb",
+   "bytes": 386196,
+   "sha256": "a70b5b3a65b58c3ef38b9ec4db11a172103a4c41da7e1fbc9654344382e906d2",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_-3.glb",
+   "bytes": 381960,
+   "sha256": "bf8c9d881cb17720657d9ac0a8f4aa049fc66718186706ec12e15fc51d206054",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_-4.glb",
+   "bytes": 508232,
+   "sha256": "26cf7e2d356080546fadddfc5771ab2d7dc08b1b67f93dbdaae6d753cb39d663",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_-5.glb",
+   "bytes": 287924,
+   "sha256": "e1a4851decb043def8cdeda09865f2040113072106aaa67dd8d1e50d83031c47",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_-6.glb",
+   "bytes": 81856,
+   "sha256": "110c87bd86b151663165f3db9071f799abe5d23ab43b49c2bd62d06567865f42",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_0.glb",
+   "bytes": 519996,
+   "sha256": "a54cb73fe402b22ed99d4c18b452daef7aebbad8bdf6ed6971ede56cf77ee960",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_1.glb",
+   "bytes": 241644,
+   "sha256": "f609512d32ad1f2fda236d53950d2833d24d1b538a70155e152b424636b58d08",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_2.glb",
+   "bytes": 476872,
+   "sha256": "438eb3729227ca9dc9fd9d9d468b168318ff357c4b36b588a9a95cc2b0f4cb68",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_3.glb",
+   "bytes": 1465448,
+   "sha256": "d3a94e65fa08b980ecaa656543ea88e3809292c42cb1847c65150af6a6de85a4",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_4.glb",
+   "bytes": 423592,
+   "sha256": "5ea53e0087e35d47cce0f9ec2eba8e806e52e30fed341aa87cab13be0d861f3a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell--3_5.glb",
+   "bytes": 20944,
+   "sha256": "f58de7c1ff7dd15267985a0f65dce90dbeca070695f73db5252de4b5f186ec54",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_-1.glb",
+   "bytes": 2317876,
+   "sha256": "3dd8ede368799775b4f1f2e413b5e7bb4efe54c695efccdd70391c0c1ef9bf2e",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_-2.glb",
+   "bytes": 3246780,
+   "sha256": "a464caa168eb0983741f9b969cb468d74d32843c2d1cfafb42aa3a55cc19589f",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_-3.glb",
+   "bytes": 1775188,
+   "sha256": "fd5886f90481f7f4b856858a091164aac534a28f7a8cf143b4244240ae3662b5",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_-4.glb",
+   "bytes": 2319944,
+   "sha256": "f1ae04260834c2ca3c755bcc02d229f212bbefd6a81afc4edc8536bb70999bb8",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_-5.glb",
+   "bytes": 1731628,
+   "sha256": "54098439d9ae5a718ad24e4435590fd482b1d4ad034ed19aad4ac7e9c23800e4",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_-6.glb",
+   "bytes": 164912,
+   "sha256": "d5bc346d1cb8bda52090b152ae88dc5647179e485eee63b2e10e200154bd82dd",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_0.glb",
+   "bytes": 2361324,
+   "sha256": "db7463059450c7a38df5f277faaea8544ef8a51472aa5cbe45e322fa5910b895",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_1.glb",
+   "bytes": 1956900,
+   "sha256": "6e1110409e3f244759a69c8778a6ea7ea2bdf3485cd370ab501b92ccfc33e763",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_2.glb",
+   "bytes": 1957176,
+   "sha256": "8596d2ce8efce5cef271fac3498723ac356647d44e7a6cf9963cc4884843fc76",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_3.glb",
+   "bytes": 1259492,
+   "sha256": "d90e6288441cdd3560e31b13243af7c6bd4b715376a411525d9dc3f585cf6a1b",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_4.glb",
+   "bytes": 386684,
+   "sha256": "32b07990d584553c2d7aed00979d1196694953db38caa4b043ce61c48777b53c",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_5.glb",
+   "bytes": 143332,
+   "sha256": "3ca457445367163f770a4ffafe489eac85479319509edea280c3c6d35a168311",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-0_6.glb",
+   "bytes": 6944,
+   "sha256": "0feecdc28ccbe1523cc8cabea66d1259b711771bf67493ff98971d8a78d83a10",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_-1.glb",
+   "bytes": 3251572,
+   "sha256": "a83f7afc1983ea9c8c9b3dee22cfe3e6349b93cc152905c3582981805a8bba2a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_-2.glb",
+   "bytes": 9809872,
+   "sha256": "6cc8c2944d31c611ac3fb8ac60cbc57b3c44ed7f5d8e11df4ed6a1825ce570d1",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_-3.glb",
+   "bytes": 1624532,
+   "sha256": "dbfffc546ea09c56317517dc1ee148b22779b12d3a8ee76a4ea79bebb9f2d510",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_-4.glb",
+   "bytes": 1589936,
+   "sha256": "e6dfb33d080434c73a60b1b23b632bea2754056ef4baae5f4d8dd5f41bdd62c1",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_-5.glb",
+   "bytes": 1660980,
+   "sha256": "685f30dca929687268801fe7462e15a4eb14513441a6865425ca653f3d81932d",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_-6.glb",
+   "bytes": 852512,
+   "sha256": "2e76c36bf9b2af5bc9374ccbf07ec442f809292b815bc3055e9c91f65de77eb1",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_0.glb",
+   "bytes": 1712448,
+   "sha256": "8d12f295d82ecb24e004b90077603facc15fe2281597350f0e4349588a772e2e",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_1.glb",
+   "bytes": 1494040,
+   "sha256": "f493e3bbf49f25a23f3acdfd3119ae03d753253d33dc548bff2b96470c51e3a7",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_2.glb",
+   "bytes": 523492,
+   "sha256": "70f50ecf042ac4ce74846e9793b33ecf513f77151df0a0fc0b9f2cce3a9861b9",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_3.glb",
+   "bytes": 10312,
+   "sha256": "466b15bb695c3c068537ee3b7783a90bed7801a2e7d1133cbbac94a3125f45ab",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_4.glb",
+   "bytes": 8120,
+   "sha256": "6a1208facfabf1dc0f103b211c72ce13315a8db481289a240542543cf90aea63",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-1_6.glb",
+   "bytes": 6640,
+   "sha256": "568541e89ef2aca918a3dcd297053055e5d174bd77882da9f660db5db042544b",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_-1.glb",
+   "bytes": 1560772,
+   "sha256": "53a6daed48d12ccba81d943457f1ce0ae56791354c14a0b38543820d869fff7d",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_-2.glb",
+   "bytes": 2653568,
+   "sha256": "8ae9e73aa5aa13aee63fb1a8c89cec7b4e802cf22b0ac685d2778e12768b8876",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_-3.glb",
+   "bytes": 1675084,
+   "sha256": "66ebcd5dc7d5c8339bac6c5523455c19b4cfcc0b9fa65a07e41c199fa173f2e9",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_-4.glb",
+   "bytes": 1430176,
+   "sha256": "db425f936324f86ab5a0dc83b1851473abe3a1d77eb433b320e61474dd224f28",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_-5.glb",
+   "bytes": 1232084,
+   "sha256": "46faf6e548c9a7b0321b14dc7fd573a0350a6731d0d61874ae1c938c90f8f9cf",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_-6.glb",
+   "bytes": 374752,
+   "sha256": "7b99d6a09d91c6aa10bd255564b9a566b0385bb10aa9220fdbf7687a8f9a85ef",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_0.glb",
+   "bytes": 1542520,
+   "sha256": "bd166eea9122bd95f3040cc5806ae0c82a527e58cbc291b30c643fce09185d75",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_1.glb",
+   "bytes": 1173264,
+   "sha256": "8c92f5e094f2f50f7304009b519e5a6ee2966f2f5ada8e7652ef93f993830194",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_2.glb",
+   "bytes": 876204,
+   "sha256": "3fdf16ed40d69972f6500a5ff3b301c6a4860c40eb7959ced37b71b677eae59f",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_3.glb",
+   "bytes": 1809952,
+   "sha256": "01799c888f73e02c13244e3e4634ee67334a8629dbc84ded90e16d866192bdab",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_4.glb",
+   "bytes": 1492120,
+   "sha256": "d58c4b8f711a8820069677cfacd26f583b30157683c4ab28f6eaa2fe65bfdbc9",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_5.glb",
+   "bytes": 11248,
+   "sha256": "9a06628b0cc3fab1561f2d0e18c3bed801748c43b4bd40d208b1734faf7934a5",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-2_6.glb",
+   "bytes": 8852,
+   "sha256": "413b56b87a4aa73123e7bc47acfac74e293a03a5387dc3cbc20247320df13084",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_-1.glb",
+   "bytes": 21168,
+   "sha256": "180bee11cb84ac74c63d3a061439132165279118dfacf407f4d899c3494e36a7",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_-2.glb",
+   "bytes": 46628,
+   "sha256": "ad7135f638e516ffbc6a88533f4185e1131a3ad1aa333235a608463c24d61610",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_-3.glb",
+   "bytes": 7172,
+   "sha256": "a43486bfddfc05f873a095e04495a5cb3ecb005eb0831b1a4e24680179f630fc",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_-4.glb",
+   "bytes": 39000,
+   "sha256": "feaaaebd32dc8356c15e3699216e8247ec8fa47d8f6563797a7bc57e5a58616d",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_-5.glb",
+   "bytes": 30160,
+   "sha256": "5014badfd10e412653b6dc17efaf3c8f349261f6e6cd87853b0358f016c42840",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_-6.glb",
+   "bytes": 11332,
+   "sha256": "5d409201cb2927f7ff48abe843166122e90a452ff839af56f76c4a0de8c1c76a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_0.glb",
+   "bytes": 14924,
+   "sha256": "6106a63553d2b52bf1c2967fcdc35b9e1fc57f9a8ae69c6e7ee8d94f0f9552c5",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_1.glb",
+   "bytes": 38880,
+   "sha256": "a5720f566304e2249ee0f1092020017f0e1a7d0af13a5819a9e59bc5d4e97a6f",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_2.glb",
+   "bytes": 40652,
+   "sha256": "dd116a0d0c0d249c0636a40d258841e667a48746b57ce1f84037a3e976b83fa4",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_3.glb",
+   "bytes": 9992,
+   "sha256": "55bdc0d4ff2b49ec2b114b7cc5d85b5c85f48ba54ed67a4a9abb5cdb25d89ed0",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_4.glb",
+   "bytes": 12644,
+   "sha256": "5b1201e54a00a19adc8387d4f0be5bc8e21ccf8fcc5467bdf53b974da4f46d68",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-3_6.glb",
+   "bytes": 8740,
+   "sha256": "494c47a77d1e34ba2de5d6318ee656195044e1555a97bc8916faa1e8a7c9d4fb",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-4_-5.glb",
+   "bytes": 11960,
+   "sha256": "0176e3defe5989e743506e1e9bfe2f66047d4cf224d076359f9280d8bc178b6f",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-4_6.glb",
+   "bytes": 6984,
+   "sha256": "7c7cb2ad3c19ad39d8593d233ebe07d86293d3c23b60a787b4b7caed15919d20",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/cell-5_6.glb",
+   "bytes": 6624,
+   "sha256": "3851d871f20e83fe20913ff6fad63fe541a169f487150ebde960db59584dae8f",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/geographic-strip/cells/manifest.json",
+   "bytes": 39796,
+   "sha256": "b54375bb883be7e8d7bf21ba77fbf0f2b30e236ad23f4c4367b81b0737a8f1be",
+   "kind": "runtime cell manifest"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_-1.bin",
+   "bytes": 209052,
+   "sha256": "402ce6fb6b8fb3701d00278d2e452d6f059f3955ec7cc8f1083c224f6e6b78fa",
    "kind": "original"
   },
   {
-   "path": "build/geographic-strip/city.glb",
-   "bytes": 109697888,
-   "sha256": "38e14b86f84980ae8efcaa5697b82c64f9bb4febd67affae7c8c87ec6fb07511",
-   "kind": "optimized"
+   "path": "build/geographic-strip/collision-cells/cell--1_-2.bin",
+   "bytes": 485396,
+   "sha256": "e1d869f0e04876d93c4e8cf132ea1d8100a126fdc6a794ada925d6b70c7ab9f0",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_-3.bin",
+   "bytes": 220704,
+   "sha256": "a2ed125fb77ae1d9619f57a628c98f5f935c57fb17114c921b999ede66141b20",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_-4.bin",
+   "bytes": 180844,
+   "sha256": "1c0179163362d1b5afde886001ed251679fdcbbe05f159f5d7a65acc7d827077",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_-5.bin",
+   "bytes": 105452,
+   "sha256": "7b9b96192f50820d49bfbe09ce2a209fb9d4475fddd0900502b7586efa05de3a",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_-6.bin",
+   "bytes": 15416,
+   "sha256": "1a7070b99ec22aba2656b43120f1eccdca0291a63bfad049b9ed9284ce1b0fa5",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_0.bin",
+   "bytes": 347540,
+   "sha256": "89fc2c13ccf34c8933aa1e91459d9162ca182d5b5975dcf83907682eb414bac5",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_1.bin",
+   "bytes": 406736,
+   "sha256": "e02aa93076e1d0f375b7a904c2f771b53c8edb62f1a1813a157181e5e39e0246",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_2.bin",
+   "bytes": 505696,
+   "sha256": "e42b9a83c4a907fc46aef6d124bc78ac12c03ee0d8b5a49e79cd224da98dcdb4",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_3.bin",
+   "bytes": 205436,
+   "sha256": "03d1ebb4f0074f698b79018551431a24bc2af238addb8d029449a5745f154ab6",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_4.bin",
+   "bytes": 283780,
+   "sha256": "7b08a71f08e19f8d60b5db6a7b74bb21264fc13d30c142b86c026d234a907816",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_5.bin",
+   "bytes": 67556,
+   "sha256": "45fe154f18502ba2522f28b9265cf988dc8657cb3d31487c2100b2c5a5cd43b1",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--1_6.bin",
+   "bytes": 800,
+   "sha256": "64b4a01079df06b8c2326074f01b0a98a52e16a1a1ead22da5862c0e59e725a5",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_-1.bin",
+   "bytes": 211500,
+   "sha256": "c8897ce6b0217557b842edc7b178522f7caf9061a0c0a4dfa730a0f45b16c6c3",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_-2.bin",
+   "bytes": 236940,
+   "sha256": "48390e1b77a7149ac2937e5c5e64db45476e56c98138a5da0aff6680233902b0",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_-3.bin",
+   "bytes": 203456,
+   "sha256": "bafd7216e4453046b3343915a4fbe052d8a8f6252e2311b67e97bb27dd486d32",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_-4.bin",
+   "bytes": 212584,
+   "sha256": "cbe7c59461f978ec848b0b292c7e7c03e3ba1a68029f8d0e5b39be763ae9fe17",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_-5.bin",
+   "bytes": 115524,
+   "sha256": "3292dd9719fe1b16f847905f79610535d5058331fee48e825d810a6a295e108f",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_-6.bin",
+   "bytes": 27724,
+   "sha256": "7f31df4ba6a6368da4ad25e6780b6f48611f0e14f201e593aa2af5d77feecf65",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_-7.bin",
+   "bytes": 944,
+   "sha256": "092194f4ba2137cbf8d5720ce10b9c015bcc93e52b45037ec73db5d0ef660036",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_0.bin",
+   "bytes": 506520,
+   "sha256": "b6827a6d02ae778e212ae1ad904702b3b2e28c87b057b7d4b65d67a8516748b8",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_1.bin",
+   "bytes": 247708,
+   "sha256": "41a231d7a8c4144dc26bb12fe9723129ac2ef82b659333c9a62887bb5b5ad343",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_2.bin",
+   "bytes": 217120,
+   "sha256": "f947af914f47b5dd2044b672efa9f072c757e69914411ba8141fbb5bb3d5fb37",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_3.bin",
+   "bytes": 251288,
+   "sha256": "6b7f4d1cc65b9b307329ae2d8818afe0b42a1cb68cda8b17abce5678b20cf04f",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_4.bin",
+   "bytes": 319400,
+   "sha256": "0615e505166d773ee9212782d4aaa6d116370f110a6b39a5f89277950113bf0e",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--2_5.bin",
+   "bytes": 15144,
+   "sha256": "efdbdc37a4d07c5dd2c32f07213ca5699b95183c8d950a6d7682697ff3b6e063",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_-1.bin",
+   "bytes": 46556,
+   "sha256": "0f54c0eaac1ae9082ec2e5356dfe4e1afba9b8796cb431d36b0c3d5bc3c5ca99",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_-2.bin",
+   "bytes": 48472,
+   "sha256": "93acba013afb25273081a3b7b3450fd1faf620c1fc9ecdd210d2c6f47d80acb4",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_-3.bin",
+   "bytes": 48464,
+   "sha256": "9acbd7444c0d06d10d7fbafe5b979e4a0b6cfd0fa0f6b5448b126667b7f16a4b",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_-4.bin",
+   "bytes": 67156,
+   "sha256": "27531b26ed9f01610a8d26b69109cd8dd1e242b887f464f3686ad0f428d11329",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_-5.bin",
+   "bytes": 43092,
+   "sha256": "fb1367130ee2cf2beb04dfb3d83baf88a062d8242e0cdb1ed0f406a239fba89e",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_-6.bin",
+   "bytes": 11796,
+   "sha256": "8397e0f1b4300614d2a20c67ac21b0c51c79593acfee3de9cc1542a9377f04fc",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_0.bin",
+   "bytes": 60988,
+   "sha256": "fe53277f8765a32a3a8e4cdc54b61b92527445057ee01bd0576ab1e0703e0976",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_1.bin",
+   "bytes": 28040,
+   "sha256": "7408de8a04c96d5a1f6452d4ad67203754d5b34b832ebd8c51af9a0823cc7873",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_2.bin",
+   "bytes": 56648,
+   "sha256": "2e0dc41bef4ed78021c7d88463c51d3f6f23e13b2af7ab9c9cac168cf2ea1ac9",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_3.bin",
+   "bytes": 173188,
+   "sha256": "f5f1a34277f37d69ee7c4ee8b5ffb27d751bf8717626a3402d86666d55d724e9",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_4.bin",
+   "bytes": 53104,
+   "sha256": "d589f818e8cfe4852b7f377275ca1f60cfc300b9fdcd6096954bb6893375f1f4",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell--3_5.bin",
+   "bytes": 2208,
+   "sha256": "aaf583c024756bbef77fc7a68cef23ff5a66867507491b864a0994f3eb92df14",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_-1.bin",
+   "bytes": 254088,
+   "sha256": "41d37c0acabc5100490c037197b56bd55973667dbe12c95b64f4d7b8b1c3a6ff",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_-2.bin",
+   "bytes": 343076,
+   "sha256": "f95f9566a74fc3c25a2b72cd5a45cd866a51278508c1764b3f9b46b3e464108c",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_-3.bin",
+   "bytes": 221592,
+   "sha256": "19896663232d1cc73b256231f3746b3f06b237d68ea98cb3c28edbd56a4c8afa",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_-4.bin",
+   "bytes": 295748,
+   "sha256": "802599e599259cc1bf013277740f12748e396a40877fd7193dad7d992aea7571",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_-5.bin",
+   "bytes": 226144,
+   "sha256": "2695513ffa5b434fb92db4a7ee67f03babf597371a8ffd2ade9838bde2a744c2",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_-6.bin",
+   "bytes": 22672,
+   "sha256": "2d861b054f711edac541d8ff36a31f30d67c7d5c1c87d3807beb38dffa7ba739",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_0.bin",
+   "bytes": 247396,
+   "sha256": "62e714331ac74bf48371fdc19e7a2ca241245f4d624daf44ee1233d02e2489e8",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_1.bin",
+   "bytes": 230764,
+   "sha256": "78914c9b96472767e27b70a1d631e56b0d8a6203a805db64834eee392abb7529",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_2.bin",
+   "bytes": 230312,
+   "sha256": "26508def7c9cbe61c598eb06cc41cb54826e2286b64136992916fce1c3e84705",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_3.bin",
+   "bytes": 153976,
+   "sha256": "7ad90cd06f509ecedb1726f795289c2ebfe7d81a2adfe581ec14c958707ed7b5",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_4.bin",
+   "bytes": 44636,
+   "sha256": "e673f7345e91b228a89e768f985eedee65d5e7a7aa7d00849517612a9e150ef9",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_5.bin",
+   "bytes": 16268,
+   "sha256": "4039d4fc26164758901208905c4f5a78db68f09f4b19acae6d11f6c1559ce991",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-0_6.bin",
+   "bytes": 772,
+   "sha256": "7f08101188fb04613d7daf585752b2c31ed6a0a4bd016d132e70bfc072e26dd5",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_-1.bin",
+   "bytes": 364628,
+   "sha256": "eb840297419203f0cbcfa9bce3fe6606151c0203de95b8e0799edba98c0cb044",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_-2.bin",
+   "bytes": 1027676,
+   "sha256": "ded4d65543951c760fe7a5272b5c5a0d0f60a596b64fcdabdc6a09740080fed9",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_-3.bin",
+   "bytes": 200664,
+   "sha256": "e06101a13c659f8646cb67d0058b50316b493361fb9d7f783a08f6af2ce8c9b1",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_-4.bin",
+   "bytes": 196668,
+   "sha256": "36aca8846a043a85af94cf37d6ba2d06698046b44a8b8c7859d07a76ee0d33ab",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_-5.bin",
+   "bytes": 213568,
+   "sha256": "7ffe9a345be3ca6b49575f26df0e05619fa410c6ff72299bd5bcf629863ea7f7",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_-6.bin",
+   "bytes": 96248,
+   "sha256": "44bb8bea08709c375d2ccf48dec8d78fad377ca17d2cabf19de2a7aac839d6cf",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_0.bin",
+   "bytes": 202240,
+   "sha256": "d2514c2342886d1eb81b035878c2f800b5be7d69f68df672edbb69f86ed82b1a",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_1.bin",
+   "bytes": 190560,
+   "sha256": "1cb69b4fddd7ed23af4cc0d8659a6bd5fd61677a1b1d87533228b09824e34c2c",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_2.bin",
+   "bytes": 60892,
+   "sha256": "4cf89d530504f56a668952cd7f2d69ae9a7b5ba78ec5f4b58d7ec7a25616863f",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_3.bin",
+   "bytes": 1064,
+   "sha256": "d6ee45fc04a5d3d2e77b563f23b7ed33d8bda00838ee2edcb31d6472cf027662",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_4.bin",
+   "bytes": 688,
+   "sha256": "ca57f7ed17e6dc539fc2d324efd2a9a67812524f1ce76e5cbbc6b8774e2d30fb",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-1_6.bin",
+   "bytes": 752,
+   "sha256": "fa258d338d3eacb2bd3cbec6128ffd3de9d1eaa3d14218cee9ec41734c3ca4bc",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_-1.bin",
+   "bytes": 201752,
+   "sha256": "1535f114d5723de5ee674ac116267212138dc1df8d1a9cfe8b721a705eee8e7e",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_-2.bin",
+   "bytes": 318796,
+   "sha256": "d5a0253759fb210035b5a51ad09be4cbdb3b5e0e490af1e85643e99bfa86440e",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_-3.bin",
+   "bytes": 205144,
+   "sha256": "e019fc32c8a63cfd0231bb170a5b55d0d11013c10b5d51929223819c51050024",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_-4.bin",
+   "bytes": 182912,
+   "sha256": "efdb0c53721dcfd60a8b893bd53bfb63f87e56232b6696691e7061712dc8309f",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_-5.bin",
+   "bytes": 164980,
+   "sha256": "2e24b6fcb99dc14099b58e70bb6d56987183ccb8ba814c856afb545d519a9521",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_-6.bin",
+   "bytes": 46272,
+   "sha256": "fffa48da6660fecfccbc52a78d2cce1bc49a5689b52266b618a3eb536b5cc39d",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_0.bin",
+   "bytes": 181632,
+   "sha256": "89bffad615781010ac63c14ebf090444dddde66a2136b585f2b69103ab7faaa3",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_1.bin",
+   "bytes": 143296,
+   "sha256": "9ff941221be2806c8f6dca6c8f2ecbc35387a3ceaf4330ec125aea37db9785be",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_2.bin",
+   "bytes": 104276,
+   "sha256": "68e3978eedfa0175a2ba5f01578a7e1cd897a1110b501db2840edeb60451a751",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_3.bin",
+   "bytes": 213108,
+   "sha256": "75187a85dc9ffa3413bc26400d96e667aa621fc277483cedffc6ce44a5237d17",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_4.bin",
+   "bytes": 178628,
+   "sha256": "7a451f06492b1b7248ca24b8ad527750f6637124a6845d71dd838f27aeaa0d80",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_5.bin",
+   "bytes": 876,
+   "sha256": "836d55f207b73888cf377be1917f2e7600720fae50f00e6079652295fa823016",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-2_6.bin",
+   "bytes": 1024,
+   "sha256": "a69e2bb7bb61fbeb747a2e26267eb8d5d87e5769ba2b67fdeb3194acf416c989",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_-1.bin",
+   "bytes": 1772,
+   "sha256": "5fd23d44acc8ddd1aa45402363839a457a8236f57ed1892972f5cd3d93470cf5",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_-2.bin",
+   "bytes": 4340,
+   "sha256": "333a9c58b00ffaf82a65fa51b6e656595cb6c1a91723756027d2bee3efc77a68",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_-3.bin",
+   "bytes": 1004,
+   "sha256": "671b81c05fd47daac72c2903e381587a802a31ffc1a84be557b39742ff8e0d82",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_-4.bin",
+   "bytes": 4500,
+   "sha256": "88036f9b1c3230edf3a19316ab8711e8549025f3c9541595a414ffdb8287a89a",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_-5.bin",
+   "bytes": 3540,
+   "sha256": "006815a2f4d43a4aa33433dc1a6a8556eacdc4b448d03b1431b74776443f04c4",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_-6.bin",
+   "bytes": 624,
+   "sha256": "a623f2ea74724106f1fdff4423b667e74e45003e806632da02793b644d9fb454",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_0.bin",
+   "bytes": 1272,
+   "sha256": "abd1aa276eb348c2eefcf7010a849c092cac1d3e6a0b1eabde09ed7f0da1a7e2",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_1.bin",
+   "bytes": 4436,
+   "sha256": "a322014c5336976d9a2c95ce7a410c414462eed69af2cfa202375265b2303f48",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_2.bin",
+   "bytes": 3576,
+   "sha256": "2777913127b460777480d71684270e52992025bc2329b307b76daf2cc62c4072",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_3.bin",
+   "bytes": 776,
+   "sha256": "4e8095089295d2f2aec3edc0732c855ee2ad966ae040fb2225632e0b42a05e39",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_4.bin",
+   "bytes": 812,
+   "sha256": "4af526d194d70f50e1e78a5b9b034d7bf16a472ef0d654a697d0f6e9f85eb281",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-3_6.bin",
+   "bytes": 1020,
+   "sha256": "1a45625adbce706bdab9d65c76e6c6d1ddbfdfb35179cc8bf16b688ff0baa909",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-4_-5.bin",
+   "bytes": 708,
+   "sha256": "5d7fc6cfc6e5bec8b1d96f1b0d5d0f2bf41ddc2d756101df58025f0b7b1d4777",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-4_6.bin",
+   "bytes": 824,
+   "sha256": "bc399477416ed13ff03b62527eb849a017436f138a8287c56e4d1a5c1d255c40",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/cell-5_6.bin",
+   "bytes": 736,
+   "sha256": "bb43a42b65c625c466c46c7c4461221983e84e1f7a002049c42141527894041b",
+   "kind": "original"
+  },
+  {
+   "path": "build/geographic-strip/collision-cells/manifest.json",
+   "bytes": 17609,
+   "sha256": "6e1e16652f0e690054f3bd6c05e1f730893c891e6d1d4fa7fa8651a88ab94a05",
+   "kind": "runtime cell manifest"
   },
   {
    "path": "build/geographic-strip/detailed.glb",
@@ -198,8 +1848,8 @@
   },
   {
    "path": "build/highrises/exteriors.glb",
-   "bytes": 12147720,
-   "sha256": "a82e1fa6e31c9abb1f444dc451684f37ecdc4cd709365eb0241c728113381489",
+   "bytes": 12056944,
+   "sha256": "b4c5c2487b5ec11de039179f085c5cf13d573ddba83df1ca044f4e8c82e50e89",
    "kind": "optimized"
   },
   {
@@ -5130,8 +6780,8 @@
   },
   {
    "path": "build/resort-blocks/bellagio/bellagioBlock-exterior.glb",
-   "bytes": 48808304,
-   "sha256": "22ac221cc5e0cd5fbb57311405cc9eaec4d30c8b1ea2abf6ac920fba94a44ff2",
+   "bytes": 49160292,
+   "sha256": "a27ac492b89df1628bd1c109ff9b877a14a277e169ff543d7c7ea6c820d9cd8f",
    "kind": "optimized"
   },
   {
@@ -5304,8 +6954,8 @@
   },
   {
    "path": "build/resort-blocks/cosmo/cosmoL14-exterior.glb",
-   "bytes": 1116076,
-   "sha256": "492350535a90a40062a33ea76cd2ff182941e55037823a733bbdbce012549ba3",
+   "bytes": 1061588,
+   "sha256": "5d68d5af32d2eb2a0db3541b2902b8be53dd9a5161a22952cfe0ffd04735b6dc",
    "kind": "optimized"
   },
   {
@@ -5376,8 +7026,8 @@
   },
   {
    "path": "build/resort-blocks/cosmo/cosmoL4-exterior.glb",
-   "bytes": 879848,
-   "sha256": "4e8aab62e6cac6aa40ab24a8f3c16be95dfe4c51bd42469b375f38991ce8b79b",
+   "bytes": 875884,
+   "sha256": "a6becf8367cbb744ea12764c9d088cb746fe387cf69f02e10cd958011cf233b2",
    "kind": "optimized"
   },
   {
@@ -5406,8 +7056,8 @@
   },
   {
    "path": "build/resort-blocks/paris/parisBlock-exterior.glb",
-   "bytes": 33203608,
-   "sha256": "01ea92d373ec9200b9aadc579e0c5ea78fa0b406157351981fbe78b302ab25d7",
+   "bytes": 33365096,
+   "sha256": "dae071b1291e8d439614f50308e86b56a54895e9cfe8f160722330335a1dd7c5",
    "kind": "optimized"
   },
   {
@@ -5604,8 +7254,8 @@
   },
   {
    "path": "build/strip-landmarks/akitaPlaza-exterior.glb",
-   "bytes": 1729228,
-   "sha256": "d0d7be2c67b22886e77563ea677e8f6f27c67c65e7e3d099b3c623bc26cc57bc",
+   "bytes": 2862624,
+   "sha256": "282115b1849c8dfba2c433c84ff542e2d456ee9b522032a094c9ae094ff41d3c",
    "kind": "optimized"
   },
   {
@@ -5616,8 +7266,8 @@
   },
   {
    "path": "build/strip-landmarks/akitaRearCanopy-exterior.glb",
-   "bytes": 96348,
-   "sha256": "5c458107f64d3b917672563a9f890ea91b5de21982578b9d6b30058f34e20ea6",
+   "bytes": 82100,
+   "sha256": "cb7039c90462c8c8d9df8ede1649dfa25bafafb6c8daf8b02ba54fc0e2bb47d1",
    "kind": "optimized"
   },
   {
@@ -5628,32 +7278,32 @@
   },
   {
    "path": "build/strip-landmarks/alboDinosFrontage-exterior.glb",
-   "bytes": 549860,
-   "sha256": "135ccc9d110e959779bacc05c8c5a7c43e2a7ab505ecdd8b7be98ca5f4c43397",
+   "bytes": 563940,
+   "sha256": "cd8285c70ca8e261ebf89f30ea950ed2ad5a9f2b5c2c97095cad3906cdb3cdad",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/allegiantStadium-exterior-collision.bin",
-   "bytes": 55160,
-   "sha256": "0cba4e373ec6d9a09fb55ecdc41378be84171298945ca26ecd7a6cacf59adf92",
+   "bytes": 58592,
+   "sha256": "8e3d4f2449a42bbcd29367cd8d71599a048e858d05cc74393ef94537860314ed",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/allegiantStadium-exterior.glb",
-   "bytes": 2206276,
-   "sha256": "31c0005d897ffd07f76f60c436480a5f1d4c9242e0719c77fb3a5512f3a95960",
+   "bytes": 2307028,
+   "sha256": "d3e3691828cc46716bd23461fba423611b39925a524db9189ee11205273cc10b",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/allureExterior-exterior-collision.bin",
-   "bytes": 48,
-   "sha256": "30d17a65bea876b0a62c957514cd908f9eaa843e0345166fff89019b871a53a1",
+   "bytes": 3568,
+   "sha256": "3d13e198c87098744e9f9ba60752fd30eb9b0099a200715512d5a852146adb3c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/allureExterior-exterior.glb",
-   "bytes": 434340,
-   "sha256": "70c1b13529b0a8526ccee9b93d3b45055c4966049bc0e3e7f15cfd56234c0d9d",
+   "bytes": 740844,
+   "sha256": "28921379468d173e906a9b1657ef6ce3230c0bf1684cebe455916a9e370b5263",
    "kind": "optimized"
   },
   {
@@ -5712,8 +7362,8 @@
   },
   {
    "path": "build/strip-landmarks/athleticsStadium-exterior.glb",
-   "bytes": 1871136,
-   "sha256": "c590b677243815f05e2f823dc43c51ce9f32b9b779d3f2c8af1f4f1a25b25c89",
+   "bytes": 2121232,
+   "sha256": "5ad3d0f8df071b3fb19b9fe33db98a2577f5c839e2b5f1c54921dcc53461013e",
    "kind": "optimized"
   },
   {
@@ -5724,8 +7374,8 @@
   },
   {
    "path": "build/strip-landmarks/atomicGolf-exterior.glb",
-   "bytes": 1002028,
-   "sha256": "cdc8e9aded40b3362acb2ca5ba7567c187c01b97740a34cbc77da6a7e72b4868",
+   "bytes": 1010688,
+   "sha256": "362bfe16b7ae4b67c0cabf213a907c718295dd6cdb69a21487551d1dd7e8fc51",
    "kind": "optimized"
   },
   {
@@ -5736,8 +7386,8 @@
   },
   {
    "path": "build/strip-landmarks/bajamar-exterior.glb",
-   "bytes": 273344,
-   "sha256": "1e0d6f93749d3d1a3fa53b128e0f7bd507e67d3596c747fdf81118850de3a169",
+   "bytes": 537236,
+   "sha256": "87bd943fd036275c775294f0c6166b2e741148d79c9d0141c4b95d68072bfe99",
    "kind": "optimized"
   },
   {
@@ -5748,8 +7398,8 @@
   },
   {
    "path": "build/strip-landmarks/baliHaiClubhouse-exterior.glb",
-   "bytes": 588548,
-   "sha256": "cddb1bcce0a488cddb45cbf93bfcb8940c211f463c702fc718f07f6bd104c5b4",
+   "bytes": 628916,
+   "sha256": "ced20c43e29befcea1066d21f1a4c3512aa6a106ba245d78626c9021b3b3480d",
    "kind": "optimized"
   },
   {
@@ -5760,8 +7410,8 @@
   },
   {
    "path": "build/strip-landmarks/baliHaiService-exterior.glb",
-   "bytes": 175884,
-   "sha256": "c0648507aeca4a726cdc6ada3ad171c7828330a071c9c51b1f837a9eab0fe89b",
+   "bytes": 175844,
+   "sha256": "ed1332730ad990c5afe4eb573f882451e1828f701fa6ca0349270b37bf39aa13",
    "kind": "optimized"
   },
   {
@@ -5796,8 +7446,8 @@
   },
   {
    "path": "build/strip-landmarks/bellagioArcadePiers-exterior.glb",
-   "bytes": 39672,
-   "sha256": "d2ad08fb3cbc1a9a0fa7ab973c52aefa6c6559dd68d99b7226584c0080b822c2",
+   "bytes": 77428,
+   "sha256": "4504b71ad9ba04a20b15d736afac67fed81e4be3d51d249e356e5befaf20794f",
    "kind": "optimized"
   },
   {
@@ -5808,20 +7458,20 @@
   },
   {
    "path": "build/strip-landmarks/bellagioCurvedRoofs-exterior.glb",
-   "bytes": 101644,
-   "sha256": "03a1ce849afcb89ce56171f96c25f9d3245322e5e08262318da8adebc6b4ef14",
+   "bytes": 165276,
+   "sha256": "cded2cd8cf7417dc4705aecf609390c611f0b21ce0af30897facdf4bdc4882d1",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/blvdRetail-exterior-collision.bin",
-   "bytes": 4104,
-   "sha256": "e3eaf268b24bfcc850ea2bf36f2f52958dffbe62dd5728850e69678e52d03e85",
+   "bytes": 4168,
+   "sha256": "7c8b4b5f9fbf42b77a6b3cd37a231ef7ccaed8980e26dd3e2181c543c0c1a7ab",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/blvdRetail-exterior.glb",
-   "bytes": 2056124,
-   "sha256": "191944bf447d5d554dddd27a667aa37ec1a2cb052bd45b85500b692684d1a321",
+   "bytes": 2057464,
+   "sha256": "1a6e5f4e7da260f5ca2de36c64572f538ccf19979603b22634434cac2a464a27",
    "kind": "optimized"
   },
   {
@@ -5856,8 +7506,8 @@
   },
   {
    "path": "build/strip-landmarks/bonitaTerrace-exterior.glb",
-   "bytes": 12961532,
-   "sha256": "4cd919883c5a48adde43122c719499f505c1ec0a1a2c69f4178001a895e57131",
+   "bytes": 13041376,
+   "sha256": "3ee96a83f391981cabae30a02d1339d1b297dfea9f8521d4af509d10b09214d1",
    "kind": "optimized"
   },
   {
@@ -5868,8 +7518,8 @@
   },
   {
    "path": "build/strip-landmarks/bostonPizza-exterior.glb",
-   "bytes": 430096,
-   "sha256": "b639f9366afc879161e4ed6cac525aae2c5e2ee4128349f6b92a8b55494a0e06",
+   "bytes": 573484,
+   "sha256": "9a48e97db0a9ff70abb866885343dbc46fb9dad558c7bc3673e7f07cf80394cb",
    "kind": "optimized"
   },
   {
@@ -5922,14 +7572,14 @@
   },
   {
    "path": "build/strip-landmarks/caesarsExterior-exterior-collision.bin",
-   "bytes": 37304,
-   "sha256": "6aaaa1a7bfb819641ac9589015dd63df893641b75dd85a9a000b4d24677050c7",
+   "bytes": 38336,
+   "sha256": "4af81fb32fc5a77fa0cb57240519154b9bf26de2609321b30c6e6cba88c572b3",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/caesarsExterior-exterior.glb",
-   "bytes": 6636012,
-   "sha256": "4bf77327ddf764c2603d4760382bd1d013906ca27bc3e485ff3fd4fc3f919d1c",
+   "bytes": 6735952,
+   "sha256": "43df92b8a65328a28db7c8fe8462b191ee15c9083ca576fc7b144ab9892a4ca9",
    "kind": "optimized"
   },
   {
@@ -5988,8 +7638,8 @@
   },
   {
    "path": "build/strip-landmarks/carnavalCourt-exterior.glb",
-   "bytes": 459116,
-   "sha256": "c534bcbc26431aeae2daa45ade9c35fbbbe333e33eaa03b022f589fced8212af",
+   "bytes": 558404,
+   "sha256": "03065f9e606c753d9181c7d72837a8fb61da1daaacaa4cdade264107bad3bc3a",
    "kind": "optimized"
   },
   {
@@ -6000,8 +7650,8 @@
   },
   {
    "path": "build/strip-landmarks/carnitas1601-exterior.glb",
-   "bytes": 304804,
-   "sha256": "94b178d33c7f5813899690e8c71c0f0fd487ba1ff9e334b76b9927d253fd9ee0",
+   "bytes": 537488,
+   "sha256": "caf571dacd503bc3af9a991ab3c5b005da3710485baf56931c55e8101909bf71",
    "kind": "optimized"
   },
   {
@@ -6012,20 +7662,20 @@
   },
   {
    "path": "build/strip-landmarks/carpetsGalore-exterior.glb",
-   "bytes": 885636,
-   "sha256": "0e49656ca59fd797439fc0b24b7be7fad8210207c010efd1b3411560e89f860b",
+   "bytes": 888196,
+   "sha256": "9183834bf3cdd10616b08550c82dd8eb3f81dedc1358f17101b832d474d1d780",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/casinoCenter1512-exterior-collision.bin",
    "bytes": 344,
-   "sha256": "a66650be3fba58e562eb38613343e4b5a0d8ccb67bd6b15c159c0f68f13e9875",
+   "sha256": "e2c189890d07d9df281dbab6d1b1d30f5bbd5f0c143bf9ade2e1fd552d815de2",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/casinoCenter1512-exterior.glb",
-   "bytes": 41056,
-   "sha256": "89dd8f4df1b6fe39be183cb523f1174544befff41c896a956f43a7cb66ba12bb",
+   "bytes": 49140,
+   "sha256": "bc70dfed0403b029a41f165b382bdcfd8d15c3dbe8f423097c3a6bed6ea58c6a",
    "kind": "optimized"
   },
   {
@@ -6036,32 +7686,32 @@
   },
   {
    "path": "build/strip-landmarks/casinoCenter1520-exterior.glb",
-   "bytes": 12733752,
-   "sha256": "28e487b6a6ab560d34074b3fe4d7289845108108beb5da8fbfcea6213521fa7f",
+   "bytes": 12733804,
+   "sha256": "708e172a8086e116bf3ef6bb9b390e7ee31c8a963fff458d9d83d40f339e01bf",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/casinoCenterCourtyard-exterior-collision.bin",
-   "bytes": 5868,
-   "sha256": "ed5b9b1f4f456cc082085b7b15b3879383f2d6d53ed0433d22863b4d6d29dcc5",
+   "bytes": 6124,
+   "sha256": "fbd9909951ec4eb9e0cd98877d09cdb5e85cbb2a84fee603e1bb902035eeec72",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/casinoCenterCourtyard-exterior.glb",
-   "bytes": 711556,
-   "sha256": "10668a89c517eaf433a4d90393a06815dd17824b0d4607d54f8d863cf2333b92",
+   "bytes": 712996,
+   "sha256": "9bb3be5855d37144329d05e97e27c284e8d574d7e05cd311b56491fb7295423c",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/casinoRoyale-exterior-collision.bin",
-   "bytes": 5000,
-   "sha256": "71870628a61ec6888ae8c5e6a141691d61d4745bcef0792e510400d37f2a6704",
+   "bytes": 5728,
+   "sha256": "169183e2c2178731770eeb5e222b8d1fd7b14fd2b64e0580b3d0ee408dad55a3",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/casinoRoyale-exterior.glb",
-   "bytes": 555528,
-   "sha256": "ceb9fde88a901fa28156cb082b8d708aafad31254b17a2bfe013e8766bb4c0f2",
+   "bytes": 644716,
+   "sha256": "d40e5b0f4d384cf2bf63fbddeb2a415c54e95d3d3f811a1f898d1478b6842fa0",
    "kind": "optimized"
   },
   {
@@ -6072,8 +7722,8 @@
   },
   {
    "path": "build/strip-landmarks/casinoRoyaleGarage-exterior.glb",
-   "bytes": 1258692,
-   "sha256": "f714236c42963fd473e49e0e67c1208e09888c1c3e71f9c2d6754fa8196fffa8",
+   "bytes": 1302704,
+   "sha256": "4c1cedf3a6ce57448c7a951d2e052557ad289012c2136691beaf656d44452721",
    "kind": "optimized"
   },
   {
@@ -6084,20 +7734,20 @@
   },
   {
    "path": "build/strip-landmarks/casinoRoyaleRetail-exterior.glb",
-   "bytes": 733032,
-   "sha256": "661ec861d3be0f9722f983dcfe744ec887e7b04fd17be3f0669977a873f65386",
+   "bytes": 720036,
+   "sha256": "6bb4309fc15e7b8fdc8bde1156ea0ad0d3bf49a278690c5f19b11d8679a86361",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/chapelFlowers-exterior-collision.bin",
-   "bytes": 1000,
-   "sha256": "0f1efd5e3df31484e0c17dc5e92fbbfa3ca430e4e3f69a6d2813633e8eb0537a",
+   "bytes": 1336,
+   "sha256": "50f2574a5e6e67449ac0c8d57582da4df732d405872603fa40cfa24d2aca7e8a",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/chapelFlowers-exterior.glb",
-   "bytes": 13295932,
-   "sha256": "aa3895492c0c46b4193e00faf27d69eef02f8c17b023585f92ecc2d6424e721b",
+   "bytes": 13312324,
+   "sha256": "efb01aed2a70c94c62a8f9c2b896cbe46ec36a1186a34c50dcd1e5d22b24b70d",
    "kind": "optimized"
   },
   {
@@ -6108,8 +7758,8 @@
   },
   {
    "path": "build/strip-landmarks/chayoTerraces-exterior.glb",
-   "bytes": 108900,
-   "sha256": "f4baca055f2fb821f3ae959de8d73ecb2e1a69245671d4f6534c998c6cf8ddbc",
+   "bytes": 126248,
+   "sha256": "86059a6061e86eacd8d519cb73fc42909dfddf92f2354c37c9d9294ba690f27f",
    "kind": "optimized"
   },
   {
@@ -6168,8 +7818,8 @@
   },
   {
    "path": "build/strip-landmarks/circusExterior-exterior.glb",
-   "bytes": 3563240,
-   "sha256": "340b294fecd42252726b0da0f94d5819cc6aa1f5a00f4c6834ed00c5c9e5aff1",
+   "bytes": 3599900,
+   "sha256": "ef386a5237917052694b1045fce6a4721cedc9b6a50786a12a4f25b41bb97aff",
    "kind": "optimized"
   },
   {
@@ -6180,8 +7830,8 @@
   },
   {
    "path": "build/strip-landmarks/circusNorthCanopy-exterior.glb",
-   "bytes": 31216,
-   "sha256": "16f2409114975bf562d77630b1712f8d0b3292d69c73c0e2b581bd3fda48e29a",
+   "bytes": 34940,
+   "sha256": "1d8f658353b5d8920bd8ded27a19348b27cc27a83e058662e2e683323a609b53",
    "kind": "optimized"
   },
   {
@@ -6192,8 +7842,8 @@
   },
   {
    "path": "build/strip-landmarks/cityMarketLiquor-exterior.glb",
-   "bytes": 308796,
-   "sha256": "b7372e770212bd680627a13538133e06163141623f76244ca8e2ff1ee2f7c0a2",
+   "bytes": 310588,
+   "sha256": "cd43284750686a53b5b55576912584cc72929d8156ac0c7bedf577691768336a",
    "kind": "optimized"
   },
   {
@@ -6204,8 +7854,8 @@
   },
   {
    "path": "build/strip-landmarks/citycenter63-exterior.glb",
-   "bytes": 1989648,
-   "sha256": "074ddbe54f895e60e3729671abfd77d2f297df36bd22859ca7a786f2181e06fe",
+   "bytes": 2026088,
+   "sha256": "37ad4b080be73e45f945d10e9cab22825cac33a09d26d736487e18406503ee5c",
    "kind": "optimized"
   },
   {
@@ -6222,14 +7872,14 @@
   },
   {
    "path": "build/strip-landmarks/conventionFrontage-exterior-collision.bin",
-   "bytes": 27564,
-   "sha256": "f2df849bd505c1fa53777caddfa08eee26da86c008454905769abd639c1a6260",
+   "bytes": 27976,
+   "sha256": "d7ea8d1e9fa2b37f42edf349eed854c320beecebe88d65837ef1e21378c10825",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/conventionFrontage-exterior.glb",
-   "bytes": 3918736,
-   "sha256": "e23db21decf971581f771b55af50ec9398e5808f6b4f08ecb76f91ed8c974b0f",
+   "bytes": 3846164,
+   "sha256": "e9bdf0447c6eac5b7a3f6059ce07df97aebb82152d3391c92bf872fad9b1e8dd",
    "kind": "optimized"
   },
   {
@@ -6240,8 +7890,8 @@
   },
   {
    "path": "build/strip-landmarks/cosmoPedestrianLift-exterior.glb",
-   "bytes": 70208,
-   "sha256": "29f0c05fc91c97aa0ae4e5050ab03c13559b1663a8a6a198b78cb93f148fe50d",
+   "bytes": 86728,
+   "sha256": "fff45c02c1781aa5252ceeabd50066f2328a71823ceaee99f846ccad8206a171",
    "kind": "optimized"
   },
   {
@@ -6252,8 +7902,20 @@
   },
   {
    "path": "build/strip-landmarks/courtyard525-exterior.glb",
-   "bytes": 1714340,
-   "sha256": "bb2b57f7389beb2549c276719339468f25b58436c77247b7edf997442f3909fb",
+   "bytes": 1718888,
+   "sha256": "59ec83bb77d6822d80cc8969f3798cd95aed249f213dd555e61bb0de643fdbef",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/creel-highland-exterior-collision.bin",
+   "bytes": 304,
+   "sha256": "bfcc292c2f1b881930ac3aadfd6307ffc4c473658a9b112864e38b32e23cec53",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/creel-highland-exterior.glb",
+   "bytes": 61692,
+   "sha256": "a4598346df1b0083160f48f75d2d0524a94620d50a2537a62912af92907825a9",
    "kind": "optimized"
   },
   {
@@ -6264,8 +7926,8 @@
   },
   {
    "path": "build/strip-landmarks/crystalsPedestrianLift-exterior.glb",
-   "bytes": 68540,
-   "sha256": "9faa4da62e6bf0693a0d18916032b2020d5eb365b022d211d9d96810eb386f42",
+   "bytes": 120360,
+   "sha256": "440e376f9c4af1cefe2f035ee1205364c2b1f75bf0bde0f5abf5fd1153fe0832",
    "kind": "optimized"
   },
   {
@@ -6276,8 +7938,8 @@
   },
   {
    "path": "build/strip-landmarks/crystalsRoof-exterior.glb",
-   "bytes": 66008,
-   "sha256": "7c00e1b007b9eef2a851635e05bcc518226bd716876ce24b3aaa286533604117",
+   "bytes": 84132,
+   "sha256": "fbf2a13b4004a12063855dbcf78e021ea6cab6e53355a036ac0777c5fcff9504",
    "kind": "optimized"
   },
   {
@@ -6288,8 +7950,8 @@
   },
   {
    "path": "build/strip-landmarks/curaleaf1736-exterior.glb",
-   "bytes": 600392,
-   "sha256": "b22747cf3d479ebbee5c27c7331c818df3228a09aad2ac057ea65956a3599ab5",
+   "bytes": 428668,
+   "sha256": "447d80d943020294095efce7fcddb2e15b6280be2fc940804bbf306cd7f0d287",
    "kind": "optimized"
   },
   {
@@ -6312,8 +7974,8 @@
   },
   {
    "path": "build/strip-landmarks/cvsHorseshoe-exterior.glb",
-   "bytes": 401408,
-   "sha256": "45bcd8ecc5e54a44849d848b4bb287716f2bd4c8a46afc656579edcd6cc54996",
+   "bytes": 404704,
+   "sha256": "7b80123fc07ce3d9fc7d89108c41331e428dacd7f87f6961fd1e38c5a36ebd58",
    "kind": "optimized"
   },
   {
@@ -6450,14 +8112,14 @@
   },
   {
    "path": "build/strip-landmarks/dennys1822-exterior-collision.bin",
-   "bytes": 340,
-   "sha256": "6300eeffc091e0aca122f8f17cc7d743aaa1b5069cdf3e7a1faf984984f98fd4",
+   "bytes": 536,
+   "sha256": "683459df0b81555c97486537f3092b8e7a6b73776eaf23ed074b959dbb4410a1",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/dennys1822-exterior.glb",
-   "bytes": 245172,
-   "sha256": "f911b6fecf7d95c2d008956d7ff3e37af4109205ab710f0f6fc1a946541eb8f9",
+   "bytes": 12501744,
+   "sha256": "4ca89c4b0cd594bce0caca9e4bf3f4595b347b932025d0736df4f5638a67adfe",
    "kind": "optimized"
   },
   {
@@ -6468,8 +8130,8 @@
   },
   {
    "path": "build/strip-landmarks/desertOasis-exterior.glb",
-   "bytes": 581484,
-   "sha256": "456d37163d5fa3408b4a2e48e168fd57fd91b8dc6942c99b062afea750511230",
+   "bytes": 829752,
+   "sha256": "3a9a4ab8668dc832c7ddba8927d50722f22f981b852f01b1c4d764e2cee6f0da",
    "kind": "optimized"
   },
   {
@@ -6492,8 +8154,8 @@
   },
   {
    "path": "build/strip-landmarks/diamondInn-exterior.glb",
-   "bytes": 1625016,
-   "sha256": "f0ab8c3bc608303e72896a77313d1595026b2a1f6e8480d79e52819bf2946119",
+   "bytes": 13747976,
+   "sha256": "720e2e912b576a62757bbd3dc73a7bc2660cf368a2f12f905f51bc343144ca36",
    "kind": "optimized"
   },
   {
@@ -6534,26 +8196,26 @@
   },
   {
    "path": "build/strip-landmarks/elaraExterior-exterior-collision.bin",
-   "bytes": 1184,
-   "sha256": "07ca5d247ca6f452cd6199b0945d50e5673e5df0ba26a51250fe4c04ac48fa6a",
+   "bytes": 5796,
+   "sha256": "2c60ec567a31eb643d115381e7148efcfd6270338092c244a0ed507150df6fc2",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/elaraExterior-exterior.glb",
-   "bytes": 358444,
-   "sha256": "1dce92ef6429221ad49897c6349188538c47bc4fa6f6311134c015974b8d7b43",
+   "bytes": 475672,
+   "sha256": "e5191e5bca878a21ff83ffdc79fc8057359fa64a52e80fbb35fb03566c55d81c",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/embassyConvention-exterior-collision.bin",
-   "bytes": 3060,
-   "sha256": "837b141f9404b15a0a196e1a40665d78320d12bed8b67da3a5ef7fd544f29114",
+   "bytes": 3588,
+   "sha256": "1fcb6c067a2ec964f78636290b00a2ea1db4fac377eea425a7578160115095f7",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/embassyConvention-exterior.glb",
-   "bytes": 448464,
-   "sha256": "701266c5e10262c8e0c6ccb2b5c219069274abd3d07971a006137276a7249bfd",
+   "bytes": 489876,
+   "sha256": "42b590cfa8f21b90bfd83a949f463a2abd144d3a0e93a8cac5891c6037020e19",
    "kind": "optimized"
   },
   {
@@ -6564,20 +8226,20 @@
   },
   {
    "path": "build/strip-landmarks/encoreSuitesCanopy-exterior.glb",
-   "bytes": 173156,
-   "sha256": "1e30df56b6ba32a12008b309ada08490b47af1ef9287b4064f68568704ff5245",
+   "bytes": 381028,
+   "sha256": "6a22df5446cb5812522a5d314db515fd3fc21fc6acaea59d0193affb5bc1c202",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/excaliburFrontage-exterior-collision.bin",
-   "bytes": 372,
-   "sha256": "bbe73bc9cfad39cebb75d221ae818cbca11bf0b7649c0d16e1bd0c50f4171f08",
+   "bytes": 1048,
+   "sha256": "3172ff2a2dfebe79603a12cf719570a4c030d4306ec6049b2f7fc32c5a021351",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/excaliburFrontage-exterior.glb",
-   "bytes": 1024600,
-   "sha256": "1ecd140897d6478897df12f979a0ad92e031ad23117f0db241f8549609dfa4d4",
+   "bytes": 1085684,
+   "sha256": "90b76baef234d95196cbbced6f12a266a25f5449ed2c7d8e05b504f01b668420",
    "kind": "optimized"
   },
   {
@@ -6606,14 +8268,14 @@
   },
   {
    "path": "build/strip-landmarks/fashion-exterior-collision.bin",
-   "bytes": 7356,
-   "sha256": "f9fd75740f319b368f0fe81f148a164eebbda49c8632a761d90d490890c6d82d",
+   "bytes": 10020,
+   "sha256": "420ed7a94f47b5ce0d3211855b981bca58109a2ec9d4c61a3e287cc24536d8ec",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/fashion-exterior.glb",
-   "bytes": 2463176,
-   "sha256": "68a1447d568e13e74eb9478d0af48b51511b1b87341183deed46f3175f949f4d",
+   "bytes": 2538396,
+   "sha256": "b3bc4792b57374885026ce0d769d87e9a17bf8351452b6fd73f0fdd6d1103a02",
    "kind": "optimized"
   },
   {
@@ -6708,8 +8370,8 @@
   },
   {
    "path": "build/strip-landmarks/festivalGroundsService-exterior.glb",
-   "bytes": 71100,
-   "sha256": "c564b55bb13735767d5ae0248d5221df49640969023ace5f62d1ced90ea37b4a",
+   "bytes": 75120,
+   "sha256": "926ed81f652572fd75a96d5cfee6b8c4ac100f0088dccd1a400003640dbeec02",
    "kind": "optimized"
   },
   {
@@ -6720,8 +8382,8 @@
   },
   {
    "path": "build/strip-landmarks/fireStation11-exterior.glb",
-   "bytes": 622244,
-   "sha256": "57905c01a7216d418c5f59d2896c982fb8e25182701c0d0e1954f1abbdf1fd81",
+   "bytes": 645276,
+   "sha256": "1ddd5cb43d514ae7cf8fe1f067272cf01c164676757275a3c12d9dd63f89b706",
    "kind": "optimized"
   },
   {
@@ -6768,8 +8430,20 @@
   },
   {
    "path": "build/strip-landmarks/flamingoGarden-exterior.glb",
-   "bytes": 12693392,
-   "sha256": "a2003d119847df6c4b0091f775a2532333329838b4ffd7e50b3fda7110b839ed",
+   "bytes": 14097124,
+   "sha256": "c9ebc8df8fcff2b18ea2b10cb67d626f1dbe84a9db796d7dbafacfef7fbc0ffd",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/flamingoGoPool-exterior-collision.bin",
+   "bytes": 22084,
+   "sha256": "41117abb403f7cad859ae7528285be2f1e539cd07a5763f15e570c161aa12daa",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/flamingoGoPool-exterior.glb",
+   "bytes": 251972,
+   "sha256": "ce8ec4aadb178e7e027c02495897c46cd7b853244aeab3227045b75d92e1cca6",
    "kind": "optimized"
   },
   {
@@ -6822,14 +8496,14 @@
   },
   {
    "path": "build/strip-landmarks/fontainebleauExterior-exterior-collision.bin",
-   "bytes": 2552,
-   "sha256": "5abbfe6bf1ee7f7494f2446ff77c261b1c496aefa4709a09c7ad1307a6739778",
+   "bytes": 3196,
+   "sha256": "088c5a07dade8136dd7fb3103d839e3d631b8c6dccf70b809aeac2399348226d",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/fontainebleauExterior-exterior.glb",
-   "bytes": 624448,
-   "sha256": "365133747bb8cf9e18c97efc4aa76b42c55ef5f7325a1d2c3597cc5b16102997",
+   "bytes": 763244,
+   "sha256": "4585a5bd5b3eb16ad4923b464299a1d90a160ca48987cb373bbfb8dbf598a1f5",
    "kind": "optimized"
   },
   {
@@ -6870,14 +8544,14 @@
   },
   {
    "path": "build/strip-landmarks/forumShops-exterior-collision.bin",
-   "bytes": 5240,
-   "sha256": "748d8b85c6a7321e41fc72c883de341dcd18e2c332c760ca4356527b6a58d43d",
+   "bytes": 5696,
+   "sha256": "707253866f80b2686c939086d0c916f6a64139b9e82257051688f774da31d032",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/forumShops-exterior.glb",
-   "bytes": 1940640,
-   "sha256": "1e89e92fed22856f4de48f669c03d8c1719dab0b6a2c7274d7a433cd543d1c9d",
+   "bytes": 2585164,
+   "sha256": "7286f873a7f0909ed3c365b0de9d6ce8483f9c3bd613c70aa602e963afec7055",
    "kind": "optimized"
   },
   {
@@ -6930,14 +8604,14 @@
   },
   {
    "path": "build/strip-landmarks/goldCoastExterior-exterior-collision.bin",
-   "bytes": 4132,
-   "sha256": "2c254e112e2bdda59e17ff4a5a42a0dd5bba1ec0d8407e84232183412076c126",
+   "bytes": 4860,
+   "sha256": "1233c2d86931e712cb32ae0467f0105f605b6b8168d40c01441119bbf85b1f9b",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/goldCoastExterior-exterior.glb",
-   "bytes": 2344760,
-   "sha256": "6456d7c3a84f3be7ba2faf41fb86c45cc37a01cd6d13eaed68392fe9e2484cbc",
+   "bytes": 2403772,
+   "sha256": "0457ddf887986b614b0efe8a9eb56afb5bdf90918e0b034d4ff08e4518766a24",
    "kind": "optimized"
   },
   {
@@ -6972,20 +8646,20 @@
   },
   {
    "path": "build/strip-landmarks/grandChateauExterior-exterior.glb",
-   "bytes": 217072,
-   "sha256": "dc5c8c9c8ec10e0db6772f3bcb1ebd2038886f6fe8e9d5f8c0cbf1307972e057",
+   "bytes": 269372,
+   "sha256": "3a71bdca373a4f6ff802c73c09682a65302d761ee3b7e114c1ca44e2e2508017",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/grandDesert-exterior-collision.bin",
-   "bytes": 7632,
-   "sha256": "cc3d415515a6d0fc5929c19dfa2c487b8834e4bdf8dc2aa0d4c81a4e6da8b749",
+   "bytes": 10644,
+   "sha256": "ca91033177879d440faa8d949413572fc4699c1559059f7e171372c753d81e3c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/grandDesert-exterior.glb",
-   "bytes": 4419632,
-   "sha256": "d1616ed770cca78ffc472072989ee74c4af737baabafc10fd15aad5583fab8ff",
+   "bytes": 4427588,
+   "sha256": "53c25bf0f92c11bde9feb281a30ab271e8217715df874e1dd5e230e2e7a5d782",
    "kind": "optimized"
   },
   {
@@ -7002,14 +8676,26 @@
   },
   {
    "path": "build/strip-landmarks/guardianAngel-exterior-collision.bin",
-   "bytes": 4192,
-   "sha256": "afb8e07b2177d07665f97fb7131162cbecf596195bb6ed1f3a5a3e7097544a0c",
+   "bytes": 4112,
+   "sha256": "88572e3b1676a8f5921b80229aef075aec8ffd3d2087c484e375e842c4c922bd",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/guardianAngel-exterior.glb",
-   "bytes": 1223840,
-   "sha256": "9ad265e8e1dc9c472d5ee9b5105b0f652044496b38da6dbe4097de7c05487e89",
+   "bytes": 1221860,
+   "sha256": "4c33b5485991d34e283c50cf4962e72c3ea347a8cd4eed5b1d550df333e4cb1b",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/guardianAngel-interior-collision.bin",
+   "bytes": 10432,
+   "sha256": "7d863842a0d1fa6a66f98b1182e6b88437afcba60fba2171a9053960e2331db2",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/guardianAngel-interior.glb",
+   "bytes": 62116,
+   "sha256": "eb20822782d60ef031caee348f5d119ae2e77952a439a79e4f2dcbec066a12bb",
    "kind": "optimized"
   },
   {
@@ -7044,8 +8730,8 @@
   },
   {
    "path": "build/strip-landmarks/harleyDealership-exterior.glb",
-   "bytes": 474024,
-   "sha256": "b49d3b09dba98ab6746e988282a80bc6580e6afd57362639a5284f8796b03f7e",
+   "bytes": 577544,
+   "sha256": "d6cd390dd7f06d7b35f1226ca17600220faff61efceeda7a1e63fb7317038aae",
    "kind": "optimized"
   },
   {
@@ -7068,20 +8754,20 @@
   },
   {
    "path": "build/strip-landmarks/harmonEastLift-exterior.glb",
-   "bytes": 167356,
-   "sha256": "bc8de67264926e9438e1316962a778ce8865a2a5fa7f7dd41faa5b6516649586",
+   "bytes": 184284,
+   "sha256": "9216f5935a2eeb9bf01e3399b07afdc4048e9c63cb4a26d1e77784824cd8c904",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/harrahs-exterior-collision.bin",
-   "bytes": 1076,
-   "sha256": "9fba7e91849ebb1acf70e87cff3d1ccb9d67eebd697329f82ea77b33c995767c",
+   "bytes": 4488,
+   "sha256": "3f9207ce1ec5301730163e20ca5b497a7babd32c02b7321396377a7dbb8e3d6d",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/harrahs-exterior.glb",
-   "bytes": 3108420,
-   "sha256": "57b470212f9c8c44ad8163165fa4560457699399269d1c998c806da92f576e04",
+   "bytes": 3251540,
+   "sha256": "82053f6511e5c1d3ce2c95cfc9fda5ef2bd60165bf72b5e3a0484bae6e244667",
    "kind": "optimized"
   },
   {
@@ -7104,8 +8790,8 @@
   },
   {
    "path": "build/strip-landmarks/havenCourtyards-exterior.glb",
-   "bytes": 674504,
-   "sha256": "2607d954772413efb8d11d571b81c3e03d8d3a19311b0a7c5cb8b405a9251ce9",
+   "bytes": 668352,
+   "sha256": "5780b2b18b5df63306a5db0d9feb7725432df32d0e0a188193de76c620ca6d2a",
    "kind": "optimized"
   },
   {
@@ -7134,26 +8820,50 @@
   },
   {
    "path": "build/strip-landmarks/hgvExterior-exterior-collision.bin",
-   "bytes": 2816,
-   "sha256": "b305627337ca4a57ac644905a440f1cdc6cf218af003a08bdf22320eb863da53",
+   "bytes": 3784,
+   "sha256": "0d414f64ee67bd28e53299980b3933947b55f33dc59d3815fe3daff58bf13649",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/hgvExterior-exterior.glb",
-   "bytes": 278700,
-   "sha256": "2d706bb6bb390cf54b9c608e6775e7c3a0e48ed66a7a49c6ea389dd4fa0fa02e",
+   "bytes": 871312,
+   "sha256": "112922d5d589103b2254445448540ce999ff7bdd4671b9404584007a106d12d0",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/hgvFlamingoExterior-exterior-collision.bin",
-   "bytes": 4348,
-   "sha256": "653d1b8293e3514ab2b0bd059338263b01a82ae9d9f0f49ddf5efb81eaec6e75",
+   "bytes": 11204,
+   "sha256": "cfc285eb7efc1e07802a89a26de202b43dbd666c7bd96302a9e9cc5beebae0c1",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/hgvFlamingoExterior-exterior.glb",
-   "bytes": 347944,
-   "sha256": "f1392fb2ec942140b462cd7f28df4a87c0ee871b2eb5ed664fe5604999aef23a",
+   "bytes": 511976,
+   "sha256": "2f1efff348fe2df0f380fc9db9e46cc142a265316caefb4a28deea0cef86767a",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/highland-steel-exterior-collision.bin",
+   "bytes": 364,
+   "sha256": "9162f72864527d902e0a0fba734afe006753847a2167fa9aca11ec2063314326",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/highland-steel-exterior.glb",
+   "bytes": 223368,
+   "sha256": "27433e93156226ee5f66e8ae34f2715c4c8d8225f9e59c07302aea5b881e5ac3",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/highland-steel-interior-collision.bin",
+   "bytes": 236,
+   "sha256": "60d45740735e770afbe0ae12fa9de487663b9684b5b8b76dc630c126709ed5d5",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/highland-steel-interior.glb",
+   "bytes": 681080,
+   "sha256": "22b1de90556a6c8c771fec21ca07d9a39d7b749d9adf25530dbc92ce98a312ab",
    "kind": "optimized"
   },
   {
@@ -7302,26 +9012,26 @@
   },
   {
    "path": "build/strip-landmarks/horseshoeExterior-exterior-collision.bin",
-   "bytes": 6880,
-   "sha256": "86602154f884832b0634499f8b003b1a73ea38fb62f6353b2958764943199734",
+   "bytes": 7772,
+   "sha256": "e1d3be767fd68fbb20532be12662f14f246c68ba8f5dbeabc76f4cb7c5bc0313",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/horseshoeExterior-exterior.glb",
-   "bytes": 1224128,
-   "sha256": "32b7ca8dacc2f440ee0e13428364eecf50f98e4adc36a79481d45eaed54909cd",
+   "bytes": 1304268,
+   "sha256": "6d90e41d5ba33ed32d1ec8b09aa944a246dc5bc4697f6b17a5f7296fa4808ab9",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/housselsWest-exterior-collision.bin",
    "bytes": 10716,
-   "sha256": "cd443f6589eb2d056c75e380787c0f8e56f2293389eb067d026b6f73ed993e8a",
+   "sha256": "65be89dd9280636f0a32ac1cd3575777be2f6f0064b903ce50b352a57e4aec36",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/housselsWest-exterior.glb",
-   "bytes": 13097404,
-   "sha256": "7a3e7792da144238e707dfb916df006bf61681b9036b72b546501128df6c9c04",
+   "bytes": 13121136,
+   "sha256": "f67c2f01e6aca5811f51fe23a9edb6c448745244360fc50e5a0062332fcd3a75",
    "kind": "optimized"
   },
   {
@@ -7344,8 +9054,8 @@
   },
   {
    "path": "build/strip-landmarks/ihopNorth-exterior.glb",
-   "bytes": 363260,
-   "sha256": "2df8e381168d56bdfe52b831342d8d247459477394aa7e28b6cbb1a9b8b925e4",
+   "bytes": 420896,
+   "sha256": "b3dfd64ab192f94d8869768a3941d2f70bc8c52bac575761073a0ad6c9f28242",
    "kind": "optimized"
   },
   {
@@ -7464,8 +9174,8 @@
   },
   {
    "path": "build/strip-landmarks/jackMainWyoming-exterior.glb",
-   "bytes": 404612,
-   "sha256": "ffc42d7922e1520c7f404eaf40c6de34ad15c629daaed503468b8f418f3c1bea",
+   "bytes": 402968,
+   "sha256": "ca7a18d588a88becb8ef997d2ce5e079aa5f214f299b80d39ec77d8aeaeefe9e",
    "kind": "optimized"
   },
   {
@@ -7500,8 +9210,8 @@
   },
   {
    "path": "build/strip-landmarks/laughingJackalope-exterior.glb",
-   "bytes": 142108,
-   "sha256": "335227dfa8ae1817cefe8a88c2d6f0faace45c9e18e80ba885f874aa2638439c",
+   "bytes": 156100,
+   "sha256": "100107f6000228d807e772afb89b9453a5dffb03e113c90e46f4ee367fa71f7c",
    "kind": "optimized"
   },
   {
@@ -7554,14 +9264,14 @@
   },
   {
    "path": "build/strip-landmarks/linq-exterior-collision.bin",
-   "bytes": 3136,
-   "sha256": "9e9655007391d36589de349c04219b79a79634b5aab30ed2b633ee3d318eb5d2",
+   "bytes": 5028,
+   "sha256": "c504e903dacb92560b7dfbabccbfd648dbdc8b39b90383c6d86738e49358e4db",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/linq-exterior.glb",
-   "bytes": 12078300,
-   "sha256": "f2658c2524a10f16a301bb01b4422766f49909e8b25af6ea7b413e3427211b69",
+   "bytes": 12177564,
+   "sha256": "4e3f8c7bb33cb8fcbfe057058c44328931edb9b51d789c6f41d8a0d271f53c37",
    "kind": "optimized"
   },
   {
@@ -7596,8 +9306,8 @@
   },
   {
    "path": "build/strip-landmarks/littleChurchWest-exterior.glb",
-   "bytes": 12650744,
-   "sha256": "8c8d4f1a3efd7e9eff1b7fca47c79ee0c746037f3518df0aaf6c3fee3d33e9e9",
+   "bytes": 12672308,
+   "sha256": "551eed58acf5a61b726215996363f2042821b315b0ac70273aac9e46767a8a7c",
    "kind": "optimized"
   },
   {
@@ -7656,8 +9366,8 @@
   },
   {
    "path": "build/strip-landmarks/luvIt-exterior.glb",
-   "bytes": 287828,
-   "sha256": "083bb602fa06e7eb81533867fd9cf1ee51a7f05213ce29784dd096dec76c244c",
+   "bytes": 303284,
+   "sha256": "b8f986c6d788b976c7c8e571c025a81ff198d0aa3d331a0cb84e13a46fe9c006",
    "kind": "optimized"
   },
   {
@@ -7668,8 +9378,8 @@
   },
   {
    "path": "build/strip-landmarks/luxorExterior-exterior.glb",
-   "bytes": 947016,
-   "sha256": "8d3d76bc2eef2fb2ac42548edf5c9d55c69e30da5e6ffa1f49891769f5052767",
+   "bytes": 1215960,
+   "sha256": "215e79d1c41fc8ffb881bdd882e9e0109c7841db0bcd8d4b07e7afbf7b44bc93",
    "kind": "optimized"
   },
   {
@@ -7680,8 +9390,8 @@
   },
   {
    "path": "build/strip-landmarks/luxorObelisk-exterior.glb",
-   "bytes": 900452,
-   "sha256": "0bce132f2c1706bf4af8f93725713b1b162ef823673b347932e313ae88d39389",
+   "bytes": 1478108,
+   "sha256": "2f659260a8d0c9c70a11eab8ded28f5eb5c6273e0653ee2f57df2fdd093f76c8",
    "kind": "optimized"
   },
   {
@@ -7710,14 +9420,14 @@
   },
   {
    "path": "build/strip-landmarks/lvccWest-exterior-collision.bin",
-   "bytes": 26372,
-   "sha256": "8baf493b81e82b446bd267e3cf2b37c2ea813f38ce0c28944072593ec6556fba",
+   "bytes": 26616,
+   "sha256": "494f3b12d22ce6661151dd2c6839825ef2142c4a4da363cbc343316f3fd5a120",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/lvccWest-exterior.glb",
-   "bytes": 1924624,
-   "sha256": "d2e77b2cf2a91794b5dc31411c40d36a4bf788c5d154484b1463cadd6856b18c",
+   "bytes": 1857832,
+   "sha256": "92ddebc2164a199d168688eaceaf06acf2ec83d0966db42ddc1bad427b7dec2d",
    "kind": "optimized"
   },
   {
@@ -7728,8 +9438,8 @@
   },
   {
    "path": "build/strip-landmarks/main1700-exterior.glb",
-   "bytes": 12408964,
-   "sha256": "22e48382dde1ce9fb8c99e3d6653a04310fcbaf5ef1b2e1ec093bcc35688a6fc",
+   "bytes": 12444516,
+   "sha256": "30ce633ac871d2baafb915c47f6d0d51e7b95fccabf09dbae6dba216c288bbfa",
    "kind": "optimized"
   },
   {
@@ -7740,8 +9450,8 @@
   },
   {
    "path": "build/strip-landmarks/mainStreet1511-exterior.glb",
-   "bytes": 288472,
-   "sha256": "7f8593de5822c00d1a168da6cf85a49b84b10f4ce059355d261f8a3d96d2ef83",
+   "bytes": 477660,
+   "sha256": "369f3760acd511268d87a73ce03fe42d51540ea7520a0900bb4e2178b7cded59",
    "kind": "optimized"
   },
   {
@@ -7752,8 +9462,8 @@
   },
   {
    "path": "build/strip-landmarks/mandalayExterior-exterior.glb",
-   "bytes": 6696128,
-   "sha256": "6847cd038dc6aecad196e9f7164046bd0d9a709d308b3e389533503342b0c640",
+   "bytes": 6763464,
+   "sha256": "899330f69a816cb8c341d158242bca12a338c521ef174f29a58a2ccf14acb0ed",
    "kind": "optimized"
   },
   {
@@ -7812,20 +9522,20 @@
   },
   {
    "path": "build/strip-landmarks/market1700-exterior.glb",
-   "bytes": 581612,
-   "sha256": "da8b23bb6aae6aeb3e182275dc601ea185d636adf440f53a2e31af39ece4574d",
+   "bytes": 594288,
+   "sha256": "d0b9bf62902a5cd989dfce2910869ade58df021eb2f9f5fceedf73d9917a6fb4",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/martinExterior-exterior-collision.bin",
-   "bytes": 1904,
-   "sha256": "b017d5dac90740fe74e226972736f9728831807ed478398dd459d0ec974e2eb0",
+   "bytes": 3660,
+   "sha256": "d1db4e714a2f8ded19b1764e560d817ffe5eab6b29d2dcd13d4b96bc0a5393b6",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/martinExterior-exterior.glb",
-   "bytes": 546160,
-   "sha256": "df802cf8c4362f68bc2bc2985df2c2621fe6e3ee4a7b431369602697b8d8f503",
+   "bytes": 686704,
+   "sha256": "93284a51adf7a9f5e5d539a244ddf27f23fa94b3beb3033b1ca35d3ca87f918a",
    "kind": "optimized"
   },
   {
@@ -7855,13 +9565,13 @@
   {
    "path": "build/strip-landmarks/maverickTerminal-exterior-collision.bin",
    "bytes": 1980,
-   "sha256": "1d344b407c9a5733d98ebc52cfaff7ba9107439ca48b4cc3fc348a0b5e7fd0d5",
+   "sha256": "1ec515c58bac43933b528501e9b71319095f5f6fe0af08f95ce87bd0bab26a77",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/maverickTerminal-exterior.glb",
-   "bytes": 315140,
-   "sha256": "2665122725e60fe00de435814c45fcd72b585df51fbfe7b960d01db60ad60594",
+   "bytes": 792840,
+   "sha256": "1377d24ea1208c63df44134177c2692b19ef3e1fe59bfd5353b52214c53ac0be",
    "kind": "optimized"
   },
   {
@@ -7908,8 +9618,8 @@
   },
   {
    "path": "build/strip-landmarks/mcdonaldsSaharaCanopy-exterior.glb",
-   "bytes": 148652,
-   "sha256": "3d3591c0d2422b1ccdc519a7a6bac9fd9ab15b985a9f3cc806c1ce1c6144b38b",
+   "bytes": 180452,
+   "sha256": "b77c7d269c561129485974fa5dc34728e6cb981c79759bd9b0e5fe9b34f7d721",
    "kind": "optimized"
   },
   {
@@ -7962,14 +9672,14 @@
   },
   {
    "path": "build/strip-landmarks/mirageExterior-exterior-collision.bin",
-   "bytes": 11980,
-   "sha256": "b3fbfc946a791929b33c927a00668d83ad7fa87e586dfbd3a2ce0ccfb5c9730b",
+   "bytes": 12244,
+   "sha256": "ee316fa913179d6c037551237e22c941a5304c29238ecef5a6efc711b89fd8a5",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/mirageExterior-exterior.glb",
-   "bytes": 449496,
-   "sha256": "c471ea7144dfc7a702c8b6551121a5de9b8f1ccf44c9057947e648828a333e50",
+   "bytes": 602760,
+   "sha256": "85f06f18d6e9fa4e4494d27762fa10fc24fe9bc02583612c1ee4470148aa17aa",
    "kind": "optimized"
   },
   {
@@ -7980,8 +9690,8 @@
   },
   {
    "path": "build/strip-landmarks/mirageMarquee-exterior.glb",
-   "bytes": 902848,
-   "sha256": "25945b0fe2607e811c418476069e137c4e90ee20af559317f061913d4f279266",
+   "bytes": 903716,
+   "sha256": "89dfba7e5760cb0293879f11f084c759d9cb8860b9d761f9e163ac90f54c1b04",
    "kind": "optimized"
   },
   {
@@ -8124,20 +9834,20 @@
   },
   {
    "path": "build/strip-landmarks/newYorkFrontage-exterior.glb",
-   "bytes": 1081272,
-   "sha256": "bc460bb12ac4bd1b34e8805e564a3325e899cfd7f204271553877515cff04a6e",
+   "bytes": 1095328,
+   "sha256": "4c260c905edda7dd41b617011ae5944e02170e616f4fa3994feb7dd3e38682eb",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/nirvanaAncillary-exterior-collision.bin",
    "bytes": 3208,
-   "sha256": "6538b2ee114e942343f9f92e19edc5524f9cf7df35bd784e199a0862d7222cfa",
+   "sha256": "74b8c4850ab9540d154af23fc5985c874badec4b99ffba288bc69d7c2c0345f2",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/nirvanaAncillary-exterior.glb",
-   "bytes": 326864,
-   "sha256": "d4deb9dbfb5da96687ed45039d5e70ab8845cfc875a80d883136e5dec4935df8",
+   "bytes": 326860,
+   "sha256": "a0f3ee1d2bfc5f60cb498ef65cfef54ca0a7d3d47cc4650fc345d75d1630085f",
    "kind": "optimized"
   },
   {
@@ -8148,20 +9858,20 @@
   },
   {
    "path": "build/strip-landmarks/nirvanaHotel-exterior.glb",
-   "bytes": 328184,
-   "sha256": "cde5fbb50cfbae24c082348dc5d7877065707ca64aae8443d30daf59b7b0e56a",
+   "bytes": 326364,
+   "sha256": "cb850eee247770f00664b48076ac0be9e36c7861fc113cea43419ad0c146e681",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/northStripMotels-exterior-collision.bin",
-   "bytes": 17960,
-   "sha256": "b7c6809acfa329528d704bb941a3e43ec6eb2f8e439d696ad9d4b497e2e3fdaa",
+   "bytes": 16756,
+   "sha256": "eac858fe1f7cf68c172a18073650ad0fa12d51598f52896326de88ee2aeccd11",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/northStripMotels-exterior.glb",
-   "bytes": 2763528,
-   "sha256": "8ac25daf9a592d4f9d5146cb2ef2e44aedce9e995a48a36361c6d8a60aaff564",
+   "bytes": 2757712,
+   "sha256": "7f99ba8ffad4ff6875a47e245056847029c5a8065d6cda79734f13e3d9009e16",
    "kind": "optimized"
   },
   {
@@ -8178,14 +9888,14 @@
   },
   {
    "path": "build/strip-landmarks/nynyArrival-exterior-collision.bin",
-   "bytes": 1100,
-   "sha256": "91b022712526f2b0ae5775ad4ff989d339b86d98b02ed57fd53babcf5be143a8",
+   "bytes": 2764,
+   "sha256": "d8dafb27893dd0e399ad40d68a90ca3063dee05993c6838a7819da1f2bbcb0f6",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/nynyArrival-exterior.glb",
-   "bytes": 278216,
-   "sha256": "3d0237f37b37193ce9ae36f8ff7ccd3f33cbd8ef958961d461a9a86f68e89fe3",
+   "bytes": 12698116,
+   "sha256": "6a80b23197f3df31f9a97c9b3893e56285bc774f517629d3f3801d6cc581caa0",
    "kind": "optimized"
   },
   {
@@ -8196,8 +9906,8 @@
   },
   {
    "path": "build/strip-landmarks/nynyIrishKiosk-exterior.glb",
-   "bytes": 590444,
-   "sha256": "03ffaea603c6eff1d2cece2ab08049497fa3dd188fbc51edb151abd8502617c0",
+   "bytes": 621536,
+   "sha256": "b903bd749be6a87c6c60af9d360a2689da82aff820098203a38674090bae49a2",
    "kind": "optimized"
   },
   {
@@ -8208,8 +9918,8 @@
   },
   {
    "path": "build/strip-landmarks/oakeyArco-exterior.glb",
-   "bytes": 491580,
-   "sha256": "07be1f514be19afedc2e7966dd24845f989c6e7553afcd8ba0a820d7c9349ba6",
+   "bytes": 492068,
+   "sha256": "96df0283dd54bcc4358e28c22245333d66bed107e3c0b019b115903eca678f09",
    "kind": "optimized"
   },
   {
@@ -8220,8 +9930,8 @@
   },
   {
    "path": "build/strip-landmarks/oakeyOffices-exterior.glb",
-   "bytes": 628108,
-   "sha256": "0c1e490573af01ede9ea8ad2689aac6f6a5d63d33a6c3712be825a3fa2ffabc5",
+   "bytes": 677668,
+   "sha256": "63bfc93f70d02389cb4ab85f25aa91f8eb286ab01b379ad95edf964e5c7d02ee",
    "kind": "optimized"
   },
   {
@@ -8232,8 +9942,8 @@
   },
   {
    "path": "build/strip-landmarks/oakeyService-exterior.glb",
-   "bytes": 247180,
-   "sha256": "c404422c1e8ea9448f8edffa5e0e2927b033803982946b8d218b7cfebd4ec4f3",
+   "bytes": 204176,
+   "sha256": "fbeb5c916beb74abdf0e14f9900d75293fc3f5e47f12f225b72509b555475388",
    "kind": "optimized"
   },
   {
@@ -8256,8 +9966,8 @@
   },
   {
    "path": "build/strip-landmarks/oasisMotel-exterior.glb",
-   "bytes": 628316,
-   "sha256": "7b938d2fbb7136a5089c238c9a5d29fc6192d499c1a3bb79ed8865eacbfafc60",
+   "bytes": 699520,
+   "sha256": "39a99b2310877cc6ae0ee7a109d4ad9c071e17f82380741f37901a0b7daca098",
    "kind": "optimized"
   },
   {
@@ -8286,26 +9996,26 @@
   },
   {
    "path": "build/strip-landmarks/oyoExterior-exterior-collision.bin",
-   "bytes": 10420,
-   "sha256": "f6d88cab81617ff0b0b5931944278addc078ecd2e4e05e33b5e85a157f5e34ec",
+   "bytes": 11424,
+   "sha256": "aed88c25065d3c3751f8aa407cffe098200dba1b24657f652c558a5a223975b9",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/oyoExterior-exterior.glb",
-   "bytes": 662460,
-   "sha256": "995c5aef1ea2b8a309a527fd997b0cc95af9bede471dc7bc812ba8ab386716a8",
+   "bytes": 649888,
+   "sha256": "5765f9138312385639d3ee592ac4f5e0935ed5881d21c76c1f8dcb7a35202f87",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/palaceStation-exterior-collision.bin",
-   "bytes": 10944,
-   "sha256": "e60a44277918327308cf934b11e81e94487ed91e22dac975ba9ae6d74b30b4ab",
+   "bytes": 13560,
+   "sha256": "fbae525e420a3c544b16f23de6f92795d85ac51d87b7b92935ee0ff4d200b228",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/palaceStation-exterior.glb",
-   "bytes": 1532796,
-   "sha256": "195458aecc46decf9300fe7a606c81c90042794f625af2dc3b1141f20e446623",
+   "bytes": 1598972,
+   "sha256": "0016758d70644b23a44c17d1bbb0eb23c532c8cb5d56a71c7e651a4f2eb4594f",
    "kind": "optimized"
   },
   {
@@ -8334,26 +10044,26 @@
   },
   {
    "path": "build/strip-landmarks/palmsExterior-exterior-collision.bin",
-   "bytes": 6096,
-   "sha256": "ec01cfb6adeb32af3783e8e9ca850873792a5ac27d297d14f0b5ac5249d1470f",
+   "bytes": 15740,
+   "sha256": "bb227acdf4b7da93ba4be4862aa90e732572d5b6b1f3ff3973caef310b787498",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/palmsExterior-exterior.glb",
-   "bytes": 435932,
-   "sha256": "00da863ce6a7883570776326efb7c7cd46c74bc0b93fa20df6b3da519d2a82e0",
+   "bytes": 516184,
+   "sha256": "4e7be833f2eed07e1c0f527740dde7c678cef38b4ce07f566a6de46c32efd653",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/panoramaExterior-exterior-collision.bin",
-   "bytes": 3124,
-   "sha256": "7c27914685b971b2bc7f6dd825d6dfe562a606ef21d94f7e48b652d50908694b",
+   "bytes": 5076,
+   "sha256": "b2e6f12ddbfd55c83cd7b21a42f9f7dd8ffec4cef27a36e77f7a8a203601ec9c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/panoramaExterior-exterior.glb",
-   "bytes": 360220,
-   "sha256": "d9a352d4db5549626350cee602d1139cc58defd99d0719001cd582cbc9f89170",
+   "bytes": 435768,
+   "sha256": "6d6f7e9999ea2a1bdedee689896dfb4bb07a01e66bdb38bbb65c44bc9d80251e",
    "kind": "optimized"
   },
   {
@@ -8370,14 +10080,14 @@
   },
   {
    "path": "build/strip-landmarks/paradiseSmallFrontage-exterior-collision.bin",
-   "bytes": 6640,
-   "sha256": "2a91762df5fb7a63277101fe5f66556b7800dc2ad480932599d3e5b54c6f2886",
+   "bytes": 6728,
+   "sha256": "ef443681458f415391d7ed27faf7be30182af71298213588734082879bcad9ca",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/paradiseSmallFrontage-exterior.glb",
-   "bytes": 671648,
-   "sha256": "ecfeac4485f0749656747ca0b4d34fa31a7dc0b4bc188d5258af26fc1e1803f7",
+   "bytes": 875872,
+   "sha256": "43739e9a5b88ea8bd3ce8352816a7d2b929ac046d5609dde97921390fcdf6579",
    "kind": "optimized"
   },
   {
@@ -8400,8 +10110,8 @@
   },
   {
    "path": "build/strip-landmarks/parisRooftopBar-exterior.glb",
-   "bytes": 173012,
-   "sha256": "5c41b33f7850f5d50a126028b305e2f7b27f2b1383470415afec9f2cd5078018",
+   "bytes": 192916,
+   "sha256": "b7dcf03472d9a0ee5ef6551c1e4891b4b6f139566b2965c5422c66dd0b1fb53b",
    "kind": "optimized"
   },
   {
@@ -8412,8 +10122,8 @@
   },
   {
    "path": "build/strip-landmarks/park-exterior.glb",
-   "bytes": 2875828,
-   "sha256": "b3acd2800f91a69a7837cdb267b17fb54c8f27f9b6bd6a6390344a08a80d2ac1",
+   "bytes": 3016264,
+   "sha256": "3d647a2b208b53b989933f9d2ec64f893513bd727b0b8f9fe2e97d544e2b5611",
    "kind": "optimized"
   },
   {
@@ -8448,32 +10158,44 @@
   },
   {
    "path": "build/strip-landmarks/parkPedestrianLift-exterior.glb",
-   "bytes": 49120,
-   "sha256": "1a5f90b16133b6852dc3c9e3610fbb3d839018f09307bfb1b862093c3f3bde54",
+   "bytes": 50392,
+   "sha256": "b6d8f2b9255c6c4d8e7fbe3405970a7fc37f9cac2accf1d909d51c83984d8069",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/parkTowers-exterior-collision.bin",
-   "bytes": 35732,
-   "sha256": "20372cf804efe7adfdb5f7566fc2dce00f78ebc07c927edcc641d70e2691fc29",
+   "bytes": 37304,
+   "sha256": "f402cd12a85da34d88429533c8b3ac6ca8ddad8f4b642b75e507476a1e5048c7",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/parkTowers-exterior.glb",
-   "bytes": 2456776,
-   "sha256": "3462ef67eef38c2b82b0f8c0047cda728a47a293d96f404c63089c93bad19136",
+   "bytes": 2558240,
+   "sha256": "444daea5429f2ab0b92fb20faf6544b2910f44f629e07b7cfd64ed0723f05822",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/peppermillRetail-exterior-collision.bin",
-   "bytes": 3340,
-   "sha256": "bdf51426e3c0e5b5bf9e3182160d2e174c43714c79adef5378b24556e75b2e0b",
+   "bytes": 3376,
+   "sha256": "a40fb56a366fbda27492e18ba395ffd0f11c55ffa1cf4b738bb1f61662f3cb6b",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/peppermillRetail-exterior.glb",
-   "bytes": 636836,
-   "sha256": "24fb697972a7f9ec033c1e1af71a33fb1111d0d110f74bc5916c6bb56d09b99e",
+   "bytes": 959436,
+   "sha256": "99be36f2a9c9294b711f827416eb5ef4b151e1bd4775b1ec405c1af7fc7c9aa6",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/peppermillRetail-interior-collision.bin",
+   "bytes": 26476,
+   "sha256": "39b5182f5a0c13da9c4b966acf773aec8542310c8fb340b465948559f3b2d4e3",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/peppermillRetail-interior.glb",
+   "bytes": 507820,
+   "sha256": "f196c83faffd248f99c6059701d7defa1d5821b647b612a66f6e88a641871780",
    "kind": "optimized"
   },
   {
@@ -8484,8 +10206,8 @@
   },
   {
    "path": "build/strip-landmarks/peppermintHippo-exterior.glb",
-   "bytes": 1651736,
-   "sha256": "a0761e406e1ac1a42ed82296485078cc5a8f697cb207f7764ff7540abc11b72d",
+   "bytes": 1746288,
+   "sha256": "92b2cd8bb411a7adb4d92effdf5536240714ecd2f7dc975871c17618b83b452e",
    "kind": "optimized"
   },
   {
@@ -8496,8 +10218,8 @@
   },
   {
    "path": "build/strip-landmarks/perceptionMuseum-exterior.glb",
-   "bytes": 392092,
-   "sha256": "7ff01713bea6a2987a28739db6bb3dd33cb98f03c26db6837ea8829561b7d3ba",
+   "bytes": 410624,
+   "sha256": "186f63b6fddd766b8e717d694feee0b7f3d967c9f397dbe51bddd39b85fec9a1",
    "kind": "optimized"
   },
   {
@@ -8520,8 +10242,8 @@
   },
   {
    "path": "build/strip-landmarks/pinballHall-exterior.glb",
-   "bytes": 398388,
-   "sha256": "7f83c88dac4865f1188352720d29cd987d6161366123770b260652ad80dfe2f1",
+   "bytes": 408284,
+   "sha256": "2dc7a034d13829f428581512acf5ce52f36175992c8019e847c7589c51fdf75e",
    "kind": "optimized"
   },
   {
@@ -8544,20 +10266,32 @@
   },
   {
    "path": "build/strip-landmarks/planetHollywood-exterior.glb",
-   "bytes": 7323916,
-   "sha256": "38da16543cfde081bc092c3cf11afee71951e9d272f824125712ad7a60381fff",
+   "bytes": 7346252,
+   "sha256": "ef82a0fedf1a0e029212dad45ab917fc16a9eec0fb501d000cd0afdc703ffcd3",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/platinum-exterior-collision.bin",
-   "bytes": 10440,
-   "sha256": "1ff2fd2f94c35f0d1675baa2529f04ff2efafc79425a15d51eecc03d269107b2",
+   "bytes": 12464,
+   "sha256": "dac4054d8a032d44bd6924b62e608b18e36a583f3e9a1e58de75627adccec21c",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/platinum-exterior.glb",
-   "bytes": 783224,
-   "sha256": "ab85b9dc2aa2e38c26002628f995d62bb0ddd88190141eab02b3ccae62243490",
+   "bytes": 809552,
+   "sha256": "93e0d4f97ab6c84a6f41de72716d31ff8354462cae4f52bc0bb915c3765dabf7",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/platinum-interior-collision.bin",
+   "bytes": 528,
+   "sha256": "e63d3a1140f60bf523b8d274ff33f0fbe3f468f7a059155589c0904f4e0d17b8",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/platinum-interior.glb",
+   "bytes": 9388,
+   "sha256": "92907374840d25401c65c41f3d360e30f4f7b5d8e075fe3d79375a6371fc797b",
    "kind": "optimized"
   },
   {
@@ -8592,8 +10326,8 @@
   },
   {
    "path": "build/strip-landmarks/pristineHangar-exterior.glb",
-   "bytes": 94096,
-   "sha256": "364cdacbcdcae6ed8f530cdaf010497ed2718c7c8f10780941d9024fab403390",
+   "bytes": 79568,
+   "sha256": "83f47e15e52e8e57fae80af6a27031088ccf8e4df8926d236d2372594ec73355",
    "kind": "optimized"
   },
   {
@@ -8658,26 +10392,26 @@
   },
   {
    "path": "build/strip-landmarks/residenceInnHughes-exterior-collision.bin",
-   "bytes": 632,
-   "sha256": "3d729fbe2316f8a31ba6fe8e36e43508b30c0341cc7f2715b2e9dd9257a568c5",
+   "bytes": 4936,
+   "sha256": "96ac03aadad5b2837fc52efc8ae0d31a335966997fb1a462550455b5a46ad216",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/residenceInnHughes-exterior.glb",
-   "bytes": 1097456,
-   "sha256": "9d7253336355b8921fa73184c369b2076c324aa1056cade4110f84055e1d833a",
+   "bytes": 1276680,
+   "sha256": "e83ed6e300470bb8386707503b8a6e81ee46f117779a223e0f4a6826d7e051c6",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/resortsWorldExterior-exterior-collision.bin",
-   "bytes": 8756,
-   "sha256": "fef9416d44e1d53eb41d242dd67721240ef81b99a3e5af8aa5ec4eede05b0959",
+   "bytes": 9924,
+   "sha256": "8c6094eb9b7e5f0134b2db8d3f178b8409dc01b187448e3bb1cbba6fe684dad1",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/resortsWorldExterior-exterior.glb",
-   "bytes": 513636,
-   "sha256": "f03abc6c22f31c81f2f01a198cb636ecc15893efc7bcf4538022dc66df11fb4f",
+   "bytes": 785416,
+   "sha256": "c38c2f4e3109faaf31c900309e0f4667b9107181bda82fb9195b71892b5b9d16",
    "kind": "optimized"
   },
   {
@@ -8688,8 +10422,8 @@
   },
   {
    "path": "build/strip-landmarks/rexfordCourtyard1701-exterior.glb",
-   "bytes": 301404,
-   "sha256": "56c991fadefb6387876bd0eeec43ae673748576c31f38d2e1582512e029fc342",
+   "bytes": 309196,
+   "sha256": "d16446ac0369f19d9eb9a27d9ae8b714e27c18588a6cd73cbfb9092eeffd8d89",
    "kind": "optimized"
   },
   {
@@ -8700,8 +10434,8 @@
   },
   {
    "path": "build/strip-landmarks/rexfordEllenCourtyard-exterior.glb",
-   "bytes": 665104,
-   "sha256": "2815c8220fe2ee3024a00fca76ccb3a3eb5772622b36d31af892f3c220026ad5",
+   "bytes": 666064,
+   "sha256": "c57ae35fc06179013d0e1835824266015612a16ebdb57fa66a302caabe2d7261",
    "kind": "optimized"
   },
   {
@@ -8712,8 +10446,8 @@
   },
   {
    "path": "build/strip-landmarks/rexfordPlaceEast-exterior.glb",
-   "bytes": 12763612,
-   "sha256": "126209640449adc133468b6aff44f8015d9cb87956b2f18125fe8708252f3dbb",
+   "bytes": 12918772,
+   "sha256": "6b91f8c667fbe82554f529bc1169a73a5a2794909b10e32f8444e338d2ca6571",
    "kind": "optimized"
   },
   {
@@ -8724,8 +10458,8 @@
   },
   {
    "path": "build/strip-landmarks/rexfordPlaceWest-exterior.glb",
-   "bytes": 12749352,
-   "sha256": "12d6957cda6b2de98020d41ffb47cc1e05ba1c6b755e4b1762758960e7200cd9",
+   "bytes": 12914304,
+   "sha256": "71e9dcadd118c20ca523f15c61553366be2fd4264434e4b6f94a1538d3758bf2",
    "kind": "optimized"
   },
   {
@@ -8742,14 +10476,14 @@
   },
   {
    "path": "build/strip-landmarks/rioExterior-exterior-collision.bin",
-   "bytes": 12600,
-   "sha256": "34c11c6c46ff1c35ad202e115055ac344423d515f3af48955eb981c4f006e444",
+   "bytes": 21640,
+   "sha256": "0372382358ff89e70962aa54f0c3143685ff686884ffee38896efb0ba0a17ca3",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/rioExterior-exterior.glb",
-   "bytes": 1134952,
-   "sha256": "46de9e3ec0a42857bacb068b6c1bf8f4c7771eea07025d2d69cd9579b9564ad8",
+   "bytes": 1580044,
+   "sha256": "24680fa7d188c0acc1f5e9b45f20055359d919bec9f51de3d241906a20545559",
    "kind": "optimized"
   },
   {
@@ -8760,8 +10494,8 @@
   },
   {
    "path": "build/strip-landmarks/russellService-exterior.glb",
-   "bytes": 70472,
-   "sha256": "e7c00788e568e60fe58964716af0449047a1d2df97ee5ad9911d7b1a685ed6d9",
+   "bytes": 58348,
+   "sha256": "d8da7a4571c6a2fad4cfaa261700f3382fdc588531a5ebc726e22157889abc64",
    "kind": "optimized"
   },
   {
@@ -8844,8 +10578,8 @@
   },
   {
    "path": "build/strip-landmarks/saharaExterior-exterior.glb",
-   "bytes": 1069040,
-   "sha256": "9c30a467d4562f55b1cb51c49af9cc20ebd5a2844878d95f08cc174157a94598",
+   "bytes": 1091328,
+   "sha256": "0162ca2b503d0429290cf6c54ed4f791679d98731ef35ab1c55793436cdbdd0d",
    "kind": "optimized"
   },
   {
@@ -8856,8 +10590,8 @@
   },
   {
    "path": "build/strip-landmarks/saharaRetail-exterior.glb",
-   "bytes": 1576900,
-   "sha256": "d4c5d9b90e6a29c1f0c94f29c5faaca3e6c3997d97af63c6800059e8d8ff80c7",
+   "bytes": 1476996,
+   "sha256": "f3bda204c5e34108bc569bd3b0fa325eeecda657f1c16522e301d360db189a1f",
    "kind": "optimized"
   },
   {
@@ -8868,20 +10602,20 @@
   },
   {
    "path": "build/strip-landmarks/santaPaula1807-exterior.glb",
-   "bytes": 12682172,
-   "sha256": "de55c1fa0b08412dfa1f0d596442e317be0393a2a68c0de1917d55304e4916d2",
+   "bytes": 12728200,
+   "sha256": "1b76f1c3ece7b5547a5ba09b1bc35b1d230e7c5f342ba453808b26decc410cb9",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/santaPaulaCourtyard-exterior-collision.bin",
-   "bytes": 1428,
-   "sha256": "9e4640164305027054c23a097f2b7ba71fa5e2a6e59d6ed67ef47d0a7d2005e7",
+   "bytes": 1504,
+   "sha256": "3532bbbccd311eba287afd4a34cb32f43d2bf70a540d705e83330441bcd5e714",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/santaPaulaCourtyard-exterior.glb",
-   "bytes": 600260,
-   "sha256": "8dc444f694ee10b602ea997e476aae895f991c21c4d298f466ea41eaa712d03b",
+   "bytes": 600364,
+   "sha256": "57b9efa677d22dbd17c21a90c37062e46961d0d89e0d780206d66b033ca5eef8",
    "kind": "optimized"
   },
   {
@@ -8892,8 +10626,8 @@
   },
   {
    "path": "build/strip-landmarks/santaPaulaNorth-exterior.glb",
-   "bytes": 685740,
-   "sha256": "5dcbd1884428d72f9580447285944c997bf822cffb57ed29bb53eedcd47e457a",
+   "bytes": 685280,
+   "sha256": "942119ec17f38bfb9bae90dedfa3f6edcfd5c0796f81d36ffc91ea616022ba0f",
    "kind": "optimized"
   },
   {
@@ -8904,8 +10638,8 @@
   },
   {
    "path": "build/strip-landmarks/santaPaulaOffice-exterior.glb",
-   "bytes": 713432,
-   "sha256": "a5a950cb7c9776ed23e9753ce49e0a71c304a7d422a16644ef031289a6ddbb1a",
+   "bytes": 711888,
+   "sha256": "17131bb969a7f96792015784457ece432fa1eb29c56b2bd05c169cfe59b1c147",
    "kind": "optimized"
   },
   {
@@ -8916,8 +10650,8 @@
   },
   {
    "path": "build/strip-landmarks/santaPaulaWestCourts-exterior.glb",
-   "bytes": 12636748,
-   "sha256": "f0a62633daa2163dba6bab725f7dfccc31dd1d4203d2ddcde74805f499f73d20",
+   "bytes": 12639124,
+   "sha256": "7a7a7d050be82dd681972ed2ae6fcb5f88c9b79e4d1e4e0b9c28da4615db763d",
    "kind": "optimized"
   },
   {
@@ -8988,8 +10722,8 @@
   },
   {
    "path": "build/strip-landmarks/showcase-exterior.glb",
-   "bytes": 3386896,
-   "sha256": "50c4805367bb81499d9f8825ac0403d589c1b88743a12f4a6b34296e28a21468",
+   "bytes": 3533608,
+   "sha256": "1156fa3363d4ad9315132ced1d62a690bc97f145e9551a1215ee3473c8e9e4e5",
    "kind": "optimized"
   },
   {
@@ -9000,8 +10734,8 @@
   },
   {
    "path": "build/strip-landmarks/siegelParadise-exterior.glb",
-   "bytes": 13598088,
-   "sha256": "22777c4b342f0e0fb3e21977d317de87c23b3b92d5fa42e75f6894d11b876ef8",
+   "bytes": 13621320,
+   "sha256": "017c8cbe06177ef61628921e59952d4356ac70ac65f762c13452f5b9ccfe103b",
    "kind": "optimized"
   },
   {
@@ -9012,20 +10746,20 @@
   },
   {
    "path": "build/strip-landmarks/signatureAviation-exterior.glb",
-   "bytes": 258928,
-   "sha256": "a6d9a25e1a8fe26c3c0ab402dbd040308024c6bb687c7ada3403f45437b5b44b",
+   "bytes": 308036,
+   "sha256": "a05f40f289669c73b97216014d09e152e2741168dc3f784349791a83acc60453",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/signatureExterior-exterior-collision.bin",
-   "bytes": 5784,
-   "sha256": "0f80c9f3ce67daaf345508573d0f3f660774c66ad893e5c550cefc135f0257b3",
+   "bytes": 8956,
+   "sha256": "5ad473fcabc08aec68405086ff3e15ee3640b6f24e4790bce8f3f4055c4fc8de",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/signatureExterior-exterior.glb",
-   "bytes": 3301680,
-   "sha256": "25db0fe8890dc025f6c9794f549ed45e3f12765ed4b1ec730c5d75db197fd5bb",
+   "bytes": 3193544,
+   "sha256": "061a70f64c9bd22269141bef7aab5bd054f9d54c8058bf775ca58f6b72b0f564",
    "kind": "optimized"
   },
   {
@@ -9036,20 +10770,20 @@
   },
   {
    "path": "build/strip-landmarks/sinclair1705-exterior.glb",
-   "bytes": 333264,
-   "sha256": "f9be00b70882ce66c56615a90cdc0e2e8f6d9b5766bc6629d889d488c260b82d",
+   "bytes": 330460,
+   "sha256": "d5e996383b9193789da29bf8f0398fce08c60d1823fc6d54920e005db2b9d32a",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/skyExterior-exterior-collision.bin",
-   "bytes": 48,
-   "sha256": "30d17a65bea876b0a62c957514cd908f9eaa843e0345166fff89019b871a53a1",
+   "bytes": 408,
+   "sha256": "501f789afd862cde92522d7f248ee8552a8853ed2108302dc10d7024fad5e4e3",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/skyExterior-exterior.glb",
-   "bytes": 230252,
-   "sha256": "4ce695ce5ea6675a4336d946e06582d92a9f0318f6a43e5a58b07f6e926c63eb",
+   "bytes": 247336,
+   "sha256": "eb9a7b1e5937c895f829f06c128d7f76f6234935ddd7b9ed12ed089bfdc58864",
    "kind": "optimized"
   },
   {
@@ -9060,8 +10794,8 @@
   },
   {
    "path": "build/strip-landmarks/skyGarage-exterior.glb",
-   "bytes": 74340,
-   "sha256": "7aa956f6ffe6fdba5a0ef09235fa78b98ede5b45df262890c4bb21456827bb18",
+   "bytes": 74688,
+   "sha256": "a763c2a08d7a8d960ecddfba0f456e24334e7d9af319fe92daf5f34b8338590f",
    "kind": "optimized"
   },
   {
@@ -9084,8 +10818,8 @@
   },
   {
    "path": "build/strip-landmarks/southCentralPolice-exterior.glb",
-   "bytes": 786572,
-   "sha256": "8c377415a124d10e4a4c348e3636427eb23f212a625945fda089e11822a91595",
+   "bytes": 788736,
+   "sha256": "0c52fb2e35be2d71d7b6cc24d577fca05a5be2d8fa4db5b3db6bf8e2fa5d3cb0",
    "kind": "optimized"
   },
   {
@@ -9096,8 +10830,8 @@
   },
   {
    "path": "build/strip-landmarks/southCommercial558-exterior.glb",
-   "bytes": 135812,
-   "sha256": "b98bb64acea5fb8182f362368a4cca5b8dee9e2d404e331adcca33a0271ea2b4",
+   "bytes": 155804,
+   "sha256": "0acdc6c84c0853c9006d469e81ef7ca55d019fc0fd795bf419a3cf5831f4a721",
    "kind": "optimized"
   },
   {
@@ -9108,8 +10842,8 @@
   },
   {
    "path": "build/strip-landmarks/southCommercialAnnex-exterior.glb",
-   "bytes": 53532,
-   "sha256": "a90460ac43eb7fd5b300a74199a09b7725129da2ca56a1364c74aa1ed29a744d",
+   "bytes": 51512,
+   "sha256": "6d8d41974fdb98909ea5c3a90e630bebffb0d89a25633c8289bdacf1f908e64c",
    "kind": "optimized"
   },
   {
@@ -9120,8 +10854,8 @@
   },
   {
    "path": "build/strip-landmarks/southShell-exterior.glb",
-   "bytes": 190108,
-   "sha256": "089c9ffd3e4117d30e35d2b96b45d7202c2ac827c707184f9e766e305489efe1",
+   "bytes": 481516,
+   "sha256": "dac1eca3f01893217156b990de77b131b02ceffb8392c918723fc6a6752d42e0",
    "kind": "optimized"
   },
   {
@@ -9156,20 +10890,20 @@
   },
   {
    "path": "build/strip-landmarks/sphereGarage-exterior.glb",
-   "bytes": 105860,
-   "sha256": "c2affb011c922a1ab2da6c76ac608f7a145b014fda4da0dcea218047f29d172b",
+   "bytes": 315604,
+   "sha256": "75c88f62c0c546a60164cd8b93ce3ea8f7ac7faf959a4bde8be205d6c786068d",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/springhillExterior-exterior-collision.bin",
-   "bytes": 884,
-   "sha256": "19103d0faabb90f02ac06575a78885d7fcd5acb4babf8b71b50477236dac1d04",
+   "bytes": 1384,
+   "sha256": "120406c6a728ab7e44020d6ba0da047b984c33a38013895232bc6931b3318070",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/springhillExterior-exterior.glb",
-   "bytes": 286492,
-   "sha256": "6140c0bb145d654c315ce4a24f69d59e6faed023552668e727a4dfe251eec55a",
+   "bytes": 555516,
+   "sha256": "693cb393e154556413cf1376788d1ebf3f8dd0c01bd9ce29995a93863dda2556",
    "kind": "optimized"
   },
   {
@@ -9180,8 +10914,8 @@
   },
   {
    "path": "build/strip-landmarks/stLouisOffice515-exterior.glb",
-   "bytes": 399516,
-   "sha256": "61a8b997f504ab416a582942baab58858367bb9a0912773e6320868616f2714c",
+   "bytes": 401088,
+   "sha256": "a78c9b10b7394c5adcf4a8efd3f4a3bf0d0cd2b94f8155cbb3ff18094903d4bb",
    "kind": "optimized"
   },
   {
@@ -9192,8 +10926,8 @@
   },
   {
    "path": "build/strip-landmarks/stLouisSquareFrontage-exterior.glb",
-   "bytes": 709700,
-   "sha256": "81dca0066d0b3fb8a2a4692c99c6ea7b591f306168731a17238eea49f535881a",
+   "bytes": 711156,
+   "sha256": "c185fb20c8944ad82fb9d844e64bf7d04e0498c7950ca67468c570961a4f17ff",
    "kind": "optimized"
   },
   {
@@ -9246,14 +10980,14 @@
   },
   {
    "path": "build/strip-landmarks/stratExterior-exterior-collision.bin",
-   "bytes": 32776,
-   "sha256": "041dec46b0e6efac6ca57d3c0dd7c8ccb39760ee4a16b9a7afa6794026fc4b3b",
+   "bytes": 36572,
+   "sha256": "3417f4ba59c015540642331ec352019c3ccfaaa029d125dc56ebac5c38795b55",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/stratExterior-exterior.glb",
-   "bytes": 1319532,
-   "sha256": "e698e5bdad13b4507149959c71a6d5eeb1935d01b1c5f1b7dc733605a9c9bd77",
+   "bytes": 1549348,
+   "sha256": "df91efc99962a00312602f69d4f51b90c5f13332b451d148bea6bd1957549a5f",
    "kind": "optimized"
   },
   {
@@ -9264,8 +10998,8 @@
   },
   {
    "path": "build/strip-landmarks/stratPoolDeck-exterior.glb",
-   "bytes": 560132,
-   "sha256": "340393644f0f45f712f081cce184ca4accfd7930e6a556f215f0c4a2bd7f4534",
+   "bytes": 596032,
+   "sha256": "b8fd88e088983acaa69efee14d91db0899556cdcb33a97960ad8c0ebccd6b72b",
    "kind": "optimized"
   },
   {
@@ -9300,8 +11034,8 @@
   },
   {
    "path": "build/strip-landmarks/tacosMexico-exterior.glb",
-   "bytes": 325032,
-   "sha256": "e09a6345f0c46b57006e57037fa6d76b40915fe9e867552dce0691e282603afd",
+   "bytes": 325272,
+   "sha256": "6d6b7d71b47e5f0d187908ca8816e28b1ea0b720a61d6f4d07f7ec5d37ed824f",
    "kind": "optimized"
   },
   {
@@ -9336,20 +11070,20 @@
   },
   {
    "path": "build/strip-landmarks/terriblesHeadquarters-exterior.glb",
-   "bytes": 863888,
-   "sha256": "809cc2183d02e1358645ba03452547a794bc402857c67eb3b1aee57eb63c4789",
+   "bytes": 1044092,
+   "sha256": "42aa781df0a4ebd3ed330d7e483e4ab13937595813970042ec5c27b706d80c6b",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/ti-exterior-collision.bin",
-   "bytes": 4208,
-   "sha256": "47f0d6ddb43cae9ca6367a4a0cf622859b1e50be8c2637739292edfbf996cff6",
+   "bytes": 24580,
+   "sha256": "a1077bbe877988cf580c0a91457b865c16f1f34ed7bc0a775931c495aa7bbe12",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/ti-exterior.glb",
-   "bytes": 10862536,
-   "sha256": "a27b6274ce44e3f6cefcc05588874b1eed088540302b7b0d6c128a6bd91bd5c0",
+   "bytes": 12373264,
+   "sha256": "23d5cfea7e27adad7e631047b6e6e55835029883d73babb220da3ee03b45e82a",
    "kind": "optimized"
   },
   {
@@ -9366,14 +11100,14 @@
   },
   {
    "path": "build/strip-landmarks/tiParking-exterior-collision.bin",
-   "bytes": 35276,
-   "sha256": "2f9527e49d377a0dcd39b39f72726353c3c2893d2ad08aa17f3b33f35750db5e",
+   "bytes": 35280,
+   "sha256": "8bb944f4a8112ea5c7f4cfd2b5714473dfb17bf0e904a0ee17c44260fec79e60",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/tiParking-exterior.glb",
-   "bytes": 352568,
-   "sha256": "8a4d922685d03df9d631ce73e4cd47c1d5d4af9cdc1005739adff57836e30b91",
+   "bytes": 659668,
+   "sha256": "ef6569f46a87b2fc39230dd854e72257c07fa33680a63a1056c2174fca3c5338",
    "kind": "optimized"
   },
   {
@@ -9396,8 +11130,8 @@
   },
   {
    "path": "build/strip-landmarks/todMotel-exterior.glb",
-   "bytes": 215464,
-   "sha256": "d0758af80f398d62a7a2723a8d651d4bfc54537156d79ebb6c0828f7dab4220b",
+   "bytes": 253980,
+   "sha256": "a7609ad8549f948972b4867a4a6532d708f84100d9c43ba0fe3e531019b7855c",
    "kind": "optimized"
   },
   {
@@ -9432,44 +11166,44 @@
   },
   {
    "path": "build/strip-landmarks/travelersFrontage-exterior.glb",
-   "bytes": 122368,
-   "sha256": "9c87494402b78eabc0945a5b01f0259cbcc6a0846c2b071d2c258d5270a729e1",
+   "bytes": 131124,
+   "sha256": "36dad19866d7c9d7ad4a0619b31b20d8b3773c30d639dbf50b94582b6e676faf",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/trumpExterior-exterior-collision.bin",
-   "bytes": 1056,
-   "sha256": "19988bf46aebed5f2e7bfd5a6066e2874635ac16227fd415f14bc69ea97d88d5",
+   "bytes": 3392,
+   "sha256": "f5ef2a8a6c4fe7e21b0e7aebc8ef8add268edcf42738fbd115774e4a681b1901",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/trumpExterior-exterior.glb",
-   "bytes": 189624,
-   "sha256": "8d2bff1f27372c65491831ee6ed08a0125e4a5bce6892e972eebe98d05552d24",
+   "bytes": 309568,
+   "sha256": "3e601f4bf68e24927368f2bbb90509ff620baf6671bef8af11b5b971bf52a6fa",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/turnberryPlaceExterior-exterior-collision.bin",
-   "bytes": 48,
-   "sha256": "30d17a65bea876b0a62c957514cd908f9eaa843e0345166fff89019b871a53a1",
+   "bytes": 6416,
+   "sha256": "6aeee558cbc9ba961228116b3899a87b9dec2b227a0be3ca4a370ec754524e88",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/turnberryPlaceExterior-exterior.glb",
-   "bytes": 6511392,
-   "sha256": "e47da0c771d2313dedb4845db4f578d037f3716cffe465e6e2fb6106d616fa40",
+   "bytes": 6804344,
+   "sha256": "947d86e7a2304e958780eadbda37c1ec61afd8d64965faafd5f92a5fb58ee9e3",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/turnberryTowersExterior-exterior-collision.bin",
-   "bytes": 4660,
-   "sha256": "4f2ced97202715cf79d25d10b2ec412526290daac4aef7761d793877fa09f93d",
+   "bytes": 6204,
+   "sha256": "cbc8e474e34624a3b01b2df8ae917c76add52efc1869acfecb1422723d266f10",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/turnberryTowersExterior-exterior.glb",
-   "bytes": 1824120,
-   "sha256": "7ad21eff198f4972a6cfd5ee83b01b496f867209a4cfc2eccfd2f7f806019dd1",
+   "bytes": 2129116,
+   "sha256": "1f26e8e37819c5b861b2a8995a93fd4f12ff76e38919850e364b52aececdb894",
    "kind": "optimized"
   },
   {
@@ -9498,14 +11232,14 @@
   },
   {
    "path": "build/strip-landmarks/usBankCenter-exterior-collision.bin",
-   "bytes": 2632,
-   "sha256": "307c60bb24013537e99a36a96f7d402df528395454a182b37fcfd60ab7497761",
+   "bytes": 20044,
+   "sha256": "fb9c0ad547ed488580c6e9fd7dc97c1398a463cdd907b5ddb3809466db8f6f8a",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/usBankCenter-exterior.glb",
-   "bytes": 170396,
-   "sha256": "c636409aa7f3469b0ac0a962fe269acf673414ea7d2a08a688711d1372c3ed6f",
+   "bytes": 12365784,
+   "sha256": "451be6c199f834f96c6c1c9ea8741943d954468daff2ccaa01090540e315ef98",
    "kind": "optimized"
   },
   {
@@ -9516,8 +11250,8 @@
   },
   {
    "path": "build/strip-landmarks/vanderpump-exterior.glb",
-   "bytes": 2174372,
-   "sha256": "353fdfe2bc986cff87c29a21cded7cad384ba112318f2d1b5897df3cb8db044e",
+   "bytes": 2325756,
+   "sha256": "315aeb9df7f163347341c4deb8fdc69e90357f230b56315eb544db38f6ce18e4",
    "kind": "optimized"
   },
   {
@@ -9564,8 +11298,8 @@
   },
   {
    "path": "build/strip-landmarks/venetian-exterior.glb",
-   "bytes": 28437620,
-   "sha256": "e625fc068261d3d12366a95cd5d05be6c7551b893a47f6dc0f759016ee09e361",
+   "bytes": 28226000,
+   "sha256": "42954d43b85b82d2c62e2df5aa0a5c610762afc98b6b7ab5c20efcbb1dbb89ac",
    "kind": "optimized"
   },
   {
@@ -9612,26 +11346,26 @@
   },
   {
    "path": "build/strip-landmarks/venetianEmployeeGarage-exterior.glb",
-   "bytes": 150836,
-   "sha256": "c5843c49254b018bfc17e01b1324d0ad9b1653c62ad3cc665cf6f8e54969a9fd",
+   "bytes": 437400,
+   "sha256": "7108d0ff6f6a6686033f55f9dd2ed70707f29e8972cd203c6e18da0125502fc6",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/venetianExpo-exterior-collision.bin",
-   "bytes": 3676,
-   "sha256": "7487223324b13148dd01249b83075db403e80ae42cfeb522d2b207013df47231",
+   "bytes": 5592,
+   "sha256": "08f8a81385b6b1b7d278a7db9fbde216ec08a629cd1246ff746ad543e08559ad",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/venetianExpo-exterior.glb",
-   "bytes": 301164,
-   "sha256": "fdb6b6432b31eabd21a7d95aba35dffa22356d1fdf5bea87bb39113f093cad05",
+   "bytes": 341688,
+   "sha256": "5aff3b327c811b39b6e246e6e2d1e04ad33e33722c4d47dfbd4c1b033f90bed8",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/venues.bin",
-   "bytes": 391116,
-   "sha256": "1ef7899c61af8b7ceea899225cc0cd628dda17f6a6c718a4766929862ccdd1aa",
+   "bytes": 394536,
+   "sha256": "da2bfa14a02b5c989a87e6abcf070e4e597cc543c2842ab21c9fd87c84a826bc",
    "kind": "original"
   },
   {
@@ -9660,14 +11394,14 @@
   },
   {
    "path": "build/strip-landmarks/waldorfExterior-exterior-collision.bin",
-   "bytes": 2744,
-   "sha256": "2fb0479ee63c197a5eafd5fab4aee56e60dcebc9002b359869a6c123def150d4",
+   "bytes": 9868,
+   "sha256": "ea1ca3d188d7996140dd70af6e77a5d87733fb8243fd19b5eb3e760e7a42a25d",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/waldorfExterior-exterior.glb",
-   "bytes": 367644,
-   "sha256": "3148ee7a4873fe40a2b11c11303c9722d85dd871932e8ca0b8ddb3b51319f000",
+   "bytes": 406932,
+   "sha256": "6a9f6dcfe71ce37346e220658e59e29adb224e1ea89f5ec3348efb9cd0215891",
    "kind": "optimized"
   },
   {
@@ -9690,20 +11424,20 @@
   },
   {
    "path": "build/strip-landmarks/weldonWest-exterior.glb",
-   "bytes": 12664840,
-   "sha256": "59cad8f5e18f8946dd88b9af06fe6873c0a977fc21d6171d39bad01a4c30b8cb",
+   "bytes": 12660084,
+   "sha256": "4f212e94624abe00ac7e83cc76a5717b0f34b6cd537b5f2aefb6401873bada6f",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/wellsFargoTower-exterior-collision.bin",
-   "bytes": 692,
-   "sha256": "89c7dcf3010924bacecea90d0046b58d2744f8c28be4a5e356742cb9d2e6c93f",
+   "bytes": 1884,
+   "sha256": "e755212bce13eb8f48d6ffd10bff62b1b5b8cc70dc1ea0349d7bbf7e05e9d5ba",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/wellsFargoTower-exterior.glb",
-   "bytes": 1010100,
-   "sha256": "20c482bdc0308751398ea4e9d604976cd443df988b5a2cf4d83ee3c43b26365b",
+   "bytes": 1061336,
+   "sha256": "ea52032221687026da05c429357799438e9f3f98218afc82b026f785464aa656",
    "kind": "optimized"
   },
   {
@@ -9720,26 +11454,50 @@
   },
   {
    "path": "build/strip-landmarks/westgateExterior-exterior-collision.bin",
-   "bytes": 5180,
-   "sha256": "a3035baa5a5f7af71f051a92493191277b055a851fa5335b575c6669d24c14f3",
+   "bytes": 8668,
+   "sha256": "b6445c4793b9f1b4deb75170e79ab914da7cebd9347e37f82e8c9bdc1f8d096e",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/westgateExterior-exterior.glb",
-   "bytes": 350720,
-   "sha256": "9e2a1a7c7142c2e02b14c1ab8ef03c87344ee79b34c3016b1b4834d321aa5396",
+   "bytes": 504608,
+   "sha256": "b016678ceabc596088989a8c8a6f8bf19e871eb1695a9679c611b12396ca1100",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/westin-exterior-collision.bin",
-   "bytes": 10440,
-   "sha256": "47c4e2a8c946cc250ce07277e31404b16035bfc20d3129f3a2d1dbc5741ff94b",
+   "bytes": 12424,
+   "sha256": "ab0b8adaf44fab50d5a43c6d2a079eb91772994a6a0746d648a6cf696309f285",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/westin-exterior.glb",
-   "bytes": 239128,
-   "sha256": "c2472d9e0babccccc95e4660c146f62193cbc2b7a0adbc1fa84d8521a8bd0e66",
+   "bytes": 302948,
+   "sha256": "d634c0606b7437b0166778c5cf1652b93556c4cf758ef3cb8eb22079b2482f39",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/westwood-2601-exterior-collision.bin",
+   "bytes": 6156,
+   "sha256": "304e255915987f730fcbca5f19d11c4ec85e35edc56781e5655abd9f6b5d7263",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/westwood-2601-exterior.glb",
+   "bytes": 2639624,
+   "sha256": "0e24914c96805240f66429278e443335efacf6c6e33d61d211a02481835b72e4",
+   "kind": "optimized"
+  },
+  {
+   "path": "build/strip-landmarks/westwood-2650-exterior-collision.bin",
+   "bytes": 368,
+   "sha256": "c34aaae0a07c982a6ea05101c5979f1d3e79f512c4416b8250332b1007f733e1",
+   "kind": "original"
+  },
+  {
+   "path": "build/strip-landmarks/westwood-2650-exterior.glb",
+   "bytes": 178624,
+   "sha256": "3e67717e5a64dcff8ada6342c088332f54c2bfacc611dfc7d1910e8e923139b2",
    "kind": "optimized"
   },
   {
@@ -9750,32 +11508,32 @@
   },
   {
    "path": "build/strip-landmarks/whiteCrossAnnex-exterior.glb",
-   "bytes": 943992,
-   "sha256": "4e7b2a8f4c7b0c54c9c7cba9c8edff4215c322e737d97950d33ece70164e5b6d",
+   "bytes": 946116,
+   "sha256": "8cf8af763036c17ab4a48ff083e39a8f964fc7684f4fab4cb19b9f6927fc91d1",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/wyndhamDesertBlue-exterior-collision.bin",
-   "bytes": 1540,
-   "sha256": "5ad51655c1efe708094623a02fe133ddc44d32816ea1ac607b85dcbd15309c78",
+   "bytes": 2308,
+   "sha256": "ad9b35b580471f65a34efbab70478027db21e8306040837f86d9e0ff74facfed",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/wyndhamDesertBlue-exterior.glb",
-   "bytes": 974640,
-   "sha256": "9e1e818a3d83324333e74022f28d1aacda633f2963a78d5416d52d33ad632023",
+   "bytes": 978696,
+   "sha256": "4ea8de9ebba310556665e36c69262653a851ae3b302066b9677a4d6674dc7f81",
    "kind": "optimized"
   },
   {
    "path": "build/strip-landmarks/wynnEncoreExterior-exterior-collision.bin",
-   "bytes": 23248,
-   "sha256": "9a877021409a16d3a1e0df6faf5ed95cfcf6be68978a6d1115c26f98c46d97a0",
+   "bytes": 24400,
+   "sha256": "72efd8abd392b3f656cbf9b01701f46af0862386dc40a0e90335e1a476806f79",
    "kind": "original"
   },
   {
    "path": "build/strip-landmarks/wynnEncoreExterior-exterior.glb",
-   "bytes": 969524,
-   "sha256": "559ed0890e03a492db16034d1fb6d4de5f661d58891dd07d56fd8fefaf8fec4c",
+   "bytes": 1300380,
+   "sha256": "929be38c819c27ea9ff65364ca9199d448058afa20a659e62b2e87303d00b722",
    "kind": "optimized"
   },
   {
@@ -9786,8 +11544,8 @@
   },
   {
    "path": "build/strip-landmarks/wynnLakefront-exterior.glb",
-   "bytes": 211196,
-   "sha256": "49ccdc5e2cc48aa7c6f82ddab567b50966eabc6bac7b5c6f3ebe8feac41d89fb",
+   "bytes": 340200,
+   "sha256": "bd51427b63d1cbd12af16250efb96a8b7d91c5ec9ca4c97b3d891d1d0ede16e4",
    "kind": "optimized"
   },
   {
@@ -9798,8 +11556,8 @@
   },
   {
    "path": "build/strip-landmarks/wynnMarquee-exterior.glb",
-   "bytes": 672812,
-   "sha256": "f0d1f196b1f2c6e44d8a9bbe4ea5284b1f858ba50951b1b2188e786e737a43fb",
+   "bytes": 710212,
+   "sha256": "bfd48e04e8909dcf32c335132fa2c75545c172e07e430bdf4a1dd6fc91250732",
    "kind": "optimized"
   },
   {
@@ -9810,8 +11568,8 @@
   },
   {
    "path": "build/strip-landmarks/wynnPlazaCanopy-exterior.glb",
-   "bytes": 24604,
-   "sha256": "4d6a4f6ab89e77b4b170bb9fdcb57525130e6767218a7ed22639ac7ad2230466",
+   "bytes": 33408,
+   "sha256": "a332b3b150b90c2eec66d1665739abbe529b20c1cb1bbb364a95f2d9a0fa13fb",
    "kind": "optimized"
   },
   {
@@ -9822,8 +11580,8 @@
   },
   {
    "path": "build/strip-landmarks/wynnSouthCanopy-exterior.glb",
-   "bytes": 283520,
-   "sha256": "c9c92a0cbdc22b265870c54983cc84554dba4bc76ce08e953ff4613a5bb6ae5c",
+   "bytes": 374092,
+   "sha256": "4e335c0ed315ff948ded2b4b15abe29f44b9509411c6a89e938d53baa1b8d2d2",
    "kind": "optimized"
   },
   {
@@ -9834,8 +11592,8 @@
   },
   {
    "path": "build/strip-landmarks/wyoming17Frontage-exterior.glb",
-   "bytes": 154516,
-   "sha256": "aecb7d1cb6a2e65a65c234ea55d621f2cff3c442ccacda2ade71e815c3537bd0",
+   "bytes": 158888,
+   "sha256": "89e15251dc351f54b732bc2e89aae25bdbcd8dc2b62309ec2dc7e610c3df8089",
    "kind": "optimized"
   },
   {

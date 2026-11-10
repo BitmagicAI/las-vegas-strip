@@ -31,7 +31,14 @@ def exterior(B):
    F.box('cm-dark-paint',(c,1.64,-.17),(2.05,2.92,.1))
    for u in [c-.47,c+.47]:
     F.box('cm-aluminum-paint',(u,1.43,-.24),(.93,2.5,.08));F.box('cm-glass',(u,1.48,-.3),(.81,2.29,.03));F.tube('cm-aluminum-paint',(u,1,-.35),(u,1.6,-.35),.025,8)
-   F.text('515',(c,3.04,-.22),.17,'cm-dark-letter')
+   # January 2022 photo: framed transom and two roof-mounted sign floods.
+   F.box('cm-aluminum-paint',(c,2.84,-.31),(2.05,.07,.10))
+   F.box('cm-glass',(c,2.98,-.30),(1.93,.20,.035))
+   for u in [L*.25,L*.75]:
+    F.tube('cm-dark-paint',(u,4.63,1.15),(u,4.94,1.15),.035,6)
+    F.box('cm-dark-paint',(u,4.97,1.10),(.40,.23,.18))
+    F.box('cm-aluminum-paint',(u,4.97,.997),(.31,.14,.025))
+   F.text('515',(c,3.18,-.23),.17,'cm-dark-letter')
    F.box('cm-white-paint',(c,4.12,-.52),(6.5,1.55,.15))
    F.text('CITY MARKET & LIQUOR',(c,4.5,-.61),.41,'cm-red-letter');F.text('BEER • WINE',(c,4.02,-.61),.32,'cm-red-letter');F.text('GROCERIES',(c,3.66,-.61),.25,'cm-blue-letter')
    B.source='podium/parking'

@@ -1,0 +1,49 @@
+{
+  "changed": [
+    {
+      "path": "runtime-assets/baked/cells/cell--2_-1.bin",
+      "bytes": 257137,
+      "sha256": "a5cd30eb0767cfcc52470483ea6b2aac8eaaa397c87be50042b1f1de032e9066",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/baked/cells/cell--3_-1.bin",
+      "bytes": 83691,
+      "sha256": "a554670a3a20a54729cbda902b1ab159494e6c89a916565aeff67ff646688291",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "4bd8f1bb5f1368be2f25321cab3bfd8b4a6dfbf250a086f363f580ab91381f47",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/goldCoastExterior-exterior-collision.bin",
+      "bytes": 4860,
+      "sha256": "1233c2d86931e712cb32ae0467f0105f605b6b8168d40c01441119bbf85b1f9b",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/goldCoastExterior-exterior.glb",
+      "bytes": 2403772,
+      "sha256": "0457ddf887986b614b0efe8a9eb56afb5bdf90918e0b034d4ff08e4518766a24",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/wyndhamDesertBlue-exterior-collision.bin",
+      "bytes": 2308,
+      "sha256": "ad9b35b580471f65a34efbab70478027db21e8306040837f86d9e0ff74facfed",
+      "lfs": true
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/wyndhamDesertBlue-exterior.glb",
+      "bytes": 978696,
+      "sha256": "4ea8de9ebba310556665e36c69262653a851ae3b302066b9677a4d6674dc7f81",
+      "lfs": true
+    }
+  ],
+  "newLfsBytes": 3744265,
+  "cellFiles": 186,
+  "unchangedCellFiles": 183
+}

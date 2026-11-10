@@ -44,9 +44,9 @@
     "waterfallHeight": 13.7,
     "note": "Waterfall based on official45ft description; other vertical levels estimated from photos and existing parent. Main lake shoreline manually traced from aerial, not surveyed."
   },
-  "triangles": 13302,
+  "triangles": 19638,
   "batches": 11,
-  "optimizedMiB": 0.2,
+  "optimizedMiB": 0.324,
   "viewsInspected": [
     "build/city-exteriors/wynn-lakefront-final/wynn-lake-wide.png",
     "build/city-exteriors/wynn-lakefront-final/wynn-sw-terrace.png",
@@ -153,8 +153,19 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/wynnLakefront-exterior.glb": "772ffed942e6f478d3518db43afd7d8cf6c50fec81ade204a122754a7079a531",
+      "build/strip-landmarks/wynnLakefront-exterior.glb": "69735bad148213c59bfcd927b00dbcaf5aa726ac433550cfce92cdc727df388e",
       "build/strip-landmarks/wynnLakefront-exterior-collision.json": "7e1cf4401f8a33a83511df1e212bb8de5f140859cc957d288cc7bfe7cd6e5a14"
     }
+  },
+  "refinement20261108": {
+    "scope": "Original faceted leaf relief and paired curl stems on existing lower SW and north terrace capitals; south open basin preserved.",
+    "record": "docs/project-records/wynn-lakefront-refinement",
+    "status": "installed-verified-scoped",
+    "sourceTriangles": 19638,
+    "optimizedBytes": 340200,
+    "checks": "12 local checks PASS;1010 support samples;8 legacy bidirectional reports;24before/24after actual keyboard walk legs;6matching daylight views;9stop dev smoke PASS",
+    "preservation": "Collision, labels, raw materials and existing images unchanged;91/92 binarycells byte-identical; only cell-0_-2 changed. Unrelated GoldCoast/Wyndham LOD restored byte-identically.",
+    "decisions": "Original simplified relief within existing estimated cap envelope; no survey accuracy, exact sculpture, current north restaurant identity or new interior claim.",
+    "performance": "docs/project-records/wynn-lakefront-refinement/performance-comparison.json"
   }
 }

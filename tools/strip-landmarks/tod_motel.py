@@ -43,6 +43,14 @@ def exterior(B):
  S.box('tm-trim',(0,3,0),(.25,5.5,.25),True)
  for y,label,width in [(9.8,'TOD',3.3),(8.8,'MOTOR',4.1),(7.8,'MOTEL',3.9)]:
   S.box('tm-sign',(0,y,0),(width,.85,.18));S.text(label,(0,y-.04,-.13),.55,'tm-letter');S.text(label,(0,y-.04,.13),.55,'tm-letter',True)
+ # Open wire sphere survives above the sign in January 2026 Street View.
+ # Diameter/pole length inferred relative to TOD panel, not surveyed.
+ S.tube('tm-trim',(0,10.22,0),(0,11.55,0),.045,8)
+ for azimuth in [0,math.pi/3,2*math.pi/3]:
+  ring=[]
+  for t in np.linspace(0,2*math.pi,33):
+   ring.append((.48*math.cos(t)*math.cos(azimuth),11.55+.62*math.sin(t),.48*math.cos(t)*math.sin(azimuth)))
+  for a,b in zip(ring,ring[1:]):S.tube('tm-trim',a,b,.022,6)
  court=box(1893.9,-4111,1927,-4086).difference(p);B.planar('tm-paving',court,.18,True)
  B.planar('tm-paving',p.buffer(1,join_style=2).difference(p).difference(court),.18,True)
  for x,z in [(1889,-4095),(1889,-4107),(1905,-4115)]:W.box('tm-service',(x,4,z),(1.3,.8,1.1))

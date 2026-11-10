@@ -20,11 +20,19 @@ def rides(B,cx,cz):
  for k in range(4):
   a=k*math.pi/2;C=Frame(B,cx+4*math.sin(a),cz+4*math.cos(a),a,y=281)
   C.box('st-grey',(0,.25,0),(4.4,.45,1.5))
+  # Original carrier panels and padded red restraints from the official BigShot photo.
+  # Dimensions are estimates; this remains a static exterior assembly.
+  C.box('st-red',(0,2.35,-.72),(4.5,3.7,.14))
+  for y in [.55,1.8,3.0,4.15]:C.box('st-sill',(0,y,-.62),(4.6,.055,.07))
+  for x in [-2.25,2.25]:C.box('st-sill',(x,2.35,-.62),(.06,3.7,.07))
   for u in [-1.5,-.5,.5,1.5]:
    C.box('st-red',(u,.55,0),(.8,.18,.85));C.box('st-red',(u,1.15,-.35),(.8,1.1,.22))
    for dx in [-.27,.27]:
-    C.tube('st-shadow',(u+dx,1.58,-.18),(u+dx,.85,.35),.07,8)
-   C.tube('st-shadow',(u-.27,.85,.35),(u+.27,.85,.35),.07,8)
+    C.tube('st-red',(u+dx,1.58,-.18),(u+dx,1.62,.10),.10,8)
+    C.tube('st-red',(u+dx,1.62,.10),(u+dx,.85,.35),.10,8)
+    C.box('st-red',(u+dx,1.42,.10),(.20,.36,.24))
+   C.tube('st-red',(u-.27,.85,.35),(u+.27,.85,.35),.12,10)
+   C.box('st-shadow',(u,.86,.46),(.12,.15,.025))
  # X-Scream: southwest-facing pivot/rails, carriage in the parked position.
  # Its tip projects beyond the observation ring; no invented ground-level building.
  R=Frame(B,cx-22,cz+10,math.pi/2+.20,y=268)

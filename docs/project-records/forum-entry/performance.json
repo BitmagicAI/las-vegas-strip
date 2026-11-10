@@ -1,0 +1,102 @@
+{
+  "viewport": "960x540",
+  "method": "Single local run, same named daylight cameras; not published or driving performance",
+  "views": [
+    {
+      "building": "forum-entry",
+      "name": "front",
+      "eye": [
+        25,
+        5,
+        -352
+      ],
+      "target": [
+        -15,
+        17,
+        -350
+      ],
+      "beforeP95": 18.5,
+      "afterP95": 19.299999952316284
+    },
+    {
+      "building": "forum-entry",
+      "name": "roof",
+      "eye": [
+        62,
+        100,
+        -285
+      ],
+      "target": [
+        -48,
+        17,
+        -352
+      ],
+      "beforeP95": 18.399999856948853,
+      "afterP95": 19.399999856948853
+    },
+    {
+      "building": "forum-entry",
+      "name": "west",
+      "eye": [
+        -526,
+        28,
+        -423
+      ],
+      "target": [
+        -480,
+        9,
+        -382
+      ],
+      "beforeP95": 27,
+      "afterP95": 26.700000047683716
+    },
+    {
+      "building": "forum-cooling",
+      "name": "front",
+      "eye": [
+        -117,
+        48,
+        -454
+      ],
+      "target": [
+        -160,
+        19,
+        -413
+      ],
+      "beforeP95": 19,
+      "afterP95": 18.399999856948853
+    },
+    {
+      "building": "forum-cooling",
+      "name": "deck",
+      "eye": [
+        -149,
+        23,
+        -398
+      ],
+      "target": [
+        -161,
+        19,
+        -412
+      ],
+      "beforeP95": 18.200000047683716,
+      "afterP95": 19.299999952316284
+    },
+    {
+      "building": "forum-cooling",
+      "name": "top",
+      "eye": [
+        -161,
+        51,
+        -414
+      ],
+      "target": [
+        -160.7,
+        16,
+        -413
+      ],
+      "beforeP95": 19.100000143051147,
+      "afterP95": 19.5
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "base": "f1cd8f3254286570ebec720cf3d80ba882d72014",
+  "issues": [
+    135,
+    136
+  ],
+  "claims": "janiverse confirmed",
+  "stage": "Verified local pass:6matchingpairs+8walkendpoints inspected;337support;12CPUbefore/after;12actualbefore/after;9clean smoke stops;allstep7passed. Sinclair front p95 initial28.1ms vs18.6baseline; isolated exactcamera recheck17.8ms, retained both.91/92cells identical.9,677,897new uniqueLFSbytes including20proofPNGs.",
+  "pending": "Push only own commits, updatePR501,verifyexactremotehead/base next,ready and guardedmerge;close135136,continuepicker. No wholeblockcompletion claim.",
+  "pr": 501,
+  "baselineSession": 64633,
+  "walkSession": 70235,
+  "bakeSession": 8547,
+  "cpuSession": 20479,
+  "afterSession": 5976
+}

@@ -82,4 +82,6 @@ def exterior(B):
   ps=list(p.exterior.coords)
   for a,b in zip(ps,ps[1:]):B.face('gco-pooltile',[(a[0],-1.2,a[1]),(b[0],-1.2,b[1]),(b[0],.1,b[1]),(a[0],.1,a[1])],True)
  B.planar('gco-pooltile',water,-1.2,True)
+ from gold_coast_amenities import build as add_pool_furniture
+ add_pool_furniture(B)
  return dict(key=KEY,name='Gold Coast hotel and Spanish casino exterior',center=[-1770,0,-90],bounds=[-1940,-250,-1550,0],building='gold-coast',structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

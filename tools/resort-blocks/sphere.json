@@ -1,0 +1,111 @@
+{
+  "id": "sphere",
+  "status": "refinement-deferred",
+  "sources": [
+    {
+      "url": "https://populous.com/showcases/sphere",
+      "provider": "Populous, architect of record",
+      "accessed": "2026-11-06",
+      "imageDate": "Unknown; image URL directory February 2024 is not an exposure date.",
+      "observed": "Project text establishes 366 ft height, 516 ft width, plaza and Venetian bridge arrivals, second-level atrium, four seating tiers and two suite levels. Facts table conflicts with narrative at 336 ft; retain 366 ft corroborated by SEC filing.",
+      "images": [
+        {
+          "url": "https://populous.com/uploads/2024/02/Sphere_Interior_Lobby_Populous-1200x900-c-center.jpg",
+          "observed": "Visually inspected: curved stacked balcony edges, tall cylindrical columns with glowing caps, suspended rings, paired escalators, glazed balustrades, reflective dark floor. Installed atrium retains these broad motifs but is simplified; exact alignment is not established."
+        },
+        {
+          "url": "https://populous.com/uploads/2024/02/Sphere_Exosphere_Hello-World_Populous-1200x900-c-center.jpg",
+          "observed": "Visually inspected: rounded display shell over a low dark entrance base; visible triangular panel structure, repeated glazed entrance bays and hardscape. Event display imagery not reproduced."
+        }
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1795250/000162828026007760/sphr-20251231.htm",
+      "provider": "Sphere Entertainment SEC filing",
+      "accessed": "2026-11-06",
+      "observed": "Corroborates 366 ft height and 516 ft width."
+    },
+    {
+      "url": "https://www.thesphere.com/accessibility-services",
+      "provider": "Sphere",
+      "accessed": "2026-11-06",
+      "observed": "Confirms East and West entries from Sands Avenue and accessible Venetian bridge via the resort; elevators and escalators exist. Does not establish exact architectural dimensions or a complete floor plan."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1212,-115.162,18z/data=!3m1!1e3",
+      "provider": "Google Maps satellite",
+      "accessed": "2026-11-06",
+      "imageDate": "Unknown; copyright2026 is not capture date.",
+      "observed": "Visually inspected: circular shell, broad low perimeter apron, east parking and looping drives, west long garage/service buildings, southwest diagonal bridge route. No imagery copied into repository."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1225,-115.1622&heading=180&pitch=15&fov=90",
+      "provider": "Google Street View,55 Sands Ave",
+      "panoid": "dq3xNbDNBaC4r90PSeOIow",
+      "imageDate": "January2025",
+      "accessed": "2026-11-06",
+      "observed": "Visually inspected: shell behind elevated monorail track; foreground fencing and sparse new trees; broad sloped pale canopy west/right of shell. Track obstructs part of facade. Exact canopy geometry and ownership remain to reconcile. Initial near-center request resolved to unrelated contributed shopping-mall panorama, rejected as architectural evidence."
+    }
+  ],
+  "dimensions": {
+    "source": "way/976405284; tools/sphere/build.py",
+    "centerWorldM": [
+      983.04,
+      0,
+      -583.71
+    ],
+    "heightM": 111.5568,
+    "diameterM": 157.2768,
+    "heightBasis": "366 ft and 516 ft converted at 0.3048; existing generator already uses these dimensions.",
+    "mainFloorEstimateM": 6.085,
+    "placement": "Mapped plan and existing datum retained; elevations, portal clearances and interior room arrangement are authoring approximations, not a survey."
+  },
+  "implemented": [
+    "Existing authored exterior display shell and low arrival base retained.",
+    "Existing plaza, west entry, bridge threshold, atrium, escalators and four-tier seating bowl retained.",
+    "Separate adjoining garage/service components belong to sphere-garage.json (way/111339081 and way/1001560970); their existing reconstruction is not a new Sphere addition."
+  ],
+  "remaining": [
+    "Fine facade fidelity remains open: display panel seams, entrance bay rhythm, canopy and hardscape need matched current ground/aerial reference coverage before a justified mesh change.",
+    "Full Venetian-to-Sphere connection remains open: a local bridge threshold test does not establish the entire inter-property route.",
+    "Public interior alignment, suite levels, accessible lifts and complete seat capacity remain approximate; existing generated 10394 seats are below the architect\u2019s 17600-seat description and must not be called exact.",
+    "Historical blank adjoining-component finding is partly superseded by the separate sphere-garage record; remaining unowned background shells still require a current ownership inventory.",
+    "Baseline plaza p95 is 59.7 ms at 960x540 DPR1 ultra, while other sampled views are 17.7\u201319.3 ms. Existing performance limitation requires diagnosis; no sustained 60 fps claim.",
+    "Full perimeter and exact north/west sloped canopy/arrival geometry remain unverified. January2025 Sands frontage is partly occluded by the monorail; satellite does not establish elevations."
+  ],
+  "validation": {
+    "collision": "Existing sphere test passed 5879 support/body and 6 door checks with 11 city cells; actual movement is a separate pending check.",
+    "visual": "Six matching before/after installed views inspected, front first; no geometry change. Expected animated display changes only. Bridge brace obstructs part of view and bowl framing favors screen, so neither establishes whole-route or exact seating fidelity.",
+    "performance": "Matched p95 ms front19.3\u219219.2, plaza59.7\u219261.3, bridge18.9\u219220.5, atrium18.3\u219218.0, bowl17.7\u219217.7, upper17.7\u219217.7. No >10% change in sampled views; plaza remains an existing slow view and no 60fps/speedup claim is made.",
+    "walking": "Actual installed keyboard movement passed 28 forward/return legs over five local routes: bridge threshold to atrium, plaza doors to atrium, west entry escalator, atrium to terrace and terrace to gallery. Two nearby door interactions. This does not cover the full Venetian connection, all entrances or all seating aisles."
+  },
+  "evidence": [
+    "docs/project-records/sphere-refinement/collision-before.json",
+    "docs/project-records/sphere-refinement/performance-before.json",
+    "docs/project-records/sphere-refinement/actual-walk-before.json",
+    "docs/project-records/sphere-refinement/performance-after.json",
+    "docs/project-records/sphere-refinement/performance-comparison.json",
+    "docs/project-records/sphere-refinement/smoke.json",
+    "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/sphere-refinement/comparison.jpg",
+    "docs/project-records/sphere-refinement/checks.json",
+    "docs/project-records/sphere-refinement/runtime-audit.json"
+  ],
+  "decisions": [
+    "Preserve existing geometry and optimized runtime while establishing a durable inventory and explicit remaining work. No speculative geometry or third-party texture copying.",
+    "Treat current event admission rules as operations, not permanent architecture."
+  ],
+  "finalBuild": {
+    "files": {
+      "runtime-assets/sphere/exterior-collision.bin": "42db9bac48629350afa9dafecac596a179d037f826889f7abc8072aa15f2bac5",
+      "runtime-assets/sphere/immersive-poster.jpg": "1ea89570b772307310b0bba7a39331a5dbf2c1333e55516af2117a424ac4a665",
+      "runtime-assets/sphere/exosphere.mp4": "03b02237abba0d7fc9fd733c6bf6d7ede1ca5889079d81a18564de6ad49d1176",
+      "runtime-assets/sphere/sphere.bin": "e567c1e4e9e6069b73fd37489c07ecb0fa93873b03241dec6f13c7159f83846a",
+      "runtime-assets/sphere/immersive.mp4": "6d9ae08593d57b0c548675fe06469055416ffdcb8d079f2a4bad3b332d3f7dd7",
+      "runtime-assets/sphere/media.bin": "e0420a8e7df1a39ccfe7a3f50adc1370ea7e4122ee7637e34132394def6f6b9e",
+      "runtime-assets/sphere/interior.glb": "0b773582512acd883b5b32037fcb8689cc67a625c725bbe22487813ba37afaec",
+      "runtime-assets/sphere/exosphere-poster.jpg": "49829e2642437f2f8802e8a2dc492007d6ba464bf15af5e3d8aaaca9ef1d7cbb",
+      "runtime-assets/sphere/interior-collision.bin": "aad48287ad4e886df70d3cadfa28b0f0f0d77353b9be6b703911bcee87af7fb1",
+      "runtime-assets/sphere/exterior.glb": "c30b3e54bfa1e9dfb94fc9c136e5521d28eb0e0a417cb94f09f0d55b39919714"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "port": 3180,
+  "failed": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "visits": [
+    {
+      "stop": "hotel bellagio-north floor 5 room",
+      "placed": true,
+      "position": [
+        -307.2,
+        18.1,
+        263.5
+      ],
+      "newFailures": []
+    },
+    {
+      "stop": "hotel mgm-grand-1 floor 4 corridor",
+      "placed": true,
+      "position": [
+        285.3,
+        14.6,
+        1511.9
+      ],
+      "newFailures": []
+    },
+    {
+      "stop": "hotel venetian-1 floor 4 room",
+      "placed": true,
+      "position": [
+        374.4,
+        14.6,
+        -620.8
+      ],
+      "newFailures": []
+    },
+    {
+      "stop": "hotel strat-1 floor 4 room",
+      "placed": true,
+      "position": [
+        1477.1,
+        14.6,
+        -3546.8
+      ],
+      "newFailures": []
+    },
+    {
+      "stop": "venue venetian lobby",
+      "placed": true,
+      "position": [
+        230,
+        0.3,
+        -686
+      ],
+      "newFailures": []
+    },
+    {
+      "stop": "venue linq lobby",
+      "placed": true,
+      "position": [
+        43.4,
+        0.1,
+        -250.8
+      ],
+      "newFailures": []
+    },
+    {
+      "stop": "venue bellagio lobby",
+      "placed": true,
+      "position": [
+        -230,
+        0.2,
+        445
+      ],
+      "newFailures": []
+    },
+    {
+      "stop": "Sphere approach",
+      "placed": true,
+      "position": [
+        983,
+        0,
+        -470
+      ],
+      "newFailures": []
+    },
+    {
+      "stop": "New York-New York coaster",
+      "placed": true,
+      "position": [
+        300,
+        0,
+        1500
+      ],
+      "newFailures": []
+    }
+  ]
+}

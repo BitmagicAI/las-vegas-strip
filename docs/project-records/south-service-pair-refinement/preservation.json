@@ -1,0 +1,20 @@
+{
+  "totalCells": 92,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell--1_4.bin",
+    "runtime-assets/baked/cells/cell-0_3.bin"
+  ],
+  "byteIdenticalCells": 90,
+  "models": {
+    "akitaRearCanopy": {
+      "exportTriangles": 4016,
+      "optimizedBytes": 82100,
+      "sha256": "cb7039c90462c8c8d9df8ede1649dfa25bafafb6c8daf8b02ba54fc0e2bb47d1"
+    },
+    "russellService": {
+      "exportTriangles": 1854,
+      "optimizedBytes": 58348,
+      "sha256": "d8da7a4571c6a2fad4cfaa261700f3382fdc588531a5ebc726e22157889abc64"
+    }
+  }
+}

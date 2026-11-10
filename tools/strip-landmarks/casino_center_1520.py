@@ -61,7 +61,12 @@ def exterior(B):
  for w in [12,29.5]:palm(B,F,12.75,w,7.5)
  for u in [-.7,.7]:
   B.face('ad-sign-frame-paint',[G.p(u-.24,6.5,-.82),G.p(u+.24,9.7,-.82),G.p(u+.55,6.5,-.82)])
- # Preserve the tested shared railing and window materials; hidden guard faces are collision-only.
+ # Operator courtyard photos support dark metal rails and blue-gray gallery coating.
+ # Scope remapping to this property; preserve Rexford materials and all collision.
+ for group in B.groups.values():
+  if group['property']==KEY+'-exterior':
+   group['material']={'re-rail-paint':'ad-gallery-rail-paint','re-gallery-concrete':'ad-gallery-coating-paint'}.get(group['material'],group['material'])
+ # Hidden guard faces remain collision-only.
  for k in list(B.groups):
   if B.groups[k]['material']in ['re-collision','c525-collision']:del B.groups[k]
  samples=[]

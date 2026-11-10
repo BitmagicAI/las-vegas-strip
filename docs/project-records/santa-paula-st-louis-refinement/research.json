@@ -1,0 +1,45 @@
+{
+  "accessed": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://www.culinaryhealthfund.org/contacts/?lang=en",
+      "provider": "Official Culinary Health Fund contact page",
+      "observed": "Search-index content distinguishes customer service1901LasVegasBlvdSuite107, pharmacy1945LasVegasBlvd, advocacy515EastSaintLouisBuildingC and administration1901Suite101. Illustration listed, not yet inspected. Page fetch restricted; do not infer facade/room layouts or current pharmacy status from undated closure notice."
+    },
+    {
+      "url": "https://www.culinaryhealthfund.org/library/CHF_Participant_Guide_English.pdf",
+      "provider": "Official participant guide",
+      "observed": "Search excerpt supports customer service1901Suite107; interior layout unverified."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=lOt2HIFlq4HfeftXQ8qNpA&heading=270&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "1720SantaPaula: two prominent conifers, grass court, black picket fence/arched gate, covered dark parking behind stepped wing. No resident vehicles/persons reconstructed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=Recp0X7FNKYHTgrd7yYooQ&heading=350&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Weldon curved frontage: paved apron reaches sidewalk, joints and palm planting pockets; white veranda. Existing rectangular apron leaves an unsupported bare strip."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=VleeXPq8fMKw73bb5TNGhQ&heading=90&pitch=0",
+      "imageDate": "January 2026",
+      "observed": "Zoomed Square west: north gable triangular but next central white parapet stepped with broad flat raised center, not second triangle. Red metal hip roofs, white trim, brick pavilion and railings. Median palms are separate road ownership."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.15020,-115.15135&zoom=20&basemap=satellite",
+      "imageDate": "Unknown acquisition date",
+      "observed": "Three courtyard footprints and continuous paved southern apron following Weldon curve. Planting pockets and rear coverage remain approximate. Map business labels not used for residential interior inference."
+    }
+  ],
+  "pending": [
+    "Fresh dated Street View and satellite for both groups after baseline GPU finishes",
+    "Official site-specific architecture photographs and location illustration inspection",
+    "Courtyard curved apron survey boundary; retain original road/sidewalk geometry"
+  ],
+  "decisions": [
+    "Extend southern apron only inside existing county road/sidewalk masks, preserving road geometry; exclude neighboring footprints.",
+    "Replace only southern of two western triangular Square pediments with reference-supported stepped profile; heights and widths inferred from facade scale.",
+    "Retain incomplete conifers/carport/planting and unverified interiors in remaining; do not claim full block."
+  ]
+}

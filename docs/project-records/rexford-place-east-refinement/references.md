@@ -1,0 +1,11 @@
+# Reference review — 2026-11-06
+
+- [Middle Street View](https://www.google.com/maps/@?api=1&map_action=pano&pano=BNbauh1GCQdrViSrqMLz3A&heading=90&pitch=2), February 2020, visually inspected: pale shallow-roof houses, several tall fan palms, white metal fences, concrete drives and patchy yards. Mid-row palm placement is inferred from the mapped sequence, not surveyed.
+- [North Street View](https://www.google.com/maps/@?api=1&map_action=pano&pano=nDfhFzynW8yC1qhhaMf4xA&heading=90&pitch=2), March 2015, visually inspected: rose north house with open front yard and straight narrow path, sparse lawn/gravel; no metal fence across its front. Existing modeled front fence on index 1 is removed; side boundaries remain uncertain.
+- [South Street View](https://www.google.com/maps/@?api=1&map_action=pano&pano=gxS3XIH7tALrfvCTe0cS2g&heading=90&pitch=2), February 2020, visually inspected: broad drive, low tan facade, mixed palms and metal/block boundaries. Further south changes deferred pending parcel-specific alignment.
+- [Satellite](https://www.google.com/maps/@?api=1&map_action=map&center=36.15231,-115.14998&zoom=20&basemap=satellite), visually inspected, capture date not displayed: individual shallow white and brown roofs, side drives and mature planting; do not infer current conditions from copyright date.
+- [1505 Rexford brokerage photographs](https://www.redfin.com/NV/Las-Vegas/1505-Rexford-Pl-89104/home/29454522), visually inspected: GLVAR 2011 watermark, pale exterior, red-brown fascia and recessed courtyard doors with narrow concrete paths. Historical brokerage evidence, not a current official operator image. No suitable current official photographs found. No private interior is added.
+
+## Decisions for the owner
+
+Scoped changes to three of the existing eleven mapped houses: remove the inferred metal front fence from way/1236746613; add two original procedural fan palms each to way/1236621178 and way/1236621177. Estimated trunk heights 7/8 and 5.5/6.5 metres, at 14%/86% of front edge and 4.3 m outward. These approximate the photographed mid-row groups; exact parcel association, count and dimensions remain uncertain. Existing four broadleaf trees, all other building geometry and every collision triangle are preserved. Do not claim complete landscape or parcel reconstruction. No third-party imagery is redistributed.

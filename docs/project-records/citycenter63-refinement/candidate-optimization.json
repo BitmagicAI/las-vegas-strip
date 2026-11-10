@@ -1,0 +1,90 @@
+{
+  "level": {
+    "rel": ".bitmagic/citycenter63-candidate/citycenter63-exterior.glb",
+    "sourceSha256": "d2a182aba18e6d7adf1bd7e031a2d948c64d2ef31018ae81dac6fa24ff032d8c",
+    "cls": "level",
+    "loader": "CityCenter63 candidate",
+    "when": "candidate",
+    "label": "primary",
+    "preset": "level",
+    "overrides": [],
+    "exitCode": 0,
+    "signal": null,
+    "seconds": 0.627,
+    "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/citycenter63-candidate/citycenter63-exterior.glb .bitmagic/optimize/.bitmagic/citycenter63-candidate/citycenter63-exterior/out.glb --preset=level --json",
+    "failed": [],
+    "stderr": [],
+    "report": {
+      "src": ".bitmagic/citycenter63-candidate/citycenter63-exterior.glb",
+      "dst": ".bitmagic/optimize/.bitmagic/citycenter63-candidate/citycenter63-exterior/out.glb",
+      "preset": "level",
+      "before": {
+        "bytes": 6143900,
+        "triangles": 138745,
+        "vertices": 206364,
+        "nodes": 47,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 6100446,
+        "gpuTextures": 0,
+        "textures": [],
+        "extensions": []
+      },
+      "after": {
+        "bytes": 2026088,
+        "triangles": 138745,
+        "vertices": 206364,
+        "nodes": 47,
+        "skins": 0,
+        "animations": 0,
+        "gpuGeometry": 4116090,
+        "gpuTextures": 0,
+        "textures": [],
+        "extensions": [
+          "EXT_meshopt_compression",
+          "KHR_mesh_quantization"
+        ]
+      },
+      "notes": [
+        "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+      ],
+      "checks": [
+        {
+          "name": "node names",
+          "fail": false,
+          "detail": "47 kept"
+        },
+        {
+          "name": "texture slots",
+          "fail": false,
+          "detail": "0 kept"
+        },
+        {
+          "name": "vertex layout",
+          "fail": false,
+          "detail": "separate"
+        },
+        {
+          "name": "bounds",
+          "fail": false,
+          "detail": "0.000% of size"
+        },
+        {
+          "name": "smaller",
+          "fail": false,
+          "detail": "3.93 MiB saved"
+        },
+        {
+          "name": "Khronos validator",
+          "fail": false,
+          "detail": "0 errors (0 new), 0 warnings"
+        }
+      ]
+    }
+  },
+  "webp": {
+    "exitCode": 0,
+    "result": "Zero textures; standard variant skipped"
+  },
+  "installation": "Not installed; materials restored after rejected first preview; repeat visual inspection pending"
+}

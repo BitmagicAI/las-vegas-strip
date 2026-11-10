@@ -14,12 +14,12 @@
     }
   ],
   "remaining": [
-    "Full crown dormers and rooftop pool fittings not complete.",
-    "Arrival geometry and parking height are photo estimates.",
-    "Landscaping, pool furnishings and public route traversal incomplete.",
-    "True sloped green crown, rooftop equipment and upper pool unfinished.",
-    "Pool terrace lacks detailed furnishings, safety enclosure and verified access.",
-    "Canopy currently faces parking facade; proper entrance must be resolved from ground reference."
+    "Raised wing-end crown heights, complete dormer ornament and rooftop pool fittings remain unimplemented; this pass retains the inherited 128m height to preserve parent interiors and collision.",
+    "Arrival geometry and parking height remain photo estimates; the west monument is distinct from the actual canopy farther south, whose exact entrance connection still needs reconciliation.",
+    "Eight inferred pool chaise placements are added; full landscaping, bar/shade structures and continuous public arrival-to-pool traversal remain unverified.",
+    "A true inward sloped green crown and dormer cheeks are implemented; rooftop equipment and upper pool remain unfinished because exact layout and access are not established.",
+    "Pool terrace safety enclosure and verified continuous access remain missing; baseline verifies only local deck traversal after teleport, not a connected public route.",
+    "The inherited parking-facing canopy remains incorrect; this scoped crown/pool pass does not move it to the separately documented west monument or invent an entrance."
   ],
   "estimates": {
     "towerM": 128,
@@ -27,9 +27,9 @@
     "note": "128m mapped parent applied to tower; identical mapped five-level part way/1421481074 establishes17m podium and is removed from background ownership."
   },
   "geometry": {
-    "triangles": 12995,
-    "batches": 15,
-    "optimizedMiB": 0.21
+    "triangles": 15899,
+    "batches": 17,
+    "optimizedMiB": 0.2568931579589844
   },
   "tests": {
     "roofSupport": "31 podium roof samples pass; public route walk unverified",
@@ -96,11 +96,20 @@
         "p50": 16.700000047683716,
         "p95": 17.40000009536743
       }
-    ]
+    ],
+    "refinementStatus": "PR541 installed scoped crown and eight pool chaises: 11 local checks pass; 31 roof support samples pass; 12 actual keyboard walk legs pass; nine-stop smoke has zero errors. Raw collision unchanged, 91/92 cells identical. Six matching neutral views personally inspected. Tail timing variability retained in performance-comparison.json; no full-site completion."
   },
   "evidence": [
     "build/city-exteriors/grand-chateau-before",
     "build/city-exteriors/grand-chateau-after",
-    "build/city-exteriors/grand-chateau-corrected"
+    "build/city-exteriors/grand-chateau-corrected",
+    "docs/project-records/grand-chateau-refinement/research.md",
+    "docs/project-records/grand-chateau-refinement/before",
+    "docs/project-records/grand-chateau-refinement/before-walk",
+    "docs/project-records/grand-chateau-refinement/after",
+    "docs/project-records/grand-chateau-refinement/after-walk",
+    "docs/project-records/grand-chateau-refinement/local-checks.json",
+    "docs/project-records/grand-chateau-refinement/smoke.json",
+    "docs/project-records/grand-chateau-refinement/capture-links.json"
   ]
 }

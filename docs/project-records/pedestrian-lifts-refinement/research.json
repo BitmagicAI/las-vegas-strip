@@ -1,0 +1,59 @@
+{
+  "accessed": "2026-11-07",
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=636EwsXKXNWPXztiBAE50g&heading=240&pitch=10",
+      "date": "April2025",
+      "site": "Cosmopolitan",
+      "observed": "Upper landing: silver panel grid above dark metal door surround, glazed double doors, right-side small call plate, flat thin cap. Existing door and bridge retained."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=4ABbWfE1KjvvttkPWIk06g&heading=170&pitch=0",
+      "date": "April2025",
+      "site": "Harmon east",
+      "observed": "Upper landing: satin panel grid, two metal leaves, broad metal surround and narrow call plate at right; projected ELEVATOR sign. Existing stairs and rail interfaces retained."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=udXWxfymBjrMrG3U1ZSERQ&heading=250&pitch=8",
+      "date": "April2025",
+      "site": "Crystals",
+      "observed": "Street entrance has projecting pale ELEVATOR sign; large metal panel grid, dark base trim, narrow adjacent call plate partly obscured by perspective. Current source signs only upper entrance; lower sign is a supported correction."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.10442,-115.17324&heading=260&pitch=12",
+      "panoId": "Xifxl3eq6_BS9dXOSDDk4A",
+      "date": "January2025",
+      "site": "Park MGM",
+      "observed": "Dark olive-gray shaft with small projecting top cap, rooftop horizontal louver box, high side square vent and equipment partly obscured; bridge/glass landing and storefront retained. No precise equipment dimensions available."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1088,-115.1731&zoom=19&basemap=satellite",
+      "date": null,
+      "site": "Harmon group",
+      "observed": "Aerial bridge connections and compact shafts inspected. Acquisition date unknown; copyright2026 is not acquisition date."
+    },
+    {
+      "url": "https://www.harmoncorner.com/leasing",
+      "image": "https://static.wixstatic.com/media/f92106_8e2be3924e33456d9abc2aa2d8d8b69c~mv2.jpg/v1/fill/w_980%2Ch_545%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Harmon%20Corner%20Exterior%201%20%282_6MB%29%20Small.jpg",
+      "date": null,
+      "observed": "Official exterior photograph inspected: elevated bridge enters Harmon Corner above the street. Distant dusk context supports retained connection, not exact lift finishes/dimensions. Current page describes renovation; tenant interiors are outside this pass."
+    },
+    {
+      "url": "https://www.clarkcountynv.gov/government/departments/public_works_department/pedestrian-bridges-information",
+      "observed": "Official County reference describes bridge elevator/escalator access; general context only. Linked photograph failed fetch; not used for geometry."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1044,-115.17335&zoom=20&basemap=satellite",
+      "date": null,
+      "site": "Park MGM",
+      "observed": "Aerial inspected: bridge west landing, shaft beside escalator and adjacent Eataly roof retained. Shaft rooftop equipment tiny/partially occluded; Street View is principal detail evidence."
+    }
+  ],
+  "decisions": [
+    "Preserve all existing collision, roads, lift actions, doors, cabin inner seam grids and adjoining interiors.",
+    "Installed baseline and source inspection found the metal shaft panel joints buried inside the shell; retain these inner joints and add matching exterior grids at +0.012m.",
+    "Cosmo/Harmon upper call plates inferred0.13m wide\u00d70.32/0.34m high; Crystals lower sign0.78m projection\u00d70.32m height; Park rooftop louver1.9m\u00d71.15m\u00d70.30m, cap2.02m\u00d71.27m. These proportions are inferred, not surveyed.",
+    "No current geometry supports exact dimensions, complete parent finishes, dynamic escalators or whole-block/driving sign-off. Remaining discrepancies stay deferred."
+  ],
+  "thirdPartyImages": "Reference only, none committed"
+}

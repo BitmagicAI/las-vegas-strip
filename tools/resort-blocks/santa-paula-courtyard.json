@@ -29,7 +29,7 @@
   ],
   "remaining": [
     "Heights/side openings estimated; rear elevations partly inferred",
-    "Parking apron does not yet reach the curved Weldon sidewalk exactly; refine boundary from survey",
+    "Apron now follows retained county sidewalk curve; exact paving joints, planting pockets and field-survey accuracy remain unverified.",
     "Conifers, lawn foliage, carport and fine fence texture remain incomplete",
     "Roof junctions and weathering need closer neutral-daylight review; no interior access claim"
   ],
@@ -47,12 +47,15 @@
     "support": "build/city-exteriors/santa-paula-courtyard-collision.json",
     "walk": "build/city-exteriors/santa-paula-courtyard-walk.json",
     "ownership": "build/city-exteriors/santa-paula-courtyard-ownership-audit.json",
-    "visualReview": "Installed north/east/south/aerial inspected. Three roofed structures with windows, doors, veranda, fences and approach paving.17728triangles27batches.57MiB optimized.88support6walkinglegsPASS, including street-side entry gap.51oldtriangles removed. Landscaping and boundary match remain incomplete."
+    "visualReview": "Installed north/east/south/aerial inspected. Three roofed structures with windows, doors, veranda, fences and approach paving.17728triangles27batches.57MiB optimized.88support6walkinglegsPASS, including street-side entry gap.51oldtriangles removed. Landscaping and boundary match remain incomplete.",
+    "refinement": "docs/project-records/santa-paula-st-louis-refinement",
+    "matchedViews": "https://github.com/BitmagicAI/las-vegas-strip/tree/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement",
+    "refinementVisualReview": "Eight front-first matched daylight captures inspected; expanded curved apron and distinct stepped southern parapet visible. No photorealism or whole-block completion claim."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/santaPaulaCourtyard-exterior.glb": "bded93ea4739dce3fa0b62487b2d1fad18f941566d9837a90df0efaff4a348b7",
-      "build/strip-landmarks/santaPaulaCourtyard-exterior-collision.json": "7d475d776aec5224fbe42c32abab226e346ea2a58175aa56a358b0ca0072c1bf"
+      "build/strip-landmarks/santaPaulaCourtyard-exterior.glb": "57e6739f17bbb2cd210901d0a6b03b9ae848726af5d78a2b19e84c7f61a56392",
+      "build/strip-landmarks/santaPaulaCourtyard-exterior-collision.json": "4be6351f099451c13c474dea45fad4b9e5f4288cb6dab132ece17e9e44f2f3cc"
     }
   }
 }

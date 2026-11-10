@@ -1,0 +1,51 @@
+[
+  {
+    "name": "front-guest-entry",
+    "beforeP50": 16.799999952316284,
+    "beforeP95": 18.90000009536743,
+    "candidate1P50": 16.700000047683716,
+    "candidate1P95": 17.699999809265137
+  },
+  {
+    "name": "guest-north",
+    "beforeP50": 30.40000009536743,
+    "beforeP95": 35.90000009536743,
+    "candidate1P50": 30,
+    "candidate1P95": 52.299999952316284
+  },
+  {
+    "name": "guest-roof",
+    "beforeP50": 16.700000047683716,
+    "beforeP95": 19,
+    "candidate1P50": 16.59999990463257,
+    "candidate1P95": 26.5
+  },
+  {
+    "name": "western",
+    "beforeP50": 16.699999809265137,
+    "beforeP95": 18.200000047683716,
+    "candidate1P50": 16.600000143051147,
+    "candidate1P95": 28.799999952316284
+  },
+  {
+    "name": "southern",
+    "beforeP50": 16.899999856948853,
+    "beforeP95": 29.40000009536743,
+    "candidate1P50": 16.600000143051147,
+    "candidate1P95": 18.09999990463257
+  },
+  {
+    "name": "guest-ramp",
+    "beforeP50": 16.799999952316284,
+    "beforeP95": 30.800000190734863,
+    "candidate1P50": 16.90000009536743,
+    "candidate1P95": 25.899999856948853
+  },
+  {
+    "name": "guest-bridge",
+    "beforeP50": 26.90000009536743,
+    "beforeP95": 48.200000047683716,
+    "candidate1P50": 26.5,
+    "candidate1P95": 45.799999952316284
+  }
+]

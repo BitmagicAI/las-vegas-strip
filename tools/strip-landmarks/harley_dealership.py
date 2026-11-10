@@ -4,6 +4,7 @@ Photograph is research only; materials, lettering and panels are authored here.
 """
 from common import *
 from forum_shops import facade_frame
+from retail_signs import welcome
 KEY='harleyDealership'
 
 def exterior(B):
@@ -31,8 +32,7 @@ def exterior(B):
   F.box('hd-silver',(L/2,10.24,-.10),(L,.22,.4))
   if west and L>20 and mz<3679:
    if mz<3647:
-    F.text('LAS VEGAS',(L/2,7.4,-.18),1.05,'hd-letter')
-    F.text('HARLEY-DAVIDSON',(L/2,5.8,-.18),.7,'hd-letter')
+    welcome(F,L/2)
     F.text('5191',(2,9,-.18),.46,'hd-charcoal')
    else:
     # Full-height showroom window panels in front of the striped wall.

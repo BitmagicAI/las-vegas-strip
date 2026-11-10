@@ -31,19 +31,23 @@
     }
   ],
   "remaining": [
-    "Street references date2015/2020; current colors and obscured details uncertain",
+    "Street references date 2015/2020 and brokerage photos 2011; current colors and obscured details uncertain",
     "Windows, porch and garage details simplified and estimated",
-    "Referenced palms and dense garden planting not reproduced; four broadleaf trees only",
-    "Ground beyond yard patches and side drives remains sparse",
-    "No interiors, neutral daylight or route benchmark"
+    "Four estimated mid-row fan palms added; exact parcel association, counts, height and dense garden planting remain uncertain",
+    "Ground beyond yard patches and side drives remains sparse; fence and driveway layout needs parcel-level refinement",
+    "No interiors; actual walks prove only short entrance approaches and returns, with close-wall approach endpoint views",
+    "Initial front/middle p95 increased 10.53%/14.04%; warmed exact-base A/B medians improved 1.12%/2.79%, so original timing discrepancy is retained without a sustained 60 fps claim"
   ],
-  "triangles": 15206,
-  "batches": 28,
-  "optimizedMiB": 12.17,
+  "triangles": 21018,
+  "batches": 32,
+  "optimizedMiB": 12.32,
   "metricScope": "Authored triangles exclude4existingCC0tree instances",
   "tests": [
-    "1786 roof-support samples PASS",
-    "44 entrance approach legs in both directions PASS"
+    "1786 support samples before/after PASS",
+    "44 CPU approach legs before/after PASS",
+    "44 actual keyboard legs before/after PASS; all 44 endpoint captures visually reviewed",
+    "Four identical neutral-daylight camera views before/after inspected",
+    "Nine smoke stops placed; 0 failed requests/page/console errors"
   ],
   "viewsInspected": [
     "build/city-exteriors/rexford-place-east-final/rexford-east-north.png",
@@ -133,7 +137,9 @@
         "p50": 16.69999998807907,
         "p95": 17.69999998807907
       }
-    ]
+    ],
+    "refinementInitial": "docs/project-records/rexford-place-east-refinement/performance-initial.json",
+    "warmedExactBaseAB": "docs/project-records/rexford-place-east-refinement/performance-ab-summary.json"
   },
   "ownership": {
     "removed": 212,
@@ -143,8 +149,20 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/rexfordPlaceEast-exterior.glb": "e5d47c1761fb6d767ddddb6e4a142cc7725d6ea3669ee4204ddbeefe57b363db",
+      "build/strip-landmarks/rexfordPlaceEast-exterior.glb": "9c0ac1bff7743482f9eca60e647107af49adb2de9f2dec4c8c61f586cba61f0d",
       "build/strip-landmarks/rexfordPlaceEast-exterior-collision.json": "ac4aa3aa3e36c425254842838ec6d9ee81ed45ac778a29ec13d1f87ca389bbf6"
     }
+  },
+  "refinementPass": {
+    "pr": 518,
+    "changedMappedIds": [
+      "way/1236746613",
+      "way/1236621178",
+      "way/1236621177"
+    ],
+    "scope": "Remove inferred north rose-house metal front fence; add four original fan palms across two middle houses; other eight houses unchanged",
+    "evidence": "docs/project-records/rexford-place-east-refinement",
+    "references": "docs/project-records/rexford-place-east-refinement/references.md",
+    "status": "verified scoped pass; full-site refinement deferred"
   }
 }

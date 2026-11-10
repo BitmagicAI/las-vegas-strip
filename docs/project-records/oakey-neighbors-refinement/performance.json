@@ -1,0 +1,116 @@
+{
+  "unit": "ms p50,p95",
+  "method": "Identical cameras,960x540 DPR1 ultra,900framewarmup+180timed; static measurements, not route or improvement claim",
+  "views": [
+    {
+      "name": "hippo-front",
+      "before": [
+        16.8,
+        21
+      ],
+      "after": [
+        16.6,
+        18.2
+      ]
+    },
+    {
+      "name": "hippo-canopy",
+      "before": [
+        22.9,
+        27.2
+      ],
+      "after": [
+        16.7,
+        18
+      ]
+    },
+    {
+      "name": "hippo-aerial",
+      "before": [
+        23.8,
+        26.9
+      ],
+      "after": [
+        16.8,
+        21.1
+      ]
+    },
+    {
+      "name": "service-front",
+      "before": [
+        50.5,
+        61.3
+      ],
+      "after": [
+        22.3,
+        45
+      ]
+    },
+    {
+      "name": "oakey-yard",
+      "before": [
+        23,
+        27.5
+      ],
+      "after": [
+        16.6,
+        18.2
+      ]
+    },
+    {
+      "name": "oakey-aerial",
+      "before": [
+        27.1,
+        31.4
+      ],
+      "after": [
+        16.6,
+        20.1
+      ]
+    },
+    {
+      "name": "courtyard-front",
+      "before": [
+        25.1,
+        28.2
+      ],
+      "after": [
+        16.7,
+        19.7
+      ]
+    },
+    {
+      "name": "courtyard-west",
+      "before": [
+        22.1,
+        26.3
+      ],
+      "after": [
+        16.7,
+        19
+      ]
+    },
+    {
+      "name": "courtyard-pool",
+      "before": [
+        21.4,
+        24.9
+      ],
+      "after": [
+        16.6,
+        18.7
+      ]
+    },
+    {
+      "name": "courtyard-aerial",
+      "before": [
+        23.6,
+        30.5
+      ],
+      "after": [
+        16.7,
+        27.5
+      ]
+    }
+  ]
+}

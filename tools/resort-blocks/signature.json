@@ -18,10 +18,10 @@
     }
   ],
   "remaining": [
-    "Exact pool footprints remain estimated; south pool is clipped by retained walkway/road masks and needs reference alignment.",
-    "Garden planting and paths incomplete.",
+    "Pool centers corrected from Google satellite selection; exact basin/deck dimensions, elevations, spa arrangement and planting density remain estimated.",
+    "Garden paths and fire pits outside the three scoped pool courts remain incomplete.",
     "Crown and roof equipment approximate; signage absent.",
-    "Full public route walk and pool gate collision pending."
+    "Interior door-to-pool links and exact street-boundary masonry remain unverified."
   ],
   "estimates": {
     "heightM": 145,
@@ -83,5 +83,17 @@
       }
     ]
   },
-  "evidence": "build/city-exteriors/signature-courts"
+  "evidence": "build/city-exteriors/signature-courts",
+  "amenitiesPass": {
+    "status": "installed-verified-refinement-deferred",
+    "issue": 50,
+    "pr": 466,
+    "record": "docs/project-records/signature-amenities",
+    "geometry": "16171 original triangles, zero degenerates; 2221 added collision triangles; 41 original nodes and 386 collision triangles preserved.",
+    "collision": "2820 packed deck samples PASS; 36 outside-gate samples supported by runtime terrain in actual movement. 24 bidirectional deck segments and 6 retained lobby approach segments PASS; all 30 endpoint captures inspected.",
+    "bake": "One bake; 276/278 cell files byte-identical, only baked 0,1 and its manifest changed.",
+    "visual": "Five final matching daylight views personally inspected after the single bake. Lobby approach rail obstruction found and corrected before bake; original interiors retained.",
+    "newLfsBytes": 3984716,
+    "performance": "Median front/pool1/pool2/pool3/overview 16.7/16.7/16.8/16.7/16.7ms; p95 19.8/18.7/18.2/18.3/18.0ms versus 27.8/18.5/18.3/18.1/18.2 baseline. Local fixed-camera sample, not city-wide performance proof."
+  }
 }

@@ -9,14 +9,29 @@
     {
       "url": "https://images1.cityfeet.com/i2/mG0HV6Qi5IWQdleLOo-L5P9YKfg5P4rVm4tc9J6lTGI/110/3999-s-las-vegas-blvd-las-vegas-photo-4-of-6.jpg",
       "observed": "Inspected broker front photo: northern Panda Express hip roof, central Clubwear gable, cream square piers and glazed storefronts. Undated/older tenants conflict with Feb2025 Street View; permanent architecture used, tenant boundaries estimated."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.090137,-115.17225,208m/data=!3m1!1e3",
+      "observed": "Satellite inspected: T-plan retail roof, north raised bay, south drive-through, planting strip on south edge, rear parking and detached east canopy. Date unknown; copyright2026 not capture date."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.08984,-115.17224&heading=0&pitch=0&fov=85",
+      "panoid": "oEGryMgkIwJwgyjihdjtEA",
+      "imageDate": "February2025",
+      "observed": "14FourSeasonsDr StreetView inspected: two drive-through windows, horizontal grey ribbed top fascia, burgundy wall, suspended canopy, low clipped shrubs in gravel strip between driveway and sidewalk. Ads not reproduced."
+    },
+    {
+      "url": "https://sayulitaseats.com/las-vegas-boulevard",
+      "imageUrl": "https://sayulitaseats.com/pluto-images/funnel/images/e5ab9b14-2450-48ff-884b-2b02440fc002?fit=cover&h=768&w=768",
+      "observed": "Official exterior close-up inspected: blue raised lettering with orange underline, blue square tile strip above soffit, burgundy tapered wall fixture. Image date unknown. No public room layout established."
     }
   ],
   "remaining": [
-    "Planting and northern billboard absent",
-    "Tenant boundary and lettering proportions remain estimated; brand graphics approximate",
-    "Storefront interiors not authored",
-    "Surrounding off-site terrain gaps remain",
-    "Facade weathering and smaller street furniture need refinement"
+    "Northern billboard remains absent: exact scale and ownership need further reference reconciliation.",
+    "Tenant boundaries, lettering and brand graphics remain approximate because available photos span conflicting dates.",
+    "Storefront interiors remain unauthored: no corroborated public room plans were found.",
+    "Off-site terrain gaps remain outside the property scope.",
+    "Facade weathering and smaller street furniture need more detailed reference coverage."
   ],
   "dimensions": {
     "footprint": "way/180250509 mapped T-plan",
@@ -27,13 +42,14 @@
   "implemented": [
     "Mapped T-plan retail block, articulated storefronts, north hip roof, central gable, southern drive-through",
     "Pylon, rooftop equipment, parking and walkway",
-    "Removed25 duplicate mapped building and matching collision triangles"
+    "Removed25 duplicate mapped building and matching collision triangles",
+    "PR493 source: south gravel strip with12 original shrubs, second drive-through window and ribbed upper fascia, Sayulitas blue square tile band."
   ],
   "validation": {
-    "support": "116 floor/headroom checks passed",
-    "walking": "6legs each direction passed using engine controller settings",
-    "visual": "Three installed views inspected; south/front rechecked after roof/fascia correction",
-    "performance": "960x540 ultra fixed aerial16.7ms p50/18.7ms p95, not fullroutebenchmark"
+    "support": "125 floor/headroom samples pass; reproducible public-route samples, no private room claim.",
+    "walking": "12 standalone Rapier and actual installed keyboard-walk legs pass; forward and return endpoints inspected.",
+    "visual": "PR493 six matching neutral daylight before/after views inspected across both properties; fullblock fidelity remains deferred.",
+    "performance": "PR493 identical960x540 DPR1 ultra views in performance-comparison.json; near60Hz cap, no speedup claim."
   },
   "evidence": [
     "build/city-exteriors/akita-plaza-final/akita-front.png",
@@ -41,12 +57,27 @@
     "build/city-exteriors/akita-plaza-final/akita-aerial.png",
     "build/city-exteriors/akita-plaza-collision.json",
     "build/city-exteriors/akita-plaza-walk.json",
-    "build/city-exteriors/akita-plaza-ownership-audit.json"
+    "build/city-exteriors/akita-plaza-ownership-audit.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/research.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/performance-comparison.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/actual-walk-after.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/checks.json",
+    "docs/project-records/south-strip-retail-courtyard-refinement/runtime-audit.json"
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/akitaPlaza-exterior.glb": "ac2bc5b494dbc0bcc237dabee5a5d8621d428fefc28cbd6c2e7a7cce2160d58a",
+      "build/strip-landmarks/akitaPlaza-exterior.glb": "e4c4a5a33ad2269f7829f58d4b83d1630a851589904086acd41c1fbe1333eec7",
       "build/strip-landmarks/akitaPlaza-exterior-collision.json": "aceed3f8d7725b79c73b6feb55e7f69e3d1b4d8450c0ca6025e0dff486c8e0e6"
     }
+  },
+  "refinement493": {
+    "record": "docs/project-records/south-strip-retail-courtyard-refinement",
+    "status": "scoped-refinement-verified; remaining discrepancies retained",
+    "decisions": [
+      "Retain building ownership, footprints and existing interiors; no private apartments invented.",
+      "Scope Akita south shrubs, second drive-through window, ribbed upper trim and Sayulitas tile strip; Desert Oasis weathered cabinet strips, front shrubs and courtyard fan palms. Exact dimensions inferred.",
+      "Northern billboard and full store/public interiors remain deferred because scale, ownership and room layouts require further evidence.",
+      "Satellite dishes are visible in the dated photo but the long-wall ownership/orientation needs closer reconciliation with the mapped U-plan; retain this discrepancy rather than scatter unverified dishes."
+    ]
   }
 }

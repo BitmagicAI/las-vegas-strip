@@ -54,7 +54,25 @@ def exterior(B):
    for dz in [-.16,.16]:F.tube('ssk-steel-paint',(u+dx,1.15,-2.2+dz),(u+dx,1.87,-2.2+dz),.022,6)
   F.tube('ssk-steel-paint',(u-.18,1.88,-2.4),(u-.18,2.4,-2.4),.022,6);F.tube('ssk-steel-paint',(u+.18,1.88,-2.4),(u+.18,2.4,-2.4),.022,6);F.tube('ssk-steel-paint',(u-.18,2.4,-2.4),(u+.18,2.4,-2.4),.022,6)
  F.box('ssk-frame-paint',(9.2,4.75,-4.22),(15,.65,.12));F.text('SHAKE SHACK',(9.2,4.74,-4.31),.73,'ssk-letter-paint')
+ burger_emblem(F)
  F.text('BURGERS   FROZEN CUSTARD   FRIES   SHAKES',(15,4.13,-1.85),.24,'ssk-letter-paint')
  # Access apron avoids changing city pavements outside this entrance.
  apron=F.poly([(-10.5,-9),(24,-9),(24,-6.7),(-10.5,-6.7)]);B.planar('ssk-paving-concrete',apron,.18,True)
  B.groups={k:g for k,g in B.groups.items() if g['material']!='ssk-collision'}
+
+
+def burger_emblem(F):
+ """Original tubular sign outline, inferred from April 2025 street imagery.
+
+ 1.3m wide / .86m high, to the viewer's left of the existing letters.
+ No copied artwork or collision; the established canopy and walking routes stay intact.
+ """
+ cx,cy,z=14.8,4.81,-4.34
+ paths=[
+  [(-.62,.08),(-.56,.26),(-.40,.39),(-.18,.45),(.18,.45),(.40,.39),(.56,.26),(.62,.08),(-.62,.08)],
+  [(-.62,-.10),(-.46,-.05),(-.29,-.13),(-.10,-.06),(.10,-.13),(.29,-.05),(.46,-.13),(.62,-.08)],
+  [(-.62,-.25),(-.56,-.36),(-.39,-.41),(.39,-.41),(.56,-.36),(.62,-.25),(-.62,-.25)],
+ ]
+ for path in paths:
+  for a,b in zip(path,path[1:]):
+   F.tube('ssk-emblem-green',(cx+a[0],cy+a[1],z),(cx+b[0],cy+b[1],z),.036,8)

@@ -16,12 +16,12 @@
   "remaining": [
     "Exact glass color and reflected surroundings need daylight comparison.",
     "Pool landscaping, sign pylon and canopy details incomplete.",
-    "Full sidewalk/interior circulation remains unverified."
+    "Full sidewalk/interior circulation remains unverified.",
+    "Amenity heights, exact north gallery curve, full33 cabanas, second hot tub and street-side raised podium remain approximations/incomplete."
   ],
   "notes": [
     "Mapped relation/5342155 includes south-east low canopy in the 183m footprint. Must separate canopy from tower before detailing.",
-    "Preserve existing guest core and Planet Hollywood/Miracle Mile ownership.",
-    "Elara baseline probe in flight."
+    "Preserve existing guest core and Planet Hollywood/Miracle Mile ownership."
   ],
   "geometry": {
     "triangles": 10319,
@@ -43,5 +43,25 @@
     "build/city-exteriors/elara-before",
     "build/city-exteriors/elara-after",
     "build/city-exteriors/elara-final"
-  ]
+  ],
+  "amenitiesPass": {
+    "status": "installed-verified-refinement-deferred",
+    "issue": 48,
+    "pr": 465,
+    "record": "docs/project-records/elara-amenities",
+    "scope": "Replace only southwest pool deck geometry; preserve 13 tower/arrival/roof nodes and111 collision triangles.",
+    "preview": "Four matching daylight views personally inspected; stepped pool, seven yellow sail cabanas, six lower cabanas, spiral stair, upper galleries, seven palms and southeast pavilion.",
+    "bake": "One bake PASS;1928packagefiles present,zero missing/unoptimized.",
+    "normalMovement": "86 current-route bidirectional segments PASS; initial14 and corrected6 endpoint images inspected.",
+    "staticCollision": "2613 packed route samples PASS, zero unsupported;36 existing arrival samples PASS.",
+    "performance": "Matching p95 +3.1/+3.6/+3.2/+3.4ms front/pool/arrival/overview; medians32.9/33.4/27.7/17.4ms. Retain local performance regression for later profiling.",
+    "storage": "4LFSobjects1,259,713bytes;276/278cells byte-identical, only baked0,1 and manifest changed.",
+    "smoke": "PASS:9stops placed;0request/page/console errors.",
+    "evidence": [
+      "build/city-exteriors/elara-amenities-baseline",
+      "build/city-exteriors/elara-amenities-final",
+      "build/city-exteriors/elara-amenities-walk",
+      "build/city-exteriors/elara-amenities-upper-walk"
+    ]
+  }
 }

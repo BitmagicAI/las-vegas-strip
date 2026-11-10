@@ -1,0 +1,73 @@
+{
+  "base": "ee2b91ad05b97984a1975760bcf9f63536619c79",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "97c6f3a8094369afe8213ba72d902cf84fed1b30f3099a5f15b0e048c55d9a8e",
+      "bytes": 480465,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/after-walk/walk-endpoint-0.png"
+    },
+    {
+      "oid": "8e0bacd917fbe1edab5776215032dea0632cfe1e2317055de01e2cba8e124ce9",
+      "bytes": 498947,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/after-walk/walk-return-0.png"
+    },
+    {
+      "oid": "136fa3daaadb4f791beb83ee27c17597a670aa806d7a4fc3cb86cd1a1b025137",
+      "bytes": 342762,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/after/paris-arc-east.png"
+    },
+    {
+      "oid": "21d963b8080013d5315f8f9212a71b7b5b5c023e74b922948851b986745ef650",
+      "bytes": 412528,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/after/paris-arc-front.png"
+    },
+    {
+      "oid": "21be35a9c70ec33c779aee952aee9ddb528e9462d438a9538c41ad9944b1db08",
+      "bytes": 478562,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/after/paris-arc-vault.png"
+    },
+    {
+      "oid": "8e3318c05f49b577b8fedf522e18696005fe981d072332fd8519b2d17942333c",
+      "bytes": 493381,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/before-walk/walk-endpoint-0.png"
+    },
+    {
+      "oid": "579a3fc68e70912dd8ad93836369d491af54f152f1ba30948c1c82cae8aba2f9",
+      "bytes": 499413,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/before-walk/walk-return-0.png"
+    },
+    {
+      "oid": "085fb3e9b5f1a2af0f5ae6a307e62f77b1d1dd99d2b50da4a2b399b1751d3787",
+      "bytes": 336102,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/before/paris-arc-east.png"
+    },
+    {
+      "oid": "a403546c13c954b8ad354c7fb7505c88b83e2362b8bb735fedcab34f572b4600",
+      "bytes": 408013,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/before/paris-arc-front.png"
+    },
+    {
+      "oid": "cfe25d0e1696383a5a0a2aa2c4aaeb6af48f9a6857dcf80c2a549ad9a59cba4a",
+      "bytes": 449583,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/paris-frontage-refinement/before/paris-arc-vault.png"
+    },
+    {
+      "oid": "a4b5b9f1b55cfd1665b8f21ade9a8856eeb1814be05d4a4a4eec137099b48236",
+      "bytes": 1586555,
+      "path": "runtime-assets/baked/cells/cell-0_0.bin"
+    },
+    {
+      "oid": "2d29e04f238ba57f4aef9211f40a0e90d3c090b5095ee2fcffa990a3baad499a",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "dae071b1291e8d439614f50308e86b56a54895e9cfe8f160722330335a1dd7c5",
+      "bytes": 33365096,
+      "path": "runtime-assets/resort-blocks/paris/parisBlock-exterior.glb"
+    }
+  ],
+  "count": 13,
+  "bytes": 39365208
+}

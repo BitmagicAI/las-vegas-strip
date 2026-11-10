@@ -1,0 +1,7 @@
+# Installed neutral daylight review
+
+All seven after views personally inspected against the identically named before cameras. The three pavilion hip seams are now capped, clearest in the group aerial and eastern front. Middle/west views remain oblique with the retained corridor roof dominating; they are not independent full-facade proof. North rectangular roof has segmented hips/short ridge; southern concave roof has a shallow curved crest following its existing profile. The roof planes, cornices, skylight and two service fixtures remain in place. The broad flat podium and adjacent dome remain coarse and outside this pass. Existing pavilion side parapet intersections are retained; no claim of full pavilion accuracy or whole-resort completion.
+
+Caps are original visual geometry with inferred .26m width and approximately .10m rise; source photographs do not establish measured tile sizes. No added vents or interior layouts are claimed. Static p95 varies by view; group aerial remains 44.9ms after versus42.2ms before. No driving performance or speedup claim.
+
+Actual keyboard walks passed20legs before and20after across the covered walkway and retained SPAGO/CARBONE terrace routes. All six after endpoint/return images inspected, plus baseline returns: existing columns, parapets, stairs, lake railings and hall returns remain. SPAGO endpoint looks beside a wall with a partial lake view; it is route traversal proof, not a restaurant interior accuracy claim. No new interiors authored.

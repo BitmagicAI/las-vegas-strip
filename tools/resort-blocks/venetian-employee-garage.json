@@ -17,19 +17,49 @@
       "url": "https://earth.google.com/web/@36.1197,-115.1672,640a,380d,35y,270h,65t,0r",
       "imagery": "2022-11-09",
       "inspected": true
+    },
+    {
+      "url": "docs/project-records/sphere-venetian-garages-refinement/research.md",
+      "type": "Linked Google aerial, January/February2025 Street View and official Sands source register; original geometry only",
+      "inspected": true
     }
   ],
   "dimensions": "42m estimated from approximately14 deck intervals in Earth views; mapped5m rejected. Footprint retained.",
   "remaining": [
-    "Exact deck count and height",
-    "Private ramp connections and fine roof details"
+    "Exact deck count and height remain unverified: partly obstructed street images do not establish surveyed dimensions; existing42m/~14interval estimate retained.",
+    "Private ramp connections and fine roof details remain unverified: aerial and historical solar-capacity text do not resolve circulation or current panel layout.",
+    "Deck interiors remain brighter than reference openings; existing lighting behavior retained."
   ],
   "geometry": {
-    "triangles": 10003,
-    "batches": 7,
-    "optimizedMiB": 0.14
+    "triangles": 26971,
+    "batches": 9,
+    "optimizedBytes": 437400
   },
   "installedReview": {
+    "views": [
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/sphere-venetian-garages-refinement/after/venetian-front.png",
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/sphere-venetian-garages-refinement/after/venetian-northeast.png",
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/sphere-venetian-garages-refinement/after/venetian-roof.png"
+    ],
+    "inspected": true,
+    "findings": "North projecting brown framed stack and complete thin guard tops visible; rooftop solar layout unchanged. Exact heights, private connections, frame purpose and bright deck interiors remain unresolved."
+  },
+  "tests": "218+240 deck/ramp/roof support samples PASS; all8272 existing collision triangles identical; eight actual movement legs PASS before and after;12localchecks PASS. See docs/project-records/sphere-venetian-garages-refinement/local-checks.json",
+  "finalBuild": {
+    "files": {
+      "build/optimized/build/strip-landmarks/venetianEmployeeGarage-exterior.glb": "7108d0ff6f6a6686033f55f9dd2ed70707f29e8972cd203c6e18da0125502fc6"
+    }
+  },
+  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-venetian-employee-garage.log",
+  "activeRefinement": {
+    "record": "docs/project-records/sphere-venetian-garages-refinement/checkpoint.md",
+    "research": "docs/project-records/sphere-venetian-garages-refinement/research.md",
+    "sourceAudit": "docs/project-records/sphere-venetian-garages-refinement/source-audit.json",
+    "baseline": "docs/project-records/sphere-venetian-garages-refinement/before/results.json",
+    "walkBaseline": "docs/project-records/sphere-venetian-garages-refinement/walk-before/results.json",
+    "status": "verified refinement; unresolved dimensions and private circulation retained"
+  },
+  "previousInstalledReview": {
     "views": [
       "build/city-exteriors/venetian-employee-garage-after/garage-south.png",
       "build/city-exteriors/venetian-employee-garage-after/garage-west.png",
@@ -38,11 +68,10 @@
     "inspected": true,
     "findings": "Stepped ends and south screen read correctly; no obvious duplicate city shell. Deck interiors are brightly lit at sunset compared with dark reference openings. Private ramps and exact elevations remain unverified."
   },
-  "tests": "240 deck supports pass; typecheck passes; city collision1517cells/24neighborhood passes; full verify running",
-  "finalBuild": {
-    "files": {
-      "build/optimized/build/strip-landmarks/venetianEmployeeGarage-exterior.glb": "c5843c49254b018bfc17e01b1324d0ad9b1653c62ad3cc665cf6f8e54969a9fd"
-    }
+  "performance": {
+    "baseline": "docs/project-records/sphere-venetian-garages-refinement/before/results.json",
+    "after": "docs/project-records/sphere-venetian-garages-refinement/after/results.json",
+    "comparison": "docs/project-records/sphere-venetian-garages-refinement/performance-comparison.json"
   },
-  "verificationLog": "docs/project-records/city-exteriors-2026-10-12/verify-venetian-employee-garage.log"
+  "verification": "12 local checks PASS,9 local dev smoke stops PASS with0 failed requests/page/console errors;8 actual movement legs PASS. docs/project-records/sphere-venetian-garages-refinement/smoke-final.json"
 }

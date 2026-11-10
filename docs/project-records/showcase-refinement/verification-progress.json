@@ -1,0 +1,16 @@
+{
+  "geometry": {
+    "showcaseTriangles": 77101,
+    "ivWalgreensTriangles": 17785,
+    "errors": 0
+  },
+  "typecheck": "PASS",
+  "resortReview": "PASS289records",
+  "public": "PASS0fail4existingwarnings",
+  "optimization": "level10.24MiB\u21923.78MiB,WebP\u21923.37MiB",
+  "performance": "Initial five-view terrace regression not reproduced in controlled sequential old/refined pair50.4\u219251.2ms p95 (+1.6%). Both above16.7msbudget; variation retained and no speedup claim.",
+  "pending": [],
+  "walk": "PASS12segments,6endpointPNGs inspected",
+  "runtime": "PASS1GLBoptimized; onebake current;91/92cellsunchanged;pack1930present0missing0unoptimized",
+  "smoke": "PASS9stops0request/page/consoleerrors"
+}

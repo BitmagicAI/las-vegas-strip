@@ -21,20 +21,22 @@
     }
   ],
   "remaining": [
-    "Front imagery older than rear; current branding uncertain",
-    "Elevations, canopy depth and accessibility ramp positions are estimates",
-    "Street landscaping, parking paving/markings and fine ornamental cornice profiles remain incomplete",
-    "Neutral daylight and full perimeter drive review pending; no interiors reconstructed"
+    "Current facade branding remains uncertain: newly inspected front panorama is February 2022; official text corroborates Building C identity but does not date its facade.",
+    "Elevations, canopy depth and ramp placement remain estimates: no measured elevation or accessibility plan was available; existing traversable geometry retained.",
+    "Landscaping, forecourt parking/markings and fine cornice ornament remain incomplete: this pass refines only reference-supported tower surrounds and two cornice bands, without extending into neighboring paved surfaces.",
+    "Full perimeter driving review and interiors remain deferred: this pass validates short entrance walks; official education-room text supplies no reliable interior layout."
   ],
   "evidence": {
     "views": "build/city-exteriors/st-louis-office-515-final",
     "visualReview": "Installed front, rear and aerial views inspected. Brick walls, arcade, red entrance roof and central flat roof visible. Forecourt paving remains incomplete; not photorealistic completion.",
     "tests": "32 support and 6 walk legs passed; 10 old building triangles removed.",
-    "implementation": "11890 triangles,20 batches,.38MiB optimized. Static960x540 p95~18.2ms, not route benchmark."
+    "implementation": "11890 triangles,20 batches,.38MiB optimized. Static960x540 p95~18.2ms, not route benchmark.",
+    "refinement": "docs/project-records/st-louis-office-city-market-refinement/review.md",
+    "refinementReview": "Pale tower infills, dark arched surrounds and two layered white arcade cornice bands; dimensions inferred from February 2022 panorama. Three matched daylight views and six installed walking legs passed; see refinement record for limits."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/stLouisOffice515-exterior.glb": "415487bfd7ba288ddc81f1129b36bb56c137c32a742882a0267bbba88f99434e",
+      "build/strip-landmarks/stLouisOffice515-exterior.glb": "b6d8d3f7449a6aace3a47e3273cc0bb79826c563e1c58f47ffe140f176cf8b8a",
       "build/strip-landmarks/stLouisOffice515-exterior-collision.json": "eed45af0b109252cdbf186322ac9ad4e487af2c47a3765a09096f44e90aecc0a"
     }
   }

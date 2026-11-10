@@ -33,6 +33,12 @@ def exterior(B):
   F.box('w17-service-paint',(u,4.38,w),(ww,.8,dd));F.box('w17-vent-paint',(u,4.8,w),(ww*.8,.04,dd*.8))
  for u in [4,11,19,26]:F.box('w17-rooflight-paint',(u,4.08,3.5),(3.2,.18,.7))
  F.box('w17-billboard-back-paint',(12.0,5.56,13.25),(18,2.5,.12))
+ # Aug 2024 Street View: exposed rear panel stiffeners, in front of the backing.
+ # Existing structural braces remain behind it; these visual-only ribs do not change collision.
+ for u in np.arange(3.0,21.01,.75):
+  F.box('w17-metal-paint',(float(u),5.56,13.35),(.055,2.5,.08))
+ for y in [4.31,6.81]:
+  F.box('w17-metal-paint',(12,y,13.35),(18.1,.075,.08))
  for u in np.arange(3,21.1,1.5):
   F.tube('w17-metal-paint',(float(u),3.96,13.2),(float(u),6.8,13.2),.045,6);F.tube('w17-metal-paint',(float(u),4,10.7),(float(u),6.2,13.2),.035,6)
  for y in [4.3,6.8]:F.tube('w17-metal-paint',(3,y,13.2),(21,y,13.2),.045,6)

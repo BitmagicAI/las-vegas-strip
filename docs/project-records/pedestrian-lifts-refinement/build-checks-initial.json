@@ -1,0 +1,156 @@
+[
+  {
+    "command": [
+      "python3.12",
+      "tools/strip-landmarks/build_pedestrian_lifts_refinement.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-build.log"
+  },
+  {
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--python",
+      "tools/strip-landmarks/export_pedestrian_lifts_refinement.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-export.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=cosmoPedestrianLift",
+      "--variant=level"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-cosmoPedestrianLift-level.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=cosmoPedestrianLift",
+      "--variant=webp-textures"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-cosmoPedestrianLift-webp-textures.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=crystalsPedestrianLift",
+      "--variant=level"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-crystalsPedestrianLift-level.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=crystalsPedestrianLift",
+      "--variant=webp-textures"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-crystalsPedestrianLift-webp-textures.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=parkPedestrianLift",
+      "--variant=level"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-parkPedestrianLift-level.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=parkPedestrianLift",
+      "--variant=webp-textures"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-parkPedestrianLift-webp-textures.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=harmonEastLift",
+      "--variant=level"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-harmonEastLift-level.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=harmonEastLift",
+      "--variant=webp-textures"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-harmonEastLift-webp-textures.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/install-optimized.mjs",
+      "--only=cosmoPedestrianLift,crystalsPedestrianLift,parkPedestrianLift,harmonEastLift",
+      "--no-stage"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-install.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/pack-data.mjs",
+      "build/strip-landmarks/cosmoPedestrianLift-exterior-collision.json",
+      "build/strip-landmarks/crystalsPedestrianLift-exterior-collision.json",
+      "build/strip-landmarks/parkPedestrianLift-exterior-collision.json",
+      "build/strip-landmarks/harmonEastLift-exterior-collision.json"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-pack.log"
+  },
+  {
+    "command": [
+      "git",
+      "restore",
+      "tools/optimize/runtime-glbs.json"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-restore-inventory.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-bake.log"
+  },
+  {
+    "command": [
+      "node",
+      "/tmp/pedestrian-lifts-preserve-lod.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-preserve-lod.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "stage"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/pedestrian-lifts-stage.log"
+  }
+]

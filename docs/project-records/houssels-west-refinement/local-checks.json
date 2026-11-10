@@ -1,0 +1,25 @@
+{
+  "typecheck": "PASS",
+  "runtimeTests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "supportSamplesBeforeAfter": 1629,
+  "cpuLegsBeforeAfter": 36,
+  "actualBaselineLegs": 36,
+  "baselineViewsInspected": 4,
+  "baselineEndpointCapturesInspected": 18,
+  "optimizedMiB": 12.51,
+  "optimization": "level and WebP PASS",
+  "existingTreeNodesPreserved": 10,
+  "collision": "50 removed and 50 added triangles confined to relocated southern porch; all other triangles identical",
+  "remaining": [],
+  "modelCheck": "1 optimized GLB, 0 unoptimized",
+  "bakeCheck": "current",
+  "assetCheck": "1930 present, 0 missing, 0 unoptimized",
+  "stage": "4 copied, 1926 unchanged, 0 removed",
+  "cells": "91/92 byte-identical; only 2_-6 changed",
+  "speedMap": "restored missing ignored source dependencies, repacked and confirmed byte-identical to baseline runtime",
+  "afterEvidence": "4 matched daylight views and18 actual endpoint captures inspected;36actual legs PASS;9smoke stops placed0failed requests/page/consoleerrors",
+  "performance": "Initial front +27.78% retained; exact-base warmed median +0.27%, old GLB/cell intercepts verified"
+}

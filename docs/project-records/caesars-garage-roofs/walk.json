@@ -1,0 +1,117 @@
+{
+  "routes": [
+    {
+      "name": "west-roof-aisle",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -490,
+            23,
+            -221
+          ],
+          "position": {
+            "x": -489.83502197265625,
+            "y": 23.019986419677736,
+            "z": -221.01756286621094
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -545,
+            23,
+            -221
+          ],
+          "position": {
+            "x": -544.6823120117188,
+            "y": 23.019980697631837,
+            "z": -221.00587463378906
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "east-roof-aisle",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -335,
+            23,
+            -221
+          ],
+          "position": {
+            "x": -334.8976745605469,
+            "y": 23.019997863769532,
+            "z": -220.9999542236328
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -390,
+            23,
+            -221
+          ],
+          "position": {
+            "x": -389.6566162109375,
+            "y": 23.03,
+            "z": -220.9979705810547
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "north-public-frontage",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -565,
+            0.24,
+            -252
+          ],
+          "position": {
+            "x": -564.7866821289062,
+            "y": -0.000011415481567411678,
+            "z": -251.9983367919922
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -600,
+            0.24,
+            -252
+          ],
+          "position": {
+            "x": -599.6519165039062,
+            "y": -5.674362182905845e-7,
+            "z": -252.02593994140625
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

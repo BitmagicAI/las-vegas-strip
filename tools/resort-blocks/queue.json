@@ -8,8 +8,8 @@
       "status": "refinement-deferred",
       "record": "cosmopolitan.json",
       "deferral": {
-        "date": "2026-10-05",
-        "reason": "Creator requested advancing to Bellagio, with a separate polishing/refinement pass later."
+        "date": "2026-11-07",
+        "reason": "PR548 verified bounded pool-lounger palette pass; all full-resort geometry/layout/circulation discrepancies retained. Continue owner-requested city refinement."
       }
     },
     {
@@ -18,8 +18,8 @@
       "status": "refinement-deferred",
       "record": "bellagio.json",
       "deferral": {
-        "date": "2026-10-05",
-        "reason": "Creator requested continuing down the block list; remaining Bellagio refinements stay in bellagio.json."
+        "date": "2026-11-07",
+        "reason": "PR549 verified bounded five-pavilion stone ornament pass; all full-resort discrepancies and gates retained. Continue owner city refinement."
       }
     },
     {
@@ -28,8 +28,8 @@
       "status": "refinement-deferred",
       "record": "paris.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Creator requests overnight work on remaining resorts, explicitly identifying Venetian. Preserve all unfinished Paris issues and gates."
+        "date": "2026-11-07",
+        "reason": "PR550 verified bounded Arc vault coffer refinement; all full-resort discrepancies and partial gates retained. Continue owner city task sequence."
       }
     },
     {
@@ -38,8 +38,8 @@
       "status": "refinement-deferred",
       "record": "venetian.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Targeted lower facade duplicates cut; remaining full-site issues retained. Creator requests LINQ and TI/Caesars corrections in same pass."
+        "date": "2026-11-07",
+        "reason": "PR551 verified bounded west-palazzo tall arches/oculi pass; all full-resort discrepancies retained. Continue owner city task sequence."
       }
     },
     {
@@ -48,8 +48,8 @@
       "status": "refinement-deferred",
       "record": "harrahs.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Facade pass installed and inspected; creator explicitly requests LINQ next. Retain full-site and fine-detail discrepancies."
+        "date": "2026-10-31",
+        "reason": "PR443 pool court pass installed/inspected and local routes verified. Remaining full-site massing, measured dimensions, landscaping and continuous lift access retained."
       }
     },
     {
@@ -58,8 +58,8 @@
       "status": "refinement-deferred",
       "record": "linq.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Revised blue projecting facade inspected in the installed game; continuing creator-requested TI/Caesars pass. Full-site gates remain pending."
+        "date": "2026-10-31",
+        "reason": "PR443 pool court pass installed/inspected and local routes verified. Remaining full-site massing, measured dimensions, landscaping and continuous lift access retained."
       }
     },
     {
@@ -68,8 +68,8 @@
       "status": "refinement-deferred",
       "record": "ti.json",
       "deferral": {
-        "date": "2026-10-09",
-        "reason": "Tower facade installed and inspected; creator requests missing Caesars mall in same pass. Full TI site refinement remains open."
+        "date": "2026-10-31",
+        "reason": "PR444 pool courtyard installed and reviewed; exact dimensions, facade/landscape detail and continuous guest access remain recorded."
       }
     },
     {
@@ -222,7 +222,11 @@
       "id": "springhill",
       "name": "SpringHill Suites",
       "status": "refinement-deferred",
-      "record": "springhill.json"
+      "record": "springhill.json",
+      "deferral": {
+        "date": "2026-10-31",
+        "reason": "Arrival and roof furniture pass inspected; east lobby connection, surveyed dimensions, mural and continuous lift access remain documented."
+      }
     },
     {
       "id": "trump",
@@ -492,7 +496,11 @@
       "id": "ti-parking",
       "name": "Treasure Island parking structures",
       "status": "refinement-deferred",
-      "record": "ti-parking.json"
+      "record": "ti-parking.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "Verified scoped guest canopy and entry correction with all three garages validated; retained bridge, topology, lifts/stairs, landscape and complete vehicle-circuit discrepancies."
+      }
     },
     {
       "id": "park-mgm-parking",
@@ -516,7 +524,11 @@
       "id": "guardian-angel",
       "name": "Guardian Angel Cathedral",
       "status": "refinement-deferred",
-      "record": "guardian-angel.json"
+      "record": "guardian-angel.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "PR544 public nave/entry refinement locally installed and verified. Remaining artwork, surveyed dimensions, landscaping and full-site benchmark discrepancies retained."
+      }
     },
     {
       "id": "convention-frontage",
@@ -534,7 +546,11 @@
       "id": "crystals",
       "name": "The Shops at Crystals",
       "status": "refinement-deferred",
-      "record": "crystals.json"
+      "record": "crystals.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "PR552 verified two bounded opaque roof glazing representations; full roof/facade/circulation discrepancies retained. Continue nearby CityCenter task."
+      }
     },
     {
       "id": "showcase",
@@ -557,14 +573,18 @@
     {
       "id": "vanderpump",
       "name": "The Vanderpump Hotel, former Cromwell",
-      "status": "refinement-deferred",
+      "status": "active",
       "record": "vanderpump.json"
     },
     {
       "id": "citycenter-63",
       "name": "63 CityCenter / ARTE Museum",
       "status": "refinement-deferred",
-      "record": "citycenter-63.json"
+      "record": "citycenter-63.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "PR553 verified bounded terrace shade refinement; all public access, detailed furniture/material and full-block discrepancies retained."
+      }
     },
     {
       "id": "harmon-corner",
@@ -1039,7 +1059,11 @@
       "id": "jack-main-wyoming",
       "name": "Jack in the Box Main and Wyoming",
       "status": "refinement-deferred",
-      "record": "jack-main-wyoming.json"
+      "record": "jack-main-wyoming.json",
+      "deferral": {
+        "date": "2026-11-06",
+        "reason": "PR528 address/frontage pass merged and checked; remaining exact detail, landscape, interior and vehicle benchmark retained."
+      }
     },
     {
       "id": "casino-center-1512",
@@ -1063,7 +1087,11 @@
       "id": "strat-pool-deck",
       "name": "STRAT level-eight pool deck and pavilion",
       "status": "refinement-deferred",
-      "record": "strat-pool-deck.json"
+      "record": "strat-pool-deck.json",
+      "deferral": {
+        "date": "2026-11-06",
+        "reason": "PR530 verified scoped pool and BigShot refinements merged; all unresolved STRAT discrepancies retained."
+      }
     },
     {
       "id": "strat-thrill-rides",
@@ -1075,7 +1103,11 @@
       "id": "circus-north-canopy",
       "name": "Circus Circus north roadside canopy",
       "status": "refinement-deferred",
-      "record": "circus-north-canopy.json"
+      "record": "circus-north-canopy.json",
+      "deferral": {
+        "date": "2026-11-06",
+        "reason": "PR531 scoped canopy refinement verified and merged; parent facade and other remaining requirements retained."
+      }
     },
     {
       "id": "encore-tower-suites-canopy",
@@ -1165,7 +1197,11 @@
       "id": "pedestrian-lifts",
       "name": "Harmon and Park MGM pedestrian lifts",
       "status": "refinement-deferred",
-      "record": "pedestrian-lifts.json"
+      "record": "pedestrian-lifts.json",
+      "deferral": {
+        "date": "2026-11-07",
+        "reason": "PR539 merged dcbf8739; prior lift refinements verified, remaining discrepancies retained. Clear stale active marker while Guardian Angel PR544 is claimed."
+      }
     },
     {
       "id": "cvs-horseshoe-east",
@@ -1872,9 +1908,39 @@
     {
       "id": "lexi-westwood",
       "name": "The Lexi Las Vegas",
-      "status": "active",
+      "status": "refinement-deferred",
       "record": "lexi-westwood.json"
+    },
+    {
+      "id": "westwood-2601",
+      "name": "2601 Westwood and separate south building",
+      "status": "refinement-deferred",
+      "record": "westwood-2601.json"
+    },
+    {
+      "id": "westwood-commercial",
+      "name": "2650 Westwood, Highland Steel and Creel",
+      "status": "refinement-deferred",
+      "record": "westwood-commercial.json"
+    },
+    {
+      "id": "sphere",
+      "name": "Sphere",
+      "status": "refinement-deferred",
+      "record": "sphere.json"
+    },
+    {
+      "id": "excalibur-pedestrian-bridge",
+      "name": "Excalibur elevated pedestrian corridor",
+      "status": "refinement-deferred",
+      "record": "excalibur-pedestrian-bridge.json"
+    },
+    {
+      "id": "mapped-background",
+      "name": "Wynn\u2013Encore mapped podium and parking audit",
+      "status": "refinement-deferred",
+      "record": "mapped-background.json"
     }
   ],
-  "active": "lexi-westwood"
+  "active": "little-church-west"
 }

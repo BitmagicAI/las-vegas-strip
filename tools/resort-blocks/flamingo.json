@@ -21,9 +21,9 @@
     }
   ],
   "remaining": [
-    "Courtyard garden and current GO Pool geometry requires rebuilding from current references",
-    "Marquee fine geometry, scattered low signage/panels and frontage detail still approximate",
-    "Full public route traversal and measured street performance pending"
+    "GO Pool exact surveyed outlines/elevations, complete cabana/bar-seat/palm counts and animated waterfall remain deferred: current pass uses reference-supported arrangement and inferred walkable levels.",
+    "Separate family pool, full resort route certification and detailed planting remain deferred; existing garden and HGV pool preserved.",
+    "Marquee sculptural detail and scattered signage remain approximate; no photorealistic completion claim."
   ],
   "baseline": [
     "build/city-exteriors/flamingo-before/flamingo-west.png",
@@ -135,5 +135,26 @@
       "observations": "All5finalcaptures inspected. Corrected oldcanopy, restaurant nowvisible, reduced roof equipment repetitiveness, glazedpanels readable after lightening. Southcanopy open with oculus and retained entrance. Mainlobby preserved. Still simplified petal art, opaque restaurant glazing and broad blank parapet fields; not photorealistic completion.",
       "performance": "build/city-exteriors/flamingo-final-cromwell-baseline/performance.json"
     }
+  },
+  "goPoolPass20261101": {
+    "status": "implemented-visually-reviewed",
+    "references": "docs/project-records/flamingo-go-pool/research.json",
+    "authoredTriangles": 13018,
+    "collisionTriangles": 6431,
+    "packedRouteSamples": 3228,
+    "preservation": "Three adjacent exterior GLBs and collision packs byte-identical; all297 other venue records retained.",
+    "remaining": [
+      "Four principal GO Pool basins plus grotto reconstructed; separate family pool not rebuilt in this pass.",
+      "18 bar stools,15 cabanas,22 original palms; full official30 seats/33 cabanas/90 palms not reproduced. Counts and planting need later refinement.",
+      "Static waterfall ribbons, simplified furnishing/planting, no animated rain curtain.",
+      "No public interior added: this task is the exterior pool complex; adjacent existing interiors preserved.",
+      "No whole-resort or photorealistic completion claim."
+    ],
+    "normalMovementSegments": 8,
+    "bakeRuns": 1,
+    "storage": "docs/project-records/flamingo-go-pool/storage.json",
+    "validation": "docs/project-records/flamingo-go-pool/validation.json",
+    "performance": "docs/project-records/flamingo-go-pool/performance-comparison.json",
+    "installedViews": "build/city-exteriors/flamingo-go-pool-final"
   }
 }

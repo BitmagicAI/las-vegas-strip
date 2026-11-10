@@ -2,6 +2,7 @@
 Retains mapped occupied envelope, doors and all authored interiors. No whole-city build.
 """
 from common import *
+from vanderpump_curtains import cabana_curtains
 from forum_shops import facade_frame
 import copy,hashlib,gzip
 BACK=Path('tools/strip-landmarks/retained-source')
@@ -107,8 +108,8 @@ for level in [35.2,39.0]:
   R.box('vp-deck',(0,.12,0),(7.8,.24,7.0),True)
   for dx in [-3.6,3.6]:
    R.box('vp-cream',(dx,1.75,-3),( .22,3.5,.22),True)
-   R.box('vp-fabric',(dx*.87,1.8,0),(.7,3.2,5.7))
-  R.box('vp-cushion',(0,.62,1.1),(4,.30,1.7));R.box('vp-cushion',(0,1.2,1.8),(4,1.2,.25))
+  cabana_curtains(R)
+  R.box('vp-soleia-cushion-paint',(0,.62,1.1),(4,.30,1.7));R.box('vp-soleia-cushion-paint',(0,1.2,1.8),(4,1.2,.25))
   R.box('vp-table-wood',(0,.72,-1.1),(2,.14,1.0))
   if level>36:
    R.box('vp-metal-paint',(0,1,-3.5),(7.7,.06,.06))
@@ -117,7 +118,7 @@ for level in [35.2,39.0]:
 for x in [48,56,64,72,80,88]:
  for z in [117.5,121]:
   if not upper.contains(box(x-1,z-1,x+1,z+1)):continue
-  B.box('vp-cushion',(x,35.75,z),(1.8,.35,2.5));B.box('vp-metal-paint',(x,35.4,z),(1.7,.35,2.4))
+  B.box('vp-soleia-cushion-paint',(x,35.75,z),(1.8,.35,2.5));B.box('vp-metal-paint',(x,35.4,z),(1.7,.35,2.4))
 for x in [50,63,76,87]:
  B.tube('vp-metal-paint',(x,35.2,115.5),(x,38.0,115.5),.06,8)
  B.lathe('vp-parasol-fabric',(x,115.5),[(37.7,2.1),(38.3,.05)],16)

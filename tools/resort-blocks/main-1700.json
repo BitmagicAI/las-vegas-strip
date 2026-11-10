@@ -27,10 +27,14 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.15062,-115.15449&heading=320&pitch=0",
       "imageDate": "February2023",
       "observed": "Older south parking view confirms turquoise base, tall southern volume with dark fascia, entrance ramp at southeast. Obsolete SuperPawn lettering deliberately omitted following2026reference."
+    },
+    {
+      "url": "docs/project-records/dennys-main-refinement/research.json",
+      "observed": "2026-11-04 fresh dated Street View and satellite reference observations; original geometry and inferred dimensions documented."
     }
   ],
   "remaining": [
-    "Weathered paint and fascia scars, fine roof/service details and exact sign graphics remain approximate",
+    "Additional high address plate and original pale fascia scars added; full weathered paint, roof/service detail and exact signage remain approximate because source dimensions and texture detail are not surveyed",
     "Existing CC0 trees stand in for tightly pruned reference trees; species/form not exact",
     "Roof heights4.7m/6.9m inferred, not surveyed",
     "Parking extent and cracked asphalt need closer matching",
@@ -42,11 +46,14 @@
     "walk": "build/city-exteriors/main-1700-walk.json",
     "ramp": "build/city-exteriors/main-1700-ramp-walk.json",
     "ownership": "build/city-exteriors/main-1700-ownership-audit.json",
-    "visualReview": "Three installed views reviewed; repeated after fixing polygon-difference sliver that incorrectly extended tall facade along lower wing.659support samples,6approachlegs,6ramplegsPASS.3611authoredtri19batches plus3existingCC0trees/LODs.11.83MiBoptimized.34oldvisual/collisiontri removed. Planter moved out of ramp following failed controller test."
+    "visualReview": "Three installed views reviewed; repeated after fixing polygon-difference sliver that incorrectly extended tall facade along lower wing.659support samples,6approachlegs,6ramplegsPASS.3611authoredtri19batches plus3existingCC0trees/LODs.11.83MiBoptimized.34oldvisual/collisiontri removed. Planter moved out of ramp following failed controller test.",
+    "refinementCheckpoint": "docs/project-records/dennys-main-refinement/checkpoint.md",
+    "refinementViews": "docs/project-records/dennys-main-refinement/views.md",
+    "refinementReview": "2026-11-04 installed six matching daylight pairs and twelve approach/ramp endpoint images inspected across group.1007support samples and18CPU/18actual matched legs passed. Warm p95 deltas0\u20137.2%; no >10% regression. Full-site gaps retained; six supplemental courtyard crossing/return legs also passed, both endpoint images inspected."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/main1700-exterior.glb": "122061b9f6b7c5b22c71e637600def5b5cdcbe15f5419502b66a2767c9e1ab77",
+      "build/strip-landmarks/main1700-exterior.glb": "5bd00480086a681b7d79fa73f0fdc7a48b4267f1b2f7fed78d47912faf6dad0a",
       "build/strip-landmarks/main1700-exterior-collision.json": "4cfb81c2cc6dc4762fd43ba43715b6a8a2e473a9c99c1a45a56f609fd7708e3e"
     }
   }

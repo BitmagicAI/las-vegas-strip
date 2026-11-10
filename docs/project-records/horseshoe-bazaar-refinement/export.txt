@@ -1,0 +1,126 @@
+/Users/janisun/Development/GitFork/vegas-2601-westwood/tools/strip-landmarks/export.py:229: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('Strip / '+k);m.use_nodes=True;m.diffuse_color=(*linear,1);bs=m.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*linear,1)
+Info: Saved as "horseshoeExterior-exterior.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+09:13:42 | INFO: Starting glTF 2.0 export
+09:13:42 | INFO: Extracting primitive: E
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: E.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: GIORDANO'S
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: GIORDANO'S.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: H
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: H.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-awning
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | WARNING: Mesh baz-brick is not valid, and may be exported wrongly
+09:13:42 | INFO: Extracting primitive: baz-brick
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-deck
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-glass
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-metal
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-red
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-roof
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-service
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-shade
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: baz-stucco
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: glass
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | WARNING: Mesh steel is not valid, and may be exported wrongly
+09:13:42 | INFO: Extracting primitive: steel
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-frame.002
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-glass.002
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-roof.002
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-service.002
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-shadow.002
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-stone.002
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-white.002
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-frame.003
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-glass.003
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-stone.003
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-white.003
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-frame.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-glass.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-joint.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-roof.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-service.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-shadow.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-spandrel.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | WARNING: Mesh hs-stone.001 is not valid, and may be exported wrongly
+09:13:42 | INFO: Extracting primitive: hs-stone.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-white.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-blue
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-frame
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-glass
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-joint
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-roof
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | WARNING: Mesh hs-roof-seam is not valid, and may be exported wrongly
+09:13:42 | INFO: Extracting primitive: hs-roof-seam
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-service
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-shadow
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-spandrel
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-stone
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: hs-white
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: O
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: O.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: OLE RED
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: R
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: S
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Extracting primitive: S.001
+09:13:42 | INFO: Primitives created: 1
+09:13:42 | INFO: Finished glTF 2.0 export in 0.10015630722045898 s
+
+EXPORTED horseshoeExterior-exterior
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 01:35:57)
+
+Blender quit

@@ -19,7 +19,11 @@ def exterior(B):
    for u in [L*.15,L*.35]:F.box('san-glass',(u,2.35,-.17),(2.1,.65,.06))
    F.box('san-paving-concrete',(mid,.17,-1.5),(10,.16,3),True)
    # Painted hatching on the north west access strip, not collision barriers.
-   for u in np.arange(.5,L*.5,1.2):F.box('san-line-paint',(u,.135,-2),(.065,.014,3))
+   # Satellite shows diagonal hatching, clipped to the existing west strip.
+   strip=F.poly([(0,-.5),(L*.5,-.5),(L*.5,-3.5),(0,-3.5)])
+   for u in np.arange(-1.2,L*.5,1.2):
+    stripe=F.poly([(u-.035,-.5),(u+.035,-.5),(u+1.235,-3.5),(u+1.165,-3.5)])
+    B.planar('san-line-paint',stripe.intersection(strip),.142)
   elif nx>.8:
    for u in [L*.18,L*.52,L*.85]:
     F.box('san-frame-paint',(u,1.45,-.16),(1.15,2.5,.1));F.box('san-door-paint',(u,1.45,-.22),(1,2.35,.04))

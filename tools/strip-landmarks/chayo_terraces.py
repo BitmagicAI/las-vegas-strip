@@ -40,8 +40,16 @@ def exterior(B):
  for x,z in [(120.2,-173),(126.3,-173),(131.4,-176.7)]:B.box('chy-timber-paint',(x,1.9,z),(.25,3.3,.25),True)
  for a,b in [((120.2,-173),(126.3,-173)),((126.3,-173),(131.4,-176.7))]:
   F,L,_,_=facade_frame(B,a,b,lower,0);F.box('chy-timber-paint',(L/2,3.52,0),(L+.25,.25,.27))
- for t in triangles(lower.buffer(-.15)):
-  B.face('chy-red-fabric',[(x,3.42,z)for x,z in list(t.exterior.coords)[:-1]])
+ # Original shallow fabric swags, photo-supported form with inferred pitch/sag.
+ # Subdivide in X before triangulation so curvature survives the irregular outline.
+ fabric=lower.buffer(-.15);pitch=.8;sag=.14
+ xmin,zmin,xmax,zmax=fabric.bounds
+ for i in range(math.ceil((xmax-xmin)/.1)):
+  strip=fabric.intersection(box(xmin+i*.1,zmin-1,min(xmax,xmin+(i+1)*.1),zmax+1))
+  for t in triangles(strip):
+   pts=[(x,3.42-sag*math.sin(math.pi*((x-xmin)%pitch)/pitch),z) for x,z in list(t.exterior.coords)[:-1]]
+   B.face('chy-red-fabric',pts)
+
  # Open lower patio railing leaves a 1.8 m entrance gap between timber bays.
  for a,b in [((120.2,-172.9),(122.1,-172.9)),((123.9,-172.9),(126.3,-172.9)),((126.3,-172.9),(131.4,-176.7))]:
   F,L,_,_=facade_frame(B,a,b,lower,0)
@@ -52,7 +60,10 @@ def exterior(B):
  # Tables and slatted metal chairs are batched decorative geometry.
  def chair(x,z,y,yaw):
   F=Frame(B,x,z,yaw=yaw,y=y)
-  F.box('chy-tan-paint',(0,.48,0),(.43,.07,.44))
+  # Five separate tan seat slats and black foot crossbars, retaining chair placement.
+  for zz in [-.176,-.088,0,.088,.176]:F.box('chy-tan-paint',(0,.48,zz),(.43,.07,.076))
+  for xx in [-.2,.2]:F.box('chy-black-paint',(xx,.18,0),(.035,.035,.40))
+  F.box('chy-black-paint',(0,.18,-.18),(.40,.035,.035))
   for xx in [-.2,.2]:
    for zz in [-.18,.18]:F.box('chy-black-paint',(xx,.23,zz),(.035,.46,.035))
    F.box('chy-black-paint',(xx,.72,.2),(.035,.48,.035))

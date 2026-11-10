@@ -20,7 +20,7 @@ for lod in range(3):
    for mat in data.materials:
     if mat:mat['sourceLicense']='CC0 Poly Haven tree_small_02 (existing project asset)'
   for o in added:bpy.data.objects.remove(o,do_unlink=True)
- for i,(x,z,h,yaw) in enumerate([(1847,-3851,11,.4),(1855,-3848,10.5,1.9),(1861,-3854,9,2.8)]):
+ for i,(x,z,h,yaw) in enumerate([(1842,-3852,11,.4),(1855,-3848,10.5,1.9),(1861,-3854,9,2.8)]):
   s=h/(hi-lo);T=Matrix.Translation((x,-z,.08))@Matrix.Rotation(yaw,4,'Z')@Matrix.Scale(s,4)@Matrix.Translation((0,0,-lo))
   for j,(data,m) in enumerate(proto):
    o=bpy.data.objects.new(f'Chapel garden tree {i}/{lod}/{j}',data);bpy.context.collection.objects.link(o);o.matrix_world=T@m;o['property']='chapelFlowers';o['source']=f'arrival-tree/{math.floor(x/40)},{math.floor(z/40)}/{lod}';o['detail']=0

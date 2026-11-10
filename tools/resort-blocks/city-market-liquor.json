@@ -16,19 +16,21 @@
     }
   ],
   "remaining": [
-    "Branding and storefront based on January2022 imagery; current appearance uncertain",
-    "Sign typography, advertising, weathering and vending fixtures simplified/omitted",
-    "Rear service openings inferred; heights estimated; neutral daylight review pending; no interior"
+    "Current appearance remains uncertain: the inspected storefront panorama is January 2022; the November 2025 official retailer list supports historical identity only.",
+    "Sign typography, advertising, weathering and vending fixtures remain simplified or omitted: reference detail is dated and this scoped pass adds only transom framing and two non-emitting flood housings.",
+    "Rear service openings and heights remain inferred; no measured elevations or verified interior layout were available, so rear geometry and interior scope are unchanged."
   ],
   "evidence": {
     "views": "build/city-exteriors/city-market-liquor-final",
     "review": "Three installed views inspected; intersecting roof corners corrected to mitered slopes and final front/aerial rechecked",
     "tests": "132support6walkPASS;10oldtri removed",
-    "implementation": "1320tri20batches.29MiBoptimized"
+    "implementation": "1320tri20batches.29MiBoptimized",
+    "refinement": "docs/project-records/st-louis-office-city-market-refinement/review.md",
+    "refinementReview": "Narrow door transom frame/glazing and two non-emitting roof-mounted flood housings, inferred from January 2022 panorama. Three matched daylight views and six installed walking legs passed; see refinement record for limits."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/cityMarketLiquor-exterior.glb": "2295966bce1ace4374e9c408d1d0c487dae3f2d49b7cd1551a3ff21a57d4a0e5",
+      "build/strip-landmarks/cityMarketLiquor-exterior.glb": "3c5762254dcf836b49d2463b832be06768a71b239bc679ca8ab4ee08f53f56e3",
       "build/strip-landmarks/cityMarketLiquor-exterior-collision.json": "5784b4dc60aa0e33c1798130e279a04a999d3f180be9d276634625ce56cfaf8f"
     }
   }

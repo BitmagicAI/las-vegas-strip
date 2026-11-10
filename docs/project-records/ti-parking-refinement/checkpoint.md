@@ -1,0 +1,5 @@
+# PR543 verified scoped TI garage refinement
+
+Final installed source/optimized model and91/92unchangedcells validated. Eleven checks pass,9-stop dev smoke passes with zero errors,7matched neutral views personally inspected,8corrected entry walk legs pass,12ramp walk legs passed before entry-only correction,3final matched real jeep ascents pass,2supplemental low-camera drives inspected. Source collision changes50removed/50added triangles only within guest entry lower columns. See installed-review.md, performance.json and smoke.json. Inherited chase-camera clipping and western duplicate faces retained. Full garage/bridge/landscape completion not claimed.
+
+NEXT commit final runtime/proofs, calculate totalnewLFSbytes over all own commits, finish PR543 description, verify own-only origin/next..HEAD before push, mark ready/selfmerge --merge --match-head-commit, explicitly close89, run picker and branch fresh origin/next. No main/CDN/publish/release/settings. Never poll released blockers117/118/203. No GPU jobs/research tabs left; dev3180/editor3181 retained. PR542 already notified. Notify PR543 only after verified merge.

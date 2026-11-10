@@ -1,0 +1,134 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Soleia roof deck segment and return; isolated start, not public roof access",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            57,
+            35.2,
+            91
+          ],
+          "position": {
+            "x": 56.91423416137695,
+            "y": 35.21915176391602,
+            "z": 91.00005340576172
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            65,
+            35.2,
+            91
+          ],
+          "position": {
+            "x": 64.91022491455078,
+            "y": 35.2299626159668,
+            "z": 91.00035095214844
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            73,
+            35.2,
+            91
+          ],
+          "position": {
+            "x": 72.90483856201172,
+            "y": 35.218995361328126,
+            "z": 90.99995422363281
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            81,
+            35.2,
+            91
+          ],
+          "position": {
+            "x": 81.06995391845703,
+            "y": 35.22919204711914,
+            "z": 91.00033569335938
+          }
+        },
+        {
+          "segment": 5,
+          "reached": true,
+          "goal": [
+            73,
+            35.2,
+            91
+          ],
+          "position": {
+            "x": 73.0765151977539,
+            "y": 35.218987731933595,
+            "z": 91.00000762939453
+          }
+        },
+        {
+          "segment": 6,
+          "reached": true,
+          "goal": [
+            65,
+            35.2,
+            91
+          ],
+          "position": {
+            "x": 65.07807159423828,
+            "y": 35.21921661376953,
+            "z": 90.9998550415039
+          }
+        },
+        {
+          "segment": 7,
+          "reached": true,
+          "goal": [
+            57,
+            35.2,
+            91
+          ],
+          "position": {
+            "x": 57.0767936706543,
+            "y": 35.21915176391602,
+            "z": 91.00007629394531
+          }
+        },
+        {
+          "segment": 8,
+          "reached": true,
+          "goal": [
+            48,
+            35.2,
+            91
+          ],
+          "position": {
+            "x": 48.08352279663086,
+            "y": 35.219208984375,
+            "z": 91.00035858154297
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

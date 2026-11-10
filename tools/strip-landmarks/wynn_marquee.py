@@ -22,12 +22,22 @@ def exterior(B):
    # Horizontal ribbed moving-eraser housing, held at its photographed low position.
    for y in np.arange(lo,lo+5.4,.22):
     B.face('wm-eraser-paint',[F.p(u,y,side*(depth(u)+.22)),F.p(v,y,side*(depth(v)+.22)),F.p(v,y+.14,side*(depth(v)+.22)),F.p(u,y+.14,side*(depth(u)+.22))][::(-1 if side>0 else 1)])
+   # Folded lower edge gives each existing rib depth; inferred 60mm return.
+   for y in np.arange(lo,lo+5.4,.22):
+    B.face('wm-eraser-paint',[F.p(u,y,side*(depth(u)+.16)),F.p(v,y,side*(depth(v)+.16)),F.p(v,y,side*(depth(v)+.22)),F.p(u,y,side*(depth(u)+.22))][::(1 if side>0 else -1)])
   for u in [-W/2,W/2]:F.box('wm-metal-paint',(u,(H+lo)/2,side*depth(u)),(.18,H-lo,.18))
   for y in [lo,H]:F.path('wm-metal-paint',[(u,y,side*depth(u))for u in us],.12,6)
   # Name band lettering is a local script-font approximation, kept independent of LED panel.
   F.text('Wynn',(0,lo+1.4,side*(depth(0)+.36)),3.2,'wm-gold-letter',back=side>0)
   F.text('WYNN',(0,28,side*(depth(0)+.06)),1.5,'wm-screen-letter',back=side>0)
   F.text('LAS VEGAS',(0,26,side*(depth(0)+.06)),.65,'wm-screen-letter',back=side>0)
+ # Closed eraser underside and wrapped end faces, observed in April2025 Street View.
+ # Decorative only: preserve the existing structural collision and static elevation.
+ for u,v in zip(us,us[1:]):
+  B.face('wm-metal-paint',[F.p(u,lo,-depth(u)-.22),F.p(v,lo,-depth(v)-.22),F.p(v,lo,depth(v)+.22),F.p(u,lo,depth(u)+.22)])
+ for u in [-W/2,W/2]:
+  d=depth(u)+.22
+  B.face('wm-eraser-paint',[F.p(u,lo,-d),F.p(u,lo,d),F.p(u,lo+5.4,d),F.p(u,lo+5.4,-d)][::(-1 if u>0 else 1)])
  for u in [-W/2,W/2]:
   B.face('wm-metal-paint',[F.p(u,lo,-depth(u)),F.p(u,lo,depth(u)),F.p(u,H,depth(u)),F.p(u,H,-depth(u))])
  roof=F.poly([(u,-depth(u))for u in us]+[(u,depth(u))for u in us[::-1]])

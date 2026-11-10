@@ -1,0 +1,323 @@
+{
+ "rel": ".bitmagic/bellagio-ornament-candidate/bellagioBlock-exterior.glb",
+ "sourceSha256": "1149e84f94b39f57a32f8c48348643528ce061cb0f9b9c402c20d47d398f3869",
+ "cls": "level",
+ "loader": "Bellagio candidate",
+ "when": "candidate",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 9.731,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/bellagio-ornament-candidate/bellagioBlock-exterior.glb .bitmagic/optimize/.bitmagic/bellagio-ornament-candidate/bellagioBlock-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": ".bitmagic/bellagio-ornament-candidate/bellagioBlock-exterior.glb",
+  "dst": ".bitmagic/optimize/.bitmagic/bellagio-ornament-candidate/bellagioBlock-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 139568644,
+   "triangles": 2155454,
+   "vertices": 4183119,
+   "nodes": 332,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 136482720,
+   "gpuTextures": 18175313,
+   "textures": [
+    {
+     "name": "Original marble",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 236566,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-cream",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229168,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-stone",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229219,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-rock",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229029,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake ripple normal",
+     "slot": "normal",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 135546,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake ripple color",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 122596,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-ochre",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229152,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-terracotta",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229042,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-tile-light",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229012,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-paving",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229061,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original tile",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 233546,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original sandstone",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229482,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original stone",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229228,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "KHR_materials_emissive_strength"
+   ]
+  },
+  "after": {
+   "bytes": 51593068,
+   "triangles": 2155454,
+   "vertices": 4180496,
+   "nodes": 332,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 100882162,
+   "gpuTextures": 18175313,
+   "textures": [
+    {
+     "name": "Original marble",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 236566,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-cream",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229168,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-stone",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229219,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-rock",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229029,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake ripple normal",
+     "slot": "normal",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 135546,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake ripple color",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 122596,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-ochre",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229152,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-terracotta",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229042,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-tile-light",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229012,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original lake-paving",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229061,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original tile",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 233546,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original sandstone",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229482,
+     "gpu": 1398101
+    },
+    {
+     "name": "Original stone",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 229228,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_materials_emissive_strength",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them",
+   "TEXCOORD_0 leaves 0-1 (tiling UVs) on some meshes, so those stay float. Harmless: it is what glTF-Transform's \"Skipping\" line meant"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "332 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "13 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "83.90 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 1 warnings; MESH_PRIMITIVE_GENERATED_TANGENT_SPACE /meshes/145/primitives/0/material"
+   }
+  ]
+ }
+}

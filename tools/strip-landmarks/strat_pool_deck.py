@@ -15,7 +15,11 @@ def chair(B,x,z,yaw=0):
  B.face('spool-cushion-paint',[F.p(-.345,.49,-.55),F.p(.345,.49,-.55),F.p(.345,.99,-1.08),F.p(-.345,.99,-1.08)])
  for side in [-1,1]:F.tube('spool-white-frame-paint',(side*.36,.49,-.55),(side*.36,1.01,-1.09),.025,8)
 def umbrella(B,x,z):
- F=Frame(B,x,z,y=Y);F.lathe('spool-white-frame-paint',0,0,[(0,.03),(2.55,.03)],10)
+ F=Frame(B,x,z,y=Y)
+ # Separate weighted base beside the daybed, as in the official August2023 photo.
+ F.box('spool-white-frame-paint',(0,.16,0),(.48,.32,.48))
+ F.box('spool-blue-fabric-paint',(0,.33,0),(.40,.035,.40))
+ F.lathe('spool-white-frame-paint',0,0,[(.34,.03),(2.55,.03)],10)
  for i in range(8):
   a=i*math.tau/8;b=(i+1)*math.tau/8;B.face('spool-blue-fabric-paint',[F.p(0,2.65,0),F.p(1.5*math.cos(a),2.24,1.5*math.sin(a)),F.p(1.5*math.cos(b),2.24,1.5*math.sin(b))]);F.tube('spool-white-frame-paint',(0,2.56,0),(1.48*math.cos(a),2.23,1.48*math.sin(a)),.013,6)
 def exterior(B):
@@ -59,7 +63,18 @@ def exterior(B):
  for px,pz in [(770,570),(912,572),(945,551),(981,555),(1009,537),(845,450),(885,458)]:
   x,z=xy(px,pz)
   if not deck.buffer(-1.1).contains(Point(x,z)):continue
-  B.lathe('spool-white-frame-paint',(x,z),[(Y,.95),(Y+.32,.95)],24);B.lathe('spool-blue-fabric-paint',(x,z),[(Y+.32,.93),(Y+.55,.93)],24);umbrella(B,x,z)
+  B.lathe('spool-white-frame-paint',(x,z),[(Y,.95),(Y+.32,.95)],32)
+  B.lathe('spool-blue-fabric-paint',(x,z),[(Y+.32,.93),(Y+.53,.93),(Y+.56,.89)],32)
+  # Lathes are side surfaces only; a cushion needs an explicit top, not a hollow ring.
+  B.planar('spool-blue-fabric-paint',Point(x,z).buffer(.89,resolution=8),Y+.56)
+  B.lathe('spool-white-fabric-paint',(x,z),[(Y+.32,.935),(Y+.345,.935)],32)
+  for a in np.linspace(0,math.tau,8,endpoint=False):
+   u,v=.952*math.cos(a),.952*math.sin(a)
+   B.tube('spool-cushion-paint',(x+u,Y+.025,z+v),(x+u,Y+.30,z+v),.009,4)
+  candidates=[(x-1.35,z),(x+1.35,z),(x,z-1.35),(x,z+1.35)]
+  pole=next(((u,v) for u,v in candidates if deck.buffer(-.30).contains(Point(u,v))),None)
+  assert pole is not None,'No clear umbrella base next to daybed'
+  umbrella(B,*pole)
  reserved=unary_union(cabanas).union(basin.buffer(1.2)).union(hut.buffer(1.5))
  # Separate lounge groups reproduce the eastern and western rows without perimeter over-density.
  for pxs,pzs in [(range(1060,1250,25),range(420,591,30)),(range(515,597,27),range(390,557,31))]:

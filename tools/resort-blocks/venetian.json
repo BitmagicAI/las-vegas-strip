@@ -3,9 +3,9 @@
   "id": "venetian",
   "name": "Venetian / Palazzo",
   "stage": "canal-detail-and-street-pass-installed-and-inspected",
-  "updated": "2026-10-23",
-  "statusNote": "Detailed gondolas, bank-aligned pavilion, reflected canal water and ground storefront details installed and inspected in game. Outdoor canals remain separate from indoor Level 2. Full-resort visual gate remains failed; architectural fidelity and map-based interiors remain unfinished.",
-  "nextAction": "Preserve current separate canal layout. Refine exact street tenants, palazzo ornament, tower details, podium and map-based interiors. Harrah’s/LINQ targeted facades advanced per creator request; no whole-resort acceptance.",
+  "updated": "2026-11-07",
+  "statusNote": "Verified bounded west-palazzo tall upper arches and oculi pass, with ground storefronts, adjacent buildings, collision and existing interiors preserved. Detailed gondolas, bank-aligned pavilion, reflected canal water and ground storefront details installed and inspected in game. Outdoor canals remain separate from indoor Level 2. Full-resort visual gate remains failed; architectural fidelity and map-based interiors remain unfinished.",
+  "nextAction": "Preserve current separate canal layout. Refine exact street tenants, palazzo ornament, tower details, podium and map-based interiors. Harrah\u2019s/LINQ targeted facades advanced per creator request; no whole-resort acceptance.",
   "surveyBoundsXZ": [
     140,
     -1000,
@@ -53,7 +53,7 @@
     },
     {
       "id": "rialto-hisgett",
-      "title": "The Venetian 12 — Tony Hisgett, 30 September 2014",
+      "title": "The Venetian 12 \u2014 Tony Hisgett, 30 September 2014",
       "url": "https://commons.wikimedia.org/wiki/File:The_Venetian_12_(15550338560).jpg",
       "image": "docs/project-records/venetian-exterior-2026-10-09/rialto-reference.jpg",
       "kind": "visual-reference",
@@ -120,7 +120,7 @@
     {
       "id": "palazzo-crown-official-2026-10-09",
       "kind": "official-photograph",
-      "title": "The Venetian Resort — Palazzo exterior at dusk",
+      "title": "The Venetian Resort \u2014 Palazzo exterior at dusk",
       "url": "https://www.venetianlasvegas.com/hotel.html",
       "image": "docs/project-records/venetian-exterior-2026-10-09/palazzo-crown-official-reference.jpg",
       "accessed": "2026-10-09",
@@ -233,6 +233,33 @@
       "accessed": "2026-10-23",
       "imageDate": null,
       "note": "Openly licensed photographs (Category:The Grand Canal Shoppes and the lobby and Great Hall photographs listed in the interiors record), viewed for reference only; none redistributed."
+    },
+    {
+      "id": "street-official-20261107",
+      "title": "Official Venetian aerial",
+      "url": "https://www.venetianlasvegas.com/content/dam/vlvweb/resort/venetian-palazzo-exterior-1925x1110.jpg",
+      "kind": "official photograph",
+      "accessed": "2026-11-07",
+      "imageDate": null,
+      "note": "Personally inspected; broad resort context, image date unstated and old Mirage branding means not proof of current tenants."
+    },
+    {
+      "id": "street-west-20261107",
+      "title": "West Campanile and street palazzo",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=puM3UdEY24GtGVU0_732IA&heading=80&pitch=35",
+      "kind": "Google Street View",
+      "accessed": "2026-11-07",
+      "imageDate": "2025-01",
+      "note": "Personally inspected: tall upper arches and round oculi, column pairs, cornice and striped ground awnings."
+    },
+    {
+      "id": "street-north-20261107",
+      "title": "Northwest frontage",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=-01A5GOR7G6UhYoph-XW2w&heading=135&pitch=12",
+      "kind": "Google Street View",
+      "accessed": "2026-11-07",
+      "imageDate": "2026-10",
+      "note": "Personally inspected: tall upper window stage, oculi, retained Campanile composition. Temporary construction obscures foreground; not a permanent closure claim."
     }
   ],
   "levels": [
@@ -895,5 +922,80 @@
       "build/strip-landmarks/palazzo-exterior.glb": "e0af1914f0c545d80af96f27f4c2b4b960587d6594699587f6711537adc6a500",
       "build/strip-landmarks/palazzo-exterior-collision.json": "448a88eab5c0908d74ae83bd744988b7720bce59efca857ea4d23761f3587dd9"
     }
+  },
+  "remaining": [
+    {
+      "id": "tower",
+      "detail": "Generic grid replaced with photo-guided continuous strips and arched crowns; verify height/footprint/setbacks and roofline in matching aerials.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "massing",
+      "detail": "Existing placement retained for facade pass; align top-down and two oblique views before completion.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "frontage",
+      "detail": "Continuous covered Rialto span, road arch, roof wings and plaza stair are now installed and inspected. Podium/side facades, South Tower chapel/Bouchon frontage, full dining terraces and surveyed frontage placement remain incomplete. Three pool areas are first-pass geometry with incomplete access. Bridge sculpture, end details and exact height proportions remain approximate.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "materials",
+      "detail": "Stretched campanile brick texture replaced with matte brick-colored shaft/pilaster materials. True masonry/weathering, winged-lion relief and photo-calibrated material response remain pending.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "pool-access",
+      "detail": "Main deck18.55m, South Tower34m, Palazzo14.55m are estimates. Official map establishes relative amenities, not measured elevations. Do not invent inter-deck links. Need verified routes and actual walking traversal.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "palazzo-crown-signage",
+      "detail": "Central attic/three oculi/terminal cap accents installed. Complete stepped upper floors, correct front-end vertical lettering and horizontal crown lettering require further work.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "landscape-completeness",
+      "detail": "Palms/planters and one Palazzo domed pavilion installed. Dense shrubs/hedges, additional pavilions, main deck trellises/boundaries and accurate seating layouts remain.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "runtime-evidence",
+      "detail": "Startup verification and sampled collision checks pass, but startup60fps is not a resort benchmark. Full keyboard traversal, matched reference cameras and baseline/after route metrics remain unverified.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "creator-rejection-oct9",
+      "detail": "Supplied comparison exposes simplified canal outline, incomplete and misplaced-looking podium/frontage masses, simplified bridge/campanile and repeated tower facade treatment. Camera positions differ, so no exact scale correction may be inferred from pixel ratios alone. Requires matched-camera reconstruction, not more decoration on inherited shapes. Correction pass now replaces canal plan, adds north frontage and revises tower faces/bridge connection. Installed comparisons still show simplified podium roofs, incomplete grounds, and generic ornamental treatment. Remains open.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "outdoor-water-detail",
+      "detail": "OSM fixes horizontal banks; current metre elevations are functional clearance estimates. Main plaza uses one broad arch rather than a fully reconstructed multi-arch reference section. Underlying terrain remains shallow; no playable boat simulation has been added. Indoor/outdoor gondola networks must remain separate per creator.",
+      "reason": "Retained outside the bounded west-palazzo upper street-facade correction; this pass does not establish whole-resort measured registration, interiors, access or visual acceptance."
+    },
+    {
+      "id": "street-stage-fidelity",
+      "detail": "West palazzo exact pediment, sculpture/relief, paired-column spacing, tenant/banner arrangement and measured overall height remain approximate. Service-wall current treatment also requires newer corroboration.",
+      "reason": "The bounded correction changes upper window topology only; retained map footprint and height are estimates and the reference foreground is partly obscured."
+    }
+  ],
+  "streetStageRefinement20261107": {
+    "status": "verified-bounded-pass",
+    "scope": "way/33996627 west/north upper street-facing stage; adjacent Campanile and other two mapped palazzi preserved",
+    "research": "docs/project-records/venetian-frontage-refinement/research.md",
+    "geometry": "docs/project-records/venetian-frontage-refinement/geometry-audit.json",
+    "preservation": "docs/project-records/venetian-frontage-refinement/preservation-check.json",
+    "before": "docs/project-records/venetian-frontage-refinement/before/results.json",
+    "beforeWalk": "docs/project-records/venetian-frontage-refinement/before-walk/results.json",
+    "decision": "Two short upper tiers replaced by one tall arched glazing stage and oculi. Inherited footprint/height retained; exact pediment/sculpture and measured proportions remain unresolved.",
+    "after": "docs/project-records/venetian-frontage-refinement/after/results.json",
+    "afterWalk": "docs/project-records/venetian-frontage-refinement/after-walk/results.json",
+    "checks": "docs/project-records/venetian-frontage-refinement/local-checks.json",
+    "smoke": "docs/project-records/venetian-frontage-refinement/smoke.json",
+    "performance": "docs/project-records/venetian-frontage-refinement/performance.json",
+    "captures": "docs/project-records/venetian-frontage-refinement/captures.md",
+    "cells": "docs/project-records/venetian-frontage-refinement/cell-preservation.json",
+    "limits": "Street frontage segment only; exact measured dimensions, pediment/sculpture, paired columns, tenants, current service-face evidence and all full-resort gates remain unresolved."
   }
 }

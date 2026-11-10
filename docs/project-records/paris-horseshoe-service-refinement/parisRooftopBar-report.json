@@ -1,0 +1,83 @@
+{
+ "rel": "build/strip-landmarks/parisRooftopBar-exterior.glb",
+ "sourceSha256": "6aa759afe8a6976a53277307647dee2b16a7caf0719b7731cd890cbc820f6bce",
+ "cls": "level",
+ "loader": "src/work/StripLandmarks.ts",
+ "when": "boot",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.466,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> build/strip-landmarks/parisRooftopBar-exterior.glb .bitmagic/optimize/build/strip-landmarks/parisRooftopBar-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": "build/strip-landmarks/parisRooftopBar-exterior.glb",
+  "dst": ".bitmagic/optimize/build/strip-landmarks/parisRooftopBar-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 649728,
+   "triangles": 9546,
+   "vertices": 24016,
+   "nodes": 16,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 633492,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 192916,
+   "triangles": 9546,
+   "vertices": 24016,
+   "nodes": 16,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 417516,
+   "gpuTextures": 0,
+   "textures": [],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "16 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "0 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "446.1 KiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

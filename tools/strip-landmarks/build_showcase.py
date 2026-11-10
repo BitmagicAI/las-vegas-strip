@@ -13,7 +13,7 @@ for g in B.groups.values():
  g['faces']=faces
 print('Removed exact duplicate facade cap faces:',removed)
 B.save_all()
-p=OUT/'venues.json';v=json.loads(p.read_text());v=[x for x in v if x['key']!=KEY];v.append(meta);p.write_text(json.dumps(v,separators=(',',':')))
+p=OUT/'venues.json';v=json.loads(p.read_text());v=[meta if x['key']==KEY else x for x in v];p.write_text(json.dumps(v,separators=(',',':')))
 print(KEY,len(B.groups),'batches',sum(len(g['faces']) for g in B.groups.values()),'triangles')
 
 r=OUT/'replacement-ids.json';ids=set(json.loads(r.read_text()));ids.update(['way/115649938','way/95224290','way/27897909','way/115649937','way/92281772']);r.write_text(json.dumps(sorted(ids)))

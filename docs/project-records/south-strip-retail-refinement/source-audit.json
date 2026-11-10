@@ -1,0 +1,56 @@
+{
+  "harleyDealership": {
+    "changedGroups": [
+      [
+        "harleyDealership-exterior",
+        "podium/dealership",
+        "hd-orange",
+        0
+      ],
+      [
+        "harleyDealership-exterior",
+        "podium/dealership",
+        "hd-red",
+        0
+      ],
+      [
+        "harleyDealership-exterior",
+        "podium/dealership",
+        "hd-cream",
+        0
+      ],
+      [
+        "harleyDealership-exterior",
+        "podium/dealership",
+        "hd-letter",
+        0
+      ]
+    ],
+    "invalidChangedFaces": 0,
+    "collisionByteIdentical": true
+  },
+  "pinballHall": {
+    "changedGroups": [
+      [
+        "pinballHall-exterior",
+        "podium/roadside-sign",
+        "pb-red",
+        0
+      ],
+      [
+        "pinballHall-exterior",
+        "podium/roadside-sign",
+        "pb-yellow",
+        0
+      ],
+      [
+        "pinballHall-exterior",
+        "podium/roadside-sign",
+        "pb-white",
+        0
+      ]
+    ],
+    "invalidChangedFaces": 0,
+    "collisionByteIdentical": true
+  }
+}

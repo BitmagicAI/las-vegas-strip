@@ -1,0 +1,16 @@
+{
+  "typecheck": "PASS",
+  "scopedTests": "PASS 3/3 ground-surface-index, site-lights, city-lazy-lod",
+  "geometry": "PASS21632 finite/nondegenerate/unique added triangles;47oldgroups/99788triangles and labels unchanged",
+  "rebuild": "PASS reusable full-builder detail exactly equals installed source",
+  "collision": "PASS byte-identical authored collision;254 current geographic-cell samples",
+  "optimization": "PASS level then WebP4.58 to1.16MiB;1changedGLB/0unoptimized",
+  "bake": "PASS current;one bake,zero geographic exports",
+  "package": "PASS1924present/0missing/0unoptimized",
+  "recordReview": "PASS active Luxor record; whole-site gaps retained",
+  "publicCheck": "PASS pre-existing inventory email warning only",
+  "views": "Five installed daylight views personally inspected; matching before/after names and cameras",
+  "normalWalk": "PASS6segments existing elevated connector/landing and carport both directions; four endpoint images inspected",
+  "smoke": "PASS9stops zero failed requests/page errors/console errors/unplaced stops",
+  "release": "CDN/published cold-load check belongs to release"
+}

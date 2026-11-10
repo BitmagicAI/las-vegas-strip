@@ -1,0 +1,111 @@
+{
+  "routes": [
+    {
+      "name": "Existing elevated Luxor connector and north landing",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -254,
+            5.24,
+            2088
+          ],
+          "position": {
+            "x": -253.99990844726562,
+            "y": 5.26197078704834,
+            "z": 2087.658203125
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -254,
+            5.24,
+            2118
+          ],
+          "position": {
+            "x": -254.00018310546875,
+            "y": 5.261974601745606,
+            "z": 2117.847412109375
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            -254,
+            5.24,
+            2088
+          ],
+          "position": {
+            "x": -254.00022888183594,
+            "y": 5.27196720123291,
+            "z": 2088.296875
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            -254,
+            5.24,
+            2065
+          ],
+          "position": {
+            "x": -253.99996948242188,
+            "y": 5.271278648376465,
+            "z": 2065.292724609375
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "North arrival carport clearance (not full public circulation)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -150.5,
+            0.24,
+            2120
+          ],
+          "position": {
+            "x": -150.49691772460938,
+            "y": -0.000002415180206327694,
+            "z": 2119.94384765625
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -150.5,
+            0.24,
+            2097
+          ],
+          "position": {
+            "x": -150.503662109375,
+            "y": 0.009987442493438692,
+            "z": 2097.333251953125
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

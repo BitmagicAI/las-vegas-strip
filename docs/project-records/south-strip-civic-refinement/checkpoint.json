@@ -1,0 +1,34 @@
+{
+  "base": "194076cc48995203ff05da6252ca70c897da59bc",
+  "issues": [
+    119,
+    120
+  ],
+  "claims": "Confirmed janiverse; direct self-assignment after posted /claim automation failed to assign. No other assignees existed.",
+  "stage": "Installed local pass verified. All step7 checks passed;91/92cells unchanged, six before/after view pairs inspected,28 actual legs passed each direction set before and after. Draft ready for final push/head verification.",
+  "pending": "Push final own commits; verify GitHub PR head equals local verified HEAD, then ready and guarded --merge into next; close119/120. On backend failure document blocker, /unclaim and pick next. Never merge stale PR head.",
+  "previousBlockedPR": {
+    "pr": 495,
+    "verifiedHead": "d52eef1d8977065b0545596045737961d06556f8",
+    "reason": "GitHub PR API stale head; guarded merge rejected. Issues117/118 documented and /unclaim posted. Do not poll.",
+    "preservedBranch": "task/south-strip-storefront-fuel-refinement"
+  },
+  "runtimeRestore": "Only six own PR495 runtime paths restored; monolithic LOD reassembled from current next cells. Previous installed files and optimizer manifest backed up in build/city-exteriors/storefront-fuel-installed-495. Other 879 working source/runtime differences preserved.",
+  "research": "research.json records Feb2025 Street View, official photos, both satellite layouts, inferred dimensions, paint chronology and deferred discrepancies.",
+  "baselineViews": "build/city-exteriors/{south-central-police,fire-station-11}-refinement-before; all six inspected. Performance saved in baseline-performance.json.",
+  "sourceChecks": "Source builds, Python compile and git diff check passed;598 support/headroom samples and28 independent CPU walk legs passed (source-checks.json). These do not replace installed checks.",
+  "sourceBackup": "build/city-exteriors/civic-source-before preserves four baseline source/collision JSONs.",
+  "baselineWalk": "28/28 actual installed baseline walk legs passed; all four endpoint images inspected. Broad gray ground patches visible in baseline return views remain a preexisting discrepancy, not a geometry-pass success claim.",
+  "localChecks": {
+    "bitmagic check": "passed",
+    "resort-block review": "passed",
+    "sourceBuildCompileDiff": "passed",
+    "supportSamples": 598,
+    "cpuWalkLegs": 28,
+    "actualBaselineWalkLegs": 28
+  },
+  "push": "Source commit20266c1 retained locally. Push rejected GitHub Internal Server Error at2026-11-04T10:32:09Z (requestDED6:52A4F:5A8918:6E0174:6AEB09A7). Continue local verification; do not poll backend. Draft PR496 remains unverified.",
+  "cellAudit": "91/92 cells byte-identical; only cell--1_4.bin changed. Both unowned changed LOD blocks restored to committed bytes.",
+  "checks": "598 support/headroom samples;28 CPUlegs;28actual before+28afterlegs;9 smoke stops with0request/page/console errors. bitmagic check, block review, public scan, optimized GLB2/2, bake current, assetpack1930/1930 all pass. Public scan5warnings:4existing emails and official LVMPD /home URL false positive.",
+  "performance": "Fixed-camera p95: police front+1.6ms,entry+0.5ms,aerial-0.3ms;fire front+0.6ms,entry-0.9ms,aerial0ms. No speedup claimed. Not a route benchmark."
+}

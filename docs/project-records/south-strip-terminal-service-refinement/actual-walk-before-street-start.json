@@ -1,0 +1,36 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "Maverick driveway and entrance forward and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": false,
+          "goal": [
+            63,
+            0.02,
+            4094
+          ],
+          "position": {
+            "x": 47.36964416503906,
+            "y": 0.20833864688873288,
+            "z": 4093.990478515625
+          }
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

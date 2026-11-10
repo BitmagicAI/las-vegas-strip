@@ -1,0 +1,71 @@
+{
+  "accessDate": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://www.littlechapel.com/about/location-tour-and-videos",
+      "observed": "Official text establishes Victorian chapel30 seats and private lobby, Magnolia20, LaCapella80, GlassGardens88. Gazebo garden20 and check-in atVictorian. Branch-specific public areas exist; photographic layout and shell ownership need inspection before interior implementation."
+    },
+    {
+      "url": "https://www.littlechapel.com/las-vegas-wedding-chapels/garden-of-lights",
+      "observed": "Official text describes glass-tiled gazebo under trees, ReflectionFalls/bridge/mirrorpool, Veranda patio andCrystalCanopy. Page partially unresolved template; photo geometry not yet inspected."
+    },
+    {
+      "url": "https://d1e2k0y5soeb94.cloudfront.net/Images/StaticPages/Tour/Chapel-Virtual-Tour.jpg",
+      "observed": "Official tour thumbnail visually inspected: cream pitched-roof street chapel, side arched openings, layered gold-toned trim, ornate iron fence and vegetation. Overlaid tour words obscure some details; undated thumbnail, corroborate currentStreetView."
+    },
+    {
+      "url": "https://d1e2k0y5soeb94.cloudfront.net/images/venues/gol-2_400.webp",
+      "observed": "Fetched for local visual research afterweb MIME rejection. Photo is an enclosed rustic event room with hanging drapes/wood rafters,greenery wall and planted aisle. Do not confuse with exterior gazebo or Victorian chapel."
+    },
+    {
+      "url": "https://d1e2k0y5soeb94.cloudfront.net/images/venues/1241250-1067_400.webp",
+      "observed": "Official gazebo photograph visually inspected: open polygonal pavilion, white square posts, diagonal knee braces, shallow dark shingle hip roof, broad pale/gold fascia, thin level gray platform, white radial rafters; mature pine branches above, hedge behind. Couple/chairs provide approximate scale only. Photo capture date unspecified."
+    },
+    {
+      "url": "https://d1e2k0y5soeb94.cloudfront.net/images/venues/1256153-1097_400.webp",
+      "observed": "Second official gazebo photo confirms open sides, square posts and knee braces, shallow polygonal roof/edge band, uninterrupted floor; nighttime accent illumination not authorization for runtime light changes."
+    },
+    {
+      "url": "https://d1e2k0y5soeb94.cloudfront.net/images/venues/victorian-chapel-las-vegas-weddings-img-1_400.webp",
+      "observed": "Official interior photograph inspected: two wooden pew banks, patterned center aisle, pale draped altar backdrop with swag, paired lecterns, shallow pitched pale ceiling and central chandelier. Exact dimensions, entrance connection and coverage not yet established."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=RoTs-_vb2vU4FO6D9Nreww&heading=80&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Wide and zoomed chapel street view inspected. Cream chapel/tile roof, maturepine, ornamental lowfence and hedge, broad brickcourt. Garden pavilion partlyhidden behindtree."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.15052,-115.15212,87m/data=!3m1!1e3",
+      "imageDate": "Unspecified;copyright2026not capturedate",
+      "observed": "Satellite polygonal roof at eastedge of tree-covered garden behindstreetchapel. Right-click roofcenter36.150576,-115.152458 gives approximate world1847.2,-3849.0. No survey claim. Existing tree trunk nearcenter mustbe adjusted within same model to avoid pavilion."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=2K3Gdkic7dg4bEtxtA43gA&heading=270&pitch=0",
+      "imageDate": "April2018",
+      "observed": "CloseTacosfront:heavyred serif roofletters spanmostfrontage;stripedhood,threewindowbays,vertical1800. Olderstructural evidence only."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=3rl0QKPeolNmXb8zoPcoXA&heading=270&pitch=0",
+      "imageDate": "January2026",
+      "observed": "Acrossroad viewwide/zoom inspected; palmblocks partfront, redhood androofletters visible; too distantforprecisestripe assessment."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=jBpyhxCCGgykOqnP9mF3YA&heading=240&pitch=0",
+      "imageDate": "January2026",
+      "observed": "North roadsidewide/zoom:restaurantfrontbehindglare; strongredhood,lettering and3windows. Awningcolor appearsdarkerthan2018butglare preventsconfidentconditionchange."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.15002,-115.15377,87m/data=!3m1!1e3",
+      "imageDate": "Unspecified",
+      "observed": "Satellite inspected:stripedawningclearon south/east;flat rectangular roof,driveaislenorth andsouth,parkingseparate. Retainstripes pendingdatedclosecurrentevidence."
+    }
+  ],
+  "pending": "Implement original gazebo with estimated4.8m diameter/2.65m eave and3.2m roofpeak; retaintreesexceptone trunk shiftedawayfromroof. Tacosheavyserif signage fit frontage, keepawningconditiondiscrepancy. Interiorlayout/entranceownershipnot established.",
+  "decisions": [
+    "Gazebo center from overhead clickedcoordinate1847.274,-3848.983; diameter4.8,eave2.65,peak3.2m inferred frompeople/roofscale. Open octagon,whiteposts/kneebraces,grayplatform,goldfascia anddarkroof authoredoriginally. No lightingobjects.",
+    "Existing firsttree trunk1847,-3851 shifted to1842,-3852 within existinggarden to avoidnewpavilion; other2trees/sourceCC0foliage unchanged. Tree species stillincorrect.",
+    "Tacos1800rooftext nominalsize.57\u2192.88(front),.54\u2192.70(side),existingTimesNewRomanBold retained. Historicalclosephoto supportsheavierlargerletters; exactcrest remainsmissing.",
+    "CurrentJan2026hood appearsred butglare/distancepreclude solidred repaint; satelliteundatedstillshowsstripes. Keepstripedhood andrecordconflict.",
+    "OfficialVictorianinteriorphoto available butno verifiedentrance/maproomconnection ormeasuredlayout; preserveinteriordeferment forfuturepass."
+  ]
+}

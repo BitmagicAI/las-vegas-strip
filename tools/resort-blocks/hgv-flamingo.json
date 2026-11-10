@@ -23,7 +23,8 @@
     }
   ],
   "remaining": [
-    "Detailed garden planting, pool enclosures/shade, and public circulation unfinished",
+    "Pool fit, .85m raised terrace, three hip-roof pavilions,30 loungers and seven parasols are inferred from imagery; exact positions and dimensions need refinement",
+    "Detailed palm planting, pool enclosure, BBQ/dining and complete connections to public interiors unfinished; available broadleaf foliage models do not match referenced palms",
     "Facade bay/step dimensions visually estimated; side-wing elevations retained from map",
     "Ground-floor doors are geometric apertures, not new working public interiors"
   ],
@@ -61,5 +62,20 @@
     "roofSupport": 69,
     "failures": 0,
     "typecheck": "passed"
+  },
+  "amenityPass": {
+    "status": "verified-scoped-pass",
+    "research": "docs/project-records/waldorf-hgv-amenities/research.json",
+    "geometry": "docs/project-records/waldorf-hgv-amenities/hgv-geometry.json",
+    "preservation": "docs/project-records/waldorf-hgv-amenities/hgvFlamingo-preservation.json",
+    "installedRouteClearance": "docs/project-records/waldorf-hgv-amenities/installed-route-clearance.json",
+    "preview": "build/city-exteriors/hgv-flamingo-amenities-preview",
+    "notes": "All eight grouped final daylight views and16movement endpoints inspected. 520 normal movement segments pass. One grouped bake; all local step7 checks pass. Refined scope only; remaining discrepancies retained.",
+    "walk": "docs/project-records/waldorf-hgv-amenities/walk.json",
+    "movementSegments": 88,
+    "finalViews": "build/city-exteriors/hgv-flamingo-amenities-final",
+    "performance": "docs/project-records/waldorf-hgv-amenities/performance.json",
+    "assetDelta": "docs/project-records/waldorf-hgv-amenities/asset-delta.json",
+    "smoke": "docs/project-records/waldorf-hgv-amenities/smoke.json"
   }
 }

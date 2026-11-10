@@ -1,0 +1,38 @@
+{
+  "chairs": 10,
+  "pergolaBounds": [
+    -1886.0,
+    -131.3,
+    -1877.0,
+    -126.5
+  ],
+  "pergolaClearanceM": 3,
+  "route": [
+    [
+      -1852.5,
+      0.25,
+      -108.0
+    ],
+    [
+      -1896.0,
+      0.25,
+      -108.0
+    ],
+    [
+      -1896.0,
+      0.25,
+      -128.9
+    ],
+    [
+      -1889.0,
+      0.25,
+      -128.9
+    ],
+    [
+      -1881.5,
+      0.25,
+      -128.9
+    ]
+  ],
+  "scope": "Furniture and pergola only; all counts/dimensions inferred. Existing rounded pool differs from lobed reference. Spa, steps, rock feature, palms and indoor breezeway connection remain unimplemented. No complete-site claim."
+}

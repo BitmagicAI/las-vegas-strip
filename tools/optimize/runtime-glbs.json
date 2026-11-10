@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-30T01:02:43.400Z",
- "totalBytes": 3617028616,
- "count": 785,
+ "generated": "2026-11-01T14:07:32.155Z",
+ "totalBytes": 3722013416,
+ "count": 885,
  "notLoaded": [
   "build/hotels/staged-vegas.glb (no HotelTemplates module name)",
   "build/south-strip/liberty-scan.glb (no loader in src/)",
@@ -39,11 +39,830 @@
  ],
  "files": [
   {
-   "rel": "build/geographic-strip/city.glb",
+   "rel": "build/geographic-strip/cells/cell--1_-1.glb",
    "cls": "level",
-   "loader": "src/work/GeographicCity.ts",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
    "when": "boot",
-   "bytes": 346935936,
+   "bytes": 4936252,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_-2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 12426128,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_-3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5034012,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_-4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4345528,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_-5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 2075552,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_-6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 250092,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_0.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 9551660,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 11185244,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 13704848,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5971672,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 7725972,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1850636,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--1_6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 38900,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_-1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5275708,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_-2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 6197984,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_-3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5210612,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_-4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4828324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_-5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 2401656,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_-6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 581560,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_-7.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 26424,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_0.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 13686768,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5956472,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5617028,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 6785580,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 8475096,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--2_5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 367220,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_-1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 993580,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_-2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1131868,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_-3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1121504,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_-4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1562604,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_-5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 895908,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_-6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 274540,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_0.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1446940,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 689980,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1431276,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5353772,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1289264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell--3_5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 54292,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_-1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 7421992,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_-2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 10506880,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_-3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5162800,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_-4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 7080644,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_-5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5061324,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_-6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 481080,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_0.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 7074412,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5869256,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 6014684,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 3749984,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1053372,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 377656,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-0_6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 11412,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_-1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 10162304,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_-2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 38604100,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_-3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5016972,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_-4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4868092,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_-5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5144748,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_-6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 2506340,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_0.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4812624,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4472108,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1529984,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 18164,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 12524,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-1_6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 11336,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_-1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4755928,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_-2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 8397244,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_-3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5258808,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_-4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4530940,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_-5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 3733904,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_-6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 1104776,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_0.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4388136,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 3458600,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 2635264,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 5457504,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 4845204,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 21592,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-2_6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 17892,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_-1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 48280,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_-2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 117156,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_-3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 13696,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_-4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 100516,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_-5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 76008,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_-6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 19020,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_0.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 27828,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_1.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 104224,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_2.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 97348,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_3.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 17300,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_4.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 22424,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-3_6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 17668,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-4_-5.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 20684,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-4_6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 12100,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/cell-5_6.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 12524,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/geographic-strip/cells/base.glb",
+   "cls": "level",
+   "loader": "src/work/GeographicCity.ts (cell migration)",
+   "when": "boot",
+   "bytes": 15532,
    "preset": "level",
    "overrides": []
   },
@@ -61,7 +880,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 35519776,
+   "bytes": 35843956,
    "preset": "level",
    "overrides": []
   },
@@ -79,7 +898,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 8458012,
+   "bytes": 8925336,
    "preset": "level",
    "overrides": []
   },
@@ -115,7 +934,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 101904592,
+   "bytes": 100864676,
    "preset": "level",
    "overrides": []
   },
@@ -187,7 +1006,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 10684220,
+   "bytes": 11355728,
    "preset": "level",
    "overrides": []
   },
@@ -223,7 +1042,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 35431568,
+   "bytes": 40106332,
    "preset": "level",
    "overrides": []
   },
@@ -241,7 +1060,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 10668824,
+   "bytes": 11278480,
    "preset": "level",
    "overrides": []
   },
@@ -286,7 +1105,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3507596,
+   "bytes": 4801188,
    "preset": "level",
    "overrides": []
   },
@@ -295,7 +1114,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1020052,
+   "bytes": 3392752,
    "preset": "level",
    "overrides": []
   },
@@ -304,7 +1123,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 757968,
+   "bytes": 807672,
    "preset": "level",
    "overrides": []
   },
@@ -313,7 +1132,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1530644,
+   "bytes": 2648304,
    "preset": "level",
    "overrides": []
   },
@@ -322,7 +1141,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 6991140,
+   "bytes": 8197084,
    "preset": "level",
    "overrides": []
   },
@@ -331,7 +1150,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 25337656,
+   "bytes": 26460332,
    "preset": "level",
    "overrides": []
   },
@@ -340,7 +1159,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1281072,
+   "bytes": 1840028,
    "preset": "level",
    "overrides": []
   },
@@ -349,7 +1168,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1156236,
+   "bytes": 1894520,
    "preset": "level",
    "overrides": []
   },
@@ -358,7 +1177,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 598092,
+   "bytes": 1006836,
    "preset": "level",
    "overrides": []
   },
@@ -367,7 +1186,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1331628,
+   "bytes": 1796976,
    "preset": "level",
    "overrides": []
   },
@@ -376,7 +1195,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1127948,
+   "bytes": 1538872,
    "preset": "level",
    "overrides": []
   },
@@ -394,7 +1213,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 13000104,
+   "bytes": 13921496,
    "preset": "level",
    "overrides": []
   },
@@ -403,7 +1222,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1162944,
+   "bytes": 1418404,
    "preset": "level",
    "overrides": []
   },
@@ -412,7 +1231,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1910964,
+   "bytes": 2633736,
    "preset": "level",
    "overrides": []
   },
@@ -421,7 +1240,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3745224,
+   "bytes": 5397636,
    "preset": "level",
    "overrides": []
   },
@@ -430,7 +1249,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1698300,
+   "bytes": 2024084,
    "preset": "level",
    "overrides": []
   },
@@ -439,7 +1258,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1294960,
+   "bytes": 1517548,
    "preset": "level",
    "overrides": []
   },
@@ -448,7 +1267,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1311820,
+   "bytes": 2122208,
    "preset": "level",
    "overrides": []
   },
@@ -475,7 +1294,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 5275696,
+   "bytes": 5465852,
    "preset": "level",
    "overrides": []
   },
@@ -484,7 +1303,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 648412,
+   "bytes": 29338684,
    "preset": "level",
    "overrides": []
   },
@@ -511,7 +1330,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 764224,
+   "bytes": 957540,
    "preset": "level",
    "overrides": []
   },
@@ -520,7 +1339,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3322316,
+   "bytes": 3414964,
    "preset": "level",
    "overrides": []
   },
@@ -547,7 +1366,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3200596,
+   "bytes": 3498524,
    "preset": "level",
    "overrides": []
   },
@@ -556,7 +1375,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 9326664,
+   "bytes": 9652920,
    "preset": "level",
    "overrides": []
   },
@@ -565,7 +1384,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3339236,
+   "bytes": 3938460,
    "preset": "level",
    "overrides": []
   },
@@ -601,7 +1420,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 341996,
+   "bytes": 1148480,
    "preset": "level",
    "overrides": []
   },
@@ -628,7 +1447,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 557516,
+   "bytes": 1628948,
    "preset": "level",
    "overrides": []
   },
@@ -637,7 +1456,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 2355440,
+   "bytes": 3219464,
    "preset": "level",
    "overrides": []
   },
@@ -754,7 +1573,16 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 4081876,
+   "bytes": 4077740,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/guardianAngel-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 201460,
    "preset": "level",
    "overrides": []
   },
@@ -790,7 +1618,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 2004716,
+   "bytes": 2572556,
    "preset": "level",
    "overrides": []
   },
@@ -799,7 +1627,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 1671232,
+   "bytes": 2523364,
    "preset": "level",
    "overrides": []
   },
@@ -808,7 +1636,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 20807020,
+   "bytes": 21148392,
    "preset": "level",
    "overrides": []
   },
@@ -817,7 +1645,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 6028248,
+   "bytes": 8053652,
    "preset": "level",
    "overrides": []
   },
@@ -835,7 +1663,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3390076,
+   "bytes": 3723164,
    "preset": "level",
    "overrides": []
   },
@@ -889,7 +1717,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 6031600,
+   "bytes": 6143900,
    "preset": "level",
    "overrides": []
   },
@@ -1339,7 +2167,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3286856,
+   "bytes": 3308860,
    "preset": "level",
    "overrides": []
   },
@@ -1375,7 +2203,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 158056,
+   "bytes": 203012,
    "preset": "level",
    "overrides": []
   },
@@ -1681,7 +2509,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 4216364,
+   "bytes": 5204008,
    "preset": "level",
    "overrides": []
   },
@@ -1717,7 +2545,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3086420,
+   "bytes": 4157096,
    "preset": "level",
    "overrides": []
   },
@@ -1771,7 +2599,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 2572408,
+   "bytes": 3923276,
    "preset": "level",
    "overrides": []
   },
@@ -1816,7 +2644,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 930232,
+   "bytes": 30434532,
    "preset": "level",
    "overrides": []
   },
@@ -1897,7 +2725,7 @@
    "cls": "level",
    "loader": "src/work/StripLandmarks.ts",
    "when": "boot",
-   "bytes": 3662808,
+   "bytes": 3995904,
    "preset": "level",
    "overrides": []
   },
@@ -3337,7 +4165,7 @@
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
    "when": "boot",
-   "bytes": 3192640,
+   "bytes": 3178020,
    "preset": "level",
    "overrides": []
   },
@@ -3355,7 +4183,7 @@
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
    "when": "boot",
-   "bytes": 4044508,
+   "bytes": 3744504,
    "preset": "level",
    "overrides": []
   },
@@ -3373,7 +4201,7 @@
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
    "when": "boot",
-   "bytes": 138665600,
+   "bytes": 139568644,
    "preset": "level",
    "overrides": []
   },
@@ -3463,7 +4291,7 @@
    "cls": "level",
    "loader": "src/work/ResortBlocks.ts -> StripLandmarks",
    "when": "boot",
-   "bytes": 104265984,
+   "bytes": 104670976,
    "preset": "level",
    "overrides": []
   },
@@ -3517,7 +4345,7 @@
    "cls": "level",
    "loader": "src/work/HighriseCity.ts",
    "when": "boot",
-   "bytes": 50895684,
+   "bytes": 51297088,
    "preset": "level",
    "overrides": []
   },
@@ -7100,6 +7928,78 @@
    "loader": "src/work/hotels/HotelTemplates.ts",
    "when": "streamed (hotel shell)",
    "bytes": 192800,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/westwood-2601-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 6695004,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/westwood-2650-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 430916,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/highland-steel-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 556384,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/highland-steel-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 1810492,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/creel-highland-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 138600,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/peppermillRetail-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 1793420,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/flamingoGoPool-exterior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "boot",
+   "bytes": 741776,
+   "preset": "level",
+   "overrides": []
+  },
+  {
+   "rel": "build/strip-landmarks/platinum-interior.glb",
+   "cls": "level",
+   "loader": "src/work/StripLandmarks.ts",
+   "when": "streamed on approach",
+   "bytes": 16392,
    "preset": "level",
    "overrides": []
   }

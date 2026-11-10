@@ -1,0 +1,47 @@
+{
+  "method": "960x540 DPR1 ultra, identical daylight cameras, 900 warmup + 60 settled +180 timed frames; single samples, not driving benchmark or improvement claim",
+  "views": [
+    {
+      "name": "signature-front",
+      "beforeP50": 21.59999990463257,
+      "afterP50": 16.700000047683716,
+      "beforeP95": 25.09999990463257,
+      "afterP95": 18.899999856948853
+    },
+    {
+      "name": "signature-airside",
+      "beforeP50": 18.90000009536743,
+      "afterP50": 16.699999809265137,
+      "beforeP95": 25.40000009536743,
+      "afterP95": 18.799999952316284
+    },
+    {
+      "name": "signature-aerial",
+      "beforeP50": 21.200000047683716,
+      "afterP50": 16.40000009536743,
+      "beforeP95": 25.09999990463257,
+      "afterP95": 19.100000143051147
+    },
+    {
+      "name": "terribles-front",
+      "beforeP50": 54,
+      "afterP50": 16.59999990463257,
+      "beforeP95": 66.39999985694885,
+      "afterP95": 19.5
+    },
+    {
+      "name": "terribles-west",
+      "beforeP50": 20.200000047683716,
+      "afterP50": 16.800000190734863,
+      "beforeP95": 24.200000047683716,
+      "afterP95": 19.299999952316284
+    },
+    {
+      "name": "terribles-aerial",
+      "beforeP50": 39.60000014305115,
+      "afterP50": 16.799999952316284,
+      "beforeP95": 45.69999980926514,
+      "afterP95": 18.299999952316284
+    }
+  ]
+}

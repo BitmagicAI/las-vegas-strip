@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://www.lochsa.com/projects/sky-las-vegas",
+      "inspected": "Text only",
+      "establishes": "Engineer describes integrated low-rise podium with700-car garage, post-tensioned cast-in-place concrete and shear walls. Does not provide garage deck count or height.",
+      "photoLead": "https://cdn.prod.website-files.com/64491f36889bcd7cda9a5860/65733dab0621e68b996153c6_SKY%20Las%20Vegas%20%28004%29.jpg"
+    },
+    {
+      "url": "https://www.mjdeanconstruction.com/project/sky-las-vegas/",
+      "inspected": "Contractor text and linked photo inspected visually; photo shows residential tower, not sufficient garage detail.",
+      "establishes": "Contractor corroborates low-rise700-car structure and2007completion. Does not establish mapped west structure identity.",
+      "photoLead": "https://www.mjdeanconstruction.com/wp-content/uploads/2007/08/sky-tower-1.jpg"
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1409,-115.1621,660a,260d,35y,230h,65t,0r",
+      "inspected": "Rendered oblique personally reviewed, image date not confirmed in this inspection.",
+      "establishes": "Tall open-deck garage with broad beige panels, stepped L roof and raised stair core; central roof divider/ramp visible, precise ramp elevations and connections unresolved."
+    },
+    {
+      "url": "https://earth.google.com/web/@36.1409,-115.1621,660a,260d,35y,50h,65t,0r",
+      "inspected": "Rendered oblique personally reviewed, image date not confirmed in this inspection.",
+      "establishes": "Tall open-deck garage with broad beige panels, stepped L roof and raised stair core; central roof divider/ramp visible, precise ramp elevations and connections unresolved."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1409,-115.1621,20z/data=!3m1!1e3",
+      "inspected": "Aerial personally reviewed; image date unknown.",
+      "establishes": "Roof parking perimeter rows and central double parking row, pale pavement and circulation aisles."
+    }
+  ],
+  "discrepancy": "Both obliques visually corroborate the tall mapped mass. Contractor low-rise wording does not establish a different height. Retain mapped 47m and 15 decks; exact survey dimensions remain unverified.",
+  "scope": "Original central double parking-row markings on both existing broad roof levels. Inferred 2.7m bay width, 4.7m depth, 0.08m painted lines. No reference imagery or meshes copied. Existing collision, roof planes, facade and materials preserved.",
+  "remaining": "Central roof ramp and internal circulation need reliable elevations and connection layout; ground access and solid-panel return seams remain. This paint refinement does not resolve those architectural gaps."
+}

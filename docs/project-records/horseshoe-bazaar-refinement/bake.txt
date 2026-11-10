@@ -1,0 +1,12 @@
+baking the city (inputs changed since 2026-11-07T16:15:17.249Z; 1370 inputs)
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.evaluate: Target page, context or browser has been closed
+    at capture (/Users/janisun/Development/GitFork/vegas-2601-westwood/tools/bake/bake-city.mjs:101:31)
+    at async file:///Users/janisun/Development/GitFork/vegas-2601-westwood/tools/bake/bake-city.mjs:339:7 {
+  log: []
+}
+
+Node.js v25.9.0

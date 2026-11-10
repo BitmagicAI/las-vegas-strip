@@ -23,11 +23,15 @@
       "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14969,-115.15365&heading=270&pitch=0",
       "imageDate": "January2026",
       "observed": "East facade gray/cream panels, black base/red horizontalband, red entry screen toward southern side, mature courtyard trees/stone planter border. South entrance matches2026photo."
+    },
+    {
+      "url": "docs/project-records/dennys-main-refinement/research.json",
+      "observed": "2026-11-04 fresh dated Street View and satellite reference observations; original geometry and inferred dimensions documented."
     }
   ],
   "remaining": [
     "Exact signage lettering, logo shape and facade panel joints need refinement",
-    "Mature courtyard trees and stone planter borders missing",
+    "Three CC0 trees and original gravel/masonry courtyard islands installed; exact species, pruning, planter outlines and utility cabinet remain approximate or deferred pending measured detail",
     "Parking extent, heights and roof equipment are estimates; no interior access in this exterior pass",
     "Glazing and wall material response need closer matching to reference"
   ],
@@ -36,12 +40,15 @@
     "support": "build/city-exteriors/dennys-1822-collision.json",
     "walk": "build/city-exteriors/dennys-1822-walk.json",
     "ownership": "build/city-exteriors/dennys-1822-ownership-audit.json",
-    "visualReview": "Front, east and aerial installed captures inspected. Curved southern facade and eastern red screen present. 348 support samples and 6 walk legs PASS. 2422 authored triangles,16 batches. Static 960x540 p50 16.7ms p95 17.7\u201317.8ms; not driving-route performance evidence."
+    "visualReview": "Front, east and aerial installed captures inspected. Curved southern facade and eastern red screen present. 348 support samples and 6 walk legs PASS. 2422 authored triangles,16 batches. Static 960x540 p50 16.7ms p95 17.7\u201317.8ms; not driving-route performance evidence.",
+    "refinementCheckpoint": "docs/project-records/dennys-main-refinement/checkpoint.md",
+    "refinementViews": "docs/project-records/dennys-main-refinement/views.md",
+    "refinementReview": "2026-11-04 installed six matching daylight pairs and twelve approach/ramp endpoint images inspected across group.1007support samples and18CPU/18actual matched legs passed. Warm p95 deltas0\u20137.2%; no >10% regression. Full-site gaps retained; six supplemental courtyard crossing/return legs also passed, both endpoint images inspected."
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/dennys1822-exterior.glb": "2a92631a329137de8fba6bc41a464b2622f4ab04bc650a0981dde5c2c8ab8271",
-      "build/strip-landmarks/dennys1822-exterior-collision.json": "3bd4cbd3c96e17939049374fe1442a89ee880a1836a4ab1d2650f190e1e94abc"
+      "build/strip-landmarks/dennys1822-exterior.glb": "cb7b72afc36bfd22a980ed77ecc3cb4e954ddc91112ec4b436d549ba3d97dbbc",
+      "build/strip-landmarks/dennys1822-exterior-collision.json": "98271eb023b5c42aa4af7ec50359c6229865b537bd95734c169d9caeb865b7e5"
     }
   }
 }

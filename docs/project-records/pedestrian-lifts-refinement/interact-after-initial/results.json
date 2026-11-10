@@ -1,0 +1,114 @@
+[
+  {
+    "key": "cosmoPedestrianLift",
+    "upper": {
+      "x": -53.380001068115234,
+      "y": 6.024999885559082,
+      "z": 742.1890258789062
+    },
+    "lower": {
+      "x": -53.380001068115234,
+      "y": 0.16999998569488523,
+      "z": 742.1890258789062
+    },
+    "doors": 4,
+    "open": true,
+    "closed": true,
+    "blocked": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "openBlocked": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "key": "crystalsPedestrianLift",
+    "upper": {
+      "x": -39.11399841308594,
+      "y": 6.024999885559082,
+      "z": 847.280029296875
+    },
+    "lower": {
+      "x": -39.11399841308594,
+      "y": 0.16999998569488523,
+      "z": 847.280029296875
+    },
+    "doors": 4,
+    "open": true,
+    "closed": true,
+    "blocked": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "openBlocked": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "key": "parkPedestrianLift",
+    "upper": {
+      "x": -30.173999786376953,
+      "y": 6.024999885559082,
+      "z": 1291.821044921875
+    },
+    "lower": {
+      "x": -30.173999786376953,
+      "y": 0.16999998569488523,
+      "z": 1291.821044921875
+    },
+    "doors": 4,
+    "open": true,
+    "closed": true,
+    "blocked": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "openBlocked": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "key": "harmonEastLift",
+    "upper": {
+      "x": 66.98200225830078,
+      "y": 6.024999885559082,
+      "z": 896.4400024414062
+    },
+    "lower": {
+      "x": 66.98200225830078,
+      "y": 0.16999998569488523,
+      "z": 896.4400024414062
+    },
+    "doors": 4,
+    "open": true,
+    "closed": true,
+    "blocked": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "openBlocked": [
+      false,
+      false,
+      false,
+      false
+    ]
+  }
+]

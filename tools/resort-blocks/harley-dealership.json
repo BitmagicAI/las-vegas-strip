@@ -49,5 +49,17 @@
       "build/strip-landmarks/harleyDealership-exterior.glb": "1cdf43c82680b8a317079feab7513e9c0be719dd53e56bea148730f4d60f3c31",
       "build/strip-landmarks/harleyDealership-exterior-collision.json": "6e3850b49dc8cfcffb66a98516e4ea6de3a107ef36377064ccd95d0f7f6ce5a2"
     }
+  },
+  "refinement20261104": {
+    "status": "verified-scoped-refinement",
+    "pr": 489,
+    "record": "docs/project-records/south-strip-retail-refinement",
+    "scope": "Original diamond welcome plate, seven letter medallions and starburst on north facade; south wing geometry retained.",
+    "dimensions": "Sign plate dimensions inferred from linked photographs; not surveyed. Mapped footprints and building heights unchanged.",
+    "preservation": "Source collision byte-identical; no roads, interiors, runtime code or lighting changes.",
+    "remaining": "All existing discrepancies retained; sign refinement is not whole-site completion.",
+    "validation": "Four front-first neutral daylight cameras compared with identical before cameras; forecourt six forward/return segments passed before and after. No interior access claim.",
+    "runtimeSha256": "d6cd390dd7f06d7b35f1226ca17600220faff61efceeda7a1e63fb7317038aae",
+    "checks": "All step7 local checks passed; smoke9stops0errors;91/92cells unchanged. Remaining full-site discrepancies retained."
   }
 }

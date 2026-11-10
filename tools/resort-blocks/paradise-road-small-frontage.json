@@ -43,18 +43,18 @@
     }
   ],
   "remaining": [
-    "Red storefront mural not recreated; brand-specific graphics and exact lettering incomplete",
-    "Shop door/window positions and rooftop equipment estimated; rear facades less well referenced",
-    "North garden screen, mature landscaping, detailed paving wear and roadside furnishings unfinished",
-    "Neutral-daylight comparison and moving-route benchmark not yet recorded"
+    "Red storefront mural not recreated; original artwork/brand-specific graphics and exact lettering remain unsupported by redistributable source assets.",
+    "Door/window positions, rooftop equipment and rear facades remain estimates; latest February2026chapel view does not corroborate existing ChapelExpress sign and exact cladding.",
+    "Northern screen added with estimated geometry; mature landscaping, paving wear, roadside furnishings and exact screen/gate details remain unverified.",
+    "No full moving-vehicle benchmark or supported public interior plans; this pass validates pedestrian approaches and matching neutral daylight cameras."
   ],
   "uncertainDimensions": [
     "Mapped plans retained; roof heights/pitches, storefront bay widths and mechanical equipment positions estimated from street imagery.",
     "Business names on ambiguous parcels omitted rather than assigned inaccurately. Vacant intervening lots remain vacant."
   ],
-  "triangles": 12903,
+  "triangles": 19599,
   "batches": 27,
-  "optimizedMiB": 0.64,
+  "optimizedMiB": 0.835,
   "viewsInspected": [
     "build/city-exteriors/paradise-road-small-frontage-final/paradise-north.png",
     "build/city-exteriors/paradise-road-small-frontage-final/paradise-chapel.png",
@@ -179,8 +179,34 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/paradiseSmallFrontage-exterior.glb": "8541db8033bdb4140cb4839bb2a5ca57ae4c3a9d96330f7c1bdd26546d421ee3",
-      "build/strip-landmarks/paradiseSmallFrontage-exterior-collision.json": "527ef4b70f276ab7d39cb0bd4de2e7982c3bc43d72a87702be21960a3fb7004e"
+      "runtime-assets/strip-landmarks/paradiseSmallFrontage-exterior.glb": "43739e9a5b88ea8bd3ce8352816a7d2b929ac046d5609dde97921390fcdf6579",
+      "runtime-assets/strip-landmarks/paradiseSmallFrontage-exterior-collision.bin": "ef443681458f415391d7ed27faf7be30182af71298213588734082879bcad9ca"
     }
+  },
+  "refinement20261106": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/paradise-frontage-refinement/checkpoint.md",
+    "sources": "docs/project-records/paradise-frontage-refinement/references.md",
+    "baseline": "docs/project-records/paradise-frontage-refinement/performance-before.json",
+    "actualBaseline": "docs/project-records/paradise-frontage-refinement/walk-before.json",
+    "sourceAudit": "docs/project-records/paradise-frontage-refinement/source-audit.json",
+    "changes": {
+      "way/986507542": "Perforated white garden screen with existing entrance gap; shallow roof courses.",
+      "way/986507541": "Shallow roof courses; brick facade and entrance retained.",
+      "way/986507532": "Retained unchanged; latest reference does not corroborate existing chapel sign.",
+      "way/969288406": "Retained unchanged; exact pale masonry remains unfinished.",
+      "way/969288402": "Shallow roof courses; original red facade retained without copied mural.",
+      "way/969288399": "Shallow roof courses; existing storefront retained.",
+      "way/969288398": "Retained unchanged.",
+      "way/969288397": "Widened projecting awning across storefront; entrance retained."
+    },
+    "checks": "docs/project-records/paradise-frontage-refinement/local-checks.json",
+    "cellPreservation": "docs/project-records/paradise-frontage-refinement/cell-delta.json",
+    "performance": "docs/project-records/paradise-frontage-refinement/performance-comparison.json",
+    "visualReview": "All nine matched daylight views inspected: perforated screen and clear gate visible, shallow courses retained, southern awning spans storefront. Existing simplified facades and unsupported chapel sign remain discrepancies.",
+    "actualFinal": "docs/project-records/paradise-frontage-refinement/walk-after.json",
+    "walkReview": "All 16 final endpoint/return images inspected. Eight routes and 32 legs passed. Endpoint images show close opaque exterior door surfaces; no interior access claim.",
+    "smoke": "docs/project-records/paradise-frontage-refinement/smoke.json",
+    "review": "docs/project-records/paradise-frontage-refinement/review.md"
   }
 }

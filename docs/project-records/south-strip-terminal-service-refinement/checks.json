@@ -1,0 +1,34 @@
+{
+  "typecheck": "passed",
+  "cpuRapier": {
+    "maverick": 10,
+    "southShell": 12,
+    "result": "passed"
+  },
+  "supportHeadroom": {
+    "maverick": 75,
+    "southShell": 44,
+    "result": "passed"
+  },
+  "actualWalk": {
+    "segments": 22,
+    "result": "passed",
+    "endpointImagesInspected": 4
+  },
+  "matchingViews": {
+    "count": 6,
+    "result": "all before/after images inspected",
+    "cameraEquality": "asserted"
+  },
+  "sourceAudit": "no new invalid faces",
+  "optimization": "both level and WebP passes; installed before captures",
+  "archive": "1965 evidence/reference files preserved locally",
+  "pending": [],
+  "sharedBake": "passed; one bake, unrelated Gold Coast/Wyndham LOD bytes restored",
+  "cellAudit": "90 of92 cells byte-identical; only0_3 and0_5 changed",
+  "assetPack": "1930present,0missing,0not optimized",
+  "runtimeOptimizer": "2changedGLBschecked,0not optimized",
+  "blockReview": "289recordsvalid",
+  "publicCheck": "0failures,4existingwarnings",
+  "smoke": "9stops placed;0failed requests,page errors,console errors"
+}

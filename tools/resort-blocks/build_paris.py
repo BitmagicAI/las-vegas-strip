@@ -242,3 +242,10 @@ print('Paris:',len(b.groups),'material/cell batches',sum(len(g['faces']) for g i
 # Retain ownership boundary with the separately authored mapped rooftop pavilion.
 import runpy
 runpy.run_path('tools/resort-blocks/trim-paris-rooftop-bar.py')
+
+# Keep the independently authored vault coffers after the existing ownership trim.
+from patch_paris_arc_coffers import patch as patch_arc_coffers
+arc_path = OUT / 'parisBlock-exterior.json'
+arc_data, arc_audit = patch_arc_coffers(json.loads(arc_path.read_text()))
+arc_path.write_text(json.dumps(arc_data, separators=(',', ':')))
+(OUT / 'arc-coffer-audit.json').write_text(json.dumps(arc_audit, indent=2) + '\n')

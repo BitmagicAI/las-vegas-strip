@@ -52,5 +52,13 @@
     "typecheck": "passed",
     "localWebGPU": "passed56fps spawn3011bodies; not route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-sky-garage.log"
+  },
+  "refinement20261103": {
+    "scope": "Central double parking rows on existing roof levels; original 40-triangle addition to existing paint batch. No new materials, lights or colliders.",
+    "research": "docs/project-records/sky-garage-refinement/research.json",
+    "review": "docs/project-records/sky-garage-refinement/installed-review.json",
+    "walk": "Eight actual roof walking segments and207 support samples passed; no internal ramp or entrance route assertion.",
+    "performance": "Matching four views baseline P9518.7/20.2/19/19.2ms, installed19.3/19.9/17.5/19.7ms. No speedup claim.",
+    "remainingReasons": "Internal ramps, central roof ramp and ground access need surveyed connection elevations/layouts; existing panel-return seams retained for a structural facade pass. Full circulation performance remains untested."
   }
 }

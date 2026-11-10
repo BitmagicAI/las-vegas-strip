@@ -17,9 +17,10 @@
     }
   ],
   "remaining": [
-    "Rear facade was obscured in reference and remains inferred",
-    "Roof shingle texture, landscaping, address-specific details and furniture remain incomplete",
-    "No interior, neutral-daylight comparison or moving-route performance validation"
+    "Rear facade and roof remain inferred because the January2026street reference obscures them; retained unchanged.",
+    "Front roof courses added, but exact shingle texture, dark security door, landscaping, address-specific details and furniture remain incomplete; no sufficient dimensions or close architectural references.",
+    "No interior: residential plans/access are unsupported. No full moving-route performance benchmark; daylight and pedestrian approaches verified.",
+    "Performance varies: first final front/roof p95 24.8/24.4ms versus17.7/17.8baseline; same-camera repeat17.9/18.0ms. Rear36.7baseline,23.5firstfinal,21.3repeat. All results retained; no speedup claim or full driving benchmark."
   ],
   "triangles": 1172,
   "batches": 14,
@@ -106,8 +107,22 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/casinoCenter1512-exterior.glb": "a9b43cc528f0ca8a2b962fd8e0ba23ceefb913250c06d2b526f53c73fa5646d5",
-      "build/strip-landmarks/casinoCenter1512-exterior-collision.json": "83bb3c63ac27968c079bba818598c4686c4715afda2af4eb695a8a5bc9905e5e"
+      "runtime-assets/strip-landmarks/casinoCenter1512-exterior.glb": "bc70dfed0403b029a41f165b382bdcfd8d15c3dbe8f423097c3a6bed6ea58c6a",
+      "runtime-assets/strip-landmarks/casinoCenter1512-exterior-collision.bin": "e2c189890d07d9df281dbab6d1b1d30f5bbd5f0c143bf9ade2e1fd552d815de2"
     }
+  },
+  "refinement20261106": {
+    "status": "reviewed",
+    "record": "docs/project-records/main-wyoming-refinement/checkpoint.md",
+    "references": "docs/project-records/main-wyoming-refinement/references.md",
+    "baseline": "docs/project-records/main-wyoming-refinement/performance-before.json",
+    "baselineActualWalk": "docs/project-records/main-wyoming-refinement/walk-before.json",
+    "changed": "Street cottage roof ridge rotated parallel to street; door/window and fence gap/lawn order corrected; original roof courses added. Rear cottage preserved.",
+    "actualWalk": "docs/project-records/main-wyoming-refinement/walk-after.json",
+    "performance": "docs/project-records/main-wyoming-refinement/performance-comparison.json",
+    "smoke": "docs/project-records/main-wyoming-refinement/smoke.json",
+    "checks": "docs/project-records/main-wyoming-refinement/local-checks.json",
+    "cells": "docs/project-records/main-wyoming-refinement/cell-delta.json",
+    "performanceRepeat": "docs/project-records/main-wyoming-refinement/performance-after-repeat.json"
   }
 }

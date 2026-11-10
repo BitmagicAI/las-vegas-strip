@@ -33,15 +33,17 @@
     "Exact door and window positions, roof pitch and mechanical dimensions are estimates",
     "Chainlink fencing represented by coarser metal bars; lawns need richer ground texture and planting",
     "Side and rear drives/yards need further detail; no parked vehicles or household clutter",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "Private residential interiors remain out of scope; full driving benchmark deferred. Neutral daylight and exterior approach review recorded in weldon-homes-refinement; close door endpoints do not demonstrate entry.",
+    "1814 window proportions are inferred from January2026 street imagery; exact surveyed sizes, remaining household-specific doors/windows and north duplex subdivision still need refinement."
   ],
-  "triangles": 10400,
+  "triangles": 10120,
   "batches": 26,
-  "optimizedMiB": 12.08,
+  "optimizedMiB": 12.07,
   "metricScope": "Authored triangles exclude two existing CC0 tree instances",
   "tests": [
     "633 roof support samples PASS after placeholder removal",
-    "20 entrance approach legs in both directions PASS"
+    "20 entrance approach legs in both directions PASS",
+    "2026-11-06: step7 local checks PASS; matched neutral-daylight4views and installed keyboard approach/return 20legs before/after PASS;9-stop dev smoke PASS. Scope and limitations in docs/project-records/weldon-homes-refinement."
   ],
   "viewsInspected": [
     "build/city-exteriors/weldon-west-final/weldon-west-north.png",
@@ -145,5 +147,20 @@
       "build/strip-landmarks/weldonWest-exterior-collision.json": "320cf98a953d192207f9ece2d608be79a9366cfa9d350c90e4063930c7cb270b"
     }
   },
-  "sidewalkApproachReview": "Full approach from sidewalk-side gate to door and back passed; logs /tmp/weldon_west-approach.log."
+  "sidewalkApproachReview": "Full approach from sidewalk-side gate to door and back passed; logs /tmp/weldon_west-approach.log.",
+  "refinementPass": {
+    "date": "2026-11-06",
+    "record": "docs/project-records/weldon-homes-refinement",
+    "scope": "Third west house high horizontal front windows; remove unsupported window awnings. Other four houses unchanged.",
+    "status": "verified-scoped-pass",
+    "collisionUnchanged": true,
+    "baselineSupportSamples": 633,
+    "baselineCpuLegs": 20,
+    "baselineActualLegs": 20,
+    "baselineViews": 4,
+    "actualLegsAfter": 20,
+    "viewsAfter": 4,
+    "smokeStops": 9,
+    "performanceReport": "docs/project-records/weldon-homes-refinement/performance.json"
+  }
 }

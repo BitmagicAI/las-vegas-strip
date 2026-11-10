@@ -1,0 +1,147 @@
+{
+  "method": "Same fixed 960x540 ultra neutral daylight cameras, 900 warmup + streaming idle + 60 settle + 180 timed frames. Serial browser runs; original control substitutes prior optimized GLB and cell in browser only with request-hit assertions.",
+  "samples": {
+    "before": [
+      {
+        "name": "venetian-palazzo-west-front",
+        "eye": [
+          85,
+          7,
+          -586
+        ],
+        "target": [
+          147,
+          8,
+          -585
+        ],
+        "p50": 16.800000190734863,
+        "p95": 18.199999809265137
+      },
+      {
+        "name": "venetian-palazzo-north",
+        "eye": [
+          122,
+          9,
+          -642
+        ],
+        "target": [
+          165,
+          8,
+          -593
+        ],
+        "p50": 41.59999990463257,
+        "p95": 45.39999985694885
+      },
+      {
+        "name": "venetian-campanile-context",
+        "eye": [
+          90,
+          28,
+          -657
+        ],
+        "target": [
+          151,
+          38,
+          -605
+        ],
+        "p50": 22.59999990463257,
+        "p95": 25.700000047683716
+      }
+    ],
+    "after": [
+      {
+        "name": "venetian-palazzo-west-front",
+        "eye": [
+          85,
+          7,
+          -586
+        ],
+        "target": [
+          147,
+          8,
+          -585
+        ],
+        "p50": 17.700000047683716,
+        "p95": 22.09999990463257
+      },
+      {
+        "name": "venetian-palazzo-north",
+        "eye": [
+          122,
+          9,
+          -642
+        ],
+        "target": [
+          165,
+          8,
+          -593
+        ],
+        "p50": 42.200000047683716,
+        "p95": 48.69999980926514
+      },
+      {
+        "name": "venetian-campanile-context",
+        "eye": [
+          90,
+          28,
+          -657
+        ],
+        "target": [
+          151,
+          38,
+          -605
+        ],
+        "p50": 25.09999990463257,
+        "p95": 32.80000019073486
+      }
+    ],
+    "control-original": [
+      {
+        "name": "venetian-palazzo-west-front",
+        "eye": [
+          85,
+          7,
+          -586
+        ],
+        "target": [
+          147,
+          8,
+          -585
+        ],
+        "p50": 17.700000047683716,
+        "p95": 20.09999990463257
+      },
+      {
+        "name": "venetian-palazzo-north",
+        "eye": [
+          122,
+          9,
+          -642
+        ],
+        "target": [
+          165,
+          8,
+          -593
+        ],
+        "p50": 42.700000047683716,
+        "p95": 64.10000014305115
+      },
+      {
+        "name": "venetian-campanile-context",
+        "eye": [
+          90,
+          28,
+          -657
+        ],
+        "target": [
+          151,
+          38,
+          -605
+        ],
+        "p50": 24.90000009536743,
+        "p95": 28
+      }
+    ]
+  },
+  "assessment": "Installed vs contemporary original control median ms: 17.7 vs17.7 front,42.2 vs42.7 north,25.1 vs24.9 context. Tail ms:22.1 vs20.1,48.7 vs64.1,32.8 vs28.0. Mixed tail differences and comparable medians do not establish a persistent geometry-related slowdown or a performance improvement. North/context remain below60fps; no60fps or statistically established speedup claim."
+}

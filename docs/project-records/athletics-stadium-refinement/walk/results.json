@@ -1,0 +1,64 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "perimeter ground loop (road crossings included)",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            240,
+            0.18,
+            1695
+          ],
+          "position": {
+            "x": 240.11929321289062,
+            "y": 0.15162709236145017,
+            "z": 1695.000244140625
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            451,
+            0.18,
+            1695
+          ],
+          "position": {
+            "x": 451.0799865722656,
+            "y": 0.15650656700134274,
+            "z": 1695.0001220703125
+          }
+        },
+        {
+          "segment": 3,
+          "reached": false,
+          "goal": [
+            451,
+            0.18,
+            1900
+          ],
+          "position": {
+            "x": 451.92425537109375,
+            "y": -0.009996087551116972,
+            "z": 1735.010498046875
+          }
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "resident": {
+    "landmarks": [],
+    "resorts": [],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

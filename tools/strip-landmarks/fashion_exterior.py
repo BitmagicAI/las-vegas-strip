@@ -10,6 +10,43 @@ def glass(F,u,lo,hi,w):
  for x in np.arange(u-w/2,u+w/2+.01,1.5):F.box('fs-metal',(x,(lo+hi)/2,-.32),(.065,hi-lo,.10))
  for y in np.arange(lo,hi+.1,2.8):F.box('fs-metal',(u,y,-.34),(w,.065,.1))
 
+def raked_glass(F,L,h,p):
+ # Miter adjacent panels so the inferred 2.2m rake stays continuous at bends.
+ lo=.8;hi=h-.4
+ ring=list(p.exterior.coords)[:-1]
+ def corner(x):
+  q=F.p(x,0,0);i=min(range(len(ring)),key=lambda i:math.hypot(ring[i][0]-q[0],ring[i][1]-q[2]));v=ring[i]
+  assert math.hypot(v[0]-q[0],v[1]-q[2])<.1, 'Facade endpoint is not an original perimeter vertex'
+  normals=[]
+  for a,b in [(ring[i-1],v),(v,ring[(i+1)%len(ring)])]:
+   dx,dz=b[0]-a[0],b[1]-a[1];ll=math.hypot(dx,dz);nx,nz=-dz/ll,dx/ll
+   if p.contains(Point((a[0]+b[0])/2+nx*.1,(a[1]+b[1])/2+nz*.1)):nx,nz=-nx,-nz
+   normals.append((nx,nz))
+  n,m=normals;den=1+n[0]*m[0]+n[1]*m[1]
+  assert den>.1,'Acute facade corner requires explicit join'
+  return v,((n[0]+m[0])/den,(n[1]+m[1])/den)
+ ends=[corner(0),corner(L)]
+ def point(x,y,extra=0):
+  t=x/L;d=.25+2.2*(y-lo)/(hi-lo)+extra
+  a,n=ends[0];b,m=ends[1]
+  return (a[0]*(1-t)+b[0]*t+d*(n[0]*(1-t)+m[0]*t),y,a[1]*(1-t)+b[1]*t+d*(n[1]*(1-t)+m[1]*t))
+ if not hasattr(F.b,'fashion_clearance'):F.b.fashion_clearance=[]
+ for x in np.linspace(.75,L-.75,max(2,math.ceil(L/2))):
+  F.b.fashion_clearance.append(dict(skin=point(float(x),1.3),outside=point(float(x),1.3,.8)))
+ xs=np.linspace(0,L,max(2,math.ceil(L/1.5)+1))
+ for a,b in zip(xs,xs[1:]):F.b.face('fs-glass',[point(a,lo),point(a,hi),point(b,hi),point(b,lo)],True)
+ for x in xs:F.b.tube('fs-metal',point(x,lo,.08),point(x,hi,.08),.045,6)
+ for y in np.arange(lo,hi+.1,2.8):F.b.tube('fs-metal',point(0,y,.1),point(L,y,.1),.045,6)
+ for y in [6.8,12.4]:
+  F.b.face('fs-metal',[point(0,y-.225,.15),point(0,y+.225,.15),point(L,y+.225,.15),point(L,y-.225,.15)])
+ # Broad closed soffit follows the same miter, avoiding overlapping box wedges.
+ outer=[point(0,hi,.8),point(L,hi,.8)];inner=[point(0,hi,-2.45),point(L,hi,-2.45)]
+ cap=Polygon([(v[0],v[2]) for v in [inner[0],inner[1],outer[1],outer[0]]]);F.b.extrude('fs-stone',cap,h,h+.24,True)
+ # Close the terminal return to the retained original shell; shared joins coincide.
+ for x in [0,L]:
+  v,_=ends[0 if x==0 else 1]
+  F.b.face('fs-glass',[(v[0],lo,v[1]),(v[0],hi,v[1]),point(x,hi),point(x,lo)],True)
+
 def exterior(B,p,F,glazed):
  interior=(F.poly([(-21.9,.3),(21.9,.3),(21.9,108),(-21.9,108)]),16.4)
  # Each anchor has its own height/finish; clipped to the mapped mall footprint.
@@ -35,8 +72,11 @@ def exterior(B,p,F,glazed):
     J.box('fs-stone',(L/2,h+.3,-.02),(L,.6,.3))
     J.box('fs-joint',(L/2,.65,-.10),(L,.12,.06))
     if east:
-     glass(J,L/2,.8,h-.4,max(.2,L-.2))
-     for y in [6.8,12.4]:J.box('fs-metal',(L/2,y,-.42),(L,.45,.8))
+     if mid.y < -1240 and L>1:
+      raked_glass(J,L,h,p)
+     else:
+      glass(J,L/2,.8,h-.4,max(.2,L-.2))
+      for y in [6.8,12.4]:J.box('fs-metal',(L/2,y,-.42),(L,.45,.8))
     else:
      for y in np.arange(2.4,h,2.4):J.box('fs-joint',(L/2,y,-.035),(L,.022,.045))
      for u in np.arange(1.2,L,2.4):J.box('fs-joint',(u,h/2,-.035),(.022,h,.045))

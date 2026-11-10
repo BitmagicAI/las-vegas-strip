@@ -1,0 +1,16 @@
+{
+  "review": "All four installed PNGs inspected. REJECTED Bonanza upper arc: individual characters placed in reversed order because facade local x is opposite label reading direction. Fix by negating arc x while retaining glyph roll. Walgreens cursive too small in broad view: increase size to2.5 and lower baseline3.75, add matched close view. Other three building geometry unchanged.",
+  "initialP95ms": [
+    19.2,
+    19.2,
+    18,
+    19.4
+  ],
+  "baselineP95ms": [
+    19,
+    19,
+    18.7,
+    19.3
+  ],
+  "pending": "Inspect corrected images; no visual pass claimed yet."
+}

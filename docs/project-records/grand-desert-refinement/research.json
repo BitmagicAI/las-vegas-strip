@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-03",
+  "references": [
+    {
+      "url": "https://earth.google.com/web/@36.1068,-115.1617,700a,350d,35y,0h,0t,0r",
+      "inspected": true,
+      "imageryFooter": "2/3/2026",
+      "observations": "Two pools in northern half of eastern courtyard: west freeform elongated basin, east straight-sided long basin. Third small pool immediately east of detached west tower. Garden occupies southern court. Existing two ovals do not represent layout."
+    },
+    {
+      "url": "https://www.mjdeanconstruction.com/project/wyndham-grand-desert-resort/",
+      "textRead": true,
+      "observations": "Constructor confirms one12-story and two15-story towers, three outdoor pools and four hot tubs. Does not establish exact individual heights."
+    },
+    {
+      "url": "https://www.mjdeanconstruction.com/wp-content/uploads/2005/08/Grand_20Desert_20CW_20AM_20031_S.jpg",
+      "inspected": true,
+      "observations": "Contractor photo shows long straight-sided pool with inset curved corners and neighboring waisted freeform basin, warm paving with red bands, cabanas, palms and raised garden walls. Photo date unverified; source imagery linked only."
+    },
+    {
+      "url": "https://clubwyndham.wyndhamdestinations.com/us/en/resorts/wyndham-hotels-resorts/united-states-of-america/nevada/las-vegas/club-wyndham-grand-desert",
+      "textRead": true,
+      "observations": "Operator confirms three towers, courtyard, outdoor adult/children/lap pool amenities and cabanas. Not used to assign exact dimensions."
+    }
+  ],
+  "decisions": [
+    "Correct original pool plans and placement using reference-supported types, retain existing towers/roads/interiors. Dimensions inferred against mapped court, not surveyed.",
+    "Add separate small pool east of west tower after capturing missing baseline view. Keep landscaping, four hot tubs, furniture, exact height assignment and ground public connections as unresolved."
+  ],
+  "estimatedPoolPlans": [
+    {
+      "name": "courtyard freeform",
+      "center": [
+        1056,
+        974
+      ],
+      "extent": "about15x29m"
+    },
+    {
+      "name": "courtyard lap",
+      "center": [
+        1085,
+        977
+      ],
+      "extent": "14x27m"
+    },
+    {
+      "name": "west tower pool",
+      "center": [
+        976,
+        1044
+      ],
+      "extent": "16x9m"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# Generated local evidence
+
+Only locally generated game captures; external references linked in references.md.
+
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/bali-aerial.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/bali-arrival.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/bali-service-east.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/bali-service-roof.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/bali-service-yard.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/bali-terrace.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/church-aerial.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/church-front-wide.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/church-front.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/church-office.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/after/church-sign.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/bali-aerial.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/bali-arrival.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/bali-service-east.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/bali-service-roof.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/bali-service-yard.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/bali-terrace.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/church-aerial.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/church-front-wide.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/church-front.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before/church-office.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/before-sign/church-sign.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/bali-aerial.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/bali-arrival.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/bali-service-east.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/bali-service-roof.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/bali-service-yard.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/bali-terrace.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/church-aerial.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/church-front-wide.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/church-front.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/church-office.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/candidate/church-sign.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-after/walk-endpoint-0.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-after/walk-endpoint-1.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-after/walk-endpoint-2.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-after/walk-return-0.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-after/walk-return-1.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-after/walk-return-2.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-before/walk-endpoint-0.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-before/walk-endpoint-1.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-before/walk-endpoint-2.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-before/walk-return-0.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-before/walk-return-1.png
+- https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/bali-chapel-refinement/walk-before/walk-return-2.png

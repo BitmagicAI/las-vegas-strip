@@ -25,8 +25,11 @@ def exterior(B):
    G.box('hs-red-fascia-paint' if idx in [2,3] else 'rpw-fascia-paint',(ll/2,2.97,-.12),(ll,.17,.46));G.box('rpw-plinth-paint',(ll/2,.31,-.025),(ll,.26,.08))
    if G is F:
     for u in [ll*.22,ll*.79]:
-     if False:
-      G.box('rpw-frame-paint',(u,2.15,-.07),(min(3.8,ll*.35),.65,.12));G.box('rpw-glass',(u,2.15,-.15),(min(3.6,ll*.33),.49,.04))
+     # Jan 2026 middle frontage: high horizontal windows beneath the eaves.
+     if idx==2:
+      ww=min(3.6,ll*.33)
+      G.box('rpw-frame-paint',(u,2.40,-.07),(ww+.16,.65,.12));G.box('rpw-glass',(u,2.40,-.15),(ww,.49,.04))
+      for offset in [-ww/6,ww/6]:G.box('rpw-frame-paint',(u+offset,2.40,-.18),(.045,.49,.03))
      else:
       ww=min(2.1,ll*.24);window(G,u,w=ww)
       for bu in np.arange(u-ww/2+.12,u+ww/2,.22):G.box('rpw-hardware-paint',(float(bu),1.65,-.23),(.022,1.16,.025))
@@ -36,9 +39,6 @@ def exterior(B):
     G.box('rpw-awning-paint',(du,2.61,-.8),(2.1,.10,1.6));
     for u in [du-.95,du+.95]:G.box('rpw-post-paint',(u,1.4,-1.5),(.07,2.44,.07),True)
     G.box('rpw-concrete',(du,.10,-.9),(2.2,.16,1.8),True)
-    if idx in [2,6,9]:
-     for u in [ll*.22,ll*.79]:
-      B.face('rpw-awning-paint',[G.p(u-1.12,2.42,-.05),G.p(u+1.12,2.42,-.05),G.p(u+1.12,2.15,-.7),G.p(u-1.12,2.15,-.7)])
    elif nx>.6 and ll>3.3:
     # A second short east edge at the recessed L serves the garage.
     G.box('rpw-garage-trim-paint',(ll/2,1.35,-.06),(min(4.2,ll-.3),2.35,.12));G.box('rpw-garage-paint',(ll/2,1.35,-.14),(min(4,ll-.5),2.2,.04))

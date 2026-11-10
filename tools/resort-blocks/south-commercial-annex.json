@@ -14,9 +14,9 @@
     "Wallheight3.8m and all concealed elevation openings inferred; no ground-level wall reference"
   ],
   "remaining": [
-    "Unverified building identity, inferred doors/windows and materials",
-    "Neighbor558 thin roof seams still alias at some aerial angles",
-    "Retained terrain and road surroundings remain uneven; no interior"
+    "Identity, concealed doors/windows and wall materials remain inferred because only satellite roof/site photography is verified.",
+    "Neighbor558 roof ribs were broadened and lower-contrast; residual dotted alias remains at aerial angles because thin geometric detail is still undersampled.",
+    "Existing uneven terrain and roads are retained outside this building scope; no supported public interior layout is available."
   ],
   "triangles": 1580,
   "batches": 19,
@@ -42,8 +42,20 @@
   "visualCorrections": [],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/southCommercialAnnex-exterior.glb": "b9c564e09f3cebeb9331523a1f90bb5ff73cca99cea329a2ec38a9e10be7722e",
+      "build/strip-landmarks/southCommercialAnnex-exterior.glb": "e80166e359014d2cc7ce7c046bd390c1ec714829244a275d133fefcc719dd224",
       "build/strip-landmarks/southCommercialAnnex-exterior-collision.json": "a7459afbf5e22c675766aaa580b4cbd95be0f65921d7df0756ba4d4e7b0aca54"
-    }
+    },
+    "revision": "97c59b2c05d7503d"
+  },
+  "refinementCheckpoint": {
+    "record": "docs/project-records/south-commercial-pair-refinement",
+    "pullRequest": 510,
+    "phase": "Six matched after views reviewed; actual after walk and smoke running",
+    "date": "2026-11-05"
+  },
+  "evidence": {
+    "refinement": "docs/project-records/south-commercial-pair-refinement/review.md",
+    "visual": "Six matched neutral views inspected. Diagonal annex hatching confirmed. Main roof ribs more continuous on one plane; opposite-plane dotted alias remains explicitly deferred.",
+    "checks": "2369 roof support samples,20CPUlegs,20corrected actualbaselinelegs pass; all staticstep7 pass. 20 actual after-walk legs pass; four endpoint images inspected. Nine-stop dev smoke passes, zero request/page/console errors."
   }
 }

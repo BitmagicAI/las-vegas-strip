@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "url": "https://treasureisland.com/amenities/pools-cabanas",
+      "observed": "Official page and hero personally inspected: irregular curved pool edges, round planting peninsulas, tall palms, blue-cushion round wicker daybeds, pale deck, striped window awnings and low cream pool-side building. Page lists hot tub and cabanas. Dimensions not surveyed."
+    },
+    {
+      "url": "https://cdn.craft.cloud/e5c2b9ea-b8f1-4463-86d9-face683786c7/assets/Pool_2023_840x593-v2.jpg",
+      "observed": "Official overview personally inspected: blue hipped cabanas on far perimeter, leaning palms, grey/tan chaise cushions, circular wicker seats, white pool rails. Filename says2023; do not infer exact capture date."
+    },
+    {
+      "url": "https://treasureisland.com/assets/TI-Hotel-Casino-Brochure.pdf",
+      "observed": "Text inspected: poolside lower level, pool services, lanai/cabanas, Island Pub, coffee-shop outdoor dining. Brochure refers to2021venues and Mirage tram; historic layout source, not current tenancy proof. Map image still needs inspection."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.1237,-115.1727,347m/data=!3m1!1e3",
+      "observed": "Aerial personally inspected. Pool lies in south courtyard between TI tower wings and Mystere Dreams Avenue, east of Mel Torme Way. Approximate pool map sample36.124099,-115.172319. Imagery date not shown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.124099,-115.172319,130m/data=!3m1!1e3",
+      "observed": "Detailed aerial personally inspected: multi-lobed basin, palm peninsulas, broad west/east chair areas, blue cabanas along south boundary, low pool-side building to east and adjacent podium north. No surveyed dimensions; exact imagery date not shown."
+    }
+  ],
+  "sourceAudit": "Existing ti-exterior source contains frontage,cove,ships,podium,tower and roof equipment but no separately named pool court geometry. Need aerial/source bounds and installed baseline before editing."
+}

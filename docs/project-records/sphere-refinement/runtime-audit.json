@@ -1,0 +1,18 @@
+{
+  "base": "81c5a7df0d8815b75c757e1d2ff4f1b4fd547478",
+  "runtimeAndSourceChangedPaths": [],
+  "sphereHashes": {
+    "runtime-assets/sphere/exterior-collision.bin": "42db9bac48629350afa9dafecac596a179d037f826889f7abc8072aa15f2bac5",
+    "runtime-assets/sphere/immersive-poster.jpg": "1ea89570b772307310b0bba7a39331a5dbf2c1333e55516af2117a424ac4a665",
+    "runtime-assets/sphere/exosphere.mp4": "03b02237abba0d7fc9fd733c6bf6d7ede1ca5889079d81a18564de6ad49d1176",
+    "runtime-assets/sphere/sphere.bin": "e567c1e4e9e6069b73fd37489c07ecb0fa93873b03241dec6f13c7159f83846a",
+    "runtime-assets/sphere/immersive.mp4": "6d9ae08593d57b0c548675fe06469055416ffdcb8d079f2a4bad3b332d3f7dd7",
+    "runtime-assets/sphere/media.bin": "e0420a8e7df1a39ccfe7a3f50adc1370ea7e4122ee7637e34132394def6f6b9e",
+    "runtime-assets/sphere/interior.glb": "0b773582512acd883b5b32037fcb8689cc67a625c725bbe22487813ba37afaec",
+    "runtime-assets/sphere/exosphere-poster.jpg": "49829e2642437f2f8802e8a2dc492007d6ba464bf15af5e3d8aaaca9ef1d7cbb",
+    "runtime-assets/sphere/interior-collision.bin": "aad48287ad4e886df70d3cadfa28b0f0f0d77353b9be6b703911bcee87af7fb1",
+    "runtime-assets/sphere/exterior.glb": "c30b3e54bfa1e9dfb94fc9c136e5521d28eb0e0a417cb94f09f0d55b39919714"
+  },
+  "cityCells": "No runtime-assets or src/work changes; all existing city cells retained byte-identically.",
+  "optimization": "No GLB changed; check-runtime-glbs reports 0 checked,0 unoptimized. No bake, install or revision bump needed."
+}

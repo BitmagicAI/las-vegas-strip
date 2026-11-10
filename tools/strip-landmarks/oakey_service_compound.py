@@ -14,9 +14,11 @@ def exterior(B):
  for z in [-3888,-3853]:
   dx=(z+3888)*.02
   B.face('ocs-metal-paint',[(1920+dx,3.6,z),(1931+dx,3.6,z),(1925.5+dx,4.1,z)])
- for z in np.arange(-3887.7,-3853,.65):
-  dx=(z+3888)*.02
-  W.path('ocs-roof-seam-paint',[(1920+dx,3.66,float(z)),(1925.5+dx,4.13,float(z)),(1931+dx,3.66,float(z))],.018,5)
+ # Satellite reference shows sheet seams running with the shed's long axis.
+ # Shallow same-material ribs avoid the former dark transverse tube pattern.
+ for x in np.arange(1920.4,1931,.65):
+  y=3.63+.47*(1-abs(float(x)-1925.5)/5.5)+.008
+  W.tube('ocs-metal-roof-paint',(float(x),y,-3888),(float(x)+.7,y,-3853),.008,4)
  for shape in [shed,south]:
   for a,b in zip(list(shape.exterior.coords),list(shape.exterior.coords)[1:]):
    G,L,nx,nz=facade_frame(B,a,b,shape,.035)

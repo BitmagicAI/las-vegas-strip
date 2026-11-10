@@ -26,21 +26,30 @@ def exterior(B,s):
     u=((o['p'][0]-a[0])*(b[0]-a[0])+(o['p'][1]-a[1])*(b[1]-a[1]))/L;region=region.difference(box(u-.74,o['y']-.02,u+.74,o['y']+2.35))
   for poly in parts(region):
    for t in triangles(poly):B.face('pl-dark-stucco' if key=='parkPedestrianLift' else 'hel-panel-paint',[(a[0]+(b[0]-a[0])*u/L,y,a[1]+(b[1]-a[1])*u/L)for u,y in list(t.exterior.coords)[:-1]],True)
-  G,L,_,_=facade_frame(B,a,b,p,-.012);G.y=0
-  if key!='parkPedestrianLift':
-   # Visible panel seams; trim all strips against actual door openings.
-   for y in np.arange(.3,s['top']-.1,1.15):
-    visible=LineString([G.p(0,0,0)[::2],G.p(L,0,0)[::2]])
-    for o in ports:
-     if o['y']-.13<y<o['y']+2.45:visible=visible.difference(Point(o['p']).buffer(.85))
-    for piece in parts_line(visible):
-     aa,bb=list(piece.coords)[0],list(piece.coords)[-1];B.tube('hel-joint-paint',(aa[0],float(y),aa[1]),(bb[0],float(y),bb[1]),.008,4)
-   for u in np.arange(1.05,L,1.05):
-    pt=G.p(float(u),0,0);segments=[(.1,s['top']-.1)]
-    for o in ports:
-     if math.dist(pt[::2],o['p'])<.83:segments=[v for aa,bb in segments for v in [(aa,min(bb,o['y']-.12)),(max(aa,o['y']+2.45),bb)]if v[1]>v[0]]
-    for aa,bb in segments:G.box('hel-joint-paint',(float(u),(aa+bb)/2,0),(.012,bb-aa,.02))
+  # Retain the existing inner joints and add matching exterior joints.
+  for seamOffset in [-.012,.012]:
+   G,L,_,_=facade_frame(B,a,b,p,seamOffset);G.y=0
+   if key!='parkPedestrianLift':
+    # Visible panel seams; trim all strips against actual door openings.
+    for y in np.arange(.3,s['top']-.1,1.15):
+     visible=LineString([G.p(0,0,0)[::2],G.p(L,0,0)[::2]])
+     for o in ports:
+      if o['y']-.13<y<o['y']+2.45:visible=visible.difference(Point(o['p']).buffer(.85))
+     for piece in parts_line(visible):
+      aa,bb=list(piece.coords)[0],list(piece.coords)[-1];B.tube('hel-joint-paint',(aa[0],float(y),aa[1]),(bb[0],float(y),bb[1]),.008,4)
+    for u in np.arange(1.05,L,1.05):
+     pt=G.p(float(u),0,0);segments=[(.1,s['top']-.1)]
+     for o in ports:
+      if math.dist(pt[::2],o['p'])<.83:segments=[v for aa,bb in segments for v in [(aa,min(bb,o['y']-.12)),(max(aa,o['y']+2.45),bb)]if v[1]>v[0]]
+     for aa,bb in segments:G.box('hel-joint-paint',(float(u),(aa+bb)/2,0),(.012,bb-aa,.02))
  slab(B,p,s['top']-.12,s['top'],'hel-cap-paint')
+ if key=='parkPedestrianLift':
+  # Jan2025 Street View shows a shallow rooftop louver box. Dimensions inferred.
+  R=Frame(B,center.x,center.y,0,0)
+  R.box('hel-dark-paint',(0,s['top']+.17,0),(1.9,.30,1.15))
+  R.box('hel-cap-paint',(0,s['top']+.34,0),(2.02,.06,1.27))
+  for y in [.07,.16,.25]:
+   for z in [-.58,.58]:R.box('hel-metal-paint',(0,s['top']+y,z),(1.86,.025,.035))
  for y in [D,H]:slab(B,p.buffer(-.015),y-.12,y,'hel-floor')
  for o in ports:
   # G's outward face is negative w; construct in its local plane at the doorway.
@@ -48,6 +57,15 @@ def exterior(B,s):
   for side in [-1,1]:G.box('hel-metal-paint',(side*.77,y+1.18,-.035),(.10,2.46,.15))
   G.box('hel-metal-paint',(0,y+2.4,-.035),(1.64,.15,.15));G.box('hel-metal-paint',(0,y+.01,-.04),(1.64,.02,.24))
   G.box('hel-dark-paint',(0,y+2.64,-.03),(.46,.12,.025))
+  if key=='cosmoPedestrianLift' and y>1:
+   # April2025 upper landing: narrow metal call plate beside the retained doors.
+   G.box('hel-metal-paint',(-1.0,y+1.13,-.055),(.13,.32,.035))
+   G.box('hel-dark-paint',(-1.0,y+1.17,-.078),(.055,.055,.012))
+  if key=='crystalsPedestrianLift' and y<1:
+   # The street-level projecting ELEVATOR sign is visible in April2025 Street View.
+   G.box('hel-sign-paint',(.98,y+2.55,-.38),(.08,.32,.78))
+   q=G.p(1.025,0,-.38);S=Frame(B,q[0],q[2],G.yaw-math.pi/2,0)
+   S.text('ELEVATOR',(0,y+2.46,-.045),.105,'hel-letter-paint')
   if y>1:
    if key=='parkPedestrianLift':G.box('hel-cap-paint',(0,y+2.85,-.55),(2.75,.14,1.25),True)
    else:

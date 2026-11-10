@@ -1,0 +1,24 @@
+[
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/check-public.py"
+    ],
+    "exitCode": 0
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exitCode": 0
+  }
+]

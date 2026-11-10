@@ -13,6 +13,9 @@ def exterior(B):
    F.box('mm-metal-paint',(u,27,side*1.86),(.62,52,.045))
    for y in np.arange(2,53,2.2):F.box('mm-joint-paint',(u,y,side*1.89),(.64,.025,.025))
   F.box('mm-white-stone',(u,.5,0),(3.2,1,4.3),True)
+  # Historic side-view transition ledge; projection/dimensions estimated.
+  F.box('mm-white-stone',(u,27.1,0),(2.9,.30,4.2))
+  F.box('mm-white-stone',(u,27.32,0),(2.65,.14,3.95))
  # Upper primary display cabinet and a lower secondary cabinet between the piers.
  for lo,hi,w in [(28,53.5,21.6),(7,26,18.7)]:
   F.box('mm-dark-metal-paint',(0,(lo+hi)/2,0),(w,hi-lo,3.2))

@@ -1,0 +1,47 @@
+{
+  "scope": "Matched neutral daylight, ultra 960x540 DPR1, 180 measured frames per view; static only, not driving or a 60fps claim. All p95 changes below 10%; aerial remains slow.",
+  "views": [
+    {
+      "name": "front-pavilion-east",
+      "beforeP95": 26.09999990463257,
+      "afterP95": 24.59999990463257,
+      "changePercent": -5.747126457781171
+    },
+    {
+      "name": "front-pavilion-middle",
+      "beforeP95": 21.59999990463257,
+      "afterP95": 20.299999952316284,
+      "changePercent": -6.0185183243332885
+    },
+    {
+      "name": "front-pavilion-west",
+      "beforeP95": 19.200000047683716,
+      "afterP95": 20,
+      "changePercent": 4.166666407965947
+    },
+    {
+      "name": "pavilions-aerial",
+      "beforeP95": 42.19999980926514,
+      "afterP95": 44.90000009536743,
+      "changePercent": 6.39810497228841
+    },
+    {
+      "name": "front-curved-roof-south",
+      "beforeP95": 18.200000047683716,
+      "afterP95": 17.899999856948853,
+      "changePercent": -1.6483526920267444
+    },
+    {
+      "name": "curved-roofs-aerial",
+      "beforeP95": 18.59999990463257,
+      "afterP95": 19.600000143051147,
+      "changePercent": 5.3763453954078555
+    },
+    {
+      "name": "rectangular-roof-north",
+      "beforeP95": 21,
+      "afterP95": 22.299999952316284,
+      "changePercent": 6.190475963410869
+    }
+  ]
+}

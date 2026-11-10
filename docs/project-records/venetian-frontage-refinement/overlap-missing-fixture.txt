@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/janisun/Development/GitFork/vegas-2601-westwood/tools/strip-landmarks/test-venetian-overlaps.py", line 13, in <module>
+    from remove_old_rialto import fixture
+  File "/Users/janisun/Development/GitFork/vegas-2601-westwood/tools/strip-landmarks/remove_old_rialto.py", line 13, in <module>
+    raw=json.load(open('build/strip-survey/osm.json'))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'build/strip-survey/osm.json'

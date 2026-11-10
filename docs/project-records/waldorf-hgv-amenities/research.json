@@ -1,0 +1,95 @@
+{
+  "status": "both-sources-authored-not-installed",
+  "issues": [
+    55,
+    56
+  ],
+  "scope": "Central Strip terrace and private-courtyard amenities; preserve towers and existing guest interiors.",
+  "references": [
+    {
+      "url": "https://www.hilton.com/en/hotels/laswdwa-waldorf-astoria-las-vegas/",
+      "review": "Official reference candidate; photographic review pending."
+    },
+    {
+      "url": "https://www.hiltongrandvacations.com/en/resorts-and-destinations/las-vegas/flamingo-a-hilton-grand-vacations-club",
+      "review": "Official candidate; new photographic review pending."
+    },
+    {
+      "url": "https://www.hilton.com/en-gb/hotels/laswdwa-waldorf-astoria-las-vegas/amenities/",
+      "review": "Search-index official text supports eighth-floor pool deck. Browser en page returned reference-code error; no architectural photo inspected there."
+    },
+    {
+      "url": "https://hiltoncontenthub.com/uploads/2025/08/Property-Fact-Sheet-2025.pdf",
+      "review": "Official search text supports two pools, two hot tubs and plunge pool. PDF visual screenshot not successfully delivered; do not count as inspected photo."
+    },
+    {
+      "url": "https://ctfassets.apps.onegrandvacation.com/7wysglnggt4p/35gHQVxVuJFKWopIisJijw/3028ec61e32315ccc19fee3ff4c1d697/LASFL-EXT-POOL-2021-001.jpg?fit=scale&w=1200&fm=avif&q=85",
+      "review": "Personally inspected official HGV pool photograph: stepped raised east terrace, three visible pale hipped pavilions on square piers, brown strap loungers, lime parasols, dense palms and shrubs in round pebble beds, blue pool handrails. Filename suggests2021, not independent capture-date verification."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.11725,-115.1695&zoom=20&basemap=satellite",
+      "review": "Personally inspected aerial: private north courtyard has north-south narrow pool with west rounded bulge/east step, separate circular spa east, small pavilions on east/north/south edges and dense west planting. Distinct GO Pool southwest must remain untouched. Imagery date not shown."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1061,-115.1748&zoom=20&basemap=satellite",
+      "review": "Personally inspected aerial: Waldorf has two long narrow pools in tandem along west edge, small southern pools/spas, white shaded pavilions and perimeter lounger rows. Inherited second pool location/orientation differs materially. Tower perspective obscures part of deck; no survey accuracy claimed."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1065,-115.1735&heading=220&pitch=10",
+      "review": "Personally inspected Jan2025 WAriaPl StreetView: pale masonry wall with Waldorf lettering beneath broad dark overhang, adjacent glazed upper retail terrace. Pool not visible."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.1168,-115.1683&heading=270&pitch=10",
+      "review": "Returned Dec2019 user Tesla Supercharger panorama, not requested official street imagery. HGV partly visible across road; do not use for pool layout or precise arrival."
+    },
+    {
+      "url": "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_768%2Ch_768%2Cq_80%2Cf_auto%2Cg_auto/Imagery/Lifestyle%20Photography/Waldorf%20Astoria/L/LASWDWA/Pool_ICE_3.jpg",
+      "review": "Personally inspected official gallery photo: tandem narrow rectangular pools, broad pale stone deck, grey cushioned loungers, flat white cabanas with grey screens/black furniture along west side, white parasols, palm planters; glass screen and steps at inter-pool division. Photo date unknown."
+    }
+  ],
+  "uncertainties": [
+    "Inherited deck dimensions/elevations must be checked against aerial and official photos before edits.",
+    "Aerial fitting still needs explicit anchors/scale. Existing HGV rectangle and Waldorf second basin differ from inspected aerials."
+  ],
+  "baselineReview": "All eight initial neutral-daylight captures personally inspected. Exterior front cameras clear of walls; HGV front partly occluded by low frontage but identifies tower. Pool views show both inherited sparse courts. No geometry edits yet.",
+  "hgvFit": {
+    "method": "Approximate north-up Google aerial screen fit to existing courtyard bounds; viewport centre and zoom20 scale inferred, not surveyed control points.",
+    "scaleMPerPixel": 0.1206,
+    "poolBoundsM": [
+      321.4,
+      -123,
+      330,
+      -110
+    ],
+    "spaCentreM": [
+      336,
+      -116.7
+    ],
+    "spaRadiusM": 1.65,
+    "terraceRiseM": 0.85,
+    "rationale": "Observed narrow north/south rectangle with west rounded bulge and east step; distinct east spa. Official photograph supports three pale hipped pavilions and stepped upper terrace. Five estimated risers support 0.85m rise.",
+    "limitations": "Map viewport centre and aerial perspective create registration uncertainty. Basin size, furniture counts and pavilion positions remain inferred; compare installed preview before accepting. Existing hotel and arrival geometry retained."
+  },
+  "sourceCheckpoint": "HGV source only: three open pavilions, 30 strap loungers, seven lime parasols, pool/spa, raised terrace and stair. 10862 triangles, zero degenerates, 517 source-route samples within dry deck. Foliage imports, installed collision checks and visual review pending. Waldorf not authored.",
+  "waldorfFit": {
+    "poolCentres": [
+      [
+        -170,
+        1065
+      ],
+      [
+        -160,
+        1092
+      ]
+    ],
+    "poolDimensionsM": [
+      5.3,
+      23
+    ],
+    "axisDegreesEastOfSouth": 20,
+    "method": "Approximate aerial tandem layout registered inside mapped garage roof; official photograph confirms proportions and arrangement. No independent surveyed anchors.",
+    "elevationM": 27.1,
+    "elevationBasis": "Inherited estimated eighth-floor roof datum.",
+    "deferred": "Exact inter-pool level transition, caf\u00e9, cabana count/layout and perimeter planting need further fit. Available foliage source is broadleaf, not a suitable palm substitute; palm imports unresolved."
+  }
+}

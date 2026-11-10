@@ -3,6 +3,7 @@ Floor heights/range edge are estimates bounded by mapped streets. Original graph
 """
 from common import *
 from forum_shops import facade_frame
+from atomic_terrace_fans import terrace_fans
 KEY='atomicGolf'
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/clubhouse';B.detail=0
@@ -90,7 +91,7 @@ def exterior(B):
    u=(j+.5)*L/bays
    F.box('ag-glass',(u,2.42,.4),(L/bays-.1,4.24,.10))
    F.box('ag-metal',(u-L/bays/2,2.42,.32),(.08,4.3,.16))
-   F.box('ag-glass',(u,5.28,.1),(L/bays-.12,1.06,.065))
+   F.box('ag-terrace-guard-glass',(u,5.28,.1),(L/bays-.12,1.06,.065))
    F.box('ag-metal',(u-L/bays/2,5.3,.05),(.055,1.12,.10))
   F.box('ag-metal',(L/2,5.86,.05),(L,.065,.1))
   # Glass guard collision belongs to the terrace, not the ground walkway.
@@ -104,6 +105,7 @@ def exterior(B):
  # Keep collision-only boxes out of rendered batches.
  for k in list(B.groups):
   if B.groups[k]['material']=='ag-collision':del B.groups[k]
+ terrace_fans(B)
  # Range is kept between Chicago/Philadelphia mapped street boundaries.
  B.source='podium/range'
  rp=Polygon([(1385,-3766),(1381,-3700),(1547,-3688),(1600,-3678),(1611,-3757)])

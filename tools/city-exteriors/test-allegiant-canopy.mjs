@@ -1,0 +1,4 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import R from '@dimforge/rapier3d-compat';
+await R.init();const w=new R.World({x:0,y:-9.81,z:0}),c=JSON.parse(fs.readFileSync('build/strip-landmarks/allegiantStadium-exterior-collision.json'));w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));w.step();let samples=0;const failures=[];
+for(const x of [-925,-917])for(let z=2627;z<=2644;z+=.25){samples++;for(const dx of [-.3,0,.3]){const hit=w.castRay(new R.Ray({x:x+dx,y:.4,z},{x:0,y:1,z:0}),2.1,true);if(hit)failures.push({x:x+dx,z,toi:hit.timeOfImpact});}}
+const report={samples,failures,scope:'Canopy route standing headroom only; ground support and full city obstacles require actual installed walk.'};fs.writeFileSync('docs/project-records/allegiant-terrace-refinement/canopy-headroom.json',JSON.stringify(report,null,2)+'\n');w.free();console.log(report);assert.equal(failures.length,0);

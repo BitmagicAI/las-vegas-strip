@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-4.bin",
+      "bytes": 415119,
+      "sha256": "34c9b9faa6a3d8de1a072526f50847c48c4bb3d929e494210a85e8d1a93872ca"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "ecb3f180f343aed6f6c2465995c53ced78cd84070a2018368fc305b666140754"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/saharaExterior-exterior.glb",
+      "bytes": 1091328,
+      "sha256": "0162ca2b503d0429290cf6c54ed4f791679d98731ef35ab1c55793436cdbdd0d"
+    }
+  ],
+  "newLfsBytes": 1520248,
+  "cellFiles": 186,
+  "unchangedCellFiles": 184,
+  "sharedBakes": 1
+}

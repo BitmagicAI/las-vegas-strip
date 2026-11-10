@@ -1,0 +1,31 @@
+{
+  "coffers": 45,
+  "retainedGroups": 415,
+  "addedTriangles": 5400,
+  "newCollisionTriangles": 0,
+  "existingGroupsAndLabelsPreserved": true,
+  "bounds": [
+    [
+      121.05,
+      133.55
+    ],
+    [
+      12.790345447591479,
+      17.14
+    ],
+    [
+      486.06979854936515,
+      495.33020145063483
+    ]
+  ],
+  "sourceSHA256": "b7a48be2e185bc618e0bbee18c15ec9b90775681d911531f52ed0237dc580e58",
+  "idempotent": true,
+  "barrelSpan": [
+    120.7,
+    133.9
+  ],
+  "minimumBackingRadius": 4.594459097463164,
+  "cellOwnership": true,
+  "finiteNondegenerate": true,
+  "highClearance": true
+}

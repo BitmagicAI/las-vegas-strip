@@ -1,0 +1,10 @@
+# Rexford west palm refinement
+
+Four original fan palms added to three of eleven mapped houses: way/1236621163 (two short northern palms), way/1236621167 (one taller middle palm), way/1236621172 (one taller southern palm). Other eight houses retain their geometry. Heights/positions inferred from historical references, not a survey. Existing four broadleaf trees and all collision preserved.
+
+Matched daylight views front/middle/south/roof: before and after reviewed. Existing yard gaps, driveway coverage, detailed fences, roofs and interiors remain unresolved.
+
+- front: [before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-place-west-refinement/before/rexford-place-west-front.png), [after](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-place-west-refinement/after/rexford-place-west-front.png).
+- middle: [before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-place-west-refinement/before/rexford-place-west-middle.png), [after](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-place-west-refinement/after/rexford-place-west-middle.png).
+- south: [before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-place-west-refinement/before/rexford-place-west-south.png), [after](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-place-west-refinement/after/rexford-place-west-south.png).
+- roof: [before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-place-west-refinement/before/rexford-place-west-roof.png), [after](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-place-west-refinement/after/rexford-place-west-roof.png).

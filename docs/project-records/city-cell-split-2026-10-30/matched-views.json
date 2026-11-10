@@ -1,0 +1,100 @@
+{
+  "scope": "Three local daylight views, 960x540, ultra; 300 settling frames and 120 sampled intervals per view. Single run per path, not published CDN acceptance.",
+  "combined": [
+    {
+      "name": "front",
+      "eye": [
+        324,
+        5,
+        -3057
+      ],
+      "target": [
+        284,
+        8,
+        -3083
+      ],
+      "p50": 16.700000047683716,
+      "p95": 17.799999952316284
+    },
+    {
+      "name": "westwood-roof",
+      "eye": [
+        231,
+        42,
+        -3028
+      ],
+      "target": [
+        283,
+        5,
+        -3084
+      ],
+      "p50": 16.600000143051147,
+      "p95": 17.40000009536743
+    },
+    {
+      "name": "strip-skyline",
+      "eye": [
+        -60,
+        60,
+        540
+      ],
+      "target": [
+        140,
+        25,
+        100
+      ],
+      "p50": 25.200000047683716,
+      "p95": 26.40000009536743
+    }
+  ],
+  "cells": [
+    {
+      "name": "front",
+      "eye": [
+        324,
+        5,
+        -3057
+      ],
+      "target": [
+        284,
+        8,
+        -3083
+      ],
+      "p50": 16.700000047683716,
+      "p95": 17.899999856948853
+    },
+    {
+      "name": "westwood-roof",
+      "eye": [
+        231,
+        42,
+        -3028
+      ],
+      "target": [
+        283,
+        5,
+        -3084
+      ],
+      "p50": 16.600000143051147,
+      "p95": 17.600000143051147
+    },
+    {
+      "name": "strip-skyline",
+      "eye": [
+        -60,
+        60,
+        540
+      ],
+      "target": [
+        140,
+        25,
+        100
+      ],
+      "p50": 25.200000047683716,
+      "p95": 26.200000047683716
+    }
+  ],
+  "visualReview": "All six captures inspected. No visible geometry/material differences in Lexi front, Westwood roof overview and central Strip skyline. Animated water differs; pixel identity not asserted.",
+  "captures": ".bitmagic/city-cells/broad-{before,after}/",
+  "browserErrors": "No error strings in either probe log."
+}

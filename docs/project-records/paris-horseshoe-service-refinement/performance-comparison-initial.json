@@ -1,0 +1,41 @@
+{
+  "scope": "Matched neutral daylight ultra960x540 DPR1,180samples per view; static only, not60fps/driving claim.",
+  "views": [
+    {
+      "name": "front-paris-pavilion",
+      "beforeP95": 21.40000009536743,
+      "afterP95": 20.799999952316284,
+      "changePercent": -2.803738973725667
+    },
+    {
+      "name": "paris-pavilion-roof",
+      "beforeP95": 27.100000143051147,
+      "afterP95": 21.700000047683716,
+      "changePercent": -19.926199508718724
+    },
+    {
+      "name": "paris-counter",
+      "beforeP95": 21.100000143051147,
+      "afterP95": 23.90000009536743,
+      "changePercent": 13.270141864138353
+    },
+    {
+      "name": "front-cvs-service",
+      "beforeP95": 19.700000047683716,
+      "afterP95": 18.09999990463257,
+      "changePercent": -8.121828117656637
+    },
+    {
+      "name": "cvs-south-service",
+      "beforeP95": 32.89999985694885,
+      "afterP95": 28.5,
+      "changePercent": -13.373859805715238
+    },
+    {
+      "name": "cvs-apron-aerial",
+      "beforeP95": 28.5,
+      "afterP95": 30.399999856948853,
+      "changePercent": 6.666666164732815
+    }
+  ]
+}

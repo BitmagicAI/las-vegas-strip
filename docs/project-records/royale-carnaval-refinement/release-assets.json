@@ -1,0 +1,39 @@
+{
+  "newLfsBytes": 4066137,
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_-1.bin",
+      "bytes": 1540784,
+      "sha256": "daa12a08799112d23013de804d883fbc9d967924596c0b0a0892de76bdc05696"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "48e134bf9436404e80aa2c170a84aa04a093457ee060808f113f342757117262"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/carnavalCourt-exterior.glb",
+      "bytes": 558404,
+      "sha256": "03065f9e606c753d9181c7d72837a8fb61da1daaacaa4cdade264107bad3bc3a"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/casinoRoyale-exterior-collision.bin",
+      "bytes": 5728,
+      "sha256": "169183e2c2178731770eeb5e222b8d1fd7b14fd2b64e0580b3d0ee408dad55a3"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/casinoRoyale-exterior.glb",
+      "bytes": 644716,
+      "sha256": "d40e5b0f4d384cf2bf63fbddeb2a415c54e95d3d3f811a1f898d1478b6842fa0"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/casinoRoyaleGarage-exterior.glb",
+      "bytes": 1302704,
+      "sha256": "4c1cedf3a6ce57448c7a951d2e052557ad289012c2136691beaf656d44452721"
+    }
+  ],
+  "unchangedCellFiles": 184,
+  "totalCellFiles": 186,
+  "bakes": 1,
+  "note": "Cell counts include manifests; one LOD data cell plus its manifest changed, all other tracked cell files byte-identical."
+}

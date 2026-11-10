@@ -1,0 +1,413 @@
+{
+  "status": "Pre-bake measurements only; final matching measurements pending. Park amenity view +10.17% requires repeat if retained in final data. Historical back-view timing improvements not attributed to geometry.",
+  "views": [
+    {
+      "building": "wells",
+      "baseline": {
+        "name": "front",
+        "eye": [
+          1430,
+          2,
+          -275
+        ],
+        "target": [
+          1470,
+          18,
+          -322
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.5
+      },
+      "candidate": {
+        "name": "front",
+        "eye": [
+          1430,
+          2,
+          -275
+        ],
+        "target": [
+          1470,
+          18,
+          -322
+        ],
+        "p50": 16.5,
+        "p95": 18.90000009536743
+      },
+      "p95ChangePercent": 8.000000544956754
+    },
+    {
+      "building": "wells",
+      "baseline": {
+        "name": "overview",
+        "eye": [
+          1375,
+          95,
+          -210
+        ],
+        "target": [
+          1480,
+          28,
+          -332
+        ],
+        "p50": 16.699999809265137,
+        "p95": 18
+      },
+      "candidate": {
+        "name": "overview",
+        "eye": [
+          1375,
+          95,
+          -210
+        ],
+        "target": [
+          1480,
+          28,
+          -332
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.59999990463257
+      },
+      "p95ChangePercent": 3.333332803514266
+    },
+    {
+      "building": "wells",
+      "baseline": {
+        "name": "back",
+        "eye": [
+          1590,
+          95,
+          -460
+        ],
+        "target": [
+          1480,
+          28,
+          -332
+        ],
+        "p50": 20,
+        "p95": 32
+      },
+      "candidate": {
+        "name": "back",
+        "eye": [
+          1590,
+          95,
+          -460
+        ],
+        "target": [
+          1480,
+          28,
+          -332
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.5
+      },
+      "p95ChangePercent": -42.1875
+    },
+    {
+      "building": "wells",
+      "baseline": {
+        "name": "amenity",
+        "eye": [
+          1420,
+          26,
+          -306
+        ],
+        "target": [
+          1458,
+          1,
+          -325
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.700000047683716
+      },
+      "candidate": {
+        "name": "amenity",
+        "eye": [
+          1420,
+          26,
+          -306
+        ],
+        "target": [
+          1458,
+          1,
+          -325
+        ],
+        "p50": 16.59999990463257,
+        "p95": 18.40000009536743
+      },
+      "p95ChangePercent": 3.9548025186323166
+    },
+    {
+      "building": "park-towers",
+      "baseline": {
+        "name": "front",
+        "eye": [
+          1180,
+          2,
+          55
+        ],
+        "target": [
+          1230,
+          20,
+          0
+        ],
+        "p50": 16.600000143051147,
+        "p95": 19.5
+      },
+      "candidate": {
+        "name": "front",
+        "eye": [
+          1180,
+          2,
+          55
+        ],
+        "target": [
+          1230,
+          20,
+          0
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.299999952316284
+      },
+      "p95ChangePercent": -11.282051526583158
+    },
+    {
+      "building": "park-towers",
+      "baseline": {
+        "name": "overview",
+        "eye": [
+          1130,
+          100,
+          130
+        ],
+        "target": [
+          1250,
+          30,
+          -25
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.800000190734863
+      },
+      "candidate": {
+        "name": "overview",
+        "eye": [
+          1130,
+          100,
+          130
+        ],
+        "target": [
+          1250,
+          30,
+          -25
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.40000009536743
+      },
+      "p95ChangePercent": -2.2471915229283934
+    },
+    {
+      "building": "park-towers",
+      "baseline": {
+        "name": "back",
+        "eye": [
+          1380,
+          100,
+          -140
+        ],
+        "target": [
+          1250,
+          30,
+          -25
+        ],
+        "p50": 19.799999952316284,
+        "p95": 33.5
+      },
+      "candidate": {
+        "name": "back",
+        "eye": [
+          1380,
+          100,
+          -140
+        ],
+        "target": [
+          1250,
+          30,
+          -25
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.59999990463257
+      },
+      "p95ChangePercent": -44.477612224977406
+    },
+    {
+      "building": "park-towers",
+      "baseline": {
+        "name": "amenity",
+        "eye": [
+          1120,
+          40,
+          -65
+        ],
+        "target": [
+          1180,
+          1,
+          -20
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.700000047683716
+      },
+      "candidate": {
+        "name": "amenity",
+        "eye": [
+          1120,
+          40,
+          -65
+        ],
+        "target": [
+          1180,
+          1,
+          -20
+        ],
+        "p50": 16.59999990463257,
+        "p95": 19.5
+      },
+      "p95ChangePercent": 10.169491228627647
+    },
+    {
+      "building": "residence-inn",
+      "baseline": {
+        "name": "front",
+        "eye": [
+          1600,
+          2,
+          80
+        ],
+        "target": [
+          1550,
+          16,
+          22
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.600000143051147
+      },
+      "candidate": {
+        "name": "front",
+        "eye": [
+          1600,
+          2,
+          80
+        ],
+        "target": [
+          1550,
+          16,
+          22
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18
+      },
+      "p95ChangePercent": 2.2727264414641457
+    },
+    {
+      "building": "residence-inn",
+      "baseline": {
+        "name": "overview",
+        "eye": [
+          1440,
+          85,
+          140
+        ],
+        "target": [
+          1540,
+          18,
+          22
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.09999990463257
+      },
+      "candidate": {
+        "name": "overview",
+        "eye": [
+          1440,
+          85,
+          140
+        ],
+        "target": [
+          1540,
+          18,
+          22
+        ],
+        "p50": 16.59999990463257,
+        "p95": 18.299999952316284
+      },
+      "p95ChangePercent": 1.1049726449585684
+    },
+    {
+      "building": "residence-inn",
+      "baseline": {
+        "name": "back",
+        "eye": [
+          1640,
+          85,
+          -100
+        ],
+        "target": [
+          1540,
+          18,
+          22
+        ],
+        "p50": 16.59999990463257,
+        "p95": 17.59999990463257
+      },
+      "candidate": {
+        "name": "back",
+        "eye": [
+          1640,
+          85,
+          -100
+        ],
+        "target": [
+          1540,
+          18,
+          22
+        ],
+        "p50": 16.600000143051147,
+        "p95": 17.90000009536743
+      },
+      "p95ChangePercent": 1.704546547502539
+    },
+    {
+      "building": "residence-inn",
+      "baseline": {
+        "name": "amenity",
+        "eye": [
+          1484,
+          28,
+          -18
+        ],
+        "target": [
+          1518,
+          1,
+          8
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.700000047683716
+      },
+      "candidate": {
+        "name": "amenity",
+        "eye": [
+          1484,
+          28,
+          -18
+        ],
+        "target": [
+          1518,
+          1,
+          8
+        ],
+        "p50": 16.699999809265137,
+        "p95": 17.700000047683716
+      },
+      "p95ChangePercent": 0.0
+    }
+  ]
+}

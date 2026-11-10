@@ -17,13 +17,13 @@
   ],
   "remaining": [
     "Canopy height/profile and door dimensions estimated; no interior access or exact entrance survey",
-    "Stripe orientation is globally projected rather than sewn radial gores; fabric thickness/seams and finer furnishings remain simplified",
+    "Roof stripe orientation remains globally projected rather than sewn radial gores; valance thickness/hem is refined but roof panel seams and finer furnishings need a separate reference-supported surface partition.",
     "Parent tower ground-level facade and landscaped arrival court still differ substantially from reference",
-    "Static960x540 measurements only; no moving-route60fps or photorealistic claim"
+    "Seven matched daylight views and18actual keyboard legs across the grouped canopies are verified; full driving, cold-streaming and resident-memory qualification remain outside these measurements. No photorealistic or whole-block acceptance."
   ],
   "triangles": 3699,
   "batches": 5,
-  "optimizedMiB": 0.17,
+  "optimizedMiB": 0.3633766174316406,
   "viewsInspected": [
     "build/city-exteriors/encore-tower-suites-canopy-final/encore-canopy-entry.png",
     "build/city-exteriors/encore-tower-suites-canopy-final/encore-canopy-under.png",
@@ -107,8 +107,22 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/encoreSuitesCanopy-exterior.glb": "7cc1f48c250b6d2703b75e71708a1e64ff20f36f1850a4b8df2170c92c524c70",
-      "build/strip-landmarks/encoreSuitesCanopy-exterior-collision.json": "7a64c8c4f8f1db85b4b1c9e5fd2f4e4f1ff7ebe958ad0c52df7ff071939e07d5"
+      "runtime-assets/strip-landmarks/encoreSuitesCanopy-exterior.glb": "6a22df5446cb5812522a5d314db515fd3fc21fc6acaea59d0193affb5bc1c202",
+      "runtime-assets/strip-landmarks/encoreSuitesCanopy-exterior-collision.bin": "74e686273c96a8a86b37fc7db41e3b87823ea89a0a17e600f486fd118892b41a"
     }
+  },
+  "refinement20261107": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/wynn-encore-canopies-refinement",
+    "scope": "Decorative fabric backing/hem",
+    "collision": "Unchanged JSON and packed binary",
+    "baselineWalkLegs": 8,
+    "performance": "docs/project-records/wynn-encore-canopies-refinement/performance-comparison.json",
+    "preservation": "docs/project-records/wynn-encore-canopies-refinement/preservation.json",
+    "installedWalkLegs": 8,
+    "walkReport": "docs/project-records/wynn-encore-canopies-refinement/walk-after.json",
+    "views": "https://github.com/BitmagicAI/las-vegas-strip/tree/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-encore-canopies-refinement",
+    "checks": "docs/project-records/wynn-encore-canopies-refinement/local-checks.json",
+    "smoke": "docs/project-records/wynn-encore-canopies-refinement/smoke.json"
   }
 }

@@ -37,10 +37,10 @@
   ],
   "remaining": [
     "2015/2020 street references may not reflect current finishes; exact windows and doors inferred",
-    "Palm-heavy landscape not reproduced; four broadleaf trees only",
+    "Four original palms added at three reference-supported frontage groups; exact positions/heights inferred, dense palm-heavy landscaping still incomplete. Four existing broadleaf trees retained.",
     "Full property yards and driveways still need coverage to sidewalk; ground outside authored patches remains cracked dirt",
     "Roof proportions approximate, private rear features not modeled",
-    "No interiors, neutral daylight review or full driving benchmark"
+    "No interiors or full driving benchmark; initial middle-view p95 spike retained. Longer warmed exact-base A/B median p95+0.53%, no startup guarantee."
   ],
   "triangles": 14382,
   "batches": 27,
@@ -148,8 +148,29 @@
   },
   "finalBuild": {
     "files": {
+      "runtime-assets/strip-landmarks/rexfordPlaceWest-exterior.glb": "71e9dcadd118c20ca523f15c61553366be2fd4264434e4b6f94a1538d3758bf2",
+      "build/strip-landmarks/rexfordPlaceWest-exterior-collision.json": "fbea5d4fb15fe0cd18a0eb6d5b9d3ae7aeb5cb27086fba307b0abd804a4e437b"
+    }
+  },
+  "historicalBuildBeforeRefinement20261106": {
+    "files": {
       "build/strip-landmarks/rexfordPlaceWest-exterior.glb": "a0d69ce1eeda57ad2b00ac34e22ff26f596607c11d255904aa3db42579d72965",
       "build/strip-landmarks/rexfordPlaceWest-exterior-collision.json": "fbea5d4fb15fe0cd18a0eb6d5b9d3ae7aeb5cb27086fba307b0abd804a4e437b"
     }
+  },
+  "refinement20261106": {
+    "scope": "Four original fan palms on way/1236621163 (two),1236621167(one),1236621172(one); other eight houses unchanged. Historical references, estimated heights/positions.",
+    "record": "docs/project-records/rexford-place-west-refinement",
+    "status": "Scoped installed landscaping pass verified; full-site gaps retained.",
+    "checks": {
+      "supportSamples": 1653,
+      "cpuLegs": 44,
+      "actualKeyboardLegsBeforeAndAfter": 44,
+      "matchedDaylightViews": 4,
+      "smokeStopsPlaced": 9,
+      "unchangedCells": 91,
+      "totalCells": 92
+    },
+    "preservation": "20 original tree nodes/transforms and original collision retained; original helper collision additions removed before installation."
   }
 }

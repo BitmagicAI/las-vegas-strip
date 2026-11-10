@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_2.bin",
+      "bytes": 362864,
+      "sha256": "dab977fd22bf7f22279132057e92dd9becb56387b2673be0b98280ccae86366a"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "019ddae8cec641fa2f1d4b6789e7a3d32ad97ed7498c77cc96f307532bc0a467"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/oyoExterior-exterior-collision.bin",
+      "bytes": 11424,
+      "sha256": "aed88c25065d3c3751f8aa407cffe098200dba1b24657f652c558a5a223975b9"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/oyoExterior-exterior.glb",
+      "bytes": 649888,
+      "sha256": "5765f9138312385639d3ee592ac4f5e0935ed5881d21c76c1f8dcb7a35202f87"
+    }
+  ],
+  "newLfsBytes": 1037977,
+  "unchangedLodCellBins": 91,
+  "totalLodCellBins": 92
+}

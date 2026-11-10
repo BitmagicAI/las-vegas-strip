@@ -1,0 +1,17 @@
+{
+  "typecheck": "PASS",
+  "applicableTests": "3 PASS:ground surface,site lights,city lazyLOD",
+  "sourceAudit": "PASS:14156 triangles,zero degenerate faces,collision unchanged",
+  "packedRoutes": "1473samplesPASS",
+  "normalMovement": "4segmentsPASS;4endpointimagesinspected",
+  "installedPreview": "4viewsinspected pluscorrectedfront",
+  "review": "PASS",
+  "public": "PASS:pre-existing contact-address warning",
+  "bake": "PASS:single invocation,all278existing cell files byte-identical",
+  "runtimeCheck": "PASS:1changedGLB,0notoptimized",
+  "package": "PASS:1928present,0missing,0notoptimized",
+  "finalViews": "PASS:4matchingdaylightviews personallyinspected",
+  "smoke": "PASS:9stops,zero failedrequests/page/consoleerrors",
+  "collisionRepack": "Repacked unchanged JSON to satisfy timestamp freshness; output byte-identical, no collision modification",
+  "archive": "624files,210.2MB"
+}

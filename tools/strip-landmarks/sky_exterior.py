@@ -47,4 +47,6 @@ def exterior(B):
       patch('sky-white',0,y,L,y+.3,.35)
      for x in np.arange(0,L,6):patch('sky-white',x,0,min(x+.55,L),h,.35)
    roof=surfaces.roof(r['id'],poly,h);B.planar('sky-roof',roof,h+.04)
+ from hgv_sky_detail import sky_detail
+ sky_detail(B)
  return dict(key=KEY,name='Sky Las Vegas exterior',center=[1055,0,-2535],bounds=[995,-2580,1100,-2490],building='sky',structural=True,exteriorOnly=True,portals=[],zones=[],lights=[],routes=[],hotelSources=[],views={})

@@ -4,6 +4,8 @@ import numpy as np
 from pathlib import Path
 OUT=Path('build/strip-landmarks');materials={}
 colors={'white':'e8e7de','ivory':'e4dac7','stone':'bfb5a3','sandstone':'bbaa90','marble':'e2ded3','plaster':'ddd9d0','panel':'877467','roof':'8b8580','silver':'afb8bd','steel':'52616a','brass':'b99a56','bronze':'94704c','gold':'cfb060','blackiron':'242a2a','charcoal':'22292b','blue':'17619c','blue2':'4a91af','blue3':'9cbbc9','red':'bb3c44','warm':'fff2d2','screen':'1595ac','glass':'adc4cb','shopglass':'b0cbd0','cabinglass':'8faebc','darkglass':'293e47','water':'398f90','velvet':'777066','walnut':'614a39','grout':'b2afa6','foliage':'395942','bark':'77614a','vortex0':'937797','vortex1':'75638f','vortex2':'6989ab','ledblue':'356daa','cloudskin':'ddd9cc','pinkstone':'bb9d93','brick':'9a6650','bricklight':'b07c60','copper':'719588','copperpanel':'9e624d','copper2':'a7755c','copper3':'92593e','concrete':'8e8c89','magenta':'db146e','ice':'d6e6e6','tile':'d5cec1','letter':'f5eedc','carpet':'31343f','floralcarpet':'43373b','skyglass':'c9d8df'}
+colors.update({'ti-canopy-fabric':'654b39','ti-canopy-frame':'352e29'})
+colors.update({'pmr-carpet':'292132','pmr-ceiling':'302b3c','pmr-wall':'3c2945','pmr-rose':'b54e80','pmr-blue':'424684','pmr-cyan':'458aab','pmr-basin':'353f73','pmr-water':'315b9a','pmr-dark':'282335','pmr-table':'56515d','pmr-chrome':'b2b5bc','pmr-mirror':'657185','pmr-bottle':'416c62','pmr-bark':'56404a','pmr-blossom':'aa668e','pmr-lamp-pink':'d17fa8','pmr-lamp-blue':'719cae','pmr-flame':'ffc36c','pmr-pink-led':'d650b0','pmr-blue-led':'5f90da','pmr-blue-trim':'315a9f','pmr-roof-paint':'7a756e','pmr-sign-letter':'e2dfd7'})
 colors.update({'cv-service-asphalt':'424345','cv-concrete-paint':'b7b1a4'})
 colors.update({'fg-path':'b4a28c','fg-soil-paint':'475d36','fg-floor':'b5aa96','fg-pond_water':'457b76','fg-basin-paint':'33473e','fg-stone':'8f8b77','fg-roof-paint':'c7c5b8','fg-white-stucco':'d9d7c7','fg-coping-paint':'b9bcae','fg-glass':'344648','fg-frame-paint':'77756b','fg-tan-stucco':'b4a389','fg-green-roof-paint':'405b4c','fg-wood-paint':'574e3d','fg-equipment-paint':'b4b7ac','fg-dark-paint':'343c38'})
 colors.update({'pl-dark-stucco':'535856'})
@@ -17,7 +19,7 @@ colors.update({'re-white-stucco': 'd2d0bd', 're-fascia-paint': '966b50', 're-roo
 colors.update({'bhs-green-metal-paint': '285344', 'bhs-roof-metal-paint': '527c61', 'bhs-trim-paint': '3c6652', 'bhs-rooflight-frame-paint': '909e8d', 'bhs-rooflight-paint': 'c0c5a4', 'bhs-service-paint': 'abb1a4', 'bhs-cap-paint': 'c1c6b7', 'bhs-shadow-paint': '29362d', 'bhs-base-concrete': '777b68', 'bhs-doorframe-paint': '717c6b', 'bhs-shutter-paint': 'afb4a2', 'bhs-shutter-joint-paint': '6c7b69', 'bhs-lamp-paint': 'b4b6a7', 'bhs-door-paint': '49614d', 'bhs-handle-paint': '939e91', 'bhs-vent-paint': '74846d', 'bhs-rib-paint': '3c634b', 'bhs-yard-concrete': '999d8b', 'bhs-block-concrete': '92937e', 'bhs-block-joint-paint': '6d7466', 'bhs-container-paint': '6a7053', 'bhs-muted-blue-paint': '485f70', 'bhs-frame-paint': '7d8578', 'bhs-pallet-paint': '837054', 'bhs-storage-paint': '7d806e'})
 colors.update({'hc-cream-stucco': 'c3bca9', 'hc-roof-paint': '969b99', 'hc-coping-paint': '6a6b62', 'hc-rust-paint': '87493f', 'hc-frame-paint': 'c6c9c2', 'hc-glass': '3c4b50', 'hc-sill-paint': 'a5a69b', 'hc-plinth-paint': '8c897a', 'hc-downpipe-paint': 'aaa99b', 'hc-door-paint': '777165', 'hc-handle-paint': 'adb3b1', 'hc-curb-paint': '767a76', 'hc-service-paint': '8b9491', 'hc-grille-paint': '333e3b', 'hc-gallery-concrete': 'b9b5a6', 'hc-paving-concrete': 'b2afa2', 'hc-gravel': '6c6552', 'hc-rail-paint': '716f61', 'hc-asphalt': '555953', 'hc-line-paint': 'a9a58a', 'hc-wheelstop-concrete': '999785', 'hc-dark-letter': '635a46'})
 colors.update({'san-tan-brick-paint': 'b7a281', 'san-coping-paint': 'b8aa92', 'san-brown-paint': '5b4934', 'san-mortar-paint': '8b7a60', 'san-awning-paint': '897961', 'san-frame-paint': '4b473b', 'san-door-paint': '736b5a', 'san-glass': '303c38', 'san-handle-paint': 'b2b6ad', 'san-service-paint': 'a2a9a5', 'san-vent-paint': '4c5250', 'san-shadow-paint': '292e2c', 'san-conduit-paint': '787d77', 'san-curb-paint': '95978e', 'san-roof-seam-paint': '969e9e', 'san-membrane-paint': 'c4cdcc', 'san-line-paint': 'baa35b', 'san-paving-concrete': 'b3ac9f', 'san-asphalt': '5e605b'})
-colors.update({'s558-tan-brick-paint': '857052', 's558-brown-paint': '36261a', 's558-cream-paint': 'ada185', 's558-coping-paint': '8f8063', 's558-mortar-paint': '5e5240', 's558-shadow-paint': '110e0b', 's558-glass': '1f2421', 's558-frame-paint': '2e291f', 's558-door-paint': '4a4233', 's558-vent-paint': '1f211f', 's558-roof-metal-paint': '5c5c42', 's558-roof-rib-paint': '3d4030', 's558-service-paint': '858573', 's558-membrane-paint': 'a3a191', 's558-gravel': '614c38', 's558-paving-concrete': '87806e'})
+colors.update({'s558-tan-brick-paint': '857052', 's558-brown-paint': '36261a', 's558-cream-paint': 'ada185', 's558-coping-paint': '8f8063', 's558-mortar-paint': '5e5240', 's558-shadow-paint': '110e0b', 's558-glass': '1f2421', 's558-frame-paint': '2e291f', 's558-door-paint': '4a4233', 's558-vent-paint': '1f211f', 's558-roof-metal-paint': '5c5c42', 's558-roof-rib-paint': '50523d', 's558-service-paint': '858573', 's558-membrane-paint': 'a3a191', 's558-gravel': '614c38', 's558-paving-concrete': '87806e'})
 colors.update({'rg-deck-concrete':'9d9b91','rg-edge-paint':'aaa899','rg-soffit-paint':'74776c','rg-ramp-concrete':'999b92','rg-rail-paint':'b5ae94','rg-tan-stucco':'c2ad83','rg-line-paint':'d7c18d','rg-curb-concrete':'b7b4a5','rg-coping-paint':'d3bea0','rg-service-paint':'8e958f','rg-shadow-paint':'343b39','rg-red-paint':'672c35','rg-white-letter':'eee8da','rg-paving-concrete':'afa99a'})
 colors.update({'rr-tan-stucco':'b5a079','rr-cream-paint':'d4c6a0','rr-paving-concrete':'b6afa0','rr-roof-paint':'b2b2ab','rr-glass':'263b3d','rr-frame-paint':'c0beb5','rr-burgundy-paint':'742d2d','rr-red-paint':'ae2d24','rr-shadow-paint':'343530','rr-louver-paint':'8c8d7c','rr-escalator-paint':'777f7e','rr-white-letter':'f3eddb','rr-gold-paint':'e1b833','rr-gold-trim-paint':'b8932b','rr-service-paint':'909691'})
 colors.update({'ha-ground-asphalt':'454544','ha-fascia-paint':'b4b7b4','ha-roof-paint':'c6c3b6','ha-soffit-paint':'a7a59c','ha-steel-paint':'b7bcba','ha-frame-paint':'d2d7d4','ha-panel-glass':'b1bebe','ha-roof-glass':'a5bdb7','ha-paving-concrete':'a8a59c'})
@@ -37,10 +39,10 @@ colors.update({'c525-bark':'897c66','c525-palm-stem':'7b805b','c525-palm-leaf':'
 colors.update({'c525-core-paint':'5b6260','c525-mint-paint':'98bcb4','c525-blue-paint':'486d7c','c525-gravel':'a69b87'})
 colors.update({'c525-ivory-stucco':'d4d4c4','c525-white-stucco':'d8d9d0','c525-terracotta-paint':'ac6853','c525-frame-paint':'d9dfdb','c525-glass':'627c7c','c525-metal-paint':'303c41','c525-door-paint':'ac4b2c','c525-coping-paint':'3c4649','c525-charcoal-paint':'515858','c525-tile-joint-paint':'7b8280','c525-gallery-concrete':'a8aeaa','c525-balcony-concrete':'c7cbc7','c525-soffit-paint':'c8ccc4','c525-roof-paint':'b9bbb4','c525-court-concrete':'c0bcad','c525-pool-tile':'3b7e85','c525-pool-floor':'6da8b0','c525_pool':'62a8b5','c525-coping-stone':'c7c4b7','c525-seat-fabric':'b4b8af','c525-asphalt':'62645f','c525-line-paint':'cdcec2','c525-planter-stone':'a69a80','c525-service-paint':'a7aca8','c525-dark-letter':'323f42'})
 colors.update({'spo-boundary-block':'b3b7a9','spo-palm-stem':'78846a','spo-palm-leaf':'53694d','spo-palm-light':'71815a','spo-palm-dry':'887858','spo-frame-paint':'d2d5ca','spo-glass':'4c5f56','spo-siding-paint':'b7bdb1','spo-roof-paint':'9b9f97','spo-stone-base':'a79a7f','spo-siding-seam-paint':'a6ae9f','spo-door-paint':'abb6a4','spo-step':'b4b3a6','spo-asphalt':'62665c','spo-gravel':'9e9278','spo-vent':'9ba497','spo-fence-paint':'364236'})
-colors.update({'oo-roof-paint':'877260','oo-fascia-paint':'777263','oo-window-frame-paint':'696e63','oo-glass':'364340','oo-bars-paint':'424b43','oo-door-frame-paint':'80877b','oo-door-paint':'778177','oo-handle':'a1a79d','oo-step':'b1b0a2','oo-fence-paint':'333c35','oo-fence-seam-paint':'444c43','oo-fence-post-paint':'515b4f','oo-asphalt':'65675c','oo-white-stucco':'c7c9bf','oo-base-paint':'b8bcb0','oo-sign-paint':'a8aaa0','oo-dark-letter':'343c33','oo-service-paint':'a1aa9c','oo-vent':'535e50','oo-carport-roof-paint':'b6b49c','oo-post-paint':'9b9e87','oo-line-paint':'b7b6a3','oo-wheelstop':'b8b3a0','oo-banner-paint':'59404d','oo-white-letter':'d4d1c5'})
+colors.update({'oo-west-roof-paint':'945c47','oo-roof-paint':'705147','oo-fascia-paint':'777263','oo-window-frame-paint':'696e63','oo-glass':'364340','oo-bars-paint':'424b43','oo-door-frame-paint':'80877b','oo-door-paint':'778177','oo-handle':'a1a79d','oo-step':'b1b0a2','oo-fence-paint':'333c35','oo-fence-seam-paint':'444c43','oo-fence-post-paint':'515b4f','oo-asphalt':'65675c','oo-white-stucco':'c7c9bf','oo-base-paint':'b8bcb0','oo-sign-paint':'a8aaa0','oo-dark-letter':'343c33','oo-service-paint':'a1aa9c','oo-vent':'535e50','oo-carport-roof-paint':'b6b49c','oo-post-paint':'9b9e87','oo-line-paint':'b7b6a3','oo-wheelstop':'b8b3a0','oo-banner-paint':'422638','oo-white-letter':'d4d1c5'})
 colors.update({'ocs-stucco':'b7b3a3','ocs-roof-paint':'afa995','ocs-metal-paint':'afb6b1','ocs-metal-roof-paint':'a5b0ad','ocs-roof-seam-paint':'818d89','ocs-cap-paint':'a2a799','ocs-door-paint':'969b8b','ocs-door-seam':'747e70','ocs-frame-paint':'747e71','ocs-wall-seam-paint':'969f98','ocs-vent':'525c51','ocs-block':'a59880','ocs-timber':'87714c','ocs-yard-gravel':'9d9279','ocs-slab':'a9a79b','ocs-fence-paint':'6f6451','ocs-sign-paint':'d8d6c6','ocs-red-letter':'a74635','ocs-dark-letter':'333d34','ocs-service-paint':'a3a89b'})
 colors.update({'wca-stucco':'c3c2b0','wca-roof-paint':'b6bab3','wca-cap-paint':'c9cabc','wca-shadow-paint':'51483c','wca-board-paint':'78634d','wca-board-joint-paint':'66533f','wca-soffit-paint':'aaa796','wca-tile-paint':'9d6c4d','wca-tile-roll-paint':'ac7958','wca-pier-paint':'d3d3c5','wca-paving':'b3ad9d','wca-sign-paint':'d6d7c9','wca-green-letter':'647b53','wca-red-letter':'a34d41','wca-joint-paint':'aeb0a1','wca-service-paint':'aaaFA3','wca-vent':'616b60','wca-asphalt':'585a51','wca-line-paint':'c3c2af','wca-fence-paint':'8b958b','wca-fence-wire':'697468','wca-roof-seam-paint':'c4c9c2'})
-colors.update({'cu-gray-stucco':'929d9b','cu-roof-paint':'b3b9b5','cu-base-paint':'677576','cu-fascia-paint':'7c898b','cu-cap-metal-paint':'596a6d','cu-board0':'75685b','cu-board1':'817160','cu-board2':'6e6256','cu-board-joint':'675441','cu-stacked-ashlar':'a99b82','cu-service-paint':'8e9a97','cu-dark-letter':'303d42','cu-frame-paint':'3c4d50','cu-tower-paint':'405560','cu-tile-light':'4a606a','cu-tile-dark':'3b505b','cu-white-letter':'d4ddd7','cu-yellow-paint':'b4a65a','cu-asphalt':'4d5350','cu-paving':'b3b4a8','cu-gravel':'a89f82','cu-line-paint':'c8c9b9','cu-glass':'36504d','cu-vent':'4e5b56','cu-leaf':'597145','cu-leaf-light':'8d9c62','cu-wood':'86694b','cu-wood-joint':'6e573f'})
+colors.update({'cu-gray-stucco':'929d9b','cu-roof-paint':'b3b9b5','cu-base-paint':'677576','cu-fascia-paint':'7c898b','cu-cap-metal-paint':'596a6d','cu-board0':'75685b','cu-board1':'817160','cu-board2':'6e6256','cu-board-joint':'675441','cu-stacked-ashlar':'a99b82','cu-service-paint':'8e9a97','cu-dark-letter':'303d42','cu-frame-paint':'3c4d50','cu-tower-paint':'454b4c','cu-tile-light':'505556','cu-tile-dark':'484d4f','cu-white-letter':'d4ddd7','cu-yellow-paint':'b4a65a','cu-asphalt':'4d5350','cu-paving':'b3b4a8','cu-gravel':'a89f82','cu-line-paint':'c8c9b9','cu-glass':'36504d','cu-vent':'4e5b56','cu-leaf':'597145','cu-leaf-light':'8d9c62','cu-wood':'86694b','cu-wood-joint':'6e573f'})
 colors.update({'mp-white-paint':'d6d8d2','mp-roof-paint':'aeb3ad','mp-fascia-paint':'52595b','mp-coping-paint':'777e7b','mp-joint-paint':'c5c8c2','mp-turquoise-paint':'64a7ad','mp-drain-paint':'c2c6bf','mp-door-paint':'d4d7d1','mp-handle-paint':'767b79','mp-ink-letter':'454e4f','mp-rail-paint':'454c4e','mp-ramp':'aaa99e','mp-paving':'b8b5ab','mp-asphalt':'515451','mp-soil':'8d826b','mp-line-paint':'c3c1b3','mp-service-paint':'a6ada8','mp-vent':'606a65','mp-post-paint':'b0b8b4','mp-sign-paint':'ab7254','mp-white-letter':'e5e5da'})
 colors.update({'sar-white':'deded3','sar-soffit':'cccbbd','sar-tile':'976b58','sar-roof':'b2b4a8','sar-blue':'284d85','sar-red':'a63a45','sar-cream':'c8c2a6','sar-island':'a6a797','sar-black':'29322d','sar-display':'687d73','sar-yellow':'b9a854','sar-light':'ded8b9','sar-orange':'c7673e','sar-panel':'77726b','sar-joint':'64645b','sar-glass':'3b534e','sar-frame':'394b49','sar-poster':'585a86','sar-metal':'969f97','sar-service':'aaa996','sar-vent':'5e6861','sar-asphalt':'494d47','sar-line':'c2c3b1','sar-paving':'a9aa9a'})
 colors.update({'ps-stucco':'c8c4ad','ps-roof':'aaa99c','ps-trim':'bcb8a3','ps-dentil':'b3af9a','ps-door':'554a48','ps-glass':'364341','ps-metal':'7d8179','ps-frame':'414b44','ps-sill':'a7a993','ps-burgundy':'69414d','ps-sign-paint':'e4dfc5','ps-red':'9f3f49','ps-ink':'2e3033','ps-purple':'544358','ps-blue':'5266b1','ps-gold':'c1ad69','ps-bulb':'ded1a5','ps-white':'ddd8be','ps-panel':'ada995','ps-joint':'aaa68f','ps-service':'a4a28f','ps-vent':'555b53','ps-asphalt':'4b4c46','ps-line':'c1c0ab','ps-paving':'a6a596'})
@@ -54,6 +56,7 @@ colors.update({'nv-masonry':'dedfd7','nv-white':'e5e4db','nv-roof':'bfc3bd','nv-
 colors.update({'di-white':'d4d6ca','di-roof':'c3c4bb','di-blue':'37678b','di-red':'a13440','di-glass':'476371','di-frame':'abb3ac','di-door':'50697b','di-ac':'a8ada6','di-shadow':'4f5a5d','di-paving':'bab6aa','di-asphalt':'505252','di-pool':'8ca6b1','di-letter':'eee8d7','di-pink':'aa6a91','di-toe':'deb2bc','di-eye':'262d30','di-ivory':'daceb9','di-leaf':'4c6750','di-soil':'82725b','di-line':'c8c8b7'})
 colors.update({'om-stucco':'d5d2c5','om-ochre':'ac8b4e','om-trim':'b7b8ae','om-gray':'7c8583','om-glass':'34484c','om-frame':'9fa399','om-door':'626c68','om-roof':'b5b4a7','om-reveal':'4d534d','om-ac':'a6aca6','om-paving':'b4aca0','om-red':'9b4145','om-teal':'36787a','om-letter':'eee9db','om-soil':'7a6b53','om-leaf':'456341'})
 colors.update({'ih-paving':'b8b3a8','ih-silver':'aeb5b7','ih-rib':'c1c8c9','ih-roof':'b8bdbb','ih-blue':'225681','ih-red':'a53535','ih-glass':'3d6a72','ih-metal':'a4b4b8','ih-letter':'eee9de','ih-dark':'333c41','ih-cream':'c9c3b5','ih-red-roof':'9d5442'})
+colors.update({'ag-terrace-guard-glass':'b5cbd1','ag-fan-paint':'b9bcb9','ag-terrace-soffit-paint':'20252b'})
 colors.update({'ag-white':'e1e2df','ag-floor':'9b9d9d','ag-gray':'8b8e8f','ag-black':'20252b','ag-mat':'496257','ag-screen':'293354','ag-metal':'8a9398','ag-joint':'b5b9ba','ag-blue':'313f65','ag-purple':'684d80','ag-glass':'304553','ag-paving':'abaeaa','ag-range':'a2aeab','ag-green':'4d6658','ag-red':'a64e5a','ag-net':'4b5155'})
 colors.update({'pb-gray':'777a78','pb-joint':'555a58','pb-white':'e6e4db','pb-charcoal':'252b2e','pb-red':'b3212b','pb-blue':'29485c','pb-yellow':'dec345','pb-glass':'30434b','pb-metal':'9da6a8','pb-roof':'aaa9a2'})
 colors.update({'hd-asphalt':'383b3c','hd-silver':'aeb3b2','hd-concrete':'a4a59e','hd-orange':'bf5824','hd-red':'90352c','hd-cream':'d2bd90','hd-charcoal':'292e30','hd-joint':'60666a','hd-letter':'eee9db','hd-glass':'344b50','hd-roof':'a1a09a'})
@@ -87,21 +90,27 @@ colors.update({'fl-stucco':'c6c4bc','fl-panel-joint':'aaa89e','fl-shop-glass':'6
 # The Venetian's public interiors (2026-10-23): every 'vi-*' material, its textures and UVs (venetian_materials.py)
 sys.path.insert(0,'tools/strip-landmarks');import venetian_materials as VM;colors.update(VM.COLORS)
 patterns={'marble','stone','sandstone','brick','bricklight','copperpanel','copper2','copper3','walnut','velvet','panel','tile','roof','carpet','floralcarpet','botanical','nautical','parkcarpet','palazzocarpet','ticarpet','harrahscarpet','amethyst','shipwood','rootwood'}
+colors.update({'forum-column-dark':'242c2b','forum-column-vein':'837b69'})
 colors.update({'blvd-painted-metal':'40494b','blvd-green-paint':'648b32','blvd-copper':'b65d32','forum-flat-roof':'c3c3bd','forum-skylight':'355571','forum-limestone':'d6caba','forum-plinth':'b9ab95','forum-panel':'c5b7a2','forum-roof':'c3c3bd','forum-roof-trim':'a9aaa5','forum-service':'b0b5b2','forum-shadow':'4b4c46','forum-glass':'344c54','forum-bronze':'807664','forum-relief':'b7a384','forum-joint':'a79983'})
 colors.update({'stadium-concrete':'b6b3aa','stadium-steel':'6a7070','stadium-arch-paint':'deded6','stadium-shoring-paint':'367368','stadium-hoarding':'435b55','stadium-soil':'a6957c'})
+colors.update({'stadium-crane-red-paint':'a63132','stadium-equipment-dark-paint':'343b3b','stadium-equipment-glass':'344b57'})
 colors.update({'wy-red-fabric':'8f2636','wy-theater-roof-paint':'8c7f68','wy-theater-center-paint':'b9ac90','wy-theater-wall-paint':'9d9075','wy-equipment-paint':'a9aaa1'})
 colors.update({'sc-blue-paint':'7b8b9f','sc-blue-relief':'abb6c5','sc-rim-paint':'303b47','sc-atrium-glass':'477a96','sc-yellow-paint':'d8b521','sc-gold-paint':'c9a552'})
 colors.update({'coke-glass':'447967','showcase-roof':'426b73'})
 colors.update({'mgm-glass':'173e34','mgm-green':'33765f','mgm-frame':'688477','mgm-stone':'c8bfa9','mgm-bronze':'8f7950','mgm-joint':'79766b','mgm-screen':'182b3e','mgm-lit':'e6dcb9'})
 colors.update({'ph-stone':'c5b7a6','ph-paving':'b2aaa0','ph-silver':'aeb5b8','ph-metal':'555f65','ph-black':'20262a','ph-white':'dfded8','ph-glass':'456474','ph-red':'9e2436','ph-disc':'57646a','ph-awning':'c7c1b6','ph-joint':'827e78','ph-letter':'f8e5b7','ph-led-blue':'18344e','ph-led-purple':'372849','ph-led-line':'36546a'})
 colors.update({'ph-led-cylinder':'575687','ph-stucco':'d8c9b6','ph-roof':'b2aaa0','ph-window':'3d5260','ph-spandrel':'575357','ph-mullion':'8c8f91'})
+colors.update({'eataly-bronze':'858078','eataly-cobble-field':'8e8b80','eataly-cobble-band':'c9c4b6','eataly-cobble-0':'99968b','eataly-cobble-1':'a5a295','eataly-cobble-2':'85847b'})
+colors.update({'luxor-arrival-stone':'c9c4b4','luxor-arrival-carve':'8d887a','luxor-arrival-slot':'4b4b43'})
 colors.update({'park-white':'dbdad3','park-green':'7c885f','park-window':'465759','park-shadow':'343d3c','park-trim':'c7c8bc','park-joint':'b5b5ac','park-stone':'b6ad98','park-roof':'b7a991'})
 colors.update({'luxor-glass':'615845','luxor-pyramid':'202e33','luxor-stone':'cbc6b7','luxor-band':'b9b7a9','luxor-mullion':'5c6666','luxor-joint':'aaa79a'})
 colors.update({'mandalay-glass':'84764d','mandalay-white':'dbd9c8','mandalay-stone':'c9c2a7','mandalay-band':'aaa48d','mandalay-bronze':'8b8061','mandalay-window':'425951','mandalay-roof':'c1c0ae','mandalay-mint':'8eae98','mandalay-solar':'313d50'})
 colors.update({'cc-flat-roof':'a7a6a0','cc-metal':'444c51','cc-door':'465866','cc-gold':'ae874b','cc-brown':'6b5043','cc-asphalt':'535354','circus_pool':'367f8d'})
 colors.update({'cc-white':'dedbd7','cc-pink':'cf719d','cc-window':'505763','cc-sill':'c9c6c3','cc-shadow':'3b3d40','cc-blue':'497a9a','cc-yellow':'d6b535','cc-dome-glass':'aa668a','cc-dome-frame':'7e536b'})
+colors.update({'rw-arrival-red':'68392f','rw-arrival-bronze':'514038','rw-arrival-panel':'b2a48e'})
 colors.update({'rw-red':'a62c3b','rw-bronze':'685848','rw-mullion':'61554b','rw-white':'dfdbd2','rw-stone':'cec4ae','rw-fin':'8f806a','rw-gold':'b9995a','rw-joint':'b7afa0','rw-shadow':'303033','rw-metal':'747579','rw-led':'511629'})
 colors.update({'rw-flat-roof':'c7c8bc','rw-blue-panel':'4a6477','rw-paving':'c5b9a1','rw-planter':'b7ac95','rw-soil':'454638','rw-garden':'526142'})
+colors.update({'fb-entry-dark':'2e3436','fb-entry-stone':'a7ada9','fb-entry-water':'95a8ac','fb-entry-bronze':'6f573b','fb-entry-gold':'bda16c','fb-entry-glass':'625e43'})
 colors.update({'fb-flat-roof':'c9ceca','fb-canopy-white':'dedfd8','fb-soffit':'3c4549','fb-rib-metal':'a8b1b5','fb-limestone':'d6d7d1','fb-silver':'bbc4c8','fb-metal':'7e919b','fb-glass':'22566c','fb-joint':'284a59','fb-shadow':'293b45','fb-paving':'c5b99e','fb-pool-tile':'699b9f','fb_pool':'2a879a'})
 colors.update({'castle-limestone':'dbd8cd'})
 colors.update({'harrahs-membrane-paint':'c7c7bd','harrahs-service-paint':'a8aaa1'})
@@ -131,6 +140,7 @@ colors.update({'sg-stone':'c5b99e','sg-white':'dddcd4','sg-gold':'9a885d','sg-gl
 colors.update({'gc-cream':'d2c7ac','gc-white':'e3e0d2','gc-taupe':'a3947f','gc-window':'373b3b','gc-shadow':'393b36','gc-roof':'c3c1b2','gc-green':'85a797'})
 colors.update({'el-glass':'304e6b','el-spandrel':'304158','el-frame':'547086','el-roof':'c7cbca','el-white':'deded4','el-red':'9d354c','el-metal':'737f84','el-vent':'5d676a'})
 colors.update({'mi-white':'e1dfd3','mi-cream':'cbbd9e','mi-glass':'8e7750','mi-frame':'b4a078','mi-shadow':'333c3a','mi-roof':'bca886','mi-window':'424c48','mi-awning':'9b4641','mi-dome':'557c89','mi-banner':'564455','mi-letter':'424644'})
+colors.update({'wy-parking-deck-paint':'777a78','wy-parking-line-paint':'e3e0cf'})
 colors.update({'wy-white':'ded6c2','wy-stone':'c8b89c','wy-bronze':'5b4035','wy-band':'c3bdb3','wy-joint':'7b695d','wy-rim':'74523f','wy-trim':'ded2bc','wy-window':'3d4846','wy-shadow':'343637','wy-roof':'c4c0b2','wy-skylight':'94b7bf'})
 colors.update({'tr-white':'dddcd2','tr-glass':'a58b48','tr-spandrel':'8c784d','tr-frame':'ceba7e','tr-shadow':'343c3c','tr-roof':'c2c2b9','tr-letter':'70633e'})
 colors.update({'sh-white':'dededa','sh-window':'566c75','sh-frame':'aeb7b8','sh-sill':'c6cecf','sh-joint':'b8bfbd','sh-shadow':'303d42','sh-roof':'c7cbc8'})
@@ -163,6 +173,7 @@ colors.update({'scp-brick':'94705c','scp-brick-rib':'ad856c','scp-stucco':'cec3a
 colors.update({'sig-line':'bcbdb2','sig-gravel':'a68c72','sig-curb':'b0aea1','sig-metal-paint':'c6c9c4','sig-flat-roof-paint':'a8a99d','sig-coping':'deded5','sig-panel-joint':'8a938f','sig-dark':'293c42','sig-glass':'3b5965','sig-frame':'a5ada9','sig-letter':'505c59','sig-pier':'b1b8ae','sig-canopy-metal-paint':'919d95','sig-canopy-soffit-paint':'a7b3a8','sig-service':'b9bdb0','sig-paving':'b9afa0','sig-asphalt':'555552','sig-bollard':'a8b5ad'})
 colors.update({'bhc-ochre-stucco':'a58a51','bhc-flat-roof':'9b9d93','bhc-terrace-stone':'a59d86','bhc-roof-paint':'4b6c59','bhc-dark-timber':'423d29','bhc-stacked-ashlar':'75786b','bhc-stone-cap':'9a9d8b','bhc-glass':'2c433e','bhc-sage-shade':'78806a','bhc-bronze':'797143','bhc-service':'a7afa6','bhc-paving':'a8a08b','bhc-garden':'736c48','bhc-rail':'353c32'})
 colors.update({'f11-stucco':'b8b3a9','f11-flat-roof-paint':'c6c5bc','f11-roof-metal-paint':'a8afad','f11-roof-rib-paint':'c4c7bc','f11-coping':'a8a99f','f11-frame':'696e67','f11-door':'898b7e','f11-door-joint':'666c64','f11-glass':'334c4a','f11-service':'a0a49a','f11-red':'8b5952','f11-metal':'bbc0b7','f11-dark':'414945','f11-canopy':'817c66','f11-letter':'d7d2bd','f11-concrete':'ada795','f11-gravel':'b6a88b','f11-paving':'bcb6a5','f11-joint':'8e8c7d','f11-line':'c7c5b4','f11-bollard':'354e44','f11-white':'d3d5ca'})
+colors['f11-bay-bollard']='d4b12e'
 colors.update({'thq-flat-roof-paint':'b9bbb0','thq-cactus-foliage':'69734b','thq-cactus-rib':'778257','thq-stone-joint':'706e60','thq-white-stucco':'d1d0c7','thq-coping':'c9cbc2','thq-roof-paint':'343b3c','thq-soffit-paint':'303737','thq-frame':'3c4240','thq-glass':'384a4d','thq-stacked-ashlar':'9a9481','thq-stone-cap':'b5ae9b','thq-red-letter':'a42426','thq-handle':'b6bcb8','thq-service':'a4aaa0','thq-asphalt':'51534e','thq-paving':'a99e8a','thq-gravel':'a69f87','thq-curb':'a57164'})
 colors.update({'pf-white-metal-paint':'c4c8c4','pf-roof-paint':'cccec6','pf-coping':'b2b9b7','pf-base':'b2b2a5','pf-seam':'a5ada9','pf-door':'babfb9','pf-door-seam':'909e9a','pf-track':'9ca7a2','pf-frame':'747f7c','pf-service-door':'9caaa4','pf-glass':'344c50','pf-canopy':'b0b9b1','pf-service':'bec3bb','pf-grille':'515d5a','pf-concrete':'a9a99c','pf-paving-joint':'92958b','pf-bollard':'b4a954'})
 colors['hd-flat-roof-paint']='bebfb6'
@@ -180,7 +191,9 @@ colors.update({'cg-red-stucco':'a94943','cg-flat-roof-paint':'a7aaa1','cg-white'
 colors.update({'sc17-white-paint':'d6d6d0','sc17-gray-paint':'999e9c','sc17-roof-paint':'aaa99d','sc17-black-paint':'303534','sc17-black-roof-paint':'3a403f','sc17-glass':'657c7e','sc17-metal-paint':'838b89','sc17-service-paint':'aaaead','sc17-vent':'424c4a','sc17-green-paint':'258250','sc17-red-letter':'ac3f3d','sc17-white-letter':'e1e4dc','sc17-dark-letter':'474f4a','sc17-paving':'aaa9a2','sc17-island':'989f98','sc17-display':'82918a','sc17-button':'baac63','sc17-asphalt':'555956'})
 colors.update({'cf-stucco':'d8d9cc','cf-white-paint':'e3e4da','cf-tile-paint':'828277','cf-roof-seam-paint':'6d6f66','cf-roof-paint':'aeaea2','cf-glass':'536b70','cf-door-paint':'b5b8a7','cf-gold-paint':'9f9268','cf-louver-paint':'879487','cf-iron-paint':'3b4740','cf-service-paint':'979c93','cf-pavers':'a49a85','cf-paving':'b6b5a7','cf-grass':'5e7149','cf-fabric-paint':'d4d5c9'})
 colors.update({'tm-stucco':'d6d4c3','tm-red-paint':'ad4c4b','tm-white-paint':'d9dad1','tm-roof-paint':'aaa79d','tm-glass':'4e6768','tm-metal-paint':'67736f','tm-service-paint':'8e9894','tm-vent':'394845','tm-asphalt':'575b58','tm-paving':'b1afa6','tm-red-letter':'b84946','tm-white-letter':'e0dfd3'})
+colors.update({'dn-gravel':'a59a80','dn-stone-border':'999084','mp-address-blue-paint':'5e6789','mp-scar-paint':'afb2aa'})
 colors.update({'dn-gray-paint':'b2b6b0','dn-cream-paint':'d0d2c7','dn-roof-paint':'aaa99d','dn-red-paint':'984848','dn-black-paint':'333c39','dn-glass':'657f7a','dn-panel-seam-paint':'a2a99e','dn-metal-paint':'84918a','dn-yellow-paint':'b4a65c','dn-sign-red-paint':'a74742','dn-sign-gold-paint':'c0a765','dn-white-letter':'e3e4d8','dn-red-letter':'ac4946','dn-paving':'aaa99c','dn-service-paint':'949e99','dn-vent':'414d48','dn-asphalt':'565a55','dn-line-paint':'c8c9bb'})
+colors.update({'ad-gallery-rail-paint':'303b40','ad-gallery-coating-paint':'657581'})
 colors.update({'ad-white-stucco':'ced3cf','ad-fascia-paint':'a4aeaa','ad-roof-paint':'b9bcb1','ad-soffit-paint':'c5cbc4','ad-belt-paint':'8b9897','ad-downpipe-paint':'8b9591','ad-paving-concrete':'b1aea2','ad-gravel':'8b8771','ad-line-paint':'c5c9bc','ad-service-paint':'999f99','ad-vent-paint':'444e4a','ad-sign-frame-paint':'c3c7be','ad-sign-paint':'696f69','ad-white-letter':'e5e6db','ad-entry-frame-paint':'727a73'})
 
 colors.update({'w17-white-stucco':'d5d7cf','w17-red-paint':'ba4f42','w17-cream-paint':'e0d39d','w17-roof-paint':'bbbdb2','w17-frame-paint':'a0aaa6','w17-glass':'415453','w17-metal-paint':'858e86','w17-grille-paint':'3f4844','w17-paper-paint':'c9c7ae','w17-fixture-paint':'565f5a','w17-door-paint':'919e93','w17-vent-paint':'4b5650','w17-service-paint':'9da69b','w17-rooflight-paint':'c2c5b8','w17-billboard-back-paint':'9b9f94','w17-paving-concrete':'b6b1a1','w17-shed-paint':'b9b7a2'})
@@ -199,7 +212,7 @@ colors.update({'rsv-tan-stucco':'c8bda6','rsv-coping-paint':'857567','rsv-plinth
 colors.update({'wsc-cream-stucco':'d2c5a1','wsc-trim-stone':'e1d5b6','wsc-plinth-stone':'bbad8c','wsc-relief-paint':'b78565','wsc-soffit-paint':'bfb292','wsc-roof-paint':'b4a58b','wsc-hip-metal-paint':'737d7a'})
 colors.update({'ccourt-column-color-paint':'ffffff','ccourt-roof-paint':'8e9692','ccourt-soffit-paint':'6d7770','ccourt-fascia-paint':'ffffff','ccourt-trim-paint':'b1b5a9','ccourt-steel-paint':'a2aba5','ccourt-fixture-paint':'292f2b','ccourt-column-stone':'d2d1c4','ccourt-gold-paint':'c4aa52','ccourt-floor-stone':'a7a28b','ccourt-bar-purple':'735879','ccourt-counter-paint':'555b58','ccourt-service-paint':'626c65','ccourt-bottle-paint':'69785d','ccourt-seat-paint':'625b72','ccourt-rail-paint':'3b443d','ccourt-sign-purple':'4a3d67','ccourt-white-letter':'dedfd5','ccourt-gold-letter':'d9bd6a'})
 colors.update({'bt-tan-stucco':'b5aa8d','bt-roof-paint':'8c7963','bt-fascia-paint':'b4a991','bt-membrane-paint':'d5d9cc','bt-frame-paint':'c4c8b8','bt-door-paint':'89594b','bt-handle-paint':'909987','bt-drain-paint':'aba48d','bt-white-paint':'d9dccf','bt-infill-paint':'d0d4c7','bt-plinth-paint':'a39b83','bt-curb-paint':'b9b9a7','bt-service-paint':'a7afa1','bt-vent-paint':'525e52','bt-gallery-concrete':'a5a38f','bt-rail-paint':'81745a','bt-asphalt':'5e6659','bt-court-concrete':'b4b29d','bt-pool-tile':'9fbcb4','bt_pool':'528f8c','bt-coping-paint':'c4c6b6','bt-shade-paint':'c6cbbc','bt-soil-paint':'767453','bt-sign-paint':'b3b5a4','bt-line-paint':'cdd0c0','bt-wheelstop-concrete':'a7a995','bt-glass':'52685f','bt-sill-paint':'c2c8b5'})
-colors.update({'ssk-cladding-paint':'545d58','ssk-rib-paint':'3b443f','ssk-frame-paint':'3d4944','ssk-glass':'34514f','ssk-steel-paint':'a7aaa0','ssk-awning-paint':'626c63','ssk-soffit-paint':'d6d8cc','ssk-roof-paint':'aab2a5','ssk-seam-paint':'6c756b','ssk-deck-concrete':'9a9a8e','ssk-wall-concrete':'b1afa1','ssk-step-concrete':'b0b1a4','ssk-counter-paint':'9b9e8d','ssk-seat-paint':'a1ad70','ssk-letter-paint':'e2e5d5','ssk-paving-concrete':'b0aa96'})
+colors.update({'lvw-arcade-paving':'a9a9a4','ssk-emblem-green':'75a947','ssk-cladding-paint':'545d58','ssk-rib-paint':'3b443f','ssk-frame-paint':'3d4944','ssk-glass':'34514f','ssk-steel-paint':'a7aaa0','ssk-awning-paint':'626c63','ssk-soffit-paint':'d6d8cc','ssk-roof-paint':'aab2a5','ssk-seam-paint':'6c756b','ssk-deck-concrete':'9a9a8e','ssk-wall-concrete':'b1afa1','ssk-step-concrete':'b0b1a4','ssk-counter-paint':'9b9e8d','ssk-seat-paint':'a1ad70','ssk-letter-paint':'e2e5d5','ssk-paving-concrete':'b0aa96'})
 colors.update({'fgs-tan-stucco':'b7aa8f','fgs-roof-paint':'d7dbce','fgs-red-plinth-paint':'ad7469','fgs-cream-coping-paint':'c9c7b6','fgs-frame-paint':'a5a28c','fgs-door-paint':'9c9984','fgs-hardware-paint':'989e94','fgs-light-paint':'565c55','fgs-vent-paint':'424b44','fgs-drain-paint':'b4b7a6','fgs-curb-paint':'bbb9a7','fgs-service-paint':'b3b7a7','fgs-grille-paint':'7f877c','fgs-canopy-paint':'6e7952','fgs-concrete':'aaa793'})
 colors.update({'perception-white-paint':'deded2','perception-black-paint':'242927','perception-coping-paint':'c7c9bf','perception-yellow-paint':'cbbb62','perception-black-letter':'252d29','perception-door-frame-paint':'636f69','perception-glass':'354d4b','perception-vent-paint':'424d48','perception-roof-paint':'bbbcb0','perception-servicewall-paint':'b3b6aa','perception-service-paint':'9aa397','perception-gravel':'b8b29b','perception-paving-concrete':'b9b6aa','perception-bollard-paint':'344039','perception-utility-paint':'aaa48b','perception-leaf':'566a41'})
 
@@ -212,6 +225,10 @@ colors.update({'lob-stone-paint':'c8bda8','lob-glyph-paint':'c8bda8','lob-paving
 
 colors.update({'arc-roof-paint':'c3c8c2','arc-soffit-paint':'b0b7b0','arc-edge-paint':'b2b8b0','arc-timber':'a58b69','arc-foot-paint':'969c90','arc-bolt-paint':'68736c','arc-container-paint':'c2c8bb','arc-rib-paint':'a8b3a8','arc-door-paint':'b4beb1','arc-asphalt':'555b53','arc-line-paint':'b9bcb0'})
 
+colors.update({'c63-shade-fabric':'233b44'})
+
+colors.update({'vp-soleia-curtain-paint':'b52c28','vp-soleia-cushion-paint':'b8322b'})
+
 def material(k):
  if k in materials:return materials[k]
  rgb=np.array([int(colors[k][i:i+2],16)/255 for i in (0,2,4)]);linear=np.where(rgb<.04045,rgb/12.92,((rgb+.055)/1.055)**2.4)
@@ -219,6 +236,10 @@ def material(k):
  if k.startswith('vi-'):
   VM.build(bpy,m,bs,k,linear);materials[k]=m;return m
  metal=k in ['silver','steel','brass','bronze','gold','blackiron','copper','copperpanel','copper2','copper3'];glass=k in ['glass','shopglass','cabinglass','darkglass','water','palazzo-glass','harrahs-window','linq-glass','linq-blue'];bs.inputs['Metallic'].default_value=.62 if metal else .2 if glass else .0;bs.inputs['Roughness'].default_value=.28 if metal else .14 if glass else .74
+ if k in ['fb-entry-gold','fb-entry-bronze']:
+  bs.inputs['Metallic'].default_value=.65;bs.inputs['Roughness'].default_value=.34
+ if k in ['fb-entry-glass','fb-entry-water']:
+  bs.inputs['Metallic'].default_value=.25;bs.inputs['Roughness'].default_value=.24
  if k in ['hel-panel-paint','hel-cap-paint','hel-metal-paint']:
   bs.inputs['Metallic'].default_value=.6;bs.inputs['Roughness'].default_value=.43
  if k=='hel-guard-glass':
@@ -289,6 +310,19 @@ def material(k):
   bs.inputs['Emission Color'].default_value=(*linear,1);bs.inputs['Emission Strength'].default_value=.18
  if k.startswith('lob-'):
   bs.inputs['Roughness'].default_value=.94;bs.inputs['Specular IOR Level'].default_value=.18
+ if k.startswith('pmr-'):
+  bs.inputs['Roughness'].default_value=.88
+  if k in ['pmr-chrome','pmr-mirror']:bs.inputs['Metallic'].default_value=.72;bs.inputs['Roughness'].default_value=.25
+  if k in ['pmr-pink-led','pmr-blue-led','pmr-flame','pmr-lamp-blue','pmr-lamp-pink']:
+   bs.inputs['Emission Color'].default_value=(*linear,1);bs.inputs['Emission Strength'].default_value=.7
+ if k=='pmr-roof-paint':
+  # Original staggered shingle courses; no reference-image pixels.
+  n=512;vv,uu=np.mgrid[0:n,0:n];row=vv//64;col=((uu+(row%2)*64)%512)//128
+  rng=np.random.default_rng(160585815);tiles=rng.uniform(-.07,.07,(8,4));tone=tiles[row,col]+rng.normal(0,.012,(n,n))
+  seam=(vv%64<3)|((uu+(row%2)*64)%128<2);tone[seam]-=.12
+  pix=np.ones((n,n,4),dtype=np.float32);pix[:,:,:3]=np.clip(rgb[None,None,:]+tone[:,:,None],0,1)
+  im=bpy.data.images.new('Original Peppermill staggered shingles',width=n,height=n);im.pixels.foreach_set(pix.flatten());im.pack()
+  tx=m.node_tree.nodes.new('ShaderNodeTexImage');tx.image=im;m.node_tree.links.new(tx.outputs['Color'],bs.inputs['Base Color']);bs.inputs['Roughness'].default_value=.94
  if k=='lob-glyph-paint':
   for suffix,socket in [('stone','Base Color'),('normal',None)]:
    im=bpy.data.images.load(str((OUT/('textures/luxor-obelisk-original-'+suffix+'.png')).resolve()));im.pack()
@@ -299,7 +333,7 @@ def material(k):
  if k=='chy-canopy-glass':
   m.use_backface_culling=False
   bs.inputs['Alpha'].default_value=.35;bs.inputs['Roughness'].default_value=.27;m.diffuse_color=(*linear,.35);m.surface_render_method='DITHERED'
- if k=='wlf-rail-glass':
+ if k in ['wlf-rail-glass','ag-terrace-guard-glass']:
   bs.inputs['Alpha'].default_value=.16;bs.inputs['Roughness'].default_value=.19;m.diffuse_color=(*linear,.16);m.surface_render_method='DITHERED'
  if k=='wlf-window-glass':
   bs.inputs['Metallic'].default_value=.25;bs.inputs['Roughness'].default_value=.25
@@ -353,7 +387,7 @@ def material(k):
   normal=np.ones((n,n,4),dtype=np.float32);normal[:,:,:3]=[.5,.5,1];normal[:,:,0]+=.025*np.cos(u*240+np.sin(v*8)*2)
   ni=bpy.data.images.new('Original plywood grain normal '+k,width=n,height=n);ni.colorspace_settings.name='Non-Color';ni.pixels.foreach_set(normal.flatten());ni.pack()
   tx=m.node_tree.nodes.new('ShaderNodeTexImage');tx.image=ni;nm=m.node_tree.nodes.new('ShaderNodeNormalMap');m.node_tree.links.new(tx.outputs['Color'],nm.inputs['Color']);m.node_tree.links.new(nm.outputs['Normal'],bs.inputs['Normal'])
- if k in ['bhc-roof-paint','oo-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint']:
+ if k in ['bhc-roof-paint','oo-roof-paint','oo-west-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint']:
   # Original small-scale shingle colour/normal maps, packed in the GLB; no external image reuse.
   n=1024;v,u=np.mgrid[0:n,0:n];row=v//32;col=((u+(row%2)*32)%n)//64
   rng=np.random.default_rng(113);tiles=rng.uniform(.90,1.10,(32,16));seam=(v%32<2)|((u+(row%2)*32)%64<1)
@@ -451,13 +485,14 @@ def add(name):
   if g['material'].startswith('luxor-sculpt-') or g['material'] in ['lob-sculpt-stone','ph-disc','ice','rootwood','rope','gondola-lacquer','gondola-upholstery','gondola-brass','gondola-chrome','gondola-wood'] or (g['material']=='bronze' and g['source']=='polo-lobby'):
    for polygon in me.polygons:polygon.use_smooth=True
   if g['material'].startswith('vi-'):VM.uvs(me,g['material'])
-  if g['material'] in patterns or g['material'] in ['bcr-tile-paint','bcr-curved-tile-paint','lob-glyph-paint','mm-display-paint','wm-led-paint','ccourt-fascia-paint','ccourt-column-color-paint','bhs-roof-metal-paint','sky','ph-led-cylinder','luxor-pyramid','rw-led','bhc-roof-paint','oo-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint','ms-white-brick-paint','mk-peeling-white-paint','cu-board0','cu-board1','cu-board2']:
+  if g['material'] in patterns or g['material'] in ['pmr-roof-paint','bcr-tile-paint','bcr-curved-tile-paint','lob-glyph-paint','mm-display-paint','wm-led-paint','ccourt-fascia-paint','ccourt-column-color-paint','bhs-roof-metal-paint','sky','ph-led-cylinder','luxor-pyramid','rw-led','bhc-roof-paint','oo-roof-paint','oo-west-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint','ms-white-brick-paint','mk-peeling-white-paint','cu-board0','cu-board1','cu-board2']:
    uv=me.uv_layers.new(name='Metres')
    for poly in me.polygons:
     axis=max(range(3),key=lambda i:abs(poly.normal[i]))
     for li in poly.loop_indices:
      p=me.vertices[me.loops[li].vertex_index].co
-     if g['material']=='bcr-tile-paint':uv.data[li].uv=((p.y if abs(poly.normal.x)>abs(poly.normal.y) else p.x)/1.12,p.z/.78)
+     if g['material']=='pmr-roof-paint':uv.data[li].uv=((p.y if abs(poly.normal.x)>abs(poly.normal.y) else p.x)/2.4,p.z/1.3)
+     elif g['material']=='bcr-tile-paint':uv.data[li].uv=((p.y if abs(poly.normal.x)>abs(poly.normal.y) else p.x)/1.12,p.z/.78)
      elif g['material']=='bcr-curved-tile-paint':uv.data[li].uv=(math.atan2(-p.y-294.85,p.x+215.4)*18/1.12,math.hypot(p.x+215.4,-p.y-294.85)/1.6)
      elif g['material']=='ccourt-fascia-paint':uv.data[li].uv=(.5,(p.z-4.6)/1.0)
      elif g['material']=='ccourt-column-color-paint':uv.data[li].uv=(.5,(p.z-3.6)/.95)
@@ -468,7 +503,7 @@ def add(name):
      elif g['material']=='ph-led-cylinder':uv.data[li].uv=((math.atan2(-p.y-642.5,p.x-43.5)-math.pi/2)%math.tau/math.pi,(p.z-8.5)/21.5)
      elif g['material']=='bhs-roof-metal-paint':uv.data[li].uv=((.881*p.x+.473*p.y)/2,(.473*p.x-.881*p.y)/.85)
      elif g['material']=='bhc-roof-paint':uv.data[li].uv=((.766*p.x-.643*p.y)/6.4,(-.643*p.x-.766*p.y)/6.4)
-     elif g['material'] in ['oo-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint']:uv.data[li].uv=(p.x/6.4,p.y/6.4)
+     elif g['material'] in ['oo-roof-paint','oo-west-roof-paint','spo-roof-paint','spc-roof-paint','bt-roof-paint']:uv.data[li].uv=(p.x/6.4,p.y/6.4)
      elif g['material']=='ms-white-brick-paint':uv.data[li].uv=((p.y if axis==0 else p.x)/2.4,p.z/2.4)
      elif g['material']=='mk-peeling-white-paint':uv.data[li].uv=((p.y if axis==0 else p.x)/.85,p.z/.85)
      elif g['material']=='sky':uv.data[li].uv=(p.x/64,p.y/64)
@@ -479,6 +514,14 @@ def add(name):
      else:uv.data[li].uv=(p.y/2,p.z/2) if axis==0 else (p.x/2,p.z/2) if axis==1 else (p.x/2,p.y/2)
  for t in data['labels']:
   cu=bpy.data.curves.new(t['text'],'FONT');cu.body=t['text'];cu.align_x='CENTER';cu.size=t['size'];cu.extrude=.008;cu.bevel_depth=.002;cu.bevel_resolution=1;cu.materials.append(material(t['material']));o=bpy.data.objects.new(t['text'],cu);bpy.context.collection.objects.link(o);x,y,z=t['position'];o.location=(x,-z,y);o.rotation_euler=(math.pi/2,0,-t['yaw']+math.pi);o['property']=name.split('-')[0];o['source']=t['source'];o['detail']=t.get('detail',1)
+  # Optional authored label styling; absent fields preserve every existing label.
+  if t.get('roll'):
+   from mathutils import Matrix
+   o.rotation_euler=(o.rotation_euler.to_matrix().to_4x4() @ Matrix.Rotation(t['roll'],4,'Z')).to_euler()
+  if t.get('letterStyle')=='script':
+   cu.resolution_u=3;cu.bevel_depth=0
+   fp=Path('/System/Library/Fonts/Supplemental/SnellRoundhand.ttc')
+   if fp.exists():cu.font=bpy.data.fonts.load(str(fp),check_existing=True)
   if t['material'] in ['wm-gold-letter','wm-screen-letter']:
    if t['material']=='wm-gold-letter':
     fp=Path('/System/Library/Fonts/Supplemental/SnellRoundhand.ttc')
@@ -487,6 +530,9 @@ def add(name):
    bpy.context.view_layer.objects.active=o;o.select_set(True);bpy.ops.object.convert(target='MESH')
    for vert in o.data.vertices:vert.co.z+=1.65*(vert.co.x/7.62)**2
    o.select_set(False)
+  if t['material']=='pmr-sign-letter':
+   fp=Path('/System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf')
+   if fp.exists():cu.font=bpy.data.fonts.load(str(fp),check_existing=True)
   if t['material'] in ['cv-white-letter','lob-blue-letter']:
    fp=Path('/System/Library/Fonts/Supplemental/Arial Bold.ttf')
    if fp.exists():cu.font=bpy.data.fonts.load(str(fp),check_existing=True)

@@ -3,6 +3,7 @@ Room positions and heights are photo-estimates; existing unrelated sites retaine
 """
 from common import *
 from forum_shops import facade_frame
+from retail_signs import plate
 KEY='nirvanaHotel'
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/motel';B.detail=0
@@ -54,9 +55,16 @@ def exterior(B):
  G=Frame(B,50.45,2683,math.pi/2,y=0)
  G.box('nv-white',(0,4.12,0),(7.5,1.3,.18))
  G.text('NIRVANA HOTEL',(.4,4.12,-.13),.54,'nv-fascia')
- for j in range(7):
-  a=(j-3)*.25;cx=-2.8+.38*math.sin(a);cy=4.0+.34*math.cos(a)
-  G.path('nv-lotus',[(-2.8,3.9,-.16),(cx-.1,cy,-.16),(cx,cy+.22,-.16),(cx+.1,cy,-.16),(-2.8,3.9,-.16)],.035,6)
+ # Original filled lotus petals; negative local X is viewer-right on this facade.
+ for j in [-3,-2,-1,0,1,2,3]:
+  angle=j*.34;length=.67 if j==0 else .60;origin=(-2.8+j*.025,3.84)
+  pts=[]
+  for side in [1,-1]:
+   ts=np.linspace(0,1,13) if side==1 else np.linspace(1,0,13)
+   for t in ts:
+    u=side*.115*math.sin(math.pi*t);v=length*t
+    pts.append((origin[0]+u*math.cos(angle)+v*math.sin(angle),origin[1]-u*math.sin(angle)+v*math.cos(angle)))
+  plate(G,Polygon(pts).buffer(0),'nv-lotus',-.17-abs(j)*.003,.025)
  for u in [-2.5,2.5]:G.box('nv-metal',(u,3.55,.03),(.08,.9,.08))
  # String bulbs attached to the office eave, no runtime light creation.
  G=Frame(B,50.35,2683,math.pi/2,y=0)

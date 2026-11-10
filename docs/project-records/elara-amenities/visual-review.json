@@ -1,0 +1,47 @@
+{
+  "baseline": {
+    "views": [
+      "front",
+      "pool",
+      "arrival",
+      "overview"
+    ],
+    "inspected": true,
+    "finding": "All cameras valid exterior views before edits."
+  },
+  "preview": {
+    "views": [
+      "front",
+      "pool",
+      "arrival",
+      "overview"
+    ],
+    "inspected": true,
+    "finding": "Stepped pool, two-level galleries, yellow canopies, palms and stair installed. Preview rail panels were opaque; exporter corrected to translucent glass and outer edge guards added, pending installation and final inspection."
+  },
+  "remaining": "Exact site elevation, curved north cabana gallery, complete cabana count, second spa, pylon/service frontage and full interior links remain deferred.",
+  "initialWalk": {
+    "passed": true,
+    "segments": 80,
+    "endpointImagesInspected": 14,
+    "note": "All lower paths, spiral up/down and upper galleries passed. Added outer guards and explicit stair-to-gallery connection now being rechecked."
+  },
+  "upperRecheck": {
+    "passed": true,
+    "segments": 74,
+    "endpointImagesInspected": 6,
+    "finding": "Translucent glass and outside guards visible; spiral connects through landing to both galleries under normal movement."
+  },
+  "currentRouteSegments": 86,
+  "final": {
+    "views": [
+      "front",
+      "pool",
+      "arrival",
+      "overview"
+    ],
+    "inspected": true,
+    "finding": "All matching final daylight images inspected after the sole bake; glass guards corrected, spiral stair and two-level gallery visible. Tower and arrival preserved.",
+    "performance": "Median front/pool/arrival/overview32.9/33.4/27.7/17.4ms; p9547.7/52.4/52.8/27.4ms vs44.6/48.8/49.6/24.0baseline. Local fixed-camera p95regression+3.1/+3.6/+3.2/+3.4ms retained, not whole-city proof."
+  }
+}

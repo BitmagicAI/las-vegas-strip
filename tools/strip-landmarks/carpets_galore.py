@@ -25,6 +25,13 @@ def exterior(B):
     F.text('CARPETS GALORE',(L/2,4.68,-.19),min(1.4,L/11),'cga-blue-letter')
     F.text('FLOORING • TILE • WOOD',(L/2,3.69,-.2),min(.34,L/35),'cga-black-letter')
     u=L*.75;F.box('cga-frame-paint',(u,1.55,-.26),(1.14,2.72,.08));F.box('cga-glass',(u,1.55,-.32),(1,2.57,.04));F.tube('cga-frame-paint',(u+.34,1.08,-.36),(u+.34,1.65,-.36),.025,8)
+   # January 2026 west reference: compact roof-mounted sign flood housings.
+   # Inferred sizes; non-emitting geometry preserves the runtime light set.
+   if nx<-.7 and L>6:
+    for u in [L*.25,L*.75]:
+     F.box('cga-frame-paint',(u,5.83,-.13),(.08,.42,.08))
+     F.box('cga-black-paint',(u,6.05,-.25),(.42,.23,.24))
+     F.box('cga-white-paint',(u,6.01,-.38),(.34,.12,.025))
    F.text('1601',(L-.65,5.33,-.17),.23,'cga-black-letter')
   elif north:
    # East narrow masonry bay and western corrugated warehouse wall.

@@ -1,0 +1,136 @@
+[
+  {
+    "command": [
+      "bitmagic",
+      "check",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-0.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-1.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/check-public.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-2.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lazy-lod.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-3.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/city-lighting-resize.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-4.log"
+  },
+  {
+    "command": [
+      "node",
+      "--import",
+      "./tools/ts-register.mjs",
+      "tests/site-lights.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-5.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-bellagio-arcade-pavilions.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-6.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-bellagio-mapped-bridge-clearance.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-7.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/walk-bellagio-pavilions.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-8.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/test-bellagio-curved-roofs.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-9.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/city-exteriors/stair-bellagio-curved-roofs.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-check-10.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/optimize/check-runtime-glbs.py",
+      "--changed",
+      "origin/next"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-installed-0.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-installed-1.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "check"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-installed-2.log"
+  },
+  {
+    "command": [
+      "bitmagic",
+      "reload",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "/tmp/bellagio-roof-installed-3.log"
+  }
+]

@@ -1,0 +1,236 @@
+{
+  "method": "Identical seven cameras, neutral daylight,960x540 DPR1 ultra,900 warmup+60 settle+180 timed frames. Static samples; no traversal or improvement claim.",
+  "views": [
+    {
+      "name": "rotundas-ground",
+      "before": {
+        "name": "rotundas-ground",
+        "eye": [
+          146,
+          2.2,
+          -74
+        ],
+        "target": [
+          168,
+          5,
+          -96
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19
+      },
+      "after": {
+        "name": "rotundas-ground",
+        "eye": [
+          146,
+          2.2,
+          -74
+        ],
+        "target": [
+          168,
+          5,
+          -96
+        ],
+        "p50": 16.59999990463257,
+        "p95": 18.700000047683716
+      }
+    },
+    {
+      "name": "rotundas-aerial",
+      "before": {
+        "name": "rotundas-aerial",
+        "eye": [
+          170,
+          44,
+          -27
+        ],
+        "target": [
+          170,
+          9,
+          -96
+        ],
+        "p50": 16.799999952316284,
+        "p95": 18.59999990463257
+      },
+      "after": {
+        "name": "rotundas-aerial",
+        "eye": [
+          170,
+          44,
+          -27
+        ],
+        "target": [
+          170,
+          9,
+          -96
+        ],
+        "p50": 16.699999809265137,
+        "p95": 18.90000009536743
+      }
+    },
+    {
+      "name": "chapel-and-paths",
+      "before": {
+        "name": "chapel-and-paths",
+        "eye": [
+          220,
+          14,
+          -54
+        ],
+        "target": [
+          205,
+          3,
+          -80
+        ],
+        "p50": 17,
+        "p95": 24
+      },
+      "after": {
+        "name": "chapel-and-paths",
+        "eye": [
+          220,
+          14,
+          -54
+        ],
+        "target": [
+          205,
+          3,
+          -80
+        ],
+        "p50": 17.200000047683716,
+        "p95": 20.90000009536743
+      }
+    },
+    {
+      "name": "garden-south",
+      "before": {
+        "name": "garden-south",
+        "eye": [
+          200,
+          16,
+          5
+        ],
+        "target": [
+          179,
+          3,
+          -27
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19.700000047683716
+      },
+      "after": {
+        "name": "garden-south",
+        "eye": [
+          200,
+          16,
+          5
+        ],
+        "target": [
+          179,
+          3,
+          -27
+        ],
+        "p50": 16.799999952316284,
+        "p95": 19.09999990463257
+      }
+    },
+    {
+      "name": "west-roof",
+      "before": {
+        "name": "west-roof",
+        "eye": [
+          44,
+          34,
+          -26
+        ],
+        "target": [
+          66,
+          23,
+          -54
+        ],
+        "p50": 51.59999990463257,
+        "p95": 65.29999995231628
+      },
+      "after": {
+        "name": "west-roof",
+        "eye": [
+          44,
+          34,
+          -26
+        ],
+        "target": [
+          66,
+          23,
+          -54
+        ],
+        "p50": 45,
+        "p95": 56.89999985694885
+      }
+    },
+    {
+      "name": "gallery-foot",
+      "before": {
+        "name": "gallery-foot",
+        "eye": [
+          195.31,
+          2,
+          6
+        ],
+        "target": [
+          195.31,
+          4,
+          19
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.90000009536743
+      },
+      "after": {
+        "name": "gallery-foot",
+        "eye": [
+          195.31,
+          2,
+          6
+        ],
+        "target": [
+          195.31,
+          4,
+          19
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.59999990463257
+      }
+    },
+    {
+      "name": "gallery-top",
+      "before": {
+        "name": "gallery-top",
+        "eye": [
+          195.31,
+          7.8,
+          25
+        ],
+        "target": [
+          195.31,
+          3,
+          12
+        ],
+        "p50": 17.40000009536743,
+        "p95": 23.299999952316284
+      },
+      "after": {
+        "name": "gallery-top",
+        "eye": [
+          195.31,
+          7.8,
+          25
+        ],
+        "target": [
+          195.31,
+          3,
+          12
+        ],
+        "p50": 16.799999952316284,
+        "p95": 18.600000143051147
+      }
+    }
+  ]
+}

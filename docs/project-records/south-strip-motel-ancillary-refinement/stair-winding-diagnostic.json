@@ -1,0 +1,85 @@
+{
+  "beforeTriangles": 1042,
+  "afterTriangles": 1042,
+  "changedTriangles": [
+    {
+      "index": 236,
+      "before": [
+        [
+          105.0,
+          0.35,
+          2711.35
+        ],
+        [
+          106.30000000000001,
+          0.35,
+          2711.35
+        ],
+        [
+          106.30000000000001,
+          3.25,
+          2717.2
+        ]
+      ],
+      "after": [
+        [
+          105.0,
+          3.25,
+          2717.2
+        ],
+        [
+          106.30000000000001,
+          3.25,
+          2717.2
+        ],
+        [
+          106.30000000000001,
+          0.35,
+          2711.35
+        ]
+      ]
+    },
+    {
+      "index": 237,
+      "before": [
+        [
+          105.0,
+          0.35,
+          2711.35
+        ],
+        [
+          106.30000000000001,
+          3.25,
+          2717.2
+        ],
+        [
+          105.0,
+          3.25,
+          2717.2
+        ]
+      ],
+      "after": [
+        [
+          105.0,
+          3.25,
+          2717.2
+        ],
+        [
+          106.30000000000001,
+          0.35,
+          2711.35
+        ],
+        [
+          105.0,
+          0.35,
+          2711.35
+        ]
+      ]
+    }
+  ],
+  "sameUndirectedTriangles": false,
+  "hypothesis": "Original Nirvana stair ramp faces down; correct winding via upface preserves coordinates and should restore standable normal. Actual installed test pending.",
+  "sameRampCorners": true,
+  "note": "Upface reverses quad order and changes its triangulation diagonal; the four corners, plane, width and rise remain unchanged.",
+  "actualInstalledResult": "All 26 segments passed, including ascent/descent of Nirvana stair. Four endpoint captures inspected. Same walk script and camera setup as failed baseline."
+}

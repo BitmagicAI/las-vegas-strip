@@ -1,0 +1,170 @@
+{
+  "doorEvents": [],
+  "routes": [
+    {
+      "name": "North lake promenade segment and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -14,
+            0.24,
+            260
+          ],
+          "position": {
+            "x": -13.99992561340332,
+            "y": 0.3112516689300537,
+            "z": 259.91302490234375
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -14,
+            0.24,
+            280
+          ],
+          "position": {
+            "x": -14.000007629394531,
+            "y": 0.3009963321685791,
+            "z": 280.4837646484375
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            -14,
+            0.24,
+            260
+          ],
+          "position": {
+            "x": -14,
+            "y": 0.29497280597686765,
+            "z": 260.000732421875
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            -14,
+            0.24,
+            240
+          ],
+          "position": {
+            "x": -13.999988555908203,
+            "y": 0.3176503467559814,
+            "z": 240.0458984375
+          }
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "North casino approach segment and return",
+      "results": [
+        {
+          "segment": 1,
+          "reached": true,
+          "goal": [
+            -195,
+            0.18,
+            215
+          ],
+          "position": {
+            "x": -195.0000457763672,
+            "y": 0.20996370792388913,
+            "z": 214.967529296875
+          }
+        },
+        {
+          "segment": 2,
+          "reached": true,
+          "goal": [
+            -193,
+            0.18,
+            221
+          ],
+          "position": {
+            "x": -193.02415466308594,
+            "y": 0.1999411869049072,
+            "z": 220.93016052246094
+          }
+        },
+        {
+          "segment": 3,
+          "reached": true,
+          "goal": [
+            -190,
+            0.18,
+            225
+          ],
+          "position": {
+            "x": -189.7508087158203,
+            "y": 0.3374719905853271,
+            "z": 225.3514862060547
+          }
+        },
+        {
+          "segment": 4,
+          "reached": true,
+          "goal": [
+            -193,
+            0.18,
+            221
+          ],
+          "position": {
+            "x": -192.97439575195312,
+            "y": 0.1997297096252441,
+            "z": 221.03421020507812
+          }
+        },
+        {
+          "segment": 5,
+          "reached": true,
+          "goal": [
+            -195,
+            0.18,
+            215
+          ],
+          "position": {
+            "x": -194.98988342285156,
+            "y": 0.20000007629394528,
+            "z": 215.0307159423828
+          }
+        },
+        {
+          "segment": 6,
+          "reached": true,
+          "goal": [
+            -195,
+            0.18,
+            208
+          ],
+          "position": {
+            "x": -195.0005340576172,
+            "y": 0.20996954917907712,
+            "z": 208.0868682861328
+          }
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "resident": {
+    "landmarks": [],
+    "resorts": [
+      "bellagioPromenade"
+    ],
+    "guest": {
+      "stairs": 14,
+      "corridors": 0,
+      "rooms": 0
+    },
+    "interiorBatches": 0
+  }
+}

@@ -30,15 +30,17 @@ def arrival(B):
  roof=scale(Point(CX,CZ).buffer(1,96),xfact=RX*.97,yfact=RZ*.97,origin=(CX,CZ))
  for direction in [-1,1]:
   for off in np.arange(-42,43,8):
-   line=LineString([(CX-50,CZ+off-direction*50),(CX+50,CZ+off+direction*50)]).intersection(roof)
-   if line.is_empty or line.geom_type!='LineString':continue
-   count=max(2,math.ceil(line.length/1.8));points=[line.interpolate(i/count,normalized=True) for i in range(count+1)]
-   for aa,bb in zip(points,points[1:]):
-    dx,dz=bb.x-aa.x,bb.y-aa.y;L=math.hypot(dx,dz);nx,nz=-dz/L*.18,dx/L*.18
-    A=[(aa.x-nx,ceiling(aa.x,aa.y)-.52,aa.y-nz),(aa.x+nx,ceiling(aa.x,aa.y)-.52,aa.y+nz)]
-    C=[(bb.x-nx,ceiling(bb.x,bb.y)-.52,bb.y-nz),(bb.x+nx,ceiling(bb.x,bb.y)-.52,bb.y+nz)]
-    B.face('sa-wood',[A[0],C[0],C[1],A[1]])
-    for k in range(2):B.face('sa-wood',[A[k],C[k],(C[k][0],C[k][1]+.50,C[k][2]),(A[k][0],A[k][1]+.50,A[k][2])])
+   line=LineString([(CX-50,CZ+off-direction*50),(CX+50,CZ+off+direction*50)]).intersection(roof.difference(Point(CX,CZ).buffer(5.8,48)))
+   segments=list(line.geoms) if hasattr(line,'geoms') else [line]
+   for line in segments:
+    if line.is_empty or line.geom_type!='LineString':continue
+    count=max(2,math.ceil(line.length/1.8));points=[line.interpolate(i/count,normalized=True) for i in range(count+1)]
+    for aa,bb in zip(points,points[1:]):
+     dx,dz=bb.x-aa.x,bb.y-aa.y;L=math.hypot(dx,dz);nx,nz=-dz/L*.18,dx/L*.18
+     A=[(aa.x-nx,ceiling(aa.x,aa.y)-.52,aa.y-nz),(aa.x+nx,ceiling(aa.x,aa.y)-.52,aa.y+nz)]
+     C=[(bb.x-nx,ceiling(bb.x,bb.y)-.52,bb.y-nz),(bb.x+nx,ceiling(bb.x,bb.y)-.52,bb.y+nz)]
+     B.face('sa-wood',[A[0],C[0],C[1],A[1]])
+     for k in range(2):B.face('sa-wood',[A[k],C[k],(C[k][0],C[k][1]+.50,C[k][2]),(A[k][0],A[k][1]+.50,A[k][2])])
  # Ten tapered wood-look column covers, 24ft tall, diameter3ft10in ->6ft.
  # Positions estimated from completed photos; each is outside the drive-through lanes.
  for i in range(10):
@@ -66,10 +68,25 @@ def arrival(B):
   for y in [3.5,7]:B.lathe('sa-joint',(x,z),[(y,.311),(y+.035,.311)],32)
  # Ringed suspended tubes visible in supplier photo, architectural water feature.
  ring=Point(CX,CZ).buffer(5.8,48).difference(Point(CX,CZ).buffer(4.0,48))
- B.planar('sa-champagne',ring,10.35)
+ # Supplier photograph shows a deep crown and closed dark central inset.
+ # Keep the continuous exterior roof: this is not an open-air oculus.
+ B.shell(ring,10.35,10.65,'sar-crown',roof=False,solid=False)
+ B.planar('sar-crown',ring,10.65)
+ for poly in parts(ring):
+  for tri in triangles(poly):
+   pts=[(x,10.35,z) for x,z in list(tri.exterior.coords)[:-1]]
+   if np.cross(np.array(pts[1])-pts[0],np.array(pts[2])-pts[0])[1]>0:pts.reverse()
+   B.face('sar-crown',pts)
+ inset=Point(CX,CZ).buffer(4.0,48)
+ B.shell(inset,10.62,10.68,'sar-inset',roof=False,solid=False)
+ B.planar('sar-inset',inset,10.68)
+ for tri in triangles(inset):
+  pts=[(x,10.62,z) for x,z in list(tri.exterior.coords)[:-1]]
+  if np.cross(np.array(pts[1])-pts[0],np.array(pts[2])-pts[0])[1]>0:pts.reverse()
+  B.face('sar-inset',pts)
  for j in range(24):
   a=j*math.tau/24;r=2.2+(j%3)*.55;x=CX+r*math.cos(a);z=CZ+r*math.sin(a);bottom=5.7+(j%5)*.44
-  B.tube('sa-champagne',(x,bottom+1.1,z),(x,10.35,z),.045,8)
+  B.tube('sa-champagne',(x,bottom+1.1,z),(x,10.62,z),.045,8)
   B.lathe('sa-blue-reveal',(x,z),[(bottom,.24),(bottom+1.1,.24)],16)
  # Separate boulevard pylon, restrained branded content rather than invented advertising.
  B.source='sahara-pylon';F=Frame(B,1360,-2937,math.pi/2,y=0)

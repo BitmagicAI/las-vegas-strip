@@ -1,0 +1,43 @@
+{
+  "claims": [
+    22,
+    23
+  ],
+  "draftPR": 443,
+  "base": "c2106a1",
+  "sources": [
+    {
+      "url": "https://newsroom.caesars.com/Property-Fact-Sheets/The-LINQ-Hotel--Experience/",
+      "observed": "Official gallery and pool image personally inspected. Rectangular basin, broad shallow end, circular daybeds, perimeter benches, white parasols and blue cushions; date unspecified."
+    },
+    {
+      "url": "https://s202.q4cdn.com/508919455/files/images/fact-sheets-images/TheLINQHotelExperience/Pool/Y7_8CvDg.png",
+      "observed": "Official pool photograph viewed directly; original geometry only, no photo textures."
+    },
+    {
+      "url": "https://newsroom.caesars.com/Property-Fact-Sheets/Harrahs-Las-Vegas/",
+      "observed": "Official gallery inspected."
+    },
+    {
+      "url": "https://s202.q4cdn.com/508919455/files/images/fact-sheets-images/HarrahsLasVegas/Harrahs-Pool-Hero-Shot.png",
+      "observed": "Rectangular lap pool, three dark lane marks, white cushion loungers, dark frames, privacy-screen daybeds, white trellises and palms. Date unspecified."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.11845,-115.1707,347m/data=!3m1!1e3",
+      "observed": "Satellite viewed: LINQ east U-shaped court pool, Harrahs two basins in south courtyard; exact imagery date not shown."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.11952,-115.17125,173m/data=!3m1!1e3",
+      "observed": "Main Harrahs pool center sampled by map menu at36.119108,-115.170963. Approximately25m long from image scale; marketing Olympic wording is not taken as a survey."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.118043,-115.170394,174m/data=!3m1!1e3",
+      "observed": "LINQ aerial personally inspected: two basins within the tower court; approximate center232,-226 in city coordinates. Imagery date not shown."
+    }
+  ],
+  "uncertainty": [
+    "Map image samples and dimensions are estimates.",
+    "Deck datums8.6m Harrahs and17m LINQ follow existing podium conventions and are not surveyed elevations.",
+    "Do not invent lift routes or alter guest interiors; local deck routes alone are not continuous public access."
+  ]
+}

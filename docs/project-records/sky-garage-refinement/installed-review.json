@@ -1,0 +1,23 @@
+{
+  "views": [
+    "front",
+    "back",
+    "entry",
+    "roof"
+  ],
+  "review": "All four installed daylight PNGs personally inspected. Roof central double parking rows visible; building mass and surroundings retained. Existing panel-return white seams and missing central ramp remain. Roof material has bright sun glare; no photorealism claim.",
+  "baselineP95ms": [
+    18.7,
+    20.2,
+    19,
+    19.2
+  ],
+  "installedP95ms": [
+    19.3,
+    19.9,
+    17.5,
+    19.7
+  ],
+  "interpretation": "Matched cameras and method; differences from -1.5 to +0.6ms. No sustained speedup claim.",
+  "remaining": "Eight actual roof walk segments passed, all four endpoint PNGs reviewed. Lower-roof endpoint faces upper-level slab as expected. No entrance/internal ramp route pass claimed."
+}

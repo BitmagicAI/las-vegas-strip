@@ -1,0 +1,186 @@
+{
+  "id": "paradise-road-small-frontage",
+  "status": "refinement-deferred",
+  "mappedIds": [
+    "way/986507542",
+    "way/986507541",
+    "way/986507532",
+    "way/969288406",
+    "way/969288402",
+    "way/969288399",
+    "way/969288398",
+    "way/969288397"
+  ],
+  "sources": [
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1457,-115.15365&zoom=20&basemap=satellite",
+      "review": "Small commercial frontage with several visibly vacant plots; correlate mapped footprints before building."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14605,-115.15352&heading=90&pitch=2",
+      "imageDate": "February 2026",
+      "review": "Low commercial frontage and empty fenced/gravel plots; do not assume old mapped footprints remain standing."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14612,-115.15353&heading=118&pitch=0",
+      "imageDate": "February 2026",
+      "review": "Northern pair: pale single-storey shops, shallow brown hips, north perforated white garden wall; southern resale storefront has brick base and wide glazed bay."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14548,-115.15398&heading=118&pitch=0",
+      "imageDate": "February 2026",
+      "review": "Chapel Express low gray roof, dark stone/black facade and white trim, paved apron; adjoining lots are vacant."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14470,-115.15429&heading=118&pitch=0",
+      "imageDate": "February 2026",
+      "review": "Southern row: pale masonry parapet shop, red mural-front hip-roof shop, tan tax office, barred windows, concrete forecourts."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=36.14432,-115.15466&heading=118&pitch=0",
+      "imageDate": "February 2026",
+      "review": "Southern end: cream single-storey massage storefronts, metal awnings, rooftop HVAC, paved driveways."
+    }
+  ],
+  "remaining": [
+    "Red storefront mural not recreated; brand-specific graphics and exact lettering incomplete",
+    "Shop door/window positions and rooftop equipment estimated; rear facades less well referenced",
+    "North garden screen, mature landscaping, detailed paving wear and roadside furnishings unfinished",
+    "Neutral-daylight comparison and moving-route benchmark not yet recorded"
+  ],
+  "uncertainDimensions": [
+    "Mapped plans retained; roof heights/pitches, storefront bay widths and mechanical equipment positions estimated from street imagery.",
+    "Business names on ambiguous parcels omitted rather than assigned inaccurately. Vacant intervening lots remain vacant."
+  ],
+  "triangles": 12903,
+  "batches": 27,
+  "optimizedMiB": 0.64,
+  "viewsInspected": [
+    "build/city-exteriors/paradise-road-small-frontage-final/paradise-north.png",
+    "build/city-exteriors/paradise-road-small-frontage-final/paradise-chapel.png",
+    "build/city-exteriors/paradise-road-small-frontage-final/paradise-south.png",
+    "build/city-exteriors/paradise-road-small-frontage-final/paradise-end.png",
+    "build/city-exteriors/paradise-road-small-frontage-final/paradise-roof.png"
+  ],
+  "tests": [
+    "1562 post-removal roof support samples passed",
+    "16 bidirectional entrance approaches passed",
+    "Five installed game views inspected"
+  ],
+  "performance": {
+    "static960x540": [
+      {
+        "name": "paradise-north",
+        "eye": [
+          1752,
+          3,
+          -3355
+        ],
+        "target": [
+          1786,
+          1.7,
+          -3344
+        ],
+        "p": [
+          1758,
+          2,
+          -3351
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.69999998807907
+      },
+      {
+        "name": "paradise-chapel",
+        "eye": [
+          1724,
+          3,
+          -3291
+        ],
+        "target": [
+          1754,
+          1.6,
+          -3288
+        ],
+        "p": [
+          1730,
+          2,
+          -3285
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.5
+      },
+      {
+        "name": "paradise-south",
+        "eye": [
+          1673,
+          3,
+          -3223
+        ],
+        "target": [
+          1714,
+          1.7,
+          -3207
+        ],
+        "p": [
+          1684,
+          2,
+          -3216
+        ],
+        "p50": 16.69999998807907,
+        "p95": 17.69999998807907
+      },
+      {
+        "name": "paradise-end",
+        "eye": [
+          1660,
+          3,
+          -3181
+        ],
+        "target": [
+          1694,
+          1.7,
+          -3170
+        ],
+        "p": [
+          1667,
+          2,
+          -3176
+        ],
+        "p50": 16.600000023841858,
+        "p95": 17.599999964237213
+      },
+      {
+        "name": "paradise-roof",
+        "eye": [
+          1650,
+          70,
+          -3275
+        ],
+        "target": [
+          1740,
+          1,
+          -3255
+        ],
+        "p": [
+          1710,
+          2,
+          -3260
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.799999952316284
+      }
+    ]
+  },
+  "ownership": {
+    "removed": 136,
+    "colliderTrianglesRemoved": 136,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in paradiseSmallFrontage mapped footprint; all other triangles retained exactly."
+  },
+  "finalBuild": {
+    "files": {
+      "build/strip-landmarks/paradiseSmallFrontage-exterior.glb": "8541db8033bdb4140cb4839bb2a5ca57ae4c3a9d96330f7c1bdd26546d421ee3",
+      "build/strip-landmarks/paradiseSmallFrontage-exterior-collision.json": "527ef4b70f276ab7d39cb0bd4de2e7982c3bc43d72a87702be21960a3fb7004e"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+// Support and head clearance on the new deck; this does not certify stairs/access.
+import fs from 'node:fs';import assert from 'node:assert/strict';import R from '@dimforge/rapier3d-compat';await R.init();
+const c=JSON.parse(fs.readFileSync('build/strip-landmarks/lvccWest-exterior-collision.json'));
+const w=new R.World({x:0,y:-9.81,z:0});w.createCollider(R.ColliderDesc.trimesh(new Float32Array(c.vertices),new Uint32Array(c.indices)));w.step();
+const failures=[];let samples=0;const points=[[1240,16,-1850],[1265,16,-1850],[1270,16,-1860],[1245,16,-1860],[1240,16,-1850]];
+for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i],n=Math.ceil(Math.hypot(b[0]-a[0],b[2]-a[2]));for(let j=0;j<=n;j++){const x=a[0]+(b[0]-a[0])*j/n,z=a[2]+(b[2]-a[2])*j/n;samples++;const floor=w.castRay(new R.Ray({x,y:16.05,z},{x:0,y:-1,z:0}),.1,true);const head=w.castRay(new R.Ray({x,y:16.05,z},{x:0,y:1,z:0}),2.2,true);if(!floor||Math.abs(floor.timeOfImpact-.05)>.02||head)failures.push({x,z,floor:floor?.timeOfImpact,head:head?.timeOfImpact});}}
+const report={samples,failures,scope:'Third-level floor support and 2.2m headroom along planned loop; actual walking and interior access unverified.'};fs.writeFileSync('docs/project-records/convention-area-refinement/lvcc-terrace-support.json',JSON.stringify(report,null,2)+'\n');fs.writeFileSync('docs/project-records/convention-area-refinement/lvcc-terrace-routes.json',JSON.stringify([{name:'lvcc-terrace-loop',points}],null,2)+'\n');console.log(report);w.free();assert.equal(failures.length,0);

@@ -1,0 +1,15 @@
+{
+  "recordReview": {
+    "exitCode": 0
+  },
+  "publicCheck": {
+    "exitCode": 0,
+    "failures": 0,
+    "warnings": 64,
+    "notes": "Home-folder paths and public chapel email in retained logs; no failing secret checks."
+  },
+  "diffCheck": {
+    "exitCode": 0
+  },
+  "archive": "3901 reference/evidence files archived; only current task captures added to git."
+}

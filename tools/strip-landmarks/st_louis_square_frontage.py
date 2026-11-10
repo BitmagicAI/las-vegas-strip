@@ -50,8 +50,15 @@ def exterior(B):
      G.box('sls-awning-fabric',(u,2.99,-1.05),(width+.24,.17,.04))
      for dx in np.arange(-width/2,width/2,.25):G.tube('sls-awning-stripe-paint',(u+float(dx),3.51,-.35),(u+float(dx),3.08,-1.05),.012,4)
    if nx<-.5 and L>10 and index==0:
-    mid=L/2;B.face('sls-white-paint',[G.p(mid-2.5,4.24,-.22),G.p(mid+2.5,4.24,-.22),G.p(mid,5.2,-.22)])
-    for aa,bb in [((mid-2.55,4.23,-.3),(mid,5.25,-.3)),((mid,5.25,-.3),(mid+2.55,4.23,-.3))]:G.tube('sls-cornice-paint',aa,bb,.09,4)
+    mid=L/2
+    if G.p(mid,0,0)[2]>-3636:
+     # January2026: central raised flat parapet with lower shoulders, not a second gable.
+     profile=[(mid-4.6,4.24),(mid-4.6,4.65),(mid-2.65,4.65),(mid-2.65,5.15),(mid+2.65,5.15),(mid+2.65,4.65),(mid+4.6,4.65),(mid+4.6,4.24)]
+     for lo,hi,top in [(mid-4.6,mid-2.65,4.65),(mid-2.65,mid+2.65,5.15),(mid+2.65,mid+4.6,4.65)]:G.box('sls-white-paint',((lo+hi)/2,(top+4.22)/2,-.18),(hi-lo,top-4.22,.28))
+     for aa,bb in zip(profile[1:-1],profile[2:]):G.tube('sls-cornice-paint',(aa[0],aa[1],-.34),(bb[0],bb[1],-.34),.065,4)
+    else:
+     B.face('sls-white-paint',[G.p(mid-2.5,4.24,-.22),G.p(mid+2.5,4.24,-.22),G.p(mid,5.2,-.22)])
+     for aa,bb in [((mid-2.55,4.23,-.3),(mid,5.25,-.3)),((mid,5.25,-.3),(mid+2.55,4.23,-.3))]:G.tube('sls-cornice-paint',aa,bb,.09,4)
  # Distinct roof zones follow the satellite plan; no bounding rectangle over the whole parcel.
  roof(B,F,22.5,38.2,-.25,15.05)
  roof(B,F,-.25,7.5,-.25,6.0,rise=1.2)

@@ -1,0 +1,51 @@
+{
+  "views": [
+    {
+      "view": "bellagio-village-front",
+      "initialBefore": [
+        20.90000009536743,
+        26.90000009536743
+      ],
+      "contemporaryOriginalControl": [
+        39.89999985694885,
+        49.299999952316284
+      ],
+      "installedAfter": [
+        39,
+        45.69999980926514
+      ]
+    },
+    {
+      "view": "bellagio-east-pavilion",
+      "initialBefore": [
+        23.299999952316284,
+        40.90000009536743
+      ],
+      "contemporaryOriginalControl": [
+        36.40000009536743,
+        50.60000014305115
+      ],
+      "installedAfter": [
+        36.59999990463257,
+        46.09999990463257
+      ]
+    },
+    {
+      "view": "bellagio-west-pavilions",
+      "initialBefore": [
+        29.700000047683716,
+        48.799999952316284
+      ],
+      "contemporaryOriginalControl": [
+        58,
+        71
+      ],
+      "installedAfter": [
+        48.700000047683716,
+        57.19999980926514
+      ]
+    }
+  ],
+  "method": "Same 960x540 DPR1 ultra neutral cameras; 900 warmup + streaming idle + 60 settle + 180 timed frames. Original control serves HEAD optimized GLB plus saved original cell through browser-only routes; replaced GLB 3 times and cell once. No simultaneous GPU jobs.",
+  "interpretation": "Initial after exceeded earlier baseline. Contemporary original control also slowed substantially; installed medians are within 1% or lower and p95 lower than that control. Do not claim a speed improvement or 60fps/full-block performance acceptance; machine/session variability remains."
+}

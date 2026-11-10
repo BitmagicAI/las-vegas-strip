@@ -88,5 +88,33 @@
       "build/strip-landmarks/luxorExterior-exterior-collision.json": "84cd38926903d9379dc942406399e3dbb22dd91e4239271351c63a7d313c8685",
       "build/strip-landmarks/luxorExterior-exterior.glb": "7104bd9f17838712e8481aa053ef29c0eede679699a2b4ecd76e01c9f0d66bdb"
     }
+  },
+  "claim": {
+    "issue": 29,
+    "assignee": "janiverse",
+    "pullRequest": 448
+  },
+  "northArrivalPass": {
+    "status": "installed-reviewed-refinement-pending",
+    "evidence": "docs/project-records/luxor-arrival",
+    "scope": "Slotted stone beam faces and original shallow decorative panels on 48 existing north-arrival piers. All prior groups, labels and collision retained.",
+    "remaining": [
+      "Stone figures/line motifs are original approximations, not a historical transcription",
+      "Original frame dimensions and open roof arrangement remain approximate",
+      "No new lower-lobby to elevated-connector connection implemented",
+      "Current pool renovation geometry requires newer primary evidence; no unsupported pool rebuild",
+      "Whole-resort routes and Sphinx sculpture remain broader refinements"
+    ],
+    "validation": {
+      "geometry": "21632 new valid triangles; all47 prior groups/99788triangles and labels preserved",
+      "collision": "byte-identical;254 current geographic-cell samples PASS",
+      "normalWalk": "6 segments PASS; existing elevated connector/landing and carport in both directions only",
+      "views": "five installed daylight views inspected; same before/after names and cameras",
+      "rebuild": "full-builder detail output exactly matches installed addition",
+      "lfsBytes": 2007002,
+      "bakes": 1,
+      "unchangedCellFiles": 276,
+      "smoke": "9 stops PASS; zero request/page/console errors"
+    }
   }
 }

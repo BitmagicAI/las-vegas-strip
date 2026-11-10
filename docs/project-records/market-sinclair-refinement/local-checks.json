@@ -1,0 +1,13 @@
+{
+  "typecheck": "Type check passed.\n",
+  "records": "Records valid: 289 blocks (289 refinement-deferred); 8 full seven-gate records; 1178 remaining items.\nActive: market-1700 (lightweight record: no review board). Task board: python3 tools/tasks/build-board.py\n",
+  "public": "check-public:0failures,7preexisting warnings. Raw log remains local /tmp/ms-public.log.",
+  "optimizedModels": "2 runtime GLBs checked, 0 not optimized\n",
+  "bakeFreshness": "city bake is up to date\n",
+  "assetStage": "1930 files, 1163.4 MiB -> tools/release/asset-pack.json\n  optimized: 1103.9 MiB\n  original: 59.5 MiB\n  runtime cell manifest: 0.1 MiB\nruntime-assets/: 4 copied, 1926 unchanged, 0 removed. Commit it: git add -A runtime-assets tools/release/asset-pack.json\n",
+  "assetCheck": "1930 present, 0 missing, 0 not optimized\n",
+  "tests": "PASS: lazy near detail: LOD vertices bit-identical to the near level (93 checked), near level filled on approach = eager, casters = casting parts, eviction and refill\n\u2714 tests/city-lazy-lod.test.mjs (653.568583ms)\nPASS: city surfaces carry the cluster grid in their program key and rebuild once per resize\n\u2714 tests/city-lighting-resize.test.mjs (291.850292ms)\nsite-lights: ok\n\u2714 tests/site-lights.test.mjs (401.658875ms)\n\u2139 tests 3\n\u2139 suites 0\n\u2139 pass 3\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 658.6985\n",
+  "initialTestInvocation": "Initial plain node --test failed for city-lazy-lod: ERR_UNSUPPORTED_TYPESCRIPT_SYNTAX (parameter property). Correct --import ./tools/ts-register.mjs invocation passed all3; no code workaround.",
+  "smoke": "9stops,0failedrequests,0pageerrors,0consoleerrors,0unplacedstops",
+  "archive": "2306reference/evidence files archived,719.6MB"
+}

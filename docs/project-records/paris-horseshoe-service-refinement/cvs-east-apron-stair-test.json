@@ -1,0 +1,212 @@
+[
+  {
+    "building": 0,
+    "direction": 1,
+    "legs": [
+      {
+        "goal": [
+          118,
+          0.18,
+          305
+        ],
+        "frames": 160,
+        "position": {
+          "x": 117.99995422363281,
+          "y": 1.1000525951385498,
+          "z": 305.0288391113281
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 0,
+    "direction": -1,
+    "legs": [
+      {
+        "goal": [
+          118,
+          0.18,
+          315
+        ],
+        "frames": 155,
+        "position": {
+          "x": 118.0001220703125,
+          "y": 1.0997841358184814,
+          "z": 314.9666442871094
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 1,
+    "direction": 1,
+    "legs": [
+      {
+        "goal": [
+          75,
+          0.18,
+          278
+        ],
+        "frames": 584,
+        "position": {
+          "x": 75.00000762939453,
+          "y": 1.090000033378601,
+          "z": 278.0327453613281
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 1,
+    "direction": -1,
+    "legs": [
+      {
+        "goal": [
+          75,
+          0.18,
+          315
+        ],
+        "frames": 582,
+        "position": {
+          "x": 75,
+          "y": 1.1000645160675049,
+          "z": 314.9669494628906
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 2,
+    "direction": 1,
+    "legs": [
+      {
+        "goal": [
+          75,
+          0.18,
+          307
+        ],
+        "frames": 464,
+        "position": {
+          "x": 75.00009155273438,
+          "y": 1.1001520156860352,
+          "z": 306.9118347167969
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 2,
+    "direction": -1,
+    "legs": [
+      {
+        "goal": [
+          75,
+          0.18,
+          278
+        ],
+        "frames": 458,
+        "position": {
+          "x": 74.99996948242188,
+          "y": 1.090000033378601,
+          "z": 278.0253601074219
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 3,
+    "direction": 1,
+    "legs": [
+      {
+        "goal": [
+          163,
+          0.18,
+          305
+        ],
+        "frames": 1396,
+        "position": {
+          "x": 162.9416046142578,
+          "y": 1.0999139547348022,
+          "z": 305.0000915527344
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 3,
+    "direction": -1,
+    "legs": [
+      {
+        "goal": [
+          75,
+          0.18,
+          305
+        ],
+        "frames": 1384,
+        "position": {
+          "x": 75.04710388183594,
+          "y": 1.100000023841858,
+          "z": 305.0005187988281
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 4,
+    "direction": 1,
+    "legs": [
+      {
+        "goal": [
+          150,
+          0.18,
+          274
+        ],
+        "frames": 851,
+        "position": {
+          "x": 149.91744995117188,
+          "y": 1.0898734331130981,
+          "z": 274.0000305175781
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  },
+  {
+    "building": 4,
+    "direction": -1,
+    "legs": [
+      {
+        "goal": [
+          95,
+          0.18,
+          274
+        ],
+        "frames": 855,
+        "position": {
+          "x": 95.02793884277344,
+          "y": 1.0999860763549805,
+          "z": 274.00006103515625
+        },
+        "reached": true
+      }
+    ],
+    "passed": true
+  }
+]

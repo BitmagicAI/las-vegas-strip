@@ -1,0 +1,29 @@
+{
+  "newLfsBytes": 4040333,
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-0_3.bin",
+      "bytes": 334156,
+      "sha256": "9fdd9ec97cd0d3b1d39c3b3325fbabbdd92484227ec8436b728c8239192af022"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "12e2d12d02e7fbf5dd3f33111ddd3e7bb06c73fcac2658b00bf66736088c6242"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/akitaPlaza-exterior.glb",
+      "bytes": 2862624,
+      "sha256": "282115b1849c8dfba2c433c84ff542e2d456ee9b522032a094c9ae094ff41d3c"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/desertOasis-exterior.glb",
+      "bytes": 829752,
+      "sha256": "3a9a4ab8668dc832c7ddba8927d50722f22f981b852f01b1c4d764e2cee6f0da"
+    }
+  ],
+  "unchangedCells": 91,
+  "changedCells": [
+    "cell-0_3.bin"
+  ]
+}

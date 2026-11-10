@@ -1,0 +1,18 @@
+# Southern service pair checkpoint
+
+2026-11-07. Issues198 Akita rear canopy and172 Russell service building claimed and confirmed janiverse. Two sites about550m apart grouped for one bake. Fresh task/ext-south-service-pair-refinement starts at origin/next1790e94ba29dc4c5e99c5c4d9447a4dca228e58f. Previous ChayoPR534 merged and196closed; do not replay its completed work.
+
+## Next
+Read both records and source builders, including Akita's linked research JSON. Directly inspect Google aerial/Street View and available official photographs. Akita has open timber frame/corrugated roof/container; Russell has simple parapet/service roof with six equipment groups. Choose reference-supported reversible details only after front-first neutral daylight baselines and actual keyboard routes. No model edits yet. Do not invent private service interiors or claim concealed facade measurements. Preserve roads, existing apron/collision, other-session changes and interior models.
+
+Current remaining: Akita roof/container dimensions estimated, surrounding terrain gaps, approximate main facade/materials. Russell concealed side/rear doors/vents inferred, yard/fence/billboard incomplete, interior and driving not qualified. Keep every unresolved item. Record reference dates, links, inferred dimensions and decisions.
+
+Scoped build/export only; avoid shared venue/replacement metadata rewrites. Optimize each key separately level and WebP, pack collision, revision bump and one group bake. Restore only asserted unrelated GoldCoast/Wyndham LOD noise; retain unchanged cell bytes. All step7, matching aftercaptures/performance, actual installed walks and9stopdevsmoke required. GPU jobs serial; Maps closed during captures; avoid concurrent CPU work during timings. Dev3180/editor3181, no active jobs. Dependency symlinks untracked. Tests use node --import ./tools/ts-register.mjs. Optimizer lacks --help; read source header.
+
+FinalPR lists each building, checks/results, newLFSbytes across allowncommits and outofscopetouches. Audit origin/next..HEAD before eachpush, merge verified exactownhead next --merge, explicitlyclose198/172 andpicker. Never main/CDN/publish/release/settings.
+
+## 2026-11-07 03:12 UTC continuation
+References and six neutral baseline views inspected; sixteen real keyboard legs pass, ten endpoint/return images inspected. Akita longitudinal return faces the container; it is not a doorway claim. Candidate folded ribs and two-fan/four-hood distinction built/exported, both collision JSON files byte-identical. Source support606/358 and both CPU walking reports pass. Both assets optimized level and WebP driver (no embedded images); installed locally no-stage. Shared bake starting /tmp/south-service-bake.log. Next finish bake, run /tmp/south-service-preserve-lod.mjs and stage; verify unchanged cells; capture six matching afterviews and16actuallegs, performance, smoke and allstep7. Do not repeat references/baselines. Raw optimizer list noise restored. No GPU jobs/Maps tabs. Scoped source/export scripts are committed. New LFS audit still pending, PR535 remains draft.
+
+## Installed verification complete
+Six matching neutral afterviews inspected, sixteen actual keyboard legs pass and ten endpoint/return images inspected. Nine-stop devsmoke has zero errors/missed stops. Allstep7 localchecks pass. Largest p95 rise6.3% (Russellroof17.5→18.6ms); no speedupclaim. Onebake,90/92cell binaries identical; only0_3/-1_4changed; collisionunchanged. Exactdimensions, concealedfacades, yard/terrain/interior and driving/cold/memory limits retained. PR535 finalize with LFSaudit then merge exactownheadnext and explicitlyclose198/172; picker next. NoGPUjobs.

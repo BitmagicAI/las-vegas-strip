@@ -1,0 +1,42 @@
+{
+  "stage": "Four baseline views and Earth/official photographs personally reviewed",
+  "sources": [
+    {
+      "url": "https://www.oyolasvegas.com/hotel/",
+      "accessDate": "2026-11-03",
+      "evidence": "Official page explicitly describes two pools and Splash Cantina. Opened and read.",
+      "imageDate": null
+    },
+    {
+      "url": "https://www.oyorooms.com/us/83680/",
+      "accessDate": "2026-11-03",
+      "evidence": "Official operator search result describes two outdoor pools. Does not establish shape, size or position.",
+      "imageDate": null
+    },
+    {
+      "url": "https://earth.google.com/web/@36.0994,-115.1678,700a,300d,35y,0h,0t,0r",
+      "accessDate": "2026-11-03",
+      "imageDate": "2026-02-03 (Earth footer)",
+      "evidence": "Overhead personally inspected: two separate basins arranged north/south in courtyard east of tall tower. North basin angular with offset/narrow northern portion; south basin curved/indented. Separate broad deck and planted edges. Existing one large oval is incorrect."
+    },
+    {
+      "url": "https://www.oyolasvegas.com/assets/images/gallery2.jpg",
+      "accessDate": "2026-11-03",
+      "imageDate": null,
+      "evidence": "Official photograph inspected: straight pool edges, broad paved court, yellow cabanas/umbrellas, palms, low screen wall. Does not establish surveyed dimensions."
+    },
+    {
+      "url": "https://www.oyolasvegas.com/assets/images/gal3.jpg",
+      "accessDate": "2026-11-03",
+      "imageDate": null,
+      "evidence": "Official reverse photograph inspected: curved basin with inward deck projection, palms, seating and east-wing mural. Source artwork is reference only, not reusable texture."
+    },
+    {
+      "url": "https://www.oyolasvegas.com/assets/images/hotel3.jpg",
+      "accessDate": "2026-11-03",
+      "imageDate": null,
+      "evidence": "Inspected and rejected as architectural reference: close pool lifestyle image shows no basin boundary."
+    }
+  ],
+  "next": "Author two original basin plans fitted within existing mapped courtyard; north angular and south indented curved. Determine estimated metric extents against source footprint before installation. Keep landscape, mural, furniture, safety and continuous public access discrepancies explicit."
+}

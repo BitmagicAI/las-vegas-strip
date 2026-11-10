@@ -1,0 +1,13 @@
+{
+  "before": {
+    "triangles": 164070,
+    "batches": 109,
+    "bytes": 2463176
+  },
+  "after": {
+    "triangles": 166224,
+    "batches": 109,
+    "bytes": 2538396
+  },
+  "note": "Installed optimized GLBs include all text labels; older record source count was not installed triangle count."
+}

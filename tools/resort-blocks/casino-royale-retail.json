@@ -28,7 +28,8 @@
     "Harrahs existing north wall blocks attempted route atz\u2248\u2212449.3; not rebuilt here",
     "Generic nearby resort facade remains a separate refinement",
     "Gold arch and labels remain simplified and need calibrated photo comparison",
-    "No nearby caf\u00e9 furnishings/landscaping; service elevation inferred"
+    "No nearby caf\u00e9 furnishings/landscaping; service elevation inferred",
+    "Upper landing red fascia line remains visually approximate despite passing actual stair routes; retain for future architecture review."
   ],
   "ownership": "22 mapped9m building triangles and matching collision removed; new exterior owns footprint and small west arrival plaza. Roads and surrounding resort assets retained.",
   "triangles": 17241,
@@ -120,5 +121,13 @@
   "visualCorrections": [
     "Moved arch foot clear of Casino Royale mapped footprint after installed review",
     "Lowered circular signs below fascia after installed review"
-  ]
+  ],
+  "refinement20261108": {
+    "scope": "Correct north circular tenant to PANDA/EXPRESS and original simplified panda medallion; south Chipotle retained",
+    "record": "docs/project-records/central-strip-frontage-refinement",
+    "checks": "15localchecksPASS;377supportsamples;18legacylegs;18before+18afteractuallegs;9devsmokestops",
+    "views": "7matching neutral-daylight views, front first, all inspected",
+    "cells": "90/92byte-identical",
+    "status": "verified bounded refinement; all existing remaining gaps retained"
+  }
 }

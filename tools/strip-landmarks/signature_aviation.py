@@ -19,8 +19,9 @@ def exterior(B):
    for u in np.arange(.8,L-.7,1.45):G.box('sig-frame',(u,cy,-.19),(.055,h,.06))
    for y in np.arange(cy-h/2+.8,cy+h/2,.8):G.box('sig-frame',(L/2,y,-.19),(max(.8,L-1.6),.045,.06))
   if L>22:
-   G.text('SIGNATURE',(L*.65,7.45,-.12),1.2,'sig-letter')
-   G.text('AVIATION',(L*.65,6.85,-.12),.4,'sig-letter')
+   # Official current photographs show one continuous line, not stacked words.
+   G.text('SIGNATURE AVIATION',(L*.65,7.65,-.12),.72,'sig-letter')
+   G.text('6005',(L-1.4,8.55,-.12),.30,'sig-letter')
    for u in np.arange(1,L,5.8):G.box('sig-pier',(u,1.65,-.22),(.32,2.85,.42))
   if airside and L>13:
    G.box('sig-frame',(L/2,1.65,-.22),(2.6,2.75,.12));G.box('sig-glass',(L/2,1.65,-.3),(2.4,2.55,.04));G.box('sig-frame',(L/2,1.65,-.34),(.05,2.65,.05))

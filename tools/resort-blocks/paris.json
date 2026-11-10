@@ -3,9 +3,9 @@
   "id": "paris",
   "name": "Paris Las Vegas",
   "stage": "eiffel-pier-and-silhouette-retry",
-  "updated": "2026-10-06",
-  "statusNote": "Paris remains active. Eiffel and pool geometry rebuilt; full resort acceptance gates remain open.",
-  "nextAction": "Review facade comparison and retain remaining whole-block acceptance items; no automatic advance to the next resort.",
+  "updated": "2026-11-07",
+  "statusNote": "Bounded Arc vault coffer refinement installed and inspected; all full-resort acceptance gates remain open.",
+  "nextAction": "Retain every remaining survey, facade, circulation and ornament discrepancy; continue owner-authorized city task sequence after this bounded pass is verified.",
   "surveyBoundsXZ": [
     30,
     327,
@@ -166,6 +166,33 @@
       "imageDate": "2021-05",
       "note": "Visually inspected inset-corner octagon, radial paving, loungers and perimeter cabanas. Historic arrangement, not current furniture survey.",
       "accessed": "2026-10-06"
+    },
+    {
+      "id": "arc-official-20261107",
+      "title": "Caesars Paris main valet photograph",
+      "url": "https://s202.q4cdn.com/508919455/files/images/fact-sheets-images/ParisLasVegas/Exterior-2.jpg",
+      "accessed": "2026-11-07",
+      "imageryDate": null,
+      "kind": "official photograph",
+      "note": "Personally inspected: rectangular coffered intrados, arch molding and adjacent canopy; image date unstated."
+    },
+    {
+      "id": "arc-west-20261107",
+      "title": "Google west Arc Street View",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=nU_Pnxk0gOC8ejwOMb2dBQ&heading=70&pitch=15",
+      "accessed": "2026-11-07",
+      "imageryDate": "2022-12",
+      "kind": "Google Street View",
+      "note": "Personally inspected: coffered main opening; temporary advertising excluded."
+    },
+    {
+      "id": "arc-east-20261107",
+      "title": "Google east Arc Street View",
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=RfU4dOu1KLDfqv-rVl8FtQ&heading=270&pitch=20",
+      "accessed": "2026-11-07",
+      "imageryDate": "2025-01",
+      "kind": "Google Street View",
+      "note": "Personally inspected: coffered vault and relief panels; transverse connection not established."
     }
   ],
   "levels": [
@@ -911,6 +938,13 @@
       "severity": "refinement",
       "status": "open",
       "detail": "Main composition rebuilt. Relief groups, statues, balloon medallions and script are original approximations; transverse Arc passages are not modeled. Door arrangement, elevation, window spacing and street planting need further photo/metric refinement. Vestibule is a playable connector, not a replica of the complete actual hotel lobby."
+    },
+    {
+      "id": "horseshoe-ground-connector",
+      "title": "Reconstruct and validate the geographic Le Boulevard\u2013Horseshoe connector",
+      "severity": "refinement",
+      "status": "open",
+      "detail": "Official Paris map and Monorail directions confirm the real-world connection. Legacy Paris-side physical door was mapped with Horseshoe,138.266m from its Paris-frame location; its unreachable visibility entry is retired in PR521. Preserve existing interiors and working Horseshoe-side portal. A future geometry pass must align doorway, continuous floor/collision and both visibility ends; short local walk checks are not a through-route verification. Evidence: docs/project-records/paris-horseshoe-passage."
     }
   ],
   "gates": [
@@ -1263,5 +1297,86 @@
     "record": "tools/resort-blocks/paris-rooftop-bar.json",
     "trim": "build/city-exteriors/paris-rooftop-parent-trim.json",
     "preserved": "All interiors, existing terrace slab and ground facades; replaced only four picnic sets, two string runs and short rail interval."
+  },
+  "remaining": [
+    {
+      "id": "fit",
+      "detail": "Detailed facade proportions, relief sculpture and real-life access alignments need refinement",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    },
+    {
+      "id": "levels",
+      "detail": "Level elevations are fitted estimates, not a metric architectural survey",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    },
+    {
+      "id": "guest",
+      "detail": "Register every existing guest floor/entry against revised tower envelope",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    },
+    {
+      "id": "north-connectivity",
+      "detail": "Full internal Mon Ami Gabi-to-casino circulation and all other property entrances remain to be mapped",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    },
+    {
+      "id": "east",
+      "detail": "East/service elevations and rear podium remain less detailed than Strip-facing public frontage",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    },
+    {
+      "id": "roof",
+      "detail": "Refine stepped roofline, pavilions and current rooftop venue fit-out from newer imagery",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    },
+    {
+      "id": "runtime",
+      "detail": "Current WebGPU startup verification passes. Main entrance route crossed live; full pool circuit and north/internal circulation still need acceptance. Earlier failed startup remains in historical first-pass records.",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    },
+    {
+      "id": "arrival-refinement",
+      "detail": "Main composition rebuilt. Relief groups, statues, balloon medallions and script are original approximations; transverse Arc passages are not modeled. Door arrangement, elevation, window spacing and street planting need further photo/metric refinement. Vestibule is a playable connector, not a replica of the complete actual hotel lobby.",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    },
+    {
+      "id": "horseshoe-ground-connector",
+      "detail": "Official Paris map and Monorail directions confirm the real-world connection. Legacy Paris-side physical door was mapped with Horseshoe,138.266m from its Paris-frame location; its unreachable visibility entry is retired in PR521. Preserve existing interiors and working Horseshoe-side portal. A future geometry pass must align doorway, continuous floor/collision and both visibility ends; short local walk checks are not a through-route verification. Evidence: docs/project-records/paris-horseshoe-passage.",
+      "reason": "Retained outside the bounded three-feature Arc soffit refinement; this pass does not establish full-resort survey, geometry or circulation acceptance."
+    }
+  ],
+  "arcCofferRefinement20261107": {
+    "status": "verified-bounded-pass",
+    "scope": [
+      "way/114697074: original shallow main-vault coffer frames",
+      "way/114697072: existing pier and main opening retained",
+      "way/114697073: existing pier and main opening retained"
+    ],
+    "reference": "docs/project-records/paris-frontage-refinement/research.md",
+    "geometryAudit": "docs/project-records/paris-frontage-refinement/geometry-check.json",
+    "coffers": 45,
+    "addedTriangles": 5400,
+    "retainedGroups": 415,
+    "newCollisionTriangles": 0,
+    "decisions": [
+      "Nine by five coffer arrangement is an original inferred approximation, not a surveyed count.",
+      "Keep the existing faceted barrel as recessed backing; shallow frames attach without modifying collision or passage width.",
+      "No transverse passage or exact-sculpture completion claim."
+    ],
+    "before": "docs/project-records/paris-frontage-refinement/before/results.json",
+    "beforeWalk": "docs/project-records/paris-frontage-refinement/before-walk/results.json",
+    "after": "docs/project-records/paris-frontage-refinement/after/results.json",
+    "afterWalk": "docs/project-records/paris-frontage-refinement/after-walk/results.json",
+    "performance": "docs/project-records/paris-frontage-refinement/performance.json",
+    "captures": "docs/project-records/paris-frontage-refinement/captures.md",
+    "localChecks": "docs/project-records/paris-frontage-refinement/local-checks.json",
+    "cellPreservation": "docs/project-records/paris-frontage-refinement/cell-preservation.json",
+    "version": {
+      "beforeComputedFromRetainedSources": "b63d2b099902f269",
+      "after": "8387df9e8b6fc450",
+      "note": "Local version.json was absent before this pass; previous revision is recomputed from preserved raw inputs using the exporter algorithm."
+    },
+    "visualReview": "Front, vault and east identical neutral views personally inspected. Coffers visible and attached to existing intrados; arch opening, pier reliefs and adjacent canopy retained. Close cameras crop upper cornice and are not whole-block skyline evidence. No photorealism claim.",
+    "smoke": "docs/project-records/paris-frontage-refinement/smoke.json"
   }
 }

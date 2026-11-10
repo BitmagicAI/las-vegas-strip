@@ -16,13 +16,13 @@
     }
   ],
   "remaining": [
-    "Parent casino facade still has generic glazing and lacks the photographed upper pink/white gallery; requires coordinated podium refinement",
-    "Canopy height estimated; precise column section, soffit utility details, landscaping and weathering unfinished",
-    "No interiors, neutral-daylight review or moving-route benchmark"
+    "Parent casino facade retains generic glazing and lacks photographed upper pink/white gallery; separate coordinated podium refinement is required to preserve ownership and existing interiors.",
+    "Canopy roof and soffit height remain estimated; precise column sections, remaining utility layout, landscaping and weathering require additional reference-supported work.",
+    "Inward walkway terminates at opaque parent glazing; no public interior connection is supported by this scoped canopy work. Full vehicle perimeter, cold streaming/memory metrics and higher-detail architectural review remain outside these walkway/static-view measurements."
   ],
-  "triangles": 1206,
+  "triangles": 1474,
   "batches": 7,
-  "optimizedMiB": 0.03,
+  "optimizedMiB": 0.033321380615234375,
   "viewsInspected": [
     "build/city-exteriors/circus-north-canopy-final/circus-canopy-street.png",
     "build/city-exteriors/circus-north-canopy-final/circus-canopy-under.png",
@@ -106,8 +106,24 @@
   },
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/circusNorthCanopy-exterior.glb": "14ff942df551c2fabad20eee74e62431a39f6e249e6c1df55e340f8f774b9ac8",
-      "build/strip-landmarks/circusNorthCanopy-exterior-collision.json": "2b577f6bf72e9f5431d719ac320d72609849cad22eaec669ae10299654f8a5e5"
+      "runtime-assets/strip-landmarks/circusNorthCanopy-exterior.glb": "1d8f658353b5d8920bd8ded27a19348b27cc27a83e058662e2e683323a609b53",
+      "runtime-assets/strip-landmarks/circusNorthCanopy-exterior-collision.bin": "8c6df5cf45d49709ed157cf9341dae8048434d4906b5035d0e57332ecb826b35"
     }
+  },
+  "refinement20261106": {
+    "status": "installed-reviewed-refinement-deferred",
+    "record": "docs/project-records/circus-north-canopy-refinement",
+    "sourceTriangles": 1474,
+    "optimizedBytes": 34940,
+    "scope": "Original suspended utility duct with flange bands and paired hangers under existing canopy; collision unchanged",
+    "decisions": "Dimensions and placement estimated from January2025 Street View; preserve parent facade and existing roof height",
+    "baselineWalkLegs": 14,
+    "performance": "docs/project-records/circus-north-canopy-refinement/performance-comparison.json",
+    "preservation": "docs/project-records/circus-north-canopy-refinement/preservation.json",
+    "installedWalkLegsBefore": 14,
+    "installedWalkLegsAfter": 14,
+    "smoke": "docs/project-records/circus-north-canopy-refinement/smoke.json",
+    "views": "https://github.com/BitmagicAI/las-vegas-strip/tree/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/circus-north-canopy-refinement",
+    "checks": "docs/project-records/circus-north-canopy-refinement/final-local-checks.json"
   }
 }

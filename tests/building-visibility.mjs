@@ -68,6 +68,19 @@ for(const [id,want] of [['CityCenter / Aria casino east 0',['aria','crystals']],
  const p=portal(id),q=nearPortal(p,p.buildings);ok(q,`${id}: a point inside next to it`);
  const s=visibilityState(q,lift(q),d=>d===id?'open':'closed');ok(want.every(b=>s.buildings.has(b)),`${id} draws ${want.join(' and ')}`);
 }
+// The legacy Paris-side door was mapped into Horseshoe, 138m from its Paris
+// source-frame position. There is no continuous modeled connector at this portal.
+// Keep its physical door intact, but do not let it expose Paris from a remote site.
+const retiredParisDoor='Interiors / Paris Horseshoe passage';
+ok(!portal(retiredParisDoor),'unreachable Paris-side visibility portal is retired');
+const parisZone=zones.find(z=>z.id==='zone6'),inParis=inside(parisZone);
+ok(inParis,'Paris casino has a point of its own');
+for(const state of ['opening','open','closing']){
+ const baseline=visibilityState(inParis,lift(inParis),closed);
+ const actual=visibilityState(inParis,lift(inParis),id=>id===retiredParisDoor?state:'closed');
+ ok(actual.buildings.has('paris')&&!actual.buildings.has('horseshoe'),`${state} remote legacy door does not expose Horseshoe from Paris`);
+ ok(actual.outside===baseline.outside,`${state} remote legacy door does not expose the city from Paris`);
+}
 // 7. Authored outdoor courts carve the interior zones they cross (the Paris arrival court).
 for(const v of fixture.exteriorVoids){
  const q={x:v.center[0],y:v.minY+1,z:v.center[1]},z=zoneAt(q);ok(!z||z.building!==v.building,`${v.id}: the court is not inside ${v.building}`);

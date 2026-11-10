@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-5.bin",
+      "bytes": 305554
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/stratExterior-exterior-collision.bin",
+      "bytes": 36572
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/stratExterior-exterior.glb",
+      "bytes": 1604084
+    }
+  ],
+  "totalBytes": 1960011,
+  "cellsCompared": 278,
+  "cellsUnchanged": 276,
+  "changedCells": [
+    "baked/cells/cell-1_-5.bin",
+    "baked/cells/manifest.json"
+  ],
+  "cityBakes": 1,
+  "geographicExports": 0
+}

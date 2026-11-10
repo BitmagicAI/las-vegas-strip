@@ -1,0 +1,21 @@
+# Wynn south frontage refinement
+
+2026-11-06. Issue171 claim confirmed janiverse. Branch task/ext-wynn-south-frontage from current origin/next e264bbe7da3c6f436966901deff3a4a3d146ebd5. Active worktree vegas-2601-westwood; dev3180/editor3181. Fashion Show PR526 merged,95closed; do not repeat its completed work.
+
+Read task and record. Existing mapped canopy way/886592895 has cream elliptical arches, relief strips and a dark hip perimeter roof; metal seams and relief detail remain approximate. Waterfall-area way/142899193 ownership unresolved; preserve it until sources identify geometry ownership. Larger retained podium, landscaping and vehicle clearance/turning benchmark remain explicit gaps. No model edits yet.
+
+Next: inspect official photos and current Street View, capture front-first matching neutral daylight baseline and performance, recover existing roof samples if needed and run baseline local walk. Choose a reversible reference-supported canopy detail pass; preserve existing interiors/roads/optimized runtime. Optimize level+WebP before installation, one final group bake, unchanged cells byte-identical, all step7 checks and installed keyboard walks/9stopdevsmoke serially. No concurrent GPU jobs or Maps during GPU work. Any new seams/relief must be original geometry, no third-party media committed. Keep dimensions inferred and remaining gaps explicit.
+
+Builder tools/strip-landmarks/wynn_south_canopy.py; existing tools/city-exteriors/probe-wynn-south-canopy.js, test-wynn-south-canopy.mjs and walk-wynn-south-canopy.mjs. Claim before edits already done; no overlapping claims taken. No main/CDN upload/publish/release/settings. Dependency symlinks .agents,engine,node_modules,tools/optimize/bm-tools are untracked and must remain untouched.
+
+## Active progress
+
+January2025 StreetView approach and close canopy inspected; official directory/map/art-walk sources researched. references.md records observed and unavailable evidence. Four matching neutral daylight baselineviews inspected; actualdirectroute hits existingpier (failure preserved), westwarddetour passes10keyboardlegs and return. Legacy sourcewalk also fails/losesground; retained, not passed.272roof checks pass.
+
+Candidate original roofseams/archtrimjoints/piercourses built; initial pierlines protruded, corrected by clipping to original wall region. Corrected local Blender roof/pier views inspected. Source16457triangles (+4236),7groups, alloldtriangles/labels/colliders retained. Level optimization passed; WebP pass skipped correctly for zero textures. Candidate installed locally only; shared bake running session25030 (PID91347), log /tmp/wynn-refinement-bake.txt. No other GPU jobs. Typecheck and3runtime tests pass.
+
+NEXT: wait bake; run /tmp/wynn-preserve-lod.mjs (allow only wynnSouthCanopy plus restored GoldCoast/Wyndham), stage assets, verify unchangedcells and optimized/bake/assetchecks. Reload with originalprompt; run matchingafter probe, actualdetourwalk and9stopsmoke SERIALLY. Inspectcaptures and matchperformance. Update record/review, public/review/diff checks, archive, taskboardownrow, commit+LFSaudit, verify onlyowncommits beforepush. Ready/mergePR527 exacthead to next, close171,picker. Never claim fullblock/vehicleclearance. No runtime staged yet.
+
+Final bake complete. /tmp/wynn-preserve-lod.mjs restored unrelated GoldCoast/Wyndham deltas; only wynnSouthCanopy changed. First stage rejected stale collision binary mtime; re-encoded and asserted bytes identical, then stage3copied/1927unchanged/0removed.91/92cells identical, onlycell-0_-2.bin changed (initial assumptioncell1_-2 corrected). Model/bake/assetchecks pass. Reload and matchedafterprobe running session57026; no other GPU work. Then actual10legdetourwalk and9stopsmoke serially.
+
+FINAL: all4installed comparison views inspected, staticp95 no regression; final10legdetourwalk passes and returns, endpoint/return captures inspected.9stopdevsmoke passes with0failedrequests/pageerrors/consoleerrors/misplacedstops. Baseline pier failure retained. Typecheck/3tests/272roof/model/bake/1930assets/91unchangedcells pass. Public0failures13existingwarnings,recordreview291valid,diffcheckpass. Ready for final archive/commit/LFSaudit/push/ready/mergePR527exacthead to next,close171,picker.

@@ -106,6 +106,10 @@ if manifest.exists():
  for z in vis['zones']:
   k=owner(z['name'],z['center']);z['sourceCenter']=z['center'];z['sourceSize']=z['size'];z['sourceYaw']=z['yaw'];z['geoTransform']=TRANSFORMS[k]
   q=volume(dict(position=z['center'],size=z['size'],yaw=z['yaw']),k);z['center']=q['position'];z['size']=q['size'];z['yaw']=q['yaw']
+ # Retire only the unreachable visibility link; keep the legacy physical door.
+ # Its compound name maps into Horseshoe, 138m from the Paris casino edge.
+ # Restore a Paris-side portal only with a verified modeled connector.
+ vis['portals']=[p for p in vis['portals'] if p['id']!='Interiors / Paris Horseshoe passage']
  for p in vis['portals']:
   k=owner(p['id'],p['position']);p['position']=point(p['position'],k)
  save('visibility.json',vis)

@@ -1,0 +1,36 @@
+{
+  "typecheck": "PASS",
+  "blockReview": "PASS",
+  "publicCheck": {
+    "failures": 0,
+    "existingWarnings": 4
+  },
+  "sourceAudit": "Only four pool material groups changed; old optimized asset has separate disclosed source drift.",
+  "roofSupportSamples": 2762,
+  "poolSupportSamples": 901,
+  "deckWalkSegments": 8,
+  "installedViewsInspected": 4,
+  "deckWalkEndpointViewsInspected": 4,
+  "runtimeGlbs": {
+    "checked": 1,
+    "notOptimized": 0
+  },
+  "sharedBakes": 1,
+  "bakeCurrent": true,
+  "pack": {
+    "present": 1930,
+    "missing": 0,
+    "notOptimized": 0
+  },
+  "smoke": {
+    "stops": 9,
+    "failedRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "newLfsBytes": 1037977,
+  "unchangedLodCellBins": "91/92",
+  "arrivalWalk": "PASS4segments,2daylightendpointcaptures personally inspected; exterior approach only, opaque entrance onward route unresolved",
+  "releaseChecks": "CDN/published-game/person-dependent checks deferred to release; no publication performed.",
+  "webp": "Variant invoked; source has zero images so no texture encoding required"
+}

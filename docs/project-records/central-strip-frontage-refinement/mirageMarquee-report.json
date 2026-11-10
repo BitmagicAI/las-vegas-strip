@@ -1,0 +1,103 @@
+{
+ "rel": ".bitmagic/central-strip-candidate/mirageMarquee-exterior.glb",
+ "sourceSha256": "4d7e9460061bf8a42e31a5fbca3b5286dfcff7d31b3fe405054b135c0a263f9e",
+ "cls": "level",
+ "loader": "Oakey candidate",
+ "when": "candidate",
+ "label": "primary",
+ "preset": "level",
+ "overrides": [],
+ "exitCode": 0,
+ "signal": null,
+ "seconds": 0.519,
+ "command": "BM_TOOLS=tools/optimize/bm-tools node --max-old-space-size=16384 <optimize-glb.mjs> .bitmagic/central-strip-candidate/mirageMarquee-exterior.glb .bitmagic/optimize/.bitmagic/central-strip-candidate/mirageMarquee-exterior/out.glb --preset=level --json",
+ "failed": [],
+ "stderr": [],
+ "report": {
+  "src": ".bitmagic/central-strip-candidate/mirageMarquee-exterior.glb",
+  "dst": ".bitmagic/optimize/.bitmagic/central-strip-candidate/mirageMarquee-exterior/out.glb",
+  "preset": "level",
+  "before": {
+   "bytes": 2152776,
+   "triangles": 80568,
+   "vertices": 57808,
+   "nodes": 24,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 2046968,
+   "gpuTextures": 1398101,
+   "textures": [
+    {
+     "name": "Original Mirage neutral display",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 80284,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": []
+  },
+  "after": {
+   "bytes": 980580,
+   "triangles": 80568,
+   "vertices": 57808,
+   "nodes": 24,
+   "skins": 0,
+   "animations": 0,
+   "gpuGeometry": 1566160,
+   "gpuTextures": 1398101,
+   "textures": [
+    {
+     "name": "Original Mirage neutral display",
+     "slot": "base",
+     "w": 512,
+     "h": 512,
+     "mime": "png",
+     "bytes": 80284,
+     "gpu": 1398101
+    }
+   ],
+   "extensions": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+   ]
+  },
+  "notes": [
+   "warning: the shared tools differ from the versions this script was tested with (@gltf-transform/core 4.5.1, tested 4.5.0; @gltf-transform/extensions 4.5.1, tested 4.5.0; @gltf-transform/functions 4.5.1, tested 4.5.0). Their defaults can change between versions: reinstall them as references/tools.md pins them"
+  ],
+  "checks": [
+   {
+    "name": "node names",
+    "fail": false,
+    "detail": "24 kept"
+   },
+   {
+    "name": "texture slots",
+    "fail": false,
+    "detail": "2 kept"
+   },
+   {
+    "name": "vertex layout",
+    "fail": false,
+    "detail": "separate"
+   },
+   {
+    "name": "bounds",
+    "fail": false,
+    "detail": "0.000% of size"
+   },
+   {
+    "name": "smaller",
+    "fail": false,
+    "detail": "1.12 MiB saved"
+   },
+   {
+    "name": "Khronos validator",
+    "fail": false,
+    "detail": "0 errors (0 new), 0 warnings"
+   }
+  ]
+ }
+}

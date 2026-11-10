@@ -77,6 +77,19 @@ def exterior(B):
  walk=F.poly([(41.7,12.6),(54,12.6),(54,14.0),(41.7,14.0)])
  B.planar('bt-soil-paint',garden.difference(walk),.22)
  B.planar('bt-court-concrete',walk,.23)
+ # Original strap-leaf rosettes in the existing soil, informed by February2026.
+ # Species/spacing inferred; keep the 1.4m path and tree placements clear.
+ for row,w in enumerate([11.85,15.1,17.65]):
+  for j,u in enumerate(np.arange(42.8,53.2,1.35)):
+   for leaf in range(12):
+    a=leaf*math.tau/12+(j+row)*.47;length=.48+.08*((leaf+j)%3)
+    for k in range(3):
+     t=k/3;tt=(k+1)/3
+     def edge(q,side):
+      radius=length*q;yy=.24+.48*math.sin(q*math.pi*.72);half=.045*(1-q)+.005
+      return F.p(float(u)+radius*math.cos(a)-side*half*math.sin(a),yy,w+radius*math.sin(a)+side*half*math.cos(a))
+     pts=[edge(t,-1),edge(t,1),edge(tt,1),edge(tt,-1)]
+     B.face('foliage',pts);B.face('foliage',list(reversed(pts)))
  for w in [10.9,18.6]:rail(F,(42,w),(54.3,w),.18,1.15)
  for w0,w1 in [(9.2,12.5),(14.2,20.3)]:rail(F,(54.3,w0),(54.3,w1),.18,1.2)
  F.box('bt-sign-paint',(53.8,3.7,11),(1.8,1.1,.16));F.tube('bt-rail-paint',(53.8,.18,11),(53.8,3.7,11),.065,8)

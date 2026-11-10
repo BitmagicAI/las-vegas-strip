@@ -1,0 +1,37 @@
+{
+  "removed": 5256,
+  "retainedTargetFaces": 35504,
+  "scope": "Only indices inside ten mapped pier radii below 11.6m; other node meshes and all collision unchanged.",
+  "nodes": [
+    {
+      "node": "excalibur/castle-turrets/castlebrick",
+      "removed": 0,
+      "retained": 12
+    },
+    {
+      "node": "excalibur/castle-turrets/goldroof",
+      "removed": 536,
+      "retained": 2256
+    },
+    {
+      "node": "excalibur/castle-turrets/navy",
+      "removed": 512,
+      "retained": 2304
+    },
+    {
+      "node": "excalibur/castle-turrets/redroof",
+      "removed": 512,
+      "retained": 2560
+    },
+    {
+      "node": "excalibur/castle-turrets/white",
+      "removed": 2688,
+      "retained": 18112
+    },
+    {
+      "node": "excalibur/castle-turrets/window",
+      "removed": 1008,
+      "retained": 10260
+    }
+  ]
+}

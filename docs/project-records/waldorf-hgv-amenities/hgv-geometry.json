@@ -1,0 +1,61 @@
+{
+  "pavilions": 3,
+  "loungers": 30,
+  "parasols": 7,
+  "poolAreaM2": 84.1508212535535,
+  "spaAreaM2": 8.544195524762317,
+  "terraceRiseM": 0.85,
+  "foliagePlacements": [
+    {
+      "p": [
+        315.5,
+        0.27,
+        -131
+      ],
+      "height": 7
+    },
+    {
+      "p": [
+        315.7,
+        0.27,
+        -124
+      ],
+      "height": 8
+    },
+    {
+      "p": [
+        315.4,
+        0.27,
+        -115
+      ],
+      "height": 6
+    },
+    {
+      "p": [
+        315.8,
+        0.27,
+        -106
+      ],
+      "height": 8
+    },
+    {
+      "p": [
+        350,
+        0.27,
+        -133
+      ],
+      "height": 6
+    },
+    {
+      "p": [
+        351,
+        1.12,
+        -115
+      ],
+      "height": 7
+    }
+  ],
+  "limitations": [
+    "Aerial fit and terrace elevation estimated; foliage imports pending; not installed or walked."
+  ]
+}

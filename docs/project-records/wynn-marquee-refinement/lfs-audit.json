@@ -1,0 +1,83 @@
+{
+  "base": "d396e31574a9bd5757dc5096933ade94b3a57da2",
+  "scope": "All own commits, unique LFS OIDs absent from base, including intermediate proofs/assets",
+  "objects": [
+    {
+      "oid": "6482a5895dfcdf62ec553b80f8c130456028d60488d6919a63e8180144df3f51",
+      "bytes": 256861,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-front-wynn-marquee-south.png"
+    },
+    {
+      "oid": "556dcdcc3945a7c5dccadd227b2f26ab8d42cdbc0b302b70789ae4ce6f35ed52",
+      "bytes": 514587,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-walk-endpoint-0.png"
+    },
+    {
+      "oid": "2f633445f599d9f46fd41d4b78c1f03aba91344c10ee50ec3ad8088574736912",
+      "bytes": 534506,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-walk-return-0.png"
+    },
+    {
+      "oid": "3cfa47f7c6cc278326c85080afab0f1e81ab49e43b724eb3a38c7f1e16dcc4d4",
+      "bytes": 615966,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-wynn-marquee-aerial.png"
+    },
+    {
+      "oid": "a8b27e94a4464df99ce4286f496a163a32908598a3b945ce500a3b95c36f7314",
+      "bytes": 246018,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-wynn-marquee-north.png"
+    },
+    {
+      "oid": "7e2e0f2eba4e7711bc170ff67e8af48a592b73a2f5ce9ef882ce30679b52f2d6",
+      "bytes": 142199,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-wynn-marquee-under.png"
+    },
+    {
+      "oid": "475a409793f3e2789bedd3b6a60689b920f488935f25e5d4f032848ec421c0de",
+      "bytes": 256268,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/before-front-wynn-marquee-south.png"
+    },
+    {
+      "oid": "af02fa80e6fe6f306dbf720a3d0c606bc34477ce5850591b343043855db4d47b",
+      "bytes": 514101,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/before-walk-endpoint-0.png"
+    },
+    {
+      "oid": "4318d24449182a1a24fc3df895c32cdc9524c908333255d585736ba49c346425",
+      "bytes": 531299,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/before-walk-return-0.png"
+    },
+    {
+      "oid": "d7ef04ed65f587ab5b6b7b9d06ad29f348e94593f846b0df961d43cc6e9f94de",
+      "bytes": 615608,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/before-wynn-marquee-aerial.png"
+    },
+    {
+      "oid": "35b5b82039f884640a4d5cf1ba389b1486cbb8936896491104f69e1e026b1410",
+      "bytes": 243901,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/before-wynn-marquee-north.png"
+    },
+    {
+      "oid": "200b7c008fb6be54bf7a51550a7c1a70eb926bbbcd6f51362e627e58325003a1",
+      "bytes": 147756,
+      "path": "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/before-wynn-marquee-under.png"
+    },
+    {
+      "oid": "e5aba2254208e6d861308a78648233052af47056c2348dc42204e5c238183e51",
+      "bytes": 717893,
+      "path": "runtime-assets/baked/cells/cell-0_-2.bin"
+    },
+    {
+      "oid": "5af6d53e68627c4b8c85706773e8464b72b70c260ae81a1f0f7aad8f5cbe0629",
+      "bytes": 13801,
+      "path": "runtime-assets/baked/cells/manifest.json"
+    },
+    {
+      "oid": "bfd48e04e8909dcf32c335132fa2c75545c172e07e430bdf4a1dd6fc91250732",
+      "bytes": 710212,
+      "path": "runtime-assets/strip-landmarks/wynnMarquee-exterior.glb"
+    }
+  ],
+  "count": 15,
+  "bytes": 6060976
+}

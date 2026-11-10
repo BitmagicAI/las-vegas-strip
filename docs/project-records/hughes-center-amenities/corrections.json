@@ -1,0 +1,18 @@
+{
+  "wellsBenchClearance": {
+    "initialFailures": 8,
+    "cause": "Benches across pergola ends intersected central garden path.",
+    "sourceCorrection": "Keep side benches only where their footprint clears the full path plus 0.35m. Earlier side move still intersected the diagonal path.",
+    "status": "Re-exported, preserved original geometry, optimized level and WebP, installed locally. 387 capsule samples now pass.",
+    "secondFailures": 11
+  },
+  "parkRoofTest": "Required missing source model JSON rebuilt only for test input using Meshes.save; live GLB/collision/venue metadata untouched. 86 roof samples pass.",
+  "roadKeepouts": {
+    "cause": "Initial daylight previews showed Wells lawn/path overlap with sidewalk and Park tennis court crossing mapped road.",
+    "correction": "Clip amenities against existing road/sidewalk surfaces plus 0.3m. Park court translated +6m X,+2m Z; second Wells pergola shifted +0.3m X. Roads unchanged.",
+    "sourceResult": "Zero Park road overlap; Wells below 1e-9m2 numerical residual. Residence deck unchanged.",
+    "status": "All eight corrected Wells/Park daylight captures inspected: court now inside road edge; pergolas and garden retained. Normal movement checks running.",
+    "decisionForOwner": "Aerial registration adjusted reversibly to preserve existing streets; dimensions not surveyed."
+  },
+  "initialPreviewReview": "All 12 initial daylight views inspected. Existing towers preserved; large unbuilt surrounding areas and arrival rotunda remain. These are scoped amenity studies, not completed blocks."
+}

@@ -3,6 +3,7 @@ OSM plan geometry is retained; pool depths and deck heights are authoring estima
 """
 from common import *
 from forum_shops import facade_frame
+from mandalay_cabana_refinement import IDS as REFINED_CABANAS, detail as cabana_detail
 DATA=Path('tools/strip-landmarks/mandalay-pool-plans.json')
 IDS=['way/'+s for s in ['399554455','364846554','364846552','399554420','118346756','399554453','399554456','399554454','128025409','399554425','399554412','364846555','398972297','364846556','364846557']]
 IDS += ['way/398972293','way/399554457']
@@ -69,7 +70,8 @@ def exterior(B):
  # Surveyed roof-only cabanas: preserve the open sides seen in Earth.
  for ident in CABANAS:
   B.source='cabana/'+ident;p=footprint(ident);c=p.centroid
-  B.planar('mandalay-shade',p,3.5)
+  shade='mcr-roof' if ident in REFINED_CABANAS else 'mandalay-shade'
+  B.planar(shade,p,3.5)
   B.planar('mandalay-pool-paving',p,Y,True)
   for poly in parts(p):
    ps=list(poly.exterior.coords)[:-1]
@@ -77,7 +79,8 @@ def exterior(B):
     B.tube('mandalay-chair-frame',(a[0],3.45,a[1]),(b[0],3.45,b[1]),.07,6)
     B.box('mandalay-chair-frame',(a[0],2.02,a[1]),(.12,2.76,.12))
    # Pale fabric panel over a thin supported canopy, not an enclosed utility box.
-   for a,b in zip(ps,ps[1:]+ps[:1]):B.face('mandalay-shade',[(a[0],3.5,a[1]),(b[0],3.5,b[1]),(c.x,3.85,c.y)])
+   for a,b in zip(ps,ps[1:]+ps[:1]):B.face(shade,[(a[0],3.5,a[1]),(b[0],3.5,b[1]),(c.x,3.85,c.y)])
+  cabana_detail(B,ident,p,water)
  # Furniture follows the water edge with clear paths; pooled materials, no per-chair colliders.
  B.source='mandalay-pool-furniture';count=0
  for poly in parts(water):

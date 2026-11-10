@@ -1,0 +1,73 @@
+{
+  "task": "ext-strat",
+  "issue": 37,
+  "claimed": true,
+  "sources": [
+    {
+      "url": "https://thestrat.com/userfiles/kcfinder/files/StratPropertyMap.pdf",
+      "imageDate": "July2026",
+      "observed": "Official map page1 personally inspected: main curved valet frontage beside hotel registration/self check-in/bell desk; two Boulevard exits, tower escalator near box office/cafe, garage escalator south with rideshare/Loop entrance. Schematic, not scaled construction plan."
+    },
+    {
+      "url": "https://thestrat.com/FAQ",
+      "observed": "Official text describes main entrance to north through concierge/Starbucks and escalator opposite STRAT Cafe to tower entrance."
+    },
+    {
+      "url": "https://thestrat.com/amenities/transportation",
+      "observed": "Official text confirms valet/taxi outside main entrance off Boulevard."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=RDr7e-NPKXd48Nzv6cfk-A&heading=280&pitch=5",
+      "imageDate": "January2021",
+      "observed": "Personally inspected: curved cream perforated marquee, sloped triangular wings, glazed main entrance and planted low-railed islands. Latest date offered at this private drive point is2021."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=pano&pano=9pliSaA6Ream19E-Sq92Gg&heading=290&pitch=8",
+      "imageDate": "February2022",
+      "observed": "Personally inspected: two crossing blue ribbon arches with edge bulb rows, suspended pale pink city emblem, tall pale piers and planted low black fencing. Latest date offered at this point2022; use newer official corroboration."
+    },
+    {
+      "url": "https://www.google.com/maps/@?api=1&map_action=map&center=36.1471,-115.1551&zoom=20&basemap=satellite",
+      "observed": "Aerial personally inspected: crossed diagonal arch ribbons span Boulevard with four landings outside traffic lanes, southern hotel arrival drive and opposite parking. Acquisition date not exposed."
+    },
+    {
+      "url": "https://content.govdelivery.com/accounts/NVLASVEGAS/bulletins/2ad17b5",
+      "imageDate": "November18,2020",
+      "observed": "Primary city release: arches80ft high, each arch140ft span, emblem20x40ft;13,016lights and4footings. DesignerSelbertPerkins, fabricatorYESCO. Text inspected."
+    },
+    {
+      "url": "https://www.lasvegasnevada.gov/News/Blog/Detail/popular-las-vegas-landmarks-and-attractions",
+      "imageDate": "September4,2024",
+      "observed": "Primary city text corroborates80ft arches atSTRAT betweenStLouis/BobStupak. Official night photograph personally inspected: broad blue crossed ribbons with dense dot lamps, suspended pink script emblem, thin suspension cables and small upper-right star accents."
+    }
+  ],
+  "recordNotes": "Top remaining list stale: poolIntegration20261021 and rideIntegration20261021 already implemented. Preserve those and reconcile record before choosing concrete scoped work.",
+  "candidateScope": "Missing gateway arches are explicitly recorded in podiumAudit.remaining; check actual installed baseline and existing city ownership before authoring.",
+  "base": "8731e5f",
+  "pullRequest": 455,
+  "placement": {
+    "aerialClickedLandingsLatLon": [
+      [
+        36.147134,
+        -115.155382
+      ],
+      [
+        36.146765,
+        -115.155162
+      ],
+      [
+        36.146921,
+        -115.155526
+      ],
+      [
+        36.146979,
+        -115.15503
+      ]
+    ],
+    "fittedCenterXZ": [
+      1594,
+      -3445.3
+    ],
+    "note": "Approximate visible aerial edge clicks span45.1\u201345.6m, vs official140ft/42.672m. Use official span around fitted common centre and observed diagonal directions; footing and ribbon sections remain estimated. Initial north baseline camera was inside the existing tower base and is superseded before authoring."
+  }
+}

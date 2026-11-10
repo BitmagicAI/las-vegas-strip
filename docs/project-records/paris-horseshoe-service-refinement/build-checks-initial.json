@@ -1,0 +1,115 @@
+[
+  {
+    "command": [
+      "python3.12",
+      "tools/strip-landmarks/build_paris_horseshoe_service_refinement.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-build.log",
+    "note": "Executable path normalized for public record; ran installed uv CPython3.12."
+  },
+  {
+    "command": [
+      "/Applications/Blender.app/Contents/MacOS/Blender",
+      "--background",
+      "--python",
+      "tools/strip-landmarks/export_paris_horseshoe_service_refinement.py"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-export.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=parisRooftopBar",
+      "--variant=level"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-parisRooftopBar-level.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=parisRooftopBar",
+      "--variant=webp-textures"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-parisRooftopBar-webp-textures.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=cvsHorseshoe",
+      "--variant=level"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-cvsHorseshoe-level.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/optimize-runtime-glbs.mjs",
+      "--only=cvsHorseshoe",
+      "--variant=webp-textures"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-cvsHorseshoe-webp-textures.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/install-optimized.mjs",
+      "--only=parisRooftopBar,cvsHorseshoe",
+      "--no-stage"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-install.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/optimize/pack-data.mjs",
+      "build/strip-landmarks/parisRooftopBar-exterior-collision.json",
+      "build/strip-landmarks/cvsHorseshoe-exterior-collision.json"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-pack.log"
+  },
+  {
+    "command": [
+      "git",
+      "restore",
+      "tools/optimize/runtime-glbs.json"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-restore-inventory.log"
+  },
+  {
+    "command": [
+      "node",
+      "tools/bake/bake-city.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-bake.log"
+  },
+  {
+    "command": [
+      "node",
+      "/tmp/paris-horseshoe-preserve-lod.mjs"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-preserve-lod.log"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/release/asset-pack.py",
+      "stage"
+    ],
+    "exitCode": 0,
+    "log": "/tmp/paris-horseshoe-stage.log"
+  }
+]

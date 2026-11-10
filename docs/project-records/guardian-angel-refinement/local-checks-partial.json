@@ -1,0 +1,32 @@
+[
+  {
+    "command": [
+      "bitmagic",
+      "check",
+      "--original-prompt",
+      "Keep going through the task list, up to about ten buildings from one area per PR. Do not ask me whether to continue."
+    ],
+    "exitCode": 0,
+    "log": "docs/project-records/guardian-angel-refinement/check-0.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/resort-blocks/review.py"
+    ],
+    "exitCode": 1,
+    "log": "docs/project-records/guardian-angel-refinement/check-1.txt"
+  },
+  {
+    "commands": [
+      "resort-blocks/review.py",
+      "release/check-public.py",
+      "city-lazy-lod.test.mjs",
+      "city-lighting-resize.test.mjs",
+      "site-lights.test.mjs",
+      "test-guardian-angel.mjs"
+    ],
+    "exitCode": 0,
+    "result": "All passed after stale merged pedestrian-lifts active marker corrected. Public check:0 failures24 inherited warnings; collision331 support146 aisle samples. Initial review failure preserved above."
+  }
+]

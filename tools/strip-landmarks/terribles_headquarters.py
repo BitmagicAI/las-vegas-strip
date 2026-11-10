@@ -47,6 +47,14 @@ def exterior(B):
   for j in range(10):
    a=j*math.tau/10;W.tube('thq-cactus-rib',(x+.24*math.cos(a),.4,z+.24*math.sin(a)),(x+.24*math.cos(a),h-.3,z+.24*math.sin(a)),.015,5)
   W.path('thq-cactus-foliage',[(x,h*.45,z),(x+.5,h*.45,z),(x+.7,h*.6,z),(x+.7,h*.85,z)],.14,12)
+ # Low barrel cacti in the roadside gravel bed, observed in February 2026 Street View.
+ # Exact spacing and sizes are estimates; visual only, clear of the public approach.
+ for x,z,r,h in [(56.4,3747,.38,.53),(57.5,3748.2,.46,.64),(59,3749,.34,.49),(60.2,3747.8,.43,.60),(56.4,3739.5,.32,.46),(59.8,3742,.37,.54),(56.5,3728.5,.40,.57),(60.1,3726.3,.35,.50)]:
+  profile=[(.32,.65*r),(.32+h*.25,.96*r),(.32+h*.65,r),(.32+h*.9,.65*r),(.32+h,.08*r)]
+  W.lathe('thq-cactus-foliage',x,z,profile,20)
+  for j in range(12):
+   a=j*math.tau/12
+   W.path('thq-cactus-rib',[(x+rr*math.cos(a),y,z+rr*math.sin(a)) for y,rr in profile],.012,5)
  # Recessed horizontal courses break up the stone piers at pedestrian distance.
  for x in [82.1,95.5]:
   for y in np.arange(.45,8.5,.22):

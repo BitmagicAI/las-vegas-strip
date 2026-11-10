@@ -16,6 +16,15 @@ def exterior(B):
     G.box('li-white-paint',(u,1.53,-.09),(1.27,1.9,.14));G.box('li-glass',(u,1.53,-.18),(1.1,1.72,.06))
     for xx in np.linspace(u-.52,u+.52,7):G.box('li-white-paint',(float(xx),1.53,-.24),(.022,1.7,.025))
     G.box('li-white-paint',(u,1.54,-.25),(1.1,.03,.025))
+    # Original symmetric scrollwork from the south-elevation photograph.
+    # Approximate 0.30 x 0.42 m ornament; decorative only, existing bars/collision retained.
+    for side in [-1,1]:
+     for vertical in [-1,1]:
+      pts=[]
+      for t in np.linspace(0,math.pi*1.7,9):
+       r=.095*(1-float(t)/(math.pi*1.7)*.72)
+       pts.append((u+side*(.055+r*math.sin(float(t))),1.54+vertical*(.09+r*math.cos(float(t))),-.275))
+      G.path('li-white-paint',pts,.009,4)
    u=L/2;G.box('li-white-paint',(u,1.5,-.1),(1.5,2.65,.16));G.box('li-door-paint',(u,1.48,-.2),(1.25,2.45,.08));G.text('505',(u,2.35,-.26),.18,'li-dark-letter')
    G.path('li-white-paint',[(u-.9,2.85,-.15),(u,3.22,-.15),(u+.9,2.85,-.15)],.06,8)
    G.box('li-white-paint',(L/2,3.27,-.65),(L+.22,.16,1.3))

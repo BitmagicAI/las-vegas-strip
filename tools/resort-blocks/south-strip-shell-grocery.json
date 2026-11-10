@@ -17,25 +17,45 @@
     {
       "url": "https://www.google.com/maps/@36.089519,-115.1721178,100m/data=!3m1!1e3",
       "observed": "Satellite inspected: store east,canopy centeredwest,Strip entrancewest andFourSeasons entrance north,thin plantingnorthboundary. Approximate sitefloor bounded41..129,2927..2962."
+    },
+    {
+      "url": "https://find.shell.com/us/fuel/10006335-4207-las-vegas-blvd-s/en_US",
+      "provider": "Shell official locator",
+      "observed": "Confirms4207 location, convenience store and fuels; no site-specific photograph from this page."
+    },
+    {
+      "url": "https://www.google.com/maps/search/Shell+4207+Las+Vegas+Boulevard+South",
+      "provider": "Google Maps photo by Dave Shapiro",
+      "imageDate": "August2021",
+      "photoId": "CIHM0ogKEICAgICaiZvZiwE",
+      "observed": "Visually inspected Green Valley Grocery white fascia/green lettering, glazed front, low fan palms and tall date palm. Conflicts with older SMART/MINI MART branding in other photos; do not silently mix dates."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.089519,-115.1721178,104m/data=!3m1!1e3",
+      "provider": "Google satellite Airbus/Maxar/Vexcel",
+      "observed": "Visually inspected northern planting strip with three palms west of north driveway, northeast tree bed, canopy south of strip, curved store corner. Preserve driveway gaps and existing street boundaries. Capture date unknown."
     }
   ],
   "remaining": [
-    "Northern planting,pylon and advertisements absent",
+    "Northern planting spacing/species approximate; pylon, advertisements and northeast planting remain absent",
     "Canopy emblem and lettering approximate",
     "Pump wear,asphalt patching and storefront interiors require refinement",
-    "Off-site terrain gaps still visible"
+    "Off-site terrain gaps still visible",
+    "Dated MINI MART and Green Valley Grocery photographs conflict; current branding needs Street View confirmation."
   ],
   "dimensions": "Mappedstore18.9x19.4m cantednorthwestcorner;canopy13x16.6m. Canopy underside4.5m/store4.5m photo-estimates,not measured.",
   "implemented": [
     "Open fuel canopy with raised emblem,red/yellow fascia,columns,pump islands,dispensers and hoses",
     "Mapped canted storefront,glazing and tan banded walls,roof services",
-    "Raised continuous forecourt resolves overlap with existing pavement"
+    "Raised continuous forecourt resolves overlap with existing pavement",
+    "Three original northern palms with soil circles; driveway gap and collision unchanged"
   ],
   "validation": {
     "support": "112 support/headroom checks passed",
     "walking": "6legs both directions passed after pavement elevation fix",
     "visual": "3installedviews inspected;store rechecked after glazing/label fixes",
-    "performance": "960x540 ultra fixed aerial16.7ms p50/18.8ms p95;not fullroutebenchmark"
+    "performance": "960x540 ultra fixed aerial16.7ms p50/18.8ms p95;not fullroutebenchmark",
+    "refinement492": "All22 installed actual segments passed (Maverick10/Shell12), four endpoint images inspected. CPU support/headroom75/44 and Rapier10/12 passed. Six identical-camera neutral daylight before/after views inspected; p95 delta0..+1.8ms near60Hz cap. Single shared bake current;90/92cells unchanged,optimized asset pack and public/block checks pass. Local smoke9stops placed,0errors; all step7 local checks passed."
   },
   "evidence": [
     "build/city-exteriors/south-shell-final/shell-front.png",
@@ -43,11 +63,15 @@
     "build/city-exteriors/south-shell-final/shell-aerial.png",
     "build/city-exteriors/south-shell-collision.json",
     "build/city-exteriors/south-shell-walk.json",
-    "build/city-exteriors/south-shell-ownership-audit.json"
+    "build/city-exteriors/south-shell-ownership-audit.json",
+    "docs/project-records/south-strip-terminal-service-refinement/actual-walk-after.json",
+    "docs/project-records/south-strip-terminal-service-refinement/research.json",
+    "docs/project-records/south-strip-terminal-service-refinement/performance-comparison.json",
+    "docs/project-records/south-strip-terminal-service-refinement/source-audit.json"
   ],
   "finalBuild": {
     "files": {
-      "build/strip-landmarks/southShell-exterior.glb": "d404c8572fa5f58ce644bfc415000665d64889ba37796808d82ca1ae3592a9b8",
+      "build/strip-landmarks/southShell-exterior.glb": "d212e3063a591030e4b9d91b284e4e675c05d531358ce70cc8486ad20e26ed54",
       "build/strip-landmarks/southShell-exterior-collision.json": "01066b384d2517896981411b824cbbb1e602b8d250683d891ff03ee817e5b021"
     }
   }

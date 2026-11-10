@@ -19,6 +19,13 @@ def exterior(B):
    G.box('ms-canopy-metal',(L/2,3.3,-.5),(L,.35,1))
    for u in np.arange(.1,L,.12):G.box('ms-metal',(u,3.3,-1.02),(.045,.35,.035))
    G.box('ms-black',(L/2,4.06,-.14),(6.5,.97,.03));G.text('Wiseguys',(L/2,4.16,-.19),.65,'ms-letter');G.text('LIVE COMEDY',(L/2,3.81,-.19),.18,'ms-letter')
+   # Small upper-left slogan board seen in January 2026 imagery.
+   # Original geometry and lettering; placement/size estimated from brick courses.
+   u=L*.90
+   G.box('ms-metal',(u,4.2,-.20),(1.5,.86,.10))
+   G.box('ms-black',(u,4.2,-.265),(1.39,.75,.035))
+   for label,y,size in [('this',4.43,.16),('place',4.2,.24),('is a joke.',3.99,.14)]:
+    G.text(label,(u,y,-.30),size,'ms-letter')
   elif nz>.7:
    # South parking entry has a deep rounded fabric hood.
    u=L*.22;G.box('ms-black',(u,1.55,-.11),(1.8,2.7,.09));G.box('ms-red',(u,1.55,-.18),(1.6,2.5,.05))

@@ -1,0 +1,141 @@
+{
+  "rows": [
+    {
+      "name": "front",
+      "before": {
+        "name": "front",
+        "eye": [
+          -585,
+          210,
+          2500
+        ],
+        "target": [
+          -929,
+          35,
+          2813
+        ],
+        "p50": 16.700000047683716,
+        "p95": 19.5
+      },
+      "after": {
+        "name": "front",
+        "eye": [
+          -585,
+          210,
+          2500
+        ],
+        "target": [
+          -929,
+          35,
+          2813
+        ],
+        "p50": 16.700000047683716,
+        "p95": 17.09999990463257
+      },
+      "p95ChangePercent": -12.307692796756065
+    },
+    {
+      "name": "south",
+      "before": {
+        "name": "south",
+        "eye": [
+          -1230,
+          150,
+          3090
+        ],
+        "target": [
+          -929,
+          35,
+          2813
+        ],
+        "p50": 16.700000047683716,
+        "p95": 18.300000190734863
+      },
+      "after": {
+        "name": "south",
+        "eye": [
+          -1230,
+          150,
+          3090
+        ],
+        "target": [
+          -929,
+          35,
+          2813
+        ],
+        "p50": 22,
+        "p95": 39.39999985694885
+      },
+      "p95ChangePercent": 115.30054342238066
+    },
+    {
+      "name": "entry",
+      "before": {
+        "name": "entry",
+        "eye": [
+          -925,
+          3,
+          2585
+        ],
+        "target": [
+          -929,
+          27,
+          2690
+        ],
+        "p50": 16.799999952316284,
+        "p95": 19
+      },
+      "after": {
+        "name": "entry",
+        "eye": [
+          -925,
+          3,
+          2585
+        ],
+        "target": [
+          -929,
+          27,
+          2690
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.5
+      },
+      "p95ChangePercent": -2.631578947368418
+    },
+    {
+      "name": "terrace",
+      "before": {
+        "name": "terrace",
+        "eye": [
+          -929,
+          45,
+          2605
+        ],
+        "target": [
+          -929,
+          3,
+          2690
+        ],
+        "p50": 16.600000143051147,
+        "p95": 20.700000047683716
+      },
+      "after": {
+        "name": "terrace",
+        "eye": [
+          -929,
+          45,
+          2605
+        ],
+        "target": [
+          -929,
+          3,
+          2690
+        ],
+        "p50": 16.600000143051147,
+        "p95": 18.40000009536743
+      },
+      "p95ChangePercent": -11.111110855159879
+    }
+  ],
+  "review": "All4installedneutraldaylightcapturesinspected. Canopy visible with original shell/roof/ground preserved. SouthP95+115.3% requires controlled paired investigation; no performance acceptance yet."
+}

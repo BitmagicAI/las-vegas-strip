@@ -9292,7 +9292,7 @@
         "layer": "-1",
         "name": "Encore"
       },
-      "owner": "mapped-background",
+      "owner": "wynnEncoreExterior",
       "status": "reviewed-refinement-deferred",
       "reviewEvidence": "build/city-exteriors/wynn-final",
       "remaining": "Precise storefronts, landscape and full route verification pending.",
@@ -9356,7 +9356,7 @@
         "fee": "yes",
         "parking": "multi-storey"
       },
-      "owner": "mapped-background",
+      "owner": "wynnEncoreExterior",
       "status": "reviewed-refinement-deferred",
       "reviewEvidence": "build/city-exteriors/wynn-final",
       "remaining": "Precise storefronts, landscape and full route verification pending.",
@@ -9590,7 +9590,7 @@
       "tags": {
         "building": "retail"
       },
-      "owner": "mapped-background",
+      "owner": "wynnEncoreExterior",
       "status": "reviewed-refinement-deferred",
       "reviewEvidence": "build/city-exteriors/wynn-final",
       "remaining": "Precise storefronts, landscape and full route verification pending.",
@@ -15584,7 +15584,8 @@
       },
       "owner": "geographic pedestrian bridge; visual replacement suppressed",
       "status": "reviewed-refinement-pending",
-      "reviewEvidence": "build/city-exteriors/excalibur-hall-final",
+      "reviewEvidence": "tools/resort-blocks/excalibur-pedestrian-bridge.json",
+      "priorReviewEvidence": "build/city-exteriors/excalibur-hall-final",
       "reviewedDate": "2026-10-14"
     },
     {

@@ -68,8 +68,7 @@ def exterior(B):
   mosaic([(s*.7,16.2),(s*3.3,12.5),(s*1.2,13.7)],'ga-mosaic-slate')
   mosaic([(s*2.1,8),(s*2.3,11.8),(s*3,10.6),(s*3.4,7.2)],'ga-mosaic-rust')
  mosaic([(-.6,5),(0,9),(.65,8),(1.2,4.6)],'ga-mosaic-slate')
- for z in [-1.,1.]:B.box('ga-door',(FRONT+2.6,1.6,Z+z),(.12,2.7,1.96),True)
- for z in [-.12,.12]:B.tube('ga-frame',(FRONT+2.51,1.1,Z+z),(FRONT+2.51,1.85,Z+z),.03,6)
+ # Paired runtime arrival doors replace the static leaves; nave owns portal metadata.
  B.box('ga-concrete',(FRONT+2.8,3.4,Z),(3.5,.2,4.1),True)
  # Side annexes follow the octagonal/irregular mapped outlines outside the nave.
  annex=p.difference(base).intersection(unary_union([box(833,Z-24,878,Z-12.6),box(833,Z+12.6,878,Z+24),box(878,Z-24,889,Z+24)]))

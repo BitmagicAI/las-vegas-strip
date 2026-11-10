@@ -1,0 +1,46 @@
+{
+  "baselineCellFiles": 278,
+  "unchangedCellFiles": 276,
+  "changedCellFiles": [
+    "runtime-assets/baked/cells/cell-1_-3.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "runtimeFiles": [
+    {
+      "path": "runtime-assets/baked/cells/cell-1_-3.bin",
+      "bytes": 665187,
+      "sha256": "2d353cd0f18ca92aa84a8f6c05da861d602c3654b2896746ff3870655fc5e5d1"
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801,
+      "sha256": "16c6ace7bb8682c20afa71999ed856fe9d738c61375abae41cc23ec58056cda0"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/peppermillRetail-exterior-collision.bin",
+      "bytes": 3376,
+      "sha256": "a40fb56a366fbda27492e18ba395ffd0f11c55ffa1cf4b738bb1f61662f3cb6b"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/peppermillRetail-exterior.glb",
+      "bytes": 959436,
+      "sha256": "99be36f2a9c9294b711f827416eb5ef4b151e1bd4775b1ec405c1af7fc7c9aa6"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/peppermillRetail-interior-collision.bin",
+      "bytes": 26476,
+      "sha256": "39b5182f5a0c13da9c4b966acf773aec8542310c8fb340b465948559f3b2d4e3"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/peppermillRetail-interior.glb",
+      "bytes": 507820,
+      "sha256": "f196c83faffd248f99c6059701d7defa1d5821b647b612a66f6e88a641871780"
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/venues.bin",
+      "bytes": 393702,
+      "sha256": "d162576541ddae201c7694376b78f48f97d144d894f2c67b6f3bc645ecc90379"
+    }
+  ],
+  "newLfsBytes": 2569798
+}

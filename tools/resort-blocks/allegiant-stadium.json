@@ -19,10 +19,10 @@
   ],
   "dimensions": "Mapped69m total height; roof annulus62m, central membrane rise7m are estimated from mapped roof-height and imagery. Individual facade-band dimensions estimated.",
   "remaining": [
-    "Entry terrace/ramp route validation",
-    "Landscape and service apron",
-    "Exact signs/media displays",
-    "Route performance comparison"
+    "Raised entry terrace, paired stairs and Raider Image store remain absent: preliminary footprint conflicts with existing mapped circulation, which this pass preserves.",
+    "Landscape and service apron remain incomplete; canopy support rhythm omits columns where mapped road/sidewalk paths cross.",
+    "Exact signs/media displays and broad north glazing/frame remain approximate or missing.",
+    "Full-site arrival/raised terrace route validation remains; scoped canopy six-segment walk verified. South timing variability also occurs with original model; no universal60fps claim."
   ],
   "baseline": [
     "build/city-exteriors/allegiant-before/stadium-north.png",
@@ -97,5 +97,10 @@
     "typecheck": "passed",
     "localWebGPU": "passed,56fps at spawn,3011bodies; not block route performance",
     "log": "docs/project-records/city-exteriors-2026-10-12/verify-allegiant.log"
+  },
+  "refinement20261102": {
+    "summary": "Original inferred curved north entry canopy, source groups/labels preserved; all4installeddaylightviews inspected. Actual walk/performance/finalchecks pending.",
+    "record": "docs/project-records/allegiant-terrace-refinement/research.json",
+    "status": "Verified scoped canopy refinement; local step7 checks passed; full-site remaining items retained"
   }
 }

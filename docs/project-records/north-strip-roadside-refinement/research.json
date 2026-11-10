@@ -1,0 +1,55 @@
+{
+  "accessed": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://cityoflasvegas.smugmug.com/Downtown/IHOP-on-Las-Vegas-Blvd",
+      "provider": "City of Las Vegas",
+      "imageDate": "2020-10-14",
+      "images": [
+        "https://photos.smugmug.com/Downtown/IHOP-on-Las-Vegas-Blvd/i-Dv8wK3J/0/NJC9d8QwX48vRxXPWWjMxbDd6LdKttK96qGphn8gQ/L/20201014-Ihop-19-L.jpg",
+        "https://photos.smugmug.com/Downtown/IHOP-on-Las-Vegas-Blvd/i-fLN7sBD/0/Nf6CqZWj4gX4SSzz2LX29jcvVk7vKKnk2pjLq2cpJ/M/20201014-Ihop-06-M.jpg",
+        "https://photos.smugmug.com/Downtown/IHOP-on-Las-Vegas-Blvd/i-r4pBXLN/0/LmkhfXTFGzVK2F8jtnQ452TJ6VMwtbFXVXTxmcQdB/M/20201014-Ihop-08-M.jpg",
+        "https://photos.smugmug.com/Downtown/IHOP-on-Las-Vegas-Blvd/i-Jh9T3cW/0/KH4Q5B42gGkwPprxrg62FrZ2Q79wDdFD8mMmTNF65/M/20201014-Ihop-09-M.jpg",
+        "https://photos.smugmug.com/Downtown/IHOP-on-Las-Vegas-Blvd/i-3vvPVrK/0/MntF89zpZMWVPmfrwj9dH4jK878k4CbScq5qZkQFg/M/20201014-Ihop-11-M.jpg"
+      ],
+      "visuallyInspected": true,
+      "observed": "Five photographs: red folded/downward then horizontal arrow mounted below blue pylon panel; large oval red outline around blue1809. Dark blue cylinder and silver horizontal bands; dark parapet, red window surrounds, gravel bed and low shrubs outside cylinder. No complete interior plan provided."
+    },
+    {
+      "url": "https://restaurants.ihop.com/en-us/nv/las-vegas/breakfast-1809-s-las-vegas-blvd-3684",
+      "provider": "Restaurant owner",
+      "observed": "Confirms1809location and outdoor seating; not a measured layout."
+    },
+    {
+      "url": "https://sweetheartschapel.com/",
+      "provider": "Chapel owner",
+      "observed": "Confirms1735address and garden ceremony space. Exact garden position/plan not established."
+    },
+    {
+      "url": "https://sweetheartschapel.com/gallery",
+      "provider": "Chapel owner",
+      "observed": "Describes flower-covered gazebo and indoor chapel; text alone does not establish dimensions or layout."
+    },
+    {
+      "url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/898245131.jpg?k=c2893a9f3bc01521d0bddc4ea6b95758678b21ecc98276a37559d849dd657137&o=",
+      "provider": "Property photograph via Booking",
+      "imageDate": "unknown",
+      "visuallyInspected": true,
+      "observed": "Shallow white drive arch, gray classical columns, ochre chapel above, recessed upper blind arches and rectangular grilles. Chapel street glazing has climbing greenery and flowers; arch and motel-sign trim carry small repeated bulbs. Motel sign branding includes dated OYO panel, not adopted as current ownership."
+    },
+    {
+      "url": "https://www.google.com/maps/@36.15,-115.1523,415m/data=!3m1!1e3",
+      "provider": "Google satellite",
+      "visuallyInspected": true,
+      "imageDate": "unknown",
+      "observed": "Standalone IHOP north of former L footprint; separate Culinary Health Fund map label to south. Oasis U courtyard with long parking aisle and street-front arch; current map label Sin City Scooter Rentals & Tours near frontage does not establish chapel ownership/date. Retain photographic architectural detail without asserting current business layout."
+    }
+  ],
+  "provenance": "References only; no downloaded photographs committed or used as runtime textures. Original redistributable geometry only.",
+  "decisions": [
+    "Keep existing mapped footprint ownership and estimated heights; former IHOP/health-fund building remains neutral until dedicated reference supports changes.",
+    "Candidate refinements: missing IHOP folded arrow/oval address ring; Oasis chapel facade vines and sign trim detail. Determine exact scope after installed baseline inspection.",
+    "No interior geometry from incomplete photo fragments; keep public-interior, measured-dimension and garden-layout discrepancies explicit.",
+    "Google Earth/StreetView site review still required after GPU baseline finishes."
+  ]
+}

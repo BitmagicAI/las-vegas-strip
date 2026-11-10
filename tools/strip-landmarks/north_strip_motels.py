@@ -81,7 +81,10 @@ def exterior(B):
   elif idx==1:
    court_facade(B,p,6.3,2,'nm-cream',True);hip(B,p,6.35,1.5)
    # Pool only in the photographed southern court, with solid paving/coping.
-   pool=Point(1552,-3264).buffer(4,16).union(Point(1555,-3261).buffer(3,16)).difference(p.buffer(2))
+   # Earth overhead: straight-sided basin, long axis east-northeast.
+   # 15 x 7 m and -20 degree alignment are visual estimates, not survey data.
+   pool=translate(rotate(box(-7.5,-3.5,7.5,3.5),-20,origin=(0,0)),1557,-3263)
+   assert pool.buffer(1).distance(p)>2, 'Coping must clear the 1.7 m gallery projection'
    B.planar('nm_pool',pool,.46);B.planar('tile',pool.buffer(1).difference(pool),.58,True)
    B.shell(pool.buffer(1),.24,.58,'nm-cream',roof=False,solid=True)
   elif idx==2:

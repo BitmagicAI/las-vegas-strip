@@ -1,0 +1,35 @@
+{
+  "unchangedFiles": 272,
+  "changedFiles": [
+    {
+      "file": "geographic-strip/cells/manifest.json",
+      "beforeBytes": 39832,
+      "afterBytes": 39832
+    },
+    {
+      "file": "geographic-strip/cells/cell-1_-3.glb",
+      "beforeBytes": 5028288,
+      "afterBytes": 5016972
+    },
+    {
+      "file": "geographic-strip/collision-cells/cell-1_-3.bin",
+      "beforeBytes": 201228,
+      "afterBytes": 200664
+    },
+    {
+      "file": "geographic-strip/collision-cells/manifest.json",
+      "beforeBytes": 17609,
+      "afterBytes": 17609
+    },
+    {
+      "file": "baked/cells/cell-1_-3.bin",
+      "beforeBytes": 645944,
+      "afterBytes": 658439
+    },
+    {
+      "file": "baked/cells/manifest.json",
+      "beforeBytes": 13801,
+      "afterBytes": 13801
+    }
+  ]
+}

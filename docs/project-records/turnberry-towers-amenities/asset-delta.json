@@ -1,0 +1,33 @@
+{
+  "newLfsBytes": 2405534,
+  "lfsObjects": [
+    {
+      "path": "runtime-assets/baked/cells/cell-2_-4.bin",
+      "bytes": 256413
+    },
+    {
+      "path": "runtime-assets/baked/cells/manifest.json",
+      "bytes": 13801
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/turnberryTowersExterior-exterior-collision.bin",
+      "bytes": 6204
+    },
+    {
+      "path": "runtime-assets/strip-landmarks/turnberryTowersExterior-exterior.glb",
+      "bytes": 2129116
+    }
+  ],
+  "cellFiles": 278,
+  "unchangedCellFiles": 276,
+  "changedCells": [
+    "runtime-assets/baked/cells/cell-2_-4.bin",
+    "runtime-assets/baked/cells/manifest.json"
+  ],
+  "changedRuntimeFiles": [
+    "runtime-assets/baked/cells/cell-2_-4.bin",
+    "runtime-assets/baked/cells/manifest.json",
+    "runtime-assets/strip-landmarks/turnberryTowersExterior-exterior-collision.bin",
+    "runtime-assets/strip-landmarks/turnberryTowersExterior-exterior.glb"
+  ]
+}

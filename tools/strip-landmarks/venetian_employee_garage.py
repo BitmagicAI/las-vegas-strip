@@ -24,6 +24,23 @@ def exterior(B):
    else:
     for level in range(1,15):F.box('st-stone',(L/2,.24+level*pitch+.42,-.07),(L,.84,.2),True)
     for x in np.linspace(.2,max(.2,L-.2),max(2,round(L/7.5)+1)):F.box('st-stone',(x,h/2,0),(.4,h,.45),True)
+    # January2025 north reference: projecting brown framed boxes in one stack.
+    # Purpose and exact dimensions unverified; visual-only original geometry.
+    if nz<-.8 and L>60:
+     u=L*.5
+     for level in range(1,15):
+      y=.24+level*pitch;w=4.2;top=y+1.9;outer=-1.05
+      for xx in [u-w/2,u+w/2]:
+       F.box('wy-rim',(xx,(y+top)/2,outer),(.085,top-y,.085))
+       for yy in [y,top]:F.box('wy-rim',(xx,yy,outer/2),(.085,.085,-outer))
+      for yy in [y,top]:F.box('wy-rim',(u,yy,outer),(w,.085,.085))
+      for xx in np.arange(u-w/2+.35,u+w/2,.35):
+       F.box('wy-rim',(xx,(y+top)/2,outer),(.035,top-y,.035))
+     for level in range(1,15):
+      F.box('wy-joint',(L/2,.24+level*pitch+1.52,-.20),(L,.05,.05))
+     for xx in np.arange(.75,L-.2,1.5):
+      for level in range(1,15):
+       F.box('wy-joint',(xx,.24+level*pitch+1.18,-.20),(.035,.68,.05))
     # East end has two tall opaque panels separated by open deck slots.
     if nx>.8 and L>30:
      for x in [L*.12,L*.7]:F.box('st-stone',(x,h/2,-.23),(L*.22,h,.25),True)

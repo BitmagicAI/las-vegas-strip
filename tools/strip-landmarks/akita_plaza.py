@@ -3,6 +3,7 @@ Heights and tenant boundaries are estimates. No interior or adjoining parcel cla
 """
 from common import *
 from forum_shops import facade_frame
+from terminal_service_planting import hedge
 KEY='akitaPlaza'
 def exterior(B):
  B.property=KEY+'-exterior';B.source='podium/retail';B.detail=0
@@ -31,6 +32,9 @@ def exterior(B):
     F.text('OPEN' if start==28 else 'WELCOME',(mid+d,2.27,-.25),.14,'ap-white')
     F.text('FRESH DAILY',(mid+d,1.8,-.25),.11,'ap-ink')
   if start==28:
+   # Official frontage photo: square blue tile strip; dimensions inferred.
+   for u in np.arange(start+.2,end-.1,.25):
+    for y in [3.98,4.23]:F.box('ap-blue',(u,y,-.245),(.23,.23,.025))
    F.box('ap-blue',(mid,3.7,-.94),(L-.8,.1,.1));F.text('MEXICAN FOOD',(mid,3.57,-.96),.25,'ap-red')
   if start==0:
    F.box('ap-yellow',(mid,3.58,-.82),(L,.14,1.35))
@@ -51,7 +55,11 @@ def exterior(B):
  S.box('ap-metal',(0,3.25,-.62),(24,.18,1.3))
  for u in [-9,-5,-1,3,7,11]:S.tube('ap-metal',(u,4.55,-.15),(u,3.4,-1.23),.025,7)
  S.box('ap-glass',(3,1.9,-.23),(2.1,1.3,.12));S.box('ap-white',(3,2.65,-.23),(2.5,.18,.15));S.text('PAY HERE',(3,2.91,-.26),.18,'ap-white')
- S.text("McDonald's",(0,5.5,-.24),.9,'ap-white')
+ S.box('ap-gray',(0,5.5,-.20),(24,1.0,.12))
+ for y in np.arange(5.03,5.98,.09):S.box('ap-metal',(0,y,-.28),(24,.035,.05))
+ S.text("McDonald's",(0,5.5,-.31),.9,'ap-white')
+ # Two windows visible in February2025 Street View; no advertising copy.
+ S.box('ap-glass',(-4,1.9,-.23),(2.1,1.3,.12));S.box('ap-white',(-4,2.65,-.23),(2.5,.18,.15))
  # Remaining perimeter: expansion joints, cornice, service doors and drain pipes.
  for a,b in zip(list(p.exterior.coords),list(p.exterior.coords)[1:]):
   G,L,_,_=facade_frame(B,a,b,p,0)
@@ -73,6 +81,9 @@ def exterior(B):
  # Short perpendicular parking row, line paint on the asphalt.
  for z in np.arange(2834,2891,2.8):W.box('ap-line',(50,.333,z),(5.1,.014,.09))
  for z in np.arange(2835.4,2889,2.8):W.box('ap-gray',(55,.49,z),(.15,.27,1.8),True)
+ # Low clipped shrubs in the south gravel strip, outside the walk/drive lane.
+ B.planar('mv-gravel',box(62,2910.8,99,2912.8),.345)
+ for i,x in enumerate(range(64,99,3)):hedge(B,x,2911.8,y=.35,width=1.35,height=.8,seed=493+i)
  # Tenant pylon based on 2025 Street View; sign heights are estimates.
  P=Frame(B,43,2894,math.pi/2,y=.32)
  P.box('ap-white',(0,5,0),(.9,10,.85),True)

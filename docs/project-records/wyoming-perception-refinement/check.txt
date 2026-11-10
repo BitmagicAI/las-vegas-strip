@@ -1,0 +1,15 @@
+Type check passed.
+PASS: lazy near detail: LOD vertices bit-identical to the near level (93 checked), near level filled on approach = eager, casters = casting parts, eviction and refill
+✔ tests/city-lazy-lod.test.mjs (620.051291ms)
+PASS: city surfaces carry the cluster grid in their program key and rebuild once per resize
+✔ tests/city-lighting-resize.test.mjs (297.084125ms)
+site-lights: ok
+✔ tests/site-lights.test.mjs (408.759041ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 624.7385

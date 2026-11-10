@@ -299,9 +299,16 @@ def harmon_corner(B):
    F.box('ph-black',(L/2,22.2,.15),(L,18.7,.38))
    F.box('ph-led-purple',(L/2,22.2,-.08),(L,18.288,.06))
    for yy in [13.03,31.37]:F.box('ph-metal',(L/2,yy,-.18),(L,.16,.36))
+   # Original skyline display: retain the owner's 60-foot screen envelope.
+   # These flat graphic bands are authored geometry, never sampled advertising.
+   for yy,hh,mat in [(14.4,2.1,'ph-led-blue'),(16.0,.22,'ph-led-line'),(29.7,.28,'ph-letter')]:
+    F.box(mat,(L/2,yy,-.125),(L-.04,hh,.015))
+   for j,xx in enumerate(np.arange(1.2,L-1,2.4)):
+    h=[1.8,3.0,2.2,4.0,2.6][j%5]
+    F.box('ph-led-line',(xx,15.1+h/2,-.14),(1.55,h,.015))
    if L>15:
-    F.text('HARMON CORNER',(L/2,22,-.16),min(2.3,L/14),'ph-letter')
-    F.text('LAS VEGAS',(L/2,18.4,-.16),1.1,'ph-letter')
+    F.text('HARMON CORNER',(L/2,24,-.18),min(4.2,L/9),'ph-letter')
+    F.text('LAS VEGAS',(L/2,20.1,-.18),min(1.7,L/16),'ph-letter')
     label='SUGAR FACTORY' if nz>.6 else 'RAINFOREST CAFE'
     F.text(label,(L/2,12.3,-.69),min(.82,L/19),'ph-letter')
    if L>6:

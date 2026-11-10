@@ -21,10 +21,11 @@
     }
   ],
   "remaining": [
-    "Waterfall-area mapped public building142899193 remains gray placeholder; site ownership unresolved",
-    "Larger retained podium still has approximate facade and roof, sparse landscaping",
-    "Detailed metal seams, relief sculpting and neutral daylight review unfinished",
-    "No vehicle clearance/turning benchmark"
+    "Waterfall-area mapped public building142899193 remains a gray placeholder because source-to-footprint ownership is unresolved; this pass preserves its geometry owner.",
+    "Larger retained podium facade/roof and sparse landscaping remain approximate; this scoped canopy-detail pass does not establish their dimensions or planting layout.",
+    "Roof seams, arch trim joints and pier courses improved with inferred dimensions; detailed terracotta relief, decorative ceiling/chandelier and exact proportions remain unverified because close imagery is partly obscured and no measured drawings were obtained.",
+    "No vehicle clearance/turning benchmark: the local keyboard route proves pedestrian passage only.",
+    "Original direct walking route intersects an existing pier near593.29,-1069.44. Preserve that failed baseline; a westward detour passes10installed keyboard legs. The legacy standalone source audit also loses ground on its reverse path and is not accepted as passing."
   ],
   "estimates": [
     "Canopy eaves7.1m and crown8.7m estimated from car and arch scale; pier spacing inferred",
@@ -36,11 +37,19 @@
   "unresolvedMappedIds": [
     "way/142899193"
   ],
-  "triangles": 12221,
+  "triangles": 16457,
   "batches": 7,
   "tests": [
-    "272 roof support PASS",
-    "8 walking legs PASS with retained Wynn podium collision"
+    "Typecheck PASS",
+    "Three runtime lighting/lazyLOD tests PASS",
+    "272 roof support checks PASS; all old source triangles and colliders retained exactly",
+    "Four matched neutral daylight views inspected; no p95 regression in static sample",
+    "Level optimization PASS; WebP pass ran and skipped zero-texture model",
+    "Model audit1checked0unoptimized; bake current;1930assets0missing0unoptimized",
+    "91/92cells byte-identical; only cell-0_-2.bin changed",
+    "Baseline direct route FAIL at existing pier; westward detour10installed keyboard legs PASS; legacy source walk FAIL retained",
+    "Final installed detour10keyboard legs PASS with return; endpoint/return captures inspected",
+    "Nine-stop dev smoke PASS: zero failed requests/page errors/console errors/misplaced stops"
   ],
   "viewsInspected": [
     "build/city-exteriors/wynn-south-canopy-final/wynn-canopy-south.png",
@@ -48,6 +57,81 @@
     "build/city-exteriors/wynn-south-canopy-final/wynn-canopy-under.png"
   ],
   "performance": {
+    "viewport": [
+      960,
+      540
+    ],
+    "dpr": 1,
+    "quality": "ultra",
+    "warmFrames": 900,
+    "settleFrames": 60,
+    "timedFrames": 180,
+    "rows": [
+      {
+        "view": "front",
+        "beforeP50": 16.59999990463257,
+        "afterP50": 16.59999990463257,
+        "beforeP95": 19.399999856948853,
+        "afterP95": 17.799999952316284,
+        "p95ChangePercent": -8.247422249642266
+      },
+      {
+        "view": "roof",
+        "beforeP50": 16.40000009536743,
+        "afterP50": 16.59999990463257,
+        "beforeP95": 19.59999990463257,
+        "afterP95": 17.5,
+        "p95ChangePercent": -10.714285279849523
+      },
+      {
+        "view": "under",
+        "beforeP50": 16.799999952316284,
+        "afterP50": 16.5,
+        "beforeP95": 21.40000009536743,
+        "afterP95": 17.799999952316284,
+        "p95ChangePercent": -16.822430500037513
+      },
+      {
+        "view": "pier",
+        "beforeP50": 16.90000009536743,
+        "afterP50": 16.700000047683716,
+        "beforeP95": 19.299999952316284,
+        "afterP95": 17.5,
+        "p95ChangePercent": -9.326424646442854
+      }
+    ],
+    "scope": "Matched static views only; no driving, vehicle turning, cold-stall, memory or sustained60fps claim."
+  },
+  "ownership": {
+    "removed": 184,
+    "colliderTrianglesRemoved": 184,
+    "added": 0,
+    "scope": "Only building-material triangles wholly in WynnSouthCanopy mapped footprint; all other triangles retained exactly."
+  },
+  "refinementCheckpoint": {
+    "record": "docs/project-records/wynn-south-frontage-refinement/checkpoint.md",
+    "status": "verified-ready-for-merge",
+    "draftPR": 527,
+    "sourceTriangles": 16457,
+    "sourceBatches": 7,
+    "collisionUnchanged": true
+  },
+  "evidence": [
+    "docs/project-records/wynn-south-frontage-refinement/references.md",
+    "docs/project-records/wynn-south-frontage-refinement/source-preservation.json",
+    "docs/project-records/wynn-south-frontage-refinement/baseline-direct-route-failure.json",
+    "docs/project-records/wynn-south-frontage-refinement/baseline-detour.json",
+    "docs/project-records/wynn-south-frontage-refinement/review.md",
+    "docs/project-records/wynn-south-frontage-refinement/performance.json",
+    "docs/project-records/wynn-south-frontage-refinement/cell-preservation.json",
+    "docs/project-records/wynn-south-frontage-refinement/walk.json",
+    "docs/project-records/wynn-south-frontage-refinement/smoke.json"
+  ],
+  "historicalTests": [
+    "272 roof support PASS",
+    "8 walking legs PASS with retained Wynn podium collision"
+  ],
+  "historicalPerformance": {
     "static960x540": [
       {
         "name": "wynn-canopy-south",
@@ -111,16 +195,35 @@
       }
     ]
   },
-  "ownership": {
-    "removed": 184,
-    "colliderTrianglesRemoved": 184,
-    "added": 0,
-    "scope": "Only building-material triangles wholly in WynnSouthCanopy mapped footprint; all other triangles retained exactly."
-  },
-  "finalBuild": {
+  "historicalFinalBuild": {
     "files": {
       "build/strip-landmarks/wynnSouthCanopy-exterior.glb": "94a3d41354b3d71f41c36761dabb7420880957042ae98df1d05d385544b3bdc6",
       "build/strip-landmarks/wynnSouthCanopy-exterior-collision.json": "c3f1c0eb89329b220932faaaa6864ba810438f468d6436808c81b1b2994d3167"
+    }
+  },
+  "geometry": {
+    "before": {
+      "bytes": 283520,
+      "triangles": 12221,
+      "batches": 7,
+      "textures": 0
+    },
+    "after": {
+      "bytes": 374092,
+      "triangles": 16457,
+      "batches": 7,
+      "textures": 0
+    },
+    "revision": "2558580fac4b53a3",
+    "optimization": "Level pass successful. WebP pass ran and skipped because the authored model has zero image textures."
+  },
+  "currentPass": "Original roof seams, arch trim joints and pier courses installed and reviewed. Inferred dimensions and remaining canopy/podium/site/vehicle gaps retained; no full-block completion claim.",
+  "finalBuild": {
+    "scope": "Scoped canopy detail pass only; full-site remaining gaps retained",
+    "files": {
+      "runtime-assets/strip-landmarks/wynnSouthCanopy-exterior.glb": "4e335c0ed315ff948ded2b4b15abe29f44b9509411c6a89e938d53baa1b8d2d2",
+      "runtime-assets/baked/cells/cell-0_-2.bin": "a9d82cd59760bb022792efa4a552a050a43fc7d223f13d12029436cf711dcf32",
+      "runtime-assets/baked/cells/manifest.json": "62774f9f003d25ca9372bc7587ebf4ac6062ac1d338cd701782d9644c0a891bd"
     }
   }
 }

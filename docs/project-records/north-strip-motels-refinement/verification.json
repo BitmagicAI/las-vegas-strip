@@ -1,0 +1,31 @@
+{
+  "typecheck": "PASS",
+  "recordReview": "PASS",
+  "public": {
+    "failures": 0,
+    "existingWarnings": 4
+  },
+  "runtimeGlbs": {
+    "checked": 1,
+    "unoptimized": 0
+  },
+  "bake": "PASS; one bake; unrelated LOD blocks restored byte-identically",
+  "assetPack": {
+    "present": 1930,
+    "missing": 0,
+    "unoptimized": 0
+  },
+  "smoke": {
+    "stops": 9,
+    "failedRequests": 0,
+    "pageErrors": 0,
+    "consoleErrors": 0
+  },
+  "actualWalkSegments": 8,
+  "copingSupportSamples": 58,
+  "roofSamples": 91,
+  "canopySamples": 1,
+  "daylightViewsInspected": 6,
+  "newLfsBytes": 3093358,
+  "remaining": "All five whole-block gaps retained; no whole-block completion claim"
+}

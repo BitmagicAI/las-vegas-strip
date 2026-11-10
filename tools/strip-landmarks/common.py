@@ -35,6 +35,8 @@ class Meshes(Builder):
      for o in openings:
       point=Point(o['p'][0],o['p'][2])
       if 'yaw' in o:
+       # Scoped facade cuts must not nick neighboring return or internal walls.
+       if o.get('boundaryOnly') and abs((b[0]-a[0])*math.sin(o['yaw'])+(b[1]-a[1])*math.cos(o['yaw']))>1e-5:continue
        frame=Frame(self,point.x,point.y,o['yaw'])
        mask=frame.poly([(-o['width']/2,-3),(o['width']/2,-3),(o['width']/2,3),(-o['width']/2,3)])
        clipped=line.intersection(mask)

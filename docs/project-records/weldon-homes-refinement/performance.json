@@ -1,0 +1,61 @@
+{
+  "method": "960x540 DPR1 ultra; identical neutral daylight cameras;900warm+streamingquiet+60settle+180samples. Static samples, not sustained60fps or driving benchmark.",
+  "views": [
+    {
+      "side": "west",
+      "view": "front",
+      "beforeP95": 18.5,
+      "afterP95": 18.40000009536743,
+      "percent": -0.5405400250409143
+    },
+    {
+      "side": "west",
+      "view": "middle",
+      "beforeP95": 19.399999856948853,
+      "afterP95": 19.200000047683716,
+      "percent": -1.0309268594839716
+    },
+    {
+      "side": "west",
+      "view": "south",
+      "beforeP95": 19.299999952316284,
+      "afterP95": 18.59999990463257,
+      "percent": -3.626943261208171
+    },
+    {
+      "side": "west",
+      "view": "roof",
+      "beforeP95": 19,
+      "afterP95": 18,
+      "percent": -5.263157894736848
+    },
+    {
+      "side": "east",
+      "view": "front",
+      "beforeP95": 17.90000009536743,
+      "afterP95": 18.700000047683716,
+      "percent": 4.469273452815936
+    },
+    {
+      "side": "east",
+      "view": "middle",
+      "beforeP95": 17.200000047683716,
+      "afterP95": 18.399999856948853,
+      "percent": 6.976743057781198
+    },
+    {
+      "side": "east",
+      "view": "south",
+      "beforeP95": 17.600000143051147,
+      "afterP95": 18.200000047683716,
+      "percent": 3.4090903395217254
+    },
+    {
+      "side": "east",
+      "view": "roof",
+      "beforeP95": 18.299999952316284,
+      "afterP95": 18.5,
+      "percent": 1.0928964382778572
+    }
+  ]
+}

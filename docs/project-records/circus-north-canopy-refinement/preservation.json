@@ -1,0 +1,17 @@
+{
+  "collisionJsonByteIdentical": true,
+  "collisionSha256": "2b577f6bf72e9f5431d719ac320d72609849cad22eaec669ae10299654f8a5e5",
+  "sourceTrianglesBefore": 1206,
+  "sourceTrianglesAfter": 1474,
+  "materialGroups": 7,
+  "exportTriangles": 1474,
+  "optimizedBytes": 34940,
+  "scope": "Decorative suspended duct and hangers; no parent facade, road, interior or runtime code changes",
+  "changedCells": [
+    "cell-1_-3.bin"
+  ],
+  "unchangedCells": 91,
+  "collisionBinByteIdentical": true,
+  "bakes": 2,
+  "correctiveBakeReason": "Installed visual review caught reversed duct placement; corrected before acceptance."
+}

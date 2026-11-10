@@ -1,0 +1,73 @@
+{
+  "units": "milliseconds p50/p95",
+  "matchingCameras": true,
+  "rows": [
+    {
+      "name": "beach-club-front",
+      "before": [
+        16.6,
+        19.2
+      ],
+      "after": [
+        16.8,
+        19.2
+      ]
+    },
+    {
+      "name": "beach-club-court",
+      "before": [
+        19.5,
+        22.7
+      ],
+      "after": [
+        18.9,
+        22.1
+      ]
+    },
+    {
+      "name": "wynn-front",
+      "before": [
+        16.7,
+        18
+      ],
+      "after": [
+        16.6,
+        19.3
+      ]
+    },
+    {
+      "name": "wynn-pool",
+      "before": [
+        16.6,
+        18
+      ],
+      "after": [
+        16.7,
+        18.2
+      ]
+    },
+    {
+      "name": "encore-front",
+      "before": [
+        16.7,
+        18.2
+      ],
+      "after": [
+        16.6,
+        18.1
+      ]
+    },
+    {
+      "name": "encore-pool",
+      "before": [
+        25.3,
+        33.4
+      ],
+      "after": [
+        25.1,
+        27.1
+      ]
+    }
+  ],
+  "limitations": "Individual 180-frame samples; animated Sphere/water phase differs. No broad performance claim."
+}
