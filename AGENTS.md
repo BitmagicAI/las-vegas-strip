@@ -324,13 +324,9 @@ URL from what it printed rather than assuming 3011 (`.bitmagic/dev.json` records
 actually bound), and **say it in your reply, once** — you started it in the background, so
 everything it printed, that URL included, went into a log your creator never sees.
 
-Everything below assumes they can watch: the game reloads itself on every change, the assets panel
-lists each generation with your prompt and progress, and they can move objects in the Editor tab
-and screenshot a problem straight to you. Started at the end, all of that is a server nobody
-needed — a game that appeared in one silent hour is worth less than a rough one they watched
-arrive, because they could not steer the first. If they ask about their phone, restart with
-`--mobile` (`.agents/skills/working-with-the-creator/SKILL.md` has the QR and the certificate
-warning).
+Start early so the creator can watch changes arrive, steer you, move objects in the Editor tab
+and send screenshots. The assets panel lists each generation's prompt and progress. For their phone,
+restart with `--mobile`; `.agents/skills/working-with-the-creator/SKILL.md` has the QR and certificate warning.
 
 If you are unsure whether one is already running, `bitmagic reload` says so and costs nothing.
 
@@ -348,10 +344,10 @@ If you are unsure whether one is already running, `bitmagic reload` says so and 
   Every published bundle must carry a notice, which is why both `vite.publish*.config.js` files
   have a `banner`: leave it alone. `engine/THIRD-PARTY-NOTICES.md` covers three.js and the rest.
 - `engine/agent-docs/` — **the engine's documentation, and the fastest thing in this project.**
-  `engine-api/` is a generated signature digest of every public class, method and type; the ~83
-  `*.md` files are the per-subsystem guides, including `mechanic-*.md` genre recipes and
-  `archetype-*.md` world recipes; `samples/` holds compile-checked reference code. See **Finding
-  an engine API** below.
+  `engine-api/` is a generated signature digest of every public class, method and type; the ~90
+  `*.md` files are the per-subsystem guides, including `mechanic-*.md` genre recipes; `samples/`
+  holds compile-checked reference code; `engine/agent-playbooks/` beside it holds guides for you,
+  the agent (`archetype-*.md` world recipes, skybox, Blender). See **Finding an engine API** below.
 - `GAME-DESIGN.md` — **what this game is**, and `mechanics-plan.md` — **how it gets built, and
   in what order.** Both yours to write and rewrite; `bitmagic cover` reads the first. Both are
   excluded from the publish fingerprint, so revising them never invalidates a passing
@@ -361,8 +357,8 @@ If you are unsure whether one is already running, `bitmagic reload` says so and 
   `.agents/skills/<name>/SKILL.md`, readable whether or not your harness loads skills by
   itself: `planning-a-game/` (what to build first), `finding-engine-apis/` (engine docs),
   `generating-assets/`, `choosing-asset-pipelines/`, `working-with-the-creator/`, `theming-the-hud/`,
-  `publishing-a-game/`, `judging-quality/`, `checking-usage/`, `making-a-trailer/`,
-  `converting-unity-levels/`, `building-levels-in-blender/`, `importing-metahumans/`.
+  `publishing-a-game/`, `publishing-to-poki/`, `publishing-to-ios/`, `publishing-to-steam/`, `.agents/skills/publishing-to-roblox/SKILL.md` (Roblox Studio), `judging-quality/`, `checking-usage/`, `making-a-trailer/`, `building-ads/`, `joining-the-game-exchange/`, `deciding-with-a-model/`,
+  `porting-unity-games/`, `converting-unity-levels/`, `building-levels-in-blender/`, `importing-metahumans/`, `optimizing-assets/`.
   Agents disagree on where project skills live, so the same files are also written to
   `.claude/skills/`; cite the path above and every agent can open it.
   `upgrade` rewrites every copy, so edits to them are lost; skills you add yourself are never
@@ -376,22 +372,19 @@ If you are unsure whether one is already running, `bitmagic reload` says so and 
   `.bitmagic/AGENTS.md.latest`. **If you edit this file, diff that after an upgrade** — new CLI
   capabilities are documented here, and an edited copy will not learn about them on its own.
 
-`engine/types/work-game.d.ts` declares `module 'work/Game.js'`, which is how the engine
-imports your game. Renaming or removing the `VoxelGame` export from `src/work/Game.ts` still
-typechecks against that declaration — it fails only at runtime, when the engine loads the module
-and finds the export missing.
+The engine imports your game as `work/Game.js` and looks up its `Game` export at run time
+(`VoxelGame` in a project from before the base class became `GameBase`: it loads too, keep it).
+Renaming or removing that export from `src/work/Game.ts` still typechecks — nothing imports it by
+name — so it fails only at runtime, when the engine loads the module and finds the export missing.
 
 ## Build the smallest playable thing first
 
-Do not build the whole game in one pass. Build **slice 1** — the smallest thing that is genuinely
-playable — put it in front of the person waiting, then iterate with them. They are watching
-`bitmagic dev` in a browser while you work: a slice they can play in ten minutes is worth more than
-a finished game in an hour they could not see, and it is the only way you find out you misread the
-idea before you have built an hour on top of it.
+Build **slice 1** — the smallest playable part — in `bitmagic dev` so the creator can watch,
+play and steer it before you build the rest. Iterate with them instead of building it all at once.
 
 Slice 1 is done when all five are true:
 
-1. The player spawns and can move. The genre baseline already does this — do not rebuild it.
+1. The player spawns and can move. The engine baseline already does this — do not rebuild it.
 2. **One** verb from the core loop works — the jump, the shot, the pickup, the lap. One, not the loop.
 3. One win and one lose exist and actually fire. The numbers being wrong is fine; not firing is not.
 4. Something on screen says how the player is doing — a score, a timer, a health bar.
@@ -401,17 +394,16 @@ Everything else is slice 2 and later: a second weapon, enemy variety, tuning, me
 levels, polish. Write them down in `mechanics-plan.md`; do not build them.
 
 **If the idea names a genre, read the recipe before you decide anything.** Racing, combat, tower
-defense, platformer, shooter, driving, soccer and skiing each have
-`engine/agent-docs/mechanic-<genre>.md`, and its contract — camera mode, whether the player is a
+defense, platformer, shooter, driving, soccer and skiing each have `engine/agent-docs/mechanic-<genre>.md`
+plus `engine/agent-playbooks/playbook-mechanic-<genre>.md`; their contract — camera mode, whether the player is a
 walking character at all, core systems, win/lose shape — is binding unless the human asked
-otherwise. Read it, then write `mechanics-plan.md`, then write code. Skip the plan only for a
+otherwise. Read both, then write `mechanics-plan.md`, then write code. Skip the plan only for a
 single-mechanic edit ("raise jump height", "add a sword"); in doubt, write it.
 
 Then **stop and report**: what plays now, what you deliberately left out, and the two or three
 things you would do next, in order. Let them choose. Do not publish unless they ask.
 
-The full contract — what counts as a core verb, what the engine already ships so you never build it,
-the `mechanics-plan.md` skeleton, and the loop after slice 1 — is in
+For core verbs, engine systems, the plan skeleton and later slices, read
 `.agents/skills/planning-a-game/SKILL.md`.
 
 ## Preserve the visual direction
@@ -430,8 +422,8 @@ mistake available in this project. Three tiers, in order, stopping at the first 
 interface and type, signatures only — grep it (`rg -n "spawnAsset" engine/agent-docs/engine-api/`)
 and read the group doc it lands in, with `engine-api.md` indexing the 45 groups; then
 **`engine/agent-docs/*.md`**, the prose guides, for how a subsystem is *meant* to be used; then
-**`engine/` source**, last resort. `@docs foo.md` in those docs means
-`engine/agent-docs/foo.md` — just read the file.
+**`engine/` source**, last resort. `@docs foo.md` in those docs means `engine/agent-docs/foo.md`
+(`engine/agent-playbooks/` for a playbook, `engine/bitmagic/docs/` for a `bitmagic-*` one) — read it.
 
 `.agents/skills/finding-engine-apis/SKILL.md` carries the feature-to-doc table (use it instead of
 guessing filenames) and translates the hosted-agent tools those shared docs name, none of which
@@ -457,7 +449,7 @@ Batch it: issue independent greps and reads in one turn rather than one per turn
 Engine code is reached through path aliases, not relative paths:
 
 ```ts
-import { PlayerController } from 'engine/PlayerController.js';
+import { PlayerController } from 'engine/player/PlayerController.js';
 import type { GameData } from 'types/game.js';
 ```
 
@@ -482,8 +474,8 @@ style reference for `generate skybox|background|block-type|image`, `bitmagic cov
 call as `--reference-image <file>` instead. Accepting prints a durable URL: paste it into
 `GAME-DESIGN.md`'s world/look section, since `.bitmagic/` is not committed and
 `bitmagic reference accept <url>` is how a fresh clone gets it back. Details are in
-`.agents/skills/generating-assets/SKILL.md`; skip the offer when the idea has no visual identity
-yet.
+`.agents/skills/generating-assets/SKILL.md`; skip the offer when the idea has no visual identity yet.
+To SEE the game played before you build it, offer `bitmagic reference video` (planning skill, step 1).
 
 ## Cover art — do this early
 
@@ -619,8 +611,8 @@ excluded; `bitmagic cover` is NOT, because it writes `world.json`.
 
 **A bare `bitmagic publish` does not make the game public.** Every publish uploads and registers
 the game, but `visibility` defaults to `private` — reachable by URL, not listed on bitmagic.ai.
-Pass `--visibility public` explicitly, on that call, to list it; omit it on a later publish and
-the game goes back to private, its `/play/` page included.
+Pass `--visibility public` (or `coming-soon`: listed, Play hidden) explicitly, on that call, to
+list it; omit the flag on a later publish to keep the game as it is.
 
 **Show your creator the QR code.** Your output is a pipe, so publish cannot draw one in the
 terminal: it writes `.bitmagic/publish-qr.png` and names it (`qrPath` under `--json`). Surface
@@ -643,7 +635,7 @@ The HUD's whole visual style — colors, fonts, radii, glow, gloss, outlines, de
 value: `worldProfileData.hud.theme` in `src/work/world.json`. **Never restyle HUD elements in
 game code to satisfy a look request** ("rounder buttons", "orange UI", "neon glow"); use
 `bitmagic theme patch` / `set` / `show` / `check` and read
-`engine/agent-docs/HUD_THEMES.md` — its Common-asks table has a copyable patch for every frequent
+`engine/agent-docs/hud-themes.md` — its Common-asks table has a copyable patch for every frequent
 request. `.agents/skills/theming-the-hud/SKILL.md` covers the loop, including verifying with
 `.bitmagic/verify/screenshot.png`.
 
@@ -658,7 +650,7 @@ bitmagic generate block-type --name mossy_brick --description "damp green moss o
 bitmagic generate sound      --prompt "heavy wooden door slamming" [--duration 3] [--loop]
 bitmagic generate music      --prompt "driving synthwave, no vocals" [--duration 30] [--instrumental] [--out bed.mp3 --no-world]
 bitmagic generate image      --name hero-portrait --prompt "..." [--width 512] [--height 512]
-bitmagic character generate  --name guard --prompt "..." [--apply-to-player] [--fresh]   # or FREE off the shelf: character search --prompt "..." then character add --name guard --id <sid>
+bitmagic character generate  --name guard --prompt "..." [--apply-to-player] [--fresh] [--reference-image ref.png]   # or FREE off the shelf: character search --prompt "..." then character add --name guard --id <sid>
 bitmagic generate animation  --family gait --name LimpStride --based-on walk [--dial limpSide=right]
 bitmagic generate animation  --spec clip.json          # melee and oneShot clips: a spec file
 bitmagic generate video      --prompt "the castle gates swing open" [--duration 5] [--image cover.png]
@@ -683,7 +675,7 @@ Three lanes make a 3D object, and the wrong one wastes a generation: `generate m
 asset, `generate prop --asset <id>` UPGRADES a placeholder, `assets add <file>` uploads your own.
 Splats, video and `.vox`/`.fbx` still need the web editor; never reference an asset you did not
 make. Which lane fits which NEED — rough sparks and minutes, and when to ask first — is
-`.agents/skills/choosing-asset-pipelines/SKILL.md`; flags, reference-image rules and refusals, `.agents/skills/generating-assets/SKILL.md`. For local Blender rigging and repairs, read `.agents/skills/rigging-characters/SKILL.md`. For vision-led exposed-skin maps and material review, read `.agents/skills/character-skin-authoring/SKILL.md`.
+`.agents/skills/choosing-asset-pipelines/SKILL.md`; flags, reference-image rules and refusals, `.agents/skills/generating-assets/SKILL.md`. For local Blender rigging and repairs, read `.agents/skills/rigging-characters/SKILL.md`. To make models and textures smaller or faster to load (compression, a slow phone download), read `.agents/skills/optimizing-assets/SKILL.md`.
 
 ## Forging a whole level
 
