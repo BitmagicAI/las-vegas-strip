@@ -16,6 +16,9 @@ node_modules/
 # Built runtime assets and pipeline intermediates (about 29 GB). The runtime subset is tracked in runtime-assets/
 # (Git LFS); a clone copies it here with `node tools/release/fetch-assets.mjs` (docs/ASSETS.md).
 build/
+# Review captures: local only. public/ is copied into every build, so anything left there would ship (docs/ASSETS.md).
+public/review/
+public/project-records/
 
 # Local machine state, caches and logs
 .DS_Store

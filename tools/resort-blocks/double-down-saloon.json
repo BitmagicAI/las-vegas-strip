@@ -92,7 +92,7 @@
       }
     ],
     "performanceScope": "960x540 ultra,180 frames/view; no matched pre-replacement baseline, no city-wide FPS guarantee.",
-    "checks": "Typecheck and public/review checks pass; public checker retains one existing inventory email warning.",
+    "checks": "Typecheck and https://github.com/BitmagicAI/las-vegas-strip/tree/b80d20e945221e01d9c7dca84775eace8da115cf/public/review checks pass; public checker retains one existing inventory email warning.",
     "packaging": "1345 present,0missing; current city bake661batches24.4M near/7.04M LOD triangles.",
     "paperRefinement": "Original rotated layered poster and fictional souvenir-note atlases installed and visually inspected. Matching bar p50/p95 16.7/18.0ms versus prior16.7/17.9ms at960x540ultra."
   },

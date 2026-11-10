@@ -28,51 +28,51 @@ CDN and published-game checks, owner review of inferred dimensions and inaccessi
 
 ### santa-paula-courtyard front
 
-![Before](../../../public/review/santa-paula-st-louis-refinement/before/santa-paula-courtyard-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/before/santa-paula-courtyard-front.png)
 
-![After](../../../public/review/santa-paula-st-louis-refinement/after/santa-paula-courtyard-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/after/santa-paula-courtyard-front.png)
 
 ### santa-paula-courtyard north
 
-![Before](../../../public/review/santa-paula-st-louis-refinement/before/santa-paula-courtyard-north.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/before/santa-paula-courtyard-north.png)
 
-![After](../../../public/review/santa-paula-st-louis-refinement/after/santa-paula-courtyard-north.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/after/santa-paula-courtyard-north.png)
 
 ### santa-paula-courtyard south
 
-![Before](../../../public/review/santa-paula-st-louis-refinement/before/santa-paula-courtyard-south.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/before/santa-paula-courtyard-south.png)
 
-![After](../../../public/review/santa-paula-st-louis-refinement/after/santa-paula-courtyard-south.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/after/santa-paula-courtyard-south.png)
 
 ### santa-paula-courtyard aerial
 
-![Before](../../../public/review/santa-paula-st-louis-refinement/before/santa-paula-courtyard-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/before/santa-paula-courtyard-aerial.png)
 
-![After](../../../public/review/santa-paula-st-louis-refinement/after/santa-paula-courtyard-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/after/santa-paula-courtyard-aerial.png)
 
 ### st-louis-square-frontage front
 
-![Before](../../../public/review/santa-paula-st-louis-refinement/before/st-louis-square-frontage-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/before/st-louis-square-frontage-front.png)
 
-![After](../../../public/review/santa-paula-st-louis-refinement/after/st-louis-square-frontage-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/after/st-louis-square-frontage-front.png)
 
 ### st-louis-square-frontage south
 
-![Before](../../../public/review/santa-paula-st-louis-refinement/before/st-louis-square-frontage-south.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/before/st-louis-square-frontage-south.png)
 
-![After](../../../public/review/santa-paula-st-louis-refinement/after/st-louis-square-frontage-south.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/after/st-louis-square-frontage-south.png)
 
 ### st-louis-square-frontage plaza
 
-![Before](../../../public/review/santa-paula-st-louis-refinement/before/st-louis-square-frontage-plaza.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/before/st-louis-square-frontage-plaza.png)
 
-![After](../../../public/review/santa-paula-st-louis-refinement/after/st-louis-square-frontage-plaza.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/after/st-louis-square-frontage-plaza.png)
 
 ### st-louis-square-frontage aerial
 
-![Before](../../../public/review/santa-paula-st-louis-refinement/before/st-louis-square-frontage-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/before/st-louis-square-frontage-aerial.png)
 
-![After](../../../public/review/santa-paula-st-louis-refinement/after/st-louis-square-frontage-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement/after/st-louis-square-frontage-aerial.png)
 
 ## Local checks
 

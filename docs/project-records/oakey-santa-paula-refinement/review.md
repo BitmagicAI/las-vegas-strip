@@ -14,61 +14,61 @@ Santa Paula's fan crowns have overlapping folded leaves and visible undersides, 
 
 Before
 
-![Before](../../../public/review/oakey-santa-paula-refinement/before/oakey-offices-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/before/oakey-offices-front.png)
 
 After
 
-![After](../../../public/review/oakey-santa-paula-refinement/after/oakey-offices-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/after/oakey-offices-front.png)
 
 ### oakey-offices east
 
 Before
 
-![Before](../../../public/review/oakey-santa-paula-refinement/before/oakey-offices-east.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/before/oakey-offices-east.png)
 
 After
 
-![After](../../../public/review/oakey-santa-paula-refinement/after/oakey-offices-east.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/after/oakey-offices-east.png)
 
 ### oakey-offices aerial
 
 Before
 
-![Before](../../../public/review/oakey-santa-paula-refinement/before/oakey-offices-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/before/oakey-offices-aerial.png)
 
 After
 
-![After](../../../public/review/oakey-santa-paula-refinement/after/oakey-offices-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/after/oakey-offices-aerial.png)
 
 ### santa-paula-office front
 
 Before
 
-![Before](../../../public/review/oakey-santa-paula-refinement/before/santa-paula-office-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/before/santa-paula-office-front.png)
 
 After
 
-![After](../../../public/review/oakey-santa-paula-refinement/after/santa-paula-office-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/after/santa-paula-office-front.png)
 
 ### santa-paula-office east
 
 Before
 
-![Before](../../../public/review/oakey-santa-paula-refinement/before/santa-paula-office-east.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/before/santa-paula-office-east.png)
 
 After
 
-![After](../../../public/review/oakey-santa-paula-refinement/after/santa-paula-office-east.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/after/santa-paula-office-east.png)
 
 ### santa-paula-office aerial
 
 Before
 
-![Before](../../../public/review/oakey-santa-paula-refinement/before/santa-paula-office-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/before/santa-paula-office-aerial.png)
 
 After
 
-![After](../../../public/review/oakey-santa-paula-refinement/after/santa-paula-office-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/oakey-santa-paula-refinement/after/santa-paula-office-aerial.png)
 
 ## Verification
 

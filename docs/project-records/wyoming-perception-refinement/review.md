@@ -22,38 +22,38 @@ CDN/published-game checks and owner review of inferred dimensions. No publish/up
 
 ### wyoming-17-frontage-front
 
-![Before](../../../public/review/wyoming-perception-refinement/before/wyoming-17-frontage-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/before/wyoming-17-frontage-front.png)
 
-![After](../../../public/review/wyoming-perception-refinement/after/wyoming-17-frontage-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/after/wyoming-17-frontage-front.png)
 
 ### wyoming-17-frontage-roof
 
-![Before](../../../public/review/wyoming-perception-refinement/before/wyoming-17-frontage-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/before/wyoming-17-frontage-roof.png)
 
-![After](../../../public/review/wyoming-perception-refinement/after/wyoming-17-frontage-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/after/wyoming-17-frontage-roof.png)
 
 ### wyoming-17-frontage-storefront
 
-![Before](../../../public/review/wyoming-perception-refinement/before/wyoming-17-frontage-storefront.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/before/wyoming-17-frontage-storefront.png)
 
-![After](../../../public/review/wyoming-perception-refinement/after/wyoming-17-frontage-storefront.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/after/wyoming-17-frontage-storefront.png)
 
 ### perception-museum-front
 
-![Before](../../../public/review/wyoming-perception-refinement/before/perception-museum-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/before/perception-museum-front.png)
 
-![After](../../../public/review/wyoming-perception-refinement/after/perception-museum-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/after/perception-museum-front.png)
 
 ### perception-museum-roof
 
-![Before](../../../public/review/wyoming-perception-refinement/before/perception-museum-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/before/perception-museum-roof.png)
 
-![After](../../../public/review/wyoming-perception-refinement/after/perception-museum-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/after/perception-museum-roof.png)
 
 ### perception-museum-plaza
 
-![Before](../../../public/review/wyoming-perception-refinement/before/perception-museum-plaza.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/before/perception-museum-plaza.png)
 
-![After](../../../public/review/wyoming-perception-refinement/after/perception-museum-plaza.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/wyoming-perception-refinement/after/perception-museum-plaza.png)
 
 New Git LFS:9,892,278bytes,25 unique objects absent from base across all own commits.

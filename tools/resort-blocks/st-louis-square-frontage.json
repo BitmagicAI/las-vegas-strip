@@ -45,7 +45,7 @@
     "ownership": "build/city-exteriors/st-louis-square-frontage-ownership-audit.json",
     "visualReview": "All four first installed views inspected; southern wider arched windows corrected and west/south views rechecked.30806tri16batches.68MiB.187support6walkinglegsPASS,72oldtriangles removed. Static960x540 p95~18ms not driving benchmark. Not photorealistic completion.",
     "refinement": "docs/project-records/santa-paula-st-louis-refinement",
-    "matchedViews": "public/review/santa-paula-st-louis-refinement",
+    "matchedViews": "https://github.com/BitmagicAI/las-vegas-strip/tree/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/santa-paula-st-louis-refinement",
     "refinementVisualReview": "Eight front-first matched daylight captures inspected; expanded curved apron and distinct stepped southern parapet visible. No photorealism or whole-block completion claim."
   },
   "finalBuild": {

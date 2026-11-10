@@ -32,48 +32,48 @@ CDN/published-game checks and owner review of inferred dimensions and official-p
 
 ### albo-dinos-frontage front
 
-![Before](../../../public/review/albo-dinos-casino-courtyard-refinement/before/albo-dinos-frontage-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/before/albo-dinos-frontage-front.png)
 
-![After](../../../public/review/albo-dinos-casino-courtyard-refinement/after/albo-dinos-frontage-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/after/albo-dinos-frontage-front.png)
 
 ### albo-dinos-frontage dinos-street
 
-![Before](../../../public/review/albo-dinos-casino-courtyard-refinement/before/albo-dinos-frontage-dinos-street.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/before/albo-dinos-frontage-dinos-street.png)
 
-![After](../../../public/review/albo-dinos-casino-courtyard-refinement/after/albo-dinos-frontage-dinos-street.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/after/albo-dinos-frontage-dinos-street.png)
 
 ### albo-dinos-frontage dinos-patio
 
-![Before](../../../public/review/albo-dinos-casino-courtyard-refinement/before/albo-dinos-frontage-dinos-patio.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/before/albo-dinos-frontage-dinos-patio.png)
 
-![After](../../../public/review/albo-dinos-casino-courtyard-refinement/after/albo-dinos-frontage-dinos-patio.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/after/albo-dinos-frontage-dinos-patio.png)
 
 ### albo-dinos-frontage frontage-aerial
 
-![Before](../../../public/review/albo-dinos-casino-courtyard-refinement/before/albo-dinos-frontage-frontage-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/before/albo-dinos-frontage-frontage-aerial.png)
 
-![After](../../../public/review/albo-dinos-casino-courtyard-refinement/after/albo-dinos-frontage-frontage-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/after/albo-dinos-frontage-frontage-aerial.png)
 
 ### casino-center-courtyard front
 
-![Before](../../../public/review/albo-dinos-casino-courtyard-refinement/before/casino-center-courtyard-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/before/casino-center-courtyard-front.png)
 
-![After](../../../public/review/albo-dinos-casino-courtyard-refinement/after/casino-center-courtyard-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/after/casino-center-courtyard-front.png)
 
 ### casino-center-courtyard courtyard-inside
 
-![Before](../../../public/review/albo-dinos-casino-courtyard-refinement/before/casino-center-courtyard-courtyard-inside.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/before/casino-center-courtyard-courtyard-inside.png)
 
-![After](../../../public/review/albo-dinos-casino-courtyard-refinement/after/casino-center-courtyard-courtyard-inside.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/after/casino-center-courtyard-courtyard-inside.png)
 
 ### casino-center-courtyard courtyard-office
 
-![Before](../../../public/review/albo-dinos-casino-courtyard-refinement/before/casino-center-courtyard-courtyard-office.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/before/casino-center-courtyard-courtyard-office.png)
 
-![After](../../../public/review/albo-dinos-casino-courtyard-refinement/after/casino-center-courtyard-courtyard-office.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/after/casino-center-courtyard-courtyard-office.png)
 
 ### casino-center-courtyard courtyard-aerial
 
-![Before](../../../public/review/albo-dinos-casino-courtyard-refinement/before/casino-center-courtyard-courtyard-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/before/casino-center-courtyard-courtyard-aerial.png)
 
-![After](../../../public/review/albo-dinos-casino-courtyard-refinement/after/casino-center-courtyard-courtyard-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/albo-dinos-casino-courtyard-refinement/after/casino-center-courtyard-courtyard-aerial.png)

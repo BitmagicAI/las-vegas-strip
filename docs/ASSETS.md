@@ -9,7 +9,7 @@ The runtime set (every model, texture and data file the game loads) is in the re
 | **Runtime set** | 1,914 files, 1.1 GiB | Git LFS, `runtime-assets/` → copied into `build/` | Every file the game loads from `build/`: optimized GLBs, collision, routes, venue lists, PBR strips, Sphere media |
 | **Release snapshot** | ~564 MiB download | GitHub release asset (optional) | The same runtime set as one `.tar.gz`, for a download without git |
 | **Source files** | ~10 GiB | maintainers' machines (pack planned: `tool-source-pack`) | Original (unoptimized) GLBs, Blender scenes, OSM extracts, intermediates the builders read |
-| **Never published** | – | local only | Third-party reference photos, plans and screenshots; review renders; film recordings; probe output |
+| **Never published** | – | local only | Third-party reference photos, plans and screenshots; review renders (`.bitmagic/review/`, never `public/`, which ships in every build); film recordings; probe output |
 
 ## Getting the runtime set
 
