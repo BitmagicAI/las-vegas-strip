@@ -8,7 +8,7 @@ Raw Grand Chateau collision is byte-identical before/after. Roof support audit: 
 
 Build: 15,899 triangles, 17 batches. Level optimizer passed bounds/node/validator checks, 953,368 → 270,200 bytes. WebP pass ran and found no image slots; it correctly retained the level output. One shared city bake; 91 of 92 cells byte-identical, only cell-0_1 changed. Gold Coast and Wyndham nondeterministic LOD changes were restored from HEAD bytes. Initial preservation guard expected a model-key block, rejected the tower source key, and was corrected to cover the two Grand Chateau blocks; no second bake was needed. No roads or neighboring authored models changed.
 
-The task board generator ran; unrelated accumulated board/summary changes were excluded, keeping only the Grand Chateau task entry. Baseline PNGs were moved from the documentation tree into public/project-records after the public-file check rejected that location; these are our game renders, not third-party photos. Links are in capture-links.json.
+The task board generator ran; unrelated accumulated board/summary changes were excluded, keeping only the Grand Chateau task entry. Baseline PNGs were moved from the documentation tree into https://github.com/BitmagicAI/las-vegas-strip/tree/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records after the public-file check rejected that location; these are our game renders, not third-party photos. Links are in capture-links.json.
 
 Installed matching views, performance and actual walks remain separate evidence. Do not treat the local collision test as full circulation proof.
 

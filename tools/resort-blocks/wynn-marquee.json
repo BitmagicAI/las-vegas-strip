@@ -132,10 +132,10 @@
     "walk": "Eight actual keyboard legs pass before and after; endpoint/return images inspected.",
     "performance": "First front p95 18.2\u219226.1ms; isolated repeat 17.7ms after other jobs completed. Both retained; regression did not reproduce, cause not established. North50.1\u219247.4,under17.7\u219217.6,aerial17.7\u219217.6ms. No causal speedup claim.",
     "viewsInspected": [
-      "public/project-records/wynn-marquee-refinement/after-front-wynn-marquee-south.png",
-      "public/project-records/wynn-marquee-refinement/after-wynn-marquee-north.png",
-      "public/project-records/wynn-marquee-refinement/after-wynn-marquee-under.png",
-      "public/project-records/wynn-marquee-refinement/after-wynn-marquee-aerial.png"
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-front-wynn-marquee-south.png",
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-wynn-marquee-north.png",
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-wynn-marquee-under.png",
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/wynn-marquee-refinement/after-wynn-marquee-aerial.png"
     ],
     "smoke": "Nine dev stops pass; zero failed requests, page errors, console errors or missed stops."
   }

@@ -22,36 +22,36 @@ CDN/published-game checks and owner review of inferred dimensions/function. No m
 
 ### festival-grounds-service-front
 
-![Before](../../../public/review/festival-sahara-canopy-refinement/before/festival-grounds-service-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/before/festival-grounds-service-front.png)
 
-![After](../../../public/review/festival-sahara-canopy-refinement/after/festival-grounds-service-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/after/festival-grounds-service-front.png)
 
 ### festival-grounds-service-roof
 
-![Before](../../../public/review/festival-sahara-canopy-refinement/before/festival-grounds-service-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/before/festival-grounds-service-roof.png)
 
-![After](../../../public/review/festival-sahara-canopy-refinement/after/festival-grounds-service-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/after/festival-grounds-service-roof.png)
 
 ### festival-grounds-service-south
 
-![Before](../../../public/review/festival-sahara-canopy-refinement/before/festival-grounds-service-south.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/before/festival-grounds-service-south.png)
 
-![After](../../../public/review/festival-sahara-canopy-refinement/after/festival-grounds-service-south.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/after/festival-grounds-service-south.png)
 
 ### mcdonalds-sahara-canopy-front
 
-![Before](../../../public/review/festival-sahara-canopy-refinement/before/mcdonalds-sahara-canopy-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/before/mcdonalds-sahara-canopy-front.png)
 
-![After](../../../public/review/festival-sahara-canopy-refinement/after/mcdonalds-sahara-canopy-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/after/mcdonalds-sahara-canopy-front.png)
 
 ### mcdonalds-sahara-canopy-under
 
-![Before](../../../public/review/festival-sahara-canopy-refinement/before/mcdonalds-sahara-canopy-under.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/before/mcdonalds-sahara-canopy-under.png)
 
-![After](../../../public/review/festival-sahara-canopy-refinement/after/mcdonalds-sahara-canopy-under.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/after/mcdonalds-sahara-canopy-under.png)
 
 ### mcdonalds-sahara-canopy-roof
 
-![Before](../../../public/review/festival-sahara-canopy-refinement/before/mcdonalds-sahara-canopy-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/before/mcdonalds-sahara-canopy-roof.png)
 
-![After](../../../public/review/festival-sahara-canopy-refinement/after/mcdonalds-sahara-canopy-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/festival-sahara-canopy-refinement/after/mcdonalds-sahara-canopy-roof.png)

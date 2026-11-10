@@ -6,39 +6,39 @@ All six installed matched neutral daylight views inspected,960×540,DPR1,ultra. 
 
 ## front
 
-![Before front](../../../public/project-records/fashion-show-refinement/before/fashion-front.png)
+![Before front](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/before/fashion-front.png)
 
-![After front](../../../public/project-records/fashion-show-refinement/after/fashion-front.png)
+![After front](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/after/fashion-front.png)
 
 ## upper-plaza
 
-![Before upper-plaza](../../../public/project-records/fashion-show-refinement/before/fashion-upper-plaza.png)
+![Before upper-plaza](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/before/fashion-upper-plaza.png)
 
-![After upper-plaza](../../../public/project-records/fashion-show-refinement/after/fashion-upper-plaza.png)
+![After upper-plaza](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/after/fashion-upper-plaza.png)
 
 ## east
 
-![Before east](../../../public/project-records/fashion-show-refinement/before/fashion-east.png)
+![Before east](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/before/fashion-east.png)
 
-![After east](../../../public/project-records/fashion-show-refinement/after/fashion-east.png)
+![After east](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/after/fashion-east.png)
 
 ## north-entry
 
-![Before north-entry](../../../public/project-records/fashion-show-refinement/before/fashion-north-entry.png)
+![Before north-entry](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/before/fashion-north-entry.png)
 
-![After north-entry](../../../public/project-records/fashion-show-refinement/after/fashion-north-entry.png)
+![After north-entry](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/after/fashion-north-entry.png)
 
 ## roof
 
-![Before roof](../../../public/project-records/fashion-show-refinement/before/fashion-roof.png)
+![Before roof](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/before/fashion-roof.png)
 
-![After roof](../../../public/project-records/fashion-show-refinement/after/fashion-roof.png)
+![After roof](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/after/fashion-roof.png)
 
 ## restaurant
 
-![Before restaurant](../../../public/project-records/fashion-show-refinement/before/fashion-restaurant.png)
+![Before restaurant](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/before/fashion-restaurant.png)
 
-![After restaurant](../../../public/project-records/fashion-show-refinement/after/fashion-restaurant.png)
+![After restaurant](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/after/fashion-restaurant.png)
 
 ## Performance and scope
 
@@ -48,18 +48,18 @@ Source checks:2956roof+183stairs/plaza support/headroom and97rakedskin/outwardca
 
 See [references](references.md),[decisions](decisions.md),[geometry](geometry.json),[performance](performance.json),[cell preservation](cell-preservation.json).
 
-![Walk endpoint 0](../../../public/project-records/fashion-show-refinement/walk/walk-frontage-0.png)
+![Walk endpoint 0](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/walk/walk-frontage-0.png)
 
-![Walk return 0](../../../public/project-records/fashion-show-refinement/walk/walk-return-0.png)
+![Walk return 0](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/walk/walk-return-0.png)
 
-![Walk endpoint 1](../../../public/project-records/fashion-show-refinement/walk/walk-frontage-1.png)
+![Walk endpoint 1](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/walk/walk-frontage-1.png)
 
-![Walk return 1](../../../public/project-records/fashion-show-refinement/walk/walk-return-1.png)
+![Walk return 1](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/walk/walk-return-1.png)
 
-![Walk endpoint 2](../../../public/project-records/fashion-show-refinement/walk/walk-frontage-2.png)
+![Walk endpoint 2](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/walk/walk-frontage-2.png)
 
-![Walk return 2](../../../public/project-records/fashion-show-refinement/walk/walk-return-2.png)
+![Walk return 2](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/walk/walk-return-2.png)
 
-![Walk endpoint 3](../../../public/project-records/fashion-show-refinement/walk/walk-frontage-3.png)
+![Walk endpoint 3](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/walk/walk-frontage-3.png)
 
-![Walk return 3](../../../public/project-records/fashion-show-refinement/walk/walk-return-3.png)
+![Walk return 3](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/fashion-show-refinement/walk/walk-return-3.png)

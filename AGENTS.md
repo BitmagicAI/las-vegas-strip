@@ -54,7 +54,10 @@ The owner's rules for submissions (2026-10-29, after a stack of 99 one-building 
 - **Ready means done.** Mark a pull request ready once the checks in step 7 pass. Its description lists what changed,
   each check with its result, the bytes it adds to Git LFS, and anything it touches outside its own buildings.
 - **Keep review views findable.** Each building's `probe-<id>.js` lists its views as `[name, eye, target]` with an
-  exterior `front` view first, and its before and after captures use the same view names.
+  exterior `front` view first, and its before and after captures use the same view names. Captures stay local, in
+  `.bitmagic/review/<task-id>/`: never commit them, and never put them under `public/`, which Vite copies into every
+  build, so a publish would ship them (669 MiB of captures came out of `public/` on 2026-11-09). The description gives
+  each view's name and numbers instead; `check-public.py` fails on anything in `public/` but the foliage.
 
 ## Long runs (the owner's agents)
 

@@ -20,38 +20,38 @@ Source support: 836 Curaleaf and 923 annex samples passed. CPU walks: 12 legs be
 
 ### curaleaf-1736: front
 
-![Before](../../../public/review/curaleaf-annex-refinement/before/curaleaf-1736-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/before/curaleaf-1736-front.png)
 
-![After](../../../public/review/curaleaf-annex-refinement/after/curaleaf-1736-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/after/curaleaf-1736-front.png)
 
 ### curaleaf-1736: north
 
-![Before](../../../public/review/curaleaf-annex-refinement/before/curaleaf-1736-north.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/before/curaleaf-1736-north.png)
 
-![After](../../../public/review/curaleaf-annex-refinement/after/curaleaf-1736-north.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/after/curaleaf-1736-north.png)
 
 ### curaleaf-1736: aerial
 
-![Before](../../../public/review/curaleaf-annex-refinement/before/curaleaf-1736-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/before/curaleaf-1736-aerial.png)
 
-![After](../../../public/review/curaleaf-annex-refinement/after/curaleaf-1736-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/after/curaleaf-1736-aerial.png)
 
 ### white-cross-annex: front
 
-![Before](../../../public/review/curaleaf-annex-refinement/before/white-cross-annex-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/before/white-cross-annex-front.png)
 
-![After](../../../public/review/curaleaf-annex-refinement/after/white-cross-annex-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/after/white-cross-annex-front.png)
 
 ### white-cross-annex: north
 
-![Before](../../../public/review/curaleaf-annex-refinement/before/white-cross-annex-north.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/before/white-cross-annex-north.png)
 
-![After](../../../public/review/curaleaf-annex-refinement/after/white-cross-annex-north.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/after/white-cross-annex-north.png)
 
 ### white-cross-annex: aerial
 
-![Before](../../../public/review/curaleaf-annex-refinement/before/white-cross-annex-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/before/white-cross-annex-aerial.png)
 
-![After](../../../public/review/curaleaf-annex-refinement/after/white-cross-annex-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/curaleaf-annex-refinement/after/white-cross-annex-aerial.png)
 
 Curaleaf aerial corrected first run p95 23.4ms versus 21ms baseline (+11.43%); identical-camera repeat p95 18.5ms. Both retained. Other corrected p95 values 17.9–19.3ms. Baseline north views were unusually slow; no speedup or sustained60fps claim. Cold stalls, memory, draw calls and separate CPU/GPU spans were not measured.

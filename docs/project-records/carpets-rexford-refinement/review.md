@@ -34,45 +34,45 @@ CDN and published-game checks, and owner review of inferred dimensions. No publi
 
 ### carpets-galore-front
 
-![Before](../../../public/review/carpets-rexford-refinement/before/carpets-galore-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/before/carpets-galore-front.png)
 
-![After](../../../public/review/carpets-rexford-refinement/after/carpets-galore-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/after/carpets-galore-front.png)
 
 ### carpets-galore-carpets-north
 
-![Before](../../../public/review/carpets-rexford-refinement/before/carpets-galore-carpets-north.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/before/carpets-galore-carpets-north.png)
 
-![After](../../../public/review/carpets-rexford-refinement/after/carpets-galore-carpets-north.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/after/carpets-galore-carpets-north.png)
 
 ### carpets-galore-carpets-aerial
 
-![Before](../../../public/review/carpets-rexford-refinement/before/carpets-galore-carpets-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/before/carpets-galore-carpets-aerial.png)
 
-![After](../../../public/review/carpets-rexford-refinement/after/carpets-galore-carpets-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/after/carpets-galore-carpets-aerial.png)
 
 ### rexford-courtyard-1701-front
 
-![Before](../../../public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-front.png)
 
-![After](../../../public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-front.png)
 
 ### rexford-courtyard-1701-rexford-court
 
-![Before](../../../public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-rexford-court.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-rexford-court.png)
 
-![After](../../../public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-rexford-court.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-rexford-court.png)
 
 ### rexford-courtyard-1701-rexford-gallery
 
-![Before](../../../public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-rexford-gallery.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-rexford-gallery.png)
 
-![After](../../../public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-rexford-gallery.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-rexford-gallery.png)
 
 ### rexford-courtyard-1701-rexford-aerial
 
-![Before](../../../public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-rexford-aerial.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/before/rexford-courtyard-1701-rexford-aerial.png)
 
-![After](../../../public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-rexford-aerial.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/carpets-rexford-refinement/after/rexford-courtyard-1701-rexford-aerial.png)
 
 ## Five-window A/B median p95
 

@@ -108,7 +108,8 @@ For geometry changes, also do the following:
   revision. `asset-pack.py stage` refuses a model that is not optimized.
 - Commit `runtime-assets/` with `tools/release/asset-pack.json`. The optimizer's install step stages them; after any
   other runtime change run `pnpm assets` ([docs/ASSETS.md](docs/ASSETS.md), "Updating the runtime set").
-- Attach before and after captures from the same cameras.
+- Attach before and after captures from the same cameras to the pull request (drag them into its description). Do not
+  commit them, and never put them under `public/`: Vite copies it into every build, so a publish would ship them.
 
 Then walk it in the game: go in, come back out, and drive past it.
 

@@ -8,27 +8,27 @@ The former full-height glass wall now has an open ground arcade with pale column
 
 ### Front
 
-![Before front](../../../public/project-records/venetian-expo-refinement/before/expo-front.png)
+![Before front](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/before/expo-front.png)
 
-![After front](../../../public/project-records/venetian-expo-refinement/after/expo-front.png)
+![After front](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/after/expo-front.png)
 
 ### Entry
 
-![Before entry](../../../public/project-records/venetian-expo-refinement/before/expo-entry.png)
+![Before entry](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/before/expo-entry.png)
 
-![After entry](../../../public/project-records/venetian-expo-refinement/after/expo-entry.png)
+![After entry](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/after/expo-entry.png)
 
 ### North
 
-![Before north](../../../public/project-records/venetian-expo-refinement/before/expo-north.png)
+![Before north](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/before/expo-north.png)
 
-![After north](../../../public/project-records/venetian-expo-refinement/after/expo-north.png)
+![After north](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/after/expo-north.png)
 
 ### East
 
-![Before east](../../../public/project-records/venetian-expo-refinement/before/expo-east.png)
+![Before east](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/before/expo-east.png)
 
-![After east](../../../public/project-records/venetian-expo-refinement/after/expo-east.png)
+![After east](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/after/expo-east.png)
 
 ## Movement and performance
 
@@ -42,6 +42,6 @@ See [references](references.md), [decisions](decisions.md), [checks](local-check
 
 Both installed close views inspected: continuous paving, pale columns, covered soffit and closed recessed glazing. These are additional after-only inspection views, not a before/after performance comparison. p95east17.9ms,west22.9ms; no whole-site60fps claim.
 
-![Covered approach east](../../../public/project-records/venetian-expo-refinement/close/expo-arcade-east.png)
+![Covered approach east](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/close/expo-arcade-east.png)
 
-![Covered approach west](../../../public/project-records/venetian-expo-refinement/close/expo-arcade-west.png)
+![Covered approach west](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/venetian-expo-refinement/close/expo-arcade-west.png)

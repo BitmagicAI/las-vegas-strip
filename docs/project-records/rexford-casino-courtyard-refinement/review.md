@@ -28,39 +28,39 @@ CDN/published-game checks and owner review of inferred dimensions/layout. No pub
 
 ### rexford-ellen-courtyard front
 
-![Before](../../../public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-front.png)
 
-![After](../../../public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-front.png)
 
 ### rexford-ellen-courtyard roof
 
-![Before](../../../public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-roof.png)
 
-![After](../../../public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-roof.png)
 
 ### rexford-ellen-courtyard court
 
-![Before](../../../public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-court.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/before/rexford-ellen-courtyard-court.png)
 
-![After](../../../public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-court.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/after/rexford-ellen-courtyard-court.png)
 
 ### casino-center-1520 front
 
-![Before](../../../public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-front.png)
 
-![After](../../../public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-front.png)
 
 ### casino-center-1520 roof
 
-![Before](../../../public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-roof.png)
 
-![After](../../../public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-roof.png)
 
 ### casino-center-1520 court
 
-![Before](../../../public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-court.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/before/casino-center-1520-court.png)
 
-![After](../../../public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-court.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/rexford-casino-courtyard-refinement/after/casino-center-1520-court.png)
 
 Matching 960x540DPR1ultra,900warm+streamquiet60settle,180samples/view. Maximum p95 increase3.30% (Casino roof18.2→18.8ms); other five views below baseline; see performance.json. Static samples do not establish sustained60fps, cold-streaming or full driving performance.
 

@@ -33,38 +33,38 @@ CDN/published-game checks and owner review of inferred dimensions. No publishing
 
 ### south-commercial-364846558-front
 
-![Before](../../../public/review/south-commercial-pair-refinement/before/south-commercial-364846558-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/before/south-commercial-364846558-front.png)
 
-![After](../../../public/review/south-commercial-pair-refinement/after/south-commercial-364846558-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/after/south-commercial-364846558-front.png)
 
 ### south-commercial-364846558-roof
 
-![Before](../../../public/review/south-commercial-pair-refinement/before/south-commercial-364846558-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/before/south-commercial-364846558-roof.png)
 
-![After](../../../public/review/south-commercial-pair-refinement/after/south-commercial-364846558-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/after/south-commercial-364846558-roof.png)
 
 ### south-commercial-364846558-north
 
-![Before](../../../public/review/south-commercial-pair-refinement/before/south-commercial-364846558-north.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/before/south-commercial-364846558-north.png)
 
-![After](../../../public/review/south-commercial-pair-refinement/after/south-commercial-364846558-north.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/after/south-commercial-364846558-north.png)
 
 ### south-commercial-annex-front
 
-![Before](../../../public/review/south-commercial-pair-refinement/before/south-commercial-annex-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/before/south-commercial-annex-front.png)
 
-![After](../../../public/review/south-commercial-pair-refinement/after/south-commercial-annex-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/after/south-commercial-annex-front.png)
 
 ### south-commercial-annex-roof
 
-![Before](../../../public/review/south-commercial-pair-refinement/before/south-commercial-annex-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/before/south-commercial-annex-roof.png)
 
-![After](../../../public/review/south-commercial-pair-refinement/after/south-commercial-annex-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/after/south-commercial-annex-roof.png)
 
 ### south-commercial-annex-east
 
-![Before](../../../public/review/south-commercial-pair-refinement/before/south-commercial-annex-east.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/before/south-commercial-annex-east.png)
 
-![After](../../../public/review/south-commercial-pair-refinement/after/south-commercial-annex-east.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/south-commercial-pair-refinement/after/south-commercial-annex-east.png)
 
 New Git LFS: 9,894,629 bytes across 28 unique objects absent from base, including intermediate evidence.

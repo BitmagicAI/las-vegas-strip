@@ -15,6 +15,6 @@ Original shallow segmented hip/ridge caps added to3pavilions/northernroof and cu
 
 Single bake/stage complete: 91/92cells byte-identical; onlycell--1_0 changed. Optimizer, bakecheck, assetpackcheck and reload exit0; all11initialchecks exit0 (public0failures15existingwarnings). Seven matched afterviews inspected, p95 24.6/20.3/20.0/44.9/17.9/19.6/22.3ms; allchanges<10%, no60fpsclaim. Actual20legwalk-after running; then9stopsmoke and finishrecords/PR.
 
-Actual installed20legwalk-after PASS; all6after endpoint/returncaptures inspected.9stopdevsmoke running.26own gamePNGs copied to public/project-records for PR review.
+Actual installed20legwalk-after PASS; all6after endpoint/returncaptures inspected.9stopdevsmoke running.26own gamePNGs copied to https://github.com/BitmagicAI/las-vegas-strip/tree/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records for PR review.
 
 Final9stopdevsmoke PASS (no request/page/console failures), finalreview/public/diffcheck PASS; public0failures15existingwarnings. Archive3856files1108.4MB. Own26gamePNGs committed; LFSaudit13,713,701bytes30objects. Ready for verifiedPR537merge next and explicit issue176/202closure, thenpicker.

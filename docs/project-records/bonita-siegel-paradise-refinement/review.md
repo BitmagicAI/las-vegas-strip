@@ -24,49 +24,49 @@ CDN/published-game checks and owner review of inferred design choices. No publis
 
 ### bonita-terrace-front
 
-![Before](../../../public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-front.png)
 
-![After](../../../public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-front.png)
 
 ### bonita-terrace-roof
 
-![Before](../../../public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-roof.png)
 
-![After](../../../public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-roof.png)
 
 ### bonita-terrace-court
 
-![Before](../../../public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-court.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/before/bonita-terrace-court.png)
 
-![After](../../../public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-court.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/after/bonita-terrace-court.png)
 
 ### siegel-paradise-front
 
-![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-front.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-front.png)
 
-![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-front.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-front.png)
 
 ### siegel-paradise-roof
 
-![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-roof.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-roof.png)
 
-![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-roof.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-roof.png)
 
 ### siegel-paradise-court
 
-![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-court.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-court.png)
 
-![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-court.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-court.png)
 
 ### siegel-paradise-stairs
 
-![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-stairs.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-stairs.png)
 
-![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-stairs.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-stairs.png)
 
 ### siegel-paradise-pool
 
-![Before](../../../public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-pool.png)
+![Before](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/before/siegel-paradise-pool.png)
 
-![After](../../../public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-pool.png)
+![After](https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/review/bonita-siegel-paradise-refinement/after/siegel-paradise-pool.png)
 

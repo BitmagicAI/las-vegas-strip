@@ -126,10 +126,10 @@
     "performance": "Matched first p95 front38.8\u219219.9,upper18.0\u219227.1,under30.0\u219218.4,aerial35.5\u219229.4ms. Isolated upper repeat17.9ms: initial regression did not reproduce; cause not established. All timings retained, no causal speedup claim.",
     "walkAfter": "All eight actual keyboard legs pass; all eight endpoint/return screenshots inspected. Local terrace proof only; no interior or inter-floor connection claim.",
     "viewsInspected": [
-      "public/project-records/chayo-terraces-refinement/after-front-chayo-ground.png",
-      "public/project-records/chayo-terraces-refinement/after-chayo-upper.png",
-      "public/project-records/chayo-terraces-refinement/after-chayo-pergola-under.png",
-      "public/project-records/chayo-terraces-refinement/after-chayo-aerial.png"
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/chayo-terraces-refinement/after-front-chayo-ground.png",
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/chayo-terraces-refinement/after-chayo-upper.png",
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/chayo-terraces-refinement/after-chayo-pergola-under.png",
+      "https://github.com/BitmagicAI/las-vegas-strip/raw/b80d20e945221e01d9c7dca84775eace8da115cf/public/project-records/chayo-terraces-refinement/after-chayo-aerial.png"
     ],
     "preservation": "docs/project-records/chayo-terraces-refinement/preservation.json",
     "smoke": "Nine stops passed with zero failed requests, page errors, console errors or missed stops."
